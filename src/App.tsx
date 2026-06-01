@@ -238,6 +238,8 @@ export default function App() {
     return localStorage.getItem('linguist_last_active_book_id') || null;
   });
 
+  const [searchQuery, setSearchQuery] = useState<string>('');
+
   // Dynamic reset effect: ensures all statistics of old visitors are strictly cleared and reset to 0
   useEffect(() => {
     const isResetDone = localStorage.getItem('linguist_reset_stats_to_zero_v11');
@@ -988,6 +990,10 @@ export default function App() {
               onToggleDarkMode={toggleDarkMode}
               userName={userName}
               userAvatar={userAvatar}
+              searchQuery={searchQuery}
+              onSearchQueryChange={setSearchQuery}
+              books={books}
+              onSelectBook={handleSelectBook}
             />
           )}
 
@@ -1071,6 +1077,7 @@ export default function App() {
                     onToggleFavorite={handleToggleFavorite}
                     totalReadMinutes={stats.totalTimeMinutes}
                     lastActiveBookId={lastActiveBookId}
+                    searchQuery={searchQuery}
                   />
                 )}
 

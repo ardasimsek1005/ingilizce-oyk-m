@@ -146,9 +146,10 @@ interface LibraryTabProps {
   onToggleFavorite: (bookId: string) => void;
   totalReadMinutes: number;
   lastActiveBookId: string | null;
+  searchQuery?: string;
 }
 
-export default function LibraryTab({ books, onSelectBook, syncTrigger, isDarkMode, onToggleFavorite, totalReadMinutes, lastActiveBookId }: LibraryTabProps) {
+export default function LibraryTab({ books, onSelectBook, syncTrigger, isDarkMode, onToggleFavorite, totalReadMinutes, lastActiveBookId, searchQuery = '' }: LibraryTabProps) {
   const [selectedLevel, setSelectedLevel] = useState<string>('All');
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
 
@@ -168,6 +169,14 @@ export default function LibraryTab({ books, onSelectBook, syncTrigger, isDarkMod
       list = list.filter(b => getBookCategory(b.id) === selectedCategory);
     }
 
+    if (searchQuery && searchQuery.trim().length >= 2) {
+      const q = searchQuery.toLowerCase().trim();
+      list = list.filter(b => 
+        b.title.toLowerCase().includes(q) || 
+        b.author.toLowerCase().includes(q)
+      );
+    }
+
     const levelOrder: Record<string, number> = {
       A1: 1,
       A2: 2,
@@ -184,7 +193,7 @@ export default function LibraryTab({ books, onSelectBook, syncTrigger, isDarkMod
       }
       return a.title.localeCompare(b.title, 'tr');
     });
-  }, [books, selectedLevel, selectedCategory]);
+  }, [books, selectedLevel, selectedCategory, searchQuery]);
 
   const libraryCountLabel = useMemo(() => {
     const count = filteredBooks.length;
