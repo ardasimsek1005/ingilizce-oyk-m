@@ -1283,10 +1283,16 @@ export default function ReadingView({
                           </p>
                           
                           <div className="flex justify-between items-center bg-[#FFE66D]/15 px-4 py-3 rounded-2xl border border-[#FFE66D]/45 mb-5 select-none">
-                            <span className="text-xs text-gray-500 font-medium">Bilemediğiniz her soru <b>1 can</b> azaltır.</span>
+                            <span className="text-xs text-gray-500 font-medium">
+                               {stats?.isPremium ? (
+                                 <span>Premium ile <b>sınırsız cana</b> sahipsiniz!</span>
+                               ) : (
+                                 <span>Bilemediğiniz her soru <b>1 can</b> azaltır.</span>
+                               )}
+                             </span>
                             <div className="flex items-center gap-1 font-bold text-xs text-[#FF6B6B]">
                               <Heart className="w-4 h-4 fill-[#FF6B6B]" />
-                              <span>{(stats?.hearts ?? 5)} Can Hakkı</span>
+                              <span>{stats?.isPremium ? '∞' : (stats?.hearts ?? 5)} Can Hakkı</span>
                             </div>
                           </div>
 
@@ -1317,7 +1323,7 @@ export default function ReadingView({
                             </span>
                             <div className="flex items-center gap-1.5 text-xs font-bold text-[#FF6B6B]">
                               <Heart className="w-3.5 h-3.5 fill-[#FF6B6B]" />
-                              <span>{(stats?.hearts ?? 5)} Can kaldı</span>
+                              <span>{stats?.isPremium ? '∞' : (stats?.hearts ?? 5)} Can kaldı</span>
                             </div>
                           </div>
 
