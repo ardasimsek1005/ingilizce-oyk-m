@@ -1116,7 +1116,7 @@ export default function ReadingView({
   return (
     <div 
       onClick={handleClearAllOverlays}
-      className={`min-h-screen pb-24 flex flex-col font-body-ui transition-colors duration-200 ${
+      className={`min-h-screen pb-16 flex flex-col font-body-ui transition-colors duration-200 ${
         isDarkMode ? 'bg-[#121214] text-[#E6E6E6]' : 'bg-[#FFFBF0] text-gray-800'
       }`}
     >
@@ -1376,18 +1376,6 @@ export default function ReadingView({
           )}
         </article>
 
-        {/* Page Number Indicator (Non-clickable, bottom-right of scrollable area) */}
-        {pages.length > 0 && (
-          <div className="flex justify-end mt-6 mb-6 select-none">
-            <span className={`text-[12px] font-headline-lg font-bold px-4 py-2 rounded-2xl border ${
-              isDarkMode 
-                ? 'bg-[#1A1A1E] border-[#2A2A30] text-gray-400' 
-                : 'bg-white border-[#FFE66D]/60 text-gray-550 shadow-3xs'
-            }`}>
-              Sayfa {currentPageIdx + 1}
-            </span>
-          </div>
-        )}
       </main>
 
       {/* Chapter Progress Bar Overlay Footer */}
