@@ -434,8 +434,8 @@ export default function QuizView({
   }, []);
 
   // Helper calculation for membership discounts
-  const monthlyPrice = 200; // 200 TL
-  const yearlyPriceAndDiscount = Math.round((200 * 12) * 0.7); // 30% discount = 1680 TL total
+  const monthlyPrice = 99; // 99 TL
+  const yearlyPriceAndDiscount = Math.round((99 * 12) * 0.6); // 40% discount = 712 TL total
 
   const handleOptionClick = (optionIdx: number) => {
     if (isAnswered) return;
@@ -527,7 +527,7 @@ export default function QuizView({
       </AnimatePresence>
 
       {/* QUIZ COMPLETED VIEW RESULTS SCREEN replaces standard browser alert() */}
-      {questions.length < 3 ? (
+      {questions.length < 3 && !showSubscriptionPanel ? (
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -843,7 +843,7 @@ export default function QuizView({
                       <span className="text-[11px] text-gray-400 font-medium font-headline-lg">İstediğin zaman iptal et.</span>
                     </div>
                     <div className="text-right">
-                      <span className="font-bold text-lg font-headline-lg text-[#FF6B6B] block">200₺ <span className="text-xs font-semibold text-gray-400">/ ay</span></span>
+                      <span className="font-bold text-lg font-headline-lg text-[#FF6B6B] block">99₺ <span className="text-xs font-semibold text-gray-400">/ ay</span></span>
                     </div>
                   </div>
 
@@ -858,17 +858,17 @@ export default function QuizView({
                   >
                     {/* Discount badge */}
                     <div className="absolute top-0 right-0 bg-[#4ECDC4] text-[#2D3436] font-extrabold text-[9px] px-2.5 py-0.5 rounded-bl-lg tracking-wider font-headline-lg shadow-sm">
-                      %30 İNDİRİMLİ
+                      %40 İNDİRİMLİ
                     </div>
                     <div>
                       <span className={`font-bold text-sm flex items-center gap-1.5 font-headline-lg ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
                         Yıllık Abonelik
                       </span>
-                      <span className="text-[11px] text-gray-400 font-medium font-headline-lg">Toplam 1.680₺ tek çekim ödeme.</span>
+                      <span className="text-[11px] text-gray-400 font-medium font-headline-lg">Toplam 712₺ tek çekim ödeme.</span>
                     </div>
                     <div className="text-right">
-                      <span className="text-xs text-gray-450 line-through block font-bold">2.400₺</span>
-                      <span className="font-bold text-lg font-headline-lg text-[#4ECDC4] block">140₺ <span className="text-xs font-semibold text-gray-400">/ ay</span></span>
+                      <span className="text-xs text-gray-455 line-through block font-bold">1.188₺</span>
+                      <span className="font-bold text-lg font-headline-lg text-[#4ECDC4] block">59₺ <span className="text-xs font-semibold text-gray-400">/ ay</span></span>
                     </div>
                   </div>
                 </div>
@@ -916,7 +916,7 @@ export default function QuizView({
 
                   {/* Legal Play Store warning info */}
                   <p className="text-[10px] leading-relaxed text-gray-400 text-left font-medium select-none">
-                    Satın Al butonuna tıklayarak Google Play Hizmet Şartları'nı kabul etmiş olursunuz. Aboneliğiniz, son faturalandırma döneminden en az 24 saat önce iptal edilmediği sürece otomatik olarak yenilenir ve seçtiğiniz tutar üzerinden ({checkoutTier === 'monthly' ? '200,00 TL' : '1.680,00 TL'}) Google Play tanımlı kartınızdan tahsil edilir. Aboneliklerinizi dilediğiniz zaman Google Play Store ayarlarınızdan yönetebilir veya iptal edebilirsiniz.
+                    Satın Al butonuna tıklayarak Google Play Hizmet Şartları'nı kabul etmiş olursunuz. Aboneliğiniz, son faturalandırma döneminden en az 24 saat önce iptal edilmediği sürece otomatik olarak yenilenir ve seçtiğiniz tutar üzerinden ({checkoutTier === 'monthly' ? '99,00 TL' : '712,00 TL'}) Google Play tanımlı kartınızdan tahsil edilir. Aboneliklerinizi dilediğiniz zaman Google Play Store ayarlarınızdan yönetebilir veya iptal edebilirsiniz.
                   </p>
 
                   {/* Checkout Actions & feedback loops */}

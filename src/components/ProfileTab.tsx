@@ -908,7 +908,7 @@ export default function ProfileTab({
             >
               <span className="text-xs flex items-center gap-2 font-headline-lg">
                 <Crown className="w-5 h-5 text-[#FFE66D] fill-[#FF6B6B]" />
-                İngilizce Öyküm Premium Satın Al (200₺)
+                İngilizce Öyküm Premium Satın Al (99₺)
               </span>
               <ChevronRight className="w-4 h-4 text-[#FF6B6B] group-hover:translate-x-1 transition-all" />
             </button>
