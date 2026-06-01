@@ -1,8 +1,31 @@
 import React, { useState, useMemo } from 'react';
-import { BookOpen, Timer, Plus, ArrowRight, ExternalLink, ChevronRight, X, Sparkles, BookMarked, Star } from 'lucide-react';
+import { BookOpen, Timer, Plus, ArrowRight, ExternalLink, ChevronRight, X, Sparkles, BookMarked, Star, Skull, Compass } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Book } from '../types';
 
+
+const getBookCategory = (bookId: string): 'horror_mystery' | 'kids_fables' | 'classics_adventure' => {
+  const horrorIds = [
+    'sleepy_hollow', 'dr_jekyll_mr_hyde', 'invisible_man', 'crime_punishment', 'frankenstein', 'dracula', 'war_of_worlds'
+  ];
+  const fableKidsIds = [
+    'peter_rabbit', 'bambi', 'velveteen_rabbit', 'nutcracker', 'blue_bird', 'tom_thumb', 'little_match_girl',
+    'gingerbread_man', 'chicken_little', 'enormous_turnip', 'three_billy_goats', 'fisherman_wife', 'little_red_hen',
+    'frog_prince', 'stone_soup', 'star_money', 'city_musicians', 'crow_pitcher', 'ant_grasshopper', 'lion_mouse',
+    'town_country_mouse', 'wind_sun', 'rumpelstiltskin', 'snow_queen', 'pinocchio', 'princess_pea', 'thumbelina',
+    'boy_cried_wolf', 'ali_baba', 'hansel_gretel', 'sleeping_beauty', 'rapunzel', 'cinderella', 'jack_beanstalk',
+    'aladdin', 'goldilocks', 'red_riding_hood', 'ugly_duckling', 'little_mermaid', 'three_pigs', 'snow_white', 'beauty_beast'
+  ];
+
+  const lowerId = bookId.toLowerCase();
+  if (horrorIds.some(id => lowerId.includes(id))) {
+    return 'horror_mystery';
+  }
+  if (fableKidsIds.some(id => lowerId.includes(id))) {
+    return 'kids_fables';
+  }
+  return 'classics_adventure';
+};
 
 interface LibraryTabProps {
   books: Book[];
@@ -16,6 +39,7 @@ interface LibraryTabProps {
 
 export default function LibraryTab({ books, onSelectBook, syncTrigger, isDarkMode, onToggleFavorite, totalReadMinutes, lastActiveBookId }: LibraryTabProps) {
   const [selectedLevel, setSelectedLevel] = useState<string>('All');
+  const [selectedCategory, setSelectedCategory] = useState<string>('All');
 
   // Currently reading is the last active book, or the first one with progress > 0 and < 100, or the first book
   const currentlyReading = useMemo(() => {
@@ -25,9 +49,13 @@ export default function LibraryTab({ books, onSelectBook, syncTrigger, isDarkMod
   }, [books, lastActiveBookId]);
 
   const filteredBooks = useMemo(() => {
-    const list = selectedLevel === 'All'
+    let list = selectedLevel === 'All'
       ? books
       : books.filter(b => b.level === selectedLevel);
+
+    if (selectedCategory !== 'All') {
+      list = list.filter(b => getBookCategory(b.id) === selectedCategory);
+    }
 
     const levelOrder: Record<string, number> = {
       A1: 1,
@@ -45,7 +73,7 @@ export default function LibraryTab({ books, onSelectBook, syncTrigger, isDarkMod
       }
       return a.title.localeCompare(b.title, 'tr');
     });
-  }, [books, selectedLevel]);
+  }, [books, selectedLevel, selectedCategory]);
 
 
   // Calculate unique words read across all books based on progress (currentPage index)
@@ -108,6 +136,65 @@ export default function LibraryTab({ books, onSelectBook, syncTrigger, isDarkMod
   const minutes = totalReadMinutes || 0;
   const totalReadHours = Math.floor(minutes / 60);
   const remainingMins = minutes % 60;
+
+  const renderBookCard = (book: Book, idx: number, isHorizontal: boolean = false) => {
+    const shouldAnimate = idx < 12;
+    return (
+      <motion.div
+        initial={shouldAnimate ? { opacity: 0, scale: 0.96 } : false}
+        animate={shouldAnimate ? { opacity: 1, scale: 1 } : false}
+        transition={shouldAnimate ? { delay: Math.min(idx, 8) * 0.03, duration: 0.25 } : undefined}
+        key={book.id}
+        onClick={() => onSelectBook(book)}
+        className={`group cursor-pointer flex flex-col ${
+          isHorizontal ? 'w-[140px] shrink-0 snap-start' : ''
+        }`}
+      >
+        <div className={`aspect-[2/3] rounded-2xl overflow-hidden mb-3 shadow-xs group-hover:shadow-md transition-all relative border ${
+          isDarkMode ? 'bg-[#1A1A1E] border-[#2A2A30]' : 'bg-white border-[#FFE66D]/60'
+        }`}>
+          <img
+            alt={book.title}
+            className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ${
+              book.isCompleted ? 'grayscale opacity-60' : ''
+            }`}
+            src={book.coverUrl}
+            loading="lazy"
+          />
+          <div className={`absolute top-2 right-2 px-2 py-0.5 rounded text-[10px] font-bold text-white shadow-xs ${
+            book.level.startsWith('A') ? 'bg-[#4ECDC4]' : book.level.startsWith('B') ? 'bg-[#FF6B6B]' : 'bg-[#2D3436]'
+          }`}>
+            {book.level}
+          </div>
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              onToggleFavorite(book.id);
+            }}
+            className="absolute top-2 left-2 p-1.5 bg-black/45 backdrop-blur-md hover:bg-black/60 text-[#F59E0B] rounded-xl border border-white/20 transition-all cursor-pointer shadow-sm scale-95 active:scale-90"
+            title={book.isFavorited ? 'Favorilerden Çıkar' : 'Favorilere Ekle'}
+          >
+            <Star className={`w-3.5 h-3.5 ${book.isFavorited ? 'fill-[#F59E0B]' : ''}`} />
+          </button>
+          {book.percentageCompleted === 100 && (
+            <div className="absolute inset-x-0 bottom-0 bg-[#4ECDC4] text-[#2D3436] py-1 text-center font-bold text-[10px] tracking-wider flex items-center justify-center gap-1 shadow-sm">
+              <span>TAMAMLANDI</span>
+            </div>
+          )}
+        </div>
+        <h4 className={`font-headline-lg text-[14px] font-semibold group-hover:text-[#FF6B6B] transition-colors leading-tight mb-0.5 truncate ${
+          isDarkMode ? 'text-white' : 'text-gray-950'
+        }`}>
+          {book.title}
+        </h4>
+        <p className="text-gray-455 dark:text-gray-400 text-[11px] truncate">{book.author}</p>
+        <div className="flex items-center gap-1.5 mt-1 text-[10px] text-[#4ECDC4] font-bold">
+          <BookOpen className="w-3.5 h-3.5" />
+          <span>{book.totalPages || 0} Sayfa</span>
+        </div>
+      </motion.div>
+    );
+  };
 
   return (
     <div className={`pb-32 max-w-[680px] mx-auto px-5 pt-6 transition-colors ${
@@ -223,89 +310,83 @@ export default function LibraryTab({ books, onSelectBook, syncTrigger, isDarkMod
           </span>
         </div>
 
-        {/* CEFR Level Filtering Tabs Bar */}
-        <div className="flex gap-1.5 mb-6 overflow-x-auto pb-2 scrollbar-none scroll-smooth">
-          {['Tümü', 'A1', 'A2', 'B1', 'B2', 'C1'].map((lvl) => {
-            const isSelected = lvl === 'Tümü' ? selectedLevel === 'All' : selectedLevel === lvl;
-            const levelCode = lvl === 'Tümü' ? 'All' : lvl;
-            
-            return (
-              <button
-                key={lvl}
-                onClick={() => setSelectedLevel(levelCode)}
-                className={`px-4 py-2 rounded-xl text-xs font-bold transition-all duration-200 cursor-pointer border select-none ${
-                  isSelected
-                    ? 'bg-[#FF6B6B] border-[#FF6B6B] text-white shadow-md shadow-[#FF6B6B]/20 scale-[1.03]'
-                    : isDarkMode
-                      ? 'bg-[#1E1E22] border-[#2A2A30] text-gray-400 hover:text-white hover:border-gray-500'
-                      : 'bg-white border-gray-200 text-gray-600 hover:text-[#FF6B6B] hover:border-gray-300'
-                }`}
-              >
-                {lvl}
-              </button>
-            );
-          })}
+        {/* Kategoriler (Category) Filter Row */}
+        <div className="mb-4">
+          <span className={`text-[10px] font-bold uppercase tracking-wider block mb-2 px-1 ${
+            isDarkMode ? 'text-gray-400' : 'text-gray-455'
+          }`}>
+            Kategoriler (Bölümler)
+          </span>
+          <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-none scroll-smooth">
+            {[
+              { id: 'All', name: 'Tümü', icon: null },
+              { id: 'horror_mystery', name: 'Korku & Gizem', icon: <Skull className="w-3.5 h-3.5" /> },
+              { id: 'kids_fables', name: 'Masallar & Çocuk', icon: <Sparkles className="w-3.5 h-3.5" /> },
+              { id: 'classics_adventure', name: 'Dünya Klasikleri', icon: <Compass className="w-3.5 h-3.5" /> }
+            ].map((cat) => {
+              const isSelected = selectedCategory === cat.id;
+              return (
+                <button
+                  key={cat.id}
+                  onClick={() => setSelectedCategory(cat.id)}
+                  className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all duration-200 cursor-pointer border select-none flex items-center gap-1.5 shrink-0 ${
+                    isSelected
+                      ? 'bg-[#FF6B6B] border-[#FF6B6B] text-white shadow-md shadow-[#FF6B6B]/20 scale-[1.02]'
+                      : isDarkMode
+                        ? 'bg-[#1E1E22] border-[#2A2A30] text-gray-400 hover:text-white hover:border-gray-500'
+                        : 'bg-white border-gray-200 text-gray-600 hover:text-[#FF6B6B] hover:border-gray-300'
+                  }`}
+                >
+                  {cat.icon}
+                  <span>{cat.name}</span>
+                </button>
+              );
+            })}
+          </div>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-5">
-          {/* Loop over other books */}
-          {filteredBooks.map((book, idx) => {
-            const shouldAnimate = idx < 12; // Animating only first screen items to keep mobile scroll FPS locked
-            return (
-              <motion.div
-                initial={shouldAnimate ? { opacity: 0, scale: 0.96 } : false}
-                animate={shouldAnimate ? { opacity: 1, scale: 1 } : false}
-                transition={shouldAnimate ? { delay: Math.min(idx, 8) * 0.03, duration: 0.25 } : undefined}
-                key={book.id}
-                onClick={() => onSelectBook(book)}
-                className="group cursor-pointer flex flex-col"
-              >
-                <div className={`aspect-[2/3] rounded-2xl overflow-hidden mb-3 shadow-xs group-hover:shadow-md transition-all relative border ${
-                  isDarkMode ? 'bg-[#1A1A1E] border-[#2A2A30]' : 'bg-white border-[#FFE66D]/60'
-                }`}>
-                  <img
-                    alt={book.title}
-                    className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ${
-                      book.isCompleted ? 'grayscale opacity-60' : ''
-                    }`}
-                    src={book.coverUrl}
-                  />
-                  <div className={`absolute top-2 right-2 px-2 py-0.5 rounded text-[10px] font-bold text-white shadow-xs ${
-                    book.level.startsWith('A') ? 'bg-[#4ECDC4]' : book.level.startsWith('B') ? 'bg-[#FF6B6B]' : 'bg-[#2D3436]'
-                  }`}>
-                    {book.level}
-                  </div>
-                  {/* Star Button */}
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      onToggleFavorite(book.id);
-                    }}
-                    className="absolute top-2 left-2 p-1.5 bg-black/45 backdrop-blur-md hover:bg-black/60 text-[#F59E0B] rounded-xl border border-white/20 transition-all cursor-pointer shadow-sm scale-95 active:scale-90"
-                    title={book.isFavorited ? 'Favorilerden Çıkar' : 'Favorilere Ekle'}
-                  >
-                    <Star className={`w-3.5 h-3.5 ${book.isFavorited ? 'fill-[#F59E0B]' : ''}`} />
-                  </button>
-                  {book.percentageCompleted === 100 && (
-                    <div className="absolute inset-x-0 bottom-0 bg-[#4ECDC4] text-[#2D3436] py-1 text-center font-bold text-[10px] tracking-wider flex items-center justify-center gap-1 shadow-sm">
-                      <span>TAMAMLANDI</span>
-                    </div>
-                  )}
-                </div>
-                <h4 className={`font-headline-lg text-[15px] font-semibold group-hover:text-[#FF6B6B] transition-colors leading-tight mb-0.5 truncate ${
-                  isDarkMode ? 'text-white' : 'text-gray-950'
-                }`}>
-                  {book.title}
-                </h4>
-                <p className="text-gray-455 dark:text-gray-400 text-xs truncate">{book.author}</p>
-                <div className="flex items-center gap-1.5 mt-1 text-[11px] text-[#4ECDC4] font-bold">
-                  <BookOpen className="w-3.5 h-3.5" />
-                  <span>{book.totalPages || 0} Sayfa</span>
-                </div>
-              </motion.div>
-            );
-          })}
+        {/* CEFR Level Filtering Tabs Bar */}
+        <div className="mb-6">
+          <span className={`text-[10px] font-bold uppercase tracking-wider block mb-2 px-1 ${
+            isDarkMode ? 'text-gray-400' : 'text-gray-455'
+          }`}>
+            Zorluk Seviyeleri
+          </span>
+          <div className="flex gap-1.5 overflow-x-auto pb-2 scrollbar-none scroll-smooth">
+            {['Tümü', 'A1', 'A2', 'B1', 'B2', 'C1'].map((lvl) => {
+              const isSelected = lvl === 'Tümü' ? selectedLevel === 'All' : selectedLevel === lvl;
+              const levelCode = lvl === 'Tümü' ? 'All' : lvl;
+              
+              return (
+                <button
+                  key={lvl}
+                  onClick={() => setSelectedLevel(levelCode)}
+                  className={`px-4 py-2 rounded-xl text-xs font-bold transition-all duration-200 cursor-pointer border select-none ${
+                    isSelected
+                      ? 'bg-[#4ECDC4] border-[#4ECDC4] text-[#2D3436] shadow-md shadow-[#4ECDC4]/20 scale-[1.02]'
+                      : isDarkMode
+                        ? 'bg-[#1E1E22] border-[#2A2A30] text-gray-400 hover:text-white hover:border-gray-500'
+                        : 'bg-white border-gray-200 text-gray-600 hover:text-[#4ECDC4] hover:border-gray-300'
+                  }`}
+                >
+                  {lvl}
+                </button>
+              );
+            })}
+          </div>
         </div>
+
+        {/* Books Grid */}
+        {filteredBooks.length > 0 ? (
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-5">
+            {filteredBooks.map((book, idx) => renderBookCard(book, idx, false))}
+          </div>
+        ) : (
+          <div className="text-center py-12 border-2 border-dashed border-gray-400/20 rounded-[28px]">
+            <span role="img" aria-label="empty" className="text-3xl block mb-2">📚</span>
+            <p className="text-xs text-gray-400 font-bold font-headline-lg">Bu filtre kombinasyonunda kitap bulunamadı.</p>
+          </div>
+        )}
       </section>
 
       {/* Aggregate Stats Bento */}
