@@ -7,3 +7,5 @@ coverage/
 .env*
 !.env.example
 node-portable/
+platform-tools/
+platform-tools.zip

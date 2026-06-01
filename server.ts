@@ -37,7 +37,7 @@ const looksLikeProperNoun = (w: string): boolean => {
 
 async function startServer() {
   const app = express();
-  const PORT = 3000;
+  const PORT = parseInt(process.env.PORT || "3000", 10);
 
   // Use JSON parsing middleware with a larger body limit for base64 photo uploads
   app.use(express.json({ limit: "15mb" }));
