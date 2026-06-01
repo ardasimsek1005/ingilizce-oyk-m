@@ -394,13 +394,13 @@ const generateVocabularyQuiz = (vocabList: VocabularyWord[], books: Book[]): Qui
   });
 };
 
-const generateRandomQuizForLevel = (level: 'A1' | 'A2' | 'B1' | 'B2' | 'C1', books: Book[]): QuizQuestion[] => {
-  // 1. Gather all words from all books of the specified level
+const generateRandomQuizForLevels = (levels: ('A1' | 'A2' | 'B1' | 'B2' | 'C1')[], books: Book[]): QuizQuestion[] => {
+  // 1. Gather all words from all books of the specified levels
   const wordPool: { en: string; tr: string; level: string; exampleEn?: string; exampleTr?: string }[] = [];
   const seenWords = new Set<string>();
   
-  const booksAtLevel = books.filter(b => b.level === level);
-  booksAtLevel.forEach(book => {
+  const booksAtLevels = books.filter(b => levels.includes(b.level as any));
+  booksAtLevels.forEach(book => {
     book.chapters.forEach(chapter => {
       chapter.paragraphs.forEach(p => {
         if (p.words) {
@@ -433,7 +433,7 @@ const generateRandomQuizForLevel = (level: 'A1' | 'A2' | 'B1' | 'B2' | 'C1', boo
               wordPool.push({
                 en: w.en,
                 tr: w.tr,
-                level: `${level} Seviyesi`,
+                level: `${book.level} Seviyesi`,
                 exampleEn: contextEn,
                 exampleTr: contextTr
               });
@@ -513,21 +513,62 @@ export default function QuizView({
   const [isProcessingPayment, setIsProcessingPayment] = useState(false);
   const [paymentDone, setPaymentDone] = useState(false);
 
-  const [questions] = useState<QuizQuestion[]>(() => {
+  const getDefaultDifficulty = (books: Book[]): 'easy' | 'medium' | 'hard' => {
+    const activeBooks = books.filter(b => b.currentPage > 0 || b.percentageCompleted > 0);
+    if (activeBooks.length === 0) return 'easy';
+    const highestLevel = activeBooks.reduce((acc, book) => {
+      const levelOrder = { 'A1': 1, 'A2': 2, 'B1': 3, 'B2': 4, 'C1': 5 };
+      return levelOrder[book.level] > levelOrder[acc] ? book.level : acc;
+    }, 'A1' as 'A1' | 'A2' | 'B1' | 'B2' | 'C1');
+    if (highestLevel === 'A1' || highestLevel === 'A2') return 'easy';
+    if (highestLevel === 'B1' || highestLevel === 'B2') return 'medium';
+    return 'hard';
+  };
+
+  const [difficulty, setDifficulty] = useState<'easy' | 'medium' | 'hard'>(() => getDefaultDifficulty(books));
+
+  const [questions, setQuestions] = useState<QuizQuestion[]>(() => {
     if (quizMode === 'random') {
-      // Find active CEFR level
-      const activeBooks = books.filter(b => b.currentPage > 0 || b.percentageCompleted > 0);
-      const userLevel: 'A1' | 'A2' | 'B1' | 'B2' | 'C1' = activeBooks.length === 0
-        ? 'A1'
-        : activeBooks.reduce((acc, book) => {
-            const levelOrder = { 'A1': 1, 'A2': 2, 'B1': 3, 'B2': 4, 'C1': 5 };
-            return levelOrder[book.level] > levelOrder[acc] ? book.level : acc;
-          }, 'A1' as 'A1' | 'A2' | 'B1' | 'B2' | 'C1');
-      return generateRandomQuizForLevel(userLevel, books);
+      const initialDiff = getDefaultDifficulty(books);
+      const levelsMap = {
+        easy: ['A1', 'A2'],
+        medium: ['B1', 'B2'],
+        hard: ['C1']
+      };
+      return generateRandomQuizForLevels(levelsMap[initialDiff] as any, books);
     } else {
       return generateVocabularyQuiz(vocabulary, books);
     }
   });
+
+  const prevDifficultyRef = React.useRef(difficulty);
+  const prevModeRef = React.useRef(quizMode);
+
+  React.useEffect(() => {
+    if (prevDifficultyRef.current !== difficulty || prevModeRef.current !== quizMode) {
+      prevDifficultyRef.current = difficulty;
+      prevModeRef.current = quizMode;
+      
+      if (quizMode === 'random') {
+        const levelsMap = {
+          easy: ['A1', 'A2'],
+          medium: ['B1', 'B2'],
+          hard: ['C1']
+        };
+        const q = generateRandomQuizForLevels(levelsMap[difficulty] as any, books);
+        setQuestions(q);
+      } else {
+        const q = generateVocabularyQuiz(vocabulary, books);
+        setQuestions(q);
+      }
+      setCurrentQuestionIdx(0);
+      setSelectedOption(null);
+      setIsAnswered(false);
+      setQuizScore(0);
+      setIsCompleted(false);
+    }
+  }, [difficulty, quizMode, books, vocabulary]);
+
   const activeQuestion = questions[currentQuestionIdx];
 
   const autoProceedTimeoutRef = React.useRef<any>(null);
@@ -892,6 +933,45 @@ export default function QuizView({
                       </motion.div>
                     )}
                   </AnimatePresence>
+
+                  {/* Random Quiz Difficulty selector */}
+                  {quizMode === 'random' && (
+                    <div className="mt-8 pt-5 border-t border-gray-400/15">
+                      <span className="text-[10px] font-bold text-gray-400 block uppercase mb-2.5 text-center select-none tracking-wider font-headline-lg">
+                        Quiz Zorluk Seviyesi
+                      </span>
+                      <div className="grid grid-cols-3 gap-2">
+                        {(['easy', 'medium', 'hard'] as const).map((diff) => {
+                          const isSelected = difficulty === diff;
+                          const label = diff === 'easy' ? 'Kolay (A1-A2)' : diff === 'medium' ? 'Orta (B1-B2)' : 'Zor (C1-C2)';
+                          
+                          let btnStyle = isDarkMode
+                            ? 'bg-[#1E1E22] border-[#2A2A30] text-gray-400 hover:text-white hover:border-gray-500'
+                            : 'bg-white border-gray-255 text-gray-555 hover:text-[#FF6B6B] hover:border-gray-300';
+                          
+                          if (isSelected) {
+                            btnStyle = 'bg-[#FF6B6B] border-[#FF6B6B] text-white shadow-md shadow-[#FF6B6B]/20 scale-[1.02]';
+                          }
+
+                          return (
+                            <button
+                              key={diff}
+                              onClick={() => {
+                                if (difficulty !== diff) {
+                                  setDifficulty(diff);
+                                  setToastMessage(`Zorluk seviyesi değiştirildi: ${label} 🎉`);
+                                  setTimeout(() => setToastMessage(null), 2500);
+                                }
+                              }}
+                              className={`py-2 px-1 rounded-xl text-[10px] sm:text-xs font-bold transition-all border text-center cursor-pointer select-none ${btnStyle}`}
+                            >
+                              {label}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
                 </motion.div>
               )}
             </div>
