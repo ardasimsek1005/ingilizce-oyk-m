@@ -341,21 +341,21 @@ export const LEADERBOARD_DATA: LeaderboardUser[] = [
 ];
 
 export const INITIAL_BADGES: Badge[] = [
-  { id: 'b1', title: 'Kitap Kurdu', description: 'En az 5 farklı İngilizce hikaye oku.', iconName: 'BookOpen', unlocked: false },
-  { id: 'b2', title: 'Azimli Sebat', description: 'Günlük hedefini üst üste 15 gün tamamla.', iconName: 'Flame', unlocked: false },
-  { id: 'b3', title: 'Kelime Avcısı', description: 'Kelime haznesine 100 yeni kelime kaydet.', iconName: 'Award', unlocked: false },
-  { id: 'b4', title: 'Kusursuz Akıl', description: 'Bir kelime quizini can kaybetmeden bitir.', iconName: 'Sparkles', unlocked: false },
-  { id: 'b5', title: 'Premium Üye', description: 'Sınırsız can ve premium ayrıcalıkları aktif et.', iconName: 'Crown', unlocked: false },
   { id: 'b6', title: 'İlk Adım', description: 'İlk hikayeni başarıyla tamamla.', iconName: 'Zap', unlocked: false },
-  { id: 'b7', title: 'Kelime Meraklısı', description: 'Kelime haznesine 20 yeni kelime kaydet.', iconName: 'BadgeCheck', unlocked: false },
-  { id: 'b8', title: 'Zaman Bükücü', description: 'Toplam 100 dakika okuma süresine ulaş.', iconName: 'Clock', unlocked: false },
-  { id: 'b9', title: 'Kütüphaneci', description: 'En az 10 farklı hikayeye başla.', iconName: 'Library', unlocked: false },
-  { id: 'b10', title: 'Bilge Gezgin', description: 'C1 seviyesinde en az bir hikaye bitir.', iconName: 'Trophy', unlocked: false },
   { id: 'b11', title: 'Okumaya Alışmak', description: 'Toplam 10 dakika okuma süresine ulaş.', iconName: 'Clock', unlocked: false },
+  { id: 'b7', title: 'Kelime Meraklısı', description: 'Kelime haznesine 20 yeni kelime kaydet.', iconName: 'BadgeCheck', unlocked: false },
+  { id: 'b1', title: 'Kitap Kurdu', description: 'En az 5 farklı İngilizce hikaye oku.', iconName: 'BookOpen', unlocked: false },
+  { id: 'b14', title: 'Çelik İrade', description: 'Günlük hedefini üst üste 5 gün tamamla.', iconName: 'Flame', unlocked: false },
   { id: 'b12', title: 'Kelime Koleksiyoneri', description: 'Kelime haznesine 50 yeni kelime kaydet.', iconName: 'Award', unlocked: false },
   { id: 'b13', title: 'Dil Kaşifi', description: '3 farklı zorluk seviyesinden hikayeler bitir.', iconName: 'Volume2', unlocked: false },
-  { id: 'b14', title: 'Çelik İrade', description: 'Günlük hedefini üst üste 5 gün tamamla.', iconName: 'Flame', unlocked: false },
-  { id: 'b15', title: 'Efsanevi Okur', description: 'Toplam 500 dakika okuma süresine ulaş.', iconName: 'Trophy', unlocked: false }
+  { id: 'b9', title: 'Kütüphaneci', description: 'En az 10 farklı hikayeye başla.', iconName: 'Library', unlocked: false },
+  { id: 'b8', title: 'Zaman Bükücü', description: 'Toplam 100 dakika okuma süresine ulaş.', iconName: 'Clock', unlocked: false },
+  { id: 'b4', title: 'Kusursuz Akıl', description: 'Bir kelime quizini can kaybetmeden bitir.', iconName: 'Sparkles', unlocked: false },
+  { id: 'b3', title: 'Kelime Avcısı', description: 'Kelime haznesine 100 yeni kelime kaydet.', iconName: 'Award', unlocked: false },
+  { id: 'b2', title: 'Azimli Sebat', description: 'Günlük hedefini üst üste 15 gün tamamla.', iconName: 'Flame', unlocked: false },
+  { id: 'b10', title: 'Bilge Gezgin', description: 'C1 seviyesinde en az bir hikaye bitir.', iconName: 'Trophy', unlocked: false },
+  { id: 'b15', title: 'Efsanevi Okur', description: 'Toplam 500 dakika okuma süresine ulaş.', iconName: 'Trophy', unlocked: false },
+  { id: 'b5', title: 'Premium Üye', description: 'Sınırsız can ve premium ayrıcalıkları aktif et.', iconName: 'Crown', unlocked: false }
 ];
 
 export const ANALYTICS_DATA = [

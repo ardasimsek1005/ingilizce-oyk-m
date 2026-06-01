@@ -1144,11 +1144,11 @@ export default function ProfileTab({
           </span>
         </div>
 
-        <div className="grid grid-cols-2 gap-2.5">
+        <div className="flex flex-col gap-2.5">
           {badges.map((badge) => (
             <div
               key={badge.id}
-              className={`p-2.5 rounded-xl border flex items-start gap-2 transition-all duration-300 relative overflow-hidden ${
+              className={`p-2.5 rounded-xl border flex items-center justify-between gap-4 transition-all duration-300 ${
                 badge.unlocked
                   ? isDarkMode 
                     ? 'bg-[#FF6B6B]/5 border-[#FF6B6B]/30 hover:border-[#FF6B6B]/50' 
@@ -1158,31 +1158,36 @@ export default function ProfileTab({
                     : 'bg-gray-50/40 border-gray-150 opacity-65'
               }`}
             >
-              <div className={`p-1.5 rounded-lg shrink-0 transition-transform duration-300 mt-0.5 ${
-                badge.unlocked 
-                  ? 'bg-[#FFE66D]/25' 
-                  : 'bg-gray-100 dark:bg-gray-800 text-gray-400'
-              }`}>
-                {getBadgeIcon(badge.iconName, badge.unlocked)}
-              </div>
-              
-              <div className="min-w-0 flex-1">
-                <h4 className={`font-bold text-[10.5px] leading-tight mb-0.5 truncate ${
+              <div className="flex items-center gap-3 min-w-0 flex-1">
+                <div className={`p-1.5 rounded-lg shrink-0 transition-transform duration-300 ${
                   badge.unlocked 
-                    ? isDarkMode ? 'text-white' : 'text-gray-900 font-black' 
-                    : 'text-gray-500'
+                    ? 'bg-[#FFE66D]/25' 
+                    : 'bg-gray-100 dark:bg-gray-800 text-gray-400'
                 }`}>
-                  {badge.title}
-                </h4>
-                <p className="text-[8.5px] text-gray-400 dark:text-gray-500 leading-snug line-clamp-2">
-                  {badge.description}
-                </p>
+                  {getBadgeIcon(badge.iconName, badge.unlocked)}
+                </div>
+                
+                <div className="min-w-0 flex-1">
+                  <h4 className={`font-bold text-xs leading-tight mb-0.5 ${
+                    badge.unlocked 
+                      ? isDarkMode ? 'text-white' : 'text-gray-900 font-black' 
+                      : 'text-gray-500'
+                  }`}>
+                    {badge.title}
+                  </h4>
+                  <p className="text-[9.5px] text-gray-400 dark:text-gray-500 leading-snug truncate">
+                    {badge.description}
+                  </p>
+                </div>
+              </div>
+
+              <div className="shrink-0 text-right">
                 {badge.unlocked && badge.unlockedAt ? (
-                  <span className="text-[7.5px] font-bold text-[#4ECDC4] font-mono mt-0.5 block truncate">
+                  <span className="text-[8px] font-bold text-[#4ECDC4] font-mono block">
                     {badge.unlockedAt}
                   </span>
                 ) : (
-                  <span className="text-[7.5px] font-semibold text-gray-400 dark:text-gray-650 mt-0.5 block truncate">
+                  <span className="text-[8px] font-semibold text-gray-400 dark:text-gray-600 block">
                     Kilitli
                   </span>
                 )}
