@@ -610,28 +610,43 @@ export default function App() {
   // Automatic achievement badge unlocking observer
   useEffect(() => {
     if (!stats) return;
+    const checkAndUnlock = (id: string, condition: boolean) => {
+      if (condition) {
+        const badge = badges.find(b => b.id === id);
+        if (badge && !badge.unlocked) {
+          unlockBadge(id);
+        }
+      }
+    };
+
     // b1: Kitap Kurdu (En az 5 farklı İngilizce hikaye oku)
-    if ((stats.completedBooksCount || 0) >= 5) {
-      const b1 = badges.find(b => b.id === 'b1');
-      if (b1 && !b1.unlocked) {
-        unlockBadge('b1');
-      }
-    }
+    checkAndUnlock('b1', (stats.completedBooksCount || 0) >= 5);
     // b2: Azimli Sebat (Günlük hedefini üst üste 15 gün tamamla)
-    if ((stats.dailyStreak || 0) >= 15) {
-      const b2 = badges.find(b => b.id === 'b2');
-      if (b2 && !b2.unlocked) {
-        unlockBadge('b2');
-      }
-    }
+    checkAndUnlock('b2', (stats.dailyStreak || 0) >= 15);
     // b3: Kelime Avcısı (Kelime haznesine 100 yeni kelime kaydet)
-    if (vocabulary.length >= 100) {
-      const b3 = badges.find(b => b.id === 'b3');
-      if (b3 && !b3.unlocked) {
-        unlockBadge('b3');
-      }
-    }
-  }, [stats?.completedBooksCount, stats?.dailyStreak, vocabulary.length, badges]);
+    checkAndUnlock('b3', vocabulary.length >= 100);
+    // b6: İlk Adım (İlk hikayeni başarıyla tamamla)
+    checkAndUnlock('b6', (stats.completedBooksCount || 0) >= 1);
+    // b7: Kelime Meraklısı (Kelime haznesine 20 yeni kelime kaydet)
+    checkAndUnlock('b7', vocabulary.length >= 20);
+    // b8: Zaman Bükücü (Toplam 100 dakika okuma süresine ulaş)
+    checkAndUnlock('b8', (stats.totalTimeMinutes || 0) >= 100);
+    // b9: Kütüphaneci (En az 10 farklı hikayeye başla)
+    checkAndUnlock('b9', books.filter(b => b.isStarted).length >= 10);
+    // b10: Bilge Gezgin (C1 seviyesinde en az bir hikaye bitir)
+    checkAndUnlock('b10', books.some(b => b.level === 'C1' && b.isCompleted));
+    // b11: Okumaya Alışmak (Toplam 10 dakika okuma süresine ulaş)
+    checkAndUnlock('b11', (stats.totalTimeMinutes || 0) >= 10);
+    // b12: Kelime Koleksiyoneri (Kelime haznesine 50 yeni kelime kaydet)
+    checkAndUnlock('b12', vocabulary.length >= 50);
+    // b13: Dil Kaşifi (3 farklı zorluk seviyesinden hikayeler bitir)
+    const completedLevels = new Set(books.filter(b => b.isCompleted).map(b => b.level));
+    checkAndUnlock('b13', completedLevels.size >= 3);
+    // b14: Çelik İrade (Günlük hedefini üst üste 5 gün tamamla)
+    checkAndUnlock('b14', (stats.dailyStreak || 0) >= 5);
+    // b15: Efsanevi Okur (Toplam 500 dakika okuma süresine ulaş)
+    checkAndUnlock('b15', (stats.totalTimeMinutes || 0) >= 500);
+  }, [stats?.completedBooksCount, stats?.dailyStreak, stats?.totalTimeMinutes, vocabulary.length, books, badges]);
 
   // Heart regeneration mechanism: 1 heart every 1 hour (3600000 ms), capped at 5
   useEffect(() => {
