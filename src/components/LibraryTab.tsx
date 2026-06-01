@@ -189,18 +189,18 @@ export default function LibraryTab({ books, onSelectBook, syncTrigger, isDarkMod
   const libraryCountLabel = useMemo(() => {
     const count = filteredBooks.length;
     if (selectedCategory === 'All') {
-      return `Toplam ${count} hikaye`;
+      return `Toplam ${count} Hikaye`;
     }
     if (selectedCategory === 'horror_mystery') {
-      return `Toplam ${count} korku ve gizem hikayesi`;
+      return `Toplam ${count} Korku ve Gizem Hikayesi`;
     }
     if (selectedCategory === 'kids_fables') {
-      return `Toplam ${count} masal ve çocuk hikayesi`;
+      return `Toplam ${count} Masal ve Çocuk Hikayesi`;
     }
     if (selectedCategory === 'classics_adventure') {
-      return `Toplam ${count} dünya klasiği`;
+      return `Toplam ${count} Dünya Klasiği`;
     }
-    return `Toplam ${count} eser`;
+    return `Toplam ${count} Eser`;
   }, [filteredBooks.length, selectedCategory]);
 
 
