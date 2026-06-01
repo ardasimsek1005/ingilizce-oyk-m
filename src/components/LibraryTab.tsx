@@ -5,89 +5,113 @@ import { Book } from '../types';
 
 
 const TumuIcon = () => (
-  <svg className="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
-    <rect x="3" y="14" width="16" height="4" rx="1" fill="url(#bookGrad1)" />
-    <path d="M19 14h2v4h-2z" fill="#D2D6DC" />
-    <rect x="5" y="9" width="16" height="4" rx="1" fill="url(#bookGrad2)" />
-    <path d="M21 9h2v4h-2z" fill="#D2D6DC" />
-    <rect x="4" y="4" width="15" height="4" rx="1" fill="url(#bookGrad3)" />
-    <path d="M19 4h2v4h-2z" fill="#D2D6DC" />
+  <svg className="w-11 h-11 shrink-0" viewBox="0 0 32 32" fill="none">
     <defs>
-      <linearGradient id="bookGrad1" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stopColor="#FF6B6B" />
-        <stop offset="100%" stopColor="#EE5253" />
+      <filter id="bookGlow" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="1" result="blur" />
+        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+      </filter>
+      <linearGradient id="bookCover" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stopColor="#FF4757" />
+        <stop offset="100%" stopColor="#950B14" />
       </linearGradient>
-      <linearGradient id="bookGrad2" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stopColor="#4ECDC4" />
-        <stop offset="100%" stopColor="#1DD1A1" />
+      <linearGradient id="pageGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stopColor="#FFFFFF" />
+        <stop offset="100%" stopColor="#F1F2F6" />
       </linearGradient>
-      <linearGradient id="bookGrad3" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stopColor="#FFE66D" />
-        <stop offset="100%" stopColor="#FF9F43" />
+      <linearGradient id="bookmark" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stopColor="#FFC312" />
+        <stop offset="100%" stopColor="#EE5A24" />
       </linearGradient>
     </defs>
+    <path d="M2 24c4-1 10-1 14 2 4-3 10-3 14-2V6c-4-1-10-1-14 2-4-3-10-3-14-2v18z" fill="url(#bookCover)" />
+    <path d="M3 22c3.5-.8 9-.8 13 1.8V5.8c-4-2.6-9.5-2.6-13-1.8v18z" fill="url(#pageGrad)" />
+    <path d="M29 22c-3.5-.8-9-.8-13 1.8V5.8c4-2.6 9.5-2.6 13-1.8v18z" fill="url(#pageGrad)" />
+    <path d="M5 7h8M5 11h8M5 15h8M5 19h8M19 7h8M19 11h8M19 15h8M19 19h8" stroke="#D1D8E0" strokeWidth="1" strokeLinecap="round" />
+    <path d="M15 8h2v15l-1-1-1 1V8z" fill="url(#bookmark)" />
+    <circle cx="16" cy="4" r="1.2" fill="#FFC312" filter="url(#bookGlow)" />
+    <path d="M9 3l1 1-1 1-1-1 1-1zm14 2l0.8 0.8-0.8 0.8-0.8-0.8 0.8-0.8z" fill="#FFE66D" filter="url(#bookGlow)" />
   </svg>
 );
 
 const SpookyIcon = () => (
-  <svg className="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
-    <path d="M12 2C8 2 5 5 5 9v9c0 .6.4 1 1 1s1-.4 1-1v-2h10v2c0 .6.4 1 1 1s1-.4 1-1V9c0-4-3-7-7-7z" fill="url(#ghostGrad)" />
-    <circle cx="9" cy="8" r="1.5" fill="#1A1A1E" />
-    <circle cx="15" cy="8" r="1.5" fill="#1A1A1E" />
-    <path d="M11 11.5c.5.5 1.5.5 2 0" stroke="#1A1A1E" strokeWidth="1.2" strokeLinecap="round" />
-    <circle cx="6" cy="14" r="1" fill="#FFE66D" />
-    <circle cx="18" cy="11" r="0.8" fill="#FFE66D" />
+  <svg className="w-11 h-11 shrink-0" viewBox="0 0 32 32" fill="none">
     <defs>
-      <linearGradient id="ghostGrad" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stopColor="#a55eea" />
-        <stop offset="100%" stopColor="#8854d0" />
+      <linearGradient id="moonGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stopColor="#FFE66D" />
+        <stop offset="60%" stopColor="#FF9F43" />
+        <stop offset="100%" stopColor="#FF5252" />
+      </linearGradient>
+      <linearGradient id="castleGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stopColor="#4B3775" />
+        <stop offset="100%" stopColor="#2E1A4E" />
       </linearGradient>
     </defs>
+    <circle cx="16" cy="16" r="13" fill="url(#moonGrad)" />
+    <path d="M7 27h18v-8l-2-2v4h-3v-6l-2-2-2 2v6h-3v-4l-2 2v8z" fill="url(#castleGrad)" />
+    <rect x="15" y="7" width="2" height="6" fill="url(#castleGrad)" />
+    <path d="M15 7l1-3 1 3h-2zm-6 12l1-3 1 3H9zm12 2l1-3 1 3h-2z" fill="#2E1A4E" />
+    <rect x="15" y="16" width="2" height="3" rx="0.5" fill="#FFE66D" />
+    <circle cx="10" cy="20" r="0.8" fill="#FFE66D" />
+    <circle cx="22" cy="22" r="0.8" fill="#FFE66D" />
+    <path d="M6 9c.5.5 1.5.2 2-.5.5.7 1.5 1 2 .5-.5.8-1.5.8-2 .2-.5.6-1.5.6-2-.2z" fill="#2E1A4E" />
+    <path d="M22 6c.4.4 1.2.1 1.6-.4.4.5 1.2.8 1.6.4-.4.6-1.2.6-1.6.1-.4.5-1.2.5-1.6-.1z" fill="#2E1A4E" />
   </svg>
 );
 
 const WandIcon = () => (
-  <svg className="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
-    <path d="M19 19L9 9" stroke="url(#wandStick)" strokeWidth="2.5" strokeLinecap="round" />
-    <path d="M8 2l1.5 3 3.5.5-2.5 2.5.5 3.5-3-1.5-3 1.5.5-3.5L3.5 5.5l3.5-.5L8 2z" fill="url(#starGrad)" />
-    <circle cx="13" cy="4" r="1" fill="#FF6B6B" />
-    <circle cx="3" cy="11" r="0.8" fill="#FFE66D" />
-    <circle cx="12" cy="12" r="1.2" fill="#4ECDC4" />
+  <svg className="w-11 h-11 shrink-0" viewBox="0 0 32 32" fill="none">
     <defs>
-      <linearGradient id="wandStick" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stopColor="#FFE66D" />
-        <stop offset="100%" stopColor="#FF6B6B" />
+      <linearGradient id="crystalGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stopColor="#70A1FF" />
+        <stop offset="40%" stopColor="#A890FE" />
+        <stop offset="70%" stopColor="#E280FF" />
+        <stop offset="100%" stopColor="#FF9FF3" />
       </linearGradient>
-      <linearGradient id="starGrad" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stopColor="#FF9F43" />
-        <stop offset="100%" stopColor="#FFE66D" />
+      <linearGradient id="standGrad" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stopColor="#FFE66D" />
+        <stop offset="50%" stopColor="#FFC312" />
+        <stop offset="100%" stopColor="#EE5A24" />
       </linearGradient>
     </defs>
+    <path d="M9 25h14v2c0 1.5-2 2-7 2s-7-.5-7-2v-2z" fill="url(#standGrad)" />
+    <path d="M12 21h8v4h-8v-4z" fill="#EE5A24" />
+    <path d="M7 23c2-1 4-2 9-2s7 1 9 2H7z" fill="url(#standGrad)" />
+    <circle cx="16" cy="13" r="10" fill="url(#crystalGrad)" stroke="#FFFFFF" strokeWidth="1" />
+    <path d="M16 7l0.8 1.8 1.8.8-1.8.8-.8 1.8-.8-1.8-1.8-.8 1.8-.8.8-1.8z" fill="#FFFFFF" />
+    <circle cx="11" cy="15" r="1" fill="#FFFFFF" />
+    <circle cx="21" cy="11" r="1.2" fill="#FFE66D" />
+    <circle cx="20" cy="16" r="0.8" fill="#FFFFFF" />
+    <path d="M9 8a8 8 0 0110-2" stroke="#FFFFFF" strokeWidth="1.2" strokeLinecap="round" opacity="0.6" />
   </svg>
 );
 
 const CompassIcon = () => (
-  <svg className="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
-    <circle cx="12" cy="12" r="9" stroke="url(#compassGold)" strokeWidth="2.2" />
-    <circle cx="12" cy="12" r="7.5" fill="url(#compassBlue)" />
-    <path d="M12 7l2.5 5L12 17l-2.5-5L12 7z" fill="url(#needleGrad)" />
-    <circle cx="12" cy="12" r="1.5" fill="#FFE66D" />
+  <svg className="w-11 h-11 shrink-0" viewBox="0 0 32 32" fill="none">
     <defs>
-      <linearGradient id="compassGold" x1="0" y1="0" x2="1" y2="1">
+      <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
         <stop offset="0%" stopColor="#FFE66D" />
-        <stop offset="100%" stopColor="#FF9F43" />
+        <stop offset="60%" stopColor="#FF7F50" />
+        <stop offset="100%" stopColor="#FF6B6B" />
       </linearGradient>
-      <linearGradient id="compassBlue" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stopColor="#45aaf2" />
-        <stop offset="100%" stopColor="#2d98da" />
+      <linearGradient id="seaGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stopColor="#45AAF2" />
+        <stop offset="100%" stopColor="#0B5FA5" />
       </linearGradient>
-      <linearGradient id="needleGrad" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stopColor="#FF6B6B" />
-        <stop offset="50%" stopColor="#EE5253" />
-        <stop offset="51%" stopColor="#f5f6fa" />
-        <stop offset="100%" stopColor="#dcdde1" />
+      <linearGradient id="shipGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stopColor="#D5A973" />
+        <stop offset="100%" stopColor="#6F4E27" />
       </linearGradient>
     </defs>
+    <circle cx="16" cy="16" r="13" fill="url(#skyGrad)" />
+    <path d="M7 19c2 0 4 1.5 6 1.5s4-1.5 6-1.5h2l2-3H10L7 19z" fill="url(#shipGrad)" />
+    <rect x="11" y="8" width="1.2" height="9" fill="#3E2711" />
+    <rect x="17" y="6" width="1.2" height="11" fill="#3E2711" />
+    <rect x="23" y="10" width="1.2" height="7" fill="#3E2711" />
+    <path d="M12.2 9c2 .5 2 2.5 0 3h2.5c-.5-1.5-.5-2.5-2.5-3zM18.2 7c3 .5 3 3.5 0 4.5h3c-.5-2.5-.5-3.5-3-4.5zM24.2 11c1.5.5 1.5 2 0 2.5h2c-.2-1.5-.2-2-.2-2.5z" fill="#F1F2F6" />
+    <path d="M3 21c3.5-1.5 6.5.5 10 0s6.5-1.5 10 0c3.5 1.5 6 0 6 0v8H3v-8z" fill="url(#seaGrad)" opacity="0.95" />
+    <path d="M3 24.5c3.5-1 6.5 1 10 0s6.5-1 10 0c3.5 1 6 0 6 0v4.5H3v-4.5z" fill="#0B5FA5" opacity="0.6" />
+    <path d="M13 21a2.5 2.5 0 014-1m6 1a2.5 2.5 0 014-1" stroke="#FFFFFF" strokeWidth="1" strokeLinecap="round" />
   </svg>
 );
 
@@ -426,10 +450,14 @@ export default function LibraryTab({ books, onSelectBook, syncTrigger, isDarkMod
                         : 'bg-white border-gray-200 text-gray-700 hover:border-gray-300 shadow-3xs'
                   }`}
                 >
-                  <div className={`w-11 h-11 rounded-xl flex items-center justify-center border shrink-0 transition-colors ${
+                  <div className={`w-14 h-14 rounded-2xl flex items-center justify-center border shrink-0 transition-all ${
                     isSelected 
-                      ? 'bg-white border-black/5 dark:bg-[#121214] dark:border-white/5 shadow-2xs' 
-                      : 'bg-gray-50 border-gray-100 dark:bg-[#121214] dark:border-gray-800'
+                      ? isDarkMode
+                        ? 'bg-[#221c20] border-[#FF6B6B]/40 shadow-xs'
+                        : 'bg-white border-[#FF6B6B]/25 shadow-xs' 
+                      : isDarkMode
+                        ? 'bg-[#151518] border-gray-800/80'
+                        : 'bg-gray-50 border-gray-100'
                   }`}>
                     {cat.icon}
                   </div>
