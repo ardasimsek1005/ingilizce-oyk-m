@@ -7,8 +7,9 @@ import dotenv from "dotenv";
 import fs from "fs";
 import { OFFLINE_DICTIONARY } from "./src/dictionary";
 import { GLOBAL_DICTIONARY } from "./src/data";
-import { STORIES_PART1 } from "./src/stories_part1";
-import { STORIES_PART2 } from "./src/stories_part2";
+// STORIES_PART1 ve STORIES_PART2 server'a import edilmiyor
+// (600KB+783KB = çok büyük, Render free tier 512MB RAM'i aşıyor)
+// Çeviri için offline dictionary ve CEFR levels kullanılıyor
 
 dotenv.config();
 
@@ -96,29 +97,8 @@ async function startServer() {
     "sister": "kız kardeş"
   };
 
-  const getPredefinedStoryTranslation = (w: string): string | null => {
-    const clean = w.toLowerCase().trim();
-    if (GRAMMAR_FALLBACKS[clean]) {
-      return GRAMMAR_FALLBACKS[clean];
-    }
-    if (OFFLINE_DICTIONARY[clean]) {
-      return OFFLINE_DICTIONARY[clean].tr;
-    }
-    if (GLOBAL_DICTIONARY[clean]) {
-      return GLOBAL_DICTIONARY[clean];
-    }
-    // Search stories part 1
-    for (const story of STORIES_PART1) {
-      if (story.words && story.words[clean]) {
-        return story.words[clean];
-      }
-    }
-    // Search stories part 2
-    for (const story of STORIES_PART2) {
-      if (story.words && story.words[clean]) {
-        return story.words[clean];
-      }
-    }
+  const getPredefinedStoryTranslation = (_w: string): string | null => {
+    // Hikaye tabanlı arama production'da devre dışı (bellek optimizasyonu)
     return null;
   };
 
@@ -129,7 +109,6 @@ async function startServer() {
       const addWord = (en: string, tr: string) => {
         const clean = en.toLowerCase().trim();
         if (!clean) return;
-        // Do not overwrite valid cached entries unless they were stored with original English/stale key
         if (!dynamicDict[clean] || dynamicDict[clean].translation.toLowerCase().trim() === clean) {
           dynamicDict[clean] = {
             translation: tr,
@@ -141,33 +120,13 @@ async function startServer() {
           count++;
         }
       };
-
-      // Add grammar core
+      // Sadece grammar core kelimelerini ekle (hikaye dosyaları server'a import edilmiyor)
       for (const [en, tr] of Object.entries(GRAMMAR_FALLBACKS)) {
         addWord(en, tr);
       }
-
-      // Add all words from STORIES_PART1
-      for (const story of STORIES_PART1) {
-        if (story.words) {
-          for (const [en, tr] of Object.entries(story.words)) {
-            addWord(en, tr);
-          }
-        }
-      }
-
-      // Add all words from STORIES_PART2
-      for (const story of STORIES_PART2) {
-        if (story.words) {
-          for (const [en, tr] of Object.entries(story.words)) {
-            addWord(en, tr);
-          }
-        }
-      }
-
       if (count > 0) {
         fs.writeFileSync(DYNAMIC_DICT_PATH, JSON.stringify(dynamicDict, null, 2), "utf8");
-        console.log(`[Linguist DB] Pre-populated cache with ${count} words from all 50 stories.`);
+        console.log(`[Linguist DB] Pre-populated cache with ${count} grammar words.`);
       }
     } catch (populateErr) {
       console.error("Failed executing background pre-population logic:", populateErr);
