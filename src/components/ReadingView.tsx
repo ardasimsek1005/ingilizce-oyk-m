@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect, useMemo, memo, useCallback } from 'react';
-import { ArrowLeft, Volume2, Bookmark, BookmarkCheck, Share2, Info, Check, HelpCircle, ChevronRight, BookOpen, Sun, Moon, Heart, Star, Loader2, Lock, AlertCircle, RefreshCw, CheckCircle2 } from 'lucide-react';
+import { ArrowLeft, Volume2, Bookmark, BookmarkCheck, Share2, Info, Check, HelpCircle, ChevronRight, BookOpen, Sun, Moon, Heart, Star, X, Loader2, Lock, AlertCircle, RefreshCw, CheckCircle2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Book, Paragraph, VocabularyWord } from '../types';
 import { OFFLINE_DICTIONARY } from '../dictionary';
@@ -452,6 +452,7 @@ export default function ReadingView({
   const [selectedQuizOption, setSelectedQuizOption] = useState<number | null>(null);
   const [isQuizAnswered, setIsQuizAnswered] = useState(false);
   const [activeQuizCpIndex, setActiveQuizCpIndex] = useState<number | null>(null);
+  const [showQuizRoadblockModal, setShowQuizRoadblockModal] = useState(false);
 
   const [quizTimeLeft, setQuizTimeLeft] = useState<number>(15);
   const timerRef = useRef<any>(null);
@@ -748,6 +749,7 @@ export default function ReadingView({
       setActiveQuizQuestions(null);
       setActiveQuizCpIndex(null);
       setActiveQuizQuestionIdx(0);
+      setShowQuizRoadblockModal(false);
       setToastMessage('Tebrikler! Sayfa Geçiş Testini Başarıyla Geçtiniz. 🎉');
       setTimeout(() => setToastMessage(null), 3000);
     }
@@ -1114,7 +1116,7 @@ export default function ReadingView({
   return (
     <div 
       onClick={handleClearAllOverlays}
-      className={`min-h-screen pb-40 flex flex-col font-body-ui transition-colors duration-200 ${
+      className={`min-h-screen pb-24 flex flex-col font-body-ui transition-colors duration-200 ${
         isDarkMode ? 'bg-[#121214] text-[#E6E6E6]' : 'bg-[#FFFBF0] text-gray-800'
       }`}
     >
@@ -1296,241 +1298,17 @@ export default function ReadingView({
                           <span>Sonraki Sayfa (Sayfa {currentPageIdx + 2}'ye Geç)</span>
                           <ChevronRight className="w-4 h-4" />
                         </button>
-                      ) : (stats?.hearts ?? 5) === 0 && !stats?.isPremium ? (
-                        /* OUT OF LIVES BLOCK */
-                        <div className={`p-6 rounded-3xl border-2 text-center space-y-4 ${
-                          isDarkMode ? 'bg-[#1E1E22] border-red-500/30' : 'bg-red-50/50 border-red-200'
-                        }`}>
-                          <div className="w-14 h-14 bg-red-400/15 rounded-full flex items-center justify-center mx-auto text-red-500">
-                            <Heart className="w-8 h-8 fill-red-500 animate-pulse text-red-500" />
-                          </div>
-                          <h3 className="text-base font-bold text-red-500">Canınız Kalmadı!</h3>
-                          <p className="text-xs text-gray-500 max-w-sm mx-auto leading-relaxed">
-                            Okumaya devam etmek için canlarınızın zamanla dolmasını bekleyebilir veya Premium üyeliğe geçerek canınızı anında fulleyebilirsiniz!
-                          </p>
-                          <div className="text-xs font-mono font-bold bg-[#FF6B6B]/10 text-[#FF6B6B] inline-block px-3 py-1 rounded-full">
-                            Bir sonraki can: {refillCountdown || 'Doluyor...'}
-                          </div>
-                          
-                          <div className="flex gap-2.5 max-w-xs mx-auto pt-2">
-                            <button
-                              onClick={() => {
-                                const percentage = Math.round(((currentPageIdx + 1) / pages.length) * 100);
-                                onGoToPremium(percentage, currentPageIdx + 1, pages.length);
-                              }}
-                              className="w-full py-2.5 px-4 bg-[#FF6B6B] hover:bg-[#e05a5a] text-white rounded-xl text-xs font-bold transition-all cursor-pointer shadow-md shadow-[#FF6B6B]/20"
-                            >
-                              Canları Fulle (Premium Üyelik)
-                            </button>
-                          </div>
-                        </div>
-                      ) : activeQuizQuestions === null ? (
-                        /* ROADBLOCK: SOLVE DYNAMIC QUIZ CODE */
-                        <motion.div
-                          initial={{ opacity: 0, scale: 0.95, y: 15 }}
-                          animate={{ opacity: 1, scale: 1, y: 0 }}
-                          transition={{ duration: 0.3 }}
-                          className={`p-6 rounded-3xl border-2 transition-all ${
-                            isDarkMode 
-                              ? 'bg-[#1A1A1E] border-[#2A2A30]' 
-                              : 'bg-white border-[#FFE66D]'
-                          }`}
-                        >
-                          <div className="flex items-center gap-3 mb-3">
-                            <span className="w-9 h-9 bg-[#4ECDC4]/10 rounded-full flex items-center justify-center text-[#4ECDC4] shrink-0 font-extrabold text-sm">
-                              {currentPageIdx + 1}
-                            </span>
-                            <div>
-                              <h4 className="text-[9px] font-bold tracking-wider text-gray-400 block uppercase">
-                                OKUMA EŞİĞİ • SAYFA {currentPageIdx + 1} KONTROLÜ
-                              </h4>
-                              <h3 className="font-bold text-base leading-snug">Sonraki Sayfa Geçişi</h3>
-                            </div>
-                          </div>
-                          <p className="text-xs leading-relaxed text-gray-500 mb-5">
-                            Harika gidiyorsunuz! Bu sayfayı tamamladınız. Bir sonraki sayfaya geçmek ve yeni paragrafları okumak için bu bölüme ait 5 soruluk quizi çözmelisiniz.
-                          </p>
-                          
-                          <div className="flex justify-between items-center bg-[#FFE66D]/15 px-4 py-3 rounded-2xl border border-[#FFE66D]/45 mb-5 select-none">
-                            <span className="text-xs text-gray-500 font-medium">
-                               {stats?.isPremium ? (
-                                 <span>Premium ile <b>sınırsız cana</b> sahipsiniz!</span>
-                               ) : (
-                                 <span>Bilemediğiniz her soru <b>1 can</b> azaltır.</span>
-                               )}
-                             </span>
-                            <div className="flex items-center gap-1 font-bold text-xs text-[#FF6B6B]">
-                              <Heart className="w-4 h-4 fill-[#FF6B6B]" />
-                              <span>{stats?.isPremium ? '∞' : (stats?.hearts ?? 5)} Can Hakkı</span>
-                            </div>
-                          </div>
-
-                          <button
-                            onClick={() => handleStartCheckpointQuiz(currentPageIdx)}
-                            className="w-full py-3.5 px-4 bg-[#FF6B6B] text-white rounded-xl text-sm font-bold hover:bg-[#e05a5a] transition-all flex items-center justify-center gap-2 cursor-pointer shadow-md shadow-[#FF6B6B]/20 animate-bounce"
-                          >
-                            <span>Sonraki Sayfa</span>
-                            <ChevronRight className="w-4 h-4" />
-                          </button>
-                        </motion.div>
                       ) : (
-                        /* ACTIVE INTERACTIVE QUIZ CARD */
-                        <motion.div
-                          initial={{ opacity: 0, scale: 0.95, y: 15 }}
-                          animate={{ opacity: 1, scale: 1, y: 0 }}
-                          transition={{ duration: 0.3 }}
-                          className={`p-6 rounded-3xl border-2 transition-all ${
-                            isDarkMode 
-                              ? 'bg-[#1E1E22] border-[#4ECDC4]/30' 
-                              : 'bg-[#eefcfb] border-[#4ECDC4]/40 shadow-xs'
-                          }`}
+                        /* STATIC SONRAKİ SAYFA BUTTON TO TRIGGER ROADBLOCK MODAL */
+                        <button
+                          onClick={() => {
+                            setShowQuizRoadblockModal(true);
+                          }}
+                          className="w-full py-3.5 px-4 bg-[#FF6B6B] text-white rounded-xl text-sm font-bold hover:bg-[#e05a5a] transition-all flex items-center justify-center gap-2 cursor-pointer shadow-md shadow-[#FF6B6B]/20"
                         >
-                          {/* Quiz status bar */}
-                          <div className="flex justify-between items-center mb-4 select-none">
-                            <span className="text-xs font-extrabold tracking-wider text-[#4ECDC4] font-headline-lg">
-                              BARAJ SORUSU {activeQuizQuestionIdx + 1} / 5
-                            </span>
-                            <div className="flex items-center gap-1.5 text-xs font-bold text-[#FF6B6B]">
-                              <Heart className="w-3.5 h-3.5 fill-[#FF6B6B]" />
-                              <span>{stats?.isPremium ? '∞' : (stats?.hearts ?? 5)} Can kaldı</span>
-                            </div>
-                          </div>
-
-                          {/* Progress Dots */}
-                          <div className="flex gap-1.5 mb-5 select-none">
-                            {Array.from({ length: 5 }).map((_, i) => (
-                              <div
-                                key={i}
-                                className={`flex-1 h-1.5 rounded-full transition-all duration-300 ${
-                                  i < activeQuizQuestionIdx
-                                    ? 'bg-[#4ECDC4]'
-                                    : i === activeQuizQuestionIdx
-                                      ? 'bg-[#FF6B6B] animate-pulse'
-                                      : 'bg-gray-300/60'
-                                }`}
-                              />
-                            ))}
-                          </div>
-
-                          {/* Timer Progress Bar */}
-                          {!isQuizAnswered && (
-                            <div className="mb-5 select-none">
-                              <div className="flex justify-between items-center text-[10px] font-bold mb-1">
-                                <span className={
-                                  quizTimeLeft > 8 
-                                    ? 'text-emerald-500' 
-                                    : quizTimeLeft > 4 
-                                      ? 'text-amber-500 font-extrabold animate-pulse' 
-                                      : 'text-rose-500 font-extrabold animate-bounce'
-                                }>
-                                  ⏱️ Kalan Süre: {quizTimeLeft} saniye
-                                </span>
-                              </div>
-                              <div className="w-full h-1.5 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-                                <div
-                                  className={`h-full transition-all duration-1000 ease-linear ${
-                                    quizTimeLeft > 8 
-                                      ? 'bg-emerald-500' 
-                                      : quizTimeLeft > 4 
-                                        ? 'bg-amber-500' 
-                                        : 'bg-rose-500'
-                                  }`}
-                                  style={{ width: `${(quizTimeLeft / 15) * 100}%` }}
-                                />
-                              </div>
-                            </div>
-                          )}
-
-                          {/* Question text */}
-                          <div className="text-left mb-5">
-                            <span className="text-xs text-gray-500 font-medium block mb-1.5">
-                              {activeQuizQuestions[activeQuizQuestionIdx]?.type === 'fill_blank'
-                                ? 'Cümledeki boşluğu doldurun (Fill in the blank):'
-                                : 'Kelimenin Türkçe karşılığı nedir?'}
-                            </span>
-                            <h4 className="text-lg font-bold text-[#FF6B6B] leading-relaxed">
-                              {activeQuizQuestions[activeQuizQuestionIdx]?.type === 'fill_blank' ? (
-                                activeQuizQuestions[activeQuizQuestionIdx]?.question
-                              ) : (
-                                <span>&ldquo;{activeQuizQuestions[activeQuizQuestionIdx]?.word}&rdquo;</span>
-                              )}
-                            </h4>
-                            {activeQuizQuestions[activeQuizQuestionIdx]?.hint && (
-                              <p className={`text-xs mt-2.5 italic leading-relaxed ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                                💡 {activeQuizQuestions[activeQuizQuestionIdx]?.type === 'fill_blank' ? 'Anlamı:' : 'İpucu:'} {activeQuizQuestions[activeQuizQuestionIdx]?.hint}
-                              </p>
-                            )}
-                          </div>
-
-                          {/* Options Grid */}
-                          <div className="grid gap-2 text-left">
-                            {activeQuizQuestions[activeQuizQuestionIdx]?.options.map((option: string, oIdx: number) => {
-                              const isSelected = selectedQuizOption === oIdx;
-                              const isCorrectOption = oIdx === activeQuizQuestions[activeQuizQuestionIdx].correctIndex;
-                              
-                              let btnStyle = isDarkMode 
-                                ? 'bg-[#1A1A1E] border-gray-700 hover:bg-[#25252B] text-gray-300' 
-                                : 'bg-white border-gray-200 hover:bg-gray-50 text-gray-800';
-
-                              if (isQuizAnswered) {
-                                if (isCorrectOption) {
-                                  btnStyle = 'bg-emerald-500/25 border-emerald-500 text-emerald-500 font-bold';
-                                } else if (isSelected) {
-                                  btnStyle = 'bg-red-500/25 border-red-500 text-red-500 font-bold';
-                                } else {
-                                  btnStyle = 'opacity-40 border-transparent';
-                                }
-                              }
-
-                              return (
-                                <button
-                                  key={oIdx}
-                                  onClick={() => handleQuizOptionClick(oIdx)}
-                                  disabled={isQuizAnswered}
-                                  className={`p-3.5 rounded-xl border text-sm text-left transition-all flex items-center justify-between ${btnStyle} cursor-pointer`}
-                                >
-                                  <span>{option}</span>
-                                  {isQuizAnswered && isCorrectOption && (
-                                    <Check className="w-4 h-4 text-emerald-500 shrink-0 ml-2" />
-                                  )}
-                                  {isQuizAnswered && isSelected && !isCorrectOption && (
-                                    <AlertCircle className="w-4 h-4 text-red-500 shrink-0 ml-2" />
-                                  )}
-                                </button>
-                              );
-                            })}
-                          </div>
-
-                          {/* Quiz Next controls */}
-                          {isQuizAnswered && (
-                            <div className={`mt-5 pt-4 border-t border-dashed flex items-center justify-between ${
-                              isDarkMode ? 'border-gray-700' : 'border-gray-200'
-                            }`}>
-                              <span className={`text-xs font-semibold ${
-                                selectedQuizOption === activeQuizQuestions[activeQuizQuestionIdx].correctIndex
-                                  ? 'text-emerald-500'
-                                  : 'text-red-500 font-bold'
-                              }`}>
-                                {selectedQuizOption === null
-                                  ? '⏱️ Süre Doldu! 1 Can eksildi.'
-                                  : selectedQuizOption === activeQuizQuestions[activeQuizQuestionIdx].correctIndex
-                                    ? '🎉 Doğru cevap! İlerleniyor...'
-                                    : `😔 Yanlış cevap! 1 Can eksildi`}
-                              </span>
-                              
-                              {/* Show next button if answer was incorrect or timed out, correct answers auto-advance */}
-                              {(selectedQuizOption === null || selectedQuizOption !== activeQuizQuestions[activeQuizQuestionIdx].correctIndex) && (
-                                <button
-                                  onClick={handleQuizNext}
-                                  className="py-2.5 px-5 bg-[#4ECDC4] hover:bg-[#3db8af] text-white rounded-xl text-xs font-bold transition-all flex items-center gap-1 cursor-pointer"
-                                >
-                                  <span>{activeQuizQuestionIdx === 4 ? 'Tamamla' : 'Sonraki Soru'}</span>
-                                  <ChevronRight className="w-3.5 h-3.5" />
-                                </button>
-                              )}
-                            </div>
-                          )}
-                        </motion.div>
+                          <span>Sonraki Sayfa</span>
+                          <ChevronRight className="w-4 h-4" />
+                        </button>
                       )}
                     </div>
                   )}
@@ -1600,7 +1378,7 @@ export default function ReadingView({
 
         {/* Page Number Indicator (Non-clickable, bottom-right of scrollable area) */}
         {pages.length > 0 && (
-          <div className="flex justify-end mt-6 mb-32 select-none">
+          <div className="flex justify-end mt-6 mb-6 select-none">
             <span className={`text-[12px] font-headline-lg font-bold px-4 py-2 rounded-2xl border ${
               isDarkMode 
                 ? 'bg-[#1A1A1E] border-[#2A2A30] text-gray-400' 
@@ -1847,6 +1625,260 @@ export default function ReadingView({
         )}
       </AnimatePresence>
 
+      {/* Quiz / Roadblock Modal Overlay */}
+      <AnimatePresence>
+        {(showQuizRoadblockModal || activeQuizQuestions !== null) && (
+          <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.95, y: 15 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 15 }}
+              transition={{ type: "spring", stiffness: 350, damping: 28 }}
+              onClick={(e) => e.stopPropagation()} 
+              className={`w-full max-w-[420px] rounded-3xl p-6 border-2 transition-all relative ${
+                isDarkMode 
+                  ? 'bg-[#1A1A1E] border-[#2A2A30] text-white shadow-2xl shadow-black/80' 
+                  : 'bg-white border-[#FFE66D] text-gray-800 shadow-2xl shadow-slate-200'
+              }`}
+            >
+              {/* Close button */}
+              <button
+                onClick={() => {
+                  setShowQuizRoadblockModal(false);
+                  setActiveQuizQuestions(null);
+                  setActiveQuizCpIndex(null);
+                  setActiveQuizQuestionIdx(0);
+                }}
+                className={`absolute top-4 right-4 p-1.5 rounded-full hover:bg-gray-200/20 transition-all cursor-pointer ${
+                  isDarkMode ? 'text-gray-400' : 'text-gray-550'
+                }`}
+                title="Kapat"
+              >
+                <X className="w-5 h-5" />
+              </button>
+
+              {/* Out of Lives screen */}
+              {(stats?.hearts ?? 5) === 0 && !stats?.isPremium ? (
+                <div className="text-center space-y-4 pt-4">
+                  <div className="w-14 h-14 bg-red-400/15 rounded-full flex items-center justify-center mx-auto text-red-500">
+                    <Heart className="w-8 h-8 fill-red-500 animate-pulse text-red-500" />
+                  </div>
+                  <h3 className="text-base font-bold text-red-500">Canınız Kalmadı!</h3>
+                  <p className="text-xs text-gray-500 dark:text-gray-400 max-w-sm mx-auto leading-relaxed">
+                    Okumaya devam etmek için canlarınızın zamanla dolmasını bekleyebilir veya Premium üyeliğe geçerek canınızı anında fulleyebilirsiniz!
+                  </p>
+                  <div className="text-xs font-mono font-bold bg-[#FF6B6B]/10 text-[#FF6B6B] inline-block px-3 py-1 rounded-full">
+                    Bir sonraki can: {refillCountdown || 'Doluyor...'}
+                  </div>
+                  
+                  <div className="pt-2">
+                    <button
+                      onClick={() => {
+                        const percentage = Math.round(((currentPageIdx + 1) / pages.length) * 100);
+                        onGoToPremium(percentage, currentPageIdx + 1, pages.length);
+                        setShowQuizRoadblockModal(false);
+                      }}
+                      className="w-full py-2.5 px-4 bg-[#FF6B6B] hover:bg-[#e05a5a] text-white rounded-xl text-xs font-bold transition-all cursor-pointer shadow-md shadow-[#FF6B6B]/20"
+                    >
+                      Canları Fulle (Premium Üyelik)
+                    </button>
+                  </div>
+                </div>
+              ) : activeQuizQuestions === null ? (
+                /* ROADBLOCK INTRO SCREEN */
+                <div className="pt-2">
+                  <div className="flex items-center gap-3 mb-4 select-none">
+                    <span className="w-9 h-9 bg-[#4ECDC4]/10 rounded-full flex items-center justify-center text-[#4ECDC4] shrink-0 font-extrabold text-sm">
+                      {currentPageIdx + 1}
+                    </span>
+                    <div>
+                      <h4 className="text-[9px] font-bold tracking-wider text-gray-400 block uppercase">
+                        OKUMA EŞİĞİ • SAYFA {currentPageIdx + 1} KONTROLÜ
+                      </h4>
+                      <h3 className="font-bold text-base leading-snug">Sonraki Sayfa Geçişi</h3>
+                    </div>
+                  </div>
+                  
+                  <p className="text-xs leading-relaxed text-gray-500 dark:text-gray-400 mb-5">
+                    Harika gidiyorsunuz! Bu sayfayı tamamladınız. Bir sonraki sayfaya geçmek ve yeni paragrafları okumak için bu bölüme ait 5 soruluk quizi çözmelisiniz.
+                  </p>
+                  
+                  <div className="flex justify-between items-center bg-[#FFE66D]/15 px-4 py-3 rounded-2xl border border-[#FFE66D]/45 mb-5 select-none">
+                    <span className="text-xs text-gray-500 dark:text-gray-400 font-medium">
+                       {stats?.isPremium ? (
+                         <span>Premium ile <b>sınırsız cana</b> sahipsiniz!</span>
+                       ) : (
+                         <span>Bilemediğiniz her soru <b>1 can</b> azaltır.</span>
+                       )}
+                     </span>
+                    <div className="flex items-center gap-1 font-bold text-xs text-[#FF6B6B]">
+                      <Heart className="w-4 h-4 fill-[#FF6B6B]" />
+                      <span>{stats?.isPremium ? '∞' : (stats?.hearts ?? 5)} Can</span>
+                    </div>
+                  </div>
+
+                  <button
+                    onClick={() => handleStartCheckpointQuiz(currentPageIdx)}
+                    className="w-full py-3 bg-[#FF6B6B] text-white rounded-xl text-sm font-bold hover:bg-[#e05a5a] transition-all flex items-center justify-center gap-2 cursor-pointer shadow-md shadow-[#FF6B6B]/20"
+                  >
+                    <span>Sonraki Sayfa (Quizi Çöz)</span>
+                    <ChevronRight className="w-4 h-4" />
+                  </button>
+                </div>
+              ) : (
+                /* ACTIVE INTERACTIVE QUIZ CARD */
+                <div className="pt-2">
+                  {/* Quiz status bar */}
+                  <div className="flex justify-between items-center mb-4 select-none">
+                    <span className="text-xs font-extrabold tracking-wider text-[#4ECDC4] font-headline-lg">
+                      BARAJ SORUSU {activeQuizQuestionIdx + 1} / 5
+                    </span>
+                    <div className="flex items-center gap-1.5 text-xs font-bold text-[#FF6B6B]">
+                      <Heart className="w-3.5 h-3.5 fill-[#FF6B6B]" />
+                      <span>{stats?.isPremium ? '∞' : (stats?.hearts ?? 5)} Can</span>
+                    </div>
+                  </div>
+
+                  {/* Progress Dots */}
+                  <div className="flex gap-1.5 mb-5 select-none">
+                    {Array.from({ length: 5 }).map((_, i) => (
+                      <div
+                        key={i}
+                        className={`flex-1 h-1.5 rounded-full transition-all duration-300 ${
+                          i < activeQuizQuestionIdx
+                            ? 'bg-[#4ECDC4]'
+                            : i === activeQuizQuestionIdx
+                              ? 'bg-[#FF6B6B] animate-pulse'
+                              : 'bg-gray-300/60'
+                        }`}
+                      />
+                    ))}
+                  </div>
+
+                  {/* Timer Progress Bar */}
+                  {!isQuizAnswered && (
+                    <div className="mb-5 select-none">
+                      <div className="flex justify-between items-center text-[10px] font-bold mb-1">
+                        <span className={
+                          quizTimeLeft > 8 
+                            ? 'text-emerald-500' 
+                            : quizTimeLeft > 4 
+                              ? 'text-amber-500 font-extrabold animate-pulse' 
+                              : 'text-rose-500 font-extrabold animate-bounce'
+                        }>
+                          ⏱️ Kalan Süre: {quizTimeLeft} saniye
+                        </span>
+                      </div>
+                      <div className="w-full h-1.5 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                        <div 
+                          className={`h-full transition-all duration-1000 ease-linear ${
+                            quizTimeLeft > 8 
+                              ? 'bg-emerald-500' 
+                              : quizTimeLeft > 4 
+                                ? 'bg-amber-500' 
+                                : 'bg-rose-500'
+                          }`}
+                          style={{ width: `${(quizTimeLeft / 15) * 100}%` }}
+                        />
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Question text */}
+                  <div className="text-left mb-5">
+                    <span className="text-xs text-gray-500 font-medium block mb-1.5">
+                      {activeQuizQuestions[activeQuizQuestionIdx]?.type === 'fill_blank'
+                        ? 'Cümledeki boşluğu doldurun (Fill in the blank):'
+                        : 'Kelimenin Türkçe karşılığı nedir?'}
+                    </span>
+                    <h4 className="text-lg font-bold text-[#FF6B6B] leading-relaxed">
+                      {activeQuizQuestions[activeQuizQuestionIdx]?.type === 'fill_blank' ? (
+                        activeQuizQuestions[activeQuizQuestionIdx]?.question
+                      ) : (
+                        <span>&ldquo;{activeQuizQuestions[activeQuizQuestionIdx]?.word}&rdquo;</span>
+                      )}
+                    </h4>
+                    {activeQuizQuestions[activeQuizQuestionIdx]?.hint && (
+                      <p className={`text-xs mt-2.5 italic leading-relaxed ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                        💡 {activeQuizQuestions[activeQuizQuestionIdx]?.type === 'fill_blank' ? 'Anlamı:' : 'İpucu:'} {activeQuizQuestions[activeQuizQuestionIdx]?.hint}
+                      </p>
+                    )}
+                  </div>
+
+                  {/* Options Grid */}
+                  <div className="grid gap-2 text-left">
+                    {activeQuizQuestions[activeQuizQuestionIdx]?.options.map((option: string, oIdx: number) => {
+                      const isSelected = selectedQuizOption === oIdx;
+                      const isCorrectOption = oIdx === activeQuizQuestions[activeQuizQuestionIdx].correctIndex;
+                      
+                      let btnStyle = isDarkMode 
+                        ? 'bg-[#1A1A1E] border-gray-700 hover:bg-[#25252B] text-gray-300' 
+                        : 'bg-white border-gray-200 hover:bg-gray-50 text-gray-800';
+
+                      if (isQuizAnswered) {
+                        if (isCorrectOption) {
+                          btnStyle = 'bg-emerald-500/25 border-emerald-500 text-emerald-500 font-bold';
+                        } else if (isSelected) {
+                          btnStyle = 'bg-red-500/25 border-red-500 text-red-500 font-bold';
+                        } else {
+                          btnStyle = 'opacity-40 border-transparent';
+                        }
+                      }
+
+                      return (
+                        <button
+                          key={oIdx}
+                          disabled={isQuizAnswered}
+                          onClick={() => handleQuizOptionClick(oIdx)}
+                          className={`p-3.5 rounded-xl border text-sm text-left transition-all flex items-center justify-between ${btnStyle} cursor-pointer`}
+                        >
+                          <span>{option}</span>
+                          {isQuizAnswered && isCorrectOption && (
+                            <Check className="w-4 h-4 text-emerald-500 shrink-0 ml-2" />
+                          )}
+                          {isQuizAnswered && isSelected && !isCorrectOption && (
+                            <AlertCircle className="w-4 h-4 text-red-500 shrink-0 ml-2" />
+                          )}
+                        </button>
+                      );
+                    })}
+                  </div>
+
+                  {/* Quiz Next controls */}
+                  {isQuizAnswered && (
+                    <div className={`mt-5 pt-4 border-t border-dashed flex items-center justify-between ${
+                      isDarkMode ? 'border-gray-700' : 'border-gray-200'
+                    }`}>
+                      <span className={`text-xs font-semibold ${
+                        selectedQuizOption === activeQuizQuestions[activeQuizQuestionIdx].correctIndex
+                          ? 'text-emerald-500'
+                          : 'text-red-500 font-bold'
+                      }`}>
+                        {selectedQuizOption === null
+                          ? '⏱️ Süre Doldu! 1 Can eksildi.'
+                          : selectedQuizOption === activeQuizQuestions[activeQuizQuestionIdx].correctIndex
+                            ? '🎉 Doğru cevap! İlerleniyor...'
+                            : `😔 Yanlış cevap! 1 Can eksildi`}
+                      </span>
+                      
+                      {/* Show next button if answer was incorrect or timed out, correct answers auto-advance */}
+                      {(selectedQuizOption === null || selectedQuizOption !== activeQuizQuestions[activeQuizQuestionIdx].correctIndex) && (
+                        <button
+                          onClick={handleQuizNext}
+                          className="py-2.5 px-5 bg-[#4ECDC4] hover:bg-[#3db8af] text-white rounded-xl text-xs font-bold transition-all flex items-center gap-1 cursor-pointer"
+                        >
+                          <span>{activeQuizQuestionIdx === 4 ? 'Tamamla' : 'Sonraki Soru'}</span>
+                          <ChevronRight className="w-3.5 h-3.5" />
+                        </button>
+                      )}
+                    </div>
+                  )}
+                </div>
+              )}
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
 
     </div>
   );
