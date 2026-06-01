@@ -4,6 +4,93 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Book } from '../types';
 
 
+const TumuIcon = () => (
+  <svg className="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+    <rect x="3" y="14" width="16" height="4" rx="1" fill="url(#bookGrad1)" />
+    <path d="M19 14h2v4h-2z" fill="#D2D6DC" />
+    <rect x="5" y="9" width="16" height="4" rx="1" fill="url(#bookGrad2)" />
+    <path d="M21 9h2v4h-2z" fill="#D2D6DC" />
+    <rect x="4" y="4" width="15" height="4" rx="1" fill="url(#bookGrad3)" />
+    <path d="M19 4h2v4h-2z" fill="#D2D6DC" />
+    <defs>
+      <linearGradient id="bookGrad1" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stopColor="#FF6B6B" />
+        <stop offset="100%" stopColor="#EE5253" />
+      </linearGradient>
+      <linearGradient id="bookGrad2" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stopColor="#4ECDC4" />
+        <stop offset="100%" stopColor="#1DD1A1" />
+      </linearGradient>
+      <linearGradient id="bookGrad3" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stopColor="#FFE66D" />
+        <stop offset="100%" stopColor="#FF9F43" />
+      </linearGradient>
+    </defs>
+  </svg>
+);
+
+const SpookyIcon = () => (
+  <svg className="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+    <path d="M12 2C8 2 5 5 5 9v9c0 .6.4 1 1 1s1-.4 1-1v-2h10v2c0 .6.4 1 1 1s1-.4 1-1V9c0-4-3-7-7-7z" fill="url(#ghostGrad)" />
+    <circle cx="9" cy="8" r="1.5" fill="#1A1A1E" />
+    <circle cx="15" cy="8" r="1.5" fill="#1A1A1E" />
+    <path d="M11 11.5c.5.5 1.5.5 2 0" stroke="#1A1A1E" strokeWidth="1.2" strokeLinecap="round" />
+    <circle cx="6" cy="14" r="1" fill="#FFE66D" />
+    <circle cx="18" cy="11" r="0.8" fill="#FFE66D" />
+    <defs>
+      <linearGradient id="ghostGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stopColor="#a55eea" />
+        <stop offset="100%" stopColor="#8854d0" />
+      </linearGradient>
+    </defs>
+  </svg>
+);
+
+const WandIcon = () => (
+  <svg className="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+    <path d="M19 19L9 9" stroke="url(#wandStick)" strokeWidth="2.5" strokeLinecap="round" />
+    <path d="M8 2l1.5 3 3.5.5-2.5 2.5.5 3.5-3-1.5-3 1.5.5-3.5L3.5 5.5l3.5-.5L8 2z" fill="url(#starGrad)" />
+    <circle cx="13" cy="4" r="1" fill="#FF6B6B" />
+    <circle cx="3" cy="11" r="0.8" fill="#FFE66D" />
+    <circle cx="12" cy="12" r="1.2" fill="#4ECDC4" />
+    <defs>
+      <linearGradient id="wandStick" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stopColor="#FFE66D" />
+        <stop offset="100%" stopColor="#FF6B6B" />
+      </linearGradient>
+      <linearGradient id="starGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stopColor="#FF9F43" />
+        <stop offset="100%" stopColor="#FFE66D" />
+      </linearGradient>
+    </defs>
+  </svg>
+);
+
+const CompassIcon = () => (
+  <svg className="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+    <circle cx="12" cy="12" r="9" stroke="url(#compassGold)" strokeWidth="2.2" />
+    <circle cx="12" cy="12" r="7.5" fill="url(#compassBlue)" />
+    <path d="M12 7l2.5 5L12 17l-2.5-5L12 7z" fill="url(#needleGrad)" />
+    <circle cx="12" cy="12" r="1.5" fill="#FFE66D" />
+    <defs>
+      <linearGradient id="compassGold" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stopColor="#FFE66D" />
+        <stop offset="100%" stopColor="#FF9F43" />
+      </linearGradient>
+      <linearGradient id="compassBlue" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stopColor="#45aaf2" />
+        <stop offset="100%" stopColor="#2d98da" />
+      </linearGradient>
+      <linearGradient id="needleGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stopColor="#FF6B6B" />
+        <stop offset="50%" stopColor="#EE5253" />
+        <stop offset="51%" stopColor="#f5f6fa" />
+        <stop offset="100%" stopColor="#dcdde1" />
+      </linearGradient>
+    </defs>
+  </svg>
+);
+
 const getBookCategory = (bookId: string): 'horror_mystery' | 'kids_fables' | 'classics_adventure' => {
   const horrorIds = [
     'sleepy_hollow', 'dr_jekyll_mr_hyde', 'invisible_man', 'crime_punishment', 'frankenstein', 'dracula', 'war_of_worlds'
@@ -310,35 +397,51 @@ export default function LibraryTab({ books, onSelectBook, syncTrigger, isDarkMod
           </span>
         </div>
 
-        {/* Kategoriler (Category) Filter Row */}
-        <div className="mb-4">
-          <span className={`text-[10px] font-bold uppercase tracking-wider block mb-2 px-1 ${
+        {/* Kategoriler (Category) Filter Stack */}
+        <div className="mb-5">
+          <span className={`text-[10px] font-bold uppercase tracking-wider block mb-2.5 px-1 ${
             isDarkMode ? 'text-gray-400' : 'text-gray-455'
           }`}>
             Kategoriler (Bölümler)
           </span>
-          <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-none scroll-smooth">
+          <div className="flex flex-col gap-2.5">
             {[
-              { id: 'All', name: 'Tümü', icon: null },
-              { id: 'horror_mystery', name: 'Korku & Gizem', icon: <Skull className="w-3.5 h-3.5" /> },
-              { id: 'kids_fables', name: 'Masallar & Çocuk', icon: <Sparkles className="w-3.5 h-3.5" /> },
-              { id: 'classics_adventure', name: 'Dünya Klasikleri', icon: <Compass className="w-3.5 h-3.5" /> }
+              { id: 'All', name: 'Tüm Hikayeler', desc: 'Klasikler, masallar ve korku hikayelerinin tamamı', icon: <TumuIcon /> },
+              { id: 'horror_mystery', name: 'Korku & Gizem', desc: 'Gizemli, korkunç ve heyecan dolu gotik hikayeler', icon: <SpookyIcon /> },
+              { id: 'kids_fables', name: 'Masallar & Çocuk', desc: 'Çocuk masalları, hayal dünyası ve eğitici fabllar', icon: <WandIcon /> },
+              { id: 'classics_adventure', name: 'Dünya Klasikleri', desc: 'Büyük yazarların ölümsüz macera ve dram eserleri', icon: <CompassIcon /> }
             ].map((cat) => {
               const isSelected = selectedCategory === cat.id;
               return (
                 <button
                   key={cat.id}
                   onClick={() => setSelectedCategory(cat.id)}
-                  className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all duration-200 cursor-pointer border select-none flex items-center gap-1.5 shrink-0 ${
+                  className={`p-3.5 rounded-2xl border text-left transition-all duration-200 cursor-pointer select-none flex items-center gap-4 ${
                     isSelected
-                      ? 'bg-[#FF6B6B] border-[#FF6B6B] text-white shadow-md shadow-[#FF6B6B]/20 scale-[1.02]'
+                      ? isDarkMode
+                        ? 'bg-[#FF6B6B]/15 border-[#FF6B6B]/40 text-white shadow-md'
+                        : 'bg-[#FF6B6B]/8 border-[#FF6B6B]/35 text-gray-900 shadow-sm'
                       : isDarkMode
-                        ? 'bg-[#1E1E22] border-[#2A2A30] text-gray-400 hover:text-white hover:border-gray-500'
-                        : 'bg-white border-gray-200 text-gray-600 hover:text-[#FF6B6B] hover:border-gray-300'
+                        ? 'bg-[#1A1A1E] border-[#2A2A30] text-gray-300 hover:border-gray-700'
+                        : 'bg-white border-gray-200 text-gray-700 hover:border-gray-300 shadow-3xs'
                   }`}
                 >
-                  {cat.icon}
-                  <span>{cat.name}</span>
+                  <div className={`w-11 h-11 rounded-xl flex items-center justify-center border shrink-0 transition-colors ${
+                    isSelected 
+                      ? 'bg-white border-black/5 dark:bg-[#121214] dark:border-white/5 shadow-2xs' 
+                      : 'bg-gray-50 border-gray-100 dark:bg-[#121214] dark:border-gray-800'
+                  }`}>
+                    {cat.icon}
+                  </div>
+                  <div className="flex-1 min-w-0 pr-1">
+                    <div className="font-extrabold text-[13px] tracking-tight font-headline-lg flex items-center justify-between">
+                      <span>{cat.name}</span>
+                      {isSelected && (
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#FF6B6B]" />
+                      )}
+                    </div>
+                    <div className="text-[10px] text-gray-400 font-medium truncate mt-0.5">{cat.desc}</div>
+                  </div>
                 </button>
               );
             })}
