@@ -70,7 +70,7 @@ export default function ProfileTab({
   const [mockEmail, setMockEmail] = useState('');
   const [mockName, setMockName] = useState('');
   const [loginPassword, setLoginPassword] = useState('');
-  const [googleStep, setGoogleStep] = useState<'picker' | 'credentials'>('picker');
+  const [loginStep, setLoginStep] = useState<'picker' | 'credentials'>('picker');
 
   // Referral states
   const [referredBy, setReferredBy] = useState<string>(() => localStorage.getItem('linguist_referred_by') || '');
@@ -100,7 +100,7 @@ export default function ProfileTab({
     setMockEmail('');
     setMockName('');
     setLoginPassword('');
-    setGoogleStep('picker');
+    setLoginStep('picker');
     
     const providerNames: Record<string, string> = {
       google: 'Google',
@@ -152,7 +152,7 @@ export default function ProfileTab({
     setMockEmail('');
     setMockName('');
     setLoginPassword('');
-    setGoogleStep('picker');
+    setLoginStep('picker');
     
     const providerNames: Record<string, string> = {
       google: 'Google',
@@ -1553,6 +1553,60 @@ export default function ProfileTab({
         {showMockLogin && (() => {
           const provider = mockLoginProvider || 'google';
           
+          const pickerTitles: Record<string, string> = {
+            google: 'Google ile Giriş Yap',
+            facebook: 'Facebook ile Giriş Yap',
+            apple: 'Apple ile Giriş Yap',
+            email: 'E-posta ile Giriş Yap'
+          };
+
+          const pickerConfigs: Record<string, {
+            name: string;
+            detail: string;
+            avatarText: string;
+            avatarBg: string;
+            avatarColor: string;
+            directEmail: string;
+            credentialsBtnText: string;
+          }> = {
+            google: {
+              name: 'Arda Şimşek',
+              detail: 'ardasimsek1005@gmail.com',
+              avatarText: 'A',
+              avatarBg: isDarkMode ? '#ea433525' : '#ea433515',
+              avatarColor: '#EA4335',
+              directEmail: 'ardasimsek1005@gmail.com',
+              credentialsBtnText: 'Başka bir Gmail adresi kullan',
+            },
+            facebook: {
+              name: 'Arda Şimşek',
+              detail: 'Arda Şimşek (Facebook)',
+              avatarText: 'A',
+              avatarBg: isDarkMode ? '#1877f225' : '#1877f215',
+              avatarColor: '#1877F2',
+              directEmail: 'ardasimsek1005@gmail.com',
+              credentialsBtnText: 'Başka bir Facebook hesabı kullan',
+            },
+            apple: {
+              name: 'Arda Şimşek',
+              detail: 'ardasimsek1005@icloud.com',
+              avatarText: 'A',
+              avatarBg: isDarkMode ? '#222' : '#f5f5f5',
+              avatarColor: isDarkMode ? '#fff' : '#1E1E22',
+              directEmail: 'ardasimsek1005@icloud.com',
+              credentialsBtnText: 'Başka bir Apple ID kullan',
+            },
+            email: {
+              name: 'Arda Şimşek',
+              detail: 'ardasimsek1005@gmail.com',
+              avatarText: 'A',
+              avatarBg: isDarkMode ? '#4ecdc425' : '#4ecdc415',
+              avatarColor: '#4ECDC4',
+              directEmail: 'ardasimsek1005@gmail.com',
+              credentialsBtnText: 'Başka bir e-posta adresi kullan',
+            }
+          };
+
           const providerConfigs: Record<string, {
             title: string;
             desc: string;
@@ -1563,8 +1617,8 @@ export default function ProfileTab({
             submitText: string;
           }> = {
             google: {
-              title: 'Google ile Giriş Yap',
-              desc: 'Google hesabınızla güvenli bir şekilde bağlanarak ilerlemenizi bulutta yedekleyin.',
+              title: 'Gmail ile Giriş Yap',
+              desc: 'Gmail adresinizi ve şifrenizi girerek bağlanın.',
               color: '#EA4335',
               emailLabel: 'GMAIL ADRESİ',
               emailPlaceholder: 'ornek@gmail.com',
@@ -1577,7 +1631,7 @@ export default function ProfileTab({
             },
             facebook: {
               title: 'Facebook ile Giriş Yap',
-              desc: 'Facebook hesabınızı bağlayarak profilinizi yedekleyin ve ilerlemenizi diğer cihazlarla eşitleyin.',
+              desc: 'Facebook e-posta adresinizi ve şifrenizi girerek bağlanın.',
               color: '#1877F2',
               emailLabel: 'FACEBOOK E-POSTA / TELEFON',
               emailPlaceholder: 'ornek@facebook.com',
@@ -1589,8 +1643,8 @@ export default function ProfileTab({
               )
             },
             apple: {
-              title: 'Apple ile Giriş Yap',
-              desc: 'Apple ID\'nizi bağlayarak ilerlemenizi iCloud ekosistemi ve diğer platformlarda senkronize edin.',
+              title: 'Apple ID ile Giriş Yap',
+              desc: 'Apple ID e-posta adresinizi ve şifrenizi girerek bağlanın.',
               color: '#1E1E22',
               emailLabel: 'APPLE ID / E-POSTA',
               emailPlaceholder: 'ornek@icloud.com',
@@ -1603,7 +1657,7 @@ export default function ProfileTab({
             },
             email: {
               title: 'E-posta ile Giriş Yap',
-              desc: 'E-posta adresiniz ve şifrenizle anında hesap oluşturun veya mevcut hesabınıza erişin.',
+              desc: 'E-posta adresinizi ve şifrenizi girerek bağlanın.',
               color: '#4ECDC4',
               emailLabel: 'E-POSTA ADRESİ',
               emailPlaceholder: 'ornek@eposta.com',
@@ -1618,6 +1672,7 @@ export default function ProfileTab({
           };
  
           const config = providerConfigs[provider];
+          const currentPicker = pickerConfigs[provider];
  
           return (
             <div className="fixed inset-0 z-50 bg-[#2D3436]/55 backdrop-blur-xs flex items-center justify-center p-4">
@@ -1636,7 +1691,7 @@ export default function ProfileTab({
                     setMockEmail('');
                     setMockName('');
                     setLoginPassword('');
-                    setGoogleStep('picker');
+                    setLoginStep('picker');
                   }}
                   className={`absolute top-4 right-4 p-1 px-2.5 rounded-lg text-xs font-bold font-mono cursor-pointer transition-colors ${
                     isDarkMode ? 'text-gray-300 bg-[#2A2A30] hover:bg-[#343A40]' : 'text-gray-500 bg-gray-100 hover:bg-gray-200'
@@ -1657,40 +1712,43 @@ export default function ProfileTab({
                 </div>
  
                 <h3 className={`font-headline-lg text-lg font-bold mb-1 text-center ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
-                  {provider === 'google' && googleStep === 'picker' ? 'Google ile Giriş Yap' : config.title}
+                  {loginStep === 'picker' ? pickerTitles[provider] : config.title}
                 </h3>
                 <p className="text-xs text-gray-400 mb-5 px-1 leading-relaxed font-semibold text-center font-headline-lg">
-                  {provider === 'google' && googleStep === 'picker' ? 'Devam etmek için cihazınızda kayıtlı hesabı seçin' : config.desc}
+                  {loginStep === 'picker' ? 'Devam etmek için cihazınızda kayıtlı hesabı seçin' : config.desc}
                 </p>
  
-                {provider === 'google' && googleStep === 'picker' ? (
+                {loginStep === 'picker' ? (
                   <div className="space-y-3">
                     {/* Native account select simulation */}
                     <button
                       type="button"
-                      onClick={() => handleDirectSelectLogin('ardasimsek1005@gmail.com', 'google')}
+                      onClick={() => handleDirectSelectLogin(currentPicker.directEmail, provider)}
                       className={`w-full p-3.5 rounded-2xl border text-left cursor-pointer transition-colors flex items-center gap-3.5 ${
                         isDarkMode ? 'bg-[#121214] border-gray-800 hover:bg-white/5' : 'bg-gray-50 border-gray-200 hover:bg-gray-100'
                       }`}
                     >
-                      <div className="w-8 h-8 rounded-full bg-[#EA4335]/15 text-[#EA4335] flex items-center justify-center font-extrabold text-xs shrink-0">
-                        A
+                      <div 
+                        className="w-8 h-8 rounded-full flex items-center justify-center font-extrabold text-xs shrink-0"
+                        style={{ backgroundColor: currentPicker.avatarBg, color: currentPicker.avatarColor }}
+                      >
+                        {currentPicker.avatarText}
                       </div>
                       <div className="text-left font-headline-lg flex-1 min-w-0">
-                        <div className="text-xs font-extrabold text-gray-700 dark:text-gray-200">Arda Şimşek</div>
-                        <div className="text-[10px] text-gray-400 font-medium truncate">ardasimsek1005@gmail.com</div>
+                        <div className="text-xs font-extrabold text-gray-700 dark:text-gray-200">{currentPicker.name}</div>
+                        <div className="text-[10px] text-gray-400 font-medium truncate">{currentPicker.detail}</div>
                       </div>
                       <span className="text-[9px] font-bold text-gray-450 uppercase tracking-wider shrink-0 select-none">Kayıtlı</span>
                     </button>
  
                     <button
                       type="button"
-                      onClick={() => setGoogleStep('credentials')}
+                      onClick={() => setLoginStep('credentials')}
                       className={`w-full py-3 rounded-2xl border text-xs font-bold transition-colors cursor-pointer text-center font-headline-lg ${
                         isDarkMode ? 'bg-transparent border-gray-800 hover:bg-white/5 text-gray-300' : 'bg-transparent border-gray-200 hover:bg-gray-50 text-gray-600'
                       }`}
                     >
-                      Başka bir Gmail adresi kullan
+                      {currentPicker.credentialsBtnText}
                     </button>
                   </div>
                 ) : (
@@ -1732,26 +1790,22 @@ export default function ProfileTab({
                     </div>
  
                     <div className="flex gap-2.5 pt-2">
-                      {provider === 'google' && (
-                        <button
-                          type="button"
-                          onClick={() => {
-                            setGoogleStep('picker');
-                            setMockEmail('');
-                            setLoginPassword('');
-                          }}
-                          className={`w-1/3 py-3 rounded-xl text-xs font-bold transition-all cursor-pointer font-headline-lg ${
-                            isDarkMode ? 'bg-[#2A2A30] hover:bg-[#343A40] text-gray-300' : 'bg-gray-150 hover:bg-gray-200 text-gray-600'
-                          }`}
-                        >
-                          Geri Dön
-                        </button>
-                      )}
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setLoginStep('picker');
+                          setMockEmail('');
+                          setLoginPassword('');
+                        }}
+                        className={`w-1/3 py-3 rounded-xl text-xs font-bold transition-all cursor-pointer font-headline-lg ${
+                          isDarkMode ? 'bg-[#2A2A30] hover:bg-[#343A40] text-gray-300' : 'bg-gray-150 hover:bg-gray-200 text-gray-600'
+                        }`}
+                      >
+                        Geri Dön
+                      </button>
                       <button
                         type="submit"
-                        className={`text-white rounded-xl text-xs font-bold hover:opacity-90 transition-all cursor-pointer shadow-md font-headline-lg ${
-                          provider === 'google' ? 'w-2/3' : 'w-full'
-                        } py-3.5`}
+                        className="w-2/3 text-white rounded-xl text-xs font-bold hover:opacity-90 transition-all cursor-pointer shadow-md py-3.5 font-headline-lg"
                         style={{ backgroundColor: config.color === '#1E1E22' ? '#333' : config.color }}
                       >
                         {config.submitText}
