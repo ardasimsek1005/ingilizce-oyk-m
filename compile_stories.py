@@ -6,14 +6,19 @@ DATA_FILE = "expanded_stories_data.json"
 part1_path = r"C:\Users\acer\antigravity\i̇ngilizce-öyküm\src\stories_part1.ts"
 part2_path = r"C:\Users\acer\antigravity\i̇ngilizce-öyküm\src\stories_part2.ts"
 
-if not os.path.exists(DATA_FILE):
-    print("Stories data file not found!")
-    exit(1)
+expanded_stories = {}
+if os.path.exists(DATA_FILE):
+    with open(DATA_FILE, "r", encoding="utf-8") as f:
+        expanded_stories = json.load(f)
 
-with open(DATA_FILE, "r", encoding="utf-8") as f:
-    expanded_stories = json.load(f)
+HORROR_DATA_FILE = "horror_stories_data.json"
+if os.path.exists(HORROR_DATA_FILE):
+    with open(HORROR_DATA_FILE, "r", encoding="utf-8") as f:
+        horror_stories = json.load(f)
+        expanded_stories.update(horror_stories)
+        print(f"Loaded {len(horror_stories)} horror stories.")
 
-print(f"Loaded {len(expanded_stories)} expanded stories from JSON.")
+print(f"Loaded total of {len(expanded_stories)} expanded stories from JSON.")
 
 def format_ts_story(story):
     # Escape quotes in strings

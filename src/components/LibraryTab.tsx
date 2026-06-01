@@ -129,7 +129,7 @@ const getBookCategory = (bookId: string): 'horror_mystery' | 'kids_fables' | 'cl
   ];
 
   const lowerId = bookId.toLowerCase();
-  if (horrorIds.some(id => lowerId.includes(id))) {
+  if (lowerId.includes('horror') || horrorIds.some(id => lowerId.includes(id))) {
     return 'horror_mystery';
   }
   if (fableKidsIds.some(id => lowerId.includes(id))) {
