@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Header from './components/Header';
 import BottomNav from './components/BottomNav';
 import LibraryTab from './components/LibraryTab';
@@ -8,7 +8,8 @@ import QuizView from './components/QuizView';
 import ProfileTab from './components/ProfileTab';
 import FavoritesTab from './components/FavoritesTab';
 import SplashScreen from './components/SplashScreen';
-import { X } from 'lucide-react';
+import { X, Zap, Crown, Heart, Clock, Award, ChevronRight, BookOpen } from 'lucide-react';
+import { motion, AnimatePresence } from 'motion/react';
 
 import { Book, VocabularyWord, UserStats, Badge, LeaderboardUser } from './types';
 import { INITIAL_BOOKS, INITIAL_VOCABULARY, INITIAL_BADGES, LEADERBOARD_DATA, LIBRARY_UNIQUE_WORDS_COUNT } from './data';
@@ -39,6 +40,8 @@ const DEFAULT_STATS: UserStats = {
   timeGoalPercent: 0,
   hearts: 5,
   isPremium: false,
+  premiumExpiryDate: null,
+  premiumType: null,
   weeklyWords: [0, 0, 0, 0, 0, 0, 0],
   weeklyMins: [0, 0, 0, 0, 0, 0, 0]
 };
@@ -120,24 +123,42 @@ export default function App() {
 
   // User customize name & avatar persistence states
   const [userName, setUserName] = useState<string>(() => {
-    return localStorage.getItem('linguist_user_name') || '';
+    const email = localStorage.getItem('linguist_user_email');
+    const ns = email ? email.toLowerCase().trim() : 'guest';
+    const local = localStorage.getItem(`linguist_user_name_${ns}`);
+    if (local === null && ns === 'guest') {
+      return localStorage.getItem('linguist_user_name') || '';
+    }
+    return local || '';
   });
 
   const [userAvatar, setUserAvatar] = useState<string>(() => {
-    return localStorage.getItem('linguist_user_avatar') || AVATAR_OPTIONS[0];
+    const email = localStorage.getItem('linguist_user_email');
+    const ns = email ? email.toLowerCase().trim() : 'guest';
+    const local = localStorage.getItem(`linguist_user_avatar_${ns}`);
+    if (local === null && ns === 'guest') {
+      return localStorage.getItem('linguist_user_avatar') || AVATAR_OPTIONS[0];
+    }
+    return local || AVATAR_OPTIONS[0];
   });
 
   const handleUpdateProfile = (name: string, avatar: string) => {
     setUserName(name);
     setUserAvatar(avatar);
-    localStorage.setItem('linguist_user_name', name);
-    localStorage.setItem('linguist_user_avatar', avatar);
+    const ns = userEmail ? userEmail.toLowerCase().trim() : 'guest';
+    localStorage.setItem(`linguist_user_name_${ns}`, name);
+    localStorage.setItem(`linguist_user_avatar_${ns}`, avatar);
     triggerCloudSync();
   };
 
   // Persistence State Managers (Initialized from LocalStorage or Data.ts fallback templates)
   const [books, setBooks] = useState<Book[]>(() => {
-    const local = localStorage.getItem('linguist_books_v11');
+    const email = localStorage.getItem('linguist_user_email');
+    const ns = email ? email.toLowerCase().trim() : 'guest';
+    let local = localStorage.getItem(`linguist_books_v11_${ns}`);
+    if (!local && ns === 'guest') {
+      local = localStorage.getItem('linguist_books_v11');
+    }
     let parsedBooks: Book[] = [];
     if (local) {
       try {
@@ -155,7 +176,8 @@ export default function App() {
       pagesLeft: typeof b.pagesLeft === 'number' ? b.pagesLeft : (b.totalPages || 0),
       totalPages: typeof b.totalPages === 'number' ? b.totalPages : 0,
       isCompleted: !!b.isCompleted,
-      isFavorited: !!b.isFavorited
+      isFavorited: !!b.isFavorited,
+      isStarted: !!b.isStarted
     })) : [];
     
     const merged: Book[] = [...sanitizedParsed];
@@ -171,7 +193,8 @@ export default function App() {
           currentPage: merged[existingIdx].currentPage ?? 0,
           pagesLeft: merged[existingIdx].pagesLeft ?? initBook.totalPages,
           isCompleted: !!merged[existingIdx].isCompleted,
-          isFavorited: !!merged[existingIdx].isFavorited
+          isFavorited: !!merged[existingIdx].isFavorited,
+          isStarted: !!merged[existingIdx].isStarted
         };
       }
     });
@@ -179,7 +202,12 @@ export default function App() {
   });
 
   const [vocabulary, setVocabulary] = useState<VocabularyWord[]>(() => {
-    const local = localStorage.getItem('linguist_vocabulary_v11');
+    const email = localStorage.getItem('linguist_user_email');
+    const ns = email ? email.toLowerCase().trim() : 'guest';
+    let local = localStorage.getItem(`linguist_vocabulary_v11_${ns}`);
+    if (!local && ns === 'guest') {
+      local = localStorage.getItem('linguist_vocabulary_v11');
+    }
     if (local) {
       try {
         const parsed = JSON.parse(local);
@@ -192,7 +220,12 @@ export default function App() {
   });
 
   const [badges, setBadges] = useState<Badge[]>(() => {
-    const local = localStorage.getItem('linguist_badges_v11');
+    const email = localStorage.getItem('linguist_user_email');
+    const ns = email ? email.toLowerCase().trim() : 'guest';
+    let local = localStorage.getItem(`linguist_badges_v11_${ns}`);
+    if (!local && ns === 'guest') {
+      local = localStorage.getItem('linguist_badges_v11');
+    }
     if (local) {
       try {
         const parsed = JSON.parse(local);
@@ -210,7 +243,12 @@ export default function App() {
   });
 
   const [stats, setStats] = useState<UserStats>(() => {
-    const local = localStorage.getItem('linguist_stats_v11');
+    const email = localStorage.getItem('linguist_user_email');
+    const ns = email ? email.toLowerCase().trim() : 'guest';
+    let local = localStorage.getItem(`linguist_stats_v11_${ns}`);
+    if (!local && ns === 'guest') {
+      local = localStorage.getItem('linguist_stats_v11');
+    }
     if (local) {
       try {
         const parsed = JSON.parse(local);
@@ -235,10 +273,18 @@ export default function App() {
   });
 
   const [lastActiveBookId, setLastActiveBookId] = useState<string | null>(() => {
-    return localStorage.getItem('linguist_last_active_book_id') || null;
+    const email = localStorage.getItem('linguist_user_email');
+    const ns = email ? email.toLowerCase().trim() : 'guest';
+    let local = localStorage.getItem(`linguist_last_active_book_id_${ns}`);
+    if (!local && ns === 'guest') {
+      local = localStorage.getItem('linguist_last_active_book_id');
+    }
+    return local || null;
   });
 
   const [searchQuery, setSearchQuery] = useState<string>('');
+  const [isAdminModalOpen, setIsAdminModalOpen] = useState<boolean>(false);
+  const [selectedAdminBookId, setSelectedAdminBookId] = useState<string>('');
 
   // Dynamic reset effect: ensures all statistics of old visitors are strictly cleared and reset to 0
   useEffect(() => {
@@ -287,22 +333,166 @@ export default function App() {
     }
   }, []);
 
+  const loadUserData = (email: string | null) => {
+    const ns = email ? email.toLowerCase().trim() : 'guest';
+    
+    // 1. Stats
+    let statsLocal = localStorage.getItem(`linguist_stats_v11_${ns}`);
+    if (!statsLocal && ns === 'guest') {
+      statsLocal = localStorage.getItem('linguist_stats_v11');
+    }
+    let loadedStats = DEFAULT_STATS;
+    if (statsLocal) {
+      try {
+        loadedStats = JSON.parse(statsLocal);
+      } catch (e) {}
+    }
+    setStats({
+      ...DEFAULT_STATS,
+      ...loadedStats
+    });
+
+    // 2. Books
+    let booksLocal = localStorage.getItem(`linguist_books_v11_${ns}`);
+    if (!booksLocal && ns === 'guest') {
+      booksLocal = localStorage.getItem('linguist_books_v11');
+    }
+    let parsedBooks: Book[] = [];
+    if (booksLocal) {
+      try {
+        parsedBooks = JSON.parse(booksLocal);
+      } catch (e) {}
+    }
+    const sanitizedParsed = Array.isArray(parsedBooks) ? parsedBooks.map(b => ({
+      ...b,
+      percentageCompleted: typeof b.percentageCompleted === 'number' ? b.percentageCompleted : 0,
+      currentPage: typeof b.currentPage === 'number' ? b.currentPage : 0,
+      pagesLeft: typeof b.pagesLeft === 'number' ? b.pagesLeft : (b.totalPages || 0),
+      totalPages: typeof b.totalPages === 'number' ? b.totalPages : 0,
+      isCompleted: !!b.isCompleted,
+      isFavorited: !!b.isFavorited,
+      isStarted: !!b.isStarted
+    })) : [];
+    
+    const merged: Book[] = [...sanitizedParsed];
+    INITIAL_BOOKS.forEach(initBook => {
+      const existingIdx = merged.findIndex(b => b.id === initBook.id);
+      if (existingIdx === -1) {
+        merged.push(initBook);
+      } else {
+        merged[existingIdx] = {
+          ...initBook,
+          percentageCompleted: merged[existingIdx].percentageCompleted ?? 0,
+          currentPage: merged[existingIdx].currentPage ?? 0,
+          pagesLeft: merged[existingIdx].pagesLeft ?? initBook.totalPages,
+          isCompleted: !!merged[existingIdx].isCompleted,
+          isFavorited: !!merged[existingIdx].isFavorited,
+          isStarted: !!merged[existingIdx].isStarted
+        };
+      }
+    });
+    setBooks(merged);
+
+    // 3. Vocabulary
+    let vocabLocal = localStorage.getItem(`linguist_vocabulary_v11_${ns}`);
+    if (!vocabLocal && ns === 'guest') {
+      vocabLocal = localStorage.getItem('linguist_vocabulary_v11');
+    }
+    let loadedVocab = INITIAL_VOCABULARY;
+    if (vocabLocal) {
+      try {
+        const parsed = JSON.parse(vocabLocal);
+        if (Array.isArray(parsed)) loadedVocab = parsed;
+      } catch (e) {}
+    }
+    setVocabulary(loadedVocab);
+
+    // 4. Badges
+    let badgesLocal = localStorage.getItem(`linguist_badges_v11_${ns}`);
+    if (!badgesLocal && ns === 'guest') {
+      badgesLocal = localStorage.getItem('linguist_badges_v11');
+    }
+    let loadedBadges = INITIAL_BADGES;
+    if (badgesLocal) {
+      try {
+        const parsed = JSON.parse(badgesLocal);
+        if (Array.isArray(parsed)) loadedBadges = parsed;
+      } catch (e) {}
+    }
+    setBadges(loadedBadges.map(b => ({
+      ...b,
+      unlocked: !!b.unlocked
+    })));
+
+    // 5. User Name & Avatar
+    let nameLocal = localStorage.getItem(`linguist_user_name_${ns}`);
+    if (!nameLocal && ns === 'guest') {
+      nameLocal = localStorage.getItem('linguist_user_name');
+    }
+    setUserName(nameLocal || '');
+
+    let avatarLocal = localStorage.getItem(`linguist_user_avatar_${ns}`);
+    if (!avatarLocal && ns === 'guest') {
+      avatarLocal = localStorage.getItem('linguist_user_avatar');
+    }
+    setUserAvatar(avatarLocal || AVATAR_OPTIONS[0]);
+
+    // 6. Last Active Book ID
+    let activeBookLocal = localStorage.getItem(`linguist_last_active_book_id_${ns}`);
+    if (!activeBookLocal && ns === 'guest') {
+      activeBookLocal = localStorage.getItem('linguist_last_active_book_id');
+    }
+    setLastActiveBookId(activeBookLocal || null);
+  };
+
+  const isFirstMount = useRef(true);
+  useEffect(() => {
+    if (isFirstMount.current) {
+      isFirstMount.current = false;
+      return;
+    }
+    loadUserData(userEmail);
+  }, [userEmail]);
+
   // Automatically save to local persistence whenever states modify
   useEffect(() => {
-    localStorage.setItem('linguist_books_v11', JSON.stringify(books));
-  }, [books]);
+    const ns = userEmail ? userEmail.toLowerCase().trim() : 'guest';
+    localStorage.setItem(`linguist_books_v11_${ns}`, JSON.stringify(books));
+  }, [books, userEmail]);
 
   useEffect(() => {
-    localStorage.setItem('linguist_vocabulary_v11', JSON.stringify(vocabulary));
-  }, [vocabulary]);
+    const ns = userEmail ? userEmail.toLowerCase().trim() : 'guest';
+    localStorage.setItem(`linguist_vocabulary_v11_${ns}`, JSON.stringify(vocabulary));
+  }, [vocabulary, userEmail]);
 
   useEffect(() => {
-    localStorage.setItem('linguist_badges_v11', JSON.stringify(badges));
-  }, [badges]);
+    const ns = userEmail ? userEmail.toLowerCase().trim() : 'guest';
+    localStorage.setItem(`linguist_badges_v11_${ns}`, JSON.stringify(badges));
+  }, [badges, userEmail]);
 
   useEffect(() => {
-    localStorage.setItem('linguist_stats_v11', JSON.stringify(stats));
-  }, [stats]);
+    const ns = userEmail ? userEmail.toLowerCase().trim() : 'guest';
+    localStorage.setItem(`linguist_stats_v11_${ns}`, JSON.stringify(stats));
+  }, [stats, userEmail]);
+
+  useEffect(() => {
+    const ns = userEmail ? userEmail.toLowerCase().trim() : 'guest';
+    localStorage.setItem(`linguist_user_name_${ns}`, userName);
+  }, [userName, userEmail]);
+
+  useEffect(() => {
+    const ns = userEmail ? userEmail.toLowerCase().trim() : 'guest';
+    localStorage.setItem(`linguist_user_avatar_${ns}`, userAvatar);
+  }, [userAvatar, userEmail]);
+
+  useEffect(() => {
+    const ns = userEmail ? userEmail.toLowerCase().trim() : 'guest';
+    if (lastActiveBookId) {
+      localStorage.setItem(`linguist_last_active_book_id_${ns}`, lastActiveBookId);
+    } else {
+      localStorage.removeItem(`linguist_last_active_book_id_${ns}`);
+    }
+  }, [lastActiveBookId, userEmail]);
 
   // Show splash screen for 3 seconds on app startup
   useEffect(() => {
@@ -436,13 +626,18 @@ export default function App() {
   useEffect(() => {
     const checkAndRefillHearts = () => {
       if (stats.isPremium) return;
+      const ns = userEmail ? userEmail.toLowerCase().trim() : 'guest';
       if (stats.hearts >= 5) {
-        localStorage.setItem('linguist_last_heart_refill', String(Date.now()));
+        localStorage.setItem(`linguist_last_heart_refill_${ns}`, String(Date.now()));
         return;
       }
 
       const now = Date.now();
-      const lastRefill = Number(localStorage.getItem('linguist_last_heart_refill') || now);
+      let lastRefillStr = localStorage.getItem(`linguist_last_heart_refill_${ns}`);
+      if (!lastRefillStr && ns === 'guest') {
+        lastRefillStr = localStorage.getItem('linguist_last_heart_refill');
+      }
+      const lastRefill = Number(lastRefillStr || now);
       const oneHour = 60 * 60 * 1000;
       const elapsedTime = now - lastRefill;
 
@@ -452,7 +647,7 @@ export default function App() {
         const leftover = elapsedTime % oneHour;
         
         // Update refill timestamp to keep consistency
-        localStorage.setItem('linguist_last_heart_refill', String(now - leftover));
+        localStorage.setItem(`linguist_last_heart_refill_${ns}`, String(now - leftover));
         
         setStats(prev => ({
           ...prev,
@@ -468,6 +663,30 @@ export default function App() {
     const interval = setInterval(checkAndRefillHearts, 10000);
     return () => clearInterval(interval);
   }, [stats.hearts, stats.isPremium]);
+
+  // Check premium subscription expiry periodically
+  useEffect(() => {
+    const checkPremiumExpiry = () => {
+      if (stats.isPremium && stats.premiumExpiryDate) {
+        const expiryTime = new Date(stats.premiumExpiryDate).getTime();
+        if (Date.now() > expiryTime) {
+          setStats(prev => ({
+            ...prev,
+            isPremium: false,
+            premiumExpiryDate: null,
+            premiumType: null,
+            hearts: 5
+          }));
+          alert("Premium üyeliğinizin süresi dolmuştur. Devam etmek için lütfen aboneliğinizi yenileyin.");
+          triggerCloudSync();
+        }
+      }
+    };
+    
+    checkPremiumExpiry();
+    const interval = setInterval(checkPremiumExpiry, 60000); // check every minute
+    return () => clearInterval(interval);
+  }, [stats.isPremium, stats.premiumExpiryDate]);
 
   // Helper to determine the current day index (0 = Monday, 6 = Sunday)
   const getTodayIndex = () => {
@@ -618,27 +837,27 @@ export default function App() {
             }
 
             setStats(finalStats);
-            localStorage.setItem('linguist_stats_v11', JSON.stringify(finalStats));
+            localStorage.setItem(`linguist_stats_v11_${finalEmail}`, JSON.stringify(finalStats));
           }
           if (cloud.books) {
             setBooks(cloud.books);
-            localStorage.setItem('linguist_books_v11', JSON.stringify(cloud.books));
+            localStorage.setItem(`linguist_books_v11_${finalEmail}`, JSON.stringify(cloud.books));
           }
           if (cloud.vocabulary) {
             setVocabulary(cloud.vocabulary);
-            localStorage.setItem('linguist_vocabulary_v11', JSON.stringify(cloud.vocabulary));
+            localStorage.setItem(`linguist_vocabulary_v11_${finalEmail}`, JSON.stringify(cloud.vocabulary));
           }
           if (cloud.badges) {
             setBadges(cloud.badges);
-            localStorage.setItem('linguist_badges_v11', JSON.stringify(cloud.badges));
+            localStorage.setItem(`linguist_badges_v11_${finalEmail}`, JSON.stringify(cloud.badges));
           }
           if (cloud.userName) {
             setUserName(cloud.userName);
-            localStorage.setItem('linguist_user_name', cloud.userName);
+            localStorage.setItem(`linguist_user_name_${finalEmail}`, cloud.userName);
           }
           if (cloud.userAvatar) {
             setUserAvatar(cloud.userAvatar);
-            localStorage.setItem('linguist_user_avatar', cloud.userAvatar);
+            localStorage.setItem(`linguist_user_avatar_${finalEmail}`, cloud.userAvatar);
           }
           if (cloud.loginProvider) {
             setLoginProvider(cloud.loginProvider);
@@ -881,6 +1100,17 @@ export default function App() {
     triggerCloudSync();
   };
 
+  const handleStartBook = (bookId: string) => {
+    setBooks(prev => prev.map(b => b.id === bookId ? { ...b, isStarted: true } : b));
+    setActiveReadingBook(prev => {
+      if (prev && prev.id === bookId) {
+        return { ...prev, isStarted: true };
+      }
+      return prev;
+    });
+    triggerCloudSync();
+  };
+
   // Gamified quizzes answers checks
   const handleAnswerCorrect = () => {
     setStats(prev => {
@@ -908,9 +1138,19 @@ export default function App() {
   };
 
   const handleSubscribe = (tier: 'monthly' | 'yearly') => {
+    const d = new Date();
+    if (tier === 'monthly') {
+      d.setMonth(d.getMonth() + 1);
+    } else {
+      d.setFullYear(d.getFullYear() + 1);
+    }
+    const expiry = d.toISOString();
+
     setStats(prev => ({
       ...prev,
       isPremium: true,
+      premiumExpiryDate: expiry,
+      premiumType: tier,
       hearts: 5 // full lives if restored but infinite indicator
     }));
 
@@ -990,10 +1230,6 @@ export default function App() {
               onToggleDarkMode={toggleDarkMode}
               userName={userName}
               userAvatar={userAvatar}
-              searchQuery={searchQuery}
-              onSearchQueryChange={setSearchQuery}
-              books={books}
-              onSelectBook={handleSelectBook}
             />
           )}
 
@@ -1012,7 +1248,8 @@ export default function App() {
                               percentageCompleted: percentage, 
                               currentPage: currentPage || 1,
                               totalPages: totalPages || 1,
-                              pagesLeft: totalPages ? totalPages - (currentPage || 1) : 0
+                              pagesLeft: totalPages ? totalPages - (currentPage || 1) : 0,
+                              isStarted: percentage > 0 ? true : b.isStarted
                             }
                           : b
                       )
@@ -1040,7 +1277,8 @@ export default function App() {
                               percentageCompleted: percentage, 
                               currentPage: currentPage || 1,
                               totalPages: totalPages || 1,
-                              pagesLeft: totalPages ? totalPages - (currentPage || 1) : 0
+                              pagesLeft: totalPages ? totalPages - (currentPage || 1) : 0,
+                              isStarted: percentage > 0 ? true : b.isStarted
                             }
                           : b
                       )
@@ -1060,13 +1298,16 @@ export default function App() {
                             percentageCompleted: percentage, 
                             currentPage: currentPage || 1,
                             totalPages: totalPages || 1,
-                            pagesLeft: totalPages ? totalPages - (currentPage || 1) : 0
+                            pagesLeft: totalPages ? totalPages - (currentPage || 1) : 0,
+                            isStarted: percentage > 0 ? true : b.isStarted
                           }
                         : b
                     )
                   );
                 }}
                 onFinishBook={handleFinishBook}
+                onStartBook={handleStartBook}
+                userEmail={userEmail}
               />
             ) : (
               <>
@@ -1080,6 +1321,7 @@ export default function App() {
                     totalReadMinutes={stats.totalTimeMinutes}
                     lastActiveBookId={lastActiveBookId}
                     searchQuery={searchQuery}
+                    onSearchQueryChange={setSearchQuery}
                   />
                 )}
 
@@ -1145,6 +1387,7 @@ export default function App() {
                     onGoogleLogin={handleGoogleLogin}
                     onGoogleLogout={handleGoogleLogout}
                     onUnlinkProvider={handleUnlinkProvider}
+                    onOpenAdminPanel={() => setIsAdminModalOpen(true)}
                   />
                 )}
               </>
@@ -1159,6 +1402,264 @@ export default function App() {
           </>
         )}
       </div>
+
+      {/* ADMIN CONTROL PANEL MODAL */}
+      <AnimatePresence>
+        {isAdminModalOpen && (() => {
+          const selectedBook = books.find(b => b.id === selectedAdminBookId) || books[0];
+          
+          return (
+            <div className="fixed inset-0 z-50 bg-[#2D3436]/65 backdrop-blur-md flex items-center justify-center p-4">
+              <div 
+                className="absolute inset-0 cursor-pointer" 
+                onClick={() => setIsAdminModalOpen(false)} 
+              />
+              
+              <motion.div
+                initial={{ scale: 0.95, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.95, opacity: 0 }}
+                transition={{ duration: 0.25 }}
+                className={`w-full max-w-md rounded-[32px] p-6 flex flex-col shadow-2xl relative border-2 z-10 max-h-[85vh] overflow-y-auto ${
+                  isDarkMode ? 'bg-[#1A1A1E] border-[#2A2A30] text-white shadow-black/70' : 'bg-white border-[#FFE66D] text-[#2D3436] shadow-gray-250/90'
+                }`}
+              >
+                {/* Header */}
+                <div className="flex justify-between items-center mb-5 pb-3 border-b border-gray-400/20">
+                  <div className="flex items-center gap-2 text-[#4ECDC4]">
+                    <Zap className="w-5 h-5 fill-[#FFE66D] text-[#FFE66D]" />
+                    <h3 className="font-headline-lg text-base font-extrabold">
+                      Gizli Admin Yönetim Paneli
+                    </h3>
+                  </div>
+                  <button
+                    onClick={() => setIsAdminModalOpen(false)}
+                    className={`p-1.5 rounded-full cursor-pointer transition-colors ${
+                      isDarkMode ? 'text-gray-400 hover:bg-[#2A2A30] hover:text-white' : 'text-gray-500 hover:bg-gray-100 hover:text-gray-800'
+                    }`}
+                  >
+                    <X className="w-4 h-4" />
+                  </button>
+                </div>
+
+                {/* Section 1: User & System Stats Controls */}
+                <div className="mb-6 space-y-4">
+                  <h4 className="text-[10px] font-bold text-gray-450 tracking-wider uppercase">Genel İstatistikler ve Yetkiler</h4>
+                  
+                  {/* Row 1: Premium & Infinite Hearts */}
+                  <div className="grid grid-cols-2 gap-3">
+                    <button
+                      onClick={() => {
+                        const nextPremium = !stats.isPremium;
+                        const d = new Date();
+                        d.setFullYear(d.getFullYear() + 1); // 1 year expiration
+                        setStats(prev => ({ 
+                          ...prev, 
+                          isPremium: nextPremium,
+                          premiumExpiryDate: nextPremium ? d.toISOString() : null,
+                          premiumType: nextPremium ? 'yearly' : null
+                        }));
+                      }}
+                      className={`p-3 rounded-2xl border text-center font-bold text-xs flex items-center justify-center gap-2 cursor-pointer transition-all active:scale-95 ${
+                        stats.isPremium 
+                          ? 'bg-[#FFE66D]/15 border-[#FFE66D] text-[#FFE66D]' 
+                          : 'bg-black/5 dark:bg-white/5 border-transparent text-gray-400'
+                      }`}
+                    >
+                      <Crown className={`w-4 h-4 ${stats.isPremium ? 'text-[#FFE66D] fill-[#FFE66D]' : ''}`} />
+                      <span>{stats.isPremium ? 'Premium: AKTİF' : 'Premium: PASİF'}</span>
+                    </button>
+
+                    <button
+                      onClick={() => {
+                        setStats(prev => ({ ...prev, hearts: prev.hearts === 9999 ? 5 : 9999 }));
+                      }}
+                      className={`p-3 rounded-2xl border text-center font-bold text-xs flex items-center justify-center gap-2 cursor-pointer transition-all active:scale-95 ${
+                        stats.hearts === 9999 
+                          ? 'bg-rose-500/10 border-rose-500 text-rose-500' 
+                          : 'bg-black/5 dark:bg-white/5 border-transparent text-gray-400'
+                      }`}
+                    >
+                      <Heart className={`w-4 h-4 ${stats.hearts === 9999 ? 'text-rose-500 fill-rose-500' : ''}`} />
+                      <span>{stats.hearts === 9999 ? 'Can: SINIRSIZ' : 'Can: 5 (NORMAL)'}</span>
+                    </button>
+                  </div>
+
+                  {/* Row 2: Reading Minutes & Achievements */}
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className={`p-3 rounded-2xl border flex flex-col gap-1.5 ${
+                      isDarkMode ? 'bg-[#121214] border-gray-800' : 'bg-gray-50 border-gray-100'
+                    }`}>
+                      <span className="text-[9px] text-gray-400 font-bold uppercase flex items-center gap-1">
+                        <Clock className="w-3 h-3 text-[#4ECDC4]" />
+                        Okuma Süresi (Dakika)
+                      </span>
+                      <div className="flex items-center gap-2">
+                        <button
+                          onClick={() => {
+                            setStats(prev => ({ ...prev, totalTimeMinutes: Math.max(0, prev.totalTimeMinutes - 30) }));
+                          }}
+                          className="px-1.5 py-0.5 rounded bg-black/10 dark:bg-white/10 text-[10px] font-bold cursor-pointer"
+                        >
+                          -30
+                        </button>
+                        <span className="text-xs font-black flex-1 text-center font-mono">{stats.totalTimeMinutes} dk</span>
+                        <button
+                          onClick={() => {
+                            setStats(prev => ({ ...prev, totalTimeMinutes: prev.totalTimeMinutes + 60 }));
+                          }}
+                          className="px-1.5 py-0.5 rounded bg-[#4ECDC4]/25 text-[#4ECDC4] text-[10px] font-bold cursor-pointer"
+                        >
+                          +60
+                        </button>
+                      </div>
+                    </div>
+
+                    <button
+                      onClick={() => {
+                        setBadges(prev => prev.map(b => ({
+                          ...b,
+                          unlocked: true,
+                          unlockedAt: stats.lastActiveDate || getLocalDateString()
+                        })));
+                      }}
+                      className="p-3 rounded-2xl border border-transparent bg-black/5 dark:bg-white/5 hover:border-[#4ECDC4]/40 text-center font-bold text-xs flex flex-col items-center justify-center gap-1 cursor-pointer transition-all active:scale-95"
+                    >
+                      <Award className="w-4 h-4 text-[#FFE66D]" />
+                      <span>Tüm Başarımları Aç</span>
+                    </button>
+                  </div>
+                </div>
+
+                {/* Section 2: Story Progress Control */}
+                <div className="mb-6 space-y-4 border-t border-gray-400/10 pt-5">
+                  <h4 className="text-[10px] font-bold text-gray-450 tracking-wider uppercase">Hikaye Bazlı Kontroller (Gezinme)</h4>
+                  
+                  {/* Story Selector */}
+                  <div className="flex flex-col gap-1.5">
+                    <label className="text-[10px] font-bold text-gray-400">Yönetilecek Hikayeyi Seçin:</label>
+                    <select
+                      value={selectedAdminBookId}
+                      onChange={(e) => setSelectedAdminBookId(e.target.value)}
+                      className={`h-11 px-3 rounded-2xl border text-xs font-bold focus:outline-none transition-all ${
+                        isDarkMode 
+                          ? 'bg-[#121214] border-gray-800 text-white' 
+                          : 'bg-gray-50 border-gray-200 text-gray-800'
+                      }`}
+                    >
+                      <option value="">Seçiniz...</option>
+                      {books.map(b => (
+                        <option key={b.id} value={b.id}>
+                          [{b.level}] {b.title} ({b.currentPage}/{b.totalPages} syf)
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+
+                  {selectedBook && (
+                    <div className={`p-4 rounded-2xl space-y-3.5 border ${
+                      isDarkMode ? 'bg-[#121214] border-gray-800/80' : 'bg-gray-50/50 border-gray-200/60'
+                    }`}>
+                      <div className="flex items-center justify-between text-xs">
+                        <span className="font-bold truncate max-w-[200px]">{selectedBook.title}</span>
+                        <span className="font-mono font-black text-[#4ECDC4]">{selectedBook.currentPage} / {selectedBook.totalPages} sayfa</span>
+                      </div>
+
+                      {/* Quick Navigate Buttons */}
+                      <div className="grid grid-cols-3 gap-2">
+                        <button
+                          onClick={() => {
+                            setBooks(prev => prev.map(b => b.id === selectedBook.id ? { ...b, currentPage: 1, percentageCompleted: 0, isCompleted: false, pagesLeft: b.totalPages, isStarted: false } : b));
+                            localStorage.setItem(`linguist_current_page_${selectedBook.id}`, '0');
+                            localStorage.setItem(`linguist_max_unlocked_page_${selectedBook.id}`, '0');
+                          }}
+                          className="py-2.5 rounded-xl bg-black/10 dark:bg-white/10 hover:bg-black/15 dark:hover:bg-white/15 text-[10px] font-extrabold cursor-pointer transition-all text-center active:scale-95"
+                        >
+                          İlk Sayfa (1)
+                        </button>
+                        <button
+                          onClick={() => {
+                            const lastPage = selectedBook.totalPages || 15;
+                            const percentage = Math.floor(((lastPage - 1) / lastPage) * 100);
+                            setBooks(prev => prev.map(b => b.id === selectedBook.id ? { ...b, currentPage: lastPage - 1, percentageCompleted: percentage, isCompleted: false, pagesLeft: 1, isStarted: true } : b));
+                            localStorage.setItem(`linguist_current_page_${selectedBook.id}`, String(lastPage - 2));
+                            localStorage.setItem(`linguist_max_unlocked_page_${selectedBook.id}`, String(lastPage - 2));
+                          }}
+                          className="py-2.5 rounded-xl bg-black/10 dark:bg-white/10 hover:bg-black/15 dark:hover:bg-white/15 text-[10px] font-extrabold cursor-pointer transition-all text-center active:scale-95"
+                        >
+                          Son Sayfa ({selectedBook.totalPages - 1})
+                        </button>
+                        <button
+                          onClick={() => {
+                            setBooks(prev => prev.map(b => b.id === selectedBook.id ? { ...b, currentPage: b.totalPages, percentageCompleted: 100, isCompleted: true, pagesLeft: 0, isStarted: true } : b));
+                            // increment completed stats if not already completed
+                            if (!selectedBook.isCompleted) {
+                              setStats(prev => ({ ...prev, completedBooksCount: prev.completedBooksCount + 1 }));
+                            }
+                            localStorage.setItem(`linguist_current_page_${selectedBook.id}`, String(selectedBook.totalPages - 1));
+                            localStorage.setItem(`linguist_max_unlocked_page_${selectedBook.id}`, String(selectedBook.totalPages - 1));
+                          }}
+                          className="py-2.5 rounded-xl bg-[#4ECDC4]/20 text-[#4ECDC4] hover:bg-[#4ECDC4]/25 text-[10px] font-extrabold cursor-pointer transition-all text-center active:scale-95"
+                        >
+                          Hikayeyi Bitir
+                        </button>
+                      </div>
+
+                      {/* Custom Page Jumper */}
+                      <div className="flex gap-2">
+                        <input
+                          type="number"
+                          min="1"
+                          max={selectedBook.totalPages}
+                          placeholder="Gitmek istediğin sayfa..."
+                          id="admin-page-input"
+                          className={`h-9 px-3 rounded-xl border text-xs font-semibold focus:outline-none flex-1 ${
+                            isDarkMode ? 'bg-[#1A1A1E] border-gray-800 text-white' : 'bg-white border-gray-250 text-gray-800'
+                          }`}
+                        />
+                        <button
+                          onClick={() => {
+                            const input = document.getElementById('admin-page-input') as HTMLInputElement;
+                            if (input && input.value) {
+                              const pg = parseInt(input.value);
+                              if (pg >= 1 && pg <= selectedBook.totalPages) {
+                                const percentage = Math.floor(((pg - 1) / selectedBook.totalPages) * 100);
+                                setBooks(prev => prev.map(b => b.id === selectedBook.id ? { ...b, currentPage: pg, percentageCompleted: percentage, isCompleted: pg === b.totalPages, pagesLeft: Math.max(0, b.totalPages - pg), isStarted: pg > 1 ? true : b.isStarted } : b));
+                                localStorage.setItem(`linguist_current_page_${selectedBook.id}`, String(pg - 1));
+                                localStorage.setItem(`linguist_max_unlocked_page_${selectedBook.id}`, String(pg - 1));
+                              }
+                            }
+                          }}
+                          className="h-9 px-4 bg-[#FF6B6B] hover:bg-[#FF6B6B]/90 text-white rounded-xl text-xs font-bold cursor-pointer transition-all active:scale-95"
+                        >
+                          Git
+                        </button>
+                      </div>
+
+                      {/* Open Book In Reader Instantly */}
+                      <button
+                        onClick={() => {
+                          setIsAdminModalOpen(false);
+                          handleSelectBook(selectedBook);
+                        }}
+                        className="w-full py-2.5 bg-gradient-to-r from-[#FF6B6B] to-[#FFE66D] text-[#2D3436] rounded-xl text-xs font-black shadow-md flex items-center justify-center gap-2 cursor-pointer transition-all active:scale-95 hover:brightness-105"
+                      >
+                        <BookOpen className="w-4 h-4 text-[#2D3436]" />
+                        <span>Hikayeyi Okuyucuda Aç (Gezin)</span>
+                      </button>
+                    </div>
+                  )}
+                </div>
+
+                {/* Footer instructions */}
+                <div className="text-[10px] text-gray-400 font-medium leading-relaxed bg-black/5 dark:bg-white/5 p-3.5 rounded-2xl text-center">
+                  🔐 Bu yönetim paneli sadece sizin tarafınızdan erişilebilir olup, hikayeler üzerinde yetki testleri yapmanıza imkan sağlar.
+                </div>
+              </motion.div>
+            </div>
+          );
+        })()}
+      </AnimatePresence>
     </div>
   );
 }

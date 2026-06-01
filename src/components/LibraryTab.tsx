@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { BookOpen, Timer, Plus, ArrowRight, ExternalLink, ChevronRight, X, Sparkles, BookMarked, Star, Skull, Compass } from 'lucide-react';
+import { BookOpen, Timer, Plus, ArrowRight, ExternalLink, ChevronRight, X, Sparkles, BookMarked, Star, Skull, Compass, Search } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Book } from '../types';
 
@@ -147,18 +147,56 @@ interface LibraryTabProps {
   totalReadMinutes: number;
   lastActiveBookId: string | null;
   searchQuery?: string;
+  onSearchQueryChange?: (query: string) => void;
 }
 
-export default function LibraryTab({ books, onSelectBook, syncTrigger, isDarkMode, onToggleFavorite, totalReadMinutes, lastActiveBookId, searchQuery = '' }: LibraryTabProps) {
+export default function LibraryTab({
+  books,
+  onSelectBook,
+  syncTrigger,
+  isDarkMode,
+  onToggleFavorite,
+  totalReadMinutes,
+  lastActiveBookId,
+  searchQuery = '',
+  onSearchQueryChange,
+}: LibraryTabProps) {
   const [selectedLevel, setSelectedLevel] = useState<string>('All');
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
+  const [showSuggestions, setShowSuggestions] = useState(false);
 
-  // Currently reading is the last active book, or the first one with progress > 0 and < 100, or the first book
-  const currentlyReading = useMemo(() => {
-    return books.find(b => b.id === lastActiveBookId)
-      || books.find(b => b.percentageCompleted > 0 && b.percentageCompleted < 100)
-      || books[0];
+  const suggestions = useMemo(() => {
+    if (!searchQuery || searchQuery.trim().length < 2) return [];
+    const q = searchQuery.toLowerCase().trim();
+    return books.filter(b =>
+      b.title.toLowerCase().includes(q) ||
+      b.author.toLowerCase().includes(q)
+    ).slice(0, 5);
+  }, [books, searchQuery]);
+
+  // Currently reading list contains books that are started and not completed
+  const currentlyReadingList = useMemo(() => {
+    const list = books.filter(b => (b.isStarted || (b.percentageCompleted > 0 && b.percentageCompleted < 100)) && !b.isCompleted);
+    // For backwards compatibility or default if no books are started
+    if (list.length === 0 && lastActiveBookId) {
+      const lastActive = books.find(b => b.id === lastActiveBookId);
+      if (lastActive && !lastActive.isCompleted) {
+        return [lastActive];
+      }
+    }
+    return list;
   }, [books, lastActiveBookId]);
+
+  const currentlyReading = useMemo(() => {
+    if (currentlyReadingList.length === 0) return null;
+    const foundLastActive = currentlyReadingList.find(b => b.id === lastActiveBookId);
+    return foundLastActive || currentlyReadingList[0];
+  }, [currentlyReadingList, lastActiveBookId]);
+
+  const secondaryCurrentlyReading = useMemo(() => {
+    if (!currentlyReading) return [];
+    return currentlyReadingList.filter(b => b.id !== currentlyReading.id);
+  }, [currentlyReadingList, currentlyReading]);
 
   const filteredBooks = useMemo(() => {
     let list = selectedLevel === 'All'
@@ -429,11 +467,178 @@ export default function LibraryTab({ books, onSelectBook, syncTrigger, isDarkMod
               </button>
             </div>
           </motion.div>
+
+          {/* Progressively Shrinking Secondary Books List */}
+          {secondaryCurrentlyReading.length > 0 && (
+            <div className="mt-8 space-y-3">
+              <h3 className={`text-[10px] font-extrabold uppercase tracking-widest ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
+                Diğer Okunan Kitaplar ({secondaryCurrentlyReading.length})
+              </h3>
+              <div className="flex items-end gap-4 overflow-x-auto pb-4 pt-2 scrollbar-none snap-x snap-mandatory">
+                {secondaryCurrentlyReading.map((book, idx) => {
+                  // Shrink the books progressively
+                  // scale factor: 1st secondary book is scale 0.95, then decreases by 0.08 each step, clamping at 0.65
+                  const scaleFactor = Math.max(0.65, 0.95 - idx * 0.08);
+                  const baseWidth = 84; // standard cover width
+                  const baseHeight = 126; // standard cover height
+                  
+                  const w = Math.round(baseWidth * scaleFactor);
+                  const h = Math.round(baseHeight * scaleFactor);
+                  
+                  return (
+                    <motion.div
+                      key={book.id}
+                      initial={{ opacity: 0, y: 10, scale: 0.9 }}
+                      animate={{ opacity: 1, y: 0, scale: 1 }}
+                      transition={{ duration: 0.3, delay: idx * 0.05 }}
+                      onClick={() => onSelectBook(book)}
+                      className="flex flex-col items-center shrink-0 cursor-pointer snap-start group relative"
+                      style={{ width: `${w}px` }}
+                    >
+                      {/* Cover container */}
+                      <div 
+                        className={`rounded-xl overflow-hidden shadow-xs relative border transition-all duration-300 group-hover:shadow-md group-hover:scale-[1.03] ${
+                          isDarkMode 
+                            ? 'bg-[#1A1A1E] border-[#2A2A30] group-hover:border-[#FF6B6B]/40 shadow-black/30' 
+                            : 'bg-white border-[#FFE66D]/60 group-hover:border-[#FF6B6B]/40 shadow-[#FF6B6B]/5'
+                        }`}
+                        style={{ width: `${w}px`, height: `${h}px` }}
+                      >
+                        <img
+                          alt={book.title}
+                          className="w-full h-full object-cover"
+                          src={book.coverUrl}
+                          loading="lazy"
+                        />
+                        
+                        {/* Level overlay badge */}
+                        <div 
+                          className="absolute top-1 right-1 bg-black/55 backdrop-blur-xs rounded text-white font-bold leading-none select-none scale-90"
+                          style={{ 
+                            padding: '2px 4px',
+                            fontSize: `${Math.max(7, 8 * scaleFactor)}px`
+                          }}
+                        >
+                          {book.level}
+                        </div>
+                        
+                        {/* Thin progress bar overlay at bottom of cover */}
+                        <div className="absolute bottom-0 left-0 right-0 h-1 bg-black/30">
+                          <div 
+                            className="h-full bg-[#4ECDC4] transition-all duration-500"
+                            style={{ width: `${book.percentageCompleted}%` }}
+                          />
+                        </div>
+                      </div>
+                      
+                      {/* Truncated Title */}
+                      <h4 
+                        className={`font-semibold text-center mt-2 leading-tight truncate w-full group-hover:text-[#FF6B6B] transition-colors ${
+                          isDarkMode ? 'text-gray-300' : 'text-gray-850'
+                        }`}
+                        style={{ fontSize: `${Math.max(9, 10.5 * scaleFactor)}px` }}
+                      >
+                        {book.title}
+                      </h4>
+                      
+                      {/* Completion Percentage Badge */}
+                      <span 
+                        className="text-[#4ECDC4] font-black leading-none mt-0.5"
+                        style={{ fontSize: `${Math.max(8, 9.5 * scaleFactor)}px` }}
+                      >
+                        %{book.percentageCompleted}
+                      </span>
+                    </motion.div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
         </section>
       )}
 
       {/* Section: My Library Grid */}
       <section className="mb-10">
+        {/* Search Engine Bar */}
+        <div className="relative mb-6">
+          <div className="relative flex items-center">
+            <input
+              type="text"
+              placeholder="Öykü veya yazar ara..."
+              value={searchQuery}
+              onFocus={() => setShowSuggestions(true)}
+              onBlur={() => {
+                setTimeout(() => {
+                  setShowSuggestions(false);
+                }, 180);
+              }}
+              onChange={(e) => {
+                if (onSearchQueryChange) {
+                  onSearchQueryChange(e.target.value);
+                }
+                setShowSuggestions(true);
+              }}
+              className={`pl-11 pr-10 h-12 w-full rounded-2xl border-2 text-xs font-semibold focus:outline-none transition-all duration-200 ${
+                isDarkMode
+                  ? 'bg-[#1A1A1E] border-[#2A2A30] text-white placeholder-gray-500 focus:border-[#FF6B6B] focus:ring-2 focus:ring-[#FF6B6B]/20'
+                  : 'bg-white border-[#FFE66D]/80 text-[#2D3436] placeholder-gray-400 focus:border-[#FF6B6B] focus:ring-2 focus:ring-[#FF6B6B]/15'
+              }`}
+            />
+            <Search className={`absolute left-4 w-4 h-4 transition-colors ${
+              isDarkMode ? 'text-gray-500' : 'text-gray-400'
+            }`} />
+            {searchQuery && (
+              <button
+                onClick={() => {
+                  if (onSearchQueryChange) {
+                    onSearchQueryChange('');
+                  }
+                }}
+                className="absolute right-4 p-1 rounded-full hover:bg-black/10 dark:hover:bg-white/10 cursor-pointer transition-colors"
+                title="Aramayı Temizle"
+              >
+                <X className={`w-3.5 h-3.5 ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`} />
+              </button>
+            )}
+          </div>
+
+          {/* Autocomplete Suggestions Dropdown */}
+          {showSuggestions && searchQuery.trim().length >= 2 && suggestions.length > 0 && (
+            <div className={`absolute left-0 right-0 top-[52px] rounded-2xl border shadow-2xl z-50 py-2.5 overflow-hidden backdrop-blur-md transition-all ${
+              isDarkMode 
+                ? 'bg-[#1A1A1E]/95 border-[#2A2A30] text-white shadow-black/60' 
+                : 'bg-white/95 border-[#FFE66D] text-[#2D3436] shadow-gray-200/80'
+            }`}>
+              <div className="px-4 pb-2 pt-1 text-[9px] font-extrabold uppercase tracking-wider text-[#FF6B6B]">
+                HIZLI ÖNERİLER
+              </div>
+              {suggestions.map((book) => (
+                <button
+                  key={book.id}
+                  onMouseDown={(e) => {
+                    e.preventDefault();
+                    if (onSearchQueryChange) {
+                      onSearchQueryChange(book.title);
+                    }
+                    setShowSuggestions(false);
+                    onSelectBook(book);
+                  }}
+                  className={`w-full text-left px-4 py-2 text-xs font-semibold flex items-center gap-3 transition-colors cursor-pointer ${
+                    isDarkMode ? 'hover:bg-white/5' : 'hover:bg-[#FF6B6B]/5'
+                  }`}
+                >
+                  <img src={book.coverUrl} className="w-6 h-8 rounded-md object-cover shrink-0 shadow-xs" alt="" />
+                  <div className="min-w-0 flex-1">
+                    <div className="truncate text-xs font-bold">{book.title}</div>
+                    <div className="text-[10px] text-gray-400 mt-0.5">{book.level} • {book.author}</div>
+                  </div>
+                  <ChevronRight className="w-4 h-4 text-gray-400" />
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+
         <div className="flex justify-between items-center mb-5">
           <h2 className={`font-headline-lg text-lg font-bold tracking-tight transition-colors ${
             isDarkMode ? 'text-[#E6E6E6]' : 'text-[#2D3436]'

@@ -14,6 +14,7 @@ export interface Book {
   statsTime: string;
   isFavorited?: boolean;
   isCompleted?: boolean;
+  isStarted?: boolean;
 }
 
 export interface Chapter {
@@ -84,6 +85,8 @@ export interface UserStats {
   timeGoalPercent: number;
   hearts: number; // 0 to 5 or -1 if premium (Infinity)
   isPremium: boolean;
+  premiumExpiryDate?: string | null;
+  premiumType?: 'monthly' | 'yearly' | null;
   weeklyWords?: number[]; // [Pzt, Sal, Car, Per, Cum, Cmt, Paz]
   weeklyMins?: number[];  // [Pzt, Sal, Car, Per, Cum, Cmt, Paz]
   lastActiveDate?: string; // YYYY-MM-DD format

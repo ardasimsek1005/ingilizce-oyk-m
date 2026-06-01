@@ -21,6 +21,8 @@ interface ReadingViewProps {
   onToggleFavorite?: (bookId: string) => void;
   onPageChange?: (percentage: number, currentPage: number, totalPages: number) => void;
   onFinishBook?: (bookId: string) => void;
+  onStartBook?: (bookId: string) => void;
+  userEmail?: string | null;
 }
 
 const isCommonEnglishWord = (w: string): boolean => {
@@ -348,6 +350,8 @@ export default function ReadingView({
   onToggleFavorite,
   onPageChange,
   onFinishBook,
+  onStartBook,
+  userEmail,
 }: ReadingViewProps) {
   // Navigation & interaction states
   const [activeChapterIdx, setActiveChapterIdx] = useState(0);
@@ -415,28 +419,36 @@ export default function ReadingView({
   // Load saved page progress from localStorage or default to the book's currentPage state
   useEffect(() => {
     if (pages.length > 0) {
-      const savedPage = localStorage.getItem(`linguist_current_page_${book.id}`);
+      const ns = userEmail ? userEmail.toLowerCase().trim() : 'guest';
+      let savedPage = localStorage.getItem(`linguist_current_page_${book.id}_${ns}`);
+      if (!savedPage && ns === 'guest') {
+        savedPage = localStorage.getItem(`linguist_current_page_${book.id}`);
+      }
       const pageVal = savedPage ? parseInt(savedPage, 10) : Math.max(0, book.currentPage - 1);
       setCurrentPageIdx(Math.max(0, Math.min(pageVal, pages.length - 1)));
 
-      const savedMax = localStorage.getItem(`linguist_max_unlocked_page_${book.id}`);
+      let savedMax = localStorage.getItem(`linguist_max_unlocked_page_${book.id}_${ns}`);
+      if (!savedMax && ns === 'guest') {
+        savedMax = localStorage.getItem(`linguist_max_unlocked_page_${book.id}`);
+      }
       const maxVal = savedMax ? parseInt(savedMax, 10) : Math.max(0, book.currentPage - 1);
       setMaxUnlockedPageIdx(Math.max(0, Math.min(maxVal, pages.length - 1)));
     }
-  }, [book.id, pages.length, book.currentPage]);
+  }, [book.id, pages.length, book.currentPage, userEmail]);
 
   // Save progress dynamically to localStorage and trigger real-time updates in App.tsx
   useEffect(() => {
     if (pages.length > 0) {
-      localStorage.setItem(`linguist_current_page_${book.id}`, String(currentPageIdx));
-      localStorage.setItem(`linguist_max_unlocked_page_${book.id}`, String(maxUnlockedPageIdx));
+      const ns = userEmail ? userEmail.toLowerCase().trim() : 'guest';
+      localStorage.setItem(`linguist_current_page_${book.id}_${ns}`, String(currentPageIdx));
+      localStorage.setItem(`linguist_max_unlocked_page_${book.id}_${ns}`, String(maxUnlockedPageIdx));
       
       if (onPageChange) {
         const percentage = Math.round(((currentPageIdx + 1) / pages.length) * 100);
         onPageChange(percentage, currentPageIdx + 1, pages.length);
       }
     }
-  }, [book.id, currentPageIdx, maxUnlockedPageIdx, pages.length, onPageChange]);
+  }, [book.id, currentPageIdx, maxUnlockedPageIdx, pages.length, onPageChange, userEmail]);
 
   const handleGoBack = () => {
     if (pages.length > 0) {
@@ -739,12 +751,14 @@ export default function ReadingView({
         const nextMax = activeQuizCpIndex + 1;
         setMaxUnlockedPageIdx(prev => {
           const nextUnlocked = Math.max(prev, nextMax);
-          localStorage.setItem(`linguist_max_unlocked_page_${book.id}`, String(nextUnlocked));
+          const ns = userEmail ? userEmail.toLowerCase().trim() : 'guest';
+          localStorage.setItem(`linguist_max_unlocked_page_${book.id}_${ns}`, String(nextUnlocked));
           return nextUnlocked;
         });
         
         setCurrentPageIdx(nextMax);
-        localStorage.setItem(`linguist_current_page_${book.id}`, String(nextMax));
+        const ns = userEmail ? userEmail.toLowerCase().trim() : 'guest';
+        localStorage.setItem(`linguist_current_page_${book.id}_${ns}`, String(nextMax));
       }
       setActiveQuizQuestions(null);
       setActiveQuizCpIndex(null);
@@ -1266,6 +1280,41 @@ export default function ReadingView({
 
               return (
                 <div className="space-y-6 font-body-reading">
+                  {currentPageIdx === 0 && !book.isStarted && (
+                    <div className={`p-5 rounded-3xl border-2 border-dashed flex flex-col items-center text-center gap-3.5 mb-6 transition-all duration-300 ${
+                      isDarkMode 
+                        ? 'bg-[#4ECDC4]/5 border-[#4ECDC4]/25' 
+                        : 'bg-[#4ECDC4]/5 border-[#4ECDC4]/30'
+                    }`}>
+                      <div className={`w-12 h-12 rounded-full flex items-center justify-center border transition-all duration-300 ${
+                        isDarkMode ? 'bg-[#4ECDC4]/10 text-[#4ECDC4] border-[#4ECDC4]/20' : 'bg-[#4ECDC4]/10 text-[#2c8d86] border-[#4ECDC4]/20'
+                      }`}>
+                        <BookOpen className="w-5 h-5" />
+                      </div>
+                      <div className="space-y-1">
+                        <h4 className={`text-base font-bold font-headline-lg ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
+                          Bu Hikayeye Başlayın!
+                        </h4>
+                        <p className={`text-xs max-w-xs leading-relaxed ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
+                          Hikayeyi kütüphanedeki <b>"Şu Anda Okunanlar"</b> listenize eklemek ve ilerlemenizi kaydetmek için butona tıklayın.
+                        </p>
+                      </div>
+                      <button
+                        onClick={() => {
+                          if (onStartBook) {
+                            onStartBook(book.id);
+                          }
+                          setToastMessage('Hikayeye başlandı! Kitap, kütüphanede "Şu Anda Okunanlar" listesine eklendi. 🎉');
+                          setTimeout(() => setToastMessage(null), 3500);
+                        }}
+                        className="w-full sm:w-auto px-8 py-3 bg-[#4ECDC4] hover:bg-[#3db8af] text-white rounded-full text-xs font-bold transition-all transform active:scale-95 cursor-pointer shadow-md shadow-[#4ECDC4]/20 font-headline-lg flex items-center justify-center gap-2"
+                      >
+                        <Check className="w-4 h-4" />
+                        <span>Kitaba Başla</span>
+                      </button>
+                    </div>
+                  )}
+
                   {renderedParagraphs.map((p) => (
                     <ParagraphBlock
                       key={p.id}
@@ -1286,7 +1335,7 @@ export default function ReadingView({
                   {/* PAGE TRANSITION / ROADBLOCK CHECKPOINT CARD */}
                   {currentPageIdx < pages.length - 1 && (
                     <div className="pt-6 border-t border-dashed border-[#FFE66D]/50">
-                      {currentPageIdx < maxUnlockedPageIdx ? (
+                      {currentPageIdx < maxUnlockedPageIdx || localStorage.getItem('is_admin_mode') === 'true' ? (
                         /* DIRECT NEXT PAGE BUTTON (ALREADY UNLOCKED) */
                         <button
                           onClick={() => {
@@ -1428,14 +1477,17 @@ export default function ReadingView({
             <button
               onClick={(e) => {
                 e.stopPropagation();
-                if (currentPageIdx < maxUnlockedPageIdx) {
-                  setCurrentPageIdx(prev => prev + 1);
-                  scrollToTop();
+                const isAdmin = localStorage.getItem('is_admin_mode') === 'true';
+                if (currentPageIdx < maxUnlockedPageIdx || isAdmin) {
+                  if (currentPageIdx < pages.length - 1) {
+                    setCurrentPageIdx(prev => prev + 1);
+                    scrollToTop();
+                  }
                 }
               }}
-              disabled={currentPageIdx >= maxUnlockedPageIdx}
+              disabled={currentPageIdx >= pages.length - 1}
               className={`p-1.5 px-3 rounded-xl font-bold flex items-center gap-1 transition-all cursor-pointer ${
-                currentPageIdx >= maxUnlockedPageIdx 
+                currentPageIdx >= pages.length - 1 || (currentPageIdx >= maxUnlockedPageIdx && localStorage.getItem('is_admin_mode') !== 'true')
                   ? 'opacity-30 cursor-not-allowed text-gray-400' 
                   : isDarkMode
                     ? 'hover:bg-white/5 text-[#4ECDC4]'

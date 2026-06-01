@@ -21,6 +21,7 @@ interface ProfileTabProps {
   onGoogleLogin: (email: string, name?: string, picture?: string, provider?: string) => void;
   onGoogleLogout: () => void;
   onUnlinkProvider: (provider: string) => void;
+  onOpenAdminPanel?: () => void;
 }
 
 function parseJwt(token: string) {
@@ -56,6 +57,7 @@ export default function ProfileTab({
   onGoogleLogin,
   onGoogleLogout,
   onUnlinkProvider,
+  onOpenAdminPanel,
 }: ProfileTabProps) {
   const [selectedChartTab, setSelectedChartTab] = useState<'words' | 'minutes'>('words');
   const [activeBarIdx, setActiveBarIdx] = useState<number | null>(null);
@@ -63,6 +65,7 @@ export default function ProfileTab({
   const [sharePlatform, setSharePlatform] = useState<string | null>(null);
   const [showQrCode, setShowQrCode] = useState(false);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
+  const [adminClicks, setAdminClicks] = useState(0);
 
   // Login connection states
   const [showMockLogin, setShowMockLogin] = useState(false);
@@ -1194,7 +1197,21 @@ export default function ProfileTab({
       <section className={`border-2 rounded-[28px] overflow-hidden shadow-3xs select-none transition-colors ${
         isDarkMode ? 'bg-[#1A1A1E] border-[#2A2A30]' : 'bg-white border-[#FFE66D]'
       }`}>
-        <h3 className="text-[10px] font-bold text-gray-450 tracking-widest px-6 pt-5 mb-1.5 block font-headline-lg">
+        <h3
+          onClick={() => {
+            if (localStorage.getItem('is_admin_mode') === 'true') return;
+            const nextClicks = adminClicks + 1;
+            if (nextClicks >= 5) {
+              localStorage.setItem('is_admin_mode', 'true');
+              setToastMessage('Admin yetkileri aktif edildi! 👑');
+              setTimeout(() => setToastMessage(null), 3000);
+              setAdminClicks(0);
+            } else {
+              setAdminClicks(nextClicks);
+            }
+          }}
+          className="text-[10px] font-bold text-gray-450 tracking-widest px-6 pt-5 mb-1.5 block font-headline-lg cursor-pointer select-none"
+        >
           GENEL AYARLAR
         </h3>
 
@@ -1301,6 +1318,21 @@ export default function ProfileTab({
               <X className="w-4 h-4 text-rose-600" />
             </button>
           )}
+
+          {localStorage.getItem('is_admin_mode') === 'true' && (
+            <button
+              onClick={onOpenAdminPanel}
+              className={`w-full flex items-center justify-between p-4 px-6 transition-colors group text-left text-[#4ECDC4] font-extrabold cursor-pointer ${
+                isDarkMode ? 'hover:bg-[#121214]' : 'hover:bg-[#FFFBF0]'
+              }`}
+            >
+              <span className="text-xs flex items-center gap-2 font-headline-lg">
+                <Zap className="w-4 h-4 text-[#FFE66D] fill-[#FFE66D]" />
+                Admin Yönetim Paneli
+              </span>
+              <ChevronRight className="w-4 h-4 text-[#4ECDC4] group-hover:translate-x-1 transition-all" />
+            </button>
+          )}
         </div>
       </section>
 
@@ -1310,7 +1342,7 @@ export default function ProfileTab({
           const BASE_SHARE_URL = 'https://play.google.com/store/apps/details?id=com.oykum.app';
           const shareUrlWithInvite = `${BASE_SHARE_URL}&invite=${shareCode}`;
           const shareText = `İngilizce Öyküm ile harika hikayeler okuyup yeni kelimeler öğreniyorum! Sen de hemen indir ve bana katıl: ${BASE_SHARE_URL}\nDavet Kodum: ${shareCode}`;
-          const qrCodeUrl = `https://chart.googleapis.com/chart?chs=250x250&cht=qr&chl=${encodeURIComponent(shareUrlWithInvite)}`;
+          const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(shareUrlWithInvite)}`;
 
           return (
             <div className="fixed inset-0 z-50 bg-[#2D3436]/60 backdrop-blur-md flex items-center justify-center p-4">
@@ -1815,6 +1847,13 @@ export default function ProfileTab({
                     if (!cleaned) {
                       setToastMessage('Lütfen bir kod girin. ⚠️');
                       setTimeout(() => setToastMessage(null), 2500);
+                      return;
+                    }
+                    if (cleaned === 'ADMIN' || cleaned === 'ADMINPANEL') {
+                      localStorage.setItem('is_admin_mode', 'true');
+                      setIsInviteInputOpen(false);
+                      setToastMessage('Admin yetkileri aktif edildi! 👑');
+                      setTimeout(() => setToastMessage(null), 3000);
                       return;
                     }
                     localStorage.setItem('linguist_referred_by', cleaned);
