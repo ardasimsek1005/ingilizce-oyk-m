@@ -18,6 +18,13 @@ if os.path.exists(HORROR_DATA_FILE):
         expanded_stories.update(horror_stories)
         print(f"Loaded {len(horror_stories)} horror stories.")
 
+CLASSICS_DATA_FILE = "classics_stories_data.json"
+if os.path.exists(CLASSICS_DATA_FILE):
+    with open(CLASSICS_DATA_FILE, "r", encoding="utf-8") as f:
+        classics_stories = json.load(f)
+        expanded_stories.update(classics_stories)
+        print(f"Loaded {len(classics_stories)} classics stories.")
+
 print(f"Loaded total of {len(expanded_stories)} expanded stories from JSON.")
 
 def format_ts_story(story):

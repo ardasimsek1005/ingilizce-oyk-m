@@ -1,7 +1,7 @@
 import { RawStory } from './stories_part1';
 
 export const STORIES_PART2: RawStory[] = [
-          {
+            {
     id: 'wizard_of_oz',
     title: "The Wizard of Oz",
     author: 'L. Frank Baum',
@@ -108,7 +108,7 @@ export const STORIES_PART2: RawStory[] = [
       "dense": "yoğun"
     }
   },
-          {
+            {
     id: 'golden_goose',
     title: "The Goose with the Golden Eggs",
     author: 'Aesop',
@@ -215,7 +215,7 @@ export const STORIES_PART2: RawStory[] = [
       "impatient": "sabırsız"
     }
   },
-          {
+            {
     id: 'pied_piper',
     title: "The Pied Piper of Hamelin",
     author: 'Robert Browning',
@@ -322,7 +322,7 @@ export const STORIES_PART2: RawStory[] = [
       "treasure": "hazine"
     }
   },
-          {
+            {
     id: 'rumpelstiltskin',
     title: "Rumpelstiltskin",
     author: 'Brothers Grimm',
@@ -430,7 +430,7 @@ export const STORIES_PART2: RawStory[] = [
       "relief": "rahatlama"
     }
   },
-          {
+            {
     id: 'gullivers_travels',
     title: "Gulliver's Travels",
     author: 'Jonathan Swift',
@@ -538,7 +538,7 @@ export const STORIES_PART2: RawStory[] = [
       "horizon": "ufuk"
     }
   },
-          {
+            {
     id: 'robinson_crusoe',
     title: "Robinson Crusoe",
     author: 'Daniel Defoe',
@@ -648,7 +648,7 @@ export const STORIES_PART2: RawStory[] = [
       "solitude": "yalnızlık"
     }
   },
-          {
+            {
     id: 'gatsby_b2',
     title: "The Great Gatsby",
     author: 'F. Scott Fitzgerald',
@@ -757,7 +757,7 @@ export const STORIES_PART2: RawStory[] = [
       "attained": "ulaşmak"
     }
   },
-          {
+            {
     id: 'frankenstein',
     title: "Frankenstein",
     author: 'Mary Shelley',
@@ -870,7 +870,7 @@ export const STORIES_PART2: RawStory[] = [
       "resignation": "kabulleniş"
     }
   },
-          {
+            {
     id: 'dracula',
     title: "Dracula",
     author: 'Bram Stoker',
@@ -981,7 +981,7 @@ export const STORIES_PART2: RawStory[] = [
       "battlement": "kale mazgalı"
     }
   },
-          {
+            {
     id: 'sherlock_holmes',
     title: "Sherlock Holmes",
     author: 'Arthur Conan Doyle',
@@ -1093,7 +1093,7 @@ export const STORIES_PART2: RawStory[] = [
       "catastrophic": "felaket dolu"
     }
   },
-          {
+            {
     id: 'odyssey',
     title: "The Odyssey",
     author: 'Homer',
@@ -1207,7 +1207,7 @@ export const STORIES_PART2: RawStory[] = [
       "steadfast": "sadık"
     }
   },
-          {
+            {
     id: 'jungle_book',
     title: "The Jungle Book",
     author: 'Rudyard Kipling',
@@ -1328,7 +1328,7 @@ export const STORIES_PART2: RawStory[] = [
       "interconnectedness": "birbirine bağlılık"
     }
   },
-          {
+            {
     id: 'snow_queen',
     title: "The Snow Queen",
     author: 'Hans Christian Andersen',
@@ -1439,7 +1439,7 @@ export const STORIES_PART2: RawStory[] = [
       "gale": "şiddetli fırtına"
     }
   },
-          {
+            {
     id: 'normal_people_c1',
     title: "Normal People",
     author: 'Sally Rooney',
@@ -1552,7 +1552,7 @@ export const STORIES_PART2: RawStory[] = [
       "formative": "biçimlendirici, oluşturucu"
     }
   },
-          {
+            {
     id: 'treasure_island',
     title: "Treasure Island",
     author: 'Robert Louis Stevenson',
@@ -1668,7 +1668,7 @@ export const STORIES_PART2: RawStory[] = [
       "inexorably": "kaçınılmaz bir şekilde"
     }
   },
-          {
+            {
     id: 'elves_shoemaker',
     title: "The Elves and the Shoemaker",
     author: 'Brothers Grimm',
@@ -1738,7 +1738,7 @@ export const STORIES_PART2: RawStory[] = [
       "gesture": "jest"
     }
   },
-          {
+            {
     id: 'emperors_clothes',
     title: "The Emperor's New Clothes",
     author: 'Hans Christian Andersen',
@@ -1806,7 +1806,7 @@ export const STORIES_PART2: RawStory[] = [
       "vanity": "kibir"
     }
   },
-          {
+            {
     id: 'happy_prince',
     title: "The Happy Prince",
     author: 'Oscar Wilde',
@@ -1878,7 +1878,7 @@ export const STORIES_PART2: RawStory[] = [
       "trash": "çöp"
     }
   },
-          {
+            {
     id: 'wind_willows',
     title: "The Wind in the Willows",
     author: 'Kenneth Grahame',
@@ -1951,7 +1951,7 @@ export const STORIES_PART2: RawStory[] = [
       "identity": "kimlik"
     }
   },
-          {
+            {
     id: 'secret_garden',
     title: "The Secret Garden",
     author: 'Frances Hodgson Burnett',
@@ -2022,7 +2022,7 @@ export const STORIES_PART2: RawStory[] = [
       "sickness": "hastalık"
     }
   },
-          {
+            {
     id: 'heidi',
     title: "Heidi",
     author: 'Johanna Spyri',
@@ -2092,7 +2092,7 @@ export const STORIES_PART2: RawStory[] = [
       "slopes": "yamaçlar"
     }
   },
-          {
+            {
     id: 'little_prince',
     title: "The Little Prince",
     author: 'Antoine de Saint-Exupéry',
@@ -2165,7 +2165,7 @@ export const STORIES_PART2: RawStory[] = [
       "fragile": "kırılgan"
     }
   },
-          {
+            {
     id: 'christmas_carol',
     title: "A Christmas Carol",
     author: 'Charles Dickens',
@@ -2237,7 +2237,7 @@ export const STORIES_PART2: RawStory[] = [
       "generosity": "cömertlik"
     }
   },
-          {
+            {
     id: 'around_world',
     title: "Around the World in Eighty Days",
     author: 'Jules Verne',
@@ -2309,7 +2309,7 @@ export const STORIES_PART2: RawStory[] = [
       "locomotive": "lokomotif"
     }
   },
-          {
+            {
     id: 'time_machine',
     title: "The Time Machine",
     author: 'H. G. Wells',
@@ -2382,7 +2382,7 @@ export const STORIES_PART2: RawStory[] = [
       "bloated": "şişkin"
     }
   },
-          {
+            {
     id: 'white_fang',
     title: "White Fang",
     author: 'Jack London',
@@ -2451,7 +2451,7 @@ export const STORIES_PART2: RawStory[] = [
       "savage": "vahşi, ilkel"
     }
   },
-          {
+            {
     id: 'call_wild',
     title: "The Call of the Wild",
     author: 'Jack London',
@@ -2523,7 +2523,7 @@ export const STORIES_PART2: RawStory[] = [
       "bond": "bağ"
     }
   },
-          {
+            {
     id: 'don_quixote',
     title: "Don Quixote",
     author: 'Miguel de Cervantes',
@@ -2594,7 +2594,7 @@ export const STORIES_PART2: RawStory[] = [
       "catalyst": "katalizör (sebep olan şey)"
     }
   },
-          {
+            {
     id: 'moby_dick',
     title: "Moby Dick",
     author: 'Herman Melville',
@@ -2665,7 +2665,7 @@ export const STORIES_PART2: RawStory[] = [
       "drifting": "sürüklenen"
     }
   },
-          {
+            {
     id: 'hunchback_notredame',
     title: "The Hunchback of Notre Dame",
     author: 'Victor Hugo',
@@ -2736,7 +2736,7 @@ export const STORIES_PART2: RawStory[] = [
       "annals": "yıllıklar/tarih kayıtları"
     }
   },
-          {
+            {
     id: 'dorian_gray',
     title: "The Picture of Dorian Gray",
     author: 'Oscar Wilde',
@@ -2809,7 +2809,7 @@ export const STORIES_PART2: RawStory[] = [
       "hideous": "çirkin, iğrenç"
     }
   },
-        {
+          {
     id: 'anne_green_gables',
     title: "Anne of Green Gables",
     author: 'Lucy Maud Montgomery',
@@ -2879,7 +2879,7 @@ export const STORIES_PART2: RawStory[] = [
       "appearance": "dış görünüş"
     }
   },
-        {
+          {
     id: 'little_women',
     title: "Little Women",
     author: 'Louisa May Alcott',
@@ -2950,7 +2950,7 @@ export const STORIES_PART2: RawStory[] = [
       "dignity": "onur"
     }
   },
-        {
+          {
     id: 'pollyanna',
     title: "Pollyanna",
     author: 'Eleanor H. Porter',
@@ -3020,7 +3020,7 @@ export const STORIES_PART2: RawStory[] = [
       "concern": "endişe/ilgi"
     }
   },
-        {
+          {
     id: 'pride_prejudice',
     title: "Pride and Prejudice",
     author: 'Jane Austen',
@@ -3092,7 +3092,7 @@ export const STORIES_PART2: RawStory[] = [
       "disdainful": "küçümseyici"
     }
   },
-        {
+          {
     id: 'war_of_worlds',
     title: "The War of the Worlds",
     author: 'H. G. Wells',
@@ -3164,7 +3164,7 @@ export const STORIES_PART2: RawStory[] = [
       "comprehension": "anlama, kavrayış"
     }
   },
-        {
+          {
     id: 'dr_jekyll_mr_hyde',
     title: "Strange Case of Dr Jekyll and Mr Hyde",
     author: 'Robert Louis Stevenson',
@@ -3235,7 +3235,7 @@ export const STORIES_PART2: RawStory[] = [
       "respectability": "saygınlık"
     }
   },
-        {
+          {
     id: 'invisible_man',
     title: "The Invisible Man",
     author: 'H. G. Wells',
@@ -3305,7 +3305,7 @@ export const STORIES_PART2: RawStory[] = [
       "inevitable": "kaçınılmaz"
     }
   },
-        {
+          {
     id: 'crime_punishment',
     title: "Crime and Punishment",
     author: 'Fyodor Dostoevsky',
@@ -3377,7 +3377,7 @@ export const STORIES_PART2: RawStory[] = [
       "obsolete": "kullanılmayan, köhnemiş"
     }
   },
-        {
+          {
     id: 'les_miserables',
     title: "Les Misérables",
     author: 'Victor Hugo',
@@ -3448,7 +3448,7 @@ export const STORIES_PART2: RawStory[] = [
       "tranquility": "dinginlik"
     }
   },
-  {
+    {
     id: 'horror_pit_pendulum',
     title: "The Pit and the Pendulum",
     author: 'Edgar Allan Poe',
@@ -3519,9 +3519,8 @@ export const STORIES_PART2: RawStory[] = [
       "machinery": "mekanizma",
       "suffering": "ıstırap"
     }
-  }
-,
-  {
+  },
+    {
     id: 'horror_tell_tale_heart',
     title: "The Tell-Tale Heart",
     author: 'Edgar Allan Poe',
@@ -3592,9 +3591,8 @@ export const STORIES_PART2: RawStory[] = [
       "agitation": "heyecan",
       "unbearable": "dayanılmaz"
     }
-  }
-,
-  {
+  },
+    {
     id: 'horror_murders_rue_morgue',
     title: "The Murders in the Rue Morgue",
     author: 'Edgar Allan Poe',
@@ -3666,9 +3664,8 @@ export const STORIES_PART2: RawStory[] = [
       "mimic": "taklit etmek",
       "logic": "mantık"
     }
-  }
-,
-  {
+  },
+    {
     id: 'horror_boscombe_valley',
     title: "The Boscombe Valley Mystery",
     author: 'Arthur Conan Doyle',
@@ -3739,9 +3736,8 @@ export const STORIES_PART2: RawStory[] = [
       "malice": "kötülük",
       "suspicion": "şüphe"
     }
-  }
-,
-  {
+  },
+    {
     id: 'horror_woman_in_white',
     title: "The Woman in White",
     author: 'Wilkie Collins',
@@ -3812,9 +3808,8 @@ export const STORIES_PART2: RawStory[] = [
       "inheritance": "miras",
       "loyalty": "sadakat"
     }
-  }
-,
-  {
+  },
+    {
     id: 'horror_phantom_opera',
     title: "The Phantom of the Opera",
     author: 'Gaston Leroux',
@@ -3885,9 +3880,8 @@ export const STORIES_PART2: RawStory[] = [
       "surface": "yüzey",
       "mournful": "kederli, hüzünlü"
     }
-  }
-,
-  {
+  },
+    {
     id: 'horror_dunwich_horror',
     title: "The Dunwich Horror",
     author: 'H. P. Lovecraft',
@@ -3958,9 +3952,8 @@ export const STORIES_PART2: RawStory[] = [
       "lingering": "uzun süren",
       "fragile": "kırılgan"
     }
-  }
-,
-  {
+  },
+    {
     id: 'horror_mountains_madness',
     title: "At the Mountains of Madness",
     author: 'H. P. Lovecraft',
@@ -4032,9 +4025,8 @@ export const STORIES_PART2: RawStory[] = [
       "undisturbed": "rahatsız edilmemiş",
       "peak": "zirve"
     }
-  }
-,
-  {
+  },
+    {
     id: 'horror_shadow_innsmouth',
     title: "The Shadow over Innsmouth",
     author: 'H. P. Lovecraft',
@@ -4105,9 +4097,8 @@ export const STORIES_PART2: RawStory[] = [
       "immortality": "ölümsüzlük",
       "eternal": "sonsuz"
     }
-  }
-,
-  {
+  },
+    {
     id: 'horror_carmilla',
     title: "Carmilla",
     author: 'Sheridan Le Fanu',
@@ -4178,9 +4169,8 @@ export const STORIES_PART2: RawStory[] = [
       "vibrant": "canlı, hayat dolu",
       "caution": "temkin, dikkat"
     }
-  }
-,
-  {
+  },
+    {
     id: 'horror_hound_baskervilles',
     title: "The Hound of the Baskervilles",
     author: 'Arthur Conan Doyle',
@@ -4250,9 +4240,8 @@ export const STORIES_PART2: RawStory[] = [
       "treacherous": "hain/tehlikeli",
       "harrowing": "korkunç/yıpratıcı"
     }
-  }
-,
-  {
+  },
+    {
     id: 'horror_lair_white_worm',
     title: "The Lair of the White Worm",
     author: 'Bram Stoker',
@@ -4322,9 +4311,8 @@ export const STORIES_PART2: RawStory[] = [
       "manifestation": "tezahür/belirti",
       "corrupted": "yozlaşmış"
     }
-  }
-,
-  {
+  },
+    {
     id: 'horror_jewel_seven_stars',
     title: "The Jewel of Seven Stars",
     author: 'Bram Stoker',
@@ -4394,9 +4382,8 @@ export const STORIES_PART2: RawStory[] = [
       "catastrophic": "felaket niteliğinde",
       "interference": "müdahale"
     }
-  }
-,
-  {
+  },
+    {
     id: 'horror_turn_of_screw',
     title: "The Turn of the Screw",
     author: 'Henry James',
@@ -4465,9 +4452,8 @@ export const STORIES_PART2: RawStory[] = [
       "triumphantly": "zaferle",
       "cease": "durmak/son bulmak"
     }
-  }
-,
-  {
+  },
+    {
     id: 'horror_rappaccinis_daughter',
     title: "Rappaccini's Daughter",
     author: 'Nathaniel Hawthorne',
@@ -4539,9 +4525,8 @@ export const STORIES_PART2: RawStory[] = [
       "wilt": "solmak",
       "devastated": "yıkılmış"
     }
-  }
-,
-  {
+  },
+    {
     id: 'horror_mysteries_udolpho',
     title: "The Mysteries of Udolpho",
     author: 'Ann Radcliffe',
@@ -4611,9 +4596,8 @@ export const STORIES_PART2: RawStory[] = [
       "liberation": "kurtuluş",
       "supernatural": "doğaüstü"
     }
-  }
-,
-  {
+  },
+    {
     id: 'horror_castle_of_otranto',
     title: "The Castle of Otranto",
     author: 'Horace Walpole',
@@ -4683,9 +4667,8 @@ export const STORIES_PART2: RawStory[] = [
       "tyranny": "tiranlık",
       "ancestors": "atalar"
     }
-  }
-,
-  {
+  },
+    {
     id: 'horror_monk',
     title: "The Monk",
     author: 'Matthew Gregory Lewis',
@@ -4757,9 +4740,8 @@ export const STORIES_PART2: RawStory[] = [
       "malice": "kötü niyet",
       "depravity": "ahlaksızlık"
     }
-  }
-,
-  {
+  },
+    {
     id: 'horror_purloined_letter',
     title: "The Purloined Letter",
     author: 'Edgar Allan Poe',
@@ -4829,9 +4811,8 @@ export const STORIES_PART2: RawStory[] = [
       "indistinguishable": "ayırt edilemez",
       "replica": "kopya"
     }
-  }
-,
-  {
+  },
+    {
     id: 'horror_great_god_pan',
     title: "The Great God Pan",
     author: 'Arthur Machen',
@@ -4900,9 +4881,8 @@ export const STORIES_PART2: RawStory[] = [
       "discordant": "uyumsuz, ahenksiz",
       "spectral": "hayaletimsi, ürkütücü"
     }
-  }
-,
-  {
+  },
+    {
     id: 'horror_call_of_cthulhu',
     title: "The Call of Cthulhu",
     author: 'H. P. Lovecraft',
@@ -4973,9 +4953,8 @@ export const STORIES_PART2: RawStory[] = [
       "indifference": "kayıtsızlık",
       "reclamation": "geri alma"
     }
-  }
-,
-  {
+  },
+    {
     id: 'horror_white_people',
     title: "The White People",
     author: 'Arthur Machen',
@@ -5046,9 +5025,8 @@ export const STORIES_PART2: RawStory[] = [
       "ecstasy": "vecd",
       "grotesque": "tuhaf/grotesk"
     }
-  }
-,
-  {
+  },
+    {
     id: 'horror_beetle',
     title: "The Beetle",
     author: 'Richard Marsh',
@@ -5117,9 +5095,8 @@ export const STORIES_PART2: RawStory[] = [
       "crucible": "sınav yeri/potası",
       "inexorable": "kaçınılmaz"
     }
-  }
-,
-  {
+  },
+    {
     id: 'horror_house_borderland',
     title: "The House on the Borderland",
     author: 'William Hope Hodgson',
@@ -5188,9 +5165,8 @@ export const STORIES_PART2: RawStory[] = [
       "tapestry": "duvar örtüsü, doku",
       "sentinel": "nöbetçi, bekçi"
     }
-  }
-,
-  {
+  },
+    {
     id: 'horror_varney_vampire',
     title: "Varney the Vampire",
     author: 'Thomas Preskett Prest',
@@ -5259,5 +5235,4 @@ export const STORIES_PART2: RawStory[] = [
       "parapet": "mazgal, korkuluk",
       "pyre": "cenaze ateşi"
     }
-  }
-];
+  }];
