@@ -7,6 +7,7 @@ import VocabularyTab from './components/VocabularyTab';
 import QuizView from './components/QuizView';
 import ProfileTab from './components/ProfileTab';
 import FavoritesTab from './components/FavoritesTab';
+import SplashScreen from './components/SplashScreen';
 
 import { Book, VocabularyWord, UserStats, Badge, LeaderboardUser } from './types';
 import { INITIAL_BOOKS, INITIAL_VOCABULARY, INITIAL_BADGES, LEADERBOARD_DATA, LIBRARY_UNIQUE_WORDS_COUNT } from './data';
@@ -32,6 +33,7 @@ export default function App() {
   const [showPaywallInQuiz, setShowPaywallInQuiz] = useState<boolean>(false);
   const [activeReadingBook, setActiveReadingBook] = useState<Book | null>(null);
   const [googleClientId, setGoogleClientId] = useState<string>('');
+  const [showSplash, setShowSplash] = useState<boolean>(true);
   const [userEmail, setUserEmail] = useState<string | null>(() => {
     return localStorage.getItem('linguist_user_email') || null;
   });
@@ -272,6 +274,14 @@ export default function App() {
   useEffect(() => {
     localStorage.setItem('linguist_stats_v11', JSON.stringify(stats));
   }, [stats]);
+
+  // Show splash screen for 3 seconds on app startup
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowSplash(false);
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, []);
 
   // Fetch Google Client ID Config on mount
   useEffect(() => {
@@ -779,10 +789,14 @@ export default function App() {
         isDarkMode ? 'bg-[#121214] text-[#E6E6E6] dark' : 'bg-[#FFFBF0] text-[#2D3436]'
       }`}>
         
-        {/* Mock Status Bar (Desktop-only) */}
-        <div className={`hidden md:flex h-8 px-6 items-center justify-between text-[11px] font-bold z-50 select-none shrink-0 ${
-          isDarkMode ? 'bg-[#121214] text-gray-400' : 'bg-[#FFFBF0] text-gray-600'
-        }`}>
+        {showSplash ? (
+          <SplashScreen />
+        ) : (
+          <>
+            {/* Mock Status Bar (Desktop-only) */}
+            <div className={`hidden md:flex h-8 px-6 items-center justify-between text-[11px] font-bold z-50 select-none shrink-0 ${
+              isDarkMode ? 'bg-[#121214] text-gray-400' : 'bg-[#FFFBF0] text-gray-600'
+            }`}>
           <span>{timeStr}</span>
           {/* Dynamic Island / Speaker notch */}
           <div className="w-28 h-4.5 bg-[#1E1E22] rounded-b-xl absolute top-0 left-1/2 -translate-x-1/2 border-b border-[#2A2A30]/30" />
@@ -969,9 +983,11 @@ export default function App() {
           </div>
         </div>
 
-        {/* Bottom Layout Navigation triggers */}
-        {!activeReadingBook && (
-          <BottomNav currentTab={currentTab} onTabChange={(tab) => setCurrentTab(tab)} isDarkMode={isDarkMode} />
+            {/* Bottom Layout Navigation triggers */}
+            {!activeReadingBook && (
+              <BottomNav currentTab={currentTab} onTabChange={(tab) => setCurrentTab(tab)} isDarkMode={isDarkMode} />
+            )}
+          </>
         )}
       </div>
     </div>
