@@ -3,7 +3,7 @@ import urllib.request
 import re
 from PIL import Image
 
-artifact_dir = r"C:\Users\acer\.gemini\antigravity\brain\89e50793-c6a0-447c-a6bb-d186dcde31e4"
+artifact_dir = r"C:\Users\acer\.gemini\antigravity\brain\3ab92cab-5bde-4ef2-9f27-c00d7f8581f2"
 public_covers_dir = r"C:\Users\acer\antigravity\i̇ngilizce-öyküm\public\covers"
 scratch_covers_dir = r"C:\Users\acer\.gemini\antigravity\scratch\stories\covers"
 
@@ -14,7 +14,7 @@ os.makedirs(scratch_covers_dir, exist_ok=True)
 # Predefined Unsplash mappings for fallback covers (disabled since all covers are custom generated!)
 UNSPLASH_MAPPINGS = {}
 
-# 29 generated PNG files mapping (mapping prefix to story ID)
+# All generated PNG files mapping (mapping prefix to story ID)
 GENERATED_MAP = {
     "pinocchio_cover": "pinocchio",
     "little_mermaid_cover": "little_mermaid",
@@ -48,7 +48,7 @@ GENERATED_MAP = {
     "goldilocks_cover": "goldilocks",
     "puss_in_boots_cover": "puss_in_boots",
     
-    # 16 new stories
+    # 16 stories from step 2
     "elves_shoemaker_cover": "elves_shoemaker",
     "emperors_clothes_cover": "emperors_clothes",
     "happy_prince_cover": "happy_prince",
@@ -64,7 +64,49 @@ GENERATED_MAP = {
     "don_quixote_cover": "don_quixote",
     "moby_dick_cover": "moby_dick",
     "hunchback_notredame_cover": "hunchback_notredame",
-    "dorian_gray_cover": "dorian_gray"
+    "dorian_gray_cover": "dorian_gray",
+    
+    # 40 new stories
+    "lion_mouse_cover": "lion_mouse",
+    "ant_grasshopper_cover": "ant_grasshopper",
+    "town_country_mouse_cover": "town_country_mouse",
+    "crow_pitcher_cover": "crow_pitcher",
+    "wind_sun_cover": "wind_sun",
+    "gingerbread_man_cover": "gingerbread_man",
+    "chicken_little_cover": "chicken_little",
+    "enormous_turnip_cover": "enormous_turnip",
+    "three_billy_goats_cover": "three_billy_goats",
+    "fisherman_wife_cover": "fisherman_wife",
+    "little_red_hen_cover": "little_red_hen",
+    "frog_prince_cover": "frog_prince",
+    "stone_soup_cover": "stone_soup",
+    "star_money_cover": "star_money",
+    "city_musicians_cover": "city_musicians",
+    "peter_rabbit_cover": "peter_rabbit",
+    "bambi_cover": "bambi",
+    "black_beauty_cover": "black_beauty",
+    "hans_brinker_cover": "hans_brinker",
+    "five_children_it_cover": "five_children_it",
+    "railway_children_cover": "railway_children",
+    "swiss_family_cover": "swiss_family",
+    "doctor_dolittle_cover": "doctor_dolittle",
+    "sleepy_hollow_cover": "sleepy_hollow",
+    "rip_van_winkle_cover": "rip_van_winkle",
+    "velveteen_rabbit_cover": "velveteen_rabbit",
+    "water_babies_cover": "water_babies",
+    "nutcracker_cover": "nutcracker",
+    "blue_bird_cover": "blue_bird",
+    "tom_thumb_cover": "tom_thumb",
+    "little_match_girl_cover": "little_match_girl",
+    "anne_green_gables_cover": "anne_green_gables",
+    "little_women_cover": "little_women",
+    "pollyanna_cover": "pollyanna",
+    "pride_prejudice_cover": "pride_prejudice",
+    "war_of_worlds_cover": "war_of_worlds",
+    "dr_jekyll_mr_hyde_cover": "dr_jekyll_mr_hyde",
+    "invisible_man_cover": "invisible_man",
+    "crime_punishment_cover": "crime_punishment",
+    "les_miserables_cover": "les_miserables"
 }
 
 def crop_to_square(img):

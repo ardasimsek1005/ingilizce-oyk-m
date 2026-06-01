@@ -49,7 +49,7 @@ if os.path.exists(part1_path):
         
     # We want to replace each story in STORIES_PART1
     for s_id, story in expanded_stories.items():
-        if story["level"] == "A2":
+        if story["level"] in ["A1", "A2"]:
             # Search for the story object block with matching id: 's_id'
             pattern = r"\{\s*id:\s*'" + s_id + r"',.*?\}\s*(?=,\s*\{|\s*\])"
             formatted = format_ts_story(story)
