@@ -1335,7 +1335,7 @@ export default function ReadingView({
                   {/* PAGE TRANSITION / ROADBLOCK CHECKPOINT CARD */}
                   {currentPageIdx < pages.length - 1 && (
                     <div className="pt-6 border-t border-dashed border-[#FFE66D]/50">
-                      {currentPageIdx < maxUnlockedPageIdx || localStorage.getItem('is_admin_mode') === 'true' ? (
+                      {currentPageIdx < maxUnlockedPageIdx ? (
                         /* DIRECT NEXT PAGE BUTTON (ALREADY UNLOCKED) */
                         <button
                           onClick={() => {
@@ -1477,17 +1477,16 @@ export default function ReadingView({
             <button
               onClick={(e) => {
                 e.stopPropagation();
-                const isAdmin = localStorage.getItem('is_admin_mode') === 'true';
-                if (currentPageIdx < maxUnlockedPageIdx || isAdmin) {
+                if (currentPageIdx < maxUnlockedPageIdx) {
                   if (currentPageIdx < pages.length - 1) {
                     setCurrentPageIdx(prev => prev + 1);
                     scrollToTop();
                   }
                 }
               }}
-              disabled={currentPageIdx >= pages.length - 1}
+              disabled={currentPageIdx >= maxUnlockedPageIdx}
               className={`p-1.5 px-3 rounded-xl font-bold flex items-center gap-1 transition-all cursor-pointer ${
-                currentPageIdx >= pages.length - 1 || (currentPageIdx >= maxUnlockedPageIdx && localStorage.getItem('is_admin_mode') !== 'true')
+                currentPageIdx >= maxUnlockedPageIdx 
                   ? 'opacity-30 cursor-not-allowed text-gray-400' 
                   : isDarkMode
                     ? 'hover:bg-white/5 text-[#4ECDC4]'
