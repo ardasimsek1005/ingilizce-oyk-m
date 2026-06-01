@@ -14,7 +14,6 @@ interface ProfileTabProps {
   userName: string;
   userAvatar: string;
   onUpdateProfile: (name: string, avatar: string) => void;
-  onEnterAdminMode: () => void;
 }
 
 export default function ProfileTab({
@@ -26,7 +25,6 @@ export default function ProfileTab({
   userName,
   userAvatar,
   onUpdateProfile,
-  onEnterAdminMode,
 }: ProfileTabProps) {
   const [selectedChartTab, setSelectedChartTab] = useState<'words' | 'minutes'>('words');
   const [activeBarIdx, setActiveBarIdx] = useState<number | null>(null);
@@ -914,18 +912,6 @@ export default function ProfileTab({
             </button>
           )}
 
-          <button
-            onClick={onEnterAdminMode}
-            className={`w-full flex items-center justify-between p-4 px-6 transition-colors group text-left cursor-pointer ${
-              isDarkMode ? 'hover:bg-[#121214] text-[#4ECDC4]' : 'hover:bg-[#FFFBF0] text-[#3cacb0]'
-            }`}
-          >
-            <span className="text-xs font-bold flex items-center gap-2">
-              <ShieldAlert className="w-4 h-4 text-[#FF6B6B]" />
-              Yönetici Paneli (Admin Girişi)
-            </span>
-            <ChevronRight className="w-4.5 h-4.5 text-[#FF6B6B] group-hover:translate-x-1 transition-all" />
-          </button>
 
           {stats.isPremium && (
             <button

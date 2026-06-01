@@ -6,7 +6,6 @@ import ReadingView from './components/ReadingView';
 import VocabularyTab from './components/VocabularyTab';
 import QuizView from './components/QuizView';
 import ProfileTab from './components/ProfileTab';
-import AdminPanel from './components/AdminPanel';
 import FavoritesTab from './components/FavoritesTab';
 
 import { Book, VocabularyWord, UserStats, Badge, LeaderboardUser } from './types';
@@ -32,7 +31,6 @@ export default function App() {
   const [currentTab, setCurrentTab] = useState<string>('library'); // 'library' | 'vocabulary' | 'profile' | 'quiz'
   const [showPaywallInQuiz, setShowPaywallInQuiz] = useState<boolean>(false);
   const [activeReadingBook, setActiveReadingBook] = useState<Book | null>(null);
-  const [isAdminMode, setIsAdminMode] = useState<boolean>(false);
   
   // Cloud database simulation indicator State
   const [syncStatus, setSyncStatus] = useState<'synced' | 'syncing'>('synced');
@@ -634,8 +632,8 @@ export default function App() {
         {/* Scrollable Main Area */}
         <div className="flex-1 overflow-y-auto flex flex-col relative scrollbar-none pb-20">
           
-          {/* Visual Navigation and Status Headers if not in active reading panel and not in admin mode */}
-          {!activeReadingBook && !isAdminMode && (
+          {/* Visual Navigation and Status Headers if not in active reading panel */}
+          {!activeReadingBook && (
             <Header
               currentTab={currentTab}
               isPremium={stats.isPremium}
@@ -651,25 +649,7 @@ export default function App() {
 
           {/* Main Container viewport */}
           <div className="flex-1 flex flex-col">
-            {isAdminMode ? (
-              <AdminPanel
-                books={books}
-                onAddAdminBook={(newBook) => {
-                  setBooks(prev => [newBook, ...prev]);
-                  triggerCloudSync();
-                }}
-                onUpdateAdminBook={(updatedBook) => {
-                  setBooks(prev => prev.map(b => b.id === updatedBook.id ? updatedBook : b));
-                  triggerCloudSync();
-                }}
-                onDeleteAdminBook={(bookId) => {
-                  setBooks(prev => prev.filter(b => b.id !== bookId));
-                  triggerCloudSync();
-                }}
-                onBack={() => setIsAdminMode(false)}
-                isDarkMode={isDarkMode}
-              />
-            ) : activeReadingBook ? (
+            {activeReadingBook ? (
               <ReadingView
                 book={activeReadingBook}
                 onBack={(percentage, currentPage, totalPages) => {
@@ -802,7 +782,6 @@ export default function App() {
                     userName={userName}
                     userAvatar={userAvatar}
                     onUpdateProfile={handleUpdateProfile}
-                    onEnterAdminMode={() => setIsAdminMode(true)}
                   />
                 )}
               </>
@@ -811,7 +790,7 @@ export default function App() {
         </div>
 
         {/* Bottom Layout Navigation triggers */}
-        {!activeReadingBook && !isAdminMode && (
+        {!activeReadingBook && (
           <BottomNav currentTab={currentTab} onTabChange={(tab) => setCurrentTab(tab)} isDarkMode={isDarkMode} />
         )}
       </div>
