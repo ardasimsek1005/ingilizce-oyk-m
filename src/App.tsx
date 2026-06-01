@@ -46,6 +46,19 @@ const DEFAULT_STATS: UserStats = {
   weeklyMins: [0, 0, 0, 0, 0, 0, 0]
 };
 
+const stripBooksForSync = (booksList: Book[]) => {
+  if (!Array.isArray(booksList)) return [];
+  return booksList.map(b => ({
+    id: b.id,
+    currentPage: b.currentPage ?? 0,
+    isStarted: !!b.isStarted,
+    isCompleted: !!b.isCompleted,
+    isFavorited: !!b.isFavorited,
+    percentageCompleted: b.percentageCompleted ?? 0,
+    pagesLeft: b.pagesLeft ?? 0
+  }));
+};
+
 export default function App() {
   const [currentTab, setCurrentTab] = useState<string>('library'); // 'library' | 'vocabulary' | 'profile' | 'quiz'
   const [quizMode, setQuizMode] = useState<'saved' | 'random'>('saved');
@@ -319,7 +332,7 @@ export default function App() {
       }));
 
       localStorage.setItem('linguist_stats_v11', JSON.stringify(zeroedStats));
-      localStorage.setItem('linguist_books_v11', JSON.stringify(zeroedBooks));
+      localStorage.setItem('linguist_books_v11', JSON.stringify(stripBooksForSync(zeroedBooks)));
       localStorage.setItem('linguist_vocabulary_v11', JSON.stringify([]));
       localStorage.setItem('linguist_badges_v11', JSON.stringify(zeroedBadges));
       localStorage.setItem('linguist_reset_stats_to_zero_v11', 'true');
@@ -457,7 +470,7 @@ export default function App() {
   // Automatically save to local persistence whenever states modify
   useEffect(() => {
     const ns = userEmail ? userEmail.toLowerCase().trim() : 'guest';
-    localStorage.setItem(`linguist_books_v11_${ns}`, JSON.stringify(books));
+    localStorage.setItem(`linguist_books_v11_${ns}`, JSON.stringify(stripBooksForSync(books)));
   }, [books, userEmail]);
 
   useEffect(() => {
@@ -524,7 +537,7 @@ export default function App() {
         email: userEmail,
         data: {
           stats,
-          books,
+          books: stripBooksForSync(books),
           vocabulary,
           badges,
           userName,
@@ -745,7 +758,7 @@ export default function App() {
       email: emailToSync,
       data: {
         stats: customStats || stats,
-        books: customBooks || books,
+        books: stripBooksForSync(customBooks || books),
         vocabulary: customVocabulary || vocabulary,
         badges: customBadges || badges,
         userName: customName !== undefined ? customName : userName,
@@ -840,8 +853,36 @@ export default function App() {
             localStorage.setItem(`linguist_stats_v11_${finalEmail}`, JSON.stringify(finalStats));
           }
           if (cloud.books) {
-            setBooks(cloud.books);
-            localStorage.setItem(`linguist_books_v11_${finalEmail}`, JSON.stringify(cloud.books));
+            const sanitizedParsed = Array.isArray(cloud.books) ? cloud.books.filter(Boolean).map((b: any) => ({
+              ...b,
+              percentageCompleted: typeof b.percentageCompleted === 'number' ? b.percentageCompleted : 0,
+              currentPage: typeof b.currentPage === 'number' ? b.currentPage : 0,
+              pagesLeft: typeof b.pagesLeft === 'number' ? b.pagesLeft : (b.totalPages || 0),
+              totalPages: typeof b.totalPages === 'number' ? b.totalPages : 0,
+              isCompleted: !!b.isCompleted,
+              isFavorited: !!b.isFavorited,
+              isStarted: !!b.isStarted
+            })) : [];
+            
+            const merged: Book[] = [...sanitizedParsed];
+            INITIAL_BOOKS.forEach(initBook => {
+              const existingIdx = merged.findIndex(b => b.id === initBook.id);
+              if (existingIdx === -1) {
+                merged.push(initBook);
+              } else {
+                merged[existingIdx] = {
+                  ...initBook,
+                  percentageCompleted: merged[existingIdx].percentageCompleted ?? 0,
+                  currentPage: merged[existingIdx].currentPage ?? 0,
+                  pagesLeft: merged[existingIdx].pagesLeft ?? initBook.totalPages,
+                  isCompleted: !!merged[existingIdx].isCompleted,
+                  isFavorited: !!merged[existingIdx].isFavorited,
+                  isStarted: !!merged[existingIdx].isStarted
+                };
+              }
+            });
+            setBooks(merged);
+            localStorage.setItem(`linguist_books_v11_${finalEmail}`, JSON.stringify(stripBooksForSync(merged)));
           }
           if (cloud.vocabulary) {
             setVocabulary(cloud.vocabulary);
