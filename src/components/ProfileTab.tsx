@@ -14,6 +14,27 @@ interface ProfileTabProps {
   userName: string;
   userAvatar: string;
   onUpdateProfile: (name: string, avatar: string) => void;
+  userEmail: string | null;
+  googleClientId: string;
+  onGoogleLogin: (email: string, name?: string, picture?: string) => void;
+  onGoogleLogout: () => void;
+}
+
+function parseJwt(token: string) {
+  try {
+    const base64Url = token.split('.')[1];
+    const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+    const jsonPayload = decodeURIComponent(
+      atob(base64)
+        .split('')
+        .map(c => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2))
+        .join('')
+    );
+    return JSON.parse(jsonPayload);
+  } catch (e) {
+    console.error('JWT parse error:', e);
+    return null;
+  }
 }
 
 export default function ProfileTab({
@@ -25,12 +46,56 @@ export default function ProfileTab({
   userName,
   userAvatar,
   onUpdateProfile,
+  userEmail,
+  googleClientId,
+  onGoogleLogin,
+  onGoogleLogout,
 }: ProfileTabProps) {
   const [selectedChartTab, setSelectedChartTab] = useState<'words' | 'minutes'>('words');
   const [activeBarIdx, setActiveBarIdx] = useState<number | null>(null);
   const [isShareModalOpen, setIsShareModalOpen] = useState(false);
   const [sharePlatform, setSharePlatform] = useState<string | null>(null);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
+
+  // Google Login mock modal state
+  const [showMockLogin, setShowMockLogin] = useState(false);
+  const [mockEmail, setMockEmail] = useState('');
+  const [mockName, setMockName] = useState('');
+
+  const handleMockSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!mockEmail || !mockEmail.includes('@')) {
+      alert('Lütfen geçerli bir e-posta adresi girin.');
+      return;
+    }
+    onGoogleLogin(mockEmail, mockName || mockEmail.split('@')[0]);
+    setShowMockLogin(false);
+    setToastMessage('Gmail hesabı bağlandı ve veriler eşitlendi! 🔄');
+    setTimeout(() => setToastMessage(null), 3000);
+  };
+
+  // Google Sign-In GSI button mounting
+  React.useEffect(() => {
+    if (googleClientId && !userEmail && (window as any).google) {
+      try {
+        (window as any).google.accounts.id.initialize({
+          client_id: googleClientId,
+          callback: (response: any) => {
+            const decoded = parseJwt(response.credential);
+            if (decoded && decoded.email) {
+              onGoogleLogin(decoded.email, decoded.name, decoded.picture);
+            }
+          }
+        });
+        (window as any).google.accounts.id.renderButton(
+          document.getElementById("google-signin-btn"),
+          { theme: isDarkMode ? "dark" : "outline", size: "large", width: "100%", shape: "pill" }
+        );
+      } catch (err) {
+        console.error("Google button render error:", err);
+      }
+    }
+  }, [googleClientId, userEmail, isDarkMode]);
 
   // Profile Edit states
   const [isEditing, setIsEditing] = useState(false);
@@ -137,7 +202,24 @@ export default function ProfileTab({
   };
 
   const handleShareClick = () => {
-    setIsShareModalOpen(true);
+    const appShareUrl = window.location.origin;
+    if (navigator.share) {
+      navigator.share({
+        title: 'İngilizce Öyküm',
+        text: `Hey! İngilizce Öyküm ile harika İngilizce hikayeler okuyup yeni kelimeler öğreniyorum. Benimle birlikte katılmak istersen, işte davet kodum: ${shareCode}`,
+        url: appShareUrl
+      })
+      .then(() => {
+        setToastMessage('Başarıyla paylaşıldı! 🚀');
+        setTimeout(() => setToastMessage(null), 3000);
+      })
+      .catch(err => {
+        console.log('Share failed or canceled:', err);
+        setIsShareModalOpen(true);
+      });
+    } else {
+      setIsShareModalOpen(true);
+    }
   };
 
   const handlePlatformShare = (platform: string) => {
@@ -341,17 +423,50 @@ export default function ProfileTab({
               <div className="text-[11px] opacity-80 font-medium">Yükleme Tarihi: {installDate}</div>
             </div>
 
-            <button
-              onClick={() => {
-                setTempName(userName);
-                setTempAvatar(userAvatar);
-                setIsEditing(true);
-              }}
-              className="px-4 py-1.5 bg-[#FF6B6B]/10 hover:bg-[#FF6B6B]/15 text-[#FF6B6B] text-[11px] font-bold rounded-full border border-[#FF6B6B]/20 transition-all flex items-center gap-1.5 cursor-pointer font-headline-lg"
-            >
-              <Edit2 className="w-3.5 h-3.5" />
-              <span>İsmini Değiştir</span>
-            </button>
+            <div className="flex flex-wrap justify-center gap-2">
+              <button
+                onClick={() => {
+                  setTempName(userName);
+                  setTempAvatar(userAvatar);
+                  setIsEditing(true);
+                }}
+                className="px-4 py-1.5 bg-[#FF6B6B]/10 hover:bg-[#FF6B6B]/15 text-[#FF6B6B] text-[11px] font-bold rounded-full border border-[#FF6B6B]/20 transition-all flex items-center gap-1.5 cursor-pointer font-headline-lg"
+              >
+                <Edit2 className="w-3.5 h-3.5" />
+                <span>İsmini Değiştir</span>
+              </button>
+            </div>
+
+            {userEmail ? (
+              <div className="mt-4 flex items-center justify-center gap-1.5 px-3 py-1 bg-emerald-500/10 border border-emerald-500/20 text-emerald-500 rounded-full text-[10px] font-bold tracking-wide w-max mx-auto select-none">
+                <BadgeCheck className="w-3.5 h-3.5 fill-emerald-500 text-white" />
+                <span>GMAIL BAĞLI: {userEmail}</span>
+              </div>
+            ) : (
+              <div className="mt-4 w-full max-w-xs mx-auto space-y-3">
+                {googleClientId ? (
+                  <div>
+                    <div id="google-signin-btn" className="w-full flex justify-center" />
+                    <p className="text-[10px] text-gray-400 mt-1 font-semibold text-center">
+                      Gmail hesabınızı bağlayarak ilerlemenizi yedekleyin.
+                    </p>
+                  </div>
+                ) : (
+                  <button
+                    onClick={() => setShowMockLogin(true)}
+                    className="w-full py-2.5 px-4 bg-white border border-gray-300 hover:bg-gray-50 text-gray-700 rounded-full text-xs font-bold transition-all flex items-center justify-center gap-2 cursor-pointer shadow-sm font-headline-lg"
+                  >
+                    <svg className="w-4 h-4" viewBox="0 0 24 24">
+                      <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                      <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.56-2.77c-.98.66-2.23 1.06-3.72 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                      <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l3.66-2.85z" />
+                      <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.85c.87-2.6 3.3-4.53 6.16-4.53z" />
+                    </svg>
+                    <span>Google ile Giriş Yap</span>
+                  </button>
+                )}
+              </div>
+            )}
           </>
         )}
       </section>
@@ -947,11 +1062,21 @@ export default function ProfileTab({
             <RefreshCw className="w-4 h-4 text-red-500 group-hover:rotate-180 transition-all duration-500" />
           </button>
 
-          <button className={`w-full flex items-center justify-between p-4 px-6 transition-colors group text-left text-rose-600 font-extrabold cursor-pointer ${
-            isDarkMode ? 'hover:bg-[#121214]' : 'hover:bg-[#FFFBF0]'
-          }`}>
-            <span className="text-xs">Çıkış Yap</span>
-          </button>
+          {userEmail && (
+            <button
+              onClick={() => {
+                onGoogleLogout();
+                setToastMessage('Gmail hesabından çıkış yapıldı. 🚪');
+                setTimeout(() => setToastMessage(null), 3000);
+              }}
+              className={`w-full flex items-center justify-between p-4 px-6 transition-colors group text-left text-rose-600 font-extrabold cursor-pointer ${
+                isDarkMode ? 'hover:bg-[#121214] text-rose-600' : 'hover:bg-[#FFFBF0] text-rose-600'
+              }`}
+            >
+              <span className="text-xs">Çıkış Yap (Gmail Hesabını Kapat)</span>
+              <X className="w-4 h-4 text-rose-600" />
+            </button>
+          )}
         </div>
       </section>
 
@@ -1022,7 +1147,7 @@ export default function ProfileTab({
                 
                 <div className="grid grid-cols-2 gap-2.5">
                   <a
-                    href={`https://api.whatsapp.com/send?text=${encodeURIComponent(`Hey! İngilizce Öyküm ile harika İngilizce hikayeler okuyup yeni kelimeler öğreniyorum. Benimle birlikte katılmak istersen, işte davet kodum: ${shareCode} - Sen de hemen dene: https://ingilizceoykum.com`)}`}
+                    href={`https://api.whatsapp.com/send?text=${encodeURIComponent(`Hey! İngilizce Öyküm ile harika İngilizce hikayeler okuyup yeni kelimeler öğreniyorum. Benimle birlikte katılmak istersen, işte davet kodum: ${shareCode} - Sen de hemen dene: ${window.location.origin}`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => handlePlatformShare('WhatsApp')}
@@ -1032,7 +1157,7 @@ export default function ProfileTab({
                   </a>
 
                   <a
-                    href={`https://t.me/share/url?url=${encodeURIComponent('https://ingilizceoykum.com')}&text=${encodeURIComponent(`Hey! İngilizce Öyküm ile harika İngilizce hikayeler okuyup yeni kelimeler öğreniyorum. Benimle birlikte katılmak istersen, işte davet kodum: ${shareCode}`)}`}
+                    href={`https://t.me/share/url?url=${encodeURIComponent(window.location.origin)}&text=${encodeURIComponent(`Hey! İngilizce Öyküm ile harika İngilizce hikayeler okuyup yeni kelimeler öğreniyorum. Benimle birlikte katılmak istersen, işte davet kodum: ${shareCode}`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => handlePlatformShare('Telegram')}
@@ -1042,7 +1167,7 @@ export default function ProfileTab({
                   </a>
 
                   <a
-                    href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(`Hey! İngilizce Öyküm ile harika İngilizce hikayeler okuyup yeni kelimeler öğreniyorum. Benimle birlikte katılmak istersen, işte davet kodum: ${shareCode} - Sen de hemen dene: https://ingilizceoykum.com`)}`}
+                    href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(`Hey! İngilizce Öyküm ile harika İngilizce hikayeler okuyup yeni kelimeler öğreniyorum. Benimle birlikte katılmak istersen, işte davet kodum: ${shareCode} - Sen de hemen dene: ${window.location.origin}`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => handlePlatformShare('X / Twitter')}
@@ -1052,7 +1177,7 @@ export default function ProfileTab({
                   </a>
 
                   <a
-                    href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://ingilizceoykum.com')}`}
+                    href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.origin)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => handlePlatformShare('Facebook')}
@@ -1064,7 +1189,7 @@ export default function ProfileTab({
 
                 {/* Copy whole invitation message text */}
                 <button
-                  onClick={() => handleCopyLinkOrCode(`Hey! İngilizce Öyküm ile harika İngilizce hikayeler okuyup yeni kelimeler öğreniyorum. Benimle birlikte katılmak istersen, işte davet kodum: ${shareCode} - Sen de hemen indir ve dene: https://ingilizceoykum.com`, false)}
+                  onClick={() => handleCopyLinkOrCode(`Hey! İngilizce Öyküm ile harika İngilizce hikayeler okuyup yeni kelimeler öğreniyorum. Benimle birlikte katılmak istersen, işte davet kodum: ${shareCode} - Sen de hemen indir ve dene: ${window.location.origin}`, false)}
                   className={`w-full py-2.5 rounded-xl text-xs font-bold border transition-all cursor-pointer flex items-center justify-center gap-1.5 mt-2 ${
                     isDarkMode 
                       ? 'border-gray-700 hover:bg-white/5 text-gray-300' 
@@ -1094,6 +1219,89 @@ export default function ProfileTab({
                   </motion.div>
                 )}
               </AnimatePresence>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+
+      {/* MOCK GOOGLE LOGIN SYSTEM MODAL */}
+      <AnimatePresence>
+        {showMockLogin && (
+          <div className="fixed inset-0 z-50 bg-[#2D3436]/55 backdrop-blur-xs flex items-center justify-center p-4">
+            <motion.div
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              className={`max-w-md w-full rounded-[28px] border-2 p-6 flex flex-col shadow-2xl relative transition-all ${
+                isDarkMode ? 'bg-[#1A1A1E] border-[#2A2A30]' : 'bg-white border-[#FFE66D]'
+              }`}
+            >
+              <button
+                type="button"
+                onClick={() => setShowMockLogin(false)}
+                className={`absolute top-4 right-4 p-1 px-2.5 rounded-lg text-xs font-bold font-mono cursor-pointer transition-colors ${
+                  isDarkMode ? 'text-gray-300 bg-[#2A2A30] hover:bg-[#343A40]' : 'text-gray-500 bg-gray-100 hover:bg-gray-200'
+                }`}
+              >
+                Kapat
+              </button>
+
+              <div className="w-12 h-12 rounded-full bg-[#4285F4]/10 text-[#4285F4] flex items-center justify-center mb-4 border border-[#4285F4]/20 shadow-sm mx-auto">
+                <svg className="w-6 h-6" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M12.24 10.285V14.4h6.887c-.648 2.41-2.519 4.114-5.136 4.114-3.468 0-6.28-2.812-6.28-6.28s2.812-6.28 6.28-6.28c1.554 0 2.969.571 4.07 1.509l3.109-3.11C18.66 1.705 15.635 1 12.24 1 5.767 1 12.24s4.767 11.24 11.24 11.24c6.335 0 11.24-4.514 11.24-11.24 0-.74-.085-1.485-.24-2.215H12.24z" />
+                </svg>
+              </div>
+
+              <h3 className={`font-headline-lg text-lg font-bold mb-1 text-center ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
+                Google ile Giriş Yap (Geliştirici Modu)
+              </h3>
+              <p className="text-xs text-gray-400 mb-5 px-1 leading-relaxed font-semibold text-center">
+                Gmail adresinizi girerek ilerlemenizi hemen yedekleyin veya başka bir cihazdan geri yükleyin!
+              </p>
+
+              <form onSubmit={handleMockSubmit} className="space-y-4">
+                <div>
+                  <label className="text-[10px] font-bold text-gray-400 tracking-wider block mb-1">
+                    GMAIL ADRESİ
+                  </label>
+                  <input
+                    type="email"
+                    required
+                    placeholder="ornek@gmail.com"
+                    value={mockEmail}
+                    onChange={(e) => setMockEmail(e.target.value)}
+                    className={`w-full text-xs px-3 py-2.5 border rounded-xl focus:outline-none focus:border-[#FF6B6B] focus:ring-1 focus:ring-[#FF6B6B] font-medium transition-colors ${
+                      isDarkMode 
+                        ? 'bg-[#121214] border-[#2A2A30] text-white placeholder-gray-650' 
+                        : 'bg-white border-[#FFE66D] text-gray-800 placeholder-teal-600'
+                    }`}
+                  />
+                </div>
+
+                <div>
+                  <label className="text-[10px] font-bold text-gray-400 tracking-wider block mb-1">
+                    İSMİNİZ (İSTEĞE BAĞLI)
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Adınız"
+                    value={mockName}
+                    onChange={(e) => setMockName(e.target.value)}
+                    className={`w-full text-xs px-3 py-2.5 border rounded-xl focus:outline-none focus:border-[#FF6B6B] focus:ring-1 focus:ring-[#FF6B6B] font-medium transition-colors ${
+                      isDarkMode 
+                        ? 'bg-[#121214] border-[#2A2A30] text-white placeholder-gray-650' 
+                        : 'bg-white border-[#FFE66D] text-gray-800 placeholder-teal-600'
+                    }`}
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full py-3 bg-[#FF6B6B] text-white rounded-xl text-xs font-bold hover:bg-[#e05a5a] transition-all cursor-pointer shadow-md shadow-[#FF6B6B]/20 font-headline-lg mt-2"
+                >
+                  Giriş Yap ve Verileri Eşitle
+                </button>
+              </form>
             </motion.div>
           </div>
         )}

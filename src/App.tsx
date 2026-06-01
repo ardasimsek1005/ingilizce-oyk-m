@@ -31,6 +31,10 @@ export default function App() {
   const [currentTab, setCurrentTab] = useState<string>('library'); // 'library' | 'vocabulary' | 'profile' | 'quiz'
   const [showPaywallInQuiz, setShowPaywallInQuiz] = useState<boolean>(false);
   const [activeReadingBook, setActiveReadingBook] = useState<Book | null>(null);
+  const [googleClientId, setGoogleClientId] = useState<string>('');
+  const [userEmail, setUserEmail] = useState<string | null>(() => {
+    return localStorage.getItem('linguist_user_email') || null;
+  });
   
   // Cloud database simulation indicator State
   const [syncStatus, setSyncStatus] = useState<'synced' | 'syncing'>('synced');
@@ -269,6 +273,56 @@ export default function App() {
     localStorage.setItem('linguist_stats_v11', JSON.stringify(stats));
   }, [stats]);
 
+  // Fetch Google Client ID Config on mount
+  useEffect(() => {
+    fetch('/api/config')
+      .then(res => res.json())
+      .then(cfg => {
+        if (cfg.googleClientId) {
+          setGoogleClientId(cfg.googleClientId);
+        }
+      })
+      .catch(err => console.error('Failed to load client config:', err));
+  }, []);
+
+  // Debounced cloud synchronization whenever user data changes and logged in
+  useEffect(() => {
+    if (!userEmail) return;
+
+    setSyncStatus('syncing');
+    const delayDebounce = setTimeout(() => {
+      const payload = {
+        email: userEmail,
+        data: {
+          stats,
+          books,
+          vocabulary,
+          badges,
+          userName,
+          userAvatar
+        }
+      };
+
+      fetch('/api/sync', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      })
+      .then(res => res.json())
+      .then(() => {
+        setSyncStatus('synced');
+      })
+      .catch(err => {
+        console.error('Auto cloud sync failed:', err);
+        setSyncStatus('synced');
+      });
+    }, 1500); // 1.5 seconds debounce
+
+    return () => clearTimeout(delayDebounce);
+  }, [userEmail, stats, books, vocabulary, badges, userName, userAvatar]);
+
   // Daily Streak check useEffect
   useEffect(() => {
     const isResetDone = localStorage.getItem('linguist_reset_stats_to_zero_v11');
@@ -365,11 +419,133 @@ export default function App() {
   }, [activeReadingBook]);
 
   // Real-time Cloud Sync Simulated delay triggers
-  const triggerCloudSync = () => {
+  const triggerCloudSync = (
+    customStats?: UserStats,
+    customBooks?: Book[],
+    customVocabulary?: VocabularyWord[],
+    customBadges?: Badge[],
+    customName?: string,
+    customAvatar?: string
+  ) => {
     setSyncStatus('syncing');
-    setTimeout(() => {
+    
+    const emailToSync = userEmail;
+    if (!emailToSync) {
+      setTimeout(() => setSyncStatus('synced'), 300);
+      return;
+    }
+
+    const payload = {
+      email: emailToSync,
+      data: {
+        stats: customStats || stats,
+        books: customBooks || books,
+        vocabulary: customVocabulary || vocabulary,
+        badges: customBadges || badges,
+        userName: customName !== undefined ? customName : userName,
+        userAvatar: customAvatar !== undefined ? customAvatar : userAvatar
+      }
+    };
+
+    fetch('/api/sync', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(payload)
+    })
+    .then(res => res.json())
+    .then(() => {
       setSyncStatus('synced');
-    }, 600); // 600ms represents an incredibly fast low latency cloud connection!
+    })
+    .catch(err => {
+      console.error('Failed to sync to cloud:', err);
+      setSyncStatus('synced');
+    });
+  };
+
+  const handleGoogleLogin = (email: string, name?: string, picture?: string) => {
+    const finalEmail = email.toLowerCase().trim();
+    const finalName = name || finalEmail.split('@')[0];
+    const finalAvatar = picture || AVATAR_OPTIONS[0];
+
+    setUserEmail(finalEmail);
+    localStorage.setItem('linguist_user_email', finalEmail);
+
+    setUserName(finalName);
+    localStorage.setItem('linguist_user_name', finalName);
+
+    setUserAvatar(finalAvatar);
+    localStorage.setItem('linguist_user_avatar', finalAvatar);
+
+    // Fetch progress from server
+    setSyncStatus('syncing');
+    fetch(`/api/sync?email=${encodeURIComponent(finalEmail)}`)
+      .then(res => res.json())
+      .then(resData => {
+        setSyncStatus('synced');
+        if (resData.found && resData.data) {
+          const cloud = resData.data;
+          
+          if (cloud.stats) {
+            setStats(cloud.stats);
+            localStorage.setItem('linguist_stats_v11', JSON.stringify(cloud.stats));
+          }
+          if (cloud.books) {
+            setBooks(cloud.books);
+            localStorage.setItem('linguist_books_v11', JSON.stringify(cloud.books));
+          }
+          if (cloud.vocabulary) {
+            setVocabulary(cloud.vocabulary);
+            localStorage.setItem('linguist_vocabulary_v11', JSON.stringify(cloud.vocabulary));
+          }
+          if (cloud.badges) {
+            setBadges(cloud.badges);
+            localStorage.setItem('linguist_badges_v11', JSON.stringify(cloud.badges));
+          }
+          if (cloud.userName) {
+            setUserName(cloud.userName);
+            localStorage.setItem('linguist_user_name', cloud.userName);
+          }
+          if (cloud.userAvatar) {
+            setUserAvatar(cloud.userAvatar);
+            localStorage.setItem('linguist_user_avatar', cloud.userAvatar);
+          }
+        } else {
+          // Sync current local state to cloud immediately since it is a new account
+          const payload = {
+            email: finalEmail,
+            data: {
+              stats,
+              books,
+              vocabulary,
+              badges,
+              userName: finalName,
+              userAvatar: finalAvatar
+            }
+          };
+
+          fetch('/api/sync', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+          }).catch(err => console.error('Initial sync error:', err));
+        }
+      })
+      .catch(err => {
+        console.error('Error fetching sync data:', err);
+        setSyncStatus('synced');
+      });
+  };
+
+  const handleGoogleLogout = () => {
+    setUserEmail(null);
+    localStorage.removeItem('linguist_user_email');
+    
+    setUserName('');
+    setUserAvatar(AVATAR_OPTIONS[0]);
+    localStorage.setItem('linguist_user_name', '');
+    localStorage.setItem('linguist_user_avatar', AVATAR_OPTIONS[0]);
   };
 
   // Add customized essay input into fully interactive read-to-translate stories
@@ -782,6 +958,10 @@ export default function App() {
                     userName={userName}
                     userAvatar={userAvatar}
                     onUpdateProfile={handleUpdateProfile}
+                    userEmail={userEmail}
+                    googleClientId={googleClientId}
+                    onGoogleLogin={handleGoogleLogin}
+                    onGoogleLogout={handleGoogleLogout}
                   />
                 )}
               </>

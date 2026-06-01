@@ -529,6 +529,69 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
     }
   });
 
+  // User synchronization file database
+  const USERS_DATA_PATH = path.join(process.cwd(), "users_data.json");
+  let usersData: Record<string, any> = {};
+
+  const loadUsersData = () => {
+    if (fs.existsSync(USERS_DATA_PATH)) {
+      try {
+        usersData = JSON.parse(fs.readFileSync(USERS_DATA_PATH, "utf8"));
+        console.log(`[Linguist Sync] Loaded dynamic users database with ${Object.keys(usersData).length} accounts.`);
+      } catch (err) {
+        console.error("Failed to load users data:", err);
+      }
+    }
+  };
+
+  const saveUsersData = () => {
+    try {
+      fs.writeFileSync(USERS_DATA_PATH, JSON.stringify(usersData, null, 2), "utf8");
+    } catch (err) {
+      console.error("Failed to save users data:", err);
+    }
+  };
+
+  loadUsersData();
+
+  // Get config for client-side API/Keys
+  app.get("/api/config", (req, res) => {
+    res.json({
+      googleClientId: process.env.GOOGLE_CLIENT_ID || ""
+    });
+  });
+
+  // Sync endpoint - Save progress
+  app.post("/api/sync", (req, res) => {
+    const { email, data } = req.body;
+    if (!email || !email.includes("@")) {
+      return res.status(400).json({ error: "Geçersiz email adresi." });
+    }
+    
+    usersData[email.toLowerCase().trim()] = {
+      data,
+      updatedAt: new Date().toISOString()
+    };
+    saveUsersData();
+    
+    return res.json({ success: true, message: "İlerleme başarıyla senkronize edildi." });
+  });
+
+  // Sync endpoint - Fetch progress
+  app.get("/api/sync", (req, res) => {
+    const email = req.query.email;
+    if (typeof email !== "string" || !email.includes("@")) {
+      return res.status(400).json({ error: "Geçersiz email adresi." });
+    }
+    
+    const userRecord = usersData[email.toLowerCase().trim()];
+    if (!userRecord) {
+      return res.json({ found: false, data: null });
+    }
+    
+    return res.json({ found: true, data: userRecord.data });
+  });
+
   // Health check API
   app.get("/api/health", (req, res) => {
     res.json({ status: "ok", mode: process.env.NODE_ENV || "development" });
