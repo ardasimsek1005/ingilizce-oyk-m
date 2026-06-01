@@ -123,26 +123,42 @@ for idx, story in enumerate(STORIES_TO_GENERATE):
     story_tr_paragraphs = []
     story_words = {}
     
-    sys_instruction = f"You are a professional literary author and language teacher. You write stories for English learners at the CEFR {story['level']} level. Your target word count for the entire story is 1500 to 2000 words. You will write the story across 5 chapters. Crucial rule: The story plot, characters, and sequence of events MUST strictly match the original classic plot of the story '{story['title']}' by {story['author']} without any modifications."
+    sys_instruction = f"You are a professional literary author and language teacher. You write stories for English learners at the CEFR {story['level']} level. Your target word count for the entire story is 1500 to 2000 words. You will write the story across 5 parts. Crucial rule: The story plot, characters, and sequence of events MUST strictly match the original classic plot of the story '{story['title']}' by {story['author']} without any modifications."
     
     success = True
     chapter = 1
+    import re
     while chapter <= 5:
-        print(f"  Generating Chapter {chapter}/5...")
-        prompt = f"Write Chapter {chapter} of the story '{story['title']}' by {story['author']}. This chapter should consist of exactly 3 descriptive paragraphs, with each paragraph being about 100-150 words in length. Ensure the grammar and vocabulary are appropriate for CEFR {story['level']} learners. Keep the story matched to the original classic plot. Also provide a beautiful and contextually accurate Turkish translation for each paragraph, and extract 6 key vocabulary words from this chapter (base lowercase English forms and their Turkish meaning in this context)."
+        print(f"  Generating Part {chapter}/5...")
+        prompt = f"Write Part {chapter} of the story '{story['title']}' by {story['author']}. This part should consist of exactly 3 descriptive paragraphs, with each paragraph being about 100-150 words in length. Ensure the grammar and vocabulary are appropriate for CEFR {story['level']} learners. Keep the story matched to the original classic plot. Also provide a beautiful and contextually accurate Turkish translation for each paragraph, and extract 6 key vocabulary words from this part (base lowercase English forms and their Turkish meaning in this context). Crucial rule: Do NOT include any chapter numbers, chapter headers, or title prefixes (like 'Chapter X', 'Capture X', 'Part X') in the paragraphs. Start writing the story text directly."
         if chapter > 1:
-            prompt += f"\n\nContext of previous chapters:\n" + "\n".join(story_en_paragraphs[-3:])
+            prompt += f"\n\nContext of previous parts:\n" + "\n".join(story_en_paragraphs[-3:])
             
         result = call_gemini(prompt, sys_instruction)
         
         if result is None:
-            print("  Persistent rate limit or error encountered. Sleeping for 60 seconds before retrying this chapter...")
+            print("  Persistent rate limit or error encountered. Sleeping for 60 seconds before retrying this part...")
             time.sleep(60)
             continue
             
+        def clean_p(p):
+            # Clean prefixes like "Chapter 1", "Capture X", "Bölüm X"
+            pattern = r"^\s*(?:chapter|capture|bölüm|part|section)\s+(?:[0-9]+|[ivxldm]+)\b[:\-\s\.]*"
+            cleaned = re.sub(pattern, "", p, flags=re.IGNORECASE).strip()
+            # If paragraph is just the chapter/part label, ignore it
+            if re.match(r"^\s*(?:chapter|capture|bölüm|part|section)\s*(?:[0-9]+|[ivxldm]+)?\s*$", cleaned, re.IGNORECASE):
+                return ""
+            return cleaned
+
+        cleaned_en = [clean_p(p) for p in result["english_paragraphs"]]
+        cleaned_en = [p for p in cleaned_en if p]
+
+        cleaned_tr = [clean_p(p) for p in result["turkish_paragraphs"]]
+        cleaned_tr = [p for p in cleaned_tr if p]
+
         # Append paragraphs
-        story_en_paragraphs.extend(result["english_paragraphs"])
-        story_tr_paragraphs.extend(result["turkish_paragraphs"])
+        story_en_paragraphs.extend(cleaned_en)
+        story_tr_paragraphs.extend(cleaned_tr)
         
         # Append vocabulary
         for w in result["vocabulary"]:
@@ -152,7 +168,7 @@ for idx, story in enumerate(STORIES_TO_GENERATE):
                 story_words[en_word] = tr_word
                 
         chapter += 1
-        time.sleep(3) # 3 seconds delay between chapters
+        time.sleep(3) # 3 seconds delay between parts
             
     # Save the story
     expanded_data[s_id] = {

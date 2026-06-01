@@ -1,35 +1,8 @@
 import React, { useState, useMemo } from 'react';
-import { BookOpen, Timer, Plus, ArrowRight, ExternalLink, ChevronRight, X, Sparkles, BookMarked, Heart } from 'lucide-react';
+import { BookOpen, Timer, Plus, ArrowRight, ExternalLink, ChevronRight, X, Sparkles, BookMarked, Star } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Book } from '../types';
 
-function getBookTotalPages(book: Book, wordsPerPage: number = 120): number {
-  if (!book.chapters || book.chapters.length === 0) return 0;
-  const chapter = book.chapters[0];
-  if (!chapter || !chapter.paragraphs) return 0;
-  
-  let totalPages = 0;
-  let currentGroupLength = 0;
-  let currentWordCount = 0;
-  
-  chapter.paragraphs.forEach((p, idx) => {
-    const wordsCount = p.textEn.split(/\s+/).filter(Boolean).length;
-    if (currentGroupLength > 0 && currentWordCount >= wordsPerPage) {
-      totalPages++;
-      currentGroupLength = 1;
-      currentWordCount = wordsCount;
-    } else {
-      currentGroupLength++;
-      currentWordCount += wordsCount;
-    }
-  });
-  
-  if (currentGroupLength > 0) {
-    totalPages++;
-  }
-  
-  return totalPages;
-}
 
 interface LibraryTabProps {
   books: Book[];
@@ -74,45 +47,6 @@ export default function LibraryTab({ books, onSelectBook, syncTrigger, isDarkMod
     });
   }, [books, selectedLevel]);
 
-  // Pre-calculate and memoize total pages for all books to avoid massive word splitting on render hot-path
-  const bookTotalPagesMap = useMemo(() => {
-    const map: Record<string, number> = {};
-    books.forEach(book => {
-      if (!book.chapters || book.chapters.length === 0) {
-        map[book.id] = 0;
-        return;
-      }
-      const chapter = book.chapters[0];
-      if (!chapter || !chapter.paragraphs) {
-        map[book.id] = 0;
-        return;
-      }
-      
-      let totalPages = 0;
-      let currentGroupLength = 0;
-      let currentWordCount = 0;
-      const wordsPerPage = 120;
-      
-      chapter.paragraphs.forEach((p) => {
-        const wordsCount = p.textEn.split(/\s+/).filter(Boolean).length;
-        if (currentGroupLength > 0 && currentWordCount >= wordsPerPage) {
-          totalPages++;
-          currentGroupLength = 1;
-          currentWordCount = wordsCount;
-        } else {
-          currentGroupLength++;
-          currentWordCount += wordsCount;
-        }
-      });
-      
-      if (currentGroupLength > 0) {
-        totalPages++;
-      }
-      
-      map[book.id] = totalPages;
-    });
-    return map;
-  }, [books]);
 
   // Calculate unique words read across all books based on progress (currentPage index)
   const totalWordsRead = useMemo(() => {
@@ -171,8 +105,9 @@ export default function LibraryTab({ books, onSelectBook, syncTrigger, isDarkMod
     return uniqueWordsSet.size;
   }, [books]);
 
-  const totalReadHours = Math.floor(totalReadMinutes / 60);
-  const remainingMins = totalReadMinutes % 60;
+  const minutes = totalReadMinutes || 0;
+  const totalReadHours = Math.floor(minutes / 60);
+  const remainingMins = minutes % 60;
 
   return (
     <div className={`pb-32 max-w-[680px] mx-auto px-5 pt-6 transition-colors ${
@@ -191,10 +126,11 @@ export default function LibraryTab({ books, onSelectBook, syncTrigger, isDarkMod
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
-            className={`rounded-3xl p-5 border flex flex-col sm:flex-row gap-5 transition-all duration-300 ${
+            onClick={() => onSelectBook(currentlyReading)}
+            className={`rounded-3xl p-5 border flex flex-col sm:flex-row gap-5 transition-all duration-300 cursor-pointer ${
               isDarkMode 
-                ? 'bg-[#1A1A1E] border-[#2A2A30] shadow-[0_12px_24px_rgba(0,0,0,0.25)]' 
-                : 'bg-white border-[#FFE66D] shadow-[0_12px_24px_-10px_rgba(255,107,107,0.05)] hover:shadow-[0_20px_40px_-10px_rgba(255,107,107,0.08)]'
+                ? 'bg-[#1A1A1E] border-[#2A2A30] hover:border-[#FF6B6B]/45 shadow-[0_12px_24px_rgba(0,0,0,0.25)]' 
+                : 'bg-white border-[#FFE66D] shadow-[0_12px_24px_-10px_rgba(255,107,107,0.05)] hover:shadow-[0_20px_40px_-10px_rgba(255,107,107,0.08)] hover:border-[#FF6B6B]/50'
             }`}
           >
             {/* Book Cover */}
@@ -209,16 +145,16 @@ export default function LibraryTab({ books, onSelectBook, syncTrigger, isDarkMod
               <div className="absolute top-2 right-2 px-1.5 py-0.5 bg-[#FFE66D] rounded text-[9px] font-bold text-[#2D3436] shadow-xs">
                 {currentlyReading.level}
               </div>
-              {/* Heart Button */}
+              {/* Star Button */}
               <button
                 onClick={(e) => {
                   e.stopPropagation();
                   onToggleFavorite(currentlyReading.id);
                 }}
-                className="absolute top-2 left-2 p-1.5 bg-black/45 backdrop-blur-md hover:bg-black/60 text-[#FF6B6B] rounded-xl border border-white/20 transition-all cursor-pointer shadow-sm scale-95 active:scale-90"
+                className="absolute top-2 left-2 p-1.5 bg-black/45 backdrop-blur-md hover:bg-black/60 text-[#F59E0B] rounded-xl border border-white/20 transition-all cursor-pointer shadow-sm scale-95 active:scale-90"
                 title={currentlyReading.isFavorited ? 'Favorilerden Çıkar' : 'Favorilere Ekle'}
               >
-                <Heart className={`w-3.5 h-3.5 ${currentlyReading.isFavorited ? 'fill-[#FF6B6B]' : ''}`} />
+                <Star className={`w-3.5 h-3.5 ${currentlyReading.isFavorited ? 'fill-[#F59E0B]' : ''}`} />
               </button>
             </div>
 
@@ -246,7 +182,7 @@ export default function LibraryTab({ books, onSelectBook, syncTrigger, isDarkMod
                     <span className={`italic ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
                       {currentlyReading.percentageCompleted === 100 
                         ? 'Bitirildi' 
-                        : `Sayfa ${currentlyReading.currentPage || 1} / ${bookTotalPagesMap[currentlyReading.id] || 0}`}
+                        : `Sayfa ${currentlyReading.currentPage || 1} / ${currentlyReading.totalPages || 0}`}
                     </span>
                   </div>
                   <div className={`w-full h-2.5 rounded-full overflow-hidden border ${
@@ -339,16 +275,16 @@ export default function LibraryTab({ books, onSelectBook, syncTrigger, isDarkMod
                   }`}>
                     {book.level}
                   </div>
-                  {/* Heart Button */}
+                  {/* Star Button */}
                   <button
                     onClick={(e) => {
                       e.stopPropagation();
                       onToggleFavorite(book.id);
                     }}
-                    className="absolute top-2 left-2 p-1.5 bg-black/45 backdrop-blur-md hover:bg-black/60 text-[#FF6B6B] rounded-xl border border-white/20 transition-all cursor-pointer shadow-sm scale-95 active:scale-90"
+                    className="absolute top-2 left-2 p-1.5 bg-black/45 backdrop-blur-md hover:bg-black/60 text-[#F59E0B] rounded-xl border border-white/20 transition-all cursor-pointer shadow-sm scale-95 active:scale-90"
                     title={book.isFavorited ? 'Favorilerden Çıkar' : 'Favorilere Ekle'}
                   >
-                    <Heart className={`w-3.5 h-3.5 ${book.isFavorited ? 'fill-[#FF6B6B]' : ''}`} />
+                    <Star className={`w-3.5 h-3.5 ${book.isFavorited ? 'fill-[#F59E0B]' : ''}`} />
                   </button>
                   {book.percentageCompleted === 100 && (
                     <div className="absolute inset-x-0 bottom-0 bg-[#4ECDC4] text-[#2D3436] py-1 text-center font-bold text-[10px] tracking-wider flex items-center justify-center gap-1 shadow-sm">
@@ -364,7 +300,7 @@ export default function LibraryTab({ books, onSelectBook, syncTrigger, isDarkMod
                 <p className="text-gray-455 dark:text-gray-400 text-xs truncate">{book.author}</p>
                 <div className="flex items-center gap-1.5 mt-1 text-[11px] text-[#4ECDC4] font-bold">
                   <BookOpen className="w-3.5 h-3.5" />
-                  <span>{bookTotalPagesMap[book.id] || 0} Sayfa</span>
+                  <span>{book.totalPages || 0} Sayfa</span>
                 </div>
               </motion.div>
             );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, BookMarked, User, Heart } from 'lucide-react';
+import { BookOpen, BookMarked, User, Star } from 'lucide-react';
 
 interface BottomNavProps {
   currentTab: string;
@@ -46,11 +46,11 @@ export default function BottomNav({ currentTab, onTabChange, isDarkMode }: Botto
           onClick={() => onTabChange('favorites')}
           className={`flex flex-col items-center justify-center px-3 py-1 transition-all ${
             currentTab === 'favorites'
-              ? 'text-[#FF6B6B]'
-              : 'text-gray-400 hover:text-[#4ECDC4]'
+              ? 'text-[#F59E0B]'
+              : 'text-gray-400 hover:text-[#F59E0B]'
           }`}
         >
-          <Heart className={`w-[22px] h-[22px] mb-1 ${currentTab === 'favorites' ? 'stroke-[2.5] fill-[#FF6B6B]' : 'stroke-[1.5]'}`} />
+          <Star className={`w-[22px] h-[22px] mb-1 ${currentTab === 'favorites' ? 'stroke-[2.5] fill-[#F59E0B]' : 'stroke-[1.5]'}`} />
           <span className="text-[12px] font-medium tracking-wide">Favoriler</span>
         </button>
 

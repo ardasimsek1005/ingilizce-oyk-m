@@ -34,8 +34,14 @@ self.addEventListener('activate', (event) => {
 
 // Ağ isteği yönetimi: önce ağ, olmadığında cache
 self.addEventListener('fetch', (event) => {
+  const url = event.request.url;
+  // Sadece http ve https protokolündeki istekleri işle, chrome-extension vb. istekleri pas geç
+  if (!url.startsWith('http://') && !url.startsWith('https://')) {
+    return;
+  }
+
   // API isteklerini cache'leme — her zaman ağdan getir
-  if (event.request.url.includes('/api/')) {
+  if (url.includes('/api/')) {
     event.respondWith(fetch(event.request));
     return;
   }
@@ -48,7 +54,9 @@ self.addEventListener('fetch', (event) => {
         if (response && response.status === 200 && response.type === 'basic') {
           const responseClone = response.clone();
           caches.open(CACHE_NAME).then((cache) => {
-            cache.put(event.request, responseClone);
+            cache.put(event.request, responseClone).catch(err => {
+              console.warn('Cache.put failed:', err);
+            });
           });
         }
         return response;

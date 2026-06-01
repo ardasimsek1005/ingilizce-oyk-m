@@ -213,7 +213,7 @@ export const INITIAL_BOOKS: Book[] = ALL_RAW_STORIES.map((story) => {
   const chapters = [
     {
       id: `${story.id}_chap1`,
-      title: 'Chapter 1',
+      title: '',
       paragraphs: story.en.map((enText, pIdx) => {
         const trText = story.tr[pIdx] || enText;
         
@@ -246,6 +246,25 @@ export const INITIAL_BOOKS: Book[] = ALL_RAW_STORIES.map((story) => {
 
   const totalWords = story.en.reduce((sum, p) => sum + p.split(/\s+/).length, 0);
 
+  // Precompute actual page counts based on ~120 words per page (matching ReadingView logic)
+  let calculatedTotalPages = 0;
+  let currentGroupLength = 0;
+  let currentWordCount = 0;
+  story.en.forEach((pText) => {
+    const wordsCount = pText.split(/\s+/).filter(Boolean).length;
+    if (currentGroupLength > 0 && currentWordCount >= 120) {
+      calculatedTotalPages++;
+      currentGroupLength = 1;
+      currentWordCount = wordsCount;
+    } else {
+      currentGroupLength++;
+      currentWordCount += wordsCount;
+    }
+  });
+  if (currentGroupLength > 0) {
+    calculatedTotalPages++;
+  }
+
   return {
     id: story.id,
     title: story.title,
@@ -254,8 +273,8 @@ export const INITIAL_BOOKS: Book[] = ALL_RAW_STORIES.map((story) => {
     levelName: LEVEL_NAMES[story.level] || `${story.level} Seviyesi`,
     coverUrl: story.coverUrl,
     percentageCompleted: 0,
-    pagesLeft: story.en.length,
-    totalPages: story.en.length,
+    pagesLeft: calculatedTotalPages,
+    totalPages: calculatedTotalPages,
     currentPage: 0,
     statsWords: totalWords,
     statsTime: `${Math.max(1, Math.ceil(totalWords / 45))}dk`,

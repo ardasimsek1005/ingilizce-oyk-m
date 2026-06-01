@@ -1,7 +1,7 @@
 import { RawStory } from './stories_part1';
 
 export const STORIES_PART2: RawStory[] = [
-    {
+        {
     id: 'wizard_of_oz',
     title: "The Wizard of Oz",
     author: 'L. Frank Baum',
@@ -108,7 +108,7 @@ export const STORIES_PART2: RawStory[] = [
       "dense": "yoğun"
     }
   },
-    {
+        {
     id: 'golden_goose',
     title: "The Goose with the Golden Eggs",
     author: 'Aesop',
@@ -215,7 +215,7 @@ export const STORIES_PART2: RawStory[] = [
       "impatient": "sabırsız"
     }
   },
-    {
+        {
     id: 'pied_piper',
     title: "The Pied Piper of Hamelin",
     author: 'Robert Browning',
@@ -322,14 +322,14 @@ export const STORIES_PART2: RawStory[] = [
       "treasure": "hazine"
     }
   },
-    {
+        {
     id: 'rumpelstiltskin',
     title: "Rumpelstiltskin",
     author: 'Brothers Grimm',
     level: 'B1',
     coverUrl: '/covers/rumpelstiltskin.webp',
     en: [
-      "Once upon a time, there lived a poor miller who had a very beautiful daughter. To make himself look more important than he really was, the miller decided to tell a lie to the King. When he met the King by chance, he boastfully claimed that his daughter was so talented that she could spin common straw into pure, shimmering gold.",
+      "Many years ago, a poor miller lived with his daughter, who was known for her extraordinary beauty. To make himself look more important than he really was, the miller decided to tell a lie to the King. When he met the King by chance, he boastfully claimed that his daughter was so talented that she could spin common straw into pure, shimmering gold.",
       "The King, who loved gold above all else in the world, was fascinated by this claim. He immediately ordered the miller to bring his daughter to the royal castle the very next day. The foolish miller began to worry about what he had said, but he could not take back his words. He knew that the King was powerful and that he expected the daughter to perform this impossible task right away.",
       "The next morning, the miller’s daughter arrived at the castle, feeling nervous and afraid. The King took her to a room filled from the floor to the ceiling with yellow straw. He handed her a spinning wheel and a stool, then gave her a strict command.",
       "He told her that if she did not turn all this straw into gold by the following morning, she would lose her life. After saying these harsh words, the King walked out of the room and locked the heavy door from the outside.",
@@ -364,7 +364,7 @@ export const STORIES_PART2: RawStory[] = [
       "The kingdom was at peace, and the dark secret of the spinning wheel became nothing more than a distant, frightening memory. The Queen never forgot the lessons she learned during those hard times. She promised to protect her family from any danger that might appear in the future, living the rest of her days in joy and comfort with her husband and child, safe within the tall walls of their royal home."
     ],
     tr: [
-      "Bir zamanlar, çok güzel bir kızı olan fakir bir değirmenci yaşarmış. Kendini olduğundan daha önemli göstermek için değirmenci, Kral'a bir yalan söylemeye karar vermiş. Kral ile şans eseri karşılaştığında, kızının sıradan samanı saf, parıldayan altına dönüştürebilecek kadar yetenekli olduğunu övünerek iddia etmiş.",
+      "Yıllar önce, olağanüstü güzelliğiyle tanınan kızıyla birlikte yaşayan fakir bir değirmenci varmış. Kendini olduğundan daha önemli göstermek için değirmenci Kral'a bir yalan söylemeye karar vermiş. Kral'la şans eseri karşılaştığında, kızının sıradan samanı saf, parıldayan altına dönüştürebilecek kadar yetenekli olduğunu böbürlenerek iddia etmiş.",
       "Dünyadaki her şeyden çok altını seven Kral, bu iddia karşısında büyülenmiş. Hemen değirmenciye, kızını ertesi gün kraliyet sarayına getirmesini emretmiş. Aptal değirmenci söyledikleri hakkında endişelenmeye başlamış ama sözlerini geri alamamış. Kral'ın güçlü olduğunu ve kızdan bu imkansız görevi hemen yapmasını beklediğini biliyormuş.",
       "Ertesi sabah değirmencinin kızı endişeli ve korkmuş bir şekilde saraya varmış. Kral onu yerden tavana kadar sarı samanla dolu bir odaya götürmüş. Ona bir çıkrık ve bir tabure vermiş, ardından sert bir emir vermiş.",
       "Eğer ertesi sabaha kadar tüm bu samanı altına dönüştürmezse hayatını kaybedeceğini söylemiş. Bu sert sözleri söyledikten sonra Kral odadan çıkmış ve ağır kapıyı dışarıdan kilitlemiş.",
@@ -430,7 +430,7 @@ export const STORIES_PART2: RawStory[] = [
       "relief": "rahatlama"
     }
   },
-    {
+        {
     id: 'gullivers_travels',
     title: "Gulliver's Travels",
     author: 'Jonathan Swift',
@@ -469,7 +469,7 @@ export const STORIES_PART2: RawStory[] = [
       "I took a strong cable and hooked it to the prows of their fifty ships. With immense strength, I pulled the entire fleet across the channel, ignoring the thousands of arrows that rained down upon me like needles. My protective goggles kept my eyes safe from their projectiles, allowing me to complete the mission without suffering a single major injury while towing their naval power directly into the hands of the Lilliputian Emperor.",
       "The Emperor welcomed me back with great pride, naming me a 'Nardac,' the highest honor in the land. However, the internal politics of Lilliput soon turned sour. The Emperor, fueled by his new military superiority, demanded that I help him fully conquer Blefuscu and force its people into total submission.",
       "He wanted to turn their kingdom into a province of his own and destroy their ancient traditions regarding eggs. I respectfully refused, arguing that I would not be the instrument of another nation's enslavement. This refusal caused a shift in the palace atmosphere. My former allies began to whisper against me, and my noble act of defense was slowly twisted into a narrative of arrogance and hidden treason by my political enemies.",
-      "The final days of my stay became increasingly dangerous as I learned of a plot to condemn me to death. Fearing for my life, I decided that my time in Lilliput had come to an end. I managed to escape to the coast, where I discovered an overturned boat that had been tossed onto the shore by a storm.",
+      "The final days of my stay became increasingly dangerous as I learned of a plot to condemn me to death, and fearing for my life, I decided that my time in Lilliput had come to an end. I managed to escape to the coast, where I discovered an overturned boat that had been tossed onto the shore by a storm.",
       "With the help of some basic tools, I repaired the vessel and set sail across the vast, lonely ocean. After several days of rowing, I was eventually spotted by a passing English merchant ship. As I boarded the vessel, I looked back one last time at the horizon, realizing that the strange, small world I had left behind was merely a reflection of the larger, more complex world to which I was finally returning."
     ],
     tr: [
@@ -538,7 +538,7 @@ export const STORIES_PART2: RawStory[] = [
       "horizon": "ufuk"
     }
   },
-    {
+        {
     id: 'robinson_crusoe',
     title: "Robinson Crusoe",
     author: 'Daniel Defoe',
@@ -648,7 +648,7 @@ export const STORIES_PART2: RawStory[] = [
       "solitude": "yalnızlık"
     }
   },
-    {
+        {
     id: 'gatsby_b2',
     title: "The Great Gatsby",
     author: 'F. Scott Fitzgerald',
@@ -677,7 +677,7 @@ export const STORIES_PART2: RawStory[] = [
       "One Sunday morning, while the golden sun shone over the busy streets of New York, Jay Gatsby arrived at my home in his bright yellow car. He invited me to lunch in the city, but instead of the usual pleasantries, he began to share a carefully constructed version of his past.",
       "He claimed he came from a wealthy family in the Midwest, studied at Oxford, and had lived like a prince in all the capitals of Europe. Although I was initially skeptical, he produced a medal from Montenegro and a photograph of himself at Oxford to support these grand claims. I began to realize that Gatsby was weaving a complex web of lies and truths, desperate to appear like a man born into traditional, old-fashioned wealth.",
       "During our drive, we were stopped by a policeman for speeding, but Gatsby simply showed him a white card from the city commissioner, and the officer apologized and let us go. This simple interaction revealed the depth of his connections and his influence. At a hidden, dark restaurant, I met Mr.",
-      "Wolfsheim, a mysterious man with an unsettling intensity. Wolfsheim spoke admiringly of Gatsby, describing him as a fine man of breeding and a gentleman. It became clear that Gatsby’s success was built on something much more dangerous than simple business. He was involved in the world of underground crime, using his vast wealth to move through society as a ghost who could fix any problem with a single phone call or a bribe.",
+      "Wolfsheim was a mysterious man with an unsettling intensity, and he spoke admiringly of Gatsby, describing him as a fine man of breeding and a gentleman. It became clear that Gatsby’s success was built on something much more dangerous than simple business. He was involved in the world of underground crime, using his vast wealth to move through society as a ghost who could fix any problem with a single phone call or a bribe.",
       "Later that day, I met with Jordan Baker, who finally explained the true reason for Gatsby’s strange behavior and his interest in me. She told me that five years earlier, Gatsby had fallen deeply in love with Daisy Buchanan in Louisville. He had been a poor officer, and when he left for the war, Daisy eventually married the wealthy Tom Buchanan.",
       "Gatsby had bought his mansion in West Egg specifically to be across the bay from Daisy’s house. He hosted those grand, chaotic parties in the secret hope that she would wander in one evening. He wanted me to invite Daisy to tea at my home so that he could 'accidentally' meet her again. The mystery of the man was now solved; he was a man trapped in his own romantic past.",
       "The afternoon was damp, and the rain drummed steadily against the roof of my small house. Gatsby arrived early, his face pale and his nervous energy filling the room. He walked around my living room restlessly, checking his watch every few minutes.",
@@ -757,7 +757,7 @@ export const STORIES_PART2: RawStory[] = [
       "attained": "ulaşmak"
     }
   },
-    {
+        {
     id: 'frankenstein',
     title: "Frankenstein",
     author: 'Mary Shelley',
@@ -870,7 +870,7 @@ export const STORIES_PART2: RawStory[] = [
       "resignation": "kabulleniş"
     }
   },
-    {
+        {
     id: 'dracula',
     title: "Dracula",
     author: 'Bram Stoker',
@@ -981,7 +981,7 @@ export const STORIES_PART2: RawStory[] = [
       "battlement": "kale mazgalı"
     }
   },
-    {
+        {
     id: 'sherlock_holmes',
     title: "Sherlock Holmes",
     author: 'Arthur Conan Doyle',
@@ -990,7 +990,7 @@ export const STORIES_PART2: RawStory[] = [
     en: [
       "I stood by the window of our lodgings at 221B Baker Street, contemplating the melancholic fog that clung to the London skyline. My companion, Sherlock Holmes, sat enveloped in the deep armchair, his lean, hawk-like profile etched against the dim light of the afternoon. He had remained motionless for hours, submerged in his labyrinthine thoughts, while I idly observed the bustling street life below.",
       "Our tranquil existence was suddenly interrupted by a sharp, insistent ringing of the bell, signaling the arrival of a client. It was an unmistakable sound, echoing through the narrow staircase with a sense of urgency that seemed to pull Holmes from his profound introspection. His eyes, usually sharp and penetrating, flickered with a spark of renewed interest, for he lived for the intellectual stimulation of a challenging case.",
-      "A moment later, our housekeeper, Mrs. Hudson, entered the room, her expression reflecting a mixture of curiosity and apprehension. She ushered in a young woman who was visibly agitated, her hands trembling as she clutched her handbag.",
+      "A moment later, our housekeeper, Mrs. Hudson, entered the room, her expression reflecting a mixture of curiosity and apprehension. She ushered in a young woman who was visibly agitated, her hands trembling as she clutched her handbag. She introduced herself as Helen Stoner, possessing an air of frantic despair that immediately caught our attention.",
       "Helen Stoner, as she introduced herself, possessed an air of frantic despair that immediately commanded our attention. She was dressed in black, her face pale, and her eyes wide with the remnants of some unspeakable terror.",
       "Holmes gestured for her to be seated, his demeanor shifting instantly into one of calm, reassuring authority. He possessed an uncanny ability to dissect human emotion with the same surgical precision he applied to physical evidence, and it was evident that he recognized the gravity of her distress before she had uttered a single word of her plight.",
       "The young woman began her harrowing account, her voice barely a whisper that trembled in the quiet atmosphere of the sitting room. She spoke of her secluded home at Stoke Moran, a place shrouded in tragedy and ancestral decay, where she lived under the domineering shadow of her stepfather, Dr. Grimesby Roylott.",
@@ -1029,7 +1029,7 @@ export const STORIES_PART2: RawStory[] = [
       "Dingin varlığımız, aniden çalan keskin ve ısrarcı bir zil sesiyle kesildi; bu, bir müşterinin geldiğinin işaretiydi. Dar merdivenlerde yankılanan ve Holmes'u derin düşüncelerinden çekip çıkaran bir aciliyet hissi taşıyan, hatasız bir sesti. Genelde keskin ve delici olan gözleri, taze bir ilginin ışıltısıyla parladı, zira o, zorlu bir vakanın entelektüel uyarımıyla beslenirdi.",
       "Birkaç dakika sonra, kahyalarımızdan Bayan Hudson, merak ve tedirginliği yansıtan bir ifadeyle odaya girdi. Elindeki çantasını sıkıca kavrayan ve elleri titreyen, oldukça heyecanlı görünen genç bir kadını içeri buyur etti. Kendini Helen Stoner olarak tanıtan kadın, hemen dikkatimizi çeken, çılgınca bir umutsuzluk havasına sahipti.",
       "Siyahlar giymişti, yüzü bembeyazdı ve gözleri anlatılamaz bir dehşetin kalıntılarıyla kocaman açılmıştı. Holmes, oturması için işaret etti; tavrı anında sakin, güven verici bir otoriteye büründü.",
-      "İnsan duygularını, fiziksel kanıtlara uyguladığı cerrahi kesinlikle çözümleme konusunda esrarengiz bir yeteneğe sahipti ve dertlerini daha tek bir kelime bile etmeden önce yaşadığı sıkıntının ciddiyetini kavradığı belliydi.",
+      "İnsan duygularını, fiziksel kanıtlara uyguladığı cerrahi kesinlikle çözümleme konusunda esrarengiz bir yeteneğe sahipti ve dertlerini daha tek bir kelime bile etmeden önce yaşadığı sıkıntının ciddiyetini kavradığı belliydi. Holmes, sakin ve güven verici bir tavırla onu oturması için yönlendirdi.",
       "Genç kadın, oturma odasının sessizliğinde titreyen fısıltı gibi bir sesle, yürek parçalayıcı hikâyesini anlatmaya başladı. Stoke Moran'daki, trajedi ve atalardan kalma çürümüşlükle örtülü, üvey babası Dr. Grimesby Roylott'un baskıcı gölgesi altında yaşadığı tenha evinden bahsetti.",
       "Kendi yaklaşan düğününden sadece günler önce kız kardeşi Julia'nın gizemli ve ani ölümünü anlattığında, oda sanki uğursuz bir varlıkla buz kesti. İfadesi, gecenin bir yarısı duyulan garip bir ıslık sesini içeriyordu; bu detay Holmes'un keskin analitik zihnini harekete geçirdi. Bilimsel çıkarım ile doğaüstü olan arasındaki sınırların tehlikeli bir şekilde inceldiği karanlık bir gizemin eşiğinde durduğumuz çok açıktı.",
       "Helen Stoner, kız kardeşinin son gecesini çevreleyen tuhaf koşulları anlatırken sesi hafifçe titreyerek anlatmaya devam etti. O trajik akşama giden olayları, malikanenin kapı ve pencerelerinin içeriden kilitli olduğunu ve aşılmaz bir sessizlik kalesi yarattığını belirterek aktardı.",
@@ -1093,7 +1093,7 @@ export const STORIES_PART2: RawStory[] = [
       "catastrophic": "felaket dolu"
     }
   },
-    {
+        {
     id: 'odyssey',
     title: "The Odyssey",
     author: 'Homer',
@@ -1207,7 +1207,7 @@ export const STORIES_PART2: RawStory[] = [
       "steadfast": "sadık"
     }
   },
-    {
+        {
     id: 'jungle_book',
     title: "The Jungle Book",
     author: 'Rudyard Kipling',
@@ -1328,14 +1328,14 @@ export const STORIES_PART2: RawStory[] = [
       "interconnectedness": "birbirine bağlılık"
     }
   },
-    {
+        {
     id: 'snow_queen',
     title: "The Snow Queen",
     author: 'Hans Christian Andersen',
     level: 'C1',
     coverUrl: '/covers/snow_queen.webp',
     en: [
-      "Once upon a time, there was a wicked troll who felt immense delight in crafting a mirror with the power to distort reality. In this glass, everything beautiful and noble withered into insignificance, while the grotesque and repulsive were magnified to appear prominent.",
+      "In a dark corner of the world, a wicked troll took great delight in crafting a mirror with the power to distort reality. In this glass, everything beautiful and noble withered into insignificance, while the grotesque and repulsive were magnified to appear prominent.",
       "One day, this wretched artifact shattered into millions of tiny, jagged shards that scattered across the globe. These icy fragments posed a dire threat, for if a sliver pierced someone's eye, they would perceive only the flaws in everything, and if a piece settled in their heart, the organ would inevitably transform into a frozen lump of ice, devoid of all warmth and compassion.",
       "In a sprawling city, two children, Kay and Gerda, resided in attic apartments that overlooked a garden filled with vibrant roses. They were not related by blood, but their bond transcended the conventional definition of friendship; they cherished each other with the pure devotion of siblings.",
       "During the long, winter months, they spent hours sequestered indoors, reading fairy tales and tending to the blossoms that graced their window boxes. They found solace in the simple harmony of their existence, unaware that a malevolent force was silently drifting closer, carried upon the chilling gusts of a restless winter wind.",
@@ -1371,7 +1371,7 @@ export const STORIES_PART2: RawStory[] = [
       "Finally, she crossed the threshold into the great hall, a cathedral of ice where Kay sat, motionless and pale, attempting to arrange jagged geometric patterns of ice. He was oblivious to her presence, his mind locked in a silent, frozen stalemate. Gerda approached him, her heart thumping with a mixture of terror and overwhelming love, knowing that this final confrontation would determine their shared destiny."
     ],
     tr: [
-      "Bir zamanlar, gerçeği çarpıtma gücüne sahip bir ayna yapmaktan büyük zevk alan kötücül bir trolle varmış. Bu camda her güzel ve asil şey anlamını yitirip silinirken, grotesk ve itici olanlar ön plana çıkarılıp büyütülürdü.",
+      "Dünyanın karanlık bir köşesinde, gerçeği çarpıtma gücüne sahip bir ayna yapmaktan büyük zevk alan kötücül bir trol varmış. Bu camda her güzel ve asil olan şey solup önemsizleşirken, çirkin ve iğrenç olanlar ise belirgin görünecek şekilde büyütülüyormuş.",
       "Bir gün bu sefil eser, dünyanın dört bir yanına saçılan milyonlarca minik, keskin parçaya ayrıldı. Bu buzlu parçalar büyük bir tehlike arz ediyordu; çünkü bir kıymık birinin gözüne saplanırsa, kişi her şeydeki kusurları görürdü ve eğer bir parça kalbine yerleşirse, o organ kaçınılmaz olarak tüm sıcaklıktan ve şefkatten yoksun, donmuş bir buz kütlesine dönüşürdü.",
       "Büyük bir şehirde, Kay ve Gerda adındaki iki çocuk, rengarenk güllerle dolu bir bahçeye bakan çatı katı dairelerinde otururlardı. Kan bağıyla kardeş değillerdi ancak aralarındaki bağ, geleneksel arkadaşlık tanımını aşacak düzeydeydi; birbirlerini kardeşlerin saf bağlılığıyla severlerdi.",
       "Uzun kış ayları boyunca saatlerce içeride kapalı kalıp masallar okurlar ve pencere önlerindeki saksılarda açan çiçeklerle ilgilenirlerdi. Varlıklarının getirdiği basit uyumda huzur buluyorlardı; huzursuz bir kış rüzgarının soğuk esintileriyle taşınan kötücül bir gücün sessizce yaklaştıklarından habersizdiler.",
@@ -1439,7 +1439,7 @@ export const STORIES_PART2: RawStory[] = [
       "gale": "şiddetli fırtına"
     }
   },
-    {
+        {
     id: 'normal_people_c1',
     title: "Normal People",
     author: 'Sally Rooney',
@@ -1552,7 +1552,7 @@ export const STORIES_PART2: RawStory[] = [
       "formative": "biçimlendirici, oluşturucu"
     }
   },
-    {
+        {
     id: 'treasure_island',
     title: "Treasure Island",
     author: 'Robert Louis Stevenson',
@@ -1566,7 +1566,7 @@ export const STORIES_PART2: RawStory[] = [
       "Despite our growing trepidation, he paid his weekly board with gold coins, effectively binding us to his peculiar silence. My mother often urged my father to demand he leave, yet the Captain held an iron grip on our lives, his very shadow casting a pall over the inn as he waited for some impending, inevitable reckoning.",
       "One particularly dark and tempestuous afternoon, a man with a pale, sinister countenance, missing two fingers on his left hand, approached the inn. The stranger, who identified himself as Black Dog, cornered the Captain in the common room, leading to a violent and chaotic confrontation that shook the foundation of our inn. Swords were drawn, and the Captain’s face twisted into a mask of pure, unadulterated fury.",
       "In the ensuing struggle, furniture was splintered and the air was thick with the scent of gunpowder and desperation. Although Black Dog managed to escape into the gray mist, the Captain suffered a stroke, collapsing to the floor with a terrifying, hollow thud. It became glaringly obvious that his mysterious past had finally caught up with him, leaving us amidst the wreckage of a life defined by violence and buried secrets.",
-      "Following the violent confrontation with Black Dog, the Captain lingered in a precarious state, his health shattered by the stroke. Dr. Livesey arrived shortly after, his calm demeanor offering a stark contrast to the chaos that had just unfolded within our walls.",
+      "Following the violent confrontation with Black Dog, the Captain lingered in a precarious state, his health shattered by the stroke. Dr. Livesey arrived shortly after, his calm demeanor offering a stark contrast to the chaos that had just unfolded within our walls. After performing a bloodletting to ease the pressure on the Captain's veins, the doctor sternly warned him against excessive rum consumption.",
       "After performing a bloodletting procedure to relieve the pressure on the Captain's veins, the doctor sternly warned him against his excessive consumption of rum. He cautioned that such reckless behavior would inevitably result in another, perhaps fatal, stroke.",
       "The Captain, though physically weakened and prone to tremors, remained remarkably defiant, his eyes darting restlessly toward the window as if expecting further intrusion from his former associates. We were left to nurse him back to a fragile stability, yet the atmosphere within the Admiral Benbow remained heavy with the weight of unspoken threats and the lingering scent of danger.",
       "Tragedy struck our household shortly thereafter when my father succumbed to his long-standing illness and passed away. In the midst of our profound grief, the arrival of the blind beggar, Pew, shattered any semblance of peace. With his eerie tap-tapping cane echoing against the floorboards, he made his way toward the Captain, his sightless eyes masked by a sinister confidence.",
@@ -1607,7 +1607,7 @@ export const STORIES_PART2: RawStory[] = [
       "Çıkan arbedede mobilyalar parçalandı; hava barut kokusu ve çaresizlikle doldu. Black Dog gri sisin içine kaçmayı başarsa da, Kaptan bir felç geçirdi ve korkunç, boğuk bir gürültüyle yere yığıldı. Gizemli geçmişinin nihayet onu yakaladığı ve bizi şiddetle dolu, sırlar barındıran bir hayatın enkazıyla baş başa bıraktığı gün gibi açıktı.",
       "Black Dog ile yaşanan şiddetli çatışmanın ardından Kaptan, felcin yıprattığı sağlığıyla tehlikeli bir durumda hayata tutunmaya çalışıyordu. Doktor Livesey, kısa süre sonra gelerek duvarlarımızın arasında yaşanan kaosa karşı sakin tavrıyla keskin bir tezat oluşturdu. Kaptanın damarlarındaki baskıyı hafifletmek için bir kan aldırma işlemi uyguladıktan sonra, doktor onu aşırı rom tüketimine karşı sert bir dille uyardı.",
       "Böylesine düşüncesiz bir davranışın kaçınılmaz olarak bir başka, belki de ölümcül bir felce yol açacağı konusunda ikazda bulundu. Fiziksel olarak zayıflamış ve titremelere yatkın olsa da Kaptan oldukça küstah kalmaya devam etti; gözleri, eski suç ortaklarından gelebilecek yeni bir müdahaleyi beklermişçesine huzursuzca pencereye kayıyordu.",
-      "Onu kırılgan bir dengeye geri döndürmekle baş başa kalmıştık ancak Admiral Benbow'un içindeki hava, dile getirilmemiş tehditlerin ağırlığı ve tehlikenin üzerimize sinen kokusuyla hâlâ ağırdı.",
+      "Kaptan, fiziksel olarak zayıflamış ve titremeye yatkın olmasına rağmen, gözlerini eski ortaklarından yeni bir saldırı bekler gibi huzursuzca pencereye çevirerek son derece meydan okuyan bir tavır sergiledi. Onu kırılgan bir dengeye geri döndürmekle baş başa kalmıştık ancak Admiral Benbow'un içindeki hava, dile getirilmemiş tehditlerin ağırlığı ve tehlikenin üzerimize sinen kokusuyla hâlâ ağırdı.",
       "Kısa bir süre sonra babamın uzun süredir devam eden hastalığına yenik düşüp hayatını kaybetmesiyle hanımız büyük bir felaketle sarsıldı. Derin yasımızın ortasında, kör dilenci Pew'in gelişi kalan huzurumuzu da paramparça etti. Ürkütücü bir ses çıkaran asasının tıkırtıları yer döşemelerinde yankılanırken, görmeyen gözlerini uğursuz bir güvenle gizleyerek Kaptana doğru ilerledi.",
       "Kaptanın eline buruşmuş bir kağıt parçası, yani korsan tayfasından gelen kesin bir ültimatom olan korkunç Kara Leke'yi sıkıştırdı.",
       "Zaten çelimsiz olan ve geçmişinin ağırlığı altında sarsılan Kaptan, mesajı okur okumaz aniden yere yığıldı; kalbi ani dehşet dalgasına dayanamamıştı. Ölümü bizi çaresiz bir duruma sürükledi; korsan tayfasının deniz sandığının içindekileri talep etmek için evimize geleceği kesindi ve bizi önümüzde duran tehlikeli yolda tek başımıza bıraktı.",
@@ -1668,7 +1668,7 @@ export const STORIES_PART2: RawStory[] = [
       "inexorably": "kaçınılmaz bir şekilde"
     }
   },
-    {
+        {
     id: 'elves_shoemaker',
     title: "The Elves and the Shoemaker",
     author: 'Brothers Grimm',
@@ -1738,7 +1738,7 @@ export const STORIES_PART2: RawStory[] = [
       "gesture": "jest"
     }
   },
-    {
+        {
     id: 'emperors_clothes',
     title: "The Emperor's New Clothes",
     author: 'Hans Christian Andersen',
@@ -1806,7 +1806,7 @@ export const STORIES_PART2: RawStory[] = [
       "vanity": "kibir"
     }
   },
-    {
+        {
     id: 'happy_prince',
     title: "The Happy Prince",
     author: 'Oscar Wilde',
@@ -1878,7 +1878,7 @@ export const STORIES_PART2: RawStory[] = [
       "trash": "çöp"
     }
   },
-    {
+        {
     id: 'wind_willows',
     title: "The Wind in the Willows",
     author: 'Kenneth Grahame',
@@ -1951,7 +1951,7 @@ export const STORIES_PART2: RawStory[] = [
       "identity": "kimlik"
     }
   },
-    {
+        {
     id: 'secret_garden',
     title: "The Secret Garden",
     author: 'Frances Hodgson Burnett',
@@ -2022,7 +2022,7 @@ export const STORIES_PART2: RawStory[] = [
       "sickness": "hastalık"
     }
   },
-    {
+        {
     id: 'heidi',
     title: "Heidi",
     author: 'Johanna Spyri',
@@ -2092,7 +2092,7 @@ export const STORIES_PART2: RawStory[] = [
       "slopes": "yamaçlar"
     }
   },
-    {
+        {
     id: 'little_prince',
     title: "The Little Prince",
     author: 'Antoine de Saint-Exupéry',
@@ -2165,7 +2165,7 @@ export const STORIES_PART2: RawStory[] = [
       "fragile": "kırılgan"
     }
   },
-    {
+        {
     id: 'christmas_carol',
     title: "A Christmas Carol",
     author: 'Charles Dickens',
@@ -2237,7 +2237,7 @@ export const STORIES_PART2: RawStory[] = [
       "generosity": "cömertlik"
     }
   },
-    {
+        {
     id: 'around_world',
     title: "Around the World in Eighty Days",
     author: 'Jules Verne',
@@ -2309,7 +2309,7 @@ export const STORIES_PART2: RawStory[] = [
       "locomotive": "lokomotif"
     }
   },
-    {
+        {
     id: 'time_machine',
     title: "The Time Machine",
     author: 'H. G. Wells',
@@ -2337,10 +2337,10 @@ export const STORIES_PART2: RawStory[] = [
       "Ayağa kalktı ve odanın bir köşesine yürüyerek küçük, karmaşık bir modeli ortaya çıkardı. Fildişi, kristal ve pirinçten yapılmıştı ve lamba ışığı altında parlak bir şekilde parlıyordu. Bu minyatür makine, laboratuvarında inşa ettiği daha büyük makinenin mükemmel bir kopyasıydı. Dikkatli elleriyle modeli masaya koydu ve konuklarını incelemeye davet etti. Hassas parçalara dokundular ve işçiliğe hayran kaldılar, ancak gerçek amacı konusunda hala şüpheliydiler. Zaman Yolcusu daha sonra cihaz üzerindeki küçük bir kolu itti. Makine anında bulanıklaştı ve gözden kaybolarak havada sadece hafif, parıldayan bir iz bıraktı. Arkadaşları şaşkınlıktan sessizliğe gömüldüler; bu kadar katı bir şeyin gözlerinin önünde nasıl olup da yokluğa karıştığını kavrayamadılar.",
       "Konuklar birbirlerine şaşkınlıkla baktılar, ancak Zaman Yolcusu onların kafa karışıklığını görmezden gelerek onları laboratuvarına götürdü. Orada, az önce gördükleri modelin daha büyük ve daha karmaşık bir versiyonu olan gerçek makineyi ortaya çıkardı. Bir koltuğu ve birkaç kolu olan, hem kırılgan hem de güçlü görünen tuhaf, metalik bir yapıydı. Nihayet bitirdiğini ve geleceğe seyahat ederek onu test etmeyi amaçladığını açıkladı. İnanılmaz yolculuğuna rağmen sesi sabit, sakin bir yoğunlukla konuştu. Arkadaşları, onu kısa süre içinde bildikleri dünyanın sınırlarının ötesine ve zamanın uçsuz bucaksız, bilinmeyen derinliklerine taşıyacak olan bu cihazın önünde dururken korku ve heyecanı aynı anda hissettiler.",
       "Zaman Yolcusu, tehlikeli bir heyecanla parlayan gözleriyle misafirlerine döndü. Modelin kaybolmasının ardından, büyük makineyi ilk yolculuğu için nihayet hazırladığını açıkladı. Laboratuvar, saatin tıkırtısı ve gergin arkadaşlarının düzenli nefes alışverişleri dışında sessizdi. Eyerin üzerine nasıl çıktığını, kolları elleriyle sıkıca kavradığını anlattı. Kalbi göğüs kafesinde kapana kısılmış bir kuş gibi çarpıyordu ama kararlılığı sarsılmamıştı. Parmaklarının altındaki soğuk metali hissederek çubuğu ayarladı ve derin bir nefes aldı. Kesin bir hareketle, başlatma kolunu kendine doğru çekti ve dünya tarihinde hiçbir insanın daha önce denemeye cesaret edemediği bir deneyim için kendini hazırladı.",
-      "Aniden düşme hissi başladı; midesini bulandıran, baş döndürücü bir hareket. Etrafındaki oda titredi, duvarlar esneyerek imkansız renklerden oluşan gri bir lekeye dönüştü. Gece ve gündüz, insan zihninin zar zor işleyebileceği bir hızda oynatılan bir film gibi, çılgın ve kör edici bir sırayla önünden geçip gitti. Sanki karanlık, sonu gelmez bir tünelden çekiliyormuş gibi hissetti; gerçekliğin dokusu bile bu ilerleyişin baskısı altında bükülüp inliyordu. Laboratuvar kayboldu ve yerini zamanın kendi kaotik hareketine bıraktı. On dokuzuncu yüzyılı geride bırakarak hızla ileriye atıldı. O, bilinmeze doğru gidecek hiçbir haritası olmayan, yüzyıllardan oluşan uçsuz bucaksız, korkutucu bir okyanusta bir öncüydü.",
+      "Aniden düşme hissi başladı; midesini bulandıran, baş döndürücü bir hareket. Etrafındaki oda titredi, duvarlar esneyerek imkansız renklerden oluşan gri bir lekeye dönüştü. Gece ve gündüz, insan zihninin zar zor işleyebileceği bir hızda oynatılan bir film gibi, çılgın ve kör edici bir sırayla önünden geçip gitti. Sanki karanlık, sonu gelmez bir tünelden çekiliyormuş gibi hissetti; gerçekliğin dokusu bile bu ilerleyişin baskısı altında bükülüp inliyordu. Laboratuvar kayboldu ve yerini zamanın kendi kaotik hareketine bıraktı, on dokuzuncu yüzyılı geride bırakarak hızla ileriye atıldı. O, bilinmeze doğru gidecek hiçbir haritası olmayan, yüzyıllardan oluşan uçsuz bucaksız, korkutucu bir okyanusta bir öncüydü.",
       "Dünyanın nefes kesici bir hızla değiştiğini izlerken algısı değişti. Güneş, gözlerini acıtan bir bulanıklık içinde doğup batan bir ateş çizgisine dönüştü; ay ise sönen bir mum gibi titriyordu. O kadar hızlı hareket ediyordu ki yıldızların tekil hareketleri parlayan bir ışık denizinde kayboluyordu. Her geçen saniyeyle evinden daha da uzaklaştığını bilmenin getirdiği derin bir yalnızlık hissetti. Korku merakıyla yarışmaya başladı ancak makineyi durdurmaya cesaret edemedi. Kendini bu yolculuğa adamıştı ve artık geri dönüş yoktu. Kalan gücünü kontrollere odakladı, zamanın nihayet yavaşlayıp gizli sırlarını açığa çıkaracağı anı bekledi.",
       "Makinenin hızı kritik bir noktaya ulaştığında dünya garip, hayaletimsi bir manzaraya bürünmeye başladı. Güneşin ve yıldızların çılgın hareketi düzenli bir ritme dönüştü ve zamanın korkutucu bulanıklığı silinip gitti. Ani ve sarsıcı bir duruşla makine yeşil bir çim alana çarptı ve Zaman Yolcusu'nu ileri doğru fırlattı. Toprağın soğuk dokunuşunu ellerinde hissetti ve sonunda varış noktasına ulaştığını anladı. Hava taze ve tatlıydı, alışılmadık çiçek kokularıyla doluydu ve yakınlarda devasa beyaz bir yapı duruyordu. Çağlar boyu süren şiddetli yolculuktan dolayı ağrıyan vücudunu toparlamak için bir an durdu ve bu yeni, sessiz dünyaya temkinli bir hayranlıkla baktı.",
-      "Manzara huzurlu görünüyordu; yumuşak, altın sarısı bir ışığın altında ufka doğru uzanan gür bir bahçe gibiydi. Bir grup yaratık ona yaklaştı; dış görünüşleri hafif ve zarifti, dökümlü giysiler içinde küçük, narin insanlara benziyorlardı. Londra'da geride bıraktığı endüstriyel mücadelenin hiçbir izini taşımadıkları için insanlığın geleceğine dair beklediği şey kesinlikle bu değildi. Gözleri büyük ve yumuşaktı; derin bir zekadan veya kötülükten ziyade nazik, çocuksu bir merak yansıtıyorlardı. Yavaşça ayağa kalktı, kıyafetlerindeki tozları çırptı ve rahatlama ile karışık bir şaşkınlık hissetti. Buranın bir ilerleme yeri değil, belki de çok daha basit bir yer olduğunu anladı.",
+      "Manzara huzurlu görünüyordu; yumuşak, altın sarısı bir ışığın altında ufka doğru uzanan gür bir bahçe gibiydi. Bir grup yaratık ona yaklaştı; dış görünüşleri hafif ve zarifti, dökümlü giysiler içinde küçük, narin insanlara benziyorlardı. Londra'da geride bıraktığı endüstriyel mücadelenin hiçbir izini taşımadıkları için insanlığın geleceğine dair beklediği şey kesinlikle bu değildi. Gözleri büyük ve yumuşaktı; derin bir zekadan veya kötülükten ziyade nazik, çocuksu bir merak yansıtıyorlardı. Yavaşça ayağa kalktı, kıyafetlerindeki tozları çırptı ve rahatlama ile karışık bir şaşkınlık hissetti. Buranın bir ilerleme yeri değil, belki de çok daha basit bir yer olduğunu anladı. Bulutlardan düşmüş garip ama zararsız bir oyuncakmış gibi gülümseyerek makineme dokunmak için uzandılar.",
       "Onlarla temel jestleri ve basit kelimeleri kullanarak iletişim kurmaya çalıştı, ancak onlar sadece güldüler ve ona güzel çiçeklerden taçlar sundular. Dilleri melodik ve yumuşaktı, kendi ana dilinin keskin ve karmaşık seslerinden yoksundu. Çaba ve hırsın ağır yüklerini tamamen terk etmiş bir toplumu gözlemliyormuş gibi tuhaf bir huzursuzluk duymaya başladı. Bu insanlar görünürde işin olmadığı, fabrikaların bulunmadığı ve görünüşe göre kaygının hiç olmadığı bir dünyada yaşıyorlardı. Çocuklar arasında bir dev, çatışma ve tarih dolu bir adam, ebedi ve tembel bir yaz diyarına inmiş gibi hissediyordu. Gördüğü misafirperverliğe rağmen makinesini göz hapsinde tuttu, çünkü böylesine bilinmeyen bir gelecekte hiçbir şeyin çantada keklik olmadığını biliyordu.",
       "Güneş ufkun altına inmeye başladığında, Zaman Yolcusu makinesini bıraktığı yerde görmeyi bekleyerek arkasına döndü. Dehşet içinde, alanın boş olduğunu gördü. Makinenin sadece yeni arkadaşları tarafından taşınmış olduğunu umarak alanı ararken damarlarında panik dolaştı. Nazik insanlara sorular sordu ancak onlar sadece boş ve şaşkın ifadelerle geri baktılar; onun yoğun sıkıntısını anlama yetisinden yoksun görünüyorlardı. Gerçek, fiziksel bir darbe gücüyle onu çarptı: bu uzak gelecekte mahsur kalmıştı. Kendi zamanına olan bağı yok olmuş, onu tehlikenin veya durumunun ciddiyetinin farkında olmayan, rüya benzeri bir durumda yaşayan bu kırılgan, çocuksu varlıkların arasında bırakmıştı.",
       "Yakındaki çalıların ve taş yapıların her köşesini aradı, kalbi çaresizlik içinde kaburgalarına çarpıyordu. Uzaklarda sessiz monolitler gibi duran gizemli, penceresiz kulelere doğru giden yumuşak topraktaki silik izleri fark etti. Makinenin o heybetli duvarların içine çekilmiş olduğuna dair soğuk ve karanlık bir şüphe zihninde büyümeye başladı. Eloi adını verdiği bu nazik yaratıklar karanlıktan korkuyor, gece çökmeden önce yüksek yatakhanelerine sığınıyorlardı. Dünyanın göründüğü kadar huzurlu olmadığını fark etti. Bu cennetin henüz keşfetmediği gizli ve uğursuz bir yanı vardı ve eve dönüş yolunun ortadan kaybolması, zemine yayılmaya başlayan gölgelerle açıkça bağlantılıydı.",
@@ -2382,7 +2382,7 @@ export const STORIES_PART2: RawStory[] = [
       "bloated": "şişkin"
     }
   },
-    {
+        {
     id: 'white_fang',
     title: "White Fang",
     author: 'Jack London',
@@ -2395,10 +2395,6 @@ export const STORIES_PART2: RawStory[] = [
       "Deep within the frozen expanse of the Canadian wilderness, the she-wolf and her mate moved with quiet purpose. The air was thick with the scent of survival, and the landscape was a harsh, unforgiving world of white. As they traveled, the male wolf—a large, scarred creature known as One Eye—stayed close to his partner. He was an experienced hunter, having survived many bitter winters in the north. The she-wolf, while also wild, moved with a strange grace that hinted at a past connection to human settlements. They navigated the dense forests and icy streams with instinct as their only guide, searching for a place where they could find shelter and food, far from the watchful eyes of the other wolves that had trailed the human sled team.",
       "The search for a perfect den began as the season shifted toward the arrival of spring. They explored rocky hills and deep ravines, looking for a location that offered safety from predators and protection from the elements. Finally, they discovered a hidden cave tucked away on the side of a steep cliff. It was a dark and secure hollow, shielded by thick pines and difficult for any intruder to reach. The she-wolf immediately began to prepare the space, cleaning it and making it comfortable for the future. Her movements were careful and deliberate, driven by a powerful natural urge to create a sanctuary where life could begin. One Eye watched her, providing a sense of security while he remained alert to the dangers lurking in the woods.",
       "Days turned into weeks as they settled into their secluded home. The she-wolf became increasingly withdrawn, her body changing as she prepared for the arrival of her cubs. She grew more protective, and the quiet cave became the center of their existence. While the wilderness outside remained hostile and unpredictable, inside the den, there was a sense of calm anticipation. One Eye continued to hunt for them, bringing back fresh game to keep his mate strong. The bond between them had deepened, turning from a simple partnership into a dedicated alliance built on the necessity of survival. Deep in the heart of the great North, the stage was set for a new chapter of life to emerge within the silence of the ancient, frozen forest.",
-      "turkish_paragraphs",
-      "Kanada vahşi doğasının donmuş genişliklerinin derinliklerinde, dişi kurt ve eşi sessiz bir amaçla ilerliyorlardı. Hava, hayatta kalma kokusuyla doluydu ve manzara, beyazın hüküm sürdüğü acımasız ve affetmez bir dünyaydı. İlerlerken, Tek Göz olarak bilinen büyük, yaralı bir yaratık olan erkek kurt, partnerinin yakınında kaldı. O, kuzeydeki birçok sert kışı atlatmış, deneyimli bir avcıydı. Dişi kurt ise her ne kadar vahşi olsa da, geçmişteki insan yerleşimlerine dair bir bağlantıyı anımsatan garip bir zarafetle hareket ediyordu. Sık ormanların ve buzlu akarsuların arasından, rehberleri olarak sadece içgüdüleriyle, insan kızak takımını takip eden diğer kurtların dikkatli gözlerinden uzak, sığınak ve yiyecek bulabilecekleri bir yer arayarak ilerlediler.",
-      "Mükemmel bir in arayışı, mevsim baharın gelişine doğru kayarken başladı. Yırtıcılardan ve doğa olaylarından korunma sağlayacak güvenli bir yer arayarak kayalık tepeleri ve derin vadileri keşfettiler. Sonunda, dik bir yamacın kenarına gizlenmiş bir mağara keşfettiler. Burası, sık çam ağaçlarıyla çevrili, herhangi bir davetsiz misafirin ulaşması zor, karanlık ve güvenli bir kovuktu. Dişi kurt vakit kaybetmeden alanı temizleyerek ve gelecekteki yavruları için rahat hale getirerek alanı hazırlamaya başladı. Hareketleri, yaşamın başlayabileceği bir sığınak yaratmaya yönelik güçlü ve doğal bir dürtüyle hareket ettiği için dikkatli ve kararlıydı. Tek Göz onu izlerken, ormanda pusuda bekleyen tehlikelere karşı tetikte kalarak ona bir güvenlik duygusu sağlıyordu.",
-      "Gözlerden uzak yuvalarına yerleşirken günler haftalara dönüştü. Dişi kurt, yavrularının gelişine hazırlanırken vücudu değiştikçe giderek daha içine kapandı. Daha korumacı bir hale geldi ve sessiz mağara, varlıklarının merkezi haline geldi. Dışarıdaki vahşi doğa düşmanca ve öngörülemez kalmaya devam ederken, inin içinde sakin bir bekleyiş vardı. Tek Göz, eşini güçlü tutmak için taze avlar getirerek onlar için avlanmaya devam etti. Aralarındaki bağ güçlenmiş, basit bir ortaklıktan hayatta kalma zorunluluğu üzerine kurulu sadık bir ittifaka dönüşmüştü. Büyük Kuzey'in kalbinin derinliklerinde, kadim ve donmuş ormanın sessizliği içinde yeni bir yaşam bölümünün ortaya çıkması için zemin hazırlanmıştı.",
       "The transition of the seasons brought life into the dim cave. Five small, squeaking balls of fur appeared one by one, huddled together for warmth against the bitter northern cold. Among these newborns, there was one that stood out, possessing a gray coat that seemed to capture the faint light filtering through the entrance. This little survivor was White Fang. His eyes, though tightly closed at first, were destined to see a world defined by the struggle for survival. He spent his early days nursing and sleeping in the dark safety of the den, completely unaware of the vast, harsh wilderness that waited just beyond the rocky walls of his first home.",
       "The mother-wolf became the center of the little creature's world. She was patient and fierce, guarding her litter from any perceived danger with a low, threatening growl. Life in the den was defined by the scent of the mother, the warmth of the fur, and the instinctual need for food. White Fang’s brothers and sisters were his first companions in play, though their games were often brief and clumsy. As they grew stronger, their world began to expand beyond the immediate vicinity of their mother. The dark cave, once a sanctuary, started to feel smaller as their curiosity began to push them toward the bright, inviting opening of the entrance.",
       "Outside the cave, the world was a sensory explosion of light, sound, and smell. White Fang took his first wobbly steps into the sunlight, squinting against the harsh glare of the northern spring. Every scent was a new mystery, and every rustle of dry leaves triggered a sudden, instinctive fear of the unknown. He learned that the world was not just the comfortable darkness of the cave but a place of danger and constant movement. His mother watched him with intense focus, knowing that his path would be difficult. Under her watchful gaze, the small wolf began to explore the edges of his life, taking his very first steps toward becoming a creature of the wild.",
@@ -2455,7 +2451,7 @@ export const STORIES_PART2: RawStory[] = [
       "savage": "vahşi, ilkel"
     }
   },
-    {
+        {
     id: 'call_wild',
     title: "The Call of the Wild",
     author: 'Jack London',
@@ -2527,7 +2523,7 @@ export const STORIES_PART2: RawStory[] = [
       "bond": "bağ"
     }
   },
-    {
+        {
     id: 'don_quixote',
     title: "Don Quixote",
     author: 'Miguel de Cervantes',
@@ -2552,7 +2548,7 @@ export const STORIES_PART2: RawStory[] = [
     ],
     tr: [
       "La Mancha'nın bir köyünde, adını hatırlamak istemediğim bir yerde, yakın zamana kadar, raflarında bir mızrak, eski bir kalkan, zayıf bir at ve avcılık için bir tazı bulunduran soylulardan biri yaşardı. Beslenme düzeni koyun etinden ziyade sığır eti içeren bir yemekten, çoğu gece bir salatadan, cumartesileri atıştırmalıklardan ve cumaları mercimekten oluşuyordu. Gelirinin büyük kısmını bu tür önemsiz şeylere harcasa da ağırbaşlı bir hava takınırdı. Evi, kırk yaşını geçmiş bir kâhya, yirmi yaşına henüz basmamış bir yeğen ve hem atı eyerleyebilen hem de bahçedeki budama bıçağını kullanabilen genç bir çocuktan oluşuyordu. Beyefendi elli yaşlarına yaklaşıyordu; teni kurumuş, yüzü zayıf, kafası seyrek saçlıydı ve sabahları erken kalkan, avcılığa düşkün biriydi.",
-      "Bu beyefendinin yaşı elli sınırındaydı; dayanıklı bir yapıda, zayıf ve çökük yüzlüydü. Soyadının Quixada mı yoksa Quesada mı olduğu konusunda yazarlar arasında görüş ayrılıkları olsa da, boş vakitlerini saplantılı bir şekilde şövalyelik kitapları okuyarak geçiriyor, sonunda malikanesini ve görevlerini ihmal ederek iflasın eşiğine geliyordu. Hayal gücü; bu ciltlerde anlatılan büyücülük, savaşlar, meydan okumalar ve imkânsız başarılarla o kadar dolmuştu ki, okuduğu her kurguyu mutlak gerçek olarak kabul ediyordu. Onun için dünyadaki hiçbir tarih, bu masalların sayfaları arasında güneş batışından doğuşuna kadar vakit geçirip hem uykusunu hem de aklını aynı anda kaybettiği için daha gerçekçi değildi.",
+      "Bu beyefendinin yaşı elli sınırındaydı; dayanıklı bir yapıda, zayıf ve çökük yüzlüydü, çok erken kalkan biriydi ve büyük bir sporcuydu. Konu üzerine yazmış olanlar arasında görüş ayrılıkları olsa da, soyadının Quixada mı yoksa Quesada mı olduğunu söylerler. Ancak, boş vakitlerini saplantılı bir şekilde şövalyelik kitapları okuyarak geçiriyor, sonunda malikanesini ve görevlerini ihmal ederek iflasın eşiğine geliyordu. Hayal gücü; bu ciltlerde anlatılan büyücülük, savaşlar, meydan okumalar ve imkânsız başarılarla o kadar dolmuştu ki, okuduğu her kurguyu mutlak gerçek olarak kabul ediyordu. Onun için dünyadaki hiçbir tarih, bu masalların sayfaları arasında güneş batışından doğuşuna kadar vakit geçirip hem uykusunu hem de aklını aynı anda kaybettiği için daha gerçekçi değildi.",
       "Böylece, uykusuzluk ve aşırı okumadan beyni kurudu ve akıl sağlığını tamamen yitirdi. Zihninde tuhaf bir fikir filizlendi: Hem kendi şöhreti hem de ülkesine hizmet etmek için bir şövalye olup, maceralar aramak üzere tam teçhizatlı at sırtında dünyayı dolaşmanın onurlu ve gerekli olacağına karar verdi. Her türlü haksızlığı gidermeye ve sonunda ona ebedi zafer kazandıracak tehlikelere göğüs germeye yemin etti. Halihazırda hezeyan içinde olan zavallı adam, vizyonlarını gerçeğe dönüştürmek için acele etti. İlk olarak, uzun zamandır bir köşede pas ve küf içinde duran büyükbabasından kalma zırhını temizledi. Onu elinden geldiğince parlattıktan sonra hasarlarını onardı ve herhangi bir darbenin gücüne dayanabileceğini umarak basit karton ve tellerden kapalı bir miğfer yaptı.",
       "Geçici miğferini tamamladıktan sonra Don Quixote, dikkatini yorgun ve cılız atı Rocinante'ye çevirdi. Böylesine soylu bir binek hayvanına layık bir isim üzerinde tartışarak dört gün geçirdi ve sonunda kulağa yüksek sınıftan ve yankı uyandıran bir isimde karar kıldı. Unvan belirlenince, odak noktasını kendine çevirdi ve kadim şövalyelerin ihtişamını çağrıştıracak, saygı uyandıracak bir isim seçmek için sekiz gün harcadı. Yerel mirasından ve şövalyelik geleneklerinden esinlenerek, bu unvanın soyuna ölümsüz bir ün getireceğine yürekten inanarak kendini La Mancha'lı Don Quixote ilan etti. Hem ekipmanının hem de kimliğinin bu dönüşümü, sessiz bir beyefendi olarak geçmiş hayatının yok olduğu, yerini artık anlamadığı bir dünyayla yüzleşmeye hazır bir gezgin şövalyenin ateşli hırsına bıraktığı kesin bir anı işaret ediyordu.",
       "Bir sonraki görevi, gelecekteki zaferlerini adayabileceği bir hanımefendi bulmaktı; zira aşk ilgisi olmayan bir gezgin şövalye, meyvesiz bir ağaç veya ruhsuz bir beden gibiydi. Daha önce uzaktan hayranlık duyduğu ama kendisinin asla farkında olmadığı Aldonza Lorenzo adındaki sağlam ve mütevazı bir köylü kızını hatırladı. Ona daha zarif ve saray adabına uygun bir isim vermeye karar verdi: Dulcinea del Toboso. Zihninde o, eşsiz güzellikte ve zarafette bir prenses, hizmetine layık kraliçeler gibi bir figürdü. Sanrılarını ona yansıttı ve onun, çıktığı seferlerin ruhani temelini oluşturacağına ve tozlu kitaplarında okuyarak uykusuz geceler geçirdiği şövalyelik bağlılığı idealini temsil edeceğine inandı.",
@@ -2598,7 +2594,7 @@ export const STORIES_PART2: RawStory[] = [
       "catalyst": "katalizör (sebep olan şey)"
     }
   },
-    {
+        {
     id: 'moby_dick',
     title: "Moby Dick",
     author: 'Herman Melville',
@@ -2669,7 +2665,7 @@ export const STORIES_PART2: RawStory[] = [
       "drifting": "sürüklenen"
     }
   },
-    {
+        {
     id: 'hunchback_notredame',
     title: "The Hunchback of Notre Dame",
     author: 'Victor Hugo',
@@ -2685,7 +2681,6 @@ export const STORIES_PART2: RawStory[] = [
       "As the festival dissipated into the cold night air, Quasimodo was forcibly led away by Frollo, his heart heavy with a peculiar, lingering ache that transcended his physical suffering. The Archdeacon remained silent, his steps deliberate and ominous as they navigated the labyrinthine streets surrounding the cathedral. Quasimodo, burdened by the internal conflict of his master's harsh command and the fleeting warmth he had felt during the day, stumbled in the shadows. He could not comprehend the dark vortex of emotions swirling within Frollo, nor the reason for the sudden shift in his guardian's demeanor. The priest’s silence was a suffocating shroud, a stark contrast to the boisterous energy of the square, leaving the hunchback to dwell in his own profound, wordless confusion.",
       "Upon reaching the sanctuary of the cathedral, Frollo’s restraint finally fractured, revealing the turmoil he had desperately tried to conceal. His gaze, once cold and clinical, now burned with a feverish intensity that terrified his servant. He paced beneath the high, vaulted ceilings, his shadow elongating across the sacred floor like a monstrous specter. Frollo began to mutter fragmented prayers and curses, his thoughts fixated upon the girl whose dance had disrupted his rigid, ascetic existence. The stone gargoyles seemed to watch the scene with mocking indifference, while Quasimodo stood frozen, a silent witness to the unraveling of a man he had previously perceived as an immovable pillar of divine authority and absolute, unwavering moral certainty.",
       "The air in the cathedral grew heavy with the weight of unvoiced secrets and dangerous intentions. Frollo suddenly stopped his frantic pacing, turning his hollow, piercing eyes toward the hunchback with a look of desperate, possessive hunger. He commanded Quasimodo to watch the square with heightened vigilance, specifically tasking him to track the movements of the young dancer who had captivated his soul. The bell-ringer, bound by a lifetime of obedience and fear, agreed without question, though a flicker of protective instinct stirred deep within him. He did not yet understand the malice fueling his master’s request, nor the tragic fate that awaited them all. Behind them, the great bells of Notre Dame remained silent, as if anticipating the storm that would soon consume the city of Paris.",
-      "turkish_paragraphs",
       "The atmosphere within the dim, suffocating walls of the cathedral turned increasingly volatile as Claude Frollo’s obsession with Esmeralda deepened into a chaotic madness. He spent his nights pacing the cold flagstones, haunted by the memory of her rhythmic movements and the sound of her tambourine. Quasimodo, trapped between his burgeoning loyalty to the girl and his ingrained servitude to the priest, watched his master descend into a dark, psychological abyss. Frollo no longer cared for the scriptures or the spiritual duties of his office; his singular focus had shifted entirely toward the procurement of the young woman. He treated the sanctuary like a prison, contemplating the sinister mechanisms he might employ to drag her from the safety of her sanctuary and into the suffocating grip of his own desires.",
       "Outside the cathedral, the city of Paris was unaware of the tragedy unfolding within its holiest walls. The commoners continued their lives, blissfully ignorant of the archdeacon’s perversion and the hunchback’s internal struggle. However, the tension inside was reaching a critical breaking point. Frollo’s erratic behavior culminated in a desperate attempt to manipulate the legal and religious authorities against the dancer. He used his immense influence to paint her as a sorceress, weaving a web of lies that would ultimately seal her fate. He viewed her rejection of him not as a simple lack of affection, but as a direct affront to God, justifying his pursuit through a lens of twisted piety that masked his own base, human failings and violent, unbridled impulses.",
       "As the final preparations were made for the assault on the dancer's sanctuary, the cathedral seemed to groan in protest. Quasimodo, recognizing that the threat against Esmeralda was imminent, found his voice for the first time in years. He attempted to defy Frollo, his heart heavy with the weight of impending destruction. The hunchback understood that the man he had once considered a father figure had become a monster fueled by unrequited longing and religious zealotry. Despite his efforts to shield her, the trap had been firmly set. The stone gargoyles watched from their high perches, silent observers to the impending clash between human morality and the raw, destructive forces of obsession that threatened to tear both the cathedral and the protagonists apart before the dawn arrived.",
@@ -2741,7 +2736,7 @@ export const STORIES_PART2: RawStory[] = [
       "annals": "yıllıklar/tarih kayıtları"
     }
   },
-    {
+        {
     id: 'dorian_gray',
     title: "The Picture of Dorian Gray",
     author: 'Oscar Wilde',
@@ -2814,7 +2809,7 @@ export const STORIES_PART2: RawStory[] = [
       "hideous": "çirkin, iğrenç"
     }
   },
-  {
+      {
     id: 'anne_green_gables',
     title: "Anne of Green Gables",
     author: 'Lucy Maud Montgomery',
@@ -2883,9 +2878,8 @@ export const STORIES_PART2: RawStory[] = [
       "insult": "hakaret",
       "appearance": "dış görünüş"
     }
-  }
-,
-  {
+  },
+      {
     id: 'little_women',
     title: "Little Women",
     author: 'Louisa May Alcott',
@@ -2955,9 +2949,8 @@ export const STORIES_PART2: RawStory[] = [
       "modesty": "alçakgönüllülük",
       "dignity": "onur"
     }
-  }
-,
-  {
+  },
+      {
     id: 'pollyanna',
     title: "Pollyanna",
     author: 'Eleanor H. Porter',
@@ -3026,9 +3019,8 @@ export const STORIES_PART2: RawStory[] = [
       "heartbroken": "kalbi kırılmış/çok üzgün",
       "concern": "endişe/ilgi"
     }
-  }
-,
-  {
+  },
+      {
     id: 'pride_prejudice',
     title: "Pride and Prejudice",
     author: 'Jane Austen',
@@ -3099,9 +3091,8 @@ export const STORIES_PART2: RawStory[] = [
       "mortifying": "küçük düşürücü",
       "disdainful": "küçümseyici"
     }
-  }
-,
-  {
+  },
+      {
     id: 'war_of_worlds',
     title: "The War of the Worlds",
     author: 'H. G. Wells',
@@ -3122,8 +3113,7 @@ export const STORIES_PART2: RawStory[] = [
       "Upon reaching Leatherhead, we found that even this distant town was not immune to the pervasive dread. Rumors of further cylinders landing across the county had already arrived, fueling the hysteria of the local inhabitants. The sense of security I had hoped to find quickly evaporated, replaced by the grim realization that there was nowhere truly safe in this rapidly changing world. My wife clung to me, her eyes wide with fear, as we listened to the frantic accounts of refugees who had seen the Martians marching across the horizon. We were mere spectators to an invasion that moved with a cold, calculated efficiency, threatening to erase everything we held dear from the face of the Earth.",
       "The situation deteriorated rapidly as news arrived that the Martians had begun to use a terrifying new weapon: the black smoke. This heavy, lethal gas drifted across the countryside, settling into every hollow and valley like a suffocating shroud. I realized that my plan to find refuge in Leatherhead was crumbling, as the path behind us was now blocked by the advancing aliens. The tripods, towering machines of cold metal, moved with a rhythmic, mechanical precision that made them seem unstoppable. They waded through rivers and smashed through buildings, their heat-rays turning everything in their path to ash. The air itself began to taste metallic and poisonous, warning us that the sanctuary we sought was merely a dream.",
       "Driven by a desperate instinct for survival, I decided to return to my home, hoping it might offer some temporary shelter from the madness consuming the nation. The journey back was a nightmare of ruin and chaos, with the landscape transformed into a graveyard of abandoned dreams. I witnessed the full extent of the Martian reach; they were no longer just on the common but were spreading their destruction across the entire county. The sky was filled with the smoke of burning homes, and the constant, thumping sound of their movement echoed through the hills. I felt incredibly small and vulnerable, realizing that humanity was fighting a war against an enemy that possessed technology centuries beyond our own comprehension.",
-      "As I reached the outskirts of my home, I saw the truth of our vulnerability written in the wreckage of the town. The Martians were systematically dismantling our civilization, their purpose as mysterious as it was cruel. I looked up to see a massive shadow looming over the horizon, a tripod stalking through the trees like a predator hunting its prey. The realization settled deep within me: we were no longer the masters of our planet. With heavy heart and shaking hands, I prepared to find a way to survive the coming night, knowing that the fight for existence had only just begun. The Earth, once a place of order and peace, had become a battleground where mercy was unknown and hope was slowly fading away.",
-      "turkish_paragraphs"
+      "As I reached the outskirts of my home, I saw the truth of our vulnerability written in the wreckage of the town. The Martians were systematically dismantling our civilization, their purpose as mysterious as it was cruel. I looked up to see a massive shadow looming over the horizon, a tripod stalking through the trees like a predator hunting its prey. The realization settled deep within me: we were no longer the masters of our planet. With heavy heart and shaking hands, I prepared to find a way to survive the coming night, knowing that the fight for existence had only just begun. The Earth, once a place of order and peace, had become a battleground where mercy was unknown and hope was slowly fading away."
     ],
     tr: [
       "On dokuzuncu yüzyılın son yıllarında, hiç kimse insan işlerinin, insanınkinden daha üstün, ancak ölümlü ve çok daha gelişmiş bir zeka tarafından dikkatle izlendiğini tahmin edemezdi. İnsanlar günlük işleriyle meşgulken, bir insanın bir su damlasında çoğalan geçici canlıları incelediği kadar yakından gözlemleniyorlardı. Uzayın uçsuz bucaksız boşluğunun ötesinde, soğukkanlı ve acımasız zekalar dünyamıza kıskanç gözlerle bakıyor ve bize karşı karmaşık planlarını yavaşça hazırlıyorlardı. İnsanoğlu büyük bir vurdumduymazlık içinde küçük kaygılarıyla uğraşırken, uzaylı bakışlarının Mars'ın soğuk ve uzak derinliklerinden üzerlerine sabitlendiğinden ve nihai yıkımlarını hazırladığından habersizdi.",
@@ -3173,9 +3163,8 @@ export const STORIES_PART2: RawStory[] = [
       "systematically": "sistematik bir şekilde",
       "comprehension": "anlama, kavrayış"
     }
-  }
-,
-  {
+  },
+      {
     id: 'dr_jekyll_mr_hyde',
     title: "Strange Case of Dr Jekyll and Mr Hyde",
     author: 'Robert Louis Stevenson',
@@ -3245,9 +3234,8 @@ export const STORIES_PART2: RawStory[] = [
       "manifest": "ortaya çıkmak",
       "respectability": "saygınlık"
     }
-  }
-,
-  {
+  },
+      {
     id: 'invisible_man',
     title: "The Invisible Man",
     author: 'H. G. Wells',
@@ -3316,9 +3304,8 @@ export const STORIES_PART2: RawStory[] = [
       "anarchy": "anarşi",
       "inevitable": "kaçınılmaz"
     }
-  }
-,
-  {
+  },
+      {
     id: 'crime_punishment',
     title: "Crime and Punishment",
     author: 'Fyodor Dostoevsky',
@@ -3389,9 +3376,8 @@ export const STORIES_PART2: RawStory[] = [
       "specter": "hayalet, korku unsuru",
       "obsolete": "kullanılmayan, köhnemiş"
     }
-  }
-,
-  {
+  },
+      {
     id: 'les_miserables',
     title: "Les Misérables",
     author: 'Victor Hugo',
@@ -3461,5 +3447,4 @@ export const STORIES_PART2: RawStory[] = [
       "inexorable": "amansız",
       "tranquility": "dinginlik"
     }
-  }
-];
+  }];

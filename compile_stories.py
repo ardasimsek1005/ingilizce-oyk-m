@@ -20,8 +20,23 @@ def format_ts_story(story):
     def esc(s):
         return s.replace('\\', '\\\\').replace('"', '\\"').replace('\n', ' ')
 
-    en_lines = ",\n      ".join(f'"{esc(p)}"' for p in story["en"])
-    tr_lines = ",\n      ".join(f'"{esc(p)}"' for p in story["tr"])
+    def clean_p(p):
+        # Strip prefixes like "Chapter 1:", "Capture 2 -", "Bölüm 3:"
+        pattern = r"^\s*(?:chapter|capture|bölüm|part|section)\s+(?:[0-9]+|[ivxldm]+)\b[:\-\s\.]*"
+        cleaned = re.sub(pattern, "", p, flags=re.IGNORECASE).strip()
+        # Handle standalone header lines
+        if re.match(r"^\s*(?:chapter|capture|bölüm|part|section)\s*(?:[0-9]+|[ivxldm]+)?\s*$", cleaned, re.IGNORECASE):
+            return ""
+        return cleaned
+
+    cleaned_en = [clean_p(p) for p in story["en"]]
+    cleaned_en = [p for p in cleaned_en if p]
+
+    cleaned_tr = [clean_p(p) for p in story["tr"]]
+    cleaned_tr = [p for p in cleaned_tr if p]
+
+    en_lines = ",\n      ".join(f'"{esc(p)}"' for p in cleaned_en)
+    tr_lines = ",\n      ".join(f'"{esc(p)}"' for p in cleaned_tr)
     
     words_lines = ",\n      ".join(f'"{esc(k)}": "{esc(v)}"' for k, v in story["words"].items())
     

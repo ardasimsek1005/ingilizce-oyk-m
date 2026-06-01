@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect, useMemo, memo, useCallback } from 'react';
-import { ArrowLeft, Volume2, Bookmark, BookmarkCheck, Share2, Info, Check, HelpCircle, ChevronRight, BookOpen, Sun, Moon, Heart, Loader2, Lock, AlertCircle, RefreshCw, CheckCircle2 } from 'lucide-react';
+import { ArrowLeft, Volume2, Bookmark, BookmarkCheck, Share2, Info, Check, HelpCircle, ChevronRight, BookOpen, Sun, Moon, Heart, Star, Loader2, Lock, AlertCircle, RefreshCw, CheckCircle2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Book, Paragraph, VocabularyWord } from '../types';
 import { OFFLINE_DICTIONARY } from '../dictionary';
@@ -62,12 +62,37 @@ const parseParagraphText = (text: string): TextToken[] => {
     current += char;
     
     if (/[.!?]/.test(char)) {
+      if (char === '.') {
+        const trimmed = current.trim();
+        const isAbbr = /\b(Mr|Mrs|Ms|Dr|St|Co|Ltd|Inc|e\.g|i\.e|vs|a\.m|p\.m)\.$/i.test(trimmed);
+        if (isAbbr) {
+          continue;
+        }
+      }
+      
       // Look ahead for closing quotes so they belong to the sentence
       let nextIdx = i + 1;
       let quotes = "";
       while (nextIdx < text.length && /["'”’]/.test(text[nextIdx])) {
         quotes += text[nextIdx];
         nextIdx++;
+      }
+      
+      // Look ahead for dialogue tag continuation (lowercase letter after whitespace)
+      let wsIdx = nextIdx;
+      let ws = "";
+      while (wsIdx < text.length && /\s/.test(text[wsIdx])) {
+        ws += text[wsIdx];
+        wsIdx++;
+      }
+      
+      if (wsIdx < text.length) {
+        const nextChar = text[wsIdx];
+        if (/^[a-zçğışöüı]$/.test(nextChar)) {
+          current += quotes + ws;
+          i = wsIdx - 1;
+          continue;
+        }
       }
       
       // Check if after quotes we have a whitespace or end of string
@@ -82,13 +107,13 @@ const parseParagraphText = (text: string): TextToken[] => {
         current = "";
         
         // Consume subsequent whitespaces
-        let ws = "";
+        let wsToConsume = "";
         while (i + 1 < text.length && /\s/.test(text[i + 1])) {
-          ws += text[i + 1];
+          wsToConsume += text[i + 1];
           i++;
         }
-        if (ws) {
-          tokens.push({ type: 'whitespace', text: ws });
+        if (wsToConsume) {
+          tokens.push({ type: 'whitespace', text: wsToConsume });
         }
       }
     }
@@ -171,7 +196,7 @@ const saveCachedTranslation = (word: string, translation: string, notes?: string
 };
 
 interface ParagraphBlockProps {
-  p: Paragraph & { indexInChapter: number };
+  p: Paragraph;
   isDarkMode: boolean;
   clickedWordIdx: number;
   clickedWordTr: string;
@@ -218,7 +243,9 @@ const ParagraphBlock = memo(function ParagraphBlock({
             const sentEn = token.text;
             const sentTr = sentencesEn.length === sentencesTr.length
               ? sentencesTr[sIdx]
-              : p.textTr;
+              : (sentencesTr.length > 0 
+                  ? sentencesTr[Math.min(Math.round(sIdx * (sentencesTr.length - 1) / (sentencesEn.length - 1 || 1)), sentencesTr.length - 1)]
+                  : p.textTr);
             const isSentenceActive = activeSentenceIdx === sIdx;
 
             return (
@@ -240,7 +267,7 @@ const ParagraphBlock = memo(function ParagraphBlock({
                   setClickedWord(null);
                   setSelectedDictWord(null);
                 }}
-                className={`inline p-0.5 rounded-lg transition-colors duration-150 cursor-help ${
+                className={`inline p-0.5 rounded-lg cursor-help ${
                   isSentenceActive
                     ? isDarkMode
                       ? 'relative bg-[#4ECDC4]/25 ring-2 ring-[#4ECDC4]/30 text-white font-semibold z-30'
@@ -274,7 +301,7 @@ const ParagraphBlock = memo(function ParagraphBlock({
                           handleWordClick(e, rawWord, 'Sözlük karşılığı yükleniyor...', p.id, uniqueWordIdx, sIdx, sentEn, sentTr);
                         }
                       }}
-                      className={`cursor-pointer transition-colors duration-150 inline ${
+                      className={`cursor-pointer inline ${
                         isWordClicked
                           ? 'relative text-[#FF6B6B] bg-[#FFE66D]/30 rounded underline underline-offset-4 decoration-2 decoration-[#FF6B6B]'
                           : isDarkMode
@@ -1139,14 +1166,14 @@ export default function ReadingView({
                 onClick={() => onToggleFavorite(book.id)}
                 className={`p-1.5 rounded-lg border transition-all cursor-pointer ${
                   book.isFavorited
-                    ? 'bg-[#FF6B6B]/15 border-[#FF6B6B] text-[#FF6B6B] hover:bg-[#FF6B6B]/25'
+                    ? 'bg-[#F59E0B]/15 border-[#F59E0B] text-[#F59E0B] hover:bg-[#F59E0B]/25'
                     : isDarkMode
                       ? 'bg-[#1A1A1E] border-[#2A2A30] text-gray-400 hover:text-white hover:border-gray-500'
-                      : 'bg-white border-gray-250 text-gray-550 hover:text-[#FF6B6B] hover:border-gray-300'
+                      : 'bg-white border-gray-250 text-gray-550 hover:text-[#F59E0B] hover:border-gray-300'
                 }`}
                 title={book.isFavorited ? 'Favorilerden Çıkar' : 'Favorilere Ekle'}
               >
-                <Heart className={`w-3.5 h-3.5 ${book.isFavorited ? 'fill-[#FF6B6B]' : ''}`} />
+                <Star className={`w-3.5 h-3.5 ${book.isFavorited ? 'fill-[#F59E0B]' : ''}`} />
               </button>
             )}
 
@@ -1216,11 +1243,13 @@ export default function ReadingView({
         </div>
 
         {/* Chapter Title */}
-        <h2 className={`font-headline-lg text-2xl font-bold tracking-tight mb-6 transition-colors ${
-          isDarkMode ? 'text-white' : 'text-[#2D3436]'
-        }`}>
-          {currentChapter.title}
-        </h2>
+        {currentChapter.title && !/^(chapter|section|capture|bölüm)/i.test(currentChapter.title) && (
+          <h2 className={`font-headline-lg text-2xl font-bold tracking-tight mb-6 transition-colors ${
+            isDarkMode ? 'text-white' : 'text-[#2D3436]'
+          }`}>
+            {currentChapter.title}
+          </h2>
+        )}
 
         {/* Core Book Paragraph Text Area */}
         <article className={`font-body-reading text-[18px] leading-[1.8] select-text transition-colors ${
@@ -1231,14 +1260,11 @@ export default function ReadingView({
               const currentPage = pages[currentPageIdx];
               if (!currentPage) return null;
 
-              const renderedParagraphs = currentPage.paragraphIndices.map(pIdx => {
-                const p = currentChapter.paragraphs[pIdx];
-                return { ...p, indexInChapter: pIdx };
-              });
+              const renderedParagraphs = currentPage.paragraphIndices.map(pIdx => currentChapter.paragraphs[pIdx]);
 
               return (
                 <div className="space-y-6 font-body-reading">
-                  {renderedParagraphs.map((p, pIdx) => (
+                  {renderedParagraphs.map((p) => (
                     <ParagraphBlock
                       key={p.id}
                       p={p}
@@ -1595,7 +1621,7 @@ export default function ReadingView({
         <div className="max-w-[680px] mx-auto px-5 py-4 pb-6">
           <div className="flex justify-between items-center mb-2">
             <span className="text-xs text-gray-550 font-bold tracking-wider font-headline-lg">
-              {currentChapter.title}
+              {book.title}
             </span>
           </div>
 

@@ -28,6 +28,20 @@ const getDaysDifference = (dateStr1: string, dateStr2: string) => {
   return Math.round(diffTime / (1000 * 60 * 60 * 24));
 };
 
+const DEFAULT_STATS: UserStats = {
+  learnedWordsCount: 0,
+  completedBooksCount: 0,
+  dailyStreak: 0,
+  totalTimeMinutes: 0,
+  readingGoalPercent: 0,
+  wordGoalPercent: 0,
+  timeGoalPercent: 0,
+  hearts: 5,
+  isPremium: false,
+  weeklyWords: [0, 0, 0, 0, 0, 0, 0],
+  weeklyMins: [0, 0, 0, 0, 0, 0, 0]
+};
+
 export default function App() {
   const [currentTab, setCurrentTab] = useState<string>('library'); // 'library' | 'vocabulary' | 'profile' | 'quiz'
   const [quizMode, setQuizMode] = useState<'saved' | 'random'>('saved');
@@ -185,34 +199,20 @@ export default function App() {
   });
 
   const [stats, setStats] = useState<UserStats>(() => {
-    const defaultStats: UserStats = {
-      learnedWordsCount: 0,
-      completedBooksCount: 0,
-      dailyStreak: 0,
-      totalTimeMinutes: 0,
-      readingGoalPercent: 0,
-      wordGoalPercent: 0,
-      timeGoalPercent: 0,
-      hearts: 5,
-      isPremium: false,
-      weeklyWords: [0, 0, 0, 0, 0, 0, 0],
-      weeklyMins: [0, 0, 0, 0, 0, 0, 0]
-    };
-
     const local = localStorage.getItem('linguist_stats_v11');
     if (local) {
       try {
         const parsed = JSON.parse(local);
         if (parsed && typeof parsed === 'object') {
           return {
-            ...defaultStats,
+            ...DEFAULT_STATS,
             ...parsed,
             weeklyWords: Array.isArray(parsed.weeklyWords) && parsed.weeklyWords.length === 7 
               ? parsed.weeklyWords.map(Number) 
-              : [...defaultStats.weeklyWords],
+              : [...DEFAULT_STATS.weeklyWords],
             weeklyMins: Array.isArray(parsed.weeklyMins) && parsed.weeklyMins.length === 7 
               ? parsed.weeklyMins.map(Number) 
-              : [...defaultStats.weeklyMins]
+              : [...DEFAULT_STATS.weeklyMins]
           };
         }
       } catch (err) {
@@ -220,7 +220,7 @@ export default function App() {
       }
     }
 
-    return defaultStats;
+    return DEFAULT_STATS;
   });
 
   const [lastActiveBookId, setLastActiveBookId] = useState<string | null>(() => {
@@ -234,7 +234,7 @@ export default function App() {
       const zeroedStats: UserStats = {
         learnedWordsCount: 0,
         completedBooksCount: 0,
-        dailyStreak: 0,
+        dailyStreak: 1, // initialize to 1 on first active day
         totalTimeMinutes: 0,
         readingGoalPercent: 0,
         wordGoalPercent: 0,
@@ -242,7 +242,8 @@ export default function App() {
         hearts: 5,
         isPremium: false,
         weeklyWords: [0, 0, 0, 0, 0, 0, 0],
-        weeklyMins: [0, 0, 0, 0, 0, 0, 0]
+        weeklyMins: [0, 0, 0, 0, 0, 0, 0],
+        lastActiveDate: getLocalDateString() // initialize to today
       };
       
       const zeroedBooks = INITIAL_BOOKS.map(b => ({
@@ -355,23 +356,68 @@ export default function App() {
     const isResetDone = localStorage.getItem('linguist_reset_stats_to_zero_v11');
     if (!isResetDone) return; 
 
-    const todayStr = getLocalDateString();
-    const lastActive = localStorage.getItem('linguist_last_active_date_v11');
+    setStats(prev => {
+      const todayStr = getLocalDateString();
+      const current = prev || DEFAULT_STATS;
+      const lastActive = current.lastActiveDate;
 
-    if (!lastActive) {
-      localStorage.setItem('linguist_last_active_date_v11', todayStr);
-      setStats(prev => ({ ...prev, dailyStreak: 1 }));
-    } else {
+      if (!lastActive) {
+        return {
+          ...current,
+          dailyStreak: 1,
+          lastActiveDate: todayStr
+        };
+      }
+
       const diff = getDaysDifference(todayStr, lastActive);
       if (diff === 1) {
-        localStorage.setItem('linguist_last_active_date_v11', todayStr);
-        setStats(prev => ({ ...prev, dailyStreak: prev.dailyStreak + 1 }));
+        return {
+          ...current,
+          dailyStreak: (current.dailyStreak || 0) + 1,
+          lastActiveDate: todayStr
+        };
       } else if (diff > 1) {
-        localStorage.setItem('linguist_last_active_date_v11', todayStr);
-        setStats(prev => ({ ...prev, dailyStreak: 1 }));
+        return {
+          ...current,
+          dailyStreak: 1,
+          lastActiveDate: todayStr
+        };
+      } else if (diff < 0) {
+        // Clock skew / timezone difference, update active date but keep streak
+        return {
+          ...current,
+          lastActiveDate: todayStr
+        };
+      }
+      return current; // diff === 0, no changes needed
+    });
+  }, []);
+
+  // Automatic achievement badge unlocking observer
+  useEffect(() => {
+    if (!stats) return;
+    // b1: Kitap Kurdu (En az 5 farklı İngilizce hikaye oku)
+    if ((stats.completedBooksCount || 0) >= 5) {
+      const b1 = badges.find(b => b.id === 'b1');
+      if (b1 && !b1.unlocked) {
+        unlockBadge('b1');
       }
     }
-  }, [stats.learnedWordsCount]);
+    // b2: Azimli Sebat (Günlük hedefini üst üste 15 gün tamamla)
+    if ((stats.dailyStreak || 0) >= 15) {
+      const b2 = badges.find(b => b.id === 'b2');
+      if (b2 && !b2.unlocked) {
+        unlockBadge('b2');
+      }
+    }
+    // b3: Kelime Avcısı (Kelime haznesine 100 yeni kelime kaydet)
+    if (vocabulary.length >= 100) {
+      const b3 = badges.find(b => b.id === 'b3');
+      if (b3 && !b3.unlocked) {
+        unlockBadge('b3');
+      }
+    }
+  }, [stats?.completedBooksCount, stats?.dailyStreak, vocabulary.length, badges]);
 
   // Heart regeneration mechanism: 1 heart every 1 hour (3600000 ms), capped at 5
   useEffect(() => {
@@ -538,8 +584,28 @@ export default function App() {
           const cloud = resData.data;
           
           if (cloud.stats) {
-            setStats(cloud.stats);
-            localStorage.setItem('linguist_stats_v11', JSON.stringify(cloud.stats));
+            const todayStr = getLocalDateString();
+            const lastActive = cloud.stats.lastActiveDate;
+            let finalStats = { ...cloud.stats };
+
+            if (!lastActive) {
+              finalStats.dailyStreak = 1;
+              finalStats.lastActiveDate = todayStr;
+            } else {
+              const diff = getDaysDifference(todayStr, lastActive);
+              if (diff === 1) {
+                finalStats.dailyStreak = finalStats.dailyStreak + 1;
+                finalStats.lastActiveDate = todayStr;
+              } else if (diff > 1) {
+                finalStats.dailyStreak = 1;
+                finalStats.lastActiveDate = todayStr;
+              } else if (diff < 0) {
+                finalStats.lastActiveDate = todayStr;
+              }
+            }
+
+            setStats(finalStats);
+            localStorage.setItem('linguist_stats_v11', JSON.stringify(finalStats));
           }
           if (cloud.books) {
             setBooks(cloud.books);
@@ -694,7 +760,7 @@ export default function App() {
       chapters: [
         {
           id: 'ch1',
-          title: 'Section 1',
+          title: '',
           paragraphs: builtParagraphs
         }
       ]
@@ -897,7 +963,7 @@ export default function App() {
         </div>
 
         {/* Scrollable Main Area */}
-        <div className="flex-1 overflow-y-auto flex flex-col relative scrollbar-none pb-20">
+        <div className="flex-1 overflow-y-visible md:overflow-y-auto flex flex-col relative scrollbar-none pb-20">
           
           {/* Visual Navigation and Status Headers if not in active reading panel */}
           {!activeReadingBook && (
@@ -1035,6 +1101,7 @@ export default function App() {
                     onGoToLibrary={() => setCurrentTab('library')}
                     syncTrigger={triggerCloudSync}
                     isDarkMode={isDarkMode}
+                    onUnlockBadge={unlockBadge}
                   />
                 )}
 

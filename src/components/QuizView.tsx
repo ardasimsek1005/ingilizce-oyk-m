@@ -17,6 +17,7 @@ interface QuizViewProps {
   onGoToLibrary: () => void;
   syncTrigger: () => void;
   isDarkMode?: boolean;
+  onUnlockBadge?: (id: string) => void;
 }
 
 const PROPER_NAMES_SET = new Set([
@@ -496,6 +497,7 @@ export default function QuizView({
   onGoToLibrary,
   syncTrigger,
   isDarkMode,
+  onUnlockBadge,
 }: QuizViewProps) {
   // Questions navigation & status structures
   const [currentQuestionIdx, setCurrentQuestionIdx] = useState(0);
@@ -538,6 +540,12 @@ export default function QuizView({
     };
   }, []);
 
+  React.useEffect(() => {
+    if (initiallyShowPaywall || stats.hearts <= 0) {
+      setShowSubscriptionPanel(true);
+    }
+  }, [initiallyShowPaywall, stats.hearts]);
+
   // Helper calculation for membership discounts
   const monthlyPrice = 99; // 99 TL
   const yearlyPriceAndDiscount = Math.round((99 * 12) * 0.6); // 40% discount = 712 TL total
@@ -556,6 +564,8 @@ export default function QuizView({
       autoProceedTimeoutRef.current = setTimeout(() => {
         handleNext();
       }, 1200);
+    } else {
+      onAnswerIncorrect();
     }
     syncTrigger();
   };
@@ -571,6 +581,9 @@ export default function QuizView({
     } else {
       // Set completed state to render the custom success panel instead of alert
       setIsCompleted(true);
+      if (quizScore === questions.length) {
+        onUnlockBadge?.('b4');
+      }
     }
   };
 

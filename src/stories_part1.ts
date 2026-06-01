@@ -2528,14 +2528,14 @@ export const STORIES_PART1: RawStory[] = [
   },
 
   // ==================== LEVEL A2 (9 Stories) ====================
-                      {
+                          {
     id: 'pinocchio',
     title: "Pinocchio",
     author: 'Carlo Collodi',
     level: 'A2',
     coverUrl: '/covers/pinocchio.webp',
     en: [
-      "Once upon a time, in a small, simple house, lived an old carpenter named Geppetto. He was a kind man, but very poor. Geppetto loved children, but he had none of his own.",
+      "In a small, simple house nestled at the edge of town, there lived an old carpenter named Geppetto. He was a kind man, but very poor. Geppetto loved children, but he had none of his own.",
       "He often dreamed of making a wonderful wooden puppet that could dance and jump and bring joy to his lonely home. One day, he thought, \"I will make a beautiful puppet and call him Pinocchio! He will be like a son to me, and we will have many happy adventures together.\" Geppetto went to his workshop, which was really just a small corner of his kitchen, and began to look for the perfect piece of wood.",
       "Geppetto searched through all his old pieces of wood. Suddenly, he found a special piece. It was ordinary, not too big and not too small, but it felt different. As he picked it up, he heard a tiny, quiet voice say, \"Please, don't hit me too hard!\" Geppetto was very surprised. He looked around the room, but he saw no one.",
       "He thought, \"Was that the wind? Or did I imagine it?\" He tapped the wood gently. Again, he heard the voice, a little louder this time, \"Ouch! That hurts!\" Geppetto's eyes grew wide. This was no ordinary wood!",
@@ -2547,10 +2547,10 @@ export const STORIES_PART1: RawStory[] = [
       "Geppetto cried loudly. Pinocchio giggled. He held the wig tightly and did not want to give it back to the old man. Geppetto tried to take it, but Pinocchio moved his arm away very fast. Geppetto finally got his wig back, but he was very annoyed. \"You are a very rude puppet!\" he said, shaking his finger at Pinocchio. This puppet was truly full of surprises.",
       "Finally, Geppetto carved Pinocchio's legs and feet. This was the last part of his work. As soon as the feet were ready, Pinocchio jumped down from the table. He stood on the floor by himself! Then, he began to run around the small kitchen. He ran very fast. \"Stop! Stop!\"",
       "Geppetto shouted with a worried voice. He tried to catch Pinocchio, but the puppet was too quick. Pinocchio ran out of the door and into the street! Geppetto ran after him, very worried. He had his son now, but this son was very fast and very naughty! Geppetto was old, and he could not run so quickly. \"My Pinocchio! Come back!\" he cried.",
-      "Pinocchio ran very fast along the street. He was a small wooden puppet, but his legs moved quickly. Geppetto, the old man, ran behind him. \"Catch him! Catch my son!\" Geppetto shouted. People in the street stopped to look.",
+      "Pinocchio ran very fast along the street. He was a small wooden puppet, but his legs moved quickly. Geppetto, the old man, ran behind him. \"Catch him! Catch my son!\" shouted Geppetto. People in the street stopped to look.",
       "They saw a strange little puppet running and an old man chasing it. Pinocchio thought it was a fun game. He laughed and ran even faster. He did not know about danger. He just wanted to explore the world outside Geppetto's house. The sun was bright, and the street was full of new things. Everything was exciting for the new puppet, but Geppetto felt only worry in his heart.",
       "A policeman was standing near the market. He heard Geppetto's shouts and saw the unusual sight. A puppet running by itself was not normal! The policeman quickly stepped into the street. He put out his arm. \"Stop, little puppet!\" he said firmly. Pinocchio was running too fast to stop.",
-      "He tried to go around the policeman, but the policeman was quick. He caught Pinocchio easily. Geppetto finally arrived, breathing heavily. He was tired from running. \"Oh, thank you, officer! He is my son, Pinocchio. He ran away from home,\" Geppetto explained, pointing at the puppet. The policeman looked from the puppet to Geppetto with a serious face.",
+      "He tried to go around the policeman, but the policeman was quick. He caught Pinocchio easily. Geppetto finally arrived, breathing heavily, as he was tired from running. \"Oh, thank you, officer! He is my son, Pinocchio. He ran away from home,\" Geppetto explained, pointing at the puppet. The policeman looked from the puppet to Geppetto with a serious face.",
       "The policeman did not understand. A wooden puppet as a son? This was very strange. He looked at Geppetto's worried face and then at Pinocchio, who was moving his head curiously. \"This puppet is alive, but it ran away from you. You did not take good care of it,\" the policeman decided. He thought Geppetto was a bad father.",
       "So, the policeman took Pinocchio and walked towards the prison. Geppetto cried, \"No! He is my son! Please, don't take him away!\" But the policeman did not listen. He locked Geppetto in prison for not controlling his new, naughty puppet. Geppetto was left alone and very sad.",
       "After the policeman took Geppetto away, Pinocchio stood alone in the street. He watched as the policeman led the old man towards the prison. Pinocchio did not truly understand what was happening. He did not know what a prison was, so he felt no sadness for Geppetto. Instead, he felt a strange new freedom.",
@@ -2561,16 +2561,16 @@ export const STORIES_PART1: RawStory[] = [
       "He pressed his wooden nose against the glass, looking at the tempting bread. He wanted it so much! Then he remembered Geppetto always used money to buy things. Pinocchio had no money. He had nothing. The cold night air began to bite, and Pinocchio felt very small and truly lost. The world outside was not so fun anymore.",
       "Pinocchio shivered in the cold night. His little wooden body was not used to this feeling. He wished he had a warm blanket like Geppetto used to give him. His stomach growled again, louder this time. \"Oh, dear!\" he cried. \"This hunger is truly unpleasant!\"",
       "He looked up at the dark sky, then around the empty street. No one was there. He felt very alone. Geppetto had always been there, making sure Pinocchio was safe and fed. Now, Pinocchio had to do everything himself, but he didn't know how. He missed Geppetto's warm house and the smell of dinner cooking. A tear, a real tear, rolled down his wooden cheek.",
-      "Pinocchio kept walking, his steps slow and heavy. He passed a small rubbish bin near an alley. He usually ignored such things, but today was different. He was so hungry he thought, \"Maybe there's something to eat inside?\" He carefully lifted the lid. The bin was full of old paper, broken things, and...",
-      "a half-eaten apple! It was a bit brown and had some dirt on it, but Pinocchio didn't care. His eyes lit up. An apple! It wasn't a warm loaf of bread, but it was food. He reached his hand in, eager to grab the treasure. This was his first real attempt to find food for himself.",
+      "Pinocchio kept walking, his steps slow and heavy. He passed a small rubbish bin near an alley. He usually ignored such things, but today was different. He was so hungry he thought, \"Maybe there's something to eat inside?\" He carefully lifted the lid.",
+      "The bin was full of old paper, broken things, and... a half-eaten apple! It was a bit brown and had some dirt on it, but Pinocchio didn't care. His eyes lit up. An apple! It wasn't a warm loaf of bread, but it was food. He reached his hand in, eager to grab the treasure. This was his first real attempt to find food for himself.",
       "Just as Pinocchio's wooden fingers touched the apple, a big, black cat suddenly jumped out from the shadows. \"Meeooow!\" it cried, its eyes glowing green in the dark. The cat grabbed the apple with its teeth and ran away, disappearing into the alley as quickly as it appeared. Pinocchio was so surprised he fell backward, landing with a clatter on the cold pavement.",
       "The apple was gone! His hunger was still there, even stronger now. He felt a new wave of sadness. The world was full of difficulties. He slowly stood up, brushing the dirt from his little wooden coat. He had learned another hard lesson: finding food was not easy, and he had to be very careful."
     ],
     tr: [
-      "Bir zamanlar, küçük, basit bir evde Geppetto adında yaşlı bir marangoz yaşarmış. O nazik ama çok fakir bir adammış. Geppetto çocukları severmiş ama hiç çocuğu yokmuş.",
+      "Kasabanın kenarındaki küçük, basit bir evde Geppetto adında yaşlı bir marangoz yaşarmış. O nazik ama çok fakir bir adammış. Geppetto çocukları severmiş ama hiç çocuğu yokmuş.",
       "Genellikle dans edebilen, zıplayabilen ve yalnız evine neşe getirecek harika bir tahta kukla yapmayı hayal edermiş. Bir gün düşünmüş, \"Güzel bir kukla yapacağım ve ona Pinokyo adını vereceğim! Bana bir oğul gibi olacak ve birlikte çok mutlu maceralar yaşayacağız.\" Geppetto, aslında mutfağının küçük bir köşesi olan atölyesine gitmiş ve mükemmel tahta parçasını aramaya başlamış.",
-      "Geppetto, eski tahta parçalarının hepsini aramış. Birdenbire, özel bir parça bulmuş. Sıradanmış, ne çok büyük ne de çok küçük, ama farklı hissettiriyormuş. Onu eline aldığında, minik, sessiz bir sesin \"Lütfen, bana çok sert vurmayın!\" dediğini duymuş. Geppetto çok şaşırmış.",
-      "Odaya bakmış ama kimseyi görememiş. Düşünmüş, \"Bu rüzgar mıydı? Yoksa ben mi hayal ettim?\" Tahtaya nazikçe dokunmuş. Yine sesi duymuş, bu sefer biraz daha yüksek sesle, \"Ouch! Canım acıdı!\" Geppetto'nun gözleri fal taşı gibi açılmış. Bu sıradan bir tahta değilmiş!",
+      "Geppetto, eski tahta parçalarının hepsini aramış. Birdenbire, özel bir parça bulmuş. Sıradanmış, ne çok büyük ne de çok küçük, ama farklı hissettiriyormuş. Onu eline aldığında, minik, sessiz bir sesin \"Lütfen, bana çok sert vurmayın!\" dediğini duymuş. Geppetto çok şaşırmış. Odaya bakmış ama kimseyi görememiş.",
+      "Düşünmüş, \"Bu rüzgar mıydı? Yoksa ben mi hayal ettim?\" Tahtaya nazikçe dokunmuş. Yine sesi duymuş, bu sefer biraz daha yüksek sesle, \"Ouch! Canım acıdı!\" Geppetto'nun gözleri fal taşı gibi açılmış. Bu sıradan bir tahta değilmiş!",
       "Heyecanlı ve biraz da korkmuş olan Geppetto, bunun özel kuklası için mükemmel bir tahta olduğuna karar vermiş. Aletlerini dikkatlice almış. Önce, Pinokyo'nun yüzünü oymaya başlamış. Gözleri bitirir bitirmez, kuklanın gözleri kırpmış ve odaya bakınmış! Geppetto nefes nefese kalmış. Sonra, burnunu oymuş.",
       "Burun gözlerinin önünde uzadıkça uzamış! Geppetto onu geri itmeye çalışmış ama hareket etmemiş. Devam etmiş ve ağzını oyduğunda, kukla hemen ona gülmüş! \"Gülmeyi bırak!\" diye bağırmış Geppetto, biraz sinirlenmiş hissederek. Pinokyo'nun ağzı durmuş ama dili dışarı çıkmış ve yaşlı adama dil çıkarmış.",
       "Geppetto, Pinokyo'nun diline çok şaşırmıştı. Biraz kızgın hissetti. \"Sen yaramaz kukla!\" dedi. Ama aynı zamanda mutlu da hissetti. Kuklası canlıydı! Dikkatle çalışmaya devam etti. Pinokyo için iki küçük kulak oydu.",
@@ -2630,14 +2630,14 @@ export const STORIES_PART1: RawStory[] = [
       "disappear": "kaybolmak"
     }
   },
-                      {
+                          {
     id: 'beauty_beast',
     title: "Beauty and the Beast",
     author: 'Gabrielle-Suzanne de Villeneuve',
     level: 'A2',
     coverUrl: '/covers/beauty_beast.webp',
     en: [
-      "Once upon a time, there was a very rich merchant who lived in a grand city house. He had six children: three sons and three daughters. All his children were handsome, but his three daughters were especially beautiful. The youngest daughter was named Belle, which meant 'Beauty' in French, because she truly was the most beautiful of them all.",
+      "Long ago, a very rich merchant made his home in a grand house within a bustling city. He had six children: three sons and three daughters. All his children were handsome, but his three daughters were especially beautiful. The youngest daughter was named Belle, which meant 'Beauty' in French, because she truly was the most beautiful of them all.",
       "People often admired her kind face and gentle smile. The merchant loved all his children very much. They lived a happy and comfortable life, surrounded by many servants and luxurious things. Life was very good for them, and the merchant was very proud of his family and their success. They often attended important parties and wore magnificent clothes, enjoying every moment of their wealthy existence.",
       "Belle's older sisters were quite different from her. They were very proud and spent most of their time thinking about expensive clothes, jewelry, and social gatherings. They enjoyed showing off their wealth and did not like to do any work. Belle, however, was humble and always willing to help her father and brothers.",
       "She loved to read books and spend quiet time in the family garden. She did not care for fancy dresses or grand parties. People loved Belle not only for her outward beauty but also for her kind heart and gentle nature. Her sisters often teased her for being so simple and loving quiet activities, but Belle did not mind. She found joy in her simple pleasures.",
@@ -2671,7 +2671,7 @@ export const STORIES_PART1: RawStory[] = [
       "\"No, Belle, you cannot!\" her father said, tears in his eyes. \"I will not let you!\" But Belle was firm. \"It was for my rose, Father. I will go. I will save you.\" She felt a strange mix of fear and determination. She was ready to face the Beast."
     ],
     tr: [
-      "Bir zamanlar, büyük bir şehir evinde yaşayan çok zengin bir tüccar vardı. Altı çocuğu vardı: üç oğlu ve üç kızı. Bütün çocukları yakışıklıydı ama üç kızı özellikle çok güzeldi. En küçük kızın adı Belle idi, Fransızca'da 'Güzellik' anlamına geliyordu, çünkü gerçekten de hepsinin en güzeliydi.",
+      "Uzun zaman önce, büyük bir şehir evinde yaşayan çok zengin bir tüccar vardı. Altı çocuğu vardı: üç oğlu ve üç kızı. Bütün çocukları yakışıklıydı ama üç kızı özellikle çok güzeldi. En küçük kızın adı Belle idi, Fransızca'da 'Güzellik' anlamına geliyordu, çünkü gerçekten de hepsinin en güzeliydi.",
       "İnsanlar sık sık onun nazik yüzünü ve hoş gülüşünü hayranlıkla izlerdi. Tüccar bütün çocuklarını çok severdi. Birçok hizmetçi ve lüks eşya ile çevrili mutlu ve rahat bir hayat yaşıyorlardı. Hayat onlar için çok iyiydi ve tüccar ailesiyle ve başarılarıyla çok gurur duyuyordu. Sık sık önemli partilere katılır, muhteşem kıyafetler giyer ve zengin varlıklarının her anının tadını çıkarırlardı.",
       "Belle'in ablaları ondan oldukça farklıydı. Çok gururluydu ve zamanlarının çoğunu pahalı kıyafetler, mücevherler ve sosyal toplantılar düşünerek geçirirlerdi. Zenginliklerini göstermekten hoşlanırlar ve hiçbir iş yapmaktan hoşlanmazlardı. Ancak Belle alçakgönüllüydü ve babasına ve kardeşlerine her zaman yardım etmeye istekliydi.",
       "Kitap okumayı ve aile bahçesinde sessiz zaman geçirmeyi severdi. Gösterişli elbiselere veya büyük partilere önem vermezdi. İnsanlar Belle'i sadece dış güzelliği için değil, aynı zamanda nazik kalbi ve kibar doğası için de severdi. Ablaları onu sık sık basit olduğu ve sessiz aktiviteleri sevdiği için alaya alırlardı ama Belle umursamazdı. Basit zevklerinde mutluluk bulurdu.",
@@ -2735,7 +2735,7 @@ export const STORIES_PART1: RawStory[] = [
       "determination": "kararlılık"
     }
   },
-                      {
+                          {
     id: 'little_mermaid',
     title: "The Little Mermaid",
     author: 'Hans Christian Andersen',
@@ -2748,7 +2748,7 @@ export const STORIES_PART1: RawStory[] = [
       "She was also the quietest and most thoughtful of her sisters. While her sisters played with pearls, she loved to spend time in her small garden, where she had planted a special bright red flower, shaped like the sun. Her greatest joy was listening to her old grandmother, who knew many wonderful stories about the human world above the water.",
       "The mermaids had a special custom. When they turned fifteen years old, they were allowed to swim to the surface of the sea for the first time. Each year, one sister would turn fifteen and go up.",
       "The youngest mermaid listened carefully to her older sisters' stories when they returned. They described the bright sun, the blue sky, the strange ships, and the green trees on the land. She dreamed of these things constantly. Her fifteenth birthday was still some years away, but her heart was full of a quiet longing to see the world above, to feel the sunlight, and to hear the sounds of the human world.",
-      "The youngest mermaid waited patiently, but her heart beat faster every day. She loved her grandmother's stories more than ever. Her grandmother told her about cities with tall buildings, people who walked on two legs, and the sound of bells ringing in the air. The little mermaid imagined all these things clearly. She would sit in her garden, looking up at the shimmering surface of the water, wishing she could fly up and see for herself.",
+      "The youngest mermaid waited patiently, but her heart beat faster every day. She loved her grandmother's stories more than ever. Her grandmother told her about cities with tall buildings, people who walked on two legs, and the sound of bells ringing in the air. The little mermaid imagined all these things clearly. She would sit in her garden, looking up at the shimmering surface of the water, wishing she could fly up and see for herself. She often asked her grandmother, \"What does the sky look like when the sun sets?\"",
       "She often asked her grandmother, \"What does the sky look like when the sun sets?\" and \"Do the people above ever feel lonely without the sea?\" Her grandmother always smiled and said, \"You will see soon enough, my dear. Just a little more time.\" This made the youngest mermaid feel a mix of excitement and a little sadness, knowing she still had to wait.",
       "Finally, the day came for her oldest sister to turn fifteen. The palace was filled with joy and excitement. The old king hugged his daughter, and her sisters wished her good luck. The oldest sister was very happy. She swam gracefully through the water, saying goodbye to her family.",
       "As she reached the surface, the sun was just beginning to set, painting the sky with beautiful orange and purple colors. She saw a large ship sailing far away. People were singing and dancing on the ship. The sister watched them, feeling the warm air and the gentle waves. It was a magical moment, exactly what her grandmother had described. She stayed there until the stars appeared in the dark sky.",
@@ -2836,7 +2836,7 @@ export const STORIES_PART1: RawStory[] = [
       "danger": "tehlike"
     }
   },
-                      {
+                          {
     id: 'aladdin',
     title: "Aladdin and the Lamp",
     author: 'Antoine Galland',
@@ -2848,8 +2848,8 @@ export const STORIES_PART1: RawStory[] = [
       "He often stayed out late, coming home only when his mother called him for dinner. His parents were very sad because Aladdin did not want to work or study. They hoped he would change one day and become a responsible young man, but he continued to be idle and play around the city.",
       "Aladdin's father grew sadder and sadder because of his son's laziness. He worried a lot about Aladdin's future and what would happen to him. One day, the tailor became very sick, and sadly, he died. Aladdin's mother was extremely upset and felt very alone. Now, she had to work even harder to earn money for herself and her son.",
       "Aladdin, however, did not change his ways. He continued his old habits. He still played in the streets, never trying to find work or help his mother with her chores. His mother often cried, wishing Aladdin would become more responsible after his father's death. She loved him, but she also felt very tired and burdened with all the work.",
-      "One day, a mysterious stranger came to the city. He was a powerful magician from a far-off land in Africa. The magician walked through the city, watching people very carefully. He saw Aladdin playing in the street with his friends. The magician watched Aladdin for a long time and saw something special in the boy, something he could use.",
-      "He knew Aladdin was the right person for his secret and dangerous plan. The magician decided to pretend to be Aladdin's long-lost uncle. He approached Aladdin with a kind smile and said, \"Hello, my boy. Are you not the son of my dear brother, Mustafa the tailor?\" Aladdin was very surprised because he had never seen this man before and didn't know he had an uncle.",
+      "One day, a mysterious stranger came to the city. He was a powerful magician from a far-off land in Africa. The magician walked through the city, watching people very carefully. He saw Aladdin playing in the street with his friends. The magician watched Aladdin for a long time and saw something special in the boy, something he could use. He knew Aladdin was the right person for his secret and dangerous plan.",
+      "The magician decided to pretend to be Aladdin's long-lost uncle. He approached Aladdin with a kind smile and said, \"Hello, my boy. Are you not the son of my dear brother, Mustafa the tailor?\" Aladdin was very surprised because he had never seen this man before and didn't know he had an uncle.",
       "Aladdin was very surprised. He looked at the stranger with wide eyes. \"My uncle?\" he asked, confused. \"I don't know any uncle.\" The magician smiled kindly and said, \"Yes, my boy. I am your father's brother. I traveled for many years and just came back.",
       "I asked about my dear brother Mustafa, and people told me he had a son named Aladdin. I was so happy to hear that! Please, take me to your mother. She must be very sad about my brother.",
       "I want to see her and help your family.\" Aladdin, who was a simple and kind boy despite his laziness, believed the magician. He felt happy that he had an uncle and quickly agreed to take him home. He was excited to tell his mother the news.",
@@ -2944,14 +2944,14 @@ export const STORIES_PART1: RawStory[] = [
       "trap": "mahsur kalmak"
     }
   },
-                  {
+                      {
     id: 'princess_pea',
     title: "The Princess and the Pea",
     author: 'Hans Christian Andersen',
     level: 'A2',
     coverUrl: '/covers/princess_pea.webp',
     en: [
-      "Once upon a time, there was a young prince who wanted to marry a real princess. He traveled all over the world to find one, but it was very difficult. There were many princesses in many kingdoms, but he always felt that something was wrong. Sometimes the princesses were not polite, and sometimes they did not seem like real royalty at all.",
+      "In a faraway kingdom, a young prince dreamed of marrying a real princess. He traveled all over the world to find one, but it was very difficult. There were many princesses in many kingdoms, but he always felt that something was wrong. Sometimes the princesses were not polite, and sometimes they did not seem like real royalty at all.",
       "The prince returned to his own home feeling very sad and lonely. He sat in his large castle and looked out of the window at the clouds. He wanted someone kind, smart, and truly royal to be his wife, but he was beginning to lose all of his hope. His mother and father, the King and Queen, were also worried because they wanted their son to be happy and to find a true partner for his life.",
       "One night, a terrible storm came to the kingdom. There was thunder that sounded like heavy drums in the sky, and lightning flashed across the dark clouds. The wind blew very hard against the tall trees, and the rain fell down like a river. It was a very cold and dangerous night to be outside. Suddenly, someone knocked on the castle gate.",
       "It was a slow and soft knock, but the King heard it. He walked to the door to see who was there in such bad weather. He opened the big, heavy door and saw a young woman standing in the rain. She looked very wet and miserable, with water running down her hair and her clothes. The cold wind made her shiver, but she stood there with a quiet and polite expression on her face.",
@@ -2985,7 +2985,7 @@ export const STORIES_PART1: RawStory[] = [
       "They had a happy family and worked hard to make their kingdom a better place. The princess was always gentle and honest, just like on her first night. Everyone loved her because she was a true princess in every way. The story of their love became a legend that people told to their children. They lived a long, peaceful, and happy life together until the very end of their days."
     ],
     tr: [
-      "Bir zamanlar, gerçek bir prensesle evlenmek isteyen genç bir prens varmış. Bir tane bulmak için dünyanın her yerini gezmiş, ama bu çok zormuş. Birçok krallıkta birçok prenses varmış ama o hep bir şeylerin yanlış olduğunu hissediyormuş. Bazen prensesler kibar değilmiş, bazen de hiç gerçek bir kraliyet mensubu gibi görünmüyorlarmış.",
+      "Uzak bir krallıkta, gerçek bir prensesle evlenmek isteyen genç bir prens varmış. Bir tane bulmak için dünyanın her yerini gezmiş ama bu çok zormuş. Birçok krallıkta birçok prenses varmış ama her zaman bir şeylerin ters gittiğini hissediyormuş. Bazen prensesler kibar değilmiş, bazen de hiç gerçek asilzadeler gibi görünmüyorlarmış.",
       "Prens, çok üzgün ve yalnız hissederek kendi evine dönmüş. Büyük şatosunda oturmuş ve pencereden bulutlara bakmış. Karısı olacak nazik, zeki ve gerçekten asil birini istiyormuş ama tüm umudunu kaybetmeye başlıyormuş. Anne ve babası olan Kral ve Kraliçe de oğullarının mutlu olmasını ve hayatı için gerçek bir eş bulmasını istedikleri için endişeliymişler.",
       "Bir gece, krallığa korkunç bir fırtına gelmiş. Gökyüzünde ağır davullar gibi ses çıkaran gök gürültüleri varmış ve karanlık bulutların arasında şimşekler çakıyormuş. Rüzgar yüksek ağaçlara karşı çok sert esmiş ve yağmur nehir gibi aşağıya yağmış. Dışarıda olmak için çok soğuk ve tehlikeli bir geceymiş. Aniden, biri şato kapısını çalmış.",
       "Yavaş ve hafif bir tıklamaymış ama Kral bunu duymuş. Böylesine kötü bir havada kimin olduğunu görmek için kapıya yürümüş. Büyük ve ağır kapıyı açmış ve yağmurun altında duran genç bir kadın görmüş. Saçlarından ve elbiselerinden sular akan, çok ıslak ve perişan görünüyormuş. Soğuk rüzgar onu titretmiş ama o, yüzünde sakin ve nazik bir ifadeyle orada duruyormuş.",
@@ -3045,14 +3045,14 @@ export const STORIES_PART1: RawStory[] = [
       "peaceful": "huzurlu"
     }
   },
-                  {
+                      {
     id: 'thumbelina',
     title: "Thumbelina",
     author: 'Hans Christian Andersen',
     level: 'A2',
     coverUrl: '/covers/thumbelina.webp',
     en: [
-      "Once upon a time, there was a woman who wanted a very small child. She did not know where to find one. She went to see an old witch for help. The witch gave her a small magic seed. She told the woman to plant it in a flowerpot. The woman went home and planted the seed in a pot of earth.",
+      "A long time ago, a lonely woman wished more than anything for a very small child of her own. She did not know where to find one. She went to see an old witch for help. The witch gave her a small magic seed. She told the woman to plant it in a flowerpot. The woman went home and planted the seed in a pot of earth.",
       "Very quickly, a beautiful flower began to grow. It looked like a tulip, but the petals were still closed tightly. The woman kissed the red and yellow petals. Suddenly, the flower opened up. Inside the flower, there was a tiny, pretty girl. She was only as big as a thumb, so the woman called her Thumbelina. The woman was very happy to have such a small and lovely daughter.",
       "The woman made a bed for Thumbelina from a shiny walnut shell. She used blue flower petals for a mattress and a soft rose petal for a blanket. Thumbelina was very happy during the day. She played on the table and sang songs with a sweet voice.",
       "However, one night, a big, ugly toad came into the house through a broken window. The toad saw the tiny girl sleeping in her walnut shell. The toad thought that Thumbelina would be a perfect wife for her son. She picked up the walnut shell while Thumbelina was sleeping. Then, she jumped out of the window and hopped away into the dark garden, moving toward the river where the toad lived with her son.",
@@ -3085,7 +3085,7 @@ export const STORIES_PART1: RawStory[] = [
       "He had a gold crown and shiny wings. He was the king of all the flowers. The king fell in love with Thumbelina because she was so kind and pretty. He gave her a new name and a beautiful pair of wings. Thumbelina was finally happy, and she lived in the garden of flowers with the king as his queen for the rest of her life."
     ],
     tr: [
-      "Bir zamanlar çok küçük bir çocuk isteyen bir kadın varmış. Nereden bulacağını bilmiyormuş. Yardım için yaşlı bir cadıya gitmiş. Cadı ona küçük sihirli bir tohum vermiş. Kadına onu bir saksıya dikmesini söylemiş. Kadın evine gitmiş ve tohumu toprak dolu bir saksıya dikmiş.",
+      "Çok uzun zaman önce, kendine ait çok küçük bir çocuk sahibi olmayı her şeyden çok isteyen yalnız bir kadın varmış. Nereden bulacağını bilmiyormuş. Yardım için yaşlı bir cadıya gitmiş. Cadı ona küçük, sihirli bir tohum vermiş. Kadına onu bir saksıya dikmesini söylemiş. Kadın eve gitmiş ve tohumu toprak dolu bir saksıya dikmiş.",
       "Çok geçmeden güzel bir çiçek büyümeye başlamış. Lale gibi görünüyormuş ama taç yaprakları sıkıca kapalıymış. Kadın kırmızı ve sarı yaprakları öpmüş. Aniden çiçek açılmış. Çiçeğin içinde minik, güzel bir kız varmış. Sadece bir başparmak kadar olduğu için kadın ona Parmak Kız adını vermiş. Kadın böylesine küçük ve sevimli bir kızı olduğu için çok mutluymuş.",
       "Kadın, Parmak Kız için parlak bir ceviz kabuğundan yatak yapmış. Yatak için mavi çiçek yaprakları, örtü için ise yumuşak bir gül yaprağı kullanmış. Parmak Kız gündüzleri çok mutluymuş. Masanın üzerinde oynuyor ve tatlı sesiyle şarkılar söylüyormuş.",
       "Ancak bir gece, kırık bir pencereden içeri büyük ve çirkin bir kurbağa girmiş. Kurbağa, ceviz kabuğunda uyuyan minik kızı görmüş. Kurbağa, Parmak Kız'ın oğlu için mükemmel bir eş olacağını düşünmüş. Parmak Kız uyurken ceviz kabuğunu almış. Sonra pencereden dışarı atlamış ve karanlık bahçeye doğru, oğluyla birlikte yaşadığı nehre doğru zıplayarak uzaklaşmış.",
@@ -3149,7 +3149,7 @@ export const STORIES_PART1: RawStory[] = [
       "queen": "kraliçe"
     }
   },
-                  {
+                      {
     id: 'robin_hood',
     title: "Robin Hood",
     author: 'Howard Pyle',
@@ -3257,7 +3257,7 @@ export const STORIES_PART1: RawStory[] = [
       "royal": "kraliyet"
     }
   },
-                  {
+                      {
     id: 'alice_wonderland',
     title: "Alice in Wonderland",
     author: 'Lewis Carroll',
@@ -3301,8 +3301,8 @@ export const STORIES_PART1: RawStory[] = [
       "Aniden, pembe gözlü beyaz bir tavşan hızla yanından geçti. Tavşan cebinden bir saat çıkardı, saate baktı ve daha da hızlı koşmaya başladı. Alice çok şaşırmıştı çünkü daha önce hiç cebi veya saati olan bir tavşan görmemişti. Ayağa kalktı ve tarlada onun peşinden koştu. Onu bir çitin altındaki büyük bir tavşan deliğine girerken görecek kadar yetişmişti.",
       "Alice geri nasıl çıkacağını hiç düşünmedi. Tavşan deliğine atladı ve aşağı doğru düşmeye başladı. Delik uzun bir tünel gibiydi ve çok uzun süre düştü. Yavaşça düşerken tünelin yanlarına baktı. Duvarlarda dolaplar ve kitap rafları vardı.",
       "Askılarda asılı haritalar ve resimler gördü. Yanından geçerken bir raftan kavanoz aldı. Üzerinde Portakal Reçeli yazıyordu ama içi boştu. Alice kavanozu düşürüp aşağıdakilerden birini öldürmek istemedi, bu yüzden onu başka bir dolabın içine koydu. Düşmeye devam etti. Uykusu gelmeye başladı ve kedisi Dinah hakkında hayaller kurmaya başladı.",
-      "Aniden bir çubuk ve kuru yaprak yığınının üzerine indi. Hiç incinmemişti ve hemen ayağa fırladı. Yukarı baktı ama yukarısı karanlıktı. Beyaz tavşanın tekrar önden koştuğunu gördü. Alice olabildiğince hızlı koştu ve tavşanın, Eyvah, geç kalacağım!",
-      "dediğini duydu. Bir köşeyi döndü ve kendini birçok kilitli kapının olduğu uzun bir koridorda buldu. Odanın ortasında küçük bir cam masa vardı. Masanın üzerinde küçük, altın bir anahtar duruyordu. Anahtarı her kapıda denedi ama hepsi kilitliydi. Sonunda, bir perdenin arkasında çok küçük bir kapı gördü. Anahtar kilide tam uydu ve kapıyı açtı.",
+      "Aniden bir çubuk ve kuru yaprak yığınının üzerine indi. Hiç incinmemişti ve hemen ayağa fırladı. Yukarı baktı ama yukarısı karanlıktı. Beyaz tavşanın tekrar önden koştuğunu gördü. Alice olabildiğince hızlı koştu ve tavşanın, Eyvah, geç kalacağım! dediğini duydu.",
+      "Bir köşeyi döndü ve kendini birçok kilitli kapının olduğu uzun bir koridorda buldu. Odanın ortasında küçük bir cam masa vardı. Masanın üzerinde küçük, altın bir anahtar duruyordu. Anahtarı her kapıda denedi ama hepsi kilitliydi. Sonunda, bir perdenin arkasında çok küçük bir kapı gördü. Anahtar kilide tam uydu ve kapıyı açtı.",
       "Alice küçük kapıdan içeri baktı ve güzel bir bahçe gördü. Parlak çiçekleri ve serin çeşmeleriyle şimdiye kadar gördüğü en harika bahçeydi. Ancak kapı onun için çok küçüktü. Sadece başını içeri sokabiliyordu. Alice çok üzüldü ve ağlamak için yere oturdu.",
       "Kapıdan geçebilmek için hiç küçülüp küçülmeyeceğini merak etti. Sonra cam masayı hatırladı. Oraya geri koştu ve anahtarı aradı ama anahtar gitmişti. Aniden masanın altında küçük bir cam şişe fark etti. Şişenin üzerinde büyük, net harflerle 'Beni İç' yazan bir kağıt etiket vardı.",
       "Alice çok dikkatliydi. Ne olduğunu bilmeden bir şey içmek istemedi. Şişeye tekrar baktı ve güvenli olduğunu gördü. İçecekten biraz tatmaya karar verdi. Kirazlı tart, ananas ve fırında hindi gibi çok güzel bir tadı vardı.",
@@ -3360,14 +3360,14 @@ export const STORIES_PART1: RawStory[] = [
       "edge": "kenar"
     }
   },
-                  {
+                      {
     id: 'boy_cried_wolf',
     title: "The Boy Who Cried Wolf",
     author: 'Aesop',
     level: 'A2',
     coverUrl: '/covers/boy_cried_wolf.webp',
     en: [
-      "Once upon a time, there was a young shepherd boy who lived in a small village near the mountains. Every day, the boy took the village sheep to the green hills to eat grass. It was a very quiet job and he often felt quite lonely during the long hours.",
+      "High up near the mountains, a young shepherd boy lived in a quiet, sleepy village. Every day, the boy took the village sheep to the green hills to eat grass. It was a very quiet job and he often felt quite lonely during the long hours.",
       "The sun was hot, and the wind blew softly through the trees. He watched the sheep move slowly across the field, eating the clover and drinking from the clear stream. The boy wanted some excitement in his boring day, but nothing ever happened in the quiet hills. He sat under a big tree and thought about how he could make his day more interesting and fun while he waited for the evening to return home.",
       "As the boy sat under the shade, he started to think about the people in the village. He knew they were working hard in their gardens and homes. He wondered what would happen if he called for help. He decided to play a trick on the kind villagers. He stood up, took a deep breath, and shouted as loudly as he could, 'Wolf!",
       "Wolf! There is a wolf attacking the sheep!' His voice traveled across the fields and reached the ears of the farmers. The boy waited with a small smile, feeling very clever for his secret plan. He wanted to see if the people would really come running to save his flock from danger.",
@@ -3402,7 +3402,7 @@ export const STORIES_PART1: RawStory[] = [
       "He promised himself that he would always be honest from this day forward. He knew he had to work very hard to gain the trust of the villagers again. It was a long and difficult path ahead, but he was ready to change his ways. He finally understood that honesty is the best way to live, because a person who lies is never trusted even when they are finally telling the truth."
     ],
     tr: [
-      "Bir zamanlar, dağların yakınındaki küçük bir köyde yaşayan genç bir çoban çocuk vardı. Çocuk her gün köyün koyunlarını otlamaları için yeşil tepelere götürürdü. Bu çok sessiz bir işti ve uzun saatler boyunca genellikle kendini oldukça yalnız hissederdi.",
+      "Dağların hemen yakınındaki sakin bir köyde yaşayan genç bir çoban çocuk vardı. Çocuk her gün köyün koyunlarını ot yemek için yeşil tepelere götürürdü. Bu çok sakin bir işti ve uzun saatler boyunca sık sık kendini oldukça yalnız hissederdi.",
       "Güneş sıcaktı ve rüzgar ağaçların arasından hafifçe esiyordu. Koyunların tarlada yavaşça ilerleyip yonca yediklerini ve berrak dereden su içtiklerini izlerdi. Çocuk sıkıcı gününde biraz heyecan istiyordu ama sessiz tepelerde hiçbir şey olmazdı. Büyük bir ağacın altına oturdu ve akşam olup eve dönmeyi beklerken gününü nasıl daha ilginç ve eğlenceli hale getirebileceğini düşündü.",
       "Çocuk gölgede otururken, köydeki insanlar hakkında düşünmeye başladı. Onların bahçelerinde ve evlerinde çok çalıştıklarını biliyordu. Yardım isterse ne olacağını merak etti. İyi niyetli köylülere bir şaka yapmaya karar verdi. Ayağa kalktı, derin bir nefes aldı ve olabildiğince yüksek sesle bağırdı: 'Kurt!",
       "Kurt! Koyunlara saldıran bir kurt var!' Sesi tarlalardan geçip çiftçilerin kulaklarına ulaştı. Çocuk gizli planı için kendini çok zeki hissederek hafif bir gülümsemeyle bekledi. İnsanların sürüsünü tehlikeden kurtarmak için gerçekten koşarak gelip gelmeyeceklerini görmek istiyordu.",
@@ -3468,7 +3468,7 @@ export const STORIES_PART1: RawStory[] = [
       "trust": "güven"
     }
   },
-              {
+                  {
     id: 'fox_grapes',
     title: "The Fox and the Grapes",
     author: 'Aesop',
@@ -3572,17 +3572,17 @@ export const STORIES_PART1: RawStory[] = [
       "lesson": "ders"
     }
   },
-            {
+                {
     id: 'ali_baba',
     title: "Ali Baba and the Forty Thieves",
     author: 'Antoine Galland',
     level: 'A2',
     coverUrl: '/covers/ali_baba.webp',
     en: [
-      "Once upon a time, in a small town in Persia, lived two brothers named Cassim and Ali Baba. Cassim was very rich because he married a wealthy woman. He had a big house and many beautiful things. Ali Baba was very poor and worked hard every day as a woodcutter.",
+      "Deep within a small, sandy town in Persia, there lived two brothers named Cassim and Ali Baba. Cassim was very rich because he married a wealthy woman. He had a big house and many beautiful things. Ali Baba was very poor and worked hard every day as a woodcutter.",
       "He went to the forest with his three donkeys to collect wood. He cut the wood into small pieces, put them on his donkeys, and walked back to the town to sell them. His life was difficult, but he was always honest and kind to everyone he met. He lived in a tiny, simple house with his wife. Even though they had very little money, they worked hard to have enough bread to eat every day.",
-      "One day, while Ali Baba was working in the forest, he heard a loud noise. He felt afraid, so he climbed up a big tree to hide. From the top of the tree, he saw a group of forty men on horses. They looked like dangerous robbers. They rode quickly until they stopped in front of a giant mountain of rocks.",
-      "The leader of the group got off his horse and stood in front of a hidden door in the stone wall. He shouted loudly, 'Open, Sesame!' Suddenly, the heavy rock door moved and opened by itself. All forty robbers went inside the mountain with their heavy bags. Ali Baba watched everything, feeling very surprised and nervous while he stayed hidden high up in the branches.",
+      "One day, while Ali Baba was working in the forest, he heard a loud noise. He felt afraid, so he climbed up a big tree to hide. From the top of the tree, he saw a group of forty men on horses. They looked like dangerous robbers. They rode quickly until they stopped in front of a giant mountain of rocks. The leader of the group got off his horse and stood in front of a hidden door in the stone wall.",
+      "He shouted loudly, 'Open, Sesame!' Suddenly, the heavy rock door moved and opened by itself. All forty robbers went inside the mountain with their heavy bags. Ali Baba watched everything, feeling very surprised and nervous while he stayed hidden high up in the branches.",
       "Ali Baba waited for a long time. Finally, the leader shouted, 'Close, Sesame!' and the heavy door shut tight. The robbers rode away into the distance. Ali Baba climbed down the tree very slowly. He walked to the cold stone wall and remembered the magic words.",
       "He looked at the wall and said clearly, 'Open, Sesame!' To his amazement, the door opened wide. He went inside and saw a dark cave filled with gold, silver, jewelry, and expensive silk clothes. It was the greatest treasure he had ever seen in his entire life. He knew this gold could change his life forever, but he was careful. He took only as many bags of gold coins as his three donkeys could carry.",
       "Ali Baba left the dark cave and stood by the stone door once more. He looked at the heavy rock and felt a bit afraid, but he remembered the magic words. With a strong voice, he said, 'Close, Sesame!' The heavy stone door moved and closed tightly, hiding all the gold inside. Ali Baba quickly climbed onto his three donkeys.",
@@ -3591,8 +3591,8 @@ export const STORIES_PART1: RawStory[] = [
       "Because they had no small scale to count the gold, his wife ran to Cassim’s house to ask his wife for help. She was a good woman, but she was very curious. She wanted to know what Ali Baba’s wife needed to weigh. She put some sticky fat at the bottom of the scale to see what they were hiding.",
       "Ali Baba’s wife finished counting the gold coins and returned the scale. However, there was a small gold coin stuck to the bottom of the scale because of the fat. When Cassim’s wife saw the gold coin, she was shocked and felt very jealous. She ran to her husband, Cassim, and told him everything.",
       "Cassim was a greedy man and he was very angry that his poor brother was now rich. Early the next morning, he went to Ali Baba’s house. He shouted at his brother and told him that he knew about the cave and the secret treasure. Ali Baba was a kind man, so he decided to share the secret with his brother. He told Cassim the magic words to open the stone door.",
-      "Cassim was a very greedy man and he did not wait for even a moment. He quickly took ten donkeys and went to the forest with his bags. He found the big stone door and used the magic words that Ali Baba told him. He shouted loudly, 'Open, Sesame!' The heavy stone door opened right away. Cassim walked inside the dark cave and saw mountains of gold and silver everywhere.",
-      "He was very happy and he felt like the richest man in the world. He started filling his many bags with gold as fast as he could. He was so excited to be rich that he completely forgot the special words to leave the cave. He shouted other words like 'Open, Barley!' or 'Open, Wheat!' , but the stone door stayed closed. Cassim was trapped and terrified inside the dark cave.",
+      "Cassim was a very greedy man and he did not wait for even a moment. He quickly took ten donkeys and went to the forest with his bags. He found the big stone door and used the magic words that Ali Baba told him. He shouted loudly, 'Open, Sesame!' The heavy stone door opened right away.",
+      "Cassim walked inside the dark cave and saw mountains of gold and silver everywhere. He was very happy and he felt like the richest man in the world. He started filling his many bags with gold as fast as he could. He was so excited to be rich that he completely forgot the special words to leave the cave. He shouted other words like 'Open, Barley!' or 'Open, Wheat!' but the stone door stayed closed. Cassim was trapped and terrified inside the dark cave.",
       "The forty thieves returned to their secret home while the sun was setting. They were surprised to see ten donkeys waiting outside the cave. The captain was very angry and he drew his sharp sword. He thought someone had found their secret treasure. He carefully walked toward the stone door and shouted the magic words to open it.",
       "When the door moved, the thieves ran inside with their swords ready to fight. Cassim was hiding in the corner because he was very scared. When the thieves saw him, they became very violent. They did not show any mercy to the poor man. Cassim tried to escape, but it was too late. He lost his life because he wanted too much money and did not respect the magic of the cave.",
       "Back at home, Ali Baba’s family was very worried because Cassim did not come back. Ali Baba decided to go to the forest to find his brother. He walked for a long time until he reached the secret place. He felt nervous as he approached the stone door. He said, 'Open, Sesame!'",
@@ -3613,7 +3613,7 @@ export const STORIES_PART1: RawStory[] = [
       "He kept his family safe and became a very rich man in the city. The secret of the cave remained hidden from everyone else forever. The forty thieves were gone and no more trouble came to the house. Ali Baba and his family enjoyed their peaceful life every single day. They always remembered the brave girl who saved their lives and brought them happiness and peace."
     ],
     tr: [
-      "Bir zamanlar, İran'daki küçük bir kasabada Kasım ve Ali Baba adında iki kardeş yaşardı. Kasım, zengin bir kadınla evlendiği için çok zengindi. Büyük bir evi ve birçok güzel eşyası vardı. Ali Baba ise çok fakirdi ve her gün oduncu olarak çok çalışırdı.",
+      "İran'ın küçük, kumlu bir kasabasında Kasım ve Ali Baba adında iki kardeş yaşardı. Kasım, zengin bir kadınla evlendiği için çok zengindi. Büyük bir evi ve birçok güzel eşyası vardı. Ali Baba ise çok fakirdi ve her gün oduncu olarak çok çalışırdı.",
       "Üç eşeğiyle birlikte odun toplamak için ormana giderdi. Odunları küçük parçalara ayırır, eşeklerine yükler ve satmak için kasabaya geri yürürdü. Hayatı zordu ama her zaman dürüsttü ve karşılaştığı herkese karşı nazik davranırdı. Karısıyla küçük, basit bir evde yaşıyordu. Çok az paraları olmasına rağmen, her gün yiyecek ekmek bulabilmek için çok çalışıyorlardı.",
       "Bir gün, Ali Baba ormanda çalışırken yüksek bir ses duydu. Korktu ve saklanmak için büyük bir ağaca tırmandı. Ağacın tepesinden, atlı kırk kişilik bir grup gördü. Tehlikeli hırsızlara benziyorlardı. Devasa bir kaya dağının önünde durana kadar hızla ilerlediler. Grubun lideri atından indi ve taş duvardaki gizli bir kapının önünde durdu.",
       "Yüksek sesle 'Açıl susam açıl!' diye bağırdı. Aniden, ağır kaya kapı hareket etti ve kendi kendine açıldı. Kırk hırsızın hepsi ağır çantalarıyla dağın içine girdi. Ali Baba, yüksek dalların arasında gizlenmiş bir halde, çok şaşırarak ve heyecanlanarak her şeyi izledi.",
@@ -3675,7 +3675,7 @@ export const STORIES_PART1: RawStory[] = [
       "peaceful": "huzurlu"
     }
   },
-            {
+                {
     id: 'sinbad',
     title: "Sinbad the Sailor",
     author: 'Antoine Galland',
@@ -3777,7 +3777,7 @@ export const STORIES_PART1: RawStory[] = [
       "courage": "cesaret"
     }
   },
-            {
+                {
     id: 'king_midas',
     title: "King Midas and the Golden Touch",
     author: 'Nathaniel Hawthorne',
@@ -3879,15 +3879,15 @@ export const STORIES_PART1: RawStory[] = [
       "joy": "neşe, sevinç"
     }
   },
-              {
+                  {
     id: 'peter_pan',
     title: "Peter Pan",
     author: 'J. M. Barrie',
     level: 'A2',
     coverUrl: '/covers/peter_pan.webp',
     en: [
-      "The Darling family lived in a lovely house in London. Mr. and Mrs. Darling were kind parents, and they had three children: Wendy, John, and Michael. They also had a very special nurse for the children.",
-      "Her name was Nana, and she was a big, friendly dog. Nana took care of the children every single day. She helped them get ready for bed, gave them their medicine, and watched them while they slept. The children loved Nana very much, and their parents knew that the children were safe with her. It was a happy and peaceful life in the Darling house, but the children often dreamed of adventures far away from their warm beds.",
+      "The Darling family lived in a lovely house in London. Mr. and Mrs. Darling were kind parents, and they had three children: Wendy, John, and Michael. They also had a very special nurse for the children. Her name was Nana, and she was a big, friendly dog.",
+      "Nana took care of the children every single day. She helped them get ready for bed, gave them their medicine, and watched them while they slept. The children loved Nana very much, and their parents knew that the children were safe with her. It was a happy and peaceful life in the Darling house, but the children often dreamed of adventures far away from their warm beds.",
       "One night, something very strange happened in the nursery. Mrs. Darling saw a young boy sitting on the floor. He was a small boy, and he wore clothes made of green leaves. He looked sad because he was trying to stick his shadow back onto his feet with soap.",
       "Mrs. Darling did not know him, but the boy, whose name was Peter Pan, was looking for his lost shadow. He had come through the open window with a tiny ball of light named Tinker Bell. Tinker Bell was a fairy, and she flew around the room quickly. Mrs. Darling was very surprised to see a boy and a fairy in her children's room at night.",
       "Peter Pan was a very interesting boy who did not want to grow up. He lived in a magical place called Neverland with the Lost Boys. In Neverland, children never become adults, and they have adventures every day. Peter loved to listen to stories, and he often sat outside the Darling house to hear Mrs. Darling tell stories to her children.",
@@ -3896,8 +3896,8 @@ export const STORIES_PART1: RawStory[] = [
       "He felt very sad and started to cry. Wendy, who was sleeping in her bed, woke up because of the sound. She saw the boy and was very curious. She was a kind girl, so she offered to help him. Wendy took a needle and some thread, and she carefully sewed the shadow back onto Peter's feet. Peter was delighted and jumped around the room with joy.",
       "Peter told Wendy many wonderful stories about Neverland. He told her about the Lost Boys, the mermaids, and the dangerous pirates. Wendy loved his stories and wanted to visit this magical island. Peter invited Wendy, John, and Michael to fly away with him. The children were excited, but they were also a little bit afraid.",
       "Peter showed them how to fly. He used fairy dust from Tinker Bell, and soon the children started to float in the air. They practiced flying around the nursery, feeling as light as feathers. It was an amazing feeling, and they were ready for their new adventure in the sky. They felt brave and could not wait to leave their home.",
-      "The children flew out of the window into the dark, starry night. Nana saw them from the garden and barked loudly, but it was too late. Mr. and Mrs. Darling were not there to stop them.",
-      "Peter Pan led the way, and Tinker Bell flew in front to show them the path. They flew over London, over the houses, and over the dark streets. The city looked very small and quiet from high above.",
+      "The children flew out of the window into the dark, starry night. Nana saw them from the garden and barked loudly, but it was too late. Mr. and Mrs. Darling were not there to stop them. Peter Pan led the way, and Tinker Bell flew in front to show them the path.",
+      "They flew over London, over the houses, and over the dark streets. The city looked very small and quiet from high above.",
       "Wendy, John, and Michael felt like birds in the sky. They followed Peter toward the second star to the right and straight on until morning. Their exciting journey to Neverland had finally begun, and they left their peaceful life in London far behind them.",
       "The children flew high above the clouds for a very long time. Peter Pan was fast, and the children tried their best to follow him. The air was cold, but the excitement kept them warm. They saw many beautiful things in the sky during the night. Sometimes, they felt very tired because flying was hard work.",
       "They wanted to sleep, but Peter told them they must keep going to reach Neverland. Tinker Bell was not very happy about the children. She flew fast and played mean tricks on them. She did not want Wendy to be with Peter. The little fairy wanted to be Peter's only friend. She moved quickly and hid from the children, but they continued to follow the bright, shining star that showed them the right way to the magical island.",
@@ -3913,7 +3913,7 @@ export const STORIES_PART1: RawStory[] = [
       "However, Captain Hook was still angry and searched the island for his enemy. He knew Peter was near, and he wanted to catch him to end their long fight. The pirates moved through the jungle, but Peter was always one step ahead of them. The children felt safe under the ground, but they did not know that danger was growing outside as the mean Captain Hook planned his next move to find them.",
       "One day, Wendy felt that it was time to return to their home in London. She missed her parents very much and knew they must be worried. Peter Pan did not want her to go because he loved living with her. He tried to convince her to stay in Neverland forever, but Wendy was sure about her choice.",
       "The Lost Boys were sad to hear this news, but they also wanted to see the world beyond the island. They decided to join Wendy, John, and Michael on their long journey home. Peter stayed behind, as he never wanted to grow up or live in a world where children become adults. He said goodbye to his friends with a small smile, even though he felt a little lonely inside.",
-      "The journey home was long and full of danger, but they finally reached the nursery in London. Mr. and Mrs. Darling were surprised and happy to see their children standing in the room again.",
+      "The journey home was long and full of danger, but they finally reached the nursery in London. Mr. and Mrs. Darling were surprised and happy to see their children standing in the room again. At first they could not believe their eyes, but then they hugged them tightly.",
       "They did not believe their eyes at first, but then they hugged them tightly. The parents agreed to keep the Lost Boys as their own children because they were kind and needed a home.",
       "They lived happily in the large house, and the boys started school like other children. Wendy told her parents all about the adventures in Neverland, the magical flying, and the brave Peter Pan. She never forgot her special friend, and she knew that Peter was still out there somewhere, living his own eternal adventure.",
       "Years passed and Wendy grew up to be a woman, just as everyone does. She eventually had a daughter of her own named Jane. Wendy told Jane wonderful stories about Peter Pan and the island of Neverland every night before sleep. One night, Peter came to the window, but he did not know that Wendy was now a mother.",
@@ -3949,7 +3949,7 @@ export const STORIES_PART1: RawStory[] = [
       "Kayıp Çocuklar bu haberi duyduklarına üzüldüler ama onlar da adanın ötesindeki dünyayı görmek istiyorlardı. Wendy, John ve Michael ile birlikte uzun yolculuklarına katılmaya karar verdiler. Peter, büyümek istemediği ya da çocukların yetişkin olduğu bir dünyada yaşamak istemediği için geride kaldı. İçten içe biraz yalnız hissetse de küçük bir gülümsemeyle arkadaşlarına veda etti.",
       "Eve dönüş yolculuğu uzun ve tehlikelerle doluydu ancak sonunda Londra'daki çocuk odasına ulaştılar. Bay ve Bayan Darling, çocuklarını odada tekrar görünce şaşırdılar ve çok mutlu oldular. Başta gözlerine inanamadılar ama sonra onları sıkıca kucakladılar.",
       "Anne ve babası, iyi kalpli oldukları ve bir yuvaya ihtiyaçları olduğu için Kayıp Çocukları kendi evlatları olarak kabul etmeye razı oldular. Büyük evde mutlu bir şekilde yaşadılar ve çocuklar diğerleri gibi okula başladılar.",
-      "Wendy, anne ve babasına Neverland'deki maceraları, büyülü uçuşları ve cesur Peter Pan'i anlattı. Özel arkadaşını hiç unutmadı ve Peter'ın bir yerlerde kendi sonsuz macerasını yaşadığını biliyordu.",
+      "Wendy, anne ve babasına Neverland'deki maceraları, büyülü uçuşları ve cesur Peter Pan'i anlattı. Özel arkadaşını hiç unutmadı ve Peter'ın bir yerlerde kendi sonsuz macerasını yaşadığını biliyordu. Büyük evde mutlu bir şekilde yaşadılar ve çocuklar diğer çocuklar gibi okula başladılar.",
       "Yıllar geçti ve herkesin olduğu gibi Wendy de büyüyüp bir kadın oldu. Zamanla Jane adında bir kızı oldu. Wendy, her gece uyumadan önce Jane'e Peter Pan ve Neverland adası hakkında harika hikayeler anlattı. Bir gece Peter pencereye geldi ancak Wendy'nin artık bir anne olduğunu bilmiyordu.",
       "Ona baktı ve kendisi hala küçük bir çocuk gibi göründüğü için kafası karıştı. Tıpkı bir zamanlar Wendy'yi götürdüğü gibi, bu sefer Peter, Jane'i Neverland'e götürdü. Jane büyüyüp kendi çocukları olduğunda macera döngüsü devam etti. Peter Pan, büyümeyen çocuk olarak kaldı ve hala sihire ve hayallerin gücüne inanan çocukların pencerelerini ziyaret etmeye devam etti."
     ],
@@ -3981,7 +3981,7 @@ export const STORIES_PART1: RawStory[] = [
       "cycle": "döngü"
     }
   },
-  {
+      {
     id: 'lion_mouse',
     title: "The Lion and the Mouse",
     author: 'Aesop',
@@ -4049,9 +4049,8 @@ export const STORIES_PART1: RawStory[] = [
       "kindness": "iyilik",
       "peace": "barış"
     }
-  }
-,
-  {
+  },
+      {
     id: 'ant_grasshopper',
     title: "The Ant and the Grasshopper",
     author: 'Aesop',
@@ -4121,9 +4120,8 @@ export const STORIES_PART1: RawStory[] = [
       "lazy": "tembel",
       "organize": "düzenlemek"
     }
-  }
-,
-  {
+  },
+      {
     id: 'town_country_mouse',
     title: "The Town Mouse and the Country Mouse",
     author: 'Aesop',
@@ -4157,7 +4155,7 @@ export const STORIES_PART1: RawStory[] = [
       "Aniden kapıda çok yüksek bir ses duyulur. Kapı hızla açılır ve çok büyük bir köpek odaya girer. Köpek yüksek sesle havlar ve masaya doğru koşar. Fareler çok korkar. Tarla faresi köpeğe kocaman gözlerle bakar. Daha önce hiç bu kadar büyük bir hayvan görmemiştir. Çok küçük olduğu için titrer. Şehir faresi arkadaşına hemen kaçmasını söyler. Yemeyi bırakırlar ve yüksek masadan atlarlar. Duvardaki küçük deliğe doğru hızla koşarlar.",
       "Köpek kısa bir süre iki fareyi takip eder. Tekrar havlar ve duvarın yakınında zıplar. Fareler çok hızlıdır ve deliğin güvenliğine ulaşırlar. Karanlık duvarın içinde saklanırlar ve sessizlik içinde beklerler. Kalpleri çok hızlı atar çünkü korkarlar. Tarla faresi titriyordur. Artık aç değildir. Yeşil ağacın altındaki sessiz evini düşünür. Şehir güvenli bir yer değildir. Hemen ülkedeki basit hayatına geri dönmek ister.",
       "Tarla faresi duvarın içinde saklanıyor. Çok hızlı nefes alıyor. Arkadaşına bakıyor. Şehir faresi sakin. Köpekten korkmuyor. Şehir faresi arkadaşına sessiz olmasını söylüyor. Uzun bir süre karanlık delikte kalıyorlar. Ev şimdi çok sessiz. Büyük köpek gitti. Şehir faresi tekrar yemek yeme zamanının geldiğini söylüyor. Daha fazla yemek için masaya geri dönmek istiyor. Tarla faresi yorgun ve üzgün hissediyor. Dışarı çıkmak istemiyor. Şehir onun için çok büyük ve çok gürültülü.",
-      "Tarla faresi kafasını sallıyor. Karanlık deliğe bakıyor. Ağacın altındaki yeşil tarlayı ve küçük evini düşünüyor. Şehir tehlikeli. Büyük köpeği sevmiyor. Yüksek seslerden hoşlanmıyor. Sade mısır ve ot yemek istiyor. Burada kendini çok yalnız hissediyor. Şehir faresi ona şaşkınlıkla bakıyor. Anlamıyor. Şehir faresi süslü yiyecekleri ve büyük evi seviyor. Köyün sıkıcı olduğunu düşünüyor. İki arkadaşın iyi bir hayata dair farklı fikirleri var.",
+      "Tarla faresi kafasını sallıyor. Karanlık deliğe bakıyor. Ağacın altındaki yeşil tarlayı düşünüyor. Ağacın altındaki küçük evini özlüyor. Şehir tehlikeli. Büyük köpeği sevmiyor. Yüksek seslerden hoşlanmıyor. Sade mısır ve ot yemek istiyor. Burada kendini çok yalnız hissediyor. Şehir faresi ona şaşkınlıkla bakıyor. Anlamıyor. Şehir faresi süslü yiyecekleri ve büyük evi seviyor. Köyün sıkıcı olduğunu düşünüyor. İki arkadaşın iyi bir hayata dair farklı fikirleri var.",
       "Tarla faresi yavaşça ayağa kalkıyor. Duvardaki deliğe bakıyor. Arkadaşına veda ediyor. Artık süslü peynirleri veya tatlı ekmekleri istemiyor. Kendi evinde güvende olmak istiyor. Karanlık delikten dışarı yürüyor. Büyük odaya son bir kez bakıyor. Kapıya doğru koşuyor. Şehirden ayrıldığı için çok mutlu. Eve doğru uzun yolculuğuna başlıyor. Güneşe doğru hızlıca koşuyor. Hareketli şehri arkasında bırakıyor. Şimdi sessiz köye gitmek istiyor.",
       "Tarla Faresi uzun bir süre yürüyor. Büyük caddelerden geçiyor. Yüksek binaların yanından yürüyor. Yorgun hissediyor ama mutlu. Tekrar yeşil çimleri görüyor. Temiz havayı kokluyor. Artık büyük şehirden çok uzak. Ağaçlardaki sessiz rüzgarı duyuyor. Burada her şey huzurlu. Eski ağacın altındaki küçük evine doğru koşuyor. Sessiz köyde kendini güvende hissediyor. Güneş çiçeklerin üzerinde parlıyor. Çok güzel bir gün. Kuru otlardan oluşan yumuşak yatağında dinlenmeye hazır.",
       "Tarla Faresi duvardaki evine giriyor. Orası karanlık ve sıcak. Kendi zemininde oturuyor. Bir köşede biraz kuru mısır buluyor. Mısırı yavaşça yiyor. Bu basit bir yemek ama onu çok seviyor. Şehirdeki arkadaşını düşünüyor. Süslü peynirleri düşünüyor. Sonra büyük köpeği ve yüksek sesleri düşünüyor. Evinde olduğu için mutlu. Süslü bir hayat istemiyor. Kendi basit evini seviyor. Çok sessiz ve huzurlu hissediyor.",
@@ -4194,9 +4192,8 @@ export const STORIES_PART1: RawStory[] = [
       "sleep": "uyumak",
       "field": "tarla"
     }
-  }
-,
-  {
+  },
+      {
     id: 'crow_pitcher',
     title: "The Crow and the Pitcher",
     author: 'Aesop',
@@ -4206,7 +4203,6 @@ export const STORIES_PART1: RawStory[] = [
       "The day is very hot. The sun is in the sky. It is bright and yellow. A crow flies over the land. The crow is thirsty. He wants to drink some water. He looks down at the ground. He sees the green grass. He sees the big trees. He looks for a river. He looks for a lake. He looks for a small pond. But he does not see any water. The land is dry today. The crow feels very tired. He flies low. He flies slow. He looks everywhere. He wants a drink of water very much. His throat is dry. His tongue is dry. He needs a drink now. He is a brave crow. He keeps looking for water. He does not stop. He continues to fly in the hot sun. The heat is strong today.",
       "The crow sees something on the ground. He flies down to see it. It is a big pitcher. The pitcher stands on the dry dirt. The crow is happy. He thinks there is water inside the pitcher. He lands next to the pitcher. He looks inside with his big black eye. He sees some water at the bottom of the pitcher. He is very excited. He opens his beak. He wants to drink the water. He reaches his head into the pitcher. But the water is too low. The neck of the pitcher is long. His beak is not long enough. He tries again and again. He moves his head left and right. He tries to reach the water. He cannot reach it. The water is deep inside. The crow feels sad now.",
       "The crow stands next to the pitcher. He is still very thirsty. He looks at the water again. It is clean and clear. He really wants that water. He thinks about a plan. He is a smart bird. He looks around the ground. He sees many small stones. The stones are gray and hard. The crow looks at the stones. Then he looks at the pitcher. He has a good idea. He wants to use the stones. He picks up a stone with his beak. He holds the stone very tight. He walks to the pitcher. He drops the stone inside the pitcher. The stone goes to the bottom. The water moves a little bit. The crow is happy. He knows his plan is good. He is ready to work hard for a drink.",
-      "turkish_paragraphs",
       "The crow picks up another stone. It is a gray stone. He walks to the pitcher. He drops the second stone into the pitcher. Plop! The stone hits the water. The water moves up a little. The crow looks at the water. It is now a tiny bit higher than before. He is a very happy bird. He likes his good plan. He knows he needs many stones. He looks at the ground again. There are many stones on the dry dirt. He is ready to work. He does not stop. He keeps his eyes on the goal. He wants the water very much. He knows he can drink soon. He feels strong and smart today.",
       "The crow works fast. He flies to a stone. He takes the stone in his beak. He flies back to the pitcher. He drops the stone into the water. The water goes up again. Plop! Plop! Plop! The sound is nice. The water is higher and higher. The pitcher is deep but the stones take up space. The water has no room. It moves to the top. The crow looks inside the pitcher. The water is near the top now. He feels very excited. He can see the water clearly. His plan works well. He is a smart and tired bird. He works with his heart. The goal is very close now.",
       "He sees the water near the neck of the pitcher. He is very happy. He picks up one more stone. He drops it in the pitcher. The water comes to the very top. It is almost at the edge. The crow looks at the water. It looks cool and fresh. He is ready to drink. His throat is dry. He waits for a moment. He looks at his work. The ground has fewer stones now. Many stones are in the pitcher. He is proud of himself. He stays calm. He moves his head near the pitcher. He is very close to the water. He is a successful crow.",
@@ -4267,9 +4263,8 @@ export const STORIES_PART1: RawStory[] = [
       "wise": "bilge",
       "adventure": "macera"
     }
-  }
-,
-  {
+  },
+      {
     id: 'wind_sun',
     title: "The North Wind and the Sun",
     author: 'Aesop',
@@ -4336,9 +4331,8 @@ export const STORIES_PART1: RawStory[] = [
       "lesson": "ders",
       "kindness": "iyilik"
     }
-  }
-,
-  {
+  },
+      {
     id: 'gingerbread_man',
     title: "The Gingerbread Man",
     author: 'Traditional',
@@ -4404,9 +4398,8 @@ export const STORIES_PART1: RawStory[] = [
       "smart": "zeki",
       "finish": "bitirmek"
     }
-  }
-,
-  {
+  },
+      {
     id: 'chicken_little',
     title: "Chicken Little",
     author: 'Traditional',
@@ -4475,9 +4468,8 @@ export const STORIES_PART1: RawStory[] = [
       "lesson": "ders",
       "exit": "çıkış"
     }
-  }
-,
-  {
+  },
+      {
     id: 'enormous_turnip',
     title: "The Enormous Turnip",
     author: 'Traditional',
@@ -4542,16 +4534,15 @@ export const STORIES_PART1: RawStory[] = [
       "hungry": "aç",
       "team": "takım"
     }
-  }
-,
-  {
+  },
+      {
     id: 'three_billy_goats',
     title: "Three Billy Goats Gruff",
     author: 'Traditional',
     level: 'A1',
     coverUrl: '/covers/three_billy_goats.webp',
     en: [
-      "Once upon a time, there are three billy goats. They are brothers. Their name is Gruff. The first goat is very small. The second goat is medium. The third goat is very big. They live on a big green hill. The goats are very hungry every day. They want to eat green grass. Across the river, there is a big field with fresh green grass. The goats want to go there to eat. But there is one big problem. There is a bridge over the river. Under the bridge, there lives a very mean and scary troll. The troll is very big and has sharp teeth. He does not like people or animals on his bridge. The three goats look at the grass across the river. They feel hungry. They decide to walk to the green field.",
+      "Up on a rocky hillside, there lived three billy goats who were brothers. Their name is Gruff. The first goat is very small. The second goat is medium. The third goat is very big. They live on a big green hill. The goats are very hungry every day. They want to eat green grass. Across the river, there is a big field with fresh green grass. The goats want to go there to eat. But there is one big problem. There is a bridge over the river. Under the bridge, there lives a very mean and scary troll. The troll is very big and has sharp teeth. He does not like people or animals on his bridge. The three goats look at the grass across the river. They feel hungry. They decide to walk to the green field.",
       "The little goat is the first one. He walks to the bridge. He walks slowly. Clip-clop, clip-clop go his little feet on the wooden bridge. He is a brave little goat. He wants to eat the sweet grass. He starts to cross the bridge. Suddenly, a loud voice comes from under the bridge. It is the mean troll. The troll shouts at the little goat. He says, Who is that on my bridge? The little goat stops. He is very scared, but he is also smart. He looks at the troll. He speaks with a small voice. He says, It is only me, the little billy goat. I go to the mountain to get fat. Please do not eat me. I am very small. Wait for my brother. He is much bigger than me.",
       "The troll listens to the little goat. The troll is very hungry, but he wants a big meal. He thinks about the big brother. He likes big meals. The troll says to the little goat, Go away! You are too small. I do not want you. The little goat is happy. He runs across the bridge very fast. He is now on the other side of the river. He sees the green grass. He starts to eat. He is safe now. The troll stays under the bridge. He waits for the next goat. The sun is bright in the sky. The day is very quiet near the river. The troll is ready for the second goat. He waits under the bridge for a new sound. He wants to eat a big lunch.",
       "The second billy goat is the medium brother. He walks to the bridge now. He has big horns. He is stronger than the little goat. He steps onto the wooden bridge with his hooves. Clip-clop, clip-clop, clip-clop go his feet. The bridge makes a loud sound. The troll hears the noise from under the bridge. He is very happy because he is still hungry. He looks up and sees the medium goat on the bridge. The troll is very ugly and mean. He screams at the goat. He says, Who is that on my bridge? The medium goat is not very scared. He has a plan because his brother told him what to do. He looks down at the scary troll and speaks in a loud voice.",
@@ -4568,7 +4559,7 @@ export const STORIES_PART1: RawStory[] = [
       "The day ends and the sun goes down slowly. The sky turns orange and red. The three goats stay together on the grass. They are a happy family. They talk about their day and they sleep under the stars. They are not afraid of anything. They know the bridge is safe for everyone. The river makes a soft sound in the dark. The moon shines bright over the green mountain. The goats dream of fresh food and happy days. They live in peace now. They are very lucky to have each other. The story ends well for the three billy goats Gruff."
     ],
     tr: [
-      "Bir varmış bir yokmuş, üç tane keçi varmış. Onlar kardeşmiş. İsimleri Gruff'muş. İlk keçi çok küçükmüş. İkinci keçi orta boydaymış. Üçüncü keçi ise çok büyükmüş. Büyük yeşil bir tepede yaşarlarmış. Keçiler her gün çok acıkırlarmış. Yeşil ot yemek isterlermiş. Nehrin karşısında taze yeşil otlarla dolu büyük bir alan varmış. Keçiler yemek yemek için oraya gitmek isterlermiş. Ama büyük bir sorun varmış. Nehrin üzerinde bir köprü varmış. Köprünün altında çok kötü ve korkunç bir trol yaşarmış. Trol çok büyükmüş ve keskin dişleri varmış. Köprüsünde insanları ya da hayvanları sevmezmiş. Üç keçi nehrin karşısındaki otlara bakmış. Karınları acıkmış. Yeşil alana yürümeye karar vermişler.",
+      "Kayalık bir tepenin üzerinde yaşayan, kardeş olan üç teke varmış. İsimleri Gruff'muş. İlk keçi çok küçükmüş. İkinci keçi ortamış. Üçüncü keçi çok büyükmüş. Büyük yeşil bir tepede yaşarlarmış. Keçiler her gün çok aç kalırlarmış. Yeşil ot yemek isterlermiş. Nehrin karşısında, taze yeşil otlarla dolu büyük bir alan varmış. Keçiler yemek için oraya gitmek isterlermiş. Ama büyük bir sorun varmış. Nehrin üzerinde bir köprü varmış. Köprünün altında çok kaba ve korkutucu bir trol yaşarmış. Trol çok büyükmüş ve keskin dişleri varmış. Köprüsünde insanları veya hayvanları sevmezmiş. Üç keçi nehrin karşısındaki otlara bakarlarmış. Aç hissederlermiş. Yeşil alana yürümeye karar vermişler.",
       "Küçük keçi ilk gidenmiş. Köprüye doğru yürümüş. Yavaş yavaş yürümüş. Tak tak, tak tak diye küçük ayakları tahta köprüye vuruyormuş. O cesur bir küçük keçiymiş. Tatlı otları yemek istiyormuş. Köprüyü geçmeye başlamış. Aniden, köprünün altından yüksek bir ses gelmiş. Bu kötü tormuş. Trol küçük keçiye bağırmış. Demiş ki, Benim köprümde kim var? Küçük keçi durmuş. Çok korkmuş ama aynı zamanda zekiymiş. Trole bakmış. Küçük bir sesle konuşmuş. Demiş ki, Sadece benim, küçük keçi. Şişmanlamak için dağa gidiyorum. Lütfen beni yeme. Ben çok küçüğüm. Kardeşimi bekle. O benden çok daha büyük.",
       "Trol küçük keçiyi dinlemiş. Trol çok açmış ama büyük bir öğün istiyormuş. Büyük kardeşi düşünmüş. Büyük öğünlerden hoşlanırmış. Trol küçük keçiye, Git buradan! Çok küçüksün. Seni istemiyorum demiş. Küçük keçi mutlu olmuş. Köprüyü çok hızlı geçmiş. Artık nehrin diğer tarafındaymış. Yeşil otları görmüş. Yemeye başlamış. Artık güvende. Trol köprünün altında kalmış. Bir sonraki keçiyi beklemiş. Güneş gökyüzünde parlakmış. Nehrin kıyısı çok sessizmiş. Trol ikinci keçi için hazırmış. Yeni bir ses duymak için köprünün altında beklemiş. Büyük bir öğle yemeği yemek istiyormuş.",
       "İkinci keçi orta boylu kardeştir. Şimdi köprüye doğru yürür. Büyük boynuzları vardır. Küçük keçiden daha güçlüdür. Tırnaklarıyla ahşap köprüye adım atar. Ayakları tık-tık, tık-tık diye ses çıkarır. Köprü yüksek bir ses çıkarır. Trol, köprünün altından bu gürültüyü duyar. Hala aç olduğu için çok mutludur. Yukarı bakar ve köprüdeki orta boylu keçiyi görür. Trol çok çirkin ve kötüdür. Keçiye bağırır. Kim var benim köprümde der. Orta boylu keçi çok korkmaz. Bir planı vardır çünkü kardeşi ona ne yapması gerektiğini söylemiştir. Korkunç trole aşağı bakar ve yüksek bir sesle konuşur.",
@@ -4612,9 +4603,8 @@ export const STORIES_PART1: RawStory[] = [
       "together": "birlikte",
       "happy": "mutlu"
     }
-  }
-,
-  {
+  },
+      {
     id: 'fisherman_wife',
     title: "The Fisherman and His Wife",
     author: 'Brothers Grimm',
@@ -4681,9 +4671,8 @@ export const STORIES_PART1: RawStory[] = [
       "peace": "huzur",
       "thankful": "minnettar"
     }
-  }
-,
-  {
+  },
+      {
     id: 'little_red_hen',
     title: "The Little Red Hen",
     author: 'Traditional',
@@ -4699,10 +4688,6 @@ export const STORIES_PART1: RawStory[] = [
       "The Little Red Hen puts the bag of flour on the ground. She feels very good. She walks to her friends one more time. She asks, 'Who will help me bake the bread?' The dog says, 'Not I.' The cat says, 'Not I.' The pig says, 'Not I.' The Little Red Hen is not angry. She just shakes her head. She starts to work in her kitchen. She gets a bowl. She gets some water. She mixes the flour and the water. She makes the dough with her feet. She works very hard. The kitchen is warm. The dough is soft. She puts the dough in the oven. The smell of bread fills the farm. It smells very good. Everyone can smell the fresh bread now.",
       "The Little Red Hen works alone in the kitchen. She waits for the bread to bake. The fire in the oven is hot. She watches the oven. She waits for a long time. Soon, the bread is ready. The bread is brown and round. It looks very nice. The Little Red Hen takes the bread out of the oven. It is hot and soft. The smell is very strong. She puts the bread on the table. She walks outside to her friends. The dog, the cat, and the pig are there. They smell the bread. They are hungry now. They look at the bread with happy eyes.",
       "The Little Red Hen looks at the dog. She looks at the cat. She looks at the pig. She knows the answer. They do not help with the wheat. They do not help with the flour. They do not help with the bread. Now the bread is ready. The Little Red Hen speaks to them. She asks, 'Who will help me eat the bread?' The dog says, 'I will.' The cat says, 'I will.' The pig says, 'I will.' The Little Red Hen shakes her head. She walks back to her house. She eats the bread by herself. She is a very smart hen. She learns a big lesson today.",
-      "turkish_paragraphs",
-      "Küçük Kırmızı Tavuk, un çuvalını yere bırakır. Kendini çok iyi hisseder. Arkadaşlarına bir kez daha yürür. Sorar: 'Ekmeği pişirmeme kim yardım edecek?' Köpek 'Ben değil' der. Kedi 'Ben değil' der. Domuz 'Ben değil' der. Küçük Kırmızı Tavuk kızgın değildir. Sadece kafasını sallar. Mutfağında çalışmaya başlar. Bir kase alır. Biraz su alır. Unu ve suyu karıştırır. Hamuru ayaklarıyla yapar. Çok sıkı çalışır. Mutfak sıcaktır. Hamur yumuşaktır. Hamuru fırına koyar. Ekmek kokusu çiftliği doldurur. Çok güzel kokar. Artık herkes taze ekmeği koklayabilir.",
-      "Küçük Kırmızı Tavuk mutfakta tek başına çalışır. Ekmeğin pişmesini bekler. Fırındaki ateş sıcaktır. Fırını izler. Uzun bir süre bekler. Yakında ekmek hazır olur. Ekmek kahverengi ve yuvarlaktır. Çok güzel görünür. Küçük Kırmızı Tavuk ekmeği fırından çıkarır. Sıcaktır ve yumuşaktır. Kokusu çok güçlüdür. Ekmeği masanın üzerine koyar. Dışarıya, arkadaşlarının yanına yürür. Köpek, kedi ve domuz oradadır. Ekmeği koklarlar. Şimdi acıkmışlardır. Ekmeklere mutlu gözlerle bakarlar.",
-      "Küçük Kırmızı Tavuk köpeğe bakar. Kediye bakar. Domuza bakar. Cevabı bilir. Buğdayla yardım etmediler. Unla yardım etmediler. Ekmekle yardım etmediler. Şimdi ekmek hazır. Küçük Kırmızı Tavuk onlarla konuşur. Sorar: 'Ekmeği yememe kim yardım edecek?' Köpek 'Ben edeceğim' der. Kedi 'Ben edeceğim' der. Domuz 'Ben edeceğim' der. Küçük Kırmızı Tavuk kafasını sallar. Evine doğru geri yürür. Ekmeği tek başına yer. O çok akıllı bir tavuktur. Bugün büyük bir ders öğrenir.",
       "The little red hen walks back to her house. She carries the hot bread in her hands. The smell is very good. It is warm and tasty. The dog, the cat, and the pig are very hungry. They see the bread. They want to eat the bread. They walk to the little red hen. They are happy to see the food. They open their mouths to eat. They think they can have some bread. They wait for the little red hen to give them a piece. But the little red hen stops. She looks at her friends. She remembers their words. They did not help with the work today.",
       "The little red hen speaks to the dog. She speaks to the cat. She speaks to the pig. She asks them a simple question. She says, 'Who will help me eat this bread?' The dog says, 'I will!' The cat says, 'I will!' The pig says, 'I will!' They all want the bread very much. They are ready to eat. But the little red hen knows the truth. She says no. She does not give them any bread. She is not a mean hen, but she is very fair. The work is hard, and she did it all by herself. Now she wants to eat her own bread.",
       "The little red hen walks into her house alone. She closes the door. She sits at her small table. The bread is soft and delicious. She eats a big piece. It tastes very good because she made it. The dog, the cat, and the pig are sad outside. They stay in the grass. They do not have any bread to eat. They know they did not help the little red hen. They learn a big lesson today. They understand that work is important. The little red hen finishes her dinner. She is happy and full. She goes to sleep in her warm bed.",
@@ -4752,9 +4737,8 @@ export const STORIES_PART1: RawStory[] = [
       "lazy": "tembel",
       "stomach": "mide"
     }
-  }
-,
-  {
+  },
+      {
     id: 'frog_prince',
     title: "The Frog Prince",
     author: 'Brothers Grimm',
@@ -4822,9 +4806,8 @@ export const STORIES_PART1: RawStory[] = [
       "servant": "hizmetkar",
       "travel": "seyahat etmek"
     }
-  }
-,
-  {
+  },
+      {
     id: 'stone_soup',
     title: "Stone Soup",
     author: 'Traditional',
@@ -4851,7 +4834,7 @@ export const STORIES_PART1: RawStory[] = [
       "Üç aç asker uzun bir yolda yürür. Çok yorgundurlar. Günlerce yürürler. Sonunda küçük bir köy görürler. Köydeki insanlar mutlu değildir. Çok yemekleri yoktur. İnsanlar yiyeceklerini evlerinde saklarlar. Kapılarını ve pencerelerini kapatırlar. Paylaşmak istemezler. Askerler kapıları çalar ama kimse açmaz. Askerler çok aç ve üzgündür. Sokağın yakınındaki yere otururlar. Karanlık evlere bakarlar. Paraları ve yemekleri yoktur. Gece soğuk ve uzundur. Bu gece yemek yemek için bir plana ihtiyaçları vardır.",
       "Bir asker ayağa kalkar. Kocaman bir gülümsemesi vardır. Arkadaşlarıyla konuşur. Onlara fikrini anlatır. Özel bir çorba yapmak isterler. Büyük bir tencere arar. Bir evin yanında büyük metal bir tencere bulur. Tencereyi sokağın ortasına koyar. Sonra tencerenin altında küçük bir ateş yakar. Tencereye su ekler. Su soğuktur ama ateş sıcaktır. Köy halkı pencerelerinden dışarı bakar. Meraklıdırlar. Askerleri görmek isterler. Çorba hakkında hiçbir şey bilmezler. Askerlerin büyük tencereyle çalıştığını görürler.",
       "Asker yola gider. Üç pürüzsüz taş alır. Taşları elleriyle temizler. Taşları sıcak suyun içine koyar. Köydeki insanlar onu izler. Bir kadın kapısını açar. Sokağa yürür. Askere bir soru sorar. Çorbayı öğrenmek ister. Asker ona gülümser. Bunun taş çorbası olduğunu söyler. Bunun çok güzel bir çorba olduğunu açıklar. Kadın şaşırır. Daha önce hiç taş çorbası duymamıştır. İzlemek için orada kalır. Askerler suyun kaynamasını bekler. Planlarından memnundurlar.",
-      "Büyük tenceredeki su kaynamaya başlar. Üç asker ateşin etrafında oturur. Yüksek sesle çorba hakkında konuşurlar. Bir asker, taş çorbasının dünyadaki en iyi yemek olduğunu söyler. Çok lezzetli olduğunu belirtir. Ancak, biraz tuzla daha da güzel olacağını da ekler. Köydeki insanlar bunu duyar. Çorbayı görmek için evlerinden çıkarlar. Sokağın yakınında dururlar. Asker onlara gülümser. Birinin biraz tuzu olup olmadığını sorar. Bir adam evinde biraz tuz olduğunu söyler. Gidip tuzu getirir ve askere verir. Asker tuzu tencereye koyar.",
+      "Büyük tenceredeki su kaynamaya başlar. Üç asker ateşin etrafında oturur. Yüksek sesle çorba hakkında konuşurlar. Bir asker, taş çorbasının dünyadaki en iyi yemek olduğunu söyler. Çok lezzetli olduğunu belirtir. Ancak, biraz tuzla daha da güzel olacağını da ekler. Köydeki insanlar bunu duyar. Çorbayı görmek için evlerinden çıkarlar. Sokağın yakınında dururlar. Asker onlara gülümser. Birinin biraz tuzu olup olmadığını sorar. Bir adam evinde biraz tuz olduğunu söyler. Gidip tuzu getirir. Tuzu askere verir. Asker tuzu tencereye koyar.",
       "Çorba artık güzel kokuyor. İnsanlar bu sihirli çorbayı çok merak ediyor. Tencereye daha da yaklaşıyorlar. Asker suyu büyük bir kaşıkla karıştırır. Çorbanın tadına bakar. İyi olduğunu ama daha fazlasına ihtiyaç duyduğunu söyler. İnsanlara havuçların çorbayı mükemmel yaptığını anlatır. Birinin havucu olup olmadığını sorar. Bir kadın mahzeninde biraz havucu olduğunu söyler. Koşup onları getirir. Havuçları askere verir. Asker havuçları suyun içine atar. Köylüler yardım etmekten mutludur. Onlar da çorbanın tadına bakmak isterler. Koku havayı doldurur. Herkes çok açtır.",
       "Daha fazla insan yiyecekle sokağa gelir. Bir kişi soğan getirir. Başka bir kişi patates getirir. Bir çiftçi biraz et getirir. Askerler çok meşguldür. Tüm yiyecekleri büyük tencereye koyarlar. Çorba harika görünür. Köylüler askerlerle konuşmaya başlar. Taşlar hakkında çok soru sorarlar. Askerler gülümseyerek cevap verirler. İnsanların yiyeceklerini paylaştığını görmekten mutludurlar. Köy artık sessiz değildir. Hayat ve mutlu seslerle doludur. İnsanlar artık korkmuyorlar. Akşam yemeğini beklerler. Çorba uzun süre pişer. Her şey yemeye hazırdır.",
       "Büyük tencere şu anda çok dolu. İçinde su, taşlar, tuz, havuç, soğan, patates ve et var. Çorba ateşte fokurduyor. Çok güzel kokuyor. Köylüler ateşin yanında duruyorlar. Tencereye kocaman gözlerle bakıyorlar. Çok açlar. Askerler çorbayı büyük bir tahta kaşıkla karıştırıyorlar. Askerler mutlu. İnsanlarla konuşuyorlar. Gülüyorlar ve hikayeler anlatıyorlar. Köylüler artık askerlerden korkmuyorlar. Askerlere gülümsüyorlar. İnsanlar çorbayı bekliyorlar. Herkes yemeye hazır. Köy güzel kokularla dolu.",
@@ -4892,16 +4875,15 @@ export const STORIES_PART1: RawStory[] = [
       "legend": "efsane",
       "generous": "cömert"
     }
-  }
-,
-  {
+  },
+      {
     id: 'star_money',
     title: "The Star Money",
     author: 'Brothers Grimm',
     level: 'A1',
     coverUrl: '/covers/star_money.webp',
     en: [
-      "Once upon a time, there is a little girl. She is very poor. She does not have a mother or a father. Her parents are not with her. She lives in a small room. The room is very cold. The girl has no bed. She sleeps on the hard floor. The girl only has the clothes on her body. She has one small piece of bread in her hand. She has nothing else in the world. She is very hungry and sad. She walks into the big forest. The forest is quiet and dark. She carries her bread with her. She is a very kind girl. She wants to find a new home. She looks for food, but she finds nothing. She is alone and tired. She walks for a long time under the tall trees. The girl is brave, but she feels very lonely in the cold forest today.",
+      "In the heart of a vast forest, a little girl wandered all alone, carrying nothing but her kind heart. She is very poor. She does not have a mother or a father. Her parents are not with her. She lives in a small room. The room is very cold. The girl has no bed. She sleeps on the hard floor. The girl only has the clothes on her body. She has one small piece of bread in her hand. She has nothing else in the world. She is very hungry and sad. She walks into the big forest. The forest is quiet and dark. She carries her bread with her. She is a very kind girl. She wants to find a new home. She looks for food, but she finds nothing. She is alone and tired. She walks for a long time under the tall trees. The girl is brave, but she feels very lonely in the cold forest today.",
       "The girl walks on the road. She meets a poor man. The man is old. He does not have food. He looks at the girl. He is very hungry. The man says to the girl, I am very hungry. Can you give me some food? The girl has a good heart. She looks at her piece of bread. She gives all her bread to the poor man. She does not keep any for herself. The man is happy. He thanks the girl. The girl is now hungry, but she feels good. She continues to walk on the road. The sun goes down. It is time for the night. The girl walks into the woods. She continues her journey. She is very weak now because she has no food to eat. She walks slowly because she is very tired and the ground is hard.",
       "The girl walks more and more. She meets a little child. The child is very cold. The child has no hat on his head. The child is crying. The girl sees the child. She feels sad for him. She takes off her own hat. The hat is soft and warm. She gives the hat to the child. The child stops crying. He is warm now. The girl is very happy for him. She keeps walking in the cold night. She gives her things to people. She has a very kind soul. She walks far away. The night is very dark now. She does not have any bread. She does not have a hat. She is very poor, but she is very good. She walks alone in the dark forest and she waits for the morning light to come to her.",
       "The girl walks alone in the forest. She is very cold because the night is dark. She meets a second child on the road. This child has no jacket. The weather is very cold and the child shakes. The girl looks at the child and she feels very sad. She takes off her own jacket. It is a warm jacket. She gives it to the child. The child is happy now. The girl is cold, but her heart is full of love. She continues to walk because she has no home. She is very tired, but she is a good person. She helps others every time. She wants to be a good friend to everyone. The dark night stays with her as she goes.",
@@ -4918,7 +4900,7 @@ export const STORIES_PART1: RawStory[] = [
       "The night is very late now. The girl goes to a small bed. The bed is soft and comfortable. She closes her eyes and sleeps. The stars shine through the window. They watch over the girl while she sleeps. She has a dream about a beautiful land. She is rich in her heart. She helps people and she gets help from the sky. The girl is very happy and calm. A new day comes soon. She is ready for a good life. The stars stay with her forever in her soul."
     ],
     tr: [
-      "Bir zamanlar küçük bir kız varmış. Çok fakirmiş. Bir annesi veya babası yokmuş. Ebeveynleri onunla değilmiş. Küçük bir odada yaşıyormuş. Oda çok soğukmuş. Kızın yatağı yokmuş. Sert zeminde uyuyormuş. Kızın sadece vücudundaki kıyafetleri varmış. Elinde bir parça ekmek varmış. Dünyada başka hiçbir şeyi yokmuş. Çok aç ve üzgünmüş. Büyük ormana yürümüş. Orman sessiz ve karanlıkmış. Ekmeğini yanında taşıyormuş. Çok iyi kalpli bir kızmış. Yeni bir ev bulmak istiyormuş. Yiyecek arıyormuş ama hiçbir şey bulamamış. Yalnız ve yorgunmuş. Uzun ağaçların altında uzun süre yürümüş. Kız cesurmuş ama bugün soğuk ormanda kendini çok yalnız hissediyormuş.",
+      "Kocaman bir ormanın derinliklerinde, yanında nazik kalbinden başka hiçbir şey taşımayan yalnız bir kız çocuğu yaşarmış. Çok fakirmiş. Bir annesi veya babası yokmuş. Ebeveynleri onunla değilmiş. Küçük bir odada yaşıyormuş. Oda çok soğukmuş. Kızın yatağı yokmuş. Sert zeminde uyuyormuş. Kızın sadece üzerindeki kıyafetleri varmış. Elinde küçük bir parça ekmek varmış. Dünyada başka hiçbir şeyi yokmuş. Çok aç ve üzgünmüş. Büyük ormana yürümüş. Orman sessiz ve karanlık kalmış. Ekmeğini yanında taşıyormuş. Çok nazik bir kızmış. Yeni bir ev bulmak istiyormuş. Yiyecek arıyormuş ama hiçbir şey bulamamış. Yalnız ve yorgunmuş. Uzun süre uzun ağaçların altında yürümüş. Kız cesurmuş ama bugün soğuk ormanda kendini çok yalnız hissediyormuş.",
       "Kız yolda yürüyormuş. Fakir bir adamla karşılaşmış. Adam yaşlıymış. Yiyeceği yokmuş. Kıza bakmış. Çok açmış. Adam kıza şöyle demiş: Çok açım. Bana biraz yiyecek verebilir misin? Kızın iyi bir kalbi varmış. Ekmek parçasına bakmış. Tüm ekmeğini fakir adama vermiş. Kendisine hiç ayırmamış. Adam mutluymuş. Kıza teşekkür etmiş. Kız şimdi açmış ama kendini iyi hissediyormuş. Yolda yürümeye devam etmiş. Güneş batmış. Gece vaktiymiş. Kız ormana yürümüş. Yolculuğuna devam etmiş. Şimdi çok halsizmiş çünkü yiyecek bir şeyi yokmuş. Çok yorgun olduğu ve zemin sert olduğu için yavaş yürüyormuş.",
       "Kız daha da çok yürümüş. Küçük bir çocukla karşılaşmış. Çocuk çok üşüyormuş. Çocuğun başında şapkası yokmuş. Çocuk ağlıyormuş. Kız çocuğu görmüş. Onun için üzülmüş. Kendi şapkasını çıkarmış. Şapka yumuşak ve sıcakmış. Şapkayı çocuğa vermiş. Çocuk ağlamayı bırakmış. Artık ısınmış. Kız onun adına çok mutluymuş. Soğuk gecede yürümeye devam etmiş. Eşyalarını insanlara vermiş. Çok iyi bir ruhu varmış. Uzaklara yürümüş. Gece artık çok karanlıkmış. Hiç ekmeği yokmuş. Şapkası yokmuş. Çok fakirmiş ama çok iyiymiş. Karanlık ormanda yalnız yürümüş ve sabah ışığının gelmesini beklemiş.",
       "Kız ormanda tek başına yürüyor. Gece karanlık olduğu için çok üşüyor. Yolda ikinci bir çocukla karşılaşıyor. Bu çocuğun ceketi yok. Hava çok soğuk ve çocuk titriyor. Kız çocuğa bakıyor ve kendini çok üzgün hissediyor. Kendi ceketini çıkarıyor. Sıcak bir ceket. Onu çocuğa veriyor. Çocuk şimdi mutlu. Kız üşüyor ama kalbi sevgiyle dolu. Evi olmadığı için yürümeye devam ediyor. Çok yorgun ama o iyi bir insan. Her zaman başkalarına yardım ediyor. Herkese iyi bir arkadaş olmak istiyor. Karanlık gece o giderken onunla birlikte kalıyor.",
@@ -4965,9 +4947,8 @@ export const STORIES_PART1: RawStory[] = [
       "rest": "dinlenmek",
       "safe": "güvende"
     }
-  }
-,
-  {
+  },
+      {
     id: 'city_musicians',
     title: "The Bremen Town Musicians",
     author: 'Brothers Grimm',
@@ -5037,16 +5018,15 @@ export const STORIES_PART1: RawStory[] = [
       "friendship": "arkadaşlık",
       "smile": "gülümsemek"
     }
-  }
-,
-  {
+  },
+      {
     id: 'peter_rabbit',
     title: "The Tale of Peter Rabbit",
     author: 'Beatrix Potter',
     level: 'A2',
     coverUrl: '/covers/peter_rabbit.webp',
     en: [
-      "Once upon a time, there were four little rabbits. Their names were Flopsy, Mopsy, Cotton-tail, and Peter. They lived with their mother in a sand-bank under the root of a very big fir tree. The mother rabbit was kind and busy. She took care of her children every day. One morning, the mother rabbit said, 'You may go into the fields or down the lane, but do not go into Mr. McGregor’s garden.' She explained that their father had an accident there and Mrs. McGregor put him in a pie. The little rabbits listened carefully to their mother. They knew they needed to be very good and safe bunnies.",
+      "Under the roots of a very big fir tree, four little rabbits lived in a cozy sand-bank with their mother. Their names were Flopsy, Mopsy, Cotton-tail, and Peter. The mother rabbit was kind and busy. She took care of her children every day. One morning, the mother rabbit said, 'You may go into the fields or down the lane, but do not go into Mr. McGregor’s garden.' She explained that their father had an accident there and Mrs. McGregor put him in a pie. The little rabbits listened carefully to their mother. They knew they needed to be very good and safe bunnies.",
       "Flopsy, Mopsy, and Cotton-tail were very good little bunnies. They listened to their mother and went down the lane to pick blackberries. They walked slowly and stayed away from the dangerous places. However, Peter was a very naughty rabbit. He did not listen to his mother. He ran straight away to Mr. McGregor’s garden. He squeezed under the garden gate. He felt very excited and brave. He did not think about the danger. He only wanted to eat some fresh vegetables. The sun was warm, and the garden looked full of delicious things to eat for a small rabbit.",
       "Peter started to eat some lettuce. Then he ate some French beans. After that, he ate some radishes. He felt very full and happy. Suddenly, he felt a little sick because he ate too much. He decided to find some parsley to feel better. He walked around the corner of a big cucumber frame. He looked for the parsley, but he saw something else. He saw Mr. McGregor! Mr. McGregor was on his hands and knees. He was planting out young cabbages. When he saw Peter, he stood up and ran after him. He shouted and waved a rake at the naughty little rabbit.",
       "Peter was very frightened by the sight of Mr. McGregor. He jumped up and ran as fast as he could. He was so scared that he did not know where to go. He ran all over the garden because he forgot the way back to the gate. He lost one of his blue shoes among the cabbages, and he lost the other shoe near the potatoes. He did not stop to pick them up because he was in a great hurry. Mr. McGregor ran after him quickly with a rake in his hand. Peter did not look back at all. He just ran forward, hoping to find a place to hide. He was a very fast runner, but the garden was very big, and he felt quite lost among the tall green plants and the stone walls of the garden.",
@@ -5063,7 +5043,7 @@ export const STORIES_PART1: RawStory[] = [
       "After breakfast, Peter decided to be a very good rabbit. He did not go near the garden gate again. He played with his brother and sisters in the soft green grass near their house. They jumped, ran, and enjoyed the beautiful day together. Peter learned a very important lesson about listening to his mother. He was now a happy and safe little rabbit. His mother watched them play and felt very proud of her children. They all lived happily in the hole under the big tree, and Peter never had any more trouble with Mr. McGregor again."
     ],
     tr: [
-      "Bir varmış, bir yokmuş, dört küçük tavşan varmış. İsimleri Flopsy, Mopsy, Cotton-tail ve Peter'mış. Çok büyük bir köknar ağacının kökünün altındaki bir kum tepesinde anneleriyle birlikte yaşıyorlarmış. Anne tavşan kibar ve çalışkanmış. Her gün çocuklarıyla ilgilenirmiş. Bir sabah anne tavşan, 'Tarlalara veya yolun aşağısına gidebilirsiniz, ama Bay McGregor’un bahçesine sakın girmeyin,' demiş. Babalarının orada bir kaza geçirdiğini ve Bayan McGregor’un onu bir turtanın içine koyduğunu anlatmış. Küçük tavşanlar annelerini dikkatle dinlemişler. Çok uslu ve güvende olmaları gerektiğini biliyorlarmış.",
+      "Çok büyük bir köknar ağacının kökleri altındaki konforlu bir kum tepesinde, dört küçük tavşan anneleriyle birlikte yaşarmış. İsimleri Flopsy, Mopsy, Cotton-tail ve Peter'mış. Anne tavşan nazik ve meşgulmüş. Her gün çocuklarıyla ilgilenirmiş. Bir sabah, anne tavşan şöyle demiş: 'Tarlalara veya patikaya gidebilirsiniz ama Bay McGregor'un bahçesine girmeyin.' Babalarının orada bir kaza geçirdiğini ve Bayan McGregor'un onu bir turtaya koyduğunu açıklamış. Küçük tavşanlar annelerini dikkatle dinlemişler. Çok iyi ve güvende tavşancıklar olmaları gerektiğini biliyorlarmış.",
       "Flopsy, Mopsy ve Cotton-tail çok uslu küçük tavşanlarmış. Annelerini dinlemişler ve böğürtlen toplamak için yolun aşağısına gitmişler. Yavaşça yürümüşler ve tehlikeli yerlerden uzak durmuşlar. Ancak Peter çok yaramaz bir tavşanmış. Annesini dinlememiş. Doğruca Bay McGregor’un bahçesine koşmuş. Bahçe kapısının altından geçmiş. Kendini çok heyecanlı ve cesur hissetmiş. Tehlikeyi hiç düşünmemiş. Sadece taze sebzeler yemek istemiş. Hava güneşliymiş ve bahçe küçük bir tavşan için lezzetli şeylerle dolu görünüyormuş.",
       "Peter biraz marul yemeye başlamış. Sonra biraz taze fasulye yemiş. Ondan sonra biraz turp yemiş. Karnı çok tok ve mutluymuş. Aniden, çok fazla yediği için biraz hasta hissetmiş. Daha iyi hissetmek için biraz maydanoz bulmaya karar vermiş. Büyük bir salatalık serasının köşesinden dolaşmış. Maydanoz ararken başka bir şey görmüş. Bay McGregor’u görmüş! Bay McGregor elleri ve dizlerinin üzerindeymiş. Genç lahanaları dikiyormuş. Peter'ı görünce ayağa fırlamış ve onun peşinden koşmuş. Yaramaz küçük tavşana bağırıp tırmık sallamış.",
       "Peter, Bay McGregor'u gördüğünde çok korktu. Hemen sıçradı ve yapabildiği kadar hızlı koştu. O kadar korkmuştu ki nereye gideceğini bilmiyordu. Kapıya giden yolu unuttuğu için bahçenin her yerinde koştu. Mavi ayakkabılarından birini lahanaların arasında, diğerini ise patateslerin yakınında kaybetti. Çok acelesi olduğu için onları almak için durmadı. Bay McGregor elinde tırmıkla arkasından hızla koştu. Peter hiç arkasına bakmadı. Sadece saklanacak bir yer bulma umuduyla ileriye doğru koştu. Çok hızlı bir koşucuydu ama bahçe çok büyüktü ve uzun yeşil bitkilerle bahçenin taş duvarları arasında kendini oldukça kaybolmuş hissetti.",
@@ -5109,9 +5089,8 @@ export const STORIES_PART1: RawStory[] = [
       "lesson": "ders",
       "proud": "gururlu"
     }
-  }
-,
-  {
+  },
+      {
     id: 'bambi',
     title: "Bambi",
     author: 'Felix Salten',
@@ -5121,7 +5100,6 @@ export const STORIES_PART1: RawStory[] = [
       "The sun was shining brightly in the green forest. The birds sang happy songs in the tall trees. Deep in a thicket, a little deer was born. He was very small and had spots on his soft coat. His mother looked at him with love. The little deer stood up on his shaky legs for the first time. He did not know the world yet. Everything was new to him. The air felt warm and the grass was soft under his hooves. He was happy to be near his mother. They stayed in the quiet, safe place under the leaves. It was his first day of life in the big, wide woods. He moved slowly and learned how to stand tall. The forest was calm and beautiful for the small creature.",
       "Soon, the mother walked out of the thicket with her baby. The little deer followed her carefully. The forest was full of many strange things. He heard the wind moving through the branches. He saw butterflies flying in the air. The little deer felt a bit afraid, but his mother was there. She was gentle and kind. They met another deer near a path. The mother introduced her son to the others. He felt shy and stayed close to her side. He watched the other animals move through the tall grass. He learned that the forest was a place where many animals lived together. He felt safe because his mother was the best guide in this green, big world.",
       "The day went on and the forest became very bright. The little deer learned how to walk better. He saw a squirrel running up a tree and a small bird landing on a flower. Everything was interesting. He did not know his name yet, but he knew that he was important to his mother. The sun went down and the shadows became long. The forest started to change, but it was still peaceful. The little deer was tired after his long walk. He laid down on the grass next to his mother. She protected him from the cool night air. He closed his eyes and fell asleep. The night in the forest was quiet and the stars began to shine above them.",
-      "turkish_paragraphs",
       "One morning, the little deer went into the meadow with his mother. The meadow was large, open, and full of sunlight. He felt very happy to be in such a big, sunny place. The grass was green and soft under his small feet. He ran around in circles and jumped high into the air. He felt strong and fast. His mother walked slowly behind him and watched him with love. She told him to be careful because the meadow was not like the quiet forest. In the meadow, they could see everything around them. Bambi looked at the bright flowers and the beautiful blue sky. Everything looked different here. It was a new world for the young deer and he wanted to explore every part of it.",
       "Suddenly, Bambi saw another young deer in the grass. He was very curious and wanted to play with the new friend. The other deer was called Faline. She looked at Bambi with her big, soft eyes. Bambi felt a bit shy at first, but then he walked toward her. They touched noses and started to run together. They chased each other in the tall, green grass. It was a very happy day for them. The birds sang in the trees and the butterflies danced in the light. Bambi felt that he was not alone anymore. He had a friend to share his adventures with. They played until they were tired, then they sat down together to rest under the warm sun.",
       "While they were playing, an older deer appeared at the edge of the meadow. He was tall, strong, and very quiet. All the other animals became silent when he walked by. He did not say anything to anyone. He just stood there and looked at the forest. Bambi looked at him with great wonder. He felt that this deer was very important and special. His mother told him that this was the Great Prince of the forest. The Great Prince was wise and knew all the secrets of their home. He did not play with the young deer, but his presence made everyone feel safe. Bambi watched the Great Prince until he walked away slowly back into the deep, dark trees.",
@@ -5181,9 +5159,8 @@ export const STORIES_PART1: RawStory[] = [
       "reflection": "yansıma",
       "noble": "soylu"
     }
-  }
-,
-  {
+  },
+      {
     id: 'black_beauty',
     title: "Black Beauty",
     author: 'Anna Sewell',
@@ -5250,9 +5227,8 @@ export const STORIES_PART1: RawStory[] = [
       "loyal": "sadık",
       "surprises": "sürprizler"
     }
-  }
-,
-  {
+  },
+      {
     id: 'hans_brinker',
     title: "Hans Brinker",
     author: 'Mary Mapes Dodge',
@@ -5318,9 +5294,8 @@ export const STORIES_PART1: RawStory[] = [
       "adult": "yetişkin",
       "gratitude": "minnet"
     }
-  }
-,
-  {
+  },
+      {
     id: 'five_children_it',
     title: "Five Children and It",
     author: 'E. Nesbit',
@@ -5389,9 +5364,8 @@ export const STORIES_PART1: RawStory[] = [
       "relieved": "rahatlamış",
       "secret": "sır"
     }
-  }
-,
-  {
+  },
+      {
     id: 'railway_children',
     title: "The Railway Children",
     author: 'E. Nesbit',
@@ -5459,9 +5433,8 @@ export const STORIES_PART1: RawStory[] = [
       "support": "desteklemek",
       "realize": "fark etmek"
     }
-  }
-,
-  {
+  },
+      {
     id: 'swiss_family',
     title: "The Swiss Family Robinson",
     author: 'Johann David Wyss',
@@ -5529,16 +5502,15 @@ export const STORIES_PART1: RawStory[] = [
       "decide": "karar vermek",
       "pack": "eşyaları toplamak"
     }
-  }
-,
-  {
+  },
+      {
     id: 'doctor_dolittle',
     title: "Doctor Dolittle",
     author: 'Hugh Lofting',
     level: 'A2',
     coverUrl: '/covers/doctor_dolittle.webp',
     en: [
-      "Once upon a time, there was a doctor named John Dolittle. He lived in a small town called Puddleby-on-the-Marsh. Everyone in the town knew him well. He was a very kind man and he loved animals. He had many pets at his home. He kept goldfish in a pond in the garden, rabbits in the pantry, and white mice in his piano. His sister, Sarah, did not like this. She thought it was very messy. She often told him that the animals were bad for his business. She said that real patients did not want to sit with a hedgehog or a parrot in the waiting room. John was a good doctor, but he did not care about money. He cared about his animal friends more than his human patients.",
+      "In a small town called Puddleby-on-the-Marsh, there lived a kind-hearted doctor named John Dolittle. Everyone in the town knew him well. He was a very kind man and he loved animals. He had many pets at his home. He kept goldfish in a pond in the garden, rabbits in the pantry, and white mice in his piano. His sister, Sarah, did not like this. She thought it was very messy. She often told him that the animals were bad for his business. She said that real patients did not want to sit with a hedgehog or a parrot in the waiting room. John was a good doctor, but he did not care about money. He cared about his animal friends more than his human patients.",
       "As time passed, John Dolittle had fewer and fewer human patients. People stopped coming to his office. They went to other doctors in the town instead. Even though he had no money, John was still happy because he had his animals. He learned a lot about them. His parrot, Polynesia, was his favorite friend. She was very smart and she could talk like a person. One day, Polynesia told him something important. She said that animals could talk to each other. John was very surprised. He wanted to learn their secret languages. He started to study hard. He listened to the birds in the trees and the dogs in the street. Soon, he understood what they said.",
       "After he learned to talk to animals, the doctor was very busy. He did not need to work with people anymore. Animals came from all over the country to see him. They told him about their problems and he helped them feel better. He became a famous animal doctor. He spent all day talking to horses, cows, and even mice. The house was full of noise, but John loved it. He was not sad about his old life at all. He felt like he had a special gift. Being a doctor for animals was the best job in the world. He was finally doing what he really loved every single day.",
       "One morning, a crocodile came to visit the doctor. The crocodile was very sad. He had a bad toothache and he could not eat anything. John Dolittle looked inside the crocodile's big mouth. He was not afraid of the sharp teeth at all. He took out the bad tooth and the crocodile felt much better immediately. Soon, more animals arrived at the house. A monkey came because he had a fever. A rabbit came because he had a sore foot. The doctor listened to every animal carefully. He wrote down their secrets in a big book. Sarah was very unhappy because the house was very dirty and noisy. She decided to leave and live in another town. John was sad to see his sister go, but he wanted to help his animals more than anything.",
@@ -5555,7 +5527,7 @@ export const STORIES_PART1: RawStory[] = [
       "Life back in Puddleby was simple again, but the doctor was not just a regular doctor anymore. He had a special gift because he could talk to all the animals. People from many places came to see him. They brought their sick pets because they knew the doctor could understand them. He helped dogs, cats, and even a sick horse. His house became a home for all animals who needed help. Doctor Dolittle lived a long and happy life with his friends. He loved his work more than anything else in the world. He was the most famous animal doctor, and he was never lonely in his garden full of talking friends."
     ],
     tr: [
-      "Bir zamanlar John Dolittle adında bir doktor vardı. Puddleby-on-the-Marsh adlı küçük bir kasabada yaşıyordu. Kasabadaki herkes onu iyi tanırdı. Çok nazik bir adamdı ve hayvanları severdi. Evinde birçok evcil hayvanı vardı. Bahçedeki bir havuzda Japon balıkları, kilerde tavşanlar ve piyanosunda beyaz fareler besliyordu. Kız kardeşi Sarah bundan hoşlanmıyordu. Bunun çok dağınık olduğunu düşünüyordu. Sık sık ona hayvanların işi için kötü olduğunu söylerdi. Gerçek hastaların bekleme odasında bir kirpi ya da papağanla oturmak istemediğini söylerdi. John iyi bir doktordu ama parayı önemsemezdi. Hayvan arkadaşlarına insan hastalarından daha çok değer verirdi.",
+      "Puddleby-on-the-Marsh adlı küçük bir kasabada, John Dolittle adında iyi kalpli bir doktor yaşardı. Kasabadaki herkes onu iyi tanıyordu. Çok nazik bir adamdı ve hayvanları çok severdi. Evinde birçok evcil hayvanı vardı. Bahçedeki bir havuzda Japon balıkları, kilerde tavşanlar ve piyanosunda beyaz fareler besliyordu. Kız kardeşi Sarah bundan hoşlanmıyordu. Çok dağınık olduğunu düşünüyordu. Hayvanların onun işine zarar verdiğini sık sık söylerdi. Gerçek hastaların bekleme odasında bir kirpi veya papağanla oturmak istemediğini söylerdi. John iyi bir doktordu ama parayı önemsemiyordu. Hayvan dostlarını insan hastalarından daha çok önemsiyordu.",
       "Zaman geçtikçe John Dolittle'ın insan hastaları giderek azaldı. İnsanlar ofisine gelmeyi bıraktılar. Bunun yerine kasabadaki diğer doktorlara gittiler. Parası olmamasına rağmen John yine de mutluydu çünkü hayvanları vardı. Onlar hakkında çok şey öğrendi. Papağanı Polynesia onun en sevdiği arkadaşıydı. Çok zekiydi ve bir insan gibi konuşabiliyordu. Bir gün Polynesia ona önemli bir şey söyledi. Hayvanların birbirleriyle konuşabildiğini anlattı. John çok şaşırdı. Onların gizli dillerini öğrenmek istedi. Çok çalışmaya başladı. Ağaçlardaki kuşları ve sokaktaki köpekleri dinledi. Kısa süre sonra ne dediklerini anladı.",
       "Hayvanlarla konuşmayı öğrendikten sonra doktor çok meşguldü. Artık insanlarla çalışmasına gerek kalmadı. Onu görmek için ülkenin dört bir yanından hayvanlar geldi. Ona sorunlarını anlattılar ve o da daha iyi hissetmelerine yardımcı oldu. Ünlü bir hayvan doktoru oldu. Bütün gününü atlarla, ineklerle ve hatta farelerle konuşarak geçirdi. Ev gürültü doluydu ama John bunu seviyordu. Eski hayatı için hiç üzülmüyordu. Özel bir yeteneği olduğunu hissediyordu. Hayvanlar için doktorluk yapmak dünyanın en iyi işiydi. Sonunda her gün gerçekten sevdiği şeyi yapıyordu.",
       "Bir sabah, bir timsah doktoru ziyarete geldi. Timsah çok üzgündü. Kötü bir diş ağrısı vardı ve hiçbir şey yiyemiyordu. John Dolittle timsahın büyük ağzının içine baktı. Keskin dişlerden hiç korkmadı. Kötü dişi çekti ve timsah hemen çok daha iyi hissetti. Kısa süre sonra eve daha fazla hayvan geldi. Bir maymun ateşi olduğu için geldi. Bir tavşan ayağı acıdığı için geldi. Doktor her hayvanı dikkatle dinledi. Onların sırlarını büyük bir kitaba yazdı. Sarah ev çok kirli ve gürültülü olduğu için çok mutsuzdu. Başka bir şehre taşınmaya karar verdi. John kız kardeşinin gidişine üzüldü ama hayvanlarına yardım etmeyi her şeyden çok istiyordu.",
@@ -5597,9 +5569,8 @@ export const STORIES_PART1: RawStory[] = [
       "pet": "evcil hayvan",
       "famous": "ünlü"
     }
-  }
-,
-  {
+  },
+      {
     id: 'sleepy_hollow',
     title: "The Legend of Sleepy Hollow",
     author: 'Washington Irving',
@@ -5668,9 +5639,8 @@ export const STORIES_PART1: RawStory[] = [
       "mystery": "gizem",
       "victim": "kurban"
     }
-  }
-,
-  {
+  },
+      {
     id: 'rip_van_winkle',
     title: "Rip Van Winkle",
     author: 'Washington Irving',
@@ -5741,9 +5711,8 @@ export const STORIES_PART1: RawStory[] = [
       "truth": "gerçek",
       "simple": "basit"
     }
-  }
-,
-  {
+  },
+      {
     id: 'velveteen_rabbit',
     title: "The Velveteen Rabbit",
     author: 'Margery Williams',
@@ -5814,9 +5783,8 @@ export const STORIES_PART1: RawStory[] = [
       "healthy": "sağlıklı",
       "arrival": "varış"
     }
-  }
-,
-  {
+  },
+      {
     id: 'water_babies',
     title: "The Water-Babies",
     author: 'Charles Kingsley',
@@ -5885,9 +5853,8 @@ export const STORIES_PART1: RawStory[] = [
       "secret": "gizli",
       "peace": "huzur"
     }
-  }
-,
-  {
+  },
+      {
     id: 'nutcracker',
     title: "The Nutcracker",
     author: 'E. T. A. Hoffmann',
@@ -5955,9 +5922,8 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "macera",
       "real": "gerçek"
     }
-  }
-,
-  {
+  },
+      {
     id: 'blue_bird',
     title: "The Blue Bird",
     author: 'Maurice Maeterlinck',
@@ -6027,16 +5993,15 @@ export const STORIES_PART1: RawStory[] = [
       "kindness": "nezaket",
       "thankful": "minnettar"
     }
-  }
-,
-  {
+  },
+      {
     id: 'tom_thumb',
     title: "Tom Thumb",
     author: 'Brothers Grimm',
     level: 'A2',
     coverUrl: '/covers/tom_thumb.webp',
     en: [
-      "Once upon a time, there was a poor woodcutter who lived in a small house in the woods with his wife. They were very happy together, but they had one big sadness. They wanted a child very much, but they did not have any children. One evening, the woodcutter sat by the fire and felt very unhappy. He looked at his wife and said that it was a pity they did not have a small child of their own. He said he would be very happy even if their child was no bigger than his own thumb. His wife agreed and said it would be a wonderful dream if they could have just one tiny child to love and care for.",
+      "Deep in the green woods, a poor woodcutter lived in a humble cottage with his loving wife. They were very happy together, but they had one big sadness. They wanted a child very much, but they did not have any children. One evening, the woodcutter sat by the fire and felt very unhappy. He looked at his wife and said that it was a pity they did not have a small child of their own. He said he would be very happy even if their child was no bigger than his own thumb. His wife agreed and said it would be a wonderful dream if they could have just one tiny child to love and care for.",
       "A few months later, the woodcutter's wife gave birth to a son. The baby was perfectly healthy and strong, but he was truly tiny. He was exactly as small as his father’s thumb, just as they had wished for in their dream. They were filled with joy and decided to call the baby Tom Thumb. They gave him good food and treated him with great love. Although Tom stayed very small, he was very smart and grew stronger every day. His parents were proud of their tiny son and loved him very much because he was a special gift to their quiet home in the deep forest.",
       "Tom Thumb grew up to be a very clever boy. He liked to explore the house and the garden near their home. Even though he was small, he was not afraid of the world. One day, the woodcutter prepared to go into the forest to cut some wood for the fire. He sighed and said he wished he had someone to drive the horse and cart for him while he worked. Tom Thumb immediately jumped up and said he could do it. His father laughed because he did not believe a thumb-sized boy could manage such a big horse, but Tom was very confident that he could help his father with his work.",
       "Tom went to the stable and found the horse. The horse was very tall and big, but Tom was very brave. He climbed up the horse's ear. He sat inside the ear comfortably. Then, Tom began to shout directions to the horse. He told the horse to move forward and to turn left or right. The big horse listened to the tiny boy perfectly. The woodcutter was very surprised when he saw his son sitting in the ear. He felt very happy that Tom could help him with his daily work in the forest. They started their journey together through the trees.",
@@ -6053,7 +6018,7 @@ export const STORIES_PART1: RawStory[] = [
       "The family was together again and they were never sad. Tom lived with his parents and helped them every day in their small home. Even though he was very small, he was very smart and strong. He did not go away again because he loved his family more than anything in the world. Everyone in the village knew about Tom and his amazing story. They liked him very much and always treated him with kindness. Tom lived a happy life with his parents in the little house near the woods. He was truly a special boy and his family was glad to have him home forever."
     ],
     tr: [
-      "Bir zamanlar, ormandaki küçük bir evde karısıyla birlikte yaşayan fakir bir oduncu varmış. Birlikte çok mutluymuşlar ama büyük bir üzüntüleri varmış. Çok çocukları olsun istemişler ama hiç çocukları olmamış. Bir akşam oduncu ateşin başında oturmuş ve kendini çok mutsuz hissetmiş. Karısına bakmış ve kendi küçük çocuklarının olmamasının çok üzücü olduğunu söylemiş. Kendi başparmağı kadar küçük bir çocukları olsa bile çok mutlu olacağını belirtmiş. Karısı da ona katılmış ve sevip bakacakları küçücük bir çocukları olmasının harika bir hayal olacağını söylemiş.",
+      "Yeşil ormanın derinliklerinde, fakir bir oduncu sevgili karısıyla birlikte mütevazı bir kulübede yaşarmış. Birlikte çok mutluymuşlar ama büyük bir üzüntüleri varmış. Bir çocuk sahibi olmayı çok istemişler ama hiç çocukları olmamış. Bir akşam, oduncu ateşin başında oturmuş ve kendini çok mutsuz hissetmiş. Karısına bakmış ve kendilerine ait küçük bir çocukları olmamasının ne kadar acı olduğunu söylemiş. Çocukları kendi başparmağından daha büyük olmasa bile çok mutlu olacağını söylemiş. Karısı da onaylamış ve sevip bakabilecekleri tek bir küçük çocukları olmasının harika bir rüya olacağını söylemiş.",
       "Birkaç ay sonra, oduncunun karısı bir erkek çocuk dünyaya getirmiş. Bebek tamamen sağlıklı ve güçlüymüş ama gerçekten çok minikmiş. Tıpkı hayal ettikleri gibi tam babasının başparmağı kadar küçükmüş. İkisi de sevinçle dolmuş ve bebeğe Parmak Çocuk adını vermeye karar vermişler. Ona iyi yiyecekler vermişler ve büyük bir sevgiyle bakmışlar. Parmak Çocuk çok küçük kalmasına rağmen çok zekiymiş ve her geçen gün daha da güçlenmiş. Anne babası minik oğullarıyla gurur duyuyor ve onu çok seviyorlarmış çünkü o, ormanın derinliklerindeki sessiz evlerine gelen özel bir hediyeymiş.",
       "Parmak Çocuk çok zeki bir oğlan olarak büyümüş. Evlerini ve evlerinin yakınındaki bahçeyi keşfetmekten hoşlanırmış. Küçük olmasına rağmen dünyadan korkmuyormuş. Bir gün oduncu, ateş için biraz odun kesmek üzere ormana gitmeye hazırlanmış. İç çekmiş ve o çalışırken atı ve arabayı sürecek biri olmasını dilediğini söylemiş. Parmak Çocuk hemen zıplamış ve bunu kendisinin yapabileceğini söylemiş. Babası gülmüş çünkü başparmak boyutundaki bir çocuğun koca bir atı idare edebileceğine inanmıyormuş, ancak Parmak Çocuk babasının işine yardım edebileceğinden çok eminmiş.",
       "Tom ahıra gitti ve atı buldu. At çok uzun ve büyüktü ama Tom çok cesurdu. Atın kulağına tırmandı. Kulağın içine rahatça oturdu. Sonra Tom ata yönler bağırmaya başladı. Ata ileri gitmesini ve sağa veya sola dönmesini söyledi. Koca at, küçücük çocuğun sözünü mükemmel bir şekilde dinledi. Oduncu, oğlunu kulağın içinde otururken görünce çok şaşırdı. Tom'un ormandaki günlük işlerinde kendisine yardım edebildiği için çok mutlu oldu. Birlikte ağaçların arasından yolculuklarına başladılar.",
@@ -6100,9 +6065,8 @@ export const STORIES_PART1: RawStory[] = [
       "smart": "zeki",
       "kindness": "iyilik"
     }
-  }
-,
-  {
+  },
+      {
     id: 'little_match_girl',
     title: "The Little Match Girl",
     author: 'Hans Christian Andersen',
@@ -6172,5 +6136,4 @@ export const STORIES_PART1: RawStory[] = [
       "journey": "yolculuk",
       "silent": "sessiz"
     }
-  }
-];
+  }];

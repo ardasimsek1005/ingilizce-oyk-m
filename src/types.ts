@@ -86,4 +86,5 @@ export interface UserStats {
   isPremium: boolean;
   weeklyWords?: number[]; // [Pzt, Sal, Car, Per, Cum, Cmt, Paz]
   weeklyMins?: number[];  // [Pzt, Sal, Car, Per, Cum, Cmt, Paz]
+  lastActiveDate?: string; // YYYY-MM-DD format
 }

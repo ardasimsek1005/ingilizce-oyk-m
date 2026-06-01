@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, Heart, ArrowRight } from 'lucide-react';
+import { BookOpen, Star, ArrowRight } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Book } from '../types';
 
@@ -11,33 +11,6 @@ interface FavoritesTabProps {
   isDarkMode?: boolean;
 }
 
-function getBookTotalPages(book: Book, wordsPerPage: number = 120): number {
-  if (!book.chapters || book.chapters.length === 0) return 0;
-  const chapter = book.chapters[0];
-  if (!chapter || !chapter.paragraphs) return 0;
-  
-  let totalPages = 0;
-  let currentGroupLength = 0;
-  let currentWordCount = 0;
-  
-  chapter.paragraphs.forEach((p) => {
-    const wordsCount = p.textEn.split(/\s+/).filter(Boolean).length;
-    if (currentGroupLength > 0 && currentWordCount >= wordsPerPage) {
-      totalPages++;
-      currentGroupLength = 1;
-      currentWordCount = wordsCount;
-    } else {
-      currentGroupLength++;
-      currentWordCount += wordsCount;
-    }
-  });
-  
-  if (currentGroupLength > 0) {
-    totalPages++;
-  }
-  
-  return totalPages;
-}
 
 export default function FavoritesTab({
   books,
@@ -75,8 +48,8 @@ export default function FavoritesTab({
             isDarkMode ? 'bg-[#1A1A1E] border-[#2A2A30]' : 'bg-white border-[#FFE66D]'
           }`}
         >
-          <div className="w-16 h-16 rounded-full bg-[#FF6B6B]/10 text-[#FF6B6B] flex items-center justify-center mb-5 border border-[#FF6B6B]/20 animate-pulse">
-            <Heart className="w-8 h-8 fill-[#FF6B6B]/10" />
+          <div className="w-16 h-16 rounded-full bg-[#F59E0B]/10 text-[#F59E0B] flex items-center justify-center mb-5 border border-[#F59E0B]/20 animate-pulse">
+            <Star className="w-8 h-8 fill-[#F59E0B]/10" />
           </div>
 
           <h3 className={`font-headline-lg text-xl font-bold mb-2 tracking-tight ${
@@ -88,7 +61,7 @@ export default function FavoritesTab({
           <p className={`text-xs max-w-sm mx-auto mb-8 leading-relaxed font-semibold ${
             isDarkMode ? 'text-gray-400' : 'text-gray-500'
           }`}>
-            Kitaplıktaki hikayelerin köşesinde bulunan kalp butonuna tıklayarak beğendiğiniz eserleri bu sayfaya ekleyebilirsiniz.
+            Kitaplıktaki hikayelerin köşesinde bulunan yıldız butonuna tıklayarak beğendiğiniz eserleri bu sayfaya ekleyebilirsiniz.
           </p>
 
           <button
@@ -127,16 +100,16 @@ export default function FavoritesTab({
                   {book.level}
                 </div>
 
-                {/* Heart Button */}
+                {/* Star Button */}
                 <button
                   onClick={(e) => {
                     e.stopPropagation();
                     onToggleFavorite(book.id);
                   }}
-                  className="absolute top-2 left-2 p-1.5 bg-black/40 backdrop-blur-md hover:bg-black/60 text-[#FF6B6B] rounded-xl border border-white/20 transition-all cursor-pointer shadow-sm scale-95 active:scale-90"
+                  className="absolute top-2 left-2 p-1.5 bg-black/40 backdrop-blur-md hover:bg-black/60 text-[#F59E0B] rounded-xl border border-white/20 transition-all cursor-pointer shadow-sm scale-95 active:scale-90"
                   title="Favorilerden Çıkar"
                 >
-                  <Heart className="w-3.5 h-3.5 fill-[#FF6B6B]" />
+                  <Star className="w-3.5 h-3.5 fill-[#F59E0B]" />
                 </button>
 
                 {book.percentageCompleted === 100 && (
@@ -155,7 +128,7 @@ export default function FavoritesTab({
               
               <div className="flex items-center gap-1.5 mt-1 text-[11px] text-[#4ECDC4] font-bold">
                 <BookOpen className="w-3.5 h-3.5" />
-                <span>{getBookTotalPages(book, 120)} Sayfa</span>
+                <span>{book.totalPages || 0} Sayfa</span>
               </div>
             </motion.div>
           ))}
