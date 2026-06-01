@@ -1019,6 +1019,7 @@ export default function App() {
                     );
                   }
                   setActiveReadingBook(null);
+                  setSearchQuery('');
                 }}
                 savedWords={vocabulary}
                 onSaveWord={handleSaveWord}
@@ -1046,6 +1047,7 @@ export default function App() {
                     );
                   }
                   setActiveReadingBook(null);
+                  setSearchQuery('');
                   setCurrentTab('quiz');
                 }}
                 onToggleFavorite={handleToggleFavorite}
