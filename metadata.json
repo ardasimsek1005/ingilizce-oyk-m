@@ -1,0 +1,6 @@
+{
+  "name": "İngilizce Öyküm",
+  "description": "İnteraktif İngilizce kitap okuma, kelime tıklayarak Türkçe çeviri, oyunlaştırılmış zeka quizi ve haftalık gelişim analizleri sunan premium dil öğrenme uygulaması.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
