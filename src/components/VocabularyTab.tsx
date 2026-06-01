@@ -72,11 +72,11 @@ export default function VocabularyTab({ vocabulary, onStartQuiz, onRemoveWord, s
           İster kendi kaydettiğin kelimelerle pratik yap, ister seviyene göre rastgele kelimeler keşfet.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
           {/* Button 1: Kelimelerimle Pratik Yap */}
           <button
             onClick={() => onStartQuiz('saved')}
-            className="group relative inline-flex items-center justify-center gap-2.5 bg-[#FF6B6B] text-white px-6 py-3 rounded-2xl font-bold text-xs sm:text-sm shadow-md hover:bg-[#e05a5a] transition-all transform active:scale-95 cursor-pointer shadow-[#FF6B6B]/20"
+            className="group relative inline-flex items-center justify-center gap-2.5 bg-[#FF6B6B] text-white px-6 py-3.5 rounded-2xl font-bold text-xs sm:text-sm shadow-md hover:bg-[#e05a5a] transition-all transform active:scale-95 cursor-pointer shadow-[#FF6B6B]/20 w-full max-w-[320px] sm:w-auto"
           >
             <Brain className="w-5 h-5 text-[#FFE66D] fill-[#FFE66D]" />
             <span>Kelimelerimle Pratik Yap</span>
@@ -90,7 +90,7 @@ export default function VocabularyTab({ vocabulary, onStartQuiz, onRemoveWord, s
           {/* Button 2: Rastgele Pratik Yap */}
           <button
             onClick={() => onStartQuiz('random')}
-            className={`group inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-2xl font-bold text-xs sm:text-sm shadow-md transition-all transform active:scale-95 cursor-pointer border ${
+            className={`group inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-2xl font-bold text-xs sm:text-sm shadow-md transition-all transform active:scale-95 cursor-pointer border w-full max-w-[320px] sm:w-auto ${
               isDarkMode 
                 ? 'bg-[#2D3436] border-[#343A40] text-white hover:bg-[#3E4446]' 
                 : 'bg-[#FFE66D]/20 border-[#FFE66D] text-[#2D3436] hover:bg-[#FFE66D]/35'
