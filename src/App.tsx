@@ -37,6 +37,20 @@ export default function App() {
   const [userEmail, setUserEmail] = useState<string | null>(() => {
     return localStorage.getItem('linguist_user_email') || null;
   });
+  const [loginProvider, setLoginProvider] = useState<string | null>(() => {
+    return localStorage.getItem('linguist_login_provider') || null;
+  });
+  const [linkedProviders, setLinkedProviders] = useState<string[]>(() => {
+    const local = localStorage.getItem('linguist_linked_providers');
+    if (local) {
+      try {
+        const parsed = JSON.parse(local);
+        if (Array.isArray(parsed)) return parsed;
+      } catch (e) {}
+    }
+    const current = localStorage.getItem('linguist_login_provider');
+    return current ? [current] : [];
+  });
   
   // Cloud database simulation indicator State
   const [syncStatus, setSyncStatus] = useState<'synced' | 'syncing'>('synced');
@@ -118,7 +132,7 @@ export default function App() {
       isFavorited: !!b.isFavorited
     })) : [];
     
-    const merged = [...sanitizedParsed];
+    const merged: Book[] = [...sanitizedParsed];
     INITIAL_BOOKS.forEach(initBook => {
       const existingIdx = merged.findIndex(b => b.id === initBook.id);
       if (existingIdx === -1) {
@@ -309,7 +323,9 @@ export default function App() {
           vocabulary,
           badges,
           userName,
-          userAvatar
+          userAvatar,
+          loginProvider,
+          linkedProviders
         }
       };
 
@@ -331,7 +347,7 @@ export default function App() {
     }, 1500); // 1.5 seconds debounce
 
     return () => clearTimeout(delayDebounce);
-  }, [userEmail, stats, books, vocabulary, badges, userName, userAvatar]);
+  }, [userEmail, stats, books, vocabulary, badges, userName, userAvatar, loginProvider, linkedProviders]);
 
   // Daily Streak check useEffect
   useEffect(() => {
@@ -428,14 +444,15 @@ export default function App() {
     return () => clearInterval(interval);
   }, [activeReadingBook]);
 
-  // Real-time Cloud Sync Simulated delay triggers
   const triggerCloudSync = (
     customStats?: UserStats,
     customBooks?: Book[],
     customVocabulary?: VocabularyWord[],
     customBadges?: Badge[],
     customName?: string,
-    customAvatar?: string
+    customAvatar?: string,
+    customLoginProvider?: string | null,
+    customLinkedProviders?: string[]
   ) => {
     setSyncStatus('syncing');
     
@@ -453,7 +470,9 @@ export default function App() {
         vocabulary: customVocabulary || vocabulary,
         badges: customBadges || badges,
         userName: customName !== undefined ? customName : userName,
-        userAvatar: customAvatar !== undefined ? customAvatar : userAvatar
+        userAvatar: customAvatar !== undefined ? customAvatar : userAvatar,
+        loginProvider: customLoginProvider !== undefined ? customLoginProvider : loginProvider,
+        linkedProviders: customLinkedProviders !== undefined ? customLinkedProviders : linkedProviders
       }
     };
 
@@ -474,13 +493,33 @@ export default function App() {
     });
   };
 
-  const handleGoogleLogin = (email: string, name?: string, picture?: string) => {
+  const handleGoogleLogin = (email: string, name?: string, picture?: string, provider = 'google') => {
     const finalEmail = email.toLowerCase().trim();
+    
+    // Check if already logged in - if so, this is a link action
+    if (userEmail) {
+      setLinkedProviders(prev => {
+        if (prev.includes(provider)) return prev;
+        const next = [...prev, provider];
+        localStorage.setItem('linguist_linked_providers', JSON.stringify(next));
+        triggerCloudSync(undefined, undefined, undefined, undefined, undefined, undefined, undefined, next);
+        return next;
+      });
+      return;
+    }
+
     const finalName = name || finalEmail.split('@')[0];
     const finalAvatar = picture || AVATAR_OPTIONS[0];
 
     setUserEmail(finalEmail);
     localStorage.setItem('linguist_user_email', finalEmail);
+
+    setLoginProvider(provider);
+    localStorage.setItem('linguist_login_provider', provider);
+
+    const initialLinked = [provider];
+    setLinkedProviders(initialLinked);
+    localStorage.setItem('linguist_linked_providers', JSON.stringify(initialLinked));
 
     setUserName(finalName);
     localStorage.setItem('linguist_user_name', finalName);
@@ -521,6 +560,14 @@ export default function App() {
             setUserAvatar(cloud.userAvatar);
             localStorage.setItem('linguist_user_avatar', cloud.userAvatar);
           }
+          if (cloud.loginProvider) {
+            setLoginProvider(cloud.loginProvider);
+            localStorage.setItem('linguist_login_provider', cloud.loginProvider);
+          }
+          if (cloud.linkedProviders) {
+            setLinkedProviders(cloud.linkedProviders);
+            localStorage.setItem('linguist_linked_providers', JSON.stringify(cloud.linkedProviders));
+          }
         } else {
           // Sync current local state to cloud immediately since it is a new account
           const payload = {
@@ -531,7 +578,9 @@ export default function App() {
               vocabulary,
               badges,
               userName: finalName,
-              userAvatar: finalAvatar
+              userAvatar: finalAvatar,
+              loginProvider: provider,
+              linkedProviders: initialLinked
             }
           };
 
@@ -548,9 +597,36 @@ export default function App() {
       });
   };
 
+  const handleUnlinkProvider = (provider: string) => {
+    setLinkedProviders(prev => {
+      const next = prev.filter(p => p !== provider);
+      localStorage.setItem('linguist_linked_providers', JSON.stringify(next));
+      
+      let nextPrimary = loginProvider;
+      if (loginProvider === provider) {
+        nextPrimary = next[0] || null;
+        setLoginProvider(nextPrimary);
+        if (nextPrimary) {
+          localStorage.setItem('linguist_login_provider', nextPrimary);
+        } else {
+          localStorage.removeItem('linguist_login_provider');
+        }
+      }
+      
+      triggerCloudSync(undefined, undefined, undefined, undefined, undefined, undefined, nextPrimary, next);
+      return next;
+    });
+  };
+
   const handleGoogleLogout = () => {
     setUserEmail(null);
     localStorage.removeItem('linguist_user_email');
+
+    setLoginProvider(null);
+    localStorage.removeItem('linguist_login_provider');
+
+    setLinkedProviders([]);
+    localStorage.removeItem('linguist_linked_providers');
     
     setUserName('');
     setUserAvatar(AVATAR_OPTIONS[0]);
@@ -974,8 +1050,11 @@ export default function App() {
                     onUpdateProfile={handleUpdateProfile}
                     userEmail={userEmail}
                     googleClientId={googleClientId}
+                    loginProvider={loginProvider}
+                    linkedProviders={linkedProviders}
                     onGoogleLogin={handleGoogleLogin}
                     onGoogleLogout={handleGoogleLogout}
+                    onUnlinkProvider={handleUnlinkProvider}
                   />
                 )}
               </>
