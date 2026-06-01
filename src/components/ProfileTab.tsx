@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { UserStats, Badge } from '../types';
-import { INITIAL_BADGES } from '../data';
+import { INITIAL_BADGES, LIBRARY_UNIQUE_WORDS_COUNT } from '../data';
 import { Award, Flame, BookOpen, Clock, Trophy, Share2, Sparkles, TrendingUp, ChevronRight, CheckCircle2, ShieldAlert, BadgeCheck, Zap, Library, Volume2, Crown, X, RefreshCw, Check, Edit2, Camera, Save, Copy, Facebook, Send, MessageCircle, Mail, Link2, QrCode, MessageSquare } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { AVATAR_OPTIONS } from '../avatar_assets';
@@ -493,16 +493,16 @@ export default function ProfileTab({
                 userName
               ) : (
                 <span className="italic text-gray-400 font-normal text-xl select-none">
-                  (No name provided)
+                  (İsim belirtilmedi)
                 </span>
               )}
             </h1>
 
             <div className={`text-xs font-bold font-headline-lg mb-4 space-y-1 ${
-              isDarkMode ? 'text-gray-400' : 'text-gray-450'
+              isDarkMode ? 'text-gray-400' : 'text-gray-455'
             }`}>
               <div>İngilizce Öyküm Okuru</div>
-              <div className="text-[11px] opacity-80 font-medium">Yükleme Tarihi: {installDate}</div>
+              <div className="text-[11px] opacity-80 font-medium">Uygulamayı Yükleme Tarihi: {installDate}</div>
             </div>
 
             <div className="flex flex-wrap justify-center gap-2">
@@ -684,7 +684,7 @@ export default function ProfileTab({
           <span className={`font-headline-lg text-2xl font-bold transition-colors ${
             isDarkMode ? 'text-white' : 'text-[#2D3436]'
           }`}>
-            {stats.learnedWordsCount} <span className="text-xs font-semibold text-gray-400">/ 854</span>
+            {stats.learnedWordsCount} <span className="text-xs font-semibold text-gray-400">/ {LIBRARY_UNIQUE_WORDS_COUNT}</span>
           </span>
           <span className={`text-[10px] font-extrabold tracking-widest mt-1 ${
             isDarkMode ? 'text-gray-400' : 'text-[#2D3436]/60'

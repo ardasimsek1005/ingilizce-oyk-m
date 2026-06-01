@@ -358,5 +358,28 @@ export const ANALYTICS_DATA = [
   { day: 'Paz', learnedWords: 0, readMins: 0 }
 ];
 
-export const LIBRARY_UNIQUE_WORDS_COUNT = 854;
+const getLibraryUniqueWordsCount = (): number => {
+  const uniqueWordsSet = new Set<string>();
+  INITIAL_BOOKS.forEach(book => {
+    if (book.chapters) {
+      book.chapters.forEach(chap => {
+        if (chap.paragraphs) {
+          chap.paragraphs.forEach(p => {
+            if (p.words) {
+              p.words.forEach(w => {
+                const clean = w.en.trim().toLowerCase();
+                if (clean) {
+                  uniqueWordsSet.add(clean);
+                }
+              });
+            }
+          });
+        }
+      });
+    }
+  });
+  return uniqueWordsSet.size;
+};
+
+export const LIBRARY_UNIQUE_WORDS_COUNT = getLibraryUniqueWordsCount();
 
