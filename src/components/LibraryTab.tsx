@@ -52,9 +52,26 @@ export default function LibraryTab({ books, onSelectBook, syncTrigger, isDarkMod
   }, [books, lastActiveBookId]);
 
   const filteredBooks = useMemo(() => {
-    return selectedLevel === 'All'
+    const list = selectedLevel === 'All'
       ? books
       : books.filter(b => b.level === selectedLevel);
+
+    const levelOrder: Record<string, number> = {
+      A1: 1,
+      A2: 2,
+      B1: 3,
+      B2: 4,
+      C1: 5
+    };
+
+    return [...list].sort((a, b) => {
+      const orderA = levelOrder[a.level] || 99;
+      const orderB = levelOrder[b.level] || 99;
+      if (orderA !== orderB) {
+        return orderA - orderB;
+      }
+      return a.title.localeCompare(b.title, 'tr');
+    });
   }, [books, selectedLevel]);
 
   // Pre-calculate and memoize total pages for all books to avoid massive word splitting on render hot-path
