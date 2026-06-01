@@ -72,16 +72,16 @@ export default function VocabularyTab({ vocabulary, onStartQuiz, onRemoveWord, s
           İster kendi kaydettiğin kelimelerle pratik yap, ister seviyene göre rastgele kelimeler keşfet.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
+        <div className="flex flex-col gap-3 justify-center items-center w-full">
           {/* Button 1: Kelimelerimle Pratik Yap */}
           <button
             onClick={() => onStartQuiz('saved')}
-            className="group relative inline-flex items-center justify-center gap-2.5 bg-[#FF6B6B] text-white px-6 py-3.5 rounded-2xl font-bold text-xs sm:text-sm shadow-md hover:bg-[#e05a5a] transition-all transform active:scale-95 cursor-pointer shadow-[#FF6B6B]/20 w-full max-w-[320px] sm:w-auto"
+            className="group relative inline-flex items-center justify-center gap-2 bg-[#FF6B6B] text-white px-5 py-3.5 rounded-2xl font-bold text-[12px] sm:text-sm shadow-md hover:bg-[#e05a5a] transition-all transform active:scale-95 cursor-pointer shadow-[#FF6B6B]/20 w-full max-w-[280px]"
           >
-            <Brain className="w-5 h-5 text-[#FFE66D] fill-[#FFE66D]" />
-            <span>Kelimelerimle Pratik Yap</span>
+            <Brain className="w-4 h-4 text-[#FFE66D] fill-[#FFE66D] shrink-0" />
+            <span className="truncate">Kelimelerimle Pratik Yap</span>
             {vocabulary.length > 0 && (
-              <span className="bg-white/20 px-2 py-0.5 rounded-md text-[10px] font-bold">
+              <span className="bg-white/20 px-1.5 py-0.5 rounded-md text-[9px] font-extrabold shrink-0">
                 {vocabulary.length}
               </span>
             )}
@@ -90,14 +90,14 @@ export default function VocabularyTab({ vocabulary, onStartQuiz, onRemoveWord, s
           {/* Button 2: Rastgele Pratik Yap */}
           <button
             onClick={() => onStartQuiz('random')}
-            className={`group inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-2xl font-bold text-xs sm:text-sm shadow-md transition-all transform active:scale-95 cursor-pointer border w-full max-w-[320px] sm:w-auto ${
+            className={`group inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl font-bold text-[12px] sm:text-sm shadow-md transition-all transform active:scale-95 cursor-pointer border w-full max-w-[280px] ${
               isDarkMode 
                 ? 'bg-[#2D3436] border-[#343A40] text-white hover:bg-[#3E4446]' 
                 : 'bg-[#FFE66D]/20 border-[#FFE66D] text-[#2D3436] hover:bg-[#FFE66D]/35'
             }`}
           >
-            <Sparkles className="w-5 h-5 text-[#FF6B6B] fill-[#FF6B6B]" />
-            <span>Rastgele Pratik Yap</span>
+            <Sparkles className="w-4 h-4 text-[#FF6B6B] fill-[#FF6B6B] shrink-0" />
+            <span className="truncate">Rastgele Pratik Yap</span>
           </button>
         </div>
       </section>
