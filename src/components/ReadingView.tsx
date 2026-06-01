@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useMemo, memo } from 'react';
 import { ArrowLeft, Volume2, Bookmark, BookmarkCheck, Share2, Info, Check, HelpCircle, ChevronRight, BookOpen, Sun, Moon, Heart, Loader2, Lock, AlertCircle, RefreshCw, CheckCircle2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Book, Paragraph, VocabularyWord } from '../types';
@@ -46,6 +46,265 @@ const looksLikeProperNoun = (w: string): boolean => {
   return !isCommonEnglishWord(trimmed);
 };
 
+interface TextToken {
+  type: 'sentence' | 'whitespace';
+  text: string;
+}
+
+// Tokenizes paragraph text to preserve spelling, punctuation, spacing, and newlines exactly
+const parseParagraphText = (text: string): TextToken[] => {
+  if (!text) return [];
+  const tokens: TextToken[] = [];
+  let current = "";
+  
+  for (let i = 0; i < text.length; i++) {
+    const char = text[i];
+    current += char;
+    
+    if (/[.!?]/.test(char)) {
+      // Look ahead for closing quotes so they belong to the sentence
+      let nextIdx = i + 1;
+      let quotes = "";
+      while (nextIdx < text.length && /["'”’]/.test(text[nextIdx])) {
+        quotes += text[nextIdx];
+        nextIdx++;
+      }
+      
+      // Check if after quotes we have a whitespace or end of string
+      const charAfterQuotes = text[nextIdx];
+      if (!charAfterQuotes || /\s/.test(charAfterQuotes)) {
+        // Append quotes to current sentence
+        current += quotes;
+        i = nextIdx - 1; // Advance main pointer over the quotes
+        
+        // Finish sentence
+        tokens.push({ type: 'sentence', text: current });
+        current = "";
+        
+        // Consume subsequent whitespaces
+        let ws = "";
+        while (i + 1 < text.length && /\s/.test(text[i + 1])) {
+          ws += text[i + 1];
+          i++;
+        }
+        if (ws) {
+          tokens.push({ type: 'whitespace', text: ws });
+        }
+      }
+    }
+  }
+  
+  if (current) {
+    tokens.push({ type: 'sentence', text: current });
+  }
+  
+  return tokens;
+};
+
+// Robust sentence splitter without Safari-breaking lookbehinds, keeping parity with tokenization
+const splitSentencesSafe = (text: string): string[] => {
+  return parseParagraphText(text)
+    .filter(t => t.type === 'sentence')
+    .map(t => t.text.trim())
+    .filter(Boolean);
+};
+
+// Safe cleaner for dictionary formatting
+const cleanWord = (w: string): string => {
+  if (!w) return "";
+  return w.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'’“”‘’\[\]{}<>|\\+]/g, "").trim();
+};
+
+import { AVATAR_OPTIONS } from '../avatar_assets';
+
+// Word translation cache to make loading instant (Module Scope)
+const getCachedTranslation = (word: string): { translation: string; notes?: string; level?: string } | null => {
+  try {
+    const wLower = word.toLowerCase().trim();
+    
+    // 1. Check local storage cache of past dynamic translations FIRST (saved AI annotations)
+    const cacheJSON = localStorage.getItem('story_word_translations_cache');
+    if (cacheJSON) {
+      const cache = JSON.parse(cacheJSON);
+      if (cache[wLower]) {
+        // If the cached translation is identical to the key (invalid), reject and let it re-fetch contextually
+        if (cache[wLower].translation && cache[wLower].translation.toLowerCase().trim() !== wLower) {
+          return cache[wLower];
+        }
+      }
+    }
+
+    // 2. Check premium offline dictionary as instant preliminary
+    if (OFFLINE_DICTIONARY[wLower]) {
+      const dictItem = OFFLINE_DICTIONARY[wLower];
+      return {
+        translation: dictItem.tr,
+        notes: dictItem.notes,
+        level: dictItem.level === 'Özel İsim' ? 'Özel İsim' : `${dictItem.level} Seviyesi`
+      };
+    }
+
+    // 3. Check global common terms dictionary
+    if (GLOBAL_DICTIONARY[wLower]) {
+      return {
+        translation: GLOBAL_DICTIONARY[wLower],
+        notes: "Ortak Kelime • Çevrimdışı Sözlük",
+        level: "A1 Seviyesi"
+      };
+    }
+  } catch (e) {
+    console.error("Cache read error:", e);
+  }
+  return null;
+};
+
+const saveCachedTranslation = (word: string, translation: string, notes?: string, level?: string) => {
+  try {
+    const wLower = word.toLowerCase().trim();
+    const cacheJSON = localStorage.getItem('story_word_translations_cache') || '{}';
+    const cache = JSON.parse(cacheJSON);
+    cache[wLower] = { translation, notes, level };
+    localStorage.setItem('story_word_translations_cache', JSON.stringify(cache));
+  } catch (e) {
+    console.error("Cache write error:", e);
+  }
+};
+
+interface ParagraphBlockProps {
+  p: Paragraph & { indexInChapter: number };
+  isDarkMode: boolean;
+  clickedWordIdx: number;
+  clickedWordTr: string;
+  activeSentenceIdx: number;
+  handleSentenceClick: (e: React.MouseEvent, paragraphId: string, sentenceIdx: number, textEn: string, textTr: string) => void;
+  handleWordClick: (e: React.MouseEvent, rawWord: string, tr: string, paragraphId: string, wordIdx: number, sentenceIdx: number, sentEn: string, sentTr: string) => void;
+  wordClickTimeoutRef: React.MutableRefObject<any>;
+  setActiveSentenceTr: (val: any) => void;
+  setClickedWord: (val: any) => void;
+  setSelectedDictWord: (val: any) => void;
+}
+
+const ParagraphBlock = memo(function ParagraphBlock({
+  p,
+  isDarkMode,
+  clickedWordIdx,
+  clickedWordTr,
+  activeSentenceIdx,
+  handleSentenceClick,
+  handleWordClick,
+  wordClickTimeoutRef,
+  setActiveSentenceTr,
+  setClickedWord,
+  setSelectedDictWord
+}: ParagraphBlockProps) {
+  const sentencesEn = useMemo(() => splitSentencesSafe(p.textEn), [p.textEn]);
+  const sentencesTr = useMemo(() => splitSentencesSafe(p.textTr), [p.textTr]);
+  const tokensEn = useMemo(() => parseParagraphText(p.textEn), [p.textEn]);
+
+  return (
+    <div
+      className="p-4 -mx-1.5 rounded-2xl border border-transparent select-text cursor-default relative font-body-reading"
+    >
+      {/* Fluid paragraph content, keeping all user formatting, newlines and spaces exactly! */}
+      <p className="w-full block text-left leading-relaxed text-[18px] whitespace-pre-wrap">
+        {(() => {
+          let sentenceCount = 0;
+          return tokensEn.map((token, tokIdx) => {
+            if (token.type === 'whitespace') {
+              return <span key={tokIdx}>{token.text}</span>;
+            }
+
+            const sIdx = sentenceCount++;
+            const sentEn = token.text;
+            const sentTr = sentencesEn.length === sentencesTr.length
+              ? sentencesTr[sIdx]
+              : p.textTr;
+            const isSentenceActive = activeSentenceIdx === sIdx;
+
+            return (
+              <span
+                key={tokIdx}
+                onClick={(e) => handleSentenceClick(e, p.id, sIdx, sentEn, sentTr)}
+                onDoubleClick={(e) => {
+                  e.stopPropagation();
+                  if (wordClickTimeoutRef.current) {
+                    clearTimeout(wordClickTimeoutRef.current);
+                    wordClickTimeoutRef.current = null;
+                  }
+                  setActiveSentenceTr({
+                    paragraphId: p.id,
+                    sentenceIdx: sIdx,
+                    textEn: sentEn,
+                    textTr: sentTr
+                  });
+                  setClickedWord(null);
+                  setSelectedDictWord(null);
+                }}
+                className={`inline p-0.5 rounded-lg transition-colors duration-150 cursor-help ${
+                  isSentenceActive
+                    ? isDarkMode
+                      ? 'relative bg-[#4ECDC4]/25 ring-2 ring-[#4ECDC4]/30 text-white font-semibold z-30'
+                      : 'relative bg-[#FFE66D]/40 ring-2 ring-[#FFE66D]/80 shadow-3xs text-gray-900 font-semibold z-30'
+                    : isDarkMode
+                      ? 'hover:bg-white/5'
+                      : 'hover:bg-[#FFE66D]/15'
+                }`}
+              >
+                {sentEn.split(/(\s+)/).filter(Boolean).map((part, partIdx) => {
+                  const isWhitespace = /\s/.test(part);
+                  if (isWhitespace) {
+                    return <span key={partIdx}>{part}</span>;
+                  }
+
+                  const rawWord = part;
+                  const cleanW = cleanWord(rawWord);
+                  const customMatch = p.words?.find((w: any) => cleanWord(w.en).toLowerCase() === cleanW.toLowerCase());
+                  
+                  const uniqueWordIdx = sIdx * 1000 + partIdx;
+                  const isWordClicked = clickedWordIdx === uniqueWordIdx;
+
+                  return (
+                    <span
+                      key={partIdx}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        if (customMatch) {
+                          handleWordClick(e, rawWord, customMatch.tr, p.id, uniqueWordIdx, sIdx, sentEn, sentTr);
+                        } else {
+                          handleWordClick(e, rawWord, 'Sözlük karşılığı yükleniyor...', p.id, uniqueWordIdx, sIdx, sentEn, sentTr);
+                        }
+                      }}
+                      className={`cursor-pointer transition-colors duration-150 inline ${
+                        isWordClicked
+                          ? 'relative text-[#FF6B6B] bg-[#FFE66D]/30 rounded underline underline-offset-4 decoration-2 decoration-[#FF6B6B]'
+                          : isDarkMode
+                            ? 'hover:text-[#FF6B6B] text-white'
+                            : 'hover:text-[#FF6b6B]'
+                      }`}
+                    >
+                      {rawWord}
+
+                      {/* INLINE TINY TR TRANSLATION POPUP */}
+                      {isWordClicked && (
+                        <span
+                          className="absolute bottom-full left-1/2 mb-2 px-2.5 py-1 bg-[#2D3436] text-white text-[11px] font-bold rounded-lg whitespace-nowrap z-35 shadow-md flex items-center gap-1.5 h-6 select-none tooltip-popup"
+                        >
+                          <span>{clickedWordTr}</span>
+                          <Check className="w-3 h-3 text-[#4ECDC4]" />
+                        </span>
+                      )}
+                    </span>
+                  );
+                })}
+              </span>
+            );
+          });
+        })()}
+      </p>
+    </div>
+  );
+});
+
 export default function ReadingView({
   book,
   onBack,
@@ -89,58 +348,7 @@ export default function ReadingView({
     setActiveSentenceTr(null);
   };
 
-  // Word translation cache to make loading instant
-  const getCachedTranslation = (word: string): { translation: string; notes?: string; level?: string } | null => {
-    try {
-      const wLower = word.toLowerCase().trim();
-      
-      // 1. Check local storage cache of past dynamic translations FIRST (saved AI annotations)
-      const cacheJSON = localStorage.getItem('story_word_translations_cache');
-      if (cacheJSON) {
-        const cache = JSON.parse(cacheJSON);
-        if (cache[wLower]) {
-          // If the cached translation is identical to the key (invalid), reject and let it re-fetch contextually
-          if (cache[wLower].translation && cache[wLower].translation.toLowerCase().trim() !== wLower) {
-            return cache[wLower];
-          }
-        }
-      }
-
-      // 2. Check premium offline dictionary as instant preliminary
-      if (OFFLINE_DICTIONARY[wLower]) {
-        const dictItem = OFFLINE_DICTIONARY[wLower];
-        return {
-          translation: dictItem.tr,
-          notes: dictItem.notes,
-          level: dictItem.level === 'Özel İsim' ? 'Özel İsim' : `${dictItem.level} Seviyesi`
-        };
-      }
-
-      // 3. Check global common terms dictionary
-      if (GLOBAL_DICTIONARY[wLower]) {
-        return {
-          translation: GLOBAL_DICTIONARY[wLower],
-          notes: "Ortak Kelime • Çevrimdışı Sözlük",
-          level: "A1 Seviyesi"
-        };
-      }
-    } catch (e) {
-      console.error("Cache read error:", e);
-    }
-    return null;
-  };
-
-  const saveCachedTranslation = (word: string, translation: string, notes?: string, level?: string) => {
-    try {
-      const wLower = word.toLowerCase().trim();
-      const cacheJSON = localStorage.getItem('story_word_translations_cache') || '{}';
-      const cache = JSON.parse(cacheJSON);
-      cache[wLower] = { translation, notes, level };
-      localStorage.setItem('story_word_translations_cache', JSON.stringify(cache));
-    } catch (e) {
-      console.error("Cache write error:", e);
-    }
-  };
+  // Word translation cache is declared globally at module scope.
 
   // Pages & Navigation States
   const pages = React.useMemo(() => {
@@ -550,7 +758,7 @@ export default function ReadingView({
   };
 
   // Handle word clicking
-  const handleWordClick = (
+  const handleWordClick = useCallback((
     e: React.MouseEvent,
     wordEn: string,
     wordTr: string,
@@ -705,79 +913,12 @@ export default function ReadingView({
     } catch (outerErr) {
       console.error("Fatal word click outer handling error:", outerErr);
     }
-  };
+  }, [book?.level]);
 
-  interface TextToken {
-    type: 'sentence' | 'whitespace';
-    text: string;
-  }
-
-  // Tokenizes paragraph text to preserve spelling, punctuation, spacing, and newlines exactly
-  const parseParagraphText = (text: string): TextToken[] => {
-    if (!text) return [];
-    const tokens: TextToken[] = [];
-    let current = "";
-    
-    for (let i = 0; i < text.length; i++) {
-      const char = text[i];
-      current += char;
-      
-      if (/[.!?]/.test(char)) {
-        // Look ahead for closing quotes so they belong to the sentence
-        let nextIdx = i + 1;
-        let quotes = "";
-        while (nextIdx < text.length && /["'”’]/.test(text[nextIdx])) {
-          quotes += text[nextIdx];
-          nextIdx++;
-        }
-        
-        // Check if after quotes we have a whitespace or end of string
-        const charAfterQuotes = text[nextIdx];
-        if (!charAfterQuotes || /\s/.test(charAfterQuotes)) {
-          // Append quotes to current sentence
-          current += quotes;
-          i = nextIdx - 1; // Advance main pointer over the quotes
-          
-          // Finish sentence
-          tokens.push({ type: 'sentence', text: current });
-          current = "";
-          
-          // Consume subsequent whitespaces
-          let ws = "";
-          while (i + 1 < text.length && /\s/.test(text[i + 1])) {
-            ws += text[i + 1];
-            i++;
-          }
-          if (ws) {
-            tokens.push({ type: 'whitespace', text: ws });
-          }
-        }
-      }
-    }
-    
-    if (current) {
-      tokens.push({ type: 'sentence', text: current });
-    }
-    
-    return tokens;
-  };
-
-  // Robust sentence splitter without Safari-breaking lookbehinds, keeping parity with tokenization
-  const splitSentencesSafe = (text: string): string[] => {
-    return parseParagraphText(text)
-      .filter(t => t.type === 'sentence')
-      .map(t => t.text.trim())
-      .filter(Boolean);
-  };
-
-  // Safe cleaner for dictionary formatting
-  const cleanWord = (w: string): string => {
-    if (!w) return "";
-    return w.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'’“”‘’\[\]{}<>|\\+]/g, "").trim();
-  };
+  // Helpers splitSentencesSafe, parseParagraphText, and cleanWord are declared globally at module scope for static references.
 
   // Handle double tap / double click for sentence translation (precise sentence bounding)
-  const handleSentenceClick = (
+  const handleSentenceClick = useCallback((
     e: React.MouseEvent,
     paragraphId: string,
     sentenceIdx: number,
@@ -812,7 +953,7 @@ export default function ReadingView({
       }
     }
     lastTapRef.current = { time: now, sentenceKey: currentKey };
-  };
+  }, []);
 
   // Speaks text aloud using premium Google TTS engine, with a fallback to native SpeechSynthesis
   const speakTextAloud = (text: string, lang: 'en-US' | 'tr-TR') => {
@@ -1096,121 +1237,23 @@ export default function ReadingView({
               });
 
               return (
-                <div className="space-y-6">
-                  {renderedParagraphs.map((p, pIdx) => {
-                    const sentencesEn = splitSentencesSafe(p.textEn);
-                    const sentencesTr = splitSentencesSafe(p.textTr);
-                    const tokensEn = parseParagraphText(p.textEn);
-
-                    return (
-                      <div
-                        key={p.id}
-                        className={`p-4 -mx-1.5 rounded-2xl border border-transparent transition-all select-text cursor-default relative`}
-                      >
-                        {/* Fluid paragraph content, keeping all user formatting, newlines and spaces exactly! */}
-                        <p className="w-full block text-left leading-relaxed text-[18px] whitespace-pre-wrap">
-                          {(() => {
-                            let sentenceCount = 0;
-                            return tokensEn.map((token, tokIdx) => {
-                              if (token.type === 'whitespace') {
-                                return <span key={tokIdx}>{token.text}</span>;
-                              }
-
-                              const sIdx = sentenceCount++;
-                              const sentEn = token.text;
-                              const sentTr = sentencesEn.length === sentencesTr.length
-                                ? sentencesTr[sIdx]
-                                : p.textTr;
-                              const isSentenceActive = activeSentenceTr?.paragraphId === p.id && activeSentenceTr?.sentenceIdx === sIdx;
-
-                              return (
-                                <span
-                                  key={tokIdx}
-                                  onClick={(e) => handleSentenceClick(e, p.id, sIdx, sentEn, sentTr)}
-                                  onDoubleClick={(e) => {
-                                    e.stopPropagation();
-                                    if (wordClickTimeoutRef.current) {
-                                      clearTimeout(wordClickTimeoutRef.current);
-                                      wordClickTimeoutRef.current = null;
-                                    }
-                                    setActiveSentenceTr({
-                                      paragraphId: p.id,
-                                      sentenceIdx: sIdx,
-                                      textEn: sentEn,
-                                      textTr: sentTr
-                                    });
-                                    setClickedWord(null);
-                                    setSelectedDictWord(null);
-                                  }}
-                                  className={`relative inline p-0.5 rounded-lg transition-all cursor-help ${
-                                    isSentenceActive
-                                      ? isDarkMode
-                                        ? 'bg-[#4ECDC4]/25 ring-2 ring-[#4ECDC4]/30 text-white font-semibold z-30'
-                                        : 'bg-[#FFE66D]/40 ring-2 ring-[#FFE66D]/80 shadow-3xs text-gray-900 font-semibold z-30'
-                                      : isDarkMode
-                                        ? 'hover:bg-white/5'
-                                        : 'hover:bg-[#FFE66D]/15'
-                                  }`}
-                                >
-                                  {sentEn.split(/(\s+)/).filter(Boolean).map((part, partIdx) => {
-                                    const isWhitespace = /\s/.test(part);
-                                    if (isWhitespace) {
-                                      return <span key={partIdx}>{part}</span>;
-                                    }
-
-                                    const rawWord = part;
-                                    const cleanW = cleanWord(rawWord);
-                                    const customMatch = p.words?.find(w => cleanWord(w.en).toLowerCase() === cleanW.toLowerCase());
-                                    
-                                    const uniqueWordIdx = sIdx * 1000 + partIdx;
-                                    const isWordClicked = clickedWord?.paragraphId === p.id && clickedWord?.wordIdx === uniqueWordIdx;
-
-                                    return (
-                                      <span
-                                        key={partIdx}
-                                        onClick={(e) => {
-                                          e.stopPropagation();
-                                          if (customMatch) {
-                                            handleWordClick(e, rawWord, customMatch.tr, p.id, uniqueWordIdx, sIdx, sentEn, sentTr);
-                                          } else {
-                                            handleWordClick(e, rawWord, 'Sözlük karşılığı yükleniyor...', p.id, uniqueWordIdx, sIdx, sentEn, sentTr);
-                                          }
-                                        }}
-                                        className={`relative cursor-pointer transition-all duration-150 inline ${
-                                          isWordClicked
-                                            ? 'text-[#FF6B6B] bg-[#FFE66D]/30 rounded underline underline-offset-4 decoration-2 decoration-[#FF6B6B]'
-                                            : isDarkMode
-                                              ? 'hover:text-[#FF6B6B] text-white'
-                                              : 'hover:text-[#FF6b6B]'
-                                        }`}
-                                      >
-                                        {rawWord}
-
-                                        {/* INLINE TINY TR TRANSLATION POPUP */}
-                                        <AnimatePresence>
-                                          {isWordClicked && (
-                                            <motion.span
-                                              initial={{ opacity: 0, y: 5, scale: 0.8 }}
-                                              animate={{ opacity: 1, y: 0, scale: 1 }}
-                                              exit={{ opacity: 0, scale: 0.8 }}
-                                              className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2.5 py-1 bg-[#2D3436] text-white text-[11px] font-bold rounded-lg whitespace-nowrap z-35 shadow-md flex items-center gap-1.5 h-6 select-none"
-                                            >
-                                              <span>{clickedWord.tr}</span>
-                                              <Check className="w-3 h-3 text-[#4ECDC4]" />
-                                            </motion.span>
-                                          )}
-                                        </AnimatePresence>
-                                      </span>
-                                    );
-                                  })}
-                                </span>
-                              );
-                            });
-                          })()}
-                        </p>
-                      </div>
-                    );
-                  })}
+                <div className="space-y-6 font-body-reading">
+                  {renderedParagraphs.map((p, pIdx) => (
+                    <ParagraphBlock
+                      key={p.id}
+                      p={p}
+                      isDarkMode={!!isDarkMode}
+                      clickedWordIdx={clickedWord?.paragraphId === p.id ? clickedWord.wordIdx : -1}
+                      clickedWordTr={clickedWord?.paragraphId === p.id ? clickedWord.tr : ''}
+                      activeSentenceIdx={activeSentenceTr?.paragraphId === p.id ? activeSentenceTr.sentenceIdx : -1}
+                      handleSentenceClick={handleSentenceClick}
+                      handleWordClick={handleWordClick}
+                      wordClickTimeoutRef={wordClickTimeoutRef}
+                      setActiveSentenceTr={setActiveSentenceTr}
+                      setClickedWord={setClickedWord}
+                      setSelectedDictWord={setSelectedDictWord}
+                    />
+                  ))}
 
                   {/* PAGE TRANSITION / ROADBLOCK CHECKPOINT CARD */}
                   {currentPageIdx < pages.length - 1 && (
