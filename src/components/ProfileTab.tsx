@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { UserStats, Badge } from '../types';
 import { INITIAL_BADGES } from '../data';
-import { Award, Flame, BookOpen, Clock, Trophy, Share2, Sparkles, TrendingUp, ChevronRight, CheckCircle2, ShieldAlert, BadgeCheck, Zap, Library, Volume2, Crown, X, RefreshCw, Check, Edit2, Camera, Save, Copy, Facebook, Send, MessageCircle, Mail } from 'lucide-react';
+import { Award, Flame, BookOpen, Clock, Trophy, Share2, Sparkles, TrendingUp, ChevronRight, CheckCircle2, ShieldAlert, BadgeCheck, Zap, Library, Volume2, Crown, X, RefreshCw, Check, Edit2, Camera, Save, Copy, Facebook, Send, MessageCircle, Mail, Link2, QrCode, MessageSquare } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { AVATAR_OPTIONS } from '../avatar_assets';
 
@@ -61,6 +61,7 @@ export default function ProfileTab({
   const [activeBarIdx, setActiveBarIdx] = useState<number | null>(null);
   const [isShareModalOpen, setIsShareModalOpen] = useState(false);
   const [sharePlatform, setSharePlatform] = useState<string | null>(null);
+  const [showQrCode, setShowQrCode] = useState(false);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
 
   // Login mock modal state
@@ -244,24 +245,8 @@ export default function ProfileTab({
   };
 
   const handleShareClick = () => {
-    const appShareUrl = window.location.origin;
-    if (navigator.share) {
-      navigator.share({
-        title: 'İngilizce Öyküm',
-        text: `Hey! İngilizce Öyküm ile harika İngilizce hikayeler okuyup yeni kelimeler öğreniyorum. Benimle birlikte katılmak istersen, işte davet kodum: ${shareCode}`,
-        url: appShareUrl
-      })
-      .then(() => {
-        setToastMessage('Başarıyla paylaşıldı! 🚀');
-        setTimeout(() => setToastMessage(null), 3000);
-      })
-      .catch(err => {
-        console.log('Share failed or canceled:', err);
-        setIsShareModalOpen(true);
-      });
-    } else {
-      setIsShareModalOpen(true);
-    }
+    setShowQrCode(false);
+    setIsShareModalOpen(true);
   };
 
   const handlePlatformShare = (platform: string) => {
@@ -1297,22 +1282,38 @@ export default function ProfileTab({
       {/* MOCK HIGH-FIDELITY SOCIAL SHARING SYSTEM MODAL */}
       <AnimatePresence>
         {isShareModalOpen && (
-          <div className="fixed inset-0 z-50 bg-[#2D3436]/60 backdrop-blur-md flex items-center justify-center p-4">
+          <div className="fixed inset-0 z-50 bg-[#2D3436]/60 backdrop-blur-md flex items-end justify-center">
+            {/* Click-outside backdrop closer */}
+            <div 
+              className="absolute inset-0 cursor-pointer" 
+              onClick={() => setIsShareModalOpen(false)} 
+            />
+            
             <motion.div
-              initial={{ scale: 0.95, opacity: 0, y: 20 }}
-              animate={{ scale: 1, opacity: 1, y: 0 }}
-              exit={{ scale: 0.95, opacity: 0, y: 20 }}
-              className={`max-w-md w-full rounded-[28px] border-2 p-6 flex flex-col shadow-2xl relative transition-all ${
-                isDarkMode ? 'bg-[#1A1A1E] border-[#2A2A30]' : 'bg-white border-[#FFE66D]'
+              initial={{ y: "100%", opacity: 0.5 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: "100%", opacity: 0.5 }}
+              transition={{ type: "spring", damping: 25, stiffness: 200 }}
+              className={`w-full max-w-md rounded-t-[32px] p-6 pb-8 flex flex-col shadow-2xl relative transition-all border-t-2 z-10 ${
+                isDarkMode ? 'bg-[#1A1A1E] border-[#2A2A30]' : 'bg-white border-[#FFE66D]/45'
               }`}
             >
+              {/* Drag handle */}
+              <div className="w-12 h-1.5 bg-gray-300 dark:bg-gray-700 rounded-full mx-auto mb-5 shrink-0 select-none" />
+
               {/* Header */}
               <div className="flex justify-between items-center mb-6">
-                <h3 className={`font-headline-lg text-lg font-bold ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
-                  Uygulamayı Paylaş
+                <h3 className={`font-headline-lg text-lg font-extrabold ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
+                  {showQrCode ? 'QR Kod ile Paylaş' : 'Uygulamayı Paylaş'}
                 </h3>
                 <button
-                  onClick={() => setIsShareModalOpen(false)}
+                  onClick={() => {
+                    if (showQrCode) {
+                      setShowQrCode(false);
+                    } else {
+                      setIsShareModalOpen(false);
+                    }
+                  }}
                   className={`p-1.5 rounded-full cursor-pointer transition-colors ${
                     isDarkMode ? 'text-gray-400 hover:bg-[#2A2A30] hover:text-white' : 'text-gray-500 hover:bg-gray-100 hover:text-gray-800'
                   }`}
@@ -1321,116 +1322,181 @@ export default function ProfileTab({
                 </button>
               </div>
 
-              {/* Description */}
-              <p className={`text-xs mb-5 leading-relaxed font-medium ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-                İngilizce Öyküm'ü sevdiklerinize önerin, birlikte harika hikayeler okuyarak kelime dağarcığınızı geliştirin!
-              </p>
-
-              {/* Copy Link field */}
-              <div className="space-y-2 mb-6">
-                <span className="text-[10px] font-bold text-gray-400 tracking-wider block uppercase">
-                  Uygulama Bağlantısı
-                </span>
-                <div className={`flex items-center justify-between gap-2 p-2 pl-3 rounded-xl border transition-colors ${
-                  isDarkMode ? 'bg-[#121214] border-gray-800' : 'bg-gray-50 border-gray-200'
-                }`}>
-                  <span className={`text-xs font-mono truncate select-all ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                    {window.location.origin}
-                  </span>
-                  <button
-                    onClick={() => handleCopyLinkOrCode(window.location.origin, false)}
-                    className="flex items-center gap-1.5 px-4 py-2 bg-[#FF6B6B] hover:bg-[#ff5252] text-white rounded-lg text-xs font-bold transition-all cursor-pointer shadow-sm shadow-[#FF6B6B]/10 active:scale-95 shrink-0"
-                  >
-                    <Copy className="w-3.5 h-3.5" />
-                    <span>Kopyala</span>
-                  </button>
-                </div>
-              </div>
-
-              {/* Social Channels Row */}
-              <div className="space-y-3 mb-6">
-                <span className="text-[10px] font-bold text-gray-400 tracking-wider block uppercase">
-                  Sosyal Ağlarda Paylaş
-                </span>
-                
-                <div className="flex justify-around items-center gap-2 py-2">
-                  {/* WhatsApp */}
-                  <a
-                    href={`https://api.whatsapp.com/send?text=${encodeURIComponent(`Hey! İngilizce Öyküm ile harika İngilizce hikayeler okuyup yeni kelimeler öğreniyorum. Benimle birlikte katılmak istersen, işte davet kodum: ${shareCode} - Sen de hemen dene: ${window.location.origin}`)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => handlePlatformShare('WhatsApp')}
-                    className="flex flex-col items-center gap-1.5 group cursor-pointer text-center"
-                  >
-                    <div className="w-12 h-12 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-md shadow-[#25D366]/20 transition-transform group-hover:scale-110 active:scale-95">
-                      <MessageCircle className="w-6 h-6 fill-white text-[#25D366]" />
-                    </div>
-                    <span className="text-[10px] font-bold text-gray-400 group-hover:text-[#25D366] transition-colors">WhatsApp</span>
-                  </a>
-
-                  {/* Telegram */}
-                  <a
-                    href={`https://t.me/share/url?url=${encodeURIComponent(window.location.origin)}&text=${encodeURIComponent(`Hey! İngilizce Öyküm ile harika İngilizce hikayeler okuyup yeni kelimeler öğreniyorum. Benimle birlikte katılmak istersen, işte davet kodum: ${shareCode}`)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => handlePlatformShare('Telegram')}
-                    className="flex flex-col items-center gap-1.5 group cursor-pointer text-center"
-                  >
-                    <div className="w-12 h-12 rounded-full bg-[#0088cc] text-white flex items-center justify-center shadow-md shadow-[#0088cc]/20 transition-transform group-hover:scale-110 active:scale-95">
-                      <Send className="w-5 h-5 fill-white text-[#0088cc] translate-x-[-1px] translate-y-[1px]" />
-                    </div>
-                    <span className="text-[10px] font-bold text-gray-400 group-hover:text-[#0088cc] transition-colors">Telegram</span>
-                  </a>
-
-                  {/* Facebook */}
-                  <a
-                    href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.origin)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => handlePlatformShare('Facebook')}
-                    className="flex flex-col items-center gap-1.5 group cursor-pointer text-center"
-                  >
-                    <div className="w-12 h-12 rounded-full bg-[#1877F2] text-white flex items-center justify-center shadow-md shadow-[#1877F2]/20 transition-transform group-hover:scale-110 active:scale-95">
-                      <Facebook className="w-6 h-6 fill-white text-[#1877F2]" />
-                    </div>
-                    <span className="text-[10px] font-bold text-gray-400 group-hover:text-[#1877F2] transition-colors">Facebook</span>
-                  </a>
-
-                  {/* E-posta */}
-                  <a
-                    href={`mailto:?subject=${encodeURIComponent('İngilizce Öyküm Daveti')}&body=${encodeURIComponent(`Hey! İngilizce Öyküm ile harika İngilizce hikayeler okuyup yeni kelimeler öğreniyorum. Benimle birlikte katılmak istersen, işte davet kodum: ${shareCode} - Sen de hemen dene: ${window.location.origin}`)}`}
-                    onClick={() => handlePlatformShare('E-posta')}
-                    className="flex flex-col items-center gap-1.5 group cursor-pointer text-center"
-                  >
-                    <div className="w-12 h-12 rounded-full bg-[#EA4335] text-white flex items-center justify-center shadow-md shadow-[#EA4335]/20 transition-transform group-hover:scale-110 active:scale-95">
-                      <Mail className="w-5 h-5 text-white" />
-                    </div>
-                    <span className="text-[10px] font-bold text-gray-400 group-hover:text-[#EA4335] transition-colors">E-posta</span>
-                  </a>
-                </div>
-              </div>
-
-              {/* Davet Kodu Area */}
-              <div className={`p-4 rounded-2xl border border-dashed transition-colors ${
-                isDarkMode ? 'bg-[#121214] border-gray-800' : 'bg-[#FFFBF0] border-[#FFE66D]'
-              }`}>
-                <div className="flex justify-between items-center">
-                  <div className="text-left">
-                    <span className="text-[9px] font-bold text-gray-400 tracking-wider block uppercase">
-                      Kişisel Davet Kodunuz
-                    </span>
-                    <span className="font-mono text-sm font-extrabold tracking-wider text-[#FF6B6B]">
-                      {shareCode}
-                    </span>
+              {showQrCode ? (
+                <div className="flex flex-col items-center justify-center py-4 space-y-4">
+                  {/* Vector QR Code SVG */}
+                  <div className="p-4 bg-white rounded-3xl shadow-md border border-gray-100">
+                    <svg className="w-48 h-48 text-gray-950" viewBox="0 0 100 100" fill="currentColor">
+                      {/* Standard QR Code lookalike using SVG path details */}
+                      <path d="M0 0h30v30H0zm5 5v20h20V5zm5 5h10v10H10zM70 0h30v30H70zm5 5v20h20V5zm5 5h10v10H80zM0 70h30v30H0zm5 5v20h20V75zm5 5h10v10H10z" />
+                      <path d="M40 0h10v10H40zm15 0h10v15H55zm0 20h15v10H55zm-15 10h10v10H40zm30 15h10v10H70zm15 0h15v5H85zm-30 10h10v15H55zm15 15h10v10H70zm-30 5h10v10H40zm45 10h15v10H85zm-45-15h5v5h-5zm10 0h5v5h-5zm0-10h5v5h-5zm15-5h5v5h-5zm10 0h5v5h-5z" />
+                      <path d="M35 35h30v30H35zm5 5v20h20V40zm5 5h10v10H45z" opacity="0.9" />
+                    </svg>
                   </div>
+                  <p className={`text-xs text-center font-medium max-w-[280px] leading-relaxed ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
+                    Arkadaşınız bu QR kodu telefon kamerasıyla taratarak uygulamaya anında erişebilir.
+                  </p>
                   <button
-                    onClick={() => handleCopyLinkOrCode(shareCode, true)}
-                    className="px-3.5 py-1.5 bg-[#FF6B6B]/10 hover:bg-[#FF6B6B]/20 text-[#FF6B6B] rounded-lg text-[10px] font-bold transition-all cursor-pointer border border-[#FF6B6B]/20"
+                    onClick={() => setShowQrCode(false)}
+                    className={`px-6 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer border ${
+                      isDarkMode ? 'border-gray-700 text-gray-300 hover:bg-white/5' : 'border-gray-300 text-gray-700 hover:bg-gray-50'
+                    }`}
                   >
-                    {codeCopied ? "Kopyalandı!" : "Kodu Kopyala"}
+                    Geri Dön
                   </button>
                 </div>
-              </div>
+              ) : (
+                <>
+                  {/* Description */}
+                  <p className={`text-xs mb-5 leading-relaxed font-medium ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
+                    İngilizce Öyküm'ü sevdiklerinize önerin, birlikte harika hikayeler okuyarak kelime dağarcığınızı geliştirin!
+                  </p>
+
+                  {/* Horizontal Social Channels scrollable row */}
+                  <div className="flex justify-start items-center gap-5 overflow-x-auto pb-4 mb-6 scrollbar-none snap-x select-none">
+                    {/* WhatsApp */}
+                    <a
+                      href={`https://api.whatsapp.com/send?text=${encodeURIComponent(`Hey! İngilizce Öyküm ile harika İngilizce hikayeler okuyup yeni kelimeler öğreniyorum. Benimle birlikte katılmak istersen, işte davet kodum: ${shareCode} - Sen de hemen dene: ${window.location.origin}`)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => handlePlatformShare('WhatsApp')}
+                      className="flex flex-col items-center gap-1.5 snap-center shrink-0 w-16 cursor-pointer text-center group"
+                    >
+                      <div className="w-12 h-12 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-md shadow-[#25D366]/20 transition-transform group-hover:scale-105 active:scale-95">
+                        <MessageCircle className="w-6 h-6 fill-white text-[#25D366]" />
+                      </div>
+                      <span className="text-[10px] font-bold text-gray-400 truncate group-hover:text-[#25D366] transition-colors">WhatsApp</span>
+                    </a>
+
+                    {/* Telegram */}
+                    <a
+                      href={`https://t.me/share/url?url=${encodeURIComponent(window.location.origin)}&text=${encodeURIComponent(`Hey! İngilizce Öyküm ile harika İngilizce hikayeler okuyup yeni kelimeler öğreniyorum. Benimle birlikte katılmak istersen, işte davet kodum: ${shareCode}`)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => handlePlatformShare('Telegram')}
+                      className="flex flex-col items-center gap-1.5 snap-center shrink-0 w-16 cursor-pointer text-center group"
+                    >
+                      <div className="w-12 h-12 rounded-full bg-[#0088cc] text-white flex items-center justify-center shadow-md shadow-[#0088cc]/20 transition-transform group-hover:scale-105 active:scale-95">
+                        <Send className="w-5 h-5 fill-white text-[#0088cc] translate-x-[-1px] translate-y-[1px]" />
+                      </div>
+                      <span className="text-[10px] font-bold text-gray-400 truncate group-hover:text-[#0088cc] transition-colors">Telegram</span>
+                    </a>
+
+                    {/* Instagram/SMS mockup */}
+                    <a
+                      href={`sms:?body=${encodeURIComponent(`Hey! İngilizce Öyküm ile harika İngilizce hikayeler okuyup yeni kelimeler öğreniyorum. Davet kodum: ${shareCode} - Link: ${window.location.origin}`)}`}
+                      onClick={() => handlePlatformShare('Mesajlar')}
+                      className="flex flex-col items-center gap-1.5 snap-center shrink-0 w-16 cursor-pointer text-center group"
+                    >
+                      <div className="w-12 h-12 rounded-full bg-gradient-to-tr from-[#FF512F] to-[#DD2476] text-white flex items-center justify-center shadow-md transition-transform group-hover:scale-105 active:scale-95">
+                        <MessageSquare className="w-5 h-5 text-white" />
+                      </div>
+                      <span className="text-[10px] font-bold text-gray-400 truncate group-hover:text-[#DD2476] transition-colors">SMS</span>
+                    </a>
+
+                    {/* Facebook */}
+                    <a
+                      href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.origin)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => handlePlatformShare('Facebook')}
+                      className="flex flex-col items-center gap-1.5 snap-center shrink-0 w-16 cursor-pointer text-center group"
+                    >
+                      <div className="w-12 h-12 rounded-full bg-[#1877F2] text-white flex items-center justify-center shadow-md shadow-[#1877F2]/20 transition-transform group-hover:scale-105 active:scale-95">
+                        <Facebook className="w-6 h-6 fill-white text-[#1877F2]" />
+                      </div>
+                      <span className="text-[10px] font-bold text-gray-400 truncate group-hover:text-[#1877F2] transition-colors">Facebook</span>
+                    </a>
+
+                    {/* E-posta */}
+                    <a
+                      href={`mailto:?subject=${encodeURIComponent('İngilizce Öyküm Daveti')}&body=${encodeURIComponent(`Hey! İngilizce Öyküm ile harika İngilizce hikayeler okuyup yeni kelimeler öğreniyorum. Benimle birlikte katılmak istersen, işte davet kodum: ${shareCode} - Sen de hemen dene: ${window.location.origin}`)}`}
+                      onClick={() => handlePlatformShare('E-posta')}
+                      className="flex flex-col items-center gap-1.5 snap-center shrink-0 w-16 cursor-pointer text-center group"
+                    >
+                      <div className="w-12 h-12 rounded-full bg-[#EA4335] text-white flex items-center justify-center shadow-md shadow-[#EA4335]/20 transition-transform group-hover:scale-105 active:scale-95">
+                        <Mail className="w-5 h-5 text-white" />
+                      </div>
+                      <span className="text-[10px] font-bold text-gray-400 truncate group-hover:text-[#EA4335] transition-colors">E-posta</span>
+                    </a>
+                  </div>
+
+                  {/* Vertical Actions list (Duplicate from YouTube/Instagram) */}
+                  <div className="space-y-2 mb-6">
+                    {/* Action 1: Bağlantıyı Kopyala */}
+                    <button
+                      onClick={() => handleCopyLinkOrCode(window.location.origin, false)}
+                      className={`w-full flex items-center gap-3 p-3.5 px-4 rounded-2xl border text-left cursor-pointer transition-colors ${
+                        isDarkMode 
+                          ? 'bg-[#121214] border-gray-800 hover:bg-white/5 text-gray-200' 
+                          : 'bg-gray-50 border-gray-200 hover:bg-gray-100 text-gray-700'
+                      }`}
+                    >
+                      <Link2 className="w-5 h-5 text-[#FF6B6B]" />
+                      <span className="text-xs font-bold">Bağlantıyı Kopyala</span>
+                    </button>
+
+                    {/* Action 2: QR Kod ile Paylaş */}
+                    <button
+                      onClick={() => setShowQrCode(true)}
+                      className={`w-full flex items-center gap-3 p-3.5 px-4 rounded-2xl border text-left cursor-pointer transition-colors ${
+                        isDarkMode 
+                          ? 'bg-[#121214] border-gray-800 hover:bg-white/5 text-gray-200' 
+                          : 'bg-gray-50 border-gray-200 hover:bg-gray-100 text-gray-700'
+                      }`}
+                    >
+                      <QrCode className="w-5 h-5 text-[#FF6B6B]" />
+                      <span className="text-xs font-bold">QR Kod Oluştur</span>
+                    </button>
+
+                    {/* Action 3: Diğer Paylaşım Seçenekleri (Sistem Paylaşımı) */}
+                    <button
+                      onClick={() => {
+                        if (navigator.share) {
+                          navigator.share({
+                            title: 'İngilizce Öyküm',
+                            text: `Hey! İngilizce Öyküm ile harika İngilizce hikayeler okuyup yeni kelimeler öğreniyorum. Benimle birlikte katılmak istersen, işte davet kodum: ${shareCode}`,
+                            url: window.location.origin
+                          }).catch(() => {});
+                        } else {
+                          setToastMessage('Sistem paylaşımı bu cihazda desteklenmiyor. 🔗');
+                          setTimeout(() => setToastMessage(null), 2500);
+                        }
+                      }}
+                      className={`w-full flex items-center gap-3 p-3.5 px-4 rounded-2xl border text-left cursor-pointer transition-colors ${
+                        isDarkMode 
+                          ? 'bg-[#121214] border-gray-800 hover:bg-white/5 text-gray-200' 
+                          : 'bg-gray-50 border-gray-200 hover:bg-gray-100 text-gray-700'
+                      }`}
+                    >
+                      <Share2 className="w-5 h-5 text-[#FF6B6B]" />
+                      <span className="text-xs font-bold">Sistem Paylaşımı / Diğer Seçenekler</span>
+                    </button>
+                  </div>
+
+                  {/* Davet Kodu Area */}
+                  <div className={`p-4 rounded-2xl border border-dashed transition-colors ${
+                    isDarkMode ? 'bg-[#121214] border-gray-800' : 'bg-[#FFFBF0] border-[#FFE66D]'
+                  }`}>
+                    <div className="flex justify-between items-center">
+                      <div className="text-left">
+                        <span className="text-[9px] font-bold text-gray-400 tracking-wider block uppercase">
+                          Kişisel Davet Kodunuz
+                        </span>
+                        <span className="font-mono text-sm font-extrabold tracking-wider text-[#FF6B6B]">
+                          {shareCode}
+                        </span>
+                      </div>
+                      <button
+                        onClick={() => handleCopyLinkOrCode(shareCode, true)}
+                        className="px-3.5 py-1.5 bg-[#FF6B6B]/10 hover:bg-[#FF6B6B]/20 text-[#FF6B6B] rounded-lg text-[10px] font-bold transition-all cursor-pointer border border-[#FF6B6B]/20"
+                      >
+                        {codeCopied ? "Kopyalandı!" : "Kodu Kopyala"}
+                      </button>
+                    </div>
+                  </div>
+                </>
+              )}
 
               {/* Loader overlay on share trigger */}
               <AnimatePresence>
@@ -1439,7 +1505,7 @@ export default function ProfileTab({
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className={`absolute inset-0 rounded-3xl z-40 flex flex-col items-center justify-center p-6 ${
+                    className={`absolute inset-0 rounded-t-[32px] z-45 flex flex-col items-center justify-center p-6 ${
                       isDarkMode ? 'bg-[#1A1A1E]' : 'bg-white'
                     }`}
                   >
