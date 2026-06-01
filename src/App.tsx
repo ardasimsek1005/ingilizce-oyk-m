@@ -577,6 +577,7 @@ export default function App() {
     // Unlock Premium Badge instantly
     unlockBadge('b5');
     triggerCloudSync();
+    setCurrentTab('profile');
   };
 
   const unlockBadge = (badgeId: string) => {
