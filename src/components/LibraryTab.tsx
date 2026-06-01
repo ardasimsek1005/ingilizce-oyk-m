@@ -448,9 +448,9 @@ export default function LibraryTab({ books, onSelectBook, syncTrigger, isDarkMod
           <div className="flex flex-col gap-2.5">
             {[
               { id: 'All', name: 'Tüm Hikayeler', desc: 'Kütüphanedeki Tüm Eserler', icon: <TumuIcon /> },
-              { id: 'horror_mystery', name: 'Korku & Gizem', desc: 'Gizemli ve Heyecan Dolu Hikayeler', icon: <SpookyIcon /> },
+              { id: 'classics_adventure', name: 'Dünya Klasikleri', desc: 'Ölümsüz Macera ve Dram Eserleri', icon: <CompassIcon /> },
               { id: 'kids_fables', name: 'Masallar & Çocuk', desc: 'Çocuk Masalları ve Eğitici Fabllar', icon: <WandIcon /> },
-              { id: 'classics_adventure', name: 'Dünya Klasikleri', desc: 'Ölümsüz Macera ve Dram Eserleri', icon: <CompassIcon /> }
+              { id: 'horror_mystery', name: 'Korku & Gizem', desc: 'Gizemli ve Heyecan Dolu Hikayeler', icon: <SpookyIcon /> }
             ].map((cat) => {
               const isSelected = selectedCategory === cat.id;
               return (
