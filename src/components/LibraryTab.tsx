@@ -186,6 +186,23 @@ export default function LibraryTab({ books, onSelectBook, syncTrigger, isDarkMod
     });
   }, [books, selectedLevel, selectedCategory]);
 
+  const libraryCountLabel = useMemo(() => {
+    const count = filteredBooks.length;
+    if (selectedCategory === 'All') {
+      return `Toplam ${count} hikaye`;
+    }
+    if (selectedCategory === 'horror_mystery') {
+      return `Toplam ${count} korku ve gizem hikayesi`;
+    }
+    if (selectedCategory === 'kids_fables') {
+      return `Toplam ${count} masal ve çocuk hikayesi`;
+    }
+    if (selectedCategory === 'classics_adventure') {
+      return `Toplam ${count} dünya klasiği`;
+    }
+    return `Toplam ${count} eser`;
+  }, [filteredBooks.length, selectedCategory]);
+
 
   // Calculate unique words read across all books based on progress (currentPage index)
   const totalWordsRead = useMemo(() => {
@@ -415,9 +432,9 @@ export default function LibraryTab({ books, onSelectBook, syncTrigger, isDarkMod
             Kitaplığım
           </h2>
           <span className={`text-xs font-bold tracking-wider font-headline-lg ${
-            isDarkMode ? 'text-gray-400' : 'text-gray-450'
+            isDarkMode ? 'text-gray-400' : 'text-gray-455'
           }`}>
-            Toplam {filteredBooks.length} Eser
+            {libraryCountLabel}
           </span>
         </div>
 
@@ -430,10 +447,10 @@ export default function LibraryTab({ books, onSelectBook, syncTrigger, isDarkMod
           </span>
           <div className="flex flex-col gap-2.5">
             {[
-              { id: 'All', name: 'Tüm Hikayeler', desc: 'Klasikler, masallar ve korku hikayelerinin tamamı', icon: <TumuIcon /> },
-              { id: 'horror_mystery', name: 'Korku & Gizem', desc: 'Gizemli, korkunç ve heyecan dolu gotik hikayeler', icon: <SpookyIcon /> },
-              { id: 'kids_fables', name: 'Masallar & Çocuk', desc: 'Çocuk masalları, hayal dünyası ve eğitici fabllar', icon: <WandIcon /> },
-              { id: 'classics_adventure', name: 'Dünya Klasikleri', desc: 'Büyük yazarların ölümsüz macera ve dram eserleri', icon: <CompassIcon /> }
+              { id: 'All', name: 'Tüm Hikayeler', desc: 'Kütüphanedeki tüm eserler', icon: <TumuIcon /> },
+              { id: 'horror_mystery', name: 'Korku & Gizem', desc: 'Gizemli ve heyecan dolu hikayeler', icon: <SpookyIcon /> },
+              { id: 'kids_fables', name: 'Masallar & Çocuk', desc: 'Çocuk masalları ve eğitici fabllar', icon: <WandIcon /> },
+              { id: 'classics_adventure', name: 'Dünya Klasikleri', desc: 'Ölümsüz macera ve dram eserleri', icon: <CompassIcon /> }
             ].map((cat) => {
               const isSelected = selectedCategory === cat.id;
               return (
