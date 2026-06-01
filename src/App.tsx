@@ -8,6 +8,7 @@ import QuizView from './components/QuizView';
 import ProfileTab from './components/ProfileTab';
 import FavoritesTab from './components/FavoritesTab';
 import SplashScreen from './components/SplashScreen';
+import { X } from 'lucide-react';
 
 import { Book, VocabularyWord, UserStats, Badge, LeaderboardUser } from './types';
 import { INITIAL_BOOKS, INITIAL_VOCABULARY, INITIAL_BADGES, LEADERBOARD_DATA, LIBRARY_UNIQUE_WORDS_COUNT } from './data';
@@ -49,6 +50,9 @@ export default function App() {
   const [activeReadingBook, setActiveReadingBook] = useState<Book | null>(null);
   const [googleClientId, setGoogleClientId] = useState<string>('');
   const [showSplash, setShowSplash] = useState<boolean>(true);
+  const [showAppBanner, setShowAppBanner] = useState<boolean>(() => {
+    return !localStorage.getItem('linguist_banner_dismissed');
+  });
   const [userEmail, setUserEmail] = useState<string | null>(() => {
     return localStorage.getItem('linguist_user_email') || null;
   });
@@ -78,6 +82,16 @@ export default function App() {
     if (params.get('clear') === '1' || params.get('reset') === '1') {
       localStorage.clear();
       window.location.href = window.location.origin + window.location.pathname;
+      return;
+    }
+
+    const invite = params.get('invite');
+    if (invite) {
+      const code = invite.toUpperCase().trim();
+      localStorage.setItem('linguist_referred_by', code);
+      // Clean query parameter from URL to maintain a clean display
+      const newUrl = window.location.origin + window.location.pathname;
+      window.history.replaceState({}, document.title, newUrl);
     }
   }, []);
 
@@ -965,6 +979,43 @@ export default function App() {
         {/* Scrollable Main Area */}
         <div className="flex-1 overflow-y-visible md:overflow-y-auto flex flex-col relative scrollbar-none pb-20">
           
+          {/* Mobile Web Download Banner */}
+          {!activeReadingBook && showAppBanner && !(window as any).Capacitor?.isNativePlatform() && (
+            <div className="bg-[#FFE66D] text-gray-900 px-4 py-2 flex items-center justify-between text-[11px] font-bold font-headline-lg shrink-0 border-b border-[#FFE66D]/20 z-40">
+              <div className="flex items-center gap-1.5">
+                <span role="img" aria-label="phone" className="text-xs">📱</span>
+                <span>Öyküm Mobil Uygulamasını İndirin!</span>
+              </div>
+              <div className="flex items-center gap-2.5">
+                <a 
+                  href="https://play.google.com/store/search?q=İngilizce%20Öyküm&c=apps" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-gray-900 text-white px-2 py-0.5 rounded text-[9px] hover:bg-gray-800 transition-colors"
+                >
+                  Android
+                </a>
+                <a 
+                  href="https://apps.apple.com/WebObjects/MZStore.woa/wa/search?term=İngilizce%20Öyküm" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-gray-900 text-white px-2 py-0.5 rounded text-[9px] hover:bg-gray-800 transition-colors"
+                >
+                  iOS
+                </a>
+                <button 
+                  onClick={() => {
+                    setShowAppBanner(false);
+                    localStorage.setItem('linguist_banner_dismissed', 'true');
+                  }}
+                  className="text-gray-900 hover:text-gray-700 p-0.5 cursor-pointer ml-1"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              </div>
+            </div>
+          )}
+
           {/* Visual Navigation and Status Headers if not in active reading panel */}
           {!activeReadingBook && (
             <Header

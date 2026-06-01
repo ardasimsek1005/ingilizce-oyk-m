@@ -64,11 +64,18 @@ export default function ProfileTab({
   const [showQrCode, setShowQrCode] = useState(false);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
 
-  // Login mock modal state
+  // Login connection states
   const [showMockLogin, setShowMockLogin] = useState(false);
   const [mockLoginProvider, setMockLoginProvider] = useState<'google' | 'facebook' | 'apple' | 'email' | null>(null);
   const [mockEmail, setMockEmail] = useState('');
   const [mockName, setMockName] = useState('');
+  const [loginPassword, setLoginPassword] = useState('');
+  const [googleStep, setGoogleStep] = useState<'picker' | 'credentials'>('picker');
+
+  // Referral states
+  const [referredBy, setReferredBy] = useState<string>(() => localStorage.getItem('linguist_referred_by') || '');
+  const [isInviteInputOpen, setIsInviteInputOpen] = useState(false);
+  const [inviteInputVal, setInviteInputVal] = useState('');
 
   const formatAutofillName = (email: string) => {
     if (!email || !email.includes('@')) return '';
@@ -80,16 +87,59 @@ export default function ProfileTab({
       .join(' ');
   };
 
+  const handleDirectSelectLogin = (email: string, provider: string) => {
+    const finalName = formatAutofillName(email) || email.split('@')[0];
+    let avatarToSet = userAvatar;
+    if (!userAvatar || userAvatar === AVATAR_OPTIONS[0]) {
+      const idx = Math.abs(email.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0) % AVATAR_OPTIONS.length);
+      avatarToSet = AVATAR_OPTIONS[idx];
+    }
+
+    onGoogleLogin(email, finalName, avatarToSet, provider);
+    setShowMockLogin(false);
+    setMockEmail('');
+    setMockName('');
+    setLoginPassword('');
+    setGoogleStep('picker');
+    
+    const providerNames: Record<string, string> = {
+      google: 'Google',
+      facebook: 'Facebook',
+      apple: 'Apple',
+      email: 'E-posta'
+    };
+    
+    if (userEmail) {
+      setToastMessage(`${providerNames[provider] || provider} hesabı başarıyla bağlandı! 🔗`);
+    } else {
+      setToastMessage(`${providerNames[provider] || provider} ile giriş yapıldı ve veriler eşitlendi! 🔄`);
+    }
+    setTimeout(() => setToastMessage(null), 3000);
+  };
+
   const handleMockSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const provider = mockLoginProvider || 'google';
+
     if (!mockEmail || !mockEmail.includes('@')) {
       setToastMessage('Lütfen geçerli bir e-posta adresi girin. ⚠️');
       setTimeout(() => setToastMessage(null), 3000);
       return;
     }
+
+    if (provider === 'google' && !mockEmail.toLowerCase().endsWith('@gmail.com')) {
+      setToastMessage('Lütfen geçerli bir Gmail adresi girin. ⚠️');
+      setTimeout(() => setToastMessage(null), 3000);
+      return;
+    }
+
+    if (!loginPassword || loginPassword.length < 6) {
+      setToastMessage('Şifre en az 6 karakter olmalıdır. ⚠️');
+      setTimeout(() => setToastMessage(null), 3000);
+      return;
+    }
     
-    const provider = mockLoginProvider || 'google';
-    const finalName = mockName.trim() || formatAutofillName(mockEmail) || mockEmail.split('@')[0];
+    const finalName = formatAutofillName(mockEmail) || mockEmail.split('@')[0];
     
     let avatarToSet = userAvatar;
     if (!userAvatar || userAvatar === AVATAR_OPTIONS[0]) {
@@ -101,6 +151,8 @@ export default function ProfileTab({
     setShowMockLogin(false);
     setMockEmail('');
     setMockName('');
+    setLoginPassword('');
+    setGoogleStep('picker');
     
     const providerNames: Record<string, string> = {
       google: 'Google',
@@ -1210,6 +1262,31 @@ export default function ProfileTab({
             <span className="text-xs font-bold">Uygulamayı Paylaş</span>
             <Share2 className="w-4 h-4 text-[#FF6B6B]" />
           </button>
+
+          {/* Davet Kodu Gir / Bilgi Satırı */}
+          {referredBy ? (
+            <div
+              className={`w-full flex items-center justify-between p-4 px-6 transition-colors text-left select-none ${
+                isDarkMode ? 'text-gray-400 bg-[#121214]/10' : 'text-gray-650 bg-gray-50/50'
+              }`}
+            >
+              <span className="text-[11px] font-bold">Bizi Tavsiye Eden</span>
+              <span className="text-xs font-mono font-extrabold text-[#FF6B6B]">{referredBy}</span>
+            </div>
+          ) : (
+            <button
+              onClick={() => {
+                setInviteInputVal('');
+                setIsInviteInputOpen(true);
+              }}
+              className={`w-full flex items-center justify-between p-4 px-6 transition-colors group text-left cursor-pointer ${
+                isDarkMode ? 'hover:bg-[#121214] text-gray-200' : 'hover:bg-[#FFFBF0]'
+              }`}
+            >
+              <span className="text-xs font-bold">Davet Kodu Gir</span>
+              <Sparkles className="w-4 h-4 text-[#FFE66D]" />
+            </button>
+          )}
           
           {!stats.isPremium && (
             <button
@@ -1281,247 +1358,197 @@ export default function ProfileTab({
 
       {/* MOCK HIGH-FIDELITY SOCIAL SHARING SYSTEM MODAL */}
       <AnimatePresence>
-        {isShareModalOpen && (
-          <div className="fixed inset-0 z-50 bg-[#2D3436]/60 backdrop-blur-md flex items-end justify-center">
-            {/* Click-outside backdrop closer */}
-            <div 
-              className="absolute inset-0 cursor-pointer" 
-              onClick={() => setIsShareModalOpen(false)} 
-            />
-            
-            <motion.div
-              initial={{ y: "100%", opacity: 0.5 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: "100%", opacity: 0.5 }}
-              transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className={`w-full max-w-md rounded-t-[32px] p-6 pb-8 flex flex-col shadow-2xl relative transition-all border-t-2 z-10 ${
-                isDarkMode ? 'bg-[#1A1A1E] border-[#2A2A30]' : 'bg-white border-[#FFE66D]/45'
-              }`}
-            >
-              {/* Drag handle */}
-              <div className="w-12 h-1.5 bg-gray-300 dark:bg-gray-700 rounded-full mx-auto mb-5 shrink-0 select-none" />
+        {isShareModalOpen && (() => {
+          const BASE_SHARE_URL = 'https://play.google.com/store/apps/details?id=com.oykum.app';
+          const shareUrlWithInvite = `${BASE_SHARE_URL}&invite=${shareCode}`;
+          const shareText = `İngilizce Öyküm ile harika hikayeler okuyup yeni kelimeler öğreniyorum! Sen de hemen indir ve bana katıl: ${BASE_SHARE_URL}\nDavet Kodum: ${shareCode}`;
+          const qrCodeUrl = `https://chart.googleapis.com/chart?chs=250x250&cht=qr&chl=${encodeURIComponent(shareUrlWithInvite)}`;
 
-              {/* Header */}
-              <div className="flex justify-between items-center mb-6">
-                <h3 className={`font-headline-lg text-lg font-extrabold ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
-                  {showQrCode ? 'QR Kod ile Paylaş' : 'Uygulamayı Paylaş'}
-                </h3>
-                <button
-                  onClick={() => {
-                    if (showQrCode) {
-                      setShowQrCode(false);
-                    } else {
-                      setIsShareModalOpen(false);
-                    }
-                  }}
-                  className={`p-1.5 rounded-full cursor-pointer transition-colors ${
-                    isDarkMode ? 'text-gray-400 hover:bg-[#2A2A30] hover:text-white' : 'text-gray-500 hover:bg-gray-100 hover:text-gray-800'
-                  }`}
-                >
-                  <X className="w-5 h-5" />
-                </button>
-              </div>
-
-              {showQrCode ? (
-                <div className="flex flex-col items-center justify-center py-4 space-y-4">
-                  {/* Vector QR Code SVG */}
-                  <div className="p-4 bg-white rounded-3xl shadow-md border border-gray-100">
-                    <svg className="w-48 h-48 text-gray-950" viewBox="0 0 100 100" fill="currentColor">
-                      {/* Standard QR Code lookalike using SVG path details */}
-                      <path d="M0 0h30v30H0zm5 5v20h20V5zm5 5h10v10H10zM70 0h30v30H70zm5 5v20h20V5zm5 5h10v10H80zM0 70h30v30H0zm5 5v20h20V75zm5 5h10v10H10z" />
-                      <path d="M40 0h10v10H40zm15 0h10v15H55zm0 20h15v10H55zm-15 10h10v10H40zm30 15h10v10H70zm15 0h15v5H85zm-30 10h10v15H55zm15 15h10v10H70zm-30 5h10v10H40zm45 10h15v10H85zm-45-15h5v5h-5zm10 0h5v5h-5zm0-10h5v5h-5zm15-5h5v5h-5zm10 0h5v5h-5z" />
-                      <path d="M35 35h30v30H35zm5 5v20h20V40zm5 5h10v10H45z" opacity="0.9" />
-                    </svg>
-                  </div>
-                  <p className={`text-xs text-center font-medium max-w-[280px] leading-relaxed ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-                    Arkadaşınız bu QR kodu telefon kamerasıyla taratarak uygulamaya anında erişebilir.
-                  </p>
+          return (
+            <div className="fixed inset-0 z-50 bg-[#2D3436]/60 backdrop-blur-md flex items-center justify-center p-4">
+              {/* Click-outside backdrop closer */}
+              <div 
+                className="absolute inset-0 cursor-pointer" 
+                onClick={() => setIsShareModalOpen(false)} 
+              />
+              
+              <motion.div
+                initial={{ scale: 0.95, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.95, opacity: 0 }}
+                transition={{ duration: 0.2 }}
+                className={`w-full max-w-sm rounded-[28px] p-6 flex flex-col shadow-2xl relative transition-all border-2 z-10 ${
+                  isDarkMode ? 'bg-[#1A1A1E] border-[#2A2A30]' : 'bg-white border-[#FFE66D]'
+                }`}
+              >
+                {/* Header */}
+                <div className="flex justify-between items-center mb-4">
+                  <h3 className={`font-headline-lg text-base font-extrabold ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
+                    Uygulamayı Paylaş
+                  </h3>
                   <button
-                    onClick={() => setShowQrCode(false)}
-                    className={`px-6 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer border ${
-                      isDarkMode ? 'border-gray-700 text-gray-300 hover:bg-white/5' : 'border-gray-300 text-gray-700 hover:bg-gray-50'
+                    onClick={() => setIsShareModalOpen(false)}
+                    className={`p-1.5 rounded-full cursor-pointer transition-colors ${
+                      isDarkMode ? 'text-gray-400 hover:bg-[#2A2A30] hover:text-white' : 'text-gray-500 hover:bg-gray-100 hover:text-gray-800'
                     }`}
                   >
-                    Geri Dön
+                    <X className="w-4 h-4" />
                   </button>
                 </div>
-              ) : (
-                <>
-                  {/* Description */}
-                  <p className={`text-xs mb-5 leading-relaxed font-medium ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-                    İngilizce Öyküm'ü sevdiklerinize önerin, birlikte harika hikayeler okuyarak kelime dağarcığınızı geliştirin!
+
+                {/* QR Code Card */}
+                <div className="flex flex-col items-center justify-center py-2.5 mb-4 border border-dashed border-gray-400/20 rounded-2xl p-4 bg-gray-50/5 dark:bg-[#121214]/40">
+                  <div className="p-3 bg-white rounded-2xl shadow-xs border border-gray-100 mb-2">
+                    <img 
+                      src={qrCodeUrl} 
+                      alt="İngilizce Öyküm QR Code" 
+                      className="w-40 h-40 object-contain select-none animate-fade-in"
+                    />
+                  </div>
+                  <p className="text-[10px] text-center font-bold text-[#FF6B6B] leading-normal max-w-[240px]">
+                    Arkadaşınız bu kodu kamerasıyla okutarak uygulamayı anında indirebilir! 📸
                   </p>
+                </div>
 
-                  {/* Horizontal Social Channels scrollable row */}
-                  <div className="flex justify-start items-center gap-5 overflow-x-auto pb-4 mb-6 scrollbar-none snap-x select-none">
-                    {/* WhatsApp */}
-                    <a
-                      href={`https://api.whatsapp.com/send?text=${encodeURIComponent(`Hey! İngilizce Öyküm ile harika İngilizce hikayeler okuyup yeni kelimeler öğreniyorum. Benimle birlikte katılmak istersen, işte davet kodum: ${shareCode} - Sen de hemen dene: ${window.location.origin}`)}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={() => handlePlatformShare('WhatsApp')}
-                      className="flex flex-col items-center gap-1.5 snap-center shrink-0 w-16 cursor-pointer text-center group"
-                    >
-                      <div className="w-12 h-12 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-md shadow-[#25D366]/20 transition-transform group-hover:scale-105 active:scale-95">
-                        <MessageCircle className="w-6 h-6 fill-white text-[#25D366]" />
-                      </div>
-                      <span className="text-[10px] font-bold text-gray-400 truncate group-hover:text-[#25D366] transition-colors">WhatsApp</span>
-                    </a>
-
-                    {/* Telegram */}
-                    <a
-                      href={`https://t.me/share/url?url=${encodeURIComponent(window.location.origin)}&text=${encodeURIComponent(`Hey! İngilizce Öyküm ile harika İngilizce hikayeler okuyup yeni kelimeler öğreniyorum. Benimle birlikte katılmak istersen, işte davet kodum: ${shareCode}`)}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={() => handlePlatformShare('Telegram')}
-                      className="flex flex-col items-center gap-1.5 snap-center shrink-0 w-16 cursor-pointer text-center group"
-                    >
-                      <div className="w-12 h-12 rounded-full bg-[#0088cc] text-white flex items-center justify-center shadow-md shadow-[#0088cc]/20 transition-transform group-hover:scale-105 active:scale-95">
-                        <Send className="w-5 h-5 fill-white text-[#0088cc] translate-x-[-1px] translate-y-[1px]" />
-                      </div>
-                      <span className="text-[10px] font-bold text-gray-400 truncate group-hover:text-[#0088cc] transition-colors">Telegram</span>
-                    </a>
-
-                    {/* Instagram/SMS mockup */}
-                    <a
-                      href={`sms:?body=${encodeURIComponent(`Hey! İngilizce Öyküm ile harika İngilizce hikayeler okuyup yeni kelimeler öğreniyorum. Davet kodum: ${shareCode} - Link: ${window.location.origin}`)}`}
-                      onClick={() => handlePlatformShare('Mesajlar')}
-                      className="flex flex-col items-center gap-1.5 snap-center shrink-0 w-16 cursor-pointer text-center group"
-                    >
-                      <div className="w-12 h-12 rounded-full bg-gradient-to-tr from-[#FF512F] to-[#DD2476] text-white flex items-center justify-center shadow-md transition-transform group-hover:scale-105 active:scale-95">
-                        <MessageSquare className="w-5 h-5 text-white" />
-                      </div>
-                      <span className="text-[10px] font-bold text-gray-400 truncate group-hover:text-[#DD2476] transition-colors">SMS</span>
-                    </a>
-
-                    {/* Facebook */}
-                    <a
-                      href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.origin)}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={() => handlePlatformShare('Facebook')}
-                      className="flex flex-col items-center gap-1.5 snap-center shrink-0 w-16 cursor-pointer text-center group"
-                    >
-                      <div className="w-12 h-12 rounded-full bg-[#1877F2] text-white flex items-center justify-center shadow-md shadow-[#1877F2]/20 transition-transform group-hover:scale-105 active:scale-95">
-                        <Facebook className="w-6 h-6 fill-white text-[#1877F2]" />
-                      </div>
-                      <span className="text-[10px] font-bold text-gray-400 truncate group-hover:text-[#1877F2] transition-colors">Facebook</span>
-                    </a>
-
-                    {/* E-posta */}
-                    <a
-                      href={`mailto:?subject=${encodeURIComponent('İngilizce Öyküm Daveti')}&body=${encodeURIComponent(`Hey! İngilizce Öyküm ile harika İngilizce hikayeler okuyup yeni kelimeler öğreniyorum. Benimle birlikte katılmak istersen, işte davet kodum: ${shareCode} - Sen de hemen dene: ${window.location.origin}`)}`}
-                      onClick={() => handlePlatformShare('E-posta')}
-                      className="flex flex-col items-center gap-1.5 snap-center shrink-0 w-16 cursor-pointer text-center group"
-                    >
-                      <div className="w-12 h-12 rounded-full bg-[#EA4335] text-white flex items-center justify-center shadow-md shadow-[#EA4335]/20 transition-transform group-hover:scale-105 active:scale-95">
-                        <Mail className="w-5 h-5 text-white" />
-                      </div>
-                      <span className="text-[10px] font-bold text-gray-400 truncate group-hover:text-[#EA4335] transition-colors">E-posta</span>
-                    </a>
-                  </div>
-
-                  {/* Vertical Actions list (Duplicate from YouTube/Instagram) */}
-                  <div className="space-y-2 mb-6">
-                    {/* Action 1: Bağlantıyı Kopyala */}
-                    <button
-                      onClick={() => handleCopyLinkOrCode(window.location.origin, false)}
-                      className={`w-full flex items-center gap-3 p-3.5 px-4 rounded-2xl border text-left cursor-pointer transition-colors ${
-                        isDarkMode 
-                          ? 'bg-[#121214] border-gray-800 hover:bg-white/5 text-gray-200' 
-                          : 'bg-gray-50 border-gray-200 hover:bg-gray-100 text-gray-700'
-                      }`}
-                    >
-                      <Link2 className="w-5 h-5 text-[#FF6B6B]" />
-                      <span className="text-xs font-bold">Bağlantıyı Kopyala</span>
-                    </button>
-
-                    {/* Action 2: QR Kod ile Paylaş */}
-                    <button
-                      onClick={() => setShowQrCode(true)}
-                      className={`w-full flex items-center gap-3 p-3.5 px-4 rounded-2xl border text-left cursor-pointer transition-colors ${
-                        isDarkMode 
-                          ? 'bg-[#121214] border-gray-800 hover:bg-white/5 text-gray-200' 
-                          : 'bg-gray-50 border-gray-200 hover:bg-gray-100 text-gray-700'
-                      }`}
-                    >
-                      <QrCode className="w-5 h-5 text-[#FF6B6B]" />
-                      <span className="text-xs font-bold">QR Kod Oluştur</span>
-                    </button>
-
-                    {/* Action 3: Diğer Paylaşım Seçenekleri (Sistem Paylaşımı) */}
-                    <button
-                      onClick={() => {
-                        if (navigator.share) {
-                          navigator.share({
-                            title: 'İngilizce Öyküm',
-                            text: `Hey! İngilizce Öyküm ile harika İngilizce hikayeler okuyup yeni kelimeler öğreniyorum. Benimle birlikte katılmak istersen, işte davet kodum: ${shareCode}`,
-                            url: window.location.origin
-                          }).catch(() => {});
-                        } else {
-                          setToastMessage('Sistem paylaşımı bu cihazda desteklenmiyor. 🔗');
-                          setTimeout(() => setToastMessage(null), 2500);
-                        }
-                      }}
-                      className={`w-full flex items-center gap-3 p-3.5 px-4 rounded-2xl border text-left cursor-pointer transition-colors ${
-                        isDarkMode 
-                          ? 'bg-[#121214] border-gray-800 hover:bg-white/5 text-gray-200' 
-                          : 'bg-gray-50 border-gray-200 hover:bg-gray-100 text-gray-700'
-                      }`}
-                    >
-                      <Share2 className="w-5 h-5 text-[#FF6B6B]" />
-                      <span className="text-xs font-bold">Sistem Paylaşımı / Diğer Seçenekler</span>
-                    </button>
-                  </div>
-
-                  {/* Davet Kodu Area */}
-                  <div className={`p-4 rounded-2xl border border-dashed transition-colors ${
-                    isDarkMode ? 'bg-[#121214] border-gray-800' : 'bg-[#FFFBF0] border-[#FFE66D]'
-                  }`}>
-                    <div className="flex justify-between items-center">
-                      <div className="text-left">
-                        <span className="text-[9px] font-bold text-gray-400 tracking-wider block uppercase">
-                          Kişisel Davet Kodunuz
-                        </span>
-                        <span className="font-mono text-sm font-extrabold tracking-wider text-[#FF6B6B]">
-                          {shareCode}
-                        </span>
-                      </div>
-                      <button
-                        onClick={() => handleCopyLinkOrCode(shareCode, true)}
-                        className="px-3.5 py-1.5 bg-[#FF6B6B]/10 hover:bg-[#FF6B6B]/20 text-[#FF6B6B] rounded-lg text-[10px] font-bold transition-all cursor-pointer border border-[#FF6B6B]/20"
-                      >
-                        {codeCopied ? "Kopyalandı!" : "Kodu Kopyala"}
-                      </button>
+                {/* Social Channels row */}
+                <div className="flex justify-center items-center gap-3.5 mb-5 select-none">
+                  {/* WhatsApp */}
+                  <a
+                    href={`https://api.whatsapp.com/send?text=${encodeURIComponent(shareText)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => handlePlatformShare('WhatsApp')}
+                    className="flex flex-col items-center gap-1 cursor-pointer text-center group"
+                  >
+                    <div className="w-10 h-10 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-xs transition-transform group-hover:scale-105 active:scale-95">
+                      <MessageCircle className="w-5 h-5 fill-white text-[#25D366]" />
                     </div>
-                  </div>
-                </>
-              )}
+                    <span className="text-[9px] font-bold text-gray-400 group-hover:text-[#25D366] transition-colors">WhatsApp</span>
+                  </a>
 
-              {/* Loader overlay on share trigger */}
-              <AnimatePresence>
-                {sharePlatform && (
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    className={`absolute inset-0 rounded-t-[32px] z-45 flex flex-col items-center justify-center p-6 ${
-                      isDarkMode ? 'bg-[#1A1A1E]' : 'bg-white'
+                  {/* Telegram */}
+                  <a
+                    href={`https://t.me/share/url?url=${encodeURIComponent(BASE_SHARE_URL)}&text=${encodeURIComponent(`Hey! İngilizce Öyküm ile harika hikayeler okuyup kelime öğreniyorum. Benimle birlikte katılmak istersen, işte davet kodum: ${shareCode}`)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => handlePlatformShare('Telegram')}
+                    className="flex flex-col items-center gap-1 cursor-pointer text-center group"
+                  >
+                    <div className="w-10 h-10 rounded-full bg-[#0088cc] text-white flex items-center justify-center shadow-xs transition-transform group-hover:scale-105 active:scale-95">
+                      <Send className="w-4.5 h-4.5 fill-white text-[#0088cc] translate-x-[-1px] translate-y-[0.5px]" />
+                    </div>
+                    <span className="text-[9px] font-bold text-gray-400 group-hover:text-[#0088cc] transition-colors">Telegram</span>
+                  </a>
+
+                  {/* SMS */}
+                  <a
+                    href={`sms:?body=${encodeURIComponent(shareText)}`}
+                    onClick={() => handlePlatformShare('Mesajlar')}
+                    className="flex flex-col items-center gap-1 cursor-pointer text-center group"
+                  >
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#FF512F] to-[#DD2476] text-white flex items-center justify-center shadow-xs transition-transform group-hover:scale-105 active:scale-95">
+                      <MessageSquare className="w-4.5 h-4.5 text-white" />
+                    </div>
+                    <span className="text-[9px] font-bold text-gray-400 group-hover:text-[#DD2476] transition-colors">SMS</span>
+                  </a>
+
+                  {/* Facebook */}
+                  <a
+                    href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(BASE_SHARE_URL)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => handlePlatformShare('Facebook')}
+                    className="flex flex-col items-center gap-1 cursor-pointer text-center group"
+                  >
+                    <div className="w-10 h-10 rounded-full bg-[#1877F2] text-white flex items-center justify-center shadow-xs transition-transform group-hover:scale-105 active:scale-95">
+                      <Facebook className="w-5 h-5 fill-white text-[#1877F2]" />
+                    </div>
+                    <span className="text-[9px] font-bold text-gray-400 group-hover:text-[#1877F2] transition-colors">Facebook</span>
+                  </a>
+
+                  {/* Email */}
+                  <a
+                    href={`mailto:?subject=${encodeURIComponent('İngilizce Öyküm Daveti')}&body=${encodeURIComponent(shareText)}`}
+                    onClick={() => handlePlatformShare('E-posta')}
+                    className="flex flex-col items-center gap-1 cursor-pointer text-center group"
+                  >
+                    <div className="w-10 h-10 rounded-full bg-[#EA4335] text-white flex items-center justify-center shadow-xs transition-transform group-hover:scale-105 active:scale-95">
+                      <Mail className="w-4.5 h-4.5 text-white" />
+                    </div>
+                    <span className="text-[9px] font-bold text-gray-400 group-hover:text-[#EA4335] transition-colors">E-posta</span>
+                  </a>
+                </div>
+
+                {/* Copy Link field (Classic Youtube style) */}
+                <div className="mb-4 text-left">
+                  <span className={`text-[9px] font-bold uppercase tracking-wider block mb-1.5 ${isDarkMode ? 'text-gray-400' : 'text-gray-550'}`}>
+                    Uygulama İndirme Bağlantısı
+                  </span>
+                  <div className={`flex items-center gap-1.5 p-1 pl-3.5 rounded-xl border transition-colors ${
+                    isDarkMode ? 'bg-[#121214] border-gray-800' : 'bg-gray-50 border-gray-200'
+                  }`}>
+                    <input
+                      type="text"
+                      readOnly
+                      value={BASE_SHARE_URL}
+                      onClick={(e) => (e.target as HTMLInputElement).select()}
+                      className="w-full bg-transparent border-none outline-none text-[11px] font-mono text-gray-500 dark:text-gray-450 select-all cursor-pointer"
+                    />
+                    <button
+                      onClick={() => handleCopyLinkOrCode(BASE_SHARE_URL, false)}
+                      className="px-3.5 py-1.5 bg-[#FF6B6B] hover:bg-[#FF8787] text-white rounded-lg text-[10px] font-bold transition-all cursor-pointer shadow-2xs active:scale-95 shrink-0"
+                    >
+                      Kopyala
+                    </button>
+                  </div>
+                </div>
+
+                {/* Native System Share fallback if supported */}
+                {navigator.share && (
+                  <button
+                    onClick={() => {
+                      navigator.share({
+                        title: 'İngilizce Öyküm',
+                        text: shareText,
+                        url: BASE_SHARE_URL
+                      }).catch(() => {});
+                    }}
+                    className={`w-full flex items-center justify-center gap-2 py-2.5 rounded-xl border text-[10px] font-bold transition-colors cursor-pointer ${
+                      isDarkMode 
+                        ? 'bg-transparent border-gray-800 hover:bg-white/5 text-gray-300' 
+                        : 'bg-transparent border-gray-200 hover:bg-gray-50 text-gray-600'
                     }`}
                   >
-                    <RefreshCw className="w-8 h-8 text-[#FF6B6B] animate-spin mb-3" />
-                    <p className={`text-xs font-bold ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                      {sharePlatform} İçin Hazırlanıyor...
-                    </p>
-                  </motion.div>
+                    <Share2 className="w-4 h-4 text-[#FF6B6B]" />
+                    <span>Sistem Paylaşımı ile Gönder</span>
+                  </button>
                 )}
-              </AnimatePresence>
-            </motion.div>
-          </div>
-        )}
+
+                {/* Loader overlay on share trigger */}
+                <AnimatePresence>
+                  {sharePlatform && (
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      className={`absolute inset-0 rounded-[28px] z-45 flex flex-col items-center justify-center p-6 ${
+                        isDarkMode ? 'bg-[#1A1A1E]' : 'bg-white'
+                      }`}
+                    >
+                      <RefreshCw className="w-6 h-6 text-[#FF6B6B] animate-spin mb-3" />
+                      <p className={`text-[10px] font-bold ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                        {sharePlatform} İçin Hazırlanıyor...
+                      </p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
+            </div>
+          );
+        })()}
       </AnimatePresence>
 
-      {/* MOCK DYNAMIC LOGIN SYSTEM MODAL */}
+      {/* DYNAMIC LOGIN SYSTEM MODAL */}
       <AnimatePresence>
         {showMockLogin && (() => {
           const provider = mockLoginProvider || 'google';
@@ -1536,12 +1563,12 @@ export default function ProfileTab({
             submitText: string;
           }> = {
             google: {
-              title: 'Google ile Bağlan (Mock)',
-              desc: 'Google/Gmail adresinizi girerek ilerlemenizi hemen yedekleyin veya başka cihazdan geri yükleyin.',
+              title: 'Google ile Giriş Yap',
+              desc: 'Google hesabınızla güvenli bir şekilde bağlanarak ilerlemenizi bulutta yedekleyin.',
               color: '#EA4335',
               emailLabel: 'GMAIL ADRESİ',
               emailPlaceholder: 'ornek@gmail.com',
-              submitText: 'Google Hesabı Bağla',
+              submitText: 'Google Hesabı ile Giriş Yap',
               icon: (
                 <svg className="w-6 h-6" viewBox="0 0 24 24">
                   <path fill="currentColor" d="M12.24 10.285V14.4h6.887c-.648 2.41-2.519 4.114-5.136 4.114-3.468 0-6.28-2.812-6.28-6.28s2.812-6.28 6.28-6.28c1.554 0 2.969.571 4.07 1.509l3.109-3.11C18.66 1.705 15.635 1 12.24 1 5.767 1 12.24s4.767 11.24 11.24 11.24c6.335 0 11.24-4.514 11.24-11.24 0-.74-.085-1.485-.24-2.215H12.24z" />
@@ -1549,12 +1576,12 @@ export default function ProfileTab({
               )
             },
             facebook: {
-              title: 'Facebook ile Bağlan (Mock)',
-              desc: 'Facebook hesabınızı bağlayarak profilinizi yedekleyin ve ilerlemenizi diğer cihazlarla paylaşın.',
+              title: 'Facebook ile Giriş Yap',
+              desc: 'Facebook hesabınızı bağlayarak profilinizi yedekleyin ve ilerlemenizi diğer cihazlarla eşitleyin.',
               color: '#1877F2',
               emailLabel: 'FACEBOOK E-POSTA / TELEFON',
               emailPlaceholder: 'ornek@facebook.com',
-              submitText: 'Facebook Hesabı Bağla',
+              submitText: 'Facebook Hesabı ile Giriş Yap',
               icon: (
                 <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
                   <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z" />
@@ -1562,12 +1589,12 @@ export default function ProfileTab({
               )
             },
             apple: {
-              title: 'Apple ile Giriş Yap (Mock)',
+              title: 'Apple ile Giriş Yap',
               desc: 'Apple ID\'nizi bağlayarak ilerlemenizi iCloud ekosistemi ve diğer platformlarda senkronize edin.',
               color: '#1E1E22',
               emailLabel: 'APPLE ID / E-POSTA',
               emailPlaceholder: 'ornek@icloud.com',
-              submitText: 'Apple ID Bağla',
+              submitText: 'Apple ID ile Giriş Yap',
               icon: (
                 <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
                   <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.22.67-2.94 1.5-.64.74-1.2 1.88-1.05 2.99 1.11.09 2.26-.54 3-1.43z" />
@@ -1575,8 +1602,8 @@ export default function ProfileTab({
               )
             },
             email: {
-              title: 'E-posta ile Giriş Yap (Mock)',
-              desc: 'E-posta adresinizi girerek anında hesabınızı oluşturun veya mevcut hesabınıza erişin.',
+              title: 'E-posta ile Giriş Yap',
+              desc: 'E-posta adresiniz ve şifrenizle anında hesap oluşturun veya mevcut hesabınıza erişin.',
               color: '#4ECDC4',
               emailLabel: 'E-POSTA ADRESİ',
               emailPlaceholder: 'ornek@eposta.com',
@@ -1589,9 +1616,9 @@ export default function ProfileTab({
               )
             }
           };
-
+ 
           const config = providerConfigs[provider];
-
+ 
           return (
             <div className="fixed inset-0 z-50 bg-[#2D3436]/55 backdrop-blur-xs flex items-center justify-center p-4">
               <motion.div
@@ -1608,6 +1635,8 @@ export default function ProfileTab({
                     setShowMockLogin(false);
                     setMockEmail('');
                     setMockName('');
+                    setLoginPassword('');
+                    setGoogleStep('picker');
                   }}
                   className={`absolute top-4 right-4 p-1 px-2.5 rounded-lg text-xs font-bold font-mono cursor-pointer transition-colors ${
                     isDarkMode ? 'text-gray-300 bg-[#2A2A30] hover:bg-[#343A40]' : 'text-gray-500 bg-gray-100 hover:bg-gray-200'
@@ -1615,7 +1644,7 @@ export default function ProfileTab({
                 >
                   Kapat
                 </button>
-
+ 
                 <div 
                   className="w-12 h-12 rounded-full flex items-center justify-center mb-4 border shadow-sm mx-auto"
                   style={{ 
@@ -1626,69 +1655,180 @@ export default function ProfileTab({
                 >
                   {config.icon}
                 </div>
-
+ 
                 <h3 className={`font-headline-lg text-lg font-bold mb-1 text-center ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
-                  {config.title}
+                  {provider === 'google' && googleStep === 'picker' ? 'Google ile Giriş Yap' : config.title}
                 </h3>
-                <p className="text-xs text-gray-400 mb-5 px-1 leading-relaxed font-semibold text-center">
-                  {config.desc}
+                <p className="text-xs text-gray-400 mb-5 px-1 leading-relaxed font-semibold text-center font-headline-lg">
+                  {provider === 'google' && googleStep === 'picker' ? 'Devam etmek için cihazınızda kayıtlı hesabı seçin' : config.desc}
                 </p>
-
-                <form onSubmit={handleMockSubmit} className="space-y-4">
-                  <div>
-                    <label className="text-[10px] font-bold text-gray-400 tracking-wider block mb-1 font-headline-lg">
-                      {config.emailLabel}
-                    </label>
-                    <input
-                      type="email"
-                      required
-                      placeholder={config.emailPlaceholder}
-                      value={mockEmail}
-                      onChange={(e) => {
-                        const val = e.target.value;
-                        setMockEmail(val);
-                        const oldAutofill = formatAutofillName(mockEmail);
-                        if (!mockName || mockName === mockEmail.split('@')[0] || mockName === oldAutofill) {
-                          setMockName(formatAutofillName(val));
-                        }
-                      }}
-                      className={`w-full text-xs px-3 py-2.5 border rounded-xl focus:outline-none focus:border-[#FF6B6B] focus:ring-1 focus:ring-[#FF6B6B] font-medium transition-colors ${
-                        isDarkMode 
-                          ? 'bg-[#121214] border-[#2A2A30] text-white placeholder-gray-650' 
-                          : 'bg-white border-[#FFE66D] text-gray-800 placeholder-teal-650'
+ 
+                {provider === 'google' && googleStep === 'picker' ? (
+                  <div className="space-y-3">
+                    {/* Native account select simulation */}
+                    <button
+                      type="button"
+                      onClick={() => handleDirectSelectLogin('ardasimsek1005@gmail.com', 'google')}
+                      className={`w-full p-3.5 rounded-2xl border text-left cursor-pointer transition-colors flex items-center gap-3.5 ${
+                        isDarkMode ? 'bg-[#121214] border-gray-800 hover:bg-white/5' : 'bg-gray-50 border-gray-200 hover:bg-gray-100'
                       }`}
-                    />
-                  </div>
-
-                  <div>
-                    <label className="text-[10px] font-bold text-gray-400 tracking-wider block mb-1 font-headline-lg">
-                      İSMİNİZ (İSTEĞE BAĞLI)
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="Adınız Soyadınız"
-                      value={mockName}
-                      onChange={(e) => setMockName(e.target.value)}
-                      className={`w-full text-xs px-3 py-2.5 border rounded-xl focus:outline-none focus:border-[#FF6B6B] focus:ring-1 focus:ring-[#FF6B6B] font-medium transition-colors ${
-                        isDarkMode 
-                          ? 'bg-[#121214] border-[#2A2A30] text-white placeholder-gray-650' 
-                          : 'bg-white border-[#FFE66D] text-gray-800 placeholder-teal-650'
+                    >
+                      <div className="w-8 h-8 rounded-full bg-[#EA4335]/15 text-[#EA4335] flex items-center justify-center font-extrabold text-xs shrink-0">
+                        A
+                      </div>
+                      <div className="text-left font-headline-lg flex-1 min-w-0">
+                        <div className="text-xs font-extrabold text-gray-700 dark:text-gray-200">Arda Şimşek</div>
+                        <div className="text-[10px] text-gray-400 font-medium truncate">ardasimsek1005@gmail.com</div>
+                      </div>
+                      <span className="text-[9px] font-bold text-gray-450 uppercase tracking-wider shrink-0 select-none">Kayıtlı</span>
+                    </button>
+ 
+                    <button
+                      type="button"
+                      onClick={() => setGoogleStep('credentials')}
+                      className={`w-full py-3 rounded-2xl border text-xs font-bold transition-colors cursor-pointer text-center font-headline-lg ${
+                        isDarkMode ? 'bg-transparent border-gray-800 hover:bg-white/5 text-gray-300' : 'bg-transparent border-gray-200 hover:bg-gray-50 text-gray-600'
                       }`}
-                    />
+                    >
+                      Başka bir Gmail adresi kullan
+                    </button>
                   </div>
-
-                  <button
-                    type="submit"
-                    className="w-full py-3.5 text-white rounded-xl text-xs font-bold hover:opacity-90 transition-all cursor-pointer shadow-md font-headline-lg mt-2"
-                    style={{ backgroundColor: config.color === '#1E1E22' ? '#333' : config.color }}
-                  >
-                    {config.submitText}
-                  </button>
-                </form>
+                ) : (
+                  <form onSubmit={handleMockSubmit} className="space-y-4">
+                    <div className="text-left">
+                      <label className="text-[10px] font-bold text-gray-400 tracking-wider block mb-1 font-headline-lg">
+                        {config.emailLabel}
+                      </label>
+                      <input
+                        type="email"
+                        required
+                        placeholder={config.emailPlaceholder}
+                        value={mockEmail}
+                        onChange={(e) => setMockEmail(e.target.value)}
+                        className={`w-full text-xs px-3 py-2.5 border rounded-xl focus:outline-none focus:border-[#FF6B6B] focus:ring-1 focus:ring-[#FF6B6B] font-medium transition-colors ${
+                          isDarkMode 
+                            ? 'bg-[#121214] border-[#2A2A30] text-white placeholder-gray-600' 
+                            : 'bg-white border-[#FFE66D] text-gray-800 placeholder-teal-650'
+                        }`}
+                      />
+                    </div>
+ 
+                    <div className="text-left">
+                      <label className="text-[10px] font-bold text-gray-400 tracking-wider block mb-1 font-headline-lg">
+                        ŞİFRE
+                      </label>
+                      <input
+                        type="password"
+                        required
+                        placeholder="••••••"
+                        value={loginPassword}
+                        onChange={(e) => setLoginPassword(e.target.value)}
+                        className={`w-full text-xs px-3 py-2.5 border rounded-xl focus:outline-none focus:border-[#FF6B6B] focus:ring-1 focus:ring-[#FF6B6B] font-medium transition-colors ${
+                          isDarkMode 
+                            ? 'bg-[#121214] border-[#2A2A30] text-white placeholder-gray-650' 
+                            : 'bg-white border-[#FFE66D] text-gray-800 placeholder-teal-650'
+                        }`}
+                      />
+                    </div>
+ 
+                    <div className="flex gap-2.5 pt-2">
+                      {provider === 'google' && (
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setGoogleStep('picker');
+                            setMockEmail('');
+                            setLoginPassword('');
+                          }}
+                          className={`w-1/3 py-3 rounded-xl text-xs font-bold transition-all cursor-pointer font-headline-lg ${
+                            isDarkMode ? 'bg-[#2A2A30] hover:bg-[#343A40] text-gray-300' : 'bg-gray-150 hover:bg-gray-200 text-gray-600'
+                          }`}
+                        >
+                          Geri Dön
+                        </button>
+                      )}
+                      <button
+                        type="submit"
+                        className={`text-white rounded-xl text-xs font-bold hover:opacity-90 transition-all cursor-pointer shadow-md font-headline-lg ${
+                          provider === 'google' ? 'w-2/3' : 'w-full'
+                        } py-3.5`}
+                        style={{ backgroundColor: config.color === '#1E1E22' ? '#333' : config.color }}
+                      >
+                        {config.submitText}
+                      </button>
+                    </div>
+                  </form>
+                )}
               </motion.div>
             </div>
           );
         })()}
+      </AnimatePresence>
+
+      {/* ENTER INVITATION CODE MODAL */}
+      <AnimatePresence>
+        {isInviteInputOpen && (
+          <div className="fixed inset-0 z-50 bg-[#2D3436]/55 backdrop-blur-xs flex items-center justify-center p-4">
+            <motion.div
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              className={`max-w-xs w-full rounded-[24px] border-2 p-5 flex flex-col shadow-2xl relative transition-all ${
+                isDarkMode ? 'bg-[#1A1A1E] border-[#2A2A30]' : 'bg-white border-[#FFE66D]'
+              }`}
+            >
+              <h3 className={`font-headline-lg text-sm font-bold mb-2 text-center ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
+                Davet Kodu Gir
+              </h3>
+              <p className="text-[10px] text-gray-400 mb-4 leading-relaxed font-semibold text-center font-headline-lg">
+                Arkadaşınızın davet kodunu girerek onunla bağlantı kurun.
+              </p>
+              
+              <input
+                type="text"
+                placeholder="Örn: OYKUM-ABCDE"
+                value={inviteInputVal}
+                onChange={(e) => setInviteInputVal(e.target.value.toUpperCase())}
+                className={`w-full text-xs px-3 py-2.5 border rounded-xl focus:outline-none focus:border-[#FF6B6B] focus:ring-1 focus:ring-[#FF6B6B] font-mono text-center font-bold tracking-wider mb-4 transition-colors ${
+                  isDarkMode 
+                    ? 'bg-[#121214] border-[#2A2A30] text-white placeholder-gray-600' 
+                    : 'bg-white border-[#FFE66D] text-gray-800 placeholder-gray-400'
+                }`}
+              />
+
+              <div className="flex gap-2">
+                <button
+                  type="button"
+                  onClick={() => setIsInviteInputOpen(false)}
+                  className={`w-1/2 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer font-headline-lg ${
+                    isDarkMode ? 'bg-[#2A2A30] hover:bg-[#343A40] text-gray-300' : 'bg-gray-150 hover:bg-gray-200 text-gray-600'
+                  }`}
+                >
+                  İptal
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    const cleaned = inviteInputVal.trim();
+                    if (!cleaned) {
+                      setToastMessage('Lütfen bir kod girin. ⚠️');
+                      setTimeout(() => setToastMessage(null), 2500);
+                      return;
+                    }
+                    localStorage.setItem('linguist_referred_by', cleaned);
+                    setReferredBy(cleaned);
+                    setIsInviteInputOpen(false);
+                    setToastMessage('Davet kodu başarıyla uygulandı! 🎁');
+                    setTimeout(() => setToastMessage(null), 2500);
+                  }}
+                  className="w-1/2 py-2 bg-[#FF6B6B] text-white rounded-xl text-xs font-bold hover:bg-[#e05a5a] transition-all cursor-pointer shadow-md shadow-[#FF6B6B]/20 font-headline-lg"
+                >
+                  Uygula
+                </button>
+              </div>
+            </motion.div>
+          </div>
+        )}
       </AnimatePresence>
     </div>
   );
