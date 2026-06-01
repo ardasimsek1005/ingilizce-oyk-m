@@ -2,51 +2,51 @@
   "account": {
     "base": "account",
     "tr": "hesap",
-    "level": "A2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "acknowledged": {
     "base": "acknowledged",
     "tr": "kabul edildi",
-    "level": "B1",
-    "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
-  },
-  "accelerated": {
-    "base": "accelerated",
-    "tr": "hızlandırılmış",
-    "level": "C1",
-    "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C1"
-  },
-  "abyss": {
-    "base": "abyss",
-    "tr": "uçurum",
     "level": "B2",
     "pos": "Sıfat",
     "explanation": "Sıfat • Seviye: B2"
   },
+  "accelerated": {
+    "base": "accelerated",
+    "tr": "hızlandırılmış",
+    "level": "B2",
+    "pos": "Sıfat",
+    "explanation": "Sıfat • Seviye: B2"
+  },
+  "abyss": {
+    "base": "abyss",
+    "tr": "uçurum",
+    "level": "C1",
+    "pos": "Sıfat",
+    "explanation": "Sıfat • Seviye: C1"
+  },
   "able": {
     "base": "able",
     "tr": "hünerli",
-    "level": "B1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "acknowledging": {
     "base": "acknowledging",
     "tr": "kabul etme",
-    "level": "B1",
+    "level": "B2",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: B1"
+    "explanation": "Fiil • Seviye: B2"
   },
   "aberration": {
     "base": "aberration",
     "tr": "sapma",
-    "level": "C2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "abandon": {
     "base": "abandon",
@@ -79,9 +79,9 @@
   "accounts": {
     "base": "accounts",
     "tr": "hesaplar",
-    "level": "A2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: B1"
   },
   "accepted": {
     "base": "accepted",
@@ -107,16 +107,16 @@
   "according": {
     "base": "according",
     "tr": "binaen",
-    "level": "B2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: B1"
   },
   "accelerate": {
     "base": "accelerate",
     "tr": "hızlanmak",
-    "level": "C1",
+    "level": "B2",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: C1"
+    "explanation": "Fiil • Seviye: B2"
   },
   "absent": {
     "base": "absent",
@@ -128,9 +128,9 @@
   "abandoned": {
     "base": "abandoned",
     "tr": "terk edilmiş",
-    "level": "B2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "abilities": {
     "base": "abilities",
@@ -142,9 +142,9 @@
   "academic": {
     "base": "academic",
     "tr": "akademik",
-    "level": "B1",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "accept": {
     "base": "accept",
@@ -156,9 +156,9 @@
   "acknowledgement": {
     "base": "acknowledgement",
     "tr": "teşekkür",
-    "level": "B1",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "a": {
     "base": "a",
@@ -184,16 +184,16 @@
   "accustomed": {
     "base": "accustomed",
     "tr": "alışılmış",
-    "level": "B1",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "absorbing": {
     "base": "absorbing",
     "tr": "emici",
-    "level": "B1",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "above": {
     "base": "above",
@@ -205,9 +205,9 @@
   "acknowledge": {
     "base": "acknowledge",
     "tr": "kabullenmek",
-    "level": "B1",
+    "level": "B2",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: B1"
+    "explanation": "Fiil • Seviye: B2"
   },
   "aboard": {
     "base": "aboard",
@@ -219,9 +219,9 @@
   "absolute": {
     "base": "absolute",
     "tr": "mutlak",
-    "level": "B1",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "ache": {
     "base": "ache",
@@ -233,9 +233,9 @@
   "accomplishment": {
     "base": "accomplishment",
     "tr": "başarı",
-    "level": "B1",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: B2"
   },
   "accusing": {
     "base": "accusing",
@@ -247,9 +247,9 @@
   "aching": {
     "base": "aching",
     "tr": "ağrıyan",
-    "level": "B2",
+    "level": "B1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: B2"
+    "explanation": "Fiil • Seviye: B1"
   },
   "abstemious": {
     "base": "abstemious",
@@ -261,9 +261,9 @@
   "across": {
     "base": "across",
     "tr": "karşısında",
-    "level": "A2",
+    "level": "A1",
     "pos": "Edat",
-    "explanation": "Edat • Seviye: A2"
+    "explanation": "Edat • Seviye: A1"
   },
   "acting": {
     "base": "acting",
@@ -275,9 +275,9 @@
   "activity": {
     "base": "activity",
     "tr": "aktivite",
-    "level": "A1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
+    "explanation": "İsim • Seviye: A2"
   },
   "actually": {
     "base": "actually",
@@ -289,44 +289,44 @@
   "additionally": {
     "base": "additionally",
     "tr": "ayrıca",
-    "level": "B2",
+    "level": "B1",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: B2"
+    "explanation": "Zarf • Seviye: B1"
   },
   "admit": {
     "base": "admit",
     "tr": "itiraf etmek",
-    "level": "A2",
+    "level": "B1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A2"
+    "explanation": "Fiil • Seviye: B1"
   },
   "admired": {
     "base": "admired",
     "tr": "hayran kaldım",
-    "level": "A2",
+    "level": "B1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A2"
+    "explanation": "Fiil • Seviye: B1"
   },
   "acrid": {
     "base": "acrid",
     "tr": "buruk",
-    "level": "C2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "actions": {
     "base": "actions",
     "tr": "eylemler",
-    "level": "A1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
+    "explanation": "İsim • Seviye: A2"
   },
   "adder": {
     "base": "adder",
     "tr": "engerek",
-    "level": "B1",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "acted": {
     "base": "acted",
@@ -338,16 +338,16 @@
   "admiring": {
     "base": "admiring",
     "tr": "hayranlık duymak",
-    "level": "A2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "act": {
     "base": "act",
     "tr": "davranmak",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "advice": {
     "base": "advice",
@@ -366,44 +366,44 @@
   "acutely": {
     "base": "acutely",
     "tr": "akut olarak",
-    "level": "C2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "affairs": {
     "base": "affairs",
     "tr": "işler",
-    "level": "A2",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "adrenaline": {
     "base": "adrenaline",
     "tr": "adrenalin",
-    "level": "C2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "addressed": {
     "base": "addressed",
     "tr": "adreslenmiş",
-    "level": "A2",
+    "level": "B1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A2"
+    "explanation": "Fiil • Seviye: B1"
   },
   "aegean": {
     "base": "aegean",
     "tr": "Ege",
-    "level": "C2",
-    "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "level": "Özel İsim",
+    "pos": "Özel İsim",
+    "explanation": "Özel İsim • Karakter veya yer adı"
   },
   "adversary": {
     "base": "adversary",
     "tr": "düşman",
-    "level": "C2",
+    "level": "C1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: C1"
   },
   "adults": {
     "base": "adults",
@@ -422,16 +422,16 @@
   "advisors": {
     "base": "advisors",
     "tr": "danışmanlar",
-    "level": "B1",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: B2"
   },
   "adulthood": {
     "base": "adulthood",
     "tr": "yetişkinlik",
-    "level": "A2",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "adventures": {
     "base": "adventures",
@@ -457,23 +457,23 @@
   "adversaries": {
     "base": "adversaries",
     "tr": "düşmanlar",
-    "level": "C2",
+    "level": "C1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: C1"
   },
   "affair": {
     "base": "affair",
     "tr": "mesele",
-    "level": "A2",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: B2"
   },
   "advantage": {
     "base": "advantage",
     "tr": "avantaj",
-    "level": "A2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: B1"
   },
   "advocacy": {
     "base": "advocacy",
@@ -485,9 +485,9 @@
   "affection": {
     "base": "affection",
     "tr": "alaka",
-    "level": "B1",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: B2"
   },
   "afraid": {
     "base": "afraid",
@@ -506,9 +506,9 @@
   "africa": {
     "base": "africa",
     "tr": "Afrika",
-    "level": "A2",
-    "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "level": "Özel İsim",
+    "pos": "Özel İsim",
+    "explanation": "Özel İsim • Karakter veya yer adı"
   },
   "afternoon": {
     "base": "afternoon",
@@ -520,9 +520,9 @@
   "aftermath": {
     "base": "aftermath",
     "tr": "sonrası",
-    "level": "C2",
+    "level": "C1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: C1"
   },
   "after": {
     "base": "after",
@@ -562,23 +562,23 @@
   "agonizing": {
     "base": "agonizing",
     "tr": "ıstırap verici",
-    "level": "B2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "absurdity": {
     "base": "absurdity",
     "tr": "saçmalık",
-    "level": "B2",
+    "level": "C1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: C1"
   },
   "agony": {
     "base": "agony",
     "tr": "ıstırap",
-    "level": "B2",
+    "level": "C1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: C1"
   },
   "ahead": {
     "base": "ahead",
@@ -590,9 +590,9 @@
   "agility": {
     "base": "agility",
     "tr": "çeviklik",
-    "level": "C2",
+    "level": "C1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: C1"
   },
   "agreement": {
     "base": "agreement",
@@ -604,16 +604,16 @@
   "agitated": {
     "base": "agitated",
     "tr": "heyecanlı",
-    "level": "C2",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "alarmed": {
     "base": "alarmed",
     "tr": "alarma geçti",
-    "level": "A2",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "against": {
     "base": "against",
@@ -632,23 +632,23 @@
   "aimed": {
     "base": "aimed",
     "tr": "amaçlanan",
-    "level": "B2",
+    "level": "B1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: B2"
+    "explanation": "Fiil • Seviye: B1"
   },
   "ah": {
     "base": "ah",
     "tr": "Ah",
-    "level": "C2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: A1"
   },
   "ali": {
     "base": "ali",
     "tr": "Ali",
-    "level": "B2",
-    "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "level": "Özel İsim",
+    "pos": "Özel İsim",
+    "explanation": "Özel İsim • Karakter veya yer adı"
   },
   "alchemy": {
     "base": "alchemy",
@@ -660,23 +660,23 @@
   "air": {
     "base": "air",
     "tr": "hava",
-    "level": "A2",
+    "level": "A1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: A1"
   },
   "alice": {
     "base": "alice",
     "tr": "Alice",
-    "level": "B2",
-    "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "level": "Özel İsim",
+    "pos": "Özel İsim",
+    "explanation": "Özel İsim • Karakter veya yer adı"
   },
   "agreed": {
     "base": "agreed",
     "tr": "anlaştık",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "ago": {
     "base": "ago",
@@ -688,16 +688,16 @@
   "alcohol": {
     "base": "alcohol",
     "tr": "alkol",
-    "level": "B1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: A2"
   },
   "aggressive": {
     "base": "aggressive",
     "tr": "agresif",
-    "level": "B1",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "alive": {
     "base": "alive",
@@ -716,9 +716,9 @@
   "allies": {
     "base": "allies",
     "tr": "müttefikler",
-    "level": "B2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: B1"
   },
   "allow": {
     "base": "allow",
@@ -730,30 +730,30 @@
   "alliance": {
     "base": "alliance",
     "tr": "ittifak",
-    "level": "B2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: B1"
   },
   "alley": {
     "base": "alley",
     "tr": "sokak",
-    "level": "C1",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C1"
+    "explanation": "İsim • Seviye: B1"
   },
   "alone": {
     "base": "alone",
     "tr": "yalnız",
-    "level": "A1",
+    "level": "A2",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: A1"
+    "explanation": "Zarf • Seviye: A2"
   },
   "along": {
     "base": "along",
     "tr": "birlikte",
-    "level": "A1",
+    "level": "A2",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: A1"
+    "explanation": "Zarf • Seviye: A2"
   },
   "allowed": {
     "base": "allowed",
@@ -765,16 +765,16 @@
   "almost": {
     "base": "almost",
     "tr": "neredeyse",
-    "level": "A1",
+    "level": "A2",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: A1"
+    "explanation": "Zarf • Seviye: A2"
   },
   "alongside": {
     "base": "alongside",
     "tr": "yanında",
-    "level": "B2",
+    "level": "B1",
     "pos": "Edat",
-    "explanation": "Edat • Seviye: B2"
+    "explanation": "Edat • Seviye: B1"
   },
   "always": {
     "base": "always",
@@ -828,9 +828,9 @@
   "alter": {
     "base": "alter",
     "tr": "değiştirmek",
-    "level": "B2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: B1"
   },
   "also": {
     "base": "also",
@@ -842,9 +842,9 @@
   "amongst": {
     "base": "amongst",
     "tr": "arasında",
-    "level": "B2",
+    "level": "C1",
     "pos": "Edat",
-    "explanation": "Edat • Seviye: B2"
+    "explanation": "Edat • Seviye: C1"
   },
   "although": {
     "base": "although",
@@ -856,9 +856,9 @@
   "anastasia": {
     "base": "anastasia",
     "tr": "anastasia",
-    "level": "C2",
-    "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "level": "Özel İsim",
+    "pos": "Özel İsim",
+    "explanation": "Özel İsim • Karakter veya yer adı"
   },
   "among": {
     "base": "among",
@@ -870,23 +870,23 @@
   "ambition": {
     "base": "ambition",
     "tr": "tutku",
-    "level": "A2",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: B2"
   },
   "already": {
     "base": "already",
     "tr": "çoktan",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "anarchy": {
     "base": "anarchy",
     "tr": "anarşi",
-    "level": "C2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "an": {
     "base": "an",
@@ -898,37 +898,37 @@
   "analytical": {
     "base": "analytical",
     "tr": "analitik",
-    "level": "B1",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "achaean": {
     "base": "achaean",
     "tr": "Achaean",
-    "level": "C2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "aauuughh": {
     "base": "aauuughh",
     "tr": "aaa",
-    "level": "Özel İsim",
+    "level": "A1",
     "pos": "Özel İsim",
-    "explanation": "Özel İsim • Karakter veya yer adı"
+    "explanation": "Özel İsim • Seviye: A1"
   },
   "anchor": {
     "base": "anchor",
     "tr": "çapa",
-    "level": "B2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: B1"
   },
   "amount": {
     "base": "amount",
     "tr": "miktar",
-    "level": "B1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "anatomy": {
     "base": "anatomy",
@@ -940,9 +940,9 @@
   "ancient": {
     "base": "ancient",
     "tr": "antik",
-    "level": "A2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "and": {
     "base": "and",
@@ -954,23 +954,23 @@
   "anecdotes": {
     "base": "anecdotes",
     "tr": "anekdotlar",
-    "level": "C2",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: B2"
   },
   "angry": {
     "base": "angry",
     "tr": "sinirli",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "anchored": {
     "base": "anchored",
     "tr": "demirlemiş",
-    "level": "B2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "animals": {
     "base": "animals",
@@ -1017,9 +1017,9 @@
   "angels": {
     "base": "angels",
     "tr": "melekler",
-    "level": "A2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: B1"
   },
   "answered": {
     "base": "answered",
@@ -1059,44 +1059,44 @@
   "antiseptic": {
     "base": "antiseptic",
     "tr": "antiseptik",
-    "level": "C1",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C1"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "aladdin": {
     "base": "aladdin",
     "tr": "Alaaddin",
-    "level": "C2",
-    "pos": "Edat",
-    "explanation": "Edat • Seviye: C2"
+    "level": "Özel İsim",
+    "pos": "Özel İsim",
+    "explanation": "Özel İsim • Karakter veya yer adı"
   },
   "akela": {
     "base": "akela",
     "tr": "akela",
-    "level": "C2",
-    "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "level": "Özel İsim",
+    "pos": "Özel İsim",
+    "explanation": "Özel İsim • Karakter veya yer adı"
   },
   "adoptive": {
     "base": "adoptive",
     "tr": "evlat edinen",
-    "level": "B1",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "admiringly": {
     "base": "admiringly",
     "tr": "hayranlıkla",
-    "level": "B2",
+    "level": "C1",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: B2"
+    "explanation": "Zarf • Seviye: C1"
   },
   "adrift": {
     "base": "adrift",
     "tr": "başıboş",
-    "level": "C2",
+    "level": "C1",
     "pos": "Kelime",
-    "explanation": "Kelime • Seviye: C2"
+    "explanation": "Kelime • Seviye: C1"
   },
   "answers": {
     "base": "answers",
@@ -1108,9 +1108,9 @@
   "anxious": {
     "base": "anxious",
     "tr": "endişeli",
-    "level": "A2",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "any": {
     "base": "any",
@@ -1122,9 +1122,9 @@
   "antelope": {
     "base": "antelope",
     "tr": "antilop",
-    "level": "C2",
+    "level": "B2",
     "pos": "Kelime",
-    "explanation": "Kelime • Seviye: C2"
+    "explanation": "Kelime • Seviye: B2"
   },
   "anymore": {
     "base": "anymore",
@@ -1136,9 +1136,9 @@
   "anxiety": {
     "base": "anxiety",
     "tr": "endişe",
-    "level": "B1",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: B2"
   },
   "anyway": {
     "base": "anyway",
@@ -1157,9 +1157,9 @@
   "ann": {
     "base": "ann",
     "tr": "anne",
-    "level": "A2",
-    "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "level": "Özel İsim",
+    "pos": "Özel İsim",
+    "explanation": "Özel İsim • Karakter veya yer adı"
   },
   "anyone": {
     "base": "anyone",
@@ -1171,16 +1171,16 @@
   "apartment": {
     "base": "apartment",
     "tr": "daire",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "apathy": {
     "base": "apathy",
     "tr": "ilgisizlik",
-    "level": "C2",
+    "level": "C1",
     "pos": "Bağlaç",
-    "explanation": "Bağlaç • Seviye: C2"
+    "explanation": "Bağlaç • Seviye: C1"
   },
   "aperture": {
     "base": "aperture",
@@ -1241,9 +1241,9 @@
   "approached": {
     "base": "approached",
     "tr": "yaklaştı",
-    "level": "B2",
+    "level": "B1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: B2"
+    "explanation": "Fiil • Seviye: B1"
   },
   "apples": {
     "base": "apples",
@@ -1255,37 +1255,37 @@
   "apron": {
     "base": "apron",
     "tr": "apron",
-    "level": "A1",
+    "level": "B1",
     "pos": "Edat",
-    "explanation": "Edat • Seviye: A1"
+    "explanation": "Edat • Seviye: B1"
   },
   "approaching": {
     "base": "approaching",
     "tr": "yaklaşıyor",
-    "level": "B2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "appropriate": {
     "base": "appropriate",
     "tr": "uygun",
-    "level": "A2",
-    "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
-  },
-  "arch": {
-    "base": "arch",
-    "tr": "kemer",
     "level": "B2",
     "pos": "Sıfat",
     "explanation": "Sıfat • Seviye: B2"
   },
+  "arch": {
+    "base": "arch",
+    "tr": "kemer",
+    "level": "B1",
+    "pos": "Sıfat",
+    "explanation": "Sıfat • Seviye: B1"
+  },
   "archaic": {
     "base": "archaic",
     "tr": "arkaik",
-    "level": "C2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "apple": {
     "base": "apple",
@@ -1297,9 +1297,9 @@
   "applied": {
     "base": "applied",
     "tr": "uygulanan",
-    "level": "A2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "architect": {
     "base": "architect",
@@ -1311,37 +1311,37 @@
   "arctic": {
     "base": "arctic",
     "tr": "arktik",
-    "level": "B2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "ancestral": {
     "base": "ancestral",
     "tr": "atalardan kalma",
-    "level": "C2",
+    "level": "B2",
     "pos": "Kelime",
-    "explanation": "Kelime • Seviye: C2"
+    "explanation": "Kelime • Seviye: B2"
   },
   "architecture": {
     "base": "architecture",
     "tr": "mimari",
-    "level": "A2",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: B2"
   },
   "argue": {
     "base": "argue",
     "tr": "tartışmak",
-    "level": "A2",
+    "level": "B1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A2"
+    "explanation": "Fiil • Seviye: B1"
   },
   "area": {
     "base": "area",
     "tr": "alan",
-    "level": "A2",
+    "level": "A1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: A1"
   },
   "architectural": {
     "base": "architectural",
@@ -1353,16 +1353,16 @@
   "arf": {
     "base": "arf",
     "tr": "arf",
-    "level": "C2",
+    "level": "A1",
     "pos": "Kelime",
-    "explanation": "Kelime • Seviye: C2"
+    "explanation": "Kelime • Seviye: A1"
   },
   "arduous": {
     "base": "arduous",
     "tr": "çetin",
-    "level": "C2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "are": {
     "base": "are",
@@ -1374,16 +1374,16 @@
   "archer": {
     "base": "archer",
     "tr": "okçu",
-    "level": "B2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "archery": {
     "base": "archery",
     "tr": "okçuluk",
-    "level": "C2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "arm": {
     "base": "arm",
@@ -1395,23 +1395,23 @@
   "armchair": {
     "base": "armchair",
     "tr": "koltuk",
-    "level": "A2",
+    "level": "B1",
     "pos": "Edat",
-    "explanation": "Edat • Seviye: A2"
+    "explanation": "Edat • Seviye: B1"
   },
   "argued": {
     "base": "argued",
     "tr": "savundu",
-    "level": "A2",
+    "level": "B1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A2"
+    "explanation": "Fiil • Seviye: B1"
   },
   "army": {
     "base": "army",
     "tr": "ordu",
-    "level": "B1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: A2"
   },
   "arose": {
     "base": "arise",
@@ -1423,9 +1423,9 @@
   "arms": {
     "base": "arms",
     "tr": "silahlar",
-    "level": "A2",
+    "level": "A1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: A1"
   },
   "appreciation": {
     "base": "appreciation",
@@ -1451,9 +1451,9 @@
   "arrival": {
     "base": "arrival",
     "tr": "varış",
-    "level": "B1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: A2"
   },
   "arrived": {
     "base": "arrived",
@@ -1465,9 +1465,9 @@
   "arrogance": {
     "base": "arrogance",
     "tr": "kibir",
-    "level": "C2",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "arrow": {
     "base": "arrow",
@@ -1479,9 +1479,9 @@
   "arriving": {
     "base": "arriving",
     "tr": "varış",
-    "level": "A1",
+    "level": "A2",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A1"
+    "explanation": "Fiil • Seviye: A2"
   },
   "articulate": {
     "base": "articulate",
@@ -1507,9 +1507,9 @@
   "ascended": {
     "base": "ascended",
     "tr": "Yükselmiş",
-    "level": "C2",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "ask": {
     "base": "ask",
@@ -1542,9 +1542,9 @@
   "arrives": {
     "base": "arrives",
     "tr": "geldiğinde",
-    "level": "A1",
+    "level": "A2",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A1"
+    "explanation": "Fiil • Seviye: A2"
   },
   "arrangement": {
     "base": "arrangement",
@@ -1577,23 +1577,23 @@
   "asset": {
     "base": "asset",
     "tr": "varlık",
-    "level": "B1",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: B2"
   },
   "artifact": {
     "base": "artifact",
     "tr": "eser",
-    "level": "C2",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "assembly": {
     "base": "assembly",
     "tr": "toplantı",
-    "level": "B2",
+    "level": "C1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: C1"
   },
   "asks": {
     "base": "asks",
@@ -1619,23 +1619,23 @@
   "associate": {
     "base": "associate",
     "tr": "iş arkadaşı",
-    "level": "B1",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "associates": {
     "base": "associates",
     "tr": "ortaklar",
-    "level": "B1",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: B2"
   },
   "assassination": {
     "base": "assassination",
     "tr": "suikast",
-    "level": "C2",
+    "level": "C1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: C1"
   },
   "assault": {
     "base": "assault",
@@ -1668,9 +1668,9 @@
   "athena": {
     "base": "athena",
     "tr": "athena",
-    "level": "C2",
-    "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "level": "Özel İsim",
+    "pos": "Özel İsim",
+    "explanation": "Özel İsim • Karakter veya yer adı"
   },
   "at": {
     "base": "at",
@@ -1689,16 +1689,16 @@
   "agonized": {
     "base": "agonized",
     "tr": "acı çeken",
-    "level": "B2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "attempt": {
     "base": "attempt",
     "tr": "girişim",
-    "level": "A2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: B1"
   },
   "attacking": {
     "base": "attacking",
@@ -1731,37 +1731,37 @@
   "attached": {
     "base": "attached",
     "tr": "ekli",
-    "level": "B2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "attic": {
     "base": "attic",
     "tr": "çatı katı",
-    "level": "C2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "atmosphere": {
     "base": "atmosphere",
     "tr": "atmosfer",
-    "level": "B1",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: B2"
   },
   "attempting": {
     "base": "attempting",
     "tr": "teşebbüs",
-    "level": "A2",
+    "level": "B1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A2"
+    "explanation": "Fiil • Seviye: B1"
   },
   "attempted": {
     "base": "attempted",
     "tr": "teşebbüs",
-    "level": "A2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "aunt": {
     "base": "aunt",
@@ -1773,9 +1773,9 @@
   "austere": {
     "base": "austere",
     "tr": "sade",
-    "level": "C2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "attraction": {
     "base": "attraction",
@@ -1787,9 +1787,9 @@
   "aurora": {
     "base": "aurora",
     "tr": "şafak",
-    "level": "C2",
+    "level": "C1",
     "pos": "Kelime",
-    "explanation": "Kelime • Seviye: C2"
+    "explanation": "Kelime • Seviye: C1"
   },
   "attention": {
     "base": "attention",
@@ -1801,16 +1801,16 @@
   "attractive": {
     "base": "attractive",
     "tr": "çekici",
-    "level": "A2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "autumn": {
     "base": "autumn",
     "tr": "sonbahar",
-    "level": "A1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
+    "explanation": "İsim • Seviye: A2"
   },
   "attended": {
     "base": "attended",
@@ -1829,16 +1829,16 @@
   "aversion": {
     "base": "aversion",
     "tr": "nefret",
-    "level": "C2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "authority": {
     "base": "authority",
     "tr": "yetki",
-    "level": "B1",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: B2"
   },
   "attack": {
     "base": "attack",
@@ -1850,16 +1850,16 @@
   "avoid": {
     "base": "avoid",
     "tr": "kaçınmak",
-    "level": "A2",
+    "level": "B1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A2"
+    "explanation": "Fiil • Seviye: B1"
   },
   "averted": {
     "base": "averted",
     "tr": "önlendi",
-    "level": "C2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "await": {
     "base": "await",
@@ -1878,23 +1878,23 @@
   "avert": {
     "base": "avert",
     "tr": "önlemek",
-    "level": "B1",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "avoiding": {
     "base": "avoiding",
     "tr": "kaçınmak",
-    "level": "A2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: B1"
   },
   "awake": {
     "base": "awake",
     "tr": "uyanmak",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "awaited": {
     "base": "awaited",
@@ -1920,23 +1920,23 @@
   "awakened": {
     "base": "awakened",
     "tr": "uyandı",
-    "level": "C2",
-    "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
-  },
-  "awkward": {
-    "base": "awkward",
-    "tr": "garip",
     "level": "B1",
     "pos": "Sıfat",
     "explanation": "Sıfat • Seviye: B1"
   },
+  "awkward": {
+    "base": "awkward",
+    "tr": "garip",
+    "level": "B2",
+    "pos": "Sıfat",
+    "explanation": "Sıfat • Seviye: B2"
+  },
   "awoke": {
     "base": "awake",
     "tr": "uyandım",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1 • (awake kelimesinden)"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "babies": {
     "base": "babies",
@@ -1962,44 +1962,44 @@
   "azure": {
     "base": "azure",
     "tr": "gök mavisi",
-    "level": "C2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "baba": {
     "base": "baba",
     "tr": "baba",
-    "level": "C2",
-    "pos": "Kelime",
-    "explanation": "Kelime • Seviye: C2"
+    "level": "Özel İsim",
+    "pos": "Özel İsim",
+    "explanation": "Özel İsim • Karakter veya yer adı"
   },
   "axe": {
     "base": "axe",
     "tr": "balta",
-    "level": "B2",
-    "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
-  },
-  "awkwardness": {
-    "base": "awkwardness",
-    "tr": "beceriksizlik",
-    "level": "B1",
-    "pos": "Bağlaç",
-    "explanation": "Bağlaç • Seviye: B1"
-  },
-  "backpacks": {
-    "base": "backpacks",
-    "tr": "Sırt çantaları",
     "level": "B1",
     "pos": "İsim",
     "explanation": "İsim • Seviye: B1"
   },
+  "awkwardness": {
+    "base": "awkwardness",
+    "tr": "beceriksizlik",
+    "level": "B2",
+    "pos": "Bağlaç",
+    "explanation": "Bağlaç • Seviye: B2"
+  },
+  "backpacks": {
+    "base": "backpacks",
+    "tr": "Sırt çantaları",
+    "level": "A2",
+    "pos": "İsim",
+    "explanation": "İsim • Seviye: A2"
+  },
   "backward": {
     "base": "backward",
     "tr": "geriye doğru",
-    "level": "B2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "bad": {
     "base": "bad",
@@ -2011,9 +2011,9 @@
   "badger": {
     "base": "badger",
     "tr": "porsuk",
-    "level": "B2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "badly": {
     "base": "badly",
@@ -2046,16 +2046,16 @@
   "baker": {
     "base": "baker",
     "tr": "fırıncı",
-    "level": "B1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: A2"
   },
   "bakers": {
     "base": "bakers",
     "tr": "fırıncılar",
-    "level": "B1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: A2"
   },
   "bakery": {
     "base": "bakery",
@@ -2081,30 +2081,30 @@
   "balcony": {
     "base": "balcony",
     "tr": "balkon",
-    "level": "A2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "balm": {
     "base": "balm",
     "tr": "merhem",
-    "level": "C2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "ballroom": {
     "base": "ballroom",
     "tr": "balo salonu",
-    "level": "C2",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: B2"
   },
   "band": {
     "base": "band",
     "tr": "bant",
-    "level": "A1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
+    "explanation": "İsim • Seviye: A2"
   },
   "bare": {
     "base": "bare",
@@ -2116,9 +2116,9 @@
   "balance": {
     "base": "balance",
     "tr": "denge",
-    "level": "B1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: A2"
   },
   "bank": {
     "base": "bank",
@@ -2130,30 +2130,30 @@
   "banish": {
     "base": "banish",
     "tr": "sürgün etmek",
-    "level": "B2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "bang": {
     "base": "bang",
     "tr": "patlama",
-    "level": "B1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: A2"
   },
   "barely": {
     "base": "barely",
     "tr": "neredeyse",
-    "level": "B1",
+    "level": "B2",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: B1"
+    "explanation": "Zarf • Seviye: B2"
   },
   "barked": {
     "base": "barked",
     "tr": "havladı",
-    "level": "B2",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "base": {
     "base": "base",
@@ -2165,9 +2165,9 @@
   "bark": {
     "base": "bark",
     "tr": "havlamak",
-    "level": "B1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: A2"
   },
   "barrel": {
     "base": "barrel",
@@ -2179,9 +2179,9 @@
   "barn": {
     "base": "barn",
     "tr": "ahır",
-    "level": "B2",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: A2"
   },
   "bars": {
     "base": "bars",
@@ -2193,37 +2193,37 @@
   "barks": {
     "base": "barks",
     "tr": "soyulmuş kabuk",
-    "level": "B2",
-    "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
-  },
-  "battle": {
-    "base": "battle",
-    "tr": "savaş",
-    "level": "B1",
-    "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
-  },
-  "basket": {
-    "base": "basket",
-    "tr": "sepet",
     "level": "A2",
     "pos": "İsim",
     "explanation": "İsim • Seviye: A2"
   },
+  "battle": {
+    "base": "battle",
+    "tr": "savaş",
+    "level": "A2",
+    "pos": "Sıfat",
+    "explanation": "Sıfat • Seviye: A2"
+  },
+  "basket": {
+    "base": "basket",
+    "tr": "sepet",
+    "level": "A1",
+    "pos": "İsim",
+    "explanation": "İsim • Seviye: A1"
+  },
   "battleground": {
     "base": "battleground",
     "tr": "savaş alanı",
-    "level": "C2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: B1"
   },
   "bagheera": {
     "base": "bagheera",
     "tr": "Bagheera",
-    "level": "C2",
-    "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "level": "Özel İsim",
+    "pos": "Özel İsim",
+    "explanation": "Özel İsim • Karakter veya yer adı"
   },
   "batteries": {
     "base": "batteries",
@@ -2242,16 +2242,16 @@
   "baskets": {
     "base": "baskets",
     "tr": "sepetler",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "battles": {
     "base": "battles",
     "tr": "savaşlar",
-    "level": "B1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: A2"
   },
   "be": {
     "base": "be",
@@ -2263,44 +2263,44 @@
   "battlements": {
     "base": "battlements",
     "tr": "siperler",
-    "level": "C2",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: B2"
   },
   "beads": {
     "base": "beads",
     "tr": "boncuk",
-    "level": "C2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: B1"
   },
   "bay": {
     "base": "bay",
     "tr": "koy",
-    "level": "A2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "beanstalk": {
     "base": "beanstalk",
     "tr": "fasulye sapı",
-    "level": "C2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: B1"
   },
   "beans": {
     "base": "beans",
     "tr": "fasulye",
-    "level": "A1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
+    "explanation": "İsim • Seviye: A2"
   },
   "bear": {
     "base": "bear",
     "tr": "ayı",
-    "level": "A1",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
+    "explanation": "İsim • Seviye: B1"
   },
   "beach": {
     "base": "beach",
@@ -2312,16 +2312,16 @@
   "bears": {
     "base": "bears",
     "tr": "ayılar",
-    "level": "A2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: B1"
   },
   "beaks": {
     "base": "beaks",
     "tr": "Gagalar",
-    "level": "B2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: B1"
   },
   "beasts": {
     "base": "beasts",
@@ -2340,30 +2340,30 @@
   "beat": {
     "base": "beat",
     "tr": "vurmak",
-    "level": "B1",
+    "level": "A2",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: B1"
+    "explanation": "Fiil • Seviye: A2"
   },
   "beaten": {
     "base": "beaten",
     "tr": "dövülmüş",
-    "level": "B2",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "beautiful": {
     "base": "beautiful",
     "tr": "Güzel",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "beating": {
     "base": "beating",
     "tr": "dayak",
-    "level": "B2",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: A2"
   },
   "beautifully": {
     "base": "beautifully",
@@ -2424,30 +2424,30 @@
   "attuned": {
     "base": "attuned",
     "tr": "uyumlu",
-    "level": "C2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "archway": {
     "base": "archway",
     "tr": "Kemerli geçit",
-    "level": "C2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: B1"
   },
   "bedstead": {
     "base": "bedstead",
     "tr": "karyola",
-    "level": "C2",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: B2"
   },
   "aristocratic": {
     "base": "aristocratic",
     "tr": "aristokrat",
-    "level": "C2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "bedside": {
     "base": "bedside",
@@ -2480,23 +2480,23 @@
   "bedding": {
     "base": "bedding",
     "tr": "yatak takımı",
-    "level": "A1",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "beckoned": {
     "base": "beckoned",
     "tr": "çağırdı",
-    "level": "C2",
+    "level": "B2",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: C2"
+    "explanation": "Fiil • Seviye: B2"
   },
   "beetle": {
     "base": "beetle",
     "tr": "böcek",
-    "level": "C2",
+    "level": "B1",
     "pos": "Edat",
-    "explanation": "Edat • Seviye: C2"
+    "explanation": "Edat • Seviye: B1"
   },
   "beer": {
     "base": "beer",
@@ -2529,23 +2529,23 @@
   "begging": {
     "base": "begging",
     "tr": "yalvarıyor",
-    "level": "A2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: B1"
   },
   "beggar": {
     "base": "beggar",
     "tr": "dilenci",
-    "level": "C2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "begs": {
     "base": "begs",
     "tr": "yalvarır",
-    "level": "A2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: B1"
   },
   "began": {
     "base": "begin",
@@ -2557,9 +2557,9 @@
   "beginning": {
     "base": "beginning",
     "tr": "başlangıç",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "being": {
     "base": "being",
@@ -2592,9 +2592,9 @@
   "belief": {
     "base": "belief",
     "tr": "inanç",
-    "level": "B1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: A2"
   },
   "believe": {
     "base": "believe",
@@ -2613,9 +2613,9 @@
   "believes": {
     "base": "believes",
     "tr": "inanıyor",
-    "level": "A1",
+    "level": "A2",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A1"
+    "explanation": "Fiil • Seviye: A2"
   },
   "believed": {
     "base": "believed",
@@ -2627,30 +2627,30 @@
   "belle": {
     "base": "belle",
     "tr": "güzel",
-    "level": "A1",
-    "pos": "Edat",
-    "explanation": "Edat • Seviye: A1"
+    "level": "Özel İsim",
+    "pos": "Özel İsim",
+    "explanation": "Özel İsim • Karakter veya yer adı"
   },
   "belly": {
     "base": "belly",
     "tr": "karın",
-    "level": "A2",
+    "level": "C1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: C1"
   },
   "bell": {
     "base": "bell",
     "tr": "zil",
-    "level": "A1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
+    "explanation": "İsim • Seviye: A2"
   },
   "beloved": {
     "base": "beloved",
     "tr": "sevgili",
-    "level": "B1",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "belonged": {
     "base": "belonged",
@@ -2669,9 +2669,9 @@
   "belonging": {
     "base": "belonging",
     "tr": "ait",
-    "level": "A2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "bench": {
     "base": "bench",
@@ -2683,9 +2683,9 @@
   "bends": {
     "base": "bends",
     "tr": "virajlar",
-    "level": "B1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "bend": {
     "base": "bend",
@@ -2711,51 +2711,51 @@
   "attained": {
     "base": "attained",
     "tr": "Ulaşılmış",
-    "level": "B1",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "barnaby": {
     "base": "barnaby",
     "tr": "Barnaby",
-    "level": "C2",
-    "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "level": "Özel İsim",
+    "pos": "Özel İsim",
+    "explanation": "Özel İsim • Karakter veya yer adı"
   },
   "baloo": {
     "base": "baloo",
     "tr": "baloo",
-    "level": "C2",
-    "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "level": "Özel İsim",
+    "pos": "Özel İsim",
+    "explanation": "Özel İsim • Karakter veya yer adı"
   },
   "battling": {
     "base": "battling",
     "tr": "mücadele",
-    "level": "B1",
+    "level": "A2",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: B1"
+    "explanation": "Fiil • Seviye: A2"
   },
   "baghdad": {
     "base": "baghdad",
     "tr": "Bağdat",
-    "level": "C2",
-    "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "level": "Özel İsim",
+    "pos": "Özel İsim",
+    "explanation": "Özel İsim • Karakter veya yer adı"
   },
   "bells": {
     "base": "bells",
     "tr": "çanlar",
-    "level": "A1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
+    "explanation": "İsim • Seviye: A2"
   },
   "benevolence": {
     "base": "benevolence",
     "tr": "yardımseverlik",
-    "level": "B2",
+    "level": "C1",
     "pos": "Edat",
-    "explanation": "Edat • Seviye: B2"
+    "explanation": "Edat • Seviye: C1"
   },
   "belongs": {
     "base": "belongs",
@@ -2767,30 +2767,30 @@
   "benjamin": {
     "base": "benjamin",
     "tr": "benjamin",
-    "level": "B2",
-    "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "level": "Özel İsim",
+    "pos": "Özel İsim",
+    "explanation": "Özel İsim • Karakter veya yer adı"
   },
   "bent": {
     "base": "bent",
     "tr": "bükülmüş",
-    "level": "B1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "bestowing": {
     "base": "bestowing",
     "tr": "ihsan etme",
-    "level": "B2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "berries": {
     "base": "berries",
     "tr": "meyveler",
-    "level": "B2",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: A2"
   },
   "best": {
     "base": "best",
@@ -2809,9 +2809,9 @@
   "betrayal": {
     "base": "betrayal",
     "tr": "ihanet",
-    "level": "C2",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "between": {
     "base": "between",
@@ -2823,9 +2823,9 @@
   "betray": {
     "base": "betray",
     "tr": "ihanet etmek",
-    "level": "B2",
+    "level": "B1",
     "pos": "Edat",
-    "explanation": "Edat • Seviye: B2"
+    "explanation": "Edat • Seviye: B1"
   },
   "beside": {
     "base": "beside",
@@ -2844,16 +2844,16 @@
   "better": {
     "base": "better",
     "tr": "daha iyi",
-    "level": "A1",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "betrayed": {
     "base": "betrayed",
     "tr": "ihanete uğramış",
-    "level": "B2",
+    "level": "B1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: B2"
+    "explanation": "Fiil • Seviye: B1"
   },
   "beyond": {
     "base": "beyond",
@@ -2879,16 +2879,16 @@
   "bewilderment": {
     "base": "bewilderment",
     "tr": "şaşkınlık",
-    "level": "B2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "bin": {
     "base": "bin",
     "tr": "çöp kutusu",
-    "level": "B1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: A2"
   },
   "binding": {
     "base": "binding",
@@ -2942,16 +2942,16 @@
   "biting": {
     "base": "biting",
     "tr": "ısırma",
-    "level": "A2",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "birth": {
     "base": "birth",
     "tr": "doğum",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "blanket": {
     "base": "blanket",
@@ -2991,9 +2991,9 @@
   "bleak": {
     "base": "bleak",
     "tr": "kasvetli",
-    "level": "C2",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "birds": {
     "base": "birds",
@@ -3012,9 +3012,9 @@
   "bleakness": {
     "base": "bleakness",
     "tr": "umutsuzluk",
-    "level": "C2",
+    "level": "C1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: C1"
   },
   "blazing": {
     "base": "blazing",
@@ -3026,9 +3026,9 @@
   "blessed": {
     "base": "blessed",
     "tr": "kutsanmış",
-    "level": "B1",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "blind": {
     "base": "blind",
@@ -3047,51 +3047,51 @@
   "blessings": {
     "base": "blessings",
     "tr": "bereket",
-    "level": "B1",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: B2"
   },
   "blew": {
     "base": "blow",
     "tr": "patladı",
-    "level": "A1",
+    "level": "A2",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A1 • (blow kelimesinden)"
+    "explanation": "Fiil • Seviye: A2"
   },
   "blinked": {
     "base": "blinked",
     "tr": "göz kırptı",
-    "level": "B2",
+    "level": "A2",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: B2"
+    "explanation": "Fiil • Seviye: A2"
   },
   "bloated": {
     "base": "bloated",
     "tr": "şişkin",
-    "level": "C2",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "blizzard": {
     "base": "blizzard",
     "tr": "kar fırtınası",
-    "level": "C2",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "blindfolded": {
     "base": "blindfolded",
     "tr": "gözleri bağlı",
-    "level": "C2",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "block": {
     "base": "block",
     "tr": "engellemek",
-    "level": "A1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
+    "explanation": "İsim • Seviye: A2"
   },
   "blocking": {
     "base": "blocking",
@@ -3124,9 +3124,9 @@
   "blow": {
     "base": "blow",
     "tr": "üflemek",
-    "level": "A1",
+    "level": "A2",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A1"
+    "explanation": "Fiil • Seviye: A2"
   },
   "bloodletting": {
     "base": "bloodletting",
@@ -3145,23 +3145,23 @@
   "bloodline": {
     "base": "bloodline",
     "tr": "soy",
-    "level": "C2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "board": {
     "base": "board",
     "tr": "pano",
-    "level": "A1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
+    "explanation": "İsim • Seviye: A2"
   },
   "boastfully": {
     "base": "boastfully",
     "tr": "övünerek",
-    "level": "B1",
+    "level": "C1",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: B1"
+    "explanation": "Zarf • Seviye: C1"
   },
   "boarded": {
     "base": "boarded",
@@ -3173,9 +3173,9 @@
   "blooded": {
     "base": "blooded",
     "tr": "kanlı",
-    "level": "A2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "blurring": {
     "base": "blurring",
@@ -3222,9 +3222,9 @@
   "boiling": {
     "base": "boiling",
     "tr": "kaynama",
-    "level": "B2",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "boiled": {
     "base": "boiled",
@@ -3236,9 +3236,9 @@
   "bolt": {
     "base": "bolt",
     "tr": "sürgü",
-    "level": "B2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: B1"
   },
   "bonds": {
     "base": "bonds",
@@ -3250,16 +3250,16 @@
   "bone": {
     "base": "bone",
     "tr": "kemik",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "bolted": {
     "base": "bolted",
     "tr": "cıvatalı",
-    "level": "B2",
+    "level": "B1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: B2"
+    "explanation": "Fiil • Seviye: B1"
   },
   "bond": {
     "base": "bond",
@@ -3278,16 +3278,16 @@
   "books": {
     "base": "books",
     "tr": "kitaplar",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "boo": {
     "base": "boo",
     "tr": "boo",
-    "level": "C2",
+    "level": "A2",
     "pos": "Kelime",
-    "explanation": "Kelime • Seviye: C2"
+    "explanation": "Kelime • Seviye: A2"
   },
   "booted": {
     "base": "booted",
@@ -3299,16 +3299,16 @@
   "boots": {
     "base": "boots",
     "tr": "çizmeler",
-    "level": "B1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: A2"
   },
   "booming": {
     "base": "booming",
     "tr": "gelişen",
-    "level": "B1",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "borders": {
     "base": "borders",
@@ -3334,9 +3334,9 @@
   "boring": {
     "base": "boring",
     "tr": "sıkıcı",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "bored": {
     "base": "bored",
@@ -3369,9 +3369,9 @@
   "bottom": {
     "base": "bottom",
     "tr": "alt",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "both": {
     "base": "both",
@@ -3383,30 +3383,30 @@
   "boundaries": {
     "base": "boundaries",
     "tr": "sınırlar",
-    "level": "B1",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "bouts": {
     "base": "bouts",
     "tr": "nöbetler",
-    "level": "C2",
+    "level": "C1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: C1"
   },
   "bowl": {
     "base": "bowl",
     "tr": "tas",
-    "level": "A1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
+    "explanation": "İsim • Seviye: A2"
   },
   "boundary": {
     "base": "boundary",
     "tr": "sınır",
-    "level": "B1",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: B2"
   },
   "bow": {
     "base": "bow",
@@ -3425,16 +3425,16 @@
   "bowed": {
     "base": "bowed",
     "tr": "eğildi",
-    "level": "B2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "bowing": {
     "base": "bowing",
     "tr": "eğilmek",
-    "level": "B2",
+    "level": "B1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: B2"
+    "explanation": "Fiil • Seviye: B1"
   },
   "box": {
     "base": "box",
@@ -3460,9 +3460,9 @@
   "bows": {
     "base": "bows",
     "tr": "yaylar",
-    "level": "B2",
+    "level": "B1",
     "pos": "Bağlaç",
-    "explanation": "Bağlaç • Seviye: B2"
+    "explanation": "Bağlaç • Seviye: B1"
   },
   "boys": {
     "base": "boys",
@@ -3474,16 +3474,16 @@
   "bracing": {
     "base": "bracing",
     "tr": "destek",
-    "level": "C1",
+    "level": "B2",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: C1"
+    "explanation": "Fiil • Seviye: B2"
   },
   "braid": {
     "base": "braid",
     "tr": "örgü",
-    "level": "C2",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "brags": {
     "base": "brags",
@@ -3495,37 +3495,37 @@
   "braced": {
     "base": "braced",
     "tr": "destekli",
-    "level": "C1",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C1"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "beheld": {
     "base": "beheld",
     "tr": "görüldü",
-    "level": "C1",
+    "level": "C2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C1"
+    "explanation": "İsim • Seviye: C2"
   },
   "beetles": {
     "base": "beetles",
     "tr": "böcekler",
-    "level": "C2",
+    "level": "B1",
     "pos": "Edat",
-    "explanation": "Edat • Seviye: C2"
+    "explanation": "Edat • Seviye: B1"
   },
   "blinding": {
     "base": "blinding",
     "tr": "kör edici",
-    "level": "B1",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "billowing": {
     "base": "billowing",
     "tr": "dalgalanan",
-    "level": "C2",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: B2"
   },
   "blefuscu": {
     "base": "blefuscu",
@@ -3537,16 +3537,16 @@
   "bedsheets": {
     "base": "bedsheets",
     "tr": "çarşaf",
-    "level": "C2",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: A2"
   },
   "bippity": {
     "base": "bippity",
     "tr": "iki yüzlülük",
-    "level": "Özel İsim",
+    "level": "C2",
     "pos": "Özel İsim",
-    "explanation": "Özel İsim • Karakter veya yer adı"
+    "explanation": "Özel İsim • Seviye: C2"
   },
   "branches": {
     "base": "branches",
@@ -3565,58 +3565,58 @@
   "bravery": {
     "base": "bravery",
     "tr": "cesaret",
-    "level": "B2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "bran": {
     "base": "bran",
     "tr": "kepek",
-    "level": "C2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "benbow": {
     "base": "benbow",
     "tr": "benbow",
-    "level": "C2",
-    "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "level": "Özel İsim",
+    "pos": "Özel İsim",
+    "explanation": "Özel İsim • Karakter veya yer adı"
   },
   "braver": {
     "base": "braver",
     "tr": "daha cesur",
-    "level": "A2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "brain": {
     "base": "brain",
     "tr": "beyin",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "braids": {
     "base": "braids",
     "tr": "örgüler",
-    "level": "C2",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: B2"
   },
   "brazil": {
     "base": "brazil",
     "tr": "Brezilya",
-    "level": "B1",
-    "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "level": "Özel İsim",
+    "pos": "Özel İsim",
+    "explanation": "Özel İsim • Karakter veya yer adı"
   },
   "breached": {
     "base": "breached",
     "tr": "ihlal edildi",
-    "level": "B1",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: B2"
   },
   "bread": {
     "base": "bread",
@@ -3635,37 +3635,37 @@
   "brazenly": {
     "base": "brazenly",
     "tr": "yüzsüzce",
-    "level": "C2",
+    "level": "C1",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: C2"
+    "explanation": "Zarf • Seviye: C1"
   },
   "breadcrumbs": {
     "base": "breadcrumbs",
     "tr": "ekmek kırıntıları",
-    "level": "A1",
+    "level": "B1",
     "pos": "Kelime",
-    "explanation": "Kelime • Seviye: A1"
+    "explanation": "Kelime • Seviye: B1"
   },
   "breaks": {
     "base": "breaks",
     "tr": "molalar",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "breaking": {
     "base": "breaking",
     "tr": "kırma",
-    "level": "A2",
+    "level": "A1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: A1"
   },
   "breath": {
     "base": "breath",
     "tr": "nefes",
-    "level": "B1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: A2"
   },
   "breathless": {
     "base": "breathless",
@@ -3684,37 +3684,37 @@
   "breathed": {
     "base": "breathed",
     "tr": "nefes aldı",
-    "level": "A1",
+    "level": "A2",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A1"
+    "explanation": "Fiil • Seviye: A2"
   },
   "breeze": {
     "base": "breeze",
     "tr": "esinti",
-    "level": "A2",
-    "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
-  },
-  "bremen": {
-    "base": "bremen",
-    "tr": "bremen",
-    "level": "C2",
-    "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
-  },
-  "breeding": {
-    "base": "breeding",
-    "tr": "üreme",
     "level": "B1",
     "pos": "İsim",
     "explanation": "İsim • Seviye: B1"
   },
+  "bremen": {
+    "base": "bremen",
+    "tr": "bremen",
+    "level": "Özel İsim",
+    "pos": "Özel İsim",
+    "explanation": "Özel İsim • Karakter veya yer adı"
+  },
+  "breeding": {
+    "base": "breeding",
+    "tr": "üreme",
+    "level": "B2",
+    "pos": "İsim",
+    "explanation": "İsim • Seviye: B2"
+  },
   "breathing": {
     "base": "breathing",
     "tr": "nefes almak",
-    "level": "A1",
+    "level": "A2",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A1"
+    "explanation": "Fiil • Seviye: A2"
   },
   "brick": {
     "base": "brick",
@@ -3726,9 +3726,9 @@
   "bribe": {
     "base": "bribe",
     "tr": "rüşvet",
-    "level": "C2",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: B2"
   },
   "bricks": {
     "base": "bricks",
@@ -3747,16 +3747,16 @@
   "briefcase": {
     "base": "briefcase",
     "tr": "evrak çantası",
-    "level": "C2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: B1"
   },
   "bridge": {
     "base": "bridge",
     "tr": "köprü",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "brightly": {
     "base": "brightly",
@@ -3768,9 +3768,9 @@
   "bridle": {
     "base": "bridle",
     "tr": "dizgin",
-    "level": "C2",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "bride": {
     "base": "bride",
@@ -3782,9 +3782,9 @@
   "bright": {
     "base": "bright",
     "tr": "parlak",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "bring": {
     "base": "bring",
@@ -3803,30 +3803,30 @@
   "brittle": {
     "base": "brittle",
     "tr": "kırılgan",
-    "level": "C2",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "brilliant": {
     "base": "brilliant",
     "tr": "muhteşem",
-    "level": "A2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "bristol": {
     "base": "bristol",
     "tr": "Bristol",
-    "level": "B2",
-    "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "level": "Özel İsim",
+    "pos": "Özel İsim",
+    "explanation": "Özel İsim • Karakter veya yer adı"
   },
   "brisk": {
     "base": "brisk",
     "tr": "canlı",
-    "level": "C2",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "bringing": {
     "base": "bringing",
@@ -3845,9 +3845,9 @@
   "brush": {
     "base": "brush",
     "tr": "fırçalamak",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "brown": {
     "base": "brown",
@@ -3859,9 +3859,9 @@
   "broken": {
     "base": "break",
     "tr": "kırık",
-    "level": "A1",
+    "level": "A2",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A1 • (break kelimesinden)"
+    "explanation": "Fiil • Seviye: A2"
   },
   "broke": {
     "base": "break",
@@ -3887,16 +3887,16 @@
   "buccaneer": {
     "base": "buccaneer",
     "tr": "korsan",
-    "level": "C2",
+    "level": "C1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: C1"
   },
   "brushing": {
     "base": "brushing",
     "tr": "fırçalama",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "brutality": {
     "base": "brutality",
@@ -3908,9 +3908,9 @@
   "brushed": {
     "base": "brushed",
     "tr": "fırçalanmış",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "brutally": {
     "base": "brutally",
@@ -3922,9 +3922,9 @@
   "build": {
     "base": "build",
     "tr": "inşa etmek",
-    "level": "A1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
+    "explanation": "İsim • Seviye: A2"
   },
   "blows": {
     "base": "blows",
@@ -3943,30 +3943,30 @@
   "boppity": {
     "base": "boppity",
     "tr": "boppity",
-    "level": "A1",
+    "level": "C2",
     "pos": "Kelime",
-    "explanation": "Kelime • Seviye: A1"
+    "explanation": "Kelime • Seviye: C2"
   },
   "blossomed": {
     "base": "blossomed",
     "tr": "çiçek açmış",
-    "level": "B2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "buildings": {
     "base": "buildings",
     "tr": "binalar",
-    "level": "A1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
+    "explanation": "İsim • Seviye: A2"
   },
   "building": {
     "base": "building",
     "tr": "bina",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "bloodied": {
     "base": "bloodied",
@@ -3985,9 +3985,9 @@
   "burden": {
     "base": "burden",
     "tr": "yük",
-    "level": "B1",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: B2"
   },
   "burdened": {
     "base": "burdened",
@@ -3999,30 +3999,30 @@
   "builds": {
     "base": "builds",
     "tr": "inşa eder",
-    "level": "A1",
+    "level": "A2",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A1"
+    "explanation": "Fiil • Seviye: A2"
   },
   "bundle": {
     "base": "bundle",
     "tr": "paket",
-    "level": "C1",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C1"
+    "explanation": "İsim • Seviye: B1"
   },
   "built": {
     "base": "build",
     "tr": "inşa edilmiş",
-    "level": "A1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1 • (build kelimesinden)"
+    "explanation": "İsim • Seviye: A2"
   },
   "buried": {
     "base": "buried",
     "tr": "gömülü",
-    "level": "A2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "burns": {
     "base": "burns",
@@ -4076,16 +4076,16 @@
   "business": {
     "base": "business",
     "tr": "işletme",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "bushy": {
     "base": "bushy",
     "tr": "gür",
-    "level": "C2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "busy": {
     "base": "busy",
@@ -4132,9 +4132,9 @@
   "butterfly": {
     "base": "butterfly",
     "tr": "kelebek",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "buys": {
     "base": "buys",
@@ -4153,9 +4153,9 @@
   "buzzing": {
     "base": "buzzing",
     "tr": "uğultu",
-    "level": "B2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "button": {
     "base": "button",
@@ -4174,16 +4174,16 @@
   "bypassed": {
     "base": "bypassed",
     "tr": "atlanmış",
-    "level": "C1",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C1"
+    "explanation": "İsim • Seviye: B2"
   },
   "bygone": {
     "base": "bygone",
     "tr": "geçmiş",
-    "level": "C2",
+    "level": "C1",
     "pos": "Kelime",
-    "explanation": "Kelime • Seviye: C2"
+    "explanation": "Kelime • Seviye: C1"
   },
   "cake": {
     "base": "cake",
@@ -4195,23 +4195,23 @@
   "burning": {
     "base": "burning",
     "tr": "yanan",
-    "level": "B1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "cacophony": {
     "base": "cacophony",
     "tr": "kakofoni",
-    "level": "C2",
+    "level": "C1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: C1"
   },
   "calculating": {
     "base": "calculating",
     "tr": "hesaplama",
-    "level": "B1",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "calculate": {
     "base": "calculate",
@@ -4223,9 +4223,9 @@
   "calamity": {
     "base": "calamity",
     "tr": "felaket",
-    "level": "C2",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: B2"
   },
   "calcium": {
     "base": "calcium",
@@ -4244,9 +4244,9 @@
   "calloused": {
     "base": "calloused",
     "tr": "nasırlı",
-    "level": "B1",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "call": {
     "base": "call",
@@ -4258,16 +4258,16 @@
   "calm": {
     "base": "calm",
     "tr": "sakinlik",
-    "level": "B1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "calls": {
     "base": "calls",
     "tr": "aramalar",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "calmer": {
     "base": "calmer",
@@ -4286,30 +4286,30 @@
   "calmly": {
     "base": "calmly",
     "tr": "sakince",
-    "level": "B2",
+    "level": "B1",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: B2"
+    "explanation": "Zarf • Seviye: B1"
   },
   "camaraderie": {
     "base": "camaraderie",
     "tr": "dostluk",
-    "level": "C2",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: B2"
   },
   "cambridge": {
     "base": "cambridge",
     "tr": "Cambridge",
-    "level": "A2",
-    "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "level": "Özel İsim",
+    "pos": "Özel İsim",
+    "explanation": "Özel İsim • Karakter veya yer adı"
   },
   "calypso": {
     "base": "calypso",
     "tr": "kalipso",
-    "level": "C2",
+    "level": "B2",
     "pos": "Kelime",
-    "explanation": "Kelime • Seviye: C2"
+    "explanation": "Kelime • Seviye: B2"
   },
   "can": {
     "base": "can",
@@ -4321,51 +4321,51 @@
   "campfire": {
     "base": "campfire",
     "tr": "kamp ateşi",
-    "level": "C2",
-    "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
-  },
-  "candle": {
-    "base": "candle",
-    "tr": "mum",
     "level": "B1",
     "pos": "İsim",
     "explanation": "İsim • Seviye: B1"
   },
-  "candies": {
-    "base": "candies",
-    "tr": "şekerler",
-    "level": "A1",
-    "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
-  },
-  "campus": {
-    "base": "campus",
-    "tr": "kampüs",
+  "candle": {
+    "base": "candle",
+    "tr": "mum",
     "level": "A2",
     "pos": "İsim",
     "explanation": "İsim • Seviye: A2"
   },
+  "candies": {
+    "base": "candies",
+    "tr": "şekerler",
+    "level": "A2",
+    "pos": "İsim",
+    "explanation": "İsim • Seviye: A2"
+  },
+  "campus": {
+    "base": "campus",
+    "tr": "kampüs",
+    "level": "B1",
+    "pos": "İsim",
+    "explanation": "İsim • Seviye: B1"
+  },
   "cannot": {
     "base": "cannot",
     "tr": "yapamamak",
-    "level": "C2",
+    "level": "A1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: A1"
   },
   "canopy": {
     "base": "canopy",
     "tr": "gölgelik",
-    "level": "C2",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "cane": {
     "base": "cane",
     "tr": "baston",
-    "level": "B2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: B1"
   },
   "capital": {
     "base": "capital",
@@ -4377,30 +4377,30 @@
   "canvas": {
     "base": "canvas",
     "tr": "tuval",
-    "level": "B2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: B1"
   },
   "capricious": {
     "base": "capricious",
     "tr": "kaprisli",
-    "level": "C2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "brigands": {
     "base": "brigands",
     "tr": "haydutlar",
-    "level": "C2",
+    "level": "C1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: C1"
   },
   "called": {
     "base": "called",
     "tr": "isminde",
-    "level": "A2",
+    "level": "A1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: A1"
   },
   "capitals": {
     "base": "capitals",
@@ -4412,23 +4412,23 @@
   "capacity": {
     "base": "capacity",
     "tr": "kapasite",
-    "level": "B1",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "captain": {
     "base": "captain",
     "tr": "kaptan",
-    "level": "A2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: B1"
   },
   "captivity": {
     "base": "captivity",
     "tr": "esaret",
-    "level": "C2",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: B2"
   },
   "buchanans": {
     "base": "buchanans",
@@ -4440,9 +4440,9 @@
   "burgeoning": {
     "base": "burgeoning",
     "tr": "gelişen",
-    "level": "C2",
+    "level": "C1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: C2"
+    "explanation": "Fiil • Seviye: C1"
   },
   "builders": {
     "base": "builders",
@@ -4454,9 +4454,9 @@
   "buchanan": {
     "base": "buchanan",
     "tr": "Buchanan",
-    "level": "C1",
-    "pos": "İsim",
-    "explanation": "İsim • Seviye: C1"
+    "level": "Özel İsim",
+    "pos": "Özel İsim",
+    "explanation": "Özel İsim • Karakter veya yer adı"
   },
   "cakes": {
     "base": "cakes",
@@ -4475,16 +4475,16 @@
   "brilliance": {
     "base": "brilliance",
     "tr": "parlaklık",
-    "level": "C2",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: B2"
   },
   "care": {
     "base": "care",
     "tr": "bakım",
-    "level": "A1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
+    "explanation": "İsim • Seviye: A2"
   },
   "car": {
     "base": "car",
@@ -4496,9 +4496,9 @@
   "career": {
     "base": "career",
     "tr": "kariyer",
-    "level": "B1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "card": {
     "base": "card",
@@ -4510,16 +4510,16 @@
   "cardboard": {
     "base": "cardboard",
     "tr": "karton",
-    "level": "B2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "careful": {
     "base": "careful",
     "tr": "dikkatli olmak",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "cared": {
     "base": "cared",
@@ -4531,16 +4531,16 @@
   "carefully": {
     "base": "carefully",
     "tr": "dikkatlice",
-    "level": "A1",
+    "level": "B1",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: A1"
+    "explanation": "Zarf • Seviye: B1"
   },
   "captor": {
     "base": "captor",
     "tr": "esir alan kişi",
-    "level": "C2",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: B2"
   },
   "cargo": {
     "base": "cargo",
@@ -4552,16 +4552,16 @@
   "caribbean": {
     "base": "caribbean",
     "tr": "Karayipler",
-    "level": "B2",
-    "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "level": "Özel İsim",
+    "pos": "Özel İsim",
+    "explanation": "Özel İsim • Karakter veya yer adı"
   },
   "carpenter": {
     "base": "carpenter",
     "tr": "marangoz",
-    "level": "B2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: B1"
   },
   "careless": {
     "base": "careless",
@@ -4573,79 +4573,79 @@
   "carelessly": {
     "base": "carelessly",
     "tr": "dikkatsizce",
-    "level": "B1",
+    "level": "B2",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: B1"
+    "explanation": "Zarf • Seviye: B2"
   },
   "carpet": {
     "base": "carpet",
     "tr": "halı",
-    "level": "B1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: A2"
   },
   "carriage": {
     "base": "carriage",
     "tr": "taşıma",
-    "level": "B1",
-    "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
-  },
-  "carries": {
-    "base": "carries",
-    "tr": "taşır",
-    "level": "A1",
-    "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A1"
-  },
-  "carrots": {
-    "base": "carrots",
-    "tr": "havuç",
-    "level": "A2",
-    "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
-  },
-  "carrot": {
-    "base": "carrot",
-    "tr": "havuç",
-    "level": "A2",
-    "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
-  },
-  "carrying": {
-    "base": "carrying",
-    "tr": "taşıma",
-    "level": "A1",
-    "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
-  },
-  "case": {
-    "base": "case",
-    "tr": "dava",
-    "level": "A1",
-    "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
-  },
-  "carved": {
-    "base": "carved",
-    "tr": "oyulmuş",
-    "level": "B2",
-    "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
-  },
-  "carve": {
-    "base": "carve",
-    "tr": "oymak",
     "level": "B2",
     "pos": "İsim",
     "explanation": "İsim • Seviye: B2"
   },
-  "carry": {
-    "base": "carry",
-    "tr": "taşımak",
+  "carries": {
+    "base": "carries",
+    "tr": "taşır",
+    "level": "A2",
+    "pos": "Fiil",
+    "explanation": "Fiil • Seviye: A2"
+  },
+  "carrots": {
+    "base": "carrots",
+    "tr": "havuç",
     "level": "A1",
     "pos": "İsim",
     "explanation": "İsim • Seviye: A1"
+  },
+  "carrot": {
+    "base": "carrot",
+    "tr": "havuç",
+    "level": "A1",
+    "pos": "İsim",
+    "explanation": "İsim • Seviye: A1"
+  },
+  "carrying": {
+    "base": "carrying",
+    "tr": "taşıma",
+    "level": "A2",
+    "pos": "Sıfat",
+    "explanation": "Sıfat • Seviye: A2"
+  },
+  "case": {
+    "base": "case",
+    "tr": "dava",
+    "level": "A2",
+    "pos": "Sıfat",
+    "explanation": "Sıfat • Seviye: A2"
+  },
+  "carved": {
+    "base": "carved",
+    "tr": "oyulmuş",
+    "level": "B1",
+    "pos": "Sıfat",
+    "explanation": "Sıfat • Seviye: B1"
+  },
+  "carve": {
+    "base": "carve",
+    "tr": "oymak",
+    "level": "B1",
+    "pos": "İsim",
+    "explanation": "İsim • Seviye: B1"
+  },
+  "carry": {
+    "base": "carry",
+    "tr": "taşımak",
+    "level": "A2",
+    "pos": "İsim",
+    "explanation": "İsim • Seviye: A2"
   },
   "castle": {
     "base": "castle",
@@ -4657,23 +4657,23 @@
   "catastrophic": {
     "base": "catastrophic",
     "tr": "felaket niteliğinde",
-    "level": "B2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "carried": {
     "base": "carried",
     "tr": "taşınan",
-    "level": "A1",
+    "level": "A2",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A1"
+    "explanation": "Fiil • Seviye: A2"
   },
   "cart": {
     "base": "cart",
     "tr": "araba",
-    "level": "C1",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C1"
+    "explanation": "İsim • Seviye: B1"
   },
   "cat": {
     "base": "cat",
@@ -4741,9 +4741,9 @@
   "causing": {
     "base": "causing",
     "tr": "sebep olmak",
-    "level": "B1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "cats": {
     "base": "cats",
@@ -4762,16 +4762,16 @@
   "caused": {
     "base": "caused",
     "tr": "sebep oldu",
-    "level": "B1",
+    "level": "A2",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: B1"
+    "explanation": "Fiil • Seviye: A2"
   },
   "ceiling": {
     "base": "ceiling",
     "tr": "tavan",
-    "level": "B2",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "cautious": {
     "base": "cautious",
@@ -4804,9 +4804,9 @@
   "cellar": {
     "base": "cellar",
     "tr": "kiler",
-    "level": "B2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: B1"
   },
   "center": {
     "base": "center",
@@ -4818,16 +4818,16 @@
   "celebrating": {
     "base": "celebrating",
     "tr": "kutluyor",
-    "level": "A1",
+    "level": "B1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A1"
+    "explanation": "Fiil • Seviye: B1"
   },
   "centuries": {
     "base": "centuries",
     "tr": "yüzyıllar",
-    "level": "A2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "certain": {
     "base": "certain",
@@ -4839,16 +4839,16 @@
   "celebration": {
     "base": "celebration",
     "tr": "kutlama",
-    "level": "A1",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
+    "explanation": "İsim • Seviye: B1"
   },
   "certainly": {
     "base": "certainly",
     "tr": "kesinlikle",
-    "level": "A2",
+    "level": "B1",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: A2"
+    "explanation": "Zarf • Seviye: B1"
   },
   "central": {
     "base": "central",
@@ -4867,23 +4867,23 @@
   "chain": {
     "base": "chain",
     "tr": "zincir",
-    "level": "A2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "challenge": {
     "base": "challenge",
     "tr": "meydan okumak",
-    "level": "A2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: B1"
   },
   "celestial": {
     "base": "celestial",
     "tr": "göksel",
-    "level": "C2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "cessation": {
     "base": "cessation",
@@ -4895,9 +4895,9 @@
   "chamber": {
     "base": "chamber",
     "tr": "odacık",
-    "level": "A2",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: B2"
   },
   "challenges": {
     "base": "challenges",
@@ -4909,9 +4909,9 @@
   "chambers": {
     "base": "chambers",
     "tr": "odalar",
-    "level": "A2",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: B2"
   },
   "certainty": {
     "base": "certainty",
@@ -4923,9 +4923,9 @@
   "champagne": {
     "base": "champagne",
     "tr": "şampanya",
-    "level": "A2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: B1"
   },
   "chair": {
     "base": "chair",
@@ -4958,9 +4958,9 @@
   "changing": {
     "base": "changing",
     "tr": "değişiyor",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "change": {
     "base": "change",
@@ -4972,9 +4972,9 @@
   "changed": {
     "base": "changed",
     "tr": "değişti",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "changes": {
     "base": "changes",
@@ -4993,23 +4993,23 @@
   "chaos": {
     "base": "chaos",
     "tr": "kaos",
-    "level": "B1",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: B2"
   },
   "chanting": {
     "base": "chanting",
     "tr": "ilahi söylemek",
-    "level": "C2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "chant": {
     "base": "chant",
     "tr": "ilahi söylemek",
-    "level": "C2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "charge": {
     "base": "charge",
@@ -5028,9 +5028,9 @@
   "charade": {
     "base": "charade",
     "tr": "maskaralık",
-    "level": "C2",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: B2"
   },
   "chaotic": {
     "base": "chaotic",
@@ -5042,23 +5042,23 @@
   "charisma": {
     "base": "charisma",
     "tr": "karizma",
-    "level": "C2",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: B2"
   },
   "charts": {
     "base": "charts",
     "tr": "çizelgeler",
-    "level": "A2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: B1"
   },
   "chase": {
     "base": "chase",
     "tr": "takip etmek",
-    "level": "B1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: A2"
   },
   "cheek": {
     "base": "cheek",
@@ -5070,9 +5070,9 @@
   "charming": {
     "base": "charming",
     "tr": "alımlı",
-    "level": "B2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "charmed": {
     "base": "charmed",
@@ -5084,16 +5084,16 @@
   "chases": {
     "base": "chases",
     "tr": "kovalayanlar",
-    "level": "B2",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: A2"
   },
   "cheeky": {
     "base": "cheeky",
     "tr": "yüzsüz",
-    "level": "B2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "cheeks": {
     "base": "cheeks",
@@ -5112,9 +5112,9 @@
   "check": {
     "base": "check",
     "tr": "kontrol etmek",
-    "level": "A1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
+    "explanation": "İsim • Seviye: A2"
   },
   "chemistry": {
     "base": "chemistry",
@@ -5126,9 +5126,9 @@
   "chemical": {
     "base": "chemical",
     "tr": "kimyasal",
-    "level": "A2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "cheerful": {
     "base": "cheerful",
@@ -5140,9 +5140,9 @@
   "cherry": {
     "base": "cherry",
     "tr": "kiraz",
-    "level": "B2",
+    "level": "A1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: A1"
   },
   "chicken": {
     "base": "chicken",
@@ -5182,16 +5182,16 @@
   "chew": {
     "base": "chew",
     "tr": "çiğnemek",
-    "level": "B2",
+    "level": "A2",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: B2"
+    "explanation": "Fiil • Seviye: A2"
   },
   "cheer": {
     "base": "cheer",
     "tr": "tezahürat",
-    "level": "A2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: B1"
   },
   "childhood": {
     "base": "childhood",
@@ -5217,16 +5217,16 @@
   "chimney": {
     "base": "chimney",
     "tr": "baca",
-    "level": "B2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "carpathians": {
     "base": "carpathians",
     "tr": "Karpatlar",
-    "level": "C2",
-    "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "level": "Özel İsim",
+    "pos": "Özel İsim",
+    "explanation": "Özel İsim • Karakter veya yer adı"
   },
   "captive": {
     "base": "captive",
@@ -5238,37 +5238,37 @@
   "carpathian": {
     "base": "carpathian",
     "tr": "Karpat",
-    "level": "C2",
-    "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "level": "Özel İsim",
+    "pos": "Özel İsim",
+    "explanation": "Özel İsim • Karakter veya yer adı"
   },
   "caucus": {
     "base": "caucus",
     "tr": "kurultay",
-    "level": "C2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "cautiously": {
     "base": "cautiously",
     "tr": "dikkatle",
-    "level": "B1",
+    "level": "B2",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: B1"
+    "explanation": "Zarf • Seviye: B2"
   },
   "cellars": {
     "base": "cellars",
     "tr": "kiler",
-    "level": "B2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: B1"
   },
   "chill": {
     "base": "chill",
     "tr": "sakin olmak",
-    "level": "C2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "chin": {
     "base": "chin",
@@ -5280,9 +5280,9 @@
   "chilled": {
     "base": "chilled",
     "tr": "soğutulmuş",
-    "level": "C1",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C1"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "chins": {
     "base": "chins",
@@ -5294,9 +5294,9 @@
   "china": {
     "base": "china",
     "tr": "Çin",
-    "level": "A2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: B1"
   },
   "choices": {
     "base": "choices",
@@ -5308,30 +5308,30 @@
   "chilling": {
     "base": "chilling",
     "tr": "ürpertici",
-    "level": "C1",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C1"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "choose": {
     "base": "choose",
     "tr": "seçmek",
-    "level": "A1",
+    "level": "A2",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A1"
+    "explanation": "Fiil • Seviye: A2"
   },
   "choo": {
     "base": "choo",
     "tr": "çuf",
-    "level": "C2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: A1"
   },
   "chauffeur": {
     "base": "chauffeur",
     "tr": "şoför",
-    "level": "C2",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "choice": {
     "base": "choice",
@@ -5343,30 +5343,30 @@
   "chop": {
     "base": "chop",
     "tr": "kesmek",
-    "level": "B2",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "chores": {
     "base": "chores",
     "tr": "ev işleri",
-    "level": "C2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: B1"
   },
   "choosing": {
     "base": "choosing",
     "tr": "seçme",
-    "level": "A1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
+    "explanation": "İsim • Seviye: A2"
   },
   "chose": {
     "base": "choose",
     "tr": "seçti",
-    "level": "A1",
+    "level": "A2",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A1 • (choose kelimesinden)"
+    "explanation": "Fiil • Seviye: A2"
   },
   "cigarette": {
     "base": "cigarette",
@@ -5385,23 +5385,23 @@
   "cinderella": {
     "base": "cinderella",
     "tr": "külkedisi",
-    "level": "C2",
-    "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "level": "Özel İsim",
+    "pos": "Özel İsim",
+    "explanation": "Özel İsim • Karakter veya yer adı"
   },
   "chorus": {
     "base": "chorus",
     "tr": "koro",
-    "level": "C1",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C1"
+    "explanation": "İsim • Seviye: B1"
   },
   "churning": {
     "base": "churning",
     "tr": "çalkalama",
-    "level": "C2",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "circumstances": {
     "base": "circumstances",
@@ -5427,9 +5427,9 @@
   "circles": {
     "base": "circles",
     "tr": "daireler",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "circumstance": {
     "base": "circumstance",
@@ -5455,44 +5455,44 @@
   "circumstantial": {
     "base": "circumstantial",
     "tr": "ikinci dereceden",
-    "level": "C2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "civilization": {
     "base": "civilization",
     "tr": "uygarlık",
-    "level": "B1",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: B2"
   },
   "civil": {
     "base": "civil",
     "tr": "sivil",
-    "level": "B1",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "claim": {
     "base": "claim",
     "tr": "iddia",
-    "level": "A2",
+    "level": "B1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A2"
+    "explanation": "Fiil • Seviye: B1"
   },
   "claimed": {
     "base": "claimed",
     "tr": "talep edildi",
-    "level": "A2",
+    "level": "B1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A2"
+    "explanation": "Fiil • Seviye: B1"
   },
   "civilized": {
     "base": "civilized",
     "tr": "uygar",
-    "level": "B1",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "civic": {
     "base": "civic",
@@ -5504,51 +5504,51 @@
   "chronic": {
     "base": "chronic",
     "tr": "kronik",
-    "level": "B1",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "citizens": {
     "base": "citizens",
     "tr": "vatandaşlar",
-    "level": "A2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: B1"
   },
   "claims": {
     "base": "claims",
     "tr": "iddialar",
-    "level": "A2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: B1"
   },
   "clamor": {
     "base": "clamor",
     "tr": "yaygara",
-    "level": "B2",
+    "level": "C1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: C1"
   },
   "clandestine": {
     "base": "clandestine",
     "tr": "gizli",
-    "level": "C2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "clamp": {
     "base": "clamp",
     "tr": "kelepçe",
-    "level": "C2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "clang": {
     "base": "clang",
     "tr": "çınlama",
-    "level": "C2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "classmates": {
     "base": "classmates",
@@ -5595,9 +5595,9 @@
   "claustrophobia": {
     "base": "claustrophobia",
     "tr": "klostrofobi",
-    "level": "C2",
+    "level": "C1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: C1"
   },
   "clear": {
     "base": "clear",
@@ -5609,9 +5609,9 @@
   "claws": {
     "base": "claws",
     "tr": "pençeler",
-    "level": "C2",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: A2"
   },
   "clerval": {
     "base": "clerval",
@@ -5623,9 +5623,9 @@
   "clearly": {
     "base": "clearly",
     "tr": "açıkça",
-    "level": "A2",
+    "level": "B1",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: A2"
+    "explanation": "Zarf • Seviye: B1"
   },
   "cliffs": {
     "base": "cliffs",
@@ -5637,16 +5637,16 @@
   "client": {
     "base": "client",
     "tr": "müşteri",
-    "level": "B2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "clever": {
     "base": "clever",
     "tr": "akıllı",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "climbing": {
     "base": "climbing",
@@ -5658,9 +5658,9 @@
   "climb": {
     "base": "climb",
     "tr": "tırmanmak",
-    "level": "A1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
+    "explanation": "İsim • Seviye: A2"
   },
   "cliff": {
     "base": "cliff",
@@ -5686,16 +5686,16 @@
   "clinging": {
     "base": "clinging",
     "tr": "yapışmak",
-    "level": "C2",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "clinical": {
     "base": "clinical",
     "tr": "klinik",
-    "level": "A2",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "climbed": {
     "base": "climbed",
@@ -5707,9 +5707,9 @@
   "clop": {
     "base": "clop",
     "tr": "alkış",
-    "level": "C2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "clipped": {
     "base": "clipped",
@@ -5735,23 +5735,23 @@
   "clockwork": {
     "base": "clockwork",
     "tr": "saat işleyişi",
-    "level": "C2",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: B2"
   },
   "clockmaker": {
     "base": "clockmaker",
     "tr": "saatçi",
-    "level": "C2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: B1"
   },
   "clog": {
     "base": "clog",
     "tr": "tıkanıklık",
-    "level": "B2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "clocks": {
     "base": "clocks",
@@ -5763,9 +5763,9 @@
   "cloak": {
     "base": "cloak",
     "tr": "pelerin",
-    "level": "C2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "closes": {
     "base": "closes",
@@ -5777,9 +5777,9 @@
   "cloth": {
     "base": "cloth",
     "tr": "kumaş",
-    "level": "A1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
+    "explanation": "İsim • Seviye: A2"
   },
   "closely": {
     "base": "closely",
@@ -5791,65 +5791,65 @@
   "closer": {
     "base": "closer",
     "tr": "daha yakın",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "closing": {
     "base": "closing",
     "tr": "kapanış",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "clouded": {
     "base": "clouded",
     "tr": "bulutlu",
-    "level": "A1",
-    "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
-  },
-  "clothes": {
-    "base": "clothes",
-    "tr": "kıyafetler",
-    "level": "A1",
-    "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
-  },
-  "clover": {
-    "base": "clover",
-    "tr": "yonca",
-    "level": "C2",
-    "pos": "Kelime",
-    "explanation": "Kelime • Seviye: C2"
-  },
-  "clumsy": {
-    "base": "clumsy",
-    "tr": "sakar",
     "level": "B2",
     "pos": "Sıfat",
     "explanation": "Sıfat • Seviye: B2"
   },
+  "clothes": {
+    "base": "clothes",
+    "tr": "kıyafetler",
+    "level": "A2",
+    "pos": "İsim",
+    "explanation": "İsim • Seviye: A2"
+  },
+  "clover": {
+    "base": "clover",
+    "tr": "yonca",
+    "level": "B1",
+    "pos": "Kelime",
+    "explanation": "Kelime • Seviye: B1"
+  },
+  "clumsy": {
+    "base": "clumsy",
+    "tr": "sakar",
+    "level": "B1",
+    "pos": "Sıfat",
+    "explanation": "Sıfat • Seviye: B1"
+  },
   "clung": {
     "base": "clung",
     "tr": "yapıştı",
-    "level": "C2",
+    "level": "B2",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: C2"
+    "explanation": "Fiil • Seviye: B2"
   },
   "clutched": {
     "base": "clutched",
     "tr": "kavramak",
-    "level": "C1",
+    "level": "B1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: C1"
+    "explanation": "Fiil • Seviye: B1"
   },
   "coachman": {
     "base": "coachman",
     "tr": "arabacı",
-    "level": "C2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: B1"
   },
   "clouds": {
     "base": "clouds",
@@ -5861,16 +5861,16 @@
   "coal": {
     "base": "coal",
     "tr": "kömür",
-    "level": "B1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "coastline": {
     "base": "coastline",
     "tr": "kıyı şeridi",
-    "level": "B2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "coat": {
     "base": "coat",
@@ -5882,16 +5882,16 @@
   "coast": {
     "base": "coast",
     "tr": "sahil",
-    "level": "A2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "clutching": {
     "base": "clutching",
     "tr": "kavrama",
-    "level": "C1",
+    "level": "B1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: C1"
+    "explanation": "Fiil • Seviye: B1"
   },
   "coiled": {
     "base": "coiled",
@@ -5903,23 +5903,23 @@
   "coins": {
     "base": "coins",
     "tr": "paralar",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "coin": {
     "base": "coin",
     "tr": "madeni para",
-    "level": "A2",
+    "level": "A1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: A1"
   },
   "cocktails": {
     "base": "cocktails",
     "tr": "kokteyller",
-    "level": "B2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: B1"
   },
   "coats": {
     "base": "coats",
@@ -5931,9 +5931,9 @@
   "collapse": {
     "base": "collapse",
     "tr": "yıkılmak",
-    "level": "B1",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: B2"
   },
   "collapsed": {
     "base": "collapsed",
@@ -5966,30 +5966,30 @@
   "collect": {
     "base": "collect",
     "tr": "TOPLAMAK",
-    "level": "A1",
+    "level": "A2",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A1"
+    "explanation": "Fiil • Seviye: A2"
   },
   "collected": {
     "base": "collected",
     "tr": "toplandı",
-    "level": "A1",
+    "level": "B1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A1"
+    "explanation": "Fiil • Seviye: B1"
   },
   "collection": {
     "base": "collection",
     "tr": "koleksiyon",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "college": {
     "base": "college",
     "tr": "üniversite",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "colorful": {
     "base": "colorful",
@@ -6001,16 +6001,16 @@
   "collectors": {
     "base": "collectors",
     "tr": "koleksiyoncular",
-    "level": "B2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: B1"
   },
   "collective": {
     "base": "collective",
     "tr": "kolektif",
-    "level": "A2",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "collided": {
     "base": "collided",
@@ -6036,9 +6036,9 @@
   "colossal": {
     "base": "colossal",
     "tr": "devasa",
-    "level": "C2",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "comb": {
     "base": "comb",
@@ -6050,37 +6050,37 @@
   "chasm": {
     "base": "chasm",
     "tr": "uçurum",
-    "level": "C2",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: B2"
   },
   "clatter": {
     "base": "clatter",
     "tr": "takırdamak",
-    "level": "C2",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: B2"
   },
   "chinny": {
     "base": "chinny",
     "tr": "çene",
-    "level": "A1",
+    "level": "B2",
     "pos": "Kelime",
-    "explanation": "Kelime • Seviye: A1"
+    "explanation": "Kelime • Seviye: B2"
   },
   "cliffside": {
     "base": "cliffside",
     "tr": "uçurum kenarı",
-    "level": "C2",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C2"
+    "explanation": "İsim • Seviye: B2"
   },
   "catalyzed": {
     "base": "catalyzed",
     "tr": "katalize edilmiş",
-    "level": "C2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "come": {
     "base": "come",
@@ -6092,16 +6092,16 @@
   "clapped": {
     "base": "clapped",
     "tr": "alkışladı",
-    "level": "B2",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "cheered": {
     "base": "cheered",
     "tr": "tezahürat yaptı",
-    "level": "A2",
+    "level": "B1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A2"
+    "explanation": "Fiil • Seviye: B1"
   },
   "comforts": {
     "base": "comforts",
@@ -6162,9 +6162,9 @@
   "committed": {
     "base": "committed",
     "tr": "bağlılık",
-    "level": "B1",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "commanded": {
     "base": "commanded",
@@ -6176,9 +6176,9 @@
   "community": {
     "base": "community",
     "tr": "toplum",
-    "level": "B2",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: A2"
   },
   "commands": {
     "base": "commands",
@@ -6204,9 +6204,9 @@
   "commanding": {
     "base": "commanding",
     "tr": "komuta",
-    "level": "B1",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "communication": {
     "base": "communication",
@@ -6225,9 +6225,9 @@
   "comparing": {
     "base": "comparing",
     "tr": "karşılaştırma",
-    "level": "A2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "company": {
     "base": "company",
@@ -6239,16 +6239,16 @@
   "compared": {
     "base": "compared",
     "tr": "karşılaştırıldı",
-    "level": "A2",
+    "level": "B1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A2"
+    "explanation": "Fiil • Seviye: B1"
   },
   "compelled": {
     "base": "compelled",
     "tr": "mecbur",
-    "level": "C1",
+    "level": "B2",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: C1"
+    "explanation": "Fiil • Seviye: B2"
   },
   "competence": {
     "base": "competence",
@@ -6260,9 +6260,9 @@
   "complex": {
     "base": "complex",
     "tr": "karmaşık",
-    "level": "B1",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "complexities": {
     "base": "complexities",
@@ -6274,16 +6274,16 @@
   "complain": {
     "base": "complain",
     "tr": "şikayet etmek",
-    "level": "A2",
+    "level": "B1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A2"
+    "explanation": "Fiil • Seviye: B1"
   },
   "compassion": {
     "base": "compassion",
     "tr": "merhamet",
-    "level": "B2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "complexity": {
     "base": "complexity",
@@ -6624,9 +6624,9 @@
   "constantly": {
     "base": "constantly",
     "tr": "sürekli",
-    "level": "B1",
+    "level": "C1",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: B1"
+    "explanation": "Zarf • Seviye: C1"
   },
   "conquest": {
     "base": "conquest",
@@ -7072,9 +7072,9 @@
   "courtly": {
     "base": "courtly",
     "tr": "nezaketle",
-    "level": "A2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "confided": {
     "base": "confided",
@@ -7282,9 +7282,9 @@
   "cries": {
     "base": "cries",
     "tr": "ağlıyor",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "creatures": {
     "base": "creatures",
@@ -7590,9 +7590,9 @@
   "currently": {
     "base": "currently",
     "tr": "şu anda",
-    "level": "B1",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: B2"
   },
   "curses": {
     "base": "curses",
@@ -7604,9 +7604,9 @@
   "curiously": {
     "base": "curiously",
     "tr": "merakla",
-    "level": "B1",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: B2"
   },
   "crafted": {
     "base": "crafted",
@@ -7625,9 +7625,9 @@
   "customs": {
     "base": "customs",
     "tr": "gümrük",
-    "level": "B1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: A2"
   },
   "curiosity": {
     "base": "curiosity",
@@ -7653,9 +7653,9 @@
   "cuts": {
     "base": "cuts",
     "tr": "kesikler",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "cutting": {
     "base": "cutting",
@@ -7954,9 +7954,9 @@
   "deathly": {
     "base": "deathly",
     "tr": "ölümcül",
-    "level": "A2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "debate": {
     "base": "debate",
@@ -8199,9 +8199,9 @@
   "deliberately": {
     "base": "deliberately",
     "tr": "kasten",
-    "level": "B2",
+    "level": "C1",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: B2"
+    "explanation": "Zarf • Seviye: C1"
   },
   "defined": {
     "base": "defined",
@@ -8290,9 +8290,9 @@
   "deeply": {
     "base": "deeply",
     "tr": "derinden",
-    "level": "A2",
+    "level": "B1",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: A2"
+    "explanation": "Zarf • Seviye: B1"
   },
   "demand": {
     "base": "demand",
@@ -8563,9 +8563,9 @@
   "desires": {
     "base": "desires",
     "tr": "arzular",
-    "level": "B2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: B1"
   },
   "destroys": {
     "base": "destroys",
@@ -9368,9 +9368,9 @@
   "dimly": {
     "base": "dimly",
     "tr": "loş",
-    "level": "B2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "dominated": {
     "base": "dominated",
@@ -9641,9 +9641,9 @@
   "dresses": {
     "base": "dresses",
     "tr": "elbiseler",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "dreaming": {
     "base": "dreaming",
@@ -9669,9 +9669,9 @@
   "dreams": {
     "base": "dreams",
     "tr": "rüyalar",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "drifted": {
     "base": "drifted",
@@ -9753,9 +9753,9 @@
   "drops": {
     "base": "drops",
     "tr": "damla",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "drowning": {
     "base": "drowning",
@@ -9977,9 +9977,9 @@
   "earthly": {
     "base": "earthly",
     "tr": "dünyevi",
-    "level": "A2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "earnest": {
     "base": "earnest",
@@ -10082,23 +10082,23 @@
   "echoing": {
     "base": "echoing",
     "tr": "yankılanan",
-    "level": "B2",
+    "level": "C1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: B2"
+    "explanation": "Fiil • Seviye: C1"
   },
   "echoes": {
     "base": "echoes",
     "tr": "yankılar",
-    "level": "B2",
+    "level": "C1",
     "pos": "Bağlaç",
-    "explanation": "Bağlaç • Seviye: B2"
+    "explanation": "Bağlaç • Seviye: C1"
   },
   "echoed": {
     "base": "echoed",
     "tr": "yankılandı",
-    "level": "B2",
+    "level": "C1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: B2"
+    "explanation": "Fiil • Seviye: C1"
   },
   "education": {
     "base": "education",
@@ -10544,9 +10544,9 @@
   "ends": {
     "base": "ends",
     "tr": "biter",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "energy": {
     "base": "energy",
@@ -10761,9 +10761,9 @@
   "entirely": {
     "base": "entirely",
     "tr": "tamamen",
-    "level": "B1",
+    "level": "B2",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: B1"
+    "explanation": "Zarf • Seviye: B2"
   },
   "enveloped": {
     "base": "enveloped",
@@ -10845,9 +10845,9 @@
   "encounters": {
     "base": "encounters",
     "tr": "karşılaşmalar",
-    "level": "B2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: B1"
   },
   "enslavement": {
     "base": "enslavement",
@@ -10978,9 +10978,9 @@
   "evening": {
     "base": "evening",
     "tr": "akşam",
-    "level": "A1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
+    "explanation": "İsim • Seviye: A2"
   },
   "eventually": {
     "base": "eventually",
@@ -11041,9 +11041,9 @@
   "exactly": {
     "base": "exactly",
     "tr": "Kesinlikle",
-    "level": "A2",
+    "level": "B2",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: A2"
+    "explanation": "Zarf • Seviye: B2"
   },
   "evil": {
     "base": "evil",
@@ -11118,9 +11118,9 @@
   "evenings": {
     "base": "evenings",
     "tr": "akşamlar",
-    "level": "A1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
+    "explanation": "İsim • Seviye: A2"
   },
   "excellent": {
     "base": "excellent",
@@ -11559,9 +11559,9 @@
   "faces": {
     "base": "faces",
     "tr": "yüzler",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "facilitate": {
     "base": "facilitate",
@@ -11839,9 +11839,9 @@
   "fateful": {
     "base": "fateful",
     "tr": "kader",
-    "level": "A2",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "favor": {
     "base": "favor",
@@ -11874,9 +11874,9 @@
   "fears": {
     "base": "fears",
     "tr": "korkular",
-    "level": "B1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: A2"
   },
   "father": {
     "base": "father",
@@ -11951,9 +11951,9 @@
   "feed": {
     "base": "feed",
     "tr": "beslemek",
-    "level": "A1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
+    "explanation": "İsim • Seviye: A2"
   },
   "feeling": {
     "base": "feeling",
@@ -11986,9 +11986,9 @@
   "feels": {
     "base": "feels",
     "tr": "hissediyor",
-    "level": "A2",
+    "level": "A1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A2"
+    "explanation": "Fiil • Seviye: A1"
   },
   "feeds": {
     "base": "feeds",
@@ -12322,9 +12322,9 @@
   "fits": {
     "base": "fits",
     "tr": "uyuyor",
-    "level": "B1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "flame": {
     "base": "flame",
@@ -12364,9 +12364,9 @@
   "firmly": {
     "base": "firmly",
     "tr": "sıkıca",
-    "level": "B1",
+    "level": "B2",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: B1"
+    "explanation": "Zarf • Seviye: B2"
   },
   "feasting": {
     "base": "feasting",
@@ -12560,9 +12560,9 @@
   "flower": {
     "base": "flower",
     "tr": "çiçek",
-    "level": "A1",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "flute": {
     "base": "flute",
@@ -12637,9 +12637,9 @@
   "flowers": {
     "base": "flowers",
     "tr": "çiçekler",
-    "level": "A1",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
+    "explanation": "İsim • Seviye: B1"
   },
   "fold": {
     "base": "fold",
@@ -12686,9 +12686,9 @@
   "following": {
     "base": "following",
     "tr": "takip etme",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "food": {
     "base": "food",
@@ -13113,9 +13113,9 @@
   "frantically": {
     "base": "frantically",
     "tr": "çılgınca",
-    "level": "B2",
+    "level": "C1",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: B2"
+    "explanation": "Zarf • Seviye: C1"
   },
   "frenzy": {
     "base": "frenzy",
@@ -13799,9 +13799,9 @@
   "ghostly": {
     "base": "ghostly",
     "tr": "hayaletimsi",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "girl": {
     "base": "girl",
@@ -14002,9 +14002,9 @@
   "goes": {
     "base": "goes",
     "tr": "gitmek",
-    "level": "A2",
+    "level": "A1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A2"
+    "explanation": "Fiil • Seviye: A1"
   },
   "goal": {
     "base": "goal",
@@ -14051,9 +14051,9 @@
   "goodbye": {
     "base": "goodbye",
     "tr": "Güle güle",
-    "level": "C2",
+    "level": "A1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C2"
+    "explanation": "Sıfat • Seviye: A1"
   },
   "good": {
     "base": "good",
@@ -14072,9 +14072,9 @@
   "goods": {
     "base": "goods",
     "tr": "mal",
-    "level": "B1",
+    "level": "A1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: A1"
   },
   "gerda": {
     "base": "gerda",
@@ -14366,9 +14366,9 @@
   "greedily": {
     "base": "greedily",
     "tr": "açgözlülükle",
-    "level": "A2",
+    "level": "B1",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: A2"
+    "explanation": "Zarf • Seviye: B1"
   },
   "greedy": {
     "base": "greedy",
@@ -14863,9 +14863,9 @@
   "hands": {
     "base": "hands",
     "tr": "eller",
-    "level": "A2",
+    "level": "A1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: A1"
   },
   "hammered": {
     "base": "hammered",
@@ -15080,9 +15080,9 @@
   "hates": {
     "base": "hates",
     "tr": "nefret ediyor",
-    "level": "A2",
+    "level": "A1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A2"
+    "explanation": "Fiil • Seviye: A1"
   },
   "have": {
     "base": "have",
@@ -15199,9 +15199,9 @@
   "heads": {
     "base": "heads",
     "tr": "kafalar",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "heard": {
     "base": "hear",
@@ -15465,9 +15465,9 @@
   "helps": {
     "base": "helps",
     "tr": "yardımcı olur",
-    "level": "A2",
+    "level": "A1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A2"
+    "explanation": "Fiil • Seviye: A1"
   },
   "hero": {
     "base": "hero",
@@ -15654,9 +15654,9 @@
   "hiss": {
     "base": "hiss",
     "tr": "tıslama",
-    "level": "C1",
+    "level": "A1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: C1"
+    "explanation": "Sıfat • Seviye: A1"
   },
   "hansel": {
     "base": "hansel",
@@ -15724,9 +15724,9 @@
   "holds": {
     "base": "holds",
     "tr": "tutar",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "historically": {
     "base": "historically",
@@ -15759,9 +15759,9 @@
   "homes": {
     "base": "homes",
     "tr": "evler",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "hollow": {
     "base": "hollow",
@@ -15836,16 +15836,16 @@
   "hopes": {
     "base": "hopes",
     "tr": "umutlar",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "honestly": {
     "base": "honestly",
     "tr": "Açıkçası",
-    "level": "B1",
+    "level": "B2",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: B1"
+    "explanation": "Zarf • Seviye: B2"
   },
   "hook": {
     "base": "hook",
@@ -16116,9 +16116,9 @@
   "hugs": {
     "base": "hugs",
     "tr": "sarılmalar",
-    "level": "B1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: A2"
   },
   "hulking": {
     "base": "hulking",
@@ -16200,9 +16200,9 @@
   "hunger": {
     "base": "hunger",
     "tr": "açlık",
-    "level": "B1",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: B2"
   },
   "hung": {
     "base": "hung",
@@ -16221,16 +16221,16 @@
   "hunter": {
     "base": "hunter",
     "tr": "avcı",
-    "level": "A2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: B1"
   },
   "hunters": {
     "base": "hunters",
     "tr": "avcılar",
-    "level": "A2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: B1"
   },
   "hurrah": {
     "base": "hurrah",
@@ -16298,9 +16298,9 @@
   "hurts": {
     "base": "hurts",
     "tr": "acıtmak",
-    "level": "A2",
+    "level": "A1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A2"
+    "explanation": "Fiil • Seviye: A1"
   },
   "hypothesis": {
     "base": "hypothesis",
@@ -16515,9 +16515,9 @@
   "immediately": {
     "base": "immediately",
     "tr": "hemen",
-    "level": "B1",
+    "level": "B2",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: B1"
+    "explanation": "Zarf • Seviye: B2"
   },
   "imminent": {
     "base": "imminent",
@@ -16809,9 +16809,9 @@
   "incredibly": {
     "base": "incredibly",
     "tr": "inanılmaz derecede",
-    "level": "B1",
+    "level": "B2",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: B1"
+    "explanation": "Zarf • Seviye: B2"
   },
   "incredible": {
     "base": "incredible",
@@ -16858,9 +16858,9 @@
   "individuals": {
     "base": "individuals",
     "tr": "bireyler",
-    "level": "B2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: B1"
   },
   "indifferent": {
     "base": "indifferent",
@@ -17040,9 +17040,9 @@
   "inner": {
     "base": "inner",
     "tr": "iç",
-    "level": "A2",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "innocent": {
     "base": "innocent",
@@ -17327,16 +17327,16 @@
   "intently": {
     "base": "intently",
     "tr": "dikkatle",
-    "level": "B2",
+    "level": "C1",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: B2"
+    "explanation": "Zarf • Seviye: C1"
   },
   "interested": {
     "base": "interested",
     "tr": "ilgili",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "internal": {
     "base": "internal",
@@ -17355,9 +17355,9 @@
   "interesting": {
     "base": "interesting",
     "tr": "ilginç",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "interest": {
     "base": "interest",
@@ -18125,9 +18125,9 @@
   "jumps": {
     "base": "jumps",
     "tr": "atlar",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "knives": {
     "base": "knives",
@@ -18454,9 +18454,9 @@
   "laughs": {
     "base": "laughs",
     "tr": "gülüyor",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "laughing": {
     "base": "laughing",
@@ -18545,16 +18545,16 @@
   "leader": {
     "base": "leader",
     "tr": "lider",
-    "level": "A1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
+    "explanation": "İsim • Seviye: A2"
   },
   "laboriously": {
     "base": "laboriously",
     "tr": "zahmetli bir şekilde",
-    "level": "B1",
+    "level": "B2",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: B1"
+    "explanation": "Zarf • Seviye: B2"
   },
   "lead": {
     "base": "lead",
@@ -18566,9 +18566,9 @@
   "leads": {
     "base": "leads",
     "tr": "potansiyel müşteriler",
-    "level": "B1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: A2"
   },
   "layers": {
     "base": "layers",
@@ -18608,9 +18608,9 @@
   "leaders": {
     "base": "leaders",
     "tr": "liderler",
-    "level": "A1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
+    "explanation": "İsim • Seviye: A2"
   },
   "lean": {
     "base": "lean",
@@ -18636,9 +18636,9 @@
   "leaps": {
     "base": "leaps",
     "tr": "sıçramalar",
-    "level": "B2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: B1"
   },
   "leap": {
     "base": "leap",
@@ -19056,9 +19056,9 @@
   "likes": {
     "base": "likes",
     "tr": "beğeniler",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "likely": {
     "base": "likely",
@@ -19077,9 +19077,9 @@
   "lights": {
     "base": "lights",
     "tr": "ışıklar",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "limbs": {
     "base": "limbs",
@@ -19133,9 +19133,9 @@
   "lines": {
     "base": "lines",
     "tr": "çizgiler",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "lingered": {
     "base": "lingered",
@@ -19399,9 +19399,9 @@
   "lonely": {
     "base": "lonely",
     "tr": "yalnız",
-    "level": "A1",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "longer": {
     "base": "longer",
@@ -19595,9 +19595,9 @@
   "loudly": {
     "base": "loudly",
     "tr": "yüksek sesle",
-    "level": "A2",
+    "level": "B2",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: A2"
+    "explanation": "Zarf • Seviye: B2"
   },
   "love": {
     "base": "love",
@@ -19651,9 +19651,9 @@
   "lovely": {
     "base": "lovely",
     "tr": "sevimli",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "loved": {
     "base": "loved",
@@ -19875,9 +19875,9 @@
   "makes": {
     "base": "makes",
     "tr": "yapar",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "maintained": {
     "base": "maintained",
@@ -19952,9 +19952,9 @@
   "manifesting": {
     "base": "manifesting",
     "tr": "tezahür eden",
-    "level": "B2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "mama": {
     "base": "mama",
@@ -20295,9 +20295,9 @@
   "means": {
     "base": "means",
     "tr": "araç",
-    "level": "B2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: A1"
   },
   "may": {
     "base": "may",
@@ -20638,9 +20638,9 @@
   "merely": {
     "base": "merely",
     "tr": "sadece",
-    "level": "B1",
+    "level": "B2",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: B1"
+    "explanation": "Zarf • Seviye: B2"
   },
   "men": {
     "base": "men",
@@ -20911,9 +20911,9 @@
   "miller": {
     "base": "miller",
     "tr": "değirmenci",
-    "level": "A2",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: B2"
   },
   "minute": {
     "base": "minute",
@@ -21317,9 +21317,9 @@
   "mother": {
     "base": "mother",
     "tr": "anne",
-    "level": "A1",
+    "level": "C2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: C2"
   },
   "mortality": {
     "base": "mortality",
@@ -21338,9 +21338,9 @@
   "motionless": {
     "base": "motionless",
     "tr": "hareketsiz",
-    "level": "B1",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "mount": {
     "base": "mount",
@@ -21436,9 +21436,9 @@
   "moves": {
     "base": "moves",
     "tr": "hamle",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "mrs": {
     "base": "mrs",
@@ -21604,9 +21604,9 @@
   "mixes": {
     "base": "mixes",
     "tr": "karışımlar",
-    "level": "B1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: A2"
   },
   "myself": {
     "base": "myself",
@@ -21632,9 +21632,9 @@
   "moths": {
     "base": "moths",
     "tr": "güveler",
-    "level": "C1",
+    "level": "C2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C1"
+    "explanation": "İsim • Seviye: C2"
   },
   "moritz": {
     "base": "moritz",
@@ -21702,9 +21702,9 @@
   "names": {
     "base": "names",
     "tr": "isimler",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "narrowing": {
     "base": "narrowing",
@@ -21912,9 +21912,9 @@
   "needs": {
     "base": "needs",
     "tr": "ihtiyaçlar",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "native": {
     "base": "native",
@@ -22402,9 +22402,9 @@
   "objects": {
     "base": "objects",
     "tr": "nesneler",
-    "level": "B2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: B1"
   },
   "obeyed": {
     "base": "obeyed",
@@ -22787,9 +22787,9 @@
   "only": {
     "base": "only",
     "tr": "sadece",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "onward": {
     "base": "onward",
@@ -22941,9 +22941,9 @@
   "others": {
     "base": "others",
     "tr": "diğerleri",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "other": {
     "base": "other",
@@ -23074,9 +23074,9 @@
   "over": {
     "base": "over",
     "tr": "üzerinde",
-    "level": "A1",
+    "level": "A2",
     "pos": "Edat",
-    "explanation": "Edat • Seviye: A1"
+    "explanation": "Edat • Seviye: A2"
   },
   "overwhelmed": {
     "base": "overwhelmed",
@@ -23137,9 +23137,9 @@
   "owns": {
     "base": "owns",
     "tr": "sahip",
-    "level": "A2",
+    "level": "A1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A2"
+    "explanation": "Fiil • Seviye: A1"
   },
   "overwhelming": {
     "base": "overwhelming",
@@ -23424,9 +23424,9 @@
   "partner": {
     "base": "partner",
     "tr": "ortak",
-    "level": "A1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
+    "explanation": "İsim • Seviye: A2"
   },
   "particular": {
     "base": "particular",
@@ -23438,9 +23438,9 @@
   "particularly": {
     "base": "particularly",
     "tr": "özellikle",
-    "level": "B1",
+    "level": "C1",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: B1"
+    "explanation": "Zarf • Seviye: C1"
   },
   "parties": {
     "base": "parties",
@@ -23452,16 +23452,16 @@
   "parts": {
     "base": "parts",
     "tr": "parçalar",
-    "level": "B1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "partners": {
     "base": "partners",
     "tr": "ortaklar",
-    "level": "A1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
+    "explanation": "İsim • Seviye: A2"
   },
   "oilskin": {
     "base": "oilskin",
@@ -23795,9 +23795,9 @@
   "perfectly": {
     "base": "perfectly",
     "tr": "kusursuzca",
-    "level": "A2",
+    "level": "B1",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: A2"
+    "explanation": "Zarf • Seviye: B1"
   },
   "perform": {
     "base": "perform",
@@ -24075,9 +24075,9 @@
   "pictures": {
     "base": "pictures",
     "tr": "resimler",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "photograph": {
     "base": "photograph",
@@ -24103,9 +24103,9 @@
   "picks": {
     "base": "picks",
     "tr": "seçtikleri",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "pieces": {
     "base": "pieces",
@@ -24313,9 +24313,9 @@
   "places": {
     "base": "places",
     "tr": "yer",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "pitch": {
     "base": "pitch",
@@ -24418,9 +24418,9 @@
   "plans": {
     "base": "plans",
     "tr": "planlar",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "pleas": {
     "base": "pleas",
@@ -24467,9 +24467,9 @@
   "pleased": {
     "base": "pleased",
     "tr": "memnun",
-    "level": "A2",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "plight": {
     "base": "plight",
@@ -24621,9 +24621,9 @@
   "points": {
     "base": "points",
     "tr": "puan",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "politeness": {
     "base": "politeness",
@@ -24817,9 +24817,9 @@
   "possibly": {
     "base": "possibly",
     "tr": "muhtemelen",
-    "level": "A2",
+    "level": "B1",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: A2"
+    "explanation": "Zarf • Seviye: B1"
   },
   "poured": {
     "base": "poured",
@@ -25167,9 +25167,9 @@
   "prickly": {
     "base": "prickly",
     "tr": "dikenli",
-    "level": "B2",
+    "level": "C1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: C1"
   },
   "previously": {
     "base": "previously",
@@ -25447,9 +25447,9 @@
   "profoundly": {
     "base": "profoundly",
     "tr": "derinden",
-    "level": "B2",
+    "level": "C1",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: B2"
+    "explanation": "Zarf • Seviye: C1"
   },
   "profit": {
     "base": "profit",
@@ -25846,9 +25846,9 @@
   "pushes": {
     "base": "pushes",
     "tr": "iter",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "puts": {
     "base": "puts",
@@ -25972,9 +25972,9 @@
   "quickly": {
     "base": "quickly",
     "tr": "hızlıca",
-    "level": "A1",
+    "level": "B1",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: A1"
+    "explanation": "Zarf • Seviye: B1"
   },
   "putting": {
     "base": "putting",
@@ -26350,9 +26350,9 @@
   "realizing": {
     "base": "realizing",
     "tr": "farkına varmak",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "receded": {
     "base": "receded",
@@ -26728,9 +26728,9 @@
   "remains": {
     "base": "remains",
     "tr": "kalıntılar",
-    "level": "B2",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: A2"
   },
   "religious": {
     "base": "religious",
@@ -27477,9 +27477,9 @@
   "rings": {
     "base": "rings",
     "tr": "yüzükler",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "rigorous": {
     "base": "rigorous",
@@ -27645,9 +27645,9 @@
   "rocks": {
     "base": "rocks",
     "tr": "kayalar",
-    "level": "B1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: A2"
   },
   "rocked": {
     "base": "rocked",
@@ -27778,9 +27778,9 @@
   "roses": {
     "base": "roses",
     "tr": "güller",
-    "level": "A1",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
+    "explanation": "İsim • Seviye: B1"
   },
   "rot": {
     "base": "rot",
@@ -27813,9 +27813,9 @@
   "rooms": {
     "base": "rooms",
     "tr": "odalar",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "roofs": {
     "base": "roofs",
@@ -27939,9 +27939,9 @@
   "rules": {
     "base": "rules",
     "tr": "tüzük",
-    "level": "A2",
+    "level": "A1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: A1"
   },
   "rumbling": {
     "base": "rumbling",
@@ -28121,9 +28121,9 @@
   "sailing": {
     "base": "sailing",
     "tr": "yelkencilik",
-    "level": "A2",
+    "level": "B2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: B2"
   },
   "sailors": {
     "base": "sailors",
@@ -28331,9 +28331,9 @@
   "saws": {
     "base": "saws",
     "tr": "testereler",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "saying": {
     "base": "saying",
@@ -28352,9 +28352,9 @@
   "says": {
     "base": "says",
     "tr": "diyor",
-    "level": "A2",
+    "level": "A1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A2"
+    "explanation": "Fiil • Seviye: A1"
   },
   "save": {
     "base": "save",
@@ -28730,9 +28730,9 @@
   "seconds": {
     "base": "seconds",
     "tr": "saniye",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "secret": {
     "base": "secret",
@@ -28954,9 +28954,9 @@
   "senses": {
     "base": "senses",
     "tr": "duyular",
-    "level": "B1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: A2"
   },
   "seized": {
     "base": "seized",
@@ -29010,9 +29010,9 @@
   "separates": {
     "base": "separates",
     "tr": "ayırır",
-    "level": "B1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: A2"
   },
   "series": {
     "base": "series",
@@ -29059,9 +29059,9 @@
   "seriously": {
     "base": "seriously",
     "tr": "Cidden",
-    "level": "A2",
+    "level": "B2",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: A2"
+    "explanation": "Zarf • Seviye: B2"
   },
   "serenity": {
     "base": "serenity",
@@ -29199,9 +29199,9 @@
   "shakes": {
     "base": "shakes",
     "tr": "sallar",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "shame": {
     "base": "shame",
@@ -29381,9 +29381,9 @@
   "shells": {
     "base": "shells",
     "tr": "kabuklar",
-    "level": "B1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: A2"
   },
   "shelves": {
     "base": "shelves",
@@ -29451,9 +29451,9 @@
   "shifts": {
     "base": "shifts",
     "tr": "vardiyalar",
-    "level": "B2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: B1"
   },
   "shielded": {
     "base": "shielded",
@@ -29549,9 +29549,9 @@
   "ships": {
     "base": "ships",
     "tr": "gemiler",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "shivered": {
     "base": "shivered",
@@ -29633,9 +29633,9 @@
   "shops": {
     "base": "shops",
     "tr": "mağazalar",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "shore": {
     "base": "shore",
@@ -29773,9 +29773,9 @@
   "shows": {
     "base": "shows",
     "tr": "gösteriler",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "shrill": {
     "base": "shrill",
@@ -29843,9 +29843,9 @@
   "sighs": {
     "base": "sighs",
     "tr": "iç çeker",
-    "level": "B2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: B1"
   },
   "signal": {
     "base": "signal",
@@ -29990,9 +29990,9 @@
   "simply": {
     "base": "simply",
     "tr": "basitçe",
-    "level": "A2",
+    "level": "B1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: B1"
   },
   "silver": {
     "base": "silver",
@@ -30319,9 +30319,9 @@
   "sleeps": {
     "base": "sleeps",
     "tr": "uyur",
-    "level": "A2",
+    "level": "A1",
     "pos": "Edat",
-    "explanation": "Edat • Seviye: A2"
+    "explanation": "Edat • Seviye: A1"
   },
   "sleek": {
     "base": "sleek",
@@ -30389,9 +30389,9 @@
   "slightly": {
     "base": "slightly",
     "tr": "biraz",
-    "level": "B1",
+    "level": "B2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: B2"
   },
   "slipper": {
     "base": "slipper",
@@ -30557,9 +30557,9 @@
   "smiles": {
     "base": "smiles",
     "tr": "gülümsüyor",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "snakes": {
     "base": "snakes",
@@ -30578,9 +30578,9 @@
   "smells": {
     "base": "smells",
     "tr": "kokuyor",
-    "level": "A2",
+    "level": "A1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A2"
+    "explanation": "Fiil • Seviye: A1"
   },
   "snack": {
     "base": "snack",
@@ -30774,9 +30774,9 @@
   "softly": {
     "base": "softly",
     "tr": "usulca",
-    "level": "A2",
+    "level": "B1",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: A2"
+    "explanation": "Zarf • Seviye: B1"
   },
   "soldiers": {
     "base": "soldiers",
@@ -30893,9 +30893,9 @@
   "soothing": {
     "base": "soothing",
     "tr": "yatıştırıcı",
-    "level": "B1",
+    "level": "C2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B1"
+    "explanation": "Sıfat • Seviye: C2"
   },
   "sore": {
     "base": "sore",
@@ -30984,9 +30984,9 @@
   "sounds": {
     "base": "sounds",
     "tr": "sesler",
-    "level": "B1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: A2"
   },
   "soup": {
     "base": "soup",
@@ -31348,9 +31348,9 @@
   "spots": {
     "base": "spots",
     "tr": "noktalar",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "spoon": {
     "base": "spoon",
@@ -31593,9 +31593,9 @@
   "stands": {
     "base": "stands",
     "tr": "standlar",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "star": {
     "base": "star",
@@ -31684,9 +31684,9 @@
   "stars": {
     "base": "stars",
     "tr": "yıldızlar",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "stay": {
     "base": "stay",
@@ -31705,9 +31705,9 @@
   "steadily": {
     "base": "steadily",
     "tr": "istikrarlı bir şekilde",
-    "level": "B1",
+    "level": "B2",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: B1"
+    "explanation": "Zarf • Seviye: B2"
   },
   "starts": {
     "base": "starts",
@@ -31810,9 +31810,9 @@
   "steps": {
     "base": "steps",
     "tr": "adımlar",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "stepped": {
     "base": "stepped",
@@ -31831,9 +31831,9 @@
   "sticks": {
     "base": "sticks",
     "tr": "sopa",
-    "level": "B2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: B1"
   },
   "stiff": {
     "base": "stiff",
@@ -31943,9 +31943,9 @@
   "stinging": {
     "base": "stinging",
     "tr": "batma",
-    "level": "B2",
+    "level": "C2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: B2"
+    "explanation": "Sıfat • Seviye: C2"
   },
   "stops": {
     "base": "stops",
@@ -31971,9 +31971,9 @@
   "stores": {
     "base": "stores",
     "tr": "mağazalar",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "store": {
     "base": "store",
@@ -32335,9 +32335,9 @@
   "studies": {
     "base": "studies",
     "tr": "çalışmalar",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "stuck": {
     "base": "stuck",
@@ -32419,9 +32419,9 @@
   "successful": {
     "base": "successful",
     "tr": "başarılı",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "subjects": {
     "base": "subjects",
@@ -32468,9 +32468,9 @@
   "successfully": {
     "base": "successfully",
     "tr": "başarıyla",
-    "level": "A2",
+    "level": "B1",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: A2"
+    "explanation": "Zarf • Seviye: B1"
   },
   "suddenly": {
     "base": "suddenly",
@@ -32643,9 +32643,9 @@
   "supplies": {
     "base": "supplies",
     "tr": "tedarik",
-    "level": "B2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: B1"
   },
   "supplication": {
     "base": "supplication",
@@ -32734,16 +32734,16 @@
   "surprises": {
     "base": "surprises",
     "tr": "sürprizler",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "surroundings": {
     "base": "surroundings",
     "tr": "çevre",
-    "level": "B2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: B1"
   },
   "surprise": {
     "base": "surprise",
@@ -33056,9 +33056,9 @@
   "takes": {
     "base": "takes",
     "tr": "almak",
-    "level": "A2",
+    "level": "A1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A2"
+    "explanation": "Fiil • Seviye: A1"
   },
   "taking": {
     "base": "taking",
@@ -33133,9 +33133,9 @@
   "talks": {
     "base": "talks",
     "tr": "görüşmeler",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "talent": {
     "base": "talent",
@@ -33252,9 +33252,9 @@
   "suspiciously": {
     "base": "suspiciously",
     "tr": "şüpheyle",
-    "level": "B2",
+    "level": "C1",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: B2"
+    "explanation": "Zarf • Seviye: C1"
   },
   "stutely": {
     "base": "stutely",
@@ -33609,9 +33609,9 @@
   "theirs": {
     "base": "theirs",
     "tr": "onlarınki",
-    "level": "A2",
+    "level": "A1",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A2"
+    "explanation": "Sıfat • Seviye: A1"
   },
   "them": {
     "base": "them",
@@ -33840,9 +33840,9 @@
   "thoughts": {
     "base": "thoughts",
     "tr": "düşünceler",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "threat": {
     "base": "threat",
@@ -33980,9 +33980,9 @@
   "throws": {
     "base": "throws",
     "tr": "atar",
-    "level": "A2",
+    "level": "A1",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A2"
+    "explanation": "Fiil • Seviye: A1"
   },
   "thumping": {
     "base": "thumping",
@@ -34106,9 +34106,9 @@
   "times": {
     "base": "times",
     "tr": "kez",
-    "level": "B2",
+    "level": "A1",
     "pos": "Bağlaç",
-    "explanation": "Bağlaç • Seviye: B2"
+    "explanation": "Bağlaç • Seviye: A1"
   },
   "tireless": {
     "base": "tireless",
@@ -34344,9 +34344,9 @@
   "touches": {
     "base": "touches",
     "tr": "dokunur",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "touching": {
     "base": "touching",
@@ -34477,9 +34477,9 @@
   "trains": {
     "base": "trains",
     "tr": "trenler",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "trained": {
     "base": "trained",
@@ -34701,9 +34701,9 @@
   "travels": {
     "base": "travels",
     "tr": "seyahatler",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "travel": {
     "base": "travel",
@@ -34820,9 +34820,9 @@
   "tricks": {
     "base": "tricks",
     "tr": "hileler",
-    "level": "B1",
+    "level": "A2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B1"
+    "explanation": "İsim • Seviye: A2"
   },
   "trio": {
     "base": "trio",
@@ -34834,9 +34834,9 @@
   "tries": {
     "base": "tries",
     "tr": "çalışır",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "tricked": {
     "base": "tricked",
@@ -35135,9 +35135,9 @@
   "ultimately": {
     "base": "ultimately",
     "tr": "sonuçta",
-    "level": "B2",
+    "level": "C1",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: B2"
+    "explanation": "Zarf • Seviye: C1"
   },
   "unable": {
     "base": "unable",
@@ -35247,9 +35247,9 @@
   "uncontrollably": {
     "base": "uncontrollably",
     "tr": "kontrolsüz bir şekilde",
-    "level": "A2",
+    "level": "B2",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: A2"
+    "explanation": "Zarf • Seviye: B2"
   },
   "undeniable": {
     "base": "undeniable",
@@ -35765,9 +35765,9 @@
   "uses": {
     "base": "uses",
     "tr": "kullanır",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "utter": {
     "base": "utter",
@@ -35793,9 +35793,9 @@
   "utterly": {
     "base": "utterly",
     "tr": "tamamen",
-    "level": "B2",
+    "level": "C1",
     "pos": "Zarf",
-    "explanation": "Zarf • Seviye: B2"
+    "explanation": "Zarf • Seviye: C1"
   },
   "vacancy": {
     "base": "vacancy",
@@ -36150,9 +36150,9 @@
   "vines": {
     "base": "vines",
     "tr": "sarmaşıklar",
-    "level": "C1",
+    "level": "C2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: C1"
+    "explanation": "İsim • Seviye: C2"
   },
   "vibrate": {
     "base": "vibrate",
@@ -36381,9 +36381,9 @@
   "wakes": {
     "base": "wakes",
     "tr": "uyanır",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "victim": {
     "base": "victim",
@@ -36458,9 +36458,9 @@
   "wander": {
     "base": "wander",
     "tr": "dolaşmak",
-    "level": "A2",
+    "level": "C2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: C2"
   },
   "want": {
     "base": "want",
@@ -36479,16 +36479,16 @@
   "wanderer": {
     "base": "wanderer",
     "tr": "avare",
-    "level": "A2",
+    "level": "C2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: C2"
   },
   "wandered": {
     "base": "wandered",
     "tr": "dolaştı",
-    "level": "A2",
+    "level": "C2",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: A2"
+    "explanation": "Fiil • Seviye: C2"
   },
   "wands": {
     "base": "wands",
@@ -36570,9 +36570,9 @@
   "wants": {
     "base": "wants",
     "tr": "istiyor",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "warning": {
     "base": "warning",
@@ -36591,9 +36591,9 @@
   "wanders": {
     "base": "wanders",
     "tr": "dolaşır",
-    "level": "A2",
+    "level": "C2",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: C2"
   },
   "visibly": {
     "base": "visibly",
@@ -36724,9 +36724,9 @@
   "waters": {
     "base": "waters",
     "tr": "sular",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "watering": {
     "base": "watering",
@@ -37102,9 +37102,9 @@
   "whispers": {
     "base": "whispers",
     "tr": "fısıltılar",
-    "level": "B2",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: B2"
+    "explanation": "İsim • Seviye: B1"
   },
   "whims": {
     "base": "whims",
@@ -37319,9 +37319,9 @@
   "winds": {
     "base": "winds",
     "tr": "rüzgarlar",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "winning": {
     "base": "winning",
@@ -37368,9 +37368,9 @@
   "wins": {
     "base": "wins",
     "tr": "kazanır",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "wisdom": {
     "base": "wisdom",
@@ -37459,9 +37459,9 @@
   "wishes": {
     "base": "wishes",
     "tr": "dilekler",
-    "level": "A2",
+    "level": "A1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A2"
+    "explanation": "İsim • Seviye: A1"
   },
   "wishing": {
     "base": "wishing",
@@ -37522,16 +37522,16 @@
   "withered": {
     "base": "withered",
     "tr": "solmuş",
-    "level": "A1",
+    "level": "B1",
     "pos": "İsim",
-    "explanation": "İsim • Seviye: A1"
+    "explanation": "İsim • Seviye: B1"
   },
   "witness": {
     "base": "witness",
     "tr": "tanık",
-    "level": "B1",
+    "level": "B2",
     "pos": "Fiil",
-    "explanation": "Fiil • Seviye: B1"
+    "explanation": "Fiil • Seviye: B2"
   },
   "witty": {
     "base": "witty",
@@ -37620,9 +37620,9 @@
   "wonderful": {
     "base": "wonderful",
     "tr": "müthiş",
-    "level": "A1",
+    "level": "A2",
     "pos": "Sıfat",
-    "explanation": "Sıfat • Seviye: A1"
+    "explanation": "Sıfat • Seviye: A2"
   },
   "wonder": {
     "base": "wonder",
