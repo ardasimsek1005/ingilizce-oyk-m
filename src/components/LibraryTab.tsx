@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { BookOpen, Timer, Plus, ArrowRight, ExternalLink, ChevronRight, X, Sparkles, BookMarked, Heart } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Book } from '../types';
@@ -44,69 +44,115 @@ interface LibraryTabProps {
 export default function LibraryTab({ books, onSelectBook, syncTrigger, isDarkMode, onToggleFavorite, totalReadMinutes, lastActiveBookId }: LibraryTabProps) {
   const [selectedLevel, setSelectedLevel] = useState<string>('All');
 
-  const filteredBooks = selectedLevel === 'All'
-    ? books
-    : books.filter(b => b.level === selectedLevel);
-
   // Currently reading is the last active book, or the first one with progress > 0 and < 100, or the first book
-  const currentlyReading = books.find(b => b.id === lastActiveBookId)
-    || books.find(b => b.percentageCompleted > 0 && b.percentageCompleted < 100)
-    || books[0];
-  const myLibrary = books.filter(b => b.id !== currentlyReading?.id);
+  const currentlyReading = useMemo(() => {
+    return books.find(b => b.id === lastActiveBookId)
+      || books.find(b => b.percentageCompleted > 0 && b.percentageCompleted < 100)
+      || books[0];
+  }, [books, lastActiveBookId]);
 
-  // Helper to chunk paragraphs into pages matching ReadingView logic
-  const getBookPages = (book: Book, wordsPerPage: number = 120): number[][] => {
-    if (!book.chapters || book.chapters.length === 0) return [];
-    const chapter = book.chapters[0];
-    if (!chapter || !chapter.paragraphs) return [];
+  const filteredBooks = useMemo(() => {
+    return selectedLevel === 'All'
+      ? books
+      : books.filter(b => b.level === selectedLevel);
+  }, [books, selectedLevel]);
 
-    const pagesList: number[][] = [];
-    let currentGroup: number[] = [];
-    let currentWordCount = 0;
+  // Pre-calculate and memoize total pages for all books to avoid massive word splitting on render hot-path
+  const bookTotalPagesMap = useMemo(() => {
+    const map: Record<string, number> = {};
+    books.forEach(book => {
+      if (!book.chapters || book.chapters.length === 0) {
+        map[book.id] = 0;
+        return;
+      }
+      const chapter = book.chapters[0];
+      if (!chapter || !chapter.paragraphs) {
+        map[book.id] = 0;
+        return;
+      }
+      
+      let totalPages = 0;
+      let currentGroupLength = 0;
+      let currentWordCount = 0;
+      const wordsPerPage = 120;
+      
+      chapter.paragraphs.forEach((p) => {
+        const wordsCount = p.textEn.split(/\s+/).filter(Boolean).length;
+        if (currentGroupLength > 0 && currentWordCount >= wordsPerPage) {
+          totalPages++;
+          currentGroupLength = 1;
+          currentWordCount = wordsCount;
+        } else {
+          currentGroupLength++;
+          currentWordCount += wordsCount;
+        }
+      });
+      
+      if (currentGroupLength > 0) {
+        totalPages++;
+      }
+      
+      map[book.id] = totalPages;
+    });
+    return map;
+  }, [books]);
 
-    chapter.paragraphs.forEach((p, idx) => {
-      const wordsCount = p.textEn.split(/\s+/).filter(Boolean).length;
-      if (currentGroup.length > 0 && currentWordCount >= wordsPerPage) {
+  // Calculate unique words read across all books based on progress (currentPage index)
+  const totalWordsRead = useMemo(() => {
+    const uniqueWordsSet = new Set<string>();
+    
+    // Helper to chunk paragraphs into pages matching ReadingView logic
+    const getBookPagesHelper = (book: Book, wordsPerPage: number = 120): number[][] => {
+      if (!book.chapters || book.chapters.length === 0) return [];
+      const chapter = book.chapters[0];
+      if (!chapter || !chapter.paragraphs) return [];
+
+      const pagesList: number[][] = [];
+      let currentGroup: number[] = [];
+      let currentWordCount = 0;
+
+      chapter.paragraphs.forEach((p, idx) => {
+        const wordsCount = p.textEn.split(/\s+/).filter(Boolean).length;
+        if (currentGroup.length > 0 && currentWordCount >= wordsPerPage) {
+          pagesList.push(currentGroup);
+          currentGroup = [idx];
+          currentWordCount = wordsCount;
+        } else {
+          currentGroup.push(idx);
+          currentWordCount += wordsCount;
+        }
+      });
+
+      if (currentGroup.length > 0) {
         pagesList.push(currentGroup);
-        currentGroup = [idx];
-        currentWordCount = wordsCount;
-      } else {
-        currentGroup.push(idx);
-        currentWordCount += wordsCount;
+      }
+
+      return pagesList;
+    };
+
+    books.forEach(b => {
+      if (b.currentPage <= 0) return;
+      const pagesList = getBookPagesHelper(b, 120);
+      const readPageCount = Math.min(b.currentPage, pagesList.length);
+      for (let i = 0; i < readPageCount; i++) {
+        const paragraphIndices = pagesList[i];
+        paragraphIndices.forEach(pIdx => {
+          const paragraph = b.chapters[0].paragraphs[pIdx];
+          if (paragraph && paragraph.textEn) {
+            const words = paragraph.textEn.split(/\s+/);
+            words.forEach(rawW => {
+              const cleanW = rawW.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'’“”巍‘’\[\]{}<>|\\+]/g, "").trim().toLowerCase();
+              if (cleanW && !/^\d+$/.test(cleanW)) {
+                uniqueWordsSet.add(cleanW);
+              }
+            });
+          }
+        });
       }
     });
 
-    if (currentGroup.length > 0) {
-      pagesList.push(currentGroup);
-    }
-
-    return pagesList;
-  };
-
-  // Calculate unique words read across all books based on progress (currentPage index)
-  const uniqueWordsSet = new Set<string>();
-  books.forEach(b => {
-    if (b.currentPage <= 0) return;
-    const pagesList = getBookPages(b, 120);
-    const readPageCount = Math.min(b.currentPage, pagesList.length);
-    for (let i = 0; i < readPageCount; i++) {
-      const paragraphIndices = pagesList[i];
-      paragraphIndices.forEach(pIdx => {
-        const paragraph = b.chapters[0].paragraphs[pIdx];
-        if (paragraph && paragraph.textEn) {
-          const words = paragraph.textEn.split(/\s+/);
-          words.forEach(rawW => {
-            const cleanW = rawW.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'’“”‘’\[\]{}<>|\\+]/g, "").trim().toLowerCase();
-            if (cleanW && !/^\d+$/.test(cleanW)) {
-              uniqueWordsSet.add(cleanW);
-            }
-          });
-        }
-      });
-    }
-  });
-
-  const totalWordsRead = uniqueWordsSet.size;
+    return uniqueWordsSet.size;
+  }, [books]);
 
   const totalReadHours = Math.floor(totalReadMinutes / 60);
   const remainingMins = totalReadMinutes % 60;
@@ -183,7 +229,7 @@ export default function LibraryTab({ books, onSelectBook, syncTrigger, isDarkMod
                     <span className={`italic ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
                       {currentlyReading.percentageCompleted === 100 
                         ? 'Bitirildi' 
-                        : `Sayfa ${currentlyReading.currentPage || 1} / ${getBookTotalPages(currentlyReading, 120)}`}
+                        : `Sayfa ${currentlyReading.currentPage || 1} / ${bookTotalPagesMap[currentlyReading.id] || 0}`}
                     </span>
                   </div>
                   <div className={`w-full h-2.5 rounded-full overflow-hidden border ${
@@ -250,59 +296,62 @@ export default function LibraryTab({ books, onSelectBook, syncTrigger, isDarkMod
 
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-5">
           {/* Loop over other books */}
-          {filteredBooks.map((book, idx) => (
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: idx * 0.05, duration: 0.3 }}
-              key={book.id}
-              onClick={() => onSelectBook(book)}
-              className="group cursor-pointer flex flex-col"
-            >
-              <div className={`aspect-[2/3] rounded-2xl overflow-hidden mb-3 shadow-xs group-hover:shadow-md transition-all relative border ${
-                isDarkMode ? 'bg-[#1A1A1E] border-[#2A2A30]' : 'bg-white border-[#FFE66D]/60'
-              }`}>
-                <img
-                  alt={book.title}
-                  className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ${
-                    book.isCompleted ? 'grayscale opacity-60' : ''
-                  }`}
-                  src={book.coverUrl}
-                />
-                <div className={`absolute top-2 right-2 px-2 py-0.5 rounded text-[10px] font-bold text-white shadow-xs ${
-                  book.level.startsWith('A') ? 'bg-[#4ECDC4]' : book.level.startsWith('B') ? 'bg-[#FF6B6B]' : 'bg-[#2D3436]'
+          {filteredBooks.map((book, idx) => {
+            const shouldAnimate = idx < 12; // Animating only first screen items to keep mobile scroll FPS locked
+            return (
+              <motion.div
+                initial={shouldAnimate ? { opacity: 0, scale: 0.96 } : false}
+                animate={shouldAnimate ? { opacity: 1, scale: 1 } : false}
+                transition={shouldAnimate ? { delay: Math.min(idx, 8) * 0.03, duration: 0.25 } : undefined}
+                key={book.id}
+                onClick={() => onSelectBook(book)}
+                className="group cursor-pointer flex flex-col"
+              >
+                <div className={`aspect-[2/3] rounded-2xl overflow-hidden mb-3 shadow-xs group-hover:shadow-md transition-all relative border ${
+                  isDarkMode ? 'bg-[#1A1A1E] border-[#2A2A30]' : 'bg-white border-[#FFE66D]/60'
                 }`}>
-                  {book.level}
-                </div>
-                {/* Heart Button */}
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    onToggleFavorite(book.id);
-                  }}
-                  className="absolute top-2 left-2 p-1.5 bg-black/45 backdrop-blur-md hover:bg-black/60 text-[#FF6B6B] rounded-xl border border-white/20 transition-all cursor-pointer shadow-sm scale-95 active:scale-90"
-                  title={book.isFavorited ? 'Favorilerden Çıkar' : 'Favorilere Ekle'}
-                >
-                  <Heart className={`w-3.5 h-3.5 ${book.isFavorited ? 'fill-[#FF6B6B]' : ''}`} />
-                </button>
-                {book.percentageCompleted === 100 && (
-                  <div className="absolute inset-x-0 bottom-0 bg-[#4ECDC4] text-[#2D3436] py-1 text-center font-bold text-[10px] tracking-wider flex items-center justify-center gap-1 shadow-sm">
-                    <span>TAMAMLANDI</span>
+                  <img
+                    alt={book.title}
+                    className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ${
+                      book.isCompleted ? 'grayscale opacity-60' : ''
+                    }`}
+                    src={book.coverUrl}
+                  />
+                  <div className={`absolute top-2 right-2 px-2 py-0.5 rounded text-[10px] font-bold text-white shadow-xs ${
+                    book.level.startsWith('A') ? 'bg-[#4ECDC4]' : book.level.startsWith('B') ? 'bg-[#FF6B6B]' : 'bg-[#2D3436]'
+                  }`}>
+                    {book.level}
                   </div>
-                )}
-              </div>
-              <h4 className={`font-headline-lg text-[15px] font-semibold group-hover:text-[#FF6B6B] transition-colors leading-tight mb-0.5 truncate ${
-                isDarkMode ? 'text-white' : 'text-gray-950'
-              }`}>
-                {book.title}
-              </h4>
-              <p className="text-gray-455 dark:text-gray-400 text-xs truncate">{book.author}</p>
-              <div className="flex items-center gap-1.5 mt-1 text-[11px] text-[#4ECDC4] font-bold">
-                <BookOpen className="w-3.5 h-3.5" />
-                <span>{getBookTotalPages(book, 120)} Sayfa</span>
-              </div>
-            </motion.div>
-          ))}
+                  {/* Heart Button */}
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      onToggleFavorite(book.id);
+                    }}
+                    className="absolute top-2 left-2 p-1.5 bg-black/45 backdrop-blur-md hover:bg-black/60 text-[#FF6B6B] rounded-xl border border-white/20 transition-all cursor-pointer shadow-sm scale-95 active:scale-90"
+                    title={book.isFavorited ? 'Favorilerden Çıkar' : 'Favorilere Ekle'}
+                  >
+                    <Heart className={`w-3.5 h-3.5 ${book.isFavorited ? 'fill-[#FF6B6B]' : ''}`} />
+                  </button>
+                  {book.percentageCompleted === 100 && (
+                    <div className="absolute inset-x-0 bottom-0 bg-[#4ECDC4] text-[#2D3436] py-1 text-center font-bold text-[10px] tracking-wider flex items-center justify-center gap-1 shadow-sm">
+                      <span>TAMAMLANDI</span>
+                    </div>
+                  )}
+                </div>
+                <h4 className={`font-headline-lg text-[15px] font-semibold group-hover:text-[#FF6B6B] transition-colors leading-tight mb-0.5 truncate ${
+                  isDarkMode ? 'text-white' : 'text-gray-950'
+                }`}>
+                  {book.title}
+                </h4>
+                <p className="text-gray-455 dark:text-gray-400 text-xs truncate">{book.author}</p>
+                <div className="flex items-center gap-1.5 mt-1 text-[11px] text-[#4ECDC4] font-bold">
+                  <BookOpen className="w-3.5 h-3.5" />
+                  <span>{bookTotalPagesMap[book.id] || 0} Sayfa</span>
+                </div>
+              </motion.div>
+            );
+          })}
         </div>
       </section>
 
