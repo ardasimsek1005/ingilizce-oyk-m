@@ -883,6 +883,36 @@ export default function QuizView({
                     </div>
                   </div>
 
+                  {/* Checkout Actions & feedback loops */}
+                  {!paymentDone ? (
+                    <button
+                      type="submit"
+                      disabled={isProcessingPayment}
+                      className="w-full py-4 bg-emerald-500 hover:bg-emerald-400 text-gray-950 rounded-xl text-xs font-bold tracking-wide transition-all flex items-center justify-center gap-2 cursor-pointer shadow-md shadow-emerald-500/20 disabled:opacity-75 font-headline-lg"
+                    >
+                      {isProcessingPayment ? (
+                        <>
+                          <RefreshCw className="w-4 h-4 animate-spin text-gray-950" />
+                          <span>Google Play ile İşleniyor...</span>
+                        </>
+                      ) : (
+                        <>
+                          <Crown className="w-4 h-4 text-gray-950 fill-gray-950" />
+                          <span>Abone Ol</span>
+                        </>
+                      )}
+                    </button>
+                  ) : (
+                    <motion.div
+                      initial={{ scale: 0.95 }}
+                      animate={{ scale: 1 }}
+                      className="w-full py-3.5 bg-emerald-500/10 border border-emerald-500 rounded-xl text-xs font-bold flex items-center justify-center gap-2 select-none"
+                    >
+                      <Check className="w-5 h-5 text-emerald-500 animate-bounce" />
+                      <span className={isDarkMode ? 'text-white' : 'text-[#2D3436]'}>Ödeme Başarılı! Premium Aktive Edildi. 🎉</span>
+                    </motion.div>
+                  )}
+
                   {/* Google Play Account Information HUD */}
                   <div className={`p-4 rounded-2xl border flex flex-col gap-2.5 transition-colors ${
                     isDarkMode ? 'bg-[#121214] border-gray-800' : 'bg-gray-50 border-gray-200'
@@ -918,36 +948,6 @@ export default function QuizView({
                   <p className="text-[10px] leading-relaxed text-gray-400 text-left font-medium select-none">
                     Satın Al butonuna tıklayarak Google Play Hizmet Şartları'nı kabul etmiş olursunuz. Aboneliğiniz, son faturalandırma döneminden en az 24 saat önce iptal edilmediği sürece otomatik olarak yenilenir ve seçtiğiniz tutar üzerinden ({checkoutTier === 'monthly' ? '99,00 TL' : '712,00 TL'}) Google Play tanımlı kartınızdan tahsil edilir. Aboneliklerinizi dilediğiniz zaman Google Play Store ayarlarınızdan yönetebilir veya iptal edebilirsiniz.
                   </p>
-
-                  {/* Checkout Actions & feedback loops */}
-                  {!paymentDone ? (
-                    <button
-                      type="submit"
-                      disabled={isProcessingPayment}
-                      className="w-full py-4 bg-emerald-500 hover:bg-emerald-400 text-gray-950 rounded-xl text-xs font-bold tracking-wide transition-all flex items-center justify-center gap-2 cursor-pointer shadow-md shadow-emerald-500/20 disabled:opacity-75 font-headline-lg"
-                    >
-                      {isProcessingPayment ? (
-                        <>
-                          <RefreshCw className="w-4 h-4 animate-spin text-gray-950" />
-                          <span>Google Play ile İşleniyor...</span>
-                        </>
-                      ) : (
-                        <>
-                          <Crown className="w-4 h-4 text-gray-950 fill-gray-950" />
-                          <span>1 Dokunuşla Abone Ol (Google Play)</span>
-                        </>
-                      )}
-                    </button>
-                  ) : (
-                    <motion.div
-                      initial={{ scale: 0.95 }}
-                      animate={{ scale: 1 }}
-                      className="w-full py-3.5 bg-emerald-500/10 border border-emerald-500 rounded-xl text-xs font-bold flex items-center justify-center gap-2 select-none"
-                    >
-                      <Check className="w-5 h-5 text-emerald-500 animate-bounce" />
-                      <span className={isDarkMode ? 'text-white' : 'text-[#2D3436]'}>Ödeme Başarılı! Premium Aktive Edildi. 🎉</span>
-                    </motion.div>
-                  )}
                 </form>
 
                 {/* Footer security badges */}
