@@ -1070,7 +1070,7 @@ export default function ReadingView({
         }`}>
           <Info className="w-4.5 h-4.5 text-[#FF6B6B] shrink-0 mt-0.5" />
           <p>
-            <b>İpucu:</b> Kelimenin Türkçe anlamı için üzerine <span className="underline decoration-[#FF6B6B] font-bold decoration-2">tek tıklayın</span>. Cümlenin Türkçe çevirisi için cümleye <span className="font-semibold underline decoration-[#4ECDC4] decoration-2">çift tıklayın</span> (paragrafı değil, sadece tıkladığınız cümleyi noktaya kadar açıklar).
+            <b>İpucu:</b> Kelimenin Türkçe anlamı için üzerine <span className="font-bold">tek tıklayın</span>. Cümlenin Türkçe çevirisi için cümleye <span className="font-semibold">çift tıklayın</span> (paragrafı değil, sadece tıkladığınız cümleyi noktaya kadar açıklar).
           </p>
         </div>
 
