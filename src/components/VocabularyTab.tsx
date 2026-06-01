@@ -5,7 +5,7 @@ import { VocabularyWord } from '../types';
 
 interface VocabularyTabProps {
   vocabulary: VocabularyWord[];
-  onStartQuiz: () => void;
+  onStartQuiz: (mode: 'saved' | 'random') => void;
   onRemoveWord: (wordId: string) => void;
   syncTrigger: () => void;
   isDarkMode?: boolean;
@@ -69,21 +69,37 @@ export default function VocabularyTab({ vocabulary, onStartQuiz, onRemoveWord, s
           Kelime Dağarcığı
         </h2>
         <p className={`text-sm mb-6 max-w-sm mx-auto font-medium ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-          Okumalarından kaydettiğin kelimeleri interaktif testlerle test et, hafızana kazı.
+          İster kendi kaydettiğin kelimelerle pratik yap, ister seviyene göre rastgele kelimeler keşfet.
         </p>
 
-        <button
-          onClick={onStartQuiz}
-          className="group relative inline-flex items-center justify-center gap-3 bg-[#FF6B6B] text-white px-8 py-3.5 rounded-full font-bold text-sm shadow-md hover:bg-[#e05a5a] transition-all transform active:scale-95 cursor-pointer shadow-[#FF6B6B]/20 animate-none"
-        >
-          <Brain className="w-5 h-5 text-[#FFE66D] fill-[#FFE66D] animate-bounce" />
-          <span>Pratik Yap</span>
-          
-          <span className="absolute -top-1.5 -right-1.5 flex h-4 w-4">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FF6B6B] opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-4 w-4 bg-[#FF6B6B] border-2 border-white"></span>
-          </span>
-        </button>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          {/* Button 1: Kelimelerimle Pratik Yap */}
+          <button
+            onClick={() => onStartQuiz('saved')}
+            className="group relative inline-flex items-center justify-center gap-2.5 bg-[#FF6B6B] text-white px-6 py-3 rounded-2xl font-bold text-xs sm:text-sm shadow-md hover:bg-[#e05a5a] transition-all transform active:scale-95 cursor-pointer shadow-[#FF6B6B]/20"
+          >
+            <Brain className="w-5 h-5 text-[#FFE66D] fill-[#FFE66D]" />
+            <span>Kelimelerimle Pratik Yap</span>
+            {vocabulary.length > 0 && (
+              <span className="bg-white/20 px-2 py-0.5 rounded-md text-[10px] font-bold">
+                {vocabulary.length}
+              </span>
+            )}
+          </button>
+
+          {/* Button 2: Rastgele Pratik Yap */}
+          <button
+            onClick={() => onStartQuiz('random')}
+            className={`group inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-2xl font-bold text-xs sm:text-sm shadow-md transition-all transform active:scale-95 cursor-pointer border ${
+              isDarkMode 
+                ? 'bg-[#2D3436] border-[#343A40] text-white hover:bg-[#3E4446]' 
+                : 'bg-[#FFE66D]/20 border-[#FFE66D] text-[#2D3436] hover:bg-[#FFE66D]/35'
+            }`}
+          >
+            <Sparkles className="w-5 h-5 text-[#FF6B6B] fill-[#FF6B6B]" />
+            <span>Rastgele Pratik Yap</span>
+          </button>
+        </div>
       </section>
 
       {/* Vocabulary Search controls */}

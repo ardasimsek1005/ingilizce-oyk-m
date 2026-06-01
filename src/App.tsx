@@ -30,6 +30,7 @@ const getDaysDifference = (dateStr1: string, dateStr2: string) => {
 
 export default function App() {
   const [currentTab, setCurrentTab] = useState<string>('library'); // 'library' | 'vocabulary' | 'profile' | 'quiz'
+  const [quizMode, setQuizMode] = useState<'saved' | 'random'>('saved');
   const [showPaywallInQuiz, setShowPaywallInQuiz] = useState<boolean>(false);
   const [activeReadingBook, setActiveReadingBook] = useState<Book | null>(null);
   const [googleClientId, setGoogleClientId] = useState<string>('');
@@ -1009,7 +1010,8 @@ export default function App() {
                 {currentTab === 'vocabulary' && (
                   <VocabularyTab
                     vocabulary={vocabulary}
-                    onStartQuiz={() => {
+                    onStartQuiz={(mode) => {
+                      setQuizMode(mode);
                       setShowPaywallInQuiz(false);
                       setCurrentTab('quiz');
                     }}
@@ -1024,6 +1026,7 @@ export default function App() {
                     stats={stats}
                     vocabulary={vocabulary}
                     books={books}
+                    quizMode={quizMode}
                     initiallyShowPaywall={showPaywallInQuiz}
                     onAnswerCorrect={handleAnswerCorrect}
                     onAnswerIncorrect={handleAnswerIncorrect}

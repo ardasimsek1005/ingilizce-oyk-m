@@ -8,6 +8,7 @@ interface QuizViewProps {
   stats: UserStats;
   vocabulary: VocabularyWord[];
   books: Book[];
+  quizMode: 'saved' | 'random';
   initiallyShowPaywall?: boolean;
   onAnswerCorrect: () => void;
   onAnswerIncorrect: () => void;
@@ -392,11 +393,101 @@ const generateVocabularyQuiz = (vocabList: VocabularyWord[], books: Book[]): Qui
   });
 };
 
+const generateRandomQuizForLevel = (level: 'A1' | 'A2' | 'B1' | 'B2' | 'C1', books: Book[]): QuizQuestion[] => {
+  // 1. Gather all words from all books of the specified level
+  const wordPool: { en: string; tr: string; level: string; exampleEn?: string; exampleTr?: string }[] = [];
+  const seenWords = new Set<string>();
+  
+  const booksAtLevel = books.filter(b => b.level === level);
+  booksAtLevel.forEach(book => {
+    book.chapters.forEach(chapter => {
+      chapter.paragraphs.forEach(p => {
+        if (p.words) {
+          p.words.forEach(w => {
+            const key = w.en.toLowerCase().trim();
+            if (!seenWords.has(key) && !isProperNoun(w.en) && w.en.length > 2) {
+              seenWords.add(key);
+              
+              // Try to find a context sentence from the paragraph without lookbehinds (safari friendly)
+              let contextEn = '';
+              let contextTr = '';
+              const sentencesEn = p.textEn.split(/[.!?]/).map(s => s.trim()).filter(Boolean);
+              const sentencesTr = p.textTr.split(/[.!?]/).map(s => s.trim()).filter(Boolean);
+              
+              for (let i = 0; i < sentencesEn.length; i++) {
+                const cleanSent = sentencesEn[i].toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'’“”]/g, " ");
+                const words = cleanSent.split(/\s+/);
+                if (words.includes(key)) {
+                  contextEn = sentencesEn[i] + '.';
+                  contextTr = sentencesTr[i] || p.textTr;
+                  break;
+                }
+              }
+              
+              if (!contextEn && sentencesEn.length > 0) {
+                contextEn = sentencesEn[0] + '.';
+                contextTr = sentencesTr[0] || p.textTr;
+              }
+              
+              wordPool.push({
+                en: w.en,
+                tr: w.tr,
+                level: `${level} Seviyesi`,
+                exampleEn: contextEn,
+                exampleTr: contextTr
+              });
+            }
+          });
+        }
+      });
+    });
+  });
+  
+  // If the pool is too small, fallback to other levels
+  if (wordPool.length < 15) {
+    books.forEach(book => {
+      book.chapters.forEach(chapter => {
+        chapter.paragraphs.forEach(p => {
+          if (p.words) {
+            p.words.forEach(w => {
+              const key = w.en.toLowerCase().trim();
+              if (!seenWords.has(key) && !isProperNoun(w.en) && w.en.length > 2) {
+                seenWords.add(key);
+                wordPool.push({
+                  en: w.en,
+                  tr: w.tr,
+                  level: `${book.level} Seviyesi`
+                });
+              }
+            });
+          }
+        });
+      });
+    });
+  }
+  
+  // Select 15 random words from the pool
+  const selectedWords = [...wordPool].sort(() => 0.5 - Math.random()).slice(0, 15);
+  
+  // Transform selected words into VocabularyWord structure for the existing generateVocabularyQuiz function
+  const vocabWords: VocabularyWord[] = selectedWords.map((item, idx) => ({
+    id: `rand_word_${idx}_${Date.now()}`,
+    word: item.en,
+    translation: item.tr,
+    level: item.level,
+    exampleEn: item.exampleEn,
+    exampleTr: item.exampleTr,
+    savedAt: new Date().toISOString()
+  }));
+  
+  return generateVocabularyQuiz(vocabWords, books);
+};
 
 export default function QuizView({
   stats,
   vocabulary,
   books,
+  quizMode,
   initiallyShowPaywall = false,
   onAnswerCorrect,
   onAnswerIncorrect,
@@ -420,7 +511,21 @@ export default function QuizView({
   const [isProcessingPayment, setIsProcessingPayment] = useState(false);
   const [paymentDone, setPaymentDone] = useState(false);
 
-  const [questions] = useState<QuizQuestion[]>(() => generateVocabularyQuiz(vocabulary, books));
+  const [questions] = useState<QuizQuestion[]>(() => {
+    if (quizMode === 'random') {
+      // Find active CEFR level
+      const activeBooks = books.filter(b => b.currentPage > 0 || b.percentageCompleted > 0);
+      const userLevel: 'A1' | 'A2' | 'B1' | 'B2' | 'C1' = activeBooks.length === 0
+        ? 'A1'
+        : activeBooks.reduce((acc, book) => {
+            const levelOrder = { 'A1': 1, 'A2': 2, 'B1': 3, 'B2': 4, 'C1': 5 };
+            return levelOrder[book.level] > levelOrder[acc] ? book.level : acc;
+          }, 'A1' as 'A1' | 'A2' | 'B1' | 'B2' | 'C1');
+      return generateRandomQuizForLevel(userLevel, books);
+    } else {
+      return generateVocabularyQuiz(vocabulary, books);
+    }
+  });
   const activeQuestion = questions[currentQuestionIdx];
 
   const autoProceedTimeoutRef = React.useRef<any>(null);
@@ -527,7 +632,7 @@ export default function QuizView({
       </AnimatePresence>
 
       {/* QUIZ COMPLETED VIEW RESULTS SCREEN replaces standard browser alert() */}
-      {questions.length < 3 && !showSubscriptionPanel ? (
+      {quizMode === 'saved' && questions.length < 3 && !showSubscriptionPanel ? (
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -651,7 +756,7 @@ export default function QuizView({
                 >
                   {/* Question Index Progress Label */}
                   <div className="flex justify-between items-center text-xs text-gray-400 font-bold tracking-wider mb-3 font-headline-lg">
-                    <span>BOOSTER SINAVI</span>
+                    <span>{quizMode === 'random' ? `RASTGELE PRATİK (${activeQuestion?.level || ''})` : 'KELİMELERİMLE PRATİK'}</span>
                     <span className="text-[#FF6B6B]">SORU {currentQuestionIdx + 1} / {questions.length}</span>
                   </div>
 
