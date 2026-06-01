@@ -9,16 +9,16 @@ interface BottomNavProps {
 
 export default function BottomNav({ currentTab, onTabChange, isDarkMode }: BottomNavProps) {
   return (
-    <nav className={`fixed bottom-0 left-0 w-full flex justify-around items-center py-3 border-t z-50 transition-colors duration-200 backdrop-blur-md ${
+    <nav className={`fixed bottom-0 left-0 w-full flex justify-center items-center py-3 border-t z-50 transition-colors duration-200 backdrop-blur-md ${
       isDarkMode 
         ? 'bg-[#121214]/95 border-[#2A2A30] shadow-[0_-10px_25px_rgba(0,0,0,0.3)]' 
         : 'bg-white/90 border-[#FFE66D]/80 shadow-[0_-10px_25px_rgba(255,107,107,0.04)]'
     }`}>
-      <div className="w-full max-w-[680px] mx-auto flex justify-around items-center px-2">
+      <div className="w-full max-w-[680px] mx-auto grid grid-cols-4 items-center px-2">
         {/* Library Tab */}
         <button
           onClick={() => onTabChange('library')}
-          className={`flex flex-col items-center justify-center px-3 py-1 transition-all ${
+          className={`w-full flex flex-col items-center justify-center py-1 transition-all cursor-pointer ${
             currentTab === 'library'
               ? 'text-[#FF6B6B]'
               : 'text-gray-400 hover:text-[#4ECDC4]'
@@ -31,7 +31,7 @@ export default function BottomNav({ currentTab, onTabChange, isDarkMode }: Botto
         {/* Vocabulary Tab */}
         <button
           onClick={() => onTabChange('vocabulary')}
-          className={`flex flex-col items-center justify-center px-3 py-1 transition-all ${
+          className={`w-full flex flex-col items-center justify-center py-1 transition-all cursor-pointer ${
             currentTab === 'vocabulary' || currentTab === 'quiz'
               ? 'text-[#FF6B6B]'
               : 'text-gray-400 hover:text-[#4ECDC4]'
@@ -44,7 +44,7 @@ export default function BottomNav({ currentTab, onTabChange, isDarkMode }: Botto
         {/* Favorites Tab */}
         <button
           onClick={() => onTabChange('favorites')}
-          className={`flex flex-col items-center justify-center px-3 py-1 transition-all ${
+          className={`w-full flex flex-col items-center justify-center py-1 transition-all cursor-pointer ${
             currentTab === 'favorites'
               ? 'text-[#F59E0B]'
               : 'text-gray-400 hover:text-[#F59E0B]'
@@ -57,7 +57,7 @@ export default function BottomNav({ currentTab, onTabChange, isDarkMode }: Botto
         {/* Profile Tab */}
         <button
           onClick={() => onTabChange('profile')}
-          className={`flex flex-col items-center justify-center px-3 py-1 transition-all ${
+          className={`w-full flex flex-col items-center justify-center py-1 transition-all cursor-pointer ${
             currentTab === 'profile'
               ? 'text-[#FF6B6B]'
               : 'text-gray-400 hover:text-[#4ECDC4]'
