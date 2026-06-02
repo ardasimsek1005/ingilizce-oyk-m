@@ -18,6 +18,7 @@ interface QuizViewProps {
   syncTrigger: () => void;
   isDarkMode?: boolean;
   onUnlockBadge?: (id: string) => void;
+  refillCountdown: string;
 }
 
 const PROPER_NAMES_SET = new Set([
@@ -498,6 +499,7 @@ export default function QuizView({
   syncTrigger,
   isDarkMode,
   onUnlockBadge,
+  refillCountdown,
 }: QuizViewProps) {
   // Questions navigation & status structures
   const [currentQuestionIdx, setCurrentQuestionIdx] = useState(0);
@@ -806,7 +808,7 @@ export default function QuizView({
           !showSubscriptionPanel && (
             <div className="space-y-6">
               {/* Quiz Screen Header HUD */}
-              <div className={`flex justify-start items-center border rounded-2xl p-4 shadow-3xs transition-colors ${
+              <div className={`flex justify-between items-center border rounded-2xl p-4 shadow-3xs transition-colors ${
                 isDarkMode ? 'bg-[#1A1A1E] border-[#2A2A30]' : 'bg-white border-[#FFE66D]'
               }`}>
                 <button
@@ -819,6 +821,19 @@ export default function QuizView({
                 >
                   ÇÖZÜMDEN ÇIK
                 </button>
+
+                {/* Lives Indicator in Quiz HUD */}
+                <div className="flex items-center gap-1.5 px-3 py-1.5 bg-[#FF6B6B]/10 border border-[#FF6B6B]/20 rounded-full font-bold" title="Can Bilgisi">
+                  <Heart className={`w-3.5 h-3.5 text-[#FF6B6B] ${stats?.isPremium ? 'fill-[#FF6B6B] animate-pulse' : 'fill-[#FF6B6B]'}`} />
+                  <span className="text-xs text-[#FF6B6B] font-mono leading-none">
+                    {stats?.isPremium ? '∞' : (stats?.hearts ?? 5)}
+                  </span>
+                  {!stats?.isPremium && stats?.hearts !== undefined && stats?.hearts !== null && Number(stats.hearts) < 5 && refillCountdown && (
+                    <span className="text-[10px] text-gray-500 font-normal leading-none ml-0.5">
+                      ({refillCountdown})
+                    </span>
+                  )}
+                </div>
               </div>
 
               {/* RENDER PROGRESS BAR SOUCE LINE */}
@@ -1036,8 +1051,12 @@ export default function QuizView({
                 <h3 className="font-headline-lg text-2xl font-bold tracking-tight mb-1 text-white">
                   {stats.hearts <= 0 ? 'Canınız Kalmadı!' : 'İngilizce Öyküm Premium Erişimi'}
                 </h3>
-                <p className="text-xs text-gray-400 leading-relaxed font-semibold">
-                  Sınırsız can, interaktif kelime pratikleri, ssl şifreli ödeme altyapısı ve düşük gecikmeli veri senkronizasyonu sizi bekliyor!
+                 <p className="text-xs text-gray-400 leading-relaxed font-semibold">
+                  {stats.hearts <= 0 && refillCountdown ? (
+                    <span className="text-[#FF6B6B] font-bold">Bir sonraki can {refillCountdown} içinde dolacak.</span>
+                  ) : (
+                    'Sınırsız can, interaktif kelime pratikleri, ssl şifreli ödeme altyapısı ve düşük gecikmeli veri senkronizasyonu sizi bekliyor!'
+                  )}
                 </p>
               </div>
 

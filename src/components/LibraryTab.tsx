@@ -125,7 +125,9 @@ const getBookCategory = (bookId: string): 'horror_mystery' | 'kids_fables' | 'cl
     'frog_prince', 'stone_soup', 'star_money', 'city_musicians', 'crow_pitcher', 'ant_grasshopper', 'lion_mouse',
     'town_country_mouse', 'wind_sun', 'rumpelstiltskin', 'snow_queen', 'pinocchio', 'princess_pea', 'thumbelina',
     'boy_cried_wolf', 'ali_baba', 'hansel_gretel', 'sleeping_beauty', 'rapunzel', 'cinderella', 'jack_beanstalk',
-    'aladdin', 'goldilocks', 'red_riding_hood', 'ugly_duckling', 'little_mermaid', 'three_pigs', 'snow_white', 'beauty_beast'
+    'aladdin', 'goldilocks', 'red_riding_hood', 'ugly_duckling', 'little_mermaid', 'three_pigs', 'snow_white', 'beauty_beast',
+    'peter_wolf', 'tin_soldier', 'magic_pot', 'wolf_kids', 'brave_tailor', 'selfish_giant', 'nightingale', 'tinderbox',
+    'wild_swans', 'goose_girl', 'fox_grapes', 'golden_goose', 'elves_shoemaker', 'emperors_clothes', 'happy_prince'
   ];
 
   const lowerId = bookId.toLowerCase();

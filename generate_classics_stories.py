@@ -92,7 +92,7 @@ else:
     expanded_data = {}
 
 def call_gemini(prompt, system_instruction=""):
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key={api_key}"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-lite-latest:generateContent?key={api_key}"
     headers = {"Content-Type": "application/json"}
     
     data = {

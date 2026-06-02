@@ -9,9 +9,9 @@ public class MainActivity extends BridgeActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         
-        // Force WebView to bypass local cache and always load fresh assets from APK
+        // Restore default WebView caching to ensure high performance loading from local assets
         if (this.bridge != null && this.bridge.getWebView() != null) {
-            this.bridge.getWebView().getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
+            this.bridge.getWebView().getSettings().setCacheMode(WebSettings.LOAD_DEFAULT);
         }
     }
 }

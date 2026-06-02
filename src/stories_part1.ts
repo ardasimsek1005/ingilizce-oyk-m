@@ -2528,7 +2528,7 @@ export const STORIES_PART1: RawStory[] = [
   },
 
   // ==================== LEVEL A2 (9 Stories) ====================
-                                {
+                                      {
     id: 'pinocchio',
     title: "Pinocchio",
     author: 'Carlo Collodi',
@@ -2630,7 +2630,7 @@ export const STORIES_PART1: RawStory[] = [
       "disappear": "kaybolmak"
     }
   },
-                                {
+                                      {
     id: 'beauty_beast',
     title: "Beauty and the Beast",
     author: 'Gabrielle-Suzanne de Villeneuve',
@@ -2735,7 +2735,7 @@ export const STORIES_PART1: RawStory[] = [
       "determination": "kararlılık"
     }
   },
-                                {
+                                      {
     id: 'little_mermaid',
     title: "The Little Mermaid",
     author: 'Hans Christian Andersen',
@@ -2836,7 +2836,7 @@ export const STORIES_PART1: RawStory[] = [
       "danger": "tehlike"
     }
   },
-                                {
+                                      {
     id: 'aladdin',
     title: "Aladdin and the Lamp",
     author: 'Antoine Galland',
@@ -2944,7 +2944,7 @@ export const STORIES_PART1: RawStory[] = [
       "trap": "mahsur kalmak"
     }
   },
-                            {
+                                  {
     id: 'princess_pea',
     title: "The Princess and the Pea",
     author: 'Hans Christian Andersen',
@@ -3045,7 +3045,7 @@ export const STORIES_PART1: RawStory[] = [
       "peaceful": "huzurlu"
     }
   },
-                            {
+                                  {
     id: 'thumbelina',
     title: "Thumbelina",
     author: 'Hans Christian Andersen',
@@ -3149,7 +3149,7 @@ export const STORIES_PART1: RawStory[] = [
       "queen": "kraliçe"
     }
   },
-                            {
+                                  {
     id: 'robin_hood',
     title: "Robin Hood",
     author: 'Howard Pyle',
@@ -3257,7 +3257,7 @@ export const STORIES_PART1: RawStory[] = [
       "royal": "kraliyet"
     }
   },
-                            {
+                                  {
     id: 'alice_wonderland',
     title: "Alice in Wonderland",
     author: 'Lewis Carroll',
@@ -3360,7 +3360,7 @@ export const STORIES_PART1: RawStory[] = [
       "edge": "kenar"
     }
   },
-                            {
+                                  {
     id: 'boy_cried_wolf',
     title: "The Boy Who Cried Wolf",
     author: 'Aesop',
@@ -3468,7 +3468,7 @@ export const STORIES_PART1: RawStory[] = [
       "trust": "güven"
     }
   },
-                        {
+                              {
     id: 'fox_grapes',
     title: "The Fox and the Grapes",
     author: 'Aesop',
@@ -3572,7 +3572,7 @@ export const STORIES_PART1: RawStory[] = [
       "lesson": "ders"
     }
   },
-                      {
+                            {
     id: 'ali_baba',
     title: "Ali Baba and the Forty Thieves",
     author: 'Antoine Galland',
@@ -3675,7 +3675,7 @@ export const STORIES_PART1: RawStory[] = [
       "peaceful": "huzurlu"
     }
   },
-                      {
+                            {
     id: 'sinbad',
     title: "Sinbad the Sailor",
     author: 'Antoine Galland',
@@ -3777,7 +3777,7 @@ export const STORIES_PART1: RawStory[] = [
       "courage": "cesaret"
     }
   },
-                      {
+                            {
     id: 'king_midas',
     title: "King Midas and the Golden Touch",
     author: 'Nathaniel Hawthorne',
@@ -3879,7 +3879,7 @@ export const STORIES_PART1: RawStory[] = [
       "joy": "neşe, sevinç"
     }
   },
-                        {
+                              {
     id: 'peter_pan',
     title: "Peter Pan",
     author: 'J. M. Barrie',
@@ -3981,7 +3981,7 @@ export const STORIES_PART1: RawStory[] = [
       "cycle": "döngü"
     }
   },
-            {
+                  {
     id: 'lion_mouse',
     title: "The Lion and the Mouse",
     author: 'Aesop',
@@ -4050,7 +4050,7 @@ export const STORIES_PART1: RawStory[] = [
       "peace": "barış"
     }
   },
-            {
+                  {
     id: 'ant_grasshopper',
     title: "The Ant and the Grasshopper",
     author: 'Aesop',
@@ -4121,7 +4121,7 @@ export const STORIES_PART1: RawStory[] = [
       "organize": "düzenlemek"
     }
   },
-            {
+                  {
     id: 'town_country_mouse',
     title: "The Town Mouse and the Country Mouse",
     author: 'Aesop',
@@ -4193,7 +4193,7 @@ export const STORIES_PART1: RawStory[] = [
       "field": "tarla"
     }
   },
-            {
+                  {
     id: 'crow_pitcher',
     title: "The Crow and the Pitcher",
     author: 'Aesop',
@@ -4264,7 +4264,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "macera"
     }
   },
-            {
+                  {
     id: 'wind_sun',
     title: "The North Wind and the Sun",
     author: 'Aesop',
@@ -4332,7 +4332,7 @@ export const STORIES_PART1: RawStory[] = [
       "kindness": "iyilik"
     }
   },
-            {
+                  {
     id: 'gingerbread_man',
     title: "The Gingerbread Man",
     author: 'Traditional',
@@ -4399,7 +4399,7 @@ export const STORIES_PART1: RawStory[] = [
       "finish": "bitirmek"
     }
   },
-            {
+                  {
     id: 'chicken_little',
     title: "Chicken Little",
     author: 'Traditional',
@@ -4469,7 +4469,7 @@ export const STORIES_PART1: RawStory[] = [
       "exit": "çıkış"
     }
   },
-            {
+                  {
     id: 'enormous_turnip',
     title: "The Enormous Turnip",
     author: 'Traditional',
@@ -4535,7 +4535,7 @@ export const STORIES_PART1: RawStory[] = [
       "team": "takım"
     }
   },
-            {
+                  {
     id: 'three_billy_goats',
     title: "Three Billy Goats Gruff",
     author: 'Traditional',
@@ -4604,7 +4604,7 @@ export const STORIES_PART1: RawStory[] = [
       "happy": "mutlu"
     }
   },
-            {
+                  {
     id: 'fisherman_wife',
     title: "The Fisherman and His Wife",
     author: 'Brothers Grimm',
@@ -4672,7 +4672,7 @@ export const STORIES_PART1: RawStory[] = [
       "thankful": "minnettar"
     }
   },
-            {
+                  {
     id: 'little_red_hen',
     title: "The Little Red Hen",
     author: 'Traditional',
@@ -4738,7 +4738,7 @@ export const STORIES_PART1: RawStory[] = [
       "stomach": "mide"
     }
   },
-            {
+                  {
     id: 'frog_prince',
     title: "The Frog Prince",
     author: 'Brothers Grimm',
@@ -4807,7 +4807,7 @@ export const STORIES_PART1: RawStory[] = [
       "travel": "seyahat etmek"
     }
   },
-            {
+                  {
     id: 'stone_soup',
     title: "Stone Soup",
     author: 'Traditional',
@@ -4876,7 +4876,7 @@ export const STORIES_PART1: RawStory[] = [
       "generous": "cömert"
     }
   },
-            {
+                  {
     id: 'star_money',
     title: "The Star Money",
     author: 'Brothers Grimm',
@@ -4948,7 +4948,7 @@ export const STORIES_PART1: RawStory[] = [
       "safe": "güvende"
     }
   },
-            {
+                  {
     id: 'city_musicians',
     title: "The Bremen Town Musicians",
     author: 'Brothers Grimm',
@@ -5019,7 +5019,7 @@ export const STORIES_PART1: RawStory[] = [
       "smile": "gülümsemek"
     }
   },
-            {
+                  {
     id: 'peter_rabbit',
     title: "The Tale of Peter Rabbit",
     author: 'Beatrix Potter',
@@ -5090,7 +5090,7 @@ export const STORIES_PART1: RawStory[] = [
       "proud": "gururlu"
     }
   },
-            {
+                  {
     id: 'bambi',
     title: "Bambi",
     author: 'Felix Salten',
@@ -5160,7 +5160,7 @@ export const STORIES_PART1: RawStory[] = [
       "noble": "soylu"
     }
   },
-            {
+                  {
     id: 'black_beauty',
     title: "Black Beauty",
     author: 'Anna Sewell',
@@ -5228,7 +5228,7 @@ export const STORIES_PART1: RawStory[] = [
       "surprises": "sürprizler"
     }
   },
-            {
+                  {
     id: 'hans_brinker',
     title: "Hans Brinker",
     author: 'Mary Mapes Dodge',
@@ -5295,7 +5295,7 @@ export const STORIES_PART1: RawStory[] = [
       "gratitude": "minnet"
     }
   },
-            {
+                  {
     id: 'five_children_it',
     title: "Five Children and It",
     author: 'E. Nesbit',
@@ -5365,7 +5365,7 @@ export const STORIES_PART1: RawStory[] = [
       "secret": "sır"
     }
   },
-            {
+                  {
     id: 'railway_children',
     title: "The Railway Children",
     author: 'E. Nesbit',
@@ -5434,7 +5434,7 @@ export const STORIES_PART1: RawStory[] = [
       "realize": "fark etmek"
     }
   },
-            {
+                  {
     id: 'swiss_family',
     title: "The Swiss Family Robinson",
     author: 'Johann David Wyss',
@@ -5503,7 +5503,7 @@ export const STORIES_PART1: RawStory[] = [
       "pack": "eşyaları toplamak"
     }
   },
-            {
+                  {
     id: 'doctor_dolittle',
     title: "Doctor Dolittle",
     author: 'Hugh Lofting',
@@ -5570,7 +5570,7 @@ export const STORIES_PART1: RawStory[] = [
       "famous": "ünlü"
     }
   },
-            {
+                  {
     id: 'sleepy_hollow',
     title: "The Legend of Sleepy Hollow",
     author: 'Washington Irving',
@@ -5640,7 +5640,7 @@ export const STORIES_PART1: RawStory[] = [
       "victim": "kurban"
     }
   },
-            {
+                  {
     id: 'rip_van_winkle',
     title: "Rip Van Winkle",
     author: 'Washington Irving',
@@ -5712,7 +5712,7 @@ export const STORIES_PART1: RawStory[] = [
       "simple": "basit"
     }
   },
-            {
+                  {
     id: 'velveteen_rabbit',
     title: "The Velveteen Rabbit",
     author: 'Margery Williams',
@@ -5784,7 +5784,7 @@ export const STORIES_PART1: RawStory[] = [
       "arrival": "varış"
     }
   },
-            {
+                  {
     id: 'water_babies',
     title: "The Water-Babies",
     author: 'Charles Kingsley',
@@ -5854,7 +5854,7 @@ export const STORIES_PART1: RawStory[] = [
       "peace": "huzur"
     }
   },
-            {
+                  {
     id: 'nutcracker',
     title: "The Nutcracker",
     author: 'E. T. A. Hoffmann',
@@ -5915,7 +5915,7 @@ export const STORIES_PART1: RawStory[] = [
       "protect": "korumak",
       "miracle": "mucize",
       "strength": "güç",
-      "normal": "normal",
+      "normal": "Özel İsim",
       "spell": "büyü",
       "secret": "sır",
       "familiar": "tanıdık",
@@ -5923,7 +5923,7 @@ export const STORIES_PART1: RawStory[] = [
       "real": "gerçek"
     }
   },
-            {
+                  {
     id: 'blue_bird',
     title: "The Blue Bird",
     author: 'Maurice Maeterlinck',
@@ -5994,7 +5994,7 @@ export const STORIES_PART1: RawStory[] = [
       "thankful": "minnettar"
     }
   },
-            {
+                  {
     id: 'tom_thumb',
     title: "Tom Thumb",
     author: 'Brothers Grimm',
@@ -6066,7 +6066,7 @@ export const STORIES_PART1: RawStory[] = [
       "kindness": "iyilik"
     }
   },
-            {
+                  {
     id: 'little_match_girl',
     title: "The Little Match Girl",
     author: 'Hans Christian Andersen',
@@ -6137,7 +6137,7 @@ export const STORIES_PART1: RawStory[] = [
       "silent": "sessiz"
     }
   },
-      {
+            {
     id: 'horror_black_cat',
     title: "The Black Cat",
     author: 'Edgar Allan Poe',
@@ -6208,7 +6208,7 @@ export const STORIES_PART1: RawStory[] = [
       "secret": "sır"
     }
   },
-      {
+            {
     id: 'horror_signalman',
     title: "The Signalman",
     author: 'Charles Dickens',
@@ -6276,7 +6276,7 @@ export const STORIES_PART1: RawStory[] = [
       "shocked": "şok olmuş"
     }
   },
-      {
+            {
     id: 'horror_red_headed_league',
     title: "The Red-Headed League",
     author: 'Arthur Conan Doyle',
@@ -6345,7 +6345,7 @@ export const STORIES_PART1: RawStory[] = [
       "partner": "ortak"
     }
   },
-      {
+            {
     id: 'horror_blue_carbuncle',
     title: "The Blue Carbuncle",
     author: 'Arthur Conan Doyle',
@@ -6416,7 +6416,7 @@ export const STORIES_PART1: RawStory[] = [
       "secret": "sır"
     }
   },
-      {
+            {
     id: 'horror_young_goodman_brown',
     title: "Young Goodman Brown",
     author: 'Nathaniel Hawthorne',
@@ -6484,7 +6484,7 @@ export const STORIES_PART1: RawStory[] = [
       "peace": "huzur"
     }
   },
-      {
+            {
     id: 'horror_phantom_rickshaw',
     title: "The Phantom Rickshaw",
     author: 'Rudyard Kipling',
@@ -6551,7 +6551,7 @@ export const STORIES_PART1: RawStory[] = [
       "breath": "nefes"
     }
   },
-      {
+            {
     id: 'horror_draculas_guest',
     title: "Dracula's Guest",
     author: 'Bram Stoker',
@@ -6620,7 +6620,7 @@ export const STORIES_PART1: RawStory[] = [
       "journey": "yolculuk"
     }
   },
-      {
+            {
     id: 'horror_devil_tom_walker',
     title: "The Devil and Tom Walker",
     author: 'Washington Irving',
@@ -6691,7 +6691,7 @@ export const STORIES_PART1: RawStory[] = [
       "sorrow": "keder"
     }
   },
-      {
+            {
     id: 'horror_monkeys_paw',
     title: "The Monkey's Paw",
     author: 'W. W. Jacobs',
@@ -6761,7 +6761,7 @@ export const STORIES_PART1: RawStory[] = [
       "fate": "kader"
     }
   },
-      {
+            {
     id: 'horror_oval_portrait',
     title: "The Oval Portrait",
     author: 'Edgar Allan Poe',
@@ -6829,7 +6829,7 @@ export const STORIES_PART1: RawStory[] = [
       "sadness": "hüzün"
     }
   },
-      {
+            {
     id: 'horror_house_of_usher',
     title: "The Fall of the House of Usher",
     author: 'Edgar Allan Poe',
@@ -6899,7 +6899,7 @@ export const STORIES_PART1: RawStory[] = [
       "nightmare": "kabus"
     }
   },
-      {
+            {
     id: 'horror_cask_amontillado',
     title: "The Cask of Amontillado",
     author: 'Edgar Allan Poe',
@@ -6971,7 +6971,7 @@ export const STORIES_PART1: RawStory[] = [
       "memory": "hafıza"
     }
   },
-      {
+            {
     id: 'horror_speckled_band',
     title: "The Speckled Band",
     author: 'Arthur Conan Doyle',
@@ -7043,7 +7043,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "macera"
     }
   },
-      {
+            {
     id: 'horror_yellow_wallpaper',
     title: "The Yellow Wallpaper",
     author: 'Charlotte Perkins Gilman',
@@ -7114,7 +7114,7 @@ export const STORIES_PART1: RawStory[] = [
       "prisoner": "mahkum"
     }
   },
-      {
+            {
     id: 'horror_willows',
     title: "The Willows",
     author: 'Algernon Blackwood',
@@ -7183,7 +7183,7 @@ export const STORIES_PART1: RawStory[] = [
       "secret": "sır"
     }
   },
-      {
+            {
     id: 'horror_wendigo',
     title: "The Wendigo",
     author: 'Algernon Blackwood',
@@ -7253,7 +7253,7 @@ export const STORIES_PART1: RawStory[] = [
       "secret": "sır"
     }
   },
-      {
+            {
     id: 'horror_king_in_yellow',
     title: "The King in Yellow",
     author: 'Robert W. Chambers',
@@ -7322,7 +7322,7 @@ export const STORIES_PART1: RawStory[] = [
       "puppet": "kukla"
     }
   },
-      {
+            {
     id: 'horror_vampyre',
     title: "The Vampyre",
     author: 'John William Polidori',
@@ -7393,7 +7393,7 @@ export const STORIES_PART1: RawStory[] = [
       "ceremony": "tören"
     }
   },
-      {
+            {
     id: 'horror_horla',
     title: "The Horla",
     author: 'Guy de Maupassant',
@@ -7461,7 +7461,7 @@ export const STORIES_PART1: RawStory[] = [
       "suffer": "acı çekmek"
     }
   },
-      {
+            {
     id: 'horror_green_tea',
     title: "Green Tea",
     author: 'Sheridan Le Fanu',
@@ -7531,7 +7531,7 @@ export const STORIES_PART1: RawStory[] = [
       "cruel": "acımasız"
     }
   },
-      {
+            {
     id: 'horror_sandman',
     title: "The Sandman",
     author: 'E. T. A. Hoffmann',
@@ -7602,7 +7602,7 @@ export const STORIES_PART1: RawStory[] = [
       "madness": "delilik"
     }
   },
-      {
+            {
     id: 'horror_birth_mark',
     title: "The Birth-Mark",
     author: 'Nathaniel Hawthorne',
@@ -7671,7 +7671,7 @@ export const STORIES_PART1: RawStory[] = [
       "absent": "yok"
     }
   },
-      {
+            {
     id: 'horror_masque_red_death',
     title: "The Masque of the Red Death",
     author: 'Edgar Allan Poe',
@@ -7743,7 +7743,7 @@ export const STORIES_PART1: RawStory[] = [
       "fate": "kader"
     }
   },
-      {
+            {
     id: 'horror_gold_bug',
     title: "The Gold-Bug",
     author: 'Edgar Allan Poe',
@@ -7810,7 +7810,7 @@ export const STORIES_PART1: RawStory[] = [
       "fortune": "servet"
     }
   },
-      {
+            {
     id: 'horror_moonstone',
     title: "The Moonstone",
     author: 'Wilkie Collins',
@@ -7880,7 +7880,7 @@ export const STORIES_PART1: RawStory[] = [
       "reveal": "ortaya çıkarmak"
     }
   },
-    {
+          {
     id: 'classic_tom_sawyer',
     title: "The Adventures of Tom Sawyer",
     author: 'Mark Twain',
@@ -7952,7 +7952,7 @@ export const STORIES_PART1: RawStory[] = [
       "hero": "kahraman"
     }
   },
-    {
+          {
     id: 'classic_oliver_twist',
     title: "Oliver Twist",
     author: 'Charles Dickens',
@@ -8022,7 +8022,7 @@ export const STORIES_PART1: RawStory[] = [
       "free": "özgür"
     }
   },
-    {
+          {
     id: 'classic_prince_pauper',
     title: "The Prince and the Pauper",
     author: 'Mark Twain',
@@ -8089,7 +8089,7 @@ export const STORIES_PART1: RawStory[] = [
       "leader": "lider"
     }
   },
-    {
+          {
     id: 'classic_kidnapped',
     title: "Kidnapped",
     author: 'Robert Louis Stevenson',
@@ -8160,7 +8160,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "macera"
     }
   },
-    {
+          {
     id: 'classic_three_musketeers',
     title: "The Three Musketeers",
     author: 'Alexandre Dumas',
@@ -8226,7 +8226,7 @@ export const STORIES_PART1: RawStory[] = [
       "legend": "efsane"
     }
   },
-    {
+          {
     id: 'classic_uncle_tom_cabin',
     title: "Uncle Tom's Cabin",
     author: 'Harriet Beecher Stowe',
@@ -8296,7 +8296,7 @@ export const STORIES_PART1: RawStory[] = [
       "peace": "huzur"
     }
   },
-    {
+          {
     id: 'classic_journey_center_earth',
     title: "Journey to the Center of the Earth",
     author: 'Jules Verne',
@@ -8365,7 +8365,7 @@ export const STORIES_PART1: RawStory[] = [
       "famous": "ünlü"
     }
   },
-    {
+          {
     id: 'classic_first_men_moon',
     title: "The First Men in the Moon",
     author: 'H. G. Wells',
@@ -8431,7 +8431,7 @@ export const STORIES_PART1: RawStory[] = [
       "forget": "unutmak"
     }
   },
-  {
+        {
     id: 'classic_captains_courageous',
     title: "Captains Courageous",
     author: 'Rudyard Kipling',
@@ -8503,9 +8503,8 @@ export const STORIES_PART1: RawStory[] = [
       "promise": "söz vermek",
       "matter": "önemli olmak"
     }
-  }
-,
-  {
+  },
+        {
     id: 'classic_mysterious_island',
     title: "The Mysterious Island",
     author: 'Jules Verne',
@@ -8575,9 +8574,8 @@ export const STORIES_PART1: RawStory[] = [
       "horizon": "ufuk",
       "adventure": "macera"
     }
-  }
-,
-  {
+  },
+        {
     id: 'classic_david_copperfield',
     title: "David Copperfield",
     author: 'Charles Dickens',
@@ -8648,6 +8646,1344 @@ export const STORIES_PART1: RawStory[] = [
       "punished": "cezalandırılmış",
       "victory": "zafer",
       "ceremony": "tören"
+    }
+  },
+      {
+    id: 'classic_great_expectations',
+    title: "Great Expectations",
+    author: 'Charles Dickens',
+    level: 'A2',
+    coverUrl: '/covers/classic_great_expectations.webp',
+    en: [
+      "I was a small boy and I lived with my sister and her husband, Joe, in a lonely place near the dark river. One cold and grey afternoon, I went to the churchyard to visit the graves of my parents. The wind was blowing hard and the trees looked like giants in the mist. Suddenly, a terrible man appeared from behind a gravestone. He wore old, dirty clothes and he had a heavy iron chain on his leg. He grabbed me by my coat and looked at me with angry, hungry eyes. He told me to be quiet or he would hurt me. I was very afraid of this strange man, so I listened to every word he said to me.",
+      "The man demanded that I bring him food and a file to cut the heavy chain from his leg. He told me he was hungry and needed help immediately. I promised to bring him some bread and a meat pie from my house as quickly as I could. I also decided to take a small metal file from Joe’s workshop to help the man. He let me go, but I felt very nervous as I ran back to the village. The cold wind bit my skin, and the tall, dark grass seemed to hide shadows that watched me walk home. I felt lonely and worried about my secret task.",
+      "When I finally reached home, I felt guilty because I had to steal food from the pantry. My sister, Mrs. Joe, was a very strict woman with a hot temper. She was busy cleaning the house, so I hid a piece of bread and a meat pie inside my clothes. I also found the metal file in the shed. I was very careful not to make any noise. My heart beat fast as I looked at Joe, who was a kind man, but he did not know about the danger outside. I went to bed early, but I could not sleep because I knew I had to return to the river in the morning.",
+      "The next morning, the sun was hidden behind dark and heavy clouds. I woke up very early while my sister was still asleep. I quickly took the food from the kitchen and ran toward the cold river. My legs felt heavy as I moved through the wet grass, and the wind made a sad sound in the trees. Every shadow looked like a scary person, and I felt like my heart was going to jump out of my chest. I wanted to turn back, but I knew the man with the iron chain was waiting for me in the dark marsh. I finally saw him near the old stone wall, and he looked weaker than the day before because he was so hungry.",
+      "He saw me and jumped up with excitement in his tired eyes. I gave him the bread, the meat pie, and the metal file. He ate the food very fast as if he had not eaten for many months. He was happy, but he also seemed to be watching for other people on the path. He used the file to work on the iron chain around his leg. The metal made a sharp, scratching noise that made me nervous. While he worked, he told me that there was another man nearby in the fog. He looked angry and scared at the same time. I wondered who this other man was and why my new friend was so afraid of him.",
+      "I turned around and saw a strange man walking in the distance. He looked very different from the man in the iron chains, but he was also dark and lonely. My heart beat even faster as I ran away back toward my house. I wanted to leave this dangerous place behind me forever. I felt bad about stealing, but I knew I could not stop the prisoner. When I arrived home, I sat down for breakfast with Joe and my sister. I felt very strange and quiet, but nobody asked me any difficult questions. I felt that my big secret was now a heavy stone inside my heart, and I did not know how to tell the truth to anyone.",
+      "Time passed slowly and I continued my life in the village. One day, a neighbor told me that a rich lady named Miss Havisham wanted to see a young boy. She lived in a large, old house called Satis House. It was a very strange place with high walls and locked gates. My sister was happy because she thought this could bring me luck. I dressed in my best clothes, even though they felt uncomfortable. When I arrived, the big front door opened slowly. I walked into the dark garden, feeling very small and nervous. The house looked sad, as if it had been waiting for something for a very long time.",
+      "I followed a servant into a room that was dark and cold. I could not see clearly, but I noticed many clocks on the wall. They all showed the same time, but they were not moving. In the middle of the room, there sat an old woman in a white wedding dress. Her hair was white, and her face was very pale. Miss Havisham looked at me with cold eyes that did not smile. Next to her stood a beautiful girl with proud eyes named Estella. Miss Havisham told Estella to play cards with me. I felt embarrassed because my hands were dirty and my clothes were poor.",
+      "Estella looked at me and said that I was a common boy. She made me feel bad because I played cards badly and my boots were not clean. Miss Havisham watched us with a strange smile on her face. After we finished the game, she told me that I could leave, but I had to come back again soon. Walking home, I felt ashamed of my home and my simple life as a blacksmith’s apprentice. I started to dream of a better life because I wanted Estella to think that I was a gentleman. I did not know that these visits would change my life forever.",
+      "Years passed and I became a young man working as a blacksmith with Joe. One day, a lawyer named Mr. Jaggers came to our village from London. He told me that I had great expectations because an unknown person had left me a large fortune. I could not believe my ears as he explained the news. I had to leave my simple life behind and go to London to become a gentleman. My heart was full of excitement and hope, but I also felt a little bit sad to leave my kind friend Joe. I started to imagine that Miss Havisham was my secret benefactor and that she wanted me to marry Estella one day.",
+      "When I arrived in the busy city of London, everything looked different and loud. I stayed with a young man named Herbert Pocket, who was very kind and helped me learn the ways of a gentleman. I learned how to dress well, how to speak clearly, and how to behave in high society. However, I often spent too much money and acted foolishly. I felt very proud of my new clothes and my expensive lifestyle. Even though I was living in a beautiful house, I often missed the quiet village life and the honest work I used to do with Joe at the smithy.",
+      "During this time, I thought often of Estella and hoped she would notice how much I had changed. I saw her sometimes when she visited London, and she was even more beautiful than before. She treated me with the same coldness, but I was still deeply in love with her. I did not realize that my new life was complicated and that I had many secrets around me. I was waiting for the day when I could finally become a true gentleman. I believed that all my dreams were going to come true, but I did not know that a big surprise was waiting for me.",
+      "One rainy night, a stranger came to my house in London. He was an old man with a rough face and gray hair. I did not recognize him at first, but then he told me the truth. He was the convict I had helped in the graveyard when I was a small boy. He told me that he had become very rich in Australia and that he was my secret benefactor. I was shocked and confused. I realized that my fortune did not come from Miss Havisham, and that I was not a gentleman by birth. My heart sank as I understood that my dreams of wealth and marriage to Estella were based on a criminal's money, not on kindness or nobility.",
+      "The convict, whose name was Magwitch, wanted to stay with me, but it was very dangerous. The police were looking for him because he had returned to England, which was against the law. I felt trapped and scared for my future. I decided to help him escape, even though I was no longer proud of my lifestyle. I learned that he had worked hard every day for years to send me money because I was the only person who had shown him any kindness. I felt guilty for being ashamed of him, but I also felt sad because my life in London was falling apart completely.",
+      "Eventually, everything changed. Magwitch was captured by the police and sent to prison, where he soon died. I lost all my money and my house in London. I became sick, and Joe came to help me recover. I finally understood that being a true gentleman comes from your heart, not from your money or clothes. I decided to return to my old life and work hard again. Later, I met Estella in the garden of Satis House. She had suffered much, and we were both older and wiser. We decided to be friends and walked away together, leaving our painful past behind us forever under the soft light of the evening sun."
+    ],
+    tr: [
+      "Küçük bir çocuktum ve kız kardeşim ve kocası Joe ile karanlık nehrin yakınındaki ıssız bir yerde yaşıyordum. Soğuk ve gri bir öğleden sonraydı, ailemin mezarlarını ziyaret etmek için mezarlığa gittim. Rüzgar şiddetle esiyordu ve ağaçlar sisin içinde devler gibi görünüyordu. Aniden, bir mezar taşının arkasından korkunç bir adam belirdi. Eski, kirli kıyafetler giyiyordu ve bacağında ağır bir demir zincir vardı. Beni ceketimden tuttu ve öfkeli, aç gözlerle bana baktı. Sessiz olmazsam bana zarar vereceğini söyledi. Bu yabancı adamdan çok korkmuştum, bu yüzden söylediği her kelimeyi dinledim.",
+      "Adam benden ona yiyecek ve bacağındaki ağır zinciri kesmek için bir eğe getirmemi talep etti. Çok aç olduğunu ve hemen yardıma ihtiyacı olduğunu söyledi. Ona evimden hızlıca biraz ekmek ve etli börek getireceğime söz verdim. Ayrıca adama yardım etmek için Joe'nun atölyesinden küçük bir metal eğe almaya karar verdim. Gitmeme izin verdi ama köye geri koşarken kendimi çok gergin hissediyordum. Soğuk rüzgar cildimi ısırıyordu ve uzun, karanlık otlar eve yürüyüşümü izleyen gölgeleri saklıyor gibiydi. Yalnız ve gizli görevim hakkında endişeli hissediyordum.",
+      "Eve sonunda ulaştığımda, kilerinden yiyecek çalmak zorunda kaldığım için suçlu hissettim. Kız kardeşim Bayan Joe, çok katı ve çabuk sinirlenen bir kadındı. Evi temizlemekle meşguldü, bu yüzden bir parça ekmek ve etli böreği kıyafetlerimin içine sakladım. Ayrıca kulübede metal eğeyi buldum. Hiç ses çıkarmamaya çok dikkat ettim. İyi bir adam olan ama dışarıdaki tehlikeden haberi olmayan Joe'ya bakarken kalbim hızla çarpıyordu. Erken yattım ama uyuyamadım çünkü sabah nehre geri dönmem gerektiğini biliyordum.",
+      "Ertesi sabah, güneş karanlık ve ağır bulutların arkasında saklıydı. Ablam hala uyurken erkenden uyandım. Mutfaktan yiyecekleri hızla aldım ve soğuk nehre doğru koştum. Islak çimlerin üzerinde yürürken bacaklarım ağırlaştı ve rüzgar ağaçların arasında hüzünlü bir ses çıkardı. Her gölge korkunç birine benziyordu ve kalbim yerinden çıkacakmış gibi hissediyordum. Geri dönmek istedim ama demir zincirli adamın karanlık bataklıkta beni beklediğini biliyordum. Sonunda onu eski taş duvarın yanında gördüm; açlıktan bir önceki günden daha zayıf görünüyordu.",
+      "Beni gördü ve yorgun gözlerindeki heyecanla ayağa fırladı. Ona ekmeği, etli böreği ve metal eğeyi verdim. Aylar boyunca yemek yememiş gibi yemeği çok hızlı bir şekilde yedi. Mutluydu ama aynı zamanda yoldaki diğer insanları da kolluyor gibiydi. Bacağındaki demir zinciri çıkarmak için eğeyi kullandı. Metal, beni tedirgin eden keskin ve tırmalayıcı bir ses çıkardı. Çalışırken bana sisin içinde başka bir adamın daha olduğunu söyledi. Aynı anda hem öfkeli hem de korkmuş görünüyordu. Bu diğer adamın kim olduğunu ve arkadaşımın ondan neden bu kadar korktuğunu merak ettim.",
+      "Arkamı döndüm ve uzakta yürüyen tuhaf bir adam gördüm. Demir zincirli adamdan çok farklı görünüyordu ama o da karanlık ve yalnızdı. Evime doğru koşarken kalbim daha da hızlı atıyordu. Bu tehlikeli yeri sonsuza dek arkamda bırakmak istedim. Çaldığım için kendimi kötü hissettim ama mahkumu durduramayacağımı biliyordum. Eve vardığımda Joe ve ablamla kahvaltıya oturdum. Çok garip ve sessiz hissediyordum ama kimse bana zor sorular sormadı. Büyük sırrımın kalbimde ağır bir taş olduğunu ve gerçeği kimseye nasıl söyleyeceğimi bilmediğimi hissettim.",
+      "Zaman yavaşça geçti ve ben köydeki hayatıma devam ettim. Bir gün, bir komşu bana Bayan Havisham adında zengin bir kadının genç bir erkek çocuğu görmek istediğini söyledi. Satis House adında büyük, eski bir evde yaşıyordu. Yüksek duvarları ve kilitli kapıları olan çok garip bir yerdi. Kız kardeşim bunun bana şans getirebileceğini düşündüğü için mutluydu. Rahatsız hissetmeme rağmen en iyi kıyafetlerimi giydim. Vardığımda büyük ön kapı yavaşça açıldı. Çok küçük ve gergin hissederek karanlık bahçeye girdim. Ev, sanki çok uzun zamandır bir şeyi bekliyormuş gibi hüzünlü görünüyordu.",
+      "Bir hizmetçiyi karanlık ve soğuk bir odaya kadar takip ettim. Net göremiyordum ama duvardaki birçok saati fark ettim. Hepsi aynı saati gösteriyordu ama hareket etmiyorlardı. Odanın ortasında beyaz bir gelinlik içinde yaşlı bir kadın oturuyordu. Saçları beyazdı ve yüzü çok solgundu. Bayan Havisham bana gülümsemeyen soğuk gözlerle baktı. Yanında Estella adında, mağrur gözleri olan güzel bir kız duruyordu. Bayan Havisham, Estella'ya benimle kart oynamasını söyledi. Ellerim kirli ve kıyafetlerim eski olduğu için utandım.",
+      "Estella bana baktı ve sıradan bir çocuk olduğumu söyledi. Kartları kötü oynadığım ve botlarım temiz olmadığı için beni kötü hissettirdi. Bayan Havisham bize yüzünde garip bir gülümsemeyle baktı. Oyunu bitirdikten sonra gitmemi ama yakında tekrar gelmem gerektiğini söyledi. Eve yürürken evimden ve bir demirci çırağı olarak sürdüğüm basit hayatımdan utandım. Estella'nın benim bir beyefendi olduğumu düşünmesini istediğim için daha iyi bir hayatın hayalini kurmaya başladım. Bu ziyaretlerin hayatımı sonsuza dek değiştireceğini bilmiyordum.",
+      "Yıllar geçti ve ben Joe ile birlikte demirci olarak çalışan bir genç adam oldum. Bir gün, Jaggers adında bir avukat Londra'dan köyümüze geldi. Bana, tanımadığım bir kişinin bana büyük bir servet bıraktığını ve bu yüzden büyük beklentilerim olduğunu söyledi. Haberi açıklarken kulaklarıma inanamadım. Basit hayatımı geride bırakıp bir beyefendi olmak için Londra'ya gitmem gerekiyordu. Kalbim heyecan ve umutla doluydu, ama nazik arkadaşım Joe'yu bırakacağım için biraz da üzgündüm. Miss Havisham'ın gizli destekçim olduğunu ve bir gün Estella ile evlenmemi istediğini hayal etmeye başladım.",
+      "Hareketli Londra şehrine vardığımda her şey farklı ve gürültülü görünüyordu. Çok nazik olan ve bana bir beyefendi olmanın yollarını öğreten Herbert Pocket adında genç bir adamla kaldım. İyi giyinmeyi, düzgün konuşmayı ve yüksek sosyetede nasıl davranılacağını öğrendim. Ancak sık sık çok para harcadım ve aptalca davrandım. Yeni kıyafetlerimle ve pahalı yaşam tarzımla gurur duyuyordum. Güzel bir evde yaşamama rağmen, köydeki sessiz hayatı ve Joe ile demirhanede yaptığım dürüst işi sık sık özlüyordum.",
+      "Bu süre zarfında sık sık Estella'yı düşündüm ve ne kadar değiştiğimi fark etmesini umdum. Onu Londra'yı ziyaret ettiğinde bazen görüyordum ve eskisinden bile daha güzeldi. Bana aynı soğuklukla davranıyordu ama ben ona hala derinden aşıktım. Yeni hayatımın karmaşık olduğunu ve etrafımda birçok sır olduğunu fark etmedim. Gerçek bir beyefendi olabileceğim günü bekliyordum. Tüm hayallerimin gerçekleşeceğine inanıyordum ama beni bekleyen büyük bir sürprizden haberim yoktu.",
+      "Yağmurlu bir gece, Londra'daki evime bir yabancı geldi. Sert yüzlü ve gri saçlı yaşlı bir adamdı. Onu ilk başta tanıyamadım ama sonra bana gerçeği söyledi. O, ben küçük bir çocukken mezarlıkta yardım ettiğim mahkumdu. Avustralya'da çok zengin olduğunu ve gizli destekçimin o olduğunu söyledi. Şok oldum ve kafam karıştı. Servetimin Bayan Havisham'dan gelmediğini ve doğuştan bir beyefendi olmadığımı anladım. Zenginlik ve Estella ile evlilik hayallerimin nezakete veya asalete değil, bir suçlunun parasına dayandığını anladığımda kalbim kırıldı.",
+      "Magwitch adındaki mahkum benimle kalmak istiyordu ama bu çok tehlikeliydi. İngiltere'ye döndüğü için polis onu arıyordu ve bu yasaya aykırıydı. Kapana kısılmış ve geleceğim için korkmuş hissediyordum. Artık yaşam tarzımla gurur duymasam da onun kaçmasına yardım etmeye karar verdim. Yıllarca her gün çok çalıştığını ve bana para gönderdiğini öğrendim çünkü ona nezaket gösteren tek kişi bendim. Ondan utandığım için suçluluk hissettim ama Londra'daki hayatım tamamen dağıldığı için de üzgündüm.",
+      "Sonunda her şey değişti. Magwitch polis tarafından yakalandı ve kısa süre sonra öldüğü hapishaneye gönderildi. Tüm paramı ve Londra'daki evimi kaybettim. Hastalandım ve Joe iyileşmeme yardım etmek için geldi. Gerçek bir beyefendi olmanın paradan ya da kıyafetlerden değil, kalpten geldiğini sonunda anladım. Eski hayatıma dönmeye ve tekrar çok çalışmaya karar verdim. Daha sonra Estella ile Satis Evi'nin bahçesinde karşılaştım. Çok acı çekmişti, ikimiz de yaşlanmış ve bilgeleşmiştik. Arkadaş olmaya karar verdik ve akşam güneşinin yumuşak ışığı altında acı dolu geçmişimizi sonsuza dek geride bırakarak birlikte uzaklaştık."
+    ],
+    words: {
+      "grave": "mezar",
+      "mist": "sis",
+      "chain": "zincir",
+      "file": "eğe",
+      "pantry": "kiler",
+      "guilty": "suçlu",
+      "marsh": "bataklık",
+      "distance": "uzaklık",
+      "prisoner": "mahkum",
+      "secret": "sır",
+      "stolen": "çalıntı",
+      "servant": "hizmetçi",
+      "pale": "solgun",
+      "proud": "mağrur",
+      "ashamed": "utanmış",
+      "apprentice": "çırak",
+      "gentleman": "beyefendi",
+      "lawyer": "avukat",
+      "fortune": "servet",
+      "benefactor": "hayırsever",
+      "society": "toplum",
+      "complicated": "karmaşık",
+      "convict": "hükümlü",
+      "dangerous": "tehlikeli",
+      "prison": "hapishane",
+      "recover": "iyileşmek"
+    }
+  },
+      {
+    id: 'classic_jane_eyre',
+    title: "Jane Eyre",
+    author: 'Charlotte Brontë',
+    level: 'A2',
+    coverUrl: '/covers/classic_jane_eyre.webp',
+    en: [
+      "I was a young orphan girl living at Gateshead Hall with my aunt, Mrs. Reed. It was a cold and rainy afternoon in November. I sat in the corner of the library, hidden behind red curtains. I wanted to stay away from my cousins, John, Eliza, and Georgiana, because they were very unkind to me. I found a book with pictures of ships on the sea and birds in the sky. I looked at the pages quietly and felt happy for a moment. Suddenly, my cousin John entered the room. He was a large and lazy boy who did not like me. He walked toward my hiding place and pulled back the heavy curtains. He saw me with the book and started shouting. He pushed me hard, and I fell onto the floor. I felt very sad and alone in that big, quiet house.",
+      "John hit me again, and I started to cry. I could not stay silent anymore, so I pushed him back. He fell against the door, and everyone in the house heard the noise. Mrs. Reed came running into the room. She was an angry woman with a hard heart. She did not ask why John was hitting me. She only looked at me with cold eyes. She said that I was a bad and wicked girl. She told the servants to take me to the Red Room. It was a large, dark bedroom where my uncle died many years ago. I did not want to go there because I was afraid of ghosts. However, nobody listened to my pleas. They dragged me to the cold room and locked the heavy door from the outside.",
+      "The Red Room was very quiet and scary. The walls were dark, and the large bed had heavy curtains. I felt like I was in a prison. I sat on a small chair and looked around the room. I saw my reflection in a big mirror on the wall. I looked pale and small. I thought about my life and my parents who were dead. I felt a deep sadness in my heart. Outside, the wind blew through the trees. I imagined that I saw a ghost standing in the shadows. I shouted for help, but nobody came to hear me. My heart beat very fast, and my hands started to shake. I felt very ill from the cold and the fear. Finally, I closed my eyes and hoped for a better day in the future.",
+      "I woke up feeling very sick and weak. The room was still dark, and my head hurt a lot. Soon, Mr. Brocklehurst, the head of Lowood School, came to visit. He looked very tall and scary in his black clothes. My aunt, Mrs. Reed, talked to him about me. She told him many lies and said that I was a bad and difficult child. She wanted me to leave Gateshead Hall forever. Mr. Brocklehurst looked at me with cold eyes and agreed to take me to his school. He promised that he would teach me to be humble and obedient. I was terrified of him, but I knew that staying at Gateshead would only bring me more pain. I watched them talk and felt small, like a bird in a cage, waiting for someone to open the door.",
+      "A few days later, I sat in the carriage on my way to Lowood School. It was a long and lonely journey. The world outside looked gray and sad, just like my own feelings. I did not have any friends or family who loved me, and I felt very lost in the big world. When we finally arrived at the school, it looked like a large, stone building standing alone in a cold field. The iron gate was tall and dark, and I wondered what kind of life was waiting for me inside those walls. I walked through the entrance and felt a shiver run down my back. I hoped that this place would be a fresh start for me, even though I was still very sad about leaving everything behind.",
+      "The inside of the school was just as cold as the air outside. There were many girls in simple uniforms, and they all looked very quiet and serious. We were given thin porridge to eat for dinner, which did not taste very good. The teachers were strict, and they watched our every move. I sat at a long wooden table and tried to hide my tears. I met a girl named Helen Burns, who was reading a book by the fire. She looked very kind and peaceful. She told me that she liked to study and that she did not care about the bad things people said about her. I looked at Helen and felt a little bit of hope. Maybe I could find a friend here after all, even if the life at Lowood was going to be hard and full of work.",
+      "Life at Lowood School was very difficult and filled with hard work. We woke up very early while it was still dark outside and the air was freezing cold. We had to wash our faces with ice-cold water and wear simple, thin clothes that did not keep us warm. The food was often bad and never enough to fill our stomachs. We spent most of the day studying, sewing, or listening to long, strict lessons from our teachers. Every day felt the same, and we were often tired and hungry. However, I kept thinking about my friend Helen. She was very patient and always tried to be good, even when the teachers were unfair to her. I tried to follow her example and be strong during those lonely days.",
+      "One day, Mr. Brocklehurst came to visit the school again to inspect us. He looked at the girls with a critical eye, checking if our hair was neat and our clothes were simple. He did not like anything that looked too fancy or pretty. When he saw me, he stood in front of everyone and told them that I was a bad and dishonest girl. I felt my face turn bright red because I was so embarrassed and sad. Everyone looked at me, and I wanted to hide somewhere deep and dark. I stood there shivering in the cold room, feeling smaller than ever. I felt like the whole world was against me, and I did not know how I could ever fix my reputation in this place.",
+      "After Mr. Brocklehurst left, I felt completely broken and started to cry. Helen came to me and held my hand softly. She told me that crying would not change what happened and that God was watching over me. She explained that she did not care what people thought of her, as long as she was doing the right thing in her heart. Her words felt like a warm light in the dark. I realized that my own pride was making me suffer more than the words of others. I looked at her peaceful face and decided to change my attitude. I wanted to be as brave as Helen. With her by my side, I felt a little stronger to face the long, cold days ahead at this school.",
+      "Years passed at Lowood School, and I grew into a young woman. I was no longer a small, sad child, but a serious student and teacher. I worked very hard every day to learn new things and to help the younger girls. My time was filled with books, lessons, and many duties that kept me busy from morning until night. I enjoyed the quiet life, even though it was quite simple and strict. I had learned to control my feelings and to work with patience. The memory of Helen Burns remained with me as a quiet inspiration. She taught me to be kind and steady, even when life was difficult. I felt that I was ready for something new, perhaps a change in my world. I wanted to see more of life beyond the grey walls of the school.",
+      "One morning, I decided that I wanted to leave Lowood. I placed an advertisement in a newspaper to find a job as a governess for young children. Soon, I received a letter from a kind woman named Mrs. Fairfax. She lived at a large, beautiful house called Thornfield Hall. She needed someone to teach a little girl named Adèle, who was the ward of her employer, Mr. Rochester. I was very excited and nervous about this new opportunity. I packed my simple bags and said goodbye to my friends and teachers. The journey was long, but my heart was full of hope. I looked out of the carriage window and watched the green fields pass by. I was finally moving toward a new beginning in a world I had never seen before.",
+      "When I arrived at Thornfield Hall, the house looked grand and mysterious under the moonlight. Mrs. Fairfax greeted me with a warm smile and showed me my comfortable room. The house was very quiet, but it had a strange, magical feeling. I met little Adèle the next morning, and she was a very sweet and happy child. She spoke French and liked to play in the large gardens. My life as a governess had officially started, and I felt happy to be useful. I spent my days teaching her and exploring the library in the big house. Sometimes, I heard strange sounds in the hallways, but I tried to ignore them. I was busy with my duties and enjoyed the peace of my new home. I did not know yet what secrets were waiting inside.",
+      "One evening, while walking in the moonlight, I met a tall man on a horse. The horse slipped, and the man fell. I helped him, but he was grumpy and proud. Later, I learned that he was my employer, Mr. Rochester. He was a complex man with a dark past. Sometimes he was kind and friendly, and other times he seemed very sad. We talked for many hours in his study, and I felt a strong connection growing between us. I liked his intelligence and his honest words. However, the house still held secrets. I heard strange laughter behind a locked door, and one night I even saw a fire in his room. He told me that a servant was crazy, but I felt there was more to the story than he was willing to share with me.",
+      "Mr. Rochester and I fell deeply in love. He asked me to be his wife, and I agreed with great joy. The wedding day arrived, and we stood in the church with our friends. Suddenly, a man appeared and told everyone that Mr. Rochester was already married to a woman named Bertha. I was shocked and heartbroken. He took me to the attic to show me his wife, who lived there in total darkness. She was mentally ill and dangerous. I could not stay in a house that held such a painful secret. Even though I loved him with all my heart, I knew I had to leave Thornfield Hall to protect my own soul. I packed my small bag and left early the next morning in secret.",
+      "I traveled far away and lived a hard life for a time. I found work in a village school, and I eventually learned that I had inherited money from an uncle. Later, I returned to Thornfield Hall, but the house was destroyed by a fire caused by Bertha. Mr. Rochester was now alone, blind, and very sad. He was living in a small house in the woods. I went to find him, and he could not believe that I had returned to his side. We were married, and our life became quiet and happy. He regained his sight in one eye, and we had a son together. I was finally at peace, and I knew that our love would last for the rest of our long and beautiful lives."
+    ],
+    tr: [
+      "Gateshead Hall'da teyzem Bayan Reed ile yaşayan genç bir yetim kızdım. Kasım ayında soğuk ve yağmurlu bir öğleden sonraydı. Kütüphanenin köşesinde, kırmızı perdelerin arkasına saklanmış oturuyordum. Kuzenlerim John, Eliza ve Georgiana'dan uzak durmak istiyordum çünkü bana karşı çok kaba davranıyorlardı. Denizdeki gemilerin ve gökyüzündeki kuşların resimlerinin olduğu bir kitap buldum. Sayfalara sessizce baktım ve bir anlığına mutlu hissettim. Aniden kuzenim John odaya girdi. Benden hoşlanmayan iri ve tembel bir çocuktu. Saklandığım yere doğru yürüdü ve ağır perdeleri çekti. Beni kitapla gördü ve bağırmaya başladı. Beni sertçe itti ve yere düştüm. O büyük, sessiz evde kendimi çok üzgün ve yalnız hissettim.",
+      "John bana tekrar vurdu ve ağlamaya başladım. Artık sessiz kalamazdım, bu yüzden onu geri ittim. Kapıya çarptı ve evdeki herkes gürültüyü duydu. Bayan Reed odaya koşarak geldi. Sert kalpli ve kızgın bir kadındı. John'un neden bana vurduğunu sormadı. Sadece soğuk gözlerle bana baktı. Kötü ve yaramaz bir kız olduğumu söyledi. Hizmetçilere beni Kırmızı Oda'ya götürmelerini emretti. Amcamın yıllar önce öldüğü büyük, karanlık bir yatak odasıydı. Oraya gitmek istemiyordum çünkü hayaletlerden korkuyordum. Ancak kimse yakarışlarımı dinlemedi. Beni soğuk odaya sürüklediler ve ağır kapıyı dışarıdan kilitlediler.",
+      "Kırmızı Oda çok sessiz ve korkutucuydu. Duvarlar karanlıktı ve büyük yatağın ağır perdeleri vardı. Kendimi hapishanede gibi hissettim. Küçük bir sandalyeye oturdum ve etrafıma baktım. Duvardaki büyük aynada yansımamı gördüm. Solgun ve küçük görünüyordum. Hayatımı ve ölmüş olan anne babamı düşündüm. Kalbimde derin bir hüzün hissettim. Dışarıda rüzgar ağaçların arasından esiyordu. Gölgelerin arasında duran bir hayalet gördüğümü hayal ettim. Yardım için bağırdım ama beni duymaya kimse gelmedi. Kalbim çok hızlı çarptı ve ellerim titremeye başladı. Soğuktan ve korkudan hastalandım. Sonunda gözlerimi kapattım ve gelecekte daha iyi bir gün umut ettim.",
+      "Çok hasta ve halsiz bir şekilde uyandım. Oda hâlâ karanlıktı ve başım çok ağrıyordu. Çok geçmeden, Lowood Okulu'nun müdürü Bay Brocklehurst beni ziyarete geldi. Siyah kıyafetleri içinde çok uzun ve korkutucu görünüyordu. Teyzem Bayan Reed, onunla hakkımda konuştu. Ona birçok yalan söyledi ve kötü ve zor bir çocuk olduğumu anlattı. Gateshead Hall'dan sonsuza dek ayrılmamı istiyordu. Bay Brocklehurst bana soğuk gözlerle baktı ve beni okuluna almayı kabul etti. Bana alçakgönüllü ve itaatkar olmayı öğreteceğine söz verdi. Ondan çok korkuyordum ama Gateshead'de kalmanın bana sadece daha fazla acı getireceğini biliyordum. Onların konuşmasını izledim ve kapıyı birinin açmasını bekleyen kafesteki bir kuş gibi kendimi küçük hissettim.",
+      "Birkaç gün sonra, Lowood Okulu'na giden at arabasında oturuyordum. Uzun ve yalnız bir yolculuktu. Dışarıdaki dünya tıpkı benim duygularım gibi gri ve üzgündü. Beni seven hiçbir arkadaşım veya ailem yoktu ve büyük dünyada kendimi çok kaybolmuş hissediyordum. Nihayet okula vardığımızda, soğuk bir tarlada tek başına duran büyük, taş bir bina gibi görünüyordu. Demir kapı uzun ve karanlıktı; o duvarların ardında nasıl bir hayatın beni beklediğini merak ettim. Girişten içeri yürüdüm ve sırtımdan aşağı bir ürperti geçti. Her şeyi geride bıraktığım için hâlâ çok üzgün olsam da, buranın benim için yeni bir başlangıç olacağını umuyordum.",
+      "Okulun içi dışarıdaki hava kadar soğuktu. Üzerlerinde basit üniformalar olan birçok kız vardı ve hepsi çok sessiz ve ciddi görünüyordu. Akşam yemeği için tadı pek iyi olmayan ince bir yulaf lapası verdiler. Öğretmenler katıydı ve her hareketimizi izliyorlardı. Uzun ahşap bir masaya oturdum ve gözyaşlarımı saklamaya çalıştım. Ateşin yanında kitap okuyan Helen Burns adında bir kızla tanıştım. Çok nazik ve huzurlu görünüyordu. Çalışmayı sevdiğini ve insanların onun hakkında söyledikleri kötü şeyleri umursamadığını söyledi. Helen'e baktım ve içimde küçük bir umut doğdu. Lowood'daki hayat zor ve çok çalışma gerektirecek olsa bile, belki burada bir arkadaş bulabilirdim.",
+      "Lowood Okulu'ndaki yaşam çok zordu ve yoğun bir çalışma temposuyla doluydu. Hava hala karanlıkken çok erken uyanıyorduk ve hava buz gibi oluyordu. Yüzümüzü buz gibi suyla yıkamak ve bizi sıcak tutmayan basit, ince kıyafetler giymek zorundaydık. Yemekler genellikle kötüydü ve karnımızı doyurmaya asla yetmezdi. Günün çoğunu ders çalışarak, dikiş dikerek veya öğretmenlerimizden uzun, katı dersleri dinleyerek geçiriyorduk. Her gün aynı hissettiriyordu ve genellikle yorgun ve açtık. Ancak arkadaşım Helen'i düşünmeye devam ettim. O çok sabırlıydı ve öğretmenler ona haksızlık yaptığında bile her zaman iyi olmaya çalışırdı. Onun örneğini takip etmeye ve o yalnız günlerde güçlü olmaya çalıştım.",
+      "Bir gün Bay Brocklehurst bizi denetlemek için tekrar okula geldi. Kızlara eleştirel bir gözle baktı, saçlarımızın düzgün olup olmadığını ve kıyafetlerimizin basit olup olmadığını kontrol etti. Çok süslü veya hoş görünen hiçbir şeyi sevmiyordu. Beni gördüğünde herkesin önünde durdu ve onlara kötü ve yalancı bir kız olduğumu söyledi. Yüzümün kıpkırmızı olduğunu hissettim çünkü çok utanmış ve üzülmüştüm. Herkes bana baktı ve derin, karanlık bir yere saklanmak istedim. Soğuk odada titreyerek orada durdum, kendimi her zamankinden daha küçük hissettim. Bütün dünyanın bana karşı olduğunu hissettim ve bu yerdeki itibarımı nasıl düzelteceğimi bilemedim.",
+      "Bay Brocklehurst gittikten sonra kendimi tamamen yıkılmış hissettim ve ağlamaya başladım. Helen yanıma geldi ve elimi nazikçe tuttu. Ağlamanın olanları değiştirmeyeceğini ve Tanrı'nın beni izlediğini söyledi. Kalbinde doğru olanı yaptığı sürece, insanların onun hakkında ne düşündüğünü umursamadığını açıkladı. Sözleri karanlıkta sıcak bir ışık gibi hissettirdi. Kendi gururumun, başkalarının sözlerinden daha fazla acı çekmeme neden olduğunu fark ettim. Huzurlu yüzüne baktım ve tutumumu değiştirmeye karar verdim. Helen kadar cesur olmak istedim. O yanımdayken, bu okulda bizi bekleyen uzun, soğuk günlerle yüzleşmek için biraz daha güçlü hissettim.",
+      "Lowood Okulu'nda yıllar geçti ve ben genç bir kadın oldum. Artık küçük, üzgün bir çocuk değil, ciddi bir öğrenci ve öğretmendim. Her gün yeni şeyler öğrenmek ve küçük kızlara yardım etmek için çok çalıştım. Vaktim kitaplar, dersler ve beni sabahtan akşama kadar meşgul eden görevlerle doluydu. Basit ve disiplinli olmasına rağmen sessiz yaşamı seviyordum. Duygularımı kontrol etmeyi ve sabırla çalışmayı öğrenmiştim. Helen Burns'ün anısı, sessiz bir ilham kaynağı olarak benimle kaldı. Hayat zor olduğunda bile nazik ve dengeli olmayı bana o öğretmişti. Yeni bir şeye, belki de dünyamda bir değişikliğe hazır olduğumu hissediyordum. Okulun gri duvarlarının ötesindeki hayatı daha fazla görmek istiyordum.",
+      "Bir sabah, Lowood'dan ayrılmak istediğime karar verdim. Küçük çocuklar için mürebbiye olarak bir iş bulmak amacıyla gazeteye bir ilan verdim. Kısa süre sonra, Mrs. Fairfax adında nazik bir kadından mektup aldım. Thornfield Hall adında büyük ve güzel bir evde yaşıyordu. İşvereni Mr. Rochester'ın koruması altındaki Adèle adında küçük bir kıza ders verecek birine ihtiyacı vardı. Bu yeni fırsat için çok heyecanlı ve gergindim. Basit çantalarımı hazırladım, arkadaşlarıma ve öğretmenlerime veda ettim. Yolculuk uzundu ama kalbim umut doluydu. Faytonun penceresinden dışarı baktım ve yeşil tarlaların akıp gidişini izledim. Sonunda daha önce hiç görmediğim bir dünyaya doğru yeni bir başlangıca adım atıyordum.",
+      "Thornfield Hall'a vardığımda, ev ay ışığının altında görkemli ve gizemli görünüyordu. Mrs. Fairfax beni sıcak bir gülümsemeyle karşıladı ve rahat odamı gösterdi. Ev çok sessizdi ama tuhaf, büyüleyici bir hissi vardı. Ertesi sabah küçük Adèle ile tanıştım; çok tatlı ve mutlu bir çocuktu. Fransızca konuşuyordu ve büyük bahçelerde oynamayı seviyordu. Mürebbiye olarak hayatım resmen başlamıştı ve yararlı olduğum için mutluydum. Günlerimi ona ders vererek ve büyük evdeki kütüphaneyi keşfederek geçiriyordum. Bazen koridorlarda tuhaf sesler duyuyordum ama onları görmezden gelmeye çalıştım. Görevlerimle meşguldüm ve yeni evimin huzurunun tadını çıkarıyordum. İçeride hangi sırların beni beklediğini henüz bilmiyordum.",
+      "Bir akşam ay ışığında yürürken atlı bir adamla karşılaştım. At tökezledi ve adam düştü. Ona yardım ettim ama huysuz ve gururluydu. Sonradan onun işverenim Bay Rochester olduğunu öğrendim. Karanlık bir geçmişi olan karmaşık bir adamdı. Bazen nazik ve dost canlısı, bazen de çok hüzünlüydü. Çalışma odasında saatlerce konuştuk ve aramızda güçlü bir bağ oluştuğunu hissettim. Zekasını ve dürüst sözlerini sevdim. Ancak ev hala sırlar barındırıyordu. Kilitli bir kapının ardından gelen garip kahkahalar duydum ve bir gece odasında yangın bile gördüm. Bana bir hizmetçinin deli olduğunu söyledi ama bana anlatmak istemediği daha fazlası olduğunu hissettim.",
+      "Bay Rochester ile birbirimize derin bir aşkla bağlandık. Benimle evlenmek istedi ve büyük bir sevinçle kabul ettim. Düğün günü geldiğinde arkadaşlarınızla kilisede duruyorduk. Ansızın bir adam ortaya çıktı ve herkese Bay Rochester'ın Bertha adında bir kadınla zaten evli olduğunu söyledi. Şok oldum ve kalbim kırıldı. Beni, tamamen karanlık içinde yaşayan karısını göstermek için çatı katına götürdü. Akli dengesi yerinde değildi ve tehlikeliydi. Böylesine acı verici bir sırrı saklayan bir evde kalamazdım. Onu tüm kalbimle sevsem de, kendi ruhumu korumak için Thornfield Hall'dan ayrılmam gerektiğini biliyordum. Küçük çantamı topladım ve ertesi sabah erkenden gizlice oradan ayrıldım.",
+      "Uzaklara gittim ve bir süre zor bir hayat yaşadım. Bir köy okulunda iş buldum ve sonunda bir amcamdan bana miras kaldığını öğrendim. Daha sonra Thornfield Hall'a döndüm ancak ev, Bertha'nın çıkardığı bir yangınla yıkılmıştı. Bay Rochester artık yalnızdı, kördü ve çok üzgündü. Ormandaki küçük bir evde yaşıyordu. Onu bulmaya gittim ve yanına döndüğüme inanamadı. Evlendik ve hayatımız sessiz ve mutlu bir hal aldı. Bir gözü görmeye başladı ve birlikte bir oğlumuz oldu. Sonunda huzura ermiştim ve sevgimizin geri kalan uzun ve güzel hayatımız boyunca süreceğini biliyordum."
+    ],
+    words: {
+      "orphan": "yetim",
+      "curtain": "perde",
+      "wicked": "kötü, yaramaz",
+      "ghost": "hayalet",
+      "reflection": "yansıma",
+      "shadow": "gölge",
+      "carriage": "at arabası",
+      "humble": "alçakgönüllü",
+      "obedient": "itaatkar",
+      "porridge": "yulaf lapası",
+      "strict": "katı",
+      "shiver": "ürperti",
+      "inspect": "denetlemek",
+      "dishonest": "yalancı",
+      "embarrassed": "utanmış",
+      "reputation": "itibar",
+      "attitude": "tutum",
+      "governess": "mürebbiye",
+      "advertisement": "ilan",
+      "employer": "işveren",
+      "ward": "koruma altındaki çocuk",
+      "mysterious": "gizemli",
+      "duty": "görev",
+      "attic": "çatı katı",
+      "secret": "sır",
+      "inherit": "miras almak",
+      "blind": "kör",
+      "peace": "huzur"
+    }
+  },
+      {
+    id: 'classic_count_monte_cristo',
+    title: "The Count of Monte Cristo",
+    author: 'Alexandre Dumas',
+    level: 'A2',
+    coverUrl: '/covers/classic_count_monte_cristo.webp',
+    en: [
+      "The young sailor Edmond Dantes arrived at the port of Marseille on his ship, the Pharaon. He was a very happy man because he had a bright future. He was a talented sailor and his captain had died at sea, so the owner of the ship wanted to make Edmond the new captain. Edmond was also in love with a beautiful woman named Mercedes. He planned to marry her very soon. When he arrived, he went to see his father and his beloved Mercedes. Everyone was happy to see him after his long journey. Edmond felt that his life was perfect and he had nothing to worry about. He did not know that three jealous men were watching him closely from the shadows, planning to destroy his happiness because they were envious of his success and his bright future.",
+      "Danglars was a man who worked on the same ship as Edmond. He was jealous because he wanted to be the captain. Fernand was another man who loved Mercedes and wanted to marry her. He was angry that she chose Edmond. Then there was Caderousse, who was a weak man and listened to the others. These three men met at a tavern to talk. Danglars wrote a letter to the authorities. He said that Edmond was a supporter of Napoleon and a traitor to the king. This was a dangerous lie. The three men wanted to send Edmond to prison so they could get what they wanted. They were cruel and did not care about the pain they would cause to an innocent man. They put the letter in a post box and waited for the police to act.",
+      "The day of Edmond's wedding to Mercedes arrived. Many guests were there to celebrate with them. The sun was shining and everyone was laughing. Suddenly, a group of soldiers entered the room. They looked very serious and held their weapons. They told everyone that they had an order to arrest Edmond Dantes. The music stopped and the guests were silent. Mercedes started to cry and Edmond was very confused. He told the soldiers that he had done nothing wrong and that he was a loyal citizen. The soldiers did not listen to him. They took him away from his home and his bride. As he walked away, he looked back at his house. He did not know that he would not see his beautiful Mercedes again for a very long time.",
+      "The soldiers took Edmond to a cold and dark building. He was very scared but he believed he would be free soon. He had done nothing wrong, so he thought the mistake would be fixed quickly. A tall man with a serious face talked to Edmond. This man was Villefort, the royal prosecutor. He asked Edmond many questions about his journey and the letter he carried. Edmond told the truth about everything. He explained that his captain asked him to deliver a package to a man in the island of Elba. Edmond did not know what was inside the package. Villefort looked at the letter and his face turned white. He realized that this letter was a dangerous secret for his own family. He had to stop Edmond from telling anyone about this.",
+      "Villefort told his guards to lock Edmond in a room. He knew that if he let Edmond go, his own position would be in danger. He decided to destroy the letter and send Edmond to a terrible prison called the Château d'If. This prison was on a small rock in the middle of the sea. It was a place where people were sent to be forgotten forever. Edmond begged the guards to listen to him. He shouted that he was innocent and that he had a wedding to return to. The guards did not care. They dragged him to a small boat in the dark night. The wind was cold and the waves were high. Edmond felt his heart break as he looked at the lights of Marseille disappear into the distance.",
+      "The boat arrived at the island and the guards pushed Edmond into the dark gates of the prison. The prison was damp and cold, with water on the walls. An old guard took him deep under the ground to a tiny room. There was no light and the floor was made of stone. The guard told him that he would never leave this place. Edmond sat on the cold floor and started to cry. He did not know why this was happening to him. He thought about Mercedes and his father. He wondered if they knew where he was. He was now a prisoner in a tomb of stone. He felt alone and hopeless. The darkness of the prison became his only friend as the heavy door locked behind him with a loud sound.",
+      "Months turned into years in the cold, dark cell. Edmond lost count of the days. He lived in silence, only hearing the sound of the sea crashing against the rocks outside. He became thin and his clothes were worn out. He spent his time thinking about his life, his father, and his love, Mercedes. He wondered if they were still waiting for him or if they had forgotten him. Sometimes he felt angry and wanted to die, but he also wanted to live to find the people who did this to him. He was tired and hungry, but he kept his mind clear. He looked at the shadows on the wall and imagined a future where he could walk under the bright sun again. His heart was full of pain, but it was also full of a growing desire for justice.",
+      "One day, Edmond heard a strange noise under his floor. It sounded like someone was digging with a tool. At first, he thought it was only a dream, but the sound happened every day. He moved his heavy bed and saw that someone was trying to make a hole in the stone. He used a sharp piece of metal from his bowl to help. After many weeks, the hole was big enough for a person. A man crawled out of the dark opening. He was old, thin, and had long white hair. He was an Italian priest named Faria. He had been digging for years to escape the prison. Edmond was very happy to see a human being after so much time in isolation. They talked for many hours and became close friends.",
+      "Faria was a very wise man. He was a scientist and an expert in many subjects. He taught Edmond how to read, write, and speak many languages. He also taught him about history, geography, and mathematics. They spent their days talking about the world outside the stone walls. Faria told Edmond about a secret treasure hidden on a place called the island of Monte Cristo. It belonged to a rich family from the past. Faria was weak because of his years in prison, and he knew he would not live much longer. He gave Edmond a map and told him where the gold was hidden. Edmond listened to every word with great care. He felt that his life was starting a new chapter filled with hope and purpose.",
+      "One morning, Faria became very ill and could not move his body. He knew that his time had come to leave the world. He told Edmond to be brave and smart after he was gone. Edmond cried for his dear friend because Faria was like a father to him now. Faria gave his final advice to the young man and soon closed his eyes forever. Edmond was full of sadness as he realized he was alone once more in the dark prison. He decided that he must escape to honor the memory of the priest. The prison guards came to the room, and they took the body away in a heavy sack. Edmond had a dangerous plan to replace the body with his own body so he could finally get out of his cold cell.",
+      "Edmond crawled into the empty sack that the guards had left behind. He waited in the dark until the guards returned and carried him toward the edge of the high cliff. He felt the cold wind blowing on his face and heard the sound of the deep, blue sea crashing against the sharp rocks below. The guards threw the sack into the water, and Edmond sank down into the cold waves. He used his knife to cut the heavy fabric of the sack and swam quickly toward the surface of the water. He was free at last from the stone prison that had held him for many long years. He looked at the stars in the night sky and thanked the world for his new life.",
+      "He swam until he found a small boat near the island. He took the boat and traveled to the island of Monte Cristo to find the treasure. He searched the ground carefully for many days until he finally discovered a hidden cave deep inside the rocks. Inside the cave, he found many heavy wooden boxes filled with gold coins, bright diamonds, and beautiful jewels. It was a fortune that could change everything for him. Edmond realized that he now had the power to make his plans for justice come true. He felt strong and ready to return to his old life to find the people who had betrayed him. He left the cave as a new man, the wealthy and powerful Count of Monte Cristo.",
+      "Edmond returned to Marseille as a man of great power and mystery. He traveled under the name of the Count of Monte Cristo and soon found those who had betrayed him many years ago. Fernand, Danglars, and Villefort were all successful and rich now, living in safety and comfort. However, the Count knew their dark secrets. He spent his time planning how to punish them for the pain they caused him long ago. He watched them from the shadows, waiting for the perfect moment to strike. The Count moved through society with elegance, and nobody recognized the young sailor he had once been. He began to ruin their lives one by one, using their own greed against them. He wanted them to feel the same sadness and loss that he felt inside the walls of the Chateau d'If.",
+      "He met his old friend Morrel, who was now a poor man struggling to keep his business alive. Edmond secretly saved Morrel from ruin, showing that he had not lost his kind heart, even after all his suffering. However, he remained firm with his enemies. He carefully destroyed the reputations and wealth of the men who had sent him to prison. As his plans reached their end, the Count felt a deep change within himself. He had gained his revenge, but he also realized that he must find peace. He remembered the love of Mercedes and the long years of loneliness. He decided to leave his past behind forever and seek a new life far away from the sadness of his journey. He gave his remaining treasure to those who deserved help and kindness.",
+      "The Count of Monte Cristo looked at the wide blue sea for the last time. He realized that life was more than just revenge and gold. He looked toward the future with hope, leaving behind the dark memories of the prison. The world was open to him, and he felt free for the very first time in his adult life. He sailed his ship toward the horizon, where the sun was beginning to rise. His heart was finally calm, and he knew that he could finally be a happy man again. Justice was served, and his long, difficult journey was over. He turned his face to the wind, ready to discover a beautiful new world. Edmond Dantes was gone, and only the free man remained, looking forward to the quiet days ahead of him."
+    ],
+    tr: [
+      "Genç denizci Edmond Dantes, Pharaon adlı gemisiyle Marsilya limanına vardı. Çok mutlu bir adamdı çünkü parlak bir geleceği vardı. Yetenekli bir denizciydi ve kaptanı denizde öldüğü için, geminin sahibi Edmond'ı yeni kaptan yapmak istiyordu. Edmond ayrıca Mercedes adında güzel bir kadına aşıktı. Onunla çok yakında evlenmeyi planlıyordu. Vardığında, babasını ve sevdiği Mercedes'i görmeye gitti. Uzun yolculuğundan sonra herkes onu gördüğüne sevindi. Edmond, hayatının mükemmel olduğunu ve endişelenecek hiçbir şeyi olmadığını düşünüyordu. Başarısını ve parlak geleceğini kıskandıkları için mutluluğunu yok etmeyi planlayan üç kıskanç adamın onu gölgelerden yakından izlediğinden habersizdi.",
+      "Danglars, Edmond ile aynı gemide çalışan bir adamdı. Kaptan olmak istediği için kıskançtı. Fernand ise Mercedes'i seven ve onunla evlenmek isteyen başka bir adamdı. Mercedes'in Edmond'ı seçmesine kızgındı. Bir de diğerlerini dinleyen zayıf karakterli Caderousse vardı. Bu üç adam konuşmak için bir handa buluştular. Danglars yetkililere bir mektup yazdı. Edmond'ın Napolyon destekçisi ve krala karşı bir hain olduğunu söyledi. Bu tehlikeli bir yalandı. Üç adam, istediklerini elde edebilmek için Edmond'ı hapse göndermek istiyorlardı. Zalim insanlardı ve masum bir adama verecekleri acıyı umursamıyorlardı. Mektubu posta kutusuna attılar ve polisin harekete geçmesini beklediler.",
+      "Edmond ile Mercedes'in düğün günü geldi. Birçok misafir onları kutlamak için oradaydı. Güneş parlıyordu ve herkes gülüyordu. Aniden, bir grup asker odaya girdi. Çok ciddi görünüyorlardı ve silahlarını tutuyorlardı. Herkese Edmond Dantes'i tutuklama emirleri olduğunu söylediler. Müzik durdu ve misafirler sessizliğe büründü. Mercedes ağlamaya başladı ve Edmond çok şaşkındı. Askerlere hiçbir yanlış yapmadığını ve sadık bir vatandaş olduğunu söyledi. Askerler onu dinlemedi. Onu evinden ve gelininden uzaklaştırdılar. Uzaklaşırken evine geri baktı. Güzel Mercedes'ini çok uzun bir süre göremeyeceğini bilmiyordu.",
+      "Askerler Edmond'u soğuk ve karanlık bir binaya götürdüler. Çok korkmuştu ama yakında serbest kalacağına inanıyordu. Yanlış hiçbir şey yapmamıştı, bu yüzden hatanın çabucak düzeltileceğini düşündü. Ciddi yüzlü uzun bir adam Edmond ile konuştu. Bu adam kraliyet savcısı Villefort'tu. Edmond'a yolculuğu ve taşıdığı mektup hakkında birçok soru sordu. Edmond her şey hakkında doğruyu söyledi. Kaptanının kendisinden Elba adasındaki bir adama bir paket teslim etmesini istediğini açıkladı. Edmond paketin içinde ne olduğunu bilmiyordu. Villefort mektuba baktı ve yüzü bembeyaz oldu. Bu mektubun kendi ailesi için tehlikeli bir sır olduğunu fark etti. Edmond'un bunu kimseye anlatmasını engellemesi gerekiyordu.",
+      "Villefort gardiyanlarına Edmond'u bir odaya kilitlemelerini söyledi. Edmond'u serbest bırakırsa kendi konumunun tehlikeye gireceğini biliyordu. Mektubu yok etmeye ve Edmond'u Château d'If denilen korkunç bir hapishaneye göndermeye karar verdi. Bu hapishane denizin ortasında küçük bir kaya üzerindeydi. İnsanların unutulmak üzere gönderildiği bir yerdi. Edmond gardiyanlara onu dinlemeleri için yalvardı. Masum olduğunu ve geri dönmesi gereken bir düğünü olduğunu bağırdı. Gardiyanlar umursamadılar. Karanlık gecede onu küçük bir tekneye sürüklediler. Rüzgar soğuktu ve dalgalar yüksekti. Marsilya'nın ışıklarının uzakta kayboluşunu izlerken Edmond kalbinin kırıldığını hissetti.",
+      "Tekne adaya ulaştı ve gardiyanlar Edmond'u hapishanenin karanlık kapılarından içeri itti. Hapishane nemli ve soğuktu, duvarlarda su vardı. Yaşlı bir gardiyan onu yerin derinliklerinde küçücük bir odaya götürdü. Hiç ışık yoktu ve zemin taştandı. Gardiyan ona bir daha buradan asla çıkamayacağını söyledi. Edmond soğuk zemine oturdu ve ağlamaya başladı. Bunun neden başına geldiğini bilmiyordu. Mercedes'i ve babasını düşündü. Nerede olduğunu bilip bilmediklerini merak etti. Artık taştan bir mezarda mahkumdu. Kendini yalnız ve umutsuz hissetti. Ağır kapı arkasından gürültülü bir sesle kilitlendiğinde, hapishanenin karanlığı tek arkadaşı oldu.",
+      "Aylar, soğuk ve karanlık hücrede yıllara dönüştü. Edmond günleri saymayı bıraktı. Sessizlik içinde yaşadı, sadece dışarıdaki kayalara vuran denizin sesini duydu. Zayıfladı ve kıyafetleri eskidi. Vaktini hayatını, babasını ve aşkı Mercedes'i düşünerek geçirdi. Onların hala kendisini bekleyip beklemediklerini ya da kendisini unutup unutmadıklarını merak etti. Bazen öfkeli hissedip ölmek istedi, ama aynı zamanda bunu kendisine yapanları bulmak için yaşamak istedi. Yorgun ve açtı ama zihnini berrak tuttu. Duvardaki gölgelere baktı ve tekrar parlak güneşin altında yürüyebileceği bir gelecek hayal etti. Kalbi acıyla doluydu ama aynı zamanda büyüyen bir adalet arzusuyla da doluydu.",
+      "Bir gün Edmond zemininin altında tuhaf bir ses duydu. Sanki birisi bir aletle kazı yapıyormuş gibi geliyordu. İlk başta sadece bir rüya olduğunu düşündü ama ses her gün tekrarlandı. Ağır yatağını çekti ve birinin taştan bir delik açmaya çalıştığını gördü. Yardım etmek için kasesinden çıkan keskin bir metal parçası kullandı. Birçok haftadan sonra delik bir insanın geçebileceği kadar büyük oldu. Karanlık açıklıktan bir adam sürünerek çıktı. Yaşlı, zayıf ve uzun beyaz saçlıydı. Faria adında bir İtalyan rahipti. Hapishaneden kaçmak için yıllardır kazıyordu. Edmond, bu kadar uzun süren yalnızlıktan sonra bir insan görmekten dolayı çok mutluydu. Saatlerce konuştular ve yakın arkadaş oldular.",
+      "Faria çok bilge bir adamdı. Bir bilim insanıydı ve birçok konuda uzmandı. Edmond'a okumayı, yazmayı ve birçok dil konuşmayı öğretti. Ayrıca ona tarih, coğrafya ve matematik hakkında bilgiler verdi. Günlerini taş duvarların dışındaki dünya hakkında konuşarak geçirdiler. Faria, Edmond'a Monte Cristo adası denilen bir yerde saklı gizli bir hazineden bahsetti. Bu hazine geçmişten zengin bir aileye aitti. Faria, hapishanedeki yıllarından dolayı zayıftı ve daha fazla yaşamayacağını biliyordu. Edmond'a bir harita verdi ve altının nerede saklı olduğunu söyledi. Edmond her kelimeyi büyük bir dikkatle dinledi. Hayatının umut ve amaçla dolu yeni bir bölüme başladığını hissetti.",
+      "Bir sabah, Faria çok hastalandı ve vücudunu hareket ettiremedi. Dünyadan ayrılma vaktinin geldiğini biliyordu. Edmond'a kendisi gittikten sonra cesur ve akıllı olmasını söyledi. Edmond, sevgili arkadaşı için ağladı çünkü Faria artık onun için bir baba gibiydi. Faria, genç adama son öğütlerini verdi ve kısa süre sonra gözlerini sonsuza dek kapattı. Edmond, karanlık hapishanede bir kez daha yalnız kaldığını fark edince büyük bir üzüntüyle doldu. Rahiplerin anısını onurlandırmak için kaçması gerektiğine karar verdi. Hapishane gardiyanları odaya geldiler ve bedeni ağır bir çuvalın içine koyup götürdüler. Edmond, hücresinden çıkabilmek için kendi bedeniyle cesedin yerini değiştirecek tehlikeli bir plan yaptı.",
+      "Edmond gardiyanların geride bıraktığı boş çuvalın içine sürünerek girdi. Gardiyanlar dönüp onu yüksek uçurumun kenarına taşıyana kadar karanlıkta bekledi. Yüzüne vuran soğuk rüzgarı hissetti ve derin, mavi denizin aşağıdaki keskin kayalara çarpan sesini duydu. Gardiyanlar çuvalı suya attılar ve Edmond soğuk dalgaların arasına battı. Çuvalın ağır kumaşını kesmek için bıçağını kullandı ve hızla suyun yüzeyine doğru yüzdü. Onu uzun yıllardır tutan taş hapishaneden nihayet kurtulmuştu. Gece gökyüzündeki yıldızlara baktı ve yeni hayatı için dünyaya teşekkür etti.",
+      "Adanın yakınında küçük bir tekne bulana kadar yüzdü. Tekneyi aldı ve hazineyi bulmak için Monte Cristo adasına gitti. Kayaların derinliklerindeki gizli mağarayı keşfedene kadar günlerce toprağı dikkatle aradı. Mağaranın içinde altın paralar, parlak elmaslar ve güzel mücevherlerle dolu birçok ağır ahşap sandık buldu. Bu, onun için her şeyi değiştirebilecek bir servetti. Edmond, artık adalet planlarını gerçeğe dönüştürme gücüne sahip olduğunu fark etti. Güçlü ve ona ihanet eden insanları bulmak için eski hayatına dönmeye hazırdı. Mağaradan yeni bir adam olarak, zengin ve güçlü Monte Cristo Kontu olarak çıktı.",
+      "Edmond, büyük bir güç ve gizemle dolu bir adam olarak Marsilya'ya geri döndü. Monte Kristo Kontu adıyla seyahat etti ve çok uzun yıllar önce kendisine ihanet edenleri kısa sürede buldu. Fernand, Danglars ve Villefort artık başarılı ve zenginlerdi, güvenlik ve konfor içinde yaşıyorlardı. Ancak Kont, onların karanlık sırlarını biliyordu. Zamanını, çok eskiden kendisine çektirdikleri acılar için onları nasıl cezalandıracağını planlayarak geçirdi. Onları gölgelerin arasından izledi ve vurmak için mükemmel anı bekledi. Kont, toplum içinde büyük bir zarafetle hareket etti ve kimse onun eskiden olduğu genç denizciyi tanımadı. Onların kendi açgözlülüklerini kullanarak hayatlarını birer birer mahvetmeye başladı. Onların da Şato d'If duvarları içinde kendi hissettiği aynı üzüntüyü ve kaybı hissetmelerini istedi.",
+      "İşini ayakta tutmak için mücadele eden fakir bir adam haline gelmiş olan eski dostu Morrel ile karşılaştı. Edmond, tüm acılarına rağmen nazik kalbini kaybetmediğini göstererek Morrel'i gizlice yıkımdan kurtardı. Ancak düşmanlarına karşı kararlıydı. Onu hapse gönderen adamların itibarını ve servetini dikkatlice yok etti. Planları sona ererken, Kont kendi içinde derin bir değişim hissetti. İntikamını almıştı ama aynı zamanda huzuru bulması gerektiğini de fark etti. Mercedes'in sevgisini ve yalnızlığın uzun yıllarını hatırladı. Geçmişini sonsuza dek geride bırakmaya ve yolculuğunun üzüntüsünden çok uzaklarda yeni bir hayat aramaya karar verdi. Kalan hazinesini, yardımı ve iyiliği hak edenlere verdi.",
+      "Monte Kristo Kontu, geniş mavi denize son kez baktı. Hayatın sadece intikamdan ve altından ibaret olmadığını anladı. Hapishanenin karanlık hatıralarını geride bırakarak umutla geleceğe baktı. Dünya ona açıktı ve yetişkin hayatında ilk kez kendini özgür hissediyordu. Güneşin yükselmeye başladığı ufka doğru gemisini sürdü. Kalbi sonunda sakindi ve tekrar mutlu bir adam olabileceğini biliyordu. Adalet yerini bulmuştu ve uzun, zorlu yolculuğu sona ermişti. Yüzünü rüzgara döndü, güzel ve yeni bir dünyayı keşfetmeye hazırdı. Edmond Dantes artık yoktu ve geriye sadece önündeki sessiz günleri bekleyen özgür bir adam kalmıştı."
+    ],
+    words: {
+      "sailor": "denizci",
+      "jealous": "kıskanç",
+      "traitor": "hain",
+      "innocent": "masum",
+      "arrest": "tutuklamak",
+      "bride": "gelin",
+      "prosecutor": "savcı",
+      "prison": "hapishane",
+      "deliver": "teslim etmek",
+      "damp": "nemli",
+      "guard": "gardiyan",
+      "cell": "hücre",
+      "isolation": "yalnızlık",
+      "digging": "kazma",
+      "wise": "bilge",
+      "treasure": "hazine",
+      "justice": "adalet",
+      "ill": "hasta",
+      "sack": "çuval",
+      "cliff": "uçurum",
+      "jewel": "mücevher",
+      "betray": "ihanet etmek",
+      "greed": "açgözlülük",
+      "revenge": "intikam",
+      "reputation": "itibar",
+      "horizon": "ufuk"
+    }
+  },
+      {
+    id: 'classic_huck_finn',
+    title: "Adventures of Huckleberry Finn",
+    author: 'Mark Twain',
+    level: 'A2',
+    coverUrl: '/covers/classic_huck_finn.webp',
+    en: [
+      "I lived in a small town near the big Mississippi River. My name is Huckleberry Finn. I lived with Widow Douglas and her sister, Miss Watson. They wanted to make me civilized. I had to wear clean clothes, eat at the table, and learn to read the Bible. It was very difficult for me. I did not like to wear shoes or sit inside for a long time. I preferred to sleep in an old barrel and go fishing whenever I wanted. Life was boring and strict in the house. I often thought about the freedom of the woods and the quiet river. I wanted to be wild and free again because the rules made me feel sad and trapped.",
+      "One day, my father came back to town. He was a very bad man who drank too much. He heard that I had some money from my adventures with Tom Sawyer, and he wanted it. He came to the house and saw me. He was angry and dirty. He took me away to a small wooden cabin in the woods. He locked the door and kept me there by force. He did not let me go outside or see anyone. The cabin was very dark and lonely. I was scared because my father was often drunk and shouted at me all day. I knew that I had to escape or I would never be happy again.",
+      "I looked for a way to leave the cabin. I found an old saw and started to cut a hole in the wooden wall. It took a very long time, but finally, I made a small opening. I also prepared a canoe that I found by the river. I put some food and tools inside to help me survive. I wanted everyone to think that I was dead, so I killed a pig and made it look like a crime had happened. I left blood on the floor to make the story more real. I jumped into the river and started my new life as a runaway boy. I was finally alone and ready for my big adventure.",
+      "I paddled my canoe down the quiet river under the bright moonlight. The water was very calm, and I felt safe for the first time in many days. I moved past the thick trees and shadows, making sure nobody could see me. I was excited because I was finally free from my father and the strict house of the Widow. I looked at the dark forest and felt that the river was my new home. I had my food and my simple supplies in the boat. My heart beat fast with joy as I drifted away from my old life. I wanted to go to Jackson Island, a place where I could hide and be safe until I decided what to do next with my long journey.",
+      "When I arrived at the island, I hid my canoe deep in the bushes. The island was very quiet and covered in tall trees. I explored the area and found a good spot to rest. It was nice to be under the open sky again. I felt lonely sometimes, but the sounds of the forest were better than the shouting of my father. I saw birds and small animals moving in the grass. The air smelled like wet earth and fresh water. I climbed a big tree to see if anyone was coming, but the river looked empty in every direction. I sat down on the ground and started to eat my bread, enjoying the silence of the beautiful wild place.",
+      "As the sun began to set, I decided to explore more of the island. Suddenly, I saw some smoke rising through the green leaves in the distance. I became very scared and wondered who else was on the island with me. I crept forward very quietly because I did not want to be caught. When I reached the place, I saw a fire burning near a small camp. Sitting by the fire was Jim, the man who worked for Miss Watson. I was very surprised to see him here. I felt a little better knowing that he was a friend, so I stepped out from the trees to say hello. Jim looked at me and his eyes opened wide in total shock.",
+      "Jim jumped up and shouted in fear because he thought I was a ghost. He looked very worried, but I quickly told him that I was real and alive. He was so happy to see me that he started to cry. Jim explained that he ran away from Miss Watson because he heard she wanted to sell him to a man far away in the South. I promised him that I would never tell anyone where he was hiding. We sat by the warm fire and talked for a long time. It felt good to have a friend to talk to on this lonely island. We decided to stay together because we were both running away to find our freedom in a new place where nobody could hurt us.",
+      "The next day, we found a large cave high up on the rocks. It was a perfect place to keep our things safe from the rain and the rising river. We moved all our supplies, like bread, meat, and dry clothes, into the dark cave. We were careful not to leave any tracks on the muddy ground near the river. Sometimes, we fished in the calm water to get fresh food. Jim was very smart and knew many things about the forest and the river. He taught me how to read the clouds and the wind. I felt much safer with Jim because he was kind and looked after me like a brother while we waited for the right time to move.",
+      "One night, a heavy storm started, and the river rose very quickly. We saw a log house floating down the dark, rushing water. We paddled our canoe toward it and climbed inside to see if there was anything useful for us. The house was empty, but we found some old clothes, a kitchen knife, and some blankets. I looked around the room and saw a man lying on the floor in the corner. He was not moving, and I was too scared to look at his face. Jim looked at him and whispered that the man was dead. I did not want to see more, so we quickly took the things we needed and left the house to continue our dangerous journey downstream.",
+      "One day, I decided to go to the town to get some news. I wore a dress like a girl so nobody would know who I was. I walked to a small house where a new lady lived. She did not know me, so I talked to her. She told me that many people were looking for Jim. She said that some people saw smoke on the island and they thought he was hiding there. She also said that a lot of people wanted the money for finding him. I felt very cold and scared when I heard this. I knew we were not safe on the island anymore. I said goodbye to the lady and ran back to the river as fast as I could to warn my good friend.",
+      "When I got back to the island, I found Jim and told him everything. We had to leave our safe cave immediately because people were coming to search for us. We packed our things into the raft and prepared to travel down the Mississippi River at night. The river was very wide and the water moved fast in the darkness. We decided to sleep during the day and move only when the sun went down. This was the only way to stay hidden from people on the shore. It was a very difficult plan, but we had to be brave. We kept our lamp low so that other boats could not see us as we passed by the towns in the quiet night.",
+      "Life on the raft became our new home under the bright stars. We moved slowly while the big river carried us toward our goal. Sometimes we stopped to find berries or fish in the shallow water. We did not talk much when we heard other boats near us. I felt like I was learning many new things about the world. Jim was a wonderful companion and he told me many stories about his life. Even though we were worried about being caught, we felt free for the very first time. We watched the moon shine on the water and dreamed of a place where we could finally be safe. We held onto our hope while the water pushed us forward into the dark, mysterious night.",
+      "We reached the farm of Silas Phelps. I pretended to be Tom Sawyer, his nephew, because they were waiting for him. Jim was being held in a small hut on the property. I felt sad because Jim was a prisoner again. Tom Sawyer actually arrived later and decided to help me with a plan to set Jim free. Tom loved adventures and complicated games. He thought our plan needed to be long and difficult to be exciting. We dug a tunnel into the ground and made a rope ladder for Jim to use. We wanted everything to be perfect according to the stories in our books. It was a very busy and strange time for both of us.",
+      "The night of the escape finally arrived and we moved quietly toward the small hut. We took tools and secret notes to Jim. Everything was very dramatic because Tom wanted it to feel like a great escape from a prison. We told Jim to stay calm while we worked. Suddenly, the neighbors heard us and started chasing us with their guns. We ran through the trees as fast as we could toward the river. Tom got hurt in his leg, but we managed to get back to our raft. Jim helped us and we finally felt the wind in our faces as we moved away from the dangerous farm.",
+      "After we were safe on the river, we learned the truth. Jim was already a free man because the lady who owned him had died and left a will saying he should be free. Tom knew this the whole time but he wanted to have an adventure. We returned home and felt relieved. Jim was happy to finally be a free man and he planned to work hard and save his money. I decided that I did not want to be forced to live in a house and follow strict rules again. I want to go out west and see the big plains. It is time for my next journey to begin."
+    ],
+    tr: [
+      "Mississippi Nehri yakınlarındaki küçük bir kasabada yaşıyordum. Adım Huckleberry Finn. Dul Douglas ve kız kardeşi Bayan Watson ile birlikte kalıyordum. Beni medeni biri yapmaya çalışıyorlardı. Temiz kıyafetler giymem, masada yemek yemem ve İncil'i okumayı öğrenmem gerekiyordu. Bu benim için çok zordu. Ayakkabı giymekten ya da uzun süre içeride oturmaktan hoşlanmıyordum. Eski bir fıçının içinde uyumayı ve istediğim zaman balığa gitmeyi tercih ediyordum. Evdeki hayat çok sıkıcı ve katıydı. Sık sık ormanların özgürlüğünü ve sessiz nehri düşünürdüm. Yeniden vahşi ve özgür olmak istiyordum çünkü kurallar beni üzgün ve kapana kısılmış hissettiriyordu.",
+      "Bir gün babam kasabaya geri döndü. O, çok fazla içki içen çok kötü bir adamdı. Tom Sawyer ile yaşadığım maceralardan biraz param olduğunu duymuştu ve onu istiyordu. Eve geldi ve beni gördü. Kızgın ve kirliydi. Beni ormandaki küçük ahşap bir kulübeye götürdü. Kapıyı kilitledi ve beni orada zorla tuttu. Dışarı çıkmama veya kimseyi görmeme izin vermiyordu. Kulübe çok karanlık ve yalnızdı. Korkuyordum çünkü babam sık sık sarhoştu ve gün boyu bana bağırırdı. Kaçmam gerektiğini biliyordum, yoksa bir daha asla mutlu olamayacaktım.",
+      "Kulübeden ayrılmanın bir yolunu aradım. Eski bir testere buldum ve ahşap duvarda bir delik açmaya başladım. Çok uzun sürdü ama sonunda küçük bir açıklık yaptım. Ayrıca nehir kenarında bulduğum bir kanoyu hazırladım. Hayatta kalmama yardımcı olması için içine biraz yiyecek ve araç gereç koydum. Herkesin öldüğümü sanmasını istiyordum, bu yüzden bir domuz kestim ve bir suç işlenmiş gibi görünmesini sağladım. Hikayeyi daha gerçekçi kılmak için yere kan bıraktım. Nehre atladım ve kaçak bir çocuk olarak yeni hayatıma başladım. Nihayet yalnızdım ve büyük macerama hazırdım.",
+      "Parlak ay ışığı altında kanomu sessiz nehirde sürdüm. Su çok sakindi ve günlerden sonra ilk kez kendimi güvende hissettim. Kimsenin beni görmediğinden emin olarak sık ağaçların ve gölgelerin arasından geçtim. Babamdan ve Dul kadının katı evinden nihayet kurtulduğum için çok heyecanlıydım. Karanlık ormana baktım ve nehrin artık yeni evim olduğunu hissettim. Teknede yiyeceğim ve basit malzemelerim vardı. Eski hayatımdan uzaklaşırken kalbim neşeyle hızlı çarpıyordu. Uzun yolculuğumda bir sonraki adımda ne yapacağıma karar verene kadar saklanıp güvende olabileceğim Jackson Adası'na gitmek istiyordum.",
+      "Adaya vardığımda kanomu çalıların arasına iyice sakladım. Ada çok sessizdi ve uzun ağaçlarla kaplıydı. Bölgeyi keşfettim ve dinlenmek için güzel bir yer buldum. Tekrar açık gökyüzü altında olmak harikaydı. Bazen yalnız hissettim ama ormanın sesleri babamın bağırmasından daha iyiydi. Çimlerin arasında hareket eden kuşlar ve küçük hayvanlar gördüm. Hava ıslak toprak ve taze su gibi kokuyordu. Birinin gelip gelmediğini kontrol etmek için büyük bir ağaca tırmandım ama nehir her yönde boş görünüyordu. Yere oturdum ve güzel vahşi yerin sessizliğinin tadını çıkararak ekmeğimi yemeye başladım.",
+      "Güneş batmaya başladığında adanın daha fazla kısmını keşfetmeye karar verdim. Aniden, uzaktaki yeşil yaprakların arasından yükselen biraz duman gördüm. Çok korktum ve adada benimle birlikte başka kimin olduğunu merak ettim. Yakalanmak istemediğim için çok sessizce ilerledim. Oraya ulaştığımda, küçük bir kampın yanında yanan bir ateş gördüm. Ateşin başında Bayan Watson için çalışan Jim oturuyordu. Onu burada gördüğüm için çok şaşırdım. Onun bir arkadaş olduğunu bilmek kendimi biraz daha iyi hissettirdi, bu yüzden merhaba demek için ağaçların arasından çıktım. Jim bana baktı ve gözleri şaşkınlıkla kocaman açıldı.",
+      "Jim korkuyla yerinden sıçradı ve bir hayalet olduğumu sandığı için bağırdı. Çok endişeli görünüyordu ama ona gerçek ve canlı olduğumu hemen söyledim. Beni gördüğüne o kadar sevindi ki ağlamaya başladı. Jim, Bayan Watson'ın onu Güney'de çok uzak bir yere satmak istediğini duyduğu için kaçtığını anlattı. Ona nerede saklandığını asla kimseye söylemeyeceğime dair söz verdim. Sıcak ateşin kenarına oturduk ve uzun süre konuştuk. Bu ıssız adada konuşacak bir arkadaşa sahip olmak çok iyi hissettiriyordu. İkimiz de kimsenin bize zarar veremeyeceği yeni bir yerde özgürlüğümüzü bulmak için kaçtığımızdan birlikte kalmaya karar verdik.",
+      "Ertesi gün, kayalıkların yukarısında büyük bir mağara bulduk. Eşyalarımızı yağmurdan ve yükselen nehirden korumak için mükemmel bir yerdi. Ekmek, et ve kuru giysiler gibi tüm malzemelerimizi karanlık mağaraya taşıdık. Nehrin yakınındaki çamurlu zeminde iz bırakmamaya dikkat ettik. Bazen taze yiyecek bulmak için durgun suda balık tuttuk. Jim çok zekiydi ve orman ile nehir hakkında birçok şey biliyordu. Bana bulutları ve rüzgarı nasıl okuyacağımı öğretti. Jim ile kendimi çok daha güvende hissediyordum çünkü o nazik biriydi ve biz hareket etmek için doğru zamanı beklerken bana bir kardeş gibi göz kulak oluyordu.",
+      "Bir gece şiddetli bir fırtına başladı ve nehir çok hızlı yükseldi. Karanlık ve coşkun suların üzerinde yüzen bir kütük ev gördük. Kanomuzla ona doğru kürek çektik ve bizim için yararlı bir şey olup olmadığını görmek için içeri tırmandık. Ev boştu ama bazı eski giysiler, bir mutfak bıçağı ve battaniyeler bulduk. Odanın etrafına baktım ve köşedeki yerde yatan bir adam gördüm. Hareket etmiyordu ve yüzüne bakamayacak kadar korkmuştum. Jim ona baktı ve adamın ölü olduğunu fısıldadı. Daha fazlasını görmek istemedim, bu yüzden ihtiyacımız olan şeyleri hızla aldık ve tehlikeli yolculuğumuza nehir aşağı devam etmek için evden ayrıldık.",
+      "Bir gün kasabaya gidip haber almaya karar verdim. Kim olduğumu kimse anlamasın diye kız elbiseleri giydim. Yeni bir kadının yaşadığı küçük bir eve gittim. Beni tanımıyordu, bu yüzden onunla konuştum. Bana birçok insanın Jim'i aradığını söyledi. Adada duman gördüklerini ve orada saklandığını düşündüklerini anlattı. Ayrıca onu bulan kişilerin para ödülü istediğini söyledi. Bunu duyduğumda içim ürperdi ve çok korktum. Artık adada güvende olmadığımızı biliyordum. Kadına veda ettim ve iyi arkadaşımı uyarmak için nehre doğru olabildiğince hızlı koştum.",
+      "Adaya geri döndüğümde Jim'i buldum ve her şeyi ona anlattım. Güvenli mağaramızdan hemen ayrılmalıydık çünkü insanlar bizi aramaya geliyorlardı. Eşyalarımızı sala yükledik ve gece vakti Mississippi Nehri boyunca yolculuk yapmaya hazırlandık. Nehir çok genişti ve su karanlıkta hızla akıyordu. Gündüzleri uyumaya ve sadece güneş battıktan sonra hareket etmeye karar verdik. Kıyıdaki insanlardan gizlenmenin tek yolu buydu. Çok zor bir plandı ama cesur olmalıydık. Sessiz gecede kasabaların yanından geçerken diğer teknelerin bizi görmemesi için lambamızı kıstık.",
+      "Sal üzerindeki hayatımız parlak yıldızların altında yeni evimiz oldu. Büyük nehir bizi hedefimize doğru götürürken biz yavaşça ilerliyorduk. Bazen meyve toplamak veya sığ sularda balık tutmak için duruyorduk. Yakınımızda başka tekneler duyduğumuzda pek konuşmuyorduk. Dünya hakkında birçok yeni şey öğreniyormuşum gibi hissediyordum. Jim harika bir yol arkadaşıydı ve bana hayatıyla ilgili birçok hikaye anlatıyordu. Yakalanma endişesi taşısak da ilk kez kendimizi özgür hissediyorduk. Suyun üzerindeki ay ışığını izledik ve sonunda güvende olabileceğimiz bir yerin hayalini kurduk. Su bizi karanlık ve gizemli geceye doğru sürüklerken umudumuza tutunduk.",
+      "Silas Phelps'in çiftliğine ulaştık. Onu bekledikleri için yeğeni Tom Sawyer olduğumu söyledim. Jim, arazideki küçük bir kulübede tutuluyordu. Jim tekrar bir esir olduğu için üzgündüm. Tom Sawyer daha sonra geldi ve Jim'i özgür bırakmak için bana bir planla yardım etmeye karar verdi. Tom maceraları ve karmaşık oyunları severdi. Planımızın heyecan verici olması için uzun ve zor olması gerektiğini düşündü. Yere bir tünel kazdık ve Jim'in kullanması için bir ip merdiven yaptık. Kitaplarımızdaki hikayelere göre her şeyin mükemmel olmasını istedik. İkimiz için de çok meşgul ve garip bir zamandı.",
+      "Kaçış gecesi sonunda geldi ve sessizce küçük kulübeye doğru ilerledik. Yanımıza aletler ve Jim'e gizli notlar aldık. Her şey çok dramatikti çünkü Tom bunun bir hapishaneden büyük bir kaçış gibi hissettirmesini istiyordu. Biz çalışırken Jim'e sakin kalmasını söyledik. Aniden komşular bizi duydu ve silahlarıyla bizi kovalamaya başladılar. Ağaçların arasından nehre doğru koşabildiğimiz kadar hızlı koştuk. Tom bacağından yaralandı ama salımıza geri dönmeyi başardık. Jim bize yardım etti ve tehlikeli çiftlikten uzaklaşırken sonunda rüzgarı yüzümüzde hissettik.",
+      "Nehirde güvende olduktan sonra gerçeği öğrendik. Jim zaten özgür bir adamdı çünkü ona sahip olan kadın ölmüştü ve vasiyetinde onun özgür olması gerektiğini belirtmişti. Tom bunu başından beri biliyordu ama bir macera yaşamak istemişti. Eve döndük ve rahatladık. Jim sonunda özgür bir adam olduğu için mutluydu ve çok çalışıp parasını biriktirmeyi planlıyordu. Bir evde yaşamaya zorlanmak ve tekrar katı kurallara uymak istemediğime karar verdim. Batıya gidip büyük ovaları görmek istiyorum. Artık bir sonraki yolculuğumun başlama vakti geldi."
+    ],
+    words: {
+      "civilized": "medeni",
+      "barrel": "fıçı",
+      "cabin": "kulübe",
+      "escape": "kaçış",
+      "survive": "hayatta kalmak",
+      "runaway": "kaçak",
+      "canoe": "kano",
+      "moonlight": "ay ışığı",
+      "shadow": "gölge",
+      "silence": "sessizlik",
+      "smoke": "duman",
+      "shock": "şok",
+      "ghost": "hayalet",
+      "freedom": "özgürlük",
+      "cave": "mağara",
+      "supplies": "erzak / malzeme",
+      "storm": "fırtına",
+      "downstream": "nehir aşağı / akıntı yönünde",
+      "news": "haber",
+      "raft": "sal",
+      "shore": "kıyı",
+      "companion": "yol arkadaşı",
+      "mysterious": "gizemli",
+      "nephew": "erkek yeğen",
+      "prisoner": "esir",
+      "adventure": "macera",
+      "dramatic": "heyecanlı, dramatik",
+      "relieved": "rahatlamış"
+    }
+  },
+      {
+    id: 'classic_twenty_thousand_leagues',
+    title: "Twenty Thousand Leagues Under the Seas",
+    author: 'Jules Verne',
+    level: 'A2',
+    coverUrl: '/covers/classic_twenty_thousand_leagues.webp',
+    en: [
+      "In the year 1866, something strange happened in the ocean. Many ships saw a giant animal. Some people said it was a whale, but it was much bigger and faster. It moved like lightning and caused many accidents. People around the world were very afraid. Governments sent big ships to find this monster and stop it. Professor Pierre Aronnax was a famous scientist. He wanted to solve this mystery. He joined a fast ship called the Abraham Lincoln. The captain of the ship was very brave. They sailed for many months across the big sea, but they did not see anything. The crew was tired, and they wanted to go home. However, the professor did not give up. He watched the water every single day and night, waiting for the giant monster to appear.",
+      "One dark night, the ship was near the middle of the ocean. Suddenly, the sailors shouted with joy. They saw something bright in the water. It was a giant light. The captain turned the ship toward the light. The animal was fast, but the ship was also very fast. They followed it for a long time. Then, the monster stopped. It did not move at all. The crew was very excited. They got closer to see what it was. But suddenly, the animal moved back quickly and hit the ship with a lot of force. The ship shook very hard. Professor Aronnax lost his balance and fell into the cold, dark water. He shouted for help, but the waves were too big. He was alone in the deep, dangerous sea.",
+      "The professor struggled to stay above the water. He was very tired and cold. Suddenly, he felt something hard under his feet. It was not a rock and it was not a whale. It felt like metal. He climbed onto it and saw his loyal servant, Conseil, and a man named Ned Land. Ned Land was a strong harpooner who was also on the ship. They were all on top of a giant machine. It was not an animal at all. It was a submarine! The surface was smooth and made of iron. They realized that the monster was actually a man-made vessel. They waited on the cold metal for the sun to rise. They did not know where they were or who lived inside this strange and mysterious underwater home.",
+      "As the sun rose over the quiet ocean, we looked around at the strange metal island. The surface was made of large iron plates. I touched the cold metal and realized it was very strong. We were sitting on a submarine, not a sea monster. Ned Land was angry and started to hit the metal. He wanted someone inside to hear us. He shouted for help again and again. I felt worried about what we would find. Suddenly, the machine began to move. It started to sink under the water. We held on tightly to the cold iron surface so we would not fall into the sea. We were terrified because the water rose higher and higher around our feet. We knew that soon we would be underwater. We waited for our fate in silence.",
+      "The hatch suddenly opened with a loud sound. Strong men with strange masks pulled us inside quickly. They did not speak any language we knew. They were silent and serious. They took us to a small room and left us there. We were hungry, thirsty, and very tired from our long night on the metal surface. After some time, a man walked into the room. He wore a special uniform and looked very intelligent. He looked at us with a cold face but did not say a word. We tried to talk to him in French, English, and Latin, but he did not answer. He turned around and left the room without a sound. We were prisoners in this secret place. We were completely alone under the deep blue sea.",
+      "The room was clean and had everything we needed to survive. We saw many books on the walls and beautiful art. The walls looked like they were made of wood, but they were very strong. Through a small window, I could see fish swimming past us. The light from the inside of the submarine made the water look green and blue. We were deep under the ocean, traveling to places no man had ever seen before. I realized that the man in the uniform was the captain of this ship. He was a man of mystery who hid from the world. We were now part of his crew, whether we liked it or not. I wanted to learn his secrets and understand his amazing machine during our journey.",
+      "Captain Nemo invited us to eat in his private room. The table was full of delicious food from the sea. Everything tasted fresh and strange, like deep-sea plants and fish. He finally decided to speak to us in many languages. He told us that he did not like the world on land. He wanted to live free under the ocean, away from the laws of men. He called his submarine the Nautilus. I listened carefully to his words. He was very intelligent and knew a lot about science. He showed us a map of the world. He planned to travel everywhere under the sea. He told us that we were prisoners, but we could see the wonders of the deep. I felt curious about his life and his big, strong ship.",
+      "The Nautilus was truly a wonder of engineering. It had powerful electric engines that let it move silently through the water. Inside the ship, there was a big library with thousands of books. Captain Nemo loved to study history and science while we traveled. He showed me a room full of ocean treasures. There were gold coins, pearls, and jewels from lost ships. He said he did not care about money, but he loved the history of the sea. I walked through the long hallways and looked at the machines. Everything was shiny and clean. Ned Land still wanted to escape, but I wanted to stay. I wanted to see everything that this amazing submarine could show us in the deep, dark water.",
+      "One day, the Captain took us to the deck of the submarine. We were deep in the middle of the Pacific Ocean. He told us to put on special suits made of heavy clothes and helmets. We walked on the bottom of the ocean floor. It was like walking on another planet. The light from the sun was weak, but the colors of the plants were beautiful. We saw giant crabs and strange, colorful fish. I felt like I was in a dream. Captain Nemo walked ahead of us, looking for something special. He picked up shells and studied the rocks. I realized that the ocean was a big, secret home for him. We were lucky to be the first guests to see this silent, hidden world under the heavy waves.",
+      "The Nautilus continued its long journey across the vast ocean. One morning, Captain Nemo told us that we were close to the dangerous Coral Kingdom. I looked through the thick glass window and saw an amazing sight. There were thousands of small, colorful plants and tiny rocks growing together. It looked like a garden made of stone under the water. The Captain stopped the submarine to let us look at the beautiful view for a long time. Everything was quiet and peaceful in this strange place. I felt very happy to see such a lovely part of the sea that no other person had ever seen before. I wrote many notes in my book about the bright colors and the shapes of these coral structures while the ship waited there.",
+      "Suddenly, our journey became dangerous because the submarine hit some sharp rocks. The Nautilus could not move forward anymore because it was stuck on the ground. We were now trapped in a shallow place where the water level was dropping quickly. Ned Land and Conseil were very worried about our future. We stayed inside the ship for many days while we waited for the tide to come back. Captain Nemo did not seem afraid at all. He worked on his machines and stayed calm during this difficult time. I watched him work and learned that he was a man who never lost hope. He believed that the ocean would help us escape from this place if we just waited for the sea to rise again.",
+      "While we waited, we went outside to walk on the sandy floor of the ocean. The air was fresh because the Captain gave us special tanks to help us breathe underwater. We explored the area around the ship and saw many big shells and long, green sea plants. I found a very large pearl inside a shell and showed it to the Captain. He smiled but he did not seem to care about the money it was worth. He told me that the ocean holds many secrets for those who want to see them. Finally, the water level rose and the Nautilus moved away from the sharp rocks. We were free to travel again and explore the deep, dark places of the world with our mysterious host.",
+      "Our final journey brought us to the cold waters of the far north near the whirlpool of the Maelstrom. The sea became very rough and dark as the giant waves hit the Nautilus with great power. Captain Nemo looked at the storm with sad eyes because he decided that his long life under the sea was coming to an end. He did not speak much, but he guided the ship straight into the center of the dangerous spinning water. The noise was very loud and the ship began to spin quickly around and around. I felt very scared because I knew that the force of the water was stronger than any machine we had. We were trapped in a dark circle of deep water and our journey was finally nearing its mysterious and silent conclusion.",
+      "The power of the whirlpool pulled the Nautilus down toward the ocean floor with incredible speed. I saw the ship bending under the pressure of the heavy waves that crashed over the metal walls. Ned Land, Conseil, and I held onto the strong chairs as the cabin shook violently in every direction. Everything inside the ship turned over and fell to the floor while the lights flickered and went out. We lost our balance and hit the walls many times during the storm. I could not see anything in the black darkness of the room, but I knew the end was near. I realized that the ocean was finally taking back the man who lived his whole life hiding from the world in his silent and lonely submarine.",
+      "Suddenly, there was a bright flash and the ship was thrown out of the whirlpool into the quiet night air. We were safe in a small boat far away from the Nautilus and its dark secrets. I looked back at the ocean, but the submarine was already gone and taken deep into the waves. We were found by some good fishermen who brought us to land after many hours at sea. My friends and I were tired and weak, but we were alive at last. I often think about Captain Nemo and the amazing things I saw under the water. The sea is a great and mysterious place that keeps many secrets, and I am lucky to have seen a small part of its wonderful world."
+    ],
+    tr: [
+      "1866 yılında okyanusta garip bir şey oldu. Birçok gemi dev bir hayvan gördü. Bazı insanlar bunun bir balina olduğunu söyledi ama çok daha büyük ve hızlıydı. Şimşek gibi hareket ediyor ve birçok kazaya sebep oluyordu. Dünyanın dört bir yanındaki insanlar çok korkmuştu. Hükümetler bu canavarı bulup durdurmak için büyük gemiler gönderdi. Profesör Pierre Aronnax ünlü bir bilim insanıydı. Bu gizemi çözmek istedi. Abraham Lincoln adlı hızlı bir gemiye katıldı. Geminin kaptanı çok cesurdu. Koca deniz boyunca aylarca yelken açtılar ama hiçbir şey görmediler. Mürettebat yorgundu ve eve dönmek istiyordu. Ancak profesör pes etmedi. Her gece ve gündüz suyu izledi, dev canavarın ortaya çıkmasını bekledi.",
+      "Karanlık bir gecede gemi okyanusun ortasına yakındı. Birdenbire denizciler sevinçle bağırdı. Suda parlak bir şey gördüler. Bu dev bir ışıktı. Kaptan gemiyi ışığa doğru çevirdi. Hayvan hızlıydı ama gemi de oldukça hızlıydı. Onu uzun süre takip ettiler. Sonra canavar durdu. Hiç hareket etmiyordu. Mürettebat çok heyecanlıydı. Ne olduğunu görmek için yaklaştılar. Ama aniden hayvan hızla geri hareket etti ve büyük bir güçle gemiye çarptı. Gemi çok sert sallandı. Profesör Aronnax dengesini kaybetti ve soğuk, karanlık suya düştü. Yardım için bağırdı ama dalgalar çok büyüktü. Derin ve tehlikeli denizde yapayalnızdı.",
+      "Profesör suyun üzerinde kalmak için mücadele etti. Çok yorgun ve soğuktu. Birdenbire ayaklarının altında sert bir şey hissetti. Bu bir kaya değildi, bir balina da değildi. Metal gibi hissettiriyordu. Üzerine tırmandı ve sadık hizmetkarı Conseil ile Ned Land adında bir adamı gördü. Ned Land, gemide bulunan güçlü bir zıpkıncıydı. Hepsi dev bir makinenin üzerindeydi. Bu bir hayvan falan değildi. Bu bir denizaltıydı! Yüzey pürüzsüzdü ve demirden yapılmıştı. Canavarın aslında insan yapımı bir araç olduğunu fark ettiler. Güneşin doğmasını beklemek için soğuk metalin üzerinde beklediler. Nerede olduklarını ya da bu garip ve gizemli su altı evinin içinde kimin yaşadığını bilmiyorlardı.",
+      "Güneş sessiz okyanusun üzerinde doğarken etrafımızdaki tuhaf metal adaya baktık. Yüzey büyük demir plakalardan yapılmıştı. Soğuk metale dokundum ve çok sağlam olduğunu fark ettim. Bir deniz canavarı değil, bir denizaltının üzerindeydik. Ned Land öfkeliydi ve metale vurmaya başladı. İçerideki birinin bizi duymasını istiyordu. Tekrar tekrar yardım çığlığı attı. Ne bulacağımız konusunda endişeliydim. Aniden makine hareket etmeye başladı. Suyun altına doğru batıyordu. Denize düşmemek için soğuk demir yüzeye sıkıca tutunduk. Su ayaklarımızın etrafında giderek yükseldiği için çok korkmuştuk. Yakında suyun altında olacağımızı biliyorduk. Sessizlik içinde kaderimizi bekledik.",
+      "Kapak aniden yüksek bir sesle açıldı. Tuhaf maskeleri olan güçlü adamlar bizi hızla içeri çektiler. Bildiğimiz hiçbir dilde konuşmuyorlardı. Sessiz ve ciddiydiler. Bizi küçük bir odaya götürüp orada bıraktılar. Metal yüzeydeki uzun gecemizden dolayı aç, susuz ve çok yorgunduk. Bir süre sonra, bir adam odaya girdi. Özel bir üniforma giyiyordu ve çok zeki görünüyordu. Bize soğuk bir yüzle baktı ama tek kelime etmedi. Onunla Fransızca, İngilizce ve Latince konuşmaya çalıştık ama cevap vermedi. Arkasını döndü ve hiç ses çıkarmadan odadan çıktı. Bu gizli yerde mahkumduk. Derin mavi denizin altında tamamen yalnızdık.",
+      "Oda temizdi ve hayatta kalmak için ihtiyacımız olan her şeye sahipti. Duvarlarda birçok kitap ve güzel sanat eserleri gördük. Duvarlar ahşaptan yapılmış gibi görünüyordu ama çok sağlamlardı. Küçük bir pencereden yanımızdan geçen balıkları görebiliyordum. Denizaltının içinden gelen ışık, suyu yeşil ve mavi gösteriyordu. Okyanusun derinliklerindeydik ve hiçbir insanın daha önce görmediği yerlere seyahat ediyorduk. Üniformalı adamın bu geminin kaptanı olduğunu anladım. O, dünyadan saklanan gizemli bir adamdı. Artık istesek de istemesek de mürettebatının bir parçasıydık. Yolculuğumuz boyunca onun sırlarını öğrenmek ve bu harika makinesini anlamak istiyordum.",
+      "Kaptan Nemo bizi özel odasında yemek yemeye davet etti. Masa denizden gelen lezzetli yiyeceklerle doluydu. Her şey, derin deniz bitkileri ve balıkları gibi taze ve tuhaf bir tada sahipti. Sonunda bizimle birçok dilde konuşmaya karar verdi. Bize karadaki dünyayı sevmediğini söyledi. İnsanların kanunlarından uzakta, okyanusun altında özgürce yaşamak istiyordu. Denizaltısına Nautilus adını vermişti. Sözlerini dikkatle dinledim. Çok zekiydi ve bilim hakkında çok şey biliyordu. Bize dünyanın bir haritasını gösterdi. Deniz altındaki her yere seyahat etmeyi planlıyordu. Bize esir olduğumuzu ama derinliklerin harikalarını görebileceğimizi söyledi. Onun hayatını ve büyük, güçlü gemisini merak ettim.",
+      "Nautilus gerçekten mühendisliğin bir harikasıydı. Suyun içinde sessizce hareket etmesini sağlayan güçlü elektrikli motorları vardı. Geminin içinde binlerce kitabın bulunduğu büyük bir kütüphane vardı. Kaptan Nemo biz seyahat ederken tarih ve bilim çalışmayı seviyordu. Bana okyanus hazineleriyle dolu bir oda gösterdi. Kayıp gemilerden kalma altın paralar, inciler ve mücevherler vardı. Parayı önemsemediğini ama denizin tarihini sevdiğini söyledi. Uzun koridorlarda yürüdüm ve makinelere baktım. Her şey parlak ve temizdi. Ned Land hala kaçmak istiyordu ama ben kalmak istiyordum. Bu harika denizaltının bize derin ve karanlık sularda gösterebileceği her şeyi görmek istiyordum.",
+      "Bir gün Kaptan bizi denizaltının güvertesine çıkardı. Büyük Okyanus'un tam ortasındaydık. Bize ağır kıyafetlerden ve kasklardan oluşan özel giysiler giymemizi söyledi. Okyanus tabanında yürüdük. Başka bir gezegende yürümek gibiydi. Güneşten gelen ışık zayıftı ama bitkilerin renkleri çok güzeldi. Dev yengeçler ve tuhaf, renkli balıklar gördük. Bir rüyadaymışım gibi hissettim. Kaptan Nemo önümüzde yürüyerek özel bir şeyler arıyordu. Deniz kabukları topladı ve kayaları inceledi. Okyanusun onun için büyük ve gizli bir ev olduğunu anladım. Ağır dalgaların altındaki bu sessiz, gizli dünyayı gören ilk misafirler olduğumuz için şanslıydık.",
+      "Nautilus, uçsuz bucaksız okyanusta uzun yolculuğuna devam etti. Bir sabah Kaptan Nemo, tehlikeli Mercan Krallığı'na yakın olduğumuzu söyledi. Kalın cam pencereden baktım ve harika bir manzara gördüm. Suyun altında taştan yapılmış bir bahçe gibi görünen, binlerce küçük, renkli bitki ve minik kaya bir arada büyüyordu. Kaptan, bu güzel manzarayı uzun süre izlememiz için denizaltıyı durdurdu. Bu tuhaf yerde her şey sessiz ve huzurluydu. Daha önce hiçbir insanın görmediği denizin bu güzel kısmını gördüğüm için çok mutlu oldum. Gemi orada beklerken, kitabıma parlak renkler ve bu mercan yapılarının şekilleri hakkında birçok not aldım.",
+      "Aniden, denizaltı bazı keskin kayalara çarptığı için yolculuğumuz tehlikeli bir hal aldı. Nautilus artık ileri gidemiyordu çünkü zemine saplanmıştı. Su seviyesinin hızla düştüğü sığ bir yerde mahsur kalmıştık. Ned Land ve Conseil geleceğimiz hakkında çok endişeliydi. Gelgitin geri gelmesini beklerken günlerce geminin içinde kaldık. Kaptan Nemo hiç korkmuş görünmüyordu. Makineleri üzerinde çalıştı ve bu zor zamanlarda sakin kaldı. Onu izledim ve hiç umudunu kaybetmeyen bir adam olduğunu öğrendim. Denizin yükselmesini beklersek, okyanusun buradan kaçmamıza yardım edeceğine inanıyordu.",
+      "Biz beklerken, okyanusun kumlu zemininde yürümek için dışarı çıktık. Kaptan su altında nefes almamıza yardımcı olacak özel tanklar verdiği için hava tazeydi. Geminin etrafındaki alanı keşfettik ve birçok büyük kabuk ile uzun, yeşil deniz bitkileri gördük. Bir kabuğun içinde çok büyük bir inci buldum ve Kaptana gösterdim. Gülümsedi ama değerini hiç önemsemiyor gibiydi. Bana, okyanusun onu görmek isteyenler için birçok sır sakladığını söyledi. Sonunda su seviyesi yükseldi ve Nautilus keskin kayalardan uzaklaştı. Yeniden özgürdük ve gizemli ev sahibimizle dünyanın derin, karanlık yerlerini keşfetmeye devam ettik.",
+      "Son yolculuğumuz bizi Maelstrom anaforunun yakınındaki uzak kuzeyin soğuk sularına getirdi. Dev dalgalar Nautilus'a büyük bir güçle çarptıkça deniz çok dalgalı ve karanlık hale geldi. Kaptan Nemo fırtınaya hüzünlü gözlerle baktı çünkü deniz altındaki uzun yaşamının sonuna geldiğine karar vermişti. Fazla konuşmadı ancak gemiyi tehlikeli dönen suyun merkezine doğru yönlendirdi. Gürültü çok fazlaydı ve gemi hızla kendi etrafında dönmeye başladı. Suyun kuvvetinin sahip olduğumuz herhangi bir makineden daha güçlü olduğunu bildiğim için çok korktum. Derin suyun karanlık bir çemberine hapsolmuştuk ve yolculuğumuz sonunda gizemli ve sessiz sonucuna yaklaşıyordu.",
+      "Anaforun gücü Nautilus'u inanılmaz bir hızla okyanus tabanına doğru çekti. Geminin metal duvarlarına çarpan ağır dalgaların basıncı altında büküldüğünü gördüm. Kabin her yöne doğru şiddetle sarsılırken Ned Land, Conseil ve ben güçlü sandalyelere tutunduk. Işıklar sönüp yanarken geminin içindeki her şey ters döndü ve yere düştü. Dengeyi kaybettik ve fırtına sırasında birçok kez duvarlara çarptık. Odanın kapkaranlık içinde hiçbir şeyi göremiyordum ama sonun yakın olduğunu biliyordum. Okyanusun, tüm hayatını dünyadan saklanarak sessiz ve yalnız denizaltısında geçiren adamı sonunda geri aldığını anladım.",
+      "Aniden parlak bir ışık çaktı ve gemi anaforun dışına, sessiz gece havasına fırlatıldı. Nautilus ve onun karanlık sırlarından çok uzakta, küçük bir teknede güvendeydik. Denize geri baktım ama denizaltı çoktan gitmiş ve dalgaların derinliklerine çekilmişti. Saatlerce süren deniz yolculuğundan sonra bizi karaya getiren iyi kalpli balıkçılar tarafından bulunduk. Arkadaşlarım ve ben yorgun ve halsizdik ama sonunda hayattaydık. Sık sık Kaptan Nemo'yu ve suyun altında gördüğüm inanılmaz şeyleri düşünüyorum. Deniz, birçok sırrı saklayan büyük ve gizemli bir yer ve onun harika dünyasının küçük bir kısmını gördüğüm için şanslıyım."
+    ],
+    words: {
+      "monster": "canavar",
+      "scientist": "bilim insanı",
+      "submarine": "denizaltı",
+      "vessel": "gemi/araç",
+      "harpooner": "zıpkıncı",
+      "mystery": "gizem",
+      "surface": "yüzey",
+      "hatch": "kapak",
+      "prisoner": "mahkum",
+      "uniform": "üniforma",
+      "secret": "sır",
+      "engineer": "mühendis",
+      "treasure": "hazine",
+      "pearl": "inci",
+      "deck": "güverte",
+      "helmet": "kask",
+      "coral": "mercan",
+      "shallow": "sığ",
+      "tide": "gelgit",
+      "breathe": "nefes almak",
+      "trapped": "mahsur kalmış",
+      "whirlpool": "anafor",
+      "storm": "fırtına",
+      "pressure": "basınç",
+      "violently": "şiddetle",
+      "darkness": "karanlık",
+      "mysterious": "gizemli"
+    }
+  },
+      {
+    id: 'classic_earth_to_moon',
+    title: "From the Earth to the Moon",
+    author: 'Jules Verne',
+    level: 'A2',
+    coverUrl: '/covers/classic_earth_to_moon.webp',
+    en: [
+      "The American Civil War was over, but the members of the Gun Club in Baltimore had nothing to do. These men were soldiers who loved big cannons. They spent their days talking about weapons and war. One evening, the president of the club, Impey Barbicane, stood up to speak to his friends. He had a very important idea. He wanted to talk to the Moon. He believed that they could send a giant projectile to the Moon using a very powerful cannon. His friends were silent at first, but then they cheered loudly. They were excited to start a new adventure that would change the world forever. It was a crazy dream, but the men of the Gun Club loved difficult challenges. They started to plan their project right away.",
+      "The news about the trip to the Moon traveled very fast across the United States. Everyone in the country wanted to hear about the Gun Club. Barbicane decided to ask the Observatory in Cambridge for help. He sent a letter to the experts there to ask if it was possible to hit the Moon with a shell. The experts worked for a long time on the math. Finally, they sent an answer back to Baltimore. They said that it was indeed possible to hit the Moon. They explained that the shell needed to be very fast to escape the gravity of the Earth. The people were so happy to hear this news. They started to donate money to help the Gun Club build the biggest cannon in history.",
+      "Barbicane and his friends chose a location for their project in Florida. It was a flat place with good soil for building. The whole world watched as they began to dig a giant hole into the ground. Thousands of workers arrived to help them with the heavy work. They used many tons of metal and fuel. The work was very dangerous, but the men were brave and determined. They wanted to show that humans could reach the stars. Every day, the newspapers wrote about the progress of the cannon. The people of the world waited for the big day when the shell would finally leave the Earth. It was a time of great mystery and hope for every person on the planet.",
+      "While the workers dug the giant hole in Florida, a new man arrived in Baltimore. His name was Michel Ardan. He was a brave French traveler with many exciting ideas. Ardan sent a telegram to the Gun Club with a very surprising request. He told Barbicane that he did not want to stay on the ground while the shell flew to the moon. Instead, he wanted to be inside the shell. Everyone in the club was shocked by this crazy plan. They thought it was impossible for a human to travel in such a way. Barbicane read the telegram many times, feeling both amazed and nervous. This Frenchman was ready to risk his life for science and adventure. He wanted to go where no person had ever gone before.",
+      "Ardan arrived in Florida soon after his message. He was a tall man with a friendly face and a lot of energy. He met with Barbicane and his best friend, J.T. Maston. Maston was a man who had lost his arm in the war, but he was still very smart. Ardan talked to them about his plan to travel inside the metal shell. He explained that the shell needed to be like a comfortable home with air and food. Barbicane listened carefully because he wanted the mission to succeed. The three men spent many nights talking about the technical details of the travel. They looked at maps of the stars and talked about the moon. The bond between these men became very strong during these long meetings.",
+      "The plan to send a person to the moon became the most important event in the world. Many people started to think that Ardan was a hero. Some thought he was a dreamer, but many others supported him. The construction of the shell changed because of his request. It needed to be stronger and safer than they first planned. The engineers added new systems to provide fresh air for the traveler. They also built special seats to keep Ardan safe when the giant cannon fired. The whole world watched the progress with great interest. People sent letters of support from every country. They were ready to see if a human could really reach the moon. The excitement in the air grew bigger with every passing day.",
+      "The day of the big launch finally arrived in Florida. A huge crowd gathered from all over the world to watch the historic event. People stood under the hot sun, waiting for the giant cannon to fire. Michel Ardan, Barbicane, and Captain Nicholl climbed into the metal shell. It was a very small space, but it was filled with everything they needed for their journey. They had food, water, and tools to help them survive in space. The men sat in their special chairs and felt very calm. They knew that today they would go where no human had ever been. Outside, the crowd was quiet, waiting for the final moment. The air was full of tension as the countdown started. Every person held their breath, watching the metal giant that would take the travelers to the stars.",
+      "Barbicane gave the signal to start the operation. The gunpowder inside the huge hole below the shell began to burn. Suddenly, a sound louder than thunder shook the entire earth. The shell shot up into the sky like a bright star. It moved so fast that the human eye could not follow it. The ground trembled for many miles around the launch site. Dust and smoke filled the air, hiding the sky for a few moments. Everyone looked up, hoping to see the metal object moving away from the earth. The energy of the explosion was truly incredible. It was a perfect start for the long trip. The travelers were now moving through the clouds and into the dark space above, beginning their adventure toward the moon.",
+      "Inside the shell, the three men felt a strong force pushing them down into their seats. The speed of the flight was faster than anyone had ever experienced before. Ardan looked out of the small window to see the world becoming smaller and smaller. They were now leaving their home planet behind forever. Even though the journey was dangerous, they felt very happy and excited. They talked about the moon and how it would look when they finally arrived. They watched the stars shining in the dark sky, brighter than they ever looked from the ground. It was the beginning of a new chapter for science. They were not just travelers anymore, but explorers of the universe. The dream of reaching the moon was finally becoming a reality.",
+      "The journey through space was quiet and peaceful. The metal shell moved very fast away from the Earth. Inside, the three brave men were safe. They looked out of the small windows and saw the Earth as a blue ball. It looked small and beautiful in the dark sky. The stars did not flicker anymore because there was no air around them. Ardan, Barbicane, and Nicholl felt no gravity at all. They floated in the cabin like birds in the sky. This was a new feeling for the travelers. They were happy to be in the middle of space. They checked their tools and food supplies again. Everything was working perfectly. They were on the right path to the moon. They felt like they were living in a dream that had finally come true.",
+      "After some time, they saw a very large object floating near their shell. It was a dog that had gone into space earlier as a test. The poor dog was already dead from the journey. Barbicane decided to open the window to push it outside. This was a difficult job because the pressure was very different. When they opened the window, a lot of cold air and light came inside. The men were careful not to lose their own air. They pushed the object away quickly and closed the heavy window. The dog disappeared into the dark space. It was a sad moment for the explorers. They knew that space was a dangerous place for every living thing. They felt lucky to be alive and inside their strong metal shell.",
+      "The moon started to look bigger as they moved forward. It was a strange world with many holes and tall mountains. The travelers prepared themselves for the final part of their flight. They needed to use their special rockets to change their speed. The moon’s gravity was pulling them closer to its surface. Ardan took many notes about the view. He was an artist and wanted to draw everything he saw. Barbicane looked at his maps and calculated their position carefully. Nicholl checked the metal shell for any signs of damage. They were calm but very focused on their task. They were very close to the goal now. The light from the moon made the inside of their cabin very bright. They were ready to land on the dusty ground of the lunar world.",
+      "The metal shell began to change its direction as they got closer to the moon. Barbicane used the small rockets to slow the ship down. The travelers felt a strong pull. The moon was now a huge, white world in front of their eyes. It did not look like a friendly place to visit. There were deep craters and rocky mountains everywhere. The surface was dusty and grey. Ardan continued to watch the ground carefully. He saw no signs of water or green plants. Everything looked quiet and still. It was a dead world, but it was also a beautiful one. They were moving very fast toward the surface of the moon. Their hearts beat fast because they were the first humans to see the lunar landscape this close. They were ready for the final landing moment.",
+      "Suddenly, the shell moved in a strange way. It did not land on the moon as they planned. Instead, it started to circle around the moon. The gravity of the moon caught them in a path around its body. They were now like a small moon going around a big one. This was a surprise to the three men. Barbicane realized that their speed was not perfect for a landing. They were floating in orbit without touching the ground. Ardan, Barbicane, and Nicholl looked at each other with worry. They had enough supplies to stay in space for a long time, but they wanted to land. They looked down at the moon and wondered if they would ever step on its dust. The journey was not over yet, and the challenge was just beginning.",
+      "The travelers decided to stay calm and study their new position. They were still alive and their ship was strong. They knew that space travel is full of surprises. They watched the moon pass under them again and again. The Earth was a tiny point far away in the dark sky. It looked very small from this distance. The men talked about their plan and how to go back home. They felt like pioneers in a giant, unknown sea of stars. Even though they could not land yet, they were happy to be there. They had traveled further than anyone in history. They ate their food and waited for the right moment to act. The story of their journey was becoming a legend. They felt proud to represent all of humanity in this strange space."
+    ],
+    tr: [
+      "Amerikan İç Savaşı sona ermişti ancak Baltimore'daki Silah Kulübü üyelerinin yapacak hiçbir işi kalmamıştı. Bu adamlar büyük topları seven askerlerdi. Günlerini silahlar ve savaş hakkında konuşarak geçiriyorlardı. Bir akşam, kulübün başkanı Impey Barbicane, arkadaşlarına konuşmak için ayağa kalktı. Çok önemli bir fikri vardı. Ay ile konuşmak istiyordu. Çok güçlü bir top kullanarak Ay'a dev bir mermi gönderebileceklerine inanıyordu. Arkadaşları önce sessiz kaldı ama sonra yüksek sesle tezahürat yaptılar. Dünyayı sonsuza dek değiştirecek yeni bir maceraya başlamak için heyecanlıydılar. Bu çılgın bir hayaldi ama Silah Kulübü adamları zorlu görevleri severlerdi. Projelerini hemen planlamaya başladılar.",
+      "Ay'a yapılacak yolculuk hakkındaki haberler Amerika Birleşik Devletleri genelinde çok hızlı yayıldı. Ülkedeki herkes Silah Kulübü hakkında bilgi almak istiyordu. Barbicane, Cambridge'deki Gözlemevi'nden yardım istemeye karar verdi. Ay'ı bir mermiyle vurmanın mümkün olup olmadığını öğrenmek için oradaki uzmanlara bir mektup gönderdi. Uzmanlar matematik üzerinde uzun süre çalıştılar. Sonunda Baltimore'a bir cevap gönderdiler. Ay'ı vurmanın gerçekten mümkün olduğunu söylediler. Merminin Dünya'nın yerçekiminden kurtulması için çok hızlı olması gerektiğini açıkladılar. İnsanlar bu haberi duydukları için çok mutlu oldular. Silah Kulübü'nün tarihteki en büyük topu inşa etmesine yardım etmek için para bağışlamaya başladılar.",
+      "Barbicane ve arkadaşları projeleri için Florida'da bir yer seçtiler. İnşaat için iyi toprağa sahip düz bir yerdi. Tüm dünya, toprağın derinliklerine dev bir delik açmaya başladıklarında onları izledi. Ağır işlerde onlara yardım etmek için binlerce işçi geldi. Tonlarca metal ve yakıt kullandılar. İş çok tehlikeliydi ama adamlar cesur ve kararlıydı. İnsanların yıldızlara ulaşabileceğini göstermek istiyorlardı. Gazeteler her gün topun ilerlemesi hakkında yazılar yazıyordu. Dünya insanları, merminin nihayet Dünya'dan ayrılacağı o büyük günü bekliyordu. Bu, gezegendeki her insan için büyük bir gizem ve umut zamanıydı.",
+      "Florida'daki işçiler dev deliği kazarken, Baltimore'a yeni bir adam geldi. Adı Michel Ardan'dı. Birçok heyecan verici fikri olan cesur bir Fransız gezgindi. Ardan, Gun Club'a çok şaşırtıcı bir istekle bir telgraf gönderdi. Barbicane'e, mermi aya doğru uçarken yerde kalmak istemediğini söyledi. Bunun yerine, merminin içinde olmak istiyordu. Kulüpteki herkes bu çılgın plandan dolayı şok oldu. Bir insanın bu şekilde seyahat etmesinin imkansız olduğunu düşündüler. Barbicane telgrafı birçok kez okudu, hem hayret içinde hem de gergin hissediyordu. Bu Fransız, bilim ve macera için hayatını riske atmaya hazırdı. Daha önce hiçbir insanın gitmediği yere gitmek istiyordu.",
+      "Ardan mesajından kısa bir süre sonra Florida'ya vardı. Güleryüzlü ve çok enerjik, uzun boylu bir adamdı. Barbicane ve en yakın arkadaşı J.T. Maston ile buluştu. Maston savaşta kolunu kaybetmiş bir adamdı ama hala çok zekiydi. Ardan onlara metal merminin içinde seyahat etme planından bahsetti. Merminin hava ve yiyecek içeren konforlu bir ev gibi olması gerektiğini açıkladı. Barbicane, görevin başarılı olmasını istediği için onu dikkatle dinledi. Üç adam, seyahatin teknik detayları hakkında konuşarak birçok gece geçirdi. Yıldız haritalarına baktılar ve ay hakkında konuştular. Bu uzun toplantılar sırasında bu adamlar arasındaki bağ çok güçlendi.",
+      "Bir insanı aya gönderme planı dünyadaki en önemli olay haline geldi. Birçok insan Ardan'ın bir kahraman olduğunu düşünmeye başladı. Bazıları onun hayalperest olduğunu düşündü ama birçoğu onu destekledi. Merminin yapımı, onun isteği nedeniyle değişti. İlk planladıklarından daha güçlü ve güvenli olması gerekiyordu. Mühendisler, gezgin için temiz hava sağlayacak yeni sistemler eklediler. Ayrıca dev top ateşlendiğinde Ardan'ı güvende tutmak için özel koltuklar inşa ettiler. Tüm dünya çalışmaları büyük bir ilgiyle izledi. İnsanlar her ülkeden destek mektupları gönderdi. Bir insanın gerçekten aya ulaşıp ulaşamayacağını görmeye hazırdılar. Havadaki heyecan her geçen gün daha da büyüdü.",
+      "Florida'da büyük fırlatılış günü nihayet geldi. Dünyanın dört bir yanından gelen büyük bir kalabalık bu tarihi olayı izlemek için toplandı. İnsanlar dev topun ateşlenmesini bekleyerek sıcak güneşin altında durdular. Michel Ardan, Barbicane ve Yüzbaşı Nicholl metal kapsülün içine girdiler. Çok küçük bir alandı ancak yolculukları için ihtiyaç duydukları her şeyle doluydu. Uzayda hayatta kalmalarına yardımcı olacak yiyecekleri, suları ve araçları vardı. Adamlar özel koltuklarına oturdular ve kendilerini çok sakin hissettiler. Bugün hiçbir insanın gitmediği bir yere gideceklerini biliyorlardı. Dışarıda kalabalık sessizce son anı bekliyordu. Geri sayım başladığında hava gerilimle doluydu. Herkes nefesini tutmuş, gezginleri yıldızlara götürecek metal devi izliyordu.",
+      "Barbicane operasyonu başlatma işaretini verdi. Kapsülün altındaki dev çukurun içindeki barut yanmaya başladı. Aniden, gök gürültüsünden daha yüksek bir ses tüm dünyayı sarstı. Kapsül parlak bir yıldız gibi gökyüzüne fırladı. O kadar hızlı hareket ediyordu ki insan gözü onu takip edemiyordu. Yer, fırlatma alanının çevresinde kilometrelerce sarsıldı. Toz ve duman havayı doldurarak gökyüzünü birkaç dakikalığına gizledi. Herkes metal nesnenin dünyadan uzaklaştığını görmeyi umarak yukarı baktı. Patlamanın enerjisi gerçekten inanılmazdı. Uzun yolculuk için mükemmel bir başlangıçtı. Gezginler artık bulutların arasından geçerek yukarıdaki karanlık boşluğa doğru ilerliyor ve aya doğru maceralarına başlıyorlardı.",
+      "Kapsülün içinde, üç adam kendilerini koltuklarına bastıran güçlü bir kuvvet hissettiler. Uçuşun hızı, kimsenin daha önce deneyimlemediği kadar fazlaydı. Ardan küçük pencereden bakarak dünyanın giderek küçüldüğünü gördü. Artık yuvalarını sonsuza dek geride bırakıyorlardı. Yolculuk tehlikeli olsa da kendilerini çok mutlu ve heyecanlı hissediyorlardı. Ay hakkında ve oraya vardıklarında nasıl görüneceği hakkında konuştular. Karanlık gökyüzünde parlayan yıldızları, yerden göründüklerinden çok daha parlak bir şekilde izlediler. Bilim için yeni bir bölümün başlangıcıydı. Artık sadece gezgin değil, evrenin kâşifleriydiler. Aya ulaşma hayali nihayet gerçeğe dönüşüyordu.",
+      "Uzaydaki yolculuk sessiz ve huzurluydu. Metal kapsül, Dünya'dan çok hızlı bir şekilde uzaklaştı. İçerideki üç cesur adam güvendeydi. Küçük pencerelerden dışarı baktılar ve Dünya'yı mavi bir top gibi gördüler. Karanlık gökyüzünde küçük ve güzel görünüyordu. Etraflarında hava olmadığı için yıldızlar artık titremiyordu. Ardan, Barbicane ve Nicholl yerçekimini hiç hissetmediler. Kabinin içinde gökyüzündeki kuşlar gibi havada süzüldüler. Bu, yolcular için yeni bir duyguydu. Uzayın ortasında oldukları için mutluydular. Araçlarını ve yiyecek stoklarını tekrar kontrol ettiler. Her şey mükemmel çalışıyordu. Aya giden doğru yoldaydılar. Nihayet gerçek olan bir rüyanın içinde yaşıyor gibi hissediyorlardı.",
+      "Bir süre sonra, kapsüllerinin yakınında yüzen çok büyük bir nesne gördüler. Bu, daha önce test amacıyla uzaya gönderilen bir köpekti. Zavallı köpek yolculuktan dolayı çoktan ölmüştü. Barbicane, onu dışarı itmek için pencereyi açmaya karar verdi. Bu zor bir işti çünkü basınç çok farklıydı. Pencereyi açtıklarında içeriye bolca soğuk hava ve ışık doldu. Adamlar kendi havalarını kaybetmemeye dikkat ettiler. Nesneyi hızla dışarı itip ağır pencereyi kapattılar. Köpek karanlık uzayda kayboldu. Bu, kaşifler için üzücü bir andı. Uzayın her canlı için tehlikeli bir yer olduğunu biliyorlardı. Hayatta oldukları ve güçlü metal kapsüllerinin içinde bulundukları için kendilerini şanslı hissettiler.",
+      "Onlar ilerledikçe Ay daha büyük görünmeye başladı. Birçok delik ve yüksek dağlarla dolu garip bir dünyaydı. Yolcular uçuşlarının son kısmı için kendilerini hazırladılar. Hızlarını değiştirmek için özel roketlerini kullanmaları gerekiyordu. Ay'ın yerçekimi onları yüzeyine doğru çekiyordu. Ardan gördüğü manzara hakkında birçok not aldı. O bir sanatçıydı ve gördüğü her şeyi çizmek istiyordu. Barbicane haritalarına baktı ve konumlarını dikkatlice hesapladı. Nicholl, metal kapsülde herhangi bir hasar olup olmadığını kontrol etti. Sakindiler ama görevlerine çok odaklanmışlardı. Artık hedeflerine çok yakındılar. Ay'dan gelen ışık, kabinlerinin içini çok parlak yaptı. Ay dünyasının tozlu zeminine inmeye hazırdılar.",
+      "Metal kapsül Ay'a yaklaştıkça yönünü değiştirmeye başladı. Barbicane, gemiyi yavaşlatmak için küçük roketleri kullandı. Yolcular güçlü bir çekim hissettiler. Ay artık gözlerinin önünde devasa, beyaz bir dünyaydı. Ziyaret edilecek dostça bir yere benzemiyordu. Her yerde derin kraterler ve kayalık dağlar vardı. Yüzey tozlu ve griydi. Ardan zemini dikkatlice izlemeye devam etti. Su veya yeşil bitkilere dair hiçbir iz görmedi. Her şey sessiz ve hareketsiz görünüyordu. Ölü bir dünyaydı ama aynı zamanda güzeldi. Ay'ın yüzeyine doğru çok hızlı ilerliyorlardı. Kalpleri hızla çarpıyordu çünkü Ay manzarasını bu kadar yakından gören ilk insanlardı. Son iniş anı için hazırdılar.",
+      "Aniden, kapsül garip bir şekilde hareket etti. Planladıkları gibi Ay'a inmedi. Bunun yerine, Ay'ın etrafında dönmeye başladı. Ay'ın yerçekimi onları gövdesi etrafındaki bir yola hapsetti. Artık büyük bir ayın etrafında dönen küçük bir ay gibiydiler. Bu durum üç adam için bir sürprizdi. Barbicane, hızlarının iniş için mükemmel olmadığını fark etti. Yere değmeden yörüngede süzülüyorlardı. Ardan, Barbicane ve Nicholl endişeyle birbirlerine baktılar. Uzayda uzun süre kalacak kadar malzemeleri vardı ama inmek istiyorlardı. Aşağıya, Ay'a baktılar ve tozuna hiç basıp basamayacaklarını merak ettiler. Yolculuk henüz bitmemişti ve zorluk yeni başlıyordu.",
+      "Yolcular sakin kalmaya ve yeni konumlarını incelemeye karar verdiler. Hala hayattaydılar ve gemileri sağlamdı. Uzay yolculuğunun sürprizlerle dolu olduğunu biliyorlardı. Ay'ın altlarından tekrar tekrar geçişini izlediler. Dünya, karanlık gökyüzünde çok uzakta küçük bir noktaydı. Bu mesafeden çok küçük görünüyordu. Adamlar planları ve eve nasıl dönecekleri hakkında konuştular. Dev, bilinmeyen bir yıldız denizinde öncüler gibi hissettiler. Henüz inemeseler de orada oldukları için mutluydular. Tarihteki herkesten daha uzağa seyahat etmişlerdi. Yemeklerini yediler ve harekete geçmek için doğru anı beklediler. Yolculuklarının hikayesi bir efsaneye dönüşüyordu. Bu garip uzayda tüm insanlığı temsil etmekten gurur duyuyorlardı."
+    ],
+    words: {
+      "cannon": "top (silah)",
+      "projectile": "mermi/fırlatılan nesne",
+      "gravity": "yerçekimi",
+      "expert": "uzman",
+      "location": "konum/yer",
+      "determined": "kararlı",
+      "telegram": "telgraf",
+      "risk": "göze almak",
+      "mission": "görev",
+      "technical": "teknik",
+      "engineer": "mühendis",
+      "progress": "ilerleme",
+      "crowd": "kalabalık",
+      "shell": "kapsül",
+      "launch": "fırlatılış",
+      "gunpowder": "barut",
+      "explosion": "patlama",
+      "explorer": "kâşif",
+      "float": "havada süzülmek",
+      "pressure": "basınç",
+      "surface": "yüzey",
+      "calculate": "hesaplamak",
+      "lunar": "Ay ile ilgili",
+      "crater": "krater",
+      "orbit": "yörünge",
+      "pioneer": "öncü",
+      "humanity": "insanlık",
+      "landscape": "manzara"
+    }
+  },
+      {
+    id: 'classic_lost_world',
+    title: "The Lost World",
+    author: 'Arthur Conan Doyle',
+    level: 'A2',
+    coverUrl: '/covers/classic_lost_world.webp',
+    en: [
+      "Edward Malone was a young reporter in London. He wanted to do something very brave and exciting for his job. He loved a girl named Gladys, but she said she could only love a hero. Edward went to see Professor Challenger, a very famous and angry scientist. The professor was a tall man with a big beard. People said he was crazy because he told stories about strange lands. Edward wanted to interview him for his newspaper. He walked to the professor's house and knocked on the door. He was nervous but also excited to meet such a difficult man. He hoped that this meeting would lead to a great adventure that could prove his bravery to Gladys. The professor opened the door and looked at Edward with big, mean eyes.",
+      "The professor did not want to talk to a reporter. He was very rude and pushed Edward out of his house. However, Edward was strong and did not give up easily. He argued with the professor because he wanted to hear about the professor's secret travels. They fought, and the professor finally hit Edward. The young man fell onto the street, but he was still happy because he knew he found a real story. He went back to the professor's house the next day with a formal apology and a plan. He wanted to learn the truth about the jungle and the dinosaurs. He realized that the professor was not just a mean man, but an explorer who found a dangerous place far away in South America.",
+      "Professor Challenger showed Edward some pictures and a strange map. He told him that he had been to a place where animals from the past were still alive. Edward listened to every word with wide eyes. It was a secret, but the professor wanted the world to know the truth. He needed a group of brave people to go on a trip with him to see it. He asked a man named Lord John Roxton to join them. Lord John was a famous hunter who knew many dangerous places in the world. Edward felt that his life was starting to change in an amazing way. He was going to travel to the middle of the jungle to find a lost world. This was his chance to become the hero that Gladys needed.",
+      "The journey across the ocean was long and very tiring. Edward, Professor Challenger, Lord John, and Professor Summerlee stood on the deck of a large ship. They watched the blue waves hit the side of the boat as they traveled toward South America. Edward felt nervous because he had never been on such a big adventure before. He looked at his partners often. Lord John was a tall man who always carried a gun, and he seemed very calm about the danger ahead. Professor Summerlee was older and more serious than the others. He did not believe the stories that Professor Challenger told about the dinosaurs. They argued every day about the trip, but the ship continued to sail forward into the unknown lands.",
+      "When they arrived in the hot and humid jungle of South America, the air felt thick and heavy. The trees were incredibly tall, and the sound of insects filled the air all day and night. They met their local guides who promised to help them move through the dark forests. The group started their long walk into the deep wilderness. Edward carried his heavy bag and tried to keep up with the fast pace of his friends. He saw strange, colorful birds flying above the trees and beautiful flowers that he had never seen before in London. Every step took them further away from the safety of home and closer to the secrets of the mysterious land that Professor Challenger described.",
+      "The path ahead became very narrow and difficult. They had to cut through the thick plants with big knives just to move forward. Sometimes, the mud was deep, and they had to help each other climb up small hills. Lord John took the lead and watched for any signs of trouble in the forest. He told Edward to be quiet and careful because there were many dangerous animals hiding in the shadows. Even though they were tired, they did not stop moving. The excitement of the mission gave them new energy. They were all very curious about what they would find at the end of their long, dangerous walk through the heart of the deep and dark South American jungle.",
+      "The jungle became silent as the trees grew higher and taller. Suddenly, the path ended in front of a giant wall of gray stone. It was a plateau that rose high above the green forest. Professor Challenger pointed to the top with a proud smile on his face. He told the men that the creatures from the past were living up there, hidden from the rest of the world. Everyone looked up at the smooth rock with surprise. It was impossible to climb such a steep surface. Professor Summerlee looked unhappy and shook his head. He still did not believe that dinosaurs were waiting for them at the top of that tall mountain. The men stood together in the hot sun and wondered how they could reach the secret place above them.",
+      "They walked around the edge of the plateau to find a way up. After two days, they saw a large, dead tree that had fallen across a deep hole. It acted like a bridge between a tall rock and the main plateau. Lord John climbed across the narrow tree first to test if it was safe. The wood shook under his weight, but he moved slowly and carefully. Edward felt his heart beat fast as he watched his friend. When Lord John arrived on the other side, he waved his hat. One by one, the others followed him. It was a terrifying moment because they could look down into the deep, dark empty space below. They finally stood on the rocky ground of the mysterious lost land.",
+      "The air on the plateau was different and smelled very clean. They walked through the tall grass and saw many strange, beautiful plants that looked like huge ferns. Everything was very quiet at first. Then, they heard a loud noise that sounded like a heavy foot hitting the soft ground. The sound was so powerful that it shook the earth under their feet. Edward was very afraid but also very excited to see the truth. They hid behind some bushes and looked into a clearing. A giant beast with long skin stood near a tree, eating the green leaves. It was exactly what Professor Challenger had described in London. They realized that they were the first humans to see a real, living dinosaur in this secret world.",
+      "The travelers walked deeper into the forest, where the trees were thick and green. Suddenly, they found a camp that looked very old. Someone had been there before them. A sign hung on a tree, and it had a name on it. It was the name of a man who had gone missing long ago. They realized that they were not the only ones to discover this strange place. This discovery made them feel very nervous about the dangers around them. They decided to keep moving forward while staying very close to each other. The forest was full of strange sounds, and they felt like someone or something was always watching them from the shadows.",
+      "As they moved across the plateau, they were surprised by a group of scary, ape-like creatures. These beings were very aggressive and loud. They lived in a village made of sticks and branches near the cliffs. The men tried to be friendly, but the creatures threw stones at them. Professor Challenger realized that these apes were the rulers of this land. They were very strong and worked together to protect their home. The travelers had to run away to find a safe place to hide. They realized that their situation was very serious because these animals did not want strangers in their territory.",
+      "Night fell quickly, and the men felt very tired after a long day of running. They hid in a small cave where they could rest without being seen. Outside the cave, the strange sounds of the jungle continued all night long. The men spoke in whispers about what they had seen during the day. They understood that the plateau was not just a home for dinosaurs, but also for these dangerous ape-like creatures. They knew they needed to find a way to escape this place soon. Edward felt happy to be alive, but he worried about how they would leave this mysterious land safely.",
+      "The morning sun rose over the tall trees, bringing light to the strange plateau. The four men stood near the cliff edge, looking at the distant path that led back home. They knew they had to be very quiet to avoid the loud ape-like creatures. Slowly, they walked through the bushes, carefully watching every shadow. Professor Challenger carried his notes tightly, excited to show the world what they had found in this hidden place. They needed to find the rope ladder they had used to climb up to the plateau weeks ago. Every step felt dangerous, but they were determined to leave this land behind and return to their normal lives in the city. The air was cool and fresh, but their hearts beat fast with the fear of being seen by the angry creatures.",
+      "Suddenly, they saw the rope ladder hanging from the rocky cliff. They felt a great joy because they knew they could finally go down to the jungle below. The Professor climbed down first, followed by Lord John and Summerlee. Edward was the last one to leave the plateau. As he climbed down the long rope, he looked up one more time at the giant trees and the mysterious land. He saw a small, strange animal move quickly between the rocks. It was a beautiful but frightening world that they would never forget. When his feet touched the ground, he felt safe once again. They all gathered together, ready to walk back through the dark jungle to the river where their boat was waiting for them to start the long journey home.",
+      "The journey back to the river was long and very difficult for the tired men. They walked for many days through the thick forest, crossing deep rivers and climbing over hills. Finally, they reached the water and saw their small boat resting near the bank. They felt very tired but also very proud of their big adventure. They had seen things that no other person had ever seen before. They climbed into the boat and started rowing away from the mysterious plateau. As the land disappeared behind them, they knew that their stories would shock the whole world. They were happy to be going home to their friends and families. The dangerous land of dinosaurs and apes stayed behind them, and they were finally safe on their way back to England."
+    ],
+    tr: [
+      "Edward Malone, Londra'da yaşayan genç bir gazeteciydi. İşi için çok cesur ve heyecan verici bir şeyler yapmak istiyordu. Gladys adında bir kızı seviyordu ama kız ona sadece bir kahramanı sevebileceğini söylemişti. Edward, çok ünlü ve öfkeli bir bilim insanı olan Profesör Challenger'ı görmeye gitti. Profesör, büyük sakallı, uzun boylu bir adamdı. İnsanlar, garip topraklar hakkında hikayeler anlattığı için onun deli olduğunu söylüyorlardı. Edward, onunla gazetesi için röportaj yapmak istiyordu. Profesörün evine yürüdü ve kapıyı çaldı. Gergin ama aynı zamanda böyle zor bir adamla tanışacağı için heyecanlıydı. Bu görüşmenin, Gladys'e cesaretini kanıtlayabileceği harika bir maceraya yol açmasını umuyordu. Profesör kapıyı açtı ve Edward'a iri, kötü gözlerle baktı.",
+      "Profesör bir gazeteciyle konuşmak istemiyordu. Çok kabaydı ve Edward'ı evinden dışarı itti. Ancak Edward güçlüydü ve kolayca pes etmedi. Profesörün gizli seyahatlerini duymak istediği için onunla tartıştı. Kavga ettiler ve profesör sonunda Edward'a vurdu. Genç adam sokağa düştü ama hala mutluydu çünkü gerçek bir hikaye bulduğunu biliyordu. Ertesi gün resmi bir özür ve bir planla profesörün evine geri döndü. Orman ve dinozorlar hakkındaki gerçeği öğrenmek istiyordu. Profesörün sadece kaba bir adam değil, Güney Amerika'da çok uzaklarda tehlikeli bir yer keşfeden bir kaşif olduğunu anladı.",
+      "Profesör Challenger, Edward'a bazı resimler ve garip bir harita gösterdi. Ona geçmişten gelen hayvanların hala yaşadığı bir yere gittiğini söyledi. Edward her kelimeyi kocaman gözlerle dinledi. Bu bir sırdı ama profesör dünyanın gerçeği bilmesini istiyordu. Bunu görmesi için kendisiyle geziye çıkacak bir grup cesur insana ihtiyacı vardı. Lord John Roxton adında birinden onlara katılmasını istedi. Lord John, dünyadaki birçok tehlikeli yeri bilen ünlü bir avcıydı. Edward, hayatının harika bir şekilde değişmeye başladığını hissetti. Kayıp bir dünya bulmak için ormanın ortasına seyahat edecekti. Bu, Gladys'in ihtiyaç duyduğu kahraman olma şansıydı.",
+      "Okyanus boyunca süren yolculuk çok uzun ve yorucuydu. Edward, Profesör Challenger, Lord John ve Profesör Summerlee büyük bir geminin güvertesinde duruyorlardı. Güney Amerika'ya doğru ilerlerken mavi dalgaların teknenin kenarına çarpışını izlediler. Edward daha önce hiç böyle büyük bir maceraya atılmadığı için gergindi. Sık sık yol arkadaşlarına bakıyordu. Lord John, her zaman yanında silah taşıyan uzun boylu bir adamdı ve ilerideki tehlikelere karşı çok sakindi. Profesör Summerlee diğerlerinden daha yaşlı ve ciddiydi. Profesör Challenger'ın dinozorlar hakkında anlattığı hikayelere inanmıyordu. Yolculuk hakkında her gün tartışıyorlardı ama gemi bilinmeyen topraklara doğru ilerlemeye devam ediyordu.",
+      "Güney Amerika'nın sıcak ve nemli ormanlarına vardıklarında, hava yoğun ve ağır hissettiriliyordu. Ağaçlar inanılmaz derecede uzundu ve böcek sesleri gece gündüz havayı dolduruyordu. Karanlık ormanlarda ilerlemelerine yardımcı olacağına söz veren yerel rehberlerle tanıştılar. Grup, derin vahşi doğaya doğru uzun yürüyüşüne başladı. Edward ağır çantasını taşıdı ve arkadaşlarının hızlı temposuna ayak uydurmaya çalıştı. Ağaçların üzerinde uçan garip, renkli kuşlar ve Londra'da daha önce hiç görmediği güzel çiçekler gördü. Her adım onları evlerinin güvenliğinden daha uzağa ve Profesör Challenger'ın tarif ettiği gizemli toprakların sırlarına daha yakına götürüyordu.",
+      "Önlerindeki yol çok dar ve zorlu hale gelmişti. Sadece ilerlemek için büyük bıçaklarla yoğun bitkilerin arasını kesmek zorunda kaldılar. Bazen çamur çok derindi ve küçük tepelere tırmanmak için birbirlerine yardım etmeleri gerekiyordu. Lord John öne geçti ve ormandaki tehlike işaretlerini kolladı. Gölgelerde saklanan birçok tehlikeli hayvan olduğu için Edward'a sessiz ve dikkatli olmasını söyledi. Yorgun olsalar da durmadılar. Görevin heyecanı onlara yeni bir enerji veriyordu. Hepsi, derin ve karanlık Güney Amerika ormanının kalbinde yapacakları uzun, tehlikeli yürüyüşün sonunda ne bulacaklarını çok merak ediyorlardı.",
+      "Ağaçlar uzayıp yükseldikçe orman sessizleşti. Aniden, patika dev bir gri taş duvarın önünde sona erdi. Bu, yeşil ormanın üzerinde yüksek bir düzlüktü. Profesör Challenger, gururlu bir gülümsemeyle parmağıyla tepeyi işaret etti. Adamlara, geçmişten gelen yaratıkların orada, dünyanın geri kalanından gizlenmiş bir şekilde yaşadığını söyledi. Herkes şaşkınlıkla pürüzsüz kayaya baktı. Bu kadar dik bir yüzeye tırmanmak imkansızdı. Profesör Summerlee mutsuz görünüyordu ve başını salladı. O yüksek dağın tepesinde dinozorların onları beklediğine hala inanmıyordu. Adamlar sıcak güneşin altında yan yana durdular ve yukarıdaki gizli yere nasıl ulaşabileceklerini düşündüler.",
+      "Yukarı çıkacak bir yol bulmak için düzlüğün kenarında yürüdüler. İki gün sonra, derin bir çukurun üzerinden geçen büyük, ölü bir ağaç gördüler. Bu, uzun bir kaya ile ana düzlük arasında bir köprü görevi görüyordu. Lord John, güvenli olup olmadığını test etmek için önce dar ağacın üzerinden geçti. Odun ağırlığının altında sallandı ama o yavaş ve dikkatli hareket etti. Edward arkadaşını izlerken kalbinin hızla attığını hissetti. Lord John diğer tarafa vardığında şapkasını salladı. Birer birer diğerleri de onu takip etti. Bu korkutucu bir andı çünkü aşağıdaki derin, karanlık boşluğa bakabiliyorlardı. Sonunda gizemli kayıp ülkenin kayalık zemininde durdular.",
+      "Düzlükteki hava farklıydı ve çok temiz kokuyordu. Uzun otların arasından geçtiler ve dev eğrelti otlarına benzeyen birçok tuhaf, güzel bitki gördüler. Başlangıçta her şey çok sessizdi. Sonra, yumuşak zemine çarpan ağır bir ayak sesine benzeyen yüksek bir gürültü duydular. Ses o kadar güçlüydü ki ayaklarının altındaki toprağı salladı. Edward çok korkmuştu ama gerçeği gördüğü için çok da heyecanlıydı. Bazı çalıların arkasına saklandılar ve bir açıklığa baktılar. Uzun boyunlu dev bir yaratık bir ağacın yanında durmuş yeşil yaprakları yiyordu. Bu, Profesör Challenger'ın Londra'da tarif ettiği şeyin aynısıydı. Bu gizli dünyada gerçek, yaşayan bir dinozor gören ilk insanlar olduklarını fark ettiler.",
+      "Gezginler ormanın derinliklerine doğru yürüdüler, burada ağaçlar çok kalın ve yeşildi. Aniden, çok eski görünen bir kamp alanı buldular. Onlardan önce orada birileri olmuştu. Bir ağaçta bir tabela asılıydı ve üzerinde bir isim yazıyordu. Bu, çok uzun zaman önce kaybolmuş bir adamın ismiydi. Bu tuhaf yeri keşfedenin sadece kendileri olmadıklarını fark ettiler. Bu keşif, çevrelerindeki tehlikeler hakkında onları çok tedirgin etti. Birbirlerine çok yakın kalarak ilerlemeye devam etmeye karar verdiler. Orman tuhaf seslerle doluydu ve birilerinin ya da bir şeylerin her zaman gölgelerden onları izlediğini hissettiler.",
+      "Plato boyunca ilerlerken, korkutucu, maymuna benzeyen bir grup yaratık tarafından şaşırtıldılar. Bu varlıklar çok saldırgan ve gürültücüydü. Kayalıkların yakınında çubuklardan ve dallardan yapılmış bir köyde yaşıyorlardı. Adamlar dost canlısı olmaya çalıştılar ancak yaratıklar onlara taş attı. Profesör Challenger, bu maymunların bu toprakların hakimi olduğunu fark etti. Çok güçlüydüler ve evlerini korumak için birlikte hareket ediyorlardı. Gezginler saklanacak güvenli bir yer bulmak için kaçmak zorunda kaldılar. Bu hayvanlar bölgelerinde yabancı istemediği için durumlarının çok ciddi olduğunu anladılar.",
+      "Gece çabuk çöktü ve adamlar uzun bir kaçış gününden sonra çok yorgun hissettiler. Görülmeden dinlenebilecekleri küçük bir mağaraya saklandılar. Mağaranın dışında, ormanın tuhaf sesleri gece boyunca devam etti. Adamlar gün içinde gördükleri hakkında fısıltıyla konuştular. Platonun sadece dinozorlar için değil, aynı zamanda bu tehlikeli maymun benzeri yaratıklar için de bir ev olduğunu anladılar. Buradan kaçmanın bir yolunu bir an önce bulmaları gerektiğini biliyorlardı. Edward hayatta olduğu için mutluydu ama bu gizemli topraklardan nasıl güvenle ayrılacakları konusunda endişeliydi.",
+      "Sabah güneşi uzun ağaçların üzerinden doğarak garip platoya ışık getirdi. Dört adam uçurumun kenarında durmuş, eve giden uzak yola bakıyorlardı. Yüksek sesli maymun benzeri yaratıklardan kaçınmak için çok sessiz olmaları gerektiğini biliyorlardı. Yavaşça çalılıkların arasından yürüdüler, her gölgeyi dikkatle izlediler. Profesör Challenger, bu gizli yerde bulduklarını dünyaya göstermek için heyecanla notlarını sıkıca tutuyordu. Haftalar önce platoya tırmanmak için kullandıkları halat merdiveni bulmaları gerekiyordu. Her adım tehlikeli görünüyordu ama bu toprakları geride bırakıp şehirdeki normal hayatlarına dönmeye kararlıydılar. Hava serin ve temizdi, ancak öfkeli yaratıklar tarafından görülme korkusuyla kalpleri hızla çarpıyordu.",
+      "Aniden kayalık uçurumdan sarkan halat merdiveni gördüler. Sonunda aşağıdaki ormana inebileceklerini bildikleri için büyük bir sevinç duydular. Profesör ilk önce, ardından Lord John ve Summerlee indi. Edward platodan ayrılan son kişiydi. Uzun halattan inerken bir kez daha dev ağaçlara ve gizemli topraklara baktı. Kayaların arasında hızlıca hareket eden küçük, garip bir hayvan gördü. Asla unutamayacakları, güzel ama korkutucu bir dünyaydı. Ayakları yere değdiğinde tekrar güvende hissetti. Hepsi bir araya geldiler, teknelerinin onları eve götürmek için beklediği nehre gitmek üzere karanlık ormanın içinden geri yürümeye hazırdılar.",
+      "Nehre dönüş yolculuğu yorgun adamlar için uzun ve çok zordu. Sık ormanın içinde günlerce yürüdüler, derin nehirleri geçtiler ve tepeleri aştılar. Sonunda suya ulaştılar ve küçük teknelerinin kıyıda durduğunu gördüler. Çok yorgundular ama büyük maceralarıyla gurur duyuyorlardı. Başka hiç kimsenin daha önce görmediği şeyleri görmüşlerdi. Tekneye bindiler ve gizemli platodan uzaklaşmaya başladılar. Topraklar arkalarında kaybolurken, hikayelerinin tüm dünyayı şoke edeceğini biliyorlardı. Arkadaşlarına ve ailelerine dönecekleri için mutluydular. Dinozorların ve maymunların tehlikeli toprakları geride kaldı ve sonunda İngiltere'ye dönüş yolunda güvendeydiler."
+    ],
+    words: {
+      "reporter": "gazeteci",
+      "hero": "kahraman",
+      "adventure": "macera",
+      "explorer": "kaşif",
+      "jungle": "orman",
+      "dinosaur": "dinozor",
+      "deck": "güverte",
+      "wilderness": "vahşi doğa",
+      "humid": "nemli",
+      "narrow": "dar",
+      "shadow": "gölge",
+      "plateau": "plato",
+      "steep": "dik",
+      "surface": "yüzey",
+      "bridge": "köprü",
+      "fern": "eğrelti otu",
+      "beast": "yaratık",
+      "discovery": "keşif",
+      "aggressive": "saldırgan",
+      "creature": "yaratık",
+      "territory": "bölge",
+      "whisper": "fısıltı",
+      "escape": "kaçmak",
+      "cliff": "uçurum",
+      "determined": "kararlı",
+      "ladder": "merdiven",
+      "mysterious": "gizemli",
+      "journey": "yolculuk"
+    }
+  },
+      {
+    id: 'classic_island_moreau',
+    title: "The Island of Doctor Moreau",
+    author: 'H. G. Wells',
+    level: 'A2',
+    coverUrl: '/covers/classic_island_moreau.webp',
+    en: [
+      "I was a passenger on a ship in the middle of the ocean. The weather was bad and the ship hit something. It started to sink into the dark water. I jumped into a small boat and floated away from the wreck. I stayed in that boat for many days with no food and very little water. The hot sun burned my skin and I felt very weak. I was scared that I would die in the middle of the empty sea. Then, another ship saw me. It was a trading ship called the Ipecacuanha. They pulled me onto their deck and gave me some water. I was saved from the waves, but I did not know that my journey was just beginning. The captain was a cold man who did not seem happy to have me on his boat.",
+      "The ship carried a man named Montgomery and his strange animals. They had cages with dogs, rabbits, and other creatures. Montgomery was a kind man, but he was always nervous. He told me that he was going to a lonely island far away from everyone. The captain was very angry at me for staying on his ship for free. He wanted me to leave as soon as possible. We sailed for many days across the quiet ocean. I talked to Montgomery often, but he never told me exactly where we were going. I felt that there was a secret about the island. The animals in the cages made strange noises at night. I wondered what kind of place could be at the end of this long trip.",
+      "Finally, we arrived near an island in the middle of nowhere. It was a beautiful place with tall green trees and white sand. Montgomery took me to the beach in a small boat. He told me that I could not stay on the island. He said it was a private place for science experiments. I was confused and upset because I had nowhere else to go. The ship was leaving soon, and the captain refused to take me back home. I stood on the sand and watched the boat go away. I was alone on the mysterious beach with only my clothes and my fear. I saw strange shadows moving in the trees. I knew then that this island was a very dangerous place for a lost man like me.",
+      "I walked slowly along the hot beach, feeling very tired and afraid. The sun was very bright, and I had no food or clean water. I watched the ship go away until it was just a small dot on the horizon. I was completely alone on this strange island. Suddenly, I saw a tall man standing near the trees. He had white hair and a very serious face. He looked at me with cold, sharp eyes that made me feel nervous. This was Doctor Moreau. He did not say hello or welcome me to his home. He only stared at me as if I was a problem he did not want to solve. I tried to speak, but my voice was weak from the long days at sea without enough to drink.",
+      "Doctor Moreau did not want me there. He pointed to the rocky cliffs and told me to stay away from his building. He walked toward a large wooden house hidden in the deep forest. Montgomery followed him, looking back at me with a worried expression. They left me standing in the sun. I watched them disappear into the thick shadows of the jungle. I was hungry and my head hurt, but I started to follow them from a distance. I saw many strange footprints in the sand. They were not just human footprints. Some looked like they belonged to large animals that walked on two legs. I felt a cold chill run down my back. This island was not a normal place at all.",
+      "I reached the house and hid behind some big bushes near the door. Inside, I heard loud noises. There was a sound like a cry of pain, and then a strange, low growl that did not sound like any animal I knew. I looked through a small opening in the wall. The room was filled with medical tools and heavy iron chains. Doctor Moreau was standing over a table, working on something that was covered by a thick cloth. I could not see his face, but his movements were fast and careful. He was performing a surgery. I felt sick and terrified as I realized that the doctor was not doing simple science. He was changing life itself. I had to know the truth about what was happening behind these closed doors.",
+      "I crept closer to the wooden wall to see more clearly. Inside, a creature lay on the table. It was wrapped in bandages and made a deep, sad noise. I felt very scared because the creature looked almost human but also like a wild beast. Doctor Moreau talked to his assistant in a low voice. He did not seem to care about the pain of his patient. He only wanted to finish his work. I realized then that he was creating something new. He was taking animals and turning them into men. My hands shook as I leaned against the rough wood of the building. I could not believe my eyes, but the evidence was right there in front of me in the dark, cold room.",
+      "Suddenly, the creature on the table moved. It opened its eyes and looked at me through the small gap. Those eyes were full of confusion and deep suffering. I jumped back, losing my balance. I made a loud noise against the dry branches on the ground. Doctor Moreau stopped his work at once. He turned his head quickly toward the wall. I knew he had heard me. I started to run as fast as I could toward the thick forest. I did not look back. I ran through the dark trees, feeling the sharp leaves cut my skin. My heart beat loudly in my chest, and I could hear heavy footsteps following me into the shadows of the island.",
+      "The night was dark and filled with strange, frightening sounds. I ran until I was out of breath and hid behind a large, fallen tree. I waited in the silence, listening for the doctor. Every shadow looked like a monster, and every wind movement sounded like a whisper. This island was a place of secrets and terrible experiments. I felt like a trapped mouse in a cage. I could not go back to the beach, and I could not stay near the house. I had to stay hidden until the morning light arrived. I sat on the damp ground, wishing I was back on the ship. The island held many more mysteries, and I was now a part of them.",
+      "When the sun finally rose, I walked slowly toward the forest edge. My body felt weak because I had not eaten or slept for many hours. I saw a group of strange figures near the shore. They walked on two legs, but they were covered in thick fur and moved with a strange, heavy motion. They spoke in short, broken sounds that felt like human words but sounded like animal growls. I realized they were the doctor's failed experiments. They looked at me with deep curiosity and a little fear in their eyes. I wanted to talk to them, but my voice was stuck in my throat. I stood still, watching these sad creatures as they moved through the trees. They were like puppets being pulled by invisible strings, lost in a world between nature and science.",
+      "Suddenly, one of the creatures approached me. It had the face of an ape but eyes that felt very human. It touched its hand to its head in a sign of respect and spoke a few words of broken English. It asked me if I was a man or another creation of the doctor. I felt a chill run down my spine as I listened to the poor creature. It believed that Doctor Moreau was a god who created life. They had a set of rules they lived by, a law that they repeated to keep their animal side from coming back. I saw the pain of existence in their faces. They were trapped in bodies that were not their own, forced to act like humans when their spirits belonged to the wild woods.",
+      "The creature led me to a group of similar beings living in a cave near the cliffs. They lived in small, dirty huts made of sticks and leaves. As I walked among them, I felt a deep sense of sorrow. Some of them looked like wolves, while others reminded me of pigs or leopards. They were all broken, both in body and in mind. They watched me with wide, sad eyes, hoping for some kindness or understanding. I tried to speak to them about the world outside, but they could not understand my words. They only knew the island, the law, and the fear of the man who created them. I knew then that I had to find a way to leave this horrible place before I lost my own humanity too.",
+      "I looked at the sea for a long time every day. I wanted to see a ship, but the ocean was always empty. The creatures grew more like animals again. They stopped trying to act like humans and walked on all fours once more. The memory of Doctor Moreau faded, and the law became quiet. I started to live by myself far away from their village. I learned how to fish and how to build a small shelter near the beach. I felt very lonely, but I was safe from the chaos of the island. I read books that I found in the doctor's house to keep my mind sharp and calm. My heart was full of sadness for those poor, broken creatures who had lost their way completely.",
+      "One day, a dead boat washed up on the sand near my shelter. It was broken and old, but it gave me a new hope. I worked for many weeks to fix the holes and make it strong enough for the ocean. I spent my days using bits of wood and strong plants to tie it together. When it was finally finished, I felt a great joy in my soul. I gathered some water and food, and I pushed the small boat into the deep blue water. I did not say goodbye to anyone. I just looked at the island one last time and started to row away. The island disappeared behind me like a bad dream that was ending at last.",
+      "After many days at sea, a passing ship found me. The sailors were surprised to see a man alone in such a small boat. They gave me water and hot soup, and I told them my story. They did not believe me at first, but they saw the fear in my eyes. I am back in the city now, living among normal people, but I still see the faces of the animal-men when I close my eyes. Every time I walk down a busy street, I think of the island and the doctor's cruel science. I live a quiet life, but my heart is never truly still. I know that humans and animals are closer than we think, and I will never forget the lesson I learned."
+    ],
+    tr: [
+      "Okyanusun ortasında bir gemide yolcuydum. Hava kötüydü ve gemi bir şeye çarptı. Karanlık suların içine batmaya başladı. Küçük bir sandala atladım ve enkazdan uzaklaştım. O sandalda yiyeceksiz ve çok az suyla günlerce kaldım. Kızgın güneş tenimi yaktı ve çok zayıf hissettim. Bomboş denizin ortasında öleceğimden korkuyordum. Sonra başka bir gemi beni gördü. Ipecacuanha adında bir ticaret gemisiydi. Beni güvertelerine çektiler ve biraz su verdiler. Dalgalardan kurtulmuştum ama yolculuğumun henüz yeni başladığını bilmiyordum. Kaptan, beni gemisinde görmekten mutlu görünmeyen soğuk bir adamdı.",
+      "Gemi, Montgomery adında bir adamı ve onun garip hayvanlarını taşıyordu. Köpeklerin, tavşanların ve diğer yaratıkların olduğu kafesleri vardı. Montgomery nazik bir adamdı ama her zaman gergindi. Bana herkesten çok uzak, ıssız bir adaya gittiğini söyledi. Kaptan, gemisinde bedavaya kaldığım için bana çok kızgındı. Bir an önce gitmemi istiyordu. Sessiz okyanus boyunca günlerce yelken açtık. Montgomery ile sık sık konuştum ama tam olarak nereye gittiğimizi asla söylemedi. Adada bir sır olduğunu hissettim. Kafesteki hayvanlar geceleri garip sesler çıkarıyordu. Bu uzun yolculuğun sonunda nasıl bir yer olabileceğini merak ettim.",
+      "Sonunda, kimsenin bilmediği bir yerdeki adanın yakınına vardık. Yüksek yeşil ağaçları ve beyaz kumuyla güzel bir yerdi. Montgomery beni küçük bir sandalla kıyıya çıkardı. Adada kalamayacağımı söyledi. Buranın bilimsel deneyler için özel bir yer olduğunu belirtti. Kafam karışmıştı ve üzgündüm çünkü gidecek başka bir yerim yoktu. Gemi yakında gidiyordu ve kaptan beni geri götürmeyi reddetti. Kumların üzerinde durup teknenin uzaklaşmasını izledim. Sadece kıyafetlerim ve korkumla bu gizemli sahilde yalnızdım. Ağaçların arasında hareket eden garip gölgeler gördüm. O an, bu adanın benim gibi kaybolmuş bir adam için çok tehlikeli bir yer olduğunu anladım.",
+      "Sıcak kumsalda yavaşça yürüyor, kendimi çok yorgun ve korkmuş hissediyordum. Güneş çok parlaktı ve hiç yiyeceğim ya da temiz suyum yoktu. Gemi, ufukta küçük bir nokta haline gelene kadar uzaklaşmasını izledim. Bu tuhaf adada tamamen yalnızdım. Aniden, ağaçların yakınında duran uzun boylu bir adam gördüm. Beyaz saçları ve çok ciddi bir yüzü vardı. Beni, kendimi huzursuz hissettiren soğuk ve keskin gözlerle süzdü. Bu Doktor Moreau'ydu. Merhaba demedi veya beni evine kabul etmedi. Sadece çözmek istemediği bir sorunmuşum gibi bana baktı. Konuşmaya çalıştım ama günlerdir yeterince su içemediğim için sesim çok zayıftı.",
+      "Doktor Moreau orada olmamı istemiyordu. Kayalık uçurumları işaret etti ve binasından uzak durmamı söyledi. Derin ormanda gizlenmiş büyük ahşap bir eve doğru yürüdü. Montgomery onu takip etti, arkasına dönüp bana endişeli bir ifadeyle baktı. Beni güneşin altında bırakıp gittiler. Onların ormanın koyu gölgeleri içinde kayboluşunu izledim. Karnım açtı ve başım ağrıyordu ama onları uzaktan takip etmeye başladım. Kumda birçok tuhaf ayak izi gördüm. Bunlar sadece insan ayak izi değildi. Bazıları iki ayağı üzerinde yürüyen büyük hayvanlara aitmiş gibi görünüyordu. Sırtımdan aşağı soğuk bir ürperti geçti. Bu ada hiç de normal bir yer değildi.",
+      "Eve ulaştım ve kapının yakınındaki büyük çalıların arkasına saklandım. İçeriden yüksek sesler geliyordu. Bir acı çığlığı gibi bir ses ve ardından bildiğim hiçbir hayvana benzemeyen tuhaf, alçak bir hırıltı duydum. Duvardaki küçük bir delikten içeri baktım. Oda tıbbi aletler ve ağır demir zincirlerle doluydu. Doktor Moreau bir masanın başında duruyor, kalın bir bezle örtülmüş bir şey üzerinde çalışıyordu. Yüzünü göremiyordum ama hareketleri hızlı ve dikkatliydi. Bir ameliyat yapıyordu. Doktorun basit bir bilimle uğraşmadığını fark ettiğimde içim bulandı ve dehşete düştüm. Hayatın kendisini değiştiriyordu. Bu kapalı kapıların ardında ne olduğunu öğrenmek zorundaydım.",
+      "Daha net görebilmek için ahşap duvara doğru iyice sokuldum. İçeride, masanın üzerinde bir yaratık yatıyordu. Sargılarla sarılmıştı ve derin, hüzünlü bir ses çıkarıyordu. Çok korkmuştum çünkü yaratık neredeyse bir insan gibi görünüyordu ama aynı zamanda vahşi bir hayvanı andırıyordu. Doktor Moreau asistanıyla alçak bir sesle konuştu. Hastasının acısını umursamıyor gibiydi. Sadece işini bitirmek istiyordu. O anda yeni bir şey yarattığını anladım. Hayvanları alıp onları insana dönüştürüyordu. Ellerim, binanın sert ahşabına yaslanırken titriyordu. Gözlerime inanamıyordum ama kanıt, o karanlık ve soğuk odada tam önümde duruyordu.",
+      "Birden masadaki yaratık hareket etti. Gözlerini açtı ve küçük aralıktan bana baktı. O gözler kafa karışıklığı ve derin bir acıyla doluydu. Dengemi kaybederek geri sıçradım. Yerdeki kuru dallara çarparak yüksek bir ses çıkardım. Doktor Moreau işini anında bıraktı. Başını hızla duvara doğru çevirdi. Beni duyduğunu biliyordum. Sık ormana doğru olabildiğince hızlı koşmaya başladım. Arkama bakmadım. Karanlık ağaçların arasında koştum, keskin yaprakların cildimi kestiğini hissettim. Kalbim göğsümde hızla çarpıyordu ve adanın gölgelerine doğru beni takip eden ağır ayak seslerini duyabiliyordum.",
+      "Gece karanlıktı ve garip, korkutucu seslerle doluydu. Nefes nefese kalana kadar koştum ve devrilmiş büyük bir ağacın arkasına saklandım. Sessizlik içinde doktoru dinleyerek bekledim. Her gölge bir canavara, her rüzgar hareketi bir fısıltıya benziyordu. Bu ada, sırlar ve korkunç deneylerle dolu bir yerdi. Kafesteki kapana kısılmış bir fare gibi hissediyordum. Sahile geri dönemezdim, evin yakınında da kalamazdım. Sabah ışığı gelene kadar saklanmak zorundaydım. Nemli zeminde oturup keşke gemide olsaydım diye düşündüm. Ada daha pek çok gizem barındırıyordu ve ben artık onların bir parçasıydım.",
+      "Güneş nihayet doğduğunda ormanın kenarına doğru yavaşça yürüdüm. Birçok saattir yemek yemediğim ve uyumadığım için vücudum zayıf hissettiriyordu. Kıyıya yakın bir yerde tuhaf figürlerden oluşan bir grup gördüm. İki ayakları üzerinde yürüyorlardı ancak üzerleri kalın tüylerle kaplıydı ve tuhaf, ağır bir hareketle ilerliyorlardı. İnsan sözcüklerine benzeyen ama hayvan hırıltıları gibi tınlayan kısa, kesik seslerle konuşuyorlardı. Onların doktorun başarısız deneyleri olduklarını fark ettim. Bana derin bir merak ve gözlerinde küçük bir korkuyla baktılar. Onlarla konuşmak istedim ama sesim boğazıma düğümlendi. Olduğum yerde durdum ve ağaçların arasında ilerleyen bu hüzünlü yaratıkları izledim. Doğa ile bilim arasında kaybolmuş, görünmez iplerle çekilen kuklalar gibiydiler.",
+      "Birden yaratıklardan biri bana yaklaştı. Bir maymunun yüzüne sahipti ama gözleri çok insaniydi. Saygı işareti olarak elini başına götürdü ve bozuk bir İngilizceyle birkaç kelime söyledi. Bana bir insan mı yoksa doktorun bir başka eseri mi olduğumu sordu. Zavallı yaratığı dinlerken sırtımdan aşağı bir ürperti yayıldı. Doktor Moreau'nun hayatı yaratan bir tanrı olduğuna inanıyorlardı. Yaşadıkları bir kurallar dizisi, hayvani yanlarının geri gelmesini önlemek için tekrarladıkları bir yasaları vardı. Yüzlerindeki varoluş acısını gördüm. Kendi bedenlerine ait olmayan vücutlara hapsolmuşlardı; ruhları vahşi ormanlara aitken insan gibi davranmaya zorlanıyorlardı.",
+      "Yaratık beni uçurumun yakınındaki bir mağarada yaşayan benzer varlıklardan oluşan bir gruba götürdü. Çubuklardan ve yapraklardan yapılmış küçük, kirli kulübelerde yaşıyorlardı. Aralarında yürürken içimde derin bir hüzün hissettim. Bazıları kurtlara benzerken diğerleri bana domuzları veya leoparları hatırlatıyordu. Hepsi hem beden hem de zihin olarak kırıktı. Bir nezaket veya anlayış umuduyla bana kocaman, hüzünlü gözlerle baktılar. Onlara dış dünyadan bahsetmeye çalıştım ama sözcüklerimi anlayamadılar. Sadece adayı, yasayı ve onları yaratan adamın korkusunu biliyorlardı. O an, kendi insanlığımı da kaybetmeden bu korkunç yerden ayrılmanın bir yolunu bulmam gerektiğini anladım.",
+      "Her gün uzun süre denize baktım. Bir gemi görmeyi umut ediyordum ama okyanus her zaman boştu. Yaratıklar yeniden hayvanlara benzemeye başladılar. İnsan gibi davranmayı bıraktılar ve tekrar dört ayak üzerinde yürümeye başladılar. Doktor Moreau'nun anısı silindi ve kanun sessizliğe gömüldü. Onların köylerinden uzakta, kendi başıma yaşamaya başladım. Balık tutmayı ve plaja yakın küçük bir barınak inşa etmeyi öğrendim. Çok yalnız hissediyordum ama adanın karmaşasından uzakta güvendeydim. Zihnimi keskin ve sakin tutmak için doktorun evinde bulduğum kitapları okudum. Kalbim, yollarını tamamen kaybeden o zavallı, kırık yaratıklar için hüzün doluydu.",
+      "Bir gün, barınağımın yakınındaki kumlara parçalanmış bir tekne vurdu. Kırıktı ve eskiydi ama bana yeni bir umut verdi. Delikleri onarmak ve onu okyanus için yeterince güçlü hale getirmek için haftalarca çalıştım. Günlerimi tahta parçaları ve güçlü bitkiler kullanarak onu birbirine bağlayarak geçirdim. Nihayet bittiğinde, ruhumda büyük bir sevinç hissettim. Biraz su ve yiyecek topladım ve küçük tekneyi derin mavi sulara ittim. Kimseye veda etmedim. Sadece adaya son bir kez baktım ve kürek çekmeye başladım. Ada, nihayet sona eren kötü bir rüya gibi arkamda kayboldu.",
+      "Denizde geçen birçok günden sonra, yoldan geçen bir gemi beni buldu. Denizciler böyle küçük bir teknede yalnız bir adam görmeye şaşırdılar. Bana su ve sıcak çorba verdiler, ben de onlara hikayemi anlattım. Başta bana inanmadılar ama gözlerimdeki korkuyu gördüler. Artık şehre döndüm, normal insanlar arasında yaşıyorum ama gözlerimi kapattığımda hala o hayvan-insanların yüzlerini görüyorum. Ne zaman kalabalık bir caddede yürüsem, adayı ve doktorun acımasız bilimini düşünüyorum. Sessiz bir hayat yaşıyorum ama kalbim asla gerçekten huzurlu değil. İnsanların ve hayvanların sandığımızdan daha yakın olduğunu biliyorum ve öğrendiğim dersi asla unutmayacağım."
+    ],
+    words: {
+      "wreck": "enkaz",
+      "deck": "güverte",
+      "creature": "yaratık",
+      "cage": "kafes",
+      "experiment": "deney",
+      "shadow": "gölge",
+      "horizon": "ufuk",
+      "nervous": "gergin",
+      "cliffs": "uçurumlar",
+      "footprint": "ayak izi",
+      "surgery": "ameliyat",
+      "terrified": "dehşete düşmüş",
+      "bandage": "sargı",
+      "suffer": "acı çekmek",
+      "balance": "denge",
+      "curiosity": "merak",
+      "respect": "saygı",
+      "existence": "varoluş",
+      "sorrow": "hüzün",
+      "humanity": "insanlık",
+      "shelter": "barınak",
+      "lonely": "yalnız",
+      "chaos": "karmaşa",
+      "row": "kürek çekmek",
+      "cruel": "acımasız",
+      "lesson": "ders"
+    }
+  },
+      {
+    id: 'classic_red_badge_courage',
+    title: "The Red Badge of Courage",
+    author: 'Stephen Crane',
+    level: 'A2',
+    coverUrl: '/covers/classic_red_badge_courage.webp',
+    en: [
+      "The young soldier lay in his tent. Outside, the night was cold and quiet. He thought about the war. Many people talked about big battles and glory. He wanted to be a hero, too. But deep inside, he felt afraid. He asked himself a difficult question. Would he stay and fight when the enemy came? Or would he run away in fear? He looked at the other men sleeping near him. They looked peaceful, but perhaps they were worried, just like him. He felt very alone in the dark. The war was like a great storm that was coming closer every day. He wanted to know if he had a brave heart or if he was just a coward who would hide when the guns started to fire.",
+      "The morning sun came up slowly over the hills. The sky turned a bright, dusty blue. The soldiers woke up and moved around the camp. They ate their simple breakfast and cleaned their long rifles. The young soldier felt his heart beating fast. Today might be the day of his first battle. He watched the officers walking by. They looked serious and busy. He wanted to ask them about the fighting, but he felt too shy. He looked at the flags moving in the wind. The camp was full of sounds. He heard the horses and the loud voices of the other men. He tried to hide his nervous feelings by working hard on his equipment. He wanted to look like a strong and ready soldier.",
+      "A tall man with a rough voice told everyone to get ready. The army began to move across the green fields. The ground was hard under their boots. The young soldier walked with his friend. He looked at the long line of men stretching far into the distance. It was an amazing sight. He thought about the history books he read at home. He imagined himself doing something very important. He felt a strange excitement mixed with his worry. The wind blew against his face, and he gripped his rifle tightly. He knew that soon the world would change for him. He looked ahead toward the trees where the enemy might be hiding. He was ready to find out the truth about his own courage.",
+      "The army marched through the thick woods for a long time. The trees were tall and dark, hiding the light of the sun. The young soldier felt tired because his heavy bag pressed against his back. Every step made his feet ache, and he started to wonder if they were walking in circles. The men around him were quiet now. No one told jokes or laughed anymore. They walked like ghosts in the gray morning. The young soldier watched the branches moving above him. He felt small inside this forest, like a little leaf blown by a strong wind. The path was uneven, and he had to watch his footing carefully. He worried that the enemy was watching them from the shadows, waiting for the perfect moment to jump out and start the attack.",
+      "Suddenly, the marching stopped. The men stood still and looked at each other. They heard distant noises that sounded like loud drums. The air felt heavy and cold. The young soldier gripped his rifle until his knuckles turned white. His friend looked at him and nodded, but he did not say anything. The silence was worse than the noise because it made his heart beat faster than a wild bird. He imagined many terrible things happening to him in the next few minutes. He wondered if his bravery would be enough to keep him standing in the line. He felt the weight of his uniform and the metal of his gun. He wanted to run, but he knew there was nowhere to hide from the coming storm.",
+      "A loud command echoed through the trees. The soldiers began to move again, but this time they were more alert. They approached a large, open field that was covered in smoke. The young soldier saw his leader shouting instructions, but his voice was hard to hear over the sounds of nature. The smoke moved like a living thing, covering the grass and the distant hills. He could smell the gunpowder in the air, a sharp and unpleasant scent. He realized that the battle was finally starting. His fears came back, making his legs feel weak and heavy. He looked around at his friends and saw their serious faces. They were all waiting for the same thing. The young soldier took a deep breath and stepped into the smoke.",
+      "The young soldier stood in the long line of men. The air was full of gray smoke and loud noises. His heart was beating very fast like a drum. He held his rifle tightly in his shaking hands. The enemy appeared in the distance like dark shadows. He felt a great fear inside his chest. He wanted to hide or run away from this place. The world seemed very small and dangerous. He looked at the other men, but they were all busy. Everyone was watching the front with wide, worried eyes. The noise of the guns was very loud now. It felt like the ground was moving under his feet. He closed his eyes for a second, but he could not stop the sound of the war. He was a soldier, and he had to stay in his place.",
+      "The battle became very intense. The young soldier started to shoot his gun at the enemy. He did not really see who he was shooting at. He just followed the movements of the men beside him. His hands were dirty, and his face felt hot. The smoke was everywhere, making it hard to breathe or see clearly. He felt like he was in a dream. He forgot about his home and his family. He only thought about the next movement of his arms and the next bullet. Sometimes he was brave, and other times he felt very weak. He was just a small part of a big, loud, and angry machine. The forest behind him seemed to watch his every move. He did not know if he would be alive when the sun went down.",
+      "Suddenly, the enemy stopped shooting and moved back. The soldiers began to cheer because they believed they had won the first fight. The young soldier felt a strange happiness. He was still alive, and his friends were standing near him. He looked at his hands and saw they were black from the powder. He felt proud of himself for not running away. He thought he was a brave man now. He talked to his friend and smiled, although he was very tired. The woods were quiet again, but the air still smelled like metal and smoke. He leaned against a tree to rest his aching legs. He felt strong, but he knew the battle was not finished. He needed to be ready for the next test of his spirit.",
+      "The calm did not last long in the dark woods. Soon, the loud sounds of the battle started again. Henry felt his fear returning to his heart like a cold wave. He looked at his fellow soldiers and saw their faces were tired and worried. They stood behind their wall of logs and waited for the enemy to come closer. The smoke returned and covered the sky in a gray blanket. Henry felt his courage shaking once more under the pressure. He wanted to escape, but he did not know where to go. The forest seemed to trap them in a small, dangerous circle. He held his rifle with tight fingers, waiting for the order to shoot. Every man near him looked like a ghost in the thick, gray smoke.",
+      "The enemy soldiers moved forward with loud shouts and heavy feet. They were like a dark ocean coming to break against the shore. Henry saw their flags waving in the wind above the trees. He started to fire his rifle without stopping, his mind feeling empty and cold. He was just a small part of the line, moving when the others moved. He did not know if he was doing anything useful, but he continued to pull the trigger. The noise of the fight was so loud that he could not hear his own thoughts. His body felt heavy, and he was very thirsty. He wanted to sit down and close his eyes forever, but he stayed in his spot and fought with the rest of the men.",
+      "During the intense fighting, Henry turned around and saw his friends leaving their spots. Panic filled his mind as he realized they were retreating from the enemy. He felt confused and angry as he watched the other men run toward the back. Without thinking, Henry also dropped his rifle and ran away from the fight. He pushed through the thick bushes and branches, his heart beating fast with terror. He did not care about the flags or the glory of the war anymore. He only wanted to find a place where he could be safe and away from the loud guns. The trees seemed to chase him, and the ground was hard under his running feet. He was no longer a brave soldier, just a boy who wanted to live.",
+      "The battle grew loud and violent once again. Henry watched his friends fight with great strength. He saw how they stood in the smoke and did not move back. This time, Henry felt a new power inside his heart. He did not run away as he did before. Instead, he held his gun tight and shouted at the enemy. He realized that he was a soldier who could fight with honor. The fear was still there, but it was smaller than his desire to win. He fought with all his might to push the enemy back into the dark woods. The men moved forward together like a strong wall. Henry saw the sun shining through the gray clouds and felt like a new man.",
+      "The fight became very close and dangerous. Henry moved quickly to catch the flag from a falling friend. He held the colors high so all the men could see them. He felt very proud to lead his group through the heavy rain of bullets. The soldiers followed him because they trusted his brave actions. He forgot about his old mistakes and his past terror. Every step forward made him feel stronger and more like a real man. He was not just a boy anymore; he was a leader in the middle of a hard battle. The noise of the guns sounded like music to his ears as he kept moving toward the enemy line.",
+      "Finally, the loud sounds of the battle stopped. The smoke began to clear from the quiet fields and the green trees. Henry looked at his hands and his dirty uniform. He was tired but he felt a sense of peace in his soul. He had faced his fear and he had survived the storm of the war. He walked slowly back to the camp with his brothers in arms. The sun went down and the stars started to twinkle in the sky. He thought about the long day and the lessons he had learned. He knew that he was now a man of true courage. He was ready to live his life with his head held high."
+    ],
+    tr: [
+      "Genç asker çadırında yatıyordu. Dışarısı soğuk ve sessizdi. Savaşı düşündü. Birçok insan büyük savaşlardan ve zaferlerden bahsediyordu. O da bir kahraman olmak istiyordu. Ancak derinlerde bir yerde korku hissediyordu. Kendine zor bir soru sordu. Düşman geldiğinde kalıp savaşacak mıydı? Yoksa korkudan kaçacak mıydı? Yakınında uyuyan diğer adamlarına baktı. Huzurlu görünüyorlardı ama belki onlar da kendisi gibi endişeliydi. Karanlıkta kendini çok yalnız hissetti. Savaş, her gün daha da yaklaşan büyük bir fırtına gibiydi. Cesur bir kalbi olup olmadığını ya da tüfekler ateşlenmeye başladığında saklanacak bir korkak olup olmadığını bilmek istiyordu.",
+      "Sabah güneşi tepelerin üzerinden yavaşça yükseldi. Gökyüzü parlak, tozlu bir maviye döndü. Askerler uyandılar ve kampın içinde hareket etmeye başladılar. Basit kahvaltılarını yaptılar ve uzun tüfeklerini temizlediler. Genç asker kalbinin hızlı çarptığını hissetti. Bugün ilk savaşının günü olabilirdi. Subayların yanından geçişini izledi. Ciddi ve meşgul görünüyorlardı. Onlara çatışma hakkında soru sormak istedi ama fazla utangaç hissetti. Rüzgarda hareket eden bayraklara baktı. Kamp seslerle doluydu. Atları ve diğer adamların yüksek seslerini duydu. Gergin duygularını ekipmanı üzerinde sıkı çalışarak saklamaya çalıştı. Güçlü ve hazır bir asker gibi görünmek istiyordu.",
+      "Kalın sesli uzun bir adam herkese hazırlanmalarını söyledi. Ordu yeşil tarlalar boyunca hareket etmeye başladı. Yer botlarının altında sertti. Genç asker arkadaşıyla birlikte yürüyordu. Uzaklara doğru uzanan uzun asker sırasına baktı. Harika bir manzaraydı. Evde okuduğu tarih kitaplarını düşündü. Çok önemli bir şey yaptığını hayal etti. Endişesine karışan tuhaf bir heyecan hissetti. Rüzgar yüzüne vurdu ve tüfeğini sıkıca kavradı. Yakında dünya onun için değişecekti. Düşmanın saklanıyor olabileceği ağaçlara doğru ileriye baktı. Kendi cesaretiyle ilgili gerçeği öğrenmeye hazırdı.",
+      "Ordu uzun bir süre boyunca sık ormanların içinden yürüdü. Ağaçlar uzun ve karanlıktı, güneşin ışığını gizliyorlardı. Genç asker, ağır çantası sırtına baskı yaptığı için yorgun hissediyordu. Her adım ayaklarını sızlatıyordu ve daireler çizerek yürüyüp yürümediklerini merak etmeye başladı. Etrafındaki adamlar artık sessizdi. Kimse şaka yapmıyor veya gülmüyordu. Gri sabahta hayaletler gibi yürüyorlardı. Genç asker tepesindeki dalların hareketini izledi. Bu ormanın içinde, güçlü bir rüzgârın savurduğu küçük bir yaprak gibi hissetti. Yol engebeliydi ve adımlarına dikkat etmesi gerekiyordu. Düşmanın gölgelerden onları izlediğinden ve ortaya çıkıp saldırıyı başlatmak için mükemmel anı beklediklerinden endişeleniyordu.",
+      "Aniden yürüyüş durdu. Adamlar öylece durdular ve birbirlerine baktılar. Yüksek sesli davullar gibi gelen uzak gürültüler duydular. Hava ağır ve soğuk hissediliyordu. Genç asker, parmak eklemleri beyazlaşana kadar tüfeğini kavradı. Arkadaşı ona baktı ve başını salladı ama hiçbir şey söylemedi. Sessizlik gürültüden daha kötüydü çünkü kalbinin vahşi bir kuştan daha hızlı atmasına neden oluyordu. Önümüzdeki birkaç dakika içinde başına gelebilecek pek çok korkunç şeyi hayal etti. Cesaretinin onu hizada tutmaya yetip yetmeyeceğini merak etti. Üniformasının ağırlığını ve silahının metalini hissediyordu. Kaçmak istedi ama yaklaşan fırtınadan saklanacak bir yer olmadığını biliyordu.",
+      "Ağaçların arasında yüksek bir komut yankılandı. Askerler tekrar hareket etmeye başladılar ama bu sefer daha tetikteydiler. Dumanla kaplı, geniş ve açık bir alana yaklaştılar. Genç asker liderinin talimatlar bağırdığını gördü ama sesi doğanın sesleri arasında duymak zordu. Duman, çimleri ve uzak tepeleri kaplayan canlı bir varlık gibi hareket ediyordu. Havada keskin ve rahatsız edici bir koku olan barut kokusunu alabiliyordu. Savaşın nihayet başladığını fark etti. Korkuları geri geldi, bacaklarının zayıf ve ağır hissetmesine neden oldu. Arkadaşlarına baktı ve ciddi yüzlerini gördü. Hepsi aynı şeyi bekliyordu. Genç asker derin bir nefes aldı ve dumanın içine adım attı.",
+      "Genç asker, adamların oluşturduğu uzun sırada duruyordu. Hava gri duman ve yüksek seslerle doluydu. Kalbi bir davul gibi çok hızlı çarpıyordu. Tüfeğini titreyen elleriyle sıkıca tuttu. Düşman uzaktan karanlık gölgeler gibi belirdi. Göğsünde büyük bir korku hissetti. Saklanmak ya da bu yerden kaçmak istedi. Dünya çok küçük ve tehlikeli görünüyordu. Diğer adamlara baktı ama hepsi meşguldü. Herkes geniş, endişeli gözlerle ön tarafa bakıyordu. Silahların sesi artık çok yüksekti. Yer ayaklarının altında hareket ediyor gibiydi. Bir anlığına gözlerini kapattı ama savaşın sesini durduramadı. O bir askerdi ve yerinde kalmak zorundaydı.",
+      "Savaş çok şiddetli bir hal aldı. Genç asker düşmana ateş etmeye başladı. Aslında kime ateş ettiğini tam olarak görmüyordu. Sadece yanındaki adamların hareketlerini takip ediyordu. Elleri kirliydi ve yüzü sıcak hissediyordu. Duman her yerdeydi, nefes almayı ya da net görmeyi zorlaştırıyordu. Bir rüyadaymış gibi hissediyordu. Evini ve ailesini unuttu. Sadece kollarının bir sonraki hareketini ve bir sonraki mermiyi düşünüyordu. Bazen cesurdu, bazen ise kendini çok zayıf hissediyordu. Büyük, gürültülü ve öfkeli bir makinenin sadece küçük bir parçasıydı. Arkasındaki orman sanki her hareketini izliyordu. Güneş battığında hayatta olup olmayacağını bilmiyordu.",
+      "Aniden düşman ateş etmeyi bıraktı ve geri çekildi. Askerler ilk savaşı kazandıklarına inandıkları için tezahürat yapmaya başladılar. Genç asker garip bir mutluluk hissetti. Hala hayattaydı ve arkadaşları yanındaydı. Ellerine baktı ve baruttan karardıklarını gördü. Kaçmadığı için kendisiyle gurur duydu. Artık cesur bir adam olduğunu düşünüyordu. Çok yorgun olmasına rağmen arkadaşıyla konuştu ve gülümsedi. Orman yeniden sessizleşmişti ama hava hala metal ve duman kokuyordu. Ağrıyan bacaklarını dinlendirmek için bir ağaca yaslandı. Güçlü hissetti ama savaşın bitmediğini biliyordu. Ruhunun bir sonraki sınavı için hazır olması gerekiyordu.",
+      "Karanlık ormanda sakinlik uzun sürmedi. Çok geçmeden savaşın yüksek sesleri tekrar başladı. Henry, korkusunun soğuk bir dalga gibi kalbine geri döndüğünü hissetti. Yanındaki askerlere baktı ve yüzlerinin yorgun ve endişeli olduğunu gördü. Kütüklerden yapılmış duvarlarının arkasında durdular ve düşmanın yaklaşmasını beklediler. Duman geri döndü ve gökyüzünü gri bir örtü gibi kapladı. Henry, baskı altında cesaretinin tekrar sarsıldığını hissetti. Kaçmak istedi ama nereye gideceğini bilemedi. Orman onları küçük, tehlikeli bir çemberin içine hapsetmiş gibi görünüyordu. Tüfeğini sıkı parmaklarıyla tutarak ateş etme emrini bekledi. Yakınındaki her adam, yoğun gri dumanın içinde bir hayalet gibi görünüyordu.",
+      "Düşman askerleri yüksek bağırışlar ve ağır adımlarla ileri doğru ilerlediler. Kıyıya vurmaya gelen karanlık bir okyanus gibiydiler. Henry, bayraklarının ağaçların üzerinde rüzgarda sallandığını gördü. Durmadan tüfeğini ateşlemeye başladı; zihni boş ve soğuktu. O, hattın sadece küçük bir parçasıydı; diğerleri hareket ettiğinde o da hareket ediyordu. Yararlı bir şey yapıp yapmadığını bilmiyordu ama tetiği çekmeye devam etti. Dövüşün gürültüsü o kadar yüksekti ki kendi düşüncelerini bile duyamıyordu. Vücudu ağırlaştı ve çok susadı. Oturup gözlerini sonsuza dek kapatmak istedi ama yerinde kaldı ve diğer adamlarla birlikte savaştı.",
+      "Yoğun çatışma sırasında Henry arkasına döndü ve arkadaşlarının yerlerini terk ettiğini gördü. Diğer adamların arkaya doğru koştuğunu görünce zihnini panik kapladı ve onların geri çekildiklerini fark etti. Düşünmeden Henry de tüfeğini bıraktı ve savaştan uzaklaştı. Sık çalıların ve dalların arasından geçti, kalbi korkuyla hızlı hızlı çarpıyordu. Artık bayraklar veya savaşın zaferi umurunda değildi. Sadece güvenli olabileceği ve gürültülü silahlardan uzak bir yer bulmak istiyordu. Ağaçlar onu kovalıyor gibiydi ve toprak, koşan ayaklarının altında sertti. O artık cesur bir asker değil, sadece yaşamak isteyen bir çocuktu.",
+      "Savaş bir kez daha yüksek sesli ve şiddetli bir hal aldı. Henry arkadaşlarının büyük bir güçle savaştığını izledi. Dumanın içinde nasıl durduklarını ve geri çekilmediklerini gördü. Bu kez Henry kalbinde yeni bir güç hissetti. Eskiden yaptığı gibi kaçmadı. Aksine, tüfeğini sıkıca tuttu ve düşmana bağırdı. Onurla savaşabilen bir asker olduğunu fark etti. Korku hala oradaydı ama kazanma arzusundan daha küçüktü. Düşmanı karanlık ormana geri püskürtmek için tüm gücüyle savaştı. Adamlar güçlü bir duvar gibi birlikte ilerlediler. Henry güneşin gri bulutların arasından parladığını gördü ve kendini yeni bir insan gibi hissetti.",
+      "Dövüş çok yakın ve tehlikeli bir hal aldı. Henry düşen bir arkadaşından bayrağı yakalamak için hızla hareket etti. Tüm adamların onları görebilmesi için bayrağı yüksekte tuttu. Ağır mermi yağmurunun altında grubuna önderlik etmekten büyük gurur duydu. Askerler ona güvendikleri için onu takip ettiler. Eski hatalarını ve geçmişteki dehşetini unuttu. Atılan her adım onu daha güçlü ve gerçek bir adam gibi hissettirdi. O artık sadece bir çocuk değildi; zorlu bir savaşın ortasında bir liderdi. Düşman hattına doğru ilerlerken silahların sesi kulaklarına müzik gibi geliyordu.",
+      "Sonunda savaşın gürültülü sesleri durdu. Duman sessiz tarlalardan ve yeşil ağaçlardan temizlenmeye başladı. Henry ellerine ve kirli üniformasına baktı. Yorgundu ama ruhunda bir huzur duygusu hissetti. Korkusuyla yüzleşmişti ve savaşın fırtınasından sağ çıkmıştı. Silah arkadaşlarıyla yavaşça kampa geri yürüdü. Güneş battı ve yıldızlar gökyüzünde parıldamaya başladı. Uzun gün ve öğrendiği dersler hakkında düşündü. Artık gerçek cesarete sahip bir adam olduğunu biliyordu. Hayatını başı dik bir şekilde yaşamaya hazırdı."
+    ],
+    words: {
+      "soldier": "asker",
+      "battle": "savaş",
+      "fear": "korku",
+      "coward": "korkak",
+      "rifle": "tüfek",
+      "courage": "cesaret",
+      "march": "yürümek",
+      "branch": "dal",
+      "shadow": "gölge",
+      "silence": "sessizlik",
+      "command": "komut",
+      "gunpowder": "barut",
+      "brave": "cesur",
+      "smoke": "duman",
+      "enemy": "düşman",
+      "retreat": "geri çekilmek",
+      "panic": "panik",
+      "intense": "yoğun",
+      "terror": "dehşet",
+      "trigger": "tetik",
+      "violent": "şiddetli",
+      "honor": "onur",
+      "desire": "arzu",
+      "bullet": "mermi",
+      "leader": "lider"
+    }
+  },
+      {
+    id: 'classic_emma',
+    title: "Emma",
+    author: 'Jane Austen',
+    level: 'A2',
+    coverUrl: '/covers/classic_emma.webp',
+    en: [
+      "Emma Woodhouse was a clever, beautiful, and rich young woman. She lived in a big house called Hartfield with her kind father. Emma had a very comfortable life, but she was never bored. She liked to help people find love because she believed she was very good at it. When her friend and governess, Miss Taylor, got married to Mr. Weston, Emma felt a little sad. She felt lonely because Miss Taylor was like a mother to her. However, Emma was also happy for her friend. She decided that she was the one who helped them meet and fall in love. This success made her feel very confident about her matchmaking skills. She started to look for new people to help in her small town of Highbury.",
+      "Mr. Knightley was an old family friend who often visited Hartfield. He was a sensible man who knew Emma very well. He did not agree with her ideas about matchmaking. He told Emma that she should stop trying to control the lives of others. He worried that her games could cause sadness. Emma listened to his advice, but she did not change her mind. She thought she knew better than him. She wanted to help her new friend, Harriet Smith. Harriet was a young girl who lived at a school nearby. She was sweet and pretty, but she was not as rich or smart as Emma. Emma decided that Harriet was the perfect person to help.",
+      "Emma invited Harriet to Hartfield to spend time with her. She wanted to improve Harriet's life. Emma thought that Harriet should not marry a simple farmer named Robert Martin. Instead, Emma wanted Harriet to marry someone from a higher social class. She began to ask questions about the people Harriet knew. She noticed that Harriet was interested in Mr. Elton, the local priest. Emma thought this was a brilliant idea. She decided to guide Harriet toward Mr. Elton. She did not care about Robert Martin's feelings at all. Emma believed that her plan was right for everyone. She was very excited to start her new project. She did not know that her choices would soon create many difficult problems for everyone in Highbury.",
+      "Emma spent many hours with Harriet at Hartfield. She wanted to change Harriet's thoughts about her life and her future. Emma told her that she was too good for a simple farmer like Robert Martin. Harriet was very gentle and she believed everything Emma said. She thought that Emma was the smartest person in the world. Emma felt happy because she felt like a teacher and a guide. She started to teach Harriet how to talk and act like a lady from a high family. Harriet slowly stopped thinking about Robert Martin. Emma was sure that Mr. Elton was the perfect husband for her new friend. She was very proud of her plan and felt she was doing a very good thing for Harriet's happiness.",
+      "One day, Robert Martin wrote a letter to Harriet. He wanted to ask her to marry him. Harriet was confused and showed the letter to Emma. Emma read the letter and told Harriet that it was not a good one. She said that Mr. Martin was not smart or interesting. Harriet listened to her friend and decided to say no to his proposal. Emma felt very successful because she stopped the marriage. She thought she was protecting Harriet from a life of boredom. She told Harriet to wait for a better man like Mr. Elton. Emma did not feel sorry for Robert Martin. She only thought about her own plan. She believed she was helping Harriet find a better future in their small town.",
+      "Mr. Elton was a kind man, but he was also very interested in money and status. He spent a lot of time with Emma and Harriet. Emma thought that Mr. Elton loved Harriet because he was always polite to her. She did not realize that Mr. Elton was actually looking at her, not at Harriet. She ignored the signs because she wanted her plan to work perfectly. Harriet was also very excited and she talked about Mr. Elton every single day. The three of them spent many afternoons together. Emma felt like a queen who controlled the love lives of her friends. She did not see the trouble that was coming. She was too busy being happy with her clever matchmaking skills in Highbury.",
+      "The winter weather brought many social events to Highbury. Emma, Harriet, and Mr. Elton were often together. Emma felt very proud of herself because she thought her plan was working perfectly. She watched Mr. Elton closely and felt certain that he was falling in love with Harriet. Every time he spoke to Harriet, Emma smiled because she felt like a smart guide. Harriet became very happy and her feelings for Mr. Elton grew stronger every day. She trusted Emma with all her secrets and believed that a bright future was waiting for her. They walked in the gardens and talked about the future. Emma was very sure that she could make anyone happy by simply organizing their lives and choosing the right people for them to marry.",
+      "However, a big surprise was coming for everyone in town. One cold evening, Mr. Elton visited Hartfield to talk to Emma privately. Emma was excited because she thought he wanted to talk about Harriet. She sat in a comfortable chair and listened carefully. Mr. Elton started to speak with great emotion, but his words were not about Harriet at all. He looked at Emma with deep eyes and told her that she was the only woman he loved. Emma felt completely shocked and could not believe her ears. Her heart beat very fast as she realized her terrible mistake. She had spent weeks trying to join the wrong two people, and now she had to deal with this unexpected and very difficult situation.",
+      "Emma stood up quickly and tried to explain that there was a misunderstanding. She told Mr. Elton that she thought he loved Harriet Smith, but he only laughed in a cold way. Mr. Elton made it clear that he was only interested in Emma because she was rich and had a high status in their town. He did not care about Harriet at all. Emma felt very bad for her poor friend. She realized that she had been blind and foolish to play with the feelings of others. The room felt very quiet and the happy mood of the evening was gone. Emma knew that she had made a very big mistake, and she felt worried about how to tell Harriet the sad truth.",
+      "Emma felt very lonely after Mr. Elton left Hartfield. She realized that her pride had caused this mess. The next day, she had to tell Harriet the sad news. It was a very difficult conversation, and Harriet cried a lot. Emma felt ashamed for playing with her friend's heart. She decided to be more careful in the future. Just then, news arrived that Jane Fairfax was coming to Highbury to visit her aunt. Jane was a beautiful and talented young lady who lived with her cousins. Emma did not like Jane very much because she seemed too perfect and quiet. Everyone in town talked about how wonderful Jane was, which made Emma feel a bit jealous and annoyed. She was not ready for another person to change the quiet life in their small town.",
+      "The arrival of Frank Churchill also created a lot of excitement in Highbury. Frank was the son of Mr. Weston, and everyone waited a long time to see him. When he finally arrived, he was very polite, charming, and fun to talk to. Emma liked him immediately because he was different from the other men she knew. They spent a lot of time together, and Emma found him very interesting. She began to wonder if she liked him, even though she told herself she would never marry. Frank seemed to enjoy her company just as much. They walked in the woods and talked about life. The village was full of new energy, and Emma started to forget about the pain caused by Mr. Elton and his foolish behavior.",
+      "While Emma and Frank enjoyed their time together, Jane Fairfax stayed in her house and rarely went out. Emma watched her from afar and felt suspicious. She thought Jane had a secret because she did not share her thoughts with anyone. Meanwhile, Harriet started to spend time with a nice farmer named Robert Martin. Although Emma had told Harriet that Robert was not good enough for her before, she now saw that they were actually a good match. Emma started to realize that she should not control other people's choices. She began to see the world in a different way. The friendship between Frank and Emma grew stronger, but Emma kept her feelings hidden, thinking only about the fun of their conversations.",
+      "The summer brought a big surprise for everyone in Highbury. Mr. Knightley visited Emma and spoke to her about his own feelings. He told her that he had loved her for a very long time, even when she was just a young girl. Emma was shocked to hear his words, but then she felt a wave of happiness in her heart. She realized that she had loved him too, but she did not know it until now. The thought of being with him forever made her feel complete. It was a beautiful moment because she finally understood that her place was right by his side.",
+      "At the same time, the truth about Frank Churchill and Jane Fairfax finally came out. They had been secretly engaged for months. Frank had pretended to like Emma to keep his secret safe, which made Emma feel a little silly for believing him. However, she was not angry anymore. She realized that Harriet was truly happy with Robert Martin and that they were meant to be together. Everything in the village was changing for the better, and Emma was finally ready to grow up and let go of her old, prideful ways. She felt peaceful and ready for her new life.",
+      "In the end, there was a double wedding that brought great joy to the whole town. Mr. Knightley and Emma married, and they decided to stay at Hartfield to take care of her father. Harriet married Robert Martin, and they were very happy on their farm. Emma learned that true love is not about games or controlling others, but about respect and honesty. She became a kind wife and a better person for everyone around her. The life in Highbury was full of peace, love, and friendship, and Emma was happier than she had ever been before."
+    ],
+    tr: [
+      "Emma Woodhouse zeki, güzel ve zengin bir genç kadındı. Babasıyla birlikte Hartfield adında büyük bir evde yaşıyordu. Emma'nın çok rahat bir hayatı vardı ama asla sıkılmazdı. İnsanların aşkı bulmasına yardım etmeyi severdi çünkü bu konuda çok iyi olduğuna inanırdı. Arkadaşı ve mürebbiyesi Bayan Taylor, Bay Weston ile evlendiğinde Emma biraz üzüldü. Kendisini yalnız hissetti çünkü Bayan Taylor onun için bir anne gibiydi. Yine de Emma arkadaşı için mutluydu. Onların tanışıp aşık olmasını sağlayan kişinin kendisi olduğuna karar verdi. Bu başarı, çöpçatanlık yetenekleri konusunda kendisini çok özgüvenli hissettirdi. Highbury kasabasında yardım edeceği yeni insanlar aramaya başladı.",
+      "Bay Knightley, Hartfield'ı sık sık ziyaret eden eski bir aile dostuydu. Emma'yı çok iyi tanıyan mantıklı bir adamdı. Onun çöpçatanlık fikirlerine katılmazdı. Emma'ya başkalarının hayatlarını kontrol etmeye çalışmayı bırakması gerektiğini söyledi. Onun oyunlarının üzüntüye neden olabileceğinden endişe ediyordu. Emma onun tavsiyesini dinledi ama fikrini değiştirmedi. Ondan daha fazlasını bildiğini düşünüyordu. Yeni arkadaşı Harriet Smith'e yardım etmek istedi. Harriet yakındaki bir okulda yaşayan genç bir kızdı. Tatlı ve güzeldi ama Emma kadar zengin veya zeki değildi. Emma, Harriet'in yardım etmek için mükemmel bir kişi olduğuna karar verdi.",
+      "Emma, Harriet'i kendisiyle vakit geçirmesi için Hartfield'a davet etti. Onun hayatını iyileştirmek istiyordu. Emma, Harriet'in Robert Martin adında basit bir çiftçiyle evlenmemesi gerektiğini düşündü. Bunun yerine, Harriet'in daha yüksek bir sosyal sınıftan biriyle evlenmesini istedi. Harriet'in tanıdığı insanlar hakkında sorular sormaya başladı. Harriet'in yerel bir rahip olan Bay Elton ile ilgilendiğini fark etti. Emma bunun parlak bir fikir olduğunu düşündü. Harriet'i Bay Elton'a yönlendirmeye karar verdi. Robert Martin'in duygularını hiç önemsemedi. Emma, planının herkes için doğru olduğuna inanıyordu. Yeni projesine başlamak için çok heyecanlıydı. Seçimlerinin yakında Highbury'deki herkes için birçok zorlu sorun yaratacağını bilmiyordu.",
+      "Emma, Harriet ile Hartfield'da çok vakit geçirdi. Harriet'ın hayatı ve geleceği hakkındaki düşüncelerini değiştirmek istiyordu. Ona, Robert Martin gibi basit bir çiftçi için fazla iyi olduğunu söyledi. Harriet çok nazikti ve Emma'nın söylediği her şeye inanıyordu. Emma'nın dünyanın en zeki insanı olduğunu düşünüyordu. Emma bir öğretmen ve rehber gibi hissettiği için mutluydu. Harriet'a yüksek sınıftan bir hanımefendi gibi nasıl konuşması ve davranması gerektiğini öğretmeye başladı. Harriet yavaş yavaş Robert Martin'i düşünmeyi bıraktı. Emma, Bay Elton'ın yeni arkadaşı için mükemmel bir koca olduğundan emindi. Planıyla gurur duyuyordu ve Harriet'ın mutluluğu için çok iyi bir şey yaptığını hissediyordu.",
+      "Bir gün Robert Martin, Harriet'a bir mektup yazdı. Onunla evlenmek istediğini sordu. Harriet kafası karışmış bir şekilde mektubu Emma'ya gösterdi. Emma mektubu okudu ve Harriet'a bunun iyi bir mektup olmadığını söyledi. Bay Martin'in zeki ya da ilginç olmadığını söyledi. Harriet arkadaşını dinledi ve evlilik teklifini reddetmeye karar verdi. Emma bu evliliği engellediği için kendini çok başarılı hissetti. Harriet'ı sıkıcı bir hayattan koruduğunu düşündü. Harriet'a Bay Elton gibi daha iyi bir adam beklemesini söyledi. Emma, Robert Martin için hiç üzülmedi. Sadece kendi planını düşündü. Küçük kasabalarında Harriet'ın daha iyi bir gelecek bulmasına yardım ettiğine inanıyordu.",
+      "Bay Elton nazik bir adamdı ama aynı zamanda para ve statüyle de çok ilgiliydi. Emma ve Harriet ile çok zaman geçirdi. Emma, Bay Elton'ın Harriet'a karşı her zaman kibar olduğu için onu sevdiğini düşündü. Bay Elton'ın aslında Harriet'a değil, kendisine baktığını fark etmedi. Planının kusursuz işlemesini istediği için işaretleri görmezden geldi. Harriet da çok heyecanlıydı ve her gün Bay Elton hakkında konuşuyordu. Üçü birlikte birçok öğleden sonra geçirdiler. Emma, arkadaşlarının aşk hayatlarını kontrol eden bir kraliçe gibi hissediyordu. Yaklaşan sorunu görmedi. Highbury'deki zeki çöpçatanlık yetenekleriyle mutlu olmakla çok meşguldü.",
+      "Kış havası Highbury'ye birçok sosyal etkinlik getirdi. Emma, Harriet ve Bay Elton sık sık bir aradaydı. Emma, planının mükemmel bir şekilde işlediğini düşündüğü için kendisiyle gurur duyuyordu. Bay Elton'ı dikkatle izledi ve ona Harriet'e aşık olduğundan emin oldu. O, Harriet ile her konuştuğunda Emma gülümsüyordu çünkü kendini akıllı bir rehber gibi hissediyordu. Harriet çok mutlu oldu ve Bay Elton'a karşı duyguları her geçen gün güçlendi. Tüm sırlarını Emma'ya emanet etti ve parlak bir geleceğin onu beklediğine inandı. Bahçelerde yürüdüler ve gelecek hakkında konuştular. Emma, hayatlarını düzenleyerek ve evlenmeleri için doğru insanları seçerek herkesi mutlu edebileceğinden çok emindi.",
+      "Ancak kasabadaki herkes için büyük bir sürpriz yaklaşıyordu. Soğuk bir akşam, Bay Elton özel olarak Emma ile konuşmak için Hartfield'ı ziyaret etti. Emma heyecanlıydı çünkü onun Harriet hakkında konuşmak istediğini düşünüyordu. Rahat bir sandalyeye oturdu ve dikkatle dinledi. Bay Elton büyük bir duyguyla konuşmaya başladı ama sözleri hiç de Harriet hakkında değildi. Emma'ya derin gözlerle baktı ve ona sevdiği tek kadının kendisi olduğunu söyledi. Emma tamamen şok oldu ve kulaklarına inanamadı. Yaptığı korkunç hatayı fark ettiğinde kalbi çok hızlı çarptı. Haftalarını yanlış iki insanı bir araya getirmeye çalışarak geçirmişti ve şimdi bu beklenmedik ve çok zor durumla uğraşmak zorundaydı.",
+      "Emma hızla ayağa kalktı ve bir yanlış anlaşılma olduğunu açıklamaya çalıştı. Bay Elton'a Harriet Smith'i sevdiğini düşündüğünü söyledi ama o sadece soğuk bir şekilde güldü. Bay Elton, zengin olduğu ve kasabada yüksek bir statüye sahip olduğu için sadece Emma ile ilgilendiğini açıkça belirtti. Harriet ile hiç ilgilenmiyordu. Emma, zavallı arkadaşı için çok kötü hissetti. Başkalarının duygularıyla oynamanın körlük ve aptallık olduğunu fark etti. Oda çok sessizleşti ve akşamın mutlu havası gitmişti. Emma çok büyük bir hata yaptığını biliyordu ve üzücü gerçeği Harriet'e nasıl söyleyeceği konusunda endişeliydi.",
+      "Bay Elton Hartfield'dan ayrıldıktan sonra Emma kendini çok yalnız hissetti. Gururunun bu karmaşaya neden olduğunu fark etti. Ertesi gün, Harriet'a üzücü haberi vermek zorundaydı. Çok zor bir konuşmaydı ve Harriet çok ağladı. Emma, arkadaşının kalbiyle oynadığı için utandı. Gelecekte daha dikkatli olmaya karar verdi. Tam o sırada, Jane Fairfax'in teyzesini ziyaret etmek için Highbury'ye geleceği haberi geldi. Jane, kuzenleriyle yaşayan güzel ve yetenekli genç bir kadındı. Emma, Jane'i pek sevmiyordu çünkü çok mükemmel ve sessiz görünüyordu. Kasabadaki herkes Jane'in ne kadar harika olduğundan bahsediyordu, bu da Emma'nın biraz kıskanmasına ve rahatsız olmasına neden oluyordu. Kasabalarındaki sakin hayatı değiştirecek birine daha hazır değildi.",
+      "Frank Churchill'in gelişi de Highbury'de büyük bir heyecan yarattı. Frank, Bay Weston'ın oğluydu ve herkes onu görmek için uzun süre bekledi. Sonunda geldiğinde çok kibar, büyüleyici ve konuşması eğlenceliydi. Emma, tanıdığı diğer erkeklerden farklı olduğu için ondan hemen hoşlandı. Birlikte çok vakit geçirdiler ve Emma onu çok ilginç buldu. Hiç evlenmeyeceğini kendine söylemesine rağmen, ondan hoşlanıp hoşlanmadığını merak etmeye başladı. Frank de onun arkadaşlığından aynı derecede keyif alıyor gibiydi. Ormanda yürüdüler ve hayat hakkında konuştular. Köy yeni bir enerjiyle doluydu ve Emma, Bay Elton'ın aptalca davranışlarının neden olduğu acıyı unutmaya başladı.",
+      "Emma ve Frank birlikte vakit geçirirken, Jane Fairfax evinde kaldı ve nadiren dışarı çıktı. Emma onu uzaktan izledi ve şüphelendi. Jane'in bir sırrı olduğunu düşündü çünkü düşüncelerini kimseyle paylaşmıyordu. Bu sırada Harriet, Robert Martin adında iyi bir çiftçiyle vakit geçirmeye başladı. Emma daha önce Harriet'a Robert'ın ona göre olmadığını söylemiş olsa da, şimdi aslında birbirlerine uygun olduklarını gördü. Emma, başkalarının seçimlerini kontrol etmemesi gerektiğini anlamaya başladı. Dünyayı farklı bir şekilde görmeye başladı. Frank ve Emma arasındaki dostluk güçlendi, ancak Emma, sadece sohbetlerinin eğlencesini düşünerek hislerini gizli tuttu.",
+      "Yaz, Highbury'deki herkes için büyük bir sürpriz getirdi. Bay Knightley, Emma'yı ziyaret etti ve ona kendi hislerinden bahsetti. Ona, o henüz küçük bir kızken bile uzun zamandır sevdiğini söyledi. Emma, bu sözleri duyunca şok oldu ama sonra kalbinde bir mutluluk dalgası hissetti. Onu kendisinin de sevdiğini, ancak şimdiye kadar bunu fark etmediğini anladı. Onunla sonsuza kadar birlikte olma düşüncesi, kendisini tamamlanmış hissetmesini sağladı. Bu çok güzel bir andı çünkü sonunda yerinin onun yanı olduğunu anladı.",
+      "Aynı zamanda, Frank Churchill ve Jane Fairfax hakkındaki gerçek sonunda ortaya çıktı. Aylardır gizlice nişanlıydılar. Frank, sırrını güvende tutmak için Emma'dan hoşlanıyormuş gibi davranmıştı; bu da Emma'nın ona inandığı için kendini biraz aptal gibi hissetmesine neden oldu. Ancak artık kızgın değildi. Harriet'ın Robert Martin ile gerçekten mutlu olduğunu ve birbirleri için yaratıldıklarını fark etti. Köydeki her şey daha iyiye doğru değişiyordu ve Emma sonunda büyümeye ve eski, gururlu alışkanlıklarını bırakmaya hazırdı. Huzurlu ve yeni hayatına hazırdı.",
+      "Sonunda, tüm kasabaya büyük neşe getiren çifte bir düğün oldu. Bay Knightley ve Emma evlendiler ve babasına bakmak için Hartfield'da kalmaya karar verdiler. Harriet, Robert Martin ile evlendi ve çiftliklerinde çok mutlu oldular. Emma, gerçek aşkın oyunlar veya başkalarını kontrol etmekle değil, saygı ve dürüstlükle ilgili olduğunu öğrendi. Nazik bir eş ve etrafındaki herkes için daha iyi bir insan oldu. Highbury'deki hayat barış, sevgi ve dostluk doluydu ve Emma hiç olmadığı kadar mutluydu."
+    ],
+    words: {
+      "clever": "zeki",
+      "governess": "mürebbiye",
+      "matchmaking": "çöpçatanlık",
+      "sensible": "mantıklı",
+      "priest": "rahip",
+      "social": "sosyal",
+      "future": "gelecek",
+      "proposal": "evlilik teklifi",
+      "status": "statü",
+      "polite": "kibar",
+      "ignore": "görmezden gelmek",
+      "private": "özel",
+      "emotion": "duygu",
+      "shocked": "şok olmuş",
+      "misunderstanding": "yanlış anlaşılma",
+      "pride": "gurur",
+      "ashamed": "utanmış",
+      "jealous": "kıskanç",
+      "charming": "çekici",
+      "suspicious": "şüpheci",
+      "match": "uyum",
+      "engaged": "nişanlı",
+      "happiness": "mutluluk",
+      "secret": "sır",
+      "wedding": "düğün",
+      "honesty": "dürüstlük"
+    }
+  },
+      {
+    id: 'classic_sense_sensibility',
+    title: "Sense and Sensibility",
+    author: 'Jane Austen',
+    level: 'A2',
+    coverUrl: '/covers/classic_sense_sensibility.webp',
+    en: [
+      "The Dashwood family lived at Norland Park for many years. Mr. Dashwood was a kind man, but he became very ill and died. He left all his money and his big house to his son, John. Mr. Dashwood had three daughters: Elinor, Marianne, and Margaret. They were now in a difficult position because the house belonged to their brother. John Dashwood moved into Norland with his wife, Fanny. Fanny was a greedy woman and she did not want to share any money with her sisters-in-law. Elinor, the eldest daughter, was very sensible and calm. She understood that they had to leave their home soon. She tried to be strong for her mother and her younger sisters.",
+      "Marianne was different from her sister Elinor. She was very emotional and loved music and romantic books. She felt things very deeply and did not hide her feelings. Mrs. Dashwood loved her daughters very much and felt sad about their new, poor life. They needed a new place to live, but they did not have much money. Suddenly, John Dashwood's cousin, Sir John Middleton, wrote a letter. He was a very friendly man and owned a house in Barton Park. He offered the house to the Dashwood family for a very low price. The family decided to accept this kind offer and started to pack their things to leave Norland forever.",
+      "The day to leave their old home arrived with much sadness. The girls looked at the trees and the flowers one last time. They walked through the rooms and remembered happy times with their father. Elinor was sad, but she kept her feelings inside because she wanted to help her mother. Marianne cried openly and said that she would never find happiness again. They were scared about the future, but they knew they had to be brave. They entered their carriage and started the long journey to Devonshire. Their old life was over, and a new, unknown life was waiting for them at Barton Cottage. They hoped for peace in their new home.",
+      "The journey to Devonshire was long and tiring for the ladies. When they finally reached Barton Cottage, it was smaller than Norland Park, but it was cozy and surrounded by beautiful green hills. Sir John Middleton welcomed them with great joy. He was a very cheerful man who loved company and often invited his neighbors to his large house nearby. The Dashwood family soon felt comfortable in their new home. Mrs. Dashwood and the girls enjoyed the fresh air and the peaceful life in the countryside. They met Sir John's mother-in-law, Mrs. Jennings, who was a loud and talkative woman. She loved to gossip about weddings and young people. Although she was a bit noisy, she was kind to the sisters and wanted them to be happy in their new home.",
+      "One afternoon, while Marianne was walking through the fields with Margaret, she suddenly slipped and fell on the wet grass. She could not get up because she hurt her ankle badly. A young, handsome man who was hunting nearby saw the accident. He ran to help her and carried her in his arms all the way back to Barton Cottage. His name was John Willoughby. He was very charming, brave, and had a wonderful smile. Marianne was immediately impressed by his kindness and his great love for poetry. She liked him more than anyone she had ever met before. They spent many hours talking about books and nature. Marianne felt that she had finally found her perfect partner who understood her deep feelings perfectly.",
+      "Elinor was more careful about her thoughts and feelings. She watched her sister and Willoughby with a little worry. She could see that Marianne was falling in love very quickly and very deeply. Elinor wanted her sister to be happy, but she also wanted her to be sensible. She noticed that Willoughby was always at their house, and the two young people talked for hours about their shared interests. Even their mother was happy to see Marianne so excited and full of life. However, Elinor knew that true love needed time and patience. She kept her own thoughts quiet, preferring to observe the people around her. She was a good sister who wanted to protect her family from any possible heartbreak in the future.",
+      "One day, Willoughby did not visit the cottage. Marianne was very sad and worried. She looked out of the window for many hours, hoping to see him. Elinor tried to help her sister feel better by suggesting a walk, but Marianne refused. She wanted to stay close to the house in case he arrived. The mood in the family changed, and the happiness of the previous weeks seemed to disappear. Mrs. Dashwood was also anxious because she noticed how much her daughter cared for this young man. They all waited for news from him, but the day passed very slowly. The house, which was usually full of laughter and light, felt empty and silent without his presence. Marianne felt that her heart was breaking because she did not know why he was away from her side.",
+      "Suddenly, a messenger arrived with a letter for Marianne. She opened it with shaking hands and a bright face, expecting a kind message. However, as she read the letter, her expression changed quickly. She looked very pale and started to cry. She left the room immediately without saying a word to her family. Elinor was shocked and followed her into their bedroom. Marianne was sobbing on the bed, holding the letter tightly in her hands. She explained that Willoughby was leaving for London and would not return to Devonshire for a long time. The letter was short and cold, lacking the warmth that he usually showed her. Elinor read the words and felt a deep pain for her sister. She knew that Willoughby had been cruel to leave her with such a short explanation.",
+      "The sisters stayed in their room for a long time, talking about the future. Marianne could not understand how someone who claimed to love her could leave so suddenly. She believed that he must be in trouble or forced to leave against his will. Elinor was more doubtful, as she saw the coldness in his written words. She tried to be strong for Marianne, although she felt very sad as well. They kept the news a secret from their mother for a few hours. The peaceful life at the cottage was now replaced by uncertainty and sadness. Elinor wondered if Marianne would ever recover from this sudden change. She realized that she needed to be a very good sister now, because Marianne needed her support more than ever during this difficult time of her life.",
+      "Elinor and Marianne traveled to London with their relative, Mrs. Jennings. Marianne hoped to see Willoughby immediately, but he did not visit her at their new home. She wrote him several letters, yet he did not answer any of them. Marianne was very upset and could not stop crying. She felt that her world was ending because he was ignoring her. Elinor tried to stay calm and told her sister to be patient. She knew that something was wrong, but she did not want to make Marianne feel worse. The city life was busy and noisy, but it felt very lonely for the two sisters. They waited every day for a message, but no news arrived. Marianne started to lose hope, and her health began to suffer because of her great sadness and constant worry.",
+      "One day, at a party, they finally saw Willoughby. He was there with a rich and beautiful lady. Marianne ran to him, thinking he would be happy to see her again. However, he acted very cold and formal, as if they were strangers. He barely spoke to her and looked away quickly. Marianne was shocked by his behavior and felt a deep pain in her heart. She realized that he did not care for her anymore. She could not hide her feelings in front of all the people at the party. Everyone noticed her distress, and she left the room in tears. Elinor was very angry with Willoughby for being so heartless. She walked with her sister back to their house, feeling very protective of her.",
+      "A few days later, a letter arrived from Willoughby. He confirmed that he was going to marry the rich lady he was with at the party. He admitted that he had never loved Marianne, which was a terrible lie. Marianne was broken by this news and became very ill. She could not eat or sleep because she loved him so much. Elinor took care of her sister day and night, even though she was also suffering from her own secrets about Edward Ferrars. The house in London felt cold and unfriendly. They were far away from their home in Devonshire, and they felt very isolated. Elinor wrote to her mother to explain the terrible situation. They had to be very strong to survive these difficult days together in the big, unfriendly city.",
+      "Marianne became very sick with a dangerous fever, and Elinor stayed by her bedside constantly. Mrs. Dashwood arrived soon after hearing the bad news, and the family felt relieved to be together again. During this time, Colonel Brandon visited often to see if he could help in any way. He told Elinor the truth about Willoughby, explaining that he had treated another young girl very badly in the past. This helped Elinor understand why Willoughby was such a dishonest man. Marianne began to recover slowly, and she realized that she had been very foolish to give her heart to someone who did not truly love her. She promised to be more sensible and strong, just like her sister, and thanked Elinor for her endless kindness and patience throughout the long, dark days of her illness.",
+      "While Marianne was getting better, Elinor finally learned the truth about Edward Ferrars. She discovered that he was already engaged to a woman named Lucy Steele. Elinor had kept her own pain a secret for a long time, but now she could face the reality of her situation. She felt a deep sadness, yet she remained calm and dignified. Soon after, Edward came to visit the sisters. He was very unhappy because he felt trapped by his previous promise to Lucy. He showed great respect and love for Elinor, and it became clear that his heart had always belonged to her. The family saw that Edward was a good man who had made a difficult mistake, and they all began to feel a sense of hope for the future.",
+      "Eventually, everything changed for the better for the two sisters. Edward found out that Lucy had married his brother instead, which meant he was finally free from his promise. He was overjoyed and went to see Elinor to ask her to marry him. She accepted his proposal with great happiness, knowing that they could now be together forever. Marianne also found peace and eventually fell in love with Colonel Brandon, who had always been a kind and loyal friend to her. Both sisters married the men they truly loved and moved into beautiful homes nearby. They lived the rest of their lives in happiness and comfort, always remembering the lessons they learned about balancing deep feelings with wisdom and common sense."
+    ],
+    tr: [
+      "Dashwood ailesi uzun yıllar Norland Park'ta yaşadı. Bay Dashwood nazik bir adamdı ama çok hastalandı ve öldü. Tüm parasını ve büyük evini oğlu John'a bıraktı. Bay Dashwood'un üç kızı vardı: Elinor, Marianne ve Margaret. Artık zor bir durumdaydılar çünkü ev erkek kardeşlerine aitti. John Dashwood, eşi Fanny ile birlikte Norland'a taşındı. Fanny açgözlü bir kadındı ve baldızlarıyla hiç para paylaşmak istemiyordu. En büyük kız olan Elinor çok mantıklı ve sakindi. Yakında evlerinden ayrılmaları gerektiğini anladı. Annesi ve küçük kız kardeşleri için güçlü olmaya çalıştı.",
+      "Marianne, kız kardeşi Elinor'dan farklıydı. Çok duygusaldı, müziği ve romantik kitapları seviyordu. Bir şeyleri çok derinden hissederdi ve duygularını saklamazdı. Bayan Dashwood kızlarını çok seviyordu ve onların yeni, yoksul hayatları için üzülüyordu. Yaşamak için yeni bir yere ihtiyaçları vardı ama fazla paraları yoktu. Aniden, John Dashwood'un kuzeni Sir John Middleton bir mektup yazdı. Çok arkadaş canlısı bir adamdı ve Barton Park'ta bir evi vardı. Evi Dashwood ailesine çok düşük bir fiyata teklif etti. Aile bu nazik teklifi kabul etmeye karar verdi ve Norland'ı sonsuza dek terk etmek için eşyalarını toplamaya başladı.",
+      "Eski evlerinden ayrılma günü büyük bir üzüntüyle geldi. Kızlar ağaçlara ve çiçeklere son bir kez baktılar. Odaların içinde dolaştılar ve babalarıyla geçirdikleri mutlu zamanları hatırladılar. Elinor üzgündü ama annesine yardım etmek istediği için duygularını içinde tuttu. Marianne açıkça ağladı ve bir daha asla mutluluğu bulamayacağını söyledi. Gelecekten korkuyorlardı ama cesur olmaları gerektiğini biliyorlardı. Arabalarına bindiler ve Devonshire'a doğru uzun yolculuklarına başladılar. Eski hayatları sona ermişti ve Barton Cottage'da yeni, bilinmez bir hayat onları bekliyordu. Yeni evlerinde huzur bulmayı umuyorlardı.",
+      "Devonshire yolculuğu hanımlar için uzun ve yorucuydu. Barton Kır Evi'ne vardıklarında, Norland Park'tan daha küçük olduğunu gördüler ama ev çok rahat ve güzel yeşil tepelerle çevriliydi. Sir John Middleton onları büyük bir sevinçle karşıladı. İnsanlarla birlikte olmayı seven ve sık sık komşularını yakındaki büyük evine davet eden çok neşeli bir adamdı. Dashwood ailesi yeni evlerinde kısa sürede kendilerini rahat hissettiler. Bayan Dashwood ve kızları temiz havanın ve kırsaldaki huzurlu yaşamın tadını çıkardılar. Sir John'un kayınvalidesi, gürültücü ve çok konuşan bir kadın olan Bayan Jennings ile tanıştılar. Düğünler ve gençler hakkında dedikodu yapmayı çok severdi. Biraz gürültücü olmasına rağmen kız kardeşlere karşı nazikti ve onların yeni evlerinde mutlu olmalarını istiyordu.",
+      "Bir öğleden sonra, Marianne, Margaret ile tarlalarda yürürken aniden ayağı kaydı ve ıslak çimlerin üzerine düştü. Ayak bileğini kötü incittiği için ayağa kalkamıyordu. Yakınlarda avlanan genç ve yakışıklı bir adam kazayı gördü. Ona yardım etmek için koştu ve onu kucağında taşıyarak Barton Kır Evi'ne kadar götürdü. Adı John Willoughby idi. Çok çekici, cesur ve harika bir gülümsemeye sahipti. Marianne, onun nezaketinden ve şiire olan büyük sevgisinden hemen etkilendi. Ondan şimdiye kadar tanıdığı herkesten daha çok hoşlandı. Kitaplar ve doğa hakkında konuşarak saatler geçirdiler. Marianne, derin duygularını mükemmel bir şekilde anlayan mükemmel partnerini sonunda bulduğunu hissetti.",
+      "Elinor, düşünceleri ve hisleri konusunda daha dikkatliydi. Kız kardeşini ve Willoughby'yi biraz endişeyle izledi. Marianne'in çok hızlı ve çok derinden aşık olduğunu görebiliyordu. Elinor, kız kardeşinin mutlu olmasını istiyordu ama aynı zamanda mantıklı olmasını da bekliyordu. Willoughby'nin sürekli evlerinde olduğunu ve iki gencin paylaştıkları ilgi alanları hakkında saatlerce konuştuklarını fark etti. Anneleri bile Marianne'i bu kadar heyecanlı ve hayat dolu görmekten mutluydu. Ancak Elinor, gerçek aşkın zaman ve sabır gerektirdiğini biliyordu. Kendi düşüncelerini kendine sakladı ve çevresindeki insanları gözlemlemeyi tercih etti. Ailesini gelecekteki olası kalp kırıklıklarından korumak isteyen iyi bir kız kardeşti.",
+      "Bir gün Willoughby kulübeye gelmedi. Marianne çok üzgün ve endişeliydi. Onu görebilme umuduyla saatlerce pencereden dışarı baktı. Elinor, bir yürüyüş önererek kız kardeşinin daha iyi hissetmesine yardımcı olmaya çalıştı ancak Marianne reddetti. Eğer gelirse diye eve yakın kalmak istiyordu. Ailedeki hava değişti ve önceki haftaların mutluluğu yok olmuş gibiydi. Bayan Dashwood da kızının bu genç adama ne kadar değer verdiğini fark ettiği için endişeliydi. Hepsi ondan haber bekliyordu ancak gün çok yavaş geçiyordu. Genellikle kahkaha ve neşeyle dolu olan ev, onun varlığı olmadan boş ve sessiz hissediliyordu. Marianne, onun neden yanından ayrıldığını bilmediği için kalbinin kırıldığını hissediyordu.",
+      "Aniden bir ulak Marianne'e bir mektup getirdi. Nazik bir mesaj bekleyerek titreyen elleri ve parlayan bir yüzle mektubu açtı. Ancak mektubu okurken ifadesi hızla değişti. Çok solgun göründü ve ağlamaya başladı. Ailesine tek bir söz söylemeden hemen odadan çıktı. Şaşkına dönen Elinor, onu yatak odasına kadar takip etti. Marianne yatakta hıçkıra hıçkıra ağlıyor, mektubu ellerinde sıkıca tutuyordu. Willoughby'nin Londra'ya gittiğini ve uzun bir süre Devonshire'a dönmeyeceğini açıkladı. Mektup kısaydı ve ona genellikle gösterdiği sıcaklıktan yoksundu. Elinor kelimeleri okudu ve kız kardeşi için derin bir acı hissetti. Willoughby'nin onu böylesine kısa bir açıklamayla bırakmasının zalimce olduğunu biliyordu.",
+      "Kız kardeşler gelecek hakkında konuşarak uzun süre odalarında kaldılar. Marianne, kendisini sevdiğini iddia eden birinin nasıl bu kadar aniden çekip gidebileceğini anlayamıyordu. Onun başının dertte olduğuna ya da kendi isteği dışında ayrılmaya zorlandığına inanıyordu. Elinor, yazdığı kelimelerdeki soğukluğu gördüğü için daha şüpheliydi. Kendisi de çok üzgün olmasına rağmen Marianne için güçlü olmaya çalıştı. Haberi birkaç saat boyunca annelerinden gizli tuttular. Kulübedeki huzurlu yaşam, yerini belirsizliğe ve hüzne bırakmıştı. Elinor, Marianne'in bu ani değişimden bir daha iyileşip iyileşemeyeceğini merak etti. Hayatının bu zor döneminde Marianne'in desteğine her zamankinden daha çok ihtiyacı olduğu için, şimdi çok iyi bir kız kardeş olması gerektiğini fark etti.",
+      "Elinor ve Marianne, akrabaları Bayan Jennings ile Londra'ya gittiler. Marianne, Willoughby'yi hemen görmeyi umuyordu, ancak yeni evlerinde onu ziyarete gelmedi. Ona birkaç mektup yazdı, fakat hiçbirine cevap alamadı. Marianne çok üzgündü ve ağlamayı durduramıyordu. Onu görmezden geldiği için dünyasının yıkıldığını hissediyordu. Elinor sakin kalmaya çalıştı ve kız kardeşine sabırlı olmasını söyledi. Bir şeylerin yanlış olduğunu biliyordu ama Marianne'in kendini daha kötü hissetmesini istemiyordu. Şehir hayatı yoğun ve gürültülüydü, ancak iki kız kardeş için çok yalnız hissettiriyordu. Her gün bir haber beklediler, fakat hiçbir haber gelmedi. Marianne umudunu kaybetmeye başladı ve büyük üzüntüsü ve sürekli endişesi nedeniyle sağlığı bozulmaya başladı.",
+      "Bir gün, bir partide, sonunda Willoughby'yi gördüler. Orada zengin ve güzel bir hanımla birlikteydi. Marianne, onu tekrar gördüğü için mutlu olacağını düşünerek ona doğru koştu. Ancak, sanki yabancıymışlar gibi çok soğuk ve resmi davrandı. Onunla neredeyse hiç konuşmadı ve hemen başka yöne baktı. Marianne onun davranışları karşısında şok oldu ve kalbinde derin bir acı hissetti. Artık onu önemsemediğini fark etti. Partideki herkesin önünde duygularını gizleyemedi. Herkes onun sıkıntısını fark etti ve odayı gözyaşları içinde terk etti. Elinor, bu kadar kalpsiz olduğu için Willoughby'ye çok kızgındı. Kız kardeşiyle birlikte evlerine yürüdü ve onu koruma içgüdüsüyle hareket etti.",
+      "Birkaç gün sonra Willoughby'den bir mektup geldi. Partide yanında olan zengin hanımla evleneceğini doğruladı. Hiçbir zaman Marianne'i sevmediğini itiraf etti ki bu korkunç bir yalandı. Marianne bu haberle yıkıldı ve çok hastalandı. Onu çok sevdiği için yemek yiyemiyor ve uyuyamıyordu. Elinor, Edward Ferrars hakkındaki kendi sırlarından dolayı acı çekmesine rağmen, gece gündüz kız kardeşine baktı. Londra'daki ev soğuk ve misafirperverlikten uzak hissettiriyordu. Devonshire'daki evlerinden çok uzaktaydılar ve kendilerini çok yalnız hissettiler. Elinor, korkunç durumu anlatmak için annesine yazdı. Bu büyük, samimiyetsiz şehirde birlikte bu zor günleri atlatmak için çok güçlü olmaları gerekiyordu.",
+      "Marianne tehlikeli bir ateşle hastalandı ve Elinor sürekli onun başucunda bekledi. Bayan Dashwood kötü haberi aldıktan kısa bir süre sonra geldi ve aile tekrar bir arada olmaktan dolayı rahatladı. Bu süre zarfında Albay Brandon, herhangi bir şekilde yardım edip edemeyeceğini görmek için sık sık ziyarete geldi. Elinor'a Willoughby hakkındaki gerçeği anlattı ve onun geçmişte başka bir genç kıza çok kötü davrandığını açıkladı. Bu, Elinor'un Willoughby'nin neden bu kadar dürüst olmayan bir adam olduğunu anlamasına yardımcı oldu. Marianne yavaş yavaş iyileşmeye başladı ve kalbini onu gerçekten sevmeyen birine vermenin ne kadar aptalca olduğunu fark etti. Kız kardeşi gibi daha mantıklı ve güçlü olacağına söz verdi ve hastalığının uzun, karanlık günleri boyunca gösterdiği sonsuz nezaket ve sabır için Elinor'a teşekkür etti.",
+      "Marianne iyileşirken, Elinor sonunda Edward Ferrars hakkındaki gerçeği öğrendi. Onun zaten Lucy Steele adında bir kadınla nişanlı olduğunu keşfetti. Elinor kendi acısını uzun süre bir sır olarak saklamıştı ama artık durumunun gerçeğiyle yüzleşebiliyordu. Derin bir üzüntü hissetti ama yine de sakin ve asil kalmayı başardı. Kısa bir süre sonra Edward kız kardeşleri ziyarete geldi. Lucy'ye verdiği önceki söz yüzünden kapana kısılmış hissettiği için çok mutsuzdu. Elinor'a büyük bir saygı ve sevgi gösterdi ve kalbinin her zaman ona ait olduğu anlaşıldı. Aile, Edward'ın zor bir hata yapmış iyi bir adam olduğunu gördü ve hepsi gelecek için bir umut duygusu hissetmeye başladı.",
+      "Nihayetinde, her şey iki kız kardeş için daha iyiye doğru değişti. Edward, Lucy'nin bunun yerine kendi kardeşiyle evlendiğini öğrendi; bu da artık sözünden özgür olduğu anlamına geliyordu. Çok sevindi ve Elinor'a onunla evlenmeyi teklif etmek için yanına gitti. Elinor, artık sonsuza dek birlikte olabileceklerini bilerek onun teklifini büyük bir mutlulukla kabul etti. Marianne de huzuru buldu ve sonunda her zaman nazik ve sadık bir dostu olan Albay Brandon'a aşık oldu. Her iki kız kardeş de gerçekten sevdikleri adamlarla evlendiler ve yakınlarda güzel evlere taşındılar. Hayatlarının geri kalanını mutluluk ve huzur içinde yaşadılar, derin duyguları bilgelik ve sağduyu ile dengeleme konusunda öğrendikleri dersleri her zaman hatırladılar."
+    ],
+    words: {
+      "sensible": "mantıklı",
+      "greedy": "açgözlü",
+      "emotional": "duygusal",
+      "sadness": "üzüntü",
+      "brave": "cesur",
+      "journey": "yolculuk",
+      "cottage": "kır evi",
+      "cheerful": "neşeli",
+      "gossip": "dedikodu",
+      "accident": "kaza",
+      "charming": "çekici",
+      "anxious": "endişeli",
+      "messenger": "ulak",
+      "pale": "solgun",
+      "sob": "hıçkıra hıçkıra ağlamak",
+      "uncertainty": "belirsizlik",
+      "support": "destek",
+      "patient": "sabırlı",
+      "distress": "sıkıntı",
+      "heartless": "kalpsiz",
+      "isolate": "yalnız bırakmak",
+      "formal": "resmi",
+      "recover": "iyileşmek",
+      "fever": "ateş",
+      "engaged": "nişanlı",
+      "proposal": "evlilik teklifi",
+      "wisdom": "bilgelik"
+    }
+  },
+      {
+    id: 'classic_mansfield_park',
+    title: "Mansfield Park",
+    author: 'Jane Austen',
+    level: 'A2',
+    coverUrl: '/covers/classic_mansfield_park.webp',
+    en: [
+      "Fanny Price was a young girl from a poor family. Her mother had many children and very little money. Because of this, Fanny’s mother asked her rich sister, Mrs. Norris, for help. Mrs. Norris lived at Mansfield Park with her wealthy husband, Sir Thomas Bertram. They agreed to take Fanny into their home. Fanny was only ten years old when she traveled to her new life. She felt very shy and lonely because she missed her parents. When she arrived at the big house, everything felt strange and cold. The house was very large and beautiful, but it was not like the small, simple home she knew. She had to learn how to live in a house full of rules and manners that were new to her.",
+      "At Mansfield Park, Fanny lived with her cousins. There were two girls, Maria and Julia, and two boys, Tom and Edmund. Her cousins were very different from Fanny. They were rich and sometimes they were not very kind to her. They acted like they were better than her because their family had more money. Lady Bertram was her aunt, but she was a very quiet person who spent most of her time sitting on her sofa. She did not talk much to Fanny or care about her feelings. Mrs. Norris was the aunt who bossed Fanny around every day. She always reminded Fanny that she was poor and that she should be very thankful for their generosity.",
+      "Edmund was the only cousin who was kind to Fanny. He was the younger son and he had a very gentle heart. When Fanny cried because she missed her home, Edmund talked to her and made her feel better. He helped her with her lessons and he played games with her in the garden. Fanny felt very happy whenever she was with Edmund. He was her best friend in the big, cold house. As the years passed, Fanny grew up to be a quiet and sweet young woman. She kept her feelings hidden, but her love for Edmund grew stronger every day. She knew her place in the house, but her heart always felt like a guest at Mansfield Park.",
+      "One summer, Sir Thomas had to travel to Antigua to take care of his business affairs. He left his home and his family for a long time. The children were happy because their father was away and they did not have to follow his strict rules. Soon, two new neighbors arrived at the village near Mansfield Park. They were Mr. Henry Crawford and his beautiful sister, Miss Mary Crawford. They came to live with their sister, Mrs. Grant, at the local parsonage. The arrival of the Crawford siblings changed the quiet life of the family. Maria and Julia were very interested in Henry because he was handsome and rich. The young people spent all their time together, laughing and talking in the large gardens of the house.",
+      "Mary Crawford was a clever and pretty young woman from London. She was very different from the girls at Mansfield Park because she was very confident and spoke her mind. Fanny watched them from afar and felt even more like an outsider. Edmund began to spend a lot of time talking to Mary. He liked her spirit and her funny stories, even though she sometimes said things that were not very kind or thoughtful. Fanny felt a strange pain in her heart when she saw them together. She started to think that Edmund liked Mary more than anyone else. She stayed quiet and continued to do her duties, but she often went to the garden to cry by herself.",
+      "The young people decided they wanted to act in a play. They chose a story called Lovers' Vows. They wanted to perform it on a small stage inside the big house. Sir Thomas did not like plays, and everyone knew that he would be very angry if he found out. However, they did not listen to the warnings. They started to practice every day, and the house became very busy and loud. Henry Crawford played the lead role, and he was very charming to both Maria and Julia. Fanny was very worried because she knew it was wrong to go against Sir Thomas. She felt that the house was changing in a bad way and she did not know what to do.",
+      "The house at Mansfield Park felt very different now. Everything was messy because the young people were busy building a stage in the middle of the large library. They did not care about the rules or the quiet habits of the past. Maria and Julia were very excited about their roles, and they spent all their time learning their lines. Henry Crawford helped them with the play, but he also spent a lot of time talking with Maria. They flirted while they practiced their parts, and Fanny watched them with a worried heart. She knew that Sir Thomas would be very unhappy to see his house turned into a theater for entertainment. The tension in the air was thick, and the atmosphere felt heavy and strange for everyone living inside the home.",
+      "Edmund was also part of the play, even though he had doubts at first. He wanted to be with Mary Crawford, and she wanted to act in the play very much. Fanny felt sad because she saw how much Edmund cared for Mary. She thought that Mary was not the right person for him because she was too worldly. Sometimes, Mary would make fun of the clergy or Sir Thomas, and it made Fanny feel uncomfortable. Edmund always defended her, saying she was just full of life and needed more experience. Fanny tried to stay quiet as she felt her place in the family getting smaller every day. She was the only one who truly respected the values of Sir Thomas during this difficult time.",
+      "One evening, as the group practiced, something unexpected happened. A man arrived at the house with very serious news. He said that Sir Thomas was coming back from Antigua much earlier than they expected. The house became silent in an instant. All the excitement about the play vanished, and fear took its place. The young people looked at each other with wide eyes, wondering what to do with the stage and the costumes. Maria, Julia, and the others realized that they had made a very big mistake. They were terrified of the consequences that would follow his return. Fanny felt sorry for them, but she also knew that the house needed to return to its original state before their father walked through the front door.",
+      "Sir Thomas arrived at Mansfield Park, and the house was quiet again. He walked into the large room and saw the wooden stage for the play. He did not say anything immediately, but his face looked very disappointed. The young people stood in front of him, feeling very nervous and ashamed. They wanted to hide their actions, but the large wooden structure made that impossible. Sir Thomas looked at the costumes and the messy library with deep concern. He did not yell, but his silence was louder than any angry words. The theater experiment was finally over, and everyone felt the heavy weight of their poor decisions. Maria and Julia felt especially guilty because they had ignored the rules of their home.",
+      "The following days were difficult for the whole family. Sir Thomas started to fix the order of the house, and he did not mention the play again. He was busy with his work, but he noticed how the family had changed while he was away in Antigua. Fanny felt a small sense of relief because the house returned to its usual, quiet state. She remained in the background, as she always did, observing the feelings of her cousins. Edmund felt embarrassed about his behavior, but he was also glad that the chaos had ended. He talked to Fanny about his mistakes, and she listened to him with her usual kindness and patience. They were friends again, and this made Fanny very happy inside.",
+      "Meanwhile, Henry Crawford started to pay more attention to Fanny. He noticed her gentle nature and her quiet strength. Fanny felt confused by his new interest in her, as she still remembered how he acted with Maria during the play rehearsals. Mary Crawford also continued her friendship with Edmund, although her opinions were still quite different from his own. She did not change her mind about the importance of money or status in life. Fanny kept her distance because she did not trust the Crawfords. She knew that their influence was not good for the peace of Mansfield Park. She stayed loyal to her values and hoped for better days ahead for everyone in the home.",
+      "Henry Crawford decided to spend more time with Fanny to win her heart. He spoke to her with kindness, hoping that she would notice his sincerity. Fanny felt very nervous because she did not trust his sudden change of character. She remembered how he played games with the feelings of her cousins. However, Henry was very persistent in his pursuit of her attention. He even spoke to her uncle about his admiration for her gentle nature. Fanny remained quiet and careful, as she preferred to keep her feelings hidden from everyone. She knew that her life was simple and different from the grand life that Henry lived. Despite his efforts, she stayed true to her quiet values and did not easily accept his romantic words.",
+      "Mary Crawford continued to talk to Edmund, but they had many arguments about their different lives. Mary wanted Edmund to have a high position in the world, while he believed in the simple life of a local priest. Their friendship became complicated because they could not agree on what was truly important. Edmund felt that Mary did not respect his choices, but he still cared for her deeply. He felt lost between his love for her and his desire for a peaceful, moral life. Meanwhile, Sir Thomas watched these interactions with a careful eye. He wanted the best for his family, but he was worried about the influence of the Crawfords. The house felt full of secret thoughts and hidden tensions that made everyone very anxious.",
+      "Time passed and the family finally found a path forward. Maria married Mr. Rushworth and left Mansfield Park, though she was not truly happy. Edmund eventually realized that Fanny was the only person who truly understood him. He saw her loyalty and her sweet spirit, which he had ignored for many years. He decided to marry Fanny, who had loved him since they were children. They built a life together based on kindness and shared values in their quiet home. Sir Thomas was finally proud of his niece for her goodness and strength. Mansfield Park became a place of peace once again, and Fanny finally found the happiness that she deserved. She was no longer just an observer, but the heart of her own family."
+    ],
+    tr: [
+      "Fanny Price, yoksul bir aileden gelen genç bir kızdı. Annesinin birçok çocuğu vardı ve çok az parası bulunuyordu. Bu yüzden Fanny’nin annesi, zengin kız kardeşi Bayan Norris’ten yardım istedi. Bayan Norris, varlıklı kocası Sör Thomas Bertram ile birlikte Mansfield Park'ta yaşıyordu. Fanny’yi evlerine almaya karar verdiler. Fanny yeni hayatına doğru yola çıktığında henüz on yaşındaydı. Anne ve babasını özlediği için kendini çok utangaç ve yalnız hissediyordu. Büyük eve vardığında, her şey garip ve soğuk görünüyordu. Ev çok büyük ve güzeldi ama bildiği küçük, sade ev gibi değildi. Kendisi için yeni olan kurallar ve görgü kurallarıyla dolu bir evde yaşamayı öğrenmek zorundaydı.",
+      "Mansfield Park'ta Fanny kuzenleriyle birlikte yaşıyordu. Maria ve Julia adında iki kız, Tom ve Edmund adında iki erkek kuzeni vardı. Kuzenleri Fanny'den çok farklıydı. Varlıklıydılar ve bazen ona karşı pek nazik değillerdi. Ailelerinin daha çok parası olduğu için kendilerini Fanny'den üstün görüyorlardı. Lady Bertram onun teyzesiydi ama gününün çoğunu kanepesinde oturarak geçiren çok sessiz bir insandı. Fanny ile pek konuşmazdı veya onun duygularına önem vermezdi. Bayan Norris ise her gün Fanny'ye emirler yağdıran teyzeydi. Sürekli ona yoksul olduğunu ve gösterdikleri cömertlik için çok minnettar olması gerektiğini hatırlatırdı.",
+      "Edmund, Fanny'ye nazik davranan tek kuzeniydi. Küçük oğuldu ve çok yumuşak bir kalbi vardı. Fanny evini özleyip ağladığında, Edmund onunla konuşur ve daha iyi hissetmesini sağlardı. Derslerine yardım eder ve bahçede onunla oyunlar oynardı. Fanny, Edmund ile birlikteyken çok mutlu olurdu. O, bu büyük ve soğuk evdeki en iyi arkadaşıydı. Yıllar geçtikçe Fanny sessiz ve tatlı bir genç kadına dönüştü. Duygularını saklı tuttu ama Edmund'a olan sevgisi her geçen gün büyüdü. Evdeki yerini biliyordu ama kalbi her zaman Mansfield Park'ta bir misafir gibi hissetti.",
+      "Bir yaz, Sir Thomas işleriyle ilgilenmek için Antigua'ya gitmek zorunda kaldı. Evi ve ailesini uzun bir süreliğine terk etti. Babaları uzakta olduğu ve katı kurallarına uymak zorunda kalmadıkları için çocuklar mutluydu. Kısa süre sonra, Mansfield Park yakınındaki köye iki yeni komşu geldi. Bu kişiler Bay Henry Crawford ve güzel kız kardeşi Bayan Mary Crawford'du. Yerel papaz evinde yaşayan kız kardeşleri Bayan Grant'in yanına taşınmışlardı. Crawford kardeşlerin gelişi ailenin sakin hayatını değiştirdi. Maria ve Julia, yakışıklı ve zengin olduğu için Henry ile çok ilgileniyorlardı. Gençler tüm vakitlerini evin büyük bahçelerinde gülüşerek ve sohbet ederek geçiriyorlardı.",
+      "Mary Crawford, Londra'dan gelen zeki ve güzel bir genç kadındı. Mansfield Park'taki kızlardan çok farklıydı çünkü çok özgüvenliydi ve aklındakini çekinmeden söylüyordu. Fanny onları uzaktan izledi ve kendini daha da yabancı hissetti. Edmund, Mary ile konuşarak çok zaman geçirmeye başladı. Mary bazen nazik veya düşünceli olmayan şeyler söylese bile, onun neşesini ve komik hikayelerini seviyordu. Fanny, onları birlikte gördüğünde kalbinde tuhaf bir acı hissetti. Edmund'ın Mary'den başkasını sevmediğini düşünmeye başladı. Sessiz kaldı ve görevlerini yapmaya devam etti, ancak sık sık tek başına ağlamak için bahçeye gidiyordu.",
+      "Gençler bir tiyatro oyununda oynamak istediklerine karar verdiler. Lovers' Vows adında bir hikaye seçtiler. Bunu büyük evin içindeki küçük bir sahnede sergilemek istiyorlardı. Sir Thomas oyunlardan hoşlanmazdı ve herkes bunu öğrenirse çok sinirleneceğini biliyordu. Ancak uyarılara kulak asmadılar. Her gün prova yapmaya başladılar ve ev çok hareketli ve gürültülü bir yer haline geldi. Henry Crawford başrolü oynuyordu ve hem Maria'ya hem de Julia'ya karşı çok etkileyiciydi. Fanny çok endişeliydi çünkü Sir Thomas'a karşı gelmenin yanlış olduğunu biliyordu. Evin kötü bir şekilde değiştiğini hissediyordu ve ne yapacağını bilmiyordu.",
+      "Mansfield Park'taki ev artık çok farklı hissettiriyordu. Büyük kütüphanenin ortasında bir sahne kurmakla meşgul oldukları için her yer dağınıktı. Kuralları ya da geçmişin sessiz alışkanlıklarını umursamıyorlardı. Maria ve Julia rolleri konusunda çok heyecanlıydı ve tüm zamanlarını repliklerini öğrenerek geçiriyorlardı. Henry Crawford oyun konusunda onlara yardım ediyor ama aynı zamanda Maria ile konuşarak çok vakit geçiriyordu. Rollerini çalışırken flört ediyorlardı ve Fanny onları endişeli bir kalple izliyordu. Sir Thomas'ın evinin eğlence için bir tiyatroya dönüştürüldüğünü görmekten hiç hoşnut olmayacağını biliyordu. Havadaki gerginlik yoğundu ve atmosfer evde yaşayan herkes için ağır ve tuhaf hissettiriyordu.",
+      "Edmund da ilk başta şüpheleri olmasına rağmen oyunun bir parçasıydı. Mary Crawford ile birlikte olmak istiyordu ve Mary de oyunda oynamayı çok istiyordu. Fanny, Edmund'ın Mary'ye ne kadar değer verdiğini gördüğü için üzülüyordu. Mary'nin çok dünyevi olduğu için ona uygun biri olmadığını düşünüyordu. Bazen Mary, din adamlarıyla veya Sir Thomas ile dalga geçiyordu ve bu Fanny'yi rahatsız ediyordu. Edmund ise onun sadece hayat dolu olduğunu ve daha fazla deneyime ihtiyacı olduğunu söyleyerek onu her zaman savunuyordu. Fanny, aile içindeki yerinin her geçen gün daha da küçüldüğünü hissederken sessiz kalmaya çalışıyordu. Bu zor süreçte Sir Thomas'ın değerlerine gerçekten saygı duyan tek kişi oydu.",
+      "Bir akşam grup pratik yaparken beklenmedik bir şey oldu. Çok ciddi haberlerle bir adam eve geldi. Sir Thomas'ın Antigua'dan beklediklerinden çok daha erken döndüğünü söyledi. Ev bir anda sessizliğe büründü. Oyunla ilgili tüm heyecan yok oldu ve yerini korkuya bıraktı. Gençler sahne ve kostümlerle ne yapacaklarını merak ederek birbirlerine şaşkın gözlerle baktılar. Maria, Julia ve diğerleri çok büyük bir hata yaptıklarını fark ettiler. Dönüşünün ardından gelecek sonuçlardan dehşete kapılmışlardı. Fanny onlara acıyordu ama aynı zamanda babaları ön kapıdan girmeden önce evin eski haline dönmesi gerektiğini de biliyordu.",
+      "Sir Thomas, Mansfield Park'a vardı ve ev yeniden sessizliğe büründü. Büyük odaya girdi ve oyun için kurulan ahşap sahneyi gördü. Hemen bir şey söylemedi ama yüzü çok hayal kırıklığına uğramış görünüyordu. Gençler onun önünde duruyor, çok gergin ve utanmış hissediyorlardı. Yaptıklarını gizlemek istediler ama büyük ahşap yapı bunu imkansız kılıyordu. Sir Thomas kostümlere ve dağınık kütüphaneye derin bir endişeyle baktı. Bağırmadı ama sessizliği herhangi bir öfkeli sözden daha keskindi. Tiyatro deneyi nihayet sona ermişti ve herkes kötü kararlarının ağırlığını hissediyordu. Maria ve Julia, evin kurallarını görmezden geldikleri için özellikle suçlu hissediyorlardı.",
+      "Takip eden günler tüm aile için zordu. Sir Thomas evin düzenini düzeltmeye başladı ve bir daha oyundan bahsetmedi. Kendi işleriyle meşguldü ancak o Antigua'dayken ailenin nasıl değiştiğini fark etmişti. Fanny, ev eski sessiz haline döndüğü için küçük bir rahatlama hissetti. Kuzenlerinin duygularını gözlemleyerek her zamanki gibi arka planda kaldı. Edmund davranışından dolayı utandı ama karmaşanın sona ermesinden de memnundu. Hataları hakkında Fanny ile konuştu ve Fanny onu her zamanki nezaketi ve sabrıyla dinledi. Yeniden arkadaş oldular ve bu durum Fanny'yi içten içe çok mutlu etti.",
+      "Bu arada Henry Crawford, Fanny'ye daha fazla dikkat etmeye başladı. Onun nazik doğasını ve sessiz gücünü fark etti. Fanny, oyun provaları sırasında Maria ile nasıl davrandığını hala hatırladığı için Henry'nin kendisine olan bu yeni ilgisi karşısında şaşkındı. Mary Crawford da Edmund ile arkadaşlığını sürdürdü, ancak görüşleri hala onunkinden oldukça farklıydı. Hayattaki paranın veya statünün önemi hakkındaki fikrini değiştirmedi. Fanny, Crawfordlara güvenmediği için mesafesini korudu. Onların etkisinin Mansfield Park'ın huzuru için iyi olmadığını biliyordu. Kendi değerlerine bağlı kaldı ve evdeki herkes için daha iyi günler gelmesini umut etti.",
+      "Henry Crawford, Fanny'nin kalbini kazanmak için onunla daha fazla vakit geçirmeye karar verdi. Samimiyetini fark etmesi umuduyla onunla nazikçe konuştu. Fanny, onun ani karakter değişimine güvenmediği için çok gergindi. Henry'nin kuzenlerinin duygularıyla nasıl oyunlar oynadığını hatırlıyordu. Ancak Henry, dikkatini çekme konusunda çok ısrarcıydı. Hatta amcasıyla Fanny'nin nazik doğasına olan hayranlığı hakkında bile konuştu. Fanny, duygularını herkesten gizlemeyi tercih ettiği için sessiz ve dikkatli kaldı. Kendi hayatının, Henry'nin yaşadığı büyük hayattan farklı ve basit olduğunu biliyordu. Tüm çabalarına rağmen değerlerine sadık kaldı ve romantik sözlerini kolayca kabul etmedi.",
+      "Mary Crawford, Edmund ile konuşmaya devam etti ancak farklı hayatları hakkında birçok tartışma yaşadılar. Mary, Edmund'un dünyada yüksek bir mevkiye sahip olmasını isterken, o yerel bir rahibin basit yaşamına inanıyordu. Neyin gerçekten önemli olduğu konusunda anlaşamadıkları için arkadaşlıkları karmaşık bir hal aldı. Edmund, Mary'nin seçimlerine saygı duymadığını hissetti ama onu hala derinden önemsiyordu. Ona olan aşkı ile huzurlu ve ahlaklı bir yaşam arzusu arasında kaybolmuştu. Bu sırada Sir Thomas, bu etkileşimleri dikkatli bir gözle izliyordu. Ailesi için en iyisini istiyordu ama Crawford'ların etkisinden endişeliydi. Ev, herkesi çok geren gizli düşünceler ve saklı gerilimlerle dolu hissediliyordu.",
+      "Zaman geçti ve aile sonunda ileriye dönük bir yol buldu. Maria, Mr. Rushworth ile evlendi ve Mansfield Park'tan ayrıldı, ancak tam olarak mutlu değildi. Edmund sonunda onu gerçekten anlayan tek kişinin Fanny olduğunu fark etti. Yıllardır görmezden geldiği sadakatini ve tatlı ruhunu gördü. Çocukluklarından beri ona aşık olan Fanny ile evlenmeye karar verdi. Sessiz evlerinde nezaket ve ortak değerlere dayalı bir hayat kurdular. Sir Thomas, sonunda yeğeninin iyiliği ve gücüyle gurur duydu. Mansfield Park bir kez daha huzur yeri oldu ve Fanny sonunda hak ettiği mutluluğu buldu. Artık sadece bir gözlemci değil, kendi ailesinin kalbiydi."
+    ],
+    words: {
+      "poor": "yoksul",
+      "wealthy": "varlıklı",
+      "cousin": "kuzen",
+      "kind": "nazik",
+      "generosity": "cömertlik",
+      "gentle": "yumuşak",
+      "affair": "iş, mesele",
+      "parsonage": "papaz evi",
+      "sibling": "kardeş",
+      "confident": "kendine güvenen",
+      "outsider": "yabancı, dışlanmış kişi",
+      "perform": "sergilemek, sahnelemek",
+      "theater": "tiyatro",
+      "tension": "gerilim",
+      "clergyman": "din adamı",
+      "consequence": "sonuç",
+      "flirt": "cilveleşmek",
+      "worried": "endişeli",
+      "ashamed": "utanmış",
+      "structure": "yapı",
+      "disappointed": "hayal kırıklığına uğramış",
+      "chaos": "karmaşa",
+      "observing": "gözlemleyerek",
+      "loyal": "sadık",
+      "sincerity": "samimiyet",
+      "persistent": "ısrarcı",
+      "admiration": "hayranlık",
+      "loyalty": "sadakat",
+      "observer": "gözlemci"
+    }
+  },
+      {
+    id: 'classic_persuasion',
+    title: "Persuasion",
+    author: 'Jane Austen',
+    level: 'A2',
+    coverUrl: '/covers/classic_persuasion.webp',
+    en: [
+      "Sir Walter Elliot was a man who loved his title and his appearance. He lived at Kellynch Hall with his eldest daughter, Elizabeth. He had been a widower for many years, and he cared mostly about his status in the neighborhood. His second daughter, Anne, was different. She was quiet, smart, and thoughtful, but Sir Walter did not appreciate her beauty or her kind nature. Anne felt very lonely at home because her father and sister often ignored her. They were busy with their expensive clothes and social events, while Anne remembered the past. She had once fallen in love with a young officer named Frederick Wentworth, but her friend Lady Russell had persuaded her to say no to him. That decision had caused Anne great sadness for many years, and she still thought about him often.",
+      "Times were becoming difficult for the Elliot family because they had spent too much money. Sir Walter and Elizabeth enjoyed buying new things and hosting large parties, but they did not save any gold. Finally, Mr. Shepherd, the family lawyer, told them that they must leave Kellynch Hall. They needed to move to a smaller house in the city of Bath to save money. This news shocked Sir Walter, as he did not want to leave his beautiful home. Elizabeth was also upset because she wanted to keep her position in society. They decided to rent their house to a tenant. Mr. Shepherd suggested that Admiral Croft and his wife might be interested in moving to Kellynch Hall, which was a very difficult change for the proud Sir Walter to accept.",
+      "As they planned the move to Bath, Anne felt a mix of emotions. She knew that leaving her home would be hard, but she hoped for a change in her life. Lady Russell visited them often, and she continued to give advice about their situation. Anne respected Lady Russell, but she realized that the advice she received years ago about Captain Wentworth had not brought her happiness. Meanwhile, the family prepared for the Crofts to arrive. Sir Walter hated the idea of people with a military background living in his house, as he thought only people with land titles were truly important. Anne tried to stay calm and helpful during this busy time. She silently worried about her future and wondered if she would ever find peace again after the mistakes of her youth.",
+      "The Crofts arrived at Kellynch Hall sooner than anyone expected. Admiral Croft was a friendly man with a kind face and a loud laugh, and his wife, Mrs. Croft, was very smart and sensible. Although Sir Walter disliked their naval background, he found them to be quite polite. Anne watched them with great interest. She noticed that the Admiral and his wife were very close and truly loved each other. They walked together in the gardens and talked about their travels across the sea. Seeing their deep connection made Anne feel a little sad. It reminded her of the happy days when she was young and had once believed in the possibility of her own lasting love. She kept her feelings hidden and continued to help her family prepare for the move to the city of Bath.",
+      "One morning, news reached the family that surprised everyone. The Admiral mentioned that his wife's brother was coming to visit them soon. Anne felt her heart beat faster when she heard the name. It was Frederick Wentworth, the man she had loved so many years ago. She was shocked and nervous. How could she face him after all this time? Her memory of him was still very clear. She remembered his bright eyes and his brave spirit. Anne wondered if he still held any anger towards her for refusing his marriage proposal long ago. She felt very anxious, but she tried to stay quiet and not show her true emotions to her father or her sister, who were already busy talking about other things.",
+      "The thought of seeing Captain Wentworth again filled Anne with both fear and hope. She thought about how much he had achieved in the navy. He was now a successful officer with gold in his pockets and a reputation for being a great leader. He was no longer the poor young man who had once asked for her hand. Anne walked alone in the woods to calm her mind. She thought about the influence of Lady Russell and the persuasion that had forced her to break her promise to Frederick. It was a difficult memory to face. She knew that her life was changing rapidly, and she could not predict what would happen when he arrived at the house.",
+      "Captain Wentworth arrived at the home of the Crofts. He was a tall man with a confident look. Anne saw him at a small party, and her hands started to shake. He looked at everyone in the room with a polite smile, but he did not look at her. He spoke to the Musgrove sisters with great interest and was very kind to them. Anne stood by the wall and watched them laugh together. It was hard to see him acting so friendly toward other people while he ignored her presence entirely. She felt a deep pain in her chest, but she tried to stay calm and quiet. The room felt very small because she could not run away from her sad memories. She wished she could be invisible for just a moment to hide her true feelings.",
+      "The Musgrove sisters were very happy to have the handsome Captain nearby. They talked to him about everything and asked many questions about his life on the big ships. Wentworth told exciting stories about the sea and his many travels. He sounded brave and smart. Anne listened to every word he said from her place across the room. She was amazed by how much he had changed over the years, yet she could still see the young man she once loved in his eyes. He seemed to have no interest in the past. He was moving forward with his life and was clearly enjoying the company of new friends. Anne realized that he did not see her as the same person he knew long ago. This realization made her feel very lonely.",
+      "Later that night, Anne sat alone and thought about the meeting. She knew that the Captain was not just a guest at the Crofts house. He was a constant reminder of her own choices. She had listened to Lady Russell and had left the man she loved to follow the advice of someone else. Now, Captain Wentworth was back, but the bridge between them was broken. He treated her like a total stranger with a cold and formal manner. This was worse than being angry because it showed that he did not care about her at all anymore. She knew that their story was over, but it was still difficult to breathe in the same air as him. She walked to her room and cried for the life they could have had together.",
+      "The party at the Musgrove family house continued with much energy and laughter. Captain Wentworth was the center of attention as he shared more tales about his time at sea. Everyone listened with great interest, especially Louisa and Henrietta Musgrove. Anne sat in a quiet corner, trying to be helpful by playing the piano for the dancers. She felt tired and her heart was heavy, yet she kept her fingers moving over the keys. She noticed that the Captain often looked at Louisa with an admiring smile. It seemed that he was choosing his future bride from the sisters. Anne felt a cold sadness as she watched them enjoy the music together. She stayed in the background, making sure no one noticed her quiet tears as she played the melody for the happy group.",
+      "A walk to the seaside town of Lyme was organized for the next morning. Anne joined the group but tried to keep her distance from the Captain. The fresh air and the sight of the blue ocean made her feel slightly better. They walked along the stone wall at the beach. Louisa Musgrove felt full of energy and wanted to jump from a high spot on the wall. She called for Captain Wentworth to catch her. She jumped too quickly and fell down onto the hard ground below. A loud scream filled the air. Everyone stopped moving and stood in silence. Louisa lay on the ground without moving, and her face looked very pale. The group was terrified because they did not know if she was still alive.",
+      "Captain Wentworth was very upset and felt responsible for the terrible accident. He picked Louisa up carefully and asked for a doctor immediately. Anne stayed strong and took control of the situation. She told everyone what to do in a calm voice. She felt sure of herself for the first time in many years. Captain Wentworth watched Anne with a look of surprise. He was amazed by her strength and good sense during such a hard moment. He realized that she was a very special woman. While they waited for help, the Captain started to talk to Anne with much more respect. His cold manner towards her began to melt away. He finally understood that she was still the same kind and smart person he had loved long ago.",
+      "Weeks later, Louisa slowly recovered from her accident. Captain Wentworth spent much time visiting her, but everyone was surprised to learn that he did not plan to marry her. Instead, Louisa fell in love with Captain Benwick, a friend of the Navy. When Captain Wentworth returned to Bath to see Anne, he was full of new hope. He arrived at a large room where a party was happening. He looked for Anne everywhere. He was worried that she might marry Mr. Elliot, a man who wanted to take her father's estate. Captain Wentworth stood near the piano, listening to a conversation about true love. Anne spoke clearly, saying that women love the longest, even when all hope is gone. The Captain heard every word and felt deeply moved by her gentle wisdom.",
+      "Captain Wentworth decided that he could not wait any longer. He sat down at a table and wrote a quick, honest letter to Anne. He told her that he had loved her for many years and that his heart was still hers alone. He explained that he had been jealous and proud, but he now saw how wrong he had been. He asked her to read his words and understand the truth of his feelings. He gave the letter to Anne while she was with her family. Anne read the words with a beating heart and tears of joy in her eyes. She felt the heavy weight of the past finally lift away. She knew that he was the only man she had ever loved, and she was ready to be with him.",
+      "Anne found the Captain in the garden, and they walked together under the trees. The air was soft, and the world felt bright and new. They spoke about the years they had spent apart and the mistakes they had made. There was no more pride and no more coldness between them. They agreed that their love was stronger because of the hard times they had survived. Anne's family eventually accepted their choice, and she was happy to leave her old life behind. She married Captain Wentworth and found the joy she had waited so many years to receive. They started their new life together, full of trust and deep respect for each other, finally finding the peace and happiness they both truly deserved."
+    ],
+    tr: [
+      "Sir Walter Elliot, unvanını ve dış görünüşünü seven bir adamdı. Kellynch Hall'da en büyük kızı Elizabeth ile birlikte yaşıyordu. Uzun yıllardır duldu ve esasen mahalledeki statüsüyle ilgileniyordu. İkinci kızı Anne ise farklıydı. Sessiz, zeki ve düşünceli bir kızdı ancak Sir Walter onun güzelliğini veya nazik karakterini takdir etmiyordu. Babası ve kız kardeşi onu sık sık görmezden geldiği için Anne evde kendini çok yalnız hissediyordu. Onlar pahalı kıyafetleri ve sosyal etkinlikleriyle meşgulken, Anne geçmişi hatırlıyordu. Bir zamanlar Frederick Wentworth adında genç bir subaya aşık olmuştu ancak arkadaşı Lady Russell onu Wentworth'e hayır demesi için ikna etmişti. Bu karar, Anne'in uzun yıllar büyük üzüntü yaşamasına neden olmuştu ve o hala onu sık sık düşünüyordu.",
+      "Elliot ailesi için zaman zorlaşıyordu çünkü çok fazla para harcamışlardı. Sir Walter ve Elizabeth yeni şeyler almaktan ve büyük partiler vermekten hoşlanıyorlardı ancak hiç altın biriktirmemişlerdi. Sonunda ailenin avukatı Bay Shepherd, onlara Kellynch Hall'dan ayrılmaları gerektiğini söyledi. Para biriktirmek için Bath şehrinde daha küçük bir eve taşınmaları gerekiyordu. Bu haber Sir Walter'ı şoke etti çünkü güzel evinden ayrılmak istemiyordu. Elizabeth de toplumdaki yerini korumak istediği için üzgündü. Evlerini bir kiracıya vermeye karar verdiler. Bay Shepherd, Amiral Croft ve eşinin Kellynch Hall'a taşınmakla ilgilenebileceğini söyledi; bu, gururlu Sir Walter için kabullenmesi çok zor bir değişimdi.",
+      "Bath'a taşınmayı planlarken, Anne bir duygu karmaşası yaşıyordu. Evinden ayrılmanın zor olacağını biliyordu ama hayatında bir değişiklik olacağını umuyordu. Lady Russell onları sık sık ziyaret ediyordu ve durumları hakkında tavsiye vermeye devam ediyordu. Anne, Lady Russell'a saygı duyuyordu ancak yıllar önce Kaptan Wentworth hakkında aldığı tavsiyenin ona mutluluk getirmediğini fark etti. Bu sırada aile, Croftların geleceği için hazırlanıyordu. Sir Walter, askeri geçmişi olan insanların evinde yaşama fikrinden nefret ediyordu çünkü sadece toprak unvanı olan insanların gerçekten önemli olduğunu düşünüyordu. Anne bu yoğun dönemde sakin ve yardımsever kalmaya çalıştı. Sessizce geleceği hakkında endişeleniyor ve gençliğinin hatalarından sonra bir daha huzur bulup bulamayacağını merak ediyordu.",
+      "Croft ailesi Kellynch Hall'a beklenenden çok daha erken geldi. Amiral Croft, kibar yüzlü ve neşeli kahkahalara sahip dost canlısı bir adamdı; eşi Bayan Croft ise oldukça zeki ve mantıklıydı. Sir Walter, askeri geçmişlerinden hoşlanmasa da onların oldukça nazik insanlar olduğunu fark etti. Anne, onları büyük bir ilgiyle izledi. Amiral ve eşinin birbirlerine çok yakın olduklarını ve gerçekten birbirlerini sevdiklerini fark etti. Bahçelerde birlikte yürüyüp deniz aşırı seyahatlerinden bahsediyorlardı. Onların bu derin bağını görmek Anne'i biraz hüzünlendirdi. Bu, gençliğinde kendi kalıcı aşkının mümkün olduğuna inandığı mutlu günlerini ona hatırlattı. Duygularını gizli tuttu ve ailesinin Bath şehrine taşınmasına yardım etmeye devam etti.",
+      "Bir sabah, aileye herkesi şaşırtan bir haber ulaştı. Amiral, eşinin erkek kardeşinin yakında onları ziyarete geleceğinden bahsetti. Anne, ismi duyduğunda kalbinin daha hızlı çarptığını hissetti. Bu, uzun yıllar önce sevdiği adam olan Frederick Wentworth'tü. Şaşkın ve gergindi. Onca zamandan sonra onunla nasıl yüzleşebilirdi? Ona dair anıları hala çok netti. Parlak gözlerini ve cesur ruhunu hatırlıyordu. Anne, çok eskiden yaptığı evlilik teklifini reddettiği için ona karşı hala bir öfke besleyip beslemediğini merak etti. Çok endişeliydi ama sessiz kalmaya ve babası ile kız kardeşine gerçek duygularını belli etmemeye çalıştı; çünkü onlar zaten başka şeyler hakkında konuşmakla meşguldüler.",
+      "Kaptan Wentworth'ü tekrar görme düşüncesi Anne'i hem korku hem de umutla doldurdu. Donanmada ne kadar çok başarı elde ettiğini düşündü. Artık cebi altın dolu ve harika bir lider olarak tanınan başarılı bir subaydı. Bir zamanlar elini isteyen o yoksul genç adam değildi artık. Anne zihnini sakinleştirmek için ormanda tek başına yürüdü. Lady Russell'ın etkisini ve Frederick'e verdiği sözü bozması için onu zorlayan iknayı düşündü. Bu, yüzleşmesi zor bir anıydı. Hayatının hızla değiştiğini biliyordu ve eve geldiğinde neler olacağını tahmin edemiyordu.",
+      "Yüzbaşı Wentworth, Croft ailesinin evine vardı. Kendinden emin bir duruşu olan uzun boylu bir adamdı. Anne onu küçük bir davette gördü ve elleri titremeye başladı. Odadaki herkese nazik bir gülümsemeyle baktı ama ona bakmadı. Musgrove kızlarıyla büyük bir ilgiyle konuştu ve onlara karşı çok nazik davrandı. Anne duvarın yanında durdu ve birlikte gülüşmelerini izledi. O, Anne'i tamamen görmezden gelirken başkalarına karşı bu kadar samimi davrandığını görmek çok zordu. Göğsünde derin bir acı hissetti ama sakin ve sessiz kalmaya çalıştı. Üzgün hatıralarından kaçamadığı için oda ona çok küçük geldi. Gerçek duygularını gizlemek için sadece bir anlığına görünmez olabilmeyi diledi.",
+      "Musgrove kızları, yakışıklı Yüzbaşı yanlarında olduğu için çok mutluydular. Onunla her şey hakkında konuştular ve büyük gemilerdeki hayatı hakkında birçok soru sordular. Wentworth, deniz ve yaptığı birçok yolculuk hakkında heyecan verici hikayeler anlattı. Cesur ve zeki görünüyordu. Anne, odanın karşısındaki yerinden söylediği her kelimeyi dinledi. Yıllar içinde ne kadar değiştiğine şaşırdı, yine de gözlerinde bir zamanlar sevdiği genç adamı hala görebiliyordu. Geçmişe dair hiçbir ilgisi yok gibi görünüyordu. Hayatına devam ediyordu ve yeni arkadaşlarının arkadaşlığından açıkça keyif alıyordu. Anne, onun kendisini uzun zaman önce tanıdığı kişi olarak görmediğini fark etti. Bu farkındalık onu çok yalnız hissettirdi.",
+      "O gece geç saatlerde Anne yalnız oturdu ve karşılaşmayı düşündü. Yüzbaşının Croftların evinde sadece bir misafir olmadığını biliyordu. O, kendi tercihlerinin sürekli bir hatırlatıcısıydı. Lady Russell'ı dinlemiş ve başkasının tavsiyesine uymak için sevdiği adamı bırakmıştı. Şimdi Yüzbaşı Wentworth geri dönmüştü ama aralarındaki köprü yıkılmıştı. Ona soğuk ve resmi bir tavırla, sanki tamamen bir yabancıymış gibi davrandı. Bu, kızgın olmasından daha kötüydü çünkü artık onunla hiç ilgilenmediğini gösteriyordu. Hikayelerinin bittiğini biliyordu ama onunla aynı havayı solumak hala zordu. Odasına yürüdü ve birlikte yaşayabilecekleri hayat için ağladı.",
+      "Musgrove ailesinin evindeki parti büyük bir enerji ve kahkahayla devam etti. Kaptan Wentworth, denizdeki günlerine dair daha fazla hikaye anlatırken ilgi odağı haline gelmişti. Herkes, özellikle Louisa ve Henrietta Musgrove, büyük bir ilgiyle dinliyordu. Anne, dans edenler için piyano çalarak yardımcı olmaya çalışarak sessiz bir köşede oturdu. Yorgun hissediyordu ve kalbi kırıktı ama parmaklarını tuşların üzerinde hareket ettirmeye devam etti. Kaptanın sık sık Louisa'ya hayran bir gülümsemeyle baktığını fark etti. Görünüşe göre gelecekteki eşini kız kardeşler arasından seçiyordu. Anne, onlar müziğin tadını çıkarırken soğuk bir hüzün hissetti. Mutlu grup için melodi çalarken kimsenin sessiz gözyaşlarını fark etmemesi için geri planda kaldı.",
+      "Ertesi sabah Lyme adındaki sahil kasabasına bir yürüyüş düzenlendi. Anne gruba katıldı ama Kaptan'dan uzak durmaya çalıştı. Temiz hava ve masmavi okyanus manzarası onu biraz olsun daha iyi hissettirdi. Sahildeki taş duvar boyunca yürüdüler. Louisa Musgrove enerji doluydu ve duvarın yüksek bir yerinden atlamak istedi. Kendisini tutması için Kaptan Wentworth'e seslendi. Çok hızlı atladı ve aşağıdaki sert zemine düştü. Havayı yüksek bir çığlık kapladı. Herkes hareket etmeyi bıraktı ve sessizce durdu. Louisa hareket etmeden yerde yatıyordu ve yüzü çok solgundu. Hala hayatta olup olmadığını bilmedikleri için grup dehşet içindeydi.",
+      "Kaptan Wentworth çok üzgündü ve korkunç kazadan kendini sorumlu tutuyordu. Louisa'yı dikkatlice kucakladı ve hemen bir doktor çağrılmasını istedi. Anne güçlü durdu ve durumun kontrolünü eline aldı. Sakin bir sesle herkese ne yapmaları gerektiğini söyledi. Uzun yıllardan sonra ilk kez kendine güveniyordu. Kaptan Wentworth, Anne'i şaşkın bir bakışla izledi. Böylesine zor bir anda onun gücü ve sağduyusu karşısında hayrete düşmüştü. Onun çok özel bir kadın olduğunu fark etti. Yardım beklerken Kaptan, Anne ile çok daha fazla saygıyla konuşmaya başladı. Ona karşı soğuk tavrı erimeye başladı. Sonunda onun, çok zaman önce sevdiği nazik ve zeki insanla aynı kişi olduğunu anladı.",
+      "Haftalar sonra, Louisa kazasından yavaşça iyileşti. Yüzbaşı Wentworth onu ziyaret ederek çok zaman geçirdi, ancak herkes onun Louisa ile evlenmeyi planlamadığını öğrendiğinde şaşırdı. Bunun yerine, Louisa donanmadan bir arkadaşı olan Yüzbaşı Benwick'e aşık oldu. Yüzbaşı Wentworth, Anne'i görmek için Bath'e döndüğünde, yeni bir umutla doluydu. Bir partinin gerçekleştiği büyük bir odaya geldi. Her yerde Anne'i aradı. Anne'in, babasının mirasını almak isteyen bir adam olan Bay Elliot ile evlenebileceğinden endişeleniyordu. Yüzbaşı Wentworth piyanonun yanında durup gerçek aşk hakkındaki bir konuşmayı dinledi. Anne, tüm umutlar tükendiğinde bile kadınların en uzun süre seven taraf olduğunu açıkça söyledi. Yüzbaşı her kelimeyi duydu ve onun nazik bilgeliğinden derinden etkilendi.",
+      "Yüzbaşı Wentworth daha fazla bekleyemeyeceğine karar verdi. Bir masaya oturdu ve Anne'e kısa, dürüst bir mektup yazdı. Ona yıllardır onu sevdiğini ve kalbinin hala sadece ona ait olduğunu söyledi. Kıskanç ve gururlu olduğunu, ancak şimdi ne kadar yanıldığını anladığını açıkladı. Sözlerini okumasını ve hislerinin gerçeğini anlamasını istedi. Mektubu, ailesiyle birlikteyken Anne'e verdi. Anne kelimeleri çarpan bir kalp ve gözlerinde sevinç gözyaşlarıyla okudu. Geçmişin ağır yükünün nihayet kalktığını hissetti. Onun şimdiye kadar sevdiği tek adam olduğunu biliyordu ve onunla olmaya hazırdı.",
+      "Anne, Yüzbaşı'yı bahçede buldu ve ağaçların altında birlikte yürüdüler. Hava yumuşaktı ve dünya parlak ve yeni hissettiriyordu. Ayrı geçirdikleri yıllar ve yaptıkları hatalar hakkında konuştular. Artık aralarında ne gurur ne de soğukluk vardı. Yaşadıkları zor zamanlar sayesinde aşklarının daha güçlü olduğu konusunda anlaştılar. Anne'in ailesi sonunda seçimlerini kabul etti ve eski hayatını geride bıraktığı için mutluydu. Yüzbaşı Wentworth ile evlendi ve uzun yıllar beklediği mutluluğu buldu. Birbirlerine karşı güven ve derin saygıyla dolu, nihayet hak ettikleri huzuru ve mutluluğu bulan yeni hayatlarına başladılar."
+    ],
+    words: {
+      "title": "unvan",
+      "widower": "dul erkek",
+      "status": "statü",
+      "persuade": "ikna etmek",
+      "tenant": "kiracı",
+      "military": "askeri",
+      "admiral": "amiral",
+      "sensible": "mantıklı",
+      "nervous": "gergin",
+      "proposal": "evlilik teklifi",
+      "reputation": "itibar",
+      "persuasion": "ikna",
+      "confident": "kendinden emin",
+      "polite": "nazik",
+      "ignore": "görmezden gelmek",
+      "stranger": "yabancı",
+      "choice": "tercih",
+      "advice": "tavsiye",
+      "admire": "hayranlık duymak",
+      "melody": "melodi",
+      "accident": "kaza",
+      "terrified": "dehşete düşmüş",
+      "responsible": "sorumlu",
+      "respect": "saygı",
+      "recover": "iyileşmek",
+      "jealous": "kıskanç",
+      "wisdom": "bilgelik",
+      "honest": "dürüst",
+      "pride": "gurur",
+      "survive": "hayatta kalmak"
+    }
+  },
+      {
+    id: 'classic_northanger_abbey',
+    title: "Northanger Abbey",
+    author: 'Jane Austen',
+    level: 'A2',
+    coverUrl: '/covers/classic_northanger_abbey.webp',
+    en: [
+      "Catherine Morland was a young girl from a quiet village. She was not beautiful, and she did not have many talents. She liked to run and play outside, but she did not enjoy reading or doing her lessons. As she grew older, her life became more interesting. She began to learn music and drawing, but she did not work very hard at these skills. Catherine was a simple and honest girl with a good heart. She loved her family and she was happy in her small home. However, she often dreamed of adventures like those in the books she read. She wanted to see the world and meet new people. She was ready to leave her quiet village behind and find excitement in a big city.",
+      "One day, an invitation came for Catherine to go to the city of Bath. Mr. and Mrs. Allen, who were friends of her parents, asked her to travel with them. Catherine was very excited to hear this news. She had never been away from her home before. Her parents were happy for her and let her go. Bath was a large and beautiful place. Many rich and famous people lived there. Catherine felt nervous but also very happy as she started her journey. She looked out of the carriage window and saw the changing landscape. Everything looked new and mysterious to her young eyes. She hoped that she would meet kind friends and enjoy many fun activities in the city.",
+      "When they arrived in Bath, Catherine saw many tall buildings and busy streets. She felt small in such a big place. Mr. and Mrs. Allen took her to the Pump Room where people gathered to talk and drink water. The room was full of noise and light. Catherine looked at all the people in their nice clothes. She felt a little bit lost because she did not know anyone yet. Mrs. Allen told her to stand close and observe everything carefully. Catherine was ready to experience the life of the city. She believed that something special would happen to her very soon. This was the beginning of her great adventure, and she felt that her life would change in many ways from this day on.",
+      "Catherine stayed close to Mrs. Allen in the busy Pump Room. She felt very shy because everything was so new to her. Suddenly, a kind woman named Mrs. Thorpe walked over to them. She had three pretty daughters with her. One of the daughters was named Isabella. Isabella was very friendly and began to talk to Catherine right away. They liked each other immediately. Catherine felt happy because she finally had a new friend in the big city. Isabella spoke about books and fashion with great interest. Catherine felt less nervous now and enjoyed listening to her. The two girls promised to see each other the next day. Catherine was excited to have someone to share her experiences with during her stay in Bath.",
+      "The next day, Catherine met Isabella and her brother, John Thorpe, at the theatre. John was a confident young man who talked a lot about his carriage and his horses. He liked to boast about his things, and Catherine found him a little strange. However, she was polite because she wanted to be nice to Isabella. They walked around the city together and shared many stories. Catherine learned that Isabella was also fond of reading stories about adventures. They spent hours talking about their favorite characters. The city of Bath felt much warmer and friendlier to Catherine now. She began to feel like she belonged in this busy place, surrounded by music, laughter, and the company of her new, interesting friends.",
+      "Later in the week, Catherine met a gentleman named Mr. Tilney at a ball. He was tall, smart, and very funny. He danced with Catherine and made her laugh with his clever jokes. Catherine had never met anyone like him before. He spoke about books and travel in a way that captured her imagination. She thought he was the most interesting person in Bath. Meanwhile, Isabella was busy talking to Catherine's brother, James, who had just arrived in the city. The atmosphere was full of joy and excitement. Catherine was slowly learning how to navigate the social rules of the city. She felt that her life was becoming more like the stories she read. Her heart was full of hope for the many adventures waiting for her.",
+      "Catherine felt very happy after her dance with Mr. Tilney. She wanted to see him again the next day, but he was gone. Instead, Isabella and her brother John arrived with plans for a long walk. Catherine did not want to go because she hoped to see Mr. Tilney, but she was too shy to say no. John spoke loudly about his fast horses and his expensive carriage while they walked. Catherine felt tired because John talked only about himself. She looked around the busy streets of Bath, hoping to see a familiar face, but only saw strangers everywhere. Her heart felt a little heavy because the excitement of the previous night was fading away. She realized that making friends in a big city was not always easy, even when she tried to be very kind to everyone.",
+      "Suddenly, Catherine saw a carriage stop nearby. She was excited to see Mr. Tilney and his sister, Eleanor, walking toward them. Catherine felt nervous but happy, hoping to invite them to join her group for a walk. However, John Thorpe was very rude and insisted that they must continue their own journey. He did not want to stop and talk to anyone else. Catherine felt very embarrassed by his behavior because she wanted to be polite to her new friends. She had to leave with John and Isabella, which made her very sad. She watched Mr. Tilney walk away and worried that he might think she was not a nice person. It was a difficult moment for Catherine, and she felt like a child who had lost something very precious to her.",
+      "After the walk, Catherine returned to her hotel feeling quite confused. She spent the rest of the evening thinking about the day. Isabella was very happy because James, Catherine’s brother, seemed to like her very much. Isabella talked about her future plans and her love for James, but Catherine could only think about Mr. Tilney. She wondered if he would ever speak to her again. She took out a book and tried to read, but her thoughts kept going back to the encounter on the street. She felt that the world of society was much more complicated than the simple life she knew back home. Catherine hoped that the next day would bring better news and perhaps another chance to talk to the gentleman who had made such a strong impression on her heart.",
+      "Catherine finally arrived at Northanger Abbey with the Tilney family. The house was very large and looked like an old castle from her favorite books. It had high walls, dark rooms, and many long hallways. Catherine felt a little afraid but also very excited. She imagined secret rooms and mysterious stories hidden behind the heavy wooden doors. Eleanor Tilney showed her to a comfortable bedroom, but Catherine could not stop looking at an old black chest in the corner. She wondered if a sad secret was locked inside it. The shadows in the room grew long as the sun went down, making everything look different and strange. She was living in a place that felt like a dream, but she did not know if this dream would be happy or full of scary secrets.",
+      "During the next few days, Catherine explored the abbey with great curiosity. She often thought about General Tilney, Henry's father. The General was a very serious man who talked a lot about money and the size of his lands. Catherine noticed that he was sometimes unkind to Eleanor. She began to worry about the memory of the General's wife, who had passed away some years ago. Catherine suspected that something bad had happened to her in this very house. She remembered the gothic novels she loved to read and thought the General might be a dangerous man. She spent hours walking alone in the garden, searching for clues that might explain the sad mystery of the past. Her imagination worked very fast, and she felt like a detective searching for the truth.",
+      "One rainy night, Catherine decided to explore the General's private rooms while he was away. She moved slowly through the cold corridors with a small candle in her hand. Her heart beat fast because she felt like a hero in a brave story. She finally reached the door of the late Mrs. Tilney's room. Her hands shook as she turned the handle, hoping to find a hidden letter or a tragic secret. She stepped inside and saw a plain, simple room with nothing special to see. There were no ghosts and no evidence of a crime. Suddenly, Henry Tilney appeared in the doorway. He looked at her with surprise and then with a gentle, sad smile. Catherine felt very foolish as she realized that real life was not always like the exciting stories she read in her books.",
+      "Henry spoke to Catherine with great kindness, but he felt sad that her imagination had taken her so far from the truth. He explained that his mother died of a normal illness, and his father was simply a man who loved money and his own importance. Catherine felt a deep sense of shame. She realized that she had judged the General unfairly because of the books she loved. She promised Henry that she would stop dreaming of dark mysteries and focus on the real world instead. The abbey was just a house, not a place of horror or secrets. She felt a heavy weight lift from her heart, but she also worried that Henry would never respect her silly thoughts again.",
+      "Days later, a sudden and unhappy surprise arrived at the abbey. General Tilney told Catherine that she must leave immediately. He had received a letter saying that she was not a rich lady as he once thought. The General was very cold and did not care about her feelings. He sent her away alone in a carriage without any help or kind words. Catherine was shocked and hurt by his sudden change. She had to travel many miles back home in total sadness. She felt confused because she did not know why he was so angry. The journey was long, and she cried silently, thinking about Henry and their beautiful time together in the abbey.",
+      "When Catherine finally arrived at her family home, she was very tired and still confused about everything. However, a wonderful surprise was waiting for her. Henry Tilney appeared at her house shortly after. He had followed her because he truly loved her, even if his father did not agree. He apologized for his father's behavior and asked Catherine to marry him. She was overjoyed and quickly said yes. Later, the General learned that Catherine actually had enough money to be a suitable wife for his son, so he finally gave his permission for their marriage. Catherine and Henry were very happy together, and she learned that real life is much better than the stories in her books."
+    ],
+    tr: [
+      "Catherine Morland, sessiz bir köyden gelen genç bir kızdı. Güzel değildi ve pek çok yeteneği de yoktu. Dışarıda koşup oynamayı severdi ama ders çalışmaktan veya kitap okumaktan pek hoşlanmazdı. Büyüdükçe hayatı daha ilginç bir hal almaya başladı. Müzik ve resim öğrenmeye başladı ama bu beceriler üzerinde çok fazla çalışmıyordu. Catherine, iyi kalpli, basit ve dürüst bir kızdı. Ailesini severdi ve küçük evinde mutluydu. Yine de, okuduğu kitaplardaki gibi maceraların hayalini kurardı. Dünyayı görmek ve yeni insanlarla tanışmak istiyordu. Sessiz köyünü geride bırakmaya ve büyük bir şehirde heyecan bulmaya hazırdı.",
+      "Bir gün Catherine'e Bath şehrine gitmesi için bir davet geldi. Ailesinin dostu olan Bay ve Bayan Allen, onun kendileriyle seyahat etmesini istediler. Catherine bu haberi duyunca çok heyecanlandı. Daha önce hiç evinden ayrılmamıştı. Ailesi onun adına mutlu oldu ve gitmesine izin verdi. Bath, büyük ve güzel bir yerdi. Pek çok zengin ve ünlü insan orada yaşıyordu. Catherine yolculuğuna başlarken hem gergin hem de çok mutluydu. Arabanın penceresinden dışarı baktı ve değişen manzarayı izledi. Genç gözlerine her şey yeni ve gizemli görünüyordu. İyi arkadaşlarla tanışmayı ve şehirdeki birçok eğlenceli aktivitenin tadını çıkarmayı umuyordu.",
+      "Bath'a vardıklarında Catherine birçok yüksek bina ve hareketli cadde gördü. Böylesine büyük bir yerde kendini küçük hissetti. Bay ve Bayan Allen onu insanların sohbet etmek ve su içmek için toplandığı Pompa Odası'na götürdüler. Oda gürültü ve ışıkla doluydu. Catherine, güzel kıyafetleri içindeki tüm insanlara baktı. Kimseyi tanımadığı için biraz kaybolmuş hissetti. Bayan Allen ona yakın durmasını ve her şeyi dikkatlice gözlemlemesini söyledi. Catherine, şehir hayatını deneyimlemeye hazırdı. Yakında başına özel bir şey geleceğine inanıyordu. Bu, onun büyük macerasının başlangıcıydı ve o günden itibaren hayatının birçok yönden değişeceğini hissediyordu.",
+      "Catherine, kalabalık Pump Room'da Bayan Allen'ın yakınında durdu. Her şey onun için çok yeni olduğundan kendini çok utangaç hissetti. Aniden Bayan Thorpe adında nazik bir kadın onlara doğru yürüdü. Yanında üç güzel kızı vardı. Kızlardan birinin adı Isabella idi. Isabella çok cana yakındı ve hemen Catherine ile konuşmaya başladı. Birbirlerinden anında hoşlandılar. Catherine sonunda büyük şehirde yeni bir arkadaşı olduğu için mutluydu. Isabella kitaplar ve moda hakkında büyük bir ilgiyle konuştu. Catherine artık daha az gergindi ve onu dinlemekten keyif aldı. İki kız ertesi gün tekrar görüşmek için sözleştiler. Catherine, Bath'taki kalışı boyunca deneyimlerini paylaşacak birine sahip olduğu için heyecanlıydı.",
+      "Ertesi gün Catherine, Isabella ve erkek kardeşi John Thorpe ile tiyatroda buluştu. John, arabası ve atları hakkında çok konuşan özgüvenli bir genç adamdı. Eşyalarıyla övünmeyi seviyordu ve Catherine onu biraz garip buldu. Yine de Isabella'ya karşı nazik olmak istediği için kibardı. Birlikte şehirde dolaştılar ve birçok hikaye paylaştılar. Catherine, Isabella'nın da macera hikayeleri okumayı sevdiğini öğrendi. En sevdikleri karakterler hakkında saatlerce konuştular. Bath şehri artık Catherine'e çok daha sıcak ve samimi geldi. Müzik, kahkaha ve yeni, ilginç arkadaşlarının arkadaşlığıyla çevrili bu kalabalık yerde artık kendine bir yer bulduğunu hissetmeye başladı.",
+      "Haftanın ilerleyen günlerinde Catherine, bir baloda Bay Tilney adında bir beyefendiyle tanıştı. Uzun boylu, zeki ve çok eğlenceliydi. Catherine ile dans etti ve zekice şakalarıyla onu güldürdü. Catherine daha önce onun gibi birini hiç tanımamıştı. Kitaplar ve seyahat hakkında hayal gücünü harekete geçirecek şekilde konuşuyordu. Onun Bath'taki en ilginç insan olduğunu düşündü. Bu arada Isabella, şehre yeni gelmiş olan Catherine'in kardeşi James ile konuşmakla meşguldü. Ortam neşe ve heyecan doluydu. Catherine, şehrin sosyal kurallarına nasıl uyum sağlayacağını yavaş yavaş öğreniyordu. Hayatının okuduğu hikayelere daha çok benzediğini hissetti. Kalbi, kendisini bekleyen pek çok macera için umut doluydu.",
+      "Catherine, Bay Tilney ile ettiği danstan sonra çok mutlu hissetti. Ertesi gün onu tekrar görmek istedi ama gitmişti. Bunun yerine, Isabella ve erkek kardeşi John uzun bir yürüyüş planıyla geldiler. Catherine gitmek istemiyordu çünkü Bay Tilney'i görmeyi umuyordu ama hayır diyecek kadar utangaçtı. Yürürken John, hızlı atları ve pahalı arabası hakkında yüksek sesle konuşuyordu. John sadece kendisinden bahsettiği için Catherine yoruldu. Bath'ın kalabalık sokaklarına baktı, tanıdık bir yüz görmeyi umuyordu ama her yerde sadece yabancılar vardı. Bir önceki gecenin heyecanı yavaş yavaş kaybolduğu için kalbi biraz ağırlaştı. Büyük bir şehirde arkadaş edinmenin, herkese karşı çok nazik olmaya çalışsa bile her zaman kolay olmadığını fark etti.",
+      "Aniden Catherine yakınlarda duran bir araba gördü. Bay Tilney ve kız kardeşi Eleanor'un kendilerine doğru yürüdüğünü görünce çok heyecanlandı. Catherine gergindi ama onları kendi grubuna yürüyüşe katılmaya davet etmeyi umarak mutluydu. Ancak John Thorpe çok kaba davrandı ve kendi yollarına devam etmeleri gerektiğinde ısrar etti. Başka kimseyle durup konuşmak istemiyordu. John'un davranışlarından dolayı çok utandı çünkü yeni arkadaşlarına karşı nazik olmak istiyordu. John ve Isabella ile gitmek zorunda kaldı, bu da onu çok üzdü. Bay Tilney'nin uzaklaşmasını izledi ve onun kendisini iyi bir insan olarak görmeyebileceğinden endişelendi. Bu, Catherine için zor bir andı ve kendini çok değerli bir şeyi kaybetmiş bir çocuk gibi hissetti.",
+      "Yürüyüşten sonra Catherine oldukça kafası karışmış bir şekilde oteline döndü. Akşamın geri kalanını günü düşünerek geçirdi. Isabella çok mutluydu çünkü Catherine'in erkek kardeşi James ondan çok hoşlanıyor gibiydi. Isabella gelecek planlarından ve James'e olan sevgisinden bahsetti ama Catherine sadece Bay Tilney'i düşünebiliyordu. Onunla bir daha konuşup konuşamayacağını merak etti. Bir kitap çıkardı ve okumaya çalıştı ama düşünceleri sürekli sokaktaki karşılaşmaya geri dönüyordu. Sosyete dünyasının, evde bildiği basit hayattan çok daha karmaşık olduğunu hissetti. Catherine ertesi günün daha iyi haberler getireceğini ve belki de kalbinde bu kadar güçlü bir iz bırakan beyle konuşmak için başka bir şans daha olacağını umdu.",
+      "Catherine sonunda Tilney ailesiyle birlikte Northanger Manastırı'na vardı. Ev çok büyüktü ve en sevdiği kitaplardaki eski bir kaleye benziyordu. Yüksek duvarları, karanlık odaları ve birçok uzun koridoru vardı. Catherine biraz korktu ama aynı zamanda çok heyecanlandı. Ağır ahşap kapıların arkasında gizli odalar ve esrarengiz hikayeler olduğunu hayal etti. Eleanor Tilney onu rahat bir yatak odasına götürdü ancak Catherine köşedeki eski siyah sandığa bakmaktan kendini alamadı. İçinde hüzünlü bir sırrın kilitli olup olmadığını merak etti. Güneş batarken odadaki gölgeler uzadı ve her şeyin farklı ve tuhaf görünmesine neden oldu. Bir rüya gibi hissettiren bir yerde yaşıyordu ama bu rüyanın mutlu mu yoksa korkutucu sırlar dolu mu olacağını bilmiyordu.",
+      "Sonraki birkaç gün boyunca Catherine manastırı büyük bir merakla keşfetti. Sık sık Henry'nin babası General Tilney hakkında düşünüyordu. General, para ve topraklarının büyüklüğü hakkında çok konuşan oldukça ciddi bir adamdı. Catherine, Eleanor'a bazen kaba davrandığını fark etti. Birkaç yıl önce vefat eden General'in karısının anısı hakkında endişelenmeye başladı. General'in karısının başına bu evde kötü bir şey gelmiş olabileceğinden şüphelendi. Okumayı sevdiği gotik romanları hatırladı ve General'in tehlikeli bir adam olabileceğini düşündü. Geçmişin hüzünlü gizemini açıklayabilecek ipuçlarını arayarak bahçede tek başına saatlerce yürüdü. Hayal gücü çok hızlı çalışıyordu ve gerçeği arayan bir dedektif gibi hissediyordu.",
+      "Yağmurlu bir gece, General uzaktayken onun özel odalarını keşfetmeye karar verdi. Elinde küçük bir mumla soğuk koridorlarda yavaşça ilerledi. Cesur bir hikayedeki kahraman gibi hissettiği için kalbi hızla çarpıyordu. Sonunda merhume Bayan Tilney'nin odasının kapısına ulaştı. Gizli bir mektup veya trajik bir sır bulmayı umarak kolu çevirirken elleri titriyordu. İçeri girdi ve görülecek özel bir şeyi olmayan sade, basit bir oda gördü. Hayaletler yoktu ve hiçbir suç kanıtı da yoktu. Aniden, Henry Tilney kapı eşiğinde belirdi. Ona şaşkınlıkla, ardından nazik ve hüzünlü bir gülümsemeyle baktı. Catherine, gerçek hayatın her zaman kitaplarında okuduğu heyecan verici hikayeler gibi olmadığını fark edince kendini çok aptal hissetti.",
+      "Henry, Catherine ile büyük bir nezaketle konuştu ama hayal gücünün onu gerçekten çok uzaklaştırdığı için üzgündü. Annesinin normal bir hastalıktan öldüğünü ve babasının sadece parayı ve kendi önemini seven bir adam olduğunu açıkladı. Catherine derin bir utanç duydu. Sevdiği kitaplar yüzünden General'i haksız yere yargıladığını fark etti. Henry'ye karanlık sırlar hayal etmeyi bırakacağına ve bunun yerine gerçek dünyaya odaklanacağına söz verdi. Manastır sadece bir evdi, bir dehşet veya sırlar yeri değildi. Kalbinden ağır bir yükün kalktığını hissetti ama aynı zamanda Henry'nin onun bu saçma düşüncelerine bir daha asla saygı duymayacağından endişelendi.",
+      "Günler sonra, manastıra ani ve mutsuz bir sürpriz ulaştı. General Tilney, Catherine'e derhal ayrılması gerektiğini söyledi. Bir zamanlar sandığı gibi zengin bir kadın olmadığını söyleyen bir mektup almıştı. General çok soğuktu ve onun duygularını hiç önemsemedi. Onu hiçbir yardım veya nazik söz olmadan, bir arabayla tek başına gönderdi. Catherine bu ani değişiklikle şok oldu ve incindi. Eve dönmek için tamamen üzgün bir şekilde uzun bir yolculuk yapmak zorunda kaldı. Neden bu kadar öfkeli olduğunu bilmediği için kafası karışmıştı. Yolculuk uzundu ve Henry'yi ve manastırda birlikte geçirdikleri güzel zamanı düşünerek sessizce ağladı.",
+      "Catherine sonunda ailesinin evine vardığında çok yorgundu ve hala her şey hakkında kafası karışıktı. Ancak onu harika bir sürpriz bekliyordu. Henry Tilney kısa bir süre sonra evine geldi. Babası onaylamasa bile onu gerçekten sevdiği için onu takip etmişti. Babasının davranışları için özür diledi ve Catherine'den onunla evlenmesini istedi. Catherine çok sevindi ve hızla evet dedi. Daha sonra General, Catherine'in aslında oğlu için uygun bir eş olacak kadar parası olduğunu öğrendi ve sonunda evliliklerine izin verdi. Catherine ve Henry birlikte çok mutluydular ve o, gerçek hayatın kitaplarındaki hikayelerden çok daha iyi olduğunu öğrendi."
+    ],
+    words: {
+      "village": "köy",
+      "adventure": "macera",
+      "invitation": "davet",
+      "carriage": "atlı araba",
+      "observe": "gözlemlemek",
+      "journey": "yolculuk",
+      "shy": "utangaç",
+      "friendly": "arkadaş canlısı",
+      "boast": "övünmek",
+      "polite": "kibar",
+      "gentleman": "beyefendi",
+      "navigate": "yön bulmak, idare etmek",
+      "rude": "kaba",
+      "embarrassed": "utanmış",
+      "encounter": "karşılaşma",
+      "impressions": "izlenim",
+      "society": "sosyete/toplum",
+      "abbey": "manastır",
+      "curiosity": "merak",
+      "shadow": "gölge",
+      "mystery": "gizem",
+      "clue": "ipucu",
+      "corridor": "koridor",
+      "shame": "utanç",
+      "permission": "izin",
+      "apologize": "özür dilemek",
+      "suitable": "uygun"
+    }
+  },
+  {
+    id: 'peter_wolf',
+    title: "Peter and the Wolf",
+    author: 'Sergei Prokofiev',
+    level: 'A1',
+    coverUrl: '/covers/peter_wolf.webp',
+    en: [
+      "Peter lives with his grandfather in a small house near a big green forest. It is a beautiful morning. The sun is shining and the birds are singing in the sky. Peter opens the wooden gate and walks into the big meadow. He feels very happy today because the air is fresh. He likes to play outside in the green grass. The forest looks very quiet and peaceful. Peter is a brave boy and he is not afraid of the woods. He walks slowly and looks at the tall trees. Everything is calm and very bright. He enjoys his time in the meadow alone. The world is very big and Peter is ready for a new adventure. He smiles as he walks across the grass. It is a perfect day for a walk in the beautiful nature.",
+      "A little bird flies down from a tall tree. The bird is yellow and small. It lands on the grass near Peter. The bird sings a happy song for him. Peter looks at the bird and smiles. Then, a duck comes to the meadow. The duck is white and very friendly. It walks slowly and looks for water. The duck sees a small pond near the trees. It swims in the water and makes a loud sound. The bird and the duck talk to each other. They are new friends in the garden. Peter watches them and feels very happy. He sits on the grass and listens to the sounds of the forest. The morning is quiet and full of life. It is a good place to stay and play for a while.",
+      "Suddenly, a cat comes into the meadow. The cat is black and moves very fast. It walks on its soft feet and looks at the bird. The cat wants to catch the bird. Peter looks at the cat and says, no cat, stop! The little bird flies up into the tall tree. The duck gets scared and runs to the pond. The cat climbs up the tree because it wants the bird. Peter watches the animals carefully. He knows that the forest has many surprises today. The grandfather comes out of the house. He is old and walks with a stick. He looks at Peter and says, you must be careful in the meadow. The wolf can come from the deep forest. Peter listens to his grandfather but he stays outside.",
+      "The grandfather walks back to the house because he is very tired. Peter does not go home. He stays in the meadow because he is not afraid of the woods. He wants to have an adventure. The cat is still in the tall tree. The little bird sits on a high branch. They look at each other with fear. The duck is now safe in the blue pond. Everything seems quiet again in the big green garden. Peter stands in the middle of the grass and waits. He looks at the dark trees near the forest edge. He feels brave and strong. He wants to see something new and exciting today. The morning air is cool and very pleasant for a long walk. Peter smiles because he loves the big nature around him.",
+      "Suddenly, a big shadow comes from the deep forest. It is a big and scary wolf. The wolf is grey and has sharp teeth. Everyone in the meadow feels very afraid. The duck is very scared and jumps out of the water. She runs fast but she cannot hide. The wolf runs very fast too. He is very hungry and he wants to eat the little duck. The duck makes a loud sound because she needs help. Peter watches the wolf and he knows that the situation is very bad. The cat stays in the tree and watches with wide eyes. The little bird hides behind some green leaves. The wolf is very close to the poor duck now. It is a very scary moment for all the small animals.",
+      "The wolf is very fast and he catches the duck in his mouth. The duck cries loudly but she cannot escape from the strong wolf. Peter is very sad because he likes his new friend. He knows he must do something to save the day. He thinks about a plan to catch the dangerous animal. He walks very slowly so the wolf does not see him. The wolf is busy and does not look at the boy. Peter finds a long and strong rope near the trees. He is a smart boy and he works quickly. He knows that his plan is a little bit dangerous but he is ready. He wants to be a hero for the duck and for his small friends in the garden.",
+      "Peter climbs a high tree near the meadow. He holds the long rope in his hands. The wolf walks below the tree and looks for more food. Peter is very quiet so the wolf does not hear him. The bird flies down from the sky and lands near the wolf. The bird flies around the head of the wolf to confuse him. The wolf tries to catch the bird with his big mouth. He jumps up and snaps his teeth. The bird is very fast and clever. Peter waits for the perfect moment to drop the rope. His heart beats very fast because he is excited. He knows that the wolf is strong and hungry.",
+      "The bird stays close to the wolf. The wolf is angry because the bird is too fast for him. Peter watches the wolf very carefully from his high branch. He swings the rope above his head. He throws the rope down. The rope lands right around the tail of the wolf. Peter pulls the rope very hard to keep it tight. The wolf tries to run away, but the rope is strong. The wolf is now in a trap. Peter pulls the rope again to tie it to the tree. The wolf runs around in circles and pulls on the rope. He is trapped and cannot reach the boy or the bird anymore.",
+      "The small bird is happy and flies back to the tree. The cat also comes down from her high place. They all watch the wolf in the trap. The wolf is very tired and he stops jumping. He is now a prisoner in the garden. Peter is proud of his clever work today. He knows that the duck is gone, but the other animals are safe now. He feels brave because he saved the day. The garden is quiet again, but everything is different. Peter smiles as he looks at his friends in the trees. He is a brave hero who understands how to face a great danger.",
+      "Suddenly, there is a loud noise in the forest. Peter looks toward the trees. He sees three hunters. The hunters walk with big guns. They are looking for the dangerous wolf. The men walk very carefully on the soft grass. They do not want the wolf to hear them coming. Peter watches the men from his high branch. He is very happy to see them. The wolf sees the hunters too. He is afraid because he is now in a trap. He tries to pull the rope again to run away. The rope is too strong for the big animal. The hunters walk closer to the wolf. They are ready to catch the hungry wolf and take him to the zoo. The garden is full of noise now.",
+      "The hunters raise their guns. They want to shoot the wolf to keep everyone safe. Peter shouts down from his tree. He tells the hunters to stop. He says that the wolf is already in his trap. Peter asks the men to help him take the wolf to the zoo. The hunters look at Peter with surprise. They see the boy and the strong rope. They are happy to see that the boy is safe. The hunters put their guns down. They move slowly toward the wolf. The wolf growls at them, but he cannot move. The hunters take a thick rope and tie it around the wolf. Now, the wolf has no way to run away.",
+      "The hunters and Peter work together now. They have the wolf, and they walk out of the garden. Everyone is very happy. The bird flies above them to show the way. The cat walks behind them with her tail in the air. Peter is a hero today. He is not afraid of the wolf anymore. The sun is shining in the sky. The forest is peaceful again. The danger is gone and the animals are safe. Peter feels very proud of his clever plan. He knows that he did a great job to help his friends. They walk back to the grandfather house. It is a very happy day for all the animals and the boy.",
+      "The small group arrives at the house in the forest. Peter walks in the front. The hunters walk behind him. They hold the thick rope tightly so the wolf cannot escape. Peter feels very happy and strong. He saved his friends today. The grandfather comes out of the house. He looks at them with big eyes. He sees the wolf on the rope. He is very surprised to see his grandson with such a dangerous animal. The grandfather smiles at Peter and shakes his head. He is very happy that Peter is safe and that the wolf is no longer in the garden. Everyone is together now.",
+      "The hunters decide to take the wolf to the city zoo. They start to walk again toward the road. The wolf looks at the ground. He is not dangerous now. The bird flies in the sky above the group. She is happy because the wolf did not eat her. The cat walks near Peter. She is proud of her friend. Peter looks at his friends. He thinks about the day. He learned that it is good to be brave. He also knows it is good to listen to his grandfather. Peter feels like a real hero today. The sky is blue and the air is fresh.",
+      "The group finally reaches the big gate of the zoo. They give the wolf to the keepers. The keepers are glad to have the animal. Now the people in the town will be safe. Peter says goodbye to the hunters and his friends. He walks back to his home with his grandfather. They are tired but very content. The forest is quiet and calm again. The story of Peter and the wolf is finished. Peter is ready for a long sleep. He knows that tomorrow will be another beautiful day in the forest. He feels lucky and very glad to be home."
+    ],
+    tr: [
+      "Peter, büyük yeşil bir ormanın yakınındaki küçük bir evde büyükbabasıyla birlikte yaşıyor. Bugün çok güzel bir sabah. Güneş parlıyor ve kuşlar gökyüzünde şarkı söylüyor. Peter ahşap bahçe kapısını açıyor ve büyük çayıra doğru yürüyor. Bugün kendini çok mutlu hissediyor çünkü hava çok taze. Yeşil çimenlerin üzerinde dışarıda oynamayı seviyor. Orman çok sessiz ve huzurlu görünüyor. Peter cesur bir çocuk ve ormandan korkmuyor. Yavaşça yürüyor ve uzun ağaçlara bakıyor. Her şey sakin ve çok parlak. Çayırda yalnız başına vakit geçirmekten keyif alıyor. Dünya çok büyük ve Peter yeni bir maceraya hazır. Çimenlerin üzerinde yürürken gülümsüyor. Güzel doğada yürüyüş yapmak için mükemmel bir gün.",
+      "Küçük bir kuş, uzun bir ağaçtan aşağı uçuyor. Kuş sarı ve küçük. Peter'ın yakınındaki çimenlere konuyor. Kuş onun için mutlu bir şarkı söylüyor. Peter kuşa bakıyor ve gülümsüyor. Sonra, bir ördek çayıra geliyor. Ördek beyaz ve çok arkadaş canlısı. Yavaşça yürüyor ve su arıyor. Ördek ağaçların yakınında küçük bir gölet görüyor. Suda yüzüyor ve yüksek ses çıkarıyor. Kuş ve ördek birbirleriyle konuşuyorlar. Onlar bahçedeki yeni arkadaşlar. Peter onları izliyor ve kendini çok mutlu hissediyor. Çimlerin üzerine oturuyor ve ormanın seslerini dinliyor. Sabah sessiz ve hayat dolu. Burası biraz kalmak ve oynamak için iyi bir yer.",
+      "Aniden, bir kedi çayıra geliyor. Kedi siyah ve çok hızlı hareket ediyor. Yumuşak ayakları üzerinde yürüyor ve kuşa bakıyor. Kedi kuşu yakalamak istiyor. Peter kediye bakıyor ve hayır kedi, dur diyor! Küçük kuş yüksek ağaca doğru uçuyor. Ördek korkuyor ve gölete doğru koşuyor. Kedi ağaca tırmanıyor çünkü kuşu istiyor. Peter hayvanları dikkatlice izliyor. Ormanın bugün birçok sürprizi olduğunu biliyor. Büyükbaba evden dışarı çıkıyor. Yaşlı ve bir bastonla yürüyor. Peter'a bakıyor ve çayırda dikkatli olmalısın diyor. Kurt derin ormandan gelebilir. Peter büyükbabasını dinliyor ama dışarıda kalmaya devam ediyor.",
+      "Büyükbaba çok yorulduğu için eve geri döner. Peter eve gitmez. Ormandan korkmadığı için çayırda kalır. Bir macera yaşamak ister. Kedi hala uzun ağacın üzerindedir. Küçük kuş yüksek bir dalda oturur. Birbirlerine korkuyla bakarlar. Ördek şimdi mavi göletin içinde güvendedir. Büyük yeşil bahçede her şey yine sessiz görünür. Peter çimlerin ortasında durur ve bekler. Orman kenarındaki karanlık ağaçlara bakar. Kendini cesur ve güçlü hisseder. Bugün yeni ve heyecan verici bir şeyler görmek ister. Sabah havası serindir ve uzun bir yürüyüş için çok hoştur. Peter gülümser çünkü çevresindeki büyük doğayı sever.",
+      "Aniden, derin ormandan büyük bir gölge gelir. Bu büyük ve korkunç bir kurttur. Kurt gridir ve keskin dişleri vardır. Çayırdaki herkes çok korkar. Ördek çok korkar ve sudan dışarı atlar. Hızlı koşar ama saklanamaz. Kurt da çok hızlı koşar. Çok açtır ve küçük ördeği yemek ister. Ördek yardıma ihtiyacı olduğu için yüksek bir ses çıkarır. Peter kurdu izler ve durumun çok kötü olduğunu bilir. Kedi ağaçta kalır ve kocaman gözlerle izler. Küçük kuş bazı yeşil yaprakların arkasına saklanır. Kurt şimdi zavallı ördeğe çok yakındır. Tüm küçük hayvanlar için çok korkutucu bir andır.",
+      "Kurt çok hızlıdır ve ördeği ağzıyla yakalar. Ördek yüksek sesle ağlar ama güçlü kurttan kaçamaz. Peter çok üzgündür çünkü yeni arkadaşını sever. Günü kurtarmak için bir şeyler yapması gerektiğini bilir. Tehlikeli hayvanı yakalamak için bir plan düşünür. Kurt onu görmesin diye çok yavaş yürür. Kurt meşguldür ve çocuğa bakmaz. Peter ağaçların yanında uzun ve sağlam bir ip bulur. O zeki bir çocuktur ve hızlıca çalışır. Planının biraz tehlikeli olduğunu bilir ama hazırdır. Ördek ve bahçedeki küçük arkadaşları için bir kahraman olmak ister.",
+      "Peter çayırın yanındaki yüksek bir ağaca tırmanır. Uzun ipi ellerinde tutar. Kurt ağacın altında yürür ve başka yiyecek arar. Peter çok sessizdir, bu yüzden kurt onu duymaz. Kuş gökyüzünden aşağı uçar ve kurdun yakınına konar. Kuş, kurdun kafasının etrafında uçarak onun kafasını karıştırır. Kurt, kuşu büyük ağzıyla yakalamaya çalışır. Yukarı sıçrar ve dişlerini birbirine çarpar. Kuş çok hızlı ve zekidir. Peter ipi bırakmak için mükemmel anı bekler. Kalbi çok hızlı çarpar çünkü heyecanlıdır. Kurdun güçlü ve aç olduğunu bilir.",
+      "Kuş, kurdun yakınında kalır. Kurt kızgındır çünkü kuş onun için çok hızlıdır. Peter, yüksek dalından kurdu çok dikkatli izler. İpi başının üzerinde sallar. İpi aşağı fırlatır. İp tam kurdun kuyruğunun etrafına dolanır. Peter ipi gergin tutmak için çok sert çeker. Kurt kaçmaya çalışır ama ip çok güçlüdür. Kurt artık bir tuzaktadır. Peter ipi ağaca bağlamak için tekrar çeker. Kurt daireler çizerek koşar ve ipi çeker. Artık kapana kısılmıştır ve çocuğa ya da kuşa ulaşamaz.",
+      "Küçük kuş mutludur ve ağaca geri uçar. Kedi de yüksek yerinden aşağı iner. Hepsi tuzaktaki kurdu izler. Kurt çok yorgundur ve zıplamayı bırakır. Artık bahçede bir tutukludur. Peter bugün yaptığı zekice işten dolayı gururludur. Ördeğin gittiğini bilir ama diğer hayvanlar artık güvendedir. Günü kurtardığı için cesur hisseder. Bahçe tekrar sessizdir ama her şey farklıdır. Peter ağaçlardaki arkadaşlarına bakarken gülümser. O, büyük bir tehlikeyle nasıl yüzleşeceğini bilen cesur bir kahramandır.",
+      "Aniden ormanda yüksek bir ses duyulur. Peter ağaçlara doğru bakar. Üç avcı görür. Avcılar büyük tüfekleriyle yürürler. Tehlikeli kurdu aramaktadırlar. Adamlar yumuşak çimlerin üzerinde çok dikkatli yürürler. Kurdun kendilerini duymasını istemezler. Peter adamlara yüksek daldan bakar. Onları gördüğü için çok mutludur. Kurt da avcıları görür. Artık tuzakta olduğu için korkmuştur. Kaçmak için ipi tekrar çekmeye çalışır. İp büyük hayvan için çok güçlüdür. Avcılar kurda doğru yaklaşırlar. Aç kurdu yakalayıp hayvanat bahçesine götürmeye hazırdırlar. Bahçe artık gürültüyle doludur.",
+      "Avcılar tüfeklerini kaldırırlar. Herkesi güvende tutmak için kurdu vurmak isterler. Peter ağacından aşağıya bağırır. Avcılara durmalarını söyler. Kurdun zaten kendi tuzağında olduğunu söyler. Peter adamlardan kurdu hayvanat bahçesine götürmesine yardım etmelerini ister. Avcılar şaşkınlıkla Peter'a bakarlar. Çocuğu ve güçlü ipi görürler. Çocuğun güvende olduğunu gördükleri için mutludurlar. Avcılar tüfeklerini indirirler. Kurda doğru yavaşça ilerlerler. Kurt onlara hırlar ama hareket edemez. Avcılar kalın bir ip alıp kurdun etrafına bağlarlar. Artık kurdun kaçacak yolu yoktur.",
+      "Avcılar ve Peter artık birlikte çalışırlar. Kurdu yakalarlar ve bahçeden dışarı yürürler. Herkes çok mutludur. Kuş yolu göstermek için üzerlerinde uçar. Kedi kuyruğu havada arkalarından yürür. Peter bugün bir kahramandır. Artık kurttan korkmamaktadır. Güneş gökyüzünde parlamaktadır. Orman tekrar huzurludur. Tehlike geçmiştir ve hayvanlar güvendedir. Peter zekice planıyla gurur duyar. Arkadaşlarına yardım etmek için harika bir iş çıkardığını bilir. Büyükbabanın evine doğru yürürler. Tüm hayvanlar ve çocuk için çok mutlu bir gündür.",
+      "Küçük grup ormandaki eve varır. Peter en önden yürür. Avcılar onun arkasından yürürler. Kalın ipi sıkıca tutarlar, böylece kurt kaçamaz. Peter çok mutlu ve güçlü hisseder. Bugün arkadaşlarını kurtardı. Büyükbaba evden dışarı çıkar. Büyük gözlerle onlara bakar. İpteki kurdu görür. Torununu böylesine tehlikeli bir hayvanla görmekten dolayı çok şaşkındır. Büyükbaba Peter'a gülümser ve başını sallar. Peter'ın güvende olmasından ve kurdun artık bahçede olmamasından dolayı çok mutludur. Artık herkes birliktedir.",
+      "Avcılar kurdu şehir hayvanat bahçesine götürmeye karar verirler. Tekrar yola doğru yürümeye başlarlar. Kurt yere bakar. Artık tehlikeli değildir. Kuş, grubun üzerindeki gökyüzünde uçar. Mutludur çünkü kurt onu yememiştir. Kedi, Peter'ın yakınında yürür. Arkadaşıyla gurur duyar. Peter arkadaşlarına bakar. Günü düşünür. Cesur olmanın iyi bir şey olduğunu öğrenir. Ayrıca büyükbabasını dinlemenin de iyi olduğunu bilir. Peter bugün kendini gerçek bir kahraman gibi hisseder. Gökyüzü mavidir ve hava tazedir.",
+      "Grup sonunda hayvanat bahçesinin büyük kapısına ulaşır. Kurdu bakıcılara teslim ederler. Bakıcılar hayvanı aldıkları için memnundur. Artık kasabadaki insanlar güvende olacaktır. Peter avcılara ve arkadaşlarına veda eder. Büyükbabasıyla birlikte evine yürür. Yorgundurlar ama çok huzurludurlar. Orman tekrar sessiz ve sakindir. Peter ve kurt hikayesi sona erer. Peter uzun bir uykuya hazırdır. Yarının ormanda başka bir güzel gün olacağını bilir. Şanslı hisseder ve evde olduğu için çok memnundur."
+    ],
+    words: {
+      "meadow": "çayır",
+      "forest": "orman",
+      "brave": "cesur",
+      "pond": "gölet",
+      "carefully": "dikkatlice",
+      "grandfather": "büyükbaba",
+      "shadow": "gölge",
+      "sharp": "keskin",
+      "scared": "korkmuş",
+      "dangerous": "tehlikeli",
+      "rope": "ip",
+      "hero": "kahraman",
+      "confuse": "kafa karıştırmak",
+      "trap": "tuzak",
+      "tight": "gergin/sıkı",
+      "prisoner": "tutsak",
+      "hunter": "avcı",
+      "gun": "tüfek",
+      "zoo": "hayvanat bahçesi",
+      "shoot": "ateş etmek",
+      "growl": "hırlamak",
+      "together": "birlikte",
+      "escape": "kaçmak",
+      "surprised": "şaşırmış",
+      "gate": "kapı",
+      "content": "memnun"
+    }
+  }
+,
+  {
+    id: 'tin_soldier',
+    title: "The Steadfast Tin Soldier",
+    author: 'Hans Christian Andersen',
+    level: 'A1',
+    coverUrl: '/covers/tin_soldier.webp',
+    en: [
+      "Once upon a time, there were twenty-five tin soldiers. They were all brothers because they came from the same old tin spoon. They wore bright red and blue uniforms. They looked very handsome standing in a straight line. They held their guns tightly and looked straight ahead. The youngest soldier was a little bit different from the others. He had only one leg because he was the last one and there was not enough tin left. Still, he stood very firmly on his one leg just like the others. He was very brave and he never moved. The tin soldiers lived in a big toy box in a child's room. They were happy to be together in their home.",
+      "On the table, there were many other toys. The most beautiful toy was a paper castle. There were small green trees around it and a mirror that looked like a blue lake. Near the door of the castle, a little paper dancer stood. She was a very pretty ballerina. She wore a white dress and a small blue ribbon on her shoulder. She stood on one leg with her arms high in the air. The tin soldier looked at her for a long time. He thought that she was like him because she stood on only one leg too. He wanted to talk to her but he was too shy. He just watched her all day long.",
+      "The night came and the children went to bed. Then the toys started to play together. The tin soldiers stayed in their box because the lid was heavy. The other toys had a party on the table. The nutcracker jumped and the pencil drew pictures on the desk. There was a lot of noise and everyone had fun. The little tin soldier did not move. He only looked at the ballerina. She also stood still on her one leg with her arms up. She was very graceful and kind. The soldier felt very happy just to see her in the room. He did not know that a big adventure was waiting for him outside the box soon.",
+      "The clock hit twelve at night. Suddenly, the lid of the box jumped open. The little tin soldier could see out into the room. He was very happy because he could see the beautiful paper ballerina again. She was still standing in the same place near the paper castle. The room was dark and quiet. A scary black jack-in-the-box toy suddenly popped out of his container. He was a mean toy and he did not like the soldier. He looked at the soldier and said mean things to him. He told the soldier to stop looking at the ballerina. The soldier did not say anything. He was a very brave and quiet soldier. He did not move at all because he was made of strong tin and he was very polite.",
+      "The mean toy laughed loudly and whispered a warning. He told the tin soldier that he would be sorry for looking at the ballerina. The soldier was a little bit afraid but he did not show it. He stayed very still and strong on his one leg. The night passed slowly and the moon shone through the window. The soldier watched the ballerina and dreamed of being with her. He thought she was the most beautiful toy in the whole world. He wanted to hold her hand and dance with her. However, he knew that they were different. He was a soldier and she was a dancer. He did not move because he was a good soldier who followed all the rules.",
+      "The next morning arrived and the sun came up. The children came into the room to play. One of the children picked up the tin soldier. He did not know why, but he put the soldier on the high window sill. Perhaps it was an accident or maybe the mean jack-in-the-box made it happen. Suddenly, the window opened wide. The wind blew very hard into the room. The tin soldier fell out of the window. He fell down from the high floor all the way to the street below. He landed with his gun in his hand and his one leg in the air. He was very scared but he stayed brave. It was the start of a very long and dangerous journey.",
+      "The rain began to fall in the street. It was a very hard rain and soon it became a small river. Two street boys found the tin soldier in the mud. They looked at him and thought of a new game. They made a small boat out of an old piece of newspaper. They put the brave soldier into the paper boat. The boat started to move fast because the water was running quickly. The poor soldier felt very afraid because the waves were high. He stood on one leg and held his gun tightly. The paper boat moved down the dirty street like a leaf in the wind. The soldier looked at the sky and thought about the beautiful ballerina. He missed her very much and wanted to be back in the warm room with her again.",
+      "The paper boat moved into a big, dark gutter. It was very dark and scary inside this long tunnel. The soldier felt very cold and wet. Suddenly, a large water rat appeared in the dark. The rat was the owner of this long gutter. He looked at the soldier and asked him for a ticket. The soldier did not speak and held his gun even tighter. The boat moved faster and faster through the dark tunnel. The water was very loud and deep. The soldier could not see anything at all. He felt very small and lonely in this dark place. He did not know where he was going, but he remained a brave soldier. He did not cry or show any fear to the mean water rat.",
+      "The tunnel ended and the light came back again. The soldier heard a loud sound like a big waterfall. He saw that the gutter flowed into a large, wide canal. The paper boat was very weak now because of the rain and the water. It started to sink under the heavy water. The soldier stood tall and looked ahead. He knew he was in great danger. The paper boat became soft and broken. The water went over his head. He thought about the ballerina for the last time. He hoped she was happy in the nursery. He sank deeper into the dark canal. A big fish swam by and opened its mouth. The fish was very hungry and it swallowed the poor little tin soldier in one big gulp.",
+      "The inside of the fish was very dark and very small. The brave tin soldier sat in the dark stomach of the fish for a long time. He could not move his legs or his arms. He still held his gun tightly in his hand. He did not cry or show his fear even in this deep place. He thought about the beautiful ballerina in the nursery. He wondered if she was standing on one leg in the room. He felt very lonely and sad. The fish moved through the dark water. The soldier waited for a long time. He was a very strong and brave soldier. He never lost his hope. He believed he would see his home again one day. He stayed very still like a real soldier.",
+      "Suddenly, the fish felt a strong pull on its body. It moved quickly and then stopped. A bright light shone from above. The fish was caught in a big net by a fisherman. The fisherman lifted the net out of the water. He saw the big fish and took it to the market to sell it. A woman bought the fish and took it home to her kitchen. She took a big knife and cut the fish open. She was surprised to see the little tin soldier inside. She picked him up with her hand and looked at him. She carried him into the living room and put him on the table. The soldier could see everything in the room now. He was back in the house.",
+      "The soldier looked around the room. He saw the toys and the warm carpet. He saw the little boy who owned him. The boy was very happy to see his tin soldier again. He picked up the soldier and put him on the table. The soldier felt very happy to be back. He looked at the window and saw the beautiful ballerina. She was still standing in the same place. She was very beautiful and her face was kind. The soldier looked at her with love in his eyes. He stood on his one leg and felt proud. He was a brave soldier who survived a long and dangerous trip. He was finally home and he was safe again with his friends.",
+      "The little boy held the tin soldier and felt very happy. He put the soldier on the table near the beautiful ballerina. The soldier was so glad to see her again. Suddenly, the boy picked up the soldier and threw him into the hot fire. No one knows why the boy did this. The fire was very hot and the soldier felt the heat on his body. He stood straight and held his gun tightly. He did not say anything or make a sound. He was a very brave soldier until the very end. The color of his uniform began to change in the fire. He was melting, but he did not move because he was a true soldier. He kept his eyes on the dancer who was standing on her one leg.",
+      "At that moment, the door of the room opened. The wind blew hard and the beautiful paper ballerina flew into the fire. She fell right next to the tin soldier. She burned quickly because she was made of paper. The soldier felt a deep sadness for his friend. Suddenly, a bright light shone and the soldier turned into a small heart of tin. It was a very sad and quiet moment in the warm room. The fire stopped and everything became still. The ballerina and the soldier were together forever in the hot ashes. They were two brave hearts that found peace in the end. The story of the two friends stayed in the house for a long time.",
+      "The next morning, the little boy came to the table. He saw the ashes in the fire. He picked up the small tin heart. He also found a small black sequin from the dancer's dress. The boy was sad, but he remembered his toys. The journey of the tin soldier was long and hard, but he showed everyone what it meant to be strong. He never lost his bravery or his love. He stayed standing until the fire took him. Now, the soldier and the ballerina are in a better place. They are together and they are safe. Their story teaches us to be brave and kind in our own lives every single day."
+    ],
+    tr: [
+      "Bir varmış, bir yokmuş, yirmi beş tane kalay asker varmış. Hepsi aynı eski kalay kaşıktan yapıldıkları için kardeştiler. Parlak kırmızı ve mavi üniformalar giyiyorlardı. Dümdüz bir sırada dururken çok yakışıklı görünüyorlardı. Tüfeklerini sıkıca tutuyorlar ve dümdüz ileriye bakıyorlardı. En genç asker diğerlerinden biraz farklıydı. Sadece tek bir bacağı vardı çünkü o sonuncu askerdi ve yeterince kalay kalmamıştı. Yine de, tıpkı diğerleri gibi tek bacağının üzerinde çok sağlam duruyordu. Çok cesurdu ve hiç kıpırdamıyordu. Kalay askerler bir çocuğun odasındaki büyük bir oyuncak kutusunda yaşıyorlardı. Evlerinde birlikte olmaktan mutluydular.",
+      "Masada başka pek çok oyuncak vardı. En güzel oyuncak kağıttan yapılmış bir kaleydi. Etrafında küçük yeşil ağaçlar ve mavi bir göl gibi görünen bir ayna vardı. Kalenin kapısının yakınında kağıttan küçük bir dansçı duruyordu. Çok güzel bir balerindi. Beyaz bir elbise ve omzunda küçük mavi bir kurdele takıyordu. Kolları havada, tek bacağının üzerinde duruyordu. Kalay asker ona uzun süre baktı. Onun da sadece tek bacağının üzerinde durduğu için kendisi gibi olduğunu düşündü. Onunla konuşmak istedi ama çok utangaçtı. Bütün gün sadece onu izledi.",
+      "Gece oldu ve çocuklar yatağa gitti. Sonra oyuncaklar birlikte oynamaya başladılar. Kalay askerler kutularında kaldılar çünkü kapakları ağırdı. Diğer oyuncaklar masada bir parti veriyorlardı. fındıkkıran zıplıyor ve kurşun kalem masaya resimler çiziyordu. Çok gürültü vardı ve herkes eğleniyordu. Küçük kalay asker hareket etmedi. Sadece balerine baktı. O da kollarını yukarı kaldırmış halde tek bacağının üzerinde duruyordu. Çok zarif ve nazikti. Asker sadece onu odada gördüğü için kendini çok mutlu hissetti. Yakında kutunun dışında büyük bir maceranın onu beklediğinden habersizdi.",
+      "Gece saat on ikiyi vurdu. Aniden kutunun kapağı açıldı. Küçük teneke asker odanın dışını görebiliyordu. Güzel kağıt balerini tekrar görebildiği için çok mutluydu. Hala kağıt şatonun yanında aynı yerde duruyordu. Oda karanlık ve sessizdi. Korkunç siyah bir kutu içindeki palyaço oyuncağı aniden dışarı fırladı. O kötü bir oyuncaktı ve askerden hoşlanmıyordu. Askerin yüzüne baktı ve ona kötü şeyler söyledi. Askerin balerine bakmayı bırakmasını söyledi. Asker hiçbir şey söylemedi. O çok cesur ve sessiz bir askerdi. Hiç hareket etmedi çünkü güçlü tenekeden yapılmıştı ve çok nazikti.",
+      "Kötü oyuncak yüksek sesle güldü ve bir uyarı fısıldadı. Teneke askere, balerine baktığı için pişman olacağını söyledi. Asker biraz korkmuştu ama bunu belli etmedi. Tek ayağı üzerinde çok hareketsiz ve güçlü durdu. Gece yavaşça geçti ve ay pencereden içeri parladı. Asker balerini izledi ve onunla olmayı hayal etti. Onun bütün dünyadaki en güzel oyuncak olduğunu düşündü. Elini tutmak ve onunla dans etmek istedi. Yine de farklı olduklarını biliyordu. O bir askerdi ve balerin de bir dansçıydı. Hareket etmedi çünkü kurallara uyan iyi bir askerdi.",
+      "Ertesi sabah geldi ve güneş doğdu. Çocuklar oynamak için odaya geldi. Çocuklardan biri teneke askeri aldı. Neden bilmiyordu ama askeri yüksek pencere kenarına koydu. Belki bir kazaydı ya da belki kötü palyaço oyuncak bunu yaptırmıştı. Aniden pencere ardına kadar açıldı. Rüzgar odaya çok sert esti. Teneke asker pencereden düştü. Yüksek kattan aşağıdaki caddeye kadar düştü. Silahı elinde ve tek ayağı havada yere indi. Çok korkmuştu ama cesur kaldı. Bu çok uzun ve tehlikeli bir yolculuğun başlangıcıydı.",
+      "Sokakta yağmur yağmaya başladı. Çok şiddetli bir yağmura dönüştü ve kısa sürede küçük bir nehir oldu. İki sokak çocuğu teneke askeri çamurun içinde buldular. Ona baktılar ve yeni bir oyun düşündüler. Eski bir gazete parçasından küçük bir kayık yaptılar. Cesur askeri kağıttan kayığa koydular. Su hızla aktığı için kayık hızlı hareket etmeye başladı. Zavallı asker dalgalar çok yüksek olduğu için çok korktu. Tek bacağının üzerinde durdu ve tüfeğini sıkıca tuttu. Kağıttan kayık, rüzgardaki bir yaprak gibi kirli sokakta ilerledi. Asker gökyüzüne baktı ve güzel balerin hakkında düşündü. Onu çok özledi ve tekrar onunla sıcak odada olmayı istedi.",
+      "Kağıttan kayık büyük, karanlık bir su kanalına girdi. Bu uzun tünelin içi çok karanlık ve korkutucuydu. Asker kendini çok soğuk ve ıslak hissetti. Aniden, karanlıkta büyük bir su sıçanı belirdi. Sıçan bu uzun kanalın sahibiydi. Askere baktı ve ondan bir bilet istedi. Asker konuşmadı ve tüfeğini daha da sıkı tuttu. Kayık karanlık tünelin içinde hızla ilerledi. Su çok gürültülü ve derindi. Asker hiçbir şeyi göremiyordu. Bu karanlık yerde kendini çok küçük ve yalnız hissetti. Nereye gittiğini bilmiyordu ama cesur bir asker olarak kaldı. Ağlamadı ve kötü su sıçanına korkusunu göstermedi.",
+      "Tünel bitti ve ışık tekrar geri geldi. Asker büyük bir şelale gibi yüksek bir ses duydu. Kanalın büyük, geniş bir kanala aktığını gördü. Kağıttan kayık yağmur ve su yüzünden artık çok zayıftı. Ağır suyun altında batmaya başladı. Asker dik durdu ve ileriye baktı. Büyük bir tehlikede olduğunu biliyordu. Kağıttan kayık yumuşadı ve kırıldı. Su başının üzerinden geçti. Son kez balerini düşündü. Odada mutlu olmasını diledi. Karanlık kanalın derinliklerine battı. Büyük bir balık yanından yüzdü ve ağzını açtı. Balık çok açtı ve zavallı küçük teneke askeri tek bir büyük hamlede yuttu.",
+      "Balığın içi çok karanlık ve çok küçüktü. Cesur kurşun asker uzun bir süre balığın karanlık midesinde oturdu. Bacaklarını veya kollarını kıpırdatamıyordu. Silahını hala elinde sıkıca tutuyordu. Bu derin yerde bile ağlamadı veya korkusunu belli etmedi. Odadaki güzel balerini düşündü. Acaba odada tek bacağının üzerinde mi duruyordu diye merak etti. Kendini çok yalnız ve üzgün hissetti. Balık karanlık suda hareket etti. Asker uzun bir süre bekledi. Çok güçlü ve cesur bir askerdi. Umudunu hiç kaybetmedi. Bir gün evini tekrar göreceğine inandı. Gerçek bir asker gibi hareketsiz kaldı.",
+      "Aniden balık gövdesinde güçlü bir çekiş hissetti. Hızla hareket etti ve sonra durdu. Yukarıdan parlak bir ışık parladı. Balık bir balıkçı tarafından büyük bir ağ ile yakalandı. Balıkçı ağı sudan çıkardı. Büyük balığı gördü ve satmak için pazara götürdü. Bir kadın balığı satın aldı ve mutfağına götürdü. Büyük bir bıçak aldı ve balığı kesti. İçindeki küçük kurşun askeri görünce şaşırdı. Onu eliyle aldı ve ona baktı. Onu oturma odasına taşıdı ve masanın üzerine koydu. Asker artık odadaki her şeyi görebiliyordu. Evine geri dönmüştü.",
+      "Asker odaya baktı. Oyuncakları ve sıcak halıyı gördü. Ona sahip olan küçük çocuğu gördü. Çocuk, kurşun askerini tekrar gördüğü için çok mutluydu. Askeri aldı ve masanın üzerine koydu. Asker geri döndüğü için çok mutlu hissetti. Pencereye baktı ve güzel balerini gördü. O hala aynı yerde duruyordu. Çok güzeldi ve yüzü nazikti. Asker ona gözlerindeki sevgiyle baktı. Tek bacağının üzerinde durdu ve gurur duydu. Uzun ve tehlikeli bir yolculuktan sağ kurtulan cesur bir askerdi. Sonunda evindeydi ve arkadaşlarıyla tekrar güvendeydi.",
+      "Küçük çocuk teneke askeri tuttu ve kendini çok mutlu hissetti. Askeri masanın üzerine, güzel balerinin yakınına koydu. Asker onu tekrar gördüğü için çok memnundu. Aniden çocuk askeri aldı ve sıcak ateşin içine fırlattı. Kimse çocuğun bunu neden yaptığını bilmiyor. Ateş çok sıcaktı ve asker vücudunda sıcağı hissetti. Dosdoğru durdu ve tüfeğini sıkıca tuttu. Hiçbir şey söylemedi veya ses çıkarmadı. Son ana kadar çok cesur bir askerdi. Üniformasının rengi ateşin içinde değişmeye başladı. Eriyordu ama hareket etmedi çünkü o gerçek bir askerdi. Gözlerini tek bacağının üzerinde duran dansçıdan ayırmıyordu.",
+      "O anda odanın kapısı açıldı. Rüzgar sert esti ve güzel kağıt balerin ateşin içine uçtu. Tam teneke askerin yanına düştü. Kağıttan yapıldığı için hızla yandı. Asker arkadaşı için derin bir hüzün hissetti. Aniden parlak bir ışık parladı ve asker küçük bir teneke kalbe dönüştü. Sıcak odada çok üzücü ve sessiz bir andı. Ateş durdu ve her şey sakinleşti. Balerin ve asker sonsuza dek sıcak küllerin içinde birlikteydiler. Sonunda huzuru bulan iki cesur kalptiler. İki arkadaşın hikayesi uzun bir süre evde kaldı.",
+      "Ertesi sabah küçük çocuk masaya geldi. Ateşteki külleri gördü. Küçük teneke kalbi eline aldı. Ayrıca dansçının elbisesinden küçük siyah bir pul buldu. Çocuk üzgündü ama oyuncaklarını hatırladı. Teneke askerin yolculuğu uzun ve zordu ama herkese güçlü olmanın ne demek olduğunu gösterdi. Cesaretini veya sevgisini asla kaybetmedi. Ateş onu alana kadar ayakta kaldı. Artık asker ve balerin daha iyi bir yerdeler. Birlikteler ve güvendeler. Onların hikayesi bize her gün kendi hayatımızda cesur ve nazik olmayı öğretiyor."
+    ],
+    words: {
+      "soldier": "asker",
+      "brave": "cesur",
+      "castle": "kale",
+      "ballerina": "balerin",
+      "party": "parti",
+      "adventure": "macera",
+      "lid": "kapak",
+      "dark": "karanlık",
+      "mean": "kötü kalpli",
+      "window": "pencere",
+      "journey": "yolculuk",
+      "mud": "çamur",
+      "boat": "kayık",
+      "gutter": "su kanalı",
+      "rat": "sıçan",
+      "sink": "batmak",
+      "swallow": "yutmak",
+      "stomach": "mide",
+      "fisherman": "balıkçı",
+      "knife": "bıçak",
+      "survive": "hayatta kalmak",
+      "proud": "gururlu",
+      "safe": "güvende",
+      "fire": "ateş",
+      "melt": "erimek",
+      "burn": "yanmak",
+      "ashes": "küller",
+      "heart": "kalp"
+    }
+  }
+,
+  {
+    id: 'magic_pot',
+    title: "The Magic Porridge Pot",
+    author: 'Brothers Grimm',
+    level: 'A1',
+    coverUrl: '/covers/magic_pot.webp',
+    en: [
+      "Once upon a time, there was a little girl. She lived in a small house with her mother. They were very poor people. They did not have enough food to eat every day. Sometimes, they were very hungry. One day, the little girl went into the forest to find something to eat. She walked for a long time under the tall green trees. She was very sad because she could not find any berries or mushrooms. She looked here and there, but she only saw dry leaves and grey stones. She felt tired and sat down on the soft grass to rest for a while. She really wanted to help her mother, but she did not know what to do today.",
+      "Suddenly, an old woman appeared from behind a big oak tree. The old woman was very kind and had a warm smile. She wore a long grey coat and a small hat. She looked at the little girl and saw that she was sad and hungry. The old woman spoke in a very soft voice. She told the girl that she understood her problems. Then, the old woman took a small black pot out of her big bag. She gave the pot to the little girl. The girl looked at the pot with big eyes. It looked like a normal pot, but the old woman told her it was very special and magic.",
+      "The old woman taught the girl the secret words for the magic pot. When the girl was hungry, she had to say: Little pot, cook! Then, the pot would make sweet and warm porridge for her. When she had enough food, she had to say: Little pot, stop! Then, the pot would stop cooking immediately. The little girl was very happy and thanked the kind woman many times. She took the magic pot carefully and walked back home to her mother. She was excited to show this amazing gift to her mother and hoped that they would never be hungry again in their lives.",
+      "The little girl walked home quickly with her new treasure. She held the black pot very carefully in her small hands. She felt excited and could not wait to see her mother. When she arrived at their small house, she showed the pot to her mother immediately. Her mother was confused and looked at the pot with a curious face. The little girl explained everything she learned in the forest. She told her mother that this simple object was actually a magic gift from a kind old woman. The mother did not believe it at first, but she was very hungry. They sat down together at their wooden table and the little girl put the magic pot right in the middle.",
+      "The little girl looked at the pot with a happy smile. She remembered the secret words clearly. She said loud and clear: Little pot, cook! Suddenly, the pot began to work like magic. Sweet and warm porridge started to fill the little black container. It smelled very good and the mother was very surprised. She took a big spoon and they began to eat. The porridge was the best food they ever had in their lives. They ate until they were very full and happy. They did not feel hungry anymore. The girl looked at her mother and they both smiled. They knew that their difficult days were finally over because of this special gift.",
+      "After they were full, the little girl remembered the second part of the secret. She said to the pot: Little pot, stop! Immediately, the magic cooking finished and the porridge stayed inside the container. The kitchen was quiet and clean. The mother touched the pot and laughed with joy. They put the magic pot on a shelf and started to clean their small home. They did not need to go to the forest to search for berries or dry mushrooms anymore. They felt safe and rich in their hearts. That night, they slept very well. They were no longer poor because they had warm porridge every day. Life in their small house became much better from that day on.",
+      "One morning, the little girl had to go out to the village for some errands. She left her mother alone in their small house. Before she left, she told her mother about the magic words again. She said that whenever she was hungry, she should just ask the pot to cook. The mother nodded and listened carefully because she loved the delicious porridge. The little girl kissed her mother and walked away into the sun. She felt happy because her mother would not be hungry today. The house was quiet as the girl walked down the dusty road. She enjoyed the fresh air and the bright blue sky. She felt like life was perfect now.",
+      "A few hours later, the mother started to feel very hungry. She looked at the small black pot on the wooden shelf. She remembered the secret words that her daughter taught her. She placed the pot on the table and said, Little pot, cook! Suddenly, the pot began to cook the porridge. It was warm, sweet, and very tasty. The mother ate and ate until she was very full. However, she suddenly realized something terrible. She could not remember the words to make the pot stop. She felt very nervous as she looked at the pot. The porridge kept coming out of the container and onto the table.",
+      "The porridge did not stop cooking. It poured onto the floor and then into the hallway. The mother panicked and tried to cover the pot, but the porridge was too fast. It started to fill the whole house with thick, hot food. The kitchen floor was covered in porridge and it was very sticky. The mother did not know what to do next. She ran to the door, but the porridge was already there. She was trapped in her own home with the magic pot. It was a very strange situation and she felt scared. The porridge was now flowing out of the front door into the street.",
+      "The warm porridge flowed out of the small house and into the village streets like a river. Everyone in the village was surprised to see the thick, sweet food filling the ground. Children started to eat the porridge from the street because it tasted very good. Soon, the neighbors looked at their homes and felt worried. The hot porridge climbed up the garden walls and filled the backyards. It went into the kitchens of other houses too. The people tried to move their things away, but the porridge was everywhere. It was a very big mess for everyone living on that quiet street.",
+      "The porridge did not stop even for one second. It traveled from house to house and filled the entire town with sticky, hot porridge. People shouted and ran around, but they could not find the end of the flow. The streets became very difficult to walk on. The village was completely full of food. Some people tried to use big spoons to move it, but more porridge appeared instantly. The mother stood in her doorway and looked at the disaster with sad eyes. She felt very guilty because she forgot the magic words that her little daughter told her before she left for the village.",
+      "The village looked like a land made of porridge. There were no paths to walk on and no empty spaces left. The poor mother tried to run through the thick food to find help, but she fell down twice. The sticky porridge was everywhere on her clothes and her shoes. She felt very tired and did not know how to fix this bad problem. The magic pot inside the house was still cooking fast and never stopped its work. The whole world seemed to be turning into a giant bowl of porridge. The situation became very dangerous for all the people who lived in the small town that day.",
+      "Suddenly, the little girl arrived back at her home. She saw the hot porridge everywhere on the street. She understood that her mother forgot the magic words to stop the pot. The girl did not wait for a single moment. She ran through the thick and sticky food toward the house. The porridge was deep and warm, but she was very fast. She pushed the heavy door open and saw the pot on the table. It was full to the top and the porridge was still bubbling over the sides. The girl felt strong and brave as she looked at the magic object. She knew exactly what to do to save her village from the mess.",
+      "The girl stood in front of the magic pot and shouted the important words clearly. She said loud and fast, Little pot, stop cooking! As soon as these words left her mouth, the magic pot stopped its work immediately. The bubbling sound faded away into the air. The flow of the thick, sweet food ended right at that second. The porridge did not come out of the pot anymore. The house was finally quiet and still. The girl felt very happy and relieved to see her hard work end this big disaster. Her mother came inside and hugged her daughter because they were safe again.",
+      "People in the village were very surprised by the sudden change. They stopped running and looked at the streets with big eyes. The porridge was still on the ground, but it was not moving or growing larger anymore. Everyone felt very glad that the danger was finally gone. To walk through the village again, the people had to eat the porridge from the streets. It was a very long day of cleaning and eating. Everyone in the town thanked the little girl for her magic pot. They had a great feast together and shared the delicious food until the whole village was clean and happy again."
+    ],
+    tr: [
+      "Bir zamanlar küçük bir kız vardı. Annesiyle birlikte küçük bir evde yaşardı. Onlar çok fakir insanlardı. Her gün yiyecek yeterli yemekleri yoktu. Bazen çok aç kalırlardı. Bir gün küçük kız yiyecek bir şeyler bulmak için ormana gitti. Uzun ağaçların altında uzun süre yürüdü. Hiç böğürtlen ya da mantar bulamadığı için çok üzgündü. Oraya buraya baktı ama sadece kuru yapraklar ve gri taşlar gördü. Yorgun hissetti ve biraz dinlenmek için yumuşak çimlerin üzerine oturdu. Annesine yardım etmeyi çok istiyordu ama bugün ne yapacağını bilmiyordu.",
+      "Aniden, büyük bir meşe ağacının arkasından yaşlı bir kadın göründü. Yaşlı kadın çok nazikti ve sıcak bir gülümsemesi vardı. Uzun gri bir palto ve küçük bir şapka giyiyordu. Küçük kıza baktı ve onun üzgün ve aç olduğunu gördü. Yaşlı kadın çok yumuşak bir sesle konuştu. Kızın sorunlarını anladığını söyledi. Sonra yaşlı kadın büyük çantasından küçük siyah bir tencere çıkardı. Tencereyi küçük kıza verdi. Kız, tencereye büyük gözlerle baktı. Normal bir tencere gibi görünüyordu ama yaşlı kadın ona bunun çok özel ve sihirli olduğunu söyledi.",
+      "Yaşlı kadın kıza sihirli tencere için gizli kelimeleri öğretti. Kız acıktığında, Küçük tencere, pişir! demesi gerekiyordu. O zaman tencere onun için tatlı ve sıcak yulaf lapası yapacaktı. Yeterince yiyeceği olduğunda ise, Küçük tencere, dur! demesi gerekiyordu. O zaman tencere hemen pişirmeyi durduracaktı. Küçük kız çok mutlu oldu ve nazik kadına birçok kez teşekkür etti. Sihirli tencereyi dikkatlice aldı ve annesinin yanına eve doğru yürüdü. Bu harika hediyeyi annesine göstermek için heyecanlıydı ve bir daha asla aç kalmayacaklarını umuyordu.",
+      "Küçük kız yeni hazinesiyle hızla eve doğru yürüdü. Siyah tencereyi küçük elleriyle çok dikkatli bir şekilde tuttu. Heyecanlı hissediyordu ve annesini görmeyi dört gözle bekliyordu. Küçük evlerine vardığında tencereyi hemen annesine gösterdi. Annesi şaşkındı ve tencereye meraklı bir yüzle baktı. Küçük kız ormanda öğrendiği her şeyi anlattı. Annesine bu basit nesnenin aslında nazik bir yaşlı kadından gelen sihirli bir hediye olduğunu söyledi. Anne ilk başta buna inanmadı ama çok açtı. Birlikte ahşap masalarının etrafına oturdular ve küçük kız sihirli tencereyi tam ortaya koydu.",
+      "Küçük kız mutlu bir gülümsemeyle tencereye baktı. Gizli kelimeleri net bir şekilde hatırlıyordu. Yüksek ve net bir sesle, Küçük tencere, pişir! dedi. Aniden tencere sihir gibi çalışmaya başladı. Tatlı ve sıcak yulaf lapası küçük siyah kabı doldurmaya başladı. Çok güzel kokuyordu ve annesi çok şaşırdı. Büyük bir kaşık aldı ve yemeye başladılar. Yulaf lapası hayatlarında yedikleri en iyi yemekti. Çok tok ve mutlu olana kadar yediler. Artık aç hissetmiyorlardı. Kız annesine baktı ve ikisi de gülümsedi. Bu özel hediye sayesinde zor günlerinin nihayet bittiğini biliyorlardı.",
+      "Tok olduktan sonra küçük kız sırrın ikinci kısmını hatırladı. Tencereye, Küçük tencere, dur! dedi. Sihirli pişirme işlemi anında bitti ve yulaf lapası kabın içinde kaldı. Mutfak sessiz ve temizdi. Anne tencereye dokundu ve sevinçle güldü. Sihirli tencereyi bir rafa koydular ve küçük evlerini temizlemeye başladılar. Artık ormana gidip meyve ya da kuru mantar aramalarına gerek kalmamıştı. Kalplerinde kendilerini güvende ve zengin hissettiler. O gece çok iyi uyudular. Artık fakir değillerdi çünkü her gün sıcak yulaf lapaları vardı. O günden sonra küçük evlerindeki hayat çok daha iyi bir hale geldi.",
+      "Bir sabah küçük kızın bazı işleri halletmek için köye gitmesi gerekti. Annesini küçük evlerinde yalnız bıraktı. Gitmeden önce annesine sihirli sözcükleri tekrar anlattı. Ne zaman acıkırsa, tencereden yemek pişirmesini istemesi gerektiğini söyledi. Anne başını salladı ve dikkatle dinledi çünkü lezzetli lapayı çok seviyordu. Küçük kız annesini öptü ve güneşe doğru yürüdü. Annesinin bugün aç kalmayacağı için mutlu hissediyordu. Kız tozlu yolda yürürken ev sessizdi. Temiz havanın ve masmavi gökyüzünün tadını çıkarıyordu. Artık hayatın mükemmel olduğunu hissediyordu.",
+      "Birkaç saat sonra anne çok acıkmaya başladı. Ahşap raftaki küçük siyah tencereye baktı. Kızının kendisine öğrettiği sihirli sözcükleri hatırladı. Tencereyi masaya koydu ve Küçük tencere, pişir! dedi. Aniden tencere lapayı pişirmeye başladı. Ilık, tatlı ve çok lezzetliydi. Anne çok doyana kadar yedi de yedi. Ancak aniden korkunç bir şeyi fark etti. Tencereyi durduracak sözcükleri hatırlayamıyordu. Tencereye bakarken çok gerildi. Lapa, kabın içinden dışarıya ve masanın üzerine akmaya devam ediyordu.",
+      "Lapa pişmeyi bırakmadı. Yere, ardından koridora döküldü. Anne panikledi ve tencereyi örtmeye çalıştı ama lapa çok hızlıydı. Tüm evi kalın, sıcak yiyecekle doldurmaya başladı. Mutfak zemini lapa ile kaplandı ve çok yapışkandı. Anne bir sonraki adımda ne yapacağını bilmiyordu. Kapıya koştu ama lapa oraya çoktan varmıştı. Sihirli tencereyle kendi evinde kapana kısıldı. Çok tuhaf bir durumdu ve korkmuş hissediyordu. Lapa artık ön kapıdan sokağa doğru akıyordu.",
+      "Ilık yulaf lapası küçük evden dışarı taştı ve bir nehir gibi köyün sokaklarına yayıldı. Köydeki herkes yerleri dolduran bu yoğun ve tatlı yemeği görünce şaşırdı. Çocuklar çok lezzetli olduğu için sokaktaki yulaf lapasını yemeye başladılar. Kısa süre sonra komşular evlerine baktılar ve endişelendiler. Sıcak yulaf lapası bahçe duvarlarına tırmandı ve arka bahçeleri doldurdu. Diğer evlerin mutfaklarına da girdi. İnsanlar eşyalarını uzaklaştırmaya çalıştılar ama yulaf lapası her yerdeydi. O sessiz sokakta yaşayan herkes için çok büyük bir karışıklık oldu.",
+      "Yulaf lapası bir saniye bile durmadı. Evden eve gezdi ve tüm kasabayı yapışkan, sıcak yulaf lapası ile doldurdu. İnsanlar bağırdı ve koşturdu ama akışın sonunu bulamadılar. Sokaklarda yürümek çok zorlaştı. Köy tamamen yemekle dolmuştu. Bazı insanlar onu taşımak için büyük kaşıklar kullanmaya çalıştı ama anında daha fazla yulaf lapası belirdi. Anne kapı eşiğinde durdu ve felakete üzgün gözlerle baktı. Köye gitmeden önce küçük kızının söylediği sihirli sözcükleri unuttuğu için kendini çok suçlu hissetti.",
+      "Köy yulaf lapasından yapılmış bir ülke gibi görünüyordu. Yürüyecek hiçbir yol ve boş yer kalmamıştı. Zavallı anne yardım bulmak için yoğun yemeğin içinden koşmaya çalıştı ama iki kez yere düştü. Yapışkan yulaf lapası kıyafetlerinin ve ayakkabılarının her yerindeydi. Çok yorgundu ve bu kötü sorunu nasıl düzelteceğini bilmiyordu. Evin içindeki sihirli tencere hala hızlıca pişiriyordu ve işini hiç durdurmuyordu. Tüm dünya dev bir yulaf lapası kasesine dönüşüyor gibiydi. O gün küçük kasabada yaşayan herkes için durum çok tehlikeli bir hal aldı.",
+      "Aniden, küçük kız evine geri döndü. Sokakta her yerde sıcak yulaf lapası gördü. Annesinin tencereyi durduracak sihirli kelimeleri unuttuğunu anladı. Kız tek bir an bile beklemedi. Kalın ve yapışkan yemeğin içinden eve doğru koştu. Lapa derin ve sıcaktı ama o çok hızlıydı. Ağır kapıyı itip açtı ve masadaki tencereyi gördü. Tencere tepesine kadar doluydu ve lapa hala kenarlarından taşıyordu. Kız, sihirli nesneye bakarken kendini güçlü ve cesur hissetti. Köyünü bu karmaşadan kurtarmak için ne yapması gerektiğini tam olarak biliyordu.",
+      "Kız sihirli tencerenin önünde durdu ve önemli kelimeleri net bir şekilde haykırdı. Yüksek sesle ve hızlıca, Küçük tencere, pişirmeyi durdur! dedi. Bu kelimeler ağzından çıkar çıkmaz, sihirli tencere çalışmayı derhal bıraktı. Kaynama sesi havada silinip gitti. Kalın, tatlı yemeğin akışı tam o saniyede sona erdi. Lapa artık tencereden dışarı çıkmıyordu. Ev nihayet sessiz ve hareketsizdi. Kız, büyük felaketin sona erdiğini görünce çok mutlu ve rahatlamış hissetti. Annesi içeri girdi ve güvende oldukları için kızına sarıldı.",
+      "Köydeki insanlar ani değişim karşısında çok şaşırdılar. Koşmayı bıraktılar ve sokaklara kocaman gözlerle baktılar. Lapa hala yerlerdeydi ama artık hareket etmiyor veya büyümüyordu. Herkes tehlikenin nihayet geçmiş olmasından dolayı çok memnundu. Köyde tekrar yürüyebilmek için insanların sokaklardaki lapayı yemeleri gerekti. Temizlik ve yemekle geçen çok uzun bir gündü. Kasabadaki herkes küçük kıza sihirli tenceresi için teşekkür etti. Birlikte harika bir ziyafet çektiler ve bütün köy temizlenip tekrar mutlu olana kadar lezzetli yemeği paylaştılar."
+    ],
+    words: {
+      "poor": "fakir",
+      "forest": "orman",
+      "hungry": "aç",
+      "pot": "tencere",
+      "porridge": "yulaf lapası",
+      "magic": "sihirli",
+      "treasure": "hazine",
+      "curious": "meraklı",
+      "container": "kap",
+      "shelf": "raf",
+      "rich": "zengin",
+      "errand": "ayak işi",
+      "delicious": "lezzetli",
+      "realize": "farkına varmak",
+      "panic": "paniklemek",
+      "sticky": "yapışkan",
+      "trapped": "kapana kısılmış",
+      "flow": "akmak",
+      "mess": "karışıklık",
+      "disaster": "felaket",
+      "guilty": "suçlu",
+      "dangerous": "tehlikeli",
+      "immediately": "derhal",
+      "brave": "cesur",
+      "bubbling": "kaynayan",
+      "relieved": "rahatlamış",
+      "feast": "ziyafet"
+    }
+  }
+,
+  {
+    id: 'wolf_kids',
+    title: "The Wolf and the Seven Young Goats",
+    author: 'Brothers Grimm',
+    level: 'A1',
+    coverUrl: '/covers/wolf_kids.webp',
+    en: [
+      "Once upon a time, there was an old mother goat who lived in a green forest. She had seven little goats and she loved them very much. One day, she wanted to go into the big forest to find some fresh food. She called all seven little goats to her side. She told them to be very careful while she was away. She said that a hungry wolf lived nearby and he often tried to trick animals. She told her children that they must never open the door for anyone else. If the wolf came inside the house, he would eat them all up. The little goats promised their mother that they would listen to her instructions. They were very happy and felt safe in their small house while their mother walked away to the forest.",
+      "The mother goat left her home and walked deep into the dark woods. Soon after she left, someone knocked loudly on the front door. A deep and rough voice shouted that it was their mother. The voice said that she had brought many delicious treats for each of them. The seven little goats listened carefully to the strange sound. They knew that their mother had a soft and sweet voice. The voice outside was very rough and scary. They shouted back that they would not open the door because their mother did not sound like that. They were sure that the person outside was the bad wolf. They stood far away from the door and waited for their mother to return home safely to them.",
+      "The wolf was very angry because the little goats did not open the door for him. He wanted to eat them for his dinner. He went to a shop and bought a large piece of white chalk. He ate the chalk to make his voice soft and sweet. After he ate the chalk, his voice sounded much better. He went back to the small house and knocked on the door again. He called out in a thin and high voice to sound like the mother goat. The little goats thought it was their mother again. They were happy to hear her sweet voice. They did not look outside the window to see who was standing there. They were ready to open the door and let their mother inside the house.",
+      "turkish_paragraphs",
+      "Bir zamanlar, yeşil bir ormanda yaşayan yaşlı bir anne keçi vardı. Yedi tane küçük keçisi vardı ve onları çok severdi. Bir gün, taze yiyecekler bulmak için büyük ormana gitmek istedi. Yedi küçük keçinin hepsini yanına çağırdı. O yokken çok dikkatli olmalarını söyledi. Yakınlarda aç bir kurdun yaşadığını ve sık sık hayvanları kandırmaya çalıştığını anlattı. Çocuklarına, kapıyı asla başka birine açmamaları gerektiğini söyledi. Eğer kurt evin içine girerse, hepsini yiyebilirdi. Küçük keçiler annelerine onu dinleyeceklerine dair söz verdiler. Çok mutluydular ve anneleri ormana doğru yürürken küçük evlerinde kendilerini güvende hissediyorlardı.",
+      "Anne keçi evinden ayrıldı ve karanlık ormanın derinliklerine doğru yürüdü. O gittikten kısa bir süre sonra, biri ön kapıya sertçe vurdu. Derin ve kaba bir ses, kendisinin anneleri olduğunu haykırdı. Ses, her biri için birçok lezzetli yiyecek getirdiğini söyledi. Yedi küçük keçi garip sesi dikkatlice dinledi. Annelerinin yumuşak ve tatlı bir sesi olduğunu biliyorlardı. Dışarıdaki ses çok kaba ve korkutucuydu. Kapıyı açmayacaklarını çünkü annelerinin sesinin öyle olmadığını haykırdılar. Dışarıdaki kişinin kötü kurt olduğundan emindiler. Kapıdan uzak durdular ve annelerinin güvenli bir şekilde eve dönmesini beklediler.",
+      "Kurt, küçük keçiler kapıyı açmadığı için çok kızgındı. Onları akşam yemeği olarak yemek istiyordu. Bir dükkana gitti ve büyük bir parça beyaz tebeşir satın aldı. Sesini yumuşak ve tatlı yapmak için tebeşiri yedi. Tebeşiri yedikten sonra sesi çok daha iyi çıkıyordu. Küçük eve geri döndü ve kapıya tekrar vurdu. Anne keçi gibi duyulmak için ince ve tiz bir sesle seslendi. Küçük keçiler yine anneleri olduğunu düşündüler. Onun tatlı sesini duyduklarına mutlu oldular. Dışarıda kimin durduğunu görmek için pencereden bakmadılar. Kapıyı açmaya ve annelerini evin içine almaya hazırdılar.",
+      "The seven little goats ran to the door to open it. They were so happy because they thought their mother was back home. They moved the heavy lock and pulled the wooden door open. Suddenly, a big and hungry wolf jumped into the room. The little goats were very afraid and started to scream. They did not know what to do. One little goat ran under the table to hide. Another goat hid under the soft bed. A third goat jumped inside the big wooden cupboard. A fourth one ran into the kitchen and hid behind the stove. A fifth goat hid under the large wooden sink. A sixth one went into the bathtub. The last little goat climbed inside the tall clock case. They were all shaking with fear as they waited in the dark corners of their home.",
+      "The wolf walked around the room with a big, evil smile on his face. He was very happy because he found the little goats at home. He looked everywhere for them. He saw the first goat under the table and pulled it out. Then he found the second goat under the bed, the third in the cupboard, the fourth behind the stove, the fifth under the sink, and the sixth in the bathtub. The wolf was very fast and very hungry. He ate them all one by one. The poor little goats could not escape from the big, scary wolf. He was a very bad animal. He moved quickly from one room to the other to find them. He wanted to eat every single one of them for his dinner.",
+      "The wolf looked everywhere, but he could not find the seventh little goat. The last goat was still hiding inside the tall clock case. The wolf did not see him there. He was very full after eating six goats, so he felt sleepy. He walked out of the house into the green meadow. He found a big tree and lay down on the grass under the warm sun. He wanted to sleep for a long time. Soon, the wolf was fast asleep and started to snore very loudly. The small house was quiet again. The seventh little goat stayed in the clock for a long time. He was very afraid, but he was also very lucky to be safe from the hungry wolf.",
+      "The seventh little goat climbed out of the tall clock case very slowly. He looked around the room, but it was empty and very quiet. He walked to the door and carefully stepped outside into the green meadow. He saw his mother walking back home from the forest. The little goat was very sad and started to cry. He ran to his mother and told her everything about the bad wolf. He said that the wolf came to their house and ate all of his brothers and sisters. The mother goat was shocked and very upset. She loved her children very much and wanted to save them from the danger. She held her little goat close to her and they walked back to their house together to find the hungry wolf.",
+      "They found the big, bad wolf lying under a large tree in the meadow. He was still sleeping and his big stomach was very full. The wolf was snoring so loudly that the trees and the grass were moving. The mother goat looked at the wolf and saw something moving inside his round stomach. She thought her children might still be alive. She told the little goat to run back home quickly and bring her some scissors, a needle, and some thick thread. The little goat ran as fast as he could. He was very brave because he wanted to help his mother save his brothers and sisters. He returned with the items and gave them to his mother so she could start her difficult work.",
+      "The mother goat took the scissors and carefully cut the sleeping wolf's stomach. One by one, the six little goats jumped out of the wolf. They were all alive and very happy to see their mother. They hugged her and they hugged their brother. The mother goat was very glad that all her children were safe. She told the little goats to find many big and heavy stones in the meadow. The goats worked together and filled the wolf's big stomach with the stones. The mother goat then used the needle and the thread to sew the wolf's stomach closed again. The wolf did not wake up because he was sleeping very deeply after his big dinner. They all ran away and hid behind a tree to see what would happen next.",
+      "The wolf finally woke up from his long sleep under the tree. He felt very strange and very thirsty. He stood up slowly and wanted to go to the well to get a drink of cold water. However, the stones inside his stomach were very heavy. Every step he took made a loud sound. He felt like he was carrying many rocks inside him. He moved his body and shook his sides. The stones hit each other and made a noise that sounded like rocks in a bag. The wolf was confused and looked at his stomach. He did not know that the little goats had filled his belly with stones while he was dreaming. He tried to walk to the water, but the weight was too much for his tired legs. He fell down again onto the soft grass of the green meadow.",
+      "The wolf tried to stand up again, but the heavy stones made him very unbalanced. He fell forward and tumbled down towards the well. He was so surprised that he could not even shout for help. He was angry at his stomach and wondered why it was so heavy today. The little goats and their mother watched from behind a tree. They were very quiet and did not make a single sound. The wolf reached the edge of the well, but he could not keep his balance. He slipped on the wet grass and fell into the deep water. The heavy stones pulled him down quickly. He struggled to get out, but the stones were too heavy for him to swim. He could not climb out of the deep well and he stayed there forever.",
+      "The mother goat and the seven young goats were very happy when they saw the end of the bad wolf. They held hands and danced around the large tree. The meadow was safe again for them to play and be free. They were no longer afraid of the big, bad animal. They walked home together under the bright yellow sun. They felt very tired but also very relieved. They entered their small house and locked the door behind them to be safe. The mother goat kissed each of her children on their heads. They felt lucky that their family was whole again. They lived happily in their home and never saw the wolf again. The story of the seven little goats and the hungry wolf became a lesson for everyone in the forest.",
+      "The mother goat looked at her seven little children with great love. She was happy because they were all safe at home. The sun began to go down behind the tall green trees of the forest. The animals in the woods started to sing a sweet song for the family. The little goats played with their toys on the soft floor of their home. They were no longer afraid of the big, bad wolf. They knew that he was gone forever and they could live in peace. Every goat was happy to be with their mother again. They ate some delicious food and then they felt very sleepy. It was a beautiful evening and everything was finally calm and quiet in the forest.",
+      "The house was full of joy and happiness that night. The mother goat made a warm bed for all of her seven little children. They climbed into their beds and pulled the soft blankets up to their noses. They talked about the long day and the scary wolf. They felt very brave because they worked together to save themselves from danger. The mother goat sat near them and told them a lovely bedtime story. She promised to always keep them safe from any harm in the future. The little goats smiled and slowly closed their eyes. They had sweet dreams about flowers, green grass, and sunny days. The mother goat watched them sleep and felt very proud of her family.",
+      "The next morning, the forest was bright and full of light. The birds sang in the trees and the flowers opened their petals to the sun. The mother goat and the seven young goats went outside to play in the meadow. They ran, jumped, and had so much fun under the blue sky. The other animals came to visit them and celebrated their safety. They brought gifts of sweet berries and fresh leaves to the happy family. The mother goat thanked everyone for their kindness and support. From that day on, the seven little goats were careful and listened to their mother. They lived a long and happy life together in their cozy house. They were the happiest family in the whole forest."
+    ],
+    tr: [
+      "Bir zamanlar, yeşil bir ormanda yaşayan yaşlı bir anne keçi vardı. Yedi tane küçük keçisi vardı ve onları çok severdi. Bir gün, taze yiyecekler bulmak için büyük ormana gitmek istedi. Yedi küçük keçinin hepsini yanına çağırdı. O yokken çok dikkatli olmalarını söyledi. Yakınlarda aç bir kurdun yaşadığını ve sık sık hayvanları kandırmaya çalıştığını anlattı. Çocuklarına, kapıyı asla başka birine açmamaları gerektiğini söyledi. Eğer kurt evin içine girerse, hepsini yiyebilirdi. Küçük keçiler annelerine onu dinleyeceklerine dair söz verdiler. Çok mutluydular ve anneleri ormana doğru yürürken küçük evlerinde kendilerini güvende hissediyorlardı.",
+      "Anne keçi evinden ayrıldı ve karanlık ormanın derinliklerine doğru yürüdü. O gittikten kısa bir süre sonra, biri ön kapıya sertçe vurdu. Derin ve kaba bir ses, kendisinin anneleri olduğunu haykırdı. Ses, her biri için birçok lezzetli yiyecek getirdiğini söyledi. Yedi küçük keçi garip sesi dikkatlice dinledi. Annelerinin yumuşak ve tatlı bir sesi olduğunu biliyorlardı. Dışarıdaki ses çok kaba ve korkutucuydu. Kapıyı açmayacaklarını çünkü annelerinin sesinin öyle olmadığını haykırdılar. Dışarıdaki kişinin kötü kurt olduğundan emindiler. Kapıdan uzak durdular ve annelerinin güvenli bir şekilde eve dönmesini beklediler.",
+      "Kurt, küçük keçiler kapıyı açmadığı için çok kızgındı. Onları akşam yemeği olarak yemek istiyordu. Bir dükkana gitti ve büyük bir parça beyaz tebeşir satın aldı. Sesini yumuşak ve tatlı yapmak için tebeşiri yedi. Tebeşiri yedikten sonra sesi çok daha iyi çıkıyordu. Küçük eve geri döndü ve kapıya tekrar vurdu. Anne keçi gibi duyulmak için ince ve tiz bir sesle seslendi. Küçük keçiler yine anneleri olduğunu düşündüler. Onun tatlı sesini duyduklarına mutlu oldular. Dışarıda kimin durduğunu görmek için pencereden bakmadılar. Kapıyı açmaya ve annelerini evin içine almaya hazırdılar.",
+      "Yedi küçük keçi, kapıyı açmak için koştular. Annelerinin eve döndüğünü düşündükleri için çok mutluydular. Ağır kilidi hareket ettirdiler ve ahşap kapıyı çektiler. Aniden, büyük ve aç bir kurt odanın içine atladı. Küçük keçiler çok korktular ve bağırmaya başladılar. Ne yapacaklarını bilmiyorlardı. Bir küçük keçi saklanmak için masanın altına koştu. Başka bir keçi yumuşak yatağın altına saklandı. Üçüncü bir keçi büyük ahşap dolabın içine atladı. Dördüncüsü mutfağa koştu ve sobanın arkasına gizlendi. Beşinci bir keçi büyük ahşap lavabonun altına girdi. Altıncısı küvetin içine gitti. Sonuncu küçük keçi uzun saat kasasının içine tırmandı. Evlerinin karanlık köşelerinde beklerken hepsi korkudan titriyorlardı.",
+      "Kurt, yüzünde büyük, kötü bir gülümsemeyle odanın içinde dolaştı. Küçük keçileri evde bulduğu için çok mutluydu. Onları her yerde aradı. Masanın altındaki ilk keçiyi gördü ve onu dışarı çekti. Sonra yatağın altındaki ikinci keçiyi, dolaptaki üçüncüsünü, sobanın arkasındaki dördüncüsünü, lavabonun altındaki beşincisini ve küvetteki altıncısını buldu. Kurt çok hızlı ve çok açtı. Hepsini birer birer yedi. Zavallı küçük keçiler büyük, korkutucu kurttan kaçamadılar. O çok kötü bir hayvandı. Onları bulmak için bir odadan diğerine hızla hareket etti. Akşam yemeği için hepsini tek tek yemek istiyordu.",
+      "Kurt her yere baktı ama yedinci küçük keçiyi bulamadı. Sonuncu keçi hala uzun saat kasasının içinde saklanıyordu. Kurt onu orada görmedi. Altı keçi yedikten sonra çok doymuştu, bu yüzden uykusu geldi. Evden çıkıp yeşil çayıra yürüdü. Büyük bir ağaç buldu ve sıcak güneşin altında çimenlerin üzerine uzandı. Uzun süre uyumak istiyordu. Kısa süre sonra kurt derin bir uykuya daldı ve çok yüksek sesle horlamaya başladı. Küçük ev yeniden sessizleşti. Yedinci küçük keçi uzun süre saatin içinde kaldı. Çok korkmuştu ama aç kurttan güvenli bir şekilde kurtulduğu için çok şanslıydı.",
+      "Yedinci küçük keçi çok yavaş bir şekilde uzun saat kasasının içinden çıktı. Odaya baktı ama oda boş ve çok sessizdi. Kapıya yürüdü ve dikkatlice dışarı, yeşil çayıra adım attı. Annesinin ormandan eve doğru yürüdüğünü gördü. Küçük keçi çok üzgündü ve ağlamaya başladı. Annesine koştu ve ona kötü kurtla ilgili her şeyi anlattı. Kurdun evlerine geldiğini ve tüm kardeşlerini yediğini söyledi. Anne keçi şok oldu ve çok üzüldü. Çocuklarını çok seviyordu ve onları tehlikeden kurtarmak istiyordu. Küçük keçisini yanına aldı ve aç kurdu bulmak için birlikte evlerine doğru yürüdüler.",
+      "Kocaman, kötü kurdu çayırda büyük bir ağacın altında yatarken buldular. Hala uyuyordu ve büyük karnı çok doluydu. Kurt o kadar yüksek sesle horluyordu ki ağaçlar ve otlar hareket ediyordu. Anne keçi kurda baktı ve yuvarlak karnının içinde bir şeylerin hareket ettiğini gördü. Çocuklarının hala yaşıyor olabileceğini düşündü. Küçük keçiye hızla eve geri koşmasını ve ona bir makas, bir iğne ve biraz kalın iplik getirmesini söyledi. Küçük keçi yapabildiği kadar hızlı koştu. Çok cesurdu çünkü annesinin kardeşlerini kurtarmasına yardım etmek istiyordu. Malzemelerle geri döndü ve annesinin zor işine başlayabilmesi için onları annesine verdi.",
+      "Anne keçi makası aldı ve uyuyan kurdun karnını dikkatlice kesti. Altı küçük keçi birer birer kurdun içinden dışarı atladı. Hepsi hayattaydı ve annelerini gördükleri için çok mutluydular. Ona sarıldılar ve kardeşlerine sarıldılar. Anne keçi tüm çocukları güvende olduğu için çok memnundu. Küçük keçilere çayırda pek çok büyük ve ağır taş bulmalarını söyledi. Keçiler birlikte çalıştılar ve kurdun büyük karnını taşlarla doldurdular. Anne keçi daha sonra kurdun karnını tekrar dikmek için iğneyi ve ipliği kullandı. Kurt uyanmadı çünkü büyük akşam yemeğinden sonra çok derin uyuyordu. Hepsi kaçtı ve bundan sonra ne olacağını görmek için bir ağacın arkasına saklandılar.",
+      "Kurt, ağacın altında uyuduğu uzun uykudan sonunda uyandı. Kendini çok garip ve çok susamış hissetti. Yavaşça ayağa kalktı ve soğuk su içmek için kuyuya gitmek istedi. Ancak karnının içindeki taşlar çok ağırdı. Attığı her adım yüksek bir ses çıkarıyordu. Sanki içinde birçok kaya taşıyormuş gibi hissetti. Vücudunu hareket ettirdi ve yanlarını salladı. Taşlar birbirine çarptı ve bir çuvalın içindeki taşlar gibi ses çıkardı. Kurt şaşkındı ve karnına baktı. O rüya görürken küçük keçilerin karnını taşlarla doldurduğunu bilmiyordu. Suya doğru yürümeye çalıştı ama ağırlık yorgun bacakları için çok fazlaydı. Yeşil çayırın yumuşak otları üzerine tekrar düştü.",
+      "Kurt tekrar ayağa kalkmaya çalıştı ama ağır taşlar dengesini bozdu. Öne doğru devrildi ve kuyuya doğru yuvarlandı. O kadar şaşkındı ki yardım için bağıramadı bile. Karnına kızdı ve bugün neden bu kadar ağır olduğunu merak etti. Küçük keçiler ve anneleri bir ağacın arkasından izliyorlardı. Çok sessizdiler ve tek bir ses bile çıkarmadılar. Kurt kuyunun kenarına ulaştı ama dengesini koruyamadı. Islak otların üzerinde kaydı ve derin suyun içine düştü. Ağır taşlar onu hızla aşağı çekti. Dışarı çıkmak için çabaladı ama taşlar yüzmesi için çok ağırdı. Derin kuyudan çıkamadı ve orada sonsuza dek kaldı.",
+      "Anne keçi ve yedi küçük keçi, kötü kurdun sonunu gördüklerinde çok mutlu oldular. El ele tutuştular ve büyük ağacın etrafında dans ettiler. Çayır onlar için tekrar güvenliydi ve özgürce oynayabilirlerdi. Artık büyük ve kötü hayvandan korkmuyorlardı. Parlak sarı güneşin altında birlikte eve yürüdüler. Çok yorgun ama aynı zamanda çok rahatlamış hissediyorlardı. Küçük evlerine girdiler ve güvende olmak için kapıyı arkalarından kilitlediler. Anne keçi çocuklarının her birini başlarından öptü. Aileleri tekrar bir araya geldiği için kendilerini şanslı hissediyorlardı. Evlerinde mutlu bir şekilde yaşadılar ve kurdu bir daha hiç görmediler. Yedi küçük keçi ve aç kurdun hikayesi ormandaki herkes için bir ders oldu.",
+      "Anne keçi, yedi küçük yavrusuna büyük bir sevgiyle baktı. Hepsi evde güvende oldukları için çok mutluydu. Güneş, ormanın uzun yeşil ağaçlarının arkasından batmaya başladı. Ormandaki hayvanlar, aile için tatlı bir şarkı söylemeye başladılar. Küçük keçiler, evlerinin yumuşak zemininde oyuncaklarıyla oynadılar. Artık koca, kötü kurttan korkmuyorlardı. Onun sonsuza dek gittiğini ve huzur içinde yaşayabileceklerini biliyorlardı. Her keçi annesiyle tekrar birlikte olmaktan çok mutluydu. Lezzetli yemekler yediler ve sonra kendilerini çok uykulu hissettiler. Güzel bir akşamdı ve ormanda her şey nihayet sakin ve sessizdi.",
+      "O gece ev neşe ve mutluluk doluydu. Anne keçi, yedi küçük yavrusunun hepsi için sıcak bir yatak hazırladı. Yataklarına tırmandılar ve yumuşak battaniyelerini burunlarına kadar çektiler. Uzun gün hakkında ve korkunç kurt hakkında konuştular. Kendilerini çok cesur hissettiler çünkü tehlikeden kurtulmak için birlikte çalıştılar. Anne keçi yanlarına oturdu ve onlara güzel bir uyku vakti hikayesi anlattı. Onları gelecekte her türlü zarardan koruyacağına dair söz verdi. Küçük keçiler gülümsedi ve yavaşça gözlerini kapattılar. Çiçekler, yeşil çimenler ve güneşli günler hakkında tatlı rüyalar gördüler. Anne keçi onların uyuyuşunu izledi ve ailesiyle gurur duydu.",
+      "Ertesi sabah, orman parlak ve ışık doluydu. Kuşlar ağaçlarda şarkı söyledi ve çiçekler taç yapraklarını güneşe açtı. Anne keçi ve yedi küçük keçi, çayırda oynamak için dışarı çıktılar. Koştular, zıpladılar ve mavi gökyüzü altında çok eğlendiler. Diğer hayvanlar onları ziyarete geldi ve güvenliklerini kutladılar. Mutlu aileye tatlı meyveler ve taze yapraklardan hediyeler getirdiler. Anne keçi nezaketleri ve destekleri için herkese teşekkür etti. O günden sonra, yedi küçük keçi dikkatli davrandılar ve annelerini dinlediler. Rahat evlerinde birlikte uzun ve mutlu bir hayat yaşadılar. Ormandaki en mutlu aile onlardı."
+    ],
+    words: {
+      "forest": "orman",
+      "hungry": "aç",
+      "knock": "kapı çalmak",
+      "voice": "ses",
+      "chalk": "tebeşir",
+      "safe": "güvende",
+      "cupboard": "dolap",
+      "sink": "lavabo",
+      "scary": "korkutucu",
+      "meadow": "çayır",
+      "snore": "horlamak",
+      "clock": "saat",
+      "stomach": "mide",
+      "scissors": "makas",
+      "thread": "iplik",
+      "needle": "iğne",
+      "stone": "taş",
+      "heavy": "ağır",
+      "well": "kuyu",
+      "balance": "denge",
+      "relieved": "rahatlamış",
+      "happy": "mutlu",
+      "safety": "güvenlik",
+      "sleepy": "uykulu",
+      "brave": "cesur"
+    }
+  }
+,
+  {
+    id: 'brave_tailor',
+    title: "The Brave Little Tailor",
+    author: 'Brothers Grimm',
+    level: 'A1',
+    coverUrl: '/covers/brave_tailor.webp',
+    en: [
+      "One summer morning, a little tailor sat on his table by the window. He was very happy and he sewed with great skill. A woman walked by the street and she shouted, 'Fresh jam! Buy my fresh jam!' The little tailor liked the sweet sound. He opened the window and called the woman to come up. He bought seven pots of jam from her. He put a little bit of the jam on a piece of bread. He wanted to eat it after he finished his work. But then, many flies flew into the room to eat the sweet jam. The tailor was very angry. He took a piece of cloth and hit the flies hard. He looked at the table and saw seven dead flies. He was very proud of himself and said, 'Seven in one blow!'",
+      "The tailor wanted the whole world to know about his great power. He made a new belt. He sewed the words 'Seven in one blow' on it with big letters. He put the belt around his waist. He was ready to leave his shop. He looked around his house and saw a piece of old cheese. He put the cheese in his pocket. Near the door, he found a small bird that was caught in a bush. He put the bird in his pocket with the cheese. Then, he started his long walk into the big world. He was a small man, but he felt very strong now. He walked up a high mountain to see the beautiful land. He was happy because he was brave and strong.",
+      "At the top of the mountain, he saw a very big giant. The giant sat and looked at the valley. The tailor walked up to him and said, 'Good morning, friend! Are you looking at the world? I am going into the world to see new places. Do you want to come with me?' The giant looked at the little tailor. He was not happy. He said, 'Go away, you small man!' The tailor was not afraid. He showed his belt to the giant. The giant read the words 'Seven in one blow.' He thought the tailor killed seven men in one hit. The giant wanted to test the tailor. He picked up a stone and squeezed it until water came out. He told the tailor to do the same thing.",
+      "The little tailor did not feel afraid at all. He put his hand into his pocket and took out the soft piece of cheese. He held it in his hand and squeezed it very hard. The white cheese was very soft, so the white juice ran out like water. The giant was very surprised to see this. He did not know that the tailor used a piece of cheese. The giant thought the tailor was very strong because he squeezed water from a stone. The giant wanted to test him one more time to be sure. He picked up another heavy stone and threw it high into the sky. The stone went up and up and then it came back down to the ground. The giant watched the stone fall down slowly.",
+      "The tailor smiled at the giant. He said that the throw was good, but the stone still fell back to the ground. The tailor took the small bird out of his pocket and let it fly into the sky. The bird was very happy to be free and it flew far away. The giant was shocked because he did not see the bird clearly. He thought the tailor threw a stone so high that it never came back. The giant said that the tailor was a very good thrower. The giant told the tailor that he should help him move a big tree. The giant wanted to see if the tailor could carry the heavy wood easily. They started to walk to the forest together.",
+      "When they reached the forest, the giant told the tailor to carry the heavy tree. The giant said that he would carry the trunk. The tailor was clever and he did not want to carry the heavy branches. He sat on a large branch and let the giant carry everything. The giant carried the whole tree on his shoulders. The tailor sat on the branch and hummed a happy song. The giant walked for a long time and felt very tired. He had to carry the tailor and the tree alone. The giant was very hot and tired, but the tailor was still happy and strong. They finally stopped to rest under a large tree and the tailor felt ready for more adventures.",
+      "The giant and the tailor walked until they found two large giants sleeping under a tree. The giant told the tailor to see them. He wanted to show the tailor how big and strong his family was. The tailor saw the sleeping giants and thought of a plan. He climbed up the tree very carefully. He looked for a place to sit on the branches. He saw a big pile of stones near the sleeping giants. He picked up one large stone and threw it down. It hit one giant on the head. The giant woke up and was very angry. He asked his friend why he hit him. The friend said he did not do it. They argued for a long time until they went back to sleep.",
+      "The tailor climbed down a little bit and picked up another big stone. He threw it down and it hit the second giant on the chest. The giant jumped up and was very mad. He shouted at his friend and asked why he hit him again. The friend was very upset and told him he was not the one who threw the stone. They fought with each other for a long time. They pulled up big trees from the ground because they were so angry. The tailor watched them from the tree and he felt very happy. He was safe and the giants were fighting each other. He saw them stop fighting and fall asleep on the grass again.",
+      "The tailor came down from the tree with many sharp stones in his pocket. He found the giants and threw the stones at them while they were still sleeping. The giants woke up in a big panic. They were very afraid because they thought someone was attacking them with invisible weapons. They stood up and ran away into the forest as fast as they could. The tailor walked behind them and felt like a true hero. He did not need to be big to win the fight. He was clever and used his mind to defeat the giants. He continued his journey to the king's castle with a big smile on his face.",
+      "The tailor walked for a long time. Finally, he saw the big castle of the king. He was tired but he felt very strong. He went to the gate and lay down on the green grass. He wanted to sleep for a while. The guards looked at him and were surprised. They saw his belt. The belt said that he could kill seven with one blow. The guards went to the king quickly. They told him about the little man at the gate. They said that a great hero was there. The king wanted to meet the hero. He sent his men to bring the tailor to him. The tailor felt very happy because he was finally at the castle. He went inside to see the king and waited for a new job.",
+      "The king spoke to the tailor. He heard about the brave man. The king thought the tailor was a soldier. He offered him a job as a royal soldier. The tailor liked the idea. However, the other soldiers were afraid. They thought the little tailor would take their jobs. They did not want him in the castle. They told the king they wanted the tailor to leave. They did not like him at all. The king did not listen to them. He told the tailor to prove his power. He gave him a new task. The tailor had to catch a very big unicorn. The unicorn was strong and lived in the woods. The tailor went to the dark forest to find the beast.",
+      "The tailor walked in the woods for many hours. He looked everywhere for the unicorn. Soon, the animal saw the tailor. The unicorn was angry and ran toward him with its sharp horn. The little tailor did not run away. He stood behind a very large tree. He waited for the perfect moment. The unicorn ran very fast. The tailor jumped to the side. The unicorn hit the tree with its head. The horn went deep into the wood. The animal was stuck and could not move. The tailor walked to the unicorn. He took a rope and tied it around the neck of the beast. He brought the unicorn to the king. The king was amazed by the success of the tailor.",
+      "The king was very happy that the tailor caught the unicorn. But the other soldiers were still jealous of the little man. They wanted the king to send him away forever. The king decided to give the tailor one last difficult task. He told the tailor about two dangerous giants in the forest. These giants were very big and scared everyone in the country. The king promised the tailor that he could marry his beautiful daughter if he captured them. The tailor accepted the offer immediately. He went to the forest to find the two giants. He did not feel afraid because he was very clever. He knew that he could win against them with his smart mind.",
+      "The tailor found the two giants sleeping under a tree. He climbed up the tree and sat on a branch. He picked up many heavy stones from the ground. He threw the first stone at the chest of one giant. The giant woke up and looked at his friend. He thought his friend hit him. They started to fight each other. The tailor threw more stones at them while they were busy fighting. Finally, the giants fell down and did not move anymore. The tailor came down from the tree and finished his job. He was very happy and proud of himself. He went back to the castle to tell the king about his great victory.",
+      "The king kept his word and the tailor married the princess. They had a big party at the castle. Everyone cheered for the brave little hero. He was not just a simple tailor anymore. He was a rich and important man. He lived in the castle with his wife and they were very happy. The other soldiers finally liked the brave man. They understood that he was a true hero. The tailor never forgot his past, but he loved his new life as a royal. He often told his story to the people in the kingdom. The brave little tailor lived a long and wonderful life with his beautiful princess."
+    ],
+    tr: [
+      "Bir yaz sabahı, küçük bir terzi penceresinin önündeki masasında oturuyordu. Çok mutluydu ve büyük bir beceriyle dikiş dikiyordu. Bir kadın caddeden geçti ve 'Taze reçel! Taze reçelimi alın!' diye bağırdı. Küçük terzi bu tatlı sesi sevdi. Pencereyi açtı ve kadını yukarı çağırdı. Ondan yedi kavanoz reçel satın aldı. Bir parça ekmeğin üzerine biraz reçel sürdü. İşini bitirdikten sonra yemeyi planlıyordu. Fakat sonra, birçok sinek tatlı reçeli yemek için odaya uçtu. Terzi çok kızdı. Bir parça kumaş aldı ve sineklere sertçe vurdu. Masaya baktığında yedi ölü sinek gördü. Kendisiyle çok gurur duydu ve 'Tek vuruşta yedi tane!' dedi.",
+      "Terzi, tüm dünyanın onun büyük gücünü bilmesini istiyordu. Yeni bir kemer yaptı. Üzerine büyük harflerle 'Tek vuruşta yedi tane' sözlerini işledi. Kemeri beline taktı. Dükkanından ayrılmaya hazırdı. Evine göz gezdirdi ve eski bir peynir parçası gördü. Peyniri cebine koydu. Kapının yakınında, bir çalıya sıkışmış küçük bir kuş buldu. Kuşu peynirle birlikte cebine koydu. Sonra, büyük dünyaya doğru uzun yürüyüşüne başladı. O küçük bir adamdı ama artık kendini çok güçlü hissediyordu. Güzel toprakları görmek için yüksek bir dağa doğru yürüdü. Cesur ve güçlü olduğu için çok mutluydu.",
+      "Dağın tepesinde çok büyük bir dev gördü. Dev oturmuş vadiye bakıyordu. Terzi ona doğru yürüdü ve 'Günaydın arkadaşım! Dünyaya mı bakıyorsun? Yeni yerler görmek için dünyaya gidiyorum. Benimle gelmek ister misin?' dedi. Dev küçük terziye baktı. Mutlu değildi. 'Git buradan, seni küçük adam!' dedi. Terzi korkmadı. Kemerini deve gösterdi. Dev 'Tek vuruşta yedi tane' yazısını okudu. Terzinin tek vuruşta yedi adam öldürdüğünü düşündü. Dev terziyi test etmek istedi. Bir taş aldı ve içinden su çıkana kadar sıktı. Terziye aynısını yapmasını söyledi.",
+      "Küçük terzi hiç korkmuyordu. Elini cebine attı ve yumuşak peynir parçasını çıkardı. Onu elinde tuttu ve çok sert sıktı. Beyaz peynir çok yumuşak olduğu için beyaz suyu su gibi dışarı aktı. Dev bunu görünce çok şaşırdı. Terzinin peynir kullandığını bilmiyordu. Dev, terzinin bir taştan su çıkardığı için çok güçlü olduğunu düşündü. Dev, emin olmak için onu bir kez daha test etmek istedi. Başka bir ağır taş aldı ve gökyüzüne doğru yükseğe fırlattı. Taş yukarı çıktı ve sonra yere geri döndü. Dev, taşın yavaşça yere düşüşünü izledi.",
+      "Terzi deve gülümsedi. Atışın iyi olduğunu ama taşın yine de yere düştüğünü söyledi. Terzi küçük kuşu cebinden çıkardı ve gökyüzüne uçmasına izin verdi. Kuş özgür olduğu için çok mutluydu ve uzaklara uçtu. Dev, kuşu net bir şekilde göremediği için şok oldu. Terzinin taşı o kadar yükseğe fırlattığını düşündü ki taş asla geri gelmedi. Dev, terzinin çok iyi bir atıcı olduğunu söyledi. Dev, terziye büyük bir ağacı taşımasına yardım etmesi gerektiğini söyledi. Dev, terzinin ağır odunu kolayca taşıyıp taşıyamayacağını görmek istedi. Birlikte ormana doğru yürümeye başladılar.",
+      "Ormana vardıklarında dev, terziye ağır ağacı taşımasını söyledi. Dev, gövdeyi kendisinin taşıyacağını söyledi. Terzi zekiydi ve ağır dalları taşımak istemiyordu. Büyük bir dalın üzerine oturdu ve devin her şeyi taşımasına izin verdi. Dev, bütün ağacı omuzlarında taşıdı. Terzi dalın üzerinde oturdu ve neşeli bir şarkı mırıldandı. Dev uzun süre yürüdü ve çok yoruldu. Terziyi ve ağacı tek başına taşımak zorunda kaldı. Dev çok sıcaklamıştı ve yorulmuştu ama terzi hala mutlu ve güçlüydü. Sonunda büyük bir ağacın altında dinlenmek için durdular ve terzi yeni maceralara hazır hissetti.",
+      "Dev ve terzi, bir ağacın altında uyuyan iki büyük dev bulana kadar yürüdüler. Dev, terziye onları görmesini söyledi. Terziye ailesinin ne kadar büyük ve güçlü olduğunu göstermek istiyordu. Terzi uyuyan devleri gördü ve bir plan düşündü. Çok dikkatli bir şekilde ağaca tırmandı. Dallar üzerinde oturacak bir yer aradı. Uyuyan devlerin yanında büyük bir taş yığını gördü. Büyük bir taş aldı ve aşağı fırlattı. Taş devlerden birinin kafasına çarptı. Dev uyandı ve çok sinirlendi. Arkadaşına neden ona vurduğunu sordu. Arkadaşı bunu yapmadığını söyledi. Tekrar uyuyana kadar uzun süre tartıştılar.",
+      "Terzi biraz aşağı indi ve başka bir büyük taş aldı. Taşı aşağı fırlattı ve taş ikinci devin göğsüne çarptı. Dev yerinden sıçradı ve çok kızdı. Arkadaşına bağırdı ve neden tekrar ona vurduğunu sordu. Arkadaşı çok üzgündü ve taşı atan kişinin kendisi olmadığını söyledi. Uzun süre birbirleriyle kavga ettiler. Çok kızgın oldukları için yerden büyük ağaçları söktüler. Terzi onları ağaçtan izledi ve kendini çok mutlu hissetti. Güvendeydi ve devler birbirleriyle savaşıyordu. Kavga etmeyi bırakıp tekrar çimlerin üzerinde uyuyakaldıklarını gördü.",
+      "Terzi, cebinde birçok keskin taşla ağaçtan aşağı indi. Devleri buldu ve onlar hala uyurken taşları üzerlerine fırlattı. Devler büyük bir panikle uyandılar. Birinin onlara görünmez silahlarla saldırdığını düşündükleri için çok korktular. Ayağa kalktılar ve ormana doğru olabildiğince hızlı koştular. Terzi arkalarından yürüdü ve kendini gerçek bir kahraman gibi hissetti. Savaşı kazanmak için büyük olmasına gerek yoktu. Zekiydi ve devleri yenmek için aklını kullandı. Yüzünde kocaman bir gülümsemeyle kralın şatosuna doğru yolculuğuna devam etti.",
+      "Terzi uzun süre yürüdü. Sonunda kralın büyük kalesini gördü. Yorgundu ama kendini çok güçlü hissediyordu. Kapıya gitti ve yeşil çimenlerin üzerine uzandı. Biraz uyumak istedi. Nöbetçiler ona baktı ve şaşırdılar. Kemerini gördüler. Kemerinde tek vuruşta yedi kişiyi öldürebileceği yazıyordu. Nöbetçiler hemen kralın yanına gittiler. Kapıdaki küçük adamdan bahsettiler. Orada büyük bir kahramanın olduğunu söylediler. Kral kahramanla tanışmak istedi. Adamlarını terziyi ona getirmeleri için gönderdi. Terzi sonunda kalede olduğu için çok mutlu hissetti. Kralı görmek için içeri girdi ve yeni bir iş için bekledi.",
+      "Kral terziyle konuştu. Cesur adam hakkında duydukları vardı. Kral, terzinin bir asker olduğunu düşündü. Ona kraliyet askeri olarak bir iş teklif etti. Terzi bu fikri sevdi. Ancak diğer askerler korkuyordu. Küçük terzinin işlerini ellerinden alacağını düşündüler. Onu kalede istemiyorlardı. Krala terzinin gitmesini istediklerini söylediler. Ondan hiç hoşlanmadılar. Kral onları dinlemedi. Terziye gücünü kanıtlamasını söyledi. Ona yeni bir görev verdi. Terzi çok büyük bir tek boynuzlu at yakalamak zorundaydı. Tek boynuzlu at güçlüydü ve ormanda yaşıyordu. Terzi canavarı bulmak için karanlık ormana gitti.",
+      "Terzi ormanda saatlerce yürüdü. Tek boynuzlu atı her yerde aradı. Çok geçmeden hayvan terziyi gördü. Tek boynuzlu at kızgındı ve keskin boynuzuyla ona doğru koştu. Küçük terzi kaçmadı. Çok büyük bir ağacın arkasında durdu. Mükemmel anı bekledi. Tek boynuzlu at çok hızlı koştu. Terzi yana doğru zıpladı. Tek boynuzlu at kafasıyla ağaca çarptı. Boynuz ağacın derinliklerine saplandı. Hayvan sıkışmıştı ve hareket edemiyordu. Terzi tek boynuzlu ata doğru yürüdü. Bir ip aldı ve canavarın boynuna bağladı. Tek boynuzlu atı krala getirdi. Kral, terzinin başarısı karşısında hayrete düştü.",
+      "Kral, terzinin tek boynuzluyu yakalamasına çok sevindi. Ancak diğer askerler hala küçük adamı kıskanıyorlardı. Kralın onu sonsuza dek göndermesini istediler. Kral, terziye son bir zor görev vermeye karar verdi. Terziye ormandaki iki tehlikeli devden bahsetti. Bu devler çok büyüktü ve ülkedeki herkesi korkutuyorlardı. Kral, terziye onları yakalarsa güzel kızıyla evlenebileceğine söz verdi. Terzi teklifi hemen kabul etti. İki devi bulmak için ormana gitti. Korkmuyordu çünkü çok zekiydi. Onlara karşı aklını kullanarak kazanabileceğini biliyordu.",
+      "Terzi, iki devi bir ağacın altında uyurken buldu. Ağaca tırmandı ve bir dala oturdu. Yerden birçok ağır taş topladı. İlk taşı devlerden birinin göğsüne attı. Dev uyandı ve arkadaşına baktı. Arkadaşının ona vurduğunu sandı. Birbiriyle kavga etmeye başladılar. Terzi, onlar kavga ederken üzerlerine daha fazla taş attı. Sonunda devler yere düştü ve artık hareket etmediler. Terzi ağaçtan aşağı indi ve işini bitirdi. Çok mutlu ve kendisiyle gurur duyuyordu. Krala büyük zaferini anlatmak için kaleye geri döndü.",
+      "Kral sözünü tuttu ve terzi prensesle evlendi. Kalede büyük bir parti verdiler. Herkes cesur küçük kahraman için tezahürat yaptı. O artık basit bir terzi değildi. Zengin ve önemli bir adamdı. Karısıyla kalede yaşadı ve çok mutlu oldular. Diğer askerler sonunda cesur adamı sevdiler. Onun gerçek bir kahraman olduğunu anladılar. Terzi geçmişini asla unutmadı ama kraliyet üyesi olarak yeni hayatını sevdi. Hikayesini sık sık krallıktaki insanlara anlattı. Cesur küçük terzi, güzel prensesiyle uzun ve harika bir hayat yaşadı."
+    ],
+    words: {
+      "tailor": "terzi",
+      "blow": "vuruş",
+      "giant": "dev",
+      "belt": "kemer",
+      "brave": "cesur",
+      "mountain": "dağ",
+      "squeeze": "sıkmak",
+      "juice": "su, öz",
+      "throw": "fırlatmak",
+      "clever": "zeki",
+      "branch": "dal",
+      "trunk": "gövde",
+      "stone": "taş",
+      "sleep": "uyumak",
+      "angry": "kızgın",
+      "fight": "kavga etmek",
+      "hero": "kahraman",
+      "castle": "kale",
+      "guard": "nöbetçi",
+      "soldier": "asker",
+      "unicorn": "tek boynuzlu at",
+      "horn": "boynuz",
+      "rope": "ip",
+      "marry": "evlenmek",
+      "victory": "zafer",
+      "capture": "yakalamak"
     }
   }
 ];

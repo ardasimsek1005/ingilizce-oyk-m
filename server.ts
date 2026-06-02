@@ -714,6 +714,118 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
     });
   });
 
+  // Auto-login endpoint based on Device UUID
+  app.post("/api/auto-login", (req, res) => {
+    try {
+      const { deviceUuid } = req.body;
+      if (!deviceUuid || typeof deviceUuid !== "string" || deviceUuid.trim().length < 5) {
+        return res.status(400).json({ error: "Geçersiz cihaz kimliği." });
+      }
+
+      const cleanUuid = deviceUuid.trim();
+
+      // 1. Search database for an existing user record matching this deviceUuid
+      let matchedUserKey: string | null = null;
+      for (const [key, record] of Object.entries(usersData)) {
+        if (record && record.deviceUuid === cleanUuid) {
+          matchedUserKey = key;
+          break;
+        }
+      }
+
+      const clientIp = (req.headers["x-forwarded-for"] || req.socket.remoteAddress || "").toString();
+
+      if (matchedUserKey) {
+        // User found! Generate a new session token and return the account
+        const record = usersData[matchedUserKey];
+        const sessionToken = crypto.randomBytes(32).toString("hex");
+        
+        record.tokens = record.tokens || [];
+        record.tokens.push(sessionToken);
+        if (record.tokens.length > 5) {
+          record.tokens.shift();
+        }
+        record.ipAddress = clientIp;
+        record.updatedAt = new Date().toISOString();
+        saveUsersData();
+
+        return res.json({
+          success: true,
+          token: sessionToken,
+          username: record.username || record.data?.userName || "Okur",
+          email: record.username?.toLowerCase() || matchedUserKey,
+          data: record.data || {}
+        });
+      } else {
+        // 2. No matching user found. Automatically register a new guest account!
+        let guestNumber = Math.floor(1000 + Math.random() * 9000);
+        let guestName = `Okur-${guestNumber}`;
+        
+        // Ensure unique username in the database
+        let attempts = 0;
+        while (attempts < 20) {
+          const lowerName = guestName.toLowerCase();
+          const taken = Object.values(usersData).some(user => 
+            user && user.username && user.username.toLowerCase() === lowerName
+          );
+          if (!taken) break;
+          guestNumber = Math.floor(1000 + Math.random() * 9000);
+          guestName = `Okur-${guestNumber}`;
+          attempts++;
+        }
+
+        const lowerUsername = guestName.toLowerCase();
+        const hashedKey = hashEmail(lowerUsername);
+        const sessionToken = crypto.randomBytes(32).toString("hex");
+
+        usersData[hashedKey] = {
+          username: guestName,
+          password: "", // empty password for auto-login guest accounts
+          tokens: [sessionToken],
+          ipAddress: clientIp,
+          deviceUuid: cleanUuid,
+          data: {
+            userName: guestName,
+            stats: {
+              learnedWordsCount: 0,
+              completedBooksCount: 0,
+              dailyStreak: 1,
+              totalTimeMinutes: 0,
+              readingGoalPercent: 0,
+              wordGoalPercent: 0,
+              timeGoalPercent: 0,
+              hearts: 5,
+              isPremium: false,
+              weeklyWords: [0, 0, 0, 0, 0, 0, 0],
+              weeklyMins: [0, 0, 0, 0, 0, 0, 0],
+              lastActiveDate: new Date().toISOString().split("T")[0]
+            },
+            books: [],
+            vocabulary: [],
+            badges: [],
+            loginProvider: "device_uuid",
+            linkedProviders: ["device_uuid"]
+          },
+          updatedAt: new Date().toISOString()
+        };
+
+        saveUsersData();
+
+        return res.json({
+          success: true,
+          token: sessionToken,
+          username: guestName,
+          email: lowerUsername,
+          data: usersData[hashedKey].data
+        });
+      }
+    } catch (err) {
+      console.error("Auto-login error:", err);
+      return res.status(500).json({ error: "Otomatik giriş sırasında sunucu hatası oluştu." });
+    }
+  });
+
+
   // Sync endpoint - Save progress
   app.post("/api/sync", (req, res) => {
     const { email, data } = req.body;
@@ -775,7 +887,7 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
   // Auth endpoint - Register or login user with password or token
   app.post("/api/auth", (req, res) => {
     try {
-      const { email, password, token, provider, isExternal, name } = req.body;
+      const { email, password, token, provider, isExternal, name, deviceUuid } = req.body;
       if (!email || email.trim().length < 3) {
         return res.status(400).json({ error: "Geçersiz e-posta veya kullanıcı adı. ⚠️" });
       }
@@ -789,6 +901,10 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
         if (!userRecord || !userRecord.tokens || !userRecord.tokens.includes(token)) {
           return res.status(401).json({ error: "Kayıtlı oturum anahtarı geçersiz veya süresi dolmuş. ⚠️" });
         }
+        if (deviceUuid && !userRecord.deviceUuid) {
+          userRecord.deviceUuid = deviceUuid.trim();
+          saveUsersData();
+        }
         return res.json({ success: true, token, isNew: false, message: "Kayıtlı oturum doğrulandı." });
       }
 
@@ -800,6 +916,7 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
           usersData[hashedEmail] = {
             password: "", // empty password for external signups
             tokens: [sessionToken],
+            deviceUuid: deviceUuid ? deviceUuid.trim() : "",
             data: {},
             updatedAt: new Date().toISOString()
           };
@@ -814,6 +931,9 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
           userRecord.tokens.push(sessionToken);
           if (userRecord.tokens.length > 5) {
             userRecord.tokens.shift();
+          }
+          if (deviceUuid) {
+            userRecord.deviceUuid = deviceUuid.trim();
           }
           userRecord.updatedAt = new Date().toISOString();
           saveUsersData();
@@ -836,6 +956,7 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
         usersData[hashedEmail] = {
           password: hashPassword(password),
           tokens: [sessionToken],
+          deviceUuid: deviceUuid ? deviceUuid.trim() : "",
           data: {},
           updatedAt: new Date().toISOString()
         };
@@ -874,6 +995,9 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
         if (userRecord.tokens.length > 5) {
           userRecord.tokens.shift();
         }
+        if (deviceUuid) {
+          userRecord.deviceUuid = deviceUuid.trim();
+        }
         userRecord.updatedAt = new Date().toISOString();
         saveUsersData();
 
@@ -887,10 +1011,9 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
     }
   });
 
-  // Register endpoint - Create a new user with validation, unique username, and IP logging
   app.post("/api/register", (req, res) => {
     try {
-      const { username, password } = req.body;
+      const { username, password, deviceUuid } = req.body;
       if (!username || typeof username !== "string") {
         return res.status(400).json({ error: "Lütfen geçerli bir isim girin. ⚠️" });
       }
@@ -946,6 +1069,7 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
         password: hashPassword(password),
         tokens: [sessionToken],
         ipAddress: clientIp,
+        deviceUuid: deviceUuid ? deviceUuid.trim() : "",
         data: {
           userName: cleanUsername,
           stats: {

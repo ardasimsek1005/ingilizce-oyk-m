@@ -1,4 +1,15 @@
 export const AVATAR_OPTIONS = [
+  '/avatars/avatar_1.webp',
+  '/avatars/avatar_2.webp',
+  '/avatars/avatar_3.webp',
+  '/avatars/avatar_4.webp',
+  '/avatars/avatar_5.webp',
+  '/avatars/avatar_6.webp',
+  '/avatars/avatar_7.webp',
+  '/avatars/avatar_8.webp',
+  '/avatars/avatar_9.webp',
+  '/avatars/avatar_10.webp',
+
   // 1. Gözlüklü Kitap Kurdu Çocuk 🔦
   `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
     <defs>

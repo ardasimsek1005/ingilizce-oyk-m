@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Capacitor } from '@capacitor/core';
+import { Device } from '@capacitor/device';
 import { App as CapacitorApp } from '@capacitor/app';
 import Header from './components/Header';
 import BottomNav from './components/BottomNav';
@@ -89,6 +91,9 @@ export default function App() {
   const lastBackPressRef = useRef<number>(0);
   const [userEmail, setUserEmail] = useState<string | null>(() => {
     return localStorage.getItem('linguist_user_email') || null;
+  });
+  const [deviceUuid, setDeviceUuid] = useState<string>(() => {
+    return localStorage.getItem('linguist_device_uuid') || '';
   });
   const [loginProvider, setLoginProvider] = useState<string | null>(() => {
     return localStorage.getItem('linguist_login_provider') || null;
@@ -317,6 +322,7 @@ export default function App() {
   });
 
   const [searchQuery, setSearchQuery] = useState<string>('');
+  const [refillCountdown, setRefillCountdown] = useState<string>('');
 
   // Dynamic reset effect: ensures all statistics of old visitors are strictly cleared and reset to 0
   useEffect(() => {
@@ -593,16 +599,60 @@ export default function App() {
     };
   }, []);
 
-  // Fetch Google Client ID Config on mount
+  // Initialize Device UUID and perform Auto-Login on startup
   useEffect(() => {
-    fetch(`${getApiBase()}/api/config`)
-      .then(res => res.json())
-      .then(cfg => {
-        if (cfg.googleClientId) {
-          setGoogleClientId(cfg.googleClientId);
+    const initDeviceAndAutoLogin = async () => {
+      let uuid = localStorage.getItem('linguist_device_uuid') || '';
+      
+      if (!uuid) {
+        if (Capacitor.isNativePlatform()) {
+          try {
+            const info = await Device.getId();
+            uuid = info.identifier;
+          } catch (e) {
+            console.error('Failed to get Native Device ID:', e);
+          }
         }
-      })
-      .catch(err => console.error('Failed to load client config:', err));
+        if (!uuid) {
+          uuid = 'web-' + Math.random().toString(36).substring(2, 15) + '-' + Math.random().toString(36).substring(2, 15);
+        }
+        localStorage.setItem('linguist_device_uuid', uuid);
+      }
+      
+      setDeviceUuid(uuid);
+
+      // Perform auto-login if the user is not logged in yet
+      const currentEmail = localStorage.getItem('linguist_user_email') || userEmail;
+      if (!currentEmail && uuid) {
+        console.log('Attempting device auto-login with UUID:', uuid);
+        setSyncStatus('syncing');
+        try {
+          const res = await fetch(`${getApiBase()}/api/auto-login`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ deviceUuid: uuid })
+          });
+          
+          if (res.ok) {
+            const result = await res.json();
+            if (result.success && result.token) {
+              console.log('Auto-login successful for user:', result.username);
+              handleGoogleLogin(result.email, result.username, result.data?.userAvatar || undefined, 'device', result.token);
+            }
+          } else {
+            console.warn('Auto-login endpoint returned error status:', res.status);
+            setSyncStatus('synced');
+          }
+        } catch (err) {
+          console.error('Error during auto-login:', err);
+          setSyncStatus('synced');
+        }
+      }
+    };
+
+    initDeviceAndAutoLogin();
   }, []);
 
   // Debounced cloud synchronization whenever user data changes and logged in
@@ -796,6 +846,34 @@ export default function App() {
     const interval = setInterval(checkPremiumExpiry, 60000); // check every minute
     return () => clearInterval(interval);
   }, [stats.isPremium, stats.premiumExpiryDate]);
+
+  // Heart refill countdown calculation (namespace-aware)
+  useEffect(() => {
+    const updateCountdown = () => {
+      if (stats.isPremium || stats.hearts === undefined || stats.hearts === null || Number(stats.hearts) >= 5) {
+        setRefillCountdown('');
+        return;
+      }
+      const ns = userEmail ? userEmail.toLowerCase().trim() : 'guest';
+      const now = Date.now();
+      let lastRefillStr = localStorage.getItem(`linguist_last_heart_refill_${ns}`);
+      if (!lastRefillStr && ns === 'guest') {
+        lastRefillStr = localStorage.getItem('linguist_last_heart_refill');
+      }
+      const lastRefill = Number(lastRefillStr || now);
+      const oneHour = 60 * 60 * 1000;
+      const elapsedTime = now - lastRefill;
+      const timeRemaining = Math.max(0, oneHour - elapsedTime);
+
+      const minutes = Math.floor(timeRemaining / 60000);
+      const seconds = Math.floor((timeRemaining % 60000) / 1000);
+      setRefillCountdown(`${minutes}:${seconds < 10 ? '0' : ''}${seconds}`);
+    };
+
+    updateCountdown();
+    const interval = setInterval(updateCountdown, 1000);
+    return () => clearInterval(interval);
+  }, [stats.hearts, stats.isPremium, userEmail]);
 
   // Helper to determine the current day index (0 = Monday, 6 = Sunday)
   const getTodayIndex = () => {
@@ -1567,6 +1645,7 @@ export default function App() {
                 onFinishBook={handleFinishBook}
                 onStartBook={handleStartBook}
                 userEmail={userEmail}
+                refillCountdown={refillCountdown}
               />
             ) : (
               <>
@@ -1624,6 +1703,7 @@ export default function App() {
                     syncTrigger={triggerCloudSync}
                     isDarkMode={isDarkMode}
                     onUnlockBadge={unlockBadge}
+                    refillCountdown={refillCountdown}
                   />
                 )}
 
@@ -1641,12 +1721,10 @@ export default function App() {
                     userAvatar={userAvatar}
                     onUpdateProfile={handleUpdateProfile}
                     userEmail={userEmail}
-                    googleClientId={googleClientId}
                     loginProvider={loginProvider}
-                    linkedProviders={linkedProviders}
-                    onGoogleLogin={handleGoogleLogin}
-                    onGoogleLogout={handleGoogleLogout}
-                    onUnlinkProvider={handleUnlinkProvider}
+                    onAuthSuccess={handleGoogleLogin}
+                    onLogout={handleGoogleLogout}
+                    deviceUuid={deviceUuid}
                   />
                 )}
               </>

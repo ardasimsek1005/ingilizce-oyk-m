@@ -1,9 +1,10 @@
 import React, { useState, useRef, useEffect, useMemo, memo, useCallback } from 'react';
-import { ArrowLeft, Volume2, Bookmark, BookmarkCheck, Share2, Info, Check, HelpCircle, ChevronRight, BookOpen, Sun, Moon, Heart, Star, X, Loader2, Lock, AlertCircle, RefreshCw, CheckCircle2 } from 'lucide-react';
+import { ArrowLeft, Volume2, Bookmark, BookmarkCheck, Share2, Info, Check, HelpCircle, ChevronRight, BookOpen, Sun, Moon, Heart, Star, X, Loader2, Lock, AlertCircle, RefreshCw, CheckCircle2, Zap } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Book, Paragraph, VocabularyWord } from '../types';
 import { OFFLINE_DICTIONARY } from '../dictionary';
 import { GLOBAL_DICTIONARY } from '../data';
+import { speakNative, getFemaleVoice } from '../services/tts';
 
 interface ReadingViewProps {
   book: Book;
@@ -23,6 +24,7 @@ interface ReadingViewProps {
   onFinishBook?: (bookId: string) => void;
   onStartBook?: (bookId: string) => void;
   userEmail?: string | null;
+  refillCountdown: string;
 }
 
 const isCommonEnglishWord = (w: string): boolean => {
@@ -45,7 +47,35 @@ const looksLikeProperNoun = (w: string): boolean => {
   if (!w) return false;
   const trimmed = w.trim();
   if (!/^[A-Z]/.test(trimmed)) return false;
-  return !isCommonEnglishWord(trimmed);
+
+  const clean = trimmed.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'’“”‘’\[\]{}<>|\\+]/g, "").trim();
+  const structuralWords = [
+    "the", "a", "an", "and", "but", "or", "if", "because", "although", "while", "though",
+    "every", "each", "some", "any", "no", "all", "both", "either", "neither",
+    "once", "then", "there", "here", "now", "today", "yesterday", "tomorrow",
+    "they", "them", "their", "theirs", "he", "him", "his", "she", "her", "hers", "it", "its",
+    "we", "us", "our", "ours", "you", "your", "yours", "i", "me", "my", "mine",
+    "always", "never", "sometimes", "usually", "often", "rarely", "seldom",
+    "is", "am", "are", "was", "were", "be", "been", "being", "have", "has", "had", "do", "does", "did"
+  ];
+
+  if (structuralWords.includes(clean)) return false;
+
+  const offlineEntry = OFFLINE_DICTIONARY[clean];
+  const globalEntry = (GLOBAL_DICTIONARY as any)[clean];
+  const tr = offlineEntry ? offlineEntry.tr : (globalEntry || "");
+
+  // If translation is equal to the word itself, it's a Proper Noun (like "Tom", "Pierre")
+  if (tr && tr.toLowerCase().trim() === clean) {
+    return true;
+  }
+
+  // If it doesn't exist in the dictionary, it's a Proper Noun (uncommon/capitalized name)
+  if (!offlineEntry && !globalEntry) {
+    return true;
+  }
+
+  return false;
 };
 
 interface TextToken {
@@ -203,6 +233,7 @@ interface ParagraphBlockProps {
   clickedWordIdx: number;
   clickedWordTr: string;
   activeSentenceIdx: number;
+  activeSpokenWordIdx: number;
   handleSentenceClick: (e: React.MouseEvent, paragraphId: string, sentenceIdx: number, textEn: string, textTr: string) => void;
   handleWordClick: (e: React.MouseEvent, rawWord: string, tr: string, paragraphId: string, wordIdx: number, sentenceIdx: number, sentEn: string, sentTr: string) => void;
   wordClickTimeoutRef: React.MutableRefObject<any>;
@@ -217,6 +248,7 @@ const ParagraphBlock = memo(function ParagraphBlock({
   clickedWordIdx,
   clickedWordTr,
   activeSentenceIdx,
+  activeSpokenWordIdx,
   handleSentenceClick,
   handleWordClick,
   wordClickTimeoutRef,
@@ -228,9 +260,20 @@ const ParagraphBlock = memo(function ParagraphBlock({
   const sentencesTr = useMemo(() => splitSentencesSafe(p.textTr), [p.textTr]);
   const tokensEn = useMemo(() => parseParagraphText(p.textEn), [p.textEn]);
 
+  const longPressTimeoutRef = useRef<any>(null);
+  const isLongPressActive = useRef<boolean>(false);
+
+  useEffect(() => {
+    return () => {
+      if (longPressTimeoutRef.current) {
+        clearTimeout(longPressTimeoutRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div
-      className="p-4 -mx-1.5 rounded-2xl border border-transparent select-text cursor-default relative font-body-reading"
+      className="py-2 px-4 -mx-1.5 rounded-2xl border border-transparent select-text cursor-default relative font-body-reading"
     >
       {/* Fluid paragraph content, keeping all user formatting, newlines and spaces exactly! */}
       <p className="w-full block text-left leading-relaxed text-[18px] whitespace-pre-wrap">
@@ -250,10 +293,59 @@ const ParagraphBlock = memo(function ParagraphBlock({
                   : p.textTr);
             const isSentenceActive = activeSentenceIdx === sIdx;
 
+            const startLongPress = (e: React.MouseEvent | React.TouchEvent) => {
+              isLongPressActive.current = false;
+              if (longPressTimeoutRef.current) {
+                clearTimeout(longPressTimeoutRef.current);
+              }
+              longPressTimeoutRef.current = setTimeout(() => {
+                isLongPressActive.current = true;
+                if (wordClickTimeoutRef.current) {
+                  clearTimeout(wordClickTimeoutRef.current);
+                  wordClickTimeoutRef.current = null;
+                }
+                setActiveSentenceTr({
+                  paragraphId: p.id,
+                  sentenceIdx: sIdx,
+                  textEn: sentEn,
+                  textTr: sentTr
+                });
+                setClickedWord(null);
+                setSelectedDictWord(null);
+                if ('vibrate' in navigator) {
+                  try {
+                    navigator.vibrate(40);
+                  } catch (err) {}
+                }
+              }, 1000);
+            };
+
+            const cancelLongPress = () => {
+              if (longPressTimeoutRef.current) {
+                clearTimeout(longPressTimeoutRef.current);
+                longPressTimeoutRef.current = null;
+              }
+            };
+
             return (
               <span
                 key={tokIdx}
-                onClick={(e) => handleSentenceClick(e, p.id, sIdx, sentEn, sentTr)}
+                onMouseDown={startLongPress}
+                onMouseUp={cancelLongPress}
+                onMouseLeave={cancelLongPress}
+                onMouseMove={cancelLongPress}
+                onTouchStart={startLongPress}
+                onTouchEnd={cancelLongPress}
+                onTouchMove={cancelLongPress}
+                onClick={(e) => {
+                  if (isLongPressActive.current) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    isLongPressActive.current = false;
+                    return;
+                  }
+                  handleSentenceClick(e, p.id, sIdx, sentEn, sentTr);
+                }}
                 onDoubleClick={(e) => {
                   e.stopPropagation();
                   if (wordClickTimeoutRef.current) {
@@ -269,11 +361,11 @@ const ParagraphBlock = memo(function ParagraphBlock({
                   setClickedWord(null);
                   setSelectedDictWord(null);
                 }}
-                className={`inline p-0.5 rounded-lg cursor-help ${
+                className={`inline rounded-sm cursor-help ${
                   isSentenceActive
                     ? isDarkMode
-                      ? 'relative bg-[#4ECDC4]/25 ring-2 ring-[#4ECDC4]/30 text-white font-semibold z-30'
-                      : 'relative bg-[#FFE66D]/40 ring-2 ring-[#FFE66D]/80 shadow-3xs text-gray-900 font-semibold z-30'
+                      ? 'relative bg-[#4ECDC4]/25 text-white z-30'
+                      : 'relative bg-[#FFE66D]/45 text-gray-900 z-30'
                     : isDarkMode
                       ? 'hover:bg-white/5'
                       : 'hover:bg-[#FFE66D]/15'
@@ -288,40 +380,36 @@ const ParagraphBlock = memo(function ParagraphBlock({
                   const rawWord = part;
                   const cleanW = cleanWord(rawWord);
                   const customMatch = p.words?.find((w: any) => cleanWord(w.en).toLowerCase() === cleanW.toLowerCase());
-                  
                   const uniqueWordIdx = sIdx * 1000 + partIdx;
                   const isWordClicked = clickedWordIdx === uniqueWordIdx;
+                  const isWordSpoken = activeSpokenWordIdx === uniqueWordIdx;
 
                   return (
                     <span
                       key={partIdx}
                       onClick={(e) => {
                         e.stopPropagation();
+                        if (isLongPressActive.current) {
+                          isLongPressActive.current = false;
+                          return;
+                        }
                         if (customMatch) {
                           handleWordClick(e, rawWord, customMatch.tr, p.id, uniqueWordIdx, sIdx, sentEn, sentTr);
                         } else {
                           handleWordClick(e, rawWord, 'Sözlük karşılığı yükleniyor...', p.id, uniqueWordIdx, sIdx, sentEn, sentTr);
                         }
                       }}
-                      className={`cursor-pointer inline ${
+                      className={`cursor-pointer inline transition-colors ${
                         isWordClicked
                           ? 'relative text-[#FF6B6B] bg-[#FFE66D]/30 rounded underline underline-offset-4 decoration-2 decoration-[#FF6B6B]'
-                          : isDarkMode
-                            ? 'hover:text-[#FF6B6B] text-white'
-                            : 'hover:text-[#FF6b6B]'
+                          : isWordSpoken
+                            ? 'bg-[#FF6B6B] text-white px-1.5 rounded font-extrabold relative z-40 shadow-xs'
+                            : isDarkMode
+                              ? 'hover:text-[#FF6B6B] text-white'
+                              : 'hover:text-[#FF6b6B]'
                       }`}
                     >
                       {rawWord}
-
-                      {/* INLINE TINY TR TRANSLATION POPUP */}
-                      {isWordClicked && (
-                        <span
-                          className="absolute bottom-full left-1/2 mb-2 px-2.5 py-1 bg-[#2D3436] text-white text-[11px] font-bold rounded-lg whitespace-nowrap z-35 shadow-md flex items-center gap-1.5 h-6 select-none tooltip-popup"
-                        >
-                          <span>{clickedWordTr}</span>
-                          <Check className="w-3 h-3 text-[#4ECDC4]" />
-                        </span>
-                      )}
                     </span>
                   );
                 })}
@@ -352,6 +440,7 @@ export default function ReadingView({
   onFinishBook,
   onStartBook,
   userEmail,
+  refillCountdown,
 }: ReadingViewProps) {
   // Navigation & interaction states
   const [activeChapterIdx, setActiveChapterIdx] = useState(0);
@@ -390,7 +479,7 @@ export default function ReadingView({
     currentChapter.paragraphs.forEach((p, idx) => {
       const wordsCount = p.textEn.split(/\s+/).filter(Boolean).length;
       
-      if (currentGroup.length > 0 && currentWordCount >= 120) {
+      if (currentGroup.length > 0 && currentWordCount >= 150) {
         list.push({
           paragraphIndices: currentGroup,
           wordCount: currentWordCount
@@ -460,6 +549,217 @@ export default function ReadingView({
       onBack();
     }
   };
+
+  // Audiobook states
+  const [isAudiobookPlaying, setIsAudiobookPlaying] = useState(false);
+  const [playingSentenceIdx, setPlayingSentenceIdx] = useState<number | null>(null);
+  const [activeSpokenWordIdx, setActiveSpokenWordIdx] = useState<number>(-1);
+  const [lastSpokenSentenceIdx, setLastSpokenSentenceIdx] = useState<number | null>(null);
+
+  // Track playing sentence index to remember the last spoken sentence index
+  useEffect(() => {
+    if (isAudiobookPlaying && playingSentenceIdx !== null) {
+      setLastSpokenSentenceIdx(playingSentenceIdx);
+    }
+  }, [isAudiobookPlaying, playingSentenceIdx]);
+
+  // Stop audiobook handler
+  const handleStopAudiobook = useCallback(() => {
+    setIsAudiobookPlaying(false);
+    setPlayingSentenceIdx(null);
+    setActiveSpokenWordIdx(-1);
+    setActiveSentenceTr(null);
+    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+    }
+  }, []);
+
+  // Compute sentences on current page
+  const pageSentences = useMemo(() => {
+    const list: { paragraphId: string; sentenceIdx: number; text: string }[] = [];
+    const currentPage = pages[currentPageIdx];
+    if (currentPage) {
+      currentPage.paragraphIndices.forEach(pIdx => {
+        const p = currentChapter.paragraphs[pIdx];
+        if (p) {
+          const sentences = splitSentencesSafe(p.textEn);
+          sentences.forEach((text, sIdx) => {
+            list.push({
+              paragraphId: p.id,
+              sentenceIdx: sIdx,
+              text
+            });
+          });
+        }
+      });
+    }
+    return list;
+  }, [currentPageIdx, pages, currentChapter]);
+
+  // Track the active audiobook sentence dynamically from the playingSentenceIdx
+  const currentAudiobookSentence = useMemo(() => {
+    if (isAudiobookPlaying && playingSentenceIdx !== null) {
+      return pageSentences[playingSentenceIdx] || null;
+    }
+    return null;
+  }, [isAudiobookPlaying, playingSentenceIdx, pageSentences]);
+
+  // Start audiobook handler
+  const handleStartAudiobook = () => {
+    if (pageSentences.length === 0) return;
+    
+    // Stop any standard speech playing
+    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+    }
+    
+    setActiveSentenceTr(null);
+    setClickedWord(null);
+    setSelectedDictWord(null);
+    setLastSpokenSentenceIdx(null); // Reset continuation on fresh start
+    setIsAudiobookPlaying(true);
+    setPlayingSentenceIdx(0);
+  };
+
+  // Continue audiobook from last spoken sentence
+  const handleContinueAudiobook = () => {
+    if (pageSentences.length === 0 || lastSpokenSentenceIdx === null) return;
+    
+    // Stop any standard speech playing
+    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+    }
+    
+    setActiveSentenceTr(null);
+    setClickedWord(null);
+    setSelectedDictWord(null);
+    setIsAudiobookPlaying(true);
+    setPlayingSentenceIdx(lastSpokenSentenceIdx);
+  };
+
+  // Stop audiobook when current page index changes
+  useEffect(() => {
+    handleStopAudiobook();
+    setLastSpokenSentenceIdx(null); // Reset continuation on page change
+  }, [currentPageIdx, handleStopAudiobook]);
+
+  // Clean up speech synthesis on unmount
+  useEffect(() => {
+    return () => {
+      if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
+    };
+  }, []);
+
+  // Stop audiobook on any global click, touch, or hold down when playing
+  useEffect(() => {
+    if (!isAudiobookPlaying) return;
+
+    let active = false;
+    const timer = setTimeout(() => {
+      active = true;
+    }, 150);
+
+    const handleGlobalClick = (e: MouseEvent | TouchEvent) => {
+      if (!active) return;
+      handleStopAudiobook();
+      e.stopPropagation();
+      e.preventDefault();
+    };
+
+    window.addEventListener('click', handleGlobalClick, true);
+    window.addEventListener('mousedown', handleGlobalClick, true);
+    window.addEventListener('touchstart', handleGlobalClick, true);
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener('click', handleGlobalClick, true);
+      window.removeEventListener('mousedown', handleGlobalClick, true);
+      window.removeEventListener('touchstart', handleGlobalClick, true);
+    };
+  }, [isAudiobookPlaying, handleStopAudiobook]);
+
+  // Audiobook narration loop
+  useEffect(() => {
+    if (!isAudiobookPlaying || playingSentenceIdx === null || playingSentenceIdx >= pageSentences.length) {
+      if (isAudiobookPlaying && playingSentenceIdx !== null && playingSentenceIdx >= pageSentences.length) {
+        handleStopAudiobook();
+      }
+      return;
+    }
+
+    const sentence = pageSentences[playingSentenceIdx];
+    if (!sentence) return;
+
+    // Clear word click highlights when sentence advances
+    setClickedWord(null);
+    setSelectedDictWord(null);
+
+    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+
+      const speakTimeout = setTimeout(() => {
+        const utterance = new SpeechSynthesisUtterance(sentence.text);
+        utterance.lang = 'en-US';
+        utterance.rate = 0.90; // Speeds up/slows down to exactly 0.90!
+
+        const voice = getFemaleVoice('en-US');
+        if (voice) {
+          utterance.voice = voice;
+        }
+
+        const parts = sentence.text.split(/(\s+)/).filter(Boolean);
+        let currentCharIndex = 0;
+        const wordRanges = parts.map((part, partIdx) => {
+          const start = currentCharIndex;
+          const end = currentCharIndex + part.length;
+          currentCharIndex = end;
+          const isWhitespace = /\s/.test(part);
+          return {
+            partIdx,
+            start,
+            end,
+            isWhitespace
+          };
+        });
+
+        utterance.onboundary = (event) => {
+          if (event.name === 'word') {
+            const charIndex = event.charIndex;
+            let activeRange = wordRanges.find(
+              r => !r.isWhitespace && charIndex >= r.start && charIndex < r.end
+            );
+            if (!activeRange) {
+              activeRange = wordRanges.find(
+                r => !r.isWhitespace && charIndex >= r.start && charIndex <= r.end
+              );
+            }
+            if (activeRange) {
+              setActiveSpokenWordIdx(sentence.sentenceIdx * 1000 + activeRange.partIdx);
+            }
+          }
+        };
+
+        utterance.onend = () => {
+          setPlayingSentenceIdx(prev => (prev !== null ? prev + 1 : null));
+        };
+
+        utterance.onerror = (e) => {
+          console.warn("Audiobook sentence synthesis error:", e);
+          setPlayingSentenceIdx(prev => (prev !== null ? prev + 1 : null));
+        };
+
+        window.speechSynthesis.speak(utterance);
+      }, 100);
+
+      return () => {
+        clearTimeout(speakTimeout);
+      };
+    } else {
+      handleStopAudiobook();
+    }
+  }, [isAudiobookPlaying, playingSentenceIdx, pageSentences, handleStopAudiobook]);
 
   const [activeQuizQuestions, setActiveQuizQuestions] = useState<any[] | null>(null);
   const [activeQuizQuestionIdx, setActiveQuizQuestionIdx] = useState(0);
@@ -531,29 +831,7 @@ export default function ReadingView({
     };
   }, [activeQuizQuestions, activeQuizQuestionIdx, isQuizAnswered]);
 
-  const [refillCountdown, setRefillCountdown] = useState<string>('');
 
-  useEffect(() => {
-    const updateCountdown = () => {
-      if (!stats || stats.isPremium || stats.hearts >= 5) {
-        setRefillCountdown('');
-        return;
-      }
-      const now = Date.now();
-      const lastRefill = Number(localStorage.getItem('linguist_last_heart_refill') || now);
-      const oneHour = 60 * 60 * 1000;
-      const elapsedTime = now - lastRefill;
-      const timeRemaining = Math.max(0, oneHour - elapsedTime);
-
-      const minutes = Math.floor(timeRemaining / 60000);
-      const seconds = Math.floor((timeRemaining % 60000) / 1000);
-      setRefillCountdown(`${minutes}:${seconds < 10 ? '0' : ''}${seconds}`);
-    };
-
-    updateCountdown();
-    const interval = setInterval(updateCountdown, 1000);
-    return () => clearInterval(interval);
-  }, [stats?.hearts, stats?.isPremium]);
 
   useEffect(() => {
     const handleGlobalClick = () => {
@@ -802,6 +1080,32 @@ export default function ReadingView({
     handleQuizNextDirect();
   };
 
+  const handleSkipQuiz = () => {
+    if (!stats?.isPremium) return;
+    
+    const targetIdx = activeQuizCpIndex !== null ? activeQuizCpIndex : currentPageIdx;
+    const nextMax = targetIdx + 1;
+    
+    setMaxUnlockedPageIdx(prev => {
+      const nextUnlocked = Math.max(prev, nextMax);
+      const ns = userEmail ? userEmail.toLowerCase().trim() : 'guest';
+      localStorage.setItem(`linguist_max_unlocked_page_${book.id}_${ns}`, String(nextUnlocked));
+      return nextUnlocked;
+    });
+    
+    setCurrentPageIdx(nextMax);
+    const ns = userEmail ? userEmail.toLowerCase().trim() : 'guest';
+    localStorage.setItem(`linguist_current_page_${book.id}_${ns}`, String(nextMax));
+    
+    setActiveQuizQuestions(null);
+    setActiveQuizCpIndex(null);
+    setActiveQuizQuestionIdx(0);
+    setShowQuizRoadblockModal(false);
+    
+    setToastMessage('Quizi premium ayrıcalığı ile geçtiniz! Keyifli okumalar. 🚀');
+    setTimeout(() => setToastMessage(null), 3000);
+  };
+
   // Handle word clicking
   const handleWordClick = useCallback((
     e: React.MouseEvent,
@@ -862,17 +1166,26 @@ export default function ReadingView({
             || !wordTr
             || wordTr.toLowerCase().trim() === cleanW.toLowerCase().trim();
 
+          const looksLikePropName = looksLikeProperNoun(cleanW);
+
           // Check if word is already translated in cache for maximum speed
           const cached = getCachedTranslation(cleanW);
-          const initialTr = cached ? cached.translation : (isPlaceholder ? 'Çeviriliyor...' : wordTr);
-          const initialNotes = cached ? cached.notes : (isPlaceholder ? 'Yapay zeka bağlamsal sözlük...' : undefined);
+          
+          let initialTr = cached ? cached.translation : (isPlaceholder ? 'Çeviriliyor...' : wordTr);
+          if (!cached && looksLikePropName) {
+            initialTr = `${cleanW} (Özel İsim)`;
+          }
+
+          let initialNotes = cached ? cached.notes : (isPlaceholder ? 'Yapay zeka bağlamsal sözlük...' : undefined);
+          if (!cached && looksLikePropName) {
+            initialNotes = 'Karakter veya Yer Adı • Özel İsim';
+          }
           
           // Determine initial level using our multi-tier cache
           let initialLevel = (book?.level || 'A1') + ' Seviyesi';
           if (cached && cached.level) {
             initialLevel = cached.level;
           } else {
-            const looksLikePropName = looksLikeProperNoun(cleanW);
             if (looksLikePropName) {
               initialLevel = 'Özel İsim';
             }
@@ -901,7 +1214,11 @@ export default function ReadingView({
 
           // If not already cached locally, fetch it dynamically from server-side AI and cache it
           if (!cached) {
-            // Try offline suffix stripping first (plurals, past tense, -ing, -er, -est, -ly)
+            if (looksLikePropName) {
+              // Proper nouns are resolved locally, no need to request AI translation
+              saveCachedTranslation(cleanW, `${cleanW} (Özel İsim)`, 'Karakter veya Yer Adı • Özel İsim', 'Özel İsim');
+            } else {
+              // Try offline suffix stripping first (plurals, past tense, -ing, -er, -est, -ly)
             const tryOfflineSuffixes = (w: string): string | null => {
               const stems = [
                 w.endsWith('s') && w.length > 3 ? w.slice(0, -1) : null,
@@ -993,6 +1310,7 @@ export default function ReadingView({
               });
             }
           }
+        }
         } catch (innerErr) {
           console.error("Internal word click timer process error:", innerErr);
         }
@@ -1042,160 +1360,21 @@ export default function ReadingView({
     lastTapRef.current = { time: now, sentenceKey: currentKey };
   }, []);
 
-  // Speaks text aloud using premium Google TTS engine via fetch (to bypass origin block) with fallback to native SpeechSynthesis
+  // Speaks text aloud using native SpeechSynthesis service (fast, female, offline)
   const speakTextAloud = (text: string, lang: 'en-US' | 'tr-TR') => {
-    try {
-      const cleanT = text.trim();
-      if (!cleanT) return;
-
-      if (lang === 'en-US') {
-        setSpeechSuccess(true);
-        // Normalize word: remove punctuation and whitespace
-        const lookupWord = cleanT.toLowerCase().replace(/[.,/#!$%^&*;:{}=\-_`~()?]/g, "").trim();
-
-        // 1. Try Dictionary API
-        fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(lookupWord)}`)
-          .then(response => {
-            if (!response.ok) {
-              throw new Error(`Dictionary API returned ${response.status}`);
-            }
-            return response.json();
-          })
-          .then(data => {
-            let audioUrl = "";
-            if (Array.isArray(data)) {
-              for (const entry of data) {
-                if (entry.phonetics && Array.isArray(entry.phonetics)) {
-                  for (const phonetic of entry.phonetics) {
-                    if (phonetic.audio) {
-                      audioUrl = phonetic.audio;
-                      break;
-                    }
-                  }
-                }
-                if (audioUrl) break;
-              }
-            }
-
-            if (!audioUrl) {
-              throw new Error("No phonetic audio found in Dictionary API response");
-            }
-
-            // Ensure URL has protocol if it starts with //
-            if (audioUrl.startsWith("//")) {
-              audioUrl = "https:" + audioUrl;
-            }
-
-            const audio = new Audio(audioUrl);
-            audio.onended = () => setSpeechSuccess(false);
-            audio.onerror = () => {
-              console.warn("Dictionary API audio playback failed, falling back to Youdao TTS");
-              playYoudaoTts(cleanT);
-            };
-            audio.play().catch(playErr => {
-              console.warn("Dictionary API audio play failed, falling back to Youdao TTS:", playErr);
-              playYoudaoTts(cleanT);
-            });
-          })
-          .catch(err => {
-            console.warn("Dictionary API lookup failed, falling back to Youdao TTS:", err.message || err);
-            playYoudaoTts(cleanT);
-          });
-      } else {
-        // Turkish translation speech fallback
-        const langCode = lang.split('-')[0];
-        const googleTtsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=${langCode}&client=tw-ob&q=${encodeURIComponent(cleanT)}`;
-
-        fetch(googleTtsUrl, { referrerPolicy: 'no-referrer' })
-          .then(response => {
-            if (!response.ok) {
-              throw new Error(`Google TTS request failed: ${response.status}`);
-            }
-            return response.blob();
-          })
-          .then(blob => {
-            const blobUrl = URL.createObjectURL(blob);
-            const audio = new Audio(blobUrl);
-            audio.onended = () => URL.revokeObjectURL(blobUrl);
-            audio.onerror = () => {
-              URL.revokeObjectURL(blobUrl);
-              speakTextAloudNative(cleanT, lang);
-            };
-            audio.play().catch(playErr => {
-              console.warn("Blob audio play failed, trying native speech synthesis:", playErr);
-              speakTextAloudNative(cleanT, lang);
-            });
-          })
-          .catch(fetchErr => {
-            console.warn("Failed to fetch Google TTS blob, trying native fallback:", fetchErr);
-            speakTextAloudNative(cleanT, lang);
-          });
+    if (lang === 'en-US') {
+      setSpeechSuccess(true);
+    }
+    speakNative(
+      text,
+      lang,
+      () => {
+        if (lang === 'en-US') setSpeechSuccess(true);
+      },
+      () => {
+        if (lang === 'en-US') setSpeechSuccess(false);
       }
-    } catch (err) {
-      console.error("Speech playback error, trying native fallback:", err);
-      speakTextAloudNative(text, lang);
-    }
-  };
-
-  // Helper function to play Youdao TTS
-  const playYoudaoTts = (word: string) => {
-    try {
-      const youdaoUrl = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(word)}&type=2`;
-      const audio = new Audio(youdaoUrl);
-      audio.onended = () => setSpeechSuccess(false);
-      audio.onerror = () => {
-        console.warn("Youdao TTS playback failed, falling back to native SpeechSynthesis");
-        speakTextAloudNative(word, 'en-US');
-      };
-      audio.play().catch(playErr => {
-        console.warn("Youdao TTS play failed, falling back to native SpeechSynthesis:", playErr);
-        speakTextAloudNative(word, 'en-US');
-      });
-    } catch (err) {
-      console.warn("Youdao TTS failed, falling back to native SpeechSynthesis:", err);
-      speakTextAloudNative(word, 'en-US');
-    }
-  };
-
-  // Fallback native speech synthesis helper
-  const speakTextAloudNative = (text: string, lang: 'en-US' | 'tr-TR') => {
-    try {
-      const cleanT = text.trim();
-      if (!cleanT) return;
-
-      if ('speechSynthesis' in window) {
-        window.speechSynthesis.cancel();
-        
-        const utterance = new SpeechSynthesisUtterance(cleanT);
-        utterance.lang = lang;
-        utterance.rate = lang === 'en-US' ? 0.8 : 0.95;
-        
-        const voices = window.speechSynthesis.getVoices();
-        const langVoices = voices.filter(v => v.lang.startsWith(lang.split('-')[0]));
-        if (langVoices.length > 0) {
-          const preferredVoice = langVoices.find(v => 
-            v.name.includes('Google') || 
-            v.name.includes('Natural') || 
-            v.name.includes('Online')
-          ) || langVoices[0];
-          utterance.voice = preferredVoice;
-        }
-
-        if (lang === 'en-US') {
-          setSpeechSuccess(true);
-          utterance.onend = () => setSpeechSuccess(false);
-          utterance.onerror = () => setSpeechSuccess(false);
-        }
-        
-        window.speechSynthesis.speak(utterance);
-      } else {
-        console.warn("speechSynthesis is not supported in this browser/WebView.");
-        setSpeechSuccess(false);
-      }
-    } catch (err) {
-      console.error("Native speech playback fallback error:", err);
-      setSpeechSuccess(false);
-    }
+    );
   };
 
   const speakWordAloud = (text: string) => {
@@ -1310,26 +1489,26 @@ export default function ReadingView({
         }`}
         style={{ paddingTop: 'env(safe-area-inset-top, 0px)' }}
       >
-        <div className="max-w-[680px] mx-auto px-5 h-14 flex items-center justify-between">
-          <div className="flex items-center gap-3">
+        <div className="max-w-[680px] mx-auto px-5 min-h-[3.5rem] flex items-center justify-between py-2 gap-3">
+          <div className="flex items-center gap-3 flex-1 min-w-0">
             <button
               onClick={handleGoBack}
-              className={`p-1 px-2.5 -ml-2 rounded-xl transition-all flex items-center gap-1.5 text-sm font-bold cursor-pointer ${
+              className={`p-1 px-2.5 -ml-2 rounded-xl transition-all flex items-center gap-1.5 text-sm font-bold cursor-pointer shrink-0 ${
                 isDarkMode ? 'hover:bg-white/5 text-gray-300' : 'hover:bg-[#FFFBF0] text-gray-700'
               }`}
             >
               <ArrowLeft className="w-4 h-4 text-[#FF6B6B]" />
               <span>Geri</span>
             </button>
-            <div className={`w-[1px] h-4 ${isDarkMode ? 'bg-gray-700' : 'bg-[#FFE66D]'}`} />
-            <span className={`text-sm font-bold line-clamp-1 truncate tracking-wider font-headline-lg max-w-[180px] sm:max-w-[240px] transition-colors ${
+            <div className={`w-[1px] h-4 shrink-0 ${isDarkMode ? 'bg-gray-700' : 'bg-[#FFE66D]'}`} />
+            <h1 className={`text-sm font-bold line-clamp-2 tracking-wider font-headline-lg transition-colors flex-1 leading-snug block overflow-hidden ${
               isDarkMode ? 'text-white' : 'text-[#2D3436]'
             }`}>
               {book.title}
-            </span>
+            </h1>
           </div>
 
-          <div className="flex items-center gap-2.5">
+          <div className="flex items-center gap-2.5 shrink-0">
             {/* Favorite Toggle Button */}
             {onToggleFavorite && (
               <button
@@ -1365,24 +1544,30 @@ export default function ReadingView({
         </div>
 
         {/* Cohesive Sub-row for Lives indicator and level badge (User Focus) */}
-        <div className="max-w-[680px] mx-auto px-5 pb-2.5 flex items-center justify-center gap-3">
-          {/* Lives Indicator */}
-          <div className="flex items-center gap-1.5 px-2.5 py-1 bg-[#FF6B6B]/10 border border-[#FF6B6B]/20 rounded-full font-bold" title="Can Bilgisi">
-            <Heart className={`w-3.5 h-3.5 text-[#FF6B6B] ${stats?.isPremium ? 'fill-[#FF6B6B] animate-pulse' : 'fill-[#FF6B6B]'}`} />
-            <span className="text-[11px] text-[#FF6B6B] font-mono leading-none">
-              {stats?.isPremium ? '∞' : (stats?.hearts ?? 5)}
-            </span>
-            {!stats?.isPremium && (stats?.hearts ?? 5) < 5 && refillCountdown && (
-              <span className="text-[9px] text-gray-500 font-normal leading-none ml-0.5">
-                ({refillCountdown})
+        <div className="max-w-[680px] mx-auto px-5 pt-1.5 pb-4 flex flex-col items-center gap-2.5">
+          <div className="flex items-center justify-center gap-3">
+            {/* Lives Indicator */}
+            <div className="flex items-center gap-2 px-4 py-1.5 bg-[#FF6B6B]/10 border border-[#FF6B6B]/25 rounded-full font-bold" title="Can Bilgisi">
+              <Heart className={`w-4.5 h-4.5 text-[#FF6B6B] ${stats?.isPremium ? 'fill-[#FF6B6B] animate-pulse' : 'fill-[#FF6B6B]'}`} />
+              <span className="text-[13px] text-[#FF6B6B] font-mono leading-none">
+                {stats?.isPremium ? '∞' : (stats?.hearts ?? 5)}
               </span>
-            )}
+            </div>
+
+            {/* Book Level Badge */}
+            <span className="text-xs bg-[#4ECDC4]/10 text-[#4ECDC4] font-bold border border-[#4ECDC4]/30 rounded-full px-4 py-1">
+              {book.level}
+            </span>
           </div>
 
-          {/* Book Level Badge */}
-          <span className="text-[10px] bg-[#4ECDC4]/10 text-[#4ECDC4] font-bold border border-[#4ECDC4]/30 rounded-full px-2.5 py-0.5">
-            {book.level}
-          </span>
+          {/* Centered Aesthetic Countdown Timer */}
+          {!stats?.isPremium && stats?.hearts !== undefined && stats?.hearts !== null && Number(stats.hearts) < 5 && refillCountdown && (
+            <div className="flex items-center gap-1.5 text-[11px] bg-[#FF6B6B]/10 border border-[#FF6B6B]/20 text-[#FF6B6B] px-3.5 py-1 rounded-full font-bold tracking-wide shadow-3xs transition-all">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#FF6B6B] animate-pulse" />
+              <span>Yeni Can:</span>
+              <span className="font-mono font-extrabold">{refillCountdown}</span>
+            </div>
+          )}
         </div>
       </header>
 
@@ -1408,8 +1593,64 @@ export default function ReadingView({
         }`}>
           <Info className="w-4.5 h-4.5 text-[#FF6B6B] shrink-0 mt-0.5" />
           <p>
-            <b>İpucu:</b> Kelimenin Türkçe anlamı için üzerine <span className="font-bold">tek tıklayın</span>. Cümlenin Türkçe çevirisi için cümleye <span className="font-semibold">çift tıklayın</span> (paragrafı değil, sadece tıkladığınız cümleyi noktaya kadar açıklar).
+            <b>İpucu:</b> Kelimenin Türkçe anlamı için üzerine <span className="font-bold">tek tıklayın</span>. Cümlenin Türkçe çevirisi için cümleye <span className="font-semibold">çift tıklayın</span> veya kelimeye <span className="font-semibold">1 saniye basılı tutun</span> (sadece ilgili cümleyi açıklar).
           </p>
+        </div>
+
+        {/* Audiobook Control Bar */}
+        <div className={`p-4 rounded-2xl mb-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 border-2 transition-all select-none ${
+          isDarkMode 
+            ? 'bg-[#1A1A1E] border-[#2A2A30] text-white shadow-md' 
+            : 'bg-white border-[#FFE66D] text-[#2D3436] shadow-sm shadow-[#FFE66D]/10'
+        }`}>
+          <div className="flex items-center gap-2.5">
+            <div className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 transition-colors ${
+              isAudiobookPlaying ? 'bg-emerald-500/10 text-emerald-500 border border-emerald-500/30' : 'bg-[#FF6B6B]/10 text-[#FF6B6B] border border-[#FF6B6B]/20'
+            }`}>
+              {isAudiobookPlaying ? (
+                <Volume2 className="w-5 h-5 animate-pulse text-emerald-500" />
+              ) : (
+                <BookOpen className="w-5 h-5 text-[#FF6B6B]" />
+              )}
+            </div>
+            <div>
+              <h4 className="text-xs font-bold font-headline-lg leading-tight">Sesli Kitap (Audiobook)</h4>
+              <p className="text-[10px] text-gray-400 font-semibold leading-normal mt-0.5">
+                {isAudiobookPlaying ? 'Sayfa sesli olarak okunuyor...' : 'Bu sayfanın tamamını seslendirin.'}
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-2 w-full sm:w-auto">
+            {isAudiobookPlaying ? (
+              <button
+                onClick={handleStopAudiobook}
+                className="w-full sm:w-auto px-4 py-2.5 bg-[#FF6B6B] hover:bg-[#e05a5a] text-white rounded-xl text-xs font-bold transition-all transform active:scale-95 cursor-pointer shadow-md shadow-[#FF6B6B]/20 font-headline-lg flex items-center justify-center gap-1.5"
+              >
+                <X className="w-4 h-4" />
+                <span>Durdur</span>
+              </button>
+            ) : (
+              <>
+                <button
+                  onClick={handleStartAudiobook}
+                  className="w-full sm:w-auto px-4 py-2.5 bg-[#4ECDC4] hover:bg-[#3db8af] text-white rounded-xl text-xs font-bold transition-all transform active:scale-95 cursor-pointer shadow-md shadow-[#4ECDC4]/20 font-headline-lg flex items-center justify-center gap-1.5"
+                >
+                  <Volume2 className="w-4.5 h-4.5 shrink-0" />
+                  <span className="leading-tight text-center">Bütün Sayfayı Dinle</span>
+                </button>
+                {lastSpokenSentenceIdx !== null && (
+                  <button
+                    onClick={handleContinueAudiobook}
+                    className="w-full sm:w-auto px-4 py-2.5 bg-[#FFE66D] hover:bg-[#ebd152] text-gray-900 rounded-xl text-xs font-bold transition-all transform active:scale-95 cursor-pointer shadow-md shadow-[#FFE66D]/20 font-headline-lg flex items-center justify-center gap-1.5"
+                  >
+                    <Zap className="w-4 h-4 text-gray-900 animate-pulse shrink-0" />
+                    <span className="leading-tight text-center">Kaldığın Yerden Devam Et</span>
+                  </button>
+                )}
+              </>
+            )}
+          </div>
         </div>
 
         {/* Chapter Title */}
@@ -1433,7 +1674,7 @@ export default function ReadingView({
               const renderedParagraphs = currentPage.paragraphIndices.map(pIdx => currentChapter.paragraphs[pIdx]);
 
               return (
-                <div className="space-y-6 font-body-reading">
+                <div className="space-y-2 font-body-reading">
                   {currentPageIdx === 0 && !book.isStarted && (
                     <div className={`p-5 rounded-3xl border-2 border-dashed flex flex-col items-center text-center gap-3.5 mb-6 transition-all duration-300 ${
                       isDarkMode 
@@ -1476,7 +1717,20 @@ export default function ReadingView({
                       isDarkMode={!!isDarkMode}
                       clickedWordIdx={clickedWord?.paragraphId === p.id ? clickedWord.wordIdx : -1}
                       clickedWordTr={clickedWord?.paragraphId === p.id ? clickedWord.tr : ''}
-                      activeSentenceIdx={activeSentenceTr?.paragraphId === p.id ? activeSentenceTr.sentenceIdx : -1}
+                      activeSentenceIdx={
+                        activeSentenceTr?.paragraphId === p.id 
+                          ? activeSentenceTr.sentenceIdx 
+                          : (currentAudiobookSentence?.paragraphId === p.id 
+                              ? currentAudiobookSentence.sentenceIdx 
+                              : -1)
+                      }
+                      activeSpokenWordIdx={
+                        activeSentenceTr?.paragraphId === p.id
+                          ? activeSpokenWordIdx
+                          : (currentAudiobookSentence?.paragraphId === p.id
+                              ? activeSpokenWordIdx
+                              : -1)
+                      }
                       handleSentenceClick={handleSentenceClick}
                       handleWordClick={handleWordClick}
                       wordClickTimeoutRef={wordClickTimeoutRef}
@@ -1660,7 +1914,16 @@ export default function ReadingView({
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 100 }}
-            onClick={(e) => e.stopPropagation()}
+            onClick={(e) => {
+              const target = e.target as HTMLElement;
+              const isInteractive = target.closest('button') || target.closest('a') || target.closest('input') || target.closest('select');
+              if (!isInteractive) {
+                setSelectedDictWord(null);
+                setClickedWord(null);
+              } else {
+                e.stopPropagation();
+              }
+            }}
             className={`fixed bottom-[110px] left-1/2 -translate-x-1/2 w-[90%] max-w-[640px] border-2 rounded-[24px] p-5 z-45 flex flex-col gap-4 select-none shadow-xl transition-colors ${
               isDarkMode 
                 ? 'bg-[#1A1A1E] border-[#2A2A30] text-[#E6E6E6]' 
@@ -1917,6 +2180,16 @@ export default function ReadingView({
                     <span>Sonraki Sayfa (Quizi Çöz)</span>
                     <ChevronRight className="w-4 h-4" />
                   </button>
+
+                  {stats?.isPremium && (
+                    <button
+                      onClick={handleSkipQuiz}
+                      className="w-full mt-3 py-3 bg-[#4ECDC4] text-white rounded-xl text-sm font-bold hover:bg-[#3db8af] transition-all flex items-center justify-center gap-2 cursor-pointer shadow-md shadow-[#4ECDC4]/20"
+                    >
+                      <span>Quizi Atla (Premium)</span>
+                      <ChevronRight className="w-4 h-4" />
+                    </button>
+                  )}
                 </div>
               ) : (
                 /* ACTIVE INTERACTIVE QUIZ CARD */
@@ -2065,6 +2338,16 @@ export default function ReadingView({
                         </button>
                       )}
                     </div>
+                  )}
+
+                  {stats?.isPremium && (
+                    <button
+                      onClick={handleSkipQuiz}
+                      className="w-full mt-4 py-2.5 bg-gray-500/10 border border-gray-500/20 hover:bg-gray-500/20 text-[#4ECDC4] rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 cursor-pointer"
+                    >
+                      <span>Quizi Atla (Premium)</span>
+                      <ChevronRight className="w-3.5 h-3.5" />
+                    </button>
                   )}
                 </div>
               )}
