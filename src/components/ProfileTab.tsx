@@ -405,9 +405,8 @@ export default function ProfileTab({
     }, 1500);
   };
 
-  // Google Sign-In GSI button mounting
   React.useEffect(() => {
-    if (googleClientId && !userEmail && (window as any).google) {
+    if (!Capacitor.isNativePlatform() && googleClientId && !userEmail && (window as any).google) {
       try {
         (window as any).google.accounts.id.initialize({
           client_id: googleClientId,
@@ -908,7 +907,9 @@ export default function ProfileTab({
                   Hesabınızı Bağlayın veya Giriş Yapın
                 </span>
 
-                <div id="google-signin-btn" className="w-full flex justify-center overflow-hidden rounded-2xl"></div>
+                {!Capacitor.isNativePlatform() && (
+                  <div id="google-signin-btn" className="w-full flex justify-center overflow-hidden rounded-2xl"></div>
+                )}
                 
                 {/* 1. Google Button */}
                 <button

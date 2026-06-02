@@ -71,7 +71,9 @@ const stripBooksForSync = (booksList: Book[]) => {
 };
 
 export default function App() {
-  const [currentTab, setCurrentTab] = useState<string>('library'); // 'library' | 'vocabulary' | 'profile' | 'quiz'
+  const [currentTab, setCurrentTab] = useState<string>(() => {
+    return localStorage.getItem('linguist_current_tab') || 'library';
+  }); // 'library' | 'vocabulary' | 'profile' | 'quiz'
   const [quizMode, setQuizMode] = useState<'saved' | 'random'>('saved');
   const [showPaywallInQuiz, setShowPaywallInQuiz] = useState<boolean>(false);
   const [activeReadingBook, setActiveReadingBook] = useState<Book | null>(null);
@@ -537,6 +539,7 @@ export default function App() {
 
   useEffect(() => {
     currentTabRef.current = currentTab;
+    localStorage.setItem('linguist_current_tab', currentTab);
   }, [currentTab]);
 
   useEffect(() => {
@@ -1008,14 +1011,18 @@ export default function App() {
               setUserAvatar(cloud.userAvatar);
               localStorage.setItem(`linguist_user_avatar_${finalEmail}`, cloud.userAvatar);
             }
-            if (cloud.loginProvider) {
-              setLoginProvider(cloud.loginProvider);
-              localStorage.setItem('linguist_login_provider', cloud.loginProvider);
+            const activeProvider = provider || localStorage.getItem('linguist_login_provider') || cloud.loginProvider;
+            if (activeProvider) {
+              setLoginProvider(activeProvider);
+              localStorage.setItem('linguist_login_provider', activeProvider);
             }
-            if (cloud.linkedProviders) {
-              setLinkedProviders(cloud.linkedProviders);
-              localStorage.setItem('linguist_linked_providers', JSON.stringify(cloud.linkedProviders));
+            let mergedLinked = [activeProvider];
+            if (cloud.linkedProviders && Array.isArray(cloud.linkedProviders)) {
+              const unique = new Set([activeProvider, ...cloud.linkedProviders]);
+              mergedLinked = Array.from(unique);
             }
+            setLinkedProviders(mergedLinked);
+            localStorage.setItem('linguist_linked_providers', JSON.stringify(mergedLinked));
           } else {
             // Sync current local state to cloud immediately since it is a new account
             const payload = {
