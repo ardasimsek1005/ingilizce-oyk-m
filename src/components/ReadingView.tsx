@@ -895,8 +895,9 @@ export default function ReadingView({
           // Close any active sentence overlay
           setActiveSentenceTr(null);
 
-          // Audio/Speech synthesizer auto trigger or ready
+          // Audio/Speech synthesizer auto trigger and play the pronunciation on single click
           setSpeechSuccess(false);
+          speakWordAloud(cleanW);
 
           // If not already cached locally, fetch it dynamically from server-side AI and cache it
           if (!cached) {
@@ -1041,17 +1042,22 @@ export default function ReadingView({
     lastTapRef.current = { time: now, sentenceKey: currentKey };
   }, []);
 
-  // Speaks text aloud using premium Google TTS engine, with a fallback to native SpeechSynthesis
+  // Speaks text aloud using premium Google / Youdao TTS engine, with a fallback to native SpeechSynthesis
   const speakTextAloud = (text: string, lang: 'en-US' | 'tr-TR') => {
     try {
       const cleanT = text.trim();
       if (!cleanT) return;
 
-      // Use Google TTS as the primary premium option (highly reliable across WebViews & mobile)
-      const langCode = lang.split('-')[0];
-      const googleTtsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=${langCode}&client=tw-ob&q=${encodeURIComponent(cleanT)}`;
+      let ttsUrl = '';
+      if (lang === 'en-US') {
+        // Use Youdao English TTS (extremely reliable on mobile WebViews, ignores referrer blocks)
+        ttsUrl = `https://dict.youdao.com/dictvoice?type=0&audio=${encodeURIComponent(cleanT)}`;
+      } else {
+        // Use Google TTS for Turkish
+        ttsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=tr&client=tw-ob&q=${encodeURIComponent(cleanT)}`;
+      }
       
-      const audio = new Audio(googleTtsUrl);
+      const audio = new Audio(ttsUrl);
       if (lang === 'en-US') {
         setSpeechSuccess(true);
         audio.onended = () => setSpeechSuccess(false);
@@ -1062,11 +1068,11 @@ export default function ReadingView({
       }
       
       audio.play().catch(playErr => {
-        console.warn("Google TTS audio.play() failed, trying native speech synthesis:", playErr);
+        console.warn("TTS audio.play() failed, trying native speech synthesis:", playErr);
         speakTextAloudNative(cleanT, lang);
       });
     } catch (err) {
-      console.error("Premium speech playback error, trying native fallback:", err);
+      console.error("Speech playback error, trying native fallback:", err);
       speakTextAloudNative(text, lang);
     }
   };
