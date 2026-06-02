@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { App as CapacitorApp } from '@capacitor/app';
 import Header from './components/Header';
 import BottomNav from './components/BottomNav';
 import LibraryTab from './components/LibraryTab';
@@ -66,6 +67,8 @@ export default function App() {
   const [activeReadingBook, setActiveReadingBook] = useState<Book | null>(null);
   const [googleClientId, setGoogleClientId] = useState<string>('');
   const [showSplash, setShowSplash] = useState<boolean>(true);
+  const [showExitConfirm, setShowExitConfirm] = useState<boolean>(false);
+  const lastBackPressRef = useRef<number>(0);
   const [userEmail, setUserEmail] = useState<string | null>(() => {
     return localStorage.getItem('linguist_user_email') || null;
   });
@@ -512,6 +515,51 @@ export default function App() {
     }, 3000);
     return () => clearTimeout(timer);
   }, []);
+
+  // Android hardware back button handler
+  useEffect(() => {
+    let listenerHandle: any = null;
+
+    const setupListener = async () => {
+      listenerHandle = await CapacitorApp.addListener('backButton', () => {
+        // 1. If exit confirm dialog is open → close it
+        if (showExitConfirm) {
+          setShowExitConfirm(false);
+          return;
+        }
+
+        // 2. If reading a book → go back to library
+        if (activeReadingBook) {
+          setActiveReadingBook(null);
+          setSearchQuery('');
+          return;
+        }
+
+        // 3. If on a non-library tab → go to library tab
+        if (currentTab !== 'library') {
+          setCurrentTab('library');
+          return;
+        }
+
+        // 4. On main screen (library) → double-back to exit
+        const now = Date.now();
+        if (now - lastBackPressRef.current < 2000) {
+          // Second press within 2 seconds → show confirm dialog
+          setShowExitConfirm(true);
+        } else {
+          lastBackPressRef.current = now;
+        }
+      });
+    };
+
+    setupListener();
+
+    return () => {
+      if (listenerHandle) {
+        listenerHandle.remove();
+      }
+    };
+  }, [activeReadingBook, currentTab, showExitConfirm]);
 
   // Fetch Google Client ID Config on mount
   useEffect(() => {
@@ -1251,6 +1299,50 @@ export default function App() {
           <SplashScreen />
         ) : (
           <>
+            {/* Android Exit Confirmation Dialog */}
+            {showExitConfirm && (
+              <div
+                className="fixed inset-0 z-[9999] flex items-center justify-center p-6"
+                style={{ backgroundColor: 'rgba(0,0,0,0.6)' }}
+                onClick={() => setShowExitConfirm(false)}
+              >
+                <div
+                  className={`w-full max-w-xs rounded-2xl shadow-2xl p-6 ${
+                    isDarkMode ? 'bg-[#1A1A1E] text-white' : 'bg-white text-gray-800'
+                  }`}
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <div className="flex flex-col items-center gap-3 mb-5">
+                    <div className="w-12 h-12 rounded-full bg-[#FF6B6B]/15 flex items-center justify-center">
+                      <X className="w-6 h-6 text-[#FF6B6B]" />
+                    </div>
+                    <h3 className="text-base font-bold text-center">Uygulamadan Çık</h3>
+                    <p className={`text-sm text-center leading-relaxed ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
+                      Uygulamadan çıkmak istediğinize emin misiniz?
+                    </p>
+                  </div>
+                  <div className="flex gap-3">
+                    <button
+                      onClick={() => setShowExitConfirm(false)}
+                      className={`flex-1 py-3 rounded-xl text-sm font-bold transition-colors ${
+                        isDarkMode
+                          ? 'bg-[#2A2A30] text-gray-300 hover:bg-[#343A40]'
+                          : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                      }`}
+                    >
+                      Hayır
+                    </button>
+                    <button
+                      onClick={() => CapacitorApp.exitApp()}
+                      className="flex-1 py-3 rounded-xl text-sm font-bold bg-[#FF6B6B] text-white hover:bg-[#FF5252] transition-colors"
+                    >
+                      Evet, Çık
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
+
             {/* Mock Status Bar (Desktop-only) */}
             <div className={`hidden md:flex h-8 px-6 items-center justify-between text-[11px] font-bold z-50 select-none shrink-0 ${
               isDarkMode ? 'bg-[#121214] text-gray-400' : 'bg-[#FFFBF0] text-gray-600'

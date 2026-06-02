@@ -2528,7 +2528,7 @@ export const STORIES_PART1: RawStory[] = [
   },
 
   // ==================== LEVEL A2 (9 Stories) ====================
-                              {
+                                {
     id: 'pinocchio',
     title: "Pinocchio",
     author: 'Carlo Collodi',
@@ -2630,7 +2630,7 @@ export const STORIES_PART1: RawStory[] = [
       "disappear": "kaybolmak"
     }
   },
-                              {
+                                {
     id: 'beauty_beast',
     title: "Beauty and the Beast",
     author: 'Gabrielle-Suzanne de Villeneuve',
@@ -2735,7 +2735,7 @@ export const STORIES_PART1: RawStory[] = [
       "determination": "kararlılık"
     }
   },
-                              {
+                                {
     id: 'little_mermaid',
     title: "The Little Mermaid",
     author: 'Hans Christian Andersen',
@@ -2836,7 +2836,7 @@ export const STORIES_PART1: RawStory[] = [
       "danger": "tehlike"
     }
   },
-                              {
+                                {
     id: 'aladdin',
     title: "Aladdin and the Lamp",
     author: 'Antoine Galland',
@@ -2944,7 +2944,7 @@ export const STORIES_PART1: RawStory[] = [
       "trap": "mahsur kalmak"
     }
   },
-                          {
+                            {
     id: 'princess_pea',
     title: "The Princess and the Pea",
     author: 'Hans Christian Andersen',
@@ -3045,7 +3045,7 @@ export const STORIES_PART1: RawStory[] = [
       "peaceful": "huzurlu"
     }
   },
-                          {
+                            {
     id: 'thumbelina',
     title: "Thumbelina",
     author: 'Hans Christian Andersen',
@@ -3149,7 +3149,7 @@ export const STORIES_PART1: RawStory[] = [
       "queen": "kraliçe"
     }
   },
-                          {
+                            {
     id: 'robin_hood',
     title: "Robin Hood",
     author: 'Howard Pyle',
@@ -3257,7 +3257,7 @@ export const STORIES_PART1: RawStory[] = [
       "royal": "kraliyet"
     }
   },
-                          {
+                            {
     id: 'alice_wonderland',
     title: "Alice in Wonderland",
     author: 'Lewis Carroll',
@@ -3360,7 +3360,7 @@ export const STORIES_PART1: RawStory[] = [
       "edge": "kenar"
     }
   },
-                          {
+                            {
     id: 'boy_cried_wolf',
     title: "The Boy Who Cried Wolf",
     author: 'Aesop',
@@ -3468,7 +3468,7 @@ export const STORIES_PART1: RawStory[] = [
       "trust": "güven"
     }
   },
-                      {
+                        {
     id: 'fox_grapes',
     title: "The Fox and the Grapes",
     author: 'Aesop',
@@ -3572,7 +3572,7 @@ export const STORIES_PART1: RawStory[] = [
       "lesson": "ders"
     }
   },
-                    {
+                      {
     id: 'ali_baba',
     title: "Ali Baba and the Forty Thieves",
     author: 'Antoine Galland',
@@ -3675,7 +3675,7 @@ export const STORIES_PART1: RawStory[] = [
       "peaceful": "huzurlu"
     }
   },
-                    {
+                      {
     id: 'sinbad',
     title: "Sinbad the Sailor",
     author: 'Antoine Galland',
@@ -3777,7 +3777,7 @@ export const STORIES_PART1: RawStory[] = [
       "courage": "cesaret"
     }
   },
-                    {
+                      {
     id: 'king_midas',
     title: "King Midas and the Golden Touch",
     author: 'Nathaniel Hawthorne',
@@ -3879,7 +3879,7 @@ export const STORIES_PART1: RawStory[] = [
       "joy": "neşe, sevinç"
     }
   },
-                      {
+                        {
     id: 'peter_pan',
     title: "Peter Pan",
     author: 'J. M. Barrie',
@@ -3981,7 +3981,7 @@ export const STORIES_PART1: RawStory[] = [
       "cycle": "döngü"
     }
   },
-          {
+            {
     id: 'lion_mouse',
     title: "The Lion and the Mouse",
     author: 'Aesop',
@@ -4050,7 +4050,7 @@ export const STORIES_PART1: RawStory[] = [
       "peace": "barış"
     }
   },
-          {
+            {
     id: 'ant_grasshopper',
     title: "The Ant and the Grasshopper",
     author: 'Aesop',
@@ -4121,7 +4121,7 @@ export const STORIES_PART1: RawStory[] = [
       "organize": "düzenlemek"
     }
   },
-          {
+            {
     id: 'town_country_mouse',
     title: "The Town Mouse and the Country Mouse",
     author: 'Aesop',
@@ -4193,7 +4193,7 @@ export const STORIES_PART1: RawStory[] = [
       "field": "tarla"
     }
   },
-          {
+            {
     id: 'crow_pitcher',
     title: "The Crow and the Pitcher",
     author: 'Aesop',
@@ -4264,7 +4264,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "macera"
     }
   },
-          {
+            {
     id: 'wind_sun',
     title: "The North Wind and the Sun",
     author: 'Aesop',
@@ -4332,7 +4332,7 @@ export const STORIES_PART1: RawStory[] = [
       "kindness": "iyilik"
     }
   },
-          {
+            {
     id: 'gingerbread_man',
     title: "The Gingerbread Man",
     author: 'Traditional',
@@ -4399,7 +4399,7 @@ export const STORIES_PART1: RawStory[] = [
       "finish": "bitirmek"
     }
   },
-          {
+            {
     id: 'chicken_little',
     title: "Chicken Little",
     author: 'Traditional',
@@ -4469,7 +4469,7 @@ export const STORIES_PART1: RawStory[] = [
       "exit": "çıkış"
     }
   },
-          {
+            {
     id: 'enormous_turnip',
     title: "The Enormous Turnip",
     author: 'Traditional',
@@ -4535,7 +4535,7 @@ export const STORIES_PART1: RawStory[] = [
       "team": "takım"
     }
   },
-          {
+            {
     id: 'three_billy_goats',
     title: "Three Billy Goats Gruff",
     author: 'Traditional',
@@ -4604,7 +4604,7 @@ export const STORIES_PART1: RawStory[] = [
       "happy": "mutlu"
     }
   },
-          {
+            {
     id: 'fisherman_wife',
     title: "The Fisherman and His Wife",
     author: 'Brothers Grimm',
@@ -4672,7 +4672,7 @@ export const STORIES_PART1: RawStory[] = [
       "thankful": "minnettar"
     }
   },
-          {
+            {
     id: 'little_red_hen',
     title: "The Little Red Hen",
     author: 'Traditional',
@@ -4738,7 +4738,7 @@ export const STORIES_PART1: RawStory[] = [
       "stomach": "mide"
     }
   },
-          {
+            {
     id: 'frog_prince',
     title: "The Frog Prince",
     author: 'Brothers Grimm',
@@ -4807,7 +4807,7 @@ export const STORIES_PART1: RawStory[] = [
       "travel": "seyahat etmek"
     }
   },
-          {
+            {
     id: 'stone_soup',
     title: "Stone Soup",
     author: 'Traditional',
@@ -4876,7 +4876,7 @@ export const STORIES_PART1: RawStory[] = [
       "generous": "cömert"
     }
   },
-          {
+            {
     id: 'star_money',
     title: "The Star Money",
     author: 'Brothers Grimm',
@@ -4948,7 +4948,7 @@ export const STORIES_PART1: RawStory[] = [
       "safe": "güvende"
     }
   },
-          {
+            {
     id: 'city_musicians',
     title: "The Bremen Town Musicians",
     author: 'Brothers Grimm',
@@ -5019,7 +5019,7 @@ export const STORIES_PART1: RawStory[] = [
       "smile": "gülümsemek"
     }
   },
-          {
+            {
     id: 'peter_rabbit',
     title: "The Tale of Peter Rabbit",
     author: 'Beatrix Potter',
@@ -5090,7 +5090,7 @@ export const STORIES_PART1: RawStory[] = [
       "proud": "gururlu"
     }
   },
-          {
+            {
     id: 'bambi',
     title: "Bambi",
     author: 'Felix Salten',
@@ -5160,7 +5160,7 @@ export const STORIES_PART1: RawStory[] = [
       "noble": "soylu"
     }
   },
-          {
+            {
     id: 'black_beauty',
     title: "Black Beauty",
     author: 'Anna Sewell',
@@ -5228,7 +5228,7 @@ export const STORIES_PART1: RawStory[] = [
       "surprises": "sürprizler"
     }
   },
-          {
+            {
     id: 'hans_brinker',
     title: "Hans Brinker",
     author: 'Mary Mapes Dodge',
@@ -5295,7 +5295,7 @@ export const STORIES_PART1: RawStory[] = [
       "gratitude": "minnet"
     }
   },
-          {
+            {
     id: 'five_children_it',
     title: "Five Children and It",
     author: 'E. Nesbit',
@@ -5365,7 +5365,7 @@ export const STORIES_PART1: RawStory[] = [
       "secret": "sır"
     }
   },
-          {
+            {
     id: 'railway_children',
     title: "The Railway Children",
     author: 'E. Nesbit',
@@ -5434,7 +5434,7 @@ export const STORIES_PART1: RawStory[] = [
       "realize": "fark etmek"
     }
   },
-          {
+            {
     id: 'swiss_family',
     title: "The Swiss Family Robinson",
     author: 'Johann David Wyss',
@@ -5503,7 +5503,7 @@ export const STORIES_PART1: RawStory[] = [
       "pack": "eşyaları toplamak"
     }
   },
-          {
+            {
     id: 'doctor_dolittle',
     title: "Doctor Dolittle",
     author: 'Hugh Lofting',
@@ -5570,7 +5570,7 @@ export const STORIES_PART1: RawStory[] = [
       "famous": "ünlü"
     }
   },
-          {
+            {
     id: 'sleepy_hollow',
     title: "The Legend of Sleepy Hollow",
     author: 'Washington Irving',
@@ -5640,7 +5640,7 @@ export const STORIES_PART1: RawStory[] = [
       "victim": "kurban"
     }
   },
-          {
+            {
     id: 'rip_van_winkle',
     title: "Rip Van Winkle",
     author: 'Washington Irving',
@@ -5712,7 +5712,7 @@ export const STORIES_PART1: RawStory[] = [
       "simple": "basit"
     }
   },
-          {
+            {
     id: 'velveteen_rabbit',
     title: "The Velveteen Rabbit",
     author: 'Margery Williams',
@@ -5784,7 +5784,7 @@ export const STORIES_PART1: RawStory[] = [
       "arrival": "varış"
     }
   },
-          {
+            {
     id: 'water_babies',
     title: "The Water-Babies",
     author: 'Charles Kingsley',
@@ -5854,7 +5854,7 @@ export const STORIES_PART1: RawStory[] = [
       "peace": "huzur"
     }
   },
-          {
+            {
     id: 'nutcracker',
     title: "The Nutcracker",
     author: 'E. T. A. Hoffmann',
@@ -5923,7 +5923,7 @@ export const STORIES_PART1: RawStory[] = [
       "real": "gerçek"
     }
   },
-          {
+            {
     id: 'blue_bird',
     title: "The Blue Bird",
     author: 'Maurice Maeterlinck',
@@ -5994,7 +5994,7 @@ export const STORIES_PART1: RawStory[] = [
       "thankful": "minnettar"
     }
   },
-          {
+            {
     id: 'tom_thumb',
     title: "Tom Thumb",
     author: 'Brothers Grimm',
@@ -6066,7 +6066,7 @@ export const STORIES_PART1: RawStory[] = [
       "kindness": "iyilik"
     }
   },
-          {
+            {
     id: 'little_match_girl',
     title: "The Little Match Girl",
     author: 'Hans Christian Andersen',
@@ -6137,7 +6137,7 @@ export const STORIES_PART1: RawStory[] = [
       "silent": "sessiz"
     }
   },
-    {
+      {
     id: 'horror_black_cat',
     title: "The Black Cat",
     author: 'Edgar Allan Poe',
@@ -6208,7 +6208,7 @@ export const STORIES_PART1: RawStory[] = [
       "secret": "sır"
     }
   },
-    {
+      {
     id: 'horror_signalman',
     title: "The Signalman",
     author: 'Charles Dickens',
@@ -6276,7 +6276,7 @@ export const STORIES_PART1: RawStory[] = [
       "shocked": "şok olmuş"
     }
   },
-    {
+      {
     id: 'horror_red_headed_league',
     title: "The Red-Headed League",
     author: 'Arthur Conan Doyle',
@@ -6345,7 +6345,7 @@ export const STORIES_PART1: RawStory[] = [
       "partner": "ortak"
     }
   },
-    {
+      {
     id: 'horror_blue_carbuncle',
     title: "The Blue Carbuncle",
     author: 'Arthur Conan Doyle',
@@ -6416,7 +6416,7 @@ export const STORIES_PART1: RawStory[] = [
       "secret": "sır"
     }
   },
-    {
+      {
     id: 'horror_young_goodman_brown',
     title: "Young Goodman Brown",
     author: 'Nathaniel Hawthorne',
@@ -6484,7 +6484,7 @@ export const STORIES_PART1: RawStory[] = [
       "peace": "huzur"
     }
   },
-    {
+      {
     id: 'horror_phantom_rickshaw',
     title: "The Phantom Rickshaw",
     author: 'Rudyard Kipling',
@@ -6551,7 +6551,7 @@ export const STORIES_PART1: RawStory[] = [
       "breath": "nefes"
     }
   },
-    {
+      {
     id: 'horror_draculas_guest',
     title: "Dracula's Guest",
     author: 'Bram Stoker',
@@ -6620,7 +6620,7 @@ export const STORIES_PART1: RawStory[] = [
       "journey": "yolculuk"
     }
   },
-    {
+      {
     id: 'horror_devil_tom_walker',
     title: "The Devil and Tom Walker",
     author: 'Washington Irving',
@@ -6691,7 +6691,7 @@ export const STORIES_PART1: RawStory[] = [
       "sorrow": "keder"
     }
   },
-    {
+      {
     id: 'horror_monkeys_paw',
     title: "The Monkey's Paw",
     author: 'W. W. Jacobs',
@@ -6761,7 +6761,7 @@ export const STORIES_PART1: RawStory[] = [
       "fate": "kader"
     }
   },
-    {
+      {
     id: 'horror_oval_portrait',
     title: "The Oval Portrait",
     author: 'Edgar Allan Poe',
@@ -6829,7 +6829,7 @@ export const STORIES_PART1: RawStory[] = [
       "sadness": "hüzün"
     }
   },
-    {
+      {
     id: 'horror_house_of_usher',
     title: "The Fall of the House of Usher",
     author: 'Edgar Allan Poe',
@@ -6899,7 +6899,7 @@ export const STORIES_PART1: RawStory[] = [
       "nightmare": "kabus"
     }
   },
-    {
+      {
     id: 'horror_cask_amontillado',
     title: "The Cask of Amontillado",
     author: 'Edgar Allan Poe',
@@ -6971,7 +6971,7 @@ export const STORIES_PART1: RawStory[] = [
       "memory": "hafıza"
     }
   },
-    {
+      {
     id: 'horror_speckled_band',
     title: "The Speckled Band",
     author: 'Arthur Conan Doyle',
@@ -7043,7 +7043,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "macera"
     }
   },
-    {
+      {
     id: 'horror_yellow_wallpaper',
     title: "The Yellow Wallpaper",
     author: 'Charlotte Perkins Gilman',
@@ -7114,7 +7114,7 @@ export const STORIES_PART1: RawStory[] = [
       "prisoner": "mahkum"
     }
   },
-    {
+      {
     id: 'horror_willows',
     title: "The Willows",
     author: 'Algernon Blackwood',
@@ -7183,7 +7183,7 @@ export const STORIES_PART1: RawStory[] = [
       "secret": "sır"
     }
   },
-    {
+      {
     id: 'horror_wendigo',
     title: "The Wendigo",
     author: 'Algernon Blackwood',
@@ -7253,7 +7253,7 @@ export const STORIES_PART1: RawStory[] = [
       "secret": "sır"
     }
   },
-    {
+      {
     id: 'horror_king_in_yellow',
     title: "The King in Yellow",
     author: 'Robert W. Chambers',
@@ -7322,7 +7322,7 @@ export const STORIES_PART1: RawStory[] = [
       "puppet": "kukla"
     }
   },
-    {
+      {
     id: 'horror_vampyre',
     title: "The Vampyre",
     author: 'John William Polidori',
@@ -7393,7 +7393,7 @@ export const STORIES_PART1: RawStory[] = [
       "ceremony": "tören"
     }
   },
-    {
+      {
     id: 'horror_horla',
     title: "The Horla",
     author: 'Guy de Maupassant',
@@ -7461,7 +7461,7 @@ export const STORIES_PART1: RawStory[] = [
       "suffer": "acı çekmek"
     }
   },
-    {
+      {
     id: 'horror_green_tea',
     title: "Green Tea",
     author: 'Sheridan Le Fanu',
@@ -7531,7 +7531,7 @@ export const STORIES_PART1: RawStory[] = [
       "cruel": "acımasız"
     }
   },
-    {
+      {
     id: 'horror_sandman',
     title: "The Sandman",
     author: 'E. T. A. Hoffmann',
@@ -7602,7 +7602,7 @@ export const STORIES_PART1: RawStory[] = [
       "madness": "delilik"
     }
   },
-    {
+      {
     id: 'horror_birth_mark',
     title: "The Birth-Mark",
     author: 'Nathaniel Hawthorne',
@@ -7671,7 +7671,7 @@ export const STORIES_PART1: RawStory[] = [
       "absent": "yok"
     }
   },
-    {
+      {
     id: 'horror_masque_red_death',
     title: "The Masque of the Red Death",
     author: 'Edgar Allan Poe',
@@ -7743,7 +7743,7 @@ export const STORIES_PART1: RawStory[] = [
       "fate": "kader"
     }
   },
-    {
+      {
     id: 'horror_gold_bug',
     title: "The Gold-Bug",
     author: 'Edgar Allan Poe',
@@ -7810,7 +7810,7 @@ export const STORIES_PART1: RawStory[] = [
       "fortune": "servet"
     }
   },
-    {
+      {
     id: 'horror_moonstone',
     title: "The Moonstone",
     author: 'Wilkie Collins',
@@ -7880,7 +7880,7 @@ export const STORIES_PART1: RawStory[] = [
       "reveal": "ortaya çıkarmak"
     }
   },
-  {
+    {
     id: 'classic_tom_sawyer',
     title: "The Adventures of Tom Sawyer",
     author: 'Mark Twain',
@@ -7951,9 +7951,8 @@ export const STORIES_PART1: RawStory[] = [
       "truth": "gerçek",
       "hero": "kahraman"
     }
-  }
-,
-  {
+  },
+    {
     id: 'classic_oliver_twist',
     title: "Oliver Twist",
     author: 'Charles Dickens',
@@ -8022,9 +8021,8 @@ export const STORIES_PART1: RawStory[] = [
       "truth": "gerçek",
       "free": "özgür"
     }
-  }
-,
-  {
+  },
+    {
     id: 'classic_prince_pauper',
     title: "The Prince and the Pauper",
     author: 'Mark Twain',
@@ -8090,9 +8088,8 @@ export const STORIES_PART1: RawStory[] = [
       "kindness": "nezaket",
       "leader": "lider"
     }
-  }
-,
-  {
+  },
+    {
     id: 'classic_kidnapped',
     title: "Kidnapped",
     author: 'Robert Louis Stevenson',
@@ -8162,9 +8159,8 @@ export const STORIES_PART1: RawStory[] = [
       "patient": "sabırlı",
       "adventure": "macera"
     }
-  }
-,
-  {
+  },
+    {
     id: 'classic_three_musketeers',
     title: "The Three Musketeers",
     author: 'Alexandre Dumas',
@@ -8229,9 +8225,8 @@ export const STORIES_PART1: RawStory[] = [
       "soldier": "asker",
       "legend": "efsane"
     }
-  }
-,
-  {
+  },
+    {
     id: 'classic_uncle_tom_cabin',
     title: "Uncle Tom's Cabin",
     author: 'Harriet Beecher Stowe',
@@ -8300,9 +8295,8 @@ export const STORIES_PART1: RawStory[] = [
       "obey": "itaat etmek",
       "peace": "huzur"
     }
-  }
-,
-  {
+  },
+    {
     id: 'classic_journey_center_earth',
     title: "Journey to the Center of the Earth",
     author: 'Jules Verne',
@@ -8370,9 +8364,8 @@ export const STORIES_PART1: RawStory[] = [
       "island": "ada",
       "famous": "ünlü"
     }
-  }
-,
-  {
+  },
+    {
     id: 'classic_first_men_moon',
     title: "The First Men in the Moon",
     author: 'H. G. Wells',
@@ -8436,6 +8429,225 @@ export const STORIES_PART1: RawStory[] = [
       "lever": "kol",
       "safe": "güvende",
       "forget": "unutmak"
+    }
+  },
+  {
+    id: 'classic_captains_courageous',
+    title: "Captains Courageous",
+    author: 'Rudyard Kipling',
+    level: 'A1',
+    coverUrl: '/covers/classic_captains_courageous.webp',
+    en: [
+      "Harvey Cheyne is a fifteen-year-old boy. He is very rich and very spoiled. He lives a life of luxury because his father has a lot of money. Harvey is on a large steamship. The ship is traveling across the ocean to Europe. Harvey wants to look like a man, so he smokes a big cigar. But the cigar makes him feel very sick. The sea is green and the fog is very thick. Harvey feels dizzy. He walks to the back of the ship to get some fresh air. He is all alone on the deck. The big waves move the ship up and down. He does not feel good at all. His head hurts and his stomach feels bad. He is a young boy who thinks he knows everything, but he is actually very lonely.",
+      "Suddenly, a huge wave hits the side of the steamship. Harvey loses his balance on the wet deck. He falls over the railing and into the cold, deep ocean. He tries to shout for help, but the ship is too loud. The big steamship disappears into the thick fog. Harvey is alone in the cold Atlantic Ocean. He is very afraid. His clothes feel very heavy in the water. He struggles to stay on the surface. He thinks he is going to die. But then, a small fishing boat appears through the fog. A man named Manuel sees the boy in the water. Manuel reaches out and pulls Harvey into his small boat. Harvey is very wet and very tired. He closes his eyes and falls into a deep sleep.",
+      "Harvey wakes up on a small fishing boat called the We're Here. He meets the captain, a man named Disko Troop. Harvey tells the captain that his father is very wealthy. He says his father will pay a lot of money if the captain takes him to land right now. Harvey is very rude and bossy. But Disko Troop does not believe him. The captain thinks Harvey is just a poor, confused boy. He tells Harvey that he must work on the boat until the fishing season ends. Harvey is shocked. He has never worked a day in his life. He must now learn to catch fish and clean the deck. This is the start of a very different life for the rich young boy.",
+      "Harvey meets Dan, who is the son of Captain Disko Troop. Dan is a friendly boy and he tells Harvey about the rules of the boat. Harvey is still very angry and he thinks he is a very important person. He does not want to work, but the captain says he must. He has to learn the names of many different tools and parts of the ship. The smell of the dead fish is very strong and Harvey thinks it is disgusting. However, he soon realizes that nobody cares about his money here. He sees that life on a small fishing boat is very hard. He is not a rich prince on this ship, and he must follow the rules like everyone else.",
+      "The work on the We're Here is very difficult and the days are very long. Harvey must help Dan with the heavy bags of salt and the big fish. After a few days, his hands become very sore and his back hurts a lot. He learns how to wash the deck and how to help with the heavy fishing nets. Every single day, the fishermen catch hundreds of cod fish from the cold sea. Harvey has to help the men clean and prepare the fish. At first, he hates the work and he complains every minute. But the other men on the boat are busy and they do not listen to him. He starts to feel very hungry and finally eats the simple food.",
+      "Slowly, Harvey begins to change his behavior. He starts to listen to Dan and learns how to tie strong knots and use the fishing equipment. He understands that he cannot get what he wants by being rude or mean to others. He sees that every man on the boat has a special job and they all work together as a team. The ocean is very beautiful, but it is also very dangerous. He watches the bright sun rise over the water every morning. He is still sad about his mother and father, but he begins to feel strong and healthy. His muscles grow and he learns how to walk on the moving deck. He is not a weak boy anymore.",
+      "The schooner travels to a place called the Grand Banks. This is where the best fish live in the deep water. Every morning, the men get into small boats called dories. Harvey goes with Dan in a small boat. They must sit very still because the water is cold and moving. Harvey learns how to use a long fishing line with a hook. He catches his first cod fish and feels very happy. The air is often very foggy and they cannot see the big ship. Dan tells him to listen for the horn. The horn tells them where the big ship is. Harvey is learning that fishing is not easy. It takes a lot of patience and strength. He is becoming a real fisherman now.",
+      "Captain Disko Troop is a very smart man. He knows exactly where to find the fish in the big ocean. He watches the color of the water and the birds in the sky. Other fishing boats follow the We're Here because they trust the Captain. Harvey watches the other men work with the big nets and the knives. They work very fast and they never stop. Harvey is now part of this team. He does not talk about his father’s money anymore. Instead, he talks about the size of the fish he catches. He feels proud when the Captain says he is doing a good job. The smell of the fish does not bother him now. He is busy and tired, but he is also very happy.",
+      "The sea can be very scary sometimes. One day, a very thick fog comes over the water. It is like a white wall all around them. They hear the loud sound of a giant steamship nearby. These big ships are very dangerous for small fishing boats. The men must blow their horns very loudly so the big ships can hear them. Harvey feels small in the middle of the giant ocean, but he is not afraid. He trusts the other men and he trusts the boat. At the end of the week, the Captain gives Harvey some small coins for his work. It is not much money, but Harvey feels like a king. He earned this money with his own hands and his own hard work. He is a different person now.",
+      "The summer is ending and the fishing season is almost over. Every day, the men work from morning until night. They catch hundreds of large cod fish. Finally, the hold of the schooner is full of salt and fish. There is no more space for even one small fish. Captain Disko Troop is very pleased with his crew. Harvey is now very strong. His hands are hard and his face is brown from the sun. He is no longer the weak boy from the beginning of the journey. He feels proud because he helped the team finish their work. The We're Here is ready to go back to the land. They pull up the anchor and start the long trip home across the blue water.",
+      "The trip back to the town of Gloucester is fast. The wind is strong and the sails are white and full. On the boat, the men sing songs and tell stories. Harvey listens to the stories about the sea and the big storms. He understands the life of a fisherman now. He likes the simple food and the sound of the waves. He thinks about his old life in the city. He remembers his expensive clothes and his many servants. Now, he knows that those things are not important. He likes his old boots and his heavy coat. He is a young man who knows how to work. He is ready to see his mother and father again. He wants to show them his new strength and his new skills.",
+      "The schooner arrives at the harbor. Everything looks small to Harvey now. Captain Disko Troop goes to the office to send a telegram. The message goes across the country to Harvey's parents in California. They believe their son is dead. They are very sad and they cry every day. When the father receives the message, he cannot believe his eyes. His son is alive and he is in a small fishing town! The father is a very rich man who owns many trains. He orders a special train to go across America very fast. He and the mother want to see Harvey as soon as possible. Harvey waits on the boat. He feels a little nervous but he is very happy to see his family.",
+      "The big, fast train finally stops in the small town of Gloucester. Harvey's father and mother step off the train quickly. They look around the station with tears in their eyes. Suddenly, they see a young man walking toward them. He is tall and his shoulders are very broad. His face is dark from the hot sun and his hands are rough. The mother cries out because she almost does not know her own son. Harvey runs to them and hugs them both very tightly. He is not a spoiled child anymore. He is a strong young man who knows about hard work. His parents are so happy to see him alive. They look at his simple clothes and his bright, honest eyes. They see that their son is now a man.",
+      "Harvey takes his father and mother to the harbor to see the boat, the We're Here. He wants them to meet Captain Disko Troop and his son, Dan. At first, Harvey’s father is surprised because the captain is a simple fisherman. However, he soon sees that these men are very brave and kind. They saved his son’s life and taught him how to be useful. Mr. Cheyne talks to the captain for a long time. He offers the captain a lot of money to say thank you. But Captain Disko is a proud man. He says that Harvey worked for his food and did a good job. The father is very happy to hear this. He realizes that the sea was a better teacher than any school in the city.",
+      "It is time for Harvey to go back to his old life, but he will never be the same. He says goodbye to Dan and the other fishermen. They are now his best friends. He promises to visit them every year and to never forget the lessons of the sea. His father decides to help Dan become a captain one day too. As the train leaves the station, Harvey looks out the window at the blue ocean. He remembers the cold wind, the big fish, and the sound of the waves. He knows that he is lucky to be alive. He learned that money is not the most important thing in the world. Being brave, honest, and hardworking is what truly matters. Harvey is ready for his new life with a happy heart."
+    ],
+    tr: [
+      "Harvey Cheyne on beş yaşında bir çocuktur. Çok zengindir ve çok şımartılmıştır. Babasının çok parası olduğu için lüks bir hayat yaşamaktadır. Harvey büyük bir buharlı gemidedir. Gemi okyanusu geçerek Avrupa'ya gitmektedir. Harvey bir adam gibi görünmek ister, bu yüzden büyük bir puro içer. Ancak puro onu çok kötü hissettirir. Deniz yeşildir ve sis çok yoğundur. Harvey'nin başı döner. Biraz temiz hava almak için geminin arkasına yürür. Güvertede tamamen yalnızdır. Büyük dalgalar gemiyi yukarı ve aşağı hareket ettirir. Hiç iyi hissetmiyordur. Başı ağrır ve midesi kötüleşir. Her şeyi bildiğini sanan genç bir çocuktur ama aslında çok yalnızdır.",
+      "Aniden, dev bir dalga buharlı geminin yan tarafına çarpar. Harvey ıslak güvertede dengesini kaybeder. Korkulukların üzerinden soğuk ve derin okyanusa düşer. Yardım istemek için bağırmaya çalışır ama gemi çok gürültülüdür. Büyük buharlı gemi yoğun sisin içinde kaybolur. Harvey soğuk Atlantik Okyanusu'nda yapayalnızdır. Çok korkar. Giysileri suyun içinde çok ağırlaşır. Yüzeyde kalmak için mücadele eder. Öleceğini düşünür. Ancak o sırada sisin içinden küçük bir balıkçı teknesi belirir. Manuel adında bir adam sudaki çocuğu görür. Manuel uzanır ve Harvey'i küçük teknesine çeker. Harvey çok ıslaktır ve çok yorgundur. Gözlerini kapatır ve derin bir uykuya dalar.",
+      "Harvey, 'We're Here' adındaki küçük bir balıkçı teknesinde uyanır. Kaptan Disko Troop adında bir adamla tanışır. Harvey kaptana babasının çok varlıklı olduğunu söyler. Eğer kaptan onu hemen karaya götürürse babasının çok para ödeyeceğini söyler. Harvey çok kaba ve emrivakidir. Ancak Disko Troop ona inanmaz. Kaptan, Harvey'nin sadece fakir ve kafası karışmış bir çocuk olduğunu düşünür. Harvey'e balık tutma sezonu bitene kadar teknede çalışması gerektiğini söyler. Harvey şok olur. Hayatında bir gün bile çalışmamıştır. Artık balık tutmayı ve güverteyi temizlemeyi öğrenmelidir. Bu, zengin genç çocuk için çok farklı bir hayatın başlangıcıdır.",
+      "Harvey, Kaptan Disko Troop'un oğlu Dan ile tanışır. Dan arkadaş canlısı bir çocuktur ve Harvey'e teknenin kurallarını anlatır. Harvey hala çok kızgındır ve çok önemli bir kişi olduğunu düşünür. Çalışmak istemez ama kaptan çalışması gerektiğini söyler. Geminin birçok farklı aletinin ve parçasının adını öğrenmek zorundadır. Ölü balık kokusu çok güçlüdür ve Harvey bunun iğrenç olduğunu düşünür. Ancak kısa süre sonra burada kimsenin onun parasını umursamadığını anlar. Küçük bir balıkçı teknesindeki hayatın çok zor olduğunu görür. Bu gemide zengin bir prens değildir ve herkes gibi kurallara uymalıdır.",
+      "We're Here teknesindeki işler çok zordur ve günler çok uzundur. Harvey, ağır tuz torbaları ve büyük balıklar konusunda Dan'e yardım etmelidir. Birkaç gün sonra elleri çok yara olur ve sırtı çok ağrır. Güverteyi nasıl yıkayacağını ve ağır balık ağlarına nasıl yardım edeceğini öğrenir. Balıkçılar her gün soğuk denizden yüzlerce morina balığı yakalarlar. Harvey, adamların balıkları temizlemesine ve hazırlamasına yardım etmek zorundadır. İlk başta işten nefret eder ve her dakika şikayet eder. Ancak teknedeki diğer adamlar meşguldür ve onu dinlemezler. Kendini çok aç hissetmeye başlar ve sonunda basit yemekleri yer.",
+      "Yavaş yavaş, Harvey davranışlarını değiştirmeye başlar. Dan'i dinlemeye başlar ve güçlü düğümler atmayı ve balıkçılık ekipmanlarını kullanmayı öğrenir. Başkalarına kaba veya kötü davranarak istediğini elde edemeyeceğini anlar. Teknedeki her adamın özel bir işi olduğunu ve hepsinin bir ekip olarak birlikte çalıştığını görür. Okyanus çok güzeldir ama aynı zamanda çok tehlikelidir. Her sabah suyun üzerinde parlak güneşin doğuşunu izler. Annesi ve babası için hala üzgündür ama kendini güçlü ve sağlıklı hissetmeye başlar. Kasları gelişir ve hareket eden güvertede yürümeyi öğrenir. Artık zayıf bir çocuk değildir.",
+      "Uskuna, Grand Banks denilen bir yere gider. Burası derin sularda en iyi balıkların yaşadığı yerdir. Her sabah adamlar dori adı verilen küçük teknelere binerler. Harvey, Dan ile birlikte küçük bir tekneye biner. Su soğuk ve hareketli olduğu için çok hareketsiz oturmaları gerekir. Harvey kancalı uzun bir olta ipini nasıl kullanacağını öğrenir. İlk morina balığını yakalar ve kendini çok mutlu hisseder. Hava sık sık çok sisli olur ve büyük gemiyi göremezler. Dan ona kornayı dinlemesini söyler. Korna onlara büyük geminin nerede olduğunu söyler. Harvey balık tutmanın kolay olmadığını öğreniyor. Çok sabır ve güç gerektiriyor. O artık gerçek bir balıkçı oluyor.",
+      "Kaptan Disko Troop çok zeki bir adamdır. Büyük okyanusta balıkların tam olarak nerede bulunacağını bilir. Suyun rengini ve gökyüzündeki kuşları izler. Diğer balıkçı tekneleri Kaptan'a güvendikleri için We're Here'ı takip ederler. Harvey diğer adamların büyük ağlarla ve bıçaklarla çalışmasını izler. Çok hızlı çalışırlar ve hiç durmazlar. Harvey artık bu ekibin bir parçasıdır. Artık babasının parası hakkında konuşmaz. Bunun yerine yakaladığı balıkların büyüklüğü hakkında konuşur. Kaptan iyi bir iş çıkardığını söylediğinde gurur duyar. Balık kokusu artık onu rahatsız etmiyor. Meşgul ve yorgun ama aynı zamanda çok mutlu.",
+      "Deniz bazen çok korkutucu olabilir. Bir gün suyun üzerine çok yoğun bir sis çöker. Etraflarında beyaz bir duvar gibidir. Yakınlarda dev bir buharlı geminin yüksek sesini duyarlar. Bu büyük gemiler küçük balıkçı tekneleri için çok tehlikelidir. Büyük gemilerin onları duyabilmesi için adamlar kornalarını çok yüksek sesle çalmalıdırlar. Harvey dev okyanusun ortasında kendini küçük hisseder ama korkmaz. Diğer adamlara güvenir ve tekneye güvenir. Haftanın sonunda Kaptan, Harvey'e çalışması için birkaç küçük bozuk para verir. Çok fazla para değil ama Harvey kendini bir kral gibi hisseder. Bu parayı kendi elleriyle ve kendi sıkı çalışmasıyla kazandı. O artık farklı bir insan.",
+      "Yaz bitiyor ve balıkçılık sezonu neredeyse sona eriyor. Her gün, adamlar sabahtan akşama kadar çalışıyor. Yüzlerce büyük morina balığı yakalıyorlar. Sonunda, yelkenlinin ambarı tuz ve balıkla doluyor. Bir küçük balık için bile yer kalmıyor. Kaptan Disko Troop mürettebatından çok memnun. Harvey artık çok güçlü. Elleri sertleşti ve yüzü güneşten bronzlaştı. Artık yolculuğun başındaki o zayıf çocuk değil. Ekibin işlerini bitirmesine yardım ettiği için gurur duyuyor. We're Here karaya dönmek için hazır. Çapayı çekiyorlar ve mavi suların üzerinden eve doğru uzun yolculuğa başlıyorlar.",
+      "Gloucester kasabasına dönüş yolculuğu hızlı geçiyor. Rüzgar güçlü, yelkenler beyaz ve dolu. Teknede adamlar şarkılar söylüyor ve hikayeler anlatıyorlar. Harvey deniz ve büyük fırtınalar hakkındaki hikayeleri dinliyor. Artık bir balıkçının hayatını anlıyor. Basit yemekleri ve dalgaların sesini seviyor. Şehirdeki eski hayatını düşünüyor. Pahalı kıyafetlerini ve birçok hizmetçisini hatırlıyor. Şimdi, bu şeylerin önemli olmadığını biliyor. Eski botlarını ve ağır paltosunu seviyor. O, çalışmayı bilen genç bir adam. Annesini ve babasını tekrar görmeye hazır. Onlara yeni gücünü ve yeni becerilerini göstermek istiyor.",
+      "Yelkenli limana varıyor. Her şey şimdi Harvey'e küçük görünüyor. Kaptan Disko Troop telgraf çekmek için ofise gidiyor. Mesaj, ülkenin öbür ucundaki Kaliforniya'da bulunan Harvey'nin ailesine ulaşıyor. Onlar oğullarının öldüğüne inanıyorlar. Çok üzgünler ve her gün ağlıyorlar. Baba mesajı aldığında gözlerine inanamıyor. Oğlu hayatta ve küçük bir balıkçı kasabasında! Baba, birçok trene sahip çok zengin bir adam. Amerika'yı çok hızlı geçmek için özel bir tren sipariş ediyor. O ve anne Harvey'i bir an önce görmek istiyorlar. Harvey teknede bekliyor. Biraz gergin hissediyor ama ailesini göreceği için çok mutlu.",
+      "Büyük ve hızlı tren sonunda küçük Gloucester kasabasında durur. Harvey'nin babası ve annesi trenden hızla iner. Gözlerinde yaşlarla istasyonun etrafına bakarlar. Aniden, kendilerine doğru yürüyen genç bir adam görürler. O uzundur ve omuzları çok geniştir. Yüzü sıcak güneşten kararmıştır ve elleri serttir. Annesi neredeyse kendi oğlunu tanıyamadığı için haykırır. Harvey onlara doğru koşar ve her ikisine de sıkıca sarılır. O artık şımarık bir çocuk değildir. Zor işleri bilen güçlü bir genç adamdır. Ailesi onu hayatta gördüğü için çok mutludur. Onun basit kıyafetlerine ve parlak, dürüst gözlerine bakarlar. Oğullarının artık bir adam olduğunu görürler.",
+      "Harvey, babasını ve annesini We're Here adlı tekneyi görmeleri için limana götürür. Onların Kaptan Disko Troop ve oğlu Dan ile tanışmalarını ister. İlk başta, Harvey’nin babası şaşırır çünkü kaptan basit bir balıkçıdır. Ancak, kısa süre sonra bu adamların çok cesur ve nazik olduklarını anlar. Oğlunun hayatını kurtarmışlar ve ona nasıl faydalı olunacağını öğretmişlerdir. Bay Cheyne kaptanla uzun süre konuşur. Teşekkür etmek için kaptana çok para teklif eder. Ancak Kaptan Disko gururlu bir adamdır. Harvey'nin yemeği için çalıştığını ve iyi iş çıkardığını söyler. Babası bunu duyduğuna çok sevinir. Denizin, şehirdeki herhangi bir okuldan daha iyi bir öğretmen olduğunu fark eder.",
+      "Harvey'nin eski hayatına dönme vakti gelmiştir ama o asla eskisi gibi olmayacaktır. Dan ve diğer balıkçılarla vedalaşır. Onlar artık onun en iyi arkadaşlarıdır. Onları her yıl ziyaret edeceğine ve denizin derslerini asla unutmayacağına söz verir. Babası, bir gün Dan'in de kaptan olmasına yardım etmeye karar verir. Tren istasyondan ayrılırken, Harvey pencereden mavi okyanusa bakar. Soğuk rüzgarı, büyük balıkları ve dalgaların sesini hatırlar. Hayatta olduğu için şanslı olduğunu bilir. Paranın dünyadaki en önemli şey olmadığını öğrenmiştir. Cesur, dürüst ve çalışkan olmak gerçekten önemli olan şeydir. Harvey mutlu bir kalple yeni hayatına hazırdır."
+    ],
+    words: {
+      "rich": "zengin",
+      "steamship": "buharlı gemi",
+      "fog": "sis",
+      "wave": "dalga",
+      "captain": "kaptan",
+      "wealthy": "varlıklı",
+      "tool": "alet",
+      "disgusting": "iğrenç",
+      "sore": "ağrılı",
+      "complain": "şikayet etmek",
+      "knot": "düğüm",
+      "equipment": "ekipman",
+      "cod": "morina balığı",
+      "foggy": "sisli",
+      "patience": "sabır",
+      "trust": "güvenmek",
+      "proud": "gururlu",
+      "earn": "kazanmak",
+      "season": "sezon",
+      "strong": "güçlü",
+      "sail": "yelken",
+      "believe": "inanmak",
+      "message": "mesaj",
+      "nervous": "gergin",
+      "station": "istasyon",
+      "shoulder": "omuz",
+      "useful": "faydalı",
+      "realize": "fark etmek",
+      "promise": "söz vermek",
+      "matter": "önemli olmak"
+    }
+  }
+,
+  {
+    id: 'classic_mysterious_island',
+    title: "The Mysterious Island",
+    author: 'Jules Verne',
+    level: 'A1',
+    coverUrl: '/covers/classic_mysterious_island.webp',
+    en: [
+      "Richmond, 1865. The war is very bad. Five brave men want to be free. Their names are Cyrus, Gideon, Pencroff, Herbert, and Neb. They also have a loyal dog named Top. There is a big storm in the sky. The wind is very fast and strong. The men see a big balloon. They climb into the basket of the balloon. They want to fly away from the city and the war. The balloon goes up into the dark clouds. The wind takes them far away over the big ocean. It is very cold and they are very afraid. The storm does not stop for many days. They cannot see the land. They only see the big waves of the water below. The balloon is now very low. They must throw away everything to stay high.",
+      "The balloon is falling fast into the sea. The men are very scared but they are brave. Suddenly, they see land. It is a small island in the middle of the ocean. The balloon hits the water near the shore. There is a big splash. Pencroff, Herbert, Neb, and Gideon swim to the beach. They are very tired and wet. They look around for Cyrus Smith and his dog Top. But Cyrus and Top are not there. The water is very rough and the wind is loud. Neb is very sad because Cyrus is his best friend. He shouts the name of his friend, but there is no answer. The four men stand on the sand. They are on a strange island and they are alone. They do not have food or tools.",
+      "The sun goes down and it is very dark. The four men need to find a place to sleep. They find some rocks near the beach. They call this place \"The Chimneys\" because the rocks have a small hole. It is like a small house made of stone. The wind is still cold, but they are safe inside the rocks. They think about Cyrus Smith. Is he alive? Is he in the water? They hope he is safe. Tomorrow, they will look for him. They have no matches to make a fire. They have no guns to hunt animals. They only have their hands and their minds. This island is a big mystery. They must learn how to live here. This is the start of their long adventure.",
+      "The next morning, the sun is bright. Neb does not sleep. He walks on the beach and looks for Cyrus. He is very sad. Suddenly, he sees Top, the dog. Top is running on the sand. The dog is very happy to see Neb. Top barks and runs toward some high rocks. The men follow the dog. Top leads them to a small cave far from the water. Inside the cave, they see a man. It is Cyrus Smith! He is lying on the ground. He is very still and his clothes are wet. The men run to him. They are very happy because their leader is not dead. They help him and give him water.",
+      "Cyrus Smith opens his eyes. He is very weak but he is alive. He does not remember how he reached the cave. He was in the sea, and then he was on the land. It is a big mystery. Who helped him? The men carry Cyrus back to the Chimneys. They walk slowly on the beach. Now the five men and the dog are together again. They feel better now. But they are hungry and cold. They have no fire and no food. The island is very big and silent. They look at the trees and the birds. They must find a way to stay alive on this strange island.",
+      "Cyrus Smith is a great engineer. He knows many things about science. He wants to make a fire for his friends. But they do not have matches. Cyrus looks at his watch. He takes the glass from two watches. He puts water between the glass pieces. Now he has a lens. He holds the lens under the hot sun. He puts some dry grass under the lens. The sun is very strong. Soon, there is a little smoke. Then, there is a small flame. The men are very excited. Now they have a fire! They can cook food and stay warm at night. They feel like a real family now.",
+      "The friends decide to explore their new home. They walk through a thick forest with many tall trees and colorful birds. Cyrus Smith and his friends climb a high mountain in the middle of the land. From the top, they see the blue sea all around them. Now they know the truth. They are on an island. Cyrus decides to name the island Lincoln Island to honor their country. They also name the river and the forest. They feel like kings of this new land. However, they must find a better place to live. The small cave near the sea is not safe because the water can come inside. They need a strong house for the cold winter.",
+      "Cyrus Smith is very smart and uses his skills. He finds a large lake on a high hill. Near the lake, there is a big wall of stone. Cyrus thinks there is a hidden cave behind the stone. They work very hard for many days to open the wall. They use fire and water to break the hard rocks. Finally, they find a large, dry room inside the mountain. It is a perfect house! They call it Granite House. It is high above the ground, so they are safe from wild animals. They use a long ladder made of rope to go up and down. Inside Granite House, they have different rooms for sleeping and cooking.",
+      "Life on the island becomes easier every day. One day, Harbert finds a single grain of wheat in his pocket. It is very small, but it is very important. They plant the grain in the ground and wait carefully. Soon, they have many plants and much bread. The men also find iron in the rocks. Cyrus knows how to make tools from iron. They make knives, hammers, and even warm clothes from sheep wool. They are not just lost men now; they are colonists. They have food, fire, and a strong home. But Cyrus still thinks about the mystery. He wants to know who helped him on the first day when he was in the sea.",
+      "One day, the friends find a small bottle in the sea. Inside the bottle, there is a message. The message says there is a man on a small island nearby. This place is called Tabor Island. The friends build a strong boat and sail across the water. On Tabor Island, they find a man named Ayrton. He looks like a wild animal because he has been alone for many years. He was a bad man before, but now he is very sorry. They bring Ayrton back to Lincoln Island. At first, Ayrton is very quiet and sad. He stays in a small house in the forest. The friends are very kind to him. Slowly, Ayrton becomes their friend. He wants to help them and live a good life.",
+      "The life on the island is peaceful until they see a ship on the blue sea. They are happy at first, but then they see a black flag. Pirates! The ship has many big cannons and many dangerous men. The pirates want to take the island and Granite House. They start to fire their cannons at the mountain. The friends hide inside their home and try to fight back with their small guns. It is a very scary day. The pirates use small boats to come to the beach. The friends think they will lose everything. The pirates are many, and the friends are only a few. They need help because they cannot win this big battle alone. They look at the ocean and wait for a miracle.",
+      "Suddenly, a loud noise comes from the sea. A giant explosion hits the pirate ship. The water goes high into the air, and the ship sinks very fast. All the pirates are gone. The friends are shocked and surprised. They did not use any big bombs. Cyrus Smith looks at the ocean and thinks deeply. He knows that no human can do this easily. He believes their secret friend saved them again. Later, they find a strange metal box on the beach with many useful things. The mystery of the island is growing. They know they are not alone. Someone very powerful lives under the island or in the sea, and this person is watching them from the shadows.",
+      "One day, the mountain starts to make loud noises. Smoke comes out from the top. Cyrus Smith and his friends find a hidden door in the rocks. They go inside and see a very large ship under the water. It is a submarine. Inside the submarine, they meet an old man. His name is Captain Nemo. He is very old and tired. Captain Nemo tells them that he is their secret friend. He gave them the medicine and the box of tools. He gives them a chest full of gold and diamonds. He tells them to leave the island quickly because the volcano will explode soon. He says goodbye and dies quietly in his beautiful ship.",
+      "The volcano becomes very dangerous. The ground shakes and fire comes out of the mountain. The friends try to build a very large boat, but they do not have much time. The island is breaking into small pieces. One morning, a giant explosion happens. The forest and the houses disappear into the water. Only a small piece of rock remains above the sea. The friends stand on this rock. They have no food or water left. They are very sad and cold. They think they will die in the middle of the big ocean. They look at the blue water and hope for a miracle. They miss their home on the island very much.",
+      "After many days on the small rock, they see something far away on the horizon. It is a ship! The ship comes closer and closer. It is the Duncan. This is the ship that Ayrton was waiting for long ago. The captain of the ship sees the friends on the rock and saves them. They are very happy to be alive. They bring the gold and diamonds from Captain Nemo with them. They go back to America and start a new life together. They buy a big farm and live happily. They always remember the mysterious island and the kind man who lived under the sea. Their long and dangerous adventure is finally over."
+    ],
+    tr: [
+      "Richmond, 1865. Savaş çok kötü. Beş cesur adam özgür olmak istiyor. İsimleri Cyrus, Gideon, Pencroff, Herbert ve Neb. Ayrıca Top adında sadık bir köpekleri var. Gökyüzünde büyük bir fırtına var. Rüzgar çok hızlı ve güçlü. Adamlar büyük bir balon görüyorlar. Balonun sepetine tırmanıyorlar. Şehirden ve savaştan uzaklaşmak istiyorlar. Balon karanlık bulutların içine doğru yükseliyor. Rüzgar onları büyük okyanusun üzerinden çok uzağa götürüyor. Hava çok soğuk ve onlar çok korkuyorlar. Fırtına günlerce durmuyor. Karayı göremiyorlar. Sadece aşağıdaki suyun büyük dalgalarını görüyorlar. Balon şimdi çok alçakta. Yüksekte kalmak için her şeyi uzağa atmaları gerekiyor.",
+      "Balon denize doğru hızla düşüyor. Adamlar çok korkuyorlar ama cesurlar. Aniden kara görüyorlar. Okyanusun ortasında küçük bir ada. Balon kıyıya yakın bir yerde suya çarpıyor. Büyük bir sıçrama oluyor. Pencroff, Herbert, Neb ve Gideon sahile yüzüyorlar. Çok yorgun ve ıslaklar. Cyrus Smith ve köpeği Top’u arıyorlar. Ama Cyrus ve Top orada değiller. Su çok dalgalı ve rüzgarın sesi çok yüksek. Neb çok üzgün çünkü Cyrus onun en iyi arkadaşı. Arkadaşının ismini bağırıyor ama cevap yok. Dört adam kumun üzerinde duruyor. Tuhaf bir adadalar ve yalnızlar. Yemekleri veya aletleri yok.",
+      "Güneş batıyor ve hava çok karanlık. Dört adam uyumak için bir yer bulmaya ihtiyaç duyuyor. Sahilin yakınında bazı kayalar buluyorlar. Buraya \"Bacalar\" diyorlar çünkü kayaların küçük bir deliği var. Taştan yapılmış küçük bir ev gibi. Rüzgar hala soğuk ama kayaların içinde güvendeler. Cyrus Smith’i düşünüyorlar. Hayatta mı? Suyun içinde mi? Güvende olduğunu umuyorlar. Yarın onu arayacaklar. Ateş yakmak için kibritleri yok. Hayvan avlamak için silahları yok. Sadece elleri ve zihinleri var. Bu ada büyük bir gizem. Burada nasıl yaşayacaklarını öğrenmeleri gerekiyor. Bu onların uzun macerasının başlangıcı.",
+      "Ertesi sabah güneş parlaktır. Neb uyumaz. Kumsalda yürür ve Cyrus'u arar. Çok üzgündür. Aniden köpek Top'u görür. Top kumların üzerinde koşmaktadır. Köpek Neb'i gördüğü için çok mutludur. Top havlar ve yüksek kayalara doğru koşar. Adamlar köpeği takip eder. Top onları sudan uzak, küçük bir mağaraya götürür. Mağaranın içinde bir adam görürler. Bu Cyrus Smith'tir! Yerde yatmaktadır. Çok hareketsizdir ve kıyafetleri ıslaktır. Adamlar ona doğru koşar. Çok mutludurlar çünkü liderleri ölmemiştir. Ona yardım ederler ve su verirler.",
+      "Cyrus Smith gözlerini açar. Çok halsizdir ama hayattadır. Mağaraya nasıl ulaştığını hatırlamaz. Denizdeydi ve sonra karadaydı. Bu büyük bir gizemdir. Ona kim yardım etti? Adamlar Cyrus'u \"Bacalar\"a geri taşırlar. Kumsalda yavaşça yürürler. Şimdi beş adam ve köpek tekrar birliktedir. Şimdi daha iyi hissederler. Ancak aç ve üşümüşlerdir. Ateşleri ve yiyecekleri yoktur. Ada çok büyük ve sessizdir. Ağaçlara ve kuşlara bakarlar. Bu tuhaf adada hayatta kalmanın bir yolunu bulmalıdırlar.",
+      "Cyrus Smith harika bir mühendistir. Bilim hakkında pek çok şey bilir. Arkadaşları için ateş yakmak ister. Ancak kibritleri yoktur. Cyrus saatine bakar. İki saatin camını alır. Cam parçalarının arasına su koyar. Artık bir merceği vardır. Merceği sıcak güneşin altında tutar. Merceğin altına biraz kuru ot koyar. Güneş çok güçlüdür. Yakında biraz duman çıkar. Sonra küçük bir alev oluşur. Adamlar çok heyecanlanır. Artık ateşleri var! Yemek pişirebilirler ve geceleri ısınabilirler. Artık gerçek bir aile gibi hissederler.",
+      "Arkadaşlar yeni evlerini keşfetmeye karar verirler. Birçok uzun ağacın ve renkli kuşun bulunduğu gür bir ormanın içinden yürürler. Cyrus Smith ve arkadaşları, karanın ortasındaki yüksek bir dağa tırmanırlar. Tepeden, her taraflarında mavi denizi görürler. Artık gerçeği biliyorlardır. Bir adadadırlar. Cyrus, ülkelerini onurlandırmak için adaya Lincoln Adası adını vermeye karar verir. Ayrıca nehri ve ormanı da isimlendirirler. Kendilerini bu yeni toprakların kralları gibi hissederler. Ancak, yaşamak için daha iyi bir yer bulmaları gerekir. Denizin yanındaki küçük mağara güvenli değildir çünkü içeri su girebilir. Soğuk kış için güçlü bir eve ihtiyaçları vardır.",
+      "Cyrus Smith çok zekidir ve yeteneklerini kullanır. Yüksek bir tepede büyük bir göl bulur. Gölün yakınında büyük bir taş duvar vardır. Cyrus, taşın arkasında gizli bir mağara olduğunu düşünür. Duvarı açmak için günlerce çok sıkı çalışırlar. Sert kayaları kırmak için ateş ve su kullanırlar. Sonunda, dağın içinde büyük, kuru bir oda bulurlar. Bu mükemmel bir evdir! Oraya Granit Ev adını verirler. Burası yerden yüksektedir, bu yüzden vahşi hayvanlardan korunurlar. Yukarı ve aşağı inmek için ipten yapılmış uzun bir merdiven kullanırlar. Granit Ev'in içinde uyumak ve yemek pişirmek için farklı odaları vardır.",
+      "Adadaki yaşam her geçen gün kolaylaşır. Bir gün Harbert, cebinde tek bir buğday tanesi bulur. Çok küçüktür ama çok önemlidir. Tahılı toprağa dikerler ve dikkatle beklerler. Yakında, birçok bitkileri ve bolca ekmekleri olur. Adamlar ayrıca kayaların içinde demir bulurlar. Cyrus, demirden nasıl aletler yapılacağını bilir. Bıçaklar, çekiçler ve hatta koyun yününden sıcak giysiler yaparlar. Onlar artık sadece kaybolmuş adamlar değiller; onlar kolonistlerdir. Yiyecekleri, ateşleri ve güçlü bir evleri vardır. Ancak Cyrus hala gizemi düşünmektedir. Denizdeyken ilk gün kendisine kimin yardım ettiğini bilmek istemektedir.",
+      "Bir gün, arkadaşlar denizde küçük bir şişe bulurlar. Şişenin içinde bir mesaj vardır. Mesaj, yakınlardaki küçük bir adada bir adam olduğunu söyler. Bu yerin adı Tabor Adası'dır. Arkadaşlar güçlü bir tekne yaparlar ve suyun üzerinde yelken açarlar. Tabor Adası'nda Ayrton adında bir adam bulurlar. Uzun yıllardır yalnız olduğu için yabani bir hayvan gibi görünmektedir. Eskiden kötü bir adamdı ama şimdi çok pişmandır. Ayrton'u Lincoln Adası'na geri getirirler. İlk başta Ayrton çok sessiz ve üzgündür. Ormandaki küçük bir evde kalır. Arkadaşları ona karşı çok naziktir. Yavaşça Ayrton onların arkadaşı olur. Onlara yardım etmek ve iyi bir hayat yaşamak istemektedir.",
+      "Mavi denizde bir gemi görene kadar adadaki hayat huzurludur. İlk başta mutlu olurlar ama sonra siyah bir bayrak görürler. Korsanlar! Geminin birçok büyük topu ve birçok tehlikeli adamı vardır. Korsanlar adayı ve Granit Ev'i ele geçirmek istemektedir. Toplarını dağa doğru ateşlemeye başlarlar. Arkadaşlar evlerinin içine saklanır ve küçük tüfekleriyle karşılık vermeye çalışırlar. Çok korkutucu bir gündür. Korsanlar kumsala gelmek için küçük tekneler kullanırlar. Arkadaşlar her şeyi kaybedeceklerini düşünürler. Korsanlar çok kalabalıktır ve arkadaşlar sadece birkaç kişidir. Bu büyük savaşı tek başlarına kazanamayacakları için yardıma ihtiyaçları vardır. Okyanusa bakarlar ve bir mucize beklerler.",
+      "Aniden denizden yüksek bir ses gelir. Dev bir patlama korsan gemisini vurur. Su havaya çok yükseğe çıkar ve gemi çok hızlı bir şekilde batar. Bütün korsanlar gitmiştir. Arkadaşlar şok olmuş ve şaşırmışlardır. Hiçbir büyük bomba kullanmamışlardır. Cyrus Smith okyanusa bakar ve derin derin düşünür. Hiçbir insanın bunu kolayca yapamayacağını bilmektedir. Gizli arkadaşlarının onları tekrar kurtardığına inanır. Daha sonra kumsalda içinde birçok yararlı şey olan garip bir metal kutu bulurlar. Adanın gizemi büyümektedir. Yalnız olmadıklarını bilirler. Adanın altında veya denizde çok güçlü biri yaşamaktadır ve bu kişi onları gölgelerden izlemektedir.",
+      "Bir gün dağ yüksek sesler çıkarmaya başlar. Tepesinden dumanlar çıkar. Cyrus Smith ve arkadaşları kayaların içinde gizli bir kapı bulurlar. İçeri girerler ve suyun altında çok büyük bir gemi görürler. Bu bir denizaltıdır. Denizaltının içinde yaşlı bir adamla tanışırlar. Onun adı Kaptan Nemo'dur. Çok yaşlı ve yorgundur. Kaptan Nemo onlara kendisinin gizli dostları olduğunu söyler. Onlara ilacı ve alet kutusunu o vermiştir. Onlara altın ve elmaslarla dolu bir sandık verir. Volkan yakında patlayacağı için adayı çabucak terk etmelerini söyler. Veda eder ve güzel gemisinde sessizce ölür.",
+      "Volkan çok tehlikeli hale gelir. Yer sallanır ve dağdan ateşler çıkar. Arkadaşlar çok büyük bir tekne yapmaya çalışırlar ama fazla vakitleri yoktur. Ada küçük parçalara bölünmektedir. Bir sabah dev bir patlama olur. Orman ve evler suyun içinde kaybolur. Denizin üzerinde sadece küçük bir kaya parçası kalır. Arkadaşlar bu kayanın üzerinde dururlar. Hiç yiyecekleri veya suları kalmamıştır. Çok üzgün ve üşümüşlerdir. Büyük okyanusun ortasında öleceklerini düşünürler. Mavi suya bakarlar ve bir mucize beklerler. Adadaki evlerini çok özlerler.",
+      "Küçük kayanın üzerindeki pek çok günden sonra, ufukta çok uzakta bir şey görürler. Bu bir gemidir! Gemi gittikçe yaklaşır. Bu Duncan'dır. Bu, Ayrton'un uzun zaman önce beklediği gemidir. Geminin kaptanı kayanın üzerindeki arkadaşları görür ve onları kurtarır. Hayatta oldukları için çok mutludurlar. Kaptan Nemo'nun altınlarını ve elmaslarını yanlarında götürürler. Amerika'ya dönerler ve birlikte yeni bir hayata başlarlar. Büyük bir çiftlik satın alırlar ve mutlu yaşarlar. Gizemli adayı ve denizin altında yaşayan nazik adamı her zaman hatırlarlar. Uzun ve tehlikeli maceraları sonunda bitmiştir."
+    ],
+    words: {
+      "balloon": "balon",
+      "storm": "fırtına",
+      "island": "ada",
+      "ocean": "okyanus",
+      "shore": "sahil",
+      "mystery": "gizem",
+      "cave": "mağara",
+      "leader": "lider",
+      "weak": "güçsüz",
+      "engineer": "mühendis",
+      "flame": "alev",
+      "forest": "orman",
+      "mountain": "dağ",
+      "stone": "taş",
+      "tools": "aletler",
+      "wheat": "buğday",
+      "bottle": "şişe",
+      "message": "mesaj",
+      "boat": "tekne",
+      "pirate": "korsan",
+      "cannon": "top",
+      "explosion": "patlama",
+      "submarine": "denizaltı",
+      "chest": "sandık",
+      "explode": "patlamak",
+      "remain": "kalmak",
+      "horizon": "ufuk",
+      "adventure": "macera"
+    }
+  }
+,
+  {
+    id: 'classic_david_copperfield',
+    title: "David Copperfield",
+    author: 'Charles Dickens',
+    level: 'A2',
+    coverUrl: '/covers/classic_david_copperfield.webp',
+    en: [
+      "David Copperfield was born in a small village called Blunderstone. His father died before he was born. On the day of his birth, his aunt, Miss Betsey Trotwood, came to visit. She wanted the baby to be a girl. When she found out David was a boy, she was very angry and left quickly. For the first few years, David lived a happy life with his mother and their kind servant, Peggotty. They lived in a cozy house with a beautiful garden. David loved his mother very much, and Peggotty was like a second mother to him. The house was full of love and laughter during those early years. However, this happy time did not last forever. David did not know that his life was about to change.",
+      "One day, David’s mother met a tall, dark man named Mr. Murdstone. David did not like him because he was very stern and never smiled. Soon, Mr. Murdstone married David’s mother and moved into their house. He brought his sister, Jane Murdstone, who was just as cold and strict as he was. They took control of the house and made David’s mother very sad. The happy atmosphere disappeared. Mr. Murdstone believed in firmness, which meant he was very hard on David. David was no longer allowed to play or be happy. He felt like a stranger in his own home. Every day was full of difficult lessons and silence. The Murdstones watched his every move with narrow, unfriendly eyes.",
+      "David found it very hard to study because he was afraid of Mr. Murdstone. One morning, during a lesson, David could not answer a question. Mr. Murdstone became very angry and took David to his room to punish him. When Mr. Murdstone tried to hit him, David was so scared that he bit the man’s hand. This made Mr. Murdstone even more furious. He locked David in his room for five days. During this time, only Peggotty came to the door to whisper kind words to him. Finally, David was told that he was being sent away to a boarding school called Salem House. He said a sad goodbye to his mother and Peggotty, feeling very lonely as the carriage drove away into the cold morning.",
+      "The journey to Salem House was long and lonely. On the way, David met a waiter who ate most of his dinner, but David was too shy to say anything. When he arrived at the school, it was empty because the other boys were on holiday. However, he soon received a terrible punishment. Mr. Murdstone had sent a letter to the school. Because David bit him, David had to wear a large sign on his back every day. The sign said, \"Take care of him. He bites.\" David felt very ashamed and cried because everyone looked at him. He soon met Tommy Traddles, a boy who was often punished but remained cheerful. He also met James Steerforth, a clever and handsome older boy. Steerforth promised to help David, and for a short time, David felt safe in the crowded, noisy school.",
+      "One morning, during a lesson, the headmaster called David to his office. He had very sad news from home. David’s mother was very ill, and soon she passed away. Her new baby died as well. David felt a deep, cold sadness in his heart. He returned to Blunderstone for the funeral. The house was very quiet and dark without his mother’s smile. Mr. Murdstone and his sister were colder than ever. They did not care about David’s feelings. Only Peggotty cried with him and held his hand. David sat by the window and remembered the happy days before Mr. Murdstone arrived. He knew that his life at home was finished. He was now alone in the world, with no one to love him except for his old nurse, Peggotty.",
+      "Mr. Murdstone decided that David should not return to school. Instead, he sent the ten-year-old boy to London to work. David worked at a warehouse called Murdstone and Grinby. The building was old, dirty, and full of rats. His job was to wash empty bottles all day with other poor children. It was hard, boring work, and David felt very miserable. However, he met a man named Mr. Micawber, who was his new landlord. Mr. Micawber was a kind man who spoke with big words and always had financial problems. He often said that \"something would turn up\" to help him. Even though Mr. Micawber had no money, he and his family were friendly to David. Every night, David went back to their small house, feeling a little less lonely in the big, grey city of London.",
+      "Life in London became even harder for David. Mr. Micawber had many debts and was finally sent to a prison for people who could not pay their bills. David visited the family there, but he felt very sad. When the Micawbers left London to find work elsewhere, David felt completely alone again. He hated his job at the dirty warehouse and decided to run away. He remembered that he had an aunt named Miss Betsey Trotwood who lived in Dover. He packed his things in a box, but a mean young man stole his box and all his money. David had nothing left, but he began his long walk to Dover anyway. He walked through the busy streets and out into the quiet countryside, hoping to find a new life.",
+      "The journey to Dover was very difficult for a young boy. David walked for six long days under the hot sun and the cold moon. He had no money for food, so he had to sell his jacket and his waistcoat to buy some bread. He slept in the fields near haystacks, feeling hungry and frightened by the sounds of the night. His shoes became thin and his feet were very sore. By the time he reached the town of Dover, his clothes were torn and he was covered in dust. He looked like a beggar, and many people were unkind to him. Finally, a friendly woman told him where Miss Betsey Trotwood lived. He walked up a hill to a small, neat house with a beautiful garden.",
+      "David stood at the garden gate and saw a tall, serious woman wearing a large hat. It was his aunt, Miss Betsey. When he told her he was David Copperfield, her nephew, she was so surprised that she sat down on the grass. She took him into her house and asked her friend, Mr. Dick, for advice. Mr. Dick was a kind man who told her to give David a bath. A few days later, Mr. Murdstone and his sister came to the house to take David back. However, Aunt Betsey was very brave. She told Mr. Murdstone that he was a cruel man and that he had treated David’s mother very badly. She refused to let them take him. Aunt Betsey decided to look after David herself, and for the first time in years, David felt safe.",
+      "Aunt Betsey wanted David to have a good education, so she sent him to a school in Canterbury. While he was there, David lived with a kind man named Mr. Wickfield. Mr. Wickfield was Aunt Betsey’s lawyer and lived in a quiet, old house. There, David met Mr. Wickfield’s daughter, Agnes. She was a very kind and wise girl who always helped her father. David and Agnes became very close friends, and she was like a sister to him. For the first time, David was happy at school. He studied hard and learned many things. The years at Canterbury were very peaceful, and David grew from a small boy into a clever young man. He was no longer the lonely child who worked in a dark warehouse.",
+      "After David finished his school years, he felt ready to see more of the world. Aunt Betsey suggested that he should go on a short trip before choosing his future career. While traveling, David was surprised to meet an old friend from his childhood, James Steerforth. Steerforth was older and very handsome, and David still admired him very much. Together, they decided to visit the town of Yarmouth to see David's old nurse, Peggotty. The visit was very happy at first. They met Peggotty’s brother and her nephew, Ham, and a young girl named Little Em'ly. However, David did not know that his friend Steerforth was not as kind as he appeared. He did not realize that this visit would bring trouble to the Peggotty family later.",
+      "Soon, David moved to London to start his career as a lawyer's assistant. He began working for a gentleman named Mr. Spenlow. One day, Mr. Spenlow invited David to his house for dinner. There, David saw Mr. Spenlow’s daughter, Dora. She was beautiful and very sweet, and David fell in love with her the moment he saw her. But life in London was not only about love. David also met Uriah Heep again, a man who worked for Mr. Wickfield. Uriah was a strange, cold man with very thin, red hands. He said he was very humble, but David did not trust him. David felt worried because Uriah was gaining more power over Mr. Wickfield and Agnes. David knew he had to keep a close eye on his old friends.",
+      "David was very happy when he finally married Dora Spenlow. She was a kind and beautiful wife, but she did not know how to manage a house. However, their time together was short because Dora became very sick. David stayed by her side and tried to make her feel better, but she slowly grew weaker. Before she died, Dora told David that he should find a stronger partner in the future. David was heartbroken and felt very lonely after losing his young wife. He decided to travel to other countries to forget his sadness. During this difficult time, he realized how much he missed his old friend, Agnes Wickfield. He started to think about her wise words and her constant kindness throughout his life.",
+      "While David was away, his friend Mr. Micawber discovered a big secret about Uriah Heep. Uriah was a dishonest man who had been stealing money from Mr. Wickfield for many years. He also wanted to control Agnes and her father’s business. Mr. Micawber worked for Uriah, so he saw all the bad things Uriah did. With the help of Aunt Betsey and David, Mr. Micawber showed everyone the truth. Uriah was punished for his crimes, and Mr. Wickfield was finally free from his control. This was a great victory for David’s friends. Aunt Betsey was happy because she got her money back too. Mr. Micawber and his family decided to start a new, honest life in Australia, where they finally became successful and happy.",
+      "When David returned to England, he went straight to see Agnes. He finally understood that Agnes was the person he truly loved all along. She had always been there for him, like a bright light in the dark. David told Agnes his true feelings, and he was very happy to learn that she loved him too. They got married in a beautiful ceremony and lived together in a happy home. David became a very successful and famous writer. He and Agnes had many children, and Aunt Betsey was a proud great-aunt. After many years of struggle and hard work, David Copperfield finally found the peace and family he had always wanted. His long journey from a lonely boy to a happy man was finally complete."
+    ],
+    tr: [
+      "David Copperfield, Blunderstone adında küçük bir köyde doğdu. Babası o doğmadan önce ölmüştü. Doğduğu gün, halası Bayan Betsey Trotwood ziyarete geldi. Bebeğin kız olmasını istiyordu. David'in erkek olduğunu öğrenince çok sinirlendi ve hemen oradan ayrıldı. İlk birkaç yıl boyunca David, annesi ve nazik yardımcıları Peggotty ile mutlu bir hayat yaşadı. Güzel bir bahçesi olan sıcak bir evde oturuyorlardı. David annesini çok seviyordu ve Peggotty onun için ikinci bir anne gibiydi. O ilk yıllarda ev sevgi ve kahkaha doluydu. Ancak bu mutlu zaman sonsuza dek sürmedi. David hayatının değişmek üzere olduğundan habersizdi.",
+      "Bir gün David’in annesi, Bay Murdstone adında uzun boylu ve esmer bir adamla tanıştı. David ondan hiç hoşlanmadı çünkü adam çok sertti ve hiç gülümsemiyordu. Kısa süre sonra Bay Murdstone, David’in annesiyle evlendi ve evlerine taşındı. Yanında kendisi kadar soğuk ve katı olan kız kardeşi Jane Murdstone’u da getirdi. Evin kontrolünü ele geçirdiler ve David’in annesini çok üzdüler. Mutlu atmosfer yok oldu. Bay Murdstone kararlılığa inanıyordu, bu da David'e karşı çok sert olduğu anlamına geliyordu. David'in artık oyun oynamasına veya mutlu olmasına izin verilmiyordu. Kendi evinde bir yabancı gibi hissediyordu. Her gün zor derslerle ve sessizlikle doluydu. Murdstone'lar her hareketini dostça olmayan gözlerle izliyordu.",
+      "Bay Murdstone’dan korktuğu için David ders çalışmakta çok zorlanıyordu. Bir sabah ders sırasında David bir soruyu cevaplayamadı. Bay Murdstone çok sinirlendi ve David’i cezalandırmak için odasına götürdü. Bay Murdstone ona vurmaya çalışınca David o kadar korktu ki adamın elini ısırdı. Bu durum Bay Murdstone’u daha da öfkelendirdi. David’i beş gün boyunca odasına kilitledi. Bu süre zarfında sadece Peggotty kapıya gelip ona nazik sözler fısıldadı. Sonunda David’e Salem House adında bir yatılı okula gönderileceği söylendi. Arabayla soğuk sabaha doğru uzaklaşırken annesine ve Peggotty’ye çok yalnız hissederek veda etti.",
+      "Salem House yolculuğu uzundu ve David kendini yalnız hissediyordu. Yolda yemeğinin çoğunu yiyen bir garsonla tanıştı ama David bir şey söyleyemeyecek kadar utangaçtı. Okula vardığında diğer çocuklar tatilde olduğu için orası boştu. Ancak kısa süre sonra korkunç bir ceza aldı. Bay Murdstone okula bir mektup göndermişti. David onu ısırdığı için her gün sırtında büyük bir tabela taşımak zorundaydı. Tabelada \"Ona dikkat edin. Isırır.\" yazıyordu. David çok utandı ve herkes ona baktığı için ağladı. Kısa süre sonra, sık sık ceza alan ama neşesini kaybetmeyen Tommy Traddles ile tanıştı. Ayrıca zeki ve yakışıklı bir çocuk olan James Steerforth ile tanıştı. Steerforth, David'e yardım edeceğine söz verdi ve kısa bir süreliğine David o kalabalık ve gürültülü okulda kendini güvende hissetti.",
+      "Bir sabah ders sırasında okul müdürü David'i ofisine çağırdı. Evden çok üzücü bir haber gelmişti. David'in annesi çok hastaydı ve kısa süre sonra vefat etti. Yeni doğan bebeği de ölmüştü. David kalbinde derin ve soğuk bir üzüntü hissetti. Cenaze için Blunderstone'a döndü. Ev, annesinin gülümsemesi olmadan çok sessiz ve karanlıktı. Bay Murdstone ve kız kardeşi her zamankinden daha soğuktu. David'in duygularını hiç umursamadılar. Sadece Peggotty onunla birlikte ağladı ve elini tuttu. David pencerenin kenarında oturdu ve Bay Murdstone gelmeden önceki mutlu günlerini hatırladı. Evdeki hayatının artık bittiğini biliyordu. Artık dünyada yapayalnızdı ve eski dadısı Peggotty dışında onu sevecek kimsesi kalmamıştı.",
+      "Bay Murdstone, David'in okula dönmemesine karar verdi. Bunun yerine on yaşındaki çocuğu çalışması için Londra'ya gönderdi. David, Murdstone ve Grinby adında bir depoda çalışmaya başladı. Bina eski, kirli ve farelerle doluydu. İşi, bütün gün diğer fakir çocuklarla birlikte boş şişeleri yıkamaktı. Bu zor ve sıkıcı bir işti ve David kendini çok mutsuz hissediyordu. Ancak yeni ev sahibi olan Bay Micawber adında bir adamla tanıştı. Bay Micawber büyük kelimelerle konuşan ve her zaman maddi sorunları olan nazik bir adamdı. Sık sık kendisine yardım edecek \"bir şeylerin çıkacağını\" söylerdi. Bay Micawber'ın hiç parası olmasa da o ve ailesi David'e karşı dostça davrandılar. Her gece David onların küçük evine dönüyor, büyük ve gri Londra şehrinde kendini biraz daha az yalnız hissediyordu.",
+      "Londra'daki hayat David için daha da zorlaştı. Bay Micawber'ın çok borcu vardı ve sonunda faturalarını ödeyemeyen insanlar için olan bir hapishaneye gönderildi. David aileyi orada ziyaret etti ama kendini çok üzgün hissediyordu. Micawber ailesi başka bir yerde iş bulmak için Londra'dan ayrıldığında, David yine tamamen yalnız hissetti. Kirli depodaki işinden nefret ediyordu ve kaçmaya karar verdi. Dover'da yaşayan Bayan Betsey Trotwood adında bir halası olduğunu hatırladı. Eşyalarını bir kutuya koydu ama kötü kalpli genç bir adam kutusunu ve tüm parasını çaldı. David'in hiçbir şeyi kalmamıştı ama yine de Dover'a doğru uzun yürüyüşüne başladı. Yeni bir hayat bulma umuduyla kalabalık sokaklardan geçip sessiz kırsala doğru yürüdü.",
+      "Dover'a yolculuk genç bir çocuk için çok zordu. David sıcak güneşin ve soğuk ayın altında altı uzun gün boyunca yürüdü. Yemek alacak parası yoktu, bu yüzden biraz ekmek alabilmek için ceketini ve yeleğini satmak zorunda kaldı. Tarlalardaki saman yığınlarının yanında, gecenin seslerinden korkarak ve acıkmış bir halde uyudu. Ayakkabıları inceldi ve ayakları çok ağrıyordu. Dover kasabasına vardığında kıyafetleri yırtılmıştı ve her yeri toz içindeydi. Bir dilenci gibi görünüyordu ve birçok insan ona kaba davranıyordu. Sonunda, arkadaş canlısı bir kadın ona Bayan Betsey Trotwood'un nerede yaşadığını söyledi. Bir tepeden yukarı tırmanarak güzel bahçesi olan küçük, düzenli bir eve ulaştı.",
+      "David bahçe kapısında durdu ve büyük bir şapka takan uzun boylu, ciddi bir kadın gördü. Bu halası Bayan Betsey'di. Ona yeğeni David Copperfield olduğunu söylediğinde, kadın o kadar şaşırdı ki çimenlerin üzerine oturdu. Onu evine aldı ve tavsiye almak için arkadaşı Bay Dick'e danıştı. Bay Dick, ona David'e bir banyo yaptırmasını söyleyen nazik bir adamdı. Birkaç gün sonra, Bay Murdstone ve kız kardeşi David'i geri götürmek için eve geldiler. Ancak, Betsey Hala çok cesurdu. Bay Murdstone'a onun zalim bir adam olduğunu ve David'in annesine çok kötü davrandığını söyledi. Onu götürmelerine izin vermeyi reddetti. Betsey Hala David'e kendisi bakmaya karar verdi ve David yıllar sonra ilk kez kendini güvende hissetti.",
+      "Betsey Hala, David'nin iyi bir eğitim almasını istiyordu, bu yüzden onu Canterbury'deki bir okula gönderdi. David oradayken Bay Wickfield adında nazik bir adamla birlikte yaşadı. Bay Wickfield, Betsey Hala'nın avukatıydı ve sessiz, eski bir evde yaşıyordu. David orada Bay Wickfield’ın kızı Agnes ile tanıştı. Babasına her zaman yardım eden çok nazik ve bilge bir kızdı. David ve Agnes çok yakın arkadaş oldular ve Agnes ona bir kız kardeş gibiydi. David ilk kez okulda mutluydu. Çok çalıştı ve birçok şey öğrendi. Canterbury'deki yıllar çok huzurlu geçti ve David küçük bir çocuktan zeki bir gence dönüştü. Artık karanlık bir depoda çalışan o yalnız çocuk değildi.",
+      "David okul yıllarını bitirdikten sonra dünyayı daha fazla görmeye hazır hissetti. Betsey Hala, gelecekteki mesleğini seçmeden önce kısa bir geziye çıkmasını önerdi. Yolculuk sırasında David, çocukluk arkadaşı James Steerforth ile karşılaştığına şaşırdı. Steerforth daha büyüktü ve çok yakışıklıydı; David ona hâlâ çok hayrandı. Birlikte David’in eski bakıcısı Peggotty’yi görmek için Yarmouth kasabasını ziyaret etmeye karar verdiler. Ziyaret ilk başta çok mutluydu. Peggotty’nin erkek kardeşiyle, yeğeni Ham ile ve Küçük Em'ly adında genç bir kızla tanıştılar. Ancak David, arkadaşı Steerforth'un göründüğü kadar nazik olmadığını bilmiyordu. Bu ziyaretin daha sonra Peggotty ailesine dert getireceğini fark etmemişti.",
+      "Yakında David, bir avukat yardımcısı olarak kariyerine başlamak için Londra'ya taşındı. Bay Spenlow adında bir beyefendi için çalışmaya başladı. Bir gün Bay Spenlow, David'i akşam yemeği için evine davet etti. David orada Bay Spenlow'un kızı Dora'yı gördü. Dora güzel ve çok tatlıydı; David onu gördüğü an ona aşık oldu. Ancak Londra'daki hayat sadece aşkla ilgili değildi. David, Bay Wickfield için çalışan Uriah Heep ile tekrar karşılaştı. Uriah, çok ince, kırmızı elleri olan garip ve soğuk bir adamdı. Çok mütevazı olduğunu söylüyordu ama David ona güvenmiyordu. David endişeliydi çünkü Uriah, Bay Wickfield ve Agnes üzerinde daha fazla güç kazanıyordu. David, eski arkadaşlarını yakından takip etmesi gerektiğini biliyordu.",
+      "David, Dora Spenlow ile evlendiğinde çok mutluydu. Dora nazik ve güzel bir eşti ama bir evi nasıl idare edeceğini bilmiyordu. Ancak, Dora çok hastalandığı için birlikte geçirdikleri zaman kısaydı. David onun yanında kaldı ve onu daha iyi hissettirmeye çalıştı ama Dora yavaş yavaş zayıfladı. Ölmeden önce Dora, David'e gelecekte daha güçlü bir eş bulması gerektiğini söyledi. Genç karısını kaybettikten sonra David'in kalbi kırıldı ve kendini çok yalnız hissetti. Üzüntüsünü unutmak için başka ülkelere seyahat etmeye karar verdi. Bu zor dönemde, eski dostu Agnes Wickfield'ı ne kadar çok özlediğini fark etti. Onun bilgece sözlerini ve hayatı boyunca gösterdiği bitmek bilmeyen nezaketini düşünmeye başladı.",
+      "David uzaktayken, arkadaşı Bay Micawber, Uriah Heep hakkında büyük bir sır keşfetti. Uriah, uzun yıllardır Bay Wickfield'dan para çalan dürüst olmayan bir adamdı. Ayrıca Agnes'i ve babasının işini kontrol etmek istiyordu. Bay Micawber, Uriah için çalışıyordu, bu yüzden Uriah'ın yaptığı tüm kötü şeyleri gördü. Betsey Hala ve David'in yardımıyla Bay Micawber herkese gerçeği gösterdi. Uriah suçlarından dolayı cezalandırıldı ve Bay Wickfield sonunda onun kontrolünden kurtuldu. Bu, David'in arkadaşları için büyük bir zaferdi. Betsey Hala da parasını geri aldığı için mutluydu. Bay Micawber ve ailesi, sonunda başarılı ve mutlu oldukları Avustralya'da yeni ve dürüst bir hayata başlamaya karar verdiler.",
+      "David İngiltere'ye döndüğünde, doğruca Agnes'i görmeye gitti. Sonunda Agnes'in başından beri gerçekten sevdiği kişi olduğunu anladı. Agnes her zaman onun yanındaydı, karanlıktaki parlak bir ışık gibiydi. David, Agnes'e gerçek duygularını anlattı ve Agnes'in de onu sevdiğini öğrenince çok mutlu oldu. Güzel bir törenle evlendiler ve mutlu bir evde birlikte yaşadılar. David çok başarılı ve ünlü bir yazar oldu. Agnes ile birçok çocukları oldu ve Betsey Hala gururlu bir büyükanne figürüydü. Yıllar süren mücadele ve sıkı çalışmanın ardından David Copperfield sonunda her zaman istediği huzuru ve aileyi buldu. Yalnız bir çocuktan mutlu bir adama uzanan uzun yolculuğu nihayet tamamlanmıştı."
+    ],
+    words: {
+      "servant": "yardımcı",
+      "stern": "sert",
+      "firmness": "kararlılık",
+      "punish": "cezalandırmak",
+      "bite": "ısırmak",
+      "boarding school": "yatılı okul",
+      "ashamed": "utanmış",
+      "passed away": "vefat etmek",
+      "funeral": "cenaze",
+      "warehouse": "depo",
+      "miserable": "perişan",
+      "landlord": "ev sahibi",
+      "debt": "borç",
+      "prison": "hapishane",
+      "waistcoat": "yelek",
+      "beggar": "dilenci",
+      "nephew": "yeğen (erkek)",
+      "cruel": "zalim",
+      "education": "eğitim",
+      "lawyer": "avukat",
+      "admire": "hayran olmak",
+      "career": "kariyer",
+      "humble": "mütevazı",
+      "trust": "güvenmek",
+      "manage": "idare etmek",
+      "heartbroken": "kalbi kırık",
+      "dishonest": "dürüst olmayan",
+      "punished": "cezalandırılmış",
+      "victory": "zafer",
+      "ceremony": "tören"
     }
   }
 ];
