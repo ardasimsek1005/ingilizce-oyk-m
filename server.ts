@@ -5,8 +5,30 @@ import { createServer as createViteServer } from "vite";
 import { GoogleGenAI, Type } from "@google/genai";
 import dotenv from "dotenv";
 import fs from "fs";
+import crypto from "crypto";
 import { OFFLINE_DICTIONARY } from "./src/dictionary";
 import { GLOBAL_DICTIONARY } from "./src/data";
+
+// Secure cryptographic password hashing (PBKDF2)
+function hashPassword(password: string): string {
+  const salt = crypto.randomBytes(16).toString("hex");
+  const hash = crypto.pbkdf2Sync(password, salt, 1000, 64, "sha512").toString("hex");
+  return `${salt}:${hash}`;
+}
+
+function verifyPassword(password: string, storedValue: string): boolean {
+  const parts = storedValue.split(":");
+  const salt = parts[0];
+  const originalHash = parts[1];
+  if (!salt || !originalHash) return false;
+  const hash = crypto.pbkdf2Sync(password, salt, 1000, 64, "sha512").toString("hex");
+  return hash === originalHash;
+}
+
+// Hash email using SHA-256 for secure database keys
+function hashEmail(email: string): string {
+  return crypto.createHash("sha256").update(email.toLowerCase().trim()).digest("hex");
+}
 // STORIES_PART1 ve STORIES_PART2 server'a import edilmiyor
 // (600KB+783KB = çok büyük, Render free tier 512MB RAM'i aşıyor)
 // Çeviri için offline dictionary ve CEFR levels kullanılıyor
@@ -42,6 +64,17 @@ async function startServer() {
 
   // Use JSON parsing middleware with a larger body limit for base64 photo uploads
   app.use(express.json({ limit: "15mb" }));
+
+  // Enable CORS middleware for Capacitor / cross-origin requests
+  app.use((req, res, next) => {
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+    res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+    if (req.method === "OPTIONS") {
+      return res.sendStatus(200);
+    }
+    next();
+  });
 
   // Load pre-calculated CEFR levels
   const cefrLevelsPath = path.join(process.cwd(), "src", "word_cefr_levels.json");
@@ -538,6 +571,21 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
       try {
         usersData = JSON.parse(fs.readFileSync(USERS_DATA_PATH, "utf8"));
         console.log(`[Linguist Sync] Loaded dynamic users database with ${Object.keys(usersData).length} accounts.`);
+        
+        // Migrate legacy plain text email keys to hashed keys
+        let migrated = false;
+        for (const key of Object.keys(usersData)) {
+          if (key.includes("@")) {
+            const hashedKey = hashEmail(key);
+            usersData[hashedKey] = usersData[key];
+            delete usersData[key];
+            migrated = true;
+          }
+        }
+        if (migrated) {
+          console.log("[Linguist Security] Upgraded legacy plain-text email database keys to SHA-256 hashes.");
+          saveUsersData();
+        }
       } catch (err) {
         console.error("Failed to load users data:", err);
       }
@@ -567,13 +615,29 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
     if (!email || !email.includes("@")) {
       return res.status(400).json({ error: "Geçersiz email adresi." });
     }
+
+    const cleanEmail = email.toLowerCase().trim();
+    const hashedEmail = hashEmail(cleanEmail);
+    const userRecord = usersData[hashedEmail];
     
-    usersData[email.toLowerCase().trim()] = {
-      data,
-      updatedAt: new Date().toISOString()
-    };
+    if (userRecord) {
+      // Authenticate token for existing users
+      const authHeader = req.headers.authorization;
+      const token = authHeader && authHeader.startsWith("Bearer ") ? authHeader.substring(7) : null;
+      const validTokens = userRecord.tokens || [];
+
+      if (!token || !validTokens.includes(token)) {
+        return res.status(401).json({ error: "Oturumunuz geçersiz veya sonlandırılmış. Lütfen tekrar giriş yapın. ⚠️" });
+      }
+
+      userRecord.data = data;
+      userRecord.updatedAt = new Date().toISOString();
+    } else {
+      // If user does not exist at all, we require them to go through /api/auth first
+      return res.status(401).json({ error: "Öncelikle kayıt olmanız gerekmektedir. ⚠️" });
+    }
+
     saveUsersData();
-    
     return res.json({ success: true, message: "İlerleme başarıyla senkronize edildi." });
   });
 
@@ -584,12 +648,127 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
       return res.status(400).json({ error: "Geçersiz email adresi." });
     }
     
-    const userRecord = usersData[email.toLowerCase().trim()];
+    const cleanEmail = email.toLowerCase().trim();
+    const hashedEmail = hashEmail(cleanEmail);
+    const userRecord = usersData[hashedEmail];
     if (!userRecord) {
       return res.json({ found: false, data: null });
     }
+
+    // Authenticate token
+    const authHeader = req.headers.authorization;
+    const token = authHeader && authHeader.startsWith("Bearer ") ? authHeader.substring(7) : null;
+    const validTokens = userRecord.tokens || [];
+
+    if (!token || !validTokens.includes(token)) {
+      return res.status(401).json({ error: "Oturumunuz geçersiz veya sonlandırılmış. Lütfen tekrar giriş yapın. ⚠️" });
+    }
     
     return res.json({ found: true, data: userRecord.data });
+  });
+
+  // Auth endpoint - Register or login user with password or token
+  app.post("/api/auth", (req, res) => {
+    try {
+      const { email, password, token, provider, isExternal } = req.body;
+      if (!email || !email.includes("@")) {
+        return res.status(400).json({ error: "Geçersiz e-posta adresi. ⚠️" });
+      }
+
+      const cleanEmail = email.toLowerCase().trim();
+      const hashedEmail = hashEmail(cleanEmail);
+      let userRecord = usersData[hashedEmail];
+
+      // Case 1: Token verification (auto-login/linking)
+      if (token) {
+        if (!userRecord || !userRecord.tokens || !userRecord.tokens.includes(token)) {
+          return res.status(401).json({ error: "Kayıtlı oturum anahtarı geçersiz veya süresi dolmuş. ⚠️" });
+        }
+        return res.json({ success: true, token, isNew: false, message: "Kayıtlı oturum doğrulandı." });
+      }
+
+      // Case 2: External provider login (trusted auth)
+      if (isExternal) {
+        const sessionToken = crypto.randomBytes(32).toString("hex");
+        if (!userRecord) {
+          // Create new account for this external provider
+          usersData[hashedEmail] = {
+            password: "", // empty password for external signups
+            tokens: [sessionToken],
+            data: {},
+            updatedAt: new Date().toISOString()
+          };
+          saveUsersData();
+          return res.json({ success: true, token: sessionToken, isNew: true, message: "Yeni hesap başarıyla oluşturuldu." });
+        } else {
+          // Initialize tokens array if it doesn't exist
+          userRecord.tokens = userRecord.tokens || [];
+          userRecord.tokens.push(sessionToken);
+          if (userRecord.tokens.length > 5) {
+            userRecord.tokens.shift();
+          }
+          userRecord.updatedAt = new Date().toISOString();
+          saveUsersData();
+          return res.json({ success: true, token: sessionToken, isNew: false, message: "Giriş başarılı." });
+        }
+      }
+
+      // Case 3: Password verification
+      if (!password || password.length < 6) {
+        return res.status(400).json({ error: "Şifre en az 6 karakter olmalıdır. ⚠️" });
+      }
+
+      const sessionToken = crypto.randomBytes(32).toString("hex");
+
+      if (!userRecord) {
+        // Create new account with hashed password
+        usersData[hashedEmail] = {
+          password: hashPassword(password),
+          tokens: [sessionToken],
+          data: {},
+          updatedAt: new Date().toISOString()
+        };
+        saveUsersData();
+        return res.json({ success: true, token: sessionToken, isNew: true, message: "Yeni hesap başarıyla oluşturuldu." });
+      } else {
+        // Initialize tokens array if it doesn't exist
+        userRecord.tokens = userRecord.tokens || [];
+
+        // Check if legacy password is plain text
+        if (!userRecord.password) {
+          // If account exists but has no password field, set hashed password
+          userRecord.password = hashPassword(password);
+          saveUsersData();
+        } else if (!userRecord.password.includes(":")) {
+          // Plain text legacy password check
+          if (userRecord.password !== password) {
+            return res.status(401).json({ error: "Girdiğiniz şifre bu hesapla eşleşmiyor. Lütfen doğru şifreyi girin. ⚠️" });
+          }
+          // Upgrade legacy plain text password to hashed format
+          userRecord.password = hashPassword(password);
+          saveUsersData();
+        } else {
+          // Hashed password check
+          if (!verifyPassword(password, userRecord.password)) {
+            return res.status(401).json({ error: "Girdiğiniz şifre bu hesapla eşleşmiyor. Lütfen doğru şifreyi girin. ⚠️" });
+          }
+        }
+
+        // Add the new session token
+        userRecord.tokens.push(sessionToken);
+        // Limit active tokens count per user to 5 to prevent bloating
+        if (userRecord.tokens.length > 5) {
+          userRecord.tokens.shift();
+        }
+        userRecord.updatedAt = new Date().toISOString();
+        saveUsersData();
+
+        return res.json({ success: true, token: sessionToken, isNew: false, message: "Giriş başarılı." });
+      }
+    } catch (err) {
+      console.error("Auth error:", err);
+      return res.status(500).json({ error: "Kimlik doğrulaması sırasında sunucu hatası oluştu." });
+    }
   });
 
   // Health check API

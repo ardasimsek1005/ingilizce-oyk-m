@@ -30,6 +30,16 @@ const getDaysDifference = (dateStr1: string, dateStr2: string) => {
   const diffTime = d1.getTime() - d2.getTime();
   return Math.round(diffTime / (1000 * 60 * 60 * 24));
 };
+const getApiBase = () => {
+  try {
+    if (window.location.protocol === 'capacitor:' || window.location.hostname === 'localhost') {
+      return 'https://ingilizce-oyk-m.onrender.com';
+    }
+    return '';
+  } catch {
+    return '';
+  }
+};
 
 const DEFAULT_STATS: UserStats = {
   learnedWordsCount: 0,
@@ -576,7 +586,7 @@ export default function App() {
 
   // Fetch Google Client ID Config on mount
   useEffect(() => {
-    fetch('/api/config')
+    fetch(`${getApiBase()}/api/config`)
       .then(res => res.json())
       .then(cfg => {
         if (cfg.googleClientId) {
@@ -606,10 +616,13 @@ export default function App() {
         }
       };
 
-      fetch('/api/sync', {
+      const syncToken = localStorage.getItem('linguist_session_token_' + userEmail.toLowerCase().trim());
+
+      fetch(`${getApiBase()}/api/sync`, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          ...(syncToken ? { 'Authorization': `Bearer ${syncToken}` } : {})
         },
         body: JSON.stringify(payload)
       })
@@ -842,14 +855,23 @@ export default function App() {
       }
     };
 
-    fetch('/api/sync', {
+    const syncToken = localStorage.getItem('linguist_session_token_' + emailToSync.toLowerCase().trim());
+
+    fetch(`${getApiBase()}/api/sync`, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        ...(syncToken ? { 'Authorization': `Bearer ${syncToken}` } : {})
       },
       body: JSON.stringify(payload)
     })
-    .then(res => res.json())
+    .then(res => {
+      if (res.status === 401) {
+        handleGoogleLogout();
+        throw new Error('Oturum sonlandırıldı. ⚠️');
+      }
+      return res.json();
+    })
     .then(() => {
       setSyncStatus('synced');
     })
@@ -859,7 +881,7 @@ export default function App() {
     });
   };
 
-  const handleGoogleLogin = (email: string, name?: string, picture?: string, provider = 'google') => {
+  const handleGoogleLogin = (email: string, name?: string, picture?: string, provider = 'google', token?: string) => {
     const finalEmail = email.toLowerCase().trim();
     
     // Check if already logged in - if so, this is a link action
@@ -877,138 +899,188 @@ export default function App() {
     const finalName = name || finalEmail.split('@')[0];
     const finalAvatar = picture || AVATAR_OPTIONS[0];
 
-    setUserEmail(finalEmail);
-    localStorage.setItem('linguist_user_email', finalEmail);
+    const completeLoginWithToken = (activeToken: string) => {
+      localStorage.setItem('linguist_session_token_' + finalEmail, activeToken);
 
-    setLoginProvider(provider);
-    localStorage.setItem('linguist_login_provider', provider);
+      setUserEmail(finalEmail);
+      localStorage.setItem('linguist_user_email', finalEmail);
 
-    const initialLinked = [provider];
-    setLinkedProviders(initialLinked);
-    localStorage.setItem('linguist_linked_providers', JSON.stringify(initialLinked));
+      setLoginProvider(provider);
+      localStorage.setItem('linguist_login_provider', provider);
 
-    setUserName(finalName);
-    localStorage.setItem('linguist_user_name', finalName);
+      const initialLinked = [provider];
+      setLinkedProviders(initialLinked);
+      localStorage.setItem('linguist_linked_providers', JSON.stringify(initialLinked));
 
-    setUserAvatar(finalAvatar);
-    localStorage.setItem('linguist_user_avatar', finalAvatar);
+      setUserName(finalName);
+      localStorage.setItem('linguist_user_name', finalName);
 
-    // Fetch progress from server
-    setSyncStatus('syncing');
-    fetch(`/api/sync?email=${encodeURIComponent(finalEmail)}`)
-      .then(res => res.json())
-      .then(resData => {
-        setSyncStatus('synced');
-        if (resData.found && resData.data) {
-          const cloud = resData.data;
-          
-          if (cloud.stats) {
-            const todayStr = getLocalDateString();
-            const lastActive = cloud.stats.lastActiveDate;
-            let finalStats = { ...cloud.stats };
+      setUserAvatar(finalAvatar);
+      localStorage.setItem('linguist_user_avatar', finalAvatar);
 
-            if (!lastActive) {
-              finalStats.dailyStreak = 1;
-              finalStats.lastActiveDate = todayStr;
-            } else {
-              const diff = getDaysDifference(todayStr, lastActive);
-              if (diff === 1) {
-                finalStats.dailyStreak = finalStats.dailyStreak + 1;
-                finalStats.lastActiveDate = todayStr;
-              } else if (diff > 1) {
+      // Fetch progress from server
+      setSyncStatus('syncing');
+
+      fetch(`${getApiBase()}/api/sync?email=${encodeURIComponent(finalEmail)}`, {
+        headers: { 'Authorization': `Bearer ${activeToken}` }
+      })
+        .then(res => {
+          if (res.status === 401) {
+            handleGoogleLogout();
+            throw new Error('Oturum sonlandırıldı. ⚠️');
+          }
+          return res.json();
+        })
+        .then(resData => {
+          setSyncStatus('synced');
+          if (resData.found && resData.data) {
+            const cloud = resData.data;
+            
+            if (cloud.stats) {
+              const todayStr = getLocalDateString();
+              const lastActive = cloud.stats.lastActiveDate;
+              let finalStats = { ...cloud.stats };
+
+              if (!lastActive) {
                 finalStats.dailyStreak = 1;
                 finalStats.lastActiveDate = todayStr;
-              } else if (diff < 0) {
-                finalStats.lastActiveDate = todayStr;
-              }
-            }
-
-            setStats(finalStats);
-            localStorage.setItem(`linguist_stats_v11_${finalEmail}`, JSON.stringify(finalStats));
-          }
-          if (cloud.books) {
-            const sanitizedParsed = Array.isArray(cloud.books) ? cloud.books.filter(Boolean).map((b: any) => ({
-              ...b,
-              percentageCompleted: typeof b.percentageCompleted === 'number' ? b.percentageCompleted : 0,
-              currentPage: typeof b.currentPage === 'number' ? b.currentPage : 0,
-              pagesLeft: typeof b.pagesLeft === 'number' ? b.pagesLeft : (b.totalPages || 0),
-              totalPages: typeof b.totalPages === 'number' ? b.totalPages : 0,
-              isCompleted: !!b.isCompleted,
-              isFavorited: !!b.isFavorited,
-              isStarted: !!b.isStarted
-            })) : [];
-            
-            const merged: Book[] = [...sanitizedParsed];
-            INITIAL_BOOKS.forEach(initBook => {
-              const existingIdx = merged.findIndex(b => b.id === initBook.id);
-              if (existingIdx === -1) {
-                merged.push(initBook);
               } else {
-                merged[existingIdx] = {
-                  ...initBook,
-                  percentageCompleted: merged[existingIdx].percentageCompleted ?? 0,
-                  currentPage: merged[existingIdx].currentPage ?? 0,
-                  pagesLeft: merged[existingIdx].pagesLeft ?? initBook.totalPages,
-                  isCompleted: !!merged[existingIdx].isCompleted,
-                  isFavorited: !!merged[existingIdx].isFavorited,
-                  isStarted: !!merged[existingIdx].isStarted
-                };
+                const diff = getDaysDifference(todayStr, lastActive);
+                if (diff === 1) {
+                  finalStats.dailyStreak = finalStats.dailyStreak + 1;
+                  finalStats.lastActiveDate = todayStr;
+                } else if (diff > 1) {
+                  finalStats.dailyStreak = 1;
+                  finalStats.lastActiveDate = todayStr;
+                } else if (diff < 0) {
+                  finalStats.lastActiveDate = todayStr;
+                }
               }
-            });
-            setBooks(merged);
-            localStorage.setItem(`linguist_books_v11_${finalEmail}`, JSON.stringify(stripBooksForSync(merged)));
-          }
-          if (cloud.vocabulary) {
-            setVocabulary(cloud.vocabulary);
-            localStorage.setItem(`linguist_vocabulary_v11_${finalEmail}`, JSON.stringify(cloud.vocabulary));
-          }
-          if (cloud.badges) {
-            setBadges(cloud.badges);
-            localStorage.setItem(`linguist_badges_v11_${finalEmail}`, JSON.stringify(cloud.badges));
-          }
-          if (cloud.userName) {
-            setUserName(cloud.userName);
-            localStorage.setItem(`linguist_user_name_${finalEmail}`, cloud.userName);
-          }
-          if (cloud.userAvatar) {
-            setUserAvatar(cloud.userAvatar);
-            localStorage.setItem(`linguist_user_avatar_${finalEmail}`, cloud.userAvatar);
-          }
-          if (cloud.loginProvider) {
-            setLoginProvider(cloud.loginProvider);
-            localStorage.setItem('linguist_login_provider', cloud.loginProvider);
-          }
-          if (cloud.linkedProviders) {
-            setLinkedProviders(cloud.linkedProviders);
-            localStorage.setItem('linguist_linked_providers', JSON.stringify(cloud.linkedProviders));
-          }
-        } else {
-          // Sync current local state to cloud immediately since it is a new account
-          const payload = {
-            email: finalEmail,
-            data: {
-              stats,
-              books,
-              vocabulary,
-              badges,
-              userName: finalName,
-              userAvatar: finalAvatar,
-              loginProvider: provider,
-              linkedProviders: initialLinked
-            }
-          };
 
-          fetch('/api/sync', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(payload)
-          }).catch(err => console.error('Initial sync error:', err));
-        }
+              setStats(finalStats);
+              localStorage.setItem(`linguist_stats_v11_${finalEmail}`, JSON.stringify(finalStats));
+            }
+            if (cloud.books) {
+              const sanitizedParsed = Array.isArray(cloud.books) ? cloud.books.filter(Boolean).map((b: any) => ({
+                ...b,
+                percentageCompleted: typeof b.percentageCompleted === 'number' ? b.percentageCompleted : 0,
+                currentPage: typeof b.currentPage === 'number' ? b.currentPage : 0,
+                pagesLeft: typeof b.pagesLeft === 'number' ? b.pagesLeft : (b.totalPages || 0),
+                totalPages: typeof b.totalPages === 'number' ? b.totalPages : 0,
+                isCompleted: !!b.isCompleted,
+                isFavorited: !!b.isFavorited,
+                isStarted: !!b.isStarted
+              })) : [];
+              
+              const merged: Book[] = [...sanitizedParsed];
+              INITIAL_BOOKS.forEach(initBook => {
+                const existingIdx = merged.findIndex(b => b.id === initBook.id);
+                if (existingIdx === -1) {
+                  merged.push(initBook);
+                } else {
+                  merged[existingIdx] = {
+                    ...initBook,
+                    percentageCompleted: merged[existingIdx].percentageCompleted ?? 0,
+                    currentPage: merged[existingIdx].currentPage ?? 0,
+                    pagesLeft: merged[existingIdx].pagesLeft ?? initBook.totalPages,
+                    isCompleted: !!merged[existingIdx].isCompleted,
+                    isFavorited: !!merged[existingIdx].isFavorited,
+                    isStarted: !!merged[existingIdx].isStarted
+                  };
+                }
+              });
+              setBooks(merged);
+              localStorage.setItem(`linguist_books_v11_${finalEmail}`, JSON.stringify(stripBooksForSync(merged)));
+            }
+            if (cloud.vocabulary) {
+              setVocabulary(cloud.vocabulary);
+              localStorage.setItem(`linguist_vocabulary_v11_${finalEmail}`, JSON.stringify(cloud.vocabulary));
+            }
+            if (cloud.badges) {
+              setBadges(cloud.badges);
+              localStorage.setItem(`linguist_badges_v11_${finalEmail}`, JSON.stringify(cloud.badges));
+            }
+            if (cloud.userName) {
+              setUserName(cloud.userName);
+              localStorage.setItem(`linguist_user_name_${finalEmail}`, cloud.userName);
+            }
+            if (cloud.userAvatar) {
+              setUserAvatar(cloud.userAvatar);
+              localStorage.setItem(`linguist_user_avatar_${finalEmail}`, cloud.userAvatar);
+            }
+            if (cloud.loginProvider) {
+              setLoginProvider(cloud.loginProvider);
+              localStorage.setItem('linguist_login_provider', cloud.loginProvider);
+            }
+            if (cloud.linkedProviders) {
+              setLinkedProviders(cloud.linkedProviders);
+              localStorage.setItem('linguist_linked_providers', JSON.stringify(cloud.linkedProviders));
+            }
+          } else {
+            // Sync current local state to cloud immediately since it is a new account
+            const payload = {
+              email: finalEmail,
+              data: {
+                stats,
+                books,
+                vocabulary,
+                badges,
+                userName: finalName,
+                userAvatar: finalAvatar,
+                loginProvider: provider,
+                linkedProviders: initialLinked
+              }
+            };
+
+            fetch(`${getApiBase()}/api/sync`, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${activeToken}`
+              },
+              body: JSON.stringify(payload)
+            }).catch(err => console.error('Initial sync error:', err));
+          }
+        })
+        .catch(err => {
+          console.error('Error fetching sync data:', err);
+          setSyncStatus('synced');
+        });
+    };
+
+    if (token) {
+      completeLoginWithToken(token);
+    } else {
+      // External sign-in: request a session token from the server
+      setSyncStatus('syncing');
+      fetch(`${getApiBase()}/api/auth`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          email: finalEmail,
+          provider: provider,
+          isExternal: true
+        })
       })
-      .catch(err => {
-        console.error('Error fetching sync data:', err);
-        setSyncStatus('synced');
-      });
+        .then(res => {
+          if (!res.ok) throw new Error('Dış kimlik doğrulama başarısız.');
+          return res.json();
+        })
+        .then(data => {
+          if (data.success && data.token) {
+            completeLoginWithToken(data.token);
+          } else {
+            throw new Error('Geçersiz token yanıtı.');
+          }
+        })
+        .catch(err => {
+          console.error('External login bridge error:', err);
+          setSyncStatus('synced');
+          handleGoogleLogout();
+        });
+    }
   };
 
   const handleUnlinkProvider = (provider: string) => {
@@ -1033,6 +1105,11 @@ export default function App() {
   };
 
   const handleGoogleLogout = () => {
+    const prevEmail = userEmail || localStorage.getItem('linguist_user_email');
+    if (prevEmail) {
+      localStorage.removeItem('linguist_session_token_' + prevEmail.toLowerCase().trim());
+    }
+
     setUserEmail(null);
     localStorage.removeItem('linguist_user_email');
 

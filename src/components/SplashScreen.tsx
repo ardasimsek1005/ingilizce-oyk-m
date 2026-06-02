@@ -118,7 +118,7 @@ export default function SplashScreen() {
             İngilizce Öyküm
           </h1>
           <p className="text-xs font-semibold text-gray-300 tracking-widest uppercase">
-            Efsunlu Hikayelerle Öğren
+            Maceralarla Dolu Kitaplar Seni Bekliyor
           </p>
         </div>
       </div>

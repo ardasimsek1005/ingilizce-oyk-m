@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { UserStats, Badge } from '../types';
 import { INITIAL_BADGES, LIBRARY_UNIQUE_WORDS_COUNT } from '../data';
-import { Award, Flame, BookOpen, Clock, Trophy, Share2, Sparkles, TrendingUp, ChevronRight, CheckCircle2, ShieldAlert, BadgeCheck, Zap, Library, Volume2, Crown, X, RefreshCw, Check, Edit2, Camera, Save, Copy, Facebook, Send, MessageCircle, Mail, Link2, QrCode, MessageSquare } from 'lucide-react';
+import { Award, Flame, BookOpen, Clock, Trophy, Share2, Sparkles, TrendingUp, ChevronRight, CheckCircle2, ShieldAlert, BadgeCheck, Zap, Library, Volume2, Crown, X, RefreshCw, Check, Edit2, Camera, Save, Copy, Facebook, Send, MessageCircle, Mail, Link2, QrCode, MessageSquare, Eye, EyeOff } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { AVATAR_OPTIONS } from '../avatar_assets';
 
@@ -18,10 +18,21 @@ interface ProfileTabProps {
   googleClientId: string;
   loginProvider: string | null;
   linkedProviders: string[];
-  onGoogleLogin: (email: string, name?: string, picture?: string, provider?: string) => void;
+  onGoogleLogin: (email: string, name?: string, picture?: string, provider?: string, token?: string) => void;
   onGoogleLogout: () => void;
   onUnlinkProvider: (provider: string) => void;
 }
+
+const getApiBase = () => {
+  try {
+    if (window.location.protocol === 'capacitor:' || window.location.hostname === 'localhost') {
+      return 'https://ingilizce-oyk-m.onrender.com';
+    }
+    return '';
+  } catch {
+    return '';
+  }
+};
 
 function parseJwt(token: string) {
   try {
@@ -63,6 +74,7 @@ export default function ProfileTab({
   const [sharePlatform, setSharePlatform] = useState<string | null>(null);
   const [showQrCode, setShowQrCode] = useState(false);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
+  const [isAboutModalOpen, setIsAboutModalOpen] = useState(false);
 
   // Login connection states
   const [showMockLogin, setShowMockLogin] = useState(false);
@@ -71,6 +83,8 @@ export default function ProfileTab({
   const [mockName, setMockName] = useState('');
   const [loginPassword, setLoginPassword] = useState('');
   const [loginStep, setLoginStep] = useState<'picker' | 'credentials'>('picker');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
   // Referral states
   const [referredBy, setReferredBy] = useState<string>(() => localStorage.getItem('linguist_referred_by') || '');
@@ -88,33 +102,79 @@ export default function ProfileTab({
   };
 
   const handleDirectSelectLogin = (email: string, provider: string) => {
-    const finalName = formatAutofillName(email) || email.split('@')[0];
-    let avatarToSet = userAvatar;
-    if (!userAvatar || userAvatar === AVATAR_OPTIONS[0]) {
-      const idx = Math.abs(email.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0) % AVATAR_OPTIONS.length);
-      avatarToSet = AVATAR_OPTIONS[idx];
-    }
+    const cleanEmail = email.toLowerCase().trim();
+    const savedToken = localStorage.getItem('linguist_session_token_' + cleanEmail);
+    
+    if (savedToken) {
+      setMockEmail(email);
+      setIsSubmitting(true);
 
-    onGoogleLogin(email, finalName, avatarToSet, provider);
-    setShowMockLogin(false);
-    setMockEmail('');
-    setMockName('');
-    setLoginPassword('');
-    setLoginStep('picker');
-    
-    const providerNames: Record<string, string> = {
-      google: 'Google',
-      facebook: 'Facebook',
-      apple: 'Apple',
-      email: 'E-posta'
-    };
-    
-    if (userEmail) {
-      setToastMessage(`${providerNames[provider] || provider} hesabı başarıyla bağlandı! 🔗`);
+      // Verify session token on the server
+      fetch(`${getApiBase()}/api/auth`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          email: email,
+          token: savedToken,
+          provider: provider
+        })
+      })
+        .then(res => {
+          if (!res.ok) {
+            return res.json().then(errData => {
+              throw new Error(errData.error || 'Kimlik doğrulama başarısız oldu. ⚠️');
+            });
+          }
+          return res.json();
+        })
+        .then(data => {
+          const finalName = formatAutofillName(email) || email.split('@')[0];
+          
+          let avatarToSet = userAvatar;
+          if (!userAvatar || userAvatar === AVATAR_OPTIONS[0]) {
+            const idx = Math.abs(email.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0) % AVATAR_OPTIONS.length);
+            avatarToSet = AVATAR_OPTIONS[idx];
+          }
+
+          onGoogleLogin(email, finalName, avatarToSet, provider, data.token);
+          setShowMockLogin(false);
+          setMockEmail('');
+          setMockName('');
+          setLoginPassword('');
+          setLoginStep('picker');
+          setShowPassword(false);
+          
+          const providerNames: Record<string, string> = {
+            google: 'Google',
+            facebook: 'Facebook',
+            apple: 'Apple',
+            email: 'E-posta'
+          };
+          
+          if (userEmail) {
+            setToastMessage(`${providerNames[provider] || provider} hesabı başarıyla bağlandı! 🔗`);
+          } else {
+            setToastMessage(`${providerNames[provider] || provider} ile giriş yapıldı ve veriler eşitlendi! 🔄`);
+          }
+          setTimeout(() => setToastMessage(null), 3000);
+        })
+        .catch(err => {
+          console.error('Saved token auth failed:', err);
+          localStorage.removeItem('linguist_session_token_' + cleanEmail);
+          setLoginPassword('');
+          setLoginStep('credentials');
+          setToastMessage('Kayıtlı oturum geçersiz veya süresi dolmuş. Lütfen şifrenizi girin. ⚠️');
+          setTimeout(() => setToastMessage(null), 3000);
+        })
+        .finally(() => {
+          setIsSubmitting(false);
+        });
     } else {
-      setToastMessage(`${providerNames[provider] || provider} ile giriş yapıldı ve veriler eşitlendi! 🔄`);
+      setMockEmail(email);
+      setLoginStep('credentials');
     }
-    setTimeout(() => setToastMessage(null), 3000);
   };
 
   const handleMockSubmit = (e: React.FormEvent) => {
@@ -138,35 +198,75 @@ export default function ProfileTab({
       setTimeout(() => setToastMessage(null), 3000);
       return;
     }
-    
-    const finalName = formatAutofillName(mockEmail) || mockEmail.split('@')[0];
-    
-    let avatarToSet = userAvatar;
-    if (!userAvatar || userAvatar === AVATAR_OPTIONS[0]) {
-      const idx = Math.abs(mockEmail.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0) % AVATAR_OPTIONS.length);
-      avatarToSet = AVATAR_OPTIONS[idx];
-    }
 
-    onGoogleLogin(mockEmail, finalName, avatarToSet, provider);
-    setShowMockLogin(false);
-    setMockEmail('');
-    setMockName('');
-    setLoginPassword('');
-    setLoginStep('picker');
-    
-    const providerNames: Record<string, string> = {
-      google: 'Google',
-      facebook: 'Facebook',
-      apple: 'Apple',
-      email: 'E-posta'
-    };
-    
-    if (userEmail) {
-      setToastMessage(`${providerNames[provider] || provider} hesabı başarıyla bağlandı! 🔗`);
-    } else {
-      setToastMessage(`${providerNames[provider] || provider} ile giriş yapıldı ve veriler eşitlendi! 🔄`);
-    }
-    setTimeout(() => setToastMessage(null), 3000);
+    setIsSubmitting(true);
+
+    fetch(`${getApiBase()}/api/auth`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        email: mockEmail,
+        password: loginPassword,
+        provider: provider
+      })
+    })
+      .then(res => {
+        if (!res.ok) {
+          return res.json().then(errData => {
+            throw new Error(errData.error || 'Kimlik doğrulama başarısız oldu. ⚠️');
+          });
+        }
+        return res.json();
+      })
+      .then(data => {
+        // Save the successful session token locally for future logins
+        localStorage.setItem('linguist_session_token_' + mockEmail.toLowerCase().trim(), data.token);
+        // Clear legacy plain-text password from storage if it exists
+        localStorage.removeItem('linguist_password_' + mockEmail.toLowerCase().trim());
+
+        const finalName = formatAutofillName(mockEmail) || mockEmail.split('@')[0];
+        
+        let avatarToSet = userAvatar;
+        if (!userAvatar || userAvatar === AVATAR_OPTIONS[0]) {
+          const idx = Math.abs(mockEmail.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0) % AVATAR_OPTIONS.length);
+          avatarToSet = AVATAR_OPTIONS[idx];
+        }
+
+        onGoogleLogin(mockEmail, finalName, avatarToSet, provider, data.token);
+        setShowMockLogin(false);
+        setMockEmail('');
+        setMockName('');
+        setLoginPassword('');
+        setLoginStep('picker');
+        setShowPassword(false);
+        
+        const providerNames: Record<string, string> = {
+          google: 'Google',
+          facebook: 'Facebook',
+          apple: 'Apple',
+          email: 'E-posta'
+        };
+        
+        if (userEmail) {
+          setToastMessage(`${providerNames[provider] || provider} hesabı başarıyla bağlandı! 🔗`);
+        } else {
+          setToastMessage(data.isNew 
+            ? `${providerNames[provider] || provider} ile yeni hesap oluşturuldu ve giriş yapıldı! 🎉` 
+            : `${providerNames[provider] || provider} ile giriş yapıldı ve veriler eşitlendi! 🔄`
+          );
+        }
+        setTimeout(() => setToastMessage(null), 3000);
+      })
+      .catch(err => {
+        console.error('Auth request failed:', err);
+        setToastMessage(err.message || 'Bir hata oluştu. Lütfen tekrar deneyin. ⚠️');
+        setTimeout(() => setToastMessage(null), 3000);
+      })
+      .finally(() => {
+        setIsSubmitting(false);
+      });
   };
 
   // Google Sign-In GSI button mounting
@@ -312,6 +412,8 @@ export default function ProfileTab({
     setShowQrCode(false);
     setIsShareModalOpen(true);
   };
+
+
 
   const handlePlatformShare = (platform: string) => {
     setSharePlatform(platform);
@@ -649,12 +751,37 @@ export default function ProfileTab({
                     );
                   })}
                 </div>
+                <button
+                  type="button"
+                  onClick={() => {
+                    const providerNames: Record<string, string> = {
+                      google: 'Google',
+                      facebook: 'Facebook',
+                      apple: 'Apple',
+                      email: 'E-posta'
+                    };
+                    const currentProviderName = providerNames[loginProvider || ''] || 'Hesap';
+                    onGoogleLogout();
+                    setToastMessage(`${currentProviderName} oturumu güvenli bir şekilde kapatıldı. 🚪`);
+                    setTimeout(() => setToastMessage(null), 3000);
+                  }}
+                  className={`mt-4 w-full flex items-center justify-between p-3.5 px-4 rounded-2xl border text-xs font-bold transition-all cursor-pointer ${
+                    isDarkMode 
+                      ? 'bg-rose-950/15 border-rose-500/25 text-rose-400 hover:bg-rose-950/25' 
+                      : 'bg-rose-50 border-rose-500/20 text-rose-700 hover:bg-rose-100/50'
+                  }`}
+                >
+                  <span className="font-headline-lg">Oturumu Kapat (Güvenli Çıkış)</span>
+                  <X className="w-4 h-4 text-rose-600" />
+                </button>
               </div>
             ) : (
               <div className="mt-5 w-full max-w-sm mx-auto space-y-2.5 pt-4 border-t border-dashed border-gray-400/20">
                 <span className="text-[10px] font-bold text-gray-400 tracking-wider block text-center mb-2 uppercase font-headline-lg">
                   Hesabınızı Bağlayın veya Giriş Yapın
                 </span>
+
+                <div id="google-signin-btn" className="w-full flex justify-center overflow-hidden rounded-2xl"></div>
                 
                 {/* 1. Google Button */}
                 <button
@@ -1240,6 +1367,16 @@ export default function ProfileTab({
             <Share2 className="w-4 h-4 text-[#FF6B6B]" />
           </button>
 
+          <button
+            onClick={() => setIsAboutModalOpen(true)}
+            className={`w-full flex items-center justify-between p-4 px-6 transition-colors group text-left cursor-pointer ${
+              isDarkMode ? 'hover:bg-[#121214] text-gray-200' : 'hover:bg-[#FFFBF0]'
+            }`}
+          >
+            <span className="text-xs font-bold">Hakkımızda & Puan Ver</span>
+            <MessageSquare className="w-4 h-4 text-[#4ECDC4]" />
+          </button>
+
           {/* Davet Kodu Gir / Bilgi Satırı */}
           {referredBy ? (
             <div
@@ -1281,23 +1418,75 @@ export default function ProfileTab({
           )}
 
 
-          {userEmail && (
-            <button
-              onClick={() => {
-                onGoogleLogout();
-                setToastMessage('Gmail hesabından çıkış yapıldı. 🚪');
-                setTimeout(() => setToastMessage(null), 3000);
-              }}
-              className={`w-full flex items-center justify-between p-4 px-6 transition-colors group text-left text-rose-600 font-extrabold cursor-pointer ${
-                isDarkMode ? 'hover:bg-[#121214] text-rose-600' : 'hover:bg-[#FFFBF0] text-rose-600'
-              }`}
-            >
-              <span className="text-xs">Çıkış Yap (Gmail Hesabını Kapat)</span>
-              <X className="w-4 h-4 text-rose-600" />
-            </button>
-          )}
+
         </div>
       </section>
+
+      {/* HAKKIMIZDA & PUAN VER MODAL */}
+      <AnimatePresence>
+        {isAboutModalOpen && (
+          <div className="fixed inset-0 z-50 bg-[#2D3436]/60 backdrop-blur-md flex items-center justify-center p-4">
+            <div 
+              className="absolute inset-0 cursor-pointer" 
+              onClick={() => setIsAboutModalOpen(false)} 
+            />
+            
+            <motion.div
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              className={`w-full max-w-sm rounded-[28px] p-6 flex flex-col shadow-2xl relative transition-all border-2 z-10 ${
+                isDarkMode ? 'bg-[#1A1A1E] border-[#2A2A30] text-white' : 'bg-white border-[#FFE66D] text-[#2D3436]'
+              }`}
+            >
+              {/* Header */}
+              <div className="flex justify-between items-center mb-4">
+                <h3 className="font-headline-lg text-base font-extrabold flex items-center gap-2">
+                  <MessageSquare className="w-5 h-5 text-[#FF6B6B]" />
+                  Hakkımızda & Puan Ver
+                </h3>
+                <button
+                  onClick={() => setIsAboutModalOpen(false)}
+                  className={`p-1.5 rounded-full cursor-pointer transition-colors ${
+                    isDarkMode ? 'text-gray-400 hover:bg-[#2A2A30] hover:text-white' : 'text-gray-500 hover:bg-gray-100 hover:text-gray-800'
+                  }`}
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              </div>
+
+              {/* Content Container */}
+              <div className="space-y-5">
+                {/* About Us Card */}
+                <div className={`p-4 rounded-2xl border text-xs leading-relaxed space-y-2.5 ${
+                  isDarkMode ? 'bg-[#121214]/60 border-[#2A2A30]' : 'bg-[#FFFBF0] border-[#FFE66D]/60'
+                }`}>
+                  <p className="font-bold text-[#FF6B6B]">Sevgili Okurumuz,</p>
+                  <p className="font-medium">
+                    Sizler için pratik, eğlenceli ve verimli bir İngilizce okuma uygulaması geliştirmeye çalıştık. Her bir öyküyü özenle seçip Türkçeleştirdik, kelime kelime çevirileri ve premium telaffuzları entegre ettik.
+                  </p>
+                  <p className="font-medium text-[#4ECDC4] font-bold">
+                    Uygulamamızın gelişmesi ve daha fazla kişiye ulaşması için Google Play Store'da görüşlerinizi belirterek bize puan verebilirsiniz!
+                  </p>
+                </div>
+
+                {/* Google Play Rating Button */}
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.ingilizceoykum.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsAboutModalOpen(false)}
+                  className="w-full bg-[#FF6B6B] text-white text-xs font-bold py-3.5 rounded-xl shadow-md hover:bg-[#e05a5a] active:scale-95 transition-all flex items-center justify-center gap-2 cursor-pointer shadow-[#FF6B6B]/20"
+                >
+                  <Crown className="w-4 h-4 text-[#FFE66D] fill-[#FFE66D]" />
+                  Google Play'de Yorum Yap & Puan Ver
+                </a>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
 
       {/* MOCK HIGH-FIDELITY SOCIAL SHARING SYSTEM MODAL */}
       <AnimatePresence>
@@ -1635,6 +1824,7 @@ export default function ProfileTab({
                     setMockName('');
                     setLoginPassword('');
                     setLoginStep('picker');
+                    setShowPassword(false);
                   }}
                   className={`absolute top-4 right-4 p-1 px-2.5 rounded-lg text-xs font-bold font-mono cursor-pointer transition-colors ${
                     isDarkMode ? 'text-gray-300 bg-[#2A2A30] hover:bg-[#343A40]' : 'text-gray-500 bg-gray-100 hover:bg-gray-200'
@@ -1681,7 +1871,11 @@ export default function ProfileTab({
                         <div className="text-xs font-extrabold text-gray-700 dark:text-gray-200">{currentPicker.name}</div>
                         <div className="text-[10px] text-gray-400 font-medium truncate">{currentPicker.detail}</div>
                       </div>
-                      <span className="text-[9px] font-bold text-gray-450 uppercase tracking-wider shrink-0 select-none">Kayıtlı</span>
+                      <span className="text-[9px] font-bold text-gray-450 uppercase tracking-wider shrink-0 select-none">
+                        {localStorage.getItem('linguist_session_token_' + currentPicker.directEmail.toLowerCase().trim()) 
+                          ? 'Kayıtlı Oturumla Giriş' 
+                          : 'Kayıtlı'}
+                      </span>
                     </button>
  
                     <button
@@ -1703,10 +1897,13 @@ export default function ProfileTab({
                       <input
                         type="email"
                         required
+                        disabled={isSubmitting}
                         placeholder={config.emailPlaceholder}
                         value={mockEmail}
                         onChange={(e) => setMockEmail(e.target.value)}
                         className={`w-full text-xs px-3 py-2.5 border rounded-xl focus:outline-none focus:border-[#FF6B6B] focus:ring-1 focus:ring-[#FF6B6B] font-medium transition-colors ${
+                          isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
+                        } ${
                           isDarkMode 
                             ? 'bg-[#121214] border-[#2A2A30] text-white placeholder-gray-600' 
                             : 'bg-white border-[#FFE66D] text-gray-800 placeholder-teal-650'
@@ -1718,29 +1915,46 @@ export default function ProfileTab({
                       <label className="text-[10px] font-bold text-gray-400 tracking-wider block mb-1 font-headline-lg">
                         ŞİFRE
                       </label>
-                      <input
-                        type="password"
-                        required
-                        placeholder="••••••"
-                        value={loginPassword}
-                        onChange={(e) => setLoginPassword(e.target.value)}
-                        className={`w-full text-xs px-3 py-2.5 border rounded-xl focus:outline-none focus:border-[#FF6B6B] focus:ring-1 focus:ring-[#FF6B6B] font-medium transition-colors ${
-                          isDarkMode 
-                            ? 'bg-[#121214] border-[#2A2A30] text-white placeholder-gray-650' 
-                            : 'bg-white border-[#FFE66D] text-gray-800 placeholder-teal-650'
-                        }`}
-                      />
+                      <div className="relative">
+                        <input
+                          type={showPassword ? "text" : "password"}
+                          required
+                          disabled={isSubmitting}
+                          placeholder="••••••"
+                          value={loginPassword}
+                          onChange={(e) => setLoginPassword(e.target.value)}
+                          className={`w-full text-xs pl-3 pr-10 py-2.5 border rounded-xl focus:outline-none focus:border-[#FF6B6B] focus:ring-1 focus:ring-[#FF6B6B] font-medium transition-colors ${
+                            isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
+                          } ${
+                            isDarkMode 
+                              ? 'bg-[#121214] border-[#2A2A30] text-white placeholder-gray-650' 
+                              : 'bg-white border-[#FFE66D] text-gray-800 placeholder-teal-650'
+                          }`}
+                        />
+                        <button
+                          type="button"
+                          tabIndex={-1}
+                          onClick={() => setShowPassword(prev => !prev)}
+                          className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-450 hover:text-gray-600 dark:hover:text-gray-300 transition-colors p-1"
+                        >
+                          {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                        </button>
+                      </div>
                     </div>
  
                     <div className="flex gap-2.5 pt-2">
                       <button
                         type="button"
+                        disabled={isSubmitting}
                         onClick={() => {
                           setLoginStep('picker');
                           setMockEmail('');
                           setLoginPassword('');
+                          setShowPassword(false);
                         }}
                         className={`w-1/3 py-3 rounded-xl text-xs font-bold transition-all cursor-pointer font-headline-lg ${
+                          isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
+                        } ${
                           isDarkMode ? 'bg-[#2A2A30] hover:bg-[#343A40] text-gray-300' : 'bg-gray-150 hover:bg-gray-200 text-gray-600'
                         }`}
                       >
@@ -1748,10 +1962,20 @@ export default function ProfileTab({
                       </button>
                       <button
                         type="submit"
-                        className="w-2/3 text-white rounded-xl text-xs font-bold hover:opacity-90 transition-all cursor-pointer shadow-md py-3.5 font-headline-lg"
+                        disabled={isSubmitting}
+                        className={`w-2/3 text-white rounded-xl text-xs font-bold hover:opacity-90 transition-all cursor-pointer shadow-md py-3.5 font-headline-lg flex items-center justify-center gap-1.5 ${
+                          isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
+                        }`}
                         style={{ backgroundColor: config.color === '#1E1E22' ? '#333' : config.color }}
                       >
-                        {config.submitText}
+                        {isSubmitting ? (
+                          <>
+                            <RefreshCw className="w-3.5 h-3.5 animate-spin" />
+                            <span>Giriş Yapılıyor...</span>
+                          </>
+                        ) : (
+                          <span>{config.submitText}</span>
+                        )}
                       </button>
                     </div>
                   </form>

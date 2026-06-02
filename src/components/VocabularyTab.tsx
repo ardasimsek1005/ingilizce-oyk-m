@@ -25,25 +25,93 @@ export default function VocabularyTab({ vocabulary, onStartQuiz, onRemoveWord, s
       const cleanT = text.trim();
       if (!cleanT) return;
 
-      const googleTtsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=en&client=tw-ob&q=${encodeURIComponent(cleanT)}`;
-      const audio = new Audio(googleTtsUrl);
-      audio.play().catch(playErr => {
-        console.warn("Google TTS audio.play() failed, trying native speech synthesis:", playErr);
-        speakWordNative(cleanT);
-      });
+      // Normalize word: remove punctuation and whitespace
+      const lookupWord = cleanT.toLowerCase().replace(/[.,/#!$%^&*;:{}=\-_`~()?]/g, "").trim();
+
+      // 1. Try Dictionary API
+      fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(lookupWord)}`)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`Dictionary API returned ${response.status}`);
+          }
+          return response.json();
+        })
+        .then(data => {
+          let audioUrl = "";
+          if (Array.isArray(data)) {
+            for (const entry of data) {
+              if (entry.phonetics && Array.isArray(entry.phonetics)) {
+                for (const phonetic of entry.phonetics) {
+                  if (phonetic.audio) {
+                    audioUrl = phonetic.audio;
+                    break;
+                  }
+                }
+              }
+              if (audioUrl) break;
+            }
+          }
+
+          if (!audioUrl) {
+            throw new Error("No phonetic audio found in Dictionary API response");
+          }
+
+          // Ensure URL has protocol if it starts with //
+          if (audioUrl.startsWith("//")) {
+            audioUrl = "https:" + audioUrl;
+          }
+
+          const audio = new Audio(audioUrl);
+          audio.onerror = () => {
+            console.warn("Dictionary API audio playback failed, falling back to Youdao TTS");
+            playYoudaoTts(cleanT);
+          };
+          audio.play().catch(playErr => {
+            console.warn("Dictionary API audio play failed, falling back to Youdao TTS:", playErr);
+            playYoudaoTts(cleanT);
+          });
+        })
+        .catch(err => {
+          console.warn("Dictionary API lookup failed, falling back to Youdao TTS:", err.message || err);
+          playYoudaoTts(cleanT);
+        });
     } catch (err) {
-      console.error("Premium speech playback error, trying native fallback:", err);
+      console.error("Speech playback error, trying native fallback:", err);
       speakWordNative(text);
     }
   };
 
+  const playYoudaoTts = (word: string) => {
+    try {
+      const youdaoUrl = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(word)}&type=2`;
+      const audio = new Audio(youdaoUrl);
+      audio.onerror = () => {
+        console.warn("Youdao TTS playback failed, falling back to native SpeechSynthesis");
+        speakWordNative(word);
+      };
+      audio.play().catch(playErr => {
+        console.warn("Youdao TTS play failed, falling back to native SpeechSynthesis:", playErr);
+        speakWordNative(word);
+      });
+    } catch (err) {
+      console.warn("Youdao TTS failed, falling back to native SpeechSynthesis:", err);
+      speakWordNative(word);
+    }
+  };
+
   const speakWordNative = (text: string) => {
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = 'en-US';
-      utterance.rate = 0.9;
-      window.speechSynthesis.speak(utterance);
+    try {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'en-US';
+        utterance.rate = 0.9;
+        window.speechSynthesis.speak(utterance);
+      } else {
+        console.warn("speechSynthesis is not supported in this browser/WebView.");
+      }
+    } catch (err) {
+      console.error("Native speech playback error:", err);
     }
   };
 

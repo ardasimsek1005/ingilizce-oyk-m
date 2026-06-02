@@ -1048,53 +1048,112 @@ export default function ReadingView({
       const cleanT = text.trim();
       if (!cleanT) return;
 
-      const langCode = lang.split('-')[0];
-      const googleTtsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=${langCode}&client=tw-ob&q=${encodeURIComponent(cleanT)}`;
-
       if (lang === 'en-US') {
         setSpeechSuccess(true);
-      }
+        // Normalize word: remove punctuation and whitespace
+        const lookupWord = cleanT.toLowerCase().replace(/[.,/#!$%^&*;:{}=\-_`~()?]/g, "").trim();
 
-      // Fetch the high-quality Google TTS audio using no-referrer policy to bypass Capacitor origin block
-      fetch(googleTtsUrl, { referrerPolicy: 'no-referrer' })
-        .then(response => {
-          if (!response.ok) {
-            throw new Error(`Google TTS request failed: ${response.status}`);
-          }
-          return response.blob();
-        })
-        .then(blob => {
-          const blobUrl = URL.createObjectURL(blob);
-          const audio = new Audio(blobUrl);
-          
-          if (lang === 'en-US') {
-            audio.onended = () => {
-              setSpeechSuccess(false);
-              URL.revokeObjectURL(blobUrl);
-            };
+        // 1. Try Dictionary API
+        fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(lookupWord)}`)
+          .then(response => {
+            if (!response.ok) {
+              throw new Error(`Dictionary API returned ${response.status}`);
+            }
+            return response.json();
+          })
+          .then(data => {
+            let audioUrl = "";
+            if (Array.isArray(data)) {
+              for (const entry of data) {
+                if (entry.phonetics && Array.isArray(entry.phonetics)) {
+                  for (const phonetic of entry.phonetics) {
+                    if (phonetic.audio) {
+                      audioUrl = phonetic.audio;
+                      break;
+                    }
+                  }
+                }
+                if (audioUrl) break;
+              }
+            }
+
+            if (!audioUrl) {
+              throw new Error("No phonetic audio found in Dictionary API response");
+            }
+
+            // Ensure URL has protocol if it starts with //
+            if (audioUrl.startsWith("//")) {
+              audioUrl = "https:" + audioUrl;
+            }
+
+            const audio = new Audio(audioUrl);
+            audio.onended = () => setSpeechSuccess(false);
             audio.onerror = () => {
-              setSpeechSuccess(false);
+              console.warn("Dictionary API audio playback failed, falling back to Youdao TTS");
+              playYoudaoTts(cleanT);
+            };
+            audio.play().catch(playErr => {
+              console.warn("Dictionary API audio play failed, falling back to Youdao TTS:", playErr);
+              playYoudaoTts(cleanT);
+            });
+          })
+          .catch(err => {
+            console.warn("Dictionary API lookup failed, falling back to Youdao TTS:", err.message || err);
+            playYoudaoTts(cleanT);
+          });
+      } else {
+        // Turkish translation speech fallback
+        const langCode = lang.split('-')[0];
+        const googleTtsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=${langCode}&client=tw-ob&q=${encodeURIComponent(cleanT)}`;
+
+        fetch(googleTtsUrl, { referrerPolicy: 'no-referrer' })
+          .then(response => {
+            if (!response.ok) {
+              throw new Error(`Google TTS request failed: ${response.status}`);
+            }
+            return response.blob();
+          })
+          .then(blob => {
+            const blobUrl = URL.createObjectURL(blob);
+            const audio = new Audio(blobUrl);
+            audio.onended = () => URL.revokeObjectURL(blobUrl);
+            audio.onerror = () => {
               URL.revokeObjectURL(blobUrl);
-              // Fallback to native SpeechSynthesis
               speakTextAloudNative(cleanT, lang);
             };
-          } else {
-            audio.onended = () => URL.revokeObjectURL(blobUrl);
-            audio.onerror = () => URL.revokeObjectURL(blobUrl);
-          }
-
-          audio.play().catch(playErr => {
-            console.warn("Blob audio play failed, trying native speech synthesis:", playErr);
+            audio.play().catch(playErr => {
+              console.warn("Blob audio play failed, trying native speech synthesis:", playErr);
+              speakTextAloudNative(cleanT, lang);
+            });
+          })
+          .catch(fetchErr => {
+            console.warn("Failed to fetch Google TTS blob, trying native fallback:", fetchErr);
             speakTextAloudNative(cleanT, lang);
           });
-        })
-        .catch(fetchErr => {
-          console.warn("Failed to fetch Google TTS blob, trying native fallback:", fetchErr);
-          speakTextAloudNative(cleanT, lang);
-        });
+      }
     } catch (err) {
       console.error("Speech playback error, trying native fallback:", err);
       speakTextAloudNative(text, lang);
+    }
+  };
+
+  // Helper function to play Youdao TTS
+  const playYoudaoTts = (word: string) => {
+    try {
+      const youdaoUrl = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(word)}&type=2`;
+      const audio = new Audio(youdaoUrl);
+      audio.onended = () => setSpeechSuccess(false);
+      audio.onerror = () => {
+        console.warn("Youdao TTS playback failed, falling back to native SpeechSynthesis");
+        speakTextAloudNative(word, 'en-US');
+      };
+      audio.play().catch(playErr => {
+        console.warn("Youdao TTS play failed, falling back to native SpeechSynthesis:", playErr);
+        speakTextAloudNative(word, 'en-US');
+      });
+    } catch (err) {
+      console.warn("Youdao TTS failed, falling back to native SpeechSynthesis:", err);
+      speakTextAloudNative(word, 'en-US');
     }
   };
 
@@ -1130,8 +1189,8 @@ export default function ReadingView({
         
         window.speechSynthesis.speak(utterance);
       } else {
-        setToastMessage('Tarayıcınız ses sentezini desteklemiyor.');
-        setTimeout(() => setToastMessage(null), 3000);
+        console.warn("speechSynthesis is not supported in this browser/WebView.");
+        setSpeechSuccess(false);
       }
     } catch (err) {
       console.error("Native speech playback fallback error:", err);
