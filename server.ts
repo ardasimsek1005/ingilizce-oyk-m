@@ -612,8 +612,8 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
   // Sync endpoint - Save progress
   app.post("/api/sync", (req, res) => {
     const { email, data } = req.body;
-    if (!email || !email.includes("@")) {
-      return res.status(400).json({ error: "Geçersiz email adresi." });
+    if (!email || email.trim().length < 3) {
+      return res.status(400).json({ error: "Geçersiz email veya kullanıcı adı." });
     }
 
     const cleanEmail = email.toLowerCase().trim();
@@ -644,8 +644,8 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
   // Sync endpoint - Fetch progress
   app.get("/api/sync", (req, res) => {
     const email = req.query.email;
-    if (typeof email !== "string" || !email.includes("@")) {
-      return res.status(400).json({ error: "Geçersiz email adresi." });
+    if (typeof email !== "string" || email.trim().length < 3) {
+      return res.status(400).json({ error: "Geçersiz email veya kullanıcı adı." });
     }
     
     const cleanEmail = email.toLowerCase().trim();
@@ -671,8 +671,8 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
   app.post("/api/auth", (req, res) => {
     try {
       const { email, password, token, provider, isExternal } = req.body;
-      if (!email || !email.includes("@")) {
-        return res.status(400).json({ error: "Geçersiz e-posta adresi. ⚠️" });
+      if (!email || email.trim().length < 3) {
+        return res.status(400).json({ error: "Geçersiz e-posta veya kullanıcı adı. ⚠️" });
       }
 
       const cleanEmail = email.toLowerCase().trim();
@@ -774,12 +774,9 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
   // Register endpoint - Create a new user with validation, unique username, and IP logging
   app.post("/api/register", (req, res) => {
     try {
-      const { username, email, password } = req.body;
+      const { username, password } = req.body;
       if (!username || typeof username !== "string") {
         return res.status(400).json({ error: "Lütfen geçerli bir isim girin. ⚠️" });
-      }
-      if (!email || !email.includes("@")) {
-        return res.status(400).json({ error: "Geçersiz e-posta adresi. ⚠️" });
       }
       if (!password || password.length < 6) {
         return res.status(400).json({ error: "Şifre en az 6 karakter olmalıdır. ⚠️" });
@@ -810,20 +807,16 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
         return res.status(400).json({ error: "Kullanıcı adı uygunsuz veya küfürlü kelimeler içeremez. ⚠️" });
       }
 
-      // Unique Username check
+      // Generate the unique hash key for this username
+      const hashedKey = hashEmail(lowerUsername);
+
+      // Check if username is already taken
       const usernameExists = Object.values(usersData).some(user => 
         user && user.username && user.username.toLowerCase() === lowerUsername
-      );
+      ) || !!usersData[hashedKey];
+
       if (usernameExists) {
         return res.status(400).json({ error: "Bu kullanıcı adı zaten başka bir üye tarafından alınmış. ⚠️" });
-      }
-
-      const cleanEmail = email.toLowerCase().trim();
-      const hashedEmail = hashEmail(cleanEmail);
-      let userRecord = usersData[hashedEmail];
-
-      if (userRecord) {
-        return res.status(400).json({ error: "Bu e-posta adresiyle zaten kayıtlı bir hesap var. ⚠️" });
       }
 
       // Record client IP Address
@@ -832,7 +825,7 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
       const sessionToken = crypto.randomBytes(32).toString("hex");
 
       // Save user record
-      usersData[hashedEmail] = {
+      usersData[hashedKey] = {
         username: cleanUsername,
         password: hashPassword(password),
         tokens: [sessionToken],
@@ -856,8 +849,8 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
           books: [],
           vocabulary: [],
           badges: [],
-          loginProvider: "email",
-          linkedProviders: ["email"]
+          loginProvider: "username",
+          linkedProviders: ["username"]
         },
         updatedAt: new Date().toISOString()
       };

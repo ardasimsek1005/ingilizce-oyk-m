@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { UserStats, Badge } from '../types';
 import { INITIAL_BADGES, LIBRARY_UNIQUE_WORDS_COUNT } from '../data';
-import { Award, Flame, BookOpen, Clock, Trophy, Share2, Sparkles, TrendingUp, ChevronRight, CheckCircle2, ShieldAlert, BadgeCheck, Zap, Library, Volume2, Crown, X, RefreshCw, Check, Edit2, Camera, Save, Copy, Facebook, Send, MessageCircle, Mail, Link2, QrCode, MessageSquare, Eye, EyeOff } from 'lucide-react';
+import { Award, Flame, BookOpen, Clock, Trophy, Share2, Sparkles, TrendingUp, ChevronRight, CheckCircle2, ShieldAlert, BadgeCheck, Zap, Library, Volume2, Crown, X, RefreshCw, Check, Edit2, Camera, Save, Copy, Facebook, Send, MessageCircle, Mail, Link2, QrCode, MessageSquare, Eye, EyeOff, Plus } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { AVATAR_OPTIONS } from '../avatar_assets';
 
@@ -181,8 +181,8 @@ export default function ProfileTab({
     e.preventDefault();
     const provider = mockLoginProvider || 'google';
 
-    if (!mockEmail || !mockEmail.includes('@')) {
-      setToastMessage('Lütfen geçerli bir e-posta adresi girin. ⚠️');
+    if (!mockEmail || mockEmail.trim().length < 3) {
+      setToastMessage(provider === 'google' ? 'Lütfen geçerli bir Gmail adresi girin. ⚠️' : 'Lütfen geçerli bir kullanıcı adı veya e-posta adresi girin. ⚠️');
       setTimeout(() => setToastMessage(null), 3000);
       return;
     }
@@ -273,13 +273,7 @@ export default function ProfileTab({
     e.preventDefault();
 
     if (!mockName || mockName.trim().length < 3) {
-      setToastMessage('İsminiz en az 3 karakter olmalıdır. ⚠️');
-      setTimeout(() => setToastMessage(null), 3000);
-      return;
-    }
-
-    if (!mockEmail || !mockEmail.includes('@')) {
-      setToastMessage('Lütfen geçerli bir e-posta adresi girin. ⚠️');
+      setToastMessage('Kullanıcı adı en az 3 karakter olmalıdır. ⚠️');
       setTimeout(() => setToastMessage(null), 3000);
       return;
     }
@@ -299,7 +293,6 @@ export default function ProfileTab({
       },
       body: JSON.stringify({
         username: mockName,
-        email: mockEmail,
         password: loginPassword
       })
     })
@@ -312,15 +305,16 @@ export default function ProfileTab({
         return res.json();
       })
       .then(data => {
-        localStorage.setItem('linguist_session_token_' + mockEmail.toLowerCase().trim(), data.token);
+        const usernameLower = mockName.toLowerCase().trim();
+        localStorage.setItem('linguist_session_token_' + usernameLower, data.token);
 
         let avatarToSet = userAvatar;
         if (!userAvatar || userAvatar === AVATAR_OPTIONS[0]) {
-          const idx = Math.abs(mockEmail.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0) % AVATAR_OPTIONS.length);
+          const idx = Math.abs(usernameLower.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0) % AVATAR_OPTIONS.length);
           avatarToSet = AVATAR_OPTIONS[idx];
         }
 
-        onGoogleLogin(mockEmail, mockName.trim(), avatarToSet, 'email', data.token);
+        onGoogleLogin(usernameLower, mockName.trim(), avatarToSet, 'email', data.token);
         
         setShowMockLogin(false);
         setMockEmail('');
@@ -897,6 +891,29 @@ export default function ProfileTab({
                     <span>Facebook ile Bağlan</span>
                   </div>
                   <ChevronRight className="w-4 h-4 text-white/70 group-hover:translate-x-0.5 transition-transform" />
+                </button>
+
+                {/* 3. Yeni Kullanıcı Oluştur (Kayıt Ol) */}
+                <button
+                  type="button"
+                  onClick={() => {
+                    setMockLoginProvider('email');
+                    setLoginStep('register');
+                    setShowMockLogin(true);
+                  }}
+                  className={`w-full py-3.5 px-4 border rounded-2xl text-xs font-bold transition-all flex items-center justify-between cursor-pointer shadow-2xs font-headline-lg relative overflow-hidden group ${
+                    isDarkMode 
+                      ? 'bg-[#4ECDC4]/10 border-[#4ECDC4]/20 hover:bg-[#4ECDC4]/15 text-[#4ECDC4]' 
+                      : 'bg-[#4ECDC4]/5 border-[#4ECDC4]/15 hover:bg-[#4ECDC4]/10 text-[#4ECDC4]'
+                  }`}
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="w-6 h-6 rounded-lg bg-[#4ECDC4]/10 flex items-center justify-center shrink-0">
+                      <Plus className="w-3.5 h-3.5 text-[#4ECDC4]" />
+                    </div>
+                    <span>Yeni Kullanıcı Oluştur (Kayıt Ol)</span>
+                  </div>
+                  <ChevronRight className="w-4 h-4 text-[#4ECDC4] group-hover:translate-x-0.5 transition-transform" />
                 </button>
               </div>
             )}
@@ -1808,7 +1825,7 @@ export default function ProfileTab({
               avatarBg: isDarkMode ? '#4ecdc425' : '#4ecdc415',
               avatarColor: '#4ECDC4',
               directEmail: 'ardasimsek1005@gmail.com',
-              credentialsBtnText: 'Başka bir e-posta adresi kullan',
+              credentialsBtnText: 'Başka bir kullanıcı adı veya e-posta kullan',
             }
           };
 
@@ -1861,11 +1878,11 @@ export default function ProfileTab({
               )
             },
             email: {
-              title: 'E-posta ile Giriş Yap',
-              desc: 'E-posta adresinizi ve şifrenizi girerek bağlanın.',
+              title: 'Kullanıcı Girişi',
+              desc: 'Kullanıcı adınızı veya e-posta adresinizi ve şifrenizi girerek bağlanın.',
               color: '#4ECDC4',
-              emailLabel: 'E-POSTA ADRESİ',
-              emailPlaceholder: 'ornek@eposta.com',
+              emailLabel: 'KULLANICI ADI VEYA E-POSTA',
+              emailPlaceholder: 'Kullanıcı adı veya e-posta',
               submitText: 'Giriş Yap ve Verileri Eşitle',
               icon: (
                 <svg className="w-6 h-6 fill-none stroke-current" viewBox="0 0 24 24" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -1960,21 +1977,6 @@ export default function ProfileTab({
                     >
                       {currentPicker.credentialsBtnText}
                     </button>
-
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setMockLoginProvider('email');
-                        setLoginStep('register');
-                      }}
-                      className={`w-full py-3 rounded-2xl border text-xs font-bold transition-colors cursor-pointer text-center font-headline-lg ${
-                        isDarkMode 
-                          ? 'bg-[#4ECDC4]/10 border-[#4ECDC4]/30 hover:bg-[#4ECDC4]/20 text-[#4ECDC4]' 
-                          : 'bg-[#4ECDC4]/5 border-[#4ECDC4]/20 hover:bg-[#4ECDC4]/15 text-[#4ECDC4]'
-                      }`}
-                    >
-                      Yeni Kullanıcı Oluştur (Kayıt Ol)
-                    </button>
                   </div>
                 ) : loginStep === 'register' ? (
                   <form onSubmit={handleRegisterSubmit} className="space-y-4">
@@ -1999,26 +2001,7 @@ export default function ProfileTab({
                       />
                     </div>
 
-                    <div className="text-left">
-                      <label className="text-[10px] font-bold text-gray-400 tracking-wider block mb-1 font-headline-lg">
-                        E-POSTA ADRESİ
-                      </label>
-                      <input
-                        type="email"
-                        required
-                        disabled={isSubmitting}
-                        placeholder="ornek@eposta.com"
-                        value={mockEmail}
-                        onChange={(e) => setMockEmail(e.target.value)}
-                        className={`w-full text-xs px-3 py-2.5 border rounded-xl focus:outline-none focus:border-[#FF6B6B] focus:ring-1 focus:ring-[#FF6B6B] font-medium transition-colors ${
-                          isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
-                        } ${
-                          isDarkMode 
-                            ? 'bg-[#121214] border-[#2A2A30] text-white placeholder-gray-650' 
-                            : 'bg-white border-[#FFE66D] text-gray-800 placeholder-teal-650'
-                        }`}
-                      />
-                    </div>
+
 
                     <div className="text-left">
                       <label className="text-[10px] font-bold text-gray-400 tracking-wider block mb-1 font-headline-lg">
