@@ -86,6 +86,13 @@ export default function ProfileTab({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
+  // Simulated OAuth states
+  const [oauthStep, setOauthStep] = useState<'none' | 'loading' | 'select_account' | 'consent' | 'redirecting'>('none');
+  const [oauthProvider, setOauthProvider] = useState<'google' | 'facebook' | null>(null);
+  const [oauthEmail, setOauthEmail] = useState('ardasimsek1005@gmail.com');
+  const [oauthCustomEmail, setOauthCustomEmail] = useState('');
+  const [oauthShowCustomInput, setOauthShowCustomInput] = useState(false);
+
   // Referral states
   const [referredBy, setReferredBy] = useState<string>(() => localStorage.getItem('linguist_referred_by') || '');
   const [isInviteInputOpen, setIsInviteInputOpen] = useState(false);
@@ -334,6 +341,67 @@ export default function ProfileTab({
       .finally(() => {
         setIsSubmitting(false);
       });
+  };
+
+  const handleOauthSubmit = (email: string, name: string, provider: string) => {
+    setOauthStep('redirecting');
+    
+    // Simulate redirect delay
+    setTimeout(() => {
+      fetch(`${getApiBase()}/api/auth`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          email: email.toLowerCase().trim(),
+          provider: provider,
+          isExternal: true
+        })
+      })
+        .then(res => {
+          if (!res.ok) {
+            return res.json().then(errData => {
+              throw new Error(errData.error || 'Giriş işlemi başarısız oldu. ⚠️');
+            });
+          }
+          return res.json();
+        })
+        .then(data => {
+          // Save the successful session token locally
+          localStorage.setItem('linguist_session_token_' + email.toLowerCase().trim(), data.token);
+
+          // Format name and set avatar
+          const finalName = name || formatAutofillName(email) || email.split('@')[0];
+          let avatarToSet = userAvatar;
+          if (!userAvatar || userAvatar === AVATAR_OPTIONS[0]) {
+            const idx = Math.abs(email.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0) % AVATAR_OPTIONS.length);
+            avatarToSet = AVATAR_OPTIONS[idx];
+          }
+
+          onGoogleLogin(email, finalName, avatarToSet, provider, data.token);
+          
+          setOauthStep('none');
+          setOauthProvider(null);
+          
+          if (userEmail) {
+            setToastMessage(`${provider === 'google' ? 'Google' : 'Facebook'} hesabı başarıyla bağlandı! 🔗`);
+          } else {
+            setToastMessage(data.isNew 
+              ? `${provider === 'google' ? 'Google' : 'Facebook'} ile yeni hesap oluşturuldu ve giriş yapıldı! 🎉` 
+              : `${provider === 'google' ? 'Google' : 'Facebook'} ile giriş yapıldı ve veriler eşitlendi! 🔄`
+            );
+          }
+          setTimeout(() => setToastMessage(null), 3000);
+        })
+        .catch(err => {
+          console.error('OAuth Auth request failed:', err);
+          setToastMessage(err.message || 'Oturum açılamadı. Lütfen tekrar deneyin. ⚠️');
+          setTimeout(() => setToastMessage(null), 3000);
+          setOauthStep('none');
+          setOauthProvider(null);
+        });
+    }, 1500);
   };
 
   // Google Sign-In GSI button mounting
@@ -854,8 +922,14 @@ export default function ProfileTab({
                 <button
                   type="button"
                   onClick={() => {
-                    setMockLoginProvider('google');
-                    setShowMockLogin(true);
+                    setOauthProvider('google');
+                    setOauthStep('loading');
+                    setOauthEmail('ardasimsek1005@gmail.com');
+                    setOauthShowCustomInput(false);
+                    setOauthCustomEmail('');
+                    setTimeout(() => {
+                      setOauthStep('select_account');
+                    }, 1200);
                   }}
                   className="w-full py-3.5 px-4 bg-white border border-gray-300 hover:bg-gray-50 text-gray-700 rounded-2xl text-xs font-bold transition-all flex items-center justify-between cursor-pointer shadow-2xs font-headline-lg relative overflow-hidden group"
                 >
@@ -877,8 +951,14 @@ export default function ProfileTab({
                 <button
                   type="button"
                   onClick={() => {
-                    setMockLoginProvider('facebook');
-                    setShowMockLogin(true);
+                    setOauthProvider('facebook');
+                    setOauthStep('loading');
+                    setOauthEmail('ardasimsek1005@facebook.com');
+                    setOauthShowCustomInput(false);
+                    setOauthCustomEmail('');
+                    setTimeout(() => {
+                      setOauthStep('consent');
+                    }, 1200);
                   }}
                   className="w-full py-3.5 px-4 bg-[#1877F2] hover:bg-[#1569d6] text-white rounded-2xl text-xs font-bold transition-all flex items-center justify-between cursor-pointer shadow-2xs font-headline-lg relative overflow-hidden group"
                 >
@@ -2071,6 +2151,16 @@ export default function ProfileTab({
                         )}
                       </button>
                     </div>
+                    <div className="text-center pt-3 text-[10px]">
+                      <span className="text-gray-400 font-semibold font-headline-lg">Zaten bir hesabınız var mı? </span>
+                      <button
+                        type="button"
+                        onClick={() => setLoginStep('credentials')}
+                        className="text-[#4ECDC4] font-extrabold hover:underline cursor-pointer font-headline-lg"
+                      >
+                        Giriş Yapın
+                      </button>
+                    </div>
                   </form>
                 ) : (
                   <form onSubmit={handleMockSubmit} className="space-y-4">
@@ -2162,8 +2252,330 @@ export default function ProfileTab({
                         )}
                       </button>
                     </div>
+                    <div className="text-center pt-3 text-[10px]">
+                      <span className="text-gray-400 font-semibold font-headline-lg">Yeni kullanıcı mısınız? </span>
+                      <button
+                        type="button"
+                        onClick={() => setLoginStep('register')}
+                        className="text-[#4ECDC4] font-extrabold hover:underline cursor-pointer font-headline-lg"
+                      >
+                        Yeni Hesap Oluşturun
+                      </button>
+                    </div>
                   </form>
                 )}
+              </motion.div>
+            </div>
+          );
+        })()}
+      </AnimatePresence>
+
+      {/* SIMULATED OAUTH MODAL (GOOGLE / FACEBOOK) */}
+      <AnimatePresence>
+        {oauthStep !== 'none' && oauthProvider && (() => {
+          const isGoogle = oauthProvider === 'google';
+          
+          return (
+            <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
+              <motion.div
+                initial={{ scale: 0.95, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.95, opacity: 0 }}
+                className="max-w-md w-full rounded-2xl overflow-hidden shadow-2xl flex flex-col bg-white border border-gray-200 text-gray-800"
+                style={{ fontFamily: 'Inter, sans-serif' }}
+              >
+                {/* 1. Browser Chrome Header */}
+                <div className="bg-gray-100 border-b border-gray-200 px-4 py-2.5 flex items-center gap-3">
+                  {/* Window Controls */}
+                  <div className="flex gap-1.5 shrink-0">
+                    <div className="w-3 h-3 rounded-full bg-[#FF5F56]" />
+                    <div className="w-3 h-3 rounded-full bg-[#FFBD2E]" />
+                    <div className="w-3 h-3 rounded-full bg-[#27C93F]" />
+                  </div>
+                  {/* Address Bar */}
+                  <div className="flex-1 bg-white border border-gray-200 rounded-lg px-3 py-1 flex items-center gap-2 text-[10px] text-gray-500 font-mono select-none overflow-hidden truncate">
+                    <span className="text-emerald-600 font-bold shrink-0">🔒 Güvenli</span>
+                    <span className="truncate">
+                      {isGoogle 
+                        ? 'https://accounts.google.com/o/oauth2/v2/auth?client_id=987216-oykum.apps.googleusercontent.com&redirect_uri=capacitor://localhost' 
+                        : 'https://www.facebook.com/v12.0/dialog/oauth?client_id=274910385912&redirect_uri=capacitor://localhost'
+                      }
+                    </span>
+                  </div>
+                  {/* Close Window */}
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setOauthStep('none');
+                      setOauthProvider(null);
+                    }}
+                    className="p-1 text-gray-400 hover:text-gray-650 cursor-pointer font-bold transition-colors text-xs"
+                  >
+                    <X className="w-4 h-4" />
+                  </button>
+                </div>
+
+                {/* 2. Main content based on state */}
+                <div className="p-8 flex flex-col items-center min-h-[360px] justify-center bg-white relative">
+                  
+                  {/* STEP: LOADING */}
+                  {oauthStep === 'loading' && (
+                    <div className="flex flex-col items-center justify-center space-y-4">
+                      {isGoogle ? (
+                        <div className="flex space-x-1.5">
+                          <span className="w-3 h-3 bg-[#4285F4] rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
+                          <span className="w-3 h-3 bg-[#EA4335] rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
+                          <span className="w-3 h-3 bg-[#FBBC05] rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
+                          <span className="w-3 h-3 bg-[#34A853] rounded-full animate-bounce" style={{ animationDelay: '450ms' }} />
+                        </div>
+                      ) : (
+                        <div className="w-10 h-10 border-4 border-[#1877F2]/20 border-t-[#1877F2] rounded-full animate-spin" />
+                      )}
+                      <p className="text-xs text-gray-500 font-semibold font-headline-lg animate-pulse">
+                        {isGoogle ? 'Google Accounts' : 'Facebook Login'} yükleniyor...
+                      </p>
+                    </div>
+                  )}
+
+                  {/* STEP: SELECT ACCOUNT (Google Only) */}
+                  {oauthStep === 'select_account' && isGoogle && (
+                    <div className="w-full flex flex-col">
+                      {/* Google Multi-colored Logo */}
+                      <div className="flex justify-center mb-6 font-bold text-2xl tracking-tight select-none">
+                        <span className="text-[#4285F4]">G</span>
+                        <span className="text-[#EA4335]">o</span>
+                        <span className="text-[#FBBC05]">o</span>
+                        <span className="text-[#4285F4]">g</span>
+                        <span className="text-[#34A853]">l</span>
+                        <span className="text-[#EA4335]">e</span>
+                      </div>
+
+                      <h3 className="text-base font-bold text-center text-gray-900 mb-1 font-headline-lg">
+                        Bir hesap seçin
+                      </h3>
+                      <p className="text-xs text-center text-gray-500 mb-6 font-semibold font-headline-lg">
+                        İngilizce Öyküm uygulamasına devam etmek için
+                      </p>
+
+                      <div className="space-y-2.5 max-h-[220px] overflow-y-auto pr-1">
+                        {/* Default Preloaded Account */}
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setOauthEmail('ardasimsek1005@gmail.com');
+                            setOauthStep('consent');
+                          }}
+                          className="w-full p-3.5 rounded-xl border border-gray-200 hover:bg-gray-50 text-left transition-colors flex items-center gap-3 cursor-pointer group"
+                        >
+                          <div className="w-8 h-8 rounded-full bg-[#EA4335]/10 text-[#EA4335] flex items-center justify-center font-bold text-xs select-none">
+                            A
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <div className="text-xs font-bold text-gray-800">Arda Şimşek</div>
+                            <div className="text-[10px] text-gray-500 font-medium truncate">ardasimsek1005@gmail.com</div>
+                          </div>
+                          <div className="w-1.5 h-1.5 rounded-full bg-transparent group-hover:bg-[#EA4335] transition-colors" />
+                        </button>
+
+                        {/* Custom Account Selection */}
+                        {oauthShowCustomInput ? (
+                          <div className="p-3.5 rounded-xl border border-[#4285F4] bg-white space-y-3">
+                            <label className="text-[9px] font-bold text-[#4285F4] tracking-wider block font-headline-lg">
+                              GMAIL ADRESİ GİRİN
+                            </label>
+                            <input
+                              type="email"
+                              placeholder="ornek@gmail.com"
+                              value={oauthCustomEmail}
+                              onChange={(e) => setOauthCustomEmail(e.target.value)}
+                              className="w-full text-xs px-3 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:border-[#4285F4] font-medium"
+                            />
+                            <div className="flex gap-2">
+                              <button
+                                type="button"
+                                onClick={() => setOauthShowCustomInput(false)}
+                                className="w-1/2 py-2 border border-gray-205 rounded-lg text-[10px] font-bold text-gray-500 hover:bg-gray-50 cursor-pointer"
+                              >
+                                Vazgeç
+                              </button>
+                              <button
+                                type="button"
+                                onClick={() => {
+                                  const trimmed = oauthCustomEmail.trim().toLowerCase();
+                                  if (!trimmed || !trimmed.endsWith('@gmail.com') || trimmed.length < 13) {
+                                    setToastMessage('Lütfen geçerli bir Gmail adresi girin (@gmail.com ile bitmelidir). ⚠️');
+                                    setTimeout(() => setToastMessage(null), 3000);
+                                    return;
+                                  }
+                                  setOauthEmail(trimmed);
+                                  setOauthStep('consent');
+                                }}
+                                className="w-1/2 py-2 bg-[#4285F4] text-white rounded-lg text-[10px] font-bold hover:bg-[#357ae8] cursor-pointer shadow-sm"
+                              >
+                                İleri
+                              </button>
+                            </div>
+                          </div>
+                        ) : (
+                          <button
+                            type="button"
+                            onClick={() => setOauthShowCustomInput(true)}
+                            className="w-full p-3.5 rounded-xl border border-dashed border-gray-300 hover:border-[#4285F4] hover:bg-[#4285F4]/5 text-center transition-colors flex items-center justify-center gap-2 cursor-pointer group"
+                          >
+                            <Plus className="w-3.5 h-3.5 text-gray-400 group-hover:text-[#4285F4]" />
+                            <span className="text-xs font-bold text-gray-500 group-hover:text-[#4285F4]">Başka bir Gmail hesabı kullan</span>
+                          </button>
+                        )}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* STEP: CONSENT (Google / Facebook) */}
+                  {oauthStep === 'consent' && (
+                    <div className="w-full flex flex-col">
+                      {isGoogle ? (
+                        /* Google Consent */
+                        <>
+                          <div className="flex justify-center mb-5 font-bold text-xl tracking-tight select-none">
+                            <span className="text-[#4285F4]">G</span>
+                            <span className="text-[#EA4335]">o</span>
+                            <span className="text-[#FBBC05]">o</span>
+                            <span className="text-[#4285F4]">g</span>
+                            <span className="text-[#34A853]">l</span>
+                            <span className="text-[#EA4335]">e</span>
+                          </div>
+                          
+                          <h3 className="text-base font-bold text-center text-gray-800 mb-1 font-headline-lg">
+                            İngilizce Öyküm'e izin verin
+                          </h3>
+                          <p className="text-[11px] text-center text-gray-500 mb-5 font-semibold font-headline-lg">
+                            İşlem yapılacak hesap: <span className="text-gray-700 font-extrabold">{oauthEmail}</span>
+                          </p>
+
+                          <div className="bg-gray-50 border border-gray-150 rounded-xl p-4 mb-6 space-y-3">
+                            <p className="text-[9px] text-gray-400 font-bold tracking-wider uppercase block font-headline-lg">
+                              İNGİLİZCE ÖYKÜM UYGULAMASI ŞUNLARA ERİŞMEK İSTİYOR:
+                            </p>
+                            <div className="flex gap-2.5 items-start">
+                              <CheckCircle2 className="w-4 h-4 text-[#34A853] shrink-0 mt-0.5" />
+                              <div className="text-xs text-gray-700 font-medium">
+                                <span className="font-bold">Kişisel Bilgiler:</span> Adınız, profil resminiz ve temel hesap bilgileriniz.
+                              </div>
+                            </div>
+                            <div className="flex gap-2.5 items-start">
+                              <CheckCircle2 className="w-4 h-4 text-[#34A853] shrink-0 mt-0.5" />
+                              <div className="text-xs text-gray-700 font-medium">
+                                <span className="font-bold">E-posta adresi:</span> Google hesabınıza kayıtlı birincil e-posta adresi.
+                              </div>
+                            </div>
+                          </div>
+
+                          <p className="text-[9px] text-gray-450 mb-6 leading-relaxed font-semibold text-center font-headline-lg">
+                            Onayla butonuna tıklayarak İngilizce Öyküm'ün verilerinizi Hizmet Şartları ve Gizlilik Politikası kapsamında kullanmasına izin vermiş olursunuz.
+                          </p>
+
+                          <div className="flex gap-3">
+                            <button
+                              type="button"
+                              onClick={() => {
+                                setOauthStep('none');
+                                setOauthProvider(null);
+                              }}
+                              className="w-1/3 py-2.5 border border-gray-250 hover:bg-gray-50 text-xs font-bold text-gray-600 rounded-xl cursor-pointer text-center font-headline-lg"
+                            >
+                              İptal Et
+                            </button>
+                            <button
+                              type="button"
+                              onClick={() => {
+                                const localName = formatAutofillName(oauthEmail) || oauthEmail.split('@')[0];
+                                handleOauthSubmit(oauthEmail, localName, 'google');
+                              }}
+                              className="w-2/3 py-2.5 bg-[#4285F4] hover:bg-[#357ae8] text-white text-xs font-bold rounded-xl cursor-pointer text-center shadow-md font-headline-lg"
+                            >
+                              Bağlantıyı Onayla
+                            </button>
+                          </div>
+                        </>
+                      ) : (
+                        /* Facebook Consent */
+                        <>
+                          <div className="flex justify-center mb-5 font-black text-2xl tracking-tighter text-[#1877F2] select-none font-mono">
+                            facebook
+                          </div>
+
+                          <h3 className="text-base font-bold text-center text-gray-800 mb-1 font-headline-lg">
+                            Uygulama Yetkilendirme
+                          </h3>
+                          <p className="text-[11px] text-center text-gray-500 mb-6 font-semibold font-headline-lg">
+                            İngilizce Öyküm uygulaması hesabınıza bağlanmak istiyor.
+                          </p>
+
+                          <div className="bg-gray-50 border border-gray-150 rounded-xl p-4 mb-6 space-y-3 w-full">
+                            <div className="flex items-center gap-3 mb-1">
+                              <div className="w-10 h-10 rounded-full bg-[#1877F2]/10 text-[#1877F2] flex items-center justify-center font-bold text-sm select-none">
+                                A
+                              </div>
+                              <div className="text-left">
+                                <div className="text-xs font-bold text-gray-800">Arda Şimşek</div>
+                                <div className="text-[9px] text-gray-400 font-semibold">Facebook ile Giriş yapılıyor</div>
+                              </div>
+                            </div>
+                            <div className="border-t border-gray-200 pt-3 space-y-2 text-left">
+                              <p className="text-[9px] text-gray-400 font-bold tracking-wider uppercase block font-headline-lg">
+                                İSTENEN İZİNLER:
+                              </p>
+                              <div className="text-xs text-gray-700 font-medium">
+                                • Herkese açık profil bilgileriniz (isim, resim)
+                              </div>
+                              <div className="text-xs text-gray-700 font-medium">
+                                • E-posta adresiniz ({oauthEmail})
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="flex gap-3 w-full">
+                            <button
+                              type="button"
+                              onClick={() => {
+                                setOauthStep('none');
+                                setOauthProvider(null);
+                              }}
+                              className="w-1/3 py-2.5 border border-gray-250 hover:bg-gray-50 text-xs font-bold text-gray-600 rounded-xl cursor-pointer text-center font-headline-lg"
+                            >
+                              İptal
+                            </button>
+                            <button
+                              type="button"
+                              onClick={() => {
+                                handleOauthSubmit(oauthEmail, 'Arda Şimşek', 'facebook');
+                              }}
+                              className="w-2/3 py-2.5 bg-[#1877F2] hover:bg-[#166fe5] text-white text-xs font-bold rounded-xl cursor-pointer text-center shadow-md font-headline-lg animate-pulse"
+                            >
+                              Arda Şimşek Olarak Devam Et
+                            </button>
+                          </div>
+                        </>
+                      )}
+                    </div>
+                  )}
+
+                  {/* STEP: REDIRECTING */}
+                  {oauthStep === 'redirecting' && (
+                    <div className="flex flex-col items-center justify-center space-y-4 text-center">
+                      <div className="w-12 h-12 rounded-full border-4 border-emerald-100 border-t-emerald-500 animate-spin" />
+                      <div className="space-y-1">
+                        <h4 className="text-xs font-bold text-emerald-600 uppercase tracking-widest font-headline-lg">
+                          Giriş Başarılı!
+                        </h4>
+                        <p className="text-xs text-gray-500 font-medium font-headline-lg max-w-[280px]">
+                          Bağlantı doğrulandı, İngilizce Öyküm uygulamasına güvenle yönlendiriliyorsunuz...
+                        </p>
+                      </div>
+                    </div>
+                  )}
+
+                </div>
               </motion.div>
             </div>
           );
