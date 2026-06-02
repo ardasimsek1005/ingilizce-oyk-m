@@ -6,6 +6,7 @@ import { GoogleGenAI, Type } from "@google/genai";
 import dotenv from "dotenv";
 import fs from "fs";
 import crypto from "crypto";
+import nodemailer from "nodemailer";
 import { OFFLINE_DICTIONARY } from "./src/dictionary";
 import { GLOBAL_DICTIONARY } from "./src/data";
 
@@ -34,6 +35,110 @@ function hashEmail(email: string): string {
 // Çeviri için offline dictionary ve CEFR levels kullanılıyor
 
 dotenv.config();
+
+// Configure email SMTP transporter using environment variables
+const smtpHost = process.env.SMTP_HOST || "";
+const smtpPort = parseInt(process.env.SMTP_PORT || "587");
+const smtpUser = process.env.SMTP_USER || "";
+const smtpPass = process.env.SMTP_PASS || "";
+const smtpFrom = process.env.SMTP_FROM || smtpUser || "no-reply@ingilizceoykum.com";
+
+let transporter: any = null;
+
+if (smtpHost && smtpUser && smtpPass) {
+  try {
+    transporter = nodemailer.createTransport({
+      host: smtpHost,
+      port: smtpPort,
+      secure: smtpPort === 465, // true for port 465, false for other ports
+      auth: {
+        user: smtpUser,
+        pass: smtpPass
+      }
+    });
+    console.log("[Mail] SMTP transporter configured successfully.");
+  } catch (err) {
+    console.error("[Mail] Failed to configure SMTP transporter:", err);
+  }
+} else {
+  console.log("[Mail] SMTP configuration missing. Emails will be logged to sent_emails.log.");
+}
+
+// Function to send login success email notification
+function sendLoginNotificationEmail(email: string, userName: string, provider: string) {
+  const cleanEmail = email.toLowerCase().trim();
+  
+  // Skip if not a valid looking email address
+  if (!cleanEmail.includes("@")) {
+    console.log(`[Mail] Skip sending email to username/local account key: ${email}`);
+    return;
+  }
+
+  const subject = "İngilizce Öyküm - Giriş Başarılı 🚀";
+  const providerText = provider === "google" ? "Google" : provider === "facebook" ? "Facebook" : "E-posta / Şifre";
+  const htmlContent = `
+    <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 550px; margin: 0 auto; padding: 25px; border: 1px solid #e0e0e5; border-radius: 12px; background-color: #ffffff; color: #2d3436;">
+      <div style="text-align: center; border-bottom: 2px solid #f1f3f5; padding-bottom: 15px; margin-bottom: 20px;">
+        <h2 style="color: #4ECDC4; margin: 0; font-size: 24px; font-weight: 800; letter-spacing: -0.5px;">İngilizce Öyküm</h2>
+      </div>
+      
+      <p style="font-size: 15px; line-height: 1.6; color: #495057;">Merhaba <strong>${userName}</strong>,</p>
+      
+      <p style="font-size: 14px; line-height: 1.6; color: #495057;">
+        Hesabınıza <strong>${providerText}</strong> aracılığıyla başarıyla giriş yapıldı. Tüm okuma ilerlemeniz, istatistikleriniz ve kelime kütüphaneniz cihazlarınızla senkronize edildi.
+      </p>
+      
+      <div style="background-color: #f8f9fa; border-left: 4px solid #4ECDC4; padding: 12px 18px; margin: 20px 0; border-radius: 4px;">
+        <p style="margin: 0; font-size: 13px; color: #6c757d; font-family: monospace;">
+          <strong>E-posta:</strong> ${cleanEmail}<br>
+          <strong>Yöntem:</strong> ${providerText}<br>
+          <strong>Tarih:</strong> ${new Date().toLocaleString("tr-TR", { timeZone: "Europe/Istanbul" })}
+        </p>
+      </div>
+
+      <p style="font-size: 14px; line-height: 1.6; color: #495057;">
+        İyi okumalar ve keyifli öğrenmeler dileriz! 📚✨
+      </p>
+      
+      <div style="text-align: center; border-top: 1px solid #eee; padding-top: 15px; margin-top: 25px; font-size: 11px; color: #adb5bd;">
+        Bu e-posta İngilizce Öyküm güvenlik bilgilendirmesi kapsamında gönderilmiştir.
+      </div>
+    </div>
+  `;
+
+  if (transporter) {
+    const mailOptions = {
+      from: `"İngilizce Öyküm" <${smtpFrom}>`,
+      to: cleanEmail,
+      subject: subject,
+      html: htmlContent
+    };
+
+    transporter.sendMail(mailOptions, (error: any, info: any) => {
+      if (error) {
+        console.error(`[Mail] Error sending login email to ${cleanEmail}:`, error);
+      } else {
+        console.log(`[Mail] Login email successfully sent to ${cleanEmail}:`, info.messageId);
+      }
+    });
+  } else {
+    // Write simulated email to logs/sent_emails.log
+    const mailLogEntry = `
+[${new Date().toISOString()}] EMAIL SENT
+To: ${cleanEmail}
+Subject: ${subject}
+Provider: ${providerText}
+User: ${userName}
+--------------------------------------------------
+`;
+    try {
+      fs.appendFileSync("sent_emails.log", mailLogEntry, "utf-8");
+      console.log(`[Mail Simulator] Email simulated for ${cleanEmail}. Saved to sent_emails.log`);
+    } catch (err) {
+      console.error("[Mail Simulator] Failed to write email simulation log:", err);
+    }
+  }
+}
 
 const isCommonEnglishWord = (w: string): boolean => {
   if (!w) return false;
@@ -670,7 +775,7 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
   // Auth endpoint - Register or login user with password or token
   app.post("/api/auth", (req, res) => {
     try {
-      const { email, password, token, provider, isExternal } = req.body;
+      const { email, password, token, provider, isExternal, name } = req.body;
       if (!email || email.trim().length < 3) {
         return res.status(400).json({ error: "Geçersiz e-posta veya kullanıcı adı. ⚠️" });
       }
@@ -699,6 +804,9 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
             updatedAt: new Date().toISOString()
           };
           saveUsersData();
+          
+          sendLoginNotificationEmail(cleanEmail, name || cleanEmail.split("@")[0], provider || "google");
+          
           return res.json({ success: true, token: sessionToken, isNew: true, message: "Yeni hesap başarıyla oluşturuldu." });
         } else {
           // Initialize tokens array if it doesn't exist
@@ -709,6 +817,9 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
           }
           userRecord.updatedAt = new Date().toISOString();
           saveUsersData();
+          
+          sendLoginNotificationEmail(cleanEmail, name || cleanEmail.split("@")[0], provider || "google");
+          
           return res.json({ success: true, token: sessionToken, isNew: false, message: "Giriş başarılı." });
         }
       }
@@ -729,6 +840,9 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
           updatedAt: new Date().toISOString()
         };
         saveUsersData();
+        
+        sendLoginNotificationEmail(cleanEmail, name || cleanEmail.split("@")[0], provider || "email");
+        
         return res.json({ success: true, token: sessionToken, isNew: true, message: "Yeni hesap başarıyla oluşturuldu." });
       } else {
         // Initialize tokens array if it doesn't exist
@@ -762,6 +876,8 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
         }
         userRecord.updatedAt = new Date().toISOString();
         saveUsersData();
+
+        sendLoginNotificationEmail(cleanEmail, name || cleanEmail.split("@")[0], provider || "email");
 
         return res.json({ success: true, token: sessionToken, isNew: false, message: "Giriş başarılı." });
       }

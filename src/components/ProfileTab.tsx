@@ -92,6 +92,7 @@ export default function ProfileTab({
   const [oauthEmail, setOauthEmail] = useState('ardasimsek1005@gmail.com');
   const [oauthCustomEmail, setOauthCustomEmail] = useState('');
   const [oauthShowCustomInput, setOauthShowCustomInput] = useState(false);
+  const [showLogoutConfirm, setShowLogoutConfirm] = useState(false);
 
   // Referral states
   const [referredBy, setReferredBy] = useState<string>(() => localStorage.getItem('linguist_referred_by') || '');
@@ -889,16 +890,7 @@ export default function ProfileTab({
                 <button
                   type="button"
                   onClick={() => {
-                    const providerNames: Record<string, string> = {
-                      google: 'Google',
-                      facebook: 'Facebook',
-                      apple: 'Apple',
-                      email: 'E-posta'
-                    };
-                    const currentProviderName = providerNames[loginProvider || ''] || 'Hesap';
-                    onGoogleLogout();
-                    setToastMessage(`${currentProviderName} oturumu güvenli bir şekilde kapatıldı. 🚪`);
-                    setTimeout(() => setToastMessage(null), 3000);
+                    setShowLogoutConfirm(true);
                   }}
                   className={`mt-4 w-full flex items-center justify-between p-3.5 px-4 rounded-2xl border text-xs font-bold transition-all cursor-pointer ${
                     isDarkMode 
@@ -2580,6 +2572,64 @@ export default function ProfileTab({
             </div>
           );
         })()}
+      </AnimatePresence>
+
+      {/* LOGOUT CONFIRMATION MODAL */}
+      <AnimatePresence>
+        {showLogoutConfirm && (
+          <div className="fixed inset-0 z-50 bg-[#2D3436]/55 backdrop-blur-xs flex items-center justify-center p-4">
+            <motion.div
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              className={`max-w-xs w-full rounded-[24px] border-2 p-5 flex flex-col shadow-2xl relative transition-all ${
+                isDarkMode ? 'bg-[#1A1A1E] border-[#2A2A30]' : 'bg-white border-[#FFE66D]'
+              }`}
+            >
+              <div className="mx-auto w-12 h-12 rounded-full bg-rose-500/10 dark:bg-rose-500/15 flex items-center justify-center mb-4 text-rose-500">
+                <ShieldAlert className="w-6 h-6 animate-pulse" />
+              </div>
+
+              <h3 className={`font-headline-lg text-sm font-bold mb-2 text-center ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
+                Oturumu Kapat
+              </h3>
+              <p className="text-[10px] text-gray-400 mb-5 leading-relaxed font-semibold text-center font-headline-lg">
+                Çıkış yapmak istediğinize emin misiniz? Çevrimdışı okuma ilerlemeniz ve verileriniz bu cihazda saklanacaktır.
+              </p>
+
+              <div className="flex gap-2.5">
+                <button
+                  type="button"
+                  onClick={() => setShowLogoutConfirm(false)}
+                  className={`w-1/2 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer font-headline-lg ${
+                    isDarkMode ? 'bg-[#2A2A30] hover:bg-[#343A40] text-gray-300' : 'bg-gray-150 hover:bg-gray-200 text-gray-600'
+                  }`}
+                >
+                  Vazgeç
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    const providerNames: Record<string, string> = {
+                      google: 'Google',
+                      facebook: 'Facebook',
+                      apple: 'Apple',
+                      email: 'E-posta'
+                    };
+                    const currentProviderName = providerNames[loginProvider || ''] || 'Hesap';
+                    onGoogleLogout();
+                    setShowLogoutConfirm(false);
+                    setToastMessage(`${currentProviderName} oturumu güvenli bir şekilde kapatıldı. 🚪`);
+                    setTimeout(() => setToastMessage(null), 3000);
+                  }}
+                  className="w-1/2 py-2.5 bg-rose-500 text-white rounded-xl text-xs font-bold hover:bg-rose-600 transition-all cursor-pointer shadow-md shadow-rose-500/20 font-headline-lg"
+                >
+                  Çıkış Yap
+                </button>
+              </div>
+            </motion.div>
+          </div>
+        )}
       </AnimatePresence>
 
       {/* ENTER INVITATION CODE MODAL */}
