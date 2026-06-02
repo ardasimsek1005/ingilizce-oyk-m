@@ -330,21 +330,43 @@ export default function ProfileTab({
       isDarkMode ? 'text-[#E6E6E6]' : 'text-[#2D3436]'
     }`}>
       
-      {/* Toast Notification replacing alert() */}
+      {/* Centered Premium Toast Notification */}
       <AnimatePresence>
-        {toastMessage && (
-          <motion.div
-            initial={{ opacity: 0, y: -20, scale: 0.95 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.95 }}
-            className={`fixed top-20 left-1/2 -translate-x-1/2 z-50 py-3.5 px-6 rounded-2xl shadow-xl flex items-center gap-3 border text-xs font-bold leading-none ${
-              isDarkMode ? 'bg-[#1E1E22] border-[#4ECDC4] text-[#4ECDC4]' : 'bg-[#eefcfb] border-[#4ECDC4] text-[#2c8d86]'
-            }`}
-          >
-            <Check className="w-5 h-5 text-[#4ECDC4] animate-bounce shrink-0" />
-            <span>{toastMessage}</span>
-          </motion.div>
-        )}
+        {toastMessage && (() => {
+          const isWarning = toastMessage.includes('⚠️') || 
+                            toastMessage.toLowerCase().includes('hata') || 
+                            toastMessage.toLowerCase().includes('geçersiz') || 
+                            toastMessage.toLowerCase().includes('yetersiz') ||
+                            toastMessage.toLowerCase().includes('çıkış') ||
+                            toastMessage.toLowerCase().includes('kaldırıldı') ||
+                            toastMessage.toLowerCase().includes('olmamalıdır');
+          
+          return (
+            <div className="fixed inset-0 z-[9999] flex items-center justify-center p-6 pointer-events-none select-none">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9, y: 15 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.9, y: 15 }}
+                className={`w-full max-w-[340px] rounded-3xl p-6 border text-center flex flex-col items-center gap-4 backdrop-blur-lg transition-all duration-300 shadow-2xl ${
+                  isDarkMode 
+                    ? 'bg-[#1E1E22]/95 border-[#2A2A30] text-white shadow-black/60' 
+                    : 'bg-white/95 border-[#FFE66D]/80 text-[#2D3436] shadow-gray-400/20'
+                }`}
+              >
+                {isWarning ? (
+                  <div className="w-12 h-12 rounded-full bg-[#FF6B6B]/10 flex items-center justify-center border border-[#FF6B6B]/30 shrink-0">
+                    <X className="w-6 h-6 text-[#FF6B6B] animate-pulse" />
+                  </div>
+                ) : (
+                  <div className="w-12 h-12 rounded-full bg-[#4ECDC4]/10 flex items-center justify-center border border-[#4ECDC4]/30 shrink-0">
+                    <Check className="w-6 h-6 text-[#4ECDC4] animate-bounce" />
+                  </div>
+                )}
+                <span className="text-sm font-bold leading-relaxed">{toastMessage}</span>
+              </motion.div>
+            </div>
+          );
+        })()}
       </AnimatePresence>
       
       {/* Profile Header Avatar */}
