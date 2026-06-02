@@ -148,6 +148,7 @@ interface LibraryTabProps {
   lastActiveBookId: string | null;
   searchQuery?: string;
   onSearchQueryChange?: (query: string) => void;
+  onRemoveFromReading?: (bookId: string) => void;
 }
 
 export default function LibraryTab({
@@ -160,10 +161,12 @@ export default function LibraryTab({
   lastActiveBookId,
   searchQuery = '',
   onSearchQueryChange,
+  onRemoveFromReading,
 }: LibraryTabProps) {
   const [selectedLevel, setSelectedLevel] = useState<string>('All');
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [showSuggestions, setShowSuggestions] = useState(false);
+  const [confirmRemoveBookId, setConfirmRemoveBookId] = useState<string | null>(null);
 
   const suggestions = useMemo(() => {
     if (!searchQuery || searchQuery.trim().length < 2) return [];
@@ -468,92 +471,106 @@ export default function LibraryTab({
             </div>
           </motion.div>
 
-          {/* Progressively Shrinking Secondary Books List */}
+          {/* Secondary Currently Reading Books: 3-column grid */}
           {secondaryCurrentlyReading.length > 0 && (
-            <div className="mt-8 space-y-3">
-              <h3 className={`text-[10px] font-extrabold uppercase tracking-widest ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
+            <div className="mt-8">
+              <h3 className={`text-[10px] font-extrabold uppercase tracking-widest mb-3 ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
                 Diğer Okunan Kitaplar ({secondaryCurrentlyReading.length})
               </h3>
-              <div className="flex items-end gap-4 overflow-x-auto pb-4 pt-2 scrollbar-none snap-x snap-mandatory">
-                {secondaryCurrentlyReading.map((book, idx) => {
-                  // Shrink the books progressively
-                  // scale factor: 1st secondary book is scale 0.95, then decreases by 0.08 each step, clamping at 0.65
-                  const scaleFactor = Math.max(0.65, 0.95 - idx * 0.08);
-                  const baseWidth = 84; // standard cover width
-                  const baseHeight = 126; // standard cover height
-                  
-                  const w = Math.round(baseWidth * scaleFactor);
-                  const h = Math.round(baseHeight * scaleFactor);
-                  
-                  return (
-                    <motion.div
-                      key={book.id}
-                      initial={{ opacity: 0, y: 10, scale: 0.9 }}
-                      animate={{ opacity: 1, y: 0, scale: 1 }}
-                      transition={{ duration: 0.3, delay: idx * 0.05 }}
+              <div className="grid grid-cols-3 gap-3">
+                {secondaryCurrentlyReading.map((book, idx) => (
+                  <motion.div
+                    key={book.id}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3, delay: idx * 0.05 }}
+                    className="flex flex-col items-center cursor-pointer group relative"
+                  >
+                    {/* Cover */}
+                    <div
                       onClick={() => onSelectBook(book)}
-                      className="flex flex-col items-center shrink-0 cursor-pointer snap-start group relative"
-                      style={{ width: `${w}px` }}
+                      className={`w-full rounded-xl overflow-hidden shadow-sm relative border transition-all duration-300 group-hover:shadow-md group-hover:scale-[1.03] ${
+                        isDarkMode
+                          ? 'bg-[#1A1A1E] border-[#2A2A30] group-hover:border-[#FF6B6B]/40 shadow-black/30'
+                          : 'bg-white border-[#FFE66D]/60 group-hover:border-[#FF6B6B]/40 shadow-[#FF6B6B]/5'
+                      }`}
+                      style={{ aspectRatio: '2/3' }}
                     >
-                      {/* Cover container */}
-                      <div 
-                        className={`rounded-xl overflow-hidden shadow-xs relative border transition-all duration-300 group-hover:shadow-md group-hover:scale-[1.03] ${
-                          isDarkMode 
-                            ? 'bg-[#1A1A1E] border-[#2A2A30] group-hover:border-[#FF6B6B]/40 shadow-black/30' 
-                            : 'bg-white border-[#FFE66D]/60 group-hover:border-[#FF6B6B]/40 shadow-[#FF6B6B]/5'
-                        }`}
-                        style={{ width: `${w}px`, height: `${h}px` }}
-                      >
-                        <img
-                          alt={book.title}
-                          className="w-full h-full object-cover"
-                          src={book.coverUrl}
-                          loading="lazy"
-                        />
-                        
-                        {/* Level overlay badge */}
-                        <div 
-                          className="absolute top-1 right-1 bg-black/55 backdrop-blur-xs rounded text-white font-bold leading-none select-none scale-90"
-                          style={{ 
-                            padding: '2px 4px',
-                            fontSize: `${Math.max(7, 8 * scaleFactor)}px`
-                          }}
-                        >
-                          {book.level}
-                        </div>
-                        
-                        {/* Thin progress bar overlay at bottom of cover */}
-                        <div className="absolute bottom-0 left-0 right-0 h-1 bg-black/30">
-                          <div 
-                            className="h-full bg-[#4ECDC4] transition-all duration-500"
-                            style={{ width: `${book.percentageCompleted}%` }}
-                          />
-                        </div>
+                      <img
+                        alt={book.title}
+                        className="w-full h-full object-cover"
+                        src={book.coverUrl}
+                        loading="lazy"
+                      />
+                      {/* Level badge */}
+                      <div className="absolute top-1 right-1 bg-black/55 backdrop-blur-xs rounded text-white font-bold leading-none select-none" style={{ padding: '2px 4px', fontSize: '8px' }}>
+                        {book.level}
                       </div>
-                      
-                      {/* Truncated Title */}
-                      <h4 
-                        className={`font-semibold text-center mt-2 leading-tight truncate w-full group-hover:text-[#FF6B6B] transition-colors ${
-                          isDarkMode ? 'text-gray-300' : 'text-gray-850'
-                        }`}
-                        style={{ fontSize: `${Math.max(9, 10.5 * scaleFactor)}px` }}
-                      >
-                        {book.title}
-                      </h4>
-                      
-                      {/* Completion Percentage Badge */}
-                      <span 
-                        className="text-[#4ECDC4] font-black leading-none mt-0.5"
-                        style={{ fontSize: `${Math.max(8, 9.5 * scaleFactor)}px` }}
-                      >
-                        %{book.percentageCompleted}
-                      </span>
-                    </motion.div>
-                  );
-                })}
+                      {/* Progress bar */}
+                      <div className="absolute bottom-0 left-0 right-0 h-1 bg-black/30">
+                        <div className="h-full bg-[#4ECDC4] transition-all duration-500" style={{ width: `${book.percentageCompleted}%` }} />
+                      </div>
+                      {/* Remove button */}
+                      {onRemoveFromReading && (
+                        <button
+                          onClick={(e) => { e.stopPropagation(); setConfirmRemoveBookId(book.id); }}
+                          className="absolute top-1 left-1 bg-black/60 backdrop-blur-xs rounded-full p-1 text-white hover:bg-red-500/80 transition-colors"
+                          title="Okunanlar listesinden çıkar"
+                        >
+                          <svg xmlns="http://www.w3.org/2000/svg" className="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                        </button>
+                      )}
+                    </div>
+                    {/* Title */}
+                    <h4
+                      className={`font-semibold text-center mt-1.5 leading-tight line-clamp-2 w-full text-[10px] group-hover:text-[#FF6B6B] transition-colors ${
+                        isDarkMode ? 'text-gray-300' : 'text-gray-800'
+                      }`}
+                    >
+                      {book.title}
+                    </h4>
+                    {/* Progress % */}
+                    <span className="text-[#4ECDC4] font-black leading-none mt-0.5 text-[9px]">
+                      %{book.percentageCompleted}
+                    </span>
+                  </motion.div>
+                ))}
               </div>
             </div>
           )}
+
+          {/* Confirm Remove Dialog */}
+          {confirmRemoveBookId && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center p-4" style={{ backgroundColor: 'rgba(0,0,0,0.55)' }}>
+              <div className={`w-full max-w-xs rounded-2xl shadow-2xl p-6 ${
+                isDarkMode ? 'bg-[#1A1A1E] text-white' : 'bg-white text-gray-800'
+              }`}>
+                <p className="text-sm font-semibold text-center mb-4 leading-relaxed">
+                  Bu kitabı okunanlar listenizden çıkarmak istediğinize emin misiniz?
+                </p>
+                <div className="flex gap-3">
+                  <button
+                    onClick={() => setConfirmRemoveBookId(null)}
+                    className={`flex-1 py-2.5 rounded-xl text-xs font-bold ${
+                      isDarkMode ? 'bg-[#2A2A30] text-gray-300 hover:bg-[#343A40]' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                    }`}
+                  >
+                    Vazgeç
+                  </button>
+                  <button
+                    onClick={() => {
+                      if (onRemoveFromReading) onRemoveFromReading(confirmRemoveBookId);
+                      setConfirmRemoveBookId(null);
+                    }}
+                    className="flex-1 py-2.5 rounded-xl text-xs font-bold bg-[#FF6B6B] text-white hover:bg-[#FF5252]"
+                  >
+                    Evet, Çıkar
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
+
         </section>
       )}
 

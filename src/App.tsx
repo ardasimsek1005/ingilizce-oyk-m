@@ -1165,6 +1165,14 @@ export default function App() {
     triggerCloudSync();
   };
 
+  // Remove a book from "currently reading" list without deleting progress
+  const handleRemoveFromReading = (bookId: string) => {
+    setBooks(prev => prev.map(b =>
+      b.id === bookId ? { ...b, isStarted: false, percentageCompleted: 0, currentPage: 1 } : b
+    ));
+    triggerCloudSync();
+  };
+
   // Gamified quizzes answers checks
   const handleAnswerCorrect = () => {
     setStats(prev => {
@@ -1303,7 +1311,7 @@ export default function App() {
                               currentPage: currentPage || 1,
                               totalPages: totalPages || 1,
                               pagesLeft: totalPages ? totalPages - (currentPage || 1) : 0,
-                              isStarted: percentage > 0 ? true : b.isStarted
+                              // isStarted is only set by handleStartBook — do NOT change it here
                             }
                           : b
                       )
@@ -1332,7 +1340,6 @@ export default function App() {
                               currentPage: currentPage || 1,
                               totalPages: totalPages || 1,
                               pagesLeft: totalPages ? totalPages - (currentPage || 1) : 0,
-                              isStarted: percentage > 0 ? true : b.isStarted
                             }
                           : b
                       )
@@ -1353,7 +1360,7 @@ export default function App() {
                             currentPage: currentPage || 1,
                             totalPages: totalPages || 1,
                             pagesLeft: totalPages ? totalPages - (currentPage || 1) : 0,
-                            isStarted: percentage > 0 ? true : b.isStarted
+                            // isStarted is only set by handleStartBook — do NOT change it here
                           }
                         : b
                     )
@@ -1376,6 +1383,7 @@ export default function App() {
                     lastActiveBookId={lastActiveBookId}
                     searchQuery={searchQuery}
                     onSearchQueryChange={setSearchQuery}
+                    onRemoveFromReading={handleRemoveFromReading}
                   />
                 )}
 

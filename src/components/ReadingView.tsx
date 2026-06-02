@@ -856,7 +856,9 @@ export default function ReadingView({
           const cleanW = cleanWord(wordEn);
           if (!cleanW) return; // Ignore clicking on pure symbols/punctuation
 
-          const isPlaceholder = wordTr === 'Sözlük karşılığı yükleniyor...';
+          const isPlaceholder = wordTr === 'Sözlük karşılığı yükleniyor...'
+            || !wordTr
+            || wordTr.toLowerCase().trim() === cleanW.toLowerCase().trim();
 
           // Check if word is already translated in cache for maximum speed
           const cached = getCachedTranslation(cleanW);
@@ -932,8 +934,8 @@ export default function ReadingView({
               console.error("Dynamic contextual translation failed:", err);
               // High quality offline fallback
               const looksLikePropName = looksLikeProperNoun(cleanW);
-              const finalTr = looksLikePropName ? `${cleanW} (Özel İsim)` : `${cleanW}`;
-              const fallbackNotes = looksLikePropName ? 'Özel isim veya Karakter adı' : 'Sözcük';
+              const finalTr = looksLikePropName ? `${cleanW} (Özel İsim)` : 'Çeviri bulunamadı';
+              const fallbackNotes = looksLikePropName ? 'Özel isim veya Karakter adı' : 'Sözlük bağlantısı kurulamadı';
               const fallbackLevel = looksLikePropName ? 'Özel İsim' : `${book?.level || 'A1'} Seviyesi`;
 
               // Cache the fallback too to prevent repeated unnecessary loads
