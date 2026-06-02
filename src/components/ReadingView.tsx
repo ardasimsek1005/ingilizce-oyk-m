@@ -1042,35 +1042,56 @@ export default function ReadingView({
     lastTapRef.current = { time: now, sentenceKey: currentKey };
   }, []);
 
-  // Speaks text aloud using premium Google / Youdao TTS engine, with a fallback to native SpeechSynthesis
+  // Speaks text aloud using premium Google TTS engine via fetch (to bypass origin block) with fallback to native SpeechSynthesis
   const speakTextAloud = (text: string, lang: 'en-US' | 'tr-TR') => {
     try {
       const cleanT = text.trim();
       if (!cleanT) return;
 
-      let ttsUrl = '';
-      if (lang === 'en-US') {
-        // Use Youdao English TTS (extremely reliable on mobile WebViews, ignores referrer blocks)
-        ttsUrl = `https://dict.youdao.com/dictvoice?type=0&audio=${encodeURIComponent(cleanT)}`;
-      } else {
-        // Use Google TTS for Turkish
-        ttsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=tr&client=tw-ob&q=${encodeURIComponent(cleanT)}`;
-      }
-      
-      const audio = new Audio(ttsUrl);
+      const langCode = lang.split('-')[0];
+      const googleTtsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=${langCode}&client=tw-ob&q=${encodeURIComponent(cleanT)}`;
+
       if (lang === 'en-US') {
         setSpeechSuccess(true);
-        audio.onended = () => setSpeechSuccess(false);
-        audio.onerror = () => {
-          // Fallback to native SpeechSynthesis if Audio element fails
-          speakTextAloudNative(cleanT, lang);
-        };
       }
-      
-      audio.play().catch(playErr => {
-        console.warn("TTS audio.play() failed, trying native speech synthesis:", playErr);
-        speakTextAloudNative(cleanT, lang);
-      });
+
+      // Fetch the high-quality Google TTS audio using no-referrer policy to bypass Capacitor origin block
+      fetch(googleTtsUrl, { referrerPolicy: 'no-referrer' })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`Google TTS request failed: ${response.status}`);
+          }
+          return response.blob();
+        })
+        .then(blob => {
+          const blobUrl = URL.createObjectURL(blob);
+          const audio = new Audio(blobUrl);
+          
+          if (lang === 'en-US') {
+            audio.onended = () => {
+              setSpeechSuccess(false);
+              URL.revokeObjectURL(blobUrl);
+            };
+            audio.onerror = () => {
+              setSpeechSuccess(false);
+              URL.revokeObjectURL(blobUrl);
+              // Fallback to native SpeechSynthesis
+              speakTextAloudNative(cleanT, lang);
+            };
+          } else {
+            audio.onended = () => URL.revokeObjectURL(blobUrl);
+            audio.onerror = () => URL.revokeObjectURL(blobUrl);
+          }
+
+          audio.play().catch(playErr => {
+            console.warn("Blob audio play failed, trying native speech synthesis:", playErr);
+            speakTextAloudNative(cleanT, lang);
+          });
+        })
+        .catch(fetchErr => {
+          console.warn("Failed to fetch Google TTS blob, trying native fallback:", fetchErr);
+          speakTextAloudNative(cleanT, lang);
+        });
     } catch (err) {
       console.error("Speech playback error, trying native fallback:", err);
       speakTextAloudNative(text, lang);
