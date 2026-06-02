@@ -1,0 +1,438 @@
+ImageName: lion_mouse_cover
+Prompt: A tiny, cute mouse talking to a large, majestic lion sleeping in the jungle, warm sun rays, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: ant_grasshopper_cover
+Prompt: A small hardworking ant carrying a seed next to a green grasshopper playing a violin on a leaf, summer background, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: town_country_mouse_cover
+Prompt: A rustic country mouse with a straw hat visiting a sophisticated city mouse in a grand library, cute and detailed, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: crow_pitcher_cover
+Prompt: A clever black crow dropping small pebbles into a tall clay water pitcher, sunny day, garden background, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: wind_sun_cover
+Prompt: The glowing warm sun and a gentle personification of the wind blowing at a traveler wearing a cloak, fantasy art, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: gingerbread_man_cover
+Prompt: A cute gingerbread man cookies running down a dirt path, smiling, autumn background, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: chicken_little_cover
+Prompt: A small cute yellow chicken wearing glasses looking up at a falling leaf, farm background, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: enormous_turnip_cover
+Prompt: A giant white and purple turnip in the ground with a cute old grandpa pulling its green leaves, garden background, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: three_billy_goats_cover
+Prompt: Three cute goats of different sizes looking at a green meadow across a wooden bridge, bright sunny day, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: fisherman_wife_cover
+Prompt: A humble fisherman talking to a magical glowing golden fish in a stormy blue sea, detailed waves, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: little_red_hen_cover
+Prompt: A hardworking little red hen baking fresh bread in a cozy kitchen, warm sunbeams, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: frog_prince_cover
+Prompt: A beautiful princess in a golden crown looking at a cute green frog sitting on a lily pad, holding a golden ball, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: stone_soup_cover
+Prompt: Three friendly travelers cooking soup in a large black pot in a village square, curiosity, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: star_money_cover
+Prompt: A poor but kind girl in a forest looking up at stars falling from the sky as shiny silver coins, magical night, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: city_musicians_cover
+Prompt: A donkey, a dog, a cat, and a rooster standing on top of each other in a dark forest, looking at a cozy house window, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: peter_rabbit_cover
+Prompt: A cute little brown rabbit in a blue jacket running through a vegetable garden with carrots, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: bambi_cover
+Prompt: A cute young deer with white spots walking in a sunny green forest with butterflies, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: black_beauty_cover
+Prompt: A beautiful, shiny black horse with a kind gaze running in a green pasture, sunny day, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: hans_brinker_cover
+Prompt: A young boy in traditional Dutch clothing skating on a frozen canal with windmills in the background, winter sunset, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: five_children_it_cover
+Prompt: Five children on a sandy beach looking at a strange, furry sand-fairy with big eyes, fantasy, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: railway_children_cover
+Prompt: Three children standing next to a classic steam train waving their hands, steam rising, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: swiss_family_cover
+Prompt: A family building a beautiful treehouse in a giant tropical tree on a sunny island, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: doctor_dolittle_cover
+Prompt: A kind-faced doctor talking to a parrot, a monkey, and a dog in his cozy office, warm light, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: sleepy_hollow_cover
+Prompt: A nervous schoolmaster riding a horse on a spooky forest path at night under the full moon, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: rip_van_winkle_cover
+Prompt: An old man with a long white beard waking up under a large oak tree on a mountain, sunny morning, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: velveteen_rabbit_cover
+Prompt: A cute, soft toy rabbit sitting on a child's bed, looking alive and hopeful, cozy bedroom, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: water_babies_cover
+Prompt: A tiny, happy baby swimming underwater with friendly sea creatures, bubbles, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: water_babies_cover
+Prompt: A tiny, happy baby swimming underwater with friendly sea creatures, bubbles, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: water_babies_cover
+Prompt: A cute little child swimming with friendly fish in a magical blue ocean, bubbles, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: water_babies_cover
+Prompt: A magical underwater city with friendly colorful sea creatures, corals and bubbles, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: nutcracker_cover
+Prompt: A wooden toy soldier nutcracker standing in front of a beautifully decorated Christmas tree, glowing lights, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: blue_bird_cover
+Prompt: A boy and a girl chasing a beautiful, glowing blue bird through a magical forest, dreamlike, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: tom_thumb_cover
+Prompt: A tiny boy the size of a thumb sitting inside a giant red flower, smiling, detailed garden, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: little_match_girl_cover
+Prompt: A young person holding a glowing lit match in the snow, seeing a warm cozy fireplace vision, winter night, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: anne_green_gables_cover
+Prompt: A cheerful young girl with red braids and a straw hat standing in front of a white farmhouse, sunny day, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: little_women_cover
+Prompt: Four sisters sitting by a fireplace in a cozy Victorian living room, reading and laughing, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: pollyanna_cover
+Prompt: A smiling, optimistic girl in a yellow dress walking on a sunny street, spreading joy, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: pride_prejudice_cover
+Prompt: An elegant young woman and a handsome gentleman walking in a grand English garden, Regency period, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: war_of_worlds_cover
+Prompt: A giant three-legged alien tripod walking through a city under a dramatic red sky, sci-fi, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: dr_jekyll_mr_hyde_cover
+Prompt: A scientist looking at a glowing green chemical vial in his dark Victorian laboratory, shadow of a monster behind him, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: invisible_man_cover
+Prompt: A mysterious man wearing a trench coat, hat, and sunglasses, with bandages wrapping his face, standing in a snowy street, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: crime_punishment_cover
+Prompt: A young man looking anxious and thoughtful in a small, dark St. Petersburg room, dramatic shadows, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: les_miserables_cover
+Prompt: A girl holding a broom standing in front of an old inn, looking up with hope, classic French setting, Pixar 3D animation style, colorful, no text.
+----------------------------------------
+ImageName: horror_black_cat_cover
+Prompt: Pixar 3D animation style, a mysterious black cat with bright glowing green eyes sitting on a dusty wooden shelf in a dark room, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_signalman_cover
+Prompt: Pixar 3D animation style, a lonely railway signalman standing near a dark train tunnel entrance at night with a red warning lantern, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_red_headed_league_cover
+Prompt: Pixar 3D animation style, a group of people with bright red hair reading old books inside a mysterious library office room, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_blue_carbuncle_cover
+Prompt: Pixar 3D animation style, a shiny bright blue gemstone diamond lying inside a cooked goose on a festive dining table, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_young_goodman_brown_cover
+Prompt: Pixar 3D animation style, a young man walking through a dark, spooky forest at night with glowing trees and shadows, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_phantom_rickshaw_cover
+Prompt: Pixar 3D animation style, a ghostly transparent rickshaw carriage pulled by a shadow figure on a foggy street in old India, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_draculas_guest_cover
+Prompt: Pixar 3D animation style, a traveler lost in a snowy graveyard during a winter storm, looking at a giant stone tomb, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_devil_tom_walker_cover
+Prompt: Pixar 3D animation style, a man making a deal with a shadowy dark figure under giant dark pine trees in a foggy swamp, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_monkeys_paw_cover
+Prompt: Pixar 3D animation style, a dried mummified monkey paw resting on an old wooden table under warm candlelight, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_oval_portrait_cover
+Prompt: Pixar 3D animation style, a beautifully painted oval portrait of a young woman hanging on a dark gothic stone wall inside a castle, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_house_of_usher_cover
+Prompt: Pixar 3D animation style, a gloomy, crumbling old gothic mansion next to a dark silent lake under a stormy purple sky, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_cask_amontillado_cover
+Prompt: Pixar 3D animation style, a dark brick wine cellar with old barrels and a partially built brick wall, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_speckled_band_cover
+Prompt: Pixar 3D animation style, a detective inspecting a small glowing speckled snake climbing down a bell rope in a Victorian bedroom, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_yellow_wallpaper_cover
+Prompt: Pixar 3D animation style, a bedroom with peeling bright yellow wallpaper showing strange abstract shapes and patterns, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_willows_cover
+Prompt: Pixar 3D animation style, giant willow trees swaying in a strong wind on a lonely river island under a dark sky, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_wendigo_cover
+Prompt: Pixar 3D animation style, a giant mysterious shadow beast running across snowy mountain tops at night under northern lights, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_king_in_yellow_cover
+Prompt: Pixar 3D animation style, a mysterious figure in a tattered yellow robe and mask standing on a stone balcony under two pale moons, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_vampyre_cover
+Prompt: Pixar 3D animation style, a handsome mysterious aristocrat holding a silver cane outside a dark Victorian gothic estate, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_horla_cover
+Prompt: Pixar 3D animation style, an invisible shadow entity drinking from a water glass on a bedside table in a bedroom, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_green_tea_cover
+Prompt: Pixar 3D animation style, a scholarly man writing in his study room while a tiny glowing green-eyed monkey watches from a shadow corner, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_sandman_cover
+Prompt: Pixar 3D animation style, a mysterious dark figure in a heavy coat carrying a bag of sand, throwing sand into the air, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_birth_mark_cover
+Prompt: Pixar 3D animation style, a beautiful woman with a tiny hand-shaped birthmark on her cheek sitting in an old scientific laboratory, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_masque_red_death_cover
+Prompt: Pixar 3D animation style, a grand masquerade ball with guests in colorful costumes and a mysterious figure in a crimson red skull mask, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_gold_bug_cover
+Prompt: Pixar 3D animation style, a heavy golden beetle beetle insect with dark spots lying on an old treasure map under a magnifying glass, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_moonstone_cover
+Prompt: Pixar 3D animation style, a giant glowing yellow moonstone diamond shining brightly inside a glass display cabinet, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_pit_pendulum_cover
+Prompt: Pixar 3D animation style, a prisoner lying in a dark stone dungeon looking up at a giant razor-sharp swinging pendulum blade, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_tell_tale_heart_cover
+Prompt: Pixar 3D animation style, floorboards in a wooden room with a glowing blue heart beating beneath the wooden planks, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_murders_rue_morgue_cover
+Prompt: Pixar 3D animation style, a detective standing near a broken window in a Victorian apartment room, looking at giant paw prints, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_boscombe_valley_cover
+Prompt: Pixar 3D animation style, a mysterious pool of water in a forest surrounded by tall rocks and shadows, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_woman_in_white_cover
+Prompt: Pixar 3D animation style, a ghostly woman in a long white dress standing on a dark highway under a street lamp in the fog, colorful, high detail, no text
+----------------------------------------
+ImageName: horror_phantom_opera_cover
+Prompt: Pixar 3D animation style, a mysterious figure in a dark cloak and white half-mask standing behind a giant gold chandelier in a grand opera house, colorful, no text
+----------------------------------------
+ImageName: horror_dunwich_horror_cover
+Prompt: Pixar 3D animation style, a giant semi-invisible monster with tentacles and eyes terrorizing a small country village hill at night under lightning, colorful, no text
+----------------------------------------
+ImageName: horror_mountains_madness_cover
+Prompt: Pixar 3D animation style, explorers standing in front of giant black alien ruins in the snowy mountains of Antarctica, colorful, no text
+----------------------------------------
+ImageName: horror_shadow_innsmouth_cover
+Prompt: Pixar 3D animation style, a fish-like monster figure looking out from a dark window of a dusty crumbling old seaside house at night, colorful, no text
+----------------------------------------
+ImageName: horror_carmilla_cover
+Prompt: Pixar 3D animation style, a beautiful mysterious girl with dark hair looking at her reflection in a mirror which shows a shadow figure, colorful, no text
+----------------------------------------
+ImageName: horror_hound_baskervilles_cover
+Prompt: Pixar 3D animation style, a giant scary black hound with glowing blue eyes running across foggy swamp hills at night, colorful, no text
+----------------------------------------
+ImageName: horror_lair_white_worm_cover
+Prompt: Pixar 3D animation style, a giant white glowing dragon-like serpent emerging from a deep dark stone well in a green field, colorful, no text
+----------------------------------------
+ImageName: horror_jewel_seven_stars_cover
+Prompt: Pixar 3D animation style, a beautiful Egyptian sarcophagus mummy tomb inside a museum room under glowing light, colorful, no text
+----------------------------------------
+ImageName: horror_turn_of_screw_cover
+Prompt: Pixar 3D animation style, a young governess looking out a large window of an old English mansion while a ghostly man stands in the distant garden, colorful, no text
+----------------------------------------
+ImageName: horror_rappaccinis_daughter_cover
+Prompt: Pixar 3D animation style, a young woman tending to glowing purple and yellow poisonous flowers in a beautiful walled Italian garden, colorful, no text
+----------------------------------------
+ImageName: horror_mysteries_udolpho_cover
+Prompt: Pixar 3D animation style, a massive dark castle standing on a high rocky cliff surrounded by misty black forests under a full moon, colorful, no text
+----------------------------------------
+ImageName: horror_castle_of_otranto_cover
+Prompt: Pixar 3D animation style, a giant stone knight helmet sitting in the courtyard of a medieval castle under a dark sky, colorful, no text
+----------------------------------------
+ImageName: horror_monk_cover
+Prompt: Pixar 3D animation style, a monk in a dark brown robe holding a key inside a dark gothic stone church crypt with candlelight, colorful, no text
+----------------------------------------
+ImageName: horror_purloined_letter_cover
+Prompt: Pixar 3D animation style, a letter with a red wax seal lying in plain sight on a messy wooden desk with books and keys, colorful, no text
+----------------------------------------
+ImageName: horror_great_god_pan_cover
+Prompt: Pixar 3D animation style, a mysterious stone statue of a forest god with horns standing in a dark overgrown woodland clearing, colorful, no text
+----------------------------------------
+ImageName: horror_call_of_cthulhu_cover
+Prompt: Pixar 3D animation style, a giant ancient alien sea monster with a squid head, wings and claws rising from the dark blue ocean, colorful, no text
+----------------------------------------
+ImageName: horror_white_people_cover
+Prompt: Pixar 3D animation style, a young girl reading a small old diary inside a bright sunny garden house room, colorful, no text
+----------------------------------------
+ImageName: horror_beetle_cover
+Prompt: Pixar 3D animation style, a giant scary ancient Egyptian scarab beetle crawling on a dark Victorian wooden floor under yellow light, colorful, no text
+----------------------------------------
+ImageName: horror_house_borderland_cover
+Prompt: Pixar 3D animation style, an old stone house standing on the edge of a deep dark bottomless chasm abyss under a starry galaxy sky, colorful, no text
+----------------------------------------
+ImageName: horror_varney_vampire_cover
+Prompt: Pixar 3D animation style, a shadowy figure wearing a dark cape standing outside a large stone window in a stormy gothic night, colorful, no text
+----------------------------------------
+ImageName: classic_tom_sawyer_cover
+Prompt: Pixar 3D style illustration of The Adventures of Tom Sawyer, colorful, character on a wooden raft on a river, digital art, no text
+----------------------------------------
+ImageName: classic_oliver_twist_cover
+Prompt: Pixar 3D style illustration of Oliver Twist, a young orphan boy holding a wooden bowl in a Victorian dining hall, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_prince_pauper_cover
+Prompt: Pixar 3D style illustration of The Prince and the Pauper, two identical looking boys in different clothes (one in royal robe, one in simple rags) staring at each other in surprise, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_kidnapped_cover
+Prompt: Pixar 3D style illustration of Kidnapped, a young boy aboard a wooden ship in rough seas under a cloudy sky, adventure, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_three_musketeers_cover
+Prompt: Pixar 3D style illustration of Three Musketeers, three brave musketeers with swords raised together, wearing blue tabards, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_uncle_tom_cabin_cover
+Prompt: Pixar 3D style illustration of Uncle Tom's Cabin, a small cozy wooden cabin near fields under a warm sunset sky, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_journey_center_earth_cover
+Prompt: Pixar 3D style illustration of Journey to the Center of the Earth, explorers inside a massive underground cave with glowing crystals and a prehistoric underground sea, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_first_men_moon_cover
+Prompt: Pixar 3D style illustration of The First Men in the Moon, retro-futuristic Victorian explorers in a metallic spherical spacecraft landing on the moon's surface, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_captains_courageous_cover
+Prompt: Pixar 3D style illustration of Captains Courageous, a young boy learning to fish and work on a grand wooden sailing schooner at sea, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_mysterious_island_cover
+Prompt: Pixar 3D style illustration of The Mysterious Island, castaways standing on a beautiful tropical beach with a smoking volcano in the background, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_david_copperfield_cover
+Prompt: Pixar 3D style illustration of David Copperfield, a young man walking down a street in Victorian London, hopeful expression, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_great_expectations_cover
+Prompt: Pixar 3D style illustration of Great Expectations, a young blacksmith boy looking towards a mysterious dark manor house, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_jane_eyre_cover
+Prompt: Pixar 3D style illustration of Jane Eyre, a young determined woman standing in front of a majestic estate under a stormy sky, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_count_monte_cristo_cover
+Prompt: Pixar 3D style illustration of The Count of Monte Cristo, a mysterious man standing on a high cliff overlooking the sea next to a castle prison, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_huck_finn_cover
+Prompt: Pixar 3D style illustration of Huckleberry Finn, a young boy with straw hat sitting on a wooden raft on the Mississippi River, sunny day, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_twenty_thousand_leagues_cover
+Prompt: Pixar 3D style illustration of Twenty Thousand Leagues Under the Seas, a giant steel submarine Nautilus sailing underwater past glowing corals and a giant squid silhouette, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_earth_to_moon_cover
+Prompt: Pixar 3D style illustration of From the Earth to the Moon, a giant space cannon shooting a bullet-shaped spacecraft towards a large glowing moon in the night sky, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_lost_world_cover
+Prompt: Pixar 3D style illustration of The Lost World, a hidden plateau in a jungle with a tall dinosaur (Brachiosaurus) eating from high trees, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_island_moreau_cover
+Prompt: Pixar 3D style illustration of The Island of Doctor Moreau, a mysterious tropical island gate with strange animal-human hybrid creatures looking out from the jungle bushes, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_red_badge_courage_cover
+Prompt: Pixar 3D style illustration of The Red Badge of Courage, a young soldier holding a flag looking determined on a battlefield, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_emma_cover
+Prompt: Pixar 3D style illustration of Emma, a young elegant Victorian woman smiling and match-making in a sunny garden, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_sense_sensibility_cover
+Prompt: Pixar 3D style illustration of Sense and Sensibility, two sisters with different expressions (one serious and calm, one romantic and emotional) standing under a weeping willow tree, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_mansfield_park_cover
+Prompt: Pixar 3D style illustration of Mansfield Park, a young modest girl standing in a grand country house hall holding a book, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_persuasion_cover
+Prompt: Pixar 3D style illustration of Persuasion, a young reflective woman walking on a windy sea pier, a naval officer in uniform in the distance, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_northanger_abbey_cover
+Prompt: Pixar 3D style illustration of Northanger Abbey, a young reading girl with wide eyes looking at a mysterious gothic cathedral door, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_wuthering_heights_cover
+Prompt: Pixar 3D style illustration of Wuthering Heights, two lovers standing on a windy, dark, grassy moor under a dramatic cloudy sky, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_scarlet_letter_cover
+Prompt: Pixar 3D style illustration of The Scarlet Letter, a solemn woman with a red letter A embroidered on her dark dress standing in a colonial village, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_tale_two_cities_cover
+Prompt: Pixar 3D style illustration of A Tale of Two Cities, two major cities (London and Paris) silhouette, one with a cathedral (Notre Dame), one with a clock tower (Big Ben), under a dramatic sky, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_man_iron_mask_cover
+Prompt: Pixar 3D style illustration of The Man in the Iron Mask, a mysterious figure in a dark dungeon cell wearing an iron mask, candles flickering, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_connecticut_yankee_cover
+Prompt: Pixar 3D style illustration of A Connecticut Yankee in King Arthur's Court, a modern 19th-century mechanic showing a hand wrench to astonished medieval knights in armor, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_age_of_innocence_cover
+Prompt: Pixar 3D style illustration of The Age of Innocence, an elegant ballroom in high society New York, two people in classical evening wear sharing a quiet look, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_house_of_mirth_cover
+Prompt: Pixar 3D style illustration of The House of Mirth, a beautiful woman looking out of a window of a grand mansion with a bittersweet expression, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_house_of_mirth_cover
+Prompt: Pixar 3D style illustration of The House of Mirth, a beautiful woman looking out of a window of a grand mansion with a bittersweet expression, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_sea_wolf_cover
+Prompt: Pixar 3D style illustration of The Sea-Wolf, a large wooden sailing vessel in a misty sea, a stern looking captain with captain hat standing on the deck, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_martin_eden_cover
+Prompt: Pixar 3D style illustration of Martin Eden, a young sailor writing passionately on a typewriter in a simple room by candlelight, stacks of books around, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_madding_crowd_cover
+Prompt: Pixar 3D style illustration of Far from the Madding Crowd, a beautiful farm girl standing in a grassy meadow with sheep grazing around, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_fathers_and_sons_cover
+Prompt: Pixar 3D style illustration of Fathers and Sons, an older Russian nobleman and a young serious student arguing in a drawing room, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_dead_souls_cover
+Prompt: Pixar 3D style illustration of Dead Souls, a man driving a horse-drawn carriage (troika) through a snowy Russian landscape towards a grand estate, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_overcoat_cover
+Prompt: Pixar 3D style illustration of The Overcoat, a humble clerk walking down a windy snowy street in Saint Petersburg wearing a new large elegant overcoat, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_tess_urbervilles_cover
+Prompt: Pixar 3D style illustration of Tess of the d'Urbervilles, a young innocent woman in a simple white dress standing in a lush green valley under a rising sun, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_mayor_casterbridge_cover
+Prompt: Pixar 3D style illustration of The Mayor of Casterbridge, a tall proud man in a tailcoat walking through a busy old English marketplace looking troubled, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_return_native_cover
+Prompt: Pixar 3D style illustration of The Return of the Native, a lonely figure walking on a vast wild heathland at dusk under a purple sky, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_jude_obscure_cover
+Prompt: Pixar 3D style illustration of Jude the Obscure, a young stonemason boy looking longingly towards a glowing university town in the distance, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_madame_bovary_cover
+Prompt: Pixar 3D style illustration of Madame Bovary, a French woman in an elegant blue dress sitting inside a carriage looking out with a daydreaming expression, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_pere_goriot_cover
+Prompt: Pixar 3D style illustration of Le Pere Goriot, an old kind father sitting in a modest boarding house room, looking at a small gold locket, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_eugenie_grandet_cover
+Prompt: Pixar 3D style illustration of Eugenie Grandet, a young simple woman standing next to an old iron chest containing gold coins, warm light, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_war_and_peace_cover
+Prompt: Pixar 3D style illustration of War and Peace, an elegant ballroom dancing couple juxtaposed with a distant snowy battle march under a dramatic sky, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_anna_karenina_cover
+Prompt: Pixar 3D style illustration of Anna Karenina, a beautiful woman in a black fur coat standing on a snowy train platform at night, glowing locomotive headlights, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_brothers_karamazov_cover
+Prompt: Pixar 3D style illustration of The Brothers Karamazov, three very different brothers (one intellectual, one soldier, one monk) standing in front of an old Russian wooden house, colorful, digital art, no text
+----------------------------------------
+ImageName: classic_idiot_cover
+Prompt: Pixar 3D style illustration of The Idiot, a kind gentle young man with a peaceful face wearing a simple coat standing in a snowy Russian garden, colorful, digital art, no text
+----------------------------------------
+ImageName: peter_wolf_cover
+Prompt: A beautiful Pixar 3D style book cover for the children's story 'Peter and the Wolf'. A young brave boy with a cap standing in a magical forest next to a large grey wolf. Vibrant colors, soft volumetric lighting, highly detailed, Disney style, square ratio, 3D character design, clay render aesthetic.
+----------------------------------------
+ImageName: tin_soldier_cover
+Prompt: A beautiful Pixar 3D style book cover for the children's story 'The Steadfast Tin Soldier'. A brave little tin soldier with one leg wearing a red and blue uniform, standing next to a beautiful paper ballerina dancer on a wooden table. Bright warm lights, Disney animation style, highly detailed 3D rendering, square ratio.
+----------------------------------------
+ImageName: magic_pot_cover
+Prompt: A beautiful Pixar 3D style book cover for the children's story 'The Magic Porridge Pot'. A small, magical clay pot overflowing with delicious warm sweet porridge on a table in a cozy old cottage kitchen. A little girl watching with wonder, bright magical sparkles, cute 3D character design, Disney rendering, square ratio.
+----------------------------------------

@@ -48,6 +48,18 @@ GENERATED_MAP = {
     "goldilocks_cover": "goldilocks",
     "puss_in_boots_cover": "puss_in_boots",
     
+    # 10 new stories covers
+    "peter_wolf_cover": "peter_wolf",
+    "tin_soldier_cover": "tin_soldier",
+    "magic_pot_cover": "magic_pot",
+    "wolf_kids_cover": "wolf_kids",
+    "brave_tailor_cover": "brave_tailor",
+    "selfish_giant_cover": "selfish_giant",
+    "nightingale_cover": "nightingale",
+    "tinderbox_cover": "tinderbox",
+    "wild_swans_cover": "wild_swans",
+    "goose_girl_cover": "goose_girl",
+    
     # 16 stories from step 2
     "elves_shoemaker_cover": "elves_shoemaker",
     "emperors_clothes_cover": "emperors_clothes",
