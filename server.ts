@@ -771,6 +771,113 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
     }
   });
 
+  // Register endpoint - Create a new user with validation, unique username, and IP logging
+  app.post("/api/register", (req, res) => {
+    try {
+      const { username, email, password } = req.body;
+      if (!username || typeof username !== "string") {
+        return res.status(400).json({ error: "Lütfen geçerli bir isim girin. ⚠️" });
+      }
+      if (!email || !email.includes("@")) {
+        return res.status(400).json({ error: "Geçersiz e-posta adresi. ⚠️" });
+      }
+      if (!password || password.length < 6) {
+        return res.status(400).json({ error: "Şifre en az 6 karakter olmalıdır. ⚠️" });
+      }
+
+      const cleanUsername = username.trim();
+      const lowerUsername = cleanUsername.toLowerCase();
+
+      // Username length and character check
+      if (cleanUsername.length < 3 || cleanUsername.length > 25) {
+        return res.status(400).json({ error: "Kullanıcı adı 3-25 karakter arasında olmalıdır. ⚠️" });
+      }
+      const validNameRegex = /^[a-zA-Z0-9ğüşıöçĞÜŞİÖÇ\s]+$/;
+      if (!validNameRegex.test(cleanUsername)) {
+        return res.status(400).json({ error: "Kullanıcı adı sadece harf, sayı ve boşluk içerebilir. ⚠️" });
+      }
+
+      // Profanity Filter (Küfür Filtresi)
+      const badWords = [
+        "orospu", "siktir", "sikti", "siker", "amcik", "amcık", "yarrak", "yarak", 
+        "göt", "got", "pezevenk", "kahpe", "pic", "piç", "dalyarak", "meme", 
+        "fuck", "bitch", "asshole", "fucker", "amına", "amina", "koyayım", "koyayim"
+      ];
+      // strip spaces and check
+      const normalizedForProfanity = lowerUsername.replace(/\s+/g, "");
+      const hasProfanity = badWords.some(word => normalizedForProfanity.includes(word));
+      if (hasProfanity) {
+        return res.status(400).json({ error: "Kullanıcı adı uygunsuz veya küfürlü kelimeler içeremez. ⚠️" });
+      }
+
+      // Unique Username check
+      const usernameExists = Object.values(usersData).some(user => 
+        user && user.username && user.username.toLowerCase() === lowerUsername
+      );
+      if (usernameExists) {
+        return res.status(400).json({ error: "Bu kullanıcı adı zaten başka bir üye tarafından alınmış. ⚠️" });
+      }
+
+      const cleanEmail = email.toLowerCase().trim();
+      const hashedEmail = hashEmail(cleanEmail);
+      let userRecord = usersData[hashedEmail];
+
+      if (userRecord) {
+        return res.status(400).json({ error: "Bu e-posta adresiyle zaten kayıtlı bir hesap var. ⚠️" });
+      }
+
+      // Record client IP Address
+      const clientIp = (req.headers["x-forwarded-for"] || req.socket.remoteAddress || "").toString();
+
+      const sessionToken = crypto.randomBytes(32).toString("hex");
+
+      // Save user record
+      usersData[hashedEmail] = {
+        username: cleanUsername,
+        password: hashPassword(password),
+        tokens: [sessionToken],
+        ipAddress: clientIp,
+        data: {
+          userName: cleanUsername,
+          stats: {
+            learnedWordsCount: 0,
+            completedBooksCount: 0,
+            dailyStreak: 1,
+            totalTimeMinutes: 0,
+            readingGoalPercent: 0,
+            wordGoalPercent: 0,
+            timeGoalPercent: 0,
+            hearts: 5,
+            isPremium: false,
+            weeklyWords: [0, 0, 0, 0, 0, 0, 0],
+            weeklyMins: [0, 0, 0, 0, 0, 0, 0],
+            lastActiveDate: new Date().toISOString().split("T")[0]
+          },
+          books: [],
+          vocabulary: [],
+          badges: [],
+          loginProvider: "email",
+          linkedProviders: ["email"]
+        },
+        updatedAt: new Date().toISOString()
+      };
+
+      saveUsersData();
+
+      return res.json({ 
+        success: true, 
+        token: sessionToken, 
+        isNew: true, 
+        username: cleanUsername,
+        message: "Hesap başarıyla oluşturuldu." 
+      });
+
+    } catch (err) {
+      console.error("Registration error:", err);
+      return res.status(500).json({ error: "Kayıt sırasında sunucu hatası oluştu." });
+    }
+  });
+
   // Health check API
   app.get("/api/health", (req, res) => {
     res.json({ status: "ok", mode: process.env.NODE_ENV || "development" });

@@ -82,7 +82,7 @@ export default function ProfileTab({
   const [mockEmail, setMockEmail] = useState('');
   const [mockName, setMockName] = useState('');
   const [loginPassword, setLoginPassword] = useState('');
-  const [loginStep, setLoginStep] = useState<'picker' | 'credentials'>('picker');
+  const [loginStep, setLoginStep] = useState<'picker' | 'credentials' | 'register'>('picker');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
@@ -263,6 +263,79 @@ export default function ProfileTab({
         console.error('Auth request failed:', err);
         setToastMessage(err.message || 'Bir hata oluştu. Lütfen tekrar deneyin. ⚠️');
         setTimeout(() => setToastMessage(null), 3000);
+      })
+      .finally(() => {
+        setIsSubmitting(false);
+      });
+  };
+
+  const handleRegisterSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!mockName || mockName.trim().length < 3) {
+      setToastMessage('İsminiz en az 3 karakter olmalıdır. ⚠️');
+      setTimeout(() => setToastMessage(null), 3000);
+      return;
+    }
+
+    if (!mockEmail || !mockEmail.includes('@')) {
+      setToastMessage('Lütfen geçerli bir e-posta adresi girin. ⚠️');
+      setTimeout(() => setToastMessage(null), 3000);
+      return;
+    }
+
+    if (!loginPassword || loginPassword.length < 6) {
+      setToastMessage('Şifre en az 6 karakter olmalıdır. ⚠️');
+      setTimeout(() => setToastMessage(null), 3000);
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    fetch(`${getApiBase()}/api/register`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        username: mockName,
+        email: mockEmail,
+        password: loginPassword
+      })
+    })
+      .then(res => {
+        if (!res.ok) {
+          return res.json().then(errData => {
+            throw new Error(errData.error || 'Kayıt işlemi başarısız oldu. ⚠️');
+          });
+        }
+        return res.json();
+      })
+      .then(data => {
+        localStorage.setItem('linguist_session_token_' + mockEmail.toLowerCase().trim(), data.token);
+
+        let avatarToSet = userAvatar;
+        if (!userAvatar || userAvatar === AVATAR_OPTIONS[0]) {
+          const idx = Math.abs(mockEmail.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0) % AVATAR_OPTIONS.length);
+          avatarToSet = AVATAR_OPTIONS[idx];
+        }
+
+        onGoogleLogin(mockEmail, mockName.trim(), avatarToSet, 'email', data.token);
+        
+        setShowMockLogin(false);
+        setMockEmail('');
+        setMockName('');
+        setLoginPassword('');
+        setLoginStep('picker');
+        setShowPassword(false);
+        
+        setToastMessage(`Kayıt başarılı! Hoş geldiniz, ${mockName.trim()} 🎉`);
+        setTimeout(() => setToastMessage(null), 4000);
+      })
+      .catch(err => {
+        console.error('Registration failed:', err);
+        setToastMessage(err.message || 'Kayıt sırasında bir hata oluştu. ⚠️');
+        setTimeout(() => setToastMessage(null), 4000);
       })
       .finally(() => {
         setIsSubmitting(false);
@@ -1887,7 +1960,135 @@ export default function ProfileTab({
                     >
                       {currentPicker.credentialsBtnText}
                     </button>
+
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setMockLoginProvider('email');
+                        setLoginStep('register');
+                      }}
+                      className={`w-full py-3 rounded-2xl border text-xs font-bold transition-colors cursor-pointer text-center font-headline-lg ${
+                        isDarkMode 
+                          ? 'bg-[#4ECDC4]/10 border-[#4ECDC4]/30 hover:bg-[#4ECDC4]/20 text-[#4ECDC4]' 
+                          : 'bg-[#4ECDC4]/5 border-[#4ECDC4]/20 hover:bg-[#4ECDC4]/15 text-[#4ECDC4]'
+                      }`}
+                    >
+                      Yeni Kullanıcı Oluştur (Kayıt Ol)
+                    </button>
                   </div>
+                ) : loginStep === 'register' ? (
+                  <form onSubmit={handleRegisterSubmit} className="space-y-4">
+                    <div className="text-left">
+                      <label className="text-[10px] font-bold text-gray-400 tracking-wider block mb-1 font-headline-lg">
+                        KULLANICI ADI (İSİM)
+                      </label>
+                      <input
+                        type="text"
+                        required
+                        disabled={isSubmitting}
+                        placeholder="İsminiz"
+                        value={mockName}
+                        onChange={(e) => setMockName(e.target.value)}
+                        className={`w-full text-xs px-3 py-2.5 border rounded-xl focus:outline-none focus:border-[#FF6B6B] focus:ring-1 focus:ring-[#FF6B6B] font-medium transition-colors ${
+                          isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
+                        } ${
+                          isDarkMode 
+                            ? 'bg-[#121214] border-[#2A2A30] text-white placeholder-gray-650' 
+                            : 'bg-white border-[#FFE66D] text-gray-800 placeholder-teal-650'
+                        }`}
+                      />
+                    </div>
+
+                    <div className="text-left">
+                      <label className="text-[10px] font-bold text-gray-400 tracking-wider block mb-1 font-headline-lg">
+                        E-POSTA ADRESİ
+                      </label>
+                      <input
+                        type="email"
+                        required
+                        disabled={isSubmitting}
+                        placeholder="ornek@eposta.com"
+                        value={mockEmail}
+                        onChange={(e) => setMockEmail(e.target.value)}
+                        className={`w-full text-xs px-3 py-2.5 border rounded-xl focus:outline-none focus:border-[#FF6B6B] focus:ring-1 focus:ring-[#FF6B6B] font-medium transition-colors ${
+                          isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
+                        } ${
+                          isDarkMode 
+                            ? 'bg-[#121214] border-[#2A2A30] text-white placeholder-gray-650' 
+                            : 'bg-white border-[#FFE66D] text-gray-800 placeholder-teal-650'
+                        }`}
+                      />
+                    </div>
+
+                    <div className="text-left">
+                      <label className="text-[10px] font-bold text-gray-400 tracking-wider block mb-1 font-headline-lg">
+                        ŞİFRE (EN AZ 6 KARAKTER)
+                      </label>
+                      <div className="relative">
+                        <input
+                          type={showPassword ? "text" : "password"}
+                          required
+                          disabled={isSubmitting}
+                          placeholder="••••••"
+                          value={loginPassword}
+                          onChange={(e) => setLoginPassword(e.target.value)}
+                          className={`w-full text-xs pl-3 pr-10 py-2.5 border rounded-xl focus:outline-none focus:border-[#FF6B6B] focus:ring-1 focus:ring-[#FF6B6B] font-medium transition-colors ${
+                            isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
+                          } ${
+                            isDarkMode 
+                              ? 'bg-[#121214] border-[#2A2A30] text-white placeholder-gray-650' 
+                              : 'bg-white border-[#FFE66D] text-gray-800 placeholder-teal-650'
+                          }`}
+                        />
+                        <button
+                          type="button"
+                          tabIndex={-1}
+                          onClick={() => setShowPassword(prev => !prev)}
+                          className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-450 hover:text-gray-600 dark:hover:text-gray-300 transition-colors p-1"
+                        >
+                          {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                        </button>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-2.5 pt-2">
+                      <button
+                        type="button"
+                        disabled={isSubmitting}
+                        onClick={() => {
+                          setLoginStep('picker');
+                          setMockEmail('');
+                          setMockName('');
+                          setLoginPassword('');
+                          setShowPassword(false);
+                        }}
+                        className={`w-1/3 py-3 rounded-xl text-xs font-bold transition-all cursor-pointer font-headline-lg ${
+                          isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
+                        } ${
+                          isDarkMode ? 'bg-[#2A2A30] hover:bg-[#343A40] text-gray-300' : 'bg-gray-150 hover:bg-gray-200 text-gray-600'
+                        }`}
+                      >
+                        Geri Dön
+                      </button>
+                      <button
+                        type="submit"
+                        disabled={isSubmitting}
+                        className={`w-2/3 text-white rounded-xl text-xs font-bold hover:opacity-90 transition-all cursor-pointer shadow-md py-3.5 font-headline-lg flex items-center justify-center gap-1.5 ${
+                          isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
+                        }`}
+                        style={{ backgroundColor: '#4ECDC4' }}
+                      >
+                        {isSubmitting ? (
+                          <>
+                            <RefreshCw className="w-3.5 h-3.5 animate-spin" />
+                            <span>Kayıt Yapılıyor...</span>
+                          </>
+                        ) : (
+                          <span>Kayıt Ol ve Başla</span>
+                        )}
+                      </button>
+                    </div>
+                  </form>
                 ) : (
                   <form onSubmit={handleMockSubmit} className="space-y-4">
                     <div className="text-left">
