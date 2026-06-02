@@ -898,58 +898,97 @@ export default function ReadingView({
 
           // If not already cached locally, fetch it dynamically from server-side AI and cache it
           if (!cached) {
-            fetch('/api/translate-word', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ word: cleanW, context: sentEn || '', level: book?.level || 'A1' })
-            })
-            .then(res => {
-              if (!res.ok) throw new Error("Chose fallbacks");
-              return res.json();
-            })
-            .then((data: any) => {
-              if (data && data.translation) {
-                const finalNotes = data.explanation || `${data.partOfSpeech || 'Bağlamsal Sözcük'} • Google Destekli`;
-                const finalLevel = data.isName ? 'Özel İsim' : `${data.wordLevel || book?.level || 'A1'} Seviyesi`;
-                
-                // Save results to cache
-                saveCachedTranslation(cleanW, data.translation, finalNotes, finalLevel);
-
-                setClickedWord(prev => prev && prev.paragraphId === paragraphId && prev.wordIdx === wordIdx
-                  ? { ...prev, tr: data.translation }
-                  : prev
-                );
-                setSelectedDictWord(prev => prev && prev.paragraphId === paragraphId && prev.word.toLowerCase() === cleanW.toLowerCase()
-                  ? { 
-                      ...prev, 
-                      translation: data.translation, 
-                      level: finalLevel,
-                      notes: finalNotes 
-                    }
-                  : prev
-                );
+            // Try offline suffix stripping first (plurals, past tense, -ing, -er, -est, -ly)
+            const tryOfflineSuffixes = (w: string): string | null => {
+              const stems = [
+                w.endsWith('s') && w.length > 3 ? w.slice(0, -1) : null,
+                w.endsWith('es') && w.length > 4 ? w.slice(0, -2) : null,
+                w.endsWith('ed') && w.length > 4 ? w.slice(0, -2) : null,
+                w.endsWith('ed') && w.length > 4 ? w.slice(0, -1) : null,
+                w.endsWith('ing') && w.length > 5 ? w.slice(0, -3) : null,
+                w.endsWith('ing') && w.length > 5 ? w.slice(0, -3) + 'e' : null,
+                w.endsWith('ing') && w.length > 6 ? w.slice(0, -4) : null, // running->run
+                w.endsWith('ly') && w.length > 4 ? w.slice(0, -2) : null,
+                w.endsWith('er') && w.length > 4 ? w.slice(0, -2) : null,
+                w.endsWith('est') && w.length > 5 ? w.slice(0, -3) : null,
+                w.endsWith('tion') ? w.slice(0, -4) + 'te' : null,
+                w.endsWith('ness') ? w.slice(0, -4) : null,
+                w.endsWith('ful') ? w.slice(0, -3) : null,
+                w.endsWith('less') ? w.slice(0, -4) : null,
+              ].filter(Boolean) as string[];
+              for (const stem of stems) {
+                const d = OFFLINE_DICTIONARY[stem];
+                if (d) return d.tr;
+                const g = (GLOBAL_DICTIONARY as any)[stem];
+                if (g) return g;
               }
-            })
-            .catch(err => {
-              console.error("Dynamic contextual translation failed:", err);
-              // High quality offline fallback
-              const looksLikePropName = looksLikeProperNoun(cleanW);
-              const finalTr = looksLikePropName ? `${cleanW} (Özel İsim)` : 'Çeviri bulunamadı';
-              const fallbackNotes = looksLikePropName ? 'Özel isim veya Karakter adı' : 'Sözlük bağlantısı kurulamadı';
-              const fallbackLevel = looksLikePropName ? 'Özel İsim' : `${book?.level || 'A1'} Seviyesi`;
+              return null;
+            };
 
-              // Cache the fallback too to prevent repeated unnecessary loads
-              saveCachedTranslation(cleanW, finalTr, fallbackNotes, fallbackLevel);
-              
+            const offlineStem = tryOfflineSuffixes(cleanW);
+            if (offlineStem) {
+              // Found via suffix stripping — use immediately without API call
+              saveCachedTranslation(cleanW, offlineStem, 'Çevrimdışı Sözlük • Türetilmiş', `${book?.level || 'A1'} Seviyesi`);
               setClickedWord(prev => prev && prev.paragraphId === paragraphId && prev.wordIdx === wordIdx
-                ? { ...prev, tr: finalTr }
+                ? { ...prev, tr: offlineStem }
                 : prev
               );
               setSelectedDictWord(prev => prev && prev.paragraphId === paragraphId && prev.word.toLowerCase() === cleanW.toLowerCase()
-                ? { ...prev, translation: finalTr, notes: fallbackNotes, level: fallbackLevel }
+                ? { ...prev, translation: offlineStem, notes: 'Çevrimdışı Sözlük • Türetilmiş', level: `${book?.level || 'A1'} Seviyesi` }
                 : prev
               );
-            });
+            } else {
+              // Determine API base URL (works both on web and in Android Capacitor)
+              const apiBase = (() => {
+                try {
+                  if (window.location.protocol === 'capacitor:' || window.location.hostname === 'localhost') {
+                    return 'https://ingilizce-oyk-m.onrender.com';
+                  }
+                  return '';
+                } catch { return ''; }
+              })();
+
+              fetch(`${apiBase}/api/translate-word`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ word: cleanW, context: sentEn || '', level: book?.level || 'A1' })
+              })
+              .then(res => {
+                if (!res.ok) throw new Error('API error');
+                return res.json();
+              })
+              .then((data: any) => {
+                if (data && data.translation) {
+                  const finalNotes = data.explanation || `${data.partOfSpeech || 'Bağlamsal Sözcük'} • Çeviri API`;
+                  const finalLevel = data.isName ? 'Özel İsim' : `${data.wordLevel || book?.level || 'A1'} Seviyesi`;
+                  saveCachedTranslation(cleanW, data.translation, finalNotes, finalLevel);
+                  setClickedWord(prev => prev && prev.paragraphId === paragraphId && prev.wordIdx === wordIdx
+                    ? { ...prev, tr: data.translation }
+                    : prev
+                  );
+                  setSelectedDictWord(prev => prev && prev.paragraphId === paragraphId && prev.word.toLowerCase() === cleanW.toLowerCase()
+                    ? { ...prev, translation: data.translation, level: finalLevel, notes: finalNotes }
+                    : prev
+                  );
+                }
+              })
+              .catch(err => {
+                console.error('Dynamic translation failed:', err);
+                const looksLikePropName = looksLikeProperNoun(cleanW);
+                const finalTr = looksLikePropName ? `${cleanW} (Özel İsim)` : 'Çeviri yüklenemedi';
+                const fallbackNotes = looksLikePropName ? 'Özel isim veya Karakter adı' : 'İnternet bağlantısı gerekiyor';
+                const fallbackLevel = looksLikePropName ? 'Özel İsim' : `${book?.level || 'A1'} Seviyesi`;
+                // Do NOT cache failures — let user retry by clicking again
+                setClickedWord(prev => prev && prev.paragraphId === paragraphId && prev.wordIdx === wordIdx
+                  ? { ...prev, tr: finalTr }
+                  : prev
+                );
+                setSelectedDictWord(prev => prev && prev.paragraphId === paragraphId && prev.word.toLowerCase() === cleanW.toLowerCase()
+                  ? { ...prev, translation: finalTr, notes: fallbackNotes, level: fallbackLevel }
+                  : prev
+                );
+              });
+            }
           }
         } catch (innerErr) {
           console.error("Internal word click timer process error:", innerErr);
