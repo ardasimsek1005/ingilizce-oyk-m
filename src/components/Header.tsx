@@ -50,11 +50,14 @@ export default function Header({
   }, [currentTab]);
 
   return (
-    <header className={`sticky top-0 z-40 backdrop-blur-md transition-colors duration-250 border-b ${
-      isDarkMode 
-        ? 'bg-[#121214]/85 border-[#2A2A30]' 
-        : 'bg-white/70 border-[#FFE66D]/80'
-    }`}>
+    <header 
+      className={`sticky top-0 z-40 backdrop-blur-md transition-colors duration-250 border-b ${
+        isDarkMode 
+          ? 'bg-[#121214]/85 border-[#2A2A30]' 
+          : 'bg-white/70 border-[#FFE66D]/80'
+      }`}
+      style={{ paddingTop: 'env(safe-area-inset-top, 0px)' }}
+    >
       <div className="max-w-[680px] mx-auto px-5 h-16 flex items-center justify-between">
         {/* Brand/Title */}
         <button

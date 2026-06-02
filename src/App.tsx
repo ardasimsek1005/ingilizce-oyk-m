@@ -516,50 +516,63 @@ export default function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  // Android hardware back button handler
+  // Keep refs of state updated for hardware back button handler to avoid re-registration leaks
+  const activeReadingBookRef = useRef(activeReadingBook);
+  const currentTabRef = useRef(currentTab);
+  const showExitConfirmRef = useRef(showExitConfirm);
+
   useEffect(() => {
-    let listenerHandle: any = null;
+    activeReadingBookRef.current = activeReadingBook;
+  }, [activeReadingBook]);
 
-    const setupListener = async () => {
-      listenerHandle = await CapacitorApp.addListener('backButton', () => {
-        // 1. If exit confirm dialog is open → close it
-        if (showExitConfirm) {
-          setShowExitConfirm(false);
-          return;
-        }
+  useEffect(() => {
+    currentTabRef.current = currentTab;
+  }, [currentTab]);
 
-        // 2. If reading a book → go back to library
-        if (activeReadingBook) {
-          setActiveReadingBook(null);
-          setSearchQuery('');
-          return;
-        }
+  useEffect(() => {
+    showExitConfirmRef.current = showExitConfirm;
+  }, [showExitConfirm]);
 
-        // 3. If on a non-library tab → go to library tab
-        if (currentTab !== 'library') {
-          setCurrentTab('library');
-          return;
-        }
+  // Android hardware back button handler (Single registration, ref-based to avoid leaks)
+  useEffect(() => {
+    const handleBackButton = () => {
+      // 1. If exit confirm dialog is open → close it
+      if (showExitConfirmRef.current) {
+        setShowExitConfirm(false);
+        return;
+      }
 
-        // 4. On main screen (library) → double-back to exit
-        const now = Date.now();
-        if (now - lastBackPressRef.current < 2000) {
-          // Second press within 2 seconds → show confirm dialog
-          setShowExitConfirm(true);
-        } else {
-          lastBackPressRef.current = now;
-        }
-      });
-    };
+      // 2. If reading a book → go back to library
+      if (activeReadingBookRef.current) {
+        setActiveReadingBook(null);
+        setSearchQuery('');
+        return;
+      }
 
-    setupListener();
+      // 3. If on a non-library tab → go to library tab
+      if (currentTabRef.current !== 'library') {
+        setCurrentTab('library');
+        return;
+      }
 
-    return () => {
-      if (listenerHandle) {
-        listenerHandle.remove();
+      // 4. On main screen (library) → double-back to exit
+      const now = Date.now();
+      if (now - lastBackPressRef.current < 2000) {
+        // Second press within 2 seconds → show confirm dialog
+        setShowExitConfirm(true);
+      } else {
+        lastBackPressRef.current = now;
       }
     };
-  }, [activeReadingBook, currentTab, showExitConfirm]);
+
+    const listenerPromise = CapacitorApp.addListener('backButton', handleBackButton);
+
+    return () => {
+      listenerPromise.then(handle => {
+        handle.remove();
+      });
+    };
+  }, []);
 
   // Fetch Google Client ID Config on mount
   useEffect(() => {

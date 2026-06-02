@@ -1196,9 +1196,12 @@ export default function ReadingView({
       </AnimatePresence>
 
       {/* Top Header */}
-      <header className={`sticky top-0 z-40 backdrop-blur-md transition-colors border-b ${
-        isDarkMode ? 'bg-[#121214]/85 border-[#2A2A30]' : 'bg-white/70 border-[#FFE66D]/80'
-      }`}>
+      <header 
+        className={`sticky top-0 z-40 backdrop-blur-md transition-colors border-b ${
+          isDarkMode ? 'bg-[#121214]/85 border-[#2A2A30]' : 'bg-white/70 border-[#FFE66D]/80'
+        }`}
+        style={{ paddingTop: 'env(safe-area-inset-top, 0px)' }}
+      >
         <div className="max-w-[680px] mx-auto px-5 h-14 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <button
