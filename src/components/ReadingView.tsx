@@ -443,12 +443,14 @@ export default function ReadingView({
       localStorage.setItem(`linguist_current_page_${book.id}_${ns}`, String(currentPageIdx));
       localStorage.setItem(`linguist_max_unlocked_page_${book.id}_${ns}`, String(maxUnlockedPageIdx));
       
-      if (onPageChange) {
+      // Only update percentage in App.tsx if user has explicitly started the book
+      // This prevents auto-adding to "currently reading" just by opening a story
+      if (onPageChange && book.isStarted) {
         const percentage = Math.round(((currentPageIdx + 1) / pages.length) * 100);
         onPageChange(percentage, currentPageIdx + 1, pages.length);
       }
     }
-  }, [book.id, currentPageIdx, maxUnlockedPageIdx, pages.length, onPageChange, userEmail]);
+  }, [book.id, book.isStarted, currentPageIdx, maxUnlockedPageIdx, pages.length, onPageChange, userEmail]);
 
   const handleGoBack = () => {
     if (pages.length > 0) {

@@ -1213,11 +1213,14 @@ export default function App() {
     triggerCloudSync();
   };
 
-  // Remove a book from "currently reading" list without deleting progress
+  // Remove a book from "currently reading" list and clear local progress
   const handleRemoveFromReading = (bookId: string) => {
     setBooks(prev => prev.map(b =>
       b.id === bookId ? { ...b, isStarted: false, percentageCompleted: 0, currentPage: 1 } : b
     ));
+    const ns = userEmail ? userEmail.toLowerCase().trim() : 'guest';
+    localStorage.removeItem(`linguist_current_page_${bookId}_${ns}`);
+    localStorage.removeItem(`linguist_current_page_${bookId}`);
     triggerCloudSync();
   };
 

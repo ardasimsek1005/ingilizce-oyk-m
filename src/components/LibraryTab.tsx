@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { BookOpen, Timer, Plus, ArrowRight, ExternalLink, ChevronRight, X, Sparkles, BookMarked, Star, Skull, Compass, Search } from 'lucide-react';
+import { BookOpen, Timer, Plus, ArrowRight, ExternalLink, ChevronRight, X, Sparkles, BookMarked, Star, Skull, Compass, Search, Trash2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Book } from '../types';
 
@@ -177,17 +177,9 @@ export default function LibraryTab({
     ).slice(0, 5);
   }, [books, searchQuery]);
 
-  // Currently reading list contains books that are started and not completed
+  // Currently reading list: ONLY books where isStarted=true (set manually by "Kitaba Başla" button)
   const currentlyReadingList = useMemo(() => {
-    const list = books.filter(b => (b.isStarted || (b.percentageCompleted > 0 && b.percentageCompleted < 100)) && !b.isCompleted);
-    // For backwards compatibility or default if no books are started
-    if (list.length === 0 && lastActiveBookId) {
-      const lastActive = books.find(b => b.id === lastActiveBookId);
-      if (lastActive && !lastActive.isCompleted) {
-        return [lastActive];
-      }
-    }
-    return list;
+    return books.filter(b => b.isStarted && !b.isCompleted);
   }, [books, lastActiveBookId]);
 
   const currentlyReading = useMemo(() => {
@@ -461,13 +453,31 @@ export default function LibraryTab({
                 </div>
               </div>
 
-              <button
-                onClick={() => onSelectBook(currentlyReading)}
-                className="mt-5 w-full sm:w-max px-6 py-2.5 bg-[#FF6B6B] text-white rounded-xl text-sm font-bold hover:bg-[#e05a5a] transition-all duration-200 active:scale-95 flex items-center justify-center gap-2 shadow-md shadow-[#FF6B6B]/20 cursor-pointer"
-              >
-                <span>Devam Et</span>
-                <ArrowRight className="w-4 h-4" />
-              </button>
+              <div className="flex gap-2 mt-5 w-full sm:w-max">
+                <button
+                  onClick={() => onSelectBook(currentlyReading)}
+                  className="flex-grow sm:flex-grow-0 px-6 py-2.5 bg-[#FF6B6B] text-white rounded-xl text-sm font-bold hover:bg-[#e05a5a] transition-all duration-200 active:scale-95 flex items-center justify-center gap-2 shadow-md shadow-[#FF6B6B]/20 cursor-pointer"
+                >
+                  <span>Devam Et</span>
+                  <ArrowRight className="w-4 h-4" />
+                </button>
+                {onRemoveFromReading && (
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setConfirmRemoveBookId(currentlyReading.id);
+                    }}
+                    className={`px-3 py-2.5 border rounded-xl transition-all active:scale-95 flex items-center justify-center cursor-pointer ${
+                      isDarkMode
+                        ? 'border-[#2A2A30] text-gray-400 hover:bg-gray-800 hover:text-red-400'
+                        : 'border-[#FFE66D]/50 text-gray-500 hover:bg-[#FFE66D]/10 hover:text-red-500'
+                    }`}
+                    title="Okunanlar listesinden çıkar"
+                  >
+                    <Trash2 className="w-4 h-4" />
+                  </button>
+                )}
+              </div>
             </div>
           </motion.div>
 
