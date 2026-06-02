@@ -869,6 +869,7 @@ export default function ProfileTab({
                             <button
                               type="button"
                               onClick={() => {
+                                localStorage.setItem('linguist_oauth_in_progress', 'true');
                                 setMockLoginProvider(prov.id as any);
                                 setShowMockLogin(true);
                               }}
@@ -915,6 +916,7 @@ export default function ProfileTab({
                 <button
                   type="button"
                   onClick={() => {
+                    localStorage.setItem('linguist_oauth_in_progress', 'true');
                     setOauthProvider('google');
                     setOauthStep('loading');
                     setOauthEmail('ardasimsek1005@gmail.com');
@@ -944,6 +946,7 @@ export default function ProfileTab({
                 <button
                   type="button"
                   onClick={() => {
+                    localStorage.setItem('linguist_oauth_in_progress', 'true');
                     setOauthProvider('facebook');
                     setOauthStep('loading');
                     setOauthEmail('ardasimsek1005@facebook.com');
@@ -970,6 +973,7 @@ export default function ProfileTab({
                 <button
                   type="button"
                   onClick={() => {
+                    localStorage.setItem('linguist_oauth_in_progress', 'true');
                     setMockLoginProvider('email');
                     setLoginStep('register');
                     setShowMockLogin(true);

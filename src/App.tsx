@@ -72,7 +72,13 @@ const stripBooksForSync = (booksList: Book[]) => {
 
 export default function App() {
   const [currentTab, setCurrentTab] = useState<string>(() => {
-    return localStorage.getItem('linguist_current_tab') || 'library';
+    const oauthInProgress = localStorage.getItem('linguist_oauth_in_progress');
+    if (oauthInProgress === 'true') {
+      localStorage.removeItem('linguist_oauth_in_progress');
+      return localStorage.getItem('linguist_current_tab') || 'library';
+    }
+    localStorage.removeItem('linguist_current_tab');
+    return 'library';
   }); // 'library' | 'vocabulary' | 'profile' | 'quiz'
   const [quizMode, setQuizMode] = useState<'saved' | 'random'>('saved');
   const [showPaywallInQuiz, setShowPaywallInQuiz] = useState<boolean>(false);
