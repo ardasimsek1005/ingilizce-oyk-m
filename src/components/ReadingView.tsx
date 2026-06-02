@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Book, Paragraph, VocabularyWord } from '../types';
 import { OFFLINE_DICTIONARY } from '../dictionary';
 import { GLOBAL_DICTIONARY } from '../data';
-import { speakNative, getFemaleVoice } from '../services/tts';
+import { speakNative, speakAudiobookSentence, stopSpeech } from '../services/tts';
 
 interface ReadingViewProps {
   book: Book;
@@ -569,9 +569,7 @@ export default function ReadingView({
     setPlayingSentenceIdx(null);
     setActiveSpokenWordIdx(-1);
     setActiveSentenceTr(null);
-    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-    }
+    stopSpeech();
   }, []);
 
   // Compute sentences on current page
@@ -609,9 +607,7 @@ export default function ReadingView({
     if (pageSentences.length === 0) return;
     
     // Stop any standard speech playing
-    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-    }
+    stopSpeech();
     
     setActiveSentenceTr(null);
     setClickedWord(null);
@@ -626,9 +622,7 @@ export default function ReadingView({
     if (pageSentences.length === 0 || lastSpokenSentenceIdx === null) return;
     
     // Stop any standard speech playing
-    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-    }
+    stopSpeech();
     
     setActiveSentenceTr(null);
     setClickedWord(null);
@@ -646,9 +640,7 @@ export default function ReadingView({
   // Clean up speech synthesis on unmount
   useEffect(() => {
     return () => {
-      if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-        window.speechSynthesis.cancel();
-      }
+      stopSpeech();
     };
   }, []);
 
@@ -696,19 +688,10 @@ export default function ReadingView({
     setClickedWord(null);
     setSelectedDictWord(null);
 
-    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-
-      const speakTimeout = setTimeout(() => {
-        const utterance = new SpeechSynthesisUtterance(sentence.text);
-        utterance.lang = 'en-US';
-        utterance.rate = 0.90; // Speeds up/slows down to exactly 0.90!
-
-        const voice = getFemaleVoice('en-US');
-        if (voice) {
-          utterance.voice = voice;
-        }
-
+    const cancelSpeech = speakAudiobookSentence(
+      sentence.text,
+      'en-US',
+      (charIndex) => {
         const parts = sentence.text.split(/(\s+)/).filter(Boolean);
         let currentCharIndex = 0;
         const wordRanges = parts.map((part, partIdx) => {
@@ -724,41 +707,30 @@ export default function ReadingView({
           };
         });
 
-        utterance.onboundary = (event) => {
-          if (event.name === 'word') {
-            const charIndex = event.charIndex;
-            let activeRange = wordRanges.find(
-              r => !r.isWhitespace && charIndex >= r.start && charIndex < r.end
-            );
-            if (!activeRange) {
-              activeRange = wordRanges.find(
-                r => !r.isWhitespace && charIndex >= r.start && charIndex <= r.end
-              );
-            }
-            if (activeRange) {
-              setActiveSpokenWordIdx(sentence.sentenceIdx * 1000 + activeRange.partIdx);
-            }
-          }
-        };
+        let activeRange = wordRanges.find(
+          r => !r.isWhitespace && charIndex >= r.start && charIndex < r.end
+        );
+        if (!activeRange) {
+          activeRange = wordRanges.find(
+            r => !r.isWhitespace && charIndex >= r.start && charIndex <= r.end
+          );
+        }
+        if (activeRange) {
+          setActiveSpokenWordIdx(sentence.sentenceIdx * 1000 + activeRange.partIdx);
+        }
+      },
+      () => {
+        // onStart
+      },
+      () => {
+        // onEnd
+        setPlayingSentenceIdx(prev => (prev !== null ? prev + 1 : null));
+      }
+    );
 
-        utterance.onend = () => {
-          setPlayingSentenceIdx(prev => (prev !== null ? prev + 1 : null));
-        };
-
-        utterance.onerror = (e) => {
-          console.warn("Audiobook sentence synthesis error:", e);
-          setPlayingSentenceIdx(prev => (prev !== null ? prev + 1 : null));
-        };
-
-        window.speechSynthesis.speak(utterance);
-      }, 100);
-
-      return () => {
-        clearTimeout(speakTimeout);
-      };
-    } else {
-      handleStopAudiobook();
-    }
+    return () => {
+      cancelSpeech();
+    };
   }, [isAudiobookPlaying, playingSentenceIdx, pageSentences, handleStopAudiobook]);
 
   const [activeQuizQuestions, setActiveQuizQuestions] = useState<any[] | null>(null);
