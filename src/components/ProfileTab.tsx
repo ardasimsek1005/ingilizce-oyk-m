@@ -1352,9 +1352,9 @@ export default function ProfileTab({
               </div>
 
               <div className="shrink-0 text-right">
-                {badge.unlocked && badge.unlockedAt ? (
+                {badge.unlocked ? (
                   <span className="text-[8px] font-bold text-[#4ECDC4] font-mono block">
-                    {badge.unlockedAt}
+                    {badge.unlockedAt || 'Açıldı'}
                   </span>
                 ) : (
                   <span className="text-[8px] font-semibold text-gray-400 dark:text-gray-600 block">

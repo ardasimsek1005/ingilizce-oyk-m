@@ -38,7 +38,7 @@ Return a JSON object in this exact schema:
 }}
 """
 
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key={api_key}"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-lite-latest:generateContent?key={api_key}"
     headers = {"Content-Type": "application/json"}
     
     data = {
@@ -52,7 +52,7 @@ Return a JSON object in this exact schema:
     
     for attempt in range(5):
         try:
-            with urllib.request.urlopen(req) as response:
+            with urllib.request.urlopen(req, timeout=90) as response:
                 res_body = response.read().decode("utf-8")
                 res_json = json.loads(res_body)
                 text_content = res_json["candidates"][0]["content"]["parts"][0]["text"]

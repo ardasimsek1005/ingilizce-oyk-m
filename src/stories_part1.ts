@@ -10967,7 +10967,7 @@ export const STORIES_PART1: RawStory[] = [
     title: "The Haunted Mirror",
     author: 'Traditional',
     level: 'A2',
-    coverUrl: '/covers/horror_haunted_mirror.png',
+    coverUrl: '/covers/horror_haunted_mirror.webp',
     en: [
       "Arthur is a young man who loves old things. He lives in a small apartment in a busy city. One sunny morning, he walks to a local flea market. There are many interesting items on the tables. He sees old clocks, dusty books, and silver spoons. Arthur likes to look for old things from the past. Soon, he stops in front of a big wooden table. A very old glass for seeing yourself sits there. It has a beautiful border made of dark wood. The border has strange shapes and flowers on it. The glass is very clear but it feels cold. Arthur looks at his face in the glass and smiles. He thinks it is perfect for his hall. He asks the seller about the price. The man tells him a small price, and Arthur buys it quickly. He feels happy about his new find.",
       "Arthur takes the heavy glass for seeing yourself home. He finds a good spot on the wall in his hall. He uses a hammer and a nail to hang it. When it is on the wall, the hall looks different. The room feels a little darker than before. Arthur looks at his image again. He thinks he looks very tired today. He walks to the kitchen to make a cup of tea. While he drinks his tea, he hears a strange noise. It sounds like a quiet talk coming from the hall. He puts his tea down and walks slowly to the glass. He looks closely at it. There is nothing strange there, only his own face looking back at him. He thinks the house is just old and makes strange sounds. He goes to bed early because he feels very sleepy tonight.",
@@ -13426,7 +13426,7 @@ export const STORIES_PART1: RawStory[] = [
     title: "The Legend of the Lost Tomb",
     author: 'Mystery Author',
     level: 'A1',
-    coverUrl: '/covers/horror_lost_tomb.png',
+    coverUrl: '/covers/horror_lost_tomb.webp',
     en: [
       "Leo is a young man who likes to travel to many different places. He has a big backpack and a strong map. Today, he is in a very hot desert. The sun is very bright and the sand is yellow. Leo is looking for an old and lost tomb. Many people say this tomb is very deep under the sand. It is a secret place from a long time ago. Leo walks slowly because the air is hot and dry. He drinks some water from his blue bottle and looks at his map again. He wants to find the hidden stone door that leads inside. There are no trees here and there is no shade for him. The wind moves the sand across the ground like small waves in the ocean. Leo is brave and he feels excited. He knows that his big adventure starts right here in this quiet place.",
       "The desert is very big and silent under the blue sky. Leo finds some big rocks near a tall hill. He stops to look at the ground carefully. He sees a strange sign on one of the heavy rocks. It is an old picture of a golden star. This is a very important clue for his long journey. He touches the stone and feels it is very cold. Maybe this is the entrance to the old tomb. Leo takes his small shovel out of his bag and starts to move the heavy sand away. His heart beats fast because he is very close to the truth. The work is hard and his hands are tired, but he does not stop. He wants to see what is hidden below the surface. The sky starts to turn orange because the sun is going down very fast now.",
@@ -13496,7 +13496,7 @@ export const STORIES_PART1: RawStory[] = [
     title: "The Secret of the Passage",
     author: 'Mystery Author',
     level: 'A1',
-    coverUrl: '/covers/horror_secret_passage.png',
+    coverUrl: '/covers/horror_secret_passage.webp',
     en: [
       "The sun shines brightly on the old Grey House today. It is a big house with many tall windows and a very large garden. Tom and his sister Alice arrive at the house with their parents for the summer holiday. They are very happy because the place looks like a beautiful castle from their favorite books. Tom is ten years old and he loves to explore every corner. Alice is twelve and she likes to read mysterious stories about hidden places. They walk through the heavy wooden door and step into the wide hallway. The air inside is cold and it smells like old paper and dried flowers. They see many paintings on the walls that look at them with quiet eyes. Everything is silent, but they feel excited about the adventures they will have. This big house has many secrets and they want to find them all before they leave.",
       "Their mother shows them to their bedrooms on the second floor. The rooms are grand with large beds and soft carpets that cover the wooden floor. Tom finds a small golden key hidden under a rug near his bed. He feels very surprised and calls Alice to see his new discovery. Alice comes into the room quickly and takes the key from his hand. She looks at it closely and notices a strange symbol on the metal. It is a star with a small circle inside the center. They wonder what this key opens because it does not look like a regular door key. They search the room for a lock but find nothing on the cabinets or the trunks. The house is very quiet and the shadows on the wall start to grow long. They decide to wait until the morning to tell their parents about the mystery.",

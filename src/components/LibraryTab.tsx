@@ -136,7 +136,28 @@ const SpeechIcon = () => (
   </svg>
 );
 
-const getBookCategory = (bookId: string): 'horror_mystery' | 'kids_fables' | 'classics_adventure' | 'daily_conversations' => {
+const SciFiIcon = () => (
+  <svg className="w-7 h-7 shrink-0" viewBox="0 0 32 32" fill="none">
+    <defs>
+      <linearGradient id="spaceGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stopColor="#00cec9" />
+        <stop offset="50%" stopColor="#0984e3" />
+        <stop offset="100%" stopColor="#6c5ce7" />
+      </linearGradient>
+      <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stopColor="#fdcb6e" />
+        <stop offset="100%" stopColor="#e17055" />
+      </linearGradient>
+    </defs>
+    <circle cx="16" cy="16" r="10" fill="url(#spaceGrad)" />
+    <path d="M5 21c3.5-3 10-6.5 17-6.5s7.5 1.5 8 3-4.5 5.5-12 5.5-11-1-13-2z" stroke="url(#ringGrad)" strokeWidth="2.5" opacity="0.9" />
+    <circle cx="8" cy="8" r="0.8" fill="#FFFFFF" />
+    <circle cx="24" cy="24" r="0.8" fill="#FFFFFF" />
+    <path d="M14 11l0.5 1 1 0.5-1 0.5-0.5 1-0.5-1-1-0.5 1-0.5 0.5-1z" fill="#FFE66D" />
+  </svg>
+);
+
+const getBookCategory = (bookId: string): 'horror_mystery' | 'kids_fables' | 'classics_adventure' | 'daily_conversations' | 'sci_fi' => {
   const horrorIds = [
     'sleepy_hollow', 'dr_jekyll_mr_hyde', 'invisible_man', 'crime_punishment', 'frankenstein', 'dracula', 'war_of_worlds'
   ];
@@ -152,12 +173,16 @@ const getBookCategory = (bookId: string): 'horror_mystery' | 'kids_fables' | 'cl
     'reluctant_dragon', 'star_child',
     'magic_flute', 'king_thrushbeard', 'iron_hans', 'water_of_life', 'three_spinners', 'six_swans',
     'birthday_infanta', 'fisherman_soul', 'young_king', 'devoted_friend', 'remarkably_rocket',
-    'east_sun_west_moon', 'snow_white_rose_red', 'twelve_dancing_princesses'
+    'east_sun_west_moon', 'snow_white_rose_red', 'twelve_dancing_princesses',
+    'tortoise_hare', 'puss_boots', 'secret_oak_tree', 'clockwork_town', 'painted_dreams'
   ];
 
   const lowerId = bookId.toLowerCase();
   if (lowerId.startsWith('daily_') || lowerId.includes('daily_')) {
     return 'daily_conversations';
+  }
+  if (lowerId.startsWith('scifi_') || lowerId.includes('scifi_')) {
+    return 'sci_fi';
   }
   if (lowerId.includes('horror') || horrorIds.some(id => lowerId.includes(id))) {
     return 'horror_mystery';
@@ -296,6 +321,9 @@ export default function LibraryTab({
     }
     if (selectedCategory === 'daily_conversations') {
       return `Toplam ${count} Günlük Yaşam Öyküsü`;
+    }
+    if (selectedCategory === 'sci_fi') {
+      return `Toplam ${count} Bilim Kurgu Öyküsü`;
     }
     return `Toplam ${count} Eser`;
   }, [filteredBooks.length, selectedCategory]);
@@ -455,7 +483,8 @@ export default function LibraryTab({
                 { id: 'classics_adventure', name: 'Dünya Klasikleri', desc: 'Klasik edebiyatın ölümsüz karakterleriyle dolu macera ve dram dünyası.', gradient: 'from-[#FF7F50] to-[#FF9F43]', text: 'text-white' },
                 { id: 'kids_fables', name: 'Masallar & Çocuk', desc: 'Çocuk masalları ve her yaştan dil öğrenenler için eğitici, sihirli fabllar.', gradient: 'from-[#4ECDC4] to-[#55EFC4]', text: 'text-slate-900' },
                 { id: 'horror_mystery', name: 'Korku & Gizem', desc: 'Karanlık ormanlar, gizemli şatolar ve merak uyandıran heyecan dolu öyküler.', gradient: 'from-[#a29bfe] to-[#74b9ff]', text: 'text-white' },
-                { id: 'daily_conversations', name: 'Günlük Yaşam & Diyaloglar', desc: 'Gerçek yaşam senaryolarına dayalı pratik İngilizce diyaloglar ve kısa günlük anlatılar.', gradient: 'from-[#45AAF2] to-[#4B7BEC]', text: 'text-white' }
+                { id: 'daily_conversations', name: 'Günlük Yaşam & Diyaloglar', desc: 'Gerçek yaşam senaryolarına dayalı pratik İngilizce diyaloglar ve kısa günlük anlatılar.', gradient: 'from-[#45AAF2] to-[#4B7BEC]', text: 'text-white' },
+                { id: 'sci_fi', name: 'Bilim Kurgu', desc: 'Geleceğin teknolojileri, uzay seyahatleri, robotlar ve alternatif evrenler üzerine sürükleyici öyküler.', gradient: 'from-[#00cec9] to-[#0984e3]', text: 'text-white' }
               ].find(c => c.id === focusedCategory) || { id: 'All', name: 'Tüm Hikayeler', desc: 'Kütüphanedeki tüm eserler.', gradient: 'from-[#FF6B6B] to-[#FFE66D]', text: 'text-white' };
               
               return (
@@ -864,7 +893,8 @@ export default function LibraryTab({
               { id: 'classics_adventure', name: 'Dünya Klasikleri', icon: <CompassIcon /> },
               { id: 'kids_fables', name: 'Masallar & Çocuk', icon: <WandIcon /> },
               { id: 'horror_mystery', name: 'Korku & Gizem', icon: <SpookyIcon /> },
-              { id: 'daily_conversations', name: 'Günlük Yaşam & Diyaloglar', icon: <SpeechIcon /> }
+              { id: 'daily_conversations', name: 'Günlük Yaşam & Diyaloglar', icon: <SpeechIcon /> },
+              { id: 'sci_fi', name: 'Bilim Kurgu', icon: <SciFiIcon /> }
             ].map((cat) => {
               const isSelected = selectedCategory === cat.id;
               const isAll = cat.id === 'All';

@@ -15,6 +15,7 @@ export interface Book {
   isFavorited?: boolean;
   isCompleted?: boolean;
   isStarted?: boolean;
+  titleTr?: string;
 }
 
 export interface Chapter {

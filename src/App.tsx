@@ -825,7 +825,6 @@ export default function App() {
           books: stripBooksForSync(books),
           vocabulary,
           badges,
-          userName,
           userAvatar,
           loginProvider,
           linkedProviders
@@ -853,7 +852,7 @@ export default function App() {
     }, 1500); // 1.5 seconds debounce
 
     return () => clearTimeout(delayDebounce);
-  }, [userEmail, stats, books, vocabulary, badges, userName, userAvatar, loginProvider, linkedProviders]);
+  }, [userEmail, stats, books, vocabulary, badges, userAvatar, loginProvider, linkedProviders]);
 
   // Daily Streak and Weekly Progress check useEffect
   useEffect(() => {
@@ -1172,8 +1171,10 @@ export default function App() {
   // Timer to track active reading time inside stories (Reading Time)
   useEffect(() => {
     const interval = setInterval(() => {
-      // Increment only when the window is focused, visible, and the user is actively reading a story
-      if (document.hasFocus() && document.visibilityState === 'visible' && activeReadingBook !== null) {
+      // Increment only when the page is visible and user is actively reading a story.
+      // Note: document.hasFocus() is intentionally NOT used here because Capacitor Android's
+      // WebView almost always returns false for hasFocus(), causing the timer to never fire.
+      if (document.visibilityState === 'visible' && activeReadingBook !== null) {
         setStats(prev => {
           const dayIndex = getTodayIndex();
           const updatedWeeklyMins = [...(prev.weeklyMins || [0, 0, 0, 0, 0, 0, 0])];
@@ -1223,7 +1224,6 @@ export default function App() {
         books: stripBooksForSync(customBooks || books),
         vocabulary: customVocabulary || vocabulary,
         badges: customBadges || badges,
-        userName: customName !== undefined ? customName : userName,
         userAvatar: customAvatar !== undefined ? customAvatar : userAvatar,
         loginProvider: customLoginProvider !== undefined ? customLoginProvider : loginProvider,
         linkedProviders: customLinkedProviders !== undefined ? customLinkedProviders : linkedProviders
@@ -1364,6 +1364,11 @@ export default function App() {
                   : cloudStats.premiumExpiryDate;
               }
 
+              const isJustReset = localStorage.getItem('linguist_just_reset_app') === 'true';
+              if (isJustReset) {
+                localStorage.removeItem('linguist_just_reset_app');
+              }
+
               mergedStats = {
                 ...DEFAULT_STATS,
                 ...cloudStats,
@@ -1371,14 +1376,14 @@ export default function App() {
                 isPremium,
                 premiumExpiryDate,
                 premiumType: stats.premiumType || cloudStats.premiumType || null,
-                dailyStreak: Math.max(stats.dailyStreak || 0, cloudStats.dailyStreak || 0),
-                completedBooksCount: Math.max(stats.completedBooksCount || 0, cloudStats.completedBooksCount || 0),
-                totalTimeMinutes: Math.max(stats.totalTimeMinutes || 0, cloudStats.totalTimeMinutes || 0),
-                learnedWordsCount: Math.max(stats.learnedWordsCount || 0, cloudStats.learnedWordsCount || 0),
-                hearts: isPremium ? 5 : Math.max(stats.hearts ?? 5, cloudStats.hearts ?? 5),
-                weeklyWords: mergeWeekly(stats.weeklyWords, cloudStats.weeklyWords),
-                weeklyMins: mergeWeekly(stats.weeklyMins, cloudStats.weeklyMins),
-                lastActiveDate
+                dailyStreak: isJustReset ? (stats.dailyStreak || 1) : Math.max(stats.dailyStreak || 0, cloudStats.dailyStreak || 0),
+                completedBooksCount: isJustReset ? (stats.completedBooksCount || 0) : Math.max(stats.completedBooksCount || 0, cloudStats.completedBooksCount || 0),
+                totalTimeMinutes: isJustReset ? (stats.totalTimeMinutes || 0) : Math.max(stats.totalTimeMinutes || 0, cloudStats.totalTimeMinutes || 0),
+                learnedWordsCount: isJustReset ? (stats.learnedWordsCount || 0) : Math.max(stats.learnedWordsCount || 0, cloudStats.learnedWordsCount || 0),
+                hearts: isPremium ? 5 : (isJustReset ? (stats.hearts ?? 5) : Math.max(stats.hearts ?? 5, cloudStats.hearts ?? 5)),
+                weeklyWords: isJustReset ? [...stats.weeklyWords] : mergeWeekly(stats.weeklyWords, cloudStats.weeklyWords),
+                weeklyMins: isJustReset ? [...stats.weeklyMins] : mergeWeekly(stats.weeklyMins, cloudStats.weeklyMins),
+                lastActiveDate: isJustReset ? stats.lastActiveDate : lastActiveDate
               };
             }
 
@@ -1452,10 +1457,8 @@ export default function App() {
               });
             }
 
-            // 5. Name / Avatar
-            if (cloud.userName) {
-              mergedName = cloud.userName;
-            }
+            // 5. Avatar only (userName is local-only, not synced)
+            // mergedName stays as the locally stored name
             if (cloud.userAvatar) {
               mergedAvatar = cloud.userAvatar;
             }
@@ -1498,6 +1501,7 @@ export default function App() {
           localStorage.setItem('linguist_linked_providers', JSON.stringify(mergedLinked));
 
           // Sync merged data back to cloud database immediately
+          // Note: userName is NOT synced to server (local-only)
           const payload = {
             email: finalEmail,
             data: {
@@ -1505,7 +1509,6 @@ export default function App() {
               books: stripBooksForSync(mergedBooks),
               vocabulary: mergedVocabulary,
               badges: mergedBadges,
-              userName: mergedName,
               userAvatar: mergedAvatar,
               loginProvider: activeProvider,
               linkedProviders: mergedLinked
@@ -1657,6 +1660,7 @@ export default function App() {
     const activeUuid = savedUuid || 'guest';
     localStorage.setItem(`linguist_stats_v11_${activeUuid}`, JSON.stringify(freshStats));
     localStorage.setItem('linguist_reset_stats_to_zero_v11', 'true');
+    localStorage.setItem('linguist_just_reset_app', 'true');
     
     if (savedRefillTime) {
       localStorage.setItem(`linguist_last_heart_refill_${activeUuid}`, savedRefillTime);
@@ -1767,11 +1771,6 @@ export default function App() {
         weeklyWords: updatedWeeklyWords
       };
     });
-
-    // Check achievement: "Kelime Avcısı" unlocked if vocab saved count > 4
-    if (vocabulary.length + 1 >= 5) {
-      unlockBadge('b3');
-    }
 
     triggerCloudSync();
   };

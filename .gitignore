@@ -10,3 +10,6 @@ node-portable/
 platform-tools/
 platform-tools.zip
 users_data.json
+scratch/
+__pycache__/
+

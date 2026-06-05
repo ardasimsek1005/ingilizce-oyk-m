@@ -46,6 +46,13 @@ if os.path.exists(NEW_20_DATA_FILE):
         expanded_stories.update(new_20_stories)
         print(f"Loaded {len(new_20_stories)} new 20 stories from new_20_stories.json.")
 
+SCIFI_DATA_FILE = "scifi_stories_data.json"
+if os.path.exists(SCIFI_DATA_FILE):
+    with open(SCIFI_DATA_FILE, "r", encoding="utf-8") as f:
+        scifi_stories = json.load(f)
+        expanded_stories.update(scifi_stories)
+        print(f"Loaded {len(scifi_stories)} science fiction stories.")
+
 print(f"Loaded total of {len(expanded_stories)} expanded stories from JSON.")
 
 def format_ts_story(story):
