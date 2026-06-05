@@ -17,6 +17,8 @@ const audioCache: Record<string, string> = {};
 let activeNativeSpeech: { cancel: () => void } | null = null;
 let activeAudiobookTimer: any = null;
 let activeAudiobookCancelled = false;
+let isEngineWarm = false;
+
 
 if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
   voices = window.speechSynthesis.getVoices();
@@ -64,8 +66,11 @@ export const getFemaleVoice = (lang: 'en-US' | 'tr-TR'): SpeechSynthesisVoice | 
 /**
  * Stops any active audio streams or SpeechSynthesis/Native speech.
  */
-export const stopSpeech = () => {
+export const stopSpeech = (keepWarm = false) => {
   try {
+    if (!keepWarm) {
+      isEngineWarm = false;
+    }
     if (currentAudio) {
       currentAudio.pause();
       currentAudio.src = "";
@@ -168,6 +173,9 @@ export const speakNative = async (
 
     if (onStart) onStart();
     try {
+      await TextToSpeech.stop().catch(() => {});
+      await new Promise(resolve => setTimeout(resolve, 60));
+      if (isCancelled) return;
       await TextToSpeech.speak({
         text: cleanT,
         lang: lang,
@@ -265,7 +273,7 @@ export const speakAudiobookSentence = (
     return () => {};
   }
 
-  stopSpeech();
+  stopSpeech(true);
 
   if (Capacitor.isNativePlatform()) {
     activeAudiobookCancelled = false;
@@ -288,24 +296,31 @@ export const speakAudiobookSentence = (
 
     if (onStart) onStart();
 
-    // Start native speech
-    TextToSpeech.speak({
-      text: cleanT,
-      lang: lang,
-      rate: 0.90,
-      pitch: 1.0,
-      volume: 1.0,
-      queueStrategy: 1
-    }).then(() => {
-      if (!activeAudiobookCancelled && onEnd) {
-        onEnd();
-      }
-    }).catch(err => {
-      console.warn("Capacitor Audiobook native speak error:", err);
-      if (!activeAudiobookCancelled && onEnd) {
-        onEnd();
-      }
-    });
+    // Start native speech with a safe stop and delay
+    TextToSpeech.stop().catch(() => {})
+      .then(() => new Promise(resolve => setTimeout(resolve, 60)))
+      .then(() => {
+        if (activeAudiobookCancelled) return;
+        return TextToSpeech.speak({
+          text: cleanT,
+          lang: lang,
+          rate: 0.90,
+          pitch: 1.0,
+          volume: 1.0,
+          queueStrategy: 1
+        });
+      })
+      .then(() => {
+        if (!activeAudiobookCancelled && onEnd) {
+          onEnd();
+        }
+      })
+      .catch(err => {
+        console.warn("Capacitor Audiobook native speak error:", err);
+        if (!activeAudiobookCancelled && onEnd) {
+          onEnd();
+        }
+      });
 
     // Run simulated word highlight sequence
     let wordIdx = 0;
@@ -325,10 +340,14 @@ export const speakAudiobookSentence = (
       activeAudiobookTimer = setTimeout(speakNextWord, delay);
     };
 
-    speakNextWord();
+    const startDelay = isEngineWarm ? 85 : 420;
+    isEngineWarm = true;
+
+    activeAudiobookTimer = setTimeout(speakNextWord, startDelay);
 
     return () => {
       activeAudiobookCancelled = true;
+      isEngineWarm = false; // Reset to cold start state on cancel/stop
       if (activeAudiobookTimer) {
         clearTimeout(activeAudiobookTimer);
         activeAudiobookTimer = null;

@@ -90,4 +90,27 @@ export interface UserStats {
   weeklyWords?: number[]; // [Pzt, Sal, Car, Per, Cum, Cmt, Paz]
   weeklyMins?: number[];  // [Pzt, Sal, Car, Per, Cum, Cmt, Paz]
   lastActiveDate?: string; // YYYY-MM-DD format
+  dailyQuizzesSolvedCount?: number;
+  dailyQuizzesScoreSum?: number;
+  dailyQuizzesQuestionsSum?: number;
 }
+
+export const getLevelColor = (level?: string): string => {
+  const clean = (level || 'A1').toUpperCase().trim();
+  if (clean.startsWith('A1')) return '#22C55E'; // Emerald Green
+  if (clean.startsWith('A2')) return '#06B6D4'; // Teal/Cyan
+  if (clean.startsWith('B1')) return '#EAB308'; // Amber/Yellow
+  if (clean.startsWith('B2')) return '#F97316'; // Orange
+  if (clean.startsWith('C1')) return '#EF4444'; // Red
+  if (clean.startsWith('C2')) return '#B91C1C'; // Dark Crimson
+  return '#6B7280'; // Gray fallback
+};
+
+export const hexToRgba = (hex: string, alpha: number): string => {
+  const c = hex.replace('#', '');
+  const r = parseInt(c.substring(0, 2), 16);
+  const g = parseInt(c.substring(2, 4), 16);
+  const b = parseInt(c.substring(4, 6), 16);
+  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+};
+

@@ -2301,7 +2301,7 @@ export const OFFLINE_DICTIONARY: Record<string, DictionaryItem> = {
   "hare": { tr: "tavşan", level: "C1", notes: "Sıfat • Seviye: C2" },
   "harm": { tr: "zarar", level: "A2", notes: "Fiil • Seviye: A2" },
   "harmony": { tr: "uyum", level: "A2", notes: "İsim • Seviye: A2" },
-  "harness": { tr: "koşum", level: "A1", notes: "Eşleşen hikaye kelimesi" },
+  "harness": { tr: "koşum takımı", level: "A1", notes: "Eşleşen hikaye kelimesi" },
   "harpoon": { tr: "zıpkın", level: "A1", notes: "Eşleşen hikaye kelimesi" },
   "harpooner": { tr: "zıpkıncı", level: "A1", notes: "Eşleşen hikaye kelimesi" },
   "harrowing": { tr: "dehşet verici", level: "B2", notes: "Sıfat • Seviye: B2" },

@@ -1,11 +1,11 @@
-import React, { useState, useMemo } from 'react';
-import { BookOpen, Timer, Plus, ArrowRight, ExternalLink, ChevronRight, X, Sparkles, BookMarked, Star, Skull, Compass, Search, Trash2 } from 'lucide-react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
+import { BookOpen, Timer, Plus, ArrowRight, ExternalLink, ChevronRight, X, Sparkles, BookMarked, Star, Skull, Compass, Search, Trash2, ArrowLeft } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Book } from '../types';
+import { Book, getLevelColor, hexToRgba } from '../types';
 
 
 const TumuIcon = () => (
-  <svg className="w-11 h-11 shrink-0" viewBox="0 0 32 32" fill="none">
+  <svg className="w-7 h-7 shrink-0" viewBox="0 0 32 32" fill="none">
     <defs>
       <filter id="bookGlow" x="-20%" y="-20%" width="140%" height="140%">
         <feGaussianBlur stdDeviation="1" result="blur" />
@@ -35,7 +35,7 @@ const TumuIcon = () => (
 );
 
 const SpookyIcon = () => (
-  <svg className="w-11 h-11 shrink-0" viewBox="0 0 32 32" fill="none">
+  <svg className="w-7 h-7 shrink-0" viewBox="0 0 32 32" fill="none">
     <defs>
       <linearGradient id="moonGrad" x1="0" y1="0" x2="1" y2="1">
         <stop offset="0%" stopColor="#FFE66D" />
@@ -60,7 +60,7 @@ const SpookyIcon = () => (
 );
 
 const WandIcon = () => (
-  <svg className="w-11 h-11 shrink-0" viewBox="0 0 32 32" fill="none">
+  <svg className="w-7 h-7 shrink-0" viewBox="0 0 32 32" fill="none">
     <defs>
       <linearGradient id="crystalGrad" x1="0" y1="0" x2="1" y2="1">
         <stop offset="0%" stopColor="#70A1FF" />
@@ -87,7 +87,7 @@ const WandIcon = () => (
 );
 
 const CompassIcon = () => (
-  <svg className="w-11 h-11 shrink-0" viewBox="0 0 32 32" fill="none">
+  <svg className="w-7 h-7 shrink-0" viewBox="0 0 32 32" fill="none">
     <defs>
       <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
         <stop offset="0%" stopColor="#FFE66D" />
@@ -115,7 +115,28 @@ const CompassIcon = () => (
   </svg>
 );
 
-const getBookCategory = (bookId: string): 'horror_mystery' | 'kids_fables' | 'classics_adventure' => {
+const SpeechIcon = () => (
+  <svg className="w-7 h-7 shrink-0" viewBox="0 0 32 32" fill="none">
+    <defs>
+      <linearGradient id="bubbleGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stopColor="#45AAF2" />
+        <stop offset="50%" stopColor="#2D98DA" />
+        <stop offset="100%" stopColor="#4B7BEC" />
+      </linearGradient>
+      <linearGradient id="glowGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stopColor="#70A1FF" />
+        <stop offset="100%" stopColor="#1E90FF" />
+      </linearGradient>
+    </defs>
+    <path d="M16 4C9.37 4 4 8.7 4 14.5c0 3.33 1.77 6.32 4.6 8.23l-1.35 4.05c-.15.46.33.86.72.6l4.63-3.08c1.07.28 2.22.4 3.4.4 6.63 0 12-4.7 12-10.5S22.63 4 16 4z" fill="url(#bubbleGrad)" />
+    <circle cx="11" cy="14" r="2" fill="#FFFFFF" opacity="0.9" />
+    <circle cx="16" cy="14" r="2" fill="#FFFFFF" opacity="0.9" />
+    <circle cx="21" cy="14" r="2" fill="#FFFFFF" opacity="0.9" />
+    <path d="M25 21c0-2.2-2-4-4.5-4-.25 0-.5.03-.73.08.7.67 1.13 1.54 1.13 2.5 0 2.2-2 4-4.5 4-.63 0-1.22-.11-1.75-.3 1.1 2.24 3.65 3.72 6.7 3.72.63 0 1.25-.06 1.83-.17l2.87 1.9c.2.14.47-.04.4-.24l-.87-2.61c1.55-1.22 2.5-3.08 2.5-4.9z" fill="url(#glowGrad)" opacity="0.8" />
+  </svg>
+);
+
+const getBookCategory = (bookId: string): 'horror_mystery' | 'kids_fables' | 'classics_adventure' | 'daily_conversations' => {
   const horrorIds = [
     'sleepy_hollow', 'dr_jekyll_mr_hyde', 'invisible_man', 'crime_punishment', 'frankenstein', 'dracula', 'war_of_worlds'
   ];
@@ -127,14 +148,21 @@ const getBookCategory = (bookId: string): 'horror_mystery' | 'kids_fables' | 'cl
     'boy_cried_wolf', 'ali_baba', 'hansel_gretel', 'sleeping_beauty', 'rapunzel', 'cinderella', 'jack_beanstalk',
     'aladdin', 'goldilocks', 'red_riding_hood', 'ugly_duckling', 'little_mermaid', 'three_pigs', 'snow_white', 'beauty_beast',
     'peter_wolf', 'tin_soldier', 'magic_pot', 'wolf_kids', 'brave_tailor', 'selfish_giant', 'nightingale', 'tinderbox',
-    'wild_swans', 'goose_girl', 'fox_grapes', 'golden_goose', 'elves_shoemaker', 'emperors_clothes', 'happy_prince'
+    'wild_swans', 'goose_girl', 'fox_grapes', 'golden_goose', 'elves_shoemaker', 'emperors_clothes', 'happy_prince',
+    'reluctant_dragon', 'star_child',
+    'magic_flute', 'king_thrushbeard', 'iron_hans', 'water_of_life', 'three_spinners', 'six_swans',
+    'birthday_infanta', 'fisherman_soul', 'young_king', 'devoted_friend', 'remarkably_rocket',
+    'east_sun_west_moon', 'snow_white_rose_red', 'twelve_dancing_princesses'
   ];
 
   const lowerId = bookId.toLowerCase();
+  if (lowerId.startsWith('daily_') || lowerId.includes('daily_')) {
+    return 'daily_conversations';
+  }
   if (lowerId.includes('horror') || horrorIds.some(id => lowerId.includes(id))) {
     return 'horror_mystery';
   }
-  if (fableKidsIds.some(id => lowerId.includes(id))) {
+  if (lowerId.includes('fable') || lowerId.includes('kids') || fableKidsIds.some(id => lowerId.includes(id))) {
     return 'kids_fables';
   }
   return 'classics_adventure';
@@ -151,6 +179,8 @@ interface LibraryTabProps {
   searchQuery?: string;
   onSearchQueryChange?: (query: string) => void;
   onRemoveFromReading?: (bookId: string) => void;
+  focusedCategory: string | null;
+  setFocusedCategory: (category: string | null) => void;
 }
 
 export default function LibraryTab({
@@ -164,11 +194,31 @@ export default function LibraryTab({
   searchQuery = '',
   onSearchQueryChange,
   onRemoveFromReading,
+  focusedCategory,
+  setFocusedCategory,
 }: LibraryTabProps) {
   const [selectedLevel, setSelectedLevel] = useState<string>('All');
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [confirmRemoveBookId, setConfirmRemoveBookId] = useState<string | null>(null);
+  const [lastTap, setLastTap] = useState<{ [key: string]: number }>({});
+
+  const lastTransitionTime = useRef<number>(0);
+
+  useEffect(() => {
+    lastTransitionTime.current = Date.now();
+  }, [focusedCategory]);
+
+  const handleCategoryTap = (catId: string) => {
+    const now = Date.now();
+    const prevTap = lastTap[catId] || 0;
+    if (now - prevTap < 300) {
+      setFocusedCategory(catId);
+    } else {
+      setSelectedCategory(catId);
+    }
+    setLastTap(prev => ({ ...prev, [catId]: now }));
+  };
 
   const suggestions = useMemo(() => {
     if (!searchQuery || searchQuery.trim().length < 2) return [];
@@ -179,9 +229,9 @@ export default function LibraryTab({
     ).slice(0, 5);
   }, [books, searchQuery]);
 
-  // Currently reading list: ONLY books where isStarted=true (set manually by "Kitaba Başla" button)
+  // Currently reading list: books that are started OR match lastActiveBookId, and not completed
   const currentlyReadingList = useMemo(() => {
-    return books.filter(b => b.isStarted && !b.isCompleted);
+    return books.filter(b => (b.isStarted || b.id === lastActiveBookId) && !b.isCompleted);
   }, [books, lastActiveBookId]);
 
   const currentlyReading = useMemo(() => {
@@ -243,6 +293,9 @@ export default function LibraryTab({
     }
     if (selectedCategory === 'classics_adventure') {
       return `Toplam ${count} Dünya Klasiği`;
+    }
+    if (selectedCategory === 'daily_conversations') {
+      return `Toplam ${count} Günlük Yaşam Öyküsü`;
     }
     return `Toplam ${count} Eser`;
   }, [filteredBooks.length, selectedCategory]);
@@ -317,7 +370,13 @@ export default function LibraryTab({
         animate={shouldAnimate ? { opacity: 1, scale: 1 } : false}
         transition={shouldAnimate ? { delay: Math.min(idx, 8) * 0.03, duration: 0.25 } : undefined}
         key={book.id}
-        onClick={() => onSelectBook(book)}
+        onClick={() => {
+          if (Date.now() - lastTransitionTime.current < 450) {
+            // Ignore double-clicks/taps that bleed through from the category navigation transitions
+            return;
+          }
+          onSelectBook(book);
+        }}
         className={`group cursor-pointer flex flex-col ${
           isHorizontal ? 'w-[140px] shrink-0 snap-start' : ''
         }`}
@@ -333,10 +392,11 @@ export default function LibraryTab({
             src={book.coverUrl}
             loading="lazy"
           />
-          <div className={`absolute top-2 right-2 px-2 py-0.5 rounded text-[10px] font-bold text-white shadow-xs ${
-            book.level.startsWith('A') ? 'bg-[#4ECDC4]' : book.level.startsWith('B') ? 'bg-[#FF6B6B]' : 'bg-[#2D3436]'
-          }`}>
-            {book.level}
+          <div 
+            className="absolute top-2 right-2 px-2 py-0.5 rounded text-[10px] font-bold text-white shadow-xs"
+            style={{ backgroundColor: getLevelColor(book.level) }}
+          >
+            {book.level || 'A1'}
           </div>
           <button
             onClick={(e) => {
@@ -359,7 +419,7 @@ export default function LibraryTab({
         }`}>
           {book.title}
         </h4>
-        <p className="text-gray-455 dark:text-gray-400 text-[11px] truncate">{book.author}</p>
+        {book.author && <p className="text-gray-455 dark:text-gray-400 text-[11px] truncate">{book.author}</p>}
         <div className="flex items-center gap-1.5 mt-1 text-[10px] text-[#4ECDC4] font-bold">
           <BookOpen className="w-3.5 h-3.5" />
           <span>{book.totalPages || 0} Sayfa</span>
@@ -372,8 +432,105 @@ export default function LibraryTab({
     <div className={`pb-32 max-w-[680px] mx-auto px-5 pt-6 transition-colors ${
       isDarkMode ? 'text-[#E6E6E6]' : 'text-[#2D3436]'
     }`}>
-      
-      {/* Section: Currently Reading */}
+      {focusedCategory ? (
+        <div className="space-y-6">
+          {/* Back button and Category title */}
+          <div className="flex flex-col gap-3">
+            <button
+              onClick={() => setFocusedCategory(null)}
+              className={`flex items-center gap-1.5 text-xs font-bold font-headline-lg w-max px-3 py-1.5 rounded-xl border transition-all cursor-pointer ${
+                isDarkMode 
+                  ? 'text-gray-300 border-gray-700 hover:bg-white/5 bg-[#1A1A1E]' 
+                  : 'text-gray-600 border-gray-200 hover:bg-gray-50 bg-white shadow-3xs'
+              }`}
+            >
+              <ArrowLeft className="w-4 h-4" />
+              <span>Kitaplığa Geri Dön</span>
+            </button>
+            
+            {/* Category header card with nice aesthetic gradient */}
+            {(() => {
+              const catData = [
+                { id: 'All', name: 'Tüm Hikayeler', desc: 'Kütüphanedeki tüm eserleri tek bir çatı altında keşfedin.', gradient: 'from-[#FF6B6B] to-[#FFE66D]', text: 'text-white' },
+                { id: 'classics_adventure', name: 'Dünya Klasikleri', desc: 'Klasik edebiyatın ölümsüz karakterleriyle dolu macera ve dram dünyası.', gradient: 'from-[#FF7F50] to-[#FF9F43]', text: 'text-white' },
+                { id: 'kids_fables', name: 'Masallar & Çocuk', desc: 'Çocuk masalları ve her yaştan dil öğrenenler için eğitici, sihirli fabllar.', gradient: 'from-[#4ECDC4] to-[#55EFC4]', text: 'text-slate-900' },
+                { id: 'horror_mystery', name: 'Korku & Gizem', desc: 'Karanlık ormanlar, gizemli şatolar ve merak uyandıran heyecan dolu öyküler.', gradient: 'from-[#a29bfe] to-[#74b9ff]', text: 'text-white' },
+                { id: 'daily_conversations', name: 'Günlük Yaşam & Diyaloglar', desc: 'Gerçek yaşam senaryolarına dayalı pratik İngilizce diyaloglar ve kısa günlük anlatılar.', gradient: 'from-[#45AAF2] to-[#4B7BEC]', text: 'text-white' }
+              ].find(c => c.id === focusedCategory) || { id: 'All', name: 'Tüm Hikayeler', desc: 'Kütüphanedeki tüm eserler.', gradient: 'from-[#FF6B6B] to-[#FFE66D]', text: 'text-white' };
+              
+              return (
+                <div className={`p-5 rounded-3xl bg-gradient-to-tr ${catData.gradient} ${catData.text} shadow-md`}>
+                  <h2 className="font-headline-lg text-xl font-black tracking-tight">{catData.name}</h2>
+                  <p className="text-[11px] font-semibold mt-1.5 opacity-90 leading-relaxed max-w-sm">{catData.desc}</p>
+                </div>
+              );
+            })()}
+          </div>
+
+          {/* Level selector inside focused category */}
+          <div className="flex flex-col gap-2">
+            <span className={`text-[10px] font-bold uppercase tracking-wider block px-1 ${
+              isDarkMode ? 'text-gray-400' : 'text-gray-455'
+            }`}>
+              Zorluk Seviyesi
+            </span>
+            <div className="flex flex-wrap gap-2">
+              {['All', 'A1', 'A2', 'B1', 'B2', 'C1'].map((levelCode) => {
+                const isSelected = selectedLevel === levelCode;
+                const lvl = levelCode === 'All' ? 'Tüm Seviyeler' : `${levelCode} Seviyesi`;
+                return (
+                  <button
+                    key={levelCode}
+                    onClick={() => setSelectedLevel(levelCode)}
+                    className={`px-3 py-1.5 rounded-xl text-[11px] font-bold transition-all duration-200 cursor-pointer border select-none ${
+                      isSelected
+                        ? levelCode === 'All'
+                          ? 'bg-[#4ECDC4] border-[#4ECDC4] text-[#2D3436] shadow-md shadow-[#4ECDC4]/20 scale-[1.02]'
+                          : 'scale-[1.02]'
+                        : isDarkMode
+                          ? 'bg-[#1E1E22] border-[#2A2A30] text-gray-400 hover:text-white hover:border-gray-500'
+                          : 'bg-white border-gray-200 text-gray-600 hover:text-[#4ECDC4] hover:border-gray-300'
+                    }`}
+                    style={isSelected && levelCode !== 'All' ? {
+                      backgroundColor: getLevelColor(levelCode),
+                      borderColor: getLevelColor(levelCode),
+                      color: '#ffffff',
+                      boxShadow: `0 4px 12px ${hexToRgba(getLevelColor(levelCode), 0.25)}`
+                    } : undefined}
+                  >
+                    {lvl}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Books grid for focused category */}
+          {(() => {
+            const categoryBooks = books.filter(b => {
+              const matchesCat = focusedCategory === 'All' ? true : getBookCategory(b.id) === focusedCategory;
+              const matchesLvl = selectedLevel === 'All' ? true : b.level === selectedLevel;
+              const matchesSearch = searchQuery.trim().length > 0
+                ? b.title.toLowerCase().includes(searchQuery.toLowerCase()) || b.author.toLowerCase().includes(searchQuery.toLowerCase())
+                : true;
+              return matchesCat && matchesLvl && matchesSearch;
+            });
+            
+            return categoryBooks.length > 0 ? (
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-5">
+                {categoryBooks.map((book, idx) => renderBookCard(book, idx, false))}
+              </div>
+            ) : (
+              <div className="text-center py-12 border-2 border-dashed border-gray-400/20 rounded-[28px]">
+                <span role="img" aria-label="empty" className="text-3xl block mb-2">📚</span>
+                <p className="text-xs text-gray-400 font-bold font-headline-lg">Bu filtre kombinasyonunda kitap bulunamadı.</p>
+              </div>
+            );
+          })()}
+        </div>
+      ) : (
+        <>
+          {/* Section: Currently Reading */}
       {currentlyReading && (
         <section className="mb-10">
           <h2 className={`font-headline-lg text-lg font-bold mb-4 tracking-tight transition-colors ${
@@ -401,7 +558,10 @@ export default function LibraryTab({
                 }`}
                 src={currentlyReading.coverUrl}
               />
-              <div className="absolute top-2 right-2 px-1.5 py-0.5 bg-[#FFE66D] rounded text-[9px] font-bold text-[#2D3436] shadow-xs">
+              <div 
+                className="absolute top-2 right-2 px-1.5 py-0.5 rounded text-[9px] font-bold text-white shadow-xs"
+                style={{ backgroundColor: getLevelColor(currentlyReading.level) }}
+              >
                 {currentlyReading.level}
               </div>
               {/* Star Button */}
@@ -428,9 +588,11 @@ export default function LibraryTab({
                 }`}>
                   {currentlyReading.title}
                 </h3>
-                <p className={`text-sm mb-4 ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-                  {currentlyReading.author}
-                </p>
+                {currentlyReading.author && (
+                  <p className={`text-sm mb-4 ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
+                    {currentlyReading.author}
+                  </p>
+                )}
 
                 {/* Progress bar */}
                 <div className="mt-2">
@@ -448,17 +610,19 @@ export default function LibraryTab({
                     isDarkMode ? 'bg-[#2A2A30] border-[#343A40]/50' : 'bg-gray-100 border-[#FFE66D]/30'
                   }`}>
                     <div
-                      className="h-full bg-[#4ECDC4] rounded-full transition-all duration-500"
+                      className="bg-[#4ECDC4] h-full rounded-full transition-all duration-300"
                       style={{ width: `${currentlyReading.percentageCompleted}%` }}
                     />
                   </div>
                 </div>
               </div>
-
-              <div className="flex gap-2 mt-5 w-full sm:w-max">
+              <div className="flex gap-2.5 mt-5 w-full sm:w-max">
                 <button
-                  onClick={() => onSelectBook(currentlyReading)}
-                  className="flex-grow sm:flex-grow-0 px-6 py-2.5 bg-[#FF6B6B] text-white rounded-xl text-sm font-bold hover:bg-[#e05a5a] transition-all duration-200 active:scale-95 flex items-center justify-center gap-2 shadow-md shadow-[#FF6B6B]/20 cursor-pointer"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    onSelectBook(currentlyReading);
+                  }}
+                  className="flex-grow sm:flex-grow-0 px-6 py-2.5 bg-[#FF6B6B] text-white rounded-xl text-xs font-bold hover:bg-[#e05a5a] transition-all duration-200 active:scale-95 flex items-center justify-center gap-2 shadow-md shadow-[#FF6B6B]/20 cursor-pointer font-headline-lg"
                 >
                   <span>Devam Et</span>
                   <ArrowRight className="w-4 h-4" />
@@ -469,10 +633,10 @@ export default function LibraryTab({
                       e.stopPropagation();
                       setConfirmRemoveBookId(currentlyReading.id);
                     }}
-                    className={`px-3 py-2.5 border rounded-xl transition-all active:scale-95 flex items-center justify-center cursor-pointer ${
+                    className={`px-3.5 py-2.5 border rounded-xl transition-all active:scale-95 flex items-center justify-center cursor-pointer ${
                       isDarkMode
-                        ? 'border-[#2A2A30] text-gray-400 hover:bg-gray-800 hover:text-red-400'
-                        : 'border-[#FFE66D]/50 text-gray-500 hover:bg-[#FFE66D]/10 hover:text-red-500'
+                        ? 'border-gray-800 text-gray-400 hover:bg-gray-850 hover:text-red-400 bg-[#121214]'
+                        : 'border-gray-200 text-gray-500 hover:bg-gray-100 hover:text-red-500 bg-white'
                     }`}
                     title="Okunanlar listesinden çıkar"
                   >
@@ -515,8 +679,11 @@ export default function LibraryTab({
                         loading="lazy"
                       />
                       {/* Level badge */}
-                      <div className="absolute top-1 right-1 bg-black/55 backdrop-blur-xs rounded text-white font-bold leading-none select-none" style={{ padding: '2px 4px', fontSize: '8px' }}>
-                        {book.level}
+                      <div 
+                        className="absolute top-1 right-1 backdrop-blur-xs rounded text-white font-bold leading-none select-none" 
+                        style={{ padding: '2px 4px', fontSize: '8px', backgroundColor: getLevelColor(book.level) }}
+                      >
+                        {book.level || 'A1'}
                       </div>
                       {/* Progress bar */}
                       <div className="absolute bottom-0 left-0 right-0 h-1 bg-black/30">
@@ -659,7 +826,10 @@ export default function LibraryTab({
                   <img src={book.coverUrl} className="w-6 h-8 rounded-md object-cover shrink-0 shadow-xs" alt="" />
                   <div className="min-w-0 flex-1">
                     <div className="truncate text-xs font-bold">{book.title}</div>
-                    <div className="text-[10px] text-gray-400 mt-0.5">{book.level} • {book.author}</div>
+                    <div className="text-[10px] text-gray-400 mt-0.5">
+                      {book.level || 'A1'}
+                      {book.author ? ` • ${book.author}` : ''}
+                    </div>
                   </div>
                   <ChevronRight className="w-4 h-4 text-gray-400" />
                 </button>
@@ -683,24 +853,30 @@ export default function LibraryTab({
 
         {/* Kategoriler (Category) Filter Stack */}
         <div className="mb-5">
-          <span className={`text-[10px] font-bold uppercase tracking-wider block mb-2.5 px-1 ${
+          <span className={`text-[10px] font-bold uppercase tracking-wider block mb-2 px-1 ${
             isDarkMode ? 'text-gray-400' : 'text-gray-455'
           }`}>
             Kategoriler (Bölümler)
           </span>
-          <div className="flex flex-col gap-2.5">
+          <div className="grid grid-cols-2 gap-2">
             {[
-              { id: 'All', name: 'Tüm Hikayeler', desc: 'Kütüphanedeki Tüm Eserler', icon: <TumuIcon /> },
-              { id: 'classics_adventure', name: 'Dünya Klasikleri', desc: 'Ölümsüz Macera ve Dram Eserleri', icon: <CompassIcon /> },
-              { id: 'kids_fables', name: 'Masallar & Çocuk', desc: 'Çocuk Masalları ve Eğitici Fabllar', icon: <WandIcon /> },
-              { id: 'horror_mystery', name: 'Korku & Gizem', desc: 'Gizemli ve Heyecan Dolu Hikayeler', icon: <SpookyIcon /> }
+              { id: 'All', name: 'Tüm Hikayeler', icon: <TumuIcon /> },
+              { id: 'classics_adventure', name: 'Dünya Klasikleri', icon: <CompassIcon /> },
+              { id: 'kids_fables', name: 'Masallar & Çocuk', icon: <WandIcon /> },
+              { id: 'horror_mystery', name: 'Korku & Gizem', icon: <SpookyIcon /> },
+              { id: 'daily_conversations', name: 'Günlük Yaşam & Diyaloglar', icon: <SpeechIcon /> }
             ].map((cat) => {
               const isSelected = selectedCategory === cat.id;
+              const isAll = cat.id === 'All';
               return (
                 <button
                   key={cat.id}
                   onClick={() => setSelectedCategory(cat.id)}
-                  className={`p-3.5 rounded-2xl border text-left transition-all duration-200 cursor-pointer select-none flex items-center gap-4 ${
+                  onDoubleClick={() => setFocusedCategory(cat.id)}
+                  onTouchStart={() => handleCategoryTap(cat.id)}
+                  className={`p-2.5 rounded-2xl border text-left transition-all duration-205 cursor-pointer select-none flex items-center gap-3 ${
+                    isAll ? 'col-span-2' : ''
+                  } ${
                     isSelected
                       ? isDarkMode
                         ? 'bg-[#FF6B6B]/15 border-[#FF6B6B]/40 text-white shadow-md'
@@ -709,8 +885,9 @@ export default function LibraryTab({
                         ? 'bg-[#1A1A1E] border-[#2A2A30] text-gray-300 hover:border-gray-700'
                         : 'bg-white border-gray-200 text-gray-700 hover:border-gray-300 shadow-3xs'
                   }`}
+                  title={`${cat.name} (Çift tıklayarak sayfasına gidin)`}
                 >
-                  <div className={`w-14 h-14 rounded-2xl flex items-center justify-center border shrink-0 transition-all ${
+                  <div className={`w-9 h-9 rounded-xl flex items-center justify-center border shrink-0 transition-all ${
                     isSelected 
                       ? isDarkMode
                         ? 'bg-[#221c20] border-[#FF6B6B]/40 shadow-xs'
@@ -722,13 +899,12 @@ export default function LibraryTab({
                     {cat.icon}
                   </div>
                   <div className="flex-1 min-w-0 pr-1">
-                    <div className="font-extrabold text-[13px] tracking-tight font-headline-lg flex items-center justify-between">
-                      <span>{cat.name}</span>
+                    <div className="font-extrabold text-[11.5px] leading-tight tracking-tight font-headline-lg flex items-center justify-between">
+                      <span className="truncate">{cat.name}</span>
                       {isSelected && (
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#FF6B6B]" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#FF6B6B] shrink-0 ml-1" />
                       )}
                     </div>
-                    <div className="text-[10px] text-gray-400 font-medium truncate mt-0.5">{cat.desc}</div>
                   </div>
                 </button>
               );
@@ -754,11 +930,19 @@ export default function LibraryTab({
                   onClick={() => setSelectedLevel(levelCode)}
                   className={`px-4 py-2 rounded-xl text-xs font-bold transition-all duration-200 cursor-pointer border select-none ${
                     isSelected
-                      ? 'bg-[#4ECDC4] border-[#4ECDC4] text-[#2D3436] shadow-md shadow-[#4ECDC4]/20 scale-[1.02]'
+                      ? levelCode === 'All'
+                        ? 'bg-[#4ECDC4] border-[#4ECDC4] text-[#2D3436] shadow-md shadow-[#4ECDC4]/20 scale-[1.02]'
+                        : 'scale-[1.02]'
                       : isDarkMode
                         ? 'bg-[#1E1E22] border-[#2A2A30] text-gray-400 hover:text-white hover:border-gray-500'
                         : 'bg-white border-gray-200 text-gray-600 hover:text-[#4ECDC4] hover:border-gray-300'
                   }`}
+                  style={isSelected && levelCode !== 'All' ? {
+                    backgroundColor: getLevelColor(levelCode),
+                    borderColor: getLevelColor(levelCode),
+                    color: '#ffffff',
+                    boxShadow: `0 4px 12px ${hexToRgba(getLevelColor(levelCode), 0.25)}`
+                  } : undefined}
                 >
                   {lvl}
                 </button>
@@ -779,6 +963,8 @@ export default function LibraryTab({
           </div>
         )}
       </section>
+      </>
+      )}
 
       {/* Aggregate Stats Bento */}
       <section className="grid grid-cols-2 gap-4 mb-4">

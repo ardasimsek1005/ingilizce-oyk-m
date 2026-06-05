@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Cloud, Check, RefreshCw, Crown, Sun, Moon } from 'lucide-react';
+import { Cloud, Check, RefreshCw, Crown, Sun, Moon, Heart } from 'lucide-react';
 import AppLogo from './AppLogo';
 
 interface HeaderProps {
@@ -12,6 +12,7 @@ interface HeaderProps {
   onToggleDarkMode: () => void;
   userName: string;
   userAvatar: string;
+  refillCountdown?: string;
 }
 
 export default function Header({
@@ -24,6 +25,7 @@ export default function Header({
   onToggleDarkMode,
   userName,
   userAvatar,
+  refillCountdown = '',
 }: HeaderProps) {
   const [tabTitle, setTabTitle] = useState('İngilizce Öyküm');
 
@@ -114,13 +116,21 @@ export default function Header({
       </div>
 
       {/* Centered Tab Title Sub-row */}
-      <div className="max-w-[680px] mx-auto px-5 pb-3.5 flex justify-center">
+      <div className="max-w-[680px] mx-auto px-5 pb-3.5 flex justify-center items-center relative">
         <h1 className={`font-headline-lg text-xl font-black tracking-tight relative transition-all ${
           isDarkMode ? 'text-white' : 'text-[#2D3436]'
         }`}>
           {tabTitle}
           <span className="absolute -bottom-1 left-2 right-2 h-[3px] rounded-full bg-[#FF6B6B]" />
         </h1>
+
+        {/* Lives / Refill Countdown Widget on the Right */}
+        {(currentTab === 'library' || currentTab === 'vocabulary') && !isPremium && refillCountdown && (
+          <div className="absolute right-5 flex items-center gap-1.5 text-[11px] bg-[#FF6B6B]/10 border border-[#FF6B6B]/20 text-[#FF6B6B] px-2.5 py-1 rounded-full font-bold tracking-wide shadow-3xs transition-all select-none">
+            <Heart className="w-3.5 h-3.5 fill-[#FF6B6B] text-[#FF6B6B] animate-pulse" />
+            <span className="font-mono font-extrabold">{refillCountdown}</span>
+          </div>
+        )}
       </div>
     </header>
   );

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Sparkles, Brain, Search, Volume2, Trash2, BookOpen, Bookmark, ChevronRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import { VocabularyWord } from '../types';
+import { VocabularyWord, getLevelColor, hexToRgba } from '../types';
 import { speakNative } from '../services/tts';
 
 interface VocabularyTabProps {
@@ -104,70 +104,105 @@ export default function VocabularyTab({ vocabulary, onStartQuiz, onRemoveWord, s
           {filteredVocab.length > 0 ? (
             filteredVocab.map((w, idx) => (
               <motion.div
-                initial={{ opacity: 0, y: 10 }}
+                initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.95 }}
-                transition={{ duration: 0.2, delay: Math.min(idx * 0.04, 0.4) }}
+                transition={{ duration: 0.25, delay: Math.min(idx * 0.04, 0.4) }}
                 key={w.id}
-                className={`border rounded-2xl p-5 flex justify-between items-center group transition-all duration-300 ${
+                className={`border rounded-2xl p-5 flex flex-col justify-between group transition-all duration-300 relative ${
                   isDarkMode 
-                    ? 'bg-[#1A1A1E] border-[#2A2A30] hover:border-[#FF6B6B]/60 text-white' 
-                    : 'bg-white border-[#FFE66D]/70 hover:shadow-md hover:border-[#FF6B6B]/60 text-[#2D3436]'
+                    ? 'bg-[#1A1A1E] border-[#2A2A30] hover:border-[#FF6B6B]/45 hover:shadow-[0_8px_20px_rgba(0,0,0,0.3)]' 
+                    : 'bg-white border-[#FFE66D]/50 hover:shadow-[0_10px_25px_-5px_rgba(255,107,107,0.06)] hover:border-[#FF6B6B]/45'
                 }`}
               >
-                <div className="flex-1 min-w-0 pr-4">
-                  <div className="flex items-center gap-2 mb-1.5 flex-wrap">
-                    <h3 className={`font-headline-lg text-lg font-bold truncate transition-colors ${
-                      isDarkMode ? 'text-white' : 'text-[#2D3436]'
-                    }`}>
-                      {w.word}
-                    </h3>
+                <div className="flex justify-between items-start gap-4">
+                  {/* Word & Pronunciation & Level Badge */}
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2.5 flex-wrap">
+                      <h3 className={`font-headline-lg text-lg font-black tracking-tight transition-colors ${
+                        isDarkMode ? 'text-white' : 'text-[#2D3436]'
+                      }`}>
+                        {w.word}
+                      </h3>
+                      
+                      <button
+                        onClick={(e) => speakWord(e, w.word)}
+                        className={`w-7 h-7 rounded-full flex items-center justify-center transition-all ${
+                          isDarkMode 
+                            ? 'bg-[#2A2A30] text-[#FF6B6B] hover:bg-[#FF6B6B] hover:text-white' 
+                            : 'bg-[#FF6B6B]/10 text-[#FF6B6B] hover:bg-[#FF6B6B] hover:text-white'
+                        }`}
+                        title="Sesi Dinle"
+                      >
+                        <Volume2 className="w-3.5 h-3.5" />
+                      </button>
+                    </div>
+
+                    <div className="flex items-center gap-1.5 mt-1.5">
+                      <span className="text-[11px] text-[#FF6B6B] font-extrabold tracking-wide uppercase">
+                        {w.translation}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Right side: Level Badge & Trash Button */}
+                  <div className="flex items-center gap-2.5 shrink-0">
+                    {(() => {
+                      const lvl = w.level || 'A1';
+                      const color = getLevelColor(lvl);
+                      return (
+                        <span 
+                          className="text-[9px] uppercase tracking-wider font-extrabold border px-2.5 py-0.5 rounded-full"
+                          style={{
+                            color: color,
+                            backgroundColor: hexToRgba(color, 0.1),
+                            borderColor: hexToRgba(color, 0.25)
+                          }}
+                        >
+                          {lvl}
+                        </span>
+                      );
+                    })()}
+
                     <button
-                      onClick={(e) => speakWord(e, w.word)}
-                      className={`p-1 rounded-full hover:text-[#FF6B6B] transition-colors ${
-                        isDarkMode ? 'text-gray-400 hover:bg-[#2A2A30]' : 'text-gray-400 hover:bg-[#FFE66D]/20'
+                      onClick={() => handleRemove(w.id)}
+                      className={`p-1.5 rounded-lg transition-colors cursor-pointer border ${
+                        isDarkMode 
+                          ? 'border-transparent text-gray-500 hover:text-red-400 hover:bg-red-950/15' 
+                          : 'border-transparent text-gray-450 hover:text-red-500 hover:bg-red-50'
                       }`}
-                      title="Sesi Dinle"
+                      title="Kelimeyi Sil"
                     >
-                      <Volume2 className="w-4 h-4" />
+                      <Trash2 className="w-4 h-4" />
                     </button>
                   </div>
-                  <p className="font-headline-lg text-sm text-[#FF6B6B] font-bold italic">
-                    {w.translation}
-                  </p>
-                  
-                  {/* Detailed descriptions if they exist */}
-                  {(w.exampleEn || w.notes) && (
-                    <div className={`mt-3 text-xs p-2.5 rounded-lg border transition-colors ${
-                      isDarkMode 
-                        ? 'bg-[#121214] border-[#2A2A30] text-gray-300' 
-                        : 'bg-[#FFFBF0] border-[#FFE66D]/45 text-gray-700'
-                    }`}>
-                      {w.notes && <p className="text-gray-400 font-medium mb-1">{w.notes}</p>}
-                      {w.exampleEn && (
-                        <p className="font-mono italic">
-                          "{w.exampleEn}" → <span className="text-[#FF6B6B] font-bold">{w.exampleTr}</span>
-                        </p>
-                      )}
-                    </div>
-                  )}
                 </div>
 
-                <div className="flex items-center gap-3 shrink-0">
-                  <span className="text-[10px] uppercase tracking-wide font-bold text-[#4ECDC4] bg-[#4ECDC4]/10 border border-[#4ECDC4]/30 px-2.5 py-1 rounded-full">
-                    {w.level}
-                  </span>
-                  
-                  <button
-                    onClick={() => handleRemove(w.id)}
-                    className={`p-2 rounded-full transition-colors cursor-pointer ${
-                      isDarkMode ? 'text-gray-400 hover:text-rose-500 hover:bg-white/5' : 'text-gray-450 hover:text-rose-600 hover:bg-rose-50'
-                    }`}
-                    title="Kelimeyi Sil"
-                  >
-                    <Trash2 className="w-4.5 h-4.5" />
-                  </button>
-                </div>
+                {/* Example sentence / Detailed description */}
+                {(w.exampleEn || w.notes) && (
+                  <div className={`mt-3.5 text-xs p-3 rounded-xl border-l-4 transition-colors ${
+                    isDarkMode 
+                      ? 'bg-[#121214] border-l-[#FF6B6B] border-y-[#2A2A30] border-r-[#2A2A30] text-gray-300' 
+                      : 'bg-[#FFE66D]/5 border-l-[#FF6B6B] border-y-[#FFE66D]/40 border-r-[#FFE66D]/40 text-gray-700'
+                  }`}>
+                    {w.notes && (
+                      <p className="text-[10px] text-gray-400 font-extrabold uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+                        <Bookmark className="w-3 h-3 text-[#FF6B6B]" />
+                        <span>Not: {w.notes}</span>
+                      </p>
+                    )}
+                    {w.exampleEn && (
+                      <div className="mt-1 leading-relaxed">
+                        <p className="font-semibold text-gray-700 dark:text-gray-200">
+                          {w.exampleEn}
+                        </p>
+                        <p className="text-[#FF6B6B] font-bold mt-0.5">
+                          {w.exampleTr}
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                )}
               </motion.div>
             ))
           ) : (

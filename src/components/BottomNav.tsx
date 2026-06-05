@@ -9,11 +9,14 @@ interface BottomNavProps {
 
 export default function BottomNav({ currentTab, onTabChange, isDarkMode }: BottomNavProps) {
   return (
-    <nav className={`fixed bottom-0 left-0 w-full flex justify-center items-center py-3 border-t z-50 transition-colors duration-200 backdrop-blur-md ${
-      isDarkMode 
-        ? 'bg-[#121214]/95 border-[#2A2A30] shadow-[0_-10px_25px_rgba(0,0,0,0.3)]' 
-        : 'bg-white/90 border-[#FFE66D]/80 shadow-[0_-10px_25px_rgba(255,107,107,0.04)]'
-    }`}>
+    <nav 
+      className={`fixed md:absolute bottom-0 left-0 w-full flex justify-center items-center pt-3 border-t z-50 transition-colors duration-200 backdrop-blur-md ${
+        isDarkMode 
+          ? 'bg-[#121214]/95 border-[#2A2A30] shadow-[0_-10px_25px_rgba(0,0,0,0.3)]' 
+          : 'bg-white/90 border-[#FFE66D]/80 shadow-[0_-10px_25px_rgba(255,107,107,0.04)]'
+      }`}
+      style={{ paddingBottom: 'calc(12px + env(safe-area-inset-bottom, 0px))' }}
+    >
       <div className="w-full max-w-[680px] mx-auto grid grid-cols-4 items-center px-2">
         {/* Library Tab */}
         <button
@@ -25,7 +28,7 @@ export default function BottomNav({ currentTab, onTabChange, isDarkMode }: Botto
           }`}
         >
           <BookOpen className={`w-[22px] h-[22px] mb-1 ${currentTab === 'library' ? 'stroke-[2.5]' : 'stroke-[1.5]'}`} />
-          <span className="text-[12px] font-medium tracking-wide">Kitaplık</span>
+          <span className="text-[11px] font-medium tracking-wide">Kitaplık</span>
         </button>
 
         {/* Vocabulary Tab */}
@@ -38,7 +41,7 @@ export default function BottomNav({ currentTab, onTabChange, isDarkMode }: Botto
           }`}
         >
           <BookMarked className={`w-[22px] h-[22px] mb-1 ${currentTab === 'vocabulary' || currentTab === 'quiz' ? 'stroke-[2.5]' : 'stroke-[1.5]'}`} />
-          <span className="text-[12px] font-medium tracking-wide">Kelimelerim</span>
+          <span className="text-[11px] font-medium tracking-wide">Kelimelerim</span>
         </button>
 
         {/* Favorites Tab */}
@@ -51,7 +54,7 @@ export default function BottomNav({ currentTab, onTabChange, isDarkMode }: Botto
           }`}
         >
           <Star className={`w-[22px] h-[22px] mb-1 ${currentTab === 'favorites' ? 'stroke-[2.5] fill-[#F59E0B]' : 'stroke-[1.5]'}`} />
-          <span className="text-[12px] font-medium tracking-wide">Favoriler</span>
+          <span className="text-[11px] font-medium tracking-wide">Favoriler</span>
         </button>
 
         {/* Profile Tab */}
@@ -64,7 +67,7 @@ export default function BottomNav({ currentTab, onTabChange, isDarkMode }: Botto
           }`}
         >
           <User className={`w-[22px] h-[22px] mb-1 ${currentTab === 'profile' ? 'stroke-[2.5]' : 'stroke-[1.5]'}`} />
-          <span className="text-[12px] font-medium tracking-wide">Profil</span>
+          <span className="text-[11px] font-medium tracking-wide">Profil</span>
         </button>
       </div>
     </nav>

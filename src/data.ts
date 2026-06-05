@@ -826,7 +826,7 @@ export const INITIAL_BOOKS: Book[] = ALL_RAW_STORIES.map((story) => {
   let currentWordCount = 0;
   story.en.forEach((pText) => {
     const wordsCount = pText.split(/\s+/).filter(Boolean).length;
-    if (currentGroupLength > 0 && currentWordCount >= 120) {
+    if (currentGroupLength > 0 && currentWordCount >= 130) {
       calculatedTotalPages++;
       currentGroupLength = 1;
       currentWordCount = wordsCount;
@@ -842,7 +842,7 @@ export const INITIAL_BOOKS: Book[] = ALL_RAW_STORIES.map((story) => {
   return {
     id: story.id,
     title: story.title,
-    author: story.author,
+    author: story.author === 'Antigravity' ? '' : (story.author || ''),
     level: story.level,
     levelName: LEVEL_NAMES[story.level] || `${story.level} Seviyesi`,
     coverUrl: story.coverUrl,

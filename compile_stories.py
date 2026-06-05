@@ -25,6 +25,27 @@ if os.path.exists(CLASSICS_DATA_FILE):
         expanded_stories.update(classics_stories)
         print(f"Loaded {len(classics_stories)} classics stories.")
 
+NEW_30_DATA_FILE = "new_30_stories_data.json"
+if os.path.exists(NEW_30_DATA_FILE):
+    with open(NEW_30_DATA_FILE, "r", encoding="utf-8") as f:
+        new_30_stories = json.load(f)
+        expanded_stories.update(new_30_stories)
+        print(f"Loaded {len(new_30_stories)} new 30 stories.")
+
+DAILY_STORIES_DATA_FILE = "daily_stories_data.json"
+if os.path.exists(DAILY_STORIES_DATA_FILE):
+    with open(DAILY_STORIES_DATA_FILE, "r", encoding="utf-8") as f:
+        daily_stories = json.load(f)
+        expanded_stories.update(daily_stories)
+        print(f"Loaded {len(daily_stories)} daily conversations stories.")
+
+NEW_20_DATA_FILE = "new_20_stories.json"
+if os.path.exists(NEW_20_DATA_FILE):
+    with open(NEW_20_DATA_FILE, "r", encoding="utf-8") as f:
+        new_20_stories = json.load(f)
+        expanded_stories.update(new_20_stories)
+        print(f"Loaded {len(new_20_stories)} new 20 stories from new_20_stories.json.")
+
 print(f"Loaded total of {len(expanded_stories)} expanded stories from JSON.")
 
 def format_ts_story(story):

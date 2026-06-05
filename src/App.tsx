@@ -11,12 +11,15 @@ import QuizView from './components/QuizView';
 import ProfileTab from './components/ProfileTab';
 import FavoritesTab from './components/FavoritesTab';
 import SplashScreen from './components/SplashScreen';
-import { X, Zap, Crown, Heart, Clock, Award, ChevronRight, BookOpen } from 'lucide-react';
+import { X, Zap, Crown, Heart, Clock, Award, ChevronRight, BookOpen, Shield } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 import { Book, VocabularyWord, UserStats, Badge, LeaderboardUser } from './types';
-import { INITIAL_BOOKS, INITIAL_VOCABULARY, INITIAL_BADGES, LEADERBOARD_DATA, LIBRARY_UNIQUE_WORDS_COUNT } from './data';
+import { INITIAL_BOOKS, INITIAL_VOCABULARY, INITIAL_BADGES, LEADERBOARD_DATA, LIBRARY_UNIQUE_WORDS_COUNT, GLOBAL_DICTIONARY } from './data';
+import { OFFLINE_DICTIONARY } from './dictionary';
 import { AVATAR_OPTIONS } from './avatar_assets';
+import { scheduleDailyReminder, scheduleHeartsRefilledNotification, cancelHeartsNotification } from './services/notifications';
+import { initializeBillingStore } from './services/billing';
 
 const getLocalDateString = () => {
   const d = new Date();
@@ -26,11 +29,62 @@ const getLocalDateString = () => {
   return `${year}-${month}-${day}`;
 };
 
+const healVocabulary = (vocab: VocabularyWord[]): VocabularyWord[] => {
+  if (!Array.isArray(vocab)) return [];
+  return vocab.map(item => {
+    if (!item || !item.word) return item;
+    const cleanW = item.word.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'’“”‘’\[\]{}<>|\\+]/g, "").trim();
+    const isPlaceholder = item.translation === 'Çeviriliyor...'
+      || item.translation === 'Sözlük karşılığı yükleniyor...'
+      || !item.translation
+      || item.translation.toLowerCase().trim() === cleanW;
+
+    if (isPlaceholder) {
+      const offlineEntry = OFFLINE_DICTIONARY[cleanW];
+      if (offlineEntry && offlineEntry.tr && offlineEntry.tr !== 'Çeviriliyor...' && offlineEntry.tr !== 'Sözlük karşılığı yükleniyor...') {
+        return { ...item, translation: offlineEntry.tr, notes: offlineEntry.notes || item.notes };
+      }
+      
+      const globalEntry = GLOBAL_DICTIONARY[cleanW];
+      if (globalEntry && globalEntry !== 'Çeviriliyor...' && globalEntry !== 'Sözlük karşılığı yükleniyor...') {
+        return { ...item, translation: globalEntry, notes: 'Çevrimdışı Sözlük • Düzeltildi' };
+      }
+
+      const capitalized = item.word.charAt(0).toUpperCase() + item.word.slice(1);
+      return { ...item, translation: capitalized, notes: 'Geçici Çeviri • Düzeltildi' };
+    }
+    return item;
+  });
+};
+
 const getDaysDifference = (dateStr1: string, dateStr2: string) => {
   const d1 = new Date(dateStr1 + 'T00:00:00');
   const d2 = new Date(dateStr2 + 'T00:00:00');
   const diffTime = d1.getTime() - d2.getTime();
   return Math.round(diffTime / (1000 * 60 * 60 * 24));
+};
+
+const isDifferentCalendarWeek = (dateStr1: string, dateStr2: string): boolean => {
+  try {
+    const d1 = new Date(dateStr1 + 'T00:00:00');
+    const d2 = new Date(dateStr2 + 'T00:00:00');
+    
+    // Find Monday of the week for d1
+    const day1 = d1.getDay();
+    const diffToMonday1 = day1 === 0 ? 6 : day1 - 1;
+    const monday1 = new Date(d1.getTime() - diffToMonday1 * 24 * 60 * 60 * 1000);
+    monday1.setHours(0, 0, 0, 0);
+
+    // Find Monday of the week for d2
+    const day2 = d2.getDay();
+    const diffToMonday2 = day2 === 0 ? 6 : day2 - 1;
+    const monday2 = new Date(d2.getTime() - diffToMonday2 * 24 * 60 * 60 * 1000);
+    monday2.setHours(0, 0, 0, 0);
+
+    return monday1.getTime() !== monday2.getTime();
+  } catch {
+    return true;
+  }
 };
 const getApiBase = () => {
   try {
@@ -56,20 +110,92 @@ const DEFAULT_STATS: UserStats = {
   premiumExpiryDate: null,
   premiumType: null,
   weeklyWords: [0, 0, 0, 0, 0, 0, 0],
-  weeklyMins: [0, 0, 0, 0, 0, 0, 0]
+  weeklyMins: [0, 0, 0, 0, 0, 0, 0],
+  dailyQuizzesSolvedCount: 0,
+  dailyQuizzesScoreSum: 0,
+  dailyQuizzesQuestionsSum: 0
 };
 
 const stripBooksForSync = (booksList: Book[]) => {
   if (!Array.isArray(booksList)) return [];
-  return booksList.map(b => ({
-    id: b.id,
-    currentPage: b.currentPage ?? 0,
-    isStarted: !!b.isStarted,
-    isCompleted: !!b.isCompleted,
-    isFavorited: !!b.isFavorited,
-    percentageCompleted: b.percentageCompleted ?? 0,
-    pagesLeft: b.pagesLeft ?? 0
-  }));
+  return booksList.map(b => {
+    if (b.id && b.id.startsWith('custom_book_')) {
+      return b;
+    }
+    return {
+      id: b.id,
+      currentPage: b.currentPage ?? 0,
+      isStarted: !!b.isStarted,
+      isCompleted: !!b.isCompleted,
+      isFavorited: !!b.isFavorited,
+      percentageCompleted: b.percentageCompleted ?? 0,
+      pagesLeft: b.pagesLeft ?? 0
+    };
+  });
+};
+
+const getOrInitializeDeviceUuid = (): string => {
+  try {
+    let uuid = localStorage.getItem('linguist_device_uuid') || '';
+    if (!uuid) {
+      uuid = 'web-' + Math.random().toString(36).substring(2, 15) + '-' + Math.random().toString(36).substring(2, 15);
+      localStorage.setItem('linguist_device_uuid', uuid);
+    }
+    return uuid;
+  } catch (e) {
+    return 'web-fallback';
+  }
+};
+
+const migrateLegacyNamespace = (keyPrefix: string, deviceUuid: string): string => {
+  try {
+    const targetKey = `${keyPrefix}_${deviceUuid}`;
+    const existingTarget = localStorage.getItem(targetKey);
+    
+    if (existingTarget !== null) {
+      return existingTarget;
+    }
+    
+    const legacyKeys: string[] = [];
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key && key.startsWith(`${keyPrefix}_`)) {
+        if (key !== targetKey) {
+          legacyKeys.push(key);
+        }
+      }
+    }
+    
+    let sourceKey: string | null = null;
+    
+    const emailKey = legacyKeys.find(k => k.includes('@'));
+    if (emailKey) {
+      sourceKey = emailKey;
+    } else {
+      const guestKey = legacyKeys.find(k => k.endsWith('_guest'));
+      if (guestKey) {
+        sourceKey = guestKey;
+      } else {
+        if (localStorage.getItem(keyPrefix) !== null) {
+          sourceKey = keyPrefix;
+        } else if (legacyKeys.length > 0) {
+          sourceKey = legacyKeys[0];
+        }
+      }
+    }
+    
+    if (sourceKey) {
+      const value = localStorage.getItem(sourceKey);
+      if (value !== null) {
+        console.log(`[Migration] Copying data from legacy key "${sourceKey}" to "${targetKey}"`);
+        localStorage.setItem(targetKey, value);
+        return value;
+      }
+    }
+  } catch (e) {
+    console.error('Migration error:', e);
+  }
+  return '';
 };
 
 export default function App() {
@@ -92,6 +218,7 @@ export default function App() {
   const [userEmail, setUserEmail] = useState<string | null>(() => {
     return localStorage.getItem('linguist_user_email') || null;
   });
+  const [unlockedBadgeNotify, setUnlockedBadgeNotify] = useState<{ title: string; message: string } | null>(null);
   const [deviceUuid, setDeviceUuid] = useState<string>(() => {
     return localStorage.getItem('linguist_device_uuid') || '';
   });
@@ -152,6 +279,9 @@ export default function App() {
     return saved === 'true';
   });
 
+  const [showConsent, setShowConsent] = useState<boolean>(() => localStorage.getItem('linguist_tos_accepted_v11') !== 'true');
+  const [consentChecked, setConsentChecked] = useState<boolean>(false);
+
   const toggleDarkMode = () => {
     setIsDarkMode(prev => {
       const nextVal = !prev;
@@ -162,29 +292,23 @@ export default function App() {
 
   // User customize name & avatar persistence states
   const [userName, setUserName] = useState<string>(() => {
-    const email = localStorage.getItem('linguist_user_email');
-    const ns = email ? email.toLowerCase().trim() : 'guest';
-    const local = localStorage.getItem(`linguist_user_name_${ns}`);
-    if (local === null && ns === 'guest') {
-      return localStorage.getItem('linguist_user_name') || '';
-    }
-    return local || '';
+    const uuid = getOrInitializeDeviceUuid();
+    const local = migrateLegacyNamespace('linguist_user_name', uuid);
+    if (local) return local;
+    return localStorage.getItem('linguist_user_name') || '';
   });
 
   const [userAvatar, setUserAvatar] = useState<string>(() => {
-    const email = localStorage.getItem('linguist_user_email');
-    const ns = email ? email.toLowerCase().trim() : 'guest';
-    const local = localStorage.getItem(`linguist_user_avatar_${ns}`);
-    if (local === null && ns === 'guest') {
-      return localStorage.getItem('linguist_user_avatar') || AVATAR_OPTIONS[0];
-    }
-    return local || AVATAR_OPTIONS[0];
+    const uuid = getOrInitializeDeviceUuid();
+    const local = migrateLegacyNamespace('linguist_user_avatar', uuid);
+    if (local) return local;
+    return localStorage.getItem('linguist_user_avatar') || AVATAR_OPTIONS[0];
   });
 
   const handleUpdateProfile = (name: string, avatar: string) => {
     setUserName(name);
     setUserAvatar(avatar);
-    const ns = userEmail ? userEmail.toLowerCase().trim() : 'guest';
+    const ns = deviceUuid || 'guest';
     localStorage.setItem(`linguist_user_name_${ns}`, name);
     localStorage.setItem(`linguist_user_avatar_${ns}`, avatar);
     triggerCloudSync();
@@ -192,11 +316,10 @@ export default function App() {
 
   // Persistence State Managers (Initialized from LocalStorage or Data.ts fallback templates)
   const [books, setBooks] = useState<Book[]>(() => {
-    const email = localStorage.getItem('linguist_user_email');
-    const ns = email ? email.toLowerCase().trim() : 'guest';
-    let local = localStorage.getItem(`linguist_books_v11_${ns}`);
-    if (!local && ns === 'guest') {
-      local = localStorage.getItem('linguist_books_v11');
+    const uuid = getOrInitializeDeviceUuid();
+    let local = migrateLegacyNamespace('linguist_books_v11', uuid);
+    if (!local) {
+      local = localStorage.getItem('linguist_books_v11') || '';
     }
     let parsedBooks: Book[] = [];
     if (local) {
@@ -237,33 +360,34 @@ export default function App() {
         };
       }
     });
-    return merged;
+    return merged.filter(b => 
+      INITIAL_BOOKS.some(init => init.id === b.id) || 
+      (b.title && b.level && b.chapters && b.chapters.length > 0)
+    );
   });
 
   const [vocabulary, setVocabulary] = useState<VocabularyWord[]>(() => {
-    const email = localStorage.getItem('linguist_user_email');
-    const ns = email ? email.toLowerCase().trim() : 'guest';
-    let local = localStorage.getItem(`linguist_vocabulary_v11_${ns}`);
-    if (!local && ns === 'guest') {
-      local = localStorage.getItem('linguist_vocabulary_v11');
+    const uuid = getOrInitializeDeviceUuid();
+    let local = migrateLegacyNamespace('linguist_vocabulary_v11', uuid);
+    if (!local) {
+      local = localStorage.getItem('linguist_vocabulary_v11') || '';
     }
     if (local) {
       try {
         const parsed = JSON.parse(local);
-        return Array.isArray(parsed) ? parsed : INITIAL_VOCABULARY;
+        return healVocabulary(Array.isArray(parsed) ? parsed : INITIAL_VOCABULARY);
       } catch (e) {
-        return INITIAL_VOCABULARY;
+        return healVocabulary(INITIAL_VOCABULARY);
       }
     }
-    return INITIAL_VOCABULARY;
+    return healVocabulary(INITIAL_VOCABULARY);
   });
 
   const [badges, setBadges] = useState<Badge[]>(() => {
-    const email = localStorage.getItem('linguist_user_email');
-    const ns = email ? email.toLowerCase().trim() : 'guest';
-    let local = localStorage.getItem(`linguist_badges_v11_${ns}`);
-    if (!local && ns === 'guest') {
-      local = localStorage.getItem('linguist_badges_v11');
+    const uuid = getOrInitializeDeviceUuid();
+    let local = migrateLegacyNamespace('linguist_badges_v11', uuid);
+    if (!local) {
+      local = localStorage.getItem('linguist_badges_v11') || '';
     }
     if (local) {
       try {
@@ -282,11 +406,10 @@ export default function App() {
   });
 
   const [stats, setStats] = useState<UserStats>(() => {
-    const email = localStorage.getItem('linguist_user_email');
-    const ns = email ? email.toLowerCase().trim() : 'guest';
-    let local = localStorage.getItem(`linguist_stats_v11_${ns}`);
-    if (!local && ns === 'guest') {
-      local = localStorage.getItem('linguist_stats_v11');
+    const uuid = getOrInitializeDeviceUuid();
+    let local = migrateLegacyNamespace('linguist_stats_v11', uuid);
+    if (!local) {
+      local = localStorage.getItem('linguist_stats_v11') || '';
     }
     if (local) {
       try {
@@ -312,17 +435,17 @@ export default function App() {
   });
 
   const [lastActiveBookId, setLastActiveBookId] = useState<string | null>(() => {
-    const email = localStorage.getItem('linguist_user_email');
-    const ns = email ? email.toLowerCase().trim() : 'guest';
-    let local = localStorage.getItem(`linguist_last_active_book_id_${ns}`);
-    if (!local && ns === 'guest') {
-      local = localStorage.getItem('linguist_last_active_book_id');
+    const uuid = getOrInitializeDeviceUuid();
+    let local = migrateLegacyNamespace('linguist_last_active_book_id', uuid);
+    if (!local) {
+      local = localStorage.getItem('linguist_last_active_book_id') || '';
     }
     return local || null;
   });
 
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [refillCountdown, setRefillCountdown] = useState<string>('');
+  const [focusedCategory, setFocusedCategory] = useState<string | null>(null);
 
   // Dynamic reset effect: ensures all statistics of old visitors are strictly cleared and reset to 0
   useEffect(() => {
@@ -356,12 +479,21 @@ export default function App() {
         unlockedAt: undefined
       }));
 
+      const uuid = getOrInitializeDeviceUuid();
       localStorage.setItem('linguist_stats_v11', JSON.stringify(zeroedStats));
       localStorage.setItem('linguist_books_v11', JSON.stringify(stripBooksForSync(zeroedBooks)));
       localStorage.setItem('linguist_vocabulary_v11', JSON.stringify([]));
       localStorage.setItem('linguist_badges_v11', JSON.stringify(zeroedBadges));
       localStorage.setItem('linguist_reset_stats_to_zero_v11', 'true');
       localStorage.setItem('linguist_last_active_book_id', '');
+
+      if (uuid) {
+        localStorage.setItem(`linguist_stats_v11_${uuid}`, JSON.stringify(zeroedStats));
+        localStorage.setItem(`linguist_books_v11_${uuid}`, JSON.stringify(stripBooksForSync(zeroedBooks)));
+        localStorage.setItem(`linguist_vocabulary_v11_${uuid}`, JSON.stringify([]));
+        localStorage.setItem(`linguist_badges_v11_${uuid}`, JSON.stringify(zeroedBadges));
+        localStorage.setItem(`linguist_last_active_book_id_${uuid}`, '');
+      }
 
       setStats(zeroedStats);
       setLastActiveBookId(null);
@@ -371,14 +503,11 @@ export default function App() {
     }
   }, []);
 
-  const loadUserData = (email: string | null) => {
-    const ns = email ? email.toLowerCase().trim() : 'guest';
+  const loadUserData = (uuid: string) => {
+    if (!uuid) return;
     
     // 1. Stats
-    let statsLocal = localStorage.getItem(`linguist_stats_v11_${ns}`);
-    if (!statsLocal && ns === 'guest') {
-      statsLocal = localStorage.getItem('linguist_stats_v11');
-    }
+    let statsLocal = localStorage.getItem(`linguist_stats_v11_${uuid}`);
     let loadedStats = DEFAULT_STATS;
     if (statsLocal) {
       try {
@@ -391,10 +520,7 @@ export default function App() {
     });
 
     // 2. Books
-    let booksLocal = localStorage.getItem(`linguist_books_v11_${ns}`);
-    if (!booksLocal && ns === 'guest') {
-      booksLocal = localStorage.getItem('linguist_books_v11');
-    }
+    let booksLocal = localStorage.getItem(`linguist_books_v11_${uuid}`);
     let parsedBooks: Book[] = [];
     if (booksLocal) {
       try {
@@ -429,13 +555,14 @@ export default function App() {
         };
       }
     });
-    setBooks(merged);
+    const filteredMerged = merged.filter(b => 
+      INITIAL_BOOKS.some(init => init.id === b.id) || 
+      (b.title && b.level && b.chapters && b.chapters.length > 0)
+    );
+    setBooks(filteredMerged);
 
     // 3. Vocabulary
-    let vocabLocal = localStorage.getItem(`linguist_vocabulary_v11_${ns}`);
-    if (!vocabLocal && ns === 'guest') {
-      vocabLocal = localStorage.getItem('linguist_vocabulary_v11');
-    }
+    let vocabLocal = localStorage.getItem(`linguist_vocabulary_v11_${uuid}`);
     let loadedVocab = INITIAL_VOCABULARY;
     if (vocabLocal) {
       try {
@@ -443,18 +570,20 @@ export default function App() {
         if (Array.isArray(parsed)) loadedVocab = parsed;
       } catch (e) {}
     }
-    setVocabulary(loadedVocab);
+    setVocabulary(healVocabulary(loadedVocab));
 
     // 4. Badges
-    let badgesLocal = localStorage.getItem(`linguist_badges_v11_${ns}`);
-    if (!badgesLocal && ns === 'guest') {
-      badgesLocal = localStorage.getItem('linguist_badges_v11');
-    }
+    let badgesLocal = localStorage.getItem(`linguist_badges_v11_${uuid}`);
     let loadedBadges = INITIAL_BADGES;
     if (badgesLocal) {
       try {
         const parsed = JSON.parse(badgesLocal);
-        if (Array.isArray(parsed)) loadedBadges = parsed;
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          loadedBadges = INITIAL_BADGES.map(ib => {
+            const match = parsed.find((p: any) => p.id === ib.id);
+            return match ? { ...ib, unlocked: !!match.unlocked, unlockedAt: match.unlockedAt } : ib;
+          });
+        }
       } catch (e) {}
     }
     setBadges(loadedBadges.map(b => ({
@@ -463,74 +592,76 @@ export default function App() {
     })));
 
     // 5. User Name & Avatar
-    let nameLocal = localStorage.getItem(`linguist_user_name_${ns}`);
-    if (!nameLocal && ns === 'guest') {
-      nameLocal = localStorage.getItem('linguist_user_name');
-    }
+    let nameLocal = localStorage.getItem(`linguist_user_name_${uuid}`);
     setUserName(nameLocal || '');
 
-    let avatarLocal = localStorage.getItem(`linguist_user_avatar_${ns}`);
-    if (!avatarLocal && ns === 'guest') {
-      avatarLocal = localStorage.getItem('linguist_user_avatar');
-    }
+    let avatarLocal = localStorage.getItem(`linguist_user_avatar_${uuid}`);
     setUserAvatar(avatarLocal || AVATAR_OPTIONS[0]);
 
     // 6. Last Active Book ID
-    let activeBookLocal = localStorage.getItem(`linguist_last_active_book_id_${ns}`);
-    if (!activeBookLocal && ns === 'guest') {
-      activeBookLocal = localStorage.getItem('linguist_last_active_book_id');
-    }
+    let activeBookLocal = localStorage.getItem(`linguist_last_active_book_id_${uuid}`);
     setLastActiveBookId(activeBookLocal || null);
   };
 
   const isFirstMount = useRef(true);
-  useEffect(() => {
-    if (isFirstMount.current) {
-      isFirstMount.current = false;
-      return;
+  const mainScrollRef = useRef<HTMLDivElement | null>(null);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    if (mainScrollRef.current) {
+      mainScrollRef.current.scrollTop = 0;
     }
-    loadUserData(userEmail);
-  }, [userEmail]);
+  };
+
+  useEffect(() => {
+    scrollToTop();
+  }, [currentTab, focusedCategory]);
+
+  useEffect(() => {
+    if (deviceUuid) {
+      loadUserData(deviceUuid);
+    }
+  }, [deviceUuid]);
 
   // Automatically save to local persistence whenever states modify
   useEffect(() => {
-    const ns = userEmail ? userEmail.toLowerCase().trim() : 'guest';
-    localStorage.setItem(`linguist_books_v11_${ns}`, JSON.stringify(stripBooksForSync(books)));
-  }, [books, userEmail]);
+    if (!deviceUuid) return;
+    localStorage.setItem(`linguist_books_v11_${deviceUuid}`, JSON.stringify(stripBooksForSync(books)));
+  }, [books, deviceUuid]);
 
   useEffect(() => {
-    const ns = userEmail ? userEmail.toLowerCase().trim() : 'guest';
-    localStorage.setItem(`linguist_vocabulary_v11_${ns}`, JSON.stringify(vocabulary));
-  }, [vocabulary, userEmail]);
+    if (!deviceUuid) return;
+    localStorage.setItem(`linguist_vocabulary_v11_${deviceUuid}`, JSON.stringify(vocabulary));
+  }, [vocabulary, deviceUuid]);
 
   useEffect(() => {
-    const ns = userEmail ? userEmail.toLowerCase().trim() : 'guest';
-    localStorage.setItem(`linguist_badges_v11_${ns}`, JSON.stringify(badges));
-  }, [badges, userEmail]);
+    if (!deviceUuid) return;
+    localStorage.setItem(`linguist_badges_v11_${deviceUuid}`, JSON.stringify(badges));
+  }, [badges, deviceUuid]);
 
   useEffect(() => {
-    const ns = userEmail ? userEmail.toLowerCase().trim() : 'guest';
-    localStorage.setItem(`linguist_stats_v11_${ns}`, JSON.stringify(stats));
-  }, [stats, userEmail]);
+    if (!deviceUuid) return;
+    localStorage.setItem(`linguist_stats_v11_${deviceUuid}`, JSON.stringify(stats));
+  }, [stats, deviceUuid]);
 
   useEffect(() => {
-    const ns = userEmail ? userEmail.toLowerCase().trim() : 'guest';
-    localStorage.setItem(`linguist_user_name_${ns}`, userName);
-  }, [userName, userEmail]);
+    if (!deviceUuid) return;
+    localStorage.setItem(`linguist_user_name_${deviceUuid}`, userName);
+  }, [userName, deviceUuid]);
 
   useEffect(() => {
-    const ns = userEmail ? userEmail.toLowerCase().trim() : 'guest';
-    localStorage.setItem(`linguist_user_avatar_${ns}`, userAvatar);
-  }, [userAvatar, userEmail]);
+    if (!deviceUuid) return;
+    localStorage.setItem(`linguist_user_avatar_${deviceUuid}`, userAvatar);
+  }, [userAvatar, deviceUuid]);
 
   useEffect(() => {
-    const ns = userEmail ? userEmail.toLowerCase().trim() : 'guest';
+    if (!deviceUuid) return;
     if (lastActiveBookId) {
-      localStorage.setItem(`linguist_last_active_book_id_${ns}`, lastActiveBookId);
+      localStorage.setItem(`linguist_last_active_book_id_${deviceUuid}`, lastActiveBookId);
     } else {
-      localStorage.removeItem(`linguist_last_active_book_id_${ns}`);
+      localStorage.removeItem(`linguist_last_active_book_id_${deviceUuid}`);
     }
-  }, [lastActiveBookId, userEmail]);
+  }, [lastActiveBookId, deviceUuid]);
 
   // Show splash screen for 3 seconds on app startup
   useEffect(() => {
@@ -540,10 +671,23 @@ export default function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  // Keep refs of state updated for hardware back button handler to avoid re-registration leaks
+  // Synchronize stats.learnedWordsCount to vocabulary.length on mount and when vocabulary changes
+  useEffect(() => {
+    if (stats && vocabulary) {
+      if (stats.learnedWordsCount !== vocabulary.length) {
+        setStats(prev => ({
+          ...prev,
+          learnedWordsCount: vocabulary.length,
+          wordGoalPercent: Math.min(Math.round((vocabulary.length / LIBRARY_UNIQUE_WORDS_COUNT) * 100), 100)
+        }));
+      }
+    }
+  }, [vocabulary.length]);
+
   const activeReadingBookRef = useRef(activeReadingBook);
   const currentTabRef = useRef(currentTab);
   const showExitConfirmRef = useRef(showExitConfirm);
+  const focusedCategoryRef = useRef(focusedCategory);
 
   useEffect(() => {
     activeReadingBookRef.current = activeReadingBook;
@@ -558,6 +702,10 @@ export default function App() {
     showExitConfirmRef.current = showExitConfirm;
   }, [showExitConfirm]);
 
+  useEffect(() => {
+    focusedCategoryRef.current = focusedCategory;
+  }, [focusedCategory]);
+
   // Android hardware back button handler (Single registration, ref-based to avoid leaks)
   useEffect(() => {
     const handleBackButton = () => {
@@ -571,6 +719,12 @@ export default function App() {
       if (activeReadingBookRef.current) {
         setActiveReadingBook(null);
         setSearchQuery('');
+        return;
+      }
+
+      // 2.5 If inside a focused category → close the category view (go back to main library)
+      if (focusedCategoryRef.current) {
+        setFocusedCategory(null);
         return;
       }
 
@@ -620,6 +774,9 @@ export default function App() {
       }
       
       setDeviceUuid(uuid);
+
+      // Schedule daily reminder on startup
+      scheduleDailyReminder();
 
       // Perform auto-login if the user is not logged in yet
       const currentEmail = localStorage.getItem('linguist_user_email') || userEmail;
@@ -698,7 +855,7 @@ export default function App() {
     return () => clearTimeout(delayDebounce);
   }, [userEmail, stats, books, vocabulary, badges, userName, userAvatar, loginProvider, linkedProviders]);
 
-  // Daily Streak check useEffect
+  // Daily Streak and Weekly Progress check useEffect
   useEffect(() => {
     const isResetDone = localStorage.getItem('linguist_reset_stats_to_zero_v11');
     if (!isResetDone) return; 
@@ -712,22 +869,61 @@ export default function App() {
         return {
           ...current,
           dailyStreak: 1,
-          lastActiveDate: todayStr
+          lastActiveDate: todayStr,
+          weeklyWords: [0, 0, 0, 0, 0, 0, 0],
+          weeklyMins: [0, 0, 0, 0, 0, 0, 0]
         };
       }
 
       const diff = getDaysDifference(todayStr, lastActive);
+      
+      let newWeeklyWords = current.weeklyWords ? [...current.weeklyWords] : [0, 0, 0, 0, 0, 0, 0];
+      let newWeeklyMins = current.weeklyMins ? [...current.weeklyMins] : [0, 0, 0, 0, 0, 0, 0];
+
+      if (isDifferentCalendarWeek(todayStr, lastActive) || diff >= 7) {
+        // Clear all weekly stats for a new calendar week
+        newWeeklyWords = [0, 0, 0, 0, 0, 0, 0];
+        newWeeklyMins = [0, 0, 0, 0, 0, 0, 0];
+      } else if (diff > 0) {
+        // Same week but new day, clear stats for elapsed days since lastActive
+        const d1 = new Date(lastActive + 'T00:00:00');
+        const day1 = d1.getDay();
+        const lastIdx = day1 === 0 ? 6 : day1 - 1;
+
+        const d2 = new Date(todayStr + 'T00:00:00');
+        const day2 = d2.getDay();
+        const todayIdx = day2 === 0 ? 6 : day2 - 1;
+
+        // Clear all days starting from the day after lastIdx up to todayIdx
+        let tempIdx = lastIdx;
+        while (tempIdx !== todayIdx) {
+          tempIdx = (tempIdx + 1) % 7;
+          newWeeklyWords[tempIdx] = 0;
+          newWeeklyMins[tempIdx] = 0;
+        }
+      }
+
       if (diff === 1) {
         return {
           ...current,
           dailyStreak: (current.dailyStreak || 0) + 1,
-          lastActiveDate: todayStr
+          lastActiveDate: todayStr,
+          weeklyWords: newWeeklyWords,
+          weeklyMins: newWeeklyMins,
+          dailyQuizzesSolvedCount: 0,
+          dailyQuizzesScoreSum: 0,
+          dailyQuizzesQuestionsSum: 0
         };
       } else if (diff > 1) {
         return {
           ...current,
           dailyStreak: 1,
-          lastActiveDate: todayStr
+          lastActiveDate: todayStr,
+          weeklyWords: newWeeklyWords,
+          weeklyMins: newWeeklyMins,
+          dailyQuizzesSolvedCount: 0,
+          dailyQuizzesScoreSum: 0,
+          dailyQuizzesQuestionsSum: 0
         };
       } else if (diff < 0) {
         // Clock skew / timezone difference, update active date but keep streak
@@ -736,7 +932,11 @@ export default function App() {
           lastActiveDate: todayStr
         };
       }
-      return current; // diff === 0, no changes needed
+      return {
+        ...current,
+        weeklyWords: newWeeklyWords,
+        weeklyMins: newWeeklyMins
+      }; // diff === 0, no changes needed
     });
   }, []);
 
@@ -779,13 +979,15 @@ export default function App() {
     checkAndUnlock('b14', (stats.dailyStreak || 0) >= 5);
     // b15: Efsanevi Okur (Toplam 500 dakika okuma süresine ulaş)
     checkAndUnlock('b15', (stats.totalTimeMinutes || 0) >= 500);
-  }, [stats?.completedBooksCount, stats?.dailyStreak, stats?.totalTimeMinutes, vocabulary.length, books, badges]);
+    // b5: Premium Üye — retroactively unlock if user already has premium
+    checkAndUnlock('b5', !!stats.isPremium);
+  }, [stats?.completedBooksCount, stats?.dailyStreak, stats?.totalTimeMinutes, stats?.isPremium, vocabulary.length, books, badges]);
 
   // Heart regeneration mechanism: 1 heart every 1 hour (3600000 ms), capped at 5
   useEffect(() => {
     const checkAndRefillHearts = () => {
       if (stats.isPremium) return;
-      const ns = userEmail ? userEmail.toLowerCase().trim() : 'guest';
+      const ns = deviceUuid || 'guest';
       if (stats.hearts >= 5) {
         localStorage.setItem(`linguist_last_heart_refill_${ns}`, String(Date.now()));
         return;
@@ -796,7 +998,11 @@ export default function App() {
       if (!lastRefillStr && ns === 'guest') {
         lastRefillStr = localStorage.getItem('linguist_last_heart_refill');
       }
-      const lastRefill = Number(lastRefillStr || now);
+      if (!lastRefillStr) {
+        lastRefillStr = String(now);
+        localStorage.setItem(`linguist_last_heart_refill_${ns}`, lastRefillStr);
+      }
+      const lastRefill = Number(lastRefillStr);
       const oneHour = 60 * 60 * 1000;
       const elapsedTime = now - lastRefill;
 
@@ -821,7 +1027,7 @@ export default function App() {
     // Run every 10 seconds to check regeneration countdown
     const interval = setInterval(checkAndRefillHearts, 10000);
     return () => clearInterval(interval);
-  }, [stats.hearts, stats.isPremium]);
+  }, [stats.hearts, stats.isPremium, deviceUuid]);
 
   // Check premium subscription expiry periodically
   useEffect(() => {
@@ -849,18 +1055,24 @@ export default function App() {
 
   // Heart refill countdown calculation (namespace-aware)
   useEffect(() => {
+    if (stats.isPremium || stats.hearts === undefined || stats.hearts === null || Number(stats.hearts) >= 5) {
+      setRefillCountdown('');
+      return;
+    }
+
+    const ns = deviceUuid || 'guest';
+    let lastRefillStr = localStorage.getItem(`linguist_last_heart_refill_${ns}`);
+    if (!lastRefillStr && ns === 'guest') {
+      lastRefillStr = localStorage.getItem('linguist_last_heart_refill');
+    }
+    if (!lastRefillStr) {
+      lastRefillStr = String(Date.now());
+      localStorage.setItem(`linguist_last_heart_refill_${ns}`, lastRefillStr);
+    }
+    const lastRefill = Number(lastRefillStr);
+
     const updateCountdown = () => {
-      if (stats.isPremium || stats.hearts === undefined || stats.hearts === null || Number(stats.hearts) >= 5) {
-        setRefillCountdown('');
-        return;
-      }
-      const ns = userEmail ? userEmail.toLowerCase().trim() : 'guest';
       const now = Date.now();
-      let lastRefillStr = localStorage.getItem(`linguist_last_heart_refill_${ns}`);
-      if (!lastRefillStr && ns === 'guest') {
-        lastRefillStr = localStorage.getItem('linguist_last_heart_refill');
-      }
-      const lastRefill = Number(lastRefillStr || now);
       const oneHour = 60 * 60 * 1000;
       const elapsedTime = now - lastRefill;
       const timeRemaining = Math.max(0, oneHour - elapsedTime);
@@ -873,7 +1085,83 @@ export default function App() {
     updateCountdown();
     const interval = setInterval(updateCountdown, 1000);
     return () => clearInterval(interval);
-  }, [stats.hearts, stats.isPremium, userEmail]);
+  }, [stats.hearts, stats.isPremium, deviceUuid]);
+
+  // Schedule or cancel hearts refilled notification based on current state
+  useEffect(() => {
+    if (stats.isPremium) {
+      cancelHeartsNotification();
+      return;
+    }
+
+    const ns = deviceUuid || 'guest';
+    let lastRefillStr = localStorage.getItem(`linguist_last_heart_refill_${ns}`);
+    if (!lastRefillStr && ns === 'guest') {
+      lastRefillStr = localStorage.getItem('linguist_last_heart_refill');
+    }
+    const lastRefill = lastRefillStr ? Number(lastRefillStr) : Date.now();
+    scheduleHeartsRefilledNotification(stats.hearts, lastRefill);
+  }, [stats.hearts, stats.isPremium, deviceUuid]);
+
+  // Auto-close unlocked badge notification after 2 seconds
+  useEffect(() => {
+    if (unlockedBadgeNotify) {
+      const timer = setTimeout(() => {
+        setUnlockedBadgeNotify(null);
+      }, 2000);
+      return () => clearTimeout(timer);
+    }
+  }, [unlockedBadgeNotify]);
+
+  // Check daily goals completion and trigger notifications (once per day per goal)
+  useEffect(() => {
+    const day = new Date().getDay();
+    const dayIndex = day === 0 ? 6 : day - 1;
+    const todayStr = new Date().toISOString().split('T')[0];
+
+    const todayMins = stats.weeklyMins ? stats.weeklyMins[dayIndex] || 0 : 0;
+    const todayWords = stats.weeklyWords ? stats.weeklyWords[dayIndex] || 0 : 0;
+    const solvedQuizzes = stats.dailyQuizzesSolvedCount || 0;
+    const scoreSum = stats.dailyQuizzesScoreSum || 0;
+    const questionsSum = stats.dailyQuizzesQuestionsSum || 0;
+
+    // 1. Reading Time Goal (20 minutes)
+    if (todayMins >= 20) {
+      const key = `linguist_goal_notify_time_${todayStr}`;
+      if (!localStorage.getItem(key)) {
+        localStorage.setItem(key, 'true');
+        setUnlockedBadgeNotify({
+          title: 'GÜNLÜK HEDEF TAMAMLANDI! 🏆',
+          message: 'Tebrikler, günlük 20 dakika okuma hedefine ulaştın! 📚🔥'
+        });
+      }
+    }
+
+    // 2. Word Saving Goal (10 words)
+    if (todayWords >= 10) {
+      const key = `linguist_goal_notify_word_${todayStr}`;
+      if (!localStorage.getItem(key)) {
+        localStorage.setItem(key, 'true');
+        setUnlockedBadgeNotify({
+          title: 'GÜNLÜK HEDEF TAMAMLANDI! 🏆',
+          message: 'Tebrikler, bugün 10 yeni kelime kaydetme hedefine ulaştın! 📝✨'
+        });
+      }
+    }
+
+    // 3. Quiz Success Goal (5 quizzes solved)
+    if (solvedQuizzes >= 5) {
+      const key = `linguist_goal_notify_quiz_${todayStr}`;
+      if (!localStorage.getItem(key)) {
+        localStorage.setItem(key, 'true');
+        const avg = questionsSum > 0 ? Math.round((scoreSum / questionsSum) * 100) : 0;
+        setUnlockedBadgeNotify({
+          title: 'GÜNLÜK HEDEF TAMAMLANDI! 🏆',
+          message: `Tebrikler, 5 quizi tamamladın! Günlük Başarı Ortalaman: %${avg} 🎯`
+        });
+      }
+    }
+  }, [stats.weeklyMins, stats.weeklyWords, stats.dailyQuizzesSolvedCount, stats.dailyQuizzesScoreSum, stats.dailyQuizzesQuestionsSum]);
 
   // Helper to determine the current day index (0 = Monday, 6 = Sunday)
   const getTodayIndex = () => {
@@ -1020,35 +1308,83 @@ export default function App() {
         })
         .then(resData => {
           setSyncStatus('synced');
+          
+          let mergedStats = { ...stats };
+          let mergedBooks = [...books];
+          let mergedVocabulary = [...vocabulary];
+          let mergedBadges = [...badges];
+          let mergedName = userName || finalName;
+          let mergedAvatar = userAvatar && userAvatar !== AVATAR_OPTIONS[0] ? userAvatar : finalAvatar;
+
           if (resData.found && resData.data) {
             const cloud = resData.data;
             
+            // 1. Stats
             if (cloud.stats) {
+              const cloudStats = { ...cloud.stats };
               const todayStr = getLocalDateString();
-              const lastActive = cloud.stats.lastActiveDate;
-              let finalStats = { ...cloud.stats };
+              const lastActive = cloudStats.lastActiveDate;
 
               if (!lastActive) {
-                finalStats.dailyStreak = 1;
-                finalStats.lastActiveDate = todayStr;
+                cloudStats.dailyStreak = 1;
+                cloudStats.lastActiveDate = todayStr;
               } else {
                 const diff = getDaysDifference(todayStr, lastActive);
                 if (diff === 1) {
-                  finalStats.dailyStreak = finalStats.dailyStreak + 1;
-                  finalStats.lastActiveDate = todayStr;
+                  cloudStats.dailyStreak = (cloudStats.dailyStreak || 0) + 1;
+                  cloudStats.lastActiveDate = todayStr;
                 } else if (diff > 1) {
-                  finalStats.dailyStreak = 1;
-                  finalStats.lastActiveDate = todayStr;
+                  cloudStats.dailyStreak = 1;
+                  cloudStats.lastActiveDate = todayStr;
                 } else if (diff < 0) {
-                  finalStats.lastActiveDate = todayStr;
+                  cloudStats.lastActiveDate = todayStr;
                 }
               }
 
-              setStats(finalStats);
-              localStorage.setItem(`linguist_stats_v11_${finalEmail}`, JSON.stringify(finalStats));
+              const mergeWeekly = (arr1: number[] = [], arr2: number[] = []): number[] => {
+                const mergedArr = [];
+                for (let i = 0; i < 7; i++) {
+                  mergedArr.push(Math.max(Number(arr1[i] || 0), Number(arr2[i] || 0)));
+                }
+                return mergedArr;
+              };
+
+              let lastActiveDate = stats.lastActiveDate || cloudStats.lastActiveDate || todayStr;
+              if (stats.lastActiveDate && cloudStats.lastActiveDate) {
+                lastActiveDate = new Date(stats.lastActiveDate).getTime() > new Date(cloudStats.lastActiveDate).getTime()
+                  ? stats.lastActiveDate
+                  : cloudStats.lastActiveDate;
+              }
+
+              const isPremium = !!(stats.isPremium || cloudStats.isPremium);
+              let premiumExpiryDate = stats.premiumExpiryDate || cloudStats.premiumExpiryDate;
+              if (stats.premiumExpiryDate && cloudStats.premiumExpiryDate) {
+                premiumExpiryDate = new Date(stats.premiumExpiryDate).getTime() > new Date(cloudStats.premiumExpiryDate).getTime()
+                  ? stats.premiumExpiryDate
+                  : cloudStats.premiumExpiryDate;
+              }
+
+              mergedStats = {
+                ...DEFAULT_STATS,
+                ...cloudStats,
+                ...stats,
+                isPremium,
+                premiumExpiryDate,
+                premiumType: stats.premiumType || cloudStats.premiumType || null,
+                dailyStreak: Math.max(stats.dailyStreak || 0, cloudStats.dailyStreak || 0),
+                completedBooksCount: Math.max(stats.completedBooksCount || 0, cloudStats.completedBooksCount || 0),
+                totalTimeMinutes: Math.max(stats.totalTimeMinutes || 0, cloudStats.totalTimeMinutes || 0),
+                learnedWordsCount: Math.max(stats.learnedWordsCount || 0, cloudStats.learnedWordsCount || 0),
+                hearts: isPremium ? 5 : Math.max(stats.hearts ?? 5, cloudStats.hearts ?? 5),
+                weeklyWords: mergeWeekly(stats.weeklyWords, cloudStats.weeklyWords),
+                weeklyMins: mergeWeekly(stats.weeklyMins, cloudStats.weeklyMins),
+                lastActiveDate
+              };
             }
+
+            // 2. Books
             if (cloud.books) {
-              const sanitizedParsed = Array.isArray(cloud.books) ? cloud.books.filter(Boolean).map((b: any) => ({
+              const sanitizedCloudBooks = Array.isArray(cloud.books) ? cloud.books.filter(Boolean).map((b: any) => ({
                 ...b,
                 percentageCompleted: typeof b.percentageCompleted === 'number' ? b.percentageCompleted : 0,
                 currentPage: typeof b.currentPage === 'number' ? b.currentPage : 0,
@@ -1058,80 +1394,132 @@ export default function App() {
                 isFavorited: !!b.isFavorited,
                 isStarted: !!b.isStarted
               })) : [];
-              
-              const merged: Book[] = [...sanitizedParsed];
-              INITIAL_BOOKS.forEach(initBook => {
-                const existingIdx = merged.findIndex(b => b.id === initBook.id);
-                if (existingIdx === -1) {
-                  merged.push(initBook);
+
+              const mergedList = [...books];
+              sanitizedCloudBooks.forEach(cb => {
+                const idx = mergedList.findIndex(b => b.id === cb.id);
+                if (idx === -1) {
+                  mergedList.push(cb);
                 } else {
-                  merged[existingIdx] = {
-                    ...initBook,
-                    percentageCompleted: merged[existingIdx].percentageCompleted ?? 0,
-                    currentPage: merged[existingIdx].currentPage ?? 0,
-                    pagesLeft: merged[existingIdx].pagesLeft ?? initBook.totalPages,
-                    isCompleted: !!merged[existingIdx].isCompleted,
-                    isFavorited: !!merged[existingIdx].isFavorited,
-                    isStarted: !!merged[existingIdx].isStarted
+                  const lb = mergedList[idx];
+                  const isCompleted = lb.isCompleted || cb.isCompleted;
+                  const isStarted = lb.isStarted || cb.isStarted;
+                  const isFavorited = lb.isFavorited || cb.isFavorited;
+                  const currentPage = Math.max(lb.currentPage || 0, cb.currentPage || 0);
+                  const percentageCompleted = Math.max(lb.percentageCompleted || 0, cb.percentageCompleted || 0);
+                  const totalPages = lb.totalPages || cb.totalPages || 0;
+                  const pagesLeft = totalPages ? Math.max(0, totalPages - currentPage) : 0;
+
+                  mergedList[idx] = {
+                    ...lb,
+                    ...cb,
+                    isCompleted,
+                    isStarted,
+                    isFavorited,
+                    currentPage,
+                    percentageCompleted,
+                    totalPages,
+                    pagesLeft
                   };
                 }
               });
-              setBooks(merged);
-              localStorage.setItem(`linguist_books_v11_${finalEmail}`, JSON.stringify(stripBooksForSync(merged)));
+              mergedBooks = mergedList;
             }
-            if (cloud.vocabulary) {
-              setVocabulary(cloud.vocabulary);
-              localStorage.setItem(`linguist_vocabulary_v11_${finalEmail}`, JSON.stringify(cloud.vocabulary));
+
+            // 3. Vocabulary
+            if (cloud.vocabulary && Array.isArray(cloud.vocabulary)) {
+              const vocabMap = new Map<string, VocabularyWord>();
+              vocabulary.forEach(w => vocabMap.set(w.word.toLowerCase().trim(), w));
+              cloud.vocabulary.forEach(w => {
+                if (w && w.word) {
+                  const key = w.word.toLowerCase().trim();
+                  if (!vocabMap.has(key)) {
+                    vocabMap.set(key, w);
+                  }
+                }
+              });
+              mergedVocabulary = Array.from(vocabMap.values());
             }
-            if (cloud.badges) {
-              setBadges(cloud.badges);
-              localStorage.setItem(`linguist_badges_v11_${finalEmail}`, JSON.stringify(cloud.badges));
+
+            // 4. Badges
+            if (cloud.badges && Array.isArray(cloud.badges)) {
+              mergedBadges = INITIAL_BADGES.map(ib => {
+                const localMatch = badges.find(b => b.id === ib.id);
+                const cloudMatch = cloud.badges.find((p: any) => p.id === ib.id);
+                const unlocked = !!(localMatch?.unlocked || cloudMatch?.unlocked);
+                const unlockedAt = localMatch?.unlockedAt || cloudMatch?.unlockedAt;
+                return { ...ib, unlocked, unlockedAt };
+              });
             }
+
+            // 5. Name / Avatar
             if (cloud.userName) {
-              setUserName(cloud.userName);
-              localStorage.setItem(`linguist_user_name_${finalEmail}`, cloud.userName);
+              mergedName = cloud.userName;
             }
             if (cloud.userAvatar) {
-              setUserAvatar(cloud.userAvatar);
-              localStorage.setItem(`linguist_user_avatar_${finalEmail}`, cloud.userAvatar);
+              mergedAvatar = cloud.userAvatar;
             }
-            const activeProvider = provider || localStorage.getItem('linguist_login_provider') || cloud.loginProvider;
-            if (activeProvider) {
-              setLoginProvider(activeProvider);
-              localStorage.setItem('linguist_login_provider', activeProvider);
-            }
-            let mergedLinked = [activeProvider];
-            if (cloud.linkedProviders && Array.isArray(cloud.linkedProviders)) {
-              const unique = new Set([activeProvider, ...cloud.linkedProviders]);
-              mergedLinked = Array.from(unique);
-            }
-            setLinkedProviders(mergedLinked);
-            localStorage.setItem('linguist_linked_providers', JSON.stringify(mergedLinked));
-          } else {
-            // Sync current local state to cloud immediately since it is a new account
-            const payload = {
-              email: finalEmail,
-              data: {
-                stats,
-                books,
-                vocabulary,
-                badges,
-                userName: finalName,
-                userAvatar: finalAvatar,
-                loginProvider: provider,
-                linkedProviders: initialLinked
-              }
-            };
-
-            fetch(`${getApiBase()}/api/sync`, {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${activeToken}`
-              },
-              body: JSON.stringify(payload)
-            }).catch(err => console.error('Initial sync error:', err));
           }
+
+          // Force stats.learnedWordsCount sync with vocabulary.length
+          mergedVocabulary = healVocabulary(mergedVocabulary);
+          mergedStats.learnedWordsCount = mergedVocabulary.length;
+          mergedStats.wordGoalPercent = Math.min(Math.round((mergedVocabulary.length / LIBRARY_UNIQUE_WORDS_COUNT) * 100), 100);
+
+          // Save merged data in state
+          setStats(mergedStats);
+          setBooks(mergedBooks);
+          setVocabulary(mergedVocabulary);
+          setBadges(mergedBadges);
+          setUserName(mergedName);
+          setUserAvatar(mergedAvatar);
+
+          // Save merged data under deviceUuid namespace in localStorage
+          if (deviceUuid) {
+            localStorage.setItem(`linguist_stats_v11_${deviceUuid}`, JSON.stringify(mergedStats));
+            localStorage.setItem(`linguist_books_v11_${deviceUuid}`, JSON.stringify(stripBooksForSync(mergedBooks)));
+            localStorage.setItem(`linguist_vocabulary_v11_${deviceUuid}`, JSON.stringify(mergedVocabulary));
+            localStorage.setItem(`linguist_badges_v11_${deviceUuid}`, JSON.stringify(mergedBadges));
+            localStorage.setItem(`linguist_user_name_${deviceUuid}`, mergedName);
+            localStorage.setItem(`linguist_user_avatar_${deviceUuid}`, mergedAvatar);
+          }
+
+          const activeProvider = provider || localStorage.getItem('linguist_login_provider') || (resData.found && resData.data?.loginProvider);
+          if (activeProvider) {
+            setLoginProvider(activeProvider);
+            localStorage.setItem('linguist_login_provider', activeProvider);
+          }
+          let mergedLinked = [activeProvider];
+          if (resData.found && resData.data?.linkedProviders && Array.isArray(resData.data.linkedProviders)) {
+            const unique = new Set([activeProvider, ...resData.data.linkedProviders]);
+            mergedLinked = Array.from(unique);
+          }
+          setLinkedProviders(mergedLinked);
+          localStorage.setItem('linguist_linked_providers', JSON.stringify(mergedLinked));
+
+          // Sync merged data back to cloud database immediately
+          const payload = {
+            email: finalEmail,
+            data: {
+              stats: mergedStats,
+              books: stripBooksForSync(mergedBooks),
+              vocabulary: mergedVocabulary,
+              badges: mergedBadges,
+              userName: mergedName,
+              userAvatar: mergedAvatar,
+              loginProvider: activeProvider,
+              linkedProviders: mergedLinked
+            }
+          };
+
+          fetch(`${getApiBase()}/api/sync`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': `Bearer ${activeToken}`
+            },
+            body: JSON.stringify(payload)
+          }).catch(err => console.error('Cloud sync callback error:', err));
         })
         .catch(err => {
           console.error('Error fetching sync data:', err);
@@ -1214,6 +1602,68 @@ export default function App() {
     setUserAvatar(AVATAR_OPTIONS[0]);
     localStorage.setItem('linguist_user_name', '');
     localStorage.setItem('linguist_user_avatar', AVATAR_OPTIONS[0]);
+  };
+
+  const handleDeleteAccount = async () => {
+    const emailToDelete = userEmail || 
+                          localStorage.getItem('linguist_user_email') || 
+                          (deviceUuid ? `device-${deviceUuid.toLowerCase().trim()}` : '');
+    if (emailToDelete) {
+      const syncToken = localStorage.getItem('linguist_session_token_' + emailToDelete.toLowerCase().trim());
+      try {
+        await fetch(`${getApiBase()}/api/delete-account`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            ...(syncToken ? { 'Authorization': `Bearer ${syncToken}` } : {})
+          },
+          body: JSON.stringify({ email: emailToDelete })
+        });
+      } catch (err) {
+        console.error('Failed to delete account on the server:', err);
+      }
+    }
+    
+    // 1. Backup critical configuration and stats that shouldn't reset
+    const savedUuid = localStorage.getItem('linguist_device_uuid') || '';
+    const savedTos = localStorage.getItem('linguist_tos_accepted_v11') || '';
+    const savedDarkMode = localStorage.getItem('linguist_dark_mode') || '';
+    const savedHearts = stats.hearts !== undefined ? stats.hearts : 5;
+    
+    const ns = deviceUuid || 'guest';
+    const savedRefillTime = localStorage.getItem(`linguist_last_heart_refill_${ns}`) || '';
+    
+    // 2. Clear all localStorage keys
+    localStorage.clear();
+    
+    // 3. Restore backups to prevent exploit and keep key preferences
+    if (savedUuid) {
+      localStorage.setItem('linguist_device_uuid', savedUuid);
+    }
+    if (savedTos) {
+      localStorage.setItem('linguist_tos_accepted_v11', savedTos);
+    }
+    if (savedDarkMode) {
+      localStorage.setItem('linguist_dark_mode', savedDarkMode);
+    }
+    
+    // Save preserved hearts into fresh initial stats
+    const freshStats = {
+      ...DEFAULT_STATS,
+      hearts: savedHearts,
+      lastActiveDate: getLocalDateString()
+    };
+    
+    const activeUuid = savedUuid || 'guest';
+    localStorage.setItem(`linguist_stats_v11_${activeUuid}`, JSON.stringify(freshStats));
+    localStorage.setItem('linguist_reset_stats_to_zero_v11', 'true');
+    
+    if (savedRefillTime) {
+      localStorage.setItem(`linguist_last_heart_refill_${activeUuid}`, savedRefillTime);
+    }
+    
+    // Reload page to start fresh
+    window.location.reload();
   };
 
   // Add customized essay input into fully interactive read-to-translate stories
@@ -1384,34 +1834,51 @@ export default function App() {
   };
 
   const handleStartBook = (bookId: string) => {
-    setBooks(prev => prev.map(b => b.id === bookId ? { ...b, isStarted: true } : b));
+    let nextBooks: Book[] = [];
+    setBooks(prev => {
+      nextBooks = prev.map(b => b.id === bookId ? { ...b, isStarted: true } : b);
+      return nextBooks;
+    });
     setActiveReadingBook(prev => {
       if (prev && prev.id === bookId) {
         return { ...prev, isStarted: true };
       }
       return prev;
     });
-    triggerCloudSync();
+    setTimeout(() => {
+      triggerCloudSync(undefined, nextBooks);
+    }, 0);
   };
 
   // Remove a book from "currently reading" list and clear local progress
   const handleRemoveFromReading = (bookId: string) => {
-    setBooks(prev => prev.map(b =>
-      b.id === bookId ? { ...b, isStarted: false, percentageCompleted: 0, currentPage: 1 } : b
-    ));
-    const ns = userEmail ? userEmail.toLowerCase().trim() : 'guest';
+    let nextBooks: Book[] = [];
+    setBooks(prev => {
+      nextBooks = prev.map(b =>
+        b.id === bookId ? { ...b, isStarted: false, percentageCompleted: 0, currentPage: 1 } : b
+      );
+      return nextBooks;
+    });
+    const ns = deviceUuid || 'guest';
     localStorage.removeItem(`linguist_current_page_${bookId}_${ns}`);
     localStorage.removeItem(`linguist_current_page_${bookId}`);
-    triggerCloudSync();
+    
+    if (lastActiveBookId === bookId) {
+      setLastActiveBookId(null);
+      localStorage.removeItem(`linguist_last_active_book_id_${ns}`);
+      localStorage.removeItem(`linguist_last_active_book_id`);
+    }
+    
+    setTimeout(() => {
+      triggerCloudSync(undefined, nextBooks);
+    }, 0);
   };
 
   // Gamified quizzes answers checks
   const handleAnswerCorrect = () => {
     setStats(prev => {
-      const currentXp = 1980 + 30; // simulated increment
       return {
         ...prev,
-        dailyStreak: prev.dailyStreak + 1, // increase streak
         readingGoalPercent: Math.min(prev.readingGoalPercent + 5, 100)
       };
     });
@@ -1423,6 +1890,10 @@ export default function App() {
 
     setStats(prev => {
       const nextHearts = Math.max(0, prev.hearts - 1);
+      if (prev.hearts === 5 && nextHearts === 4) {
+        const ns = deviceUuid || 'guest';
+        localStorage.setItem(`linguist_last_heart_refill_${ns}`, String(Date.now()));
+      }
       return {
         ...prev,
         hearts: nextHearts
@@ -1454,21 +1925,125 @@ export default function App() {
     setCurrentTab('profile');
   };
 
+  // Initialize In-App Purchases (Google Play Billing)
+  useEffect(() => {
+    initializeBillingStore((tier) => {
+      handleSubscribe(tier || 'yearly');
+    });
+  }, []);
+
   const unlockBadge = (badgeId: string) => {
-    setBadges(prev =>
-      prev.map(b =>
-        b.id === badgeId && !b.unlocked
-          ? { ...b, unlocked: true, unlockedAt: new Date().toISOString().split('T')[0] }
-          : b
-      )
-    );
+    setBadges(prev => {
+      let isUnlockedNow = false;
+      const nextBadges = prev.map(b => {
+        if (b.id === badgeId && !b.unlocked) {
+          isUnlockedNow = true;
+          return { ...b, unlocked: true, unlockedAt: new Date().toISOString().split('T')[0] };
+        }
+        return b;
+      });
+
+      if (isUnlockedNow) {
+        const badge = prev.find(b => b.id === badgeId);
+        if (badge) {
+          let message = `Tebrikler! "${badge.title}" rozetini kazandınız! 🎉`;
+          if (badgeId === 'b5') {
+            message = "Tebrikler! Premium üye oldunuz, ayrıcalıklarınızdan faydalanabilirsiniz! 👑";
+          }
+          setUnlockedBadgeNotify({
+            title: badge.title,
+            message: message
+          });
+        }
+      }
+      return nextBadges;
+    });
   };
 
   const handleSelectBook = (book: Book) => {
+    const ns = deviceUuid || 'guest';
+    localStorage.setItem(`linguist_last_active_book_id_${ns}`, book.id);
     localStorage.setItem('linguist_last_active_book_id', book.id);
     setLastActiveBookId(book.id);
-    setActiveReadingBook(book);
+    
+    // Automatically start the book (mark as started) when entering it!
+    let nextBooks: Book[] = [];
+    setBooks(prev => {
+      nextBooks = prev.map(b => b.id === book.id && !b.isCompleted ? { ...b, isStarted: true } : b);
+      return nextBooks;
+    });
+    
+    setActiveReadingBook(book.isCompleted ? book : { ...book, isStarted: true });
+    
+    setTimeout(() => {
+      triggerCloudSync(undefined, nextBooks);
+    }, 0);
   };
+
+  // Memoized components to prevent redundant rerenders (specifically when the heart countdown ticks every second)
+  const memoizedHeader = React.useMemo(() => (
+    <Header
+      currentTab={currentTab}
+      isPremium={stats.isPremium}
+      onAvatarClick={() => setCurrentTab('profile')}
+      onLogoClick={() => {
+        setCurrentTab('library');
+        setSearchQuery('');
+        setFocusedCategory(null);
+      }}
+      syncStatus={syncStatus}
+      isDarkMode={isDarkMode}
+      onToggleDarkMode={toggleDarkMode}
+      userName={userName}
+      userAvatar={userAvatar}
+      refillCountdown={refillCountdown}
+    />
+  ), [currentTab, stats.isPremium, refillCountdown, syncStatus, isDarkMode, toggleDarkMode, userName, userAvatar]);
+
+  const memoizedLibraryTab = React.useMemo(() => (
+    <LibraryTab
+      books={books}
+      onSelectBook={handleSelectBook}
+      syncTrigger={triggerCloudSync}
+      isDarkMode={isDarkMode}
+      onToggleFavorite={handleToggleFavorite}
+      totalReadMinutes={stats.totalTimeMinutes}
+      lastActiveBookId={lastActiveBookId}
+      searchQuery={searchQuery}
+      onSearchQueryChange={setSearchQuery}
+      onRemoveFromReading={handleRemoveFromReading}
+      focusedCategory={focusedCategory}
+      setFocusedCategory={setFocusedCategory}
+    />
+  ), [books, isDarkMode, stats.totalTimeMinutes, lastActiveBookId, searchQuery, focusedCategory, handleSelectBook, handleToggleFavorite, handleRemoveFromReading, triggerCloudSync]);
+
+  const memoizedFavoritesTab = React.useMemo(() => (
+    <FavoritesTab
+      books={books}
+      onSelectBook={handleSelectBook}
+      onToggleFavorite={handleToggleFavorite}
+      onGoToLibrary={() => setCurrentTab('library')}
+      isDarkMode={isDarkMode}
+    />
+  ), [books, isDarkMode, handleSelectBook, handleToggleFavorite]);
+
+  const memoizedVocabularyTab = React.useMemo(() => (
+    <VocabularyTab
+      vocabulary={vocabulary}
+      onStartQuiz={(mode) => {
+        setQuizMode(mode);
+        setShowPaywallInQuiz(false);
+        setCurrentTab('quiz');
+      }}
+      onRemoveWord={handleUnsaveWord}
+      syncTrigger={triggerCloudSync}
+      isDarkMode={isDarkMode}
+    />
+  ), [vocabulary, isDarkMode, handleUnsaveWord, triggerCloudSync]);
+
+  const memoizedBottomNav = React.useMemo(() => (
+    <BottomNav currentTab={currentTab} onTabChange={(tab) => setCurrentTab(tab)} isDarkMode={isDarkMode} />
+  ), [currentTab, isDarkMode]);
 
   return (
     <div className={`min-h-screen flex items-center justify-center transition-colors duration-200 ${
@@ -1554,22 +2129,9 @@ export default function App() {
         </div>
 
         {/* Scrollable Main Area */}
-        <div className="flex-1 overflow-y-visible md:overflow-y-auto flex flex-col relative scrollbar-none pb-20">
+        <div ref={mainScrollRef} className="flex-1 overflow-y-visible md:overflow-y-auto flex flex-col relative scrollbar-none pb-20">
           
-          {/* Visual Navigation and Status Headers if not in active reading panel */}
-          {!activeReadingBook && (
-            <Header
-              currentTab={currentTab}
-              isPremium={stats.isPremium}
-              onAvatarClick={() => setCurrentTab('profile')}
-              onLogoClick={() => setCurrentTab('library')}
-              syncStatus={syncStatus}
-              isDarkMode={isDarkMode}
-              onToggleDarkMode={toggleDarkMode}
-              userName={userName}
-              userAvatar={userAvatar}
-            />
-          )}
+          {!activeReadingBook && memoizedHeader}
 
           {/* Main Container viewport */}
           <div className="flex-1 flex flex-col">
@@ -1641,52 +2203,32 @@ export default function App() {
                         : b
                     )
                   );
+                  setActiveReadingBook(prev => {
+                    if (prev && prev.id === activeReadingBook.id) {
+                      return {
+                        ...prev,
+                        percentageCompleted: percentage,
+                        currentPage: currentPage || 1,
+                        totalPages: totalPages || 1,
+                        pagesLeft: totalPages ? totalPages - (currentPage || 1) : 0,
+                      };
+                    }
+                    return prev;
+                  });
                 }}
                 onFinishBook={handleFinishBook}
                 onStartBook={handleStartBook}
                 userEmail={userEmail}
+                deviceUuid={deviceUuid}
                 refillCountdown={refillCountdown}
               />
             ) : (
               <>
-                {currentTab === 'library' && (
-                  <LibraryTab
-                    books={books}
-                    onSelectBook={handleSelectBook}
-                    syncTrigger={triggerCloudSync}
-                    isDarkMode={isDarkMode}
-                    onToggleFavorite={handleToggleFavorite}
-                    totalReadMinutes={stats.totalTimeMinutes}
-                    lastActiveBookId={lastActiveBookId}
-                    searchQuery={searchQuery}
-                    onSearchQueryChange={setSearchQuery}
-                    onRemoveFromReading={handleRemoveFromReading}
-                  />
-                )}
+                {currentTab === 'library' && memoizedLibraryTab}
 
-                {currentTab === 'favorites' && (
-                  <FavoritesTab
-                    books={books}
-                    onSelectBook={handleSelectBook}
-                    onToggleFavorite={handleToggleFavorite}
-                    onGoToLibrary={() => setCurrentTab('library')}
-                    isDarkMode={isDarkMode}
-                  />
-                )}
+                {currentTab === 'favorites' && memoizedFavoritesTab}
 
-                {currentTab === 'vocabulary' && (
-                  <VocabularyTab
-                    vocabulary={vocabulary}
-                    onStartQuiz={(mode) => {
-                      setQuizMode(mode);
-                      setShowPaywallInQuiz(false);
-                      setCurrentTab('quiz');
-                    }}
-                    onRemoveWord={handleUnsaveWord}
-                    syncTrigger={triggerCloudSync}
-                    isDarkMode={isDarkMode}
-                  />
-                )}
+                {currentTab === 'vocabulary' && memoizedVocabularyTab}
 
                 {currentTab === 'quiz' && (
                   <QuizView
@@ -1696,7 +2238,7 @@ export default function App() {
                     quizMode={quizMode}
                     initiallyShowPaywall={showPaywallInQuiz}
                     onAnswerCorrect={handleAnswerCorrect}
-                    onAnswerIncorrect={handleAnswerIncorrect}
+                    onAnswerIncorrect={() => {}} // Vocabulary practice incorrect answers do not decrease hearts
                     onSubscribe={handleSubscribe}
                     onBackToVocabulary={() => setCurrentTab('vocabulary')}
                     onGoToLibrary={() => setCurrentTab('library')}
@@ -1704,6 +2246,20 @@ export default function App() {
                     isDarkMode={isDarkMode}
                     onUnlockBadge={unlockBadge}
                     refillCountdown={refillCountdown}
+                    onQuizCompleted={(score, totalQuestions) => {
+                      setStats(prev => {
+                        const nextSolved = (prev.dailyQuizzesSolvedCount || 0) + 1;
+                        const nextScoreSum = (prev.dailyQuizzesScoreSum || 0) + score;
+                        const nextQuestionsSum = (prev.dailyQuizzesQuestionsSum || 0) + totalQuestions;
+                        return {
+                          ...prev,
+                          dailyQuizzesSolvedCount: nextSolved,
+                          dailyQuizzesScoreSum: nextScoreSum,
+                          dailyQuizzesQuestionsSum: nextQuestionsSum
+                        };
+                      });
+                      triggerCloudSync();
+                    }}
                   />
                 )}
 
@@ -1724,7 +2280,10 @@ export default function App() {
                     loginProvider={loginProvider}
                     onAuthSuccess={handleGoogleLogin}
                     onLogout={handleGoogleLogout}
+                    onDeleteAccount={handleDeleteAccount}
                     deviceUuid={deviceUuid}
+                    vocabulary={vocabulary}
+                    refillCountdown={refillCountdown}
                   />
                 )}
               </>
@@ -1733,12 +2292,108 @@ export default function App() {
         </div>
 
         {/* Bottom Layout Navigation triggers */}
-        {!activeReadingBook && (
-          <BottomNav currentTab={currentTab} onTabChange={(tab) => setCurrentTab(tab)} isDarkMode={isDarkMode} />
-        )}
+        {!activeReadingBook && memoizedBottomNav}
           </>
         )}
       </div>
+
+      {/* Top Banner Notification for Achievement Unlock */}
+      <AnimatePresence>
+        {unlockedBadgeNotify && (
+          <>
+            {/* Transparent click catcher to dismiss anywhere instantly */}
+            <div 
+              className="fixed inset-0 z-[9998] bg-transparent cursor-default" 
+              onClick={() => setUnlockedBadgeNotify(null)} 
+            />
+            {/* Centering wrapper */}
+            <div className="absolute top-16 left-0 right-0 z-[9999] flex justify-center pointer-events-none px-4">
+              <motion.div
+                initial={{ opacity: 0, y: -80 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -80 }}
+                transition={{ type: 'spring', stiffness: 350, damping: 25 }}
+                onClick={() => setUnlockedBadgeNotify(null)}
+                className={`w-full max-w-[340px] pointer-events-auto flex items-center gap-3 p-3.5 rounded-2xl border shadow-2xl cursor-pointer select-none backdrop-blur-md transition-all ${
+                  isDarkMode 
+                    ? 'bg-[#1E1E22]/95 border-[#2A2A30] text-white shadow-black/50' 
+                    : 'bg-white/95 border-[#FFE66D]/80 text-[#2D3436] shadow-gray-400/25'
+                }`}
+              >
+                <div className="w-10 h-10 rounded-full bg-amber-500/10 dark:bg-amber-500/20 flex items-center justify-center border border-amber-500/30 text-amber-500 shrink-0 animate-bounce">
+                  <Crown className="w-5.5 h-5.5 fill-amber-500" />
+                </div>
+                <div className="flex-1 min-w-0 text-left">
+                  <h4 className="text-[10px] font-extrabold text-amber-500 uppercase tracking-wider font-headline-lg mb-0.5">
+                    TEBRİKLER! 🏆
+                  </h4>
+                  <p className="text-xs font-bold leading-normal font-headline-lg">
+                    {unlockedBadgeNotify.message}
+                  </p>
+                </div>
+              </motion.div>
+            </div>
+          </>
+        )}
+      </AnimatePresence>
+
+      {/* Startup Consent (ToS & Privacy Policy) Agreement Modal */}
+      {showConsent && (
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-gray-950/80 backdrop-blur-md">
+          <div className={`w-full max-w-md p-6 rounded-2xl border text-center shadow-2xl transition-all ${
+            isDarkMode 
+              ? 'bg-[#1E1E22]/95 border-[#2A2A30] text-gray-100' 
+              : 'bg-white/95 border-[#FFE66D]/80 text-gray-900'
+          }`}>
+            <div className="w-16 h-16 bg-[#4ECDC4]/20 text-[#4ECDC4] rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <Shield className="w-8 h-8" />
+            </div>
+            
+            <h3 className="text-xl font-bold font-headline mb-2">Kullanıcı Sözleşmesi</h3>
+            <p className={`text-sm mb-6 leading-relaxed ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+              Uygulamamızı kullanmaya başlamadan önce, size güvenli bir deneyim sunabilmemiz için lütfen 
+              <a 
+                href="/privacy.html" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-[#4ECDC4] hover:underline font-semibold mx-1"
+              >
+                Kullanım Koşulları ve Gizlilik Politikası
+              </a> 
+              sözleşmesini okuyup onaylayın.
+            </p>
+            
+            <label className="flex items-start gap-3 text-left mb-6 cursor-pointer select-none">
+              <input 
+                type="checkbox" 
+                id="tos-checkbox"
+                className="mt-1 w-4 h-4 rounded border-gray-300 text-[#4ECDC4] focus:ring-[#4ECDC4] cursor-pointer"
+                onChange={(e) => setConsentChecked(e.target.checked)}
+              />
+              <span className={`text-xs leading-relaxed ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                Sözleşmedeki tüm maddeleri okudum, anladım ve <strong>kabul ediyorum</strong>.
+              </span>
+            </label>
+            
+            <button
+              onClick={() => {
+                if (consentChecked) {
+                  localStorage.setItem('linguist_tos_accepted_v11', 'true');
+                  setShowConsent(false);
+                }
+              }}
+              disabled={!consentChecked}
+              className={`w-full py-3 rounded-xl font-bold transition-all shadow-sm ${
+                consentChecked
+                  ? 'bg-[#4ECDC4] text-gray-950 hover:bg-[#3cacb0] cursor-pointer'
+                  : 'bg-gray-700/50 text-gray-500 cursor-not-allowed'
+              }`}
+            >
+              Onayla ve Devam Et
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

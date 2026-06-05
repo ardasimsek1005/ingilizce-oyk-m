@@ -217,7 +217,41 @@ GENERATED_MAP = {
     "classic_war_and_peace_cover": "classic_war_and_peace",
     "classic_anna_karenina_cover": "classic_anna_karenina",
     "classic_brothers_karamazov_cover": "classic_brothers_karamazov",
-    "classic_idiot_cover": "classic_idiot"
+    "classic_idiot_cover": "classic_idiot",
+    
+    # 30 new stories (fables, horror, classics)
+    "fable_shepherd_flute_cover": "fable_shepherd_flute",
+    "fable_ant_dove_cover": "fable_ant_dove",
+    "fable_donkey_salt_cover": "fable_donkey_salt",
+    "fable_honest_woodcutter_cover": "fable_honest_woodcutter",
+    "fable_milkmaid_pail_cover": "fable_milkmaid_pail",
+    "fable_peacock_crane_cover": "fable_peacock_crane",
+    "fable_fisherman_fish_cover": "fable_fisherman_fish",
+    "fable_three_wishes_cover": "fable_three_wishes",
+    "fable_magic_seed_cover": "fable_magic_seed",
+    "fable_magic_paintbrush_cover": "fable_magic_paintbrush",
+    
+    "horror_ghost_library_cover": "horror_ghost_library",
+    "horror_whispering_castle_cover": "horror_whispering_castle",
+    "horror_haunted_lighthouse_cover": "horror_haunted_lighthouse",
+    "horror_clock_tower_ghost_cover": "horror_clock_tower_ghost",
+    "horror_haunted_mirror_cover": "horror_haunted_mirror",
+    "horror_whispering_shadows_cover": "horror_whispering_shadows",
+    "horror_crying_stone_cover": "horror_crying_stone",
+    "horror_haunted_painting_cover": "horror_haunted_painting",
+    "horror_haunted_clock_cover": "horror_haunted_clock",
+    "horror_mysterious_passenger_cover": "horror_mysterious_passenger",
+    
+    "classic_gulliver_laputa_cover": "classic_gulliver_laputa",
+    "classic_crusoe_footprint_cover": "classic_crusoe_footprint",
+    "classic_call_wild_race_cover": "classic_call_wild_race",
+    "classic_around_world_india_cover": "classic_around_world_india",
+    "classic_treasure_island_chest_cover": "classic_treasure_island_chest",
+    "classic_moby_dick_whale_cover": "classic_moby_dick_whale",
+    "classic_secret_garden_key_cover": "classic_secret_garden_key",
+    "classic_heidi_mountain_cover": "classic_heidi_mountain",
+    "classic_don_quixote_windmills_cover": "classic_don_quixote_windmills",
+    "classic_odyssey_sirens_cover": "classic_odyssey_sirens"
 }
 
 def crop_to_square(img):

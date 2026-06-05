@@ -1,7 +1,7 @@
 import React from 'react';
 import { BookOpen, Star, ArrowRight } from 'lucide-react';
 import { motion } from 'motion/react';
-import { Book } from '../types';
+import { Book, getLevelColor } from '../types';
 
 interface FavoritesTabProps {
   books: Book[];
@@ -94,9 +94,10 @@ export default function FavoritesTab({
                 />
                 
                 {/* Level Badge */}
-                <div className={`absolute top-2 right-2 px-2 py-0.5 rounded text-[10px] font-bold text-white shadow-xs ${
-                  book.level.startsWith('A') ? 'bg-[#4ECDC4]' : book.level.startsWith('B') ? 'bg-[#FF6B6B]' : 'bg-[#2D3436]'
-                }`}>
+                <div 
+                  className="absolute top-2 right-2 px-2 py-0.5 rounded text-[10px] font-bold text-white shadow-xs"
+                  style={{ backgroundColor: getLevelColor(book.level) }}
+                >
                   {book.level}
                 </div>
 
@@ -124,7 +125,7 @@ export default function FavoritesTab({
               }`}>
                 {book.title}
               </h4>
-              <p className="text-gray-455 dark:text-gray-400 text-xs truncate">{book.author}</p>
+              {book.author && <p className="text-gray-455 dark:text-gray-400 text-xs truncate">{book.author}</p>}
               
               <div className="flex items-center gap-1.5 mt-1 text-[11px] text-[#4ECDC4] font-bold">
                 <BookOpen className="w-3.5 h-3.5" />

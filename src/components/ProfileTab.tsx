@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Capacitor } from '@capacitor/core';
-import { UserStats, Badge } from '../types';
+import { UserStats, Badge, VocabularyWord } from '../types';
 import { INITIAL_BADGES, LIBRARY_UNIQUE_WORDS_COUNT } from '../data';
-import { Award, Flame, BookOpen, Clock, Trophy, Share2, Sparkles, TrendingUp, ChevronRight, CheckCircle2, ShieldAlert, BadgeCheck, Zap, Library, Volume2, Crown, X, RefreshCw, Check, Edit2, Camera, Save, Copy, Facebook, Send, MessageCircle, Mail, Link2, QrCode, MessageSquare, Eye, EyeOff, Plus } from 'lucide-react';
+import { Award, Flame, BookOpen, Clock, Trophy, Share2, Sparkles, TrendingUp, ChevronRight, CheckCircle2, ShieldAlert, BadgeCheck, Zap, Library, Volume2, Crown, X, RefreshCw, Check, Edit2, Camera, Save, Copy, Facebook, Send, MessageCircle, Mail, Link2, QrCode, MessageSquare, Eye, EyeOff, Plus, Heart, Trash2, Shield } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { AVATAR_OPTIONS } from '../avatar_assets';
 
 interface ProfileTabProps {
   stats: UserStats;
   badges: Badge[];
+  vocabulary: VocabularyWord[];
   onTriggerPremiumPanel: () => void;
   syncTrigger: () => void;
   isDarkMode?: boolean;
@@ -19,7 +20,9 @@ interface ProfileTabProps {
   loginProvider: string | null;
   onAuthSuccess: (email: string, name?: string, picture?: string, provider?: string, token?: string) => void;
   onLogout: () => void;
+  onDeleteAccount: () => Promise<void>;
   deviceUuid: string;
+  refillCountdown?: string;
 }
 
 const getApiBase = () => {
@@ -50,9 +53,77 @@ function parseJwt(token: string) {
   }
 }
 
+// Robust Profanity and Argo detection helper
+function checkIsProfane(name: string): boolean {
+  if (!name) return false;
+  
+  const text = name.toLowerCase().trim();
+  
+  const replacements: Record<string, string> = {
+    '0': 'o', '1': 'i', '3': 'e', '4': 'a', '5': 's', '7': 't', '8': 'b',
+    'ı': 'i', 'ö': 'o', 'ü': 'u', 'ş': 's', 'ç': 'c', 'ğ': 'g',
+    'â': 'a', 'î': 'i', 'û': 'u', 'é': 'e'
+  };
+  
+  let normalized = '';
+  for (let i = 0; i < text.length; i++) {
+    const char = text[i];
+    normalized += replacements[char] || char;
+  }
+  
+  // Remove non-alphanumeric character sequences and repeated characters
+  let cleanText = '';
+  for (let i = 0; i < normalized.length; i++) {
+    if (i === 0 || normalized[i] !== normalized[i - 1]) {
+      cleanText += normalized[i];
+    }
+  }
+  
+  const noSpaces = normalized.replace(/[^a-z0-9]/g, '');
+  const cleanNoSpaces = cleanText.replace(/[^a-z0-9]/g, '');
+  
+  const badWords = [
+    // Severe Turkish profanity & argo
+    "orospu", "siktir", "sikti", "siker", "amcik", "yarrak", "yarak", "pezevenk",
+    "kahpe", "pic", "dalyarak", "amına", "amina", "amını", "amini", "ibne",
+    "tassak", "taşşak", "yarag", "yarağ", "göt", "got", "gote", "göte", "gotu",
+    "götü", "götlek", "gotlek", "yavsak", "yavşak", "pust", "puşt", "amk", "aq",
+    "sik", "siki", "sikiş", "sikis", "koyayim", "koyayım", "koyarim", "koyarım",
+    "meme", "gogus", "göğüs", "kalta", "kaltak", "osur", "osurd", "osuruk",
+    "bok", "boki", "boku", "bokye", "boklu", "dild", "dildo", "seks", "sex",
+    "porno", "pipi", "vagina", "vajin", "vajina", "penis", "hıyar", "hiyar",
+    "aptal", "salak", "gerizekali", "gerizekalı", "gerizek", "manyak", "kopek", "köpek",
+    // English profanity
+    "fuck", "bitch", "asshole", "fucker", "cunt", "dick", "cock", "pussy", "bastard",
+    "slut", "whore", "nigga", "nigger",
+    // System words
+    "admin", "yonetici", "moderator", "destek", "support", "sistem", "system",
+    "kurucu", "owner", "staff", "ekip", "team", "yetkili", "developer", "gelistirici"
+  ];
+  
+  // Check substrings for longer bad words
+  const hasLongWord = badWords.some(word => {
+    if (word.length <= 3) return false;
+    return noSpaces.includes(word) || cleanNoSpaces.includes(word);
+  });
+  if (hasLongWord) return true;
+  
+  // Check exact words for short words (with boundaries)
+  const words = normalized.split(/[^a-z0-9]+/);
+  const cleanWords = cleanText.split(/[^a-z0-9]+/);
+  
+  const hasShortWord = badWords.some(word => {
+    if (word.length > 3) return false;
+    return words.includes(word) || cleanWords.includes(word) || noSpaces === word || cleanNoSpaces === word;
+  });
+  
+  return hasShortWord;
+}
+
 export default function ProfileTab({
   stats,
   badges,
+  vocabulary,
   onTriggerPremiumPanel,
   syncTrigger,
   isDarkMode,
@@ -63,7 +134,9 @@ export default function ProfileTab({
   loginProvider,
   onAuthSuccess,
   onLogout,
+  onDeleteAccount,
   deviceUuid,
+  refillCountdown,
 }: ProfileTabProps) {
   const [selectedChartTab, setSelectedChartTab] = useState<'words' | 'minutes'>('words');
   const [activeBarIdx, setActiveBarIdx] = useState<number | null>(null);
@@ -72,6 +145,15 @@ export default function ProfileTab({
   const [showQrCode, setShowQrCode] = useState(false);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
   const [isAboutModalOpen, setIsAboutModalOpen] = useState(false);
+
+  useEffect(() => {
+    if (toastMessage) {
+      const timer = setTimeout(() => {
+        setToastMessage(null);
+      }, 1500);
+      return () => clearTimeout(timer);
+    }
+  }, [toastMessage]);
   const [showPremiumBenefitsModal, setShowPremiumBenefitsModal] = useState(false);
 
   // Login connection states
@@ -91,6 +173,9 @@ export default function ProfileTab({
   const [oauthCustomEmail, setOauthCustomEmail] = useState('');
   const [oauthShowCustomInput, setOauthShowCustomInput] = useState(false);
   const [showLogoutConfirm, setShowLogoutConfirm] = useState(false);
+  const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
+  const [isDeletingAccount, setIsDeletingAccount] = useState(false);
+  const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false);
 
   // Referral states
   const [referredBy, setReferredBy] = useState<string>(() => localStorage.getItem('linguist_referred_by') || '');
@@ -473,27 +558,24 @@ export default function ProfileTab({
   const maxWords = Math.max(...chartData.map(d => d.learnedWords)) || 10;
   const maxMinutes = Math.max(...chartData.map(d => d.readMins)) || 10;
 
-  const [dailyTimeTarget, setDailyTimeTarget] = useState<number>(() => {
-    const saved = localStorage.getItem('linguist_target_daily_time');
-    const val = saved ? Number(saved) : 20;
-    return (val && !isNaN(val) && val > 0) ? val : 20;
-  });
-  const [weeklyWordTarget, setWeeklyWordTarget] = useState<number>(() => {
-    const saved = localStorage.getItem('linguist_target_weekly_words');
-    const val = saved ? Number(saved) : 10;
-    return (val && !isNaN(val) && val > 0) ? val : 10;
-  });
+  const dailyTimeTarget = 20;
+  const dailyWordTarget = 10;
 
   const todayIdx = new Date().getDay(); // 0 is Sunday, 1-6 is Mon-Sat
   const dayIndex = todayIdx === 0 ? 6 : todayIdx - 1;
   const todayMins = stats.weeklyMins ? stats.weeklyMins[dayIndex] || 0 : 0;
-  const weeklyWordsSum = stats.weeklyWords ? stats.weeklyWords.reduce((a, b) => a + b, 0) : 0;
+  const todayWords = stats.weeklyWords ? stats.weeklyWords[dayIndex] || 0 : 0;
 
-  const rawTimeGoal = Math.round((todayMins / (dailyTimeTarget || 20)) * 100);
+  const rawTimeGoal = Math.round((todayMins / 20) * 100);
   const timeGoalPercent = isNaN(rawTimeGoal) ? 0 : Math.min(rawTimeGoal, 100);
 
-  const rawWordGoal = Math.round((weeklyWordsSum / (weeklyWordTarget || 10)) * 100);
+  const rawWordGoal = Math.round((todayWords / 10) * 100);
   const wordGoalPercent = isNaN(rawWordGoal) ? 0 : Math.min(rawWordGoal, 100);
+
+  const solvedQuizzes = stats.dailyQuizzesSolvedCount || 0;
+  const scoreSum = stats.dailyQuizzesScoreSum || 0;
+  const questionsSum = stats.dailyQuizzesQuestionsSum || 0;
+  const avgSuccessPercent = questionsSum > 0 ? Math.min(Math.round((scoreSum / questionsSum) * 100), 100) : 0;
 
   const getBadgeIcon = (iconName: string, unlocked: boolean) => {
     const sizeClass = "w-4.5 h-4.5";
@@ -568,7 +650,8 @@ export default function ProfileTab({
                 initial={{ opacity: 0, scale: 0.9, y: 15 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.9, y: 15 }}
-                className={`w-full max-w-[340px] rounded-3xl p-6 border text-center flex flex-col items-center gap-4 backdrop-blur-lg transition-all duration-300 shadow-2xl ${
+                onClick={() => setToastMessage(null)}
+                className={`w-full max-w-[340px] rounded-3xl p-6 border text-center flex flex-col items-center gap-4 backdrop-blur-lg transition-all duration-300 shadow-2xl pointer-events-auto cursor-pointer ${
                   isDarkMode 
                     ? 'bg-[#1E1E22]/95 border-[#2A2A30] text-white shadow-black/60' 
                     : 'bg-white/95 border-[#FFE66D]/80 text-[#2D3436] shadow-gray-400/20'
@@ -691,15 +774,8 @@ export default function ProfileTab({
                     return;
                   }
 
-                  const badWords = [
-                    "orospu", "siktir", "sikti", "siker", "amcik", "amcık", "yarrak", "yarak", 
-                    "göt", "got", "pezevenk", "kahpe", "pic", "piç", "dalyarak", "meme", 
-                    "fuck", "bitch", "asshole", "fucker", "amına", "amina", "koyayım", "koyayim"
-                  ];
-                  const normalizedForProfanity = cleanName.toLowerCase().replace(/\s+/g, "");
-                  const hasProfanity = badWords.some(word => normalizedForProfanity.includes(word));
-                  if (hasProfanity) {
-                    setToastMessage('Girdiğiniz isim uygunsuz kelimeler içeremez. ⚠️');
+                  if (checkIsProfane(cleanName)) {
+                    setToastMessage('Girdiğiniz isim uygunsuz veya yetkili unvanları (admin, yönetici vb.) içeremez. ⚠️');
                     setTimeout(() => setToastMessage(null), 3000);
                     return;
                   }
@@ -792,8 +868,8 @@ export default function ProfileTab({
             </div>
 
             {stats.isPremium && (
-              <div className="mt-4 flex flex-col items-center gap-2 select-none">
-                <span className="bg-[#FFE66D] text-[#2D3436] border border-[#FFE66D]/50 px-4 py-1.5 rounded-full text-[10px] font-extrabold shadow-sm flex items-center justify-center gap-1 font-headline-lg animate-pulse whitespace-nowrap">
+              <div className="mt-4 flex flex-col items-center justify-center select-none text-center">
+                <span className="bg-[#FFE66D] text-[#2D3436] border border-[#FFE66D]/50 px-3 py-1 rounded-full text-[10px] font-extrabold shadow-sm flex items-center justify-center gap-1 font-headline-lg animate-pulse whitespace-nowrap">
                   <Zap className="w-3.5 h-3.5 text-[#FF6B6B] fill-[#FF6B6B]" />
                   PREMIUM ÜYE
                 </span>
@@ -802,15 +878,25 @@ export default function ProfileTab({
                   const expiryDate = new Date(stats.premiumExpiryDate);
                   const diffMs = expiryDate.getTime() - Date.now();
                   const diffDays = Math.max(0, Math.ceil(diffMs / (1000 * 60 * 60 * 24)));
-                  const formattedDate = expiryDate.toLocaleDateString('tr-TR', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric'
-                  });
+                  
+                  // Calculate purchase date
+                  const purchaseDate = new Date(expiryDate);
+                  if (stats.premiumType === 'yearly') {
+                    purchaseDate.setFullYear(purchaseDate.getFullYear() - 1);
+                  } else {
+                    purchaseDate.setMonth(purchaseDate.getMonth() - 1);
+                  }
+                  
+                  const formatOption: Intl.DateTimeFormatOptions = { day: 'numeric', month: 'long', year: 'numeric' };
+                  const purchaseStr = purchaseDate.toLocaleDateString('tr-TR', formatOption);
+                  const expiryStr = expiryDate.toLocaleDateString('tr-TR', formatOption);
+
                   return (
-                    <div className="text-[10px] font-semibold text-gray-400 dark:text-gray-500 font-headline-lg flex flex-col items-center gap-0.5">
-                      <span>Üyelik Bitiş Tarihi: {formattedDate}</span>
-                      <span className="text-[#4ECDC4] font-bold">({diffDays} gün kaldı)</span>
+                    <div className={`mt-2 text-[11px] font-bold font-headline-lg flex flex-col gap-0.5 ${
+                      isDarkMode ? 'text-gray-400' : 'text-gray-500'
+                    }`}>
+                      <span>Alındığı Tarih: <span className="font-black">{purchaseStr}</span></span>
+                      <span>Kalan Süre: <span className="font-black text-[#FF6B6B]">{diffDays} Gün</span> (Bitiş: {expiryStr})</span>
                     </div>
                   );
                 })()}
@@ -831,7 +917,7 @@ export default function ProfileTab({
           <span className={`font-headline-lg text-2xl font-bold transition-colors ${
             isDarkMode ? 'text-white' : 'text-[#2D3436]'
           }`}>
-            {stats.learnedWordsCount} <span className="text-xs font-semibold text-gray-400">/ {LIBRARY_UNIQUE_WORDS_COUNT}</span>
+            {vocabulary.length} <span className="text-xs font-semibold text-gray-400">/ {LIBRARY_UNIQUE_WORDS_COUNT}</span>
           </span>
           <span className={`text-[10px] font-extrabold tracking-widest mt-1 ${
             isDarkMode ? 'text-gray-400' : 'text-[#2D3436]/60'
@@ -861,7 +947,7 @@ export default function ProfileTab({
         <div className="col-span-2 sm:col-span-1 bg-gradient-to-br from-[#FF6B6B] to-[#FFE66D] text-[#FFFBF0] p-5 rounded-2xl shadow-sm flex flex-col items-center justify-center text-center border-2 border-[#FF6B6B]/40">
           <Flame className="w-6 h-6 text-yellow-300 fill-yellow-300 mb-2 animate-bounce" />
           <span className="font-headline-lg text-2xl font-extrabold">
-            {stats.dailyStreak} Gün
+            {stats.dailyStreak}. Gün
           </span>
           <span className="text-[10px] font-extrabold tracking-widest mt-1 opacity-95">
             GÜNLÜK SERİ 🔥
@@ -869,7 +955,7 @@ export default function ProfileTab({
         </div>
       </section>
 
-      {/* Kişiselleştirilmiş ve Kullanıcı Dostu Haftalık Hedefler */}
+      {/* Günlük Hedefler */}
       <section className={`border-2 rounded-[28px] p-6 mb-8 transition-colors ${
         isDarkMode 
           ? 'bg-[#1A1A1E] border-[#2A2A30] shadow-[0_8px_16px_rgba(0,0,0,0.2)]' 
@@ -883,182 +969,50 @@ export default function ProfileTab({
             <h2 className={`font-headline-lg text-base font-bold tracking-tight ${
               isDarkMode ? 'text-white' : 'text-[#2D3436]'
             }`}>
-              Kişisel Hedeflerim
+              Günlük Hedefler
             </h2>
           </div>
-          <span className="text-[10px] font-bold text-[#4ECDC4] bg-[#4ECDC4]/10 border border-[#4ECDC4]/20 px-2.5 py-0.5 rounded-full uppercase tracking-wider animate-pulse font-headline-lg">
-            Dinamik Hedef
+          <span className="text-[10px] font-bold text-[#4ECDC4] bg-[#4ECDC4]/10 border border-[#4ECDC4]/20 px-2.5 py-0.5 rounded-full uppercase tracking-wider font-headline-lg">
+            Günlük Sıfırlanır
           </span>
         </div>
 
         <p className={`text-xs mb-5 leading-relaxed ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-          İngilizce öğrenme hızını artırmak için günlük ve haftalık hedeflerini özelleştir. İlerledikçe rozetler kazanırsı!
+          Her gün düzenli okuma ve pratik yaparak günlük hedeflerini tamamla, İngilizce öğrenimini alışkanlık haline getir!
         </p>
 
         <div className="space-y-4">
           
-          {/* Kart 1: Okuma Sınavı Hedefi */}
-          <div className={`p-4 rounded-2xl border transition-all duration-300 ${
-            isDarkMode 
-              ? 'bg-[#121214]/60 border-[#2A2A30] hover:border-[#FF6B6B]/40' 
-              : 'bg-gray-50/50 border-gray-150 hover:border-[#FF6B6B]/30'
-          }`}>
-            <div className="flex justify-between items-start mb-2.5">
-              <div className="flex items-center gap-3">
-                <div className="p-2 rounded-xl bg-[#FF6B6B]/15 text-[#FF6B6B]">
-                  <BookOpen className="w-4.5 h-4.5" />
-                </div>
-                <div>
-                  <h3 className={`text-xs font-bold font-headline-lg ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
-                    Okuma Sınav Başarısı
-                  </h3>
-                  <p className="text-[10px] text-gray-400 mt-0.5">
-                    Sınavlardan kazandığın başarı oranı.
-                  </p>
-                </div>
-              </div>
-              <div className="text-right">
-                <span className="text-sm font-extrabold text-[#FF6B6B] font-headline-lg">
-                  %{stats.readingGoalPercent}
-                </span>
-                <p className="text-[9px] text-gray-400 font-medium">Başarı</p>
-              </div>
-            </div>
-            
-            {/* İlerleme Çubuğu */}
-            <div className="mt-3.5 flex items-center gap-4">
-              <div className="flex-1">
-                <div className="h-2 w-full rounded-full bg-gray-200 dark:bg-gray-800 overflow-hidden">
-                  <motion.div 
-                    className="h-full bg-gradient-to-r from-[#FF6B6B] to-[#FFE66D] rounded-full"
-                    initial={{ width: 0 }}
-                    animate={{ width: `${stats.readingGoalPercent}%` }}
-                    transition={{ duration: 1 }}
-                  />
-                </div>
-              </div>
-              <div className="flex items-center gap-1 shrink-0">
-                <span className={`text-[10px] font-bold px-2 py-0.5 rounded-md ${
-                  stats.readingGoalPercent >= 100 
-                    ? 'bg-[#4ECDC4]/10 text-[#4ECDC4]' 
-                    : isDarkMode ? 'bg-[#1A1A1E] text-gray-400' : 'bg-gray-100 text-gray-600'
-                }`}>
-                  {stats.readingGoalPercent >= 100 ? 'Başarıldı! 🎉' : 'Devam Ediyor'}
-                </span>
-              </div>
-            </div>
-          </div>
-
-          {/* Kart 2: Kelime Hedefi */}
-          <div className={`p-4 rounded-2xl border transition-all duration-300 ${
-            isDarkMode 
-              ? 'bg-[#121214]/60 border-[#2A2A30] hover:border-[#4ECDC4]/40' 
-              : 'bg-gray-50/50 border-gray-150 hover:border-[#4ECDC4]/30'
-          }`}>
-            <div className="flex justify-between items-start mb-2.5">
-              <div className="flex items-center gap-3">
-                <div className="p-2 rounded-xl bg-[#4ECDC4]/15 text-[#4ECDC4]">
-                  <Sparkles className="w-4.5 h-4.5" />
-                </div>
-                <div>
-                  <h3 className={`text-xs font-bold font-headline-lg ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
-                    Haftalık Kelime Kaydı
-                  </h3>
-                  <p className="text-[10px] text-gray-400 mt-0.5">
-                    Bu hafta kaydedilen kelime sayısı.
-                  </p>
-                </div>
-              </div>
-              <div className="text-right">
-                <span className="text-sm font-extrabold text-[#4ECDC4] font-headline-lg">
-                  {weeklyWordsSum} / {weeklyWordTarget}
-                </span>
-                <p className="text-[9px] text-gray-400 font-medium">Kelime</p>
-              </div>
-            </div>
-            
-            {/* İlerleme Çubuğu ve Ayarlayıcılar */}
-            <div className="mt-3.5 flex items-center justify-between gap-4">
-              <div className="flex-1">
-                <div className="h-2 w-full rounded-full bg-gray-200 dark:bg-gray-800 overflow-hidden">
-                  <motion.div 
-                    className="h-full bg-[#4ECDC4] rounded-full"
-                    initial={{ width: 0 }}
-                    animate={{ width: `${wordGoalPercent}%` }}
-                    transition={{ duration: 1 }}
-                  />
-                </div>
-              </div>
-              
-              {/* Hedef Değiştirme Butonları */}
-              <div className="flex items-center gap-1.5 shrink-0 select-none">
-                <button 
-                  onClick={() => {
-                    const next = Math.max(5, weeklyWordTarget - 5);
-                    setWeeklyWordTarget(next);
-                    localStorage.setItem('linguist_target_weekly_words', String(next));
-                    syncTrigger();
-                  }}
-                  className={`w-6 h-6 rounded-md flex items-center justify-center font-extrabold text-xs border hover:bg-gray-100 active:scale-90 transition-all cursor-pointer ${
-                    isDarkMode ? 'border-gray-700 text-gray-300 hover:bg-[#1A1A1E]' : 'border-gray-300 text-gray-600'
-                  }`}
-                  title="Hedefi Azalt"
-                >
-                  -
-                </button>
-                <span className={`text-[9px] font-bold w-12 text-center py-0.5 rounded ${
-                  isDarkMode ? 'bg-[#1A1A1E] text-gray-300' : 'bg-gray-100 text-gray-750'
-                }`}>
-                  Hedef: {weeklyWordTarget}
-                </span>
-                <button 
-                  onClick={() => {
-                    const next = Math.min(100, weeklyWordTarget + 5);
-                    setWeeklyWordTarget(next);
-                    localStorage.setItem('linguist_target_weekly_words', String(next));
-                    syncTrigger();
-                  }}
-                  className={`w-6 h-6 rounded-md flex items-center justify-center font-extrabold text-xs border hover:bg-gray-100 active:scale-90 transition-all cursor-pointer ${
-                    isDarkMode ? 'border-gray-700 text-gray-300 hover:bg-[#1A1A1E]' : 'border-gray-300 text-gray-600'
-                  }`}
-                  title="Hedefi Artır"
-                >
-                  +
-                </button>
-              </div>
-            </div>
-          </div>
-
-          {/* Kart 3: Günlük Süre Hedefi */}
+          {/* Kart 1: Günlük Süre Hedefi */}
           <div className={`p-4 rounded-2xl border transition-all duration-300 ${
             isDarkMode 
               ? 'bg-[#121214]/60 border-[#2A2A30] hover:border-[#FFE66D]/40' 
               : 'bg-gray-50/50 border-gray-150 hover:border-[#FFE66D]/30'
           }`}>
-            <div className="flex justify-between items-start mb-2.5">
-              <div className="flex items-center gap-3">
-                <div className="p-2 rounded-xl bg-[#FFE66D]/15 text-[#FFE66D]">
+            <div className="flex justify-between items-start gap-4 mb-2.5">
+              <div className="flex items-center gap-3 min-w-0 flex-1">
+                <div className="p-2 rounded-xl bg-[#FFE66D]/15 text-[#FFE66D] shrink-0">
                   <Clock className="w-4.5 h-4.5" />
                 </div>
-                <div>
-                  <h3 className={`text-xs font-bold font-headline-lg ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
+                <div className="min-w-0 flex-1">
+                  <h3 className={`text-xs font-bold font-headline-lg truncate ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
                     Günlük Okuma Süresi
                   </h3>
-                  <p className="text-[10px] text-gray-400 mt-0.5">
-                    Bugün hikayelerde geçirdiğin aktif süre.
+                  <p className="text-[10px] text-gray-400 mt-0.5 leading-snug">
+                    Hikayelerde geçirdiğin aktif süre (Hedef: 20 dk).
                   </p>
                 </div>
               </div>
-              <div className="text-right">
-                <span className="text-sm font-extrabold text-[#FFE66D] font-headline-lg">
-                  {todayMins} / {dailyTimeTarget} dk
+              <div className="text-right shrink-0">
+                <span className="text-sm font-extrabold text-[#FFE66D] font-headline-lg whitespace-nowrap">
+                  {todayMins} / 20 dk
                 </span>
                 <p className="text-[9px] text-gray-400 font-medium">Süre</p>
               </div>
             </div>
             
-            {/* İlerleme Çubuğu ve Ayarlayıcılar */}
-            <div className="mt-3.5 flex items-center justify-between gap-4">
+            {/* İlerleme Çubuğu */}
+            <div className="mt-3.5 flex items-center gap-4">
               <div className="flex-1">
                 <div className="h-2 w-full rounded-full bg-gray-200 dark:bg-gray-800 overflow-hidden">
                   <motion.div 
@@ -1069,42 +1023,120 @@ export default function ProfileTab({
                   />
                 </div>
               </div>
-              
-              {/* Hedef Değiştirme Butonları */}
-              <div className="flex items-center gap-1.5 shrink-0 select-none">
-                <button 
-                  onClick={() => {
-                    const next = Math.max(5, dailyTimeTarget - 5);
-                    setDailyTimeTarget(next);
-                    localStorage.setItem('linguist_target_daily_time', String(next));
-                    syncTrigger();
-                  }}
-                  className={`w-6 h-6 rounded-md flex items-center justify-center font-extrabold text-xs border hover:bg-gray-100 active:scale-90 transition-all cursor-pointer ${
-                    isDarkMode ? 'border-gray-700 text-gray-300 hover:bg-[#1A1A1E]' : 'border-gray-300 text-gray-600'
-                  }`}
-                  title="Hedefi Azalt"
-                >
-                  -
-                </button>
-                <span className={`text-[9px] font-bold w-12 text-center py-0.5 rounded ${
-                  isDarkMode ? 'bg-[#1A1A1E] text-gray-300' : 'bg-gray-100 text-gray-750'
+              <div className="flex items-center gap-1 shrink-0">
+                <span className={`text-[10px] font-bold px-2 py-0.5 rounded-md ${
+                  todayMins >= 20 
+                    ? 'bg-[#4ECDC4]/10 text-[#4ECDC4]' 
+                    : isDarkMode ? 'bg-[#1A1A1E] text-gray-400' : 'bg-gray-100 text-gray-600'
                 }`}>
-                  Hedef: {dailyTimeTarget}d
+                  {todayMins >= 20 ? 'Başarıldı! 🎉' : 'Devam Ediyor'}
                 </span>
-                <button 
-                  onClick={() => {
-                    const next = Math.min(120, dailyTimeTarget + 5);
-                    setDailyTimeTarget(next);
-                    localStorage.setItem('linguist_target_daily_time', String(next));
-                    syncTrigger();
-                  }}
-                  className={`w-6 h-6 rounded-md flex items-center justify-center font-extrabold text-xs border hover:bg-gray-100 active:scale-90 transition-all cursor-pointer ${
-                    isDarkMode ? 'border-gray-700 text-gray-300 hover:bg-[#1A1A1E]' : 'border-gray-300 text-gray-600'
-                  }`}
-                  title="Hedefi Artır"
-                >
-                  +
-                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Kart 2: Günlük Kelime Kaydı */}
+          <div className={`p-4 rounded-2xl border transition-all duration-300 ${
+            isDarkMode 
+              ? 'bg-[#121214]/60 border-[#2A2A30] hover:border-[#4ECDC4]/40' 
+              : 'bg-gray-50/50 border-gray-150 hover:border-[#4ECDC4]/30'
+          }`}>
+            <div className="flex justify-between items-start gap-4 mb-2.5">
+              <div className="flex items-center gap-3 min-w-0 flex-1">
+                <div className="p-2 rounded-xl bg-[#4ECDC4]/15 text-[#4ECDC4] shrink-0">
+                  <Sparkles className="w-4.5 h-4.5" />
+                </div>
+                <div className="min-w-0 flex-1">
+                  <h3 className={`text-xs font-bold font-headline-lg truncate ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
+                    Günlük Kelime Kaydı
+                  </h3>
+                  <p className="text-[10px] text-gray-400 mt-0.5 leading-snug">
+                    Hikayelerden kaydettiğin yeni kelimeler (Hedef: 10).
+                  </p>
+                </div>
+              </div>
+              <div className="text-right shrink-0">
+                <span className="text-sm font-extrabold text-[#4ECDC4] font-headline-lg whitespace-nowrap">
+                  {todayWords} / 10
+                </span>
+                <p className="text-[9px] text-gray-400 font-medium">Kelime</p>
+              </div>
+            </div>
+            
+            {/* İlerleme Çubuğu */}
+            <div className="mt-3.5 flex items-center gap-4">
+              <div className="flex-1">
+                <div className="h-2 w-full rounded-full bg-gray-200 dark:bg-gray-800 overflow-hidden">
+                  <motion.div 
+                    className="h-full bg-[#4ECDC4] rounded-full"
+                    initial={{ width: 0 }}
+                    animate={{ width: `${wordGoalPercent}%` }}
+                    transition={{ duration: 1 }}
+                  />
+                </div>
+              </div>
+              <div className="flex items-center gap-1 shrink-0">
+                <span className={`text-[10px] font-bold px-2 py-0.5 rounded-md ${
+                  todayWords >= 10 
+                    ? 'bg-[#4ECDC4]/10 text-[#4ECDC4]' 
+                    : isDarkMode ? 'bg-[#1A1A1E] text-gray-400' : 'bg-gray-100 text-gray-600'
+                }`}>
+                  {todayWords >= 10 ? 'Başarıldı! 🎉' : 'Devam Ediyor'}
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Kart 3: Günlük Sınav Başarısı */}
+          <div className={`p-4 rounded-2xl border transition-all duration-300 ${
+            isDarkMode 
+              ? 'bg-[#121214]/60 border-[#2A2A30] hover:border-[#FF6B6B]/40' 
+              : 'bg-gray-50/50 border-gray-150 hover:border-[#FF6B6B]/30'
+          }`}>
+            <div className="flex justify-between items-start gap-4 mb-2.5">
+              <div className="flex items-center gap-3 min-w-0 flex-1">
+                <div className="p-2 rounded-xl bg-[#FF6B6B]/15 text-[#FF6B6B] shrink-0">
+                  <BookOpen className="w-4.5 h-4.5" />
+                </div>
+                <div className="min-w-0 flex-1">
+                  <h3 className={`text-xs font-bold font-headline-lg truncate ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
+                    Günlük Sınav Başarısı
+                  </h3>
+                  <p className="text-[10px] text-gray-400 mt-0.5 leading-snug">
+                    {solvedQuizzes < 5 
+                      ? '5 quiz tamamlandığında başarı yüzdeniz hesaplanır.' 
+                      : 'Çözdüğün tüm quizlerin ortalama başarısı.'}
+                  </p>
+                </div>
+              </div>
+              <div className="text-right shrink-0">
+                <span className="text-sm font-extrabold text-[#FF6B6B] font-headline-lg whitespace-nowrap">
+                  {solvedQuizzes < 5 ? `${solvedQuizzes} / 5 quiz` : `%${avgSuccessPercent} Başarı`}
+                </span>
+                <p className="text-[9px] text-gray-400 font-medium">Sınav</p>
+              </div>
+            </div>
+            
+            {/* İlerleme Çubuğu */}
+            <div className="mt-3.5 flex items-center gap-4">
+              <div className="flex-1">
+                <div className="h-2 w-full rounded-full bg-gray-200 dark:bg-gray-800 overflow-hidden">
+                  <motion.div 
+                    className="h-full bg-gradient-to-r from-[#FF6B6B] to-[#FFE66D] rounded-full"
+                    initial={{ width: 0 }}
+                    animate={{ width: `${solvedQuizzes < 5 ? Math.round((solvedQuizzes / 5) * 100) : avgSuccessPercent}%` }}
+                    transition={{ duration: 1 }}
+                  />
+                </div>
+              </div>
+              <div className="flex items-center gap-1 shrink-0">
+                <span className={`text-[10px] font-bold px-2 py-0.5 rounded-md ${
+                  solvedQuizzes >= 5 
+                    ? 'bg-[#4ECDC4]/10 text-[#4ECDC4]' 
+                    : isDarkMode ? 'bg-[#1A1A1E] text-gray-400' : 'bg-gray-100 text-gray-600'
+                }`}>
+                  {solvedQuizzes >= 5 ? 'Başarıldı! 🎉' : 'Kilitli'}
+                </span>
               </div>
             </div>
           </div>
@@ -1346,6 +1378,26 @@ export default function ProfileTab({
         <div className={`divide-y transition-colors ${
           isDarkMode ? 'divide-[#2A2A30]' : 'divide-[#FFE66D]/60'
         }`}>
+          {/* Can (Enerji) Durumu Göstergesi */}
+          {!stats.isPremium && (
+            <div className={`w-full flex items-center justify-between p-4 px-6 select-none transition-colors ${
+              isDarkMode ? 'text-gray-250' : 'text-gray-700'
+            }`}>
+              <span className="text-xs font-bold flex items-center gap-2 font-headline-lg">
+                <Heart className="w-4.5 h-4.5 text-[#FF6B6B] fill-[#FF6B6B]" />
+                Mevcut Can (Enerji)
+              </span>
+              <div className="flex items-center gap-2">
+                <span className="text-xs font-mono font-extrabold text-[#FF6B6B]">{(stats.hearts ?? 5)} / 5</span>
+                {(stats.hearts ?? 5) < 5 && refillCountdown && (
+                  <span className="text-[10.5px] font-mono font-black bg-[#FF6B6B]/15 text-[#FF6B6B] px-2.5 py-0.5 rounded-full flex items-center gap-1">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#FF6B6B] animate-pulse" />
+                    {refillCountdown}
+                  </span>
+                )}
+              </div>
+            </div>
+          )}
           <button
             onClick={handleShareClick}
             className={`w-full flex items-center justify-between p-4 px-6 transition-colors group text-left cursor-pointer ${
@@ -1366,8 +1418,21 @@ export default function ProfileTab({
             <MessageSquare className="w-4 h-4 text-[#4ECDC4]" />
           </button>
 
-          {/* Davet Kodu Gir / Bilgi Satırı */}
-          {referredBy ? (
+          <button
+            onClick={() => setIsPrivacyModalOpen(true)}
+            className={`w-full flex items-center justify-between p-4 px-6 transition-colors group text-left cursor-pointer ${
+              isDarkMode ? 'hover:bg-[#121214] text-gray-200' : 'hover:bg-[#FFFBF0]'
+            }`}
+          >
+            <span className="text-xs font-bold">Gizlilik Politikası</span>
+            <Shield className="w-4 h-4 text-emerald-500" />
+          </button>
+
+
+
+          {/* Davet Kodu Gir / Bilgi Satırı - Kaldırıldı */}
+          {/*
+          referredBy ? (
             <div
               className={`w-full flex items-center justify-between p-4 px-6 transition-colors text-left select-none ${
                 isDarkMode ? 'text-gray-400 bg-[#121214]/10' : 'text-gray-650 bg-gray-50/50'
@@ -1389,22 +1454,23 @@ export default function ProfileTab({
               <span className="text-xs font-bold">Davet Kodu Gir</span>
               <Sparkles className="w-4 h-4 text-[#FFE66D]" />
             </button>
-          )}
+          )
+          */}
 
           {stats.isPremium && (
             <button
               onClick={() => setShowPremiumBenefitsModal(true)}
-              className={`w-full flex items-center justify-between p-4 px-6 transition-colors group text-left text-emerald-500 font-extrabold cursor-pointer ${
+              className={`w-full flex items-center justify-between py-3 px-5 transition-colors group text-left text-emerald-500 font-extrabold cursor-pointer ${
                 isDarkMode ? 'hover:bg-[#121214]' : 'hover:bg-[#FFFBF0]'
               }`}
             >
-              <span className="text-xs flex items-center gap-2 font-headline-lg">
-                <Crown className="w-5 h-5 text-[#FFE66D] fill-[#FFE66D]" />
+              <span className="text-xs flex items-center gap-1.5 font-headline-lg">
+                <Crown className="w-4.5 h-4.5 text-[#FFE66D] fill-[#FFE66D]" />
                 Premium Üye Ayrıcalıkları
               </span>
-              <div className="flex items-center gap-1 text-[10px] bg-emerald-500/10 text-emerald-500 px-2.5 py-0.5 rounded-full border border-emerald-500/30">
+              <div className="flex items-center gap-1 text-[9.5px] bg-emerald-500/10 text-emerald-500 px-2 py-0.5 rounded-full border border-emerald-500/20">
                 <span>İncele</span>
-                <ChevronRight className="w-3.5 h-3.5 text-emerald-500 group-hover:translate-x-1 transition-all" />
+                <ChevronRight className="w-3 h-3 text-emerald-500 group-hover:translate-x-1 transition-all" />
               </div>
             </button>
           )}
@@ -1418,11 +1484,24 @@ export default function ProfileTab({
             >
               <span className="text-xs flex items-center gap-2 font-headline-lg">
                 <Crown className="w-5 h-5 text-[#FFE66D] fill-[#FF6B6B]" />
-                İngilizce Öyküm Premium Satın Al (99₺)
+                İngilizce Öyküm Premium Satın Al
               </span>
               <ChevronRight className="w-4 h-4 text-[#FF6B6B] group-hover:translate-x-1 transition-all" />
             </button>
           )}
+
+          <button
+            onClick={() => setShowDeleteConfirm(true)}
+            className={`w-full flex items-center justify-between p-4 px-6 transition-colors group text-left text-rose-500 font-extrabold cursor-pointer ${
+              isDarkMode ? 'hover:bg-[#121214]' : 'hover:bg-[#FFFBF0]'
+            }`}
+          >
+            <span className="text-xs flex items-center gap-2 font-headline-lg">
+              <Trash2 className="w-4.5 h-4.5 text-rose-500" />
+              Hesabımı ve Verilerimi Sil
+            </span>
+            <ChevronRight className="w-4 h-4 text-rose-500 group-hover:translate-x-1 transition-all" />
+          </button>
 
 
 
@@ -1443,7 +1522,7 @@ export default function ProfileTab({
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.95, opacity: 0, y: 15 }}
               transition={{ type: "spring", stiffness: 350, damping: 28 }}
-              className={`w-full max-w-md rounded-[32px] p-6 shadow-2xl relative transition-all border-2 z-10 ${
+              className={`w-full max-w-sm rounded-3xl p-4.5 shadow-2xl relative transition-all border-2 z-10 ${
                 isDarkMode 
                   ? 'bg-[#1A1A1E] border-[#2A2A30] text-white shadow-black/80' 
                   : 'bg-white border-[#FFE66D] text-gray-800 shadow-slate-200'
@@ -1452,80 +1531,80 @@ export default function ProfileTab({
               {/* Close Button */}
               <button
                 onClick={() => setShowPremiumBenefitsModal(false)}
-                className={`absolute top-4 right-4 p-1.5 rounded-full hover:bg-gray-200/20 transition-all cursor-pointer ${
-                  isDarkMode ? 'text-gray-400' : 'text-gray-550'
+                className={`absolute top-3 right-3 p-1 rounded-full hover:bg-gray-200/20 transition-all cursor-pointer ${
+                  isDarkMode ? 'text-gray-400' : 'text-gray-555'
                 }`}
                 title="Kapat"
               >
-                <X className="w-5 h-5" />
+                <X className="w-4.5 h-4.5" />
               </button>
 
-              <div className="flex flex-col items-center text-center pt-2">
-                <div className="w-14 h-14 bg-[#FFE66D]/15 rounded-full flex items-center justify-center border border-[#FFE66D]/45 mb-4 animate-pulse">
-                  <Crown className="w-8 h-8 text-[#FFE66D] fill-[#FFE66D]" />
+              <div className="flex flex-col items-center text-center pt-1.5">
+                <div className="w-11 h-11 bg-[#FFE66D]/15 rounded-full flex items-center justify-center border border-[#FFE66D]/45 mb-2.5 animate-pulse">
+                  <Crown className="w-6 h-6 text-[#FFE66D] fill-[#FFE66D]" />
                 </div>
                 
-                <h3 className="font-bold text-lg font-headline-lg mb-1">
+                <h3 className="font-bold text-base font-headline-lg mb-0.5">
                   Premium Ayrıcalıklarınız
                 </h3>
-                <p className="text-[10px] text-gray-400 font-extrabold uppercase tracking-widest mb-6">
+                <p className="text-[9px] text-gray-400 font-extrabold uppercase tracking-widest mb-4">
                   İNGİLİZCE ÖYKÜM PREMİUM
                 </p>
 
                 {/* Benefits List */}
-                <div className="w-full text-left space-y-3.5 mb-6">
-                  <div className={`p-3.5 rounded-2xl border-2 flex items-start gap-3.5 transition-all ${
+                <div className="w-full text-left space-y-2.5 mb-4.5">
+                  <div className={`p-2.5 rounded-xl border-2 flex items-start gap-2.5 transition-all ${
                     isDarkMode ? 'bg-[#121214] border-gray-800' : 'bg-[#FFFDF5] border-[#FFE66D]/45'
                   }`}>
-                    <div className="w-9 h-9 bg-orange-500/10 rounded-xl flex items-center justify-center text-orange-500 shrink-0 border border-orange-500/20">
-                      <Flame className="w-5 h-5 fill-orange-500/20" />
+                    <div className="w-8 h-8 bg-orange-500/10 rounded-lg flex items-center justify-center text-orange-500 shrink-0 border border-orange-500/20">
+                      <Flame className="w-4.5 h-4.5 fill-orange-500/20" />
                     </div>
                     <div>
-                      <h4 className="font-extrabold text-xs text-orange-500">Sınırsız Enerji & Can</h4>
-                      <p className="text-[10px] text-gray-400 font-semibold mt-0.5 leading-relaxed">Hata yapmaktan korkmayın! Canınız hiçbir zaman azalmaz, kesintisiz okuma keyfini sürersiniz.</p>
+                      <h4 className="font-extrabold text-[11px] text-orange-500">Sınırsız Enerji & Can</h4>
+                      <p className="text-[9.5px] text-gray-400 font-semibold mt-0.5 leading-snug">Hata yapmaktan korkmayın! Canınız hiçbir zaman azalmaz, kesintisiz okuma keyfini sürersiniz.</p>
                     </div>
                   </div>
 
-                  <div className={`p-3.5 rounded-2xl border-2 flex items-start gap-3.5 transition-all ${
+                  <div className={`p-2.5 rounded-xl border-2 flex items-start gap-2.5 transition-all ${
                     isDarkMode ? 'bg-[#121214] border-gray-800' : 'bg-[#FFFDF5] border-[#FFE66D]/45'
                   }`}>
-                    <div className="w-9 h-9 bg-yellow-500/10 rounded-xl flex items-center justify-center text-yellow-500 shrink-0 border border-yellow-500/20">
-                      <Zap className="w-5 h-5 fill-yellow-500/20" />
+                    <div className="w-8 h-8 bg-yellow-500/10 rounded-lg flex items-center justify-center text-yellow-500 shrink-0 border border-yellow-500/20">
+                      <Zap className="w-4.5 h-4.5 fill-yellow-500/20" />
                     </div>
                     <div>
-                      <h4 className="font-extrabold text-xs text-yellow-600 dark:text-yellow-400">Quiz Barajlarını Anında Atla</h4>
-                      <p className="text-[10px] text-gray-400 font-semibold mt-0.5 leading-relaxed">Dilediğiniz an quizi çözmek zorunda kalmadan, tek tuşla bir sonraki sayfaya veya bölüme atlayabilirsiniz.</p>
+                      <h4 className="font-extrabold text-[11px] text-yellow-600 dark:text-yellow-400">Quiz Barajlarını Anında Atla</h4>
+                      <p className="text-[9.5px] text-gray-400 font-semibold mt-0.5 leading-snug">Dilediğiniz an quizi çözmek zorunda kalmadan, tek tuşla bir sonraki sayfaya veya bölüme atlayabilirsiniz.</p>
                     </div>
                   </div>
 
-                  <div className={`p-3.5 rounded-2xl border-2 flex items-start gap-3.5 transition-all ${
+                  <div className={`p-2.5 rounded-xl border-2 flex items-start gap-2.5 transition-all ${
                     isDarkMode ? 'bg-[#121214] border-gray-800' : 'bg-[#FFFDF5] border-[#FFE66D]/45'
                   }`}>
-                    <div className="w-9 h-9 bg-pink-500/10 rounded-xl flex items-center justify-center text-pink-500 shrink-0 border border-pink-500/20">
-                      <Sparkles className="w-5 h-5 fill-pink-500/20" />
+                    <div className="w-8 h-8 bg-pink-500/10 rounded-lg flex items-center justify-center text-pink-500 shrink-0 border border-pink-500/20">
+                      <Sparkles className="w-4.5 h-4.5 fill-pink-500/20" />
                     </div>
                     <div>
-                      <h4 className="font-extrabold text-xs text-pink-500">Akıllı Yapay Zeka Sözlüğü</h4>
-                      <p className="text-[10px] text-gray-400 font-semibold mt-0.5 leading-relaxed">Kelimelerin ve deyimlerin bağlamsal detaylı Türkçe açıklamalarına ve örnek cümlelerine sınırsız erişin.</p>
+                      <h4 className="font-extrabold text-[11px] text-pink-500">Akıllı Yapay Zeka Sözlüğü</h4>
+                      <p className="text-[9.5px] text-gray-400 font-semibold mt-0.5 leading-snug">Kelimelerin ve deyimlerin bağlamsal detaylı Türkçe açıklamalarına ve örnek cümlelerine sınırsız erişin.</p>
                     </div>
                   </div>
 
-                  <div className={`p-3.5 rounded-2xl border-2 flex items-start gap-3.5 transition-all ${
+                  <div className={`p-2.5 rounded-xl border-2 flex items-start gap-2.5 transition-all ${
                     isDarkMode ? 'bg-[#121214] border-gray-800' : 'bg-[#FFFDF5] border-[#FFE66D]/45'
                   }`}>
-                    <div className="w-9 h-9 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-500 shrink-0 border border-purple-500/20">
-                      <Volume2 className="w-5 h-5 fill-purple-500/20" />
+                    <div className="w-8 h-8 bg-purple-500/10 rounded-lg flex items-center justify-center text-purple-500 shrink-0 border border-purple-500/20">
+                      <Volume2 className="w-4.5 h-4.5 fill-purple-500/20" />
                     </div>
                     <div>
-                      <h4 className="font-extrabold text-xs text-purple-500">Doğal Akıcı Ses Sentezi</h4>
-                      <p className="text-[10px] text-gray-400 font-semibold mt-0.5 leading-relaxed">Cümleleri ve kelimeleri akıcı, yüksek kaliteli seslendirmelerle dinleyerek kulak aşinalığınızı katlayın.</p>
+                      <h4 className="font-extrabold text-[11px] text-purple-500">Doğal Akıcı Ses Sentezi</h4>
+                      <p className="text-[9.5px] text-gray-400 font-semibold mt-0.5 leading-snug">Cümleleri ve kelimeleri akıcı, yüksek kaliteli seslendirmelerle dinleyerek kulak aşinalığınızı katlayın.</p>
                     </div>
                   </div>
                 </div>
 
                 <button
                   onClick={() => setShowPremiumBenefitsModal(false)}
-                  className="w-full bg-[#FF6B6B] hover:bg-[#e05a5a] text-white text-xs font-bold py-3.5 rounded-xl shadow-md transition-all flex items-center justify-center cursor-pointer shadow-[#FF6B6B]/20"
+                  className="w-full bg-[#FF6B6B] hover:bg-[#e05a5a] text-white text-xs font-bold py-2.5 rounded-xl shadow-md transition-all flex items-center justify-center cursor-pointer shadow-[#FF6B6B]/20"
                 >
                   Harika, Teşekkürler!
                 </button>
@@ -1604,7 +1683,7 @@ export default function ProfileTab({
       {/* MOCK HIGH-FIDELITY SOCIAL SHARING SYSTEM MODAL */}
       <AnimatePresence>
         {isShareModalOpen && (() => {
-          const BASE_SHARE_URL = 'https://play.google.com/store/apps/details?id=com.oykum.app';
+          const BASE_SHARE_URL = 'https://play.google.com/store/apps/details?id=com.ingilizceoykum.app';
           const shareUrlWithInvite = `${BASE_SHARE_URL}&invite=${shareCode}`;
           const shareText = `İngilizce Öyküm ile harika hikayeler okuyup yeni kelimeler öğreniyorum! Sen de hemen indir ve bana katıl: ${BASE_SHARE_URL}\nDavet Kodum: ${shareCode}`;
           const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(shareUrlWithInvite)}`;
@@ -1622,41 +1701,75 @@ export default function ProfileTab({
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.95, opacity: 0 }}
                 transition={{ duration: 0.2 }}
-                className={`w-full max-w-sm rounded-[28px] p-6 flex flex-col shadow-2xl relative transition-all border-2 z-10 ${
-                  isDarkMode ? 'bg-[#1A1A1E] border-[#2A2A30]' : 'bg-white border-[#FFE66D]'
+                className={`w-full max-w-sm rounded-[28px] p-5.5 flex flex-col shadow-2xl relative transition-all border-2 z-10 ${
+                  isDarkMode 
+                    ? 'bg-gradient-to-b from-[#141419] to-[#0A0A0F] border-[#FF6B6B]/30 text-white shadow-black/80' 
+                    : 'bg-gradient-to-b from-[#FFFDF9] to-[#FFF9F0] border-[#FF6B6B]/40 text-[#2D3436] shadow-slate-200'
                 }`}
               >
-                {/* Header */}
-                <div className="flex justify-between items-center mb-4">
-                  <h3 className={`font-headline-lg text-base font-extrabold ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
-                    Uygulamayı Paylaş
-                  </h3>
+                {/* Header Banner with App Logo */}
+                <div className="flex items-center gap-3 mb-4 p-2.5 rounded-2xl bg-[#FF6B6B]/10 dark:bg-[#FF6B6B]/15 border border-[#FF6B6B]/20 relative">
+                  <div className="w-11 h-11 bg-white rounded-xl shadow-sm border border-gray-150 flex items-center justify-center p-1.5 overflow-hidden shrink-0">
+                    <img 
+                      src="/icon-192.png" 
+                      alt="İngilizce Öyküm Logo" 
+                      className="w-full h-full object-contain select-none rounded-lg"
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).src = 'assets/icon.png';
+                      }}
+                    />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className={`font-headline-lg text-sm font-extrabold tracking-tight ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
+                      İngilizce Öyküm
+                    </h3>
+                    <p className={`text-[10px] font-bold ${isDarkMode ? 'text-[#FF8787]' : 'text-[#FF6B6B]'}`}>
+                      Öykülerle Dil Öğrenimi
+                    </p>
+                  </div>
                   <button
                     onClick={() => setIsShareModalOpen(false)}
-                    className={`p-1.5 rounded-full cursor-pointer transition-colors ${
-                      isDarkMode ? 'text-gray-400 hover:bg-[#2A2A30] hover:text-white' : 'text-gray-500 hover:bg-gray-100 hover:text-gray-800'
+                    className={`p-1.5 rounded-full cursor-pointer transition-all duration-300 ${
+                      isDarkMode 
+                        ? 'text-gray-400 hover:bg-[#2A2A30] hover:text-white hover:rotate-90' 
+                        : 'text-gray-555 hover:bg-gray-200/50 hover:text-gray-900 hover:rotate-90'
                     }`}
                   >
                     <X className="w-4 h-4" />
                   </button>
                 </div>
 
-                {/* QR Code Card */}
-                <div className="flex flex-col items-center justify-center py-2.5 mb-4 border border-dashed border-gray-400/20 rounded-2xl p-4 bg-gray-50/5 dark:bg-[#121214]/40">
-                  <div className="p-3 bg-white rounded-2xl shadow-xs border border-gray-100 mb-2">
+                {/* QR Code Scanner Card */}
+                <div className={`flex flex-col items-center justify-center p-4 mb-4 border border-dashed rounded-2xl select-none ${
+                  isDarkMode 
+                    ? 'bg-[#181822] border-[#FF6B6B]/20' 
+                    : 'bg-[#FFFBF5] border-[#FF6B6B]/20'
+                }`}>
+                  <div className="relative p-3 bg-white rounded-2xl shadow-xs border border-gray-150 mb-2.5 flex items-center justify-center hover:scale-102 transition-transform duration-300">
+                    {/* Scanner corners */}
+                    <div className="absolute top-1.5 left-1.5 w-3 h-3 border-t-2 border-l-2 border-[#FF6B6B]" />
+                    <div className="absolute top-1.5 right-1.5 w-3 h-3 border-t-2 border-r-2 border-[#FF6B6B]" />
+                    <div className="absolute bottom-1.5 left-1.5 w-3 h-3 border-b-2 border-l-2 border-[#FF6B6B]" />
+                    <div className="absolute bottom-1.5 right-1.5 w-3 h-3 border-b-2 border-r-2 border-[#FF6B6B]" />
+                    
                     <img 
                       src={qrCodeUrl} 
                       alt="İngilizce Öyküm QR Code" 
-                      className="w-40 h-40 object-contain select-none animate-fade-in"
+                      className="w-36 h-36 object-contain select-none animate-fade-in"
                     />
                   </div>
-                  <p className="text-[10px] text-center font-bold text-[#FF6B6B] leading-normal max-w-[240px]">
-                    Arkadaşınız bu kodu kamerasıyla okutarak uygulamayı anında indirebilir! 📸
-                  </p>
+                  <div className="flex items-center gap-1.5 justify-center max-w-[250px]">
+                    <Camera className="w-4 h-4 text-[#FF6B6B] shrink-0" />
+                    <p className={`text-[10.5px] text-center font-extrabold leading-normal ${
+                      isDarkMode ? 'text-gray-200' : 'text-gray-700'
+                    }`}>
+                      Arkadaşınız bu kodu kamerasıyla okutarak uygulamayı anında indirebilir! 📸
+                    </p>
+                  </div>
                 </div>
 
                 {/* Social Channels row */}
-                <div className="flex justify-center items-center gap-3.5 mb-5 select-none">
+                <div className="flex justify-center items-center gap-3.5 mb-4.5 select-none">
                   {/* WhatsApp */}
                   <a
                     href={`https://api.whatsapp.com/send?text=${encodeURIComponent(shareText)}`}
@@ -1665,8 +1778,8 @@ export default function ProfileTab({
                     onClick={() => handlePlatformShare('WhatsApp')}
                     className="flex flex-col items-center gap-1 cursor-pointer text-center group"
                   >
-                    <div className="w-10 h-10 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-xs transition-transform group-hover:scale-105 active:scale-95">
-                      <MessageCircle className="w-5 h-5 fill-white text-[#25D366]" />
+                    <div className="w-9.5 h-9.5 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-xs transition-transform group-hover:scale-105 active:scale-95">
+                      <MessageCircle className="w-4.5 h-4.5 fill-white text-[#25D366]" />
                     </div>
                     <span className="text-[9px] font-bold text-gray-400 group-hover:text-[#25D366] transition-colors">WhatsApp</span>
                   </a>
@@ -1679,8 +1792,8 @@ export default function ProfileTab({
                     onClick={() => handlePlatformShare('Telegram')}
                     className="flex flex-col items-center gap-1 cursor-pointer text-center group"
                   >
-                    <div className="w-10 h-10 rounded-full bg-[#0088cc] text-white flex items-center justify-center shadow-xs transition-transform group-hover:scale-105 active:scale-95">
-                      <Send className="w-4.5 h-4.5 fill-white text-[#0088cc] translate-x-[-1px] translate-y-[0.5px]" />
+                    <div className="w-9.5 h-9.5 rounded-full bg-[#0088cc] text-white flex items-center justify-center shadow-xs transition-transform group-hover:scale-105 active:scale-95">
+                      <Send className="w-4 h-4 fill-white text-[#0088cc] translate-x-[-0.5px] translate-y-[0.5px]" />
                     </div>
                     <span className="text-[9px] font-bold text-gray-400 group-hover:text-[#0088cc] transition-colors">Telegram</span>
                   </a>
@@ -1691,8 +1804,8 @@ export default function ProfileTab({
                     onClick={() => handlePlatformShare('Mesajlar')}
                     className="flex flex-col items-center gap-1 cursor-pointer text-center group"
                   >
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#FF512F] to-[#DD2476] text-white flex items-center justify-center shadow-xs transition-transform group-hover:scale-105 active:scale-95">
-                      <MessageSquare className="w-4.5 h-4.5 text-white" />
+                    <div className="w-9.5 h-9.5 rounded-full bg-gradient-to-tr from-[#FF512F] to-[#DD2476] text-white flex items-center justify-center shadow-xs transition-transform group-hover:scale-105 active:scale-95">
+                      <MessageSquare className="w-4 h-4 text-white" />
                     </div>
                     <span className="text-[9px] font-bold text-gray-400 group-hover:text-[#DD2476] transition-colors">SMS</span>
                   </a>
@@ -1705,8 +1818,8 @@ export default function ProfileTab({
                     onClick={() => handlePlatformShare('Facebook')}
                     className="flex flex-col items-center gap-1 cursor-pointer text-center group"
                   >
-                    <div className="w-10 h-10 rounded-full bg-[#1877F2] text-white flex items-center justify-center shadow-xs transition-transform group-hover:scale-105 active:scale-95">
-                      <Facebook className="w-5 h-5 fill-white text-[#1877F2]" />
+                    <div className="w-9.5 h-9.5 rounded-full bg-[#1877F2] text-white flex items-center justify-center shadow-xs transition-transform group-hover:scale-105 active:scale-95">
+                      <Facebook className="w-4.5 h-4.5 fill-white text-[#1877F2]" />
                     </div>
                     <span className="text-[9px] font-bold text-gray-400 group-hover:text-[#1877F2] transition-colors">Facebook</span>
                   </a>
@@ -1717,8 +1830,8 @@ export default function ProfileTab({
                     onClick={() => handlePlatformShare('E-posta')}
                     className="flex flex-col items-center gap-1 cursor-pointer text-center group"
                   >
-                    <div className="w-10 h-10 rounded-full bg-[#EA4335] text-white flex items-center justify-center shadow-xs transition-transform group-hover:scale-105 active:scale-95">
-                      <Mail className="w-4.5 h-4.5 text-white" />
+                    <div className="w-9.5 h-9.5 rounded-full bg-[#EA4335] text-white flex items-center justify-center shadow-xs transition-transform group-hover:scale-105 active:scale-95">
+                      <Mail className="w-4 h-4 text-white" />
                     </div>
                     <span className="text-[9px] font-bold text-gray-400 group-hover:text-[#EA4335] transition-colors">E-posta</span>
                   </a>
@@ -1737,11 +1850,11 @@ export default function ProfileTab({
                       readOnly
                       value={BASE_SHARE_URL}
                       onClick={(e) => (e.target as HTMLInputElement).select()}
-                      className="w-full bg-transparent border-none outline-none text-[11px] font-mono text-gray-500 dark:text-gray-450 select-all cursor-pointer"
+                      className="w-full bg-transparent border-none outline-none text-[10.5px] font-mono text-gray-500 dark:text-gray-450 select-all cursor-pointer"
                     />
                     <button
                       onClick={() => handleCopyLinkOrCode(BASE_SHARE_URL, false)}
-                      className="px-3.5 py-1.5 bg-[#FF6B6B] hover:bg-[#FF8787] text-white rounded-lg text-[10px] font-bold transition-all cursor-pointer shadow-2xs active:scale-95 shrink-0"
+                      className="px-3.5 py-1.5 bg-[#FF6B6B] hover:bg-[#FF8787] text-white rounded-lg text-[9.5px] font-bold transition-all cursor-pointer shadow-2xs active:scale-95 shrink-0"
                     >
                       Kopyala
                     </button>
@@ -1758,7 +1871,7 @@ export default function ProfileTab({
                         url: BASE_SHARE_URL
                       }).catch(() => {});
                     }}
-                    className={`w-full flex items-center justify-center gap-2 py-2.5 rounded-xl border text-[10px] font-bold transition-colors cursor-pointer ${
+                    className={`w-full flex items-center justify-center gap-2 py-2 rounded-xl border text-[9.5px] font-bold transition-colors cursor-pointer ${
                       isDarkMode 
                         ? 'bg-transparent border-gray-800 hover:bg-white/5 text-gray-300' 
                         : 'bg-transparent border-gray-200 hover:bg-gray-50 text-gray-600'
@@ -1780,7 +1893,7 @@ export default function ProfileTab({
                         isDarkMode ? 'bg-[#1A1A1E]' : 'bg-white'
                       }`}
                     >
-                      <RefreshCw className="w-6 h-6 text-[#FF6B6B] animate-spin mb-3" />
+                      <RefreshCw className="w-5 h-5 text-[#FF6B6B] animate-spin mb-3" />
                       <p className={`text-[10px] font-bold ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
                         {sharePlatform} İçin Hazırlanıyor...
                       </p>
@@ -2583,6 +2696,71 @@ export default function ProfileTab({
         )}
       </AnimatePresence>
 
+      {/* DELETE ACCOUNT CONFIRMATION MODAL */}
+      <AnimatePresence>
+        {showDeleteConfirm && (
+          <div className="fixed inset-0 z-50 bg-[#2D3436]/55 backdrop-blur-xs flex items-center justify-center p-4">
+            <motion.div
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              className={`max-w-xs w-full rounded-[24px] border-2 p-5 flex flex-col shadow-2xl relative transition-all ${
+                isDarkMode ? 'bg-[#1A1A1E] border-[#2A2A30]' : 'bg-white border-[#FFE66D]'
+              }`}
+            >
+              <div className="mx-auto w-12 h-12 rounded-full bg-rose-500/10 dark:bg-rose-500/15 flex items-center justify-center mb-4 text-rose-500">
+                <Trash2 className="w-6 h-6 animate-pulse" />
+              </div>
+
+              <h3 className={`font-headline-lg text-sm font-bold mb-2 text-center ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
+                Hesabımı ve Verilerimi Sil
+              </h3>
+              <p className="text-[10px] text-gray-400 mb-5 leading-relaxed font-semibold text-center font-headline-lg">
+                Hesabınızı ve tüm verilerinizi silmek istediğinize emin misiniz? Bu işlem geri alınamaz ve tüm okuma ilerlemeniz kalıcı olarak silinecektir.
+              </p>
+
+              <div className="flex gap-2.5">
+                <button
+                  type="button"
+                  disabled={isDeletingAccount}
+                  onClick={() => setShowDeleteConfirm(false)}
+                  className={`w-1/2 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer font-headline-lg ${
+                    isDarkMode ? 'bg-[#2A2A30] hover:bg-[#343A40] text-gray-300' : 'bg-gray-150 hover:bg-gray-200 text-gray-600'
+                  } ${isDeletingAccount ? 'opacity-50 cursor-not-allowed' : ''}`}
+                >
+                  Vazgeç
+                </button>
+                <button
+                  type="button"
+                  disabled={isDeletingAccount}
+                  onClick={async () => {
+                    setIsDeletingAccount(true);
+                    setToastMessage('Hesabınız siliniyor... ⏳');
+                    try {
+                      await onDeleteAccount();
+                      setShowDeleteConfirm(false);
+                    } catch (err) {
+                      console.error(err);
+                      setToastMessage('Bir hata oluştu, lütfen tekrar deneyin. ⚠️');
+                      setTimeout(() => setToastMessage(null), 3000);
+                    } finally {
+                      setIsDeletingAccount(false);
+                    }
+                  }}
+                  className="w-1/2 py-2.5 bg-rose-500 text-white rounded-xl text-xs font-bold hover:bg-rose-600 transition-all cursor-pointer shadow-md shadow-rose-500/20 font-headline-lg flex items-center justify-center gap-1.5"
+                >
+                  {isDeletingAccount ? (
+                    <RefreshCw className="w-3.5 h-3.5 animate-spin" />
+                  ) : (
+                    'Kalıcı Olarak Sil'
+                  )}
+                </button>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+
       {/* ENTER INVITATION CODE MODAL */}
       <AnimatePresence>
         {isInviteInputOpen && (
@@ -2642,6 +2820,96 @@ export default function ProfileTab({
                   className="w-1/2 py-2 bg-[#FF6B6B] text-white rounded-xl text-xs font-bold hover:bg-[#e05a5a] transition-all cursor-pointer shadow-md shadow-[#FF6B6B]/20 font-headline-lg"
                 >
                   Uygula
+                </button>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+
+      {/* PRIVACY POLICY MODAL */}
+      <AnimatePresence>
+        {isPrivacyModalOpen && (
+          <div className="fixed inset-0 z-50 bg-[#2D3436]/55 backdrop-blur-xs flex items-center justify-center p-4">
+            <motion.div
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              className={`max-w-md w-full rounded-[24px] border-2 p-6 flex flex-col max-h-[80vh] shadow-2xl relative transition-all ${
+                isDarkMode ? 'bg-[#1A1A1E] border-[#2A2A30]' : 'bg-white border-[#FFE66D]'
+              }`}
+            >
+              {/* Close Button */}
+              <button
+                type="button"
+                onClick={() => setIsPrivacyModalOpen(false)}
+                className={`absolute top-4 right-4 p-1.5 rounded-full transition-colors cursor-pointer ${
+                  isDarkMode ? 'hover:bg-[#2A2A30] text-gray-400' : 'hover:bg-gray-100 text-gray-500'
+                }`}
+              >
+                <X className="w-4 h-4" />
+              </button>
+
+              <div className="flex items-center gap-2 mb-4">
+                <Shield className="w-5 h-5 text-emerald-500" />
+                <h3 className={`font-headline-lg text-sm font-bold ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
+                  Gizlilik Politikası
+                </h3>
+              </div>
+
+              {/* Scrollable Content */}
+              <div 
+                className={`flex-1 overflow-y-auto pr-2 text-left text-[11px] leading-relaxed space-y-4 font-semibold font-headline-lg custom-scrollbar ${
+                  isDarkMode ? 'text-gray-300' : 'text-gray-650'
+                }`}
+              >
+                <p>
+                  <strong>İngilizce Öyküm</strong>, kullanıcılarımızın gizliliğini korumaya büyük önem verir. Bu belge, verilerinizin nasıl toplandığı ve korunduğu hakkında bilgi sağlamak amacıyla hazırlanmıştır.
+                </p>
+
+                <h4 className={`text-xs font-bold mt-3 ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
+                  1. Toplanan Bilgiler ve Amacı
+                </h4>
+                <p>
+                  Uygulamamız doğrudan üyelik (şifre, e-posta) veya sosyal medya girişleri kullanmamaktadır. Cihazınızda tamamen anonim bir <strong>Cihaz Kimliği (Device UUID)</strong> üretilir. Bu kimlik, okuma ilerlemeniz, kazandığınız rozetler ve kaydettiğiniz kelimelerin sunucumuzda güvenli bir şekilde yedeklenmesini sağlamak için kullanılır.
+                </p>
+
+                <h4 className={`text-xs font-bold mt-3 ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
+                  2. Çocukların Gizliliği
+                </h4>
+                <p>
+                  Uygulamamız COPPA ve GDPR çocuk gizliliği kurallarına tam uyumludur. Çocuklardan gerçek ad, soyad, e-posta adresi, telefon numarası veya konum bilgisi gibi hiçbir kişisel veri talep edilmez ve toplanmaz. Tüm süreç tamamen anonim cihaz kimliğiyle yürütülür.
+                </p>
+
+                <h4 className={`text-xs font-bold mt-3 ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
+                  3. Veri Paylaşımı
+                </h4>
+                <p>
+                  Toplanan veriler üçüncü şahıslarla, reklam ağlarıyla veya veri şirketleriyle kesinlikle paylaşılmaz veya satılmaz. Uygulamamızda üçüncü taraf reklamları bulunmamaktadır.
+                </p>
+
+                <h4 className={`text-xs font-bold mt-3 ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
+                  4. Hesap ve Veri Silme
+                </h4>
+                <p>
+                  Dilediğiniz an Profil &gt; Genel Ayarlar menüsündeki "Hesabımı ve Verilerimi Sil" butonunu kullanarak tüm sunucu yedeklerinizi ve cihazınızdaki yerel verilerinizi kalıcı olarak silebilirsiniz.
+                </p>
+
+                <h4 className={`text-xs font-bold mt-3 ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
+                  5. İletişim
+                </h4>
+                <p>
+                  Gizlilik ile ilgili sorularınız için bizimle <strong>colorstrikearda@gmail.com</strong> e-posta adresi üzerinden iletişime geçebilirsiniz.
+                </p>
+              </div>
+
+              <div className="mt-4 pt-3 border-t border-gray-100 dark:border-[#2A2A30] flex justify-end">
+                <button
+                  type="button"
+                  onClick={() => setIsPrivacyModalOpen(false)}
+                  className="px-6 py-2 bg-emerald-500 text-white rounded-xl text-xs font-bold hover:bg-emerald-600 transition-all cursor-pointer shadow-md shadow-emerald-500/20 font-headline-lg"
+                >
+                  Kapat
                 </button>
               </div>
             </motion.div>

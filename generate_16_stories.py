@@ -1,3 +1,4 @@
+from generator_refiner import refine_story
 import os
 import json
 import time
@@ -171,6 +172,17 @@ for idx, story in enumerate(STORIES_TO_GENERATE):
         time.sleep(3) # 3 seconds delay between parts
             
     # Save the story
+    # Refine vocabulary for CEFR A1/A2 compliance
+    story_data = {
+        "en": story_en_paragraphs,
+        "tr": story_tr_paragraphs,
+        "words": story_words
+    }
+    story_data = refine_story(story["level"], story_data, api_key)
+    story_en_paragraphs = story_data["en"]
+    story_tr_paragraphs = story_data["tr"]
+    story_words = story_data["words"]
+
     expanded_data[s_id] = {
         "id": s_id,
         "title": story["title"],
