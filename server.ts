@@ -30,6 +30,73 @@ function verifyPassword(password: string, storedValue: string): boolean {
 function hashEmail(email: string): string {
   return crypto.createHash("sha256").update(email.toLowerCase().trim()).digest("hex");
 }
+
+// Robust Profanity and Argo detection helper
+function checkIsProfane(name: string): boolean {
+  if (!name) return false;
+  
+  const text = name.toLowerCase().trim();
+  
+  const replacements: Record<string, string> = {
+    '0': 'o', '1': 'i', '3': 'e', '4': 'a', '5': 's', '7': 't', '8': 'b',
+    'ı': 'i', 'ö': 'o', 'ü': 'u', 'ş': 's', 'ç': 'c', 'ğ': 'g',
+    'â': 'a', 'î': 'i', 'û': 'u', 'é': 'e'
+  };
+  
+  let normalized = '';
+  for (let i = 0; i < text.length; i++) {
+    const char = text[i];
+    normalized += replacements[char] || char;
+  }
+  
+  // Remove non-alphanumeric character sequences and repeated characters
+  let cleanText = '';
+  for (let i = 0; i < normalized.length; i++) {
+    if (i === 0 || normalized[i] !== normalized[i - 1]) {
+      cleanText += normalized[i];
+    }
+  }
+  
+  const noSpaces = normalized.replace(/[^a-z0-9]/g, '');
+  const cleanNoSpaces = cleanText.replace(/[^a-z0-9]/g, '');
+  
+  const badWords = [
+    // Severe Turkish profanity & argo
+    "orospu", "siktir", "sikti", "siker", "amcik", "yarrak", "yarak", "pezevenk",
+    "kahpe", "pic", "dalyarak", "amına", "amina", "amını", "amini", "ibne",
+    "tassak", "taşşak", "yarag", "yarağ", "göt", "got", "gote", "göte", "gotu",
+    "götü", "götlek", "gotlek", "yavsak", "yavşak", "pust", "puşt", "amk", "aq",
+    "sik", "siki", "sikiş", "sikis", "koyayim", "koyayım", "koyarim", "koyarım",
+    "meme", "gogus", "göğüs", "kalta", "kaltak", "osur", "osurd", "osuruk",
+    "bok", "boki", "boku", "bokye", "boklu", "dild", "dildo", "seks", "sex",
+    "porno", "pipi", "vagina", "vajin", "vajina", "penis", "hıyar", "hiyar",
+    "aptal", "salak", "gerizekali", "gerizekalı", "gerizek", "manyak", "kopek", "köpek",
+    // English profanity
+    "fuck", "bitch", "asshole", "fucker", "cunt", "dick", "cock", "pussy", "bastard",
+    "slut", "whore", "nigga", "nigger",
+    // System words
+    "admin", "yonetici", "moderator", "destek", "support", "sistem", "system",
+    "kurucu", "owner", "staff", "ekip", "team", "yetkili", "developer", "gelistirici"
+  ];
+  
+  // Check substrings for longer bad words
+  const hasLongWord = badWords.some(word => {
+    if (word.length <= 3) return false;
+    return noSpaces.includes(word) || cleanNoSpaces.includes(word);
+  });
+  if (hasLongWord) return true;
+  
+  // Check exact words for short words (with boundaries)
+  const words = normalized.split(/[^a-z0-9]+/);
+  const cleanWords = cleanText.split(/[^a-z0-9]+/);
+  
+  const hasShortWord = badWords.some(word => {
+    if (word.length > 3) return false;
+    return words.includes(word) || cleanWords.includes(word) || noSpaces === word || cleanNoSpaces === word;
+  });
+  
+  return hasShortWord;
+}
 // STORIES_PART1 ve STORIES_PART2 server'a import edilmiyor
 // (600KB+783KB = çok büyük, Render free tier 512MB RAM'i aşıyor)
 // Çeviri için offline dictionary ve CEFR levels kullanılıyor
@@ -757,26 +824,14 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
           data: record.data || {}
         });
       } else {
-        // 2. No matching user found. Automatically register a new guest account!
-        let guestNumber = Math.floor(1000 + Math.random() * 9000);
-        let guestName = `Okur-${guestNumber}`;
-        
-        // Ensure unique username in the database
-        let attempts = 0;
-        while (attempts < 20) {
-          const lowerName = guestName.toLowerCase();
-          const taken = Object.values(usersData).some(user => 
-            user && user.username && user.username.toLowerCase() === lowerName
-          );
-          if (!taken) break;
-          guestNumber = Math.floor(1000 + Math.random() * 9000);
-          guestName = `Okur-${guestNumber}`;
-          attempts++;
-        }
-
-        const lowerUsername = guestName.toLowerCase();
-        const hashedKey = hashEmail(lowerUsername);
+        // 2. No matching user found. Automatically register a new guest account using UUID as the key!
+        const guestEmail = `device-${cleanUuid.toLowerCase()}`;
+        const hashedKey = hashEmail(guestEmail);
         const sessionToken = crypto.randomBytes(32).toString("hex");
+
+        // Generate cosmetic default name (no uniqueness check needed anymore)
+        const guestNumber = Math.floor(1000 + Math.random() * 9000);
+        const guestName = `Okur-${guestNumber}`;
 
         usersData[hashedKey] = {
           username: guestName,
@@ -815,7 +870,7 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
           success: true,
           token: sessionToken,
           username: guestName,
-          email: lowerUsername,
+          email: guestEmail,
           data: usersData[hashedKey].data
         });
       }
@@ -825,6 +880,618 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
     }
   });
 
+
+  // Delete account and all associated data endpoint
+  app.post("/api/delete-account", (req, res) => {
+    try {
+      const { email } = req.body;
+      if (!email || email.trim().length < 3) {
+        return res.status(400).json({ error: "Geçersiz email veya kullanıcı adı." });
+      }
+
+      const cleanEmail = email.toLowerCase().trim();
+      const hashedEmail = hashEmail(cleanEmail);
+      const userRecord = usersData[hashedEmail];
+
+      if (!userRecord) {
+        return res.status(404).json({ error: "Kullanıcı kaydı bulunamadı." });
+      }
+
+      // Authenticate token to ensure the request is authorized
+      const authHeader = req.headers.authorization;
+      const token = authHeader && authHeader.startsWith("Bearer ") ? authHeader.substring(7) : null;
+      const validTokens = userRecord.tokens || [];
+
+      if (!token || !validTokens.includes(token)) {
+        return res.status(401).json({ error: "Oturumunuz geçersiz veya sonlandırılmış. ⚠️" });
+      }
+
+      // Delete user record from database
+      delete usersData[hashedEmail];
+
+      // Also delete any associated guest account linked to the same deviceUuid
+      if (userRecord.deviceUuid) {
+        const guestEmail = `device-${userRecord.deviceUuid.toLowerCase()}`;
+        const hashedGuestEmail = hashEmail(guestEmail);
+        if (usersData[hashedGuestEmail]) {
+          delete usersData[hashedGuestEmail];
+          console.log(`[Linguist Sync] Deleted linked guest account for device: ${userRecord.deviceUuid}`);
+        }
+      }
+
+      saveUsersData();
+
+      console.log(`[Linguist Sync] Deleted user account: ${cleanEmail}`);
+
+      return res.json({ success: true, message: "Hesap ve tüm veriler başarıyla silindi." });
+    } catch (err) {
+      console.error("Delete account error:", err);
+      return res.status(500).json({ error: "Hesap silme işlemi sırasında sunucu hatası oluştu." });
+    }
+  });
+
+  // Account Deletion Web Request endpoints for Google Play Console compatibility
+  const pendingDeletions: Record<string, { code: string; expires: number; key: string }> = {};
+
+  app.get("/delete-account-web", (req, res) => {
+    res.send(`
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İngilizce Öyküm - Hesabımı Sil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: rgba(17, 24, 39, 0.7);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --text-color: #f3f4f6;
+            --text-muted: #9ca3af;
+            --primary: #4ECDC4;
+            --primary-hover: #3cacb0;
+            --error: #ff6b6b;
+            --success: #10b981;
+            --input-bg: rgba(31, 41, 55, 0.5);
+            --input-border: rgba(255, 255, 255, 0.1);
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        body {
+            background-color: var(--bg-color);
+            background-image: radial-gradient(circle at 50% 0%, rgba(78, 205, 196, 0.12) 0%, transparent 50%),
+                              radial-gradient(circle at 100% 100%, rgba(255, 107, 107, 0.05) 0%, transparent 40%);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 480px;
+            perspective: 1000px;
+        }
+        
+        .card {
+            background: var(--card-bg);
+            backdrop-filter: blur(16px);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 40px 32px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 100px rgba(78, 205, 196, 0.05);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 28px;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #ffffff 0%, #a5f3fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .subtitle {
+            font-size: 14px;
+            color: var(--text-muted);
+            text-align: center;
+            margin-bottom: 32px;
+            line-height: 1.5;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            color: var(--primary);
+        }
+        
+        input, select {
+            width: 100%;
+            padding: 14px 16px;
+            background: var(--input-bg);
+            border: 1px solid var(--input-border);
+            border-radius: 12px;
+            color: var(--text-color);
+            font-size: 15px;
+            transition: all 0.3s ease;
+            outline: none;
+        }
+        
+        input:focus, select:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 12px rgba(78, 205, 196, 0.2);
+            background: rgba(31, 41, 55, 0.8);
+        }
+        
+        .btn {
+            width: 100%;
+            padding: 16px;
+            background: var(--primary);
+            color: #0b0f19;
+            border: none;
+            border-radius: 12px;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            box-shadow: 0 4px 12px rgba(78, 205, 196, 0.2);
+        }
+        
+        .btn:hover {
+            background: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(78, 205, 196, 0.3);
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+        }
+        
+        .checkbox-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        
+        .checkbox-container input {
+            width: auto;
+            margin-top: 3px;
+            cursor: pointer;
+        }
+        
+        .checkbox-label {
+            font-size: 13px;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+        
+        .alert {
+            padding: 16px;
+            border-radius: 12px;
+            font-size: 14px;
+            margin-bottom: 24px;
+            line-height: 1.5;
+            display: none;
+        }
+        
+        .alert-error {
+            background: rgba(255, 107, 107, 0.1);
+            border: 1px solid rgba(255, 107, 107, 0.2);
+            color: var(--error);
+        }
+        
+        .alert-success {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            color: var(--success);
+        }
+        
+        .alert-info {
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            color: #60a5fa;
+        }
+        
+        .step-hidden {
+            display: none;
+        }
+        
+        .loader {
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(11, 15, 25, 0.3);
+            border-top: 3px solid #0b0f19;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            display: none;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card">
+            <h1>İngilizce Öyküm</h1>
+            <p class="subtitle" id="form-subtitle">Hesabınızı ve tüm kayıtlı ilerlemelerinizi silmek için aşağıdaki formu doldurun.</p>
+            
+            <div id="alert-box" class="alert"></div>
+            
+            <!-- Step 1: Request Deletion -->
+            <form id="request-form">
+                <div class="form-group">
+                    <label for="account-type">Hesap Türü</label>
+                    <select id="account-type" required>
+                        <option value="email">Google / E-posta Hesabı</option>
+                        <option value="uuid">Cihaz UUID (Misafir Girişi)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="identifier" id="identifier-label">E-Posta Adresiniz</label>
+                    <input type="text" id="identifier" placeholder="ornek@gmail.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="confirm-check" required>
+                        <span class="checkbox-label">Tüm okuma istatistiklerimin, kelimelerimin ve rozetlerimin kalıcı olarak silinmesini ve bu işlemin geri alınamayacağını kabul ediyorum.</span>
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn" id="submit-btn">
+                    <span class="loader" id="submit-loader"></span>
+                    <span id="submit-text">Silme Talebi Gönder</span>
+                </button>
+            </form>
+            
+            <!-- Step 2: Verification -->
+            <form id="confirm-form" class="step-hidden">
+                <div id="simulated-code-box" class="alert alert-info"></div>
+                
+                <div class="form-group">
+                    <label for="verification-code">Doğrulama Kodu</label>
+                    <input type="text" id="verification-code" placeholder="6 Haneli Kod" maxlength="6" required>
+                </div>
+                
+                <button type="submit" class="btn" id="confirm-btn" style="background: var(--error); box-shadow: 0 4px 12px rgba(255, 107, 107, 0.2);">
+                    <span class="loader" id="confirm-loader"></span>
+                    <span id="confirm-text" style="color: #ffffff;">Hesabı Kalıcı Olarak Sil</span>
+                </button>
+            </form>
+            
+            <!-- Step 3: Success -->
+            <div id="success-screen" class="step-hidden" style="text-align: center;">
+                <div style="font-size: 64px; margin-bottom: 24px;">🎉</div>
+                <h2 style="font-family: 'Outfit', sans-serif; font-size: 24px; margin-bottom: 12px; color: var(--success);">Hesabınız Başarıyla Silindi</h2>
+                <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 32px;">Hesabınız, istatistikleriniz ve tüm kişisel verileriniz sunucumuzdan kalıcı olarak kaldırılmıştır. Bizi tercih ettiğiniz için teşekkür ederiz.</p>
+                <a href="/" style="display: inline-block; padding: 14px 28px; background: rgba(255,255,255,0.05); border: 1px solid var(--card-border); color: var(--text-color); text-decoration: none; border-radius: 12px; font-weight: 600; font-size: 14px; transition: all 0.3s ease;">Ana Sayfaya Git</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const accountTypeSelect = document.getElementById('account-type');
+        const identifierLabel = document.getElementById('identifier-label');
+        const identifierInput = document.getElementById('identifier');
+        const requestForm = document.getElementById('request-form');
+        const confirmForm = document.getElementById('confirm-form');
+        const successScreen = document.getElementById('success-screen');
+        const alertBox = document.getElementById('alert-box');
+        const card = document.getElementById('card');
+        const formSubtitle = document.getElementById('form-subtitle');
+        const simulatedCodeBox = document.getElementById('simulated-code-box');
+        
+        let savedIdentifier = '';
+        
+        function showAlert(message, type) {
+            alertBox.style.display = 'block';
+            alertBox.className = 'alert ' + (type === 'error' ? 'alert-error' : type === 'success' ? 'alert-success' : 'alert-info');
+            alertBox.innerText = message;
+        }
+        
+        function hideAlert() {
+            alertBox.style.display = 'none';
+        }
+        
+        accountTypeSelect.addEventListener('change', () => {
+            if (accountTypeSelect.value === 'email') {
+                identifierLabel.innerText = 'E-Posta Adresiniz';
+                identifierInput.placeholder = 'ornek@gmail.com';
+                identifierInput.type = 'email';
+            } else {
+                identifierLabel.innerText = 'Cihaz UUID (Cihaz Kimliği)';
+                identifierInput.placeholder = 'Cihaz kimliğini profil sayfasından kopyalayabilirsiniz';
+                identifierInput.type = 'text';
+            }
+        });
+        
+        requestForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            hideAlert();
+            
+            const submitBtn = document.getElementById('submit-btn');
+            const submitLoader = document.getElementById('submit-loader');
+            const submitText = document.getElementById('submit-text');
+            
+            submitBtn.disabled = true;
+            submitLoader.style.display = 'inline-block';
+            submitText.innerText = 'İşleniyor...';
+            
+            const identifier = identifierInput.value.trim();
+            const accountType = accountTypeSelect.value;
+            
+            try {
+                const response = await fetch('/api/delete-account-web-request', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ identifier, accountType })
+                });
+                
+                const data = await response.json();
+                
+                if (!response.ok) {
+                    throw new Error(data.error || 'İstek gönderilirken bir hata oluştu.');
+                }
+                
+                savedIdentifier = identifier;
+                
+                if (data.requiresVerification) {
+                    // Show step 2
+                    requestForm.className = 'step-hidden';
+                    confirmForm.className = '';
+                    formSubtitle.innerText = 'Doğrulama kodunu girerek silme işlemini onaylayın.';
+                    
+                    if (data.simulatedCode) {
+                        simulatedCodeBox.style.display = 'block';
+                        simulatedCodeBox.innerHTML = '⚠️ <strong>Test Modu:</strong> Doğrulama kodunuz: <strong style="font-size: 16px; color: #ffffff;">' + data.simulatedCode + '</strong>';
+                    } else {
+                        simulatedCodeBox.style.display = 'none';
+                    }
+                } else {
+                    // Directly successful
+                    requestForm.className = 'step-hidden';
+                    successScreen.className = '';
+                    formSubtitle.style.display = 'none';
+                }
+            } catch (err) {
+                showAlert(err.message, 'error');
+            } finally {
+                submitBtn.disabled = false;
+                submitLoader.style.display = 'none';
+                submitText.innerText = 'Silme Talebi Gönder';
+            }
+        });
+        
+        confirmForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            hideAlert();
+            
+            const confirmBtn = document.getElementById('confirm-btn');
+            const confirmLoader = document.getElementById('confirm-loader');
+            const confirmText = document.getElementById('confirm-text');
+            
+            confirmBtn.disabled = true;
+            confirmLoader.style.display = 'inline-block';
+            confirmText.innerText = 'Hesap Siliniyor...';
+            
+            const code = document.getElementById('verification-code').value.trim();
+            
+            try {
+                const response = await fetch('/api/delete-account-web-confirm', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ identifier: savedIdentifier, code })
+                });
+                
+                const data = await response.json();
+                
+                if (!response.ok) {
+                    throw new Error(data.error || 'Kod doğrulanamadı.');
+                }
+                
+                confirmForm.className = 'step-hidden';
+                successScreen.className = '';
+                formSubtitle.style.display = 'none';
+                simulatedCodeBox.style.display = 'none';
+            } catch (err) {
+                showAlert(err.message, 'error');
+            } finally {
+                confirmBtn.disabled = false;
+                confirmLoader.style.display = 'none';
+                confirmText.innerText = 'Hesabı Kalıcı Olarak Sil';
+            }
+        });
+    </script>
+</body>
+</html>
+    `);
+  });
+
+  // Helper to find account database key by various inputs
+  function findUserKey(input: string): string | null {
+    const cleanInput = input.trim().toLowerCase();
+    
+    // 1. Check direct hash (e.g. if input is username or email)
+    const hashedEmail = hashEmail(cleanInput);
+    if (usersData[hashedEmail]) {
+      return hashedEmail;
+    }
+    
+    // 2. Check if input is a device UUID
+    const deviceEmail = `device-${cleanInput}`;
+    const hashedDeviceEmail = hashEmail(deviceEmail);
+    if (usersData[hashedDeviceEmail]) {
+      return hashedDeviceEmail;
+    }
+    
+    // 3. Search by record properties (fallback)
+    for (const [key, record] of Object.entries(usersData)) {
+      if (record) {
+        if (record.deviceUuid && record.deviceUuid.toLowerCase() === cleanInput) {
+          return key;
+        }
+        if (record.username && record.username.toLowerCase() === cleanInput) {
+          return key;
+        }
+      }
+    }
+    
+    return null;
+  }
+
+  // Handle deletion request (generates verification code)
+  app.post("/api/delete-account-web-request", (req, res) => {
+    try {
+      const { identifier, accountType } = req.body;
+      if (!identifier || typeof identifier !== "string" || identifier.trim().length < 3) {
+        return res.status(400).json({ error: "Lütfen geçerli bir e-posta adresi veya cihaz kimliği girin." });
+      }
+
+      const cleanIdentifier = identifier.trim();
+      const userKey = findUserKey(cleanIdentifier);
+
+      if (!userKey) {
+        return res.status(404).json({ error: "Belirtilen bilgilere ait bir kullanıcı kaydı bulunamadı. Lütfen kontrol edip tekrar deneyin." });
+      }
+
+      const code = Math.floor(100000 + Math.random() * 900000).toString();
+      const expires = Date.now() + 10 * 60 * 1000; // 10 minutes expiry
+
+      pendingDeletions[cleanIdentifier.toLowerCase()] = { code, expires, key: userKey };
+
+      // If it's a device UUID, we can just display the code on the screen directly since the UUID itself is proof of access.
+      const isUuid = accountType === "uuid" || !cleanIdentifier.includes("@");
+      
+      if (isUuid) {
+        return res.json({
+          success: true,
+          requiresVerification: true,
+          simulatedCode: code // Display code on screen
+        });
+      }
+
+      // If email, send confirmation code
+      const emailContent = `
+        <div style="font-family: 'Segoe UI', sans-serif; max-width: 500px; margin: 0 auto; padding: 25px; border: 1px solid #e0e0e5; border-radius: 12px;">
+          <h2 style="color: #ff6b6b; margin-top: 0;">Hesap Silme Onayı</h2>
+          <p>Merhaba,</p>
+          <p>İngilizce Öyküm hesabınızı ve tüm verilerinizi kalıcı olarak silmek için bir talepte bulundunuz.</p>
+          <p>Silme işlemini onaylamak için kullanacağınız tek kullanımlık doğrulama kodunuz:</p>
+          <div style="background: #f8f9fa; padding: 15px; text-align: center; font-size: 24px; font-weight: bold; letter-spacing: 4px; border-radius: 6px; margin: 20px 0; color: #2d3436; border: 1px solid #eee;">
+            ${code}
+          </div>
+          <p style="color: #6c757d; font-size: 13px;">Bu kod 10 dakika süreyle geçerlidir. Talebi siz yapmadıysanız bu e-postayı dikkate almayınız.</p>
+        </div>
+      `;
+
+      if (transporter) {
+        const mailOptions = {
+          from: '"İngilizce Öyküm" <' + smtpFrom + '>',
+          to: cleanIdentifier.toLowerCase(),
+          subject: "Hesap Silme Doğrulama Kodu ⚠️",
+          html: emailContent
+        };
+
+        transporter.sendMail(mailOptions, (error: any) => {
+          if (error) {
+            console.error(`[Mail] Error sending deletion code to ${cleanIdentifier}:`, error);
+            // Fallback: return code on screen if mail delivery fails
+            return res.json({
+              success: true,
+              requiresVerification: true,
+              simulatedCode: code
+            });
+          }
+          return res.json({ success: true, requiresVerification: true });
+        });
+      } else {
+        // Fallback for local testing (No SMTP configured)
+        console.log(`[Simulated Mail] Deletion verification code for ${cleanIdentifier}: ${code}`);
+        return res.json({
+          success: true,
+          requiresVerification: true,
+          simulatedCode: code
+        });
+      }
+    } catch (err: any) {
+      console.error("Delete web request error:", err);
+      return res.status(500).json({ error: "İşlem sırasında sunucu hatası oluştu." });
+    }
+  });
+
+  // Verify and confirm deletion
+  app.post("/api/delete-account-web-confirm", (req, res) => {
+    try {
+      const { identifier, code } = req.body;
+      if (!identifier || !code) {
+        return res.status(400).json({ error: "Eksik parametreler." });
+      }
+
+      const cleanIdentifier = identifier.trim().toLowerCase();
+      const pending = pendingDeletions[cleanIdentifier];
+
+      if (!pending || Date.now() > pending.expires) {
+        return res.status(400).json({ error: "Silme talebiniz bulunamadı veya süresi dolmuş. Lütfen sayfayı yenileyip tekrar talep gönderin." });
+      }
+
+      if (pending.code !== code.trim()) {
+        return res.status(400).json({ error: "Girdiğiniz doğrulama kodu hatalı. Lütfen kontrol edip tekrar deneyin." });
+      }
+
+      // Perform deletion
+      const userRecord = usersData[pending.key];
+      if (userRecord && userRecord.deviceUuid) {
+        const guestEmail = `device-${userRecord.deviceUuid.toLowerCase()}`;
+        const hashedGuestEmail = hashEmail(guestEmail);
+        if (usersData[hashedGuestEmail]) {
+          delete usersData[hashedGuestEmail];
+          console.log(`[Linguist Sync] Deleted linked guest account for device: ${userRecord.deviceUuid}`);
+        }
+      }
+
+      delete usersData[pending.key];
+      saveUsersData();
+      delete pendingDeletions[cleanIdentifier];
+
+      console.log(`[Linguist Sync] Permanent account deletion via Web request: ${pending.key}`);
+      return res.json({ success: true, message: "Hesabınız ve tüm verileriniz başarıyla silindi." });
+    } catch (err) {
+      console.error("Delete web confirm error:", err);
+      return res.status(500).json({ error: "Onaylama işlemi sırasında sunucu hatası oluştu." });
+    }
+  });
 
   // Sync endpoint - Save progress
   app.post("/api/sync", (req, res) => {
@@ -1034,16 +1701,8 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
       }
 
       // Profanity Filter (Küfür Filtresi)
-      const badWords = [
-        "orospu", "siktir", "sikti", "siker", "amcik", "amcık", "yarrak", "yarak", 
-        "göt", "got", "pezevenk", "kahpe", "pic", "piç", "dalyarak", "meme", 
-        "fuck", "bitch", "asshole", "fucker", "amına", "amina", "koyayım", "koyayim"
-      ];
-      // strip spaces and check
-      const normalizedForProfanity = lowerUsername.replace(/\s+/g, "");
-      const hasProfanity = badWords.some(word => normalizedForProfanity.includes(word));
-      if (hasProfanity) {
-        return res.status(400).json({ error: "Kullanıcı adı uygunsuz veya küfürlü kelimeler içeremez. ⚠️" });
+      if (checkIsProfane(cleanUsername)) {
+        return res.status(400).json({ error: "Kullanıcı adı uygunsuz veya sistem tarafından ayrılmış kelimeler içeremez. ⚠️" });
       }
 
       // Generate the unique hash key for this username

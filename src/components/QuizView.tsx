@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Heart, Brain, AlertCircle, CheckCircle2, ChevronRight, Sparkles, ShieldCheck, CreditCard, Lock, RefreshCw, X, Award, Crown, Check } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import { purchasePlayStoreSubscription } from '../services/billing';
-import { Book, QuizQuestion, UserStats, VocabularyWord } from '../types';
+import { purchasePlayStoreSubscription, restorePlayStorePurchases } from '../services/billing';
+import { Book, QuizQuestion, UserStats, VocabularyWord, getLevelColor, hexToRgba } from '../types';
+import { OFFLINE_DICTIONARY } from '../dictionary';
+import { GLOBAL_DICTIONARY } from '../data';
 
 interface QuizViewProps {
   stats: UserStats;
@@ -19,6 +21,7 @@ interface QuizViewProps {
   isDarkMode?: boolean;
   onUnlockBadge?: (id: string) => void;
   refillCountdown: string;
+  onQuizCompleted?: (score: number, totalQuestions: number) => void;
 }
 
 const PROPER_NAMES_SET = new Set([
@@ -139,8 +142,11 @@ const getFallbackSentence = (word: string, translation: string): { en: string; t
 const generateVocabularyQuiz = (vocabList: VocabularyWord[], books: Book[]): QuizQuestion[] => {
   if (!vocabList) return [];
   
-  // 1. Filter out proper nouns (names)
-  const filteredVocab = vocabList.filter(item => !isProperNoun(item.word, item.level));
+  // 1. Filter out proper nouns (names) and the word 'harness'
+  const filteredVocab = vocabList.filter(item => 
+    !isProperNoun(item.word, item.level) && 
+    item.word.toLowerCase().trim() !== 'harness'
+  );
   if (filteredVocab.length < 3) return [];
   
   // Quiz is always exactly 15 questions if filteredVocab.length >= 3
@@ -217,7 +223,7 @@ const generateVocabularyQuiz = (vocabList: VocabularyWord[], books: Book[]): Qui
               if (p.words) {
                 p.words.forEach(w => {
                   const key = w.en.toLowerCase().trim();
-                  if (!seenWords.has(key) && !isProperNoun(w.en) && key !== item.word.toLowerCase().trim()) {
+                  if (!seenWords.has(key) && !isProperNoun(w.en) && key !== item.word.toLowerCase().trim() && key !== 'harness') {
                     seenWords.add(key);
                     levelPool.push({ en: w.en, tr: w.tr });
                   }
@@ -236,7 +242,7 @@ const generateVocabularyQuiz = (vocabList: VocabularyWord[], books: Book[]): Qui
             if (p.words) {
               p.words.forEach(w => {
                 const key = w.en.toLowerCase().trim();
-                if (!seenWords.has(key) && !isProperNoun(w.en) && key !== item.word.toLowerCase().trim()) {
+                if (!seenWords.has(key) && !isProperNoun(w.en) && key !== item.word.toLowerCase().trim() && key !== 'harness') {
                   seenWords.add(key);
                   levelPool.push({ en: w.en, tr: w.tr });
                 }
@@ -269,6 +275,18 @@ const generateVocabularyQuiz = (vocabList: VocabularyWord[], books: Book[]): Qui
         const idx = lowerSentence.indexOf(cleanLowerWord);
         if (idx !== -1) {
           questionText = exampleEn.substring(0, idx) + '_____' + exampleEn.substring(idx + cleanW.length);
+        }
+      }
+
+      // Limit the length of the sentence to keep it short and child-friendly
+      const qWords = questionText.split(/\s+/);
+      if (qWords.length > 12) {
+        const blankIdx = qWords.findIndex(w => w.includes('_____'));
+        if (blankIdx !== -1) {
+          const start = Math.max(0, blankIdx - 5);
+          const end = Math.min(qWords.length, blankIdx + 6);
+          const subWords = qWords.slice(start, end);
+          questionText = (start > 0 ? '... ' : '') + subWords.join(' ') + (end < qWords.length ? ' ...' : '');
         }
       }
       
@@ -407,7 +425,7 @@ const generateRandomQuizForLevels = (levels: ('A1' | 'A2' | 'B1' | 'B2' | 'C1')[
         if (p.words) {
           p.words.forEach(w => {
             const key = w.en.toLowerCase().trim();
-            if (!seenWords.has(key) && !isProperNoun(w.en) && w.en.length > 2) {
+            if (!seenWords.has(key) && !isProperNoun(w.en) && w.en.length > 2 && key !== 'harness') {
               seenWords.add(key);
               
               // Try to find a context sentence from the paragraph without lookbehinds (safari friendly)
@@ -453,7 +471,7 @@ const generateRandomQuizForLevels = (levels: ('A1' | 'A2' | 'B1' | 'B2' | 'C1')[
           if (p.words) {
             p.words.forEach(w => {
               const key = w.en.toLowerCase().trim();
-              if (!seenWords.has(key) && !isProperNoun(w.en) && w.en.length > 2) {
+              if (!seenWords.has(key) && !isProperNoun(w.en) && w.en.length > 2 && key !== 'harness') {
                 seenWords.add(key);
                 wordPool.push({
                   en: w.en,
@@ -500,6 +518,7 @@ export default function QuizView({
   isDarkMode,
   onUnlockBadge,
   refillCountdown,
+  onQuizCompleted,
 }: QuizViewProps) {
   // Questions navigation & status structures
   const [currentQuestionIdx, setCurrentQuestionIdx] = useState(0);
@@ -509,6 +528,230 @@ export default function QuizView({
   const [showSubscriptionPanel, setShowSubscriptionPanel] = useState(initiallyShowPaywall);
   const [isCompleted, setIsCompleted] = useState(false);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
+  const [activeTooltip, setActiveTooltip] = useState<{
+    wordIndex: number;
+    word: string;
+    translation: string;
+  } | null>(null);
+
+  // Safe cleaner for dictionary formatting
+  const cleanWord = (w: string): string => {
+    if (!w) return "";
+    return w.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'’“”‘’\[\]{}<>|\\+]/g, "").trim();
+  };
+
+  const getCachedTranslation = (word: string) => {
+    try {
+      const cacheJSON = localStorage.getItem('story_word_translations_cache') || '{}';
+      const cache = JSON.parse(cacheJSON);
+      const wLower = word.toLowerCase().trim();
+      if (cache[wLower]) {
+        return cache[wLower] as {
+          translation: string;
+          notes?: string;
+          level?: string;
+        };
+      }
+    } catch (e) {
+      console.error("Cache read error:", e);
+    }
+    return null;
+  };
+
+  const handleWordClick = (rawWord: string, index: number) => {
+    const cleanW = cleanWord(rawWord);
+    if (!cleanW) return;
+    
+    // Set loading state first
+    setActiveTooltip({
+      wordIndex: index,
+      word: cleanW,
+      translation: 'Çeviriliyor...'
+    });
+
+    const cleanWLower = cleanW.toLowerCase();
+    
+    // 1. Try Cache
+    const cached = getCachedTranslation(cleanW);
+    if (cached && cached.translation && cached.translation !== 'Çeviriliyor...') {
+      setActiveTooltip({
+        wordIndex: index,
+        word: cleanW,
+        translation: cached.translation
+      });
+      return;
+    }
+
+    // 2. Try Offline Dictionary
+    if (OFFLINE_DICTIONARY[cleanWLower]) {
+      setActiveTooltip({
+        wordIndex: index,
+        word: cleanW,
+        translation: OFFLINE_DICTIONARY[cleanWLower].tr
+      });
+      return;
+    }
+
+    // 3. Try Global Dictionary
+    if (GLOBAL_DICTIONARY[cleanWLower]) {
+      setActiveTooltip({
+        wordIndex: index,
+        word: cleanW,
+        translation: GLOBAL_DICTIONARY[cleanWLower]
+      });
+      return;
+    }
+
+    // 4. Try Offline Suffixes
+    const tryOfflineSuffixes = (w: string): string | null => {
+      const stems = [
+        w.endsWith('s') && w.length > 3 ? w.slice(0, -1) : null,
+        w.endsWith('es') && w.length > 4 ? w.slice(0, -2) : null,
+        w.endsWith('ed') && w.length > 4 ? w.slice(0, -2) : null,
+        w.endsWith('ed') && w.length > 4 ? w.slice(0, -1) : null,
+        w.endsWith('ing') && w.length > 5 ? w.slice(0, -3) : null,
+        w.endsWith('ing') && w.length > 5 ? w.slice(0, -3) + 'e' : null,
+        w.endsWith('ing') && w.length > 6 ? w.slice(0, -4) : null,
+        w.endsWith('ly') && w.length > 4 ? w.slice(0, -2) : null,
+        w.endsWith('er') && w.length > 4 ? w.slice(0, -2) : null,
+        w.endsWith('est') && w.length > 5 ? w.slice(0, -3) : null,
+        w.endsWith('tion') ? w.slice(0, -4) + 'te' : null,
+        w.endsWith('ness') ? w.slice(0, -4) : null,
+        w.endsWith('ful') ? w.slice(0, -3) : null,
+        w.endsWith('less') ? w.slice(0, -4) : null,
+      ].filter(Boolean) as string[];
+      for (const stem of stems) {
+        const d = OFFLINE_DICTIONARY[stem];
+        if (d) return d.tr;
+        const g = GLOBAL_DICTIONARY[stem];
+        if (g) return g;
+      }
+      return null;
+    };
+
+    const offlineStem = tryOfflineSuffixes(cleanWLower);
+    if (offlineStem) {
+      setActiveTooltip({
+        wordIndex: index,
+        word: cleanW,
+        translation: offlineStem
+      });
+      return;
+    }
+
+    // 5. Dynamic API Translation
+    const apiBase = (() => {
+      try {
+        if (window.location.protocol === 'capacitor:' || window.location.hostname === 'localhost') {
+          return 'https://ingilizce-oyk-m.onrender.com';
+        }
+        return '';
+      } catch { return ''; }
+    })();
+
+    fetch(`${apiBase}/api/translate-word`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ word: cleanW, context: activeQuestion?.questionText || '', level: activeQuestion?.level || 'A1' })
+    })
+    .then(res => {
+      if (!res.ok) throw new Error('API error');
+      return res.json();
+    })
+    .then((data: any) => {
+      if (data && data.translation) {
+        setActiveTooltip({
+          wordIndex: index,
+          word: cleanW,
+          translation: data.translation
+        });
+      } else {
+        setActiveTooltip({
+          wordIndex: index,
+          word: cleanW,
+          translation: 'Çeviri bulunamadı'
+        });
+      }
+    })
+    .catch(err => {
+      console.error('Dynamic translation failed in QuizView:', err);
+      setActiveTooltip({
+        wordIndex: index,
+        word: cleanW,
+        translation: 'Çeviri yüklenemedi'
+      });
+    });
+  };
+
+  const renderClickableSentence = (sentence: string) => {
+    if (!sentence) return null;
+    const parts = sentence.split(/(\s+)/).filter(Boolean);
+    return (
+      <span className="inline-block text-center select-none">
+        {parts.map((part, idx) => {
+          const isWhitespace = /\s/.test(part);
+          if (isWhitespace) {
+            return <span key={idx}>{part}</span>;
+          }
+          const isBlank = part.includes('_____');
+          if (isBlank) {
+            return (
+              <span 
+                key={idx} 
+                className={`inline-block font-extrabold ${
+                  isDarkMode ? 'text-[#4ECDC4]' : 'text-[#2D3436]'
+                }`}
+              >
+                {part}
+              </span>
+            );
+          }
+          const rawWord = part;
+          const cleanW = cleanWord(rawWord);
+          if (!cleanW) {
+            return <span key={idx}>{part}</span>;
+          }
+          const wordIdx = idx;
+          const isWordClicked = activeTooltip?.wordIndex === wordIdx;
+          return (
+            <span
+              key={idx}
+              onClick={(e) => {
+                e.stopPropagation();
+                handleWordClick(rawWord, wordIdx);
+              }}
+              className={`cursor-pointer inline-block transition-colors px-0.5 rounded ${
+                isWordClicked
+                  ? 'relative text-[#FF6B6B] bg-[#FFE66D]/30 underline underline-offset-4 decoration-2 decoration-[#FF6B6B]'
+                  : isDarkMode
+                    ? 'hover:text-[#FF6B6B] text-white'
+                    : 'hover:text-[#FF6B6B] text-[#2D3436]'
+              }`}
+            >
+              {isWordClicked && activeTooltip && (
+                <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2.5 py-1 bg-gray-900 text-white text-[11px] font-bold rounded-lg shadow-md whitespace-nowrap z-50 animate-fade-in">
+                  {activeTooltip.translation}
+                  <span className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-gray-900" />
+                </span>
+              )}
+              {rawWord}
+            </span>
+          );
+        })}
+      </span>
+    );
+  };
+
+  useEffect(() => {
+    if (toastMessage) {
+      const timer = setTimeout(() => {
+        setToastMessage(null);
+      }, 1500);
+      return () => clearTimeout(timer);
+    }
+  }, [toastMessage]);
+
+
 
   // checkout form states
   const [checkoutTier, setCheckoutTier] = useState<'monthly' | 'yearly'>('yearly');
@@ -617,6 +860,7 @@ export default function QuizView({
     // Reset choices state
     setSelectedOption(null);
     setIsAnswered(false);
+    setActiveTooltip(null);
 
     // Navigate to next or review
     if (currentQuestionIdx < questions.length - 1) {
@@ -627,6 +871,7 @@ export default function QuizView({
       if (quizScore === questions.length) {
         onUnlockBadge?.('b4');
       }
+      onQuizCompleted?.(quizScore, questions.length);
     }
   };
 
@@ -637,6 +882,7 @@ export default function QuizView({
     setQuizScore(0);
     setCurrentQuestionIdx(0);
     setIsCompleted(false);
+    setActiveTooltip(null);
     onBackToVocabulary();
   };
 
@@ -665,6 +911,27 @@ export default function QuizView({
     });
   };
 
+  const handleRestorePurchases = () => {
+    restorePlayStorePurchases((status, errorMsg) => {
+      if (status === 'processing') {
+        setIsProcessingPayment(true);
+      } else if (status === 'success') {
+        setIsProcessingPayment(false);
+        setToastMessage('Aboneliğiniz başarıyla geri yüklendi! 🎉');
+        onSubscribe('yearly'); // varsayılan yıllık premium statüsüne yükselt
+        syncTrigger();
+        setTimeout(() => {
+          setToastMessage(null);
+          setShowSubscriptionPanel(false);
+        }, 2000);
+      } else if (status === 'error') {
+        setIsProcessingPayment(false);
+        setToastMessage(errorMsg || 'Aktif abonelik bulunamadı.');
+        setTimeout(() => setToastMessage(null), 3000);
+      }
+    });
+  };
+
   return (
     <div className={`pb-32 max-w-[680px] mx-auto px-5 pt-6 transition-colors ${
       isDarkMode ? 'text-[#E6E6E6]' : 'text-[#2D3436]'
@@ -687,7 +954,8 @@ export default function QuizView({
                 initial={{ opacity: 0, scale: 0.9, y: 15 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.9, y: 15 }}
-                className={`w-full max-w-[340px] rounded-3xl p-6 border text-center flex flex-col items-center gap-4 backdrop-blur-lg transition-all duration-300 shadow-2xl ${
+                onClick={() => setToastMessage(null)}
+                className={`w-full max-w-[340px] rounded-3xl p-6 border text-center flex flex-col items-center gap-4 backdrop-blur-lg transition-all duration-300 shadow-2xl pointer-events-auto cursor-pointer ${
                   isDarkMode 
                     ? 'bg-[#1E1E22]/95 border-[#2A2A30] text-white shadow-black/60' 
                     : 'bg-white/95 border-[#FFE66D]/80 text-[#2D3436] shadow-gray-400/20'
@@ -779,19 +1047,13 @@ export default function QuizView({
               Kelime dağarcığı pekiştirme testini başarıyla bitirdiniz. İlerledikçe yeni rozetler açılmaya devam edecektir.
             </p>
 
-            <div className={`grid grid-cols-2 gap-4 max-w-xs mx-auto mb-8 p-4 rounded-2xl border ${
+            <div className={`max-w-xs mx-auto mb-8 p-4 rounded-2xl border text-center ${
               isDarkMode ? 'bg-[#121214] border-[#2A2A30]' : 'bg-[#FFFBF0] border-[#FFE66D]/60'
             }`}>
               <div>
                 <span className="text-[10px] font-bold text-gray-400 tracking-wider block">BAŞARI ORANI</span>
                 <span className="text-xl font-extrabold text-[#4ECDC4] font-mono block">
                   {quizScore} / {questions.length}
-                </span>
-              </div>
-              <div>
-                <span className="text-[10px] font-bold text-gray-400 tracking-wider block">KAZANILAN PUAN</span>
-                <span className="text-xl font-extrabold text-[#FF6B6B] font-mono block">
-                  +{quizScore * 15} XP
                 </span>
               </div>
             </div>
@@ -807,48 +1069,38 @@ export default function QuizView({
           /* IN Quiz session content */
           !showSubscriptionPanel && (
             <div className="space-y-6">
-              {/* Quiz Screen Header HUD */}
-              <div className={`flex justify-between items-center border rounded-2xl p-4 shadow-3xs transition-colors ${
-                isDarkMode ? 'bg-[#1A1A1E] border-[#2A2A30]' : 'bg-white border-[#FFE66D]'
-              }`}>
-                <button
-                  onClick={onBackToVocabulary}
-                  className={`text-xs font-bold px-4 py-2 rounded-xl border tracking-wider font-headline-lg transition-all cursor-pointer ${
-                    isDarkMode 
-                      ? 'text-gray-300 border-gray-700 hover:bg-white/5' 
-                      : 'text-[#FF6B6B] border-[#FFE66D] hover:bg-[#FFE66D]/15'
-                  }`}
-                >
-                  ÇÖZÜMDEN ÇIK
-                </button>
-
-                {/* Lives Indicator in Quiz HUD */}
-                <div className="flex items-center gap-1.5 px-3 py-1.5 bg-[#FF6B6B]/10 border border-[#FF6B6B]/20 rounded-full font-bold" title="Can Bilgisi">
-                  <Heart className={`w-3.5 h-3.5 text-[#FF6B6B] ${stats?.isPremium ? 'fill-[#FF6B6B] animate-pulse' : 'fill-[#FF6B6B]'}`} />
-                  <span className="text-xs text-[#FF6B6B] font-mono leading-none">
-                    {stats?.isPremium ? '∞' : (stats?.hearts ?? 5)}
-                  </span>
-                  {!stats?.isPremium && stats?.hearts !== undefined && stats?.hearts !== null && Number(stats.hearts) < 5 && refillCountdown && (
-                    <span className="text-[10px] text-gray-500 font-normal leading-none ml-0.5">
-                      ({refillCountdown})
-                    </span>
-                  )}
-                </div>
-              </div>
-
               {/* RENDER PROGRESS BAR SOUCE LINE */}
               {activeQuestion && (
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
+                  onClick={() => setActiveTooltip(null)}
                   className={`border rounded-3xl p-6 transition-colors ${
                     isDarkMode ? 'bg-[#1A1A1E] border-[#2A2A30]' : 'bg-white border-[#FFE66D]'
                   }`}
                 >
-                  {/* Question Index Progress Label */}
-                  <div className="flex justify-between items-center text-xs text-gray-400 font-bold tracking-wider mb-3 font-headline-lg">
-                    <span>{quizMode === 'random' ? `RASTGELE PRATİK (${activeQuestion?.level || ''})` : 'KELİMELERİMLE PRATİK'}</span>
-                    <span className="text-[#FF6B6B]">SORU {currentQuestionIdx + 1} / {questions.length}</span>
+                  {/* Exit Quiz Button at the very top of the card */}
+                  <div className={`flex ${quizMode === 'random' ? 'justify-center' : 'justify-start'} mb-5`}>
+                    <button
+                      onClick={onBackToVocabulary}
+                      className={`text-xs font-bold px-4 py-2 rounded-xl border tracking-wider font-headline-lg transition-all cursor-pointer ${
+                        isDarkMode 
+                          ? 'text-gray-300 border-gray-700 hover:bg-white/5' 
+                          : 'text-[#FF6B6B] border-[#FFE66D] hover:bg-[#FFE66D]/15'
+                      }`}
+                    >
+                      TESTİ BİTİR
+                    </button>
+                  </div>
+
+                  {/* Header Labels (centered for random, left-aligned for saved) */}
+                  <div className={`flex flex-col gap-1 mb-4 ${quizMode === 'random' ? 'items-center text-center' : 'items-start text-left'}`}>
+                    <span className="text-[13px] text-gray-400 font-extrabold tracking-wider font-headline-lg">
+                      {quizMode === 'random' ? `RASTGELE PRATİK (${activeQuestion?.level || ''})` : 'KELİMELERİMLE PRATİK'}
+                    </span>
+                    <span className="text-xs text-[#FF6B6B] font-bold font-headline-lg">
+                      SORU {currentQuestionIdx + 1} / {questions.length}
+                    </span>
                   </div>
 
                   <div className={`w-full h-2 rounded-full overflow-hidden mb-6 border ${
@@ -859,6 +1111,8 @@ export default function QuizView({
                       style={{ width: `${((currentQuestionIdx + 1) / questions.length) * 100}%` }}
                     />
                   </div>
+
+
 
                   {/* Target Quiz Word or Cloze Sentence */}
                   <div className="text-center mb-8">
@@ -873,16 +1127,21 @@ export default function QuizView({
                       isDarkMode ? 'text-white' : 'text-[#2D3436]'
                     }`}>
                       {activeQuestion.qType === 'fill_blank' ? (
-                        activeQuestion.questionText
+                        renderClickableSentence(activeQuestion.questionText)
                       ) : activeQuestion.qType === 'tr_to_en' ? (
                         <span>&ldquo;{activeQuestion.translation}&rdquo;</span>
                       ) : (
                         <span>&ldquo;{activeQuestion.word}&rdquo;</span>
                       )}
                     </h3>
-                    <p className={`text-xs font-medium italic mt-3 border inline-block px-3 py-1 rounded-full font-headline-lg ${
-                      isDarkMode ? 'bg-gray-855 border-gray-700 text-gray-300' : 'bg-[#FFFBF0] border-[#FFE66D]/50 text-gray-500'
-                    }`}>
+                    <p 
+                      className="text-xs font-semibold mt-3 border inline-block px-3.5 py-1 rounded-full font-headline-lg"
+                      style={{
+                        color: getLevelColor(activeQuestion.level),
+                        borderColor: hexToRgba(getLevelColor(activeQuestion.level), 0.3),
+                        backgroundColor: hexToRgba(getLevelColor(activeQuestion.level), 0.1)
+                      }}
+                    >
                       Zorluk: {activeQuestion.level}
                     </p>
                   </div>
@@ -1163,7 +1422,7 @@ export default function QuizView({
                       <div className="text-left">
                         <span className="text-[10px] text-gray-400 font-bold block">GOOGLE PLAY HESABI</span>
                         <span className={`text-xs font-bold ${isDarkMode ? 'text-white' : 'text-slate-800'}`}>
-                          {stats.hearts <= 0 ? 'kullanici@gmail.com' : 'acer@gmail.com'}
+                          {localStorage.getItem('linguist_user_email') || 'aktif-google-hesabi@play.com'}
                         </span>
                       </div>
                     </div>
@@ -1176,7 +1435,7 @@ export default function QuizView({
                           GPAY
                         </div>
                         <span className={`text-xs font-bold ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                          Visa •••• 9876 (Tanımlı Kart)
+                          Google Play Tanımlı Ödeme Yöntemi
                         </span>
                       </div>
                       <span className="text-[10px] text-gray-400 font-semibold font-headline-lg select-none">Varsayılan</span>
@@ -1189,10 +1448,23 @@ export default function QuizView({
                   </p>
                 </form>
 
+                {/* Satın Almaları Geri Yükle Seçeneği */}
+                <div className="flex justify-center pt-2 pb-1">
+                  <button
+                    type="button"
+                    onClick={handleRestorePurchases}
+                    disabled={isProcessingPayment}
+                    className="text-[11px] text-blue-500 hover:text-blue-600 font-bold tracking-wide transition-colors flex items-center gap-1 select-none disabled:opacity-50"
+                  >
+                    <RefreshCw className="w-3 h-3" />
+                    <span>Satın Almaları Geri Yükle (Restore)</span>
+                  </button>
+                </div>
+
                 {/* Footer security badges */}
-                <div className="flex justify-center items-center gap-1.5 text-[9px] text-gray-400 font-semibold pt-2 select-none text-center leading-normal">
+                <div className="flex justify-center items-center gap-1.5 text-[9px] text-gray-400 font-semibold pt-1 select-none text-center leading-normal">
                   <Lock className="w-3.5 h-3.5 text-gray-400" />
-                  <span>256-Bit SSL Enkripsiyonlu Güvenli Stripe Ödeme Altyapısı</span>
+                  <span>Google Play Ödeme Altyapısı ile Güvenli ve Korumalı Satın Alım</span>
                 </div>
               </div>
             </motion.div>
