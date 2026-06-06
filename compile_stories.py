@@ -3,8 +3,8 @@ import json
 import re
 
 DATA_FILE = "expanded_stories_data.json"
-part1_path = r"C:\Users\acer\antigravity\i̇ngilizce-öyküm\src\stories_part1.ts"
-part2_path = r"C:\Users\acer\antigravity\i̇ngilizce-öyküm\src\stories_part2.ts"
+part1_path = "src/stories_part1.ts"
+part2_path = "src/stories_part2.ts"
 
 expanded_stories = {}
 if os.path.exists(DATA_FILE):
@@ -52,6 +52,14 @@ if os.path.exists(SCIFI_DATA_FILE):
         scifi_stories = json.load(f)
         expanded_stories.update(scifi_stories)
         print(f"Loaded {len(scifi_stories)} science fiction stories.")
+
+DETECTIVE_DATA_FILE = "detective_stories_data.json"
+if os.path.exists(DETECTIVE_DATA_FILE):
+    with open(DETECTIVE_DATA_FILE, "r", encoding="utf-8") as f:
+        detective_stories = json.load(f)
+        expanded_stories.update(detective_stories)
+        print(f"Loaded {len(detective_stories)} detective stories.")
+
 
 print(f"Loaded total of {len(expanded_stories)} expanded stories from JSON.")
 
