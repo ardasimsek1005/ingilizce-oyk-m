@@ -3,7 +3,7 @@ import urllib.request
 import json
 
 # Read API Key from .env in workspace
-env_path = r"c:\Users\acer\antigravity\i̇ngilizce-öyküm\.env"
+env_path = ".env"
 api_key = ""
 if os.path.exists(env_path):
     with open(env_path, "r") as f:
@@ -13,7 +13,7 @@ if os.path.exists(env_path):
 
 print(f"API Key: {api_key[:10]}...{api_key[-10:] if len(api_key)>10 else ''}")
 
-url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
+url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-lite-latest:generateContent?key={api_key}"
 headers = {"Content-Type": "application/json"}
 data = {
     "contents": [{"parts": [{"text": "Hello, write a 5 word sentence."}]}]

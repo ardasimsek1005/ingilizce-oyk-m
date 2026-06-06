@@ -3,42 +3,57 @@ import urllib.request
 import json
 import base64
 
-env_path = r"c:\Users\acer\antigravity\i̇ngilizce-öyküm\.env"
 api_key = ""
-if os.path.exists(env_path):
-    with open(env_path, "r") as f:
+if os.path.exists(".env"):
+    with open(".env", "r") as f:
         for line in f:
             if line.startswith("GEMINI_API_KEY="):
                 api_key = line.split("=")[1].strip()
 
-url = f"https://generativelanguage.googleapis.com/v1beta/models/imagen-4.0-generate-001:predict?key={api_key}"
+if not api_key:
+    print("No API Key found in .env!")
+    exit(1)
+
+# Check available models
+model = "models/imagen-4.0-generate-001"
+# Let's test the predict endpoint
+url = f"https://generativelanguage.googleapis.com/v1beta/{model}:predict?key={api_key}"
 headers = {"Content-Type": "application/json"}
+
+# Body structure for Imagen predict in Google AI Studio
 data = {
     "instances": [
-        {"prompt": "A cute 3D Pixar style illustration of a small ginger cat wearing glasses and reading a tiny book, cozy indoor background, warm lighting, round frame friendly"}
+        {"prompt": "A Pixar-style 3D rendered character of a cute robot, square, white background"}
     ],
     "parameters": {
         "sampleCount": 1,
-        "outputMimeType": "image/png",
-        "aspectRatio": "1:1"
+        "aspectRatio": "1:1",
+        "outputMimeType": "image/jpeg"
     }
 }
 
 req = urllib.request.Request(url, data=json.dumps(data).encode("utf-8"), headers=headers)
 try:
-    with urllib.request.urlopen(req) as response:
+    with urllib.request.urlopen(req, timeout=30) as response:
         res = json.loads(response.read().decode("utf-8"))
-        print("Keys in response:", list(res.keys()))
-        if "predictions" in res:
-            print("Number of predictions:", len(res["predictions"]))
-            # Save the image
-            img_data = res["predictions"][0]["bytesBase64Encoded"]
-            with open("test_cat.png", "wb") as f_out:
-                f_out.write(base64.b64decode(img_data))
-            print("Successfully saved test_cat.png!")
+        print("Success!")
+        predictions = res.get("predictions", [])
+        if predictions:
+            img_b64 = predictions[0].get("bytesBase64Encoded")
+            if img_b64:
+                img_data = base64.b64decode(img_b64)
+                with open("scratch/test_imagen.jpg", "wb") as f:
+                    f.write(img_data)
+                print(f"Saved generated image: {len(img_data)} bytes.")
+            else:
+                print("No image bytes found in predictions.")
         else:
-            print("Response:", json.dumps(res, indent=2))
+            print("No predictions returned.")
 except Exception as e:
-    print("Error:", e)
+    print(f"Error: {e}")
     if hasattr(e, 'read'):
-        print("Body:", e.read().decode("utf-8"))
+        try:
+            print("Error details:")
+            print(e.read().decode("utf-8"))
+        except:
+            pass

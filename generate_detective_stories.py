@@ -77,7 +77,44 @@ STORIES_TO_GENERATE = [
     # C1 Level (3 Stories)
     {"id": "detective_moonstone_revelation", "title": "The Moonstone - The Revelation", "author": "Wilkie Collins", "level": "C1"},
     {"id": "detective_double_life", "title": "The Double Life", "author": "Gaston Leroux", "level": "C1"},
-    {"id": "detective_gold_bug_1", "title": "The Gold-Bug - Part 1", "author": "Edgar Allan Poe", "level": "C1"}
+    {"id": "detective_gold_bug_1", "title": "The Gold-Bug - Part 1", "author": "Edgar Allan Poe", "level": "C1"},
+
+    # Additional 30 Stories:
+    # A1 Level (10 Stories)
+    {"id": "detective_noble_bachelor", "title": "The Adventure of the Noble Bachelor", "author": "Arthur Conan Doyle", "level": "A1"},
+    {"id": "detective_cardboard_box", "title": "The Adventure of the Cardboard Box", "author": "Arthur Conan Doyle", "level": "A1"},
+    {"id": "detective_mirror_magistrate", "title": "The Mirror of the Magistrate", "author": "G. K. Chesterton", "level": "A1"},
+    {"id": "detective_seven_of_hearts", "title": "The Seven of Hearts", "author": "Maurice Leblanc", "level": "A1"},
+    {"id": "detective_secret_growler", "title": "The Secret of the Growler", "author": "Arthur Morrison", "level": "A1"},
+    {"id": "detective_lost_special", "title": "The Lost Special", "author": "Arthur Conan Doyle", "level": "A1"},
+    {"id": "detective_red_thread_honour", "title": "The Red Thread of Honour", "author": "Ernest Bramah", "level": "A1"},
+    {"id": "detective_escape_old_man", "title": "The Escape of the Old Man", "author": "Baroness Orczy", "level": "A1"},
+    {"id": "detective_case_mirror", "title": "The Case of the Mirror", "author": "Jacques Futrelle", "level": "A1"},
+    {"id": "detective_steel_room", "title": "The Mystery of the Steel Room", "author": "Jacques Futrelle", "level": "A1"},
+
+    # A2 Level (10 Stories)
+    {"id": "detective_beryl_coronet", "title": "The Adventure of the Beryl Coronet", "author": "Arthur Conan Doyle", "level": "A2"},
+    {"id": "detective_engineers_thumb", "title": "The Adventure of the Engineer's Thumb", "author": "Arthur Conan Doyle", "level": "A2"},
+    {"id": "detective_red_scarf_2", "title": "The Red Silk Scarf - Part 2", "author": "Maurice Leblanc", "level": "A2"},
+    {"id": "detective_black_pearl", "title": "The Black Pearl", "author": "Maurice Leblanc", "level": "A2"},
+    {"id": "detective_man_passage", "title": "The Man in the Passage", "author": "G. K. Chesterton", "level": "A2"},
+    {"id": "detective_purple_jewel", "title": "The Purple Jewel", "author": "G. K. Chesterton", "level": "A2"},
+    {"id": "detective_hansom_cab_1", "title": "The Mystery of the Hansom Cab - Part 1", "author": "Fergus Hume", "level": "A2"},
+    {"id": "detective_missing_hand", "title": "The Case of the Missing Hand", "author": "Arthur Morrison", "level": "A2"},
+    {"id": "detective_stolen_cigar", "title": "The Stolen Cigar Case", "author": "Bret Harte", "level": "A2"},
+    {"id": "detective_brook_street_tragedy", "title": "The Tragedy of Brook Street", "author": "Arthur Morrison", "level": "A2"},
+
+    # B1 Level (10 Stories)
+    {"id": "detective_crooked_man", "title": "The Adventure of the Crooked Man", "author": "Arthur Conan Doyle", "level": "B1"},
+    {"id": "detective_naval_treaty", "title": "The Adventure of the Naval Treaty", "author": "Arthur Conan Doyle", "level": "B1"},
+    {"id": "detective_norwood_builder", "title": "The Adventure of the Norwood Builder", "author": "Arthur Conan Doyle", "level": "B1"},
+    {"id": "detective_three_students", "title": "The Adventure of the Three Students", "author": "Arthur Conan Doyle", "level": "B1"},
+    {"id": "detective_doom_griffiths", "title": "The Doom of the Griffiths", "author": "Elizabeth Gaskell", "level": "B1"},
+    {"id": "detective_moonstone_investigation", "title": "The Moonstone - The Investigation", "author": "Wilkie Collins", "level": "B1"},
+    {"id": "detective_woman_white_conspiracy", "title": "The Woman in White - The Conspiracy", "author": "Wilkie Collins", "level": "B1"},
+    {"id": "detective_hansom_cab_2", "title": "The Mystery of the Hansom Cab - Part 2", "author": "Fergus Hume", "level": "B1"},
+    {"id": "detective_red_house_1", "title": "The Red House Mystery - Part 1", "author": "A. A. Milne", "level": "B1"},
+    {"id": "detective_red_house_2", "title": "The Red House Mystery - Part 2", "author": "A. A. Milne", "level": "B1"}
 ]
 
 DATA_FILE = "detective_stories_data.json"

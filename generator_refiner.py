@@ -38,7 +38,7 @@ Return a JSON object in this exact schema:
 }}
 """
 
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-lite-latest:generateContent?key={api_key}"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key={api_key}"
     headers = {"Content-Type": "application/json"}
     
     data = {

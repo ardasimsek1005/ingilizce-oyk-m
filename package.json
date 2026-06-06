@@ -12,6 +12,7 @@
     "start": "node dist/server.cjs",
     "preview": "vite preview",
     "clean": "rm -rf dist server.js",
+    "test-echo": "echo 'Hello'",
     "lint": "tsc --noEmit"
   },
   "dependencies": {

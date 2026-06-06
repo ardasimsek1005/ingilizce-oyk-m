@@ -1,7 +1,7 @@
 import { RawStory } from './stories_part1';
 
 export const STORIES_PART2: RawStory[] = [
-                              {
+                                    {
     id: 'wizard_of_oz',
     title: "The Wizard of Oz",
     author: 'L. Frank Baum',
@@ -108,7 +108,7 @@ export const STORIES_PART2: RawStory[] = [
       "wicked": "kötücül"
     }
   },
-                              {
+                                    {
     id: 'golden_goose',
     title: "The Goose with the Golden Eggs",
     author: 'Aesop',
@@ -215,7 +215,7 @@ export const STORIES_PART2: RawStory[] = [
       "impatient": "sabırsız"
     }
   },
-                              {
+                                    {
     id: 'pied_piper',
     title: "The Pied Piper of Hamelin",
     author: 'Robert Browning',
@@ -322,7 +322,7 @@ export const STORIES_PART2: RawStory[] = [
       "guilders": "gulden"
     }
   },
-                              {
+                                    {
     id: 'rumpelstiltskin',
     title: "Rumpelstiltskin",
     author: 'Brothers Grimm',
@@ -430,7 +430,7 @@ export const STORIES_PART2: RawStory[] = [
       "relief": "rahatlama"
     }
   },
-                              {
+                                    {
     id: 'gullivers_travels',
     title: "Gulliver's Travels",
     author: 'Jonathan Swift',
@@ -538,7 +538,7 @@ export const STORIES_PART2: RawStory[] = [
       "civil": "sivil"
     }
   },
-                              {
+                                    {
     id: 'robinson_crusoe',
     title: "Robinson Crusoe",
     author: 'Daniel Defoe',
@@ -648,7 +648,7 @@ export const STORIES_PART2: RawStory[] = [
       "chilling": "ürpertici"
     }
   },
-                              {
+                                    {
     id: 'gatsby_b2',
     title: "The Great Gatsby",
     author: 'F. Scott Fitzgerald',
@@ -757,7 +757,7 @@ export const STORIES_PART2: RawStory[] = [
       "ashes": "küller"
     }
   },
-                              {
+                                    {
     id: 'frankenstein',
     title: "Frankenstein",
     author: 'Mary Shelley',
@@ -870,7 +870,7 @@ export const STORIES_PART2: RawStory[] = [
       "balm": "merhem"
     }
   },
-                              {
+                                    {
     id: 'dracula',
     title: "Dracula",
     author: 'Bram Stoker',
@@ -981,7 +981,7 @@ export const STORIES_PART2: RawStory[] = [
       "agonizing": "can yakıcı"
     }
   },
-                              {
+                                    {
     id: 'sherlock_holmes',
     title: "Sherlock Holmes",
     author: 'Arthur Conan Doyle',
@@ -1093,7 +1093,7 @@ export const STORIES_PART2: RawStory[] = [
       "anomalies": "anomaliler"
     }
   },
-                              {
+                                    {
     id: 'odyssey',
     title: "The Odyssey",
     author: 'Homer',
@@ -1207,7 +1207,7 @@ export const STORIES_PART2: RawStory[] = [
       "aftermath": "akıbet"
     }
   },
-                              {
+                                    {
     id: 'jungle_book',
     title: "The Jungle Book",
     author: 'Rudyard Kipling',
@@ -1328,7 +1328,7 @@ export const STORIES_PART2: RawStory[] = [
       "constantly": "durmaksızın"
     }
   },
-                              {
+                                    {
     id: 'snow_queen',
     title: "The Snow Queen",
     author: 'Hans Christian Andersen',
@@ -1439,7 +1439,7 @@ export const STORIES_PART2: RawStory[] = [
       "gale": "fırtına"
     }
   },
-                              {
+                                    {
     id: 'normal_people_c1',
     title: "Normal People",
     author: 'Sally Rooney',
@@ -1552,7 +1552,7 @@ export const STORIES_PART2: RawStory[] = [
       "cobblestoned": "arnavut kaldırımlı"
     }
   },
-                              {
+                                    {
     id: 'treasure_island',
     title: "Treasure Island",
     author: 'Robert Louis Stevenson',
@@ -1668,7 +1668,7 @@ export const STORIES_PART2: RawStory[] = [
       "azure": "gök mavisi"
     }
   },
-                              {
+                                    {
     id: 'elves_shoemaker',
     title: "The Elves and the Shoemaker",
     author: 'Brothers Grimm',
@@ -1738,7 +1738,7 @@ export const STORIES_PART2: RawStory[] = [
       "gesture": "işaret"
     }
   },
-                              {
+                                    {
     id: 'emperors_clothes',
     title: "The Emperor's New Clothes",
     author: 'Hans Christian Andersen',
@@ -1806,7 +1806,7 @@ export const STORIES_PART2: RawStory[] = [
       "vanity": "kibir"
     }
   },
-                              {
+                                    {
     id: 'happy_prince',
     title: "The Happy Prince",
     author: 'Oscar Wilde',
@@ -1878,7 +1878,7 @@ export const STORIES_PART2: RawStory[] = [
       "trash": "çöp"
     }
   },
-                              {
+                                    {
     id: 'wind_willows',
     title: "The Wind in the Willows",
     author: 'Kenneth Grahame',
@@ -1951,7 +1951,7 @@ export const STORIES_PART2: RawStory[] = [
       "underground": "yeraltı"
     }
   },
-                              {
+                                    {
     id: 'secret_garden',
     title: "The Secret Garden",
     author: 'Frances Hodgson Burnett',
@@ -2022,7 +2022,7 @@ export const STORIES_PART2: RawStory[] = [
       "mansion": "konak"
     }
   },
-                              {
+                                    {
     id: 'heidi',
     title: "Heidi",
     author: 'Johanna Spyri',
@@ -2092,7 +2092,7 @@ export const STORIES_PART2: RawStory[] = [
       "rugged": "engebeli"
     }
   },
-                              {
+                                    {
     id: 'little_prince',
     title: "The Little Prince",
     author: 'Antoine de Saint-Exupéry',
@@ -2165,7 +2165,7 @@ export const STORIES_PART2: RawStory[] = [
       "disciplined": "disiplinli"
     }
   },
-                              {
+                                    {
     id: 'christmas_carol',
     title: "A Christmas Carol",
     author: 'Charles Dickens',
@@ -2237,7 +2237,7 @@ export const STORIES_PART2: RawStory[] = [
       "drifted": "sürüklendi"
     }
   },
-                              {
+                                    {
     id: 'around_world',
     title: "Around the World in Eighty Days",
     author: 'Jules Verne',
@@ -2309,7 +2309,7 @@ export const STORIES_PART2: RawStory[] = [
       "awaited": "beklenen"
     }
   },
-                              {
+                                    {
     id: 'time_machine',
     title: "The Time Machine",
     author: 'H. G. Wells',
@@ -2382,7 +2382,7 @@ export const STORIES_PART2: RawStory[] = [
       "atmosphere": "atmosfer"
     }
   },
-                              {
+                                    {
     id: 'white_fang',
     title: "White Fang",
     author: 'Jack London',
@@ -2451,7 +2451,7 @@ export const STORIES_PART2: RawStory[] = [
       "constant": "sürekli"
     }
   },
-                              {
+                                    {
     id: 'call_wild',
     title: "The Call of the Wild",
     author: 'Jack London',
@@ -2523,7 +2523,7 @@ export const STORIES_PART2: RawStory[] = [
       "chaotic": "kaotik"
     }
   },
-                              {
+                                    {
     id: 'don_quixote',
     title: "Don Quixote",
     author: 'Miguel de Cervantes',
@@ -2594,7 +2594,7 @@ export const STORIES_PART2: RawStory[] = [
       "catalyst": "katalizör"
     }
   },
-                              {
+                                    {
     id: 'moby_dick',
     title: "Moby Dick",
     author: 'Herman Melville',
@@ -2665,7 +2665,7 @@ export const STORIES_PART2: RawStory[] = [
       "agony": "ıstırap"
     }
   },
-                              {
+                                    {
     id: 'hunchback_notredame',
     title: "The Hunchback of Notre Dame",
     author: 'Victor Hugo',
@@ -2736,7 +2736,7 @@ export const STORIES_PART2: RawStory[] = [
       "burgeoning": "filizlenen"
     }
   },
-                              {
+                                    {
     id: 'dorian_gray',
     title: "The Picture of Dorian Gray",
     author: 'Oscar Wilde',
@@ -2809,7 +2809,7 @@ export const STORIES_PART2: RawStory[] = [
       "jagged": "girintili çıkıntılı"
     }
   },
-                            {
+                                  {
     id: 'anne_green_gables',
     title: "Anne of Green Gables",
     author: 'Lucy Maud Montgomery',
@@ -2879,7 +2879,7 @@ export const STORIES_PART2: RawStory[] = [
       "sighed": "iç çekti"
     }
   },
-                            {
+                                  {
     id: 'little_women',
     title: "Little Women",
     author: 'Louisa May Alcott',
@@ -2950,7 +2950,7 @@ export const STORIES_PART2: RawStory[] = [
       "genuine": "hakiki"
     }
   },
-                            {
+                                  {
     id: 'pollyanna',
     title: "Pollyanna",
     author: 'Eleanor H. Porter',
@@ -3020,7 +3020,7 @@ export const STORIES_PART2: RawStory[] = [
       "stiff": "katı"
     }
   },
-                            {
+                                  {
     id: 'pride_prejudice',
     title: "Pride and Prejudice",
     author: 'Jane Austen',
@@ -3092,7 +3092,7 @@ export const STORIES_PART2: RawStory[] = [
       "acknowledged": "kabul edilmiş"
     }
   },
-                            {
+                                  {
     id: 'war_of_worlds',
     title: "The War of the Worlds",
     author: 'H. G. Wells',
@@ -3164,7 +3164,7 @@ export const STORIES_PART2: RawStory[] = [
       "blinding": "göz kamaştırıcı"
     }
   },
-                            {
+                                  {
     id: 'dr_jekyll_mr_hyde',
     title: "Strange Case of Dr Jekyll and Mr Hyde",
     author: 'Robert Louis Stevenson',
@@ -3235,7 +3235,7 @@ export const STORIES_PART2: RawStory[] = [
       "anxious": "tedirgin"
     }
   },
-                            {
+                                  {
     id: 'invisible_man',
     title: "The Invisible Man",
     author: 'H. G. Wells',
@@ -3305,7 +3305,7 @@ export const STORIES_PART2: RawStory[] = [
       "assaulted": "saldırıya uğramış"
     }
   },
-                            {
+                                  {
     id: 'crime_punishment',
     title: "Crime and Punishment",
     author: 'Fyodor Dostoevsky',
@@ -3377,7 +3377,7 @@ export const STORIES_PART2: RawStory[] = [
       "obsolete": "köhnemiş"
     }
   },
-                            {
+                                  {
     id: 'les_miserables',
     title: "Les Misérables",
     author: 'Victor Hugo',
@@ -3448,7 +3448,7 @@ export const STORIES_PART2: RawStory[] = [
       "tranquility": "dinginlik"
     }
   },
-                      {
+                            {
     id: 'horror_pit_pendulum',
     title: "The Pit and the Pendulum",
     author: 'Edgar Allan Poe',
@@ -3520,7 +3520,7 @@ export const STORIES_PART2: RawStory[] = [
       "descended": "indi"
     }
   },
-                      {
+                            {
     id: 'horror_tell_tale_heart',
     title: "The Tell-Tale Heart",
     author: 'Edgar Allan Poe',
@@ -3592,7 +3592,7 @@ export const STORIES_PART2: RawStory[] = [
       "furious": "öfkeli"
     }
   },
-                      {
+                            {
     id: 'horror_murders_rue_morgue',
     title: "The Murders in the Rue Morgue",
     author: 'Edgar Allan Poe',
@@ -3665,7 +3665,7 @@ export const STORIES_PART2: RawStory[] = [
       "witnesses": "şahitler"
     }
   },
-                      {
+                            {
     id: 'horror_boscombe_valley',
     title: "The Boscombe Valley Mystery",
     author: 'Arthur Conan Doyle',
@@ -3737,7 +3737,7 @@ export const STORIES_PART2: RawStory[] = [
       "identify": "teşhis etmek"
     }
   },
-                      {
+                            {
     id: 'horror_woman_in_white',
     title: "The Woman in White",
     author: 'Wilkie Collins',
@@ -3809,7 +3809,7 @@ export const STORIES_PART2: RawStory[] = [
       "fragile": "narin"
     }
   },
-                      {
+                            {
     id: 'horror_phantom_opera',
     title: "The Phantom of the Opera",
     author: 'Gaston Leroux',
@@ -3881,7 +3881,7 @@ export const STORIES_PART2: RawStory[] = [
       "entirely": "tamamen"
     }
   },
-                      {
+                            {
     id: 'horror_dunwich_horror',
     title: "The Dunwich Horror",
     author: 'H. P. Lovecraft',
@@ -3953,7 +3953,7 @@ export const STORIES_PART2: RawStory[] = [
       "echoing": "çınlayan"
     }
   },
-                      {
+                            {
     id: 'horror_mountains_madness',
     title: "At the Mountains of Madness",
     author: 'H. P. Lovecraft',
@@ -4026,7 +4026,7 @@ export const STORIES_PART2: RawStory[] = [
       "energy": "enerji"
     }
   },
-                      {
+                            {
     id: 'horror_shadow_innsmouth',
     title: "The Shadow over Innsmouth",
     author: 'H. P. Lovecraft',
@@ -4098,7 +4098,7 @@ export const STORIES_PART2: RawStory[] = [
       "leaned": "eğildi"
     }
   },
-                      {
+                            {
     id: 'horror_carmilla',
     title: "Carmilla",
     author: 'Sheridan Le Fanu',
@@ -4170,7 +4170,7 @@ export const STORIES_PART2: RawStory[] = [
       "echoed": "yankılandı"
     }
   },
-                      {
+                            {
     id: 'horror_hound_baskervilles',
     title: "The Hound of the Baskervilles",
     author: 'Arthur Conan Doyle',
@@ -4241,7 +4241,7 @@ export const STORIES_PART2: RawStory[] = [
       "atmosphere": "kasvet"
     }
   },
-                      {
+                            {
     id: 'horror_lair_white_worm',
     title: "The Lair of the White Worm",
     author: 'Bram Stoker',
@@ -4312,7 +4312,7 @@ export const STORIES_PART2: RawStory[] = [
       "architecture": "mimari"
     }
   },
-                      {
+                            {
     id: 'horror_jewel_seven_stars',
     title: "The Jewel of Seven Stars",
     author: 'Bram Stoker',
@@ -4383,7 +4383,7 @@ export const STORIES_PART2: RawStory[] = [
       "absolute": "mutlak"
     }
   },
-                      {
+                            {
     id: 'horror_turn_of_screw',
     title: "The Turn of the Screw",
     author: 'Henry James',
@@ -4453,7 +4453,7 @@ export const STORIES_PART2: RawStory[] = [
       "awaited": "beklenen"
     }
   },
-                      {
+                            {
     id: 'horror_rappaccinis_daughter',
     title: "Rappaccini's Daughter",
     author: 'Nathaniel Hawthorne',
@@ -4526,7 +4526,7 @@ export const STORIES_PART2: RawStory[] = [
       "affection": "şefkat"
     }
   },
-                      {
+                            {
     id: 'horror_mysteries_udolpho',
     title: "The Mysteries of Udolpho",
     author: 'Ann Radcliffe',
@@ -4597,7 +4597,7 @@ export const STORIES_PART2: RawStory[] = [
       "beloved": "sevgili"
     }
   },
-                      {
+                            {
     id: 'horror_castle_of_otranto',
     title: "The Castle of Otranto",
     author: 'Horace Walpole',
@@ -4668,7 +4668,7 @@ export const STORIES_PART2: RawStory[] = [
       "acknowledge": "tanımak"
     }
   },
-                      {
+                            {
     id: 'horror_monk',
     title: "The Monk",
     author: 'Matthew Gregory Lewis',
@@ -4741,7 +4741,7 @@ export const STORIES_PART2: RawStory[] = [
       "affections": "duygular"
     }
   },
-                      {
+                            {
     id: 'horror_purloined_letter',
     title: "The Purloined Letter",
     author: 'Edgar Allan Poe',
@@ -4812,7 +4812,7 @@ export const STORIES_PART2: RawStory[] = [
       "burdened": "yüklü"
     }
   },
-                      {
+                            {
     id: 'horror_great_god_pan',
     title: "The Great God Pan",
     author: 'Arthur Machen',
@@ -4882,7 +4882,7 @@ export const STORIES_PART2: RawStory[] = [
       "biological": "biyolojik"
     }
   },
-                      {
+                            {
     id: 'horror_call_of_cthulhu',
     title: "The Call of Cthulhu",
     author: 'H. P. Lovecraft',
@@ -4954,7 +4954,7 @@ export const STORIES_PART2: RawStory[] = [
       "bouts": "nöbetler"
     }
   },
-                      {
+                            {
     id: 'horror_white_people',
     title: "The White People",
     author: 'Arthur Machen',
@@ -5026,7 +5026,7 @@ export const STORIES_PART2: RawStory[] = [
       "celestial": "göksel"
     }
   },
-                      {
+                            {
     id: 'horror_beetle',
     title: "The Beetle",
     author: 'Richard Marsh',
@@ -5096,7 +5096,7 @@ export const STORIES_PART2: RawStory[] = [
       "abyss": "uçurum"
     }
   },
-                      {
+                            {
     id: 'horror_house_borderland',
     title: "The House on the Borderland",
     author: 'William Hope Hodgson',
@@ -5166,7 +5166,7 @@ export const STORIES_PART2: RawStory[] = [
       "agony": "ıstırap"
     }
   },
-                      {
+                            {
     id: 'horror_varney_vampire',
     title: "Varney the Vampire",
     author: 'Thomas Preskett Prest',
@@ -5236,7 +5236,7 @@ export const STORIES_PART2: RawStory[] = [
       "agonizing": "can yakıcı"
     }
   },
-                {
+                      {
     id: 'classic_wuthering_heights',
     title: "Wuthering Heights",
     author: 'Emily Brontë',
@@ -5308,7 +5308,7 @@ export const STORIES_PART2: RawStory[] = [
       "moving": "dokunaklı"
     }
   },
-                {
+                      {
     id: 'classic_scarlet_letter',
     title: "The Scarlet Letter",
     author: 'Nathaniel Hawthorne',
@@ -5380,7 +5380,7 @@ export const STORIES_PART2: RawStory[] = [
       "grand": "görkemli"
     }
   },
-                {
+                      {
     id: 'classic_tale_two_cities',
     title: "A Tale of Two Cities",
     author: 'Charles Dickens',
@@ -5450,7 +5450,7 @@ export const STORIES_PART2: RawStory[] = [
       "chaos": "kargaşa"
     }
   },
-                {
+                      {
     id: 'classic_man_iron_mask',
     title: "The Man in the Iron Mask",
     author: 'Alexandre Dumas',
@@ -5518,7 +5518,7 @@ export const STORIES_PART2: RawStory[] = [
       "confronted": "yüzleşti"
     }
   },
-                {
+                      {
     id: 'classic_connecticut_yankee',
     title: "A Connecticut Yankee in King Arthur's Court",
     author: 'Mark Twain',
@@ -5591,7 +5591,7 @@ export const STORIES_PART2: RawStory[] = [
       "encountered": "karşılaşılan"
     }
   },
-                {
+                      {
     id: 'classic_age_of_innocence',
     title: "The Age of Innocence",
     author: 'Edith Wharton',
@@ -5662,7 +5662,7 @@ export const STORIES_PART2: RawStory[] = [
       "currently": "şu anda"
     }
   },
-              {
+                    {
     id: 'classic_house_of_mirth',
     title: "The House of Mirth",
     author: 'Edith Wharton',
@@ -5734,7 +5734,7 @@ export const STORIES_PART2: RawStory[] = [
       "flames": "alevler"
     }
   },
-              {
+                    {
     id: 'classic_sea_wolf',
     title: "The Sea-Wolf",
     author: 'Jack London',
@@ -5804,7 +5804,7 @@ export const STORIES_PART2: RawStory[] = [
       "constant": "sürekli"
     }
   },
-              {
+                    {
     id: 'classic_martin_eden',
     title: "Martin Eden",
     author: 'Jack London',
@@ -5876,7 +5876,7 @@ export const STORIES_PART2: RawStory[] = [
       "docks": "rıhtım"
     }
   },
-              {
+                    {
     id: 'classic_madding_crowd',
     title: "Far from the Madding Crowd",
     author: 'Thomas Hardy',
@@ -5947,7 +5947,7 @@ export const STORIES_PART2: RawStory[] = [
       "profound": "derin"
     }
   },
-              {
+                    {
     id: 'classic_fathers_and_sons',
     title: "Fathers and Sons",
     author: 'Ivan Turgenev',
@@ -6020,7 +6020,7 @@ export const STORIES_PART2: RawStory[] = [
       "affection": "şefkat"
     }
   },
-              {
+                    {
     id: 'classic_dead_souls',
     title: "Dead Souls",
     author: 'Nikolai Gogol',
@@ -6091,7 +6091,7 @@ export const STORIES_PART2: RawStory[] = [
       "accustomed": "alışkın"
     }
   },
-              {
+                    {
     id: 'classic_overcoat',
     title: "The Overcoat",
     author: 'Nikolai Gogol',
@@ -6161,7 +6161,7 @@ export const STORIES_PART2: RawStory[] = [
       "atmosphere": "atmosfer"
     }
   },
-              {
+                    {
     id: 'classic_tess_urbervilles',
     title: "Tess of the d'Urbervilles",
     author: 'Thomas Hardy',
@@ -6234,7 +6234,7 @@ export const STORIES_PART2: RawStory[] = [
       "amidst": "ortasında"
     }
   },
-              {
+                    {
     id: 'classic_mayor_casterbridge',
     title: "The Mayor of Casterbridge",
     author: 'Thomas Hardy',
@@ -6306,7 +6306,7 @@ export const STORIES_PART2: RawStory[] = [
       "accelerated": "hızlandırılmış"
     }
   },
-              {
+                    {
     id: 'classic_return_native',
     title: "The Return of the Native",
     author: 'Thomas Hardy',
@@ -6378,7 +6378,7 @@ export const STORIES_PART2: RawStory[] = [
       "desperately": "çaresizce"
     }
   },
-              {
+                    {
     id: 'classic_jude_obscure',
     title: "Jude the Obscure",
     author: 'Thomas Hardy',
@@ -6449,7 +6449,7 @@ export const STORIES_PART2: RawStory[] = [
       "affection": "şefkat"
     }
   },
-              {
+                    {
     id: 'classic_madame_bovary',
     title: "Madame Bovary",
     author: 'Gustave Flaubert',
@@ -6520,7 +6520,7 @@ export const STORIES_PART2: RawStory[] = [
       "asserting": "ileri süren"
     }
   },
-              {
+                    {
     id: 'classic_pere_goriot',
     title: "Le Père Goriot",
     author: 'Honoré de Balzac',
@@ -6591,7 +6591,7 @@ export const STORIES_PART2: RawStory[] = [
       "acknowledged": "kabul edilmiş"
     }
   },
-              {
+                    {
     id: 'classic_eugenie_grandet',
     title: "Eugénie Grandet",
     author: 'Honoré de Balzac',
@@ -6664,7 +6664,7 @@ export const STORIES_PART2: RawStory[] = [
       "affection": "şefkat"
     }
   },
-              {
+                    {
     id: 'classic_war_and_peace',
     title: "War and Peace",
     author: 'Leo Tolstoy',
@@ -6735,7 +6735,7 @@ export const STORIES_PART2: RawStory[] = [
       "aftermath": "akıbet"
     }
   },
-              {
+                    {
     id: 'classic_anna_karenina',
     title: "Anna Karenina",
     author: 'Leo Tolstoy',
@@ -6806,7 +6806,7 @@ export const STORIES_PART2: RawStory[] = [
       "accommodate": "yerleştirmek"
     }
   },
-              {
+                    {
     id: 'classic_brothers_karamazov',
     title: "The Brothers Karamazov",
     author: 'Fyodor Dostoevsky',
@@ -6878,7 +6878,7 @@ export const STORIES_PART2: RawStory[] = [
       "aftermath": "akıbet"
     }
   },
-              {
+                    {
     id: 'classic_idiot',
     title: "The Idiot",
     author: 'Fyodor Dostoevsky',
@@ -6951,7 +6951,7 @@ export const STORIES_PART2: RawStory[] = [
       "agonizing": "acı verici"
     }
   },
-            {
+                  {
     id: 'selfish_giant',
     title: "The Selfish Giant",
     author: 'Oscar Wilde',
@@ -7020,7 +7020,7 @@ export const STORIES_PART2: RawStory[] = [
       "transformation": "dönüşüm"
     }
   },
-            {
+                  {
     id: 'nightingale',
     title: "The Nightingale",
     author: 'Hans Christian Andersen',
@@ -7093,7 +7093,7 @@ export const STORIES_PART2: RawStory[] = [
       "harmony": "uyum"
     }
   },
-            {
+                  {
     id: 'tinderbox',
     title: "The Tinderbox",
     author: 'Hans Christian Andersen',
@@ -7162,7 +7162,7 @@ export const STORIES_PART2: RawStory[] = [
       "fear": "korku"
     }
   },
-            {
+                  {
     id: 'wild_swans',
     title: "The Wild Swans",
     author: 'Hans Christian Andersen',
@@ -7233,7 +7233,7 @@ export const STORIES_PART2: RawStory[] = [
       "bond": "bağ"
     }
   },
-            {
+                  {
     id: 'goose_girl',
     title: "The Goose Girl",
     author: 'Brothers Grimm',
@@ -7304,7 +7304,7 @@ export const STORIES_PART2: RawStory[] = [
       "justice": "adalet"
     }
   },
-          {
+                {
     id: 'daily_meeting',
     title: "Project Planning",
     author: 'Antigravity',
@@ -7373,7 +7373,7 @@ export const STORIES_PART2: RawStory[] = [
       "foundation": "temel"
     }
   },
-          {
+                {
     id: 'daily_car_rent',
     title: "Road Trip Car",
     author: 'Antigravity',
@@ -7442,7 +7442,7 @@ export const STORIES_PART2: RawStory[] = [
       "tank": "yakıt deposu"
     }
   },
-          {
+                {
     id: 'daily_gym',
     title: "Personal Trainer",
     author: 'Antigravity',
@@ -7510,7 +7510,7 @@ export const STORIES_PART2: RawStory[] = [
       "master": "ustalaşmak"
     }
   },
-          {
+                {
     id: 'daily_mechanic',
     title: "Car Breakdown",
     author: 'Antigravity',
@@ -7581,7 +7581,7 @@ export const STORIES_PART2: RawStory[] = [
       "satisfaction": "memnuniyet"
     }
   },
-          {
+                {
     id: 'daily_museum',
     title: "Guided Tour",
     author: 'Antigravity',
@@ -7651,7 +7651,7 @@ export const STORIES_PART2: RawStory[] = [
       "architecture": "mimari"
     }
   },
-          {
+                {
     id: 'daily_colleague',
     title: "Lunch Break",
     author: 'Antigravity',
@@ -7722,7 +7722,7 @@ export const STORIES_PART2: RawStory[] = [
       "isolated": "izole/yalnız"
     }
   },
-          {
+                {
     id: 'daily_pharmacy',
     title: "Prescription Help",
     author: 'Antigravity',
@@ -7789,7 +7789,7 @@ export const STORIES_PART2: RawStory[] = [
       "responsibility": "sorumluluk"
     }
   },
-          {
+                {
     id: 'daily_university',
     title: "Dormitory Move",
     author: 'Antigravity',
@@ -7861,7 +7861,7 @@ export const STORIES_PART2: RawStory[] = [
       "independently": "bağımsız bir şekilde"
     }
   },
-          {
+                {
     id: 'daily_barber',
     title: "Haircut Choice",
     author: 'Antigravity',
@@ -7932,7 +7932,7 @@ export const STORIES_PART2: RawStory[] = [
       "accomplishment": "başarı"
     }
   },
-          {
+                {
     id: 'daily_cinema',
     title: "Movie Choice",
     author: 'Antigravity',
@@ -8003,7 +8003,7 @@ export const STORIES_PART2: RawStory[] = [
       "backdrop": "arka plan, fon"
     }
   },
-          {
+                {
     id: 'daily_investor',
     title: "Pitching the Startup",
     author: 'Antigravity',
@@ -8072,7 +8072,7 @@ export const STORIES_PART2: RawStory[] = [
       "grit": "azim/kararlılık"
     }
   },
-          {
+                {
     id: 'daily_complaint',
     title: "Faulty Laptop",
     author: 'Antigravity',
@@ -8144,7 +8144,7 @@ export const STORIES_PART2: RawStory[] = [
       "advocate": "savunmak/desteklemek"
     }
   },
-          {
+                {
     id: 'daily_negotiation',
     title: "Salary Review",
     author: 'Antigravity',
@@ -8215,7 +8215,7 @@ export const STORIES_PART2: RawStory[] = [
       "momentum": "ivme veya hız"
     }
   },
-          {
+                {
     id: 'daily_wedding',
     title: "Planning the Big Day",
     author: 'Antigravity',
@@ -8284,7 +8284,7 @@ export const STORIES_PART2: RawStory[] = [
       "collaboration": "iş birliği"
     }
   },
-          {
+                {
     id: 'daily_promotion',
     title: "Promotion Talk",
     author: 'Antigravity',
@@ -8352,7 +8352,7 @@ export const STORIES_PART2: RawStory[] = [
       "milestone": "dönüm noktası"
     }
   },
-          {
+                {
     id: 'daily_contract',
     title: "Signing the Lease",
     author: 'Antigravity',
@@ -8421,7 +8421,7 @@ export const STORIES_PART2: RawStory[] = [
       "closure": "kapanış, tamamlanma hissi"
     }
   },
-          {
+                {
     id: 'daily_accident',
     title: "Fender Bender",
     author: 'Antigravity',
@@ -8492,7 +8492,7 @@ export const STORIES_PART2: RawStory[] = [
       "methodical": "sistemli, yöntemli"
     }
   },
-          {
+                {
     id: 'daily_career',
     title: "Career Change",
     author: 'Antigravity',
@@ -8562,7 +8562,7 @@ export const STORIES_PART2: RawStory[] = [
       "ambition": "hırs"
     }
   },
-          {
+                {
     id: 'daily_apartment_issue',
     title: "Water Leak",
     author: 'Antigravity',
@@ -8633,7 +8633,7 @@ export const STORIES_PART2: RawStory[] = [
       "cavernous": "boş, derin, mağara gibi"
     }
   },
-          {
+                {
     id: 'daily_presentation',
     title: "Stage Fright",
     author: 'Antigravity',
@@ -8703,7 +8703,7 @@ export const STORIES_PART2: RawStory[] = [
       "wield": "kullanmak, hükmetmek"
     }
   },
-          {
+                {
     id: 'daily_merger',
     title: "Business Merger",
     author: 'Antigravity',
@@ -8773,7 +8773,7 @@ export const STORIES_PART2: RawStory[] = [
       "culmination": "doruk noktası, sonuçlanma"
     }
   },
-          {
+                {
     id: 'daily_court',
     title: "The Witness Stand",
     author: 'Antigravity',
@@ -8842,7 +8842,7 @@ export const STORIES_PART2: RawStory[] = [
       "nexus": "bağlantı"
     }
   },
-          {
+                {
     id: 'daily_panel',
     title: "Climate Debate",
     author: 'Antigravity',
@@ -8912,7 +8912,7 @@ export const STORIES_PART2: RawStory[] = [
       "catalyst": "katalizör"
     }
   },
-          {
+                {
     id: 'daily_negotiate_lease',
     title: "Commercial Rent",
     author: 'Antigravity',
@@ -8985,7 +8985,7 @@ export const STORIES_PART2: RawStory[] = [
       "synergy": "sinerji"
     }
   },
-          {
+                {
     id: 'daily_critic',
     title: "Art Gallery",
     author: 'Antigravity',
@@ -9051,7 +9051,7 @@ export const STORIES_PART2: RawStory[] = [
       "fallibility": "hata yapabilirlik, yanılabilirlik"
     }
   },
-          {
+                {
     id: 'daily_crisis',
     title: "Public Relations",
     author: 'Antigravity',
@@ -9120,7 +9120,7 @@ export const STORIES_PART2: RawStory[] = [
       "vigilant": "tetikte, uyanık"
     }
   },
-          {
+                {
     id: 'daily_heritage',
     title: "Family Inheritance",
     author: 'Antigravity',
@@ -9192,7 +9192,7 @@ export const STORIES_PART2: RawStory[] = [
       "steward": "kâhya, sorumluluğu üstlenen kişi"
     }
   },
-          {
+                {
     id: 'daily_interview_exec',
     title: "Executive Interview",
     author: 'Antigravity',
@@ -9262,7 +9262,7 @@ export const STORIES_PART2: RawStory[] = [
       "precarious": "tehlikeli, istikrarsız"
     }
   },
-          {
+                {
     id: 'daily_philosophy',
     title: "Late Night Debate",
     author: 'Antigravity',
@@ -9332,7 +9332,7 @@ export const STORIES_PART2: RawStory[] = [
       "schism": "ayrılık, bölünme, görüş ayrılığı"
     }
   },
-          {
+                {
     id: 'daily_academic',
     title: "Research Proposal",
     author: 'Antigravity',
@@ -9403,7 +9403,7 @@ export const STORIES_PART2: RawStory[] = [
       "cognizant": "farkında, bilincinde"
     }
   },
-    {
+          {
     id: 'magic_flute',
     title: "The Magic Flute",
     author: 'Wolfgang Amadeus Mozart',
@@ -9475,7 +9475,7 @@ export const STORIES_PART2: RawStory[] = [
       "arduous": "zorlu"
     }
   },
-    {
+          {
     id: 'king_thrushbeard',
     title: "King Thrushbeard",
     author: 'Brothers Grimm',
@@ -9545,7 +9545,7 @@ export const STORIES_PART2: RawStory[] = [
       "prosperous": "varlıklı"
     }
   },
-    {
+          {
     id: 'iron_hans',
     title: "Iron Hans",
     author: 'Brothers Grimm',
@@ -9617,7 +9617,7 @@ export const STORIES_PART2: RawStory[] = [
       "persistence": "azim"
     }
   },
-    {
+          {
     id: 'water_of_life',
     title: "The Water of Life",
     author: 'Brothers Grimm',
@@ -9688,7 +9688,7 @@ export const STORIES_PART2: RawStory[] = [
       "integrity": "dürüstlük"
     }
   },
-    {
+          {
     id: 'three_spinners',
     title: "The Three Spinners",
     author: 'Brothers Grimm',
@@ -9757,7 +9757,7 @@ export const STORIES_PART2: RawStory[] = [
       "exempt": "muaf"
     }
   },
-    {
+          {
     id: 'six_swans',
     title: "The Six Swans",
     author: 'Brothers Grimm',
@@ -9829,7 +9829,7 @@ export const STORIES_PART2: RawStory[] = [
       "reconciled": "barışmış"
     }
   },
-    {
+          {
     id: 'birthday_infanta',
     title: "The Birthday of the Infanta",
     author: 'Oscar Wilde',
@@ -9897,7 +9897,7 @@ export const STORIES_PART2: RawStory[] = [
       "dissonant": "uyumsuz"
     }
   },
-    {
+          {
     id: 'fisherman_soul',
     title: "The Fisherman and His Soul",
     author: 'Oscar Wilde',
@@ -9968,7 +9968,7 @@ export const STORIES_PART2: RawStory[] = [
       "transcend": "aşmak"
     }
   },
-    {
+          {
     id: 'young_king',
     title: "The Young King",
     author: 'Oscar Wilde',
@@ -10040,7 +10040,7 @@ export const STORIES_PART2: RawStory[] = [
       "providence": "kader"
     }
   },
-    {
+          {
     id: 'devoted_friend',
     title: "The Devoted Friend",
     author: 'Oscar Wilde',
@@ -10112,7 +10112,7 @@ export const STORIES_PART2: RawStory[] = [
       "vanity": "kibir"
     }
   },
-    {
+          {
     id: 'remarkably_rocket',
     title: "The Remarkable Rocket",
     author: 'Oscar Wilde',
@@ -10184,7 +10184,7 @@ export const STORIES_PART2: RawStory[] = [
       "grandiosity": "büyüklenme"
     }
   },
-    {
+          {
     id: 'east_sun_west_moon',
     title: "East of the Sun and West of the Moon",
     author: 'Norse Fairytale',
@@ -10256,7 +10256,7 @@ export const STORIES_PART2: RawStory[] = [
       "harmony": "uyum"
     }
   },
-    {
+          {
     id: 'snow_white_rose_red',
     title: "Snow-White and Rose-Red",
     author: 'Brothers Grimm',
@@ -10325,7 +10325,7 @@ export const STORIES_PART2: RawStory[] = [
       "harmony": "uyum"
     }
   },
-    {
+          {
     id: 'twelve_dancing_princesses',
     title: "The Twelve Dancing Princesses",
     author: 'Brothers Grimm',
@@ -10394,7 +10394,7 @@ export const STORIES_PART2: RawStory[] = [
       "legend": "efsane"
     }
   },
-    {
+          {
     id: 'horror_lazarus',
     title: "Lazarus",
     author: 'Leonid Andreyev',
@@ -10459,7 +10459,7 @@ export const STORIES_PART2: RawStory[] = [
       "agony": "ıstırap"
     }
   },
-    {
+          {
     id: 'horror_shadow_out_of_time',
     title: "The Shadow Out of Time",
     author: 'H. P. Lovecraft',
@@ -10531,7 +10531,7 @@ export const STORIES_PART2: RawStory[] = [
       "psyche": "ruh"
     }
   },
-    {
+          {
     id: 'horror_outsider',
     title: "The Outsider",
     author: 'H. P. Lovecraft',
@@ -10603,7 +10603,7 @@ export const STORIES_PART2: RawStory[] = [
       "solace": "teselli"
     }
   },
-  {
+        {
     id: 'scifi_i_robot',
     title: "I, Robot",
     author: 'Isaac Asimov',
@@ -10673,9 +10673,8 @@ export const STORIES_PART2: RawStory[] = [
       "inadvertently": "farkında olmadan",
       "dilemma": "ikilem"
     }
-  }
-,
-  {
+  },
+        {
     id: 'scifi_nightfall',
     title: "Nightfall",
     author: 'Isaac Asimov',
@@ -10743,9 +10742,8 @@ export const STORIES_PART2: RawStory[] = [
       "chaos": "kaos",
       "eternity": "ebediyet"
     }
-  }
-,
-  {
+  },
+        {
     id: 'scifi_sentinel',
     title: "The Sentinel",
     author: 'Arthur C. Clarke',
@@ -10816,9 +10814,8 @@ export const STORIES_PART2: RawStory[] = [
       "destiny": "kader",
       "privacy": "mahremiyet"
     }
-  }
-,
-  {
+  },
+        {
     id: 'scifi_nine_billion_names',
     title: "The Nine Billion Names of God",
     author: 'Arthur C. Clarke',
@@ -10888,9 +10885,8 @@ export const STORIES_PART2: RawStory[] = [
       "universe": "evren",
       "witness": "tanıklık etmek"
     }
-  }
-,
-  {
+  },
+        {
     id: 'scifi_sound_of_thunder',
     title: "A Sound of Thunder",
     author: 'Ray Bradbury',
@@ -10960,9 +10956,8 @@ export const STORIES_PART2: RawStory[] = [
       "menacing": "tehditkâr",
       "curiosity": "merak"
     }
-  }
-,
-  {
+  },
+        {
     id: 'scifi_martian_chronicles',
     title: "The Martian Chronicles",
     author: 'Ray Bradbury',
@@ -11030,9 +11025,8 @@ export const STORIES_PART2: RawStory[] = [
       "fragile": "kırılgan",
       "invisible": "görünmez"
     }
-  }
-,
-  {
+  },
+        {
     id: 'scifi_veldt',
     title: "The Veldt",
     author: 'Ray Bradbury',
@@ -11102,9 +11096,8 @@ export const STORIES_PART2: RawStory[] = [
       "composed": "sakin",
       "consume": "yutmak"
     }
-  }
-,
-  {
+  },
+        {
     id: 'scifi_soft_rains',
     title: "There Will Come Soft Rains",
     author: 'Ray Bradbury',
@@ -11173,9 +11166,8 @@ export const STORIES_PART2: RawStory[] = [
       "remnants": "kalıntılar",
       "collapse": "çökmek"
     }
-  }
-,
-  {
+  },
+        {
     id: 'scifi_arena',
     title: "Arena",
     author: 'Fredric Brown',
@@ -11245,9 +11237,8 @@ export const STORIES_PART2: RawStory[] = [
       "entity": "varlık",
       "burden": "yük"
     }
-  }
-,
-  {
+  },
+        {
     id: 'scifi_expedition',
     title: "Expedition",
     author: 'Fredric Brown',
@@ -11316,9 +11307,8 @@ export const STORIES_PART2: RawStory[] = [
       "fragile": "kırılgan",
       "witness": "tanık"
     }
-  }
-,
-  {
+  },
+        {
     id: 'scifi_escape_velocity',
     title: "Escape Velocity",
     author: 'Unknown',
@@ -11387,9 +11377,8 @@ export const STORIES_PART2: RawStory[] = [
       "vessel": "araç",
       "vibrant": "canlı"
     }
-  }
-,
-  {
+  },
+        {
     id: 'scifi_evidence',
     title: "Evidence",
     author: 'Isaac Asimov',
@@ -11459,9 +11448,8 @@ export const STORIES_PART2: RawStory[] = [
       "harmony": "uyum",
       "empathy": "empati"
     }
-  }
-,
-  {
+  },
+        {
     id: 'scifi_clarke_star',
     title: "The Star",
     author: 'Arthur C. Clarke',
@@ -11528,9 +11516,8 @@ export const STORIES_PART2: RawStory[] = [
       "abyss": "uçurum",
       "insignificant": "önemsiz"
     }
-  }
-,
-  {
+  },
+        {
     id: 'scifi_do_androids_dream',
     title: "Do Androids Dream of Electric Sheep?",
     author: 'Philip K. Dick',
@@ -11600,9 +11587,8 @@ export const STORIES_PART2: RawStory[] = [
       "remorse": "pişmanlık",
       "extinguish": "söndürmek"
     }
-  }
-,
-  {
+  },
+        {
     id: 'scifi_minority_report',
     title: "The Minority Report",
     author: 'Philip K. Dick',
@@ -11674,9 +11660,8 @@ export const STORIES_PART2: RawStory[] = [
       "liberation": "kurtuluş, özgürleşme",
       "deterministic": "belirlenimci, kaderci"
     }
-  }
-,
-  {
+  },
+        {
     id: 'scifi_total_recall',
     title: "We Can Remember It for You Wholesale",
     author: 'Philip K. Dick',
@@ -11740,9 +11725,8 @@ export const STORIES_PART2: RawStory[] = [
       "deception": "aldatmaca",
       "shackles": "prangalar"
     }
-  }
-,
-  {
+  },
+        {
     id: 'scifi_time_patrol',
     title: "Time Patrol",
     author: 'Poul Anderson',
@@ -11809,9 +11793,8 @@ export const STORIES_PART2: RawStory[] = [
       "oblivious": "habersiz",
       "disillusionment": "hayal kırıklığı"
     }
-  }
-,
-  {
+  },
+        {
     id: 'scifi_day_of_triffids',
     title: "The Day of the Triffids",
     author: 'John Wyndham',
@@ -11881,9 +11864,8 @@ export const STORIES_PART2: RawStory[] = [
       "regime": "rejim",
       "encroaching": "yavaş yavaş yayılan"
     }
-  }
-,
-  {
+  },
+        {
     id: 'scifi_midwich_cuckoos',
     title: "The Midwich Cuckoos",
     author: 'John Wyndham',
@@ -11954,9 +11936,8 @@ export const STORIES_PART2: RawStory[] = [
       "resilience": "direnç",
       "autonomy": "özerklik"
     }
-  }
-,
-  {
+  },
+        {
     id: 'scifi_cold_equations',
     title: "The Cold Equations",
     author: 'Tom Godwin',
@@ -12025,9 +12006,8 @@ export const STORIES_PART2: RawStory[] = [
       "finality": "sonluluk, kesinlik",
       "agonizing": "acı verici, çok ızdıraplı"
     }
-  }
-,
-  {
+  },
+        {
     id: 'scifi_bicentennial_man',
     title: "The Bicentennial Man",
     author: 'Isaac Asimov',
@@ -12097,9 +12077,8 @@ export const STORIES_PART2: RawStory[] = [
       "testament": "kanıt, vasiyet",
       "odyssey": "uzun ve maceralı yolculuk"
     }
-  }
-,
-  {
+  },
+        {
     id: 'scifi_last_question',
     title: "The Last Question",
     author: 'Isaac Asimov',
@@ -12162,9 +12141,8 @@ export const STORIES_PART2: RawStory[] = [
       "loophole": "açık",
       "abyss": "uçurum"
     }
-  }
-,
-  {
+  },
+        {
     id: 'scifi_machine_stops',
     title: "The Machine Stops",
     author: 'E. M. Forster',
@@ -12236,9 +12214,8 @@ export const STORIES_PART2: RawStory[] = [
       "quietude": "sükunet, sessizlik",
       "essence": "öz, cevher"
     }
-  }
-,
-  {
+  },
+        {
     id: 'scifi_solitude',
     title: "Solitude",
     author: 'Ursula K. Le Guin',
@@ -12309,9 +12286,8 @@ export const STORIES_PART2: RawStory[] = [
       "manifestation": "vücut bulma",
       "transformation": "dönüşüm"
     }
-  }
-,
-  {
+  },
+        {
     id: 'scifi_by_waters_of_babylon',
     title: "By the Waters of Babylon",
     author: 'Stephen Vincent Benét',
@@ -12383,9 +12359,8 @@ export const STORIES_PART2: RawStory[] = [
       "humility": "alçakgönüllülük",
       "decay": "çürüme"
     }
-  }
-,
-  {
+  },
+        {
     id: 'detective_hound_baskervilles_1',
     title: "The Hound of the Baskervilles - Part 1",
     author: 'Arthur Conan Doyle',
@@ -12455,9 +12430,8 @@ export const STORIES_PART2: RawStory[] = [
       "trace": "izini sürmek",
       "vanished": "kayboldu"
     }
-  }
-,
-  {
+  },
+        {
     id: 'detective_hound_baskervilles_2',
     title: "The Hound of the Baskervilles - Part 2",
     author: 'Arthur Conan Doyle',
@@ -12528,9 +12502,8 @@ export const STORIES_PART2: RawStory[] = [
       "evidence": "kanıt",
       "initials": "baş harfleri"
     }
-  }
-,
-  {
+  },
+        {
     id: 'detective_valley_fear_1',
     title: "The Valley of Fear - Part 1",
     author: 'Arthur Conan Doyle',
@@ -12598,9 +12571,8 @@ export const STORIES_PART2: RawStory[] = [
       "tramp": "serseri",
       "detail": "detay"
     }
-  }
-,
-  {
+  },
+        {
     id: 'detective_valley_fear_2',
     title: "The Valley of Fear - Part 2",
     author: 'Arthur Conan Doyle',
@@ -12672,9 +12644,8 @@ export const STORIES_PART2: RawStory[] = [
       "corruption": "yolsuzluk",
       "perilous": "tehlikeli"
     }
-  }
-,
-  {
+  },
+        {
     id: 'detective_musgrave_ritual',
     title: "The Adventure of the Musgrave Ritual",
     author: 'Arthur Conan Doyle',
@@ -12740,9 +12711,8 @@ export const STORIES_PART2: RawStory[] = [
       "somber": "hüzünlü",
       "reflection": "derin düşünce"
     }
-  }
-,
-  {
+  },
+        {
     id: 'detective_final_problem',
     title: "The Adventure of the Final Problem",
     author: 'Arthur Conan Doyle',
@@ -12811,9 +12781,8 @@ export const STORIES_PART2: RawStory[] = [
       "perish": "yok olmak",
       "sacrifice": "fedakarlık"
     }
-  }
-,
-  {
+  },
+        {
     id: 'detective_empty_house',
     title: "The Adventure of the Empty House",
     author: 'Arthur Conan Doyle',
@@ -12883,9 +12852,8 @@ export const STORIES_PART2: RawStory[] = [
       "criminal": "suçlu",
       "resolve": "çözmek"
     }
-  }
-,
-  {
+  },
+        {
     id: 'detective_invisible_man',
     title: "The Invisible Man",
     author: 'G. K. Chesterton',
@@ -12957,9 +12925,8 @@ export const STORIES_PART2: RawStory[] = [
       "misery": "sefalet",
       "mercy": "merhamet"
     }
-  }
-,
-  {
+  },
+        {
     id: 'detective_hammer_of_god',
     title: "The Hammer of God",
     author: 'G. K. Chesterton',
@@ -13029,9 +12996,8 @@ export const STORIES_PART2: RawStory[] = [
       "obsessions": "takıntılar",
       "humble": "alçakgönüllü"
     }
-  }
-,
-  {
+  },
+        {
     id: 'detective_moonstone_1',
     title: "The Moonstone - Part 1",
     author: 'Wilkie Collins',
@@ -13103,9 +13069,8 @@ export const STORIES_PART2: RawStory[] = [
       "ignorance": "habersizlik",
       "vanish": "gözden kaybolmak"
     }
-  }
-,
-  {
+  },
+        {
     id: 'detective_moonstone_2',
     title: "The Moonstone - Part 2",
     author: 'Wilkie Collins',
@@ -13174,9 +13139,8 @@ export const STORIES_PART2: RawStory[] = [
       "revelation": "gerçeğin ortaya çıkması",
       "sacred": "kutsal"
     }
-  }
-,
-  {
+  },
+        {
     id: 'detective_circular_staircase_1',
     title: "The Circular Staircase - Part 1",
     author: 'Mary Roberts Rinehart',
@@ -13242,9 +13206,8 @@ export const STORIES_PART2: RawStory[] = [
       "staircase": "merdiven",
       "evidence": "kanıt"
     }
-  }
-,
-  {
+  },
+        {
     id: 'detective_phantom_motor',
     title: "The Phantom Motor",
     author: 'Jacques Futrelle',
@@ -13316,9 +13279,8 @@ export const STORIES_PART2: RawStory[] = [
       "intimidating": "ürkütücü",
       "horizon": "ufuk"
     }
-  }
-,
-  {
+  },
+        {
     id: 'detective_woman_in_white_1',
     title: "The Woman in White - Part 1",
     author: 'Wilkie Collins',
@@ -13389,9 +13351,8 @@ export const STORIES_PART2: RawStory[] = [
       "turbulent": "çalkantılı",
       "vow": "yemin"
     }
-  }
-,
-  {
+  },
+        {
     id: 'detective_woman_in_white_2',
     title: "The Woman in White - Part 2",
     author: 'Wilkie Collins',
@@ -13461,9 +13422,8 @@ export const STORIES_PART2: RawStory[] = [
       "inevitable": "kaçınılmaz",
       "liberate": "özgür bırakmak"
     }
-  }
-,
-  {
+  },
+        {
     id: 'detective_yellow_room_1',
     title: "The Mystery of the Yellow Room - Part 1",
     author: 'Gaston Leroux',
@@ -13533,9 +13493,8 @@ export const STORIES_PART2: RawStory[] = [
       "revelation": "ifşaat, açığa çıkarma",
       "tragedy": "trajedi, acı olay"
     }
-  }
-,
-  {
+  },
+        {
     id: 'detective_yellow_room_2',
     title: "The Mystery of the Yellow Room - Part 2",
     author: 'Gaston Leroux',
@@ -13604,9 +13563,8 @@ export const STORIES_PART2: RawStory[] = [
       "ornate": "süslü",
       "confrontation": "yüzleşme"
     }
-  }
-,
-  {
+  },
+        {
     id: 'detective_lady_in_black',
     title: "The Perfume of the Lady in Black",
     author: 'Gaston Leroux',
@@ -13676,9 +13634,8 @@ export const STORIES_PART2: RawStory[] = [
       "intruder": "davetsiz misafir",
       "malice": "kötülük"
     }
-  }
-,
-  {
+  },
+        {
     id: 'detective_holmes_too_late',
     title: "Sherlock Holmes Arrives Too Late",
     author: 'Maurice Leblanc',
@@ -13750,9 +13707,8 @@ export const STORIES_PART2: RawStory[] = [
       "intercept": "önünü kesmek, yakalamak",
       "billowing": "dalgalanan, kabaran"
     }
-  }
-,
-  {
+  },
+        {
     id: 'detective_laker_absconded',
     title: "The Case of Laker, Absconded",
     author: 'Arthur Morrison',
@@ -13823,9 +13779,8 @@ export const STORIES_PART2: RawStory[] = [
       "perpetrator": "suçlu",
       "turmoil": "kargaşa"
     }
-  }
-,
-  {
+  },
+        {
     id: 'detective_dublin_mystery',
     title: "The Dublin Mystery",
     author: 'Baroness Orczy',
@@ -13896,9 +13851,8 @@ export const STORIES_PART2: RawStory[] = [
       "fragility": "kırılganlık",
       "redemption": "kurtuluş"
     }
-  }
-,
-  {
+  },
+        {
     id: 'detective_crystal_gazer',
     title: "The Crystal Gazer",
     author: 'Jacques Futrelle',
@@ -13968,9 +13922,8 @@ export const STORIES_PART2: RawStory[] = [
       "modest": "alçakgönüllü",
       "intervention": "müdahale"
     }
-  }
-,
-  {
+  },
+        {
     id: 'detective_moonstone_revelation',
     title: "The Moonstone - The Revelation",
     author: 'Wilkie Collins',
@@ -14041,9 +13994,8 @@ export const STORIES_PART2: RawStory[] = [
       "arduous": "meşakkatli",
       "ensnare": "tuzağa düşürmek"
     }
-  }
-,
-  {
+  },
+        {
     id: 'detective_double_life',
     title: "The Double Life",
     author: 'Gaston Leroux',
@@ -14114,9 +14066,8 @@ export const STORIES_PART2: RawStory[] = [
       "duality": "ikilik",
       "absolution": "günahların bağışlanması, günah çıkarma"
     }
-  }
-,
-  {
+  },
+        {
     id: 'detective_gold_bug_1',
     title: "The Gold-Bug - Part 1",
     author: 'Edgar Allan Poe',
@@ -14184,6 +14135,933 @@ export const STORIES_PART2: RawStory[] = [
       "chisel": "keski",
       "corroded": "paslanmış, aşınmış",
       "unadulterated": "katkısız, saf"
+    }
+  },
+      {
+    id: 'detective_crooked_man',
+    title: "The Adventure of the Crooked Man",
+    author: 'Arthur Conan Doyle',
+    level: 'B1',
+    coverUrl: '/covers/detective_crooked_man.webp',
+    en: [
+      "It was a dark and stormy night in London when Sherlock Holmes paid me a surprise visit. I had been married for some time, and my medical practice kept me very busy, so we had not seen each other for weeks. When he finally walked into my study, he looked alert and excited. He stood by the window, watching the rain fall against the glass while he smoked his pipe. I noticed that his eyes were bright, which always meant that he was tracking a new and difficult puzzle. He told me that he had been working on a strange case involving Colonel James Barclay, a hero of the Royal Mallows regiment. The colonel had died suddenly, and the circumstances surrounding his passing were mysterious. Holmes asked me to join him on this mission, as he valued my company and my skills as a doctor during his investigations.",
+      "The colonel was a respected man in his community, and his death came as a great shock to everyone who knew him. He lived in a quiet military village called Aldershot with his wife, Nancy. According to the early reports, they had a strong marriage, but on the evening of the tragedy, something went wrong. Nancy had gone out to do some volunteer work, and when she returned, she heard her husband arguing with someone inside their locked room. When the servants finally broke the door down, they found the colonel lying dead on the floor. His face showed a look of terrible fear, and the room was locked from the inside. There was no sign of a weapon, and the person he was arguing with had vanished completely into thin air. It was a classic locked-room mystery that demanded our immediate attention.",
+      "I quickly agreed to accompany Holmes, as the case sounded truly fascinating and potentially dangerous. We packed our things and took the first morning train to Aldershot. As we traveled through the countryside, Holmes explained more about the colonel's past in India, where he had served with distinction many years ago. He mentioned that the colonel had a very particular history with a soldier who had been declared dead long ago. This detail felt like the key to the whole situation, although I could not yet understand how a dead man could cause such trouble. The weather began to clear as we approached our destination, and the quiet beauty of the military town felt very strange given the dark events that had taken place there. I felt a sense of nervous anticipation as we prepared to meet the widow and uncover the truth behind this secret.",
+      "We arrived at Aldershot and found the military camp in a state of deep sadness. The atmosphere was heavy with questions about the colonel. We met with the local inspector, who took us to the scene of the tragedy immediately. The room remained just as it was when the servants broke the door down. I carefully examined the body, searching for signs of violence, but there were no cuts or bruises to explain his sudden passing. His expression was fixed in a mask of pure horror, which made the room feel cold despite the morning sun. Holmes moved quietly around the space, his sharp eyes examining every corner of the floor. He stopped near the window and touched the curtains, looking for anything that seemed out of place. It was clear that the killer had left no obvious tracks, making the mystery even deeper than we first imagined.",
+      "Holmes then questioned the servant who had heard the argument. The man described a loud voice that did not sound like the colonel at all. It was harsh and strange, he explained, and then there was a sudden sound of heavy furniture moving. When the servants forced the door, they found the room empty of everyone except the dead colonel. Nancy Barclay, his widow, was in another room, completely overwhelmed by grief and shock. She could not explain the visitor, and she claimed she knew nothing about the argument. I watched her closely as she spoke, noticing how she trembled when the name of the old regiment was mentioned. She seemed to be hiding a secret, but I could not tell if it was related to her husband or something much older. The air in the house felt thick with hidden memories and unspoken fears.",
+      "After speaking with the widow, Holmes went back outside to study the garden. I followed him, curious about what he hoped to find in the soft dirt near the window. He walked slowly, looking at the ground with great care, as if he were reading a book of hidden signs. Suddenly, he stopped and pointed to a series of marks in the soil. They were not footprints from a normal man, but rather the strange, uneven shapes of a person with a twisted leg and a wooden stick. He looked at me with a grim smile, realizing that our visitor was not a ghost, but someone real who walked with great difficulty. This discovery changed everything. We were no longer chasing a mystery of the unknown, but a man who had somehow returned from the past to seek his final, dangerous revenge on the colonel.",
+      "We walked together toward the gate where the gardener had been working earlier that day. Holmes knelt on the grass, his face inches from the soil, his eyes scanning for the smallest detail that might have escaped the police. He found what he was looking for: a distinct, small mark near the flower bed. It was not just a footprint, but the impression left by a heavy, metallic tip of a walking stick. Beside it, the soil showed the dragging movement of a foot that did not lift properly. Holmes stood up, dusting his knees, and stared toward the road. It became clear that the mysterious visitor had not fled quickly. He had lingered by the window, watching the house for a long time, perhaps gathering his courage before he finally decided to confront the colonel. The tragedy was no longer an accident; it was a planned meeting.",
+      "I looked at the marks and felt a chill despite the warmth of the sun. The visitor had a physical disability, yet he had managed to enter a locked room and leave without being seen. How could a man who dragged his leg climb through a window? Holmes seemed to read my thoughts and moved toward the garden wall. He pointed at some broken ivy leaves and a few faint scratches on the brickwork. It seemed that this person possessed a strength that was hidden beneath his damaged frame. This was a man driven by a singular, burning purpose that made him overcome the limitations of his body. We followed the trail along the wall, which led us toward the main road of the village. The trail was difficult to track, but Holmes moved with a sense of urgent purpose, already piecing together the broken fragments of the past.",
+      "As we reached the edge of the property, Holmes stopped near a small wooden shed used by the staff. He noticed a scrap of cloth caught on a rough piece of wood. He carefully removed it with his tweezers, holding it up to the light. It was a bright, unusual color, possibly from an old uniform or a shawl of some kind. He placed it in a small envelope, his expression serious and focused. We were tracking a man from a time long forgotten, someone who had known the colonel in his youth. The mystery was narrowing down to a specific individual who had carried a grudge for many decades. Holmes turned to me and whispered that we were looking for a soldier, or at least someone who walked like one, despite his injury. We headed back toward the camp to find the inspector and share our discovery.",
+      "When we arrived at the camp, Inspector Barkley was waiting for us with a strange look on his face. He told us that he had found a man in the village who looked exactly like the person we were describing. This man was sitting in a local inn, talking to himself and acting in a very agitated way. Holmes nodded, as if he expected this news all along. We hurried to the inn, and there, sitting by a window, was the man. He had a very crooked back and walked with a painful limp, just as the marks in the garden had suggested. Beside him lay a long, metal-tipped walking stick. The man looked at us with eyes that were full of deep sadness and old anger. It was clear that he had not planned to hide his actions, for his heart was heavy with his burden.",
+      "The man spoke in a shaky voice and introduced himself as Henry Wood. As he began his story, the entire room seemed to grow quiet. He explained that he had known the colonel many years ago when they were both serving in India. Back then, they were both in love with the same woman, Nancy. Wood was a handsome soldier, but the colonel was a man of great wealth and power. Through a cruel lie, the colonel had convinced Nancy that Wood was dead, stealing her affection for himself. Wood had been captured by the enemy and suffered years of terrible prison life. He had been hurt in the war, which left him with his permanent injury. He had spent his whole life waiting for the day he could return to England and finally face the man who had ruined his happiness so long ago.",
+      "He described how he had finally arrived at the colonel's house, hoping only to speak to Nancy. He had watched them through the window, but the colonel had seen him first. The colonel had been terrified, thinking he was seeing a ghost from his past. When Wood entered the room, the colonel collapsed, his heart unable to take the sudden shock of seeing his old rival alive again. Wood did not kill him; he had only stood there, letting the colonel see the truth of the life he had stolen. The inspector and I listened in silence as Wood told his story, the mystery of the locked room finally becoming clear to us. It was not a crime of violence, but a meeting between two men trapped by their own history. The truth was far more tragic than any of us had first imagined.",
+      "Holmes stood silently in the small room, his eyes scanning the space for any hidden details. He knew that Wood had spoken the truth about the events that led to the colonel's death. It was clear that the shock of seeing an old enemy had been too much for the colonel's weak heart. The mystery of the locked room was solved not by a violent weapon, but by the weight of a guilty conscience returning to claim its prize. I felt a deep sense of sadness for both men, as their shared history had ended in such a tragic way. Wood sat quietly on his chair, his tired face showing that he was ready to face whatever consequences came his way. Justice often has a way of finding the truth, even when it remains hidden for many years behind secrets and lies.",
+      "The inspector took a deep breath before he walked over to Henry Wood. He explained that although Wood had not physically killed the colonel, his sudden appearance had indeed caused the fatal heart failure. The legal situation was complex because there was no violence involved, yet a life had been lost during their confrontation. Wood looked at us with a calm expression, no longer hiding the pain that he had carried across the seas from India to England. He understood that his journey of revenge had destroyed the man he once hated, but it had brought him no peace. I realized then that the crooked man was a prisoner not of the police, but of his own memories. The heavy air in the inn felt lighter as the final pieces of the puzzle fell into their proper place.",
+      "We left the inn shortly after, the cool night air feeling refreshing against my skin. Holmes walked beside me, his thoughts clearly moving toward the next mystery that would surely find its way to him. The case of the crooked man had come to a quiet end, leaving us with a lesson about the long-term effects of past actions. We walked back through the village while the stars shone brightly above us in the dark sky. I thought about the colonel and his stolen life, and about Wood, who had spent decades waiting for a moment of truth. It was a strange and sad story that showed how the past is never truly gone. We reached home at last, ready to rest after a day that had changed our understanding of justice forever."
+    ],
+    tr: [
+      "Sherlock Holmes bana sürpriz bir ziyaret yaptığında Londra'da karanlık ve fırtınalı bir geceydi. Bir süredir evliydim ve doktorluk mesleğim beni çok meşgul ediyordu, bu yüzden haftalardır birbirimizi görmemiştik. Sonunda çalışma odama girdiğinde tetikte ve heyecanlı görünüyordu. Pipo içerken pencerenin kenarında durmuş, camın üzerine düşen yağmuru izliyordu. Gözlerinin parlak olduğunu fark ettim; bu her zaman yeni ve zor bir bulmacanın izini sürdüğü anlamına gelirdi. Bana, Kraliyet Mallows alayının kahramanı Albay James Barclay'i içeren tuhaf bir dava üzerinde çalıştığını söyledi. Albay aniden ölmüştü ve ölümünü çevreleyen koşullar gizemliydi. Holmes, araştırmaları sırasında arkadaşlığıma ve bir doktor olarak becerilerime değer verdiği için bu görevde kendisine eşlik etmemi istedi.",
+      "Albay toplumunda saygı duyulan bir adamdı ve ölümü onu tanıyan herkes için büyük bir şok oldu. Nancy adındaki eşiyle Aldershot adında sessiz bir askeri köyde yaşıyordu. İlk raporlara göre güçlü bir evlilikleri vardı ama trajedinin yaşandığı akşam bir şeyler ters gitti. Nancy gönüllü bir iş yapmak için dışarı çıkmıştı ve geri döndüğünde kilitli odalarının içinde kocasının biriyle tartıştığını duydu. Hizmetkarlar kapıyı kırdıklarında albayı yerde ölü buldular. Yüzünde korkunç bir korku ifadesi vardı ve oda içeriden kilitliydi. Silah izi yoktu ve tartıştığı kişi tamamen ortadan kaybolmuştu. Bu, acil ilgimizi gerektiren klasik bir kapalı oda gizemiydi.",
+      "Vakanın gerçekten büyüleyici ve potansiyel olarak tehlikeli görünmesi nedeniyle Holmes'a eşlik etmeyi hemen kabul ettim. Eşyalarımızı topladık ve Aldershot'a giden ilk sabah trenine bindik. Kırsal bölgede ilerlerken Holmes, albayın yıllar önce büyük bir başarıyla hizmet verdiği Hindistan'daki geçmişi hakkında daha fazla bilgi verdi. Albayın, uzun zaman önce öldüğü ilan edilen bir askerle çok özel bir geçmişi olduğundan bahsetti. Bu detay tüm durumun anahtarı gibi hissettiriyordu, ancak ölü bir adamın nasıl bu kadar sorun yaratabileceğini henüz anlayamıyordum. Hedefimize yaklaşırken hava açılmaya başladı ve askeri kasabanın sessiz güzelliği, orada yaşanan karanlık olaylar göz önüne alındığında çok tuhaf geldi. Dul kadınla tanışmaya ve bu sırrın ardındaki gerçeği ortaya çıkarmaya hazırlanırken gergin bir beklenti içindeydim.",
+      "Aldershot'a vardığımızda askeri kampın derin bir üzüntü içinde olduğunu gördük. Hava, albay hakkındaki sorularla ağırlaşmıştı. Bizi hemen trajedi mahalline götüren yerel müfettişle buluştuk. Oda, hizmetkarlar kapıyı kırdığında olduğu gibi kalmıştı. Cesedi dikkatle inceledim, şiddet izleri aradım ancak ani ölümünü açıklayacak hiçbir yara veya morluk yoktu. İfadesi saf bir dehşet maskesi gibi donup kalmıştı, bu da sabah güneşine rağmen odanın soğuk hissedilmesine neden oluyordu. Holmes odanın içinde sessizce hareket ediyor, keskin gözleriyle zeminin her köşesini inceliyordu. Pencerenin yanında durup perdelere dokundu ve yerinde olmayan herhangi bir şey aradı. Katilin hiçbir belirgin iz bırakmadığı belliydi, bu da gizemi ilk düşündüğümüzden daha derin kılıyordu.",
+      "Holmes daha sonra tartışmayı duyan hizmetkârı sorguladı. Adam, hiç de albaya benzemeyen yüksek bir sesten bahsetti. Sesi sert ve tuhaftı diye açıkladı ve ardından aniden ağır mobilyaların hareket etme sesi gelmişti. Hizmetkârlar kapıyı zorladıklarında, odada ölü albaya dışında kimseyi bulamamışlardı. Dul eşi Nancy Barclay başka bir odadaydı, keder ve şok içinde ezilmiş durumdaydı. Ziyaretçiyi açıklayamıyordu ve tartışma hakkında hiçbir şey bilmediğini iddia ediyordu. Konuşurken onu yakından izledim, eski alayın adı geçtiğinde nasıl titrediğini fark ettim. Bir sır saklıyor gibiydi ancak bunun kocasıyla mı yoksa çok daha eski bir şeyle mi ilgili olduğunu söyleyemiyordum. Evdeki hava gizli anılar ve dile getirilmemiş korkularla yoğunlaşmıştı.",
+      "Dul eşle konuştuktan sonra Holmes bahçeyi incelemek için dışarı çıktı. Pencerenin yakınındaki yumuşak toprakta ne bulmayı umduğunu merak ederek onu takip ettim. Sanki gizli işaretlerden oluşan bir kitap okuyormuş gibi, büyük bir dikkatle yere bakarak yavaşça yürüdü. Aniden durdu ve topraktaki bir dizi işareti işaret etti. Bunlar normal bir insanın ayak izleri değil, bacağı bükülmüş ve bastonlu birinin tuhaf, düzensiz şekilleriydi. Bana ciddi bir gülümsemeyle baktı; ziyaretçimizin bir hayalet değil, büyük zorlukla yürüyen gerçek biri olduğunu fark etmişti. Bu keşif her şeyi değiştirdi. Artık bilinmeyenin gizemini değil, geçmişten bir şekilde geri dönüp albaya karşı son ve tehlikeli intikamını almaya gelen bir adamı kovalıyorduk.",
+      "Bahçıvanın o günün erken saatlerinde çalıştığı kapıya doğru birlikte yürüdük. Holmes dizlerinin üzerine çöktü, yüzü toprağa birkaç santim yakındı ve gözleri polisin gözünden kaçmış olabilecek en küçük ayrıntıyı arıyordu. Aradığını buldu: çiçek tarhının yakınında belirgin, küçük bir iz. Bu sadece bir ayak izi değil, bir bastonun ağır, metalik ucunun bıraktığı izdi. Yanında toprak, tam olarak kalkmayan bir ayağın sürüklenme hareketini gösteriyordu. Holmes dizlerini silkeleyerek ayağa kalktı ve yola doğru baktı. Gizemli ziyaretçinin hızla kaçmadığı açıkça belliydi. Pencerenin yanında uzun süre beklemiş, evi izlemiş ve belki de sonunda albay ile yüzleşmeye karar vermeden önce cesaretini toplamıştı. Trajedi artık bir kaza değildi; planlanmış bir buluşmaydı.",
+      "İzlere baktım ve güneşin sıcaklığına rağmen bir ürperti hissettim. Ziyaretçinin fiziksel bir engeli vardı, yine de kilitli bir odaya girmeyi ve görülmeden çıkmayı başarmıştı. Ayağını sürüyen bir adam bir pencereden nasıl tırmanabilirdi? Holmes düşüncelerimi okumuş gibi görünerek bahçe duvarına doğru ilerledi. Kırık sarmaşık yapraklarını ve tuğla işçiliği üzerindeki birkaç hafif çiziği işaret etti. Görünüşe göre bu kişi, hasarlı vücudunun altında gizli bir güce sahipti. Bu, vücudunun sınırlamalarının üstesinden gelmesini sağlayan tek ve yakıcı bir amaçla hareket eden bir adamdı. İzleri duvar boyunca takip ettik ve köyün ana yoluna ulaştık. İzleri takip etmek zordu ama Holmes, geçmişin kırık parçalarını bir araya getirerek acil bir amaç duygusuyla ilerliyordu.",
+      "Arazinin sınırına ulaştığımızda, Holmes personelin kullandığı küçük bir ahşap kulübenin yakınında durdu. Kaba bir tahta parçasına takılmış bir kumaş parçası fark etti. Cımbızıyla dikkatlice çıkardı ve ışığa doğru tuttu. Parlak, alışılmadık bir renkteydi, belki de eski bir üniformadan ya da bir çeşit şaldan geliyordu. İfadesi ciddi ve odaklanmış bir şekilde küçük bir zarfa yerleştirdi. Çoktan unutulmuş bir zamandan kalma, albayı gençliğinde tanımış bir adamın izini sürüyorduk. Gizem, on yıllardır kin besleyen belirli bir kişiye doğru daralıyordu. Holmes bana döndü ve sakatlığına rağmen, asker olan veya en azından bir asker gibi yürüyen birini aradığımızı fısıldadı. Müfettişi bulmak ve keşfimizi paylaşmak için kampa geri döndük.",
+      "Kampa vardığımızda, Müfettiş Barkley yüzünde tuhaf bir ifadeyle bizi bekliyordu. Bize köyde tarif ettiğimiz kişiye tıpatıp benzeyen bir adam bulduğunu söyledi. Bu adam yerel bir handa oturuyor, kendi kendine konuşuyor ve çok huzursuz davranıyordu. Holmes, sanki bu haberi başından beri bekliyormuş gibi başını salladı. Aceleyle hana gittik ve orada, bir pencerenin kenarında oturan adamı gördük. Bahçedeki izlerin işaret ettiği gibi, çok kambur bir sırtı vardı ve acı verici bir aksamayla yürüyordu. Yanında uzun, metal uçlu bir baston duruyordu. Adam bize derin bir üzüntü ve eski bir öfkeyle dolu gözlerle baktı. Hareketlerini gizlemeyi planlamadığı belliydi, çünkü kalbi taşıdığı yükten ötürü çok ağırdı.",
+      "Adam titrek bir sesle konuştu ve kendini Henry Wood olarak tanıttı. Hikayesini anlatmaya başladığında, tüm oda sessizliğe büründü. Yıllar önce Hindistan'da askerlik yaparken albayı tanıdığını açıkladı. O zamanlar ikisi de aynı kadına, Nancy'ye aşıktılar. Wood yakışıklı bir askerdi ama albay büyük bir servete ve güce sahip bir adamdı. Zalimce bir yalanla albay, Nancy'yi Wood'un öldüğüne inandırmış ve onun sevgisini çalmıştı. Wood düşman tarafından esir alınmış ve yıllarca korkunç bir esaret hayatı sürmüştü. Savaşta yaralanmıştı ve bu durum onda kalıcı bir hasar bırakmıştı. Hayatının tamamını İngiltere'ye dönüp mutluluğunu çok uzun zaman önce mahveden adamla yüzleşebileceği günü bekleyerek geçirmişti.",
+      "En sonunda albayın evine nasıl ulaştığını ve sadece Nancy ile konuşmayı umduğunu anlattı. Onları pencereden izlemişti ama albay onu ilk fark eden olmuştu. Albay, geçmişinden gelen bir hayaleti gördüğünü sanarak dehşete düşmüştü. Wood odaya girdiğinde albay, eski rakibini tekrar hayatta görmenin şokuyla yere yığılmıştı. Wood onu öldürmemişti; sadece orada durmuş, albayın çaldığı hayatın gerçeğini görmesine izin vermişti. Müfettiş ve ben, Wood hikayesini anlatırken sessizce dinledik; kilitli oda gizemi sonunda bizim için aydınlanmıştı. Bu bir şiddet suçu değil, kendi geçmişlerinin esiri olmuş iki adamın karşılaşmasıydı. Gerçek, hiçbirimizin başta hayal ettiğinden çok daha trajikti.",
+      "Holmes küçük odada sessizce durdu, gözleri gizli detayları bulmak için odayı tarıyordu. Wood'un albayın ölümüyle sonuçlanan olaylar hakkında doğruyu söylediğini biliyordu. Eski bir düşmanı görmenin verdiği şokun, albayın zayıf kalbi için çok fazla olduğu açıktı. Kilitli oda gizemi, şiddetli bir silahla değil, vicdan azabının ödülünü almak için geri dönmesiyle çözülmüştü. Ortak geçmişleri bu denli trajik bir şekilde bittiği için her iki adam adına da derin bir üzüntü hissettim. Wood sandalyesinde sessizce oturdu, yorgun yüzü gelecek her türlü sonuca hazır olduğunu gösteriyordu. Adalet, sırlar ve yalanlar ardında yıllarca saklı kalsa bile doğruyu bulmanın bir yolunu her zaman bulur.",
+      "Müfettiş, Henry Wood'a doğru yürümeden önce derin bir nefes aldı. Wood'un albayı fiziksel olarak öldürmediğini, ancak aniden ortaya çıkışının ölümcül kalp krizine yol açtığını açıkladı. Yasal durum karışıktı çünkü hiçbir şiddet unsuru yoktu, yine de yüzleşmeleri sırasında bir hayat kaybedilmişti. Wood, Hindistan'dan İngiltere'ye denizler boyunca taşıdığı acıyı artık saklamayarak sakin bir ifadeyle bize baktı. İntikam yolculuğunun bir zamanlar nefret ettiği adamı yok ettiğini ama kendisine huzur getirmediğini anladı. O an, kambur adamın polisin değil, kendi anılarının esiri olduğunu fark ettim. Yapbozun son parçaları yerli yerine otururken handaki ağır hava hafifledi.",
+      "Kısa bir süre sonra handan ayrıldık, serin gece havası tenimde ferahlatıcı bir his bıraktı. Holmes yanımda yürüyordu, düşünceleri belli ki ona ulaşacak bir sonraki gizeme doğru ilerliyordu. Kambur adamın davası sessizce sona ermiş, bize geçmiş eylemlerin uzun vadeli etkileri hakkında bir ders bırakmıştı. Karanlık gökyüzünde yıldızlar parlarken köyden geçerek geri yürüdük. Albayı ve onun çalınmış hayatını, ayrıca doğruluğun bir anı için on yıllar harcayan Wood'u düşündüm. Geçmişin asla gerçekten kaybolmadığını gösteren tuhaf ve hüzünlü bir hikayeydi. Adalet anlayışımızı sonsuza dek değiştiren bir günün ardından nihayet dinlenmeye hazır bir şekilde eve ulaştık."
+    ],
+    words: {
+      "regiment": "alay",
+      "tragedy": "trajedi",
+      "servant": "hizmetkar",
+      "weapon": "silah",
+      "distinction": "başarı/seçkinlik",
+      "anticipation": "beklenti",
+      "horror": "dehşet",
+      "overwhelmed": "ezilmiş, bunalmış",
+      "marks": "izler",
+      "revenge": "intikam",
+      "kneel": "diz çökmek",
+      "impression": "iz",
+      "linger": "oyalanmak",
+      "disability": "engellilik",
+      "grudge": "kin",
+      "tweezers": "cımbız",
+      "agitated": "heyecanlı, huzursuz",
+      "limp": "aksama, topallama",
+      "affection": "sevgi, şefkat",
+      "rival": "rakip",
+      "trap": "tuzak, kapana kısılmış",
+      "tragic": "trajik",
+      "conscience": "vicdan",
+      "confrontation": "yüzleşme",
+      "fatal": "ölümcül",
+      "justice": "adalet"
+    }
+  },
+      {
+    id: 'detective_naval_treaty',
+    title: "The Adventure of the Naval Treaty",
+    author: 'Arthur Conan Doyle',
+    level: 'B1',
+    coverUrl: '/covers/detective_naval_treaty.webp',
+    en: [
+      "The morning post brought a letter that changed the quiet rhythm of our lives at Baker Street. My old school friend, Percy Phelps, had written to me in great distress. He was a man of ambition who had achieved a high position at the Foreign Office through his uncle, Lord Holdhurst. Percy was a bright and hardworking individual, but now he was facing a situation that threatened to ruin his entire career and reputation. He begged me to come to Woking, where he was currently living, and to bring my friend Sherlock Holmes along with me. His letter was full of panic and desperate pleas for help, suggesting that he had been involved in a terrible crisis concerning a secret government document. As I read the letter aloud, Holmes listened with his usual sharp focus, his eyes narrowing as the serious nature of the case became clear.",
+      "Percy Phelps had been given the responsibility of copying a very important naval treaty, a document that could change the balance of power between nations. He stayed late at his office to complete this task, as the treaty was top secret. He asked the night watchman to bring him some coffee, but the man never returned. When Percy went to look for him, he realized that the document had been stolen from his desk. This was a disaster of the highest order. He had searched everywhere, but the treaty was nowhere to be found. The shame and the pressure were too much for him to bear, and he had suffered a complete physical and mental collapse. His condition was so fragile that he had been confined to his bed for weeks, living in constant fear of the consequences of this missing paper.",
+      "Holmes and I arrived at the house in Woking on a crisp, clear day. The garden was well-kept, but the atmosphere inside the home felt heavy and oppressive. We were greeted by Miss Annie Harrison, Percy's fiancée, who looked worried but was determined to help him recover. She led us to the room where Percy was lying in bed. He looked pale and weak, his eyes showing the depth of his anxiety. He spoke to us in a low, trembling voice as he recounted the events of that fateful night at the Foreign Office. It was clear that he felt the weight of the world on his shoulders. Holmes stood by the window, observing everything with intense curiosity, asking specific questions about the layout of the office and the people who might have had access to the building during those dark, lonely hours.",
+      "Percy explained the details of that long night with great difficulty. He told us that after waiting for the watchman to return with coffee, he finally stood up to investigate the silence. The office was dimly lit, and the hallway appeared empty and quiet. He noticed a strange smell, like tobacco, coming from the open window. When he hurried back to his desk, he saw that the naval treaty was completely gone. He searched the floor and checked every corner of the room, but the document had vanished into thin air. He cried out in total disbelief, feeling his career crumble before his very eyes. The loss of such a vital secret treaty was a crime that could bring international trouble to the government. Percy felt the weight of his failure pressing down on his chest, leaving him in a state of absolute shock and confusion.",
+      "Holmes leaned forward, his face serious as he listened to every word. He asked Percy if anyone else could have entered the room while he was away. Percy shook his head, saying that the doors were locked and only he and the watchman had keys. However, Holmes noticed a small detail that Percy had missed: the watchman's wife had been in the building earlier that evening to clean the offices. Holmes carefully wrote down the names of all the people who were near the building at that time. He also questioned Percy about his finances and whether he had any enemies who would want to hurt him. Percy admitted that he had many responsibilities and some professional rivals, but he could not imagine anyone stealing the document for money. The air in the room grew heavy as the possibilities of the theft were explored by my friend.",
+      "After speaking with Percy, Holmes decided to inspect the layout of the Foreign Office for himself. He wanted to understand the paths that a thief might have taken to escape undetected. We left Woking and traveled back to London, where Holmes visited the specific office where the crime took place. He walked slowly around the room, examining the floor and the window frame with his magnifying glass. He seemed to be looking for a tiny clue that everyone else had ignored. The room was a place of shadows and secrets, and Holmes was determined to find the truth behind the stolen treaty. He felt that the solution was close, hidden somewhere in the details of the room. I waited patiently by the door, knowing that Holmes was piecing together the events of that fateful night in his brilliant mind, preparing to solve the mystery.",
+      "Holmes carefully examined the window, noting the distance between the ledge and the path below. He realized that a person could easily jump down without leaving many marks on the soft earth. He looked closely at the lock on the window, finding it to be in perfect working condition. My friend remained silent for a long time, his eyes searching every corner for a piece of evidence. He asked to see the watchman, a man named Tangey, who appeared nervous during the questioning. Holmes observed the man's rough hands and the way he shifted his feet on the wooden floor. There was something hidden in the watchman's attitude that caught Holmes's interest. He made a mental note to watch the man more closely throughout the coming days. The atmosphere in the building felt cold and suspicious, making the search for the missing treaty even more challenging than we had first expected.",
+      "After interviewing the watchman, Holmes went to visit his wife. She was a woman who seemed worried about her husband and their situation. Holmes asked her many simple questions about the evening of the theft, watching her face for any sign of dishonesty. She insisted that she had gone straight home after her cleaning duties were finished that night. However, her eyes wandered away when she spoke about the time she left the building. My friend thanked her politely and we stepped back out into the busy London street. Holmes told me that he was convinced the truth was hidden somewhere nearby. He explained that a crime like this usually involves someone who has direct access to the room. We walked toward the train station, with Holmes lost in his thoughts about the various connections between the suspects and the missing document that could change international history.",
+      "As the sun began to set over the city, Holmes suggested that we return to his rooms at Baker Street to plan our next move. He was satisfied with the information he had gathered during our investigation. He pulled a map from his pocket and traced the possible routes a thief might have used to escape. I could see the excitement growing in his eyes as he began to form a clear theory about the sequence of events. He knew that time was running out, as the secret treaty was a powerful weapon in the wrong hands. We sat in silence during the journey, each of us thinking about the potential danger Percy faced. Holmes was calm and confident, trusting his instincts to guide him toward the culprit. The mystery was far from over, but we were closer to finding the thief and restoring the honor of the government office.",
+      "Holmes spent the evening studying the case in total silence. He looked at the map again and again, marking the distance between the office and the home of the watchman. Suddenly, he jumped up and grabbed his hat. He told me that we needed to return to the scene of the crime immediately. The air was dark and chilly, but Holmes moved with great speed and purpose. We took a fast carriage to the building, and my friend insisted that we walk around the garden. He crawled on his hands and knees, checking the soft ground under the window once more. He seemed to be looking for a very specific footprint that he had missed before. When he finally found what he was looking for, he stood up and smiled at me. The mystery was finally starting to show its true colors under the dim moonlight.",
+      "He pointed toward a small, hidden path that led directly to the watchman's house. Holmes explained that the thief had not left through the main door but had climbed out of the window to meet someone waiting in the shadows. He suspected that the watchman’s wife was deeply involved in this dangerous game. My friend moved quietly toward the small cottage, motioning for me to stay back and watch. He approached the house like a hunter, checking the doors and windows for any sign of movement. Inside, we could hear the faint sound of voices whispering. Holmes pressed his ear against the cold wood of the door, listening intently. His eyes showed a look of sharp focus as he realized that the treaty was very close. We were on the edge of a discovery that would solve everything and bring justice to Percy Phelps.",
+      "Suddenly, Holmes forced the door open and we stepped inside the tiny room. The watchman and his wife were sitting at a small table, looking shocked by our sudden appearance. Holmes did not waste any time with polite greetings. He demanded to know where they had hidden the stolen document. The woman tried to hide a heavy, locked box under her apron, but my friend was faster. He took the box from her hands and placed it firmly on the table. With a quick movement of his thin fingers, he broke the lock and opened the lid. Inside, resting safely, was the precious naval treaty that had caused so much pain and trouble for everyone. Holmes turned to me with a look of pure satisfaction, knowing that our hard work had finally paid off after many long and difficult hours of investigation.",
+      "Holmes carefully took the precious document from the box and placed it inside his pocket. He then turned his attention back to the woman who was trembling with fear. My friend spoke in a calm but serious voice as he explained that the game was finished. He told the woman that he knew exactly how she had managed to enter the office and take the treaty from the desk. He explained that she had used a stolen key to enter while Percy Phelps was distracted by the ringing bell. The room was silent as the woman realized that her secret was no longer safe. She fell to her knees and started crying, begging us not to call the police. She claimed that she had only acted out of greed and the promise of money from a mysterious person who wanted to hurt the government and the navy.",
+      "My friend did not feel any sympathy for her poor excuse. He made it clear that stealing such an important paper was a crime that could change the future of the entire country. He walked over to the door and signaled for the local police, who had been waiting outside for his call. We watched as the officers came into the room and took the woman and her accomplice into custody. Their faces were full of regret, but it was far too late for them to change what they had done. I felt a great sense of relief as the heavy weight of the mystery finally left my mind. It was truly a difficult case, but Holmes had managed to save the day once again. He remained cool and collected, showing no signs of pride for his clever work during this dangerous adventure.",
+      "After everything was settled, we took a train back to London to return the document to its rightful owner. Percy Phelps was waiting for us at his house, looking very tired and pale from his long sickness. When Holmes handed him the treaty, the poor man could hardly believe his own eyes. He thanked us over and over again, his voice shaking with pure happiness and relief. Holmes simply told him to get some rest and recover his strength for his important work. As we walked away from the house, the sun began to rise over the quiet city streets. My friend lit his pipe and looked toward the horizon with a tired but content smile. The naval treaty was safe, and the danger was gone forever. It had been a long road, but we had finally solved the complicated mystery."
+    ],
+    tr: [
+      "Sabah postası, Baker Street'teki yaşamımızın sessiz ritmini değiştiren bir mektup getirdi. Eski okul arkadaşım Percy Phelps, büyük bir üzüntü içinde bana yazmıştı. O, amcası Lord Holdhurst aracılığıyla Dışişleri Bakanlığı'nda yüksek bir konuma gelmiş hırslı bir adamdı. Percy, parlak ve çalışkan biriydi ancak şimdi tüm kariyerini ve itibarını mahvetmekle tehdit eden bir durumla karşı karşıyaydı. Beni şu anda yaşadığı Woking'e gelmem ve arkadaşım Sherlock Holmes'u da yanımda getirmem için yalvarıyordu. Mektubu, gizli bir devlet belgesiyle ilgili korkunç bir krizin içine girdiğini ima eden panik ve çaresiz yardım çağrılarıyla doluydu. Mektubu sesli okuduğumda, Holmes her zamanki keskin odaklanmasıyla dinledi; olayın ciddiyeti belirginleştikçe gözleri kısıldı.",
+      "Percy Phelps'e, uluslar arasındaki güç dengesini değiştirebilecek çok önemli bir denizcilik antlaşmasını kopyalama sorumluluğu verilmişti. Belge çok gizli olduğu için bu görevi tamamlamak amacıyla ofisinde geç saatlere kadar kalmıştı. Gece bekçisinden kendisine biraz kahve getirmesini istedi ancak adam asla geri dönmedi. Percy onu aramaya gittiğinde, belgenin masasından çalındığını fark etti. Bu, en üst seviyede bir felaketti. Her yeri aramıştı ama antlaşma hiçbir yerde bulunamıyordu. Utanç ve baskı onun taşıyamayacağı kadar fazlaydı ve fiziksel ve zihinsel bir çöküş yaşamıştı. Durumu o kadar hassastı ki, haftalardır yatağa bağlı kalmış, bu kayıp kağıdın sonuçlarından duyduğu sürekli bir korku içinde yaşıyordu.",
+      "Holmes ve ben Woking'deki eve açık ve serin bir günde vardık. Bahçe bakımlıydı ancak evin içindeki atmosfer ağır ve bunaltıcıydı. Bizi, Percy'nin nişanlısı olan ve endişeli görünmesine rağmen onun iyileşmesine yardımcı olmaya kararlı olan Bayan Annie Harrison karşıladı. Bizi Percy'nin yatakta uzandığı odaya götürdü. Solgun ve güçsüz görünüyordu; gözleri kaygısının derinliğini ele veriyordu. Dışişleri Bakanlığı'ndaki o talihsiz gecede yaşananları anlatırken bize alçak ve titrek bir sesle konuştu. Dünyanın yükünü omuzlarında hissettiği çok açıktı. Holmes pencerenin yanında durup her şeyi büyük bir merakla gözlemliyor, ofisin düzeni ve o karanlık, yalnız saatlerde binaya erişimi olabilecek insanlar hakkında spesifik sorular soruyordu.",
+      "Percy, o uzun gecenin detaylarını büyük bir zorlukla açıkladı. Bekçinin kahveyle dönmesini bekledikten sonra sessizliği araştırmak için ayağa kalktığını anlattı. Ofis loş bir şekilde aydınlatılmıştı ve koridor boş ve sessiz görünüyordu. Açık pencereden gelen tütün gibi garip bir koku fark etti. Masasına geri koştuğunda, denizcilik antlaşmasının tamamen gitmiş olduğunu gördü. Yeri aradı ve odanın her köşesini kontrol etti, ancak belge havaya karışıp yok olmuştu. Kariyerinin gözlerinin önünde yıkıldığını hissederek inançsızlık içinde haykırdı. Böylesine hayati gizli bir antlaşmanın kaybı, hükümete uluslararası sorunlar getirebilecek bir suçtu. Percy, başarısızlığının ağırlığını göğsünde hissetti ve bu durum onu mutlak bir şok ve kafa karışıklığı içinde bıraktı.",
+      "Holmes, her kelimeyi dinlerken yüzü ciddileşerek öne doğru eğildi. Percy'ye o yokken odaya başka birinin girip giremeyeceğini sordu. Percy, kapıların kilitli olduğunu ve sadece kendisiyle bekçinin anahtarı olduğunu söyleyerek başını salladı. Ancak Holmes, Percy'nin kaçırdığı küçük bir detayı fark etti: bekçinin karısı o akşam ofisleri temizlemek için binadaydı. Holmes, o sırada binanın yakınında bulunan herkesin ismini dikkatlice not etti. Ayrıca Percy'ye mali durumunu ve ona zarar vermek isteyecek düşmanları olup olmadığını sordu. Percy, birçok sorumluluğu ve bazı profesyonel rakipleri olduğunu itiraf etti ancak kimsenin belgeyi para için çalacağını hayal edemiyordu. Hırsızlığın olasılıkları arkadaşım tarafından incelenirken odadaki hava ağırlaştı.",
+      "Percy ile konuştuktan sonra Holmes, Dışişleri Bakanlığı'nın düzenini kendisi incelemeye karar verdi. Bir hırsızın fark edilmeden kaçmak için izlemiş olabileceği yolları anlamak istiyordu. Woking'den ayrılıp Londra'ya döndük ve Holmes, suçun işlendiği özel ofisi ziyaret etti. Odanın etrafında yavaşça yürüdü, yeri ve pencere çerçevesini büyüteciyle inceledi. Herkesin göz ardı ettiği küçük bir ipucu arıyor gibiydi. Oda gölgeler ve sırlar yeriydi ve Holmes, çalınan antlaşmanın arkasındaki gerçeği bulmaya kararlıydı. Çözümün odanın detaylarında gizli, çok yakın olduğunu hissediyordu. Kapının yanında sabırla bekledim; Holmes'un o kader gecesinin olaylarını parlak zihninde birleştirdiğini ve gizemi çözmeye hazırlandığını biliyordum.",
+      "Holmes pencereyi dikkatle inceledi ve pervaz ile aşağıdaki yol arasındaki mesafeye dikkat etti. Bir kişinin yumuşak toprak üzerinde fazla iz bırakmadan kolayca aşağı atlayabileceğini fark etti. Penceredeki kilide yakından baktı ve kusursuz çalıştığını gördü. Arkadaşım uzun süre sessiz kaldı, gözleri bir ipucu bulmak için her köşeyi tarıyordu. Tangey adında, sorgulama sırasında gergin görünen bekçiyi görmek istedi. Holmes adamın nasırlı ellerini ve tahta zeminde ayaklarını nasıl değiştirdiğini gözlemledi. Bekçinin tavrında Holmes'un ilgisini çeken gizli bir şeyler vardı. Önümüzdeki günlerde adamı daha yakından izlemek için zihnine bir not düştü. Binadaki atmosfer soğuk ve şüpheliydi, bu da kayıp antlaşmayı aramayı ilk beklediğimizden daha zorlu hale getiriyordu.",
+      "Bekçiyle görüştükten sonra Holmes karısını ziyarete gitti. Kadın, kocası ve durumları hakkında endişeli görünüyordu. Holmes ona hırsızlık gecesiyle ilgili birçok basit soru sordu ve yüzünde herhangi bir sahtekarlık işareti olup olmadığını izledi. Kadın, o gece temizlik görevleri bittikten sonra doğrudan eve gittiği konusunda ısrar etti. Ancak binadan ayrıldığı zamandan bahsederken gözleri başka yöne kaydı. Arkadaşım ona nazikçe teşekkür etti ve meşgul Londra caddesine geri döndük. Holmes bana gerçeğin yakınlarda bir yerlerde gizli olduğuna ikna olduğunu söyledi. Böyle bir suçun genellikle odaya doğrudan erişimi olan birini içerdiğini açıkladı. Holmes, şüpheliler ile uluslararası tarihi değiştirebilecek kayıp belge arasındaki çeşitli bağlantılar hakkında düşüncelere dalmış bir halde tren istasyonuna doğru yürüdük.",
+      "Güneş şehrin üzerinde batmaya başlarken, Holmes bir sonraki hamlemizi planlamak için Baker Street'teki odalarımıza dönmemizi önerdi. Soruşturmamız sırasında topladığı bilgilerden memnundu. Cebinden bir harita çıkardı ve bir hırsızın kaçmak için kullanmış olabileceği olası rotaları izledi. Olayların gidişatı hakkında net bir teori oluşturmaya başladığında gözlerindeki heyecanın arttığını görebiliyordum. Gizli antlaşmanın yanlış ellerde güçlü bir silah olduğunu bildiği için vaktin daraldığını biliyordu. Yolculuk boyunca sessiz oturduk, her birimiz Percy'nin karşı karşıya olduğu potansiyel tehlikeyi düşünüyorduk. Holmes sakin ve kendine güveniyordu, içgüdülerinin onu suçluya doğru yönlendireceğine inanıyordu. Gizem henüz bitmemişti ama hırsızı bulmaya ve devlet dairesinin onurunu kurtarmaya çok yaklaşmıştık.",
+      "Holmes akşamı tamamen sessizlik içinde davayı inceleyerek geçirdi. Haritaya tekrar tekrar baktı, ofis ile gece bekçisinin evi arasındaki mesafeyi işaretledi. Aniden yerinden fırladı ve şapkasını kaptı. Bana hemen suç mahalline geri dönmemiz gerektiğini söyledi. Hava karanlık ve soğuktu ancak Holmes büyük bir hız ve kararlılıkla hareket etti. Binaya hızlı bir araçla gittik ve arkadaşım bahçenin etrafında yürümemiz konusunda ısrar etti. Elleri ve dizleri üzerinde emekledi, pencerenin altındaki yumuşak zemini bir kez daha kontrol etti. Daha önce gözden kaçırdığı çok özel bir ayak izini arıyor gibiydi. Aradığı şeyi sonunda bulduğunda, ayağa kalktı ve bana gülümsedi. Gizem, loş ay ışığının altında nihayet gerçek yüzünü göstermeye başlıyordu.",
+      "Bekçinin evine doğrudan giden küçük, gizli bir yolu işaret etti. Holmes, hırsızın ana kapıdan çıkmadığını, gölgelerde bekleyen biriyle buluşmak için pencereden tırmandığını açıkladı. Bekçinin karısının bu tehlikeli oyuna derinden dahil olduğundan şüpheleniyordu. Arkadaşım sessizce küçük kulübeye doğru ilerledi, bana geride kalmamı ve izlememi işaret etti. Bir avcı gibi eve yaklaştı, kapıları ve pencereleri herhangi bir hareket belirtisine karşı kontrol etti. İçeriden, fısıldayan seslerin hafif sesini duyabiliyorduk. Holmes kulağını kapının soğuk ahşabına dayadı ve dikkatle dinledi. Antlaşmanın çok yakın olduğunu fark ettiğinde gözleri keskin bir odaklanma gösterdi. Her şeyi çözecek ve Percy Phelps'e adaleti getirecek bir keşfin eşiğindeydik.",
+      "Aniden, Holmes kapıyı zorla açtı ve küçük odanın içine adım attık. Gece bekçisi ve karısı, ani gelişimizle şaşkına dönmüş bir şekilde küçük bir masada oturuyorlardı. Holmes kibar selamlaşmalarla vakit kaybetmedi. Çalınan belgeyi nereye sakladıklarını bilmek istedi. Kadın, ağır ve kilitli bir kutuyu önlüğünün altına saklamaya çalıştı ancak arkadaşım daha hızlıydı. Kutuyu ellerinden aldı ve kararlı bir şekilde masanın üzerine koydu. İnce parmaklarının hızlı bir hareketiyle kilidi kırdı ve kapağı açtı. İçeride, herkes için bu kadar acıya ve sıkıntıya neden olan değerli denizcilik antlaşması güvenli bir şekilde duruyordu. Holmes, uzun ve zorlu soruşturma saatlerinden sonra sıkı çalışmamızın nihayet meyvesini verdiğini bilerek, saf bir tatmin duygusuyla bana döndü.",
+      "Holmes, değerli belgeyi kutudan dikkatlice aldı ve cebine yerleştirdi. Ardından, korkudan titreyen kadına dikkatini tekrar çevirdi. Arkadaşım, oyunun bittiğini açıklarken sakin ama ciddi bir ses tonuyla konuştu. Kadına, ofise nasıl girdiğini ve antlaşmayı masadan nasıl aldığını tam olarak bildiğini söyledi. Percy Phelps zilin sesiyle dikkati dağılmışken içeri girmek için çalıntı bir anahtar kullandığını açıkladı. Kadın sırrının artık güvende olmadığını anladığında odada derin bir sessizlik oldu. Dizlerinin üzerine çöktü ve ağlamaya başlayarak bizden polisi çağırmamamızı yalvararak istedi. Sadece açgözlülükten ve hükümete ve donanmaya zarar vermek isteyen gizemli birinin para vaadinden dolayı böyle davrandığını iddia etti.",
+      "Arkadaşım onun bu zayıf bahanesi için hiçbir sempati duymadı. Böylesine önemli bir kağıdı çalmanın, tüm ülkenin geleceğini değiştirebilecek bir suç olduğunu açıkça belirtti. Kapıya doğru yürüdü ve çağrısını bekleyen yerel polislere işaret etti. Memurlar odaya girip kadını ve suç ortağını gözaltına alırken onları izledik. Yüzleri pişmanlık doluydu ama yaptıkları şeyi değiştirmeleri için artık çok geçti. Gizemin ağır yükü nihayet zihnimden ayrılırken büyük bir rahatlama hissettim. Gerçekten zor bir davaydı ancak Holmes günü bir kez daha kurtarmayı başarmıştı. Bu tehlikeli macera boyunca gösterdiği zekice çalışmasıyla gurur duymadan, soğukkanlılığını ve sakinliğini korumaya devam etti.",
+      "Her şey çözüldükten sonra, belgeyi yasal sahibine iade etmek için Londra'ya geri dönen bir trene bindik. Percy Phelps evimizde bizi bekliyordu, uzun süren hastalığından dolayı çok yorgun ve solgun görünüyordu. Holmes ona antlaşmayı verdiğinde, zavallı adam kendi gözlerine zor inandı. Bize defalarca teşekkür etti, sesi saf bir mutluluk ve rahatlamayla titriyordu. Holmes ona sadece biraz dinlenmesini ve önemli işleri için gücünü toplamasını söyledi. Evden uzaklaşırken, güneş sessiz şehir sokaklarının üzerinde doğmaya başladı. Arkadaşım piposunu yaktı ve yorgun ama memnun bir gülümsemeyle ufka doğru baktı. Denizcilik antlaşması güvendeydi ve tehlike sonsuza dek yok olmuştu. Uzun bir yoldu ama karmaşık gizemi nihayet çözmüştük."
+    ],
+    words: {
+      "distress": "üzüntü, sıkıntı",
+      "reputation": "itibar",
+      "treaty": "antlaşma",
+      "collapse": "çöküş",
+      "fiancée": "nişanlı",
+      "observing": "gözlemleyen",
+      "investigate": "araştırmak",
+      "vanish": "ortadan kaybolmak",
+      "disbelief": "inanmama durumu",
+      "rival": "rakip",
+      "inspect": "incelemek",
+      "clue": "ipucu",
+      "ledge": "pencere pervazı",
+      "evidence": "kanıt",
+      "suspect": "şüpheli",
+      "interview": "görüşme yapmak",
+      "route": "rota",
+      "culprit": "suçlu",
+      "chilly": "serin, soğuk",
+      "purpose": "kararlılık, amaç",
+      "footprint": "ayak izi",
+      "whisper": "fısıldamak",
+      "justice": "adalet",
+      "satisfaction": "tatmin, memnuniyet",
+      "tremble": "titremek",
+      "distract": "dikkatini dağıtmak",
+      "greed": "açgözlülük",
+      "sympathy": "sempati",
+      "custody": "gözaltı",
+      "horizon": "ufuk"
+    }
+  },
+      {
+    id: 'detective_norwood_builder',
+    title: "The Adventure of the Norwood Builder",
+    author: 'Arthur Conan Doyle',
+    level: 'B1',
+    coverUrl: '/covers/detective_norwood_builder.webp',
+    en: [
+      "It was a quiet morning in Baker Street, and Sherlock Holmes was feeling bored because there were no new mysteries to solve. He was looking through his papers when a young man burst into the room. He looked very frightened and pale. His name was John Hector McFarlane, a young lawyer from Blackheath. He explained that he was in serious trouble with the police. They believed he had committed a terrible crime. Mr. McFarlane told us that he was accused of murdering a wealthy builder named Jonas Oldacre. The young man looked around the room with wide eyes as if he expected the police to appear at any second. He insisted that he was completely innocent of the crime and needed Holmes to help him clear his name. Holmes listened carefully to his story, waiting for more details about the events of the previous night.",
+      "McFarlane started to tell his strange story. He said that Jonas Oldacre had visited his office only the day before. The builder was a wealthy but lonely man who lived in Norwood. He had asked McFarlane to write his new will. To the young lawyer’s complete surprise, Oldacre decided to leave all of his money and land to him. McFarlane had never expected such a gift, and he felt very confused by the old man's sudden generosity. He met with Oldacre at his house later that evening to discuss the legal documents. The house was a large, lonely building surrounded by high walls. Oldacre seemed to be in a very strange mood that night. They worked on the papers together, but the builder behaved in a way that made McFarlane feel uncomfortable. He felt like something was wrong from the very beginning of their meeting.",
+      "The young lawyer continued his story with a shaking voice. After they finished working, he walked to the train station to go home. He did not know that his life was about to change forever. The next morning, the police arrived at his mother's house in Blackheath to arrest him. They told him that Oldacre's house had been burnt to the ground. Inside the ruins, they found some burnt remains that they believed belonged to the poor builder. They also found McFarlane's walking stick in the hall of the house. The police were certain that the young man had killed Oldacre to get his money. McFarlane was terrified because all the evidence pointed directly to him, even though he knew he had never harmed anyone. He looked at Holmes, hoping that the detective could see the truth in his desperate eyes and save him from prison.",
+      "Sherlock Holmes listened to every word with intense focus. He stood up and began to pace across the room, his long coat moving with his steps. He looked at the young man, whose face was still as pale as a sheet. McFarlane had done nothing wrong, but he was trapped in a web of coincidences that looked like proof of murder to the local police. Holmes stopped his walking and turned toward the window, thinking deeply about the mysterious events at the Norwood house. The detective knew that the police often made quick decisions without seeing the hidden details. He told McFarlane to stay calm because they had a plan to find the truth. The room went silent for a moment as Holmes reached for his pipe, his mind already working on the puzzle of the builder's death and the strange will.",
+      "The young lawyer explained that he had left his walking stick behind by mistake at the builder's house. He realized it was a terrible error because the police found it exactly where the crime allegedly took place. McFarlane mentioned that Oldacre had been very talkative, showing him old business papers and talking about his past life as a lonely man. When the police questioned McFarlane, they had already decided he was guilty because of the inheritance mentioned in the new will. He felt very helpless because he had no way to prove his innocence against such strong evidence. Holmes listened to the details about the secret trapdoor mentioned by Oldacre and the strange, hidden wooden room he had seen that night. The detective’s eyes sparkled with interest at the mention of these peculiar architectural features in the old house.",
+      "Suddenly, a loud and sudden knock at the front door interrupted their conversation. Inspector Lestrade of Scotland Yard entered the room with a very serious look on his face. He looked at McFarlane and immediately announced that he had come to take the prisoner back into custody. The inspector seemed very confident that the case against the young man was closed and solid. He told Holmes that they found more evidence, including a pile of ash and burned clothes that confirmed the death of the builder. McFarlane turned pale and started to tremble as the inspector moved toward him. Holmes watched everything with a sharp, calm look, noting how the inspector was far too sure of his success. He decided that it was time to intervene before the law made a mistake that could never be corrected in the future.",
+      "Holmes stood between the inspector and the young man, his hands raised in a calm gesture. He told Lestrade that he had seen many cases in his career, but this one felt strange from the very beginning. The detective walked toward the window again, looking out at the foggy London streets while he considered the information. He explained that the evidence gathered by the police was far too convenient to be purely accidental. Lestrade laughed, believing that Holmes was simply trying to find a mystery where none existed. However, Holmes remained firm, asking the inspector about the specific details of the burned items discovered in the garden. He knew that the fire in the house was not a simple accident, but a carefully planned event designed to point the finger of suspicion directly at the terrified young lawyer sitting in the armchair.",
+      "Lestrade shook his head with annoyance and insisted that the case was already solved. He mentioned that the charred remains found in the timber yard were almost certainly those of Mr. Oldacre, the builder. According to the inspector, the physical evidence at the scene was impossible to ignore or explain away. Holmes listened carefully, noting every detail about the time the fire started and the specific location of the remains. He asked if there was any chance that the builder had planned his own disappearance to trap the young man. The inspector dismissed this idea as ridiculous, calling it a waste of time to consider such strange possibilities. He grabbed his hat and prepared to take McFarlane to the station, feeling completely satisfied with his own investigative work and the swift conclusion of this tragic criminal matter.",
+      "The young lawyer felt a wave of fear as he stood up, ready to follow the police to jail. He could not understand why such bad luck had followed him since the moment he visited the builder's home. Holmes looked at McFarlane with a reassuring nod, telling him that he should not lose hope just yet. The detective then turned to the inspector and requested permission to join them on their next visit to the Norwood house. He claimed that he had a few unanswered questions that required a personal inspection of the property to solve the puzzle. Lestrade agreed with a reluctant sigh, though he clearly doubted that Holmes would find anything new to change his mind. They left the quiet apartment together, with the tall detective thinking about the hidden secrets that lay waiting within the dark and silent walls of the builder's estate.",
+      "The journey to Norwood was quiet and serious. As the carriage rolled toward the builder's estate, Holmes looked through the window at the passing scenery with sharp eyes. He ignored the inspector's small talk about the success of the arrest. When they finally arrived at the house, the air felt heavy and cold. The garden was dark, and the burned timber yard looked like a deep, ugly wound in the ground. Holmes stepped out of the vehicle and immediately began examining the grass near the wall. He noticed something that the police had clearly missed before. There were small, faint marks in the soft earth, suggesting that someone had walked here very recently. He crouched low, his long coat touching the dirt, while he followed these tracks with deep focus. His mind was racing to connect the pieces of this strange and difficult puzzle.",
+      "Lestrade followed him with a look of confusion, not understanding what could possibly be so important on the muddy ground. Holmes said nothing as he reached the side of the house. He walked past the main entrance and headed toward a small, narrow corridor near the back. His movements were quick and deliberate. He stopped near a wooden panel that seemed slightly loose. He pushed against it gently, but it did not move. Then, he looked at his magnifying glass and inspected the dusty surface. He noticed a fresh smudge of fingerprints that looked quite small and unusual. This was a critical moment. He knew that the evidence of a secret room was hidden somewhere behind these wooden walls. He turned to the group and asked for a sharp tool, feeling certain that the truth was now within his reach.",
+      "The detective used the tool to pry the board away from the wall. Behind the wooden frame, they found a hidden passage that led into a tiny, dark space. Inside, there were blankets, a small lamp, and some food, proving that someone had been hiding in the house for several days. Holmes realized that Oldacre had never truly left his own home; he had stayed hidden like a rat in the walls to trick everyone. The builder wanted to destroy the young man's life through a false accusation. Lestrade stood in complete shock, his mouth open as he stared at the secret room. The plan to frame the lawyer was now completely exposed. Holmes stood up and adjusted his hat, knowing that justice would soon be served. The mystery of the Norwood builder was finally starting to fall apart before their very eyes.",
+      "Sherlock Holmes stood in the narrow space and pointed his flashlight toward a dark corner. There, shaking with fear and looking disheveled, sat Jonas Oldacre himself. He had been living in this secret compartment to watch the chaos he had created. Holmes stepped back, his expression cold and calm as he looked at the man who had tried to destroy John McFarlane. The builder tried to speak, but his voice was weak and trembling. He realized that his clever trap had finally failed. Lestrade rushed forward, grabbing the man by his arm and pulling him out into the hallway. The inspector's initial doubt vanished, replaced by a sudden and intense anger toward the builder. It was clear that Oldacre had faked his own death, hoping to see an innocent man go to prison for a murder that never actually occurred in the way he described.",
+      "McFarlane was brought into the room, and he looked at the scene with wide, disbelieving eyes. He saw the man who had once been his employer standing there, looking guilty and defeated. Holmes explained how the builder had used the fire to hide his tracks and how he had left his own blood at the scene to mislead the police. The entire plan was a cruel game, designed to punish McFarlane’s mother for rejecting Oldacre many years ago. The young lawyer felt a wave of relief wash over him as he realized his life was no longer in danger. He turned to Holmes and expressed his deep gratitude. Holmes simply nodded, already thinking about his next case. He did not care for praise; for him, the true reward was simply the act of solving the puzzle and ensuring that justice was served for everyone involved.",
+      "The journey back to London was much brighter than the trip to Norwood. The mystery was solved, the truth was known, and the innocent man was finally free. Holmes sat in the corner of the carriage, his eyes closed as he rested after the long investigation. He felt the familiar satisfaction of a difficult case brought to a successful conclusion. Outside, the world moved on, unaware of the dark secrets that had been hidden behind the wooden walls of the builder's estate. Holmes knew that people often tried to hide the truth, but they could never truly escape his keen observation. As the city lights appeared in the distance, he smiled slightly to himself. Another puzzle had been mastered, another life had been saved, and he was ready for the next challenge that would surely arrive at his door by morning."
+    ],
+    tr: [
+      "Baker Sokağı'nda sessiz bir sabahtı ve Sherlock Holmes çözülecek yeni bir gizem olmadığı için sıkılmıştı. Kağıtlarını incelerken genç bir adam odaya daldı. Çok korkmuş ve solgun görünüyordu. Adı, Blackheath'ten genç bir avukat olan John Hector McFarlane'di. Polisle başının ciddi bir belada olduğunu açıkladı. Korkunç bir suç işlediğine inanıyorlardı. Bay McFarlane, Jonas Oldacre adında zengin bir inşaatçıyı öldürmekle suçlandığını söyledi. Genç adam, sanki her an polis gelecekmiş gibi gözleri faltaşı gibi açılmış bir şekilde odayı süzdü. Suçsuz olduğu konusunda ısrar etti ve adını temize çıkarması için Holmes'un yardımına ihtiyacı olduğunu söyledi. Holmes, bir önceki gece yaşanan olaylarla ilgili daha fazla ayrıntı bekleyerek hikayesini dikkatle dinledi.",
+      "McFarlane tuhaf hikayesini anlatmaya başladı. Jonas Oldacre'in sadece bir gün önce ofisini ziyaret ettiğini söyledi. İnşaatçı, Norwood'da yaşayan zengin ama yalnız bir adamdı. McFarlane'den yeni vasiyetini yazmasını istemişti. Genç avukatın büyük şaşkınlığına rağmen, Oldacre tüm parasını ve arazisini ona bırakmaya karar verdi. McFarlane böyle bir hediyeyi hiç beklememişti ve yaşlı adamın ani cömertliği karşısında kafası çok karışmıştı. Yasal belgeleri görüşmek üzere o akşam evinde Oldacre ile buluştu. Ev, yüksek duvarlarla çevrili büyük ve ıssız bir binaydı. Oldacre o gece çok tuhaf bir ruh halindeydi. Kağıtlar üzerinde birlikte çalıştılar ancak inşaatçı, McFarlane'i rahatsız eden bir şekilde davrandı. Görüşmelerinin en başından beri bir şeylerin yanlış olduğunu hissetmişti.",
+      "Genç avukat hikayesine titreyen bir sesle devam etti. Çalışmayı bitirdikten sonra eve gitmek için tren istasyonuna yürüdü. Hayatının sonsuza dek değişmek üzere olduğundan habersizdi. Ertesi sabah polis, onu tutuklamak için Blackheath'teki annesinin evine geldi. Ona Oldacre'in evinin tamamen yandığını söylediler. Kalıntıların içinde, zavallı inşaatçıya ait olduğuna inandıkları yanmış kalıntılar buldular. Ayrıca McFarlane'in bastonunu evin holünde bulmuşlardı. Polis, genç adamın parasını almak için Oldacre'i öldürdüğüne emindi. McFarlane dehşet içindeydi çünkü kimseye asla zarar vermediğini bilmesine rağmen tüm kanıtlar doğrudan onu gösteriyordu. Holmes'a baktı, dedektifin çaresiz gözlerindeki gerçeği görebileceğini ve onu hapisten kurtarabileceğini umuyordu.",
+      "Sherlock Holmes her kelimeyi yoğun bir odaklanmayla dinledi. Ayağa kalktı ve uzun paltosu adımlarıyla hareket ederek odada volta atmaya başladı. Yüzü hala bir çarşaf gibi solgun olan genç adama baktı. McFarlane hiçbir yanlış yapmamıştı ama yerel polise cinayet kanıtı gibi görünen bir rastlantılar ağında kapana kısılmıştı. Holmes yürümeyi bıraktı ve pencereye dönerek Norwood evindeki gizemli olaylar hakkında derin derin düşünmeye başladı. Dedektif, polisin genellikle gizli ayrıntıları görmeden hızlı kararlar aldığını biliyordu. McFarlane'e gerçeği bulmak için bir planları olduğu için sakin kalmasını söyledi. Holmes piposuna uzanırken oda bir anlığına sessizliğe büründü; zihni çoktan inşaatçının ölümü ve garip vasiyet bulmacası üzerinde çalışmaya başlamıştı.",
+      "Genç avukat, bastonunu yanlışlıkla inşaatçının evinde unuttuğunu açıkladı. Bunun korkunç bir hata olduğunu fark etti çünkü polis onu suçun işlendiği iddia edilen yerde bulmuştu. McFarlane, Oldacre'in çok konuşkan olduğunu, ona eski iş kağıtlarını gösterdiğini ve yalnız bir adam olarak geçmiş hayatından bahsettiğini söyledi. Polis McFarlane'i sorguladığında, yeni vasiyette bahsedilen miras nedeniyle zaten onun suçlu olduğuna karar vermişlerdi. Böyle güçlü kanıtlar karşısında masumiyetini kanıtlamanın hiçbir yolu olmadığı için kendini çok çaresiz hissediyordu. Holmes, Oldacre'in bahsettiği gizli tuzak kapısı ve o gece gördüğü garip, gizli ahşap oda hakkındaki ayrıntıları dinledi. Dedektifin gözleri, eski evdeki bu tuhaf mimari özelliklerden bahsedilince ilgiyle parladı.",
+      "Aniden kapının sert ve ani bir şekilde çalınması konuşmalarını böldü. Scotland Yard'dan Müfettiş Lestrade çok ciddi bir ifadeyle odaya girdi. McFarlane'e baktı ve derhal mahkumu tutuklayıp geri götürmeye geldiğini ilan etti. Müfettiş, genç adama karşı olan davanın kapandığına ve sağlam olduğuna çok emin görünüyordu. Holmes'a, bir kül yığını ve inşaatçının ölümünü doğrulayan yanmış kıyafetler dahil daha fazla kanıt bulduklarını söyledi. Müfettiş kendisine doğru ilerlerken McFarlane solgunlaştı ve titremeye başladı. Holmes her şeyi keskin ve sakin bir bakışla izliyor, müfettişin başarısından ne kadar emin olduğuna dikkat ediyordu. Hukukun gelecekte asla düzeltilemeyecek bir hata yapmasından önce müdahale etme vaktinin geldiğine karar verdi.",
+      "Holmes, müfettiş ile genç adamın arasında durdu ve ellerini sakinleştirici bir hareketle kaldırdı. Lestrade'e, meslek hayatı boyunca birçok dava gördüğünü ancak bunun en başından beri tuhaf geldiğini söyledi. Dedektif tekrar pencereye doğru yürüdü ve bilgileri değerlendirirken sisli Londra sokaklarına baktı. Polisin topladığı delillerin tesadüfi olamayacak kadar uygun olduğunu açıkladı. Lestrade, Holmes'un sadece var olmayan bir gizemi çözmeye çalıştığına inanarak güldü. Ancak Holmes fikrinden dönmedi ve müfettişe bahçede bulunan yanmış eşyaların detaylarını sordu. Evdeki yangının basit bir kaza olmadığını, koltukta oturan korku içindeki genç avukatı suçlu göstermek için dikkatlice planlanmış bir olay olduğunu biliyordu.",
+      "Lestrade sinirle başını salladı ve davanın çoktan çözüldüğü konusunda ısrar etti. Odunlukta bulunan yanmış kalıntıların büyük ihtimalle inşaatçı Bay Oldacre'a ait olduğunu belirtti. Müfettişe göre, olay yerindeki fiziksel delilleri görmezden gelmek veya açıklamak imkansızdı. Holmes, yangının başladığı saate ve kalıntıların bulunduğu yere dair her detayı not ederek dikkatle dinledi. İnşaatçının, genç adamı tuzağa düşürmek için kendi kayboluşunu planlama ihtimali olup olmadığını sordu. Müfettiş, bu fikri saçma bularak reddetti ve böyle tuhaf olasılıkları düşünmenin zaman kaybı olduğunu söyledi. Şapkasını aldı ve kendi araştırmasından ve bu trajik suç meselesinin hızlı sonuçlanmasından tamamen memnun bir şekilde McFarlane'i karakola götürmeye hazırlandı.",
+      "Genç avukat ayağa kalkarken bir korku dalgası hissetti; polisle birlikte hapse gitmeye hazırdı. İnşaatçının evini ziyaret ettiği andan beri başına gelen bu kötü şansın nedenini anlayamıyordu. Holmes, McFarlane'e güven verici bir baş hareketiyle bakarak henüz umudunu kaybetmemesi gerektiğini söyledi. Daha sonra müfettişe dönerek Norwood'daki eve yapacakları bir sonraki ziyarette onlara katılmak için izin istedi. Bulmacayı çözmek adına mülkte şahsen inceleme gerektiren birkaç cevapsız sorusu olduğunu iddia etti. Lestrade isteksiz bir iç çekişle kabul etti, ancak Holmes'un fikrini değiştirecek yeni bir şey bulacağından şüpheliydi. Sessiz daireden birlikte ayrıldılar; uzun boylu dedektif, inşaatçının arazisindeki karanlık ve sessiz duvarların içinde onları bekleyen gizli sırları düşünüyordu.",
+      "Norwood'a yapılan yolculuk sessiz ve ciddiydi. Fayton inşaatçının arazisine doğru ilerlerken, Holmes pencereden dışarıdaki manzarayı keskin gözlerle izledi. Müfettişin tutuklamanın başarısı hakkındaki havadan sudan konuşmalarını duymazdan geldi. Sonunda eve vardıklarında, hava ağır ve soğuktu. Bahçe karanlıktı ve yanmış kereste deposu, yerde derin ve çirkin bir yara gibi görünüyordu. Holmes araçtan indi ve hemen duvarın yakınındaki çimi incelemeye başladı. Polisin daha önce fark etmediği bir şey dikkatini çekti. Yumuşak toprakta, birinin çok yakın zamanda buradan geçtiğini gösteren küçük, belli belirsiz izler vardı. Uzun paltosu toprağa değerken yere çöktü ve büyük bir odaklanmayla bu izleri takip etti. Zihni, bu tuhaf ve zor bilmecenin parçalarını birleştirmek için hızla çalışıyordu.",
+      "Lestrade, çamurlu zeminde neyin bu kadar önemli olabileceğini anlamayarak şaşkın bir ifadeyle onu takip etti. Holmes, evin yan tarafına ulaştığında hiçbir şey söylemedi. Ana girişin yanından geçip arkadaki dar bir koridora doğru ilerledi. Hareketleri hızlı ve kararlıydı. Biraz gevşek görünen ahşap bir panelin yanında durdu. Hafifçe itti ama yerinden kıpırdamadı. Sonra büyütecine bakıp tozlu yüzeyi inceledi. Oldukça küçük ve sıra dışı görünen taze bir parmak izi lekesi fark etti. Bu kritik bir andı. Gizli bir oda kanıtının bu ahşap duvarların arkasında bir yerde saklandığını biliyordu. Gruba dönüp keskin bir alet istedi, gerçeğin artık elinin altında olduğundan emindi.",
+      "Dedektif, tahtayı duvardan ayırmak için aleti kullandı. Ahşap çerçevenin arkasında, küçük ve karanlık bir boşluğa açılan gizli bir geçit buldular. İçeride battaniyeler, küçük bir lamba ve biraz yiyecek vardı; bu da birinin birkaç gündür evde saklandığını kanıtlıyordu. Holmes, Oldacre'ın evinden aslında hiç ayrılmadığını, herkesi kandırmak için duvarların arasında bir fare gibi saklandığını fark etti. İnşaatçı, yanlış bir suçlamayla genç adamın hayatını mahvetmek istiyordu. Lestrade şok içinde kalmıştı, gizli odaya bakarken ağzı açık kalmıştı. Avukatın üzerine yıkılmak istenen plan tamamen ortaya çıkmıştı. Holmes ayağa kalkıp şapkasını düzeltti; adaletin yakında yerini bulacağını biliyordu. Norwood inşaatçısının gizemi sonunda gözlerinin önünde parçalanmaya başlıyordu.",
+      "Sherlock Holmes dar alanda durdu ve el fenerini karanlık bir köşeye doğru tuttu. Orada, korkudan titreyen ve perişan görünen Jonas Oldacre'ın kendisi oturuyordu. Yarattığı kaosun sonuçlarını izlemek için bu gizli bölmede yaşıyordu. Holmes, John McFarlane'i mahvetmeye çalışan adama bakarken ifadesi soğuk ve sakindi. İnşaatçı konuşmaya çalıştı ama sesi zayıf ve titrek çıkıyordu. Zekice kurduğu tuzağın nihayet başarısız olduğunu anlamıştı. Lestrade öne atıldı, adamı kolundan tuttu ve koridora doğru çekti. Müfettişin başlangıçtaki şüphesi yok oldu ve yerini inşaatçıya karşı duyulan ani ve yoğun bir öfkeye bıraktı. Oldacre'ın, masum bir adamın asla gerçekleşmemiş bir cinayet yüzünden hapse girmesini umarak kendi ölümünü sahte bir şekilde kurguladığı açıktı.",
+      "McFarlane odaya getirildi ve sahneye geniş, inanmayan gözlerle baktı. Bir zamanlar işvereni olan adamın orada suçlu ve yenilmiş bir şekilde durduğunu gördü. Holmes, inşaatçının izlerini gizlemek için yangını nasıl kullandığını ve polisi yanıltmak için olay yerinde kendi kanını nasıl bıraktığını açıkladı. Tüm plan, McFarlane'in annesinin yıllar önce Oldacre'ı reddetmesinin intikamını almak için tasarlanmış zalimce bir oyundu. Genç avukat, hayatının artık tehlikede olmadığını anladığında üzerine bir rahatlama dalgası yayıldı. Holmes'a döndü ve derin minnettarlığını ifade etti. Holmes sadece başını salladı, zaten bir sonraki davasını düşünüyordu. Övgüye önem vermezdi; onun için gerçek ödül sadece bulmacayı çözmek ve adaletin yerini bulmasını sağlamaktı.",
+      "Londra'ya dönüş yolculuğu, Norwood'a yapılan yolculuktan çok daha aydınlıktı. Gizem çözülmüş, gerçek gün yüzüne çıkmış ve masum adam sonunda özgür kalmıştı. Holmes, uzun araştırmanın ardından dinlenirken gözleri kapalı bir şekilde vagonun köşesinde oturuyordu. Başarılı bir sonuca ulaştırılan zor bir davanın tanıdık tatminini hissediyordu. Dışarıda dünya, inşaatçının malikanesinin ahşap duvarlarının arkasına gizlenmiş karanlık sırlardan habersiz yoluna devam ediyordu. Holmes, insanların gerçekleri saklamaya çalıştığını ancak asla onun keskin gözleminden kaçamayacaklarını biliyordu. Şehir ışıkları uzaktan göründüğünde kendi kendine hafifçe gülümsedi. Bir başka bulmaca daha ustalıkla çözülmüştü, bir hayat daha kurtarılmıştı ve o, sabahleyin kapısına gelecek bir sonraki zorlu göreve hazırdı."
+    ],
+    words: {
+      "mystery": "gizem",
+      "accused": "suçlanmış",
+      "innocent": "masum",
+      "generosity": "cömertlik",
+      "evidence": "delil",
+      "desperate": "çaresiz",
+      "coincidence": "rastlantı",
+      "innocence": "masumiyet",
+      "inheritance": "miras",
+      "custody": "gözaltı",
+      "intervene": "müdahale etmek",
+      "peculiar": "tuhaf",
+      "inspector": "müfettiş",
+      "charred": "yanmış",
+      "suspicion": "şüphe",
+      "property": "mülk",
+      "carriage": "fayton",
+      "scenery": "manzara",
+      "crouch": "çömelmek",
+      "magnifying glass": "büyüteç",
+      "smudge": "leke",
+      "accusation": "suçlama",
+      "disheveled": "dağınık, perişan",
+      "compartment": "bölme, kompartıman",
+      "employer": "işveren",
+      "gratitude": "minnettarlık",
+      "observation": "gözlem"
+    }
+  },
+      {
+    id: 'detective_three_students',
+    title: "The Adventure of the Three Students",
+    author: 'Arthur Conan Doyle',
+    level: 'B1',
+    coverUrl: '/covers/detective_three_students.webp',
+    en: [
+      "It was a quiet afternoon in early summer when my friend Sherlock Holmes and I visited a famous university town. We were staying in the city to research early English documents, enjoying the peaceful atmosphere of the old colleges. One evening, a man named Mr. Hilton Soames came to visit us at our rooms. He was a tutor at the local college, and he looked very pale and nervous. He explained that a serious problem had happened at his college. A very important examination, the Fortescue Scholarship, was going to take place the next day. A professor had left some important test papers in his office. However, someone had entered his room while he was away, and he suspected that one of his students had tried to cheat by reading the secret questions before the exam. He needed Holmes to help him find the truth immediately.",
+      "Mr. Soames described the situation in great detail. He had been away from his room for only an hour to have some tea with a friend. When he returned, he was shocked to see that his door was open and his test papers were scattered on his desk. He looked around the room and noticed that the butler, a man named Bannister, was inside. The butler seemed very surprised and even shaken by what he saw. Mr. Soames told us that the papers had been moved, and one specific page was missing from the set. He was very worried because the scholarship was highly competitive and prestigious. If one student saw the questions, it would be unfair to all the others. He felt completely stuck because he did not know who could have done such a dishonest thing in his quiet college office.",
+      "Holmes listened to the story with great interest, his eyes bright with excitement. This was exactly the kind of puzzle that he enjoyed solving. He stood up immediately and grabbed his hat, asking Mr. Soames to lead the way to the college. We walked through the beautiful, ancient streets as the sun began to set. The air was cool, and the university felt mysterious and solemn. When we arrived at the college, Holmes looked closely at the entrance and the hallway. He checked the floor and the furniture with his magnifying glass, looking for any small signs that might have been left behind. He was quiet and focused, thinking deeply about the mysterious visitor who had broken into the tutor's room. I followed him closely, knowing that another great mystery was about to be solved by my clever and observant friend Sherlock Holmes.",
+      "Holmes began his investigation inside the office. He moved slowly across the wooden floor, his eyes searching for even the smallest mark. He examined the desk where the papers had been lying, noting the position of each individual sheet with careful attention. He noticed that the papers were spread across three different locations: the table, the chair, and the floor. This was a strange detail for someone who only wanted to steal information. Holmes then moved to the windowsill, leaning out to inspect the garden below. He found nothing unusual outside, but his expression remained serious. He turned back to the room and started to check the desk surface again. He looked for dust, scratches, or any small object that could tell a story. He was looking for the secret key to this mystery, and he was not going to leave until he found it.",
+      "While Holmes was busy at the desk, I stood near the door and watched him work. Mr. Soames looked at us with a face full of anxiety. He explained again how he had left the room and how Bannister had been present when he returned. Holmes asked if anyone else had a key to the room, but Mr. Soames insisted that he was the only one who kept the key in his pocket at all times. Holmes then walked over to the side table where a small, dark object caught his eye. It was a lead pencil, broken into pieces, and a piece of black clay. Holmes picked these items up with a pair of tweezers and held them to the light. He smiled to himself, as if the pieces of the puzzle were starting to fit together in his clever mind.",
+      "The tutor watched Holmes with pure confusion as my friend examined the small pile of evidence. Holmes walked toward the window once more and then turned to look at the floor near the bookshelf. He noticed a tiny, almost invisible scratch on the polished wood. He did not say a word, but his eyes lit up with deep satisfaction. He asked Mr. Soames to describe the three students who lived on the floor above. They were Gilchrist, the tall athlete; Daulat Ras, the quiet Indian student; and Miles McLaren, a young man who was known for his brilliant but lazy personality. Holmes wanted to know everything about them, especially their movements during the afternoon. He was building a mental map of the crime, considering every person who had access to this hallway. We prepared to leave the office to continue our search for the truth elsewhere.",
+      "Holmes and I stepped out into the quiet university hallway, our footsteps sounding loud against the hard stone floor. The afternoon sun cast long, thin shadows through the windows, creating a peaceful scene that did not match the crime that had occurred within those walls. Holmes moved with great purpose, his head slightly bent as if he were listening to a secret conversation only he could hear. He stopped in front of the stairwell, looking up toward the rooms where the three students resided. He was not just looking at the stairs, but was analyzing the distance and the time it would take for someone to walk between the tutor’s room and the floors above. My friend was clearly constructing a timeline in his mind, considering how a person could move quickly without being noticed by others living in the building.",
+      "As we climbed the stairs, Holmes paused at each landing to examine the floor. He was looking for any small trace, a footprint or a mark, that might have been left by the mysterious intruder. He leaned down and ran his fingers over the edge of a wooden railing, checking for dust or unusual wear. It was clear that he suspected the visitor had been in a great hurry when they fled the room. Mr. Soames followed behind us, his breathing heavy with worry as he waited for Holmes to reveal his thoughts. He kept asking if we had found any significant clues, but Holmes only gave a polite smile in response. He preferred to keep his theories to himself until he was absolutely certain of the facts, knowing that even a small mistake in reasoning could lead us far from the true answer.",
+      "We reached the second floor and stood before the doors of the students. Holmes studied the wooden frames and the locks with deep attention. He wanted to understand if any of the doors had been opened recently or if they showed signs of damage. The silence of the hallway was heavy, filled only by the distant sound of birds chirping in the university gardens outside. I felt a sense of anticipation because I knew we were very close to the moment of discovery. Holmes pulled a small magnifying glass from his coat pocket and knelt down once more. He seemed to have found something of great interest near the base of one specific door. He did not call out, but his silence was enough to tell me that the mystery was about to be solved. He stood up slowly and adjusted his hat, ready to confront the final part of this strange puzzle.",
+      "Holmes turned his attention to the sitting room of Gilchrist, the tall and athletic student. He walked across the floor with soft, careful steps, inspecting every corner with his sharp eyes. The room was tidy, but Holmes was looking for something more specific than just order. He pulled a small tape measure from his pocket and began to measure the distance between the table and the window with extreme precision. I watched him in silence, sensing the gravity of his investigation. He looked at the floorboards, the dust on the windowsill, and the legs of the heavy wooden chair near the desk. It was clear that he was reconstructing the movements of the person who had been in the room earlier. Every detail mattered to him, and he seemed to see things that remained invisible to everyone else in the room.",
+      "Suddenly, Holmes knelt down and pointed to a small, dark mark on the carpet near the door. It was almost impossible to see with the naked eye, but the magnifying glass brought it into clear focus. He looked at it for a long time, his expression growing serious and satisfied. He did not say a word, but he signaled for us to follow him back out into the hallway. We walked to the desk where the exam papers had been placed. Holmes began to explain his findings, his voice low and steady. He described how the intruder must have been very fast and careful to hide their tracks. The thief had clearly used a special tool or perhaps a simple trick to copy the text on the pages without staying in the room for more than a few minutes during the tutor's absence.",
+      "I looked at the suspicious items on the desk, feeling the weight of the truth beginning to dawn on me. Holmes was now certain about the identity of the student who had cheated. He looked at Soames, who stood by the door with a pale and anxious face, waiting for the final judgment. The mystery was no longer a puzzle of random events, but a clear story of ambition and poor choices. Holmes explained that the intruder had left behind a tiny piece of black clay on the table, which matched the material found at the athletic track. This was the final piece of evidence we needed to connect the crime to one of the three men. We prepared ourselves to confront the student, as the cold reality of the situation became clear to everyone in the quiet room.",
+      "Holmes turned to Soames and suggested that he bring the young student, Gilchrist, into the room to face the truth. When the tall athlete entered, his face was pale, reflecting the deep shame he felt inside. He looked at Holmes, knowing that the detective had discovered his secret. With a calm and steady voice, Holmes explained everything he had found. He described how Gilchrist had stood on the window ledge outside the room, watching the tutor and waiting for the right moment to enter. The clay on the table was a direct result of his presence at the training ground earlier that day. Gilchrist had not intended to be a thief, but the temptation to see the examination papers before the others was too strong for him to resist. He trembled as he realized that his bright future was now at great risk.",
+      "The young man did not try to deny his actions. Instead, he reached into his pocket and pulled out a small, folded paper that contained the copied text of the examination. With tears in his eyes, he explained his desperate situation and his sudden weakness of mind. He told us that he had been offered a colonial appointment, but he felt he needed to pass this exam to prove his worth to his family. Soames stood there in silence, his expression filled with both shock and sadness as he listened to the confession. It was a tragic moment for such a promising student. Holmes stood by the window, his gaze fixed on the yard outside, allowing the young man to express his regret. The room felt very heavy, as if the walls themselves were burdened by the heavy secret that had finally been revealed to us.",
+      "After the confession was finished, Holmes made a final suggestion to Soames. He advised the tutor to offer the student a chance to correct his mistake. Gilchrist decided to give up his place in the university and accept the colonial appointment he had been offered, leaving behind the shame of his actions. This path allowed him to restart his life in a new place, away from the judgmental eyes of his peers. Soames agreed to handle the matter quietly to protect the reputation of the college. We walked away from the old stone buildings as the sun began to set over the quiet grounds. My friend Holmes seemed pleased with the outcome, having saved a young man's future through his sharp intellect and deep understanding of human nature. The mystery of the three students was finally solved, and justice was served with mercy."
+    ],
+    tr: [
+      "Arkadaşım Sherlock Holmes ve ben, yazın başlarında sessiz bir öğleden sonrasında ünlü bir üniversite şehrini ziyaret ediyorduk. Eski İngiliz belgelerini araştırmak ve eski kolejlerin huzurlu atmosferinin tadını çıkarmak için şehirde kalıyorduk. Bir akşam, Mr. Hilton Soames adında bir adam odalarımıza bizi ziyarete geldi. Yerel kolejde bir öğretim görevlisiydi ve çok solgun ve endişeli görünüyordu. Kolejinde ciddi bir sorun yaşandığını açıkladı. Ertesi gün, Fortescue Bursu için çok önemli bir sınav yapılacaktı. Bir profesör önemli bazı sınav kâğıtlarını ofisinde bırakmıştı. Ancak o yokken biri odasına girmişti ve bir öğrencisinin sınavdan önce gizli soruları okuyarak kopya çekmeye çalıştığından şüpheleniyordu. Holmes'un gerçeği hemen bulmasına yardımcı olması gerekiyordu.",
+      "Mr. Soames durumu büyük bir detayla anlattı. Bir arkadaşıyla çay içmek için odasından sadece bir saatliğine ayrılmıştı. Döndüğünde, kapısının açık olduğunu ve sınav kâğıtlarının masasının üzerine saçıldığını görünce şok oldu. Odaya göz attığında, Bannister adında bir uşağın içeride olduğunu fark etti. Uşak çok şaşırmış ve hatta gördüğü şeyden sarsılmış görünüyordu. Mr. Soames bize kâğıtların yerinden oynatıldığını ve setten belirli bir sayfanın eksik olduğunu söyledi. Burs son derece rekabetçi ve prestijli olduğu için çok endişeliydi. Eğer bir öğrenci soruları görürse, diğerlerinin hepsine haksızlık olurdu. Sessiz kolej ofisinde böylesine dürüst olmayan bir şeyi kimin yapmış olabileceğini bilmediği için tamamen sıkışıp kalmıştı.",
+      "Holmes hikâyeyi büyük bir ilgiyle, gözleri heyecanla parlayarak dinledi. Bu tam da çözmekten keyif aldığı türden bir bulmacaydı. Hemen ayağa kalktı, şapkasını aldı ve Mr. Soames'ten koleje giden yolu göstermesini istedi. Güneş batarken güzel, antik sokaklarda yürüdük. Hava serindi ve üniversite gizemli ve ciddi hissettiriyordu. Koleje vardığımızda, Holmes girişi ve koridoru yakından inceledi. Büyüteciyle yeri ve mobilyaları kontrol ederek arkada bırakılmış olabilecek küçük işaretler aradı. Sessiz ve odaklanmış bir şekilde, öğretim görevlisinin odasına giren gizemli ziyaretçi hakkında derin düşüncelere dalmıştı. Zeki ve dikkatli arkadaşım Sherlock Holmes tarafından bir başka büyük gizemin daha çözülmek üzere olduğunu bilerek onu yakından takip ettim.",
+      "Holmes soruşturmasına ofisin içinde başladı. Ahşap zemin üzerinde yavaşça hareket etti, gözleri en küçük bir izi bile arıyordu. Kağıtların durduğu masayı inceledi ve her bir sayfanın konumunu dikkatle not etti. Kağıtların masa, sandalye ve yer olmak üzere üç farklı yere dağılmış olduğunu fark etti. Bu, sadece bilgi çalmak isteyen biri için tuhaf bir detaydı. Holmes daha sonra pencere kenarına giderek aşağıdaki bahçeyi incelemek için dışarı eğildi. Dışarıda sıra dışı bir şey bulamadı ama ifadesi ciddiyetini korudu. Tekrar odaya döndü ve masa yüzeyini yeniden kontrol etmeye başladı. Toz, çizik veya bir hikaye anlatabilecek küçük nesneler arıyordu. Bu gizemin gizli anahtarını arıyordu ve onu bulana kadar oradan ayrılmayacaktı.",
+      "Holmes masada meşgulken, ben kapının yanında durup onun çalışmasını izledim. Bay Soames bize endişeli bir yüzle bakıyordu. Odadan nasıl ayrıldığını ve döndüğünde Bannister'ın nasıl orada olduğunu bir kez daha anlattı. Holmes, odaya başka kimin anahtarı olduğunu sordu ancak Bay Soames, anahtarı her zaman cebinde tutan tek kişinin kendisi olduğu konusunda ısrar etti. Holmes daha sonra küçük ve koyu renkli bir nesnenin dikkatini çektiği yan masaya doğru yürüdü. Bu, parçalara ayrılmış bir kurşun kalem ve bir parça siyah kildi. Holmes bu eşyaları bir cımbızla alıp ışığa tuttu. Sanki bulmacanın parçaları zihninde birleşmeye başlıyormuş gibi kendi kendine gülümsedi.",
+      "Öğretmen, arkadaşım küçük kanıt yığınını incelerken şaşkınlıkla Holmes'u izledi. Holmes bir kez daha pencereye doğru yürüdü ve ardından kitaplığın yanındaki zemine bakmak için döndü. Cilalı ahşap üzerinde neredeyse görünmez olan küçük bir çizik fark etti. Tek bir kelime etmedi ama gözleri büyük bir memnuniyetle parladı. Bay Soames'ten üst katta yaşayan üç öğrenciyi tanımlamasını istedi. Bunlar, uzun boylu atlet Gilchrist, sessiz Hintli öğrenci Daulat Ras ve parlak ama tembel kişiliğiyle tanınan genç Miles McLaren'dı. Holmes onlar hakkında, özellikle de öğleden sonraki hareketleri hakkında her şeyi bilmek istiyordu. Suçun zihinsel bir haritasını çıkarıyor ve bu koridora erişimi olan herkesi değerlendiriyordu. Gerçeği başka yerlerde aramak üzere ofisten ayrılmaya hazırlandık.",
+      "Holmes ve ben sessiz üniversite koridoruna çıktık, ayak seslerimiz sert taş zeminde yankılanıyordu. Öğleden sonra güneşi pencerelerden içeriye uzun, ince gölgeler düşürerek bu duvarların içinde yaşanan suça hiç uymayan huzurlu bir manzara oluşturuyordu. Holmes, sanki sadece kendisinin duyabildiği gizli bir konuşmayı dinliyormuş gibi başı hafifçe eğik, büyük bir kararlılıkla ilerliyordu. Merdiven boşluğunun önünde durdu ve üç öğrencinin kaldığı odalara doğru baktı. Sadece merdivenlere bakmıyor, aynı zamanda birinin hocanın odası ile yukarıdaki katlar arasında yürümesi için geçecek mesafeyi ve süreyi analiz ediyordu. Arkadaşım zihninde açıkça bir zaman çizelgesi oluşturuyor, binada yaşayan başkaları tarafından fark edilmeden bir kişinin ne kadar hızlı hareket edebileceğini hesaplıyordu.",
+      "Merdivenleri tırmanırken, Holmes her sahanlıkta zemini incelemek için durakladı. Gizemli davetsiz misafir tarafından bırakılmış olabilecek küçük bir iz, bir ayak izi veya bir işaret arıyordu. Eğildi ve parmaklarını ahşap tırabzanın kenarında gezdirerek toz veya sıra dışı bir aşınma olup olmadığını kontrol etti. Ziyaretçinin odadan kaçarken çok aceleci davrandığından şüphelendiği belliydi. Bay Soames, Holmes'un düşüncelerini açıklamasını beklerken endişeyle nefes nefese arkamızdan geliyordu. Sürekli önemli bir ipucu bulup bulmadığımızı soruyordu ancak Holmes karşılığında sadece kibarca gülümsüyordu. Akıl yürütmedeki küçük bir hatanın bile bizi gerçek cevaptan çok uzaklaştırabileceğini bilerek, kesin kanıtlara ulaşana kadar teorilerini kendine saklamayı tercih ediyordu.",
+      "İkinci kata ulaştık ve öğrencilerin kapılarının önünde durduk. Holmes ahşap çerçeveleri ve kilitleri dikkatle inceledi. Kapılardan herhangi birinin yakın zamanda açılıp açılmadığını veya bir hasar belirtisi olup olmadığını anlamak istiyordu. Koridorun sessizliği ağırlaşıyordu; sadece dışarıdaki üniversite bahçelerinde öten kuşların uzak sesi duyuluyordu. Bir keşif anına çok yaklaştığımızı bildiğim için içimi bir heyecan kapladı. Holmes ceketinin cebinden küçük bir büyüteç çıkardı ve tekrar diz çöktü. Belirli bir kapının tabanına yakın bir yerde büyük ilgi çekici bir şey bulmuş gibi görünüyordu. Ses çıkarmadı ama sessizliği gizemin çözülmek üzere olduğunu anlamamı sağladı. Yavaşça ayağa kalktı ve bu garip bulmacanın son kısmıyla yüzleşmeye hazır bir şekilde şapkasını düzeltti.",
+      "Holmes, uzun boylu ve atletik bir öğrenci olan Gilchrist'in oturma odasına dikkatini verdi. Keskin gözleriyle her köşeyi inceleyerek, yumuşak ve dikkatli adımlarla odanın içinde yürüdü. Oda düzenliydi ancak Holmes, basit bir düzenden daha özel bir şey arıyordu. Cebinden küçük bir mezura çıkardı ve masa ile pencere arasındaki mesafeyi büyük bir titizlikle ölçmeye başladı. Soruşturmasının ciddiyetini hissederek onu sessizce izledim. Döşemelere, pencere pervazındaki toza ve masanın yanındaki ağır ahşap sandalyenin ayaklarına baktı. Odanın içinde daha önce bulunan kişinin hareketlerini yeniden yapılandırdığı açıktı. Her detay onun için önemliydi ve odadaki diğer herkes için görünmez kalan şeyleri görebiliyor gibiydi.",
+      "Birden Holmes diz çöktü ve kapının yakınındaki halının üzerinde bulunan küçük, koyu bir lekeyi işaret etti. Çıplak gözle görmek neredeyse imkansızdı ancak büyüteç onu net bir şekilde ortaya çıkardı. İfadesi ciddileşip tatmin olurken, ona uzun süre baktı. Tek bir kelime etmedi ama bizi koridora geri takip etmemiz için işaret verdi. Sınav kağıtlarının bırakıldığı masaya yürüdük. Holmes, sesi alçak ve sabit bir tonda, bulgularını açıklamaya başladı. Davetsiz misafirin izlerini gizlemek için ne kadar hızlı ve dikkatli olması gerektiğini anlattı. Hırsızın, öğretmenin yokluğunda odada birkaç dakikadan fazla kalmadan sayfalardaki metni kopyalamak için özel bir alet veya belki basit bir hile kullandığı açıktı.",
+      "Masadaki şüpheli eşyalara baktım ve gerçeğin ağırlığının üzerime çökmeye başladığını hissettim. Holmes artık kopya çeken öğrencinin kimliği konusunda emindi. Kapının yanında solgun ve endişeli bir yüzle duran ve nihai kararı bekleyen Soames'e baktı. Gizem artık rastgele olaylardan oluşan bir bulmaca değil, hırs ve kötü seçimlerin açık bir hikayesiydi. Holmes, davetsiz misafirin masanın üzerinde, atletizm pistinde bulunan malzeme ile eşleşen küçük bir parça siyah kil bıraktığını açıkladı. Bu, suçu üç öğrenciden birine bağlamak için ihtiyacımız olan son delildi. Sessiz odadaki herkes için durumun soğuk gerçeği netleşirken, öğrenciyle yüzleşmeye hazırlandık.",
+      "Holmes, Soames'e dönerek genç öğrenci Gilchrist'i gerçeği yüzüne vurmak üzere odaya getirmesini önerdi. Uzun boylu atlet odaya girdiğinde yüzü, içinde hissettiği derin utancı yansıtarak solgundu. Holmes'e baktı ve dedektifin sırrını keşfettiğini anladı. Holmes sakin ve sabit bir sesle bulduğu her şeyi açıkladı. Gilchrist'in odanın dışındaki pencere pervazında durarak özel öğretmeni izlediğini ve girmek için doğru anı beklediğini anlattı. Masadaki kil, o günün erken saatlerinde antrenman sahasındaki varlığının doğrudan bir sonucuydu. Gilchrist hırsız olmayı amaçlamamıştı, ancak sınav kağıtlarını diğerlerinden önce görme dürtüsü, karşı koyamayacağı kadar güçlüydü. Geleceğinin artık büyük bir risk altında olduğunu fark ettiğinde titriyordu.",
+      "Genç adam yaptıklarını inkar etmeye çalışmadı. Bunun yerine cebine uzandı ve sınavın kopyalanmış metnini içeren küçük, katlanmış bir kağıt çıkardı. Gözlerinde yaşlarla içinde bulunduğu çaresiz durumu ve zihnindeki ani zayıflığı açıkladı. Bize sömürge görevine atanma teklifi aldığını, ancak ailesine değerini kanıtlamak için bu sınavı geçmesi gerektiğini hissettiğini söyledi. Soames, itirafı dinlerken hem şok hem de üzüntü dolu bir ifadeyle sessizce orada durdu. Bu kadar gelecek vaat eden bir öğrenci için trajik bir andı. Holmes pencerenin yanında durdu, bakışlarını dışarıdaki avluya sabitledi ve genç adamın pişmanlığını ifade etmesine izin verdi. Sanki duvarlar, nihayet bize açılan ağır sırrın yükü altındaymış gibi oda çok ağır hissettiriyordu.",
+      "İtiraf bittikten sonra Holmes, Soames'e son bir öneride bulundu. Özel öğretmene, öğrenciye hatasını düzeltmesi için bir şans vermesini tavsiye etti. Gilchrist, üniversitedeki yerinden vazgeçmeye ve kendisine teklif edilen sömürge görevini kabul etmeye karar vererek, yaptıklarının utancını geride bıraktı. Bu yol, arkadaşlarının yargılayıcı bakışlarından uzakta, hayatına yeni bir yerde yeniden başlamasına olanak tanıdı. Soames, okulun itibarını korumak için konuyu sessizce halletmeyi kabul etti. Güneş sessiz kampüsün üzerinde batarken eski taş binalardan uzaklaştık. Arkadaşım Holmes, keskin zekası ve insan doğasını derinlemesine anlaması sayesinde genç bir adamın geleceğini kurtarmış olmaktan memnun görünüyordu. Üç öğrencinin gizemi sonunda çözülmüş ve adalet merhametle yerini bulmuştu."
+    ],
+    words: {
+      "scholarship": "burs",
+      "tutor": "özel eğitmen veya öğretim görevlisi",
+      "cheat": "kopya çekmek",
+      "butler": "kâhya",
+      "prestigious": "saygın, itibarlı",
+      "magnifying glass": "büyüteç",
+      "investigation": "soruşturma",
+      "anxiety": "endişe",
+      "evidence": "delil",
+      "tweezers": "cımbız",
+      "satisfaction": "memnuniyet",
+      "access": "erişim",
+      "reside": "ikamet etmek",
+      "intruder": "davetsiz misafir",
+      "railing": "tırabzan",
+      "anticipation": "beklenti",
+      "confront": "yüzleşmek",
+      "precision": "kesinlik",
+      "ambition": "hırs",
+      "athlete": "atlet",
+      "temptation": "cazibe veya nefsine yenik düşme",
+      "confession": "itiraf",
+      "burdened": "yüklenmiş",
+      "reputation": "itibar",
+      "mercy": "merhamet"
+    }
+  },
+      {
+    id: 'detective_doom_griffiths',
+    title: "The Doom of the Griffiths",
+    author: 'Elizabeth Gaskell',
+    level: 'B1',
+    coverUrl: '/covers/detective_doom_griffiths.webp',
+    en: [
+      "In the wild mountains of North Wales, there stood an old, dark house called Griffith. It was a place where silence lived, and where the mountain shadows were always long and cold. My mother, Agnes, often told me stories of this place when I was a young boy. She was born in a valley near Griffith, and she remembered the family who lived there well. The Griffiths were an ancient family, proud and mysterious, and they believed in a terrible legend about their own house. They said that a shadow would follow their sons, bringing misfortune and sadness to everyone who shared their blood. For many years, people in the village avoided the house, fearing the strange history that haunted its stone walls. My mother always spoke of the family with a mix of deep pity and fear, warning me that some things in this world are best left undisturbed.",
+      "The head of the family was a man named Owen Griffith. He was a stern man who rarely smiled, and his heart seemed as hard as the grey rocks surrounding his home. He had one son, a gentle boy named Edward, who was nothing like his father. Edward loved the beauty of the hills and the song of the mountain streams, finding joy in nature instead of in the heavy responsibilities of his family name. However, the shadow of the Griffith legend was always near. As Edward grew older, the local people noticed that he began to change. His bright eyes became cloudy, and he often walked alone near the dangerous cliffs at night. My mother believed that Edward could feel the weight of his ancestors pushing him toward a path of suffering. It was a lonely life for a boy surrounded by ghosts of the past and a father who refused to speak of love.",
+      "One rainy evening, my mother sat by the fire and told me about the fateful meeting between young Edward and a girl from the village. She was a kind, beautiful woman named Margaret, who brought a small spark of light into the dark Griffith household. When Edward met her, he finally felt a moment of true happiness after years of isolation. They spent many hours walking through the quiet woods, hidden away from his father’s cold gaze. But the legends of Griffith were not easily broken by love alone. The villagers whispered that the curse was waking up, waiting for the right moment to strike again. My mother saw the worry in Margaret’s eyes and knew that the peace they had found was only temporary. The mountains seemed to grow taller and more threatening, as if they knew that the story of the Griffiths was moving quickly toward its tragic and inevitable conclusion.",
+      "Owen Griffith was not a man to accept change or happiness easily, and the growing bond between his son and the gentle girl from the valley filled him with suspicion. He watched them from the high, narrow windows of his stone house, his eyes cold as the winter ice. To him, Edward’s sudden joy was a weakness that threatened the proud name of the Griffiths. He believed that no son of his should find comfort in the simple life of a villager, especially not with a girl who had no ancient blood or land to offer. He began to restrict Edward’s movements, ordering him to remain within the walls of the estate during the long evenings. The air inside the house grew heavy, charged with the unspoken anger of a father who saw his authority slipping away. Edward felt the walls closing in, yet his heart remained tied to Margaret.",
+      "Despite his father’s strict commands, Edward found ways to escape the suffocating presence of the Griffith home to meet Margaret in the secret glens. During these meetings, they spoke of a future far away from the dark mountains and the heavy curse that seemed to follow the family name. Margaret tried to comfort him, her soft voice acting as a shield against the harsh words of his father. However, the villagers often saw the young couple walking near the edge of the deep, jagged ravines where the shadows were longest. They whispered that the ancient doom was drawing closer, sensing that the fragile peace would not last. Even in their happiest moments, a sudden chill would pass through the air, and the birds would stop their singing, as if the landscape itself was holding its breath in anticipation of a final, terrible tragedy.",
+      "As the weeks passed, Owen Griffith’s temper reached a breaking point, and he finally forbade Edward from seeing the girl ever again. The house became a prison of silence, broken only by the sound of the wind howling through the cracks in the masonry. Edward grew pale and thin, his spirit crushed under the weight of his father’s cruel control. He walked the halls like a ghost, his mind trapped between his loyalty to his family and his burning love for Margaret. Meanwhile, the village people began to avoid the Griffith path entirely, fearing that the mountain itself might collapse under the pressure of such sorrow. They could see that the doom was no longer just a story; it was a living reality that would soon demand a heavy price from everyone connected to the old, stone house on the mountain.",
+      "The night was dark when Edward decided that he could endure his father's cruelty no longer. He slipped out of the cold stone house while the elder Griffith slept, his footsteps silent upon the damp mountain grass. The air felt heavy with the promise of a storm, and the wind began to moan through the trees like a warning from the past. He ran toward the valley, his heart beating fast, hoping to find Margaret and convince her to leave this cursed place forever. He believed that if they ran away together, they could escape the shadow that hung over his family name. Every shadow in the woods seemed to reach out for him, but he did not stop. He was determined to change his fate, thinking only of the woman he loved, who waited for him in the small, quiet cottage down below.",
+      "When Edward reached the edge of the deep gorge, he saw a figure waiting for him under the moonlight. It was not Margaret, but his father, standing still as a statue of stone. Owen Griffith looked at his son with eyes full of anger, his face twisted by years of bitterness and old grudges. He told Edward that he had followed him, watching every step he took through the dark, treacherous landscape. There was no escape for the young man, as his father had blocked the path to the valley. The old man spoke of the ancient curse that plagued their bloodline, claiming that no Griffith could ever be happy or free from their duty. The tension between them was so sharp that it felt like a knife cutting through the cold night air, and Edward realized that the time for running was over.",
+      "The argument that followed was filled with harsh words and painful memories. Owen insisted that Edward had dishonored their house by choosing a life with a common girl, while Edward fought back with the desperate truth of his feelings. He declared that he cared nothing for the pride or the history of his name, only for the simple joy that Margaret had brought into his life. His father laughed, a sound that lacked all kindness, and told him that the doom of the Griffiths was not something that could be escaped by love. As they stood on the edge of the cliff, the ground under their feet shook with a sudden, violent movement. Rocks began to fall into the deep, dark emptiness below, and Edward felt the earth give way beneath him, dragging him toward the edge of the dangerous mountain path.",
+      "The world seemed to lose its solid shape as the ground crumbled under their feet. Edward threw his arms out, trying to grab onto anything that might save him from the dark fall. His father, Owen, also slipped, his face changing from a mask of cold fury to one of pure, sudden terror. The curse that had hung over their family for generations appeared to be claiming its final price at that very moment. They were high above the rushing water, caught in a desperate struggle between the earth and the empty air. Edward screamed as he felt the rocks pull away, his fingers scraping against the dry, hard dirt of the cliffside. The moon hid behind a thick cloud, leaving them in a darkness that felt as deep and heavy as the tragedy itself. There was no sound now except for the wind and the falling stones.",
+      "Below them, the river roared against the sharp rocks like a hungry beast waiting for its meal. Owen reached for his son, not out of love, but perhaps out of a last, instinctive desire to hold onto his own life. Their hands touched for a second, a fleeting connection that felt more like a fight than a rescue. Edward saw the reflection of the moonlight in his father's wide, desperate eyes before they both tumbled into the shadows. The air whistled around them as they descended toward the cold, unforgiving water. In those last moments, the long history of the Griffiths, with all its sorrow and bitterness, felt small compared to the sudden reality of death. Edward realized that the life he wanted with Margaret was slipping away into the blackness of the gorge, forever out of his reach and his control.",
+      "The water was freezing and hit them with the force of a falling wall, pulling them deep into the churning currents. Edward fought against the waves, his lungs burning as he tried to find the surface in the dark. He caught a glimpse of a wooden branch floating near him and grabbed it with all the strength he had left. His father, however, was nowhere to be seen in the swirling foam of the river. The current was incredibly fast and pulled everything toward the mouth of the valley where the stream grew wider and quieter. Exhausted and shaking from the icy temperature, Edward finally pulled himself onto a muddy bank. He lay there, gasping for breath, listening to the lonely sound of the water. He was alive, but the weight of the night remained heavy on his tired soul, marking the end of his old life.",
+      "The silence that followed the crash was broken only by the rhythmic pulse of the river against the stones. Edward dragged his heavy, broken body away from the water, his clothes wet and heavy like lead. He felt a deep, hollow ache in his heart, realizing that his father had been swept away into the unknown depths. The dark curse that had defined their family history for so long had finally exacted its payment, leaving him alone in the damp night. He looked up at the sky, where the clouds were slowly moving to reveal the stars once more. The air felt colder than before, stinging his skin, but he did not care. He knew that the cycle of violence and shadows had come to a final, tragic stop here on the muddy shore of the river, leaving him to face a new, lonely existence.",
+      "Hours passed as Edward lay in a state of exhaustion, his mind unable to fully process the horror of the night. He thought of Margaret, the only light that had ever brightened the dark corners of his life. She was somewhere far away, unaware that the chain of suffering holding the Griffiths family had been broken forever. He felt a sudden, sharp clarity, understanding that he could never return to the house on the cliff as the person he used to be. The past was buried in the gorge, beneath the churning water that had taken his father and the last traces of his inheritance. He realized that survival carried its own burden; he would have to find a way to live with the memory of the disaster while searching for a path to a future that was no longer dictated by the ghosts of his ancestors.",
+      "As the first gray light of dawn touched the mountain peaks, Edward stood up on shaky legs. He walked slowly away from the river, leaving the memory of the struggle behind him in the mist. The world looked different now, stripped of the heavy atmosphere that had once surrounded his family home. He was a survivor, a man whose fate was finally in his own hands rather than governed by the old, bitter tales of his people. With each step he took toward the distant valley, he felt the heavy weight on his soul begin to lighten, though the scars of the night would always remain. The curse of the Griffiths was no longer a shadow over his head; he had walked through the darkness and into a new, uncertain day, ready at last to seek the peace he had dreamed of with Margaret."
+    ],
+    tr: [
+      "Kuzey Galler'in vahşi dağlarında, Griffith adında eski ve karanlık bir ev vardı. Burası sessizliğin hüküm sürdüğü, dağ gölgelerinin her zaman uzun ve soğuk olduğu bir yerdi. Annem Agnes, ben küçük bir çocukken bana sık sık bu yerin hikayelerini anlatırdı. Griffith yakınlarındaki bir vadide doğmuştu ve orada yaşayan aileyi çok iyi hatırlıyordu. Griffith ailesi, gururlu ve gizemli, kadim bir aileydi ve kendi evleri hakkında korkunç bir efsaneye inanıyorlardı. Bir gölgenin oğullarını takip edeceğini ve kanlarını taşıyan herkese mutsuzluk ve hüzün getireceğini söylerlerdi. Uzun yıllar boyunca köylüler, taş duvarlarına sinmiş garip tarihten korkarak evden uzak durdular. Annem aileden her zaman derin bir acıma ve korku karışımıyla bahseder, dünyadaki bazı şeylerin rahatsız edilmeden bırakılmasının daha iyi olduğu konusunda beni uyarırdı.",
+      "Ailenin reisi Owen Griffith adında bir adamdı. Nadiren gülümseyen, sert bir adamdı ve kalbi evini çevreleyen gri kayalar kadar katı görünüyordu. Babasına hiç benzemeyen Edward adında nazik bir oğlu vardı. Edward, ailesinin ağır sorumlulukları yerine doğada neşe bulan, tepelerin güzelliğini ve dağ derelerinin şarkısını seven bir çocuktu. Yine de Griffith efsanesinin gölgesi her zaman yakındaydı. Edward büyüdükçe yerli halk onun değişmeye başladığını fark etti. Parlak gözleri bulutlandı ve sık sık geceleri tehlikeli kayalıkların yakınında tek başına yürürdü. Annem, Edward'ın atalarının ağırlığının onu acı dolu bir yola doğru ittiğini hissettiğine inanırdı. Geçmişin hayaletleri ve sevgiden bahsetmeyi reddeden bir baba ile çevrili bir çocuk için bu çok yalnız bir hayattı.",
+      "Yağmurlu bir akşam, annem ateşin başında otururken bana genç Edward ile köyden bir kız arasındaki o kader karşılaşmasını anlattı. Margaret adında, karanlık Griffith evine küçük bir ışık kıvılcımı getiren nazik ve güzel bir kadındı. Edward onunla tanıştığında, yıllar süren yalnızlığından sonra ilk kez gerçek bir mutluluk hissetti. Babasının soğuk bakışlarından uzakta, sessiz ormanlarda yürüyerek saatler geçirdiler. Fakat Griffith efsaneleri sadece sevgiyle kolayca yıkılamazdı. Köylüler lanetin uyandığını ve tekrar saldırmak için doğru zamanı beklediğini fısıldıyorlardı. Annem, Margaret'ın gözlerindeki endişeyi gördü ve buldukları huzurun sadece geçici olduğunu biliyordu. Dağlar sanki Griffith'lerin hikayesinin trajik ve kaçınılmaz sonuna doğru hızla ilerlediğini biliyormuş gibi daha uzun ve tehditkar görünüyordu.",
+      "Owen Griffith değişimi veya mutluluğu kolayca kabul eden bir adam değildi ve oğluyla vadiden gelen nazik kız arasındaki büyüyen bağ, onu şüpheyle dolduruyordu. Onları taş evinin yüksek ve dar pencerelerinden, kış buzu kadar soğuk gözlerle izliyordu. Ona göre, Edward'ın ani neşesi Griffithlerin gururlu adına zarar veren bir zayıflıktı. Kendi oğlunun, özellikle eski bir kana veya toprağa sahip olmayan bir köylü kızıyla, sıradan bir hayatta huzur bulmaması gerektiğine inanıyordu. Edward'ın hareketlerini kısıtlamaya başladı ve uzun akşamlar boyunca malikanenin duvarları içinde kalmasını emretti. Evin içindeki hava, otoritesinin elinden kayıp gittiğini gören bir babanın dile getirilmemiş öfkesiyle ağırlaştı. Edward duvarların üzerine kapandığını hissetse de kalbi Margaret'a bağlı kalmaya devam etti.",
+      "Babasının katı emirlerine rağmen Edward, Griffith evinin boğucu varlığından kaçıp gizli vadilerde Margaret ile buluşmanın yollarını buldu. Bu buluşmalar sırasında, karanlık dağlardan ve aile ismini takip eden ağır lanetten çok uzak bir gelecekten bahsettiler. Margaret, yumuşak sesiyle babasının sert sözlerine karşı bir kalkan görevi görerek onu teselli etmeye çalıştı. Ancak köylüler, genç çifti sık sık gölgelerin en uzun olduğu derin ve pürüzlü uçurumların kenarında yürürken görüyorlardı. Kadim felaketin yaklaştığını fısıldıyor ve kırılgan huzurun sürmeyeceğini hissediyorlardı. En mutlu anlarında bile havada aniden soğuk bir esinti oluyor ve kuşlar, sanki manzaranın kendisi nihai ve korkunç bir trajediyi beklerken nefesini tutuyormuş gibi şarkı söylemeyi bırakıyorlardı.",
+      "Haftalar geçtikçe Owen Griffith'in öfkesi kırılma noktasına ulaştı ve sonunda Edward'ın kızı bir daha görmesini yasakladı. Ev, duvarlardaki çatlaklardan uğuldayarak esen rüzgarın sesi dışında, sessizliğin hüküm sürdüğü bir hapishaneye dönüştü. Edward babasının zalim kontrolü altında ruhu ezilmiş bir şekilde solgunlaştı ve zayıfladı. Koridorlarda bir hayalet gibi dolaşıyor, aklı ailesine olan bağlılığı ile Margaret'a duyduğu yakıcı aşk arasında sıkışıp kalıyordu. Bu arada köy halkı, dağın kendisinin böylesine büyük bir kederin baskısı altında çökebileceğinden korkarak Griffith yolundan tamamen kaçınmaya başladı. Felaketin artık sadece bir hikaye olmadığını; dağdaki eski taş evle bağlantılı herkesten ağır bir bedel talep edecek canlı bir gerçeklik olduğunu görebiliyorlardı.",
+      "Edward babasının zalimliğine daha fazla katlanamayacağına karar verdiğinde gece karanlıktı. Yaşlı Griffith uyurken soğuk taş evden dışarı süzüldü, adımları nemli dağ otlarının üzerinde sessizdi. Hava bir fırtınanın habercisi gibi ağırlaşmıştı ve rüzgar, geçmişten gelen bir uyarı gibi ağaçların arasından inlemeye başlamıştı. Kalbi hızla çarparak vadiye doğru koştu, Margaret'i bulup onu bu lanetli yeri sonsuza dek terk etmeye ikna etmeyi umuyordu. Birlikte kaçarlarsa, aile isminin üzerinde asılı duran gölgeden kurtulabileceklerine inanıyordu. Ormandaki her gölge ona uzanıyor gibiydi ama durmadı. Aşağıdaki küçük, sessiz kulübede onu bekleyen sevdiği kadından başka bir şey düşünmeyerek kaderini değiştirmeye kararlıydı.",
+      "Edward derin uçurumun kenarına ulaştığında, ay ışığının altında onu bekleyen bir silüet gördü. Bu Margaret değil, taştan bir heykel gibi hareketsiz duran babasıydı. Owen Griffith oğluna öfke dolu gözlerle baktı, yüzü yılların getirdiği acılık ve eski kinle çarpılmıştı. Edward'a onu takip ettiğini, karanlık ve tehlikeli arazide attığı her adımı izlediğini söyledi. Babası vadiye giden yolu kapattığı için genç adamın kaçacak yeri yoktu. Yaşlı adam, hiçbir Griffith'in asla mutlu olamayacağını veya görevinden kurtulamayacağını iddia ederek soylarını rahatsız eden kadim lanetten bahsetti. Aralarındaki gerilim soğuk gece havasını kesen bir bıçak gibiydi ve Edward kaçma zamanının bittiğini fark etti.",
+      "Bunu takip eden tartışma sert sözlerle ve acı dolu hatıralarla doluydu. Owen, Edward'ın sıradan bir kızla hayatı seçerek evlerini onursuzlaştırdığını iddia ederken, Edward duygularının çaresiz gerçeğiyle karşılık verdi. Ailesinin gururunu veya tarihini umursamadığını, sadece Margaret'in hayatına getirdiği basit neşeyi önemsediğini ilan etti. Babası, nezaketten yoksun bir sesle güldü ve ona Griffith'lerin felaketinin aşkla kaçılabilecek bir şey olmadığını söyledi. Uçurumun kenarında durduklarında, ayaklarının altındaki zemin ani ve şiddetli bir hareketle sarsıldı. Kayalar aşağıdaki derin, karanlık boşluğa düşmeye başladı ve Edward toprağın altında kaydığını, kendisini tehlikeli dağ yolunun kenarına doğru sürüklediğini hissetti.",
+      "Zemin ayaklarının altında parçalanırken dünya sağlam şeklini kaybediyor gibiydi. Edward, karanlık düşüşten kendini kurtarabilecek herhangi bir şeye tutunmaya çalışarak kollarını iki yana açtı. Babası Owen da ayağı kayarak düştü ve yüzü soğuk öfke maskesinden saf, ani bir dehşet ifadesine büründü. Nesillerdir ailelerinin üzerinde asılı duran lanet, tam o anda son bedelini alıyor gibi görünüyordu. Hızla akan suyun çok yukarısındaydılar, toprak ile boşluk arasında umutsuz bir mücadelenin içine yakalanmışlardı. Kayaların çekildiğini hissettiğinde Edward çığlık attı, parmakları uçurumun kuru ve sert toprağını tırmalıyordu. Ay, kalın bir bulutun ardına saklandı ve onları trajedinin kendisi kadar derin ve ağır bir karanlıkta bıraktı. Şimdi rüzgârın ve düşen taşların sesi dışında hiçbir ses duyulmuyordu.",
+      "Aşağılarında nehir, yemeğini bekleyen aç bir canavar gibi keskin kayalara çarpıyordu. Owen, sevgiyle değil, belki de kendi hayatına tutunma yönündeki son içgüdüsel arzuyla oğluna uzandı. Elleri bir saniyeliğine birbirine değdi; bu, kurtarmadan çok kavgaya benzeyen kısa bir bağlantıydı. Edward, ikisi de gölgelerin içine yuvarlanmadan önce babasının kocaman açılmış, çaresiz gözlerinde ay ışığının yansımasını gördü. Soğuk ve affetmez suya doğru alçalırken hava etraflarında ıslık çalıyordu. O son anlarda, Griffiths ailesinin tüm kederi ve acısıyla dolu uzun geçmişi, ölümün ani gerçekliği karşısında önemsiz görünüyordu. Edward, Margaret ile istediği hayatın, sonsuza dek ulaşamayacağı ve kontrol edemeyeceği vadi karanlığının içine kayıp gittiğini anladı.",
+      "Su buz gibiydi ve düşen bir duvarın gücüyle onlara çarparak onları çalkantılı akıntıların derinliklerine çekti. Edward dalgalara karşı savaştı, karanlıkta yüzeye çıkmaya çalışırken ciğerleri yanıyordu. Yanında yüzen ağaç bir dal gördü ve kalan tüm gücüyle ona tutundu. Ancak babası nehrin köpüren sularında görünmüyordu. Akıntı inanılmaz derecede hızlıydı ve her şeyi akarsuyun genişleyip sakinleştiği vadi ağzına doğru sürüklüyordu. Buz gibi soğuktan yorgun düşmüş ve titreyen Edward, sonunda kendini çamurlu bir kıyıya çekti. Orada, nefes nefese, suyun yalnız sesini dinleyerek yattı. Hayattaydı ama gecenin ağırlığı yorgun ruhunun üzerinde ağır bir şekilde kalmaya devam ediyor ve eski hayatının sona erdiğini müjdeliyordu.",
+      "Çöküşten sonra gelen sessizlik, yalnızca nehrin taşlara vuran ritmik nabzıyla bozuluyordu. Edward ağır, yorgun vücudunu sudan uzağa, kurşun gibi ıslak ve ağır giysileriyle sürükledi. Kalbinde derin ve boş bir sızı hissediyor, babasının bilinmeyen derinliklere sürüklenip gittiğini anlıyordu. Aile geçmişlerini çok uzun süredir tanımlayan o karanlık lanet nihayet bedelini ödetmiş, onu nemli gecede yapayalnız bırakmıştı. Gökyüzüne baktı; bulutlar yavaşça hareket ederek yıldızları yeniden ortaya çıkarıyordu. Hava eskisinden daha soğuktu, cildini yakıyordu ama umursamadı. Şiddet ve gölge döngüsünün, nehrin çamurlu kıyısında nihai ve trajik bir duraklamaya geldiğini, onu yeni ve yalnız bir varoluşla baş başa bıraktığını biliyordu.",
+      "Edward bir tükenmişlik hali içinde yatarken saatler geçti; zihni gecenin dehşetini tam olarak kavrayamıyordu. Hayatının karanlık köşelerini aydınlatan tek ışık olan Margaret'i düşündü. O çok uzaklarda bir yerdeydi ve Griffiths ailesini tutan o acı zincirinin sonsuza dek kırıldığından habersizdi. Aniden keskin bir berraklık hissetti; uçurumdaki o eve, eskiden olduğu kişi olarak asla dönemeyeceğini anladı. Geçmiş, babasını ve mirasından geriye kalan son izleri alıp götüren o çalkantılı suyun altında, vadide gömülüydü. Hayatta kalmanın kendi yükünü getirdiğini fark etti; artık atalarının hayaletlerinin yönetmediği bir geleceğe giden yolu ararken, felaketin anısıyla yaşamayı öğrenmesi gerekecekti.",
+      "Şafağın ilk gri ışığı dağ tepelerine dokunduğunda, Edward titreyen bacakları üzerinde ayağa kalktı. Mücadeleden kalan hatıraları sisin içinde arkasında bırakarak nehirden yavaşça uzaklaştı. Dünya artık farklı görünüyordu; bir zamanlar aile evini çevreleyen o ağır atmosferden arınmıştı. O artık bir hayatta kalandı; kaderi atalarının o acı hikayeleri tarafından değil, kendi ellerinde olan bir adamdı. Uzak vadiye doğru attığı her adımda ruhundaki ağır yükün hafiflemeye başladığını hissediyordu, ancak gecenin izleri hep kalacaktı. Griffiths'in laneti artık üzerinde bir gölge değildi; karanlığın içinden geçip yeni ve belirsiz bir güne adım atmıştı, Margaret ile hayalini kurduğu huzuru nihayet aramaya hazırdı."
+    ],
+    words: {
+      "misfortune": "talihsizlik",
+      "haunt": "musallat olmak",
+      "stern": "sert",
+      "ancestor": "ata",
+      "fateful": "kaderi belirleyen",
+      "inevitable": "kaçınılmaz",
+      "suspicion": "şüphe",
+      "authority": "otorite",
+      "suffocating": "boğucu",
+      "jagged": "pürüzlü",
+      "anticipation": "beklenti",
+      "masonry": "duvar işçiliği",
+      "endure": "katlanmak",
+      "treacherous": "tehlikeli",
+      "bitterness": "acılık/kin",
+      "bloodline": "soy",
+      "dishonor": "onursuzlaştırmak",
+      "emptiness": "boşluk",
+      "crumble": "ufalanmak, parçalanıp dökülmek",
+      "fury": "öfke, hiddet",
+      "instinctive": "içgüdüsel",
+      "descend": "alçalmak, aşağı inmek",
+      "churning": "çalkalanan, kaynayan",
+      "exhausted": "yorgun düşmüş, bitkin",
+      "rhythmic": "ritmik",
+      "exhaustion": "tükenmişlik",
+      "inheritance": "miras",
+      "burden": "yük",
+      "survivor": "hayatta kalan"
+    }
+  },
+      {
+    id: 'detective_moonstone_investigation',
+    title: "The Moonstone - The Investigation",
+    author: 'Wilkie Collins',
+    level: 'B1',
+    coverUrl: '/covers/detective_moonstone_investigation.webp',
+    en: [
+      "The house was quiet, and the Moonstone sat safely in Rachel Verinder’s room. It was her eighteenth birthday, and the famous yellow diamond had arrived as a gift from her uncle. I am Gabriel Betteredge, the house steward, and I have served the Verinder family for many years. Everyone felt a strange tension in the air that day. Three mysterious Indian men had been seen watching the house, and their presence made us all feel uneasy. They were looking for the diamond, a jewel taken from their sacred temple long ago. I watched the guests arrive for the party, but my eyes often turned to the window. I felt that something bad was going to happen soon. The diamond was beautiful, but it seemed to bring a dark cloud over our peaceful home. We did not know that our lives were about to change forever because of this single, shiny stone.",
+      "During the party, the atmosphere was thick with nervousness. The diamond was displayed, and everyone admired its brilliant glow. However, the presence of the three Indians in the village continued to worry me. I spoke to the local police officer, Superintendent Seegrave, who arrived to investigate the situation. He was a proud man who believed he could solve any mystery quickly. He questioned the servants and looked at every corner of the house, but he found nothing strange. Rachel kept the diamond in her cabinet, locking it carefully every night. She trusted the lock, but I wondered if a simple piece of metal could protect us from such powerful forces. The guests finally left, and the house fell into a deep silence. We all went to bed, hoping for a peaceful night, but the quiet was just a mask for the trouble that waited for us in the shadows of the night.",
+      "When the morning sun rose, the world turned upside down. A terrible scream echoed through the halls of the house. I ran to the hallway and saw Rachel’s maid, Penelope, looking pale and frightened. The cabinet in Rachel’s room was open, and the diamond was gone. My heart stopped beating for a second. The Moonstone had vanished into thin air. Superintendent Seegrave arrived immediately to start his official investigation. He searched the room with great detail, finding nothing but a smear of wet paint on the door. It was a clue, but we did not know what it meant yet. Everyone in the house became a suspect. Suspicion filled the rooms where laughter had been only hours before. The investigation was not just about finding a stolen item anymore; it was about finding the truth among people we thought we knew very well.",
+      "Superintendent Seegrave stood in the center of the room with a look of extreme self-importance on his face. He believed that the smudge of paint on the door was the most significant clue he had ever encountered in his long career. He paced back and forth, examining the floorboards and the furniture with a magnifying glass. Rachel watched him with eyes full of tears and frustration, refusing to speak a single word about the missing stone. The house was no longer a place of joy but a prison of suspicion where every servant looked at the other with doubt. Seegrave dismissed my concerns about the Indian men, insisting that the thief was someone currently living within our walls. He demanded that every member of the household present themselves for questioning, as if we were all common criminals caught in the act of a terrible crime.",
+      "The questioning began in the library, a room that usually felt warm and welcoming but now felt cold and judgmental. Seegrave interrogated the maids, the cook, and the footmen with a harsh tone that made everyone tremble with fear. I stood by the door, listening to the confusion of the staff as they tried to explain their movements during the night. None of them could offer an alibi that satisfied the suspicious mind of the police officer. I felt a heavy weight in my chest because I knew these people well; they were honest workers who had served the Verinder family with loyalty for many years. It was impossible to believe that one of them had stolen the Moonstone, yet the evidence of the wet paint remained a confusing mystery that pointed toward an internal betrayal that I simply could not comprehend or accept.",
+      "As the afternoon wore on, the tension in the house grew stronger than ever before. Seegrave finally turned his cold gaze toward me, asking questions that felt like small, sharp needles poking at my integrity. I answered him clearly, but he seemed to think I was hiding something important. Rachel remained in her room, locked away from the world, and her mother was overcome with grief. The mystery of the diamond was beginning to pull the family apart, creating cracks in relationships that had been strong for generations. I walked out into the garden to clear my mind, looking at the distant trees and wondering if the truth was hidden somewhere in the shadows. The wind whispered secrets I could not understand, and I knew that the investigation was only beginning to scratch the surface of a much darker and more complicated history.",
+      "I stood in the garden, feeling the cool breeze against my tired face while the sun began to set behind the trees. The house felt like a tomb, filled with secrets and heavy silence that weighed upon my soul. Superintendent Seegrave was still inside, acting with arrogance as he accused the servants of things they had never done. I knew in my heart that the police were on the wrong path, yet I felt powerless to stop their foolish actions. The diamond was a cursed object, and its presence in our home had turned love into suspicion overnight. I watched a bird fly high above the garden wall, wishing I could leave this mess behind and return to a time when our family was truly happy. Everything had changed, and the bright light of the Moonstone seemed to have brought only darkness into our quiet lives.",
+      "My thoughts were interrupted by the arrival of Sergeant Cuff, a man with a very different reputation from the loud and clumsy Seegrave. He was thin, gray-haired, and had a sharp, intelligent look in his eyes that suggested he saw things others missed. He did not rush into the house with shouts or demands; instead, he walked calmly through the garden, observing the flowers and the soft ground with great care. He greeted me with a polite nod, his face showing a quiet confidence that was immediately comforting. He possessed a stillness that the police superintendent completely lacked, and I felt a strange spark of hope. Perhaps this man could see the truth that was hidden behind the lies and the fear. I led him toward the front door, feeling that the real investigation was finally about to begin in earnest.",
+      "When we entered the library, the atmosphere shifted as the Sergeant began his work without wasting a single moment. He looked at the floor where the paint smudge remained, but he did not speak immediately. He studied the scene like a painter looking at a portrait, his eyes moving from the door to the window and then to the small details of the room. Seegrave looked angry to see a superior officer, but Cuff ignored him completely and focused only on the facts. He noticed the tiny marks on the paint that everyone else had ignored, his fingers tracing the wood with gentle precision. He had a way of making the room tell its own story without asking a single question. I watched him closely, sensing that the mystery of the stolen Moonstone might soon find a solution in the hands of this wise and experienced detective.",
+      "Sergeant Cuff turned his attention away from the paint smudge and walked steadily toward the door leading to the garden. He asked me to show him the exact place where the diamond was last seen. I led him to the boudoir, where Rachel had placed the gemstone on the table just before she went to bed. The Sergeant examined the room with a focused intensity that made the very air feel heavy with expectation. He looked closely at the open window and the wet paint on the ledge. He did not speak a word, but his eyes told me he was piecing together a story that nobody else could see. It was clear that he did not believe the thief had simply broken in from the outside. He walked slowly around the table, his movements deliberate and calm, observing every shadow and corner for hidden clues.",
+      "Suddenly, he stopped by the window and pointed to a faint mark on the white paint. It was not a footprint, but something far smaller and more unusual. He told me that this investigation would require patience and a deep understanding of human nature. He asked about the habits of the servants and the recent visitors to the house. I answered his questions as honestly as I could, feeling a sense of unease. He asked if Rachel had spoken to anyone about the diamond before it vanished. His questions were sharp and direct, cutting through the confusion of the past few days. I began to realize that the Sergeant was not just looking for a thief, but looking for the motive behind the crime itself. Every word he spoke seemed to carry the weight of a secret truth waiting to be told.",
+      "As the afternoon wore on, Sergeant Cuff requested a meeting with Rosanna Spearman. She was a quiet, troubled girl who had worked in the house for some time. I felt nervous about this request because I knew Rosanna was not like the other servants. She kept to herself and often looked as if she were hiding a heavy burden in her heart. Cuff seemed to understand this, for he spoke to her with a gentleness that surprised me. He asked her about her walks to the Shivering Sand, a dangerous part of the beach near our home. Rosanna turned pale and refused to meet his gaze. It was obvious that she knew more about the diamond than she dared to admit. The mystery grew deeper, and the shadow of the Moonstone seemed to pull us all into a web of dark and dangerous lies.",
+      "The final moments of the investigation arrived with a cold and unsettling clarity. Sergeant Cuff brought us all into the drawing room to reveal his ultimate conclusion regarding the stolen Moonstone. He explained that the thief was not a common criminal from the outside, but someone within our own household. The revelation sent a ripple of shock through the room. Rachel watched him with wide, fearful eyes, while the servants stood frozen in disbelief. Cuff pointed toward a tragic truth involving Franklin Blake and the influence of laudanum. It seemed that Franklin had taken the stone while in a deep sleep, moved by a hidden impulse he did not understand. The Sergeant spoke with calm authority, piece by piece, as he connected the events that led to that fateful night. He had searched for the truth not in the shadows of the garden, but in the complicated secrets of human hearts.",
+      "Rosanna Spearman was the key to this mystery, as she had seen Franklin hiding the stone in the Shivering Sand to protect him. Sadly, she was no longer here to explain her actions, as she had chosen to end her life rather than face the shame of her past. Cuff found her letter, which revealed her intense love for Franklin and her quiet sacrifice. The room felt suddenly empty as we processed the loss of such a troubled soul. Everything we had believed about the robbery was dismantled by these final facts. My own heart felt heavy with sorrow for the girl who had lived in the shadows and for the man who had lost his way. The Moonstone was eventually recovered, but the price paid by those in the house was far greater than any of us had initially imagined.",
+      "The mystery of the Moonstone finally came to an end, leaving us to reflect on the darkness that can hide within the most ordinary lives. Sergeant Cuff left the house, his duty completed and his reputation as a master investigator fully intact. He was a man who saw the world as a complex puzzle, yet he never lost sight of the human suffering that accompanied every crime. We were left to rebuild our lives, though the memory of that strange and difficult time would remain with us forever. As I look back upon those days, I understand that the diamond brought nothing but trouble and sorrow to everyone it touched. The investigation had stripped away our illusions and shown us that the truth is often much harder to accept than the lies we tell ourselves. We walked into the future, forever changed by the secrets of the past."
+    ],
+    tr: [
+      "Ev sessizdi ve Ay Taşı, Rachel Verinder'ın odasında güvenli bir şekilde duruyordu. On sekizinci yaş günüydü ve meşhur sarı elmas, amcasından hediye olarak gelmişti. Ben kahya Gabriel Betteredge, yıllardır Verinder ailesine hizmet ederim. O gün herkes havada garip bir gerginlik hissediyordu. Üç gizemli Hintli adamın evi gözlediği görülmüştü ve varlıkları hepimizi tedirgin ediyordu. Çok uzun zaman önce kutsal tapınaklarından çalınan bu elması arıyorlardı. Partiye gelen konukları izledim ama gözlerim sık sık pencereye kayıyordu. Yakında kötü bir şeyin olacağını hissediyordum. Elmas güzeldi ama huzurlu evimizin üzerine karanlık bir bulut çökmüş gibiydi. Sadece parlayan bu taş yüzünden hayatlarımızın sonsuza dek değişeceğini bilmiyorduk.",
+      "Parti sırasında atmosfer sinir bozukluğuyla yoğundu. Elmas sergilendi ve herkes onun parlak ışıltısına hayran kaldı. Yine de köydeki üç Hintlinin varlığı beni endişelendirmeye devam ediyordu. Durumu araştırması için gelen yerel polis memuru Müfettiş Seegrave ile konuştum. Her gizemi hemen çözebileceğine inanan gururlu bir adamdı. Hizmetçileri sorguladı ve evin her köşesine baktı ama tuhaf hiçbir şey bulamadı. Rachel elması dolabında tutuyor ve her gece dikkatle kilitliyordu. Kilide güveniyordu ama basit bir metal parçasının bizi böylesine güçlü kuvvetlerden koruyup koruyamayacağını merak ediyordum. Konuklar nihayet ayrıldı ve ev derin bir sessizliğe büründü. Hepimiz huzurlu bir gece umuduyla yatağa girdik ama sessizlik, gecenin gölgelerinde bizi bekleyen felaketin sadece bir maskesiydi.",
+      "Sabah güneşi doğduğunda dünya altüst oldu. Evin koridorlarında korkunç bir çığlık yankılandı. Koridora koştum ve Rachel'ın hizmetçisi Penelope'yi solgun ve korkmuş halde gördüm. Rachel'ın odasındaki dolap açıktı ve elmas gitmişti. Kalbim bir anlığına durdu. Ay Taşı havaya karışıp yok olmuştu. Müfettiş Seegrave resmi soruşturmayı başlatmak için hemen geldi. Odayı büyük bir titizlikle aradı ama kapıda ıslak boya lekesinden başka bir şey bulamadı. Bu bir ipucuydu ama henüz ne anlama geldiğini bilmiyorduk. Evdeki herkes şüpheli haline geldi. Birkaç saat önce kahkahaların yükseldiği odaları şüphe doldurdu. Soruşturma artık sadece çalınan bir eşyayı bulmakla ilgili değildi; çok iyi tanıdığımızı sandığımız insanlar arasında gerçeği bulmakla ilgiliydi.",
+      "Müfettiş Seegrave, yüzünde aşırı bir önemseme ifadesiyle odanın ortasında duruyordu. Kapıdaki boya lekesinin kariyeri boyunca karşılaştığı en önemli ipucu olduğuna inanıyordu. Bir büyüteçle yer döşemelerini ve mobilyaları inceleyerek bir ileri bir geri yürüdü. Rachel, gözleri yaş ve hayal kırıklığıyla dolu bir şekilde onu izliyor, kayıp taş hakkında tek bir kelime bile konuşmayı reddediyordu. Ev artık bir neşe yeri değil, her hizmetçinin diğerine şüpheyle baktığı bir güvensizlik hapishanesiydi. Seegrave, Hintli adamlarla ilgili endişelerimi reddederek hırsızın şu an duvarlarımızın içinde yaşayan biri olduğunu savundu. Sanki hepimiz korkunç bir suç işlerken yakalanmış sıradan suçlularmışız gibi, evdeki herkesin sorgulanmak üzere gelmesini emretti.",
+      "Sorgulama, genellikle sıcak ve davetkar olan ancak şimdi soğuk ve yargılayıcı hissettiren kütüphanede başladı. Seegrave hizmetçileri, aşçıyı ve uşakları herkesin korkudan titremesine neden olan sert bir tonla sorguladı. Kapının yanında durup, gece boyunca yaptıkları hareketleri açıklamaya çalışan personelin karmaşasını dinledim. Hiçbiri polis memurunun şüpheci zihnini tatmin edecek bir mazeret sunamadı. Göğsümde ağır bir yük hissettim çünkü bu insanları iyi tanıyordum; onlar Verinder ailesine uzun yıllar sadakatle hizmet etmiş dürüst çalışanlardı. İçlerinden birinin Aytaşı'nı çalmış olduğuna inanmak imkansızdı, ancak yaş boya kanıtı, kavrayamadığım veya kabul edemediğim bir iç ihanete işaret eden kafa karıştırıcı bir gizem olarak kaldı.",
+      "Öğleden sonra ilerledikçe evdeki gerilim her zamankinden daha güçlü hale geldi. Seegrave sonunda soğuk bakışlarını bana çevirdi ve dürüstlüğüme batan küçük, keskin iğneler gibi hissettiren sorular sordu. Ona açıkça cevap verdim ama önemli bir şeyi sakladığımı düşünüyor gibiydi. Rachel odasında dünyadan kendini soyutlamış bir şekilde kaldı ve annesi keder içindeydi. Elmasın gizemi aileyi birbirinden ayırmaya başladı ve nesiller boyu süren güçlü ilişkilerde çatlaklar yarattı. Zihnimi boşaltmak için bahçeye çıktım, uzak ağaçlara bakıp gerçeğin gölgelerde bir yerde saklı olup olmadığını merak ettim. Rüzgar anlayamadığım sırlar fısıldıyordu ve soruşturmanın çok daha karanlık ve karmaşık bir tarihin sadece yüzeyini kazımaya başladığını biliyordum.",
+      "Bahçede durmuş, güneş ağaçların arkasında batarken yorgun yüzüme vuran serin rüzgarı hissediyordum. Ev, ruhuma yük olan sırlar ve ağır bir sessizlikle dolu bir mezar gibiydi. Müfettiş Seegrave hala içerideydi, hizmetçileri hiç yapmadıkları şeylerle suçlayarak kibirle hareket ediyordu. Kalbimde polisin yanlış yolda olduğunu biliyordum ama aptalca hareketlerini durdurmak için kendimi güçsüz hissediyordum. Elmas lanetli bir nesneydi ve evimizdeki varlığı bir gecede sevgiyi şüpheye dönüştürmüştü. Bahçe duvarının üzerinde yüksekten uçan bir kuş izledim ve bu karmaşayı geride bırakıp ailemizin gerçekten mutlu olduğu zamanlara dönmeyi diledim. Her şey değişmişti ve Aytaşı'nın parlak ışığı sessiz hayatlarımıza sadece karanlık getirmiş gibi görünüyordu.",
+      "Düşüncelerim, gürültücü ve beceriksiz Seegrave'den çok farklı bir üne sahip olan Çavuş Cuff'ın gelişiyle bölündü. Zayıf, kır saçlı ve gözlerinde başkalarının kaçırdığı şeyleri gördüğünü düşündüren keskin, zeki bir bakış vardı. Eve bağırışlar veya taleplerle aceleyle girmedi; bunun yerine bahçede sakince yürüdü, çiçekleri ve yumuşak toprağı büyük bir özenle inceledi. Beni kibar bir baş selamıyla karşıladı, yüzünde hemen güven veren sessiz bir özgüven vardı. Polis müfettişinin tamamen yoksun olduğu bir dinginliğe sahipti ve içimde garip bir umut kıvılcımı hissettim. Belki bu adam yalanların ve korkunun ardına gizlenmiş gerçeği görebilirdi. Onu ön kapıya doğru yönlendirdim, gerçek soruşturmanın nihayet ciddi bir şekilde başlamak üzere olduğunu hissederek.",
+      "Kütüphaneye girdiğimizde, Çavuş tek bir an bile kaybetmeden işine başladığı için ortam değişti. Boya lekesinin kaldığı yere baktı ama hemen konuşmadı. Olay yerini bir portreye bakan ressam gibi inceledi; gözleri kapıdan pencereye ve ardından odanın küçük detaylarına kaydı. Seegrave üst bir rütbeliyi görmekten dolayı kızgındı ama Cuff onu tamamen görmezden geldi ve sadece gerçeklere odaklandı. Başkalarının görmezden geldiği boyadaki küçük izleri fark etti, parmakları ahşabı hassas bir dokunuşla takip ediyordu. Odaya tek bir soru sormadan kendi hikayesini anlattırma yöntemi vardı. Onu yakından izledim ve çalınan Aytaşı gizeminin bu bilge ve deneyimli dedektifin ellerinde yakında bir çözüme kavuşabileceğini sezdim.",
+      "Çavuş Cuff dikkatini boya lekesinden ayırdı ve bahçeye açılan kapıya doğru kararlı adımlarla ilerledi. Benden, elmasın en son görüldüğü yeri tam olarak göstermemi istedi. Onu, Rachel'ın uyumaya gitmeden hemen önce değerli taşı masanın üzerine bıraktığı odasına götürdüm. Çavuş, odayı havanın ağırlığını beklentiyle dolduran odaklanmış bir yoğunlukla inceledi. Açık pencereye ve kenarındaki yaş boyaya yakından baktı. Tek bir kelime bile etmedi ama gözleri, başka kimsenin göremediği bir hikayeyi birleştirdiğini bana söylüyordu. Hırsızın dışarıdan öylece girmediğine inandığı açıktı. Masanın etrafında yavaşça yürüdü, hareketleri planlı ve sakindi, her gölgeyi ve köşeyi gizli ipuçları için gözlemliyordu.",
+      "Aniden pencerenin yanında durdu ve beyaz boyanın üzerindeki belirsiz bir işareti işaret etti. Bu bir ayak izi değildi, çok daha küçük ve alışılmadık bir şeydi. Bana bu soruşturmanın sabır ve insan doğasına dair derin bir anlayış gerektireceğini söyledi. Evdeki hizmetçilerin alışkanlıklarını ve eve gelen son ziyaretçileri sordu. Sorularını elimden geldiğince dürüstçe yanıtladım, içimde bir huzursuzluk hissi oluşuyordu. Rachel'ın elmas kaybolmadan önce onun hakkında biriyle konuşup konuşmadığını sordu. Soruları keskin ve doğrudan idi, geçtiğimiz birkaç günün kafa karışıklığını yarıp geçiyordu. Çavuş'un sadece bir hırsız aramadığını, suçun arkasındaki nedeni aradığını fark etmeye başladım. Söylediği her kelime, anlatılmayı bekleyen gizli bir gerçeğin ağırlığını taşıyor gibiydi.",
+      "Öğleden sonra ilerlerken, Çavuş Cuff, Rosanna Spearman ile bir görüşme talep etti. O, bir süredir evde çalışan sessiz, sorunlu bir kızdı. Bu istek karşısında tedirgin oldum çünkü Rosanna'nın diğer hizmetçiler gibi olmadığını biliyordum. Kendi halindeydi ve genellikle kalbinde ağır bir yük saklıyormuş gibi görünürdü. Cuff bunu anlamış görünüyordu, çünkü onunla beni şaşırtan bir nezaketle konuştu. Ona evimizin yakınındaki tehlikeli bir kumsal olan Shivering Sand'e yaptığı yürüyüşleri sordu. Rosanna'nın yüzü sarardı ve onun bakışlarıyla karşılaşmaktan kaçındı. Elmas hakkında itiraf etmeye cesaret edebileceğinden çok daha fazlasını bildiği belliydi. Gizem derinleşti ve Aytaşı'nın gölgesi hepimizi karanlık ve tehlikeli yalanlarla dolu bir ağın içine çekiyor gibiydi.",
+      "Soruşturmanın son anları, soğuk ve huzursuz edici bir netlikle geldi. Müfettiş Cuff, çalınan Ay Taşı ile ilgili nihai sonucunu açıklamak için hepimizi salona topladı. Hırsızın dışarıdan gelen sıradan bir suçlu olmadığını, kendi evimizden biri olduğunu açıkladı. Bu ifşaat odada bir şok dalgası yarattı. Rachel ona korku dolu gözlerle bakarken, hizmetkarlar şaşkınlık içinde donup kalmıştı. Cuff, Franklin Blake'i ve laudanum etkisini içeren trajik bir gerçeğe işaret etti. Franklin'in, derin bir uykudayken, ne olduğunu anlamadığı gizli bir dürtüyle taşı aldığı anlaşıldı. Müfettiş, o kader gecesine yol açan olayları birleştirirken, sakin bir otoriteyle tek tek konuştu. Gerçeği bahçenin gölgelerinde değil, insan kalplerinin karmaşık sırlarında aramıştı.",
+      "Rosanna Spearman, Franklin'i korumak için taşı Shivering Sand'de sakladığını gördüğü için bu gizemin anahtarıydı. Ne yazık ki, geçmişinin utancıyla yüzleşmek yerine hayatına son vermeyi seçtiği için yaptıklarını açıklamak üzere artık aramızda değildi. Cuff, onun Franklin'e olan yoğun sevgisini ve sessiz fedakarlığını ortaya çıkaran mektubunu buldu. Böylesine dertli bir ruhun kaybını idrak ederken oda birdenbire boşalmış gibi hissettirdi. Soygun hakkında inandığımız her şey bu son gerçeklerle yıkılmıştı. Kendi kalbim, gölgelerde yaşayan kız ve yolunu kaybeden adam için üzüntüyle doluydu. Ay Taşı sonunda bulundu ancak evdekilerin ödediği bedel, hiçbirimizin tahmin edemeyeceği kadar büyüktü.",
+      "Ay Taşı gizemi nihayet sona erdi ve bizi en sıradan hayatların içinde bile gizlenebilen karanlık üzerine düşünmeye sevk etti. Müfettiş Cuff, görevini tamamlamış ve usta bir dedektif olarak itibarı tam olarak korunmuş bir şekilde evden ayrıldı. Dünyayı karmaşık bir bulmaca olarak gören ancak her suçun eşlik ettiği insan acısını asla göz ardı etmeyen bir adamdı. Hayatlarımızı yeniden inşa etmek bize kaldı, ancak o garip ve zor zamanın hatırası sonsuza dek bizimle kalacaktı. O günlere geri dönüp baktığımda, elmasın temas ettiği herkese sadece keder ve sorun getirdiğini anlıyorum. Soruşturma yanılsamalarımızı söküp atmış ve bize gerçeğin, kendimize söylediğimiz yalanlardan çoğu zaman kabul etmesi çok daha zor olduğunu göstermişti. Geçmişin sırlarıyla sonsuza dek değişmiş bir şekilde geleceğe doğru yürüdük."
+    ],
+    words: {
+      "steward": "kahya",
+      "tension": "gerginlik",
+      "sacred": "kutsal",
+      "investigate": "araştırmak",
+      "vanish": "ortadan kaybolmak",
+      "suspect": "şüpheli",
+      "interrogate": "sorgulamak",
+      "alibi": "mazeret",
+      "integrity": "dürüstlük",
+      "betrayal": "ihanet",
+      "grief": "keder",
+      "arrogance": "kibir",
+      "reputation": "itibar",
+      "observe": "gözlemlemek",
+      "precision": "hassasiyet",
+      "atmosphere": "atmosfer, ortam",
+      "superior": "üst, daha yüksek rütbeli",
+      "gemstone": "değerli taş",
+      "intensity": "yoğunluk",
+      "deliberate": "kasıtlı, planlı",
+      "unease": "huzursuzluk",
+      "motive": "güdü, neden",
+      "burden": "yük, ağırlık",
+      "conclusion": "sonuç",
+      "revelation": "ortaya çıkarma",
+      "impulse": "dürtü",
+      "dismantle": "çürütmek",
+      "illusion": "hayal"
+    }
+  },
+      {
+    id: 'detective_woman_white_conspiracy',
+    title: "The Woman in White - The Conspiracy",
+    author: 'Wilkie Collins',
+    level: 'B1',
+    coverUrl: '/covers/detective_woman_white_conspiracy.webp',
+    en: [
+      "It was a quiet night in London when I, Walter Hartright, began my journey to Limmeridge House in Cumberland. I had accepted a job as a drawing teacher for two young ladies, Laura Fairlie and her sister Marian Halcombe. My life was simple and predictable, but that changed on a lonely road near the city. Under the pale light of the moon, a mysterious woman dressed entirely in white appeared before me. She looked lost, frightened, and pale. She asked me for directions to London, and I helped her find her way. She seemed to know something about my new employer, Mr. Fairlie, but her words were confusing and strange. Before she disappeared into the darkness, she spoke of secrets hidden in the past. I did not realize then that this strange encounter was only the beginning of a long and dangerous mystery that would change my life forever.",
+      "The next day, I arrived at the beautiful and calm Limmeridge House. The landscape was breathtaking, but I felt a strange nervousness deep inside. I met Marian Halcombe first, a woman with a sharp mind and a kind heart. We soon became friends, sharing our thoughts about art and books. Then, I met Laura Fairlie, her beautiful half-sister. Laura was gentle and sweet, and I felt an immediate, strong connection to her. However, I soon discovered that she was already promised in marriage to Sir Percival Glyde, a man I had never met. The peace of the countryside felt fragile, and I started to notice small things that felt wrong. The house was full of hidden tension, and the memory of the woman in white continued to haunt my thoughts as I spent my days teaching the two young sisters to draw.",
+      "Life at Limmeridge House slowly turned into a web of uncertainty. Marian noticed my growing feelings for Laura and warned me to be careful. My heart was torn between my duty as a teacher and my love for a woman who belonged to another man. One afternoon, while walking in the park, I realized that the woman in white I met on that first night had a connection to this very place. She had been here before, and her presence was like a ghost hanging over the estate. Sir Percival Glyde was arriving soon to claim his bride, and the shadow of his arrival brought a sense of dread to the household. I tried to focus on my painting, but my mind kept returning to the woman in white. I knew that a great challenge was waiting for us, and I was determined to protect Laura at any cost.",
+      "Sir Percival Glyde finally arrived at Limmeridge House, and his presence immediately changed the atmosphere of the home. He was a man of cold confidence and sharp manners, which made me feel uncomfortable from the very first moment we met. Laura looked nervous whenever he approached her, and I could see that their engagement was not based on love but on some old family agreement. Marian was suspicious of him, too, observing his actions with a careful and critical eye. She told me privately that there was something about his past that she did not trust. I spent my days teaching Laura, trying to remain professional despite the pain in my heart. Sir Percival often stood nearby, watching us with a gaze that seemed to judge everything I did. The house, which once felt like a peaceful refuge, became a place filled with hidden tension and deep, unspoken fear.",
+      "The mystery of the woman in white continued to haunt my thoughts as I learned more about the local history of the village. I discovered that the woman I met on the road was named Anne Catherick, and she had once lived in Limmeridge as a child. The servants whispered that she was mentally unwell and obsessed with the color white. Her mother had worked for Laura’s mother many years ago, creating a strange link between the two women. I felt a desperate need to understand why she had been so frightened when I saw her near London. Her warnings about the people in charge of Laura’s life seemed more important every day. I began to worry that someone was hiding a dark secret from the past that could destroy Laura’s future. The connection between Anne and this house was clearly stronger than anyone was willing to admit to me.",
+      "As the wedding day approached, the mood in the house became heavy with a sense of coming trouble. Sir Percival pushed for the marriage to happen as quickly as possible, ignoring Laura’s obvious unhappiness. He frequently had private meetings with Mr. Fairlie, and their hushed voices behind closed doors made me feel like an outsider in my own environment. I realized that my time at Limmeridge was coming to an end, and that I would soon be forced to leave the woman I loved to a man I did not trust. I spent my final evenings walking in the gardens, hoping for some sign or clue that might help me protect Laura from the shadows gathering around her. The woman in white seemed like a phantom, a warning I could not ignore, and I swore to myself that I would find the truth before it was too late.",
+      "The wedding day finally arrived, and the atmosphere at Limmeridge was cold and formal. I watched from a distance as Laura dressed in her white gown, looking like a sacrifice rather than a happy bride. She did not look at Sir Percival with affection, but rather with a quiet, hollow resignation that broke my heart. The local church was filled with guests who seemed to sense the underlying tension, their whispers mingling with the organ music. Marian held Laura’s hand firmly, her face set in a mask of protective resolve. I stood at the back of the room, feeling as though I were witnessing an act of betrayal. Sir Percival stood tall and proud, his eyes scanning the crowd with a triumphant, cruel light. As the vows were exchanged, I felt a deep, chilling certainty that this union was born from greed and hidden, dark intentions rather than true love.",
+      "After the ceremony, the couple departed for their honeymoon, leaving the house feeling strangely empty and desolate. I found myself wandering through the quiet, dust-filled rooms, haunted by the memories of the lessons I had taught Laura. Marian remained with me, her sharp mind already working to piece together the fragments of the puzzle. She spoke of Sir Percival’s strange behavior and the odd, secretive letters he had been receiving from Italy. It became clear that the marriage was part of a larger, more sinister plan designed to secure Laura’s inheritance. We both felt the weight of our shared suspicion, yet we were powerless to intervene now that the deed was done. The silence of the house seemed to echo our fears, as if the very walls were guarding the secrets of the Glyde family history and the tragic fate of those involved.",
+      "Days turned into weeks, and we finally received a letter from Lady Glyde describing her new life. Her writing was hurried and lacked her usual warmth, causing us both to panic. She wrote of long, lonely nights at Blackwater Park and a growing sense of isolation that she could not explain. Sir Percival was rarely home, and when he was, he spent his time with an unsettling man named Count Fosco. The Count had appeared in their lives as a sudden friend, but his presence brought only more darkness and confusion to Laura’s world. Marian decided that we must travel to Blackwater Park immediately to uncover the truth. The danger was no longer a shadow in the distance; it was a reality we had to face head-on. We packed our belongings, determined to save Laura before the conspiracies of her husband consumed her life completely.",
+      "We arrived at Blackwater Park under a heavy, grey sky that seemed to reflect the gloom inside the house. The building was large and imposing, surrounded by trees that blocked out the sunlight, creating a suffocating atmosphere of dread. When we finally met Laura, she looked like a shadow of her former self, pale and thin. She clung to Marian, her eyes wide with a fear she could not name. Sir Percival greeted us with a cold, formal politeness that did not hide the hostility in his gaze. He made it clear that we were unwanted guests in his home. Beside him stood Count Fosco, a man whose large frame and strange, calm demeanor made my skin crawl. He watched us with curious, intelligent eyes, as if he were already dissecting our plans. I felt that we had stepped into a trap carefully prepared by our enemies.",
+      "Marian immediately began her investigation, noting every detail of the house and the movements of its occupants. She discovered that Sir Percival and the Count spent hours behind locked doors, talking in low voices about documents that concerned Laura’s fortune. It became evident that they needed her signature on papers that would give them complete control over her money. Poor Laura was constantly pressured and frightened, her spirit slowly breaking under their cruel psychological games. We realized that their goal was not just wealth, but total isolation. By cutting her off from everyone she loved, they hoped to force her compliance. Marian kept a detailed diary, recording their strange behavior and the odd occurrences that marked our daily lives. We were living in a house of secrets, where every conversation felt like a dangerous game of chess, and we were losing pieces one by one.",
+      "One stormy night, I overheard a conversation between the Count and Sir Percival that confirmed our worst suspicions. They were planning to take Laura away to London, where they could hide her from anyone who might protect her. The urgency in their voices showed that they were desperate to complete their scheme before anyone could interfere. I quickly ran to inform Marian, and we huddled in the dark hallway, whispering our plan to rescue her. We knew that we had to be extremely careful, as the Count was watching us with eyes that seemed to see through our very intentions. We decided to help Laura escape the following evening when the wind and rain would provide cover for our flight. The house felt like a prison, and we were the prisoners plotting our final chance for freedom before the shadows of Blackwater Park swallowed us forever in their dark, cold embrace.",
+      "The night of our planned escape finally arrived with the roar of a fierce storm shaking the windows of Blackwater Park. Rain lashed against the glass like icy fingers tapping for entry, providing the perfect cover for our departure. Marian and I met Laura in the shadows of the hallway, her heart beating fast with anxiety and hope. We moved silently through the dark corridors, our footsteps muffled by the thick rugs. Every creak of the floorboards sounded like a gunshot in the oppressive silence of the house. We knew the Count was awake, his keen mind always alert to the smallest disturbance, yet we pressed forward. Outside, the wind howled through the twisted trees, creating a symphony of chaos that masked our desperate flight. The heavy iron gates stood before us as the final barrier between our ruined past and a fragile, uncertain future waiting somewhere in the dark.",
+      "As we reached the edge of the estate, a sudden flash of lightning revealed the terrifying form of Count Fosco standing by the gate. He was not surprised to see us; instead, he smiled with a calm, terrifying intelligence that froze my blood. His trap had not been a suggestion of our imagination, but a cold reality of his design. The men he had employed surrounded us from the darkness, their faces hidden by low hats and heavy coats. There was no escape; our hope crumbled as easily as dead leaves in the gale. Sir Percival stepped forward, his eyes shining with a mixture of anger and triumph. He declared that Laura was legally bound to him and that any attempt at rebellion would be met with severe punishment. We were caught in a web of lies and legal power that seemed impossible to break, trapped once more.",
+      "The aftermath of our failed escape was a blur of misery and forced silence. The conspirators moved with clinical precision, sending Laura to a private asylum under a false identity while everyone was led to believe she had passed away. I returned to London, devastated but determined to find the truth behind their cruel deception. Through months of tireless investigation and the help of loyal allies, I slowly gathered the evidence required to destroy their scheme. We discovered that Anne Catherick had been the key to their plot, a tragic girl sacrificed to hide their greed. With the support of the law and the courage of those who loved Laura, we finally exposed their crimes to the world. Their alliance shattered, the villains fled, leaving behind the wreckage of their ambition. Justice was finally served, and after all the darkness, I brought Laura home to a life of peace."
+    ],
+    tr: [
+      "Londra'da sessiz bir geceydi ve ben, Walter Hartright, Cumberland'daki Limmeridge Evi'ne yolculuğuma başlamıştım. Laura Fairlie ve kız kardeşi Marian Halcombe adlı iki genç hanım için resim öğretmeni olarak bir iş kabul etmiştim. Hayatım basit ve öngörülebilirdi ancak şehrin yakınındaki ıssız bir yolda her şey değişti. Ayın soluk ışığı altında, tamamen beyaza bürünmüş gizemli bir kadın karşıma çıktı. Kaybolmuş, korkmuş ve solgun görünüyordu. Benden Londra'ya gidiş yollarını sordu ve ona yolunu bulması için yardım ettim. Yeni işverenim Bay Fairlie hakkında bir şeyler biliyor gibiydi ama söyledikleri kafa karıştırıcı ve tuhaftı. Karanlığın içinde kaybolmadan önce geçmişte saklı olan sırlardan bahsetti. O an, bu tuhaf karşılaşmanın, hayatımı sonsuza dek değiştirecek uzun ve tehlikeli bir gizemin sadece başlangıcı olduğunu fark etmemiştim.",
+      "Ertesi gün, güzel ve sakin Limmeridge Evi'ne vardım. Manzara nefes kesiciydi ama içimde derin bir huzursuzluk hissediyordum. İlk önce keskin zekalı ve nazik kalpli bir kadın olan Marian Halcombe ile tanıştım. Sanat ve kitaplar hakkındaki düşüncelerimizi paylaşarak kısa sürede arkadaş olduk. Ardından, onun güzel üvey kız kardeşi Laura Fairlie ile tanıştım. Laura nazik ve tatlıydı, ona karşı hemen güçlü bir bağ hissettim. Ancak çok geçmeden, onun henüz tanışmadığım bir adam olan Sir Percival Glyde ile evlenmek üzere sözleştiğini öğrendim. Kırsalın huzuru çok kırılgandı ve ters giden küçük şeyleri fark etmeye başladım. Ev gizli bir gerilimle doluydu ve iki genç kız kardeşin resim derslerini verirken, beyazlı kadının anısı düşüncelerimi meşgul etmeye devam ediyordu.",
+      "Limmeridge Evi'ndeki yaşam yavaş yavaş bir belirsizlik ağına dönüştü. Marian, Laura'ya karşı büyüyen hislerimi fark etti ve dikkatli olmam konusunda beni uyardı. Kalbim, bir öğretmen olarak görevim ile başka bir adama ait olan bir kadına duyduğum aşk arasında bölünmüştü. Bir öğleden sonra parkta yürürken, ilk gece karşılaştığım beyazlı kadının bu yerle bir bağlantısı olduğunu fark ettim. Daha önce buradaydı ve varlığı, malikanenin üzerinde asılı duran bir hayalet gibiydi. Sir Percival Glyde gelini almak için yakında gelecekti ve gelişinin gölgesi ev halkına korku dolu bir his getirdi. Resimlerime odaklanmaya çalıştım ama aklım sürekli beyazlı kadına gidiyordu. Bizi büyük bir sınavın beklediğini biliyordum ve Laura'yı ne pahasına olursa olsun korumaya kararlıydım.",
+      "Sir Percival Glyde sonunda Limmeridge Konağı'na vardı ve varlığı evin atmosferini hemen değiştirdi. Soğuk bir özgüvene ve keskin tavırlara sahip bir adamdı, bu da onunla tanıştığımız ilk andan itibaren beni rahatsız hissettirdi. Laura ona her yaklaştığında gergin görünüyordu ve nişanlarının sevgiye değil, eski bir aile anlaşmasına dayandığını görebiliyordum. Marian da ondan şüpheleniyor, hareketlerini dikkatli ve eleştirel bir gözle izliyordu. Bana özel olarak, geçmişiyle ilgili güvenmediği bir şeyler olduğunu söyledi. Günlerimi Laura'ya ders vererek, kalbimdeki acıya rağmen profesyonel kalmaya çalışarak geçiriyordum. Sir Percival sık sık yakında duruyor, yaptığım her şeyi yargılıyormuş gibi bir bakışla bizi izliyordu. Bir zamanlar huzurlu bir sığınak gibi hissettiren ev, gizli gerilimler ve derin, söylenmemiş korkularla dolu bir yere dönüştü.",
+      "Beyazlı kadının gizemi, köyün yerel tarihi hakkında daha fazla şey öğrendikçe düşüncelerimi rahatsız etmeye devam etti. Yolda karşılaştığım kadının adının Anne Catherick olduğunu ve bir zamanlar Limmeridge'de çocuk olarak yaşadığını keşfettim. Hizmetkarlar onun akıl sağlığının yerinde olmadığını ve beyaz renge takıntılı olduğunu fısıldıyorlardı. Annesi yıllar önce Laura'nın annesi için çalışmıştı ve bu iki kadın arasında garip bir bağ oluşturmuştu. Londra yakınlarında onu gördüğümde neden bu kadar korkmuş olduğunu anlama konusunda çaresiz bir ihtiyaç hissediyordum. Laura'nın hayatından sorumlu insanlar hakkındaki uyarıları her geçen gün daha önemli görünüyordu. Birinin geçmişten gelen ve Laura'nın geleceğini mahvedebilecek karanlık bir sırrı sakladığından endişelenmeye başladım. Anne ile bu ev arasındaki bağlantı, kimsenin bana itiraf etmeye istekli olmadığı kadar güçlüydü.",
+      "Düğün günü yaklaştıkça, evdeki ruh hali yaklaşan bir felaket hissiyle ağırlaştı. Sir Percival, Laura'nın bariz mutsuzluğunu görmezden gelerek evliliğin mümkün olduğunca çabuk gerçekleşmesi için baskı yaptı. Mr. Fairlie ile sık sık özel görüşmeler yapıyor ve kapalı kapılar ardındaki kısık sesleri beni kendi ortamımda yabancı gibi hissettiriyordu. Limmeridge'deki zamanımın sona ermekte olduğunu ve sevdiğim kadını yakında güvenmediğim bir adama bırakmak zorunda kalacağımı fark ettim. Son akşamlarımı bahçelerde yürüyerek, Laura'yı çevresini saran gölgelerden korumama yardımcı olabilecek bir işaret veya ipucu umarak geçirdim. Beyazlı kadın görmezden gelemeyeceğim bir uyarı, bir hayalet gibiydi ve geç olmadan gerçeği bulacağıma kendi kendime yemin ettim.",
+      "Düğün günü nihayet geldi ve Limmeridge'deki atmosfer soğuk ve resmiydi. Laura'nın beyaz gelinliğini giyişini uzaktan izledim; mutlu bir gelinden ziyade bir kurban gibi görünüyordu. Sir Percival'a sevgiyle değil, kalbimi kıran sessiz ve boş bir kabullenişle bakıyordu. Yerel kilise, gerilimi hisseden ve fısıltıları org müziğine karışan konuklarla doluydu. Marian, yüzü korumacı bir kararlılıkla donmuş halde Laura'nın elini sıkıca tutuyordu. Odanın arkasında dururken bir ihanete tanıklık ediyormuşum gibi hissettim. Sir Percival, zafer kazanmış, zalim bir ışıkla kalabalığı tarayan gözleriyle dik ve gururlu bir şekilde duruyordu. Yeminler edilirken, bu birleşmenin gerçek aşktan ziyade açgözlülükten ve gizli, karanlık niyetlerden doğduğuna dair derin ve ürpertici bir kesinlik hissettim.",
+      "Törenin ardından çift balayı için ayrıldı ve ev tuhaf bir şekilde boş ve ıssız kaldı. Kendimi Laura'ya verdiğim derslerin anılarıyla dolu, sessiz ve tozlu odalarda dolaşırken buldum. Marian benimle kaldı; keskin zihni yapbozun parçalarını birleştirmek için çoktan çalışmaya başlamıştı. Sir Percival'ın garip davranışlarından ve İtalya'dan aldığı tuhaf, gizli mektuplardan bahsetti. Evliliğin, Laura'nın mirasını güvence altına almak için tasarlanmış daha büyük ve daha kötü niyetli bir planın parçası olduğu açıktı. İkimiz de ortak şüphelerimizin ağırlığını hissediyorduk ancak iş işten geçtiği için müdahale edemiyorduk. Evin sessizliği, sanki duvarlar Glyde ailesinin tarihinin sırlarını ve olaya karışanların trajik kaderini koruyormuş gibi korkularımızı yansıtıyordu.",
+      "Günler haftalara döndü ve sonunda Lady Glyde'dan yeni hayatını anlatan bir mektup aldık. Yazısı aceleciydi ve her zamanki sıcaklığından yoksundu, bu da ikimizin de paniğe kapılmasına neden oldu. Blackwater Park'taki uzun, yalnız gecelerden ve açıklayamadığı artan bir yalnızlık duygusundan bahsediyordu. Sir Percival nadiren evdeydi ve olduğunda da vaktini Kont Fosco adında huzursuz edici bir adamla geçiriyordu. Kont, hayatlarına aniden bir arkadaş olarak girmişti ancak varlığı Laura'nın dünyasına sadece daha fazla karanlık ve kafa karışıklığı getirdi. Marian, gerçeği ortaya çıkarmak için hemen Blackwater Park'a gitmemiz gerektiğine karar verdi. Tehlike artık uzaktaki bir gölge değil, yüzleşmemiz gereken bir gerçekti. Eşyalarımızı topladık ve kocasına ait komplolar hayatını tamamen yok etmeden önce Laura'yı kurtarmaya kararlıydık.",
+      "Blackwater Park'a, evin içindeki kasveti yansıtan ağır, gri bir gökyüzü altında vardık. Bina büyük ve heybetliydi; güneş ışığını engelleyen ağaçlarla çevrili olması, boğucu bir korku atmosferi yaratıyordu. Laura ile nihayet karşılaştığımızda, kendisinin gölgesi gibi, solgun ve zayıftı. Marian'a sarıldı; gözleri, adını koyamadığı bir korkuyla doluydu. Sir Percival bizi, bakışlarındaki düşmanlığı gizlemeyen soğuk ve resmi bir nezaketle karşıladı. Evinde istenmeyen misafirler olduğumuzu açıkça belli etti. Yanında, iri yapısı ve tuhaf, sakin tavırlarıyla tüylerimi ürperten Kont Fosco duruyordu. Bizi, sanki planlarımızı şimdiden çözümlemeye çalışıyormuş gibi meraklı ve zeki gözlerle izliyordu. Düşmanlarımız tarafından dikkatlice hazırlanmış bir tuzağın içine girdiğimizi hissettim.",
+      "Marian hemen araştırmasına başladı, evin her detayını ve içindekilerin hareketlerini not etti. Sir Percival ve Kont'un, Laura'nın servetini ilgilendiren belgeler hakkında kilitli kapılar ardında, alçak sesle konuştuklarını keşfetti. Parası üzerinde tam kontrol sağlayacak belgelere onun imzasını atmaları gerektiği ortaya çıktı. Zavallı Laura sürekli baskı altındaydı ve korkutuluyordu; ruhu, onların acımasız psikolojik oyunları altında yavaş yavaş kırılıyordu. Hedeflerinin sadece zenginlik değil, tam bir tecrit olduğunu anladık. Onu sevdiği herkesten kopararak, itaat etmeye zorlamayı umuyorlardı. Marian, tuhaf davranışlarını ve günlük hayatımızı etkileyen garip olayları kaydederek detaylı bir günlük tutuyordu. Sırlarla dolu bir evde yaşıyorduk; her konuşmanın tehlikeli bir satranç maçı gibi hissettirdiği bu yerde, birer birer taşlarımızı kaybediyorduk.",
+      "Fırtınalı bir gece, Kont ile Sir Percival arasında geçen ve en kötü şüphelerimizi doğrulayan bir konuşmaya kulak misafiri oldum. Laura'yı, onu koruyabilecek herkesten saklayabilecekleri Londra'ya götürmeyi planlıyorlardı. Seslerindeki aciliyet, kimse müdahale edemeden planlarını tamamlama konusunda ne kadar çaresiz olduklarını gösteriyordu. Hemen Marian'ı bilgilendirmeye koştum; karanlık koridorda toplanıp onu kurtarma planımızı fısıldaştık. Çok dikkatli olmamız gerektiğini biliyorduk, çünkü Kont bizi niyetlerimizi bile okuyormuş gibi görünen gözlerle izliyordu. Rüzgar ve yağmurun kaçışımıza engel olacağı ertesi akşam Laura'nın kurtulmasına yardım etmeye karar verdik. Ev bir hapishane gibi hissettiriyordu ve bizler, Blackwater Park'ın gölgeleri bizi karanlık, soğuk kucaklarında sonsuza dek yutmadan önce özgürlük için son şansımızın planını yapan mahkumlardık.",
+      "Planladığımız kaçış gecesi, Blackwater Park'ın pencerelerini sarsan şiddetli bir fırtınanın uğultusuyla geldi. Yağmur, içeri girmek istercesine cama vuran buz gibi parmaklar gibi çarpıyor ve gidişimiz için mükemmel bir örtü sağlıyordu. Marian ve ben, koridorun gölgelerinde Laura ile buluştuk; kalbi endişe ve umutla hızla çarpıyordu. Karanlık koridorlarda sessizce ilerledik, adımlarımız kalın halılarla boğulmuştu. Evin baskıcı sessizliğinde her tahta gıcırtısı bir silah sesi gibi yankılanıyordu. Kont'un uyanık olduğunu, keskin zihninin en küçük bir rahatsızlığı bile fark edeceğini biliyorduk, ancak yine de ilerledik. Dışarıda rüzgar, bükülmüş ağaçların arasından uğuldayarak umutsuz kaçışımızı maskeleyen bir kaos senfonisi yaratıyordu. Ağır demir kapılar, mahvolmuş geçmişimiz ile karanlıkta bir yerde bekleyen kırılgan, belirsiz geleceğimiz arasındaki son engel olarak önümüzde duruyordu.",
+      "Arazinin kenarına ulaştığımızda, ani bir şimşek çakması Kont Fosco'nun dehşet verici silüetini kapının yanında ortaya çıkardı. Bizi gördüğüne şaşırmamıştı; aksine, kanımı donduran sakin ve korkutucu bir zeka ile gülümsedi. Tuzağı hayal gücümüzün bir ürünü değil, planının soğuk bir gerçeğiydi. Tuttuğu adamlar bizi karanlıktan çevrelemişti, yüzleri alçak şapkalar ve ağır paltolarla gizlenmişti. Kaçış yoktu; umudumuz fırtınadaki kuru yapraklar kadar kolay parçalandı. Sir Percival öne çıktı, gözleri öfke ve zafer karışımı bir ışıltıyla parlıyordu. Laura'nın yasal olarak kendisine bağlı olduğunu ve herhangi bir isyan girişiminin sert bir şekilde cezalandırılacağını ilan etti. Bir kez daha kapana kısılmıştık, kırılması imkansız görünen yalanlar ve yasal güç ağının içinde yakalanmıştık.",
+      "Başarısız kaçışımızın ardından gelen dönem, sefalet ve zoraki sessizlikle doluydu. Komplocular klinik bir hassasiyetle hareket ederek, herkes onun öldüğüne inanırken Laura'yı sahte bir kimlikle özel bir akıl hastanesine gönderdiler. Ben ise Londra'ya döndüm; yıkılmıştım ama zalimce aldatmacalarının ardındaki gerçeği bulmaya kararlıydım. Aylar süren yorulmak bilmez araştırmalar ve sadık müttefiklerin yardımıyla, planlarını yok etmek için gereken kanıtları yavaş yavaş topladım. Anne Catherick'in, açgözlülüklerini gizlemek için kurban edilen trajik bir kız olarak planlarının anahtarı olduğunu keşfettik. Yasaların desteği ve Laura'yı sevenlerin cesaretiyle, suçlarını nihayet dünyaya ifşa ettik. İttifakları parçalandı, kötüler hırslarının enkazını geride bırakarak kaçtılar. Adalet sonunda yerini buldu ve tüm o karanlıktan sonra Laura'yı huzurlu bir hayata, evine geri getirdim."
+    ],
+    words: {
+      "encounter": "karşılaşma",
+      "predictable": "öngörülebilir",
+      "fragile": "kırılgan",
+      "tension": "gerilim",
+      "dread": "dehşet, korku",
+      "uncertainty": "belirsizlik",
+      "atmosphere": "atmosfer",
+      "suspicious": "şüpheci",
+      "refuge": "sığınak",
+      "obsesseed": "takıntılı",
+      "phantom": "hayalet",
+      "unspoken": "söylenmemiş",
+      "resignation": "boyun eğme, kabulleniş",
+      "betrayal": "ihanet",
+      "desolate": "ıssız, terk edilmiş",
+      "inheritance": "miras",
+      "isolation": "yalnızlık, tecrit",
+      "conspiracy": "komplo",
+      "imposing": "heybetli, etkileyici",
+      "hostility": "düşmanlık",
+      "demeanor": "tavır, davranış",
+      "compliance": "itaat, boyun eğme",
+      "scheme": "plan, entrika",
+      "anxiety": "endişe",
+      "oppressive": "baskıcı",
+      "gale": "şiddetli fırtına",
+      "triumph": "zafer",
+      "deception": "aldatmaca",
+      "ambition": "hırs"
+    }
+  },
+      {
+    id: 'detective_hansom_cab_2',
+    title: "The Mystery of the Hansom Cab - Part 2",
+    author: 'Fergus Hume',
+    level: 'B1',
+    coverUrl: '/covers/detective_hansom_cab_2.webp',
+    en: [
+      "The morning sun shone brightly over Melbourne as Detective Kilsip walked toward the police station. He felt a heavy weight on his shoulders because the case of the hansom cab murder was still a mystery. The city was waking up, and people were busy with their daily lives, unaware of the dark secret hiding in the streets. Kilsip thought about the body found in the cab and the strange silence of the witnesses. Everyone he spoke to seemed to be hiding something behind their nervous eyes. He knew that the man he was looking for was clever, but Kilsip was experienced. He took a deep breath, adjusted his hat, and prepared himself for another long day of investigation. The truth was somewhere out there in the fog of the city, and he was determined to find it before the killer struck again.",
+      "Inside the station, the air was thick with the smell of old paper and tobacco. Inspector Grew was waiting for him with a stack of reports on his wooden desk. They had identified the victim as Mr. Calton, a man with many secrets and few friends. This was not just a simple robbery gone wrong; it was a carefully planned act of violence. Grew pointed to a list of names, including the mysterious Brian Fitzgerald. Brian had been seen near the crime scene, acting very suspiciously that cold night. Kilsip looked at the evidence and felt a spark of hope. The pieces of the puzzle were slowly starting to fit together, even though the path ahead seemed full of shadows. They needed to move quickly because time was running out, and the murderer was likely already planning his escape from the city.",
+      "Kilsip decided to pay a visit to the apartment where Brian Fitzgerald lived. As he walked through the narrow, crowded streets, he noticed a man following him from a distance. The detective turned into a small alleyway to lose the person, hiding behind a stone wall until the footsteps faded away. He realized that he was being watched, which meant that someone wanted to keep him away from the truth. This made the case much more dangerous than he had initially thought. Upon reaching the building, Kilsip knocked on the door with a firm hand, waiting for an answer. The silence that followed was heavy and cold. He felt a sudden shiver go down his spine as he realized that the person behind the door might not be alone, or perhaps they were already gone, leaving only more questions behind.",
+      "Kilsip pushed the door open to find Brian Fitzgerald sitting quietly in a dimly lit room. The young man looked pale and trembled slightly as he saw the detective. A glass of wine sat on the table, and an open book lay nearby, yet Brian seemed unable to focus on anything. Kilsip watched him closely, noting the nervous twitching of his hands and the way he avoided direct eye contact. It was clear that Brian was hiding something important, perhaps a secret that reached back to his past. The room felt stifling, filled with the scent of old tobacco and anxiety. Brian tried to speak, but his voice was thin and shaky as he asked why the police were questioning him. Kilsip ignored the question, deciding to study the room for any signs of the struggle that had taken place in the hansom cab only hours earlier.",
+      "The detective moved around the small room, his eyes scanning the floor and the furniture for hidden clues. He found a torn piece of paper near the fireplace, partially burnt by the embers. Picking it up with careful fingers, he saw a name written in elegant, flowing handwriting. It was not a familiar name, but it felt significant enough to be connected to the murder of Mr. Calton. When Kilsip turned back to Brian, the young man seemed to be on the verge of a breakdown. He mumbled words about a quarrel and a night he wished he could forget. Kilsip stepped closer, pressing for more information about the victim and the events of the evening. The air between them grew heavy with tension, as if the walls themselves were waiting to reveal the dark truth that Brian was desperately trying to keep buried deep within his heart.",
+      "Finally, Brian confessed that he had indeed seen Calton on the night of the crime, but he claimed he had left him alive and well near the theatre. Kilsip listened with a stern face, though he was deeply skeptical of this version of events. The evidence gathered so far pointed directly toward someone with a strong motive, and Brian's story seemed too convenient to be entirely true. As the conversation continued, Kilsip learned about a mysterious woman who had been present during their meeting. This new piece of information was like a bolt of lightning, changing the entire shape of the investigation. The detective realized that the murder was far more complex than he had originally imagined. Leaving Brian in the apartment, Kilsip stepped back out into the cool evening air, his mind racing with possibilities about who this mysterious woman could truly be.",
+      "Kilsip walked through the dark, quiet streets of Melbourne, thinking about the mysterious woman Brian had mentioned. Her identity was now the most important piece of the puzzle. He arrived at the home of Duncan Calton, hoping to find more information. The house was cold and lonely, reflecting the tragedy that had recently occurred within its walls. Kilsip met with a servant who looked frightened and tired. The detective asked many questions about the visitors who had come to see the master before his death. The servant hesitated but finally admitted that a lady had visited Calton late on the night of the murder. She wore a thick veil to hide her face, making her impossible to identify. Kilsip felt a strange excitement; he knew he was finally moving closer to the truth about this dangerous and complicated crime.",
+      "The detective carefully examined the study where Calton had spent his final hours. He looked at the books on the shelves and the papers scattered across the large oak desk. Everything seemed in order, but Kilsip was searching for something that did not belong. Behind a heavy curtain, he discovered a small, golden glove that had been dropped in a hurry. It was delicate and smelled of expensive perfume, clearly belonging to a woman of high social status. This discovery was a major development in the case. Kilsip put the glove into his pocket, realizing that the lady who visited the theatre and the one who came to this house might be the same person. The mystery was deepening, and the detective knew he had to act quickly before the person responsible for the killing could escape justice.",
+      "Back at the station, Kilsip met with his assistant to share the new findings. They discussed the connection between the secret meeting at the theatre and the late-night visitor at the house. The assistant suggested that the woman might be related to Calton, perhaps a relative or a jilted lover with a desire for revenge. Kilsip thought about the elegant handwriting on the torn paper he had found earlier. He suspected that the motive for the murder was hidden in the past, buried under layers of secrets and social expectations. The city was sleeping, but the detective remained awake, mapping out the next steps of his investigation. He was determined to uncover the lady’s name and bring her to justice. Every clue was a small light in the darkness, and he would not stop until the full story was finally revealed to the world.",
+      "Kilsip decided to search for Brian Fitzgerald, whose involvement in the case seemed to grow deeper with every passing hour. He found Brian in his small apartment, looking exhausted and filled with nervous energy. The young man admitted that he had been in the hansom cab that fateful night, but he swore he had not killed his friend. He explained that he was there to meet someone, but he had left the cab before the murder actually happened. Kilsip watched him closely, searching for any sign of a lie in his eyes. Brian seemed truly terrified of the situation, especially because the police had found his belongings near the scene of the crime. The detective sensed that Brian was keeping a secret, not because he was the murderer, but because he was trying to protect a woman from a terrible public scandal.",
+      "The detective brought Brian to the office to answer more questions about the mysterious lady. Brian felt trapped by his own loyalty to this woman, whom he refused to name even under heavy pressure from the authorities. Kilsip pointed out that silence would only make him look more guilty in the eyes of the jury. Brian sighed, his face pale, as he described a meeting held in the cold, dark shadows of the park. He explained that the woman was frightened and had asked him for help because she was involved in a long-standing conflict with the victim. She had been desperate to recover a collection of letters that could destroy her reputation if they were ever read by the public. Kilsip realized that the murder was not just about money or anger; it was about the dangerous power of hidden secrets.",
+      "After the interrogation, Kilsip stood alone in the hallway, reflecting on the complex web of lies that now defined the investigation. He understood that the lady in the veil was the key to unlocking the entire mystery. He wondered if this woman had killed Calton to protect her honor or if someone else had intervened to stop her. The detective knew that he had to track her down before she fled the city forever. He called for his men to search the local train stations and ports, fearing that time was running out. The city of Melbourne felt like a cage for the guilty, but he knew the person he sought was clever and resourceful. As the morning sun began to rise, Kilsip felt a renewed sense of purpose, ready to face the truth no matter how painful it might eventually become for everyone involved.",
+      "Detective Kilsip finally found the woman in the veil at a quiet house on the edge of the city. She stood by the window, shaking with fear as she saw him enter the room. Her name was Gabriella, and her face was pale, showing the heavy burden she had carried since the night of the murder. She admitted to being in the cab, but she insisted that Calton was alive when she stepped out of the vehicle. She explained that she had met him to demand the return of her private letters, which he had stolen to control her future. When she refused his harsh demands, he laughed in her face, causing her to leave in a fit of rage. She did not know who had killed him, but she admitted that his death had finally saved her from a lifetime of shame and complete social ruin.",
+      "Kilsip listened carefully, weighing her words against the evidence he had gathered throughout the long investigation. It became clear that while Gabriella was connected to the motive, she was not the physical killer. The detective asked her about the letters, and she reached into a small wooden box to hand them over to him. As he read the pages, he realized that the victim, Calton, had indeed been a dangerous man who used secrets to hurt those around him. This revelation changed the direction of the case entirely. The murderer had likely been someone else who also hated Calton for his cruel ways, someone who had been watching the cab from the darkness of the night. Kilsip felt a strange sense of relief, knowing that he was finally close to finding the truth that had hidden behind the shadows of Melbourne for so long.",
+      "With the mystery finally falling into place, Kilsip returned to the station to report his findings to the authorities. He explained that Brian Fitzgerald was innocent and that the true killer had been a man who wanted to end Calton's influence for good. The police officers were surprised, but the evidence presented by Kilsip was impossible to ignore. A search was quickly started for the actual murderer, leading to a quick arrest within the following days. As the case reached its end, the city of Melbourne felt much calmer, and the dark secrets that had gripped the community were finally brought into the light. Kilsip walked home that evening, feeling satisfied with his hard work. He had managed to save an innocent man from the gallows and restore justice, proving once again that even the most well-hidden truths eventually come out to the public."
+    ],
+    tr: [
+      "Sabah güneşi Melbourne'un üzerinde parlarken Dedektif Kilsip polis merkezine doğru yürüyordu. Omuzlarında ağır bir yük hissediyordu çünkü hansom taksi cinayeti hala bir gizemdi. Şehir uyanıyordu ve insanlar sokaklarda saklanan karanlık sızdan habersiz günlük işleriyle meşguldü. Kilsip, takside bulunan cesedi ve tanıkların garip sessizliğini düşündü. Konuştuğu herkes, tedirgin gözlerinin arkasında bir şeyler saklıyor gibiydi. Aradığı adamın zeki olduğunu biliyordu ama Kilsip deneyimliydi. Derin bir nefes aldı, şapkasını düzeltti ve soruşturma dolu uzun bir güne daha kendini hazırladı. Gerçek, şehrin sisleri arasında bir yerdeydi ve katil tekrar saldırmadan önce onu bulmaya kararlıydı.",
+      "Merkezin içinde hava, eski kağıt ve tütün kokusuyla doluydu. Müfettiş Grew, tahta masasının üzerinde bir yığın raporla onu bekliyordu. Kurbanın, birçok sırrı ve az sayıda arkadaşı olan Bay Calton olduğunu tespit etmişlerdi. Bu sadece ters giden basit bir soygun değildi; dikkatlice planlanmış bir şiddet eylemiydi. Grew, gizemli Brian Fitzgerald da dahil olmak üzere bir isim listesini işaret etti. Brian, o soğuk gecede suç mahallinin yakınında çok şüpheli bir şekilde hareket ederken görülmüştü. Kilsip kanıtlara baktı ve içinde bir umut ışığı hissetti. Önündeki yol gölgelerle dolu görünse de yapbozun parçaları yavaş yavaş birleşmeye başlıyordu. Hızlı hareket etmeleri gerekiyordu çünkü zaman tükeniyordu ve katil muhtemelen şehirden kaçışını çoktan planlıyordu.",
+      "Kilsip, Brian Fitzgerald'ın yaşadığı daireye bir ziyaret yapmaya karar verdi. Dar ve kalabalık sokaklardan geçerken, birinin onu uzaktan takip ettiğini fark etti. Dedektif, kişiyi atlatmak için küçük bir ara sokağa saptı ve ayak sesleri uzaklaşana kadar taş bir duvarın arkasında saklandı. İzlendiğini fark etti, bu da birinin onu gerçekten uzak tutmak istediği anlamına geliyordu. Bu durum, davayı başlangıçta düşündüğünden çok daha tehlikeli hale getirdi. Binaya ulaştığında, Kilsip bir cevap bekleyerek kapıyı sertçe çaldı. Ardından gelen sessizlik ağır ve soğuktu. Kapının ardındaki kişinin yalnız olmayabileceğini veya belki de çoktan gitmiş olduklarını ve geride sadece daha fazla soru bıraktıklarını fark edince omurgasından aşağı aniden bir ürperti geçti.",
+      "Kilsip kapıyı itip açtığında Brian Fitzgerald'ı loş bir odada sessizce otururken buldu. Genç adam solgundu ve dedektifi gördüğünde hafifçe titriyordu. Masada bir kadeh şarap duruyordu ve yakında açık bir kitap vardı, ancak Brian hiçbir şeye odaklanamıyor gibiydi. Kilsip onu yakından izledi; ellerindeki gergin seğirmeleri ve doğrudan göz temasından kaçınma biçimini not etti. Brian'ın geçmişine dayanan bir sır gibi, önemli bir şeyi sakladığı açıktı. Oda, eski tütün ve endişe kokusuyla doluydu, bunaltıcı hissettiriyordu. Brian konuşmaya çalıştı, ancak polisin neden ona sorular sorduğunu sorarken sesi cılız ve titrek çıkıyordu. Kilsip soruyu görmezden geldi ve sadece birkaç saat önce hansom arabasında gerçekleşen boğuşmanın izlerini aramak için odayı incelemeye karar verdi.",
+      "Dedektif küçük odanın etrafında dolaştı, gözleri gizli ipuçları için zemini ve mobilyaları tarıyordu. Şöminenin yanında, közler tarafından kısmen yanmış yırtık bir kağıt parçası buldu. Dikkatli parmaklarıyla onu alırken, zarif ve akıcı bir el yazısıyla yazılmış bir isim gördü. Bu tanıdık bir isim değildi ama Bay Calton'ın cinayetiyle bağlantılı olabilecek kadar önemli görünüyordu. Kilsip tekrar Brian'a döndüğünde, genç adam çökmek üzere gibiydi. Bir kavgadan ve unutmak istediği bir geceden bahsetti. Kilsip ona yaklaştı, kurban ve akşamın olayları hakkında daha fazla bilgi almak için baskı yaptı. Aralarındaki hava gerginlikle ağırlaştı; sanki duvarların kendisi, Brian'ın kalbinin derinliklerine gömmeye çalıştığı o karanlık gerçeği ortaya çıkarmayı bekliyordu.",
+      "Sonunda Brian, suç gecesinde Calton'ı gerçekten gördüğünü itiraf etti, ancak onu tiyatronun yakınında canlı ve iyi bir şekilde bıraktığını iddia etti. Kilsip sert bir ifadeyle dinledi, ancak bu olaylar zincirine karşı derinden şüphe duyuyordu. Şimdiye kadar toplanan kanıtlar doğrudan güçlü bir nedeni olan birine işaret ediyordu ve Brian'ın hikayesi tamamen doğru olamayacak kadar kolay görünüyordu. Konuşma devam ederken, Kilsip toplantıları sırasında orada bulunan gizemli bir kadından haberdar oldu. Bu yeni bilgi parçası, soruşturmanın tüm şeklini değiştiren bir şimşek çakması gibiydi. Dedektif, cinayetin hayal ettiğinden çok daha karmaşık olduğunu anladı. Brian'ı dairede bırakıp serin akşam havasına geri adım attığında, zihni bu gizemli kadının aslında kim olabileceğine dair olasılıklarla yarışıyordu.",
+      "Kilsip, Brian'ın bahsettiği gizemli kadın hakkında düşünerek Melbourne'un karanlık ve sessiz sokaklarında yürüdü. Kadının kimliği artık bulmacanın en önemli parçasıydı. Duncan Calton'ın evine vardığında, daha fazla bilgi bulmayı umuyordu. Ev soğuk ve yalnızdı; duvarları arasında yakın zamanda yaşanan trajediyi yansıtıyordu. Kilsip, korkmuş ve yorgun görünen bir hizmetçiyle karşılaştı. Dedektif, efendilerini ölmeden önce görmeye gelen ziyaretçiler hakkında birçok soru sordu. Hizmetçi tereddüt etti ancak sonunda cinayet gecesi geç saatlerde bir hanımefendinin Calton'ı ziyaret ettiğini itiraf etti. Yüzünü gizlemek için kalın bir peçe takıyordu, bu yüzden onu teşhis etmek imkansızdı. Kilsip garip bir heyecan hissetti; bu tehlikeli ve karmaşık suçun gerçeğine yaklaştığını biliyordu.",
+      "Dedektif, Calton'ın son saatlerini geçirdiği çalışma odasını dikkatlice inceledi. Raflardaki kitaplara ve büyük meşe masanın üzerine dağılmış kağıtlara baktı. Her şey yerli yerinde görünüyordu ama Kilsip oraya ait olmayan bir şey arıyordu. Ağır bir perdenin arkasında, aceleyle düşürülmüş küçük, altın rengi bir eldiven keşfetti. Eldiven zarifti ve pahalı bir parfüm kokuyordu, belli ki yüksek sosyal statüye sahip bir kadına aitti. Bu keşif, davada önemli bir gelişmeydi. Kilsip, tiyatroya gelen hanımefendi ile bu eve gelen kişinin aynı kişi olabileceğini fark ederek eldiveni cebine koydu. Gizem derinleşiyordu ve dedektif, cinayetten sorumlu kişi adaletten kaçmadan önce hızlı hareket etmesi gerektiğini biliyordu.",
+      "Karakola döndüğünde Kilsip, yeni bulgularını paylaşmak için yardımcısıyla bir araya geldi. Tiyatroda gerçekleşen gizli toplantı ile eve geç saatte gelen ziyaretçi arasındaki bağlantıyı tartıştılar. Yardımcısı, kadının Calton ile akraba olabileceğini veya intikam ateşiyle yanıp tutuşan terk edilmiş bir sevgili olabileceğini öne sürdü. Kilsip, daha önce bulduğu yırtık kağıt üzerindeki zarif el yazısını düşündü. Cinayetin nedeninin geçmişte, sırların ve sosyal beklentilerin altında gömülü olduğundan şüpheleniyordu. Şehir uyuyordu ama dedektif uyanık kalmış, soruşturmasının sonraki adımlarını planlıyordu. Kadının adını ortaya çıkarmaya ve onu adalete teslim etmeye kararlıydı. Her ipucu karanlıkta küçük bir ışıktı ve tüm hikaye nihayet dünyaya açıklanana kadar durmayacaktı.",
+      "Kilsip, davadaki rolü her geçen saat daha da derinleşiyor gibi görünen Brian Fitzgerald'ı aramaya karar verdi. Brian'ı küçük dairesinde, bitkin ve gergin bir enerjiyle dolu halde buldu. Genç adam, o talihsiz gecede hansom arabasında olduğunu itiraf etti ancak arkadaşını öldürmediğine yemin etti. Birisiyle buluşmaya gittiğini, ancak cinayet gerçekleşmeden önce arabadan ayrıldığını açıkladı. Kilsip, gözlerinde herhangi bir yalan belirtisi arayarak onu yakından izledi. Brian, özellikle polis suç mahallinin yakınında eşyalarını bulduğu için durumdan gerçekten korkuyor gibiydi. Dedektif, Brian'ın bir sır sakladığını hissetti; bunun sebebi katil olması değil, bir kadını korkunç bir skandaldan korumaya çalışmasıydı.",
+      "Dedektif, gizemli kadın hakkında daha fazla soru sormak için Brian'ı ofise getirdi. Brian, yetkililerin yoğun baskısı altında bile adını vermeyi reddettiği bu kadına olan bağlılığı yüzünden kapana kısılmış hissetti. Kilsip, sessizliğin onu jürinin gözünde sadece daha suçlu göstereceğine dikkat çekti. Brian, parkın soğuk ve karanlık gölgelerinde yapılan bir buluşmayı tarif ederken yüzü solmuş bir şekilde iç çekti. Kadının korktuğunu ve kurbanla uzun süredir devam eden bir çatışma içinde olduğu için ondan yardım istediğini açıkladı. Kadın, halk tarafından okunursa itibarını yok edebilecek bir mektup koleksiyonunu geri almak için çaresiz kalmıştı. Kilsip, cinayetin sadece para veya öfke ile ilgili olmadığını, gizli sırların tehlikeli gücüyle ilgili olduğunu fark etti.",
+      "Sorgulamadan sonra Kilsip koridorda tek başına durdu ve şimdi soruşturmayı tanımlayan karmaşık yalanlar ağını düşündü. Peçeli kadının tüm gizemi çözmenin anahtarı olduğunu anladı. Bu kadının onurunu korumak için Calton'u öldürüp öldürmediğini ya da bir başkasının onu durdurmak için müdahale edip etmediğini merak etti. Dedektif, o şehri sonsuza dek terk etmeden önce onu bulması gerektiğini biliyordu. Zamanın daraldığından korkarak adamlarını yerel tren istasyonlarını ve limanları aramaları için çağırdı. Melbourne şehri suçlular için bir kafes gibi hissettiriyordu ancak aradığı kişinin zeki ve becerikli olduğunu biliyordu. Sabah güneşi yükselmeye başladığında Kilsip, ilgili herkes için ne kadar acı verici olursa olsun gerçekle yüzleşmeye hazır, yenilenmiş bir amaç duygusu hissetti.",
+      "Dedektif Kilsip, sonunda peçeli kadını şehrin kenarındaki sessiz bir evde buldu. Kadın, odaya girdiğini görünce korkuyla titreyerek pencerenin yanında durdu. Adı Gabriella'ydı ve yüzü, cinayet gecesinden beri taşıdığı ağır yükü gösteren bir solgunluktaydı. Arabada olduğunu itiraf etti ancak araçtan indiğinde Calton'ın hayatta olduğunda ısrar etti. Onunla, geleceğini kontrol etmek için çaldığı özel mektuplarını geri almak amacıyla buluştuğunu açıkladı. Calton onun sert taleplerini reddedince yüzüne karşı güldü, bu da kadının öfkeyle oradan ayrılmasına neden oldu. Onu kimin öldürdüğünü bilmiyordu ama onun ölümünün kendisini ömür boyu sürecek bir utançtan ve sosyal yıkımdan kurtardığını kabul etti.",
+      "Kilsip, uzun soruşturma boyunca topladığı kanıtlarla kadının sözlerini dikkatle tartarak dinledi. Gabriella'nın cinayet sebebiyle bağlantılı olmasına rağmen, fiziksel katil olmadığı ortaya çıktı. Dedektif ona mektupları sordu ve kadın, onları kendisine teslim etmek için küçük ahşap bir kutuya uzandı. Sayfaları okurken, kurban Calton'ın gerçekten de çevresindekilere zarar vermek için sırları kullanan tehlikeli bir adam olduğunu fark etti. Bu keşif davanın yönünü tamamen değiştirdi. Katil, muhtemelen Calton'dan zalimce yolları nedeniyle nefret eden ve gece karanlığından arabayı izleyen başka biriydi. Kilsip, Melbourne'ün gölgeleri ardında bu kadar uzun süre saklanan gerçeği bulmaya çok yaklaştığını bilmenin verdiği tuhaf bir rahatlama hissetti.",
+      "Gizem nihayet yerine oturduğunda, Kilsip bulgularını yetkililere rapor etmek için merkeze döndü. Brian Fitzgerald'ın suçsuz olduğunu ve gerçek katilin Calton'ın etkisini tamamen sona erdirmek isteyen bir adam olduğunu açıkladı. Polis memurları şaşırmıştı ancak Kilsip tarafından sunulan kanıtlar göz ardı edilemezdi. Gerçek katili arama çalışmaları hızla başlatıldı ve takip eden günlerde hızlı bir tutuklama yapıldı. Dava sona ererken, Melbourne şehri çok daha huzurlu hissedildi ve toplumu etkisi altına alan karanlık sırlar nihayet ışığa kavuştu. Kilsip o akşam evine yürürken, sıkı çalışmasından memnun hissediyordu. Masum bir adamı darağacından kurtarmayı ve adaleti yeniden sağlamayı başarmıştı, bu da en iyi gizlenmiş gerçeklerin bile sonunda ortaya çıktığını bir kez daha kanıtladı."
+    ],
+    words: {
+      "hansom cab": "iki tekerlekli at arabası",
+      "investigation": "soruşturma",
+      "witness": "tanık",
+      "evidence": "kanıt",
+      "suspicious": "şüpheli",
+      "victim": "kurban",
+      "dimly": "loş bir şekilde",
+      "twitching": "seğirme",
+      "stifling": "bunaltıcı",
+      "ember": "köz",
+      "quarrel": "tartışma veya kavga",
+      "skeptical": "şüpheci",
+      "tragedy": "trajedi",
+      "identity": "kimlik",
+      "hesitate": "tereddüt etmek",
+      "delicate": "zarif",
+      "motive": "güdü",
+      "justice": "adalet",
+      "involvement": "dahil olma",
+      "fateful": "kaderi belirleyen",
+      "scandal": "skandal",
+      "interrogation": "sorgulama",
+      "reputation": "itibar",
+      "resourceful": "becerikli",
+      "veil": "peçe",
+      "burden": "yük",
+      "revelation": "vahiy, gün yüzüne çıkan gerçek",
+      "gallows": "darağacı",
+      "innocent": "masum"
+    }
+  },
+      {
+    id: 'detective_red_house_1',
+    title: "The Red House Mystery - Part 1",
+    author: 'A. A. Milne',
+    level: 'B1',
+    coverUrl: '/covers/detective_red_house_1.webp',
+    en: [
+      "It was a bright and beautiful afternoon at the Red House. Mark Ablett, the master of the house, was hosting a party for his friends. Everyone was in high spirits, enjoying the warm sun and the garden. Among the guests was Bill Beverley, a young man who was new to this circle. Bill felt a bit nervous about meeting everyone, but he found the atmosphere welcoming. Mark was a kind host who wanted to make sure his guests had a wonderful time. He moved gracefully between the groups, laughing and sharing stories about his life abroad. The large, old house stood proudly in the middle of the garden, holding many secrets within its thick stone walls. Everything seemed perfect, and the guests were happy to be away from the busy city for a few days of luxury and peace.",
+      "Suddenly, a strange tension filled the air when Robert Ablett, Mark's cousin, arrived unexpectedly from Australia. Mark looked noticeably uncomfortable as he saw his relative. The brothers had not spoken for years, and their reunion was clearly not a happy one. Robert was a rough, loud man who did not fit into the elegant world of the Red House. He demanded to speak with Mark privately in the study. The other guests noticed the change in Mark's mood and began to whisper among themselves. Bill, being observant, watched the two men walk toward the study. He felt that something important and perhaps dangerous was about to happen. The garden felt colder, and the laughter of the other guests sounded hollow. A feeling of anxiety grew as the heavy door of the study clicked shut behind them.",
+      "Minutes passed, and the silence in the house became heavy and suffocating. Bill decided to take a short walk near the study window to see if he could hear anything, as he was worried about his host. He heard a sudden, sharp noise that sounded like a gunshot. His heart started to beat quickly, and he rushed to the study door, knocking loudly. There was no answer from inside. With trembling hands, Bill and the butler, Cayley, forced the door open. They were met with a terrifying sight. The room was messy, and the window was wide open. Mark Ablett was missing, and on the floor lay the body of a man who was clearly not Mark. The mystery of the Red House had begun, and the peaceful weekend had turned into a nightmare of questions and fear.",
+      "The room remained deathly still as Bill and Cayley stood over the body on the floor. It was indeed Robert Ablett, the man who had arrived so rudely just moments before. His coat was torn, and his face held a look of deep surprise that chilled Bill to the bone. Where was Mark? The study window was open wide, letting in the cool breeze of the garden, but there was no sign of the host anywhere. Cayley looked pale and shocked, his usual calm butler manner disappearing under the weight of such a terrible event. He knelt down to check for a pulse, but his hands shook too much to be certain. Everything in the room seemed to point toward a violent struggle, yet the house outside remained unnervingly quiet as if the walls themselves were hiding a dark secret from the guests who were waiting just down the hall.",
+      "Bill felt his thoughts racing as he tried to understand the impossible situation. Mark had entered this room with his cousin, yet only one man remained, and it was not the owner of the Red House. Had Mark killed his relative and escaped through the window? That seemed impossible given his kind personality, but the facts were undeniable. The other guests were still laughing in the garden, unaware that a tragedy had occurred just feet away from them. Bill realized they had to act quickly, but he felt paralyzed by the gravity of the scene. He looked at Cayley, who seemed to be struggling to maintain his professional control. The butler stood up, wiping his brow with a white handkerchief, and insisted that they lock the door immediately to preserve the evidence before calling the local police to investigate this inexplicable mystery.",
+      "The decision to lock the door felt like a final act of closing the lid on a heavy box of troubles. As they stepped out into the hallway, Bill glanced back at the heavy wooden door one last time, wondering what truly happened during those minutes of silence. The atmosphere in the house had completely shifted; the luxury and joy of the afternoon were replaced by an icy, creeping dread. They walked toward the library where the other guests were gathered, trying to keep their faces neutral so as not to alarm anyone prematurely. Every step felt heavy as Bill considered how his life had changed in just a single hour. He knew that the authorities would arrive soon, but he also knew that the truth behind the closed door might be far more complex than any simple crime they could imagine right now.",
+      "Bill and Cayley walked slowly back toward the terrace, trying to hide their inner turmoil from the rest of the party. The guests were still enjoying the sunshine, completely unaware of the grim scene they had just left in the study. Bill felt a strange tension in the air as he observed his companions, who were laughing and drinking as if the world were perfect. He looked at Cayley, who moved with a stiff, unnatural posture, clearly struggling to keep up his usual appearance of calm composure. It was difficult for Bill to pretend that everything was normal when his mind was filled with the image of the dead man on the floor. Every cheerful comment from a guest felt like a sharp jab, highlighting the horrifying distance between the happy garden party and the dark mystery that lay waiting behind the locked door.",
+      "As they reached the others, Bill decided it was time to involve Antony Gillingham, who possessed a sharp mind for unraveling puzzles. He pulled Antony aside and whispered the terrible news, watching as the man’s expression shifted from lighthearted interest to deep, analytical focus. Antony did not panic or scream; instead, he grew remarkably quiet and thoughtful, his eyes scanning the area as if he were already hunting for hidden clues. He asked a few brief, pointed questions about the study and the state of the room. Bill appreciated this cool reaction, finding comfort in the presence of someone who did not break under pressure. With the news now shared, a small but significant weight felt lifted from Bill’s shoulders, as he knew they now had an ally who was truly capable of uncovering the truth.",
+      "The afternoon sun began to dip lower, casting long, eerie shadows across the manicured lawn of the Red House. Bill, Cayley, and Antony moved toward the house, their voices hushed to avoid drawing attention from the other visitors. The weight of the situation started to sink in as they approached the terrace doors, knowing that the police would arrive soon to demand explanations. Antony paused for a moment to inspect the ground near the study window, looking for any signs of footsteps in the soft soil. There was very little evidence to see, yet he seemed satisfied with his brief observation. They entered the hallway, the cool air inside greeting them like a warning. The house, which had felt so inviting earlier that day, now stood tall and silent, a place where secrets were buried deep beneath the floorboards.",
+      "Antony walked into the study with careful steps, his eyes moving across the room like a hawk looking for prey. He did not touch anything yet, but he examined the position of the body and the scattered papers on the floor. It was clear that a struggle had taken place, yet the room remained largely in order, which struck him as quite peculiar. Cayley watched him from the doorway, his face pale and his hands shaking slightly, though he tried to hide his fear behind a mask of indifference. Antony noticed the open window and the missing letter opener, a detail that stood out in the otherwise tidy workspace. He knelt down to get a better look at the carpet, searching for tiny clues like dust or threads that might point to a secret. The air in the study felt heavy with the weight of the crime.",
+      "He turned his attention to the locked door, testing the handle with a firm but gentle touch to ensure it was truly secure. Bill leaned against the wall, watching his friend work with growing admiration for his calm and logical approach to the tragedy. Antony wondered aloud why a man would choose to lock himself inside his own study, especially if he expected danger to arrive at his doorstep. He pointed out the dusty bookshelves and the thick curtains, suggesting that the killer might have hidden in plain sight before making his move. There was no sign of a forced entry, which meant the culprit was likely someone familiar to the victim. Every piece of furniture became a potential witness in Antony’s eyes, and he carefully noted the placement of each item, creating a mental map of the entire room.",
+      "Finally, Antony stood up and walked toward the fireplace, looking for any burnt remains of documents that might explain the victim's final moments. He found only grey ashes, but they were still warm, which suggested the fire had been active quite recently. This finding changed their timeline significantly, meaning someone had been in the study much later than they first assumed. He shared this discovery with Bill, whose eyes widened in surprise at the possibility of a recent intruder. They realized that the mystery was far more complex than they had previously believed, with hidden enemies hiding in the shadows of the Red House. The silence of the room was broken only by their quiet voices as they pieced together the fragments of evidence. They felt the cold truth that the murderer was likely still nearby, watching their every move from within the house.",
+      "Antony stepped away from the fireplace and moved toward the heavy oak desk that dominated the center of the room. He ran his fingers along the dark wood, feeling for any secret mechanism or hidden drawer that might contain the secrets of Mark Ablett. Cayley shifted his position by the door, his throat moving as if he were trying to swallow his own anxiety. Antony did not seem to notice, his mind completely focused on the small scratch he discovered near the inkwell. It was a faint, jagged line that suggested something metal had been dragged across the surface in a moment of panic. He looked at the floor again, tracing the path from the desk to the center of the rug where the body lay. Every movement he made was deliberate and slow, painting a clear picture of the violent encounter that had shattered the peace of the Red House.",
+      "Bill watched his friend with a mixture of curiosity and growing dread, feeling the walls of the study closing in on them. He noticed that the room, while seemingly orderly, held a dark history in every corner. Antony turned to look at the window again, his eyes narrowing as he considered the distance between the sill and the bushes outside. He noted that the drop was not high, making an escape possible for someone with a quick stride. Antony mentioned that the killer did not necessarily need to be a stranger to the house, but rather someone who knew exactly where to go to avoid detection. He stood in the middle of the room, turning in a full circle as if trying to feel the presence of the phantom intruder who had vanished into the night without leaving a single footprint behind.",
+      "As the evening sun began to fade, casting long shadows across the floorboards, Antony felt he had gathered enough information for now. He gestured for Cayley and Bill to join him near the desk, his expression serious and resolved. He explained that the evidence gathered from the fireplace and the desk provided a new path for their investigation. They would need to speak with the other houseguests, as the killer had likely left a trail of lies that would eventually unravel under careful questioning. Cayley nodded, though his eyes remained fixed on the floor, avoiding any direct contact with Antony. The air in the study felt charged with anticipation, a prelude to the difficult days ahead. They were no longer just guests in a mansion; they were hunters tracking a dangerous animal through the corridors of a labyrinthine mystery that demanded an immediate and decisive conclusion."
+    ],
+    tr: [
+      "Red House'da parlak ve güzel bir öğleden sonraydı. Evin sahibi Mark Ablett, arkadaşları için bir parti veriyordu. Herkes sıcak güneşin ve bahçenin tadını çıkararak neşeli bir ruh halindeydi. Konuklar arasında, bu çevreye yeni katılan genç bir adam olan Bill Beverley de vardı. Bill herkesle tanışmaktan biraz çekiniyordu ancak ortamı misafirperver buldu. Mark, misafirlerinin harika vakit geçirmesini isteyen nazik bir ev sahibiydi. Grupların arasında zarif bir şekilde hareket ediyor, gülüyor ve yurt dışındaki yaşamı hakkında hikayeler paylaşıyordu. Büyük ve eski ev, kalın taş duvarlarının ardında pek çok sır saklayarak bahçenin ortasında gururla yükseliyordu. Her şey mükemmel görünüyordu ve konuklar birkaç günlük lüks ve huzur için yoğun şehirden uzaklaşmaktan mutluydu.",
+      "Aniden, Mark'ın kuzeni Robert Ablett'in Avustralya'dan beklenmedik bir şekilde gelmesiyle havada garip bir gerginlik oluştu. Mark, akrabasını gördüğünde gözle görülür şekilde rahatsız oldu. Kuzenler yıllardır konuşmamışlardı ve yeniden bir araya gelmeleri pek de mutlu bir olay değildi. Robert, Red House'un zarif dünyasına uymayan kaba ve gürültücü bir adamdı. Çalışma odasında Mark ile özel olarak konuşmayı talep etti. Diğer konuklar Mark'ın ruh halindeki değişikliği fark ettiler ve kendi aralarında fısıldaşmaya başladılar. Dikkatli biri olan Bill, iki adamın çalışma odasına doğru yürüyüşünü izledi. Önemli ve belki de tehlikeli bir şeyin yaşanmak üzere olduğunu hissetti. Bahçe daha soğuk geldi ve diğer konukların kahkahaları boş tınladı. Çalışma odasının ağır kapısı arkalarından kapandığında bir kaygı duygusu büyüdü.",
+      "Dakikalar geçti ve evdeki sessizlik ağırlaşarak boğucu bir hal aldı. Bill, ev sahibinden endişe duyduğu için bir şeyler duyup duyamayacağını anlamak amacıyla çalışma odasının penceresine doğru kısa bir yürüyüş yapmaya karar verdi. Bir silah sesini andıran ani ve keskin bir gürültü duydu. Kalbi hızla çarpmaya başladı ve yüksek sesle vurarak çalışma odasının kapısına koştu. İçeriden hiçbir cevap gelmedi. Titreyen ellerle Bill ve uşak Cayley kapıyı zorlayarak açtılar. Korkunç bir görüntüyle karşılaştılar. Oda dağınıktı ve pencere ardına kadar açıktı. Mark Ablett kayıptı ve yerde, Mark olmadığı çok açık olan bir adamın cesedi yatıyordu. Red House'un gizemi başlamıştı ve huzurlu hafta sonu, soru işaretleri ve korku dolu bir kabusa dönüşmüştü.",
+      "Bill ve Cayley yerdeki cesedin başında dururken oda ölüm sessizliğine gömülmüştü. Bu, az önce kabaca gelen adam Robert Ablett'ten başkası değildi. Paltosu yırtılmıştı ve yüzünde Bill'in iliklerine işleyen derin bir şaşkınlık ifadesi vardı. Peki ya Mark neredeydi? Çalışma odasının penceresi ardına kadar açıktı ve bahçeden gelen serin esintiyi içeri alıyordu ancak ev sahibinden hiçbir iz yoktu. Cayley solgun ve şok içindeydi; her zamanki sakin uşak tavrı, böylesine korkunç bir olayın ağırlığı altında yok oluyordu. Nabzını kontrol etmek için diz çöktü ancak elleri emin olamayacak kadar çok titriyordu. Odadaki her şey şiddetli bir boğuşmayı işaret ediyor gibiydi, yine de evin dışarısı, sanki duvarlar koridorda bekleyen misafirlerden karanlık bir sırrı saklıyormuş gibi tekinsiz bir sessizliğe bürünmüştü.",
+      "Bill bu imkansız durumu anlamaya çalışırken zihninin hızla çalıştığını hissediyordu. Mark bu odaya kuzeniyle birlikte girmişti, ancak içeride sadece bir adam kalmıştı ve o da Red House'un sahibi değildi. Mark kuzenini öldürüp pencereden kaçmış mıydı? Nazik kişiliği göz önüne alındığında bu imkansız görünüyordu ama gerçekler ortadaydı. Diğer misafirler bahçede hala gülüşüyor, birkaç metre ötelerinde bir facianın yaşandığından habersizce vakit geçiriyorlardı. Bill hızlı hareket etmeleri gerektiğini anladı ancak sahnenin ağırlığı karşısında felç olmuş gibiydi. Mesleki kontrolünü sürdürmekte zorlanan Cayley'e baktı. Uşak, beyaz bir mendille alnını silerek ayağa kalktı ve bu açıklanamaz gizemi araştırması için yerel polisi aramadan önce delilleri korumak adına kapıyı hemen kilitlemeleri gerektiğinde ısrar etti.",
+      "Kapıyı kilitleme kararı, sorunlarla dolu ağır bir kutunun kapağını son kez kapatmak gibiydi. Koridora çıktıklarında Bill, o sessiz dakikalarda gerçekte neler olduğunu merak ederek ağır ahşap kapıya son bir kez baktı. Evdeki atmosfer tamamen değişmişti; öğleden sonranın lüksü ve neşesinin yerini buz gibi, ürpertici bir dehşet almıştı. Kimseyi erkenden telaşlandırmamak için yüzlerini nötr tutmaya çalışarak diğer misafirlerin toplandığı kütüphaneye doğru yürüdüler. Bir saat içinde hayatının nasıl değiştiğini düşünen Bill'in her adımı çok ağırdı. Yetkililerin yakında geleceğini biliyordu ancak kapalı kapının ardındaki gerçeğin, şu an hayal edebilecekleri herhangi bir basit suçtan çok daha karmaşık olabileceğini de hissediyordu.",
+      "Bill ve Cayley, içlerindeki kargaşayı partinin geri kalanından gizlemeye çalışarak yavaşça terasa geri yürüdüler. Konuklar, çalışma odasında yeni bıraktıkları vahim sahneden tamamen habersiz bir şekilde güneşin tadını çıkarmaya devam ediyorlardı. Bill, sanki dünya kusursuzmuş gibi gülüp içen arkadaşlarını gözlemlerken havada tuhaf bir gerginlik hissetti. Normaldeki sakin duruşunu korumakta zorlandığı belli olan, kasılmış ve doğal olmayan bir duruşla hareket eden Cayley'ye baktı. Zihni yerdeki ölü adamın görüntüsüyle doluyken her şey yolundaymış gibi davranmak Bill için zordu. Bir konuğun her neşeli yorumu, mutlu bahçe partisi ile kilitli kapının ardında bekleyen karanlık gizem arasındaki dehşet verici mesafeyi vurgulayan keskin bir darbe gibi hissettiriyordu.",
+      "Diğerlerinin yanına vardıklarında Bill, bulmacaları çözme konusunda keskin bir zihne sahip olan Antony Gillingham'ı işin içine dahil etme vaktinin geldiğine karar verdi. Antony'yi bir kenara çekip korkunç haberi fısıldadı ve adamın yüz ifadesinin neşeli bir meraktan derin, analitik bir odaklanmaya geçişini izledi. Antony panik yapmadı ya da çığlık atmadı; bunun yerine oldukça sessiz ve düşünceli bir hal aldı, gözleri sanki gizli ipuçlarını arıyormuş gibi etrafı tarıyordu. Çalışma odası ve odanın durumu hakkında birkaç kısa ve net soru sordu. Bill, bu soğukkanlı tepkiyi takdir etti ve baskı altında yıkılmayan birinin varlığında teselli buldu. Haberin paylaşılmasıyla birlikte, gerçeği ortaya çıkarma konusunda gerçekten yetenekli bir müttefikleri olduğunu bildiği için Bill'in omuzlarından küçük ama önemli bir yük kalkmış gibi hissetti.",
+      "Öğleden sonra güneşi alçalmaya başladı ve Red House'un bakımlı çimleri üzerinde uzun, ürkütücü gölgeler oluşturdu. Bill, Cayley ve Antony, diğer ziyaretçilerin dikkatini çekmemek için seslerini alçaltarak eve doğru ilerlediler. Polisin kısa süre içinde gelip açıklama isteyeceğini bildiklerinden, çalışma odasının kapılarına yaklaştıklarında durumun ağırlığı iyice çökmeye başladı. Antony, yumuşak toprakta herhangi bir ayak izi belirtisi aramak için çalışma odasının penceresinin yakınındaki zemini incelemek üzere bir anlığına durdu. Görülecek çok az kanıt vardı, ancak kısa gözlemiyle tatmin olmuş görünüyordu. Koridora girdiler, içerideki serin hava onları bir uyarı gibi karşıladı. Günün erken saatlerinde çok davetkar hissettiren ev, şimdi yüksek ve sessiz duruyor, sırların döşemelerin altında derinlere gömüldüğü bir yer haline geliyordu.",
+      "Antony, avını arayan bir şahin gibi gözlerini odada gezdirerek çalışma odasına dikkatli adımlarla girdi. Henüz hiçbir şeye dokunmadı ama cesedin konumunu ve yerdeki dağınık kağıtları inceledi. Bir boğuşmanın yaşandığı belliydi ancak oda genel olarak düzenli görünüyordu, bu da ona oldukça tuhaf geldi. Cayley onu kapı eşiğinden izliyordu; yüzü solgun, elleri hafifçe titriyordu ama korkusunu bir ilgisizlik maskesinin ardında saklamaya çalışıyordu. Antony, açık pencereyi ve eksik olan mektup açacağını fark etti; bu, düzenli çalışma alanındaki göze çarpan bir ayrıntıydı. Halıya daha yakından bakmak için diz çöktü, bir sırra işaret edebilecek toz veya iplik gibi küçük ipuçlarını aradı. Çalışma odasındaki hava, suçun ağırlığıyla ağırlaşmış gibiydi.",
+      "Kilitli kapıya yöneldi ve kapının gerçekten güvenli olduğundan emin olmak için kolu nazik ama kararlı bir dokunuşla kontrol etti. Bill duvara yaslanmış, arkadaşının trajediye karşı sakin ve mantıklı yaklaşımını artan bir hayranlıkla izliyordu. Antony, özellikle kapısına tehlike geleceğini bekliyorsa, bir adamın neden kendi çalışma odasına kilitlenmeyi seçeceğini yüksek sesle merak etti. Tozlu kitap raflarını ve kalın perdeleri işaret ederek katilin hamlesini yapmadan önce herkesin gözü önünde saklanmış olabileceğini öne sürdü. Zorla girildiğine dair bir işaret yoktu, bu da failin muhtemelen kurbana tanıdık biri olduğu anlamına geliyordu. Antony'nin gözünde her mobilya parçası potansiyel bir tanığa dönüştü ve tüm odanın zihinsel bir haritasını çıkararak her bir eşyanın yerini dikkatlice not etti.",
+      "Sonunda Antony ayağa kalktı ve kurbanın son anlarını açıklayabilecek belgelerin yanmış kalıntılarını aramak için şömineye doğru yürüdü. Sadece gri küller buldu ancak bunlar hala sıcaktı, bu da ateşin çok yakın bir zamanda yandığını gösteriyordu. Bu bulgu, zaman çizelgelerini önemli ölçüde değiştirdi; yani birisi çalışma odasında ilk tahmin ettiklerinden çok daha geç bir saatte bulunmuştu. Bu keşfini, yakın zamanda bir davetsiz misafir olasılığı karşısında gözleri şaşkınlıkla açılan Bill ile paylaştı. Gizemli düşmanların Red House'un gölgelerinde saklandığı, meselenin daha önce inandıklarından çok daha karmaşık olduğunu fark ettiler. Delil parçalarını bir araya getirirken odanın sessizliği sadece kısık sesleriyle bozuluyordu. Katilin muhtemelen hala yakınlarda olduğunu ve evin içinden her hareketlerini izlediğini soğuk bir gerçeklik gibi hissettiler.",
+      "Antony şömineden uzaklaştı ve odanın merkezine hakim olan ağır meşe masaya doğru ilerledi. Parmaklarını koyu renkli ahşap üzerinde gezdirerek, Mark Ablett'in sırlarını barındırabilecek herhangi bir gizli mekanizma veya gizli çekmece aradı. Cayley kapının yanında pozisyonunu değiştirdi, boğazı sanki kendi endişesini yutmaya çalışıyormuş gibi hareket ediyordu. Antony bunu fark etmemiş görünüyordu, zihni tamamen mürekkep hokasının yanında keşfettiği küçük çiziğe odaklanmıştı. Bu, bir panik anında masanın yüzeyinde metal bir şeyin sürüklendiğini gösteren hafif ve pürüzlü bir çizgiydi. Yere tekrar baktı, masadan cesedin yattığı halının ortasına giden yolu takip etti. Yaptığı her hareket kasıtlı ve yavaştı, Red House'un huzurunu bozan şiddetli karşılaşmanın net bir resmini çiziyordu.",
+      "Bill, arkadaşını merak ve büyüyen bir korku karışımıyla izliyor, çalışma odasının duvarlarının üzerlerine kapandığını hissediyordu. Odanın görünüşte düzenli olmasına rağmen her köşesinde karanlık bir tarih barındırdığını fark etti. Antony pencereye bakmak için tekrar döndü, gözlerini kısarak pencere pervazı ile dışarıdaki çalılar arasındaki mesafeyi değerlendirdi. Düşüşün yüksek olmadığını, hızlı adımları olan biri için kaçışın mümkün olduğunu kaydetti. Antony, katilin eve yabancı olması gerekmediğini, aksine fark edilmemek için tam olarak nereye gideceğini bilen biri olduğunu belirtti. Odanın ortasında durdu ve tam bir tur atarak, geride tek bir ayak izi bile bırakmadan geceye karışan hayalet davetsiz misafirin varlığını hissetmeye çalışıyormuş gibi etrafına bakındı.",
+      "Akşam güneşi solmaya ve yer döşemeleri üzerinde uzun gölgeler oluşturmaya başladığında, Antony şimdilik yeterince bilgi topladığını hissetti. Cayley ve Bill'e masanın yanında kendisine katılmaları için işaret etti, ifadesi ciddi ve kararlıydı. Şömineden ve masadan toplanan kanıtların soruşturmaları için yeni bir yol sağladığını açıkladı. Diğer ev konuklarıyla konuşmaları gerekecekti, çünkü katil muhtemelen dikkatli bir sorgulama altında sonunda çözülecek bir yalanlar silsilesi bırakmıştı. Cayley başını salladı, ancak gözleri Antony ile doğrudan temas kurmaktan kaçınarak yere sabitlenmiş durumdaydı. Çalışma odasındaki hava beklentiyle yüklüydü, önlerindeki zor günlerin bir habercisiydi. Artık sadece bir konakta misafir değillerdi; anında ve kesin bir sonuç gerektiren, labirent gibi bir gizemin koridorlarında tehlikeli bir hayvanı izleyen avcılardı."
+    ],
+    words: {
+      "host": "ev sahibi",
+      "guest": "misafir",
+      "tension": "gerginlik",
+      "study": "çalışma odası",
+      "observant": "gözlemci",
+      "gunshot": "silah sesi",
+      "pulse": "nabız",
+      "struggle": "boğuşma",
+      "tragedy": "facia",
+      "gravity": "ağırlık/ciddiyet",
+      "evidence": "delil",
+      "dread": "dehşet",
+      "turmoil": "kargaşa",
+      "composure": "sükunet",
+      "unravel": "çözmek",
+      "ally": "müttefik",
+      "eerie": "ürkütücü",
+      "manicured": "bakımlı",
+      "peculiar": "tuhaf, garip",
+      "indifference": "umursamazlık, kayıtsızlık",
+      "culprit": "suçlu, fail",
+      "victim": "kurban",
+      "fragments": "parçalar, kırıntılar",
+      "intruder": "davetsiz misafir, izinsiz giren",
+      "mechanism": "mekanizma",
+      "anxiety": "endişe",
+      "jagged": "pürüzlü",
+      "deliberate": "kasıtlı",
+      "prelude": "başlangıç",
+      "labyrinthine": "labirent gibi"
+    }
+  },
+      {
+    id: 'detective_red_house_2',
+    title: "The Red House Mystery - Part 2",
+    author: 'A. A. Milne',
+    level: 'B1',
+    coverUrl: '/covers/detective_red_house_2.webp',
+    en: [
+      "Bill Beverley and Antony Gillingham walked through the beautiful gardens of the Red House. The afternoon sun was warm and the air smelled of fresh summer flowers. Mark Ablett, the master of the house, was preparing for a party. He had recently returned from Australia, and his guests were very excited to meet him after so many years. Bill was feeling a little nervous because he was a new guest, but Antony was calm and friendly. They watched the gardener working carefully on the green lawn while they walked toward the large, stone building. The house looked quiet, but it held many secrets. Antony noticed that the windows were all closed tight. He wondered why such a bright day could feel so silent inside. They kept moving forward, talking about the pleasant weather and the interesting history of the grand old mansion.",
+      "Suddenly, they heard a loud, sharp noise coming from the direction of the study. It sounded like a heavy object hitting the wooden floor. Both men stopped walking and looked at each other with surprise. They stayed very still, listening for any other sounds, but the house remained completely quiet once again. Bill asked if something had fallen, but Antony looked troubled. He moved closer to the door of the study, his eyes focused on the dark wood. There was no movement from within the room. The atmosphere around them changed immediately; the warm feeling of the garden disappeared, replaced by a cold sense of mystery. They knew that Mark had been in the study alone just a few minutes ago, but now there was no sign of life behind the heavy, locked door.",
+      "Antony turned the handle, but the door was firmly locked from the inside. He knocked softly, calling Mark's name, but nobody answered. A strange feeling of dread filled the hallway. They pushed the door again, but it did not move. Antony decided to look through the keyhole, yet he could see nothing but darkness. He felt a bead of sweat on his forehead. They knew they needed to enter the room as soon as possible. Bill stepped back while Antony tried to force the lock with his small metal tool. The tension was high, and every second felt like an hour. They feared that something terrible had happened to their host. With a final, strong push, the wood groaned and the lock finally gave way, opening just enough for them to see what was hidden inside the study.",
+      "The heavy oak door swung open with a slow, complaining creak that echoed through the quiet house. Antony stepped inside cautiously, his eyes quickly scanning the room for Mark. The study was filled with shadows, as the heavy curtains were drawn against the bright afternoon light. In the center of the room, Mark Ablett lay motionless on the floor. Beside him, a small, dark object rested, but there was no sign of the person who had made the earlier sound. The air in the study felt heavy and stale, smelling faintly of tobacco and something metallic. Antony knelt beside Mark, checking for a heartbeat, but his face grew pale. He realized with a sudden, sinking feeling that the man on the rug was no longer alive. The mystery had deepened, and the laughter of the guests outside seemed like a memory from a different, happier world.",
+      "Bill stood by the door, his heart hammering against his ribs as he watched Antony. He felt a wave of fear wash over him, but he knew they had to act quickly. He wondered how anyone could have left the room while they were standing right outside in the hall. Every window was bolted shut, and the only door had been locked firmly from the inside. It was impossible, yet the evidence was right there before their eyes. Antony stood up slowly, wiping his hands on a handkerchief. He looked at Bill with a serious expression, his usual smile completely gone. He pointed toward the open window, which they had not noticed before behind the heavy drapes. Someone had clearly escaped through this way, leaving behind a scene of silence and tragedy that would change everything for the people at the Red House.",
+      "Antony moved toward the window and inspected the frame carefully. He noticed a few strange marks on the wood that suggested a forced exit. He looked out at the garden, searching for any footprints in the soft soil, but the ground seemed undisturbed. This was a puzzle that required more than just common sense; it needed a detective who could see what others missed. He walked back to the desk, noticing a piece of paper that had fallen behind the inkstand. He picked it up and read the few lines of messy writing, feeling a sense of urgency. The party would start soon, and the other guests would expect to see their host. They had to decide whether to call for help immediately or try to uncover the truth themselves first. Antony looked at Bill, knowing that their lives were about to become very complicated indeed.",
+      "Antony held the mysterious piece of paper in his steady hands, his eyes narrowing as he read the shaky handwriting once more. It was a note, but it felt more like a warning hidden in plain sight. He wondered if Mark had written it himself before his final, tragic moment. The mystery grew thicker as he considered the locked room and the window that now stood wide open to the cool evening breeze. Bill waited anxiously, his eyes darting toward the heavy, silent door, expecting the house guests to come searching for their missing host at any second. Time was running out, and the pressure of the situation weighed heavily upon them both. Antony decided they must keep this secret until they understood the hidden connections within the house. The quiet study felt like a prison, and every shadow seemed to hide a dark truth waiting to be discovered by a careful observer.",
+      "Bill stepped closer to Antony and whispered that they should call for the police right away, but Antony shook his head slowly. He believed that the authorities would only disturb the scene before the true evidence could be properly studied. He wanted to solve the riddle himself, using his sharp mind to outsmart the person who had committed this terrible crime. They looked around the room once more, noticing how the sunlight shifted across the expensive furniture. The house was supposed to be a place of laughter and celebration, but now it held a silent, painful story that needed a voice. Antony suggested that they should act as if nothing had happened for the next hour. This plan was dangerous, but it would give them the opportunity to look for more clues without drawing attention to themselves while the rest of the guests enjoyed their afternoon tea in the garden.",
+      "The two men moved quietly across the room, ensuring that they left everything exactly as they had found it to avoid leaving their own marks. Antony carefully tucked the paper into his pocket, his mind already working on theories about the visitor who had vanished into thin air. He knew that the killer must have been someone who knew the house well, perhaps someone who had been invited to the party. The thought made him realize that the danger might still be lurking nearby, hidden behind a friendly face or a polite smile. Bill felt a shiver run down his spine, but he trusted Antony completely. They stepped back into the hallway, closing the study door with extreme caution. As they turned to join the others, they put on their best masks of calm, knowing that the real game of secrets and lies had only just begun at the Red House.",
+      "Antony and Bill walked toward the terrace where the other guests were enjoying their drinks. The sun was warm, and the laughter of the group felt strange compared to the cold silence they had just left behind in the study. Antony moved with a calm grace, carefully hiding his anxiety. He watched the faces of everyone present, wondering which one of them could hide such a dark secret. He noticed Mrs. Cayley sitting near the edge, her expression polite but watchful, her eyes constantly scanning the room. She was a woman who clearly liked to be in control of her surroundings. Antony decided that he would talk to her later, hoping to learn something about Mark's recent activities. For now, he had to play the role of an easy-going guest. He sat down and started a light conversation with his neighbor, careful to keep his voice steady and natural.",
+      "The afternoon dragged on slowly for the two detectives, as every minute spent in the company of the guests felt like an hour. Bill tried to focus on the conversation, but his mind constantly returned to the study and the tragic discovery they had made earlier. He looked at Antony for guidance, watching how he effortlessly engaged with others while keeping his sharp eyes fixed on every movement. Antony shared a joke, and for a fleeting moment, the weight of the investigation felt lighter. However, he knew that the killer could be standing just a few feet away, perhaps even enjoying the same tea. He kept reminding himself that they needed to act perfectly normal until they could sneak back inside the study. Every smile Antony offered was a mask designed to protect the truth, ensuring that no one would suspect their true purpose at the house.",
+      "As the sun began to sink lower in the sky, the atmosphere in the garden changed, and a cool breeze started to blow through the trees. Antony saw a perfect opportunity to step away from the crowd. He whispered a quick excuse to his host, claiming he needed to write an important letter. Bill followed him with a polite nod, and together they made their way back toward the quiet house. The hallway was empty, and the shadows seemed longer than before, stretching across the floor like reaching fingers. They reached the door of the study, heartbeats racing in the anticipation of what they might find next. Antony took a deep breath, reaching for the handle with a firm grip. He knew they were about to enter a world of dangerous secrets, and there was no turning back once the door was wide open.",
+      "Antony and Bill entered the study again, locking the door firmly behind them. The room felt colder and more oppressive than before, as if the walls were holding onto the secrets of the departed. They quickly searched the desk for any hidden papers or clues that might have been overlooked during their initial inspection. Antony noticed a small, peculiar scratch on the floorboards near the heavy curtains. He knelt down to examine it more closely, realizing it was not merely an accident but a deliberate mark made during a struggle. His eyes met Bill's, and they both understood the significance of this discovery. Someone had tried to hide something behind the heavy fabric, perhaps a weapon or a vital document. The air in the room was thick with tension as they prepared to move the curtain, hoping that the mystery would finally begin to unravel in the dim light.",
+      "With a steady hand, Antony pulled back the thick velvet curtains, revealing a dark, dusty corner that had been cleverly concealed from view. Behind the fabric, he found a secret panel in the wall, slightly ajar as if someone had left it open in their haste to escape the scene. He gestured for Bill to bring the flashlight closer, and the beam cut through the darkness to illuminate a small, hidden safe embedded deep within the wood. It was clearly the source of the recent trouble at the Red House. Antony examined the lock, noting that it had been damaged by a sharp tool. He realized that the killer had likely broken into this safe to take something of great value, leading directly to the terrible tragedy that occurred earlier that afternoon. The pieces of the puzzle were finally starting to fall into place, revealing a motive that involved greed rather than just simple hatred.",
+      "The two friends stood in the silent room, reflecting on the grave implications of what they had discovered inside the wall. Antony knew that the culprit had likely seen them approaching and decided to hide their tracks before joining the guests on the terrace. He checked his watch, noting the late hour, and whispered to Bill that they must act quickly before their absence was noticed by others. They decided to leave the study exactly as they had found it, ensuring that the criminal would remain unaware that their secret hiding place had been uncovered. As they stepped out into the hallway, the house felt even more dangerous than before, filled with people who were keeping secrets behind smiles. They walked back toward the lively garden, ready to confront the murderer with their new knowledge while maintaining the pretense of being nothing more than simple visitors enjoying a sunny afternoon."
+    ],
+    tr: [
+      "Bill Beverley ve Antony Gillingham, Red House'un güzel bahçelerinde yürüyorlardı. Öğleden sonra güneşi sıcaktı ve hava taze yaz çiçekleri kokuyordu. Evin sahibi Mark Ablett bir partiye hazırlanıyordu. Yakın zamanda Avustralya'dan dönmüştü ve misafirleri, bunca yıldan sonra onunla tanışacakları için çok heyecanlıydı. Bill yeni bir misafir olduğu için biraz gergindi ama Antony sakin ve arkadaş canlısıydı. Büyük, taşa yapılmış binaya doğru yürürken bahçıvanın yeşil çimler üzerinde dikkatlice çalıştığını izlediler. Ev sessiz görünüyordu ama pek çok sır saklıyordu. Antony tüm pencerelerin sıkıca kapalı olduğunu fark etti. Böylesine parlak bir günün içeride neden bu kadar sessiz hissettirdiğini merak etti. Hoş hava ve büyük eski köşkün ilginç tarihi hakkında konuşarak ilerlemeye devam ettiler.",
+      "Aniden, çalışma odasından gelen yüksek ve keskin bir ses duydular. Sanki ağır bir nesne ahşap zemine çarpıyor gibiydi. Her iki adam da yürümeyi bıraktı ve şaşkınlıkla birbirlerine baktılar. Çok hareketsiz kaldılar, başka sesler duymak için kulak kesildiler ama ev tekrar tamamen sessizliğe gömüldü. Bill bir şeyin düşüp düşmediğini sordu ancak Antony endişeli görünüyordu. Gözleri koyu renkli ahşaba odaklanmış bir halde çalışma odasının kapısına yaklaştı. İçeriden hiçbir hareket gelmiyordu. Etraflarındaki atmosfer aniden değişti; bahçenin sıcak hissi kayboldu ve yerini soğuk bir gizem duygusuna bıraktı. Mark'ın sadece birkaç dakika önce odasında yalnız olduğunu biliyorlardı ancak şimdi ağır ve kilitli kapının ardında yaşam belirtisi yoktu.",
+      "Antony kolu çevirdi ama kapı içeriden sıkıca kilitlenmişti. Hafifçe vurdu, Mark'ın ismini seslendi ama kimse cevap vermedi. Koridoru tuhaf bir korku hissi doldurdu. Kapıyı tekrar ittiler ama hareket etmedi. Antony anahtar deliğinden bakmaya karar verdi ancak karanlıktan başka hiçbir şey göremedi. Alnında bir ter damlası hissetti. Odaya bir an önce girmeleri gerektiğini biliyorlardı. Bill geri çekilirken Antony küçük metal aletiyle kilidi zorlamaya çalıştı. Gerilim yüksekti ve her saniye bir saat gibi geliyordu. Ev sahiplerine korkunç bir şey olduğundan endişeleniyorlardı. Son ve güçlü bir itişle ahşap gıcırdadı ve kilit sonunda pes ederek çalışma odasında saklanan şeyi görmelerine yetecek kadar açıldı.",
+      "Ağır meşe kapı, sessiz evin içinde yankılanan yavaş ve şikayet eder gibi bir gıcırtıyla açıldı. Antony, gözleriyle hızla odayı tarayarak Mark'ı aramak için temkinli bir şekilde içeri adım attı. Çalışma odası, ağır perdelerin parlak öğleden sonra ışığına karşı çekilmesiyle gölgelerle doluydu. Odanın ortasında Mark Ablett hareketsiz bir şekilde yerde yatıyordu. Yanında küçük, karanlık bir nesne duruyordu ama daha önceki sesi çıkaran kişiye dair hiçbir iz yoktu. Çalışma odasındaki hava ağır ve bayattı; belli belirsiz tütün ve metalik bir şey kokuyordu. Antony, Mark'ın yanına diz çöktü ve nabzını kontrol etti, ancak yüzü bembeyaz oldu. Halının üzerindeki adamın artık hayatta olmadığını anladığında içine bir ürperti çöktü. Gizem derinleşmişti ve dışarıdaki misafirlerin kahkahaları, başka ve daha mutlu bir dünyadan kalan bir anı gibi geliyordu.",
+      "Bill, Antony'yi izlerken kalbi kaburgalarına vururcasına kapının yanında duruyordu. Üzerine bir korku dalgası geldiğini hissetti ama hızlı hareket etmeleri gerektiğini biliyordu. Koridorda tam kapının önünde dururken birinin odadan nasıl çıkabildiğini merak etti. Her pencere sürgülüydü ve tek kapı içeriden sıkıca kilitlenmişti. Bu imkansızdı, yine de kanıtlar gözlerinin önündeydi. Antony yavaşça ayağa kalktı ve ellerini bir mendille sildi. Her zamanki gülümsemesi tamamen kaybolmuş, ciddi bir ifadeyle Bill'e baktı. Ağır perdelerin arkasında daha önce fark etmedikleri açık pencereyi işaret etti. Birisi belli ki buradan kaçmış ve arkasında Red House'daki insanlar için her şeyi değiştirecek bir sessizlik ve trajedi sahnesi bırakmıştı.",
+      "Antony pencereye doğru ilerledi ve çerçeveyi dikkatlice inceledi. Ahşap üzerinde zorlanmış bir çıkışı işaret eden birkaç tuhaf iz fark etti. Yumuşak topraktaki ayak izlerini aramak için bahçeye baktı ama zemin el değmemiş görünüyordu. Bu, sağduyudan fazlasını gerektiren bir bulmacaydı; başkalarının gözden kaçırdıklarını görebilen bir dedektife ihtiyaç duyuyordu. Masaya geri yürüdü ve mürekkep hokkasının arkasına düşmüş bir kağıt parçası fark etti. Kağıdı yerden aldı ve karalama halindeki birkaç satırı okuyarak aciliyet hissetti. Parti yakında başlayacaktı ve diğer misafirler ev sahiplerini görmeyi bekleyeceklerdi. Hemen yardım çağırmaya mı yoksa gerçeği önce kendilerinin mi ortaya çıkarmaya çalışacaklarına karar vermeleri gerekiyordu. Antony, hayatlarının gerçekten çok karmaşık bir hal almak üzere olduğunu bilerek Bill'e baktı.",
+      "Antony gizemli kağıt parçasını sabit ellerinde tuttu, titrek el yazısını tekrar okurken gözlerini kıstı. Bu bir nottu ama daha çok göz önünde saklanmış bir uyarı gibi hissettiriyordu. Mark'ın bu notu son trajik anından önce kendisinin yazıp yazmadığını merak etti. Kilitli oda ve şimdi serin akşam esintisine sonuna kadar açılmış olan pencereyi düşündükçe gizem daha da derinleşiyordu. Bill endişeyle bekliyor, gözlerini ağır ve sessiz kapıya dikiyor, her an evdeki misafirlerin kayıp ev sahibini aramaya gelmesini bekliyordu. Zaman daralıyordu ve durumun baskısı ikisinin üzerinde de ağır bir yük oluşturuyordu. Antony, evdeki gizli bağlantıları anlayana kadar bu sırrı saklamaları gerektiğine karar verdi. Sessiz çalışma odası bir hapishane gibi hissettiriyordu ve her gölge, dikkatli bir gözlemci tarafından keşfedilmeyi bekleyen karanlık bir gerçeği saklıyor gibiydi.",
+      "Bill, Antony'ye yaklaştı ve hemen polisi aramaları gerektiğini fısıldadı ancak Antony başını yavaşça iki yana salladı. Yetkililerin, gerçek deliller düzgün bir şekilde incelenmeden önce olay yerini bozacağına inanıyordu. Bu korkunç suçu işleyen kişiyi zekasıyla alt etmek için bilmeceyi kendisi çözmek istiyordu. Odaya bir kez daha göz attılar ve güneş ışığının pahalı mobilyaların üzerinde nasıl yer değiştirdiğini fark ettiler. Ev, kahkaha ve kutlama dolu bir yer olmalıydı ancak şimdi bir sesi hak eden sessiz ve acı verici bir hikayeye ev sahipliği yapıyordu. Antony, önümüzdeki bir saat boyunca hiçbir şey olmamış gibi davranmalarını önerdi. Bu plan tehlikeliydi ancak misafirlerin geri kalanı bahçede öğleden sonra çaylarının tadını çıkarırken, dikkatleri üzerlerine çekmeden daha fazla ipucu aramalarına fırsat tanıyacaktı.",
+      "İki adam, kendi izlerini bırakmamak için her şeyi tam olarak buldukları gibi bıraktıklarından emin olarak odanın içinde sessizce hareket ettiler. Antony, kağıdı dikkatlice cebine yerleştirdi; zihni, havaya karışıp kaybolan ziyaretçi hakkındaki teoriler üzerinde çalışmaya başlamıştı bile. Katilin evi iyi bilen biri, belki de partiye davet edilmiş biri olması gerektiğini biliyordu. Bu düşünce, tehlikenin hala yakınlarda, dostça bir yüzün ya da kibar bir gülümsemenin ardında saklanıyor olabileceğini fark etmesini sağladı. Bill'in sırtından aşağı bir ürperti geçti ancak Antony'ye tamamen güveniyordu. Koridora geri döndüler ve çalışma odasının kapısını büyük bir dikkatle kapattılar. Diğerlerine katılmak için döndüklerinde, en sakin maskelerini takındılar; Red House'da sırların ve yalanların asıl oyununun daha yeni başladığını biliyorlardı.",
+      "Antony ve Bill, diğer misafirlerin içeceklerini yudumladığı terasa doğru yürüdüler. Güneş sıcaktı ve grubun kahkahaları, çalışma odasında bıraktıkları o soğuk sessizliğin yanında çok garip geliyordu. Antony, içindeki endişeyi dikkatle gizleyerek sakin bir zarafetle hareket etti. Oradaki herkesin yüzünü inceledi ve içlerinden hangisinin böyle karanlık bir sırrı saklayabileceğini merak etti. Bayan Cayley'nin kenarda oturduğunu fark etti; ifadesi kibar ama tetikteydi, gözleri sürekli odayı tarıyordu. Çevresini kontrol altında tutmayı seven bir kadın olduğu belliydi. Antony, onunla daha sonra konuşmaya ve Mark'ın son dönemdeki faaliyetleri hakkında bir şeyler öğrenmeye karar verdi. Şimdilik, rahat bir misafir rolünü oynaması gerekiyordu. Oturdu ve yanındaki kişiyle hafif bir sohbete başladı, sesini sabit ve doğal tutmaya özen gösterdi.",
+      "Öğleden sonra, iki dedektif için yavaş geçiyordu, çünkü misafirlerle geçirilen her dakika saatler gibi hissettiriyordu. Bill sohbete odaklanmaya çalıştı ancak aklı sürekli çalışma odasına ve daha önce yaptıkları trajik keşfe gidiyordu. Antony'ye rehberlik etmesi için baktı; onun başkalarıyla ne kadar zahmetsizce iletişim kurduğunu ve keskin gözlerini her hareketin üzerinde nasıl tuttuğunu gözlemledi. Antony bir espri yaptı ve kısa bir an için araştırmanın ağırlığı azaldı. Ancak katilin sadece birkaç adım ötede durabileceğini, hatta aynı çayı yudumluyor olabileceğini biliyordu. Çalışma odasına geri sızana kadar tamamen normal davranmaları gerektiğini kendine hatırlatıp duruyordu. Antony'nin sunduğu her gülümseme, gerçeği korumak için tasarlanmış bir maskedeydi ve kimsenin evdeki gerçek amaçlarından şüphelenmemesini sağlıyordu.",
+      "Güneş gökyüzünde alçalmaya başladığında, bahçedeki hava değişti ve ağaçların arasından serin bir rüzgar esmeye başladı. Antony, kalabalıktan uzaklaşmak için mükemmel bir fırsat yakaladı. Ev sahibine, önemli bir mektup yazması gerektiğini söyleyerek hızlı bir bahane uydurdu. Bill, nazik bir baş selamıyla onu takip etti ve birlikte sessiz eve doğru yollarına koyuldular. Koridor boştu ve gölgeler, yerden uzanan parmaklar gibi zemine yayılarak eskisinden daha uzun görünüyordu. Çalışma odasının kapısına ulaştıklarında, bir sonraki adımda ne bulacaklarının heyecanıyla kalpleri hızla çarpıyordu. Antony derin bir nefes aldı ve kapı kolunu sıkıca tuttu. Kapı ardına kadar açıldığında tehlikeli sırlar dünyasına gireceklerini ve artık geri dönüş olmadığını çok iyi biliyordu.",
+      "Antony ve Bill, kapıyı arkalarından sıkıca kilitleyerek tekrar çalışma odasına girdiler. Oda, sanki duvarlar ayrılanların sırlarını saklıyormuş gibi eskisinden daha soğuk ve baskıcı geliyordu. İlk incelemeleri sırasında gözden kaçmış olabilecek gizli kağıtları veya ipuçlarını bulmak için masayı hızla aradılar. Antony, ağır perdelerin yanındaki zemin tahtalarında küçük, tuhaf bir çizik fark etti. Daha yakından incelemek için diz çöktü ve bunun sadece bir kaza değil, bir boğuşma sırasında kasten yapılmış bir işaret olduğunu anladı. Gözleri Bill'in gözleriyle buluştu ve her ikisi de bu keşfin önemini anladı. Birisi ağır kumaşın arkasına bir şeyler saklamaya çalışmıştı; belki de bir silah veya önemli bir belge. Loş ışıkta gizemin nihayet çözülmeye başlayacağını umarak perdeyi çekmeye hazırlandıklarında odadaki hava gerginlikle doluydu.",
+      "Antony, sabit bir elle kalın kadife perdeleri geri çekti ve görüş alanından akıllıca gizlenmiş, karanlık, tozlu bir köşeyi ortaya çıkardı. Kumaşın arkasında, duvarda, sanki birisi olay yerinden kaçma telaşıyla açık bırakmış gibi hafifçe aralık olan gizli bir bölme buldu. Bill'e el fenerini yaklaştırması için işaret etti ve ışık huzmesi karanlığı yararak tahtanın derinliklerine yerleştirilmiş küçük, gizli bir kasayı aydınlattı. Bu, Red House'daki son sorunların kaynağıydı. Antony, kilidin keskin bir aletle zarar gördüğünü fark ederek onu inceledi. Katilin büyük ihtimalle, o öğleden sonra meydana gelen korkunç trajedinin doğrudan nedeni olan değerli bir şeyi almak için bu kasayı zorladığını anladı. Yapbozun parçaları nihayet yerine oturmaya başlıyordu ve sadece basit bir nefretten ziyade açgözlülüğü içeren bir nedeni ortaya çıkarıyordu.",
+      "İki arkadaş sessiz odada durup duvarın içinde bulduklarının vahim sonuçları üzerine düşündüler. Antony, suçlunun muhtemelen kendilerini yaklaşırken gördüğünü ve terasa dönmeden önce izlerini saklamaya karar verdiğini biliyordu. Saatine baktı, saatin geç olduğunu fark etti ve Bill'e, yokluklarının başkaları tarafından fark edilmesinden önce hızlı hareket etmeleri gerektiğini fısıldadı. Çalışma odasını tam olarak buldukları gibi bırakmaya karar verdiler; böylece suçlu, gizli saklanma yerinin ortaya çıkarıldığından habersiz kalacaktı. Koridora çıktıklarında ev, gülümsemelerin arkasına sırlar saklayan insanlarla dolu, eskisinden daha tehlikeli geliyordu. Canlı bahçeye doğru geri yürüdüler; güneşli bir öğleden sonranın tadını çıkaran basit ziyaretçilerden başka bir şey olmadıkları izlenimini sürdürürken, yeni bilgileriyle katille yüzleşmeye hazırlandılar."
+    ],
+    words: {
+      "mansion": "köşk, büyük malikane",
+      "study": "çalışma odası",
+      "dread": "korku, dehşet",
+      "locked": "kilitli",
+      "force": "zorlamak, güç kullanmak",
+      "host": "ev sahibi",
+      "cautiously": "temkinli bir şekilde",
+      "motionless": "hareketsiz",
+      "stale": "bayat, havasız",
+      "bolted": "sürgülü, kilitli",
+      "tragedy": "trajedi, acı olay",
+      "urgency": "aciliyet",
+      "handwriting": "el yazısı",
+      "anxiously": "endişeyle",
+      "authority": "yetkili makam",
+      "clue": "ipucu",
+      "lurking": "pusuda bekleyen",
+      "caution": "ihtiyat, dikkat",
+      "terrace": "teras",
+      "anxiety": "endişe",
+      "effortlessly": "zahmetsizce",
+      "anticipation": "beklenti",
+      "atmosphere": "atmosfer",
+      "shadow": "gölge",
+      "oppressive": "baskıcı, bunaltıcı",
+      "deliberate": "kasten, kasıtlı",
+      "fabric": "kumaş",
+      "conceal": "gizlemek",
+      "motive": "gerekçe, saik",
+      "pretense": "görünüş, bahane"
+    }
+  },
+  {
+    id: 'history_fall_constantinople',
+    title: "The Fall of Constantinople",
+    author: 'Byzantine Empire',
+    level: 'B1',
+    coverUrl: '/covers/history_fall_constantinople.webp',
+    en: [
+      "In the spring of 1453, the legendary city of Constantinople stood as a lonely shadow of its glorious past. Once the proud capital of the mighty Roman Empire, it was now surrounded by the rapidly growing Ottoman territory. Inside the massive, ancient walls of the city, Emperor Constantine XI Palaiologos looked out over his quiet capital. He knew his empire was weak, poor, and nearly empty of soldiers. However, the legendary Theodosian Walls, which had protected the city from invaders for over a thousand years, still stood tall and strong. These great stone walls gave the citizens a small spark of hope in a dark and uncertain time. Constantine refused to flee his beloved city, choosing instead to prepare his small army for the ultimate test. He prayed for help from Western Europe, but deep down, he knew his people would have to stand almost entirely alone against the storm.",
+      "Across the Bosporus Strait, a young and determined leader was preparing to fulfill a dream that had lasted for centuries. Sultan Mehmed II, only twenty-one years old, had recently taken the Ottoman throne. Many European leaders foolishly believed he was too young and inexperienced to pose a serious threat, but Mehmed possessed an incredible mind and a fierce ambition. He wanted to make Constantinople the new capital of his expanding empire and secure his place in history. To prepare for the great siege, Mehmed carefully gathered a massive army of over eighty thousand soldiers, including his elite Janissaries. He also hired the best engineers in the region to build enormous cannons that could destroy even the thickest stone walls. Mehmed knew that conquering this legendary city would not only bring him ultimate power but would also change the course of world history forever.",
+      "To start his campaign, Mehmed ordered the construction of a massive fortress called Rumelihisarı on the narrowest point of the Bosporus. This strategic fortress was built in just a few months, directly opposite an older Ottoman castle on the Asian side. With these twin forts, Mehmed successfully controlled all shipping traffic and cut off Constantinople from receiving essential grain and military help from the Black Sea. The citizens of Constantinople watched in terror from their high walls as the Ottoman fortress grew day by day. Every stone laid was a clear warning that the final struggle was about to begin. Emperor Constantine sent messengers to Mehmed to protest, but the young Sultan made his intentions clear: the city must either surrender or face total destruction. The stage was set for one of the most famous and dramatic sieges in human history.",
+      "As the spring of 1453 arrived, a ray of hope reached the desperate citizens of Constantinople. A brave Italian soldier named Giovanni Giustiniani Longo arrived at the harbor with seven hundred heavily armed men from Genoa. Giustiniani was a famous expert in defending besieged cities, and Emperor Constantine immediately made him the commander of the land walls. The arrival of these experienced soldiers lifted the spirits of the frightened citizens. Together with the local Greeks, they worked day and night to clear the deep ditches and strengthen the ancient gates. Even though their total numbers were still very small compared to the enemy, Giustiniani’s presence gave them confidence. The people began to believe that their legendary walls might actually hold against the upcoming storm. They stood side by side on the battlements, looking out into the distance, waiting for the first signs of the Sultan’s massive army.",
+      "In early April, the Ottoman army finally arrived outside the city walls. The sight was absolutely terrifying for those watching from above. Thousands of colorful tents covered the fields, and countless banners waved in the wind. Among this massive force was a weapon that the world had never seen before: an enormous cannon built by a Hungarian engineer named Orban. This giant weapon, which required dozens of oxen to pull, was designed to shoot massive stone balls directly at the famous stone walls. Sultan Mehmed II set up his red tent near the middle of his army, showing his determination to lead the attack personally. He offered Emperor Constantine a peaceful surrender, promising to spare the lives of the citizens. However, Constantine refused to give up the ancient capital of the Christian world, choosing to fight to the very end.",
+      "On April 12, the silence of the morning was shattered by a sound like thunder. The giant Ottoman cannons began their terrible bombardment, shaking the ground and filling the air with thick black smoke. The stone balls crashed into the ancient walls with destructive force, slowly turning the historic towers into piles of dust. The citizens had never experienced such terrifying noise and power before. Yet, instead of giving up, the entire population joined the fight. Every night, under the cover of darkness, men, women, and children rushed to the damaged sections. They used wooden blocks, barrels, and wet earth to rebuild the broken walls before the sun rose. It was a tireless, heroic effort that amazed the Ottoman soldiers. This daily cycle of destruction and reconstruction became a desperate race against time for the survival of the empire.",
+      "While the battle continued on land, a dramatic struggle began at sea. In late April, three Christian ships from Genoa and one imperial transport ship carrying food and weapons arrived near the city. The massive Ottoman navy immediately sailed out to block them. A fierce sea battle began close to the shore, watched by thousands of anxious people from the city walls and the Sultan himself from the beach. Although they were greatly outnumbered, the larger Christian ships had higher decks and more experienced sailors. They fought bravely, using their height and heavy weapons to destroy many enemy vessels. Against all odds, the four ships successfully broke through the Ottoman line and reached the safety of the Golden Horn harbor. This unexpected victory brought great joy to the starving defenders. However, it made Sultan Mehmed extremely angry, and he knew he had to find a new way to conquer the harbor.",
+      "The entrance to the Golden Horn was blocked by a huge, heavy iron chain that stretched from the city walls to the neutral district of Galata. Since his ships could not sail past this barrier, Mehmed came up with an incredibly bold and clever plan. He decided to move his warships over the hills behind Galata and put them directly into the harbor. Thousands of Ottoman workers secretly cleared a path through the forest and laid down thick wooden planks. They covered these wooden roads with grease and animal fat to make them extremely slippery. Teams of men and oxen prepared to pull the heavy wooden ships up the steep hills under the cover of darkness. This massive engineering project was kept completely secret from the defenders, who still believed they were safe from any naval attacks behind their massive iron chain.",
+      "During the quiet night of April 22, the plan was put into action. With great effort, the Ottoman soldiers dragged dozens of fully armed warships over the hills, with their sails up as if they were sailing on land. The next morning, the defenders woke up to a shocking and terrifying sight. Dozens of enemy ships were now floating peacefully inside the Golden Horn, right behind their defensive lines. The impossible had happened, and the citizens realized they were now surrounded from almost every direction. Emperor Constantine had to send valuable soldiers from the land walls to defend the harbor walls, which were much weaker. The mood in the city quickly changed from hope to deep worry, as everyone realized that the Sultan’s determination was far greater than they had ever imagined.",
+      "As May progressed, the situation inside Constantinople became increasingly desperate. Day and night, the massive Ottoman cannon, created by the engineer Orban, shook the ancient stone walls with terrifying thunder. The heavy stone balls smashed the outer defenses, creating large gaps in the walls. However, the defenders showed incredible courage. Every night, under the cover of darkness, men, women, and children rushed to the damaged areas. They worked together to fill the gaps with wooden barrels, earth, and stones. This constant cycle of destruction and rapid repair frustrated the Ottoman forces. Emperor Constantine XI walked the streets daily to encourage his exhausted citizens, but food was running dangerously low, and the defenders were growing weaker with each passing day. The continuous noise of explosions and the lack of sleep created an atmosphere of constant fear and exhaustion throughout the ancient city.",
+      "In late May, a series of terrifying omens broke the spirits of the citizens. During a religious procession, the most sacred icon of the Virgin Mary slipped from its frame and fell into the mud. When people tried to lift it, the icon felt as heavy as lead. The next day, a violent storm brought heavy rain and a thick, unnatural fog that covered the entire city. To make matters worse, on the night of May 24, a total lunar eclipse darkened the sky. The moon, which was the symbol of Constantinople, turned a blood-red color before disappearing completely. This was seen as a final, tragic sign of doom. An ancient prophecy had warned that the empire would fall when the moon ceased to give its light. Deep despair settled over the populace, as many believed that God had finally abandoned them.",
+      "Outside the walls, Sultan Mehmed II prepared his army for the final, grand assault. He promised his soldiers three days of plunder inside the wealthy city to motivate them for the dangerous attack. Inside the city, knowing that the decisive moment was near, the citizens forgot their differences. On the night of May 28, a beautiful but heartbreaking service was held in the magnificent church of Hagia Sophia. For the last time, Orthodox and Catholic Christians prayed together, weeping and embracing one another. Emperor Constantine received holy communion and then walked to the walls to join his soldiers. He gave a powerful final speech, asking his men to fight bravely for their families, their faith, and their ancient empire. The city grew silent as everyone waited in the dark, watching the thousands of Ottoman campfires glowing brightly on the horizon.",
+      "Just before dawn on May 29, the final assault began. Sultan Mehmed sent waves of soldiers against the broken walls. First came the irregular troops, followed by the Anatolian soldiers, and finally the elite Janissaries. The defenders, led by the brave Genoese commander Giovanni Giustiniani, fought with desperate courage. However, disaster struck when Giustiniani was seriously wounded and had to be carried away from the battlefield. Without their leader, the defenders began to panic. Around the same time, some Ottoman soldiers discovered a small, unlocked gate called the Kerkoporta. They climbed through this gate and raised the Ottoman flag high on the inner wall. The news spread quickly, and cries of panic filled the air. The defense of the city began to crumble as more Turkish soldiers poured through the gaps.",
+      "Emperor Constantine XI realized that the end had finally come. Refusing to flee and abandon his people, he chose to die as a soldier. He threw off his purple imperial cloak and his royal ornaments so he could not be recognized. With his sword in hand, the last Byzantine emperor charged into the thickest part of the battle alongside his remaining loyal companions. He was never seen alive again, and his body was never definitely identified. By midday, the banners of the Ottoman Empire were flying from the highest towers of Constantinople. The centuries-old Roman Empire had finally fallen. Ottoman soldiers entered the city, and for three days, they collected treasures from the grand palaces and churches, fulfilling the promise the young Sultan had made to his victorious army.",
+      "On the afternoon of the capture, Sultan Mehmed II, now known as the Conqueror, made his grand entry through the Gate of Charisius. He rode slowly to the great church of Hagia Sophia. When he saw the magnificent building, he stopped his soldiers from destroying its beautiful structure. He knelt and threw a handful of earth over his head as a sign of humility, then declared that the great cathedral would become a mosque. Mehmed renamed the city Istanbul and made it the new capital of his growing empire. The fall of Constantinople shocked Europe and changed the course of world history. It marked the end of the Middle Ages and helped start the Renaissance, as many Greek scholars fled to Italy with ancient books."
+    ],
+    tr: [
+      "1453 yılının ilkbaharında, efsanevi Konstantinopolis şehri görkemli geçmişinin yalnız bir gölgesi olarak ayakta duruyordu. Bir zamanlar güçlü Roma İmparatorluğu'nun gururlu başkenti olan şehir, artık hızla büyüyen Osmanlı topraklarıyla çevriliydi. Şehrin devasa, kadim surlarının arkasında İmparator XI. Konstantinos Palaiologos, sessiz başkentine bakıyordu. İmparatorluğunun zayıf, fakir ve neredeyse askersiz kaldığını biliyordu. Ancak, şehri bin yılı aşkın bir süredir istilacılardan koruyan efsanevi Teodosyus Surları hâlâ yüksek ve güçlü bir şekilde yükseliyordu. Bu büyük taş surlar, karanlık ve belirsiz bir zamanda vatandaşlara küçük bir umut ışığı veriyordu. Konstantinos, sevgili şehrini terk etmeyi reddetti ve bunun yerine küçük ordusunu bu büyük sınav için hazırlamayı seçti. Batı Avrupa'dan yardım diledi, fakat içten içe halkının bu fırtınaya karşı neredeyse tamamen yalnız durması gerekeceğini biliyordu.",
+      "Boğaziçi'nin karşı yakasında, genç ve kararlı bir lider yüzyıllardır süregelen bir rüyayı gerçekleştirmeye hazırlanıyordu. Henüz yirmi bir yaşında olan Sultan II. Mehmed, kısa süre önce Osmanlı tahtına geçmişti. Birçok Avrupalı lider onun ciddi bir tehdit oluşturamayacak kadar genç ve deneyimsiz olduğunu düşünerek hata yapıyordu, ancak Mehmed inanılmaz bir zekaya ve amansız bir hırsa sahipti. Konstantinopolis'i genişleyen imparatorluğunun yeni başkenti yapmak ve tarihteki yerini güvence altına almak istiyordu. Büyük kuşatmaya hazırlanmak için Mehmed, aralarında seçkin Yeniçerilerin de bulunduğu seksen binden fazla askerden oluşan devasa bir orduyu titizlikle topladı. Ayrıca en kalın taş duvarları bile yıkabilecek devasa toplar inşa etmeleri için bölgedeki en iyi mühendisleri işe aldı. Mehmed, bu efsanevi şehri fethetmenin kendisine sadece mutlak güç getirmekle kalmayıp, aynı zamanda dünya tarihinin akışını da sonsuza dek değiştireceğini biliyordu.",
+      "Mehmed, seferine başlamak için Boğaziçi'nin en dar noktasında Rumelihisarı adında devasa bir kalenin inşasını emretti. Bu stratejik kale, Asya yakasındaki daha eski bir Osmanlı kalesinin tam karşısında, sadece birkaç ay içinde inşa edildi. Bu ikiz kaleler sayesinde Mehmed, tüm gemi trafiğini başarıyla kontrol altına aldı ve Konstantinopolis'in Karadeniz'den hayati önem taşıyan tahıl ve askeri yardım almasını engelledi. Konstantinopolis halkı, Osmanlı kalesinin günden güne yükselişini yüksek surlarından korkuyla izledi. Yerleştirilen her taş, nihai mücadelenin başlamak üzere olduğuna dair açık bir uyarıydı. İmparator Konstantinos, protesto etmek için Mehmed'e elçiler gönderdi, ancak genç Sultan niyetini açıkça ortaya koydu: şehir ya teslim olmalı ya da tamamen yok edilmekle yüzleşmeliydi. İnsanlık tarihinin en ünlü ve en dramatik kuşatmalarından biri için sahneler hazırdı.",
+      "1453 baharı geldiğinde, İstanbul'un çaresiz halkına bir umut ışığı ulaştı. Giovanni Giustiniani Longo adında cesur bir İtalyan asker, Cenova'dan gelen yedi yüz ağır silahlı adamıyla limana vardı. Giustiniani, kuşatılmış şehirleri savunma konusunda ünlü bir uzmandı ve İmparator Konstantin onu hemen kara surlarının komutanı yaptı. Bu deneyimli askerlerin gelişi, korkmuş halkın moralini yükseltti. Yerel Rumlarla birlikte, derin hendekleri temizlemek ve antik kapıları güçlendirmek için gece gündüz çalıştılar. Toplam sayıları düşmana kıyasla hala çok az olsa da, Giustiniani'nin varlığı onlara güven verdi. İnsanlar, efsanevi surlarının yaklaşan fırtınaya karşı gerçekten dayanabileceğine inanmaya başladılar. Surların üzerinde yan yana durup, Sultan'ın devasa ordusunun ilk işaretlerini bekleyerek uzaklara baktılar.",
+      "Nisan ayının başlarında, Osmanlı ordusu nihayet şehir surlarının dışına ulaştı. Yukarıdan izleyenler için bu manzara kesinlikle dehşet vericiydi. Binlerce renkli çadır ovaları kaplamış, sayısız sancak rüzgarda dalgalanıyordu. Bu devasa gücün arasında, dünyanın daha önce hiç görmediği bir silah vardı: Urban adında Macar bir mühendis tarafından yapılan devasa bir şahi topu. Çekmek için onlarca öküz gereken bu dev silah, efsanevi taş surlara doğrudan devasa taş gülleler fırlatmak üzere tasarlanmıştı. Sultan II. Mehmed, saldırıyı bizzat yönetme kararlılığını göstererek kırmızı çadırını ordusunun merkezine yakın bir yere kurdu. İmparator Konstantin'e, halkın canını bağışlama sözü vererek barışçıl bir teslimiyet teklif etti. Ancak Konstantin, Hristiyan dünyasının bu antik başkentini teslim etmeyi reddederek sonuna kadar savaşmayı seçti.",
+      "12 Nisan'da sabahın sessizliği gök gürültüsünü andıran bir sesle bozuldu. Dev Osmanlı topları, yeri sarsarak ve havayı yoğun siyah bir dumanla doldurarak korkunç bombardımanlarına başladı. Taş gülleler, yıkıcı bir güçle antik surlara çarparak tarihi kuleleri yavaşça toz yığınlarına dönüştürdü. Şehir halkı daha önce hiç bu kadar dehşet verici bir gürültü ve güçle karşılaşmamıştı. Yine de, pes etmek yerine tüm halk mücadeleye katıldı. Her gece, karanlığın örtüsü altında, erkekler, kadınlar ve çocuklar hasar gören bölümlere koştular. Güneş doğmadan önce yıkılan duvarları yeniden inşa etmek için tahta bloklar, fıçılar ve ıslak toprak kullandılar. Bu, Osmanlı askerlerini hayrete düşüren yorulmak bilmez, kahramanca bir çabaydı. Bu günlük yıkım ve yeniden inşa döngüsü, imparatorluğun hayatta kalması için zamana karşı umutsuz bir yarış haline geldi.",
+      "Karada savaş devam ederken, denizde de dramatik bir mücadele başladı. Nisan ayının sonlarında, Ceneviz'den gelen üç Hristiyan gemisi ve yiyecek ile silah taşıyan bir imparatorluk nakliye gemisi şehrin yakınlarına ulaştı. Devasa Osmanlı donanması onları engellemek için hemen yelken açtı. Kıyıya yakın bir yerde, surlardaki binlerce endişeli insan ve sahildeki bizzat padişah tarafından izlenen şiddetli bir deniz savaşı başladı. Sayıca çok az olmalarına rağmen, daha büyük olan Hristiyan gemileri daha yüksek güvertelere ve daha deneyimli denizcilere sahipti. Yüksekliklerini ve ağır silahlarını kullanarak birçok düşman gemisini yok etmek için cesurca savaştılar. Tüm zorluklara rağmen, dört gemi Osmanlı hattını başarıyla yararak güvenli Haliç limanına ulaştı. Bu beklenmedik zafer, açlık çeken savunmacılara büyük bir neşe getirdi. Ancak bu durum Sultan Mehmed'i son derece öfkelendirdi ve limanı ele geçirmek için yeni bir yol bulması gerektiğini anladı.",
+      "Haliç'in girişi, şehir surlarından tarafsız Galata bölgesine kadar uzanan devasa, ağır bir demir zincirle kapatılmıştı. Gemileri bu engeli aşamadığı için Mehmed, inanılmaz derecede cesur ve zekice bir plan yaptı. Savaş gemilerini Galata'nın arkasındaki tepelerden aşırarak doğrudan limana indirmeye karar verdi. Binlerce Osmanlı işçisi gizlice ormanın içinden bir yol açtı ve kalın ahşap kalaslar yerleştirdi. Bu ahşap yolları son derece kaygan hale getirmek için iç yağı ve hayvan yağıyla kapladılar. Adam ve öküz grupları, karanlığın örtüsü altında ağır ahşap gemileri dik tepelerden yukarı çekmek için hazırlandı. Bu devasa mühendislik projesi, devasa demir zincirlerinin arkasında herhangi bir deniz saldırısından güvende olduklarına hâlâ inanan savunmacılardan tamamen gizli tutuldu.",
+      "22 Nisan'ın sessiz gecesinde plan hayata geçirildi. Osmanlı askerleri, büyük bir çabayla, sanki karada yelken açıyormuş gibi yelkenleri açık halde düzinelerce tam teçhizatlı savaş gemisini tepelerin üzerinden sürüklediler. Ertesi sabah savunmacılar şok edici ve dehşet verici bir manzaraya uyandılar. Düzinelerce düşman gemisi şimdi savunma hatlarının hemen arkasında, Haliç'in içinde barışçıl bir şekilde yüzüyordu. İmkansız olan gerçekleşmişti ve vatandaşlar artık neredeyse her yönden kuşatıldıklarını anladılar. İmparator Konstantin, çok daha zayıf olan liman surlarını savunmak için kara surlarındaki değerli askerleri göndermek zorunda kaldı. Şehirdeki hava, herkesin Sultan'ın kararlılığının hayal ettiklerinden çok daha büyük olduğunu fark etmesiyle, umuttan derin bir endişeye dönüştü.",
+      "Mayıs ayı ilerledikçe, Konstantinopolis’in içindeki durum giderek daha vahim bir hal aldı. Mühendis Orban tarafından yapılan devasa Osmanlı topu, gece gündüz demeden antik taş surları korkunç bir gürültüyle sarstı. Ağır taş gülleler dış savunma hatlarını parçalayarak surlarda büyük gedikler açtı. Ancak savunanlar inanılmaz bir cesaret gösterdi. Her gece, karanlığın örtüsü altında erkekler, kadınlar ve çocuklar hasar gören bölgelere koştu. Gedikleri ahşap variller, toprak ve taşlarla doldurmak için birlikte çalıştılar. Bu sürekli yıkım ve hızlı onarım döngüsü Osmanlı kuvvetlerini hayal kırıklığına uğrattı. İmparator XI. Konstantin, bitkin düşen halkını cesaretlendirmek için her gün sokaklarda yürüdü, ancak yiyecek tehlikeli derecede azalıyordu ve savunanlar her geçen gün daha da zayıflıyordu. Bitmek bilmeyen patlama sesleri ve uykusuzluk, antik kentte sürekli bir korku ve bitkinlik havası yarattı.",
+      "Mayıs ayının sonlarında, bir dizi korkutucu alamet halkın maneviyatını kırdı. Dini bir geçit töreni sırasında, Meryem Ana’nın en kutsal ikonu çerçevesinden kayarak çamura düştü. İnsanlar onu kaldırmaya çalıştığında, ikon kurşun gibi ağır geldi. Ertesi gün, şiddetli bir fırtına beraberinde sağanak yağmur ve tüm şehri kaplayan yoğun, alışılmadık bir sis getirdi. Durumu daha da kötüleştiren şey ise, 24 Mayıs gecesi yaşanan tam ay tutulmasının gökyüzünü karartması oldu. Konstantinopolis’in sembolü olan ay, tamamen kaybolmadan önce kan kırmızısı bir renge büründü. Bu durum, nihai ve trajik bir felaket işareti olarak görüldü. Kadim bir kehanet, ay ışık vermeyi kestiğinde imparatorluğun yıkılacağı konusunda uyarmıştı. Birçok insan Tanrı’nın nihayet kendilerini terk ettiğine inandığı için halkın üzerine derin bir umutsuzluk çöktü.",
+      "Surların dışında, Sultan II. Mehmed ordusunu nihai ve büyük taarruz için hazırladı. Askerlerini bu tehlikeli saldırı için motive etmek amacıyla, zengin şehrin içinde üç gün boyunca yağma yapma sözü verdi. Şehirde ise, karar anının yaklaştığını bilen halk aralarındaki anlaşmazlıkları unuttu. 28 Mayıs gecesi, görkemli Ayasofya Kilisesi’nde güzel ama yürek burkan bir ayin düzenlendi. Son kez, Ortodoks ve Katolik Hristiyanlar birlikte dua ettiler, ağladılar ve birbirlerine sarıldılar. İmparator Konstantin kutsal ekmek ve şarabı kabul ettikten sonra askerlerine katılmak üzere surlara yürüdü. Adamlarından aileleri, inançları ve kadim imparatorlukları için cesurca savaşmalarını isteyen güçlü bir veda konuşması yaptı. Herkes karanlıkta beklerken, ufukta parıldayan binlerce Osmanlı ordu ateşini izleyen şehir sessizliğe büründü.",
+      "29 Mayıs günü řafak sökmeden hemen önce, nihai saldırı bařladı. Sultan Mehmed, gediklerle dolu surlara dalga dalga asker gönderdi. İlk olarak düzensiz birlikler, ardından Anadolu askerleri ve son olarak seçkin Yeniçeriler hücuma geçti. Cesur Cenevizli komutan Giovanni Giustiniani liderliğindeki savunmacılar ümitsiz ama büyük bir cesaretle savařtı. Ancak, Giustiniani ağır řekilde yaralanıp savař alanından uzaklařtırılınca felaket kapıyı çaldı. Liderleri olmadan, savunmacılar arasında panik yayılmaya bařladı. Yaklaşık aynı zamanlarda, bazı Osmanlı askerleri Kerkoporta adı verilen küçük, kilitlenmemiş bir kapı keşfetti. Bu kapıdan içeri sızarak iç surlara Osmanlı sancağını diktiler. Haber hızla yayıldı ve havayı panik çığıkları kapladı. Daha fazla Türk askeri açılan gediklerden içeri akarken, řehrin savunması çökmeye bařladı.",
+      "İmparator XI. Konstantinos sonun nihayet geldiğini anladı. Kaçmayı ve halkını terk etmeyi reddederek, bir asker gibi ölmeyi seçti. Tanınmamak için mor renkli imparatorluk pelerinini ve kraliyet niřanlarını üzerinden çıkardı. Elinde kılıcıyla, son Bizans imparatoru geriye kalan sadık dostlarıyla birlikte savařın en yoğun olduđu yere doğru hücuma kalktı. Bir daha asla canlı görùlmedi ve bedeni hiçbir zaman kesin olarak teşhis edilemedi. Gün ortasına gelindiğinde, Osmanlı İmparatorluğunun sancakları Konstantinopolisin en yüksek kulelerinde dalgalanıyordu. Yüzyıllardır varlığını sürdüren Doğu Roma İmparatorluđu nihayet yıkılmışti. Osmanlı askerleri řehre girdi ve üç gün boyunca, genç Sultanın muzaffer ordusuna verdiğic sözü yerine getirerek büyük saraylardan ve kiliselerden ganimet topladı.",
+      "Fethin gerçekleştiğic günün öğleden sonrasında, artık \"Fatih\" olarak anılan Sultan II. Mehmed, Edirnekapıdan řehre görkemli bir giriş yaptı. Atını yavaşça büyük Ayasofya kilisesine doğru sürdü. Bu muhteşem yapıyı gördüğünde, askerlerinin onun güzel mimarisine zarar vermesini engelledi. Bir alçakgönüllölük göstergesi olarak yere eğiliip başının üzerine bir avuç toprak serpti ve ardından büyük katedralin camiye dönüşütürüleceğini ilan etti. Mehmed řehrin adını İstanbul olarak değtiştiridi ve burayı büyüyen imparatorluğunun yeni başkenti yaptı. Konstantinopolisin düşüşü Avrupa'yı derinden sarstı ve dünya tarihinin akışını değtiştirdi. Birçok Rum bilginin yanlarında eski kitaplarla İtalya'ya kaçmasıyla bu olay, Orta Çağ'ın sonunu belirledi ve Rönesans'ın başlamasına yardımcı oldu."
+    ],
+    words: {
+      "glorious": "görkemli",
+      "invader": "istilacı",
+      "ambition": "hırs",
+      "fortress": "kale",
+      "essential": "hayati",
+      "surrender": "teslim olmak",
+      "besieged": "kuşatılmış",
+      "commander": "komutan",
+      "oxen": "öküzler",
+      "bombardment": "bombardıman",
+      "tireless": "yorulmak bilmez",
+      "reconstruction": "yeniden inşa",
+      "vessel": "gemi",
+      "blockade": "abluka",
+      "slippery": "kaygan",
+      "drag": "sürüklemek",
+      "surround": "kuşatmak",
+      "determination": "kararlılık",
+      "desperate": "vahim",
+      "gap": "gedik",
+      "omen": "alamet",
+      "prophecy": "kehanet",
+      "plunder": "yağma",
+      "assault": "saldırı",
+      "crumble": "çökmek",
+      "flee": "kaçmak",
+      "identify": "teşhis etmek",
+      "humility": "alçakgönüllölük",
+      "scholar": "bilgin"
+    }
+  }
+,
+  {
+    id: 'history_french_revolution',
+    title: "The French Revolution: Storming the Bastille",
+    author: 'French Revolution',
+    level: 'B1',
+    coverUrl: '/covers/history_french_revolution.webp',
+    en: [
+      "In the hot summer of 1789, the city of Paris was filled with anger and hunger. For many years, the ordinary people of France, known as the Third Estate, had suffered under a system that was deeply unfair. While the wealthy nobles and church leaders paid almost no taxes, the poor peasants and city workers paid for everything. To make things worse, a terrible winter had ruined the crops, causing the price of bread to rise rapidly. Many families could no longer afford to buy food, and children cried from hunger in the dirty streets. Meanwhile, King Louis XVI lived in his beautiful palace of Versailles, far away from the suffering of his people. He spent enormous amounts of money on wars and luxury, leaving the country completely bankrupt. The people of Paris were losing their patience, and a dangerous feeling of rebellion began to grow in every dark corner of the city.",
+      "Hoping to solve the financial crisis, King Louis XVI called a meeting of the Estates-General, an assembly of the three social classes. However, the representatives of the common people quickly realized that their voices would not be heard. Angry and determined, they broke away and declared themselves the National Assembly, promising to write a new constitution for France. Many French citizens placed their hope in Jacques Necker, the king's popular finance minister, who wanted to help the poor. Necker tried to advise the king to make reforms and reduce the taxes on the common people. But the King's wealthy advisors did not like Necker's ideas and pressured Louis XVI to dismiss him. When the news of Necker's sudden dismissal reached Paris on July 12, the citizens felt betrayed. They realized that the king was not going to help them, and peace was no longer an option.",
+      "The news of Necker's dismissal acted like a spark in a room full of gunpowder. Angry crowds gathered in the public squares of Paris, listening to passionate speakers who called for action. People feared that the royal army, which was already surrounding the city, would soon attack the citizens to stop the revolution. To defend their families and their new National Assembly, the people needed weapons. They marched through the streets, breaking into shops and public buildings to find guns and gunpowder. The atmosphere in Paris was electric, filled with both terror and a powerful desire for freedom. By the evening of July 13, the angry citizens had formed a new militia called the National Guard. They had plenty of rifles, but they were missing one crucial ingredient: gunpowder. To find it, they turned their eyes toward a giant, dark fortress that stood in the east of Paris.",
+      "On the morning of July 14, 1789, the streets of Paris woke up to the sound of ringing church bells. A huge crowd of tens of thousands of citizens marched towards the Hôtel des Invalides, a large building used as a hospital and home for old soldiers. The people knew that many weapons were stored inside this royal building. Although the governor of the Invalides tried to delay them, the angry crowd was too strong to stop. They rushed past the guards and searched the basement, successfully capturing over thirty thousand muskets. However, they soon discovered a big problem: there was almost no gunpowder to be found here. The royal officers had already moved the precious gunpowder to the Bastille, a powerful fortress on the other side of the city. The crowd realized they had to march there immediately if they wanted to defend themselves against the King’s army.",
+      "The Bastille was a terrifying sight. Built hundreds of years ago as a medieval castle, its eight high stone towers dominated the eastern sky of Paris. To the ordinary people, this dark prison was a symbol of the King's absolute power and unfair rule, where anyone could be locked up without a trial. Inside, Governor Bernard-René de Launay commanded a small garrison of Swiss guards and retired French soldiers. He had recently received tons of gunpowder from the Invalides and was determined to protect it. He ordered his men to aim the heavy cannons from the high walls directly down at the narrow streets below. As the vast, angry crowd arrived at the gates of the fortress, they saw these cannons and felt a wave of fear and anger. They wanted the gunpowder, but they also wanted to destroy this monument of oppression.",
+      "At first, the crowd did not want to start a violent battle. A group of representatives from the city hall went inside the fortress to negotiate peacefully with Governor de Launay. They asked him to remove the threatening cannons and to hand over the gunpowder to the citizens' militia. De Launay received them politely and even invited them to eat lunch, but he firmly refused to surrender the fortress or the ammunition. Outside, the minutes turned into hours under the hot summer sun, and the massive crowd grew extremely impatient. They believed that the governor was playing a trick to buy time for the royal army to arrive and crush them. The peaceful negotiations were failing, and the shouts of the crowd grew louder. Suddenly, a few brave men climbed onto a nearby roof and cut the chains of the drawbridge, which crashed down with a loud roar.",
+      "The sudden crash of the drawbridge opened the way into the outer courtyard of the Bastille. Hundreds of excited citizens rushed through the gate, thinking the governor had finally decided to surrender. However, the soldiers on the high stone walls received strict orders to protect the fortress at all costs. Suddenly, a loud crack of gunfire echoed through the air, followed by a thick cloud of white smoke. The guards had opened fire on the crowded courtyard below. People screamed in terror as many fell to the ground, wounded or dying. The peaceful atmosphere instantly turned into a bloody nightmare. The citizens felt betrayed and furious, believing that the governor had lured them into a deadly trap. They quickly realized that they were now in a real war, and there was no turning back. They had to fight for their lives and their freedom.",
+      "Despite the deadly rain of bullets, the brave crowd did not run away. Instead, they returned fire with the muskets they had taken from the Invalides earlier that morning. However, their small weapons were not very effective against the thick, ancient stone walls of the medieval castle. The defenders inside the Bastille had a major advantage, firing safely from behind their high, narrow windows. The noise in the narrow streets was deafening, filled with the constant roar of muskets, the screams of the injured, and the shouts of angry citizens. Smoke filled the warm summer air, making it hard to see or breathe. More and more people from all over Paris joined the fight, bringing whatever tools or weapons they could find. Even women and children helped by carrying water, food, and messages to those on the front lines, showing a powerful spirit of unity.",
+      "As the hours passed, the situation became desperate for the citizens. Their casualties were rising rapidly, with dozens of people dead in the bloody courtyard. The crowd needed a miracle to break through the heavy inner gates of the fortress. Just when hope was beginning to fade, a group of rebellious soldiers from the French Guards arrived at the scene. These soldiers had decided to desert the King’s army and join the side of the common people. Most importantly, they did not come empty-handed; they brought with them several heavy cannons that they had captured earlier. These powerful weapons changed the entire direction of the battle. Under the command of experienced officers, the soldiers quickly positioned the cannons in front of the main gate. The crowd watched with hope as the soldiers prepared to blast open the symbol of royal tyranny.",
+      "The sight of the heavy cannons pointed directly at the gates changed everything. Inside the dark, cold fortress, Governor Bernard-René de Launay watched the scene with growing fear. He knew that the ancient stone walls could survive musket fire, but they would not stand against heavy artillery. The soldiers defending the Bastille were also losing their courage. Many of them were Swiss mercenaries who had no desire to die for a cause that was already lost. If the heavy cannons fired, the massive wooden drawbridges would shatter instantly, allowing thousands of angry Parisians to flood inside. De Launay realized he was completely cut off from any help. The King's troops stationed nearby in the city did nothing to rescue him. He had to make a difficult decision quickly, as the angry crowd outside screamed for surrender and justice.",
+      "Desperate and panicked, Governor de Launay made a terrifying decision. He took a burning torch and ran down to the deepest part of the fortress, where thousands of pounds of gunpowder were stored. He threatened to blow up the entire Bastille, which would destroy not only the castle but also the surrounding streets and kill thousands of innocent people. However, his own soldiers stopped him from committing this terrible act. They begged him to surrender instead of killing everyone in a massive explosion. They knew that their situation was hopeless and that fighting further would only lead to a massacre. Outside, the French Guards finished preparing the cannons, ready to fire at any second. Realizing he had no other choice and no support from his men, the governor finally decided to offer a surrender to the citizens.",
+      "Through a small gap in the heavy wooden gate, the defenders of the Bastille waved a white flag of truce. The shooting slowly stopped, and a sudden silence fell over the crowded square. One of the officers inside wrote a short note offering to surrender if the crowd promised to spare the lives of the soldiers. He passed the piece of paper through a crack in the gate to the waiting citizens. A brave man named Elie, a former soldier, climbed a wooden plank over the deep moat to grab the message. The crowd shouted angrily, refusing any conditions from the governor who had ordered his men to shoot them earlier. They demanded an immediate and unconditional surrender. Seeing no other way out, the defenders finally lowered the small drawbridge, and the excited crowd rushed forward to claim their hard-won victory.",
+      "As the heavy drawbridge crashed down, the excited crowd rushed into the courtyard of the Bastille. The long battle was finally over, and the citizens of Paris had conquered the dreaded symbol of royal power. Inside the dark, cold prison cells, they found only seven prisoners, whom they quickly freed and carried through the streets as heroes. However, the real prize for the people was the massive amount of gunpowder and weapons, which would help them defend their city against the King's army. Unfortunately, the anger of the crowd could not be easily stopped. Despite promises of safety, several defenders and Governor de Launay were captured by the furious mob. As they marched him toward the city hall, the situation turned violent, and the governor met a tragic end. The fall of the fortress showed that the ordinary people now held the real power in Paris.",
+      "In the days following the historic event, the citizens of Paris decided that the Bastille must not stand any longer. They began to pull down the massive stone fortress brick by brick, using their bare hands and simple tools. People from all over the city came to help destroy this hated symbol of tyranny and oppression. Some of the stone blocks were carved into miniature models of the Bastille and sent to different parts of France to spread the message of freedom. Others were sold as souvenirs to remind future generations of the day the people stood up against absolute royal authority. The destruction of the fortress was a powerful message to the entire world. It showed that the old system of government was crumbling, and a new era of liberty, equality, and fraternity was beginning for the French nation.",
+      "Far away in the Palace of Versailles, King Louis XVI did not hear about the fall of the Bastille until late that night. When a nobleman named the Duke of Liancourt woke him to deliver the shocking news, the King was deeply surprised. \"Is it a grand revolt?\" the King asked, believing it was just another local riot over food prices. \"No, Sire,\" Liancourt famously replied, \"it is not a revolt, it is a revolution.\" This historical moment marked the true beginning of the French Revolution, which would change European history forever. July 14th became France's National Day, celebrated every year to remember the courage of the ordinary citizens who fought for their rights. The storming of the Bastille proved that when people stand together for freedom, even the strongest stone walls cannot stop them."
+    ],
+    tr: [
+      "1789 yılının sıcak yazında, Paris şehri öfke ve açlıkla çalkalanıyordu. Uzun yıllar boyunca, Üçüncü Sınıf olarak bilinen sıradan Fransız halkı, son derece adaletsiz bir sistem altında acı çekmişti. Zengin soylular ve kilise liderleri neredeyse hiç vergi ödemezken, fakir köylüler ve şehir işçileri her şeyin bedelini ödüyordu. Durumu daha da kötüleştirmek için, korkunç bir kış mevsimi mahsulleri mahvetmiş ve ekmek fiyatlarının hızla yükselmesine neden olmuştu. Birçok aile artık yiyecek satın alamıyordu ve kirli sokaklarda açlıktan ağlayan çocukların sesleri yankılanıyordu. Bu sırada Kral XVI. Louis, halkının çektiği acılardan çok uzakta, Versailles'daki güzel sarayında yaşıyordu. Savaşlara ve lükse muazzam paralar harcayarak ülkeyi tamamen iflas ettirmişti. Paris halkının sabrı tükeniyordu ve şehrin her karanlık köşesinde tehlikeli bir isyan dalgası büyümeye başlıyordu.",
+      "Finansal krizi çözmek isteyen Kral XVI. Louis, üç sosyal sınıfın temsilcilerinden oluşan bir meclis olan Estates-General'i toplantıya çağırdı. Ancak sıradan halkın temsilcileri, seslerinin duyulmayacağını kısa sürede anladılar. Öfkeli ve kararlı bir şekilde meclisten ayrılarak kendilerini Ulusal Meclis ilan ettiler ve Fransa için yeni bir anayasa yazmaya söz verdiler. Birçok Fransız vatandaşı, kralın halkı destekleyen popüler maliye bakanı Jacques Necker'e ümit bağlamıştı. Necker, krala reformlar yapması ve sıradan halkın üzerindeki vergileri azaltması yönünde tavsiyelerde bulunmaya çalıştı. Ancak kralın zengin danışmanları Necker'ın fikirlerinden hoşlanmadı ve XVI. Louis'ye onu görevden alması için baskı yaptı. Necker'ın ani görevden alınma haberi 12 Temmuz'da Paris'e ulaştığında, vatandaşlar kendilerini ihanete uğramış hissettiler. Kralın kendilerine yardım etmeyeceğini ve barışın artık bir seçenek olmadığını anladılar.",
+      "Necker'ın görevden alınma haberi, barut dolu bir odadaki kıvılcım gibi etki yarattı. Öfkeli kalabalıklar Paris'in meydanlarında toplandı ve eylem çağrısı yapan ateşli konuşmacıları dinledi. İnsanlar, şehri çoktan kuşatmış olan kraliyet ordusunun, devrimi durdurmak için yakında vatandaşlara saldıracağından korkuyordu. Ailelerini ve yeni Ulusal Meclislerini korumak için halkın silaha ihtiyacı vardı. Sokaklarda yürüyerek, silah ve barut bulmak için dükkanlara ve kamu binalarına baskınlar düzenlediler. Paris'teki atmosfer, hem dehşet hem de güçlü bir özgürlük arzusuyla dolup taşıyordu. 13 Temmuz akşamına gelindiğinde, öfkeli vatandaşlar Ulusal Muhafızlar adında yeni bir milis gücü oluşturmuşlardı. Çok sayıda tüfekleri vardı ama çok önemli bir eksikleri vardı: barut. Bunu bulmak için gözlerini Paris'in doğusunda yükselen devasa ve karanlık bir kaleye çevirdiler.",
+      "14 Temmuz 1789 sabahı, Paris sokakları çalan kilise çanlarının sesiyle uyandı. On binlerce vatandaştan oluşan devasa bir kalabalık, eski askerler için bir hastane ve sığınak olarak kullanılan büyük bir bina olan Hôtel des Invalides'e doğru yürüdü. Halk, bu kraliyet binasının içinde birçok silahın depolandığını biliyordu. Invalides valisi onları oyalamaya çalışsa da, öfkeli kalabalık durdurulamayacak kadar güçlüydü. Muhafızları geçerek bodrum katını aradılar ve otuz binden fazla tüfeği başarıyla ele geçirdiler. Ancak kısa süre sonra büyük bir sorun keşfettiler: Burada neredeyse hiç barut yoktu. Kraliyet subayları değerli barutu çoktan şehrin diğer tarafındaki güçlü bir kale olan Bastille'e taşımıştı. Kalabalık, kendilerini Kral'ın ordusuna karşı savunmak istiyorlarsa hemen oraya yürümeleri gerektiğini anladı.",
+      "Bastille korkutucu bir manzaraydı. Yüzlerce yıl önce orta çağdan kalma bir kale olarak inşa edilen sekiz yüksek taş kulesi, Paris'in doğu gökyüzüne hakim durumdaydı. Sıradan insanlar için bu karanlık hapishane, herkesin yargılanmadan kapatılabileceği, Kral'ın mutlak gücünün ve adaletsiz yönetiminin bir simgesiydi. İçeride, Vali Bernard-René de Launay, İsviçreli muhafızlar ve emekli Fransız askerlerinden oluşan küçük bir birliğe komuta ediyordu. Yakın zamanda Invalides'ten tonlarca barut teslim almıştı ve bunu korumaya kararlıydı. Adamlarına, yüksek duvarlardaki ağır topları doğrudan aşağıdaki dar sokaklara doğrultmalarını emretti. Devasa, öfkeli kalabalık kalenin kapılarına vardığında, bu topları gördü ve bir korku ve öfke dalgası hissetti. Barutu istiyorlardı ama aynı zamanda bu zulüm anıtını yok etmek de istiyorlardı.",
+      "İlk başta kalabalık şiddetli bir çatışma başlatmak istemedi. Belediye binasından bir grup temsilci, Vali de Launay ile barışçıl bir şekilde müzakere etmek için kalenin içine girdi. Ondan tehditkar topları kaldırmasını ve barutu halk milislerine teslim etmesini istediler. De Launay onları kibarca karşıladı ve hatta öğle yemeği yemeye davet etti, ancak kaleyi veya mühimmatı teslim etmeyi kesin bir dille reddetti. Dışarıda, sıcak yaz güneşinin altında dakikalar saatlere dönüştü ve muazzam kalabalık son derece sabırsızlandı. Valinin, kraliyet ordusunun gelip kendilerini ezmesi için zaman kazanmak amacıyla bir oyun oynadığına inanıyorlardı. Barışçıl müzakereler başarısız oluyordu ve kalabalığın bağırışları giderek yükseliyordu. Aniden, birkaç cesur adam yakındaki bir çatıya tırmandı ve büyük bir gürültüyle yere düşen asma köprünün zincirlerini kesti.",
+      "Asma köprünün aniden gürültüyle düşmesi, Bastille'in dış avlusuna giden yolu açtı. Yüzlerce heyecanlı vatandaş, valinin nihayet teslim olmaya karar verdiğini düşünerek kapıdan içeri hücum etti. Ancak yüksek taş duvarlardaki askerler, kaleyi ne pahasına olursa olsun korumak için kesin emirler almıştı. Birden havada yüksek bir tüfek sesi yankılandı ve bunu yoğun bir beyaz duman bulutu izledi. Muhafızlar aşağıdaki kalabalık avluya ateş açmıştı. Birçok kişi yaralı ya da ölmekte olan bir şekilde yere düşerken, insanlar dehşet içinde çığlık attı. Barışçıl atmosfer bir anda kanlı bir kabusa dönüştü. Vatandaşlar, valinin kendilerini ölümcül bir tuzağa düşürdüğüne inanarak kendilerini ihanete uğramış ve öfkeli hissettiler. Artık gerçek bir savaşın içinde olduklarını ve geri dönüşün olmadığını hemen anladılar. Hayatları ve özgürlükleri için savaşmak zorundaydılar.",
+      "Ölümcül kurşun yağmuruna rağmen, cesur kalabalık kaçmadı. Bunun yerine, o sabahın erken saatlerinde Invalides'ten aldıkları tüfeklerle ateşe karşılık verdiler. Ancak küçük silahları, orta çağ kalesinin kalın, tarihi taş duvarlarına karşı pek etkili değildi. Bastille'in içindeki savunmacılar, yüksek ve dar pencerelerinin arkasından güvenli bir şekilde ateş ederek büyük bir avantaja sahiptiler. Dar sokaklardaki gürültü; tüfeklerin sürekli uğultusu, yaralıların çığlıkları ve öfkeli vatandaşların bağırışlarıyla dolup taşıyordu, sağır ediciydi. Duman, sıcak yaz havasını doldurarak görmeyi veya nefes almayı zorlaştırıyordu. Paris'in dört bir yanından giderek daha fazla insan, bulabildikleri her türlü aleti veya silahı getirerek savaşa katıldı. Kadınlar ve çocuklar bile ön saftakilere su, yiyecek ve mesajlar taşıyarak yardım etti ve güçlü bir birlik ruhu gösterdi.",
+      "Saatler geçtikçe, durum vatandaşlar için çaresiz bir hal aldı. Kanlı avluda onlarca insanın ölmesiyle kayıpları hızla artıyordu. Kalabalığın, kalenin ağır iç kapılarını aşmak için bir mucizeye ihtiyacı vardı. Tam umutlar tükenmeye başlamışken, Fransız Muhafızları'ndan bir grup isyancı asker olay yerine geldi. Bu askerler, Kral'ın ordusundan kaçıp halkın safına katılmaya karar vermişlerdi. En önemlisi de eli boş gelmemişlerdi; yanlarında daha önce ele geçirdikleri birkaç ağır top getirmişlerdi. Bu güçlü silahlar savaşın tüm gidişatını değiştirdi. Deneyimli subayların komutasındaki askerler, topları hızlıca ana kapının önüne yerleştirdiler. Kalabalık, askerlerin kraliyet zulmünün sembolünü havaya uçurmaya hazırlanmasını umutla izledi.",
+      "Ağır topların doğrudan kapılara doğrultulması her şeyi değiştirdi. Karanlık ve soğuk kalenin içinde Vali Bernard-René de Launay, manzarayı artan bir korkuyla izliyordu. Eski taş duvarların tüfek ateşine dayanabileceğini ancak ağır topçu ateşine karşı ayakta kalamayacağını biliyordu. Bastille'i savunan askerler de cesaretlerini kaybediyorlardı. Birçoğu, zaten kaybedilmiş bir dava uğruna ölmek istemeyen İsviçreli paralı askerlerdi. Eğer ağır toplar ateşlenirse, devasa ahşap asma köprüler anında paramparça olacak ve binlerce öfkeli Parislinin içeriye akın etmesine izin verecekti. De Launay, herhangi bir yardımdan tamamen mahrum kaldığını fark etti. Şehirde yakınlarda konuşlanmış olan Kral'ın askerleri onu kurtarmak için hiçbir şey yapmadı. Dışarıdaki öfkeli kalabalık teslimiyet ve adalet için haykırırken, hızlıca zor bir karar vermek zorundaydı.",
+      "Çaresiz ve panik içindeki Vali de Launay korkunç bir karar verdi. Yanmakta olan bir meşale alıp, binlerce kilo barutun depolandığı kalenin en derin yerine koştu. Sadece kaleyi değil, çevredeki sokakları da yok edecek ve binlerce masum insanı öldürecek şekilde tüm Bastille'i havaya uçurmakla tehdit etti. Ancak kendi askerleri, bu korkunç eylemi gerçekleştirmesini engelledi. Büyük bir patlamada herkesi öldürmek yerine ona teslim olması için yalvardılar. Durumlarının umutsuz olduğunu ve daha fazla savaşmanın sadece bir katliama yol açacağını biliyorlardı. Dışarıda, Fransız Muhafızları topları hazırlamayı bitirmişti ve her an ateşlemeye hazırdı. Başka seçeneği olmadığını ve adamlarından destek görmediğini anlayan vali, sonunda vatandaşlara teslim olmayı teklif etmeye karar verdi.",
+      "Ağır ahşap kapıdaki küçük bir yarıktan, Bastille'in savunucuları beyaz bir ateşkes bayrağı salladı. Silah sesleri yavaşça kesildi ve kalabalık meydanın üzerine ani bir sessizlik çöktü. İçerideki subaylardan biri, eğer kalabalık askerlerin canını bağışlamaya söz verirse teslim olmayı teklif eden kısa bir not yazdı. Kağıt parçasını kapıdaki bir çatlaktan bekleyen vatandaşlara uzattı. Eski bir asker olan Elie adında cesaretli bir adam, mesajı almak için derin hendeğin üzerindeki ahşap bir kalasa tırmandı. Kalabalık, daha önce adamlarına kendilerine ateş etme emri veren valinin hiçbir şartını kabul etmeyerek öfkeyle bağırdı. Derhal ve koşulsuz bir teslimiyet talep ettiler. Çıkış yolu bulamayan savunucular sonunda küçük asma köprüyü indirdiler ve heyecanlı kalabalık, zorlukla kazandıkları zaferlerini ilan etmek için öne atıldı.",
+      "Ağır asma köprü gürültüyle alçalırken, heyecanlı kalabalık Bastille'in avlusuna akın etti. Uzun mücadele sonunda bitmişti ve Paris vatandaşları kraliyet gücünün korkulan sembolünü fethetmişti. Karanlık ve soğuk hapishane hücrelerinin içinde, hızla serbest bırakıp sokaklarda kahramanlar gibi taşıdıkları sadece yedi mahkum buldular. Ancak halk için asıl ödül, şehirlerini kralın ordusuna karşı savunmalarına yardımcı olacak devasa miktardaki barut ve silahlardı. Ne yazık ki, kalabalığın öfkesi kolayca dindirilemedi. Güvenlik sözlerine rağmen, birkaç savunmacı ve Vali de Launay öfkeli güruh tarafından yakalandı. Onu belediye binasına doğru götürürlerken durum şiddete dönüştü ve vali trajik bir sonla karşılaştı. Kalenin düşüşü, artık Paris'te gerçek gücün sıradan insanların elinde olduğunu gösterdi.",
+      "Tarihi olayı takip eden günlerde, Paris vatandaşları Bastille'in artık ayakta kalmaması gerektiğine karar verdiler. Devasa taş kaleyi çıplak ellerini ve basit aletleri kullanarak tuğla tuğla yıkmaya başladılar. Şehrin her yerinden insanlar, bu nefret edilen zulüm ve baskı sembolünü yok etmeye yardım etmek için geldiler. Taş blokların bir kısmı, özgürlük mesajını Fransa'nın farklı bölgelerine yaymak için Bastille'in minyatür modelleri şeklinde yontuldu. Diğerleri ise gelecek nesillere halkın mutlak kraliyet otoritesine karşı ayaklandığı günü hatırlatmak için hediyelik eşya olarak satıldı. Kalenin yıkılması tüm dünyaya verilen güçlü bir mesajdı. Eski hükümet sisteminin çökmekte olduğunu ve Fransız ulusu için yeni bir özgürlük, eşitlik ve kardeşlik döneminin başladığını gösteriyordu.",
+      "Uzakta, Versailles Sarayı'nda, Kral XVI. Louis Bastille'in düşüşünü o gece geç saatlere kadar duymadı. Liancourt Dükü adında bir soylu onu bu şok edici haberi vermek için uyandırdığında, Kral derinden şaşırdı. Bunun sadece yiyecek fiyatları yüzünden çıkan başka bir yerel ayaklanma olduğunu düşünen Kral, \"Bu büyük bir isyan mı?\" diye sordu. Liancourt ünlü bir şekilde, \"Hayır, Efendimiz,\" diye yanıtladı, \"bu bir isyan değil, bir devrim.\" Bu tarihi an, Avrupa tarihini sonsuza dek değiştirecek olan Fransız Devrimi'nin gerçek başlangıcı oldu. 14 Temmuz, hakları için savaşan sıradan vatandaşların cesaretini anmak için her yıl kutlanan Fransa'nın Ulusal Günü haline geldi. Bastille'in basılması, insanlar özgürlük için bir araya geldiklerinde en güçlü taş duvarların bile onları durduramayacağını kanıtladı."
+    ],
+    words: {
+      "rebellion": "isyan",
+      "representative": "temsilci",
+      "dismissal": "görevden çıkarma",
+      "spark": "kıvılcım",
+      "militia": "milis gücü",
+      "fortress": "kale",
+      "musket": "tüfek",
+      "oppression": "zulüm",
+      "negotiate": "müzakere etmek",
+      "ammunition": "mühimmat",
+      "drawbridge": "asma köprü",
+      "surrender": "teslim olmak",
+      "betrayed": "ihanete uğramış",
+      "advantage": "avantaj",
+      "deafening": "sağır edici",
+      "casualty": "kayıp",
+      "rebellious": "isyancı",
+      "artillery": "topçu",
+      "mercenary": "paralı asker",
+      "shatter": "paramparça olmak",
+      "torch": "meşale",
+      "truce": "ateşkes",
+      "unconditional": "koşulsuz",
+      "conquer": "fethetmek",
+      "tyranny": "zulüm, zorbalık",
+      "souvenir": "hediyelik eşya",
+      "revolt": "isyan, ayaklanma",
+      "revolution": "devrim",
+      "equality": "eşitlik"
+    }
+  }
+,
+  {
+    id: 'history_isaac_newton',
+    title: "Isaac Newton and the Apple",
+    author: 'Isaac Newton',
+    level: 'B1',
+    coverUrl: '/covers/history_isaac_newton.webp',
+    en: [
+      "In the summer of 1665, a young and quiet student named Isaac Newton was working hard at Trinity College, Cambridge. He was not like the other students who spent their free time playing games or drinking in local pubs. Instead, Isaac loved to read difficult books about mathematics, light, and the movement of the stars. He wanted to understand how the universe worked, and he spent many nights studying by candlelight. However, his quiet life at the university was suddenly interrupted. A terrible disease, known as the Great Plague, began to spread quickly across England, especially in big cities like London. To protect the students and teachers from this deadly sickness, the university decided to close its doors. Isaac had to pack his books, notebooks, and simple clothes into a small wooden chest and prepare for a long journey back to his family home.",
+      "Isaac returned to Woolsthorpe Manor, a quiet farmhouse in the countryside of Lincolnshire. It was the place where he was born and raised by his mother and grandmother. While many people in the country were frightened of the plague and worried about their future, Isaac found a strange kind of peace in this isolated place. The farmhouse was surrounded by green fields, old stone walls, and a beautiful orchard filled with apple trees. Away from the busy libraries of Cambridge, he did not stop his intellectual work. In fact, he turned his small bedroom into a private study, filling it with paper, ink, and instruments. Without the pressure of university exams or lectures, he was completely free to think about his own ideas and ask big questions about nature that nobody else had ever answered.",
+      "During this peaceful time in the countryside, which historians later called his \"year of wonders,\" Isaac spent many hours walking alone in the garden. He believed that nature was the best teacher and that quiet reflection was the key to unlocking its secrets. One warm autumn afternoon, he walked to his favorite spot under a young apple tree in the orchard. The air was cool, and the leaves were starting to turn gold and red. Isaac sat down on the soft grass, resting his back against the rough tree trunk. He was thinking deeply about the moon and how it stayed in its orbit around the Earth. As he watched the clouds move slowly across the sky, he enjoyed the perfect silence of the garden, unaware that a very simple event was about to change his life and the world of science forever.",
+      "While Isaac was sitting in the quiet garden, a soft sound broke his deep thoughts. A single red apple detached itself from a high branch and fell straight down, landing with a soft thud on the green grass near his feet. For a normal person, this was a very common and boring event. People saw apples fall every autumn, and nobody thought much about it. However, Isaac was not an ordinary young man. He did not just watch the apple lie in the grass; he began to ask himself why it fell. He wondered why the apple always fell directly to the ground instead of flying sideways or floating up into the sky. It was clear that some unseen force was pulling the apple down toward the center of the Earth. This simple observation sparked a massive wave of curiosity in his brilliant mind.",
+      "Isaac looked up from the fallen apple and stared at the pale moon that was visible in the daytime sky. A spectacular idea suddenly entered his mind. He wondered if the very same force that pulled the apple to the ground also reached all the way out into space to affect the moon. Perhaps this invisible power was responsible for keeping the moon in its circular orbit around the Earth, preventing it from flying away into the dark universe. To Isaac, the universe was not a collection of separate, chaotic events, but a beautiful and organized system ruled by the same natural laws. He realized that if he could find a way to measure this attractive force, he could explain both the movement of small objects on Earth and the massive planets in the solar system with a single mathematical rule.",
+      "Excited by this incredible theory, Isaac immediately returned to his small study inside Woolsthorpe Manor to begin his calculations. He sat at his wooden desk, dipped his feather pen into black ink, and started writing complex mathematical equations on clean sheets of paper. He had to estimate the distance between the Earth and the moon and compare it to the acceleration of the falling apple. However, gravity was not the only mystery that occupied his mind during this productive period of isolation. He also began to experiment with light, using a glass prism in his darkened room to split white sunlight into a beautiful rainbow of colors. He worked tirelessly day and night, guided only by his passion for truth and his desire to solve the deepest secrets of the physical world.",
+      "As Isaac worked on his calculations, he quickly realized that the existing mathematics of his time was not advanced enough to describe the changing speed and motion of falling objects. To solve this difficult problem, he did not give up; instead, he decided to create an entirely new branch of mathematics. He called his new method the \"method of fluxions,\" which the world now knows as calculus. This powerful tool allowed him to measure how things changed continuously over time, such as the accelerating speed of the falling apple or the curved path of the moon. Sitting in his quiet room at Woolsthorpe Manor, he filled notebook after notebook with numbers and geometric diagrams. He was working completely alone, without the help of other scientists or university professors. His mind was entirely focused on decoding the mathematical language of nature, and every page he wrote brought him closer to understanding the universe.",
+      "This period of forced isolation, caused by the terrible plague in London, became the most creative and productive time of Isaac's entire life. Historians would later call this amazing period his \"year of wonders.\" Away from the busy streets and distractions of Cambridge University, his mind was free to wander and explore deep questions without any interruptions. The peaceful countryside of Lincolnshire provided the perfect environment for his intense concentration. While the rest of England was living in fear of the deadly disease, Isaac was quietly changing the future of human science. He did not show his work to anyone yet, preferring to keep his revolutionary discoveries in his private notebooks. He wanted to be absolutely certain of his math before sharing his ideas with the public, as he was a cautious young man who disliked arguments and criticism from other scholars.",
+      "When the threat of the plague finally ended in 1667, Cambridge University reopened its doors, and Isaac returned to his academic life. He brought back with him a wealth of knowledge that would soon shock the scientific community. Although he was still quiet and reserved, his extraordinary talent could not remain hidden for long. Within a few years, his former professor recognized his genius and resigned so that Isaac could become the Lucasian Professor of Mathematics at a very young age. Despite his new responsibilities, Isaac did not immediately publish his theories about gravity and the falling apple. He kept these brilliant concepts hidden in his desk, waiting for the right moment to share them. The seed of the idea, planted by a simple falling apple in his mother's orchard, was growing into a complete system of physics that would soon change the world forever.",
+      "For nearly two decades, Isaac Newton kept his revolutionary ideas about gravity and motion to himself. He lived a quiet life at Cambridge, teaching a few students and focusing on other subjects like light, mirrors, and chemistry. Meanwhile, in London, the scientific world was facing a great mystery. Members of the Royal Society, including the famous astronomer Edmond Halley and the scientist Robert Hooke, were arguing about how planets moved around the sun. They suspected that some kind of attractive force was pulling the planets, but nobody could prove the exact mathematical rules of this force. They knew that if they could solve this puzzle, they would understand the secrets of the cosmos. However, the mathematics required for such a proof was too difficult for them, and the debate remained unresolved for years, waiting for someone with the genius to finally explain the invisible connections of the universe.",
+      "In August 1684, Edmond Halley decided to visit Cambridge to consult the brilliant Lucasian Professor. During their meeting, Halley asked Newton a crucial question: what shape would a planet's orbit take if the gravity pulling it toward the sun decreased with the square of the distance? Without any hesitation, Newton immediately answered that it would be an ellipse. Halley was absolutely astonished by this quick and confident response. He asked Newton how he could possibly know this secret of the heavens so surely. Newton calmly replied that he had already calculated it many years ago during his time in the countryside. Halley realized that this quiet mathematician had solved the greatest scientific mystery of their age long before anyone else had even understood the question. He begged Newton to show him the mathematical calculations, eager to see the proof with his own eyes.",
+      "However, Newton could not find the old papers among his messy notes and promised to rewrite the calculations for his visitor. This historic conversation excited Halley, who saw the immense value of Newton's work. He encouraged the quiet professor to develop his ideas into a complete book, promising that the Royal Society would support its publication. This request woke a sleeping giant; Newton returned to his study with a new energy. He spent the next eighteen months working day and night, barely eating or sleeping, as he expanded his old ideas into a magnificent theory of the universe. The memory of the falling apple at Woolsthorpe Manor was no longer just a private thought. It was now the foundation of a complete system of physics that connected the falling of an apple to the orbits of the distant stars.",
+      "After months of intense and tireless work, Newton finally completed his masterpiece, Philosophiae Naturalis Principia Mathematica, in 1687. Since the Royal Society had run out of money, his loyal friend Edmond Halley generously paid for the printing costs from his own pocket. The book was a monumental achievement that changed the scientific world forever. Within its pages, Newton presented his famous three laws of motion and the universal law of gravitation. He proved mathematically that the exact same force pulling a simple apple to the ground also keeps the heavy Moon in its orbit around the Earth. The scientific community was absolutely amazed by this grand explanation of the cosmos. For the very first time in history, humanity possessed a single, clear set of mathematical rules that could explain both the movement of small earthly objects and the majestic dance of giant planets.",
+      "With the success of his book, Newton became one of the most famous and respected figures in Europe. He moved to London, became the President of the Royal Society, and was even knighted by Queen Anne. Despite his great fame, Newton remained a thoughtful man who often remembered his humble beginnings. In his old age, while sitting in his garden with friends like William Stukeley, he loved to share the origin of his great discovery. He explained how the simple sight of a falling apple in his mother's orchard had started his entire journey of discovery. He told them that he had wondered why the apple always fell straight to the center of the earth, which led him to think about the nature of gravity. This charming story became a legendary symbol of human curiosity and scientific inspiration.",
+      "Isaac Newton passed away in 1727 and was buried with great honor in Westminster Abbey, like a king. Today, the legendary apple tree at Woolsthorpe Manor still grows and attracts visitors from all over the world. It serves as a beautiful reminder of how a quiet moment of observation can change the course of human history. Newton's brilliant mind showed us that the universe is not a chaotic place of magic, but a beautifully ordered system that we can understand through reason and mathematics. From a quiet English countryside to the furthest corners of the universe, his legacy continues to inspire modern scientists to look up at the stars and ask questions. The falling apple remains the ultimate symbol of the moment when human curiosity met the secrets of the cosmos."
+    ],
+    tr: [
+      "1665 yazında, Isaac Newton adında genç ve sessiz bir öğrenci, Cambridge'deki Trinity College'da yoğun bir şekilde çalışıyordu. Boş zamanlarını oyun oynayarak ya da yerel barlarda içki içerek geçiren diğer öğrencilere benzemiyordu. Bunun yerine Isaac; matematik, ışık ve yıldızların hareketi hakkında zor kitaplar okumayı seviyordu. Evrenin nasıl çalıştığını anlamak istiyordu ve birçok geceyi mum ışığında ders çalışarak geçiriyordu. Ancak, üniversitedeki sessiz hayatı aniden kesintiye uğradı. Büyük Veba olarak bilinen korkunç bir hastalık, İngiltere genelinde, özellikle de Londra gibi büyük şehirlerde hızla yayılmaya başladı. Öğrencileri ve öğretmenleri bu ölümcül hastalıktan korumak için üniversite kapılarını kapatma kararı aldı. Isaac, kitaplarını, defterlerini ve sade kıyafetlerini küçük ahşap bir sandığa doldurup aile evine doğru çıkacağı uzun yolculuğa hazırlanmak zorunda kaldı.",
+      "Isaac, Lincolnshire kırsalındaki sessiz bir çiftlik evi olan Woolsthorpe Malikanesi'ne geri döndü. Burası, doğup büyüdüğü ve annesi ile büyükannesi tarafından yetiştirildiği yerdi. Ülkedeki pek çok insan vebadan korkarken ve gelecekleri hakkında endişelenirken, Isaac bu izole yerde garip bir huzur buldu. Çiftlik evi yeşil tarlalar, eski taş duvarlar ve elma ağaçlarıyla dolu güzel bir meyve bahçesiyle çevriliydi. Cambridge'in yoğun kütüphanelerinden uzakta olmasına rağmen, entelektüel çalışmalarını durdurmadı. Aslında, küçük yatak odasını kağıtlar, mürekkep ve aletlerle doldurarak özel bir çalışma odasına dönüştürdü. Üniversite sınavlarının veya derslerinin baskısı olmadan, kendi fikirleri üzerinde düşünmekte ve doğa hakkında daha önce hiç kimsenin yanıtlamadığı büyük sorular sormakta tamamen özgürdü.",
+      "Tarihçilerin daha sonra onun \"mucizeler yılı\" olarak adlandıracağı kırsaldaki bu huzurlu dönemde, Isaac bahçede tek başına yürüyerek saatler geçiriyordu. Doğanın en iyi öğretmen olduğuna ve onun sırlarını çözmenin anahtarının sessizce düşünmek olduğuna inanıyordu. Sıcak bir sonbahar öğleden sonrasında, meyve bahçesindeki genç bir elma ağacının altındaki en sevdiği yere doğru yürüdü. Hava serindi ve yapraklar altın ile kırmızı renge dönmeye başlıyordu. Isaac, sırtını ağacın pürüzlü gövdesine yaslayarak yumuşak çimlerin üzerine oturdu. Ay ve onun Dünya etrafındaki yörüngesinde nasıl kaldığı üzerine derin derin düşünüyordu. Bulutların gökyüzünde yavaşça süzülüşünü izlerken, çok basit bir olayın hayatını ve bilim dünyasını sonsuza dek değiştirmek üzere olduğundan habersiz, bahçenin kusursuz sessizliğinin tadını çıkarıyordu.",
+      "Isaac sessiz bahçede otururken, hafif bir ses onun derin düşüncelerini böldü. Tek bir kırmızı elma yüksek bir daldan ayrıldı ve dosdoğru aşağı düşerek ayaklarının yakınındaki yeşil çimlerin üzerine hafif bir sesle indi. Normal bir insan için bu çok yaygın ve sıkıcı bir olaydı. İnsanlar her sonbaharda elmaların düştüğünü görürdü ve hiç kimse bunun üzerinde pek düşünmezdi. Ancak Isaac sıradan bir genç değildi. Elmanın çimlerin üzerinde durmasını öylece izlemedi; kendine neden düştüğünü sormaya başladı. Elmanın neden yana doğru uçmak ya da gökyüzüne doğru süzülmek yerine her zaman doğrudan yere düştüğünü merak etti. Görünmeyen bir gücün elmayı Dünya'nın merkezine doğru aşağıya çektiği açıkça belliydi. Bu basit gözlem, onun parlak zihninde muazzam bir merak dalgası başlattı.",
+      "Isaac düşen elmadan kafasını kaldırdı ve gündüz gökyüzünde görünen soluk aya baktı. Aniden zihnine harika bir fikir geldi. Elmayı yere çeken aynı gücün, aya etki etmek için uzayın derinliklerine kadar ulaşıp ulaşmadığını merak etti. Belki de bu görünmez güç, ayın Dünya etrafındaki dairesel yörüngesinde kalmasını sağlıyor ve onun karanlık evrene uçup gitmesini engelliyordu. Isaac için evren, ayrı ve karmaşık olayların bir toplamı değil, aynı doğa yasaları tarafından yönetilen güzel ve düzenli bir sistemdi. Eğer bu çekim kuvvetini ölçmenin bir yolunu bulabilirse, hem Dünya üzerindeki küçük nesnelerin hareketini hem de güneş sistemindeki devasa gezegenleri tek bir matematiksel kuralla açıklayabileceğini fark etti.",
+      "Bu inanılmaz teoriden heyecan duyan Isaac, hesaplamalarına başlamak için hemen Woolsthorpe Malikanesi'ndeki küçük çalışma odasına döndü. Ahşap masasına oturdu, tüy kalemini siyah mürekkebe batırdı ve temiz kağıt yapraklarına karmaşık matematiksel denklemler yazmaya başladı. Dünya ile ay arasındaki mesafeyi tahmin etmesi ve bunu düşen elmanın ivmesiyle karşılaştırması gerekiyordu. Ancak, bu üretken tecrit döneminde zihnini meşgul eden tek gizem yerçekimi değildi. Ayrıca, karanlık odasında bir cam prizma kullanarak beyaz güneş ışığını güzel bir renk gökkuşağına ayırmak suretiyle ışıkla deneyler yapmaya başladı. Sadece gerçek tutkusu ve fiziksel dünyanın en derin sırlarını çözme arzusuyla hareket ederek gece gündüz durmaksızın çalıştı.",
+      "Isaac hesaplamaları üzerinde çalışırken, dönemindeki mevcut matematiğin, düşen nesnelerin değişen hızını ve hareketini tanımlamak için yeterince gelişmiş olmadığını kısa sürede fark etti. Bu zor problemi çözmek için pes etmedi; bunun yerine tamamen yeni bir matematik dalı yaratmaya karar verdi. Bugün dünyanın kalkülüs olarak bildiği bu yeni yöntemine \"akışlar yöntemi\" adını verdi. Bu güçlü araç; düşen elmanın hızlanan sürati veya ayın eğri yörüngesi gibi, şeylerin zaman içinde sürekli olarak nasıl değiştiğini ölçmesine olanak sağladı. Woolsthorpe Malikanesi'ndeki sessiz odasında otururken, defter üstüne defteri sayılar ve geometrik diyagramlarla doldurdu. Diğer bilim insanlarının veya üniversite profesörlerinin yardımı olmadan, tamamen tek başına çalışıyordu. Zihni tamamen doğanın matematiksel dilini çözmeye odaklanmıştı ve yazdığı her sayfa onu evreni anlamaya daha da yaklaştırıyordu.",
+      "Londra'daki korkunç vebadan kaynaklanan bu zorunlu tecrit dönemi, Isaac'in tüm hayatının en yaratıcı ve üretken zamanı haline geldi. Tarihçiler daha sonra bu harika dönemi onun \"mucizeler yılı\" olarak adlandıracaktı. Cambridge Üniversitesi'nin hareketli sokaklarından ve dikkat dağıtıcı unsurlarından uzakta, zihni hiçbir kesinti olmadan derin soruları keşfetmek ve dolaşmak için özgürdü. Lincolnshire'ın huzurlu kırsalı, onun yoğun konsantrasyonu için mükemmel bir ortam sağladı. İngiltere'nin geri kalanı ölümcül hastalık korkusuyla yaşarken, Isaac insanlık biliminin geleceğini sessizce değiştiriyordu. Devrim niteliğindeki keşiflerini özel defterlerinde saklamayı tercih ederek henüz hiç kimseye çalışmasını göstermedi. Diğer akademisyenlerden gelecek tartışmalardan ve eleştirilerden hoşlanmayan temkinli bir genç adam olduğu için, fikirlerini kamuoyuyla paylaşmadan önce matematiğinden tamamen emin olmak istiyordu.",
+      "Veba tehdidi nihayet 1667'de sona erdiğinde, Cambridge Üniversitesi kapılarını yeniden açtı ve Isaac akademik hayatına geri döndü. Yanında, yakında bilim dünyasını şoke edecek muazzam bir bilgi birikimi getirdi. Hâlâ sessiz ve içine kapanık olmasına rağmen, olağanüstü yeteneği uzun süre gizli kalamazdı. Birkaç yıl içinde, eski profesörü onun dehasını fark etti ve Isaac'in çok genç bir yaşta Lucasian Matematik Profesörü olabilmesi için görevinden istifa etti. Yeni sorumluluklarına rağmen, Isaac yerçekimi ve düşen elma hakkındaki teorilerini hemen yayınlamadı. Bu parlak kavramları paylaşmak için doğru anı bekleyerek masasında gizli tuttu. Annesinin meyve bahçesinde düşen basit bir elmanın ektiği o fikir tohumu, yakında dünyayı sonsuza dek değiştirecek eksiksiz bir fizik sistemine dönüşüyordu.",
+      "Neredeyse yirmi yıl boyunca Isaac Newton, yerçekimi ve hareket hakkındaki devrim niteliğindeki fikirlerini kendine sakladı. Cambridge'de birkaç öğrenciye ders vererek, ışık, aynalar ve kimya gibi diğer konulara odaklanarak sessiz bir hayat yaşadı. Bu sırada Londra'da bilim dünyası büyük bir gizemle karşı karşıyaydı. Ünlü astronom Edmond Halley ve bilim insanı Robert Hooke'un da aralarında bulunduğu Kraliyet Derneği üyeleri, gezegenlerin güneş etrafında nasıl döndüğünü tartışıyorlardı. Gezegenleri çeken bir tür çekim kuvveti olduğundan şüpheleniyorlardı, ancak hiç kimse bu kuvvetin kesin matematiksel kurallarını kanıtlayamıyordu. Eğer bu bulmacayı çözebilirlerse evrenin sırlarını anlayacaklarını biliyorlardı. Ancak böyle bir kanıt için gereken matematik onlar için çok zordu ve tartışma, evrenin görünmez bağlantılarını sonunda açıklayacak dahi birini bekleyerek yıllarca çözümsüz kaldı.",
+      "1684 yılının Ağustos ayında, Edmond Halley bu parlak Lucasian Profesörüne danışmak için Cambridge'i ziyaret etmeye karar verdi. Görüşmeleri sırasında Halley, Newton'a çok önemli bir soru sordu: Eğer onu güneşe doğru çeken yerçekimi mesafenin karesiyle azalsaydı, bir gezegenin yörüngesi hangi şekli alırdı? Newton hiç tereddüt etmeden hemen elips olacağını söyledi. Halley, bu hızlı ve kendinden emin cevap karşısında tamamen şaşkına dönmüştü. Newton'a gökyüzünün bu sırrını nasıl bu kadar kesin bir şekilde bildiğini sordu. Newton sakin bir şekilde, bunu yıllar önce kırsalda geçirdiği zaman zarfında zaten hesaplamış olduğunu belirtti. Halley, bu sessiz matematikçinin çağlarının en büyük bilimsel gizemini, daha başkaları soruyu bile anlamadan çok önce çözmüş olduğunu fark etti. Kanıtı kendi gözleriyle görmeye can atarak, Newton'dan kendisine matematiksel hesaplamaları göstermesini rica etti.",
+      "Ancak Newton, dağınık notları arasında eski kağıtları bulamadı ve ziyaretçisi için hesaplamaları yeniden yazmaya söz verdi. Bu tarihi konuşma, Newton'un çalışmasının muazzam değerini gören Halley'i çok heyecanlandırdı. Sessiz profesörü fikirlerini eksiksiz bir kitap haline getirmeye teşvik etti ve Kraliyet Derneği'nin kitabın basımını destekleyeceğine söz verdi. Bu istek adeta uyuyan bir devi uyandırdı; Newton yeni bir enerjiyle çalışma odasına geri döndü. Eski fikirlerini evrenin muhteşem bir teorisine dönüştürürken, sonraki on sekiz ayı neredeyse hiç yemek yemeden veya uyumadan, gece gündüz çalışarak geçirdi. Woolsthorpe Manor'daki düşen elmanın anısı artık sadece kişisel bir düşünce değildi. Artık bir elmanın düşüşünü uzak yıldızların yörüngelerine bağlayan eksiksiz bir fizik sisteminin temelini oluşturuyordu.",
+      "Aylar süren yoğun ve yorulmak bilmez çalışmanın ardından Newton, nihayet 1687 yılında başyapıtı Philosophiae Naturalis Principia Mathematica'yı tamamladı. Kraliyet Derneği'nin parası bittiği için, sadık dostu Edmond Halley basım masraflarını cömertçe kendi cebinden karşıladı. Kitap, bilim dünyasını sonsuza dek değiştiren anıtsal bir başarıydı. Sayfaları arasında Newton, ünlü üç hareket yasasını ve evrensel kütleçekim yasasını sundu. Basit bir elmayı yere çeken gücün, aynı zamanda ağır Ay'ı da Dünya etrafındaki yörüngesinde tuttuğunu matematiksel olarak kanıtladı. Bilim camiası, kozmosun bu muazzam açıklaması karşısında tamamen hayran kaldı. Tarihte ilk kez insanlık, hem küçük dünyevi nesnelerin hareketini hem de devasa gezegenlerin görkemli dansını açıklayabilen tek ve net bir matematiksel kurallar bütününe sahip oldu.",
+      "Kitabının başarısıyla birlikte Newton, Avrupa'nın en ünlü ve saygın figürlerinden biri haline geldi. Londra'ya taşındı, Kraliyet Derneği'nin başkanı oldu ve hatta Kraliçe Anne tarafından şövalye ilan edildi. Büyük ününe rağmen Newton, mütevazı başlangıçlarını sık sık hatırlayan düşünceli bir insan olarak kaldı. Yaşlılığında, William Stukeley gibi dostlarıyla bahçesinde otururken, büyük keşfinin kökenini paylaşmayı severdi. Annesinin meyve bahçesinde yere düşen bir elmanın basit görüntüsünün, tüm keşif yolculuğunu nasıl başlattığını anlattı. Elmanın neden her zaman doğrudan dünya merkezine doğru düştüğünü merak ettiğini ve bunun kendisini yerçekiminin doğası hakkında düşünmeye sevk ettiğini açıkladı. Bu büyüleyici hikaye, insan merakının ve bilimsel ilhamın efsanevi bir sembolü haline geldi.",
+      "Isaac Newton 1727 yılında hayata gözlerini yumdu ve Westminster Abbey'de bir kral gibi büyük bir törenle toprağa verildi. Bugün, Woolsthorpe Malikanesi'ndeki efsanevi elma ağacı hala büyümeye devam etmekte ve dünyanın her yerinden ziyaretçileri kendine çekmektedir. Bu ağaç, sakin bir gözlem anının insanlık tarihinin akışını nasıl değiştirebileceğinin güzel bir hatırlatıcısı olarak hizmet etmektedir. Newton'ın parlak zekası bize evrenin kaotik bir sihir yeri değil, akıl ve matematik yoluyla anlayabileceğimiz güzel bir düzene sahip bir sistem olduğunu gösterdi. Sessiz bir İngiliz taşrasından evrenin en uzak köşelerine kadar, onun mirası modern bilim insanlarına gökyüzüne bakıp sorular sorma konusunda ilham vermeye devam ediyor. Düşen elma, insan merakının kozmosun sırlarıyla buluştuğu anın en büyük sembolü olmaya devam etmektedir."
+    ],
+    words: {
+      "interrupted": "kesintiye uğramış",
+      "disease": "hastalık",
+      "isolated": "izole",
+      "orchard": "meyve bahçesi",
+      "reflection": "derin düşünme",
+      "orbit": "yörünge",
+      "detach": "ayrılmak",
+      "curiosity": "merak",
+      "invisible": "görünmez",
+      "calculate": "hesaplamak",
+      "prism": "prizma",
+      "continuous": "sürekli",
+      "isolation": "tecrit",
+      "interruption": "kesinti",
+      "cautious": "temkinli",
+      "resign": "istifa etmek",
+      "ellipse": "elips",
+      "hesitation": "tereddüt",
+      "astonished": "şaşkına dönmüş",
+      "consult": "danışmak",
+      "foundation": "temel",
+      "masterpiece": "başyapıt",
+      "generous": "cömert",
+      "knight": "şövalye ilan etmek",
+      "legacy": "miras"
     }
   }
 ];

@@ -2,7 +2,7 @@ import os
 import urllib.request
 import json
 
-env_path = r"c:\Users\acer\antigravity\i̇ngilizce-öyküm\.env"
+env_path = ".env"
 api_key = ""
 if os.path.exists(env_path):
     with open(env_path, "r") as f:

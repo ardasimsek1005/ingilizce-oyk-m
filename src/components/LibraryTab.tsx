@@ -176,7 +176,26 @@ const DetectiveIcon = () => (
   </svg>
 );
 
-const getBookCategory = (bookId: string): 'horror_mystery' | 'kids_fables' | 'classics_adventure' | 'daily_conversations' | 'sci_fi' | 'detective' => {
+const HistoryIcon = () => (
+  <svg className="w-7 h-7 shrink-0" viewBox="0 0 32 32" fill="none">
+    <defs>
+      <linearGradient id="historyGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stopColor="#b29f70" />
+        <stop offset="100%" stopColor="#594a2b" />
+      </linearGradient>
+    </defs>
+    <path d="M4 12 L16 4 L28 12 Z" fill="url(#historyGrad)" />
+    <rect x="5" y="12" width="22" height="2" fill="url(#historyGrad)" />
+    <rect x="7" y="15" width="2.5" height="9" fill="url(#historyGrad)" />
+    <rect x="12" y="15" width="2.5" height="9" fill="url(#historyGrad)" />
+    <rect x="17" y="15" width="2.5" height="9" fill="url(#historyGrad)" />
+    <rect x="22" y="15" width="2.5" height="9" fill="url(#historyGrad)" />
+    <rect x="4" y="24" width="24" height="2" fill="url(#historyGrad)" />
+    <rect x="2" y="26" width="28" height="2" fill="url(#historyGrad)" />
+  </svg>
+);
+
+const getBookCategory = (bookId: string): 'horror_mystery' | 'kids_fables' | 'classics_adventure' | 'daily_conversations' | 'sci_fi' | 'detective' | 'history' => {
   const horrorIds = [
     'sleepy_hollow', 'dr_jekyll_mr_hyde', 'invisible_man', 'crime_punishment', 'frankenstein', 'dracula', 'war_of_worlds'
   ];
@@ -205,6 +224,9 @@ const getBookCategory = (bookId: string): 'horror_mystery' | 'kids_fables' | 'cl
   }
   if (lowerId.startsWith('detective_') || lowerId.includes('detective_')) {
     return 'detective';
+  }
+  if (lowerId.startsWith('history_') || lowerId.includes('history_')) {
+    return 'history';
   }
   if (lowerId.includes('horror') || horrorIds.some(id => lowerId.includes(id))) {
     return 'horror_mystery';
@@ -349,6 +371,9 @@ export default function LibraryTab({
     }
     if (selectedCategory === 'detective') {
       return `Toplam ${count} Polisiye & Gizem Hikayesi`;
+    }
+    if (selectedCategory === 'history') {
+      return `Toplam ${count} Tarih & Efsane Hikayesi`;
     }
     return `Toplam ${count} Eser`;
   }, [filteredBooks.length, selectedCategory]);
@@ -510,7 +535,8 @@ export default function LibraryTab({
                 { id: 'horror_mystery', name: 'Korku & Gizem', desc: 'Karanlık ormanlar, gizemli şatolar ve merak uyandıran heyecan dolu öyküler.', gradient: 'from-[#a29bfe] to-[#74b9ff]', text: 'text-white' },
                 { id: 'daily_conversations', name: 'Günlük Yaşam & Diyaloglar', desc: 'Gerçek yaşam senaryolarına dayalı pratik İngilizce diyaloglar ve kısa günlük anlatılar.', gradient: 'from-[#45AAF2] to-[#4B7BEC]', text: 'text-white' },
                 { id: 'sci_fi', name: 'Bilim Kurgu', desc: 'Geleceğin teknolojileri, uzay seyahatleri, robotlar ve alternatif evrenler üzerine sürükleyici öyküler.', gradient: 'from-[#00cec9] to-[#0984e3]', text: 'text-white' },
-                { id: 'detective', name: 'Polisiye & Gizem', desc: 'Esrarengiz ipuçları, dahi dedektifler ve gizemli olayların çözüldüğü sürükleyici polisiye öyküler.', gradient: 'from-[#2c3e50] to-[#2980b9]', text: 'text-white' }
+                { id: 'detective', name: 'Polisiye & Gizem', desc: 'Esrarengiz ipuçları, dahi dedektifler ve gizemli olayların çözüldüğü sürükleyici polisiye öyküler.', gradient: 'from-[#2c3e50] to-[#2980b9]', text: 'text-white' },
+                { id: 'history', name: 'Tarih & Efsaneler', desc: 'Tarihe yön veren olaylar, antik imparatorluklar ve dilden dile aktarılan efsanevi öyküler.', gradient: 'from-[#b29f70] to-[#594a2b]', text: 'text-white' }
               ].find(c => c.id === focusedCategory) || { id: 'All', name: 'Tüm Hikayeler', desc: 'Kütüphanedeki tüm eserler.', gradient: 'from-[#FF6B6B] to-[#FFE66D]', text: 'text-white' };
               
               return (
@@ -921,7 +947,8 @@ export default function LibraryTab({
               { id: 'horror_mystery', name: 'Korku & Gizem', icon: <SpookyIcon /> },
               { id: 'daily_conversations', name: 'Günlük Yaşam & Diyaloglar', icon: <SpeechIcon /> },
               { id: 'sci_fi', name: 'Bilim Kurgu', icon: <SciFiIcon /> },
-              { id: 'detective', name: 'Polisiye & Gizem', icon: <DetectiveIcon /> }
+              { id: 'detective', name: 'Polisiye & Gizem', icon: <DetectiveIcon /> },
+              { id: 'history', name: 'Tarih & Efsaneler', icon: <HistoryIcon /> }
             ].map((cat) => {
               const isSelected = selectedCategory === cat.id;
               const isAll = cat.id === 'All';

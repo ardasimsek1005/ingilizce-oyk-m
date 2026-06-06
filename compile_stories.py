@@ -60,6 +60,13 @@ if os.path.exists(DETECTIVE_DATA_FILE):
         expanded_stories.update(detective_stories)
         print(f"Loaded {len(detective_stories)} detective stories.")
 
+HISTORY_DATA_FILE = "history_stories_data.json"
+if os.path.exists(HISTORY_DATA_FILE):
+    with open(HISTORY_DATA_FILE, "r", encoding="utf-8") as f:
+        history_stories = json.load(f)
+        expanded_stories.update(history_stories)
+        print(f"Loaded {len(history_stories)} history stories.")
+
 
 print(f"Loaded total of {len(expanded_stories)} expanded stories from JSON.")
 

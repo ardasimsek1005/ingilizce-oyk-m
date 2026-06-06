@@ -66,7 +66,39 @@ KEYWORD_MAPPINGS = {
     
     "detective_moonstone_revelation": "victorian-drawing-room-fireplace",
     "detective_double_life": "mysterious-man-fedora-shadow",
-    "detective_gold_bug_1": "antique-pirate-treasure-map"
+    "detective_gold_bug_1": "antique-pirate-treasure-map",
+
+    # Additional 30 Cover Mappings:
+    "detective_noble_bachelor": "british-gentleman-marriage-mystery",
+    "detective_cardboard_box": "cardboard-box-mysterious-package",
+    "detective_mirror_magistrate": "judge-mirror-reflection-mystery",
+    "detective_seven_of_hearts": "seven-hearts-playing-card",
+    "detective_secret_growler": "carriage-cab-night-robbery",
+    "detective_lost_special": "vintage-train-steam-missing",
+    "detective_red_thread_honour": "oriental-red-thread-medal",
+    "detective_escape_old_man": "old-man-escaping-london",
+    "detective_case_mirror": "shattered-mirror-reflection-mystery",
+    "detective_steel_room": "locked-vault-safe-door",
+    "detective_beryl_coronet": "golden-crown-missing-gem",
+    "detective_engineers_thumb": "hydraulic-press-old-factory",
+    "detective_red_scarf_2": "red-scarf-detective-magnifying",
+    "detective_black_pearl": "shiny-black-pearl-necklace",
+    "detective_man_passage": "man-standing-dark-corridor",
+    "detective_purple_jewel": "glowing-purple-jewel-gem",
+    "detective_hansom_cab_1": "vintage-cab-horse-carriage-night",
+    "detective_missing_hand": "human-handprint-dusty-window",
+    "detective_stolen_cigar": "cigar-box-leather-detective",
+    "detective_brook_street_tragedy": "vintage-doctor-bag-murder",
+    "detective_crooked_man": "crooked-silhouette-shadow-night",
+    "detective_naval_treaty": "diplomatic-treaty-stolen-document",
+    "detective_norwood_builder": "burning-timber-wood-yard",
+    "detective_three_students": "old-university-library-cheating",
+    "detective_doom_griffiths": "gothic-welsh-mountains-tragedy",
+    "detective_moonstone_investigation": "magnifying-glass-inspecting-dust",
+    "detective_woman_white_conspiracy": "secretive-men-talking-shadows",
+    "detective_hansom_cab_2": "hansom-cab-foggy-melbourne",
+    "detective_red_house_1": "red-brick-manor-house",
+    "detective_red_house_2": "secret-passage-behind-bookcase"
 }
 
 def crop_to_square(img):
