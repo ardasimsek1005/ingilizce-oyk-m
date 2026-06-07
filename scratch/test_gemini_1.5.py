@@ -13,7 +13,7 @@ if os.path.exists(env_path):
 
 print(f"API Key: {api_key[:10]}...{api_key[-10:] if len(api_key)>10 else ''}")
 
-url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-lite-latest:generateContent?key={api_key}"
+url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key={api_key}"
 headers = {"Content-Type": "application/json"}
 data = {
     "contents": [{"parts": [{"text": "Hello, write a 5 word sentence."}]}]

@@ -94,7 +94,7 @@ else:
     expanded_data = {}
 
 def call_gemini(prompt, system_instruction=""):
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key={api_key}"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent?key={api_key}"
     headers = {"Content-Type": "application/json"}
     
     data = {
@@ -107,11 +107,15 @@ def call_gemini(prompt, system_instruction=""):
                     "english_paragraphs": {
                         "type": "ARRAY",
                         "items": {"type": "STRING"},
+                        "minItems": 3,
+                        "maxItems": 3,
                         "description": "3 paragraphs of the story in English, about 130-170 words each"
                     },
                     "turkish_paragraphs": {
                         "type": "ARRAY",
                         "items": {"type": "STRING"},
+                        "minItems": 3,
+                        "maxItems": 3,
                         "description": "Turkish translation of each of the 3 English paragraphs"
                     },
                     "vocabulary": {
@@ -217,7 +221,7 @@ for idx, story in enumerate(STORIES_TO_GENERATE):
                 story_words[en_word] = tr_word
                 
         chapter += 1
-        time.sleep(15) # 15 seconds delay between chapters
+        time.sleep(35) # 35 seconds delay between chapters
             
     # Save the story and run vocabulary refiner for CEFR compliance
     story_data = {
@@ -247,6 +251,6 @@ for idx, story in enumerate(STORIES_TO_GENERATE):
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(expanded_data, f, indent=2, ensure_ascii=False)
         
-    time.sleep(20) # 20 seconds delay between stories
+    time.sleep(45) # 45 seconds delay between stories
 
 print("History story generation completed!", flush=True)

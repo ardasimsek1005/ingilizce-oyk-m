@@ -15,7 +15,7 @@ if not api_key:
     exit(1)
 
 # Check available models
-model = "models/imagen-4.0-generate-001"
+model = "models/imagen-4.0-fast-generate-001"
 # Let's test the predict endpoint
 url = f"https://generativelanguage.googleapis.com/v1beta/{model}:predict?key={api_key}"
 headers = {"Content-Type": "application/json"}
