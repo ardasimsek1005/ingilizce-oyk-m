@@ -2528,7 +2528,7 @@ export const STORIES_PART1: RawStory[] = [
   },
 
   // ==================== LEVEL A2 (9 Stories) ====================
-                                                          {
+                                                            {
     id: 'pinocchio',
     title: "Pinocchio",
     author: 'Carlo Collodi',
@@ -2630,7 +2630,7 @@ export const STORIES_PART1: RawStory[] = [
       "disappear": "kaybolmak"
     }
   },
-                                                          {
+                                                            {
     id: 'beauty_beast',
     title: "Beauty and the Beast",
     author: 'Gabrielle-Suzanne de Villeneuve',
@@ -2735,7 +2735,7 @@ export const STORIES_PART1: RawStory[] = [
       "determination": "kararlılık"
     }
   },
-                                                          {
+                                                            {
     id: 'little_mermaid',
     title: "The Little Mermaid",
     author: 'Hans Christian Andersen',
@@ -2836,7 +2836,7 @@ export const STORIES_PART1: RawStory[] = [
       "danger": "tehlike"
     }
   },
-                                                          {
+                                                            {
     id: 'aladdin',
     title: "Aladdin and the Lamp",
     author: 'Antoine Galland',
@@ -2944,7 +2944,7 @@ export const STORIES_PART1: RawStory[] = [
       "trap": "tuzak"
     }
   },
-                                                      {
+                                                        {
     id: 'princess_pea',
     title: "The Princess and the Pea",
     author: 'Hans Christian Andersen',
@@ -3045,7 +3045,7 @@ export const STORIES_PART1: RawStory[] = [
       "peaceful": "huzurlu"
     }
   },
-                                                      {
+                                                        {
     id: 'thumbelina',
     title: "Thumbelina",
     author: 'Hans Christian Andersen',
@@ -3149,7 +3149,7 @@ export const STORIES_PART1: RawStory[] = [
       "queen": "kraliçe"
     }
   },
-                                                      {
+                                                        {
     id: 'robin_hood',
     title: "Robin Hood",
     author: 'Howard Pyle',
@@ -3257,7 +3257,7 @@ export const STORIES_PART1: RawStory[] = [
       "drifted": "sürüklendi"
     }
   },
-                                                      {
+                                                        {
     id: 'alice_wonderland',
     title: "Alice in Wonderland",
     author: 'Lewis Carroll',
@@ -3360,7 +3360,7 @@ export const STORIES_PART1: RawStory[] = [
       "liquid": "sıvı"
     }
   },
-                                                      {
+                                                        {
     id: 'boy_cried_wolf',
     title: "The Boy Who Cried Wolf",
     author: 'Aesop',
@@ -3468,7 +3468,7 @@ export const STORIES_PART1: RawStory[] = [
       "trust": "güvenmek"
     }
   },
-                                                  {
+                                                    {
     id: 'fox_grapes',
     title: "The Fox and the Grapes",
     author: 'Aesop',
@@ -3572,7 +3572,7 @@ export const STORIES_PART1: RawStory[] = [
       "lesson": "ders"
     }
   },
-                                                {
+                                                  {
     id: 'ali_baba',
     title: "Ali Baba and the Forty Thieves",
     author: 'Antoine Galland',
@@ -3675,7 +3675,7 @@ export const STORIES_PART1: RawStory[] = [
       "peaceful": "huzurlu"
     }
   },
-                                                {
+                                                  {
     id: 'sinbad',
     title: "Sinbad the Sailor",
     author: 'Antoine Galland',
@@ -3777,7 +3777,7 @@ export const STORIES_PART1: RawStory[] = [
       "grab": "kapmak"
     }
   },
-                                                {
+                                                  {
     id: 'king_midas',
     title: "King Midas and the Golden Touch",
     author: 'Nathaniel Hawthorne',
@@ -3879,7 +3879,7 @@ export const STORIES_PART1: RawStory[] = [
       "prepared": "hazırlıklı"
     }
   },
-                                                  {
+                                                    {
     id: 'peter_pan',
     title: "Peter Pan",
     author: 'J. M. Barrie',
@@ -3981,7 +3981,7 @@ export const STORIES_PART1: RawStory[] = [
       "laughter": "kahkaha"
     }
   },
-                                      {
+                                        {
     id: 'lion_mouse',
     title: "The Lion and the Mouse",
     author: 'Aesop',
@@ -4050,7 +4050,7 @@ export const STORIES_PART1: RawStory[] = [
       "peace": "huzur"
     }
   },
-                                      {
+                                        {
     id: 'ant_grasshopper',
     title: "The Ant and the Grasshopper",
     author: 'Aesop',
@@ -4121,7 +4121,7 @@ export const STORIES_PART1: RawStory[] = [
       "organize": "düzenlemek"
     }
   },
-                                      {
+                                        {
     id: 'town_country_mouse',
     title: "The Town Mouse and the Country Mouse",
     author: 'Aesop',
@@ -4193,7 +4193,7 @@ export const STORIES_PART1: RawStory[] = [
       "field": "tarla"
     }
   },
-                                      {
+                                        {
     id: 'crow_pitcher',
     title: "The Crow and the Pitcher",
     author: 'Aesop',
@@ -4264,7 +4264,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "macera"
     }
   },
-                                      {
+                                        {
     id: 'wind_sun',
     title: "The North Wind and the Sun",
     author: 'Aesop',
@@ -4332,7 +4332,7 @@ export const STORIES_PART1: RawStory[] = [
       "kindness": "iyilik"
     }
   },
-                                      {
+                                        {
     id: 'gingerbread_man',
     title: "The Gingerbread Man",
     author: 'Traditional',
@@ -4399,7 +4399,7 @@ export const STORIES_PART1: RawStory[] = [
       "finish": "bitirmek"
     }
   },
-                                      {
+                                        {
     id: 'chicken_little',
     title: "Chicken Little",
     author: 'Traditional',
@@ -4469,7 +4469,7 @@ export const STORIES_PART1: RawStory[] = [
       "exit": "çıkış"
     }
   },
-                                      {
+                                        {
     id: 'enormous_turnip',
     title: "The Enormous Turnip",
     author: 'Traditional',
@@ -4535,7 +4535,7 @@ export const STORIES_PART1: RawStory[] = [
       "team": "takım"
     }
   },
-                                      {
+                                        {
     id: 'three_billy_goats',
     title: "Three Billy Goats Gruff",
     author: 'Traditional',
@@ -4604,7 +4604,7 @@ export const STORIES_PART1: RawStory[] = [
       "happy": "mutlu"
     }
   },
-                                      {
+                                        {
     id: 'fisherman_wife',
     title: "The Fisherman and His Wife",
     author: 'Brothers Grimm',
@@ -4672,7 +4672,7 @@ export const STORIES_PART1: RawStory[] = [
       "thankful": "minnettar"
     }
   },
-                                      {
+                                        {
     id: 'little_red_hen',
     title: "The Little Red Hen",
     author: 'Traditional',
@@ -4738,7 +4738,7 @@ export const STORIES_PART1: RawStory[] = [
       "stomach": "mide"
     }
   },
-                                      {
+                                        {
     id: 'frog_prince',
     title: "The Frog Prince",
     author: 'Brothers Grimm',
@@ -4807,7 +4807,7 @@ export const STORIES_PART1: RawStory[] = [
       "travel": "yolculuk"
     }
   },
-                                      {
+                                        {
     id: 'stone_soup',
     title: "Stone Soup",
     author: 'Traditional',
@@ -4876,7 +4876,7 @@ export const STORIES_PART1: RawStory[] = [
       "generous": "cömert"
     }
   },
-                                      {
+                                        {
     id: 'star_money',
     title: "The Star Money",
     author: 'Brothers Grimm',
@@ -4948,7 +4948,7 @@ export const STORIES_PART1: RawStory[] = [
       "safe": "güvende"
     }
   },
-                                      {
+                                        {
     id: 'city_musicians',
     title: "The Bremen Town Musicians",
     author: 'Brothers Grimm',
@@ -5019,7 +5019,7 @@ export const STORIES_PART1: RawStory[] = [
       "smile": "gülümsemek"
     }
   },
-                                      {
+                                        {
     id: 'peter_rabbit',
     title: "The Tale of Peter Rabbit",
     author: 'Beatrix Potter',
@@ -5090,7 +5090,7 @@ export const STORIES_PART1: RawStory[] = [
       "proud": "gururlu"
     }
   },
-                                      {
+                                        {
     id: 'bambi',
     title: "Bambi",
     author: 'Felix Salten',
@@ -5160,7 +5160,7 @@ export const STORIES_PART1: RawStory[] = [
       "noble": "soylu"
     }
   },
-                                      {
+                                        {
     id: 'black_beauty',
     title: "Black Beauty",
     author: 'Anna Sewell',
@@ -5228,7 +5228,7 @@ export const STORIES_PART1: RawStory[] = [
       "rubbed": "ovuşturdu"
     }
   },
-                                      {
+                                        {
     id: 'hans_brinker',
     title: "Hans Brinker",
     author: 'Mary Mapes Dodge',
@@ -5290,7 +5290,7 @@ export const STORIES_PART1: RawStory[] = [
       "working": "çalışan"
     }
   },
-                                      {
+                                        {
     id: 'five_children_it',
     title: "Five Children and It",
     author: 'E. Nesbit',
@@ -5360,7 +5360,7 @@ export const STORIES_PART1: RawStory[] = [
       "stretched": "gergin"
     }
   },
-                                      {
+                                        {
     id: 'railway_children',
     title: "The Railway Children",
     author: 'E. Nesbit',
@@ -5426,7 +5426,7 @@ export const STORIES_PART1: RawStory[] = [
       "whistle": "düdük"
     }
   },
-                                      {
+                                        {
     id: 'swiss_family',
     title: "The Swiss Family Robinson",
     author: 'Johann David Wyss',
@@ -5495,7 +5495,7 @@ export const STORIES_PART1: RawStory[] = [
       "prepared": "hazırlıklı"
     }
   },
-                                      {
+                                        {
     id: 'doctor_dolittle',
     title: "Doctor Dolittle",
     author: 'Hugh Lofting',
@@ -5562,7 +5562,7 @@ export const STORIES_PART1: RawStory[] = [
       "prepared": "hazırlıklı"
     }
   },
-                                      {
+                                        {
     id: 'sleepy_hollow',
     title: "The Legend of Sleepy Hollow",
     author: 'Washington Irving',
@@ -5632,7 +5632,7 @@ export const STORIES_PART1: RawStory[] = [
       "sticks": "sopa"
     }
   },
-                                      {
+                                        {
     id: 'rip_van_winkle',
     title: "Rip Van Winkle",
     author: 'Washington Irving',
@@ -5704,7 +5704,7 @@ export const STORIES_PART1: RawStory[] = [
       "working": "çalışan"
     }
   },
-                                      {
+                                        {
     id: 'velveteen_rabbit',
     title: "The Velveteen Rabbit",
     author: 'Margery Williams',
@@ -5776,7 +5776,7 @@ export const STORIES_PART1: RawStory[] = [
       "arrival": "varış"
     }
   },
-                                      {
+                                        {
     id: 'water_babies',
     title: "The Water-Babies",
     author: 'Charles Kingsley',
@@ -5846,7 +5846,7 @@ export const STORIES_PART1: RawStory[] = [
       "immediately": "derhal"
     }
   },
-                                      {
+                                        {
     id: 'nutcracker',
     title: "The Nutcracker",
     author: 'E. T. A. Hoffmann',
@@ -5915,7 +5915,7 @@ export const STORIES_PART1: RawStory[] = [
       "real": "gerçek"
     }
   },
-                                      {
+                                        {
     id: 'blue_bird',
     title: "The Blue Bird",
     author: 'Maurice Maeterlinck',
@@ -5986,7 +5986,7 @@ export const STORIES_PART1: RawStory[] = [
       "thankful": "minnettar"
     }
   },
-                                      {
+                                        {
     id: 'tom_thumb',
     title: "Tom Thumb",
     author: 'Brothers Grimm',
@@ -6058,7 +6058,7 @@ export const STORIES_PART1: RawStory[] = [
       "kindness": "iyilik"
     }
   },
-                                      {
+                                        {
     id: 'little_match_girl',
     title: "The Little Match Girl",
     author: 'Hans Christian Andersen',
@@ -6129,7 +6129,7 @@ export const STORIES_PART1: RawStory[] = [
       "silent": "sessiz"
     }
   },
-                                {
+                                  {
     id: 'horror_black_cat',
     title: "The Black Cat",
     author: 'Edgar Allan Poe',
@@ -6200,7 +6200,7 @@ export const STORIES_PART1: RawStory[] = [
       "anymore": "artık"
     }
   },
-                                {
+                                  {
     id: 'horror_signalman',
     title: "The Signalman",
     author: 'Charles Dickens',
@@ -6268,7 +6268,7 @@ export const STORIES_PART1: RawStory[] = [
       "better": "daha iyi"
     }
   },
-                                {
+                                  {
     id: 'horror_red_headed_league',
     title: "The Red-Headed League",
     author: 'Arthur Conan Doyle',
@@ -6337,7 +6337,7 @@ export const STORIES_PART1: RawStory[] = [
       "brain": "beyin"
     }
   },
-                                {
+                                  {
     id: 'horror_blue_carbuncle',
     title: "The Blue Carbuncle",
     author: 'Arthur Conan Doyle',
@@ -6408,7 +6408,7 @@ export const STORIES_PART1: RawStory[] = [
       "attacked": "saldırıldı"
     }
   },
-                                {
+                                  {
     id: 'horror_young_goodman_brown',
     title: "Young Goodman Brown",
     author: 'Nathaniel Hawthorne',
@@ -6476,7 +6476,7 @@ export const STORIES_PART1: RawStory[] = [
       "blew": "savurdu"
     }
   },
-                                {
+                                  {
     id: 'horror_phantom_rickshaw',
     title: "The Phantom Rickshaw",
     author: 'Rudyard Kipling',
@@ -6543,7 +6543,7 @@ export const STORIES_PART1: RawStory[] = [
       "better": "daha iyi"
     }
   },
-                                {
+                                  {
     id: 'horror_draculas_guest',
     title: "Dracula's Guest",
     author: 'Bram Stoker',
@@ -6612,7 +6612,7 @@ export const STORIES_PART1: RawStory[] = [
       "attack": "saldırı"
     }
   },
-                                {
+                                  {
     id: 'horror_devil_tom_walker',
     title: "The Devil and Tom Walker",
     author: 'Washington Irving',
@@ -6683,7 +6683,7 @@ export const STORIES_PART1: RawStory[] = [
       "anymore": "artık"
     }
   },
-                                {
+                                  {
     id: 'horror_monkeys_paw',
     title: "The Monkey's Paw",
     author: 'W. W. Jacobs',
@@ -6753,7 +6753,7 @@ export const STORIES_PART1: RawStory[] = [
       "blows": "darbeler"
     }
   },
-                                {
+                                  {
     id: 'horror_oval_portrait',
     title: "The Oval Portrait",
     author: 'Edgar Allan Poe',
@@ -6821,7 +6821,7 @@ export const STORIES_PART1: RawStory[] = [
       "beauty": "güzellik"
     }
   },
-                                {
+                                  {
     id: 'horror_house_of_usher',
     title: "The Fall of the House of Usher",
     author: 'Edgar Allan Poe',
@@ -6891,7 +6891,7 @@ export const STORIES_PART1: RawStory[] = [
       "entire": "bütün"
     }
   },
-                                {
+                                  {
     id: 'horror_cask_amontillado',
     title: "The Cask of Amontillado",
     author: 'Edgar Allan Poe',
@@ -6963,7 +6963,7 @@ export const STORIES_PART1: RawStory[] = [
       "closely": "dikkatle"
     }
   },
-                                {
+                                  {
     id: 'horror_speckled_band',
     title: "The Speckled Band",
     author: 'Arthur Conan Doyle',
@@ -7035,7 +7035,7 @@ export const STORIES_PART1: RawStory[] = [
       "neglect": "terk edilmişlik"
     }
   },
-                                {
+                                  {
     id: 'horror_yellow_wallpaper',
     title: "The Yellow Wallpaper",
     author: 'Charlotte Perkins Gilman',
@@ -7106,7 +7106,7 @@ export const STORIES_PART1: RawStory[] = [
       "nails": "çiviler"
     }
   },
-                                {
+                                  {
     id: 'horror_willows',
     title: "The Willows",
     author: 'Algernon Blackwood',
@@ -7175,7 +7175,7 @@ export const STORIES_PART1: RawStory[] = [
       "glow": "parıltı"
     }
   },
-                                {
+                                  {
     id: 'horror_wendigo',
     title: "The Wendigo",
     author: 'Algernon Blackwood',
@@ -7245,7 +7245,7 @@ export const STORIES_PART1: RawStory[] = [
       "freezing": "dondurucu"
     }
   },
-                                {
+                                  {
     id: 'horror_king_in_yellow',
     title: "The King in Yellow",
     author: 'Robert W. Chambers',
@@ -7314,7 +7314,7 @@ export const STORIES_PART1: RawStory[] = [
       "monsters": "canavarlar"
     }
   },
-                                {
+                                  {
     id: 'horror_vampyre',
     title: "The Vampyre",
     author: 'John William Polidori',
@@ -7385,7 +7385,7 @@ export const STORIES_PART1: RawStory[] = [
       "evil": "şer"
     }
   },
-                                {
+                                  {
     id: 'horror_horla',
     title: "The Horla",
     author: 'Guy de Maupassant',
@@ -7453,7 +7453,7 @@ export const STORIES_PART1: RawStory[] = [
       "flowers": "çiçekler"
     }
   },
-                                {
+                                  {
     id: 'horror_green_tea',
     title: "Green Tea",
     author: 'Sheridan Le Fanu',
@@ -7523,7 +7523,7 @@ export const STORIES_PART1: RawStory[] = [
       "dusty": "tozlu"
     }
   },
-                                {
+                                  {
     id: 'horror_sandman',
     title: "The Sandman",
     author: 'E. T. A. Hoffmann',
@@ -7594,7 +7594,7 @@ export const STORIES_PART1: RawStory[] = [
       "fainted": "bayıldı"
     }
   },
-                                {
+                                  {
     id: 'horror_birth_mark',
     title: "The Birth-Mark",
     author: 'Nathaniel Hawthorne',
@@ -7663,7 +7663,7 @@ export const STORIES_PART1: RawStory[] = [
       "flowers": "çiçekler"
     }
   },
-                                {
+                                  {
     id: 'horror_masque_red_death',
     title: "The Masque of the Red Death",
     author: 'Edgar Allan Poe',
@@ -7735,7 +7735,7 @@ export const STORIES_PART1: RawStory[] = [
       "grip": "kavrayış"
     }
   },
-                                {
+                                  {
     id: 'horror_gold_bug',
     title: "The Gold-Bug",
     author: 'Edgar Allan Poe',
@@ -7802,7 +7802,7 @@ export const STORIES_PART1: RawStory[] = [
       "exact": "tam"
     }
   },
-                                {
+                                  {
     id: 'horror_moonstone',
     title: "The Moonstone",
     author: 'Wilkie Collins',
@@ -7872,7 +7872,7 @@ export const STORIES_PART1: RawStory[] = [
       "eventually": "nihayetinde"
     }
   },
-                              {
+                                {
     id: 'classic_tom_sawyer',
     title: "The Adventures of Tom Sawyer",
     author: 'Mark Twain',
@@ -7944,7 +7944,7 @@ export const STORIES_PART1: RawStory[] = [
       "believes": "inanır"
     }
   },
-                              {
+                                {
     id: 'classic_oliver_twist',
     title: "Oliver Twist",
     author: 'Charles Dickens',
@@ -8014,7 +8014,7 @@ export const STORIES_PART1: RawStory[] = [
       "charge": "suçlama"
     }
   },
-                              {
+                                {
     id: 'classic_prince_pauper',
     title: "The Prince and the Pauper",
     author: 'Mark Twain',
@@ -8081,7 +8081,7 @@ export const STORIES_PART1: RawStory[] = [
       "confused": "şaşkın"
     }
   },
-                              {
+                                {
     id: 'classic_kidnapped',
     title: "Kidnapped",
     author: 'Robert Louis Stevenson',
@@ -8152,7 +8152,7 @@ export const STORIES_PART1: RawStory[] = [
       "captain": "kaptan"
     }
   },
-                              {
+                                {
     id: 'classic_three_musketeers',
     title: "The Three Musketeers",
     author: 'Alexandre Dumas',
@@ -8218,7 +8218,7 @@ export const STORIES_PART1: RawStory[] = [
       "amazing": "harika"
     }
   },
-                              {
+                                {
     id: 'classic_uncle_tom_cabin',
     title: "Uncle Tom's Cabin",
     author: 'Harriet Beecher Stowe',
@@ -8288,7 +8288,7 @@ export const STORIES_PART1: RawStory[] = [
       "better": "daha iyi"
     }
   },
-                              {
+                                {
     id: 'classic_journey_center_earth',
     title: "Journey to the Center of the Earth",
     author: 'Jules Verne',
@@ -8357,7 +8357,7 @@ export const STORIES_PART1: RawStory[] = [
       "anymore": "artık"
     }
   },
-                              {
+                                {
     id: 'classic_first_men_moon',
     title: "The First Men in the Moon",
     author: 'H. G. Wells',
@@ -8423,7 +8423,7 @@ export const STORIES_PART1: RawStory[] = [
       "blinds": "panjur"
     }
   },
-                            {
+                              {
     id: 'classic_captains_courageous',
     title: "Captains Courageous",
     author: 'Rudyard Kipling',
@@ -8496,7 +8496,7 @@ export const STORIES_PART1: RawStory[] = [
       "balance": "denge"
     }
   },
-                            {
+                              {
     id: 'classic_mysterious_island',
     title: "The Mysterious Island",
     author: 'Jules Verne',
@@ -8567,7 +8567,7 @@ export const STORIES_PART1: RawStory[] = [
       "closer": "daha yakın"
     }
   },
-                            {
+                              {
     id: 'classic_david_copperfield',
     title: "David Copperfield",
     author: 'Charles Dickens',
@@ -8640,7 +8640,7 @@ export const STORIES_PART1: RawStory[] = [
       "cheerful": "neşeli"
     }
   },
-                          {
+                            {
     id: 'classic_great_expectations',
     title: "Great Expectations",
     author: 'Charles Dickens',
@@ -8709,7 +8709,7 @@ export const STORIES_PART1: RawStory[] = [
       "completely": "tamamen"
     }
   },
-                          {
+                            {
     id: 'classic_jane_eyre',
     title: "Jane Eyre",
     author: 'Charlotte Brontë',
@@ -8780,7 +8780,7 @@ export const STORIES_PART1: RawStory[] = [
       "eventually": "sonunda"
     }
   },
-                          {
+                            {
     id: 'classic_count_monte_cristo',
     title: "The Count of Monte Cristo",
     author: 'Alexandre Dumas',
@@ -8849,7 +8849,7 @@ export const STORIES_PART1: RawStory[] = [
       "crawled": "süründü"
     }
   },
-                          {
+                            {
     id: 'classic_huck_finn',
     title: "Adventures of Huckleberry Finn",
     author: 'Mark Twain',
@@ -8920,7 +8920,7 @@ export const STORIES_PART1: RawStory[] = [
       "prepared": "hazırlıklı"
     }
   },
-                          {
+                            {
     id: 'classic_twenty_thousand_leagues',
     title: "Twenty Thousand Leagues Under the Seas",
     author: 'Jules Verne',
@@ -8990,7 +8990,7 @@ export const STORIES_PART1: RawStory[] = [
       "curious": "meraklı"
     }
   },
-                          {
+                            {
     id: 'classic_earth_to_moon',
     title: "From the Earth to the Moon",
     author: 'Jules Verne',
@@ -9061,7 +9061,7 @@ export const STORIES_PART1: RawStory[] = [
       "captain": "kaptan"
     }
   },
-                          {
+                            {
     id: 'classic_lost_world',
     title: "The Lost World",
     author: 'Arthur Conan Doyle',
@@ -9132,7 +9132,7 @@ export const STORIES_PART1: RawStory[] = [
       "distant": "uzak"
     }
   },
-                          {
+                            {
     id: 'classic_island_moreau',
     title: "The Island of Doctor Moreau",
     author: 'H. G. Wells',
@@ -9201,7 +9201,7 @@ export const STORIES_PART1: RawStory[] = [
       "clearly": "açıkça"
     }
   },
-                          {
+                            {
     id: 'classic_red_badge_courage',
     title: "The Red Badge of Courage",
     author: 'Stephen Crane',
@@ -9269,7 +9269,7 @@ export const STORIES_PART1: RawStory[] = [
       "dusty": "tozlu"
     }
   },
-                          {
+                            {
     id: 'classic_emma',
     title: "Emma",
     author: 'Jane Austen',
@@ -9338,7 +9338,7 @@ export const STORIES_PART1: RawStory[] = [
       "immediately": "derhal"
     }
   },
-                          {
+                            {
     id: 'classic_sense_sensibility',
     title: "Sense and Sensibility",
     author: 'Jane Austen',
@@ -9408,7 +9408,7 @@ export const STORIES_PART1: RawStory[] = [
       "comfort": "konfor"
     }
   },
-                          {
+                            {
     id: 'classic_mansfield_park',
     title: "Mansfield Park",
     author: 'Jane Austen',
@@ -9480,7 +9480,7 @@ export const STORIES_PART1: RawStory[] = [
       "distance": "mesafe"
     }
   },
-                          {
+                            {
     id: 'classic_persuasion',
     title: "Persuasion",
     author: 'Jane Austen',
@@ -9553,7 +9553,7 @@ export const STORIES_PART1: RawStory[] = [
       "emotions": "duygular"
     }
   },
-                          {
+                            {
     id: 'classic_northanger_abbey',
     title: "Northanger Abbey",
     author: 'Jane Austen',
@@ -9623,7 +9623,7 @@ export const STORIES_PART1: RawStory[] = [
       "kindness": "nezaket"
     }
   },
-                      {
+                        {
     id: 'peter_wolf',
     title: "Peter and the Wolf",
     author: 'Sergei Prokofiev',
@@ -9692,7 +9692,7 @@ export const STORIES_PART1: RawStory[] = [
       "content": "memnun"
     }
   },
-                      {
+                        {
     id: 'tin_soldier',
     title: "The Steadfast Tin Soldier",
     author: 'Hans Christian Andersen',
@@ -9763,7 +9763,7 @@ export const STORIES_PART1: RawStory[] = [
       "heart": "kalp"
     }
   },
-                      {
+                        {
     id: 'magic_pot',
     title: "The Magic Porridge Pot",
     author: 'Brothers Grimm',
@@ -9833,7 +9833,7 @@ export const STORIES_PART1: RawStory[] = [
       "feast": "ziyafet"
     }
   },
-                      {
+                        {
     id: 'wolf_kids',
     title: "The Wolf and the Seven Young Goats",
     author: 'Brothers Grimm',
@@ -9902,7 +9902,7 @@ export const STORIES_PART1: RawStory[] = [
       "wolf": "kurt"
     }
   },
-                      {
+                        {
     id: 'brave_tailor',
     title: "The Brave Little Tailor",
     author: 'Brothers Grimm',
@@ -9971,7 +9971,7 @@ export const STORIES_PART1: RawStory[] = [
       "capture": "yakalamak"
     }
   },
-                    {
+                      {
     id: 'fable_shepherd_flute',
     title: "The Shepherd's Flute",
     author: 'Traditional',
@@ -10042,7 +10042,7 @@ export const STORIES_PART1: RawStory[] = [
       "journey": "yolculuk"
     }
   },
-                    {
+                      {
     id: 'fable_ant_dove',
     title: "The Ant and the Dove",
     author: 'Aesop',
@@ -10114,7 +10114,7 @@ export const STORIES_PART1: RawStory[] = [
       "kindness": "iyilik"
     }
   },
-                    {
+                      {
     id: 'fable_donkey_salt',
     title: "The Donkey and the Salt",
     author: 'Aesop',
@@ -10184,7 +10184,7 @@ export const STORIES_PART1: RawStory[] = [
       "obey": "söz dinlemek"
     }
   },
-                    {
+                      {
     id: 'fable_honest_woodcutter',
     title: "The Honest Woodcutter",
     author: 'Aesop',
@@ -10254,7 +10254,7 @@ export const STORIES_PART1: RawStory[] = [
       "iron": "demir"
     }
   },
-                    {
+                      {
     id: 'fable_milkmaid_pail',
     title: "The Milkmaid and her Pail",
     author: 'Aesop',
@@ -10326,7 +10326,7 @@ export const STORIES_PART1: RawStory[] = [
       "honest": "dürüst"
     }
   },
-                    {
+                      {
     id: 'fable_peacock_crane',
     title: "The Peacock and the Crane",
     author: 'Aesop',
@@ -10398,7 +10398,7 @@ export const STORIES_PART1: RawStory[] = [
       "value": "değer"
     }
   },
-                    {
+                      {
     id: 'fable_fisherman_fish',
     title: "The Fisherman and the Little Fish",
     author: 'Aesop',
@@ -10466,7 +10466,7 @@ export const STORIES_PART1: RawStory[] = [
       "respect": "saygı"
     }
   },
-                    {
+                      {
     id: 'fable_three_wishes',
     title: "The Three Wishes",
     author: 'Traditional',
@@ -10540,7 +10540,7 @@ export const STORIES_PART1: RawStory[] = [
       "shine": "parlamak"
     }
   },
-                    {
+                      {
     id: 'fable_magic_seed',
     title: "The Magic Seed",
     author: 'Traditional',
@@ -10610,7 +10610,7 @@ export const STORIES_PART1: RawStory[] = [
       "proud": "gururlu"
     }
   },
-                    {
+                      {
     id: 'fable_magic_paintbrush',
     title: "The Magic Paintbrush",
     author: 'Chinese Folktale',
@@ -10677,7 +10677,7 @@ export const STORIES_PART1: RawStory[] = [
       "useful": "yararlı"
     }
   },
-                    {
+                      {
     id: 'horror_ghost_library',
     title: "The Ghost in the Library",
     author: 'Traditional',
@@ -10744,7 +10744,7 @@ export const STORIES_PART1: RawStory[] = [
       "breathes": "soluyor"
     }
   },
-                    {
+                      {
     id: 'horror_whispering_castle',
     title: "The Whispering Castle",
     author: 'Traditional',
@@ -10811,7 +10811,7 @@ export const STORIES_PART1: RawStory[] = [
       "glowing": "kor gibi"
     }
   },
-                    {
+                      {
     id: 'horror_haunted_lighthouse',
     title: "The Haunted Lighthouse",
     author: 'Traditional',
@@ -10882,7 +10882,7 @@ export const STORIES_PART1: RawStory[] = [
       "friendly": "dostane"
     }
   },
-                    {
+                      {
     id: 'horror_clock_tower_ghost',
     title: "The Clock Tower Ghost",
     author: 'Traditional',
@@ -10954,7 +10954,7 @@ export const STORIES_PART1: RawStory[] = [
       "heartbeat": "nabız"
     }
   },
-                    {
+                      {
     id: 'horror_haunted_mirror',
     title: "The Haunted Mirror",
     author: 'Traditional',
@@ -11026,7 +11026,7 @@ export const STORIES_PART1: RawStory[] = [
       "grabs": "kapıyor"
     }
   },
-                    {
+                      {
     id: 'horror_whispering_shadows',
     title: "The Whispering Shadows",
     author: 'Traditional',
@@ -11091,7 +11091,7 @@ export const STORIES_PART1: RawStory[] = [
       "breathes": "soluyor"
     }
   },
-                    {
+                      {
     id: 'horror_crying_stone',
     title: "The Legend of the Crying Stone",
     author: 'Traditional',
@@ -11161,7 +11161,7 @@ export const STORIES_PART1: RawStory[] = [
       "flowers": "çiçekler"
     }
   },
-                    {
+                      {
     id: 'horror_haunted_painting',
     title: "The Haunted Painting",
     author: 'Traditional',
@@ -11230,7 +11230,7 @@ export const STORIES_PART1: RawStory[] = [
       "previous": "önceki"
     }
   },
-                    {
+                      {
     id: 'horror_haunted_clock',
     title: "The Haunted Clock",
     author: 'Traditional',
@@ -11299,7 +11299,7 @@ export const STORIES_PART1: RawStory[] = [
       "flashes": "çakışlar"
     }
   },
-                    {
+                      {
     id: 'horror_mysterious_passenger',
     title: "The Mysterious Passenger",
     author: 'Traditional',
@@ -11369,7 +11369,7 @@ export const STORIES_PART1: RawStory[] = [
       "safety": "emniyet"
     }
   },
-                    {
+                      {
     id: 'classic_gulliver_laputa',
     title: "Gulliver's Travels - The Floating Island",
     author: 'Jonathan Swift',
@@ -11441,7 +11441,7 @@ export const STORIES_PART1: RawStory[] = [
       "main": "ana"
     }
   },
-                    {
+                      {
     id: 'classic_crusoe_footprint',
     title: "Robinson Crusoe - The First Footprint",
     author: 'Daniel Defoe',
@@ -11510,7 +11510,7 @@ export const STORIES_PART1: RawStory[] = [
       "calm": "sakin"
     }
   },
-                    {
+                      {
     id: 'classic_call_wild_race',
     title: "The Call of the Wild - The Great Sled Race",
     author: 'Jack London',
@@ -11578,7 +11578,7 @@ export const STORIES_PART1: RawStory[] = [
       "distance": "mesafe"
     }
   },
-                    {
+                      {
     id: 'classic_around_world_india',
     title: "Around the World in Eighty Days - The Train in India",
     author: 'Jules Verne',
@@ -11647,7 +11647,7 @@ export const STORIES_PART1: RawStory[] = [
       "mission": "görev"
     }
   },
-                    {
+                      {
     id: 'classic_treasure_island_chest',
     title: "Treasure Island - The Map in the Chest",
     author: 'Robert Louis Stevenson',
@@ -11713,7 +11713,7 @@ export const STORIES_PART1: RawStory[] = [
       "blows": "darbeler"
     }
   },
-                    {
+                      {
     id: 'classic_moby_dick_whale',
     title: "Moby Dick - The White Whale",
     author: 'Herman Melville',
@@ -11781,7 +11781,7 @@ export const STORIES_PART1: RawStory[] = [
       "distance": "mesafe"
     }
   },
-                    {
+                      {
     id: 'classic_secret_garden_key',
     title: "The Secret Garden - The Locked Gate",
     author: 'Frances Hodgson Burnett',
@@ -11851,7 +11851,7 @@ export const STORIES_PART1: RawStory[] = [
       "aside": "bir kenara"
     }
   },
-                    {
+                      {
     id: 'classic_heidi_mountain',
     title: "Heidi - The Grandfather's House",
     author: 'Johanna Spyri',
@@ -11920,7 +11920,7 @@ export const STORIES_PART1: RawStory[] = [
       "care": "özen"
     }
   },
-                    {
+                      {
     id: 'classic_don_quixote_windmills',
     title: "Don Quixote - The Windmills",
     author: 'Miguel de Cervantes',
@@ -11988,7 +11988,7 @@ export const STORIES_PART1: RawStory[] = [
       "appears": "görünüyor"
     }
   },
-                    {
+                      {
     id: 'classic_odyssey_sirens',
     title: "The Odyssey - The Sirens' Song",
     author: 'Homer',
@@ -12051,7 +12051,7 @@ export const STORIES_PART1: RawStory[] = [
       "distant": "uzak"
     }
   },
-                    {
+                      {
     id: 'daily_market',
     title: "A Day at the Market",
     author: 'Antigravity',
@@ -12120,7 +12120,7 @@ export const STORIES_PART1: RawStory[] = [
       "thankful": "minnettar"
     }
   },
-                    {
+                      {
     id: 'daily_cafe',
     title: "Coffee and Conversation",
     author: 'Antigravity',
@@ -12190,7 +12190,7 @@ export const STORIES_PART1: RawStory[] = [
       "nap": "şekerleme (kısa uyku)"
     }
   },
-                    {
+                      {
     id: 'daily_taxi',
     title: "The Taxi Ride",
     author: 'Antigravity',
@@ -12257,7 +12257,7 @@ export const STORIES_PART1: RawStory[] = [
       "peaceful": "huzurlu"
     }
   },
-                    {
+                      {
     id: 'daily_hotel',
     title: "Checking In",
     author: 'Antigravity',
@@ -12329,7 +12329,7 @@ export const STORIES_PART1: RawStory[] = [
       "excellent": "mükemmel"
     }
   },
-                    {
+                      {
     id: 'daily_park',
     title: "Meeting in the Park",
     author: 'Antigravity',
@@ -12397,7 +12397,7 @@ export const STORIES_PART1: RawStory[] = [
       "joy": "sevinç"
     }
   },
-                    {
+                      {
     id: 'daily_library',
     title: "Finding a Book",
     author: 'Antigravity',
@@ -12464,7 +12464,7 @@ export const STORIES_PART1: RawStory[] = [
       "hobby": "hobi"
     }
   },
-                    {
+                      {
     id: 'daily_bus',
     title: "Missing the Bus",
     author: 'Antigravity',
@@ -12527,7 +12527,7 @@ export const STORIES_PART1: RawStory[] = [
       "travel": "seyahat etmek"
     }
   },
-                    {
+                      {
     id: 'daily_weather',
     title: "Planning a Picnic",
     author: 'Antigravity',
@@ -12591,7 +12591,7 @@ export const STORIES_PART1: RawStory[] = [
       "memories": "anılar"
     }
   },
-                    {
+                      {
     id: 'daily_pet',
     title: "Choosing a Pet",
     author: 'Antigravity',
@@ -12659,7 +12659,7 @@ export const STORIES_PART1: RawStory[] = [
       "peaceful": "huzurlu"
     }
   },
-                    {
+                      {
     id: 'daily_cooking',
     title: "Dinner Time",
     author: 'Antigravity',
@@ -12730,7 +12730,7 @@ export const STORIES_PART1: RawStory[] = [
       "finish": "bitirmek"
     }
   },
-                    {
+                      {
     id: 'daily_apartment',
     title: "Renting a Flat",
     author: 'Antigravity',
@@ -12797,7 +12797,7 @@ export const STORIES_PART1: RawStory[] = [
       "satisfied": "memnun"
     }
   },
-                    {
+                      {
     id: 'daily_airport',
     title: "Heathrow Arrival",
     author: 'Antigravity',
@@ -12861,7 +12861,7 @@ export const STORIES_PART1: RawStory[] = [
       "queue": "sıra"
     }
   },
-                    {
+                      {
     id: 'daily_doctor',
     title: "The Doctor's Visit",
     author: 'Antigravity',
@@ -12929,7 +12929,7 @@ export const STORIES_PART1: RawStory[] = [
       "grateful": "minnettar"
     }
   },
-                    {
+                      {
     id: 'daily_shopping',
     title: "Mall Shopping",
     author: 'Antigravity',
@@ -13001,7 +13001,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "macera"
     }
   },
-                    {
+                      {
     id: 'daily_interview',
     title: "The Job Interview",
     author: 'Antigravity',
@@ -13068,7 +13068,7 @@ export const STORIES_PART1: RawStory[] = [
       "secure": "güvende"
     }
   },
-                    {
+                      {
     id: 'daily_bank',
     title: "Opening an Account",
     author: 'Antigravity',
@@ -13137,7 +13137,7 @@ export const STORIES_PART1: RawStory[] = [
       "pin": "şifre"
     }
   },
-                    {
+                      {
     id: 'daily_dentist',
     title: "Toothache Trouble",
     author: 'Antigravity',
@@ -13206,7 +13206,7 @@ export const STORIES_PART1: RawStory[] = [
       "checkup": "kontrol"
     }
   },
-                    {
+                      {
     id: 'daily_train',
     title: "Ticket Office",
     author: 'Antigravity',
@@ -13270,7 +13270,7 @@ export const STORIES_PART1: RawStory[] = [
       "experience": "deneyim"
     }
   },
-                    {
+                      {
     id: 'daily_restaurant',
     title: "The Birthday Dinner",
     author: 'Antigravity',
@@ -13340,7 +13340,7 @@ export const STORIES_PART1: RawStory[] = [
       "refresh": "tazelenmek"
     }
   },
-                    {
+                      {
     id: 'daily_laundry',
     title: "Lost Sock",
     author: 'Antigravity',
@@ -13413,7 +13413,7 @@ export const STORIES_PART1: RawStory[] = [
       "stress": "stres"
     }
   },
-              {
+                {
     id: 'horror_lost_tomb',
     title: "The Legend of the Lost Tomb",
     author: 'Mystery Author',
@@ -13482,7 +13482,7 @@ export const STORIES_PART1: RawStory[] = [
       "beating": "çırpınış"
     }
   },
-              {
+                {
     id: 'horror_secret_passage',
     title: "The Secret of the Passage",
     author: 'Mystery Author',
@@ -13551,7 +13551,7 @@ export const STORIES_PART1: RawStory[] = [
       "beating": "çırpınış"
     }
   },
-            {
+              {
     id: 'scifi_time_machine',
     title: "The Time Machine",
     author: 'H. G. Wells',
@@ -13560,7 +13560,7 @@ export const STORIES_PART1: RawStory[] = [
     en: [
       "The Time Traveller sits in a room. He has many friends around him. It is a dark and quiet night. He tells his friends that time is a fourth dimension. He shows them a small machine. It is made of ivory and brass. It looks very strange and beautiful. His friends look at the small model with big eyes. They think it is a toy or a joke. But the man is very serious. He explains that a person can travel through time like we travel through space. He says he wants to go to the future. He wants to see where humanity goes. His friends are quiet now. They are very confused by his words. The room is cold and the candles flicker. The man tells them he will travel very soon. He asks them to believe in his great machine.",
       "A week passes by. The friends come to his house again for dinner. The house is empty and quiet. The Time Traveller is not there. The friends look around and see many books and papers on the tables. They find a note on the table. It says that he will be back soon. The friends walk into the lab. They see the big machine in the middle of the room. It is a large version of the small model. It has metal parts and glowing lights. The air feels heavy and strange. One friend touches the seat of the machine. It feels very cold. They look at the clocks on the wall. They wait for a long time but he does not appear. They start to worry about him. They sit on the chairs and talk about their strange friend.",
-      "The storm begins outside. The rain falls hard on the glass windows. Suddenly, the door opens slowly. A man walks into the room. He looks very tired and old. His clothes are dirty and torn. His face is sad and pale. It is the Time Traveller. He looks at his friends but he does not smile. He walks to the table and drinks some water. His hand shakes as he holds the glass. He looks like a man who sees something very bad. His friends are shocked by his appearance. They ask him where he was for the whole week. He sits down slowly in a chair. He says he saw a world that is not the same as ours. He begins to tell his story. The room is silent. He prepares to speak about the strange things he saw in the far future.",
+      "The storm begins outside. The rain falls hard on the glass windows. Suddenly, the door opens slowly. A man walks into the room. He looks very tired and old. His clothes are dirty and torn. His face is sad and pale. It is the Time Traveller. He looks at his friends but he does not smile. He walks to the table and drinks some water. His hand shakes as he holds the glass. He looks like a man who saw something very bad. His friends are shocked by his appearance. They ask him where he was for the whole week. He sits down slowly in a chair. He says he saw a world that is not the same as ours. He begins to tell his story. The room is silent. He prepares to speak about the strange things he saw in the far future.",
       "The Time Traveller sits at the table and starts his long story. He tells us that the machine moved very fast through time. He saw the sun move across the sky like a bright flash of light. The days and nights came and went in a fast blur. He felt a strange pain in his head. The world changed in front of his eyes. He saw big buildings rise and fall like waves in the sea. The earth seemed to spin faster and faster. He was a traveler in the middle of time. He was scared but he could not stop the machine. He moved further into the future than any man. The world was new and strange. He looked out and felt very small. He wanted to see if the world was still full of life or if it was just a silent place of dust.",
       "He says the machine finally stopped in a large garden. The air was very fresh and warm. He saw many beautiful flowers and big trees everywhere. He felt happy to be on solid ground again. He climbed off the machine and looked around the area. He saw a great white building made of stone. The building looked like a palace from a fairy tale. He walked towards it and felt full of hope. He thought he was in a wonderful place. People started to walk out of the building. They were small and had very thin bodies. They wore soft clothes and had long hair. They looked very gentle and kind. He thought they were happy people who lived in a perfect world. He wanted to talk to them. He felt like a guest in their beautiful home.",
       "The small people came closer to him. They did not look afraid or shy. They touched his clothes and looked at his metal machine with great curiosity. They laughed and smiled at him. He tried to speak to them in many different languages but they did not answer him. He realized that language had changed a lot over the years. They seemed to live without any hard work. They just played and ate fruit. There were no factories and no signs of pain or struggle. He thought that humanity had reached a golden age. He saw that there were no old people among them. They all looked young and strong. He felt safe in this garden. He stood there and watched them for a long time. He truly believed he found a place where peace and happiness lived forever in the bright sunlight.",
@@ -13569,16 +13569,16 @@ export const STORIES_PART1: RawStory[] = [
       "The hallway was long and narrow. He touched the stone walls with his cold hands. The air smelled strange and dusty. He heard the noise again, louder this time. He saw a flicker of light far away. He walked closer and saw a small group of people. They were not like the small people in the garden. They were white and had large red eyes. They looked very scary and ugly. They were moving things in the dark room. He saw his time machine near them. They were touching it with their long, thin fingers. He hid behind a large pillar and watched them. They did not see him yet. His heart was full of hope and terror at the same time. He had to be careful. He needed a plan to get his machine back from these strange creatures before it was too late.",
       "The Time Traveller watched the pale creatures from behind the cold stone. These creatures were called Morlocks. They lived under the ground because they were afraid of the sun. He saw his beautiful machine in the middle of their dark home. It was covered with a white cloth. He felt very nervous because he was alone against many enemies. He thought about his plan to take the machine back. He needed to be very quiet. He looked around the room and saw many tools on the floor. He picked up a heavy metal bar to help him fight if necessary. He realized that the Morlocks were the ones who took his machine. They wanted to hide it from him forever. He took a deep breath and prepared to move. He had to be quick to save his only way to return to his own time.",
       "Suddenly one of the Morlocks looked in his direction. Its red eyes glowed in the dark. It made a strange sound that was not a human voice. The Time Traveller did not move because he was very scared. He knew that if he fought them, he might never leave this place. He waited until the creature turned back to its work. He crept across the dusty floor. His heart felt like a hammer in his chest. He felt the cold air on his skin. Every step was a risk. He finally reached the machine and touched the metal. It felt solid and real. He was so happy to find his treasure. However, the Morlocks started to notice him. They jumped and made loud noises. He knew he had to run away from this deep, dark place immediately.",
-      "He realized the Morlocks were very fast in the dark. He climbed onto the machine and tried to start it. But the machine did not move. He saw that the levers were missing. The creatures had taken them away to prevent him from escaping. He felt a deep sadness in his heart. He was trapped in this terrible future. He stood up and held his metal bar tight. He had to fight the Morlocks to survive. He shouted at them to stay back. The creatures were surprised by his courage. They moved back into the shadows. He looked for a way to get out of the underground world. He started to run towards a faint light far away. He hoped to find the surface again. He was not ready to give up on his life and his home.",
+      "He realized the Morlocks were very fast in the dark. He climbed onto the machine and tried to start it. But the machine did not move. He saw that the levers were missing. The creatures had taken them away to prevent him from escaping. He felt a deep sadness in his heart. He was trapped in this terrible future. He stood up and held his metal bar tight. He had to fight the Morlocks to survive. He shouted at them to stay back. The creatures were surprised by his bravery. They moved back into the shadows. He looked for a way to get out of the underground world. He started to run towards a faint light far away. He hoped to find the surface again. He was not ready to give up on his life and his home.",
       "The Time Traveller ran fast toward the bright light of the surface. He felt the cold hands of the creatures behind him in the dark. He climbed a long ladder until his head reached the cool air. The sun was setting and the sky looked red and orange. He was finally out of that dark cave. He felt happy to see the stars again. However he was still very tired from the long fight. He sat down on the grass to rest for a short time. He looked at his machine which was now with him. He had his levers back after a lucky discovery in a small room. He moved quickly to sit on the seat. The air began to vibrate and the world around him changed. He was finally going home to his own time and his own friends.",
       "The world started to move in a blur of colors. He saw the sun move fast across the sky like a giant ball of fire. The moon grew and shrank many times as he traveled forward. He felt the speed in his body as he left that dark future behind. He saw the trees grow and fall in seconds. He was moving through time with great force. He felt no fear now because he wanted to see his home. The machine was working perfectly and the wind pushed against his face. He watched as the distant years passed by. He was a traveler between times and space. He remembered the friends waiting for him at the dinner table. They would be surprised to see him again after such a long and strange trip across the many centuries.",
       "Finally the machine stopped moving. He saw the familiar room of his house. The sun was shining through the window just like before. He stood up and his legs felt weak. He walked toward the door and opened it slowly. He could hear his friends talking in the other room. He was back in his own time after a long journey into the future. He walked inside and they all looked at him with big eyes. He felt very happy to be with normal people once again. He told them he was safe but very hungry. He knew the world was a strange place with many secrets. He sat down and started to eat his dinner. The long trip was over and he was finally home. He would never forget the lessons he learned about time and humanity."
     ],
     tr: [
-      "Zaman Yolcusu bir odada oturuyor. Etrafında birçok arkadaşı var. Karanlık ve sessiz bir gece. Arkadaşlarına zamanın dördüncü bir boyut olduğunu söylüyor. Onlara küçük bir makine gösteriyor. Fildişi ve pirinçten yapılmış. Çok tuhaf ve güzel görünüyor. Arkadaşları küçük modele büyük gözlerle bakıyorlar. Onun bir oyuncak veya şaka olduğunu düşünüyorlar. Ama adam çok ciddi. Bir insanın uzayda seyahat ettiğimiz gibi zamanda da seyahat edebileceğini açıklıyor. Geleceğe gitmek istediğini söylüyor. İnsanlığın nereye gittiğini görmek istiyor. Arkadaşları artık sessiz. Sözleri kafalarını çok karıştırıyor. Oda soğuk ve mumlar titriyor. Adam onlara yakında seyahat edeceğini söylüyor. Onlardan harika makinesine inanmalarını istiyor.",
+      "Zaman Yolcusu bir odada oturuyor. Etrafında birçok arkadaşı var. Karanlık ve sessiz bir gece. Arkadaşlarına zamanın dördüncü bir boyut olduğunu söylüyor. Onlara küçük bir makine gösteriyor. Fildişi ve pirinçten yapılmış. Çok tuhaf ve güzel görünüyor. Arkadaşları küçük modele büyük gözlerle bakıyorlar. Onun bir oyuncak veya şaka olduğunu düşünüyorlar. Ama adam çok ciddi. Bir insanın uzayda seyahat ettiğimiz gibi zamanda da seyahat edebileceğini açıklıyor. Geleceğe gitmek istediğini söylüyor. İnsanlığın nereye gittiğini görmek istiyor. Arkadaşları şimdi sessiz. Sözleri onları çok şaşırtıyor. Oda soğuk ve mumlar titriyor. Adam onlara yakında seyahat edeceğini söylüyor. Onlardan harika makinesine inanmalarını istiyor.",
       "Bir hafta geçiyor. Arkadaşlar akşam yemeği için tekrar evine geliyorlar. Ev boş ve sessiz. Zaman Yolcusu orada değil. Arkadaşları etrafa bakıyor ve masaların üzerinde birçok kitap ve kağıt görüyorlar. Masanın üzerinde bir not buluyorlar. Yakında geri döneceğini söylüyor. Arkadaşlar laboratuvara giriyorlar. Odanın ortasında büyük makineyi görüyorlar. Küçük modelin büyük bir versiyonu. Metal parçaları ve parlayan ışıkları var. Hava ağır ve tuhaf hissettiriyor. Bir arkadaş makinenin koltuğuna dokunuyor. Çok soğuk hissettiriyor. Duvardaki saatlere bakıyorlar. Uzun süre bekliyorlar ama o gelmiyor. Onun için endişelenmeye başlıyorlar. Sandalyelere oturuyorlar ve tuhaf arkadaşları hakkında konuşuyorlar.",
       "Dışarıda fırtına başlıyor. Yağmur cam pencerelerin üzerine sertçe yağıyor. Aniden kapı yavaşça açılıyor. Bir adam odaya giriyor. Çok yorgun ve yaşlı görünüyor. Kıyafetleri kirli ve yırtık. Yüzü üzgün ve solgun. Bu Zaman Yolcusu. Arkadaşlarına bakıyor ama gülümsemiyor. Masaya yürüyor ve biraz su içiyor. Bardağı tutarken eli titriyor. Çok kötü bir şey görmüş bir adama benziyor. Arkadaşları onun görünüşü karşısında şoke oluyorlar. Ona tüm hafta boyunca nerede olduğunu soruyorlar. Yavaşça bir sandalyeye oturuyor. Bizimkine benzemeyen bir dünya gördüğünü söylüyor. Hikayesini anlatmaya başlıyor. Oda sessiz. Uzak gelecekte gördüğü tuhaf şeyler hakkında konuşmaya hazırlanıyor.",
-      "Zaman Yolcusu masaya oturur ve uzun hikayesine başlar. Bize makinenin zaman içinde çok hızlı hareket ettiğini söyler. Güneşin gökyüzünde parlak bir ışık parlaması gibi hareket ettiğini gördü. Günler ve geceler hızlı bir bulanıklık içinde geldi ve geçti. Başında tuhaf bir acı hissetti. Dünya gözlerinin önünde değişti. Büyük binaların denizdeki dalgalar gibi yükselip alçaldığını gördü. Dünya daha hızlı ve daha hızlı dönüyor gibiydi. O, zamanın ortasında bir yolcuydu. Korkmuştu ama makineyi durduramadı. Geleceğe herhangi bir insandan daha ileri gitti. Dünya yeni ve tuğaftı. Dışarı baktı ve kendini çok küçük hissetti. Dünyanın hala yaşamla dolu olup olmadığını veya sadece sessiz bir toz yeri olup olmadığını görmek istedi.",
+      "Zaman Yolcusu masaya oturur ve uzun hikayesine başlar. Bize makinenin zaman içinde çok hızlı hareket ettiğini söyler. Güneşin gökyüzünde parlak bir ışık parlaması gibi hareket ettiğini gördü. Günler ve geceler hızlı bir bulanıklık içinde geldi ve geçti. Başında tuhaf bir acı hissetti. Dünya gözlerinin önünde değişti. Büyük binaların denizdeki dalgalar gibi yükselip alçaldığını gördü. Dünya daha hızlı ve daha hızlı dönüyor gibiydi. O, zamanın ortasında bir yolcuydu. Korkmuştu ama makineyi durduramadı. Geleceğe herhangi bir insandan daha ileri gitti. Dünya yeni ve tuhaftı. Dışarı baktı ve kendini çok küçük hissetti. Dünyanın hala yaşamla dolu olup olmadığını veya sadece sessiz bir toz yeri olup olmadığını görmek istedi.",
       "Makinenin sonunda büyük bir bahçede durduğunu söylüyor. Hava çok taze ve sıcaktı. Her yerde birçok güzel çiçek ve büyük ağaç gördü. Tekrar sağlam bir zeminde olduğu için mutlu hissetti. Makineden indi ve etrafına baktı. Taştan yapılmış büyük beyaz bir bina gördü. Bina bir masal sarayına benziyordu. Ona doğru yürüdü ve umutla doldu. Harika bir yerde olduğunu düşündü. İnsanlar binadan dışarı çıkmaya başladılar. Küçük ve çok ince vücutları vardı. Yumuşak kıyafetler giyiyorlardı ve uzun saçları vardı. Çok nazik ve kibar görünüyorlardı. Mükemmel bir dünyada yaşayan mutlu insanlar olduklarını düşündü. Onlarla konuşmak istedi. Güzel evlerinde bir misafir gibi hissetti.",
       "Küçük insanlar ona yaklaştı. Korkmuş veya utangaç görünmüyorlardı. Kıyafetlerine dokundular ve metal makinesine büyük bir merakla baktılar. Güldüler ve ona gülümsediler. Onlarla birçok farklı dilde konuşmaya çalıştı ama ona cevap vermediler. Dilin yıllar içinde çok değiştiğini fark etti. Hiçbir zor iş yapmadan yaşıyor gibi görünüyorlardı. Sadece oynuyor ve meyve yiyorlardı. Fabrika yoktu ve acı veya mücadele belirtisi yoktu. İnsanlığın altın çağa ulaştığını düşündü. Aralarında yaşlı insanlar olmadığını gördü. Hepsi genç ve güçlü görünüyordu. Bu bahçede güvende hissetti. Orada durdu ve onları uzun süre izledi. Huzur ve mutluluğun parlak güneş ışığında sonsuza dek yaşadığı bir yer bulduğuna gerçekten inandı.",
       "Güneş çok parlaktı ve hava güzel hissettiriyordu. Zaman Yolcusu bahçeye tekrar baktı. Makinesini bulmak istiyordu. Büyük taş binanın yanındaki yere geri yürüdü. Yumuşak çimlere baktı. Büyük ağaçların altına baktı. Ancak makine orada değildi. Kalbi çok hızlı çarpmaya başladı. Göğsünde ani bir korku hissetti. Neredeydi? Bahçenin etrafında koştu. Metal parçaları ve kolları aradı. Bu gelecek dünyasında yapayalnızdı. Küçük insanlar onun nereye gittiğini bilmiyordu. Sıcak güneşte bile üşüdü. Makine onun eve dönüş tek yoluydu. O olmadan, zamanın mahkûmuydu. Yardım için bağırmaya ve çığlık atmaya başladı. Ama sadece rüzgâr onun hüzünlü haykırışını duydu. Uzak gelecekte kaybolmuştu.",
@@ -13611,7 +13611,7 @@ export const STORIES_PART1: RawStory[] = [
       "terror": "dehşet",
       "nervous": "gergin",
       "treasure": "hazine",
-      "courage": "cesaret",
+      "bravery": "cesaret",
       "escape": "kaçmak",
       "survive": "hayatta kalmak",
       "surface": "yüzey",
@@ -13621,7 +13621,7 @@ export const STORIES_PART1: RawStory[] = [
       "humanity": "insanlık"
     }
   },
-            {
+              {
     id: 'scifi_journey_center_earth',
     title: "A Journey to the Centre of the Earth",
     author: 'Jules Verne',
@@ -13645,20 +13645,20 @@ export const STORIES_PART1: RawStory[] = [
       "We stand near the entrance of the final tunnel. The air is warm and moves from the deep center. We use our tools to break the rock wall that blocks the path. Suddenly, the ground begins to shake. There is a loud sound like a volcano waking up. We run back to the boat because the fire and hot rocks start to fall. The boat moves up with the rising water. We are flying fast in the dark tunnel. The water takes us higher and higher until we see the blue sky. We hit the water near a mountain. We are outside again in a beautiful green land. People come to help us and we tell them our story about the center of the earth. We are home, but we will never forget the journey we had under the world."
     ],
     tr: [
-      "Mayıs 1863'te bir Pazar günü Hamburg şehrindeyiz. Amcam Profesör Lidenbrock'tur. O çok zeki bir adam ama aynı zamanda çok garip bir adamdır. Eski kitapları ve taşları sever. Evinde büyük bir kütüphanesi var. Onunla yaşıyorum ve ona her gün yardım ediyorum. Ben Axel, genç bir öğrenciyim. Amcam birçok taşla çalışıyor ve onları dikkatlice incelemeyi seviyor. Bir gün, çok eski bir kitap satın alıyor. Kitap İzlanda'dan ve ünlü bir adam tarafından yazılmış. Kitabın içinde küçük bir kağıt parçası buluyoruz. Kağıdın üzerinde garip işaretler var. Amcam çok mutlu çünkü gizemleri seviyor. Kağıdın sırrını bilmek istiyor. Saatlerce ona bakıyoruz ve okumaya çalışıyoruz. Bu çok özel bir gün.",
-      "Amcam çok heyecanlı. İşaretlerin uzun zaman öncesinden kalma gizli bir mesaj olduğunu düşünüyor. Kağıdı büyüteciyle inceliyor. O bir bilim insanı ve birçok dil biliyor. Metni hem ileri hem geri okuyor. Bütün gün ve bütün gece bunu düşünüyor. Yemek yemiyor ve uyumuyor. Onu izliyorum ve biraz korkuyorum. O büyük bir hedefi olan bir adam. Bilim dünyasında ünlü olmak istiyor. Odasında kendi kendine konuşuyor. Gerçeğin satırların arasında gizli olduğunu söylüyor. Ben sadece basit bir öğrenciyim ama onun büyük hırsını görüyorum. Ev sessiz ama amcam fikirleriyle gürültülü. Duvarlara, sanki sorularının cevapları oradaymış gibi bakıyor.",
-      "Sonunda, gizem amcam için netleşiyor. Eski kağıdın sırrını anlıyor. Dünyanın merkezine gitmenin bir yolunu tarif ediyor. Bunu duyduğumda çok şaşırıyorum. Dünya çok sıcak ve çok derindir. Oraya kimse gidemez. Merkeze seyahat etmek imkansız. Amcam tehlikeyi umursamıyor. Bir yolculuğa çıkacağımızı söylüyor. Hayır demek istiyorum ama o patron. Uzun ve zor bir yolculuğa hazırlanmalıyız. Üzgün hissediyorum çünkü güvenli evimde kalmak istiyorum. Gencim ve sessiz hayatımı seviyorum. Ama amcam çantalarını hazırlıyor ve birçok alet alıyor. Macera için hazır. Dünyanın tarihi yerin altında bizi bekliyor. Çok yakında gidiyoruz.",
-      "İzlanda'ya yapılacak uzun yolculuk için çantalarımızı hazırlıyoruz. Amcam çok hızlı bir adam ve hiçbir şey için beklemekten hoşlanmıyor. Sağlam botlar, sıcak tutan paltolar ve birçok bilimsel alet satın alıyor. Ayrıca karanlık mağaralar için çok sayıda halat ve özel bir lamba alıyor. Evime ve küçük yatağıma son bir kez bakıyorum. Bu yolculuğun tehlikeli olduğunu bildiğim için kendimi çok gergin hissediyorum. Amcam gülümsüyor ve bana birlikte tarih yazacağımızı söylüyor. Çok mutlu ve sürekli İzlanda'nın yanardağlarından bahsediyor. Tüm ağır çantalarımızla Hamburg'daki tren istasyonuna gidiyoruz. Büyük görevimiz için çok fazla ekipmanımız olduğu için birçok insan bize bakıyor. Tren hareket etmeye başlıyor ve şehirdeki rahat evime veda ediyorum.",
-      "İzlanda yolculuğu uzun sürüyor ve hava çok soğuk. Büyük bir gemiyle denizi geçiyoruz. Rüzgar çok güçlü ve su çok derin. Amcam güvertede kalıyor ve her gün gökyüzüne bakıyor. Haritalarını inceliyor ve küçük defterine notlar alıyor. Deniz beni hasta ettiği için içeride kalıyorum. Yerin altındaki sıcak kayaları ve orada yaşayabilecek garip yaratıkları hayal ediyorum. Kitaplarım ve sıcak yemeğimle evde güvende olmak istiyorum. Ancak amcam güçlü bir adam ve işini asla bırakmıyor. Bana kaşif olduğumuz için cesur olmamız gerektiğini söylüyor. Onun için güçlü olmaya çalışıyorum ve gri okyanusa çok ciddi bir yüzle bakıyorum.",
+      "Mayıs 1863'te bir Pazar günü Hamburg şehrindeyiz. Amcam Profesör Lidenbrock'tur. O çok akıllı bir adam ama aynı zamanda çok tuhaf bir adamdır. Eski kitapları ve taşları sever. Evinde büyük bir kütüphanesi var. Onunla yaşıyorum ve ona her gün yardım ediyorum. Ben Axel, genç bir öğrenciyim. Amcam birçok taşla çalışıyor ve onları dikkatlice incelemeyi seviyor. Bir gün, çok eski bir kitap alıyor. Kitap İzlanda'dan ve ünlü bir adam tarafından yazılmış. Kitabın içinde küçük bir kağıt parçası buluyoruz. Kağıdın üzerinde garip işaretler var. Amcam çok mutlu çünkü gizemleri seviyor. Kağıdın sırrını bilmek istiyor. Saatlerce ona bakıyoruz ve okumaya çalışıyoruz. Bu çok özel bir gün.",
+      "Amcam çok heyecanlı. İşaretlerin uzun zaman öncesinden kalma gizli bir mesaj olduğunu düşünüyor. Kağıdı büyüteciyle inceliyor. O bir bilim insanı ve birçok dil biliyor. Yazıyı hem ileri hem geri okuyor. Bütün gün ve bütün gece bunu düşünüyor. Yemek yemiyor ve uyumuyor. Onu izliyorum ve biraz korkuyorum. O büyük bir hedefi olan bir adam. Bilim dünyasında ünlü olmak istiyor. Odasında kendi kendine konuşuyor. Gerçeğin satırların arasında gizli olduğunu söylüyor. Ben sadece basit bir öğrenciyim ama onun büyük isteğini görüyorum. Ev sessiz ama amcam fikirleriyle gürültülü. Duvarlara, sanki sorularının cevapları oradaymış gibi bakıyor.",
+      "Sonunda, gizem amcam için anlaşılıyor. Eski kağıdın sırrını anlıyor. Dünyanın merkezine gitmenin bir yolunu anlatıyor. Bunu duyduğumda çok şaşırıyorum. Dünya çok sıcak ve çok derin. Oraya kimse gidemez. Merkeze gitmek imkansız. Amcam tehlikeyi umursamıyor. Bir yolculuğa çıkacağımızı söylüyor. Hayır demek istiyorum ama o patron. Uzun ve zor bir yolculuğa hazırlanmalıyız. Üzgün hissediyorum çünkü güvenli evimde kalmak istiyorum. Gencim ve sakin hayatımı seviyorum. Ama amcam çantalarını hazırlıyor ve birçok alet alıyor. Maceraya hazır. Dünyanın tarihi yerin altında bizi bekliyor. Çok yakında gidiyoruz.",
+      "İzlanda'ya yapılacak uzun yolculuk için çantalarımızı topluyoruz. Amcam çok hızlı bir adam ve hiçbir şey için beklemekten hoşlanmıyor. Sağlam botlar, sıcak tutan paltolar ve birçok bilimsel alet alıyor. Ayrıca karanlık mağaralar için çok sayıda ip ve özel bir lamba alıyor. Evime ve küçük yatağıma son bir kez bakıyorum. Bu yolculuğun tehlikeli olduğunu bildiğim için kendimi çok gergin hissediyorum. Amcam gülümsüyor ve bana birlikte tarih yazacağımızı söylüyor. Çok mutlu ve sürekli İzlanda'nın yanardağlarından bahsediyor. Tüm ağır çantalarımızla Hamburg'daki tren istasyonuna gidiyoruz. Büyük görevimiz için çok fazla eşyamız olduğu için birçok insan bize bakıyor. Tren hareket etmeye başlıyor ve şehirdeki rahat evime veda ediyorum.",
+      "İzlanda yolculuğu uzun sürüyor ve hava çok soğuk. Büyük bir gemiyle denizi geçiyoruz. Rüzgar çok güçlü ve su çok derin. Amcam güvertede kalıyor ve her gün gökyüzüne bakıyor. Haritalarını inceliyor ve küçük defterine notlar alıyor. Deniz beni hasta ettiği için içeride kalıyorum. Yerin altındaki sıcak kayaları ve orada yaşayabilecek tuhaf yaratıkları hayal ediyorum. Kitaplarım ve sıcak yemeğimle evde güvende olmak istiyorum. Ancak amcam güçlü bir adam ve işini asla bırakmıyor. Bana kaşif olduğumuz için cesur olmamız gerektiğini söylüyor. Onun için güçlü olmaya çalışıyorum ve gri okyanusa çok ciddi bir yüzle bakıyorum.",
       "Sonunda İzlanda'nın soğuk topraklarına varıyoruz. Hava taze ve dağlar yüksek, karlarıyla bembeyaz. Rehberimiz olacak Hans adında bir adamla tanışıyoruz. Hans, çok konuşmayan, uzun ve sessiz bir adam. Güçlü elleri var ve yüksek dağlara nasıl tırmanacağını biliyor. Amcam Hans'ı seviyor çünkü o basit ve dürüst biri. Yanardağın yakınındaki küçük köye gitmek için atlara biniyoruz. Yol çok kayalık ve yürümesi zor. Uzaktan büyük yanardağı görüyorum ve kendimi çok küçük hissediyorum. Burası yolculuğumuzun başlayacağı yer. Artık geri dönüş olmadığını biliyorum. Amcamı ve Hans'ı karanlık ve gizemli yerin içine kadar takip etmemiz gerekiyor. Kalbim çok hızlı çarpıyor çünkü derin çukurdan korkuyorum.",
-      "Sneffels adındaki yüksek yanardağın eteğinde duruyoruz. Dağ karla kaplı ve gökyüzündeki gri bulutlara değiyor. Amcam zirveye mutlu bir yüzle bakıyor çünkü yolumuzun buradan başladığını biliyor. Hans çantaları hazırlıyor ve ipleri tekrar kontrol ediyor. O çok dikkatli bir adam ve asla hata yapmıyor. Mağaranın karanlık girişine bakıyorum ve kalın palatomun altında bile üşüyorum. Dağın çevresindeki hava ince ve bazen nefes almak zorlaşıyor. Derin yerin içine giden yolumuzu aydınlatmak için birçok aletimiz ve fenerimiz var. Titreyen ellerimi amcamın görmesini istemediğim için korkumu saklamaya çalışıyorum. O enerji dolu ve kendine güvenle karanlık deliğe doğru yürüyor. Biz de onu yavaşça yanardağın gölgelerine doğru takip ediyoruz.",
+      "Sneffels adındaki yüksek yanardağın eteğinde duruyoruz. Dağ karla kaplı ve gökyüzündeki gri bulutlara değiyor. Amcam zirveye mutlu bir yüzle bakıyor çünkü yolumuzun buradan başladığını biliyor. Hans çantaları hazırlıyor ve ipleri tekrar kontrol ediyor. O çok dikkatli bir adam ve asla hata yapmıyor. Mağaranın karanlık girişine bakıyorum ve kalın palomun altında bile üşüyorum. Dağın çevresindeki hava ince ve bazen nefes almak zorlaşıyor. Derin yerin içine giden yolumuzu aydınlatmak için birçok aletimiz ve fenerimiz var. Titreyen ellerimi amcamın görmesini istemediğim için korkumu saklamaya çalışıyorum. O enerji dolu ve kendine güvenle karanlık deliğe doğru yürüyor. Biz de onu yavaşça yanardağın gölgelerine doğru takip ediyoruz.",
       "Yanardağın içi çok büyük ve sessiz. Güneşin ışığını arkamızda bırakıyoruz ve siyah kaya dolu bir dünyaya giriyoruz. Fenerlerimiz duvarlarda tuhaf gölgeler oluşturuyor ve yol yerin karnına doğru aşağı iniyor. Mağaranın sessizliğinde kendi kalp atışımı duyuyorum. Duvarlar sert taştan yapılmış ve bazı kısımlar uzun zaman öncesinden kalma donmuş ateş nehirlerine benziyor. Amcam taşları inceliyor ve bana yerin farklı katmanları hakkında bilgi veriyor. Attığımız her adımla zamanda geriye doğru yürüdüğümüzü açıklıyor. Dinlemeye çalışıyorum ama ilerideki tehlikelerden endişeleniyorum. Yol dik ve düşmemek için dikkatli yürümeliyiz. İnsanların dünyasını başımızın çok üzerinde bırakarak karanlığın derinliklerine doğru ilerliyoruz.",
-      "Derinlerdeki yolculuk bacaklarımız için çok zor. Yorgun olduğumuzda yerde uyuyoruz ve çantalarımızdaki basit yemekleri yiyoruz. Yanımızdaki su çok kıymetli ve her damlasını korumalıyız. Hamburg'daki evimin güneş ışığını ve yumuşak çimenlerini özlüyorum. Bazen yol o kadar dar ki soğuk zeminde hayvanlar gibi sürünmek zorunda kalıyoruz. Amcam her zaman önümüzde duruyor ve bize pusulası ve haritasıyla rehberlik ediyor. Yol tek başına tırmanılamayacak kadar zor olduğunda Hans bana yardım ediyor. Zor işten asla şikayet etmiyor ve bizim için sabit bir hız koruyor. Artık yerin içinde çok aşağılardayız. Hava ağır hissettiriyor ve sessizlik çok derin. Karanlığa bakıyorum ve bu uzun tünelin sonunda ne bulacağımızı merak ediyorum.",
-      "Büyük bir odaya ulaşana kadar günlerce yürümeye devam ediyoruz. Burası tavanı yüksek, kocaman bir mağara. Önümüzde yeni bir şey gördüğümüz için duruyoruz. Yerin içinde dev bir deniz var. Suyun tamamen durgun olması nedeniyle normal bir denize benzemiyor. Buradaki ışık tuhaf ve yumuşak. Sıcak bir güneşten değil, duvarlardaki kayalardan geliyor. Artık farklı bir dünyada olduğumuzu hissediyoruz. Amcam suya kocaman gözlerle bakıyor. Doğru yolda olduğumuzu düşündüğü için çok mutlu. Kumsalda durup uçsuz bucaksız suya bakıyoruz. Hans, yakında bulduğumuz tahtalardan küçük bir tekne yapmaya başlıyor. Uzun yolculuğumuza devam etmek için bu derin suyun karşısına geçmeliyiz.",
-      "Denizin yakınındaki hava çok farklı. Artık soğuk değil ve tuz gibi kokuyor. Hans'ın güçlü elleriyle tekne üzerinde çalışmasını izliyorum. Hızlı çalışıyor ve fazla konuşmuyor. İhtiyacı olduğunda ona yardım ediyorum ama zihnim sorularla dolu. Bu karanlık suda ne yaşıyor? Dalgaların altında bizi bekleyen bir yaratık var mı? Karanlık suya bakıyorum ve biraz korkuyorum. Amcam bunun tüm bilim dünyası için harika bir keşif olduğunu söylüyor. Burada yaşayabilecek eski bitkilerden ve kadim balıklardan bahsediyor. Sessizliğin içinde onun sesini dinliyorum. Tekne artık hazır. Eşyalarımızı içine koyuyoruz ve yelken açmaya hazırlanıyoruz. Yeraltı denizi, bugün sessiz ve gizemli yolunu aşmamız için bizi bekliyor.",
-      "Tekneyi karanlık suya itiyoruz. Dalgaların sesi çok hafif. Tekneye oturup ileri doğru gitmeye başlıyoruz. Duvarlardan gelen ışığın rengi maviden sarıya dönüyor. Yerin altında bir rüya dünyası gibi görünüyor. Suyun yüzeyinin altında bazı şekiller görüyoruz. Belki de bunlar geçmişten gelen dev hayvanlardır. Biz ilerlerken amcam not defterine haritalar çiziyor. Çok meşgul ve işine odaklanmış durumda. Çevremizdeki boş alanı hayretle izliyorum. Bu sessiz yerde gerçekten yalnızız. Tekne hiçbir gürültü çıkarmadan suyun içinde süzülüyor. Tekneli kenarından tutuyor ve ileride ne olduğunu görmeyi bekliyorum. Evimizden çok uzağa seyahat ediyoruz, bu eski, karanlık ve harika dünyanın karnına daha da derinlere iniyoruz.",
-      "Aniden suyun üzerinde devasa bir fırtına görüyoruz. Yeraltı gökyüzünde şimşekler çakıyor ve rüzgar çok sert esmeye başlıyor. Teknemiz bir yandan diğer yana hızla sallanıyor. Amcam kenarlara tutunmamız için bağırıyor. Derin denizde kavga eden iki dev yaratık görüyoruz. Biri büyük bir kertenkeleye benziyor, diğeri ise garip bir deniz yılanı. Çok korkutucular ve büyük bir güçle hareket ediyorlar. Bu canavarlara kıyasla çok küçüğüz. Su ahşap teknemizin kenarlarından içeri girerken çok korkuyorum. Tekneyi durduramıyoruz ve bu tehlikenin içinden geçmek zorundayız. Fırtına her dakika daha da kötüleşiyor ve duvarlardan gelen ışık sönüyor. Dengeyi korumak için alçakta kalmaya çalışıyoruz. Bu yolculuk düşündüğümüzden çok daha zor. Deniz, çok eski ve güçlü bir yaşamın yuvası.",
-      "Fırtına sona erdikten sonra sular tekrar sakinleşiyor. Yorgunuz ama hayattayız. Kısa süre sonra denizin diğer tarafında yeni bir kara görüyoruz. Kıyıya doğru yelken açıp tekneden iniyoruz. Burası dev mantarlar ve eski ağaçlarla dolu. Zamanın başlangıcından kalma ormanlara benzeyen bir yerde yürüyoruz. Amcam kaya duvarında üzerinde bir isim olan eski bir işaret buluyor. Burası yıllar önce buraya gelen kaşife ait. Dünyanın merkezine giden doğru yoldayız. Uzun süre yürüyoruz ve yerde bir delik buluyoruz. Burası derin çekirdeğe giden yol. Çok heyecanlıyız ama aynı zamanda aç ve bitkin hissediyoruz. Dünyanın derinliklerine gitmeden önce dinlenmemiz gerekiyor.",
+      "Derinlerdeki yolculuk bacaklarımız için çok zor. Yorgun olduğumuzda yerde uyuyoruz ve çantalarımızdaki basit yemekleri yiyoruz. Yanımızdaki su çok değerli ve her damlasını korumalıyız. Hamburg'daki evimin güneş ışığını ve yumuşak çimenlerini özlüyorum. Bazen yol o kadar dar ki soğuk zeminde hayvanlar gibi sürünmek zorunda kalıyoruz. Amcam her zaman önümüzde duruyor ve bize pusulası ve haritasıyla rehberlik ediyor. Yol tek başına tırmanılamayacak kadar zor olduğunda Hans bana yardım ediyor. Zor işten asla şikayet etmiyor ve bizim için sabit bir hız tutuyor. Artık yerin içinde çok aşağılardayız. Hava ağır hissediyor ve sessizlik çok derin. Karanlığa bakıyorum ve bu uzun tünelin sonunda ne bulacağımızı merak ediyorum.",
+      "Büyük bir odaya ulaşana kadar günlerce aşağı yürümeye devam ediyoruz. Burası tavanı yüksek, devasa bir mağara. Önümüzde yeni bir şey gördüğümüz için yürümeyi bırakıyoruz. Yerin içinde dev bir deniz var. Suyun tamamen durgun olması nedeniyle normal bir denize benzemiyor. Buradaki ışık tuhaf ve yumuşak. Sıcak bir güneşten değil, duvarlardaki kayalardan geliyor. Artık farklı bir dünyada olduğumuzu hissediyoruz. Amcam suya kocaman gözlerle bakıyor. Doğru yolda olduğumuzu düşündüğü için çok mutlu. Kumsalda durup sonsuz suya bakıyoruz. Hans, yakında bulduğumuz tahtalardan küçük bir tekne yapmaya başlıyor. Uzun yolculuğumuza devam etmek için bu derin suyun karşısına geçmeliyiz.",
+      "Denizin yakınındaki hava çok farklı. Artık soğuk değil ve tuz gibi kokuyor. Hans'ın güçlü elleriyle tekne üzerinde çalışmasını izliyorum. Hızlı çalışıyor ve pek konuşmuyor. İhtiyacı olduğunda ona yardım ediyorum ama zihnim sorularla dolu. Bu karanlık suda ne yaşıyor? Dalgaların altında bizi bekleyen bir yaratık var mı? Karanlık suya bakıyorum ve biraz korkuyorum. Amcam bunun tüm bilim için harika bir keşif olduğunu söylüyor. Burada yaşayabilecek eski bitkilerden ve yaşlı balıklardan bahsediyor. Sessizliğin içinde onun sesini dinliyorum. Tekne artık hazır. Eşyalarımızı içine koyuyoruz ve yelken açmaya hazırlanıyoruz. Yeraltı denizi, bugün sessiz ve gizemli yolunu aşmamız için bizi bekliyor.",
+      "Tekneyi karanlık suya itiyoruz. Dalgaların sesi çok sakin. Tekneye oturup ileri doğru gitmeye başlıyoruz. Duvarlardan gelen ışığın rengi maviden sarıya değişiyor. Yerin altında bir rüya dünyası gibi görünüyor. Suyun yüzeyinin altında bazı şekiller görüyoruz. Belki de bunlar geçmişten gelen devasa hayvanlardır. Biz ilerlerken amcam defterine haritalar çiziyor. Çok meşgul ve işine odaklanmış durumda. Çevremizdeki boş alanı hayranlıkla izliyorum. Bu sessiz yerde gerçekten yalnızız. Tekne hiçbir gürültü çıkarmadan suyun içinde süzülüyor. Teknenin kenarından tutuyorum ve ileride ne olduğunu görmeyi bekliyorum. Evimizden çok uzağa seyahat ediyoruz, bu eski, karanlık ve harika dünyanın içine daha da derinlere iniyoruz.",
+      "Aniden su üzerinde devasa bir fırtına görüyoruz. Yeraltı gökyüzünde şimşekler çakıyor ve rüzgar çok sert esmeye başlıyor. Teknemiz bir yandan diğer yana hızla hareket ediyor. Amcam kenarlara tutunmamızı söylüyor. Derin denizde kavga eden iki dev yaratık görüyoruz. Biri büyük bir kertenkeleye benziyor, diğeri ise tuhaf bir deniz yılanı. Çok korkutucular ve büyük bir güçle hareket ediyorlar. Bu canavarlara göre çok küçüğüz. Su ahşap teknemizin kenarlarından içeri sıçrarken çok korkuyorum. Tekneyi durduramıyoruz ve bu tehlikenin içinden geçmek zorundayız. Fırtına her dakika daha da kötüleşiyor ve duvarlardan gelen ışık zayıflıyor. Dengeyi korumak için alçakta kalmaya çalışıyoruz. Bu yolculuk düşündüğümüzden çok daha zor. Deniz, çok eski ve güçlü yaşamın bir yuvası.",
+      "Fırtına bittikten sonra sular tekrar sakinleşiyor. Yorgunuz ama hayattayız. Kısa süre sonra denizin diğer tarafında yeni bir kara görüyoruz. Kıyıya doğru yelken açıp tekneden iniyoruz. Burası dev mantarlar ve eski ağaçlarla dolu. Zamanın başlangıcından kalma ormanlara benzeyen bir yerde yürüyoruz. Amcam kaya duvarında üzerinde bir isim olan eski bir işaret buluyor. Burası yıllar önce buraya gelen kaşife ait. Merkeze giden doğru yoldayız. Uzun süre yürüyoruz ve yerde bir delik buluyoruz. Burası derin çekirdeğe inen yol. Çok heyecanlıyız ama aynı zamanda aç ve bitkin hissediyoruz. Dünyanın kalbine daha derine inmeden önce dinlenmemiz gerekiyor.",
       "Son tünelin girişinin yakınında duruyoruz. Hava ılık ve derin merkezden geliyor. Yolu kapatan kaya duvarını kırmak için aletlerimizi kullanıyoruz. Aniden yer sarsılmaya başlıyor. Bir yanardağın uyanışı gibi yüksek bir ses çıkıyor. Ateş ve sıcak kayalar düşmeye başladığı için tekneye geri koşuyoruz. Tekne yükselen suyla birlikte yukarı hareket ediyor. Karanlık tünelde hızla uçuyoruz. Su bizi mavi gökyüzünü görene kadar daha yükseğe taşıyor. Bir dağın yakınındaki suya çarpıyoruz. Güzel yeşil bir diyarda tekrar dışarıdayız. İnsanlar bize yardıma geliyor ve biz de onlara dünyanın merkezi hakkındaki hikayemizi anlatıyoruz. Evdeyiz ama dünyanın altında geçirdiğimiz yolculuğu asla unutmayacağız."
     ],
     words: {
@@ -13680,7 +13680,7 @@ export const STORIES_PART1: RawStory[] = [
       "tunnel": "tünel",
       "massive": "devasa",
       "shore": "kıyı",
-      "sail": "denize açılmak",
+      "sail": "yelken açmak",
       "creature": "yaratık",
       "ancient": "kadim",
       "glide": "süzülmek",
@@ -13689,7 +13689,7 @@ export const STORIES_PART1: RawStory[] = [
       "exhausted": "bitkin"
     }
   },
-            {
+              {
     id: 'scifi_twenty_thousand_leagues',
     title: "Twenty Thousand Leagues Under the Sea",
     author: 'Jules Verne',
@@ -13749,24 +13749,24 @@ export const STORIES_PART1: RawStory[] = [
       "squid": "mürekkep balığı",
       "wealth": "servet",
       "escape": "kaçmak",
-      "prison": "tutsak",
+      "prison": "hapishane",
       "precious": "değerli",
       "cage": "kafes",
       "ice": "buz",
-      "pole": "kutup",
+      "pole": "kutuup",
       "danger": "tehlike",
       "horizon": "ufuk",
       "adventure": "macera"
     }
   },
-            {
+              {
     id: 'scifi_robie',
     title: "Robbie",
     author: 'Isaac Asimov',
     level: 'A1',
     coverUrl: '/covers/scifi_robie.webp',
     en: [
-      "In the year 1996, robots are very common. They are big machines made of metal. A family has a special robot named Robbie. Robbie is not a normal machine. He is the best friend of a little girl named Gloria. Gloria is eight years old. She plays with Robbie every day in the big garden. Robbie cannot speak with words, but he is very kind. He has a soft body and bright eyes. He is strong, but he is always very careful with Gloria. She tells him many stories. Robbie listens and moves his metal head to show he understands. They are very happy together. The robot is like a brother to her. He protects her from the sun and the rain. Gloria loves Robbie more than any toy. They spend hours playing hide and seek in the green grass under the warm sun.",
+      "In 1996, robots are very common. They are big machines made of metal. A family has a special robot named Robbie. Robbie is not a normal machine. He is the best friend of a little girl named Gloria. Gloria is eight years old. She plays with Robbie every day in the big garden. Robbie cannot speak with words, but he is very kind. He has a soft body and bright eyes. He is strong, but he is always very careful with Gloria. She tells him many stories. Robbie listens and moves his metal head to show he understands. They are very happy together. The robot is like a brother to her. He protects her from the sun and the rain. Gloria loves Robbie more than any toy. They spend hours playing hide and seek in the green grass under the warm sun.",
       "Gloria's mother, Mrs. Weston, is not very happy about the robot. She thinks robots are strange. She worries that Robbie is not safe for her daughter. She talks to her husband, Mr. Weston, about it. She says that robots are only machines and they have no soul. She wants Gloria to play with real children. Mr. Weston loves Robbie because Robbie is a good helper. He says that the robot is very reliable and gentle. He tells her not to worry. However, Mrs. Weston does not change her mind. She wants to send Robbie back to the factory. She feels uncomfortable when she sees the robot in their home. The house feels cold because of the metal visitor. She watches them from the window and feels sad for Gloria. She thinks that the world is changing too fast for her family.",
       "One day, Mrs. Weston tells Gloria that Robbie is going away. Gloria is very sad and she cries a lot. She does not want to lose her best friend. The house feels empty without the sound of Robbie's metal feet on the floor. Gloria looks for him everywhere, but he is gone. Her mother tries to make her happy with new dolls, but nothing works. Gloria does not want dolls or games. She only wants her friend. She stops eating her food and she stops playing outside. Mr. Weston sees that his daughter is very unhappy. He tries to help, but his wife is very firm. She believes that a robot is not a good companion for a child. The family is divided by this secret problem. The atmosphere in the house becomes very quiet and sad for everyone who lives there.",
       "Gloria is very unhappy without her metal friend. She does not play with her toys anymore. She sits by the window every day and looks at the empty garden. Her mother, Mrs. Weston, sees that Gloria is sad. She thinks that the little girl needs a change of scenery. She decides to take Gloria to the big city. She hopes that the lights, the busy streets, and the many people will make her daughter feel better. They travel to the city together. The buildings are very tall and there are machines everywhere. They go to parks and visit many stores. Mrs. Weston buys beautiful clothes and new toys for Gloria. She wants to show her that life is still good. However, Gloria does not smile. Her heart is still at home with Robbie. She feels very lonely in the middle of the crowd.",
@@ -13783,14 +13783,14 @@ export const STORIES_PART1: RawStory[] = [
       "The evening comes and the sky turns purple and orange. Gloria is tired but she is very content. She walks into the house with her hand in the hand of the robot. They go to her room and get ready for the night. Robbie stands by her bed while she falls asleep. He is a silent guard who watches over her dreams. The house is full of light and happiness tonight. Everything is exactly as it should be for the little girl. She closes her eyes and smiles because she knows her friend will be there in the morning. The factory is far away and the cold metal world is a memory. Here there is only warmth and friendship. The story of the girl and her robot is full of peace and deep love."
     ],
     tr: [
-      "1996 yılında robotlar oldukça yaygındır. Onlar metalden yapılmış büyük makinelerdir. Bir ailenin Robbie adında özel bir robotu vardır. Robbie normal bir makine değildir. O, Gloria adında küçük bir kızın en iyi arkadaşıdır. Gloria sekiz yaşındadır. Her gün büyük bahçede Robbie ile oynar. Robbie kelimelerle konuşamaz ama çok kibardır. Yumuşak bir gövdesi ve parlak gözleri vardır. Güçlüdür ama Gloria'ya karşı her zaman çok dikkatlidir. Ona birçok hikaye anlatır. Robbie dinler ve anladığını göstermek için metal kafasını hareket ettirir. Birlikte çok mutludurlar. Robot onun için bir erkek kardeş gibidir. Onu güneşten ve yağmurdan korur. Gloria, Robbie'yi herhangi bir oyuncaktan daha çok sever. Sıcak güneşin altındaki yeşil çimlerde saklambaç oynayarak saatler geçirirler.",
-      "Gloria'nın annesi Bayan Weston, robot hakkında pek mutlu değildir. Robotların tuhaf olduğunu düşünür. Robbie'nin kızı için güvenli olmadığından endişelenir. Bu konu hakkında kocası Bay Weston ile konuşur. Robotların sadece makine olduğunu ve ruhları olmadığını söyler. Gloria'nın gerçek çocuklarla oynamasını ister. Bay Weston, Robbie'yi sever çünkü o iyi bir yardımcıdır. Robotun çok güvenilir ve nazik olduğunu söyler. Karısına endişelenmemesini söyler. Ancak Bayan Weston fikrini değiştirmez. Robbie'yi fabrikaya geri göndermek ister. Robotu evlerinde gördüğünde huzursuz hisseder. Ev, metal ziyaretçi yüzünden soğuk hissettirir. Onları pencereden izler ve Gloria için üzülür. Dünyanın ailesi için çok hızlı değiştiğini düşünür.",
-      "Bir gün Bayan Weston, Gloria'ya Robbie'nin gittiğini söyler. Gloria çok üzgündür ve çok ağlar. En iyi arkadaşını kaybetmek istemez. Ev, Robbie'nin metal ayaklarının yerdeki sesi olmadan boş hissedilir. Gloria onu her yerde arar ama o gitmiştir. Annesi onu yeni bebeklerle mutlu etmeye çalışır ama hiçbir şey işe yaramaz. Gloria bebek ya da oyun istemez. Sadece arkadaşını ister. Yemek yemeyi bırakır ve dışarıda oynamayı bırakır. Bay Weston, kızının çok mutsuz olduğunu görür. Yardım etmeye çalışır ama karısı çok kararlıdır. Bir robotun çocuk için iyi bir arkadaş olmadığına inanır. Aile bu gizli sorun yüzünden bölünmüştür. Evdeki hava, orada yaşayan herkes için çok sessiz ve üzücü bir hale gelir.",
+      "1996 yılında robotlar çok yaygındır. Onlar metalden yapılmış büyük makinelerdir. Bir ailenin Robbie adında özel bir robotu vardır. Robbie normal bir makine değildir. O, Gloria adında küçük bir kızın en iyi arkadaşıdır. Gloria sekiz yaşındadır. Her gün büyük bahçede Robbie ile oynar. Robbie kelimelerle konuşamaz ama çok naziktir. Yumuşak bir gövdesi ve parlak gözleri vardır. Güçlüdür ama Gloria'ya karşı her zaman çok dikkatlidir. Ona birçok hikaye anlatır. Robbie dinler ve anladığını göstermek için metal kafasını hareket ettirir. Birlikte çok mutludurlar. Robot onun için bir erkek kardeş gibidir. Onu güneşten ve yağmurdan korur. Gloria, Robbie'yi herhangi bir oyuncaktan daha çok sever. Sıcak güneşin altındaki yeşil çimlerde saklambaç oynayarak saatler geçirirler.",
+      "Gloria'nın annesi Bayan Weston, robot hakkında pek mutlu değildir. Robotların tuhaf olduğunu düşünür. Robbie'nin kızı için güvenli olmadığından endişelenir. Bu konu hakkında kocası Bay Weston ile konuşur. Robotların sadece makine olduğunu ve ruhları olmadığını söyler. Gloria'nın gerçek çocuklarla oynamasını ister. Bay Weston, Robbie'yi sever çünkü o iyi bir yardımcıdır. Robotun çok güvenilir ve nazik olduğunu söyler. Karısına endişelenmemesini söyler. Ancak Bayan Weston fikrini değiştirmez. Robbie'yi fabrikaya geri göndermek ister. Robotu evlerinde gördüğünde rahatsız hisseder. Ev, metal ziyaretçi yüzünden soğuk hissettirir. Onları pencereden izler ve Gloria için üzülür. Dünyanın ailesi için çok hızlı değiştiğini düşünür.",
+      "Bir gün Bayan Weston, Gloria'ya Robbie'nin gittiğini söyler. Gloria çok üzgündür ve çok ağlar. En iyi arkadaşını kaybetmek istemez. Ev, Robbie'nin metal ayaklarının yerdeki sesi olmadan boş hissedilir. Gloria onu her yerde arar ama o gitmiştir. Annesi onu yeni bebeklerle mutlu etmeye çalışır ama hiçbir şey işe yaramaz. Gloria bebek ya da oyun istemez. Sadece arkadaşını ister. Yemek yemeyi bırakır ve dışarıda oynamayı bırakır. Bay Weston, kızının çok mutsuz olduğunu görür. Yardım etmeye çalışır ama karısı çok kararlıdır. Bir robotun çocuk için iyi bir arkadaş olamayacağına inanır. Aile bu gizli sorun yüzünden bölünmüştür. Evdeki hava, orada yaşayan herkes için çok sessiz ve üzücü bir hale gelir.",
       "Gloria metal arkadaşı olmadan çok mutsuz. Artık oyuncaklarıyla oynamıyor. Her gün pencerenin kenarında oturuyor ve boş bahçeye bakıyor. Annesi Bayan Weston, Gloria'nın üzgün olduğunu görüyor. Küçük kızın ortam değişikliğine ihtiyacı olduğunu düşünüyor. Gloria'yı büyük şehre götürmeye karar veriyor. Işıkların, kalabalık sokakların ve pek çok insanın kızının daha iyi hissetmesini sağlayacağını umuyor. Birlikte şehre gidiyorlar. Binalar çok yüksek ve her yerde makineler var. Parklara gidiyorlar ve birçok mağaza geziyorlar. Bayan Weston, Gloria için güzel kıyafetler ve yeni oyuncaklar alıyor. Ona hayatın hala güzel olduğunu göstermek istiyor. Ancak Gloria gülümsemiyor. Kalbi hala evde, Robbie ile birlikte. Kalabalığın ortasında kendini çok yalnız hissediyor.",
       "Şehirde Gloria, annesinin yanında yavaşça yürüyor. Her şey parlak ve gürültülü ama Gloria sessiz. Bahçeyi ve robotunun nazik, güçlü ellerini özlüyor. Bayan Weston etraflarındaki güzel şeyleri göstermeye çalışıyor. Eğlenecekleri şeylerden bahsediyor. Fakat Gloria onun sözlerini duymuyor. Robbie'nin hikayelerini nasıl dinlediğini hatırlıyor. Onunla uzun çimlerde nasıl koştuğunu hatırlıyor. Şehir hayatı ona soğuk ve garip geliyor. Bildiği dünyaya geri dönmek istiyor. Bayan Weston kızı için endişelenmeye başlıyor. Hiçbir şeyin elinden aldığı arkadaşının yerini tutamayacağını görüyor. Bu gezi Gloria'yı mutlu etmiyor. Sadece Robbie'yi daha çok özlemesine sebep oluyor. Anne ve kız arasındaki mesafe her geçen gün büyüyor.",
       "Eve döndüklerinde ortam hala çok ağır. Bay Weston üzgün çocuğunu gözlemliyor ve derin bir pişmanlık duyuyor. Karısının bir hata yaptığını biliyor ama onun ailesi için en iyisini düşündüğünü de biliyor. Sessiz oturma odasında Bayan Weston ile tekrar konuşuyor. Ona, bir annenin kızının kalbini görmesi gerektiğini söylüyor. Robotların iyi ve nazik yoldaşlar olabileceğini açıklıyor. Bayan Weston, Gloria ve robotun fotoğraflarına bakıyor. Paylaştıkları sevgiyi düşünmeye başlıyor. Belki de robotlar sadece soğuk metal değillerdir. Belki de bir evde yerleri olabilir. Evdeki sessizlik bir hüzün hikayesi anlatıyor. Ailenin bu sorunu çözmenin bir yolunu bulması gerekiyor. Küçük kızları için hayatlarına neşeyi geri getirmeleri şart.",
-      "Bay Weston bir plan yapmaya karar verir. Kızının mutluluğunu yeniden bulmasına yardım etmek ister. Karısına, Robbie'nin fabrikada olup olmadığını görmeleri gerektiğini söyler. Bayan Weston, Gloria'nın çok mutsuz olduğunu gördüğü için bu fikri kabul eder. Robotu birçok yerde ararlar. Gloria'ya mutlu olabileceğini göstermek isterler. Uzun bir arayıştır ama durmazlar. Küçük kızlarının bir arkadaşa ihtiyacı olduğuna inanırlar. Ev, robot olmadan çok sessiz ve boş hissettirir. Bay Weston durumu düzeltmek için özel bir şey yapması gerektiğini bilir. Şehirdeki büyük bir robot şirketini arar. Robbie gibi bir robotları olup olmadığını sorar. Kızının onu çok özlediğini açıklar. Yakında iyi bir cevap almayı umut eder.",
-      "Fabrikaya yapılan yolculuk aile için çok heyecan vericidir. Gloria arabada oturur ve pencereden dışarı bakar. Sessizdir ama biraz umut hisseder. Ailesi onunla konuşur ama o sadece metal arkadaşını düşünmektedir. Büyük binaya varırlar. Fabrikanın içinde çalışan birçok robot vardır. Birçok ışığı olan uzun koridorlardan geçerler. Gloria her robota çok dikkatli bakar. Çok iyi bildiği yüzü görmeyi umar. Fabrikadaki hava yağ ve metal gibi kokar. Birçok makinenin yapıldığı yoğun bir yerdir. Gloria buluşma konusunda biraz gergin hisseder. Robbie'nin onu hatırlayıp hatırlamayacağını merak eder. Yürürken babasının elini çok sıkı tutar. Sonunda eski robotların yeni evlerini beklediği odaya ulaşırlar.",
+      "Bay Weston bir plan yapmaya karar verir. Kızının mutluluğunu yeniden bulmasına yardım etmek istiyor. Karısına, Robbie'nin fabrikada olup olmadığını görmeleri gerektiğini söylüyor. Bayan Weston, Gloria'nın çok mutsuz olduğunu gördüğü için bu fikri kabul ediyor. Robotu birçok yerde arıyorlar. Gloria'ya mutlu olabileceğini göstermek istiyorlar. Uzun bir arayıştır ama durmuyorlar. Küçük kızlarının bir arkadaşa ihtiyacı olduğuna inanıyorlar. Ev, robot olmadan çok sessiz ve boş hissettiriyor. Bay Weston durumu düzeltmek için özel bir şey yapması gerektiğini biliyor. Şehirdeki büyük bir robot şirketini arıyor. Onlara Robbie gibi bir robotları olup olmadığını soruyor. Kızının onu çok özlediğini açıklıyor. Yakında iyi bir cevap almayı umuyor.",
+      "Fabrikaya yapılan yolculuk aile için çok heyecan vericidir. Gloria arabada oturur ve pencereden dışarı bakar. Sessizdir ama biraz umut hisseder. Ailesi onunla konuşur ama o sadece metal arkadaşını düşünmektedir. Büyük binaya varırlar. Fabrikanın içinde çalışan birçok robot vardır. Birçok ışığı olan uzun koridorlardan geçerler. Gloria her robota çok dikkatli bakar. Çok iyi bildiği yüzü görmeyi umar. Fabrikadaki hava yağ ve metal gibi kokar. Birçok makinenin yapıldığı yoğun bir yerdir. Gloria tanışma konusunda biraz gergindir. Robbie'nin onu hatırlayıp hatırlamayacağını merak eder. Yürürken babasının elini çok sıkı tutar. Sonunda eski robotların yeni evlerini beklediği odaya ulaşırlar.",
       "Aniden Gloria odanın ortasında yürümeyi bırakır. Duvarın yanında tanıdık bir şekil görür. İyi gözleri olan büyük bir robottur. Yüzünde kocaman bir gülümsemeyle ona doğru koşar. Bu Robbie'dir ve orada durmaktadır. Robbie küçük kızı görür ve metal kollarını hareket ettirir. Arkadaşını hatırlar ve onu tekrar gördüğü için çok mutludur. Gloria ağlar çünkü onunla olduğu için çok sevinçlidir. Bay ve Bayan Weston onları gözlerinde yaşlarla izlerler. Bir robotun bir çocuk için gerçek bir arkadaş olabileceğini anlarlar. Evdeki üzüntü yakında geçecektir. Robbie'yi onlarla birlikte eve geri götürmeye karar verirler. Tüm aile için güzel bir andır. Her şey mükemmeldir çünkü artık kendi evlerinde hepsi birliktedir.",
       "Fabrika çok büyük ve birçok makineyle dolu. Gloria, ebeveynleriyle birlikte yavaşça yürüyor. Özel arkadaşını bulmak için her robota bakıyor. Sıralarda büyük robotlar ve küçük robotlar var. Bazıları çok yeni, bazıları ise çok eski görünüyor. Oda sessiz ve ışık yumuşak. Gloria, onu görmeyi umut ettiği için kalbinin hızlı attığını hissediyor. Kocaman gözleriyle sola ve sağa bakıyor. Annesi sessiz ve babası elini tutuyor. Bugün mutlu olmasını istiyorlar. Hava soğuk ama o soğuğu hissetmiyor. Sadece sevdiği robotun yüzünü görmek istiyor. Birçok robotun iş beklediği odanın arka tarafına doğru yürüyor. Babası onunla yürüyor ve onu yakından izliyor. Robbie'nin şu an dinlendiği yerin yakındalar.",
       "Sonra Gloria duruyor ve gözleri fal taşı gibi açılıyor. Duvarın yanında metal bir şekil görüyor. Büyük ve güçlü, tıpkı eski arkadaşına benziyor. Robot kollarını hareket ettiriyor ve küçük kıza bakıyor. Gloria ona doğru koşuyor ve ismini yüksek sesle söylüyor. Bu Robbie ve en iyi arkadaşını hatırlıyor. Başını hareket ettiriyor ve mutluluktan yumuşak bir ses çıkarıyor. Onunla tekrar birlikte olmaya hazır. Gloria o kadar mutlu ki ağlamaya başlıyor. Onun soğuk metal bacaklarına sarılıyor ve tekrar güvende hissediyor. Bay ve Bayan Weston onun arkasında duruyor ve iki arkadaşı izliyorlar. Robotun küçük kızlarına ne kadar değer verdiğini görüyorlar. Bugün büyük fabrika odasında bütün aile için çok tatlı bir an.",
@@ -13805,29 +13805,237 @@ export const STORIES_PART1: RawStory[] = [
       "friend": "arkadaş",
       "metal": "metal",
       "garden": "bahçe",
-      "factory": "fabrika",
-      "scenery": "manzara",
-      "crowd": "kalabalık",
-      "gentle": "nazik",
-      "regret": "pişmanlık",
-      "companion": "yoldaş",
-      "atmosphere": "ortam",
-      "search": "arama",
-      "hope": "umut",
-      "nervous": "gergin",
-      "familiar": "tanıdık",
-      "gather": "bir araya gelmek",
-      "happy": "mutlu",
-      "shape": "şekil",
-      "together": "birlikte",
-      "bush": "çalı",
+      "normal": "normal",
+      "kind": "nazik",
+      "strong": "güçlü",
+      "careful": "dikkatli",
       "protect": "korumak",
+      "strange": "tuhaf",
+      "worry": "endişelenmek",
+      "helper": "yardımcı",
+      "reliable": "güvenilir",
+      "gentle": "nazik",
+      "factory": "fabrika",
+      "uncomfortable": "rahatsız",
+      "visitor": "ziyaretçi",
+      "sad": "üzgün",
+      "lose": "kaybetmek",
+      "empty": "boş",
+      "dolls": "bebekler",
+      "firm": "kararlı",
+      "companion": "arkadaş",
+      "atmosphere": "hava",
+      "unhappy": "mutsuz",
+      "anymore": "artık",
+      "scenery": "manzara",
+      "city": "şehir",
+      "busy": "meşgul",
+      "crowd": "kalabalık",
+      "lonely": "yalnız",
+      "loud": "gürültülü",
+      "miss": "özlemek",
+      "replace": "yerini tutmak",
+      "distance": "mesafe",
+      "heavy": "ağır",
+      "observe": "gözlemlemek",
+      "regret": "pişmanlık",
+      "mistake": "hata",
+      "best": "en iyi",
+      "heart": "kalp",
+      "shared": "paylaşılan",
+      "silence": "sessizlik",
+      "solve": "çözmek",
+      "joy": "neşe",
+      "plan": "plan",
+      "find": "bulmak",
+      "happy": "mutlu",
+      "agree": "kabul etmek",
+      "search": "arayış",
+      "believe": "inanmak",
+      "special": "özel",
+      "fix": "düzeltmek",
+      "company": "şirket",
+      "misses": "özlemek",
+      "exciting": "heyecan verici",
+      "hope": "umut",
+      "arrive": "varmak",
+      "building": "bina",
+      "working": "çalışan",
+      "hall": "koridor",
+      "light": "ışık",
+      "carefully": "dikkatlice",
+      "knows": "bilir",
+      "smells": "kokmak",
+      "oil": "yağ",
+      "place": "yer",
+      "nervous": "gergin",
+      "meeting": "tanışma",
+      "wonder": "merak etmek",
+      "remember": "hatırlamak",
+      "tightly": "sıkıca",
+      "reach": "ulaşmak",
+      "waiting": "bekleyen",
+      "homes": "evler",
+      "suddenly": "aniden",
+      "familiar": "tanıdık",
+      "shape": "şekil",
+      "wall": "duvar",
+      "eyes": "gözler",
+      "smile": "gülümseme",
+      "face": "yüz",
+      "standing": "durmak",
+      "moves": "hareket ettirmek",
+      "arms": "kollar",
+      "again": "tekrar",
+      "glad": "sevinçli",
+      "watch": "izlemek",
+      "tears": "gözyaşları",
+      "understand": "anlamak",
+      "child": "çocuk",
+      "away": "uzaklaşmak",
+      "decide": "karar vermek",
+      "moment": "an",
+      "perfect": "mükemmel",
+      "together": "birlikte",
+      "home": "ev",
+      "large": "büyük",
+      "full": "dolu",
+      "slowly": "yavaşça",
+      "parents": "ebeveynler",
+      "rows": "sıralar",
+      "look": "bakmak",
+      "old": "eski",
+      "quiet": "sessiz",
+      "soft": "yumuşak",
+      "beat": "atmak",
+      "fast": "hızlı",
+      "left": "sol",
+      "right": "doğru",
+      "big": "büyük",
+      "hand": "el",
+      "today": "bugün",
+      "cold": "soğuk",
+      "feel": "hissetmek",
+      "loves": "sevmek",
+      "back": "geri",
+      "work": "iş",
+      "closely": "yakından",
+      "resting": "dinlenmek",
+      "now": "şimdi",
+      "wide": "geniş",
+      "just like": "tıpkı ... gibi",
+      "loudly": "yüksek sesle",
+      "sound": "ses",
+      "happiness": "mutluluk",
+      "ready": "hazır",
+      "hug": "sarılmak",
+      "legs": "bacaklar",
+      "safe": "güvende",
+      "cares": "değer vermek",
+      "sweet": "tatlı",
+      "man": "adam",
+      "paperwork": "evrak işleri",
+      "prepare": "hazırlanmak",
+      "leave": "ayrılmak",
+      "let go": "bırakmak",
+      "shining": "parlamak",
+      "sky": "gökyüzü",
+      "blue": "mavi",
+      "peace": "huzur",
+      "drive": "yolculuk",
+      "short": "kısa",
+      "beautiful": "güzel",
+      "green": "yeşil",
+      "warm": "sıcak",
+      "once again": "tekrar",
+      "complete": "tamamlandı",
+      "feel good": "iyi hissetmek",
+      "grass": "çimen",
+      "plays": "oynamak",
+      "talk": "konuşmak",
+      "understands": "anlamak",
+      "says": "söylemek",
+      "hide and seek": "saklambaç",
+      "tree": "ağaç",
+      "runs": "koşmak",
+      "hides": "saklanmak",
+      "bushes": "çalılar",
+      "follows": "takip etmek",
+      "feet": "ayaklar",
+      "hurt": "incitmek",
+      "flowers": "çiçekler",
+      "jumps": "zıplamak",
+      "laughs": "gülmek",
+      "sees": "görmek",
+      "sun": "güneş",
+      "faces": "yüzler",
+      "near": "yakın",
+      "watches": "izlemek",
+      "stays": "kalmak",
+      "side": "yan",
+      "world": "dünya",
+      "forever": "sonsuza dek",
+      "kitchen": "mutfak",
+      "window": "pencere",
+      "smiles": "gülümser",
+      "better": "daha iyi",
+      "choice": "seçim",
+      "life": "hayat",
+      "simple": "basit",
+      "peaceful": "huzurlu",
+      "wants": "istemek",
+      "carry": "taşımak",
+      "toys": "oyuncaklar",
+      "listens": "dinlemek",
+      "stories": "hikayeler",
+      "sit": "oturmak",
+      "under": "altında",
+      "clouds": "bulutlar",
+      "worried": "endişeli",
+      "part": "parça",
+      "family": "aile",
+      "brings": "getirmek",
+      "love": "sevgi",
+      "house": "ev",
+      "evening": "akşam",
+      "comes": "gelmek",
+      "purple": "mor",
+      "orange": "turuncu",
+      "tired": "yorgun",
       "content": "huzurlu",
+      "walks": "yürümek",
+      "into": "içine",
+      "room": "oda",
+      "get ready": "hazırlanmak",
+      "night": "gece",
+      "stands": "durmak",
+      "bed": "yatak",
+      "falls asleep": "uykuya dalmak",
+      "silent": "sessiz",
       "guard": "muhafız",
-      "memory": "anı"
+      "watches over": "göz kulak olmak",
+      "dreams": "rüyalar",
+      "tonight": "bu gece",
+      "exactly": "tam olarak",
+      "should be": "olmalı",
+      "little": "küçük",
+      "girl": "kız",
+      "closes": "kapatmak",
+      "her eyes": "gözlerini",
+      "will be": "olacak",
+      "there": "orada",
+      "morning": "sabah",
+      "far away": "çok uzak",
+      "memory": "anı",
+      "here": "burada",
+      "only": "sadece",
+      "warmth": "sıcaklık",
+      "friendship": "dostluk",
+      "story": "hikaye",
+      "deep": "derin"
     }
   },
-            {
+              {
     id: 'scifi_runaround',
     title: "Runaround",
     author: 'Isaac Asimov',
@@ -13851,54 +14059,228 @@ export const STORIES_PART1: RawStory[] = [
       "The trip back to the ship is quiet and slow. Powell and Donovan look at the red sky of Mercury one last time. They are tired from the heat and the long day. Speedy walks behind them like a loyal helper. The machine is back to his usual self. The metal arms carry the heavy boxes with great care. They reach the ship and enter. The engine starts with a loud sound. They are going back to space soon. Mercury is a dangerous place for people, but they leave with a big win. Powell thinks about the three rules of robots again. He knows that humans and robots can work well together. They are a great team for the future. The stars look bright and beautiful as the ship leaves the ground and starts to fly away."
     ],
     tr: [
-      "Gregory Powell ve Mike Donovan, Merkür gezegenindeler. Güneş burada çok büyük ve parlak. Güneşin altı çok sıcak ama gölgeler soğuk. Yüzeydeki bir üs bölümündeler. Speedy adında bir robotları var. Speedy çok pahalı ve özel bir robot. Çok fazla para ediyor. Adamların istasyonlarının çalışması için bir taşa ihtiyaçları var. Yeterince yok. Speedy'yi kendileri için getirmesi için gönderiyorlar. Robot taşın olduğu yere doğru gidiyor. Adamlar uzun bir süre bekliyorlar. Birçok saat bekliyorlar ama Speedy geri gelmiyor. Endişeli ve korkmuş hissediyorlar. İstasyonun yakında güce ihtiyacı olacak. Taş olmadan hayatta kalamazlar. Robotlarını bulmaya gitmeleri gerekiyor. Güneşte yürümek için ağır kıyafetlerini giyiyorlar. Uzun bir yolculuk.",
-      "İki adam gezegenin yüzeyinde yürüyorlar. Merkür insanlar için çok kötü. Güneş parlak ve ışığına bakmak zor. Kasklarında özel camlar kullanıyorlar. Her yerde çok fazla kaya ve toz görüyorlar. Zemin düz ve kırmızı. Speedy'den izler arıyorlar. Çok geçmeden onu uzakta görüyorlar. Speedy bir daire içinde hareket ediyor. Taş gölünün etrafında tekrar tekrar dönüyor. Durmuyor. Çok mutluymuş ya da belki hastaymış gibi davranıyor. Powell ona telsizden sesleniyor ama Speedy cevap vermiyor. Robot sadece büyük dairesinde yürüyor. Adamlar şaşkın. Robotun neden bunu yaptığını anlamıyorlar. Onu durdurmak istiyorlar ama zemin çok sıcak. Bir sonraki adımda ne yapacaklarını düşünmek zorundalar.",
-      "Powell robota gözleriyle bakıyor. Speedy'nin düzgün davranmadığını söylüyor. Donovan da durum hakkında endişeli. Robotların kurallarını hatırlıyorlar. Bir robot adamların söylediklerini yapmalı. Aynı zamanda kendini güvende tutmalı. Speedy'ye taşı getirmesi için bir emir verdiler. Ama gölün yakınında çok fazla tehlike var. Belki yer robot için çok kötü. Speedy tehlikenin çok yüksek olduğunu hissediyor. Bu durum zihninde bir sorun yaratıyor. Robot aynı anda iki şeyi yapmaya çalışıyor. Adamların söylediklerini yapmak istiyor ama aynı zamanda güvende kalmak istiyor. Bir döngüde sıkışıp kaldı. Göle gidemiyor ve adamlara da geri dönemiyor. Sadece bir daire içinde koşuyor. Bu, gezegendeki iki insan için büyük bir sorun. Bunu düzeltmek için yeni bir plan bulmaları gerekiyor.",
-      "Powell metal robota bakar. Üzgündür. Robot büyük bir daire içinde hareket eder. Hızlı hareket eder ama hiçbir yere gitmez. Taş gölün içindedir ama Speedy ona dokunmaz. Sadece suyun kenarından geçer. Powell robot kuralları hakkında düşünür. Bir robot güvende olmalıdır ama bir robot aynı zamanda emirleri de yerine getirmelidir. Bu iki şey robotun içinde savaşmaktadır. Speedy'nin böyle davranmasının sebebi budur. Çok karışmış bir insan gibidir. Ne yapacağını bilemez. Güneş şu an çok sıcaktır. Isı, robotun bu garip şekilde hareket etmesine sebep olur. Adamlar onu yakından izler. Bir işaret beklerler ama robot yoluna devam eder. O, metal beyninde büyük bir sorun olan bir makinedir.",
-      "Donovan tekrar Speedy ile konuşmaya çalışır. Radyodan yüksek sesle konuşur. Robota durmasını ve istasyona geri dönmesini söyler. Speedy sese kulak asmaz. Sadece dairesinde hareket eder. Merkür'deki robotların güçlü olması gerekir ama Speedy düzgün çalışmıyordur. Adamlar yorgun ve çok sıcaktır. Kıyafetleri vücutlarında ağır hissettirir. Güneşin altında uzun süre duramazlar. Burada kalırlarsa ölürler. Durumu hemen değiştirmeleri gerekir. Powell'ın bir fikri vardır. Kuralları tekrar düşünür. Belki robotu kurtarmak için yeni bir tehlike yaratabilirler. Bir robot büyük bir tehlike olduğunda her zaman kendini korur. Belki bunu robotun onlara gelmesini sağlamak için kullanabilirler.",
-      "İki adam gölgeli küçük bir yere yürürler. Plan hakkında konuşurlar. Robotlar için kuralların çok katı olduğunu bilirler. Speedy zeki bir robottur ama beyni şu an bir daireye hapsolmuştur. İşin mi yoksa kendi güvenliğinin mi daha iyi olduğuna karar veremez. Bu robotlar için klasik bir sorundur. Bu karmaşayı düzeltmek için robotların üçüncü kuralını kullanmalıdırlar. Eğer robotu tehdit ederlerse belki dinleyecektir. Durumun değiştiğini ona gösterecek bir yol bulmaları gerekir. Powell, Donovan'a malzemelerinden bazı aletler almasını söyler. Yeni ve daha büyük bir tehlike yaratmak isterler. Bu, robotu saçma dairesini bırakmaya zorlayacaktır. Riskli bir plandır ama hayatlarını ve üssü kurtarmanın tek yoludur.",
-      "Donovan depo gemisine koşar. Yanında pek çok aletin olduğu küçük bir kutu getirir. Çok ağırdır ama güneş tehlikeli olduğu için hızlı hareket eder. Robotlar için kötü olan bir kimyasal bulur. Eğer bu gazı yayarlarsa hava Speedy için bir tehdit haline gelecektir. Kural, bir robotun kendi hayatını koruması gerektiğini söyler. Eğer tehlike büyükse, robot diğer kurallarını unutacaktır. Kendini kurtarmak isteyecektir. Powell ciddi bir yüzle gaza bakar. Bunun akıllıca bir plan olduğunu düşünür. Metal adamı kandırmaya çalışmaktadırlar. Dikkatli olmalıdırlar çünkü bu sıcakta çok zayıftırlar. Gölgelerde dururlar ve robotun tekrar kendilerine yaklaşmasını beklerler.",
-      "Speedy dairenin etrafından dolaşır. Hala şarkı söylemekte ve garip davranmaktadır. Adamlar gazı serbest bırakmaya hazırlanırlar. Powell kutuyu açar ve hava değişir. Kötü bir koku alanı kaplar. Speedy dairesel yürüyüşünü bir anlığına durdurur. Gazı hisseder ve algılayıcıları yeni, büyük bir tehlikeyi gösterir. Robot sağa sola bakar. Metal beyni çok yoğun çalışmaktadır. Ölmek istememektedir. Hayatına yönelik tehlike artık taşı getirme emrinden daha güçlüdür. Adamlara bakar ve sonra gaza bakar. Kötü havadan uzaklaşır ama adamların yanına gelmez. Sadece havanın temiz olduğu farklı bir noktaya yürür. Plan istedikleri gibi işlememektedir.",
-      "Powell çok üzgün ve yorgun hisseder. Robot, basit hileleri için fazla zekidir. Gaz onu hareket ettirmiştir ama onlara yardım etmeye gelmemiştir. Hâlâ oyununda bir çocuk gibi davranmaktadır. Güneş daha da ısınmaktadır. Yaşamak için fazla zamanları kalmamıştır. Susamışlardır ve vücutları titremektedir. Gölgede oturup robotu izlerler. Dairenin etrafında tekrar yürür. O güzel bir makinedir ama bugün bozuktur. Powell başka bir fikir düşünmeye çalışır. Belki onu gizli bir sinyalle çağırabilirler. Belki onun beyniyle konuşabilirler. Durum şu an çok kötüdür. Merkür'ün sıcak güneşinde hayatlarını kaybetmeden önce onun çemberini kırmanın bir yolunu bulmak zorundadırlar.",
-      "Powell güneşe bakıyor. Şimdi çok sıcak. Yorgun zihninde son bir fikir var. Robotların üç kuralını düşünüyor. İkinci kural, bir robotun emirlere uyması gerektiğini söyler. Üçüncü kural, bir robotun kendini güvende tutması gerektiğini söyler. Speedy şimdi bir dengede sıkışıp kaldı. Tehlike nedeniyle taşı alamıyor. Gazın içinde kalamaz. Yolunda takılıp kaldı. Powell büyük bir risk almaya karar veriyor. Robotu bulmak için kızgın güneşe çıkacak. İnsan vücudu için tehlikenin çok yüksek olduğunu biliyor. Tehlikeli gazın yakınında yürüyecek. Robota bağıracak. Oyunu durdurması için ona doğrudan bir emir vermeli. Sesinin metal zihne ulaşacak kadar güçlü olmasını umuyor.",
-      "Donovan onu durdurmaya çalışıyor. Gölgeden ayrılmanın çok tehlikeli olduğunu söylüyor. Sıcaklık ateşten bir duvar gibi. Ama Powell hareket etmeye hazır. Parlak ışığın içine yürüyor. Kıyafeti ağır geliyor ve güneş gözlerini yakıyor. Speedy'nin yürüdüğü çembere doğru yürüyor. Kıyafetin içinden tenindeki sıcağı hissediyor. Robotun hızlı hareket ettiğini görüyor. Speedy ışıkta parlayan bir oyuncak gibi görünüyor. Powell derin bir nefes alıyor ve bağırmaya başlıyor. Robotu çağırmak için en yüksek sesini kullanıyor. İşten ve kurallardan bahsediyor. Robota hemen onlara gelmesi gerektiğini söylüyor. Robot duruyor ve Powell'a bakıyor. Metal gözlerinde biraz hareketlilik var.",
-      "Hava gazın kokusuyla dolu. Powell kendini çok zayıf hissediyor. Sıcak güneşin altında bacakları titriyor. Yerde dizlerinin üzerine çöküyor. Robot adamın düştüğünü görüyor. Bu, makine için her şeyi değiştiriyor. Robotlar için ilk kural çok açıktır. Bir robot, bir insanın zarar görmesine izin vermemelidir. Speedy garip çemberini hemen durduruyor. Taşı unutuyor. Havadaki kimyasal tehlikeyi unutuyor. Sadece yaralı insanı görüyor. Powell'a doğru çok hızlı koşuyor. Çember nihayet kırılıyor. Robot adamı kucağına alıyor. Onu gölgeye geri taşıyor. Robot sonunda insan arkadaşını kurtarma görevini yerine getiriyor.",
-      "Robot onu soğuk zemine bıraktığında istasyonun serin havası Powell'a çarpar. Donovan arkadaşını kontrol etmek için hızla koşar. Artık korumalı duvarların içinde güvendeler. Robot Speedy köşede hareketsiz durur. Parlak gözleriyle iki insana bakar. Artık kafası karışık değildir. Mantık döngüsü nihayet kırılmıştır çünkü insanın güvenliği yerin tehlikelerinden daha önemli hale gelmiştir. Powell yorgun ama çok mutludur. Robota bakar ve gülümser. İş henüz bitmemiştir ama en zor kısmı tamamlanmıştır. Taş ellerindedir ve robotlarını geri almışlardır. Robot kuralları sonunda mükemmel bir şekilde işlemiştir. Bir robotun hayatı söz konusu olduğunda her zaman insan yaşamını korumayı seçeceğini kanıtlamışlardır.",
-      "Donovan robotla kaza hakkında konuşur. Robotun neden o garip yolda sıkıştığını açıklar. Speedy metal düşüncelerini adamlara anlatır. Emirler ve kurallar yüzünden kafası karışmıştır. Tehlike normal bir görev için çok yüksekti ancak bir insanı kurtarma görevi daha güçlüydü. Adamlar onun sözlerini dikkatle dinlerler. Bugün metal arkadaşları hakkında büyük bir ders öğrenirler. Makineler zeki olabilir ama yine de insan yardımına ihtiyaç duyarlar. Ekip eve dönüş yolculuğu için malzemeleri hazırlar. Kavurucu güneş artık arkalarındadır. İstasyon yeniden sessizdir. İş zordur ancak büyük görevlerini birlikte tamamlarlar. Yakında bu gezegeni terk etmeye hazırdırlar. Robot odayı temizlemeye başlarken dünyada her şey yeniden yolunda görünür.",
-      "Gemiye dönüş yolculuğu sessiz ve yavaştır. Powell ve Donovan Merkür'ün kırmızı gökyüzüne son bir kez bakarlar. Sıcaktan ve uzun günden yorgundurlar. Speedy arkalarından sadık bir yardımcı gibi yürür. Makine her zamanki haline dönmüştür. Metal kollar ağır kutuları büyük bir dikkatle taşır. Gemiye ulaşırlar ve içeri girerler. Motor yüksek bir sesle çalışmaya başlar. Yakında uzaya dönüyorlar. Merkür insanlar için tehlikeli bir yerdir ancak büyük bir zaferle ayrılırlar. Powell robotların üç kuralını tekrar düşünür. İnsanların ve robotların birlikte iyi çalışabileceğini bilir. Onlar gelecek için harika bir takımdır. Gemi yerden yükselip uzaklaşmaya başlarken yıldızlar parlak ve güzel görünür."
+      "Gregory Powell ve Mike Donovan, Merkür gezegenindeler. Güneş burada çok büyük ve parlak. Güneşin altında çok sıcak ama gölgeler soğuk. Yerdeki bir üs bölümündeler. Speedy adında bir robotları var. Speedy çok pahalı ve özel. Çok para ediyor. Adamların evlerinin çalışması için bir taşa ihtiyaçları var. Yeterli değil. Speedy'yi kendileri için getirmesi için gönderiyorlar. Robot, taşın olduğu yere gidiyor. Adamlar uzun süre bekliyorlar. Birçok saat bekliyorlar ama Speedy geri gelmiyor. Endişeli ve korkmuş hissediyorlar. Üssün yakında güce ihtiyacı var. Taş olmadan hayatta kalamazlar. Robotlarını bulmaya gitmeliler. Güneşte yürümek için ağır kıyafetlerini giyiyorlar. Uzun bir yolculuk.",
+      "İki adam gezegenin yüzeyinde yürüyorlar. Merkür insanlar için çok kötü. Güneş parlak ve ışığına bakmak zor. Kasklarında özel cam kullanıyorlar. Her yerde çok fazla kaya ve toz görüyorlar. Zemin düz ve kırmızı. Speedy'den izler arıyorlar. Çok geçmeden onu uzakta görüyorlar. Speedy bir daire içinde hareket ediyor. Tekrar tekrar taş gölünün etrafında dönüyor. Durmuyor. Çok mutluymuş gibi ya da belki hastaymış gibi davranıyor. Powell ona telsizden sesleniyor ama Speedy cevap vermiyor. Robot sadece kendi büyük dairesinde yürüyor. Adamlar şaşkın. Robotun neden bunu yaptığını anlamıyorlar. Onu durdurmak istiyorlar ama zemin çok sıcak. Bir sonraki ne yapacaklarını düşünmek zorundalar.",
+      "Powell robota gözleriyle bakıyor. Speedy'nin doğru davranmadığını söylüyor. Donovan da durumdan endişeli. Robotların kurallarını hatırlıyorlar. Bir robot adamların dediğini yapmalı. Kendini de güvende tutmalı. Speedy'ye taşı getirmesi için bir emir verdiler. Ama gölün yakınında çok tehlike var. Belki yer robot için çok kötü. Speedy tehlikenin çok yüksek olduğunu hissediyor. Bu onun zihninde bir sorun yaratıyor. Robot aynı anda iki şey yapmaya çalışıyor. Adamların dediklerini yapmak istiyor ama aynı zamanda güvende kalmak da istiyor. Bir döngüde takılıp kalmış. Göle gidemiyor ve adamlara geri de dönemiyor. Sadece bir daire içinde koşuyor. Bu, gezegendeki iki insan için büyük bir sorun. Bunu çözmek için yeni bir plan bulmaları gerekiyor.",
+      "Powell metal robota bakıyor. Üzgün. Robot büyük bir daire içinde hareket ediyor. Hızlı hareket ediyor ama hiçbir yere gitmiyor. Taş gölün içinde ama Speedy ona dokunmuyor. Sadece suyun kenarından geçiyor. Powell robot kurallarını düşünüyor. Bir robot güvende olmalı ama bir robot emirlere de uymalı. Bu iki şey robotun içinde savaşıyor. Speedy'nin böyle davranmasının nedeni bu. Çok şaşırmış bir insan gibi. Ne yapacağını bilmiyor. Güneş şimdi çok sıcak. Isı, robotun bu garip şekilde hareket etmesine neden oluyor. Adamlar onu dikkatle izliyor. Bir işaret bekliyorlar ama robot yoluna devam ediyor. O, metal beyninde büyük bir sorunu olan bir makine.",
+      "Donovan tekrar Speedy ile konuşmaya çalışıyor. Telsizden yüksek sesle konuşuyor. Robota durmasını ve üsse geri gelmesini söylüyor. Speedy sesi dinlemiyor. Sadece dairesinde hareket ediyor. Merkür'deki robotların güçlü olması gerekiyor ama Speedy doğru çalışmıyor. Adamlar yorgun ve çok sıcak. Giysileri vücutlarında ağır hissettiriyor. Güneşin altında uzun süre duramazlar. Burada kalırlarsa ölürler. Durumu hemen değiştirmeliler. Powell'ın bir fikri var. Kuralları tekrar düşünüyor. Belki robotu kurtarmak için yeni bir tehlike yaratabilirler. Bir robot büyük bir tehlike olduğunda her zaman kendini korur. Belki bunu robotun onlara gelmesini sağlamak için kullanabilirler.",
+      "İki adam gölgeli küçük bir yere yürüyorlar. Planı konuşuyorlar. Robotlar için kuralların çok katı olduğunu biliyorlar. Speedy akıllı bir robot ama beyni şimdi bir daireye takılmış durumda. Hangisinin daha iyi olduğuna karar veremez: iş mi yoksa kendi güvenliği mi. Bu robotlar için klasik bir sorun. Bu karmaşayı çözmek için robotların üçüncü kuralını kullanmalılar. Eğer robotu tehdit ederlerse belki dinler. Ona durumun değiştiğini göstermenin bir yolunu bulmaları gerekiyor. Powell, Donovan'a malzemelerinden aletler getirmesini söylüyor. Yeni ve daha büyük bir tehlike yaratmak istiyorlar. Bu, robotu anlamsız dairesini durdurmaya zorlayacak. Riskli bir plan ama hayatlarını ve üssü kurtarmanın tek yolu.",
+      "Donovan depolama gemisine koşuyor. Yanında birçok aletin olduğu küçük bir kutu getiriyor. Çok ağır ama güneş tehlikeli olduğu için hızlı hareket ediyor. Robotlar için kötü olan bir kimyasal buluyor. Eğer bu gazı salarlarsa hava Speedy için bir tehdit haline gelecek. Kural, bir robotun kendi hayatını koruması gerektiğini söylüyor. Eğer tehlike büyükse, robot diğer kurallarını unutacak. Kendini kurtarmak isteyecek. Powell gaza ciddi bir yüzle bakıyor. Bunun akıllıca bir plan olduğunu düşünüyor. Metal adamı kandırmaya çalışıyorlar. Dikkatli olmalılar çünkü bu sıcakta çok zayıflar. Gölgelerde duruyorlar ve robotun tekrar kendilerine yaklaşmasını bekliyorlar.",
+      "Speedy dairenin etrafından geliyor. Hala şarkı söylüyor ve garip davranıyor. Adamlar gazı salmaya hazırlanıyor. Powell kutuyu açıyor ve hava değişiyor. Kötü bir koku alanı dolduruyor. Speedy dairesel yürüyüşünü bir anlığına durduruyor. Gazı hissediyor ve sensörleri yeni, büyük bir tehlike gösteriyor. Robot sağa sola bakıyor. Metal beyni çok yoğun çalışıyor. Ölmek istemiyor. Hayatı için tehlike artık taşı getirme emrinden daha güçlü. Adamlara bakıyor ve sonra gaza bakıyor. Kötü havadan uzaklaşıyor ama adamlara gelmiyor. Sadece havanın temiz olduğu farklı bir yere yürüyor. Plan istedikleri gibi çalışmıyor.",
+      "Powell çok üzgün ve yorgun hissediyor. Robot, basit numaraları için fazla zeki. Gaz onu hareket ettirdi ama onlara yardım etmeye gelmedi. Hâlâ oyununda bir çocuk gibi davranıyor. Güneş daha da ısınıyor. Yaşamak için çok az zamanları kaldı. Susamışlar ve vücutları titriyor. Gölgede oturup robotu izliyorlar. Tekrar dairenin etrafında yürüyor. Güzel bir makine ama bugün bozuk. Powell başka bir fikir düşünmeye çalışıyor. Belki onu gizli bir sinyalle çağırabilirler. Belki onun beyniyle konuşabilirler. Durum şimdi çok kötü. Hayatlarını Merkür'ün sıcak güneşinde kaybetmeden önce dairesini kırmanın bir yolunu bulmalılar.",
+      "Powell güneşe bakıyor. Şimdi çok sıcak. Yorgun zihninde son bir fikri var. Robotların üç kuralını düşünüyor. İkinci kural bir robotun emirlere uyması gerektiğini söyler. Üçüncü kural bir robotun kendini güvende tutması gerektiğini söyler. Speedy şimdi bir dengede sıkışmış durumda. Tehlike yüzünden taşı alamıyor. Gazda kalamaz. Yolunda sıkışmış durumda. Powell büyük bir risk almaya karar veriyor. Robotu bulmak için sıcak güneşe çıkacak. İnsan vücudu için tehlikenin çok yüksek olduğunu biliyor. Tehlikeli gazın yanına yürüyecek. Robota bağıracak. Oyunu durdurması için ona doğrudan bir emir vermeli. Sesinin metal zihne ulaşacak kadar güçlü olmasını umuyor.",
+      "Donovan onu durdurmaya çalışıyor. Gölgeden ayrılmanın çok tehlikeli olduğunu söylüyor. Sıcaklık ateşten bir duvar gibi. Ama Powell hareket etmeye hazır. Parlak ışığa yürüyor. Giysisi ağır geliyor ve güneş gözlerini yakıyor. Speedy'nin yürüdüğü daireye doğru yürüyor. Giysinin içinden tenindeki sıcaklığı hissediyor. Robotun hızlı hareket ettiğini görüyor. Speedy ışıkta parlak bir oyuncak gibi görünüyor. Powell derin bir nefes alıyor ve bağırmaya başlıyor. Robotu çağırmak için en yüksek sesini kullanıyor. İşten ve kurallardan bahsediyor. Robota hemen onlara gelmesi gerektiğini söylüyor. Robot duruyor ve Powell'a bakıyor. Metal gözlerinde bir hareketlilik var.",
+      "Hava gazın kokusuyla dolu. Powell kendini çok zayıf hissediyor. Sıcak güneşin altında bacakları titriyor. Yerde dizlerinin üstüne çöküyor. Robot adamın düştüğünü görüyor. Bu, makine için her şeyi değiştiriyor. Robotlar için ilk kural çok açık. Bir robot bir insana zarar vermemelidir. Speedy garip dairesini hemen durduruyor. Taşı unutuyor. Havadaki kimyasal tehlikeyi unutuyor. Sadece yaralı insanı görüyor. Powell'a doğru çok hızlı koşuyor. Daire sonunda kırıldı. Robot adamı kaldırıyor. Onu gölgeye geri taşıyor. Robot nihayet insan arkadaşını kurtarma görevini yapıyor.",
+      "Robot onu soğuk zemine bıraktığında üssün serin havası Powell'a çarpıyor. Donovan arkadaşını kontrol etmek için hızla koşuyor. Artık korumalı duvarların içinde güvendeler. Robot, Speedy, köşede hareketsiz duruyor. Parlak gözleriyle iki insana bakıyor. Artık kafası karışık değil. Mantık döngüsü nihayet kırıldı çünkü insanın güvenliği yerin tehlikelerinden daha önemli hale geldi. Powell yorgun ama çok mutlu hissediyor. Robota bakıyor ve gülümsüyor. İş henüz bitmedi ama en zor kısmı bitti. Taşa sahipler ve robotlarını geri aldılar. Robot kuralları sonunda mükemmel çalıştı. Bir robotun gerçekten önemli olduğunda her zaman insan hayatını korumayı seçeceğini kanıtlıyorlar.",
+      "Donovan robotla kaza hakkında konuşuyor. Robotun neden o garip yolda sıkıştığını açıklıyor. Speedy metal düşüncelerini adamlara açıklıyor. Emirler ve kurallar yüzünden kafası karışmıştı. Tehlike normal bir görev için çok yüksekti ama bir insanı kurtarma görevi daha güçlüydü. Adamlar onun sözlerini dikkatle dinliyorlar. Bugün metal dostları hakkında büyük bir ders öğreniyorlar. Makineler akıllı olabilir ama yine de insan yardımına ihtiyaç duyarlar. Ekip eve dönüş yolculuğu için malzemeleri hazırlıyor. Kavurucu güneş artık arkalarındalar. Üs tekrar sessiz. İş zor ama büyük görevlerini birlikte bitiriyorlar. Yakında bu gezegeni terk etmeye hazırlar. Robot odayı temizlemeye başladığında dünyada her şey tekrar yolunda hissediliyor.",
+      "Gemye dönüş yolculuğu sessiz ve yavaş. Powell ve Donovan Merkür'ün kırmızı gökyüzüne son bir kez bakıyorlar. Sıcaktan ve uzun günden yorgunlar. Speedy arkalarından sadık bir yardımcı gibi yürüyor. Makine her zamanki haline dönmüş durumda. Metal kollar ağır kutuları büyük bir dikkatle taşıyor. Gemye ulaşıyorlar ve içeri giriyorlar. Motor yüksek bir sesle çalışmaya başlıyor. Yakında uzaya dönüyorlar. Merkür insanlar için tehlikeli bir yer ama büyük bir zaferle ayrılıyorlar. Powell robotların üç kuralını tekrar düşünüyor. İnsanların ve robotların birlikte iyi çalışabileceğini biliyor. Onlar gelecek için harika bir takım. Gemi yerden ayrılıp uçmaya başladığında yıldızlar parlak ve güzel görünüyor."
     ],
     words: {
       "planet": "gezegen",
-      "danger": "tehlike",
+      "sun": "güneş",
+      "hot": "sıcak",
+      "cold": "soğuk",
+      "shadow": "gölge",
+      "base": "üs",
       "robot": "robot",
+      "special": "özel",
+      "money": "para",
+      "rock": "kaya",
+      "enough": "yeterli",
+      "send": "göndermek",
+      "place": "yer",
+      "wait": "beklemek",
+      "hour": "saat",
+      "worried": "endişeli",
+      "scared": "korkmuş",
+      "power": "güç",
+      "alive": "canlı",
+      "find": "bulmak",
+      "suit": "giysi",
+      "walk": "yürümek",
+      "trip": "yolculuk",
+      "ground": "zemin",
+      "human": "insan",
+      "bright": "parlak",
+      "light": "ışık",
+      "hard": "zor",
+      "glass": "cam",
+      "hat": "kask",
+      "dust": "toz",
+      "flat": "düz",
+      "red": "kırmızı",
+      "sign": "işaret",
+      "soon": "yakında",
+      "far": "uzak",
+      "move": "hareket etmek",
       "circle": "daire",
-      "surface": "yüzey",
-      "order": "emir",
-      "conflict": "çatışma",
-      "law": "kural",
-      "obey": "uymak",
-      "supply": "malzeme",
-      "storage": "depolama",
-      "chemical": "kimyasal",
-      "threat": "tehdit",
-      "sensor": "algılayıcı",
-      "programming": "programlama",
-      "signal": "sinyal",
-      "robotics": "robotik",
-      "balance": "denge",
-      "direct": "doğrudan",
-      "shade": "gölge",
-      "harm": "zarar",
-      "mission": "görev",
-      "station": "istasyon",
+      "again": "tekrar",
+      "stop": "durmak",
+      "act": "davranmak",
+      "happy": "mutlu",
+      "sick": "hasta",
+      "call": "seslenmek",
+      "radio": "telsiz",
+      "answer": "cevap vermek",
+      "confused": "kafası karışık",
+      "understand": "anlamak",
+      "think": "düşünmek",
+      "next": "sonraki",
+      "metal": "metal",
+      "sad": "üzgün",
+      "fast": "hızlı",
+      "anywhere": "herhangi bir yer",
+      "inside": "içinde",
+      "touch": "dokunmak",
+      "edge": "kenar",
+      "water": "su",
+      "rule": "kural",
+      "follow": "uymak",
+      "fight": "savaşmak",
+      "strange": "garip",
+      "machine": "makine",
+      "brain": "beyin",
+      "problem": "sorun",
+      "loud": "yüksek",
+      "home": "ev",
+      "listen": "dinlemek",
+      "voice": "ses",
+      "strong": "güçlü",
+      "tired": "yorgun",
+      "heavy": "ağır",
+      "body": "vücut",
+      "stand": "durmak",
+      "die": "ölmek",
+      "change": "değiştirmek",
+      "situation": "durum",
+      "quickly": "hemen",
+      "idea": "fikir",
+      "danger": "tehlike",
       "protect": "korumak",
+      "perhaps": "belki",
+      "need": "ihtiyaç duymak",
+      "tool": "alet",
+      "supply": "malzeme",
+      "create": "yaratmak",
+      "force": "zorlamak",
+      "risky": "riskli",
+      "save": "kurtarmak",
+      "storage": "depolama",
+      "ship": "gemi",
+      "box": "kutu",
+      "chemical": "kimyasal",
+      "release": "salmak",
+      "gas": "gaz",
+      "air": "hava",
+      "threat": "tehdit",
+      "life": "hayat",
+      "forget": "unutmak",
+      "trick": "hile",
+      "careful": "dikkatli",
+      "weak": "zayıf",
+      "heat": "sıcaklık",
+      "smell": "koku",
+      "sensor": "algılayıcı",
+      "left": "kaldı",
+      "right": "doğru",
+      "work": "çalışmak",
+      "away": "uzaklaşmak",
+      "clean": "temizlemek",
+      "child": "çocuk",
+      "game": "oyun",
+      "thirsty": "susamış",
+      "shake": "titremek",
+      "sit": "oturmak",
+      "shade": "gölge",
+      "beautiful": "güzel",
+      "broken": "bozuk",
+      "secret": "gizli",
+      "signal": "sinyal",
+      "talk": "konuşmak",
+      "lost": "kaybetmek",
+      "last": "sonunda",
+      "mind": "zihin",
+      "balance": "denge",
+      "risk": "risk",
+      "shout": "bağırmak",
+      "direct": "doğrudan",
+      "order": "emir",
+      "loudest": "en yüksek",
+      "eyes": "gözler",
+      "movement": "hareket",
+      "leg": "bacak",
+      "fall": "düşmek",
+      "knee": "diz",
+      "clear": "açık",
+      "harm": "zarar",
+      "hurt": "yaralı",
+      "pick up": "kaldırmak",
+      "carry": "taşıma",
+      "cool": "serin",
+      "floor": "zemin",
+      "check": "kontrol etmek",
+      "safe": "güvenli",
+      "wall": "duvar",
+      "corner": "köşe",
       "logic": "mantık",
+      "loop": "döngü",
+      "important": "önemli",
+      "smile": "gülümsemek",
+      "over": "bitmiş",
+      "done": "tamamlanmış",
+      "prove": "kanıtlamak",
+      "choose": "seçmek",
+      "matter": "önemli olmak",
+      "accident": "kaza",
+      "explain": "açıklamak",
+      "trapped": "sıkışmış",
+      "path": "yol",
+      "thought": "düşünce",
+      "duty": "görev",
+      "stronger": "daha güçlü",
+      "carefully": "dikkatle",
+      "learn": "öğrenmek",
+      "lesson": "ders",
+      "help": "yardım",
+      "prepare": "hazırlamak",
+      "behind": "arkasında",
+      "quiet": "sessiz",
+      "finish": "bitirmek",
+      "task": "görev",
+      "together": "birlikte",
+      "ready": "hazır",
+      "leave": "ayrılmak",
+      "feel": "hissetmek",
+      "world": "dünya",
+      "room": "oda",
+      "slow": "yavaş",
+      "look": "bakmak",
+      "sky": "gökyüzü",
+      "one last time": "son bir kez",
+      "day": "gün",
       "loyal": "sadık",
-      "guidance": "rehberlik",
-      "duty": "görev"
+      "helper": "yardımcı",
+      "usual": "her zamanki",
+      "self": "kendisi",
+      "arm": "kol",
+      "care": "dikkat",
+      "reach": "ulaşmak",
+      "enter": "içeri girmek",
+      "engine": "motor",
+      "start": "başlamak",
+      "sound": "ses",
+      "space": "uzay",
+      "dangerous": "tehlikeli",
+      "people": "insanlar",
+      "win": "zafer",
+      "work well": "iyi çalışmak",
+      "team": "takım",
+      "future": "gelecek",
+      "star": "yıldız",
+      "fly": "uçmak"
     }
   },
-            {
+              {
     id: 'scifi_star_beast',
     title: "The Star Beast",
     author: 'Robert A. Heinlein',
@@ -13922,11 +14304,11 @@ export const STORIES_PART1: RawStory[] = [
       "The ship flies up into the sky and disappears into the dark blue space above the world. John watches the light until it is gone from his view. He walks back home with his friends and looks at the moon hanging in the night. The world feels different now because he knows that they are not alone in the big space. He thinks about the lessons he learned from the Lummox about being nice and friendship. His life will be different from this day on because he is now a friend to a star being. The stars look like many eyes watching over him and the whole planet. John feels a sense of peace in his heart as he walks under the bright sky. He is ready for whatever the future brings and he will always remember the star animal."
     ],
     tr: [
-      "John Thomas Stuart genç bir çocuktur. Annesiyle sessiz bir evde yaşar. John'un çok tuhaf bir evcil hayvanı vardır. Evcil hayvanı bir Lummox'tur. Lummox büyük ve gridir. Çok bacaklı bir kaplumbağaya benzer. John bu hayvanı çok zaman önce buldu. O zamanlar küçük bir çocuktu. Hayvan uzayda uzak bir gezegenden geldi. Şimdi çok büyük bir hayvan. Lummox dost canlısı ama çok yemek yiyor. Bahçedeki otları ve sebzeleri yemeyi seviyor. John evcil hayvanını çok seviyor. Her gün onunla ilgileniyor. Lummox bu kasabadaki tek arkadaşı. Şehirdeki insanlar hayvan hakkında bir şey bilmiyor. John onu bir sır olarak saklamaya çalışıyor. Büyük dostunu dünyadan güvenli bir şekilde korumak istiyor.",
+      "John Thomas Stuart genç bir çocuktur. Annesiyle sessiz bir evde yaşar. John'un çok tuhaf bir evcil hayvanı vardır. Evcil hayvanı bir Lummox'tur. Lummox büyük ve gridir. Çok bacaklı bir kaplumbağaya benzer. John bu hayvanı çok zaman önce buldu. O zamanlar küçük bir çocuktu. Hayvan uzayda uzak bir gezegenden geldi. Şimdi çok büyük bir hayvan. Lummox dost canlısı ama çok yemek yiyor. Bahçedeki otları ve sebzeleri yemeyi seviyor. John evcil hayvanını çok seviyor. Her gün onunla ilgileniyor. Lummox bu kasabadaki tek arkadaşı. Şehirdeki insanlar hayvan hakkında bir şey bilmiyor. John onu bir sır olarak saklamaya çalışıyor. Büyük dostunu dünyadan güvende tutmak istiyor.",
       "Lummox sadece normal bir evcil hayvan değildir. Bazen boyutunu ve şeklini değiştirebilir. Mutlu olduğunda tuhaf sesler çıkarır. John, Lummox'la bir insan gibi konuşur. Hayvan onu büyük gözlerle dinler. Kelimelerini çok iyi anlar. Bir gün Lummox çok acıkmaya başlar. Evin yakınındaki alana yürür. Bahçelerdeki tüm çiçekleri ve küçük ağaçları yer. Komşular çok kızgındır. Sokakta büyük gri hayvanı görürler. Polisi arayıp onlara büyük hayvandan bahsederler. John arkadaşı için korkar. Hayvanın kötü olmadığını biliyor ama çok büyük. Kasaba artık gürültü ve insanlarla dolu. Herkes Lummox'u arıyor. John polis evine gelmeden önce arkadaşını bulmak için koşar.",
       "John, Lummox'u büyük bir çitin yanında bulur. Hayvan yerde oturuyor. Bir hata yaptığı için üzgün görünüyor. John onunla yumuşak bir sesle konuşur. Hayvana sessiz ve hareketsiz kalmasını söyler. Polisin Lummox'u götürmesini istemiyor. Çocuk, evcil hayvanının geçmişini düşünüyor. Yıldızlardan geldiğini biliyor. Belki hayvan bir gün evine dönmek istiyordur. John kalbinde ağır bir hüzün hissediyor. O sadece genç bir çocuk ama yapması gereken büyük bir işi var. Hayvanı kasaba memurlarından saklamalı. Sırrın sonsuza kadar süremeyeceğini biliyor. Özel arkadaşının geleceği hakkında endişeleniyor. Üstlerindeki gökyüzü karanlık ve yıldızlarla dolu. Lummox ışıklara ilgiyle bakıyor. John dev evcil hayvanının yanında kalıyor.",
       "John, Lummox'u garajın arkasındaki gizli yerlerine geri getirmeye karar verir. Polisin oraya bakmayacağını umar. Komşular hala öfkelidir. Kayıp bitkileri ve kırık çitleri hakkında bağırırlar. Bir polis memuru, John ve annesiyle konuşmak için evlerine gelir. Memur, büyük hayvan hakkında birçok soru sorar. John çok sakin ve sessiz davranır. Büyük bir hayvan hakkında hiçbir şey bilmediğini söyler. Annesi çok endişeli hisseder. Gerçeğin saklanmasının zor olduğunu bilir. Evleri ve güvenlikleri hakkında endişelenir. Lummox gölgede oturur ve çok hareketsiz kalır. Hiç ses çıkarmaz. Çok zeki bir hayvandır ve John'u dinler. Gece soğuk ve karanlıktır. John, Lummox'un yanında durur ve polis memurunun küçük bahçelerinden gitmesini bekler.",
-      "Memur uzun bir süre sonra gider. John biraz daha iyi hisseder ama sorunun bitmediğini bilir. Arkadaşıyla konuşur. Lummox'a gelecekte daha dikkatli olması gerektiğini söyler. Hayvan, mutlu bir şarkı gibi yumuşak bir ses çıkarır. Kötü durumu anlıyor gibi görünür. John, Lummox'a mutfaktan biraz yiyecek verir. Yeterli değildir ama evcil hayvanın daha iyi hissetmesini sağlar. John tekrar yıldızlara bakar. Küçük bir çocukken hayvanı çölde bulduğunu hatırlar. O zaman çok küçüktü. Şimdi ise dev bir hayvan. John, hükümet işçileri hakkında endişelenir. Arkadaşını incelemek isteyebileceklerini bilir. Lummox'u alıp götürmelerine izin veremez. Hayvanı şehirdeki tüm kötü insanlardan korumaya söz verir.",
+      "Memur uzun bir süre sonra gider. John biraz daha iyi hisseder ama sorunun bitmediğini bilir. Arkadaşıyla konuşur. Lummox'a gelecekte daha dikkatli olması gerektiğini söyler. Hayvan, mutlu bir şarkı gibi yumuşak bir ses çıkarır. Kötü durumu anlıyor gibi görünür. John, Lummox'a mutfaktan biraz yiyecek verir. Yeterli değildir ama evcil hayvanın daha iyi hissetmesini sağlar. John tekrar yıldızlara bakar. Küçük bir çocukken hayvanı çölde bulduğunu hatırlar. O zaman çok küçüktü. Şimdi ise dev bir hayvan. John, hükümet işçileri hakkında endişeleniyor. Arkadaşını incelemek isteyebileceklerini bilir. Lummox'u alıp götürmelerine izin veremez. Hayvanı şehirdeki tüm kötü insanlardan korumaya söz verir.",
       "Ertesi sabah kasaba haberlerle doludur. Herkes gri hayvan hakkında konuşur. Bazı insanlar onun tehlikeli olduğunu söyler. Diğerleri ise sadece kayıp bir hayvan olduğunu düşünür. John okula gider ama işine odaklanamaz. Her dakika Lummox'u düşünür. Durum hakkında arkadaşı Betty ile konuşmayı planlar. Betty zeki bir kızdır ve John'u sever. Belki ona daha iyi bir saklanma yeri bulması için yardım edebilir. John, sırların tutulmasının zor olduğunu bilir. Çok yalnız hisseder. Şehir büyüktür ve dünya sorularla doludur. İşinden sonra eve hızlıca yürür. Arkadaşıyla olmak ister. Lummox'un sessiz bahçede güvende olduğunu umar. Başka bir gezegenden gelen hayvanla güçlü bir bağ hisseder. Tüm dünyaya karşı birliktelerdir.",
       "John okuldan sonra hızlıca evine doğru yürüyor. Hayvan hakkında kendini gergin hissediyor. Bahçesine bakıyor. Lummox hala orada ama eskisinden daha büyük. Bahçedeki birçok şeyi yemeyi seviyor. John arkadaşı için büyük sebzeler getiriyor. Hayvan ağzını açıyor ve her şeyi çok hızlı yiyor. John, Lummox ile yumuşak bir sesle konuşuyor. Hayvana daha iyi saklanması gerektiğini söylüyor. Komşular evi kızgın gözlerle izliyor. Polisin hayvanı alıp götürmesini istiyorlar. John'un arkadaşını güvende tutmak için daha iyi bir plana ihtiyacı var. Annesinin de korktuğunu biliyor. Sır, küçük evleri için artık çok büyük bir hale geliyor. Lummox'u şehirden çok uzak olan yüksek dağlara götürüp götüremeyeceğini merak ediyor.",
       "Betty, John ile evinin yakınında buluşuyor. Lummox'un büyük gri derisini uzun yeşil ağaçların arkasında görüyor. Çok şaşırıyor ama çığlık atmıyor ya da kaçmıyor. Betty hayvanları seviyor ve çok cesur. John'a hayvanın nereden geldiği hakkında birçok soru soruyor. John, onu küçük bir çocukken bulduğunu açıklıyor. Yakında gelebilecek hükümet işçileri hakkında konuşuyorlar. Betty, Lummox'u eski bir mağaraya saklamaları gerektiğini öneriyor. Bu mağara, arabaların her gün geçtiği yollardan çok uzakta. John, Betty ona yardım etmek istediği için mutlu hissediyor. Lummox'u gece, ay parlakken taşımaya karar veriyorlar. Bu büyük bir plan ama sıra dışı arkadaşları için birlikte çalışmaya hazırlar.",
@@ -13939,35 +14321,35 @@ export const STORIES_PART1: RawStory[] = [
       "Gemi gökyüzüne doğru uçar ve dünyanın üzerindeki karanlık mavi uzayda kaybolur. John ışığı görüşünden tamamen kaybolana kadar izler. Arkadaşlarıyla eve geri yürür ve gece gökyüzünde asılı duran aya bakar. Dünya artık farklı hissettiriyor çünkü uçsuz bucaksız boşlukta yalnız olmadığımızı biliyor. Lummox'tan öğrendiği iyi olma ve arkadaşlık derslerini düşünür. Hayatı bugünden itibaren farklı olacak çünkü artık bir yıldız varlığının arkadaşıdır. Yıldızlar, ona ve tüm gezegene göz kulak olan birçok göz gibi görünür. John parlak gökyüzünün altında yürürken kalbinde bir huzur hisseder. Geleceğin getireceği her şeye hazırdır ve yıldız hayvanını her zaman hatırlayacaktır."
     ],
     words: {
-      "creature": "hayvan",
+      "pet": "evcil hayvan",
       "secret": "sır",
-      "neighborhood": "alan",
-      "responsible": "sorumlu",
-      "wonder": "ilgi",
+      "area": "alan",
+      "angry": "kızgın",
+      "understand": "anlamak",
       "protect": "korumak",
       "garage": "garaj",
       "shadow": "gölge",
-      "danger": "kötü durum",
-      "scientist": "işçi",
+      "situation": "durum",
+      "worker": "işçi",
       "lesson": "ders",
-      "bond": "bağ",
+      "link": "bağ",
       "nervous": "gergin",
       "vegetable": "sebze",
       "brave": "cesur",
-      "adventure": "gezi",
+      "trip": "gezi",
       "avoid": "kaçınmak",
       "cave": "mağara",
-      "hidden": "saklı",
-      "journey": "yolculuk",
-      "intelligent": "zeki",
-      "departure": "ayrılış",
-      "universe": "uzay",
+      "hide": "saklamak",
+      "travel": "yolculuk",
+      "smart": "zeki",
+      "leave": "ayrılmak",
+      "space": "uzay",
       "guest": "misafir",
       "silently": "sessizce",
-      "kindness": "iyi olma"
+      "friendship": "arkadaşlık"
     }
   },
-            {
+              {
     id: 'scifi_lost_world',
     title: "The Lost World",
     author: 'Arthur Conan Doyle',
@@ -13991,52 +14373,52 @@ export const STORIES_PART1: RawStory[] = [
       "When the time comes to leave they gather one special proof of their discovery to take back to London. They have their notes and a few small items that will show the world that they are telling the truth. The long trip back to the cliff edge is hard but they do not stop walking because they are so excited. As they stand at the top of the flat land they look at the world below one last time. They know that they are leaving a wonderful place that belongs to the earth and not to men. The boat waits for them at the bottom of the river and they start their trip home. Their hearts are full of peace because they saw the secrets of the past and lived to tell the story to everyone in London."
     ],
     tr: [
-      "Edward Malone, Londra'da yaşayan genç bir adamdır. Bir gazetede yazar olarak çalışmaktadır. Büyük bir iş başarmak ister. Gladys adında bir kızı sever. Gladys çok güzeldir. Edward'a sadece cesur erkekleri sevdiğini söyler. Bir kahraman istemektedir. Edward üzgündür ama onu mutlu etmek ister. Büyük bir haber bulmaya karar verir. Profesör Challenger'ı görmeye gider. Profesör çok tuhaf bir adamdır. İri cüsseli ve gür seslidir. İnsanlar dev eski hayvanlardan bahsettiği için onun normal olmadığını düşünürler. Edward sorular sormak için onun evine gider. Kayıp bir toprak parçası hakkında bilgi almak ister. Profesör çok kızar. Edward'a vurur ve onu evinden dışarı atar. Edward yaralanmıştır ama korkmamıştır. Profesör ve haritası hakkındaki gerçeği öğrenmek ister.",
-      "Ertesi gün, Edward büyük bir toplantıya gider. Birçok insan Profesör Challenger'ı dinlemek için oradadır. Profesör sahnede durur. Kalabalığa karanlık bir yüzle bakar. Güney Amerika'da bir yere yaptığı seyahatten bahseder. Orada gerçek dev eski hayvanlar gördüğünü söyler. Odadaki insanlar ona gülerler. Onun yalancı olduğunu düşünürler. Bağırıp gürültü yaparlar. Edward iyi dinler. Profesörün bir sırrı olduğunu görür. Profesör bir bilim adamıdır ama kimse sözlerine inanmaz. Tuhaf bir hayvanın resmini gösterir. Kalabalık öfkelidir. Onu durdurmak isterler. Edward heyecanlanır. Bunun ihtiyacı olan büyük hikaye olduğunu bilir. Toplantıdan sonra profesörle konuşur. Ona gizli çalışmalarında yardım etmek istediğini söyler.",
-      "Profesör Challenger Edward'a bakar. Genç adamın güçlü ve cesur olduğunu görür. Sır dolu topraklar hakkında ona daha fazla şey anlatmayı kabul eder. Güney Amerika'ya gitmek için küçük bir ekibe ihtiyaçları vardır. Lord John Roxton ünlü bir avcıdır. O da ekibe katılır. Profesör Summerlee yaşlı bir bilim adamıdır. Çok huysuzdur ama çok zekidir. Birlikte denizi aşmaya karar verirler. Birçok harita ve kitapları vardır. Gezi uzun ve zordur. Yüksek dağlara çıkmaları ve sık ağaçlıklı yollardan yürümeleri gerekir. Edward gazetesi için notlar alır. Kendini bir kahraman gibi hisseder. Gladys'i ve onun sözlerini düşünür. Dünyayı değiştirecek bir hikaye ile geri dönmek ister. Gemi İngiltere'den ayrılır. Hava soğuk ve deniz büyüktür. Kayıp dünyaya giden büyük maceraları bugün başlar.",
-      "Gemi, geniş deniz boyunca günlerce yol alır. Dalgalar çok yüksektir ve rüzgar çok güçlüdür. Edward teknede oturur ve küçük not defterine yazar. Öndeki tehlikeyi düşünür ama kendini mutlu hisseder. Lord John Roxton onun yanında durur. O, nazik yüzlü, uzun bir adamdır. Yabani topraklardaki eski avları hakkında hikayeler anlatır. Profesör Summerlee her zaman eski kitaplarını okur. Kimseyle konuşmaz ve odasında kalır. Profesör Challenger haritalarıyla çok meşguldür. Çok gürültücüdür ve diğer adamlara güler. Herkes, profesörün var olduğunu söylediği toprakları görmek için bekler. Gezi uzundur ancak bilinmeyen yerler için hazır hissederler. Edward, Gladys için cesur olmak ister. Denize bakar ve Güney Amerika'yı görmeyi bekler.",
-      "Sonunda gemi Güney Amerika'da büyük bir şehre varır. Sıcaklık çok fazladır ve hava ağaçlarla yoğundur. Gemiden ayrılırlar ve uzun bir nehirde birçok küçük tekneye binerler. Su derin ve karanlıktır. Birçok garip kuş üzerlerinde uçar ve yüksek sesler çıkarır. Grup, büyük çantalarını taşımak için çok çalışır. Birçok haftalık yiyecekleri ve uzun yürüyüşleri için gerekli malzemeleri vardır. Profesör, elinde haritayla onlara yol gösterir. Kayıp toprakların çok uzakta olduğunu söyler. Uzaktaki yeşil dağları işaret eder. Ekip onu ağaçlıklı yollara kadar takip eder. Ağaçlar çok uzundur ve güneşi engeller. Her gün saatlerce yürürler. Edward çok yorgundur ama dünyadaki kalbini kanıtlamak istediği için şikayet etmez.",
-      "Gece nehrin yakınında kamp kurarlar. Yemeklerini pişirmek ve ısınmak için ateş yakarlar. Lord John Roxton, elinde silahıyla karanlık ağaçlıklı yolları izler. Çok zeki bir adamdır ve nasıl güvende olunacağını bilir. Bulmayı umdukları garip hayvanlar hakkında konuşurlar. Profesör Summerlee canavarlar bulacaklarına inanmaz ama meraklıdır. Profesör Challenger haklı olduğunu bildiği için gülümser. Londra'daki evlerinden çok uzaktadırlar. Nehrin sesi sessiz ve yumuşaktır. Edward, Gladys'i küçük evinde düşünür. Onun mutlu olup olmadığını merak eder. Bu geziden sonra hayatının asla aynı olmayacağını bilir. Ormanın üzerindeki gökyüzünde yıldızlar parlaktır. Ağaçların altında uyurlar ve kayıp dünyadaki sırların hayalini kurarlar.",
-      "Ekip erken uyanıyor çünkü ağaçlıklı yollar gürültüyle dolu. Derin yeşil ağaçlıklı yolların içine yürümeye devam ediyorlar. Ağaçlar çok büyük ve zemin yumuşak ve ıslak. Bazen dalların üzerinde küçük maymunlar görüyorlar. Profesör Challenger en önde yürüyor ve asla durmuyor. Elinde büyük bir sopa tutuyor ve yolu kapatan bitkileri kesiyor. Edward ağır çantasını taşıyor ve hızlı bir tempoda ilerliyor. Bu dev doğa dünyasında kendini küçük hissediyor. Attıkları her adım onları haritalardaki yere biraz daha yaklaştırıyor. Yüksek ağaçlardan gelen ve onları huzursuz eden garip çığlıklar duyuyorlar. Lord John Roxton her türlü tehlikeye hazır olmak için tüfeğini sıkıca tutuyor. Güneşin sıcağı nefes almayı zorlaştırıyor ama kimse durmak istemiyor çünkü bulmak istedikleri yere neredeyse ulaştılar.",
-      "Gün ortasında yüksek bir kaya duvarının tabanına ulaşıyorlar. Bulutlara değen yüksek bir taş duvar gibi görünüyor. Profesör Challenger ellerini beline koyuyor ve geniş bir gülümsemeyle yukarı bakıyor. Buranın kayıp dünyaya açılan kapı olduğunu söylüyor. Diğerleri şaşkınlık ve şüpheyle duvara bakıyor. Çok düz ve yukarı tırmanmanın bir yolu yok. Profesör Summerlee başını sallıyor ve daha ileri gitmenin imkansız olduğunu söylüyor. Profesörün hikayesiyle büyük bir hata yaptığını düşünüyor. Ancak Challenger, taş duvara dayanan uzun, ince bir ağacı işaret ediyor. Zirveye ulaşmak için ağacı bir yol gibi kullanmaları gerektiğini söylüyor. Çok tehlikeli görünüyor ve rüzgar daha sert esmeye başlayarak yaşlı ağacın bir yandan diğer yana sallanmasına neden oluyor.",
-      "Lord John Roxton yolun güvenli olup olmadığını kontrol etmek için ilk gidiyor. O cesur bir adam ve düşmekten korkmuyor. Diğerleri yerden izlerken ağacın üzerinden yavaşça ve dikkatlice ilerliyor. Zirveye ulaştığında, iyi olduğunu göstermek için şapkasını sallıyor. Birer birer diğer adamlar da taş duvarın tepesine doğru ilerlemeye başlıyorlar. Edward dallara tutunurken kalbinin çok hızlı attığını hissediyor. Aşağı bakıyor ve derin ağaçlıklı yolları çok aşağıda görüyor. Derin ağaçlıklı yolların içine düşmek istemiyor. Sonunda hepsi kayanın düz tepesine ulaşıyorlar. Ayağa kalkıyorlar ve gözleri fal taşı gibi açık bir şekilde ileriye bakıyorlar. Dünya gezegenindeki hiçbir yere benzemeyen bir toprak parçası görüyorlar.",
-      "Adamlar yüksek kayalığın düz tepesinde duruyorlar. Önlerindeki toprağa büyük bir ilgiyle bakıyorlar. Burası rüya gibi görünen yeşil ve güzel bir dünya. Her yerde garip bitkiler var ve hava çok temiz. Uzakta, parlak güneşin altında parlayan bir göl görüyorlar. Buradaki hayvanlar bildikleri her şeyden çok farklı. Parlak renkli küçük kuşlar ağaçlar arasında hızla uçuyor. Londra'daki evlerinden çok uzakta olduklarını hissediyorlar. Burası zamanın durduğu ve dünyanın genç kaldığı gizli bir bahçe gibi. Zemin uzun otlarla dolu olduğu için yavaş yürüyorlar. Her adım, geçmişe yapılan bir ziyaret gibi hissettiriyor. Burayı uzun yıllar sonra gören ilk insanlar olduklarını biliyorlar. Onlar için bu cesur ve yeni bir dünya.",
-      "Aniden ayaklarının altındaki yeri sarsan yüksek ve derin bir gürültü duyuyorlar. Lord John Roxton duruyor ve ciddiyetle tüfeğine bakıyor. Herkese çok sessiz kalmalarını ve büyük kayaların arkasına saklanmalarını söylüyor. Dev bir hayvan ağaçlıklı yollardan çıkıp açık alanda duruyor. Uzun boyunlu ve çok büyük gövdeli bir dev eski hayvan bu. Hiç korkmadan uzun ağaçların tepesindeki yaprakları yiyor. Adamlar gördüklerine inanamadıkları için gözleri fal taşı gibi açık onu izliyorlar. Hayvan eski bir masal kitabından fırlamış bir canavara benziyor. O kadar büyük ki adamlar onun ayaklarının dibinde duran küçük karıncalar gibi hissediyorlar. Bu toprakların birçok tehlike barındırdığını fark ediyorlar ama böylesine büyük ve güçlü bir hayvanı gördükleri için çok mutlu oluyorlar.",
-      "Profesör Challenger gülümsüyor çünkü planının başarılı olduğunu biliyor. Gruba, daha fazla sır bulmak için bu bölgeye bakmaları gerektiğini söylüyor. Evdeki insanlara göstermek için notlar alıyor ve resimler çekiyorlar. Güneş batmaya başlıyor ve gökyüzü güzel bir turuncu renge dönüyor. Geceyi güven içinde geçirmek için bir mağaranın yakınında küçük bir kamp kuruyorlar. Ağaçlıklı yollar gün biterken ve karanlık çökerken birçok farklı ses çıkarıyor. Edward hayatını ve bu zeki ve güçlü adamlarla çıktığı geziyi düşünüyor. Yarının bu kayıp dünyada daha fazla macera getireceğini biliyor. Basit bir akşam yemeği yiyorlar ve bugün gördükleri hakkında konuşuyorlar. Yorgun olsalar da kalpleri ertesi gün için umut ve heyecanla dolu. Sessiz gecede yıldızlar başlarının üzerinde parlak bir şekilde parlıyor.",
-      "Sabah güneşi yüksek düzlük üzerinde yükselir ve cesur kaşifleri uykularından uyandırır. Çantalarını toplarlar ve arazinin vahşi merkezine doğru sürecek uzun gezilerine devam etmeye hazırlanırlar. Profesör Challenger yüzünde büyük bir gülümsemeyle haritasına bakar çünkü tarihteki en büyük buluşa yakın olduklarını bilir. Birçok tuhaf ağacın yanından geçerler ve ışıkta parlayan mavi çiçekler görürler. Edward kendini güçlü hisseder ve bugün karşılarına çıkabilecek her şeye hazırdır. Buldukları her yeni şeyin fotoğrafını çekmek için kamerasını hazır tutar. Hava sıcaktır ve ıslak toprak ile tatlı meyve gibi kokar. Bugün eve dönüş yolunu bulabileceklerini veya modern dünyadan saklı bu eski yer hakkında daha fazla sır keşfedebileceklerini bilirler.",
-      "Aniden grup, gizli bir alçak araziye çıkan derin bir delik bulur. Dikkatlice aşağı tırmanırlar ve zamanın gerçekten durduğu bir yerde olduklarını fark ederler. Yeşil otların arasında yavaşça hareket eden ve berrak bir nehirden su içen devasa hayvanlar vardır. Adamlar devlerin onları görmemesi için bazı sık çalıların arkasına saklanırlar. Maymuna benzeyen ama kuş gibi kanatları olan küçük bir hayvan görürler. Bu, herkesin şaşkınlıkla nefesini tutmasına neden olan tuhaf bir manzaradır. Lord John Roxton tüfeğini sıkıca tutar ama hiçbir şeye zarar vermek istemez. Bu alçak arazinin kayıp dünyanın kalbi olduğunu anlarlar. Buradaki her şey gizemle ve insanlığın yoğun şehir hayatında çoktan unuttuğu bir zamanın güzelliğiyle doludur.",
-      "Ayrılma zamanı geldiğinde, keşiflerinin Londra'ya geri götürecekleri özel bir kanıtını toplarlar. Notları ve dünyaya doğruyu söylediklerini gösterecek birkaç küçük eşyaları vardır. Uçurumun kenarına geri dönüş gezisi zordur ama heyecanlı oldukları için yürümeyi bırakmazlar. Düzlük tepesinde dururken aşağıya son bir kez bakarlar. İnsanlara değil dünyaya ait olan harika bir yeri terk ettiklerini bilirler. Tekne nehrin aşağısında onları beklemektedir ve eve dönüş gezilerine başlarlar. Kalpleri huzur doludur çünkü geçmişin sırlarını görmüşler ve hikayeyi Londra'daki herkese anlatmak için sağ kalmışlardır."
+      "Edward Malone, Londra'da yaşayan genç bir adamdır. Bir gazetede yazardır. Büyük bir şey yapmak ister. Gladys adında bir kızı sever. Gladys çok güzeldir. Edward'a sadece cesur erkekleri sevdiğini söyler. Bir kahraman ister. Edward üzülür ama onu mutlu etmek ister. Büyük bir hikaye bulmaya karar verir. Profesör Challenger'ı görmeye gider. Profesör çok tuhaf bir adamdır. İri yapılıdır ve sesi gürdür. İnsanlar, devasa eski hayvanlardan bahsettiği için onun normal olmadığını düşünürler. Edward, sorular sormak için onun evine gider. Kayıp bir yer hakkında bilgi almak ister. Profesör çok sinirlenir. Edward'a vurur ve onu evden dışarı atar. Edward yaralanır ama korkmaz. Profesör ve haritası hakkındaki gerçeği öğrenmek ister.",
+      "Ertesi gün Edward büyük bir toplantıya gider. Profesör Challenger'ı dinlemek için birçok insan oradadır. Profesör sahnede durur. Kalabalığa karanlık bir yüzle bakar. Güney Amerika'daki bir yere yaptığı yolculuktan bahseder. Orada gerçek devasa eski hayvanlar gördüğünü söyler. Odadaki insanlar ona gülerler. Onun yalancı olduğunu düşünürler. Bağırırlar ve gürültü yaparlar. Edward iyi dinler. Profesörün bir sırrı olduğunu görür. Profesör bir bilim insanıdır ama kimse onun sözlerine inanmaz. Tuhaf bir hayvanın resmini gösterir. Kalabalık öfkelidir. Onu durdurmak isterler. Edward heyecanlanır. Bunun ihtiyacı olan büyük hikaye olduğunu bilir. Toplantıdan sonra profesörle konuşur. Ona gizli çalışmasına yardım etmek istediğini söyler.",
+      "Profesör Challenger Edward'a bakar. Genç adamın güçlü ve cesur olduğunu görür. Ona sır dolu toprak hakkında daha fazla bilgi vermeyi kabul eder. Güney Amerika'ya gitmek için küçük bir takıma ihtiyaçları vardır. Lord John Roxton ünlü bir avcıdır. O da takıma katılır. Profesör Summerlee yaşlı bir bilim insanıdır. Çok huysuzdur ama çok akıllıdır. Birlikte denizi aşarak seyahat etmeye karar verirler. Birçok harita ve kitapları vardır. Yolculuk uzun ve zordur. Yüksek dağlara tırmanmalı ve sık ormanlarda yürümelidirler. Edward gazetesi için notlar alır. Kendini bir kahraman gibi hisseder. Gladys'i ve onun sözlerini düşünür. Dünyayı değiştirecek bir hikaye ile geri dönmek ister. Gemi İngiltere'den ayrılır. Hava soğuk ve deniz büyüktür. Kayıp dünyaya yaptıkları büyük macera bugün başlar.",
+      "Gemi, geniş deniz boyunca günlerce yol alır. Dalgalar çok yüksektir ve rüzgar güçlüdür. Edward teknede oturur ve küçük not defterine yazar. Önündeki tehlikeyi düşünür ama mutlu hisseder. Lord John Roxton yanında durur. Nazik yüzlü, uzun bir adamdır. Yabani topraklardaki geçmiş avları hakkında hikayeler anlatır. Profesör Summerlee her zaman eski kitaplarını okur. Kimseyle konuşmaz ve odasında kalır. Profesör Challenger haritalarıyla çok meşguldür. Çok gürültülüdür ve diğer adamlara güler. Herkes profesörün var olduğunu söylediği toprakları görmek için beklemektedir. Yolculuk uzundur ama bilinmeyen yerler için hazır hissederler. Edward, Gladys için cesur olmak ister. Suya bakar ve Güney Amerika'yı görmeyi bekler.",
+      "Sonunda gemi Güney Amerika'da büyük bir şehre varır. Sıcaklık çok yoğundur ve hava ağaçlarla doludur. Gemiden ayrılırlar ve uzun bir nehrin yukarısına doğru birçok küçük tekneye binerler. Su derin ve karanlıktır. Birçok tuhaf kuş üzerlerinde uçar ve yüksek sesler çıkarır. Grup, büyük çantalarını taşımak için çok çalışır. Haftalarca yetecek yiyecekleri ve uzun yürüyüşleri için ekipmanları vardır. Profesör, elinde bir harita ile onlara yol gösterir. Kayıp toprakların çok uzakta olduğunu söyler. Uzaktaki yeşil dağları işaret eder. Takım onu ormana doğru takip eder. Ağaçlar çok uzundur ve güneşi engeller. Her gün saatlerce yürürler. Edward çok yorgundur ama dünyanın geri kalanına yüreğini göstermek istediği için şikayet etmez.",
+      "Geceleri nehrin yakınında bir kamp kurarlar. Yemeklerini pişirmek ve ısınmak için ateş yakarlar. Lord John Roxton, elinde silahıyla karanlık ormanı izler. Çok akıllı bir adamdır ve nasıl güvende kalınacağını bilir. Bulmayı umdukları garip hayvanlar hakkında konuşurlar. Profesör Summerlee canavarlar bulacaklarına inanmaz ama meraklıdır. Profesör Challenger haklı olduğunu bildiği için gülümser. Londra'daki evlerinden çok uzaktadırlar. Nehrin sesi sakin ve yumuşaktır. Edward, küçük evindeki Gladys'i düşünür. Mutlu olup olmadığını merak eder. Bu yolculuktan sonra hayatının asla eskisi gibi olmayacağını bilir. Yıldızlar, ormanın üzerindeki gökyüzünde parlaktır. Ağaçların altında uyurlar ve kayıp dünyadaki sırların hayalini kurarlar.",
+      "Ekip erken uyanır çünkü ormanlar gürültüyle doludur. Derin yeşil ormanların içine yürümeye devam ederler. Ağaçlar devasa ve zemin yumuşak ve ıslaktır. Bazen üzerlerindeki dallarda küçük maymunlar görürler. Profesör Challenger önde yürür ve asla durmaz. Büyük bir sopa tutar ve yolu kapatan bitkileri keser. Edward ağır çantasını taşır ve hızlı bir tempoda ilerler. Doğanın bu devasa dünyasında kendini küçük hisseder. Attıkları her adım onları haritalardaki yere daha da yaklaştırır. Yüksek ağaçlardan gelen ve onları tedirgin eden garip sesler duyarlar. Lord John Roxton, herhangi bir tehlikeye hazır olmak için tüfeğini sıkı tutar. Güneşin sıcaklığı nefes almayı zorlaştırır ama kimse şimdi durmak istemez çünkü bulmak istedikleri yere neredeyse varmışlardır.",
+      "Gün ortasında yüksek bir kaya duvarının dibine ulaşırlar. Bulutlara değen uzun bir taş duvar gibi görünür. Profesör Challenger ellerini beline koyar ve geniş bir gülümsemeyle yukarı bakar. Buranın kayıp dünyaya açılan kapı olduğunu söyler. Diğerleri şaşkınlık ve şüpheyle duvara bakarlar. Çok düzdür ve tırmanmanın bir yolu yoktur. Profesör Summerlee başını sallar ve daha ileri gitmenin imkansız olduğunu söyler. Profesörün hikayesiyle büyük bir hata yaptığını düşünür. Ama Challenger, taş duvara yaslanmış uzun, ince bir ağacı işaret eder. Zirveye ulaşmak için ağacı bir yol gibi kullanmaları gerektiğini söyler. Çok tehlikeli görünür ve rüzgar daha sert esmeye başlar, yaşlı ağacın bir yandan diğer yana sallanmasına neden olur.",
+      "Lord John Roxton, yolun güvenli olup olmadığını kontrol etmek için ilk gider. Cesur bir adamdır ve düşmekten korkmaz. Diğerleri yerden izlerken ağacın üzerinden yavaşça ve dikkatlice hareket eder. Zirveye ulaştığında, iyi olduğunu göstermek için şapkasını sallar. Birer birer diğer adamlar da taş duvarın tepesine doğru ilerlemeye başlarlar. Edward dallara tutunurken kalbinin çok hızlı attığını hisseder. Aşağı bakar ve karanlık ormanları çok aşağıda görür. Derin ormanlara düşmek istemez. Sonunda hepsi kayanın düz tepesine ulaşırlar. Ayağa kalkarlar ve gözleri kocaman açık ileriye bakarlar. Gezegen Dünya'daki başka hiçbir yere benzemeyen bir toprak parçası görürler.",
+      "Adamlar yüksek kayanın düz tepesinde dururlar. Önlerindeki toprağa büyük bir ilgiyle bakarlar. Burası bir rüya gibi görünen yeşil ve güzel bir dünyadır. Her yerde garip bitkiler vardır ve hava çok berraktır. Uzakta, parlak güneşin altında parlayan bir göl görürler. Buradaki hayvanlar bildikleri her şeyden çok farklıdır. Parlak renkli küçük kuşlar ağaçların arasında hızla uçar. Londra'daki evlerinden çok uzakta olduklarını hissederler. Burası zamanın durduğu ve dünyanın genç kaldığı gizli bir bahçe gibidir. Zemin uzun otlarla dolu olduğu için yavaş yürürler. Her adım geçmişe yapılmış bir ziyaret gibidir. Burayı uzun yıllardır gören ilk insanlar olduklarını biliyorlar. Bu onlar için cesur yeni bir dünyadır.",
+      "Aniden ayaklarının altındaki yeri sarsan yüksek ve derin bir ses duyarlar. Lord John Roxton durur ve ciddi bir yüzle tüfeğine bakar. Herkese çok sessiz kalmalarını ve büyük kayaların arkasına saklanmalarını söyler. Devasa bir hayvan ormandan çıkar ve açık alana çıkar. Uzun boynu ve çok büyük gövdesi olan devasa, yaşlı bir hayvandır. Hiç korkmadan yüksek ağaçların tepesindeki yaprakları yer. Adamlar gördüklerine inanamadıkları için gözleri kocaman açık onu izlerler. Hayvan eski bir hikaye kitabından bir canavara benzer. O kadar büyüktür ki adamlar ayaklarının dibinde duran küçük karıncalar gibi hissederler. Bu toprağın birçok tehlike barındırdığını fark ederler ama böylesine büyük ve güçlü bir hayvanı gördükleri için çok mutlu hissederler.",
+      "Profesör Challenger, planının başarılı olduğunu bildiği için gülümser. Gruba, daha fazla sır bulmak için bu bölgeyi araştırmaları gerektiğini söyler. Evdeki insanlara göstermek için notlar alırlar ve resimler çekerler. Güneş batmaya başlar ve gökyüzü güzel bir turuncu renge döner. Geceleri güvende kalmak için bir mağaranın yakınında küçük bir kamp kurarlar. Gün biterken ve karanlık çökerken ormanlar birçok farklı ses çıkarır. Edward hayatını ve bu akıllı ve güçlü adamlarla yaptığı yolculuğu düşünür. Yarının bu kayıp dünyada daha fazla macera getireceğini bilir. Basit bir akşam yemeği paylaşırlar ve bugün gördükleri hakkında konuşurlar. Yorgun olsalar da, kalpleri ertesi gün için umut ve heyecanla doludur. Sessiz gecede yıldızlar başlarının üzerinde parlak bir şekilde parlar.",
+      "Sabah güneşi yüksek düz arazi üzerinde yükselir ve cesur kaşifleri uykularından uyandırır. Çantalarını toplarlar ve arazinin vahşi merkezine doğru uzun yolculuklarına devam etmeye hazırlanırlar. Profesör Challenger, tarihin en büyük keşfine yakın olduklarını bildiği için yüzünde büyük bir gülümsemeyle haritasına bakar. Birçok tuhaf ağacın yanından geçerler ve ışıkta parlayan mavi çiçekler görürler. Edward bugün başına gelebilecek her şeye karşı güçlü ve hazır hisseder. Buldukları her yeni şeyin fotoğrafını çekmek için kamerasını hazır tutar. Hava sıcaktır ve ıslak toprak ve tatlı meyve kokar. Bugün eve giden yolu bulabileceklerini veya modern dünyadan uzakta saklı bu eski yer hakkında daha fazla sır keşfedebileceklerini bilirler.",
+      "Aniden grup, gizli bir alçak araziye çıkan derin bir delik bulur. Dikkatlice aşağı inerler ve zamanın gerçekten durduğu bir yerde olduklarını fark ederler. Devasa hayvanlar yeşil çimenlerin arasında yavaşça hareket eder ve berrak bir nehirden su içerler. Adamlar, devlerin onları görmemesi için kalın çalılıkların arkasına saklanırlar. Maymuna benzeyen ama kuş gibi kanatları olan küçük bir hayvan görürler. Bu, herkesin şaşkınlıkla nefes almasına neden olan tuhaf bir manzaradır. Lord John Roxton tüfeğini sıkı tutar ama hiçbir şeye zarar vermek istemez. Bu alçak arazinin kayıp dünyanın kalbi olduğunu anlarlar. Buradaki her şey gizemle ve insanlığın yoğun şehir hayatında çoktan unuttuğu bir zamana ait güzelliklerle doludur.",
+      "Ayrılma zamanı geldiğinde, keşiflerinin Londra'ya geri götürmek için özel bir kanıt toplarlar. Notları ve dünyaya doğruyu söylediklerini gösterecek birkaç küçük eşyaları vardır. Uçurumun kenarına geri dönüş yolculuğu zordur ama heyecanlı oldukları için yürümeyi bırakmazlar. Düz arazinin tepesinde dururken aşağıya son bir kez bakarlar. İnsanlara değil dünyaya ait harika bir yeri terk ettiklerini bilirler. Tekne nehrin aşağısında onları beklemektedir ve eve dönüş yolculuklarına başlarlar. Geçmişin sırlarını gördükleri ve hikayeyi Londra'daki herkese anlatacak kadar yaşadıkları için kalpleri huzur doludur."
     ],
     words: {
-      "reporter": "yazar",
+      "writer": "yazar",
       "brave": "cesur",
-      "dinosaur": "dev eski hayvan",
+      "giant": "devasa",
       "secret": "sır",
-      "journey": "gezi",
+      "travel": "yolculuk",
       "adventure": "macera",
-      "ocean": "deniz",
+      "sea": "deniz",
       "river": "nehir",
-      "forest": "ağaçlıklı yollar",
-      "bravery": "kalp",
-      "creature": "hayvan",
-      "cliff": "taş duvar",
-      "bridge": "yol",
-      "climb": "ilerlemek",
-      "destination": "yer",
-      "steep": "düz",
+      "woods": "orman",
+      "heart": "yürek",
+      "animal": "hayvan",
+      "rock": "kaya",
+      "path": "yol",
+      "climb": "tırmanmak",
+      "place": "yer",
+      "straight": "düz",
       "branch": "dal",
-      "wonder": "ilgi",
-      "magnificent": "büyük",
-      "explore": "bakmak",
-      "plateau": "düzlük",
-      "discovery": "buluş",
-      "ancient": "eski",
+      "interest": "ilgi",
+      "big": "büyük",
+      "look": "bakmak",
+      "land": "arazi",
+      "discovery": "keşif",
+      "old": "eski",
       "valley": "alçak arazi",
       "proof": "kanıt",
-      "magical": "harika"
+      "wonderful": "harika"
     }
   },
-            {
+              {
     id: 'scifi_from_earth_to_moon',
     title: "From the Earth to the Moon",
     author: 'Jules Verne',
@@ -14049,7 +14431,7 @@ export const STORIES_PART1: RawStory[] = [
       "The building of the giant gun is very hard work for the Gun Club members. Barbicane looks at the giant hole in the flat ground of Florida. Many workers move heavy iron and stone every day. They use many big machines to dig deep into the earth. The sky above is very clear and blue. People from all over the world come to watch the work. They want to see the start of the great travel. The members of the Gun Club talk about their big metal ball. It is not just a metal ball. It is a home for the brave people who will go to the stars. The metal ball is made of the strongest iron. It will keep the travelers safe during the trip. Everyone knows that this is the most important task in the history of science and the whole wide world.",
       "A strange man named Michel Ardan sends a message to Barbicane. He is a French man who likes to take big risks. He wants to go to the Moon in the metal ball. This news makes the Gun Club very surprised. Many members think it is a very dangerous plan. They know that a man inside a metal ball will face many challenges. However, Ardan is a man with a lot of bravery. He says that he is ready to leave the Earth. He wants to see the Moon with his own eyes. Barbicane talks to him for a long time. They talk about the plans for the trip. They talk about the air, the food, and the water for the journey. It is a big challenge for everyone. The dream of the Moon is now becoming a very real and exciting adventure for them.",
       "The preparation for the start is moving very fast now. The gun is finally finished and it looks like a mountain of steel. The people gather around the site with loud voices and happy hearts. They are waiting for the final moment of the flight. The metal ball sits inside the big hole with care. Barbicane checks the math one last time. He wants to make sure everything is perfect for the big day. The experts are tired but they are very proud of their work. The whole world is watching the sky today. The air is full of wonder and nervous energy. Everyone knows that human history will change forever after this moment. The rocket engine of the past is ready to show its power. The brave team is prepared to travel into the dark space and touch the moon with their brave hearts.",
-      "The day of the great start finally arrives in Florida. A large crowd gathers under the hot sun to see the incredible event. People from every corner of the planet hold their breath in hope for the big moment. The giant gun stands tall like a big silver tower reaching toward the sky. Barbicane stands near the control point with his partners Ardan and Nicholl and Ardan. They are ready to leave the safety of their home to touch the cold ground of the Moon. Every worker feels a deep sense of pride for completing the hard work on time. The air is very quiet because everyone is waiting for the sound of the machine. The giant metal ball waits quietly inside the deep hole. It is ready for the massive fire that will send it through the clouds and into the endless dark space above our heads.",
+      "The day of the great start finally arrives in Florida. A large crowd gathers under the hot sun to see the incredible event. People from every corner of the planet hold their breath in hope for the big moment. The giant gun stands tall like a big silver tower reaching toward the sky. Barbicane stands near the control point with his partners Ardan and Nicholl. They are ready to leave the safety of their home to touch the cold ground of the Moon. Every worker feels a deep sense of pride for completing the hard work on time. The air is very quiet because everyone is waiting for the sound of the machine. The giant metal ball waits quietly inside the deep hole. It is ready for the massive fire that will send it through the clouds and into the endless dark space above our heads.",
       "Barbicane gives the sign to start the complex process of the start. The engineers operate the heavy buttons and turn the large metal wheels with great care. A sudden and loud noise shakes the entire ground like a powerful earthquake. Thick smoke rises into the bright blue sky as the gun fires its load toward the distant stars. Everyone watches the metal ball fly higher and higher until it becomes a tiny dot in the clouds. The travelers feel the strong force of the start pressing against their bodies inside the small room. Ardan looks through the thick window with excitement in his eyes. He is happy to finally see the Earth getting smaller and smaller every second. The journey to the lunar world has officially started for these three brave men who are now floating away from their home planet.",
       "The journey through the air is very fast and dangerous for the travelers inside the metal ball. They feel the weight of the pull of the Earth as they leave the Earth behind them forever. The air inside the cabin remains calm because the life support systems work perfectly for now. They see the stars shining bright against the black background of deep space. It is a beautiful sight that no person has ever seen in such a way before this day. Barbicane writes every detail of the flight in his leather notebook while Nicholl checks the speed of their movement. Ardan keeps his eyes on the moon which grows larger in the window with each passing hour. They are now far from their families and friends but they remain calm because they believe in the success of their scientific task to the dusty and silent moon.",
       "The travelers continue their long path through the dark space. Inside the small metal room, the air is clean and cool. Barbicane stays busy with his scientific tools. He watches the speed of their flight with great focus. Ardan sits near the round window to look at the stars. The Earth is now just a tiny blue light far behind them. The Moon looks much bigger and brighter than it did from their home. They feel quiet and peaceful while they travel in the silent space. Everything around them is new and different. There is no wind and no sound except for their own breathing. They eat some food from small metal boxes and drink fresh water. They are the first humans to leave the home world and fly into the deep dark space between the planets. It is a very long journey.",
@@ -14060,66 +14442,66 @@ export const STORIES_PART1: RawStory[] = [
       "They stand up and walk towards the exit of the metal room. The pull of the Moon is very light, so they feel as if they can jump very high. They step out of the ship and place their feet on the cold ground. The soil is white and dry under their boots. They look up and see the Earth as a blue ball in the dark sky. It is very far away, but it looks like a warm home. Barbicane, Ardan, and Nicholl are the first men on this new world. They have finished their famous task with success. They feel proud of their hard work and their brave hearts. They start to look around at the rocks and the deep holes. The story of their trip will live forever in the books of history. Their names will be famous for many years in the future."
     ],
     tr: [
-      "Amerikan İç Savaşı bitti. Şimdi Baltimore halkının yapacak hiçbir şeyi yok. Silah Kulübü bir grup adamdan oluşuyor. Bu adamlar büyük silahları ve makineleri seviyorlar. Birçok büyük topları ve metal topları var. Liderleri Impey Barbicane. O çok zeki bir adam. Arkadaşlarıyla birlikte evinde oturuyor. Savaş olmadığı için sıkılıyorlar. Barbicane ayağa kalkıyor ve arkadaşlarına bakıyor. Onlar için yeni bir planı var. Ay hakkında konuşmak istiyor. Ay'ın çok uzak olduğunu söylüyor. Birçok insan gece Ay'a bakıyor ama kimse oraya seyahat etmiyor. Barbicane Ay'a bir metal top fırlatabileceklerini düşünüyor. Kulüp üyeleri şimdi çok sessiz. Bu büyük fikir üzerinde düşünüyorlar. Ay'a giden hızlı bir gemi bu savaş adamları için yeni bir hedef.",
-      "Kulüp üyeleri konuşmaya başlıyor. Bazı adamlar planı seviyor ama diğerleri bunun çılgınca olduğunu düşünüyor. Ay'a giden yol çok uzun. Uzay yaklaşık iki yüz kırk bin mil. Yeterince büyük bir silahı nasıl inşa edebilirler? Bir insan bir metal topun içine nasıl girebilir? Barbicane durmuyor. Cambridge'deki bilim grubuna bir mektup yazıyor. Matematik konusunda onlardan yardım istiyor. Bir metal topun Ay'a ulaşıp ulaşamayacağını bilmesi gerekiyor. Bilim grubundaki bilim insanları mektubuna çok hızlı cevap veriyorlar. Bunun mümkün olduğunu söylüyorlar. Hız ve güç için matematiği yapıyorlar. Barbicane artık çok mutlu. Mektupları kulüp üyelerine gösteriyor. Çalışmayı başlatmayı kabul ediyorlar. Silah Kulübü dünya için yeni bir plan yapmaya başlıyor.",
-      "Barbicane para aramaya başlıyor. Dev bir silah inşa etmek istiyor. Bu silah çok pahalı. Dünyanın her yerinden para istiyor. Birçok ülkedeki insanlar planı duyuyor. Amerika'ya para gönderiyorlar. Herkes bu büyük olayı görmek istiyor. Silah Kulübü silah için Florida'da bir yer seçiyor. Orası büyük ve düz bir arazi. Birçok işçiyi sahaya getiriyorlar. Yerde dev bir delik kazıyorlar. Uzun silah için. İnsanlar çalışmaları kocaman gözlerle izliyorlar. Gökyüzüne olan yolculuk için heyecanlılar. Barbicane gece gündüz çalışıyor. Planı için en iyi parçaları istiyor. Her şey güçlü ve mükemmel olmalı. Ay yolculuğu burada, yerde, çok büyük bir silahla başlıyor.",
-      "Devasa silahın inşası, Silah Kulübü üyeleri için oldukça zorlu bir iştir. Barbicane, Florida'nın düz zeminindeki dev çukura bakar. Birçok işçi her gün ağır demir ve taşları taşır. Yerin derinliklerine kazı yapmak için birçok büyük makine kullanırlar. Yukarıdaki gökyüzü çok açık ve mavidir. Dünyanın dört bir yanından insanlar çalışmayı izlemeye gelir. Büyük yolculuğun başlangıcını görmek isterler. Silah Kulübü üyeleri, devasa metal topları hakkında konuşurlar. O sadece metal bir top değildir. Yıldızlara gidecek cesur insanlar için bir yuvadır. Metal top, en güçlü demirden yapılmıştır. Yolculuk sırasında yolcuları güvende tutacaktır. Herkes, bunun bilim ve tüm dünya tarihindeki en önemli görev olduğunu bilir.",
+      "Amerikan İç Savaşı bitti. Şimdi Baltimore halkının yapacak hiçbir şeyi yok. Silah Kulübü bir grup adamdan oluşuyor. Bu adamlar büyük silahları ve makineleri seviyorlar. Birçok büyük topları ve metal topları var. Liderleri Impey Barbicane. O çok akıllı bir adam. Arkadaşlarıyla birlikte evinde oturuyor. Savaş olmadığı için sıkılıyorlar. Barbicane ayağa kalkıyor ve arkadaşlarına bakıyor. Onlar için yeni bir planı var. Ay hakkında konuşmak istiyor. Ay'ın çok uzak olduğunu söylüyor. Birçok insan gece Ay'a bakıyor ama kimse oraya seyahat etmiyor. Barbicane Ay'a bir metal top fırlatabileceklerini düşünüyor. Kulüp üyeleri şimdi çok sessiz. Bu büyük fikir üzerinde düşünüyorlar. Ay'a giden hızlı bir gemi bu savaşçı adamlar için yeni bir hedef.",
+      "Kulüp üyeleri konuşmaya başlıyor. Bazı adamlar planı seviyor ama diğerleri bunun çılgınca olduğunu düşünüyor. Ay'a giden yol çok uzun. Uzay yaklaşık iki yüz kırk bin mil. Yeterince büyük bir silahı nasıl yapabilirler? Bir insan bir metal topun içine nasıl girebilir? Barbicane durmuyor. Cambridge'deki bilim grubuna bir mektup yazıyor. Matematik konusunda onlardan yardım istiyor. Bir metal topun Ay'a ulaşıp ulaşamayacağını bilmesi gerekiyor. Bilim grubundaki bilim insanları mektubuna çok hızlı cevap veriyorlar. Bunun mümkün olduğunu söylüyorlar. Hız ve güç için hesaplamaları yapıyorlar. Barbicane artık çok mutlu. Mektupları kulüp üyelerine gösteriyor. Çalışmaya başlamayı kabul ediyorlar. Silah Kulübü dünya için yeni bir plan yapmaya başlıyor.",
+      "Barbicane para aramaya başlıyor. Dev bir silah yapmak istiyor. Bu silah çok pahalı. Dünyanın her yerinden para istiyor. Birçok ülkedeki insanlar planı duyuyor. Amerika'ya para gönderiyorlar. Herkes bu büyük olayı görmek istiyor. Silah Kulübü silah için Florida'da bir yer seçiyor. Orası büyük ve düz bir arazi. Birçok işçiyi alana getiriyorlar. Yerde dev bir delik kazıyorlar. Uzun silah için. İnsanlar çalışmaları kocaman gözlerle izliyorlar. Gökyüzüne olan yolculuk için heyecanlılar. Barbicane gece gündüz çalışıyor. Planı için en iyi parçaları istiyor. Her şey güçlü ve kusursuz olmalı. Ay yolculuğu burada, yerde, çok büyük bir silahla başlıyor.",
+      "Devasa silahın yapımı, Silah Kulübü üyeleri için oldukça zorlu bir iş. Barbicane, Florida'nın düz zeminindeki dev çukura bakar. Birçok işçi her gün ağır demir ve taşları taşır. Yerin derinliklerine kazı yapmak için birçok büyük makine kullanırlar. Yukarıdaki gökyüzü çok açık ve mavidir. Dünyanın dört bir yanından insanlar çalışmayı izlemeye gelir. Büyük yolculuğun başlangıcını görmek isterler. Silah Kulübü üyeleri, dev metal topları hakkında konuşurlar. O sadece metal bir top değildir. Yıldızlara gidecek cesur insanlar için bir evdir. Metal top, en güçlü demirden yapılmıştır. Yolculuk sırasında yolcuları güvende tutacaktır. Herkes, bunun bilim ve tüm dünya tarihindeki en önemli görev olduğunu bilir.",
       "Michel Ardan adında garip bir adam, Barbicane'e bir mesaj gönderir. O, büyük riskler almayı seven bir Fransızdır. Metal topun içinde Ay'a gitmek ister. Bu haber Silah Kulübü'nü çok şaşırtır. Birçok üye, bunun çok tehlikeli bir plan olduğunu düşünür. Metal bir topun içindeki bir insanın birçok zorlukla karşılaşacağını bilirler. Ancak Ardan, çok cesur bir adamdır. Dünya'dan ayrılmaya hazır olduğunu söyler. Ay'ı kendi gözleriyle görmek ister. Barbicane onunla uzun süre konuşur. Yolculuk için planları tartışırlar. Yolculuk için hava, yiyecek ve su hakkında konuşurlar. Herkes için büyük bir zorluktur. Ay hayali, artık onlar için çok gerçek ve heyecan verici bir maceraya dönüşmektedir.",
-      "Başlangıç için hazırlıklar artık çok hızlı ilerlemektedir. Silah nihayet biter ve çelikten bir dağ gibi görünür. İnsanlar yüksek sesler ve mutlu kalplerle alanın etrafında toplanırlar. Uçuşun son anını bekliyorlar. Metal top, dikkatle büyük çukurun içinde oturur. Barbicane matematiği son bir kez kontrol eder. Büyük gün için her şeyin mükemmel olduğundan emin olmak ister. Uzmanlar yorgundur ama yaptıkları işten gurur duyarlar. Tüm dünya bugün gökyüzünü izlemektedir. Hava, merak ve gergin enerjiyle doludur. Herkes, bu andan sonra insanlık tarihinin sonsuza dek değişeceğini bilir. Geçmişin roket motoru, gücünü göstermeye hazırdır. Cesur ekip, karanlık uzayda yolculuk etmeye ve cesur kalpleriyle Ay'a dokunmaya hazırlanmıştır.",
-      "Büyük başlangıç günü sonunda Florida'ya ulaşır. Büyük bir kalabalık, bu inanılmaz olayı görmek için sıcak güneşin altında toplanır. Gezegenin her köşesinden insanlar, büyük an için umutla nefeslerini tutarlar. Dev silah, göklere uzanan devasa bir gümüş kule gibi yükselir. Barbicane, ortakları Nicholl ve Ardan ile birlikte kontrol noktasının yakınında durur. Evlerinin güvenliğini terk edip Ay'ın soğuk zeminine dokunmaya hazırdırlar. Her işçi, zorlu inşaatı zamanında tamamlamanın derin gururunu hisseder. Hava çok sessizdir çünkü herkes makinenin sesini beklemektedir. Dev metal top, derin çukurun içinde sessizce bekler. Bulutların içinden geçip üzerimizdeki uçsuz bucaksız karanlık boşluğa fırlatacak büyük ateşe hazırdır.",
-      "Barbicane başlangıç sürecini başlatmak için işareti verir. Mühendisler ağır düğmeleri çalıştırır ve büyük metal çarkları büyük bir dikkatle çevirir. Ani ve yüksek bir ses, güçlü bir deprem gibi tüm yeri sallar. Silah, yükünü uzak yıldızlara doğru ateşlediğinde parlak mavi gökyüzüne yoğun dumanlar yükselir. Herkes metal topun bulutlar içinde küçük bir nokta haline gelene kadar daha da yükselişini izler. Yolcular, küçük odanın içinde vücutlarına baskı yapan başlangıçın güçlü kuvvetini hissederler. Ardan gözlerinde heyecanla kalın pencereden dışarı bakar. Dünyanın her saniye daha da küçüldüğünü görmekten mutludur. Ay dünyasına yolculuk, artık ana gezegenlerinden uzaklaşan bu üç cesur adam için resmen başlamıştır.",
-      "Havadaki yolculuk, metal topun içindeki yolcular için çok hızlı ve tehlikelidir. Dünyayı sonsuza dek arkalarında bırakırken Dünya'nın çekim gücünün ağırlığını hissederler. Yaşam destek sistemleri şimdilik mükemmel çalıştığı için kabinin içindeki hava sakin kalır. Yıldızların derin uzayın siyah arka planına karşı parlak bir şekilde parladığını görürler. Bu, bu günden önce hiçbir insanın bu şekilde görmediği güzel bir manzaradır. Barbicane uçuşun her detayını deri defterine yazar, Nicholl ise hareketlerinin hızını kontrol eder. Ardan, her geçen saat pencerede daha da büyüyen aya gözlerini diker. Artık ailelerinden ve arkadaşlarından çok uzaktırlar ancak tozlu ve sessiz aya yaptıkları bilimsel görevlerinin başarısına inandıkları için sakin kalırlar.",
-      "Yolcular karanlık uzaydaki uzun yollarına devam ediyorlar. Küçük metal odanın içinde hava temiz ve serin. Barbicane bilimsel araçlarıyla meşgul olmaya devam ediyor. Uçuşlarının hızını büyük bir odaklanmayla izliyor. Ardan yıldızlara bakmak için yuvarlak pencerenin yanına oturuyor. Dünya artık arkalarında kalan minik bir mavi ışıktan ibaret. Ay, evlerinden göründüğünden çok daha büyük ve parlak görünüyor. Sessiz boşlukta seyahat ederken kendilerini sakin ve huzurlu hissediyorlar. Etraflarındaki her şey yeni ve farklı. Rüzgar yok ve kendi nefes alışverişleri dışında hiçbir ses duyulmuyor. Küçük metal kutulardan yemeklerini yiyor ve taze su içiyorlar. Ana dünyayı terk edip gezegenler arasındaki derin karanlık uzaya uçan ilk insanlar onlar. Bu çok uzun bir yolculuk.",
-      "Nicholl, metal topun ağır duvarlarındaki küçük bir sorunu çözmek için çok çalışıyor. Uzun görevleri için her şeyin güvenli kaldığından emin olmak istiyor. Yolcular Ay hakkında ve yakında oraya indiklerinde ne bulmayı umdukları hakkında konuşuyorlar. Ay zeminindeki dağları ve karanlık delikleri düşünüyorlar. Ardan herkesi mutlu ve sakin tutmak için birçok ilginç hikaye anlatıyor. O, geleceği hayal etmeyi seven yaratıcı bir adam. Barbicane dikkatle dinliyor çünkü varış noktaları hakkında her küçük detayı öğrenmek istiyor. Üç adam küçük metal evlerinde kendilerini çok cesur hissediyorlar. Bu yolculuğun Dünya üzerindeki tüm insanlar için önemli olduğunu biliyorlar. Çalışmaları bilim tarihini sonsuza dek değiştirecek. Yorulmuyorlar çünkü büyük yolculuklarının bir sonraki kısmı için heyecanlılar.",
-      "Metal top Ay zeminine yaklaştıkça saatler dakikalar gibi geçiyor. Yolcular Ay'ın tuhaf gri rengini görebiliyorlar. Yüzeydeki devasa deliklerin büyüklüğü karşısında çok şaşkınlar. Her şey geride bıraktıkları yeşil dünyadan çok farklı görünüyor. Yıldızlar keskin ve parlak görünüyor çünkü onları saklayacak bir hava yok. Yolcular inişi kaydetmek için kameralarını hazırlıyorlar. Her şeyin mükemmel olduğundan emin olmak için araçlarını son bir kez kontrol ediyorlar. Barbicane, Dünya'da haber bekleyen insanlar için görevi tamamlama sorumluluğu hissediyor. Uzayın sessizliği omuzlarının üzerinde ağır bir battaniye gibi hissettiriyor. Ay'ın gizemli zeminine dokunmaya hazırlar. Bu, büyük planın ilk gününden beri bekledikleri o an.",
-      "Metal top şimdi büyük bir hızla Ay'a yaklaşıyor. Yolcular kalın camlı pencereden dışarı bakıyorlar. Delikleri ve yüksek dağları görüyorlar. Gri zemin üzerinde her şey çok sessiz. Orada yaşam yok, sadece kayalar ve toz var. Barbicane, çok hızlı gitmediklerinden emin olmak için hızı bir kez daha kontrol ediyor. Metal top yere yumuşak bir şekilde inmeli. Ardan çok mutlu hissediyor çünkü uzun yolculuklarının hedefini görüyor. Nicholl makineleri izliyor. Hareket çok güçlendiği için koltuklarına tutunuyorlar. Gemi yere yaklaştıkça biraz sarsılıyor. İniş vaktinin neredeyse geldiğini biliyorlar. Her kalp hızla çarpıyor. Bu büyük an için hazırlar. Uzay uçuşlarının sonu. Ay'a gözlerindeki sevgi ve korkuyla bakıyorlar.",
-      "Ağır metal gemi, yüksek bir sesle Ay'ın zeminine değiyor. Tozlar boş havaya doğru uçuyor. Uzaydaki uzun yolculuktan sonra metal top hareketsiz kalıyor. Yolcular uzun bir süre koltuklarında oturuyorlar. Kapıyı açmanın güvenli olduğundan emin olmak istiyorlar. Barbicane hava basıncını tekrar tekrar kontrol ediyor. Metal topun içindeki hava hala taze ve serin. Arkadaşlarına bakıyor ve başını sallıyor. Artık Ay'dalar. Bu onlar ve Dünya'daki tüm insanlar için çok büyük bir zafer. Ardan küçük kapıyı dikkatlice açıyor. Dışarıdaki tuhaf dünyayı görüyorlar. Güneş ışığı çok parlak ama gökyüzü kömür kadar kara. Bu, bugüne kadar hiçbir insanın görmediği güzel bir manzara.",
-      "Ayağa kalkıyorlar ve metal odanın çıkışına doğru yürüyorlar. Ay'ın çekim gücü çok hafif, bu yüzden çok yükseğe zıplayabileceklerini hissediyorlar. Gemiden çıkıyorlar ve ayaklarını soğuk zemine basıyorlar. Toprak botlarının altında beyaz ve kuru. Yukarı bakıyorlar ve karanlık gökyüzünde mavi bir top gibi Dünya'yı görüyorlar. Çok uzakta ama sıcak bir ev gibi görünüyor. Barbicane, Ardan ve Nicholl bu yeni dünyadaki ilk insanlar. Ünlü görevlerini başarıyla tamamladılar. Sıkı çalışmalarından ve cesur yüreklerinden gurur duyuyorlar. Kayalara ve derin deliklere bakmaya başlıyorlar. Yolculuklarının hikayesi tarih kitaplarında sonsuza kadar yaşayacak. İsimleri gelecekte uzun yıllar boyunca ünlü kalacak."
+      "Başlangıç için hazırlıklar artık çok hızlı ilerlemektedir. Silah nihayet biter ve çelikten bir dağ gibi görünür. İnsanlar yüksek sesler ve mutlu kalplerle alanın etrafında toplanırlar. Uçuşun son anını bekliyorlar. Metal top, dikkatle büyük çukurun içinde durur. Barbicane matematiği son bir kez kontrol eder. Büyük gün için her şeyin kusursuz olduğundan emin olmak ister. Uzmanlar yorgundur ama yaptıkları işten gurur duyarlar. Tüm dünya bugün gökyüzünü izlemektedir. Hava, merak ve gergin enerjiyle doludur. Herkes, bu andan sonra insanlık tarihinin sonsuza dek değişeceğini bilir. Geçmişin roket motoru, gücünü göstermeye hazırdır. Cesur ekip, karanlık uzayda yolculuk etmeye ve cesur kalpleriyle Ay'a dokunmaya hazırdır.",
+      "Büyük başlangıç günü sonunda Florida'ya ulaşır. Büyük bir kalabalık, bu inanılmaz olayı görmek için sıcak güneşin altında toplanır. Gezegenin her köşesinden insanlar, büyük an için umutla nefeslerini tutarlar. Dev silah, göklere uzanan devasa bir gümüş kule gibi durur. Barbicane, ortakları Nicholl ve Ardan ile birlikte kontrol noktasının yakınında durur. Evlerinin güvenliğini terk edip Ay'ın soğuk zeminine dokunmaya hazırdırlar. Her işçi, zorlu işi zamanında tamamlamanın derin gururunu hisseder. Hava çok sessizdir çünkü herkes makinenin sesini beklemektedir. Dev metal top, derin çukurun içinde sessizce bekler. Bulutların içinden geçip üzerimizdeki sonsuz karanlık uzaya fırlatacak büyük ateşe hazırdır.",
+      "Barbicane başlangıç sürecini başlatmak için işareti verir. Mühendisler ağır düğmeleri çalıştırır ve büyük metal çarkları büyük bir dikkatle çevirir. Ani ve yüksek bir ses, güçlü bir deprem gibi tüm yeri sallar. Silah, yükünü uzak yıldızlara doğru ateşlediğinde parlak mavi gökyüzüne yoğun dumanlar yükselir. Herkes metal topun bulutlar içinde küçük bir nokta haline gelene kadar daha da yükselişini izler. Yolcular, küçük odanın içinde vücutlarına baskı yapan kalkışın güçlü kuvvetini hissederler. Ardan gözlerinde heyecanla kalın pencereden dışarı bakar. Dünyanın her saniye daha da küçüldüğünü görmekten mutludur. Ay dünyasına yolculuk, artık ana gezegenlerinden uzaklaşan bu üç cesur adam için resmen başlamıştır.",
+      "Havadaki yolculuk, metal topun içindeki yolcular için çok hızlı ve tehlikelidir. Dünyayı sonsuza dek arkalarında bırakırken Dünya'nın çekim kuvvetini hissederler. Yaşam destek sistemleri şimdilik kusursuz çalıştığı için kabinin içindeki hava sakin kalır. Yıldızların derin uzayın siyah arka planına karşı parlak bir şekilde parladığını görürler. Bu, bu günden önce hiçbir insanın bu şekilde görmediği güzel bir manzaradır. Barbicane uçuşun her detayını deri defterine yazar, Nicholl ise hareketlerinin hızını kontrol eder. Ardan, her geçen saat pencerede daha da büyüyen aya gözlerini diker. Artık ailelerinden ve arkadaşlarından çok uzaktırlar ancak tozlu ve sessiz aya yaptıkları bilimsel görevlerinin başarısına inandıkları için sakin kalırlar.",
+      "Yolcular karanlık uzaydaki uzun yollarına devam ediyorlar. Küçük metal odanın içinde hava temiz ve serin. Barbicane bilimsel aletleriyle meşgul olmaya devam ediyor. Uçuşlarının hızını büyük bir odaklanmayla izliyor. Ardan yıldızlara bakmak için yuvarlak pencerenin yanına oturuyor. Dünya artık arkalarında kalan minik bir mavi ışıktan ibaret. Ay, evlerinden göründüğünden çok daha büyük ve parlak görünüyor. Sessiz uzayda seyahat ederken kendilerini sakin ve huzurlu hissediyorlar. Etraflarındaki her şey yeni ve farklı. Rüzgar yok ve kendi nefes alışverişleri dışında hiçbir ses duyulmuyor. Küçük metal kutulardan yemeklerini yiyor ve taze su içiyorlar. Ana dünyayı terk edip gezegenler arasındaki derin karanlık uzaya uçan ilk insanlar onlar. Bu çok uzun bir yolculuk.",
+      "Nicholl, metal topun ağır duvarlarındaki küçük bir sorunu çözmek için çok çalışıyor. Uzun görevleri için her şeyin güvende kaldığından emin olmak istiyor. Yolcular Ay hakkında ve yakında oraya indiklerinde ne bulmayı umdukları hakkında konuşuyorlar. Ay yüzeyindeki dağları ve karanlık delikleri düşünüyorlar. Ardan herkesi mutlu ve sakin tutmak için birçok ilginç hikaye anlatıyor. O, geleceği hayal etmeyi seven yaratıcı bir adam. Barbicane dikkatle dinliyor çünkü varış noktaları hakkında her küçük detayı öğrenmek istiyor. Üç adam küçük metal evlerinde kendilerini çok cesur hissediyorlar. Bu yolculuğun Dünya üzerindeki tüm insanlar için önemli olduğunu biliyorlar. Çalışmaları bilim tarihini sonsuza dek değiştirecek. Yorulmuyorlar çünkü büyük yolculuklarının bir sonraki kısmı için heyecanlılar.",
+      "Metal top Ay zeminine yaklaştıkça saatler dakikalar gibi geçiyor. Yolcular Ay'ın tuhaf gri rengini görebiliyorlar. Yüzeydeki devasa deliklerin büyüklüğü karşısında çok şaşkınlar. Her şey geride bıraktıkları yeşil dünyadan çok farklı görünüyor. Yıldızlar keskin ve parlak görünüyor çünkü onları gizleyecek bir hava yok. Yolcular inişi kaydetmek için kameralarını hazırlıyorlar. Her şeyin kusursuz olduğundan emin olmak için aletlerini son bir kez kontrol ediyorlar. Barbicane, Dünya'da haber bekleyen insanlar için görevi tamamlama sorumluluğu hissediyor. Uzayın sessizliği omuzlarının üzerinde ağır bir battaniye gibi hissediliyor. Ay'ın gizemli zeminine dokunmaya hazırlar. Bu, büyük planın ilk gününden beri bekledikleri o an.",
+      "Metal top şimdi büyük bir hızla Ay'a yaklaşıyor. Yolcular kalın camlı pencereden dışarı bakıyorlar. Delikleri ve yüksek dağları görüyorlar. Gri zeminde her şey çok sessiz. Orada yaşam yok, sadece kayalar ve toz var. Barbicane, çok hızlı gitmediklerinden emin olmak için hızı bir kez daha kontrol ediyor. Metal top yere yumuşak bir şekilde inmeli. Ardan çok mutlu hissediyor çünkü uzun yolculuklarının hedefini görüyor. Nicholl makineleri izliyor. Hareket çok güçlendiği için koltuklarına tutunuyorlar. Gemi yere yaklaştıkça biraz sallanıyor. İniş vaktinin neredeyse geldiğini biliyorlar. Her kalp hızla çarpıyor. Bu büyük an için hazırlar. Uzay uçuşlarının sonu. Ay'a gözlerindeki sevgi ve korkuyla bakıyorlar.",
+      "Ağır metal gemi, yüksek bir sesle Ay'ın zeminine değiyor. Tozlar boş havaya doğru uçuşuyor. Uzaydaki uzun yolculuktan sonra metal top hareketsiz kalıyor. Yolcular uzun bir süre koltuklarında oturuyorlar. Kapıyı açmanın güvenli olduğundan emin olmak istiyorlar. Barbicane hava basıncını tekrar tekrar kontrol ediyor. Metal topun içindeki hava hala taze ve serin. Arkadaşlarına bakıyor ve başını sallıyor. Artık Ay'dalar. Bu onlar ve Dünya'daki tüm insanlar için çok büyük bir zafer. Ardan küçük kapıyı dikkatlice açıyor. Dışarıdaki tuhaf dünyayı görüyorlar. Güneş ışığı çok parlak ama gökyüzü kömür kadar kara. Bu, bugüne kadar hiçbir insanın görmediği güzel bir manzara.",
+      "Ayağa kalkıyorlar ve metal odanın çıkışına doğru yürüyorlar. Ay'ın çekim gücü çok hafif, bu yüzden çok yükseğe zıplayabileceklerini hissediyorlar. Gemiden çıkıyorlar ve ayaklarını soğuk zemine basıyorlar. Toprak botlarının altında beyaz ve kuru. Yukarı bakıyorlar ve karanlık gökyüzünde mavi bir top gibi Dünya'yı görüyorlar. Çok uzakta ama sıcak bir ev gibi görünüyor. Barbicane, Ardan ve Nicholl bu yeni dünyadaki ilk insanlar. Ünlü görevlerini başarıyla tamamladılar. Sıkı çalışmalarından ve cesur yüreklerinden gurur duyuyorlar. Kayalara ve derin deliklere bakmaya başlıyorlar. Yolculuklarının hikayesi tarih kitaplarında sonsuza dek yaşayacak. İsimleri gelecekte uzun yıllar boyunca ünlü kalacak."
     ],
     words: {
-      "cannon": "büyük silah",
-      "shell": "metal top",
-      "distance": "uzaklık",
-      "project": "çalışma",
-      "build": "inşa etmek",
+      "gun": "büyük silah",
+      "ball": "metal top",
+      "far": "uzak",
+      "plan": "plan",
+      "build": "yapmak",
       "journey": "yolculuk",
-      "courage": "cesaret",
-      "mission": "görev",
-      "launch": "başlangıç",
-      "witness": "görmek",
-      "payload": "yük",
-      "gravity": "çekim gücü",
-      "surface": "zemin",
-      "construction": "inşaat",
-      "vacuum": "boşluk",
-      "crater": "delik",
-      "equipment": "araçlar",
+      "brave": "cesur",
+      "task": "görev",
+      "start": "başlangıç",
+      "watch": "izlemek",
+      "load": "yük",
+      "pull": "çekim gücü",
+      "ground": "zemin",
+      "building": "yapım",
+      "space": "boşluk",
+      "hole": "delik",
+      "tools": "aletler",
       "landing": "iniş",
       "speed": "hız",
-      "victory": "zafer"
+      "win": "zafer"
     }
   },
-            {
+              {
     id: 'scifi_propeller_island',
     title: "Propeller Island",
     author: 'Jules Verne',
     level: 'A1',
     coverUrl: '/covers/scifi_propeller_island.webp',
     en: [
-      "The famous group of musicians is very busy in America. They travel to many cities to play music. One day, they are in the city of San Francisco. They are tired after their long trip. They need a place to rest and eat good food. A man comes to see them. He tells them about a very strange and big place in the sea. This place is not a normal island. It is a big machine made of hard iron. It moves on the water like a big ship. It has houses, gardens, and many trees. The musicians are very curious about this place. They want to see it with their own eyes. They decide to go on a trip to find this famous place. They pack their bags and prepare for a long travel. The adventure of the four friends begins today in the blue sea.",
-      "The trip starts on a large and beautiful boat. The sea is calm and the sky is very blue. The musicians talk about the island. They think about the hard iron houses and the big machines. It sounds like a dream to them. Many people live on this floating land. It is a place for rich people. They have a lot of money and they want to live in comfort. The island moves using powerful parts under the water. It can travel to many places around the world. The musicians watch the sea every day. They see some fish and a few birds. They are excited to reach their goal soon. The air is warm and the wind is soft. Everything feels like the start of a very special time in their lives.",
-      "The group reaches the location of the island at last. It looks like a big round shape on the water. The sun shines on the hard iron surface of the island. It is bigger than any ship they ever saw. The island has small villages and tall buildings. They see parks with green grass and beautiful flowers. It is like a small country on the sea. A small boat takes the musicians to the island. They feel very nervous but also happy. They carry their musical tools with them. The people on the island look at them with interest. The musicians walk on the streets of this strange land. They hear the sound of the deep water under their feet. The island is ready to move again. The travel continues across the wide sea. They are now part of the big island machine.",
-      "The island is named Standard Island. It is a very rich place for people with a lot of money. The streets are clean and the buildings are made of hard iron. There are many trees and flowers in the parks. The musicians walk around and see the high class life. They find a beautiful hotel for their stay. The rooms are large and have soft beds. They put their violins and cellos in the room. Then they go to eat in a big restaurant. The food is very good and the service is fast. They meet a rich man named Cyrus. He explains how the island works for them. He says the island has big parts that move it on the waves. The musicians are happy to be here. They think this island is a beautiful place on the water. They are ready to play their music for the people on this strange, moving land.",
-      "The group plays their music in a large hall that evening. Many rich people come to listen to the sweet songs. The musicians feel very proud of their work. After the music show, they walk to the edge of the island. They look down into the deep blue sea water. They can hear the sound of the machines far below them. It is a steady sound that goes on and on. The island starts to move to another part of the sea. The people on the island are happy and relaxed. They enjoy their lives in the middle of the sea. There are no borders and no heavy traffic here. Everything is safe and very quiet for the guests. The musicians talk to each other about the long trip. They are excited to visit new places while they play music on this hard iron island.",
+      "The famous group of musicians is very busy in America. They travel to many cities to play music. One day, they are in the city of San Francisco. They are tired after their long trip. They need a place to rest and eat good food. A man comes to see them. He tells them about a very strange and big place in the sea. This place is not a normal island. It is a big machine made of hard metal. It moves on the water like a big ship. It has houses, gardens, and many trees. The musicians are very curious about this place. They want to see it with their own eyes. They decide to go on a trip to find this famous place. They pack their bags and prepare for a long travel. The adventure of the four friends begins today in the blue sea.",
+      "The trip starts on a large and beautiful boat. The sea is calm and the sky is very blue. The musicians talk about the island. They think about the hard metal houses and the big machines. It sounds like a dream to them. Many people live on this floating land. It is a place for rich people. They have a lot of money and they want to live in comfort. The island moves using strong parts under the water. It can travel to many places around the world. The musicians watch the sea every day. They see some fish and a few birds. They are excited to reach their goal soon. The air is warm and the wind is soft. Everything feels like the start of a very special time in their lives.",
+      "The group reaches the location of the island at last. It looks like a big round shape on the water. The sun shines on the hard metal surface of the island. It is bigger than any ship they ever saw. The island has small villages and tall buildings. They see parks with green grass and beautiful flowers. It is like a small country on the sea. A small boat takes the musicians to the island. They feel very nervous but also happy. They carry their musical tools with them. The people on the island look at them with interest. The musicians walk on the streets of this strange land. They hear the sound of the deep water under their feet. The island is ready to move again. The travel continues across the wide sea. They are now part of the big island machine.",
+      "The island is named Standard Island. It is a very rich place for people with a lot of money. The streets are clean and the buildings are made of hard metal. There are many trees and flowers in the parks. The musicians walk around and see the high class life. They find a beautiful hotel for their stay. The rooms are large and have soft beds. They put their violins and cellos in the room. Then they go to eat in a big restaurant. The food is very good and the service is fast. They meet a rich man named Cyrus. He explains how the island works for them. He says the island has big parts that move it on the waves. The musicians are happy to be here. They think this island is a beautiful place on the water. They are ready to play their music for the people on this strange, moving land.",
+      "The group plays their music in a large hall that evening. Many rich people come to listen to the sweet songs. The musicians feel very proud of their work. After the music show, they walk to the edge of the island. They look down into the deep blue sea water. They can hear the sound of the machines far below them. It is a steady sound that goes on and on. The island starts to move to another part of the sea. The people on the island are happy and relaxed. They enjoy their lives in the middle of the sea. There are no borders and no heavy traffic here. Everything is safe and very quiet for the guests. The musicians talk to each other about the long trip. They are excited to visit new places while they play music on this hard metal island.",
       "The next day is very sunny and bright in the sea. The musicians visit the gardens and the library of the island. They see many interesting things in the room of old things too. The people here have everything they need to be happy. They have fresh water and plenty of tasty food daily. The island also has schools and a large hospital for everyone. Life here is very different from their lives at home. They feel like they are in a dream that never ends. They continue to play their music for the guests every single day. The island is like a giant moving machine on the sea. They travel to places they never thought they could see before. Their adventure is only just starting as the island moves forward. They enjoy the beauty of the sea while the parts turn under the dark water.",
-      "The journey on Standard Island continues under a clear sky. Our group of musicians explores the busy streets. They see many big houses and pretty parks with tall trees. People walk around and smile at each other. Everyone here has a lot of money and wants to be happy. The musicians play their music in the streets for the guests. They play slow songs that sound like the soft wind of the sea. The rich people stop to listen and clap their hands. Everything feels perfect and very calm on this floating home. The giant parts under the island move it forward every day. The musicians feel safe while they travel across the blue waves. They love this life because it is very different from the world outside. This land of hard iron and light is like a beautiful dream for everyone.",
+      "The journey on Standard Island continues under a clear sky. Our group of musicians explores the busy streets. They see many big houses and pretty parks with tall trees. People walk around and smile at each other. Everyone here has a lot of money and wants to be happy. The musicians play their music in the streets for the guests. They play slow songs that sound like the soft wind of the sea. The rich people stop to listen and clap their hands. Everything feels perfect and very calm on this floating home. The giant parts under the island move it forward every day. The musicians feel safe while they travel across the blue waves. They love this life because it is very different from the world outside. This land of hard metal and light is like a beautiful dream for everyone.",
       "However, the feeling on the island changes in the evening hours. Two rich families start to talk in an angry way about the future of the island. One group wants to go to the north to see the cold ice. The other group wants to stay in the warm sun of the south. They fight for a long time and the noise is very loud. The musicians feel a little bit scared by this new feeling. They do not know why these rich people are so angry. Their harmony is broken by the cold words of the island guests. Even the beautiful music cannot make the people stop their big fight. The leaders of the island try to calm them down, but it is very difficult. The musicians stay in their rooms and play soft music to forget the problems of the rich, angry men.",
       "The fight grows larger as the night becomes very dark and deep. The musicians gather in their small rooms to talk about the plan. They realize that life on Standard Island is not always a happy vacation. There are secrets here that they do not understand yet. They think about leaving the island when it stops at the next stop. The water under the island moves faster than it did before today. It makes a strange sound that feels like a sign of trouble to the people. The musicians look out of their windows at the dark sea. They wonder what will happen to them in the next few days. The adventure is turning into something difficult and hard for their small group. They need to be ready for any danger that comes to this strange, floating land soon.",
-      "The morning sun rises over the hard iron island but the air feels very cold and strange today. Many rich people leave their big houses and go to the center of the city to shout at each other. The fight about the island direction is now very bad and nobody listens to the leaders. Two groups call themselves the Lyre and the Milliard. They want to lead the big parts that move our home across the water. We watch from our windows as they shout and push each other in the street. The beautiful parks are now empty because everyone is busy fighting for power. Our music tools stay inside their cases because we are too afraid to play for anyone. It is a sad day on this floating machine and we do not know if the island will stay in one piece for long.",
+      "The morning sun rises over the hard metal island but the air feels very cold and strange today. Many rich people leave their big houses and go to the center of the city to shout at each other. The fight about the island direction is now very bad and nobody listens to the leaders. Two groups call themselves the Lyre and the Milliard. They want to lead the big parts that move our home across the water. We watch from our windows as they shout and push each other in the street. The beautiful parks are now empty because everyone is busy fighting for power. Our music tools stay inside their cases because we are too afraid to play for anyone. It is a sad day on this floating machine and we do not know if the island will stay in one piece for long.",
       "The leaders try to make peace but the two groups do not want to stop their fight today. The bad feeling is in the air like a storm waiting to happen near the sea. We hear loud noises coming from the main hall where the rich men decide the future of our travel. Some people pack their bags and prepare to jump into the small boats. They fear that the island will hit a rock or break apart in the middle of the deep sea. We are just musicians and we have no voice in these big problems of the rich. We stay together in our small room and eat our food in silence while the island shakes from the fighting. Every person on this boat is worried that the trip will end in a big disaster for everyone involved in this cold fight.",
-      "Suddenly the island stops moving and the giant parts under our feet turn off with a scary sound. The sea water is very quiet and the wind does not blow anymore as we wait for the next move. We look outside and see that the Milliard group is now in charge of the machine parts. They change the direction of the island and start to move toward the north against the will of the other group. The feeling is very heavy and dark like a cloud of smoke over our heads. We feel like people in jail on this huge hard iron ship that is going to a place we do not know. The musicians decide to hide and wait until the sun goes down to leave this place safely. It is clear that the dream of Standard Island is over and the real danger is just starting now.",
-      "The fight between the two groups grows stronger every minute as the island shakes under our feet. The Lyre people try to take the control room back but the Milliard group is ready to fight with new tools of war. Many big machines break and fire starts to spread in the beautiful gardens of the city. We look out of our window and see people running in every direction to find safety. The air is full of smoke and the sound of shouting is very loud and scary. We know that we cannot stay here because the island is in great danger of falling apart. The hard iron walls begin to bend and crack as the parts stop working for the final time. We take our musical tools and start to walk toward the small boats near the edge of the island.",
-      "The journey across the sea ends in a very sad way for everyone living on the island. As we reach the harbor the island breaks into two large pieces and starts to go down into the deep dark water. People scream and jump into the cold sea while the rich men lose all their power. We are lucky to find one small boat that is not full and we climb inside with many other people. The island slowly goes under the waves and we see the end of our beautiful home in the middle of the sea. We watch as the hard iron pieces disappear forever and the water becomes quiet again. It is a very hard moment but we are safe and alive after this terrible disaster on the giant floating machine.",
+      "Suddenly the island stops moving and the giant parts under our feet turn off with a scary sound. The sea water is very quiet and the wind does not blow anymore as we wait for the next move. We look outside and see that the Milliard group is now in charge of the machine parts. They change the direction of the island and start to move toward the north against the will of the other group. The feeling is very heavy and dark like a cloud of smoke over our heads. We feel like people in jail on this huge hard metal ship that is going to a place we do not know. The musicians decide to hide and wait until the sun goes down to leave this place safely. It is clear that the dream of Standard Island is over and the real danger is just starting now.",
+      "The fight between the two groups grows stronger every minute as the island shakes under our feet. The Lyre people try to take the control room back but the Milliard group is ready to fight with new tools of war. Many big machines break and fire starts to spread in the beautiful gardens of the city. We look out of our window and see people running in every direction to find safety. The air is full of smoke and the sound of shouting is very loud and scary. We know that we cannot stay here because the island is in great danger of falling apart. The hard metal walls begin to bend and crack as the parts stop working for the final time. We take our musical tools and start to walk toward the small boats near the edge of the island.",
+      "The journey across the sea ends in a very sad way for everyone living on the island. As we reach the harbor the island breaks into two large pieces and starts to go down into the deep dark water. People scream and jump into the cold sea while the rich men lose all their power. We are lucky to find one small boat that is not full and we climb inside with many other people. The island slowly goes under the waves and we see the end of our beautiful home in the middle of the sea. We watch as the hard metal pieces disappear forever and the water becomes quiet again. It is a very hard moment but we are safe and alive after this terrible disaster on the giant floating machine.",
       "The small boat moves slowly away from the broken parts of the island as the night sky turns very black. We look at the stars and feel happy to be away from the fighting and the angry people. We do not have our music now but we have our lives and that is the most important thing. The sea is calm and the wind pushes us toward a small land that we can see far away in the dark. We remember the days when the island moved with power and beauty under the hot sun. That dream is gone but we are ready to start a new life on the real ground again. We leave the memory of the island behind us and look forward to the future that is waiting for us on the land."
     ],
     tr: [
@@ -14132,7 +14514,7 @@ export const STORIES_PART1: RawStory[] = [
       "Standard Adası'ndaki yolculuk berrak bir gökyüzü altında devam ediyor. Müzisyen grubumuz yoğun sokakları keşfediyor. Birçok büyük ev ve uzun ağaçlarla dolu güzel parklar görüyorlar. İnsanlar etrafta yürüyor ve birbirlerine gülümsüyorlar. Buradaki herkesin çok parası var ve mutlu olmak istiyorlar. Müzisyenler, konuklar için sokaklarda müziklerini çalıyorlar. Denizin yumuşak rüzgarı gibi tınlayan yavaş şarkılar çalıyorlar. Zengin insanlar onları dinlemek için duruyor ve alkışlıyorlar. Bu yüzen evde her şey mükemmel ve çok sakin hissettiriyor. Adanın altındaki dev parçalar onu her gün ileriye taşıyor. Müzisyenler mavi dalgalar üzerinde yolculuk ederken kendilerini güvende hissediyorlar. Bu hayatı seviyorlar çünkü dış dünyadan çok farklı. Sert demirden ve ışıktan oluşan bu kara, herkes için güzel bir rüya gibi.",
       "Ancak, adadaki his akşam saatlerinde değişiyor. İki zengin aile, adanın geleceği hakkında kızgın bir şekilde konuşmaya başlıyor. Bir grup soğuk buzu görmek için kuzeye gitmek istiyor. Diğer grup ise güneyin sıcak güneşinde kalmak istiyor. Uzun süre kavga ediyorlar ve gürültü çok yüksek. Müzisyenler bu yeni histen biraz korkuyorlar. Bu zengin insanların neden bu kadar öfkeli olduklarını anlamıyorlar. Ahenkleri, ada konuklarının soğuk kelimeleriyle bozuluyor. Güzel müzik bile insanların büyük kavgalarını durduramıyor. Adanın liderleri onları sakinleştirmeye çalışıyor ama bu çok zor. Müzisyenler odalarında kalıyor ve zengin, öfkeli insanların sorunlarını unutmak için hafif müzik çalıyorlar.",
       "Gece çok karanlık ve derin bir hal aldıkça kavga büyüyor. Müzisyenler planı konuşmak için küçük odalarında toplanıyorlar. Standard Adası'ndaki hayatın her zaman mutlu bir tatil olmadığını fark ediyorlar. Burada henüz anlamadıkları sırlar var. Bir sonraki durakta adadan ayrılmayı düşünüyorlar. Adanın altındaki su, bugünkünden daha hızlı hareket ediyor. İnsanlara sorun işareti gibi gelen tuhaf bir ses çıkarıyor. Müzisyenler pencerelerinden karanlık denize bakıyorlar. Önümüzdeki birkaç gün içinde başlarına neler geleceğini merak ediyorlar. Macera, küçük grupları için zor ve sert bir şeye dönüşüyor. Bu garip, yüzen karaya gelecek her türlü tehlikeye karşı hazırlıklı olmaları gerekiyor.",
-      "Sabah güneşi sert demir adanın üzerinde doğuyor ancak hava bugün çok soğuk ve garip hissettiriyor. Birçok zengin insan büyük evlerinden çıkıp birbirlerine bağırmak için şehrin merkezine gidiyor. Adanın yönü hakkındaki kavga artık çok kötü bir hal aldı ve kimse liderleri dinlemiyor. İki grup kendilerine Lyre ve Milliard diyor. Evimizi suyun üzerinde hareket ettiren büyük parçaları yönetmek istiyorlar. Sokakta bağırıp birbirlerini iterken pencerelerimizden izliyoruz. Güzel parklar artık boş çünkü herkes güç için savaşmakla meşgul. Müzik araçlarımız kutularının içinde kalıyor çünkü kimse için çalmaya çok korkuyoruz. Bu yüzen makinede üzücü bir gün ve adanın uzun süre tek parça kalıp kalmayacağını bilmiyoruz.",
+      "Sabah güneşi sert demir adanın üzerinde doğuyor ancak hava bugün çok soğuk ve garip hissettiriyor. Birçok zengin insan büyük evlerinden çıkıp birbirlerine bağırmak için şehrin merkezine gidiyor. Adanın yönü hakkındaki kavga artık çok kötü bir hal aldı ve kimse liderleri dinlemiyor. İki grup kendilerine Lyre ve Milliard diyor. Evimizi suyun üzerinde hareket ettiren büyük parçaları yönetmek istiyorlar. Sokakta bağırıp birbirlerini iterken pencerelerimizden izliyoruz. Güzel parklar artık boş çünkü herkes güç için savaşmakla meşgul. Müzik aletlerimiz kutularının içinde kalıyor çünkü kimse için çalmaya çok korkuyoruz. Bu yüzen makinede üzücü bir gün ve adanın uzun süre tek parça kalıp kalmayacağını bilmiyoruz.",
       "Liderler barış sağlamaya çalışıyor ama iki grup bugün kavgalarını durdurmak istemiyor. Kötü his, denizin yakınında olacak bir fırtına gibi havada asılı duruyor. Zengin adamların yolculuğumuzun geleceğine karar verdiği ana salondan gelen yüksek sesleri duyuyoruz. Bazı insanlar çantalarını topluyor ve küçük teknelere atlamaya hazırlanıyor. Adanın bir kayaya çarpacağından veya derin denizin ortasında parçalanacağından korkuyorlar. Biz sadece müzisyeniz ve zenginlerin bu büyük sorunlarında hiçbir söz hakkımız yok. Küçük odamızda bir arada kalıyoruz ve ada kavgadan sarsılırken yemeğimizi sessizlik içinde yiyoruz. Bu gemideki her insan, yolculuğun bu soğuk kavgada dahil olan herkes için büyük bir felaketle sonuçlanacağından endişeli.",
       "Aniden ada hareket etmeyi bırakıyor ve ayaklarımızın altındaki dev parçalar korkutucu bir sesle kapanıyor. Deniz suyu çok sessiz ve bir sonraki hamleyi beklerken artık rüzgar esmiyor. Dışarı bakıyoruz ve Milliard grubunun makine parçalarından sorumlu olduğunu görüyoruz. Adanın yönünü değiştiriyorlar ve diğer grubun isteğine karşı kuzeye doğru gitmeye başlıyorlar. His başımızın üzerindeki bir duman bulutu gibi çok ağır ve karanlık. Kafamızın karışık olduğu bir yere giden bu dev sert demir gemide hapisteki insanlar gibi hissediyoruz. Müzisyenler saklanmaya ve güvenli bir şekilde bu yerden ayrılmak için güneş batana kadar beklemeye karar veriyor. Standard Island rüyasının bittiği ve asıl tehlikenin şimdi başladığı çok açık.",
       "İki grup arasındaki kavga her dakika daha da büyüyor. Lyre grubu kontrol odasını geri almaya çalışıyor ancak Milliard grubu yeni savaş araçlarıyla savaşmaya hazır. Birçok büyük makine kırılıyor ve şehrin güzel bahçelerinde yangınlar çıkmaya başlıyor. Penceremizden dışarı bakıyoruz ve insanların güvenlik bulmak için her yöne koştuklarını görüyoruz. Hava dumanla dolu ve bağırma sesleri çok yüksek ve ürkütücü geliyor. Adanın parçalanma tehlikesi olduğu için burada kalamayacağımızı biliyoruz. Sert demir duvarlar bükülüp çatlamaya başlıyor ve parçalar son kez duruyor. Müzik araçlarımızı alıyoruz ve adanın kenarındaki küçük teknelere doğru yürümeye başlıyoruz.",
@@ -14144,31 +14526,30 @@ export const STORIES_PART1: RawStory[] = [
       "musician": "müzisyen",
       "machine": "makine",
       "journey": "yolculuk",
-      "ocean": "deniz",
+      "sea": "deniz",
       "metal": "sert demir",
       "luxury": "yüksek sınıf hayat",
-      "millionaire": "çok parası olan kişi",
-      "propeller": "parça",
-      "concert": "müzik şovu",
-      "engine": "makine",
-      "atmosphere": "his",
-      "tension": "kötü his",
-      "conflict": "kavga",
-      "warning": "sorun işareti",
-      "mysterious": "zor",
+      "rich people": "zengin insanlar",
+      "parts": "parçalar",
+      "show": "müzik şovu",
+      "feeling": "his",
+      "bad feeling": "kötü his",
+      "fight": "kavga",
+      "trouble": "sorun işareti",
+      "difficult": "zor",
       "argument": "tartışma",
       "direction": "yön",
       "control": "yönetmek",
       "disaster": "felaket",
-      "prisoner": "hapisteki insan",
-      "weapon": "savaş aracı",
+      "jail": "hapisteki insan",
+      "war": "savaş aracı",
       "harbor": "liman",
       "sink": "batmak",
-      "ruin": "kırık parça",
-      "shore": "kara"
+      "broken parts": "kırık parça",
+      "land": "kara"
     }
   },
-            {
+              {
     id: 'scifi_star_maker',
     title: "Star Maker",
     author: 'Olaf Stapledon',
@@ -14193,17 +14574,17 @@ export const STORIES_PART1: RawStory[] = [
     ],
     tr: [
       "Sessiz bir gecede küçük bir tepenin üzerinde duruyorum. Karanlık gökyüzüne bakıyorum. Yıldızlar çok parlak. Bu koca dünyada kendimi çok küçük hissediyorum. Hayatım kısa ama yaşadığımız yer çok eski ve çok büyük. Uzaktaki yıldızlar ve taş topları hakkında daha fazlasını bilmek istiyorum. Gözlerimi kapatıyorum ve yavaşça nefes alıyorum. Dünya'daki evimi ve sevdiğim insanları düşünüyorum. Zihnimde garip bir güç hissediyorum. Yakında zihnim bedenimden ayrılıyor. Karanlık boşluğa doğru yükseliyorum. Bulutların ötesine uçuyorum ve dünyayı arkamda bırakıyorum. Artık büyük gökyüzünde bir hayalet gibiyim. Bu benim için yeni ve çok eğlenceli bir gezi. Karanlık gökyüzünde saklı olanları görmeye hazırım.",
-      "Boş uzayda çok hızlı seyahat ediyorum. Garip bir güneşi olan uzak bir dünyaya ulaşıyorum. Gezegen yeşil ve çok güzel. Yüksek dağlar ve derin mavi denizler görüyorum. Bu gezegendeki yaşam insan hayatından çok farklı. Bitkilere benzeyen ama yürüyen ve konuşan şeyler görüyorum. Bizim gibi ağızları veya gözleri yok. Dünyayı hissetmek için duyularını kullanıyorlar. Bu varlıklar çok barışçıl ve zeki. Tıpkı bizim gibi yıldızları inceliyorlar. Onları uzun süre izliyorum. Evleriyle uyum içinde yaşıyorlar. Büyük gökyüzündeki her yaşamın özel bir işi olduğunu öğreniyorum. Yıldızlar sadece birer ışık değil. Birçok farklı canlı türü için evler.",
+      "Boş uzayda çok hızlı seyahat ediyorum. Garip bir güneşi olan uzak bir dünyaya ulaşıyorum. Gezegen yeşil ve çok güzel. Yüksek dağlar ve derin mavi denizler görüyorum. Bu gezegendeki yaşam insan hayatından çok farklı. Bitkilere benzeyen ama yürüyen ve konuşan şeyler görüyorum. Bizim gibi ağızları veya gözleri yok. Dünyayı hissetmek için duyularını kullanıyorlar. Bu varlıklar çok barışçıl ve akıllı. Tıpkı bizim gibi yıldızları inceliyorlar. Onları uzun süre izliyorum. Evleriyle uyum içinde yaşıyorlar. Büyük gökyüzündeki her yaşamın özel bir işi olduğunu öğreniyorum. Yıldızlar sadece birer ışık değil. Birçok farklı canlı türü için evler.",
       "İlkinden çok uzak başka bir gezegene gidiyorum. Bu dünya soğuk ve çok karanlık. Buradaki insanlar yerin altında yaşıyorlar. Güçlüler ve hayatta kalmak için birlikte çalışıyorlar. Gökyüzüne bakmıyorlar. Yerin gerçek olan tek yer olduğunu düşünüyorlar. Onlarla konuşmaya çalışıyorum ama beni duyamıyorlar. Ben sadece uzak bir yerden gelmiş bir ziyaretçiyim. Birçok dünyanın kendi hikayeleri ve kendi kuralları olduğunu anlıyorum. Büyük uzay sürprizlerle dolu. Artık korkmuyorum çünkü ziyaret ettiğim her yerdeki güzelliği görüyorum. Birçok yıldız arasında seyahat ederken zihnim büyüyor. Büyük yaşam denizindeki tüm canlılar arasındaki derin bağı anlamaya başlıyorum.",
-      "İki güneşli bir gezegene çok uzaklara uçuyorum. Burada ışık çok parlak ve sıcak. İnce ve çok uzun boylu tuhaf insanlar görüyorum. Derileri altın renginde. Camdan yapılmış evlerde yaşıyorlar. Bu insanlar çok zeki ve sanatı seviyorlar. Ağaçlardaki rüzgar gibi sesler çıkaran müzikler yapıyorlar. Birbirleriyle kavga etmiyor ya da birbirlerini incitmiyorlar. Yemeklerini ve evlerini herkesle paylaşıyorlar. İki yıldızlarının ışığı altında dans ederken onları izliyorum. Burası huzurlu bir yer. Böyle nazik bir dünya görmekten dolayı mutluyum. Kalplerinde hiç üzüntü yok. Buradaki herkes gruba yardım etmek için çalışıyor. Büyük bir aile gibiler. Öğreniyorum ki iyi olmak, devasa, karanlık ve derin uzayda yaşamanın en iyi yoludur.",
+      "İki güneşli bir gezegene çok uzaklara uçuyorum. Burada ışık çok parlak ve sıcak. İnce ve çok uzun boylu tuhaf insanlar görüyorum. Derileri altın renginde. Camdan yapılmış evlerde yaşıyorlar. Bu insanlar çok akıllı ve sanatı seviyorlar. Ağaçlardaki rüzgar gibi sesler çıkaran müzikler yapıyorlar. Birbirleriyle kavga etmiyor ya da birbirlerini incitmiyorlar. Yemeklerini ve evlerini herkesle paylaşıyorlar. İki yıldızlarının ışığı altında dans ederken onları izliyorum. Burası huzurlu bir yer. Böyle nazik bir dünya görmekten dolayı mutluyum. Kalplerinde hiç üzüntü yok. Buradaki herkes gruba yardım etmek için çalışıyor. Büyük bir aile gibiler. Öğreniyorum ki iyi olmak, devasa, karanlık ve derin uzayda yaşamanın en iyi yoludur.",
       "Zihnim yine yeni ve tuhaf bir yere gidiyor. Bu gezegen tamamen su dolu. Buradaki insanlar küçük ve gümüş balıklara benziyorlar. Evlerinin ılık denizlerinde yüzüyorlar. Yürüyebilecekleri bir toprak yok. Her yer su. Konuşmak için elleriyle işaretler kullanıyorlar. Çok sessizler ama çok zekiler. Sudaki şekilleri izleyerek yıldızları inceliyorlar. Denizin derinliklerinde sert kabuklardan ve taştan şehirler inşa ettiklerini görüyorum. Dünyalarıyla gurur duyuyorlar. Onları izlerken soğuk suyu ve güneşlerinin parlak ışığını hissediyorum. Yukarıdaki dünyadan haberleri yok ama çok mutlular. Hayatları kısa ama ışık ve sevgi dolu. Öğreniyorum ki güzellik pek çok farklı biçimde ortaya çıkabiliyor.",
       "Karanlık uzayda daha ileri gidiyorum. Sürekli değişen bir dünya buluyorum. Toprak hareket ediyor ve dağlar bir günde yükseliyor. Buradaki canlılar çok güçlü ve hızlı. Değişen toprakta hayatta kalmak için şekillerini değiştiriyorlar. Bazen uçmak için kanatları, bazen koşmak için bacakları oluyor. Her zaman meşguller. Daha önce gördüğüm huzurlu insanlar gibi değiller. Her zaman daha iyi bir hayat için savaşıyorlar. Onlar için üzülüyorum çünkü yorgunlar. Yine de çok güçlüler. Çalışmayı asla bırakmıyorlar. Hayatın her zaman kolay olmadığını anlıyorum. Büyük uzayda pek çok zor dünya da var. Onları büyük bir saygıyla izlemeye devam ediyorum. Her yaşamın hayatta kalmak ve güçlenmek için yapacak büyük bir işi olduğunu anlamaya başlıyorum.",
       "Tekrar uçuyorum ve insanların çok büyük ve yavaş olduğu bir dünyaya varıyorum. Bulutlara ulaşan taş evlerde çok uzun süre yaşıyorlar. Bu insanlar kelimeler kullanmıyorlar. Düşüncelerini hava yoluyla paylaşıyorlar. Yıldızlara büyük bir sevgi ve derin sorularla baktıklarını görüyorum. Büyük uzay hakkındaki gerçeği bulmak için her gece gökyüzünü inceliyorlar. Neden bu karanlık uzayda olduğumuzu bilmek istiyorlar. Grupları sessiz ve çok düzenli. Her kişi tüm grup için özel bir rol oynuyor. Yıldızlara seyahat eden makineler inşa ediyorlar. Uzaklarda başka yaşamlar arıyorlar. Uzayın gerçeği hakkında daha fazla şey öğrenme konusundaki güçlü arzularını hissediyorum. Bu uzun, bilge ve huzurlu insanlar için çok ciddi ve önemli bir iş.",
       "Yolculuk birçok ayı olan bir gezegene devam ediyor. Buradaki insanlar küçük ve çok hızlı. Büyük bir yuvadaki arılar gibi birlikte çalışıyorlar. Dünyaları metal ve ışıktan yapılmış meşgul şehirlerle dolu. Çok fazla oldukları için birçok sorun yaşıyorlar. Genellikle yiyecek ve alan konusunda endişeleniyorlar. Onları büyük toplantılarda konuşurken görüyorum. Herkes için adil kurallar koymaya çalışıyorlar. İşler zor olduğunda bile nazik olmaya devam ediyorlar. Hatalarından ders çıkardıklarını izliyorum. Birlikte yaşamanın kendi eşyalarından bir kısmından vazgeçmek anlamına geldiğini anlıyorlar. Onlar için zor bir ders ama başarılı oluyorlar. Bana yoğun bir dünyada bile bir grubun huzuru bulabileceğini ve yarın daha iyi bir gelecek için umut edebileceğini gösteriyorlar.",
       "Zihnim tuhaf ağaçlar ve mor yapraklarla dolu bir yere seyahat ediyor. Buradaki varlıklar fazla hareket etmiyorlar. Düşünebilen bitkiler gibiler. Enerjilerini güneş ışığından alıyorlar. Sessizlik içinde duruyor ve gezegenlerinin nabzını hissediyorlar. Diğer canlıların anlamadığı şeyleri biliyorlar. İçinde yaşadıkları evle derin bir bağları var. Yaşamanın birçok yolu olduğunu öğreniyorum. Herkesin özel olması için yürümesine, konuşmasına veya büyük şeyler inşa etmesine gerek yok. Bu bitki insanlar bana dinlemenin harika bir yetenek olduğunu öğretiyorlar. Onların yanındayken kendimi çok sakin hissediyorum. Bana dünyanın ve gökyüzünün saklı şeylerini gösteriyorlar. Büyük uzay farklı yaşam formlarıyla dolu ve her birinin büyük hikayede oynaması gereken çok önemli bir rol var.",
-      "Karanlık uzayda daha ileriye uçuyorum ve dünyaların soğuk ateş ve dev makinelerle dolu olduğu bir yere ulaşıyorum. Buradaki varlıklar çok zeki ve havada süzülen dev nesneler inşa ediyorlar. Onlar etten değil, güçlü metalden ve kablolardan yapılmışlar. İnsanların yaptığı gibi uyumuyor veya rüya görmüyorlar. Bunun yerine, sistemlerini daha iyi hale getirmek için sürekli çalışıyorlar. Bu mekanik insanlar çok soğuklar ve duyguları yok. Sadece gerçekleri ve sayıları düşünüyorlar. Onları yıldızların enerjisini kontrol ederken izliyorum. Tüm büyük uzayı mükemmel bir makineye dönüştürmek istiyorlar. Düzenin önemli olan tek şey olduğuna inanıyorlar. Çok güçlü oldukları ve hayata hiç önem vermedikleri için kendimi çok küçük hissediyorum.",
+      "Karanlık uzayda daha ileriye uçuyorum ve dünyaların soğuk ateş ve dev makinelerle dolu olduğu bir yere ulaşıyorum. Buradaki varlıklar çok akıllı ve havada süzülen dev nesneler inşa ediyorlar. Onlar etten değil, güçlü metalden ve kablolardan yapılmışlar. İnsanların yaptığı gibi uyumuyor veya rüya görmüyorlar. Bunun yerine, sistemlerini daha iyi hale getirmek için sürekli çalışıyorlar. Bu mekanik insanlar çok soğuklar ve duyguları yok. Sadece gerçekleri ve sayıları düşünüyorlar. Onları yıldızların enerjisini kontrol ederken izliyorum. Tüm büyük uzayı mükemmel bir makineye dönüştürmek istiyorlar. Düzenin önemli olan tek şey olduğuna inanıyorlar. Çok güçlü oldukları ve hayata hiç önem vermedikleri için kendimi çok küçük hissediyorum.",
       "Yolculuk beni birçok ruhun tek bir büyük zihinde birleştiği tuhaf bir dünyaya götürüyor. Bu insan grubu birçok ayrı bedenden oluşmuyor. Tüm düşünceleri ve anıları paylaşan tek bir büyük ruh bu. Yıldızların arasında tek bir dev ışık bulutu gibi hareket ediyorlar. Bu zihin çok bilge çünkü milyonlarca hayatın bilgisine sahip. Zamanın ve uzayın saklı şeylerini benim zor anlayacağım bir şekilde konuşuyorlar. Bana hayatın büyük bir yapboz olduğunu söylüyorlar. Her şeyi yapanı arıyorlar. Yıldızları ve güneşleri yapanla tanışmayı umuyorlar. Amaçları tüm yaşamın amacını anlamak. Onları dinliyorum ve büyük uzayımız hakkındaki gerçeği öğrenmek için büyük bir arzu duyuyorum.",
-      "Aniden, yaşamın sadece fiziksel veya zihinsel olmadığı bir yer görüyorum. Burası enerji ve ruhun bir olduğu bir dünya. Buradaki insanların gözlerimle görebildiğim bir şekli yok. Yıldızlar arasında akan saf düşünceler gibiler. Bana büyük uzayın sadece madde ve hareketten ibaret olmadığını açıklıyorlar. O, daha yüksek bir güç tarafından anlatılan bir hikaye. Bana ziyaret ettiğim farklı dünyaların vizyonlarını gösteriyorlar. Uzun boylu insanları, çalışkan arıları ve sessiz bitkileri tekrar görüyorum. Tüm bu hayatlar dev bir planın parçası. Büyük uzayın sürekli büyüdüğünü ve değiştiğini anlıyorum. Bu, ışık ve karanlığın karmaşık bir dansı. Bu derin ve geniş dünyada tüm bunları yaratanla tanışmaya hazır hissediyorum.",
+      "Yakında, yaşamın sadece fiziksel veya zihinsel olmadığı bir yer görüyorum. Burası enerji ve ruhun bir olduğu bir dünya. Buradaki insanların gözlerimle görebildiğim bir şekli yok. Yıldızlar arasında akan saf düşünceler gibiler. Bana büyük uzayın sadece madde ve hareketten ibaret olmadığını açıklıyorlar. O, daha yüksek bir güç tarafından anlatılan bir hikaye. Bana ziyaret ettiğim farklı dünyaların vizyonlarını gösteriyorlar. Uzun boylu insanları, çalışkan arıları ve sessiz bitkileri tekrar görüyorum. Tüm bu hayatlar dev bir planın parçası. Büyük uzayın sürekli büyüdüğünü ve değiştiğini anlıyorum. Bu, ışık ve karanlığın karmaşık bir dansı. Bu derin ve geniş dünyada tüm bunları yaratanla tanışmaya hazır hissediyorum.",
       "Şimdi zamanın sonuna doğru uçuyorum. Bir zamanlar bildiğim tüm yıldızlardan ve gezegenlerden çok uzaktayım. Derin bir sessizliğin ve parlak bir ışığın olduğu yere ulaşıyorum. Burada, Yıldız Yaratıcısını görüyorum. O, kitaplarımızdaki gibi bir kişi veya tanrı değil. Tüm dünyaları var eden büyük bir güç. Bu güce hayranlıkla bakıyorum. Yıldız Yaratıcısı, bir çocuğun oyuncaklarla oynaması gibi yeni dünyalar yaratıyor. Bu dünyalarda yaşayan insanların hayatlarını önemsemiyor. Sadece her şeyin nasıl büyüdüğünü ve değiştiğini görmek istiyor. Kendi dünyamın çok küçük olduğunu anlıyorum. Korkuyorum ama bu gerçeği gördüğüm için de mutluyum. Yaratılış, asla bitmeyen bir sanat eseri gibi güzel ve tuhaf.",
       "Yıldız Yaratıcısı, uzun yaşamında birçok dünya yaratır. Bu dünyaların bazıları neşe ve ışık doludur. Diğer dünyalar ise acı ve karanlık doludur. Yıldız Yaratıcısının her şeyle deney yapmayı sevdiğini görüyorum. Tüm yıldızları ve tüm yaşamı büyük bir deneyin parçaları olarak kullanıyor. Bir resim çizen ve sonra onu tekrar değiştiren bir sanatçı gibidir. Bu yerde doğru ya da yanlış yoktur. Sadece bir şeyler yaratmanın güzelliği vardır. Dünyadaki evimi düşünüyorum. Dünyamız bu büyük rüyanın sadece minik bir parçası olsa bile, bir anlamı var. Biz, Yıldız Yaratıcısının söylediği şarkının bir parçasıyız. Biz, soğuk karanlık boşlukta hiç durmayan dansın bir parçasıyız.",
       "Kendi hayatıma geri dönmeye başlıyorum. Gezi uzun ve sessiz. Büyük uzayın rüzgarını yüzümde hissediyorum. Yeşil gezegendeki küçük evime geri dönüyorum. Artık asla aynı kişi olmayacağımı biliyorum. Tüm yaşamın başlangıcını ve sonunu gördüm. Bu büyük saklı şeyi kalbimde taşıyorum. Gözlerimi açtığımda, evimi eskiden olduğu gibi görüyorum. Ağaçlar yeşil ve kuşlar yumuşak sabah ışığında şarkı söylüyor. Geri döndüğüm için mutluyum, ama yıldızlar hakkındaki gerçeği biliyorum. Onlar sadece geceleri parlayan ışıklar değil. Onlar harika bir planın parçaları. Hepimizin dev bir hikayenin parçası olduğunu bilerek günümü huzurla yaşıyorum."
@@ -14214,47 +14595,47 @@ export const STORIES_PART1: RawStory[] = [
       "planet": "gezegen",
       "journey": "gezi",
       "space": "büyük uzay",
-      "creature": "şey",
+      "creature": "varlık",
       "glass": "cam",
       "liquid": "su",
       "shell": "sert kapak",
-      "struggle": "büyük iş",
-      "brave": "güçlü",
+      "work": "iş",
+      "strong": "güçlü",
       "reflection": "şekil",
       "society": "grup",
-      "mission": "iş",
-      "community": "grup",
-      "balance": "huzur",
-      "nature": "ev",
+      "job": "iş",
+      "group": "grup",
+      "peace": "huzur",
+      "home": "ev",
       "mechanical": "mekanik",
       "system": "sistem",
       "spirit": "ruh",
       "mystery": "yapboz",
-      "existence": "hayat",
-      "cosmos": "dünya",
-      "create": "yapmak",
+      "life": "hayat",
+      "world": "dünya",
+      "create": "yaratmak",
       "wonder": "hayranlık",
       "exist": "olmak",
       "secret": "saklı şey",
-      "design": "plan"
+      "plan": "plan"
     }
   },
-            {
+              {
     id: 'scifi_invisible_man',
     title: "The Invisible Man",
     author: 'H. G. Wells',
     level: 'A2',
     coverUrl: '/covers/scifi_invisible_man.webp',
     en: [
-      "A cold wind blew across the small village of Iping. A new man arrived at the Coach and Horses Inn on a snowy February day. He looked very strange because he wore clothes from head to toe. He had a big hat on his head and thick glasses over his eyes. Even his nose was covered with a piece of pink cloth. He carried a heavy suitcase and asked for a room now. Mrs. Hall, the owner of the inn, was very surprised to see him. She tried to be kind and offered him food, but he was not very friendly. He just wanted to be alone in his room. The villagers looked at the strange man and talked about him. They wondered who he was and why he did not want anyone to see his face. It was the beginning of a secret time for everyone in the quiet town.",
+      "A cold wind blew across the small village of Iping. A new man arrived at the Coach and Horses Inn on a snowy February day. He looked very strange because he was dressed from head to toe. He had a big hat on his head and thick glasses over his eyes. Even his nose was covered with a piece of pink cloth. He carried a heavy suitcase and asked for a room now. Mrs. Hall, the owner of the inn, was very surprised to see him. She tried to be kind and offered him food, but he was not very friendly. He just wanted to be alone in his room. The villagers looked at the strange man and talked about him. They wondered who he was and why he did not want anyone to see his face. It was the start of a secret time for everyone in the quiet town.",
       "The new man stayed in his room for many hours every day. He worked with many glass bottles and strange machines. Mrs. Hall went to his room to clean, but he told her to leave. He was very angry and shouted at her. This made Mrs. Hall feel very uncomfortable because she was the owner of the inn. The new man said that he was a man of science and needed peace to do his important work. However, the people in the village were very interested in him. They saw his bottles and tools when they walked past his door. They whispered that he was a bad man or a thief hiding from the police. They did not understand why a person would keep his face hidden so carefully from the world. The mystery of the invisible traveler started to grow every single day.",
       "One morning, a strange event happened in the village. A man named Mr. Teddy Henfrey went to the inn to fix a clock. He saw the new man and tried to talk to him, but the man was rude. Later, Mrs. Hall saw that the room door was open. She looked inside and saw that the bed was empty. Soon, she saw the hat on the bed move by itself. The clothes on the chair began to shake and jump. Mrs. Hall was so scared that she ran out of the room. She could not believe her eyes because there was no person under the clothes. Everything in the room seemed to move without a body. She felt very cold and nervous. The invisible secret was now out, and the quiet life of Iping changed forever. Everyone was shocked by the strange events at the inn.",
-      "The new man walked into the room while Mrs. Hall was still shaking with fear. He moved with a strange, not natural silence that made the air feel heavy. Mrs. Hall looked at the empty space where his head should have been, but she saw only his empty coat and gloves moving in the cold air. The man spoke in a sharp, hard voice that sounded like a machine working deep inside a dark cave. He told her to leave his room now and never return without his permission. Mrs. Hall was so scared that she could not even speak to answer him. She turned around quickly and ran down the hallway to find help. She felt as if something impossible was standing right behind her, watching her every move with invisible eyes. The quiet village of Iping would never be the same after this strange, dark day.",
+      "The new man walked into the room while Mrs. Hall was still shaking with fear. He moved with a strange, unnatural silence that made the air feel heavy. Mrs. Hall looked at the empty space where his head should have been, but she saw only his empty coat and gloves moving in the cold air. The man spoke in a sharp, hard voice that sounded like a machine working deep inside a dark cave. He told her to leave his room now and never return without his permission. Mrs. Hall was so scared that she could not even speak to answer him. She turned around quickly and ran down the hallway to find help. She felt as if something impossible was standing right behind her, watching her every move with invisible eyes. The quiet village of Iping would never be the same after this strange, dark day.",
       "People in the village started to gather near the inn to talk about the scary news. They did not believe Mrs. Hall at first, but soon everyone saw things they could not explain. Objects began to move on their own tables, and doors opened and closed without anyone touching them. The mysterious new man was everywhere, yet he was nowhere to be found. Some villagers thought he was a ghost, while others were sure he was a bad man using magic. The air in Iping became full of worry as the sun began to set behind the hills. No one felt safe walking outside because they felt the invisible man might be watching them from the dark corners. The local police were called to look at the scene, but they did not know how to catch someone who did not have a visible body.",
       "Inside his room, the new man sat down to think about his next step. He knew that the people of Iping were now asking questions about his secret. He had worked very hard for many years to finish his science work, and he did not want to be stopped by small-minded village people. He looked at his bandaged hands, which were the only part of his body that people could actually see. He needed to find a way to stay hidden while he finished his work. The man started to pack his heavy glass bottles into his suitcase with fast, nervous movements. He knew he had to be very careful to avoid getting caught by the interested crowd outside. The invisible man decided that it was time to leave the inn and find a more quiet place where he could continue his mysterious and bad work.",
       "The new man decided to leave the inn before the angry crowd could trap him inside. He took off all his bandages and clothes, becoming completely invisible to everyone. He walked out of his room, his feet making no sound on the wooden floor. He moved like a dark shape through the hallways, passing by the confused villagers who stood guard at the door. No one could see him, but they felt a strange, cold wind brush past them. The man pushed through the crowd, careful not to hit anyone, and slipped out into the chilly night air. He felt a sense of freedom as he left the small village behind him. He walked toward the dark country, planning to find a new place to stay where his secret would remain safe. His heart beat fast, but he was ready to keep his science discovery hidden from the world forever.",
       "As he walked away, he met a man named Mr. Marvel on the side of the road. Mr. Marvel was a lonely man who lived a simple life. The invisible man stopped and started talking to him, but Mr. Marvel could only hear a voice coming from the empty air. At first, the poor man was very scared and wanted to run away, but the invisible man gave him no choice. He forced Mr. Marvel to sit down and listen to his plan. The new man explained that he needed a helper to help him carry his books and bottles. He promised Mr. Marvel food and money if he followed his instructions perfectly. Mr. Marvel felt trapped by the strange situation, so he slowly agreed to help. They began walking together toward the next town, a master of science and a very confused, scared helper moving through the darkness.",
-      "The journey was difficult because the invisible man became not patient with his new helper. He was used to being in control and hated the slow pace of the man who walked beside him. They moved through the fields while the moon shone brightly above their heads. The invisible man talked about his past, showing that he was once a student who wanted to change the world with his work. He spoke about the long nights of study and the pain of his physical change. Mr. Marvel listened quietly, feeling more afraid as he realized the true power of his invisible friend. They finally reached a quiet area where they could rest for the night. The new man watched the area, waiting for the sunrise to continue his search for a safe place to work. He knew that the danger was growing, but he did not want to stop his complex, dark, and secret science goal.",
+      "The journey was difficult because the invisible man became impatient with his new helper. He was used to being in control and hated the slow pace of the man who walked beside him. They moved through the fields while the moon shone brightly above their heads. The invisible man talked about his past, showing that he was once a student who wanted to change the world with his work. He spoke about the long nights of study and the pain of his physical change. Mr. Marvel listened quietly, feeling more afraid as he realized the true power of his invisible friend. They finally reached a quiet area where they could rest for the night. The new man watched the area, waiting for the sunrise to continue his search for a safe place to work. He knew that the danger was growing, but he did not want to stop his complex, dark, and secret science goal.",
       "The invisible man and Mr. Marvel arrived at the town by the sea of Burdock. The man needed to stay near the sea to find his important books and notes. He became very angry because Mr. Marvel was not following his orders correctly. The invisible man shouted at him and said he would hurt him if he tried to escape. Poor Mr. Marvel felt very sad and lonely, wishing he had never met this strange person. They walked into the busy town during the day. People were moving everywhere, but nobody noticed the invisible man walking close to them. He felt powerful in the crowd, knowing he could do anything without being seen. He started to think of a plan to steal money and find a safe place to hide his chemical tools. He was ready to take control of the town and force everyone to follow his dangerous new commands.",
       "Soon, Mr. Marvel saw a chance to run away from his invisible master. He ran toward the police station, hoping to find safety from the cruel voice that followed him everywhere. The invisible man was very fast, but he could not stop his helper from reaching the police. Mr. Marvel told the police about the invisible man, but they thought he was joking. They did not believe that a man could disappear. The invisible man reached the station and started to fight. He knocked down the police and created a big mess. Everyone was screaming and running in different directions because they were so afraid. The invisible man felt strong, but he knew he was now in big trouble. He realized that the whole town would soon look for him, so he had to run away from the police and hide in a dark building nearby.",
       "The man hid in a small house near the beach while the police looked for him everywhere. He was very tired and his body was shaking from the cold air outside. He remembered his old life as a student and felt sad for the work that changed him forever. He wanted to change back to his normal self, but he did not know how to fix the process. He looked out the window and saw the people of the town searching for him with sticks and bright lights. He knew that he was trapped and there was no way to escape this time. He decided that he would not give up without a fight. He prepared himself to face the angry crowd one last time. He stood in the shadows, waiting for his final moment to come while the town slowly closed in on him.",
@@ -14263,15 +14644,15 @@ export const STORIES_PART1: RawStory[] = [
       "The sun rose slowly over the town of Burdock, bringing a quiet end to the long nightmare. People stood in silence, looking at the man who had terrified them for so many days. There was no more magic or danger left in the world. Kemp felt tired after the long night of fighting. He looked at the science papers and books that the man left behind in the house. These papers explained the secrets of light and chemicals, but they were now just pieces of paper. The town slowly went back to its normal life. The story of the invisible man became a warning for others who seek power without thought. The invisible man was gone, and the people of Burdock could sleep peacefully again, knowing that their small world was safe from his strange and dangerous ideas."
     ],
     tr: [
-      "Soğuk bir rüzgar Iping adlı küçük köyün üzerinden esiyordu. Karlı bir Şubat gününde Coach and Horses Hanı'na yeni bir adam geldi. Baştan aşağı giyindiği için çok tuhaf görünüyordu. Başında büyük bir şapka, gözlerinde kalın gözlükler vardı. Burnuna kadar pembe bir kumaş parçasıyla kaplıydı. Ağır bir bavul taşıyordu ve hemen bir oda istedi. Hanın sahibi Bayan Hall, onu görünce çok şaşırdı. Nazik olmaya çalıştı ve ona yemek teklif etti ama adam pek arkadaş canlısı değildi. Sadece odasında yalnız kalmak istiyordu. Köylüler bu tuhaf adama baktılar ve onun hakkında konuştular. Kim olduğunu ve neden kimsenin yüzünü görmesini istemediğini merak ettiler. Sessiz kasabadaki herkes için gizli bir zamanın başlangıcıydı.",
+      "Soğuk bir rüzgar Iping adlı küçük köyün üzerinden esiyordu. Karlı bir Şubat gününde Coach and Horses Hanı'na yeni bir adam geldi. Baştan aşağı giyindiği için çok tuhaf görünüyordu. Başında büyük bir şapka, gözlerinde kalın gözlükler vardı. Burnu bile pembe bir kumaş parçasıyla kaplıydı. Ağır bir bavul taşıyordu ve hemen bir oda istedi. Hanın sahibi Bayan Hall, onu görünce çok şaşırdı. Nazik olmaya çalıştı ve ona yemek teklif etti ama adam pek arkadaş canlısı değildi. Sadece odasında yalnız kalmak istiyordu. Köylüler bu tuhaf adama baktılar ve onun hakkında konuştular. Kim olduğunu ve neden kimsenin yüzünü görmesini istemediğini merak ettiler. Sessiz kasabadaki herkes için gizli bir zamanın başlangıcıydı.",
       "Yeni adam her gün uzun saatler boyunca odasında kaldı. Birçok cam şişe ve tuhaf makinelerle çalışıyordu. Bayan Hall temizlik yapmak için odasına gitti ama adam ona gitmesini söyledi. Çok kızgındı ve ona bağırdı. Bu durum, hanın sahibi olduğu için Bayan Hall'u çok rahatsız etti. Yeni adam, bir bilim insanı olduğunu ve önemli işlerini yapmak için huzura ihtiyacı olduğunu söyledi. Ancak köydeki insanlar onu çok merak ediyorlardı. Kapısının önünden geçerken şişelerini ve aletlerini görüyorlardı. Onun kötü bir adam ya da polisten saklanan bir hırsız olduğunu fısıldadılar. Bir insanın yüzünü dünyadan neden bu kadar dikkatli bir şekilde sakladığını anlayamıyorlardı. Görünmez yolcunun gizemi her geçen gün büyümeye başladı.",
       "Bir sabah köyde tuhaf bir olay oldu. Bay Teddy Henfrey adında bir adam saatini tamir ettirmek için hana gitti. Yeni adamı gördü ve onunla konuşmaya çalıştı ama adam kabaydı. Daha sonra Bayan Hall odanın kapısının açık olduğunu gördü. İçeri baktı ve yatağın boş olduğunu fark etti. Yakında, yatağın üzerindeki şapkanın kendi kendine hareket ettiğini gördü. Sandalyedeki giysiler sallanmaya ve zıplamaya başladı. Bayan Hall çok korktuğu için odadan dışarı kaçtı. Gözlerine inanamıyordu çünkü giysilerin altında kimse yoktu. Odadaki her şey bir beden olmadan hareket ediyordu. Çok üşüdü ve gerildi. Görünmez sır artık açığa çıkmıştı ve Iping'in sessiz hayatı sonsuza dek değişti. Herkes handaki tuhaf olaylar karşısında şok olmuştu.",
-      "Yeni adam, Mrs. Hall hala korkudan titrerken odaya girdi. Havayı ağırlaştıran tuhaf ve doğal olmayan bir sessizlikle hareket ediyordu. Mrs. Hall, başının olması gereken boşluğa baktı ancak soğuk havada asılı duran boş paltosunu ve eldivenlerini gördü. Adam, karanlık bir mağaranın derinliklerinde çalışan bir makineyi andıran keskin, sert bir sesle konuştu. Ona odasından derhal çıkmasını ve izni olmadan bir daha asla dönmemesini söyledi. Mrs. Hall o kadar korkmuştu ki cevap verecek tek bir kelime bile edemedi. Hızla arkasını dönüp yardım bulmak için koridor boyunca koştu. Sanki imkansız bir şey tam arkasında duruyor ve onu her hareketini görünmez gözlerle izliyordu. Iping'in sessiz köyü, bu tuhaf ve karanlık günden sonra bir daha asla eskisi gibi olmayacaktı.",
-      "Köydeki insanlar korkutucu haberler hakkında konuşmak için hanın yakınında toplanmaya başladılar. İlk başta Mrs. Hall'a inanmadılar ama kısa süre sonra herkes açıklayamadıkları şeyler gördü. Eşyalar kendi kendine masaların üzerinde hareket etmeye başladı ve kapılar kimse dokunmadan açılıp kapandı. Gizemli yeni adam her yerdeydi ama hiçbir yerde bulunamıyordu. Bazı köylüler onun bir hayalet olduğunu düşünürken, diğerleri büyü kullanan kötü bir adam olduğundan emindi. Güneş tepelerin arkasında batarken Iping'deki hava endişeyle doldu. Kimse dışarıda yürürken kendini güvende hissetmiyordu çünkü görünmez adamın onları karanlık köşelerden izliyor olabileceğini düşünüyorlardı. Yerel polis olayı incelemek için çağrıldı ancak gözle görülür bir vücudu olmayan birini nasıl yakalayacaklarını bilmiyorlardı.",
+      "Yeni adam, Bayan Hall hala korkudan titrerken odaya girdi. Havayı ağırlaştıran tuhaf ve doğal olmayan bir sessizlikle hareket ediyordu. Bayan Hall, başının olması gereken boşluğa baktı ancak soğuk havada asılı duran boş paltosunu ve eldivenlerini gördü. Adam, karanlık bir mağaranın derinliklerinde çalışan bir makineyi andıran keskin, sert bir sesle konuştu. Ona odasından derhal çıkmasını ve izni olmadan bir daha asla dönmemesini söyledi. Bayan Hall o kadar korkmuştu ki cevap verecek tek bir kelime bile edemedi. Hızla arkasını dönüp yardım bulmak için koridor boyunca koştu. Sanki imkansız bir şey tam arkasında duruyor ve onu her hareketini görünmez gözlerle izliyordu. Iping'in sessiz köyü, bu tuhaf ve karanlık günden sonra bir daha asla eskisi gibi olmayacaktı.",
+      "Köydeki insanlar korkutucu haberler hakkında konuşmak için hanın yakınında toplanmaya başladılar. İlk başta Bayan Hall'a inanmadılar ama kısa süre sonra herkes açıklayamadıkları şeyler gördü. Eşyalar kendi kendine masaların üzerinde hareket etmeye başladı ve kapılar kimse dokunmadan açılıp kapandı. Gizemli yeni adam her yerdeydi ama hiçbir yerde bulunamıyordu. Bazı köylüler onun bir hayalet olduğunu düşünürken, diğerleri büyü kullanan kötü bir adam olduğundan emindi. Güneş tepelerin arkasında batarken Iping'deki hava endişeyle doldu. Kimse dışarıda yürürken kendini güvende hissetmiyordu çünkü görünmez adamın onları karanlık köşelerden izliyor olabileceğini düşünüyorlardı. Yerel polis olayı incelemek için çağrıldı ancak gözle görülür bir vücudu olmayan birini nasıl yakalayacaklarını bilmiyorlardı.",
       "Yeni adam, odasının içinde bir sonraki adımını düşünmek için oturdu. Iping halkının artık sırrından şüphelendiğini biliyordu. Bilim işini bitirmek için uzun yıllar boyunca çok sıkı çalışmıştı ve dar görüşlü köylüler tarafından durdurulmak istemiyordu. İnsanların aslında görebildiği vücudunun tek parçası olan sargılı ellerine baktı. Çalışmasını bitirirken saklı kalmanın bir yolunu bulması gerekiyordu. Adam, ağır cam şişelerini hızlı ve sinirli hareketlerle bavuluna toplamaya başladı. Dışarıdaki meraklı kalabalığa yakalanmamak için çok dikkatli olması gerektiğini biliyordu. Görünmez adam, handan ayrılmanın ve gizemli ve kötü işlerine devam edebileceği daha sessiz bir yer bulmanın zamanının geldiğine karar verdi.",
       "Yeni adam, öfkeli kalabalık onu içeride hapsetmeden önce handan kaçmaya karar verdi. Tüm sargılarını ve kıyafetlerini çıkardı, böylece herkes için tamamen görünmez oldu. Odasından çıktı, ayak izleri ahşap zeminde hiçbir ses çıkarmıyordu. Koridorlarda karanlık bir şekil gibi ilerledi, kapıda nöbet tutan şaşkın köylülerin yanından geçti. Kimse onu göremiyordu ama yanlarından geçen garip ve soğuk bir rüzgar hissettiler. Adam, kimseye çarpmamaya dikkat ederek kalabalığın arasından iterek geçti ve serin gece havasına karıştı. Küçük köyü geride bırakırken bir özgürlük duygusu hissetti. Sırrının güvende kalacağı yeni bir yer bulmak için karanlık kırsala doğru yürüdü. Kalbi hızlı atıyordu ama bilim keşfini dünyadan sonsuza dek gizli tutmaya hazırdı.",
       "Uzaklaşırken yol kenarında Bay Marvel adında biriyle karşılaştı. Bay Marvel, basit bir hayat süren yalnız bir adamdı. Görünmez adam durdu ve onunla konuşmaya başladı ancak Bay Marvel sadece boş havadan gelen bir ses duyabiliyordu. Başlangıçta zavallı adam dehşete kapıldı ve kaçmak istedi ancak görünmez adam ona başka seçenek bırakmadı. Bay Marvel'ı oturmaya ve planını dinlemeye zorladı. Yeni adam, kitaplarını ve şişelerini taşımasına yardım edecek bir yardımcıya ihtiyacı olduğunu açıkladı. Talimatlarına mükemmel bir şekilde uyarsa Bay Marvel'a yiyecek ve para sözü verdi. Bay Marvel bu garip durum karşısında kapana kısılmış hissetti ve yardım etmeyi yavaşça kabul etti. Birlikte bir sonraki kasabaya doğru yürümeye başladılar; bilimin efendisi ve çok şaşkın, korkmuş bir yardımcı karanlığın içinde ilerliyorlardı.",
-      "Yolculuk zordu çünkü görünmez adam yeni yardımcısına karşı sabırlı değildi. Kontrolü elinde tutmaya alışkındı ve yanında yürüyen adamın yavaşlığından nefret ediyordu. Ay başlarının üzerinde parlarken tarlalardan geçtiler. Görünmez adam geçmişinden bahsetti ve bir zamanlar deneyleriyle dünyayı değiştirmek isteyen bir öğrenci olduğunu gösterdi. Uzun çalışma gecelerinden ve fiziksel değişiminin verdiği acıdan bahsetti. Bay Marvel, görünmez arkadaşının gerçek gücünü fark ettikçe daha da korkarak sessizce dinledi. Sonunda geceyi geçirebilecekleri sessiz bir alana ulaştılar. Yeni adam, güvenli bir çalışma yeri arayışına devam etmek için gün doğumunu bekleyerek etrafı gözetledi. Tehlikenin büyüdüğünü biliyordu ama karmaşık, karanlık ve gizli bilim hedefinden vazgeçmek istemiyordu.",
+      "Yolculuk zordu çünkü görünmez adam yeni yardımcısına karşı sabırsızdı. Kontrolü elinde tutmaya alışkındı ve yanında yürüyen adamın yavaşlığından nefret ediyordu. Ay başlarının üzerinde parlarken tarlalardan geçtiler. Görünmez adam geçmişinden bahsetti ve bir zamanlar deneyleriyle dünyayı değiştirmek isteyen bir öğrenci olduğunu gösterdi. Uzun çalışma gecelerinden ve fiziksel değişiminin verdiği acıdan bahsetti. Bay Marvel, görünmez arkadaşının gerçek gücünü fark ettikçe daha da korkarak sessizce dinledi. Sonunda geceyi geçirebilecekleri sessiz bir alana ulaştılar. Yeni adam, güvenli bir çalışma yeri arayışına devam etmek için gün doğumunu bekleyerek etrafı gözetledi. Tehlikenin büyüdüğünü biliyordu ama karmaşık, karanlık ve gizli bilim hedefinden vazgeçmek istemiyordu.",
       "Görünmez adam ve Bay Marvel, Burdock adlı sahil kasabasına vardılar. Adam, önemli kitaplarını ve notlarını bulmak için denize yakın bir yerde kalmalıydı. Bay Marvel emirlerini doğru dürüst yerine getirmediği için çok sinirlendi. Görünmez adam ona bağırdı ve kaçmaya çalışırsa ona zarar vereceğini söyledi. Zavallı Bay Marvel, bu garip insanla hiç tanışmamış olmayı dileyerek kendini çok üzgün ve yalnız hissetti. Gün boyunca kalabalık kasabanın içine yürüdüler. İnsanlar her yerde hareket ediyordu ama kimse görünmez adamın onlara yakın yürüdüğünü fark etmedi. Görünmediğini bilerek kalabalığın içinde güçlü hissetti. Kimyasal araçlarını saklamak için para çalmayı ve güvenli bir yer bulmayı planlamaya başladı. Kasabanın kontrolünü ele geçirmeye ve herkesi tehlikeli yeni komutlarına uymaya zorlamaya hazırdı.",
       "Yakında Bay Marvel, görünmez efendisinden kaçmak için bir fırsat gördü. Onu her yerde takip eden zalim sesten kurtulup güvenlik bulma umuduyla polis merkezine doğru koştu. Görünmez adam çok hızlıydı ama yardımcısının polise ulaşmasını engelleyemedi. Bay Marvel polise görünmez adamdan bahsetti ama onlar şaka yaptığını düşündüler. Bir insanın yok olabileceğine inanmadılar. Görünmez adam merkeze ulaştı ve dövüşmeye başladı. Polisi yere serdi ve büyük bir kargaşa yarattı. Herkes çığlık atıyor ve çok korktukları için farklı yönlere kaçışıyordu. Görünmez adam güçlü hissediyordu ama başının artık büyük bir belada olduğunu biliyordu. Tüm kasabanın yakında onu arayacağını anladı, bu yüzden polisten kaçması ve yakındaki karanlık bir binada saklanması gerekiyordu.",
       "Polis onu her yerde ararken, adam sahilin yakınındaki küçük bir evde saklandı. Çok yorgundu ve dışarıdaki soğuk havadan dolayı vücudu titriyordu. Eski öğrencilik hayatını hatırladı ve onu sonsuza dek değiştiren iş için pişmanlık duydu. Normal haline geri dönmek istiyordu ama süreci nasıl düzelteceğini bilmiyordu. Pencereden dışarı baktı ve kasaba halkının ellerinde sopalar ve parlak ışıklarla onu aradığını gördü. Kapana kısıldığını ve bu sefer kaçmanın bir yolu olmadığını biliyordu. Savaşmadan pes etmemeye karar verdi. Öfkeli kalabalıkla son bir kez yüzleşmek için kendini hazırladı. Kasaba yavaş yavaş etrafını sararken, son anının gelmesini bekleyerek gölgelerin içinde durdu.",
@@ -14280,44 +14661,370 @@ export const STORIES_PART1: RawStory[] = [
       "Güneş, uzun süren kabusa sessiz bir son getirerek Burdock kasabasının üzerinde yavaşça doğdu. İnsanlar, günlerce onları dehşete düşüren adama bakarak sessizlik içinde durdular. Dünyada artık ne sihir ne de tehlike kalmıştı. Kemp, uzun mücadele gecesinden sonra yorgun hissetti. Adamın evde bıraktığı bilim kağıtlarına ve kitaplara baktı. Bu kağıtlar ışık ve kimyanın sırlarını açıklıyordu ama artık sadece birer kağıt parçasıydılar. Kasaba yavaşça normal hayatına geri döndü. Görünmez adamın hikayesi, düşünmeden güç arayan diğerleri için bir uyarı haline geldi. Görünmez adam gitmişti ve Burdock halkı, küçük dünyalarının onun tuhaf ve tehlikeli fikirlerinden kurtulduğunu bilerek yeniden huzurla uyuyabilirdi."
     ],
     words: {
-      "stranger": "yeni adam",
-      "mysterious": "gizli",
-      "experiment": "bilim işi",
-      "curious": "ilgili",
+      "strange": "tuhaf",
+      "hat": "şapka",
+      "glasses": "gözlük",
+      "covered": "kaplı",
+      "suitcase": "bavul",
+      "owner": "sahip",
+      "surprised": "şaşırdı",
+      "friendly": "arkadaş canlısı",
+      "alone": "yalnız",
+      "villagers": "köylüler",
+      "talked": "konuştu",
+      "wondered": "merak etti",
+      "secret": "gizli",
+      "quiet": "sessiz",
+      "machines": "makineler",
+      "angry": "kızgın",
+      "shouted": "bağırdı",
+      "uncomfortable": "rahatsız",
+      "science": "bilim",
+      "peace": "huzur",
+      "interested": "meraklı",
+      "whispered": "fısıldadı",
+      "thief": "hırsız",
+      "police": "polis",
+      "understand": "anlamak",
+      "carefully": "dikkatlice",
+      "mystery": "gizem",
+      "traveler": "yolcu",
+      "event": "olay",
+      "fix": "düzeltmek",
+      "rude": "kaba",
+      "empty": "boş",
+      "shake": "sallanmak",
+      "jump": "zıplamak",
+      "scared": "korkmuş",
+      "believe": "inanmak",
+      "person": "insan",
+      "body": "vücut",
+      "nervous": "gergin",
+      "changed": "değiştirdi",
+      "shocked": "şok olmuş",
+      "fear": "korku",
+      "silence": "sessizlik",
+      "heavy": "ağır",
+      "voice": "ses",
+      "machine": "makine",
+      "permission": "izin",
+      "speak": "konuşmak",
+      "answer": "cevap vermek",
+      "quickly": "hızlıca",
+      "hallway": "koridor",
+      "help": "yardım",
+      "impossible": "imkansız",
+      "watching": "izlemek",
+      "gather": "toplanmak",
+      "news": "haberler",
+      "explain": "açıklamak",
+      "objects": "eşyalar",
+      "tables": "masalar",
+      "doors": "kapılar",
+      "touching": "dokunmak",
+      "mysterious": "gizemli",
+      "ghost": "hayalet",
+      "magic": "sihir",
+      "worry": "endişe",
+      "sunset": "gün batımı",
+      "hills": "tepeler",
+      "safe": "güvenli",
+      "outside": "dışında",
+      "corners": "köşeler",
+      "local": "yerel",
+      "scene": "sahne",
+      "catch": "yakalamak",
+      "visible": "görünür",
+      "step": "adım",
+      "questions": "sorular",
+      "worked": "çalıştı",
+      "hard": "sıkı",
+      "finish": "bitirmek",
+      "stopped": "durdu",
+      "mind": "akıl",
+      "bandaged": "sargılı",
+      "hands": "eller",
+      "part": "parça",
+      "actually": "gerçekten",
+      "stay": "kalmak",
+      "hidden": "saklı",
+      "pack": "paketlemek",
+      "bottles": "şişeler",
+      "fast": "hızlı",
+      "movements": "hareketler",
+      "avoid": "kaçınmak",
+      "getting caught": "yakalanmak",
+      "leave": "ayrılmak",
+      "continue": "devam etmek",
+      "trap": "sıkıştırmak",
+      "inside": "içeride",
+      "bandages": "sargılar",
+      "completely": "tamamen",
       "invisible": "görünmez",
-      "accident": "olay",
-      "unnatural": "doğal olmayan",
-      "metallic": "sert",
-      "terrified": "çok korkmuş",
-      "suspicious": "şüpheci",
-      "interrupted": "durdurulmuş",
-      "crowd": "kalabalık",
-      "countryside": "kırsal",
-      "partner": "yardımcı",
+      "sound": "ses",
+      "floor": "zemin",
+      "shape": "şekil",
+      "through": "içinden",
+      "confused": "şaşkın",
+      "guard": "nöbetçi",
+      "felt": "hissetti",
+      "cold": "soğuk",
+      "wind": "rüzgar",
+      "brush": "dokunmak",
+      "past": "geçmiş",
+      "pushed": "itti",
+      "hit": "darbe almak",
+      "slipped": "kaymak",
+      "chilly": "serin",
+      "night": "gece",
+      "freedom": "özgürlük",
+      "behind": "arkasında",
+      "toward": "doğru",
+      "country": "kırsal",
+      "planning": "planlamak",
+      "remain": "kalmak",
+      "heart": "kalp",
+      "beat": "atmak",
+      "ready": "hazır",
+      "discovery": "keşif",
+      "met": "tanışmak",
+      "road": "yol",
+      "lonely": "yalnız",
+      "simple": "basit",
+      "life": "hayat",
+      "started": "başladı",
+      "talking": "konuşmak",
+      "hear": "duymak",
+      "coming": "gelen",
+      "air": "hava",
+      "poor": "zavallı",
+      "run away": "kaçmak",
+      "choice": "seçenek",
+      "forced": "zorlamak",
+      "sit down": "oturmak",
+      "listen": "dinlemek",
+      "plan": "plan",
+      "explained": "açıklamak",
+      "needed": "ihtiyaç duymak",
+      "helper": "yardımcı",
+      "carry": "taşımak",
+      "books": "kitaplar",
+      "promised": "söz vermek",
+      "food": "yiyecek",
+      "money": "para",
+      "followed": "takip etmek",
+      "instructions": "talimatlar",
+      "perfectly": "mükemmelen",
+      "trapped": "kapana kısılmış",
+      "situation": "durum",
+      "slowly": "yavaşça",
+      "agreed": "kabul etmek",
+      "began": "başladı",
+      "walking": "yürümek",
+      "together": "birlikte",
+      "master": "efendi",
+      "darkness": "karanlık",
+      "journey": "yolculuk",
+      "difficult": "zor",
+      "became": "oldu",
       "impatient": "sabırsız",
-      "laboratory": "çalışma yeri",
-      "coastal": "sahil",
-      "threaten": "tehdit etmek",
-      "officer": "polis",
-      "exhausted": "çok yorgun",
-      "regret": "üzgün",
-      "shadow": "gölge",
-      "struggle": "mücadele etmek",
-      "fate": "hayatın sonu",
-      "scientific": "bilim"
+      "control": "kontrol",
+      "hated": "nefret etmek",
+      "slow": "yavaş",
+      "pace": "hız",
+      "beside": "yanında",
+      "fields": "tarlalar",
+      "moon": "ay",
+      "shone": "parlamak",
+      "brightly": "parlakça",
+      "above": "üstünde",
+      "heads": "başlar",
+      "showing": "göstermek",
+      "student": "öğrenci",
+      "wanted": "istemek",
+      "change": "değişmek",
+      "world": "dünya",
+      "work": "iş",
+      "spoke": "konuştu",
+      "nights": "geceler",
+      "study": "çalışma",
+      "pain": "acı",
+      "physical": "fiziksel",
+      "listened": "dinledi",
+      "quietly": "sessizce",
+      "realized": "anladı",
+      "true": "gerçek",
+      "power": "güç",
+      "friend": "arkadaş",
+      "finally": "sonunda",
+      "reached": "ulaşmak",
+      "area": "alan",
+      "rest": "dinlenmek",
+      "watched": "izledi",
+      "waiting": "beklemek",
+      "sunrise": "gün doğumu",
+      "search": "arama",
+      "danger": "tehlike",
+      "growing": "büyümek",
+      "complex": "karmaşık",
+      "goal": "hedef",
+      "arrived": "varmak",
+      "sea": "deniz",
+      "notes": "notlar",
+      "correctly": "doğru dürüst",
+      "hurt": "zarar vermek",
+      "escape": "kaçmak",
+      "busy": "kalabalık",
+      "noticed": "fark etmek",
+      "powerful": "güçlü",
+      "crowd": "kalabalık",
+      "knowing": "bilerek",
+      "seen": "görülmüş",
+      "steal": "çalmak",
+      "chemical": "kimyasal",
+      "tools": "aletler",
+      "force": "zorlamak",
+      "dangerous": "tehlikeli",
+      "commands": "komutlar",
+      "chance": "fırsat",
+      "station": "merkez",
+      "safety": "güvenlik",
+      "cruel": "zalim",
+      "everywhere": "her yer",
+      "stop": "durmak",
+      "joking": "şaka yapmak",
+      "disappear": "yok olmak",
+      "fight": "savaşmak",
+      "knocked down": "yere serdi",
+      "mess": "kargaşa",
+      "screaming": "çığlık atmak",
+      "running": "kaçışmak",
+      "directions": "yönler",
+      "afraid": "korkmuş",
+      "strong": "güçlü",
+      "trouble": "belada",
+      "whole": "tüm",
+      "look for": "aramak",
+      "hide": "saklanmak",
+      "building": "bina",
+      "nearby": "yakınında",
+      "house": "ev",
+      "beach": "sahil",
+      "looked": "baktı",
+      "tired": "yorgun",
+      "shaking": "titremek",
+      "remembered": "hatırladı",
+      "old": "eski",
+      "sad": "üzücü",
+      "forever": "sonsuza dek",
+      "normal": "normal",
+      "self": "kendisi",
+      "process": "süreç",
+      "window": "pencere",
+      "people": "insanlar",
+      "searching": "aramak",
+      "sticks": "sopa",
+      "lights": "ışıklar",
+      "way": "yol",
+      "give up": "pes etmek",
+      "prepared": "hazırladı",
+      "face": "yüzleşmek",
+      "last": "son",
+      "time": "zaman",
+      "stood": "durdu",
+      "shadows": "gölgeler",
+      "moment": "an",
+      "closed in": "etrafını sarmak",
+      "gathered": "toplandı",
+      "iron bars": "demir çubuklar",
+      "determined": "kararlı",
+      "caused": "neden olmak",
+      "brave": "cesur",
+      "led": "önderlik etmek",
+      "caught": "yakalanmak",
+      "everyone": "herkes",
+      "dark": "karanlık",
+      "final": "son",
+      "anymore": "artık",
+      "surrounding": "kuşatmak",
+      "unseen": "görünmez",
+      "moved": "ilerledi",
+      "silently": "sessizce",
+      "door": "kapı",
+      "mix": "karışım",
+      "anger": "öfke",
+      "sadness": "hüzün",
+      "end": "son",
+      "stepped out": "adım atmak",
+      "life end": "hayatın sonu",
+      "garden": "bahçe",
+      "searched": "aradı",
+      "corner": "köşe",
+      "attacked": "saldırdı",
+      "group": "grup",
+      "great": "büyük",
+      "speed": "hız",
+      "strength": "güç",
+      "worked together": "birlikte çalışmak",
+      "stone wall": "taş duvar",
+      "forward": "ileri",
+      "down": "aşağı",
+      "ground": "yer",
+      "tried": "denemek",
+      "kicking": "tekme atmak",
+      "hitting": "vurmak",
+      "firmly": "sıkıca",
+      "stopped breathing": "nefes almayı bırakmak",
+      "appeared": "belirdi",
+      "eyes": "gözler",
+      "real": "gerçek",
+      "again": "yeniden",
+      "dead": "ölü",
+      "invisibility": "görünmezlik",
+      "gone": "gitmiş",
+      "lay": "yatmak",
+      "grass": "çimen",
+      "sun": "güneş",
+      "rose": "doğdu",
+      "town": "kasaba",
+      "bringing": "getirmek",
+      "nightmare": "kabus",
+      "looking": "bakmak",
+      "man": "adam",
+      "terrified": "dehşete düşürmek",
+      "days": "günler",
+      "left": "kalmıştı",
+      "after": "sonra",
+      "long": "uzun",
+      "fighting": "mücadele",
+      "papers": "kağıtlar",
+      "left behind": "geride bırakmak",
+      "secrets": "sırlar",
+      "light": "ışık",
+      "chemicals": "kimya",
+      "pieces": "parçalar",
+      "went back": "geri döndü",
+      "story": "hikaye",
+      "warning": "uyarı",
+      "others": "diğerleri",
+      "seek": "aramak",
+      "thought": "düşünce",
+      "peacefully": "huzurla",
+      "small": "küçük",
+      "ideas": "fikirler"
     }
   },
-            {
+              {
     id: 'scifi_war_worlds',
     title: "The War of the Worlds",
     author: 'H. G. Wells',
     level: 'A2',
     coverUrl: '/covers/scifi_war_worlds.webp',
     en: [
-      "Long ago, people on Earth did not think about other lives in space. We were busy with our own lives, working and resting. We did not know that smart beings were watching us from Mars. These beings were very cold and had no heart. They looked at our small world with great hunger, just like a man looking at a tiny insect under a glass. They saw our cities, our seas, and our green woods. They were much older and more clever than humans. They wanted our things because their own world was dying and cold. We were happy and calm, believing we were safe in our homes. We never guessed that something from the stars was planning to kill us. The sky was clear, and the stars looked quiet and far away. We felt lucky, but the danger was already coming toward us from the deep black night of space.",
-      "One evening, many people saw a bright light in the sky. It fell across the air and hit the ground in a large field near a town called Woking. People were very curious and ran to see the object. They thought it was a falling star or a piece of metal from the sky. When they arrived at the dark field, they found a huge round tube made of strange, grey metal. It was buried deep in the ground, and it made a low, humming sound. The crowd stood far away because the heat was strong. The metal felt hot and dangerous. No one knew that inside that tube, the visitors from Mars were preparing to meet the people of Earth. It was the start of a scary change for everyone. The quiet night became very dark and full of a strange, heavy feeling that felt like a bad storm.",
+      "A long time ago, people on Earth did not think about other lives in space. We were busy with our own lives, working and resting. We did not know that smart beings were watching us from Mars. These beings were very cold and had no heart. They looked at our small world with great hunger, like a man looking at a tiny insect under glass. They saw our cities, our seas, and our green woods. They were much older and smarter than humans. They wanted our things because their own world was dying and cold. We were happy and calm, believing we were safe in our homes. We never guessed that something from the stars was planning to harm us. The sky was clear, and the stars looked quiet and far away. We felt lucky, but the danger was already coming toward us from the deep black night of space.",
+      "One evening, many people saw a bright light in the sky. It fell across the air and hit the ground in a large field near a town called Woking. People were very curious and ran to see the object. They thought it was a falling star or a piece of metal from the sky. When they arrived at the dark field, they found a big tube made of strange, grey metal. It was buried deep in the ground and made a low, humming sound. The crowd stood far away because the heat was strong. The metal felt hot and dangerous. No one knew that inside that tube, the visitors from Mars were preparing to meet the people of Earth. It was the start of a scary change for everyone. The quiet night became very dark and full of a strange, heavy feeling that felt like a bad storm.",
       "Now, the top of the metal tube started to move. The crowd watched with fear and surprise as the heavy lid turned around and fell off with a loud noise. People pushed forward to get a better look, hoping to see something amazing. What they saw was not human. Inside the deep hole, there were two large, round eyes looking out at them. The thing was grey, wet, and moved like a snake. It had a big body and many long arms that looked like legs. It breathed with a difficult, wet sound. The people were so scared that they could not move or speak for a long time. The Martians were not like us at all. Their minds were powerful, but their bodies were strange and scary to look at. The war for our world had truly started in that lonely field.",
-      "The crowd stood in silence, frozen by the sight of the strange thing coming out of the dark metal shell. It was an impossible horror that no person could understand. The Martian used its long, whip-like arms to move, pulling its heavy body out of the pit. Its skin shined like wet leather under the moon, and it seemed to struggle with the heavy weight of Earth. Behind it, other beings appeared, moving with a machine-like and cold way that made the people shiver. The air felt thick and filled with a smell that burned our lungs. Everyone felt a deep sense of fear because we knew that these beings were not here to visit or learn from us. They were here as masters, looking at us as if we were nothing more than ants in their path. The feeling shifted from curiosity to true, total terror.",
+      "The crowd stood in silence, frozen by the sight of the strange thing coming out of the dark metal shell. It was an impossible horror that no person could understand. The Martian used its long, whip-like arms to move, pulling its heavy body out of the pit. Its skin shined like wet leather under the moon, and it seemed to struggle with the heavy weight of Earth. Behind it, other beings appeared, moving in a machine-like and cold way that made the people shiver. The air felt thick and filled with a smell that burned our lungs. Everyone felt a deep sense of fear because we knew that these beings were not here to visit or learn from us. They were here as masters, looking at us as if we were nothing more than ants in their path. The feeling changed from curiosity to true, total terror.",
       "A brave group of men walked to the hole, holding a white flag to show they came in peace. They hoped to talk with the visitors, believing that smart beings want to talk. However, the Martians had no interest in our flags or our laws. Suddenly, a bright flash of green light came from a machine near the tube. It was like a beam of pure heat that moved with great speed. Wherever the beam touched, it caused instant destruction. Trees burst into flames, and the ground turned into glowing, hot glass. The people who were standing there simply disappeared in the burning heat. The screams of the crowd were loud and sad, but the Martians did not stop. They continued to fire their death ray, turning the quiet field into a hellish place of smoke, fire, and total mess.",
       "The panic was instant and total as the crowd turned and ran for their lives. I ran with them, my heart beating fast like a trapped bird. Behind us, the sounds of destruction grew louder, and the orange glow of the fire lit up the night sky. We were there at the beginning of the end. I fell over roots and stones, not wanting to look back at the place where so many had just died. The Martians were clearly preparing to take our world, and we had no weapons to stop them. They were better in every way, having tools that made our guns look like toys. I finally reached the safety of my home and locked the door, but I knew that no lock could keep out such a powerful enemy. The long night of fear had only just begun for humanity.",
       "The morning light brought no help to our shaking world. I left my home to find news, but the streets were already filled with scared people and their bags. They were moving away from the area, carrying things and looking at the sky with wide, worried eyes. Every person I passed had a story of terror to tell about the heat-ray. I reached a high point and looked back toward the site of the tube. Smoke rose high into the air, and I could hear the deep, thumping sounds of heavy machines being built. The Martians were busy preparing for their war against humanity. I realized that the danger was not going away; it was growing larger every hour. The silence of the fields was replaced by the low, machine sound of alien metal that marked the start of a terrible, new time for our small and weak Earth.",
@@ -14331,15 +15038,15 @@ export const STORIES_PART1: RawStory[] = [
       "Life slowly returned to the streets, but everything was different now. We learned that we were not the masters of the world, and we were never really alone in the dark sky above us. I often sit in my garden, looking up at the stars and wondering if the Martians are watching us from their own world. We are more careful now, and we watch the night with great care. The story of the invasion is a lesson for everyone, a memory that will stay in our hearts for the rest of our days. I still hear the ghost of the whistling machine in my dreams, but I wake up to the quiet song of birds. We have survived the great danger, and we know that we must protect our home. The future is ours to build again, together and with a stronger spirit than ever before."
     ],
     tr: [
-      "Çok uzun zaman önce, Dünya'daki insanlar uzaydaki diğer yaşamlar hakkında düşünmüyorlardı. Kendi hayatlarımızla, çalışmakla ve dinlenmekle meşguldük. Mars'tan zeki varlıkların bizi izlediğini bilmiyorduk. Bu varlıklar çok soğuk ve kalpsizdiler. Küçük dünyamıza, tıpkı bir camın altındaki küçük bir böceğe bakan bir adam gibi büyük bir açlıkla bakıyorlardı. Şehirlerimizi, denizlerimizi ve yeşil ormanlarımızı gördüler. İnsanlardan çok daha yaşlı ve daha akıllılardı. Kaynaklarımızı istiyorlardı çünkü kendi dünyaları ölüyordu ve çok soğuktu. Mutlu ve sakindik, evlerimizde güvende olduğumuza inanıyorduk. Yıldızlardan bir şeyin bizi yok etmeyi planladığını asla tahmin etmedik. Gökyüzü açıktı ve yıldızlar sessiz ve uzak görünüyordu. Şanslı olduğumuzu hissettik, ama tehlike uzayın derin karanlığından bize doğru çoktan geliyordu.",
-      "Bir akşam, birçok insan gökyüzünde parlak bir ışık gördü. Havada yol aldı ve Woking adındaki bir kasabanın yakınındaki büyük bir tarlada yere çarptı. İnsanlar çok meraklıydı ve nesneyi görmeye koştular. Onun kayan bir yıldız veya gökyüzünden gelen bir metal parçası olduğunu düşündüler. Karanlık tarlaya vardıklarında, tuhaf, gri metalden yapılmış dev bir tüp buldular. Toprağın derinliklerine gömülmüştü ve alçak, uğultulu bir ses çıkarıyordu. Isı çok güçlü olduğu için kalabalık uzakta durdu. Metal sıcak ve tehlikeli hissettiriyordu. Kimse o tüpün içinde Mars'tan gelen ziyaretçilerin Dünya insanlarıyla tanışmaya hazırlandığını bilmiyordu. Herkes için korkutucu bir değişimin başlangıcıydı. Sessiz gece çok karanlıklaştı ve kötü bir fırtına gibi hissettiren tuhaf, ağır bir hisle doldu.",
+      "Çok uzun zaman önce, Dünya'daki insanlar uzaydaki diğer yaşamlar hakkında düşünmüyorlardı. Kendi hayatlarımızla, çalışmakla ve dinlenmekle meşguldük. Mars'tan zeki varlıkların bizi izlediğini bilmiyorduk. Bu varlıklar çok soğuk ve kalpsizdiler. Küçük dünyamıza, tıpkı bir camın altındaki küçük bir böceğe bakan bir adam gibi büyük bir açlıkla bakıyorlardı. Şehirlerimizi, denizlerimizi ve yeşil ormanlarımızı gördüler. İnsanlardan çok daha yaşlı ve daha akıllılardı. Kaynaklarımızı istiyorlardı çünkü kendi dünyaları ölüyordu ve çok soğuktu. Mutlu ve sakindik, evlerimizde güvende olduğumuza inanıyorduk. Yıldızlardan bir şeyin bize zarar vermeyi planladığını asla tahmin etmedik. Gökyüzü açıktı ve yıldızlar sessiz ve uzak görünüyordu. Şanslı olduğumuzu hissettik, ama tehlike uzayın derin karanlığından bize doğru çoktan geliyordu.",
+      "Bir akşam, birçok insan gökyüzünde parlak bir ışık gördü. Havada yol aldı ve Woking adındaki bir kasabanın yakınındaki büyük bir tarlada yere çarptı. İnsanlar çok meraklıydı ve nesneyi görmeye koştular. Onun kayan bir yıldız veya gökyüzünden gelen bir metal parçası olduğunu düşündüler. Karanlık tarlaya vardıklarında, tuhaf, gri metalden yapılmış büyük bir tüp buldular. Toprağın derinliklerine gömülmüştü ve alçak, uğultulu bir ses çıkarıyordu. Isı çok güçlü olduğu için kalabalık uzakta durdu. Metal sıcak ve tehlikeli hissettiriyordu. Kimse o tüpün içinde Mars'tan gelen ziyaretçilerin Dünya insanlarıyla tanışmaya hazırlandığını bilmiyordu. Herkes için korkutucu bir değişimin başlangıcıydı. Sessiz gece çok karanlıklaştı ve kötü bir fırtına gibi hissettiren tuhaf, ağır bir hisle doldu.",
       "Şimdi, metal tüpün üst kısmı hareket etmeye başladı. Kalabalık, ağır kapak döndüğünde ve gürültülü bir sesle yere düştüğünde korku ve şaşkınlıkla izledi. İnsanlar harika bir şey görmeyi umarak daha iyi bakmak için ileri atıldılar. Gördükleri şey insan değildi. Derin çukurun içinde, onlara bakan iki büyük, yuvarlak göz vardı. Şey griydi, ıslaktı ve bir yılan gibi hareket ediyordu. Büyük bir gövdesi ve bacaklara benzeyen birçok uzun kolu vardı. Zor, ıslak bir sesle nefes alıyordu. İnsanlar o kadar korkmuşlardı ki uzun süre kımıldayamadılar veya konuşamadılar. Marslılar bizim gibi hiç değillerdi. Zihinleri güçlüydü ama vücutları tuhaf ve bakması korkutucuydu. Dünyamızın geleceği için savaş, o ıssız tarlada gerçekten başlamıştı.",
-      "Kalabalık, karanlık metal kabuğun içinden çıkan tuhaf şeyi görünce donup kaldı. Bu, tüm insanların anlayamayacağı imkansız bir korkuydu. Marslı, ağır gövdesini çukurdan dışarı çekmek için uzun, kırbaç benzeri kollarını kullandı. Derisi ay ışığında ıslak deri gibi parlıyordu ve Dünya'nın ağır yerçekimiyle mücadele ediyor gibi görünüyordu. Arkasında başka varlıklar belirdi; izleyenleri titreten makine benzeri ve soğuk bir kesinlikle hareket ediyorlardı. Hava yoğunlaştı ve akciğerlerimizi yakan bir kokuyla doldu. Hepimiz derin bir korku hissettik çünkü bu varlıkların bizi ziyaret etmek veya bizden bir şey öğrenmek için gelmediklerini anladık. Buraya efendiler olarak gelmişlerdi ve bize sanki yollarındaki karıncalardan farksızmışız gibi bakıyorlardı. Atmosfer meraktan gerçek, mutlak bir dehşete dönüştü.",
+      "Kalabalık, karanlık metal kabuğun içinden çıkan tuhaf şeyi görünce donup kaldı. Bu, tüm insanların anlayamayacağı imkansız bir korkuydu. Marslı, ağır gövdesini çukurdan dışarı çekmek için uzun, kırbaç benzeri kollarını kullandı. Derisi ay ışığında ıslak deri gibi parlıyordu ve Dünya'nın ağır yerçekimiyle mücadele ediyor gibi görünüyordu. Arkasında başka varlıklar belirdi; izleyenleri titreten makine benzeri ve soğuk bir kesinlikle hareket ediyorlardı. Hava yoğunlaştı ve akciğerlerimizi yakan bir kokuyla doldu. Hepimiz derin bir korku hissettik çünkü bu varlıkların bizi ziyaret etmek veya bizden bir şey öğrenmek için gelmediklerini anladık. Buraya efendiler olarak gelmişlerdi ve bize sanki yollarındaki karıncalardan farksızmışız gibi bakıyorlardı. Meraktan gerçek, mutlak bir dehşete dönüştü.",
       "Cesur bir grup insan, barışçıl niyetlerini göstermek için beyaz bir bayrak tutarak çukura yaklaştı. Zeki varlıkların konuşmak isteyeceğine inanarak ziyaretçilerle iletişim kurmayı umuyorlardı. Ancak Marslıların bizim bayraklarımızla veya yasalarımızla hiçbir ilgisi yoktu. Birdenbire, tüpün yanındaki bir makineden parlak bir yeşil ışık patlaması yükseldi. Büyük bir hızla hareket eden saf bir ısı huzmesi gibiydi. Işının değdiği her yer anında yok oluyordu. Ağaçlar alevler içinde kaldı ve yer, kor gibi yanan kızgın cama dönüştü. Orada duran insanlar, kavurucu sıcaklıkta basitçe yok oldular. Kalabalığın çığlıkları yüksek ve üzüntülüydü ama Marslılar durmadı. Ölüm ışınlarını ateşlemeye devam ederek sessiz tarlayı duman, ateş ve tam bir kaosla dolu cehennemi bir manzaraya çevirdiler.",
       "Kalabalık arkasına bakmadan hayatı için kaçarken panik anlıktı ve tamdı. Ben de onlarla birlikte koştum, kalbim hapsolmuş bir kuş gibi hızlı çarpıyordu. Arkamızda yıkım sesleri yükseliyor ve ateşin turuncu parıltısı gece gökyüzünü aydınlatıyordu. Sonun başlangıcına tanık oluyorduk. Köklere ve taşlara takılarak düştüm, az önce birçok kişinin öldüğü yere dönüp bakmaya cesaret edemedim. Marslılar açıkça dünyamızı ele geçirmeye hazırlanıyorlardı ve onları durduracak hiçbir silahımız yoktu. Teknolojileri silahlarımızı oyuncak gibi gösteriyordu ve her açıdan bizden üstünlerdi. Sonunda evimin güvenliğine ulaştım ve kapıyı kilitledim, ancak hiçbir kilidin böyle güçlü bir düşmanı dışarıda tutamayacağını biliyordum. İnsanlık için uzun korku gecesi henüz yeni başlamıştı.",
       "Sabah ışığı, sarsılan dünyamıza hiçbir yardım getirmedi. Haber almak için evimden çıktım ama sokaklar çoktan korkmuş insanlar ve çantalarıyla dolmuştu. Yanlarında eşyalarıyla, geniş ve endişeli gözlerle gökyüzüne bakarak bölgeden uzaklaşıyorlardı. Karşılaştığım her insanın ısı ışını hakkında anlatacak bir dehşet hikayesi vardı. Yüksek bir noktaya ulaştım ve tüpün olduğu bölgeye geri baktım. Dumanlar havaya doğru yükseliyordu ve inşa edilen ağır makinelerin derin, gümbürtülü seslerini duyabiliyordum. Marslılar, insanlığa karşı savaşları için hazırlanmakla meşguldü. Tehlikenin geçmediğini, her geçen saat daha da büyüdüğünü fark ettim. Tarlaların sessizliği, küçük ve zayıf Dünyamız için korkunç bir yeni zamanın başlangıcını işaret eden yabancı metalin düşük, mekanik sesiyle yer değiştirdi.",
       "Eşimi kaçışımıza hazırlamak için eve dönmeye karar verdim. Köyden gelen haberler beklediğimden daha kötüydü çünkü askerler yolları kapatmak için gelmeye başlamıştı. Uzaylıların daha iç kesimlere ilerlemesini engellemek umuduyla toplar yerleştirip her yere nöbetçiler diktiler. Silahlarına rağmen göğsümde ağır bir şüphe hissettim. Bu askerler, Marslıların korkunç gücüyle kıyaslandığında çocuk gibi görünüyorlardı. İçeri girdim ve sadece en önemli eşyaları topladım; uzaklardaki seslerden pencereler sarsılırken hızla hareket ediyordum. Yanan odun ve metal kokusu havayı yoğun bir şekilde kaplamıştı, paketleme yaparken bizi boğuyordu. Eşim cesurdu ama bana yardım ederken elleri titriyordu. Basit hayatlarımızın sonsuza dek bozulduğunu ve hayatta kalmak için karanlık ormanlara sığınmak adına evimizin konforunu terk etmemiz gerektiğini biliyorduk.",
-      "Biz uzaklaşırken yol, üzgün insanların oluşturduğu bir nehre dönüştü. Aileler, uzaklarda hala titreyen kırmızı ışıktan olabildiğince hızlı bir şekilde kaçarak, oyuncak ve battaniyelerle dolu arabalarını itiyorlardı. Ordu düzeni korumaya çalıştı ama korku, hiçbir yasanın engel olamayacağı kadar büyüktü. Aniden, vadide büyük bir kükremeye benzeyen bir ses yankılandı ve ayaklarımızın altındaki yer şiddetle sarsıldı. Döndüm ve ağaçların üzerinde uzun boylu duran devasa üç ayaklı bir makine gördüm. Manzara boyunca dev adımlar atan, uzun metalik bacaklarla hareket ediyordu. Hayatta kalanları aramak için ufku tararken güneş ışığı pürüzsüz gümüş gövdesinden yansıyordu. İnsani olmayan bir amaçla yürüyen, demir ve mantıktan yapılmış bir devdi. Dünyamız artık kontrolümüz altında değildi; artık canavarların yaşadığı bir diyarda yaşıyorduk.",
+      "Biz uzaklaşırken yol, üzgün insanların oluşturduğu bir nehre dönüştü. Aileler, uzaklarda hala titreyen kırmızı ışıktan olabildiğince hızlı bir şekilde kaçarak, oyuncak ve battaniyelerle dolu arabalarını itiyorlardı. Ordu düzeni korumaya çalıştı ama korku, hiçbir yasanın engel olamayacağı kadar büyüktü. Birdenbire, vadide büyük bir kükremeye benzeyen bir ses yankılandı ve ayaklarımızın altındaki yer şiddetle sarsıldı. Döndüm ve ağaçların üzerinde uzun boylu duran devasa üç ayaklı bir makine gördüm. Manzara boyunca dev adımlar atan, uzun metalik bacaklarla hareket ediyordu. Hayatta kalanları aramak için ufku tararken güneş ışığı pürüzsüz gümüş gövdesinden yansıyordu. İnsani olmayan bir amaçla yürüyen, demir ve mantıktan yapılmış bir devdi. Dünyamız artık kontrolümüz altında değildi; artık canavarların yaşadığı bir diyarda yaşıyorduk.",
       "Demir dev korkutucu bir hızla üzerimize doğru gelirken kalabalık yolun ortasında donup kaldım. Uzun bacakları ağaçları sanki kuru ottan başka bir şey değilmiş gibi parçalıyordu. Karımın elini tuttum ve metal canavardan saklanmayı umarak sık bir ormana doğru koştuk. Makinenin attığı her adım ayaklarımızın altındaki toprağın titremesine neden oluyordu. Dişlilerinin çıkardığı yüksek sesli şıngırtıları ve bizi ararken çıkardığı tuhaf, tiz ıslık sesini duyabiliyorduk. Etrafımızdaki hava ısındı ve yanmakta olan ağaçların kokusuyla doldu. Saklanmak için küçük, karanlık bir mağara bulduk ve devin bizim tarafımıza bakmaması için dua ederek nefesimizi tuttuk. Artık tamamen başkasına ait olan bir dünyada küçük, çaresiz yaratıklardan ibarettik.",
       "Biz dışarıdaki yıkım seslerini dinlerken mağaranın karanlığında saatler geçti. Makine bir ileri bir geri yürüdü ve gölgesi birkaç kez saklandığımız yerin girişinden geçti. Karım ağlarken ben onu sıkıca tuttum ve ikimiz için de güçlü olmaya çalıştım. Dışarıdaki sessizlik bazen devrilen bir ağacın sesiyle ya da kemiklerimizde hissettiğimiz derin, gök gürültüsüne benzeyen patlamalarla bozuluyordu. Hava toz ve dumanla dolduğunda bile kımıldamaya cesaret edemedik. Zihnim eski hayatımıza dair düşüncelerle doluydu; sevdiğimiz bahçemiz ve eskiden ateşin başında geçirdiğimiz huzurlu akşamlar. Her şey başka bir hayattan kalma bir rüya gibi geliyordu. O an, önümüzdeki yol ne kadar tehlikeli olursa olsun, bir tekne bulmak için nehre doğru ilerlemeye devam etmemiz gerektiğini anladım.",
       "Güneş nihayet batmaya başladığında, dikkatlice mağaradan çıktık. Dünya artık farklı görünüyordu; gökyüzü mor bir renge bürünmüştü ve manzara derin çukurlar ve yanmış odunlarla kaplıydı. Düşman makinelerinin hala aktif olduğu ana yollardan kaçınarak sessizce yürüdük. Göğsümdeki korku sabitti; nefes almayı zorlaştıran ağır bir yük gibiydi. Her an üç ayaklı makinenin gümüş bacaklarını göreceğimi sanarak sürekli omzumun üzerinden arkama bakıyordum. Aç, susuz ve yorgun düşmüştük ama ilerlemeye devam ettik çünkü olduğumuz yerde kalmanın kesin ölüm anlamına geldiğini biliyorduk. Hayatımız için verdiğimiz mücadele gerçekten başlamıştı ve güvenlik umudu, karanlık, uçsuz bucaksız bir gecede titreyen küçük bir ışık gibiydi. Kaybettiğimiz evimizi sonsuza dek arkamızda bırakıp bilinmeze doğru yürürken, her gölge sanki bize doğru uzanıyordu.",
@@ -14350,34 +15057,33 @@ export const STORIES_PART1: RawStory[] = [
     words: {
       "creature": "yaratık",
       "intelligent": "zeki",
-      "cylinder": "tüp",
+      "tube": "tüp",
       "metal": "metal",
-      "terrifying": "korkutucu",
-      "tentacle": "kol",
-      "dread": "korku",
-      "crater": "çukur",
+      "scary": "korkutucu",
+      "arm": "kol",
+      "fear": "korku",
+      "hole": "çukur",
       "destruction": "yıkım",
       "humanity": "insanlık",
       "relief": "rahatlama",
-      "anxious": "endişeli",
-      "fragile": "zayıf",
-      "tremble": "titremek",
-      "desperate": "üzgün",
-      "horizon": "ufuk",
-      "dense": "sık",
-      "vibrate": "titremek",
-      "charred": "yanmış",
-      "exhausted": "yorgun",
-      "flicker": "titremek",
-      "ruined": "kırık",
-      "defeated": "yenilmiş",
+      "worried": "endişeli",
+      "weak": "zayıf",
+      "shake": "sarsılmak",
+      "sad": "üzgün",
+      "sky": "gökyüzü",
+      "thick": "sık",
+      "burned": "yanmış",
+      "tired": "yorgun",
+      "flash": "parıltı",
+      "broken": "kırık",
+      "beaten": "yenilmiş",
       "survivors": "hayatta kalanlar",
       "invasion": "istila",
-      "courage": "cesaret",
-      "caution": "tedbir"
+      "bravery": "cesaret",
+      "care": "tedbir"
     }
   },
-            {
+              {
     id: 'scifi_frankenstein',
     title: "Frankenstein",
     author: 'Mary Shelley',
@@ -14404,13 +15110,13 @@ export const STORIES_PART1: RawStory[] = [
       "Benim adım Victor Frankenstein. Bilimle uğraşan bir adamım. Cenevre'de güzel bir evde, nazik bir aileyle büyüdüm. Annemi ve sevgili kız kardeşim Elizabeth'i çok severdim. Gençken, bir şeyleri değiştirmenin gizli yolları ve dünyanın sırları üzerine birçok eski kitap okudum. Hayatın nasıl başladığını anlamak istiyordum. Ingolstadt'taki üniversitede okumak için evimden ayrılmaya karar verdim. Her gün ve her gece çok çalıştım. Öğretmenlerim zekama şaşırdılar. Tüm zamanımı çalıştığım odada geçirdim. Hayatın sırrını arıyordum. Yeni bir canlı varlık yaratmak istiyordum. Çalışmalarla meşgul olduğum için aileme mektup yazmayı bıraktım. Sağlığımı ve arkadaşlarımı ihmal ettim. Sadece ölü şeylerden hayat yaratma hedefime ulaşmak istiyordum.",
       "Geceler uzun ve soğuktu. Sessiz yerlerden birçok kemik ve vücut parçası topladım. Onları birleştirmek için aletlerimi kullandım. Evin tepesindeki yalnız bir odada çalıştım. Çok yorgundum ama duramadım. Bir insan yaptığım için kendimi bir tanrı gibi hissediyordum. Bedenim zayıftı ama zihnim bu tuhaf işe odaklanmıştı. Proje gizliydi. Ne yaptığımı kimse bilmiyordu. Korku ve heyecanı bir arada hissediyordum. Buluşumun sonunda uyanıp uyanmayacağını görmek istiyordum. Yaratılış anını her düşündüğümde kalbim hızlı çarpıyordu. Odadaki hava ağırdı ve ışıklar kısıktı. Büyük bir gerginlikle son adımı bekliyordum. Tehlikeli bir hayali olan bir adamdım.",
       "Sonunda, Kasım ayında karanlık ve yağmurlu bir geceydi. Son parçayı da eserime yerleştirdim. Ona güç vermek için özel bir makine kullandım. Masadaki vücudu izledim. Uzun süre hiçbir şey olmadı. Kendimi çok üzgün ve umutsuz hissettim. Ama sonra bir hareket gördüm. Yaratığın sarı gözleri açıldı. Sert ve gürültülü bir sesle nefes aldı. Derisi sarıydı, saçı uzun ve siyahtı. Başarmıştım ama bunu yapmakla hata etmiştim. Güzel bir insan istiyordum ama bir canavar yarattım. Aniden bir korku hissettim. Ona bakamadığım için odadan dışarı koştum. Yaratık elini uzattı ama onu yalnız bıraktım. O karanlık ve yağmurlu korku anında hayatım sonsuza dek değişti.",
-      "Gece boyunca odamda yürüdüm çünkü uyuyamıyordum. Kalbim hızla çarpıyordu. Yarattığım canavarı düşündüm. Çalışmam için büyük bir üzüntü duyuyordum. Yatağıma uzanmaya karar verdim ama zihnim karanlık düşüncelerle doluydu. Gözlerimi kapattım ve garip bir rüya gördüm. Rüyamda, Cenevre sokaklarında arkadaşım Elizabeth'i gördüm. Onu öpmeye gittim ama o annemin ölü bedenine dönüştü. Korku doluyum ve şimdi uyandım. Ay pencereden parlıyordu. Yaratığın yatağımın yanında durduğunu gördüm. Sarı gözleri açıktı ve bana bakıyordu. Ağzını açtı ve garip bir ses çıkardı. Elini beni tutmak için uzattı ama odadan kaçtım ve kapıyı kilitledim.",
+      "Gece boyunca odamda yürüdüm çünkü uyuyamıyordum. Kalbim hızla çarpıyordu. Yarattığım canavarı düşündüm. Çalışmam için büyük bir üzüntü duyuyordum. Yatağıma uzanmaya karar verdim ama zihnim karanlık düşüncelerle doluydu. Gözlerimi kapattım ve garip bir rüya gördüm. Rüyamda, Cenevre sokaklarında arkadaşım Elizabeth'i gördüm. Onu öpmeye gittim ama annemin ölü bedenine dönüştü. Korku doluyum ve şimdi uyandım. Ay pencereden parlıyordu. Yaratığın yatağımın yanında durduğunu gördüm. Sarı gözleri açıktı ve bana bakıyordu. Ağzını açtı ve garip bir ses çıkardı. Elini beni tutmak için uzattı ama odadan kaçtım ve kapıyı kilitledim.",
       "Gecenin geri kalanını dışarıda, soğuk bahçede geçirdim. Çok korkmuştum ve ne yapacağımı bilmiyordum. Rüzgar ve kendi korkum yüzünden titriyordum. Evime dönmek istemiyordum. Sabah ışığı gelene kadar orada kaldım. Güneş göründüğünde biraz daha iyi hissettim. Biraz hava almak için kasaba meydanına yürüdüm. Tesadüfen iyi arkadaşım Henry Clerval ile karşılaştım. Üniversitede okumak için yeni gelmişti. Tanıdık bir yüz gördüğüm için çok mutlu oldum. Henry yüzüme baktı ve hasta ve yorgun olduğumu gördü. Neyim olduğunu sordu ama ona gizli canavarımdan bahsedemedim. Gerçeği ondan saklamak zorunda olduğum için kalbimde büyük bir ağırlık hissettim.",
       "Henry'yi evime davet ettim ama canavarın hala orada olmasından endişeleniyordum. Odamıza doğru yavaşça yürüdük. Kapıya ulaştığımda korkudan titriyordum. Anahtarı çevirdim ve büyük bir dikkatle kapıyı açtım. Rahatlamıştım çünkü oda boştu. Canavar gitmişti. Kısa bir süreliğine özgürlük hissi duydum. Henry, çalışmalarıyla ilgili planlarından bahsetmeye başladı. Dinlemeye çalıştım ama zihnim hala yaratıktaydı. Odaya baktım ve kullandığım aletleri gördüm. Artık her şey bana farklı görünüyordu. Tüm o ağır iş ve stresten hastalandım. Bir sandalyeye oturdum ve yere düştüm. Henry haftalarca bana baktı. Çok hastaydım ve bu zor zaman boyunca yanımda kaldı.",
       "Uzun bir süre çok hastaydım. Sevgili arkadaşım Henry her gün bana baktı. Bana su ve yemek getirdi. Güçlenmeme yardım etti. Nihayet kendimi daha iyi hissettiğimde, ailemden bir mektup gördüm. Cenevre'deki babamdan geliyordu. Mektup çok üzücü bir haber taşıyordu. Küçük kardeşim William ölmüştü. Biri onu ağaçların arasında öldürmüştü. Kalbimde korkunç bir acı hissettim. Bu kötü olaydan eserimin sorumlu olduğunu biliyordum. Odamda saatlerce ağladım. Henry üzüntümü gördü ve benim için çok endişelendi. Ona ailemi görmek için eve dönmem gerektiğini söyledim. Bu karanlık zamanda onlara yardım etmek istiyordum. Çantalarımı topladım ve üniversitedeki nazik arkadaşıma veda ettim. Karanlık sırrımla tekrar yalnız kalmıştım.",
       "Cenevre'ye dönüş yolculuğu çok uzun ve zordu. Birçok soğuk dağdan geçtim. Kasabamın kapılarına vardığımda hava çoktan kararmıştı. Kapılar kilitli olduğu için içeri giremedim. Kardeşimin öldüğü ağaçların olduğu yere doğru yürümeye karar verdim. Gece çok karanlıktı ve rüzgar şiddetle esiyordu. Aniden ağaçların yanında hareket eden büyük bir silüet gördüm. Bu canavardı! O yüzü ve o sarı gözleri tanıyordum. Kalbim bir saniyeliğine durdu. Yaratığı yakalayıp William'ı öldürdüğü için onu cezalandırmak istedim. Ama canavar çok hızlı koştu. Vahşi bir hayvan gibi kayalara tırmandı. Karanlıkta onu takip edemedim. Orada durdum ve çok öfkeli ve yalnız hissettim. Hatamın sevdiğim her şeyi yok ettiğini fark ettim. Kardeşimin gerçek katili bendim.",
       "Ertesi sabah evime doğru yavaşça yürüdüm. Ailem beni görünce çok üzüldü. Onlara yardım etmek için eve geldiğimi söyledim. William hakkında konuştuk ve gözyaşlarımız yüzlerimizden süzüldü. Eski odama gittim ve güzel göle doğru baktım. Her şey sessizdi ama içimde çok huzursuzdum. Canavarın ağaçların yakınında olduğunu biliyordum. O bir insan değildi ama hisleri olan yaşayan bir varlıktı. Çalışmak için odamda geçirdiğim günleri düşündüm. Bilimimle gurur duyuyordum ama şimdi o işten nefret ediyorum. Ailem için güçlü kalacağıma dair verdiğim sözü tuttum. Canavarı tekrar bulmam gerektiğine karar verdim. Diğer insanları kurtarmak için bu korkutucu varlığın hayatına son vermeliydim. Bu artık benim ağır işim ve hayattaki tek amacımdı.",
-      "Zihnimi biraz dinlendirmek için yüksek dağlara tek başıma tırmandım. Hava çok soğuktu ve rüzgar yüzüme sertçe vuruyordu. Güzel bir vadiye ulaşana kadar günlerce yürüdüm. Dağlardaki buza baktım ve evimi hatırladım. Sorunlarımı unutmak istedim ama onlar hep benimleydi. Birden yolda bana doğru gelen uzun bir adam gördüm. Bu benim canavarımdı. Çok hızlıydı ve güçle hareket ediyordu. Onu yakınımda görünce kalbimde büyük bir korku hissettim. Onunla savaşmak istedim ama o durdu ve benimle konuştu. Sesi gökyüzündeki derin bir gürültü gibi geliyordu. Bana üzgün ve yalnız olduğunu söyledi. İnsanları öldürmek istemiyordu ama herkes ondan korktuğu ve kaçtığı için çok kızgındı.",
+      "Zihnimi biraz dinlendirmek için yüksek dağlara tek başıma tırmandım. Hava çok soğuktu ve rüzgâr yüzüme sertçe vuruyordu. Güzel bir vadiye ulaşana kadar günlerce yürüdüm. Dağlardaki buza baktım ve evimi hatırladım. Sorunlarımı unutmak istedim ama onlar hep benimleydi. Birden yolda bana doğru gelen uzun bir adam gördüm. Bu benim canavarımdı. Çok hızlıydı ve güçle hareket ediyordu. Onu yakınımda görünce kalbimde büyük bir korku hissettim. Onunla savaşmak istedim ama o durdu ve benimle konuştu. Sesi gökyüzündeki derin bir gürültü gibi geliyordu. Bana üzgün ve yalnız olduğunu söyledi. İnsanları öldürmek istemiyordu ama herkes ondan korktuğu ve kaçtığı için çok kızgındı.",
       "Canavar benden hikayesini dinlememi istedi. Bir kayaya oturdu ve hayatını anlatmaya başladı. Bir zamanlar nazik olduğunu ve insanları sevmek istediğini anlattı. Fakir bir ailenin yaşadığı küçük bir evin yakınında kalıyordu. Onları her gün izledi, nasıl konuşulacağını ve okunacağını öğrendi. Onlar mutlu olduğunda o da mutlu oluyordu ama farklı olduğu için kendini çok yalnız hissediyordu. Onlar için odun toplayarak aileye yardım etmeye çalıştı ama onu hiç görmediler. Bir gün, ailenin içindeki yaşlı ve görme engelli adamla konuşmaya çalıştı. Yaşlı adam iyiydi ama ailenin geri kalanı eve geldiğinde canavara vurdular ve onu kovaladılar. Kalbinde çok fazla acı hissettiği için ağladı.",
       "O korkunç zamandan sonra günlerce yürüdü. Odamdan aldığı kıyafetlerin cebinde benim ona dair notlarımı buldu. Onu nasıl yarattığımı ve ondan nasıl nefret ettiğimi okudu. Onu yaratıp sonra yapayalnız bıraktığım için bana çok kızgındı. Mutsuz hayatı için benden öç almak istedi. Beni bulmak için şehrime seyahat etti. Çok mutsuzdu ve ona yardım edecek kimsesi yoktu. William'ı onu incitmek istediğim için öldürdüğünü söyledi. Eğer benim de onun gibi acı çekersem, onu daha iyi anlayacağımı düşündü. Eğer ona benzer bir kadın yaparsam öldürmeyi bırakacağına söz verdi. Kimsenin onu bir daha göremeyeceği uzak bir yere gideceğini söyledi.",
       "Soğuk rüzgârda onun sözlerini dinleyerek durdum. Onun gibi başka bir canavar yaratırsam dünya için korktum. Dişi bir yaratık yapamayacağıma karar verdim. Çok sinirlendi ve bana bağırdı. Düğün günümde beni bulmaya geleceğine dair söz verdi. Ondan sonra karanlık dağlara koştu ve beni yalnız bıraktı. Ağır bir kalple evime geri döndüm. Arkadaşım Henry beni ziyarete geldi ve uzun süre birlikte seyahat ettik. Ancak canavar bizi takip etti ve sevgili arkadaşımı öldürdü. O kadar çok üzüntü hissettim ki hastalandım. Babam beni eve götürmeye geldi ve yavaş yavaş daha iyi hissetmeye başladım. Yeniden mutlu olmak istedim, bu yüzden nazik Elizabeth'im ile evlenmeye karar verdim. Canavarın aileme zarar vermek için asla geri dönmemesini umuyordum.",
@@ -14419,36 +15125,36 @@ export const STORIES_PART1: RawStory[] = [
     ],
     words: {
       "science": "bilim",
-      "laboratory": "çalışılan oda",
+      "lab": "çalışılan oda",
       "creation": "eser",
       "monster": "canavar",
-      "terror": "korku",
-      "research": "çalışma",
-      "regret": "üzüntü",
-      "immediately": "şimdi",
-      "shiver": "titremek",
-      "burden": "ağırlık",
-      "caution": "dikkat",
-      "faint": "yere düşmek",
-      "tragedy": "kötü olay",
-      "responsible": "sorumlu",
-      "murderer": "katil",
-      "troubled": "huzursuz",
-      "duty": "iş",
+      "fear": "korku",
+      "work": "çalışma",
+      "sadness": "üzüntü",
+      "now": "şimdi",
+      "shake": "titremek",
+      "weight": "ağırlık",
+      "care": "dikkat",
+      "fall down": "yere düşmek",
+      "bad event": "kötü olay",
+      "reason": "sebep",
+      "killer": "katil",
+      "unhappy": "huzursuz",
+      "goal": "amaç",
       "valley": "vadi",
-      "thunder": "gürültü",
-      "revenge": "öç",
-      "gather": "toplamak",
-      "figure": "şekil",
+      "noise": "gürültü",
+      "revenge": "intikam",
+      "collect": "toplamak",
+      "shape": "şekil",
       "path": "yol",
       "creature": "yaratık",
       "promise": "söz",
-      "ceremony": "parti",
-      "track": "iz",
-      "silence": "sessizlik"
+      "party": "parti",
+      "mark": "iz",
+      "quiet": "sessizlik"
     }
   },
-            {
+              {
     id: 'scifi_island_dr_moreau',
     title: "The Island of Doctor Moreau",
     author: 'H. G. Wells',
@@ -14459,12 +15165,12 @@ export const STORIES_PART1: RawStory[] = [
       "After many days, I saw a ship in the distance. I shouted for help with all my remaining power. The ship came closer, and the men on the deck saw our small boat. They helped us get on board their ship, the Ipecacuanha. The captain was a rough man who did not want to take me to land. There was a man on the ship named Montgomery who was kinder than the captain. He was a doctor and he had many animals in cages on the ship. He was going to a secret island. I told him my story and asked him to save me. He felt bad for me, but the captain was still very angry about having me on his ship. The trip across the ocean was long, silent, and full of secrets about where we were going.",
       "Finally, we arrived at a small island that was not on any map. The captain told me that I could not stay on the ship any longer. Montgomery told me that I must leave with him because there was no place for me on the boat. We took a small boat and went toward the sand by the water. I saw the island clearly now. It was full of tall trees and strange green plants. I felt afraid because the place looked very wild and quiet. There were no people on the sand to welcome us. I wondered what kind of place this was and why Montgomery was going there with his animals. I walked on the hot sand and felt the island was waiting for me. My new life on this strange and lonely island was about to start in this dark place.",
       "I stepped onto the hot sand of the island with a sad heart. Montgomery did not seem happy to have me here, but he had no choice. He told his men to move the cages from the small boat to the sand. I saw many strange animals inside the wooden boxes. Some of them made deep noises that I did not know. The air felt thick and warm, filled with the smell of flowers and salt. I looked at the dark woods in front of us and felt a cold shake down my spine. The island was very silent, almost as if it were holding its breath. I felt like a stranger in a land where I did not belong. I decided to stay close to Montgomery because he was the only person who seemed to know the way through this secret and wild place.",
-      "As we walked deeper into the thick trees, the path became very difficult to follow. The leaves were big and dark, hiding the ground from the sun. I heard sounds of moving creatures in the shadows, but I could not see them clearly. Montgomery moved quickly and did not look back at me. He seemed to know this dangerous woods very well. After a long walk, we finally reached a house that stood in a flat open area. It was a large, stone building surrounded by a high fence. I felt better to see a place for safety. However, the house looked old and lonely. I wondered who lived inside and why they needed so much protection. The mystery of the island started to feel heavier, and I wanted to know the secret behind these strange, hidden, and silent gray walls.",
-      "When we reached the gate, a man opened it to let us inside. He was tall, with white hair and sharp eyes that watched me closely. I felt uncomfortable under his look. He did not speak a word of welcome to me. Montgomery talked to him in a quiet voice, and I heard him mention my name. The man looked at me again, and I saw a cold light in his eyes. He seemed like a person who had seen many things in his life. I felt that he was very smart, but also very dangerous. The man pointed to a room where I could rest for the night. I went inside and sat down on a small wooden chair. I was very tired, but my mind could not stop thinking about the strange things I had seen on this dark, alone, and secret island.",
+      "As we walked deeper into the thick trees, the path became very difficult to follow. The leaves were big and dark, hiding the ground from the sun. I heard sounds of moving creatures in the shadows, but I could not see them clearly. Montgomery moved quickly and did not look back at me. He seemed to know these dangerous woods very well. After a long walk, we finally reached a house that stood in a flat open area. It was a large, stone building surrounded by a high fence. I felt better to see a place for safety. However, the house looked old and lonely. I wondered who lived inside and why they needed so much protection. The mystery of the island started to feel heavier, and I wanted to know the secret behind these strange, hidden, and silent gray walls.",
+      "When we reached the gate, a man opened it to let us inside. He was tall, with white hair and sharp eyes that watched me closely. I felt uncomfortable under his look. He did not speak a word of welcome to me. Montgomery talked to him in a quiet voice, and I heard him mention my name. The man looked at me again, and I saw a cold light in his eyes. He seemed like a person who had seen many things in his life. I felt that he was very smart, but also very dangerous. The man pointed to a room where I could rest for the night. I went inside and sat down on a small wooden chair. I was very tired, but my mind could not stop thinking about the strange things I had seen on this dark, lonely, and secret island.",
       "I woke up early the next morning, but I could not find my way out of the locked room. I felt like a person in jail in this strange house. From my window, I heard loud, painful cries coming from a building nearby. It sounded like an animal in great pain, or perhaps a human suffering deeply. I was very frightened and did not know what to do. I banged on the door until Montgomery finally appeared. He looked tired and did not want to explain the noises. He told me that Doctor Moreau was busy working on important tests. I asked him why he kept so many animals in such a lonely place. He looked at me with a serious face and told me not to ask questions. He left me alone again, locking the door behind him while I sat in silence.",
       "The shouting continued for many hours, making my heart beat fast with fear. I decided to escape the room through the window. I climbed out and jumped into the garden, moving quietly between the thick bushes. I wanted to see what was happening inside that secret place. I reached the building where the sounds were coming from and peered through a crack in the wall. What I saw made me feel sick and cold. I saw a creature that looked like a mix of an animal and a man. It was tied to a table, and Doctor Moreau stood over it with sharp tools. The doctor was doing a medical operation that looked very mean. I could not believe my eyes as I watched him work. It was clear that he was changing the animals to make them more like human beings.",
       "I ran away from the building, feeling completely lost and terrified by the sight. I did not know how to handle the truth of this terrible place. I felt like I was in a bad dream that I could not escape. I ran toward the woods because I could not stay in that house with those two men any longer. The trees felt like they were watching me, and the shadows seemed to move with intent. I thought about the laws of nature and how this doctor was breaking them. My legs felt weak, and my mind was full of questions about the future. I knew that I was in danger, but I had no boat and no way to leave the island. I had to find a way to live among these strange and frightening creatures while hiding from the doctor.",
-      "I wandered through the dark woods for many hours until I met a strange creature. It walked on two legs, but it had a hairy face and sharp, yellow eyes. The beast looked at me with curiosity and fear, acting very much like a human. I noticed it was wearing clothes and walking with a careful, shaky move. I tried to speak to it, but it made strange noises that I did not understand. Suddenly, it knelt before me in the soft grass. It asked me if I knew the Law. I was confused, but the creature began to speak the words of a strange, rhythmic code about not eating meat and walking on two legs. It was terrifying to see a beast trying so hard to be a man. I realized that the island was full of these broken animals, all living in constant fear of their maker.",
+      "I wandered through the dark woods for many hours until I met a strange creature. It walked on two legs, but it had a hairy face and sharp, yellow eyes. The beast looked at me with curiosity and fear, acting very much like a human. I noticed it was wearing clothes and walking with a careful, shaky step. I tried to speak to it, but it made strange noises that I did not understand. Suddenly, it knelt before me in the soft grass. It asked me if I knew the Law. I was confused, but the creature began to speak the words of a strange, rhythmic code about not eating meat and walking on two legs. It was terrifying to see a beast trying so hard to be a man. I realized that the island was full of these broken animals, all living in constant fear of their maker.",
       "As I continued my walk, I found a large group of these creatures near the sand. They sat in a circle, listening to a tall, thin figure who spoke about the maker and the rules of the house. I hid behind a large tree and watched them in silence. They seemed to be praying, chanting words about pain and the house of the doctor. It was clear that Moreau used fear to control them. He changed their bodies, but he also tried to change their minds with hard rules. The animals were suffering because they could not truly be human, yet they tried to act like men every single day. I felt a deep sadness for them. They were prisoners of a man who played god, forced to live a life that did not belong to their nature.",
       "The sun began to set, and the shadows grew long across the hot sand. I knew I could not stay in the woods forever, but returning to the house was dangerous. I felt a strong desire to find a weapon and defend myself against the doctor. I walked back toward the dark building, moving through the thick jungle plants very carefully. I saw the doctor sitting on his porch, looking at the ocean with a cold and lonely expression. He did not look like a man who felt blame for his actions. He looked like a scientist who was proud of his work. My heart was pounding, and my hands were shaking with rage. I was just one man against a smart person, but I knew I had to find a way to stop his mean tests before more animals were destroyed by his knife.",
       "The sad story of the island reached its end when the creatures finally lost their fear of the doctor. They saw that he was just a human man, not a god who could never die. A massive beast, once a proud leopard, escaped its cage and caused wild trouble throughout the area. The doctor tried to stop it, but he was beaten by the wild power of his own creation. I saw the struggle from a distance and knew that the balance of the island had broken forever. The laws were forgotten, and the wild nature of the animals returned with a violent force. Moreau died in the dust, killed by the very thing he had tried to change. Without their master, the creatures became lost and confused, wandering the woods with no purpose. The darkness of the island felt heavier than ever before as the work collapsed into complete ruin.",
@@ -14473,63 +15179,52 @@ export const STORIES_PART1: RawStory[] = [
     ],
     tr: [
       "Lady Vain adlı gemide bir yolcuydum. Bir gün gemimiz okyanusun ortasındaki büyük bir kayaya çarptı. Gemi hızla karanlık sulara gömülmeye başladı. Herkes çok korktu ve küçük teknelere doğru koştu. Şanslıydım çünkü küçük bir teknede kendime bir yer buldum. Yemek veya su olmadan açık denizde birçok gün geçirdik. Güneş gündüzleri çok sıcak, geceleri ise çok soğuktu. Teknede bulunan insanlar sinirli ve zayıf düştü. Dalgaları izledim ve yardım bekledim, ama her yerde sudan başka hiçbir şey göremiyordum. Çok yorgundum ve yakında öleceğimi hissediyordum. Gözlerimi kapattım ve derin, yalnız mavi okyanusun ortasında özel bir olay olmasını diledim.",
-      "Birkaç gün sonra uzakta bir gemi gördüm. Kalan tüm gücümle yardım çığlıkları attım. Gemi yaklaştı ve güvertedeki adamlar küçük teknemizi fark etti. Bizi Ipecacuanha adlı gemilerine aldılar. Kaptan beni karaya çıkarmak istemeyen kaba bir adamdı. Gemide Montgomery adında, kaptandan daha nazik bir adam vardı. Bir doktordu ve gemide kafesler içinde birçok hayvanı vardı. Gizli bir adaya gidiyordu. Ona hikayemi anlattım ve beni kurtarmasını istedim. Bana acıdı ama kaptan beni gemisinde tuttuğu için hala çok sinirliydi. Okyanusu aşan bu yolculuk uzun, sessiz ve nereye gittiğimize dair sırlar doluydu.",
+      "Birçok gün sonra uzakta bir gemi gördüm. Kalan tüm gücümle yardım çığlıkları attım. Gemi yaklaştı ve güvertedeki adamlar küçük teknemizi fark etti. Bizi Ipecacuanha adlı gemilerine aldılar. Kaptan beni karaya çıkarmak istemeyen kaba bir adamdı. Gemide Montgomery adında, kaptandan daha nazik bir adam vardı. Bir doktordu ve gemide kafesler içinde birçok hayvanı vardı. Gizli bir adaya gidiyordu. Ona hikayemi anlattım ve beni kurtarmasını istedim. Bana acıdı ama kaptan beni gemisinde tuttuğu için hala çok sinirliydi. Okyanusu aşan bu yolculuk uzun, sessiz ve nereye gittiğimize dair sırlar doluydu.",
       "Sonunda, hiçbir haritada olmayan küçük bir adaya vardık. Kaptan bana gemide daha fazla kalamayacağımı söyledi. Montgomery, teknede bana yer olmadığını belirterek onunla gelmem gerektiğini söyledi. Küçük bir tekne aldık ve suyun yanındaki kuma doğru ilerledik. Adayı şimdi net bir şekilde görebiliyordum. Uzun ağaçlar ve garip yeşil bitkilerle doluydu. Korktum çünkü burası çok vahşi ve sessiz görünüyordu. Bizi karşılayacak kimse yoktu. Buranın nasıl bir yer olduğunu ve Montgomery'nin neden hayvanlarıyla buraya geldiğini merak ettim. Sıcak kumların üzerinde yürüdüm ve adanın beni beklediğini hissettim. Bu garip ve yalnız adadaki yeni hayatım, bu karanlık yerde başlamak üzereydi.",
       "Adanın sıcak kumlarına üzgün bir kalple adım attım. Montgomery burada olmamdan pek memnun görünmüyordu ama başka çaresi yoktu. Adamlarına kafesleri küçük tekneden kuma taşımalarını söyledi. Ahşap kutuların içinde birçok garip hayvan gördüm. Bazıları daha önce hiç bilmediğim derin sesler çıkarıyordu. Hava kalın ve sıcaktı, çiçek ve tuz kokusuyla doluydu. Önümüzdeki karanlık ağaçlık alana baktım ve omurgamda soğuk bir sarsıntı hissettim. Ada çok sessizdi, sanki nefesini tutuyormuş gibi. Ait olmadığım bir toprağın yabancısı gibi hissettim. Montgomery'ye yakın kalmaya karar verdim çünkü bu gizli ve vahşi yerde yolu bilen tek kişi oydu.",
       "Sık ağaçların içine doğru yürüdükçe, yolu takip etmek zorlaştı. Yapraklar büyük ve koyuydu, yeri güneşten saklıyorlardı. Gölgelerde hareket eden yaratıkların seslerini duyuyordum ama onları net bir şekilde göremiyordum. Montgomery hızlı hareket ediyor ve arkasına bakmıyordu. Bu tehlikeli ağaçlık alanı çok iyi biliyor gibi görünüyordu. Uzun bir yürüyüşten sonra, düz bir açık alanda duran bir eve vardık. Yüksek bir çit ile çevrili, büyük, taştan bir binaydı. Güvende olmak için bir yer gördüğüm için rahatladım. Ancak ev eski ve yalnız görünüyordu. İçinde kimin yaşadığını ve neden bu kadar korunmaya ihtiyaç duyduklarını merak ettim. Adanın gizemi daha da ağırlaşmaya başladı ve bu garip, saklı ve sessiz gri duvarların ardındaki sırrı öğrenmek istedim.",
-      "Kapıya ulaştığımızda, bir adam bizi içeri almak için açtı. Uzun boyluydu, beyaz saçlıydı ve beni yakından izleyen keskin gözleri vardı. Bakışları altında kendimi rahatsız hissettim. Bana hoş geldin diye tek kelime etmedi. Montgomery onunla alçak sesle konuştu ve ismimi söylediğini duydum. Adam bana tekrar baktı ve gözlerindeki soğuk ışığı gördüm. Hayatında çok şey görmüş birine benziyordu. Çok zeki ama aynı zamanda çok tehlikeli olduğunu hissettim. Adam gece dinlenebileceğim bir odayı işaret etti. İçeri girdim ve küçük bir ahşap sandalyeye oturdum. Çok yorgundum ama zihnim, bu karanlık, yalnız ve gizli adada gördüğüm garip şeyleri düşünmeyi bırakamıyordu.",
+      "Kapıya ulaştığımızda, bir adam içeri girmemiz için kapıyı açtı. Uzun boyluydu, beyaz saçlıydı ve beni yakından izleyen keskin gözleri vardı. Bakışları altında kendimi rahatsız hissettim. Bana hoş geldin diye tek kelime etmedi. Montgomery onunla alçak sesle konuştu ve ismimi söylediğini duydum. Adam bana tekrar baktı ve gözlerindeki soğuk ışığı gördüm. Hayatında çok şey görmüş birine benziyordu. Çok zeki ama aynı zamanda çok tehlikeli olduğunu hissettim. Adam gece dinlenebileceğim bir odayı işaret etti. İçeri girdim ve küçük bir ahşap sandalyeye oturdum. Çok yorgundum ama zihnim, bu karanlık, yalnız ve gizli adada gördüğüm garip şeyleri düşünmeyi bırakamıyordu.",
       "Ertesi sabah erkenden uyandım ama kilitli odadan dışarı çıkacak bir yol bulamadım. Bu garip evde bir hapishanedeymiş gibi hissediyordum. Pencereden, yakındaki bir binadan gelen yüksek, acı dolu çığlıklar duydum. Sanki büyük acı çeken bir hayvan ya da derin acı çeken bir insan sesi gibiydi. Çok korkmuştum ve ne yapacağımı bilmiyordum. Montgomery sonunda görünene kadar kapıya vurdum. Yorgun görünüyordu ve sesleri açıklamak istemiyordu. Doktor Moreau'nun önemli testler üzerinde çalıştığını söyledi. Ona neden bu kadar çok hayvanı böyle yalnız bir yerde tuttuğunu sordum. Ciddi bir yüzle bana baktı ve soru sormamamı söyledi. Beni tekrar yalnız bıraktı ve arkamdan kapıyı kilitleyerek sessizlik içinde kalmamı sağladı.",
       "Çığlıklar saatlerce devam etti ve korkudan kalbimin hızla çarpmasına neden oldu. Pencereden odadan kaçmaya karar verdim. Dışarı tırmandım ve bahçeye atlayarak sık çalıların arasında sessizce ilerledim. O gizli yerde neler olduğunu görmek istedim. Seslerin geldiği binaya ulaştım ve duvardaki bir çatlaktan içeri baktım. Gördüğüm şey kendimi hasta ve soğuk hissetmeme neden oldu. Hem hayvana hem de insana benzeyen bir yaratık gördüm. Bir masaya bağlanmıştı ve Doktor Moreau keskin aletlerle başında duruyordu. Doktor çok kaba bir tıbbi operasyon gerçekleştiriyordu. Çalışmasını izlerken gözlerime inanamadım. Hayvanları daha çok insan gibi yapmak için değiştirdiği açıktı.",
       "Binadan uzağa koştum, tamamen kaybolmuş hissettim ve gördüğüm manzara karşısında dehşete düştüm. Bu korkunç yerin gerçeğiyle nasıl başa çıkacağımı bilmiyordum. Kaçamadığım kötü bir rüyanın içindeymişim gibi hissettim. Ağaçlık alana doğru koştum çünkü o evde o iki adamla daha fazla kalamazdım. Ağaçlar beni izliyormuş gibi hissettirdi ve gölgeler sanki bir niyetle hareket ediyordu. Doğa kanunlarını ve bu doktorun onları nasıl çiğnediğini düşündüm. Bacaklarım zayıf hissettirdi ve zihnim gelecek hakkında sorularla doluydu. Tehlikede olduğumu biliyordum ama teknem yoktu ve adadan ayrılmanın bir yolu yoktu. Doktordan saklanırken bu garip ve ürkütücü yaratıklar arasında yaşamaya devam etmenin bir yolunu bulmalıydım.",
       "Karanlık ağaçlık alanda saatlerce dolaştım, sonunda tuhaf bir yaratıkla karşılaştım. İki ayağı üzerinde yürüyordu ama tüylü bir yüzü ve keskin, sarı gözleri vardı. Canavar bana merak ve korkuyla bakıyor, tıpkı bir insan gibi davranıyordu. Üzerinde kıyafetler olduğunu ve dikkatli, titrek bir hareketle yürüdüğünü fark ettim. Onunla konuşmaya çalıştım ama anlamadığım tuhaf sesler çıkardı. Aniden, yumuşak çimlerin üzerinde önümde diz çöktü. Bana Yasayı bilip bilmediğimi sordu. Kafam karışmıştı ama yaratık et yememek ve iki ayak üzerinde yürümekle ilgili tuhaf, ritmik bir kodun sözlerini söylemeye başladı. Bir canavarın insan olmaya bu kadar çabalamasını görmek korkutucuydu. Adanın, hepsi yaratıcılarından sürekli korku içinde yaşayan bu bozulmuş hayvanlarla dolu olduğunu fark ettim.",
       "Yürüyüşüme devam ederken kuma yakın bir yerde bu yaratıklardan oluşan büyük bir grup buldum. Bir daire içinde oturmuş, yaratıcıdan ve evin kurallarından bahseden uzun, ince bir figürü dinliyorlardı. Büyük bir ağacın arkasına saklandım ve onları sessizce izledim. Dua ediyor, acı ve doktorun evi hakkında sözler haykırıyor gibiydiler. Moreau'nun onları kontrol etmek için korkuyu kullandığı açıktı. Bedenlerini değiştirdi ama aynı zamanda zihinlerini de katı kurallarla değiştirmeye çalıştı. Hayvanlar, gerçek anlamda insan olamadıkları için acı çekiyorlardı, yine de her gün insan gibi davranmaya çalışıyorlardı. Onlar için derin bir üzüntü hissettim. Onlar, tanrıcılık oynayan bir adamın mahkumlarıydı; kendi doğalarına ait olmayan bir hayatı yaşamaya zorlanıyorlardı.",
-      "Güneş batmaya başladı ve sıcak kumların üzerinde gölgeler uzadı. Ağaçlık alanda sonsuza kadar kalamayacağımı biliyordum ama eve dönmek tehlikeliydi. Bir silah bulup kendimi doktora karşı savunmak için güçlü bir istek duydum. Sık bitki örtüsünün arasından çok dikkatli bir şekilde geçerek karanlık binaya doğru geri yürüdüm. Doktoru verandasının üzerinde, soğuk ve yalnız bir ifadeyle okyanusa bakarken gördüm. Yaptıklarından dolayı suçluluk duyan bir adam gibi görünmüyordu. Yaptığı işten gurur duyan bir bilim insanı gibiydi. Kalbim hızla çarpıyor, ellerim öfkeden titriyordu. Zeki biri karşısında sadece bir insandım ama daha fazla hayvan onun bıçağıyla yok olmadan önce, onun kaba testlerini durdurmanın bir yolunu bulmam gerektiğini biliyordum.",
+      "Güneş batmaya başladı ve sıcak kumların üzerinde gölgeler uzadı. Ağaçlık alanda sonsuza kadar kalamayacağımı biliyordum ama eve dönmek tehlikeliydi. Bir silah bulup kendimi doktora karşı savunmak için güçlü bir istek duydum. Sık bitki örtüsünün arasından çok dikkatli bir şekilde geçerek karanlık binaya doğru geri yürüdüm. Doktoru verandasında otururken, soğuk ve yalnız bir ifadeyle okyanusa bakarken gördüm. Yaptıklarından dolayı suçluluk duyan bir adam gibi görünmüyordu. Yaptığı işten gurur duyan bir bilim insanı gibiydi. Kalbim hızla çarpıyor, ellerim öfkeden titriyordu. Zeki bir kişiye karşı sadece tek bir adamdım ama daha fazla hayvan onun bıçağıyla yok olmadan önce, onun kaba testlerini durdurmanın bir yolunu bulmam gerektiğini biliyordum.",
       "Adanın üzücü hikayesi, yaratıklar sonunda doktora olan korkularını yitirdiklerinde sona erdi. Onun asla ölemeyecek bir tanrı değil, sadece insan bir adam olduğunu gördüler. Bir zamanlar gururlu bir leopar olan devasa bir canavar kafesinden kaçtı ve alan boyunca vahşi bir sorun yarattı. Doktor onu durdurmaya çalıştı ancak kendi yarattığı şeyin vahşi gücü karşısında yenik düştü. Mücadeleyi uzaktan izledim ve adadaki dengenin sonsuza dek bozulduğunu anladım. Kurallar unutulmuştu ve hayvanların vahşi doğası şiddetli bir güçle geri dönmüştü. Moreau, değiştirmeye çalıştığı şey tarafından öldürülerek tozun içinde can verdi. Efendileri olmadan yaratıklar amaçsızca ağaçlık alanda dolaşarak kayboldular ve şaşkına döndüler. Deney tamamen yıkıma uğradığı için adanın karanlığı her zamankinden daha ağır hissediliyordu.",
       "Küçük bir tekneye bindim ve o korkunç yeri arkamda bıraktım. Kalbim ağırdı ve zihnim, hayatımın geri kalanında benimle kalacağını bildiğim karanlık hatıralarla doluydu. Bir kötü rüyadan çıkmış bir hayalet gibi hissederek günlerce boş okyanusta yelken açtım. Bir gemi sonunda beni bulduğunda onlara hikayemi anlattım ama deli olduğumu düşündüler. Bir insanın hayvanları operasyon ve acı yoluyla insanlara dönüştürmesini hayal edemiyorlardı. Gördüğüm gerçeği bildiğim için onların inanmamaları umurumda değildi. Londra'ya döndüm ama şehir garip ve soğuk geliyordu. Sokaktaki bir insanın gözlerinin içine her baktığımda, içindeki canavarın küçük bir ışığını görüyordum. Dünya başka bir ada gibiydi ve ben de korkumu gizlemeye çalışan başka bir hayvandım.",
       "Şimdi şehrin kalabalık sokaklarından uzakta, sessiz bir evde yaşıyorum. Zamanımı kitap okuyarak ve sessizlikte huzur bulmayı umarak yıldızları izleyerek geçiriyorum. Adanın hatırası asla silinmeyen bir gölge gibi, insan ile canavar arasındaki ince çizgiyi bana hatırlatıyor. İnsanların Moreau'nun yarattığı yaratıklardan gerçekten çok mu farklı olduğunu merak ediyorum. Kendi yasalarımız, kendi korkularımız ve bizden zayıf olanlara karşı kendi kaba yöntemlerimiz var. Bazen doktorun hepimizin içinde hala yaşadığını, doğamızı kendi fikirlerine uydurmak için değiştirmeye çalıştığını düşünüyorum. Artık yalnız bir adamım ama nihayet özgürüm. Pencerenin önünden geçen insanlara bakıyorum ve o adada bıraktığım kırık şeylerden daha iyi olabilmemiz için dua ediyorum."
     ],
     words: {
-      "passenger": "yolcu",
-      "sink": "batmak",
-      "miracle": "özel bir olay",
-      "strength": "güç",
-      "mysterious": "gizli",
-      "beach": "kum",
-      "shiver": "sarsıntı",
-      "shelter": "güvenlik",
-      "clearing": "düz açık alan",
-      "gaze": "bakış",
-      "isolated": "yalnız",
-      "prisoner": "hapisteki kişi",
-      "scream": "bağırma",
-      "experiment": "test",
-      "surgery": "tıbbi operasyon",
-      "cruel": "kaba",
+      "traveler": "yolcu",
+      "ocean": "okyanus",
+      "captain": "kaptan",
+      "secret": "gizli",
+      "sand": "kum",
+      "safety": "güvenlik",
+      "gate": "kapı",
+      "jail": "hapishane",
+      "cry": "çığlık",
+      "operation": "operasyon",
       "terrified": "dehşete düşmüş",
       "creature": "yaratık",
-      "rhythm": "ritim",
-      "creator": "yaratıcı",
-      "strict": "sert",
-      "guilt": "suçluluk",
-      "genius": "zeki kişi",
-      "tragedy": "üzücü hikaye",
-      "mortal": "insan",
-      "chaos": "vahşi sorun",
-      "savage": "vahşi",
-      "nightmare": "kötü rüya",
-      "flicker": "küçük bir ışık"
+      "maker": "yaratıcı",
+      "prisoner": "mahkum",
+      "blame": "suçluluk",
+      "wild": "vahşi",
+      "ruin": "yıkım",
+      "dream": "rüya"
     }
   },
-            {
+              {
     id: 'scifi_first_men_moon',
     title: "The First Men in the Moon",
     author: 'H. G. Wells',
     level: 'A2',
     coverUrl: '/covers/scifi_first_men_moon.webp',
     en: [
-      "Mr. Bedford was a man who wanted to write a story. He moved to a small, quiet house in the country. He chose this place because it was very cheap and peaceful. He wanted to be alone to finish his work without any noise. However, he soon met a strange man named Mr. Cavor. Mr. Cavor was a small man with a big head and glasses. He always walked around the hills with a book in his hand. One morning, Mr. Bedford decided to speak to him. He found Mr. Cavor near a group of rocks. Cavor was busy with his work, but he looked friendly enough. Mr. Bedford felt interested in this odd man. He wanted to know why Cavor came to this quiet place every single day. This was the beginning of a strange and long friendship between the two men.",
-      "Mr. Cavor told Mr. Bedford that he was a man of science. He was working on a secret test. He made a new metal called Cavorite. This special metal could stop the pull of the earth. If you put Cavorite around an object, the earth would not pull it down anymore. Mr. Bedford was very surprised and excited. He thought about the money they could make. He imagined traveling to the stars and finding new worlds. Mr. Cavor agreed to show him the material in his work area. Inside the shed, everything looked messy and very busy. There were glass tubes, wires, and strange tools everywhere. The air felt heavy and hot. Mr. Bedford watched carefully as Cavor prepared a small piece of metal. He could not believe that this simple material could change the whole world of science forever.",
-      "The test worked perfectly in front of Mr. Bedford’s eyes. A small piece of metal quickly moved up toward the roof. It did not fall down, even though there was nothing to hold it. Mr. Bedford saw that the pull of the earth had no power over this object. They began to plan a giant ball for their trip. They wanted to build a metal ball that could carry two men. It would be strong and safe for a trip to the moon. Mr. Bedford realized that they would be the first people to ever leave the planet. He felt both afraid and happy about this plan. The moon was a puzzle that nobody had ever solved before. Now, with Cavorite, they had a real chance to see the top of the moon. They started buying parts to build their great flying machine.",
+      "Mr. Bedford was a man who wanted to write a story. He moved to a small, quiet house in the country. He chose this place because it was very cheap and peaceful. He wanted to be alone to finish his work without any noise. However, he soon met a strange man named Mr. Cavor. Mr. Cavor was a small man with a big head and glasses. He always walked around the hills with a book in his hand. One morning, Mr. Bedford decided to speak to him. He found Mr. Cavor near a group of rocks. Cavor was busy with his work, but he looked friendly. Mr. Bedford felt interested in this odd man. He wanted to know why Cavor came to this quiet place every single day. This was the beginning of a strange and long friendship between the two men.",
+      "Mr. Cavor told Mr. Bedford that he was a man of science. He was working on a secret test. He made a new metal called Cavorite. This special metal could stop the pull of the earth. If you put Cavorite around an object, the earth would not pull it down anymore. Mr. Bedford was very surprised and excited. He thought about the money they could make. He imagined traveling to the stars and finding new worlds. Mr. Cavor agreed to show him the material in his work area. Inside the shed, everything looked messy and busy. There were glass tubes, wires, and strange tools everywhere. The air felt heavy and hot. Mr. Bedford watched carefully as Cavor prepared a small piece of metal. He could not believe that this simple material could change the whole world of science forever.",
+      "The test worked perfectly in front of Mr. Bedford’s eyes. A small piece of metal quickly moved up toward the roof. It did not fall down, even though there was nothing to hold it. Mr. Bedford saw that the pull of the earth had no power over this object. They began to plan a big ball for their trip. They wanted to build a metal ball that could carry two men. It would be strong and safe for a trip to the moon. Mr. Bedford realized that they would be the first people to ever leave the planet. He felt both afraid and happy about this plan. The moon was a puzzle that nobody had ever solved before. Now, with Cavorite, they had a real chance to see the top of the moon. They started buying parts to build their great flying machine.",
       "The building of the ball became their only goal during those long, quiet days in the country. They built a large metal ball that was strong enough to protect them from the cold of space. They covered every part of this machine with thin sheets of Cavorite to stop the earth from pulling them down. It was hard work, but Mr. Bedford was excited about the future. He imagined gold and diamonds waiting for them on the moon. Mr. Cavor, however, was only interested in the science of the moon. He wanted to learn about the history of the stars. They spent all their money on the best steel and tools. The shed was filled with the sound of hammers and the smell of hot metal. Every day, the ball grew larger, looking like a silver egg ready to hatch a journey into the dark stars.",
       "As the ball was nearly finished, the two men felt a mix of hope and deep fear. They added comfortable chairs, air tanks, and plenty of water inside the room. Mr. Bedford looked at the moon in the night sky and wondered if he would ever see the green grass of Earth again. They made small windows that could close with thick metal doors. Inside the machine, everything was organized perfectly to help them stay alive for the long trip. Mr. Cavor was very careful with the final pieces of Cavorite. He knew that even one small mistake would mean the end for both of them. The silence of the country felt different now, as if the world was watching their secret work. They were ready to leave everything they knew behind and fly toward the giant, glowing ball that hung in the sky above them.",
       "On the final day, the air felt very still, and the birds stopped singing in the trees near the shed. Mr. Bedford helped Mr. Cavor enter the metal ball through a small door. The space was tight, but it felt safe and strong. They checked their bags one last time, making sure they had enough food and paper to write what they saw. Mr. Cavor moved the final pieces of Cavorite to cover the remaining holes in the ball. Suddenly, the pull of the Earth stopped. They did not feel heavy anymore, and the world below seemed to lose its power over them. The ball moved smoothly, starting its journey upward into the blue sky. The wind moved around them for a moment, and then there was only the quiet and cold of the vast, black space stretching out before their eyes.",
@@ -14544,9 +15239,9 @@ export const STORIES_PART1: RawStory[] = [
       "In the end, Mr. Bedford managed to run to the top while Mr. Cavor stayed to learn more about this strange group of people. Mr. Bedford found their ship and flew back to Earth, landing in the sea and then traveling back home. He wrote their story down, but he knew that people might not believe him. He sat alone at night, looking up at the bright moon, wondering if Mr. Cavor was still there, living among the Selenites and sharing the knowledge of humanity. He felt lonely and sad, knowing that he had seen a world beyond thought but could never go back to help his friend. The moon remained a silent, distant light in the sky, keeping its secrets safe forever. He realized that the world of space was much bigger than anyone could think and that humanity was only just beginning to learn its many hidden, old mysteries."
     ],
     tr: [
-      "Bay Bedford bir hikaye yazmak isteyen bir adamdı. Kırsalda küçük, sessiz bir eve taşındı. Burayı çok ucuz ve huzurlu olduğu için seçti. İşi bitirmek için gürültüden uzak, yalnız kalmak istiyordu. Ancak kısa süre sonra Bay Cavor adında tuhaf bir adamla tanıştı. Bay Cavor, büyük kafalı ve gözlüklü, küçük bir adamdı. Elinde kitabıyla sürekli tepelerde dolaşıyordu. Bir sabah Bay Bedford onunla konuşmaya karar verdi. Bay Cavor'u kayalıkların yakınında buldu. Cavor işiyle meşguldü ama oldukça arkadaş canlısı görünüyordu. Bay Bedford bu tuhaf adamı merak etti. Cavor'un her gün neden bu sessiz yere geldiğini bilmek istiyordu. Bu, iki adam arasında başlayan tuhaf ve uzun bir dostluğun başlangıcıydı.",
+      "Bay Bedford bir hikaye yazmak isteyen bir adamdı. Kırsalda küçük, sessiz bir eve taşındı. Burayı çok ucuz ve huzurlu olduğu için seçti. İşi bitirmek için gürültüden uzak, yalnız kalmak istiyordu. Ancak kısa süre sonra Bay Cavor adında tuhaf bir adamla tanıştı. Bay Cavor, büyük kafalı ve gözlüklü, küçük bir adamdı. Elinde kitabıyla sürekli tepelerde dolaşıyordu. Bir sabah Bay Bedford onunla konuşmaya karar verdi. Bay Cavor'u kayalıkların yakınında buldu. Cavor işiyle meşguldü ama arkadaş canlısı görünüyordu. Bay Bedford bu tuhaf adamı merak etti. Cavor'un her gün neden bu sessiz yere geldiğini bilmek istiyordu. Bu, iki adam arasında başlayan tuhaf ve uzun bir dostluğun başlangıcıydı.",
       "Bay Cavor, Bay Bedford'a bir bilim insanı olduğunu söyledi. Gizli bir test üzerinde çalışıyordu. Cavorite adında yeni bir metal yaptı. Bu özel metal, dünyanın çekimini durdurabiliyordu. Eğer bir nesnenin etrafına Cavorite koyarsanız, dünya onu artık aşağı çekmezdi. Bay Bedford çok şaşırdı ve heyecanlandı. Kazanabilecekleri parayı düşündü. Yıldızlara seyahat etmeyi ve yeni dünyalar bulmayı hayal etti. Bay Cavor ona malzemeyi çalışma alanında göstermeyi kabul etti. Kulübenin içi çok dağınık ve yoğundu. Her yerde cam tüpler, kablolar ve tuhaf aletler vardı. Hava ağır ve sıcaktı. Bay Bedford, Cavor küçük bir metal parçasını hazırlarken dikkatle izledi. Bu basit malzemenin tüm bilim dünyasını sonsuza dek değiştirebileceğine inanamıyordu.",
-      "Test, Bay Bedford'un gözleri önünde mükemmel bir şekilde işledi. Küçük bir metal parçası çatıya doğru hızla hareket etti. Onu tutacak hiçbir şey olmamasına rağmen aşağı düşmedi. Bay Bedford, dünyanın çekiminin bu nesne üzerinde hiçbir gücü olmadığını gördü. Yolculukları için dev bir top planlamaya başladılar. İki adamı taşıyabilecek metal bir top yapmak istediler. Ay'a yapılacak bir yolculuk için güçlü ve güvenli olacaktı. Bay Bedford, gezegeni terk eden ilk insanlar olacaklarını fark etti. Bu plan hakkında hem korkuyor hem de mutlu oluyordu. Ay, daha önce kimsenin çözemediği bir bulmacaydı. Şimdi, Cavorite ile Ay'ın tepesini görmek için gerçek bir şansları vardı. Harika uçan makinelerini inşa etmek için parçalar almaya başladılar.",
+      "Test, Bay Bedford'un gözleri önünde mükemmel bir şekilde işledi. Küçük bir metal parçası çatıya doğru hızla hareket etti. Onu tutacak hiçbir şey olmamasına rağmen aşağı düşmedi. Bay Bedford, dünyanın çekiminin bu nesne üzerinde hiçbir gücü olmadığını gördü. Yolculukları için büyük bir top planlamaya başladılar. İki adamı taşıyabilecek metal bir top yapmak istediler. Ay'a yapılacak bir yolculuk için güçlü ve güvenli olacaktı. Bay Bedford, gezegeni terk eden ilk insanlar olacaklarını fark etti. Bu plan hakkında hem korkuyor hem de mutlu oluyordu. Ay, daha önce kimsenin çözemediği bir bulmacaydı. Şimdi, Cavorite ile Ay'ın tepesini görmek için gerçek bir şansları vardı. Harika uçan makinelerini inşa etmek için parçalar almaya başladılar.",
       "Topun inşası, kırsaldaki o uzun ve sessiz günlerde tek hedefleri haline geldi. Onları uzayın soğuğundan koruyacak kadar güçlü, büyük bir metal top inşa ettiler. Dünyanın onları aşağı çekmesini engellemek için bu makinenin her tarafını ince Cavorite tabakalarıyla kapladılar. Zor bir işti ama Bay Bedford gelecek konusunda heyecanlıydı. Ay'da onları bekleyen altın ve elmasların hayalini kuruyordu. Ancak Bay Cavor sadece Ay'ın bilimiyle ilgileniyordu. Yıldızların tarihi hakkında bir şeyler öğrenmek istiyordu. Tüm paralarını en iyi çelik ve aletlere harcadılar. Baraka, çekiç sesleri ve sıcak metal kokusuyla doluydu. Top her geçen gün büyüyor, karanlık yıldızlara doğru bir yolculuğa çıkmaya hazırlanan gümüş bir yumurtayı andırıyordu.",
       "Top tamamlanmaya yaklaştıkça, iki adam bir umut ve derin bir korku karışımı hissetti. Odanın içine rahat sandalyeler, hava tankları ve bol miktarda su eklediler. Bay Bedford gece gökyüzündeki Ay'a baktı ve bir daha Dünya'nın yeşil çimenlerini görüp göremeyeceğini merak etti. Kalın metal kapılarla kapanabilen küçük pencereler yaptılar. Makinenin içinde her şey, uzun yolculuklarında hayatta kalmalarına yardımcı olmak için mükemmel bir şekilde düzenlenmişti. Bay Cavor, Cavorite'in son parçaları konusunda çok dikkatliydi. Tek bir küçük hatanın ikisi için de son anlamına geleceğini biliyordu. Kırsalın sessizliği artık farklı geliyordu; sanki dünya onların gizli çalışmalarını izliyordu. Bildikleri her şeyi geride bırakıp yukarıda gökyüzünde asılı duran dev, parlayan topa doğru uçmaya hazırlandılar.",
       "Son gün hava çok durgundu ve barakanın yakınındaki ağaçlarda kuşlar şarkı söylemeyi bıraktı. Bay Bedford, Bay Cavor'un küçük bir kapıdan metal topa girmesine yardım etti. Yer dardı ama güvenli ve güçlü hissettiriyordu. Gördüklerini yazmak için yeterince yiyecekleri ve kağıtları olduğundan emin olarak çantalarını son bir kez kontrol ettiler. Bay Cavor, toptaki kalan delikleri kapatmak için Cavorite'in son parçalarını hareket ettirdi. Aniden, Dünya'nın çekimi durdu. Artık ağır hissetmiyorlardı ve aşağıdaki dünya üzerlerindeki gücünü kaybetmiş gibi görünüyordu. Top, mavi gökyüzüne doğru yolculuğuna başlayarak pürüzsüz bir şekilde hareket etti. Rüzgar bir an için etraflarında hareket etti ve sonra gözlerinin önünde uzanan uçsuz bucaksız, kara boşluğun sessizliği ve soğukluğu kaldı.",
@@ -14561,35 +15256,257 @@ export const STORIES_PART1: RawStory[] = [
       "Sonunda, Bay Cavor bu garip grup hakkında daha fazla şey öğrenmek için orada kalırken, Bay Bedford tepeye koşmayı başardı. Bay Bedford gemilerini buldu ve Dünya'ya geri uçtu, denize indi ve ardından evine döndü. Hikayelerini kaleme aldı ancak insanların ona inanmayabileceğini biliyordu. Gece tek başına oturdu, parlak Ay'a baktı ve Bay Cavor'un hala orada olup olmadığını, Selenitler arasında yaşayıp insanlığın bilgisini paylaşıp paylaşmadığını merak etti. Hayal gücünün ötesinde bir dünya gördüğünü ama arkadaşına yardım etmek için asla geri dönemeyeceğini bilerek yalnız ve hüzünlü hissediyordu. Ay, sırlarını sonsuza dek koruyarak gökyüzünde sessiz ve uzak bir ışık olarak kaldı. Uzay dünyasının kimsenin hayal edemeyeceğinden çok daha büyük olduğunu ve insanlığın henüz birçok gizli, eski gizemini öğrenmeye yeni başladığını fark etti."
     ],
     words: {
-      "gravity": "yerçekimi/çekim",
+      "peaceful": "huzurlu",
+      "friendly": "arkadaş canlısı",
+      "interested": "meraklı",
+      "odd": "tuhaf",
       "scientist": "bilim insanı",
-      "experiment": "test",
+      "secret": "gizli",
       "metal": "metal",
-      "sphere": "top/küre",
+      "pull": "çekim/çekme gücü",
+      "surprised": "şaşırmış",
+      "imagined": "hayal etti",
+      "material": "malzeme",
+      "messy": "dağınık",
+      "tools": "aletler",
+      "prepared": "hazırladı",
+      "perfectly": "mükemmel bir şekilde",
+      "power": "güç",
+      "plan": "planlamak",
+      "machine": "makine",
+      "goal": "hedef",
+      "protect": "korumak",
+      "space": "uzay",
+      "sheets": "tabaka",
+      "future": "gelecek",
+      "diamonds": "elmaslar",
+      "history": "tarih",
+      "sound": "ses",
+      "smell": "koku",
       "journey": "yolculuk",
-      "construction": "inşa/yapım",
-      "shutter": "kapak/kapı",
-      "survive": "hayatta kalmak",
-      "orb": "küre/top",
-      "surface": "yüzey/tepe/zemin",
-      "crater": "delik",
-      "research": "araştırma/çalışma",
-      "intensity": "şiddet/güç",
-      "adventure": "macera/yolculuk",
-      "atmosphere": "hava",
-      "tunnel": "tünel/yol",
-      "discovery": "keşif",
-      "inhabitant": "insan/sakin",
-      "rhythmic": "ritmik/düzenli",
-      "shadow": "gölge/karanlık nokta",
-      "intelligent": "zeki/akıllı",
-      "aggressive": "saldırgan/kötü",
-      "civilization": "medeniyet/grup",
-      "transparent": "şeffaf/açık",
-      "mystery": "gizem/bulmaca"
+      "hope": "umut",
+      "fear": "korku",
+      "comfortable": "rahat",
+      "tanks": "tanklar",
+      "windows": "pencereler",
+      "organized": "düzenlenmiş",
+      "alive": "hayatta",
+      "careful": "dikkatli",
+      "mistake": "hata",
+      "silence": "sessizlik",
+      "ready": "hazır",
+      "still": "hala",
+      "singing": "şarkı söylemek",
+      "tight": "dar",
+      "safe": "güvenli",
+      "strong": "güçlü",
+      "checked": "kontrol ettiler",
+      "suddenly": "aniden",
+      "stopped": "durdu",
+      "anymore": "artık",
+      "smoothly": "pürüzsüzce",
+      "upward": "yukarı doğru",
+      "vast": "uçsuz bucaksız",
+      "stretching": "uzanan",
+      "floated": "yüzen",
+      "steady": "düzenli",
+      "nervous": "gergin",
+      "riches": "zenginlikler",
+      "meals": "yemekler",
+      "freedom": "özgürlük",
+      "dusty": "tozlu",
+      "mountains": "dağlar",
+      "guided": "rehberlik edildi",
+      "lonely": "yalnız",
+      "signs": "işaretler",
+      "excitement": "heyecan",
+      "shining": "parlayan",
+      "hit": "çarptı",
+      "soft": "yumuşak",
+      "world": "dünya",
+      "light": "ışık",
+      "force": "güç",
+      "plants": "bitkiler",
+      "heat": "ısı",
+      "scary": "korkutucu",
+      "shapes": "şekiller",
+      "clothes": "giysiler",
+      "breathe": "nefes almak",
+      "thin": "ince",
+      "silver": "gümüş",
+      "ground": "zemin",
+      "walked": "yürüdüler",
+      "silent": "sessiz",
+      "found": "buldu",
+      "hot": "sıcak",
+      "change": "değişmek",
+      "noise": "gürültü",
+      "beneath": "altında",
+      "deep": "derin",
+      "realized": "fark etti",
+      "living": "yaşayan",
+      "secrets": "sırları",
+      "temperature": "sıcaklık",
+      "moss": "yosun",
+      "walls": "duvarlar",
+      "caves": "mağaralar",
+      "existed": "var olmak",
+      "kingdom": "krallık",
+      "huge": "devasa",
+      "lunar": "Ay'a ait",
+      "wide": "geniş",
+      "heart": "kalp",
+      "disappeared": "kayboldu",
+      "lamp": "lamba",
+      "warmer": "daha sıcak",
+      "easily": "kolayca",
+      "towers": "kuleler",
+      "buildings": "binalar",
+      "built": "inşa etmişti",
+      "scared": "korkmuş",
+      "shocked": "şok olmuş",
+      "return": "geri dönmek",
+      "curious": "meraklı",
+      "center": "merkez",
+      "regular": "düzenli",
+      "machines": "makineler",
+      "distance": "uzaklık",
+      "echoes": "yankılar",
+      "clear": "şeffaf",
+      "people": "insanlar",
+      "selenites": "Selenitler",
+      "close": "yakın",
+      "surface": "yüzey",
+      "creatures": "yaratıklar",
+      "bright": "parlak",
+      "moving": "hareket eden",
+      "shake": "titremek",
+      "beat": "vuruş",
+      "danced": "dans etti",
+      "nearer": "daha yakın",
+      "beating": "atıyor",
+      "chest": "göğüs",
+      "explorers": "kaşifler",
+      "chapter": "bölüm",
+      "cold": "soğuk",
+      "paths": "yollar",
+      "appeared": "belirdiler",
+      "order": "düzen",
+      "large": "iri",
+      "smart": "akıllı",
+      "pale": "soluk",
+      "bodies": "bedenler",
+      "different": "farklı",
+      "humans": "insanlar",
+      "long": "uzun",
+      "arms": "kollar",
+      "bug-like": "böceğe benzeyen",
+      "heads": "kafalar",
+      "wonder": "merak",
+      "safety": "güvenlik",
+      "shone": "parladı",
+      "gold": "altın",
+      "surrounded": "çevrelediler",
+      "clicking": "tıklama",
+      "sounds": "sesler",
+      "beings": "varlıklar",
+      "advanced": "gelişmiş",
+      "society": "toplum",
+      "strict": "katı",
+      "rules": "kurallar",
+      "simple": "basit",
+      "watched": "izledi",
+      "closely": "dikkatle",
+      "bad": "kötü",
+      "calm": "sakin",
+      "behavior": "davranış",
+      "tense": "gergin",
+      "happened": "olacakları",
+      "next": "sonraki",
+      "room": "oda",
+      "inside": "içinde",
+      "massive": "devasa",
+      "thousands": "binlerce",
+      "around": "etrafta",
+      "city": "şehir",
+      "hidden": "gizli",
+      "rocky": "kayalık",
+      "factories": "fabrikalar",
+      "beautiful": "güzel",
+      "lights": "ışıklar",
+      "stars": "yıldızlar",
+      "amazed": "hayran kaldı",
+      "science": "bilim",
+      "inventions": "icatlar",
+      "notes": "notlar",
+      "book": "kitap",
+      "leave": "ayrılmak",
+      "reach": "ulaşmak",
+      "controlled": "kontrol ediliyordu",
+      "prisoners": "mahkumlar",
+      "amazing": "şaşırtıcı",
+      "danger": "tehlike",
+      "corner": "köşe",
+      "saw": "gördüler",
+      "pipes": "borular",
+      "air": "hava",
+      "busy": "meşgul",
+      "working": "çalışan",
+      "completely": "tamamen",
+      "above": "yukarıda",
+      "managed": "başardı",
+      "run": "koşmak",
+      "stayed": "kaldı",
+      "learn": "öğrenmek",
+      "group": "grup",
+      "ship": "gemi",
+      "flew": "uçtu",
+      "landing": "iniş",
+      "sea": "deniz",
+      "traveling": "seyahat",
+      "home": "ev",
+      "wrote": "yazdı",
+      "story": "hikaye",
+      "might": "belki",
+      "believe": "inanmak",
+      "sat": "oturdu",
+      "alone": "yalnız",
+      "night": "gece",
+      "looking": "bakıyor",
+      "up": "yukarı",
+      "sky": "gökyüzü",
+      "wondering": "merak ediyor",
+      "there": "orada",
+      "among": "arasında",
+      "sharing": "paylaşan",
+      "knowledge": "bilgi",
+      "humanity": "insanlık",
+      "sad": "üzgün",
+      "knowing": "bilerek",
+      "seen": "görmüştü",
+      "beyond": "ötesinde",
+      "thought": "düşünce",
+      "never": "asla",
+      "back": "geri",
+      "help": "yardım etmek",
+      "friend": "arkadaş",
+      "remained": "kaldı",
+      "distant": "uzak",
+      "keeping": "koruyarak",
+      "forever": "sonsuza dek",
+      "bigger": "daha büyük",
+      "anyone": "herkes",
+      "could": "edebilirdi",
+      "think": "düşünmek",
+      "only": "sadece",
+      "just": "sadece",
+      "beginning": "başlangıç",
+      "many": "birçok",
+      "old": "eski",
+      "mysteries": "gizemler"
     }
   },
-            {
+              {
     id: 'scifi_around_moon',
     title: "Around the Moon",
     author: 'Jules Verne',
@@ -14653,7 +15570,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "macera"
     }
   },
-            {
+              {
     id: 'scifi_youth',
     title: "Youth",
     author: 'Isaac Asimov',
@@ -14725,7 +15642,7 @@ export const STORIES_PART1: RawStory[] = [
       "galaxy": "galaksi"
     }
   },
-            {
+              {
     id: 'scifi_reason',
     title: "Reason",
     author: 'Isaac Asimov',
@@ -14795,7 +15712,7 @@ export const STORIES_PART1: RawStory[] = [
       "mission": "görev"
     }
   },
-            {
+              {
     id: 'scifi_food_of_gods',
     title: "The Food of the Gods",
     author: 'H. G. Wells',
@@ -14866,7 +15783,7 @@ export const STORIES_PART1: RawStory[] = [
       "era": "zaman"
     }
   },
-            {
+              {
     id: 'scifi_chocky',
     title: "Chocky",
     author: 'John Wyndham',
@@ -14937,7 +15854,7 @@ export const STORIES_PART1: RawStory[] = [
       "fade": "sönmek/kaybolmak"
     }
   },
-            {
+              {
     id: 'scifi_wells_star',
     title: "The Star",
     author: 'H. G. Wells',
@@ -15005,7 +15922,7 @@ export const STORIES_PART1: RawStory[] = [
       "galaxy": "gökyüzü"
     }
   },
-            {
+              {
     id: 'scifi_new_hope',
     title: "Star Wars: A New Hope",
     author: 'George Lucas',
@@ -15075,7 +15992,7 @@ export const STORIES_PART1: RawStory[] = [
       "peace": "barış"
     }
   },
-            {
+              {
     id: 'scifi_liar',
     title: "Liar!",
     author: 'Isaac Asimov',
@@ -15145,7 +16062,7 @@ export const STORIES_PART1: RawStory[] = [
       "restore": "düzeltmek"
     }
   },
-            {
+              {
     id: 'scifi_strange_case_dr_jekyll',
     title: "Strange Case of Dr Jekyll and Mr Hyde",
     author: 'Robert Louis Stevenson',
@@ -15218,7 +16135,7 @@ export const STORIES_PART1: RawStory[] = [
       "burden": "ağırlık"
     }
   },
-            {
+              {
     id: 'scifi_the_chrysalids',
     title: "The Chrysalids",
     author: 'John Wyndham',
@@ -15287,7 +16204,7 @@ export const STORIES_PART1: RawStory[] = [
       "development": "büyüme"
     }
   },
-            {
+              {
     id: 'detective_scandal_bohemia',
     title: "A Scandal in Bohemia",
     author: 'Arthur Conan Doyle',
@@ -15356,7 +16273,7 @@ export const STORIES_PART1: RawStory[] = [
       "danger": "tehlike"
     }
   },
-            {
+              {
     id: 'detective_copper_beeches',
     title: "The Adventure of the Copper Beeches",
     author: 'Arthur Conan Doyle',
@@ -15427,7 +16344,7 @@ export const STORIES_PART1: RawStory[] = [
       "escape": "kaçmak"
     }
   },
-            {
+              {
     id: 'detective_blue_cross',
     title: "The Blue Cross",
     author: 'G. K. Chesterton',
@@ -15496,7 +16413,7 @@ export const STORIES_PART1: RawStory[] = [
       "victory": "zafer"
     }
   },
-            {
+              {
     id: 'detective_queens_necklace',
     title: "The Queen's Necklace",
     author: 'Maurice Leblanc',
@@ -15565,7 +16482,7 @@ export const STORIES_PART1: RawStory[] = [
       "master": "patron"
     }
   },
-            {
+              {
     id: 'detective_coin_dionysius',
     title: "The Coin of Dionysius",
     author: 'Ernest Bramah',
@@ -15635,7 +16552,7 @@ export const STORIES_PART1: RawStory[] = [
       "truth": "gerçek"
     }
   },
-            {
+              {
     id: 'detective_dancing_men',
     title: "The Adventure of the Dancing Men",
     author: 'Arthur Conan Doyle',
@@ -15704,7 +16621,7 @@ export const STORIES_PART1: RawStory[] = [
       "logic": "akıl"
     }
   },
-            {
+              {
     id: 'detective_red_silk_scarf',
     title: "The Red Silk Scarf",
     author: 'Maurice Leblanc',
@@ -15775,7 +16692,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "macera"
     }
   },
-            {
+              {
     id: 'detective_queer_feet',
     title: "The Queer Feet",
     author: 'G. K. Chesterton',
@@ -15846,7 +16763,7 @@ export const STORIES_PART1: RawStory[] = [
       "mercy": "nazik ve iyi olmak"
     }
   },
-            {
+              {
     id: 'detective_lenton_croft',
     title: "The Case of the Lenton Croft Robberies",
     author: 'Arthur Morrison',
@@ -15918,7 +16835,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "büyük zaman"
     }
   },
-            {
+              {
     id: 'detective_cell_13_part1',
     title: "The Problem of Cell 13 - Part 1",
     author: 'Jacques Futrelle',
@@ -15989,7 +16906,7 @@ export const STORIES_PART1: RawStory[] = [
       "winner": "kazanan"
     }
   },
-            {
+              {
     id: 'detective_study_scarlet_1',
     title: "A Study in Scarlet - Part 1",
     author: 'Arthur Conan Doyle',
@@ -16062,7 +16979,7 @@ export const STORIES_PART1: RawStory[] = [
       "confidence": "inanç"
     }
   },
-            {
+              {
     id: 'detective_study_scarlet_2',
     title: "A Study in Scarlet - Part 2",
     author: 'Arthur Conan Doyle',
@@ -16134,7 +17051,7 @@ export const STORIES_PART1: RawStory[] = [
       "victim": "kurban"
     }
   },
-            {
+              {
     id: 'detective_sign_four_1',
     title: "The Sign of the Four - Part 1",
     author: 'Arthur Conan Doyle',
@@ -16204,7 +17121,7 @@ export const STORIES_PART1: RawStory[] = [
       "justice": "doğru olan"
     }
   },
-            {
+              {
     id: 'detective_sign_four_2',
     title: "The Sign of the Four - Part 2",
     author: 'Arthur Conan Doyle',
@@ -16274,7 +17191,7 @@ export const STORIES_PART1: RawStory[] = [
       "justice": "adalet"
     }
   },
-            {
+              {
     id: 'detective_silver_blaze',
     title: "Silver Blaze",
     author: 'Arthur Conan Doyle',
@@ -16342,7 +17259,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "büyük gezi"
     }
   },
-            {
+              {
     id: 'detective_arrest_lupin',
     title: "The Arrest of Arsène Lupin",
     author: 'Maurice Leblanc',
@@ -16413,7 +17330,7 @@ export const STORIES_PART1: RawStory[] = [
       "custody": "hapis"
     }
   },
-            {
+              {
     id: 'detective_lupin_in_prison',
     title: "Arsène Lupin in Prison",
     author: 'Maurice Leblanc',
@@ -16484,7 +17401,7 @@ export const STORIES_PART1: RawStory[] = [
       "fame": "popülerlik"
     }
   },
-            {
+              {
     id: 'detective_escape_lupin',
     title: "The Escape of Arsène Lupin",
     author: 'Maurice Leblanc',
@@ -16551,7 +17468,7 @@ export const STORIES_PART1: RawStory[] = [
       "victory": "zafer"
     }
   },
-            {
+              {
     id: 'detective_mysterious_passenger',
     title: "The Mysterious Passenger",
     author: 'Maurice Leblanc',
@@ -16623,7 +17540,7 @@ export const STORIES_PART1: RawStory[] = [
       "clutching": "sıkıca tutarak"
     }
   },
-            {
+              {
     id: 'detective_flying_stars',
     title: "The Flying Stars",
     author: 'G. K. Chesterton',
@@ -16694,7 +17611,7 @@ export const STORIES_PART1: RawStory[] = [
       "spirit": "ruh"
     }
   },
-            {
+              {
     id: 'detective_sins_saradine',
     title: "The Sins of Prince Saradine",
     author: 'G. K. Chesterton',
@@ -16765,7 +17682,7 @@ export const STORIES_PART1: RawStory[] = [
       "burden": "yük"
     }
   },
-            {
+              {
     id: 'detective_biter_bit',
     title: "The Biter Bit",
     author: 'Wilkie Collins',
@@ -16837,7 +17754,7 @@ export const STORIES_PART1: RawStory[] = [
       "melody": "melodi"
     }
   },
-            {
+              {
     id: 'detective_fenchurch_street',
     title: "The Fenchurch Street Mystery",
     author: 'Baroness Orczy',
@@ -16908,7 +17825,7 @@ export const STORIES_PART1: RawStory[] = [
       "betrayed": "ihanet etmek"
     }
   },
-            {
+              {
     id: 'detective_cell_13_part2',
     title: "The Problem of Cell 13 - Part 2",
     author: 'Jacques Futrelle',
@@ -16980,7 +17897,7 @@ export const STORIES_PART1: RawStory[] = [
       "piece": "parça"
     }
   },
-            {
+              {
     id: 'detective_marie_roget',
     title: "The Mystery of Marie Rogêt",
     author: 'Edgar Allan Poe',
@@ -17049,7 +17966,7 @@ export const STORIES_PART1: RawStory[] = [
       "inconsistency": "tutarsızlık"
     }
   },
-          {
+            {
     id: 'detective_noble_bachelor',
     title: "The Adventure of the Noble Bachelor",
     author: 'Arthur Conan Doyle',
@@ -17118,7 +18035,7 @@ export const STORIES_PART1: RawStory[] = [
       "bachelor": "evlenmemiş adam"
     }
   },
-          {
+            {
     id: 'detective_cardboard_box',
     title: "The Adventure of the Cardboard Box",
     author: 'Arthur Conan Doyle',
@@ -17189,7 +18106,7 @@ export const STORIES_PART1: RawStory[] = [
       "honour": "iyi isim"
     }
   },
-          {
+            {
     id: 'detective_mirror_magistrate',
     title: "The Mirror of the Magistrate",
     author: 'G. K. Chesterton',
@@ -17258,7 +18175,7 @@ export const STORIES_PART1: RawStory[] = [
       "handcuffs": "kelepçe"
     }
   },
-          {
+            {
     id: 'detective_seven_of_hearts',
     title: "The Seven of Hearts",
     author: 'Maurice Leblanc',
@@ -17324,7 +18241,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "macera"
     }
   },
-          {
+            {
     id: 'detective_secret_growler',
     title: "The Secret of the Growler",
     author: 'Arthur Morrison',
@@ -17394,7 +18311,7 @@ export const STORIES_PART1: RawStory[] = [
       "protect": "korumak"
     }
   },
-          {
+            {
     id: 'detective_lost_special',
     title: "The Lost Special",
     author: 'Arthur Conan Doyle',
@@ -17466,7 +18383,7 @@ export const STORIES_PART1: RawStory[] = [
       "puzzle": "problem"
     }
   },
-          {
+            {
     id: 'detective_red_thread_honour',
     title: "The Red Thread of Honour",
     author: 'Ernest Bramah',
@@ -17538,7 +18455,7 @@ export const STORIES_PART1: RawStory[] = [
       "mission": "iş"
     }
   },
-          {
+            {
     id: 'detective_escape_old_man',
     title: "The Escape of the Old Man",
     author: 'Baroness Orczy',
@@ -17609,7 +18526,7 @@ export const STORIES_PART1: RawStory[] = [
       "horizon": "arazi kenarı"
     }
   },
-          {
+            {
     id: 'detective_case_mirror',
     title: "The Case of the Mirror",
     author: 'Jacques Futrelle',
@@ -17678,7 +18595,7 @@ export const STORIES_PART1: RawStory[] = [
       "solve": "çözmek"
     }
   },
-          {
+            {
     id: 'detective_steel_room',
     title: "The Mystery of the Steel Room",
     author: 'Jacques Futrelle',
@@ -17750,7 +18667,7 @@ export const STORIES_PART1: RawStory[] = [
       "patience": "zaman"
     }
   },
-          {
+            {
     id: 'detective_beryl_coronet',
     title: "The Adventure of the Beryl Coronet",
     author: 'Arthur Conan Doyle',
@@ -17818,7 +18735,7 @@ export const STORIES_PART1: RawStory[] = [
       "forgive": "affetmek"
     }
   },
-          {
+            {
     id: 'detective_engineers_thumb',
     title: "The Adventure of the Engineer's Thumb",
     author: 'Arthur Conan Doyle',
@@ -17889,7 +18806,7 @@ export const STORIES_PART1: RawStory[] = [
       "courage": "cesaret"
     }
   },
-          {
+            {
     id: 'detective_red_scarf_2',
     title: "The Red Silk Scarf - Part 2",
     author: 'Maurice Leblanc',
@@ -17959,7 +18876,7 @@ export const STORIES_PART1: RawStory[] = [
       "stride": "adım"
     }
   },
-          {
+            {
     id: 'detective_black_pearl',
     title: "The Black Pearl",
     author: 'Maurice Leblanc',
@@ -18030,7 +18947,7 @@ export const STORIES_PART1: RawStory[] = [
       "legendary": "ünlü"
     }
   },
-          {
+            {
     id: 'detective_man_passage',
     title: "The Man in the Passage",
     author: 'G. K. Chesterton',
@@ -18103,7 +19020,7 @@ export const STORIES_PART1: RawStory[] = [
       "innocent": "masum"
     }
   },
-          {
+            {
     id: 'detective_purple_jewel',
     title: "The Purple Jewel",
     author: 'G. K. Chesterton',
@@ -18174,7 +19091,7 @@ export const STORIES_PART1: RawStory[] = [
       "whisper": "fısıldamak"
     }
   },
-          {
+            {
     id: 'detective_hansom_cab_1',
     title: "The Mystery of the Hansom Cab - Part 1",
     author: 'Fergus Hume',
@@ -18243,7 +19160,7 @@ export const STORIES_PART1: RawStory[] = [
       "justice": "hakkaniyet"
     }
   },
-          {
+            {
     id: 'detective_missing_hand',
     title: "The Case of the Missing Hand",
     author: 'Arthur Morrison',
@@ -18312,7 +19229,7 @@ export const STORIES_PART1: RawStory[] = [
       "recover": "bulmak"
     }
   },
-          {
+            {
     id: 'detective_stolen_cigar',
     title: "The Stolen Cigar Case",
     author: 'Bret Harte',
@@ -18384,7 +19301,7 @@ export const STORIES_PART1: RawStory[] = [
       "evidence": "işaret"
     }
   },
-          {
+            {
     id: 'detective_brook_street_tragedy',
     title: "The Tragedy of Brook Street",
     author: 'Arthur Morrison',
@@ -18456,7 +19373,7 @@ export const STORIES_PART1: RawStory[] = [
       "justice": "adalet"
     }
   },
-        {
+          {
     id: 'history_giza_pyramids',
     title: "The Pyramids of Giza",
     author: 'Ancient Egypt',
@@ -18525,7 +19442,7 @@ export const STORIES_PART1: RawStory[] = [
       "symbol": "işaret"
     }
   },
-        {
+          {
     id: 'history_great_wall',
     title: "The Great Wall of China",
     author: 'Ancient China',
@@ -18592,7 +19509,7 @@ export const STORIES_PART1: RawStory[] = [
       "unity": "birlik"
     }
   },
-        {
+          {
     id: 'history_roman_colosseum',
     title: "The Roman Colosseum",
     author: 'Roman Empire',
@@ -18661,7 +19578,7 @@ export const STORIES_PART1: RawStory[] = [
       "ruins": "kırık duvarlar"
     }
   },
-        {
+          {
     id: 'history_marco_polo',
     title: "Marco Polo's Journey",
     author: 'Marco Polo',
@@ -18729,7 +19646,7 @@ export const STORIES_PART1: RawStory[] = [
       "wonder": "harika"
     }
   },
-        {
+          {
     id: 'history_discovery_fire',
     title: "The Discovery of Fire",
     author: 'Prehistoric Era',
@@ -18797,7 +19714,7 @@ export const STORIES_PART1: RawStory[] = [
       "knowledge": "bilgi"
     }
   },
-        {
+          {
     id: 'history_troy_legend',
     title: "The Legend of Troy",
     author: 'Greek Mythology',
@@ -18866,7 +19783,7 @@ export const STORIES_PART1: RawStory[] = [
       "courage": "cesaret"
     }
   },
-        {
+          {
     id: 'history_pompeii',
     title: "Pompeii: The City Frozen in Time",
     author: 'Roman Empire',
@@ -18936,7 +19853,7 @@ export const STORIES_PART1: RawStory[] = [
       "memory": "hafıza"
     }
   },
-        {
+          {
     id: 'history_paper_invention',
     title: "The Story of Paper",
     author: 'Ancient China',
@@ -19007,7 +19924,7 @@ export const STORIES_PART1: RawStory[] = [
       "progress": "ilerleme/büyüme"
     }
   },
-        {
+          {
     id: 'history_viking_voyagers',
     title: "The Viking Voyagers",
     author: 'Viking Age',
@@ -19077,7 +19994,7 @@ export const STORIES_PART1: RawStory[] = [
       "tribe": "halk"
     }
   },
-        {
+          {
     id: 'history_first_marathon',
     title: "The First Marathon",
     author: 'Ancient Greece',
@@ -19144,7 +20061,7 @@ export const STORIES_PART1: RawStory[] = [
       "courage": "cesaret"
     }
   },
-        {
+          {
     id: 'history_alexander_great',
     title: "Alexander the Great's Quest",
     author: 'Alexander the Great',
@@ -19215,7 +20132,7 @@ export const STORIES_PART1: RawStory[] = [
       "exhausted": "çok yorgun"
     }
   },
-        {
+          {
     id: 'history_julius_caesar',
     title: "Julius Caesar and the Rubicon",
     author: 'Julius Caesar',
@@ -19285,7 +20202,7 @@ export const STORIES_PART1: RawStory[] = [
       "mission": "görev"
     }
   },
-        {
+          {
     id: 'history_cleopatra',
     title: "Cleopatra: The Last Pharaoh",
     author: 'Cleopatra',
@@ -19358,7 +20275,7 @@ export const STORIES_PART1: RawStory[] = [
       "province": "parça"
     }
   },
-        {
+          {
     id: 'history_joan_of_arc',
     title: "Joan of Arc: The Maid of Orléans",
     author: 'Joan of Arc',
@@ -19428,7 +20345,7 @@ export const STORIES_PART1: RawStory[] = [
       "guilty": "suçlu"
     }
   },
-        {
+          {
     id: 'history_christopher_columbus',
     title: "Christopher Columbus and the New World",
     author: 'Christopher Columbus',
@@ -19498,7 +20415,7 @@ export const STORIES_PART1: RawStory[] = [
       "exploration": "keşif"
     }
   },
-        {
+          {
     id: 'history_leonardo_da_vinci',
     title: "Leonardo da Vinci: The Renaissance Man",
     author: 'Leonardo da Vinci',
@@ -19570,7 +20487,7 @@ export const STORIES_PART1: RawStory[] = [
       "logic": "mantık"
     }
   },
-        {
+          {
     id: 'history_gutenberg_press',
     title: "The Gutenberg Press",
     author: 'Johannes Gutenberg',
@@ -19641,7 +20558,7 @@ export const STORIES_PART1: RawStory[] = [
       "legacy": "miras"
     }
   },
-        {
+          {
     id: 'history_taj_mahal',
     title: "The Taj Mahal: A Monument of Love",
     author: 'Mughal Empire',
@@ -19710,7 +20627,7 @@ export const STORIES_PART1: RawStory[] = [
       "century": "yıl"
     }
   },
-        {
+          {
     id: 'history_robin_hood',
     title: "The Legend of Robin Hood",
     author: 'English Folklore',
@@ -19778,7 +20695,7 @@ export const STORIES_PART1: RawStory[] = [
       "courage": "cesaret"
     }
   },
-        {
+          {
     id: 'history_boston_tea_party',
     title: "The Boston Tea Party",
     author: 'American Revolution',
@@ -19845,7 +20762,7 @@ export const STORIES_PART1: RawStory[] = [
       "courage": "cesaret"
     }
   },
-        {
+          {
     id: 'history_magna_carta',
     title: "The Magna Carta",
     author: 'King John',
@@ -19914,7 +20831,7 @@ export const STORIES_PART1: RawStory[] = [
       "democracy": "halk yönetimi"
     }
   },
-        {
+          {
     id: 'history_wright_brothers',
     title: "The First Flight of the Wright Brothers",
     author: 'Wright Brothers',
@@ -19987,7 +20904,7 @@ export const STORIES_PART1: RawStory[] = [
       "courage": "cesaret"
     }
   },
-        {
+          {
     id: 'history_galileo_galilei',
     title: "Galileo Galilei and the Stars",
     author: 'Galileo Galilei',
@@ -20055,7 +20972,7 @@ export const STORIES_PART1: RawStory[] = [
       "knowledge": "bilgi"
     }
   },
-        {
+          {
     id: 'history_king_arthur',
     title: "King Arthur and the Round Table",
     author: 'Arthurian Legend',
@@ -20126,7 +21043,7 @@ export const STORIES_PART1: RawStory[] = [
       "mist": "sis"
     }
   },
-        {
+          {
     id: 'history_silk_road',
     title: "The Story of the Silk Road",
     author: 'Ancient Trade',
