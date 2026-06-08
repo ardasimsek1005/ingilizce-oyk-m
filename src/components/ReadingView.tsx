@@ -624,9 +624,10 @@ export default function ReadingView({
 
   useEffect(() => {
     if (toastMessage) {
+      const duration = toastMessage.length > 30 ? 2500 : 1600;
       const timer = setTimeout(() => {
         setToastMessage(null);
-      }, 1500);
+      }, duration);
       return () => clearTimeout(timer);
     }
   }, [toastMessage]);
@@ -936,7 +937,13 @@ export default function ReadingView({
   const [showQuizRoadblockModal, setShowQuizRoadblockModal] = useState(false);
   const [quizCorrectAnswersCount, setQuizCorrectAnswersCount] = useState(0);
 
-  const [quizTimeLeft, setQuizTimeLeft] = useState<number>(20);
+  const [quizCorrectStreak, setQuizCorrectStreak] = useState<number>(() => {
+    const ns = deviceUuid || 'guest';
+    const saved = localStorage.getItem(`linguist_quiz_correct_streak_${ns}`);
+    return saved ? parseInt(saved, 10) : 0;
+  });
+
+  const [quizTimeLeft, setQuizTimeLeft] = useState<number>(15);
   const timerRef = useRef<any>(null);
   const topRef = useRef<HTMLDivElement>(null);
   const audiobookBarRef = useRef<HTMLDivElement>(null);
@@ -975,13 +982,20 @@ export default function ReadingView({
     if (isQuizAnswered) return;
     setIsQuizAnswered(true);
     setSelectedQuizOption(null);
+
+    // Reset streak on timeout
+    const ns = deviceUuid || 'guest';
+    setQuizCorrectStreak(0);
+    localStorage.setItem(`linguist_quiz_correct_streak_${ns}`, '0');
+    setToastMessage('Süre doldu, seri sıfırlandı! ⏱️😢');
+
     onAnswerIncorrect();
     syncTrigger();
   };
 
   useEffect(() => {
     if (activeQuizQuestions && !isQuizAnswered) {
-      setQuizTimeLeft(20);
+      setQuizTimeLeft(15);
       
       if (timerRef.current) {
         clearInterval(timerRef.current);
@@ -1261,17 +1275,57 @@ export default function ReadingView({
     const question = activeQuizQuestions[activeQuizQuestionIdx];
     const isCorrect = optionIdx === question.correctIndex;
 
+    const ns = deviceUuid || 'guest';
+
     if (isCorrect) {
       setQuizCorrectAnswersCount(prev => prev + 1);
       setStats((prev: any) => ({
         ...prev,
         readingGoalPercent: Math.min(prev.readingGoalPercent + 4, 100)
       }));
+
+      // Increment streak
+      const nextStreak = quizCorrectStreak + 1;
+      if (nextStreak >= 15) {
+        // Award heart if not premium and hearts < 5
+        setStats((prev: any) => {
+          if (prev.isPremium) return prev;
+          const currentHearts = prev.hearts ?? 5;
+          if (currentHearts >= 5) return prev;
+          
+          const nextHearts = Math.min(5, currentHearts + 1);
+          return {
+            ...prev,
+            hearts: nextHearts
+          };
+        });
+        
+        // Show success toast
+        if (stats?.isPremium) {
+          setToastMessage('Harika! 15 Doğru Cevap Serisi Yakaladınız! 🔥');
+        } else if ((stats?.hearts ?? 5) >= 5) {
+          setToastMessage('Mükemmel! 15 Doğru Cevap Serisi! (Canınız Zaten Dolu) 🔥');
+        } else {
+          setToastMessage('Tebrikler! 15 Doğru Cevap Serisi ile 1 Can Kazandınız! ❤️');
+        }
+        
+        // Reset streak
+        setQuizCorrectStreak(0);
+        localStorage.setItem(`linguist_quiz_correct_streak_${ns}`, '0');
+      } else {
+        setQuizCorrectStreak(nextStreak);
+        localStorage.setItem(`linguist_quiz_correct_streak_${ns}`, String(nextStreak));
+      }
+
       // Auto-advance on correct answers after 800ms
       setTimeout(() => {
         handleQuizNextDirect();
       }, 800);
     } else {
+      // Reset streak
+      setQuizCorrectStreak(0);
+      localStorage.setItem(`linguist_quiz_correct_streak_${ns}`, '0');
+      setToastMessage('Seri sıfırlandı! 😢');
       onAnswerIncorrect();
     }
     syncTrigger();
@@ -2521,9 +2575,24 @@ export default function ReadingView({
                     <span className="text-xs font-extrabold tracking-wider text-[#4ECDC4] font-headline-lg">
                       BARAJ SORUSU {activeQuizQuestionIdx + 1} / 5
                     </span>
-                    <div className="flex items-center gap-1.5 text-xs font-bold text-[#FF6B6B]">
-                      <Heart className="w-3.5 h-3.5 fill-[#FF6B6B]" />
-                      <span>{stats?.isPremium ? '∞' : (stats?.hearts ?? 5)} Can</span>
+                    <div className="flex items-center gap-3">
+                      {/* Streak flame badge */}
+                      <div 
+                        className={`flex items-center gap-1 text-[10px] font-black px-2 py-0.5 rounded-full border transition-all duration-300 ${
+                          quizCorrectStreak > 0
+                            ? 'text-amber-500 bg-amber-500/10 border-amber-500/20 scale-[1.04]'
+                            : 'text-gray-400 bg-gray-100/10 border-gray-200/20'
+                        }`}
+                        title="Can kazanmak için hata yapmadan 15 doğru cevap verin!"
+                      >
+                        <span>🔥</span>
+                        <span>Seri: {quizCorrectStreak}/15</span>
+                      </div>
+                      
+                      <div className="flex items-center gap-1.5 text-xs font-bold text-[#FF6B6B]">
+                        <Heart className="w-3.5 h-3.5 fill-[#FF6B6B]" />
+                        <span>{stats?.isPremium ? '∞' : (stats?.hearts ?? 5)} Can</span>
+                      </div>
                     </div>
                   </div>
 
@@ -2548,9 +2617,9 @@ export default function ReadingView({
                     <div className="mb-5 select-none">
                       <div className="flex justify-between items-center text-[10px] font-bold mb-1">
                         <span className={
-                          quizTimeLeft > 10 
+                          quizTimeLeft > 8 
                             ? 'text-emerald-500' 
-                            : quizTimeLeft > 5 
+                            : quizTimeLeft > 4 
                               ? 'text-amber-500 font-extrabold animate-pulse' 
                               : 'text-rose-500 font-extrabold animate-bounce'
                         }>
@@ -2560,13 +2629,13 @@ export default function ReadingView({
                       <div className="w-full h-1.5 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
                         <div 
                           className={`h-full transition-all duration-1000 ease-linear ${
-                            quizTimeLeft > 10 
+                            quizTimeLeft > 8 
                               ? 'bg-emerald-500' 
-                              : quizTimeLeft > 5 
+                              : quizTimeLeft > 4 
                                 ? 'bg-amber-500' 
                                 : 'bg-rose-500'
                           }`}
-                          style={{ width: `${(quizTimeLeft / 20) * 100}%` }}
+                          style={{ width: `${(quizTimeLeft / 15) * 100}%` }}
                         />
                       </div>
                     </div>

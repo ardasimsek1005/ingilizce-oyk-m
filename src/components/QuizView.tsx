@@ -11,6 +11,7 @@ interface QuizViewProps {
   vocabulary: VocabularyWord[];
   books: Book[];
   quizMode: 'saved' | 'random';
+  initialDifficulty?: 'easy' | 'medium' | 'hard';
   initiallyShowPaywall?: boolean;
   onAnswerCorrect: () => void;
   onAnswerIncorrect: () => void;
@@ -211,38 +212,34 @@ const generateVocabularyQuiz = (vocabList: VocabularyWord[], books: Book[]): Qui
     }
     
     // Distractors (wrong options)
-    const levelCode = item.level ? item.level.substring(0, 2).toUpperCase() : 'A1'; // e.g. "A1"
+    // Parse level code robustly — handles both "A1" and "A1 Seviyesi" formats
+    const rawLevel = (item.level || 'A1').trim().toUpperCase();
+    const levelCode = rawLevel.substring(0, 2); // "A1", "A2", "B1", "B2", "C1"
+
+    // Build adjacent-level fallback order: exact → 1 step away → 2 steps → all
+    const levelOrder = ['A1', 'A2', 'B1', 'B2', 'C1'];
+    const exactIdx = levelOrder.indexOf(levelCode);
+    const levelPriority: string[][] = [
+      [levelCode],
+      levelOrder.filter((_, i) => Math.abs(i - exactIdx) === 1),
+      levelOrder.filter((_, i) => Math.abs(i - exactIdx) === 2),
+      levelOrder.filter((_, i) => Math.abs(i - exactIdx) >= 3),
+    ];
+
     const levelPool: { en: string; tr: string }[] = [];
     const seenWords = new Set<string>();
-    
-    if (books && books.length > 0) {
+    const correctWordLower = item.word.toLowerCase().trim();
+
+    const addWordsFromBooks = (targetLevels: string[]) => {
+      if (!books || books.length === 0) return;
       books.forEach(book => {
-        if (book.level === levelCode) {
-          book.chapters.forEach(chapter => {
-            chapter.paragraphs.forEach(p => {
-              if (p.words) {
-                p.words.forEach(w => {
-                  const key = w.en.toLowerCase().trim();
-                  if (!seenWords.has(key) && !isProperNoun(w.en) && key !== item.word.toLowerCase().trim() && key !== 'harness') {
-                    seenWords.add(key);
-                    levelPool.push({ en: w.en, tr: w.tr });
-                  }
-                });
-              }
-            });
-          });
-        }
-      });
-    }
-    
-    if (levelPool.length < 5 && books) {
-      books.forEach(book => {
+        if (!targetLevels.includes(book.level)) return;
         book.chapters.forEach(chapter => {
           chapter.paragraphs.forEach(p => {
             if (p.words) {
               p.words.forEach(w => {
                 const key = w.en.toLowerCase().trim();
-                if (!seenWords.has(key) && !isProperNoun(w.en) && key !== item.word.toLowerCase().trim() && key !== 'harness') {
+                if (!seenWords.has(key) && !isProperNoun(w.en) && key !== correctWordLower && key !== 'harness' && w.en.length > 2) {
                   seenWords.add(key);
                   levelPool.push({ en: w.en, tr: w.tr });
                 }
@@ -250,6 +247,23 @@ const generateVocabularyQuiz = (vocabList: VocabularyWord[], books: Book[]): Qui
             }
           });
         });
+      });
+    };
+
+    // Fill pool tier by tier until we have enough candidates
+    for (const tier of levelPriority) {
+      if (levelPool.length >= 15) break;
+      addWordsFromBooks(tier);
+    }
+
+    // Also add sibling saved-vocabulary items as distractors (same-ish level)
+    if (levelPool.length < 8 && vocabList && vocabList.length > 1) {
+      vocabList.forEach(v => {
+        const key = v.word.toLowerCase().trim();
+        if (!seenWords.has(key) && key !== correctWordLower && !isProperNoun(v.word) && v.translation) {
+          seenWords.add(key);
+          levelPool.push({ en: v.word, tr: v.translation });
+        }
       });
     }
     
@@ -508,6 +522,7 @@ export default function QuizView({
   vocabulary,
   books,
   quizMode,
+  initialDifficulty = 'easy',
   initiallyShowPaywall = false,
   onAnswerCorrect,
   onAnswerIncorrect,
@@ -770,17 +785,22 @@ export default function QuizView({
     return 'hard';
   };
 
-  const [difficulty, setDifficulty] = useState<'easy' | 'medium' | 'hard'>(() => getDefaultDifficulty(books));
+  const [difficulty, setDifficulty] = useState<'easy' | 'medium' | 'hard'>(() => {
+    // Use initialDifficulty if provided (from VocabularyTab level picker), else auto-detect
+    if (initialDifficulty && quizMode === 'random') return initialDifficulty;
+    return getDefaultDifficulty(books);
+  });
 
   const [questions, setQuestions] = useState<QuizQuestion[]>(() => {
     if (quizMode === 'random') {
-      const initialDiff = getDefaultDifficulty(books);
+      // Use the already-resolved difficulty state (which respects initialDifficulty)
+      const startDiff = (initialDifficulty && quizMode === 'random') ? initialDifficulty : getDefaultDifficulty(books);
       const levelsMap = {
         easy: ['A1', 'A2'],
         medium: ['B1', 'B2'],
         hard: ['C1']
       };
-      return generateRandomQuizForLevels(levelsMap[initialDiff] as any, books);
+      return generateRandomQuizForLevels(levelsMap[startDiff] as any, books);
     } else {
       return generateVocabularyQuiz(vocabulary, books);
     }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Sparkles, Brain, Search, Volume2, Trash2, BookOpen, Bookmark, ChevronRight } from 'lucide-react';
+import { Sparkles, Brain, Search, Volume2, Trash2, BookOpen, Bookmark, ChevronRight, Zap } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { VocabularyWord, getLevelColor, hexToRgba } from '../types';
 import { speakNative } from '../services/tts';
@@ -7,13 +7,15 @@ import { speakNative } from '../services/tts';
 interface VocabularyTabProps {
   vocabulary: VocabularyWord[];
   onStartQuiz: (mode: 'saved' | 'random') => void;
+  onStartRandomQuizWithDifficulty: (difficulty: 'easy' | 'medium' | 'hard') => void;
   onRemoveWord: (wordId: string) => void;
   syncTrigger: () => void;
   isDarkMode?: boolean;
 }
 
-export default function VocabularyTab({ vocabulary, onStartQuiz, onRemoveWord, syncTrigger, isDarkMode }: VocabularyTabProps) {
+export default function VocabularyTab({ vocabulary, onStartQuiz, onStartRandomQuizWithDifficulty, onRemoveWord, syncTrigger, isDarkMode }: VocabularyTabProps) {
   const [searchQuery, setSearchQuery] = useState('');
+  const [selectedDifficulty, setSelectedDifficulty] = useState<'easy' | 'medium' | 'hard'>('easy');
 
   const filteredVocab = vocabulary.filter(w =>
     w.word.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -35,50 +37,140 @@ export default function VocabularyTab({ vocabulary, onStartQuiz, onRemoveWord, s
       isDarkMode ? 'text-[#E6E6E6]' : 'text-[#2D3436]'
     }`}>
       
-      {/* Quiz Call To Action Section */}
-      <section className={`mb-8 text-center border-2 rounded-3xl p-6 transition-colors ${
-        isDarkMode 
-          ? 'bg-[#1A1A1E] border-[#2A2A30] shadow-[0_8px_16px_rgba(0,0,0,0.15)]' 
-          : 'bg-white border-[#FFE66D] shadow-[0_8px_16px_rgba(255,107,107,0.02)]'
-      }`}>
-        <h2 className={`font-headline-lg text-lg font-bold mb-1.5 tracking-wider transition-colors ${
-          isDarkMode ? 'text-[#E6E6E6]' : 'text-[#2D3436]'
+      {/* Quiz Practices Dashboard Section */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8">
+        
+        {/* Card 1: Kelimelerimle Pratik Yap */}
+        <div className={`relative overflow-hidden border-2 rounded-3xl p-5 transition-all duration-300 flex flex-col justify-between group ${
+          isDarkMode 
+            ? 'bg-[#1A1A1E]/80 border-[#2A2A30] hover:border-[#FF6B6B]/40 hover:shadow-[0_8px_24px_rgba(255,107,107,0.05)]' 
+            : 'bg-white border-[#FFE66D]/70 hover:border-[#FF6B6B]/40 hover:shadow-[0_8px_24px_rgba(255,107,107,0.05)]'
         }`}>
-          Kelime Dağarcığı
-        </h2>
-        <p className={`text-sm mb-6 max-w-sm mx-auto font-medium ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-          İster kendi kaydettiğin kelimelerle pratik yap, ister seviyene göre rastgele kelimeler keşfet.
-        </p>
+          {/* Subtle background glow effect */}
+          <div className="absolute -top-12 -right-12 w-24 h-24 rounded-full bg-[#FF6B6B]/5 blur-xl group-hover:bg-[#FF6B6B]/10 transition-all duration-500 pointer-events-none" />
 
-        <div className="flex flex-col gap-3 justify-center items-center w-full">
-          {/* Button 1: Kelimelerimle Pratik Yap */}
-          <button
-            onClick={() => onStartQuiz('saved')}
-            className="group relative inline-flex items-center justify-center gap-2 bg-[#FF6B6B] text-white px-5 py-3.5 rounded-2xl font-bold text-[12px] sm:text-sm shadow-md hover:bg-[#e05a5a] transition-all transform active:scale-95 cursor-pointer shadow-[#FF6B6B]/20 w-full max-w-[280px]"
-          >
-            <Brain className="w-4 h-4 text-[#FFE66D] fill-[#FFE66D] shrink-0" />
-            <span className="truncate">Kelimelerimle Pratik Yap</span>
-            {vocabulary.length > 0 && (
-              <span className="bg-white/20 px-1.5 py-0.5 rounded-md text-[9px] font-extrabold shrink-0">
-                {vocabulary.length}
+          <div>
+            <div className="flex items-start justify-between mb-3">
+              <div className={`w-10 h-10 rounded-2xl flex items-center justify-center transition-all duration-300 ${
+                isDarkMode ? 'bg-[#FF6B6B]/15 text-[#FF6B6B]' : 'bg-[#FF6B6B]/10 text-[#FF6B6B]'
+              }`}>
+                <Brain className="w-5 h-5 fill-[#FF6B6B]/10 group-hover:scale-110 transition-transform duration-300" />
+              </div>
+              <span className={`text-[10px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider ${
+                vocabulary.length > 0 
+                  ? (isDarkMode ? 'bg-emerald-950/40 text-emerald-400 border border-emerald-900/30' : 'bg-emerald-50 text-emerald-600 border border-emerald-200/50')
+                  : (isDarkMode ? 'bg-gray-800 text-gray-400' : 'bg-gray-100 text-gray-500')
+              }`}>
+                {vocabulary.length > 0 ? `${vocabulary.length} KELİME` : 'Kayıt Yok'}
               </span>
-            )}
-          </button>
+            </div>
 
-          {/* Button 2: Rastgele Pratik Yap */}
+            <h3 className={`text-base font-black tracking-tight mb-1 transition-colors ${
+              isDarkMode ? 'text-white' : 'text-[#2D3436]'
+            }`}>
+              Kelimelerim
+            </h3>
+            <p className={`text-xs leading-relaxed mb-6 font-medium ${
+              isDarkMode ? 'text-gray-400' : 'text-gray-500'
+            }`}>
+              Kitap okurken kaydettiğin özel kelimelerle kelime dağarcığını pekiştir.
+            </p>
+          </div>
+
           <button
-            onClick={() => onStartQuiz('random')}
-            className={`group inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl font-bold text-[12px] sm:text-sm shadow-md transition-all transform active:scale-95 cursor-pointer border w-full max-w-[280px] ${
-              isDarkMode 
-                ? 'bg-[#2D3436] border-[#343A40] text-white hover:bg-[#3E4446]' 
-                : 'bg-[#FFE66D]/20 border-[#FFE66D] text-[#2D3436] hover:bg-[#FFE66D]/35'
+            onClick={() => vocabulary.length > 0 && onStartQuiz('saved')}
+            disabled={vocabulary.length === 0}
+            className={`w-full py-3 rounded-xl font-bold text-xs flex items-center justify-center gap-2 transition-all duration-200 cursor-pointer shadow-md transform active:scale-95 ${
+              vocabulary.length > 0 
+                ? 'bg-gradient-to-r from-[#FF6B6B] to-[#FF8E8E] hover:from-[#e05a5a] hover:to-[#e67e7e] text-white shadow-[#FF6B6B]/20 hover:scale-[1.02]' 
+                : 'bg-gray-105 dark:bg-[#252528] text-gray-400 dark:text-gray-600 cursor-not-allowed border border-transparent'
             }`}
           >
-            <Sparkles className="w-4 h-4 text-[#FF6B6B] fill-[#FF6B6B] shrink-0" />
-            <span className="truncate">Rastgele Pratik Yap</span>
+            <Zap className="w-3.5 h-3.5" />
+            <span>{vocabulary.length > 0 ? 'Pratiğe Başla' : 'Önce Kelime Ekle'}</span>
           </button>
         </div>
-      </section>
+
+        {/* Card 2: Seviyeli Rastgele Pratik Yap */}
+        <div className={`relative overflow-hidden border-2 rounded-3xl p-5 transition-all duration-300 flex flex-col justify-between group ${
+          isDarkMode 
+            ? 'bg-[#1A1A1E]/80 border-[#2A2A30] hover:border-[#4ECDC4]/40 hover:shadow-[0_8px_24px_rgba(78,205,196,0.05)]' 
+            : 'bg-white border-[#FFE66D]/70 hover:border-[#4ECDC4]/40 hover:shadow-[0_8px_24px_rgba(78,205,196,0.05)]'
+        }`}>
+          {/* Subtle background glow effect */}
+          <div className="absolute -top-12 -right-12 w-24 h-24 rounded-full bg-[#4ECDC4]/5 blur-xl group-hover:bg-[#4ECDC4]/10 transition-all duration-500 pointer-events-none" />
+
+          <div>
+            <div className="flex items-start justify-between mb-3">
+              <div className={`w-10 h-10 rounded-2xl flex items-center justify-center transition-all duration-300 ${
+                isDarkMode ? 'bg-[#4ECDC4]/15 text-[#4ECDC4]' : 'bg-[#4ECDC4]/10 text-[#4ECDC4]'
+              }`}>
+                <Sparkles className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
+              </div>
+              <span className={`text-[10px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider ${
+                selectedDifficulty === 'easy' ? (isDarkMode ? 'bg-emerald-950/40 text-emerald-400 border border-emerald-900/30' : 'bg-emerald-50 text-emerald-600 border border-emerald-200/50') :
+                selectedDifficulty === 'medium' ? (isDarkMode ? 'bg-amber-950/40 text-amber-400 border border-amber-900/30' : 'bg-amber-50 text-amber-600 border border-amber-200/50') :
+                (isDarkMode ? 'bg-rose-950/40 text-rose-400 border border-rose-900/30' : 'bg-rose-50 text-rose-600 border border-rose-200/50')
+              }`}>
+                {selectedDifficulty === 'easy' ? 'Kolay Mod' : selectedDifficulty === 'medium' ? 'Orta Mod' : 'Zor Mod'}
+              </span>
+            </div>
+
+            <h3 className={`text-base font-black tracking-tight mb-1 transition-colors ${
+              isDarkMode ? 'text-white' : 'text-[#2D3436]'
+            }`}>
+              Rastgele Pratik
+            </h3>
+            <p className={`text-xs leading-relaxed mb-4 font-medium ${
+              isDarkMode ? 'text-gray-400' : 'text-gray-500'
+            }`}>
+              Seviyene göre otomatik seçilen kelimelerle pratik yap.
+            </p>
+
+            {/* Inlined level options */}
+            <div className="grid grid-cols-3 gap-1.5 mb-5">
+              {([
+                { key: 'easy', label: 'A1-A2', sub: 'Kolay', colorClass: 'border-emerald-500/80 text-emerald-500 bg-emerald-500/10' },
+                { key: 'medium', label: 'B1-B2', sub: 'Orta', colorClass: 'border-amber-500/80 text-amber-500 bg-amber-500/10' },
+                { key: 'hard', label: 'C1', sub: 'Zor', colorClass: 'border-rose-500/80 text-rose-500 bg-rose-500/10' },
+              ] as const).map(({ key, label, sub, colorClass }) => {
+                const isActive = selectedDifficulty === key;
+                return (
+                  <button
+                    key={key}
+                    type="button"
+                    onClick={() => setSelectedDifficulty(key)}
+                    className={`py-2 px-1 rounded-xl text-center border-2 transition-all duration-200 cursor-pointer active:scale-95 flex flex-col justify-center items-center ${
+                      isActive
+                        ? `${colorClass} shadow-sm scale-[1.02]`
+                        : isDarkMode
+                          ? 'bg-[#121214] border-[#2A2A30] text-gray-400 hover:border-[#4ECDC4]/30 hover:text-gray-200'
+                          : 'bg-gray-50 border-gray-200 text-gray-500 hover:border-[#4ECDC4]/30 hover:text-gray-700'
+                    }`}
+                  >
+                    <span className="block text-[11px] font-black tracking-tight">{label}</span>
+                    <span className={`block text-[9px] font-bold mt-0.5 opacity-80`}>{sub}</span>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          <button
+            onClick={() => onStartRandomQuizWithDifficulty(selectedDifficulty)}
+            className={`w-full py-3 rounded-xl font-bold text-xs flex items-center justify-center gap-2 transition-all duration-200 cursor-pointer shadow-md transform hover:scale-[1.02] active:scale-95 text-white ${
+              selectedDifficulty === 'easy' 
+                ? 'bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 shadow-emerald-500/10' 
+                : selectedDifficulty === 'medium'
+                  ? 'bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 shadow-amber-500/10'
+                  : 'bg-gradient-to-r from-rose-500 to-red-600 hover:from-rose-600 hover:to-red-700 shadow-rose-500/10'
+            }`}
+          >
+            <Zap className="w-3.5 h-3.5 fill-current" />
+            <span>Başlat</span>
+          </button>
+        </div>
+      </div>
 
       {/* Vocabulary Search controls */}
       <div className="relative mb-6">

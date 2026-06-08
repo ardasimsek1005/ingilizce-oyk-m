@@ -209,6 +209,7 @@ export default function App() {
     return 'library';
   }); // 'library' | 'vocabulary' | 'profile' | 'quiz'
   const [quizMode, setQuizMode] = useState<'saved' | 'random'>('saved');
+  const [quizDifficulty, setQuizDifficulty] = useState<'easy' | 'medium' | 'hard'>('easy');
   const [showPaywallInQuiz, setShowPaywallInQuiz] = useState<boolean>(false);
   const [activeReadingBook, setActiveReadingBook] = useState<Book | null>(null);
   const [googleClientId, setGoogleClientId] = useState<string>('');
@@ -2034,6 +2035,12 @@ export default function App() {
         setShowPaywallInQuiz(false);
         setCurrentTab('quiz');
       }}
+      onStartRandomQuizWithDifficulty={(difficulty) => {
+        setQuizMode('random');
+        setQuizDifficulty(difficulty);
+        setShowPaywallInQuiz(false);
+        setCurrentTab('quiz');
+      }}
       onRemoveWord={handleUnsaveWord}
       syncTrigger={triggerCloudSync}
       isDarkMode={isDarkMode}
@@ -2235,6 +2242,7 @@ export default function App() {
                     vocabulary={vocabulary}
                     books={books}
                     quizMode={quizMode}
+                    initialDifficulty={quizDifficulty}
                     initiallyShowPaywall={showPaywallInQuiz}
                     onAnswerCorrect={handleAnswerCorrect}
                     onAnswerIncorrect={() => {}} // Vocabulary practice incorrect answers do not decrease hearts
