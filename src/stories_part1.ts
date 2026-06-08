@@ -2528,7 +2528,7 @@ export const STORIES_PART1: RawStory[] = [
   },
 
   // ==================== LEVEL A2 (9 Stories) ====================
-                                                              {
+                                                                {
     id: 'pinocchio',
     title: "Pinocchio",
     author: 'Carlo Collodi',
@@ -2630,7 +2630,7 @@ export const STORIES_PART1: RawStory[] = [
       "disappear": "kaybolmak"
     }
   },
-                                                              {
+                                                                {
     id: 'beauty_beast',
     title: "Beauty and the Beast",
     author: 'Gabrielle-Suzanne de Villeneuve',
@@ -2735,7 +2735,7 @@ export const STORIES_PART1: RawStory[] = [
       "determination": "kararlılık"
     }
   },
-                                                              {
+                                                                {
     id: 'little_mermaid',
     title: "The Little Mermaid",
     author: 'Hans Christian Andersen',
@@ -2836,7 +2836,7 @@ export const STORIES_PART1: RawStory[] = [
       "danger": "tehlike"
     }
   },
-                                                              {
+                                                                {
     id: 'aladdin',
     title: "Aladdin and the Lamp",
     author: 'Antoine Galland',
@@ -2944,7 +2944,7 @@ export const STORIES_PART1: RawStory[] = [
       "trap": "tuzak"
     }
   },
-                                                          {
+                                                            {
     id: 'princess_pea',
     title: "The Princess and the Pea",
     author: 'Hans Christian Andersen',
@@ -3045,7 +3045,7 @@ export const STORIES_PART1: RawStory[] = [
       "peaceful": "huzurlu"
     }
   },
-                                                          {
+                                                            {
     id: 'thumbelina',
     title: "Thumbelina",
     author: 'Hans Christian Andersen',
@@ -3149,7 +3149,7 @@ export const STORIES_PART1: RawStory[] = [
       "queen": "kraliçe"
     }
   },
-                                                          {
+                                                            {
     id: 'robin_hood',
     title: "Robin Hood",
     author: 'Howard Pyle',
@@ -3257,7 +3257,7 @@ export const STORIES_PART1: RawStory[] = [
       "drifted": "sürüklendi"
     }
   },
-                                                          {
+                                                            {
     id: 'alice_wonderland',
     title: "Alice in Wonderland",
     author: 'Lewis Carroll',
@@ -3360,7 +3360,7 @@ export const STORIES_PART1: RawStory[] = [
       "liquid": "sıvı"
     }
   },
-                                                          {
+                                                            {
     id: 'boy_cried_wolf',
     title: "The Boy Who Cried Wolf",
     author: 'Aesop',
@@ -3468,7 +3468,7 @@ export const STORIES_PART1: RawStory[] = [
       "trust": "güvenmek"
     }
   },
-                                                      {
+                                                        {
     id: 'fox_grapes',
     title: "The Fox and the Grapes",
     author: 'Aesop',
@@ -3572,7 +3572,7 @@ export const STORIES_PART1: RawStory[] = [
       "lesson": "ders"
     }
   },
-                                                    {
+                                                      {
     id: 'ali_baba',
     title: "Ali Baba and the Forty Thieves",
     author: 'Antoine Galland',
@@ -3675,7 +3675,7 @@ export const STORIES_PART1: RawStory[] = [
       "peaceful": "huzurlu"
     }
   },
-                                                    {
+                                                      {
     id: 'sinbad',
     title: "Sinbad the Sailor",
     author: 'Antoine Galland',
@@ -3777,7 +3777,7 @@ export const STORIES_PART1: RawStory[] = [
       "grab": "kapmak"
     }
   },
-                                                    {
+                                                      {
     id: 'king_midas',
     title: "King Midas and the Golden Touch",
     author: 'Nathaniel Hawthorne',
@@ -3879,7 +3879,7 @@ export const STORIES_PART1: RawStory[] = [
       "prepared": "hazırlıklı"
     }
   },
-                                                      {
+                                                        {
     id: 'peter_pan',
     title: "Peter Pan",
     author: 'J. M. Barrie',
@@ -3981,7 +3981,7 @@ export const STORIES_PART1: RawStory[] = [
       "laughter": "kahkaha"
     }
   },
-                                          {
+                                            {
     id: 'lion_mouse',
     title: "The Lion and the Mouse",
     author: 'Aesop',
@@ -4050,7 +4050,7 @@ export const STORIES_PART1: RawStory[] = [
       "peace": "huzur"
     }
   },
-                                          {
+                                            {
     id: 'ant_grasshopper',
     title: "The Ant and the Grasshopper",
     author: 'Aesop',
@@ -4121,7 +4121,7 @@ export const STORIES_PART1: RawStory[] = [
       "organize": "düzenlemek"
     }
   },
-                                          {
+                                            {
     id: 'town_country_mouse',
     title: "The Town Mouse and the Country Mouse",
     author: 'Aesop',
@@ -4193,7 +4193,7 @@ export const STORIES_PART1: RawStory[] = [
       "field": "tarla"
     }
   },
-                                          {
+                                            {
     id: 'crow_pitcher',
     title: "The Crow and the Pitcher",
     author: 'Aesop',
@@ -4264,7 +4264,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "macera"
     }
   },
-                                          {
+                                            {
     id: 'wind_sun',
     title: "The North Wind and the Sun",
     author: 'Aesop',
@@ -4332,7 +4332,7 @@ export const STORIES_PART1: RawStory[] = [
       "kindness": "iyilik"
     }
   },
-                                          {
+                                            {
     id: 'gingerbread_man',
     title: "The Gingerbread Man",
     author: 'Traditional',
@@ -4399,7 +4399,7 @@ export const STORIES_PART1: RawStory[] = [
       "finish": "bitirmek"
     }
   },
-                                          {
+                                            {
     id: 'chicken_little',
     title: "Chicken Little",
     author: 'Traditional',
@@ -4469,7 +4469,7 @@ export const STORIES_PART1: RawStory[] = [
       "exit": "çıkış"
     }
   },
-                                          {
+                                            {
     id: 'enormous_turnip',
     title: "The Enormous Turnip",
     author: 'Traditional',
@@ -4535,7 +4535,7 @@ export const STORIES_PART1: RawStory[] = [
       "team": "takım"
     }
   },
-                                          {
+                                            {
     id: 'three_billy_goats',
     title: "Three Billy Goats Gruff",
     author: 'Traditional',
@@ -4604,7 +4604,7 @@ export const STORIES_PART1: RawStory[] = [
       "happy": "mutlu"
     }
   },
-                                          {
+                                            {
     id: 'fisherman_wife',
     title: "The Fisherman and His Wife",
     author: 'Brothers Grimm',
@@ -4672,7 +4672,7 @@ export const STORIES_PART1: RawStory[] = [
       "thankful": "minnettar"
     }
   },
-                                          {
+                                            {
     id: 'little_red_hen',
     title: "The Little Red Hen",
     author: 'Traditional',
@@ -4738,7 +4738,7 @@ export const STORIES_PART1: RawStory[] = [
       "stomach": "mide"
     }
   },
-                                          {
+                                            {
     id: 'frog_prince',
     title: "The Frog Prince",
     author: 'Brothers Grimm',
@@ -4807,7 +4807,7 @@ export const STORIES_PART1: RawStory[] = [
       "travel": "yolculuk"
     }
   },
-                                          {
+                                            {
     id: 'stone_soup',
     title: "Stone Soup",
     author: 'Traditional',
@@ -4876,7 +4876,7 @@ export const STORIES_PART1: RawStory[] = [
       "generous": "cömert"
     }
   },
-                                          {
+                                            {
     id: 'star_money',
     title: "The Star Money",
     author: 'Brothers Grimm',
@@ -4948,7 +4948,7 @@ export const STORIES_PART1: RawStory[] = [
       "safe": "güvende"
     }
   },
-                                          {
+                                            {
     id: 'city_musicians',
     title: "The Bremen Town Musicians",
     author: 'Brothers Grimm',
@@ -5019,7 +5019,7 @@ export const STORIES_PART1: RawStory[] = [
       "smile": "gülümsemek"
     }
   },
-                                          {
+                                            {
     id: 'peter_rabbit',
     title: "The Tale of Peter Rabbit",
     author: 'Beatrix Potter',
@@ -5090,7 +5090,7 @@ export const STORIES_PART1: RawStory[] = [
       "proud": "gururlu"
     }
   },
-                                          {
+                                            {
     id: 'bambi',
     title: "Bambi",
     author: 'Felix Salten',
@@ -5160,7 +5160,7 @@ export const STORIES_PART1: RawStory[] = [
       "noble": "soylu"
     }
   },
-                                          {
+                                            {
     id: 'black_beauty',
     title: "Black Beauty",
     author: 'Anna Sewell',
@@ -5228,7 +5228,7 @@ export const STORIES_PART1: RawStory[] = [
       "rubbed": "ovuşturdu"
     }
   },
-                                          {
+                                            {
     id: 'hans_brinker',
     title: "Hans Brinker",
     author: 'Mary Mapes Dodge',
@@ -5290,7 +5290,7 @@ export const STORIES_PART1: RawStory[] = [
       "working": "çalışan"
     }
   },
-                                          {
+                                            {
     id: 'five_children_it',
     title: "Five Children and It",
     author: 'E. Nesbit',
@@ -5360,7 +5360,7 @@ export const STORIES_PART1: RawStory[] = [
       "stretched": "gergin"
     }
   },
-                                          {
+                                            {
     id: 'railway_children',
     title: "The Railway Children",
     author: 'E. Nesbit',
@@ -5426,7 +5426,7 @@ export const STORIES_PART1: RawStory[] = [
       "whistle": "düdük"
     }
   },
-                                          {
+                                            {
     id: 'swiss_family',
     title: "The Swiss Family Robinson",
     author: 'Johann David Wyss',
@@ -5495,7 +5495,7 @@ export const STORIES_PART1: RawStory[] = [
       "prepared": "hazırlıklı"
     }
   },
-                                          {
+                                            {
     id: 'doctor_dolittle',
     title: "Doctor Dolittle",
     author: 'Hugh Lofting',
@@ -5562,7 +5562,7 @@ export const STORIES_PART1: RawStory[] = [
       "prepared": "hazırlıklı"
     }
   },
-                                          {
+                                            {
     id: 'sleepy_hollow',
     title: "The Legend of Sleepy Hollow",
     author: 'Washington Irving',
@@ -5632,7 +5632,7 @@ export const STORIES_PART1: RawStory[] = [
       "sticks": "sopa"
     }
   },
-                                          {
+                                            {
     id: 'rip_van_winkle',
     title: "Rip Van Winkle",
     author: 'Washington Irving',
@@ -5704,7 +5704,7 @@ export const STORIES_PART1: RawStory[] = [
       "working": "çalışan"
     }
   },
-                                          {
+                                            {
     id: 'velveteen_rabbit',
     title: "The Velveteen Rabbit",
     author: 'Margery Williams',
@@ -5776,7 +5776,7 @@ export const STORIES_PART1: RawStory[] = [
       "arrival": "varış"
     }
   },
-                                          {
+                                            {
     id: 'water_babies',
     title: "The Water-Babies",
     author: 'Charles Kingsley',
@@ -5846,7 +5846,7 @@ export const STORIES_PART1: RawStory[] = [
       "immediately": "derhal"
     }
   },
-                                          {
+                                            {
     id: 'nutcracker',
     title: "The Nutcracker",
     author: 'E. T. A. Hoffmann',
@@ -5915,7 +5915,7 @@ export const STORIES_PART1: RawStory[] = [
       "real": "gerçek"
     }
   },
-                                          {
+                                            {
     id: 'blue_bird',
     title: "The Blue Bird",
     author: 'Maurice Maeterlinck',
@@ -5986,7 +5986,7 @@ export const STORIES_PART1: RawStory[] = [
       "thankful": "minnettar"
     }
   },
-                                          {
+                                            {
     id: 'tom_thumb',
     title: "Tom Thumb",
     author: 'Brothers Grimm',
@@ -6058,7 +6058,7 @@ export const STORIES_PART1: RawStory[] = [
       "kindness": "iyilik"
     }
   },
-                                          {
+                                            {
     id: 'little_match_girl',
     title: "The Little Match Girl",
     author: 'Hans Christian Andersen',
@@ -6129,7 +6129,7 @@ export const STORIES_PART1: RawStory[] = [
       "silent": "sessiz"
     }
   },
-                                    {
+                                      {
     id: 'horror_black_cat',
     title: "The Black Cat",
     author: 'Edgar Allan Poe',
@@ -6200,7 +6200,7 @@ export const STORIES_PART1: RawStory[] = [
       "anymore": "artık"
     }
   },
-                                    {
+                                      {
     id: 'horror_signalman',
     title: "The Signalman",
     author: 'Charles Dickens',
@@ -6268,7 +6268,7 @@ export const STORIES_PART1: RawStory[] = [
       "better": "daha iyi"
     }
   },
-                                    {
+                                      {
     id: 'horror_red_headed_league',
     title: "The Red-Headed League",
     author: 'Arthur Conan Doyle',
@@ -6337,7 +6337,7 @@ export const STORIES_PART1: RawStory[] = [
       "brain": "beyin"
     }
   },
-                                    {
+                                      {
     id: 'horror_blue_carbuncle',
     title: "The Blue Carbuncle",
     author: 'Arthur Conan Doyle',
@@ -6408,7 +6408,7 @@ export const STORIES_PART1: RawStory[] = [
       "attacked": "saldırıldı"
     }
   },
-                                    {
+                                      {
     id: 'horror_young_goodman_brown',
     title: "Young Goodman Brown",
     author: 'Nathaniel Hawthorne',
@@ -6476,7 +6476,7 @@ export const STORIES_PART1: RawStory[] = [
       "blew": "savurdu"
     }
   },
-                                    {
+                                      {
     id: 'horror_phantom_rickshaw',
     title: "The Phantom Rickshaw",
     author: 'Rudyard Kipling',
@@ -6543,7 +6543,7 @@ export const STORIES_PART1: RawStory[] = [
       "better": "daha iyi"
     }
   },
-                                    {
+                                      {
     id: 'horror_draculas_guest',
     title: "Dracula's Guest",
     author: 'Bram Stoker',
@@ -6612,7 +6612,7 @@ export const STORIES_PART1: RawStory[] = [
       "attack": "saldırı"
     }
   },
-                                    {
+                                      {
     id: 'horror_devil_tom_walker',
     title: "The Devil and Tom Walker",
     author: 'Washington Irving',
@@ -6683,7 +6683,7 @@ export const STORIES_PART1: RawStory[] = [
       "anymore": "artık"
     }
   },
-                                    {
+                                      {
     id: 'horror_monkeys_paw',
     title: "The Monkey's Paw",
     author: 'W. W. Jacobs',
@@ -6753,7 +6753,7 @@ export const STORIES_PART1: RawStory[] = [
       "blows": "darbeler"
     }
   },
-                                    {
+                                      {
     id: 'horror_oval_portrait',
     title: "The Oval Portrait",
     author: 'Edgar Allan Poe',
@@ -6821,7 +6821,7 @@ export const STORIES_PART1: RawStory[] = [
       "beauty": "güzellik"
     }
   },
-                                    {
+                                      {
     id: 'horror_house_of_usher',
     title: "The Fall of the House of Usher",
     author: 'Edgar Allan Poe',
@@ -6891,7 +6891,7 @@ export const STORIES_PART1: RawStory[] = [
       "entire": "bütün"
     }
   },
-                                    {
+                                      {
     id: 'horror_cask_amontillado',
     title: "The Cask of Amontillado",
     author: 'Edgar Allan Poe',
@@ -6963,7 +6963,7 @@ export const STORIES_PART1: RawStory[] = [
       "closely": "dikkatle"
     }
   },
-                                    {
+                                      {
     id: 'horror_speckled_band',
     title: "The Speckled Band",
     author: 'Arthur Conan Doyle',
@@ -7035,7 +7035,7 @@ export const STORIES_PART1: RawStory[] = [
       "neglect": "terk edilmişlik"
     }
   },
-                                    {
+                                      {
     id: 'horror_yellow_wallpaper',
     title: "The Yellow Wallpaper",
     author: 'Charlotte Perkins Gilman',
@@ -7106,7 +7106,7 @@ export const STORIES_PART1: RawStory[] = [
       "nails": "çiviler"
     }
   },
-                                    {
+                                      {
     id: 'horror_willows',
     title: "The Willows",
     author: 'Algernon Blackwood',
@@ -7175,7 +7175,7 @@ export const STORIES_PART1: RawStory[] = [
       "glow": "parıltı"
     }
   },
-                                    {
+                                      {
     id: 'horror_wendigo',
     title: "The Wendigo",
     author: 'Algernon Blackwood',
@@ -7245,7 +7245,7 @@ export const STORIES_PART1: RawStory[] = [
       "freezing": "dondurucu"
     }
   },
-                                    {
+                                      {
     id: 'horror_king_in_yellow',
     title: "The King in Yellow",
     author: 'Robert W. Chambers',
@@ -7314,7 +7314,7 @@ export const STORIES_PART1: RawStory[] = [
       "monsters": "canavarlar"
     }
   },
-                                    {
+                                      {
     id: 'horror_vampyre',
     title: "The Vampyre",
     author: 'John William Polidori',
@@ -7385,7 +7385,7 @@ export const STORIES_PART1: RawStory[] = [
       "evil": "şer"
     }
   },
-                                    {
+                                      {
     id: 'horror_horla',
     title: "The Horla",
     author: 'Guy de Maupassant',
@@ -7453,7 +7453,7 @@ export const STORIES_PART1: RawStory[] = [
       "flowers": "çiçekler"
     }
   },
-                                    {
+                                      {
     id: 'horror_green_tea',
     title: "Green Tea",
     author: 'Sheridan Le Fanu',
@@ -7523,7 +7523,7 @@ export const STORIES_PART1: RawStory[] = [
       "dusty": "tozlu"
     }
   },
-                                    {
+                                      {
     id: 'horror_sandman',
     title: "The Sandman",
     author: 'E. T. A. Hoffmann',
@@ -7594,7 +7594,7 @@ export const STORIES_PART1: RawStory[] = [
       "fainted": "bayıldı"
     }
   },
-                                    {
+                                      {
     id: 'horror_birth_mark',
     title: "The Birth-Mark",
     author: 'Nathaniel Hawthorne',
@@ -7663,7 +7663,7 @@ export const STORIES_PART1: RawStory[] = [
       "flowers": "çiçekler"
     }
   },
-                                    {
+                                      {
     id: 'horror_masque_red_death',
     title: "The Masque of the Red Death",
     author: 'Edgar Allan Poe',
@@ -7735,7 +7735,7 @@ export const STORIES_PART1: RawStory[] = [
       "grip": "kavrayış"
     }
   },
-                                    {
+                                      {
     id: 'horror_gold_bug',
     title: "The Gold-Bug",
     author: 'Edgar Allan Poe',
@@ -7802,7 +7802,7 @@ export const STORIES_PART1: RawStory[] = [
       "exact": "tam"
     }
   },
-                                    {
+                                      {
     id: 'horror_moonstone',
     title: "The Moonstone",
     author: 'Wilkie Collins',
@@ -7872,7 +7872,7 @@ export const STORIES_PART1: RawStory[] = [
       "eventually": "nihayetinde"
     }
   },
-                                  {
+                                    {
     id: 'classic_tom_sawyer',
     title: "The Adventures of Tom Sawyer",
     author: 'Mark Twain',
@@ -7944,7 +7944,7 @@ export const STORIES_PART1: RawStory[] = [
       "believes": "inanır"
     }
   },
-                                  {
+                                    {
     id: 'classic_oliver_twist',
     title: "Oliver Twist",
     author: 'Charles Dickens',
@@ -8014,7 +8014,7 @@ export const STORIES_PART1: RawStory[] = [
       "charge": "suçlama"
     }
   },
-                                  {
+                                    {
     id: 'classic_prince_pauper',
     title: "The Prince and the Pauper",
     author: 'Mark Twain',
@@ -8081,7 +8081,7 @@ export const STORIES_PART1: RawStory[] = [
       "confused": "şaşkın"
     }
   },
-                                  {
+                                    {
     id: 'classic_kidnapped',
     title: "Kidnapped",
     author: 'Robert Louis Stevenson',
@@ -8152,7 +8152,7 @@ export const STORIES_PART1: RawStory[] = [
       "captain": "kaptan"
     }
   },
-                                  {
+                                    {
     id: 'classic_three_musketeers',
     title: "The Three Musketeers",
     author: 'Alexandre Dumas',
@@ -8218,7 +8218,7 @@ export const STORIES_PART1: RawStory[] = [
       "amazing": "harika"
     }
   },
-                                  {
+                                    {
     id: 'classic_uncle_tom_cabin',
     title: "Uncle Tom's Cabin",
     author: 'Harriet Beecher Stowe',
@@ -8288,7 +8288,7 @@ export const STORIES_PART1: RawStory[] = [
       "better": "daha iyi"
     }
   },
-                                  {
+                                    {
     id: 'classic_journey_center_earth',
     title: "Journey to the Center of the Earth",
     author: 'Jules Verne',
@@ -8357,7 +8357,7 @@ export const STORIES_PART1: RawStory[] = [
       "anymore": "artık"
     }
   },
-                                  {
+                                    {
     id: 'classic_first_men_moon',
     title: "The First Men in the Moon",
     author: 'H. G. Wells',
@@ -8423,7 +8423,7 @@ export const STORIES_PART1: RawStory[] = [
       "blinds": "panjur"
     }
   },
-                                {
+                                  {
     id: 'classic_captains_courageous',
     title: "Captains Courageous",
     author: 'Rudyard Kipling',
@@ -8496,7 +8496,7 @@ export const STORIES_PART1: RawStory[] = [
       "balance": "denge"
     }
   },
-                                {
+                                  {
     id: 'classic_mysterious_island',
     title: "The Mysterious Island",
     author: 'Jules Verne',
@@ -8567,7 +8567,7 @@ export const STORIES_PART1: RawStory[] = [
       "closer": "daha yakın"
     }
   },
-                                {
+                                  {
     id: 'classic_david_copperfield',
     title: "David Copperfield",
     author: 'Charles Dickens',
@@ -8640,7 +8640,7 @@ export const STORIES_PART1: RawStory[] = [
       "cheerful": "neşeli"
     }
   },
-                              {
+                                {
     id: 'classic_great_expectations',
     title: "Great Expectations",
     author: 'Charles Dickens',
@@ -8709,7 +8709,7 @@ export const STORIES_PART1: RawStory[] = [
       "completely": "tamamen"
     }
   },
-                              {
+                                {
     id: 'classic_jane_eyre',
     title: "Jane Eyre",
     author: 'Charlotte Brontë',
@@ -8780,7 +8780,7 @@ export const STORIES_PART1: RawStory[] = [
       "eventually": "sonunda"
     }
   },
-                              {
+                                {
     id: 'classic_count_monte_cristo',
     title: "The Count of Monte Cristo",
     author: 'Alexandre Dumas',
@@ -8849,7 +8849,7 @@ export const STORIES_PART1: RawStory[] = [
       "crawled": "süründü"
     }
   },
-                              {
+                                {
     id: 'classic_huck_finn',
     title: "Adventures of Huckleberry Finn",
     author: 'Mark Twain',
@@ -8920,7 +8920,7 @@ export const STORIES_PART1: RawStory[] = [
       "prepared": "hazırlıklı"
     }
   },
-                              {
+                                {
     id: 'classic_twenty_thousand_leagues',
     title: "Twenty Thousand Leagues Under the Seas",
     author: 'Jules Verne',
@@ -8990,7 +8990,7 @@ export const STORIES_PART1: RawStory[] = [
       "curious": "meraklı"
     }
   },
-                              {
+                                {
     id: 'classic_earth_to_moon',
     title: "From the Earth to the Moon",
     author: 'Jules Verne',
@@ -9061,7 +9061,7 @@ export const STORIES_PART1: RawStory[] = [
       "captain": "kaptan"
     }
   },
-                              {
+                                {
     id: 'classic_lost_world',
     title: "The Lost World",
     author: 'Arthur Conan Doyle',
@@ -9132,7 +9132,7 @@ export const STORIES_PART1: RawStory[] = [
       "distant": "uzak"
     }
   },
-                              {
+                                {
     id: 'classic_island_moreau',
     title: "The Island of Doctor Moreau",
     author: 'H. G. Wells',
@@ -9201,7 +9201,7 @@ export const STORIES_PART1: RawStory[] = [
       "clearly": "açıkça"
     }
   },
-                              {
+                                {
     id: 'classic_red_badge_courage',
     title: "The Red Badge of Courage",
     author: 'Stephen Crane',
@@ -9269,7 +9269,7 @@ export const STORIES_PART1: RawStory[] = [
       "dusty": "tozlu"
     }
   },
-                              {
+                                {
     id: 'classic_emma',
     title: "Emma",
     author: 'Jane Austen',
@@ -9338,7 +9338,7 @@ export const STORIES_PART1: RawStory[] = [
       "immediately": "derhal"
     }
   },
-                              {
+                                {
     id: 'classic_sense_sensibility',
     title: "Sense and Sensibility",
     author: 'Jane Austen',
@@ -9408,7 +9408,7 @@ export const STORIES_PART1: RawStory[] = [
       "comfort": "konfor"
     }
   },
-                              {
+                                {
     id: 'classic_mansfield_park',
     title: "Mansfield Park",
     author: 'Jane Austen',
@@ -9480,7 +9480,7 @@ export const STORIES_PART1: RawStory[] = [
       "distance": "mesafe"
     }
   },
-                              {
+                                {
     id: 'classic_persuasion',
     title: "Persuasion",
     author: 'Jane Austen',
@@ -9553,7 +9553,7 @@ export const STORIES_PART1: RawStory[] = [
       "emotions": "duygular"
     }
   },
-                              {
+                                {
     id: 'classic_northanger_abbey',
     title: "Northanger Abbey",
     author: 'Jane Austen',
@@ -9623,7 +9623,7 @@ export const STORIES_PART1: RawStory[] = [
       "kindness": "nezaket"
     }
   },
-                          {
+                            {
     id: 'peter_wolf',
     title: "Peter and the Wolf",
     author: 'Sergei Prokofiev',
@@ -9692,7 +9692,7 @@ export const STORIES_PART1: RawStory[] = [
       "content": "memnun"
     }
   },
-                          {
+                            {
     id: 'tin_soldier',
     title: "The Steadfast Tin Soldier",
     author: 'Hans Christian Andersen',
@@ -9763,7 +9763,7 @@ export const STORIES_PART1: RawStory[] = [
       "heart": "kalp"
     }
   },
-                          {
+                            {
     id: 'magic_pot',
     title: "The Magic Porridge Pot",
     author: 'Brothers Grimm',
@@ -9833,7 +9833,7 @@ export const STORIES_PART1: RawStory[] = [
       "feast": "ziyafet"
     }
   },
-                          {
+                            {
     id: 'wolf_kids',
     title: "The Wolf and the Seven Young Goats",
     author: 'Brothers Grimm',
@@ -9902,7 +9902,7 @@ export const STORIES_PART1: RawStory[] = [
       "wolf": "kurt"
     }
   },
-                          {
+                            {
     id: 'brave_tailor',
     title: "The Brave Little Tailor",
     author: 'Brothers Grimm',
@@ -9971,7 +9971,7 @@ export const STORIES_PART1: RawStory[] = [
       "capture": "yakalamak"
     }
   },
-                        {
+                          {
     id: 'fable_shepherd_flute',
     title: "The Shepherd's Flute",
     author: 'Traditional',
@@ -10042,7 +10042,7 @@ export const STORIES_PART1: RawStory[] = [
       "journey": "yolculuk"
     }
   },
-                        {
+                          {
     id: 'fable_ant_dove',
     title: "The Ant and the Dove",
     author: 'Aesop',
@@ -10114,7 +10114,7 @@ export const STORIES_PART1: RawStory[] = [
       "kindness": "iyilik"
     }
   },
-                        {
+                          {
     id: 'fable_donkey_salt',
     title: "The Donkey and the Salt",
     author: 'Aesop',
@@ -10184,7 +10184,7 @@ export const STORIES_PART1: RawStory[] = [
       "obey": "söz dinlemek"
     }
   },
-                        {
+                          {
     id: 'fable_honest_woodcutter',
     title: "The Honest Woodcutter",
     author: 'Aesop',
@@ -10254,7 +10254,7 @@ export const STORIES_PART1: RawStory[] = [
       "iron": "demir"
     }
   },
-                        {
+                          {
     id: 'fable_milkmaid_pail',
     title: "The Milkmaid and her Pail",
     author: 'Aesop',
@@ -10326,7 +10326,7 @@ export const STORIES_PART1: RawStory[] = [
       "honest": "dürüst"
     }
   },
-                        {
+                          {
     id: 'fable_peacock_crane',
     title: "The Peacock and the Crane",
     author: 'Aesop',
@@ -10398,7 +10398,7 @@ export const STORIES_PART1: RawStory[] = [
       "value": "değer"
     }
   },
-                        {
+                          {
     id: 'fable_fisherman_fish',
     title: "The Fisherman and the Little Fish",
     author: 'Aesop',
@@ -10466,7 +10466,7 @@ export const STORIES_PART1: RawStory[] = [
       "respect": "saygı"
     }
   },
-                        {
+                          {
     id: 'fable_three_wishes',
     title: "The Three Wishes",
     author: 'Traditional',
@@ -10540,7 +10540,7 @@ export const STORIES_PART1: RawStory[] = [
       "shine": "parlamak"
     }
   },
-                        {
+                          {
     id: 'fable_magic_seed',
     title: "The Magic Seed",
     author: 'Traditional',
@@ -10610,7 +10610,7 @@ export const STORIES_PART1: RawStory[] = [
       "proud": "gururlu"
     }
   },
-                        {
+                          {
     id: 'fable_magic_paintbrush',
     title: "The Magic Paintbrush",
     author: 'Chinese Folktale',
@@ -10677,7 +10677,7 @@ export const STORIES_PART1: RawStory[] = [
       "useful": "yararlı"
     }
   },
-                        {
+                          {
     id: 'horror_ghost_library',
     title: "The Ghost in the Library",
     author: 'Traditional',
@@ -10744,7 +10744,7 @@ export const STORIES_PART1: RawStory[] = [
       "breathes": "soluyor"
     }
   },
-                        {
+                          {
     id: 'horror_whispering_castle',
     title: "The Whispering Castle",
     author: 'Traditional',
@@ -10811,7 +10811,7 @@ export const STORIES_PART1: RawStory[] = [
       "glowing": "kor gibi"
     }
   },
-                        {
+                          {
     id: 'horror_haunted_lighthouse',
     title: "The Haunted Lighthouse",
     author: 'Traditional',
@@ -10882,7 +10882,7 @@ export const STORIES_PART1: RawStory[] = [
       "friendly": "dostane"
     }
   },
-                        {
+                          {
     id: 'horror_clock_tower_ghost',
     title: "The Clock Tower Ghost",
     author: 'Traditional',
@@ -10954,7 +10954,7 @@ export const STORIES_PART1: RawStory[] = [
       "heartbeat": "nabız"
     }
   },
-                        {
+                          {
     id: 'horror_haunted_mirror',
     title: "The Haunted Mirror",
     author: 'Traditional',
@@ -11026,7 +11026,7 @@ export const STORIES_PART1: RawStory[] = [
       "grabs": "kapıyor"
     }
   },
-                        {
+                          {
     id: 'horror_whispering_shadows',
     title: "The Whispering Shadows",
     author: 'Traditional',
@@ -11091,7 +11091,7 @@ export const STORIES_PART1: RawStory[] = [
       "breathes": "soluyor"
     }
   },
-                        {
+                          {
     id: 'horror_crying_stone',
     title: "The Legend of the Crying Stone",
     author: 'Traditional',
@@ -11161,7 +11161,7 @@ export const STORIES_PART1: RawStory[] = [
       "flowers": "çiçekler"
     }
   },
-                        {
+                          {
     id: 'horror_haunted_painting',
     title: "The Haunted Painting",
     author: 'Traditional',
@@ -11230,7 +11230,7 @@ export const STORIES_PART1: RawStory[] = [
       "previous": "önceki"
     }
   },
-                        {
+                          {
     id: 'horror_haunted_clock',
     title: "The Haunted Clock",
     author: 'Traditional',
@@ -11299,7 +11299,7 @@ export const STORIES_PART1: RawStory[] = [
       "flashes": "çakışlar"
     }
   },
-                        {
+                          {
     id: 'horror_mysterious_passenger',
     title: "The Mysterious Passenger",
     author: 'Traditional',
@@ -11369,7 +11369,7 @@ export const STORIES_PART1: RawStory[] = [
       "safety": "emniyet"
     }
   },
-                        {
+                          {
     id: 'classic_gulliver_laputa',
     title: "Gulliver's Travels - The Floating Island",
     author: 'Jonathan Swift',
@@ -11441,7 +11441,7 @@ export const STORIES_PART1: RawStory[] = [
       "main": "ana"
     }
   },
-                        {
+                          {
     id: 'classic_crusoe_footprint',
     title: "Robinson Crusoe - The First Footprint",
     author: 'Daniel Defoe',
@@ -11510,7 +11510,7 @@ export const STORIES_PART1: RawStory[] = [
       "calm": "sakin"
     }
   },
-                        {
+                          {
     id: 'classic_call_wild_race',
     title: "The Call of the Wild - The Great Sled Race",
     author: 'Jack London',
@@ -11578,7 +11578,7 @@ export const STORIES_PART1: RawStory[] = [
       "distance": "mesafe"
     }
   },
-                        {
+                          {
     id: 'classic_around_world_india',
     title: "Around the World in Eighty Days - The Train in India",
     author: 'Jules Verne',
@@ -11647,7 +11647,7 @@ export const STORIES_PART1: RawStory[] = [
       "mission": "görev"
     }
   },
-                        {
+                          {
     id: 'classic_treasure_island_chest',
     title: "Treasure Island - The Map in the Chest",
     author: 'Robert Louis Stevenson',
@@ -11713,7 +11713,7 @@ export const STORIES_PART1: RawStory[] = [
       "blows": "darbeler"
     }
   },
-                        {
+                          {
     id: 'classic_moby_dick_whale',
     title: "Moby Dick - The White Whale",
     author: 'Herman Melville',
@@ -11781,7 +11781,7 @@ export const STORIES_PART1: RawStory[] = [
       "distance": "mesafe"
     }
   },
-                        {
+                          {
     id: 'classic_secret_garden_key',
     title: "The Secret Garden - The Locked Gate",
     author: 'Frances Hodgson Burnett',
@@ -11851,7 +11851,7 @@ export const STORIES_PART1: RawStory[] = [
       "aside": "bir kenara"
     }
   },
-                        {
+                          {
     id: 'classic_heidi_mountain',
     title: "Heidi - The Grandfather's House",
     author: 'Johanna Spyri',
@@ -11920,7 +11920,7 @@ export const STORIES_PART1: RawStory[] = [
       "care": "özen"
     }
   },
-                        {
+                          {
     id: 'classic_don_quixote_windmills',
     title: "Don Quixote - The Windmills",
     author: 'Miguel de Cervantes',
@@ -11988,7 +11988,7 @@ export const STORIES_PART1: RawStory[] = [
       "appears": "görünüyor"
     }
   },
-                        {
+                          {
     id: 'classic_odyssey_sirens',
     title: "The Odyssey - The Sirens' Song",
     author: 'Homer',
@@ -12051,7 +12051,7 @@ export const STORIES_PART1: RawStory[] = [
       "distant": "uzak"
     }
   },
-                        {
+                          {
     id: 'daily_market',
     title: "A Day at the Market",
     author: 'Antigravity',
@@ -12120,7 +12120,7 @@ export const STORIES_PART1: RawStory[] = [
       "thankful": "minnettar"
     }
   },
-                        {
+                          {
     id: 'daily_cafe',
     title: "Coffee and Conversation",
     author: 'Antigravity',
@@ -12190,7 +12190,7 @@ export const STORIES_PART1: RawStory[] = [
       "nap": "şekerleme (kısa uyku)"
     }
   },
-                        {
+                          {
     id: 'daily_taxi',
     title: "The Taxi Ride",
     author: 'Antigravity',
@@ -12257,7 +12257,7 @@ export const STORIES_PART1: RawStory[] = [
       "peaceful": "huzurlu"
     }
   },
-                        {
+                          {
     id: 'daily_hotel',
     title: "Checking In",
     author: 'Antigravity',
@@ -12329,7 +12329,7 @@ export const STORIES_PART1: RawStory[] = [
       "excellent": "mükemmel"
     }
   },
-                        {
+                          {
     id: 'daily_park',
     title: "Meeting in the Park",
     author: 'Antigravity',
@@ -12397,7 +12397,7 @@ export const STORIES_PART1: RawStory[] = [
       "joy": "sevinç"
     }
   },
-                        {
+                          {
     id: 'daily_library',
     title: "Finding a Book",
     author: 'Antigravity',
@@ -12464,7 +12464,7 @@ export const STORIES_PART1: RawStory[] = [
       "hobby": "hobi"
     }
   },
-                        {
+                          {
     id: 'daily_bus',
     title: "Missing the Bus",
     author: 'Antigravity',
@@ -12527,7 +12527,7 @@ export const STORIES_PART1: RawStory[] = [
       "travel": "seyahat etmek"
     }
   },
-                        {
+                          {
     id: 'daily_weather',
     title: "Planning a Picnic",
     author: 'Antigravity',
@@ -12591,7 +12591,7 @@ export const STORIES_PART1: RawStory[] = [
       "memories": "anılar"
     }
   },
-                        {
+                          {
     id: 'daily_pet',
     title: "Choosing a Pet",
     author: 'Antigravity',
@@ -12659,7 +12659,7 @@ export const STORIES_PART1: RawStory[] = [
       "peaceful": "huzurlu"
     }
   },
-                        {
+                          {
     id: 'daily_cooking',
     title: "Dinner Time",
     author: 'Antigravity',
@@ -12730,7 +12730,7 @@ export const STORIES_PART1: RawStory[] = [
       "finish": "bitirmek"
     }
   },
-                        {
+                          {
     id: 'daily_apartment',
     title: "Renting a Flat",
     author: 'Antigravity',
@@ -12797,7 +12797,7 @@ export const STORIES_PART1: RawStory[] = [
       "satisfied": "memnun"
     }
   },
-                        {
+                          {
     id: 'daily_airport',
     title: "Heathrow Arrival",
     author: 'Antigravity',
@@ -12861,7 +12861,7 @@ export const STORIES_PART1: RawStory[] = [
       "queue": "sıra"
     }
   },
-                        {
+                          {
     id: 'daily_doctor',
     title: "The Doctor's Visit",
     author: 'Antigravity',
@@ -12929,7 +12929,7 @@ export const STORIES_PART1: RawStory[] = [
       "grateful": "minnettar"
     }
   },
-                        {
+                          {
     id: 'daily_shopping',
     title: "Mall Shopping",
     author: 'Antigravity',
@@ -13001,7 +13001,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "macera"
     }
   },
-                        {
+                          {
     id: 'daily_interview',
     title: "The Job Interview",
     author: 'Antigravity',
@@ -13068,7 +13068,7 @@ export const STORIES_PART1: RawStory[] = [
       "secure": "güvende"
     }
   },
-                        {
+                          {
     id: 'daily_bank',
     title: "Opening an Account",
     author: 'Antigravity',
@@ -13137,7 +13137,7 @@ export const STORIES_PART1: RawStory[] = [
       "pin": "şifre"
     }
   },
-                        {
+                          {
     id: 'daily_dentist',
     title: "Toothache Trouble",
     author: 'Antigravity',
@@ -13206,7 +13206,7 @@ export const STORIES_PART1: RawStory[] = [
       "checkup": "kontrol"
     }
   },
-                        {
+                          {
     id: 'daily_train',
     title: "Ticket Office",
     author: 'Antigravity',
@@ -13270,7 +13270,7 @@ export const STORIES_PART1: RawStory[] = [
       "experience": "deneyim"
     }
   },
-                        {
+                          {
     id: 'daily_restaurant',
     title: "The Birthday Dinner",
     author: 'Antigravity',
@@ -13340,7 +13340,7 @@ export const STORIES_PART1: RawStory[] = [
       "refresh": "tazelenmek"
     }
   },
-                        {
+                          {
     id: 'daily_laundry',
     title: "Lost Sock",
     author: 'Antigravity',
@@ -13413,7 +13413,7 @@ export const STORIES_PART1: RawStory[] = [
       "stress": "stres"
     }
   },
-                  {
+                    {
     id: 'horror_lost_tomb',
     title: "The Legend of the Lost Tomb",
     author: 'Mystery Author',
@@ -13482,7 +13482,7 @@ export const STORIES_PART1: RawStory[] = [
       "beating": "çırpınış"
     }
   },
-                  {
+                    {
     id: 'horror_secret_passage',
     title: "The Secret of the Passage",
     author: 'Mystery Author',
@@ -13551,7 +13551,7 @@ export const STORIES_PART1: RawStory[] = [
       "beating": "çırpınış"
     }
   },
-                {
+                  {
     id: 'scifi_time_machine',
     title: "The Time Machine",
     author: 'H. G. Wells',
@@ -13621,7 +13621,7 @@ export const STORIES_PART1: RawStory[] = [
       "humanity": "insanlık"
     }
   },
-                {
+                  {
     id: 'scifi_journey_center_earth',
     title: "A Journey to the Centre of the Earth",
     author: 'Jules Verne',
@@ -13689,7 +13689,7 @@ export const STORIES_PART1: RawStory[] = [
       "exhausted": "bitkin"
     }
   },
-                {
+                  {
     id: 'scifi_twenty_thousand_leagues',
     title: "Twenty Thousand Leagues Under the Sea",
     author: 'Jules Verne',
@@ -13759,7 +13759,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "macera"
     }
   },
-                {
+                  {
     id: 'scifi_robie',
     title: "Robbie",
     author: 'Isaac Asimov',
@@ -14035,7 +14035,7 @@ export const STORIES_PART1: RawStory[] = [
       "deep": "derin"
     }
   },
-                {
+                  {
     id: 'scifi_runaround',
     title: "Runaround",
     author: 'Isaac Asimov',
@@ -14280,7 +14280,7 @@ export const STORIES_PART1: RawStory[] = [
       "fly": "uçmak"
     }
   },
-                {
+                  {
     id: 'scifi_star_beast',
     title: "The Star Beast",
     author: 'Robert A. Heinlein',
@@ -14349,7 +14349,7 @@ export const STORIES_PART1: RawStory[] = [
       "friendship": "arkadaşlık"
     }
   },
-                {
+                  {
     id: 'scifi_lost_world',
     title: "The Lost World",
     author: 'Arthur Conan Doyle',
@@ -14418,7 +14418,7 @@ export const STORIES_PART1: RawStory[] = [
       "wonderful": "harika"
     }
   },
-                {
+                  {
     id: 'scifi_from_earth_to_moon',
     title: "From the Earth to the Moon",
     author: 'Jules Verne',
@@ -14481,7 +14481,7 @@ export const STORIES_PART1: RawStory[] = [
       "win": "zafer"
     }
   },
-                {
+                  {
     id: 'scifi_propeller_island',
     title: "Propeller Island",
     author: 'Jules Verne',
@@ -14549,7 +14549,7 @@ export const STORIES_PART1: RawStory[] = [
       "land": "kara"
     }
   },
-                {
+                  {
     id: 'scifi_star_maker',
     title: "Star Maker",
     author: 'Olaf Stapledon',
@@ -14620,7 +14620,7 @@ export const STORIES_PART1: RawStory[] = [
       "plan": "plan"
     }
   },
-                {
+                  {
     id: 'scifi_invisible_man',
     title: "The Invisible Man",
     author: 'H. G. Wells',
@@ -15014,7 +15014,7 @@ export const STORIES_PART1: RawStory[] = [
       "ideas": "fikirler"
     }
   },
-                {
+                  {
     id: 'scifi_war_worlds',
     title: "The War of the Worlds",
     author: 'H. G. Wells',
@@ -15083,7 +15083,7 @@ export const STORIES_PART1: RawStory[] = [
       "care": "tedbir"
     }
   },
-                {
+                  {
     id: 'scifi_frankenstein',
     title: "Frankenstein",
     author: 'Mary Shelley',
@@ -15154,7 +15154,7 @@ export const STORIES_PART1: RawStory[] = [
       "quiet": "sessizlik"
     }
   },
-                {
+                  {
     id: 'scifi_island_dr_moreau',
     title: "The Island of Doctor Moreau",
     author: 'H. G. Wells',
@@ -15215,7 +15215,7 @@ export const STORIES_PART1: RawStory[] = [
       "dream": "rüya"
     }
   },
-                {
+                  {
     id: 'scifi_first_men_moon',
     title: "The First Men in the Moon",
     author: 'H. G. Wells',
@@ -15506,7 +15506,7 @@ export const STORIES_PART1: RawStory[] = [
       "mysteries": "gizemler"
     }
   },
-                {
+                  {
     id: 'scifi_around_moon',
     title: "Around the Moon",
     author: 'Jules Verne',
@@ -15570,7 +15570,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "macera"
     }
   },
-                {
+                  {
     id: 'scifi_youth',
     title: "Youth",
     author: 'Isaac Asimov',
@@ -15642,7 +15642,7 @@ export const STORIES_PART1: RawStory[] = [
       "galaxy": "galaksi"
     }
   },
-                {
+                  {
     id: 'scifi_reason',
     title: "Reason",
     author: 'Isaac Asimov',
@@ -15712,7 +15712,7 @@ export const STORIES_PART1: RawStory[] = [
       "mission": "görev"
     }
   },
-                {
+                  {
     id: 'scifi_food_of_gods',
     title: "The Food of the Gods",
     author: 'H. G. Wells',
@@ -15867,7 +15867,7 @@ export const STORIES_PART1: RawStory[] = [
       "begun": "başlamak"
     }
   },
-                {
+                  {
     id: 'scifi_chocky',
     title: "Chocky",
     author: 'John Wyndham',
@@ -15938,7 +15938,7 @@ export const STORIES_PART1: RawStory[] = [
       "fade": "kaybolmak"
     }
   },
-                {
+                  {
     id: 'scifi_wells_star',
     title: "The Star",
     author: 'H. G. Wells',
@@ -16424,7 +16424,7 @@ export const STORIES_PART1: RawStory[] = [
       "almost": "neredeyse"
     }
   },
-                {
+                  {
     id: 'scifi_new_hope',
     title: "Star Wars: A New Hope",
     author: 'George Lucas',
@@ -16494,7 +16494,7 @@ export const STORIES_PART1: RawStory[] = [
       "peace": "barış"
     }
   },
-                {
+                  {
     id: 'scifi_liar',
     title: "Liar!",
     author: 'Isaac Asimov',
@@ -16564,7 +16564,7 @@ export const STORIES_PART1: RawStory[] = [
       "restore": "restore"
     }
   },
-                {
+                  {
     id: 'scifi_strange_case_dr_jekyll',
     title: "Strange Case of Dr Jekyll and Mr Hyde",
     author: 'Robert Louis Stevenson',
@@ -16870,7 +16870,7 @@ export const STORIES_PART1: RawStory[] = [
       "keeping": "saklamak"
     }
   },
-                {
+                  {
     id: 'scifi_the_chrysalids',
     title: "The Chrysalids",
     author: 'John Wyndham',
@@ -16939,7 +16939,7 @@ export const STORIES_PART1: RawStory[] = [
       "development": "büyüme"
     }
   },
-                {
+                  {
     id: 'detective_scandal_bohemia',
     title: "A Scandal in Bohemia",
     author: 'Arthur Conan Doyle',
@@ -17008,7 +17008,7 @@ export const STORIES_PART1: RawStory[] = [
       "danger": "tehlike"
     }
   },
-                {
+                  {
     id: 'detective_copper_beeches',
     title: "The Adventure of the Copper Beeches",
     author: 'Arthur Conan Doyle',
@@ -17079,7 +17079,7 @@ export const STORIES_PART1: RawStory[] = [
       "escape": "kaçmak"
     }
   },
-                {
+                  {
     id: 'detective_blue_cross',
     title: "The Blue Cross",
     author: 'G. K. Chesterton',
@@ -17148,7 +17148,7 @@ export const STORIES_PART1: RawStory[] = [
       "victory": "zafer"
     }
   },
-                {
+                  {
     id: 'detective_queens_necklace',
     title: "The Queen's Necklace",
     author: 'Maurice Leblanc',
@@ -17217,7 +17217,7 @@ export const STORIES_PART1: RawStory[] = [
       "master": "patron"
     }
   },
-                {
+                  {
     id: 'detective_coin_dionysius',
     title: "The Coin of Dionysius",
     author: 'Ernest Bramah',
@@ -17287,7 +17287,7 @@ export const STORIES_PART1: RawStory[] = [
       "truth": "gerçek"
     }
   },
-                {
+                  {
     id: 'detective_dancing_men',
     title: "The Adventure of the Dancing Men",
     author: 'Arthur Conan Doyle',
@@ -17356,7 +17356,7 @@ export const STORIES_PART1: RawStory[] = [
       "logic": "akıl"
     }
   },
-                {
+                  {
     id: 'detective_red_silk_scarf',
     title: "The Red Silk Scarf",
     author: 'Maurice Leblanc',
@@ -17427,7 +17427,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "macera"
     }
   },
-                {
+                  {
     id: 'detective_queer_feet',
     title: "The Queer Feet",
     author: 'G. K. Chesterton',
@@ -17498,7 +17498,7 @@ export const STORIES_PART1: RawStory[] = [
       "mercy": "nazik ve iyi olmak"
     }
   },
-                {
+                  {
     id: 'detective_lenton_croft',
     title: "The Case of the Lenton Croft Robberies",
     author: 'Arthur Morrison',
@@ -17570,7 +17570,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "büyük zaman"
     }
   },
-                {
+                  {
     id: 'detective_cell_13_part1',
     title: "The Problem of Cell 13 - Part 1",
     author: 'Jacques Futrelle',
@@ -17641,7 +17641,7 @@ export const STORIES_PART1: RawStory[] = [
       "winner": "kazanan"
     }
   },
-                {
+                  {
     id: 'detective_study_scarlet_1',
     title: "A Study in Scarlet - Part 1",
     author: 'Arthur Conan Doyle',
@@ -17714,7 +17714,7 @@ export const STORIES_PART1: RawStory[] = [
       "confidence": "inanç"
     }
   },
-                {
+                  {
     id: 'detective_study_scarlet_2',
     title: "A Study in Scarlet - Part 2",
     author: 'Arthur Conan Doyle',
@@ -17786,7 +17786,7 @@ export const STORIES_PART1: RawStory[] = [
       "victim": "kurban"
     }
   },
-                {
+                  {
     id: 'detective_sign_four_1',
     title: "The Sign of the Four - Part 1",
     author: 'Arthur Conan Doyle',
@@ -17856,7 +17856,7 @@ export const STORIES_PART1: RawStory[] = [
       "justice": "doğru olan"
     }
   },
-                {
+                  {
     id: 'detective_sign_four_2',
     title: "The Sign of the Four - Part 2",
     author: 'Arthur Conan Doyle',
@@ -17926,7 +17926,7 @@ export const STORIES_PART1: RawStory[] = [
       "justice": "adalet"
     }
   },
-                {
+                  {
     id: 'detective_silver_blaze',
     title: "Silver Blaze",
     author: 'Arthur Conan Doyle',
@@ -17994,7 +17994,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "büyük gezi"
     }
   },
-                {
+                  {
     id: 'detective_arrest_lupin',
     title: "The Arrest of Arsène Lupin",
     author: 'Maurice Leblanc',
@@ -18065,7 +18065,7 @@ export const STORIES_PART1: RawStory[] = [
       "custody": "hapis"
     }
   },
-                {
+                  {
     id: 'detective_lupin_in_prison',
     title: "Arsène Lupin in Prison",
     author: 'Maurice Leblanc',
@@ -18136,7 +18136,7 @@ export const STORIES_PART1: RawStory[] = [
       "fame": "popülerlik"
     }
   },
-                {
+                  {
     id: 'detective_escape_lupin',
     title: "The Escape of Arsène Lupin",
     author: 'Maurice Leblanc',
@@ -18203,7 +18203,7 @@ export const STORIES_PART1: RawStory[] = [
       "victory": "zafer"
     }
   },
-                {
+                  {
     id: 'detective_mysterious_passenger',
     title: "The Mysterious Passenger",
     author: 'Maurice Leblanc',
@@ -18275,7 +18275,7 @@ export const STORIES_PART1: RawStory[] = [
       "clutching": "sıkıca tutarak"
     }
   },
-                {
+                  {
     id: 'detective_flying_stars',
     title: "The Flying Stars",
     author: 'G. K. Chesterton',
@@ -18346,7 +18346,7 @@ export const STORIES_PART1: RawStory[] = [
       "spirit": "ruh"
     }
   },
-                {
+                  {
     id: 'detective_sins_saradine',
     title: "The Sins of Prince Saradine",
     author: 'G. K. Chesterton',
@@ -18417,7 +18417,7 @@ export const STORIES_PART1: RawStory[] = [
       "burden": "yük"
     }
   },
-                {
+                  {
     id: 'detective_biter_bit',
     title: "The Biter Bit",
     author: 'Wilkie Collins',
@@ -18489,7 +18489,7 @@ export const STORIES_PART1: RawStory[] = [
       "melody": "melodi"
     }
   },
-                {
+                  {
     id: 'detective_fenchurch_street',
     title: "The Fenchurch Street Mystery",
     author: 'Baroness Orczy',
@@ -18560,7 +18560,7 @@ export const STORIES_PART1: RawStory[] = [
       "betrayed": "ihanet etmek"
     }
   },
-                {
+                  {
     id: 'detective_cell_13_part2',
     title: "The Problem of Cell 13 - Part 2",
     author: 'Jacques Futrelle',
@@ -18632,7 +18632,7 @@ export const STORIES_PART1: RawStory[] = [
       "piece": "parça"
     }
   },
-                {
+                  {
     id: 'detective_marie_roget',
     title: "The Mystery of Marie Rogêt",
     author: 'Edgar Allan Poe',
@@ -18701,7 +18701,7 @@ export const STORIES_PART1: RawStory[] = [
       "inconsistency": "tutarsızlık"
     }
   },
-              {
+                {
     id: 'detective_noble_bachelor',
     title: "The Adventure of the Noble Bachelor",
     author: 'Arthur Conan Doyle',
@@ -18770,7 +18770,7 @@ export const STORIES_PART1: RawStory[] = [
       "bachelor": "evlenmemiş adam"
     }
   },
-              {
+                {
     id: 'detective_cardboard_box',
     title: "The Adventure of the Cardboard Box",
     author: 'Arthur Conan Doyle',
@@ -18841,7 +18841,7 @@ export const STORIES_PART1: RawStory[] = [
       "honour": "iyi isim"
     }
   },
-              {
+                {
     id: 'detective_mirror_magistrate',
     title: "The Mirror of the Magistrate",
     author: 'G. K. Chesterton',
@@ -18910,7 +18910,7 @@ export const STORIES_PART1: RawStory[] = [
       "handcuffs": "kelepçe"
     }
   },
-              {
+                {
     id: 'detective_seven_of_hearts',
     title: "The Seven of Hearts",
     author: 'Maurice Leblanc',
@@ -18976,7 +18976,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "macera"
     }
   },
-              {
+                {
     id: 'detective_secret_growler',
     title: "The Secret of the Growler",
     author: 'Arthur Morrison',
@@ -19046,7 +19046,7 @@ export const STORIES_PART1: RawStory[] = [
       "protect": "korumak"
     }
   },
-              {
+                {
     id: 'detective_lost_special',
     title: "The Lost Special",
     author: 'Arthur Conan Doyle',
@@ -19118,7 +19118,7 @@ export const STORIES_PART1: RawStory[] = [
       "puzzle": "problem"
     }
   },
-              {
+                {
     id: 'detective_red_thread_honour',
     title: "The Red Thread of Honour",
     author: 'Ernest Bramah',
@@ -19190,7 +19190,7 @@ export const STORIES_PART1: RawStory[] = [
       "mission": "iş"
     }
   },
-              {
+                {
     id: 'detective_escape_old_man',
     title: "The Escape of the Old Man",
     author: 'Baroness Orczy',
@@ -19261,7 +19261,7 @@ export const STORIES_PART1: RawStory[] = [
       "horizon": "arazi kenarı"
     }
   },
-              {
+                {
     id: 'detective_case_mirror',
     title: "The Case of the Mirror",
     author: 'Jacques Futrelle',
@@ -19330,7 +19330,7 @@ export const STORIES_PART1: RawStory[] = [
       "solve": "çözmek"
     }
   },
-              {
+                {
     id: 'detective_steel_room',
     title: "The Mystery of the Steel Room",
     author: 'Jacques Futrelle',
@@ -19402,7 +19402,7 @@ export const STORIES_PART1: RawStory[] = [
       "patience": "zaman"
     }
   },
-              {
+                {
     id: 'detective_beryl_coronet',
     title: "The Adventure of the Beryl Coronet",
     author: 'Arthur Conan Doyle',
@@ -19470,7 +19470,7 @@ export const STORIES_PART1: RawStory[] = [
       "forgive": "affetmek"
     }
   },
-              {
+                {
     id: 'detective_engineers_thumb',
     title: "The Adventure of the Engineer's Thumb",
     author: 'Arthur Conan Doyle',
@@ -19541,7 +19541,7 @@ export const STORIES_PART1: RawStory[] = [
       "courage": "cesaret"
     }
   },
-              {
+                {
     id: 'detective_red_scarf_2',
     title: "The Red Silk Scarf - Part 2",
     author: 'Maurice Leblanc',
@@ -19611,7 +19611,7 @@ export const STORIES_PART1: RawStory[] = [
       "stride": "adım"
     }
   },
-              {
+                {
     id: 'detective_black_pearl',
     title: "The Black Pearl",
     author: 'Maurice Leblanc',
@@ -19682,7 +19682,7 @@ export const STORIES_PART1: RawStory[] = [
       "legendary": "ünlü"
     }
   },
-              {
+                {
     id: 'detective_man_passage',
     title: "The Man in the Passage",
     author: 'G. K. Chesterton',
@@ -19755,7 +19755,7 @@ export const STORIES_PART1: RawStory[] = [
       "innocent": "masum"
     }
   },
-              {
+                {
     id: 'detective_purple_jewel',
     title: "The Purple Jewel",
     author: 'G. K. Chesterton',
@@ -19826,7 +19826,7 @@ export const STORIES_PART1: RawStory[] = [
       "whisper": "fısıldamak"
     }
   },
-              {
+                {
     id: 'detective_hansom_cab_1',
     title: "The Mystery of the Hansom Cab - Part 1",
     author: 'Fergus Hume',
@@ -19895,7 +19895,7 @@ export const STORIES_PART1: RawStory[] = [
       "justice": "hakkaniyet"
     }
   },
-              {
+                {
     id: 'detective_missing_hand',
     title: "The Case of the Missing Hand",
     author: 'Arthur Morrison',
@@ -19964,7 +19964,7 @@ export const STORIES_PART1: RawStory[] = [
       "recover": "bulmak"
     }
   },
-              {
+                {
     id: 'detective_stolen_cigar',
     title: "The Stolen Cigar Case",
     author: 'Bret Harte',
@@ -20036,7 +20036,7 @@ export const STORIES_PART1: RawStory[] = [
       "evidence": "işaret"
     }
   },
-              {
+                {
     id: 'detective_brook_street_tragedy',
     title: "The Tragedy of Brook Street",
     author: 'Arthur Morrison',
@@ -20108,7 +20108,7 @@ export const STORIES_PART1: RawStory[] = [
       "justice": "adalet"
     }
   },
-            {
+              {
     id: 'history_giza_pyramids',
     title: "The Pyramids of Giza",
     author: 'Ancient Egypt',
@@ -20177,7 +20177,7 @@ export const STORIES_PART1: RawStory[] = [
       "symbol": "işaret"
     }
   },
-            {
+              {
     id: 'history_great_wall',
     title: "The Great Wall of China",
     author: 'Ancient China',
@@ -20244,7 +20244,7 @@ export const STORIES_PART1: RawStory[] = [
       "unity": "birlik"
     }
   },
-            {
+              {
     id: 'history_roman_colosseum',
     title: "The Roman Colosseum",
     author: 'Roman Empire',
@@ -20313,7 +20313,7 @@ export const STORIES_PART1: RawStory[] = [
       "ruins": "kırık duvarlar"
     }
   },
-            {
+              {
     id: 'history_marco_polo',
     title: "Marco Polo's Journey",
     author: 'Marco Polo',
@@ -20381,7 +20381,7 @@ export const STORIES_PART1: RawStory[] = [
       "wonder": "harika"
     }
   },
-            {
+              {
     id: 'history_discovery_fire',
     title: "The Discovery of Fire",
     author: 'Prehistoric Era',
@@ -20449,7 +20449,7 @@ export const STORIES_PART1: RawStory[] = [
       "knowledge": "bilgi"
     }
   },
-            {
+              {
     id: 'history_troy_legend',
     title: "The Legend of Troy",
     author: 'Greek Mythology',
@@ -20518,7 +20518,7 @@ export const STORIES_PART1: RawStory[] = [
       "courage": "cesaret"
     }
   },
-            {
+              {
     id: 'history_pompeii',
     title: "Pompeii: The City Frozen in Time",
     author: 'Roman Empire',
@@ -20588,7 +20588,7 @@ export const STORIES_PART1: RawStory[] = [
       "memory": "hafıza"
     }
   },
-            {
+              {
     id: 'history_paper_invention',
     title: "The Story of Paper",
     author: 'Ancient China',
@@ -20659,7 +20659,7 @@ export const STORIES_PART1: RawStory[] = [
       "progress": "ilerleme/büyüme"
     }
   },
-            {
+              {
     id: 'history_viking_voyagers',
     title: "The Viking Voyagers",
     author: 'Viking Age',
@@ -20729,7 +20729,7 @@ export const STORIES_PART1: RawStory[] = [
       "tribe": "halk"
     }
   },
-            {
+              {
     id: 'history_first_marathon',
     title: "The First Marathon",
     author: 'Ancient Greece',
@@ -20796,7 +20796,7 @@ export const STORIES_PART1: RawStory[] = [
       "courage": "cesaret"
     }
   },
-            {
+              {
     id: 'history_alexander_great',
     title: "Alexander the Great's Quest",
     author: 'Alexander the Great',
@@ -20867,7 +20867,7 @@ export const STORIES_PART1: RawStory[] = [
       "exhausted": "çok yorgun"
     }
   },
-            {
+              {
     id: 'history_julius_caesar',
     title: "Julius Caesar and the Rubicon",
     author: 'Julius Caesar',
@@ -20937,7 +20937,7 @@ export const STORIES_PART1: RawStory[] = [
       "mission": "görev"
     }
   },
-            {
+              {
     id: 'history_cleopatra',
     title: "Cleopatra: The Last Pharaoh",
     author: 'Cleopatra',
@@ -21010,7 +21010,7 @@ export const STORIES_PART1: RawStory[] = [
       "province": "parça"
     }
   },
-            {
+              {
     id: 'history_joan_of_arc',
     title: "Joan of Arc: The Maid of Orléans",
     author: 'Joan of Arc',
@@ -21080,7 +21080,7 @@ export const STORIES_PART1: RawStory[] = [
       "guilty": "suçlu"
     }
   },
-            {
+              {
     id: 'history_christopher_columbus',
     title: "Christopher Columbus and the New World",
     author: 'Christopher Columbus',
@@ -21150,7 +21150,7 @@ export const STORIES_PART1: RawStory[] = [
       "exploration": "keşif"
     }
   },
-            {
+              {
     id: 'history_leonardo_da_vinci',
     title: "Leonardo da Vinci: The Renaissance Man",
     author: 'Leonardo da Vinci',
@@ -21222,7 +21222,7 @@ export const STORIES_PART1: RawStory[] = [
       "logic": "mantık"
     }
   },
-            {
+              {
     id: 'history_gutenberg_press',
     title: "The Gutenberg Press",
     author: 'Johannes Gutenberg',
@@ -21293,7 +21293,7 @@ export const STORIES_PART1: RawStory[] = [
       "legacy": "miras"
     }
   },
-            {
+              {
     id: 'history_taj_mahal',
     title: "The Taj Mahal: A Monument of Love",
     author: 'Mughal Empire',
@@ -21362,7 +21362,7 @@ export const STORIES_PART1: RawStory[] = [
       "century": "yıl"
     }
   },
-            {
+              {
     id: 'history_robin_hood',
     title: "The Legend of Robin Hood",
     author: 'English Folklore',
@@ -21430,7 +21430,7 @@ export const STORIES_PART1: RawStory[] = [
       "courage": "cesaret"
     }
   },
-            {
+              {
     id: 'history_boston_tea_party',
     title: "The Boston Tea Party",
     author: 'American Revolution',
@@ -21497,7 +21497,7 @@ export const STORIES_PART1: RawStory[] = [
       "courage": "cesaret"
     }
   },
-            {
+              {
     id: 'history_magna_carta',
     title: "The Magna Carta",
     author: 'King John',
@@ -21566,7 +21566,7 @@ export const STORIES_PART1: RawStory[] = [
       "democracy": "halk yönetimi"
     }
   },
-            {
+              {
     id: 'history_wright_brothers',
     title: "The First Flight of the Wright Brothers",
     author: 'Wright Brothers',
@@ -21639,7 +21639,7 @@ export const STORIES_PART1: RawStory[] = [
       "courage": "cesaret"
     }
   },
-            {
+              {
     id: 'history_galileo_galilei',
     title: "Galileo Galilei and the Stars",
     author: 'Galileo Galilei',
@@ -21707,7 +21707,7 @@ export const STORIES_PART1: RawStory[] = [
       "knowledge": "bilgi"
     }
   },
-            {
+              {
     id: 'history_king_arthur',
     title: "King Arthur and the Round Table",
     author: 'Arthurian Legend',
@@ -21778,7 +21778,7 @@ export const STORIES_PART1: RawStory[] = [
       "mist": "sis"
     }
   },
-            {
+              {
     id: 'history_silk_road',
     title: "The Story of the Silk Road",
     author: 'Ancient Trade',
@@ -21843,4 +21843,1471 @@ export const STORIES_PART1: RawStory[] = [
       "legacy": "hikaye",
       "network": "grup"
     }
-  }];
+  },
+  {
+    id: 'horror_tomb_mystery',
+    title: "The Tomb's Mystery",
+    author: 'H. P. Lovecraft',
+    level: 'A1',
+    coverUrl: '/covers/horror_tomb_mystery.webp',
+    en: [
+      "My name is Jervas Dudley. I am a young man with a very strange mind. I love old stories and dark places. When I was a boy, I liked to walk in the woods. I looked at the tall trees and the big stones. I felt very happy there. I did not like to play with other children. I preferred to read books about old things and dead people. My family was very quiet and simple. They did not understand me. I walked alone every day under the gray sky. I saw a large house in the forest. It was very old and the windows were like dark eyes. I felt a secret call from this place. I wanted to know what was inside. It was a beautiful but sad day for my young heart.",
+      "The house belonged to the Hyde family. They lived there a long time ago. Now, the house is empty and broken. I walked to the front door and looked at the garden. The grass was long and brown. The flowers were dead. I found a small tomb near the house. It was hidden by the trees. I touched the cold stone of the tomb. I felt something special in my hands. It was like a dream. I sat on the ground and stayed there for many hours. The wind was cold, but I did not go home. I liked the silence of the forest. I felt like the tomb was my real home. I wanted to stay there forever because the world of people was too loud and too bright.",
+      "My parents were worried because I was always away. I did not talk much to them at dinner. I only thought about the old tomb in the woods. Every night, I had strange dreams about the people who lived in the house long ago. I saw them walk in the garden. They wore dark clothes and had sad faces. I felt like I was one of them. I learned many things in my sleep. I heard sounds from under the ground. I felt that the tomb was waiting for me. I was not afraid. In fact, I was very happy to be near the dead. I felt a strong connection to the history of this old and broken place. My life changed in those dark and quiet woods near the house.",
+      "One day, I found a small key on the grass. It was very old and covered in rust. I picked it up and held it tightly in my hand. It felt warm. I knew this key was for the stone tomb. My heart beat very fast. I walked to the door of the tomb. The door was made of heavy stone and looked very strong. I put the key into the lock and turned it. It moved slowly. The air around me felt very cold and still. I was alone in the deep woods. The tall trees looked down at me like giants. I did not feel fear. I felt a strange joy. The door opened with a loud, sad sound. I looked inside the dark, small room. I felt that I finally belonged here, inside the silent home of the dead.",
+      "I walked inside the dark tomb. It was quiet and very dry. The walls were covered in dust and spider webs. I saw a large stone box in the middle of the room. It was where the people from the Hyde family slept. I sat on the floor and closed my eyes. The silence was perfect. It was better than the noisy world outside. I started to imagine the lives of the people who were here before. I saw them in my mind. They were beautiful and pale. They walked with grace and spoke in soft whispers. I liked them more than my friends at school. I was not Jervas Dudley anymore. I was a part of this dark, ancient place. I felt a strong magic in the air that filled my soul with deep peace.",
+      "The nights became my favorite time to visit the tomb. I walked through the dark forest under the bright moon. The trees made long, black shadows on the ground. I arrived at the tomb and entered with my key. Inside, I lay down on the cold floor next to the stone box. I did not sleep, but I had visions of the past. I saw big parties with lights and music. I heard voices that sounded like wind in the trees. I learned the names of the people who died many years ago. I felt like I was their friend. I kept my visits secret from my parents. They would never understand my love for this place. I was happy to be alone in the dark. I waited for the time when I could stay in the tomb forever.",
+      "One night, I sat inside the quiet tomb for a very long time. The moon was high and bright. Suddenly, I saw a light in the darkness of the room. It was not a normal light. It was a soft, blue glow. I looked at the old stone box in the middle of the room. I felt a strange power coming from it. My heart did not beat fast. I felt calm and happy. I stood up and touched the cold stone. It was very smooth under my hands. I whispered a name into the silence. It was a name from the Hyde family. I felt like someone was listening to me in the shadows. The air felt heavy, but I did not want to leave this place ever again.",
+      "My eyes became very tired, so I lay down near the stone box again. I had a strange dream while I was awake. I saw a great house that existed a long time ago. It was a beautiful mansion on this exact hill. The house was full of happy people in bright clothes. I saw a young man who looked very much like me. He was laughing and dancing in a big hall. I felt like I was the man in the dream. I watched the party for hours in my mind. The music was sweet and slow. Everything was perfect and rich. I did not want the dream to end. I felt connected to the people in the past. The tomb was now my home.",
+      "When I opened my eyes, the sun was coming up. The light was grey and cold. I stood up and looked around the tomb. Everything was still and covered in dust again. The blue light was gone, and the room felt empty. I walked back to my parents' house through the trees. I did not say a word to anyone. My face was pale, but my heart was full. I knew that I had a big secret. The tomb was waiting for me every single night. I felt like a different person now. I was waiting for the next moon. I knew that the dead people wanted to talk to me more. I would always be their friend in the deep, dark, and silent woods.",
+      "I walked through the old woods every single day. My body felt weak, but my mind was very busy. I thought about the tomb and the cold stone box. I wanted to hear the music again. I wanted to see the bright party in my dreams. People in the village looked at me with fear in their eyes. They said that I looked like a ghost. I did not care about their words at all. I only wanted to wait for the night to come. The sun felt like a bad enemy to me. It made the world look clear and boring. I needed the shadows and the deep silence of the forest. My secret was growing inside my heart like a dark flower. I felt that the Hyde family was calling me from the ground.",
+      "The nights became my only true friends. I went to the hill when everyone was sleeping in their beds. The tomb door was heavy and hard to move. I pushed it with all my strength until it opened. Inside, the air felt very cold but very welcoming. I sat on the floor and closed my eyes tightly. I waited for the strange blue light to appear again. My heart felt a little jump when I heard a soft sound. It was like a whisper of a forgotten song. I did not move because I was afraid to break the magic. I felt the presence of people who were long gone. They were near me in the darkness of the tomb. I was ready to join their happy dance once more.",
+      "The dream started again as soon as I felt calm. I saw the mansion on the hill standing tall and proud. The windows were full of gold light. I heard the laughter of the guests inside the rooms. I walked through the doors and felt the warm air on my skin. I was no longer a boy in a dusty room. I was a man of the house with grand plans. The party felt very real to me every time I arrived. I saw many faces, and they all looked kind and friendly. They invited me to drink wine and dance with them. The music played on and on under the moonlight. I never wanted to wake up or leave this beautiful place. My soul lived inside that mansion forever and ever.",
+      "I stood inside the tomb for many hours every night. The air was very cold and smelled like old earth and dead leaves. I sat on the stone floor and waited for the magic dream to start. Sometimes, I saw shadows moving on the wall. They looked like tall, thin people in dark clothes. I did not feel scared of these shadows at all. I felt that they were my true family. They moved without making any noise. It was a silent dance in the dark. I wanted to stand up and join them in their mysterious movements. The world outside the tomb felt far away and very small. My life in the village was just a shadow, but the tomb was my real home. I felt happy when I was alone with the dark, cold stone.",
+      "One night, the moon was very bright and round in the sky. I walked to the tomb with a heavy heart because the sun was coming soon. I found the door was a little open. It was not closed like I left it before. This made me feel very confused and also quite angry. Who would go inside my secret place? I walked in slowly and looked around with my eyes wide open. The room was empty, but the air felt very strange and thick. I saw some marks on the floor that looked like someone had walked there. I touched the cold stone and felt a new sadness in my chest. My secret place was no longer safe from the eyes of others. I felt a great loss in my soul.",
+      "I sat on the floor and tried to see the dream of the mansion again. But the magic did not come to me that night. The room was just a dark box of stone and dust. I felt the cold air biting my skin like small teeth. Why was the house gone? Why could I not hear the music or see the golden lights? I waited until the morning birds began to sing in the high trees. The silence of the tomb was heavy and sad. I felt like a stranger in my own home. My mind was tired and my body was shaking from the deep chill. I left the tomb as the sun touched the top of the hill. I knew that something was changing in my strange world forever.",
+      "I walked back to the old house of my family in the cold night. The trees were tall and dark like black ghosts. I felt a deep pain because the beautiful dream was gone from me. My heart was full of a strange, dark worry that I could not explain to anyone. I looked at the broken stones and the dead garden where I used to play as a child. Every small sound in the woods made me jump because the silence was so heavy. I moved slowly through the path, thinking about the secret tomb and the people who lived there in my mind. The moonlight showed me the way, but it looked very weak and tired. I knew that I was coming to the end of my strange and secret journey alone in the night.",
+      "My feet touched the hard ground as I entered the hall of the mansion. Everything was cold and quiet like a deep grave. The air inside smelled of dust and old things that no one remembers anymore. I looked at the walls, but the paintings were all gray and hidden by the dark. There was no music to hear and no golden lights to see in the halls. I felt very sad because my true home was lost to me forever. The shadows did not dance for me now. They were just still shapes in the corner of the room. I felt very small in this big, empty house that felt like a prison. My mind was full of ghosts that did not speak or move, only watching me as I walked.",
+      "I sat on a chair and closed my eyes to dream, but the pictures would not come. I remembered the party in the woods, but it was like a thin cloud that disappeared in the sun. The night was becoming very long and the cold was deep in my bones. I could not find the way to the secret place anymore. Everything looked like common stone and wood now. The magic was finished, and the reality of the morning was very close. I knew that I could not return to that world of lights and dancing people. It was time for me to be a normal man in the village. I stood up and walked away, leaving the silent mansion behind me in the shadows of the morning light.",
+      "I now live in a simple house near the old forest and the broken wall. People in the village think I am a strange man because I stay alone most of the time. Sometimes, when the moon is bright, I walk back to the ruined mansion. I stand by the gate and look at the old tomb of the Hyde family. I think about the many nights I slept inside that cool, dark stone room. The secret door is gone now, but I still see the lights and the ghosts in my memory. I often feel as if I hear the music of their dance in the wind. My life is very quiet, but my mind is still full of the beautiful, dark world that belonged only to me and my hidden, secret friends.",
+      "The villagers often talk about the history of the house, but they do not know the truth. They do not know about the parties under the trees or the strange feeling of being someone else. I keep my stories inside my heart like a locked box. Sometimes, I find old items on the ground near the grave, such as a small silver button or a piece of silk cloth. These things are like treasures to me because they prove that my visions were real. I pick them up with my shaking hands and keep them in my pocket. They bring back the feeling of the heavy night air and the sight of the old, grey statues. I am old now, and the forest is my only true and loyal friend.",
+      "One day, my time will end, and I will go to the place where all the sleepers go. I hope that when I die, I will find the entrance to that secret room again. I want to be with the people of the shadows and join their silent, golden dance forever. The world of the living is too bright and too loud for a man like me. I prefer the quiet, cold peace of the tomb where the ancient trees protect the forgotten dead. My body will be thin and tired, but my spirit will finally be free from this long, lonely walk. I am waiting for the moment when the heavy stone lid will open and welcome me home to the dark beauty of the past."
+    ],
+    tr: [
+      "Benim adım Jervas Dudley. Çok tuhaf bir zihne sahip genç bir adamım. Eski hikayeleri ve karanlık yerleri severim. Çocukken ormanda yürümeyi severdim. Uzun ağaçlara ve büyük taşlara bakardım. Orada çok mutlu olurdum. Diğer çocuklarla oynamayı sevmezdim. Eski şeyler ve ölü insanlar hakkında kitaplar okumayı tercih ederdim. Ailem çok sessiz ve basitti. Beni anlamıyorlardı. Her gün gri gökyüzünün altında tek başıma yürürdüm. Ormanda büyük bir ev gördüm. Çok eskiydi ve pencereleri karanlık gözler gibiydi. Bu yerden gizli bir çağrı hissettim. İçinde ne olduğunu bilmek istedim. Genç kalbim için güzel ama hüzünlü bir gündü.",
+      "Ev Hyde ailesine aitti. Onlar uzun zaman önce orada yaşadılar. Şimdi ev boş ve harap durumda. Ön kapıya yürüdüm ve bahçeye baktım. Otlar uzun ve kahverengiydi. Çiçekler ölmüştü. Evin yakınında küçük bir mezar buldum. Ağaçlar tarafından gizlenmişti. Mezarın soğuk taşına dokundum. Ellerimde özel bir şey hissettim. Bir rüya gibiydi. Yere oturdum ve saatlerce orada kaldım. Rüzgar soğuktu ama eve gitmedim. Ormanın sessizliğini sevdim. Mezarı gerçek evim gibi hissettim. Sonsuza kadar orada kalmak istedim çünkü insanların dünyası çok gürültülü ve çok parlaktı.",
+      "Ailem her zaman uzakta olduğum için endişeleniyordu. Akşam yemeğinde onlarla pek konuşmazdım. Sadece ormandaki eski mezarı düşünürdüm. Her gece, uzun zaman önce evde yaşayan insanlar hakkında tuhaf rüyalar görürdüm. Bahçede yürüdüklerini görürdüm. Koyu renkli kıyafetler giyerlerdi ve hüzünlü yüzleri vardı. Onlardan biriymişim gibi hissederdim. Uykumda birçok şey öğrendim. Yerin altından gelen sesler duydum. Mezarı benim için bekliyormuş gibi hissettim. Korkmuyordum. Aslında, ölülerin yanında olmaktan çok mutluydum. Bu eski ve harap yerin geçmişiyle güçlü bir bağ hissettim. Hayatım evin yakınındaki o karanlık ve sessiz ormanda değişti.",
+      "Bir gün, çimlerin üzerinde küçük bir anahtar buldum. Çok eskiydi ve pasla kaplıydı. Onu yerden aldım ve elimde sıkıca tuttum. Sıcak hissettiriyordu. Bu anahtarın taş mezara ait olduğunu biliyordum. Kalbim çok hızlı çarptı. Mezarın kapısına yürüdüm. Kapı ağır taştandı ve çok güçlü görünüyordu. Anahtarı kilide soktum ve çevirdim. Yavaşça hareket etti. Etrafımdaki hava çok soğuk ve hareketsizdi. Derin ormanda yalnızdım. Uzun ağaçlar devler gibi bana bakıyordu. Korku hissetmedim. Garip bir neşe duydum. Kapı, yüksek ve hüzünlü bir sesle açıldı. Karanlık ve küçük odanın içine baktım. Nihayet buraya, ölülerin sessiz evine ait olduğumu hissettim.",
+      "Karanlık mezarın içine yürüdüm. Sessizdi ve çok kuruydu. Duvarlar toz ve örümcek ağlarıyla kaplıydı. Odanın ortasında büyük bir taş kutu gördüm. Hyde ailesinden insanların yattığı yer burasıydı. Yere oturdum ve gözlerimi kapattım. Sessizlik mükemmeldi. Dışarıdaki gürültülü dünyadan daha iyiydi. Burada daha önce yaşamış insanların hayatlarını hayal etmeye başladım. Onları zihnimde gördüm. Güzel ve solgundular. Zarafetle yürüyor ve kısık sesle fısıldaşıyorlardı. Onları okuldaki arkadaşlarımdan daha çok sevdim. Artık Jervas Dudley değildim. Bu karanlık, kadim yerin bir parçasıydım. Ruhumu derin bir huzurla dolduran güçlü bir büyü hissettim.",
+      "Geceler, mezarı ziyaret etmek için en sevdiğim zamanlar oldu. Parlak ayın altında karanlık ormandan geçerek yürüdüm. Ağaçlar yerde uzun ve siyah gölgeler oluşturuyordu. Mezara ulaştım ve anahtarımla içeri girdim. İçeride, taş kutunun yanındaki soğuk zemine uzandım. Uyumadım ama geçmişe dair görüntüler gördüm. Işıklar ve müzikle dolu büyük partiler gördüm. Ağaçların arasındaki rüzgâr gibi gelen sesler duydum. Yıllar önce ölen insanların isimlerini öğrendim. Onların arkadaşıymışım gibi hissettim. Ziyaretlerimi ailemden gizli tuttum. Buraya olan sevgimi asla anlayamazlardı. Karanlıkta yalnız olmaktan mutluydum. Mezarda sonsuza kadar kalabileceğim zamanı bekledim.",
+      "Bir gece, çok uzun süre sessiz mezarın içinde oturdum. Ay yüksekte ve parlaktı. Aniden, odanın karanlığında bir ışık gördüm. Bu normal bir ışık değildi. Yumuşak, mavi bir parıltıydı. Odanın ortasındaki eski taş kutuya baktım. Ondan gelen garip bir güç hissettim. Kalbim hızlı atmıyordu. Sakin ve mutlu hissediyordum. Ayağa kalktım ve soğuk taşa dokundum. Ellerimin altında çok pürüzsüzdü. Sessizliğe bir isim fısıldadım. Bu Hyde ailesinden bir isimdi. Gölgelerde birinin beni dinlediğini hissettim. Hava ağırdı ama bu yerden bir daha asla ayrılmak istemedim.",
+      "Gözlerim çok yoruldu, bu yüzden tekrar taş kutunun yanına uzandım. Uyanıkken garip bir rüya gördüm. Çok uzun zaman önce var olan büyük bir ev gördüm. Tam bu tepede güzel bir konaktı. Ev, parlak kıyafetler içindeki mutlu insanlarla doluydu. Bana çok benzeyen genç bir adam gördüm. Büyük bir salonda gülüyor ve dans ediyordu. Rüyadaki adam benmişim gibi hissettim. Partiyi zihnimde saatlerce izledim. Müzik tatlı ve yavaştı. Her şey mükemmel ve zengindi. Rüyanın bitmesini istemedim. Geçmişteki insanlarla bağ kurduğumu hissettim. Mezar artık benim evimdi.",
+      "Gözlerimi açtığımda güneş doğuyordu. Işık gri ve soğuktu. Ayağa kalktım ve mezarın etrafına baktım. Her şey hareketsizdi ve yine tozla kaplıydı. Mavi ışık gitmişti ve oda boş görünüyordu. Ağaçların arasından ailemin evine geri yürüdüm. Kimseye tek bir kelime etmedim. Yüzüm solgundu ama kalbim doluydu. Büyük bir sırrım olduğunu biliyordum. Mezar her gece beni bekliyordu. Şimdi farklı bir insan gibi hissediyordum. Bir sonraki ayı bekliyordum. Ölülerin benimle daha fazla konuşmak istediğini biliyordum. Derin, karanlık ve sessiz ormanda her zaman onların dostu olacaktım.",
+      "Eski ormanların içinde her gün yürüyordum. Bedenim zayıf hissediyordu ama zihnim çok meşguldü. Mezarı ve soğuk taş kutuyu düşünüyordum. Müziği tekrar duymak istiyordum. Rüyalarımdaki parlak partiyi tekrar görmek istiyordum. Köydeki insanlar bana gözlerinde korkuyla bakıyorlardı. Bir hayalet gibi göründüğümü söylüyorlardı. Sözlerini hiç önemsemiyordum. Sadece gecenin gelmesini beklemek istiyordum. Güneş bana kötü bir düşman gibi geliyordu. Dünyayı net ve sıkıcı gösteriyordu. Gölgelere ve ormanın derin sessizliğine ihtiyacım vardı. Sırrım kalbimde karanlık bir çiçek gibi büyüyordu. Hyde ailesinin beni toprağın altından çağırdığını hissediyordum.",
+      "Geceler benim tek gerçek dostum oldu. Herkes yataklarında uyurken tepeye gidiyordum. Mezarın kapısı ağırdı ve hareket ettirmesi zordu. Açılana kadar tüm gücümle itiyordum. İçeride hava çok soğuk ama çok davetkardı. Yere oturdum ve gözlerimi sıkıca kapattım. Garip mavi ışığın tekrar belirmesini bekledim. Hafif bir ses duyduğumda kalbim biraz hopladı. Unutulmuş bir şarkının fısıltısı gibiydi. Büyüyü bozmaktan korktuğum için hareket etmedim. Çoktan gitmiş olan insanların varlığını hissettim. Mezarlığın karanlığında yanımdaydılar. Mutlu danslarına tekrar katılmaya hazırdım.",
+      "Sakinleştiğim an rüya tekrar başladı. Tepedeki malikaneyi uzun ve gururlu bir şekilde dururken gördüm. Pencereler altın rengi ışıkla doluydu. Odaların içindeki misafirlerin kahkahalarını duydum. Kapılardan geçtim ve tenimde ılık havayı hissettim. Artık tozlu bir odadaki çocuk değildim. Büyük planları olan evin bir adamıydım. Parti, her geldiğimde bana çok gerçek geliyordu. Birçok yüz gördüm ve hepsi nazik ve dost canlısı görünüyordu. Beni şarap içmeye ve onlarla dans etmeye davet ettiler. Müzik ay ışığı altında çalıp duruyordu. Hiç uyanmak ya da bu güzel yeri terk etmek istemiyordum. Ruhum sonsuza dek o malikanenin içinde yaşıyordu.",
+      "Her gece uzun saatler boyunca mezarın içinde durdum. Hava çok soğuktu ve eski toprak ile ölü yapraklar gibi kokuyordu. Taş zemine oturdum ve sihirli rüyanın başlamasını bekledim. Bazen duvarda hareket eden gölgeler görüyordum. Koyu renkli elbiseler giymiş uzun, ince insanlar gibi görünüyorlardı. Bu gölgelerden hiç korkmuyordum. Onların benim gerçek ailem olduğunu hissediyordum. Hiç ses çıkarmadan hareket ediyorlardı. Karanlıkta sessiz bir danstı bu. Ayağa kalkıp gizemli hareketlerine katılmak istedim. Mezarın dışındaki dünya çok uzak ve küçük görünüyordu. Köydeki hayatım sadece bir gölgeydi ama mezar benim gerçek evimdi. Karanlık ve soğuk taşla yalnız kaldığımda mutlu hissediyordum.",
+      "Bir gece, ay gökyüzünde çok parlak ve yuvarlaktı. Güneş yakında doğacağı için kalbim hüzünlü bir şekilde mezara yürüdüm. Kapının biraz aralık olduğunu gördüm. Daha önce bıraktığım gibi kapalı değildi. Bu beni çok şaşırttı ve biraz da kızdırdı. Kim benim gizli yerime girmiş olabilirdi? Yavaşça içeri girdim ve gözlerim kocaman açık bir şekilde etrafıma baktım. Oda boştu ama hava çok garip ve ağır hissettiriyordu. Yerde birinin yürümüş olabileceğine dair bazı izler gördüm. Soğuk taşa dokundum ve göğsümde yeni bir hüzün hissettim. Gizli yerim artık başkalarının gözlerinden uzak değildi. Ruhumda büyük bir kayıp hissettim.",
+      "Yere oturdum ve köşkün rüyasını tekrar görmeye çalıştım. Ancak o gece sihir bana gelmedi. Oda sadece taştan ve tozdan ibaret karanlık bir kutuydu. Soğuk havanın cildimi küçük dişler gibi ısırdığını hissettim. Köşk neden gitmişti? Neden müziği duyamıyor veya altın ışıkları göremiyordum? Sabah kuşları yüksek ağaçlarda ötmeye başlayana kadar bekledim. Mezarın sessizliği ağır ve hüzünlüydü. Kendi evimde bir yabancı gibi hissediyordum. Zihnim yorgundu ve vücudum derin soğuktan dolayı titriyordu. Güneş tepenin zirvesine dokunduğunda mezardan ayrıldım. Garip dünyamda bir şeylerin sonsuza dek değiştiğini biliyordum.",
+      "Soğuk bir gecede ailemin eski evine doğru yürüdüm. Ağaçlar, siyah hayaletler gibi uzun ve karanlıktı. Güzel rüyam benden gittiği için derin bir acı hissettim. Kalbim, kimseye açıklayamadığım garip ve karanlık bir endişeyle doluydu. Çocukken oynadığım kırık taşlara ve ölü bahçeye baktım. Ormandaki her küçük ses, sessizlik çok ağır olduğu için irkilmeme neden oluyordu. Gizli mezar ve aklımda orada yaşayan insanlar hakkında düşünerek yavaşça yolda ilerledim. Ay ışığı bana yolu gösteriyordu ama çok zayıf ve yorgun görünüyordu. Gecenin içinde yalnız başıma yaptığım bu garip ve gizli yolculuğun sonuna geldiğimi biliyordum.",
+      "Köşkün holüne girdiğimde ayaklarım sert zemine değdi. Her yer derin bir mezar gibi soğuk ve sessizdi. İçerideki hava, toz ve artık kimsenin hatırlamadığı eski eşyaların kokusunu taşıyordu. Duvarlara baktım ama resimlerin hepsi griydi ve karanlıkla gizlenmişti. Koridorlarda duyulacak müzik ya da görülecek altın ışıklar yoktu. Gerçek evimi sonsuza dek kaybettiğim için çok üzgündüm. Gölgeler artık benim için dans etmiyordu. Sadece odanın köşesindeki hareketsiz şekillerdi. Bir hapishane gibi hissettiren bu büyük ve boş evde kendimi çok küçük hissettim. Zihnim, konuşmayan veya hareket etmeyen, sadece ben yürürken beni izleyen hayaletlerle doluydu.",
+      "Bir sandalyeye oturdum ve rüya görmek için gözlerimi kapattım ama görüntüler gelmedi. Ormandaki partiyi hatırladım ama güneşin altında kaybolan ince bir bulut gibiydi. Gece çok uzuyordu ve soğuk kemiklerimin derinliklerine işliyordu. Artık o gizli yere giden yolu bulamıyordum. Her şey artık sıradan taş ve tahta gibi görünüyordu. Büyü bitmişti ve sabahın gerçekliği çok yakındı. Işıkların ve dans eden insanların olduğu o dünyaya dönemeyeceğimi biliyordum. Köyde normal bir adam olma vaktim gelmişti. Ayağa kalktım ve sessiz köşkü sabah ışığının gölgelerinde ardımda bırakarak uzaklaştım.",
+      "Şimdi ormanın yakınındaki basit bir evde ve yıkık duvarın yanında yaşıyorum. Köydeki insanlar benim garip bir adam olduğumu düşünüyor çünkü çoğu zaman yalnız kalıyorum. Bazen ay parlak olduğunda, harap olmuş malikaneye geri yürüyorum. Kapının yanında durup Hyde ailesinin eski mezarına bakıyorum. O serin ve karanlık taş odanın içinde uyuduğum pek çok geceyi düşünüyorum. Gizli kapı artık yok ama ışıkları ve hayaletleri hala hafızamda görüyorum. Sık sık rüzgarda danslarının müziğini duyuyormuşum gibi hissediyorum. Hayatım çok sessiz ama zihnim hala sadece bana ve saklı, gizli dostlarıma ait olan güzel, karanlık dünyayla dolu.",
+      "Köylüler sık sık evin tarihinden bahsederler ama gerçeği bilmezler. Ağaçların altındaki partileri ya da başka biri olma hissini bilmezler. Hikayelerimi kilitli bir kutu gibi kalbimde saklıyorum. Bazen mezarın yakınındaki yerde küçük bir gümüş düğme ya da ipek kumaş parçası gibi eski eşyalar buluyorum. Bu şeyler benim için hazine gibidir çünkü görümlerimin gerçek olduğunu kanıtlıyorlar. Onları titreyen ellerimle alıp cebime koyuyorum. Bana ağır gece havasının hissini ve eski, gri heykellerin görüntüsünü geri getiriyorlar. Artık yaşlandım ve orman benim tek gerçek ve sadık dostum.",
+      "Bir gün zamanım dolacak ve tüm uyuyanların gittiği yere gideceğim. Öldüğümde o gizli odaya giden girişi tekrar bulmayı umuyorum. Gölgelerin insanlarıyla birlikte olmak ve sonsuza dek onların sessiz, altın dansına katılmak istiyorum. Yaşayanların dünyası benim gibi bir adam için çok parlak ve çok gürültülü. Unutulmuş ölüleri koruyan kadim ağaçların olduğu mezarın sessiz, soğuk huzurunu tercih ederim. Bedenim zayıf ve yorgun olacak ama ruhum bu uzun, yalnız yürüyüşten nihayet kurtulacak. Ağır taş kapağın açılıp beni geçmişin karanlık güzelliğine, evime kabul edeceği anı bekliyorum."
+    ],
+    words: {
+      "tomb": "mezar",
+      "forest": "orman",
+      "silence": "sessizlik",
+      "strange": "tuhaf",
+      "broken": "harap/kırık",
+      "dream": "rüya",
+      "rust": "pas",
+      "lock": "kilit",
+      "dust": "toz",
+      "whisper": "fısıltı",
+      "shadow": "gölge",
+      "ancient": "kadim, çok eski",
+      "darkness": "karanlık",
+      "glow": "parıltı",
+      "mansion": "köşk",
+      "pale": "solgun",
+      "secret": "sır",
+      "weak": "zayıf",
+      "ghost": "hayalet",
+      "enemy": "düşman",
+      "soul": "ruh",
+      "mysterious": "gizemli",
+      "confused": "şaşkın",
+      "empty": "boş",
+      "chill": "soğuk",
+      "stranger": "yabancı",
+      "grave": "mezar",
+      "prison": "hapishane",
+      "reality": "gerçeklik",
+      "ruined": "harap, yıkılmış",
+      "treasure": "hazine",
+      "statue": "heykel",
+      "spirit": "ruh"
+    }
+  }
+,
+  {
+    id: 'horror_black_veil',
+    title: "The Minister's Black Veil",
+    author: 'Nathaniel Hawthorne',
+    level: 'A1',
+    coverUrl: '/covers/horror_black_veil.webp',
+    en: [
+      "The sun rose over the small town of Milford. The people went to the church for the Sunday service. The church bell rang loudly in the morning air. Mr. Hooper, the minister, walked slowly toward the church door. He was a good man and everyone liked him. He wore his black clothes as he always did. But today, the people looked at him with great surprise. Mr. Hooper wore a piece of black cloth over his face. It was a black veil. It covered his eyes and nose, but he could still walk well. The people talked to each other in quiet voices. They did not understand why their kind minister wore this strange cloth today. The air was cold, and the wind moved the thin black veil. Everyone felt very confused by the dark cloth on his face.",
+      "The church was full of people. They sat in their wooden chairs and waited for the prayer to start. When Mr. Hooper walked to the front of the room, the people were very quiet. He was a tall man with a calm face, but nobody could see his eyes because of the veil. He opened the big holy book and began to speak to the people. His voice was soft and very kind as always. However, the dark veil made him look like a different person. Some people thought he was sick, and others thought he had a secret sadness. They whispered to their neighbors. They wanted to know why he did not show his face. The minister stood still and did not explain his strange black veil to the congregation at all.",
+      "The service continued as it always did every Sunday. Mr. Hooper spoke about secret sins that people hide in their hearts. His words were very powerful today. People felt a little bit afraid because of his message. When he looked at the congregation, they felt like he saw into their souls. The black veil moved when he breathed, but his face stayed hidden. Many people in the church felt uncomfortable. They had known Mr. Hooper for many years, but today he felt like a stranger to them. The mystery of the veil grew in their minds as the hour passed. They wanted to ask him many questions, but they felt shy. The dark shadow of the veil seemed to grow larger in the small church room during the long morning prayer.",
+      "The Sunday service ended and the people walked out of the church. They stood together in small groups on the grass. Everyone had many questions about the minister. Why did Mr. Hooper wear the black veil? Some people said that he lost his mind. Others thought it was a very bad joke. A mother held her child close and looked at the minister with fear. The minister walked slowly toward them with a calm step. He did not look angry or sad. He only smiled a little under the dark cloth. The people did not know how to speak to him now. They were usually very happy to see their minister, but today the black veil made a big wall between him and his good friends. They felt confused because their kind leader looked like a ghost.",
+      "Mr. Hooper walked through the crowd. He did not stop to talk to anyone as he usually did. The villagers watched him carefully. They saw his dark clothes and the long black veil hanging down from his hat. It was a very strange and sad sight. Nobody wanted to walk near him. They felt that the veil was a secret sign of something bad. Maybe he did a secret sin? The air was heavy and quiet as he walked past the townspeople. He looked straight ahead and did not turn his head. A man said that the minister was not the same man he knew before. Everyone agreed with him. The mystery of the black veil made the whole town feel very worried and afraid about the future of their church.",
+      "After the service, there was a sad event in the town. A young lady died, and the people had a funeral that afternoon. Mr. Hooper went to the house of the dead woman. He wore his black veil during the funeral ceremony. The family of the girl was very surprised. They did not expect to see the black cloth at a sad time like this. The minister stood by the coffin and said very kind words. He prayed for the soul of the young lady. His voice was beautiful and full of love. However, the black veil made the people feel cold. They thought the shadow of death was on his face. The dark cloth hid his eyes so they could not see his tears for the girl. The funeral felt even more sad and dark today.",
+      "The funeral service continued inside the small room. Mr. Hooper stood by the dead young woman. He spoke about her good life and her kind heart. The people listened very carefully to his words. Every person in the room felt a deep sense of sadness for the girl. But when they looked at the minister, they felt afraid again. The black veil hung down over his face like a dark cloud. It blocked his eyes from the light of the candles. Everyone wondered if the dead girl could see behind the black cloth. Some guests whispered that she might even stand up in her coffin. The room was very cold and silent. The minister stayed very still while he prayed. Nobody wanted to look at him, but they could not look away from the dark and scary veil.",
+      "After the prayers, the time came to carry the coffin to the ground. Mr. Hooper walked in front of the group. He moved with a slow and heavy step. The veil moved slightly in the light wind of the afternoon. People watched him with wide eyes. They saw something very strange. When the minister leaned down to place flowers on the coffin, the black veil fell forward. It dropped down from his face for a short moment. Everyone tried to see his face clearly. They wanted to know if he was crying. They wanted to see his eyes. But the veil was too fast. It covered his face again before anyone saw a single feature. He quickly put the cloth back in place with his hands. The mystery only grew deeper and bigger for everyone.",
+      "Two men walked behind the minister during the funeral walk. They talked quietly about the strange event they just saw. One man said he was very sure that he saw the spirit of the dead girl walking next to Mr. Hooper. He told his friend that the veil helped the minister speak with the dead. The other man looked at the ground and felt very scared. He thought that the veil was a sign of a dark secret. He believed that the minister was not a normal man anymore. They walked through the quiet streets of the town. The people in their houses looked out of their windows. They saw the black veil and closed their curtains. The whole town felt like a dark place of mystery and shadows because of the minister.",
+      "Elizabeth was the dear lady who loved Mr. Hooper. She heard many stories about the strange black veil. People in the town spoke of nothing else. She decided to go to the minister's house to talk to him. She wanted him to remove the veil for her. Elizabeth arrived at the house and saw Mr. Hooper sitting alone in his quiet room. He looked sad and deep in his thoughts. When he saw Elizabeth, he felt happy for a moment. But then he remembered the veil. He pulled it closer to his face. Elizabeth looked at him with kind eyes. She told him that the whole town was talking about his choice. She asked him if he was hiding something from everyone. She really wanted to know why he had to wear the dark cloth today.",
+      "Mr. Hooper looked at Elizabeth but he did not move the veil. He told her that this cloth was only a sign of his heavy soul. He said that all men hide their secret hearts from others. He explained that everyone has a private dark side that no one can ever see. He told her that he was not a bad man. He was just a man who chose to show his sadness to the world. Elizabeth was very confused by his words. She tried to take his hand but she felt a cold shiver. The veil made her feel like a stranger was talking to her. It was not the man she loved anymore. She felt as if a wall of black shadow stood between their two hearts forever.",
+      "The minister told her that the veil would stay on his face for all his life. He said he would wear it to the church and to the graves. He would even wear it in his own house when he was alone. Elizabeth felt a great fear in her heart. She realized that he would never take it off for her. She could not live with a man who hid his face from his own love. The room grew very quiet and dark. The sunlight from the window could not reach the space behind the veil. Elizabeth stood up slowly and said goodbye to him. She walked out of the house and left him in his lonely room. He stayed there with his black secret while the day turned into the dark night.",
+      "Mr. Hooper was alone in his room after Elizabeth left. He felt very sad. The sun went down and the room was full of shadows. He did not eat and he did not sleep. He thought about the life he chose. He wore the black veil every day because he felt it was right for him. Even when he was alone, the veil was on his face. He knew that the townspeople did not like it. They whispered about him when he walked on the street. Children ran away when they saw his dark cloth. But he did not change his mind. He was a kind man, but he was also a man who lived with a big secret. He stayed in his dark room and waited for the next morning to come.",
+      "The years went by very slowly in the small town. Mr. Hooper was still the minister of the church. He was very good at his work. People liked his sermons because they were deep and wise. But they still feared the black veil. It was like a ghost that followed him everywhere. When he stood at the altar, the light seemed to go away from his face. People looked at the floor because they did not want to see the veil. He was always gentle, but he was always distant. He was like a teacher who knew something that nobody else knew. He lived his life in silence and in the shadow of the black cloth that hid his true face from every living person in the town.",
+      "He visited the sick and helped the poor with a kind heart. He walked through the town with his head low. Sometimes he saw his own face in the water of a lake. He was afraid of his own shadow because of the veil. He was a lonely man, but he did not complain. He believed that the veil was a duty he had to finish. The people grew old and some of them died. Mr. Hooper was at every funeral. He prayed for the dead with his veil over his eyes. People felt that the minister knew the truth about their own sins. They were scared but they also respected him. He continued his work, always wearing the sign of his sad secret until the end of his very long life.",
+      "The years passed and Mr. Hooper became a very old man. His hair turned white like the winter snow. His hands were weak and his back was bent from the long journey of his life. Even in his old age, he never removed the black veil. People in the village were used to seeing him this way. They no longer whispered as much as they did in the past. They respected the kind man who had served them for so many years. He was like a quiet shadow moving through their streets. When he walked, people bowed their heads to him. The veil was now a part of his identity, a permanent sign of the secret he carried in his heart. It was a long and lonely path that he walked every single day of his life.",
+      "A day arrived when the old minister became very sick. He could not leave his bed anymore. The townspeople heard the news and they felt very sad. They remembered his kind words and all the times he helped them when they were in pain. A young doctor came to his house to help him. The doctor looked at the minister with care and sadness. He wanted to help his friend feel better, but the minister was very tired. He lay in his bed with the black veil still covering his face. The thin cloth moved slowly as he breathed. It was clear that his time on earth was coming to an end. Many people came to visit him in his small room, but they did not know what to say to the man behind the dark curtain.",
+      "The minister waited for the end of his life with peace. He did not fear death because he had lived a life of truth and heavy burdens. He stayed quiet in his room, looking at the window. The sun came inside and touched the dark veil on his face. The villagers gathered outside the house because they loved their minister. They talked about his long life and the mysterious cloth that he wore. They wondered if they would see his face one last time. Mr. Hooper knew that his work was almost finished. He felt that the world was like a big shadow, just like the veil on his face. He closed his eyes and kept his secret deep inside, ready to leave this world behind for a place without any masks.",
+      "The room was quiet and cold. Reverend Clark sat by the bed of the old man. He was a young and kind minister who wanted to help Mr. Hooper. He spoke softly to his old friend about his final rest. He told the dying man that it was time to put away the dark cloth. The room was full of people who felt sad. They waited for the moment when the veil would fall from his face. They wanted to see the man beneath the black fabric. Mr. Hooper lay still on his bed. His hands pulled at the black veil. He seemed very weak but his eyes had a strange light. He was ready to speak his final truth to all the people who stood in the room today.",
+      "The minister moved his weak hand and held the veil tightly. He looked at everyone with eyes that saw everything. He asked why the world feared the darkness of his face. He said that he was not the only one who hid secrets from others. He told the people that they all wore invisible veils in their hearts. They hid their sins from the world and from each other. He told them that they should look at each other with truth. The room became very silent as he finished his words. Nobody moved or said a single thing. Everyone felt the heavy weight of his message. The minister was tired and his breathing became slow. He had lived his whole life with the black veil upon his face.",
+      "Mr. Hooper died with the black veil still on his face. The people took his body to the graveyard. They did not take the veil off. They buried him in the dark ground with the black cloth still covering his head. The earth covered him and the veil. He kept his secret until the very end. The people remembered him for many years. They told stories about the man who lived behind the black veil. They learned to think about their own secrets and the shadows in their lives. The grave was quiet under the trees. The wind moved through the leaves. The story of the mysterious minister became a part of the history of the town. He is finally resting in peace without any more masks."
+    ],
+    tr: [
+      "Güneş Milford kasabasının üzerine doğdu. İnsanlar Pazar ayini için kiliseye gittiler. Kilise çanı sabah havasında yüksek sesle çaldı. Papaz Bay Hooper yavaşça kilise kapısına doğru yürüdü. O iyi bir adamdı ve herkes onu severdi. Her zaman olduğu gibi siyah kıyafetlerini giymişti. Ancak bugün insanlar ona büyük bir şaşkınlıkla baktılar. Bay Hooper yüzünün üzerinde siyah bir kumaş parçası taşıyordu. Bu siyah bir peçeydi. Gözlerini ve burnunu kapatıyordu ama o yine de rahatça yürüyebiliyordu. İnsanlar birbirleriyle sessiz seslerle konuştular. Nazik papazlarının neden bugün bu garip kumaşı taktığını anlamadılar. Hava soğuktu ve rüzgar ince siyah peçeyi hareket ettiriyordu. Herkes yüzündeki karanlık kumaştan dolayı çok şaşkındı.",
+      "Kilise insanlarla doluydu. Ahşap sandalyelerine oturdular ve duanın başlamasını beklediler. Bay Hooper odanın önüne yürüdüğünde insanlar çok sessizdi. Uzun boylu ve sakin yüzlü bir adamdı ama peçe yüzünden kimse gözlerini göremiyordu. Büyük kutsal kitabı açtı ve insanlara konuşmaya başladı. Sesi her zamanki gibi yumuşak ve çok nazikti. Ancak karanlık peçe onun farklı biri gibi görünmesine neden oluyordu. Bazı insanlar hasta olduğunu düşündü, diğerleri ise gizli bir üzüntüsü olduğunu sandı. Komşularına fısıldadılar. Neden yüzünü göstermediğini bilmek istediler. Papaz öylece durdu ve cemaate garip siyah peçesini hiç açıklamadı.",
+      "Ayin her Pazar olduğu gibi devam etti. Bay Hooper insanların kalplerinde sakladığı gizli günahlar hakkında konuştu. Sözleri bugün çok etkileyiciydi. İnsanlar mesajı yüzünden biraz korktular. Cemaate baktığında, sanki ruhlarının içine bakıyormuş gibi hissettiler. Nefes aldığında siyah peçe hareket ediyordu ama yüzü gizli kalıyordu. Kilisedeki birçok insan huzursuz hissetti. Bay Hooper'ı uzun yıllardır tanıyorlardı ama bugün onlara bir yabancı gibi geliyordu. Saat ilerledikçe peçenin gizemi zihinlerinde büyüdü. Ona birçok soru sormak istediler ama utandılar. Uzun sabah duası sırasında peçenin karanlık gölgesi küçük kilise odasında daha da büyüyor gibiydi.",
+      "Pazar ayini sona erdi ve insanlar kiliseden dışarı çıktılar. Çimenlerin üzerinde küçük gruplar halinde bir araya geldiler. Herkesin papaz hakkında birçok sorusu vardı. Bay Hooper neden siyah duvağı takıyordu? Bazı insanlar aklını kaçırdığını söylediler. Diğerleri bunun çok kötü bir şaka olduğunu düşündüler. Bir anne çocuğunu kendine doğru çekti ve papaza korkuyla baktı. Papaz sakin adımlarla onlara doğru yürüdü. Kızgın ya da üzgün görünmüyordu. Sadece karanlık kumaşın altında hafifçe gülümsedi. İnsanlar şimdi onunla nasıl konuşacaklarını bilmiyorlardı. Genellikle papazlarını görmekten çok mutlu olurlardı, ancak bugün siyah duvak onunla iyi arkadaşları arasında büyük bir duvar örmüştü. İyi liderleri bir hayalet gibi göründüğü için kafaları karışmıştı.",
+      "Bay Hooper kalabalığın arasından yürüdü. Genellikle yaptığı gibi kimseyle konuşmak için durmadı. Köylüler onu dikkatle izlediler. Koyu renkli kıyafetlerini ve şapkasından aşağı sarkan uzun siyah duvağı gördüler. Bu çok tuhaf ve üzücü bir görüntüydü. Kimse ona yakın yürümek istemedi. Duvağın kötü bir şeyin gizli bir işareti olduğunu hissettiler. Belki gizli bir günah işlemişti? O kasaba halkının yanından geçerken hava ağır ve sessizdi. Tam karşıya bakıyordu ve başını çevirmiyordu. Bir adam papazın eskiden tanıdığı adam olmadığını söyledi. Herkes ona katıldı. Siyah duvağın gizemi tüm kasabanın kiliselerinin geleceği hakkında çok endişeli ve korkmuş hissetmesine neden oldu.",
+      "Ayinden sonra kasabada üzücü bir olay yaşandı. Genç bir kadın öldü ve insanlar öğleden sonra bir cenaze töreni düzenlediler. Bay Hooper ölen kadının evine gitti. Cenaze töreni sırasında siyah duvağını taktı. Genç kızın ailesi çok şaşırdı. Böylesine üzücü bir zamanda siyah kumaşı görmeyi beklemiyorlardı. Papaz tabutun yanında durdu ve çok nazik sözler söyledi. Genç kadının ruhu için dua etti. Sesi güzel ve sevgi doluydu. Ancak siyah duvak insanların soğuk hissetmesine neden oldu. Ölümün gölgesinin yüzünde olduğunu düşündüler. Karanlık kumaş gözlerini saklıyordu, bu yüzden kız için döktüğü gözyaşlarını göremiyorlardı. Cenaze bugün daha da üzücü ve karanlık hissettirdi.",
+      "Cenaze töreni küçük odanın içinde devam etti. Bay Hooper ölü genç kadının yanında durdu. Onun güzel hayatı ve nazik kalbi hakkında konuştu. İnsanlar onun sözlerini çok dikkatli bir şekilde dinlediler. Odadaki her insan kız için derin bir üzüntü hissetti. Ancak bakana baktıklarında tekrar korktular. Siyah peçe, kara bir bulut gibi yüzünün üzerine sarkmıştı. Gözlerini mumların ışığından gizliyordu. Herkes ölü kızın siyah kumaşın arkasını görüp göremediğini merak etti. Bazı misafirler onun tabutunun içinde ayağa kalkabileceğini bile fısıldadılar. Oda çok soğuk ve sessizdi. Bakan dua ederken çok hareketsiz kaldı. Kimse ona bakmak istemiyordu ama karanlık ve korkutucu peçeden gözlerini ayıramıyorlardı.",
+      "Dualardan sonra tabutu toprağa taşıma vakti geldi. Bay Hooper grubun önünde yürüdü. Yavaş ve ağır adımlarla hareket etti. Peçe öğleden sonraki hafif rüzgarda hafifçe sallandı. İnsanlar onu kocaman gözlerle izlediler. Çok tuhaf bir şey gördüler. Bakan çiçekleri tabutun üzerine bırakmak için eğildiğinde, siyah peçe öne doğru düştü. Kısa bir an için yüzünden aşağı indi. Herkes yüzünü net bir şekilde görmeye çalıştı. Ağlayıp ağlamadığını bilmek istediler. Gözlerini görmek istediler. Ancak peçe çok hızlıydı. Kimse tek bir yüz hattını bile görmeden önce yüzünü tekrar kapattı. Elleriyle kumaşı hızla eski yerine koydu. Gizem herkes için sadece daha derin ve büyük hale geldi.",
+      "İki adam cenaze yürüyüşü sırasında bakanın arkasından yürüdüler. Az önce gördükleri tuhaf olay hakkında sessizce konuştular. Bir adam, ölü kızın ruhunun Bay Hooper'ın yanında yürüdüğünü gördüğüne çok emin olduğunu söyledi. Arkadaşına, peçenin bakanın ölülerle konuşmasına yardım ettiğini söyledi. Diğer adam yere baktı ve çok korktu. Peçenin karanlık bir sırrın işareti olduğunu düşündü. Bakanın artık normal bir insan olmadığına inandı. Kasabanın sessiz sokaklarından geçtiler. Evlerindeki insanlar pencerelerinden dışarı baktılar. Siyah peçeyi gördüler ve perdelerini kapattılar. Tüm kasaba, bakan yüzünden karanlık bir gizem ve gölgeler yeri gibi hissettirdi.",
+      "Elizabeth, Bay Hooper'ı seven sevgili hanımefendiydi. Tuhaf siyah peçe hakkında birçok hikaye duydu. Kasabadaki insanlar başka hiçbir şeyden bahsetmiyordu. Onunla konuşmak için papazın evine gitmeye karar verdi. Peçeyi kendisi için çıkarmasını istedi. Elizabeth eve vardığında Bay Hooper'ı sessiz odasında tek başına otururken gördü. Üzgün ve düşünceli görünüyordu. Elizabeth'i görünce bir anlığına mutlu oldu. Ancak sonra peçeyi hatırladı. Yüzüne doğru daha da çekti. Elizabeth ona nazik gözlerle baktı. Ona tüm kasabanın seçimini konuştuğunu söyledi. Ondan bir şeyler saklayıp saklamadığını sordu. Bugün neden o koyu renkli kumaşı takmak zorunda olduğunu gerçekten bilmek istiyordu.",
+      "Bay Hooper Elizabeth'e baktı ama peçeyi hareket ettirmedi. Ona bu kumaşın sadece ağır ruhunun bir işareti olduğunu söyledi. Tüm insanların gizli kalplerini başkalarından sakladığını belirtti. Herkesin kimsenin asla göremeyeceği özel bir karanlık tarafı olduğunu açıkladı. Ona kötü bir adam olmadığını söyledi. O sadece üzüntüsünü dünyaya göstermeyi seçen bir adamdı. Elizabeth onun sözleriyle çok şaşkına döndü. Elini tutmaya çalıştı ama içinde soğuk bir ürperti hissetti. Peçe, onunla bir yabancı konuşuyormuş gibi hissettirdi. Artık sevdiği adam değildi. Sanki iki kalbi arasında sonsuza kadar siyah bir gölge duvarı varmış gibi hissetti.",
+      "Papaz ona peçenin tüm hayatı boyunca yüzünde kalacağını söyledi. Onu kiliseye ve mezarlıklara takacağını söyledi. Hatta yalnızken kendi evinde bile takacağını belirtti. Elizabeth kalbinde büyük bir korku hissetti. Onu kendisi için asla çıkarmayacağını anladı. Yüzünü kendi aşkından saklayan bir adamla yaşayamazdı. Oda çok sessiz ve karanlık hale geldi. Pencereden gelen gün ışığı peçenin arkasındaki alana ulaşamıyordu. Elizabeth yavaşça ayağa kalktı ve ona veda etti. Evden çıktı ve onu yalnız odasında bıraktı. Gün karanlık geceye dönerken o, siyah sırrıyla orada kaldı.",
+      "Elizabeth gittikten sonra Bay Hooper odasında yalnızdı. Çok üzgündü. Güneş battı ve oda gölgelerle doldu. Yemek yemedi ve uyumadı. Seçtiği hayat hakkında düşündü. Siyah peçeyi her gün takıyordu çünkü bunun kendisi için doğru olduğunu hissediyordu. Yalnız olduğunda bile peçe yüzündeydi. Kasaba halkının bundan hoşlanmadığını biliyordu. Sokakta yürürken onun hakkında fısıldaşıyorlardı. Çocuklar siyah kumaşı gördüklerinde kaçıyorlardı. Ama fikrini değiştirmedi. Nazik bir adamdı ama aynı zamanda büyük bir sırla yaşayan bir adamdı. Karanlık odasında kaldı ve ertesi sabahın gelmesini bekledi.",
+      "Küçük kasabada yıllar çok yavaş geçti. Bay Hooper hala kilisenin papazıydı. İşinde çok iyiydi. İnsanlar vaazlarını seviyordu çünkü derin ve bilgeceydiler. Ama hala siyah peçeden korkuyorlardı. Onu her yere takip eden bir hayalet gibiydi. Mihrapta durduğunda ışık yüzünden uzaklaşıyor gibiydi. İnsanlar yere bakıyorlardı çünkü peçeyi görmek istemiyorlardı. Her zaman nazikti ama her zaman mesafeliydi. Kimsenin bilmediği bir şeyi bilen bir öğretmen gibiydi. Hayatını sessizlik içinde ve gerçek yüzünü kasabadaki herkesten saklayan siyah kumaşın gölgesinde yaşadı.",
+      "Hastaları ziyaret etti ve nazik bir kalple fakirlere yardım etti. Başını eğerek kasabada yürüdü. Bazen gölün suyunda kendi yüzünü gördü. Peçe yüzünden kendi gölgesinden korkuyordu. Yalnız bir adamdı ama şikayet etmedi. Peçenin bitirmesi gereken bir görev olduğuna inanıyordu. İnsanlar yaşlandı ve bazıları öldü. Bay Hooper her cenazedeydi. Peçesi gözlerinin üzerindeyken ölüler için dua etti. İnsanlar, papazın kendi günahları hakkındaki gerçeği bildiğini hissediyorlardı. Korkuyorlardı ama aynı zamanda ona saygı duyuyorlardı. Çok uzun hayatının sonuna kadar üzgün sırrının işaretini taşıyarak işine devam etti.",
+      "Yıllar geçti ve Bay Hooper çok yaşlı bir adam oldu. Saçları kış karı gibi beyaza döndü. Elleri zayıflamıştı ve sırtı hayat yolculuğunun ağırlığıyla bükülmüştü. Yaşlılığında bile siyah peçesini hiç çıkarmadı. Köydeki insanlar onu bu şekilde görmeye alışmıştı. Artık geçmişte olduğu kadar çok fısıldamıyorlardı. Uzun yıllar boyunca onlara hizmet eden bu nazik adama saygı duyuyorlardı. Sokaklarında dolaşan sessiz bir gölge gibiydi. Yürüdüğünde insanlar ona başlarını eğerek selam verirdi. Peçe artık onun kimliğinin bir parçası, kalbinde taşıdığı sırrın kalıcı bir işaretiydi. Hayatının her gününde yürüdüğü uzun ve yalnız bir yoldu.",
+      "Yaşlı papazın çok hastalandığı bir gün geldi. Artık yatağından çıkamıyordu. Kasabalılar haberi duyunca çok üzüldüler. Onun nazik sözlerini ve acı çektiklerinde her zaman yanlarında oluşunu hatırladılar. Genç bir doktor ona yardım etmek için evine geldi. Doktor, papaza özen ve hüzünle baktı. Arkadaşının daha iyi hissetmesine yardım etmek istiyordu ama papaz çok yorgundu. Siyah peçe hala yüzünü kapatmış bir halde yatağında yatıyordu. Nefes aldıkça ince kumaş yavaşça hareket ediyordu. Dünyadaki vaktinin sona yaklaştığı belliydi. Birçok insan küçük odasında onu ziyarete geldi ama karanlık perdenin arkasındaki adama ne söyleyeceklerini bilemediler.",
+      "Papaz, hayatının sonunu huzurla bekliyordu. Ölümden korkmuyordu çünkü hakikat ve ağır yüklerle dolu bir hayat yaşamıştı. Odasında sessizce oturuyor, pencereden dışarı bakıyordu. Güneş içeri girip yüzündeki siyah peçeye dokundu. Köylüler papazlarını sevdikleri için evin dışında toplandılar. Onun uzun hayatı ve taktığı gizemli kumaş hakkında konuştular. Yüzünü son bir kez görüp göremeyeceklerini merak ettiler. Bay Hooper, işinin neredeyse bittiğini biliyordu. Dünyanın, tıpkı yüzündeki peçe gibi büyük bir gölge olduğunu hissetti. Gözlerini kapattı ve sırrını derinden koruyarak, maskelerin olmadığı bir yere gitmek üzere bu dünyayı geride bırakmaya hazırlandı.",
+      "Oda sessiz ve soğuktu. Rahip Clark, yaşlı adamın yatağının yanında oturuyordu. O, Bay Hooper'a yardım etmek isteyen genç ve nazik bir rahipti. Yaşlı dostuna son istirahati hakkında yumuşak bir sesle konuştu. Ölmekte olan adama karanlık kumaşı kaldırmanın vakti geldiğini söyledi. Oda üzgün hisseden insanlarla doluydu. Örtünün onun yüzünden düşeceği anı bekliyorlardı. Siyah kumaşın altındaki adamı görmek istiyorlardı. Bay Hooper yatağında hareketsiz yatıyordu. Elleri siyah örtüyü çekiştirdi. Çok zayıf görünüyordu ama gözlerinde garip bir ışık vardı. Bugün odada duran tüm insanlara son gerçeğini söylemeye hazırdı.",
+      "Rahip, zayıf elini hareket ettirdi ve örtüyü sıkıca tuttu. Herkese her şeyi gören gözlerle baktı. Dünyanın neden onun yüzündeki karanlıktan korktuğunu sordu. Sadece kendisinin başkalarından sırlar saklamadığını söyledi. İnsanlara, hepsinin kalplerinde görünmez örtüler taşıdığını anlattı. Günahlarını dünyadan ve birbirlerinden saklıyorlardı. Onlara birbirlerine doğrulukla bakmaları gerektiğini söyledi. Sözlerini bitirdiğinde oda tamamen sessizleşti. Kimse kımıldamadı veya tek bir kelime etmedi. Herkes onun mesajının ağır yükünü hissetti. Rahip yorgundu ve nefes alışverişi yavaşladı. Tüm hayatını yüzünde siyah bir örtüyle yaşamıştı.",
+      "Bay Hooper, siyah örtü hala yüzündeyken öldü. İnsanlar onun bedenini mezarlığa götürdüler. Örtüyü çıkarmadılar. Onu, siyah kumaş hala başını kapatacak şekilde karanlık toprağa gömdüler. Toprak onu ve örtüyü kapladı. Sırrını son ana kadar sakladı. İnsanlar onu uzun yıllar boyunca hatırladılar. Siyah örtünün arkasında yaşayan adam hakkında hikayeler anlattılar. Kendi sırlarını ve hayatlarındaki gölgeleri düşünmeyi öğrendiler. Mezar, ağaçların altında sessizdi. Rüzgar yaprakların arasında gezindi. Gizemli rahibin hikayesi kasabanın tarihinin bir parçası oldu. O, artık daha fazla maske olmadan huzur içinde uyuyor."
+    ],
+    words: {
+      "minister": "papaz",
+      "veil": "peçe",
+      "congregation": "cemaat",
+      "service": "ayin",
+      "sin": "günah",
+      "stranger": "yabancı",
+      "ghost": "hayalet",
+      "funeral": "cenaze",
+      "coffin": "tabut",
+      "whisper": "fısıldamak",
+      "spirit": "ruh",
+      "curtain": "perde",
+      "feature": "yüz hattı",
+      "secret": "sır",
+      "soul": "ruh",
+      "shadow": "gölge",
+      "shiver": "ürperti",
+      "lonely": "yalnız",
+      "sermon": "vaaz",
+      "altar": "mihrap",
+      "duty": "görev",
+      "permanent": "kalıcı",
+      "identity": "kimlik",
+      "breathe": "nefes almak",
+      "mysterious": "gizemli",
+      "mask": "maske",
+      "reverend": "rahip",
+      "fabric": "kumaş",
+      "invisible": "görünmez",
+      "graveyard": "mezarlık"
+    }
+  }
+,
+  {
+    id: 'horror_haunted_inn',
+    title: "The Haunted Inn",
+    author: 'Edward Bulwer-Lytton',
+    level: 'A1',
+    coverUrl: '/covers/horror_haunted_inn.webp',
+    en: [
+      "I traveled on a dark and cold night. The road was very long and I was tired. I saw an old inn near the forest. It was a very quiet place with tall, black trees around it. I stopped my horse and looked at the building. The windows were small and dark like dead eyes. I felt a strange cold feeling in my heart when I looked at the front door. The wind made a sad sound through the dry leaves. I wanted to stay inside because the rain was falling hard on my coat. I walked to the door and knocked two times. The sound was very loud in the dark night. I waited for a long time but no one came to open the door for me. The inn looked very lonely.",
+      "I knocked on the heavy wooden door again. Finally, I heard slow steps coming from the inside. The door opened very slowly and made a scary noise. A very old man stood there with a small light in his hand. He had a white face and his eyes were sad. He looked at me but he did not say a word. I asked him for a room for the night. He looked at the sky and then he looked at me again. He did not seem happy to see a visitor at this late hour. The man slowly moved back and gestured for me to enter the dark hall. The air inside smelled like old dust and cold stone. It was very dark and I could not see the walls clearly.",
+      "The room was very big and empty. There was a single chair and a broken table in the corner. The man gave me the light and pointed to the stairs. He told me to go up to the room at the end of the hall. He spoke with a low and shaking voice. I felt that he was hiding a secret from me. He turned away and walked into the shadows without saying goodnight. I went up the stairs and the wood made a sharp sound under my feet. Everything felt cold and very strange in this house. I arrived at the door of my room and pushed it open. The room was dark and I felt like someone was watching me from the deep corners of the dark, dusty place.",
+      "I stood inside the small room and looked around. The walls were grey and the floor was very cold. There was a big bed in the middle of the room with old, heavy curtains around it. The wind pushed against the windows and made them shake. I was very tired from my long trip on the road. I put my bag on the chair and looked for a place to sleep. My light was small and did not show much of the room. The shadows on the walls moved like strange, thin fingers. I felt that I was not alone in this house. The silence was heavy and scary like a thick fog. I wanted to rest, but my mind was full of thoughts about the old man and the quiet, dark halls of the inn.",
+      "I started to take off my wet coat and shoes. The room was so cold that I could see my own breath in the air. I looked at the bed and saw that the sheets were white and clean. I thought that maybe the place was not so bad after all. I sat on the side of the bed and waited for sleep to come to me. The candle light was almost gone and I needed to be careful. I looked at the door but it was closed tight. Everything felt still for a few minutes. I hoped that morning would come soon so I could leave this lonely place. I felt a little bit of peace even if the house was old and smelled like the dust of many long years.",
+      "Suddenly, I heard a noise coming from the floor above my head. It was a slow and heavy sound like someone walking in big, leather boots. I held my breath and listened very carefully to the sound. The noise moved from one side of the room to the other side. Then it stopped for a short time and started again. I wondered who lived in the attic of this strange building. My heart beat fast and I felt fear in my stomach. I did not want to move because I was afraid of what I might see in the dark. The house was supposed to be empty of other guests tonight. I was sure that I was the only person in this part of the dark, cold inn.",
+      "I sat on the bed and did not move at all. The heavy steps above me became louder and slower as the night went on. I stared at the ceiling and saw small pieces of dust fall from the wood. It was very dark in my room now because my candle was almost dead. I wanted to run away but my feet felt like heavy stones on the floor. I thought about the man who told me that this room was safe and warm. He was a liar because this place felt very dangerous. I felt a cold wind move through the room even though the windows were closed tight. The air was thick and smelled like old earth. I was very afraid of the person who walked above me in the dark attic.",
+      "The walking sound changed. Now it sounded like something heavy was being dragged across the floorboards. It was a long, slow drag that made my skin crawl with fear. I looked around the room and saw the shadows dancing on the grey walls. They looked like giant people moving in the corner of my eye. I reached for my knife but my hands were shaking too much to hold it. I felt a strange presence in the room with me, as if the air was pushing against my chest. I tried to speak, but my voice was stuck in my throat. I was alone, yet I knew that the room held a secret that was waiting to come out of the darkness and show itself to me.",
+      "I decided that I had to find out what was making that terrible noise. I took my small light and stood up very slowly. My knees were shaking and I almost fell down on the hard floor. I walked toward the door and touched the cold wood with my fingers. The door was still locked from the inside, but I felt a strange heat coming from the metal handle. I opened it a little bit and looked out into the long, dark hallway. The path to the stairs was blacker than the night outside. I heard a low moan come from the shadows at the end of the hall. It was a sad, lonely sound that made me want to cry. I stepped into the dark hall and began to walk forward into the unknown.",
+      "I walked down the long, dark hallway very carefully. The floor under my feet felt soft and old. I heard the sound again, a loud and sad moan that filled the empty air. My heart beat fast in my chest like a little bird. I wanted to turn back to my room, but something inside me said no. I moved my light to see the walls, but they were covered in shadows that danced and moved in the dark. The air was very cold now, much colder than before. I felt like someone was watching me from every corner. I did not want to stop, even though my hands were cold and shaking. The house seemed to wake up as I got closer to the stairs. Every piece of wood made a loud sound.",
+      "When I reached the top of the stairs, I looked down into the deep, black pit below. The staircase felt like a mouth waiting to eat me. I felt the wind again, but this time it felt like an icy hand on my neck. I looked up at the ceiling and saw the old door to the attic. It was slightly open, and a pale, blue light came from inside the room. I felt very scared, but I needed to know the truth. I started to climb the stairs one by one. The steps were very old and weak under my feet. I could hear the dragging sound again, slower now, like a heavy bag being pulled across the hard wood. I wanted to scream, but no sound came from my dry, tired lips.",
+      "I finally reached the attic door and pushed it open with my trembling hand. The door made a long, sharp noise that hurt my ears. Inside, the room was very dusty and filled with broken furniture. I saw a tall shadow in the corner, but it was not a person. It was an old clock, standing like a giant in the dark. It made the loud, slow ticking sound that I heard earlier. The wind blew through a broken window and moved the heavy curtains like ghosts in the night. I felt a great sense of relief, but also a deep sadness. The mystery was only an old clock, yet the atmosphere of this place remained very heavy and strange. I stood still and listened to the rhythmic, slow beating of the old clock.",
+      "I walked slowly inside the dusty room. The air smelled like old paper and dry wood. I looked at the giant clock in the dark corner. It was made of dark wood and had a glass face. The pendulum moved from side to side with a slow, heavy sound. Tick, tock, tick, tock. It was the only sound in the silent room. I felt calm because the scary mystery was now simple. It was just a machine, not a ghost or a spirit. However, the room was still very strange. The moonlight came through the window and made long shadows on the floor. I watched the shadows dance while the clock continued its work. I felt tired and my legs were weak. I wanted to sit down on an old chair, but I was afraid of the dark corners.",
+      "Suddenly, the clock stopped making any noise. The silence in the attic was very loud and heavy. I felt a cold wind on my face again, but the window was closed now. My heart started to beat fast because something was not right. I looked at the clock and saw the glass face move. A small, hidden door on the side of the clock slowly opened. I did not move because I was very scared. A piece of old paper fell from the clock to the dusty floor. It looked like a letter from a long time ago. I walked to the paper and picked it up. My hands were shaking and I could not see the words well. The light from my candle was very small and dim in the large room.",
+      "I looked at the paper under the light. It had yellow edges and felt very thin. The handwriting was dark and messy, like someone wrote it in a hurry. I tried to read the words, but they were hard to understand. It was a story about a man who lived in this inn many years ago. He was sad because he lost something very important to him. He hid his treasure in a secret place in this house. My eyes grew wide as I read the last line of the letter. It said the treasure was under the floorboards near the clock. I looked down at my feet and saw a loose board. The mystery was not just a clock. It was a secret from the past that waited for me in the dark attic.",
+      "I stood very still on the cold wooden floor. My heart beat fast in my chest like a little bird. I knew that the secret was right under my feet. I looked at the loose board near the large clock. It was not flat like the other boards in the room. I used my heavy boots to push it. The wood made a loud sound in the quiet house. It moved just a little bit at first. I pushed again with all my power. The old board finally came up from the dark floor. A cloud of gray dust went into the air. I held my candle close to the hole. I was very nervous because I did not know what I would see. The light was weak, but I saw a small box made of iron.",
+      "I picked up the iron box with my shaking hands. It was heavy and felt very cold to the touch. The metal was old and covered with thick rust. I tried to open the lid of the box slowly. It made a long, sad sound like a cry in the night. Inside, there were many shiny gold coins and old papers. These things belonged to the sad man from the letter long ago. He hid them here to stay safe from the people he did not trust. Now, the secrets of the house were mine to keep. I felt a strange mix of fear and joy in my heart. The room felt different now that I had the truth. The shadows did not look scary anymore, only quiet and very old.",
+      "I put the iron box into my big coat pocket carefully. I knew I had to leave this place very soon. The night was ending and the sun would come up. I walked toward the wooden stairs with the heavy box. Each step I took made the floorboards creak under my feet. The house seemed to watch me move toward the exit door. I felt a soft wind push me as I opened the heavy lock. I did not look back at the room with the clock. I stepped outside and felt the cool air on my face. The morning sky was turning blue and the stars were gone. I was finally away from the strange inn, but the memory stayed with me forever.",
+      "I walked fast along the dark road away from the old inn. My heart was still very fast, but I felt strong now. The sun was coming up behind the big green hills. It brought a warm light to the world. I held the iron box tight inside my coat. I could feel its heavy weight on my side as I moved. I did not want to stop until I was very far from that place. The road was quiet and I saw no people. The birds started to sing in the tall trees above me. They sounded happy and full of life today. Everything felt new and clean in the morning light. The shadows of the night were finally gone from my mind. I was a free person again, far from the scary stories of the house.",
+      "When I reached the small town, I found a place to rest. I sat on a bench near the quiet village square. People were just starting their day with a smile. I opened my coat to look at the iron box once more. The gold coins sparkled in the morning sun like bright stars. These coins were enough to start a new life for me. I also looked at the old papers with great care. They told the story of the sad man who hid his gold. Now his secret was safe with me forever. I felt thankful that I finished my long, strange night in the inn. I decided to use the money to help others in need. This made me feel very good and very calm inside my tired heart.",
+      "My journey to the inn is a memory I will never lose. It was a dark time, but it taught me much about fear. I learned that even in the darkest rooms, there is truth to find. I never spoke to anyone about the box or the secret floor. Some things are best kept away from the loud world. I went home to my family and shared a nice, warm breakfast. The inn stayed behind me, empty and quiet in the forest. Maybe someone else will go there one day to look for the truth. But for now, the house is just a place for ghosts to sleep. I am happy to be home where the lights are bright and the beds are safe. My long adventure was finally over, and I found peace at last."
+    ],
+    tr: [
+      "Karanlık ve soğuk bir gecede seyahat ediyordum. Yol çok uzundu ve yorgundum. Ormanın yakınında eski bir han gördüm. Etrafında uzun, siyah ağaçlar olan çok sessiz bir yerdi. Atımı durdurdum ve binaya baktım. Pencereler ölü gözler gibi küçük ve karanlıktı. Ön kapıya baktığımda kalbimde tuhaf, soğuk bir his duydum. Rüzgar, kurumuş yapraklar arasında hüzünlü bir ses çıkarıyordu. İçeride kalmak istiyordum çünkü yağmur paltoma sertçe yağıyordu. Kapıya yürüdüm ve iki kez vurdum. Ses, karanlık gecede çok yüksek çıktı. Uzun süre bekledim ama kapıyı açmak için kimse gelmedi. Han çok yalnız görünüyordu.",
+      "Ağır ahşap kapıya tekrar vurdum. Sonunda içeriden gelen yavaş adımlar duydum. Kapı çok yavaş açıldı ve korkutucu bir gürültü çıkardı. Çok yaşlı bir adam elinde küçük bir ışıkla orada duruyordu. Beyaz bir yüzü vardı ve gözleri hüzünlüydü. Bana baktı ama tek bir kelime bile etmedi. Ondan gece için bir oda istedim. Gökyüzüne baktı ve sonra tekrar bana baktı. Bu geç saatte bir ziyaretçi görmekten mutlu görünmüyordu. Adam yavaşça geri çekildi ve karanlık hole girmem için işaret etti. İçerideki hava eski toz ve soğuk taş gibi kokuyordu. Çok karanlıktı ve duvarları net bir şekilde göremiyordum.",
+      "Oda çok büyük ve boştu. Köşede tek bir sandalye ve kırık bir masa vardı. Adam bana ışığı verdi ve merdivenleri işaret etti. Holün sonundaki odaya gitmemi söyledi. Alçak ve titreyen bir sesle konuştu. Benden bir sır sakladığını hissettim. Arkasını döndü ve iyi geceler demeden gölgelerin içine yürüdü. Merdivenlerden çıktım ve ahşap, ayaklarımın altında keskin bir ses çıkardı. Bu evde her şey soğuk ve çok tuhaf hissettiriyordu. Odamın kapısına vardım ve onu iterek açtım. Oda karanlıktı ve sanki birinin karanlık, tozlu yerin derin köşelerinden beni izlediğini hissettim.",
+      "Küçük odanın içinde durdum ve etrafıma baktım. Duvarlar griydi ve zemin çok soğuktu. Odanın ortasında, etrafında eski ve ağır perdeler olan büyük bir yatak vardı. Rüzgar pencerelere çarptı ve onların titremesine neden oldu. Yoldaki uzun yolculuğumdan dolayı çok yorgundum. Çantamı sandalyeye koydum ve uyuyacak bir yer aradım. Işığım küçüktü ve odanın büyük bir kısmını göstermiyordu. Duvarlardaki gölgeler garip, ince parmaklar gibi hareket ediyordu. Bu evde yalnız olmadığımı hissettim. Sessizlik, yoğun bir sis gibi ağır ve korkutucuydu. Dinlenmek istedim ama zihnim yaşlı adam ve hanın sessiz, karanlık koridorlarıyla ilgili düşüncelerle doluydu.",
+      "Islak ceketimi ve ayakkabılarımı çıkarmaya başladım. Oda o kadar soğuktu ki havada kendi nefesimi görebiliyordum. Yatağa baktım ve çarşafların beyaz ve temiz olduğunu gördüm. Belki de burası o kadar kötü bir yer değildir diye düşündüm. Yatağın kenarına oturdum ve uykunun gelmesini bekledim. Mum ışığı neredeyse bitmişti ve dikkatli olmam gerekiyordu. Kapıya baktım ama sıkıca kapalıydı. Birkaç dakikalığına her şey durgunlaştı. Sabahın çabuk gelmesini ve bu ıssız yeri terk edebilmeyi umdum. Ev eski olsa ve uzun yılların tozunu koksa bile biraz huzur hissettim.",
+      "Aniden, başımın üzerindeki kattan bir gürültü duydum. Büyük, deri çizmelerle yürüyen biri gibi yavaş ve ağır bir sesti. Nefesimi tuttum ve sesi çok dikkatli bir şekilde dinledim. Ses, odanın bir tarafından diğer tarafına doğru ilerledi. Sonra kısa bir süre durdu ve tekrar başladı. Bu garip binanın tavan arasında kimin yaşadığını merak ettim. Kalbim hızla çarptı ve midemde korku hissettim. Hareket etmek istemedim çünkü karanlıkta görebileceklerimden korkuyordum. Evin bu gece diğer misafirlerden arındırılmış olması gerekiyordu. Bu karanlık ve soğuk hanın bu kısmında tek kişi olduğuma emindim.",
+      "Yatağın üzerinde oturdum ve hiç kımıldamadım. Gece ilerledikçe tepemdeki ağır ayak sesleri daha da yükseldi ve yavaşladı. Tavana dik dik baktım ve tahtadan düşen küçük toz parçalarını gördüm. Odam artık çok karanlıktı çünkü mumum neredeyse bitmişti. Kaçıp gitmek istedim ama ayaklarım yerdeki ağır taşlar gibiydi. Bana bu odanın güvenli ve sıcak olduğunu söyleyen adamı düşündüm. O bir yalancıydı çünkü burası çok tehlikeli hissettiriyordu. Pencereler sıkıca kapalı olmasına rağmen odanın içinde soğuk bir rüzgarın dolaştığını hissettim. Hava yoğundu ve eski toprak gibi kokuyordu. Karanlık tavan arasında tepemde yürüyen kişiden çok korkuyordum.",
+      "Yürüme sesi değişti. Artık yer tahtalarında ağır bir şey sürükleniyormuş gibi geliyordu. Bu, tüylerimi diken diken eden uzun ve yavaş bir sürüklenmeydi. Odaya baktım ve gölgelerin gri duvarlarda dans ettiğini gördüm. Gözümün ucuyla dev insanlar hareket ediyormuş gibi görünüyorlardı. Bıçağıma uzandım ama ellerim tutamayacak kadar çok titriyordu. Odada benimle birlikte garip bir varlık hissettim, sanki hava göğsüme bastırıyor gibiydi. Konuşmaya çalıştım ama sesim boğazıma düğümlenmişti. Yalnızdım, ancak odanın karanlığın içinden çıkıp kendini bana göstermeyi bekleyen bir sır barındırdığını biliyordum.",
+      "O korkunç sesi neyin çıkardığını öğrenmem gerektiğine karar verdim. Küçük ışığımı aldım ve çok yavaş bir şekilde ayağa kalktım. Dizlerim titriyordu ve neredeyse sert zemine düşecektim. Kapıya doğru yürüdüm ve soğuk tahtaya parmaklarımla dokundum. Kapı içeriden hala kilitliydi ama metal kulptan garip bir sıcaklık geldiğini hissettim. Birazcık araladım ve uzun, karanlık koridora doğru baktım. Merdivenlere giden yol dışarıdaki geceden daha siyahtı. Koridorun sonundaki gölgelerden düşük bir inilti geldiğini duydum. Bu, ağlamak istememe neden olan hüzünlü, yalnız bir sesti. Karanlık koridora adımımı attım ve bilinmezliğe doğru yürümeye başladım.",
+      "Uzun ve karanlık koridorda çok dikkatli bir şekilde yürüdüm. Ayaklarımın altındaki zemin yumuşak ve eski hissettiriyordu. Boş havayı dolduran o yüksek ve üzgün inilti sesini tekrar duydum. Kalbim göğsümde küçük bir kuş gibi hızlı hızlı çarpıyordu. Odama geri dönmek istedim ama içimdeki bir ses hayır dedi. Işığımı duvarları görmek için hareket ettirdim ama duvarlar karanlıkta dans eden ve hareket eden gölgelerle kaplıydı. Hava artık çok soğuktu, öncekinden çok daha soğuktu. Her köşeden birinin beni izlediğini hissediyordum. Ellerim soğuk ve titrek olsa bile durmak istemedim. Merdivenlere yaklaştıkça ev uyanıyor gibiydi. Her bir tahta parçası yüksek bir ses çıkarıyordu.",
+      "Merdivenlerin tepesine ulaştığımda aşağıdaki derin, siyah çukura baktım. Merdivenler beni yutmayı bekleyen bir ağız gibi hissettiriyordu. Rüzgarı tekrar hissettim ama bu sefer boynumda buz gibi bir el gibi hissettirdi. Tavana baktım ve tavan arasındaki eski kapıyı gördüm. Hafifçe açıktı ve odanın içinden soluk, mavi bir ışık geliyordu. Çok korkmuştum ama gerçeği bilmem gerekiyordu. Merdivenleri birer birer tırmanmaya başladım. Basamaklar ayaklarımın altında çok eski ve zayıftı. Sürüklenme sesini tekrar duyabiliyordum, artık daha yavaştı, sanki ağır bir çanta sert ahşabın üzerinde çekiliyordu. Çığlık atmak istedim ama kuru, yorgun dudaklarımdan hiçbir ses çıkmadı.",
+      "Sonunda tavan arası kapısına ulaştım ve titreyen elimle kapıyı ittim. Kapı kulaklarımı acıtan uzun, keskin bir ses çıkardı. İçerisi çok tozlu ve kırık mobilyalarla doluydu. Köşede uzun bir gölge gördüm ama bu bir insan değildi. Karanlıkta bir dev gibi duran eski bir saatti. Daha önce duyduğum o yüksek, yavaş tıkırtı sesini o çıkarıyordu. Rüzgar kırık bir pencereden içeri esiyor ve ağır perdeleri gecenin içindeki hayaletler gibi hareket ettiriyordu. Büyük bir rahatlama hissettim ama aynı zamanda derin bir hüzün duydum. Gizem sadece eski bir saatti, yine de bu yerin atmosferi çok ağır ve tuhaf kalmaya devam etti. Olduğum yerde durdum ve eski saatin ritmik, yavaş vuruşlarını dinledim.",
+      "Tozlu odanın içinde yavaşça yürüdüm. Hava eski kâğıt ve kuru tahta gibi kokuyordu. Karanlık köşedeki dev saate baktım. Koyu renkli tahtadan yapılmıştı ve cam bir yüzü vardı. Sarkaç, yavaş ve ağır bir sesle bir o yana bir bu yana hareket ediyordu. Tik, tak, tik, tak. Sessiz odadaki tek ses buydu. Korkunç gizem artık basit olduğu için sakin hissettim. O sadece bir makineydi, bir hayalet ya da ruh değildi. Yine de oda hala çok garipti. Ay ışığı pencereden içeri girdi ve yerde uzun gölgeler oluşturdu. Saat işine devam ederken gölgelerin dansını izledim. Yorgun hissettim ve bacaklarım güçsüzdü. Eski bir sandalyeye oturmak istedim ama karanlık köşelerden korkuyordum.",
+      "Aniden saat ses çıkarmayı bıraktı. Çatı katındaki sessizlik çok gürültülü ve ağırdı. Yüzümde tekrar soğuk bir rüzgar hissettim ama pencere artık kapalıydı. Kalbim hızla çarpmaya başladı çünkü bir şeyler doğru değildi. Saate baktım ve cam yüzün hareket ettiğini gördüm. Saatin yan tarafındaki küçük, gizli bir kapı yavaşça açıldı. Çok korktuğum için kıpırdamadım. Eski bir kâğıt parçası saatten tozlu zemine düştü. Çok uzun zaman öncesinden kalmış bir mektuba benziyordu. Kâğıda doğru yürüdüm ve onu yerden aldım. Ellerim titriyordu ve kelimeleri iyi göremiyordum. Mumumun ışığı büyük odada çok küçük ve soluktu.",
+      "Işıgın altında kâğıda baktım. Kenarları sararmıştı ve çok inceydi. El yazısı koyu ve karışıktı, sanki birisi aceleyle yazmış gibiydi. Kelimeleri okumaya çalıştım ama anlaması zordu. Bu handa uzun yıllar önce yaşamış bir adam hakkındaki hikâyeydi. Kendisi için çok önemli bir şeyi kaybettiği için üzgündü. Hazinesini bu evde gizli bir yere saklamıştı. Mektubun son satırını okurken gözlerim fal taşı gibi açıldı. Hazinenin saatin yanındaki döşeme tahtalarının altında olduğunu söylüyordu. Ayaklarıma baktım ve gevşek bir tahta gördüm. Gizem sadece bir saatten ibaret değildi. Bu, karanlık çatı katında beni bekleyen geçmişten kalma bir sırdı.",
+      "Soğuk tahta zeminde çok hareketsiz durdum. Kalbim göğsümde küçük bir kuş gibi hızlı çarpıyordu. Sırrın tam ayaklarımın altında olduğunu biliyordum. Büyük saatin yanındaki gevşek tahtaya baktım. Odadaki diğer tahtalar gibi düz değildi. Onu itmek için ağır botlarımı kullandım. Tahta, sessiz evde yüksek bir ses çıkardı. İlk başta sadece biraz hareket etti. Tüm gücümle tekrar ittim. Eski tahta sonunda karanlık yerden yukarı kalktı. Havaya bir gri toz bulutu yayıldı. Mumumu deliğe yakın tuttum. Ne göreceğimi bilmediğim için çok gergindim. Işık zayıftı ama demirden yapılmış küçük bir kutu gördüm.",
+      "Demir kutuyu titreyen ellerimle yerden aldım. Ağır ve dokunması çok soğuktu. Metal eskiydi ve kalın bir pas tabakasıyla kaplıydı. Kutunun kapağını yavaşça açmaya çalıştım. Geceleyin atılan bir çığlık gibi uzun ve hüzünlü bir ses çıkardı. İçinde çok sayıda parlak altın sikke ve eski kağıtlar vardı. Bu eşyalar, uzun zaman önceki mektubun hüzünlü sahibine aitti. Güvenmediği insanlardan korumak için onları buraya saklamıştı. Artık evin sırları bana aitti. Kalbimde garip bir korku ve neşe karışımı hissettim. Gerçeği öğrendiğim için oda artık farklı geliyordu. Gölgeler artık korkutucu değil, sadece sessiz ve çok eski görünüyordu.",
+      "Demir kutuyu dikkatlice büyük ceketimin cebine koydum. Buradan çok çabuk ayrılmam gerektiğini biliyordum. Gece bitiyordu ve güneş doğacaktı. Ağır kutuyla ahşap merdivenlere doğru yürüdüm. Attığım her adımda zemin tahtaları ayaklarımın altında gıcırdıyordu. Ev, çıkış kapısına doğru gidişimi izliyor gibiydi. Ağır kilidi açtığımda yumuşak bir rüzgarın beni ittiğini hissettim. Saatli odaya bir daha bakmadım. Dışarı çıktım ve yüzümde serin havayı hissettim. Sabah gökyüzü maviye dönüyordu ve yıldızlar kaybolmuştu. Sonunda tuhaf handan uzaklaşmıştım ama hatırası sonsuza kadar benimle kaldı.",
+      "Eski handan uzaklaşan karanlık yol boyunca hızlıca yürüdüm. Kalbim hala çok hızlı çarpıyordu ama artık kendimi güçlü hissediyordum. Güneş, büyük yeşil tepelerin arkasından doğuyordu. Dünyaya ılık bir ışık getirdi. Demir kutuyu paltomun içinde sıkıca tuttum. Hareket ettikçe yan tarafımdaki ağır ağırlığını hissedebiliyordum. O yerden çok uzaklaşana kadar durmak istemedim. Yol sessizdi ve hiç kimseyi görmedim. Kuşlar tepemdeki uzun ağaçlarda ötmeye başladı. Bugün neşeli ve hayat dolu görünüyorlardı. Sabah ışığında her şey yeni ve temiz hissediliyordu. Gecenin gölgeleri nihayet zihnimden silinmişti. Evin korkutucu hikayelerinden uzak, yeniden özgür bir insandım.",
+      "Küçük kasabaya ulaştığımda dinlenecek bir yer buldum. Sessiz köy meydanının yakınındaki bir banka oturdum. İnsanlar güne gülümseyerek yeni başlıyordu. Demir kutuya bir kez daha bakmak için paltomu açtım. Altın paralar sabah güneşinde parlak yıldızlar gibi ışıldıyordu. Bu paralar benim için yeni bir hayata başlamaya yetecekti. Eski kağıtlara da büyük bir dikkatle baktım. Altınlarını saklayan o üzgün adamın hikayesini anlatıyorlardı. Artık onun sırrı sonsuza dek benimle güvende. Handaki uzun, tuhaf gecemi bitirdiğim için minnettardım. Parayı ihtiyaç sahiplerine yardım etmek için kullanmaya karar verdim. Bu, yorgun kalbimin içinde kendimi çok iyi ve huzurlu hissetmemi sağladı.",
+      "Hana yaptığım yolculuk asla unutmayacağım bir anı. Karanlık bir zamandı ama bana korku hakkında çok şey öğretti. En karanlık odalarda bile bulunacak bir gerçek olduğunu öğrendim. Kutu veya gizli zemin hakkında kimseyle konuşmadım. Bazı şeyleri gürültülü dünyadan uzak tutmak en iyisidir. Ailemin yanına döndüm ve güzel, sıcak bir kahvaltı yaptık. Han arkamda, ormanda boş ve sessiz kaldı. Belki bir gün başkası gerçeği aramak için oraya gider. Ama şimdilik ev sadece hayaletlerin uyuması için bir yer. Işıkların parlak ve yatakların güvenli olduğu evimde olmaktan mutluyum. Uzun maceram nihayet bitti ve sonunda huzuru buldum."
+    ],
+    words: {
+      "inn": "han",
+      "tired": "yorgun",
+      "visitor": "ziyaretçi",
+      "shadow": "gölge",
+      "secret": "sır",
+      "dusty": "tozlu",
+      "curtain": "perde",
+      "silence": "sessizlik",
+      "breath": "nefes",
+      "attic": "tavan arası",
+      "leather": "deri",
+      "ceiling": "tavan",
+      "dust": "toz",
+      "drag": "sürüklemek",
+      "hallway": "koridor",
+      "unknown": "bilinmezlik",
+      "staircase": "merdiven",
+      "trembling": "titreyen",
+      "rhythmic": "ritmik",
+      "atmosphere": "atmosfer",
+      "pendulum": "sarkaç",
+      "machine": "makine",
+      "hidden": "gizli",
+      "treasure": "hazine",
+      "floorboard": "döşeme tahtası",
+      "loose": "gevşek",
+      "board": "tahta",
+      "rust": "pas",
+      "shiny": "parlak",
+      "creak": "gıcırdamak",
+      "lock": "kilit",
+      "bench": "bank (oturak)",
+      "sparkle": "parıldamak",
+      "journey": "yolculuk",
+      "ghost": "hayalet",
+      "breakfast": "kahvaltı",
+      "peace": "huzur"
+    }
+  }
+,
+  {
+    id: 'horror_strange_guest',
+    title: "The Strange Guest",
+    author: 'Sheridan Le Fanu',
+    level: 'A1',
+    coverUrl: '/covers/horror_strange_guest.webp',
+    en: [
+      "The old house sits alone on a big, dark hill. The wind blows hard against the cold stone walls. Inside, the lights are very low and shadows dance on the floor. It is a quiet night, but the air feels heavy. Mr. Jennings is a kind man who lives in this large, empty home. He likes to read books by the fire because he feels lonely. He sits in his big chair and looks at the red fire. Outside, the trees move like ghost hands in the dark. He does not know that someone is coming to visit him tonight. His heart beats slowly as he waits for sleep to come. He thinks his life is very simple, but a secret change is waiting for him in the shadows of this very dark and old house.",
+      "Suddenly, a loud knock sounds at the heavy wooden door. Mr. Jennings looks up from his book. He is surprised because he does not expect any guests. The sound is sharp and deep, like a warning in the quiet house. He walks slowly across the cold room. His feet make no sound on the thick carpet. He reaches the door and turns the silver handle. The metal is cold like ice under his hand. He pulls the door open and sees a tall man standing there in the dark. The man wears a long black coat. His face is hidden by the shadow of a large hat. He does not say a word, but he looks at Mr. Jennings with eyes that seem to hold many secrets of the night.",
+      "The stranger walks into the house without an invitation. He moves with strange speed, like a shadow across the wall. Mr. Jennings feels a sudden cold wind move through the hall. He wants to ask the man why he is here, but his voice stays inside his throat. The stranger is tall and thin. He carries a small bag that looks very old and heavy. He walks toward the library where the fire is burning. He sits in a chair near the warm flames. Mr. Jennings follows him, feeling very nervous and confused. The stranger starts to take off his hat. His face is very pale and his hair is white as snow. He looks at Mr. Jennings and smiles, but the smile is cold and shows no kindness at all.",
+      "The stranger sits in the large chair near the fire. His eyes are bright like stars in the night sky. Mr. Jennings stands near the door and watches him. He feels very afraid because the man is very strange. The room is quiet and the fire makes a small popping sound. The stranger puts his bag on the floor. It makes a heavy thud on the wood. He does not speak for a long time. Mr. Jennings tries to ask him a question, but his mouth does not move. The house feels very cold even with the fire. The man looks around the room as if he knows every corner of this old house. He has long thin hands that move slowly on his knees. It is a very tense moment for the owner of the home.",
+      "Mr. Jennings finally finds his voice and speaks to the visitor. He asks the man why he is here in the middle of the night. The stranger does not answer right away. He stares into the fire and his face looks sad. Then, he turns his head and looks directly at Mr. Jennings. His voice is deep and low, like wind blowing in a tunnel. He says that he is a traveler who needs a place to sleep. He mentions that his home is far away and the road is very dark tonight. Mr. Jennings is a polite man, so he nods his head slowly. He agrees to let the man stay for the night. He believes the man is just a lost person looking for rest in this lonely and dark place.",
+      "The stranger thanks Mr. Jennings with a strange movement of his head. He starts to tell a story about a dark forest near the town. His voice becomes very quiet as he describes the trees and the shadows. Mr. Jennings feels like he is falling into a deep sleep, but he wants to listen. The story is about a ghost that walks at night in the forest. The stranger speaks about the eyes of the ghost which are bright and red. Mr. Jennings feels his heart beat very fast in his chest. He wants to leave the room, but his legs feel like lead. The fire in the fireplace starts to turn a strange green color. The room feels smaller and the shadows become taller on the walls of the old house.",
+      "The room is now very dark and the green fire creates long, moving shadows on the walls. Mr. Jennings tries to stand up, but his body feels heavy and weak. The stranger continues his story without stopping for even a second. He describes how the ghost walks silently through the dry leaves. The man says that the ghost follows people who walk alone at night. Mr. Jennings listens carefully because he is scared of the dark woods near his house. The wind outside starts to howl like a hungry animal. He feels a cold air moving behind his chair, even though the windows are shut tight. Every shadow on the wall seems to have a face now. The air smells like old dust and damp earth. He wonders if the stranger is actually a man or something else entirely.",
+      "The stranger stands up slowly from the large chair near the fire. He is much taller than Mr. Jennings expected. His long coat touches the floor and makes a soft sound as he moves. He walks toward the window and looks out at the black night. He speaks again in a voice that sounds like dry branches breaking in the forest. He asks Mr. Jennings if he believes in things that cannot be seen with the eyes. Mr. Jennings shakes his head, but his heart is pounding against his ribs. He cannot look away from the thin, pale fingers of his guest. The guest starts to laugh, but it is not a happy sound. It is a sharp, cold sound that fills the room with fear. The house is silent again except for the sound of the burning wood.",
+      "Mr. Jennings tries to speak, but no sound comes from his dry throat. He wants to ask the stranger to leave, but his courage is gone. The stranger turns back around and his eyes are now glowing like two small, green lanterns. He moves closer to Mr. Jennings and the temperature in the room drops very quickly. Mr. Jennings sees frost forming on the edges of the wooden table. He is shaking with cold and deep terror. The guest leans down and whispers a secret into the ear of the host. The words are impossible to understand, but they make Mr. Jennings feel very lonely. He thinks about the safety of the bright sun, but the sun is far away. The stranger sits back down and waits for a reply, but the room is silent once more.",
+      "Mr. Jennings looks at the stranger with big, tired eyes. The man stays very still in his seat. The green fire light plays on the stranger’s face, making his skin look like grey stone. Mr. Jennings wants to run to the door, but his legs feel like lead. He wonders why the guest came to his house tonight. The clock on the wall makes a slow, ticking sound. It sounds like a heart beating in the silence. The stranger stares at the empty space in front of him. He does not blink even once. The room feels very tight and small now. Mr. Jennings breathes fast because he cannot catch his breath. Everything in the room feels wrong, but he is trapped by the strange and silent power of his guest.",
+      "The stranger moves his hand slowly across the table. His nails are long and sharp. He touches a glass of water, and the liquid inside turns into solid ice at once. Mr. Jennings watches this with horror. He knows this is not a normal man. He wants to cry for help, but he is too afraid to make a sound. The wind pushes hard against the wooden shutters of the house. It sounds like someone is trying to get inside to hurt them. The candles on the table flicker and then go out completely. Now, only the green light from the fireplace shows the room. The shadows on the walls start to dance and twist. They look like dark ghosts reaching out to grab Mr. Jennings from the corner of the room.",
+      "The guest leans forward and smiles. His teeth are white and thin like needles. He says that the story is not finished yet. Mr. Jennings tries to stand up, but a heavy force pushes him back down into his chair. He feels a cold touch on his shoulder, as if someone is standing right behind him. He turns his head, but he sees only the empty air. The stranger laughs again, a sound that shakes the heavy curtains. He tells Mr. Jennings that he can never leave this house until he hears the end of the tale. The room starts to shake, and books fall from the shelves. Dust fills the air like a thick, grey fog. Mr. Jennings closes his eyes and waits for the end of the world to arrive.",
+      "The room is very quiet now. Mr. Jennings opens his eyes slowly. The green fire light is still on the wall, but it is weaker than before. He looks at the stranger. The guest is sitting in the same place. He looks like a statue. Mr. Jennings feels very weak. His heart beats fast against his chest. He wants to know who this man is and why he is here. The stranger does not move, but his eyes follow every small movement in the room. There is no escape from this place. The door is locked by magic. The air smells like old dust and cold winter nights. Mr. Jennings wants to speak, but his voice is gone. He feels like a bird in a small, dark cage. He waits for the guest to say something else.",
+      "The stranger points to a big, old book on the desk. He asks Mr. Jennings to read the pages aloud. Mr. Jennings touches the book with shaking hands. The pages are very cold, like deep snow in the forest. He begins to read the words. The story in the book is about a lonely ghost. It is a sad story about a person who lost his way long ago. As Mr. Jennings reads, the room starts to change again. The floor feels like moving water beneath his feet. He sees shapes in the air. The words in the book start to glow with a bright, pale light. He is afraid to stop reading because the stranger looks at him with hungry, dark eyes. He must keep reading to save his own life.",
+      "The story in the book becomes more strange with every sentence. Mr. Jennings hears voices whispering from the walls. They are the voices of the people from the story. The guest listens carefully, and he nods his head as if he remembers everything. Mr. Jennings feels cold wind inside the room, even though the windows are closed tight. He cannot breathe well. He thinks about his home and the sun in the sky, but they feel like a dream from another life. The stranger stands up suddenly. His shadow is huge on the wall. He stretches his long arms toward Mr. Jennings. The clock stops ticking. The silence is very heavy and deep. Mr. Jennings knows that the next part of the story will be very bad for him.",
+      "The room is freezing now. Mr. Jennings looks at the stranger. The man is very tall and his skin is grey like a heavy cloud. He does not have a shadow on the floor. Mr. Jennings tries to stand up, but his legs are weak. He falls back into his chair. The guest steps closer. He does not walk; he moves like a dark smoke in the air. Mr. Jennings feels a deep fear inside his heart. He knows that his time is running out. The silence is loud and heavy. The guest stares at Mr. Jennings with eyes that are like two cold, black stones. There is no joy in those eyes, only a hunger for a story that never ends. The light on the walls flickers and begins to fade away into the dark corners of the room.",
+      "The stranger opens his mouth to speak, but no sound comes out. Instead, a cold wind moves through the room. Mr. Jennings feels the air push against him. He holds the table with his hands to stay in his seat. The book is open on the desk. Its pages turn by themselves. They flip fast like a bird flying away. The words on the paper start to move. They look like tiny, black insects crawling on the white surface. Mr. Jennings is very tired, but he cannot sleep. He must watch the book. The story is a trap for his soul. He wants to call for help, but his mouth is frozen shut. He is a prisoner in this strange house, waiting for the guest to take something that belongs to him forever.",
+      "The guest points to the last page of the book. It is empty. There are no words, only a dark drawing of a deep, black hole. Mr. Jennings looks at the drawing. He feels like he is falling into the paper. The walls of the room begin to spin around him. He sees pictures of his past life. He sees his friends and the sunlight of his youth. Everything is becoming grey and thin. The stranger smiles for the first time. It is a scary, sharp smile. He moves his hand forward to touch the chest of Mr. Jennings. The touch is like ice on bare skin. Mr. Jennings closes his eyes tight. He waits for the final moment to come. The room turns black and the world disappears behind a curtain of thick, heavy velvet.",
+      "The room is silent now. The cold touch of the stranger stops. Mr. Jennings opens his eyes slowly. He is not in the chair anymore. He is standing in the middle of a dark, empty space. There is no furniture and no light. The house is gone. The book is gone. He feels very light, like a feather in the wind. He looks around, but he sees nothing but grey fog. He remembers the face of the guest. That face is everywhere now. It is in the air and in the ground. He tries to shout, but he has no voice. The fear is still in his heart, but it is quiet. He is alone in a place that has no time. He waits for the end, but the end never comes.",
+      "Suddenly, a small light appears in the distance. It is not the light of the sun or a lamp. It is a pale, blue glow. Mr. Jennings walks toward it. His legs feel strong for the first time in many years. He reaches the light and sees a path. The path goes into the dark forest of his memories. He walks and sees the house again. It looks old and broken. The windows are like open mouths. The garden is full of dead flowers. He understands now. He is part of the story. He is not the man who was sitting in the chair. He is the shadow that stays in the house. He is the guest that never leaves. He is finally part of the dark history.",
+      "He turns around to look for the stranger, but the stranger is not there. There is only a mirror on the wall of the old house. Mr. Jennings looks into the glass. He does not see his own face. He sees the grey, tall man with the cold, black eyes. He touches his own face and feels the cold, grey skin. He realizes the truth. The story did not take his life. The story became his life. He is the man who waits for new visitors. He is the hunger in the room. He smiles that sharp, scary smile. The house is quiet, but he is ready. He waits for a new guest to open the book. The cycle begins again, and the dark room waits for a new soul to trap inside."
+    ],
+    tr: [
+      "Eski ev, büyük ve karanlık bir tepenin üzerinde tek başına duruyor. Rüzgar, soğuk taş duvarlara sertçe vuruyor. İçeride ışıklar çok kısık ve gölgeler yerde dans ediyor. Sessiz bir gece ama hava çok ağır hissettiriyor. Bay Jennings, bu büyük ve boş evde yaşayan kibar bir adam. Yalnız hissettiği için ateşin yanında kitap okumayı seviyor. Büyük koltuğunda oturuyor ve kırmızı ateşe bakıyor. Dışarıda ağaçlar karanlıkta hayalet eller gibi hareket ediyor. Bu gece onu ziyaret etmeye birinin geleceğini bilmiyor. Uyku gelmesini beklerken kalbi yavaşça çarpıyor. Hayatının çok basit olduğunu düşünüyor ama bu karanlık ve eski evin gölgelerinde gizli bir değişim onu bekliyor.",
+      "Aniden, ağır ahşap kapıda yüksek bir vuruş sesi duyuluyor. Bay Jennings kitabından başını kaldırıyor. Şaşırıyor çünkü hiçbir misafir beklemiyor. Ses, sessiz evde bir uyarı gibi keskin ve derin. Soğuk odanın içinde yavaşça yürüyor. Ayakları kalın halının üzerinde hiç ses çıkarmıyor. Kapıya ulaşıyor ve gümüş kolu çeviriyor. Metal, elinin altında buz gibi soğuk. Kapıyı açıyor ve karanlıkta orada duran uzun bir adam görüyor. Adam uzun siyah bir palto giyiyor. Yüzü, büyük bir şapkanın gölgesiyle saklı. Hiçbir şey söylemiyor ama Bay Jennings'e gecenin birçok sırrını taşıyan gözlerle bakıyor.",
+      "Yabancı, davet edilmeden eve giriyor. Duvardaki bir gölge gibi garip bir hızla hareket ediyor. Bay Jennings, koridordan geçen ani soğuk bir rüzgar hissediyor. Adama neden burada olduğunu sormak istiyor ama sesi boğazında düğümleniyor. Yabancı uzun ve ince. Çok eski ve ağır görünen küçük bir çanta taşıyor. Ateşin yandığı kütüphaneye doğru yürüyor. Sıcak alevlerin yanındaki bir koltuğa oturuyor. Bay Jennings, çok gergin ve kafası karışmış bir şekilde onu takip ediyor. Yabancı şapkasını çıkarmaya başlıyor. Yüzü çok solgun ve saçları kar gibi beyaz. Bay Jennings'e bakıp gülümsüyor ama bu gülümseme soğuk ve hiç nezaket içermiyor.",
+      "Yabancı, ateşin yakınındaki büyük koltukta oturuyor. Gözleri gece gökyüzündeki yıldızlar gibi parlak. Bay Jennings kapının yanında duruyor ve onu izliyor. Çok korkuyor çünkü adam çok tuhaf. Oda sessiz ve ateş küçük bir çatırtı sesi çıkarıyor. Yabancı çantasını yere koyuyor. Tahtanın üzerinde ağır bir gürültü yapıyor. Uzun süre konuşmuyor. Bay Jennings ona bir soru sormaya çalışıyor ama ağzı hareket etmiyor. Ev, ateş olsa bile çok soğuk hissettiriyor. Adam, bu eski evin her köşesini biliyormuş gibi odanın etrafına bakıyor. Dizlerinin üzerinde yavaşça hareket eden uzun, ince elleri var. Ev sahibi için çok gergin bir an.",
+      "Bay Jennings sonunda sesini buluyor ve ziyaretçiyle konuşuyor. Adama gecenin ortasında neden burada olduğunu soruyor. Yabancı hemen cevap vermiyor. Ateşin içine bakıyor ve yüzü üzgün görünüyor. Sonra başını çeviriyor ve doğrudan Bay Jennings'e bakıyor. Sesi, bir tünelde esen rüzgar gibi derin ve kısık. Bir yolcu olduğunu ve uyuyacak bir yere ihtiyacı olduğunu söylüyor. Evinin çok uzakta olduğunu ve yolun bu gece çok karanlık olduğunu belirtiyor. Bay Jennings nazik bir adam, bu yüzden başını yavaşça sallıyor. Adamın gece kalmasına izin vermeyi kabul ediyor. Onun sadece bu ıssız ve karanlık yerde dinlenmek isteyen kaybolmuş bir kişi olduğuna inanıyor.",
+      "Yabancı, başının tuhaf bir hareketiyle Bay Jennings'e teşekkür ediyor. Kasabanın yakınındaki karanlık bir orman hakkında bir hikaye anlatmaya başlıyor. Ağaçları ve gölgeleri tarif ederken sesi çok kısılıyor. Bay Jennings derin bir uykuya dalıyormuş gibi hissediyor ama dinlemek istiyor. Hikaye, ormanda geceleri yürüyen bir hayalet hakkında. Yabancı, hayaletin parlak ve kırmızı olan gözlerinden bahsediyor. Bay Jennings kalbinin göğsünde çok hızlı çarptığını hissediyor. Odadan çıkmak istiyor ama bacakları kurşun gibi ağır hissettiriyor. Şöminedeki ateş tuhaf bir yeşil renge dönmeye başlıyor. Oda daha küçük hissettiriyor ve eski evin duvarlarındaki gölgeler uzuyor.",
+      "Oda artık çok karanlık ve yeşil ateş duvarlarda hareket eden uzun gölgeler oluşturuyor. Bay Jennings ayağa kalkmaya çalışıyor ama vücudu ağır ve halsiz hissettiriyor. Yabancı, bir saniye bile durmadan hikayesine devam ediyor. Hayaletin kurumuş yaprakların üzerinde nasıl sessizce yürüdüğünü anlatıyor. Adam, hayaletin geceleri yalnız yürüyen insanları takip ettiğini söylüyor. Bay Jennings dikkatle dinliyor çünkü evinin yakınındaki karanlık ormanlardan korkuyor. Dışarıdaki rüzgar aç bir hayvan gibi ulumaya başlıyor. Pencereler sıkıca kapalı olmasına rağmen sandalyesinin arkasında soğuk bir hava hissediyor. Duvardaki her gölge artık bir yüze sahip gibi görünüyor. Hava eski toz ve nemli toprak gibi kokuyor. Yabancının gerçekten bir insan mı yoksa başka bir şey mi olduğunu merak ediyor.",
+      "Yabancı, ateşin yanındaki büyük sandalyeden yavaşça ayağa kalkıyor. Bay Jennings'in beklediğinden çok daha uzun boylu. Uzun paltosu yere değiyor ve hareket ederken yumuşak bir ses çıkarıyor. Pencereye doğru yürüyor ve simsiyah geceye bakıyor. Ormanda kırılan kuru dallar gibi tınlayan bir sesle tekrar konuşuyor. Bay Jennings'e gözle görülemeyen şeylere inanıp inanmadığını soruyor. Bay Jennings başını iki yana sallıyor ama kalbi göğüs kafesine çarpıyor. Misafirinin ince, solgun parmaklarından gözlerini ayıramıyor. Misafir gülmeye başlıyor ama bu mutlu bir ses değil. Odayı korkuyla dolduran keskin, soğuk bir ses. Yanan odunların çıkardığı ses dışında ev tekrar sessizleşiyor.",
+      "Bay Jennings konuşmaya çalışıyor ama kurumuş boğazından hiçbir ses çıkmıyor. Yabancıdan gitmesini istemek istiyor ama cesareti kalmadı. Yabancı arkasına dönüyor ve gözleri artık iki küçük, yeşil fener gibi parlıyor. Bay Jennings'e yaklaşıyor ve odadaki sıcaklık çok hızlı düşüyor. Bay Jennings ahşap masanın kenarlarında kırağı oluştuğunu görüyor. Soğuktan ve derin bir dehşetten titriyor. Misafir eğiliyor ve ev sahibinin kulağına bir sır fısıldıyor. Kelimeleri anlamak imkansız ama bunlar Bay Jennings'i çok yalnız hissettiriyor. Parlak güneşin güvenliğini düşünüyor ama güneş çok uzakta. Yabancı tekrar oturuyor ve bir cevap bekliyor ama oda bir kez daha sessiz.",
+      "Bay Jennings yabancıya kocaman, yorgun gözlerle bakıyor. Adam koltuğunda hiç kımıldamadan duruyor. Yeşil ateş ışığı yabancının yüzünde oyunlar oynuyor, teninin gri bir taş gibi görünmesine neden oluyor. Bay Jennings kapıya koşmak istiyor ama bacakları kurşun gibi ağır geliyor. Misafirinin bu gece neden evine geldiğini merak ediyor. Duvardaki saat yavaş ve tıkırtılı bir ses çıkarıyor. Bu, sessizlikte atan bir kalp gibi geliyor. Yabancı, önündeki boşluğa dik dik bakıyor. Bir kez bile göz kırpmıyor. Oda artık çok dar ve küçük geliyor. Bay Jennings hızlı nefes alıyor çünkü nefesini tutamıyor. Odadaki her şey yanlış hissettiriyor ama o, misafirinin garip ve sessiz gücü tarafından tuzağa düşürülmüş durumda.",
+      "Yabancı elini yavaşça masanın üzerinde gezdiriyor. Tırnakları uzun ve keskin. Bir bardak suya dokunuyor ve içindeki sıvı anında katı bir buza dönüşüyor. Bay Jennings bunu dehşetle izliyor. Bunun normal bir insan olmadığını biliyor. Yardım için bağırmak istiyor ama ses çıkarmaya çok korkuyor. Rüzgar, evin ahşap panjurlarına sertçe vuruyor. İçeri girip onlara zarar vermeye çalışan biri varmış gibi geliyor. Masadaki mumlar titriyor ve sonra tamamen sönüyor. Artık odayı sadece şömineden gelen yeşil ışık aydınlatıyor. Duvarlardaki gölgeler dans etmeye ve kıvrılmaya başlıyor. Odanın köşesinden Bay Jennings'i yakalamaya çalışan karanlık hayaletlere benziyorlar.",
+      "Misafir öne doğru eğiliyor ve gülümsüyor. Dişleri beyaz ve iğne gibi ince. Hikayenin henüz bitmediğini söylüyor. Bay Jennings ayağa kalkmaya çalışıyor ama ağır bir güç onu tekrar koltuğuna doğru itiyor. Sanki tam arkasında biri duruyormuş gibi omzunda soğuk bir temas hissediyor. Kafasını çeviriyor ama sadece boş havayı görüyor. Yabancı tekrar gülüyor, ağır perdeleri sarsan bir ses bu. Bay Jennings'e, hikayenin sonunu duymadan bu evden asla ayrılamayacağını söylüyor. Oda sallanmaya başlıyor ve kitaplar raflardan düşüyor. Toz, havayı yoğun ve gri bir sis gibi dolduruyor. Bay Jennings gözlerini kapatıyor ve dünyanın sonunun gelmesini bekliyor.",
+      "Oda şu an çok sessiz. Bay Jennings gözlerini yavaşça açıyor. Yeşil ateş ışığı hala duvarda ama eskisinden daha zayıf. Yabancıya bakıyor. Misafir aynı yerde oturuyor. Bir heykel gibi görünüyor. Bay Jennings kendini çok zayıf hissediyor. Kalbi göğsüne karşı hızlı hızlı çarpıyor. Bu adamın kim olduğunu ve neden burada olduğunu bilmek istiyor. Yabancı kımıldamıyor ama gözleri odadaki her küçük hareketi takip ediyor. Buradan kaçış yok. Kapı büyüyle kilitlenmiş. Hava, eski toz ve soğuk kış geceleri gibi kokuyor. Bay Jennings konuşmak istiyor ama sesi çıkmıyor. Kendini küçük, karanlık bir kafesteki kuş gibi hissediyor. Misafirin başka bir şey söylemesini bekliyor.",
+      "Yabancı, masadaki büyük ve eski bir kitabı işaret ediyor. Bay Jennings'ten sayfaları yüksek sesle okumasını istiyor. Bay Jennings titreyen elleriyle kitaba dokunuyor. Sayfalar ormandaki derin kar gibi çok soğuk. Kelimeleri okumaya başlıyor. Kitaptaki hikaye yalnız bir hayalet hakkında. Çok zaman önce yolunu kaybeden bir insan hakkında üzücü bir hikaye. Bay Jennings okudukça oda tekrar değişmeye başlıyor. Zemin ayaklarının altında hareket eden su gibi hissettiriyor. Havada şekiller görüyor. Kitaptaki kelimeler parlak, solgun bir ışıkla parlamaya başlıyor. Okumayı bırakmaktan korkuyor çünkü yabancı ona aç, karanlık gözlerle bakıyor. Kendi hayatını kurtarmak için okumaya devam etmeli.",
+      "Kitaptaki hikaye her cümlede daha tuhaf bir hal alıyor. Bay Jennings duvarlardan fısıldayan sesler duyuyor. Bunlar hikayedeki insanların sesleri. Misafir dikkatle dinliyor ve her şeyi hatırlıyormuş gibi başını sallıyor. Bay Jennings pencereler sıkıca kapalı olmasına rağmen odanın içinde soğuk bir rüzgar hissediyor. İyi nefes alamıyor. Evini ve gökyüzündeki güneşi düşünüyor ama bunlar başka bir hayattan kalma bir rüya gibi geliyor. Yabancı aniden ayağa kalkıyor. Duvarlardaki gölgesi kocaman. Uzun kollarını Bay Jennings'e doğru uzatıyor. Saat tıkırtısını durduruyor. Sessizlik çok ağır ve derin. Bay Jennings hikayenin bir sonraki kısmının kendisi için çok kötü olacağını biliyor.",
+      "Oda şu an buz gibi. Bay Jennings yabancıya bakıyor. Adam çok uzun ve teni ağır bir bulut gibi gri. Yerde gölgesi yok. Bay Jennings ayağa kalkmaya çalışıyor ama bacakları zayıf. Sandalyesine geri düşüyor. Misafir yaklaşıyor. Yürümüyor; havada koyu bir duman gibi ilerliyor. Bay Jennings kalbinde derin bir korku hissediyor. Zamanının tükenmekte olduğunu biliyor. Sessizlik yüksek ve ağır. Misafir, iki soğuk ve siyah taş gibi olan gözlerle Bay Jennings'e dik dik bakıyor. O gözlerde neşe yok, sadece hiç bitmeyen bir hikayeye duyulan açlık var. Duvarlardaki ışık titriyor ve odanın karanlık köşelerine doğru sönmeye başlıyor.",
+      "Yabancı konuşmak için ağzını açıyor ama ses çıkmıyor. Bunun yerine odanın içinde soğuk bir rüzgar esiyor. Bay Jennings havanın ona doğru baskı yaptığını hissediyor. Yerinde kalabilmek için elleriyle masayı tutuyor. Kitap masanın üzerinde açık duruyor. Sayfaları kendiliğinden dönüyor. Uçup giden bir kuş gibi hızla çevriliyorlar. Kağıdın üzerindeki kelimeler hareket etmeye başlıyor. Beyaz yüzeyde sürünen küçük, siyah böcekler gibi görünüyorlar. Bay Jennings çok yorgun ama uyuyamıyor. Kitabı izlemek zorunda. Hikaye ruhu için bir tuzak. Yardım çağırmak istiyor ama ağzı donmuş bir şekilde kapalı. Bu garip evde, misafirin ona ait olan bir şeyi sonsuza dek almasını bekleyen bir mahkum.",
+      "Misafir kitabın son sayfasını işaret ediyor. Sayfa boş. Hiç kelime yok, sadece derin, siyah bir deliğin karanlık çizimi var. Bay Jennings çizime bakıyor. Kağıdın içine düşüyormuş gibi hissediyor. Odanın duvarları etrafında dönmeye başlıyor. Geçmiş hayatının resimlerini görüyor. Arkadaşlarını ve gençliğinin gün ışığını görüyor. Her şey grileşiyor ve inceliyor. Yabancı ilk kez gülümsüyor. Bu korkutucu, keskin bir gülümseme. Bay Jennings'in göğsüne dokunmak için elini ileri uzatıyor. Dokunuş, çıplak ten üzerindeki buz gibi. Bay Jennings gözlerini sımsıkı kapatıyor. Son anın gelmesini bekliyor. Oda kararıyor ve dünya kalın, ağır kadifeden bir perdenin ardında kayboluyor.",
+      "Oda artık sessiz. Yabancının soğuk dokunuşu duruyor. Bay Jennings gözlerini yavaşça açıyor. Artık sandalyede değil. Karanlık ve boş bir alanın ortasında duruyor. Mobilya yok ve ışık yok. Ev gitmiş. Kitap gitmiş. Kendini rüzgarda bir tüy gibi çok hafif hissediyor. Etrafına bakıyor ama gri sisten başka bir şey görmüyor. Misafirin yüzünü hatırlıyor. O yüz artık her yerde. Havada ve yerde. Bağırmaya çalışıyor ama sesi çıkmıyor. Korku hala kalbinde ama sessiz. Zamanı olmayan bir yerde yapayalnız. Sonu bekliyor ama son asla gelmiyor.",
+      "Aniden uzakta küçük bir ışık beliriyor. Bu güneşin veya bir lambanın ışığı değil. Soluk, mavi bir parıltı. Bay Jennings ona doğru yürüyor. Bacakları uzun yıllar sonra ilk defa güçlü hissediyor. Işığa ulaşıyor ve bir yol görüyor. Yol, hatıralarının karanlık ormanına gidiyor. Yürüyor ve evi tekrar görüyor. Eski ve kırık görünüyor. Pencereler açık ağızlar gibi. Bahçe ölü çiçeklerle dolu. Şimdi anlıyor. O hikayenin bir parçası. Sandalyede oturan adam o değil. O, evde kalan gölge. O, asla gitmeyen misafir. O, artık karanlık tarihin bir parçası.",
+      "Yabancıyı aramak için arkasına dönüyor ama yabancı orada değil. Eski evin duvarında sadece bir ayna var. Bay Jennings camın içine bakıyor. Kendi yüzünü görmüyor. Soğuk, siyah gözlü gri, uzun adamı görüyor. Kendi yüzüne dokunuyor ve soğuk, gri teni hissediyor. Gerçeği fark ediyor. Hikaye onun hayatını almadı. Hikaye onun hayatı oldu. O, yeni ziyaretçileri bekleyen adam. O, odadaki açlık. O keskin, korkutucu gülümsemeyi yapıyor. Ev sessiz ama o hazır. Yeni bir misafirin kitabı açmasını bekliyor. Döngü tekrar başlıyor ve karanlık oda içine hapsetmek için yeni bir ruh bekliyor."
+    ],
+    words: {
+      "shadow": "gölge",
+      "guest": "misafir",
+      "strange": "garip",
+      "silent": "sessiz",
+      "pale": "solgun",
+      "knock": "kapı çalma",
+      "stranger": "yabancı",
+      "traveler": "yolcu",
+      "ghost": "hayalet",
+      "polite": "nazik",
+      "rest": "dinlenme",
+      "fear": "korku",
+      "terror": "dehşet",
+      "whisper": "fısıldamak",
+      "lead": "kurşun",
+      "stare": "dik dik bakmak",
+      "trap": "tuzak",
+      "shutter": "panjur",
+      "flicker": "titremek",
+      "needle": "iğne",
+      "statue": "heykel",
+      "cage": "kafes",
+      "shaking": "titreyen",
+      "glow": "parlamak",
+      "freeze": "donmak",
+      "surface": "yüzey",
+      "prisoner": "mahkum",
+      "curtain": "perde",
+      "empty": "boş",
+      "memory": "anı",
+      "mirror": "ayna",
+      "truth": "gerçek",
+      "cycle": "döngü"
+    }
+  }
+,
+  {
+    id: 'horror_midnight_visitor',
+    title: "The Midnight Visitor",
+    author: 'F. Marion Crawford',
+    level: 'A1',
+    coverUrl: '/covers/horror_midnight_visitor.webp',
+    en: [
+      "Auser is a young man who likes stories about ghosts. He wants to find a room in a quiet house in Paris. He looks for a place where something strange happened before. He finds an old building on a dark street. The building looks very cold and sad. The windows are like big, black eyes looking at the street. Auser talks to the man at the door. He asks if he can stay in the empty room on the top floor. The man is old and his face is very white. He looks at Auser with fear in his eyes. He tells Auser that the room is bad and nobody wants to sleep there. Auser is very brave and he does not care about the stories. He gives the man some money and takes the heavy iron key to the top room.",
+      "The room is at the very top of the old house. It is a long walk up the wooden stairs. The stairs make loud noises when he steps on them. Auser opens the heavy door and looks inside. The room is very dark and there is a lot of dust everywhere. There is an old bed in the corner and one small wooden chair. The air smells like wet leaves and old paper. Auser puts his bag on the floor and lights a small candle. The light is weak and it makes long shadows on the walls. He feels like someone is watching him from the dark corners of the room. He tries to tell himself that it is just his imagination. He sits on the chair and waits for the night to arrive slowly.",
+      "The night is very quiet in the big city. Auser sits in the dark and listens to the sound of the wind. The wind hits the glass of the window like a person asking to come inside. He feels a cold wind on his neck even though the window is closed. He is not afraid yet, but he is very careful. He knows that this place has a secret history. Many years ago, a man died in this very room in a strange way. People say he never really left. Auser wants to know the truth about the ghost. He keeps his candle burning bright and looks at the door. He waits for the midnight hour because he knows that is when the magic starts. His heart beats fast because he is ready for the visitor.",
+      "The clock on the wall begins to make a deep sound. It is now twelve o'clock. Auser sits very still in his wooden chair. The air in the room is getting colder every second. He wraps his thin coat tightly around his body. The candle flame dances and flickers as if an invisible hand is touching it. He watches the shadow of the bed grow longer on the dusty floor. He feels a strange weight in the air, a heavy feeling that makes it hard to breathe. He does not move, but his eyes scan every corner of the room. He knows that something is changing. The silence of the city is gone, replaced by a low, humming sound that feels like a whisper from the past. He holds his breath, waiting for the door to open.",
+      "Suddenly, the heavy iron handle of the door begins to turn very slowly. It makes a dry, scratching noise that echoes in the quiet room. Auser watches with wide eyes. He sees the thick wood of the door move just a tiny bit. There is no one on the other side that he can see, yet the door is moving. He thinks about the old man downstairs and the sad stories people tell about this room. A shiver runs down his spine, but he stays in his seat. The door opens wider, inch by inch, revealing the dark space of the hallway outside. A cold breeze blows into the room, smelling strongly of old, wet stone and deep earth. It is the smell of a place where light has not been for many years.",
+      "A tall shadow appears in the doorway. It does not look like a normal person. It is dark and shapeless, moving with a strange, liquid motion. Auser tries to speak, but his voice is stuck in his throat. The figure stops in the middle of the room. It does not have a face that he can see, only a deep sense of sorrow that fills the space around them. The candle flame turns blue and then almost dies out completely. Auser feels a hand that is colder than ice brush against his cold shoulder. He wants to run, but his feet feel as heavy as lead. He is finally meeting the visitor from the stories. The room feels full of ghosts, and Auser realizes that the truth is much scarier than his imagination.",
+      "The dark figure stands before Auser in the middle of the room. It does not speak with a mouth, but Auser hears a voice inside his own head. The voice is very soft and sounds like the wind blowing through dry leaves. It tells a sad story about a life that was lost many years ago in this very house. Auser feels very afraid, but he is also curious about the visitor. He looks at the shadow and sees that it is wearing old clothes from a long time ago. The spirit seems to be searching for something that it lost in the past. It looks around the room with sad eyes that are hard to see. Auser feels that the visitor is lonely and wants to talk to someone after being alone for such a long time.",
+      "Auser moves his chair a little bit, and the wooden floor makes a loud noise in the silent room. The visitor looks at him suddenly. Auser stops moving and holds his breath because he does not want to make the spirit angry. The cold in the room becomes much stronger now. It feels like winter is inside the small bedroom. Auser can see his own breath in the air as a white cloud. He looks at the candle on the table. The flame is very small now and looks like a tiny blue star in the dark night. He knows that the visitor is very strong and powerful. He remembers the old man downstairs and feels bad for him. The spirit is waiting for Auser to do something important for it today.",
+      "The figure walks toward the old desk by the window. It moves like a cloud, making no sound on the dusty floor. Auser watches closely because he wants to know what the visitor wants. The spirit touches a heavy book on the desk with a hand that looks like grey smoke. Auser understands that this book is very important to the person who lived here before. The room starts to shake a little bit, and the windows rattle in their frames. Auser is very scared, but he knows he must stay to help the visitor find peace. He reaches out his hand toward the book. He feels a sudden shock of ice when his fingers touch the cold air around the spirit. The mystery of the house is finally starting to show its hidden secrets to him.",
+      "Auser holds the book in his hands. It is very heavy and covered with thick dust from many years of silence. The spirit stands very close to him now. Auser can see the face of the visitor more clearly in the small light of the blue flame. It is a man with white hair and a sad, pale face. He looks at Auser with eyes that shine like two cold stones. Auser feels his heart beating very fast against his chest. He wants to run away from this room, but his feet do not move. The spirit is waiting for Auser to open the book and read the words inside. This is the only way to help the visitor find his rest. Auser takes a deep breath and opens the old book very slowly.",
+      "The pages of the book are yellow and fragile like dry skin. Auser looks at the letters on the page, but he does not know these words. They are written in a language from a long time ago. He looks up at the visitor and sees a small smile on the man's face. The spirit points a thin finger at a long sentence near the middle of the book. Auser starts to read the words out loud, but his voice is shaking with fear. Every word he speaks sounds strange and deep in the quiet room. The candle flame jumps and turns from blue to a bright red color. Auser feels a warm wind blowing around him, even though all the windows are shut tight against the cold night air outside.",
+      "As Auser continues to read, the walls of the room seem to fade away into the dark shadows. He sees images of the past appearing in the air around him. He sees a beautiful garden with flowers that smell like honey and sun. He sees a happy family eating food at a big table in this very house. The sadness of the visitor starts to go away because he remembers these good times again. Auser feels the spirit getting lighter and less scary. The weight of the secret is leaving the room. The visitor looks at Auser one last time and bows his head in thanks. Auser is very tired, but he feels happy because he did something good. The spirit begins to vanish slowly into the dark, leaving Auser alone in the silence.",
+      "Auser stood alone in the quiet room. The candle was now small and the wax dripped onto the old table. He felt very tired after the long night of mysteries. The air in the room was cold, but the heavy feeling was gone. Auser looked at the place where the visitor stood only a moment ago. He remembered the sad face and the cold eyes that were now full of peace. The room felt different, as if the house itself was finally sleeping after many long years of sorrow. Auser touched the book with his shaking hand. It was still there, a simple object of paper and ink. He closed it softly, making sure not to tear the thin pages. The silence of the old house was deep and heavy, yet it felt much kinder than before.",
+      "He walked toward the door, wanting to leave the room and find the light of the morning. His legs felt weak, and his mind was full of thoughts about what he had just seen. He knew that this night would always be a part of his life. The dark corners of the room no longer scared him as they once did. He looked back one last time at the blue flame that now went out. In the sudden darkness, he saw only the faint outlines of the furniture. He did not run, but walked with slow, steady steps. He reached for the handle of the door and turned it. The door moved easily, and he stepped out into the hallway where the air felt fresh and cool against his warm skin.",
+      "Outside the room, the house was silent and still. Auser felt like a traveler who had come home after a very long journey in a strange land. He went down the stairs, his footsteps echoing in the large hall. He saw the first light of the sun coming through the glass of the front door. It was a soft, golden color that promised a new start. He felt happy that he helped the visitor find his long rest. The mystery of the Midnight Visitor was now a secret kept only by him and the ancient stones of the house. He opened the front door and walked out into the garden. The flowers were waking up, and the birds began to sing. Auser took a deep breath of the morning air, knowing everything was right again.",
+      "Auser walked slowly in the garden as the sun climbed higher in the sky. The grass was wet with the morning dew and the air smelled like fresh earth. He felt a deep sense of peace that he had never known before. The long night of mystery was finally over. He looked back at the house, which now seemed like a normal place to live. The walls were no longer scary and the windows looked bright under the golden sun. He thought about the man who visited him during the night. The visitor was a tired soul looking for rest, and now he was free. Auser felt glad that he played a small part in this secret story. The heavy burden on his heart was gone, replaced by a quiet joy that made him smile softly.",
+      "He sat on a small stone bench near the old oak tree. The garden was full of colors and life. Birds flew from branch to branch, singing songs of the new day. Auser closed his eyes for a moment to remember every detail of the strange visitor. He realized that the world is a mysterious place with many things we cannot explain. He did not feel afraid anymore. Instead, he felt a strong connection to the history of the old house. The midnight visitor had left his mark, but it was a gentle mark of peace. Auser was ready to return to his normal life. He stood up and brushed the dirt from his clothes. He knew that the memory of this night would stay with him forever like a precious treasure.",
+      "The house stood proud and silent behind him as he walked to the front gate. He touched the iron bars and looked at the path that led away from the property. He took one final look at the house and whispered a quiet goodbye to the visitor who was no longer there. The journey had been difficult and full of fear, but it was worth the effort. Auser started walking toward the town, his steps light and steady on the ground. The morning wind felt cool against his face. He was a different man than he was before the night began. The secrets of the past were now safe, and he felt free to embrace the future. He smiled, walked forward, and never looked back at the house again.",
+      "Auser walked along the dusty road that led him far away from the old house. The town was waking up and people were starting their busy days. He saw a baker selling bread and heard the sound of carts moving on the stone streets. Nobody knew about the ghost or the strange things that happened during the dark night. He kept the secret inside his heart because it felt like a holy promise. He walked with a new rhythm in his legs and a feeling of strength in his tired arms. The fear was completely gone and he only felt the warmth of the sun on his skin. It was a beautiful day to be alive and free. He looked ahead to the horizon where the blue sky met the green hills of his quiet hometown.",
+      "He remembered the pale face of the visitor one last time before pushing the memory away. The ghost was truly gone and the house was just a simple building of wood and stone again. He thought about his soft bed and his warm tea waiting for him in his own home. The simple pleasures of life were now more important than ever before. He understood that ghosts often need a friend to listen to their sad stories before they can finally leave. He was happy to be the person who gave the visitor peace and quiet rest. Life continued in its usual way while he moved toward the familiar streets he knew so well. Every step he took brought him closer to the life he loved and the people who were waiting for him.",
+      "Finally he arrived at his house and opened the old wooden door with a smile. The garden flowers were bright and the air smelled like home. He went inside and sat in his favorite chair by the window. The house was calm and the silence was no longer heavy or frightening to him. He realized that the midnight visitor was just a part of the long story of the world. He decided to write everything down in a small notebook to remember the strange night. He felt calm and his mind was clear as he watched the sunset from his own porch. The mystery was solved and the visitor was now a part of history. He closed his eyes and fell into a deep and happy sleep knowing that all was well in his world."
+    ],
+    tr: [
+      "Auser, hayalet hikayelerini seven genç bir adamdır. Paris'teki sessiz bir evde oda bulmak ister. Daha önce tuhaf bir şeylerin yaşandığı bir yer arar. Karanlık bir sokakta eski bir bina bulur. Bina çok soğuk ve hüzünlü görünmektedir. Pencereler sokağa bakan büyük, siyah gözler gibidir. Auser kapıdaki adamla konuşur. En üst kattaki boş odada kalıp kalamayacağını sorar. Adam yaşlıdır ve yüzü bembeyazdır. Auser'e gözlerindeki korkuyla bakar. Auser'e odanın kötü olduğunu ve kimsenin orada uyumak istemediğini söyler. Auser çok cesurdur ve hikayeleri umursamaz. Adama biraz para verir ve en üst kattaki odanın ağır demir anahtarını alır.",
+      "Oda eski evin en tepesindedir. Ahşap merdivenlerden uzun bir yürüyüş gerekir. Auser üzerine bastığında merdivenler yüksek sesler çıkarır. Auser ağır kapıyı açar ve içeri bakar. Oda çok karanlıktır ve her yer toz içindedir. Köşede eski bir yatak ve bir tane küçük ahşap sandalye vardır. Hava, ıslak yapraklar ve eski kağıt gibi kokmaktadır. Auser çantasını yere koyar ve küçük bir mum yakar. Işık zayıftır ve duvarlarda uzun gölgeler oluşturur. Odanın karanlık köşelerinden birinin onu izlediğini hisseder. Bunun sadece kendi hayal gücü olduğunu kendine söylemeye çalışır. Sandalyeye oturur ve gecenin yavaşça gelmesini bekler.",
+      "Gece büyük şehirde çok sessizdir. Auser karanlıkta oturur ve rüzgarın sesini dinler. Rüzgar, içeri girmek isteyen biri gibi pencerenin camına vurur. Pencere kapalı olsa bile ensesinde soğuk bir rüzgar hisseder. Henüz korkmaz ama çok dikkatlidir. Bu yerin gizli bir geçmişi olduğunu bilir. Yıllar önce bir adam bu odada tuhaf bir şekilde ölmüştür. İnsanlar onun asla gerçekten gitmediğini söylerler. Auser hayalet hakkındaki gerçeği öğrenmek ister. Mumunu parlak bir şekilde yakmaya devam eder ve kapıya bakar. Gece yarısı saatini bekler çünkü büyünün o zaman başladığını bilir. Kalbi hızlı çarpar çünkü ziyaretçiye hazırdır.",
+      "Duvardaki saat derin bir ses çıkarmaya başlar. Saat tam on ikidir. Auser ahşap sandalyesinde çok hareketsiz oturur. Odadaki hava her saniye daha da soğumaktadır. İnce paltosunu vücuduna sıkıca sarar. Mum alevi, görünmez bir el dokunuyormuş gibi dans eder ve titrer. Yatağın gölgesinin tozlu zeminde uzadığını izler. Havada garip bir ağırlık, nefes almayı zorlaştıran ağır bir his hisseder. Hareket etmez ama gözleri odanın her köşesini tarar. Bir şeylerin değiştiğini bilir. Şehrin sessizliği gitmiş, yerini geçmişten gelen bir fısıltı gibi hissettiren alçak, uğultulu bir sese bırakmıştır. Kapının açılmasını bekleyerek nefesini tutar.",
+      "Aniden, kapının ağır demir kolu çok yavaş dönmeye başlar. Sessiz odada yankılanan kuru, tırmalayıcı bir ses çıkarır. Auser geniş gözlerle izler. Kapının kalın ahşabının çok az hareket ettiğini görür. Diğer tarafta görebileceği kimse yoktur, yine de kapı hareket etmektedir. Aşağıdaki yaşlı adamı ve insanların bu oda hakkında anlattığı üzücü hikayeleri düşünür. Sırtından aşağı bir ürperti iner ama koltuğunda kalır. Kapı santim santim daha fazla açılır ve dışarıdaki koridorun karanlık boşluğunu ortaya çıkarır. Odaya soğuk bir esinti dolar; yoğun bir şekilde eski, ıslak taş ve derin toprak kokar. Bu, ışığın uzun yıllardır girmediği bir yerin kokusudur.",
+      "Kapıda uzun bir gölge belirir. Normal bir insana benzemez. Karanlık ve biçimsizdir, garip, sıvı bir hareketle ilerler. Auser konuşmaya çalışır ama sesi boğazında düğümlenir. Figür odanın ortasında durur. Görebileceği bir yüzü yoktur, sadece çevrelerindeki alanı dolduran derin bir hüzün duygusu vardır. Mum alevi maviye döner ve sonra neredeyse tamamen söner. Auser, buzdan daha soğuk bir elin soğuk omzuna değdiğini hisseder. Kaçmak ister ama ayakları kurşun gibi ağırlaşır. Sonunda hikayelerdeki ziyaretçiyle karşılaşmaktadır. Oda hayaletlerle dolu gibi hissettirir ve Auser, gerçeğin hayal gücünden çok daha korkutucu olduğunu fark eder.",
+      "Karanlık figür odanın ortasında Auser'in önünde duruyor. Ağzıyla konuşmuyor ama Auser kendi kafasının içinde bir ses duyuyor. Ses çok kısık ve kuru yaprakların arasından esen rüzgar gibi geliyor. Bu evde yıllar önce kaybedilen bir hayat hakkında hüzünlü bir hikaye anlatıyor. Auser çok korkuyor ama aynı zamanda ziyaretçiyi merak ediyor. Gölgeye bakıyor ve uzun zaman öncesinden kalma eski kıyafetler giydiğini görüyor. Ruh, geçmişte kaybettiği bir şeyi arıyor gibi görünüyor. Odaya, görülmesi zor olan hüzünlü gözlerle bakıyor. Auser, ziyaretçinin yalnız olduğunu ve uzun süredir yalnız kaldıktan sonra biriyle konuşmak istediğini hissediyor.",
+      "Auser sandalyesini biraz hareket ettiriyor ve ahşap zemin sessiz odada yüksek bir ses çıkarıyor. Ziyaretçi aniden ona bakıyor. Auser hareket etmeyi bırakıyor ve nefesini tutuyor çünkü ruhu kızdırmak istemiyor. Odadaki soğuk artık çok daha güçlü. Küçük yatak odasının içi kış gibi hissettiriyor. Auser kendi nefesini havada beyaz bir bulut olarak görebiliyor. Masanın üzerindeki muma bakıyor. Alev artık çok küçük ve karanlık gecede küçük mavi bir yıldız gibi görünüyor. Ziyaretçinin çok güçlü ve kudretli olduğunu biliyor. Aşağıdaki yaşlı adamı hatırlıyor ve onun için üzülüyor. Ruh, bugün kendisi için önemli bir şey yapmasını bekliyor.",
+      "Figür pencerenin yanındaki eski masaya doğru yürüyor. Bir bulut gibi hareket ediyor, tozlu zeminde hiç ses çıkarmıyor. Auser, ziyaretçinin ne istediğini bilmek istediği için dikkatle izliyor. Ruh, gri duman gibi görünen bir elle masanın üzerindeki ağır bir kitaba dokunuyor. Auser, bu kitabın burada daha önce yaşamış olan kişi için çok önemli olduğunu anlıyor. Oda biraz sallanmaya başlıyor ve pencereler çerçevelerinde sarsılıyor. Auser çok korkuyor ama ziyaretçinin huzur bulmasına yardım etmek için kalması gerektiğini biliyor. Elini kitaba doğru uzatıyor. Parmakları ruhun etrafındaki soğuk havaya değdiğinde aniden bir buz şoku hissediyor. Evin gizemi sonunda saklı sırlarını ona göstermeye başlıyor.",
+      "Auser kitabı ellerinde tutuyor. Kitap çok ağır ve uzun yıllardır süren sessizliğin kalın tozuyla kaplı. Ruh artık ona çok yakın duruyor. Auser, mavi alevin küçük ışığında ziyaretçinin yüzünü daha net görebiliyor. O, beyaz saçlı ve hüzünlü, solgun bir yüze sahip bir adam. Auser'e iki soğuk taş gibi parlayan gözlerle bakıyor. Auser kalbinin göğsüne karşı çok hızlı çarptığını hissediyor. Bu odadan kaçmak istiyor ama ayakları hareket etmiyor. Ruh, Auser'in kitabı açmasını ve içindeki kelimeleri okumasını bekliyor. Ziyaretçinin huzurunu bulmasına yardım etmenin tek yolu bu. Auser derin bir nefes alıyor ve eski kitabı çok yavaşça açıyor.",
+      "Kitabın sayfaları sarı ve kuru bir deri gibi kırılgan. Auser sayfadaki harflere bakıyor ancak bu kelimeleri bilmiyor. Çok uzun zaman öncesine ait bir dilde yazılmışlar. Ziyaretçiye bakıyor ve adamın yüzünde küçük bir gülümseme görüyor. Ruh, ince parmağıyla kitabın ortasına yakın uzun bir cümleyi işaret ediyor. Auser kelimeleri yüksek sesle okumaya başlıyor ancak sesi korkudan titriyor. Söylediği her kelime sessiz odada tuhaf ve derin yankılanıyor. Mum alevi zıplıyor ve maviden parlak bir kırmızı renge dönüyor. Auser, dışarıdaki soğuk gece havasına karşı tüm pencereler sıkıca kapalı olmasına rağmen, etrafında ılık bir rüzgarın estiğini hissediyor.",
+      "Auser okumaya devam ederken, odanın duvarları karanlık gölgelerin içinde kayboluyor gibi görünüyor. Etrafındaki havada geçmişin görüntülerini görmeye başlıyor. Bal ve güneş gibi kokan çiçeklerin olduğu güzel bir bahçe görüyor. Bu evin içinde büyük bir masada yemek yiyen mutlu bir aile görüyor. Ziyaretçinin hüznü dağılmaya başlıyor çünkü bu güzel zamanları tekrar hatırlıyor. Auser ruhun hafiflediğini ve daha az korkutucu hale geldiğini hissediyor. Sırrın ağırlığı odadan ayrılıyor. Ziyaretçi son bir kez Auser'e bakıyor ve teşekkür ederek başını eğiyor. Auser çok yorgun ama iyi bir şey yaptığı için mutlu hissediyor. Ruh, Auser'i sessizlik içinde yalnız bırakarak yavaşça karanlığın içinde yok olmaya başlıyor.",
+      "Auser sessiz odada yalnız başına durdu. Mum artık küçüktü ve balmumu eski masanın üzerine damlıyordu. Uzun süren gizemli gecenin ardından çok yorgun hissediyordu. Odadaki hava soğuktu ama o ağır his yok olmuştu. Auser, ziyaretçinin sadece bir an önce durduğu yere baktı. Hüzünlü yüzü ve artık huzur dolu olan soğuk gözlerini hatırladı. Oda, sanki evin kendisi yıllar süren kederden sonra nihayet uyuyormuş gibi farklı hissettiriyordu. Auser titreyen eliyle kitaba dokundu. Kitap hala oradaydı, kağıt ve mürekkepten oluşan basit bir nesneydi. İnce sayfalara zarar vermemeye dikkat ederek kitabı yavaşça kapattı. Eski evin sessizliği derin ve ağırdı ama eskisinden çok daha nazik hissettiriyordu.",
+      "Odanın dışına çıkmak ve sabahın ışığını bulmak isteyerek kapıya doğru yürüdü. Bacakları zayıf hissediyordu ve zihni az önce gördüğü şeylerle ilgili düşüncelerle doluydu. Bu gecenin hayatının bir parçası olacağını biliyordu. Odanın karanlık köşeleri artık eskiden olduğu gibi onu korkutmuyordu. Sönen mavi aleve son bir kez baktı. Ani karanlıkta, mobilyaların sadece silik hatlarını görebiliyordu. Koşmadı, yavaş ve dengeli adımlarla yürüdü. Kapının koluna uzandı ve çevirdi. Kapı kolayca açıldı ve havanın sıcak tenine karşı taze ve serin hissettirdiği koridora adım attı.",
+      "Odanın dışında ev sessiz ve hareketsizdi. Auser, yabancı bir diyarda yapılan çok uzun bir yolculuktan sonra eve dönmüş bir gezgin gibi hissediyordu. Merdivenlerden aşağı indi, adımları büyük salonda yankılanıyordu. Ön kapının camından içeri giren güneşin ilk ışığını gördü. Bu, yeni bir başlangıç vadeden yumuşak, altın rengi bir ışıktı. Ziyaretçinin sonsuz istirahatini bulmasına yardım ettiği için mutluydu. Gece Yarısı Ziyaretçisi'nin gizemi artık sadece kendisi ve evin antik taşları tarafından saklanan bir sırdı. Ön kapıyı açtı ve bahçeye çıktı. Çiçekler uyanıyordu ve kuşlar şarkı söylemeye başladı. Auser, her şeyin yeniden yolunda olduğunu bilerek sabah havasını derin bir nefesle içine çekti.",
+      "Auser, güneş gökyüzünde yükselirken bahçede yavaşça yürüdü. Çimenler sabah çiyinden ıslaktı ve hava taze toprak gibi kokuyordu. Daha önce hiç bilmediği derin bir huzur duygusu hissetti. Gizemli uzun gece nihayet sona ermişti. Artık yaşaması için normal bir yermiş gibi görünen eve geri baktı. Duvarlar artık korkutucu değildi ve pencereler altın rengi güneşin altında parlak görünüyordu. Gece boyunca kendisini ziyaret eden adamı düşündü. Ziyaretçi huzur arayan yorgun bir ruhtu ve artık özgürdü. Auser, bu gizli hikayede küçük bir rol oynadığı için sevindi. Kalbindeki ağır yük gitmişti, yerini onu hafifçe gülümseten sessiz bir neşe almıştı.",
+      "Yaşlı meşe ağacının yanındaki küçük bir taş banka oturdu. Bahçe renkler ve yaşamla doluydu. Kuşlar daldan dala uçarak yeni günün şarkılarını söylüyordu. Auser, garip ziyaretçinin her detayını hatırlamak için gözlerini bir anlığına kapattı. Dünyanın, açıklayamayacağımız birçok şeye sahip gizemli bir yer olduğunu fark etti. Artık korkmuyordu. Bunun yerine, eski evin tarihine karşı güçlü bir bağ hissetti. Gece yarısı ziyaretçisi izini bırakmıştı ama bu huzurun nazik bir iziydi. Auser normal hayatına dönmeye hazırdı. Ayağa kalktı ve kıyafetlerindeki tozu silkeledi. Bu gecenin anısının değerli bir hazine gibi sonsuza dek onunla kalacağını biliyordu.",
+      "Ön kapıya doğru yürürken ev arkasında gururlu ve sessiz duruyordu. Demir parmaklıklara dokundu ve mülkten uzaklaşan yola baktı. Eve son bir kez baktı ve artık orada olmayan ziyaretçiye sessizce veda etti. Yolculuk zor ve korku doluydu ama gösterilen çabaya değmişti. Auser, adımları hafif ve yere sağlam basarak kasabaya doğru yürümeye başladı. Sabah rüzgarı yüzünde serin bir his bıraktı. O, gece başlamadan önceki adamdan farklı biriydi. Geçmişin sırları artık güvendeydi ve geleceği kucaklamakta özgür hissetti. Gülümsedi, ileriye doğru yürüdü ve bir daha arkasına bakmadı.",
+      "Auser, onu eski evden uzağa götüren tozlu yol boyunca yürüdü. Kasaba uyanıyordu ve insanlar yoğun günlerine başlıyorlardı. Fırıncıdan ekmek alanları gördü ve taş sokaklarda hareket eden arabaların sesini duydu. Hiç kimse hayaletten veya karanlık gece boyunca yaşanan tuhaf şeylerden haberdar değildi. Sırrı kalbinin içinde sakladı çünkü bu kutsal bir söz gibi hissettiriyordu. Bacaklarında yeni bir ritim ve yorgun kollarında bir güç duygusuyla yürüdü. Korku tamamen gitmişti ve teninde sadece güneşin sıcaklığını hissediyordu. Yaşamak ve özgür olmak için güzel bir gündü. Mavi gökyüzünün sessiz memleketinin yeşil tepeleriyle buluştuğu ufka doğru baktı.",
+      "Ziyaretçinin solgun yüzünü hafızasından atmadan önce son bir kez hatırladı. Hayalet gerçekten gitmişti ve ev tekrar sadece ahşap ve taştan yapılmış basit bir binaydı. Kendi evinde onu bekleyen yumuşak yatağını ve sıcak çayını düşündü. Hayatın basit zevkleri artık her zamankinden daha önemliydi. Hayaletlerin, sonunda gidebilmeleri için üzücü hikayelerini dinleyecek bir dosta ihtiyaç duyduklarını anladı. Ziyaretçiye huzur ve sessiz bir dinlenme veren kişi olduğu için mutluydu. O çok iyi bildiği tanıdık sokaklara doğru ilerlerken hayat her zamanki gibi devam ediyordu. Attığı her adım onu sevdiği hayata ve onu bekleyen insanlara daha da yaklaştırdı.",
+      "Sonunda evine ulaştı ve eski ahşap kapıyı bir gülümsemeyle açtı. Bahçe çiçekleri parlaktı ve hava ev gibi kokuyordu. İçeri girdi ve pencerenin yanındaki en sevdiği koltuğa oturdu. Ev sakindi ve sessizlik artık onun için ağır veya korkutucu değildi. Gece yarısı ziyaretçisinin dünyanın uzun hikayesinin sadece bir parçası olduğunu fark etti. Tuhaf geceyi hatırlamak için her şeyi küçük bir deftere yazmaya karar verdi. Kendi verandasından gün batımını izlerken sakinleşti ve zihni berraklaştı. Gizem çözülmüştü ve ziyaretçi artık tarihin bir parçasıydı. Gözlerini kapattı ve dünyasında her şeyin yolunda olduğunu bilerek derin ve mutlu bir uykuya daldı."
+    ],
+    words: {
+      "ghost": "hayalet",
+      "stairs": "merdiven",
+      "shadow": "gölge",
+      "candle": "mum",
+      "imagination": "hayal gücü",
+      "visitor": "ziyaretçi",
+      "flicker": "titremek",
+      "scratching": "tırmalayıcı",
+      "echo": "yankılanmak",
+      "breeze": "esinti",
+      "sorrow": "keder",
+      "figure": "figür",
+      "spirit": "ruh",
+      "breathe": "nefes almak",
+      "powerful": "güçlü",
+      "rattle": "tıkırdamak",
+      "secret": "sır",
+      "fragile": "kırılgan",
+      "dust": "toz",
+      "pale": "solgun",
+      "sentence": "cümle",
+      "fade": "solmak/silinmek",
+      "vanish": "yok olmak",
+      "wax": "balmumu",
+      "traveler": "gezgin",
+      "handle": "kapı kolu",
+      "ancient": "antik",
+      "garden": "bahçe",
+      "peace": "huzur",
+      "treasure": "hazine",
+      "memory": "anı",
+      "mystery": "gizem",
+      "ground": "yer",
+      "dusty": "tozlu",
+      "rhythm": "ritim",
+      "horizon": "ufuk",
+      "pleasure": "zevk",
+      "frightening": "korkutucu",
+      "porch": "veranda"
+    }
+  }
+,
+  {
+    id: 'horror_secret_door',
+    title: "The Secret Door",
+    author: 'Ann Radcliffe',
+    level: 'A1',
+    coverUrl: '/covers/horror_secret_door.webp',
+    en: [
+      "The old castle stood high on the dark mountain. It was a very big building with many grey stone walls. The wind blew hard around the tall towers every night. Inside, the rooms were cold and very quiet. Emily lived in this house with her father. She was a young girl with kind eyes and a soft voice. She liked to look out of her small window at the trees below. The forest was thick and full of shadows. Emily felt a little bit afraid because the house was so silent. She walked along the long halls every day. She looked at the old paintings on the walls. The faces in the pictures were sad and stern. The history of the castle was a mystery to her. She wanted to know why her father chose to live here in this lonely place.",
+      "One rainy evening, the sky turned a deep black. The thunder made a loud noise above the heavy stone roof. Emily sat in the large library near the warm fire. Her father came into the room with a serious face. He looked at her and spoke in a very low voice. He told her that he must go away on a long trip. He needed to visit a distant city for his work. Emily felt lonely when she heard this news. She did not want to stay in the castle all alone. The shadows grew longer on the wooden floor as the sun went down. The air felt heavy and strange. She looked at her father and felt very worried about the future. She hoped that he would return to her soon after his long work ended.",
+      "Her father packed his bags and left early the next morning. Emily stood at the front gate and watched him go away. She felt small under the tall, dark walls of her home. The house felt even bigger than it was before. She walked back inside and locked the big door with a heavy iron key. Everything was silent except for the sound of her own steps on the cold stone. She went to the kitchen and made some hot tea. She tried to read a book, but her mind was not on the pages. She thought about the strange stories people told about this old place. Some said there were hidden rooms in the walls. She began to walk around the house again, looking at every door and every dark corner for a secret.",
+      "Emily walked slowly through the long hallway. The walls were covered with dark wood and dusty pictures. She felt the cold air on her face as she passed the tall windows. Outside, the trees danced in the wind and made scary shapes against the grey sky. She reached the end of the hall where there was a small room. The door of this room was different from the others. It was made of thick, old oak and had a strange handle. It looked like someone had not opened it for many years. She stopped and touched the cold metal of the handle. Her heart began to beat very fast. She wondered what was behind this heavy door. Maybe her father knew about this mysterious place, but he never said a single word about it to her.",
+      "She pulled the handle, but it was locked tight. The wood felt rough under her fingers. She looked around to see if she could find a key, but the hallway was empty. There were no lights in this part of the house, so the shadows were very long. Emily took a step back and looked at the floor. She saw something shining near the corner of the wall. It was a small, silver key hidden under the edge of a rug. She picked it up with a shaking hand. It was cold and heavy. Her breath was short as she stood before the mysterious door once more. She felt like an explorer in a new land. She knew she should not open it, but her curiosity was too strong to stop her now.",
+      "The key entered the lock with a soft click. Emily pushed the door open very slowly. It moved with a loud, creaking sound that echoed through the quiet castle. She stepped into a dark room that was filled with old boxes and broken furniture. The air was very dry and smelled of old paper. She saw a small desk in the middle of the floor with some old letters on it. There was a thin window that let in a little bit of pale light. She walked to the desk and reached out to touch the paper. Her eyes widened when she saw a map inside a hidden drawer. This house was full of secrets that she did not understand. She felt that this discovery was just the start of a very strange and long journey into the past.",
+      "Emily stood in the small room and looked at the dusty map. The lines on the paper were old and hard to read. She felt afraid but also very happy to find something important. The map showed a path that led deep into the cold castle. She thought about her family and the long time they spent in this big house. Why did they hide this map from her? The desk had a secret drawer and it was open now. She took the map and looked at it closely under the weak light. Every corner of the room felt cold. She heard a small noise near the window but no one was there. The shadows were growing long on the stone walls as the sun went down. She knew that she must keep the map safe in her pocket.",
+      "She walked back to the heavy door and looked into the hall again. The castle was quiet and dark. She wanted to know more about the secret map and the path it showed. She walked down the hall and reached the old stairs. They were made of grey stone and felt very slippery under her feet. She held the wall for balance while she went down to the first floor. The house was very large and she felt small inside it. Her heart was beating fast because she was worried about being seen by the guards. She was a brave girl but this place was very mysterious. She hid the key in her bag and started to walk toward the main library where she could hide the map safely.",
+      "The library was a beautiful room with thousands of books on the tall shelves. Emily loved to read but today she was looking for something else. She wanted to match the map with the books on the history of her family. She climbed a small wooden ladder to look at the high shelves. There were books with leather covers and gold letters. She pulled one book from the shelf and saw that it was very heavy. As she opened it, a second key fell out and landed on the soft carpet. This key was larger than the first one. She felt like the house was talking to her and showing her the way. The secrets were starting to come out one by one as she stood in the center of the silent room.",
+      "Emily stood on the library ladder with the second key in her hand. She looked at the heavy book. It was very old and the pages were yellow. She sat on the floor and turned the pages with care. The writing was small but she could read the names of her ancestors. She saw a name that was familiar to her mother. Her heart beat fast because the map showed a room behind the main library wall. She touched the wooden wall and felt a cold breeze. She knew there was a door hidden behind the books. She moved the heavy shelves to the side with all her strength. The wood made a loud sound against the stone floor. She was nervous but she wanted to know the truth about her family history. The dark space appeared behind the wall.",
+      "She stepped into the small dark space. It was not a big room but it felt very strange. The air was cold and smelled like old dust. She held her candle high to see the walls. There were portraits of men and women she did not know. Their eyes seemed to watch her every move in the dark. She walked slowly because the floor was uneven and broken. She found a small iron box on a wooden stool in the corner. She used the second key to open it. Her hands were shaking as she turned the key inside the lock. It was difficult but finally it opened with a click. She felt a rush of fear and excitement at the same time. Inside the box she saw papers and a gold ring with a crest.",
+      "Emily picked up the gold ring and looked at it closely. It was a sign of her family legacy. She realized that her father had kept these things hidden for a very good reason. The papers inside the box told a story about a lost treasure and a secret promise. She heard footsteps in the library outside and quickly put the ring into her pocket. She did not want the guards to catch her in this hidden place. She closed the box and moved the heavy shelves back to their place. Everything looked normal again. She walked out of the library and went to her bedroom to hide her findings. She felt like a detective in her own home. She knew she was closer to solving the mystery of the secret door.",
+      "Emily arrived in her bedroom and locked the door behind her. Her hands were still trembling as she pulled the gold ring and the old papers from her pocket. The room was dark and silent, but she felt safe enough to read the documents. She held the candle near the papers to see the writing better. The ink was faded, but the message was clear. It told a story about a dark night long ago. A man had taken a treasure from the castle and hid it behind a secret door in the basement. Emily felt very cold as she read these words. She understood now that her family had a deep secret that lived inside these thick walls. She looked at the ring again. It was a beautiful piece of history that belonged to her past.",
+      "She walked over to her large oak chest and hid the papers underneath her clothes. She knew that she must be very careful because the castle was full of spies. Her heart beat fast when she heard someone walking in the hallway outside her bedroom. She quickly sat on her bed and pretended to read a book. The person stopped at her door and then walked away. Emily breathed a deep sigh of relief. She realized that she could not tell anyone about the treasure or the ring. The mystery was dangerous, but it was also the only way to know the truth about her ancestors. She felt brave, but she also knew that the path ahead would be filled with many more secrets and surprises in the coming days.",
+      "The night continued and the moon shone brightly through the window. Emily stared at the moonlight on the floor and thought about the secret door in the library. She wondered what else was hidden in the dark corners of the old castle. Every shadow looked like a ghost and every sound made her startle. She knew that the gold ring was the key to unlocking the final part of the mystery. Tomorrow she would go back to the library to search for more clues. She needed to be strong and keep her secrets safe until she found the hidden treasure. The mystery of the secret door was like a puzzle and she was finally holding the most important piece. She closed her eyes and waited for the morning sun to rise.",
+      "The morning light entered the room and touched Emily’s face. She woke up quickly, remembering the secret map and the golden ring. Her heart beat fast because today was the day to find the hidden door. She got dressed in her simple blue dress and brushed her long dark hair. The castle was very quiet, and the servants were still asleep in their small rooms. Emily walked slowly down the long hall, staying close to the cold stone walls. She looked behind her many times to make sure nobody saw her. The castle felt different today, like it was waiting for her to find the truth. She reached the library and pushed the heavy wooden door open. The room was dark and filled with the smell of old books and dust. She was ready to finish the long search.",
+      "Emily walked to the back of the library where the tall shelves were full of forgotten stories. She took the golden ring from her pocket and looked at the dark wood of the wall. She remembered the secret message from the papers she found. She moved her fingers over the carved wood, looking for a small hole or a loose board. Suddenly, she felt something move under her touch. A small metal part clicked, and a part of the wall slowly opened. It was the secret door! She felt very excited but also a little afraid. She took a deep breath and stepped into the small, dark space behind the wall. The air was cold and wet, and she saw a narrow stone staircase that went deep down into the ground beneath the castle.",
+      "She started to walk down the stairs, one small step at a time. The light from the library was getting smaller behind her, so she took a small candle from her bag and lit it. The flame was small and danced in the dark air. She saw old portraits on the walls that looked like her own family from many years ago. Every step made a soft sound on the stones. She did not know what was waiting for her at the bottom, but she could not stop now. The secret of the castle was finally in front of her eyes. She held the golden ring tightly in her hand as a sign of her power and her family name. She was ready to see the hidden treasure that was waiting for her in the dark.",
+      "Emily stepped into the secret room at the bottom of the long, dark stairs. The room was small and cold. On the table, she saw many important papers from her family. There was also a small, wooden box with her father's name on it. She opened the box slowly and saw a beautiful picture of her mother inside. Beside the picture, she found a gold key and a letter that explained the mystery of the castle. Her heart felt very heavy as she read about the lost history of her ancestors. The secret was finally hers, and she understood why the castle felt so sad. Emily cried for a moment, but then she felt brave. She decided to keep the secret safe to protect her family name from any more pain.",
+      "Suddenly, the heavy iron door at the top of the stairs moved loudly. Someone was coming down to find her. Emily stood up and put the box under her dress. She did not want anyone to see the truth today. The sound of steps became faster and louder on the cold stone. She quickly looked for another way out of the room. Behind a large curtain, she found a hidden passage that led to the gardens. She walked fast through the dark tunnel, holding her candle high. She could hear voices behind her, but she did not look back. The wind outside felt warm on her face as she stepped into the night. She was finally away from the danger and back in the quiet, dark forest.",
+      "She walked under the bright moon until she reached the gates of the village. The castle looked like a black shadow against the sky. She knew that the story of the secret door was over now. Emily looked at the golden ring and the key in her hand one last time. She was happy that the truth was no longer hidden in the dark. Now she could start a new life and leave the past behind. The mystery was gone, and she felt free like a bird in the morning air. She walked toward her home, where her friends were waiting for her. Emily was the hero of her own story today. The secrets of the castle were safe, and she was ready for a happy tomorrow at last."
+    ],
+    tr: [
+      "Eski kale, karanlık dağın tepesinde yüksekte duruyordu. Pek çok gri taş duvarı olan çok büyük bir binaydı. Rüzgar her gece uzun kulelerin etrafında sertçe esiyordu. İçeride odalar soğuk ve çok sessizdi. Emily, babasıyla birlikte bu evde yaşıyordu. Nazik gözleri ve yumuşak bir sesi olan genç bir kızdı. Aşağıdaki ağaçlara küçük penceresinden bakmayı severdi. Orman sık ve gölgelerle doluydu. Ev çok sessiz olduğu için Emily biraz korkuyordu. Her gün uzun koridorlarda yürüyordu. Duvarlardaki eski tablolara bakıyordu. Resimlerdeki yüzler üzgün ve sertti. Kalenin tarihi onun için bir gizemdi. Babasının neden bu ıssız yerde yaşamayı seçtiğini bilmek istiyordu.",
+      "Yağmurlu bir akşam, gökyüzü derin bir siyaha döndü. Gök gürültüsü ağır taş çatının üzerinde yüksek bir ses çıkardı. Emily sıcak ateşin yanındaki büyük kütüphanede oturuyordu. Babası ciddi bir yüzle odaya girdi. Ona baktı ve çok kısık bir sesle konuştu. Ona uzun bir yolculuğa çıkması gerektiğini söyledi. İşi için uzak bir şehri ziyaret etmesi gerekiyordu. Emily bu haberi duyduğunda yalnız hissetti. Kalede tek başına kalmak istemiyordu. Güneş batarken gölgeler ahşap zeminde uzadı. Hava ağır ve tuhaf hissettiriyordu. Babasına baktı ve gelecek için çok endişelendi. Uzun işi bittikten sonra onun kendisine çabucak dönmesini umut ediyordu.",
+      "Babası çantalarını topladı ve ertesi sabah erkenden gitti. Emily ön kapıda durdu ve onun gidişini izledi. Evinin yüksek ve karanlık duvarları altında küçük hissetti. Ev, eskisinden bile daha büyük geliyordu. İçeri geri yürüdü ve büyük kapıyı ağır bir demir anahtarla kilitledi. Soğuk taş üzerindeki kendi adım sesleri dışında her yer sessizdi. Mutfağa gitti ve biraz sıcak çay yaptı. Kitap okumaya çalıştı ama aklı sayfalarda değildi. İnsanların bu eski yer hakkında anlattığı tuhaf hikayeleri düşündü. Bazıları duvarların içinde gizli odalar olduğunu söylüyordu. Bir sır aramak için her kapıya ve her karanlık köşeye bakarak evde tekrar yürümeye başladı.",
+      "Emily uzun koridorda yavaşça yürüdü. Duvarlar koyu renkli ahşap ve tozlu resimlerle kaplıydı. Yüksek pencerelerin önünden geçerken yüzünde soğuk havayı hissetti. Dışarıda ağaçlar rüzgarda dans ediyor ve gri gökyüzüne karşı korkutucu şekiller oluşturuyordu. Koridorun sonunda küçük bir odaya ulaştı. Bu odanın kapısı diğerlerinden farklıydı. Kalın, eski meşeden yapılmıştı ve tuhaf bir tokmağı vardı. Sanki yıllardır kimse onu açmamış gibi görünüyordu. Durdu ve tokmağın soğuk metaline dokundu. Kalbi çok hızlı atmaya başladı. Bu ağır kapının arkasında ne olduğunu merak etti. Belki babası bu gizemli yeri biliyordu ama bu konuda ona hiçbir zaman tek bir kelime etmemişti.",
+      "Tokmağı çekti ama kapı sıkıca kilitliydi. Ahşap, parmaklarının altında pürüzlü geliyordu. Bir anahtar bulup bulamayacağını görmek için etrafına baktı ama koridor boştu. Evin bu kısmında hiç ışık yoktu, bu yüzden gölgeler çok uzundu. Emily bir adım geri çekildi ve zemine baktı. Duvarın köşesine yakın bir yerde parlayan bir şey gördü. Halının kenarının altına gizlenmiş küçük, gümüş bir anahtardı. Titreyen bir elle onu yerden aldı. Soğuk ve ağırdı. Gizemli kapının önünde bir kez daha durduğunda nefesi kesiliyordu. Kendini yeni bir ülkedeki bir kaşif gibi hissediyordu. Onu açmaması gerektiğini biliyordu ama merakı onu durduramayacak kadar güçlüydü.",
+      "Anahtar kilide yumuşak bir tık sesiyle girdi. Emily kapıyı çok yavaşça itti. Sessiz şatoda yankılanan yüksek ve gıcırtılı bir sesle hareket etti. Eski kutular ve kırık mobilyalarla dolu karanlık bir odaya adım attı. Hava çok kuruydu ve eski kağıt kokuyordu. Yerde, üzerinde bazı eski mektupların olduğu küçük bir masa gördü. Biraz soluk ışık içeri giren ince bir pencere vardı. Masaya doğru yürüdü ve kağıda dokunmak için elini uzattı. Gizli bir çekmecenin içindeki haritayı görünce gözleri büyüdü. Bu ev, anlamadığı sırlar ile doluydu. Bu keşfin, geçmişe yapılan çok tuhaf ve uzun bir yolculuğun sadece başlangıcı olduğunu hissetti.",
+      "Emily küçük odada durdu ve tozlu haritaya baktı. Kağıdın üzerindeki çizgiler eskiydi ve okunması zordu. Korkmuş hissediyordu ama aynı zamanda önemli bir şey bulduğu için çok mutluydu. Harita, soğuk kalenin derinliklerine giden bir yol gösteriyordu. Ailesini ve bu büyük evde geçirdikleri uzun zamanı düşündü. Neden bu haritayı ondan saklamışlardı? Masanın gizli bir çekmecesi vardı ve şimdi açıktı. Haritayı aldı ve sönük ışığın altında dikkatlice inceledi. Odanın her köşesi soğuktu. Pencerenin yakınında küçük bir ses duydu ama orada kimse yoktu. Güneş batarken taş duvarların üzerindeki gölgeler uzuyordu. Haritayı cebinde güvende tutması gerektiğini biliyordu.",
+      "Ağır kapıya geri yürüdü ve tekrar koridora baktı. Kale sessiz ve karanlıktı. Gizli harita ve gösterdiği yol hakkında daha fazla şey bilmek istiyordu. Koridorda yürüdü ve eski merdivenlere ulaştı. Merdivenler gri taştandı ve ayaklarının altında çok kaygandı. Birinci kata inerken dengesini sağlamak için duvara tutundu. Ev çok büyüktü ve onun içinde kendini küçük hissediyordu. Muhafızlar tarafından görülmekten endişelendiği için kalbi hızla çarpıyordu. Cesur bir kızdı ama burası çok gizemliydi. Anahtarı çantasına sakladı ve haritayı güvenle gizleyebileceği ana kütüphaneye doğru yürümeye başladı.",
+      "Kütüphane, yüksek raflarında binlerce kitap olan güzel bir odaydı. Emily okumayı severdi ama bugün başka bir şey arıyordu. Haritayı ailesinin tarihini anlatan kitaplarla eşleştirmek istiyordu. Yüksek raflara bakmak için küçük ahşap bir merdivene tırmandı. Deri kapaklı ve altın harfli kitaplar vardı. Raftan bir kitap çekti ve çok ağır olduğunu gördü. Kitabı açtığında, ikinci bir anahtar düştü ve yumuşak halının üzerine indi. Bu anahtar ilkinkinden daha büyüktü. Evin onunla konuştuğunu ve ona yolu gösterdiğini hissetti. Sessiz odanın ortasında dururken sırlar birer birer ortaya çıkmaya başlıyordu.",
+      "Emily, elinde ikinci anahtarla kütüphane merdiveninde duruyordu. Ağır kitaba baktı. Çok eskiydi ve sayfaları sararmıştı. Yere oturdu ve sayfaları dikkatle çevirdi. Yazılar küçüktü ama atalarının isimlerini okuyabiliyordu. Annesinin tanıdığı bir isim gördü. Kalbi hızlı çarpıyordu çünkü harita, ana kütüphane duvarının arkasında bir odayı gösteriyordu. Ahşap duvara dokundu ve soğuk bir esinti hissetti. Kitapların arkasında gizli bir kapı olduğunu biliyordu. Tüm gücüyle ağır rafları yana doğru çekti. Ahşap, taş zeminde yüksek bir ses çıkardı. Gergindi ama ailesinin geçmişiyle ilgili gerçeği öğrenmek istiyordu. Karanlık boşluk duvarın arkasında belirdi.",
+      "Küçük, karanlık boşluğun içine adım attı. Büyük bir oda değildi ama çok garip hissettiriyordu. Hava soğuktu ve eski toz gibi kokuyordu. Duvarları görmek için mumunu yüksekte tuttu. Hiç tanımadığı erkeklerin ve kadınların portreleri vardı. Gözleri sanki karanlıkta attığı her adımı izliyordu. Yavaşça yürüdü çünkü zemin düzensiz ve kırıktı. Köşedeki ahşap bir taburenin üzerinde küçük demir bir kutu buldu. Onu açmak için ikinci anahtarı kullandı. Anahtarı kilidin içinde çevirirken elleri titriyordu. Zordu ama sonunda bir tık sesiyle açıldı. Aynı anda hem korku hem de heyecan hissetti. Kutunun içinde kağıtlar ve üzerinde arma olan altın bir yüzük gördü.",
+      "Emily altın yüzüğü eline aldı ve dikkatle baktı. Bu, ailesinin mirasının bir işaretiydi. Babasının bu eşyaları çok iyi bir sebeple gizli tuttuğunu fark etti. Kutunun içindeki kağıtlar, kayıp bir hazine ve gizli bir söz hakkında hikaye anlatıyordu. Dışarıdaki kütüphaneden ayak sesleri duydu ve yüzüğü hemen cebine koydu. Muhafızların onu bu gizli yerde yakalamasını istemiyordu. Kutuyu kapattı ve ağır rafları eski yerine çekti. Her şey tekrar normal görünüyordu. Kütüphaneden çıktı ve bulduklarını saklamak için yatak odasına gitti. Kendi evinde bir dedektif gibi hissediyordu. Gizli kapının gizemini çözmeye daha yakın olduğunu biliyordu.",
+      "Emily yatak odasına geldi ve arkasından kapıyı kilitledi. Altın yüzüğü ve eski kağıtları cebinden çıkardığında elleri hala titriyordu. Oda karanlık ve sessizdi, ancak belgeleri okuyacak kadar güvende hissediyordu. Yazıları daha iyi görebilmek için mumu kağıtlara yaklaştırdı. Mürekkep solmuştu ama mesaj açıktı. Uzun zaman önce karanlık bir gece hakkında bir hikaye anlatıyordu. Bir adam kaleden bir hazine almış ve onu bodrumdaki gizli bir kapının ardına saklamıştı. Emily bu kelimeleri okurken çok üşüdü. Artık ailesinin bu kalın duvarların içinde yaşayan derin bir sırrı olduğunu anladı. Yüzüğe tekrar baktı. O, geçmişine ait güzel bir tarih parçasıydı.",
+      "Büyük meşe sandığına doğru yürüdü ve kağıtları kıyafetlerinin altına sakladı. Kale casuslarla dolu olduğu için çok dikkatli olması gerektiğini biliyordu. Koridorda birinin yürüdüğünü duyduğunda kalbi hızla çarptı. Hemen yatağına oturdu ve bir kitap okuyormuş gibi yaptı. Kişi kapısında durdu ve sonra uzaklaştı. Emily derin bir rahatlama nefesi aldı. Hazine ya da yüzük hakkında kimseye bir şey söyleyemeyeceğini anladı. Gizem tehlikeliydi ama aynı zamanda ataları hakkındaki gerçeği öğrenmenin tek yoluydu. Cesur hissediyordu ama önündeki yolun önümüzdeki günlerde daha birçok sır ve sürprizle dolu olacağını da biliyordu.",
+      "Gece devam etti ve ay pencereden parlak bir şekilde parladı. Emily yerdeki ay ışığına baktı ve kütüphanedeki gizli kapıyı düşündü. Eski kalenin karanlık köşelerinde başka nelerin saklı olduğunu merak etti. Her gölge bir hayalet gibi görünüyordu ve her ses onu ürkütüyordu. Altın yüzüğün gizemin son kısmını çözmenin anahtarı olduğunu biliyordu. Yarın daha fazla ipucu aramak için kütüphaneye geri dönecekti. Güçlü olması ve gizli hazineyi bulana kadar sırlarını güvende tutması gerekiyordu. Gizli kapının gizemi bir bulmaca gibiydi ve o nihayet en önemli parçayı tutuyordu. Gözlerini kapattı ve sabah güneşinin doğmasını bekledi.",
+      "Sabah ışığı odaya girdi ve Emily'nin yüzüne dokundu. Gizli haritayı ve altın yüzüğü hatırlayarak hızla uyandı. Kalbi hızla çarpıyordu çünkü bugün gizli kapıyı bulma günüydü. Basit mavi elbisesini giydi ve uzun koyu saçlarını taradı. Kale çok sessizdi ve hizmetkarlar hala küçük odalarında uyuyorlardı. Emily, soğuk taş duvarlara yakın durarak uzun koridorda yavaşça yürüdü. Kimsenin onu görmediğinden emin olmak için defalarca arkasına baktı. Kale bugün farklı hissettiriyordu, sanki gerçeği bulması için onu bekliyormuş gibi. Kütüphaneye ulaştı ve ağır ahşap kapıyı iterek açtı. Oda karanlıktı ve eski kitapların ve tozun kokusuyla doluydu. Uzun araştırmayı bitirmeye hazırdı.",
+      "Emily, kütüphanenin yüksek raflarının unutulmuş hikayelerle dolu olduğu arka tarafına yürüdü. Altın yüzüğü cebinden çıkardı ve duvarın koyu ahşabına baktı. Bulduğu kağıtlardaki gizli mesajı hatırladı. Küçük bir delik veya gevşek bir tahta arayarak parmaklarını oymalı ahşabın üzerinde gezdirdi. Aniden, dokunuşuyla bir şeyin hareket ettiğini hissetti. Küçük bir metal parça tıkırdadı ve duvarın bir kısmı yavaşça açıldı. Bu gizli kapıydı! Çok heyecanlandı ama aynı zamanda biraz da korktu. Derin bir nefes aldı ve duvarın arkasındaki küçük, karanlık alana adım attı. Hava soğuk ve nemliydi ve kalenin altındaki zemine doğru derinlere inen dar bir taş merdiven gördü.",
+      "Merdivenlerden birer küçük adım atarak yürümeye başladı. Kütüphaneden gelen ışık arkasında küçülüyordu, bu yüzden çantasından küçük bir mum çıkardı ve yaktı. Alev küçüktü ve karanlık havada dans ediyordu. Duvarlarda, yıllar öncesinden kendi ailesine benzeyen eski portreler gördü. Her adım taşların üzerinde yumuşak bir ses çıkarıyordu. Aşağıda onu neyin beklediğini bilmiyordu ama artık duramazdı. Kalenin sırrı nihayet gözlerinin önündeydi. Gücünün ve aile adının bir işareti olarak altın yüzüğü elinde sıkıca tuttu. Karanlıkta onu bekleyen gizli hazineyi görmeye hazırdı.",
+      "Emily uzun ve karanlık merdivenlerin altındaki gizli odaya adım attı. Oda küçük ve soğuktu. Masanın üzerinde ailesine ait birçok önemli kağıt gördü. Ayrıca üzerinde babasının isminin yazılı olduğu küçük, ahşap bir kutu vardı. Kutuyu yavaşça açtı ve içinde annesinin güzel bir resmini gördü. Resmin yanında, altın bir anahtar ve kalenin gizemini açıklayan bir mektup buldu. Atalarının kayıp tarihi hakkında okurken kalbi çok ağırlaştı. Sır nihayet onundu ve kalenin neden bu kadar hüzünlü hissettirdiğini anladı. Emily bir an ağladı ama sonra kendini cesur hissetti. Aile ismini daha fazla acıdan korumak için sırrı saklı tutmaya karar verdi.",
+      "Aniden, merdivenlerin tepesindeki ağır demir kapı gürültüyle hareket etti. Birisi onu bulmak için aşağı geliyordu. Emily ayağa kalktı ve kutuyu elbisesinin altına sakladı. Bugün kimsenin gerçeği görmesini istemiyordu. Adım sesleri soğuk taşların üzerinde hızlandı ve yükseldi. Odadan çıkmak için hızlıca başka bir yol aradı. Büyük bir perdenin arkasında, bahçelere açılan gizli bir geçit buldu. Mumunu havada tutarak karanlık tünelin içinden hızlıca yürüdü. Arkasından gelen sesleri duyabiliyordu ama arkasına bakmadı. Geceye adım attığında dışarıdaki rüzgar yüzünde ılık hissettirdi. Nihayet tehlikeden uzaklaşmış ve sessiz, karanlık ormana geri dönmüştü.",
+      "Köyün kapılarına ulaşana kadar parlak ayın altında yürüdü. Kale, gökyüzüne karşı siyah bir gölge gibi görünüyordu. Gizli kapı hikayesinin artık bittiğini biliyordu. Emily elindeki altın yüzüğe ve anahtara son bir kez baktı. Gerçeğin artık karanlıkta saklı kalmamasından mutluydu. Artık yeni bir hayata başlayabilir ve geçmişi geride bırakabilirdi. Gizem gitmişti ve sabah havasındaki bir kuş gibi özgür hissediyordu. Arkadaşlarının onu beklediği evine doğru yürüdü. Emily bugün kendi hikayesinin kahramanıydı. Kalenin sırları güvendeydi ve sonunda mutlu bir yarına hazırdı."
+    ],
+    words: {
+      "castle": "kale",
+      "tower": "kule",
+      "shadow": "gölge",
+      "library": "kütüphane",
+      "secret": "sır",
+      "silence": "sessizlik",
+      "hallway": "koridor",
+      "handle": "kapı tokmağı",
+      "mysterious": "gizemli",
+      "curiosity": "merak",
+      "creaking": "gıcırtı",
+      "discovery": "keşif",
+      "map": "harita",
+      "path": "yol",
+      "stone": "taş",
+      "shelf": "raf",
+      "ancestor": "ata",
+      "breeze": "esinti",
+      "portrait": "portre",
+      "treasure": "hazine",
+      "strength": "güç",
+      "legacy": "miras",
+      "tremble": "titremek",
+      "document": "belge",
+      "faded": "solmuş",
+      "chest": "sandık",
+      "spy": "casus",
+      "puzzle": "bulmaca",
+      "servant": "hizmetkar",
+      "carved": "oymalı",
+      "click": "tıkırtı sesi",
+      "staircase": "merdiven",
+      "flame": "alev",
+      "brave": "cesur",
+      "passage": "geçit",
+      "hidden": "saklı",
+      "mystery": "gizem"
+    }
+  }
+,
+  {
+    id: 'horror_shadow_man',
+    title: "The Shadow Man",
+    author: 'E. T. A. Hoffmann',
+    level: 'A1',
+    coverUrl: '/covers/horror_shadow_man.webp',
+    en: [
+      "Nathanael writes a letter to his friend Lothar. He is very sad and scared. He remembers a man from his childhood. This man is named Coppelius. When Nathanael was a little boy, Coppelius came to his house every evening. His father said it was for work. Nathanael did not like the man. The man was big and ugly. He had a mean face and big hands. Nathanael felt very cold when Coppelius was in the room. His mother told him to go to bed early. She said that the Sandman is coming. Nathanael asked his mother who the Sandman is. She said the Sandman throws sand in the eyes of children who do not sleep. Nathanael was very afraid of the Sandman. He thought Coppelius was this bad man. He wanted to know more about this strange and dark person.",
+      "The little boy Nathanael could not sleep at night. He wanted to see the Sandman. One night, he hid in his father's room. He stood behind a curtain. The room was dark and quiet. Suddenly, the door opened slowly. Coppelius came into the room with a heavy coat. The father looked nervous and very pale. They went to a big desk. They made a strange sound like fire. Coppelius shouted in a loud voice. He had eyes like a monster. Nathanael was shaking with fear. He saw the fire on the table. It was like a kitchen but for magic. He wanted to run away but he could not move. The Sandman was here. The boy felt small and weak in the corner. His heart was beating very fast because of the terrible man.",
+      "Coppelius saw the boy in the dark corner. He was very angry and loud. He walked to Nathanael with fast steps. He said that the boy watched him. He touched the boy with his cold hands. The father begged Coppelius to stop. He said that Nathanael is just a child. But the evil man did not listen. He wanted to put sand in the eyes of the boy. Nathanael screamed very loud. He lost his senses and fell to the floor. The next day, he was in his bed. His mother told him that he was sick. He was afraid of Coppelius for many years. Now he is older, but he still sees the man in his dreams. He thinks this man is coming back to find him. Nathanael writes that his life is now very dark and full of deep mystery.",
+      "Nathanael remembers these bad memories every single day. He thinks about the desk and the bright fire. He remembers the loud voice of the terrible man. Nathanael is a student now, but his mind is not at peace. He studies hard at the university, yet the shadow of Coppelius follows him everywhere. He feels like a small child again when he walks alone in the dark streets. The air feels cold and his hands shake. He wants to forget the Sandman, but his past is like a heavy chain. He writes to his friend Lothar because he needs to tell someone his secrets. He believes that the bad man is not just a dream. He thinks the monster is real and very close to him now. His heart is full of deep, dark fear.",
+      "One day, a new man arrives in the city. He is a person who sells things for eyes. He is a peddler and he walks around with a box of glasses. When Nathanael sees him, he remembers the face of Coppelius. The man has big eyes and a large, wide mouth. He looks exactly like the person from his childhood dreams. Nathanael feels sick and wants to hide away from the world. He runs to his room and locks the door tightly. He looks through the window and sees the man in the street. The man looks up and smiles. It is a cold and cruel smile that makes Nathanael tremble. He knows that the past has returned to take him. The Sandman is back in his life again to destroy his happiness.",
+      "The young student tries to talk to his friends, but they do not understand him. They say that he is just tired and needs some rest. They do not know about the magic desk or the terrible nights with his father. Nathanael stays inside his room for many long days. He covers his ears to stop the sounds of the city. He sits on his bed and watches the shadows on the wall. He thinks that the shadow man is moving in the corner of his room. He waits for the door to open and for the cold hands to touch his face. Every sound in the house makes him jump with pure terror. He knows that he cannot run away from the man. His story is just beginning and the night is very long.",
+      "Nathanael decides to go out to see his friend Clara. He needs to talk about his fear because his mind is full of dark thoughts. Clara is a calm person and she listens to him with a quiet smile. She tells him that the Sandman is only a story from his childhood. She says that Nathanael is a strong student and he should not worry about ghosts or monsters. She wants him to be happy again, but Nathanael is not sure. He thinks the man with the glasses is real and wants to hurt him. He looks at Clara with sad eyes and speaks in a low voice about the fire and the cold hands of the bad man. He believes the shadows are waiting to catch him at night when he sleeps.",
+      "The young student leaves Clara and walks home through the busy streets. The sun goes down and the city becomes dark and scary again. Nathanael looks at every face in the crowd because he wants to find the shadow man. He feels that someone is watching him from the corners of the buildings. Every step he takes sounds very loud on the hard stones of the road. He thinks about the day when his father died because of the terrible experiments. The memory makes his heart beat fast and his skin feel cold. He reaches his house and walks up the stairs slowly. He stops in front of his door and feels the heavy weight of the dark room. He is afraid to enter because he expects a surprise inside.",
+      "He walks into his room and finds a man standing near the table. It is the peddler who sells glasses and small glass eyes. The man smiles and his teeth look like sharp metal in the soft light. Nathanael screams and points at the visitor to get out of his house. The peddler does not move but he looks at Nathanael with cold eyes. He has many boxes in his hands and he puts them on the desk. Nathanael feels like a small child again in the old house with his father. He shakes with fear because he thinks the man is truly Coppelius from the past. The room feels very small and the air is thick with smoke. He wants to fight the man but his legs feel weak like water.",
+      "Nathanael stands in the middle of his dark room. The peddler moves slowly and his coat makes a strange sound like dry leaves. He opens one box on the desk and pulls out a shiny glass eye. The light hits the eye and it glows with a bright red color. Nathanael cannot look away from the object because it is too beautiful and too scary at the same time. He remembers his father talking about the eyes of the night. The peddler says nothing but his mouth shows a thin line of cruelty. The student tries to shout for help but his throat is dry and no sound comes out. He feels like a bird trapped in a cage with a large cat. The shadows on the wall seem to dance closer to his tired body.",
+      "The peddler stops moving and looks straight at Nathanael. He asks if the student needs a new vision for his eyes. Nathanael shakes his head and tries to run to the door. However his legs do not work and he falls to the floor with a loud noise. The man stands over him and his shadow covers the entire room. He laughs in a low voice that sounds like grinding stone against stone. Nathanael hides his face in his hands but he can still feel the cold gaze of the man. The room starts to smell like strong medicine and old metal from the workshop long ago. He wonders if this is the end of his life or just a bad dream that he cannot wake up from today.",
+      "Suddenly the man puts all his boxes back together and walks towards the open door. He does not say goodbye and leaves the room with a calm step. Nathanael stays on the cold floor for a very long time until the moon shines through the window. His heart is beating fast but the terrible weight in the air is gone for now. He stands up slowly and walks to the mirror to look at his pale face. He is alive but he knows that the shadow man is now a part of his new life in the city. He thinks about Clara and how she might feel if she knew about this visitor. He closes the door and locks it tightly because he knows the danger will return to his home soon.",
+      "Nathanael sits by his small window for many days. He thinks about the strange man and the red eye every single hour. His books are on the floor but he cannot read them. The city outside is busy and people walk to their work. He feels very lonely in his room. He decides to write a long letter to his dear friend Clara. He wants to tell her everything about the shadow man. His hands shake as he holds the heavy pen. He describes the peddler with his big coat and his cold, cruel smile. He remembers the smell of medicine and the sound of the grinding stone. Nathanael is sure that his life is in danger. He hopes that Clara will understand his fear and come to help him stay safe in his home.",
+      "Clara receives the letter and reads it many times in her quiet room. She is a very kind and smart person. She writes a long answer to Nathanael immediately. In her letter, she says that his mind is playing tricks on him. She thinks the peddler is just a normal man and not a monster from his dark dreams. She tells him to open his window and look at the blue sky. She wants him to forget about the shadow man and find joy in the sun. Nathanael reads her words and feels a little angry at her. He does not believe that she understands the danger. He thinks she is too simple to see the truth. He starts to walk around his room like a caged animal in a dark forest.",
+      "The sun goes down and the room becomes very dark and very cold again. Nathanael looks at the letter from Clara and throws it on the table. He feels like he is losing his mind because of the scary memories. The shadow on the wall moves again and he thinks he sees the peddler standing there. He tries to call for his friend but his voice is very weak. He is tired of the fighting in his heart. He knows he cannot escape the memory of his father and the eye merchant. He sits on his chair and looks at the wooden door. He waits for the sound of steps in the hallway. The night is long and the silence is full of secrets that he cannot explain to anyone anymore.",
+      "Nathanael stands up and walks to the mirror in the corner of his dark room. He looks at his own pale face. His eyes are red and full of worry. He thinks about the wooden doll Olympia. She is very beautiful and her eyes are bright. Nathanael likes her very much. He goes to see the professor who made her. The professor welcomes him with a cold smile. The room is full of strange tools and glass eyes. Nathanael feels happy but he also feels a deep fear inside his chest. He touches the cold wooden hand of the doll. She does not move and she does not speak. Nathanael believes that she is a real person with a real heart. The professor watches him and his eyes look like the eyes of the man from his sad childhood memories.",
+      "The next day Nathanael goes back to the house of the professor. He wants to talk to Olympia again. The room is quiet and the air is very dry. He sits near the chair where the doll stays. He tells her about his life and his deep sadness. He says that she is the only person who can understand his soul. He takes her hand and feels no warmth at all. She just looks at him with a steady and empty stare. Nathanael does not see that she is only wood and paint. He thinks that she is listening to every word he says with love. The professor stays in the corner of the room. He does not say a word but he smiles at Nathanael in a very strange and frightening way.",
+      "Nathanael starts to feel very tired after many hours of sitting with the doll. He wonders why she never says anything to him. He asks her to sing a song or tell him a story. Olympia says nothing. She only moves her head in a slow and robotic way. Nathanael thinks this is very sweet and he begins to laugh softly. He does not know that the neighbors are watching him through the window. They see a young man who is lost in a world of dolls. The night is coming and the shadows grow long across the floor. Nathanael thinks the doll is his only friend in this world. He forgets about Clara and his old life. He is now a prisoner of his own mind and the silent glass eyes of Olympia.",
+      "Nathanael stands in the center of the dark room. He looks at the doll named Olympia. He wants to marry her because he loves her beauty. He thinks she is perfect. He goes to the house of Professor Spalanzani. The house is very cold. He holds the hand of the doll. He feels a strange coldness from her skin. But he does not stop. He says that she is his future wife. He believes she is a living girl. The Professor smiles in a dark way. He knows that the doll is only wood and gears. Nathanael does not see the truth. He is now very far from his real world. His mind is trapped by the glass eyes of the doll. He feels happy but he is truly lost in a deep and scary shadow.",
+      "The room shakes suddenly because of a loud noise. Nathanael runs into the room and sees a terrible sight. The Professor and a strange man called Coppola are fighting. They are pulling the poor doll Olympia between them. Sparks fly and metal parts fall on the hard floor. Nathanael screams when he sees the broken face of his love. He sees that there is no heart inside her chest. There are only springs and metal wires. The eyes of the doll fall on the ground and look at him with a sad stare. He realizes the truth now. The doll is not a person at all. She is just a toy. The Professor laughs in a loud and angry voice. Nathanael starts to lose his mind because of the pain.",
+      "Nathanael leaves the house and walks into the lonely night. He feels like he is falling into a bottomless dark hole. He remembers Clara and his old life but it is too late. The shadow of his childhood memory returns to him again. He climbs to the top of the tall tower in the city. He looks down at the people below. They look very small like ants. He sees his enemy in the crowd and he screams for help. He jumps from the tower and falls down to the ground. His life ends there on the hard stones. The nightmare is finally over for the poor man. He dies with the memory of the glass eyes in his mind. The dark mystery of the doll stays hidden in the silence forever."
+    ],
+    tr: [
+      "Nathanael arkadaşı Lothar'a bir mektup yazar. Çok üzgün ve korkmuştur. Çocukluğundan bir adamı hatırlar. Bu adamın adı Coppelius'tur. Nathanael küçük bir çocukken, Coppelius her akşam evlerine gelirdi. Babası bunun iş için olduğunu söylerdi. Nathanael bu adamdan hoşlanmazdı. Adam büyük ve çirkindi. Kötü bir yüzü ve büyük elleri vardı. Nathanael, Coppelius odadayken kendini çok soğuk hissederdi. Annesi onu erkenden yatağa gitmesi için uyarırdı. Kum Adam'ın geldiğini söylerdi. Nathanael annesine Kum Adam'ın kim olduğunu sordu. O, Kum Adam'ın uyumayan çocukların gözüne kum attığını söyledi. Nathanael Kum Adam'dan çok korkardı. Coppelius'un bu kötü adam olduğunu düşünüyordu. Bu tuhaf ve karanlık kişi hakkında daha fazlasını bilmek istiyordu.",
+      "Küçük çocuk Nathanael geceleri uyuyamıyordu. Kum Adam'ı görmek istiyordu. Bir gece babasının odasında saklandı. Perdenin arkasında durdu. Oda karanlık ve sessizdi. Aniden kapı yavaşça açıldı. Coppelius ağır bir paltoyla odaya girdi. Babası gergin ve çok solgun görünüyordu. Büyük bir masaya gittiler. Ateş gibi tuhaf bir ses çıkardılar. Coppelius yüksek sesle bağırdı. Canavar gibi gözleri vardı. Nathanael korkudan titriyordu. Masanın üzerindeki ateşi gördü. Sanki bir mutfak gibiydi ama büyü içindi. Kaçmak istedi ama hareket edemedi. Kum Adam buradaydı. Çocuk köşede kendini küçük ve zayıf hissetti. Kalbi o korkunç adam yüzünden çok hızlı atıyordu.",
+      "Coppelius karanlık köşedeki çocuğu gördü. Çok kızgındı ve sesi gür çıkıyordu. Hızlı adımlarla Nathanael'e doğru yürüdü. Çocuğun onu izlediğini söyledi. Soğuk elleriyle çocuğa dokundu. Babası Coppelius'a durması için yalvardı. Nathanael'in sadece bir çocuk olduğunu söyledi. Ama kötü adam onu dinlemedi. Çocuğun gözlerine kum atmak istedi. Nathanael çok yüksek sesle çığlık attı. Bilincini kaybetti ve yere düştü. Ertesi gün yatağındaydı. Annesi ona hasta olduğunu söyledi. Uzun yıllar boyunca Coppelius'tan korktu. Şimdi daha büyük ama hala rüyalarında o adamı görüyor. Bu adamın onu bulmaya geri geldiğini düşünüyor. Nathanael, hayatının şimdi çok karanlık ve derin gizemlerle dolu olduğunu yazıyor.",
+      "Nathanael bu kötü anıları her gün hatırlar. Masayı ve parlak ateşi düşünür. Korkunç adamın yüksek sesini hatırlar. Nathanael artık bir öğrencidir ama zihni huzurlu değildir. Üniversitede çok çalışır ama Coppelius'un gölgesi onu her yerde takip eder. Karanlık sokaklarda tek başına yürüdüğünde kendini yeniden küçük bir çocuk gibi hisseder. Hava soğuk gelir ve elleri titrer. Kum Adam'ı unutmak ister ama geçmişi ağır bir zincir gibidir. Arkadaşı Lothar'a yazar çünkü sırlarını birine anlatması gerekir. Kötü adamın sadece bir rüya olmadığına inanır. Canavarın gerçek ve şu an kendisine çok yakın olduğunu düşünür. Kalbi derin, karanlık bir korkuyla doludur.",
+      "Bir gün şehre yeni bir adam gelir. Gözler için eşyalar satan biridir. Bir seyyar satıcıdır ve bir kutu gözlükle etrafta dolaşır. Nathanael onu gördüğünde, Coppelius'un yüzünü hatırlar. Adamın kocaman gözleri ve geniş bir ağzı vardır. Çocukluk rüyalarındaki kişiye tıpatıp benzemektedir. Nathanael hasta hisseder ve dünyadan saklanmak ister. Odasına koşar ve kapıyı sıkıca kilitler. Pencereden bakar ve adamı sokakta görür. Adam yukarı bakar ve gülümser. Bu, Nathanael'i titreten soğuk ve zalim bir gülümsemedir. Geçmişin onu almaya geri döndüğünü bilir. Kum Adam, mutluluğunu yok etmek için hayatına geri dönmüştür.",
+      "Genç öğrenci arkadaşlarıyla konuşmaya çalışır ama onlar onu anlamazlar. Sadece yorgun olduğunu ve biraz dinlenmesi gerektiğini söylerler. Sihirli masayı ya da babasıyla geçirdiği o korkunç geceleri bilmezler. Nathanael uzun günler boyunca odasının içinde kalır. Şehrin seslerini duymamak için kulaklarını kapatır. Yatağında oturur ve duvardaki gölgeleri izler. Gölge adamın odasının köşesinde hareket ettiğini düşünür. Kapının açılmasını ve soğuk ellerin yüzüne dokunmasını bekler. Evdeki her ses, saf bir dehşetle sıçramasına neden olur. Adamdan kaçamayacağını bilir. Hikayesi daha yeni başlıyor ve gece çok uzundur.",
+      "Nathanael arkadaşı Clara'yı görmeye gitmeye karar verir. Korkusu hakkında konuşması gerekir çünkü zihni karanlık düşüncelerle doludur. Clara sakin biridir ve onu sessiz bir gülümsemeyle dinler. Ona Kum Adam'ın sadece çocukluğundan kalma bir hikaye olduğunu söyler. Nathanael'in güçlü bir öğrenci olduğunu ve hayaletler veya canavarlar hakkında endişelenmemesi gerektiğini söyler. Onun tekrar mutlu olmasını ister ama Nathanael emin değildir. Gözlükçü adamın gerçek olduğunu ve ona zarar vermek istediğini düşünür. Clara'ya hüzünlü gözlerle bakar ve alçak bir sesle yangından ve kötü adamın soğuk ellerinden bahseder. Gölgelerin uyuduğu zaman geceleri onu yakalamak için beklediğine inanır.",
+      "Genç öğrenci Clara'dan ayrılır ve kalabalık sokaklardan eve yürür. Güneş batar ve şehir tekrar karanlık ve ürkütücü bir yer olur. Nathanael kalabalıktaki her yüze bakar çünkü gölge adamı bulmak ister. Birinin onu binaların köşelerinden izlediğini hisseder. Attığı her adım yolun sert taşları üzerinde çok yüksek ses çıkarır. Babasının korkunç deneyler yüzünden öldüğü günü düşünür. Bu anı kalbinin hızlı atmasına ve teninin soğuk hissetmesine neden olur. Evine ulaşır ve merdivenleri yavaşça çıkar. Kapısının önünde durur ve karanlık odanın ağır yükünü hisseder. İçeri girmeye korkar çünkü içeride bir sürprizle karşılaşmayı bekler.",
+      "Odasına girer ve masanın yanında duran bir adam bulur. Bu, gözlük ve küçük cam gözler satan seyyar satıcıdır. Adam gülümser ve dişleri yumuşak ışıkta keskin metal gibi görünür. Nathanael çığlık atar ve evinden çıkması için ziyaretçiyi gösterir. Satıcı kıpırdamaz ama Nathanael'e soğuk gözlerle bakar. Ellerinde birçok kutu vardır ve onları masaya bırakır. Nathanael, babasıyla eski evinde küçük bir çocukmuş gibi hisseder. Korkudan titrer çünkü adamın gerçekten geçmişten gelen Coppelius olduğunu düşünür. Oda çok küçük görünür ve hava dumanla ağırlaşır. Adamla savaşmak ister ama bacakları su gibi zayıf hisseder.",
+      "Nathanael karanlık odasının ortasında duruyor. İşportacı yavaşça hareket ediyor ve paltosu kurumuş yapraklar gibi tuhaf bir ses çıkarıyor. Masanın üzerindeki bir kutuyu açıyor ve parlak bir cam göz çıkarıyor. Işık göze çarpıyor ve göz parlak kırmızı bir renkle parlıyor. Nathanael nesneye bakmaktan kendini alamıyor çünkü hem çok güzel hem de çok korkutucu. Babasının gecenin gözleri hakkında konuştuklarını hatırlıyor. İşportacı hiçbir şey söylemiyor ama ağzı ince bir zalimlik çizgisi gösteriyor. Öğrenci yardım için bağırmaya çalışıyor ama boğazı kuru ve hiçbir ses çıkmıyor. Kendini büyük bir kedinin olduğu kafese hapsolmuş bir kuş gibi hissediyor. Duvardaki gölgeler yorgun vücuduna daha da yaklaşıyor gibi görünüyor.",
+      "İşportacı hareket etmeyi bırakıyor ve doğrudan Nathanael'e bakıyor. Öğrencinin gözleri için yeni bir görüşe ihtiyacı olup olmadığını soruyor. Nathanael başını sallıyor ve kapıya doğru koşmaya çalışıyor. Ancak bacakları çalışmıyor ve büyük bir gürültüyle yere düşüyor. Adam tepesinde duruyor ve gölgesi tüm odayı kaplıyor. Taşa karşı sürtünen taş sesi gibi alçak bir sesle gülüyor. Nathanael yüzünü elleriyle saklıyor ama adamın soğuk bakışlarını hala hissedebiliyor. Oda ağır ilaç ve uzun zaman önceki atölyeden kalma eski metal gibi kokmaya başlıyor. Bunun hayatının sonu mu yoksa uyanamadığı kötü bir rüya mı olduğunu merak ediyor.",
+      "Aniden adam tüm kutularını tekrar topluyor ve açık kapıya doğru yürüyor. Hoşça kal demiyor ve sakin adımlarla odadan çıkıyor. Nathanael ay ışığı pencereden içeri girene kadar çok uzun süre soğuk zeminde kalıyor. Kalbi hızla çarpıyor ama havadaki korkunç ağırlık şimdilik gitmiş durumda. Yavaşça ayağa kalkıyor ve solgun yüzüne bakmak için aynaya yürüyor. Hayatta ama gölge adamın artık şehirdeki yeni hayatının bir parçası olduğunu biliyor. Clara'yı ve bu ziyaretçiyi bilse ne hissedeceğini düşünüyor. Kapıyı kapatıyor ve sıkıca kilitliyor çünkü tehlikenin yakında evine geri döneceğini biliyor.",
+      "Nathanael günlerce küçük penceresinin kenarında oturur. Her saat başı o tuhaf adamı ve kırmızı gözü düşünür. Kitapları yerdedir ama onları okuyamaz. Dışarıdaki şehir meşguldür ve insanlar işlerine doğru yürürler. Odasında kendini çok yalnız hisseder. Sevgili arkadaşı Clara'ya uzun bir mektup yazmaya karar verir. Ona gölge adam hakkında her şeyi anlatmak ister. Ağır kalemi tutarken elleri titrer. Satıcıyı, büyük paltosu ve soğuk, acımasız gülümsemesiyle tarif eder. İlaç kokusunu ve taşın taşa sürtünme sesini hatırlar. Nathanael hayatının tehlikede olduğundan emindir. Clara'nın korkusunu anlayacağını ve evinde güvende kalması için yardıma geleceğini umar.",
+      "Clara mektubu alır ve sessiz odasında defalarca okur. Çok nazik ve zeki bir insandır. Nathanael'e hemen uzun bir cevap yazar. Mektubunda, zihninin ona oyunlar oynadığını söyler. Satıcının sadece normal bir adam olduğunu, karanlık rüyalarından gelen bir canavar olmadığını düşünür. Penceresini açmasını ve mavi gökyüzüne bakmasını söyler. Gölge adamı unutmasını ve güneşin içinde neşe bulmasını ister. Nathanael onun sözlerini okur ve ona biraz kızar. Tehlikeyi anladığına inanmaz. Onun gerçeği göremeyecek kadar basit olduğunu düşünür. Karanlık bir ormandaki kafesli bir hayvan gibi odasında yürümeye başlar.",
+      "Güneş batar ve oda tekrar çok karanlık ve çok soğuk olur. Nathanael, Clara'dan gelen mektuba bakar ve masanın üzerine fırlatır. Korkunç anılar yüzünden aklını kaçırdığını hisseder. Duvardaki gölge tekrar hareket eder ve satıcının orada durduğunu sanır. Arkadaşına seslenmeye çalışır ama sesi çok zayıftır. Kalbindeki savaştan yorulmuştur. Babasının ve göz tüccarının anısından kaçamayacağını bilir. Sandalyesine oturur ve ahşap kapıya bakar. Koridordaki ayak seslerini bekler. Gece uzundur ve sessizlik, artık kimseye açıklayamayacağı sırlar ile doludur.",
+      "Nathanael ayağa kalkar ve karanlık odasının köşesindeki aynaya yürür. Kendi solgun yüzüne bakar. Gözleri kırmızıdır ve endişe doludur. Tahta bebek Olympia'yı düşünür. O çok güzeldir ve gözleri parlaktır. Nathanael ondan çok hoşlanır. Onu yapan profesörün yanına gider. Profesör onu soğuk bir gülümsemeyle karşılar. Oda tuhaf aletler ve cam gözlerle doludur. Nathanael mutlu hisseder ama göğsünün içinde derin bir korku da vardır. Bebeğin soğuk tahta eline dokunur. O hareket etmez ve konuşmaz. Nathanael onun gerçek kalbi olan gerçek bir insan olduğuna inanır. Profesör onu izler ve gözleri Nathanael'in hüzünlü çocukluk anılarındaki adamın gözlerine benzer.",
+      "Ertesi gün Nathanael profesörün evine geri döner. Olympia ile tekrar konuşmak ister. Oda sessizdir ve hava çok kurudur. Bebeğin durduğu sandalyenin yakınına oturur. Ona hayatını ve derin üzüntüsünü anlatır. Ruhunu anlayabilecek tek kişinin o olduğunu söyler. Elini tutar ve hiç sıcaklık hissetmez. O sadece sabit ve boş bir bakışla ona bakar. Nathanael onun sadece tahta ve boyadan ibaret olduğunu görmez. Onun söylediği her kelimeyi sevgiyle dinlediğini sanır. Profesör odanın köşesinde durur. Hiçbir şey söylemez ama Nathanael'e çok tuhaf ve korkutucu bir şekilde gülümser.",
+      "Nathanael bebekle geçirdiği saatlerden sonra çok yorgun hissetmeye başlar. Neden ona hiçbir şey söylemediğini merak eder. Ondan bir şarkı söylemesini veya bir hikaye anlatmasını ister. Olympia hiçbir şey söylemez. Sadece başını yavaş ve mekanik bir şekilde hareket ettirir. Nathanael bunun çok tatlı olduğunu düşünür ve hafifçe gülmeye başlar. Komşuların onu pencereden izlediğini bilmez. Oyuncak bebekler dünyasında kaybolmuş genç bir adam görürler. Gece gelir ve gölgeler yerin üzerinde uzar. Nathanael bebeğin bu dünyadaki tek arkadaşı olduğunu sanır. Clara'yı ve eski hayatını unutur. Artık kendi zihninin ve Olympia'nın sessiz cam gözlerinin esiridir.",
+      "Nathanael karanlık odanın ortasında duruyor. Olympia adındaki bebeğe bakıyor. Onun güzelliğini sevdiği için onunla evlenmek istiyor. Onun mükemmel olduğunu düşünüyor. Profesör Spalanzani'nin evine gidiyor. Ev çok soğuk. Bebeğin elini tutuyor. Teninden gelen tuhaf bir soğukluk hissediyor. Ama durmuyor. Onun gelecekteki karısı olduğunu söylüyor. Onun yaşayan bir kız olduğuna inanıyor. Profesör karanlık bir şekilde gülümsüyor. Bebeğin sadece tahta ve çarklardan ibaret olduğunu biliyor. Nathanael gerçeği görmüyor. Artık gerçek dünyasından çok uzak. Zihni, bebeğin cam gözleri tarafından hapsedilmiş durumda. Mutlu hissediyor ama aslında derin ve korkutucu bir gölgede kaybolmuş durumda.",
+      "Oda yüksek bir gürültü nedeniyle aniden sallanıyor. Nathanael odaya koşuyor ve korkunç bir manzara görüyor. Profesör ve Coppola adındaki tuhaf bir adam kavga ediyorlar. Zavallı bebek Olympia'yı aralarında çekiştiriyorlar. Kıvılcımlar çıkıyor ve metal parçalar sert zemine düşüyor. Nathanael sevdiği kişinin kırık yüzünü görünce çığlık atıyor. Göğsünün içinde hiçbir kalp olmadığını görüyor. Sadece yaylar ve metal teller var. Bebeğin gözleri yere düşüyor ve ona hüzünlü bir bakışla bakıyor. Gerçeği şimdi anlıyor. Bebek hiçbir şekilde bir insan değil. Sadece bir oyuncak. Profesör yüksek ve öfkeli bir sesle gülüyor. Nathanael çektiği acı nedeniyle aklını yitirmeye başlıyor.",
+      "Nathanael evi terk ediyor ve yalnız geceye doğru yürüyor. Dipsiz, karanlık bir çukura düşüyormuş gibi hissediyor. Clara'yı ve eski hayatını hatırlıyor ama artık çok geç. Çocukluk anısının gölgesi ona tekrar geri dönüyor. Şehirdeki yüksek kulenin tepesine tırmanıyor. Aşağıdaki insanlara bakıyor. Karınca gibi çok küçük görünüyorlar. Kalabalığın içinde düşmanını görüyor ve yardım için bağırıyor. Kuleden aşağı atlıyor ve yere düşüyor. Hayatı orada, sert taşların üzerinde sona eriyor. Zavallı adam için kabus nihayet bitiyor. Zihninde cam gözlerin hatırasıyla ölüyor. Bebeğin karanlık gizemi sonsuza kadar sessizlik içinde saklı kalıyor."
+    ],
+    words: {
+      "childhood": "çocukluk",
+      "evening": "akşam",
+      "monster": "canavar",
+      "curtain": "perde",
+      "scream": "çığlık",
+      "mystery": "gizem",
+      "memory": "anı",
+      "university": "üniversite",
+      "shadow": "gölge",
+      "peddler": "işportacı",
+      "tremble": "titremek",
+      "terror": "dehşet",
+      "fear": "korku",
+      "ghost": "hayalet",
+      "crowd": "kalabalık",
+      "experiment": "deney",
+      "visitor": "ziyaretçi",
+      "cruelty": "zalimlik",
+      "trap": "tuzak",
+      "grind": "sürtünmek",
+      "gaze": "bakış",
+      "pale": "solgun",
+      "letter": "mektup",
+      "scary": "korkutucu",
+      "danger": "tehlike",
+      "silence": "sessizlik",
+      "mirror": "ayna",
+      "doll": "oyuncak bebek",
+      "stare": "dik dik bakış",
+      "robotic": "mekanik",
+      "prisoner": "esir",
+      "gear": "çark",
+      "metal": "metal",
+      "spring": "yay",
+      "tower": "kule",
+      "nightmare": "kabus",
+      "truth": "gerçek"
+    }
+  }
+,
+  {
+    id: 'horror_lost_in_woods',
+    title: "Lost in the Woods",
+    author: 'Algernon Blackwood',
+    level: 'A1',
+    coverUrl: '/covers/horror_lost_in_woods.webp',
+    en: [
+      "The tall trees stood very still in the afternoon sun. I looked at the green leaves and the dark path in front of me. It was a beautiful day for a walk in the deep woods. My name is Arthur and I am a curious boy. I like to find new places and see hidden things. I walked for a long time away from my small wooden house. The forest was very quiet and I could not hear any birds or animals. I felt very happy because the air was cool and fresh. The shadows on the ground started to grow long as the sun began to go down behind the hills. I did not worry at all. I thought I knew the way back home perfectly. The path seemed clear and easy to follow under my feet.",
+      "Suddenly the trees grew very close together. I looked around but I could not see the small path anymore. The green leaves hid the light from the sky and the woods became very dark. I felt a little cold. Where was the trail? I looked left and I looked right but everything looked the same. I turned around to go back but I only saw more trees. My heart started to beat very fast. I walked a little bit more in the other direction. There was only thick grass and old bushes. I shouted for my father but no one answered me. The forest was silent again. The silence was strange and heavy. I was not a happy boy anymore. I was alone in the deep dark woods with no way to find my house.",
+      "The sky turned from orange to deep purple. I sat on a hard stone to think. Why did I walk so far away from home? I wanted to cry but I kept my eyes dry. I looked at the tall trunks of the trees. They looked like big monsters standing in the dark. Every sound made me jump. Was that a wolf or just the wind? I could not tell. I remembered the stories about the woods. People said the forest was old and full of secrets. Now I was inside those secrets. I held my small bag very tight. I waited for the moon to come up so I could see better. The air felt colder now. I was lost and the night was coming very fast to hide everything from my view.",
+      "The moon did not appear in the sky yet. The night grew darker every minute. I tried to walk slowly in a straight line, but the thick roots of the trees tripped my feet. I fell down onto the soft, wet moss several times. My clothes were dirty, and my hands hurt from the rough bark of the trees. I did not want to stop moving, but I was very tired. I could feel the cold wind blowing against my face. Every branch felt like a long finger touching my skin. The woods were not friendly anymore. They seemed to watch me with unseen eyes. I really missed the warm light of my small house. I whispered my mother's name, but the forest swallowed my voice. I was truly lost in this dark and silent place.",
+      "I saw a small light in the distance between the trees. My heart began to beat with hope. Maybe someone was waiting for me there. I stood up and tried to run toward the light, but the bushes were very thick and blocked my way. I pushed the branches aside and kept walking. My legs felt heavy, but I did not stop. The light was small, like a tiny star fallen on the ground. I wondered if it was a lantern or just a reflection of the moonlight. As I got closer, the light did not get any bigger. It stayed in the same place. It was a strange, pale color. I reached out my hand to touch it, but the air felt very cold around that spot. I stopped and looked carefully.",
+      "The light was not a person's lantern. It moved a little bit, like a little flame in the wind. I felt very afraid. The stories about the woods were true, I thought. There were magical things here that nobody understood. I stepped back from the light and watched it from behind a large oak tree. My breathing was fast and loud in the quiet air. I did not know if I should follow the light or run away from it in the opposite direction. I was a little boy who only wanted to be safe in his own bed. The dark woods felt like a trap now. I waited for a long time, but the light stayed perfectly still again. I decided to stay where I was until the sun came up.",
+      "I sat behind the large tree for many hours. The night was very cold and my body began to shake. I could not see the light anymore, but I felt like something was near me. The forest was not silent now. I heard soft sounds like whispers moving between the trunks. It sounded like leaves moving on the ground, but there was no wind at all. My heart beat fast in my small chest because I was very scared. I closed my eyes tight and tried to think about my home. I thought about my warm bed and the fire in our kitchen. I wanted to be safe again, far away from these dark and strange trees. I waited for the morning to come, but the night felt very long and endless in the deep forest.",
+      "The air felt heavy and thick around me. I felt as if the trees were leaning closer to see what I was doing. Every time I opened my eyes, the shapes of the branches looked like long, thin arms reaching for me in the dark. I did not move because I was afraid to make any noise. The darkness was a heavy blanket that covered everything. I could see nothing, not even my own hands. The forest felt like a living thing that wanted to keep me here forever. I felt sad and lonely. I wanted someone to call my name, but the only sound was the beating of my heart. I pulled my jacket tighter around my shoulders to stop the cold, but it did not help at all.",
+      "Suddenly, I heard a very strange sound behind me. It was like a soft footstep on the dry leaves. I turned my head slowly, but I could not see anyone in the dark shadows. Was it an animal? Or was it something else that lived in these deep, old woods? I tried to breathe quietly so that nothing could hear me. The silence returned, but it felt different now. It felt like someone was waiting for me to move. I stayed very still, holding my breath. My hands were shaking, and I felt tears in my eyes. The forest was full of secrets, and I was just a small boy lost in the middle of it all. I knew that I had to be very brave to survive this long night.",
+      "The morning light was finally coming to the woods. I saw the dark shadows leave the trees as the sun grew warmer. I looked around the big forest, but I did not know which way to go. The path was gone and the trees all looked the same. I stood up slowly and my legs were very sore from the cold night. My stomach felt empty and I was very tired. I walked a few steps, but every tree looked like a wall that stopped me from going home. I felt very sad because the forest was so big and I was just a tiny person in the deep dark wood. I tried to look for a sign, but there was only green leaves and brown trunks everywhere I looked.",
+      "I started to walk fast because I wanted to find the village near my house. The forest was very quiet in the morning light. I listened for a dog barking or a person talking, but there was only the sound of my own shoes on the grass. Sometimes I heard a bird sing, and it made me feel a little bit happy. I walked for many hours under the tall trees. The sun was now high in the sky and the woods were getting hot. I felt thirsty and my mouth was dry. I hoped to find a small stream with water, but there was nothing here. I was still lost in this place and I did not know how to get out of the trees.",
+      "I climbed over a large fallen tree to see what was on the other side. My clothes were torn by the sharp branches and my hands were dirty from the ground. I felt like a little explorer, but I was not having fun at all. I was scared that I would stay here for many days. Suddenly, I saw something shiny in the distance. I ran toward it, hoping it was a window or a house. My heart was jumping fast because I wanted to see my family again. But when I got closer, I saw it was only a small pool of water on the ground. I felt like crying again because I was so hungry, tired, and very lost in these old woods.",
+      "I sat by the water and looked at my sad face. The pool was like a mirror. I looked very tired and thin. My hair was messy and full of dry leaves. I drank some water, but it did not taste very good. It was warm and muddy, but my body needed it. After drinking, I stood up and looked around the forest again. The trees were tall and very thick. They looked like giants watching me. I wanted to scream, but no sound came out of my throat. The quiet in the woods was heavy and strange. I felt that the forest was a living thing and it did not want me to leave. Every path I walked on ended at a big rock or a deep hole. I was now truly lost in this deep and dark place.",
+      "The wind began to blow through the high branches above my head. It made a long and sad sound like a ghost crying in the dark. I pulled my thin coat closer to my body because I was cold again. My feet were sore and I walked with a limp. Every step was hard, but I could not stop now. If I stayed here, the night would come back and the shadows would be even worse. I thought about my warm bed and the food at my home. These thoughts made me walk faster, but I did not know the right way. I checked the position of the sun, but the trees were so dense that I could not see the blue sky. The green forest was my only world, and it was a giant, lonely prison for me.",
+      "Suddenly, I heard a sound that was not the wind or a bird. It was a low and strange noise, like something big moving in the bushes. I stopped and held my breath. My heart started beating very fast in my chest. I looked left and right, but I saw nothing. Then, I saw a branch move far away. Something was watching me from the dark parts of the trees. I wanted to run, but my legs felt very heavy, like they were stuck in the ground. The forest felt even darker now. I whispered my name because I wanted to feel real. The woods stayed silent again, but I knew I was not alone anymore. Something was there, waiting in the shadows, and I was just a small, scared person in the middle of it all.",
+      "The sky above the forest began to change color as the sun moved away. The green light became a dark purple and then a deep gray. I kept walking because I was afraid of the long night that was coming again. My legs felt weak and my shoes were old and torn now. I looked for a path, but I saw only more trees and thick bushes. The forest felt like it was closing in on me. I felt the air grow cold against my face. I remembered my home far away, and I felt a tear run down my cheek. I was very tired of this walk, and my body was shaking from the cold. The trees stood still like silent guards waiting for me to stop moving forever.",
+      "Suddenly, I felt a strange wind blow past my ears. It carried a sound that made me shiver, like a deep voice whispering in the dark. I looked back, but I saw no one there. The shadows on the ground seemed to stretch out like long, black fingers. I tried to walk faster, but the roots of the trees caught my feet and made me trip. I fell onto the wet earth, and my hands became dirty and cold. I did not want to stand up again, but I knew that the darkness would bring even more fear. I whispered a short prayer into the quiet air. The forest did not answer me, but the trees seemed to lean closer to watch my pain.",
+      "My eyes searched the dark woods for any sign of a way out. I thought I saw a small light in the distance, maybe a house or a lamp. I walked toward it, but the light was only a trick of the moon shining through the branches. I felt a heavy sadness in my heart because I knew I was still very lost. The air was very thick now, and I had trouble breathing. I decided to sit down by an old, broken tree. I closed my eyes and tried to forget the scary sounds around me. I felt very small in this big, wild world. I wondered if anyone would ever find me in this deep, dark place where the sun never touched the ground.",
+      "The morning light finally pushed through the thick branches of the tall trees. I opened my tired eyes and saw the sun shining on the soft, wet grass. I felt very weak, but I stood up slowly to look for a path again. The forest was very quiet now, and the strange sounds of the dark night had finally stopped. My clothes were dirty and ripped from my long journey through the deep woods. I looked around carefully, hoping to see a road or a familiar house. Every tree looked the same, but I refused to stay in this scary place any longer. I took one slow step, then another, feeling my heart beat fast in my chest. I knew that I had to be strong if I wanted to go home and feel safe again.",
+      "As I walked, the trees began to thin out and the air felt much warmer against my skin. I heard a distant sound that made me stop and listen with great hope. It was the sound of moving water, perhaps a small river that flows near the village. I followed the noise, pushing aside large leaves and thin branches that blocked my way. Soon, I saw the sparkling water under the morning sun. I walked along the side of the river, feeling happy for the first time in many days. The path became wider and easier to see under my feet. I saw a wooden bridge ahead and my smile grew wider. I ran toward it, leaving the dark, silent forest behind me as I moved back toward the world of light and life.",
+      "When I reached the other side of the bridge, I saw the small houses of my village far away. My legs were heavy and hurt, but I felt so much joy in my heart. I started to run toward the houses, waving my hands to get someone to see me. A man in a blue shirt saw me and started to run toward me too. He helped me sit down and brought me a cup of fresh water. I told him about the scary trees and the long night, but I was safe now. The forest could not keep me anymore because I was finally free. I looked back one last time at the dark wall of trees, happy that I found my way back to my family and my warm home."
+    ],
+    tr: [
+      "Uzun ağaçlar öğleden sonra güneşinde çok hareketsiz duruyordu. Yeşil yapraklara ve önümdeki karanlık patikaya baktım. Derin ormanda yürüyüş yapmak için harika bir gündü. Adım Arthur ve meraklı bir çocuğum. Yeni yerler bulmayı ve gizli şeyleri görmeyi seviyorum. Küçük ahşap evimden uzakta uzun bir süre yürüdüm. Orman çok sessizdi ve hiçbir kuş ya da hayvan sesi duyamıyordum. Hava serin ve taze olduğu için kendimi çok mutlu hissediyordum. Güneş tepelerin arkasında alçalmaya başladıkça yerdeki gölgeler uzamaya başladı. Hiç endişelenmedim. Eve dönüş yolunu mükemmel bir şekilde bildiğimi düşündüm. Patika ayaklarımın altında açık ve takip etmesi kolay görünüyordu.",
+      "Aniden ağaçlar birbirine çok yaklaştı. Etrafıma baktım ama artık küçük patikayı göremiyordum. Yeşil yapraklar gökyüzünden gelen ışığı sakladı ve orman çok karanlık oldu. Biraz üşüdüm. İz neredeydi? Sola baktım, sağa baktım ama her şey aynı görünüyordu. Geri dönmek için arkamı döndüm ama sadece daha fazla ağaç gördüm. Kalbim çok hızlı çarpmaya başladı. Diğer yöne doğru biraz daha yürüdüm. Sadece sık çimenler ve yaşlı çalılar vardı. Babama seslendim ama kimse bana cevap vermedi. Orman yine sessizdi. Sessizlik tuhaf ve ağırdı. Artık mutlu bir çocuk değildim. Evimi bulacak hiçbir yol olmadan derin karanlık ormanda yapayalnızdım.",
+      "Gökyüzü turuncudan koyu mora döndü. Düşünmek için sert bir taşın üzerine oturdum. Neden evden bu kadar uzağa yürüdüm? Ağlamak istedim ama gözlerimi kuru tuttum. Ağaçların uzun gövdelerine baktım. Karanlıkta duran büyük canavarlar gibi görünüyorlardı. Her ses beni ürküttü. O bir kurt muydu yoksa sadece rüzgar mı? Söyleyemedim. Orman hakkındaki hikayeleri hatırladım. İnsanlar ormanın eski ve sırlar dolu olduğunu söylerdi. Şimdi o sırların içindeydim. Küçük çantamı çok sıkı tuttum. Daha iyi görebilmek için ayın çıkmasını bekledim. Hava şimdi daha soğuktu. Kaybolmuştum ve gece her şeyi görüş alanımdan saklamak için hızla geliyordu.",
+      "Ay henüz gökyüzünde görünmedi. Gece her dakika daha da kararıyordu. Düz bir çizgide yavaşça yürümeye çalıştım ama ağaçların kalın kökleri ayaklarıma takıldı. Birkaç kez yumuşak, ıslak yosunların üzerine düştüm. Kıyafetlerim kirlendi ve ellerim ağaçların sert kabuğundan dolayı acıdı. Hareket etmeyi bırakmak istemiyordum ama çok yorgundum. Yüzüme doğru esen soğuk rüzgarı hissedebiliyordum. Her dal tenime dokunan uzun bir parmak gibi hissettiriyordu. Orman artık dostça değildi. Görünmeyen gözlerle beni izliyor gibiydiler. Küçük evimin sıcak ışığını gerçekten özledim. Annemin ismini fısıldadım ama orman sesimi yuttu. Bu karanlık ve sessiz yerde gerçekten kaybolmuştum.",
+      "Ağaçların arasında uzakta küçük bir ışık gördüm. Kalbim umutla çarpmaya başladı. Belki orada birileri beni bekliyordu. Ayağa kalktım ve ışığa doğru koşmaya çalıştım ama çalılar çok kalındı ve yolumu kesti. Dalları kenara ittim ve yürümeye devam ettim. Bacaklarım ağır hissettiriyordu ama durmadım. Işık, yere düşmüş küçük bir yıldız gibi küçüktü. Bir fener mi yoksa sadece ay ışığının bir yansıması mı olduğunu merak ettim. Yaklaştıkça ışık hiç büyümedi. Aynı yerde kaldı. Tuhaf, soluk bir renkti. Dokunmak için elimi uzattım ama o noktanın etrafındaki hava çok soğuk hissettirdi. Durdum ve dikkatlice baktım.",
+      "Işık bir insanın feneri değildi. Rüzgarda küçük bir alev gibi biraz hareket etti. Çok korktum. Orman hakkındaki hikayelerin doğru olduğunu düşündüm. Burada kimsenin anlamadığı büyülü şeyler vardı. Işıktan uzaklaştım ve büyük bir meşe ağacının arkasından onu izledim. Sessiz havada nefes alışverişim hızlı ve gürültülüydü. Işığı mı takip etmem gerektiğini yoksa ters yöne mi koşmam gerektiğini bilmiyordum. Sadece kendi yatağında güvende olmak isteyen küçük bir çocuktum. Karanlık orman artık bir tuzak gibi hissettiriyordu. Uzun süre bekledim ama ışık tekrar tamamen hareketsiz kaldı. Güneş doğana kadar olduğum yerde kalmaya karar verdim.",
+      "Kocaman ağacın arkasında saatlerce oturdum. Gece çok soğuktu ve vücudum titremeye başladı. Artık ışığı göremiyordum ama bir şeyin bana yakın olduğunu hissediyordum. Orman artık sessiz değildi. Gövdelerin arasında dolaşan fısıltılar gibi yumuşak sesler duyuyordum. Sanki yapraklar yerde hareket ediyormuş gibi geliyordu ama hiç rüzgar yoktu. Çok korktuğum için kalbim küçük göğsümde hızla çarpıyordu. Gözlerimi sıkıca kapattım ve evimi düşünmeye çalıştım. Sıcak yatağımı ve mutfağımızdaki ateşi düşündüm. Bu karanlık ve garip ağaçlardan çok uzaklarda, tekrar güvende olmak istedim. Sabahın olmasını bekledim ama derin ormanda gece çok uzun ve bitmek bilmez gibiydi.",
+      "Hava etrafımda ağır ve yoğun hissettiriyordu. Sanki ağaçlar ne yaptığımı görmek için bana daha fazla yaklaşıyormuş gibi hissettim. Gözlerimi her açtığımda, dalların şekilleri karanlıkta bana uzanan uzun, ince kollar gibi görünüyordu. Hareket etmedim çünkü ses çıkarmaktan korkuyordum. Karanlık, her şeyin üzerini örten ağır bir battaniye gibiydi. Hiçbir şeyi, kendi ellerimi bile göremiyordum. Orman, beni sonsuza kadar burada tutmak isteyen canlı bir varlık gibiydi. Üzgün ve yalnız hissettim. Birinin adımı söylemesini istedim ama tek duyduğum kalbimin atış sesiydi. Soğuğu durdurmak için ceketimi omuzlarıma daha sıkı çektim ama hiç faydası olmadı.",
+      "Aniden arkamda çok garip bir ses duydum. Kuru yaprakların üzerindeki hafif bir ayak sesi gibiydi. Başımı yavaşça çevirdim ama karanlık gölgelerin içinde kimseyi göremedim. Bir hayvan mıydı? Yoksa bu derin, eski ormanlarda yaşayan başka bir şey miydi? Hiçbir şeyin beni duyamaması için sessizce nefes almaya çalıştım. Sessizlik geri geldi ama şimdi farklı hissettiriyordu. Sanki biri hareket etmemi bekliyormuş gibiydi. Nefesimi tutarak çok hareketsiz kaldım. Ellerim titriyordu ve gözlerimde yaşlar hissettim. Orman sarlarla doluydu ve ben sadece bu her şeyin ortasında kaybolmuş küçük bir çocuktum. Bu uzun geceyi atlatmak için çok cesur olmam gerektiğini biliyordum.",
+      "Sabah ışığı nihayet ormana geliyordu. Güneş ısındıkça ağaçlardaki karanlık gölgelerin uzaklaştığını gördüm. Koca ormana etrafıma baktım ama hangi yöne gideceğimi bilmiyordum. Yol gitmişti ve tüm ağaçlar birbirinin aynısı görünüyordu. Yavaşça ayağa kalktım ve soğuk geceden dolayı bacaklarım çok ağrıyordu. Midem boş hissediyordu ve çok yorgundum. Birkaç adım attım ama her ağaç evime gitmemi engelleyen bir duvar gibi görünüyordu. Çok üzgün hissettim çünkü orman çok büyüktü ve ben bu derin karanlık ormanda sadece küçücük bir insandım. Bir işaret aramaya çalıştım ama baktığım her yerde sadece yeşil yapraklar ve kahverengi gövdeler vardı.",
+      "Evimin yakınındaki köyü bulmak istediğim için hızlı yürümeye başladım. Sabah ışığında orman çok sessizdi. Bir köpeğin havlamasını veya bir insanın konuşmasını dinledim ama sadece kendi ayakkabılarımın çimlerdeki sesi vardı. Bazen bir kuşun şarkı söylediğini duydum ve bu beni biraz mutlu etti. Uzun ağaçların altında saatlerce yürüdüm. Güneş artık gökyüzünde yüksekti ve orman ısınıyordu. Susamıştım ve ağzım kurumuştu. Su olan küçük bir dere bulmayı umuyordum ama burada hiçbir şey yoktu. Hala bu yerde kaybolmuştum ve ağaçların arasından nasıl çıkacağımı bilmiyordum.",
+      "Diğer tarafta ne olduğunu görmek için devrilmiş büyük bir ağacın üzerinden tırmandım. Kıyafetlerim keskin dallar tarafından yırtılmıştı ve ellerim yerdeki topraktan kirlenmişti. Küçük bir kaşif gibi hissediyordum ama hiç eğlenmiyordum. Burada uzun günler boyunca kalacağımdan korkuyordum. Aniden uzakta parlayan bir şey gördüm. Bir pencere ya da ev olduğunu umarak ona doğru koştum. Ailemi tekrar görmek istediğim için kalbim hızlı hızlı çarpıyordu. Ama yaklaştığımda bunun yerde sadece küçük bir su birikintisi olduğunu gördüm. Tekrar ağlamak istedim çünkü çok açtım, yorgundum ve bu eski ormanlarda kaybolmuştum.",
+      "Suyun kenarına oturdum ve üzgün yüzüme baktım. Küçük su birikintisi bir ayna gibiydi. Çok yorgun ve zayıf görünüyordum. Saçlarım karışıktı ve kuru yapraklarla doluydu. Biraz su içtim ama tadı pek güzel değildi. Ilık ve çamurluydu ama vücudumun buna ihtiyacı vardı. İçtikten sonra ayağa kalktım ve ormana tekrar baktım. Ağaçlar uzun ve çok sıktı. Beni izleyen devler gibi görünüyorlardı. Çığlık atmak istedim ama boğazımdan ses çıkmadı. Ormandaki sessizlik ağır ve garipti. Ormanın canlı bir şey olduğunu ve gitmemi istemediğini hissettim. Yürüdüğüm her yol büyük bir kayada ya da derin bir çukurda bitiyordu. Artık bu derin ve karanlık yerde gerçekten kaybolmuştum.",
+      "Rüzgar başımın üzerindeki yüksek dalların arasından esmeye başladı. Karanlıkta ağlayan bir hayalet gibi uzun ve hüzünlü bir ses çıkarıyordu. İnce ceketimi vücuduma doğru çektim çünkü tekrar üşümüştüm. Ayaklarım çok acıyordu ve aksayarak yürüyordum. Her adım zordu ama şimdi duramazdım. Burada kalırsam gece geri dönecek ve gölgeler daha da kötü olacaktı. Sıcak yatağımı ve evimdeki yemekleri düşündüm. Bu düşünceler daha hızlı yürümeme neden oldu ama doğru yolu bilmiyordum. Güneşin konumunu kontrol ettim ama ağaçlar o kadar sıktı ki mavi gökyüzünü göremiyordum. Yeşil orman benim tek dünyamdı ve benim için dev, yalnız bir hapishaneydi.",
+      "Aniden, rüzgar veya kuş sesi olmayan bir ses duydum. Çalılıkların içinde hareket eden büyük bir şey gibi alçak ve garip bir gürültüydü. Durdum ve nefesimi tuttum. Kalbim göğsümde çok hızlı atmaya başladı. Sağa sola baktım ama hiçbir şey görmedim. Sonra, uzaktaki bir dalın hareket ettiğini gördüm. Bir şey beni ağaçların karanlık kısımlarından izliyordu. Koşmak istedim ama bacaklarım sanki yere yapışmış gibi çok ağırdı. Orman şimdi daha da karanlık hissettiriyordu. Kendi adımı fısıldadım çünkü gerçek hissetmek istiyordum. Orman yine sessiz kaldı ama artık yalnız olmadığımı biliyordum. Bir şey oradaydı, gölgelerin içinde bekliyordu ve ben de hepsinin ortasında küçük, korkmuş bir insandım.",
+      "Ormanın üzerindeki gökyüzü, güneş uzaklaştıkça renk değiştirmeye başladı. Yeşil ışık önce koyu mora, sonra derin bir griye dönüştü. Yeniden gelecek olan uzun geceden korktuğum için yürümeye devam ettim. Bacaklarım zayıf hissediyordu ve ayakkabılarım artık eski ve yırtıktı. Bir yol aradım ama sadece daha fazla ağaç ve sık çalılar gördüm. Orman üzerime geliyormuş gibi hissettiriyordu. Havanın yüzüme karşı soğuduğunu hissettim. Uzaklardaki evimi hatırladım ve yanağımdan bir damla yaş süzüldü. Bu yürüyüşten çok yorulmuştum ve vücudum soğuktan titriyordu. Ağaçlar, sonsuza dek hareket etmeyi bırakmamı bekleyen sessiz muhafızlar gibi hareketsiz duruyordu.",
+      "Aniden, kulaklarımın yanından garip bir rüzgarın estiğini hissettim. Karanlıkta fısıldayan derin bir ses gibi, beni ürperten bir ses getirdi. Arkama baktım ama kimseyi göremedim. Yerdeki gölgeler, uzun, siyah parmaklar gibi uzanıyor gibiydi. Daha hızlı yürümeye çalıştım ama ağaç kökleri ayaklarıma takıldı ve tökezlememe neden oldu. Islak toprağa düştüm; ellerim kirlendi ve üşüdü. Tekrar ayağa kalkmak istemedim ama karanlığın daha da fazla korku getireceğini biliyordum. Sessiz havaya kısa bir dua fısıldadım. Orman bana cevap vermedi ama ağaçlar acımı izlemek için bana daha fazla yaklaşıyor gibi görünüyordu.",
+      "Gözlerim, çıkış yoluna dair bir işaret için karanlık ormanı taradı. Uzakta küçük bir ışık gördüğümü sandım; belki bir ev ya da bir lamba. Ona doğru yürüdüm ama ışık sadece dalların arasından parlayan ayın bir oyunuydu. Hala çok kaybolmuş olduğumu bildiğim için kalbimde derin bir hüzün hissettim. Hava artık çok kalındı ve nefes almakta zorlanıyordum. Eski, kırık bir ağacın kenarına oturmaya karar verdim. Gözlerimi kapattım ve çevremdeki korkutucu sesleri unutmaya çalıştım. Bu büyük, vahşi dünyada kendimi çok küçük hissettim. Güneşin yere hiç değmediği bu derin, karanlık yerde bir gün birinin beni bulup bulamayacağını merak ettim.",
+      "Sabah ışığı sonunda uzun ağaçların kalın dallarının arasından sızdı. Yorgun gözlerimi açtım ve güneşin yumuşak, ıslak çimenlerin üzerinde parladığını gördüm. Çok zayıf hissettim ama tekrar bir yol bulmak için yavaşça ayağa kalktım. Orman artık çok sessizdi ve karanlık gecenin tuhaf sesleri nihayet durmuştu. Kıyafetlerim derin ormanlardaki uzun yolculuğum yüzünden kirli ve yırtıktı. Bir yol ya da tanıdık bir ev görmeyi umarak dikkatlice etrafıma baktım. Her ağaç aynı görünüyordu ama bu korkutucu yerde daha fazla kalmayı reddettim. Bir adım attım, sonra bir tane daha; kalbimin göğsümde hızla çarptığını hissediyordum. Eve dönmek ve tekrar güvende hissetmek istiyorsam güçlü olmam gerektiğini biliyordum.",
+      "Yürüdükçe ağaçlar seyrekleşmeye başladı ve hava tenimde çok daha sıcak hissedildi. Durmamı ve büyük bir umutla dinlememi sağlayan uzak bir ses duydum. Bu, belki köyün yakınından akan küçük bir nehir olan, akan suyun sesiydi. Sesi takip ettim, yolumu kapatan büyük yaprakları ve ince dalları kenara ittim. Kısa süre sonra sabah güneşinin altında parıldayan suyu gördüm. Nehrin kıyısı boyunca yürüdüm, günler sonra ilk defa mutlu hissediyordum. Yol genişledi ve ayaklarımın altında görmesi daha kolay hale geldi. İleride ahşap bir köprü gördüm ve gülümsemem büyüdü. Ona doğru koştum, ışık ve hayat dolu dünyaya geri dönerken karanlık, sessiz ormanı arkamda bıraktım.",
+      "Köprünün diğer tarafına ulaştığımda köyümün küçük evlerini uzaktan gördüm. Bacaklarım ağırdı ve acıyordu ama kalbimde çok fazla neşe hissettim. Evlere doğru koşmaya, birinin beni görmesi için ellerimi sallamaya başladım. Mavi gömlekli bir adam beni gördü ve o da bana doğru koşmaya başladı. Oturmama yardım etti ve bana bir bardak taze su getirdi. Ona korkutucu ağaçlardan ve uzun geceden bahsettim, ama artık güvendeydim. Orman beni artık tutamazdı çünkü sonunda özgürdüm. Son bir kez karanlık ağaç duvarına geri baktım, aileme ve sıcak yuvama geri dönüş yolumu bulduğum için mutluydum."
+    ],
+    words: {
+      "forest": "orman",
+      "path": "patika",
+      "shadow": "gölge",
+      "silent": "sessiz",
+      "monster": "canavar",
+      "lost": "kaybolmuş",
+      "root": "ağaç kökü",
+      "moss": "yosun",
+      "bark": "ağaç kabuğu",
+      "branch": "dal",
+      "flame": "alev",
+      "trap": "tuzak",
+      "whisper": "fısıltı",
+      "endless": "bitmek bilmez",
+      "survive": "hayatta kalmak",
+      "brave": "cesur",
+      "sore": "ağrılı",
+      "tiny": "küçücük",
+      "thirsty": "susamış",
+      "stream": "dere",
+      "explorer": "kaşif",
+      "mirror": "ayna",
+      "giant": "dev",
+      "throat": "boğaz",
+      "ghost": "hayalet",
+      "prison": "hapishane",
+      "breathe": "nefes almak",
+      "darkness": "karanlık",
+      "shiver": "titremek",
+      "distant": "uzak",
+      "journey": "yolculuk",
+      "sparkling": "parıldayan",
+      "bridge": "köprü",
+      "free": "özgür"
+    }
+  }
+,
+  {
+    id: 'horror_cold_breeze',
+    title: "The Cold Breeze",
+    author: 'Wilkie Collins',
+    level: 'A2',
+    coverUrl: '/covers/horror_cold_breeze.webp',
+    en: [
+      "The winter night was very dark and the air was freezing. I walked quickly along the narrow path near the old, empty house. The wind started to blow, and it felt like a cold hand on my skin. I did not like this place. The trees were tall and black against the gray sky, and they made strange shapes in the night. I heard a sound behind me, but when I turned around, there was nothing to see. My heart beat fast because I felt afraid. Everything was quiet except for the wind. The silence of the night was heavy and deep. I needed to get to the village, but the path felt long and endless. The cold air made my breath look like white smoke as I moved through the shadows of the woods.",
+      "I saw a small light in the distance, which gave me a little hope. Maybe someone lived in the old house at the edge of the forest. The house was very old and had broken windows. It looked sad and lonely. I walked closer, and the wind became louder and more powerful. It whistled through the old wood, making a sound like a sad voice calling for help. I pulled my coat tighter around my body to stay warm. The cold breeze was not natural; it felt like a ghost was standing right next to me. I wanted to run, but my legs were very tired from the long walk in the deep snow. I knew that something strange was happening in this dark place tonight, and I was all alone.",
+      "When I reached the front door, I stopped. The house looked even more terrible up close. The garden was full of dead plants and sharp rocks. I looked through a dirty window and saw a dark room. There was no fire, but there was a strange, cold light coming from the corner. It made me shiver. I felt a sudden pain in my chest because the air was so icy cold. I tried to open the door, but it was locked tight. Suddenly, the wind stopped completely. Everything was silent, and the stillness was worse than the wind. I stood there, waiting for something to happen. I could feel the invisible breath of the night pressing against me, and I knew that I could not stay in this place for long.",
+      "I decided to look for another way into the house because the front door was clearly impossible to open. I walked slowly around the building while the frozen mud cracked loudly under my heavy boots. The back garden was a wild place full of tall, dry grass and twisted bushes that caught at my clothes like thin, hungry fingers. I felt very nervous, yet I could not stop myself from searching for a secret entrance. The shadows seemed to move as I passed by them, and the silence became even louder than the wind had been before. I found a small wooden window that was not locked, and I pushed it open with great effort. The wood was old and weak, so it gave way easily, allowing me to climb inside the dark kitchen where the smell of dust was very strong.",
+      "Once I was inside, I stood perfectly still and listened for any sounds of life, but there were none to be found. The kitchen was cold, and the air felt thick and heavy as if someone had left the room only a moment ago. I used my small lamp to see, but the flame flickered dangerously as if something were trying to blow it out. The floorboards were rotten and made loud creaking noises with every single step I took on my way to the hallway. I felt a sudden, sharp cold breeze brush against my neck, which made my skin crawl with fear. I knew that I was not alone in this house, but I could not explain how I felt so certain of a presence nearby. The darkness ahead looked deep and endless, hiding many secrets.",
+      "My hands were shaking as I held the lamp high to light the long hallway that led into the center of the house. I saw portraits on the walls with faces that seemed to watch me with judging, unfriendly eyes. I reached the middle room, which was filled with old furniture covered in thick, white dust sheets that looked like ghosts in the dim light. I stopped when I noticed a door at the end of the hall that was slightly open. I moved forward very slowly, feeling the temperature drop even further until my breath became thick clouds of mist. I felt a strange power pull me toward that room, and I knew that whatever lived in this house was waiting for me behind that heavy, wooden door. I felt a deep sense of dread growing in my tired heart.",
+      "I took a deep breath and pushed the heavy wooden door open with my trembling hand. It made a loud, sharp sound that echoed through the dark hallway like a scream. I entered the room and held my lamp high above my head to see what was hidden inside. The room was very large and filled with shadows that danced on the walls. There were broken chairs and a large wooden desk in the middle of the space. Everything was covered in thick grey dust, showing that nobody had been here for many long years. I felt the same cold breeze again, but this time it was much stronger than before. It felt like icy fingers touching my skin, and I felt a sudden urge to run away. However, my feet would not move because I was terrified of the dark corners.",
+      "My eyes searched every corner of the room, looking for anything that might explain the strange feeling. I noticed a small table in the corner with a dusty letter lying on top of it. I walked toward the table and felt my heart beating fast inside my chest. The floorboards under my feet made soft, sad sounds as if they were crying. I looked down at the letter and saw that it was written in old, faded ink that was hard to read. I reached out to touch the paper, but a sudden wind blew through the room and knocked my lamp over. The glass hit the floor and broke into many small pieces. My light went out completely, leaving me in total darkness while the wind whistled a sad and lonely song.",
+      "I stood in the darkness and felt very small and weak. I could hear someone breathing quietly near me, even though I could not see a single person in the room. The air felt colder than ice, and I knew that something was watching me from the shadows. I reached into my pocket to find a match to light my lamp again, but my fingers were shaking too much to hold anything. I felt a invisible hand brush against my shoulder, and I let out a soft cry of pure terror. The smell of old flowers and dust filled my nose as the mysterious presence moved closer to me. I closed my eyes tightly, hoping that this was only a bad dream, but the cold touch against my neck was far too real to be anything but a nightmare.",
+      "I stood very still in the pitch-black darkness, my heart thumping against my ribs like a trapped bird. The breathing sound was getting louder, closer, and more human with every passing second. I tried to scream, but my throat felt tight and dry as if someone were holding it with cold, invisible fingers. The air in the room was heavy with the smell of wet earth and ancient dust. I could feel the presence moving around me, pacing back and forth with soft, rhythmic steps on the rotten wooden floor. Every time the unknown visitor moved, a sharp, icy draft swept across my face. I realized then that I was not alone in this house, and the thing that shared this space with me was waiting for me to lose my mind from fear.",
+      "Suddenly, the breathing stopped completely, and a deathly silence filled every corner of the vast, hollow room. I waited for something to happen, holding my breath until my lungs burned. Then, a low, rasping voice whispered a name that I did not recognize into my ear. The sound was not loud, but it carried a weight of sorrow that made my skin crawl and my muscles stiffen. It was the voice of someone who had suffered deeply for a long time. I reached out blindly into the darkness, hoping to touch a wall or a piece of furniture to find my way toward the door. Instead, my hand met something that felt like freezing air combined with the texture of cold, rough stone. It was not a physical wall, but something that sent a shock of pure electricity through my whole body.",
+      "The pressure in the room seemed to increase as if the walls were slowly closing in on me. I knew that I had to act fast or I would remain in this room forever. I dropped to my knees, feeling the rough dust against my skin, and crawled forward in the direction I remembered the exit being. My hands brushed against something hard on the floor, and I quickly realized it was the broken glass of my lamp. I picked up a larger piece and held it tightly, using it as a weapon if necessary. The cold breeze intensified, blowing my hair back and making my clothes rattle against my skin. I could feel the mysterious force pulling me backward, away from safety. I pushed forward with all my strength, my focus entirely on the promise of the pale light waiting in the corridor.",
+      "I crawled across the floor while the air grew colder and heavier with every movement. My heart beat fast as I tried to ignore the strange, icy touch that followed my hands. The dark room felt like a cage, and the walls seemed to reach out to grab my clothes. I stopped for a moment to catch my breath, listening for any sign of the unseen visitor. Silence returned, but it was a heavy, waiting silence that felt more dangerous than the whispers. I knew the presence was watching me, hiding in the shadows just behind my back. I clutched the sharp piece of glass in my palm until it cut into my skin. The pain helped me stay awake and focused, preventing me from falling into a deep, dark faint from the sheer terror of the situation.",
+      "The path toward the door appeared to grow longer, as if the room itself was stretching into the distance. I pushed my body forward, my knees sore from the hard, wooden floor boards. The cold breeze hit me again, stronger this time, carrying the scent of salt and old, forgotten seas. It felt like the house was trying to warn me or keep me trapped within its decaying walls forever. Every time I tried to stand up, the freezing wind pushed me down, making me feel small and weak. I looked toward the end of the room where a faint, silver light flickered like a dying candle. It was my only hope of finding a way out of this nightmare. I dragged myself ahead, refusing to look back at the darkness that hungrily followed me.",
+      "As I neared the exit, the air changed again, becoming thick with a strange, static energy that made my hair stand on end. I felt a sudden push against my shoulder, as if an invisible hand wanted to stop me from escaping. I shouted out, my voice sounding thin and weak in the massive, hollow space, but no one answered. I did not stop moving, using my last bit of energy to reach the heavy door frame. My fingers touched the cold metal of the handle, and I pulled with all my strength. The door groaned, shaking on its old hinges as if it were alive. Finally, it gave way, opening just enough for me to squeeze through. I lunged forward into the hallway, leaving the cold, dark room and its mystery behind me in the shadows.",
+      "I stood in the narrow hallway with my heart hammering against my chest like a trapped bird. The darkness here was different than inside the room because it felt alive and watchful. I could still feel the cold breeze following me through the doorway, as if the spirit of the house refused to let go of its prize. I leaned against the cold wallpaper, trying to steady my breathing while the sweat turned to ice on my forehead. My eyes searched the shadows, but I saw nothing except the shifting gloom. Every sound in the house was now magnified, the creaking floorboards sounding like distant thunder. I knew the danger was not behind me; it was all around me, waiting for me to make one mistake before it could finish its dark task.",
+      "Suddenly, a sharp light appeared at the end of the long corridor, flickering rhythmically like a heartbeat. I hesitated, unsure if this was a beacon of safety or another trick designed to lead me into a deeper trap. The air grew still, and the oppressive cold changed into a strange, dry heat that made my lungs burn. I realized that the house was changing its shape again, trying to confuse my senses and keep me wandering until I became lost forever. I gripped the wall, finding a small wooden carving that acted as a guide in the darkness. I started walking, keeping my hand pressed firmly against the rough surface, refusing to let the house manipulate my movements any longer. The path was uneven and broken, but I kept my focus on the distant light ahead.",
+      "As I reached the midpoint of the hall, the walls seemed to lean inward, whispering words in a language I could not understand. The voices were soft and ghostly, vibrating through the floorboards and into the soles of my shoes. I closed my eyes tightly, blocking out the sight of the shifting shadows that danced like ghosts on the ceiling. I reminded myself that I was still in control of my own body and my own mind. I marched forward with stubborn determination, fighting against the heavy pull of the unseen force that wanted to drag me back to the cold room. My legs were tired and my spirit was frayed, but I knew that freedom was only a few steps away. I pushed past the fear, moving toward the light until the darkness finally started to fade away.",
+      "I finally reached the end of the long corridor and saw the heavy front door standing slightly open. The pale moonlight poured inside, covering the floor in a silver blanket that felt like a dream. Outside, the night air was calm and quiet, which was a huge contrast to the terror I had experienced inside those ancient, cursed walls. I did not look back at the dark windows or the shifting shadows that had haunted my every move. I stepped out onto the wet grass, feeling the soft earth beneath my feet instead of the hard, cold wood of the house. The cool breeze on my face was now a gentle touch, not the icy grip of the ghost. I walked toward the gate with shaky legs, knowing that my long nightmare was truly over at last.",
+      "The garden was silent, and the trees stood still, as if they were watching me escape with a sense of relief. I reached the iron gate and pushed it open, listening to the familiar sound of metal against metal. Once I was on the road, I started to run, leaving the dark house far behind me in the distance. The village lights flickered in the valley, looking like tiny stars that promised safety and human company. My heart finally began to slow down, and the sharp fear in my chest turned into a deep, exhausted sense of peace. I knew that I had survived the secrets of the mansion, but the memory of that cold, unnatural wind would always stay with me, reminding me that some things in this world remain unexplained.",
+      "Looking back one last time, the house looked like a dark, sleeping monster hidden among the trees. It remained silent and still, showing no sign of the supernatural chaos that I had faced within its walls. I realized then that the house was not just a building, but a vessel for memories and spirits that did not belong to the living. I continued walking until I reached the main road, where the sounds of the night felt normal and welcoming again. The cold breeze had finally released its hold on my soul, and I was free to return to my own life. I took a deep breath of the fresh, clean air, grateful for the simple warmth of the morning sun that would soon rise to wash away the memory of the night."
+    ],
+    tr: [
+      "Kış gecesi çok karanlıktı ve hava dondurucuydu. Eski ve boş evin yakınındaki dar yolda hızla yürüdüm. Rüzgar esmeye başladı ve cildimde soğuk bir el gibi hissediliyordu. Burayı sevmemiştim. Ağaçlar gri gökyüzüne karşı uzun ve siyahtı, gecenin içinde tuhaf şekiller oluşturuyorlardı. Arkamda bir ses duydum ama arkama baktığımda görülecek hiçbir şey yoktu. Kalbim hızlı çarpıyordu çünkü korkuyordum. Rüzgar dışında her şey sessizdi. Gecenin sessizliği ağır ve derindi. Köye varmam gerekiyordu ama yol uzun ve sonsuz görünüyordu. Ormanın gölgeleri arasından geçerken soğuk hava nefesimi beyaz bir duman gibi gösteriyordu.",
+      "Uzakta küçük bir ışık gördüm ve bu bana biraz umut verdi. Belki ormanın kıyısındaki eski evde birileri yaşıyordu. Ev çok eskiydi ve kırık pencereleri vardı. Üzgün ve yalnız görünüyordu. Daha yakınına yürüdüm ve rüzgar daha yüksek sesle, daha güçlü esmeye başladı. Eski ahşabın arasından ıslık çalarak yardım isteyen hüzünlü bir ses gibi geliyordu. Sıcak kalabilmek için paltomu vücuduma daha sıkı sardım. Soğuk esinti doğal değildi; sanki hemen yanımda bir hayalet duruyormuş gibi hissettiriyordu. Koşmak istedim ama bacaklarım karda uzun yürüyüşten dolayı çok yorgundu. Bu gece bu karanlık yerde tuhaf bir şeylerin olduğunu biliyordum ve tamamen yalnızdım.",
+      "Ön kapıya ulaştığımda durdum. Ev yakından daha da korkunç görünüyordu. Bahçe ölü bitkiler ve keskin kayalarla doluydu. Kirli bir pencereden baktım ve karanlık bir oda gördüm. Ateş yoktu ama köşeden gelen tuhaf ve soğuk bir ışık vardı. Ürpermeme neden oldu. Göğsümde ani bir acı hissettim çünkü hava buz gibi soğuktu. Kapıyı açmaya çalıştım ama sıkıca kilitliydi. Aniden rüzgar tamamen durdu. Her şey sessizdi ve durgunluk rüzgardan daha kötüydü. Bir şeylerin olmasını bekleyerek orada durdum. Gecenin görünmez nefesinin üzerime baskı yaptığını hissedebiliyordum ve bu yerde uzun süre kalamayacağımı biliyordum.",
+      "Ön kapının açılması imkansız olduğu için eve girmenin başka bir yolunu aramaya karar verdim. Donmuş çamur ağır botlarımın altında yüksek sesle çatlarken binanın etrafında yavaşça yürüdüm. Arka bahçe, uzun ve kuru otlar ile elbiselerime ince, aç parmaklar gibi takılan bükülmüş çalılarla dolu vahşi bir yerdi. Çok gergindim ama gizli bir giriş aramaktan kendimi alıkoyamıyordum. Ben yanlarından geçerken gölgeler hareket ediyor gibiydi ve sessizlik, rüzgarın olduğundan daha da yüksek bir hal almıştı. Kilitli olmayan küçük bir ahşap pencere buldum ve büyük bir çabayla onu açtım. Ahşap eski ve zayıftı, bu yüzden kolayca kırıldı ve toz kokusunun çok ağır olduğu karanlık mutfağa girmeme izin verdi.",
+      "İçeri girdiğimde tamamen hareketsiz durdum ve herhangi bir yaşam belirtisi olup olmadığını dinledim ama hiçbir ses yoktu. Mutfak soğuktu ve hava, sanki birisi odadan daha yeni çıkmış gibi yoğun ve ağırdı. Işık vermek için küçük lambamı kullandım ama alev, sanki bir şey onu söndürmeye çalışıyormuş gibi tehlikeli bir şekilde titriyordu. Döşeme tahtaları çürümüştü ve koridora doğru attığım her bir adımda yüksek gıcırtı sesleri çıkarıyordu. Boynuma çarpan ani ve keskin soğuk bir esintiyi hissettim, bu durum korkudan tüylerimin diken diken olmasına neden oldu. Bu evde yalnız olmadığımı biliyordum ama yakındaki bir varlıktan nasıl bu kadar emin olduğumu açıklayamıyordum. Öndeki karanlık derin ve sonsuz görünüyordu, birçok gizemi saklıyordu.",
+      "Evin merkezine giden uzun koridoru aydınlatmak için lambayı yukarı kaldırırken ellerim titriyordu. Duvarlarda beni yargılayan ve dostça olmayan gözlerle izliyor gibi görünen portreler gördüm. Alacakaranlıkta hayaletler gibi görünen kalın, beyaz toz örtüleriyle kaplı eski eşyalarla dolu orta odaya ulaştım. Koridorun sonunda hafifçe aralık olan bir kapıyı fark ettiğimde durdum. Çok yavaşça ileri doğru hareket ettim, sıcaklığın nefesimin kalın sis bulutlarına dönüşeceği kadar düştüğünü hissettim. Tuhaf bir gücün beni o odaya doğru çektiğini hissettim ve bu evde yaşayan her neyse, o ağır ahşap kapının ardında beni beklediğini biliyordum. Yorgun kalbimde büyüyen derin bir korku hissi vardı.",
+      "Derin bir nefes aldım ve titreyen elimle ağır ahşap kapıyı iterek açtım. Kapı, karanlık koridorda bir çığlık gibi yankılanan yüksek ve keskin bir ses çıkardı. Odaya girdim ve içinde neyin saklı olduğunu görmek için lambamı başımın üzerine kaldırdım. Oda çok büyüktü ve duvarlarda dans eden gölgelerle doluydu. Mekanın ortasında kırık sandalyeler ve büyük bir ahşap masa vardı. Her yer kalın gri bir tozla kaplıydı, bu da uzun yıllardır kimsenin buraya uğramadığını gösteriyordu. Aynı soğuk esintiyi tekrar hissettim, ancak bu sefer esinti öncekinden çok daha güçlüydü. Sanki buz gibi parmaklar cildime dokunuyordu ve aniden kaçma isteği duydum. Ancak, karanlık köşelerden öylesine korkuyordum ki ayaklarım hareket etmeyi reddediyordu.",
+      "Gözlerim, bu tuhaf hissi açıklayabilecek herhangi bir şey bulmak için odanın her köşesini taradı. Köşede üzerinde tozlu bir mektubun durduğu küçük bir masa fark ettim. Masaya doğru yürüdüm ve kalbimin göğsümün içinde hızla çarptığını hissettim. Ayaklarımın altındaki zemin tahtaları, sanki ağlıyormuş gibi yumuşak ve hüzünlü sesler çıkarıyordu. Mektuba baktım ve üzerinde okunması zor, solmuş eski bir mürekkeple yazıldığını gördüm. Kağıda dokunmak için elimi uzattım, ancak odanın içinden aniden esen bir rüzgar lambamı devirdi. Cam yere çarptı ve birçok küçük parçaya ayrıldı. Işığım tamamen söndü, rüzgar hüzünlü ve yalnız bir şarkı ıslıkla çalarken beni tam bir karanlığın içinde bıraktı.",
+      "Karanlıkta öylece durdum ve kendimi çok küçük ve güçsüz hissettim. Odada tek bir insan bile göremiyor olmama rağmen, yakınımda birinin sessizce nefes aldığını duyabiliyordum. Hava buzdan daha soğuktu ve gölgelerin içinden bir şeyin beni izlediğini biliyordum. Lambamı tekrar yakmak için cebimdeki kibritleri aradım ama parmaklarım hiçbir şeyi tutamayacak kadar titriyordu. Görünmez bir elin omzuma değdiğini hissettim ve saf bir dehşetle hafifçe haykırdım. Gizemli varlık bana yaklaştıkça, burnuma eski çiçek ve toz kokusu doldu. Bunun sadece kötü bir rüya olduğunu umarak gözlerimi sımsıkı kapattım, ancak ensemdeki o soğuk dokunuş, bir kabustan başka bir şey olamayacak kadar gerçekti.",
+      "Zifiri karanlıkta hareketsiz duruyordum, kalbim kafese kapatılmış bir kuş gibi kaburgalarıma vuruyordu. Nefes sesi giderek yükseliyor, yaklaşıyor ve her saniye daha insani bir hal alıyordu. Çığlık atmaya çalıştım ama sanki birisi soğuk, görünmez parmaklarıyla boğazımı tutuyormuş gibi boğazım daralmış ve kurumuştu. Odadaki hava, ıslak toprak ve kadim toz kokusuyla ağırlaşmıştı. Varlığın etrafımda dolandığını, çürük ahşap zemin üzerinde yumuşak, ritmik adımlarla bir o yana bir bu yana yürüdüğünü hissedebiliyordum. Bilinmeyen ziyaretçi her hareket ettiğinde, keskin ve buz gibi bir esinti yüzümü yalayıp geçiyordu. O an, bu evde yalnız olmadığımı ve bu alanı benimle paylaşan şeyin korkudan aklımı kaçırmamı beklediğini fark ettim.",
+      "Aniden nefes sesi tamamen kesildi ve uçsuz bucaksız, boş odanın her köşesini ölümcül bir sessizlik kapladı. Akciğerlerim yanana kadar nefesimi tutarak bir şeylerin olmasını bekledim. Sonra, alçak ve hırıltılı bir ses kulağıma tanımadığım bir isim fısıldadı. Ses yüksek değildi ama tenimi ürperten ve kaslarımı kaskatı kesen derin bir keder taşıyordu. Bu, uzun zamandır büyük acılar çekmiş birinin sesiydi. Kapıya giden yolu bulabilmek için bir duvara veya bir mobilyaya dokunma umuduyla karanlıkta körlemesine uzandım. Bunun yerine elim, buz gibi havayla birleşmiş soğuk ve pürüzlü taş dokusuna benzeyen bir şeye çarptı. Bu fiziksel bir duvar değildi, ancak tüm bedenime saf bir elektrik şoku gönderen bir şeydi.",
+      "Odadaki baskı, sanki duvarlar yavaş yavaş üzerime geliyormuş gibi artıyordu. Hızlı hareket etmem gerektiğini, aksi takdirde sonsuza dek bu odada kalacağımı biliyordum. Dizlerimin üzerine çöktüm, tozun pürüzlülüğünü cildimde hissederek, çıkışın olduğunu hatırladığım yöne doğru süründüm. Ellerim yerde sert bir şeye çarptı ve hızla bunun lambamın kırık cam parçaları olduğunu anladım. Daha büyük bir parçasını aldım ve gerekirse silah olarak kullanmak üzere sıkıca tuttum. Soğuk esinti şiddetlendi, saçlarımı geriye savurdu ve kıyafetlerimin tenime sürtünerek hışırdamasına neden oldu. Gizemli gücün beni geriye, güvenli ortamdan uzağa çektiğini hissedebiliyordum. Tüm gücümle ileri atıldım, odak noktam tamamen koridorda bekleyen soluk ışığın vaadiydi.",
+      "Her hareketimde hava daha soğuk ve ağır hale gelirken yerde emekleyerek ilerledim. Ellerimi takip eden o tuhaf, buz gibi dokunuşu görmezden gelmeye çalışırken kalbim hızla çarpıyordu. Karanlık oda bir kafes gibi hissettiriyordu ve duvarlar kıyafetlerimi yakalamak için uzanıyor gibiydi. Nefesimi toplamak için bir an durdum ve görünmeyen ziyaretçiden gelecek herhangi bir işareti dinledim. Sessizlik geri geldi ancak bu, fısıltılardan daha tehlikeli hissettiren ağır ve bekleyen bir sessizlikti. Varlığın beni izlediğini ve hemen arkamdaki gölgelerde saklandığını biliyordum. Elimdeki keskin cam parçasını tenimi kesecek kadar sıkı tuttum. Acı, uyanık ve odaklanmış kalmama yardımcı oluyor, durumun yarattığı saf dehşetten dolayı derin, karanlık bir baygınlık geçirmemi engelliyordu.",
+      "Oda sanki mesafeye doğru genişliyormuş gibi kapıya giden yol daha da uzuyor görünüyordu. Dizlerim sert ahşap zemin yüzünden sızlayarak vücudumu ileri doğru ittim. Soğuk esinti bu kez daha güçlü bir şekilde bana çarptı ve beraberinde tuz ile unutulmuş eski denizlerin kokusunu getirdi. Ev sanki beni uyarmaya veya çürüyen duvarlarının içinde sonsuza dek hapsetmeye çalışıyor gibiydi. Ne zaman ayağa kalkmaya çalışsam, dondurucu rüzgar beni aşağı itiyor, kendimi küçük ve zayıf hissetmeme neden oluyordu. Odanın ucunda, sönen bir mum gibi titreyen soluk, gümüş bir ışığa doğru baktım. Bu kabustan kurtulmanın tek umuduydu. Arkamdan açgözlülükle gelen karanlığa bakmayı reddederek kendimi ileri sürükledim.",
+      "Çıkışa yaklaştıkça hava tekrar değişti ve saçlarımı diken diken eden tuhaf, statik bir enerjiyle yoğunlaştı. Sanki görünmez bir el kaçmamı engellemek istiyormuş gibi omzuma ani bir baskı hissettim. Sesim devasa, boş alanda ince ve zayıf bir şekilde yankılanarak bağırdım ama kimse cevap vermedi. Ağır kapı çerçevesine ulaşmak için son enerji kırıntımı kullanarak hareket etmeyi bırakmadım. Parmaklarım kulpun soğuk metaline dokundu ve tüm gücümle çektim. Kapı inledi, sanki canlıymış gibi eski menteşelerinde sallandı. Nihayet kapı pes etti ve içinden geçebileceğim kadar açıldı. Soğuk, karanlık odayı ve gizemini gölgelerin ardında bırakarak koridora doğru fırladım.",
+      "Dar koridorda kalbim, kapana kısılmış bir kuş gibi göğsüme vurarak duruyordum. Buradaki karanlık, odanın içindekinden farklıydı çünkü canlı ve izleyici gibi hissettiriyordu. Soğuk esintinin sanki evin ruhu avını bırakmak istemiyormuş gibi kapıdan beni takip ettiğini hala hissedebiliyordum. Alnımdaki ter buza dönüşürken nefesimi düzene sokmaya çalışarak soğuk duvar kağıdına yaslandım. Gözlerim gölgeleri taradı ama hareket eden karanlıktan başka hiçbir şey göremedim. Evdeki her ses şimdi büyümüştü; gıcırdayan tahta döşemeler uzak bir gök gürültüsü gibi geliyordu. Tehlikenin arkamda olmadığını biliyordum; karanlık işini bitirebilmek için hata yapmamı bekleyerek her yanımı sarmıştı.",
+      "Aniden, uzun koridorun sonunda bir kalp atışı gibi ritmik bir şekilde titreyen keskin bir ışık belirdi. Bunun bir güvenlik işareti mi yoksa beni daha derin bir tuzağa çekmek için tasarlanmış başka bir oyun mu olduğundan emin olamayarak duraksadım. Hava durgunlaştı ve bunaltıcı soğuk, ciğerlerimi yakan garip, kuru bir sıcaklığa dönüştü. Evin şeklini tekrar değiştirdiğini, duyularımı şaşırtmaya ve ben sonsuza dek kaybolana kadar dolaşmamı sağlamaya çalıştığını fark ettim. Duvarı kavradım ve karanlıkta bir rehber görevi gören küçük bir ahşap oyması buldum. Evin hareketlerimi daha fazla manipüle etmesine izin vermeyerek elimi pürüzlü yüzeye sıkıca bastırarak yürümeye başladım. Yol engebeli ve kırıktı ama odak noktamı ilerideki uzak ışıkta tuttum.",
+      "Koridorun orta noktasına ulaştığımda, duvarlar içeriye doğru eğiliyor ve anlayamadığım bir dilde kelimeler fısıldıyordu. Sesler yumuşak ve hayaletimsiydi, tahta döşemelerden ayakkabılarımın tabanlarına doğru titreşiyordu. Gözlerimi sıkıca kapattım ve tavanda hayaletler gibi dans eden değişen gölgelerin görüntüsünü engelledim. Kendime hala kendi bedenimin ve zihnimin kontrolünün bende olduğunu hatırlattım. Beni soğuk odaya geri sürüklemek isteyen görünmez gücün ağır çekimine karşı savaşarak inatçı bir kararlılıkla ilerledim. Bacaklarım yorgundu ve ruhum yıpranmıştı ama özgürlüğün sadece birkaç adım ötede olduğunu biliyordum. Karanlık sonunda kaybolmaya başlayana kadar korkumu aşıp ışığa doğru hareket ettim.",
+      "Nihayet uzun koridorun sonuna ulaştım ve ağır ön kapının hafifçe açık olduğunu gördüm. Soluk ay ışığı içeri doluyor, zemini bir rüya gibi hissettiren gümüş bir battaniye ile kaplıyordu. Dışarıda gece havası sakin ve sessizdi, bu da o kadim, lanetli duvarların içinde yaşadığım dehşetle büyük bir tezat oluşturuyordu. Karanlık pencerelere ya da her adımımı takip eden değişken gölgelere bir daha bakmadım. Islak çimlerin üzerine adım attım, evin sert ve soğuk tahtası yerine ayaklarımın altında yumuşak toprağı hissettim. Yüzümdeki serin esinti artık hayaletin buz gibi pençesi değil, nazik bir dokunuştu. Titrek bacaklarla kapıya doğru yürüdüm, uzun kabusumun nihayet sona erdiğini bilerek.",
+      "Bahçe sessizdi ve ağaçlar sanki kaçışımı bir rahatlama hissiyle izliyorlarmış gibi hareketsiz duruyordu. Demir kapıya ulaştım ve onu iterek açtım, metalin metale sürtünürken çıkardığı tanıdık sesi dinledim. Yola çıktığımda, karanlık evi ardımda, uzakta bırakarak koşmaya başladım. Vadideki köy ışıkları titriyor, güvenlik ve insan topluluğu vaat eden küçük yıldızlar gibi görünüyordu. Kalbim nihayet yavaşlamaya başladı ve göğsümdeki keskin korku, yerini derin, yorgun bir huzura bıraktı. Malikânenin sırlarından sağ kurtulduğumu biliyordum ancak o soğuk, doğal olmayan rüzgârın anısı her zaman benimle kalacak ve bu dünyadaki bazı şeylerin açıklanamaz kaldığını bana hatırlatacaktı.",
+      "Son bir kez geriye baktığımda, ev ağaçların arasında saklanmış karanlık, uyuyan bir canavar gibi görünüyordu. İç duvarları arasında yüzleştiğim doğaüstü kaostan hiçbir iz taşımadan sessiz ve hareketsiz kalmıştı. O an anladım ki ev sadece bir bina değil, yaşayanlara ait olmayan anılar ve ruhlar için bir kaptı. Gece seslerinin tekrar normal ve davetkâr hissedildiği ana yola ulaşana kadar yürümeye devam ettim. Soğuk esinti ruhum üzerindeki etkisini nihayet bırakmıştı ve kendi hayatıma dönmekte özgürdüm. Gecenin anısını silip atacak sabah güneşinin basit sıcaklığı için minnettar bir şekilde, taze ve temiz havadan derin bir nefes aldım."
+    ],
+    words: {
+      "freezing": "dondurucu",
+      "narrow": "dar",
+      "shadow": "gölge",
+      "whistle": "ıslık çalmak",
+      "shiver": "titremek",
+      "invisible": "görünmez",
+      "shaking": "titreyen",
+      "entrance": "giriş",
+      "rotten": "çürük",
+      "creaking": "gıcırdayan",
+      "dread": "dehşet",
+      "shadows": "gölgeler",
+      "trembling": "titreyen",
+      "echo": "yankılanmak",
+      "faded": "solmuş",
+      "terror": "dehşet",
+      "mysterious": "gizemli",
+      "darkness": "karanlık",
+      "presence": "varlık",
+      "rhythmic": "ritmik",
+      "silt": "sessizlik",
+      "sorrow": "keder",
+      "corridor": "koridor",
+      "crawl": "emeklemek",
+      "hinge": "menteşe",
+      "stiff": "sert",
+      "scent": "koku",
+      "rhythmically": "ritmik bir şekilde",
+      "beacon": "işaret ışığı",
+      "oppressive": "bunaltıcı",
+      "manipulate": "yönlendirmek, manipüle etmek",
+      "determination": "kararlılık",
+      "contrast": "tezat",
+      "haunt": "musallat olmak",
+      "exhausted": "tükenmiş",
+      "supernatural": "doğaüstü",
+      "vessel": "kap"
+    }
+  }
+,
+  {
+    id: 'horror_silent_doll',
+    title: "The Silent Doll",
+    author: 'M. R. James',
+    level: 'A2',
+    coverUrl: '/covers/horror_silent_doll.webp',
+    en: [
+      "Mr. Richards was a man who enjoyed quiet places. He decided to visit a small, old town far away from the busy city. The journey was long and the train moved slowly through the foggy hills. When he finally arrived, the air felt cold and very still. He walked to the local inn with his heavy brown suitcase. The streets were empty and the windows of the houses were like dark eyes watching him. He felt a strange sensation, as if someone was waiting for him in the shadows. He looked around, but there was only the sound of his own steps on the wet stones. He pushed the heavy wooden door of the inn open. Inside, a small fire burned in the fireplace, giving a weak and flickering light to the quiet room.",
+      "The innkeeper was an old woman with grey hair and tired eyes. She did not speak much when Mr. Richards asked for a room for the night. She just pointed toward the stairs with a thin, pale finger. He climbed the narrow steps slowly. His room was small and had an old smell, like dust and dried flowers. In the corner of the room, he saw a wooden cupboard with a locked door. He wondered what was hidden inside, but he felt too tired to search. He sat on the bed and looked at the shadows on the walls. The house was very quiet, but he thought he heard a soft scratching noise coming from the cupboard. He listened carefully, but then the house became silent again, and he fell into a deep sleep.",
+      "The next morning, the sun was hidden behind thick grey clouds. Mr. Richards went downstairs to find some breakfast. He saw a small girl sitting on a wooden chair by the window. She was holding a doll that looked very old and strange. The doll had large glass eyes that seemed to stare at him. The girl did not smile or say hello. She just looked at him with a cold expression. Mr. Richards tried to speak to her, but she turned her head away quickly. The doll seemed to smile in a way that made him feel uncomfortable. He realized that this place was not a normal town. Something secret lived here, and he started to regret his decision to come to this dark and lonely village for his holiday.",
+      "Mr. Richards finished his simple breakfast, but his mind stayed on the strange girl and her silent doll. The room felt colder than before, and the breakfast table was dusty. He decided to walk outside into the village to clear his head. The air was heavy and thick with grey mist. As he walked along the narrow stone road, he noticed that the houses looked very old and sad. There were no people on the streets. Every door was shut tight, and every window was covered with heavy, dark curtains. He felt like a visitor in a place that did not want him there. He continued walking until he reached the edge of the woods. The trees were tall and black against the cloudy sky. He stopped, hearing a faint, high sound that made his heart beat faster than usual.",
+      "The sound was like a small laugh, but it was not human. Mr. Richards looked behind a large oak tree. He saw nothing, only brown leaves moving on the ground. He felt a sudden chill, as if an icy wind had passed through his heavy coat. He turned around to return to the inn, but he lost his way in the thick fog. The paths looked the same, and the village seemed to have moved or changed. He walked quickly, his boots clicking on the wet ground. The silence was deep and frightening. Then, he saw a small wooden toy lying in the mud near a gate. It was a tiny hand, made of wood, painted with bright but fading colors. He picked it up and felt a cold shock travel through his tired hands immediately.",
+      "He remembered the doll from the inn. It had missing pieces, and this hand looked exactly like the one that the strange girl held earlier that morning. He put the small, cold object into his pocket and started to run toward the town center. The fog started to lift, and he saw the inn again. The old woman was standing at the door, her eyes watching him with a fixed, scary look. She said nothing, but her mouth made a thin, straight line. Mr. Richards entered the room, feeling wet and very nervous. He wanted to leave this place, but his legs felt heavy as if they were made of stone. The cupboard in his room was waiting for him, and he knew he would have to look inside before the long night ended.",
+      "Mr. Richards climbed the stairs with a heavy heart. Each wooden step made a loud sound in the quiet house. He reached the door of his room and stopped to catch his breath. The air in the hallway felt very strange and cold. He could smell old dust and something like dry, dead leaves. He took the small wooden hand out of his pocket. It was still very cold to the touch. He did not want to open the cupboard, but he felt that he had no choice. The silent doll was waiting for him inside. He knew that the answers to his many questions were hidden in that dark space. He slowly turned the metal handle and pushed the door open. The room inside was black and filled with a thick, heavy shadow that seemed to move against his face.",
+      "Inside the cupboard, he saw the doll sitting on a high shelf. It looked exactly like the one he had seen before, but it was sitting in a different position. The girl was not in the room, but the air felt like she was watching him from behind the walls. He held his candle high to get a better look at the toy. It was made of old wood and worn fabric. The doll had no eyes, but it felt as though it were staring deep into his soul. He moved closer and placed the wooden hand on the shelf next to the doll. Suddenly, the cupboard door slammed shut behind him. The sound was very loud and echoed in the small room like a sharp cry. He felt a sudden fear rise in his chest.",
+      "He pulled at the door, but it would not open. The wood was solid and hard under his fingers. He started to knock on the door, hoping someone would hear him, but the house remained completely silent. It was as if the world outside had vanished into the grey mist. He sat down on the floor and waited for the morning light to return. The room became colder than he had ever felt before. He heard a soft movement from the shelf. He looked up, but he could see nothing in the dark. Then, he heard a sound like wooden sticks hitting each other. The doll was moving. He tried to stand up, but his legs could not move. The atmosphere in the room felt heavy and impossible to escape.",
+      "Mr. Richards tried to breathe as he sat on the cold wooden floor. The darkness was thick and he felt very alone. Suddenly, he heard a sound like small dry feet moving on the wood. It was the sound of the doll. He held his breath, hoping that he was just imagining things. However, the clicking sound grew closer. Something was climbing down from the high shelf. He felt a sharp cold breeze touch his cheek. The doll was not just a toy anymore. It had a strange power that made the air feel heavy. He wanted to run away but his body would not listen to him. He was trapped in the dark with the silent doll. Every time he tried to move, the clicking noise started again. It was coming from the corner of the small, dusty cupboard.",
+      "The doll was now very close to him. He could hear a strange scratching noise on the floorboards. It sounded like thin, dry fingers were touching the wood. Mr. Richards felt a deep chill in his bones. He knew that the doll was hunting for its missing hand. He looked into the dark, trying to see the shape of the toy. The moonlight finally came through a small hole in the wall. He saw the doll standing there. It was much taller than before and its arms were very long. The doll turned its head in his direction. Even without eyes, it seemed to see him clearly. He felt a great wave of fear. He tried to speak, but his voice was gone. The silence in the room was louder than any scream he had ever heard before.",
+      "He watched as the doll walked slowly toward the shelf where he had left the wooden hand. It moved in a strange and jagged way, like a spider made of wood. When the doll reached the shelf, it picked up the hand with a quiet clicking sound. Then, it turned back to look at Mr. Richards. A terrible feeling filled the small space. The doll was no longer silent. A faint, high voice began to whisper in the room. The words were old and hard to understand, but they sounded like a warning. Mr. Richards closed his eyes, hoping to wake up in his bed. He felt the doll move closer to his face. The cold touch of wood brushed against his skin. He realized that the mystery of the doll was now his own prison in the dark.",
+      "Mr. Richards shivered as the doll stood directly in front of him. Its wooden body felt colder than the winter air outside. He kept his eyes closed tight because he did not want to see the creature again. The doll was now holding its broken hand and moving it in circles in the air. He could hear the wood clicking against the hard floor. Every sound made his heart beat faster against his chest. He felt like he was not alone in this dark cupboard anymore. Other shadows seemed to wake up as the doll whispered more words. These shadows were dark and thin, stretching across the dusty walls like long fingers. He tried to crawl away into a corner, but his legs were weak and tired. He felt trapped by the heavy silence that lived inside this strange house.",
+      "The doll moved its head again, and Mr. Richards heard a sharp cracking sound. It was the sound of old wood moving after many years. He knew the doll was waiting for him to open his eyes. He stayed very still, hoping the toy would lose interest and go away. But the clicking noise returned, louder and faster than before. It was moving closer to his face now. He felt a light touch on his hair, soft and cold like dead leaves. A feeling of great danger filled his mind. He realized that the doll wanted more than just its hand. It wanted to take something from him that he could not name. He tried to think of a way to escape the cupboard, but the door stayed locked, heavy and firm against his pushes.",
+      "He remembered the stories people told about the house in the village. They said the owner of the doll had disappeared many years ago. Now, Mr. Richards understood why. The doll was not a simple object but a trap for anyone who stayed too long. It breathed in the fear of the people it caught. He could feel his strength leaving his body as the coldness spread from his skin to his heart. He gathered all his remaining courage and stood up suddenly. He grabbed a heavy wooden box nearby and threw it at the corner where the doll stood. The loud noise echoed in the small space and the clicking stopped for a moment. He quickly reached for the door handle, praying that it would finally open for him to run out into the night.",
+      "The door handle turned slowly in his trembling hand. Mr. Richards pulled with all his might, and the heavy wood finally swung open with a loud groan. He did not look back at the dark cupboard. He ran out into the hallway as fast as his tired legs could carry him. The air in the house felt thick and heavy, like it was pulling him back. He could still hear the faint clicking of the wooden doll behind him, even though he was now outside the room. The silence of the house was broken by the sound of his own heavy breathing. He reached the main stairs and began to run down them, stumbling in the dim light of the flickering candles on the wall. Every shadow seemed to reach out for him as he hurried toward the front exit.",
+      "He finally reached the front door and pushed it open with a desperate cry. The cool night air hit his face, and he felt a brief moment of relief. He did not stop to look at the garden or the empty street behind him. He ran until his chest felt like it was burning, far away from the old house and its strange secrets. The village was quiet, and the moon shone brightly over the rooftops. He saw the lights of a small tavern in the distance and headed toward them. His clothes were covered in dust and cobwebs, and his face was pale with fear. People inside the tavern looked at him with wide, confused eyes. He could not speak, but his trembling body told them everything they needed to know about the horror he had escaped.",
+      "The villagers sat around him while he drank some water to calm his shaking hands. He told them about the silent doll and the cold, dark cupboard that trapped the spirit of the old owner. Some of the old men nodded as if they already knew the truth about the house. They told him that the house was now empty and that no one had lived there for a very long time. Mr. Richards felt a deep sense of sadness for the soul that was trapped inside the wood. He knew that he would never return to that place again. The nightmare was finally over, but the memory of the clicking sound would stay with him forever. He sat by the fire, listening to the safe sounds of the world while the doll waited in the dark.",
+      "The morning sun brought a cold light to the village as Mr. Richards finally felt safe from the terrors of the house. He sat by the warm hearth in the tavern, but his heart still beat fast with fear. He told the villagers about the wooden doll and the strange clicking sound that followed him through the halls. The people listened with grave faces, knowing that some secrets in this world are better left undisturbed. The old wood of the doll had held something dark and ancient inside it for many long years. Mr. Richards tried to forget the pale face of the doll, but every time he closed his eyes, he saw its tiny, sharp hands reaching for him in the shadows. The memory of that house would always be a heavy weight upon his spirit.",
+      "Days passed, and Mr. Richards decided to leave the village behind to find peace in a new town. He never spoke of the silent doll again, though the image of it stayed in his mind like a ghostly picture. Sometimes, when the wind blew against his window at night, he thought he heard the clicking sound again. He knew the house remained empty, standing tall and lonely on the hill under the dark sky. The villagers promised never to enter that place, fearing the wooden toy that sat waiting in the cupboard. Mr. Richards lived a quiet life, always keeping his own doors locked tight, even during the bright, sunny days of summer. He understood now that some things exist beyond our simple human understanding, hiding in the dark corners of forgotten houses.",
+      "In the end, the legend of the silent doll grew old, but the fear remained in the hearts of those who knew the story. Mr. Richards often sat in his garden, watching the flowers grow and trying to be happy. He kept his mind busy with books and stories, but he always felt a strange shiver whenever he saw a child playing with a wooden toy. It was a cold, deep feeling that reminded him of the cupboard where the doll waited in the dark. Life went on, and the old house eventually fell into ruin, becoming just a pile of stone and broken wood. Yet, beneath the dust and the heavy silence, the spirit within the doll remained trapped in its wooden shell, forever waiting for someone to open the door once more."
+    ],
+    tr: [
+      "Bay Richards sessiz yerlerden hoşlanan bir adamdı. Şehrin kalabalığından uzak, küçük ve eski bir kasabayı ziyaret etmeye karar verdi. Yolculuk uzundu ve tren sisli tepelerin arasından yavaşça ilerledi. Sonunda vardığında hava soğuk ve çok durgundu. Ağır kahverengi valiziyle yerel hana doğru yürüdü. Sokaklar boştu ve evlerin pencereleri onu izleyen karanlık gözler gibiydi. Gölgelerde birinin onu beklediği hissiyle tuhaf bir duyguya kapıldı. Etrafına baktı ama sadece ıslak taşlar üzerindeki kendi adımlarının sesini duydu. Hanın ağır ahşap kapısını iterek açtı. İçeride, şöminede küçük bir ateş yanıyor, sessiz odaya zayıf ve titrek bir ışık veriyordu.",
+      "Hancı, gri saçlı ve yorgun gözleri olan yaşlı bir kadındı. Bay Richards gece için bir oda sorduğunda pek konuşmadı. Sadece ince, solgun parmağıyla merdivenleri işaret etti. Dar basamakları yavaşça çıktı. Odası küçüktü ve toz ve kurumuş çiçekler gibi eski bir kokuya sahipti. Odanın köşesinde kilitli bir kapısı olan ahşap bir dolap gördü. İçinde neyin saklı olduğunu merak etti ama araştırmak için fazla yorgundu. Yatağa oturdu ve duvarlardaki gölgelere baktı. Ev çok sessizdi ama dolaptan gelen hafif bir tırmalama sesi duyduğunu sandı. Dikkatlice dinledi, ancak sonra ev tekrar sessizliğe gömüldü ve derin bir uykuya daldı.",
+      "Ertesi sabah güneş, kalın gri bulutların arkasına saklanmıştı. Bay Richards kahvaltı etmek için aşağı indi. Pencerenin yanındaki ahşap sandalyede oturan küçük bir kız çocuğu gördü. Çok eski ve tuhaf görünen bir oyuncak bebek tutuyordu. Bebeğin ona dik dik bakan büyük cam gözleri vardı. Kız gülümsemedi ya da merhaba demedi. Ona sadece soğuk bir ifadeyle baktı. Bay Richards onunla konuşmaya çalıştı ama o başını hızla başka yöne çevirdi. Oyuncak bebek, onu rahatsız eden bir şekilde gülümsüyor gibiydi. Buranın normal bir kasaba olmadığını anladı. Burada gizli bir şey yaşıyordu ve tatili için bu karanlık ve yalnız köye gelme kararından pişman olmaya başladı.",
+      "Bay Richards basit kahvaltısını bitirdi ama aklı tuhaf kızda ve onun sessiz bebeğinde kalmıştı. Oda eskisinden daha soğuk hissediliyordu ve kahvaltı masası toz içindeydi. Zihnini boşaltmak için köyün içine doğru yürümeye karar verdi. Hava ağır ve gri bir sisle kaplıydı. Dar taş yolda ilerlerken evlerin çok eski ve hüzünlü göründüğünü fark etti. Sokaklarda hiç kimse yoktu. Her kapı sıkıca kapalıydı ve her pencere ağır, koyu renkli perdelerle örtülüydü. Kendisini burada istemeyen bir yerde bir ziyaretçi gibi hissediyordu. Ormanın kenarına ulaşana kadar yürümeye devam etti. Ağaçlar bulutlu gökyüzüne karşı uzun ve simsiyahtı. Kalbinin normalden daha hızlı atmasına neden olan ince, tiz bir ses duyarak duraksadı.",
+      "Ses küçük bir gülüşe benziyordu ama insani değildi. Bay Richards büyük bir meşe ağacının arkasına baktı. Hiçbir şey göremedi, sadece yerde hareket eden kahverengi yapraklar vardı. Sanki buz gibi bir rüzgar kalın paltosunun içinden geçmiş gibi ani bir ürperti hissetti. Hana geri dönmek için arkasını döndü ancak yoğun sisin içinde yolunu kaybetti. Yollar birbirinin aynısı gibi görünüyordu ve köy sanki yer değiştirmiş ya da değişmiş gibiydi. Hızla yürüdü, botları ıslak zeminde tıkırtılar çıkarıyordu. Sessizlik derin ve korkutucuydu. Derken, bir kapının yakınındaki çamurun içinde yatan küçük, ahşap bir oyuncak gördü. Parlak ama solmakta olan renklerle boyanmış, tahtadan yapılmış minik bir eldi. Onu yerden aldı ve yorgun ellerinde anında soğuk bir şok hissetti.",
+      "Handaki bebeği hatırladı. Parçaları eksikti ve bu el tam da sabahleyin o tuhaf kızın tuttuğu bebeğinkine benziyordu. Küçük, soğuk nesneyi cebine koydu ve kasaba merkezine doğru koşmaya başladı. Sis dağılmaya başladı ve hanı tekrar gördü. Yaşlı kadın kapıda duruyordu, gözleri onu sabit, korkutucu bir bakışla izliyordu. Hiçbir şey söylemedi ama ağzı ince, düz bir çizgi halini aldı. Bay Richards sırılsıklam ve çok gergin bir halde içeri girdi. Buradan ayrılmak istiyordu ama bacakları sanki taştan yapılmış gibi ağırlaşıyordu. Odasındaki dolap onu bekliyordu ve uzun gece bitmeden önce içine bakmak zorunda kalacağını biliyordu.",
+      "Bay Richards ağır bir kalple merdivenleri tırmandı. Her ahşap basamak sessiz evde yüksek bir ses çıkardı. Odasının kapısına ulaştı ve nefesini tutmak için durdu. Koridordaki hava çok tuhaf ve soğuk hissettiriyordu. Eski toz ve kuru, ölü yapraklar gibi bir koku alabiliyordu. Küçük ahşap eli cebinden çıkardı. Dokunduğunda hala çok soğuktu. Dolabı açmak istemiyordu ama başka seçeneği olmadığını hissetti. Sessiz oyuncak bebek içeride onu bekliyordu. Birçok sorusunun cevabının o karanlık boşlukta saklı olduğunu biliyordu. Yavaşça metal kolu çevirdi ve kapıyı iterek açtı. İçerideki oda simsiyahtı ve yüzüne doğru hareket ediyormuş gibi görünen kalın, ağır bir gölgeyle doluydu.",
+      "Dolabın içinde bebeğin yüksek bir rafta oturduğunu gördü. Daha önce gördüğünün aynısı gibi görünüyordu ama farklı bir pozisyonda oturuyordu. Kız odada değildi ama hava, duvarların arkasından onu izliyormuş gibi hissettiriyordu. Oyuncağı daha iyi görmek için mumunu yukarı kaldırdı. Eski tahtadan ve yıpranmış kumaştan yapılmıştı. Bebeğin gözleri yoktu ama sanki ruhunun derinliklerine bakıyormuş gibi hissettirdi. Yaklaştı ve ahşap eli bebeğin yanındaki rafa bıraktı. Aniden, dolap kapağı arkasından sertçe kapandı. Ses çok yüksekti ve küçük odada keskin bir çığlık gibi yankılandı. Göğsünde ani bir korkunun yükseldiğini hissetti.",
+      "Kapıya asıldı ama açılmadı. Ahşap parmaklarının altında sağlam ve sertti. Birinin onu duyması umuduyla kapıyı tıklatmaya başladı ama ev tamamen sessiz kaldı. Sanki dışarıdaki dünya gri sisin içinde kaybolmuş gibiydi. Yere oturdu ve sabah ışığının dönmesini bekledi. Oda, daha önce hiç hissetmediği kadar soğudu. Raftan yumuşak bir hareket sesi duydu. Yukarı baktı ama karanlıkta hiçbir şey göremedi. Sonra, birbirine çarpan tahta çubuklar gibi bir ses duydu. Bebek hareket ediyordu. Ayağa kalkmaya çalıştı ama bacakları hareket etmedi. Odadaki atmosfer ağır ve kaçılması imkansız hissettiriyordu.",
+      "Bay Richards soğuk ahşap zeminde otururken nefes almaya çalıştı. Karanlık yoğundu ve kendini çok yalnız hissediyordu. Aniden, tahtanın üzerinde hareket eden küçük kuru ayak sesleri gibi bir ses duydu. Bu, bebeğin sesiydi. Sadece bir şeyler hayal ettiğini umarak nefesini tuttu. Ancak tıkırtı sesi yaklaştı. Yüksek raftan aşağı bir şeyler tırmanıyordu. Yanağına değen keskin, soğuk bir esinti hissetti. Bebek artık sadece bir oyuncak değildi. Havanın ağırlaşmasına neden olan garip bir gücü vardı. Kaçmak istedi ama vücudu onu dinlemiyordu. Sessiz bebekle karanlıkta hapsolmuştu. Hareket etmeye çalıştığı her seferinde tıkırtı sesi tekrar başlıyordu. Ses, küçük, tozlu dolabın köşesinden geliyordu.",
+      "Bebek artık ona çok yakındı. Yer tahtalarında garip bir tırmalama sesi duyabiliyordu. İnce, kuru parmaklar ahşaba dokunuyor gibiydi. Bay Richards kemiklerinde derin bir ürperti hissetti. Bebeğin kayıp elini aradığını biliyordu. Oyuncağın şeklini görmeye çalışarak karanlığın içine baktı. Ay ışığı nihayet duvardaki küçük bir delikten içeri süzüldü. Bebeği orada dururken gördü. Eskisinden çok daha uzundu ve kolları oldukça uzundu. Bebek kafasını ona doğru çevirdi. Gözleri olmasa bile onu net bir şekilde görüyor gibiydi. Büyük bir korku dalgası hissetti. Konuşmaya çalıştı ama sesi çıkmadı. Odadaki sessizlik, hayatında duyduğu tüm çığlıklardan daha gürültülüydü.",
+      "Bebek, tahta eli bıraktığı rafa doğru yavaşça yürürken onu izledi. Tahtadan yapılmış bir örümcek gibi garip ve düzensiz bir şekilde hareket ediyordu. Bebek rafa ulaştığında, sessiz bir tıkırtı sesiyle eli aldı. Sonra tekrar Bay Richards'a bakmak için döndü. Küçük odayı korkunç bir his doldurdu. Bebek artık sessiz değildi. Odada zayıf, tiz bir ses fısıldamaya başladı. Kelimeler eskiydi ve anlaşılması zordu ama bir uyarı gibi geliyorlardı. Bay Richards yatağında uyanmayı umarak gözlerini kapattı. Bebeğin yüzüne doğru yaklaştığını hissetti. Ahşabın soğuk dokunuşu cildine değdi. Bebeğin gizeminin artık karanlıkta kendi hapishanesi olduğunu fark etti.",
+      "Bay Richards, oyuncak bebek tam önünde dururken titredi. Tahta gövdesi dışarıdaki kış havasından daha soğuktu. Gözlerini sıkıca kapalı tuttu çünkü yaratığı tekrar görmek istemiyordu. Bebek artık kırık elini tutuyordu ve havada daireler çizerek hareket ettiriyordu. Sert zemine çarpan ahşabın tıkırtısını duyabiliyordu. Her ses kalbinin göğsüne karşı daha hızlı çarpmasına neden oluyordu. Artık bu karanlık dolapta yalnız olmadığını hissediyordu. Bebek daha fazla kelime fısıldarken başka gölgeler de uyanıyor gibiydi. Bu gölgeler karanlık ve inceydi, uzun parmaklar gibi tozlu duvarlara yayılıyorlardı. Bir köşeye sürünerek kaçmaya çalıştı ama bacakları güçsüz ve yorgundu. Bu garip evin içinde yaşayan ağır sessizliğin içine hapsolmuş hissediyordu.",
+      "Bebek başını tekrar hareket ettirdi ve Bay Richards keskin bir çatırtı sesi duydu. Bu, uzun yıllar sonra hareket eden eski ahşabın sesiydi. Bebeğin gözlerini açmasını beklediğini biliyordu. Çok hareketsiz kaldı, oyuncağın ilgisini kaybedip gitmesini umdu. Ancak tıkırtı sesi, öncekinden daha yüksek ve hızlı bir şekilde geri geldi. Artık yüzüne daha da yaklaşıyordu. Saçında ölü yapraklar gibi yumuşak ve soğuk, hafif bir dokunuş hissetti. Büyük bir tehlike hissi zihnini doldurdu. Bebeğin sadece elinden fazlasını istediğini fark etti. Ondan adını koyamadığı bir şeyi almak istiyordu. Dolaptan kaçmanın bir yolunu düşünmeye çalıştı ama kapı kilitli kaldı, itmelerine karşı ağır ve sağlamdı.",
+      "Köylülerin köydeki ev hakkında anlattıkları hikayeleri hatırladı. Bebeğin sahibinin yıllar önce ortadan kaybolduğunu söylüyorlardı. Şimdi, Bay Richards nedenini anlıyordu. Bebek basit bir nesne değil, çok uzun süre kalan herkes için bir tuzaktı. Yakaladığı insanların korkusuyla besleniyordu. Soğukluk cildinden kalbine yayılırken gücünün bedeninden çekildiğini hissedebiliyordu. Kalan tüm cesaretini topladı ve aniden ayağa kalktı. Yakındaki ağır bir ahşap kutuyu kaptı ve bebeğin durduğu köşeye fırlattı. Yüksek ses küçük alanda yankılandı ve tıkırtı bir anlığına durdu. Hemen kapı koluna uzandı, dışarıdaki geceye kaçabilmesi için nihayet açılması için dua ediyordu.",
+      "Kapı kolu titreyen elinde yavaşça döndü. Bay Richards tüm gücüyle çekti ve ağır ahşap kapı sonunda yüksek bir gıcırtıyla açıldı. Karanlık dolaba geri bakmadı. Yorgun bacaklarının taşıyabildiği kadar hızlı bir şekilde koridora fırladı. Evdeki hava, sanki onu geri çekiyormuş gibi yoğun ve ağırdı. Odadan çıkmış olmasına rağmen arkasındaki ahşap bebeğin hafif tıklama sesini hala duyabiliyordu. Evin sessizliği kendi ağır nefes alışverişinin sesiyle bozuldu. Ana merdivenlere ulaştı ve duvardaki titrek mumların loş ışığında tökezleyerek aşağı doğru koşmaya başladı. Ön çıkışa doğru acele ederken her gölge ona uzanıyor gibiydi.",
+      "Sonunda ön kapıya ulaştı ve çaresiz bir çığlıkla kapıyı itti. Serin gece havası yüzüne çarptığında kısa bir rahatlama hissetti. Bahçeye veya arkasındaki boş sokağa bakmak için durmadı. Göğsü yanıyormuş gibi hissedene kadar, eski evden ve onun tuhaf sırlarından çok uzaklara koştu. Köy sessizdi ve ay çatıların üzerinde parlak bir şekilde parlıyordu. Uzakta küçük bir hanın ışıklarını gördü ve onlara doğru yöneldi. Giysileri toz ve örümcek ağlarıyla kaplıydı, yüzü ise korkudan bembeyazdı. Hanın içindeki insanlar ona geniş, şaşkın gözlerle baktılar. Konuşamadı ama titreyen vücudu, kaçtığı dehşet hakkında bilmeleri gereken her şeyi anlatıyordu.",
+      "O, titreyen ellerini sakinleştirmek için biraz su içerken köylüler etrafında toplandı. Onlara sessiz oyuncak bebekten ve eski sahibinin ruhunu hapseden soğuk, karanlık dolaptan bahsetti. Yaşlı adamlardan bazıları ev hakkındaki gerçeği zaten biliyorlarmış gibi başlarını salladılar. Ona evin artık boş olduğunu ve çok uzun zamandır kimsenin orada yaşamadığını söylediler. Bay Richards, ahşabın içine hapsolmuş ruh için derin bir üzüntü duydu. O yere bir daha asla dönmeyeceğini biliyordu. Kabus nihayet sona ermişti ama tıklama sesinin hatırası sonsuza dek onunla kalacaktı. Bebek karanlıkta beklerken, o ateşin kenarında oturup dünyanın güvenli seslerini dinledi.",
+      "Sabah güneşi köye soğuk bir ışık getirdiğinde, Bay Richards nihayet evin dehşetinden kurtulduğu için kendini güvende hissetti. Hanın içindeki sıcak ocağın başında oturdu ama kalbi korkuyla hala hızlı çarpıyordu. Köylülere ahşap bebekten ve koridorlarda onu takip eden o tuhaf tıkırtı sesinden bahsetti. İnsanlar, dünyadaki bazı sırların rahat bırakılmasının daha iyi olduğunu bilerek ciddi yüzlerle onu dinlediler. Bebeğin eski ahşabı, uzun yıllar boyunca içinde karanlık ve kadim bir şey tutmuştu. Bay Richards bebeğin solgun yüzünü unutmaya çalıştı ama her gözlerini kapattığında, onun küçük, keskin ellerinin karanlıkta kendisine doğru uzandığını gördü. O evin hatırası ruhunun üzerinde her zaman ağır bir yük olarak kalacaktı.",
+      "Günler geçti ve Bay Richards, yeni bir kasabada huzur bulmak için köyü arkasında bırakmaya karar verdi. Sessiz bebekten bir daha hiç bahsetmedi, ancak görüntüsü zihninde hayalet bir resim gibi kaldı. Bazen gece rüzgar penceresine vurduğunda, tıkırtı sesini tekrar duyduğunu sandı. Evin, karanlık gökyüzünün altındaki tepede dimdik ve yalnız durmaya devam ettiğini biliyordu. Köylüler, dolapta bekleyen ahşap oyuncaktan korkarak o yere asla girmemeye söz verdiler. Bay Richards sakin bir hayat sürdü, yazın parlak ve güneşli günlerinde bile kendi kapılarını her zaman sıkıca kilitli tuttu. Artık bazı şeylerin, unutulmuş evlerin karanlık köşelerinde saklanarak, bizim basit insan anlayışımızın ötesinde var olduğunu anlıyordu.",
+      "Sonunda, sessiz bebeğin efsanesi yaşlandı ama hikayeyi bilenlerin kalbinde korku baki kaldı. Bay Richards sık sık bahçesinde oturur, çiçeklerin büyümesini izler ve mutlu olmaya çalışırdı. Zihnini kitaplar ve hikayelerle meşgul ederdi ancak ne zaman ahşap bir oyuncakla oynayan bir çocuk görse içinde tuhaf bir ürperti hissederdi. Bu, bebeğin karanlıkta beklediği dolabı ona hatırlatan soğuk ve derin bir histi. Hayat devam etti ve eski ev zamanla yıkılarak sadece taş ve kırık odun yığını haline geldi. Yine de, toz ve ağır sessizliğin altında, bebeğin içindeki ruh ahşap kabuğuna hapsolmuş şekilde, sonsuza dek birinin kapıyı tekrar açmasını bekleyerek kaldı."
+    ],
+    words: {
+      "inn": "han",
+      "suitcase": "valiz",
+      "flickering": "titrek (ışık)",
+      "cupboard": "dolap",
+      "scratching": "tırmalama",
+      "expression": "ifade",
+      "mist": "sis",
+      "curtain": "perde",
+      "faint": "zayıf",
+      "chill": "ürperti, soğuk",
+      "mud": "çamur",
+      "nervous": "gergin",
+      "shelf": "raf",
+      "candle": "mum",
+      "echo": "yankılanmak",
+      "stare": "dik dik bakmak",
+      "vanish": "kaybolmak",
+      "clicking": "tıkırtı sesi",
+      "breeze": "esinti",
+      "jagged": "düzensiz",
+      "prison": "hapishane",
+      "shiver": "ürperti",
+      "creature": "yaratık",
+      "shadow": "gölge",
+      "trap": "tuzak",
+      "courage": "cesaret",
+      "trembling": "titreyen",
+      "groan": "inilti (burada gıcırtı anlamında)",
+      "desperate": "çaresiz",
+      "cobweb": "örümcek ağı",
+      "nightmare": "kabus",
+      "hearth": "ocak",
+      "grave": "ciddi",
+      "ancient": "kadim",
+      "ruin": "yıkıntı",
+      "trapped": "hapsolmuş"
+    }
+  }
+,
+  {
+    id: 'horror_dusty_attic',
+    title: "The Dusty Attic",
+    author: 'Arthur Conan Doyle',
+    level: 'A2',
+    coverUrl: '/covers/horror_dusty_attic.webp',
+    en: [
+      "The old house stood at the end of the long, grey street. It looked very tired and very sad. No one lived there for many years. The windows were dirty, and the garden was full of tall, wild grass. I walked past the house every single morning on my way to the town market. People in the village whispered stories about the place. They said it was not empty, but full of dark secrets. I did not believe in ghosts, but the house made me feel cold inside. One windy autumn day, the heavy front door stood open. I stopped and looked at the dark hallway. It was like a mouth waiting to eat something. I felt a strong force pulling me inside. My heart beat fast, but I took one step into the cold, silent home.",
+      "The inside of the house smelled like old books and wet wood. Everything was covered in a thick layer of grey dust. I walked slowly across the wooden floor. Every time I took a step, the floor made a loud, sharp noise. It sounded like someone was screaming under my feet. I saw a large staircase that went up into the darkness. I wanted to turn back and run to the bright sun outside, but my feet did not listen to me. I started to climb the stairs one by one. The wood was weak and shook under my weight. I felt like I was an explorer in a lost world. Each step brought me higher and further away from my safe and normal life on the street.",
+      "At the top of the stairs, I found a small, locked door. It had a strange iron handle that felt icy to my touch. I tried to turn it, and it finally moved with a loud click. Behind the door was the dusty attic. It was a very small room with only one tiny window. Light came through the glass like a thin silver needle. The room was crowded with broken chairs, old boxes, and torn clothes. There was a large wooden trunk in the center of the room. It looked very important and very heavy. I knew that I had to open it, even if I was afraid. Something was calling to me from the darkness inside. I reached for the lock and prepared to see the hidden truth.",
+      "I took a deep breath and knelt before the large wooden trunk. My hands were shaking, and my heart beat against my ribs like a trapped bird. The surface of the chest was cold and rough, covered in many years of grey dust. I slowly reached out and touched the heavy iron lock. It was stuck, but after a moment of struggle, it finally clicked open. As the lid moved, a cloud of dust rose into the small room, making me cough. Inside, I saw many strange items that looked like they belonged to another century. There were yellow papers covered in odd symbols, a silver mirror that did not show my own face, and a soft, velvet bag that felt heavy in my shaking hands.",
+      "The room became very quiet, even more than before. The light from the window seemed to fade as if the house itself was watching me closely. I carefully took out the velvet bag and opened the top. Inside, I found a small gold ring that shone in the dim light. It was beautiful but had a cold feeling that made my skin crawl. When I picked it up, I heard a faint, whispering sound in my ear, though there was no one else in the room with me. It was a soft voice that sounded like dry leaves moving on the ground. I felt dizzy, and for a second, the walls of the attic seemed to move closer to me, shrinking the space.",
+      "I wanted to put the ring back into the bag, but my fingers would not move. It was as if the gold object had a power of its own. I looked at the old trunk again, and this time I noticed something hidden at the bottom. There was a secret compartment under the wood. I used my knife to pry it open and found a bundle of old letters tied together with a black ribbon. The ink on the paper was faded, but the words were still clear enough to read. They told a sad story of a person who lived in this house a long time ago. My fear turned into curiosity, and I sat on the dusty floor to read the first page of the forgotten letters.",
+      "I sat on the wooden floor and held the first letter. The paper was very thin and brown from the passing of time. The handwriting was neat but small, and each letter seemed to hold a secret. It started with a date from many years ago, when the house was new and full of life. The writer spoke of a man who lived here and loved someone very much. He was a scientist, but he spent most of his nights in this cold attic. He was looking for something that could change the world, something ancient and powerful. I felt a chill run down my spine as I realized he was talking about the strange gold ring in my hand. His words were full of hope, but they slowly turned into dark and sad warnings for anyone who found his work.",
+      "The wind started to whistle outside the attic window, sounding like a person crying for help. I continued to read, eager to understand why this man was so afraid. He wrote that the ring was not just gold, but a key to a door that should never be opened. He claimed that something followed him from his travels in distant lands. He tried to lock it away in the trunk, hoping that time would hide the danger forever. My eyes moved quickly across the lines of ink. The more I read, the more I felt that I was not alone in the room. The shadows in the corners seemed to grow longer and deeper. I heard a soft tapping sound against the wood of the floorboards, but I was too scared to look up from the page.",
+      "The letter mentioned a night exactly like this one, when the moon was hidden by dark clouds. The scientist felt a heavy presence standing right behind him. He wrote that his life was ending because he had played with forces he did not fully understand. I looked at the ring again. It looked innocent now, sitting on the dusty floor, but the warning in the letter made me tremble. I felt the air in the room become very thick and difficult to breathe. I wanted to leave, but my curiosity kept me anchored to the spot. I reached for the next letter in the bundle, hoping to find a way to stop the feeling of being watched. Every shadow now looked like a ghost waiting to catch me in the silence of this forgotten place.",
+      "I took the second letter from the bundle with shaking hands. The ink was faded, but the message was clear. The scientist described a terrifying creature that moved in the darkness of the attic. He said it was not made of flesh and bone, but of cold smoke and bad memories. It moved silently across the walls, watching him while he worked. He tried to hide from it under his heavy winter blankets, but the creature could see through any wall. He believed that the golden ring acted as a bridge for this shadow to enter our world. The letter ended with a desperate prayer for safety. I looked around the empty room, my heart beating fast. The silence was heavy and thick like a blanket. I felt a cold breeze on my neck, even though all the windows were shut tight.",
+      "The third letter in the stack was much shorter than the others. It was written in a hurried way, with large, messy letters that were hard to read. The writer warned that the creature did not only want the ring, but it also wanted a human soul to stay in this world. He said that once someone reads the secret, the creature knows their name. I stopped reading and listened to the house. The floorboards above me gave a loud creak, as if someone was walking slowly on them. I stood up and moved toward the corner, but there was nothing there but old boxes and spider webs. I felt foolish for being afraid, but the sense of being followed stayed with me. My legs felt weak as I tried to walk to the small wooden door.",
+      "I looked down at the last page of the letter. It contained a map of the attic, showing a secret space hidden behind the wall near the chimney. The scientist said that he had buried the rest of his dangerous notes there. He promised that if anyone ever found these words, they must destroy the map and never look for the hiding place. My hand moved to the wall, feeling the rough wood and the old, peeling wallpaper. I could feel a small hole behind a piece of loose wood. My fingers touched something metal and cold inside the dark space. It was not a treasure, but a small iron key. I pulled it out, and the whole house seemed to shake. A sudden loud noise came from the chimney, and I fell back in fear.",
+      "The room became very dark as the candle flickered and died. I stood in the middle of the attic with the cold iron key in my hand. I felt a strange power coming from the metal. The air around me began to change and get very thick. I could hear a soft whispering sound behind the chimney wall where the map had shown. It sounded like many voices talking at the same time but I could not understand their words. I tried to walk toward the stairs but my feet felt stuck to the floor. The shadows on the walls started to grow larger and they seemed to take the shape of long fingers. I realized that the scientist was right about the creature. It was now awake because I had touched the key that kept it in its cage.",
+      "I took a deep breath and tried to find my light again but the darkness was too strong. My heart was jumping inside my chest like a trapped bird. I remembered the words in the letter about the human soul and I felt a sharp pain in my shoulder. It was as if someone was pulling on my clothes. I looked around and saw a small light near the floor. It was a faint blue glow coming from the iron key itself. The key started to shine brighter and brighter until the whole attic looked like a deep ocean at night. I dropped the key on the floor and it made a sound like a bell ringing in a large empty church. The light began to move slowly across the room towards the wooden door leading to the secrets.",
+      "The creature was definitely in the room with me now. I could see the cold smoke moving in the air and it was forming a tall figure near the corner. It did not have a face but it had two bright yellow eyes that looked right through my skin. I wanted to run away but my body refused to move. I watched as the shadow stretched its arms toward the attic door. It wanted me to open the hidden space so that it could finally be free to leave this house forever. I tried to call for help but my voice stayed inside my throat. The temperature dropped until I could see my own breath in the air. I knew that I was in a terrible trap and there was no way to escape from the dark visitor.",
+      "I forced my legs to move even though every muscle felt like heavy stone. My fingers shook as I reached out to touch the wooden wall where the secret opening was hidden. The yellow eyes of the shadow watched my every move with a hunger that made my hair stand up on my arms. I knew that opening the door would let out something that should never walk among humans again. However, the influence of the key was so strong that my hand moved without my permission. I pressed my palm against the rough wood and felt a sudden chill run through my body. The wall made a loud creaking sound as it started to slide back slowly. Dust filled the air and I coughed, trying to see what was behind the dark, hidden space that the scientist had spent his life guarding.",
+      "The space behind the wall was not empty as I had hoped it might be. There was a small chair made of black metal and a pile of old, dusty books that looked like they had been touched by fire. I saw a silver locket sitting on the table, shining with a strange, unnatural light that hurt my eyes to look at directly. The creature behind me let out a low sound that was almost like a human laugh, full of pain and ancient sadness. I realized then that the scientist was not keeping a monster in a cage, but he was guarding a lost spirit from a time long before our own. The air became very still and the yellow eyes moved closer to my face. I could feel the cold breath of the ghost touching my neck as it waited for me to finish the work.",
+      "I picked up the locket with trembling fingers, feeling the heavy metal pull against my hand like a magnet. As soon as I held it, the whispering voices stopped and the shadows began to shrink away from the light of the blue key on the floor. The creature was no longer a tall, terrifying shape but a thin mist that hung in the corner like wet fog. I felt a sudden strength return to my legs and I knew that I had to do something important to stop this nightmare forever. I turned to look at the open wall, seeing a small compartment hidden deep within the wood. I knew that I had to put the locket back into that box to seal the attic away from the world. My heart still beat fast, but I felt a strange sense of peace now.",
+      "I moved toward the small dark compartment with the heavy silver locket held tightly in my hand. The mist in the corner seemed to follow me with sad eyes, watching every step I took across the dusty wooden floor. I knew that the scientist had hidden this object to protect the world from the power inside it. As I reached the wall, the wood felt warm, as if it were alive and waiting for me to complete the task. I carefully placed the locket into the hidden hole and pushed the metal cover back into place. For a moment, the whole attic shook as if the house itself was breathing in relief. The cold air began to fade away, replaced by the normal feeling of a quiet, old room that had been left alone for many long and lonely years.",
+      "The silence that followed was deep and heavy, unlike anything I had ever experienced in my life before that night. The strange glowing blue key on the floor turned gray and then slowly disappeared into nothingness, leaving me in the dark. I did not feel scared anymore because the shadow had finally vanished from the attic walls. I slowly backed away from the secret compartment, my legs feeling tired but steady enough to walk to the exit. I realized that the nightmare was truly over and the spirit was now resting in peace behind the strong wooden wall. I did not look back again as I walked toward the door, wanting only to reach the fresh air outside and never think about the strange, dusty secrets of this house again.",
+      "Walking down the narrow stairs felt like waking up from a long, confusing dream where nothing made sense. I stepped out into the night garden, feeling the cool breeze on my face and hearing the gentle sounds of the trees. The house looked dark and quiet, just a normal building once more without the weight of the hidden monster inside it. I knew that I had done something good by finishing the scientist's work and keeping the balance of the world safe from harm. My hands stopped shaking as I realized the danger was buried deep under the dust where it could not hurt anyone ever again. I walked home slowly, carrying the memory of the locket and the ghost with me, ready to start a new day under the bright and rising sun."
+    ],
+    tr: [
+      "Eski ev, uzun ve gri sokağın sonunda duruyordu. Çok yorgun ve çok üzgün görünüyordu. Uzun yıllardır orada kimse yaşamıyordu. Pencereler kirliydi ve bahçe uzun, vahşi otlarla doluydu. Her sabah kasaba pazarına giderken evin önünden geçiyordum. Köydeki insanlar bu yer hakkında hikayeler fısıldıyordu. Oranın boş olmadığını, karanlık sırlar dolu olduğunu söylüyorlardı. Hayaletlere inanmıyordum ama ev içimde soğuk bir his uyandırıyordu. Rüzgarlı bir sonbahar gününde, ağır ön kapı açıktı. Durdum ve karanlık koridora baktım. Bir şeyler yemeyi bekleyen bir ağız gibiydi. Beni içeri çeken güçlü bir kuvvet hissettim. Kalbim hızla atıyordu ama soğuk ve sessiz eve bir adım attım.",
+      "Evin içi eski kitaplar ve ıslak odun gibi kokuyordu. Her yer kalın bir gri toz tabakasıyla kaplıydı. Ahşap zeminde yavaşça yürüdüm. Her adım attığımda zemin yüksek, keskin bir ses çıkarıyordu. Sanki ayaklarımın altında biri çığlık atıyormuş gibi geliyordu. Karanlığın içine çıkan büyük bir merdiven gördüm. Geri dönüp dışarıdaki parlak güneşe doğru koşmak istedim ama ayaklarım beni dinlemedi. Merdivenleri birer birer tırmanmaya başladım. Odun zayıftı ve ağırlığımın altında sallanıyordu. Kayıp bir dünyadaki kaşif gibi hissediyordum. Her adım beni yüksekliğe ve sokaktaki güvenli, normal hayatımdan daha uzağa taşıyordu.",
+      "Merdivenlerin tepesinde küçük, kilitli bir kapı buldum. Dokunduğumda buz gibi hissettiren tuhaf bir demir kolu vardı. Çevirmeye çalıştım ve sonunda yüksek bir tık sesiyle açıldı. Kapının arkasında tozlu tavan arası vardı. Sadece tek bir küçük penceresi olan çok küçük bir odaydı. Işık, camdan ince bir gümüş iğne gibi geliyordu. Oda kırık sandalyeler, eski kutular ve yırtık kıyafetlerle doluydu. Odanın merkezinde büyük bir ahşap sandık vardı. Çok önemli ve ağır görünüyordu. Korksam bile onu açmam gerektiğini biliyordum. İçerideki karanlıktan bir şey bana sesleniyordu. Kilide uzandım ve gizli gerçeği görmeye hazırlandım.",
+      "Derin bir nefes aldım ve büyük ahşap sandığın önünde diz çöktüm. Ellerim titriyordu ve kalbim, kafese girmiş bir kuş gibi kaburgalarıma vuruyordu. Sandığın yüzeyi soğuk ve pürüzlüydü, uzun yılların gri tozuyla kaplıydı. Yavaşça uzandım ve ağır demir kilide dokundum. Sıkışmıştı ama biraz uğraştıktan sonra sonunda tık sesiyle açıldı. Kapak hareket ettikçe, küçük odaya bir toz bulutu yayıldı ve öksürmeme neden oldu. İçeride, başka bir yüzyıla aitmiş gibi görünen birçok garip eşya gördüm. Üzerinde tuhaf semboller olan sarı kağıtlar, kendi yüzümü göstermeyen gümüş bir ayna ve titreyen ellerimde ağır duran yumuşak, kadife bir kese vardı.",
+      "Oda, öncekinden bile daha sessiz hale geldi. Pencereden gelen ışık, sanki evin kendisi beni yakından izliyormuş gibi solup gitti. Dikkatlice kadife keseyi çıkardım ve ağzını açtım. İçinde, loş ışıkta parlayan küçük bir altın yüzük buldum. Çok güzeldi ama tüylerimi ürperten soğuk bir hissi vardı. Onu elime aldığımda, odada benden başka kimse olmamasına rağmen kulağımda hafif, fısıltılı bir ses duydum. Bu, yerde hareket eden kuru yapraklar gibi çıkan yumuşak bir sesti. Başım döndü ve bir anlığına tavan arasındaki duvarlar bana daha yakınlaşarak alanı daraltıyor gibi geldi.",
+      "Yüzüğü keseye geri koymak istedim ama parmaklarım hareket etmiyordu. Sanki altın nesnenin kendine ait bir gücü vardı. Eski sandığa tekrar baktım ve bu sefer dibinde gizli bir şey fark ettim. Ahşabın altında gizli bir bölme vardı. Onu açmak için bıçağımı kullandım ve siyah bir kurdeleyle birbirine bağlanmış bir deste eski mektup buldum. Kağıt üzerindeki mürekkep solmuştu ama kelimeler hala okunabilecek kadar netti. Bu evde çok uzun zaman önce yaşamış bir insanın üzücü hikayesini anlatıyorlardı. Korkum merakıma dönüştü ve unutulmuş mektupların ilk sayfasını okumak için tozlu zemine oturdum.",
+      "Ahşap zemine oturdum ve ilk mektubu tuttum. Kağıt çok inceydi ve zamanın geçişiyle kahverengiye dönmüştü. El yazısı düzgündü ama küçüktü ve her harf bir sır saklıyor gibiydi. Evin yeni olduğu ve hayat dolu olduğu yıllar öncesinden bir tarihle başlıyordu. Yazan kişi, burada yaşayan ve birini çok seven bir adamdan bahsediyordu. O bir bilim insanıydı ama gecelerinin çoğunu bu soğuk tavan arasında geçiriyordu. Dünyayı değiştirebilecek, kadim ve güçlü bir şey arıyordu. Elimdeki garip altın yüzükten bahsettiğini fark ettiğimde ürperdim. Kelimeleri umut doluydu ama yavaş yavaş, çalışmalarını bulan herkes için karanlık ve üzücü uyarılara dönüştü.",
+      "Rüzgar, tavan arası penceresinin dışında, yardım için ağlayan bir insan gibi ıslık çalmaya başladı. Bu adamın neden bu kadar korktuğunu anlamaya çalışarak okumaya devam ettim. Yüzüğün sadece altın olmadığını, asla açılmaması gereken bir kapının anahtarı olduğunu yazmıştı. Uzak diyarlardaki yolculuklarından bir şeyin onu takip ettiğini iddia ediyordu. Zamanın tehlikeyi sonsuza dek gizleyeceğini umarak onu sandığa kilitlemeye çalıştı. Gözlerim mürekkep satırlarının üzerinde hızla hareket etti. Okudukça odada yalnız olmadığımı daha fazla hissettim. Köşelerdeki gölgeler daha uzun ve daha derin görünüyordu. Döşeme tahtalarının ahşabına vuran hafif bir tıkırtı sesi duydum ama sayfadan başımı kaldırmaya çok korkuyordum.",
+      "Mektup, ayın kara bulutlar tarafından gizlendiği, tam olarak bu gece gibi bir geceden bahsediyordu. Bilim insanı, tam arkasında duran ağır bir varlık hissetmişti. Tam olarak anlayamadığı güçlerle oynadığı için hayatının sona erdiğini yazmıştı. Yüzüğe tekrar baktım. Şimdi tozlu yerde dururken masum görünüyordu ama mektuptaki uyarı titrememe neden oldu. Odadaki havanın çok yoğunlaştığını ve nefes almanın zorlaştığını hissettim. Ayrılmak istedim ama merakım beni olduğum yere mıhladı. İzleniyor olma duygusunu durdurmanın bir yolunu bulmayı umarak destedeki bir sonraki mektuba uzandım. Artık her gölge, bu unutulmuş yerin sessizliğinde beni yakalamayı bekleyen bir hayalet gibi görünüyordu.",
+      "İkinci mektubu titreyen ellerimle paketten çıkardım. Mürekkep solmuştu ama mesaj çok açıktı. Bilim insanı, tavan arasının karanlığında hareket eden korkunç bir yaratığı tarif ediyordu. Onun et ve kemikten değil, soğuk duman ve kötü anılardan yapıldığını söyledi. O çalışırken duvarların üzerinde sessizce hareket ederek onu izliyordu. Kalın kış battaniyelerinin altında ondan saklanmaya çalıştı ama yaratık her duvarın arkasını görebiliyordu. Altın yüzüğün, bu gölgenin dünyamıza girmesi için bir köprü görevi gördüğüne inanıyordu. Mektup, çaresiz bir güvenlik duasıyla bitiyordu. Kalbim hızla çarparak boş odaya baktım. Sessizlik ağır ve kalın bir battaniye gibiydi. Tüm pencereler sıkıca kapalı olmasına rağmen ensemde soğuk bir esinti hissettim.",
+      "Destedeki üçüncü mektup diğerlerinden çok daha kısaydı. Okunması zor olan büyük, dağınık harflerle aceleyle yazılmıştı. Yazar, yaratığın sadece yüzüğü değil, aynı zamanda bu dünyada kalmak için bir insan ruhunu da istediğini hatırlatıyordu. Birisi sırrı okuduğunda yaratığın onun adını öğrendiğini söylüyordu. Okumayı bıraktım ve evi dinledim. Üzerimdeki zemin tahtaları, sanki birisi üzerinde yavaşça yürüyormuş gibi yüksek bir gıcırtıyla ses çıkardı. Ayağa kalktım ve köşeye doğru ilerledim ama orada eski kutular ve örümcek ağlarından başka hiçbir şey yoktu. Korktuğum için kendimi aptal gibi hissettim ama takip edildiğim hissi benimle kaldı. Küçük ahşap kapıya doğru yürümeye çalışırken bacaklarım zayıf düştü.",
+      "Mektubun son sayfasına baktım. Baca yakınındaki duvarın arkasına gizlenmiş gizli bir alanı gösteren tavan arasının bir haritasını içeriyordu. Bilim insanı, tehlikeli notlarının geri kalanını oraya gömdüğünü söylüyordu. Eğer birisi bu kelimeleri bulursa, haritayı yok etmesi ve saklandığı yeri asla aramaması gerektiğine yemin ettirdi. Elim duvara gitti; pürüzlü ahşabı ve eski, soyulmuş duvar kağıdını hissediyordum. Gevşek bir ahşap parçasının arkasında küçük bir delik hissedebiliyordum. Parmaklarım karanlık boşluğun içinde metal ve soğuk bir şeye dokundu. Bu bir hazine değil, küçük bir demir anahtardı. Onu dışarı çektim ve tüm ev sallanıyor gibiydi. Bacadan aniden yüksek bir gürültü geldi ve korkuyla geriye düştüm.",
+      "Mum titreyip sönerken oda çok karardı. Elimde soğuk demir anahtarla tavan arasının ortasında duruyordum. Metalden gelen garip bir güç hissettim. Etrafımdaki hava değişmeye ve yoğunlaşmaya başladı. Haritanın gösterdiği baca duvarının arkasından gelen hafif fısıltı seslerini duyabiliyordum. Aynı anda konuşan birçok ses gibi geliyordu ama kelimelerini anlayamıyordum. Merdivenlere doğru yürümeye çalıştım ama ayaklarım yere yapışmış gibiydi. Duvardaki gölgeler büyümeye başladı ve sanki uzun parmak şeklini alıyorlardı. Bilim adamının yaratık hakkında haklı olduğunu anladım. Onu kafesinde tutan anahtara dokunduğum için artık uyanmıştı.",
+      "Derin bir nefes aldım ve ışığımı tekrar bulmaya çalıştım ama karanlık çok güçlüydü. Kalbim göğsümün içinde kapana kısılmış bir kuş gibi atıyordu. Mektupta insan ruhuyla ilgili yazılanları hatırladım ve omzumda keskin bir acı hissettim. Sanki biri kıyafetimi çekiştiriyordu. Etrafıma baktım ve zemine yakın küçük bir ışık gördüm. Demir anahtarın kendisinden gelen soluk mavi bir parıltıydı. Anahtar, tüm tavan arası geceki derin bir okyanus gibi görünene kadar daha parlak ve parlak bir şekilde parlamaya başladı. Anahtarı yere düşürdüm ve büyük boş bir kilisede çalan bir çan gibi ses çıkardı. Işık, odada yavaşça sırlar odasına açılan ahşap kapıya doğru ilerlemeye başladı.",
+      "Yaratık kesinlikle şu anda benimle birlikte odadaydı. Havada hareket eden soğuk dumanı görebiliyordum ve köşeye yakın uzun bir figür oluşturuyordu. Bir yüzü yoktu ama tenimin içinden geçen iki parlak sarı gözü vardı. Kaçmak istedim ama vücudum hareket etmeyi reddetti. Gölgenin kollarını tavan arası kapısına doğru uzatışını izledim. Bu evden sonsuza dek ayrılmakta özgür olabilmesi için gizli alanı açmamı istiyordu. Yardım çağırmaya çalıştım ama sesim boğazımın içinde kaldı. Sıcaklık, kendi nefesimi havada görebilecek kadar düştü. Korkunç bir tuzağın içinde olduğumu ve karanlık ziyaretçiden kaçmanın bir yolu olmadığını biliyordum.",
+      "Her kasım ağır bir taş gibi hissetse de bacaklarımı hareket etmeye zorladım. Gizli açıklığın saklandığı ahşap duvara dokunmak için uzandığımda parmaklarım titriyordu. Gölgenin sarı gözleri, her hareketimi kollarındaki tüyleri diken diken eden bir açlıkla izledi. Kapıyı açmanın, insanlar arasında bir daha asla yürümemesi gereken bir şeyi serbest bırakacağını biliyordum. Ancak anahtarın etkisi o kadar güçlüydü ki elim iznim olmadan hareket etti. Avucumu pürüzlü ahşaba bastırdım ve vücudumdan geçen ani bir soğukluk hissettim. Duvar yavaşça geri kaymaya başladığında yüksek bir gıcırtı sesi çıkardı. Toz havayı doldurdu ve bilim insanının hayatını koruyarak geçirdiği o karanlık, gizli alanın arkasında ne olduğunu görmeye çalışarak öksürdüm.",
+      "Duvarın arkasındaki alan, umduğum gibi boş değildi. Siyah metalden yapılmış küçük bir sandalye ve ateşle dokunulmuş gibi görünen eski, tozlu kitaplardan oluşan bir yığın vardı. Doğrudan bakmanın gözlerimi yaktığı tuhaf, doğal olmayan bir ışıkla parlayan masanın üzerinde duran gümüş bir madalyon gördüm. Arkamdaki yaratık, acı ve antik bir üzüntüyle dolu, neredeyse insan kahkahasına benzeyen alçak bir ses çıkardı. O zaman anladım ki bilim insanı bir kafeste canavar tutmuyordu, daha ziyade kayıp bir ruhu bizden çok önceki bir zamandan koruyordu. Hava tamamen durgunlaştı ve sarı gözler yüzüme doğru yaklaştı. İşi bitirmemi bekleyen hayaletin soğuk nefesinin boynuma değdiğini hissedebiliyordum.",
+      "Ağır metali mıknatıs gibi elime doğru çeken madalyonu titreyen parmaklarımla aldım. Onu tutar tutmaz fısıldayan sesler kesildi ve gölgeler yerdeki mavi anahtarın ışığından uzaklaşarak küçülmeye başladı. Yaratık artık uzun, korkutucu bir şekil değil, ıslak sis gibi köşede asılı kalan ince bir dumandı. Bacaklarıma ani bir gücün geri geldiğini hissettim ve bu kabusu sonsuza dek durdurmak için önemli bir şey yapmam gerektiğini biliyordum. Ahşabın derinliklerinde saklı küçük bir bölmeyi görerek açık duvara bakmak için döndüm. Çatı katını dünyadan mühürlemek için madalyonu o kutuya geri koymam gerektiğini biliyordum. Kalbim hala hızlı atıyordu ama şimdi tuhaf bir huzur duygusu hissediyordum.",
+      "Ağır gümüş madalyonu elimde sıkıca tutarak küçük karanlık bölmeye doğru ilerledim. Köşedeki sis, tozlu ahşap zemin üzerinde attığım her adımı izleyen hüzünlü gözlerle beni takip ediyor gibiydi. Bilim insanının, içindeki güçten dünyayı korumak için bu nesneyi sakladığını biliyordum. Duvara ulaştığımda, ahşap sanki canlıymış ve görevi tamamlamamı bekliyormuş gibi ılık hissettirdi. Madalyonu dikkatlice gizli deliğe yerleştirdim ve metal kapağı tekrar yerine ittim. Bir anlığına tüm tavan arası, evin kendisi rahatlamış bir şekilde nefes alıyormuş gibi sarsıldı. Soğuk hava yavaş yavaş kayboldu ve yerini, uzun ve yalnız yıllar boyunca kendi haline bırakılmış sessiz, eski bir odanın normal hissine bıraktı.",
+      "Bunu takip eden sessizlik, o geceden önce hayatımda hiç deneyimlemediğim kadar derin ve ağırdı. Yerdeki tuhaf parlayan mavi anahtar griye döndü ve yavaşça hiçliğe karışarak beni karanlıkta bıraktı. Artık korkmuyordum çünkü gölge tavan arası duvarlarından tamamen yok olmuştu. Gizli bölmeden yavaşça uzaklaştım; bacaklarım yorgun ama çıkışa kadar yürüyebilecek kadar sağlamdı. Kabusun gerçekten bittiğini ve ruhun artık güçlü ahşap duvarın arkasında huzur içinde yattığını fark ettim. Evin tuhaf, tozlu sırlarını bir daha düşünmemek ve dışarıdaki temiz havaya ulaşmak isteyerek kapıya doğru yürürken arkama bir daha bakmadım.",
+      "Dar merdivenlerden aşağı inmek, hiçbir şeyin mantıklı olmadığı uzun ve kafa karıştırıcı bir rüyadan uyanmak gibi hissettirdi. Gece bahçesine adım attığımda yüzümde serin esintiyi hissettim ve ağaçların yumuşak seslerini duydum. Ev, içindeki gizli canavarın ağırlığı olmadan bir kez daha normal bir bina gibi karanlık ve sessiz görünüyordu. Bilim insanının işini bitirerek ve dünyanın dengesini zarardan koruyarak iyi bir şey yaptığımı biliyordum. Tehlikenin kimseye bir daha zarar veremeyeceği tozun derinliklerine gömüldüğünü fark ettiğimde ellerim titremeyi bıraktı. Madalyonun ve hayaletin anısını yanımda taşıyarak, parlak ve yükselen güneşin altında yeni bir güne başlamaya hazır bir şekilde yavaşça evime doğru yürüdüm."
+    ],
+    words: {
+      "dust": "toz",
+      "attic": "çatı katı",
+      "whisper": "fısıltı",
+      "staircase": "merdiven",
+      "trunk": "sandık",
+      "hidden": "gizli",
+      "lid": "kapak",
+      "faint": "hafif",
+      "compartment": "bölme",
+      "ribbon": "kurdele",
+      "faded": "solmuş",
+      "handwriting": "el yazısı",
+      "scientist": "bilim insanı",
+      "ancient": "kadim",
+      "whistle": "ıslık çalmak",
+      "presence": "varlık",
+      "anchored": "sabitlenmiş",
+      "creature": "yaratık",
+      "desperate": "çaresiz",
+      "hurried": "aceleyle",
+      "creak": "gıcırtı",
+      "chimney": "baca",
+      "flicker": "titremek",
+      "shadow": "gölge",
+      "glow": "parıltı",
+      "figure": "figür",
+      "trap": "tuzak",
+      "muscle": "kas",
+      "creaking": "gıcırdama",
+      "locket": "madalyon",
+      "spirit": "ruh",
+      "trembling": "titreyen",
+      "relief": "rahatlama",
+      "vanished": "yok oldu",
+      "steady": "dengeli",
+      "breeze": "hafif rüzgar",
+      "balance": "denge"
+    }
+  }
+,
+  {
+    id: 'horror_whispering_woods',
+    title: "The Whispering Woods",
+    author: 'Algernon Blackwood',
+    level: 'A2',
+    coverUrl: '/covers/horror_whispering_woods.webp',
+    en: [
+      "The sun was beginning to sink behind the tall, dark trees of the forest. Simpson and his guide, a strong man named Hank, stood at the edge of the great wilderness. The trees looked like giant soldiers standing in silence. Simpson felt a strange cold feeling in his chest as he looked into the dark shadows. He had traveled many miles to see this mysterious place, but now he felt a small sense of fear. The air was very still, and the leaves did not move at all. Everything seemed to be waiting for something important to happen. Hank did not say a word, but he watched the forest with a careful eye. The vast trees seemed to whisper secrets to each other in a language that no human could ever understand or explain to anyone else.",
+      "They walked deeper into the thick woods while the light turned from yellow to a deep purple. The path was hidden under old, brown leaves that made a soft crunching sound under their heavy boots. Simpson noticed that there were no birds singing in the branches above them. The silence was heavy and thick like a blanket covering the world. He wanted to speak to Hank, but his voice felt small and weak in the presence of such ancient power. The woods felt alive, as if the trees were watching their every step with hungry eyes. He pulled his coat tighter around his body to stop the sudden shivering that ran down his back. Even the river nearby seemed to run silently, hiding its secrets far away from the busy eyes of the modern world.",
+      "Night arrived quickly, bringing a deep shadow that swallowed the remaining light. They decided to make a camp near a large, flat rock that looked like a stone altar from a forgotten time. Hank moved with practiced skill, gathering dry sticks for a small fire. Simpson sat on the cold ground and watched the dancing flames cast long, strange shadows against the trunks of the trees. He felt like an intruder in a kingdom that belonged only to the woods. The darkness outside the firelight seemed to push closer, pressing against their little circle of safety. He wondered if they were truly alone or if the forest had already started its mysterious work upon their minds. The woods were not just wood and bark; they were a living, breathing spirit of the dark night.",
+      "The fire crackled softly in the darkness, throwing orange light onto the ancient, mossy bark of the nearby pines. Hank prepared their simple dinner, his face a mask of calm determination that stood in sharp contrast to the nervous energy Simpson felt deep inside. The forest seemed to hold its breath around them, creating a heavy and stifling silence that felt intentional. Simpson stared out past the tiny glow of the fire into the absolute blackness that lay beyond. Every shadow appeared to stretch and shift, as if the trees themselves were moving closer to watch them eat. The vast, dark woods were not empty; they were crowded with a silent, invisible presence that made the air feel thin and difficult to breathe. He wanted to break the quiet, but the atmosphere felt too fragile for human noise.",
+      "Hank finally looked up from the fire and met Simpson's gaze with eyes that understood more than he chose to say. He knew the stories of these lands, the legends of the old spirits that guarded the deep, untouched places. He began to explain in a low, steady voice that some places on earth were not meant for men to walk upon. His words were simple, yet they carried a heavy weight that made Simpson feel smaller than he had ever felt before. The forest was an ancient entity, a force that existed long before the first city was ever built. It had a memory of its own, reaching back into the cold, dark history of time. Every leaf and every root was a part of this endless, watchful system that guarded the secrets of the earth.",
+      "As the hours passed, the wind started to wake up, moving through the very tops of the tallest trees with a low, mournful sound. It was not a normal breeze, but a strange, rhythmic whispering that seemed to call out specific names in a language of wind and shadow. Simpson felt his skin turn cold as he realized the sound was not coming from the nature he knew, but from something far more complex and dangerous. The forest was speaking, and its words were designed to confuse the human mind. He looked at Hank, but the guide was already settling into his blanket, his expression firm and unmoving. Despite the fear that raced through his heart, Simpson knew that he could not escape the reality of the whispering woods. He closed his eyes, hoping to find sleep, yet he remained fully aware of the hungry forest outside.",
+      "The night grew deeper and the air became very cold. Simpson could not sleep because the woods were making strange noises all around their small tent. He sat up and listened carefully to the trees. The sound was like many people talking at once, but he could not understand the words. It was a soft, busy whispering that filled the darkness. He looked at Hank, who was sleeping like a stone. Hank did not seem to hear the voices at all. Simpson felt very alone in the middle of this vast, dark place. The trees moved slowly in the wind, and their long branches looked like thin, grey fingers reaching for the sky. He felt that the forest was a living thing and it was waiting for him to do something, but he did not know what.",
+      "He decided to walk just a little bit away from the fire to see the woods better. The ground was covered with dry leaves that crunched loudly under his heavy boots. Every step felt like a mistake because the noise echoed through the silent forest. He reached a big, old pine tree and touched its rough, cold bark. It felt like skin. Suddenly, the whispering stopped completely. The silence was even worse than the noise. Simpson held his breath, waiting for a sign. He felt a strong, invisible pressure pushing against his chest, as if the forest was warning him to turn back. He looked into the black space between the thick trunks, but he saw nothing. The darkness felt heavy and thick, like a velvet blanket that was slowly covering his eyes.",
+      "Fear began to fill his heart, making his pulse race very fast. He remembered the stories that Hank told him about the ancient spirits of these woods. He realized that the trees were not just plants, but guardians of a secret world that did not want human visitors. He wanted to scream for Hank, but his throat felt tight and dry. He slowly moved backward toward the safety of the firelight. When he finally reached the small camp, the fire was almost dead. The red embers glowed like small, angry eyes in the dirt. He sat down quickly and pulled his blanket tight around his shoulders. He did not move again, but he kept his eyes wide open, watching the shadows dance and waiting for the morning light to finally arrive in the woods.",
+      "The morning sun struggled to push through the thick, grey fog that blanketed the forest floor. Simpson woke up with a start, feeling heavy and tired from a night of almost no sleep. He looked over at Hank, who was already awake and busy preparing their morning coffee over the dying embers of the fire. The air felt different today, thick with an unseen weight that made every movement feel difficult. Hank did not mention the strange whispering he had heard during the dark night, and he acted as if nothing unusual had happened. Simpson wanted to ask him about the voices, but he felt a sudden, cold shyness. He decided to keep his fears hidden for now, watching how the trees stood tall and still in the morning light, like soldiers guarding a deep, dark secret.",
+      "They decided to continue their walk through the woods to reach the river on the other side. As they moved deeper into the thick forest, the trees seemed to move along with them, changing their shapes as they walked past. Every time Simpson turned his head, he felt that the trees were watching him closely with their wooden eyes. The forest was very quiet now, not even the birds were singing their usual songs. The only sound was the soft crunch of their boots on the dry mossy earth. Hank walked with a quick pace, never looking back at the trees. Simpson found it hard to keep up because his legs felt heavy and weak. He constantly looked back over his shoulder, feeling like something ancient was trailing them through the dark shadows.",
+      "By midday, the path became very difficult to find because the bushes had grown over the track. They reached a clearing where the trees stopped suddenly, leaving a large circle of empty land under the bright, clear sky. Simpson stopped to catch his breath and looked around the strange, circular place. He noticed that all the trees around this clearing leaned away from the center as if they were afraid of something in the middle. The atmosphere here was extremely heavy and thick, almost impossible to breathe in. He felt a sudden, strong urge to leave this place immediately, but his feet felt stuck to the ground. Hank looked at him with a strange expression, and for a moment, Simpson saw a flicker of real fear in his companion's steady, hardened eyes.",
+      "The wind started to blow through the trees with a low and unhappy sound. Simpson felt the air become very cold as the clouds moved to hide the bright sun. He watched the branches shake and dance in a way that did not seem natural at all. It was as if the forest was trying to speak in a language that no human could ever understand. Hank stopped walking and stood very still, his face pale and his hands shaking by his side. He turned his eyes toward the dark center of the woods, where the shadows were growing deeper and more dangerous every second. Simpson felt a deep dread inside his heart, knowing that the spirit of the ancient forest was now awake and watching their every move with hungry, ancient intent.",
+      "Suddenly, the noises of the forest changed into a chorus of strange voices that filled the space around them. The trees seemed to close in, creating a prison of wood and leaves that stopped them from escaping. Simpson grabbed his bag tightly and tried to breathe, but the air felt thin and full of strange, magical dust. He saw movement in the corner of his vision, but when he looked directly at the trees, they were perfectly still once again. It was a cruel game of hide and seek that the woods were playing with his mind. He wanted to scream for help, but his throat felt dry and tight, as if the forest itself was holding his voice inside to keep its deep secrets safe forever.",
+      "Hank pointed toward a path that seemed to appear from nowhere, hidden between two very old and twisted trees. He did not say a word, but his eyes told the story of his terrible realization that they were not alone in this wild place. They walked forward with great difficulty, pushing through the tangled bushes that fought against their progress like living fingers. Every step felt like a fight against the very earth beneath their feet. The silence that followed the whispering was even worse than the noise because it felt like a warning of what was coming next. Simpson knew that they had crossed a boundary they should have never entered, and now the woods would never let them return to the world they once knew.",
+      "The path led them deep into the heart of the dark forest where the light of the sun could not reach. Simpson looked around, but everything looked the same in the shadows. The ground was wet and soft, and the smell of old wood and earth was everywhere. He felt that the trees were moving when he was not looking directly at them. Hank walked in front, his head low, as if he were listening to a voice that only he could hear. The air felt heavy and thick, making it very hard to breathe. They walked for a long time, but they did not see the end of the trees. It felt as though the forest was a living giant, breathing slowly around them, waiting for the perfect moment to stop them completely.",
+      "Suddenly, they arrived at a large clearing that was completely quiet. There were no birds, no insects, and no wind here. The silence was very strange, like a heavy blanket over the entire world. In the middle of the clearing, the grass looked different, as if something had pushed it down many times. Simpson looked at Hank, but his friend did not turn around. Hank stopped and fell to his knees, his hands digging into the cold dirt. He started to whisper words that Simpson could not understand. It sounded like an ancient song from a time long ago, before cities and roads were built. The trees at the edge of the clearing began to shake, even though there was no wind to move their heavy, dark branches.",
+      "Simpson felt a sudden coldness touch his skin like ice. He knew that the ancient power of the woods was gathering strength to reveal itself. He saw shadows start to grow and shape themselves into figures that looked almost human, yet very wrong. They were tall, thin, and moved with a strange, liquid motion between the trunks. He wanted to run, but his feet felt stuck to the ground. Every muscle in his body felt weak, and his mind was spinning with confusion and fear. He watched as the shadows circled the clearing, getting closer and closer with every second. He finally understood that they were trapped by something that existed long before man, and there was no way to run away from the living spirit of the dark trees.",
+      "The shadows reached out like long, dark fingers towards them, closing the space between the trees and the center of the clearing. Simpson stood frozen, his eyes wide with fear as the tall, thin figures moved closer. These shapes were not real people, but spirits of the ancient wood. They danced with a slow, ghostly rhythm that seemed to control the heartbeat of the forest itself. Hank was still on his knees, his voice getting louder as he spoke the strange words. He seemed to belong to the forest now, his soul drifting away from his physical body. The air around them began to glow with a pale, sick light that made the trees look like skeletons. Simpson realized that the woods were finally feeding on their fear, consuming their very thoughts and memories under the deep, heavy canopy.",
+      "Suddenly, a massive sound broke the silence, like a thousand trees falling at the same time. The ground shook violently beneath their feet, forcing Simpson to fall down as well. He looked up and saw the branches of the giant trees bending low, reaching down as if to grab them from the earth. The spirits were no longer just shadows; they were merging with the wood, becoming a part of the dark, twisted branches. Simpson reached out to touch Hank, but his friend was already lost in the ancient trance. He was staring at the sky with empty eyes, his lips still moving to the rhythm of the trees. There was no path back to the world they knew, no map to guide them home, only the deep, endless hunger of the dark, whispering forest.",
+      "As the light faded, the forest finally became quiet once more, returning to its long, deep sleep. Simpson closed his eyes, his heart beating very slowly as he surrendered to the cold dark that swallowed the clearing. He felt his spirit becoming light, floating above the ground like a falling leaf in autumn. The trees stopped their movement, their thick branches resting after the long night of power. The secrets of the ancient world were hidden away again, buried under layers of moss and shadow where no human would ever find them. The two men disappeared into the heart of the woods, becoming part of the silent history that lives in the shadows. The forest breathed once more, steady and calm, waiting for the next traveler to wander into its lonely, endless reach."
+    ],
+    tr: [
+      "Güneş, ormanın uzun ve karanlık ağaçlarının arkasında batmaya başlıyordu. Simpson ve rehberi, Hank adındaki güçlü bir adam, büyük vahşi doğanın kıyısında duruyorlardı. Ağaçlar sessizlik içinde duran dev askerler gibi görünüyordu. Simpson karanlık gölgelere bakarken göğsünde garip bir soğukluk hissetti. Bu gizemli yeri görmek için çok yol kat etmişti ama şimdi küçük bir korku duygusu hissediyordu. Hava çok sakindi ve yapraklar hiç kımıldamıyordu. Her şey önemli bir şeyin olmasını bekliyor gibiydi. Hank tek kelime etmedi ama ormanı dikkatli bir gözle izledi. Devasa ağaçlar, hiçbir insanın anlayamayacağı veya başka birine açıklayamayacağı bir dilde birbirlerine sırlar fısıldıyor gibiydi.",
+      "Işık sarıdan koyu bir mora dönerken sık ormanın derinliklerine doğru yürüdüler. Yol, ağır botlarının altında yumuşak bir çıtırtı çıkaran eski, kahverengi yaprakların altında gizliydi. Simpson, yukarıdaki dallarda öten kuş olmadığını fark etti. Sessizlik, dünyayı kaplayan bir battaniye gibi ağır ve yoğundu. Hank ile konuşmak istedi ama sesi böyle kadim bir gücün karşısında küçük ve zayıf hissettirdi. Orman canlı gibiydi, sanki ağaçlar attıkları her adımı aç gözlerle izliyordu. Sırtından aşağı inen ani titremeyi durdurmak için ceketini vücuduna daha sıkı sardı. Yakındaki nehir bile sessizce akıyor, sırlarını modern dünyanın meşgul gözlerinden uzaklarda saklıyordu.",
+      "Gece hızla geldi ve geriye kalan ışığı yutan derin bir gölge getirdi. Unutulmuş bir zamandan kalma taştan bir sunak gibi görünen büyük, düz bir kayanın yakınında kamp yapmaya karar verdiler. Hank, küçük bir ateş için kuru dallar toplayarak ustaca hareket etti. Simpson soğuk zemine oturdu ve dans eden alevlerin ağaç gövdeleri üzerinde uzun, tuhaf gölgeler oluşturmasını izledi. Kendini sadece ormana ait bir krallıkta davetsiz bir misafir gibi hissediyordu. Ateş ışığının dışındaki karanlık, güvenlik çemberlerine doğru bastırarak daha da yaklaşıyor gibiydi. Gerçekten yalnız olup olmadıklarını ya da ormanın zihinleri üzerinde gizemli işine çoktan başlayıp başlamadığını merak etti. Ormanlar sadece tahta ve kabuk değildi; karanlık gecenin yaşayan, nefes alan bir ruhuydu.",
+      "Ateş karanlıkta usulca çıtırdıyor, yakındaki çamların kadim, yosunlu kabuklarına turuncu bir ışık yayıyordu. Hank basit akşam yemeklerini hazırlıyor, yüzündeki sakin kararlılık maskesi Simpson'ın derinlerinde hissettiği gergin enerjiyle keskin bir tezat oluşturuyordu. Orman etraflarında nefesini tutuyor gibiydi; bu durum, kasıtlı hissedilen ağır ve bunaltıcı bir sessizlik yaratıyordu. Simpson, ateşin küçük parıltısının ötesindeki mutlak karanlığa bakakaldı. Her gölge sanki ağaçların kendileri onları izlemek için yaklaşıyormuş gibi uzuyor ve yer değiştiriyordu. Uçsuz bucaksız, karanlık orman boş değildi; havayı ince ve nefes alması güç kılan sessiz, görünmez bir varlıkla doluydu. Sessizliği bozmak istedi ama atmosfer insan gürültüsü için fazla kırılgandı.",
+      "Hank nihayet ateşten başını kaldırdı ve söylemeyi seçtiğinden daha fazlasını anlayan gözlerle Simpson'ın bakışlarını karşıladı. Bu toprakların hikayelerini, derin ve el değmemiş yerleri koruyan kadim ruhların efsanelerini biliyordu. Alçak, istikrarlı bir sesle, dünyadaki bazı yerlerin insanların yürümesi için olmadığını anlatmaya başladı. Sözleri basitti ama Simpson'a kendisini hiç hissetmediği kadar küçük hissettiren ağır bir ağırlık taşıyordu. Orman, ilk şehir kurulmadan çok önce var olan kadim bir varlık, bir güçtü. Kendi hafızasına sahipti ve zamanın soğuk, karanlık geçmişine uzanıyordu. Her yaprak ve her kök, dünyanın sırlarını koruyan bu sonsuz ve dikkatli sistemin bir parçasıydı.",
+      "Saatler geçtikçe rüzgar uyanmaya başladı ve en uzun ağaçların tepelerinden alçak, hüzünlü bir sesle geçmeye başladı. Bu normal bir esinti değil, rüzgar ve gölgenin dilinde özel isimleri çağıran garip, ritmik bir fısıltıydı. Simpson, sesin bildiği doğadan değil, çok daha karmaşık ve tehlikeli bir şeyden geldiğini fark edince teninin soğuduğunu hissetti. Orman konuşuyordu ve kelimeleri insan zihnini şaşırtmak için tasarlanmıştı. Hank'e baktı ama rehber çoktan battaniyesine yerleşmişti, ifadesi sert ve kımıldamazdı. Kalbinde yarışan korkuya rağmen, Simpson fısıldayan ormanın gerçekliğinden kaçamayacağını biliyordu. Gözlerini kapattı, uykuya dalmayı umuyordu ama dışarıdaki aç ormanın tamamen farkındaydı.",
+      "Gece derinleşti ve hava çok soğuk oldu. Simpson uyuyamadı çünkü orman küçük çadırlarının etrafında garip sesler çıkarıyordu. Doğruldu ve ağaçları dikkatlice dinledi. Ses, aynı anda konuşan birçok insan gibiydi ama kelimeleri anlayamıyordu. Karanlığı dolduran yumuşak, meşgul bir fısıltıydı. Taş gibi uyuyan Hank'e baktı. Hank sesleri hiç duymuyor gibiydi. Simpson bu geniş, karanlık yerin ortasında kendini çok yalnız hissetti. Ağaçlar rüzgarda yavaşça hareket ediyor ve uzun dalları gökyüzüne uzanan ince, gri parmaklar gibi görünüyordu. Ormanın yaşayan bir şey olduğunu ve kendisinin bir şey yapmasını beklediğini hissetti ama ne yapacağını bilmiyordu.",
+      "Ormanı daha iyi görmek için ateşten biraz uzaklaşmaya karar verdi. Yer, ağır botlarının altında yüksek sesle çıtırdayan kuru yapraklarla kaplıydı. Her adım bir hata gibi hissettiriyordu çünkü ses sessiz ormanda yankılanıyordu. Büyük, yaşlı bir çam ağacına ulaştı ve onun pürüzlü, soğuk kabuğuna dokundu. Deri gibi hissettirdi. Aniden, fısıltı tamamen durdu. Sessizlik gürültüden bile daha kötüydü. Simpson bir işaret bekleyerek nefesini tuttu. Orman onu geri dönmesi için uyarıyormuş gibi göğsüne bastıran güçlü, görünmez bir baskı hissetti. Kalın gövdelerin arasındaki siyah boşluğa baktı ama hiçbir şey görmedi. Karanlık, gözlerini yavaşça örten kadife bir battaniye gibi ağır ve kalındı.",
+      "Korku kalbini doldurmaya başladı ve nabzının çok hızlı atmasına neden oldu. Hank'in kendisine bu ormanın kadim ruhları hakkında anlattığı hikayeleri hatırladı. Ağaçların sadece bitki değil, insan ziyaretçi istemeyen gizli bir dünyanın koruyucuları olduğunu fark etti. Hank'e çığlık atmak istedi ama boğazı düğümlendi ve kurudu. Yavaşça ateşin güvenliğine doğru geri çekildi. Küçük kampa ulaştığında ateş neredeyse sönmüştü. Kırmızı közler toprağın içinde küçük, öfkeli gözler gibi parlıyordu. Hemen oturdu ve battaniyesini omuzlarına sıkıca sardı. Bir daha hareket etmedi ama gözlerini kocaman açık tuttu, gölgelerin dansını izledi ve sabah ışığının ormana nihayet ulaşmasını bekledi.",
+      "Sabah güneşi orman zeminini kaplayan yoğun gri sisin içinden geçmekte zorlanıyordu. Simpson, neredeyse hiç uyumadığı bir gecenin ardından ağırlık ve yorgunluk hissederek yerinden sıçradı. Henüz uyanmış olan ve ateşin sönmekte olan közleri üzerinde sabah kahvesini hazırlamakla meşgul olan Hank'e baktı. Hava bugün farklı hissediliyordu, her hareketi zorlaştıran görünmez bir ağırlıkla doluydu. Hank, karanlık gece boyunca duyduğu tuhaf fısıltılardan bahsetmedi ve sanki sıra dışı hiçbir şey olmamış gibi davrandı. Simpson ona sesleri sormak istedi ama aniden soğuk bir çekingenlik hissetti. Korkularını şimdilik saklamaya karar verdi ve ağaçların sabah ışığında derin ve karanlık bir sırrı koruyan askerler gibi nasıl uzun ve hareketsiz durduklarını izledi.",
+      "Diğer taraftaki nehre ulaşmak için ormanda yürümeye devam etmeye karar verdiler. Sık ormanın derinliklerine doğru ilerlediklerinde, ağaçlar onlar geçerken şekil değiştiriyor ve sanki onlarla birlikte hareket ediyordu. Simpson her başını çevirdiğinde, ağaçların ahşap gözleriyle kendisini yakından izlediğini hissediyordu. Orman şimdi çok sessizdi, kuşlar bile her zamanki şarkılarını söylemiyordu. Tek ses, kuru yosunlu toprağın üzerinde botlarının çıkardığı hafif çatırtıydı. Hank, arkasındaki ağaçlara hiç bakmadan hızlı adımlarla yürüyordu. Simpson, bacakları ağır ve zayıf hissettiği için ona ayak uydurmakta zorlanıyordu. Sürekli omzunun üzerinden geriye bakıyor, karanlık gölgelerin içinden kadim bir şeyin onları takip ettiğini hissediyordu.",
+      "Öğlene doğru, çalılar yolu kapattığı için patikayı bulmak çok zorlaştı. Ağaçların aniden bittiği ve parlak, açık gökyüzünün altında geniş bir boş arazi bırakan bir açıklığa ulaştılar. Simpson nefes almak için durdu ve bu tuhaf dairesel yere bakındı. Bu açıklığın etrafındaki tüm ağaçların, sanki merkezdeki bir şeyden korkuyormuş gibi merkezden uzağa doğru eğildiklerini fark etti. Buradaki atmosfer aşırı ağır ve yoğundu, nefes almak neredeyse imkansızdı. Aniden burayı hemen terk etme isteği duydu ancak ayakları yere yapışmış gibiydi. Hank ona garip bir ifadeyle baktı ve bir an için Simpson, arkadaşının sabit, sertleşmiş gözlerinde gerçek bir korku pırıltısı gördü.",
+      "Rüzgar, ağaçların arasından alçak ve mutsuz bir sesle esmeye başladı. Bulutlar parlak güneşi saklamak için hareket ederken, Simpson havanın çok soğuduğunu hissetti. Dallar, hiç de doğal görünmeyen bir şekilde sallanıp dans ediyordu. Sanki orman, hiçbir insanın anlayamayacağı bir dilde konuşmaya çalışıyordu. Hank yürümeyi bıraktı ve yüzü solgun, elleri yanında titreyerek hareketsiz kaldı. Gözlerini, gölgelerin her saniye daha da derinleştiği ve tehlikeli bir hal aldığı ormanın karanlık merkezine çevirdi. Simpson, kadim ormanın ruhunun artık uyandığını ve her hareketlerini aç, antik bir niyetle izlediğini bilerek kalbinde derin bir dehşet hissetti.",
+      "Aniden, ormanın sesleri çevrelerini saran garip seslerden oluşan bir koroya dönüştü. Ağaçlar, kaçmalarını engelleyen bir ahşap ve yaprak hapishanesi yaratarak etraflarını sarıyor gibiydi. Simpson çantasını sıkıca tuttu ve nefes almaya çalıştı, ancak hava ince ve garip, büyülü bir tozla dolu gibiydi. Görüş açısının köşesinde bir hareketlilik gördü, ancak doğrudan ağaçlara baktığında, tekrar tamamen hareketsizdiler. Bu, ormanın zihniyle oynadığı acımasız bir saklambaç oyunuydu. Yardım çığlığı atmak istedi ama boğazı kuru ve sıkışmış hissediyordu; sanki ormanın kendisi, derin sırlarını sonsuza dek güvende tutmak için sesini içinde hapsediyordu.",
+      "Hank, iki çok eski ve çarpık ağacın arasında gizlenmiş, sanki yoktan var olmuş gibi görünen bir yolu işaret etti. Tek bir kelime etmedi ama gözleri, bu vahşi yerde yalnız olmadıklarını anladığının dehşet verici hikayesini anlatıyordu. Canlı parmaklar gibi ilerlemelerine karşı savaşan karmaşık çalıların arasından zorlukla ileri yürüdüler. Her adım, ayaklarının altındaki toprağın kendisine karşı bir savaş gibiydi. Fısıltıları takip eden sessizlik, gürültüden daha da kötüydü çünkü bir sonraki adımda ne olacağının bir uyarısı gibiydi. Simpson, asla geçmemeleri gereken bir sınırı aştıklarını ve artık ormanın onları bir daha asla bildikleri dünyaya geri bırakmayacağını biliyordu.",
+      "Yol onları, güneş ışığının ulaşamadığı karanlık ormanın derinliklerine götürdü. Simpson etrafına baktı ama her şey gölgeler içinde aynı görünüyordu. Zemin ıslak ve yumuşaktı; eski odun ve toprak kokusu her yerdeydi. Ağaçlara doğrudan bakmadığı zamanlarda onların hareket ettiğini hissetti. Hank, sadece kendisinin duyabildiği bir sesi dinliyormuş gibi başı önde yürüyordu. Hava ağır ve kalındı, nefes almayı çok zorlaştırıyordu. Uzun süre yürüdüler ama ağaçların sonunu göremediler. Orman, etraflarında yavaşça nefes alan ve onları tamamen durdurmak için mükemmel anı bekleyen yaşayan bir dev gibiydi.",
+      "Aniden, tamamen sessiz olan geniş bir açıklığa ulaştılar. Burada kuşlar, böcekler veya rüzgar yoktu. Sessizlik, tüm dünyanın üzerindeki ağır bir battaniye gibi çok garipti. Açıklığın ortasında otlar farklı görünüyordu, sanki bir şey onları defalarca aşağı doğru bastırmıştı. Simpson, Hank'e baktı ama arkadaşı arkasına dönmedi. Hank durdu ve dizlerinin üzerine çöktü, ellerini soğuk toprağa daldırdı. Simpson'ın anlayamadığı kelimeler fısıldamaya başladı. Bu, şehirler ve yollar inşa edilmeden çok uzun zaman öncesinden kalma eski bir şarkı gibi geliyordu. Açıklığın kenarındaki ağaçlar, ağır ve karanlık dallarını hareket ettirecek rüzgar olmamasına rağmen sallanmaya başladı.",
+      "Simpson, aniden buz gibi bir soğukluğun cildine değdiğini hissetti. Ormanın kadim gücünün kendini göstermek için güç topladığını biliyordu. Gölgelerin büyümeye başladığını ve neredeyse insan gibi görünen ama yine de çok yanlış olan şekillere büründüğünü gördü. Uzun, inceydiler ve gövdelerin arasında garip, akışkan bir hareketle ilerliyorlardı. Kaçmak istedi ama ayakları yere yapışmış gibiydi. Vücudundaki her kas zayıf hissettiriyordu ve zihni kafa karışıklığı ve korkuyla dönüyordu. Gölgelerin açıklığın etrafında döndüğünü, her saniye biraz daha yaklaştığını izledi. Sonunda, insandan çok önce var olan bir şey tarafından tuzağa düşürüldüklerini ve karanlık ağaçların yaşayan ruhundan kaçmanın hiçbir yolu olmadığını anladı.",
+      "Gölgeler, uzun ve karanlık parmaklar gibi onlara doğru uzanıyor, ağaçlar ile açıklığın merkezi arasındaki boşluğu kapatıyordu. Simpson dehşet içinde gözleri fal taşı gibi açılmış halde donup kalmıştı; uzun, ince silüetler yaklaşıyordu. Bu şekiller gerçek insanlar değil, kadim ormanın ruhlarıydı. Ormanın kalbinin atışını kontrol ediyormuş gibi görünen yavaş ve hayaletimsi bir ritimle dans ediyorlardı. Hank hâlâ dizlerinin üzerindeydi, garip kelimeleri söylerken sesi yükseliyordu. Artık ormana aitmiş gibi görünüyordu, ruhu fiziksel bedeninden uzaklaşıyordu. Etraflarındaki hava, ağaçları iskelet gibi gösteren soluk ve hasta bir ışıkla parlamaya başladı. Simpson, ormanın nihayet korkularıyla beslendiğini, düşüncelerini ve hatıralarını o derin, ağır ağaç örtüsünün altında tükettiğini fark etti.",
+      "Aniden, aynı anda devrilen binlerce ağaç gibi muazzam bir ses sessizliği bozdu. Yer, ayaklarının altında şiddetle sarsıldı ve Simpson'ı da düşmeye zorladı. Başını kaldırdığında dev ağaçların dallarının aşağı büküldüğünü, sanki onları yerden yakalamak istercesine uzandığını gördü. Ruhlar artık sadece gölge değildi; ahşapla birleşiyor, karanlık ve bükülmüş dalların bir parçası haline geliyorlardı. Simpson, Hank'e dokunmak için elini uzattı ama arkadaşı çoktan kadim transın içinde kaybolmuştu. Boş gözlerle gökyüzüne bakıyor, dudakları hâlâ ağaçların ritmiyle hareket ediyordu. Bildikleri dünyaya geri giden bir yol ya da onları eve götürecek bir harita yoktu, sadece karanlık ve fısıldayan ormanın derin, sonu gelmeyen açlığı vardı.",
+      "Işık solduğunda, orman nihayet tekrar sessizleşti ve uzun, derin uykusuna geri döndü. Simpson gözlerini kapattı, kalbi çok yavaş atıyordu; açıklığı yutan soğuk karanlığa teslim oldu. Ruhunun hafiflediğini, sonbaharda düşen bir yaprak gibi yerden yükseldiğini hissetti. Ağaçlar hareket etmeyi bıraktı, kalın dalları uzun güç gösterisinden sonra dinlenmeye geçti. Kadim dünyanın sırları, hiçbir insanın asla bulamayacağı yosun ve gölge katmanlarının altında tekrar gizlendi. İki adam ormanın kalbinde kayboldu, gölgelerde yaşayan sessiz tarihin bir parçası haline geldiler. Orman bir kez daha nefes aldı, sabit ve sakin bir şekilde, bir sonraki yolcunun ıssız ve sonu gelmeyen etki alanına girmesini bekliyordu."
+    ],
+    words: {
+      "wilderness": "vahşi doğa",
+      "mysterious": "gizemli",
+      "whisper": "fısıldamak",
+      "ancient": "kadim",
+      "intruder": "davetsiz misafir",
+      "spirit": "ruh",
+      "stifling": "bunaltıcı",
+      "entity": "varlık",
+      "mournful": "hüzünlü",
+      "rhythmic": "ritmik",
+      "fragile": "kırılgan",
+      "whispering": "fısıltı",
+      "crunch": "çıtırtı sesi çıkarmak",
+      "bark": "ağaç kabuğu",
+      "guardian": "koruyucu",
+      "ember": "köz",
+      "pulse": "nabız",
+      "fog": "sis",
+      "mossy": "yosunlu",
+      "clearing": "açıklık",
+      "atmosphere": "atmosfer",
+      "flicker": "pırıltı",
+      "branch": "dal",
+      "dread": "dehşet",
+      "boundary": "sınır",
+      "tangled": "dolaşık",
+      "shadow": "gölge",
+      "trap": "tuzak",
+      "strange": "tuhaf",
+      "trance": "trans",
+      "surface": "yüzey",
+      "surrender": "teslim olmak"
+    }
+  }
+,
+  {
+    id: 'horror_phantom_train',
+    title: "The Phantom Train",
+    author: 'Charles Dickens',
+    level: 'A2',
+    coverUrl: '/covers/horror_phantom_train.webp',
+    en: [
+      "I was a signalman working in a deep, dark railway cutting. My cabin was a lonely place, far away from the busy town. The walls were wet and the air felt heavy and cold. Above me, the steep, jagged rocks reached toward the sky like giant fingers. It was a place where the sun rarely touched the ground. I spent my days and nights watching the iron tracks. My job was to control the signals so the heavy trains could pass safely. I was always alert, looking at the flickering lights of my lamp. Sometimes, a strange silence fell over the place, and I felt as if someone was watching me from the shadows. The wind made a low sound in the tunnel nearby, like a soft, ghostly whisper calling out my name into the dark night.",
+      "One evening, I heard a voice call out from below the cutting. It sounded far away and sad. The voice shouted, Hello! Below there! I looked down, but I saw nobody in the damp darkness. I was a man of logic, so I told myself it was just the wind or a trick of my tired mind. Yet, the voice came again, clear and strange. It felt like it came from inside the ground itself. I walked to the edge of the deep hole and held my lamp high above my head. The light was weak, but it caught the path below. Still, the path was empty and silent. I felt a cold shiver run down my back. I started to wonder if I was truly alone in this dark and lonely place.",
+      "I waited for a long time, but no one appeared. My heart beat fast against my chest. I knew that no one could climb up those steep walls so quickly. It was impossible for a human to be there. I returned to my small, wooden cabin and sat by the fire. The fire was dying, and the room grew cold once more. I looked at the telegraph machine, waiting for a message. Suddenly, it started to click. The sound was sharp and nervous. I stared at the metal needles moving back and forth. Someone was sending a message from the station far away. My hands began to shake as I realized that the mystery of the voice and the signal were connected. Something bad was waiting to happen in the dark tonight.",
+      "I looked at the telegraph machine with great fear. It clicked and moved in a very strange way. The message was not like the usual ones I received from the station. The words seemed to jump out from the machine as if they were screaming for my attention. My heart beat loudly in the quiet room. I wanted to turn away, but I could not stop watching the needles. They moved left and right, then back again with a fast, nervous rhythm. The light from my oil lamp flickered and danced on the walls. The shadows looked like tall, thin ghosts watching me from the corners. I felt that the machine was telling me a secret about the future. My hands were cold and I could not hold my coffee cup steady anymore.",
+      "The message on the machine was very short, but it made me feel very dizzy. It told me to prepare for danger on the tracks near the tunnel. I did not know who sent this message, but it felt like a warning from a place I could not see. I picked up my lantern and walked toward the door. I wanted to see if anyone was standing outside in the dark, but the air was still and empty. The damp walls of the cutting held the moisture from the night. I looked down the long line of dark iron tracks that went into the mouth of the tunnel. Nothing moved in the distance. The silence was heavier than before, like a thick blanket that covered everything and made it hard to breathe properly tonight.",
+      "I decided to walk toward the tunnel entrance to check the signal again. My boots hit the ground with a soft sound that seemed too loud in the quiet night. I thought about the voice that called to me earlier. Was it the same power that sent this strange message? My mind raced with many ideas, but none of them made any sense. The tunnel looked like a giant black mouth waiting to swallow anything that came near it. I held my lamp up to see better, but the light died out after a few steps. I stood there in the complete darkness for a long moment, feeling the cold air against my face. I knew I had to be strong, but the fear was growing inside me like a dark, deep forest.",
+      "I walked slowly along the cold metal rails toward the tunnel entrance. Every step felt like a heavy weight on my tired feet. The night was very dark and the air felt thick with a strange kind of mist. I looked at the signal light, but it was not bright today. It looked dim and sick as if it were hiding something from me. I remembered the red light I saw before and my whole body started to shake. The signal did not move at all, staying in the position that meant stop. I stood there waiting for a train that did not come. My breathing became fast and shallow while I stared into the blackness. The silence of the night was broken only by the sound of my own quick heart beating in my chest.",
+      "Suddenly, I heard a sound that made me stop immediately. It was a soft, low noise that came from deep inside the dark tunnel. It did not sound like a normal train on the iron tracks. Instead, it was more like a sigh or a quiet whisper coming from the deep earth. I held my breath and listened very carefully to the quiet air. My hands were wet with sweat even though the wind was very cold against my skin. I wondered if someone or something was hiding inside the tunnel walls. The fear I felt was not just about the train; it was about the unknown force that seemed to control this place. I wanted to run away but my feet could not move from the damp ground.",
+      "Then, a faint light appeared at the end of the tunnel. It was not the usual golden light of a steam engine lamp. It was a pale, weak blue color that made the wet walls of the tunnel shine like silver. I watched as the light grew larger and started to dance in the thick air. It did not move like a train coming down the track; it moved like a spirit moving through the night. I tried to shout for help, but my voice was trapped in my throat. The light moved closer and closer until it filled the entrance of the tunnel. I closed my eyes tightly because the bright glow was too strong for me to see clearly in the darkness of this lonely, forgotten station.",
+      "I stood very still as the strange blue light disappeared into the tunnel. My heart beat fast and my hands were shaking in the cold night air. I looked at the signal box, but everything was quiet and empty. The man who worked the signals was nowhere to be found, and I felt completely alone again. The silence returned to the lonely railway lines, and I felt a deep chill deep inside my bones. I looked at my watch, but the hands did not seem to move anymore. It felt as if time had stopped in this dark and sad place. I wondered if I was dreaming or if I was losing my mind, but the cold wind and the hard ground under my feet felt very real and very scary.",
+      "Suddenly, a sharp bell rang inside the signal room. The sound broke the heavy silence of the night like a loud hammer. I jumped back because I did not expect any noise in this lonely station. I looked toward the small building and saw a light flickering behind the window. Someone was inside, but I had just checked moments ago and there was nobody there. I walked slowly toward the door, my legs feeling heavy and weak like lead. The bell continued to ring with a strange rhythm that felt like a secret message. I reached out my hand to open the door, but my fingers stopped just before the cold metal handle. I felt a powerful fear that told me not to enter that small room.",
+      "The ringing finally stopped and everything was quiet once more. I looked through the dusty glass of the window and saw a shadow moving near the desk. It was the signalman, but he looked different now. He was sitting at his chair with his face hidden in his hands, looking very tired and sad. He did not seem to notice me standing outside in the dark. I wanted to call his name, but my mouth felt dry and my voice failed to come out. I watched him for a long time as the moonlight shone on his pale hair. He was completely still, like a statue carved from the dark rock of the tunnel. I realized then that this man was trapped in a mystery that I could never fully understand.",
+      "I stood outside for a long time, watching the man in the signal room. He slowly moved his hands from his face and looked directly at the window. His eyes were wide and filled with a deep, silent sadness that made my heart ache. He did not seem to see me, but he looked toward the dark tunnel as if he was waiting for a terrible sound. I felt very cold, but I stayed still because I was afraid to move. The air smelled like burnt metal and damp earth. I wanted to help him, but I did not know how. The silence was heavy and thick like a dark blanket. I finally gathered my courage and walked into the small, dusty room. The floor creaked under my heavy boots, but he did not move or look at me.",
+      "The room was filled with the smell of oil and old paper. The signalman stood up slowly and turned to face the wall. He did not speak, but his breathing was fast and shallow. I took a step toward him and said his name in a soft voice. He jumped as if I had hit him, and he turned around with a look of pure terror. His face was very white, and his skin looked thin like old paper. He pointed at the signal machine, but his hand was shaking uncontrollably. I looked at the machine, and I saw that the needles were moving by themselves. The bells were quiet, but the machine was working hard, clicking and moving as if an invisible ghost was pulling the levers in the dark night.",
+      "I looked at the signalman again and felt my skin turn cold with fear. He whispered that the danger was coming back again to the tunnel. He told me that he saw the phantom train every time the bell rang in this strange way. He said it was a warning for a bad accident that had happened a long time ago. I felt the floor under my feet start to tremble as if a large weight was moving deep underground. The signalman grabbed my arm with his cold, thin fingers and squeezed it tightly. I could feel his pain through his shaking hand. We stood together in the small room while the sound of the ghost train grew louder and closer. The metal walls of the signal box started to shake violently around us.",
+      "The air in the small room felt heavy as the phantom train sound grew louder. My heart beat fast against my chest. I watched the signalman closely because he looked very scared. He stood near the window and pointed at the dark tunnel outside. He said the ghost was back again to show us the same sad event from the past. I tried to stay calm for his sake. The floor shook under our feet like the earth was breaking. I saw a pale light coming from the deep tunnel. It was not a real train, but a cold shadow moving through the night air. The signalman cried out in fear. He covered his eyes with his hands and leaned against the cold wall. I did not know what to say to him at that moment.",
+      "The ghost train moved through the tunnel without making a sound of iron on tracks. It felt like a nightmare that would not end. I saw figures standing near the windows of the phantom carriages. They looked like people from a long time ago. Their faces were sad and white, and they did not look at us as they passed by. The signalman shouted that the terrible accident was starting once more. He told me that he could do nothing to stop it. We were just silent witnesses to this dark history. I felt a strong wave of sadness hit me. My hands were shaking because the experience was so strange and frightening. I wanted to run away, but my feet felt stuck to the dusty ground of the signal room.",
+      "Suddenly, the phantom train disappeared into the darkness on the other side of the tunnel. The strange light faded away slowly, and the shaking of the room stopped. Everything went quiet again, but the air still felt thin and cold. The signalman fell onto his wooden chair and breathed very hard. He looked very old and tired after the ghost passed. I walked to him and gave him a glass of water. He took it with a trembling hand but did not look at me. His eyes were focused on the empty dark tunnel. He knew that the danger had passed for now, but he was afraid of when the phantom would return. I realized that his life was a lonely and dark prison of memory.",
+      "The next day, I walked back to the lonely signal box. The sun was shining, and the birds were singing in the trees near the track. I felt happy to be in the light after the dark night. However, when I reached the entrance to the tunnel, I saw a group of men standing there. They were talking quietly and looked very sad. My heart sank as I walked toward them. I saw a man in a dark coat standing by the tracks. He was not the signalman I knew. I asked him what had happened, and he turned to look at me with tears in his eyes. He pointed to the rails where the train usually passed. My hands started to shake, and I felt a cold wind blow across my face despite the summer sun.",
+      "The man told me that a terrible accident happened early that morning. He said that a train hit a man who was walking on the tracks near the tunnel. It was the signalman. He did not hear the engine because he was looking at the tunnel entrance as if he were waiting for something to arrive. The driver tried to stop the train, but it was too late. He said the signalman seemed to be waving a warning flag, even though there was no danger on the tracks at that moment. The story sounded exactly like the vision the signalman had told me about before. I felt a deep sense of sadness as I stood there in the quiet air. The mystery of the phantom train was finally clear to me now.",
+      "I looked at the place where he died and thought about his lonely life. He was a man who lived with ghosts and warnings that no one else could see. He knew the end was coming, and he tried to tell me about it in his own way. The dark tunnel now felt like a final place of rest for his troubled spirit. I walked away from the tracks and did not look back at the dark hole in the hill. I understood that some things in this world are not for us to fully know. I walked home in the bright afternoon, but I kept the memory of the signalman in my heart forever. His sad story would always remind me of the strange power of the night and the thin line between the living and the dead."
+    ],
+    tr: [
+      "Derin ve karanlık bir demiryolu kesiğinde çalışan bir sinyalciydim. Kulübem, yoğun şehirden çok uzak, yalnız bir yerdi. Duvarlar ıslaktı ve hava ağır ve soğuk hissediliyordu. Üzerimdeki dik, girintili çıkıntılı kayalar dev parmaklar gibi gökyüzüne uzanıyordu. Güneşin yere nadiren değdiği bir yerdi. Günlerimi ve gecelerimi demir rayları izleyerek geçiriyordum. İşim, ağır trenlerin güvenle geçebilmesi için sinyalleri kontrol etmekti. Lambamın titreyen ışığına bakarak her zaman tetikteydim. Bazen, yerin üzerine garip bir sessizlik çökerdi ve gölgelerin içinden birinin beni izlediğini hissederdim. Rüzgar, yakındaki tünelde, karanlık geceye adımı seslenen yumuşak, hayalet gibi bir fısıltı çıkarıyordu.",
+      "Bir akşam, kesiğin altından bir sesin bağırdığını duydum. Uzaktan gelmiş gibiydi ve üzgündü. Ses, Merhaba! Aşağıdaki! diye bağırdı. Aşağı baktım ama nemli karanlıkta kimseyi görmedim. Mantıklı bir insandım, bu yüzden kendime bunun sadece rüzgar ya da yorgun zihnimin bir oyunu olduğunu söyledim. Yine de, ses tekrar geldi, net ve garibeydi. Sanki doğrudan yerin içinden geliyormuş gibi hissettirdi. Derin çukurun kenarına yürüdüm ve lambamı başımın üzerine kaldırdım. Işık zayıftı ama aşağıdaki yolu aydınlattı. Yine de yol boş ve sessizdi. Sırtımdan aşağı soğuk bir ürperti geçti. Bu karanlık ve yalnız yerde gerçekten yalnız olup olmadığımı merak etmeye başladım.",
+      "Uzun süre bekledim ama kimse ortaya çıkmadı. Kalbim göğsüme hızlı hızlı vuruyordu. O dik duvarlara kimsenin bu kadar hızlı tırmanamayacağını biliyordum. Bir insanın orada olması imkansızdı. Küçük ahşap kulübem geri döndüm ve ateşin yanına oturdum. Ateş sönüyordu ve oda tekrar soğudu. Bir mesaj bekleyerek telgraf makinesine baktım. Aniden, tıkırdamaya başladı. Ses keskin ve huzursuzdu. Metal iğnelerin ileri geri hareket edişine baktım. Birisi çok uzaklardaki istasyondan bir mesaj gönderiyordu. Sesin ve sinyalin gizeminin bağlantılı olduğunu fark ettiğimde ellerim titremeye başladı. Bu gece karanlıkta kötü bir şey olmasını bekliyordu.",
+      "Telgraf makinesine büyük bir korkuyla baktım. Çok garip bir şekilde tıkırdayıp hareket ediyordu. Gelen mesaj, istasyondan aldığım normal mesajlar gibi değildi. Kelimeler sanki dikkatimi çekmek için çığlık atıyormuş gibi makineden fırlıyorlardı. Sessiz odada kalbim hızla çarpıyordu. Başımı çevirmek istedim ama iğnelere bakmaktan kendimi alamadım. Hızlı ve gergin bir ritimle sola sağa, sonra tekrar geriye hareket ettiler. Gaz lambamın ışığı titredi ve duvarlarda dans etti. Gölgeler, köşelerden beni izleyen uzun, ince hayaletlere benziyordu. Makinenin bana gelecek hakkında bir sır verdiğini hissettim. Ellerim soğuktu ve kahve fincanımı artık sabit tutamıyordum.",
+      "Makinedeki mesaj çok kısaydı ama beni çok sersemletmişti. Bana tünelin yakınındaki raylarda tehlikeye karşı hazırlıklı olmamı söylüyordu. Bu mesajı kimin gönderdiğini bilmiyordum ama göremediğim bir yerden gelen bir uyarı gibi hissettiriyordu. Fenerimi aldım ve kapıya doğru yürüdüm. Dışarıda karanlıkta birinin durup durmadığını görmek istedim ama hava durgun ve boştu. Geçidin nemli duvarları gecenin ıslaklığını tutuyordu. Tünelin ağzına doğru giden uzun, karanlık demir ray hattına baktım. Uzaklarda hiçbir şey kımıldamıyordu. Sessizlik eskisinden daha ağırdı; her şeyi kaplayan ve bu gece nefes almayı zorlaştıran kalın bir battaniye gibiydi.",
+      "Sinyali tekrar kontrol etmek için tünel girişine doğru yürümeye karar verdim. Botlarım yere, sessiz gecede çok yüksek gelen yumuşak bir sesle çarptı. Daha önce bana seslenen o sesi düşündüm. Bu garip mesajı gönderen güçle aynı mıydı? Zihnim birçok fikirle yarışıyordu ama hiçbiri mantıklı gelmiyordu. Tünel, yaklaşan her şeyi yutmayı bekleyen devasa siyah bir ağız gibi görünüyordu. Daha iyi görmek için lambamı havaya kaldırdım ama ışık birkaç adım sonra söndü. Uzun bir an boyunca tam karanlıkta, soğuk havayı yüzümde hissederek orada durdum. Güçlü olmam gerektiğini biliyordum ama korku içimde karanlık, derin bir orman gibi büyüyordu.",
+      "Soğuk metal raylar boyunca tünel girişine doğru yavaşça yürüdüm. Her adımım yorgun ayaklarımda ağır bir yük gibiydi. Gece çok karanlıktı ve hava tuhaf bir sisle yoğunlaşmıştı. Sinyal ışığına baktım ama bugün parlak değildi. Sanki benden bir şey saklıyormuş gibi sönük ve hasta görünüyordu. Daha önce gördüğüm kırmızı ışığı hatırladım ve tüm vücudum titremeye başladı. Sinyal hiç hareket etmedi, dur anlamına gelen pozisyonda kaldı. Orada, gelmeyen bir treni bekleyerek durdum. Karanlığın içine bakarken nefes alışverişim hızlandı ve sığlaştı. Gecenin sessizliği, sadece göğsümde hızla atan kendi kalbimin sesiyle bozuluyordu.",
+      "Aniden, beni hemen durmaya zorlayan bir ses duydum. Bu, karanlık tünelin derinliklerinden gelen yumuşak, alçak bir sesti. Demir raylar üzerindeki normal bir tren gibi gelmiyordu. Daha çok derin topraktan gelen bir iç çekiş veya sessiz bir fısıltı gibiydi. Nefesimi tuttum ve sessiz havayı çok dikkatli dinledim. Rüzgar cildime karşı çok soğuk olmasına rağmen ellerim ter içindeydi. Tünel duvarlarının içinde birinin veya bir şeyin saklanıp saklanmadığını merak ettim. Hissettiğim korku sadece trenle ilgili değildi; bu yeri kontrol ediyor gibi görünen bilinmeyen güçle ilgiliydi. Kaçmak istedim ama ayaklarım nemli yerden kımıldayamadı.",
+      "Ardından, tünelin ucunda hafif bir ışık belirdi. Bu, buharlı bir lokomotif lambasının alışıldık altın rengi ışığı değildi. Tünelin ıslak duvarlarını gümüş gibi parlatan soluk, zayıf mavi bir renkti. Işığın büyüyüşünü ve yoğun havada dans edişini izledim. Raylardan gelen bir tren gibi hareket etmiyordu; gecenin içinde hareket eden bir ruh gibi ilerliyordu. Yardım için bağırmaya çalıştım ama sesim boğazıma düğümlenmişti. Işık, tünelin girişini doldurana kadar yaklaştı. Gözlerimi sıkıca kapattım çünkü parlak ışık, bu ıssız, unutulmuş istasyonun karanlığında net bir şekilde görebilmem için çok güçlüydü.",
+      "Garip mavi ışık tünele doğru kaybolurken hareketsiz bir şekilde durdum. Kalbim hızla atıyordu ve soğuk gece havasında ellerim titriyordu. Sinyal kulübesine baktım ama her yer sessiz ve boştu. Sinyalleri kontrol eden adam hiçbir yerde görünmüyordu ve kendimi yine tamamen yalnız hissettim. Yalnız demiryolu hatlarına sessizlik geri döndü ve kemiklerimin derinliklerinde derin bir ürperti hissettim. Saatime baktım ama akreple yelkovan artık hareket etmiyor gibiydi. Sanki bu karanlık ve hüzünlü yerde zaman durmuştu. Rüya mı gördüğümü yoksa aklımı mı kaçırdığımı merak ettim ama soğuk rüzgar ve ayaklarımın altındaki sert zemin çok gerçek ve korkutucuydu.",
+      "Aniden, sinyal odasının içinde keskin bir zil çaldı. Ses, gecenin ağır sessizliğini yüksek bir çekiç darbesi gibi bozdu. Bu ıssız istasyonda hiçbir ses beklemediğim için geri sıçradım. Küçük binaya doğru baktım ve pencerenin arkasında titreyen bir ışık gördüm. İçeride birisi vardı ama az önce kontrol etmiştim ve kimse yoktu. Kapıya doğru yavaşça yürüdüm, bacaklarım kurşun gibi ağır ve güçsüz geliyordu. Zil, gizli bir mesaj gibi hissettiren garip bir ritimle çalmaya devam etti. Kapıyı açmak için elimi uzattım ama parmaklarım soğuk metal kulptan hemen önce durdu. O küçük odaya girmememi söyleyen güçlü bir korku hissettim.",
+      "Zil sesi nihayet durdu ve her yer bir kez daha sessizleşti. Pencerenin tozlu camından içeri baktım ve masanın yanında hareket eden bir gölge gördüm. Bu sinyalciydi ama şimdi farklı görünüyordu. Sandalyesinde yüzünü ellerinin arasına saklamış, çok yorgun ve hüzünlü görünüyordu. Karanlıkta dışarıda durduğumu fark etmemiş gibiydi. Adını seslenmek istedim ama ağzım kurumuştu ve sesim çıkmadı. Ay ışığı onun soluk saçlarına vururken onu uzun süre izledim. Tünelin karanlık kayasından oyulmuş bir heykel gibi tamamen hareketsizdi. O an, bu adamın asla tam olarak anlayamayacağım bir gizemin içine hapsolduğunu fark ettim.",
+      "Sinyal odasındaki adamı izleyerek uzun süre dışarıda durdum. Elleriyle yüzünü yavaşça kapattı ve doğrudan pencereye baktı. Gözleri, kalbimi sızlatan derin ve sessiz bir hüzünle doluydu. Beni görmüyor gibiydi ama sanki korkunç bir sesi bekliyormuş gibi karanlık tünele bakıyordu. Çok üşümüştüm ama hareket etmekten korktuğum için kıpırdamadan durdum. Hava yanık metal ve nemli toprak gibi kokuyordu. Ona yardım etmek istiyordum ama nasıl yapacağımı bilmiyordum. Sessizlik, karanlık bir battaniye gibi ağır ve yoğundu. Sonunda cesaretimi topladım ve küçük, tozlu odaya girdim. Zemin, ağır botlarımın altında gıcırdadı ama o ne hareket etti ne de bana baktı.",
+      "Oda yağ ve eski kâğıt kokusuyla doluydu. Sinyalci yavaşça ayağa kalktı ve duvara döndü. Konuşmadı ama nefes alıp verişi hızlı ve sığdı. Ona doğru bir adım attım ve ismini yumuşak bir sesle söyledim. Sanki ona vurmuşum gibi sıçradı ve dehşet dolu bir ifadeyle arkasına döndü. Yüzü bembeyazdı ve teni eski kâğıt gibi ince görünüyordu. Sinyal makinesini işaret etti ama eli kontrolsüz bir şekilde titriyordu. Makineye baktım ve iğnelerin kendi kendine hareket ettiğini gördüm. Çanlar sessizdi ama makine, sanki görünmez bir hayalet karanlık gecede kolları çekiyormuş gibi tıklayarak ve hareket ederek yoğun bir şekilde çalışıyordu.",
+      "Sinyalciye tekrar baktım ve korkudan tenimin soğuduğunu hissettim. Fısıldayarak tehlikenin tünele geri döndüğünü söyledi. Çan bu tuhaf şekilde her çaldığında hayalet treni gördüğünü anlattı. Bunun çok uzun zaman önce yaşanmış kötü bir kazanın uyarısı olduğunu söyledi. Yer altında ağır bir kütle hareket ediyormuş gibi ayaklarımın altındaki zeminin titremeye başladığını hissettim. Sinyalci, soğuk ve ince parmaklarıyla kolumu yakaladı ve sıkıca sıktı. Titreyen elinden acısını hissedebiliyordum. Hayalet trenin sesi daha yüksek ve daha yakın hale gelirken küçük odada birlikte durduk. Sinyal kutusunun metal duvarları etrafımızda şiddetle sarsılmaya başladı.",
+      "Hayalet trenin sesi yükselirken küçük odadaki hava ağırlaştı. Kalbim göğsüme hızla çarpıyordu. Sinyalciye dikkatle baktım çünkü çok korkmuş görünüyordu. Pencerenin yanında durdu ve dışarıdaki karanlık tüneli işaret etti. Hayaletin, geçmişteki aynı üzücü olayı bize göstermek için geri döndüğünü söyledi. Onun iyiliği için sakin kalmaya çalıştım. Yer, sanki dünya kırılıyormuş gibi ayaklarımızın altında titredi. Derin tünelden gelen soluk bir ışık gördüm. Bu gerçek bir tren değildi, gece havasında hareket eden soğuk bir gölgeydi. Sinyalci korkuyla bağırdı. Elleriyle gözlerini kapattı ve soğuk duvara yaslandı. O anda ona ne diyeceğimi bilemedim.",
+      "Hayalet tren, raylar üzerinde demir sesi çıkarmadan tünelin içinden geçti. Bitmeyecek bir kabus gibiydi. Hayalet vagonların pencerelerinin yakınında duran figürler gördüm. Sanki çok uzun zaman öncesinden kalma insanlara benziyorlardı. Yüzleri üzgün ve bembeyazdı; yanımızdan geçerken bize bakmadılar. Sinyalci, korkunç kazanın bir kez daha başladığını haykırdı. Onu durdurmak için hiçbir şey yapamayacağını söyledi. Biz sadece bu karanlık tarihin sessiz tanıklarıydık. Üzerime güçlü bir hüzün dalgasının çarptığını hissettim. Ellerim titriyordu çünkü yaşananlar çok tuhaf ve korkutucuydu. Kaçıp gitmek istedim ama ayaklarım sinyal odasının tozlu zeminine yapışmış gibiydi.",
+      "Aniden, hayalet tren tünelin diğer tarafındaki karanlığın içinde kayboldu. Garip ışık yavaşça söndü ve odanın sarsıntısı durdu. Her yer tekrar sessizleşti ama hava hala ince ve soğuktu. Sinyalci ahşap sandalyesine yığıldı ve çok zor nefes aldı. Hayalet geçtikten sonra çok yaşlı ve yorgun görünüyordu. Yanına yürüdüm ve ona bir bardak su verdim. Titreyen eliyle aldı ama yüzüme bakmadı. Gözleri boş karanlık tünele odaklanmıştı. Tehlikenin şimdilik geçtiğini biliyordu ama hayaletin ne zaman geri döneceğinden korkuyordu. Onun hayatının, anıların yalnız ve karanlık bir hapishanesi olduğunu fark ettim.",
+      "Ertesi gün, yalnız sinyal kulübesine doğru geri yürüdüm. Güneş parlıyordu ve rayların yanındaki ağaçlarda kuşlar ötüyordu. Karanlık geceden sonra gün ışığında olduğum için mutluydum. Ancak tünelin girişine ulaştığımda, orada duran bir grup adam gördüm. Sessizce konuşuyorlardı ve çok üzgün görünüyorlardı. Onlara doğru yürürken içime bir korku çöktü. Rayların yanında duran koyu renkli ceketli bir adam gördüm. O, tanıdığım sinyalci değildi. Ona ne olduğunu sordum ve o, gözlerinde yaşlarla bana doğru döndü. Trenin genellikle geçtiği rayları işaret etti. Yaz güneşine rağmen, ellerim titremeye başladı ve yüzüme doğru soğuk bir rüzgar estiğini hissettim.",
+      "Adam bana o sabah erken saatlerde korkunç bir kaza olduğunu söyledi. Tünelin yakınındaki raylarda yürüyen bir adama tren çarptığını söyledi. Bu kişi sinyalciydi. Motorun sesini duymadı çünkü sanki bir şeyin gelmesini bekliyormuş gibi tünelin girişine bakıyordu. Makinist treni durdurmaya çalıştı ama çok geçti. Sinyalcini, o an raylarda hiçbir tehlike olmamasına rağmen bir uyarı bayrağı sallıyor gibi göründüğünü söyledi. Anlattığı hikaye, sinyalcini daha önce bana anlattığı görüntüyle tamamen aynıydı. Sessiz havada orada dururken içimde derin bir hüzün hissettim. Hayalet trenin gizemi artık benim için tamamen netleşmişti.",
+      "Öldüğü yere baktım ve onun yalnız hayatı hakkında düşündüm. O, başkalarının göremediği hayaletler ve uyarılarla yaşayan bir adamdı. Sonunun geldiğini biliyordu ve bunu bana kendi yöntemiyle anlatmaya çalışmıştı. Karanlık tünel artık onun huzursuz ruhu için son bir istirahat yeri gibi hissettiriyordu. Raylardan uzaklaştım ve tepedeki karanlık deliğe bir daha bakmadım. Bu dünyadaki bazı şeylerin tamamen bilmemiz için olmadığını anladım. Parlak öğleden sonra eve doğru yürüdüm ama sinyalcini anısını kalbimde sonsuza dek sakladım. Onun üzücü hikayesi, bana her zaman gecenin garip gücünü ve yaşayanlarla ölüler arasındaki ince çizgiyi hatırlatacak."
+    ],
+    words: {
+      "signalman": "sinyal görevlisi",
+      "cutting": "yarma, kesik",
+      "steep": "dik",
+      "flickering": "titreyen",
+      "telegraph": "telgraf",
+      "shiver": "ürperti",
+      "needle": "iğne (gösterge)",
+      "flicker": "titremek, pırıldamak",
+      "damp": "nemli",
+      "moisture": "nem",
+      "entrance": "giriş",
+      "mist": "sis",
+      "dim": "sönük",
+      "shallow": "sığ",
+      "faint": "hafif",
+      "glow": "parıltı",
+      "rhythm": "ritim",
+      "handle": "kapı kolu",
+      "statue": "heykel",
+      "mystery": "gizem",
+      "shaking": "titreyen",
+      "terror": "dehşet",
+      "warning": "uyarı",
+      "tremble": "titremek",
+      "lever": "kol",
+      "invisible": "görünmez",
+      "phantom": "hayalet",
+      "event": "olay",
+      "pale": "soluk",
+      "carriage": "vagon",
+      "witness": "tanık",
+      "fade": "solmak/kaybolmak",
+      "track": "tren yolu/raylar",
+      "engine": "lokomotif/motor",
+      "accident": "kaza",
+      "spirit": "ruh",
+      "memory": "anı/hatıra"
+    }
+  }
+,
+  {
+    id: 'horror_empty_mirror',
+    title: "The Empty Mirror",
+    author: 'Bram Stoker',
+    level: 'A2',
+    coverUrl: '/covers/horror_empty_mirror.webp',
+    en: [
+      "The old house stood on the edge of the dark, silent forest. It was a very tall building with many grey stones. People in the village said that the house was unlucky and strange. I did not believe these stories at first. I was a young man looking for a quiet place to study and write my books. The air was cold and heavy when I walked up to the big wooden door. A tall, thin man opened the door for me. He had a pale face and eyes that looked like cold glass. He did not smile at all. I felt a little bit afraid, but I pushed my feelings down. I told him that I wanted to stay in his house for a few weeks to finish my important work.",
+      "The inside of the house was very dark and felt like a tomb. There were dusty paintings on the walls that showed people from many years ago. They all looked unhappy and sad. The floor made a loud sound every time I took a step. My host walked in front of me with a heavy iron key in his hand. He did not say a single word. We climbed the stairs to my room on the second floor. It was a small room with one large, rectangular mirror on the wall. The frame of the mirror was made of dark, black wood. I looked at the mirror and saw the room, but something was wrong. It felt like the glass was waiting for me to look at it closely.",
+      "I decided to put my things away and get some sleep. The journey had been long and very tiring. As I prepared to lie down, I glanced at the mirror again. The light from my small candle flickered on the wall. I saw the reflection of the chairs and the curtains, but my own face was not there. I rubbed my eyes because I was very tired. I looked again, but the glass was empty. I felt a cold wind go through the room, even though the window was closed tight. I started to shake with fear because I knew something was not right in this strange house. I was truly alone in the dark room, and my shadow felt like it was moving without me.",
+      "I stood frozen in the middle of the small bedroom. My heart was beating like a drum inside my chest. I stared at the dark glass, hoping to see myself, but it remained silent and empty. The candle flame danced wildly in the drafty air, throwing long, scary shadows against the cold stone walls. I felt as if the room itself was breathing with a life of its own. Everything looked perfect in the mirror, from the wooden chairs to the heavy velvet curtains, yet there was no trace of me. It was as if I did not exist in this house at all. A feeling of deep panic started to grow in my mind, making it hard to breathe. The silence of the night felt heavy, like a thick blanket pressing down on my shoulders.",
+      "I reached out to touch the cold surface of the mirror, but I stopped before my fingers could make contact. A strange, metallic smell filled the air, something like old coins or rusted iron. I wondered if the mirror was a trap for lost souls or just a trick of my tired mind. I thought about leaving this place immediately, but the front door was far away and the hallway was pitch black. The tall, thin man must have known about this oddity. Why did he give me this room? Maybe he wanted to watch me suffer through this mystery. I decided to cover the mirror with a thick blanket from the bed, hoping it would stop my growing anxiety and let me find some much-needed sleep before the dawn.",
+      "After I covered the glass, the room felt much safer. I lay down on the hard mattress and closed my eyes tightly. Outside, the wind howled through the twisted trees of the forest, sounding like someone crying for help. I tried to focus on my writing projects, but my thoughts kept returning to the blank mirror. What if my reflection was still trapped behind the cloth, waiting for me to take the cover off? The darkness of the house seemed to seep into my dreams, full of shapes that had no names. I felt very vulnerable in this strange, lonely building. I prayed for the sun to rise quickly so I could find the owner and ask him why the mirror refused to show my face in its dark, glassy depths.",
+      "I woke up suddenly in the middle of the night. The room was very cold and the air felt thick with a strange energy. I looked toward the wall where the mirror was covered by the heavy blanket. Something was wrong. I could hear a soft whispering sound coming from the direction of the glass. It sounded like a thousand tiny voices speaking at the same time in a language I did not know. My hands began to shake as I slowly sat up in the bed. I felt a strong pull, a magnetic force that wanted me to look behind the cloth. The blanket was moving gently, even though there was no wind inside the room. I felt very afraid but I could not look away from that dark, mysterious shape on the wall.",
+      "My feet touched the cold wooden floor as I stepped out of bed. Every step I took sounded like a loud crack in the quiet house. I moved toward the mirror with my heart pounding against my ribs. I reached out and grabbed the edge of the thick blanket. My fingers were cold and numb. I hesitated for a moment, wondering if it was a mistake to see what was behind the veil. The whispering grew louder and faster. It was like a sea of voices begging for me to show them the truth. With a quick movement, I pulled the blanket away from the mirror. I closed my eyes for a second, afraid of what might be looking back at me from the dark, silver surface of the ancient glass.",
+      "When I opened my eyes, I did not see my own face. Instead, the mirror showed a different room, one that I did not recognize at all. It was an old library filled with dusty books and broken furniture. I saw a man sitting in a leather chair, his back turned to me. He was writing something on a piece of yellow paper with a long, black pen. I stared at the scene in shock. The room in the mirror looked real, yet it felt like a ghost of the past. I tried to scream, but no sound came from my throat. The man in the mirror suddenly turned his head. His eyes were completely white, without any color. He smiled at me, a cold and cruel expression that made me feel truly lost.",
+      "The man inside the mirror stood up from his chair. He was tall and wore black clothes that looked very old. As he walked toward the glass, the room behind him began to fade away into a grey fog. I could not move my body because I felt like a prisoner in my own room. The man stopped when he reached the front of the mirror. He pressed his long, pale fingers against the smooth surface. I watched in terror as his hand seemed to pass through the glass like it was only water. He was coming into my world. The air grew even colder, and my breath became a white cloud in the dark night. I wanted to run, but my feet felt heavy and stuck to the floor. The man stared directly at me with those empty eyes.",
+      "He stepped fully out of the mirror and into my bedroom. The silence was complete now, even the whispering had stopped. He walked around my room, touching my things with his cold hands. He picked up my small lamp and dropped it on the floor. It broke into many pieces, but he did not care. He turned to me and opened his mouth, but he did not speak with words. Instead, I heard his voice inside my head. It sounded deep and ancient, like the wind moving through a graveyard. He told me that he had been waiting a long time for someone to look into the glass. He said that I was the key to his freedom and that my life was now connected to the dark mirror on my bedroom wall.",
+      "I tried to find my voice to ask him why he was here, but I remained silent. The man walked closer to me until he was only a few inches away. I could smell the scent of old dust and dry leaves on his heavy coat. He took my hand and pulled me toward the mirror. I did not want to go, but my body moved as if someone else was controlling it. We stood together in front of the empty glass. Now, I could see my own reflection again, but it looked different. I looked pale and tired, and there was a strange, dark mark on my forehead that I did not recognize. I understood then that a piece of my spirit was staying behind in that other place forever, while he was here with me.",
+      "The man pulled me closer to the glass. My reflection in the mirror started to change before my eyes. It did not look like me anymore. Instead, the face in the glass became a shadow that moved when I did not move. I felt very scared because I knew that my spirit was trapped inside that cold, dark place. The man laughed, but the sound did not come from his mouth. It was a cold echo that filled the room. He pointed at my chest and then at the mirror. I saw my own reflection begin to reach out toward me from behind the surface. It looked sad and very weak. I tried to pull my hand away, but his grip was like iron. He held me tightly while the world around us began to spin and shake like a bad dream.",
+      "Everything in my bedroom started to fade. The walls were not solid anymore, and the light from my broken lamp seemed to disappear into nothing. I saw the man smile at me. His teeth were very white and sharp against his grey skin. He whispered again into my mind that the exchange was almost finished. My heart beat fast in my chest like a trapped bird. I looked at the mirror and saw the room on the other side. It was a place with no sun, no sound, and no life. I realized that if I did not find a way to stop him, I would belong to that empty place forever. The fear made me feel sick, but I had to stay strong and look for a way to break his powerful and dark spell.",
+      "He lifted his hand and touched my forehead where the dark mark was. As his fingers touched my skin, a cold feeling moved through my whole body. It was like ice water running under my skin. I screamed, but no sound left my throat. The connection between me and the man became very strong. I saw memories that were not mine. I saw the mirror in other rooms and other houses, waiting for someone to come and look at it. He was a traveler of time and glass, looking for a home in the world of the living. He wanted my life because his had ended long ago. I saw him push harder against my spirit. I fell to my knees on the floor as he stood over me, watching me with his empty, hungry eyes.",
+      "I looked up at him from the cold floor and tried to think clearly. My hands were shaking, but I noticed a small piece of silver on the ground near his feet. It was a fragment of the old mirror frame that had fallen during our struggle. I reached for it slowly, trying not to make a sound. The man did not notice because he was busy watching his own reflection in the glass. He was very proud of the trap he had made for me. His focus was entirely on the power he was stealing from my life. I knew that I only had one chance to change my fate. I needed to act quickly before he realized what I was doing on the floor. My heart felt heavy with fear, but I forced myself to move toward the broken silver.",
+      "The air in the room became thick and heavy like grey smoke. I could see the man reaching into the mirror, pulling his own energy into my body while pushing mine into the dark world behind the glass. He felt strong, but he was also becoming tired. The process required a lot of his dark power. I crawled forward an inch at a time until my fingers touched the sharp silver piece. It felt cold against my skin, but it gave me a strange sense of hope. I looked at the man again and saw that his eyes were starting to change color. They were turning into the same dull, empty grey as the mirror itself. He was losing his humanity as he tried to take mine away from me forever.",
+      "Suddenly, I jumped up with all the strength I had left. I did not attack the man, but I smashed the silver fragment against the surface of the mirror. A loud crack filled the room, sounding like a tree breaking in a heavy storm. The man screamed, but it was a thin, high sound of a ghost losing its power. The mirror started to spiderweb with deep cracks in every direction. The connection between us broke instantly, and I fell back against the wall. The room stopped spinning, and the shadows disappeared as if they had never been there. The man looked at his hands and then at the broken glass. He began to fade into the air like morning mist. I was alone in the quiet, dark room, feeling the life slowly return to my tired body.",
+      "The silence that filled the room after the mirror shattered was absolute. I stood up slowly, my legs weak and my heart beating fast against my chest. The man who had tried to steal my life was now nothing more than a faint outline in the moonlight. He looked at me one last time, his grey eyes filled with a sudden, deep sadness. Without a word, he turned his gaze to the broken shards on the dusty floor. The pieces of the glass shimmered with a pale, dying light as they slowly lost their strange, dark power. I realized then that he was not a monster by choice, but a prisoner of the mirror himself. As his form became thinner, I felt a wave of cold air pass through me, leaving me shivering in the dark.",
+      "He vanished completely, leaving behind only the cold smell of old dust and winter wind. I walked carefully toward the frame, which now held nothing but empty space. The silver edges of the mirror were bent and dull, no longer catching the light in a magical way. I felt a great sense of relief wash over my tired soul. The heavy weight that had pulled at my skin and thoughts was finally gone. I looked at my own hands under the dim light and saw that they were mine again. No longer did I feel like a stranger in my own body. The connection to the dark world had been cut, and the mirror was just a piece of broken furniture now, quiet and harmless.",
+      "I turned toward the heavy door and found it unlocked. Pushing it open, I stepped out into the cool night air of the hallway. The stars were bright above the house, and the world felt real and solid under my feet once more. My journey had been long and full of shadows, but the dawn was coming to save me. I walked away from that room without looking back, knowing that the evil had died with the glass. The house stood still, holding its secrets inside, but I was free to leave it behind. My path forward was now clear, and the fear that had ruled my life for so long began to melt away into the quiet, peaceful night. I had survived the darkness and was finally returning to my normal life."
+    ],
+    tr: [
+      "Eski ev, karanlık ve sessiz ormanın kenarında duruyordu. Gri taşlardan yapılmış çok uzun bir binaydı. Köydeki insanlar bu evin uğursuz ve tuhaf olduğunu söylerlerdi. Başlangıçta bu hikayelere inanmadım. Ben sadece çalışmak ve kitaplarımı yazmak için sessiz bir yer arayan genç bir adamdım. Büyük ahşap kapıya doğru yürüdüğümde hava soğuk ve ağırdı. Uzun, ince bir adam benim için kapıyı açtı. Solgun bir yüzü ve soğuk cam gibi görünen gözleri vardı. Hiç gülümsemedi. Biraz korktum ama hislerimi bastırdım. Ona önemli işimi bitirmek için birkaç hafta evinde kalmak istediğimi söyledim.",
+      "Evin içi çok karanlıktı ve bir mezar gibi hissettiriyordu. Duvarlarda yıllar öncesinden insanları gösteren tozlu tablolar vardı. Hepsi mutsuz ve üzgün görünüyordu. Her adım attığımda zemin yüksek bir ses çıkarıyordu. Ev sahibim elinde ağır bir demir anahtarla önümden yürüdü. Tek bir kelime bile etmedi. İkinci kattaki odama giden merdivenleri çıktık. Burası, duvarda büyük, dikdörtgen bir aynası olan küçük bir odaydı. Aynanın çerçevesi koyu, siyah ahşaptan yapılmıştı. Aynaya baktım ve odayı gördüm ama bir şeyler yanlıştı. Sanki cam, yakından bakmamı bekliyormuş gibi hissettiriyordu.",
+      "Eşyalarımı yerleştirip biraz uyumaya karar verdim. Yolculuk uzun ve çok yorucuydu. Yatağa uzanmaya hazırlanırken tekrar aynaya baktım. Küçük mumumun ışığı duvarda titriyordu. Sandalyelerin ve perdelerin yansımasını gördüm ama kendi yüzüm orada değildi. Çok yorgun olduğum için gözlerimi ovuşturduğum. Tekrar baktım ama cam boştu. Pencere sıkıca kapalı olmasına rağmen odanın içinden soğuk bir rüzgar geçtiğini hissettim. Korkudan titremeye başladım çünkü bu tuhaf evde bir şeylerin yolunda gitmediğini biliyordum. Karanlık odada gerçekten yalnızdım ve gölgem benden bağımsız hareket ediyormuş gibi geliyordu.",
+      "Küçük yatak odasının ortasında donup kalmıştım. Kalbim göğsümün içinde bir davul gibi çarpıyordu. Karanlık cama baktım, kendimi görmeyi umuyordum ama cam sessiz ve boş kalmaya devam etti. Mum alevi esintili havada çılgınca dans ediyor, soğuk taş duvarlara uzun, ürkütücü gölgeler düşürüyordu. Odanın kendisinin, kendine ait bir yaşamla nefes aldığını hissettim. Aynadaki ahşap sandalyelerden ağır kadife perdelere kadar her şey mükemmel görünüyordu, ancak benden hiçbir iz yoktu. Sanki bu evde hiç yokmuşum gibiydi. Derin bir panik hissi zihnimde büyümeye başladı ve nefes almamı zorlaştırdı. Gecenin sessizliği, omuzlarıma bastıran kalın bir battaniye gibi ağır hissettiriyordu.",
+      "Aynanın soğuk yüzeyine dokunmak için elimi uzattım ama parmaklarım temas etmeden önce durdum. Havayı garip, metalik bir koku doldurdu; eski paralar veya paslı demir gibi bir şey. Aynanın kayıp ruhlar için bir tuzak mı yoksa yorgun zihnimin bir oyunu mu olduğunu merak ettim. Buradan hemen ayrılmayı düşündüm ama ön kapı çok uzaktaydı ve koridor zifiri karanlıktı. Uzun, ince adam bu tuhaflığı mutlaka biliyor olmalıydı. Neden bana bu odayı verdi? Belki de bu gizemin içinde acı çekmemi izlemek istiyordu. Aynayı yataktaki kalın bir battaniye ile örtmeye karar verdim, bunun artan kaygımı durduracağını ve şafaktan önce çok ihtiyaç duyduğum uykuyu bulmamı sağlayacağını umuyordum.",
+      "Camı kapattıktan sonra oda çok daha güvenli hissettirdi. Sert yatağa uzandım ve gözlerimi sıkıca kapattım. Dışarıda rüzgar, ormanın çarpık ağaçlarının arasından yardım için ağlayan biri gibi uğuldayarak esiyordu. Yazı projelerime odaklanmaya çalıştım ama düşüncelerim sürekli boş aynaya geri dönüyordu. Ya yansımam hala kumaşın arkasında hapsolmuşsa ve örtüyü kaldırmamı bekliyorsa? Evin karanlığı, isimleri olmayan şekillerle dolu rüyalarıma sızıyor gibiydi. Bu tuhaf, yalnız binada kendimi çok savunmasız hissettim. Güneşin hızla doğması için dua ettim, böylece ev sahibini bulup aynanın neden karanlık, cam gibi derinliklerinde yüzümü göstermeyi reddettiğini ona sorabilirdim.",
+      "Gecenin ortasında aniden uyandım. Oda çok soğuktu ve hava tuhaf bir enerjiyle ağırlaşmıştı. Aynanın ağır bir battaniye ile örtülü olduğu duvara doğru baktım. Bir şeyler yanlıştı. Camın olduğu yönden gelen yumuşak bir fısıltı sesi duyabiliyordum. Sanki binlerce küçük ses aynı anda, bilmediğim bir dilde konuşuyor gibiydi. Yavaşça yatakta otururken ellerim titremeye başladı. Güçlü bir çekim, kumaşın arkasına bakmamı isteyen manyetik bir kuvvet hissettim. Odada rüzgar olmamasına rağmen battaniye nazikçe hareket ediyordu. Çok korkuyordum ama duvardaki o karanlık ve gizemli şekilden gözlerimi alamıyordum.",
+      "Yataktan kalktığımda ayaklarım soğuk ahşap zemine değdi. Attığım her adım sessiz evde yüksek bir çatlama sesi gibi geliyordu. Kalbim kaburgalarıma vurarak aynaya doğru ilerledim. Elimle kalın battaniyenin kenarını tuttum. Parmaklarım soğuk ve uyuşuktu. Örtünün ardında ne olduğunu görmenin bir hata olup olmadığını merak ederek bir an duraksadım. Fısıltılar daha yüksek ve hızlı hale geldi. Sanki onlara gerçeği göstermem için yalvaran seslerden oluşan bir deniz gibiydi. Hızlı bir hareketle battaniyeyi aynadan çektim. Antik camın karanlık, gümüş yüzeyinden bana neyin bakıyor olabileceğinden korkarak gözlerimi bir saniyeliğine kapattım.",
+      "Gözlerimi açtığımda kendi yüzümü görmedim. Bunun yerine ayna, hiç tanımadığım farklı bir odayı gösteriyordu. Tozlu kitaplarla ve kırık mobilyalarla dolu eski bir kütüphaneydi. Deri bir koltukta oturan ve sırtı bana dönük olan bir adam gördüm. Uzun siyah bir kalemle sarı bir kağıda bir şeyler yazıyordu. Sahneye şok içinde baktım. Aynadaki oda gerçek görünüyordu ama sanki geçmişin bir hayaleti gibiydi. Çığlık atmaya çalıştım ama boğazımdan hiç ses çıkmadı. Aynadaki adam aniden başını çevirdi. Gözleri hiçbir renk olmadan tamamen beyazdı. Bana gülümsedi; bu, kendimi gerçekten kaybolmuş hissetmemi sağlayan soğuk ve zalim bir ifadeydi.",
+      "Aynanın içindeki adam oturduğu sandalyeden kalktı. Uzun boyluydu ve çok eski görünen siyah kıyafetler giyiyordu. Aynaya doğru yürüdükçe, arkasındaki oda gri bir sisin içine doğru silinip gitmeye başladı. Kendi odamda bir mahkum gibi hissettiğim için vücudumu hareket ettiremiyordum. Adam aynanın önüne geldiğinde durdu. Uzun, solgun parmaklarını pürüzsüz yüzeye bastırdı. Elinin tıpkı bir suymuş gibi camdan geçtiğini dehşet içinde izledim. Benim dünyama geliyordu. Hava daha da soğudu ve nefesim karanlık gecede beyaz bir buluta dönüştü. Kaçmak istedim ama ayaklarım ağırlaştı ve yere yapışıp kaldı. Adam, o boş gözleriyle doğrudan bana bakıyordu.",
+      "Aynadan tamamen çıktı ve yatak odama adım attı. Sessizlik artık tamdı, fısıltılar bile durmuştu. Soğuk elleriyle eşyalarıma dokunarak odamda dolaştı. Küçük lambamı aldı ve yere bıraktı. Lamba birçok parçaya ayrıldı ama o umursamadı. Bana döndü ve ağzını açtı ama kelimelerle konuşmadı. Bunun yerine, sesini kafamın içinde duydum. Derin ve kadim bir ses gibiydi, sanki bir mezarlıkta esen rüzgar gibi. Birinin aynaya bakması için uzun zamandır beklediğini söyledi. Özgürlüğünün anahtarı olduğumu ve hayatımın artık yatak odamın duvarındaki karanlık aynaya bağlı olduğunu belirtti.",
+      "Neden burada olduğunu sormak için sesimi bulmaya çalıştım ama sessiz kaldım. Adam bana sadece birkaç inç kalana kadar yaklaştı. Ağır paltosunda eski toz ve kuru yaprak kokusunu alabiliyordum. Elimden tuttu ve beni aynaya doğru çekti. Gitmek istemiyordum ama vücudum sanki bir başkası yönetiyormuş gibi hareket ediyordu. Boş camın önünde birlikte durduk. Şimdi kendi yansımamı tekrar görebiliyordum ama farklı görünüyordu. Solgun ve yorgun görünüyordum ve alnımda daha önce hiç görmediğim tuhaf, karanlık bir iz vardı. O burada benimle birlikteyken, ruhumun bir parçasının sonsuza dek o diğer yerde kaldığını o an anladım.",
+      "Adam beni cama doğru çekti. Aynadaki yansımam gözlerimin önünde değişmeye başladı. Artık bana benzemiyordu. Bunun yerine, camdaki yüz ben hareket etmediğimde bile hareket eden bir gölgeye dönüştü. Çok korktum çünkü ruhumun o soğuk ve karanlık yerde hapsolduğunu biliyordum. Adam güldü ama ses ağzından çıkmıyordu. Odayı dolduran soğuk bir yankıydı. Göğsümü ve ardından aynayı işaret etti. Kendi yansımamın yüzeyin arkasından bana doğru uzanmaya başladığını gördüm. Çok üzgün ve güçsüz görünüyordu. Elimi çekmeye çalıştım ama tutuşu demir gibiydi. O dünya etrafımızda kötü bir rüya gibi dönüp sallanmaya başlarken beni sıkıca tuttu.",
+      "Yatak odamdaki her şey solmaya başladı. Duvarlar artık sağlam değildi ve kırık lambamın ışığı hiçbir şeye dönüşerek yok oluyordu. Adamın bana gülümsediğini gördüm. Dişleri gri teninin üzerinde çok beyaz ve kesivdi. Zihnime tekrar değişimin neredeyse tamamlandığını fısıldadı. Kalbim göğsümde yakalanmış bir kuş gibi hızlı çarpıyordu. Aynaya baktım ve diğer taraftaki odayı gördüm. Güneşin, sesin ve yaşamın olmadığı bir yerdi. Onu durdurmanın bir yolunu bulamazsam sonsuza dek o boş yere ait olacağımı anladım. Korku midemi bulandırdı ama güçlü kalmalı ve onun güçlü ve karanlık büyüsünü bozmanın bir yolunu aramalıydım.",
+      "Elini kaldırdı ve karanlık izin olduğu alnıma dokundu. Parmakları tenime değdiğinde tüm vücuduma soğuk bir his yayıldı. Sanki derimin altında buzlu su akıyordu. Çığlık attım ama boğazımdan hiçbir ses çıkmadı. Onunla aramdaki bağ çok güçlendi. Bana ait olmayan anılar gördüm. Aynayı başka odalarda ve başka evlerde, birinin gelip ona bakmasını beklerken gördüm. O, yaşayanlar dünyasında bir yuva arayan zaman ve cam gezginiydi. Benim hayatımı istiyordu çünkü kendisininki çok uzun zaman önce bitmişti. Ruhuma daha sert bastırdığını gördüm. O, boş ve aç gözleriyle beni izleyerek tepemde dururken yere, dizlerimin üzerine çöktüm.",
+      "Soğuk yerden ona doğru baktım ve net düşünmeye çalıştım. Ellerim titriyordu ama ayaklarının yakınında yerde küçük bir gümüş parçası fark ettim. Kavgaları sırasında düşen eski ayna çerçevesinin bir parçasıydı. Hiç ses çıkarmamaya çalışarak yavaşça ona uzandım. Adam fark etmedi çünkü camdaki yansımasını izlemekle meşguldü. Benim için kurduğu tuzaktan dolayı çok gururluydu. Tüm odağı, hayatımdan çaldığı güç üzerindeydi. Kaderimi değiştirme şansımın sadece bir kez olduğunu biliyordum. Yerde ne yaptığımı fark etmeden önce hızlı hareket etmem gerekiyordu. Kalbim korkuyla ağırlaşmıştı ama kendimi kırık gümüşe doğru hareket etmeye zorladım.",
+      "Odadaki hava gri bir duman gibi yoğun ve ağırdı. Adamın aynanın içine uzanıp kendi enerjisini vücuduma çekerken, benimkini de camın arkasındaki karanlık dünyaya ittiğini görebiliyordum. Güçlü hissediyordu ama aynı zamanda yoruluyordu. Süreç, onun karanlık gücünden çok fazla harcıyordu. Parmaklarım keskin gümüş parçasına değene kadar her seferinde bir santim ileri süründüm. Cildime karşı soğuk hissettiriyordu ama bana garip bir umut verdi. Adama tekrar baktım ve gözlerinin renk değiştirmeye başladığını gördüm. Tıpkı aynanın kendisi gibi mat, boş bir griye dönüyorlardı. Benimkini sonsuza dek elimden almaya çalışırken o da kendi insanlığını kaybediyordu.",
+      "Aniden, kalan tüm gücümle ayağa fırladım. Adama saldırmadım ama gümüş parçayı aynanın yüzeyine çarptım. Odayı, şiddetli bir fırtınada kırılan ağaç gibi bir çatırtı sesi doldurdu. Adam çığlık attı ama bu, gücünü kaybeden bir hayaletin ince ve tiz sesiydi. Ayna her yöne doğru derin çatlaklarla örümcek ağı gibi dağılmaya başladı. Aramızdaki bağ anında koptu ve duvara doğru geri düştüm. Oda dönmeyi bıraktı ve gölgeler hiç yokmuş gibi ortadan kayboldu. Adam ellerine ve ardından kırık cama baktı. Sabah sisi gibi havaya karışıp silinmeye başladı. Sessiz, karanlık odada yalnızdım ve hayatın yorgun vücuduma yavaşça geri döndüğünü hissediyordum.",
+      "Ayna kırıldıktan sonra odayı dolduran sessizlik tamdı. Yavaşça ayağa kalktım, bacaklarım güçsüzdü ve kalbim göğsüme hızla vuruyordu. Hayatımı çalmaya çalışan adam artık ay ışığında belirsiz bir silüetten ibaretti. Bana son bir kez baktı, gri gözleri ani ve derin bir hüzünle doluydu. Hiçbir şey söylemeden bakışlarını tozlu yerdeki kırık parçalara çevirdi. Camın parçaları tuhaf ve karanlık güçlerini yavaşça kaybederken soluk, ölmekte olan bir ışıkla parlıyordu. O an anladım ki o, kendi seçimiyle bir canavar değil, aynanın kendi mahkumuydu. Silüeti incelirken, içimden geçen soğuk bir hava dalgası hissettim ve karanlıkta titremeye başladım.",
+      "Tamamen yok oldu, geriye sadece eski toz ve kış rüzgarının soğuk kokusunu bıraktı. Artık boşluktan başka bir şey tutmayan çerçevenin önüne dikkatlice yürüdüm. Aynanın gümüş kenarları bükülmüş ve donuklaşmıştı, artık ışığı sihirli bir şekilde yakalamıyordu. Yorgun ruhumun üzerinden büyük bir rahatlama dalgasının geçtiğini hissettim. Derimi ve düşüncelerimi kendine çeken o ağır yük nihayet gitmişti. Kendi ellerime loş ışıkta baktım ve tekrar bana ait olduklarını gördüm. Artık kendi bedenimde bir yabancı gibi hissetmiyordum. Karanlık dünyaya olan bağlantı kopmuştu ve ayna artık sadece sessiz ve zararsız, kırık bir eşya parçasıydı.",
+      "Ağır kapıya yöneldim ve kilidinin açık olduğunu gördüm. Kapıyı iterek açtım ve koridorun serin gece havasına çıktım. Yıldızlar evin üzerinde parlaktı ve dünya ayaklarımın altında tekrar gerçek ve sağlam hissettiriyordu. Yolculuğum uzun ve gölgelerle doluydu ama şafak beni kurtarmak için geliyordu. Odaya arkama bakmadan yürüdüm, kötülüğün camla birlikte öldüğünü biliyordum. Ev sırlarını içinde saklayarak hareketsiz duruyordu ama ben onu geride bırakmakta özgürdüm. Önümdeki yol artık açıktı ve hayatıma uzun süredir hükmeden korku, sessiz ve huzurlu gecenin içinde eriyip gitmeye başladı. Karanlıktan sağ çıkmıştım ve nihayet normal hayatıma dönüyordum."
+    ],
+    words: {
+      "forest": "orman",
+      "tomb": "mezar",
+      "mirror": "ayna",
+      "reflection": "yansıma",
+      "candle": "mum",
+      "flicker": "titremek",
+      "frozen": "donmuş, hareketsiz",
+      "drafty": "esintili, hava akımı olan",
+      "oddity": "tuhaflık, gariplik",
+      "anxiety": "kaygı, endişe",
+      "mattress": "yatak, döşek",
+      "vulnerable": "savunmasız, incinebilir",
+      "whisper": "fısıltı",
+      "magnetic": "manyetik",
+      "hesitate": "duraksamak",
+      "veil": "örtü",
+      "ancient": "kadim",
+      "cruel": "zalim",
+      "surface": "yüzey",
+      "terror": "dehşet",
+      "freedom": "özgürlük",
+      "spirit": "ruh",
+      "trapped": "hapsolmuş",
+      "exchange": "değiş tokuş",
+      "memory": "anı",
+      "traveler": "gezgin",
+      "fragment": "parça",
+      "struggle": "mücadele",
+      "fate": "kader",
+      "humanity": "insanlık",
+      "mist": "sis",
+      "shattered": "paramparça olmuş",
+      "shards": "kırık cam parçaları",
+      "vanished": "gözden kayboldu",
+      "relief": "rahatlama",
+      "harmless": "zararsız",
+      "survived": "hayatta kalmak"
+    }
+  }
+,
+  {
+    id: 'horror_creeping_shadow',
+    title: "The Creeping Shadow",
+    author: 'H. P. Lovecraft',
+    level: 'A2',
+    coverUrl: '/covers/horror_creeping_shadow.webp',
+    en: [
+      "The old house stood on the top of a high hill. It was a dark and lonely place in the middle of a thick forest. People in the village said the house was dangerous. They never went near the wooden gate because they were afraid of the shadows. The wind blew cold through the trees every night. I arrived in the village on a rainy Tuesday. I wanted to study the history of this strange building. The villagers looked at me with sad eyes. An old man held my arm and whispered that no one returns from the hill after sunset. I did not listen to him because I was young and curious. I started my walk up the long, winding path to the dark house. The sky was very black and full of heavy clouds.",
+      "The path was narrow and covered with dry, dead leaves. I heard strange sounds in the grass, but I saw nothing. My heart started to beat fast when I looked at the big, grey house. The windows looked like empty eyes watching me. I felt that someone was standing behind the door. I walked slowly towards the front entrance, feeling very tired and cold. The house seemed to grow larger as I came closer. I noticed a strange smell in the air, like old paper and wet earth. My hands shook when I reached for the heavy iron handle. It was very cold, and the metal felt like ice against my skin. I took a deep breath and pushed the door open to see what secrets lived inside the silence.",
+      "The inside of the house was darker than the night outside. I turned on my small lamp and looked around the dusty room. There were tall shelves full of ancient books that nobody had touched for many years. The floor made a loud noise under my feet. I saw a thick layer of grey dust on every table and chair. I walked into the library and felt a cold breeze on my face. There were no windows open, but the curtains moved like ghosts. I felt a deep fear in my stomach. The silence was heavy and thick. I sat down on an old chair and tried to calm my breathing. The shadow of the wall seemed to change shape in the light of my small lamp.",
+      "I looked at the walls of the library as my lamp light danced across the shadows. The shelves were packed with leather books that smelled like history and decay. Suddenly, I saw something move in the corner of the room. It was not a person, but a dark shape that looked like smoke. My heart pounded against my ribs like a drum. I tried to stand up, but my legs felt heavy as lead. The shadow grew longer and stretched across the wooden floor toward my feet. It did not make any noise, but the air in the room became extremely cold. I wanted to run out of the house, but my body would not move. I watched in total silence while the mysterious shape started to form a silhouette that looked like a man standing tall.",
+      "The figure in the corner remained still, watching me with eyes that I could not see. I felt a strange power coming from the darkness that made my head ache. The light of my lamp began to flicker, growing weaker with every passing second. I reached into my bag to find extra oil, but my hands were shaking too much to hold anything properly. The silence of the house was broken by a soft, whispering sound that seemed to come from the walls themselves. It sounded like voices from the past, calling out names I did not recognize. I felt as if the house was breathing around me, slowly waking up from a long, deep sleep. My fear turned into a sharp coldness that traveled up my spine and into my chest.",
+      "I stood frozen, unable to pull my eyes away from the shifting darkness. The silhouette slowly moved away from the wall and stepped into the dim light of my dying lamp. It seemed to have no real body, only a hollow space that pulled the light toward it like a magnet. I noticed then that the floor boards did not creak under its weight. It was as if this thing did not belong to the world of living people at all. My lamp finally went out, leaving me in complete and total blackness. I closed my eyes tightly, praying for the sun to rise, while the smell of the damp, cold earth became stronger. I was truly alone in the dark, trapped with a shadow that wanted to swallow my soul.",
+      "I stood in the darkness for what felt like many hours. My body was stiff and cold, but I could hear a soft breathing sound near me. The shadow was no longer a simple shape on the floor. It had become a tall, thin figure that stood right before my face. I tried to scream, but no sound came from my dry throat. The air smelled of old dust and very wet dirt. I could feel a cold wind hitting my skin, even though the windows were locked tight. Something was very wrong with this house. It felt like the walls were closing in on me, pushing me into the dark. I wanted to escape, but my feet felt like they were attached to the ground by heavy iron chains that I could not break.",
+      "The figure started to move its long arms slowly. It touched the dusty table in the center of the room with thin, grey fingers. I saw a small glint of light appear where it touched the wood. It was like a tiny spark of blue fire burning in the night. The light showed me the face of the creature for just one second. It had no skin, only white bones and empty black holes where eyes should be. I saw a mouth that looked like a deep, dark tunnel. My heart stopped beating for a moment because of the pure terror I felt. I realized then that I was not alone in this world, and that death was standing right in front of me with a cold, hungry smile.",
+      "The creature turned its head slowly to look at the closed door of the library. It knew I wanted to run away. The floorboards began to move and crack under the pressure of its strange weight. I watched as the shadow stretched out to cover the desk and the leather books. Everything it touched turned into grey ash. The books turned into dust, and the wood of the table became weak and broken. I was terrified that I would be next. I pulled myself back toward the corner of the room, hoping to find a secret exit or a heavy object to protect myself. The whispering grew louder and faster, sounding like many people talking at the same time about things that I could never hope to understand.",
+      "I watched the creature with wide eyes as it walked toward the old bookshelf near the back wall. It reached out a long hand and touched the books that my grandfather kept hidden for many years. As soon as the grey fingers hit the paper, the pages turned into dark dust that floated in the cold air. The whispering sound grew louder and filled the room like a storm. I felt my courage slipping away as I saw the creature destroy these ancient things. It seemed to be searching for something specific among the forgotten words of the past. The shadow cast by the monster covered the entire floor and crawled up the walls, making the room feel smaller and more dangerous with every passing second of this strange, lonely night.",
+      "The air became very heavy and hard to breathe. I tried to stand up, but my legs felt weak like water. The creature suddenly stopped its work and looked directly at me with those empty black eyes. I froze in place, unable to move a single muscle in my tired body. It felt as if a cold hand was squeezing my heart. The monster started to drift across the room, leaving a trail of black smoke where it passed. It did not have feet, yet it moved with a grace that was not human. Every part of me wanted to run, but I knew that I was trapped in this nightmare. The walls began to shake, and the dust from the ceiling fell down like grey snow over my head.",
+      "I looked around for any way to leave, but the windows and doors were blocked by the growing darkness. The creature was now only a few steps away, its shape becoming more solid and terrifying. It held out its hands as if it were waiting for me to join it in the void. The voices that I heard earlier were now screaming names that I did not recognize. I covered my ears, but the sound was inside my head. I realized that the house was not just a place for living, but a prison for things that should not exist. My hands shook as I reached for a heavy brass lamp on the floor, hoping it might stop the beast from coming any closer, but my strength was almost gone.",
+      "I swung the brass lamp with all the energy I had left. It hit the creature, but the metal passed through its body like it was only thick fog. The beast did not scream or fall. It just laughed, a sound like dry leaves moving on the cold ground. That laugh made me feel very small and scared. I fell back against the wall, dropping the lamp. It made a loud noise that echoed in the dark room. The creature stepped closer, its long fingers reaching out to touch my forehead. Its touch was colder than winter ice. I could see the truth now. This thing was not from our world, but from a place of deep silence and broken time. It wanted my spirit to join the ghosts in its dark prison.",
+      "My mind started to fade as the room blurred into grey shapes. I remembered the stories my grandfather told me about the shadows that live behind the walls of our house. He always said that silence was a dangerous thing. Now, I understood why he hid those old books. They were warnings written by people who saw the creature many years ago. The monster moved closer, its body growing larger until it blocked all the light from the small lamp on the floor. I closed my eyes tight, praying for the sun to rise. But the night felt permanent, and the darkness felt alive. I felt a strange power pulling my mind away from my body, trying to pull me into the cold, empty space of the shadow.",
+      "Suddenly, a sharp light appeared from the corner of the room. It was not fire or sunlight, but a bright white glow that hurt my eyes. The creature stopped and turned away. It made a strange noise that sounded like metal breaking. The shadow tried to hide, but the light was faster. It filled every corner of the room, burning the darkness away. I took a deep breath, feeling the air return to my lungs. The creature started to melt like black wax under a hot flame. Its eyes looked at me one last time, filled with a deep and ancient anger. Then, it disappeared into the floor, leaving only a smell of old earth and burnt paper behind. I was finally alone again, but the silence was now full of fear.",
+      "I crawled across the cold wooden floor to reach the door. My hands were shaking and my heart felt very heavy in my chest. The bright light was slowly dying now, leaving me in the dark once again. I could still smell the strange scent of old earth from where the monster was. I knew I could not stay in this house for even one more minute. The walls seemed to close in on me like a trap made of iron. I pushed myself up and ran into the long hallway. The floorboards creaked loudly under my feet as if they were screaming at me to leave. I had to find the exit before the creature returned to finish what it had started. Every shadow looked like a threat, and every soft sound felt like a warning to my tired soul.",
+      "The stairs were long and felt like they would never end. I almost fell two or three times because my legs were so weak from the terror I just faced. When I reached the main floor, the front door was locked tight. I fumbled with the cold metal key in my pocket, my fingers moving too slowly. Outside, the moon was hidden behind thick clouds, and the night was completely silent. I finally opened the door and jumped out into the cold grass of the garden. The fresh air hit my face, but it did not make me feel safe. I felt watched by a thousand eyes hiding in the trees. I did not look back at the dark windows of the old house. I simply started to run toward the distant road, breathing hard and fast.",
+      "My mind felt very confused as I reached the edge of the dark woods. I looked back at the house one last time, and I saw a thin shape in the attic window. Was it the creature, or was it just my own fear playing tricks on my tired eyes? I could not know the answer, and I did not want to stay to find out. The forest path was narrow and very difficult to see in the thick, black night. I tripped over rocks and thick roots, but I kept moving forward with all my remaining strength. My only goal was to put as much distance as possible between myself and the cursed building. The mystery of the creeping shadow was too great for one man to carry alone, and I hoped to reach the town before the sun rose.",
+      "I walked fast along the dusty road as the night started to fade away. The sky turned a very light gray color in the distance. My legs hurt a lot and my shoes were covered in thick mud from the woods. I felt like a ghost walking through the silent morning. Behind me, the old house remained hidden in the dark valley. I knew that the evil thing inside was waiting for another person to come. It was a secret that I could never share with the people in the town. They would think I was crazy if I told them about the creeping shadow. I kept my head down and walked until my feet were numb. The thought of that monster made me shiver even under the warm morning sun that slowly began to rise.",
+      "The town of Arkham appeared before me like a safe harbor after a long storm. People were beginning to wake up and start their daily work in the small shops. I passed by an old man who was cleaning the front of his store. He looked at me with curious eyes because I looked so tired and dirty. I did not stop to talk because I had no words left to say. My heart was still beating fast from the fear of the night. I found a small park and sat on a wooden bench to rest my aching body. The world felt normal again, but I knew the darkness was still there. It lived in the places that we do not want to see or think about ever again.",
+      "Now I sit in my room and write these final words to explain what happened. My hands are not shaking anymore, but the memory stays deep inside my mind. I often look at the shadows on the wall when the evening starts to fall. I hope that someone finds this paper if I am not here tomorrow. The creeping shadow does not stop for anyone who discovers its dark home. It follows the truth and hides in the corners of our fragile lives. I pray that the story ends here with my warning to all who read it. You must never look for the secrets that are hidden in the old, broken houses of this land. Stay away from the shadows and keep your own heart safe from the ancient, hungry things that dwell in the deep dark."
+    ],
+    tr: [
+      "Eski ev yüksek bir tepenin üzerinde duruyordu. Sık ormanın ortasında karanlık ve yalnız bir yerdi. Köydeki insanlar evin tehlikeli olduğunu söylerdi. Gölgelerden korktukları için ahşap kapının yakınına asla gitmezlerdi. Her gece rüzgar ağaçların arasından soğuk eserdi. Köye yağmurlu bir Salı günü vardım. Bu tuhaf binanın tarihini incelemek istiyordum. Köylüler bana hüzünlü gözlerle baktılar. Yaşlı bir adam kolumu tuttu ve gün batımından sonra tepeden kimsenin geri dönmediğini fısıldadı. Genç ve meraklı olduğum için onu dinlemedim. Karanlık eve giden uzun, dolambaçlı yolda yürüyüşüme başladım. Gökyüzü çok siyahtı ve ağır bulutlarla doluydu.",
+      "Yol dardı ve kuru, ölü yapraklarla kaplıydı. Çimenlerde tuhaf sesler duydum ama hiçbir şey görmedim. Büyük, gri eve baktığımda kalbim hızlı çarpmaya başladı. Pencereler beni izleyen boş gözlere benziyordu. Kapının arkasında birinin durduğunu hissettim. Çok yorgun ve üşümüş hissederek ön girişe doğru yavaşça yürüdüm. Yaklaştıkça ev daha da büyüyor gibiydi. Havada eski kağıt ve ıslak toprak gibi garip bir koku fark ettim. Ağır demir kolu tuttuğumda ellerim titredi. Çok soğuktu ve metal cildime karşı buz gibi hissettiriyordu. Derin bir nefes aldım ve sessizliğin içinde hangi sırların yaşadığını görmek için kapıyı ittim.",
+      "Evin içi dışarıdaki geceden daha karanlıktı. Küçük lambamı yaktım ve tozlu odaya baktım. Yıllardır kimsenin dokunmadığı eski kitaplarla dolu yüksek raflar vardı. Yerler ayaklarımın altında yüksek ses çıkarıyordu. Her masanın ve sandalyenin üzerinde kalın bir gri toz tabakası gördüm. Kütüphaneye girdim ve yüzümde soğuk bir esinti hissettim. Açık pencere yoktu ama perdeler hayaletler gibi hareket ediyordu. Midemde derin bir korku hissettim. Sessizlik ağır ve yoğundu. Eski bir sandalyeye oturdum ve nefesimi düzene sokmaya çalıştım. Duvarın gölgesi, küçük lambamın ışığında şekil değiştiriyor gibiydi.",
+      "Lambamın ışığı gölgelerin üzerinde dans ederken kütüphanenin duvarlarına baktım. Raflar, tarih ve çürüme kokan deri kitaplarla doluydu. Aniden odanın köşesinde bir şeyin hareket ettiğini gördüm. Bu bir insan değil, duman gibi görünen karanlık bir şekildi. Kalbim kaburgalarıma bir davul gibi çarpıyordu. Ayağa kalkmaya çalıştım ama bacaklarım kurşun gibi ağırdı. Gölge uzadı ve ahşap zemin boyunca ayaklarıma doğru yayıldı. Hiç ses çıkarmadı ama odadaki hava aşırı derecede soğudu. Evden dışarı koşmak istedim ama vücudum hareket etmedi. Gizemli şekil uzun boylu bir adam silüeti oluşturmaya başlarken tamamen sessiz bir şekilde izledim.",
+      "Köşedeki figür hareketsiz kaldı ve göremediğim gözleriyle beni izledi. Karanlıktan gelen ve başımı ağrıtan garip bir güç hissettim. Lambamın ışığı titreşmeye başladı ve her geçen saniye daha da zayıfladı. Çantamdan fazladan yağ bulmak için uzandım ama ellerim hiçbir şeyi düzgün tutamayacak kadar çok titriyordu. Evin sessizliği, doğrudan duvarların kendisinden geliyormuş gibi görünen hafif, fısıltılı bir sesle bozuldu. Geçmişten gelen ve tanımadığım isimleri haykıran seslere benziyordu. Evin etrafımda nefes aldığını, uzun ve derin bir uykudan yavaşça uyandığını hissettim. Korkum, omurgamdan yukarı göğsüme doğru ilerleyen keskin bir soğukluğa dönüştü.",
+      "Hareket eden karanlıktan gözlerimi alamadan donup kalmıştım. Silüet yavaşça duvardan uzaklaştı ve sönmekte olan lambamın loş ışığına adım attı. Gerçek bir vücudu yok gibiydi, sadece ışığı bir mıknatıs gibi kendine çeken boş bir alan vardı. O an zemin tahtalarının onun ağırlığı altında gıcırdamadığını fark ettim. Sanki bu şey hiç yaşamayan insanların dünyasına ait değildi. Lambam sonunda söndü ve beni tam ve mutlak bir karanlığın içinde bıraktı. Nemli, soğuk toprak kokusu daha da güçlenirken, güneşin doğması için dua ederek gözlerimi sıkıca kapattım. Ruhumu yutmak isteyen bir gölgeyle kapana kısılmış, karanlıkta gerçekten yalnızdım.",
+      "Karanlıkta saatler sürmüş gibi gelen bir süre boyunca öylece durdum. Vücudum sertleşmiş ve soğumuştu ancak yakınımda yumuşak bir nefes alış sesi duyabiliyordum. Gölge, artık yerdeki basit bir şekil değildi. Yüzümün tam önünde duran uzun, ince bir figür haline gelmişti. Çığlık atmaya çalıştım ama kuru boğazımdan hiçbir ses çıkmadı. Hava, eski toz ve çok ıslak toprak kokuyordu. Pencereler sıkıca kilitli olmasına rağmen cildime çarpan soğuk bir rüzgar hissedebiliyordum. Bu evde çok yanlış bir şeyler vardı. Duvarlar üzerime doğru kapanıyor, beni karanlığın içine itiyor gibiydi. Kaçmak istiyordum ama ayaklarım, kıramayacağım ağır demir zincirlerle yere bağlıymış gibi hissediyordum.",
+      "Figür, uzun kollarını yavaşça hareket ettirmeye başladı. Odanın ortasındaki tozlu masaya ince, gri parmaklarıyla dokundu. Ahşaba dokunduğu yerde küçük bir ışık parıltısının belirdiğini gördüm. Gece yarısında yanan mavi ateşten küçük bir kıvılcım gibiydi. Işık, yaratığın yüzünü sadece bir saniyeliğine gösterdi. Derisi yoktu, sadece beyaz kemikler ve gözlerin olması gereken yerlerde boş siyah delikler vardı. Derin, karanlık bir tünel gibi görünen bir ağız gördüm. Hissettiğim saf dehşet yüzünden kalbim bir anlığına durdu. İşte o zaman bu dünyada yalnız olmadığımı ve ölümün soğuk, aç bir gülümsemeyle tam karşımda durduğunu anladım.",
+      "Yaratık, kütüphanenin kapalı kapısına bakmak için başını yavaşça çevirdi. Kaçmak istediğimi biliyordu. Döşeme tahtaları, garip ağırlığının baskısıyla hareket etmeye ve çatırdamaya başladı. Gölgenin masayı ve deri kitapları kaplamak için uzanışını izledim. Dokunduğu her şey gri küle dönüştü. Kitaplar toza dönüştü ve masanın ahşabı zayıflayıp kırıldı. Sıranın bana gelmesinden çok korkuyordum. Gizli bir çıkış veya kendimi koruyacak ağır bir nesne bulma umuduyla odanın köşesine doğru geri çekildim. Fısıltılar giderek yükseldi ve hızlandı; sanki birçok insan aynı anda, asla anlayamayacağım şeyler hakkında konuşuyormuş gibi geliyordu.",
+      "Yaratığı, arka duvardaki eski kitaplığa doğru yürürken geniş gözlerle izledim. Uzun bir elini uzattı ve büyükbabamın uzun yıllardır sakladığı kitaplara dokundu. Gri parmaklar kağıda değer değmez, sayfalar soğuk havada uçuşan karanlık bir toza dönüştü. Fısıltı sesi yükseldi ve odayı bir fırtına gibi doldurdu. Yaratığın bu kadim şeyleri yok ettiğini gördükçe cesaretimin tükendiğini hissettim. Geçmişin unutulmuş kelimeleri arasında özel bir şey arıyor gibiydi. Canavarın yere vuran gölgesi tüm zemini kapladı ve duvarlara tırmanarak, bu garip ve yalnız gecenin her geçen saniyesinde odayı daha küçük ve daha tehlikeli bir hale getirdi.",
+      "Hava çok ağırlaştı ve nefes almak zorlaştı. Ayağa kalkmaya çalıştım ama bacaklarım su gibi zayıftı. Yaratık aniden işini bıraktı ve o boş siyah gözleriyle doğrudan bana baktı. Yorgun bedenimdeki tek bir kası bile hareket ettiremeden olduğum yerde donup kaldım. Sanki soğuk bir el kalbimi sıkıyor gibiydi. Canavar odanın içinde süzülmeye başladı ve geçtiği yerde siyah bir duman izi bıraktı. Ayakları yoktu ama insan dışı bir zarafetle hareket ediyordu. Her yanım kaçmak istiyordu ama bu kabusun içinde hapsolduğumu biliyordum. Duvarlar sallanmaya başladı ve tavandan dökülen toz, başımın üzerine gri bir kar gibi yağdı.",
+      "Çıkmak için herhangi bir yol aradım ama pencereler ve kapılar büyüyen karanlıkla kapatılmıştı. Yaratık artık sadece birkaç adım ötedeydi, şekli daha somut ve korkutucu hale geliyordu. Ellerini, sanki boşlukta ona katılmamı bekliyormuş gibi uzattı. Daha önce duyduğum sesler şimdi tanımadığım isimleri haykırıyordu. Kulaklarımı kapattım ama ses kafamın içindeydi. Evin sadece yaşayanlar için bir yer değil, var olmaması gereken şeyler için bir hapishane olduğunu anladım. Yerdeki ağır pirinç lambaya uzanırken ellerim titriyordu, canavarı daha fazla yaklaşmaktan alıkoyabileceğini umuyordum ama gücüm neredeyse tamamen tükenmişti.",
+      "Pirinç lambayı kalan tüm enerjimle salladım. Yaratığa çarptı ama metal, sanki sadece yoğun bir sismiş gibi vücudunun içinden geçti. Canavar çığlık atmadı ya da düşmedi. Sadece güldü, soğuk zeminde hareket eden kuru yapraklar gibi bir ses çıkardı. O gülüş beni çok küçük ve korkmuş hissettirdi. Lambayı düşürerek duvara yaslandım. Karanlık odada yankılanan yüksek bir gürültü çıkardı. Yaratık yaklaştı, uzun parmakları alnıma dokunmak için uzandı. Dokunuşu kış buzundan daha soğuktu. Artık gerçeği görebiliyordum. Bu şey bizim dünyamızdan değil, derin bir sessizliğin ve kırık zamanın olduğu bir yerden gelmişti. Ruhumun, karanlık hapishanesindeki hayaletlere katılmasını istiyordu.",
+      "Oda gri şekillere bürünürken zihnim bulanmaya başladı. Büyükbabamın bana evimizin duvarlarının ardında yaşayan gölgeler hakkında anlattığı hikayeleri hatırladım. Sessizliğin tehlikeli bir şey olduğunu hep söylerdi. Şimdi, o eski kitapları neden sakladığını anladım. Onlar, yaratığı yıllar önce gören insanlar tarafından yazılmış uyarılardı. Canavar yaklaştı, vücudu yerdeki küçük lambadan gelen tüm ışığı engelleyene kadar büyüdü. Gözlerimi sıkıca kapattım ve güneşin doğması için dua ettim. Ancak gece sonsuz, karanlık ise canlı gibi hissettiriyordu. Zihnimi vücudumdan çeken tuhaf bir güç hissettim, beni gölgenin soğuk ve boş uzayına çekmeye çalışıyordu.",
+      "Aniden, odanın köşesinden keskin bir ışık belirdi. Bu ateş ya da güneş ışığı değil, gözlerimi acıtan parlak beyaz bir parıltıydı. Yaratık durdu ve arkasını döndü. Metal kırılmasına benzeyen tuhaf bir ses çıkardı. Gölge saklanmaya çalıştı ama ışık daha hızlıydı. Odanın her köşesini doldurarak karanlığı yaktı. Derin bir nefes aldım, havanın ciğerlerime döndüğünü hissettim. Yaratık, sıcak bir alevin altındaki siyah mum gibi erimeye başladı. Gözleri son kez bana baktı, derin ve kadim bir öfkeyle doluydu. Sonra, sadece eski toprak ve yanık kağıt kokusu bırakarak zeminin içinde kayboldu. Nihayet tekrar yalnızdım ama sessizlik artık korku doluydu.",
+      "Kapıya ulaşmak için soğuk ahşap zeminde süründüm. Ellerim titriyordu ve kalbim göğsümde çok ağır hissettiriyordu. Parlak ışık şimdi yavaşça sönüyordu ve beni bir kez daha karanlıkta bırakıyordu. Canavarın olduğu yerden gelen o tuhaf eski toprak kokusunu hala alabiliyordum. Bu evde bir dakika bile daha kalamayacağımı biliyordum. Duvarlar, demirden yapılmış bir tuzak gibi üzerime kapanıyor gibiydi. Kendimi yukarı ittim ve uzun koridora koştum. Zemin tahtaları, sanki bana gitmem için bağırıyorlarmış gibi ayaklarımın altında yüksek sesle gıcırdadı. Yaratık başladığı işi bitirmek için geri dönmeden önce çıkışı bulmam gerekiyordu. Her gölge bir tehdit gibi görünüyor ve her hafif ses yorgun ruhuma bir uyarı gibi geliyordu.",
+      "Merdivenler çok uzundu ve sanki hiç bitmeyecekmiş gibi hissettiriyordu. Bacaklarım yeni karşılaştığım dehşetten dolayı o kadar güçsüzdü ki neredeyse iki üç kez düştüm. Ana kata ulaştığımda, ön kapı sıkıca kilitliydi. Cebimdeki soğuk metal anahtarla uğraştım, parmaklarım çok yavaş hareket ediyordu. Dışarıda ay kalın bulutların ardına gizlenmişti ve gece tamamen sessizdi. Sonunda kapıyı açtım ve bahçenin soğuk çimlerine atladım. Temiz hava yüzüme çarptı ama kendimi güvende hissetmemi sağlamadı. Ağaçların içine saklanan binlerce göz tarafından izleniyormuşum gibi hissettim. Eski evin karanlık pencerelerine geri bakmadım. Sadece uzak yola doğru koşmaya başladım, nefes nefese hızlıca ilerliyordum.",
+      "Karanlık ormanın kenarına ulaştığımda zihnim çok karışıktı. Eve son bir kez geri baktım ve çatı katındaki pencerede ince bir şekil gördüm. Bu yaratık mıydı yoksa sadece yorgun gözlerime oyun oynayan kendi korkum muydu? Cevabı bilmiyordum ve öğrenmek için kalmak istemiyordum. Orman yolu dar ve kalın, zifiri karanlık gecede görülmesi çok zordu. Taşlara ve kalın köklere takıldım ama tüm gücümle ileri gitmeye devam ettim. Tek amacım, kendimle lanetli bina arasında mümkün olduğunca fazla mesafe bırakmaktı. Sürünen gölgenin gizemi tek bir adamın taşıyamayacağı kadar büyüktü ve güneş doğmadan şehre ulaşmayı umuyordum.",
+      "Gece yavaşça sona ererken tozlu yolda hızlıca yürüdüm. Gökyüzü uzakta çok açık gri bir renge dönüştü. Bacaklarım çok ağrıyordu ve ayakkabılarım ormandan gelen kalın çamurla kaplıydı. Sessiz sabahın içinde yürüyen bir hayalet gibi hissediyordum. Arkamda, eski ev karanlık vadide saklı kaldı. İçindeki kötü şeyin başka birinin gelmesini beklediğini biliyordum. Bu, kasabadaki insanlarla asla paylaşamayacağım bir sırdı. Onlara sürünen gölgeden bahsetseydim deli olduğumu düşünürlerdi. Başımı eğdim ve ayaklarım uyuşana kadar yürüdüm. O canavarın düşüncesi, yavaşça doğmaya başlayan sabah güneşinin altında bile titrememe neden oluyordu.",
+      "Arkham kasabası uzun bir fırtınadan sonra güvenli bir liman gibi önümde belirdi. İnsanlar uyanmaya ve küçük dükkanlarda günlük işlerine başlamaya başlıyorlardı. Dükkanının önünü temizleyen yaşlı bir adamın yanından geçtim. Çok yorgun ve kirli göründüğüm için bana meraklı gözlerle baktı. Konuşmak için durmadım çünkü söyleyecek başka sözüm kalmamıştı. Kalbim gecenin korkusuyla hala hızlı çarpıyordu. Küçük bir park buldum ve ağrıyan vücudumu dinlendirmek için ahşap bir banka oturdum. Dünya tekrar normal hissettirdi ama karanlığın hala orada olduğunu biliyordum. Bir daha görmek veya düşünmek istemediğimiz yerlerde yaşıyordu.",
+      "Şimdi odamda oturuyorum ve olanları açıklamak için bu son sözleri yazıyorum. Ellerim artık titremiyor ama hatıra zihnimin derinliklerinde kalıyor. Akşam çökmeye başladığında sık sık duvardaki gölgelere bakarım. Yarın burada olmazsam birinin bu kağıdı bulmasını umuyorum. Sürünen gölge, karanlık evini keşfeden kimse için durmaz. Gerçeği takip eder ve kırılgan hayatlarımızın köşelerinde saklanır. Hikayenin okuyan herkese uyarım ile burada bitmesi için dua ediyorum. Bu toprağın eski, yıkık evlerinde saklı olan sırları asla aramamlısınız. Gölgelerden uzak durun ve kendi kalbinizi derin karanlıkta yaşayan kadim, aç şeylerden koruyun."
+    ],
+    words: {
+      "dangerous": "tehlikeli",
+      "shadow": "gölge",
+      "curious": "meraklı",
+      "entrance": "giriş",
+      "dusty": "tozlu",
+      "breeze": "esinti",
+      "decay": "çürüme",
+      "silhouette": "silüet",
+      "flicker": "titremek",
+      "magnet": "mıknatıs",
+      "creak": "gıcırdamak",
+      "damp": "nemli",
+      "stiff": "katı, sert, tutulmuş",
+      "glint": "parıltı, pırıltı",
+      "ash": "kül",
+      "terror": "dehşet, korku",
+      "whispering": "fısıltı",
+      "pressure": "baskı, basınç",
+      "creature": "yaratık",
+      "ancient": "kadim",
+      "nightmare": "kabusu",
+      "prison": "hapishane",
+      "brass": "pirinç",
+      "fog": "sis",
+      "echo": "yankılanmak",
+      "permanent": "kalıcı",
+      "glow": "parıltı",
+      "melt": "erimek",
+      "scent": "koku",
+      "hallway": "koridor",
+      "fumble": "eli ayağına dolaşmak",
+      "threat": "tehdit",
+      "attic": "çatı katı",
+      "numb": "uyuşmuş",
+      "harbor": "liman",
+      "aching": "ağrıyan",
+      "fragile": "kırılgan",
+      "dwell": "yaşamak/ikamet etmek"
+    }
+  }
+,
+  {
+    id: 'horror_ghostly_bell',
+    title: "The Ghostly Bell",
+    author: 'Wilkie Collins',
+    level: 'A2',
+    coverUrl: '/covers/horror_ghostly_bell.webp',
+    en: [
+      "The winter night was very cold and dark. I sat in my small room in London. The wind hit the glass window hard. It sounded like a person knocking on the door. I was alone in the house. I had a big book on my desk to study for my exams. The fire in the fireplace was dying. It made strange shadows on the walls. I felt very tired but I could not sleep. Everything in the room was quiet except for the wind outside. I started to think about my home in the country. I missed my family and the peaceful life there. The city felt big and lonely to me. I reached for my candle to get more light. My hands were cold and I felt a strange feeling in my heart that night.",
+      "Suddenly, I heard a sound that made me stop. It was a clear, sharp sound inside the house. It was the sound of a bell ringing. It did not sound like a normal bell. It was thin and high. The sound came from the basement below my room. I was very surprised. Who could be there at this hour? I looked at my watch. It was two o'clock in the morning. My heart began to beat very fast in my chest. I knew that nobody lived in the basement. The door to the basement was always locked. I stood up slowly. I held my candle high to see in the dark corners of the room. The bell rang again. It was a long, sad sound that made me feel afraid.",
+      "I walked to the door of my room and listened carefully. The house was an old building with many shadows. I did not want to go down to the basement alone. But the sound was very persistent. It called to me like a voice. I took a deep breath and opened my door. The hallway was very dark. I saw the stairs leading down. The cold air rushed up to meet me. I felt like someone was watching me from the darkness. I was a young man and I wanted to be brave. I remembered stories about ghosts in old houses. Maybe this was just a trick of the wind. I tried to walk quietly on the wooden floor. My mind was full of many questions about this mystery.",
+      "I took a slow step onto the creaking wooden stairs. Every movement I made caused a loud noise in the silent house. My candle light moved on the walls like a nervous dancer. I reached the bottom of the stairs and stood in the dark hall. The air felt heavy and thick here. My heart was jumping like a trapped bird inside my chest. The bell rang for a third time. It was loud and clear. The sound traveled through the floorboards and vibrated in my very bones. I stood still for a moment to listen. There was no other sound except for the wind outside. I gathered my courage and walked toward the locked basement door. My hands were shaking while I reached for the heavy iron key in my pocket.",
+      "The lock was cold to my touch. I put the key in slowly and turned it. It made a sharp click that sounded like a scream in the quiet basement. The door moved open very slowly. I peeked inside with my candle held high above my head. The basement was empty and dusty. I saw old boxes and broken furniture covered in white sheets. They looked like ghosts waiting for me in the dark corners. I walked further inside and looked everywhere. My light could not reach the very back of the room. I felt a cold breeze on my face even though there were no open windows. I knew I was alone but I felt a presence near me. The silence started to feel very heavy.",
+      "I searched behind every box and pile of wood. There was nobody in the basement. I felt foolish for being so afraid. Perhaps the bell was an old system that moved on its own because of the wind. I turned around to leave and go back to my warm room. Just then, I saw something on the wall near the stairs. It was a long piece of string hanging from the ceiling. It moved slightly in the air. I walked closer to touch it. When I pulled the string, the bell rang again. It was exactly the same sad sound I heard upstairs. I let out a long breath of relief. It was only an old bell for the servants. It was just a machine.",
+      "I looked at the old bell and smiled at my silly fear. I was sure that everything was fine now. The string was old and dusty, and it moved when the wind pushed the loose boards above. I felt very brave because I solved the mystery. I turned my back on the bell and started to walk toward the stairs. However, I stopped suddenly when I heard a soft noise behind me. It was not the sound of a bell this time. It sounded like a slow, heavy step on the cold floor. I turned around very quickly, but I saw nothing except the shadows from my candle. The basement felt even colder than before. My hands started to shake, and I dropped my light on the dusty ground. It went out, leaving me in total darkness.",
+      "The dark was thick and deep, and I could not see my own hands. I stood there, listening to the silence. My heart beat fast as I remembered the stories about this house. The air felt heavy, as if someone was standing right next to me. I wanted to run, but my feet felt stuck to the floor. Then, I heard the sound again, a bit louder this time. It was the sound of a person breathing in the dark. I called out, asking if anyone was there, but nobody answered. The silence came back, even deeper than before. I felt a cold touch on my shoulder, soft like a feather but heavy like iron. I tried to move away, but the darkness seemed to be closing in on me completely.",
+      "I decided to be strong and move toward the stairs. I used my hands to feel the walls, moving slowly through the black space. My mind played tricks on me as I heard whispers in the wind. Every shadow seemed to change into a human shape. I finally touched the rough wood of the stairs and started to climb up as fast as I could. I did not look back, even when I heard the bell ring for the fourth time. This time, it did not sound like a machine. It had a sad, crying tone that made my blood run cold. I ran through the hall and up the main stairs to my bedroom, closing the door firmly behind me. I sat on my bed, waiting for the morning light to save me.",
+      "I sat on my bed in the dark room, breathing very fast. The house was quiet, but my heart was still beating like a drum inside my chest. I tried to tell myself that the noise was just the wind or an old animal hiding in the cellar. My mind wanted to find a logical reason for the things I heard, but my body felt the danger. The air in the room seemed to get colder and thinner with every passing second. I looked at the bedroom door, waiting for it to move, but it stayed perfectly still. I remembered the heavy, cold touch on my shoulder in the dark basement. It was not a dream or a shadow. I knew that something was truly wrong in this big house, and I was all alone.",
+      "The moonlight started to shine through the window, making long shapes on the floor. I felt a little safer with the light, so I decided to check the house again. I did not want to stay in bed, because the silence felt like a trap. I walked to the door and opened it slowly, looking into the long hallway. Everything was dark and empty, but I felt someone watching me from the corners. The silence of the night was louder than any sound. I stepped out onto the wooden floor, and it made a soft creak under my feet. That sound scared me, but I kept moving. I needed to know if the bell would ring one more time. I went toward the stairs to go down again.",
+      "I stood at the top of the stairs and looked down into the deep blackness of the ground floor. My legs were weak, but I needed to be brave. I remembered my grandfather talking about the house long ago. He said that some secrets never die. I started to walk down the steps, one by one, very slowly. My hand held the wall for support as I moved. I looked for my candle on the floor of the basement, hoping to find it in the dark. Suddenly, the air felt very heavy again. I heard a small whisper coming from below, like a sad voice calling for help. It was not the wind this time. I stopped moving, frozen by the fear of what I might find in the basement.",
+      "I took a deep breath and walked down the last step. The basement door was open. I remember how cold the air felt near the floor. It was like standing in a river of ice. I walked forward slowly. My feet touched something hard on the ground. I looked down and saw my lost candle. I picked it up with shaking hands. I wanted to use a match, but I was afraid that the light would show me something terrible. The silence was complete now. There was no wind, no animals, and no movement. Yet, I felt that I was not the only person in this room. Someone was standing near the wall. I could not see their face, but I could feel them looking at me with sad eyes. I held my breath.",
+      "The ghost of the house seemed to be waiting for me to speak. I tried to shout, but no sound came out of my dry throat. My heart was jumping like a small bird in a cage. I remembered the bell. I looked toward the wall where the old metal bell hung. It looked very dark and heavy in the dim light of the moon. Suddenly, the bell moved by itself. It did not make a loud sound, but a soft, long noise that filled the room. It was a sad, tired sound, like a person crying for many years. I felt the cold air touch my neck again. I knew then that the ghost was not here to hurt me. It was here to show me a secret about the house and its past.",
+      "I moved my feet toward the corner where the bell was hanging. I saw an old wooden box hidden under the dust and shadows of the floor. My hands touched the wood. It was very old and had a small lock. I pulled the box out into the moonlight. My fear started to leave, and I felt a strange sense of peace. I knew that the mystery of the bell was connected to this small object. The ghost was showing me the truth that people had hidden for a long time. I reached for a small piece of metal in my pocket and tried to open the lock. The ghost did not move, but the air became warmer. I began to understand why the bell had called me in the middle of the night.",
+      "I looked at the old wooden box with great care. My heart beat slowly now because I knew I was close to the truth. With a sharp pull, the small lock finally opened. I held my breath as I slowly lifted the heavy wooden lid. Inside the box, there were many old letters and a thin gold ring. These things were very important for the history of the house. I could see the ghost watching me in the quiet room. She looked less sad now that I had found these lost things. It was clear that she wanted someone to know about her life and her love. I realized that the house was not haunted by something bad, but by a sad memory that needed to be found by someone kind.",
+      "I picked up the letters and read the words written on them. They were written by a woman who lived here many years ago. She was writing to her lover about their secret wedding and their future plans. I understood that she had hidden these things to keep them safe from people who wanted to take them away. Suddenly, the shadow of the woman moved closer to the wall. She pointed her hand toward the small bell. I understood her message now. She wanted me to take these items and tell the world about her real story. The ringing of the bell was her way of calling for help. She was tired of hiding in the dark, and she was ready for her truth to come into the light.",
+      "The air in the cold basement began to change again. The dark shadows started to move away as the moon shone brighter through the small window. I stood up and held the box tightly in my arms. I felt as if the woman was thanking me for my help today. She slowly faded until she was just a soft light in the corner. Then, the light disappeared, and I was alone in the quiet room again. The heavy silence was no longer scary or cold. I walked back up the stairs, feeling strong and happy. I knew that I had finished the important work of helping a lost spirit. I left the basement and walked back to my room, ready to share the secret of the old house with everyone.",
+      "The next morning, I felt very different as I stepped outside into the bright sunshine. The house did not look dark or scary anymore. I had the box with the letters and the ring in my hand, ready to tell the story of the woman to everyone who would listen. I went to the town square and met the older people who knew the history of the buildings. I shared the secret letters and the golden ring with them. They looked at the old items with big eyes and surprise. I told them how the bell had rung to guide me to the truth. They finally understood why the house had been so quiet and lonely for so many years. The truth was out at last, and the spirit of the house could finally rest in peace.",
+      "The townspeople decided to fix the house and make it a place for history. They worked hard to paint the walls and clean the dusty rooms. Because of the things I found, they learned the name of the woman who lived there long ago. They wrote her name on a special stone in the garden. Now, everyone remembers her life and her sad but beautiful story. The ghost does not appear anymore because she is no longer hidden in the shadows. The house is full of life and laughter, and the children play in the garden where she once waited for her lover. I often sit in the garden and think about the mystery I solved. It was a great honor to help the lonely spirit find her happy end.",
+      "I still keep the memory of that strange night in my heart. People sometimes ask me if I was afraid of the ghost, but I always smile and say no. I was only helping someone who needed a friend to speak for her. The bell does not ring on its own anymore, and the house feels very warm and welcoming to every visitor. I feel proud that I listened to the sounds of the past and followed the truth to the end. My journey was long, but it taught me that even the saddest memories can find light if we are brave enough to look for them. The house is now a symbol of love that never dies, and I am happy that I was the one who helped the secret story finally wake up."
+    ],
+    tr: [
+      "Kış gecesi çok soğuk ve karanlıktı. Londra'daki küçük odamda oturuyordum. Rüzgar cam pencereye sertçe vuruyordu. Bu, kapıyı çalan bir insan gibi tınlıyordu. Evde yalnızdım. Sınavlarıma çalışmak için masamda büyük bir kitap duruyordu. Şöminedeki ateş sönmek üzereydi. Duvarlarda tuhaf gölgeler oluşturuyordu. Çok yorgun hissetmeme rağmen uyuyamıyordum. Dışarıdaki rüzgar haricinde odadaki her şey sakindi. Köydeki evimi düşünmeye başladım. Ailemi ve oradaki huzurlu hayatı özlemiştim. Şehir bana büyük ve yalnız geliyordu. Daha fazla ışık almak için muma uzandım. Ellerim soğuktu ve o gece kalbimde tuhaf bir his duydum.",
+      "Aniden, beni durduran bir ses duydum. Evin içinde net, keskin bir sesti. Bu, çalan bir çan sesiydi. Normal bir çan gibi gelmiyordu. İnce ve tizdi. Ses odamın altındaki bodrumdan geliyordu. Çok şaşırmıştım. Bu saatte orada kim olabilirdi? Saetime baktım. Sabahın ikisiydi. Kalbim göğsümde çok hızlı çarpmaya başladı. Bodrumda kimsenin yaşamadığını biliyordum. Bodrumun kapısı her zaman kilitliydi. Yavaşça ayağa kalktım. Odanın karanlık köşelerini görmek için mumumu havaya kaldırdım. Çan tekrar çaldı. Beni korkutan uzun ve hüzünlü bir sesti.",
+      "Odamın kapısına yürüdüm ve dikkatlice dinledim. Ev, birçok gölgeye sahip eski bir binaydı. Bodruma tek başıma gitmek istemiyordum. Fakat ses çok ısrarcıydı. Bana bir ses gibi çağırıyordu. Derin bir nefes aldım ve kapımı açtım. Koridor çok karanlıktı. Aşağı inen merdivenleri gördüm. Soğuk hava beni karşılamak için yukarı doluştu. Karanlıktan birinin beni izlediğini hissettim. Genç bir adamdım ve cesur olmak istiyordum. Eski evlerdeki hayalet hikayelerini hatırladım. Belki de bu sadece rüzgarın bir oyunuydu. Ahşap zeminde sessizce yürümeye çalıştım. Zihnim bu gizem hakkındaki birçok soruyla doluydu.",
+      "Gıcırdayan ahşap merdivenlere yavaş bir adım attım. Yaptığım her hareket sessiz evde yüksek bir gürültüye neden oluyordu. Mum ışığım duvarlarda gergin bir dansçı gibi hareket ediyordu. Merdivenlerin sonuna ulaştım ve karanlık koridorda durdum. Hava burada ağır ve yoğun hissediliyordu. Kalbim göğsümün içinde kapana kısılmış bir kuş gibi atıyordu. Zil üçüncü kez çaldı. Ses yüksek ve netti. Ses, döşeme tahtalarından geçti ve kemiklerimde titreşti. Dinlemek için bir anlığına hareketsiz durdum. Dışarıdaki rüzgar dışında başka hiçbir ses yoktu. Cesaretimi topladım ve kilitli bodrum kapısına doğru yürüdüm. Cebimdeki ağır demir anahtara uzanırken ellerim titriyordu.",
+      "Kilit dokunuşuma soğuk geldi. Anahtarı yavaşça içeri soktum ve çevirdim. Sessiz bodrumda bir çığlık gibi duyulan keskin bir tık sesi çıkardı. Kapı çok yavaş bir şekilde açıldı. Başımın üzerinde tuttuğum mumla içeriye göz attım. Bodrum boş ve tozlu idi. Beyaz çarşaflara sarılı eski kutular ve kırık mobilyalar gördüm. Karanlık köşelerde beni bekleyen hayaletler gibi görünüyorlardı. İçeri doğru daha fazla yürüdüm ve her yere baktım. Işığım odanın en arkasına ulaşamıyordu. Hiç açık pencere olmamasına rağmen yüzümde soğuk bir esinti hissettim. Yalnız olduğumu biliyordum ama yakınımda bir varlık hissettim. Sessizlik çok ağır hissettirmeye başladı.",
+      "Her kutunun ve odun yığınının arkasını aradım. Bodrumda kimse yoktu. Bu kadar korktuğum için aptal gibi hissettim. Belki de zil, rüzgar nedeniyle kendi kendine hareket eden eski bir sistemdi. Ayrılmak ve sıcak odama geri dönmek için arkamı döndüm. Tam o sırada, merdivenlerin yanındaki duvarda bir şey gördüm. Tavandan sarkan uzun bir ip parçasıydı. Havada hafifçe hareket ediyordu. Dokunmak için yaklaştım. İpi çektiğimde zil tekrar çaldı. Yukarıda duyduğum hüzünlü sesin aynısıydı. Rahat bir nefes verdim. Bu sadece hizmetçiler için kullanılan eski bir zildi. Sadece bir makineydi.",
+      "Eski zile baktım ve aptal korkuma gülümsedim. Artık her şeyin yolunda olduğundan emindim. İp eski ve tozlu bir haldeydi ve yukarıdaki gevşek tahtaları rüzgar ittiğinde hareket ediyordu. Gizemi çözdüğüm için kendimi çok cesur hissettim. Arkamı zile döndüm ve merdivenlere doğru yürümeye başladım. Ancak arkamdan gelen hafif bir ses duyunca aniden durdum. Bu seferki bir zil sesi değildi. Soğuk zeminde yavaş ve ağır bir adım sesi gibiydi. Çok hızlı bir şekilde arkamı döndüm, ancak mumumdan gelen gölgeler dışında hiçbir şey görmedim. Bodrum katı eskisinden bile daha soğuk geliyordu. Ellerim titremeye başladı ve ışığımı tozlu yere düşürdüm. Işık söndü ve beni tamamen karanlıkta bıraktı.",
+      "Karanlık yoğun ve derindi, kendi ellerimi bile göremiyordum. Sessizliği dinleyerek orada öylece durdum. Bu ev hakkındaki hikayeleri hatırladıkça kalbim hızla çarptı. Hava, sanki tam yanımda biri duruyormuş gibi ağırlaştı. Kaçmak istedim ama ayaklarım yere yapışmış gibiydi. Sonra sesi tekrar duydum, bu sefer biraz daha yüksekti. Karanlıkta nefes alan bir insanın sesiydi. Seslendim, orada biri olup olmadığını sordum ama kimse cevap vermedi. Sessizlik geri geldi, hem de öncekinden daha derin bir şekilde. Omuzumda tüy gibi hafif ama demir gibi ağır soğuk bir dokunuş hissettim. Uzaklaşmaya çalıştım ama karanlık üzerime tamamen kapanıyor gibiydi.",
+      "Güçlü olmaya ve merdivenlere doğru hareket etmeye karar verdim. Ellerimi kullanarak duvarları hissettim ve siyah boşlukta yavaşça ilerledim. Rüzgarda fısıltılar duydukça zihnim bana oyunlar oynuyordu. Her gölge bir insan şekline bürünüyor gibiydi. Sonunda merdivenlerin pürüzlü ahşabına dokundum ve olabildiğince hızlı bir şekilde yukarı tırmanmaya başladım. Zil dördüncü kez çaldığında bile arkama bakmadım. Bu sefer bir makine gibi gelmiyordu. Kanımı donduran hüzünlü ve ağlamaklı bir tonu vardı. Koridordan koştum ve yatak odama çıkan ana merdivenleri çıktım, kapıyı arkamdan sıkıca kapattım. Yatağımda oturdum ve sabah ışığının beni kurtarmasını bekledim.",
+      "Karanlık odada yatağımda oturuyor ve çok hızlı nefes alıyordum. Ev sessizdi ama kalbim göğsümün içinde hala bir davul gibi çarpıyordu. Kendime sesin sadece rüzgar veya bodrumda saklanan yaşlı bir hayvan olduğunu söylemeye çalıştım. Zihnim duyduğum şeyler için mantıklı bir sebep bulmak istiyordu ama vücudum tehlikeyi hissediyordu. Odadaki hava her saniye daha da soğuyor ve inceliyordu. Yatak odasının kapısına baktım, hareket etmesini bekledim ama kapı tamamen hareketsiz kaldı. Karanlık bodrumda omzumdaki o ağır, soğuk dokunuşu hatırladım. Bu bir rüya ya da gölge değildi. Bu büyük evde bir şeylerin gerçekten ters gittiğini biliyordum ve tamamen yalnızdım.",
+      "Ay ışığı pencereden içeri süzülmeye başladı ve yerde uzun şekiller oluşturdu. Işıkla biraz daha güvende hissettim, bu yüzden evi tekrar kontrol etmeye karar verdim. Sessizlik bir tuzak gibi hissettirdiği için yatakta kalmak istemedim. Kapıya yürüdüm ve yavaşça açarak uzun koridora baktım. Her yer karanlık ve boştu ama birilerinin beni köşelerden izlediğini hissediyordum. Gecenin sessizliği herhangi bir sesten daha gürültülüydü. Ahşap zemine adım attım ve ayaklarımın altında hafif bir gıcırtı çıkardı. Bu ses beni korkuttu ama hareket etmeye devam ettim. Zilin bir kez daha çalıp çalmayacağını bilmem gerekiyordu. Tekrar aşağı inmek için merdivenlere yöneldim.",
+      "Merdivenlerin tepesinde durdum ve zemin katın derin karanlığına baktım. Bacaklarım zayıftı ama cesur olmam gerekiyordu. Büyükbabamın uzun zaman önce ev hakkında konuştuklarını hatırladım. Bazı sırların asla ölmediğini söylerdi. Merdivenlerden birer birer ve çok yavaş bir şekilde inmeye başladım. Hareket ederken destek almak için elimi duvara dayadım. Karanlıkta bulma umuduyla bodrumun zeminindeki mumumu aradım. Aniden hava tekrar çok ağırlaştı. Aşağıdan yardım çağırıyormuş gibi hüzünlü bir sesin geldiği küçük bir fısıltı duydum. Bu sefer rüzgar değildi. Bodrumda bulabileceğim şeyin korkusuyla donmuş bir şekilde hareket etmeyi bıraktım.",
+      "Derin bir nefes aldım ve son basamaktan aşağı indim. Bodrum kapısı açıktı. Havanın yer seviyesinde ne kadar soğuk olduğunu hatırlıyorum. Sanki buzdan bir nehrin içinde duruyordum. Yavaşça ileri yürüdüm. Ayaklarım yerde sert bir şeye çarptı. Aşağı baktım ve kaybolan mumumu gördüm. Onu titreyen ellerimle aldım. Bir kibrit yakmak istedim ama ışığın bana korkunç bir şey göstereceğinden korkuyordum. Sessizlik artık tamdı. Rüzgar, hayvanlar veya hareket yoktu. Yine de bu odada tek olmadığımı hissediyordum. Biri duvarın yakınında duruyordu. Yüzünü göremiyordum ama bana hüzünlü gözlerle baktıklarını hissedebiliyordum. Nefesimi tuttum.",
+      "Evin hayaleti konuşmamı bekliyor gibiydi. Bağırmaya çalıştım ama kuru boğazımdan hiç ses çıkmadı. Kalbim bir kafesteki küçük bir kuş gibi çarpıyordu. Zili hatırladım. Eski metal zilin asılı olduğu duvara doğru baktım. Ayın loş ışığında çok karanlık ve ağır görünüyordu. Aniden zil kendi kendine hareket etti. Yüksek bir ses çıkarmadı ama odayı dolduran yumuşak ve uzun bir gürültü çıkardı. Bu, uzun yıllardır ağlayan birinin sesi gibi üzgün ve yorgun bir sesti. Soğuk havanın tekrar boynuma değdiğini hissettim. O an hayaletin bana zarar vermek için burada olmadığını anladım. Ev ve geçmişi hakkındaki bir sırrı bana göstermek için oradaydı.",
+      "Ayaklarım ile zilin asılı olduğu köşeye doğru ilerledim. Tozun ve gölgelerin altında gizlenmiş eski bir ahşap kutu gördüm. Ellerim ahşaba dokundu. Çok eskiydi ve küçük bir kilidi vardı. Kutuyu ay ışığının altına çektim. Korkum azalmaya başladı ve içimi garip bir huzur kapladı. Zilin gizeminin bu küçük nesneyle bağlantılı olduğunu biliyordum. Hayalet bana insanların uzun süredir sakladığı gerçeği gösteriyordu. Cebimdeki küçük bir metal parçasını çıkardım ve kilidi açmaya çalıştım. Hayalet hareket etmedi ama hava ısınmaya başladı. Zilin beni neden gecenin yarısında çağırdığını anlamaya başladım.",
+      "Eski ahşap kutuya büyük bir dikkatle baktım. Kalbim artık yavaş atıyordu çünkü gerçeğe yakın olduğumu biliyordum. Keskin bir çekişle küçük kilit sonunda açıldı. Ağır ahşap kapağı yavaşça kaldırırken nefesimi tuttum. Kutunun içinde birçok eski mektup ve ince bir altın yüzük vardı. Bu şeyler evin tarihi için çok önemliydi. Sessiz odada hayaletin beni izlediğini görebiliyordum. Bu kayıp eşyaları bulduğum için artık daha az üzgün görünüyordu. Hayatını ve aşkını birinin bilmesini istediği çok açıktı. Evin kötü bir şey tarafından değil, nazik biri tarafından bulunması gereken hüzünlü bir anı tarafından rahatsız edildiğini anladım.",
+      "Mektupları aldım ve üzerlerinde yazan kelimeleri okudum. Yıllar önce burada yaşayan bir kadın tarafından yazılmışlardı. Gizli düğünleri ve gelecek planları hakkında sevgilisine yazıyordu. Bunları elinden almak isteyen insanlardan korumak için sakladığını anladım. Aniden, kadının gölgesi duvara doğru yaklaştı. Elini küçük zile doğru uzattı. Mesajını şimdi anlamıştım. Bu eşyaları almamı ve gerçek hikayesini dünyaya anlatmamı istiyordu. Zilin çalması, onun yardım çağırma yoluymuş. Karanlıkta saklanmaktan yorulmuştu ve gerçeğinin gün ışığına çıkmasına hazırdı.",
+      "Soğuk bodrumdaki hava tekrar değişmeye başladı. Küçük pencereden ay daha parlak bir şekilde parladığı için karanlık gölgeler uzaklaşmaya başladı. Ayağa kalktım ve kutuyu kollarımda sıkıca tuttum. Bugün yardımlarım için kadının bana teşekkür ettiğini hissettim. Köşede hafif bir ışık olana kadar yavaşça silindi. Sonra ışık kayboldu ve sessiz odada tekrar yalnız kaldım. Ağır sessizlik artık korkutucu veya soğuk değildi. Merdivenlerden geri yürüdüm, kendimi güçlü ve mutlu hissediyordum. Kayıp bir ruhu kurtarmanın önemli işini bitirdiğimi biliyordum. Bodrumdan ayrıldım ve eski evin sırrını herkesle paylaşmaya hazır bir şekilde odama geri döndüm.",
+      "Ertesi sabah, parlak gün ışığına adım attığımda kendimi çok farklı hissettim. Ev artık karanlık veya korkutucu görünmüyordu. Mektupların ve yüzüğün olduğu kutu elimdeydi; kadının hikayesini dinleyecek herkese anlatmaya hazırdım. Kasaba meydanına gittim ve binaların tarihini bilen yaşlı insanlarla buluştum. Gizli mektupları ve altın yüzüğü onlarla paylaştım. Eski eşyalara şaşkınlık ve kocaman gözlerle baktılar. Zilin beni gerçeğe yönlendirmek için nasıl çaldığını onlara anlattım. Evin neden bunca yıldır bu kadar sessiz ve yalnız olduğunu sonunda anladılar. Gerçek nihayet ortaya çıkmıştı ve evin ruhu artık huzur içinde dinlenebilirdi.",
+      "Kasaba halkı evi onarmaya ve orayı bir tarih merkezi yapmaya karar verdi. Duvarları boyamak ve tozlu odaları temizlemek için çok çalıştılar. Bulduğum eşyalar sayesinde, orada yaşayan kadının ismini öğrendiler. Onun ismini bahçedeki özel bir taşa kazıdılar. Artık herkes onun hayatını ve hüzünlü ama güzel hikayesini hatırlıyor. Hayalet artık görünmüyor çünkü o artık gölgelerde saklı değil. Ev hayat ve kahkaha dolu; çocuklar, bir zamanlar sevgilisini beklediği bahçede oynuyorlar. Sık sık bahçede oturup çözdüğüm gizemi düşünüyorum. Yalnız bir ruhun mutlu sona ulaşmasına yardım etmek büyük bir onurdu.",
+      "O garip gecenin anısını hala kalbimde tutuyorum. İnsanlar bazen bana hayaletten korkup korkmadığımı soruyorlar, ama ben her zaman gülümsüyorum ve hayır diyorum. Sadece onun adına konuşacak bir arkadaşa ihtiyaç duyan birine yardım ediyordum. Zil artık kendi kendine çalmıyor ve ev her ziyaretçi için çok sıcak ve samimi hissettiriyor. Geçmişin seslerini dinlediğim ve gerçeği sonuna kadar takip ettiğim için gururluyum. Yolculuğum uzundu ama bana en hüzünlü anıların bile, onları arayacak kadar cesursak ışığı bulabileceğini öğretti. Ev artık asla ölmeyen sevginin bir sembolü ve bu gizli hikayenin sonunda uyanmasına yardım eden kişi olduğum için mutluyum."
+    ],
+    words: {
+      "shadow": "gölge",
+      "basement": "bodrum katı",
+      "candle": "mum",
+      "persistent": "ısrarcı",
+      "mystery": "gizem",
+      "brave": "cesur",
+      "creaking": "gıcırdayan",
+      "courage": "cesaret",
+      "vibrate": "titremek",
+      "presence": "varlık",
+      "foolish": "aptalca",
+      "relief": "rahatlama",
+      "darkness": "karanlık",
+      "breathe": "nefes almak",
+      "whisper": "fısıltı",
+      "firmly": "sıkıca",
+      "cellar": "bodrum",
+      "trap": "tuzak",
+      "creak": "gıcırtı",
+      "support": "destek",
+      "frozen": "donmuş",
+      "shake": "titremek",
+      "ghost": "hayalet",
+      "lock": "kilit",
+      "truth": "gerçek",
+      "lid": "kapak",
+      "haunted": "perili",
+      "wedding": "düğün",
+      "spirit": "ruh",
+      "fade": "solmak",
+      "item": "eşya",
+      "sunshine": "güneş ışığı",
+      "square": "meydan",
+      "peace": "huzur",
+      "dusty": "tozlu",
+      "honor": "onur",
+      "symbol": "sembol"
+    }
+  }
+];

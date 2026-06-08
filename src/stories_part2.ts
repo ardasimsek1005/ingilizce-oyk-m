@@ -1,7 +1,7 @@
 import { RawStory } from './stories_part1';
 
 export const STORIES_PART2: RawStory[] = [
-                                            {
+                                              {
     id: 'wizard_of_oz',
     title: "The Wizard of Oz",
     author: 'L. Frank Baum',
@@ -108,7 +108,7 @@ export const STORIES_PART2: RawStory[] = [
       "wicked": "kötücül"
     }
   },
-                                            {
+                                              {
     id: 'golden_goose',
     title: "The Goose with the Golden Eggs",
     author: 'Aesop',
@@ -215,7 +215,7 @@ export const STORIES_PART2: RawStory[] = [
       "impatient": "sabırsız"
     }
   },
-                                            {
+                                              {
     id: 'pied_piper',
     title: "The Pied Piper of Hamelin",
     author: 'Robert Browning',
@@ -322,7 +322,7 @@ export const STORIES_PART2: RawStory[] = [
       "guilders": "gulden"
     }
   },
-                                            {
+                                              {
     id: 'rumpelstiltskin',
     title: "Rumpelstiltskin",
     author: 'Brothers Grimm',
@@ -430,7 +430,7 @@ export const STORIES_PART2: RawStory[] = [
       "relief": "rahatlama"
     }
   },
-                                            {
+                                              {
     id: 'gullivers_travels',
     title: "Gulliver's Travels",
     author: 'Jonathan Swift',
@@ -538,7 +538,7 @@ export const STORIES_PART2: RawStory[] = [
       "civil": "sivil"
     }
   },
-                                            {
+                                              {
     id: 'robinson_crusoe',
     title: "Robinson Crusoe",
     author: 'Daniel Defoe',
@@ -648,7 +648,7 @@ export const STORIES_PART2: RawStory[] = [
       "chilling": "ürpertici"
     }
   },
-                                            {
+                                              {
     id: 'gatsby_b2',
     title: "The Great Gatsby",
     author: 'F. Scott Fitzgerald',
@@ -757,7 +757,7 @@ export const STORIES_PART2: RawStory[] = [
       "ashes": "küller"
     }
   },
-                                            {
+                                              {
     id: 'frankenstein',
     title: "Frankenstein",
     author: 'Mary Shelley',
@@ -870,7 +870,7 @@ export const STORIES_PART2: RawStory[] = [
       "balm": "merhem"
     }
   },
-                                            {
+                                              {
     id: 'dracula',
     title: "Dracula",
     author: 'Bram Stoker',
@@ -981,7 +981,7 @@ export const STORIES_PART2: RawStory[] = [
       "agonizing": "can yakıcı"
     }
   },
-                                            {
+                                              {
     id: 'sherlock_holmes',
     title: "Sherlock Holmes",
     author: 'Arthur Conan Doyle',
@@ -1093,7 +1093,7 @@ export const STORIES_PART2: RawStory[] = [
       "anomalies": "anomaliler"
     }
   },
-                                            {
+                                              {
     id: 'odyssey',
     title: "The Odyssey",
     author: 'Homer',
@@ -1207,7 +1207,7 @@ export const STORIES_PART2: RawStory[] = [
       "aftermath": "akıbet"
     }
   },
-                                            {
+                                              {
     id: 'jungle_book',
     title: "The Jungle Book",
     author: 'Rudyard Kipling',
@@ -1328,7 +1328,7 @@ export const STORIES_PART2: RawStory[] = [
       "constantly": "durmaksızın"
     }
   },
-                                            {
+                                              {
     id: 'snow_queen',
     title: "The Snow Queen",
     author: 'Hans Christian Andersen',
@@ -1439,7 +1439,7 @@ export const STORIES_PART2: RawStory[] = [
       "gale": "fırtına"
     }
   },
-                                            {
+                                              {
     id: 'normal_people_c1',
     title: "Normal People",
     author: 'Sally Rooney',
@@ -1552,7 +1552,7 @@ export const STORIES_PART2: RawStory[] = [
       "cobblestoned": "arnavut kaldırımlı"
     }
   },
-                                            {
+                                              {
     id: 'treasure_island',
     title: "Treasure Island",
     author: 'Robert Louis Stevenson',
@@ -1668,7 +1668,7 @@ export const STORIES_PART2: RawStory[] = [
       "azure": "gök mavisi"
     }
   },
-                                            {
+                                              {
     id: 'elves_shoemaker',
     title: "The Elves and the Shoemaker",
     author: 'Brothers Grimm',
@@ -1738,7 +1738,7 @@ export const STORIES_PART2: RawStory[] = [
       "gesture": "işaret"
     }
   },
-                                            {
+                                              {
     id: 'emperors_clothes',
     title: "The Emperor's New Clothes",
     author: 'Hans Christian Andersen',
@@ -1806,7 +1806,7 @@ export const STORIES_PART2: RawStory[] = [
       "vanity": "kibir"
     }
   },
-                                            {
+                                              {
     id: 'happy_prince',
     title: "The Happy Prince",
     author: 'Oscar Wilde',
@@ -1878,7 +1878,7 @@ export const STORIES_PART2: RawStory[] = [
       "trash": "çöp"
     }
   },
-                                            {
+                                              {
     id: 'wind_willows',
     title: "The Wind in the Willows",
     author: 'Kenneth Grahame',
@@ -1951,7 +1951,7 @@ export const STORIES_PART2: RawStory[] = [
       "underground": "yeraltı"
     }
   },
-                                            {
+                                              {
     id: 'secret_garden',
     title: "The Secret Garden",
     author: 'Frances Hodgson Burnett',
@@ -2022,7 +2022,7 @@ export const STORIES_PART2: RawStory[] = [
       "mansion": "konak"
     }
   },
-                                            {
+                                              {
     id: 'heidi',
     title: "Heidi",
     author: 'Johanna Spyri',
@@ -2092,7 +2092,7 @@ export const STORIES_PART2: RawStory[] = [
       "rugged": "engebeli"
     }
   },
-                                            {
+                                              {
     id: 'little_prince',
     title: "The Little Prince",
     author: 'Antoine de Saint-Exupéry',
@@ -2165,7 +2165,7 @@ export const STORIES_PART2: RawStory[] = [
       "disciplined": "disiplinli"
     }
   },
-                                            {
+                                              {
     id: 'christmas_carol',
     title: "A Christmas Carol",
     author: 'Charles Dickens',
@@ -2237,7 +2237,7 @@ export const STORIES_PART2: RawStory[] = [
       "drifted": "sürüklendi"
     }
   },
-                                            {
+                                              {
     id: 'around_world',
     title: "Around the World in Eighty Days",
     author: 'Jules Verne',
@@ -2309,7 +2309,7 @@ export const STORIES_PART2: RawStory[] = [
       "awaited": "beklenen"
     }
   },
-                                            {
+                                              {
     id: 'time_machine',
     title: "The Time Machine",
     author: 'H. G. Wells',
@@ -2382,7 +2382,7 @@ export const STORIES_PART2: RawStory[] = [
       "atmosphere": "atmosfer"
     }
   },
-                                            {
+                                              {
     id: 'white_fang',
     title: "White Fang",
     author: 'Jack London',
@@ -2451,7 +2451,7 @@ export const STORIES_PART2: RawStory[] = [
       "constant": "sürekli"
     }
   },
-                                            {
+                                              {
     id: 'call_wild',
     title: "The Call of the Wild",
     author: 'Jack London',
@@ -2523,7 +2523,7 @@ export const STORIES_PART2: RawStory[] = [
       "chaotic": "kaotik"
     }
   },
-                                            {
+                                              {
     id: 'don_quixote',
     title: "Don Quixote",
     author: 'Miguel de Cervantes',
@@ -2594,7 +2594,7 @@ export const STORIES_PART2: RawStory[] = [
       "catalyst": "katalizör"
     }
   },
-                                            {
+                                              {
     id: 'moby_dick',
     title: "Moby Dick",
     author: 'Herman Melville',
@@ -2665,7 +2665,7 @@ export const STORIES_PART2: RawStory[] = [
       "agony": "ıstırap"
     }
   },
-                                            {
+                                              {
     id: 'hunchback_notredame',
     title: "The Hunchback of Notre Dame",
     author: 'Victor Hugo',
@@ -2736,7 +2736,7 @@ export const STORIES_PART2: RawStory[] = [
       "burgeoning": "filizlenen"
     }
   },
-                                            {
+                                              {
     id: 'dorian_gray',
     title: "The Picture of Dorian Gray",
     author: 'Oscar Wilde',
@@ -2809,7 +2809,7 @@ export const STORIES_PART2: RawStory[] = [
       "jagged": "girintili çıkıntılı"
     }
   },
-                                          {
+                                            {
     id: 'anne_green_gables',
     title: "Anne of Green Gables",
     author: 'Lucy Maud Montgomery',
@@ -2879,7 +2879,7 @@ export const STORIES_PART2: RawStory[] = [
       "sighed": "iç çekti"
     }
   },
-                                          {
+                                            {
     id: 'little_women',
     title: "Little Women",
     author: 'Louisa May Alcott',
@@ -2950,7 +2950,7 @@ export const STORIES_PART2: RawStory[] = [
       "genuine": "hakiki"
     }
   },
-                                          {
+                                            {
     id: 'pollyanna',
     title: "Pollyanna",
     author: 'Eleanor H. Porter',
@@ -3020,7 +3020,7 @@ export const STORIES_PART2: RawStory[] = [
       "stiff": "katı"
     }
   },
-                                          {
+                                            {
     id: 'pride_prejudice',
     title: "Pride and Prejudice",
     author: 'Jane Austen',
@@ -3092,7 +3092,7 @@ export const STORIES_PART2: RawStory[] = [
       "acknowledged": "kabul edilmiş"
     }
   },
-                                          {
+                                            {
     id: 'war_of_worlds',
     title: "The War of the Worlds",
     author: 'H. G. Wells',
@@ -3164,7 +3164,7 @@ export const STORIES_PART2: RawStory[] = [
       "blinding": "göz kamaştırıcı"
     }
   },
-                                          {
+                                            {
     id: 'dr_jekyll_mr_hyde',
     title: "Strange Case of Dr Jekyll and Mr Hyde",
     author: 'Robert Louis Stevenson',
@@ -3235,7 +3235,7 @@ export const STORIES_PART2: RawStory[] = [
       "anxious": "tedirgin"
     }
   },
-                                          {
+                                            {
     id: 'invisible_man',
     title: "The Invisible Man",
     author: 'H. G. Wells',
@@ -3305,7 +3305,7 @@ export const STORIES_PART2: RawStory[] = [
       "assaulted": "saldırıya uğramış"
     }
   },
-                                          {
+                                            {
     id: 'crime_punishment',
     title: "Crime and Punishment",
     author: 'Fyodor Dostoevsky',
@@ -3377,7 +3377,7 @@ export const STORIES_PART2: RawStory[] = [
       "obsolete": "köhnemiş"
     }
   },
-                                          {
+                                            {
     id: 'les_miserables',
     title: "Les Misérables",
     author: 'Victor Hugo',
@@ -3448,7 +3448,7 @@ export const STORIES_PART2: RawStory[] = [
       "tranquility": "dinginlik"
     }
   },
-                                    {
+                                      {
     id: 'horror_pit_pendulum',
     title: "The Pit and the Pendulum",
     author: 'Edgar Allan Poe',
@@ -3520,7 +3520,7 @@ export const STORIES_PART2: RawStory[] = [
       "descended": "indi"
     }
   },
-                                    {
+                                      {
     id: 'horror_tell_tale_heart',
     title: "The Tell-Tale Heart",
     author: 'Edgar Allan Poe',
@@ -3592,7 +3592,7 @@ export const STORIES_PART2: RawStory[] = [
       "furious": "öfkeli"
     }
   },
-                                    {
+                                      {
     id: 'horror_murders_rue_morgue',
     title: "The Murders in the Rue Morgue",
     author: 'Edgar Allan Poe',
@@ -3665,7 +3665,7 @@ export const STORIES_PART2: RawStory[] = [
       "witnesses": "şahitler"
     }
   },
-                                    {
+                                      {
     id: 'horror_boscombe_valley',
     title: "The Boscombe Valley Mystery",
     author: 'Arthur Conan Doyle',
@@ -3737,7 +3737,7 @@ export const STORIES_PART2: RawStory[] = [
       "identify": "teşhis etmek"
     }
   },
-                                    {
+                                      {
     id: 'horror_woman_in_white',
     title: "The Woman in White",
     author: 'Wilkie Collins',
@@ -3809,7 +3809,7 @@ export const STORIES_PART2: RawStory[] = [
       "fragile": "narin"
     }
   },
-                                    {
+                                      {
     id: 'horror_phantom_opera',
     title: "The Phantom of the Opera",
     author: 'Gaston Leroux',
@@ -3881,7 +3881,7 @@ export const STORIES_PART2: RawStory[] = [
       "entirely": "tamamen"
     }
   },
-                                    {
+                                      {
     id: 'horror_dunwich_horror',
     title: "The Dunwich Horror",
     author: 'H. P. Lovecraft',
@@ -3953,7 +3953,7 @@ export const STORIES_PART2: RawStory[] = [
       "echoing": "çınlayan"
     }
   },
-                                    {
+                                      {
     id: 'horror_mountains_madness',
     title: "At the Mountains of Madness",
     author: 'H. P. Lovecraft',
@@ -4026,7 +4026,7 @@ export const STORIES_PART2: RawStory[] = [
       "energy": "enerji"
     }
   },
-                                    {
+                                      {
     id: 'horror_shadow_innsmouth',
     title: "The Shadow over Innsmouth",
     author: 'H. P. Lovecraft',
@@ -4098,7 +4098,7 @@ export const STORIES_PART2: RawStory[] = [
       "leaned": "eğildi"
     }
   },
-                                    {
+                                      {
     id: 'horror_carmilla',
     title: "Carmilla",
     author: 'Sheridan Le Fanu',
@@ -4170,7 +4170,7 @@ export const STORIES_PART2: RawStory[] = [
       "echoed": "yankılandı"
     }
   },
-                                    {
+                                      {
     id: 'horror_hound_baskervilles',
     title: "The Hound of the Baskervilles",
     author: 'Arthur Conan Doyle',
@@ -4241,7 +4241,7 @@ export const STORIES_PART2: RawStory[] = [
       "atmosphere": "kasvet"
     }
   },
-                                    {
+                                      {
     id: 'horror_lair_white_worm',
     title: "The Lair of the White Worm",
     author: 'Bram Stoker',
@@ -4312,7 +4312,7 @@ export const STORIES_PART2: RawStory[] = [
       "architecture": "mimari"
     }
   },
-                                    {
+                                      {
     id: 'horror_jewel_seven_stars',
     title: "The Jewel of Seven Stars",
     author: 'Bram Stoker',
@@ -4383,7 +4383,7 @@ export const STORIES_PART2: RawStory[] = [
       "absolute": "mutlak"
     }
   },
-                                    {
+                                      {
     id: 'horror_turn_of_screw',
     title: "The Turn of the Screw",
     author: 'Henry James',
@@ -4453,7 +4453,7 @@ export const STORIES_PART2: RawStory[] = [
       "awaited": "beklenen"
     }
   },
-                                    {
+                                      {
     id: 'horror_rappaccinis_daughter',
     title: "Rappaccini's Daughter",
     author: 'Nathaniel Hawthorne',
@@ -4526,7 +4526,7 @@ export const STORIES_PART2: RawStory[] = [
       "affection": "şefkat"
     }
   },
-                                    {
+                                      {
     id: 'horror_mysteries_udolpho',
     title: "The Mysteries of Udolpho",
     author: 'Ann Radcliffe',
@@ -4597,7 +4597,7 @@ export const STORIES_PART2: RawStory[] = [
       "beloved": "sevgili"
     }
   },
-                                    {
+                                      {
     id: 'horror_castle_of_otranto',
     title: "The Castle of Otranto",
     author: 'Horace Walpole',
@@ -4668,7 +4668,7 @@ export const STORIES_PART2: RawStory[] = [
       "acknowledge": "tanımak"
     }
   },
-                                    {
+                                      {
     id: 'horror_monk',
     title: "The Monk",
     author: 'Matthew Gregory Lewis',
@@ -4741,7 +4741,7 @@ export const STORIES_PART2: RawStory[] = [
       "affections": "duygular"
     }
   },
-                                    {
+                                      {
     id: 'horror_purloined_letter',
     title: "The Purloined Letter",
     author: 'Edgar Allan Poe',
@@ -4812,7 +4812,7 @@ export const STORIES_PART2: RawStory[] = [
       "burdened": "yüklü"
     }
   },
-                                    {
+                                      {
     id: 'horror_great_god_pan',
     title: "The Great God Pan",
     author: 'Arthur Machen',
@@ -4882,7 +4882,7 @@ export const STORIES_PART2: RawStory[] = [
       "biological": "biyolojik"
     }
   },
-                                    {
+                                      {
     id: 'horror_call_of_cthulhu',
     title: "The Call of Cthulhu",
     author: 'H. P. Lovecraft',
@@ -4954,7 +4954,7 @@ export const STORIES_PART2: RawStory[] = [
       "bouts": "nöbetler"
     }
   },
-                                    {
+                                      {
     id: 'horror_white_people',
     title: "The White People",
     author: 'Arthur Machen',
@@ -5026,7 +5026,7 @@ export const STORIES_PART2: RawStory[] = [
       "celestial": "göksel"
     }
   },
-                                    {
+                                      {
     id: 'horror_beetle',
     title: "The Beetle",
     author: 'Richard Marsh',
@@ -5096,7 +5096,7 @@ export const STORIES_PART2: RawStory[] = [
       "abyss": "uçurum"
     }
   },
-                                    {
+                                      {
     id: 'horror_house_borderland',
     title: "The House on the Borderland",
     author: 'William Hope Hodgson',
@@ -5166,7 +5166,7 @@ export const STORIES_PART2: RawStory[] = [
       "agony": "ıstırap"
     }
   },
-                                    {
+                                      {
     id: 'horror_varney_vampire',
     title: "Varney the Vampire",
     author: 'Thomas Preskett Prest',
@@ -5236,7 +5236,7 @@ export const STORIES_PART2: RawStory[] = [
       "agonizing": "can yakıcı"
     }
   },
-                              {
+                                {
     id: 'classic_wuthering_heights',
     title: "Wuthering Heights",
     author: 'Emily Brontë',
@@ -5308,7 +5308,7 @@ export const STORIES_PART2: RawStory[] = [
       "moving": "dokunaklı"
     }
   },
-                              {
+                                {
     id: 'classic_scarlet_letter',
     title: "The Scarlet Letter",
     author: 'Nathaniel Hawthorne',
@@ -5380,7 +5380,7 @@ export const STORIES_PART2: RawStory[] = [
       "grand": "görkemli"
     }
   },
-                              {
+                                {
     id: 'classic_tale_two_cities',
     title: "A Tale of Two Cities",
     author: 'Charles Dickens',
@@ -5450,7 +5450,7 @@ export const STORIES_PART2: RawStory[] = [
       "chaos": "kargaşa"
     }
   },
-                              {
+                                {
     id: 'classic_man_iron_mask',
     title: "The Man in the Iron Mask",
     author: 'Alexandre Dumas',
@@ -5518,7 +5518,7 @@ export const STORIES_PART2: RawStory[] = [
       "confronted": "yüzleşti"
     }
   },
-                              {
+                                {
     id: 'classic_connecticut_yankee',
     title: "A Connecticut Yankee in King Arthur's Court",
     author: 'Mark Twain',
@@ -5591,7 +5591,7 @@ export const STORIES_PART2: RawStory[] = [
       "encountered": "karşılaşılan"
     }
   },
-                              {
+                                {
     id: 'classic_age_of_innocence',
     title: "The Age of Innocence",
     author: 'Edith Wharton',
@@ -5662,7 +5662,7 @@ export const STORIES_PART2: RawStory[] = [
       "currently": "şu anda"
     }
   },
-                            {
+                              {
     id: 'classic_house_of_mirth',
     title: "The House of Mirth",
     author: 'Edith Wharton',
@@ -5734,7 +5734,7 @@ export const STORIES_PART2: RawStory[] = [
       "flames": "alevler"
     }
   },
-                            {
+                              {
     id: 'classic_sea_wolf',
     title: "The Sea-Wolf",
     author: 'Jack London',
@@ -5804,7 +5804,7 @@ export const STORIES_PART2: RawStory[] = [
       "constant": "sürekli"
     }
   },
-                            {
+                              {
     id: 'classic_martin_eden',
     title: "Martin Eden",
     author: 'Jack London',
@@ -5876,7 +5876,7 @@ export const STORIES_PART2: RawStory[] = [
       "docks": "rıhtım"
     }
   },
-                            {
+                              {
     id: 'classic_madding_crowd',
     title: "Far from the Madding Crowd",
     author: 'Thomas Hardy',
@@ -5947,7 +5947,7 @@ export const STORIES_PART2: RawStory[] = [
       "profound": "derin"
     }
   },
-                            {
+                              {
     id: 'classic_fathers_and_sons',
     title: "Fathers and Sons",
     author: 'Ivan Turgenev',
@@ -6020,7 +6020,7 @@ export const STORIES_PART2: RawStory[] = [
       "affection": "şefkat"
     }
   },
-                            {
+                              {
     id: 'classic_dead_souls',
     title: "Dead Souls",
     author: 'Nikolai Gogol',
@@ -6091,7 +6091,7 @@ export const STORIES_PART2: RawStory[] = [
       "accustomed": "alışkın"
     }
   },
-                            {
+                              {
     id: 'classic_overcoat',
     title: "The Overcoat",
     author: 'Nikolai Gogol',
@@ -6161,7 +6161,7 @@ export const STORIES_PART2: RawStory[] = [
       "atmosphere": "atmosfer"
     }
   },
-                            {
+                              {
     id: 'classic_tess_urbervilles',
     title: "Tess of the d'Urbervilles",
     author: 'Thomas Hardy',
@@ -6234,7 +6234,7 @@ export const STORIES_PART2: RawStory[] = [
       "amidst": "ortasında"
     }
   },
-                            {
+                              {
     id: 'classic_mayor_casterbridge',
     title: "The Mayor of Casterbridge",
     author: 'Thomas Hardy',
@@ -6306,7 +6306,7 @@ export const STORIES_PART2: RawStory[] = [
       "accelerated": "hızlandırılmış"
     }
   },
-                            {
+                              {
     id: 'classic_return_native',
     title: "The Return of the Native",
     author: 'Thomas Hardy',
@@ -6378,7 +6378,7 @@ export const STORIES_PART2: RawStory[] = [
       "desperately": "çaresizce"
     }
   },
-                            {
+                              {
     id: 'classic_jude_obscure',
     title: "Jude the Obscure",
     author: 'Thomas Hardy',
@@ -6449,7 +6449,7 @@ export const STORIES_PART2: RawStory[] = [
       "affection": "şefkat"
     }
   },
-                            {
+                              {
     id: 'classic_madame_bovary',
     title: "Madame Bovary",
     author: 'Gustave Flaubert',
@@ -6520,7 +6520,7 @@ export const STORIES_PART2: RawStory[] = [
       "asserting": "ileri süren"
     }
   },
-                            {
+                              {
     id: 'classic_pere_goriot',
     title: "Le Père Goriot",
     author: 'Honoré de Balzac',
@@ -6591,7 +6591,7 @@ export const STORIES_PART2: RawStory[] = [
       "acknowledged": "kabul edilmiş"
     }
   },
-                            {
+                              {
     id: 'classic_eugenie_grandet',
     title: "Eugénie Grandet",
     author: 'Honoré de Balzac',
@@ -6664,7 +6664,7 @@ export const STORIES_PART2: RawStory[] = [
       "affection": "şefkat"
     }
   },
-                            {
+                              {
     id: 'classic_war_and_peace',
     title: "War and Peace",
     author: 'Leo Tolstoy',
@@ -6735,7 +6735,7 @@ export const STORIES_PART2: RawStory[] = [
       "aftermath": "akıbet"
     }
   },
-                            {
+                              {
     id: 'classic_anna_karenina',
     title: "Anna Karenina",
     author: 'Leo Tolstoy',
@@ -6806,7 +6806,7 @@ export const STORIES_PART2: RawStory[] = [
       "accommodate": "yerleştirmek"
     }
   },
-                            {
+                              {
     id: 'classic_brothers_karamazov',
     title: "The Brothers Karamazov",
     author: 'Fyodor Dostoevsky',
@@ -6878,7 +6878,7 @@ export const STORIES_PART2: RawStory[] = [
       "aftermath": "akıbet"
     }
   },
-                            {
+                              {
     id: 'classic_idiot',
     title: "The Idiot",
     author: 'Fyodor Dostoevsky',
@@ -6951,7 +6951,7 @@ export const STORIES_PART2: RawStory[] = [
       "agonizing": "acı verici"
     }
   },
-                          {
+                            {
     id: 'selfish_giant',
     title: "The Selfish Giant",
     author: 'Oscar Wilde',
@@ -7020,7 +7020,7 @@ export const STORIES_PART2: RawStory[] = [
       "transformation": "dönüşüm"
     }
   },
-                          {
+                            {
     id: 'nightingale',
     title: "The Nightingale",
     author: 'Hans Christian Andersen',
@@ -7093,7 +7093,7 @@ export const STORIES_PART2: RawStory[] = [
       "harmony": "uyum"
     }
   },
-                          {
+                            {
     id: 'tinderbox',
     title: "The Tinderbox",
     author: 'Hans Christian Andersen',
@@ -7162,7 +7162,7 @@ export const STORIES_PART2: RawStory[] = [
       "fear": "korku"
     }
   },
-                          {
+                            {
     id: 'wild_swans',
     title: "The Wild Swans",
     author: 'Hans Christian Andersen',
@@ -7233,7 +7233,7 @@ export const STORIES_PART2: RawStory[] = [
       "bond": "bağ"
     }
   },
-                          {
+                            {
     id: 'goose_girl',
     title: "The Goose Girl",
     author: 'Brothers Grimm',
@@ -7304,7 +7304,7 @@ export const STORIES_PART2: RawStory[] = [
       "justice": "adalet"
     }
   },
-                        {
+                          {
     id: 'daily_meeting',
     title: "Project Planning",
     author: 'Antigravity',
@@ -7373,7 +7373,7 @@ export const STORIES_PART2: RawStory[] = [
       "foundation": "temel"
     }
   },
-                        {
+                          {
     id: 'daily_car_rent',
     title: "Road Trip Car",
     author: 'Antigravity',
@@ -7442,7 +7442,7 @@ export const STORIES_PART2: RawStory[] = [
       "tank": "yakıt deposu"
     }
   },
-                        {
+                          {
     id: 'daily_gym',
     title: "Personal Trainer",
     author: 'Antigravity',
@@ -7510,7 +7510,7 @@ export const STORIES_PART2: RawStory[] = [
       "master": "ustalaşmak"
     }
   },
-                        {
+                          {
     id: 'daily_mechanic',
     title: "Car Breakdown",
     author: 'Antigravity',
@@ -7581,7 +7581,7 @@ export const STORIES_PART2: RawStory[] = [
       "satisfaction": "memnuniyet"
     }
   },
-                        {
+                          {
     id: 'daily_museum',
     title: "Guided Tour",
     author: 'Antigravity',
@@ -7651,7 +7651,7 @@ export const STORIES_PART2: RawStory[] = [
       "architecture": "mimari"
     }
   },
-                        {
+                          {
     id: 'daily_colleague',
     title: "Lunch Break",
     author: 'Antigravity',
@@ -7722,7 +7722,7 @@ export const STORIES_PART2: RawStory[] = [
       "isolated": "izole/yalnız"
     }
   },
-                        {
+                          {
     id: 'daily_pharmacy',
     title: "Prescription Help",
     author: 'Antigravity',
@@ -7789,7 +7789,7 @@ export const STORIES_PART2: RawStory[] = [
       "responsibility": "sorumluluk"
     }
   },
-                        {
+                          {
     id: 'daily_university',
     title: "Dormitory Move",
     author: 'Antigravity',
@@ -7861,7 +7861,7 @@ export const STORIES_PART2: RawStory[] = [
       "independently": "bağımsız bir şekilde"
     }
   },
-                        {
+                          {
     id: 'daily_barber',
     title: "Haircut Choice",
     author: 'Antigravity',
@@ -7932,7 +7932,7 @@ export const STORIES_PART2: RawStory[] = [
       "accomplishment": "başarı"
     }
   },
-                        {
+                          {
     id: 'daily_cinema',
     title: "Movie Choice",
     author: 'Antigravity',
@@ -8003,7 +8003,7 @@ export const STORIES_PART2: RawStory[] = [
       "backdrop": "arka plan, fon"
     }
   },
-                        {
+                          {
     id: 'daily_investor',
     title: "Pitching the Startup",
     author: 'Antigravity',
@@ -8072,7 +8072,7 @@ export const STORIES_PART2: RawStory[] = [
       "grit": "azim/kararlılık"
     }
   },
-                        {
+                          {
     id: 'daily_complaint',
     title: "Faulty Laptop",
     author: 'Antigravity',
@@ -8144,7 +8144,7 @@ export const STORIES_PART2: RawStory[] = [
       "advocate": "savunmak/desteklemek"
     }
   },
-                        {
+                          {
     id: 'daily_negotiation',
     title: "Salary Review",
     author: 'Antigravity',
@@ -8215,7 +8215,7 @@ export const STORIES_PART2: RawStory[] = [
       "momentum": "ivme veya hız"
     }
   },
-                        {
+                          {
     id: 'daily_wedding',
     title: "Planning the Big Day",
     author: 'Antigravity',
@@ -8284,7 +8284,7 @@ export const STORIES_PART2: RawStory[] = [
       "collaboration": "iş birliği"
     }
   },
-                        {
+                          {
     id: 'daily_promotion',
     title: "Promotion Talk",
     author: 'Antigravity',
@@ -8352,7 +8352,7 @@ export const STORIES_PART2: RawStory[] = [
       "milestone": "dönüm noktası"
     }
   },
-                        {
+                          {
     id: 'daily_contract',
     title: "Signing the Lease",
     author: 'Antigravity',
@@ -8421,7 +8421,7 @@ export const STORIES_PART2: RawStory[] = [
       "closure": "kapanış, tamamlanma hissi"
     }
   },
-                        {
+                          {
     id: 'daily_accident',
     title: "Fender Bender",
     author: 'Antigravity',
@@ -8492,7 +8492,7 @@ export const STORIES_PART2: RawStory[] = [
       "methodical": "sistemli, yöntemli"
     }
   },
-                        {
+                          {
     id: 'daily_career',
     title: "Career Change",
     author: 'Antigravity',
@@ -8562,7 +8562,7 @@ export const STORIES_PART2: RawStory[] = [
       "ambition": "hırs"
     }
   },
-                        {
+                          {
     id: 'daily_apartment_issue',
     title: "Water Leak",
     author: 'Antigravity',
@@ -8633,7 +8633,7 @@ export const STORIES_PART2: RawStory[] = [
       "cavernous": "boş, derin, mağara gibi"
     }
   },
-                        {
+                          {
     id: 'daily_presentation',
     title: "Stage Fright",
     author: 'Antigravity',
@@ -8703,7 +8703,7 @@ export const STORIES_PART2: RawStory[] = [
       "wield": "kullanmak, hükmetmek"
     }
   },
-                        {
+                          {
     id: 'daily_merger',
     title: "Business Merger",
     author: 'Antigravity',
@@ -8773,7 +8773,7 @@ export const STORIES_PART2: RawStory[] = [
       "culmination": "doruk noktası, sonuçlanma"
     }
   },
-                        {
+                          {
     id: 'daily_court',
     title: "The Witness Stand",
     author: 'Antigravity',
@@ -8842,7 +8842,7 @@ export const STORIES_PART2: RawStory[] = [
       "nexus": "bağlantı"
     }
   },
-                        {
+                          {
     id: 'daily_panel',
     title: "Climate Debate",
     author: 'Antigravity',
@@ -8912,7 +8912,7 @@ export const STORIES_PART2: RawStory[] = [
       "catalyst": "katalizör"
     }
   },
-                        {
+                          {
     id: 'daily_negotiate_lease',
     title: "Commercial Rent",
     author: 'Antigravity',
@@ -8985,7 +8985,7 @@ export const STORIES_PART2: RawStory[] = [
       "synergy": "sinerji"
     }
   },
-                        {
+                          {
     id: 'daily_critic',
     title: "Art Gallery",
     author: 'Antigravity',
@@ -9051,7 +9051,7 @@ export const STORIES_PART2: RawStory[] = [
       "fallibility": "hata yapabilirlik, yanılabilirlik"
     }
   },
-                        {
+                          {
     id: 'daily_crisis',
     title: "Public Relations",
     author: 'Antigravity',
@@ -9120,7 +9120,7 @@ export const STORIES_PART2: RawStory[] = [
       "vigilant": "tetikte, uyanık"
     }
   },
-                        {
+                          {
     id: 'daily_heritage',
     title: "Family Inheritance",
     author: 'Antigravity',
@@ -9192,7 +9192,7 @@ export const STORIES_PART2: RawStory[] = [
       "steward": "kâhya, sorumluluğu üstlenen kişi"
     }
   },
-                        {
+                          {
     id: 'daily_interview_exec',
     title: "Executive Interview",
     author: 'Antigravity',
@@ -9262,7 +9262,7 @@ export const STORIES_PART2: RawStory[] = [
       "precarious": "tehlikeli, istikrarsız"
     }
   },
-                        {
+                          {
     id: 'daily_philosophy',
     title: "Late Night Debate",
     author: 'Antigravity',
@@ -9332,7 +9332,7 @@ export const STORIES_PART2: RawStory[] = [
       "schism": "ayrılık, bölünme, görüş ayrılığı"
     }
   },
-                        {
+                          {
     id: 'daily_academic',
     title: "Research Proposal",
     author: 'Antigravity',
@@ -9403,7 +9403,7 @@ export const STORIES_PART2: RawStory[] = [
       "cognizant": "farkında, bilincinde"
     }
   },
-                  {
+                    {
     id: 'magic_flute',
     title: "The Magic Flute",
     author: 'Wolfgang Amadeus Mozart',
@@ -9475,7 +9475,7 @@ export const STORIES_PART2: RawStory[] = [
       "arduous": "zorlu"
     }
   },
-                  {
+                    {
     id: 'king_thrushbeard',
     title: "King Thrushbeard",
     author: 'Brothers Grimm',
@@ -9545,7 +9545,7 @@ export const STORIES_PART2: RawStory[] = [
       "prosperous": "varlıklı"
     }
   },
-                  {
+                    {
     id: 'iron_hans',
     title: "Iron Hans",
     author: 'Brothers Grimm',
@@ -9617,7 +9617,7 @@ export const STORIES_PART2: RawStory[] = [
       "persistence": "azim"
     }
   },
-                  {
+                    {
     id: 'water_of_life',
     title: "The Water of Life",
     author: 'Brothers Grimm',
@@ -9688,7 +9688,7 @@ export const STORIES_PART2: RawStory[] = [
       "integrity": "dürüstlük"
     }
   },
-                  {
+                    {
     id: 'three_spinners',
     title: "The Three Spinners",
     author: 'Brothers Grimm',
@@ -9757,7 +9757,7 @@ export const STORIES_PART2: RawStory[] = [
       "exempt": "muaf"
     }
   },
-                  {
+                    {
     id: 'six_swans',
     title: "The Six Swans",
     author: 'Brothers Grimm',
@@ -9829,7 +9829,7 @@ export const STORIES_PART2: RawStory[] = [
       "reconciled": "barışmış"
     }
   },
-                  {
+                    {
     id: 'birthday_infanta',
     title: "The Birthday of the Infanta",
     author: 'Oscar Wilde',
@@ -9897,7 +9897,7 @@ export const STORIES_PART2: RawStory[] = [
       "dissonant": "uyumsuz"
     }
   },
-                  {
+                    {
     id: 'fisherman_soul',
     title: "The Fisherman and His Soul",
     author: 'Oscar Wilde',
@@ -9968,7 +9968,7 @@ export const STORIES_PART2: RawStory[] = [
       "transcend": "aşmak"
     }
   },
-                  {
+                    {
     id: 'young_king',
     title: "The Young King",
     author: 'Oscar Wilde',
@@ -10040,7 +10040,7 @@ export const STORIES_PART2: RawStory[] = [
       "providence": "kader"
     }
   },
-                  {
+                    {
     id: 'devoted_friend',
     title: "The Devoted Friend",
     author: 'Oscar Wilde',
@@ -10112,7 +10112,7 @@ export const STORIES_PART2: RawStory[] = [
       "vanity": "kibir"
     }
   },
-                  {
+                    {
     id: 'remarkably_rocket',
     title: "The Remarkable Rocket",
     author: 'Oscar Wilde',
@@ -10184,7 +10184,7 @@ export const STORIES_PART2: RawStory[] = [
       "grandiosity": "büyüklenme"
     }
   },
-                  {
+                    {
     id: 'east_sun_west_moon',
     title: "East of the Sun and West of the Moon",
     author: 'Norse Fairytale',
@@ -10256,7 +10256,7 @@ export const STORIES_PART2: RawStory[] = [
       "harmony": "uyum"
     }
   },
-                  {
+                    {
     id: 'snow_white_rose_red',
     title: "Snow-White and Rose-Red",
     author: 'Brothers Grimm',
@@ -10325,7 +10325,7 @@ export const STORIES_PART2: RawStory[] = [
       "harmony": "uyum"
     }
   },
-                  {
+                    {
     id: 'twelve_dancing_princesses',
     title: "The Twelve Dancing Princesses",
     author: 'Brothers Grimm',
@@ -10394,7 +10394,7 @@ export const STORIES_PART2: RawStory[] = [
       "legend": "efsane"
     }
   },
-                  {
+                    {
     id: 'horror_lazarus',
     title: "Lazarus",
     author: 'Leonid Andreyev',
@@ -10459,7 +10459,7 @@ export const STORIES_PART2: RawStory[] = [
       "agony": "ıstırap"
     }
   },
-                  {
+                    {
     id: 'horror_shadow_out_of_time',
     title: "The Shadow Out of Time",
     author: 'H. P. Lovecraft',
@@ -10531,7 +10531,7 @@ export const STORIES_PART2: RawStory[] = [
       "psyche": "ruh"
     }
   },
-                  {
+                    {
     id: 'horror_outsider',
     title: "The Outsider",
     author: 'H. P. Lovecraft',
@@ -10603,7 +10603,7 @@ export const STORIES_PART2: RawStory[] = [
       "solace": "teselli"
     }
   },
-                {
+                  {
     id: 'scifi_i_robot',
     title: "I, Robot",
     author: 'Isaac Asimov',
@@ -10674,7 +10674,7 @@ export const STORIES_PART2: RawStory[] = [
       "dilemma": "ikilem"
     }
   },
-                {
+                  {
     id: 'scifi_nightfall',
     title: "Nightfall",
     author: 'Isaac Asimov',
@@ -10743,7 +10743,7 @@ export const STORIES_PART2: RawStory[] = [
       "eternal": "ebedi"
     }
   },
-                {
+                  {
     id: 'scifi_sentinel',
     title: "The Sentinel",
     author: 'Arthur C. Clarke',
@@ -10815,7 +10815,7 @@ export const STORIES_PART2: RawStory[] = [
       "privacy": "mahremiyet"
     }
   },
-                {
+                  {
     id: 'scifi_nine_billion_names',
     title: "The Nine Billion Names of God",
     author: 'Arthur C. Clarke',
@@ -10886,7 +10886,7 @@ export const STORIES_PART2: RawStory[] = [
       "witness": "tanıklık etmek"
     }
   },
-                {
+                  {
     id: 'scifi_sound_of_thunder',
     title: "A Sound of Thunder",
     author: 'Ray Bradbury',
@@ -10957,7 +10957,7 @@ export const STORIES_PART2: RawStory[] = [
       "curiosity": "merak"
     }
   },
-                {
+                  {
     id: 'scifi_martian_chronicles',
     title: "The Martian Chronicles",
     author: 'Ray Bradbury',
@@ -11034,7 +11034,7 @@ export const STORIES_PART2: RawStory[] = [
       "invisible": "görünmez"
     }
   },
-                {
+                  {
     id: 'scifi_veldt',
     title: "The Veldt",
     author: 'Ray Bradbury',
@@ -11105,7 +11105,7 @@ export const STORIES_PART2: RawStory[] = [
       "consume": "yutmak"
     }
   },
-                {
+                  {
     id: 'scifi_soft_rains',
     title: "There Will Come Soft Rains",
     author: 'Ray Bradbury',
@@ -11175,7 +11175,7 @@ export const STORIES_PART2: RawStory[] = [
       "collapse": "çökmek"
     }
   },
-                {
+                  {
     id: 'scifi_arena',
     title: "Arena",
     author: 'Fredric Brown',
@@ -11569,7 +11569,7 @@ export const STORIES_PART2: RawStory[] = [
       "come": "gelmek"
     }
   },
-                {
+                  {
     id: 'scifi_expedition',
     title: "Expedition",
     author: 'Fredric Brown',
@@ -11639,7 +11639,7 @@ export const STORIES_PART2: RawStory[] = [
       "witness": "tanık"
     }
   },
-                {
+                  {
     id: 'scifi_escape_velocity',
     title: "Escape Velocity",
     author: 'Unknown',
@@ -11709,7 +11709,7 @@ export const STORIES_PART2: RawStory[] = [
       "vibrant": "canlı"
     }
   },
-                {
+                  {
     id: 'scifi_evidence',
     title: "Evidence",
     author: 'Isaac Asimov',
@@ -11911,7 +11911,7 @@ export const STORIES_PART2: RawStory[] = [
       "warmth": "sıcaklık"
     }
   },
-                {
+                  {
     id: 'scifi_clarke_star',
     title: "The Star",
     author: 'Arthur C. Clarke',
@@ -12353,7 +12353,7 @@ export const STORIES_PART2: RawStory[] = [
       "stars": "yıldızlar"
     }
   },
-                {
+                  {
     id: 'scifi_do_androids_dream',
     title: "Do Androids Dream of Electric Sheep?",
     author: 'Philip K. Dick',
@@ -12444,7 +12444,7 @@ export const STORIES_PART2: RawStory[] = [
       "consciousness": "bilinç"
     }
   },
-                {
+                  {
     id: 'scifi_minority_report',
     title: "The Minority Report",
     author: 'Philip K. Dick',
@@ -12517,7 +12517,7 @@ export const STORIES_PART2: RawStory[] = [
       "deterministic": "belirlenimci"
     }
   },
-                {
+                  {
     id: 'scifi_total_recall',
     title: "We Can Remember It for You Wholesale",
     author: 'Philip K. Dick',
@@ -12581,7 +12581,7 @@ export const STORIES_PART2: RawStory[] = [
       "shackle": "pranga, kelepçe"
     }
   },
-                {
+                  {
     id: 'scifi_time_patrol',
     title: "Time Patrol",
     author: 'Poul Anderson',
@@ -12647,7 +12647,7 @@ export const STORIES_PART2: RawStory[] = [
       "disillusionment": "hayal kırıklığı"
     }
   },
-                {
+                  {
     id: 'scifi_day_of_triffids',
     title: "The Day of the Triffids",
     author: 'John Wyndham',
@@ -12718,7 +12718,7 @@ export const STORIES_PART2: RawStory[] = [
       "encroaching": "yavaş yavaş yayılan"
     }
   },
-                {
+                  {
     id: 'scifi_midwich_cuckoos',
     title: "The Midwich Cuckoos",
     author: 'John Wyndham',
@@ -12790,7 +12790,7 @@ export const STORIES_PART2: RawStory[] = [
       "autonomy": "özerklik"
     }
   },
-                {
+                  {
     id: 'scifi_cold_equations',
     title: "The Cold Equations",
     author: 'Tom Godwin',
@@ -12860,7 +12860,7 @@ export const STORIES_PART2: RawStory[] = [
       "agonizing": "acı verici"
     }
   },
-                {
+                  {
     id: 'scifi_bicentennial_man',
     title: "The Bicentennial Man",
     author: 'Isaac Asimov',
@@ -12931,7 +12931,7 @@ export const STORIES_PART2: RawStory[] = [
       "odyssey": "uzun ve maceralı yolculuk"
     }
   },
-                {
+                  {
     id: 'scifi_last_question',
     title: "The Last Question",
     author: 'Isaac Asimov',
@@ -12995,7 +12995,7 @@ export const STORIES_PART2: RawStory[] = [
       "abyss": "uçurum"
     }
   },
-                {
+                  {
     id: 'scifi_machine_stops',
     title: "The Machine Stops",
     author: 'E. M. Forster',
@@ -13068,7 +13068,7 @@ export const STORIES_PART2: RawStory[] = [
       "essence": "öz"
     }
   },
-                {
+                  {
     id: 'scifi_solitude',
     title: "Solitude",
     author: 'Ursula K. Le Guin',
@@ -13140,7 +13140,7 @@ export const STORIES_PART2: RawStory[] = [
       "transformation": "dönüşüm"
     }
   },
-                {
+                  {
     id: 'scifi_by_waters_of_babylon',
     title: "By the Waters of Babylon",
     author: 'Stephen Vincent Benét',
@@ -13213,7 +13213,7 @@ export const STORIES_PART2: RawStory[] = [
       "decay": "çürüme"
     }
   },
-                {
+                  {
     id: 'detective_hound_baskervilles_1',
     title: "The Hound of the Baskervilles - Part 1",
     author: 'Arthur Conan Doyle',
@@ -13284,7 +13284,7 @@ export const STORIES_PART2: RawStory[] = [
       "vanished": "kayboldu"
     }
   },
-                {
+                  {
     id: 'detective_hound_baskervilles_2',
     title: "The Hound of the Baskervilles - Part 2",
     author: 'Arthur Conan Doyle',
@@ -13356,7 +13356,7 @@ export const STORIES_PART2: RawStory[] = [
       "initials": "baş harfleri"
     }
   },
-                {
+                  {
     id: 'detective_valley_fear_1',
     title: "The Valley of Fear - Part 1",
     author: 'Arthur Conan Doyle',
@@ -13425,7 +13425,7 @@ export const STORIES_PART2: RawStory[] = [
       "detail": "detay"
     }
   },
-                {
+                  {
     id: 'detective_valley_fear_2',
     title: "The Valley of Fear - Part 2",
     author: 'Arthur Conan Doyle',
@@ -13498,7 +13498,7 @@ export const STORIES_PART2: RawStory[] = [
       "perilous": "tehlikeli"
     }
   },
-                {
+                  {
     id: 'detective_musgrave_ritual',
     title: "The Adventure of the Musgrave Ritual",
     author: 'Arthur Conan Doyle',
@@ -13565,7 +13565,7 @@ export const STORIES_PART2: RawStory[] = [
       "reflection": "derin düşünce"
     }
   },
-                {
+                  {
     id: 'detective_final_problem',
     title: "The Adventure of the Final Problem",
     author: 'Arthur Conan Doyle',
@@ -13635,7 +13635,7 @@ export const STORIES_PART2: RawStory[] = [
       "sacrifice": "fedakarlık"
     }
   },
-                {
+                  {
     id: 'detective_empty_house',
     title: "The Adventure of the Empty House",
     author: 'Arthur Conan Doyle',
@@ -13706,7 +13706,7 @@ export const STORIES_PART2: RawStory[] = [
       "resolve": "çözmek"
     }
   },
-                {
+                  {
     id: 'detective_invisible_man',
     title: "The Invisible Man",
     author: 'G. K. Chesterton',
@@ -13779,7 +13779,7 @@ export const STORIES_PART2: RawStory[] = [
       "mercy": "merhamet"
     }
   },
-                {
+                  {
     id: 'detective_hammer_of_god',
     title: "The Hammer of God",
     author: 'G. K. Chesterton',
@@ -13850,7 +13850,7 @@ export const STORIES_PART2: RawStory[] = [
       "humble": "alçakgönüllü"
     }
   },
-                {
+                  {
     id: 'detective_moonstone_1',
     title: "The Moonstone - Part 1",
     author: 'Wilkie Collins',
@@ -13923,7 +13923,7 @@ export const STORIES_PART2: RawStory[] = [
       "vanish": "gözden kaybolmak"
     }
   },
-                {
+                  {
     id: 'detective_moonstone_2',
     title: "The Moonstone - Part 2",
     author: 'Wilkie Collins',
@@ -13993,7 +13993,7 @@ export const STORIES_PART2: RawStory[] = [
       "sacred": "kutsal"
     }
   },
-                {
+                  {
     id: 'detective_circular_staircase_1',
     title: "The Circular Staircase - Part 1",
     author: 'Mary Roberts Rinehart',
@@ -14060,7 +14060,7 @@ export const STORIES_PART2: RawStory[] = [
       "evidence": "kanıt"
     }
   },
-                {
+                  {
     id: 'detective_phantom_motor',
     title: "The Phantom Motor",
     author: 'Jacques Futrelle',
@@ -14133,7 +14133,7 @@ export const STORIES_PART2: RawStory[] = [
       "horizon": "ufuk"
     }
   },
-                {
+                  {
     id: 'detective_woman_in_white_1',
     title: "The Woman in White - Part 1",
     author: 'Wilkie Collins',
@@ -14205,7 +14205,7 @@ export const STORIES_PART2: RawStory[] = [
       "vow": "yemin"
     }
   },
-                {
+                  {
     id: 'detective_woman_in_white_2',
     title: "The Woman in White - Part 2",
     author: 'Wilkie Collins',
@@ -14276,7 +14276,7 @@ export const STORIES_PART2: RawStory[] = [
       "liberate": "özgür bırakmak"
     }
   },
-                {
+                  {
     id: 'detective_yellow_room_1',
     title: "The Mystery of the Yellow Room - Part 1",
     author: 'Gaston Leroux',
@@ -14347,7 +14347,7 @@ export const STORIES_PART2: RawStory[] = [
       "tragedy": "trajedi, acı olay"
     }
   },
-                {
+                  {
     id: 'detective_yellow_room_2',
     title: "The Mystery of the Yellow Room - Part 2",
     author: 'Gaston Leroux',
@@ -14417,7 +14417,7 @@ export const STORIES_PART2: RawStory[] = [
       "confrontation": "yüzleşme"
     }
   },
-                {
+                  {
     id: 'detective_lady_in_black',
     title: "The Perfume of the Lady in Black",
     author: 'Gaston Leroux',
@@ -14488,7 +14488,7 @@ export const STORIES_PART2: RawStory[] = [
       "malice": "kötülük"
     }
   },
-                {
+                  {
     id: 'detective_holmes_too_late',
     title: "Sherlock Holmes Arrives Too Late",
     author: 'Maurice Leblanc',
@@ -14561,7 +14561,7 @@ export const STORIES_PART2: RawStory[] = [
       "billowing": "dalgalanan, kabaran"
     }
   },
-                {
+                  {
     id: 'detective_laker_absconded',
     title: "The Case of Laker, Absconded",
     author: 'Arthur Morrison',
@@ -14633,7 +14633,7 @@ export const STORIES_PART2: RawStory[] = [
       "turmoil": "kargaşa"
     }
   },
-                {
+                  {
     id: 'detective_dublin_mystery',
     title: "The Dublin Mystery",
     author: 'Baroness Orczy',
@@ -14705,7 +14705,7 @@ export const STORIES_PART2: RawStory[] = [
       "redemption": "kurtuluş"
     }
   },
-                {
+                  {
     id: 'detective_crystal_gazer',
     title: "The Crystal Gazer",
     author: 'Jacques Futrelle',
@@ -14776,7 +14776,7 @@ export const STORIES_PART2: RawStory[] = [
       "intervention": "müdahale"
     }
   },
-                {
+                  {
     id: 'detective_moonstone_revelation',
     title: "The Moonstone - The Revelation",
     author: 'Wilkie Collins',
@@ -14848,7 +14848,7 @@ export const STORIES_PART2: RawStory[] = [
       "ensnare": "tuzağa düşürmek"
     }
   },
-                {
+                  {
     id: 'detective_double_life',
     title: "The Double Life",
     author: 'Gaston Leroux',
@@ -14920,7 +14920,7 @@ export const STORIES_PART2: RawStory[] = [
       "absolution": "günahların bağışlanması, günah çıkarma"
     }
   },
-                {
+                  {
     id: 'detective_gold_bug_1',
     title: "The Gold-Bug - Part 1",
     author: 'Edgar Allan Poe',
@@ -14990,7 +14990,7 @@ export const STORIES_PART2: RawStory[] = [
       "unadulterated": "katkısız, saf"
     }
   },
-              {
+                {
     id: 'detective_crooked_man',
     title: "The Adventure of the Crooked Man",
     author: 'Arthur Conan Doyle',
@@ -15059,7 +15059,7 @@ export const STORIES_PART2: RawStory[] = [
       "justice": "adalet"
     }
   },
-              {
+                {
     id: 'detective_naval_treaty',
     title: "The Adventure of the Naval Treaty",
     author: 'Arthur Conan Doyle',
@@ -15132,7 +15132,7 @@ export const STORIES_PART2: RawStory[] = [
       "horizon": "ufuk"
     }
   },
-              {
+                {
     id: 'detective_norwood_builder',
     title: "The Adventure of the Norwood Builder",
     author: 'Arthur Conan Doyle',
@@ -15202,7 +15202,7 @@ export const STORIES_PART2: RawStory[] = [
       "observation": "gözlem"
     }
   },
-              {
+                {
     id: 'detective_three_students',
     title: "The Adventure of the Three Students",
     author: 'Arthur Conan Doyle',
@@ -15270,7 +15270,7 @@ export const STORIES_PART2: RawStory[] = [
       "mercy": "merhamet"
     }
   },
-              {
+                {
     id: 'detective_doom_griffiths',
     title: "The Doom of the Griffiths",
     author: 'Elizabeth Gaskell',
@@ -15342,7 +15342,7 @@ export const STORIES_PART2: RawStory[] = [
       "survivor": "hayatta kalan"
     }
   },
-              {
+                {
     id: 'detective_moonstone_investigation',
     title: "The Moonstone - The Investigation",
     author: 'Wilkie Collins',
@@ -15413,7 +15413,7 @@ export const STORIES_PART2: RawStory[] = [
       "illusion": "hayal"
     }
   },
-              {
+                {
     id: 'detective_woman_white_conspiracy',
     title: "The Woman in White - The Conspiracy",
     author: 'Wilkie Collins',
@@ -15485,7 +15485,7 @@ export const STORIES_PART2: RawStory[] = [
       "ambition": "hırs"
     }
   },
-              {
+                {
     id: 'detective_hansom_cab_2',
     title: "The Mystery of the Hansom Cab - Part 2",
     author: 'Fergus Hume',
@@ -15557,7 +15557,7 @@ export const STORIES_PART2: RawStory[] = [
       "innocent": "masum"
     }
   },
-              {
+                {
     id: 'detective_red_house_1',
     title: "The Red House Mystery - Part 1",
     author: 'A. A. Milne',
@@ -15630,7 +15630,7 @@ export const STORIES_PART2: RawStory[] = [
       "labyrinthine": "labirent gibi"
     }
   },
-              {
+                {
     id: 'detective_red_house_2',
     title: "The Red House Mystery - Part 2",
     author: 'A. A. Milne',
@@ -15703,7 +15703,7 @@ export const STORIES_PART2: RawStory[] = [
       "pretense": "görünüş, bahane"
     }
   },
-          {
+            {
     id: 'history_fall_constantinople',
     title: "The Fall of Constantinople",
     author: 'Byzantine Empire',
@@ -15775,7 +15775,7 @@ export const STORIES_PART2: RawStory[] = [
       "scholar": "bilgin"
     }
   },
-          {
+            {
     id: 'history_french_revolution',
     title: "The French Revolution: Storming the Bastille",
     author: 'French Revolution',
@@ -15847,7 +15847,7 @@ export const STORIES_PART2: RawStory[] = [
       "equality": "eşitlik"
     }
   },
-          {
+            {
     id: 'history_isaac_newton',
     title: "Isaac Newton and the Apple",
     author: 'Isaac Newton',
@@ -15915,7 +15915,7 @@ export const STORIES_PART2: RawStory[] = [
       "legacy": "miras"
     }
   },
-        {
+          {
     id: 'history_industrial_revolution',
     title: "The Industrial Revolution: Steam Power",
     author: 'Industrial Revolution',
@@ -15984,7 +15984,7 @@ export const STORIES_PART2: RawStory[] = [
       "interconnected": "birbirine bağlı"
     }
   },
-        {
+          {
     id: 'history_gettysburg_address',
     title: "Abraham Lincoln and the Gettysburg Address",
     author: 'Abraham Lincoln',
@@ -16052,7 +16052,7 @@ export const STORIES_PART2: RawStory[] = [
       "immortalize": "ölümsüzleştirmek"
     }
   },
-        {
+          {
     id: 'history_eiffel_tower',
     title: "The Building of the Eiffel Tower",
     author: 'Gustave Eiffel',
@@ -16120,7 +16120,7 @@ export const STORIES_PART2: RawStory[] = [
       "ingenuity": "deha"
     }
   },
-        {
+          {
     id: 'history_sinking_titanic',
     title: "The Sinking of the Titanic",
     author: 'Titanic',
@@ -16190,7 +16190,7 @@ export const STORIES_PART2: RawStory[] = [
       "fragility": "kırılganlık"
     }
   },
-      {
+        {
     id: 'history_tutankhamun_tomb',
     title: "The Discovery of Tutankhamun's Tomb",
     author: 'Howard Carter',
@@ -16260,7 +16260,7 @@ export const STORIES_PART2: RawStory[] = [
       "thrive": "gelişmek"
     }
   },
-      {
+        {
     id: 'history_albert_einstein',
     title: "Albert Einstein and the Theory of Relativity",
     author: 'Albert Einstein',
@@ -16333,7 +16333,7 @@ export const STORIES_PART2: RawStory[] = [
       "dynamic": "dinamik"
     }
   },
-      {
+        {
     id: 'history_apollo_11',
     title: "The Space Race: Apollo 11",
     author: 'NASA',
@@ -16403,7 +16403,7 @@ export const STORIES_PART2: RawStory[] = [
       "ambition": "hırs"
     }
   },
-      {
+        {
     id: 'history_marie_curie',
     title: "Marie Curie and the Discovery of Radium",
     author: 'Marie Curie',
@@ -16475,7 +16475,7 @@ export const STORIES_PART2: RawStory[] = [
       "capability": "yetenek"
     }
   },
-      {
+        {
     id: 'history_great_fire_london',
     title: "The Great Fire of London",
     author: 'Great Fire of London',
@@ -16546,7 +16546,7 @@ export const STORIES_PART2: RawStory[] = [
       "optimism": "iyimserlik"
     }
   },
-      {
+        {
     id: 'history_rosetta_stone',
     title: "The Rosetta Stone: Decoding Hieroglyphs",
     author: 'Jean-François Champollion',
@@ -16613,7 +16613,7 @@ export const STORIES_PART2: RawStory[] = [
       "legacy": "miras"
     }
   },
-      {
+        {
     id: 'history_renaissance_florence',
     title: "The Renaissance: Florence Reborn",
     author: 'Renaissance',
@@ -16683,7 +16683,7 @@ export const STORIES_PART2: RawStory[] = [
       "annals": "tarih kayıtları"
     }
   },
-      {
+        {
     id: 'history_enlightenment',
     title: "The Age of Enlightenment",
     author: 'Enlightenment Thinkers',
@@ -16756,7 +16756,7 @@ export const STORIES_PART2: RawStory[] = [
       "legacy": "miras"
     }
   },
-      {
+        {
     id: 'history_berlin_wall',
     title: "The Fall of the Berlin Wall",
     author: 'Cold War',
@@ -16827,7 +16827,7 @@ export const STORIES_PART2: RawStory[] = [
       "endurance": "dayanıklılık"
     }
   },
-      {
+        {
     id: 'history_penicillin_discovery',
     title: "The Discovery of Penicillin",
     author: 'Alexander Fleming',
@@ -16898,7 +16898,7 @@ export const STORIES_PART2: RawStory[] = [
       "persistence": "azim"
     }
   },
-      {
+        {
     id: 'history_declaration_independence',
     title: "The Signing of the Declaration of Independence",
     author: 'Founding Fathers',
@@ -16965,7 +16965,7 @@ export const STORIES_PART2: RawStory[] = [
       "vigilance": "uyanıklık"
     }
   },
-      {
+        {
     id: 'history_code_hammurabi',
     title: "The Code of Hammurabi",
     author: 'Babylon',
@@ -17036,7 +17036,7 @@ export const STORIES_PART2: RawStory[] = [
       "foundation": "temel"
     }
   },
-      {
+        {
     id: 'history_american_civil_war',
     title: "The American Civil War: Emancipation Proclamation",
     author: 'American Civil War',
@@ -17104,7 +17104,7 @@ export const STORIES_PART2: RawStory[] = [
       "irreversible": "geri dönülemez"
     }
   },
-      {
+        {
     id: 'history_printing_revolution',
     title: "The Story of the Printing Revolution",
     author: 'Printing Press',
@@ -17174,7 +17174,7 @@ export const STORIES_PART2: RawStory[] = [
       "ingenuity": "yaratıcılık, deha"
     }
   },
-      {
+        {
     id: 'history_black_death',
     title: "The Black Death: The Plague of Europe",
     author: 'Middle Ages',
@@ -17242,7 +17242,7 @@ export const STORIES_PART2: RawStory[] = [
       "resilience": "direnç, dayanıklılık"
     }
   },
-      {
+        {
     id: 'history_roman_empire',
     title: "The Rise and Fall of the Roman Empire",
     author: 'Roman Empire',
@@ -17314,7 +17314,7 @@ export const STORIES_PART2: RawStory[] = [
       "metamorphosis": "başkalaşım"
     }
   },
-      {
+        {
     id: 'history_library_alexandria',
     title: "The Library of Alexandria",
     author: 'Ancient Egypt',
@@ -17385,7 +17385,7 @@ export const STORIES_PART2: RawStory[] = [
       "annals": "tarihi kayıtlar"
     }
   },
-      {
+        {
     id: 'history_history_writing',
     title: "The History of Writing",
     author: 'Human Civilisation',
@@ -17455,4 +17455,1131 @@ export const STORIES_PART2: RawStory[] = [
       "discourse": "söylem",
       "testament": "kanıt"
     }
-  }];
+  },
+  {
+    id: 'horror_spectre_bridegroom',
+    title: "The Spectre Bridegroom",
+    author: 'Washington Irving',
+    level: 'B1',
+    coverUrl: '/covers/horror_spectre_bridegroom.webp',
+    en: [
+      "The old castle of Baron von Landshort stood high upon a steep cliff overlooking the winding Rhine river in Germany. It was a place of heavy stone towers and dark history, hidden deep within the shadowy forests of Odenwald. The Baron was a man of great pride and ancient blood, known for his love of grand dinners and old family stories. His only child was a beautiful daughter, who grew up in the quiet halls of the castle. She was a gentle soul, educated by nuns and surrounded by the soft light of tapestries and candles. As she blossomed into a young woman, the Baron began to look for a noble husband for her, wanting to join his house with another great family of the region to secure their future and keep the family name strong for many years to come.",
+      "The choice for a husband fell upon a young Count, a brave soldier from a noble family in the south. The two families had agreed on the marriage long ago, although the young people had never met face to face. The Baron was very excited about this alliance, dreaming of the parties and celebrations that would follow the wedding ceremony. He spent his days preparing the castle, ordering his servants to polish every silver cup and clean every dark corner of the great hall. The daughter, however, felt a strange nervousness in her heart. She spent many hours sitting by her high window, watching the river below and thinking about the stranger who was soon to become her husband. She felt as if a heavy shadow was hanging over the castle, though she could not explain why.",
+      "One stormy evening, the wind howled around the stone towers, making the heavy iron doors rattle in their frames. The air was thick with the scent of pine and the coming rain, creating an atmosphere of mystery and unease. The Baron sat by a roaring fire, impatiently waiting for news of the Count’s arrival. He checked his golden pocket watch again and again, his face turning red with annoyance. Outside, the path through the forest was dark and dangerous, filled with deep ruts and sharp rocks. The servants were equally anxious, whispering to each other in the corners of the kitchen about the legends of the Odenwald forest. Everyone felt that this night was different from all the others, as if something terrible or unusual was waiting for the traveler in the deep, dark woods.",
+      "While the Baron sat by the fire, a sudden sound echoed through the courtyard, breaking the silence of the storm. The heavy iron gates creaked open, and a rider appeared in the flickering light of the torches. He was a young man, dressed in military clothing that looked travel-worn and dusty from his long journey through the Odenwald. The servants hurried to the entrance, their hearts beating fast with anticipation. The stranger dismounted from his horse with a weary grace, his cape dark with rain and mud. He looked pale, but his eyes burned with a strange, intense light that made the servants step back in hesitation. He had finally arrived to claim his bride, though the dark forest had clearly tested his courage and strength before he reached the safety of the ancient castle walls.",
+      "The Baron rushed to greet his future son-in-law, his face shining with happiness and pride. He welcomed the young Count with open arms, ignoring the man's tired appearance and the strange coldness that seemed to surround him. The Baron led the visitor into the warm, brightly lit hall, where the finest wine was poured into silver goblets. The young Count sat at the table, his movements slow and deliberate, as if he were deep in thought. He spoke very little, and his voice was low, echoing strangely against the high stone walls. The daughter watched him from her chair, feeling a shiver run down her back. She did not know why, but she felt that the man before her was not the husband she had imagined in her secret dreams.",
+      "During the meal, the Count shared tales of his journey, but he never mentioned the dangers of the Odenwald. He spoke instead of dark battles and the fleeting nature of life, his words sounding like a funeral song. The Baron, distracted by his own excitement, barely listened to these gloomy stories, busy instead with planning the grand wedding. He laughed loudly at his own jokes, while the other guests looked nervously at the mysterious guest. The storm outside grew worse, with thunder shaking the very foundations of the castle. Despite the cheerfulness in the room, a heavy silence settled over the table every time the Count stopped speaking. It was as if the guest had brought the freezing breath of the forest inside, cooling the hearts of everyone present at the Baron’s table.",
+      "The feast continued, but the atmosphere remained heavy with an unexplained dread. The young Count sat motionless, his face pale and his gaze fixed upon the shadows dancing on the wall. He did not touch the roasted meats or the rich, spiced wine offered by the servants. When the Baron asked him about his family estate, the Count replied with words that were both formal and distant, as if he were speaking from a great distance. His voice lacked the warmth of a living man, possessing a hollow quality that made the candles flicker in their holders. The daughter tried to engage him in polite conversation, but his short, mysterious answers only deepened her unease. She watched his hands, which were thin and cold, resting perfectly still upon the dark oak wood of the table.",
+      "As the night deepened, the Baron became increasingly eager to finish the wedding preparations, ignoring the strange behavior of his guest. He boasted about the history of his ancestors and the ancient walls of the castle, which had stood for centuries against wars and storms. The Count listened with a grim smile that never reached his dark, brooding eyes. Occasionally, he would turn his head toward the window as if listening to a sound only he could hear in the howling wind. The servants, feeling a growing terror, began to whisper among themselves in the dark corners of the hall. They noticed that no warmth seemed to emanate from the stranger's body, and even the heavy velvet curtains near him appeared to shiver when he drew a slow, deliberate breath.",
+      "The daughter, caught between her father’s excitement and her own rising fear, felt trapped in a nightmare she could not escape. She glanced at the clock, watching the heavy pendulum swing back and forth, counting the moments until she would be forced to pledge her life to this silent, chilling man. She wondered if the long journey through the forest had changed him, or if he had always been a spirit of sorrow and gloom. The laughter of the Baron echoed loudly, sounding forced and hollow against the backdrop of the storm. Every time the lightning flashed, the Count’s features looked sharper, more unnatural, and deeply etched with a sadness that felt centuries old. It was clear that this night was destined to end in ways that no one in the castle could have ever imagined.",
+      "The feast reached a sudden, silent conclusion as the guest stood up abruptly from his place. His movements were fluid and strange, lacking the heavy weight of a tired human body. He turned to the Baron and bowed with a formal grace that seemed to belong to another century. He stated, in a voice as cold as winter stone, that he had a solemn promise to fulfill before the morning light could break. The daughter felt her breath catch in her throat as she looked at him, noticing how his dark cloak seemed to swallow the dim candlelight around him. He did not ask for permission but simply moved toward the great hall door with a steady, haunting speed. The Baron, surprised by this quick departure, insisted that the wedding must continue tomorrow without any further delay or hesitation.",
+      "Without answering, the stranger walked out into the dark, stormy night, leaving the entire household in a state of absolute confusion. The wind howled against the castle walls like a grieving spirit, making the heavy iron chains of the drawbridge rattle in the darkness. The daughter stood frozen near the fireplace, watching the embers glow with a fading, dying red light. She felt a deep, chilling dread settle into her bones, for she knew that the man she had met tonight was not like any living person she had ever encountered before. His absence left the hall feeling emptier and colder than it had been when he was present. She wondered if he was truly a man of flesh and blood or merely a shadow brought to life by the storm.",
+      "The Baron, trying to ignore the strange tension in the air, laughed nervously and called for more wine to calm his guests. He loudly proclaimed that the Count was simply a man of many eccentric habits and deep, private thoughts. However, the servants remained gathered near the shadows, their eyes wide with genuine terror as they whispered about the coldness that still lingered in the space where the visitor had been sitting. They told stories of ancient curses and lost travelers who had wandered too far into the woods during the darkest hours of the night. Meanwhile, the daughter quietly retreated to her chamber, her mind filled with dark visions of what might be waiting for her when the sun finally rose above the distant, mist-covered mountain peaks.",
+      "The young woman sat in her quiet chamber, but sleep refused to visit her weary eyes. The wind continued to howl around the stone towers, sounding like a chorus of voices from another world. She thought of the mysterious stranger and his pale, sorrowful face. His eyes had burned with a strange, internal light that made her soul shiver. Every creak of the floorboards or movement of the heavy curtains seemed to be a sign of his return. She wrapped her shawl tighter around her shoulders, trying to find warmth, but the air in the room felt unnaturally cold. The silence of the house was heavy and oppressive, as if the very walls were holding their breath in anticipation of some terrible event that was soon to unfold.",
+      "Suddenly, a soft, rhythmic tapping sounded against her windowpane. Her heart skipped a beat, for it was impossible for anyone to reach her high tower without being seen. She stood up slowly, her legs trembling like dry leaves in an autumn storm. With hesitant steps, she approached the window and pushed the heavy wooden frame open. A blast of freezing air rushed into the room, extinguishing the flickering candles and leaving her in total darkness. In the pale glow of the moon, she saw a dark figure standing upon the narrow stone ledge outside. It was the young Count, his features even more ghostlike than before, his dark eyes fixed upon hers with an expression of intense, silent longing that seemed to reach deep into her heart.",
+      "He did not speak, but his hand reached out, cold and white as polished marble, to take hers. She felt a shock of icy electricity pass through her skin at his touch. He gestured for her to follow him, and she found herself moving as if under a powerful spell. Her fear began to melt away, replaced by a strange, magnetic pull toward the unknown. She climbed onto the ledge, ignoring the dizzying drop to the courtyard below. The night air whipped around her, but she felt only the presence of the man who had promised to return for her. They stepped together into the misty darkness, vanishing from the view of the sleeping castle, bound by a mysterious vow that existed beyond the limits of life and death.",
+      "The Baron and his noble guests were gathered in the great hall, enjoying a final toast to the happy couple. The heavy wooden doors suddenly groaned as they swung open, letting in a chilling gust of night air. The laughter ceased instantly, replaced by a tense and uncomfortable silence that filled the room. The young Count entered, his clothes covered in the damp mist of the mountains. He walked with a slow, ghostly rhythm that made the guests hold their breath. His face remained as pale as a winter moon, and his dark eyes scanned the room with a distant, hollow expression. The Baron, though surprised by the sudden arrival and the strange appearance of his future son-in-law, quickly regained his composure and stepped forward to welcome the visitor with a formal, grand gesture.",
+      "The bride, however, remained motionless in her chair, her eyes fixed upon the figure standing before them. She felt a deep, chilling cold radiate from the Count, as if he brought the very essence of the graveyard into the warmth of the hall. He stood in the center of the room, not moving to greet anyone, nor showing any signs of typical human emotion. The music had stopped, and the dancers stood frozen, caught in a spell of dread and confusion. The Count looked toward the bride, and a slow, sorrowful smile touched his lips, which seemed to carry a message of finality. He spoke no words, yet his presence alone felt like an heavy burden upon the hearts of everyone present. The atmosphere shifted from festive celebration to a profound sense of mourning.",
+      "The Baron finally broke the silence, his voice trembling slightly as he asked about the journey and the strange delay. The Count did not answer him, but instead turned his gaze toward the shadows flickering on the walls. It was then that the truth began to reveal itself in the eyes of the guests who recognized the markings of a spirit. The reality of the situation became clear when they noticed he left no footprints upon the floor, nor did he make a sound as he stood among them. A deep fear settled over the hall, and the warmth of the fire felt like nothing against the icy air surrounding the mysterious guest. Everyone watched in paralyzed terror, waiting to see what would happen next as the phantom bridegroom lingered in their midst.",
+      "The Baron watched in confusion, but the young Count did not speak. Instead, he reached out and took the bride's cold, trembling hand. At that moment, the lights in the great hall flickered and died, leaving everyone in total darkness. The silence was heavy and thick with fear, as if time itself had stopped. When the candles were finally lit again by the trembling servants, the center of the room was empty. The mysterious Count had vanished as quickly as a shadow in the moonlight. The bride sat alone, staring at the empty space where her strange visitor had stood. A deep feeling of sadness filled the hall, replacing the joy of the wedding feast. Everyone was shocked, and the Baron stood frozen, unable to understand the impossible sight that had just occurred before their eyes.",
+      "A strange tension hung in the air long after the visitor left. The guests whispered among themselves, wondering if they had truly seen a ghost from the grave. The Baron called for his servants to search the castle, but they found no sign of the young nobleman anywhere. The bride remained quiet, her spirit seemingly distant, as if she had left with the phantom guest. As the night turned into morning, the truth became even more mysterious. The legend of the spectre bridegroom spread quickly throughout the valley, becoming a story that would be told for generations. People avoided the road near the cemetery, fearing they might meet the same cold figure on a dark and misty night. The castle grew quiet, and the festive songs were never heard again in the halls.",
+      "Years later, the story of the bride and the spectral visitor became a local mystery that no one could solve. The bride eventually married, but she always kept a small portrait of the mysterious man in her private room. She never forgot the icy touch of his hand or the sorrow in his pale eyes. Some said he was a lost soul searching for a love he could not keep, while others believed he was merely a dream born from grief and mountain mist. The Baron eventually passed away, leaving his castle to history and the echoes of the past. Even today, on cold autumn nights, local villagers say they can hear the faint sound of ghostly horses galloping near the old churchyard. The legend remains, forever trapped in the heavy, lingering silence of the mountain air."
+    ],
+    tr: [
+      "Baron von Landshort'un eski kalesi, Almanya'daki dolambaçlı Ren nehrine tepeden bakan sarp bir kayalığın üzerinde yükseliyordu. Burası, Odenwald'ın gölgeli ormanlarının derinliklerinde gizlenmiş, ağır taş kulelere ve karanlık bir tarihe sahip bir yerdi. Baron, gösterişli yemeklere ve eski aile hikayelerine olan tutkusuyla tanınan, büyük gurur ve köklü bir soya sahip bir adamdı. Tek çocuğu, kalenin sessiz koridorlarında büyüyen güzel bir kızdı. O, rahibeler tarafından eğitilmiş, duvar halılarının ve mumların yumuşak ışığıyla çevrelenmiş nazik bir ruhtu. Genç bir kadına dönüştüğünde Baron, geleceğini güvence altına almak ve aile adını uzun yıllar güçlü tutmak amacıyla, kızını bölgenin başka bir büyük ailesiyle birleştirmek isteyerek ona soylu bir koca aramaya başladı.",
+      "Koca seçimi, güneydeki soylu bir aileden gelen cesur bir asker olan genç bir Kont'tan yana yapıldı. Gençler daha önce hiç yüz yüze gelmemiş olsalar da, aileler çok önceden evlilik konusunda anlaşmaya varmıştı. Baron, düğün törenini izleyecek partilerin ve kutlamaların hayalini kurarak bu ittifak konusunda çok heyecanlıydı. Günlerini kaleyi hazırlayarak, hizmetkarlarına her gümüş kupayı parlatmalarını ve büyük salonun her karanlık köşesini temizlemelerini emrederek geçirdi. Ancak kızı, kalbinde tuhaf bir huzursuzluk hissediyordu. Uzun saatler boyunca yüksek penceresinin kenarında oturuyor, aşağıdaki nehre bakıyor ve yakında kocası olacak yabancıyı düşünüyordu. Nedenini açıklayamasa da, kalenin üzerinde ağır bir gölge varmış gibi hissediyordu.",
+      "Fırtınalı bir akşamda, rüzgar taş kulelerin etrafında uğuldayarak ağır demir kapıların çerçevelerinde tıkırdamasına neden oluyordu. Hava, çam kokusu ve yaklaşan yağmurla ağırlaşmış, gizemli ve huzursuz bir atmosfer yaratmıştı. Baron, alevli bir ateşin yanında oturmuş, sabırsızlıkla Kont'un gelişine dair haber bekliyordu. Altın cep saatini tekrar tekrar kontrol ediyor, yüzü sinirden kızarıyordu. Dışarıda, ormanın içinden geçen yol karanlık ve tehlikeliydi; derin çukurlarla ve keskin kayalarla doluydu. Hizmetkarlar da mutfağın köşelerinde birbirlerine Odenwald ormanının efsanelerini fısıldayarak aynı derecede endişeleniyorlardı. Herkes bu gecenin diğerlerinden farklı olduğunu, sanki derin ve karanlık ormanlarda gezgin için korkunç ya da sıra dışı bir şeyin beklediğini hissediyordu.",
+      "Baron şöminenin başında otururken, avluda aniden bir ses yankılandı ve fırtınanın sessizliğini bozdu. Ağır demir kapılar gıcırdayarak açıldı ve meşalelerin titrek ışığında bir atlı belirdi. Odenwald boyunca yaptığı uzun yolculuktan yorgun düşmüş, tozlu askeri kıyafetler giymiş genç bir adamdı. Hizmetkarlar büyük bir heyecanla giriş kapısına koştular. Yabancı, üzerinde yağmur ve çamurla kaplı peleriniyle atından yorgun bir zarafetle indi. Solgundu ama gözleri, hizmetkarların tereddütle geri çekilmesine neden olan tuhaf, yoğun bir ışıkla parlıyordu. Uzun zamandır beklenen düğün için nihayet gelmişti, ancak karanlık orman, kalenin güvenli duvarlarına ulaşmadan önce onun cesaretini ve gücünü belli ki fazlasıyla sınamıştı.",
+      "Baron, gelecekteki damadını karşılamak için koştu; yüzü mutluluk ve gururla parlıyordu. Genç Kontu, yorgun görünümünü ve etrafını saran tuhaf soğukluğu görmezden gelerek kollarını açarak karşıladı. Baron, ziyaretçiyi en iyi şarapların gümüş kadehlere doldurulduğu sıcak ve aydınlık salona götürdü. Genç Kont, sanki derin düşüncelere dalmış gibi yavaş ve ölçülü hareketlerle masaya oturdu. Çok az konuştu ve sesi, yüksek taş duvarlarda tuhaf bir şekilde yankılanarak alçak çıkıyordu. Kız, oturduğu yerden onu izlerken sırtından aşağı bir ürperti geçtiğini hissetti. Nedenini bilmiyordu ama karşısındaki adamın gizli hayallerinde canlandırdığı koca olmadığını hissediyordu.",
+      "Yemek sırasında Kont yolculuğuna dair hikayeler anlattı ama Odenwald'ın tehlikelerinden hiç bahsetmedi. Bunun yerine karanlık savaşlardan ve hayatın geçiciliğinden söz etti; kelimeleri bir cenaze şarkısı gibi duyuluyordu. Kendi heyecanına kapılan Baron, bu karamsar hikayeleri zar zor dinliyor, bunun yerine görkemli düğünü planlamakla meşgul oluyordu. Baron kendi şakalarına yüksek sesle gülerken, diğer misafirler gizemli misafire gergin bir şekilde bakıyorlardı. Dışarıdaki fırtına, gök gürültüsü kalenin temelini bile sarsacak kadar şiddetlendi. Odadaki neşeye rağmen, Kont her sustuğunda masanın üzerine ağır bir sessizlik çöküyordu. Sanki misafir, ormanın dondurucu nefesini içeri taşımış ve Baron'un masasındaki herkesin kalbini soğutmuştu.",
+      "Ziyafet devam ediyordu ancak ortam açıklanamaz bir korkuyla ağırlaşmıştı. Genç Kont hareketsiz oturuyor, yüzü solgun, bakışları ise duvarda dans eden gölgelere kilitlenmişti. Hizmetkarların sunduğu kızarmış etlere veya zengin baharatlı şaraba dokunmadı. Baron ona aile malikanesini sorduğunda, Kont sanki çok uzaklardan konuşuyormuş gibi hem resmi hem de mesafeli kelimelerle cevap verdi. Sesi, canlı bir insanın sıcaklığından yoksundu ve mumların şamdanlarında titremesine neden olan boş bir tınıya sahipti. Kızı onunla nazik bir sohbete girmeye çalıştı ancak Kont'un kısa ve gizemli cevapları genç kızın huzursuzluğunu daha da artırdı. Kız, masanın koyu meşe ağacının üzerinde tamamen hareketsiz duran, ince ve soğuk ellerini izliyordu.",
+      "Gece derinleşirken Baron, misafirinin tuhaf davranışlarını görmezden gelerek düğün hazırlıklarını bitirme konusunda giderek daha hevesli hale geldi. Atalarının tarihinden ve savaşlara ve fırtınalara karşı yüzyıllardır ayakta duran kalenin kadim surlarından övünçle bahsetti. Kont, karanlık ve düşünceli gözlerine asla ulaşmayan ciddi bir gülümsemeyle onu dinledi. Ara sıra, sanki rüzgarın uğultusunda sadece kendisinin duyabildiği bir sesi dinliyormuş gibi başını pencereye doğru çeviriyordu. Artan bir dehşet hisseden hizmetkarlar, salonun karanlık köşelerinde kendi aralarında fısıldaşmaya başladılar. Yabancının bedeninden hiçbir sıcaklık yayılmadığını ve yanındaki ağır kadife perdelerin bile o yavaş, kontrollü bir nefes aldığında titrediğini fark ettiler.",
+      "Babasının heyecanı ile kendi artan korkusu arasında sıkışan genç kız, kurtulamadığı bir kabusun içine hapsolmuş gibi hissediyordu. Ağır sarkaçlı saatin ileri geri sallanışını izleyerek, hayatını bu sessiz ve ürpertici adama adamaya zorlanacağı anları sayıyordu. Ormandaki uzun yolculuğun onu değiştirip değiştirmediğini ya da hep bir hüzün ve kasvet ruhu olup olmadığını merak etti. Baron'un kahkahaları, fırtınanın arka planında zorlama ve boş bir tınıyla yüksek sesle yankılanıyordu. Şimşek her çaktığında, Kont'un yüz hatları daha keskin, daha doğal olmayan ve yüzyıllar öncesinden gelen bir hüzünle kazınmış gibi görünüyordu. Bu gecenin, kaledeki hiç kimsenin hayal bile edemeyeceği şekillerde sona ereceği açıktı.",
+      "Ziyafet, konuğun yerinden aniden kalkmasıyla sessiz ve ani bir sona ulaştı. Hareketleri akıcı ve garipti, yorgun bir insan bedeninin ağır yükünden yoksundu. Baron'a döndü ve başka bir yüzyıla aitmiş gibi görünen resmi bir zarafetle eğildi. Kış taşı kadar soğuk bir sesle, sabah ışığı doğmadan önce yerine getirmesi gereken ciddi bir sözü olduğunu belirtti. Kızı, ona baktığında nefesinin boğazında düğümlendiğini hissetti; koyu renk pelerinini çevreleyen loş mum ışığını nasıl yuttuğunu fark etti. İzin istemedi, sadece kararlı ve ürkütücü bir hızla büyük salonun kapısına doğru ilerledi. Bu ani ayrılış karşısında şaşıran Baron, düğünün yarın hiçbir gecikme veya tereddüt olmaksızın devam etmesi konusunda ısrarcı oldu.",
+      "Yabancı cevap vermeden karanlık ve fırtınalı geceye doğru yürüdü ve tüm hane halkını mutlak bir kafa karışıklığı içinde bıraktı. Rüzgar, yas tutan bir ruh gibi kale duvarlarına karşı uluyor, asma köprünün ağır demir zincirlerinin karanlıkta şıngırdamasına neden oluyordu. Kızı şöminenin yanında donup kalmış, közlerin sönen, ölen kırmızı bir ışıkla parlayışını izliyordu. Kemiklerine işleyen derin ve ürpertici bir korku hissetti, çünkü bu gece tanıştığı adamın daha önce karşılaştığı hiçbir canlı insana benzemediğini biliyordu. Yokluğu, salonu o oradayken olduğundan daha boş ve soğuk hissettiriyordu. Onun gerçekten etten ve kemikten bir insan mı yoksa sadece fırtınanın hayata döndürdüğü bir gölge mi olduğunu merak etti.",
+      "Havada asılı duran tuhaf gerilimi görmezden gelmeye çalışan Baron, sinirle güldü ve konuklarını sakinleştirmek için daha fazla şarap istedi. Kont'un sadece pek çok tuhaf alışkanlığı olan ve derin, özel düşüncelere sahip bir adam olduğunu yüksek sesle ilan etti. Ancak hizmetkarlar gölgelerin yakınında toplanmış halde kaldılar; ziyaretçinin oturduğu yerde hala asılı duran soğukluk hakkında fısıldaşırken gözleri gerçek bir dehşetle açılmıştı. Gecenin en karanlık saatlerinde ormanların derinliklerine kadar çok uzağa giden eski lanetler ve kayıp gezginlerin hikayelerini anlattılar. Bu sırada kızı sessizce odasına çekildi; zihni, güneş nihayet uzak, sisli dağ tepelerinin üzerinde yükseldiğinde kendisini nelerin bekliyor olabileceğine dair karanlık görüntülerle doluydu.",
+      "Genç kadın sessiz odasında oturuyordu ama uyku yorgun gözlerine uğramayı reddediyordu. Rüzgar taş kulelerin etrafında ulumaya devam ediyordu ve bu ses başka bir dünyadan gelen seslerden oluşan bir koro gibi geliyordu. Gizemli yabancıyı ve onun solgun, kederli yüzünü düşündü. Gözleri ruhunu titreten tuhaf, içsel bir ışıkla yanmıştı. Döşeme tahtalarının her gıcırtısı ya da ağır perdelerin her hareketi, onun dönüşünün bir işareti gibi görünüyordu. Şalını omuzlarına daha sıkı sardı, ısınmaya çalışıyordu ama odadaki hava doğal olmayacak kadar soğuktu. Evin sessizliği ağır ve baskıcıydı; sanki duvarların kendisi, çok yakında gerçekleşecek korkunç bir olayın beklentisiyle nefesini tutuyordu.",
+      "Aniden, pencere camına hafif, ritmik bir vurma sesi duyuldu. Kalbi bir an durdu, çünkü kimsenin görülmeden yüksek kulesine ulaşması imkansızdı. Yavaşça ayağa kalktı, bacakları sonbahar fırtınasındaki kuru yapraklar gibi titriyordu. Tereddütlü adımlarla pencereye yaklaştı ve ağır ahşap çerçeveyi dışarı doğru itti. İçeri hücum eden dondurucu hava, titreyen mumları söndürdü ve onu tamamen karanlıkta bıraktı. Ayın soluk ışığında, dışarıdaki dar taş çıkıntının üzerinde duran karanlık bir figür gördü. Gelen genç Kont'tu; yüz hatları eskisinden bile daha hayaletimsiydi ve koyu renkli gözleri, kalbinin derinliklerine işleyen yoğun, sessiz bir özlem ifadesiyle onunkilere sabitlenmişti.",
+      "Konuşmadı ama eli, cilalı mermer kadar soğuk ve beyaz, onunkini tutmak için uzandı. Dokunuşuyla cildinden buz gibi bir elektrik akımı geçtiğini hissetti. Onu takip etmesi için işaret etti ve kadın, sanki güçlü bir büyünün etkisindeymiş gibi hareket ettiğini fark etti. Korkusu erimeye başladı ve yerini bilinmeze doğru çeken tuhaf, manyetik bir çekime bıraktı. Aşağıdaki avluya olan baş döndürücü düşüşü görmezden gelerek çıkıntıya tırmandı. Gece havası etrafında kırbaç gibi dönüyordu ama o sadece kendisi için geri geleceğine söz veren adamın varlığını hissediyordu. İkisi birlikte sisli karanlığın içine adım attılar; yaşam ve ölüm sınırlarının ötesinde var olan gizemli bir yeminle birbirlerine bağlanmış halde, uyuyan kalenin görüş alanından kayboldular.",
+      "Baron ve soylu misafirleri büyük salonda toplanmış, mutlu çiftin onuruna son bir kadeh kaldırıyorlardı. Ağır ahşap kapılar aniden gıcırdayarak açıldı ve içeriye buz gibi bir gece esintisi doldu. Kahkahalar anında kesildi, yerini odanın içini kaplayan gergin ve rahatsız edici bir sessizliğe bıraktı. Genç Kont, kıyafetleri dağların nemli sisiyle kaplanmış bir halde içeri girdi. Konukların nefeslerini tutmasına neden olan yavaş, hayaletimsi bir ritimle yürüyordu. Yüzü kış ayı kadar solgundu ve karanlık gözleri, odada uzak, boş bir ifadeyle geziniyordu. Baron, ani gelişe ve gelecekteki damadının tuhaf görünüşüne şaşırsa da, kısa sürede soğukkanlılığını yeniden kazandı ve ziyaretçiyi resmi, büyük bir jestle karşılamak için öne çıktı.",
+      "Bununla birlikte gelin, koltuğunda kıpırdamadan duruyor, gözlerini önlerinde duran figürden ayırmıyordu. Sanki mezarlığın özünü salonun sıcaklığına taşımış gibi, Kont'tan yayılan derin, dondurucu bir soğukluk hissetti. Odanın ortasında duruyor, kimseyi selamlamak için hareket etmiyor veya tipik insani duygu belirtileri göstermiyordu. Müzik durmuş, dans edenler dehşet ve şaşkınlık büyüsüne kapılmış halde donup kalmışlardı. Kont geline doğru baktı ve dudaklarına, sanki bir son mesajı taşıyormuş gibi yavaş, kederli bir gülümseme yayıldı. Hiçbir şey söylemedi, yine de sadece varlığı, orada bulunan herkesin kalbi üzerinde ağır bir yük gibi hissediliyordu. Atmosfer, şenlikli bir kutlamadan derin bir yas duygusuna dönüştü.",
+      "Baron, yolculuğu ve tuhaf gecikmeyi sorduğunda sesi hafifçe titreyerek sessizliği bozdu. Kont ona cevap vermedi, bunun yerine bakışlarını duvarlarda titreyen gölgelere çevirdi. İşte o zaman, bir ruhun izlerini fark eden konukların gözlerinde gerçekler ortaya çıkmaya başladı. Zeminde hiçbir ayak izi bırakmadığını ve aralarında dururken hiç ses çıkarmadığını fark ettiklerinde durumun gerçeği netleşti. Salona derin bir korku çöktü ve ateşin sıcaklığı, gizemli misafiri çevreleyen buz gibi havanın yanında hiçbir şey ifade etmiyordu. Herkes felç olmuş bir dehşet içinde, hayalet damat aralarında oyalanırken bir sonraki adımın ne olacağını görmek için bekledi.",
+      "Baron şaşkınlıkla izledi, ancak genç Kont konuşmadı. Bunun yerine, gelinin soğuk ve titreyen elini tuttu. O anda, büyük salondaki ışıklar titredi ve söndü, herkesi tam bir karanlıkta bıraktı. Sessizlik, sanki zamanın kendisi durmuş gibi korkuyla ağır ve yoğundu. Mumlar titreyen hizmetkarlar tarafından tekrar yakıldığında, odanın merkezi boştu. Gizemli Kont, ay ışığındaki bir gölge kadar hızlı bir şekilde ortadan kaybolmuştu. Gelin, garip ziyaretçisinin durduğu boşluğa bakarak yalnız başına oturuyordu. Düğün ziyafetinin neşesinin yerini derin bir üzüntü duygusu aldı. Herkes şok olmuştu ve Baron, gözlerinin önünde az önce gerçekleşen bu imkansız manzarayı anlamlandıramadan donup kalmıştı.",
+      "Ziyaretçi gittikten sonra havada tuhaf bir gerginlik asılı kaldı. Konuklar kendi aralarında fısıldaşarak, gerçekten mezardan gelen bir hayalet görüp görmediklerini merak ettiler. Baron, hizmetkarlarına kaleyi aramalarını emretti ama hiçbir yerde genç soylunun izini bulamadılar. Gelin sessiz kaldı, ruhu sanki hayalet misafirle birlikte gitmiş gibi uzaktı. Gece sabaha dönerken, gerçek daha da gizemli bir hal aldı. Hayalet damat efsanesi vadiye hızla yayıldı ve nesiller boyu anlatılacak bir hikayeye dönüştü. İnsanlar, karanlık ve sisli bir gecede aynı soğuk figürle karşılaşmaktan korkarak mezarlık yakınındaki yoldan kaçındılar. Kale sessizliğe büründü ve şenlik şarkıları artık salonlarda duyulmadı.",
+      "Yıllar sonra, gelin ve hayalet ziyaretçinin hikayesi kimsenin çözemediği yerel bir gizeme dönüştü. Gelin sonunda evlendi, ancak her zaman gizemli adamın küçük bir portresini özel odasında sakladı. Elinin buz gibi dokunuşunu ya da solgun gözlerindeki hüznü asla unutmadı. Bazıları onun elde edemediği bir aşkı arayan kayıp bir ruh olduğunu söylerken, diğerleri onun sadece keder ve dağ sisinden doğan bir rüya olduğuna inanıyordu. Baron sonunda vefat etti, kalesini tarihe ve geçmişin yankılarına bıraktı. Bugün bile, soğuk sonbahar gecelerinde, yerel köylüler eski kilise mezarlığının yakınında hayalet atların nal seslerini duyabildiklerini söylerler. Efsane, dağ havasının ağır, kalıcı sessizliğinde sonsuza dek hapsolmuş bir şekilde varlığını korumaya devam ediyor."
+    ],
+    words: {
+      "cliff": "uçurum",
+      "alliance": "ittifak",
+      "tapestry": "duvar halısı",
+      "rattle": "tıkırdamak",
+      "unease": "huzursuzluk",
+      "rut": "tekerlek izi",
+      "anticipation": "beklenti",
+      "dismount": "atından inmek",
+      "goblet": "kadeh",
+      "deliberate": "ağırbaşlı, ölçülü",
+      "fleeting": "geçici",
+      "foundation": "temel",
+      "dread": "dehşet",
+      "hollow": "boş",
+      "brooding": "düşünceli ve karanlık",
+      "emanate": "yayılmak",
+      "pendulum": "sarkaç",
+      "etched": "kazınmış",
+      "abruptly": "aniden",
+      "solemn": "ciddi",
+      "grieving": "yas tutan",
+      "embers": "közler",
+      "eccentric": "tuhaf",
+      "lingered": "asılı kalmak",
+      "chamber": "oda",
+      "weary": "yorgun",
+      "oppressive": "baskıcı",
+      "trembling": "titreyen",
+      "extinguishing": "söndürerek",
+      "ledge": "çıkıntı",
+      "composure": "soğukkanlılık",
+      "radiate": "yaymak",
+      "finality": "sonluluk",
+      "mourning": "yas",
+      "paralyzed": "felç olmuş",
+      "spectre": "hayalet",
+      "vanished": "gözden kayboldu",
+      "lingering": "uzayıp giden, kalıcı",
+      "grief": "keder, yas",
+      "galloping": "dörtnala koşma",
+      "phantom": "hayalet, düşsel varlık"
+    }
+  }
+,
+  {
+    id: 'horror_tapestried_chamber',
+    title: "The Tapestried Chamber",
+    author: 'Sir Walter Scott',
+    level: 'B1',
+    coverUrl: '/covers/horror_tapestried_chamber.webp',
+    en: [
+      "General Browne had spent many years fighting in the American war. After a long time away from his home, he decided to travel through the north of England. He hoped to visit his old friend, Lord Woodville, whose family home was famous for its history and beauty. The general was a brave man who did not believe in stories about ghosts or magic. He felt that courage and logic could solve any mystery. When he arrived at the grand estate, the sight of the massive stone walls and the dark woods surrounding them made a deep impression on his mind. He looked forward to a warm welcome from his companion, feeling tired after his long journey through the cold and rainy landscape. The castle stood silent under the grey sky, waiting for his arrival.",
+      "Lord Woodville met him at the gate with a happy smile. They had not seen each other for many years, and there was much to talk about. The castle was an ancient place, filled with portraits of ancestors and dark corners that seemed to hold secrets from the past. As they walked through the large stone halls, the sound of their footsteps echoed against the walls. The general noticed that the house was very quiet, almost as if it were holding its breath. Despite the comfort of the fire and the food offered to him, the general felt a strange sense of unease. He told himself that it was only his weariness, but the shadow of the tall towers seemed to stretch over him in a way that felt heavy.",
+      "Dinner was served in a room decorated with rich wood and old paintings. They spoke about the war and the many people they had known in their younger years. Lord Woodville was a kind host, but the general noticed that he sometimes looked at the walls as if he were remembering something difficult. Late in the evening, the house became very still. The servants had all gone to their rooms, leaving the two friends alone in the large, flickering room. The fire in the fireplace began to fade, casting long, jumping shadows on the floor. General Browne felt the weight of his long day, and he realized that he was truly ready for rest. He waited for his friend to show him to his room for the night.",
+      "Lord Woodville stood up and looked at his friend with a serious expression. He apologized for the lack of rooms available in the castle, explaining that a large family gathering had left the house completely full. Every guest room was occupied by visiting relatives except for one specific chamber in the oldest part of the castle. This room was known as the Tapestried Chamber because of the heavy, ancient fabric hanging on its walls. It had not been used for many years, but the servants had prepared it as best they could for the general. Lord Woodville hesitated for a moment, as if he wanted to say something more, but he simply told the general that it was a comfortable place to rest after a long day of travel.",
+      "General Browne laughed softly and dismissed any concern about his accommodation. He was a man who had faced the dangers of war and the harsh conditions of life in foreign lands, so he felt no fear of sleeping in an old, dusty bedroom. He reassured his friend that he was far too tired to worry about the appearance of his room. The general told Lord Woodville that he could sleep soundly in a barn if necessary, provided he had a dry place and a soft bed. He felt confident that he would wake up refreshed for their conversation the next morning. His host looked relieved to hear this, though he remained quiet for a short moment while looking at the flickering embers of the fire in the large stone hearth.",
+      "The two friends walked together through the long, dark passages of the castle. The air in the hallways felt cold and still, and the only light came from the small candles they carried. Finally, they reached a heavy wooden door that looked much older than the others. Lord Woodville opened it to reveal a spacious room filled with shadows. The walls were covered with large, faded tapestries that depicted hunting scenes and ancient battles. The general looked around with interest, admiring the historical value of the decorations. He thanked his friend for his kindness, and Lord Woodville left him alone to prepare for bed. The general was left in silence, surrounded by the quiet walls of the chamber, as he started to take off his heavy military coat.",
+      "The general stood alone in the center of the room, looking at the faded tapestries that covered the stone walls. These ancient pieces of fabric were decorated with strange, life-like figures that seemed to follow him with their eyes as he moved. The heavy curtains made the room feel smaller and much colder than the rest of the house. He set his candle down on a wooden table, noticing how the shadows danced nervously in the corners. Although the room was grand and held a certain historical majesty, he could not help but feel a sudden, unexplained chill in the air. He tried to ignore this feeling, telling himself that such old castles always possessed a heavy, lingering atmosphere that could easily trick a tired man's mind at midnight.",
+      "He walked towards the large bed, which was draped in velvet, and sat down to remove his boots. The floorboards creaked loudly under his weight, the sound echoing through the empty space like a warning. He looked at the fireplace, where the dying flames cast a dim, orange light across the room, barely reaching the dark ceiling above. The silence of the castle was absolute, broken only by the distant whistling of the wind outside the thick windows. He was a brave soldier who had seen many battles, yet he found it difficult to settle his thoughts in this strange environment. The general felt that he was being watched by something hidden behind the walls, but he dismissed the thought as a silly product of his imagination.",
+      "Eventually, he crawled between the cold, crisp sheets, pulling the heavy blankets up to his chin to keep warm. He felt exhausted, yet his eyes remained open as he stared at the top of the bed. The figures on the tapestries now appeared even more realistic in the dim light, almost as if they were waiting for him to fall asleep. He turned on his side and tried to focus on his plans for the next day to distract himself from the odd mood of the room. Despite the unsettling stillness of the chamber, his body was finally surrendering to the fatigue of his long journey. He whispered a soft prayer, closed his eyes, and allowed his consciousness to drift into a deep and heavy slumber.",
+      "The general did not sleep for long. He suddenly woke up with a start, feeling as if someone was standing right beside his bed. The fire in the hearth had died out completely, leaving the room in total, heavy darkness. He sat up quickly, his heart beating fast against his ribs, and reached for the candle on the bedside table. However, the candle was not where he had left it. A strange, icy air filled the room, making him shiver despite the thick blankets covering him. He felt an overwhelming sense of dread, as if the room had become a tomb. He strained his eyes in the pitch blackness, waiting for his vision to adjust, but he saw nothing except for the outline of the tall, ancient windows that let in no light from the outside world.",
+      "Then, he heard a soft, dragging sound on the floorboards. It sounded like the heavy silk of a dress moving slowly across the wooden floor. The sound stopped near the foot of the bed, and the air grew even colder, turning his breath into a small cloud of mist. The general was a man of logic and courage, but this unseen presence defied all reason. He tried to speak, to ask who was there, but his voice was caught in his throat. The room felt crowded, as if invisible eyes were looking down at him from the shadows. He reached out with his hand, hoping to touch something solid, but he touched only the freezing, empty air. The atmosphere was thick with a silent, haunting history that he could no longer ignore or explain away.",
+      "Suddenly, a pale and ghastly figure began to appear in the center of the room. It was not a solid body, but more like a shadow made of smoke and moonlight. The face of the woman was twisted with a look of extreme pain and ancient misery, her eyes hollow pits of sorrow that seemed to reach into the general's very soul. She did not move towards him, but her presence radiated a deep, cold sadness that felt like a physical weight. The general felt his skin crawl as the figure looked at him with an intensity that burned through his confusion. He could not look away, caught in the grip of a terrifying vision that belonged to a different time. He realized with horror that he was trapped in a nightmare that was very real.",
+      "The general watched in complete silence as the figure stood before him. Her face was truly horrible to behold, showing the features of a human, yet it was clearly not alive. The skin was as pale as marble and stretched tightly over sharp, pointed bones. Her eyes were deep, dark holes that showed only eternal suffering. She wore a long, tattered dress that seemed to have been expensive once, but now hung like decaying rags upon her frail frame. The general felt his courage disappearing into the freezing night air. He wanted to call out for help, but his mouth refused to open, and his tongue felt heavy, like a piece of lead in his dry throat. He was paralyzed, caught in a moment of history that he did not understand, feeling the ancient, heavy weight of her presence in the room.",
+      "The woman slowly turned her head, and her hollow eyes locked onto the general. Even though she did not speak, he could feel a wave of intense, silent sorrow hitting him like a physical blow. He understood that she was a spirit of the past, someone who had suffered a terrible, hidden crime within these very walls. Her hand, thin and ghost-like, lifted slightly as if she were pointing at something in the distance. The general tried to look where she directed his gaze, but his vision remained blurred by the supernatural energy of the room. He realized that this was not a simple dream. It was a dark, haunting reality. The silence of the night was broken only by the sound of his own fast breathing as he stared into the face of a tragedy that had never found its peace.",
+      "The freezing cold became almost impossible to bear, pressing against his chest like heavy iron. He could see the floor beneath her feet, but she did not seem to stand upon it; she hovered slightly above the dark, polished wood. The general gripped the bed sheets with trembling fingers, trying to hold onto his sanity while the ghostly woman remained motionless. He felt as if his heart might stop at any moment from the sheer terror of the encounter. He closed his eyes tightly for a second, hoping that when he opened them, the phantom would be gone, but the icy atmosphere remained. When he looked again, she was still there, a frozen statue of agony, waiting for someone to listen to the silent scream of her soul. He was a prisoner in his own bedroom, trapped by a memory that refused to die.",
+      "The spirit began to move with a strange, gliding motion that defied the laws of nature. She did not walk, but seemed to float closer to the bed, her presence cooling the air until the general could see his own breath misting in the dim light. The faded tapestries on the walls seemed to tremble as she passed by them, as if the ancient figures woven into the fabric were disturbed by her presence. Her tattered robes swayed without a wind, moving in a rhythm that felt like a slow, mournful heartbeat. The general, though a man of war and logic, found his mind reeling from the sight. He tried to turn his head away, yet he was bound by an invisible force, compelled to watch the sorrowful tragedy unfold before his wide, unblinking eyes in the dark room.",
+      "She stopped near the edge of the bed and leaned forward, her face just inches away from his own. The general noticed for the first time a small, rusted ring upon her finger, which looked like it had been forced there by cruel hands many centuries ago. Her expression changed from pure agony to something more desperate, as if she were desperately seeking a witness to her secret suffering. Her mouth opened, but no sound emerged; only a dry, rattling sigh that sounded like dead leaves blowing across a cold stone floor. He felt a profound sense of pity replace his fear for a fleeting moment, realizing that this spirit had been waiting through the ages for someone with the courage to face the truth that had remained hidden within the mansion for so long.",
+      "The general felt a sudden, sharp pain in his chest as her gaze seemed to pierce through his very soul, searching for understanding. The light from the dying embers in the fireplace flickered, casting long, dancing shadows that seemed to join the ghostly visitor in her silent dance of misery. He realized then that she was not there to harm him, but to act as a bridge between the living world and the dark events of the past. Her hand rose again, this time touching the cold air near his own, and the general felt an intense vibration pass through him. It was a sensation of deep history and forgotten pain that drained his remaining strength. He could no longer fight the exhaustion, his senses beginning to fade into the blackness of the haunted night.",
+      "When the general finally opened his eyes, the morning sun was streaming through the heavy curtains, turning the once-frightening room into a bright, ordinary chamber. He felt as if he had experienced a very long and exhausting dream, yet the memory of the cold breath and the tragic spirit remained vivid in his mind. He sat up, his body feeling stiff and tired as if he had been running a long race. The tapestries on the walls were still and silent, no longer trembling with the strange energy of the night before. He looked around the room, expecting to see some sign of the woman, but there was only the quiet furniture and the dust dancing in the morning light. He felt a deep need to leave this place and speak with his host immediately about what he had seen.",
+      "He dressed quickly, his hands shaking slightly as he remembered the details of the ghost’s face. When he walked down the grand staircase, he found his host waiting for him with an eager expression. The lord of the house stood up, his face pale and his eyes searching the general’s own for an answer. He asked if the general had spent a comfortable night in the tapestried chamber. The general paused, choosing his words carefully. He knew that the truth would be difficult to explain, but he was a man of honor who could not lie. He looked directly at his host and confessed that he had seen something truly unusual during the dark hours, something that had changed his view of the world forever.",
+      "The host turned deathly white and leaned against the wall for support, realizing that the family secret had finally been revealed. He whispered that the general was the first person in many generations to see the lady and survive to tell the tale. They spoke for hours about the ancient crime that had trapped the spirit in that room. The general finally understood that he had been chosen to witness the pain of the past so that the story would not be forgotten. As he prepared to leave the old estate, he felt a strange sense of peace. The haunting was over, and the spirit had finally found someone to share her heavy burden. He departed with the knowledge that some secrets are meant to be kept, but others must eventually find the light."
+    ],
+    tr: [
+      "General Browne, Amerikan savaşında uzun yıllar geçirmişti. Evinden uzun bir süre uzak kaldıktan sonra, İngiltere'nin kuzeyinde seyahat etmeye karar verdi. Tarihi ve güzelliğiyle ünlü aile evine sahip olan eski dostu Lord Woodville'i ziyaret etmeyi umuyordu. General, hayaletler veya büyü ile ilgili hikayelere inanmayan cesur bir adamdı. Cesaret ve mantığın her türlü gizemi çözebileceğine inanırdı. Büyük malikaneye vardığında, devasa taş duvarların ve onları çevreleyen karanlık ormanların görüntüsü zihninde derin bir iz bıraktı. Soğuk ve yağmurlu manzara boyunca yaptığı uzun yolculuğun ardından yorgun düşmüş bir halde, dostundan gelecek sıcak bir karşılamayı dört gözle bekliyordu. Kale, gri gökyüzünün altında sessizce onun gelişini bekliyordu.",
+      "Lord Woodville onu kapıda mutlu bir gülümsemeyle karşıladı. Yıllardır birbirlerini görmemişlerdi ve konuşacak çok şey vardı. Kale, ataların portreleri ve geçmişin sırlarını saklıyor gibi görünen karanlık köşelerle dolu, kadim bir yerdi. Büyük taş salonlardan geçerken, ayak sesleri duvarlarda yankılanıyordu. General, evin sanki nefesini tutuyormuş gibi çok sessiz olduğunu fark etti. Ateşin sıcaklığına ve kendisine sunulan yemeğe rağmen, general garip bir huzursuzluk hissetti. Kendi kendine bunun sadece yorgunluk olduğunu söyledi, ancak yüksek kulelerin gölgesi üzerinde ağır bir şekilde uzanıyor gibiydi.",
+      "Akşam yemeği, zengin ahşap süslemeler ve eski tablolarla dekore edilmiş bir odada servis edildi. Savaştan ve gençlik yıllarında tanıdıkları birçok insandan bahsettiler. Lord Woodville nazik bir ev sahibiydi, ancak general onun bazen zor bir şeyi hatırlıyormuş gibi duvarlara baktığını fark etti. Gecenin ilerleyen saatlerinde ev çok sakinleşti. Hizmetkarlar odalarına çekilmiş, iki dostu büyük ve ışıkları titreyen odada yalnız bırakmışlardı. Şöminedeki ateş sönmeye başladıkça zeminde uzun ve zıplayan gölgeler oluşturuyordu. General Browne uzun günün ağırlığını hissetti ve gerçekten dinlenmeye hazır olduğunu anladı. Arkadaşının onu geceyi geçireceği odasına götürmesini bekledi.",
+      "Lord Woodville ayağa kalktı ve arkadaşına ciddi bir ifadeyle baktı. Şatodaki boş oda eksikliği için özür diledi ve büyük bir aile toplantısının evi tamamen doldurduğunu açıkladı. Şatonun en eski kısmındaki özel bir oda hariç tüm misafir odaları gelen akrabalar tarafından doluydu. Bu oda, duvarlarında asılı olan ağır ve antika kumaşlardan dolayı İşlemeli Oda olarak biliniyordu. Uzun yıllardır kullanılmamıştı ancak hizmetkarlar generali için orayı ellerinden geldiğince hazırlamışlardı. Lord Woodville, sanki daha fazla bir şey söylemek istiyormuş gibi bir an duraksadı ama sadece generale, uzun bir yolculuktan sonra dinlenmek için rahat bir yer olduğunu söyledi.",
+      "General Browne yumuşakça güldü ve konaklamasıyla ilgili herhangi bir endişeyi önemsemedi. Savaşın tehlikeleriyle ve yabancı topraklardaki zorlu yaşam koşullarıyla yüzleşmiş bir adamdı, bu yüzden eski ve tozlu bir yatak odasında uyumaktan hiç korkmuyordu. Arkadaşına, odasının görünüşü hakkında endişelenmek için çok yorgun olduğuna dair güvence verdi. General, Lord Woodville'e kuru bir yer ve yumuşak bir yatak olduğu sürece gerekirse bir ahırda bile rahatça uyuyabileceğini söyledi. Ertesi sabahki sohbetleri için zinde bir şekilde uyanacağından emindi. Ev sahibi, büyük taş şöminedeki ateşin titreyen közlerine bakarken bir an sessiz kalsa da, bunu duyduğuna rahatlamış görünüyordu.",
+      "İki arkadaş şatonun uzun ve karanlık koridorlarından birlikte yürüdüler. Koridorlardaki hava soğuk ve hareketsizdi, tek ışık ise taşıdıkları küçük mumlardan geliyordu. Sonunda diğerlerinden çok daha eski görünen ağır ahşap bir kapıya ulaştılar. Lord Woodville, gölgelerle dolu geniş bir odayı göstermek için kapıyı açtı. Duvarlar, av sahnelerini ve antik savaşları tasvir eden büyük, solmuş duvar halılarıyla kaplıydı. General, dekorasyonların tarihi değerine hayran kalarak etrafına ilgiyle baktı. Arkadaşına nezaketi için teşekkür etti ve Lord Woodville onu yatağa hazırlanması için yalnız bıraktı. General, ağır askeri ceketini çıkarmaya başlarken odanın sessiz duvarları arasında tek başına kaldı.",
+      "General, odanın ortasında tek başına durmuş, taş duvarları kaplayan solgun duvar halılarına bakıyordu. Bu eski kumaş parçaları, o hareket ettikçe sanki gözleriyle onu takip ediyormuş gibi görünen garip ve canlı figürlerle süslenmişti. Ağır perdeler, odanın evin geri kalanından çok daha küçük ve soğuk hissedilmesine neden oluyordu. Mumunu ahşap masanın üzerine bıraktı ve gölgelerin köşelerde nasıl gergin bir şekilde dans ettiğini fark etti. Oda görkemli olmasına ve belli bir tarihi ihtişam barındırmasına rağmen, havadaki ani ve açıklanamaz ürpertiyi hissetmekten kendini alamadı. Bu hissi görmezden gelmeye çalıştı; kendine, böyle eski kalelerin gece yarısı yorgun bir insanın zihnini kolayca kandırabilecek ağır ve kalıcı bir atmosfere sahip olduğunu hatırlattı.",
+      "Kadife ile kaplanmış büyük yatağa doğru yürüdü ve çizmelerini çıkarmak için oturdu. Zemin tahtaları ağırlığı altında yüksek sesle gıcırdadı, ses boşlukta bir uyarı gibi yankılandı. Sönen alevlerin odanın içine soluk, turuncu bir ışık saçtığı ve yukarıdaki karanlık tavana zar zor ulaştığı şömineye baktı. Kalenin sessizliği mutlaktı, sadece kalın pencerelerin dışındaki rüzgarın uzak ıslığıyla bozuluyordu. Pek çok savaş görmüş cesur bir askerdi ancak bu garip ortamda düşüncelerini sakinleştirmekte zorlanıyordu. General, duvarların arkasına saklanmış bir şey tarafından izlendiğini hissetti ama bu düşünceyi hayal gücünün aptalca bir ürünü olarak reddetti.",
+      "Sonunda soğuk ve sert çarşafların arasına girdi, ısınmak için ağır battaniyeleri çenesine kadar çekti. Çok yorgundu ama yatağın tepesine dik dik bakarken gözleri açık kaldı. Duvar halılarındaki figürler loş ışıkta şimdi daha da gerçekçi görünüyordu, sanki uykuya dalmasını bekliyorlar gibiydi. Yan tarafına döndü ve odanın garip ruh halinden dikkatini uzaklaştırmak için ertesi günkü planlarına odaklanmaya çalıştı. Odanın huzursuz edici sessizliğine rağmen vücudu nihayet uzun yolculuğunun yorgunluğuna teslim oluyordu. Hafifçe bir dua fısıldadı, gözlerini kapattı ve bilincinin derin ve ağır bir uykuya dalmasına izin verdi.",
+      "General uzun süre uyuyamadı. Aniden yatağının hemen yanında biri duruyormuş gibi hissederek irkilerek uyandı. Şöminedeki ateş tamamen sönmüştü ve odayı tamamen ağır bir karanlığa terk etmişti. Hızla doğruldu, kalbi kaburgalarına hızla vuruyordu ve başucundaki masada duran muma uzandı. Ancak mum bıraktığı yerde değildi. Odayı garip, buz gibi bir hava doldurdu ve üzerini örten kalın battaniyelere rağmen titremesine neden oldu. Oda bir mezara dönüşmüş gibi, tarif edilemez bir dehşet duygusu hissetti. Dış dünyadan ışık almayan uzun, eski pencerelerin silüeti dışında hiçbir şey görmeden, gözlerini kapkaranlıkta görüşünün alışması için zorladı.",
+      "Ardından, yer döşemelerinde yumuşak, sürüklenen bir ses duydu. Bu ses, ağır bir ipek elbisenin tahta zemin üzerinde yavaşça hareket etmesine benziyordu. Ses yatağın ayak ucunda durdu ve hava daha da soğuyarak nefesini küçük bir sis bulutuna dönüştürdü. General mantıklı ve cesur bir adamdı ancak bu görülmeyen varlık tüm mantığa meydan okuyordu. Konuşmaya, orada kimin olduğunu sormaya çalıştı ancak sesi boğazında düğümlendi. Oda, sanki görünmez gözler gölgelerin içinden ona bakıyormuş gibi kalabalık hissediliyordu. Katı bir şeye dokunabilmek umuduyla elini uzattı ama sadece dondurucu ve boş havaya değdi. Atmosfer, artık görmezden gelemeyeceği veya açıklayamayacağı sessiz ve unutulmaz bir tarihle doluydu.",
+      "Aniden, odanın merkezinde soluk ve dehşet verici bir figür belirmeye başladı. Bu katı bir vücut değil, duman ve ay ışığından yapılmış bir gölge gibiydi. Kadının yüzü aşırı acı ve kadim bir mutsuzlukla çarpılmıştı; gözleri, generalin ruhuna işleyen derin keder çukurlarıydı. Ona doğru hareket etmedi ama varlığı fiziksel bir ağırlık gibi hissettiren derin, soğuk bir hüzün yaydı. Figür ona şaşkınlığını delecek bir yoğunlukla baktığında generalin tüyleri diken diken oldu. Başka bir zamana ait bu korkunç görüntünün pençesinde, gözlerini ondan ayıramıyordu. Dehşet içinde, çok gerçek olan bir kabusun içinde kapana kısıldığını fark etti.",
+      "General, figür karşısında dururken tam bir sessizlik içinde izledi. Yüzü görmeye değer korkunçluktaydı; bir insanın özelliklerini taşıyor olsa da kesinlikle canlı değildi. Derisi mermer kadar solgundu ve keskin, sivri kemiklerin üzerinde gergin bir şekilde duruyordu. Gözleri, yalnızca sonsuz acıyı gösteren derin, karanlık çukurlardı. Bir zamanlar pahalı olduğu belli olan ancak şimdi çürümüş paçavralar gibi zayıf vücuduna sarkan uzun, yırtık pırtık bir elbise giyiyordu. General cesaretinin buz gibi gece havasına karıştığını hissetti. Yardım için bağırmak istedi ama ağzı açılmayı reddetti ve dili kuru boğazında bir parça kurşun gibi ağırlaştı. Odanın içindeki varlığının kadim, ağır ağırlığını hissederek, anlamadığı bir tarihin içinde hapsolmuş bir şekilde hareketsiz kalmıştı.",
+      "Kadın yavaşça başını çevirdi ve çukur gözleri generale kilitlendi. Konuşmasa bile, yoğun, sessiz bir keder dalgasının onu fiziksel bir darbe gibi etkilediğini hissedebiliyordu. Onun, bu duvarlar içinde korkunç, gizli bir suç yaşamış geçmişin bir ruhu olduğunu anladı. İnce ve hayalet benzeri eli, sanki uzaktaki bir şeyi işaret ediyormuş gibi hafifçe kalktı. General, onun bakışlarını yönlendirdiği yere bakmaya çalıştı ama görüşü odanın doğaüstü enerjisiyle bulanıklaştı. Bunun basit bir rüya olmadığını anladı. Bu karanlık, musallat bir gerçeklikti. Gecenin sessizliği, huzurunu asla bulamamış bir trajedinin yüzüne bakarken kendi hızlı nefes alışverişinin sesiyle bozuluyordu.",
+      "Dondurucu soğuk, ağır bir demir gibi göğsüne bastırarak katlanılması neredeyse imkansız hale geldi. Ayaklarının altındaki zemini görebiliyordu ama üzerinde duruyor gibi görünmüyordu; koyu renkli cilalı ahşabın üzerinde hafifçe süzülüyordu. General, hayaletimsi kadın hareketsiz kalırken akıl sağlığını korumaya çalışarak çarşafları titreyen parmaklarıyla sıktı. Karşılaşmanın saf dehşeti yüzünden kalbinin her an durabileceğini hissetti. Gözlerini bir anlığına sıkıca kapattı, açtığında hayaletin gitmiş olacağını umuyordu ama buz gibi atmosfer olduğu gibi kaldı. Tekrar baktığında hala oradaydı; ruhunun sessiz çığlığını dinleyecek birini bekleyen donmuş bir acı heykeliydi. Ölmek bilmeyen bir anı tarafından tuzağa düşürülmüş, kendi yatak odasında bir mahkumdu.",
+      "Ruh, doğa kanunlarına meydan okuyan garip, süzülür gibi bir hareketle ilerlemeye başladı. Yürümüyor, yatağa doğru süzülüyor gibi görünüyordu; varlığı, odadaki havayı generalin kendi nefesinin loş ışıkta buğulanışını görebileceği kadar soğutmuştu. Duvarlardaki solmuş duvar halıları o yanından geçerken titriyor gibiydi, sanki kumaşa işlenmiş kadim figürler onun varlığından rahatsız olmuştu. Rüzgar olmamasına rağmen yırtık pırtık cübbeleri, yavaş ve kederli bir kalp atışı gibi ritmik bir şekilde dalgalanıyordu. Savaş ve mantık adamı olan general, gördüğü manzara karşısında aklını yitirecek gibi oldu. Başını başka yöne çevirmeye çalıştı ancak görünmez bir güç tarafından bağlı tutulduğu için, karanlık odada geniş, kırpmadığı gözleriyle bu hüzünlü trajedinin gözler önüne serilmesini izlemeye mecbur bırakıldı.",
+      "Yatağın kenarında durdu ve eğilerek yüzünü generalin yüzüne sadece birkaç santim yaklaştırdı. General, ilk defa parmağında yüzyıllar önce acımasız eller tarafından zorla takılmış gibi görünen paslı küçük bir yüzük olduğunu fark etti. İfadesi saf bir ıstıraptan daha çaresiz bir şeye dönüştü, sanki gizli acısına tanıklık edecek birini umutsuzca arıyordu. Ağzı açıldı ancak hiçbir ses çıkmadı; sadece soğuk bir taş zeminde esen kuru yaprakların çıkardığı sese benzeyen, kurumuş, hırıltılı bir iç çekiş duyuldu. Korkusunun yerini kısa bir anlığına derin bir acıma duygusu aldı; bu ruhun, konakta uzun süredir saklı kalan gerçekle yüzleşecek cesarete sahip birini çağlar boyunca beklediğini anladı.",
+      "General, bakışları ruhunun derinliklerine nüfuz ederek anlayış arıyormuş gibi hissettiğinde göğsünde ani, keskin bir acı duydu. Şöminedeki sönmekte olan közlerin ışığı titredi, hayalet ziyaretçiye sessiz sefalet dansında eşlik eden uzun, dans eden gölgeler oluşturdu. O an onun kendisine zarar vermeye değil, yaşayan dünya ile geçmişin karanlık olayları arasında bir köprü görevi görmeye geldiğini anladı. Eli tekrar kalktı, bu sefer kendisininkine yakın soğuk havaya dokundu ve general içinden geçen yoğun bir titreşim hissetti. Bu, kalan gücünü tüketen derin bir tarih ve unutulmuş acı hissiyatıydı. Yorgunlukla artık savaşamıyordu ve duyuları, lanetli gecenin karanlığı içinde yavaş yavaş sönmeye başlıyordu.",
+      "General nihayet gözlerini açtığında, sabah güneşi ağır perdelerin arasından süzülüyor ve bir zamanlar korkutucu olan odayı aydınlık, sıradan bir mekana dönüştürüyordu. Çok uzun ve yorucu bir rüya görmüş gibi hissediyordu ancak soğuk nefesin ve trajik ruhun hatırası zihninde hala canlıydı. Doğruldu, sanki uzun bir yarış koşmuş gibi bedeni sertleşmiş ve yorulmuştu. Duvarlardaki duvar halıları hareketsiz ve sessizdi, artık bir önceki gecenin tuhaf enerjisiyle titremiyorlardı. Odaya bakındı, kadından herhangi bir iz görmeyi bekledi ancak sadece sessiz mobilyalar ve sabah ışığında dans eden tozlar vardı. Bu yerden ayrılmak ve gördükleri hakkında ev sahibiyle hemen konuşmak için derin bir ihtiyaç duydu.",
+      "Hızla giyindi, hayaletin yüzünün detaylarını hatırlarken elleri hafifçe titriyordu. Büyük merdivenlerden aşağı indiğinde, ev sahibini hevesli bir ifadeyle onu beklerken buldu. Evin lordu ayağa kalktı, yüzü bembeyazdı ve gözleri cevabı bulmak için generalinkileri tarıyordu. Generalin duvar halılı odada rahat bir gece geçirip geçirmediğini sordu. General duraksadı, kelimelerini dikkatlice seçti. Gerçeği açıklamanın zor olacağını biliyordu ancak yalan söyleyemeyecek kadar onurlu bir adamdı. Doğrudan ev sahibine baktı ve karanlık saatlerde gerçekten alışılmadık bir şey, dünyayla ilgili görüşünü sonsuza dek değiştiren bir şey gördüğünü itiraf etti.",
+      "Ev sahibi ölümcül bir şekilde sarardı ve aile sırrının nihayet açığa çıktığını fark ederek destek almak için duvara yaslandı. Generalin, hanımefendiyi görüp de anlatacak kadar hayatta kalan nesillerdir ilk kişi olduğunu fısıldadı. Ruhu o odaya hapseden kadim suç hakkında saatlerce konuştular. General, geçmişin acısına tanıklık etmesi için seçildiğini ve böylece hikayenin unutulmayacağını nihayet anladı. Eski malikaneden ayrılmaya hazırlanırken tuhaf bir huzur hissetti. Musallat bitmişti ve ruh, ağır yükünü paylaşacak birini sonunda bulmuştu. Bazı sırların saklanması, diğerlerinin ise sonunda ışığı bulması gerektiğini bilerek oradan ayrıldı."
+    ],
+    words: {
+      "ancestor": "ata",
+      "courage": "cesaret",
+      "estate": "malikane",
+      "flicker": "titremek (ışık veya alev)",
+      "landscape": "manzara",
+      "unease": "huzursuzluk",
+      "accommodation": "konaklama",
+      "hesitate": "duraksamak",
+      "tapestry": "duvar halısı",
+      "hearth": "şömine tabanı",
+      "reassure": "güvence vermek",
+      "spacious": "geniş",
+      "majesty": "ihtişam",
+      "lingering": "kalıcı, gitmeyen",
+      "creak": "gıcırdamak",
+      "fatigue": "yorgunluk",
+      "slumber": "uyku",
+      "dread": "dehşet",
+      "mist": "sis",
+      "ghastly": "dehşet verici",
+      "hollow": "çukur, boş",
+      "intensity": "yoğunluk",
+      "decaying": "çürüyen",
+      "paralyzed": "felç olmuş",
+      "supernatural": "doğaüstü",
+      "haunting": "musallat olan",
+      "agony": "ıstırap",
+      "phantom": "hayalet",
+      "gliding": "süzülme",
+      "mournful": "kederli",
+      "ember": "köz",
+      "vibration": "titreşim",
+      "stiff": "katı, sert",
+      "ordinary": "sıradan",
+      "eager": "istekli, hevesli",
+      "confess": "itiraf etmek",
+      "generations": "nesiller",
+      "burden": "yük"
+    }
+  }
+,
+  {
+    id: 'horror_haunted_house',
+    title: "The Haunted and the Haunters",
+    author: 'Edward Bulwer-Lytton',
+    level: 'B1',
+    coverUrl: '/covers/horror_haunted_house.webp',
+    en: [
+      "I heard a strange story about a house in London that nobody wanted to live in. People said it was cursed and that anyone who tried to stay there for the night would face terrible terrors. I did not believe these wild rumors. I am a man of science and logic, so I decided to see the house for myself. I wrote to the owner and asked for permission to spend a night in the mysterious building. He was surprised by my request but quickly agreed, telling me that he had not visited the place for years. He warned me that many had tried before and failed to stay until the morning light. I packed my bags, took my dog for company, and walked through the dark streets toward the silent, empty house, feeling both curious and determined to uncover the truth.",
+      "When I arrived at the address, the house looked cold and unwelcoming. Its windows were like dark, empty eyes staring at the street, and the garden was full of tall, dead weeds. I pushed the heavy front door, which made a loud, scratching noise as it opened. The air inside felt thick and cold, smelling of dust and old secrets. My dog walked close to my legs, growling softly at the shadows in the corners. I lit my candle and looked around the large, empty hallway. The wallpaper was peeling off like dry skin, and the floorboards moved under my feet with heavy groans. It was exactly the kind of place where people imagined ghosts, but I kept telling myself that it was just an old building showing its age and neglect.",
+      "I walked slowly through the ground floor, checking the rooms one by one. The furniture was covered in thick white sheets, looking like ghosts standing in the dark. There was a strange feeling that someone else was watching me from behind the walls. I tried to ignore this feeling, focusing instead on the practical state of the house. I set up my small bed in the library, a room with many old, dusty books that looked like they had not been touched for decades. The silence was absolute, heavier than any silence I had ever known. I sat down to read, waiting for the night to pass. I wanted to see if the legends were true or if the human imagination was just playing tricks in the dark, lonely corners of this forgotten property.",
+      "As the clock struck midnight, the absolute silence was suddenly broken by a sound that made my skin cold. It started as a soft, rhythmic tapping on the floorboards, almost like someone walking with heavy boots in the room above me. My dog, usually brave, began to whimper and hid under my bed, refusing to come out despite my calm commands. I stood up and picked up my candle, its flame dancing nervously in the drafty room. I felt a sudden drop in temperature, as if I had walked into a freezer. Every logical part of my mind told me that the building was old and the sounds were just the house settling, but my instincts shouted that something unnatural was happening. I stood still in the center of the library, listening intently to the floor above, where the heavy, slow footsteps continued their pacing.",
+      "Deciding to confront the source of the noise, I grabbed my lamp and made my way to the staircase. The wooden steps groaned loudly under my weight, echoing through the empty, cavernous house like a signal to someone waiting in the darkness. As I climbed higher, the air became so thick with dust and a metallic scent that it was difficult to breathe. The cold seemed to deepen, freezing the breath in my lungs. When I reached the top landing, I saw a long, narrow hallway that stretched out before me like a tunnel leading to nowhere. The door at the very end of the hall stood slightly open, revealing only deep, impenetrable shadow. I felt an invisible pull towards that room, an urge that my rational mind fought against with every ounce of my willpower.",
+      "I took a deep breath and walked down the hallway, my heart pounding against my ribs like a trapped bird. Every detail in the hallway seemed to blur, and for a moment, I felt as if the walls were closing in on me. I reached the door and pushed it open, expecting to find an empty room, but instead, I was met with a scene that stopped my blood from flowing. The room was perfectly furnished, unlike the others, and a large mirror hung on the far wall. As I stepped inside, the light from my lamp caught the glass, and I saw a reflection that was not my own. A tall, pale man stood behind me in the mirror, his eyes burning with an ancient, dark intelligence. I spun around quickly, but there was nobody there, only the empty, silent air.",
+      "I stood frozen in the middle of the room, my heart racing as I stared at the empty space where the man had been. The reflection in the mirror had been so clear, showing a tall figure with sharp, cruel features. I checked the corners and peered behind the heavy curtains, yet the room remained perfectly silent and unoccupied. A strange, metallic smell filled the air, making me feel slightly dizzy. I realized that my lamp was flickering violently, as if a strong wind was blowing through the closed windows. The sense of being watched became overwhelming, pressing against my skin like a heavy physical weight. I whispered into the dark, challenging the invisible presence to show itself, but only my own trembling voice answered back in the cold, dusty gloom of that forgotten mansion.",
+      "Suddenly, a sharp, cold wind swept through the chamber, extinguishing my lamp instantly. I was left in total darkness, my senses alert for any sound or movement. I quickly reached into my pocket to find matches, but my hands were shaking so much that I dropped the box on the wooden floor. I knelt down to search for them, feeling the smooth, icy surface of the wood under my fingertips. As I fumbled in the dark, I heard a low, soft laugh echoing from the corner of the room. It sounded hollow and mocking, vibrating through the very boards I touched. I felt a sudden, sharp pressure on my shoulder, as if an invisible hand had gripped me with great force, forcing me to remain still while my heart raced.",
+      "I struggled to stand up, fighting against the unseen force that held me tightly in place. The atmosphere in the room shifted, turning from cold to a suffocating, unnatural heat. The scent of sulfur became so strong that I had to cover my mouth with my jacket to avoid choking. I grabbed a chair to steady myself, but the object seemed to move away from my grasp as if it were alive. I finally managed to light a match, the tiny flame casting long, dancing shadows against the peeling wallpaper. The room appeared transformed; the antique furniture seemed to twist into strange, distorted shapes. I felt a surge of fear, yet a stubborn curiosity drove me to remain and face whatever ancient power hid within these dark, whispering walls.",
+      "I stood up, holding the tiny match high to see the room better. The furniture looked different now, like strange wooden monsters waiting in the shadows. Suddenly, a bright light appeared near the mirror, although no one was standing there. It was a soft, pale glow that seemed to come from inside the glass itself. I stepped closer, my legs feeling heavy and weak. The air around the mirror felt thick, as if I were moving through water rather than air. I knew that I was looking at something that did not belong to our world. My breathing was fast and shallow, and I felt a deep sense of dread. The silence was not empty; it was full of hidden energy that pressed against my ears. I knew then that the ghost was not just an image, but a powerful, ancient force watching me.",
+      "A pale shape slowly began to form in the center of the room. It was not the man I had seen before, but a swirling cloud of grey mist. The mist moved with a purpose, circling around the space where I stood. I felt my courage slipping away, but I refused to run. I looked at the floor and noticed the shadows were stretching towards the mist, as if they were trying to reach it. The coldness returned, biting at my skin and making my teeth chatter loudly. I reached out a hand, but the mist suddenly shot towards the ceiling like smoke from a fire. It made a sound like a thousand tiny voices whispering all at once. I tried to focus my mind, repeating to myself that this was only a trick of the old, dying building and my own tired brain.",
+      "Then, the room changed again. The floorboards seemed to shift under my feet, and the walls began to vibrate with a low, humming sound. I realized that the house itself was alive, trapped in a cycle of suffering that had lasted for centuries. A book fell from a nearby shelf, its pages turning rapidly in the still air. I picked it up, feeling a surge of electricity run through my fingers. The words inside were written in a language I did not recognize, yet I understood the warning they contained. Something was approaching from the shadows, something much stronger than the mist. I held my light tightly, preparing myself for the final confrontation. The darkness seemed to pull back, revealing a figure standing at the doorway, its eyes glowing with a cold, pale light that promised no mercy at all.",
+      "The figure at the doorway moved forward with a slow and heavy grace that made the air feel thin. I recognized the man from the letter I had received, the one who lived in the house during his secret experiments long ago. His face was a mask of cold pride, yet his eyes showed a deep, burning hunger for things that men should never touch. He did not speak, but his presence was a loud command that forced me to step back against the cold stone wall. I held my candle high, watching the flame flicker wildly, as if it were afraid of the shadows surrounding this man. He seemed to pull the darkness toward him like a heavy coat, and the light in his eyes grew sharper, turning the very atmosphere into a sharp, freezing trap that paralyzed my muscles.",
+      "I fought against the growing pressure in my mind, trying to keep my thoughts clear and my heart steady. I told myself that he was only a man, even if his spirit was filled with dark, forbidden knowledge. However, every time I tried to move, I felt an invisible wall of force pushing me down. The man lifted a hand, and the floorboards began to bend and groan under the weight of his invisible power. He was not just a spirit; he was a master of the forces that kept this house in its miserable state. The room felt like a small, sinking boat in the middle of a black ocean, and I was losing my control over reality. My vision blurred as the edges of the room began to dissolve into a dark and formless void.",
+      "Suddenly, I reached into my pocket and touched the cold, hard surface of the iron charm I had brought with me. It was a small item, but it felt like a mountain of solid truth in this world of illusions. The man saw my movement and his face twisted into a look of real anger for the first time. He reached out to stop me, but the charm seemed to hum with a strange, protective energy that pushed his shadows aside. I pulled it out, holding it up like a sword against the darkness. The glow in his eyes dimmed, and he staggered back as if I had struck him with a physical blow. The silence returned, but this time it was different; the heavy dread began to lift, and the house groaned in relief.",
+      "I looked at the strange man standing before me and realized he was not fully present in the room. His physical form appeared thin, almost like a shadow cast against the wall, and I understood that his power came from a source outside of our normal world. I stepped closer, feeling a surge of sudden courage, and asked him about his past experiments and the secrets he had hidden within these walls for so many years. He stared back at me with eyes that were ancient and empty, reflecting the long centuries he had spent trapped in a state between life and death. He tried to speak, but his voice was only the sound of dry leaves blowing across a cold floor, carrying no warmth or human emotion. The truth of his tragic and wicked life became clear to me in that frozen moment.",
+      "The man pointed toward a hidden panel in the wooden floor, his hand trembling as if he were fighting an invisible chain. I realized then that he was a prisoner of his own inventions, unable to move on until someone destroyed the mechanical tools he had created to achieve his immortal goals. I knelt down and began to lift the heavy, rotting wood, uncovering a dark space beneath where metallic devices hummed with a low, dangerous vibration. Inside this space were strange glass globes and twisted wires that seemed to hold the house together in a web of dark magnetism. It was clear that these objects were the source of the ghosts and the strange occurrences that had haunted this property for generations, keeping his restless spirit attached to the building against the laws of nature.",
+      "As I touched the center of the mechanism, the air around me became electric and sharp, making the hair on my arms stand up in fear. I knew that breaking these items would release the man from his long punishment, but it would also bring the house down upon us both. I did not hesitate because the misery I had witnessed within these walls had to end immediately. With a single, forceful motion, I smashed the central glass piece, and a loud, sharp crack echoed through every room of the dark mansion. The man standing near me let out a long, sighing sound of relief as his figure started to fade into the dust of the floor. The heavy, suffocating pressure lifted instantly, leaving me alone in the silent, empty room beneath the light of the rising moon.",
+      "As the glass mechanism broke into a thousand sharp pieces, the oppressive atmosphere of the haunted house began to evaporate like morning mist. The terrible weight that had anchored the restless spirit to the earth was finally gone, and a profound silence settled over the ruined mansion. I stood still in the center of the dark room, listening to the echoes of the house settling into its final rest. The cold shadows that had once danced along the walls seemed to retreat into the cracks of the floorboards, disappearing forever into the night. It felt as though a long and painful dream had finally reached its conclusion. I walked toward the doorway, leaving the remnants of the strange man’s experiments behind me, feeling a sense of deep gratitude for the peace that was finally returning to this cursed place.",
+      "The journey through the narrow, rotting hallways felt different now, as the air was no longer heavy with the smell of decay and ancient magic. Each step I took toward the exit felt lighter, as if the house itself was releasing the burden it had carried for so many lonely centuries. I reached the main entrance and pushed the heavy door open, welcoming the cool night breeze that brushed against my face. Looking back at the dark structure one last time, I saw no more flickers of unnatural light or twisted movements in the windows. The mansion was now just an ordinary building, empty and abandoned, stripped of the dark power that had turned it into a prison for a soul that could not find its way to rest.",
+      "Walking back into the quiet streets of London, the vibrant life of the world outside felt surreal after my experience in that house of horrors. I reflected on the lessons I had learned about the dangerous boundaries between our physical world and the forces that lie beyond human sight. The secrets I had uncovered would remain with me, serving as a reminder of the fragility of life and the dangers of seeking eternal power. I had witnessed the end of a long, dark cycle, and though the mystery would always linger in my mind, I was content to leave it behind. The sun began to rise over the horizon, painting the city in shades of gold, promising a new day that was entirely free from the shadows of the past."
+    ],
+    tr: [
+      "Londra'da kimsenin yaşamak istemediği bir ev hakkında tuhaf bir hikaye duydum. İnsanlar evin lanetli olduğunu ve geceyi orada geçirmeye çalışan herkesin korkunç dehşetlerle karşılaşacağını söylüyordu. Bu çılgın söylentilere inanmadım. Ben bilim ve mantık adamıyım, bu yüzden evi kendim görmeye karar verdim. Ev sahibine yazdım ve bu gizemli binada bir gece geçirmek için izin istedim. İsteğim karşısında şaşırdı ama hemen kabul etti ve yıllardır oraya gitmediğini söyledi. Daha önce pek çok kişinin denediğini ve sabah ışığına kadar kalamadığını söyleyerek beni uyardı. Çantalarımı hazırladım, arkadaşlık etmesi için köpeğimi yanıma aldım ve karanlık sokaklardan geçerek sessiz, boş eve doğru yürürken hem meraklı hem de gerçeği ortaya çıkarmaya kararlı hissediyordum.",
+      "Adrese ulaştığımda ev soğuk ve davetsiz görünüyordu. Pencereleri sokağa bakan karanlık, boş gözler gibiydi ve bahçesi uzun, ölü otlarla doluydu. Ağır ön kapıyı ittim; kapı açılırken yüksek, tırmalayıcı bir ses çıkardı. İçerideki hava yoğun ve soğuktu, toz ve eski sırlar gibi kokuyordu. Köpeğim bacaklarımın dibinde yürüyor, köşelerdeki gölgelere hafifçe hırıldıyordu. Mumumu yaktım ve büyük, boş koridora baktım. Duvar kağıtları kuru deri gibi dökülüyordu ve yer tahtaları ayaklarımın altında ağır iniltilerle hareket ediyordu. Tam da insanların hayaletleri hayal ettiği türden bir yerdi, ama kendime sürekli bunun sadece yaşını ve bakımsızlığını gösteren eski bir bina olduğunu söylüyordum.",
+      "Zemin katta yavaşça yürüdüm, odaları tek tek kontrol ettim. Mobilyalar, karanlıkta duran hayaletler gibi görünen kalın beyaz örtülerle kaplıydı. Duvarların arkasından birinin beni izlediğine dair tuhaf bir his vardı. Bu hissi görmezden gelmeye çalışarak evin pratik durumuna odaklandım. Küçük yatağımı, yıllardır el sürülmemiş gibi görünen birçok eski, tozlu kitabın olduğu kütüphaneye kurdum. Sessizlik mutlak, şimdiye kadar bildiğim tüm sessizliklerden daha ağırdı. Geceyi geçirmek için bekleyerek okumaya oturdum. Efsanelerin doğru olup olmadığını ya da insan hayal gücünün bu unutulmuş mülkün karanlık, yalnız köşelerinde sadece oyunlar oynayıp oynamadığını görmek istedim.",
+      "Saat gece yarısını vurduğunda, mutlak sessizlik aniden tenimi ürperten bir sesle bölündü. Ses, tıpkı üst katımdaki odada ağır botlarla yürüyen biri gibi, zeminde hafif ve ritmik bir tıkırtı olarak başladı. Genellikle cesur olan köpeğim sızlanmaya başladı ve sakin emirlerime rağmen yatağımın altına saklanıp çıkmayı reddetti. Ayağa kalktım ve mumumu aldım; alevi, esintili odada gergin bir şekilde dans ediyordu. Sanki bir dondurucunun içine girmişim gibi, sıcaklıkta ani bir düşüş hissettim. Zihnimin mantıklı her parçası bana binanın eski olduğunu ve seslerin sadece evin oturmasından kaynaklandığını söylüyordu, ancak içgüdülerim doğaüstü bir şeyin gerçekleştiğini haykırıyordu. Kütüphanenin ortasında durdum ve yukarıdaki ağır, yavaş adımların devam ettiği odayı dikkatle dinledim.",
+      "Sesin kaynağıyla yüzleşmeye karar vererek lambamı kaptım ve merdivenlere doğru ilerledim. Ahşap basamaklar, ağırlığım altında yüksek sesle inleyerek boş ve devasa evin içinde, karanlıkta bekleyen birine sinyal verircesine yankılandı. Yukarı tırmandıkça, hava toz ve metalik bir kokuyla o kadar ağırlaştı ki nefes almak zorlaştı. Soğuk, sanki akciğerlerimdeki nefesi donduracak kadar derinleşti. Üst kata ulaştığımda, önümde hiçbir yere gitmeyen bir tünel gibi uzanan uzun ve dar bir koridor gördüm. Koridorun en sonundaki kapı hafifçe aralıktı ve sadece derin, geçilmez bir gölgeyi açığa çıkarıyordu. O odaya doğru görünmez bir çekim hissettim; mantıklı zihnimin tüm iradesiyle karşı koymaya çalıştığı bir dürtüydü bu.",
+      "Derin bir nefes aldım ve koridorda yürümeye başladım, kalbim göğüs kafesime hapsolmuş bir kuş gibi çarpıyordu. Koridordaki her detay bulanıklaşmış gibiydi ve bir anlığına duvarların üzerime kapandığını hissettim. Kapıya ulaştım ve onu ittim; boş bir oda bulmayı bekliyordum ama bunun yerine kanımı donduran bir manzarayla karşılaştım. Odanın diğerlerinden farklı olarak mükemmel bir şekilde döşenmiş olduğunu ve uzak duvarda büyük bir aynanın asılı durduğunu gördüm. İçeri adımımı attığımda, lambamın ışığı cama vurdu ve kendime ait olmayan bir yansıma gördüm. Aynada arkamda duran uzun, solgun bir adam vardı; gözleri kadim ve karanlık bir zekayla yanıyordu. Hızla arkamı döndüm ama orada kimse yoktu, sadece boş ve sessiz hava vardı.",
+      "Odanın ortasında donup kalmıştım, adamın olduğu boşluğa bakarken kalbim hızla çarpıyordu. Aynadaki yansıma çok netti, keskin ve acımasız hatları olan uzun bir figür gösteriyordu. Köşeleri kontrol ettim ve ağır perdelerin arkasına baktım, ancak oda tamamen sessiz ve boştu. Tuhaf, metalik bir koku havayı doldurdu, kendimi biraz sersemlemiş hissetmeme neden oldu. Lambamın, kapalı pencerelerden güçlü bir rüzgar esiyormuş gibi şiddetle titrediğini fark ettim. İzlenme hissi dayanılmaz hale geldi, ağır fiziksel bir yük gibi cildime baskı yaptı. Karanlığa doğru fısıldayarak görünmez varlığa kendini göstermesi için meydan okudum, ancak o unutulmuş malikanenin soğuk ve tozlu karanlığında sadece kendi titreyen sesim cevap verdi.",
+      "Aniden keskin ve soğuk bir rüzgar odayı süpürdü ve lambamı anında söndürdü. Tam bir karanlık içinde, her türlü ses veya harekete karşı duyularım açık bir şekilde bırakıldım. Hızla cebimden kibritleri bulmaya çalıştım, ancak ellerim o kadar titriyordu ki kutuyu ahşap zemine düşürdüm. Onları aramak için diz çöktüm, parmak uçlarımda ahşabın pürüzsüz ve buz gibi yüzeyini hissettim. Karanlıkta el yordamıyla ararken, odanın köşesinden gelen alçak ve yumuşak bir kahkaha duydum. Boş ve alaycı tınlıyordu, dokunduğum zemin tahtalarında titreşiyordu. Omzumda ani ve keskin bir baskı hissettim; sanki görünmez bir el beni büyük bir kuvvetle yakalamış, kalbim hızla çarparken kıpırdamadan kalmamı sağlamıştı.",
+      "Beni sıkıca yerinde tutan görünmez güce karşı koyarak ayağa kalkmaya çalıştım. Odadaki atmosfer değişti, soğuktan boğucu ve doğal olmayan bir sıcağa döndü. Kükürt kokusu o kadar güçlendi ki, boğulmamak için ağzımı ceketimle kapatmak zorunda kaldım. Kendimi desteklemek için bir sandalyeye uzandım, ancak nesne canlıymış gibi elimden kaçıyordu. Sonunda bir kibrit yakmayı başardım; minik alev, dökülen duvar kağıtları üzerinde uzun ve dans eden gölgeler oluşturdu. Oda dönüşmüş görünüyordu; antika mobilyalar tuhaf ve çarpık şekillere giriyor gibiydi. Bir korku dalgası hissettim, ancak inatçı bir merak, bu karanlık ve fısıldayan duvarların içinde gizlenen kadim güçle yüzleşmem için beni orada kalmaya zorladı.",
+      "Ayağa kalktım ve odayı daha iyi görebilmek için küçük kibriti havaya kaldırdım. Mobilyalar artık farklı görünüyordu, gölgelerin içinde bekleyen tuhaf ahşap canavarlar gibiydiler. Aniden, kimse orada durmamasına rağmen aynanın yanında parlak bir ışık belirdi. Bu, sanki camın kendi içinden geliyormuş gibi görünen yumuşak, solgun bir parıltıydı. Bacaklarım ağır ve güçsüz hissederek daha yakına adım attım. Aynanın etrafındaki hava, sanki havada değil de suyun içinde hareket ediyormuşum gibi yoğundu. Dünyamıza ait olmayan bir şeye baktığımı biliyordum. Nefes alışım hızlı ve sığdı; derin bir dehşet duygusu hissettim. Sessizlik boş değildi; kulaklarıma baskı yapan gizli bir enerjiyle doluydu. O an hayaletin sadece bir görüntü değil, beni izleyen güçlü ve kadim bir kuvvet olduğunu anladım.",
+      "Odanın ortasında yavaşça soluk bir şekil oluşmaya başladı. Bu daha önce gördüğüm adam değildi, gri bir sis bulutuydu. Sis, durduğum yerin etrafında daireler çizerek bir amaçla hareket ediyordu. Cesaretimin azaldığını hissettim ama kaçmayı reddettim. Yere baktım ve gölgelerin sanki sise ulaşmaya çalışıyormuş gibi ona doğru uzandığını fark ettim. Soğukluk geri geldi, cildimi ısırarak dişlerimin yüksek sesle birbirine çarpmasına neden oldu. Elimle uzandım ama sis aniden bir ateşten çıkan duman gibi tavana doğru fırladı. Binlerce küçük sesin aynı anda fısıldaması gibi bir ses çıkardı. Zihnimi odaklamaya çalıştım, kendime bunun sadece eski, ölü bir binanın ve kendi yorgun beynimin bir oyunu olduğunu tekrar ettim.",
+      "Sonra oda tekrar değişti. Yer döşemeleri ayaklarımın altında kayıyor gibiydi ve duvarlar alçak, vızıltılı bir sesle titreşmeye başladı. Evin kendisinin, yüzyıllardır süren bir acı döngüsüne hapsolmuş, canlı olduğunu fark ettim. Yakındaki bir raftan bir kitap düştü ve sayfaları durgun havada hızla dönmeye başladı. Kitabı yerden aldım, parmaklarımdan geçen bir elektrik akımı hissettim. İçindeki kelimeler tanımadığım bir dilde yazılmıştı ama taşıdıkları uyarıyı anladım. Gölgelerin içinden bir şey yaklaşıyordu, sisten çok daha güçlü bir şey. Işığımı sıkıca tuttum ve son yüzleşme için kendimi hazırladım. Karanlık geri çekiliyor gibiydi; kapı eşiğinde duran, gözleri hiç merhamet vaat etmeyen soğuk ve solgun bir ışıkla parlayan bir figürü ortaya çıkardı.",
+      "Kapıdaki figür, havayı incelmiş hissettiren yavaş ve ağır bir zarafetle ileriye doğru hareket etti. Adamı, uzun zaman önce gizli deneyleri sırasında bu evde yaşamış olan, mektubunu aldığım kişi olarak tanıdım. Yüzü soğuk bir gurur maskesiydi, ancak gözleri insanların asla dokunmaması gereken şeylere karşı derin, yakıcı bir açlık gösteriyordu. Konuşmadı ama varlığı, beni soğuk taş duvara doğru geri çekilmeye zorlayan yüksek bir komuttu. Mumumu yüksekte tutarak alevin, bu adamı çevreleyen gölgelerden korkuyormuşçasına çılgınca titremesini izledim. Karanlığı ağır bir palto gibi kendine çekiyor gibiydi ve gözlerindeki ışık keskinleşerek ortamı kaslarımı felç eden soğuk bir tuzağa dönüştürdü.",
+      "Zihnimde artan baskıya karşı savaştım, düşüncelerimi berrak ve kalbimi sabit tutmaya çalıştım. Ruhunun karanlık, yasak bilgilerle dolu olması bile onun sadece bir insan olduğunu kendime söyledim. Ancak her hareket etmeye çalıştığımda, beni aşağıya iten görünmez bir güç duvarı hissettim. Adam elini kaldırdı ve yer tahtaları görünmez gücünün ağırlığı altında bükülüp inlemeye başladı. O sadece bir ruh değil, bu evi sefil durumunda tutan güçlerin efendisiydi. Oda, siyah bir okyanusun ortasındaki küçük, batan bir tekne gibi hissettirdi ve gerçeklik üzerindeki kontrolümü kaybediyordum. Odanın kenarları karanlık ve biçimsiz bir boşluğa dönüşmeye başladıkça görüşüm bulanıklaştı.",
+      "Aniden cebime uzandım ve yanımda getirdiğim demir tılsımın soğuk, sert yüzeyine dokundum. Küçük bir eşyaydı ama bu illüzyonlar dünyasında somut bir gerçeklik dağı gibi hissettirdi. Adam hareketimi gördü ve yüzü ilk kez gerçek bir öfke ifadesiyle büküldü. Beni durdurmak için uzandı ama tılsım, gölgelerini kenara iten garip, koruyucu bir enerjiyle vızıldıyor gibiydi. Onu çıkardım ve karanlığa karşı bir kılıç gibi havaya kaldırdım. Gözlerindeki parıltı azaldı ve ona fiziksel bir darbe indirmişim gibi sendeledi. Sessizlik geri geldi ama bu sefer farklıydı; ağır dehşet dağılmaya başladı ve ev rahatlayarak inledi.",
+      "Karşımda duran garip adama baktım ve onun tamamen odada olmadığını fark ettim. Fiziksel bedeni ince, duvara yansıyan bir gölge gibi görünüyordu ve gücünün normal dünyamızın dışındaki bir kaynaktan geldiğini anladım. Bir cesaret duygusuyla ona doğru bir adım attım ve ona geçmişteki deneylerini ve bunca yıldır bu duvarların arasına sakladığı sırları sordum. Yaşamla ölüm arasında geçirdiği uzun yüzyılları yansıtan, kadim ve boş gözlerle bana geri baktı. Konuşmaya çalıştı ama sesi, soğuk bir zeminde uçuşan kuru yaprakların hışırtısından başka bir şey değildi; içinde hiçbir sıcaklık veya insani duygu yoktu. O donmuş anda, onun trajik ve kötü yaşamının gerçeği benim için netleşmişti.",
+      "Adam, sanki görünmez bir zincirle savaşıyormuş gibi titreyen eliyle ahşap zemindeki gizli bir paneli işaret etti. O an, kendi icatlarının bir tutsağı olduğunu ve ölümsüz hedeflerine ulaşmak için yarattığı mekanik araçları birisi yok edene kadar gidemeyeceğini anladım. Diz çöktüm ve ağır, çürümüş tahtayı kaldırmaya başladım; altında, düşük ve tehlikeli bir titreşimle vızıldayan metalik cihazların olduğu karanlık bir boşluk ortaya çıktı. Bu boşluğun içinde, evi karanlık bir manyetizma ağıyla bir arada tutuyor gibi görünen garip cam küreler ve bükülmüş teller vardı. Bu nesnelerin, nesillerdir bu mülke musallat olan hayaletlerin ve garip olayların kaynağı olduğu, huzursuz ruhunu doğa kanunlarına aykırı bir şekilde binaya bağladığı açıktı.",
+      "Mekanizmanın merkezine dokunduğumda, etrafımdaki hava elektrikli ve keskin bir hale geldi, kollarındaki tüyler korkudan diken diken oldu. Bu eşyaları kırmanın, adamı uzun süreli cezasından kurtaracağını ama aynı zamanda evi ikimizin üzerine yıkacağını biliyordum. Tereddüt etmedim çünkü bu duvarların içinde tanık olduğum sefaletin hemen sona ermesi gerekiyordu. Tek ve güçlü bir hareketle merkezi cam parçayı kırdım ve karanlık konağın her odasında yüksek, keskin bir çatlama sesi yankılandı. Yanımda duran adam, bedeni zeminin tozuyla karışıp silinmeye başladığında uzun, iç çekişli bir rahatlama sesi çıkardı. Ağır, boğucu baskı anında kalktı ve beni yükselen ayın ışığı altında sessiz, boş odada yalnız bıraktı.",
+      "Cam mekanizma binlerce keskin parçaya ayrılırken, perili evin baskıcı atmosferi sabah sisi gibi buharlaşmaya başladı. Huzursuz ruhu dünyaya bağlayan korkunç ağırlık nihayet gitmişti ve harap olmuş malikanenin üzerine derin bir sessizlik çöktü. Karanlık odanın ortasında kıpırtısız duruyor, evin son dinlenişine geçişini yansıtan yankıları dinliyordum. Bir zamanlar duvarlarda dans eden soğuk gölgeler, zemin tahtalarının çatlaklarına çekiliyor, gecenin içinde sonsuza dek kayboluyordu. Sanki uzun ve acı verici bir rüya nihayet sona ermişti. Garip adamın deneylerinin kalıntılarını ardımda bırakarak kapıya doğru yürüdüm, bu lanetli yere nihayet dönen huzur için derin bir şükran duygusu hissettim.",
+      "Dar ve çürüyen koridorlardaki yolculuk artık farklı hissettiriyordu çünkü hava artık çürüme ve kadim büyü kokusuyla ağırlaşmıyordu. Her adımım çıkışa doğru daha hafif geliyordu, sanki evin kendisi yüzyıllardır taşıdığı yükü bırakıyordu. Ana girişe ulaştım ve yüzüme çarpan serin gece rüzgarını karşılayarak ağır kapıyı açtım. Karanlık yapıya son bir kez baktığımda, pencerelerde artık doğal olmayan ışık parıltıları veya garip hareketler görmedim. Malikane artık sadece sıradan bir binaydı; boş, terk edilmiş ve onu huzura kavuşamayan bir ruh için hapishaneye dönüştüren o karanlık güçten arınmıştı.",
+      "Londra'nın sessiz sokaklarına geri dönerken, dış dünyanın canlı hayatı, dehşet evindeki deneyimimden sonra gerçek dışı hissettirdi. Fiziksel dünyamız ile insan görüşünün ötesinde yatan güçler arasındaki tehlikeli sınırlar hakkında öğrendiğim dersler üzerine düşündüm. Ortaya çıkardığım sırlar benimle kalacak, hayatın kırılganlığını ve sonsuz güç arayışının tehlikelerini hatırlatacaktı. Uzun ve karanlık bir döngünün sonuna tanıklık etmiştim ve gizem zihnimde her zaman kalsa da, onu geride bırakmaktan memnundum. Güneş ufkun üzerinde yükselmeye başladı, şehri altın tonlarına boyayarak geçmişin gölgelerinden tamamen arınmış yeni bir güne söz veriyordu."
+    ],
+    words: {
+      "cursed": "lanetli",
+      "rumor": "söylenti",
+      "permission": "izin",
+      "neglect": "ihmal/bakımsızlık",
+      "determine": "kararlı olmak",
+      "legend": "efsane",
+      "rhythmic": "ritmik",
+      "whimper": "sızlanmak",
+      "instinct": "içgüdü",
+      "cavernous": "mağara gibi geniş ve boş",
+      "impenetrable": "geçilemez, anlaşılmaz",
+      "reflection": "yansıma",
+      "extinguish": "söndürmek",
+      "fumble": "el yordamıyla aramak",
+      "mocking": "alaycı",
+      "suffocating": "boğucu",
+      "sulfur": "kükürt",
+      "distorted": "çarpık",
+      "flicker": "titremek",
+      "dread": "dehşet",
+      "swirling": "dönen",
+      "chatter": "tıkırdamak (dişler)",
+      "vibrate": "titreşmek",
+      "confrontation": "yüzleşme",
+      "grace": "zarafet",
+      "paralyze": "felç etmek",
+      "dissolve": "dağılmak, erimek",
+      "illusion": "hayal, illüzyon",
+      "stagger": "sendelemek",
+      "mechanism": "mekanizma",
+      "immortal": "ölümsüz",
+      "vibration": "titreşim",
+      "invisible": "görünmez",
+      "ancient": "kadim",
+      "oppressive": "baskıcı",
+      "evaporate": "buharlaşmak",
+      "remnants": "kalıntılar",
+      "decay": "çürüme",
+      "surreal": "gerçek dışı",
+      "fragility": "kırılganlık"
+    }
+  }
+,
+  {
+    id: 'horror_mysterious_mansion',
+    title: "The Mysterious Mansion",
+    author: 'Honoré de Balzac',
+    level: 'B1',
+    coverUrl: '/covers/horror_mysterious_mansion.webp',
+    en: [
+      "The old mansion stood silent at the end of the dark, narrow street in Vendôme. Its high stone walls were covered in thick, green moss, and the heavy iron gate was locked tightly, as if it were hiding a terrible secret from the world outside. The people of the town avoided this place, walking quickly past it without looking up at the broken windows that stared down like empty eyes. It was a building that seemed to hold its breath, waiting for something that had been lost a long time ago. The air around it felt heavy and cold, and the shadows stretched across the cobblestones like long, thin fingers reaching out to touch anyone brave enough to walk near. Every stone told a story of neglect, and the silence was deep enough to make one wonder what ghosts lived behind those walls.",
+      "One rainy evening, I was walking near this mysterious house when I noticed something strange. A small, flickering light moved behind one of the dusty panes on the top floor. My heart began to beat faster because I knew the mansion had been empty for many years. It was a place where no one dared to enter, and the locals whispered that the spirit of a sad woman still paced the empty hallways. I felt a sudden curiosity pull me closer to the gate. I wanted to know the truth about the mansion, but my legs felt heavy as if the ground itself was warning me to turn back. I leaned against the cold metal of the gate, looking into the overgrown garden where dead leaves swirled in the wind, feeling completely alone in the dark.",
+      "I had heard many rumors about the mansion from the townspeople during my stay in Vendôme. They spoke of a wealthy noble family who had lived there long ago, but their lives had ended in a tragedy that no one wanted to remember. The mansion was not just an old house; it was a tomb of memories, frozen in time and forgotten by history. As I watched the light, it suddenly disappeared, leaving the house in total darkness once more. The wind whistled through the tall, dry grass, and I felt a chill run down my spine. I knew then that I had to find out what really happened inside this house. My journey into the heart of this mystery had only just begun, and the secrets of the mansion were calling to me from the darkness.",
+      "The next day, I could not stop thinking about the light. The mysterious mansion filled my mind, and I decided to speak with an old man who lived nearby. He was a local worker who knew many stories about the people of Vendôme. When I asked him about the house, his face became very pale and his hands began to shake slightly. He told me that for many years, the house had been empty, and no one entered it. He explained that a noblewoman, the Countess of Merret, had lived there with her husband a long time ago. The life they lived seemed perfect from the outside, but inside the mansion, there were problems. He whispered that something terrible had destroyed their happiness, and since that dark day, no one had dared to walk through the front door again.",
+      "I wanted to learn more, so I asked the old man to tell me about the Count and the Countess. He sighed deeply, looking at the broken windows of the mansion as if they were watching us. He told me that the Count was a proud and jealous man who loved his wife very much, but his love was possessive and strict. The Countess was a beautiful woman who loved her home and her quiet life in the town. However, there was a secret guest who sometimes visited the mansion when the Count was away for hunting. The neighbors saw shadows moving in the garden at night, and they heard soft voices coming from the balcony. Nobody knew who the visitor was, but the Count soon became suspicious of the things happening inside his own private home.",
+      "The air grew colder as the man continued his story, and the wind began to howl through the narrow streets. He mentioned that the Count was a man of great honor, and he believed that his family's reputation was more important than anything else. One evening, the Count returned early from his trip and felt that something was wrong in the house. He walked through the hallway with a heavy heart, sensing that his wife was hiding a secret from him. The servant who told me this story looked around nervously, afraid that someone might hear our conversation. He said that the truth about the mysterious visitor was hidden deep inside one of the walls of the mansion, and the secret remained there until this very day, locked away by the stones and time.",
+      "The sun began to set behind the dark hills, casting long shadows across the overgrown garden of the mansion. I stood there alone, feeling the heavy silence that lived within these ancient walls. The old man had left me after his final warning, his voice trembling with a fear that I could not fully understand. I looked up at the broken glass of the top window, remembering the stories of the Countess. It was said that she spent many hours in her room, listening to the wind and waiting for someone who never arrived. The house seemed to breathe like a living thing, watching every step I took on the cracked stone path. I felt a strange pull to get closer, as if the house itself wanted me to discover the painful truth about what happened on that fateful night.",
+      "I walked slowly toward the heavy wooden door, which was covered in thick layers of dust and climbing vines. My heart beat loudly in my chest, echoing through the empty space like a drum. I touched the cold iron handle, which felt like ice against my skin, reminding me of the long years of neglect. The garden was silent, and the birds seemed to avoid the trees surrounding the house. It was a place of deep sorrow, where time had simply stopped moving. I thought about the Count and the secret that had destroyed his peaceful life. He had been a man of pride, and when his suspicions turned into certainty, his reaction had been swift and unforgiving. The mansion held its secrets tightly, keeping the history of a broken marriage hidden from the world.",
+      "As I stared at the dark entrance, I realized that the mystery was more than just a local legend. It was a tragedy of love, jealousy, and silence that had ruined a noble family. I understood why the local people were afraid to speak about the mansion or pass by its gates after the sun went down. The air felt heavy with the memories of the past, and I wondered what exactly was hidden behind the bedroom wall. Was it a simple object, or something much more shocking? The atmosphere was thick with a sense of dread, but my curiosity was stronger than my fear. I knew that I would have to return here one day to explore further, no matter how much the house tried to keep me away with its cold and lonely silence.",
+      "I stood inside the grand hallway, where the air was thick with the scent of old paper and decaying wood. The mansion seemed to hold its breath as I moved deeper into its heart, the floorboards groaning under my feet with every step I took. Dust motes danced in the dim light that filtered through the heavy, velvet curtains. I felt as if the ghosts of the past were watching me from the shadows of the high ceiling, their silent gazes tracking my progress. The grand staircase rose before me like a mountain of dark oak, leading toward the room where the Countess had faced her final hours. I remembered the Count's cold expression as he closed the room away forever, sealing the truth inside the brick wall. Everything here felt frozen in time, waiting for someone to finally break the seal.",
+      "My hands shook slightly as I climbed the stairs, the banister feeling rough and cold beneath my touch. Every sound in the house was amplified by the emptiness, making my own breathing sound like a storm in the stillness. I found myself drawn to the door of the main bedroom, the place that had haunted the village for years. It was said that the Count had walled the door with masonry, hiding the tragedy from any curious eyes. As I reached the top of the stairs, I noticed small cracks in the plaster near the entrance. I knelt down to look closer, my heart thumping against my ribs. There was a strange smell, metallic and sharp, lingering in the stagnant air. It was as if the room itself was gasping for oxygen, desperate to share a story that had remained buried for decades.",
+      "The silence of the house was absolute, yet it felt heavy with unspoken words. I traced the edge of the brickwork, feeling the rough texture of the materials that had kept the world out for so long. Why would a man hide such a place instead of destroying it completely? Perhaps he wanted to keep his pain close, a constant reminder of the betrayal he felt in his noble heart. I stood there for a long time, listening to the wind outside as it rattled the window panes. It sounded like a woman whispering, a soft and mournful voice calling out from the darkness. My mind raced with questions, but I knew that the truth was hidden behind those bricks. I was not ready to uncover it yet, but the house had already begun to reveal its dark and lonely secrets to me.",
+      "I took a heavy hammer from my bag, the metal feeling icy against my tired skin. My objective was simple yet terrifying: to break through the wall the Count had built so many years ago. Each strike against the masonry echoed like a gunshot throughout the silent mansion, causing dust to fall from the ceiling in thick clouds. I felt like a thief, stealing into a tomb that was never meant to be opened by living hands. Yet, the mystery of the Countess was a fire in my blood, demanding an answer that only these stones could provide. As the bricks began to loosen, I saw a sliver of darkness behind the wall, a void that had been hungry for light for nearly half a century. My breath quickened with fear, but I refused to turn back now.",
+      "The wall finally crumbled, releasing a gust of stale, frozen air that carried the faint, sweet scent of dried flowers and old perfume. I peered through the hole with my trembling lantern, the weak light flickering against the shadows. Inside the small, cramped room, I saw the remains of a life that had been violently cut short. There sat a chair, and upon it rested a skeleton dressed in the tattered remains of a silk gown, its head resting on a delicate hand. It was the Countess, still holding a position of tragic grace even in death. The sight was so hauntingly beautiful that I forgot how to move. Time had not destroyed her; it had simply preserved her sorrow in this airless stone prison where the Count had left her to perish alone.",
+      "I stepped into the room, my boots crunching on the fallen plaster that lay scattered across the floor like grey snow. The furniture was covered in a thick layer of dust, hiding the intricate carvings of a time long forgotten by the village outside. I looked at the wall where she had scratched marks into the plaster, her fingernails wearing away as she fought for a hope that never came. My heart ached for her suffering, a prisoner of a jealous husband’s pride and cruelty. The silence here was no longer empty; it was filled with the heavy weight of her final thoughts. I had finally uncovered the secret of the mansion, but the truth was a burden I now had to carry alone. The darkness seemed to press against me, demanding respect for the dead.",
+      "I stood in the center of the dark room, feeling the overwhelming weight of the past pressing down on my shoulders. The air was thick and heavy, as if the silence had finally gained a solid form. I looked closely at the walls, observing the desperate lines the Countess had clawed into the plaster. Each mark told a story of unbearable pain, a silent scream that had echoed in this tomb for decades. I realized then that the Count had not just built a wall of bricks, but a wall of eternal suffering. The cruelty of his actions felt more present than ever, as if the woman’s last moments were still unfolding before my very eyes. I felt like an intruder in a space where only ghosts were allowed to exist, and I shivered in the cold.",
+      "My eyes wandered to the small, withered remains of a flower that lay near her feet, a tiny bit of color against the grey dust of the room. It was a tragic testament to the beauty that had once bloomed here before the Count’s jealousy turned this place into a prison. I could almost hear the faint rustle of her dress, a soft sound in the absolute stillness of the mansion. The tragedy of her fate was now a permanent part of the house, a secret carved into the very foundation of the walls. Every detail of the room felt personal, as if the Countess herself were guiding me through the painful history of her final days. I reached out to touch the table, my hand hesitating for a moment, afraid to disturb the haunting peace.",
+      "Suddenly, the heavy atmosphere became too much to bear, and I knew I had to leave this place of sorrow immediately. I could not stay any longer in the presence of such profound grief, for the darkness of the room seemed to be pulling me toward the same end. I moved toward the gap in the wall, my movements slow and uncertain, as if I were underwater. Leaving the chamber felt like a betrayal, yet I knew that staying would mean becoming part of the tragedy myself. I climbed through the opening, feeling the air change as I returned to the main part of the mansion. The journey back through the dark hallways felt like escaping a dream, my mind filled with the image of her sitting there, waiting for a rescue that never arrived.",
+      "I walked quickly through the dusty corridors, desperate to feel the warmth of the sun on my face once more. The heavy silence of the house seemed to follow me like a shadow, eager to pull me back into its dark embrace. Every floorboard that creaked under my feet sounded like a warning, a reminder that the mansion held secrets that were never meant to be uncovered by the living. I did not dare to look back at the place where the Countess had met her end, for the horror of the discovery was still burning in my mind. The air in the hallway felt thin, making it difficult to breathe as I moved toward the grand entrance. I knew that leaving this place would not erase the memory of the suffering that had occurred within those cold, stone walls.",
+      "Reaching the outside garden, I gasped for air, feeling the cool breeze against my flushed skin as if it were a long-lost friend. The mansion stood behind me, dark and silent, its windows like empty eyes watching my every movement. I wondered if the townspeople would ever know the truth about the cruel history that defined the property, or if it would continue to rot in silence forever. The weight of the secret felt heavy in my heart, a burden that I would now have to carry for the rest of my life. I looked at the old, decaying facade one final time before walking away from the estate. It was a place of ghosts and broken promises, a monument to a man's terrible jealousy that destroyed everything he claimed to have loved so deeply.",
+      "As I finally stepped past the rusted iron gates, the world outside seemed strangely distant and unimportant compared to the misery I had just witnessed. The tragedy of the Countess was a lesson in the dangers of pride and obsession, a dark tale that warned against the destructive power of human rage. I walked into the busy streets of the town, where people were laughing and talking, completely unaware of the skeleton hiding in the mansion nearby. Their ignorance felt like a blessing, yet I could not help but feel changed by what I had seen inside that room. The mansion had claimed a part of my soul, leaving me with a profound understanding of how easily a house can become a grave when love turns into a prison for the heart."
+    ],
+    tr: [
+      "Eski konak, Vendôme'daki karanlık ve dar sokağın sonunda sessizce duruyordu. Yüksek taş duvarları kalın, yeşil bir yosunla kaplıydı ve ağır demir kapısı, sanki dış dünyaya karşı korkunç bir sır saklıyormuş gibi sıkıca kilitliydi. Kasaba halkı bu yerden uzak duruyor, boş gözler gibi aşağı bakan kırık pencerelere bakmadan hızla yanından geçiyordu. Burası, sanki çok uzun zaman önce kaybolmuş bir şeyi bekliyormuş gibi nefesini tutan bir binaydı. Etrafındaki hava ağır ve soğuktu, gölgeler ise kaldırım taşlarının üzerinde, yanından geçmeye cesaret eden herkese dokunmak için uzanan uzun ve ince parmaklar gibi yayılıyordu. Her taş bir ihmal hikayesi anlatıyordu ve sessizlik, o duvarların ardında hangi hayaletlerin yaşadığını merak ettirecek kadar derindi.",
+      "Yağmurlu bir akşam, bu gizemli evin yakınında yürürken garip bir şey fark ettim. Üst kattaki tozlu camlardan birinin arkasında küçük, titrek bir ışık hareket etti. Kalbim daha hızlı atmaya başladı çünkü konağın uzun yıllardır boş olduğunu biliyordum. Burası kimsenin girmeye cesaret edemediği bir yerdi ve yerel halk, üzgün bir kadının ruhunun hala boş koridorlarda gezindiğini fısıldıyordu. Aniden içimi kaplayan bir merak beni kapıya doğru çekti. Konak hakkındaki gerçeği bilmek istiyordum ama bacaklarım, sanki yerin kendisi beni geri dönmem için uyarıyormuş gibi ağırlaşıyordu. Soğuk demir kapıya yaslandım ve rüzgarda kuru yaprakların savrulduğu, yabani otlarla kaplı bahçeye bakarak karanlıkta tamamen yalnız kaldığımı hissettim.",
+      "Vendôme'daki konaklamam sırasında kasaba halkından konak hakkında birçok söylenti duymuştum. Orada uzun zaman önce yaşamış soylu ve zengin bir aileden bahsediyorlardı, ancak hayatları kimsenin hatırlamak istemediği bir trajediyle son bulmuştu. Konak sadece eski bir ev değil, zaman içinde donmuş ve tarih tarafından unutulmuş bir anılar mezarıydı. Işığı izlerken, ışık aniden kayboldu ve evi bir kez daha tamamen karanlığa gömdü. Rüzgar uzun ve kuru otların arasından ıslık çalarak esti, içime bir ürperti yayıldı. O an, bu evin içinde gerçekte ne olduğunu bulmam gerektiğini anladım. Bu gizemin kalbine olan yolculuğum daha yeni başlamıştı ve konağın sırları karanlığın içinden bana sesleniyordu.",
+      "Ertesi gün ışığı düşünmeden edemedim. Gizemli konak aklımı doldurmuştu ve yakında yaşayan yaşlı bir adamla konuşmaya karar verdim. Kendisi, Vendôme halkı hakkında birçok hikâye bilen yerel bir işçiydi. Ona ev hakkında soru sorduğumda yüzü bembeyaz oldu ve elleri hafifçe titremeye başladı. Uzun yıllardır evin boş olduğunu ve kimsenin oraya girmediğini söyledi. Çok uzun zaman önce Merret Kontesi'nin kocasıyla orada yaşadığını anlattı. Dışarıdan bakıldığında hayatları mükemmel görünüyordu ama konağın içinde sorunlar vardı. Fısıldayarak, korkunç bir şeyin mutluluklarını yok ettiğini ve o karanlık günden beri kimsenin ön kapıdan içeri girmeye cesaret edemediğini söyledi.",
+      "Daha fazlasını öğrenmek istediğim için yaşlı adamdan Kont ve Kontes hakkında bilgi vermesini istedim. Sanki bizi izliyorlarmış gibi konağın kırık pencerelerine bakarak derin bir iç çekti. Kontun karısını çok seven, gururlu ve kıskanç bir adam olduğunu, ancak sevgisinin sahiplenici ve katı olduğunu anlattı. Kontes, evini ve kasabadaki sessiz yaşamını seven güzel bir kadındı. Ancak, Kont avlanmak için uzaktayken bazen konağı ziyaret eden gizli bir konuk vardı. Komşular gece bahçede hareket eden gölgeler gördüler ve balkondan gelen kısık sesler duydular. Ziyaretçinin kim olduğunu kimse bilmiyordu ama Kont kısa süre sonra kendi evinin içinde yaşananlardan şüphelenmeye başladı.",
+      "Adam hikâyesine devam ederken hava soğudu ve rüzgar dar sokaklarda uğuldamaya başladı. Kontun büyük bir onur adamı olduğunu ve ailesinin itibarının her şeyden daha önemli olduğuna inandığını belirtti. Bir akşam, Kont gezisinden erken döndü ve evde bir şeylerin yanlış olduğunu hissetti. Karısının ondan bir sır sakladığını hissederek, ağır bir kalple koridorda yürüdü. Bana bu hikayeyi anlatan hizmetçi, konuşmamızı birinin duyabileceğinden korkarak etrafına bakındı. Gizemli ziyaretçi hakkındaki gerçeğin konağın duvarlarından birinin derinliklerinde saklı olduğunu ve sırrın bugüne kadar taşlar ve zaman tarafından kilitli kalarak orada durduğunu söyledi.",
+      "Güneş, konağın sarmaşıklarla kaplı bahçesinin üzerine uzun gölgeler düşürerek karanlık tepelerin ardında batmaya başladı. Bu antik duvarların içinde yaşayan ağır sessizliği hissederek orada tek başıma durdum. Yaşlı adam, tam olarak anlayamadığım bir korkuyla sesi titreyerek yaptığı son uyarıdan sonra beni bırakıp gitmişti. Kontes hakkındaki hikayeleri hatırlayarak üst kattaki pencerenin kırık camlarına baktım. Söylentiye göre, vaktinin çoğunu odasında rüzgarı dinleyerek ve asla gelmeyen birini bekleyerek geçirirdi. Konak, çatlamış taş yoldaki her adımımı izleyen canlı bir varlık gibi nefes alıyor gibiydi. O kader gecesinde yaşanan acı verici gerçeği keşfetmemi istercesine, eve doğru garip bir çekim hissettim.",
+      "Kalın toz tabakaları ve tırmanan asmalarla kaplı ağır ahşap kapıya doğru yavaşça yürüdüm. Kalbim göğsümde yüksek sesle atıyor, boşlukta bir davul gibi yankılanıyordu. Tenime buz gibi gelen soğuk demir tokata dokundum ve bana uzun ihmal yıllarını hatırlattı. Bahçe sessizdi ve kuşlar evi çevreleyen ağaçlardan kaçınıyor gibiydi. Zamanın hareket etmeyi bıraktığı, derin bir keder yeriydi burası. Kont'u ve huzurlu hayatını yok eden o sırrı düşündüm. O, gururlu bir adamdı ve şüpheleri kesinliğe dönüştüğünde, tepkisi çok hızlı ve acımasız olmuştu. Konak, dağılan bir evliliğin tarihini dünyadan saklayarak sırlarını sıkıca koruyordu.",
+      "Karanlık girişe bakarken, bu gizemin yerel bir efsaneden çok daha fazlası olduğunu anladım. Bu, asil bir aileyi mahveden aşk, kıskançlık ve sessizlikten ibaret bir trajediydi. Yerel halkın neden konak hakkında konuşmaktan veya güneş battıktan sonra kapılarının önünden geçmekten korktuğunu anladım. Hava geçmişin anılarıyla ağırlaşmıştı ve yatak odasının duvarının arkasında tam olarak neyin saklı olduğunu merak ediyordum. Basit bir nesne miydi, yoksa çok daha şok edici bir şey mi? Atmosfer yoğun bir dehşet hissiyle doluydu ama merakım korkumdan daha güçlüydü. Ev, soğuk ve yalnız sessizliğiyle beni uzak tutmaya çalışsa da, daha fazlasını keşfetmek için bir gün buraya geri dönmem gerekeceğini biliyordum.",
+      "Eski kağıt ve çürüyen ahşap kokusuyla ağırlaşan büyük antrenin içindeydim. Ben kalbinin derinliklerine doğru ilerlerken, konak adeta nefesini tutmuş gibiydi ve attığım her adımda döşeme tahtaları ayaklarımın altında inliyordu. Ağır kadife perdelerden süzülen loş ışıkta toz zerreleri dans ediyordu. Sanki geçmişin hayaletleri yüksek tavanın gölgelerinden beni izliyor ve sessiz bakışlarıyla ilerleyişimi takip ediyordu. Büyük merdiven, Kontes'in son saatlerini geçirdiği odaya doğru çıkan karanlık meşeden bir dağ gibi önümde yükseliyordu. Kont'un odayı sonsuza dek kapatırken takındığı soğuk ifadeyi ve gerçeği tuğla duvarın ardına hapsetmesini hatırladım. Buradaki her şey, birinin mührü bozmasını beklercesine zamanda donmuş gibiydi.",
+      "Merdivenleri tırmanırken ellerim hafifçe titriyordu ve tırabzan dokunuşumun altında pürüzlü ve soğuk hissediliyordu. Evdeki her ses boşluk sayesinde yankılanıyor, kendi nefes alışverişim bile bu durgunlukta bir fırtına gibi duyuluyordu. Kendimi yıllardır köyü huzursuz eden ana yatak odasının kapısına çekilmiş buldum. Kont'un kapıyı duvar örerek kapattığı ve trajediyi meraklı gözlerden sakladığı söyleniyordu. Merdivenlerin tepesine ulaştığımda girişin yakınındaki sıvalarda küçük çatlaklar fark ettim. Daha yakından bakmak için diz çöktüm; kalbim kaburgalarıma çarpıyordu. Durgun havada asılı kalan, metalik ve keskin tuhaf bir koku vardı. Sanki odanın kendisi oksijen için çabalıyor ve on yıllardır gömülü kalmış bir hikayeyi anlatmak için can atıyordu.",
+      "Evin sessizliği mutlak olmasına rağmen söylenmemiş sözlerle ağırlaşmıştı. Dünyayı bu kadar uzun süre dışarıda tutan malzemelerin pürüzlü dokusunu hissederek tuğla işçiliğinin kenarından geçtim. Bir adam neden böyle bir yeri tamamen yok etmek yerine saklasın ki? Belki de acısını yakınında tutmak ve asil kalbinde hissettiği ihaneti sürekli kendine hatırlatmak istemişti. Pencere camlarını sarsan dışarıdaki rüzgarı dinleyerek uzun süre orada durdum. Kadın fısıltısına benzeyen, karanlıktan yükselen yumuşak ve kederli bir ses gibi geliyordu. Zihnim sorularla dolup taşıyordu ama gerçeğin bu tuğlaların ardına gizlendiğini biliyordum. Henüz onu ortaya çıkarmaya hazır değildim, ancak ev karanlık ve yalnız sırlarını bana çoktan açmaya başlamıştı.",
+      "Çantamdan ağır bir çekiç çıkardım, metal yorgun tenime karşı buz gibi hissediliyordu. Amacım basit ama korkutucuydu: Kont'un yıllar önce ördüğü duvarı kırmak. Duvarcılığa indirdiğim her darbe, sessiz konakta bir silah sesi gibi yankılanıyor, tavandan kalın bulutlar halinde toz dökülmesine neden oluyordu. Asla canlı eller tarafından açılması amaçlanmayan bir mezara giren bir hırsız gibi hissediyordum. Yine de Kontes'in gizemi damarlarımda bir ateş gibiydi ve sadece bu taşların cevaplayabileceği bir yanıt talep ediyordu. Tuğlalar gevşemeye başladığında, duvarın arkasında neredeyse yarım asırdır ışığa aç olan bir karanlık boşluk gördüm. Korkudan nefesim hızlandı, ama şimdi geri dönmeyi reddettim.",
+      "Duvar sonunda yıkıldı ve kurumuş çiçeklerin ve eski parfümlerin hafif, tatlı kokusunu taşıyan bayat, donmuş bir hava akımı saldı. Titreyen fenerimle delikten içeri baktım, zayıf ışık gölgelere karşı titriyordu. Küçük, dar odanın içinde şiddetle kısa kesilmiş bir hayatın kalıntılarını gördüm. Orada bir sandalye vardı ve üzerinde ipek bir elbisenin yırtık pırtık kalıntıları içinde giyinmiş, başı narin bir eline yaslanmış bir iskelet duruyordu. Ölümde bile trajik bir zarafeti koruyan Kontes'ti. Görüntü o kadar ürkütücü derecede güzeldi ki nasıl hareket edeceğimi unuttum. Zaman onu yok etmemişti; Kont'un onu tek başına ölüme terk ettiği bu havasız taş hapishanede kederini basitçe korumuştu.",
+      "Odaya adım attım, botlarım yerlerde gri bir kar gibi saçılmış olan düşmüş sıvaların üzerinde gıcırdadı. Mobilyalar, dışarıdaki köy tarafından çoktan unutulmuş bir zamanın karmaşık oymalarını gizleyen kalın bir toz tabakasıyla kaplıydı. Sıvaya tırnaklarıyla izler kazıdığı duvara baktım; asla gelmeyecek bir umut için savaşırken tırnakları aşınmıştı. Acısı için kalbim sızladı, kıskanç bir kocanın gururunun ve zalimliğinin esiriydi. Buradaki sessizlik artık boş değildi; son düşüncelerinin ağır yüküyle doluydu. Sonunda konağın sırrını açığa çıkarmıştım ama gerçek, artık tek başıma taşımam gereken bir yüktü. Karanlık bana doğru baskı yapıyor, ölüler için saygı talep ediyordu.",
+      "Karanlık odanın ortasında duruyor, geçmişin ezici ağırlığını omuzlarımda hissediyordum. Sessizlik adeta somut bir biçim almış gibi hava yoğun ve ağırdı. Duvarlara yakından baktım; Kontes'in sıvalara tırnaklarıyla kazıdığı çaresiz izleri gözlemledim. Her bir iz, dayanılmaz bir acının hikayesini, on yıllardır bu mezarda yankılanan sessiz bir çığlığı anlatıyordu. Kont'un sadece tuğlalardan bir duvar değil, sonsuz bir ıstırap duvarı ördüğünü o an anladım. Kadının son anları hala gözlerimin önünde yaşanıyormuş gibi, adamın eylemlerinin acımasızlığı hiç olmadığı kadar canlıydı. Sadece hayaletlerin var olmasına izin verilen bir alana izinsiz giren biri gibi hissettim ve soğuktan titredim.",
+      "Gözlerim, odanın gri tozuna karşı küçük bir renk cümbüşü oluşturan, ayaklarının dibinde duran solmuş bir çiçeğin kalıntılarına takıldı. Bu, Kont'un kıskançlığı burayı bir hapishaneye çevirmeden önce burada açan güzelliğin trajik bir kanıtıydı. Konağın mutlak sessizliğinde, elbisesinin hafif hışırtısını duyar gibi oldum. Kaderinin trajedisi artık evin kalıcı bir parçasıydı; duvarların temeline kazınmış bir sır. Odanın her ayrıntısı kişisel hissettiriyordu; sanki Kontes'in kendisi, son günlerinin acı verici hikayesinde bana rehberlik ediyordu. Masaya dokunmak için elimi uzattım, ancak bu hüzünlü huzuru bozmaktan korkarak bir an tereddüt ettim.",
+      "Aniden, ağır atmosfer artık dayanılmaz bir hal aldı ve bu keder yerini hemen terk etmem gerektiğini anladım. Bu denli derin bir yasın varlığında daha fazla kalamazdım; çünkü odanın karanlığı beni de aynı sona doğru çekiyor gibiydi. Sanki suyun altındaymışım gibi yavaş ve kararsız hareketlerle duvardaki boşluğa doğru ilerledim. Odayı terk etmek bir ihanet gibi hissettiriyordu ama kalmanın, trajedinin bir parçası olmak anlamına geldiğini biliyordum. Boşluktan geçtim ve konağın ana bölümüne döndüğümde havanın değiştiğini hissettim. Karanlık koridorlardan geri dönüş, bir rüyadan uyanmak gibiydi; zihnim, hiç gelmeyen bir kurtarılmayı beklerken orada oturan kadının görüntüsüyle doluydu.",
+      "Tozlu koridorlarda hızla yürüdüm, bir kez daha yüzümde güneşin sıcaklığını hissetmek için can atıyordum. Evin ağır sessizliği, beni karanlık kucağına geri çekmeye hevesli bir gölge gibi peşimden geliyordu. Ayaklarımın altında gıcırdayan her döşeme tahtası bir uyarı gibi tınlıyordu; köşkün, yaşayanlar tarafından keşfedilmesi hiç amaçlanmamış sırlar taşıdığını hatırlatıyordu. Kontesin sonunu bulduğu yere geri bakmaya cesaret edemedim, çünkü keşfin dehşeti zihnimde hâlâ yanıyordu. Koridordaki hava incelmiş gibi hissettiriyordu, ana girişe doğru ilerlerken nefes almamı zorlaştırıyordu. Buradan ayrılmanın, o soğuk taş duvarların içinde meydana gelen acıların hatırasını silmeyeceğini biliyordum.",
+      "Dış bahçeye ulaştığımda, serin esintiyi uzun zamandır kayıp bir dostummuş gibi yüzümde hissederek nefes nefese kaldım. Köşk arkamda duruyordu, karanlık ve sessiz; pencereleri her hareketimi izleyen boş gözler gibiydi. Kasaba halkının mülkü tanımlayan acımasız tarih hakkındaki gerçeği hiç öğrenip öğrenmeyeceğini ya da sonsuza dek sessizlik içinde çürüyüp gitmeyeceğini merak ettim. Sırrın ağırlığı kalbimde ağırlaştı, hayatımın geri kalanında taşımam gereken bir yük oldu. Mülkten uzaklaşmadan önce eski, çürüyen dış cepheye son bir kez baktım. Burası hayaletlerin ve tutulmamış sözlerin yeriydi; sevdiğini iddia ettiği her şeyi derinden yok eden bir adamın korkunç kıskançlığının bir anıtıydı.",
+      "Nihayet paslı demir kapıların dışına adım attığımda, dış dünya yeni tanık olduğum sefaletin yanında tuhaf bir şekilde uzak ve önemsiz göründü. Kontesin trajedisi, gururun ve saplantının tehlikeleri üzerine bir dersti; insan öfkesinin yıkıcı gücüne karşı uyaran karanlık bir masaldı. İnsanların güldüğü ve konuştuğu kasabanın hareketli sokaklarında yürüdüm; yakındaki köşkte saklanan iskeletten tamamen habersizlerdi. Onların cehaleti bir lütuf gibi hissettirdi, ancak o odanın içinde gördüklerimden dolayı değişmiş hissetmekten kendimi alamadım. Köşk ruhumun bir parçasını ele geçirmişti ve aşk kalp için bir hapishaneye dönüştüğünde bir evin nasıl kolayca mezara dönüşebileceğine dair derin bir anlayışla beni baş başa bırakmıştı."
+    ],
+    words: {
+      "mansion": "konak",
+      "secret": "sır",
+      "curiosity": "merak",
+      "neglect": "ihmal",
+      "tragedy": "trajedi",
+      "rumor": "söylenti",
+      "noble": "soylu",
+      "jealous": "kıskanç",
+      "possessive": "sahiplenici",
+      "reputation": "itibar",
+      "suspicious": "şüpheci",
+      "visitor": "ziyaretçi",
+      "overgrown": "yabani bitkilerle kaplı",
+      "trembling": "titreyen",
+      "suspicion": "şüphe",
+      "dread": "korku, dehşet",
+      "decaying": "çürüyen",
+      "stagnant": "durgun",
+      "masonry": "duvar işçiliği",
+      "banister": "merdiven tırabzanı",
+      "mournful": "kederli",
+      "betrayal": "ihanet",
+      "stale": "bayat",
+      "tattered": "yırtık pırtık",
+      "perish": "helak olmak",
+      "plaster": "sıva",
+      "cruelty": "zalimlik",
+      "overwhelming": "ezici",
+      "claw": "tırmalamak",
+      "eternal": "sonsuz",
+      "withered": "solmuş",
+      "profound": "derin",
+      "corridor": "koridor",
+      "embrace": "kucak",
+      "facade": "dış cephe",
+      "jealousy": "kıskançlık",
+      "misery": "sefalet",
+      "obsession": "saplantı"
+    }
+  }
+,
+  {
+    id: 'horror_cold_harbor',
+    title: "Cold Harbor",
+    author: 'Francis Brett Young',
+    level: 'B1',
+    coverUrl: '/covers/horror_cold_harbor.webp',
+    en: [
+      "The journey toward Cold Harbor began on a cold, grey afternoon in late autumn. Humphrey Challoner drove his car slowly along the winding, narrow roads of the English countryside. The sky was heavy with dark clouds, and the air felt damp against his skin. As he drove further away from the city, the landscape changed into a wild and lonely place of hills and deep valleys. He had been invited to stay with the Furnival family, people he had not seen for many years. He felt a strange sense of hesitation as he approached the house. It was not a feeling of simple nervousness, but something much deeper and more unsettling. The isolated location of the house made him wonder why anyone would choose to live so far from the rest of the world, hidden among these silent, grey hills.",
+      "When he finally arrived, the house stood like a dark shadow against the horizon. It was a massive, old building constructed from rough stones that looked as cold as ice. The windows were small and dark, reflecting nothing but the grey sky. Humphrey parked his car and stepped out, his feet crunching on the gravel path. There was no sound of birds or the wind in the trees; a complete silence surrounded the estate. It was as if the house itself held its breath, waiting for something to happen. He walked toward the heavy oak door, feeling the weight of the atmosphere pressing down on him. The architecture was unfriendly and imposing, suggesting that the inhabitants lived in a world removed from the joy and light of the ordinary lives he had known back in London.",
+      "He knocked on the heavy door, and the sound echoed like a gunshot in the stillness of the afternoon. After a moment, the door creaked open, revealing a hallway that was dimly lit by a single, flickering lamp. A servant stood there, her face expressionless and pale, watching him with cold, observant eyes. Humphrey felt a sudden chill run down his spine, a warning from his own instincts that something was fundamentally wrong with this place. He tried to smile, but his lips felt stiff, and his friendly greeting died in his throat. This was the home of his old friends, yet it felt more like a tomb than a residence. He stepped inside, feeling the warmth of his car vanish, replaced by the damp, metallic smell of old stone and ancient secrets that lingered in the stagnant air.",
+      "The interior of the house was even more oppressive than the exterior had suggested. Humphrey followed the silent servant through a long, narrow hallway where the walls were covered in dark wood panels that seemed to absorb the dim light. Every step he took on the uneven stone floor produced a hollow echo, sounding almost like a rhythmic heartbeat in the quiet house. There were no pictures or ornaments to make the place feel like a home, only shadows that gathered in the corners like living things waiting to be noticed. The air tasted of dust and something metallic, perhaps the scent of iron or decaying stone, which made his throat feel tight. He felt watched, not just by the servant, but by the very walls that stood firm against the passage of time and the warmth of life.",
+      "They eventually entered a large drawing room where the Furnivals were waiting. The room was cold, despite a fire burning weakly in the fireplace, offering little comfort to those nearby. Mr. Furnival stood by the window, his silhouette dark against the glass, while his wife sat motionless in a high-backed velvet chair. When they saw Humphrey, they rose to greet him, but their movements were slow and lacked any natural energy. There was a peculiar, waxen quality to their skin that made them look like figures from a museum rather than living people. They welcomed him with polite words, yet their eyes remained distant and unreadable, as if they were thinking about something far away from the present moment. Humphrey felt a wave of exhaustion wash over him, as if the room itself were draining his strength.",
+      "As the evening progressed, the atmosphere became even more difficult to bear. They sat in the dim light, discussing past events with a detachment that felt unnatural given the years that had passed since their last meeting. Mrs. Furnival spoke of their life in this isolated house, describing it as a place of refuge and quiet study, yet her voice lacked the warmth one would expect from a hostess. Humphrey tried to steer the conversation toward more pleasant topics, but every attempt was met with short, clipped replies that brought silence back into the room like a heavy blanket. He noticed a strange, constant vibration in the floorboards that hummed beneath his feet, a low frequency that made his head ache. The house seemed to pulse with a hidden energy, a dark secret that lived within the structure itself.",
+      "Humphrey tried to remain calm as the evening deepened into a thick and heavy night. The silence of the house was no longer just an absence of noise; it was an active force that seemed to press against his ears like deep water. He looked at the Furnivals, who sat perfectly still across from him, their faces pale and unmoving in the flickering candlelight. Mr. Furnival began to speak about the history of the property, mentioning ancient legends and the way time seemed to fold upon itself within these stone walls. His voice was dry and emotionless, lacking the natural rise and fall of human speech. Humphrey felt a cold shiver run down his spine, as if he were listening to a ghost reciting a story he had already heard many times before in his dark dreams.",
+      "As the conversation turned toward the past, Humphrey noticed something disturbing about the way the couple described their own lives. They spoke of the house not as a place where they lived, but as a place that kept them. Mrs. Furnival mentioned a presence that moved through the rooms at night, a companion that required total silence and obedience. She smiled, but the expression did not reach her eyes, which remained as cold and hard as polished glass. Humphrey felt his pulse quicken. He realized that the odd vibration he had felt earlier was becoming stronger, pulsing in time with the slow ticking of a grandfather clock in the hallway. It was as if the very foundations of the house were trying to communicate a warning that he was not yet able to understand or name.",
+      "Seeking a change in the atmosphere, Humphrey stood up and walked toward the tall, darkened window to look out at the landscape. Outside, the fog had rolled in completely, swallowing the gardens and the ancient trees in a suffocating gray embrace. He pressed his hand against the cold glass and noticed that his reflection looked strange, almost as if it belonged to someone else entirely. When he turned back to the room, he saw the Furnivals watching him with a hungry, intent focus that made his skin crawl. They were not merely hosts; they were guardians of a deep, ancient secret that thrived on the arrival of unsuspecting guests. The air in the room grew heavy with the scent of stagnant water and old earth, signaling that his isolation was now absolute and terrifyingly real.",
+      "The candles in the dining room flickered violently as if a sudden draft had rushed through the closed space, though the air remained perfectly still. Humphrey watched as Mr. Furnival carefully folded his napkin, his movements deliberate and precise like a clockwork machine. A strange, metallic smell filled the air, replacing the previous scent of stagnant water. Mrs. Furnival sat completely motionless, her eyes fixed on the empty space beside Humphrey, as if she were watching someone else enter the room. He felt an invisible weight pressing down on his shoulders, making it difficult to breathe or think clearly. The shadows in the corners seemed to grow longer and sharper, stretching across the floorboards to touch his feet. He realized then that the silence of the house was not empty, but filled with the intense, focused attention of things that should not exist.",
+      "He decided that he had to speak, to break the heavy spell that had fallen over them, but his throat felt dry and constricted. When he finally found his voice, it sounded small and fragile against the thick quiet of the room. He asked about the strange history of the property again, hoping to force them to reveal the truth behind their odd behavior. Mr. Furnival looked up slowly, his pale skin appearing almost transparent in the weak light. He began to whisper a tale about the original builders of Cold Harbor, men who had used dark rituals to bind their souls to the land. As he spoke, the temperature in the room dropped significantly, causing Humphrey to shiver uncontrollably. The Furnivals leaned forward, their faces illuminated by the dying embers in the fireplace, waiting for Humphrey to react to the terror.",
+      "Humphrey tried to stand, but his legs felt heavy and unresponsive, as if they were made of lead or stone. The room felt smaller now, the walls pulsing gently as if the house itself were drawing a long, slow breath. Mrs. Furnival stood up gracefully and moved toward the heavy wooden door, her movements silent and ghostly. She stopped and looked back, a chilling invitation hanging in the air between them, inviting him to explore the deepest part of the house. He knew that he was walking into a trap, yet he felt a magnetic force pulling him toward the darkness of the hallway. The grandfather clock in the distance struck midnight, each note echoing with a hollow, metallic sound that signaled the end of his safety. He realized that the nightmare had finally begun to unfold in the real world.",
+      "Humphrey followed Mrs. Furnival into the corridor, where the darkness seemed to cling to the walls like thick velvet. Each step he took felt heavier than the last, as if the floorboards were trying to pull him down into the foundations of the house. The air was cold and damp, smelling of old earth and something metallic, like ancient rusted iron. He could see Mrs. Furnival moving ahead, a pale shape flickering in the weak light of his small candle. She did not look back, her gait rhythmic and deliberate, leading him further away from the safety of the main rooms. Every shadow seemed to stretch toward him, fingers of darkness reaching out to catch his coat. He struggled to remain calm, but his heart beat frantically against his ribs, warning him of the danger that awaited in the hidden chambers.",
+      "The hallway ended at a heavy, iron-bound door that appeared to have been undisturbed for centuries. Mrs. Furnival stopped suddenly, her silhouette sharp against the gloom, and turned to look at him with eyes that seemed entirely empty. She gestured toward the door, her silence more terrifying than any scream. Humphrey hesitated, his hand trembling as he reached for the cold metal handle. As he pushed, the door groaned in protest, revealing a small, windowless chamber that smelled strongly of decay and something far worse. It was a place where time itself seemed to have stopped, holding onto secrets that were never meant to be uncovered by the living. The walls were covered in faded, strange symbols that seemed to shift and crawl whenever he looked at them directly, confusing his tired mind.",
+      "Inside the room, he saw an old desk covered in dusty parchments and instruments that looked like relics of a dark, forgotten science. Mrs. Furnival stood in the center of the room, waiting for his reaction to this grim discovery. He realized that the Furnivals were not merely guests or owners, but guardians of a gateway that should have remained locked. The weight of their presence pressed down on him, suffocating his thoughts and making him feel small and helpless in the face of such ancient malice. He tried to turn back, but the door behind him had swung shut, leaving him trapped in the darkness with the secrets of Cold Harbor. The silence was absolute now, broken only by his own ragged breathing, as he realized that the nightmare had truly claimed him as its new prisoner.",
+      "Humphrey stood frozen in the center of the stifling chamber, his eyes desperately scanning the shadows for a way out. The air felt thick, charged with an unnatural energy that made the hair on his arms stand up. Every corner of the room seemed to pulse with a low, vibrating hum, as if the very walls were breathing. Mrs. Furnival remained motionless, her face a mask of cold indifference that chilled him to his core. He could feel her gaze tracking his every move, a silent predator waiting for the final moment to strike. He realized then that the symbols etched into the stone were not merely decorations, but active seals meant to hold back something ancient. The silence of the room was not empty; it was heavy with the presence of things that had long ago ceased to be human.",
+      "He backed away, his hand fumbling against the rough texture of the wall until he found the heavy iron handle of the door. He pulled with all his remaining strength, but the door refused to move, held fast by a force that felt both physical and supernatural. He turned to face his captor, his voice cracking as he demanded an explanation for this madness. Mrs. Furnival only tilted her head slightly, a small, cruel smile playing on her pale lips. She spoke in a voice that sounded like dry leaves skittering across a tombstone, warning him that some doors, once opened, could never be closed again. She explained that his arrival was not an accident but a necessity, part of a cycle that demanded a new soul to sustain the dark life of the house.",
+      "Desperation gave Humphrey a sudden surge of courage, and he lunged toward the corner of the room where the instruments lay scattered. He grabbed a heavy metal tool, hoping to shatter the lock or perhaps defend himself against the woman who stood between him and freedom. As his fingers brushed the cold surface of the object, a shock of icy electricity surged through his entire body. The room began to spin violently, the strange symbols on the walls glowing with a fierce, sickly green light. He felt his consciousness slipping, his mind struggling to remain tethered to the reality he once knew. The walls seemed to melt away into the shadows, revealing a vast, endless void that stretched far beyond the physical boundaries of Cold Harbor, swallowing him completely into the hungry dark.",
+      "Humphrey blinked, finding himself collapsed upon the damp, cold grass of the hillside, far from the suffocating interior of Cold Harbor. The morning sun was beginning to climb over the horizon, casting a pale, weak light across the desolate landscape. He felt completely hollowed out, as if a large part of his very essence had been stolen by the malevolent force he had encountered. The house stood below him on the slope, looking strangely normal and quiet in the daylight, yet he knew the true darkness that resided within its walls. He struggled to stand, his limbs shaking uncontrollably, his heart rhythm irregular and frantic. The silence of the morning did not bring peace, but instead acted as a haunting reminder of the ancient, hungry presence that he had barely managed to escape from alive.",
+      "He staggered down the path toward the village, his mind replaying the terrifying cycle that Mrs. Furnival had described. Every step away from the house felt like a victory, yet a shadow of fear remained anchored deep within his soul. He realized that the horror of Cold Harbor was not something that simply ended with his departure. It was a persistent infection, a memory that would bleed into his future, coloring every shadow he encountered with the threat of the supernatural. The villagers he eventually encountered looked at him with strange, pitying eyes, sensing perhaps the shift in his spirit. He did not try to explain the madness he had witnessed; he simply knew that some stories were destined to remain buried, hidden behind the walls of that cursed, gray house forever.",
+      "As he finally reached the train station, he looked back one last time at the distant, lonely roof of the property. The building sat silently, seemingly indifferent to his escape, patiently waiting for the next traveler to cross its threshold. Humphrey boarded the carriage, closing his eyes against the image of Mrs. Furnival and the green glowing symbols that haunted his thoughts. He knew that even though he had left the building behind, the experience had permanently altered his perception of the world. He understood now that there are boundaries between life and death which should never be tested. He was a survivor, yet he felt like a ghost, wandering through a reality that felt far too thin to hold the weight of what he had truly seen."
+    ],
+    tr: [
+      "Cold Harbor'a doğru olan yolculuk, sonbaharın sonlarında soğuk ve gri bir öğleden sonra başladı. Humphrey Challoner, arabasını İngiliz kırsalının kıvrımlı ve dar yollarında yavaşça sürdü. Gökyüzü kara bulutlarla ağırdı ve hava tenine karşı nemli hissettiriyordu. Şehirden uzaklaştıkça, manzara tepeler ve derin vadilerden oluşan ıssız ve vahşi bir yere dönüştü. Uzun yıllardır görmediği Furnival ailesinin yanına kalmaya davet edilmişti. Eve yaklaştığında garip bir tereddüt hissi duydu. Bu sadece basit bir gerginlik değil, çok daha derin ve huzursuz edici bir şeydi. Evin izole konumu, insanların neden dünyanın geri kalanından bu kadar uzak, bu sessiz ve gri tepelerin arasında yaşamayı seçtiklerini merak etmesine neden oldu.",
+      "Nihayet vardığında, ev ufka karşı karanlık bir gölge gibi duruyordu. Buz gibi soğuk görünen kaba taşlardan inşa edilmiş, devasa ve eski bir binaydı. Pencereler küçük ve karanlıktı, gri gökyüzünden başka hiçbir şeyi yansıtmıyordu. Humphrey arabasını park etti ve çakıllı yolda ayaklarının sesiyle dışarı çıktı. Ağaçlarda ne kuşların sesi vardı ne de rüzgarın; araziyi tam bir sessizlik sarmıştı. Sanki evin kendisi nefesini tutmuş, bir şeylerin olmasını bekliyordu. Ağır meşe kapıya doğru yürüdü, atmosferin ağırlığını üzerinde hissederek. Mimari samimiyetsiz ve heybetliydi; sakinlerinin, Londra'da bildiği sıradan hayatların neşesinden ve ışığından uzak bir dünyada yaşadığını düşündürüyordu.",
+      "Ağır kapıyı çaldı ve ses, öğleden sonranın durgunluğunda bir silah sesi gibi yankılandı. Bir an sonra, kapı gıcırdayarak açıldı ve tek bir titrek lambayla loş bir şekilde aydınlanan bir koridoru ortaya çıkardı. Bir hizmetçi, yüzü ifadesiz ve solgun, soğuk ve gözlemci gözlerle ona bakarak orada duruyordu. Humphrey, omurgasından aşağı inen ani bir ürperti hissetti; içgüdülerinden, bu yerde temelden yanlış bir şeyler olduğuna dair bir uyarı. Gülümsemeye çalıştı ama dudakları sertleşti ve dostça selamı boğazında düğümlendi. Burası eski arkadaşlarının eviydi ama bir konuttan çok bir mezarı andırıyordu. İçeri adımını attı, arabasının sıcaklığının kaybolduğunu hissederek; yerini, durgun havada asılı kalan eski taşın ve kadim sırların nemli, metalik kokusuna bıraktı.",
+      "Evin içi, dışının hissettirdiğinden çok daha bunaltıcıydı. Humphrey, sessiz hizmetçiyi, loş ışığı emiyormuş gibi görünen koyu ahşap panellerle kaplı, uzun ve dar bir koridor boyunca takip etti. Düz olmayan taş zeminde attığı her adım, sessiz evde ritmik bir kalp atışı gibi çınlayan boş bir yankı oluşturuyordu. Evin, bir yuva gibi hissettirmesini sağlayacak hiçbir resim veya süs eşyası yoktu, yalnızca fark edilmeyi bekleyen canlı varlıklar gibi köşelerde toplanan gölgeler vardı. Hava toz ve belki de demir ya da çürüyen taş kokusu gibi metalik bir tat veriyordu; bu da boğazının düğümlenmesine neden oluyordu. Sadece hizmetçi tarafından değil, zamanın akışına ve hayatın sıcaklığına karşı dimdik duran duvarlar tarafından da izlendiğini hissetti.",
+      "Sonunda Furnival ailesinin beklediği geniş oturma odasına girdiler. Şöminede zayıf bir şekilde yanan ateşe rağmen oda soğuktu ve yakınındakilere pek bir rahatlık sunmuyordu. Bay Furnival pencerenin yanında, silüeti camın önünde karanlık bir şekilde dururken, karısı arkası yüksek kadife bir koltukta hareketsiz oturuyordu. Humphrey'i gördüklerinde onu karşılamak için ayağa kalktılar ancak hareketleri yavaştı ve doğal bir enerjiden yoksundu. Ciltlerinde, onları yaşayan insanlardan çok müze figürleri gibi gösteren tuhaf, balmumu benzeri bir nitelik vardı. Onu kibar sözlerle karşıladılar, ancak gözleri sanki şimdiki zamandan çok uzaktaki bir şeyi düşünüyorlarmış gibi mesafeli ve okunaksız kaldı. Humphrey, sanki odanın kendisi gücünü tüketiyormuş gibi bir yorgunluk dalgasına kapıldı.",
+      "Akşam ilerledikçe, atmosfer katlanılması daha zor bir hal aldı. Loş ışıkta oturuyor, son görüşmelerinden bu yana geçen yılları düşününce doğal olmayan bir mesafeyle geçmiş olayları konuşuyorlardı. Bayan Furnival, bu ıssız evdeki yaşamlarından bir sığınma ve sessiz çalışma yeri olarak bahsetti, ancak sesinde bir ev sahibinden beklenecek sıcaklık yoktu. Humphrey konuşmayı daha hoş konulara çekmeye çalıştı, ancak her denemesi, odaya ağır bir battaniye gibi sessizliği geri getiren kısa, kesik cevaplarla karşılandı. Ayaklarının altında uğuldayan, başını ağrıtan düşük frekanslı, yer döşemelerindeki tuhaf ve sürekli titreşimi fark etti. Ev, yapısının içinde yaşayan karanlık bir sır olan gizli bir enerjiyle nabız gibi atıyor gibi görünüyordu.",
+      "Akşam koyu ve ağır bir geceye dönüşürken Humphrey sakin kalmaya çalıştı. Evin sessizliği artık sadece gürültünün yokluğu değildi; kulaklarına derin su gibi baskı yapan aktif bir güçtü. Karşısında mükemmel bir hareketsizlikle oturan, yüzleri titreyen mum ışığında solgun ve kıpırtısız duran Furnival çiftine baktı. Bay Furnival, mülkün tarihinden, antik efsanelerden ve zamanın bu taş duvarlar arasında nasıl kendi içine katlandığından bahsetmeye başladı. Sesi kuru ve duygusuzdu, insan konuşmasının doğal yükseliş ve alçalışından yoksundu. Humphrey, sanki karanlık rüyalarında defalarca duyduğu bir hikayeyi okuyan bir hayaleti dinliyormuş gibi sırtından aşağı soğuk bir ürperti geçtiğini hissetti.",
+      "Sohbet geçmişe döndüğünde, Humphrey çiftin kendi hayatlarını anlatma biçimlerinde rahatsız edici bir şeyler fark etti. Evden, yaşadıkları bir yer olarak değil, onları tutan bir yer olarak bahsediyorlardı. Bayan Furnival, gece boyunca odalarda dolaşan, tam bir sessizlik ve itaat gerektiren bir varlıktan söz etti. Gülümsedi ancak bu ifade, cilalı cam kadar soğuk ve sert kalan gözlerine ulaşmadı. Humphrey nabzının hızlandığını hissetti. Daha önce hissettiği tuhaf titreşimin, koridordaki dede saatinin yavaş tıkırtısıyla uyumlu bir şekilde güçlendiğini fark etti. Sanki evin temelleri, henüz anlayamadığı veya adlandıramadığı bir uyarıyı iletmeye çalışıyordu.",
+      "Atmosferde bir değişiklik arayan Humphrey ayağa kalktı ve dışarıdaki manzaraya bakmak için yüksek, karanlık pencereye doğru yürüdü. Dışarıda sis tamamen çökmüş, bahçeleri ve antik ağaçları boğucu gri bir kucaklamayla yutmuştu. Elini soğuk cama bastırdığında yansımasının garip göründüğünü, sanki tamamen başka birine aitmiş gibi durduğunu fark etti. Odaya geri döndüğünde, Furnival çiftinin onu tüyler ürpertici, aç ve dikkatli bir odaklanmayla izlediğini gördü. Onlar sadece ev sahibi değillerdi; şüphelenmeyen misafirlerin gelişinden beslenen derin, antik bir sırrın muhafızlarıydılar. Odadaki hava, durgun su ve eski toprak kokusuyla ağırlaştı, bu da yalıtılmışlığının artık mutlak ve korkutucu bir şekilde gerçek olduğunu işaret ediyordu.",
+      "Yemek odasındaki mumlar, kapalı alanda aniden bir hava akımı esmiş gibi şiddetle titredi, oysa hava tamamen hareketsizdi. Humphrey, Bay Furnival'in peçetesini dikkatle katlayışını izledi; hareketleri bir saat mekanizması gibi planlı ve kusursuzdu. Durgun su kokusunun yerini alan garip, metalik bir koku havayı doldurdu. Bayan Furnival tamamen hareketsiz oturuyor, gözleri Humphrey'in yanındaki boşluğa, sanki odaya başka biri girmiş de onu izliyormuş gibi sabitlenmişti. Omuzlarına çöken görünmez bir ağırlık hissetti, nefes almasını ve net düşünmesini zorlaştırdı. Köşelerdeki gölgeler büyüyüp keskinleşiyor, yer döşemeleri üzerinde uzanarak ayaklarına dokunuyordu. İşte o an evin sessizliğinin boş olmadığını, var olmaması gereken şeylerin yoğun ve odaklanmış ilgisiyle dolu olduğunu anladı.",
+      "Üzerlerine çöken bu ağır büyüden kurtulmak için konuşması gerektiğine karar verdi ancak boğazı kuru ve düğümlenmiş hissediyordu. Sonunda sesini bulduğunda, odanın yoğun sessizliği karşısında küçük ve kırılgan duyuluyordu. Garip davranışlarının ardındaki gerçeği açıklamaya zorlamak amacıyla mülkün tuhaf tarihi hakkında tekrar soru sordu. Bay Furnival yavaşça başını kaldırdı; solgun teni zayıf ışıkta neredeyse şeffaf görünüyordu. Cold Harbor'ın ilk inşaatçıları hakkında, ruhlarını toprağa bağlamak için karanlık ayinler kullanan adamlar hakkında bir hikaye fısıldamaya başladı. O konuştukça odadaki sıcaklık belirgin bir şekilde düştü ve Humphrey'in kontrolsüzce titremesine neden oldu. Furnival çifti, şöminedeki sönen közlerin aydınlattığı yüzleriyle öne doğru eğildiler ve Humphrey'in bu dehşete vereceği tepkiyi beklemeye başladılar.",
+      "Humphrey ayağa kalkmaya çalıştı ama bacakları kurşundan veya taştan yapılmış gibi ağır ve tepkisizdi. Oda artık daha küçük görünüyor, duvarlar sanki evin kendisi derin ve yavaş bir nefes alıyormuş gibi hafifçe nabız gibi atıyordu. Bayan Furnival zarafetle ayağa kalktı ve ağır ahşap kapıya doğru, sessiz ve hayalet gibi hareketlerle yürüdü. Durup arkasına baktı; aralarındaki havada asılı kalan ürpertici bir davetle, onu evin en derin kısmını keşfetmeye çağırıyordu. Bir tuzağın içine yürüdüğünü biliyordu ama yine de bir manyetik gücün onu koridorun karanlığına doğru çektiğini hissetti. Uzaktaki büyük baba saati gece yarısını vurdu; her vuruş, güvenliğinin sona erdiğini işaret eden boş ve metalik bir sesle yankılandı. Kabusun artık gerçek dünyada yaşanmaya başladığını fark etti.",
+      "Humphrey, karanlığın duvarlara kalın bir kadife gibi tutunduğu koridorda Bayan Furnival'ı takip etti. Attığı her adım bir öncekinden daha ağır geliyordu; sanki yer döşemeleri onu evin temellerine doğru çekmeye çalışıyordu. Hava soğuk ve nemliydi; eski toprak ve antik, paslı demir gibi metalik bir şey kokuyordu. Bayan Furnival'ın, küçük mumunun zayıf ışığında titreyen soluk bir figür olarak ilerlediğini görebiliyordu. Arkasına bakmıyordu; ritmik ve kararlı yürüyüşüyle onu ana odaların güvenliğinden daha da uzaklaştırıyordu. Her gölge ona doğru uzanıyor, karanlığın parmakları paltosunu yakalamak ister gibi hareket ediyordu. Sakin kalmak için mücadele etti, ancak kalbi kaburgalarına karşı çılgınca çarpıyor, gizli odalarda onu bekleyen tehlikeye karşı onu uyarıyordu.",
+      "Koridor, yüzyıllardır dokunulmamış gibi görünen ağır, demir kuşaklı bir kapıda sona erdi. Bayan Furnival aniden durdu, karanlığa karşı keskinleşen siluetiyle, tamamen boş görünen gözlerle ona döndü. Kapıyı işaret etti; sessizliği herhangi bir çığlıktan daha korkutucuydu. Humphrey tereddüt etti, soğuk metal kolu tutarken eli titriyordu. İttiğinde kapı bir protesto gibi gıcırdadı ve çürümüş, hatta çok daha kötü bir şey kokan küçük, penceresiz bir odayı ortaya çıkardı. Zamanın durmuş gibi göründüğü, yaşayanlar tarafından asla keşfedilmemesi gereken sırları barındıran bir yerdi. Duvarlar, doğrudan baktığında hareket ediyor ve sürünüyormuş gibi görünen soluk, garip sembollerle kaplıydı, bu da onun yorgun zihnini bulandırıyordu.",
+      "Odanın içinde, tozlu parşömenlerle ve karanlık, unutulmuş bir bilimin kalıntıları gibi görünen aletlerle kaplı eski bir masa gördü. Bayan Furnival, bu kasvetli keşfe vereceği tepkiyi bekleyerek odanın merkezinde duruyordu. Furnival'ların sadece misafir veya ev sahibi değil, kilitli kalması gereken bir geçidin gardiyanları olduğunu fark etti. Varlıklarının ağırlığı üzerine çöktü, düşüncelerini boğdu ve böylesine antik bir kötülük karşısında kendisini küçük ve çaresiz hissetmesine neden oldu. Geri dönmeye çalıştı ama arkasındaki kapı kapanmıştı; Cold Harbor'ın sırlarıyla birlikte karanlıkta mahsur kalmıştı. Sessizlik artık mutlaktı; kabusun onu yeni tutsağı olarak sahiplendiğini fark ettiğinde, bu sessizlik sadece kendi kesik kesik nefes alışıyla bozuluyordu.",
+      "Humphrey, havasız odanın merkezinde donup kalmış, gözleri umutsuzca gölgelerin arasında bir çıkış yolu arıyordu. Hava ağırlaşmış, kollarındaki tüyleri diken diken eden doğal olmayan bir enerjiyle dolmuştu. Odanın her köşesi, sanki duvarlar nefes alıyormuş gibi düşük, titreşen bir uğultuyla çarpıyordu. Bayan Furnival hareketsizce duruyor, yüzü onu iliklerine kadar donduran soğuk bir kayıtsızlık maskesi gibi görünüyordu. Her hareketini takip eden bakışlarını hissedebiliyordu; bu, son darbeyi vurmak için bekleyen sessiz bir avcıydı. İşte o an, taşa kazınmış sembollerin sadece dekorasyon olmadığını, antik bir şeyi geri tutmak için yapılmış aktif mühürler olduğunu anladı. Odanın sessizliği boş değildi; uzun zaman önce insan olmayı bırakmış şeylerin varlığıyla ağırdı.",
+      "Geri çekildi, eli duvarın pürüzlü dokusuna sürtünerek kapının ağır demir kolunu bulana kadar arandı. Kalan tüm gücüyle asıldı ancak kapı, hem fiziksel hem de doğaüstü hissettiren bir güç tarafından tutulduğu için yerinden kıpırdamadı. Esir alan kişiye doğru döndü, sesi titreyerek bu delaletin açıklamasını istedi. Bayan Furnival sadece başını hafifçe eğdi, solgun dudaklarında küçük, zalim bir gülümseme belirdi. Mezar taşında gezinen kuru yapraklar gibi çıkan bir sesle, bazı kapıların bir kez açıldığında asla kapanamayacağı konusunda onu uyardı. Varışının bir kaza değil, bir zorunluluk olduğunu, evin karanlık yaşamını sürdürmek için yeni bir ruh talep eden bir döngünün parçası olduğunu açıkladı.",
+      "Çaresizlik Humphrey'e ani bir cesaret verdi ve aletlerin saçıldığı odanın köşesine doğru atıldı. Kilidi kırmak ya da belki de özgürlüğü ile arasında duran kadına karşı kendini savunmak umuduyla ağır bir metal aleti kavradı. Parmakları nesnenin soğuk yüzeyine değdiğinde, tüm vücuduna buz gibi bir elektrik şoku yayıldı. Oda şiddetle dönmeye başladı, duvarlardaki tuhaf semboller sert, hastalıklı bir yeşil ışıkla parlıyordu. Bilincinin kaydığını, zihninin bir zamanlar bildiği gerçekliğe tutunmaya çalıştığını hissetti. Duvarlar gölgelerin içinde eriyip gidiyor, Cold Harbor'ın fiziksel sınırlarının çok ötesine uzanan uçsuz bucaksız bir boşluğu ortaya çıkarıyor ve onu aç karanlığın içine tamamen yutuyordu.",
+      "Humphrey, Cold Harbor'un boğucu iç mekanından uzakta, yamacın nemli, soğuk çimlerine yığılmış bir halde gözlerini açtı. Sabah güneşi ufkun üzerinden tırmanmaya başlıyor, ıssız manzaranın üzerine soluk, zayıf bir ışık saçıyordu. Sanki özünün büyük bir kısmı karşılaştığı kötü niyetli güç tarafından çalınmış gibi tamamen boşalmış hissediyordu. Ev, yamaçta aşağıda duruyordu, gün ışığında tuhaf bir şekilde normal ve sessiz görünüyordu ancak duvarlarının içinde barınan gerçek karanlığı biliyordu. Ayağa kalkmak için çabaladı, uzuvları kontrolsüzce titriyor, kalp ritmi düzensiz ve çılgıncaydı. Sabahın sessizliği huzur getirmedi, aksine canlı olarak zorlukla kaçmayı başardığı o kadim, aç varlığın unutulmaz bir hatırlatıcısı olarak hareket etti.",
+      "Köye doğru giden yolda, zihni Mrs. Furnival'in tarif ettiği korkunç döngüyü tekrar yaşayarak sendeleyerek yürüdü. Evden atılan her adım bir zafer gibi hissettirse de, korkunun bir gölgesi ruhunun derinliklerine demirlenmiş bir halde kaldı. Cold Harbor'un dehşetinin sadece gidişiyle sona eren bir şey olmadığını fark etti. Bu ısrarcı bir enfeksiyondu, karşılaştığı her gölgeyi doğaüstü tehditle renklendiren, geleceğine sızacak bir hatıraydı. Sonunda karşılaştığı köylüler, belki de ruhundaki değişimi sezinleyerek ona tuhaf, acıyan gözlerle baktılar. Tanık olduğu çılgınlığı açıklamaya çalışmadı; sadece bazı hikayelerin o lanetli, gri evin duvarlarının arkasında sonsuza dek gömülü kalmaya mahkum olduğunu biliyordu.",
+      "Sonunda tren istasyonuna vardığında, mülkün uzak, yalnız çatısına son bir kez baktı. Bina sessizce oturuyor, kaçışına kayıtsız görünüyor, bir sonraki yolcunun eşiğinden geçmesini sabırla bekliyordu. Humphrey vagonuna bindi ve düşüncelerine musallat olan Mrs. Furnival ile yeşil parlayan sembollerin görüntüsüne karşı gözlerini kapattı. Binayı geride bırakmış olsa bile, bu deneyimin dünyayı algılayışını kalıcı olarak değiştirdiğini biliyordu. Artık yaşam ile ölüm arasında asla test edilmemesi gereken sınırlar olduğunu anlıyordu. O bir kurtulandı, ancak yine de gerçekte gördüğü şeyin ağırlığını taşıyamayacak kadar ince hissettiren bir gerçeklikte dolaşan bir hayalet gibi hissediyordu."
+    ],
+    words: {
+      "hesitation": "tereddüt",
+      "isolated": "izole, yalnız",
+      "horizon": "ufuk",
+      "imposing": "heybetli, etkileyici",
+      "stagnant": "durgun, hareketsiz",
+      "lingered": "asılı kalmak, gitmemek",
+      "oppressive": "baskıcı, bunaltıcı",
+      "rhythmic": "ritmik",
+      "silhouette": "siluet",
+      "waxen": "balmumu gibi solgun",
+      "detachment": "mesafeli olma durumu",
+      "vibration": "titreşim",
+      "flickering": "titreyen, yanıp sönen",
+      "shiver": "ürperti",
+      "foundation": "temel, yapı taşı",
+      "suffocating": "boğucu",
+      "deliberate": "planlı, kasti",
+      "constricted": "daralmış, sıkışmış",
+      "transparent": "şeffaf, saydam",
+      "unresponsive": "tepkisiz",
+      "echoing": "yankılanan",
+      "corridor": "koridor",
+      "foundations": "temeller",
+      "gait": "yürüyüş",
+      "decay": "çürüme",
+      "malice": "kötülük",
+      "stifling": "boğucu",
+      "indifference": "kayıtsızlık",
+      "predator": "avcı",
+      "supernatural": "doğaüstü",
+      "desperation": "çaresizlik",
+      "tethered": "bağlı",
+      "desolate": "ıssız",
+      "malevolent": "kötü niyetli",
+      "persistent": "ısrarcı",
+      "indifferent": "kayıtsız",
+      "threshold": "eşik",
+      "perception": "algı"
+    }
+  }
+,
+  {
+    id: 'horror_body_snatcher',
+    title: "The Body Snatcher",
+    author: 'Robert Louis Stevenson',
+    level: 'B2',
+    coverUrl: '/covers/horror_body_snatcher.webp',
+    en: [
+      "The George Inn at Debenham was a place where silence seemed to cling to the walls like thick ivy. It was a cold, bitter night in December when Fettes, a man whose face held the deep, permanent lines of a long-hidden secret, sat by the fireplace. He was nursing a glass of brandy, his eyes fixed on the dying embers as if he were trying to read a tragic prophecy in the shifting ash. Outside, the wind howled through the narrow, twisting streets of the town, rattling the windows with a persistent, ghostly rhythm. Fettes felt the chill not just from the winter air, but from a memory that refused to stay buried. He was an elderly man now, yet when the door creaked open, he jumped with the nervous energy of a frightened child, his heart racing with the sudden, sharp reminder of his dark and complicated youth.",
+      "A stranger named Macfarlane entered the room, his presence immediately changing the atmosphere. Though they had not met for many years, a look of recognition passed between them that was as sharp as a blade. Both men were aged, yet they shared a history that made them feel like prisoners bound by invisible chains. They sat in the dim light, the silence between them heavy with the weight of unspoken events. Macfarlane, wealthy and seemingly successful, could not hide the trembling in his hands or the way his eyes darted toward the shadows. It was as if they were both waiting for a ghost to walk through the door, a spectre from the days when they were young students in Edinburgh, involved in practices that the world would call monstrous, but which they knew as cold necessity.",
+      "Years ago, in the grey, rainy streets of the Scottish capital, the two men had served under a brilliant but ethically bankrupt professor. They were medical students, driven by ambition and a lack of moral compass, caught in a system where the pursuit of science required a supply of cadavers that the legal authorities could not provide. They were not mere observers; they were active participants in the grim trade of resurrection, a business where death was merely a resource to be harvested. Fettes remembered the smell of the damp earth and the heavy, metallic tang of blood that had once been his constant companion. Tonight, those memories clawed their way to the surface, reminding him that though the graves were filled with soil, the sins they had committed remained stubbornly, horribly alive.",
+      "The memory of the lecture hall remained etched into Fettes' mind, vivid and cold as stone. He recalled the tall, thin figure of the professor, a man whose hands moved with the precision of a surgeon but whose soul seemed entirely absent. In those days, the demand for bodies for dissection was insatiable, and the legal supply was tragically inadequate. The professor, a man of cold intellect, taught his students that morality was a luxury they could not afford if they wished to push the boundaries of medical science. Fettes and Macfarlane were his most diligent pupils, absorbing these dark lessons with a disturbing eagerness. They learned that the human frame was not a sacred vessel, but merely a biological machine, waiting to be dismantled to reveal the secrets of illness and anatomy hidden beneath the skin.",
+      "As the months passed, the desperation for new subjects grew until it dominated their existence. They found themselves wandering through the dark, mist-filled graveyards after midnight, searching for the soft earth that marked a recent burial. The act of resurrection, as they called it with a twisted sense of pride, required nerves of steel and an absolute rejection of traditional empathy. They worked in the oppressive darkness, shoveling away the heavy soil with frantic energy while the wind whistled through the leafless trees like a chorus of grieving spirits. It was a trade of terror and shadows, where the boundary between the living and the dead became dangerously thin. Every successful night brought them closer to the professor's favour, but further from the men they had once hoped to become.",
+      "Macfarlane was always the one who showed the least hesitation when they encountered the most gruesome aspects of their work. While Fettes often felt a lingering sense of guilt, Macfarlane treated every stolen body as a mere object of scientific inquiry. He would joke about the features of the deceased, mocking the dignity of those who had passed away, while Fettes watched in silent, growing horror. They were young, reckless, and hungry for success, oblivious to the fact that their hands were stained with a darkness that no amount of scrubbing could ever wash away. The professor rewarded their efficiency with praise that felt like poison, feeding their ambition until it warped into something truly monstrous. They were becoming ghosts themselves, haunting the very cemeteries they looted under the cloak of the pale, unforgiving moon.",
+      "The atmosphere within the dissecting room grew heavier with every passing week, thick with the sharp, metallic scent of chemicals and the decay of subjects long abandoned. Macfarlane had begun to display a reckless confidence, often arriving at the laboratory with a terrifyingly casual demeanor after a night of digging. He spoke of the task not as a grim necessity, but as a thrilling hunt, his laughter echoing off the cold stone walls with a hollow resonance that chilled Fettes to the bone. They were no longer merely students of anatomy; they had transformed into predators lurking in the periphery of society. The professor watched their progress with eyes that betrayed nothing, his silence serving as a tacit endorsement of their increasingly macabre activities, while the moral boundaries they once respected continued to crumble into the dust of the graveyard floor.",
+      "One particularly stormy night, the need for a fresh subject became an overwhelming obsession that compelled them back into the mud and rain. The graveyard was a chaotic landscape of shifting shadows, with the wind howling through the twisted branches of old oaks like a spectral warning they chose to ignore. As they uncovered the wooden coffin, the wood splintered with a sound that felt deafening in the stillness, and for a moment, Fettes stood frozen, caught in the grip of a primal terror. Macfarlane, however, remained untouched by such hesitations. He pushed forward, his movements efficient and utterly devoid of mercy, his face a pale mask illuminated only by the intermittent flashes of lightning. The body they pulled from the earth was cold, but the intensity of their shared secret burned hotter than any flame of ambition.",
+      "Returning to the city with their morbid prize, they felt the weight of their crime press against their chests like a physical burden. Every shuttered window they passed seemed to watch them with judging eyes, and the rhythmic clicking of their cart wheels on the cobblestones sounded like a relentless drumbeat of guilt. Back at the college, they deposited the burden in the shadows of the basement, a place where the light of reason could not reach. Macfarlane wiped his hands clean, a cruel smile playing on his lips as he looked at the professor, who waited for them in the dim glow of a single lantern. They were bound together now by a chain of iron and blood, a partnership forged in the darkness that neither of them could ever truly hope to escape.",
+      "As the nights grew colder and the winter fog descended upon the city, the atmosphere between the two men became increasingly tense. Fettes found himself unable to sleep, haunted by the ghost of the woman they had unearthed from her final resting place. He watched Macfarlane with a growing sense of suspicion, noticing how his companion moved with a newfound, dark confidence that bordered on insanity. The laboratory, once a sanctuary of scientific discovery, had morphed into a tomb of unspoken secrets and lingering dread. Every shadow in the corner seemed to take a human shape, and the silence of the building was frequently broken by the distant, mournful cries of the wind outside. They worked in a state of constant, fragile agitation, knowing that their secret was a powder keg waiting for a spark.",
+      "One evening, a stranger arrived at the laboratory, his appearance as unsettling as the winter chill. He was a man with a scarred face and eyes that held the sharp, predatory gleam of a wolf. Macfarlane recognized him immediately, though he did not greet him with warmth. The stranger, whose name was Gray, possessed a strange and dangerous knowledge of their recent activities. He spoke with a familiarity that made Fettes shiver, suggesting that he had seen them in the graveyard under the cover of darkness. The power dynamic in the room shifted instantly as Gray began to make veiled threats, demanding a share of their dark prosperity. Macfarlane attempted to maintain his composure, but his clenched fists revealed a simmering rage that threatened to explode at any moment.",
+      "Fettes stood aside, observing the confrontation with a heart full of heavy apprehension. He realized that they were no longer the masters of their own destiny, as Gray had effectively trapped them in a web of blackmail. The stranger’s presence acted as a dark mirror, reflecting the true horror of their crimes back upon them. As the conversation continued, the air grew thick with unspoken violence and the suffocating weight of impending ruin. Macfarlane eventually conceded to some of Gray's demands, but the interaction left a bitter taste of helplessness in their mouths. They had believed they were escaping the laws of man and God, yet they had only succeeded in creating a new master for themselves. The walls of the college seemed to press closer, as if the very stones were aware of the rot growing within.",
+      "The arrival of Gray brought a permanent shadow over their lives. Every day felt like a slow march toward an inevitable disaster. Macfarlane began to lose his grip, his eyes darting toward the door whenever a floorboard creaked in the dark hallways. He spent hours pacing the small room, nursing a glass of strong spirits as if trying to drown the memory of their terrible deeds. Fettes watched his partner fall apart, feeling a strange mixture of pity and revulsion. The work at the laboratory continued, but it was hollow and joyless. They were no longer scientists exploring the secrets of anatomy; they were merely scavengers hiding from a monster of their own creation. The weight of their guilt, combined with the constant fear of Gray’s return, turned their nights into endless cycles of silence and paranoia.",
+      "Gray became a frequent, unwelcome visitor, arriving at the most inconvenient hours with demands that grew increasingly bold. He treated the laboratory as his personal treasury, expecting a steady flow of money for his silence. Macfarlane often argued, his voice trembling with a mixture of terror and hidden hatred, but Gray always silenced him with a simple look or a chilling reminder of the graves they had disturbed. Fettes felt like a prisoner in his own life, bound by the terrible secrets that he and Macfarlane shared. The air in the city felt heavy with the scent of decay, and the fog seemed to hold the echoes of their crimes. Every face they passed in the street looked like a potential accuser, watching them with eyes that knew exactly what they had done under the pale moonlight.",
+      "As winter deepened, the tension between the men reached a critical point. One night, after another confrontation with Gray, Macfarlane sat in the corner of the lab with a look of pure desperation on his face. He began to speak of extreme measures, his words jagged and cruel. Fettes realized that his companion had crossed a threshold from which there was no return. The moral decay had taken hold, replacing the once ambitious student with a cold and calculated predator. The darkness of the room seemed to swallow their remaining humanity, leaving only the cold logic of survival. They looked at each other, not as partners in science, but as two desperate souls trapped in a nightmare. The silence of the city outside was deafening, as if the world were holding its breath, waiting for the final tragedy to unfold.",
+      "The bitter cold of the night air bit into their skin as the carriage rattled forward along the uneven, lonely road leading to Glencorse. Macfarlane sat in the shadows of the vehicle, his face rigid and his gaze fixed firmly on the dark path ahead. Beside him, Fettes felt a rising wave of sickness that he could hardly contain. They were on a mission that felt like a descent into the deepest pits of hell. The plan was set: they were to meet Gray, who waited with another grim delivery. Every turn of the wheels seemed to pull them further away from the life they once knew and deeper into an abyss of irredeemable sin. The horse struggled against the biting wind, its breath visible like ghosts in the freezing moonlight as they drew closer to the silent, waiting forest.",
+      "Upon reaching the designated meeting spot, the silence of the woods felt heavy and unnatural. A solitary lantern glowed in the distance, casting long, twisted shadows against the gnarled tree trunks. Gray was there, leaning against the carriage that held the object of their dread. His laughter, dry and rattling like dead leaves, broke the stillness of the midnight hour. Macfarlane approached him with a sudden, sharp intensity, his movements devoid of any hesitation. The bargain they had struck was simple, yet the price felt heavy enough to crush their very souls. Fettes remained behind, his heart hammering against his ribs like a trapped bird, watching the two figures merge into one dark, singular silhouette of malice. He knew that the final act of their terrible collaboration had truly begun at this lonely, desolate place.",
+      "They carefully loaded the heavy, shrouded burden into their own carriage, the task performed with a terrifying efficiency that spoke of long practice. Gray stood back, his eyes gleaming with a mix of cruel satisfaction and hidden danger. There was a brief exchange of coin, a transaction that felt like the final seal on their ruin. Macfarlane did not utter a word to the man, but his knuckles were white as he gripped the side of the wooden bench. As they turned to depart, the horse reared, disturbed by the unnatural weight it was forced to carry. The air turned colder, if that were even possible, and the surrounding trees seemed to lean in, as if to witness the continuation of their dark history. They were no longer merely students or surgeons; they were now forever linked to the grave.",
+      "The journey back to Edinburgh was a blur of shadows and mounting terror. Fettes sat huddled in the corner, unable to shake the feeling that their cargo was watching him from beneath the heavy, dark canvas. Macfarlane drove with a desperate, frantic energy, his eyes wide and unblinking as they moved through the silent countryside. Every sudden movement of the carriage, every creak of the aging wood, sent a fresh shock of adrenaline through Fettes' veins. He looked at the shape beside him, realizing that his own hand was now stained with the same ink of guilt that marked his companion. They were moving through the darkness not as men of science, but as fugitives from a moral law that could no longer protect them from the consequences of their choices.",
+      "As the first rays of gray light began to pierce the horizon, they finally reached the outskirts of the city. The atmosphere inside the carriage changed as they prepared to inspect the contents of their grim parcel one last time. Fettes felt his stomach churn with an overwhelming sense of dread. With trembling hands, Macfarlane pulled back the coarse material, revealing the pale, lifeless features of the body they had collected. But to their absolute horror, the face that stared back at them was not the one they had expected. Instead of the expected subject, the lifeless eyes of Gray himself gazed up at them from the bottom of the cart. The realization struck Fettes like a physical blow, leaving him gasping for air as the true meaning of the night unfolded.",
+      "Macfarlane’s face transformed into a mask of pure, unadulterated madness upon witnessing the impossible sight. He had been tricked, not by a ghost, but by the cruel irony of fate and the violent end of his own accomplice. The silence between them grew thick and suffocating as the carriage rolled slowly into the deserted city streets. Fettes scrambled away from the body, his mind spinning with the weight of the dark secret that would haunt him for the remainder of his life. They arrived at their destination, but the path forward had vanished into the mist of time and trauma. Fettes escaped into the morning, leaving his past and his humanity behind, forever pursued by the spectral memory of the body snatcher who had finally become his own prize."
+    ],
+    tr: [
+      "Debenham'daki George Hanı, sessizliğin kalın bir sarmaşık gibi duvarlara yapıştığı bir yerdi. Fettes'in yüzünde derin, kalıcı ve uzun süredir saklanan bir sırrın çizgileri vardı. Aralık ayının soğuk ve keskin bir gecesinde şöminenin başında oturuyordu. Bir kadeh konyak içiyor, gözlerini tıpkı küllerin içindeki trajik bir kehaneti okumaya çalışıyormuş gibi sönmekte olan korlara dikmişti. Dışarıda rüzgar, kasabanın dar ve dolambaçlı sokaklarında uluyor, pencereleri ısrarcı, hayaletimsi bir ritimle tıkırdatıyordu. Fettes sadece kış havasından değil, gömülü kalmayı reddeden bir hatıradan kaynaklanan bir ürperti hissediyordu. Artık yaşlı bir adamdı ancak kapı gıcırdayarak açıldığında, karanlık ve karmaşık gençliğinin ani, keskin hatırlatıcısıyla kalbi hızlanarak ürkmüş bir çocuk gibi yerinden sıçradı.",
+      "Macfarlane adında bir yabancı odaya girdi ve varlığı ortamın atmosferini anında değiştirdi. Yıllardır görüşmemiş olsalar da aralarında bir bıçak kadar keskin bir tanışıklık bakışı geçti. Her iki adam da yaşlanmıştı ancak onları görünmez zincirlerle bağlı mahkumlar gibi hissettiren ortak bir geçmişe sahiplerdi. Loş ışıkta oturdular; aralarındaki sessizlik, dile getirilmemiş olayların ağırlığıyla yoğundu. Varlıklı ve görünüşte başarılı olan Macfarlane, ellerindeki titremeyi ya da gözlerinin gölgelere doğru kaymasını gizleyemiyordu. İkisi de sanki kapıdan bir hayaletin, Edinburgh'da genç birer öğrenciyken dünyaya canavarca gelecek ama kendilerinin soğuk bir zorunluluk olarak gördüğü işlere bulaştıkları günlerden kalma bir ruhun girmesini bekliyorlardı.",
+      "Yıllar önce İskoçya'nın başkentinin gri ve yağmurlu sokaklarında, iki adam parlak ama ahlaki açıdan iflas etmiş bir profesörün emrinde çalışmışlardı. Onlar, hırs ve ahlaki pusula eksikliğiyle hareket eden, bilimin peşinden gitmenin yasal makamların sağlayamayacağı kadar çok kadavra gerektirdiği bir sistemin içine düşmüş tıp öğrencileriydi. Sadece gözlemci değillerdi; ölümün sadece hasat edilecek bir kaynak olduğu diriltme ticaretinin aktif katılımcılarıydılar. Fettes, nemli toprağın kokusunu ve bir zamanlar sürekli yol arkadaşı olan kanın ağır, metalik tadını hatırlıyordu. Bu gece, o hatıralar yüzeye doğru pençelerini attı ve ona mezarların toprakla doldurulmuş olmasına rağmen işledikleri günahların inatla ve korkunç bir şekilde yaşamaya devam ettiğini hatırlattı.",
+      "Derslikteki o hatıralar Fettes'in zihnine taş kadar soğuk ve canlı bir şekilde kazınmıştı. Cerrah titizliğiyle hareket eden ancak ruhu tamamen yokmuş gibi görünen o uzun, ince profesörü hatırladı. O günlerde diseksiyon için ceset talebi doyurulamazdı ve yasal arz trajik bir şekilde yetersiz kalıyordu. Soğuk bir zekaya sahip olan profesör, öğrencilerine tıp biliminin sınırlarını zorlamak istiyorlarsa ahlakın karşılayamayacakları bir lüks olduğunu öğretti. Fettes ve Macfarlane, bu karanlık dersleri ürkütücü bir hevesle özümseyen en çalışkan öğrencilerdi. İnsan bedeninin kutsal bir kap değil, sadece hastalıkların ve derinin altındaki anatomik sırları ortaya çıkarmak için parçalanmayı bekleyen biyolojik bir makine olduğunu öğrendiler.",
+      "Aylar geçtikçe yeni deneklere duyulan ihtiyaç, varlıklarını domine edecek kadar büyüdü. Kendilerini gece yarısından sonra sisli, karanlık mezarlıklarda, taze bir gömüyü işaret eden yumuşak toprağı ararken buldular. Çarpık bir gururla diriltme adını verdikleri bu eylem, çelik gibi sinirler ve geleneksel empati duygusunun mutlak reddini gerektiriyordu. Rüzgar çıplak ağaçların arasından yas tutan ruhlar korosu gibi ıslık çalarken, onlar yoğun karanlıkta çılgınca bir enerjiyle ağır toprağı kazdılar. Bu, yaşayanlarla ölüler arasındaki sınırın tehlikeli bir şekilde inceldiği, dehşet ve gölgelerle dolu bir ticaretti. Her başarılı gece onları profesörün gözüne girmeye daha da yaklaştırıyor, ancak bir zamanlar olmayı umut ettikleri insanlardan daha da uzaklaştırıyordu.",
+      "İşlerinin en ürkütücü yanlarıyla karşılaştıklarında en az tereddüt eden kişi her zaman Macfarlane olurdu. Fettes genellikle bir suçluluk duygusu hissederken, Macfarlane çalınan her cesede sadece bilimsel bir inceleme nesnesi olarak bakardı. Fettes sessiz ve büyüyen bir dehşet içinde izlerken, Macfarlane vefat edenlerin özellikleriyle şakalaşır, ölenlerin onuruyla alay ederdi. Genç, pervasız ve başarıya açtılar; ellerinin hiçbir temizlikle yıkanamayacak bir karanlıkla lekelendiği gerçeğinden habersizdiler. Profesör, verimliliklerini zehir gibi gelen övgülerle ödüllendirerek, hırslarını gerçekten korkunç bir şeye dönüşene kadar besledi. Solgun ve acımasız ayın altında yağmaladıkları mezarlıklara musallat olan hayaletlerin kendilerine dönüşüyorlardı.",
+      "Diseksiyon odasındaki atmosfer, her geçen hafta kimyasalların keskin, metalik kokusu ve uzun süre terk edilmiş deneklerin çürümesiyle daha da ağırlaştı. Macfarlane, bir gece süren kazı çalışmalarının ardından laboratuvara dehşet verici derecede rahat bir tavırla gelerek pervasız bir özgüven sergilemeye başlamıştı. İşi kasvetli bir zorunluluk olarak değil, heyecan verici bir av olarak nitelendiriyor, kahkahaları soğuk taş duvarlarda Fettes'in iliklerine işleyen boş bir yankıyla çınlıyordu. Artık sadece anatomi öğrencisi değillerdi; toplumun kıyısında gizlenen yırtıcılara dönüşmüşlerdi. Profesör, ilerlemelerini hiçbir duygu belirtisi göstermeyen gözlerle izliyor, sessizliği giderek daha korkunç hale gelen faaliyetlerine zımni bir onay niteliği taşıyordu; bu sırada bir zamanlar saygı duydukları ahlaki sınırlar mezarlık toprağının tozuna karışıp yok olmaya devam ediyordu.",
+      "Özellikle fırtınalı bir gecede, yeni bir denek ihtiyacı onları çamurun ve yağmurun içine geri dönmeye zorlayan karşı konulmaz bir saplantı haline geldi. Mezarlık, eski meşelerin kıvrımlı dalları arasında bir hayalet uyarısı gibi uluyan rüzgarla, yer değiştiren gölgelerin olduğu kaotik bir manzaraydı; ancak onlar bu uyarıyı görmezden gelmeyi seçtiler. Ahşap tabutu açtıklarında, tahtalar sessizlikte sağır edici bir sesle parçalandı ve Fettes bir an için ilkel bir korkunun pençesinde donup kaldı. Ancak Macfarlane, bu tür tereddütlerden etkilenmedi. Yalnızca ara sıra çakan şimşeklerin aydınlattığı solgun yüzüyle, hareketleri verimli ve merhametten tamamen yoksun bir şekilde ilerledi. Topraktan çıkardıkları beden soğuktu ama paylaştıkları sırrın yoğunluğu, herhangi bir hırs ateşinden daha sıcak yanıyordu.",
+      "Ürkütücü ganimetleriyle şehre dönerken, işledikleri suçun ağırlığını göğüslerinde fiziksel bir yük gibi hissettiler. Geçtikleri her kapalı pencere onları yargılayan gözlerle izliyor gibiydi ve taş yollardaki el arabası tekerleklerinin ritmik tıklaması, bitmek bilmeyen bir suçluluk davulu gibi geliyordu. Koleje döndüklerinde, yüklerini aklın ışığının ulaşamadığı bodrum katının gölgelerine bıraktılar. Macfarlane ellerini temizledi; tek bir fenerin loş ışığında onları bekleyen profesöre bakarken dudaklarında acımasız bir gülümseme vardı. Artık demirden ve kandan bir zincirle birbirlerine bağlanmışlardı; karanlıkta dövülmüş ve ikisinin de asla gerçekten kurtulamayacağı bir ortaklık başlamıştı.",
+      "Geceler soğudukça ve kış sisi şehrin üzerine çöktükçe, iki adam arasındaki atmosfer giderek daha gergin bir hale geldi. Fettes, huzur içinde yattığı son uykusundan çıkardıkları kadının hayaleti tarafından rahatsız edilerek uyuyamaz hale geldi. Macfarlane'i, deliliğin sınırlarında dolaşan yeni ve karanlık bir özgüvenle hareket ettiğini fark ederek, büyüyen bir şüphe duygusuyla izliyordu. Bir zamanlar bilimsel keşiflerin sığınağı olan laboratuvar, artık söylenmemiş sırların ve kalıcı dehşetin bir mezarına dönüşmüştü. Köşedeki her gölge insan şeklini alıyor gibi görünüyordu ve binanın sessizliği dışarıdaki rüzgarın uzak ve hüzünlü çığlıklarıyla sık sık bozuluyordu. Sırlarının bir kıvılcım bekleyen barut fıçısı olduğunu bilerek, sürekli ve kırılgan bir huzursuzluk içinde çalışıyorlardı.",
+      "Bir akşam, dışarıdaki kış soğuğu kadar rahatsız edici bir görünüme sahip bir yabancı laboratuvara geldi. Yüzü yaralı ve gözlerinde kurdun keskin, yırtıcı parıltısı olan bir adamdı. Macfarlane onu hemen tanıdı, ancak onu sıcak bir şekilde karşılamadı. Gray adındaki bu yabancı, onların son faaliyetleri hakkında garip ve tehlikeli bir bilgiye sahipti. Fettes'in ürpermesine neden olan bir aşinalıkla konuşuyor, onları karanlığın örtüsü altında mezarlıkta gördüğünü ima ediyordu. Gray üstü kapalı tehditler savurmaya ve karanlık zenginliklerinden pay talep etmeye başladığında, odadaki güç dengesi anında değişti. Macfarlane soğukkanlılığını korumaya çalıştı, ancak sıkılı yumrukları her an patlamaya hazır olan öfkesini ele veriyordu.",
+      "Fettes, bu yüzleşmeyi ağır bir endişeyle kenardan izledi. Gray'in onları etkili bir şekilde şantaj ağına düşürdüğünü, artık kendi kaderlerinin efendisi olmadıklarını fark etti. Yabancının varlığı, suçlarının gerçek dehşetini onlara geri yansıtan karanlık bir ayna görevi görüyordu. Konuşma devam ettikçe, hava söylenmemiş şiddet ve yaklaşan yıkımın boğucu ağırlığıyla yoğunlaştı. Macfarlane sonunda Gray'in bazı taleplerini kabul etti, ancak bu etkileşim ağızlarında acı bir çaresizlik tadı bıraktı. İnsan ve Tanrı yasalarından kaçtıklarına inanmışlardı, ancak sadece kendilerine yeni bir efendi yaratmayı başarmışlardı. Üniversitenin duvarları sanki taşların bile içlerinde büyüyen çürümeyi bildiğini gösterircesine üzerlerine doğru kapanıyor gibiydi.",
+      "Gray'in gelişi hayatlarının üzerine kalıcı bir gölge düşürdü. Her gün kaçınılmaz bir felakete doğru yavaş bir yürüyüş gibi geliyordu. Macfarlane kontrolünü kaybetmeye başladı, karanlık koridorlarda bir tahta gıcırdadığında gözleri hemen kapıya kayıyordu. Korkunç işlerinin anısını boğmaya çalışıyormuş gibi, elinde bir bardak sert içkiyle küçük odada saatlerce volta attı. Fettes, partnerinin dağılışını hem acıma hem de tiksinti dolu tuhaf bir karışımla izledi. Laboratuvardaki çalışmalar devam etti ancak içi boş ve keyifsizdi. Artık anatomi sırlarını keşfeden bilim insanları değillerdi; sadece kendi yarattıkları bir canavardan saklanan leş yiyicilerdi. Suçluluk duygularının ağırlığı, Gray'in geri dönme korkusuyla birleşince gecelerini sessizlik ve paranoyadan oluşan sonsuz döngülere dönüştürdü.",
+      "Gray, giderek daha küstahlaşan talepleriyle en uygunsuz saatlerde gelen, istenmeyen ve sık bir ziyaretçi oldu. Laboratuvarı kendi kişisel hazinesi gibi görüyor, sessizliği için düzenli bir para akışı bekliyordu. Macfarlane sık sık tartışıyor, sesi dehşet ve gizli bir nefretle titriyordu ama Gray onu her seferinde basit bir bakışla ya da rahatsız ettikleri mezarların ürkütücü bir hatırlatmasıyla susturuyordu. Fettes, Macfarlane ile paylaştığı korkunç sırlar yüzünden kendi hayatında bir tutsak gibi hissediyordu. Şehirdeki hava çürüme kokusuyla ağırlaşmıştı ve sis, işledikleri suçların yankılarını taşıyor gibiydi. Sokakta yanlarından geçen her yüz, solgun ay ışığında tam olarak ne yaptıklarını bilen gözlerle onlara bakan potansiyel bir suçlayıcı gibi görünüyordu.",
+      "Kış derinleştikçe adamlar arasındaki gerilim kritik bir noktaya ulaştı. Bir gece, Gray ile yaşanan başka bir tartışmadan sonra Macfarlane, yüzünde saf bir çaresizlikle laboratuvarın köşesinde oturuyordu. Acımasız ve keskin sözlerle uç önlemlerden bahsetmeye başladı. Fettes, partnerinin geri dönüşü olmayan bir eşiği geçtiğini fark etti. Ahlaki çöküş yerleşmiş, bir zamanların hırslı öğrencisinin yerini soğuk ve hesapçı bir avcıya bırakmıştı. Odanın karanlığı kalan insanlıklarını yutuyor, geriye sadece hayatta kalmanın soğuk mantığını bırakıyordu. Birbirlerine bilim ortağı olarak değil, bir kabus içinde kapana kısılmış iki çaresiz ruh olarak baktılar. Dışarıdaki şehrin sessizliği sağır ediciydi; sanki dünya son trajedinin gerçekleşmesini beklerken nefesini tutuyordu.",
+      "Havanın keskin soğuğu, Glencorse'a giden engebeli ve ıssız yol boyunca ilerleyen arabanın içinde tenlerine işliyordu. Macfarlane aracın gölgesinde oturuyordu; yüzü katılaşmış, bakışları ise önlerindeki karanlık yola dikilmişti. Yanında oturan Fettes, zorlukla bastırdığı bir mide bulantısı dalgası hissediyordu. Cehennemin en derin çukurlarına iniş gibi hissettiren bir görevdeydiler. Plan yapılmıştı: Başka bir korkunç teslimatla bekleyen Gray ile buluşacaklardı. Tekerleklerin her dönüşü, onları bir zamanlar bildikleri hayattan uzaklaştırıp kurtarılamaz bir günah uçurumuna daha da derinlemesine çekiyor gibiydi. At, dondurucu ay ışığında hayaletler gibi görünen nefesiyle sert rüzgara karşı zorlanırken, sessiz ve bekleyen ormana biraz daha yaklaştılar.",
+      "Belirlenen buluşma noktasına ulaştıklarında, ormanın sessizliği ağır ve doğa dışıydı. Uzakta yanan tek bir fener, bükülmüş ağaç gövdeleri üzerinde uzun, çarpık gölgeler oluşturuyordu. Gray, dehşetlerinin nesnesini taşıyan arabanın yanında duruyordu. Kurumuş yapraklar gibi hışırdayan ve sarsılan gülüşü, gece yarısının dinginliğini bozdu. Macfarlane, hiçbir tereddüt barındırmayan hareketlerle ve ani, keskin bir yoğunlukla ona yaklaştı. Yaptıkları anlaşma basitti, ancak ödedikleri bedel ruhlarını ezecek kadar ağırdı. Fettes geride kaldı, kalbi kafese kapatılmış bir kuş gibi kaburgalarına çarpıyordu; iki figürün birleşip tek, kara bir kötülük silüetine dönüştüğünü izledi. Bu ıssız ve terk edilmiş yerde, korkunç iş birliklerinin son perdesinin gerçekten başladığını biliyordu.",
+      "Ağır ve örtülü yükü dikkatlice kendi arabalarına yerleştirdiler; bu görev, uzun bir pratiğin kanıtı olan ürkütücü bir verimlilikle yerine getirildi. Gray geride duruyor, gözleri zalim bir tatmin ve gizli bir tehlike karışımıyla parlıyordu. Kısa bir para alışverişi gerçekleşti; bu, yıkımlarının son mührü gibi hissettiren bir işlemdi. Macfarlane adama tek bir kelime bile etmedi ama ahşap bankın kenarını kavradığında boğumları bembeyaz kesilmişti. Ayrılmak için döndüklerinde, at taşımak zorunda bırakıldığı doğal olmayan ağırlıktan rahatsız olup şaha kalktı. Hava, eğer mümkünse, daha da soğudu ve etraflarındaki ağaçlar, karanlık tarihlerinin devamına tanıklık etmek istercesine üzerlerine doğru eğiliyor gibiydi. Artık sadece öğrenci ya da cerrah değillerdi; artık sonsuza dek mezara bağlıydılar.",
+      "Edinburgh'a dönüş yolculuğu, gölgelerin ve artan dehşetin bir bulanıklığıydı. Fettes, ağır ve karanlık kanvasın altından yüklerinin onu izlediği hissinden kurtulamayarak köşeye büzülmüştü. Macfarlane, sessiz kırsal boyunca ilerlerken gözleri kocaman ve kırpmadan, umutsuzca ve çılgınca bir enerjiyle aracı sürüyordu. Arabanın her ani hareketi, eskiyen ahşabın her gıcırtısı, Fettes'in damarlarına taze bir adrenalin şoku gönderiyordu. Yanındaki şekle baktı ve kendi elinin de artık arkadaşını damgalayan aynı suç mürekkebiyle lekelendiğini fark etti. Karanlıkta bilim adamları olarak değil, onları seçimlerinin sonuçlarından artık koruyamayacak olan ahlaki bir yasadan kaçan kaçaklar olarak ilerliyorlardı.",
+      "Gri ışığın ilk huzmeleri ufku delmeye başladığında, nihayet şehrin dış mahallelerine ulaştılar. Arabanın içindeki atmosfer, kasvetli paketlerinin içindekileri son bir kez incelemeye hazırlandıklarında değişti. Fettes, midesinin bastırılamaz bir dehşet duygusuyla bulandığını hissetti. Macfarlane, titreyen elleriyle kaba malzemeyi geri çekerek topladıkları bedenin solgun, cansız özelliklerini ortaya çıkardı. Ancak mutlak dehşetlerine, kendilerine bakan yüz bekledikleri kişi değildi. Beklenen deneğin yerine, Gray'in cansız gözleri arabanın dibinden onlara bakıyordu. Bu farkındalık Fettes'i fiziksel bir darbe gibi vurdu; gecenin gerçek anlamı ortaya çıkarken nefes nefese kalmıştı.",
+      "Macfarlane'in yüzü, imkansız manzaraya tanık olduğunda saf, katıksız bir delilik maskesine dönüştü. Bir hayalet tarafından değil, kaderin acımasız ironisi ve kendi suç ortağının şiddetli sonu tarafından kandırılmıştı. Araba ıssız şehir sokaklarına yavaşça girerken aralarındaki sessizlik kalınlaştı ve boğucu bir hal aldı. Fettes, hayatının geri kalanında onu rahatsız edecek karanlık sırrın ağırlığıyla zihni bulanmış bir halde bedenden uzaklaştı. Varacakları yere vardılar ama ileri giden yol, zamanın ve travmanın sisinde kaybolmuştu. Fettes, geçmişini ve insanlığını geride bırakarak sabaha kaçtı ve sonunda kendi ödülü haline gelen ceset hırsızının hayaletimsi hatırası tarafından sonsuza dek takip edildi."
+    ],
+    words: {
+      "ember": "kor",
+      "prophecy": "kehanet",
+      "spectre": "hayalet",
+      "cadaver": "kadavra",
+      "resurrection": "diriltme",
+      "harvest": "hasat etmek",
+      "dissection": "diseksiyon",
+      "insatiable": "doyurulamaz",
+      "anatomy": "anatomi",
+      "gruesome": "ürpertici",
+      "reckless": "pervasız",
+      "decay": "çürüme",
+      "demeanor": "tavır",
+      "tacit": "zımni",
+      "macabre": "korkunç",
+      "spectral": "hayaletimsi",
+      "morbid": "ürkütücü",
+      "unearthed": "mezardan çıkarılmış",
+      "sanctuary": "sığınak",
+      "agitation": "huzursuzluk",
+      "predatory": "yırtıcı",
+      "blackmail": "şantaj",
+      "impending": "yaklaşan",
+      "inevitable": "kaçınılmaz",
+      "revulsion": "tiksinti",
+      "scavenger": "leş yiyici",
+      "treasury": "hazine",
+      "threshold": "eşik",
+      "abyss": "uçurum",
+      "gnarled": "budaklı, çarpık",
+      "malice": "kötü niyet, kötülük",
+      "shrouded": "kefenlenmiş, örtülü",
+      "transaction": "işlem, alışveriş",
+      "desolate": "ıssız, terk edilmiş",
+      "cargo": "yük",
+      "fugitive": "kaçak",
+      "parcel": "paket",
+      "accomplice": "suç ortağı",
+      "suffocating": "boğucu"
+    }
+  }
+,
+  {
+    id: 'horror_damned_thing',
+    title: "The Damned Thing",
+    author: 'Ambrose Bierce',
+    level: 'B2',
+    coverUrl: '/covers/horror_damned_thing.webp',
+    en: [
+      "The air in the room felt heavy and still, as if the very walls were holding their breath. A single lamp flickered on the table, casting long, distorted shadows that danced against the faded wallpaper. Hugh Morgan lay dead upon the floor, his body twisted into an unnatural position that suggested a final, desperate struggle against an unseen opponent. Beside him, his gun lay abandoned, useless against the threat that had claimed his life. The coroner, a man named Edwine, sat nearby with a leather-bound journal in his hands, his face pale and eyes wide with a mixture of terror and disbelief. He looked at the mangled remains of his friend, wondering how such violence could occur without a single witness or a sign of an intruder. The silence of the house was suffocating, broken only by the occasional groan of the settling wooden floorboards beneath their heavy boots.",
+      "The official report stated that Morgan had died of unknown causes, but those present knew the truth was far more sinister. Bill Harker, another member of the hunting party, stood by the window, staring out into the dark, tangled woods. He remembered the look in Morgan's eyes just before the end—a look of absolute, soul-crushing horror. They had been out hunting when the attack happened, a sudden ripple in the grass, a sound like tearing silk, and then the chaos. Now, back in the safety of the cabin, the memory felt like a fever dream. The evidence collected so far made no logical sense; there were no footprints, no blood other than Morgan's, and no traces of any animal that could inflict such gruesome wounds. The mystery hung over them like a shroud, chilling their blood and making every shadow appear dangerous.",
+      "As the inquest continued, the witnesses struggled to put their experiences into words. How could one describe a monster that remained invisible even while it tore through flesh? Morgan's own journal provided the only clues, filled with rambling notes about light waves and colors that the human eye was not meant to perceive. The men felt a strange reluctance to read further, sensing that some knowledge was better left buried in the dark. The room seemed to shrink around them, the flickering light creating illusions of movement in the corners where nothing should be. They were men of science and logic, yet they found themselves trapped in a situation that defied every law they held dear. Outside, the night grew deeper, and the wind whispered secrets through the trees, mocking their futile attempts to understand the nightmare that had brought them to this wretched fate.",
+      "The coroner opened the leather journal, his fingers trembling as he turned the yellowed pages. He found a specific entry dated just a few days before Morgan's mysterious death. The handwriting was frantic and uneven, suggesting the man had been writing under great distress. Morgan had described a strange phenomenon, an observation that challenged the very foundations of human perception. He claimed that he had seen something impossible, a creature that existed in a spectrum of light invisible to the human eye. This entity, he suggested, was not a hallucination but a physical reality that moved through the world unnoticed. The coroner read these lines aloud, his voice barely rising above a whisper, while the others listened with growing apprehension. The idea that their entire understanding of reality was incomplete felt like an existential threat to their sanity.",
+      "Morgan's notes detailed his experiments with light and color. He theorized that human eyes were limited by nature, only capturing a small fraction of the light waves reflecting from the environment. Because this creature existed outside those known wavelengths, it remained unseen even when it stood directly before a person. It was a predator, an apex hunter from a realm that crossed paths with their own reality by accident. The description of its movement—a ripple in the tall grass followed by the sound of tearing fabric—perfectly matched the testimony given by Harker. As the coroner continued, the weight of the evidence became unbearable. It was clear that Morgan had not been killed by a beast of the earth, but by something that possessed the capacity to remain entirely hidden during its violent approach.",
+      "The men gathered around the journal, peering at the diagrams sketched in the margins. These drawings were abstract and nonsensical, representing shapes that seemed to twist and turn in ways the eye struggled to follow. The room grew colder, and the flickering lamp seemed to dim as if the house itself were reacting to the dangerous knowledge being unveiled. Each witness felt an irrational urge to run, to escape the cabin and the shadows that seemed to lengthen with every passing second. They were no longer investigators gathering facts; they were prey sensing an invisible predator in their midst. The journal ended abruptly, the final pages torn away, leaving a hollow space that mirrored the confusion and fear growing in their hearts. They realized, with profound dread, that they were hunting a ghost of science.",
+      "The inquiry continued as the coroner read the final, frantic entries in Morgan's journal aloud. The text moved from scientific theory into a chilling personal narrative of obsession. Morgan described how his focus on invisible light had eventually attracted the attention of the very thing he studied. He claimed the entity felt his presence just as he felt its proximity. Each day, the atmosphere around his house grew heavy with an unnatural pressure, and he began to experience sudden, terrifying shifts in the wind that moved grass and branches without any visible cause. His writing style became fragmented and panicked, filled with warnings to anyone who might find his notes. He insisted that the creature did not hunt by sight but by sensing the electrical currents in the living body, marking him as a target for its incomprehensible hunger.",
+      "As the jurors listened, the quiet room seemed to shrink, trapping them in the suffocating weight of Morgan's paranoia. The coroner read about the night Morgan tried to protect his small shack from an intrusion. He had built elaborate barriers using mirrors and strange, reflective materials, hoping to catch a glimpse of the predator by refracting its form against the surroundings. However, the plan proved disastrous. By forcing the light to bend, he had essentially invited the creature closer, revealing a brief, distorted outline of something that resembled a cyclone of sharp, jagged shadows. The description was brief, ending with the sound of his front door being ripped from its hinges by an invisible force. The men at the table looked at the locked windows of the room, suddenly feeling the frailty of their own physical safety.",
+      "The coroner paused, his eyes scanning the final, ink-stained paragraph of the journal entry. Morgan had realized that his efforts were futile because human senses are simply not built to survive the existence of such a predator. He wrote that the creature was not a ghost or a spirit, but a natural, biological fact that existed in a frequency humans were never meant to perceive. The horror lay in the reality that such entities could walk through the world at any moment without being detected. As the coroner closed the book, the room descended into a heavy silence, punctuated only by the distant, rhythmic ticking of a clock. They were no longer investigating a simple death; they were documenting the terrifying discovery of a predator that the human race was entirely unprepared to face.",
+      "The coroner slowly placed the journal on the table, his hand trembling slightly as he looked at the members of the jury. Each man shifted in his wooden chair, the wood creaking loudly in the stagnant air of the inquest room. The testimony contained within those pages challenged every concept of reality they had ever held dear. It was no longer a question of who might have harmed Hugh Morgan, but rather a chilling realization that the atmosphere surrounding their lives was potentially full of unseen, predatory dangers. The coroner cleared his throat, but the sound was thin and hollow against the oppressive weight of the facts presented. He felt an urgent need to justify the scientific pursuit Morgan had undertaken, even if it had ultimately led to his gruesome and unexplained demise.",
+      "The silence stretched out, heavy and thick, as if the air itself was holding its breath. One juror, a man with a stern face and graying hair, finally spoke up to ask about the specific nature of the invisible entity. The coroner responded by describing Morgan’s final observations regarding the creature’s movement. According to the notes, the thing did not possess a solid form in the way humans understood. Instead, it moved through the world like a ripple in a pool of water, disturbing the environment only when it struck solid objects. This explained why the grass was crushed and the branches were broken in the patterns they had found at the crime scene. It was a biological predator of immense speed and malice, entirely indifferent to the existence of human beings.",
+      "As the testimony proceeded, the focus shifted toward the technological failures that accompanied Morgan’s research. The coroner explained that the victim had attempted to use color-spectrum filters to isolate the entity, hoping that the hidden wavelengths would reveal its true shape. Instead, this experimentation served only to agitate the predator further. By attempting to force the beast into a visible state, Morgan had unwittingly declared war on a creature that existed in a realm far beyond mortal comprehension. The room grew colder, and several men instinctively clutched their jackets, sensing the metaphorical shadow of the thing lingering in the corners of their minds. They were now tasked with defining the death of a man who had seen the unseen and paid the ultimate, terrible price for his curiosity.",
+      "The inquiry continued as the coroner read the final entries from the diary of the late Hugh Morgan. The room, already tense, grew silent as he described the creature’s sensory capabilities. Morgan believed the entity perceived the world through vibrations rather than light, navigating the tall grass with a terrifying grace that defied natural laws. It moved as a chaotic, flickering disturbance in the air, creating a low-frequency hum that resonated in the victim’s very bones. This was not merely a predator; it was a physical manifestation of a dimension that human eyes were never meant to perceive. The jurors stared into the dim light, realizing that Morgan’s death was not an accident, but a calculated execution by an enemy that remained perpetually concealed by the limitations of their own limited, organic biology.",
+      "Morgan’s writing further detailed the harrowing moments before his final encounter. He had rigged several brass instruments to capture the beast, hoping to trap the invisible horror within a cage of sound waves. However, the result was a violent backlash that shattered his equipment and left him defenseless. The coroner emphasized that Morgan was not insane, as some had suggested, but a man of profound intellectual courage who had ventured too far into the unknown. The creature did not strike with teeth or claws, but with a sheer, overwhelming physical force that crushed his body as if it were caught in a powerful press. The jurors listened in stunned silence, their own skepticism slowly giving way to a gnawing, existential dread that refused to be dismissed by mere logic.",
+      "The coroner finally set the journal aside, his voice dropping to a somber whisper that barely carried across the dusty room. He noted that the beast had not left the area; it was a territorial hunter that remained near the site of the tragedy. Every shadow in the room seemed to stretch and shift, suggesting that the predator might still be prowling the edges of the settlement. The jury felt a collective shiver as they considered the vulnerability of their homes and families. The inquest was no longer a routine legal matter but a desperate warning to all who lived on the frontier. They realized that their scientific understanding of the world was incomplete, leaving them exposed to horrors that danced just beyond the threshold of the visible, waiting for the next unlucky wanderer.",
+      "The coroner turned toward the jury, his eyes reflecting the flickering candlelight as he began to speak of the final, tragic moments witnessed by the dying man. He described the last frantic minutes of Morgan’s life, a struggle against a force that lacked form but possessed a devastating weight. According to the notes, Morgan had been aware of the creature circling him, its presence signaled only by the bending of the long, dry grass under an invisible pressure. There was no growl, no visible movement, only the sudden, violent distortion of the atmosphere that preceded the fatal blow. The jurors sat rigidly, their faces pale, as they realized the terrifying reality of a predator that moved silently through their world like a ghost, leaving nothing behind but broken bodies and broken logic.",
+      "As the testimony continued, the coroner detailed the specific nature of the creature’s anatomy, or rather, its complete lack of conventional physical existence. It functioned within the spectrum of colors that the human eye was physiologically incapable of perceiving, existing in a realm of light waves that never touched the retina. This meant the beast was not transparent, but rather beyond the limits of human visual comprehension. It was a terrifying thought for those present: that one could be standing inches away from a lethal hunter and remain entirely oblivious to the danger. The jury found themselves gripping the edges of their wooden benches, feeling as though the room itself might suddenly erupt into violence, despite the security of the locked doors and the dim, flickering lantern light above their heads.",
+      "The inquiry reached its climax as the coroner summarized the implications of the tragedy for the entire community. He insisted that the death of Hugh Morgan was not a unique incident but a grim invitation to acknowledge the unseen horrors lurking in the wild. The creature was described as a creature of pure malice, a shadow that had been solidified by some perversion of natural laws. It moved with a purpose that felt eerily intelligent, avoiding detection while systematically dismantling anything that threatened its dominance. As the final words hung in the stale air, the jurors exchanged glances filled with profound unease. They understood now that the frontier was not merely a place of opportunity, but a perilous threshold where humanity stood precariously exposed to the infinite, dangerous mysteries of a dark and uncaring universe.",
+      "The coroner concluded his address, his voice dropping to a somber, hollow whisper that barely stirred the stagnant air of the courtroom. He emphasized that the testimony provided, while deeply unsettling, was the only logical explanation for a death that defied all physical evidence. The jury remained silent, their minds heavy with the weight of an invisible predator prowling the tall grass just beyond their fragile, civilized borders. Each man present felt the sudden, irrational need to look over his shoulder, fearing that the unseen beast might have followed the narrative into the room itself. The tragedy of Hugh Morgan had become a permanent stain on their collective consciousness, a grim reminder that nature held secrets far more lethal than any wild animal or human enemy they had previously encountered in the harsh, rugged frontier.",
+      "As the foreman began to draft the final verdict, the scratching of his quill was the only sound against the sudden stillness of the chamber. They had to choose between the cold, hard facts of the inquest and the overwhelming, terrifying truth of the unknown. To record the cause of death as a mere animal attack would be a cowardly deception, yet to define it as a spectral entity existing outside the visual spectrum was to invite mockery and disbelief. The jurors exchanged weary looks, recognizing that their duty to the truth was a burden that would haunt them for the remainder of their days. They were no longer simple frontiersmen, but guardians of a secret that threatened the very foundations of their perceived reality, knowing full well the world was far wider and crueler than ever imagined.",
+      "Finally, the document was signed and formally submitted to the court, sealing the fate of Hugh Morgan in history as a mystery of the highest order. The verdict offered no comfort, merely confirming that the man had fallen victim to an undetectable force that defied all scientific categorization. As the lanterns burned low and the jurors slowly departed into the encroaching darkness of the night, they moved with a renewed, cautious vigilance. Each rustle of the dry leaves outside sounded like the approach of that dreaded, formless nightmare. They walked toward their homes, fully aware that they were walking through a landscape filled with hidden dangers, forever changed by the realization that they were only spectators in a world that belonged to entities far beyond their limited, human understanding."
+    ],
+    tr: [
+      "Odadaki hava, sanki duvarların kendisi bile nefesini tutuyormuş gibi ağır ve durgundu. Masada titreyen tek bir lamba, solmuş duvar kağıdına karşı dans eden uzun, çarpık gölgeler oluşturuyordu. Hugh Morgan yerde ölü yatıyordu; bedeni, görünmez bir düşmana karşı son ve çaresiz bir mücadeleyi andıran doğal olmayan bir şekilde bükülmüştü. Yanında duran silahı, hayatına mal olan tehdide karşı işe yaramadan bir kenara atılmıştı. Edwine adındaki adli tabip, elinde deri kaplı bir günlükle yakınlarda oturuyor, yüzü solgun, gözleri dehşet ve inançsızlık karışımı bir ifadeyle bakıyordu. Arkadaşının parçalanmış bedenine bakıyor, nasıl tek bir tanık veya davetsiz misafir izi olmadan böyle bir şiddetin meydana gelebildiğini anlamaya çalışıyordu. Evin sessizliği boğucuydu, sadece arada sırada ağır botlarının altında gıcırdayan ahşap zemin tahtalarının sesi duyuluyordu.",
+      "Resmi rapor, Morgan'ın bilinmeyen nedenlerle öldüğünü belirtiyordu ancak orada bulunanlar gerçeğin çok daha korkunç olduğunu biliyorlardı. Av partisinin bir diğer üyesi olan Bill Harker, pencerenin kenarında durmuş, karanlık ve karışık ormana doğru bakıyordu. Morgan'ın son anından hemen önceki bakışını hatırladı; bu, ruhu ezen bir dehşet bakışıydı. Saldırı gerçekleştiğinde avlanıyorlardı; otlarda ani bir dalgalanma, ipek yırtılmasına benzer bir ses ve ardından kaos. Şimdi kulübenin güvenliğinde, bu anı bir ateşli rüya gibi geliyordu. Şimdiye kadar toplanan deliller mantıklı hiçbir anlam ifade etmiyordu; ayak izi yoktu, Morgan'ınkinden başka kan yoktu ve böyle korkunç yaralar açabilecek hiçbir hayvan izi bulunmamıştı. Gizem üzerlerine bir kefen gibi çökmüştü, kanlarını donduruyor ve her gölgeyi tehlikeli gösteriyordu.",
+      "Sorgulama devam ederken, tanıklar yaşadıklarını kelimelere dökmekte zorlanıyorlardı. Etin içinden geçerken bile görünmez kalan bir canavar nasıl tarif edilebilirdi ki? Morgan'ın kendi günlüğü, insan gözünün algılamaması gereken ışık dalgaları ve renkler hakkında karmaşık notlarla dolu, tek ipucuydu. Adamlar okumaya devam etme konusunda tuhaf bir isteksizlik duyuyor, bazı bilgilerin karanlığa gömülü kalmasının daha iyi olduğunu hissediyorlardı. Oda etraflarında küçülüyor, titreyen ışık hiçbir şeyin olmaması gereken köşelerde hareket illüzyonları yaratıyordu. Bilim ve mantık adamları olmalarına rağmen, değer verdikleri her yasaya meydan okuyan bir durumun içinde hapsolmuşlardı. Dışarıda gece derinleşiyor ve rüzgar ağaçların arasından sırlarını fısıldayarak, onları bu kötü kadere sürükleyen kabusu anlama konusundaki nafile çabalarıyla alay ediyordu.",
+      "Adli tabip, parmakları titreyerek sararmış sayfaları çevirirken deri kaplı günlüğü açtı. Morgan'ın gizemli ölümünden sadece birkaç gün öncesine ait özel bir kayıt buldu. El yazısı telaşlı ve düzensizdi, bu da adamın büyük bir sıkıntı içinde yazdığını düşündürüyordu. Morgan, insan algısının temellerine meydan okuyan bir gözlem olan tuhaf bir olguyu tarif etmişti. İmkansız bir şey gördüğünü, insan gözünün göremediği bir ışık spektrumunda var olan bir yaratık olduğunu iddia ediyordu. Bu varlığın bir halüsinasyon değil, dünyada fark edilmeden hareket eden fiziksel bir gerçeklik olduğunu öne sürüyordu. Adli tabip bu satırları yüksek sesle okurken, sesi fısıltının üzerine zar zor çıkıyordu ve diğerleri artan bir endişeyle dinliyordu. Gerçekliğe dair tüm anlayışlarının eksik olduğu fikri, akıl sağlıklarına karşı varoluşsal bir tehdit gibi geldi.",
+      "Morgan'ın notları, ışık ve renk ile yaptığı deneyleri detaylandırıyordu. İnsan gözünün doğası gereği sınırlı olduğunu ve çevreden yansıyan ışık dalgalarının sadece küçük bir kısmını yakalayabildiğini kuramsallaştırmıştı. Bu yaratık, bilinen dalga boylarının dışında var olduğu için, tam bir insanın önünde durduğunda bile görünmez kalıyordu. Bu, kendi gerçeklikleriyle tesadüfen yolları kesişen bir boyuttan gelen bir avcıydı. Hareketinin tarifi, uzun otlardaki bir dalgalanma ve ardından gelen yırtılan kumaş sesi, Harker tarafından verilen ifadeyle mükemmel bir şekilde eşleşiyordu. Adli tabip okumaya devam ederken, kanıtların ağırlığı dayanılmaz hale geldi. Morgan'ın dünyevi bir canavar tarafından değil, saldırısı sırasında tamamen gizli kalma kapasitesine sahip bir şey tarafından öldürüldüğü açıktı.",
+      "Adamlar günlüğün etrafında toplandılar ve kenarlara çizilmiş diyagramlara baktılar. Bu çizimler soyut ve anlamsızdı; gözün takip etmekte zorlandığı şekillerde bükülüp dönen formları temsil ediyordu. Oda soğudu ve titreyen lamba, sanki ev bizzat açığa çıkarılan bu tehlikeli bilgiye tepki veriyormuş gibi karardı. Her tanık, kaçmak, kulübeden ve her saniye uzuyormuş gibi görünen gölgelerden kurtulmak için irrasyonel bir dürtü hissetti. Artık gerçekleri toplayan araştırmacılar değillerdi; aralarında görünmez bir avcı hisseden avlardı. Günlük aniden bitti, son sayfalar yırtılmıştı ve kalplerinde büyüyen kafa karışıklığı ve korkuyu yansıtan boş bir alan bıraktı. Derin bir dehşetle, bilimin bir hayaletini avladıklarını fark ettiler.",
+      "Sorgulama, adli tabibin Morgan'ın günlüğündeki son, telaşlı notları yüksek sesle okumasıyla devam etti. Metin, bilimsel teoriden takıntılı bir kişisel anlatıya dönüştü. Morgan, görünmez ışığa odaklanmasının, üzerinde çalıştığı şeyin dikkatini çektiğini tarif ediyordu. Varlığın, kendi yakınlığını hissettiği gibi onun varlığını da hissettiğini iddia etti. Her geçen gün, evinin etrafındaki atmosfer doğal olmayan bir baskıyla ağırlaştı ve otları ve dalları görünür bir neden olmaksızın hareket ettiren ani, korkutucu rüzgarlar deneyimlemeye başladı. Yazım tarzı parçalı ve panik dolu bir hal aldı, notlarını bulabilecek herkes için uyarılarla doldu. Yaratığın görme duyusuyla değil, canlı vücudundaki elektrik akımlarını hissederek avlandığını ve kendisini anlaşılamaz açlığı için bir hedef olarak belirlediğini vurguladı.",
+      "Jüri üyeleri dinlerken, sessiz oda Morgan'ın paranoyasının boğucu ağırlığı altında eziliyor gibi görünüyordu. Adli tabip, Morgan'ın kulübesini bir müdahaleden korumaya çalıştığı gece hakkında okudu. Yırtıcıyı yansıtıcı materyaller ve aynalar kullanarak görmeyi umarak, çevresine karmaşık engeller inşa etmişti. Ancak plan felaketle sonuçlandı. Işığı bükmeye zorlayarak, yaratığı aslında daha yakına davet etmişti ve keskin, tırtıklı gölgelerden oluşan bir kasırgayı andıran bir şeyin kısa, çarpık bir silüetini ortaya çıkarmıştı. Tanım kısaydı ve ön kapısının görünmez bir güç tarafından menteşelerinden sökülme sesiyle sona eriyordu. Masadaki adamlar odanın kilitli pencerelerine baktılar ve aniden kendi fiziksel güvenliklerinin kırılganlığını hissettiler.",
+      "Adli tabip durdu, gözleri günlükteki mürekkep lekeli son paragrafı taradı. Morgan, çabalarının boşuna olduğunu fark etmişti çünkü insan duyuları böyle bir yırtıcının varlığına dayanacak şekilde inşa edilmemişti. Yaratığın bir hayalet olmadığını, insanların algılaması için asla tasarlanmamış bir frekansta var olan doğal, biyolojik bir gerçek olduğunu yazdı. Korku, bu tür varlıkların her an fark edilmeden dünyada dolaşabileceği gerçeğinde yatıyordu. Adli tabip kitabı kapattığında, oda sadece saatin uzaktan gelen ritmik tıkırtısıyla bölünen ağır bir sessizliğe gömüldü. Artık basit bir ölümü araştırmıyorlardı; insan ırkının yüzleşmeye tamamen hazırlıksız olduğu bir yırtıcının korkunç keşfini belgeliyorlardı.",
+      "Adli tabip günlüğü yavaşça masaya bıraktı, elindeki hafif titremeyle jüri üyelerine baktı. Her adam ahşap sandalyesinde kıpırdandı, tahta sorgu odasının durgun havasında yüksek sesle gıcırdadı. O sayfalarda yer alan ifade, hayatları boyunca değer verdikleri her gerçeklik kavramına meydan okuyordu. Artık Hugh Morgan'a kimin zarar vermiş olabileceği bir soru değil, aksine hayatlarını çevreleyen atmosferin görünmez, yırtıcı tehlikelerle dolu olabileceğine dair ürkütücü bir farkındalıktı. Adli tabip boğazını temizledi ancak çıkan ses, sunulan gerçeklerin baskıcı ağırlığı karşısında zayıf ve içi boş kaldı. Morgan'ın sonunda korkunç ve açıklanamaz bir ölüme yol açsa bile, giriştiği bilimsel çabayı haklı çıkarma konusunda acil bir ihtiyaç duydu.",
+      "Sanki havanın kendisi nefesini tutuyormuş gibi sessizlik ağır ve yoğun bir şekilde uzadı. Sert yüzlü, kır saçlı bir jüri üyesi sonunda görünmez varlığın doğası hakkında soru sormak için söze girdi. Adli tabip, Morgan'ın yaratığın hareketiyle ilgili son gözlemlerini tarif ederek yanıt verdi. Notlara göre bu şey, insanların anladığı anlamda katı bir forma sahip değildi. Bunun yerine, dünyada su birikintisindeki bir dalgalanma gibi hareket ediyor, çevreyi sadece katı nesnelere çarptığında rahatsız ediyordu. Bu, olay yerinde buldukları desenlerde çimlerin neden ezildiğini ve dalların neden kırıldığını açıklıyordu. İnsanların varlığına tamamen kayıtsız, muazzam hız ve kötülüğe sahip biyolojik bir yırtıcıydı.",
+      "İfade ilerledikçe, odak noktası Morgan'ın araştırmasına eşlik eden teknolojik başarısızlıklara kaydı. Adli tabip, kurbanın gizli dalga boylarının gerçek şeklini ortaya çıkaracağı umuduyla, varlığı izole etmek için renk spektrumu filtreleri kullanmaya çalıştığını açıkladı. Bunun yerine, bu deney sadece yırtıcıyı daha da kışkırtmaya yaradı. Canavarı görünür bir duruma zorlamaya çalışarak Morgan, istemeden de olsa ölümlü kavrayışın çok ötesindeki bir alanda var olan bir yaratığa savaş ilan etmişti. Oda soğudu ve birkaç adam, zihinlerinin köşelerinde gezinen o şeyin metaforik gölgesini hissederek içgüdüsel olarak ceketlerine sarıldı. Artık görülmeyeni gören ve merakı için nihai, korkunç bedeli ödeyen bir adamın ölümünü tanımlamakla görevliydiler.",
+      "Sorgulama, adli tabibin merhum Hugh Morgan'ın günlüğündeki son girdileri okumasıyla devam etti. Zaten gergin olan oda, yaratığın duyusal yeteneklerini tarif ettiğinde sessizliğe büründü. Morgan, varlığın dünyayı ışıktan ziyade titreşimler yoluyla algıladığına ve uzun çimenlerin arasında doğal yasalara meydan okuyan ürkütücü bir zarafetle gezindiğine inanıyordu. Hava içinde kaotik, titrek bir rahatsızlık olarak hareket ediyor ve kurbanın kemiklerinde yankılanan düşük frekanslı bir uğultu yaratıyordu. Bu sadece bir avcı değil, insan gözünün asla algılamaması gereken bir boyutun fiziksel tezahürüydü. Jüri üyeleri loş ışığa bakarak, Morgan'ın ölümünün bir kaza değil, kendi sınırlı organik biyolojilerinin yarattığı engellerle sürekli gizlenen bir düşman tarafından gerçekleştirilen hesaplanmış bir infaz olduğunu anladılar.",
+      "Morgan'ın yazıları, son karşılaşmasından önceki yürek burkan anları daha detaylı anlatıyordu. Görünmez dehşeti bir ses dalgası kafesine hapsetmeyi umarak birkaç pirinç enstrümanı kurmuştu. Ancak sonuç, ekipmanını parçalayan ve onu savunmasız bırakan şiddetli bir geri tepme oldu. Adli tabip, Morgan'ın bazıları tarafından iddia edildiği gibi deli olmadığını, aksine bilinmeyenin içine çok fazla girmiş derin bir entelektüel cesarete sahip bir adam olduğunu vurguladı. Yaratık dişleri veya pençeleriyle değil, vücudunu güçlü bir presin içine sıkışmış gibi ezen saf, ezici bir fiziksel güçle saldırmıştı. Jüri üyeleri şaşkın bir sessizlik içinde dinlediler; kendi şüphecilikleri, mantıkla geçiştirilemeyecek kadar kemirici ve varoluşsal bir dehşete yavaş yavaş boyun eğiyordu.",
+      "Adli tabip sonunda günlüğü bir kenara bıraktı ve sesi, tozlu odada zar zor duyulan kasvetli bir fısıltıya dönüştü. Canavarın bölgeyi terk etmediğini; trajedinin yaşandığı yerin yakınında kalan bölgesel bir avcı olduğunu belirtti. Odadaki her gölge uzayıp kayıyor gibiydi ve avcının yerleşimin sınırlarında hala kol gezebileceğini düşündürüyordu. Jüri üyeleri, evlerinin ve ailelerinin savunmasızlığını düşündükçe toplu bir ürperti hissettiler. Soruşturma artık rutin bir hukuki mesele olmaktan çıkmış, sınır boyunda yaşayan herkese yönelik umutsuz bir uyarı haline gelmişti. Dünyaya dair bilimsel anlayışlarının eksik olduğunu ve onları görünür olanın eşiğinin hemen ötesinde dans eden, bir sonraki talihsiz gezgini bekleyen dehşetlere karşı açık bıraktıklarını fark ettiler.",
+      "Adli tabip jüriye doğru döndü; gözleri, can çekişen adamın tanık olduğu son trajik anlardan bahsetmeye başladığında titreyen mum ışığını yansıtıyordu. Morgan'ın hayatının son çılgın dakikalarını, biçimden yoksun ancak yıkıcı bir ağırlığa sahip bir güce karşı verilen mücadeleyi anlattı. Notlara göre, Morgan yaratığın etrafında döndüğünün farkındaydı; varlığı sadece uzun, kuru otların görünmez bir baskı altında bükülmesiyle belli oluyordu. Hiçbir hırıltı, hiçbir gözle görülür hareket yoktu; sadece ölümcül darbeden önce gelen atmosferin ani, şiddetli bozulması vardı. Jüri üyeleri, dünyalarında bir hayalet gibi sessizce dolaşan, geride sadece kırık vücutlar ve kırık bir mantık bırakan bir yırtıcının korkunç gerçeğini fark ettiklerinde, yüzleri bembeyaz bir şekilde dimdik oturdular.",
+      "İfade devam ederken, adli tabip yaratığın anatomisinin özel doğasını, daha doğrusu geleneksel fiziksel varlıktan tamamen yoksun oluşunu detaylandırdı. İnsan gözünün fizyolojik olarak algılayamayacağı renk spektrumunda işliyor, retinaya asla dokunmayan ışık dalgaları dünyasında var oluyordu. Bu, yaratığın şeffaf değil, insan görsel kavrayış sınırlarının ötesinde olduğu anlamına geliyordu. Orada bulunanlar için bu korkutucu bir düşünceydi: İnsan, ölümcül bir avcıya birkaç santim uzaklıkta durabiliyor ve tehlikeden tamamen habersiz kalabiliyordu. Jüri üyeleri kendilerini ahşap sıraların kenarlarını sıkıca kavrarken buldular; kilitli kapıların güvenliğine ve başlarının üzerindeki sönük, titreyen fener ışığına rağmen odanın bir anda şiddetle patlayabileceğini hissediyorlardı.",
+      "Soruşturma, adli tabibin trajedinin tüm topluluk için yarattığı sonuçları özetlemesiyle doruk noktasına ulaştı. Hugh Morgan'ın ölümünün tekil bir olay değil, vahşi doğada pusuya yatmış görünmez dehşetleri kabul etmeye yönelik kasvetli bir davetiye olduğunu vurguladı. Yaratık, saf kötülüğün bir varlığı, doğa yasalarının sapkınlığıyla katılaşmış bir gölge olarak tanımlandı. Kendi hakimiyetini tehdit eden her şeyi sistematik olarak ortadan kaldırırken, tespit edilmekten kaçınarak ürkütücü derecede zeki bir amaçla hareket ediyordu. Son sözler durgun havada asılı kaldığında, jüri üyeleri derin bir huzursuzlukla dolu bakışlar değiştirdiler. Artık sınır bölgesinin sadece bir fırsat yeri değil, insanlığın karanlık ve umursamaz bir evrenin sonsuz, tehlikeli gizemlerine karşı güvencesizce açık durduğu tehlikeli bir eşik olduğunu anladılar.",
+      "Adli tabip konuşmasını, mahkeme salonunun durgun havasını zar zor hareket ettiren kasvetli, boş bir fısıltıyla sonlandırdı. Sunulan tanıklığın, her ne kadar son derece rahatsız edici olsa da, tüm fiziksel kanıtlara meydan okuyan bir ölüm için tek mantıklı açıklama olduğunu vurguladı. Jüri sessiz kaldı, zihinleri kırılgan, medeni sınırlarının hemen ötesindeki uzun otların arasında gezinen görünmez bir avcının ağırlığıyla doluydu. Orada bulunan her adam, görünmez canavarın anlatılanları takip ederek odaya girmiş olabileceğinden korkarak, omuzlarının üzerinden bakma konusunda ani ve irrasyonel bir ihtiyaç hissetti. Hugh Morgan'ın trajedisi, kolektif bilinçlerinde kalıcı bir leke haline gelmişti; doğanın, daha önce sert ve engebeli sınırlarda karşılaştıkları herhangi bir vahşi hayvandan veya insan düşmandan çok daha ölümcül sırlar barındırdığının acı bir hatırlatıcısıydı.",
+      "Heyet başkanı nihai kararı taslak haline getirmeye başladığında, tüy kaleminin çıkardığı cızırtı, odanın ani sessizliğine karşı tek sesti. Soruşturmanın soğuk, sert gerçekleri ile bilinmeyenin ezici, korkutucu hakikati arasında bir seçim yapmak zorundaydılar. Ölüm nedenini basit bir hayvan saldırısı olarak kaydetmek korkakça bir aldatmaca olurdu, ancak onu görsel spektrumun dışında var olan tinsel bir varlık olarak tanımlamak da alay ve inançsızlığı davet etmekti. Jüri üyeleri, hakikate karşı görevlerinin ömürlerinin geri kalanında peşlerini bırakmayacak bir yük olduğunu fark ederek yorgun bakışlar değiştirdiler. Artık basit sınır bekçileri değil, algılanan gerçekliklerinin temellerini tehdit eden bir sırrın koruyucularıydılar ve dünyanın hayal ettiklerinden çok daha geniş ve acımasız olduğunu çok iyi biliyorlardı.",
+      "Sonunda belge imzalandı ve resmen mahkemeye sunuldu; böylece Hugh Morgan'ın kaderi tarihe en üst dereceden bir gizem olarak mühürlendi. Karar hiçbir teselli sunmuyor, sadece adamın tüm bilimsel sınıflandırmalara meydan okuyan, tespit edilemez bir gücün kurbanı olduğunu doğruluyordu. Fenerler azalıp jüri üyeleri yavaşça gecenin çöken karanlığına doğru ayrılırken, yenilenmiş ve temkinli bir tetikte olma haliyle hareket ettiler. Dışarıdaki kuru yaprakların her hışırtısı, o korkunç, biçimsiz kabusun yaklaşması gibi geliyordu. Evlerine doğru yürürken, gizli tehlikelerle dolu bir arazide yürüdüklerinin ve sadece sınırlı, insani anlayışlarının çok ötesindeki varlıklara ait bir dünyada izleyici oldukları gerçeğiyle sonsuza dek değiştiklerinin tamamen farkındaydılar."
+    ],
+    words: {
+      "distorted": "bozulmuş, çarpık",
+      "mangled": "parçalanmış, sakatlanmış",
+      "sinister": "uğursuz, kötü niyetli",
+      "inquest": "adli soruşturma",
+      "perceive": "algılamak",
+      "futile": "beyhude",
+      "distress": "sıkıntı, keder",
+      "perception": "algı",
+      "wavelength": "dalga boyu",
+      "predator": "yırtıcı, avcı",
+      "abstract": "soyut",
+      "dread": "dehşet, korku",
+      "proximity": "yakınlık",
+      "fragmented": "parçalı",
+      "intrusion": "müdahale",
+      "refracting": "ışığı kırma",
+      "stagnant": "hareketsiz, durgun",
+      "demise": "ölüm",
+      "entity": "varlık",
+      "malice": "kötü niyet",
+      "unwittingly": "farkında olmadan",
+      "vibration": "titreşim",
+      "manifestation": "tezahür",
+      "perpetually": "sürekli",
+      "skepticism": "şüphecilik",
+      "vulnerability": "savunmasızlık",
+      "frantic": "telaşlı",
+      "distortion": "bozulma",
+      "retina": "gözün ağ tabakası",
+      "oblivious": "habersiz",
+      "precariously": "güvencesizce",
+      "spectral": "hayaletimsi, tinsel",
+      "vigilance": "tetikte olma, dikkat",
+      "encroaching": "yavaş yavaş yayılan, çöken",
+      "categorization": "sınıflandırma"
+    }
+  }
+,
+  {
+    id: 'horror_middle_toe',
+    title: "The Middle Toe of the Right Foot",
+    author: 'Ambrose Bierce',
+    level: 'B2',
+    coverUrl: '/covers/horror_middle_toe.webp',
+    en: [
+      "It is a fact that in the lonely countryside, tales of the supernatural often take root in the minds of the local people. Near the abandoned Manton house, the air always felt heavy and thick with silence. The villagers avoided the property at all costs, especially as the sun began to sink below the horizon, casting long, twisted shadows across the overgrown lawn. They whispered stories about the tragic history of the household, claiming that something restless remained trapped within those decaying wooden walls. Mr. Manton, once a man of status and wealth, had vanished from the town many years ago under mysterious circumstances. Since that day, the house had stood empty, slowly being reclaimed by nature, but the neighbors insisted that the windows sometimes flickered with a faint, unnatural light that signaled a soul waiting for vengeance.",
+      "The house itself was a skeleton of its former glory, with shattered glass reflecting the pale moon and rotting porch steps that groaned under the weight of even the lightest breeze. It was said that Manton had murdered his wife and children in a fit of uncontrollable rage during a dark night in autumn. His crime was so terrible that the local community could never forgive or forget it. After the act, he supposedly buried them beneath the floorboards of the main bedroom, but his own fate remained a complete enigma. Some people believed he fled to distant lands to escape his conscience, while others maintained that he was still lingering near the property, bound by the terrible weight of his own monstrous actions. The house became a dark monument to his unforgivable sin.",
+      "Years turned into decades, and the memory of the tragedy started to blur like a faded photograph. However, a group of curious men decided to test these local superstitions, driven by a mixture of bravado and skepticism. They gathered near the iron gate, their lanterns glowing like small, flickering stars against the immense darkness of the woods. The air was cold, biting through their thick coats, and the distant howl of a wolf seemed to mock their confidence. They intended to enter the house to prove once and for all that there were no ghosts lurking in the hallways. As they pushed the rusty gate open, the screech of metal against stone echoed loudly, sounding like a desperate human scream. Little did they know that the shadows were watching, waiting for the fools to cross the threshold.",
+      "The men stepped cautiously onto the porch, where the wood felt spongy and weak beneath their heavy boots. Each footfall echoed through the hollow house, sounding unnaturally loud in the oppressive silence. They held their lanterns high, casting long, wavering beams that barely penetrated the thick veil of dust and cobwebs hanging from the ceiling like ghostly curtains. Every corner seemed to harbor a secret, and every draft of wind caused the skeletal structure to groan as if it were suffering from a deep, ancient physical pain. The bravado they had felt outside at the gate began to dissolve, replaced by a cold, prickling sensation on their necks. It was as if the very air inside the rooms was heavy with the weight of unseen witnesses who did not welcome this intrusion into their eternal, lonely residence.",
+      "As they moved deeper into the main hallway, the atmosphere grew significantly colder, chilling them to the very bone. One of the men, named Larue, paused and pointed his light toward a dark stain on the floorboards, which looked suspiciously like dried blood that had soaked into the wood centuries ago. Despite his attempts to remain rational, he felt his heart hammer against his ribs with a sudden, irrational terror. The others clustered closer together, their breathing synchronized in a frantic rhythm of anxiety. There was no sound of movement, yet the atmosphere suggested a presence that had been waiting for them. It was a classic case of the unknown asserting itself over their logical minds, causing their skepticism to crumble into dust as they stared at the grim, silent evidence of a violent history.",
+      "Suddenly, the heavy front door slammed shut behind them without any visible cause, the sound reverberating like a thunderclap throughout the narrow corridor. The men spun around, their eyes wide with panic, and rushed to the door, but it would not budge. Panic erupted among them, as the realization set in that they were trapped inside a tomb of memories. The air grew thicker, smelling faintly of decay and something metallic, like ancient rust or iron. They began to shout, but their voices seemed to be swallowed by the walls themselves, muffled and weak. The lanterns flickered violently, struggling against a sudden, icy pressure in the room. They had come to disprove the ghosts, but now they understood that they were entirely at the mercy of forces far beyond their limited, human understanding.",
+      "The men stared at the locked door with frantic eyes, their lanterns trembling in their shaking hands as the shadows danced wildly upon the rotting wallpaper. The darkness felt thick, like a heavy liquid pressing against them, making it difficult to breathe or think clearly. Manton, who had been the most vocal about his disbelief earlier, now stood completely frozen, his face turned as pale as the dust covering the floorboards. The realization that they were effectively imprisoned in this decaying house transformed their scientific curiosity into a primal, desperate fear. They felt the walls pulsing with an ancient, unseen energy that seemed to feed on their growing anxiety and confusion. Each man looked to the other for support, but found only mirrored terror reflecting back in the dim, flickering light of their dying lanterns.",
+      "The silence was suddenly broken by a soft, rhythmic sound coming from the upper floor, a slow and deliberate tapping that felt like a heartbeat echoing through the wooden structure. It was not the sound of wind or the shifting of settling foundations; it was the distinct, uneven movement of a person walking across the floorboards above their heads. The rhythm was peculiar, marked by a slight, dragging pause that suggested a physical deformity or a heavy, forced movement. As they listened, the atmosphere in the hallway intensified, the cold becoming so biting that it made their teeth chatter involuntarily. Every instinct told them to flee, yet their feet felt rooted to the spot, paralyzed by the sheer impossibility of the situation unfolding in the darkness of this abandoned and desolate house.",
+      "One by one, they turned their gazes upward toward the ceiling, where the dark, water-stained wood seemed to groan under the weight of the invisible traveler. The pacing continued, moving slowly toward the staircase that led down to the hallway where the men were huddled in fear. Each thud of a footstep was followed by the strange, shuffling sound of a limb dragging across the boards, increasing in volume as the entity approached the top of the stairs. Manton clutched his lantern so tightly that his knuckles turned white, his breath coming in short, painful gasps. The skepticism that had carried them through the front door had vanished, replaced by a cold, absolute certainty that they were not merely observers of a story, but victims trapped within a nightmare of their own seeking.",
+      "The rhythm of the footsteps grew louder and more defined as the entity reached the head of the wooden staircase. Each step was accompanied by a wet, slapping sound, as if something unnatural was dragging its weight across the floorboards. Manton felt his heart hammering against his ribs with a desperate, frantic intensity, his scientific mind struggling to reconcile the impossible reality with the laws of nature. The men could hear the wood beneath the unseen walker creak and groan, protesting under a pressure that felt far heavier than that of a normal human frame. The air in the hallway became thin and freezing, filled with an indescribable scent of ancient dust and decay. They stood paralyzed, waiting for the figure to emerge from the darkness of the landing and descend toward their trembling group, fully exposed in the dim light.",
+      "Suddenly, the movement on the stairs ceased entirely, leaving the hallway in a silence so profound that it felt deafening. The men held their breath, their eyes wide with terror, scanning the staircase for any sign of movement or form. The silence lasted for only a few seconds, but to those trapped in the shadows, it felt like an eternity of agonizing suspense. Then, a low, guttural moan echoed from the darkness above, a sound that seemed to vibrate through their very marrow, chilling them to the bone. It was not a sound of distress, but a cold, malicious noise that carried the weight of a long-dead history. They realized then that whatever occupied this space was no longer interested in remaining hidden; it was actively acknowledging their presence in its domain with a predatory intent that made them want to scream.",
+      "As if to answer their unspoken dread, a faint, metallic clicking sound began to echo from the top of the stairs, resembling the strike of bone against wood. It was rhythmic and intentional, a signal that something was preparing to make its descent with calculated, menacing precision. Manton turned to his companions, his eyes reflecting the flickering lantern light and the sheer desperation of their plight. They were no longer investigators; they were intruders who had dared to disturb the rest of a vengeful spirit. The darkness seemed to thicken around them, swirling with a malevolent energy that threatened to extinguish their lights and swallow them whole. They knew, with a sudden and terrifying clarity, that they were waiting for the impossible to reveal itself at the bottom of those stairs, and they were utterly powerless to prevent it.",
+      "The men stared upward, their senses sharpened by the absolute terror that gripped their souls. Manton felt the freezing air swirling around his skin like icy fingers, searching for a gap in his composure. The silence was broken by the distinct, deliberate sound of a heavy body moving across the landing once more. It was a rhythmic dragging, accompanied by the strange, dry sound of a foot hitting the wood in a singular, unbalanced way. The lanterns they held cast long, dancing shadows against the walls, distorting the architecture of the old house into something grotesque and hostile. They felt as though they were being hunted by a memory that refused to fade into the afterlife, a phantom existence that had crawled back from the grave to finish an act of violence left incomplete by the passage of time.",
+      "Every instinct screamed at them to flee into the night, to leave the rotting structure and never look back at the horrors they had foolishly provoked. Yet, their feet remained anchored to the floorboards as if by a magnetic force of supernatural origin. They watched the shadows near the top of the stairs deepen, concentrating into a dense, oily darkness that seemed to possess a will of its own. It was in this moment that they saw it—or rather, the suggestion of it. A faint outline, blurred and shimmering like heat haze over a hot road, began to emerge from the upper gloom. It moved with an agonizingly slow pace, descending the first few steps. Each movement was punctuated by the sharp, metallic click that they had heard earlier, sounding like the snapping of brittle, ancient bone against the hard oak stairs.",
+      "The physical manifestation of the entity was beyond their wildest nightmares, defying every logical explanation they had dared to propose. It appeared as a tall, ragged silhouette draped in the tattered remains of a burial shroud that looked heavy with the soil of the grave. As it descended further, the smell of damp earth and stagnant water grew so intense that it made them cough and recoil. Manton noticed, with a mind struggling to remain tethered to reality, that the creature moved with a pronounced limp, favoring one foot in a way that left no doubt about its identity. The middle toe of the right foot was missing, and the ghost moved as if it were still hampered by that ancient, physical imperfection. It was the mark of a man long buried, finally come home to seek his terrible, final revenge.",
+      "The horror reached its peak as the figure moved into the flickering light, revealing its face to the horrified witnesses below. It was the face of the dead man they had mocked, twisted into a mask of eternal agony and silent, burning hatred. Manton felt his heart hammering against his ribs, a frantic rhythm of pure, unadulterated fear that threatened to stop his breathing entirely. He watched, helpless, as the creature raised a skeletal hand, pointing directly at him with a withered finger. The air grew thick and heavy, charged with an electrical tension that made their skin crawl. There was no escape from the gaze of the phantom; it was as if his own soul had been captured by the darkness, bound to witness the tragic conclusion of an old and bitter vendetta that death had failed to quiet.",
+      "Without a single word uttered, the entity continued its descent, each step echoing through the silent hall like a tolling funeral bell. The light from their lanterns seemed to dim in the presence of the spectral visitor, as if the very flame were afraid to illuminate such an unnatural sight. Manton tried to shout, to demand an explanation, but his voice was trapped deep within his constricted throat. The ghost moved closer, and the temperature in the house dropped until their very breath began to cloud the stagnant air in white plumes. It was clear that the creature was not merely a memory, but a solid, terrifying reality born of malice and the refusal to rest. The house seemed to shrink around them, sealing them into this nightmare with the vengeful spirit of the man they had wronged years ago.",
+      "As the entity stepped onto the final stair, the floorboards groaned under a weight that defied physical laws, bending as if beneath a heavy, invisible burden. Manton could see the jagged, uneven movement of the right foot clearly now, confirming the gruesome truth he had feared from the very beginning. The missing toe left a peculiar mark upon the dust-covered wood, a signature of the grave left behind for the living to behold. The atmosphere was stifling, heavy with the scent of lilies and deep decay, as if the coffin had been dragged through the hallway itself. The men were frozen in a state of catatonic shock, their eyes wide with the realization that they were standing in the presence of a judgment that could only be delivered by the dead to those who had brought about their early demise.",
+      "The horror peaked when the morning sun finally broke through the curtains of the dusty house, revealing a scene that defied all reason and logic. Manton lay upon the floor, his face frozen in a final, terrifying expression of pure agony that mirrored the phantom he had seen during the dark hours. The witnesses stood trembling around his limp body, unable to comprehend the silent vengeance that had taken place while they watched in helplessness. It was clear that the heart had simply stopped beating, paralyzed by the sheer intensity of fear that had enveloped him like a cold, suffocating blanket. The mystery of the middle toe, once a subject of mockery and lighthearted cruelty, had returned from the grave to claim its final, grim payment from the man who had caused so much suffering in life.",
+      "Neighbors who rushed to the scene found nothing but the quiet, imposing silence of a house that had witnessed an impossible confrontation. There were no signs of physical struggle, no broken windows, and no intruders to be found within the locked doors of the room. Instead, they discovered a lingering trace of cold air and a faint, unsettling scent of earth that remained despite the warming rays of the sun. The doctor arrived soon after, examining the body with a troubled frown as he struggled to find a cause for such a sudden and absolute end. He could see no poison, no injury, and no natural illness, leaving him with no choice but to label the death as a total failure of the human heart, induced by some unknown, overwhelming terror.",
+      "As the town processed the news, the legend of the missing toe became whispered history, a cautionary tale told to those who dared to mock the departed. The house itself was eventually left to crumble into ruin, as no one dared to enter the halls where the dead man had once walked to reclaim his dignity. The legacy of the tragedy remained, woven into the fabric of the local lore, reminding every soul that some debts are not settled by death alone. Nature eventually reclaimed the site, turning the once-grand residence into a tangle of vines and debris, effectively burying the secrets of the past. The spirit had achieved its vengeance, and at last, the restless, broken body of the man who had been wronged found a permanent, silent peace in the shadows."
+    ],
+    tr: [
+      "Issız kırsalda doğaüstü olaylara dair hikayelerin yerel halkın zihninde kök salması bilinen bir gerçektir. Terk edilmiş Manton evinin yakınında, hava her zaman sessizlikle ağırlaşır ve yoğunlaşırdı. Köylüler, özellikle güneş ufkun altına inip aşırı büyümüş bahçenin üzerine uzun, çarpık gölgeler düşürdüğünde, bu mülkten her ne pahasına olursa olsun kaçınırlardı. Ailenin trajik geçmişi hakkında hikayeler fısıldaşır, huzursuz bir şeyin çürüyen ahşap duvarların içine hapsolmuş halde kaldığını iddia ederlerdi. Bir zamanlar statü ve servet sahibi bir adam olan Bay Manton, yıllar önce gizemli koşullar altında kasabadan kaybolmuştu. O günden beri ev boş duruyor, yavaş yavaş doğa tarafından geri alınıyordu ancak komşular, pencerelerin bazen intikam bekleyen bir ruhu işaret eden soluk, doğal olmayan bir ışıkla parladığı konusunda ısrarcıydılar.",
+      "Evin kendisi eski ihtişamının bir iskeleti gibiydi; kırık camlar soluk ayı yansıtıyor ve çürüyen sundurma basamakları en hafif esintinin ağırlığı altında bile inliyordu. Manton'un sonbaharda karanlık bir gecede, kontrol edilemez bir öfke kriziyle karısını ve çocuklarını öldürdüğü söylenirdi. İşlediği suç o kadar korkunçtu ki yerel halk bunu asla affedemez veya unutamazdı. Bu eylemden sonra onları ana yatak odasının döşeme tahtalarının altına gömdüğü varsayılıyordu ancak kendi akıbeti tam bir muamma olarak kalmıştı. Bazı insanlar vicdanından kaçmak için uzak diyarlara gittiğine inanırken, diğerleri kendi korkunç eylemlerinin ağır yüküyle bağlanmış şekilde hala mülkün yakınında dolaştığını iddia ediyordu. Ev, onun affedilmez günahının karanlık bir anıtı haline gelmişti.",
+      "Yıllar on yıllara dönüştü ve trajedinin hatırası solmuş bir fotoğraf gibi bulanıklaşmaya başladı. Yine de meraklı bir grup adam, cesaret ve şüpheciliğin karışımıyla hareket ederek bu yerel batıl inançları test etmeye karar verdi. Demir kapının yakınında toplandılar, fenerleri ormanların derin karanlığına karşı titreyen küçük yıldızlar gibi parlıyordu. Hava soğuktu, kalın paltolarının içinden ısırıyordu ve uzaktan gelen kurt uluması kendilerine olan güvenleriyle alay ediyor gibiydi. Koridorlarda gizlenen hayaletlerin olmadığını bir kez ve herkes için kanıtlamak adına eve girmeye niyetliydiler. Paslı kapıyı açmak için ittiklerinde, metalin taşa sürtünme gıcırtısı yüksek sesle yankılandı; tıpkı çaresiz bir insan çığlığı gibi geliyordu. Ne yazık ki gölgelerin izlediğini ve aptalların eşiği geçmesini beklediklerini bilmiyorlardı.",
+      "Adamlar, botlarının altında ahşabın süngerimsi ve zayıf hissettirdiği verandaya temkinli adımlarla çıktılar. Her ayak sesi, boş evin içinde yankılanıyor ve baskıcı sessizlikte doğal olmayacak kadar yüksek duyuluyordu. Fenerlerini havaya kaldırarak, tavanlardan hayalet perdeleri gibi sarkan toz ve örümcek ağlarının kalın perdesini güçlükle aşan uzun, titrek ışık huzmeleri yaydılar. Her köşe bir sır saklıyor gibiydi ve esen her rüzgar, iskelet yapının sanki derin, eski bir fiziksel acı çekiyormuş gibi inlemesine neden oluyordu. Kapıdayken hissettikleri o cesaret duygusu eriyip gitmeye başladı ve yerini enselerinde soğuk, ürpertici bir hisse bıraktı. Sanki odaların içindeki hava, bu sonsuz ve yalnız ikametgahlarına yapılan bu müdahaleyi hoş karşılamayan görünmez tanıkların ağırlığıyla yüklüydü.",
+      "Ana koridorun derinliklerine doğru ilerlediklerinde, ortam önemli ölçüde soğudu ve onları iliklerine kadar titretti. Larue adındaki adamlardan biri duraksadı ve ışığını, yüzyıllar önce tahtaya işlemiş kurumuş kana benzeyen koyu bir lekeye doğru tuttu. Mantıklı kalma çabalarına rağmen, kalbinin kaburgalarına karşı ani, mantıksız bir dehşetle çarptığını hissetti. Diğerleri birbirine daha çok sokuldu; nefes alışverişleri, endişenin çılgın ritmiyle senkronize olmuştu. Hareket eden herhangi bir ses yoktu ancak ortam, onları bekleyen bir varlığın sinyallerini veriyordu. Bu, bilinmeyenin mantıklı zihinleri üzerinde hakimiyet kurmasının klasik bir örneğiydi ve şiddetli bir tarihin kasvetli, sessiz kanıtına bakarken şüphecilikleri bir toz bulutu gibi dağılıyordu.",
+      "Aniden, ağır ön kapı gözle görülür bir sebep olmaksızın arkalarından kapandı; çıkan ses dar koridorda bir gök gürültüsü gibi yankılandı. Adamlar dehşet içinde gözlerini açarak arkalarına döndüler ve kapıya koştular, ancak kapı yerinden oynamadı. Bir anılar mezarına hapsolduklarını fark ettiklerinde aralarında panik patlak verdi. Hava, çürük kokusu ve eski pas ya da demir gibi metalik bir şeyin hafif kokusuyla ağırlaştı. Bağırmaya başladılar ancak sesleri duvarlar tarafından yutuluyor gibiydi; boğuk ve zayıftı. Fenerler, odadaki ani ve buz gibi basınca karşı direnerek şiddetle titredi. Hayaletleri çürütmeye gelmişlerdi ama şimdi sınırlı, insani anlayışlarının çok ötesindeki güçlerin tamamen insafına kaldıklarını anlamışlardı.",
+      "Adamlar, gölgelerin çürüyen duvar kağıtları üzerinde vahşice dans ettiği bir sırada, titreyen ellerindeki fenerlerle kilitli kapıya çılgın gözlerle baktılar. Karanlık, üzerlerine baskı yapan ağır bir sıvı gibi yoğun hissediliyor, nefes almayı veya net düşünmeyi zorlaştırıyordu. Daha önce inançsızlığı hakkında en çok konuşan Manton, şimdi tamamen donmuş bir halde duruyor, yüzü yerdeki toz tabakası kadar solgun görünüyordu. Bu çürüyen evde etkili bir şekilde hapsedildikleri gerçeği, bilimsel meraklarını ilkel ve çaresiz bir korkuya dönüştürdü. Duvarların, büyüyen kaygıları ve kafa karışıklıklarıyla beslenen kadim, görünmez bir enerjiyle nabız gibi attığını hissettiler. Her adam destek için diğerine baktı, ancak solan fenerlerinin loş, titrek ışığında sadece geri yansıyan bir korku buldu.",
+      "Sessizlik, üst kattan gelen yumuşak ve ritmik bir sesle, yani ahşap yapıda yankılanan bir kalp atışı gibi yavaş ve kasıtlı bir tıklama sesiyle aniden bozuldu. Bu, rüzgarın sesi ya da yerleşen temellerin kayması değildi; başlarının üzerindeki döşeme tahtalarında yürüyen bir kişinin belirgin, düzensiz hareketiydi. Ritim garipti; fiziksel bir deformasyonu veya ağır, zorlanmış bir hareketi düşündüren hafif, sürükleyici bir duraksama ile işaretlenmişti. Dinledikçe koridordaki atmosfer yoğunlaştı, soğuk o kadar ısırıcı hale geldi ki dişlerinin istemsizce takırdamasına neden oldu. Her içgüdü onlara kaçmalarını söylüyordu, ancak ayakları, bu terk edilmiş ve ıssız evin karanlığında gelişen durumun mutlak imkansızlığı karşısında felç olmuş şekilde oldukları yere kök salmış gibiydi.",
+      "Birer birer, bakışlarını görünmez yolcunun ağırlığı altında inleyen karanlık, su lekesi içindeki ahşap tavanlara çevirdiler. Adımlama, adamların korku içinde büzüldüğü koridora inen merdivenlere doğru yavaşça devam ediyordu. Her ayak sesi, varlık merdivenlerin tepesine yaklaştıkça sesi artan, tahtalarda sürüklenen bir uzvun tuhaf, hışırdayan sesiyle izleniyordu. Manton fenerini o kadar sıkı tutuyordu ki parmak eklemleri bembeyaz oldu, nefesi kısa ve sancılı soluklarla geliyordu. Onları ön kapıdan içeri sokan şüphecilik yok olmuş, yerini, sadece bir hikayenin gözlemcileri değil, kendi arayışlarının bir kabusu içinde hapsolmuş kurbanlar olduklarına dair soğuk ve kesin bir gerçeğe bırakmıştı.",
+      "Ayak seslerinin ritmi, varlık ahşap merdivenlerin başına ulaştığında daha yüksek ve belirgin hale geldi. Her adım, sanki doğaüstü bir şey ağırlığını yer döşemeleri üzerinde sürüklüyormuş gibi ıslak, şapırdayan bir sesle eşlik ediyordu. Manton, kalbinin kaburgalarına karşı umutsuz, telaşlı bir yoğunlukla çarptığını hissetti; bilimsel zihni imkansız olan bu gerçekliği doğa yasalarıyla uzlaştırmakta zorlanıyordu. Adamlar, görünmeyen yürüyüşçünün altındaki ahşabın normal bir insan gövdesinden çok daha ağır bir baskı altında inlediğini ve gıcırdadığını duyabiliyorlardı. Koridordaki hava incelip buz kesmişti; kadim toz ve çürümenin tarif edilemez kokusuyla dolmuştu. Gelen figürün karanlıktan çıkıp titreyen gruplarına doğru inmesini ve zayıf ışıkta tamamen açığa çıkmasını bekleyerek donup kalmışlardı.",
+      "Aniden, merdivenlerdeki hareket tamamen durdu ve koridoru sağır edici derecede derin bir sessizliğe bıraktı. Adamlar nefeslerini tutmuş, gözleri terörle açılmış bir şekilde merdivenlerde herhangi bir hareket veya biçim belirtisi arıyorlardı. Sessizlik sadece birkaç saniye sürdü, ancak gölgelere hapsolmuş olanlar için bu, ıstırap verici bir gerilimin sonsuzluğu gibi hissettirdi. Ardından, yukarıdaki karanlıktan boğuk, hırıltılı bir inilti yankılandı; bu ses iliklerine kadar işleyerek onları kemiklerine kadar dondurdu. Bu bir ıstırap sesi değil, uzun süredir ölü olan bir tarihin ağırlığını taşıyan soğuk, kötü niyetli bir sesti. O anda, bu mekanı işgal eden şeyin artık gizli kalmakla ilgilenmediğini, varlıklarını avcı bir niyetle kendi alanında kabul ettiğini anladılar ve bu düşünce onları çığlık atmaya sevk etti.",
+      "Sanki söylenmemiş korkularına cevap verir gibi, merdivenlerin tepesinden kemiğin ahşaba vurmasına benzeyen hafif, metalik bir tıklama sesi yankılanmaya başladı. Ritmik ve kasıtlıydı; bir şeyin hesaplanmış, tehditkar bir kesinlikle aşağı inmeye hazırlandığının işaretiydi. Manton, titreyen fener ışığını ve durumlarının içler acısı çaresizliğini yansıtan gözleriyle arkadaşlarına döndü. Artık araştırmacı değillerdi; intikamcı bir ruhun huzurunu bozmaya cüret eden davetsiz misafirlerdi. Karanlık, ışıklarını söndürüp onları tamamen yutmakla tehdit eden kötü niyetli bir enerjiyle etraflarında yoğunlaşıyordu. O merdivenlerin dibinde imkansız olanın kendini göstermesini beklediklerini ve bunu önlemek için tamamen çaresiz olduklarını ani ve korkutucu bir netlikle anladılar.",
+      "Adamlar, ruhlarını kavrayan mutlak dehşetle keskinleşen duyularıyla yukarı doğru baktılar. Manton, buz gibi parmaklar gibi teninin etrafında dönen soğuk havayı hissetti, sükunetindeki bir boşluğu arıyordu. Sessizlik, ağır bir bedenin bir kez daha sahanlıkta hareket etmesinin belirgin, kasıtlı sesiyle bozuldu. Bu, ritmik bir sürüklenmeydi; tek ve dengesiz bir şekilde ayağın ahşaba çarpmasının çıkardığı tuhaf, kuru bir ses eşlik ediyordu. Tuttukları fenerler, duvarlara uzun ve dans eden gölgeler düşürerek eski evin mimarisini grotesk ve düşmanca bir şeye dönüştürdü. Sanki öbür dünyaya karışmayı reddeden bir anı tarafından, zamanın akışıyla tamamlanmamış bir şiddet eylemini bitirmek için mezardan geri sürünerek gelmiş hayaletimsi bir varlık tarafından avlanıyorlarmış gibi hissettiler.",
+      "Her içgüdüleri geceye doğru kaçmaları, çürüyen yapıyı terk etmeleri ve aptalca kışkırttıkları dehşetlere bir daha asla bakmamaları için haykırıyordu. Yine de ayakları, sanki doğaüstü kökenli bir manyetik güçle yer döşemelerine sabitlenmişti. Merdivenlerin tepesindeki gölgelerin derinleştiğini, kendine ait bir iradeye sahipmiş gibi görünen yoğun, yağlı bir karanlıkta yoğunlaştığını izlediler. İşte tam o anda onu gördüler ya da daha doğrusu, onun ima edilişini. Sıcak bir yolun üzerindeki ısı pususu gibi bulanık ve titreyen silik bir hat, yukarıdaki kasvetten ortaya çıkmaya başladı. Son derece yavaş bir tempoyla hareket ederek ilk birkaç basamağı indi. Her hareket, daha önce duydukları o keskin, metalik tıkırtıyla noktalanıyordu; sanki kırılgan, antik bir kemik sert meşe merdivenlere çarpıyordu.",
+      "Varlığın fiziksel tezahürü, ileri sürmeye cüret ettikleri her mantıklı açıklamaya meydan okuyan, en vahşi kabuslarının ötesindeydi. Mezar toprağıyla ağırlaşmış gibi görünen cenaze kefeninin yırtık pırtık kalıntılarına bürünmüş, uzun ve hırpani bir siluet olarak göründü. Daha aşağı indikçe, nemli toprak ve durgun su kokusu o kadar yoğunlaştı ki, öksürmelerine ve geri çekilmelerine neden oldu. Manton, gerçekliğe bağlı kalmak için mücadele eden bir zihinle, yaratığın belirgin bir topallamayla hareket ettiğini, kimliği hakkında hiçbir şüphe bırakmayacak şekilde bir ayağına ağırlık verdiğini fark etti. Sağ ayağının orta parmağı eksikti ve hayalet, sanki hala o antik, fiziksel kusur tarafından engelleniyormuş gibi hareket ediyordu. Bu, korkunç ve nihai intikamını almak için sonunda eve dönen, uzun zaman önce gömülmüş bir adamın işaretiydi.",
+      "Dehşet, figür titrek ışığa doğru ilerleyip yüzünü aşağıda dehşet içinde kalan tanıklara gösterdiğinde zirveye ulaştı. Bu, alay ettikleri ölü adamın yüzüydü; sonsuz bir acı ve sessiz, yanan bir nefret maskesine dönüşmüştü. Manton, kalbinin kaburgalarına çarptığını hissetti; bu, nefes almasını tamamen durdurma tehdidinde bulunan saf, katıksız korkunun çılgınca bir ritmiydi. Yaratığın iskelet benzeri bir elini kaldırdığını ve kurumuş bir parmağıyla doğrudan ona işaret ettiğini çaresizce izledi. Hava kalınlaştı ve ağırlaştı; ciltlerini ürperten elektriksel bir gerilimle doldu. Hayaletin bakışından kaçış yoktu; sanki kendi ruhu karanlık tarafından yakalanmış, ölümün susturamadığı eski ve acı bir kan davasının trajik sonuna tanıklık etmeye mahkûm edilmişti.",
+      "Tek bir kelime bile etmeden, varlık inişine devam etti; her adım sessiz salonda çalan bir cenaze çanı gibi yankılanıyordu. Fenerlerinden gelen ışık, sanki alevin kendisi böyle doğa dışı bir manzarayı aydınlatmaktan korkuyormuş gibi, hayalet ziyaretçinin huzurunda azalıyordu. Manton bağırmaya, bir açıklama talep etmeye çalıştı ancak sesi daralmış boğazının derinliklerinde hapsolmuştu. Hayalet yaklaştıkça evin sıcaklığı düştü ve nefesleri durgun havayı beyaz dumanlarla bulutlandırmaya başladı. Yaratığın sadece bir anı değil, kötülükten ve huzur bulmayı reddetmekten doğan katı, korkunç bir gerçeklik olduğu açıktı. Ev, yıllar önce haksızlık ettikleri adamın intikamcı ruhuyla onları bu kabusun içine hapsederek etraflarında daralıyormuş gibi görünüyordu.",
+      "Varlık son basamağa adım attığında, zemin tahtaları fizik kurallarına meydan okuyan bir ağırlık altında inledi ve ağır, görünmez bir yükün altında kalmışçasına büküldü. Manton, sağ ayağın çarpık ve düzensiz hareketini artık net bir şekilde görebiliyordu; bu da başından beri korktuğu korkunç gerçeği doğruluyordu. Eksik ayak parmağı, toz kaplı tahtalar üzerinde garip bir iz bırakıyor, yaşayanların görmesi için geride bırakılmış mezarın bir imzası gibi duruyordu. Atmosfer boğucuydu; sanki tabutun kendisi koridorda sürüklenmiş gibi zambak ve derin bir çürüme kokusuyla ağırdı. Adamlar katatonik bir şok içindeydiler; gözleri, sadece ölüler tarafından kendi ölümlerine sebep olanlara verilebilecek bir hükmün huzurunda durduklarını anlamanın getirdiği korkuyla açılmıştı.",
+      "Korku, sabah güneşi tozlu evin perdelerinden içeri süzülüp mantığa ve akla meydan okuyan bir manzarayı gözler önüne serdiğinde zirveye ulaştı. Manton, yüzünde karanlık saatler boyunca gördüğü hayaletin ifadesini yansıtan, mutlak acıyla donmuş son bir dehşet ifadesiyle yerde yatıyordu. Tanıklık edenler, çaresizlik içinde izlerken gerçekleşen sessiz intikamı kavrayamayarak cansız bedeninin etrafında titreyerek duruyorlardı. Kalbinin, onu soğuk ve boğucu bir battaniye gibi saran korkunun yoğunluğu yüzünden durduğu açıktı. Bir zamanlar alay ve hafif bir zulmün konusu olan orta parmak gizemi, hayatta çok fazla acıya neden olan adamdan nihai, kasvetli ödemesini almak için mezardan geri dönmüştü.",
+      "Olay yerine koşan komşular, imkansız bir yüzleşmeye tanıklık etmiş bir evin sessizliğinden başka bir şey bulamadılar. Fiziksel bir boğuşma izi, kırık camlar veya kilitli kapıların ardında herhangi bir davetsiz misafir yoktu. Bunun yerine, güneşin ısınan ışınlarına rağmen odada kalan soğuk hava ve hafif, rahatsız edici bir toprak kokusu keşfettiler. Doktor kısa süre sonra geldi ve böylesine ani ve kesin bir sonun nedenini bulmakta zorlanarak endişeli bir kaş çatma ifadesiyle bedeni inceledi. Zehir, yara veya doğal bir hastalık göremiyordu ve ölümü, bilinmeyen, ezici bir korkunun tetiklediği, kalbin mutlak bir başarısızlığı olarak etiketlemekten başka bir seçeneği kalmamıştı.",
+      "Kasaba haberi sindirirken, eksik parmak efsanesi, ölülerle alay etmeye cüret edenlere anlatılan bir uyarı hikayesi olarak fısıltıyla yayılan bir tarihe dönüştü. Ölü adamın onurunu geri almak için yürüdüğü salonlara kimse girmeye cesaret edemediği için ev zamanla harabeye dönmeye terk edildi. Trajedinin mirası yerel efsanelerin dokusuna işlenmiş olarak kaldı ve her ruha bazı borçların sadece ölümle ödenmediğini hatırlattı. Doğa, bir zamanlar görkemli olan konutu sarmaşıklar ve moloz yığınına dönüştürerek, geçmişin sırlarını etkili bir şekilde gömerek alanı nihayetinde geri kazandı. Ruh intikamını almıştı ve sonunda, haksızlığa uğramış adamın huzursuz, kırık bedeni gölgelerde kalıcı, sessiz bir huzur buldu."
+    ],
+    words: {
+      "supernatural": "doğaüstü",
+      "abandoned": "terk edilmiş",
+      "vengeance": "intikam",
+      "enigma": "muamma",
+      "superstition": "batıl inanç",
+      "skepticism": "şüphecilik",
+      "oppressive": "baskıcı",
+      "skeletal": "iskelet gibi",
+      "dissolve": "erimek",
+      "rational": "mantıklı",
+      "reverberate": "yankılanmak",
+      "decay": "çürüme",
+      "primal": "ilkel",
+      "decaying": "çürüyen",
+      "rhythmic": "ritmik",
+      "involuntarily": "istemsizce",
+      "desolate": "ıssız",
+      "entity": "varlık",
+      "reconcile": "uzlaştırmak",
+      "agonizing": "ıstırap verici",
+      "malicious": "kötü niyetli",
+      "predatory": "avcı",
+      "menacing": "tehditkar",
+      "composure": "sükunet",
+      "grotesque": "grotesk",
+      "stagnant": "durgun",
+      "silhouette": "siluet",
+      "shroud": "kefen",
+      "manifestation": "tezahür",
+      "agony": "şiddetli acı",
+      "vendetta": "kan davası, intikam",
+      "constricted": "daralmış, sıkışmış",
+      "malice": "kötü niyet, kin",
+      "catatonic": "tepkisiz, donup kalmış",
+      "demise": "ölüm, son",
+      "paralyzed": "felç olmuş",
+      "imposing": "heybetli, etkileyici",
+      "cautionary": "uyarıcı",
+      "debris": "enkaz"
+    }
+  }
+,
+  {
+    id: 'horror_beast_five_fingers',
+    title: "The Beast with Five Fingers",
+    author: 'W. F. Harvey',
+    level: 'B2',
+    coverUrl: '/covers/horror_beast_five_fingers.webp',
+    en: [
+      "Adrian Borlase was a man of peculiar habits and deep intellectual pursuits, living in a secluded house that seemed to mirror his own complex mind. His passion for music and ancient manuscripts filled every corner of his dusty, cluttered study. However, his most remarkable companion was his nephew, Eustace, a young man who lived with his uncle to assist with his extensive library. Adrian was not merely a scholar; he was a musician of extraordinary talent, specifically known for his ability to play the piano with an elegance that enchanted all who heard him. Yet, there was an underlying tension in the house, a sense that something unconventional was unfolding beneath the surface of their quiet lives. Neighbors whispered about Adrian’s strange obsession with the anatomical precision of human hands, an interest that would eventually lead to a terrifying and inexplicable reality.",
+      "The house itself felt like a living entity, with creaky floorboards and shadows that seemed to dance in the flickering candlelight. Eustace found himself increasingly uneasy as his uncle’s health began to decline rapidly. Adrian spent his final days confined to his bed, yet his mind remained sharp, constantly dictating notes about music theory and the mechanics of finger movement. Despite his physical weakness, he continued to display an intense, almost frantic dedication to his art. He often spoke to his own hands as if they were separate beings, possessing their own distinct willpower. Eustace watched with growing alarm, unable to reconcile his uncle’s brilliant musical legacy with the disturbing psychological changes taking place. The atmosphere in the room was heavy with the scent of old parchment and the sharp, medicinal sting of the tonics that lined the mahogany side table.",
+      "One rainy afternoon, the inevitable occurred. Adrian passed away quietly, leaving behind a legacy that was as brilliant as it was shadowed. In his will, he left his prized possessions to Eustace, but there was a bizarre, specific condition regarding his collection of musical scores and his instruments. The most unsettling part of the inheritance was a small, locked box that Adrian had insisted be handled with extreme caution. Eustace felt a profound sense of foreboding as he touched the cold metal latch for the first time. The room felt suddenly colder, as if the spirit of his uncle still lingered in the air, watching him from the corners. Little did he know that the physical death of Adrian was merely the beginning of a haunting saga, where the boundary between life and death would become blurred, specifically involving the very hands that once played such beautiful melodies.",
+      "The funeral was a somber affair, attended only by a few close acquaintances who whispered behind their gloved hands. Eustace felt a hollow sense of duty as he navigated the quiet, dust-filled corridors of his uncle's estate. The house, once vibrant with the complex harmonies of Adrian’s piano playing, now felt like a mausoleum of silenced melodies. Every room retained the lingering scent of tobacco and old ink, as if Adrian had just stepped out for a stroll in the garden. Eustace often paused, half-expecting to hear the rhythmic tap of his uncle’s fingers against the mahogany desk, a sound that had been the heartbeat of the house for many years. Despite the stillness, a strange tension remained, making the hair on the back of his neck stand up whenever the shadows lengthened across the floor.",
+      "Days passed, and Eustace turned his attention to the mysterious locked box that had caused him such unease. He recalled his uncle's obsession with the anatomical perfection of hands, specifically the idea that a skilled musician’s fingers held a life force independent of the body. He found a small, rusted key hidden inside a hollowed-out book of musical scores, its jagged teeth glinting in the pale sunlight. With trembling hands, he approached the ornate box sitting upon the heavy oak desk. The lock turned with a sharp, metallic click that echoed through the silence of the study like a gunshot. As the lid creaked open, the room seemed to lose its warmth instantly, replaced by a sudden, biting chill that seeped into his very bones, warning him of a discovery that should perhaps have remained buried.",
+      "Inside the velvet-lined interior lay something that defied all reason and logic, causing Eustace to recoil in sheer horror. There, resting on a cushion of dark silk, was a single human hand, severed with surgical precision. It did not look like a dead relic, but rather like a sleeping creature waiting for a command to wake. The skin was pale, almost translucent, showing faint blue veins that seemed to pulse with a phantom rhythm. Eustace felt paralyzed, his breath hitching as he stared at the long, elegant fingers that had once commanded the keys of a grand piano with such divine grace. He tried to tell himself it was merely a gruesome memento of his uncle’s morbid scientific curiosity, yet he could not shake the terrifying feeling that the fingers were twitching.",
+      "Eustace stared at the hand, his heart hammering against his ribs like a trapped bird. He reached out with a shaky hand to close the lid, but as his fingers brushed the edge of the velvet, a sudden, sharp movement caught his eye. The hand had shifted, turning slightly on its silk cushion, its fingers curling into a tight, defensive grip. Panic surged through him, cold and absolute, and he stumbled backward until his back hit the cold surface of the oak desk. He knew he should destroy it immediately, throwing it into the fireplace or burying it deep in the garden, yet he found himself frozen in place. The silence of the room was no longer peaceful; it was suffocating, heavy with the weight of an unnatural presence that felt disturbingly alive and watching him from within the darkness.",
+      "Hours blurred into an endless loop of dread as Eustace sat in the darkened study, refusing to look at the box, yet unable to leave the room. Every creak of the floorboards or rustle of the curtains made him jump, his nerves frayed to the point of snapping. He tried to rationalize what he had seen, telling himself it was merely a trick of the flickering candlelight or a muscle spasm caused by a hidden mechanism. However, the image of the pale, slender fingers persisted in his mind, haunting his thoughts with their elegant, musician-like poise. He felt like an intruder in his own home, a prisoner held hostage by a silent, detached observer. The atmosphere grew thick with tension, and the air seemed to vibrate with a low, humming energy that made his ears ache.",
+      "As night deepened, the house began to groan under the force of a rising wind, and the shadows in the corners of the study stretched into long, claw-like shapes. Eustace felt a desperate need for fresh air, yet his legs refused to cooperate, anchored by the sheer terror of what might happen if he turned his back on the box. He gripped the arms of his chair, his knuckles white, staring intensely at the velvet container as if his gaze could pin the object down. Suddenly, a soft, rhythmic tapping broke the silence—a sound he recognized all too well from his uncle’s lifetime. It was the distinct, light beat of fingertips against wood, echoing with a haunting familiarity that made his blood run ice cold in his veins, confirming his worst suspicions about the legacy Adrian left behind.",
+      "The tapping grew louder, a persistent and rhythmic sound that echoed through the empty corridors of the house like a frantic heartbeat. Eustace felt the blood drain from his face as he realized the source was indeed the box sitting upon the desk. With a trembling hand, he picked up a heavy brass candlestick, hoping that a weapon might provide him with a sense of control over the impossible nightmare. The lid of the box, which had been securely closed moments before, began to vibrate against its hinges with a strength that defied natural explanation. It was as if the occupant was straining against the constraints of its velvet prison, desperate for release and eager to reclaim the freedom it had lost upon the death of its former master. The air grew frigid, and a strange, metallic scent filled the room, making it difficult to breathe.",
+      "Without warning, the lid flew open, hitting the desk with a sharp, echoing snap that resonated in the silent chamber. Eustace watched in frozen horror as the severed hand, pale and unnervingly graceful, pulled itself out of the box using only its fingers. It moved with a fluid, spider-like agility, dragging its limp wrist behind it as it navigated the mahogany surface. Its knuckles clicked against the wood, a sound that grated on Eustace’s nerves like a blunt blade against stone. There was an intelligence in its movements, a deliberate and malicious intent that seemed to mock his fear. He clutched the candlestick tightly, his knuckles turning white, but his courage failed him completely when the hand suddenly stopped and rotated its palm upward, as if testing the air to locate its target in the dimly lit room.",
+      "The creature turned its wrist toward Eustace, the fingers splayed wide like the legs of a trapped arachnid. It began to slide toward the edge of the desk, its movements precise and calculated, showing no sign of hesitation or weakness. Eustace finally found the strength to move, throwing his chair backward with a loud crash that shattered the heavy silence of the night. He scrambled toward the door, his breath coming in ragged gasps, his mind overwhelmed by the sheer madness of the situation. Behind him, he heard the soft, rapid scuttling of fingers on the floorboards, a sound that followed him with terrifying persistence. He slammed the heavy oak door shut and locked it, leaning his weight against the wood, listening as the tapping returned—this time directly on the other side of the door, demanding to be let back in.",
+      "Trapped within the sanctuary of his own library, Eustace felt the cold sweat trickle down his spine as the relentless tapping on the door continued. The sound was no longer a mere curiosity; it was a rhythmic demand, a persistent percussion that seemed to vibrate through the very structure of the house. He paced the room, his eyes scanning the shelves for any object that might serve as a barricade, though he knew deep down that physical locks meant little to an entity born of such unnatural circumstances. The candlelight flickered, casting long, dancing shadows that played tricks on his exhausted mind, making every corner seem like a hiding place for the creature. He wondered if his uncle had somehow foreseen this manifestation, or if the hand possessed a memory of its own, driven by the lingering echoes of a genius mind now long gone.",
+      "The silence following the tapping was perhaps more terrifying than the noise itself. Eustace stood motionless, his ears straining to catch the faintest whisper of movement, but the house remained eerily still. He cautiously moved toward the mahogany desk, intending to gather his notes on his uncle's strange collection of occult manuscripts, hoping to find a clue that might grant him a reprieve. However, as he reached for a leather-bound book, he froze. A faint sensation, like a breath of ice-cold air, brushed against his neck, followed by the soft sound of velvet sliding against wood. The creature had not been idle; it had found a way to bridge the gap between the rooms, manifesting with a ghostly persistence that defied the laws of biology he had studied so diligently for years in the city.",
+      "Panic surged through his veins, yet Eustace forced himself to remain composed, refusing to succumb entirely to the hysteria threatening to shatter his senses. He grabbed a heavy metal paperweight, his fingers trembling, and held it as a desperate tool of defense. He watched the shadows under the heavy velvet curtains, expecting the pale, detached limb to strike at any moment. The atmosphere in the library grew dense and suffocating, as if the room itself were holding its breath, awaiting a final confrontation that seemed inevitable. There was a peculiar sense of inevitability in the air; it felt as though he were merely a player in a script written by a dead hand, a prisoner of a legacy he had never truly understood. He braced himself, ready to face the impossible beast that haunted his sanity.",
+      "The air within the library grew frigid, and the flickering candlelight cast long, distorted shadows that seemed to pulse in time with a heartbeat that was not his own. Eustace felt a profound sense of isolation, knowing that the heavy oak door was locked, yet it offered no real protection against an adversary that required no physical opening to gain entry. He stood with the paperweight clutched tightly in his trembling hand, his eyes scanning every inch of the room. Suddenly, a soft, scratching sound emerged from beneath the heavy velvet curtains near the corner. It was the distinct sound of fingernails dragging across the floorboards. The creature was here, hidden away in the dark recesses, waiting for the perfect moment to reveal itself and finalize its grim, persistent purpose that had terrorized his sanity for so many sleepless nights.",
+      "Without warning, a pale shape darted across the floorboards with unnatural speed. It was the hand, moving like a frantic spider with its five long fingers scuttling across the polished wood. Eustace gasped, his heart hammering against his ribs as the severed limb propelled itself upward, gripping the edge of the mahogany desk with terrifying strength. The sight of it—this detached, autonomous remnant of his late uncle—was far worse than any nightmare he had ever imagined. It seemed to possess an intelligence that was both ancient and spiteful, its joints clicking softly as it oriented itself toward him. Eustace swung the heavy paperweight, but he was far too slow; the creature leaped into the air with surprising agility, moving with a fluid grace that defied the very laws of anatomy he had spent his entire life studying.",
+      "He scrambled backward, his foot catching on the rug, and he fell heavily onto the cold floor. The hand landed upon his chest, its cold, lifeless skin sending a jolt of pure terror through his entire nervous system. He could feel the pressure of the fingers digging into his clothing as it sought a purchase, moving with a mechanical, relentless intent. Eustace struggled to pry it away, his own hands grappling with the detached monstrosity, but it was stronger than its size would suggest. It climbed toward his throat, its movements precise and calculated, like a predator cornering its prey in the final moments of a hunt. He realized then that his uncle had never truly left; the genius of the musician was trapped within these fingers, continuing a final, macabre performance that would end only with his own defeat.",
+      "The grip of the hand around his throat felt like an icy band of iron, tightening with a rhythmic, pulsating pressure that mimicked the timing of a musical composition. Eustace struggled to gasp for air, his vision blurring at the edges as the room began to spin in a sickening, chaotic whirlpool of darkness. He clawed at the cold, leathery fingers with all his waning strength, but they held fast, possessed by a malignant intelligence that refused to be denied. There was no mercy in that touch, only the cold, calculated execution of a long-standing desire for retribution. As his heartbeat slowed, the silence of the library seemed to deepen, amplifying the faint, persistent scratching of the knuckles against his skin, a final testament to the impossible horror that had now claimed its ultimate prize within these walls.",
+      "Days later, when the servants finally forced the library door open after hearing no sounds from within, they found the room in a state of unsettling stillness. The heavy oak door gave way with a mournful groan, revealing a scene of perfect order that belied the tragedy that had occurred. Eustace was slumped against the desk, his face pale and his expression frozen in a mask of eternal shock. Of the creature itself, there was no sign; the mahogany surfaces were pristine, polished and gleaming under the morning light, as if nothing had ever disturbed their quiet perfection. It was as if the room had swallowed the nightmare whole, erasing the physical evidence of the struggle and leaving only the eerie, lingering sensation of a cold, phantom presence watching from the dark corners of the ceiling.",
+      "The aftermath of the discovery left the household in a state of profound, suffocating grief, yet a strange, lingering mystery haunted the minds of those who remained. They often spoke of the nights when the air would suddenly turn frigid, or when the faint, rhythmic sound of invisible fingers tapping against the library shelves would drift through the corridors like a ghostly melody. No one dared to enter the room after dark, for the legend of the musician and his detached, vengeful companion had taken root in the very floorboards. It was understood by all that the master of the house had achieved a kind of immortality, not through his music, but through a terrifying, disembodied malice that would forever haunt the silence, ensuring that his final performance would never truly reach its end."
+    ],
+    tr: [
+      "Adrian Borlase, kendi karmaşık zihnini yansıtan gözlerden uzak bir evde yaşayan, kendine has alışkanlıkları ve derin entelektüel tutkuları olan bir adamdı. Müzik ve eski el yazmalarına olan tutkusu, tozlu ve dağınık çalışma odasının her köşesini dolduruyordu. Ancak en dikkat çekici yoldaşı, kütüphanesine yardım etmek için amcasıyla yaşayan yeğeni Eustace’tı. Adrian sadece bir bilim insanı değil, aynı zamanda piyanoyu duyan herkesi büyüleyen bir zarafetle çalma yeteneğiyle tanınan olağanüstü yetenekli bir müzisyendi. Yine de evde, sessiz hayatlarının yüzeyinin altında alışılmadık bir şeyin geliştiğine dair bir gerilim vardı. Komşular, Adrian’ın insan ellerinin anatomik hassasiyetine olan garip takıntısını fısıldıyorlardı; bu ilgi, sonunda dehşet verici ve açıklanamaz bir gerçeğe yol açacaktı.",
+      "Evin kendisi, gıcırdayan zemin tahtaları ve titreyen mum ışığında dans ediyor gibi görünen gölgeleriyle yaşayan bir varlık gibi hissettiriyordu. Amcasının sağlığı hızla bozulmaya başladığında Eustace kendini giderek daha huzursuz hissediyordu. Adrian son günlerini yatağa bağlı geçirdi, ancak zihni keskin kalmaya devam ediyor, sürekli müzik teorisi ve parmak hareketlerinin mekaniği üzerine notlar aldırıyordu. Fiziksel zayıflığına rağmen sanatına yoğun, neredeyse çılgınca bir bağlılık göstermeye devam etti. Sık sık kendi elleriyle, sanki onlar bağımsız iradeye sahip ayrı varlıklarmış gibi konuşuyordu. Eustace, amcasının parlak müzikal mirası ile meydana gelen rahatsız edici psikolojik değişimleri uzlaştıramayarak artan bir endişeyle izledi. Odadaki atmosfer, eski parşömen kokusu ve maun yan sehpanın üzerindeki ilaçların keskin, tıbbi kokusuyla ağırlaşmıştı.",
+      "Yağmurlu bir öğleden sonra, kaçınılmaz olan gerçekleşti. Adrian, gölgeli olduğu kadar parlak bir miras bırakarak sessizce hayata veda etti. Vasiyetinde değerli eşyalarını Eustace’a bıraktı ancak nota koleksiyonu ve enstrümanlarıyla ilgili tuhaf ve özel bir koşul vardı. Mirasın en huzursuz edici kısmı, Adrian’ın son derece dikkatli kullanılmasını istediği küçük, kilitli bir kutuydu. Eustace, soğuk metal mandala ilk kez dokunduğunda derin bir uğursuzluk hissi duydu. Oda aniden daha soğuk hissettirdi; sanki amcasının ruhu hala havada asılı kalmış, köşelerden onu izliyordu. Adrian’ın fiziksel ölümünün, yaşam ve ölüm arasındaki sınırın bulanıklaşacağı, özellikle bir zamanlar bu güzel melodileri çalan ellerle ilgili dehşet verici bir destanın sadece başlangıcı olduğundan habersizdi.",
+      "Cenaze töreni, eldivenli ellerinin arkasında fısıldaşan birkaç yakın tanıdığın katıldığı kasvetli bir etkinlikti. Eustace, amcasının mülkünün sessiz ve toz dolu koridorlarında ilerlerken içi boş bir görev duygusu hissetti. Bir zamanlar Adrian'ın piyano çalışının karmaşık uyumlarıyla canlı olan ev, şimdi susturulmuş melodilerin bir mozolesi gibi hissettiriyordu. Her oda, sanki Adrian bahçede yürüyüşe çıkmış gibi tütün ve eski mürekkep kokusunu koruyordu. Eustace sık sık duraklıyor, amcasının parmaklarının maun masaya vurduğu o ritmik sesi duymayı bekliyordu; bu ses yıllardır evin kalp atışıydı. Sessizliğe rağmen garip bir gerilim devam ediyor ve gölgeler zemine uzandığında ensesindeki tüylerin diken diken olmasına neden oluyordu.",
+      "Günler geçti ve Eustace, kendisine huzursuzluk veren gizemli kilitli kutuya odaklandı. Amcasının ellerin anatomik mükemmelliğine, özellikle de yetenekli bir müzisyenin parmaklarının vücuttan bağımsız bir yaşam gücüne sahip olduğu fikrine olan takıntısını hatırladı. Notalarla dolu, içi oyulmuş bir kitabın içine gizlenmiş paslı küçük bir anahtar buldu ve anahtarın tırtıklı dişleri soluk gün ışığında parlıyordu. Titreyen ellerle ağır meşe masanın üzerinde duran süslü kutuya yaklaştı. Kilit, çalışma odasının sessizliğinde bir silah sesi gibi yankılanan keskin, metalik bir tık sesiyle açıldı. Kapak gıcırdayarak açıldığında, oda aniden sıcaklığını kaybetti ve yerine kemiklerine işleyen keskin bir soğukluk gelerek onu belki de gömülü kalması gereken bir keşif hakkında uyardı.",
+      "Kadife kaplı iç kısmın içinde, tüm mantığa ve akla meydan okuyan bir şey yatıyordu ve Eustace'in dehşet içinde geri çekilmesine neden oldu. Orada, koyu renkli ipek bir yastığın üzerinde, cerrahi bir hassasiyetle kesilmiş tek bir insan eli duruyordu. Ölü bir kalıntı gibi değil, uyanmak için bir emir bekleyen uyuyan bir yaratık gibi görünüyordu. Deri soluk, neredeyse şeffaftı ve hayali bir ritimle attığı görülen soluk mavi damarlar görünüyordu. Eustace, bir zamanlar büyük bir piyanonun tuşlarını ilahi bir zarafetle yöneten o uzun, zarif parmaklara bakarken nefesi kesilerek felç olmuş gibi hissetti. Kendine bunun sadece amcasının hastalıklı bilimsel merakının ürkütücü bir hatırası olduğunu söylemeye çalışsa da, parmakların seğirdiği şeklindeki korkutucu hissinden kurtulamıyordu.",
+      "Eustace, kalbi kapana kısılmış bir kuş gibi kaburgalarına vururken eline baktı. Kapağı kapatmak için titreyen elini uzattı ama parmakları kadifenin kenarına değdiği anda ani ve keskin bir hareket gözüne çarptı. El, ipek yastığının üzerinde hafifçe dönerek hareket etmiş, parmakları sıkı ve savunmacı bir yumruk haline gelmişti. İçine soğuk ve mutlak bir panik yayıldı ve sırtı meşe masanın soğuk yüzeyine çarpana kadar geriye doğru sendeledi. Onu derhal yok etmesi, şömineye atması ya da bahçenin derinliklerine gömmesi gerektiğini biliyordu ama kendini olduğu yerde çakılı kalmış halde buldu. Odanın sessizliği artık huzurlu değildi; karanlığın içinden onu izleyen, rahatsız edici derecede canlı ve doğal olmayan bir varlığın ağırlığıyla boğucu bir hale gelmişti.",
+      "Eustace karanlık çalışma odasında oturup kutuya bakmayı reddederken, ancak odadan çıkmaya da cesaret edemezken saatler sonsuz bir dehşet döngüsüne dönüştü. Döşeme tahtalarının her gıcırtısı ya da perdelerin her hışırtısı onu yerinden sıçratıyor, sinirleri kopma noktasına geliyordu. Gördüklerini mantıklı bir zemine oturtmaya çalışıyor, titreyen mum ışığının bir oyunu ya da gizli bir mekanizmanın neden olduğu bir kas seğirmesi olduğuna kendini inandırmaya çalışıyordu. Ancak soluk, ince parmakların görüntüsü zihninde ısrarla yer ediyor, müzisyenlere özgü zarif duruşlarıyla düşüncelerini rahatsız ediyordu. Kendi evinde bir davetsiz misafir, sessiz ve kopuk bir gözlemci tarafından rehin tutulan bir tutsak gibi hissediyordu. Atmosfer gerilimle yoğunlaştı ve hava, kulaklarını sızlatan alçak ve uğultulu bir enerjiyle titriyor gibiydi.",
+      "Gece derinleştikçe, ev yükselen rüzgarın şiddetiyle inlemeye başladı ve çalışma odasının köşelerindeki gölgeler pençeye benzer uzun şekillere büründü. Eustace temiz havaya duyduğu özlemle yanıp tutuşuyordu ama bacakları, kutuya sırtını döndüğünde neler olabileceği korkusuyla hareket etmeyi reddediyordu. Sandalyesinin kollarını beyazlamış eklemleriyle tutuyor, sanki bakışlarıyla nesneyi sabitleyebilirmiş gibi kadife kutuya yoğun bir şekilde bakıyordu. Aniden, yumuşak ve ritmik bir tıkırtı sessizliği bozdu; bu ses amcasının yaşadığı dönemden çok iyi tanıdığı bir sesti. Bu, parmak uçlarının ahşaba vurduğu o belirgin, hafif vuruştu; Adrian'ın geride bıraktığı mirasla ilgili en kötü şüphelerini doğrulayan, tüyler ürpertici bir aşinalıkla yankılanıyordu.",
+      "Tıklama sesi giderek yükseldi; evin boş koridorlarında çılgın bir kalp atışı gibi yankılanan ısrarcı ve ritmik bir sesti. Eustace, kaynağın gerçekten masanın üzerinde duran kutu olduğunu fark ettiğinde yüzündeki kanın çekildiğini hissetti. Titreyen eliyle ağır bir pirinç şamdanı kaptı; bir silahın ona bu imkânsız kabus üzerinde bir kontrol hissi vereceğini umuyordu. Bir an önce sıkıca kapalı olan kutunun kapağı, doğal bir açıklamaya meydan okuyan bir güçle menteşelerine karşı titremeye başladı. Sanki içindeki varlık, kadife hapishanesinin kısıtlamalarına karşı direniyor, serbest kalmak ve eski sahibinin ölümüyle kaybettiği özgürlüğünü geri kazanmak için can atıyordu. Hava buz kesti ve odayı garip, metalik bir koku kapladı; bu da nefes almayı oldukça zorlaştırdı.",
+      "Hiçbir uyarı olmaksızın kapak açıldı ve sessiz odada yankılanan keskin bir sesle masaya çarptı. Eustace, solgun ve rahatsız edici derecede zarif kesik elin, sadece parmaklarını kullanarak kutudan dışarı çıkışını donmuş bir dehşet içinde izledi. Maun yüzeyde ilerlerken, cansız bileğini arkasında sürükleyerek akışkan ve örümceğimsi bir çeviklikle hareket ediyordu. Boğumları ahşaba çarptığında çıkan ses, kör bir bıçağın taşa sürtünmesi gibi Eustace'in sinirlerini bozuyordu. Hareketlerinde bir zeka, korkusuyla alay ediyormuş gibi görünen kasıtlı ve kötü niyetli bir amaç vardı. Şamdanı sıkıca kavradı, parmak eklemleri beyazlaştı ama el aniden durup avucunu yukarı çevirdiğinde cesareti tamamen kırıldı; sanki loş odadaki hedefini belirlemek için havayı test ediyordu.",
+      "Yaratık bileğini Eustace'e doğru çevirdi, parmakları tuzağa düşmüş bir örümceğin bacakları gibi genişçe açılmıştı. Tereddüt veya zayıflık belirtisi göstermeden, kesin ve hesaplı hareketlerle masanın kenarına doğru kaymaya başladı. Eustace sonunda hareket etme gücünü buldu ve gecenin ağır sessizliğini paramparça eden gürültülü bir sesle sandalyesini geriye doğru fırlattı. Kapıya doğru sendeleyerek ilerledi, nefesi kesik kesik çıkıyordu, zihni durumun saf deliliğiyle sarsılmıştı. Arkasında, döşemeler üzerinde parmakların çıkardığı o hafif ve hızlı tıkırtıyı duydu; bu ses dehşet verici bir ısrarla onu takip ediyordu. Ağır meşe kapıyı kapatıp kilitledi, tüm ağırlığıyla ahşaba yaslandı ve tıklamanın geri dönüşünü dinledi; bu sefer kapının hemen diğer tarafındaydı ve içeri girmek için ısrar ediyordu.",
+      "Kendi kütüphanesinin sığınağında kapana kısılmış olan Eustace, kapıdaki amansız tıkırtı devam ederken soğuk terlerin sırtından aşağı süzüldüğünü hissetti. Ses artık sadece bir merak konusu değildi; ritmik bir talepti, evin tüm yapısında titreşen ısrarlı bir vuruştu. Odayı arşınladı, gözleri barikat görevi görebilecek herhangi bir nesne için rafları tarıyordu, ancak fiziksel kilitlerin bu kadar doğa dışı koşullarda doğan bir varlık için pek bir anlam ifade etmediğini içten içe biliyordu. Mum ışığı titriyor, yorgun zihninde oyunlar oynayan uzun, dans eden gölgeler oluşturuyor ve her köşeyi yaratık için bir saklanma yeri gibi gösteriyordu. Amcasının bu tezahürü bir şekilde öngörüp öngörmediğini ya da elin, artık çoktan gitmiş dahi bir zihnin kalıcı yankılarıyla yönlendirilen kendi hafızasına sahip olup olmadığını merak etti.",
+      "Tıkırtıyı takip eden sessizlik, belki de gürültünün kendisinden daha korkutucuydu. Eustace kıpırdamadan durdu, kulakları en ufak bir hareket fısıltısını yakalamak için gerildi, ancak ev ürkütücü bir şekilde sessiz kaldı. Amcasının tuhaf okült el yazmaları koleksiyonuyla ilgili notlarını toplamak ve ona bir mola kazandırabilecek bir ipucu bulmak umuduyla temkinli bir şekilde maun masaya doğru ilerledi. Ancak, deri ciltli bir kitaba uzandığında donup kaldı. Buz gibi bir hava nefesi gibi hafif bir his, ensesine değdi ve ardından ahşaba sürtünen kadifenin yumuşak sesi geldi. Yaratık boş durmamıştı; odalar arasındaki boşluğu köprü kurmanın bir yolunu bulmuştu ve şehirde yıllarca gayretle incelediği biyoloji yasalarına meydan okuyan hayaletimsi bir ısrarla tezahür ediyordu.",
+      "Damarlarında panik yükseldi, yine de Eustace duyularını parçalamakla tehdit eden histeriye tamamen teslim olmayı reddederek kendini sakin kalmaya zorladı. Ağır metal bir kağıt ağırlığı kaptı, parmakları titriyordu ve onu umutsuz bir savunma aracı olarak tuttu. Ağır kadife perdelerin altındaki gölgeleri izledi, solgun, kopmuş uzvun her an saldıracağını bekliyordu. Kütüphanedeki atmosfer yoğunlaştı ve boğucu bir hal aldı, sanki oda kendi nefesini tutuyor ve kaçınılmaz görünen son bir yüzleşmeyi bekliyordu. Havada tuhaf bir kaçınılmazlık hissi vardı; sanki ölü bir el tarafından yazılmış bir senaryoda sadece bir oyuncu, asla tam olarak anlamadığı bir mirasın tutsağı gibi hissediyordu. Akıl sağlığına musallat olan imkansız canavarla yüzleşmeye hazır bir şekilde kendini hazırladı.",
+      "Kütüphanenin içindeki hava buz kesti ve titreyen mum ışığı, kendi kalp atışı olmayan bir ritimle atan uzun, çarpık gölgeler oluşturdu. Eustace, ağır meşe kapının kilitli olmasına rağmen, girmek için fiziksel bir açıklığa ihtiyaç duymayan bir düşmana karşı gerçek bir koruma sağlamadığını bilerek derin bir yalnızlık hissetti. Kağıt ağırlığını titreyen elinde sıkıca tutarak ayakta durdu ve odanın her bir santimini gözleriyle taradı. Aniden, köşedeki ağır kadife perdelerin altından hafif, tırmalayıcı bir ses yükseldi. Bu, tırnakların zemin tahtaları üzerinde sürünmesinin belirgin sesiydi. Yaratık buradaydı, karanlık boşluklarda saklanmış, kendini göstermek ve onu bunca uykusuz gecedir aklını kaçırma noktasına getiren o kasvetli ve ısrarcı amacını nihayete erdirmek için mükemmel anı bekliyordu.",
+      "Uyarı olmaksızın, solgun bir şekil doğal olmayan bir hızla zemin tahtaları üzerinde fırladı. Bu, beş uzun parmağıyla cilalı ahşabın üzerinde koşturan telaşlı bir örümcek gibi hareket eden eldi. Eustace nefesini tuttu; kopmuş uzuv, dehşet verici bir güçle maun masanın kenarını kavrayıp yukarı doğru sıçradığında kalbi kaburgalarına çarptı. Merhum amcasından kalan bu kopuk, bağımsız uzuv görüntüsü, hayal edebileceği her türlü kabustan çok daha kötüydü. Hem kadim hem de kin dolu bir zekaya sahip gibi görünüyordu; eklemleri, kendisine yönelirken yumuşakça çıtlıyordu. Eustace ağır kağıt ağırlığını savurdu ama çok yavaştı; yaratık, tüm hayatını inceleyerek geçirdiği anatomi yasalarına meydan okuyan akıcı bir zarafetle hareket ederek şaşırtıcı bir çeviklikle havaya sıçradı.",
+      "Geriye doğru sendeledi, ayağı halıya takıldı ve soğuk zemine sertçe düştü. El, göğsünün üzerine kondu; soğuk, cansız teni tüm sinir sistemine saf bir dehşet dalgası gönderdi. Mekanik ve acımasız bir niyetle hareket ederek bir dayanak noktası ararken parmaklarının kıyafetine bastığını hissedebiliyordu. Eustace onu çekip atmaya çalıştı, kendi elleri bu kopuk canavarla boğuştu ancak yaratık boyutunun düşündürebileceğinden çok daha güçlüydü. Avını bir avın son anlarında köşeye sıkıştıran bir yırtıcı gibi, hassas ve hesaplanmış hareketlerle boğazına doğru tırmandı. O an, amcasının aslında hiç gitmediğini anladı; müzisyenin dehası bu parmakların içine hapsolmuştu ve sadece kendi mağlubiyetiyle sona erecek olan son, tüyler ürpertici bir performans sergilemeye devam ediyordu.",
+      "Boğazını saran elin tutuşu, buz gibi bir demir halka gibi hissettiriyor ve bir müzik bestesinin zamanlamasını taklit eden ritmik, nabız gibi atan bir baskıyla sıkışıyordu. Eustace hava almak için çabaladı, oda mide bulandırıcı, kaotik bir karanlık girdabına dönüşürken görüşü kenarlardan bulanıklaştı. Azalan tüm gücüyle soğuk, kösele gibi parmaklara pençe attı ama parmaklar, reddedilmeyecek kötücül bir zeka tarafından ele geçirilmiş bir şekilde sıkıca tutuyordu. O dokunuşta merhamet yoktu, sadece uzun süredir devam eden bir intikam arzusunun soğuk ve hesaplanmış infazı vardı. Kalp atışı yavaşlarken kütüphanenin sessizliği derinleşti, boğumların tenine karşı hafif, ısrarcı tırmalama sesini yükseltti; bu, duvarlar arasında nihai ödülünü almış imkansız dehşetin son kanıtıydı.",
+      "Günler sonra, hizmetkarlar içeriden hiçbir ses gelmediğini fark edip kütüphane kapısını zorla açtıklarında, odayı rahatsız edici bir durgunluk içinde buldular. Ağır meşe kapı hüzünlü bir iniltiyle açıldı ve yaşanan trajedinin aksine mükemmel bir düzen manzarası ortaya çıkardı. Eustace masaya yığılmıştı, yüzü solgundu ve ifadesi ebedi bir şok maskesi içinde donup kalmıştı. Yaratığın kendisine dair hiçbir iz yoktu; maun yüzeyler tertemizdi, sabah ışığında parlıyor ve parıldıyordu, sanki hiçbir şey sessiz mükemmelliklerini bozmamış gibiydi. Sanki oda kabusu tamamen yutmuş, mücadelenin fiziksel kanıtlarını silmiş ve geride sadece tavanın karanlık köşelerinden izleyen soğuk, hayaletimsi bir varlığın ürpertici, kalıcı hissini bırakmıştı.",
+      "Keşfin ardından yaşananlar, ev halkını derin, boğucu bir keder içinde bıraktı ancak geride kalanların zihninde garip, kalıcı bir gizem hüküm sürmeye devam etti. Sık sık havanın aniden buz kestiği veya kütüphane raflarına vuran görünmez parmakların hafif, ritmik sesinin hayaletimsi bir melodi gibi koridorlarda yankılandığı gecelerden bahsederlerdi. Kimse karanlıktan sonra odaya girmeye cesaret edemedi, çünkü müzisyenin ve onun kopuk, kinci arkadaşının efsanesi döşeme tahtalarına kadar kök salmıştı. Herkes tarafından anlaşıldı ki evin efendisi, müziğiyle değil, sonsuza dek sessizliğe musallat olacak ve son performansının asla gerçek anlamda sona ermemesini sağlayacak korkutucu, bedensiz bir kötülükle bir tür ölümsüzlüğe ulaşmıştı."
+    ],
+    words: {
+      "secluded": "gözlerden uzak, izole",
+      "manuscript": "el yazması",
+      "anatomical": "anatomik",
+      "foreboding": "kötü bir şey olacağına dair içe doğan his",
+      "inheritance": "miras",
+      "latch": "mandal, kilit",
+      "somber": "kasvetli",
+      "mausoleum": "mozole",
+      "ornate": "süslü",
+      "translucent": "yarı saydam",
+      "morbid": "hastalıklı",
+      "defensive": "savunmacı",
+      "suffocating": "boğucu",
+      "mechanism": "mekanizma",
+      "poise": "duruş",
+      "rhythmic": "ritmik",
+      "legacy": "miras",
+      "persistent": "ısrarcı",
+      "vibrate": "titremek",
+      "agility": "çeviklik, kıvraklık",
+      "malicious": "kötü niyetli",
+      "scuttling": "hızlı ve kısa adımlarla kaçışmak",
+      "persistence": "ısrar",
+      "sanctuary": "sığınak",
+      "relentless": "amansız",
+      "percussion": "vuruş",
+      "manifestation": "tezahür",
+      "reprieve": "mola",
+      "inevitability": "kaçınılmazlık",
+      "frigid": "buz gibi, çok soğuk",
+      "adversary": "düşman, rakip",
+      "remnant": "kalıntı, bakiye",
+      "macabre": "tüyler ürpertici, ürkütücü",
+      "malignant": "kötücül",
+      "retribution": "intikam",
+      "pristine": "tertemiz",
+      "malice": "kötülük"
+    }
+  }
+,
+  {
+    id: 'horror_gorgon_head',
+    title: "The Gorgon's Head",
+    author: 'Nathaniel Hawthorne',
+    level: 'C1',
+    coverUrl: '/covers/horror_gorgon_head.webp',
+    en: [
+      "Perseus was a young man of noble spirit and undaunted courage, living in a realm where the echoes of ancient myths still vibrated through the air. His life, however, was overshadowed by the malevolence of King Polydectes, a monarch whose heart was as cold and hollow as a cavern deep beneath the sea. Polydectes sought to rid himself of the brave youth, hoping to pursue Perseus's mother, Danae, without the interference of her son. With a sinister glint in his eye, the king declared that he desired the head of Medusa, one of the three Gorgons, as a wedding gift. He knew well that any mortal who dared to confront the creature, whose hair consisted of hissing vipers and whose gaze petrified the soul, would surely meet a swift and agonizing demise in her desolate, sunless lair.",
+      "The task was a trap, a calculated deception designed to ensure that Perseus would never return to the shores of his homeland. Despite the overwhelming danger, Perseus accepted the challenge with a resolute heart, perhaps sensing the divine destiny that had already begun to weave his thread into the tapestry of legend. He departed without weapons or armor, guided only by his inherent sense of duty and a faint, flickering hope that justice might prevail. As he walked across the barren, scorched landscapes, the weight of the impossibility of his quest threatened to overwhelm his spirit. Yet, he pressed forward, driven by the memory of his mother's tearful eyes and the burning desire to prove his worth, unaware that the Olympian gods were watching his solitary journey with keen and curious interest.",
+      "The world felt vast and indifferent to his plight, yet Perseus felt a shift in the atmosphere as he reached the outskirts of the kingdom. The sky seemed to grow heavier, and the shadows stretched like elongated fingers, pointing toward the path he was destined to tread. He was but a mortal man against the ancient, chthonic forces that governed the dark corners of existence. Every step brought him further from the comfort of familiarity and deeper into a realm where reality fractured and twisted. Perseus did not tremble, though he knew the stakes were absolute. The silence of the wilderness became his companion, a stark reminder that he was alone in this monumental endeavor, standing upon the precipice of a struggle that would either elevate him to the pantheon of heroes or consign him to eternal stone.",
+      "As Perseus continued his arduous journey across the sun-scorched plains, a shimmering figure materialized amidst the shimmering heat haze. It was a youth of surpassing beauty, clad in a mantle of radiant light, wearing a cap with winged ornaments and wielding a staff entwined with serpents. This was Hermes, the fleet-footed messenger of the gods, whose arrival signaled that the heavens had finally turned their gaze upon the mortal hero. Perseus stood transfixed, recognizing the divine aura that radiated from his unexpected visitor. With a voice that resonated like the harmonious ringing of distant bells, the messenger greeted him, acknowledging the perilous nature of his undertaking. It was clear that the gods did not intend for the brave youth to perish in an ignoble encounter with the Gorgon, for his struggle was now part of a grander, celestial design.",
+      "Hermes spoke with clarity and purpose, explaining that the task assigned by Polydectes was a monumental endeavor that no mortal could accomplish unaided. He revealed that Medusa’s gaze was not merely a weapon, but a reflection of the primordial horror that existed before the world knew order. To overcome such an ancient malice, Perseus required more than just physical prowess; he needed the assistance of the immortals themselves. The god explained that his own winged sandals would provide the necessary swiftness, while a sharp, curved blade—a sickle of celestial design—was to be the instrument of victory. Furthermore, he emphasized the importance of caution, warning that the Gorgon must never be approached directly, for the sight of her monstrous countenance would instantly turn his flesh to cold, unyielding stone, ending his quest before it truly began.",
+      "The air crackled with anticipation as Hermes gestured toward a nearby grove where the legendary tools awaited. Perseus felt a surge of vitality course through his veins, the weariness of his long travels dissolving under the influence of divine grace. He understood now that he was merely the vessel through which the will of the gods would be manifest. Armed with the guidance of his ethereal mentor, he began to prepare himself for the trials ahead. The weight of his singular purpose seemed to lighten, replaced by a cold, calculating determination. He was no longer a solitary wanderer lost in a vast and indifferent landscape, but an instrument of retribution. As the sun began to dip below the horizon, painting the sky in hues of bruised purple and gold, Perseus prepared to step into the abyss, emboldened by the knowledge that he was not, after all, alone.",
+      "As the twilight deepened into a heavy, velvet darkness, Hermes led Perseus toward a secluded grotto hidden within the jagged teeth of the mountains. The air inside felt stagnant and ancient, carrying the scent of damp earth and forgotten secrets. Here, the god revealed the final pieces of his divine arsenal: a polished bronze shield that gleamed like a mirror and a satchel crafted from imperishable hide. Hermes explained that the shield was to serve as a visual medium, allowing Perseus to observe the Gorgon through her reflection, thereby avoiding the petrifying terror of her direct gaze. The satchel was essential for concealing the severed head, for even in death, the Gorgon’s eyes possessed the lingering power to turn the living into silent, stony monuments. Perseus accepted these gifts with profound gratitude, feeling the immense responsibility settle firmly upon his youthful shoulders.",
+      "The journey then shifted toward the mysterious land of the Graeae, the three ancient sisters who shared but a single eye and a single tooth among them. Hermes cautioned Perseus that these grey-haired crones were the keepers of the path to the Gorgons' lair. They were withered, blind in their collective state, and possessed a wicked, snarling disposition that made negotiation nearly impossible. To extract the location of the Nymphs, who held the final magical items, Perseus would have to employ strategy rather than force. The god emphasized that the youth must be quick and precise, for the sisters were treacherous and would surely destroy him if they perceived any weakness in his resolve. Perseus listened intently, his heart beating a steady, rhythmic cadence of courage, fully aware that the path ahead demanded both cunning and an unflinching spirit.",
+      "Perseus emerged from the grotto feeling transformed; he was no longer merely a prince of mortal blood but a champion favored by the celestial hierarchy. With the winged sandals now strapped securely to his feet, he felt the gravity of the earth lose its hold, and he hovered momentarily in anticipation of his flight. The divine staff of Hermes hummed with latent energy, illuminating the path forward through the deepening gloom of the treacherous mountain pass. Every step forward was a testament to his shifting destiny, as he prepared to confront the bizarre inhabitants of the world’s forgotten fringes. The shadow of his own silhouette stretched long and distorted against the canyon walls, yet Perseus felt no fear, only a singular, focused intent to reach the Graeae and secure the final keys to his inevitable, monumental confrontation.",
+      "Perseus moved with the silent grace of a predator, his winged sandals barely skimming the jagged surface of the earth as he approached the desolate domain of the Graeae. The atmosphere here was thick with the scent of decay and ancient dust, a testament to the sisters' long and bitter isolation. He observed them from behind a cluster of gnarled, leafless trees, watching their grotesque silhouettes huddled together in the pale moonlight. They were indeed a singular spectacle of horror: three grey-haired crones, their faces etched with the deep lines of centuries, arguing incessantly with voices that rasped like dry leaves skittering across pavement. Despite their advanced age and wretched appearance, there was a palpable sense of predatory alertness in their movements, a constant, twitching readiness that warned of their hidden, malicious power.",
+      "The youth waited for the precise moment when the sisters would transfer their singular, milky eye between them. It was a macabre ritual, performed with a mixture of practiced dexterity and mutual distrust. As the eldest crone pulled the eye from its hollow socket to hand it to the next, Perseus lunged forward with fluid speed. His movements were calculated, refined by the divine guidance of Hermes, and before the sisters could comprehend the intrusion, he had snatched the precious orb from their withered hands. The air filled with their sudden, shrill shrieks of panic and indignation. Deprived of their sight, they thrashed about like wounded beasts in a cage, their long fingers clawing at the empty, freezing air, desperately attempting to locate the intruder who had so abruptly shattered their fragile, shared existence.",
+      "Perseus stood firm, holding the heavy, unblinking eye high, his silhouette stark against the horizon as the sisters pleaded and threatened him in a cacophony of malice. He remained unmoved by their entreaties, his voice steady and commanding despite the inherent dread that radiated from the crones. He demanded to know the location of the Nymphs, the only beings who could provide the equipment necessary to slay Medusa. The Graeae, realizing they were thoroughly defeated and vulnerable, hissed their secrets through their single, shared tooth, their pride shattered by the youth's audacity. With the information secured, Perseus felt a surge of triumph, though he remained ever cautious. He knew that the path to the Gorgon was now open, and he wasted no time departing the desolate wasteland, leaving the sightless, snarling sisters to their perpetual and bitter twilight.",
+      "Perseus journeyed across vast, desolate landscapes, guided by the cryptic directions whispered by the Graeae. The air grew progressively thinner and colder, biting at his skin like invisible teeth, yet his resolve remained unyielding. He finally arrived at the secluded sanctuary of the Nymphs, a verdant oasis tucked away in the shadows of the world where time seemed to suspend its relentless march. The Nymphs, ethereal beings with eyes as clear as mountain springs, emerged from the shimmering foliage. They recognized the divine aura surrounding the youth and understood the noble peril of his quest. Without a word of hesitation, they offered him the sacred treasures required for his confrontation with the Gorgon: a polished bronze shield that mirrored the world with perfect clarity, a curved blade of celestial steel, and a magical cap of darkness that bestowed invisibility upon the wearer.",
+      "Equipping himself with these divine artifacts, Perseus felt a profound transformation. The polished shield, gifted by Athena, shone with a brilliance that challenged the very sun, yet it was not meant for combat in the traditional sense. He practiced maneuvering with the cap of darkness pulled low over his brow, watching as his own body faded into the translucent fabric of the atmosphere. The Nymphs observed him with a mixture of reverence and melancholy, knowing the gravity of the task ahead. They provided him with the final, crucial piece of equipment: a winged pair of sandals that would allow him to navigate the treacherous air above the Gorgon's lair. With these items, the young hero was no longer merely a mortal man; he was a vessel for divine justice, prepared to face the ultimate embodiment of ancient, petrifying terror.",
+      "With his heart hammering against his ribs like a captive bird, Perseus took to the sky, his sandals carrying him effortlessly over mountain ranges and treacherous seas. The landscape shifted from lush greenery to a bleak, volcanic wasteland where statues of men and beasts stood frozen in eternal, agonized poses. These were the grim monuments left by Medusa, warnings etched in stone for all who dared approach her domain. As he descended into the subterranean cavern, the atmosphere grew heavy with the stench of mortality and cold stone. He clutched the shield, careful not to gaze directly into the chamber, knowing that a single glance at the Gorgon would condemn him to join the silent ranks of the petrified. The hunt had reached its climax, and the darkness of the cavern felt suffocatingly dense.",
+      "Perseus hovered above the cavern floor, his heart drumming a steady rhythm of apprehension against his ribs as he peered into the murky depths through the reflection on his shield. Below him, the lair was a grotesque gallery of petrified souls, their faces caught in a final, silent scream of terror that echoed the absolute stillness of the tomb. In the center of this macabre exhibit lay Medusa, her form coiled in an unnatural repose, her hair a writhing nest of vipers that hissed in the stagnant air. Every instinct screamed at him to flee, for the air itself felt heavy with the weight of ancient curses and the lingering frost of a thousand frozen hearts. Yet, the young hero steadied his hand, focusing intently on the polished bronze surface, which served as his only bridge between reality and the lethal gaze of the creature.",
+      "He observed the Gorgon with extreme caution, noting the rhythmic twitching of her serpent locks which betrayed her restless, predatory slumber. The shield offered a perfect, though inverted, image of the chamber, allowing him to navigate the treacherous terrain without inviting his own instant destruction. He moved with the silence of a shadow, his winged sandals barely disturbing the thick layer of dust that had accumulated over decades of decay. Every muscle in his body was coiled like a spring, ready to release the tension of the long journey into one single, decisive act of retribution. He felt the cold steel of the celestial blade against his palm, its edge honed by the divine craft of the gods themselves, waiting for the precise moment when the Gorgon would reveal her throat to his hidden, unwavering blade.",
+      "The tension reached an unbearable crescendo as Medusa shifted, her monstrous face turning slightly toward the light that barely filtered into the subterranean pit. Perseus felt the sheer malignancy radiating from her being, a palpable force that sought to shatter his resolve and compel him to look directly into her eyes. He anchored his spirit in the thought of his mother and the promise of his noble quest, forcing his gaze to remain fixed firmly upon the reflection. With a sudden, swift motion, he swooped down, the invisibility of his cap shrouding him in a protective, unseen veil. He did not falter, even as the vipers shrieked in unison, sensing the presence of an intruder. The moment of truth arrived in a flash of divine light and cold steel, severing the source of eternal stone and silent despair.",
+      "The deed was done, and silence descended upon the cavernous lair, heavy and absolute, as the severed head of the Gorgon lay in the dust. Perseus, his breath hitching in his chest, wrapped the hideous trophy in his wallet, careful to avoid any stray glance that might turn his own limbs to unyielding granite. The writhing serpents upon the creature’s brow had finally ceased their rhythmic hissing, falling into a hollow stillness that signaled the end of a long and bloody reign of terror. He emerged from the subterranean darkness, the weight of his burden seeming to diminish as he soared into the cool, liberating air of the heavens. Below him, the petrified victims remained in their eternal vigil, yet the atmosphere had shifted, no longer thick with the malevolent, freezing breath of the ancient monster.",
+      "His return journey was marked by swift flight and a heart buoyed by the prospect of reclaiming his mother’s honor and safety from the clutches of the wicked king. As he traveled, he encountered the land of Ethiopia, where a new horror unfolded before his eyes: the princess Andromeda, chained to a jagged rock as an offering to a ravenous sea monster. Without hesitation, Perseus descended, his divine sword flashing like a vengeful bolt of lightning against the dark, churning waves. The struggle was fierce, as the creature lashed out with immense, crushing force, but the hero was undeterred. With the Gorgon's power now under his command, he orchestrated a tactical victory, ensuring that the beast met its end before it could consume the innocent maiden, forever altering the fate of the coastal kingdom.",
+      "Upon finally reaching his homeland, Perseus found the court in a state of chaotic transition and his mother still languishing under the king's cruel tyranny. He strode into the assembly, his presence cloaked in the mystery of his odyssey, and confronted the usurper before his terrified sycophants. When the king mocked his efforts and demanded proof of his failure, Perseus unveiled the ghastly head, casting the hall into a sudden, icy paralysis. The king and his entourage were instantly transformed into statues of cold, unfeeling stone, their hubris forever immortalized in the rigid, grey monuments of their own creation. With the threat extinguished and justice restored, Perseus walked into the sunlight, a true hero having fulfilled his destiny with courage, grace, and the divine assistance of the gods."
+    ],
+    tr: [
+      "Perseus, antik mitlerin yankılarının havada hala hissedildiği bir diyarda yaşayan, soylu ruhlu ve yılmaz cesarete sahip bir gençti. Ancak yaşamı, kalbi denizin derinliklerindeki bir mağara kadar soğuk ve boş olan Kral Polydectes'in kötülüğünün gölgesinde kalmıştı. Polydectes, Perseus'un annesi Danae'nin peşine oğlunun müdahalesi olmadan düşebilmek için bu cesur gençten kurtulmayı kafasına koymuştu. Kral, gözlerinde sinsi bir parıltıyla, düğün hediyesi olarak üç Gorgon'dan biri olan Medusa'nın başını istediğini ilan etti. Saçları tıslayan engereklerden oluşan ve bakışları ruhu taşa çeviren bu yaratıkla yüzleşmeye cüret eden her ölümlünün, onun ıssız ve güneş görmeyen ininde hızlı ve acı verici bir sona mahkum olacağını çok iyi biliyordu.",
+      "Bu görev, Perseus'un asla vatanının kıyılarına dönememesini sağlamak için tasarlanmış hesaplı bir aldatmacaydı. Büyük tehlikeye rağmen Perseus, belki de kaderinin efsane dokusuna çoktan işlenmeye başladığını hissederek, kararlı bir yürekle meydan okumayı kabul etti. Yanında silah veya zırh olmadan, sadece içsel görev duygusu ve adaletin tecelli edebileceğine dair belli belirsiz bir umutla yola koyuldu. Çorak ve kavrulmuş arazilerde yürürken, görevinin imkansızlığı ruhunu ezmeye başladı. Yine de annesinin yaşlı gözlerini ve değerini kanıtlama arzusunu hatırlayarak ilerledi; Olimpos tanrılarının onun bu yalnız yolculuğunu keskin ve meraklı gözlerle izlediğinden habersizdi.",
+      "Dünya, onun çektiği çileye karşı uçsuz bucaksız ve kayıtsız görünüyordu; ancak krallığın sınırlarına ulaştığında Perseus atmosferde bir değişim hissetti. Gökyüzü ağırlaşıyor, gölgeler, yürümesi gereken yolu işaret eden uzun parmaklar gibi uzuyordu. O, varlığın karanlık köşelerine hükmeden kadim, yeraltı güçlerine karşı duran bir ölümlüydü. Her adım, onu aşinalığın konforundan uzaklaştırıp gerçekliğin kırılıp büküldüğü bir diyara daha fazla yaklaştırıyordu. Perseus, riskin mutlak olduğunu bilmesine rağmen titremedi. Vahşi doğanın sessizliği onun yoldaşı oldu; onu kahramanlar panteonuna yükseltecek ya da ebedi taşa hapsedecek olan bu anıtsal çabada yalnız olduğunu hatırlatan keskin bir uyarı gibiydi.",
+      "Perseus güneşin kavurduğu ovalarda çetin yolculuğuna devam ederken, titreşen sıcaklık pusunun ortasında ışıldayan bir figür belirdi. Bu, görkemli bir ışık pelerini giymiş, kanatlı süsleri olan bir başlık takmış ve yılanlarla sarılı bir asa taşıyan, eşsiz güzellikte bir gençti. Bu, gelişinin tanrıların sonunda bakışlarını ölümlü kahramana çevirdiğini müjdeleyen, tanrıların hızlı habercisi Hermes'ti. Perseus, beklenmedik ziyaretçisinden yayılan ilahi aurayı tanıyarak olduğu yerde donakaldı. Uzak çanların uyumlu çınlaması gibi yankılanan bir sesle haberci onu selamladı ve giriştiği işin tehlikeli doğasını kabul etti. Tanrıların, bu cesur gencin Gorgon ile girişecekleri onursuz bir karşılaşmada can vermesini istemedikleri belliydi; zira onun mücadelesi artık daha büyük ve göksel bir tasarımın parçasıydı.",
+      "Hermes, Polydectes tarafından verilen görevin hiçbir ölümlünün yardımsız başaramayacağı devasa bir çaba olduğunu açıklayarak net ve amaçlı bir şekilde konuştu. Medusa'nın bakışının sadece bir silah değil, dünya düzeni bilmeden önce var olan ilkel dehşetin bir yansıması olduğunu ortaya koydu. Böylesine kadim bir kötülüğün üstesinden gelmek için Perseus'un sadece fiziksel beceriden fazlasına ihtiyacı vardı; bizzat ölümsüzlerin yardımına ihtiyaç duyuyordu. Tanrı, kendi kanatlı sandaletlerinin gerekli hızı sağlayacağını, göksel tasarımlı keskin ve kavisli bir bıçağın ise zaferin aracı olacağını açıkladı. Dahası, temkinli olmanın önemini vurguladı ve Gorgon'a asla doğrudan yaklaşılmaması konusunda uyardı; çünkü onun canavarca çehresini görmek etini anında soğuk, boyun eğmez taşa dönüştürecek ve görevini henüz başlamadan sona erdirecekti.",
+      "Hermes efsanevi araçların beklediği yakındaki bir koruluğa işaret ettiğinde hava beklentiyle çatırdadı. Perseus, uzun yolculuklarının yorgunluğunun ilahi lütfun etkisiyle çözüldüğünü hissederek damarlarında bir canlılık dalgası hissetti. Artık tanrıların iradesinin tezahür edeceği bir araçtan ibaret olduğunu anlamıştı. Ruhani akıl hocasının rehberliğiyle silahlanarak, önündeki sınavlar için kendini hazırlamaya başladı. Tekil amacının ağırlığı hafiflemiş, yerini soğuk ve hesaplı bir kararlılığa bırakmıştı. O artık uçsuz bucaksız ve kayıtsız bir manzarada kaybolmuş yalnız bir gezgin değil, bir intikam aracıydı. Güneş ufkun altına inip gökyüzünü mor ve altın tonlarına boyarken, Perseus nihayetinde yalnız olmadığını bilmenin verdiği cesaretle uçuruma adım atmaya hazırlandı.",
+      "Alacakaranlık ağır, kadifemsi bir karanlığa dönüşürken Hermes, Perseus'u dağların tırtıklı dişleri arasında gizlenmiş tenha bir mağaraya götürdü. İçerideki hava, rutubetli toprak ve unutulmuş sırların kokusunu taşıyarak durgun ve kadim bir his uyandırıyordu. Burada tanrı, ilahi cephaneliğinin son parçalarını ortaya çıkardı: ayna gibi parıldayan cilalı bir tunç kalkan ve yok edilemez deriden yapılmış bir çanta. Hermes, kalkanın görsel bir araç görevi göreceğini, Perseus'un Medusa'yı yansımasından izlemesine izin vererek onun doğrudan bakışının taşlaştırıcı dehşetinden kaçınmasını sağlayacağını açıkladı. Çanta, kesik başı saklamak için elzemdi; çünkü ölümde bile Gorgon'un gözleri, yaşayanları sessiz, taş anıtlara dönüştürme gücünü koruyordu. Perseus bu hediyeleri büyük bir minnetle kabul etti, engin sorumluluğun genç omuzlarına sıkıca çöktüğünü hissetti.",
+      "Yolculuk daha sonra, aralarında sadece tek bir gözü ve tek bir dişi paylaşan üç yaşlı kız kardeş olan Graeae'nin gizemli topraklarına doğru yöneldi. Hermes, Perseus'u bu gri saçlı cadıların Gorgonların inine giden yolun bekçileri olduğu konusunda uyardı. Bu yaşlılar kurumuş, kolektif hallerinde körleşmiş ve müzakereyi neredeyse imkansız kılan kötü niyetli, hırçın bir mizaca sahiptiler. Son büyülü eşyaları tutan Nymphlerin yerini öğrenmek için Perseus'un güçten ziyade strateji kullanması gerekecekti. Tanrı, gencin hızlı ve hassas olması gerektiğini, çünkü kız kardeşlerin hain olduğunu ve kararlılığında herhangi bir zayıflık sezerlerse onu kesinlikle yok edeceklerini vurguladı. Perseus, önündeki yolun hem kurnazlık hem de yılmaz bir ruh gerektirdiğinin bilinciyle, kalbi cesaretin ritmik bir temposuyla atarak onu dikkatle dinledi.",
+      "Perseus mağaradan dönüşmüş bir şekilde çıktı; artık sadece ölümlü kanından bir prens değil, göksel hiyerarşinin desteklediği bir şampiyondu. Kanatlı sandaletler şimdi ayaklarına sıkıca bağlıyken, dünyanın yerçekiminin etkisini kaybettiğini hissetti ve uçuşunun beklentisiyle bir anlığına havada asılı kaldı. Hermes'in ilahi asası gizli bir enerjiyle uğuldayarak tehlikeli dağ geçidinin koyulaşan karanlığında ilerlenecek yolu aydınlatıyordu. Her ileri adımı, kaderinin değiştiğinin bir kanıtıydı; dünyanın unutulmuş sınırlarının tuhaf sakinleriyle yüzleşmeye hazırlanıyordu. Kendi siluetinin gölgesi kanyon duvarlarında uzun ve çarpık bir şekilde uzanıyordu, ancak Perseus korku hissetmiyordu; sadece Graeae'ye ulaşmak ve kaçınılmaz, anıtsal yüzleşmesinin son anahtarlarını elde etmek için tek bir odaklanmış niyeti vardı.",
+      "Perseus, kanatlı sandaletleri yerin sarp yüzeyini zar zor sıyırırken, Graeae'nin ıssız bölgesine doğru bir yırtıcının sessiz zarafetiyle ilerledi. Buradaki atmosfer, çürüme ve antik toz kokusuyla yoğundu; bu, kız kardeşlerin uzun ve acı dolu yalnızlığının bir kanıtıydı. Onları, solgun ay ışığında bir araya çömelmiş grotesk silüetlerini izleyerek, düğümlü ve yapraksız ağaç kümelerinin arkasından gözlemledi. Gerçekten de korku verici bir manzaraydılar: yüzleri yüzyılların derin çizgileriyle kazınmış, kaldırımda kayan kuru yapraklar gibi hırıldayan seslerle durmaksızın tartışan üç gri saçlı kocakarı. İleri yaşlarına ve perişan görünümlerine rağmen, hareketlerinde belirgin bir yırtıcı uyanıklık, gizli ve kötücül güçlerini haber veren sürekli bir seğirme hali vardı.",
+      "Genç, kız kardeşlerin tek, süt rengi gözlerini birbirlerine aktaracakları o hassas anı bekledi. Bu, deneyimli bir beceri ve karşılıklı güvensizliğin karışımıyla gerçekleştirilen ürkütücü bir ritüeldi. En yaşlı kocakarı gözü yuvasından çıkarıp diğerine uzatırken, Perseus akıcı bir hızla ileri atıldı. Hareketleri hesaplanmış ve Hermes'in ilahi rehberliğiyle rafine edilmişti; kız kardeşler durumu idrak edemeden, değerli gözü onların kurumuş ellerinden kapmıştı. Hava, aniden yükselen panik ve öfke çığlıklarıyla doldu. Görme yetilerinden mahrum kalan kız kardeşler, bir kafesteki yaralı canavarlar gibi etrafa savruldular; uzun parmakları boş ve buz gibi havayı tırmalayarak, kırılgan ve ortak varoluşlarını böylesine ani bir şekilde parçalayan davetsiz misafiri bulmaya çalıştılar.",
+      "Perseus, ağır ve kırpmayan gözü havada tutarak, kız kardeşler bir kötülük senfonisi içinde yalvarıp tehditler savururken ufka karşı dik bir silüet halinde durdu. Kocakarılardan yayılan doğal dehşete rağmen sesi istikrarlı ve otoriter bir şekilde, onların yakarışlarından etkilenmedi. Medusa'yı öldürmek için gerekli teçhizatı sağlayabilecek tek varlıklar olan Nymphlerin yerini öğrenmeyi talep etti. Tamamen yenildiklerini ve savunmasız olduklarını anlayan Graeae, gururları gencin cüretiyle yerle bir olmuş bir şekilde, tek ortak dişlerinin arasından sırlarını tısladılar. Bilgiyi elde eden Perseus, her ne kadar tetikte olsa da bir zafer dalgası hissetti. Gorgon'a giden yolun artık açık olduğunu biliyordu ve vakit kaybetmeden bu ıssız çorak topraklardan ayrılarak, gözsüz ve hırlayan kız kardeşleri ebedi ve acı dolu alacakaranlıklarına terk etti.",
+      "Perseus, Graeae tarafından fısıldanan şifreli yönergelerle rehberlik edilerek engin, ıssız manzaralar boyunca yolculuk etti. Hava gittikçe inceliyor ve soğuyor, cildini görünmez dişler gibi ısırıyordu ancak kararlılığı sarsılmazdı. Nihayet, zamanın amansız yürüyüşünü askıya almış gibi görünen, dünyanın gölgeleri arasına gizlenmiş yeşil bir vaha olan Nymph'lerin tenha sığınağına ulaştı. Dağ pınarları kadar berrak gözlere sahip eterik varlıklar olan Nymph'ler, parıldayan yaprakların arasından ortaya çıktılar. Gencin çevresindeki ilahi aurayı tanıdılar ve arayışının soylu tehlikesini anladılar. Hiç tereddüt etmeden, Gorgon ile yüzleşmesi için gereken kutsal hazineleri ona sundular: dünyayı kusursuz bir netlikle yansıtan cilalı bir bronz kalkan, göksel çelikten kıvrımlı bir kılıç ve takana görünmezlik bahşeden sihirli bir karanlık başlığı.",
+      "Bu ilahi eserlerle donanan Perseus, derin bir dönüşüm hissetti. Athena tarafından hediye edilen cilalı kalkan, güneşe meydan okuyan bir parlaklıkla parlıyordu ancak bu, geleneksel anlamda savaş için tasarlanmamıştı. Karanlık başlığını kaşlarının üzerine indirerek manevra yapma pratiği yaptı, kendi bedeninin atmosferin yarı saydam dokusu içinde silinip gidişini izledi. Nymph'ler, önündeki görevin ağırlığını bilerek onu saygı ve hüzün karışımı bir duyguyla izlediler. Ona ekipmanın son ve en önemli parçasını, Gorgon'un ininin üzerindeki tehlikeli havada yol almasını sağlayacak kanatlı sandaletleri verdiler. Bu eşyalarla genç kahraman artık sadece ölümlü bir adam değil, kadim ve taşlaştıran dehşetin nihai somutlaşmış haliyle yüzleşmeye hazır, ilahi adaletin bir aracıydı.",
+      "Kalbi kafesteki bir kuş gibi kaburgalarına çarparken Perseus gökyüzüne yükseldi, sandaletleri onu dağ sıralarının ve tehlikeli denizlerin üzerinden zahmetsizce taşıdı. Manzara, gür yeşilliklerden, insan ve hayvan heykellerinin sonsuz, ıstıraplı pozlarda donmuş halde durduğu kasvetli, volkanik bir araziye dönüştü. Bunlar, Medusa'nın bıraktığı, onun alanına yaklaşmaya cüret eden herkes için taşa kazınmış uyarılar olan ürkütücü anıtlardı. Yeraltı mağarasına indiğinde, atmosfer ölüm ve soğuk taş kokusuyla ağırlaştı. Kalkanı sıkıca tuttu, doğrudan odaya bakmamaya özen gösterdi, çünkü Gorgon'a atılacak tek bir bakışın onu taşlaşmış sessiz saflara katılmaya mahkûm edeceğini biliyordu. Av zirve noktasına ulaşmıştı ve mağaranın karanlığı boğucu bir yoğunluktaydı.",
+      "Perseus, kalkanındaki yansıma aracılığıyla mağaranın karanlık derinliklerine bakarken, kalbi kaburga kafesine karşı bir endişe ritmiyle çarpıyordu. Aşağısında, mağara taşlaşmış ruhlardan oluşan grotesk bir galeri gibiydi; yüzleri, mezarın mutlak sessizliğini yansıtan son ve sessiz bir dehşet çığlığında donup kalmıştı. Bu korkunç serginin merkezinde Medusa yatıyordu; bedeni doğal olmayan bir şekilde kıvrılmış, saçları ise durgun havada tıslayan bir yılan yuvasını andırıyordu. Tüm içgüdüleri kaçması için bağırıyordu, çünkü hava kadim lanetlerin ağırlığı ve binlerce donmuş kalbin süregelen ayazıyla ağırlaşmıştı. Yine de genç kahraman elini sabit tutarak, gerçeklik ile yaratığın ölümcül bakışı arasındaki tek köprü olan cilalı bronz yüzeye dikkatle odaklandı.",
+      "Gorgon'u aşırı bir dikkatle gözlemledi; yılan saçlarının ritmik seğirmeleri, onun huzursuz ve yırtıcı uykusunu ele veriyordu. Kalkan, odanın kusursuz ancak tersyüz edilmiş bir görüntüsünü sunarak, kendi kaçınılmaz yıkımına davetiye çıkarmadan tehlikeli arazide ilerlemesini sağlıyordu. On yıllarca süren çürümenin ardından biriken kalın toz tabakasını zar zor kıpırdatarak bir gölge sessizliğiyle hareket etti. Vücudundaki her kas, uzun yolculuğun gerilimini tek bir kesin cezalandırma eylemine bırakmaya hazır, bir yay gibi gerilmişti. Tanrıların ilahi zanaatıyla bilenmiş olan göksel kılıcın soğuk çeliğini avucunda hissediyor, Gorgon'un boğazını görünmez ve sarsılmaz kılıcına sunacağı o kesin anı bekliyordu.",
+      "Medusa kıpırdandığında gerilim dayanılmaz bir zirveye ulaştı; canavarca yüzü, yeraltı çukuruna zorlukla sızan ışığa doğru hafifçe dönmüştü. Perseus, onun varlığından yayılan saf kötülüğü hissetti; bu, iradesini kırmaya ve onu doğrudan gözlerinin içine bakmaya zorlayan somut bir güçtü. Ruhunu annesinin düşüncesi ve asil görevinin vaadiyle sabitledi, bakışlarını inatla yansımaya kilitli tuttu. Ani ve hızlı bir hareketle aşağı süzüldü; görünmezlik başlığı onu koruyucu, görünmez bir örtüyle sarıyordu. Bir davetsiz misafirin varlığını sezen yılanlar hep bir ağızdan çığlık atsa da o tereddüt etmedi. Hakikat anı, ilahi bir ışık ve soğuk çeliğin parıltısıyla geldi ve sonsuz taşın ve sessiz umutsuzluğun kaynağını kesti.",
+      "İş bitmişti ve Gorgon'un kesik başı tozlar içinde yatarken, mağaradaki inine ağır ve mutlak bir sessizlik çöktü. Perseus, göğsünde hırıltılı bir nefesle, uzuvlarını sert bir granite dönüştürebilecek başıboş bakışlardan kaçınmaya çalışarak, iğrenç ganimeti torbasına sardı. Yaratığın alnındaki kıvranan yılanlar nihayet ritmik tıslamalarını kesmiş, uzun ve kanlı bir terör saltanatının sonunu işaret eden boş bir dinginliğe gömülmüşlerdi. Yeraltı karanlığından çıktığında, yükünün ağırlığı sanki göklerin serin ve özgürleştirici havasına yükseldikçe azalıyordu. Aşağısında, taşa dönmüş kurbanlar sonsuz nöbetlerinde kalsalar da, ortam değişmişti; artık kadim canavarın kötücül ve dondurucu nefesiyle ağırlaşmıyordu.",
+      "Dönüş yolculuğu, hızlı bir uçuş ve annesinin onurunu ve güvenliğini kötü kalpli kralın pençelerinden kurtarma ihtimaliyle hafiflemiş bir yürekle geçti. Yolculuk sırasında, gözlerinin önünde yeni bir dehşetin yaşandığı Etiyopya diyarına rastladı: Prenses Andromeda, aç bir deniz canavarına kurban olarak sivri bir kayaya zincirlenmişti. Perseus hiç tereddüt etmeden alçaldı; ilahi kılıcı, karanlık ve çalkantılı dalgalara karşı öfkeli bir şimşek gibi parlıyordu. Yaratık devasa ve ezici bir güçle saldırdığı için mücadele sert geçti, ancak kahraman yılmadı. Artık emrindeki Gorgon'un gücüyle taktiksel bir zafer kazandı ve canavarın masum kızı yemesine fırsat vermeden sonunu getirerek kıyı krallığının kaderini sonsuza dek değiştirdi.",
+      "Nihayet vatanına vardığında Perseus, sarayı kaotik bir geçiş sürecinde ve annesini hala kralın zalim tiranlığı altında acı çekerken buldu. Yolculuğunun gizemiyle örtülü bir halde meclise girdi ve zorba kralı korkmuş dalkavuklarının önünde yüzleştirdi. Kral onun çabalarıyla alay edip başarısızlığının kanıtını istediğinde, Perseus korkunç başı ortaya çıkardı ve salonu ani, buz gibi bir felce uğrattı. Kral ve maiyeti anında soğuk, hissiz taştan heykellere dönüştüler; kibirleri, kendi yarattıkları katı, gri anıtlarla sonsuza dek ölümsüzleşti. Tehdit ortadan kalktığında ve adalet sağlandığında Perseus, cesaret, zarafet ve tanrıların ilahi yardımıyla kaderini yerine getirmiş gerçek bir kahraman olarak gün ışığına çıktı."
+    ],
+    words: {
+      "malevolence": "kötülük",
+      "petrify": "taşa çevirmek",
+      "deception": "aldatmaca",
+      "inherent": "doğasında olan",
+      "chthonic": "yeraltı dünyasına ait",
+      "precipice": "uçurum kenarı",
+      "arduous": "çetin, çok zahmetli",
+      "materialize": "belirmek, cisimleşmek",
+      "primordial": "ilkel, en eski",
+      "countenance": "yüz ifadesi, çehre",
+      "ethereal": "eterik",
+      "retribution": "cezalandırma",
+      "grotto": "mağara",
+      "stagnant": "durgun",
+      "arsenal": "cephanelik",
+      "petrifying": "taşlaştırıcı",
+      "cadence": "ritim",
+      "latent": "gizli",
+      "grotesque": "gülünç derecede tuhaf, çirkin",
+      "crone": "ihtiyar ve çirkin kadın, kocakarı",
+      "dexterity": "beceri, el çabukluğu",
+      "cacophony": "rahatsız edici sesler bütünü, gürültü",
+      "audacity": "cüret, yüzsüzlük",
+      "desolate": "ıssız, terk edilmiş",
+      "cryptic": "şifreli",
+      "verdant": "yeşil ve canlı",
+      "reverence": "derin saygı",
+      "subterranean": "yeraltı",
+      "petrified": "taşlaşmış",
+      "apprehension": "endişe",
+      "macabre": "ürkünç",
+      "malignancy": "kötülük",
+      "crescendo": "doruk noktası",
+      "granite": "granit, çok sert taş",
+      "malevolent": "kötücül, art niyetli",
+      "sycophant": "dalkavuk, yağcı",
+      "usurper": "tahtı zorla ele geçiren",
+      "hubris": "aşırı gurur, kibir"
+    }
+  }
+,
+  {
+    id: 'horror_whisperer_in_darkness',
+    title: "The Whisperer in Darkness",
+    author: 'H. P. Lovecraft',
+    level: 'C1',
+    coverUrl: '/covers/horror_whisperer_in_darkness.webp',
+    en: [
+      "The great Vermont flood of 1927 brought forth more than mere sediment and debris from the dark, craggy hills; it unleashed a torrent of localized folklore that threatened to subvert the rigid boundaries of modern science. As an academic ensconced in the quiet halls of Miskatonic University, I initially viewed the frantic newspaper reports with a scholarly detachment, dismissing the tales of strange, non-human cadavers floating in the swollen rivers as nothing more than the superstitious mutterings of isolated mountain folk. Yet, the persistent nature of these accounts began to gnaw at my skepticism. Witnesses described peculiar, crab-like entities that defied biological classification, possessing a terrifying geometry that suggested origins far beyond our terrestrial realm. These accounts, coupled with the uneasy atmosphere permeating the rugged landscape, transformed my intellectual curiosity into a growing, gnawing apprehension about the unknown horrors concealed within the wilderness.",
+      "My academic colleague, Albert N. Wilmarth, was not the only one intrigued by these grotesque reports; indeed, the public's fascination reached a fever pitch, fueled by sensationalist journals and terrified whispers in secluded valley towns. The local accounts often focused on the mysterious 'Outer Ones,' legendary beings whispered to dwell on the highest peaks where the thin air barely sustains life. It was whispered that these creatures, through some uncanny artifice, could traverse the vast, cold voids between the stars. My initial dismissiveness waned as I pored over the detailed, corroborated testimonies provided by terrified farmers who claimed to have seen these beings near the remote, densely forested slopes of the Green Mountains. The sheer consistency of these bizarre descriptions suggested that there was a kernel of truth buried deep within the mountains, waiting for someone to unearth its dreadful implications.",
+      "The intellectual climate of the era demanded empirical rigor, yet I found myself gravitating toward the fringe of the paranormal, unable to ignore the mounting evidence of an eldritch presence. My letters to the various investigators and folklorists in the region became more frequent, each missive seeking to bridge the gap between mundane reality and the encroaching shadow of the inexplicable. I meticulously cataloged every scrap of information, from the strange, humming noises heard in the dead of night to the peculiar, metallic cylinder fragments supposedly retrieved from mountain stream beds. As I organized these fragments of mystery, I felt a creeping sensation that I was documenting the precursors to an event of cosmic significance. The veil between the rational world and the abyss was thinning, and I stood at the threshold of a discovery that promised to unravel the very fabric of human understanding.",
+      "My academic curiosity was soon rewarded with a correspondence that fundamentally challenged my skeptical disposition. Henry Wentworth Akeley, a reclusive and highly educated farmer living near Townshend, Vermont, contacted me with startling claims regarding these elusive entities. His letters possessed a scholarly tone, far removed from the ignorant superstitions I had previously dismissed. Akeley articulated his experiences with a terrifying precision, describing a series of disturbing encounters that had plagued his remote farmhouse for years. He insisted that the sightings were not mere phantoms of a fevered imagination but were manifestations of a tangible, extraterrestrial presence. His correspondence, written with the deliberate care of a man burdened by a terrible secret, served to pull me deeper into this labyrinthine investigation, compelling me to take his claims with the gravity they truly demanded in the face of such profound strangeness.",
+      "The content of Akeley’s letters detailed a sophisticated campaign of surveillance and psychological warfare orchestrated by these creatures. He spoke of the 'Outer Ones' not as simple beasts, but as highly advanced, non-human intelligences that had monitored the human race for eons from their hidden, mountainous outposts. They supposedly sought to infiltrate our civilization, using subtle methods to influence key figures and obscure their own existence from the prying eyes of science. Akeley’s descriptions of their strange, buzzing communications were particularly harrowing, suggesting a language of vibrations that lacked the familiar structure of human speech. Each page I turned brought a heavier burden of unease, as I realized the implications of his evidence: if his accounts were indeed accurate, the history of our world was merely a veneer, concealing a reality far more alien and predatory than humanity could possibly conceive.",
+      "As I continued to correspond with Akeley, his tone grew increasingly desperate, reflecting an intense fear that he was being watched by unseen observers lurking just beyond the threshold of his perception. He described hearing inexplicable scratching at his doors and seeing mysterious, glowing silhouettes that vanished before they could be captured by any light source. Despite his isolation and the mounting threat to his physical safety, he remained committed to documenting every bizarre occurrence, viewing it as his duty to warn the world of this looming cosmic encroachment. I found myself becoming his sole confidant, the only link between his besieged farmhouse and the intellectual community that remained oblivious to the encroaching darkness. This mounting intimacy with his terror made me feel as if the unseen eyes he described were slowly beginning to turn their collective, multifaceted focus toward me as well.",
+      "The correspondence shifted from abstract warnings to the immediate threat of a physical siege upon the farmhouse in Vermont. Akeley provided me with a collection of disturbing photographs, which he had captured with great difficulty, depicting strange, blurred impressions on the soft mud near his property. These markings, he argued, were not the result of known terrestrial animals, but evidence of entities that moved with a grotesque, mechanical efficiency. He described his sleepless nights spent clutching a rifle, listening to the peculiar, metallic buzzing sounds emanating from the deep shadows of the surrounding woods. Each letter was now infused with a palpable sense of dread, as if the creatures were no longer content with mere surveillance but were actively tightening their grip around his isolated existence, preparing to extract some unknown, terrible price for his continued defiance.",
+      "I began to notice a peculiar, rhythmic pattern in the arrival of his mail, which suggested that certain messages were being intercepted or delayed by some unseen agency. Akeley confessed that his mail carrier was acting with an inexplicable nervousness, occasionally bringing letters that had clearly been opened and resealed with a crude, waxy substance unknown to modern science. He believed that the entities were employing sophisticated methods to monitor our exchange of information, perhaps identifying me as an accessory to his investigations. This realization cast a long, cold shadow over my own scholarly pursuits, transforming my once academic interest into a desperate, visceral concern for his safety. I urged him to flee his home and seek refuge in a more populated area, yet he insisted that his departure would only hasten the inevitable, as they possessed ways to track him across any distance.",
+      "His descriptions of their physical appearance became increasingly fragmented, revealing a desperate attempt to reconcile their otherworldly physiology with human terms. He spoke of beings that possessed a crab-like, chittering quality, moving on multiple jointed limbs that left patterns incomprehensible to any local naturalist. Akeley described them as entities that did not truly inhabit our dimension in the conventional sense, but existed as translucent, shifting forms that could partially solidify at will. Their presence seemed to disturb the very fabric of the environment, causing the local flora to wilt and the birds to fall silent whenever they approached. I read these accounts with a shaking hand, feeling the walls of my own rational world begin to buckle under the weight of such profound, cosmic hostility that threatened to consume my friend and, eventually, any witness to his plight.",
+      "The transition in Akeley’s temperament was most distressing; he had moved from the role of a meticulous investigator to that of a man thoroughly cowed by unseen forces. In his latest correspondence, the intellectual arrogance that once defined his tone had completely evaporated, replaced by a frantic, submissive desire to appease those who surrounded his home. He began to speak of the entities not as monstrous adversaries, but as travelers from distant star-systems who possessed secrets of the universe that dwarfed our primitive understanding. This sudden shift in his paradigm suggested a profound psychological breakdown or, worse, a deliberate manipulation orchestrated by the creatures to ensure his cooperation. I felt an icy shiver traverse my spine, realizing that my friend was no longer the master of his own faculties, but a pawn within a grand, cosmic game.",
+      "His description of the strange sound emanating from the shadows transformed as well. He no longer characterized the buzzing as a threat, but as a language of complex vibrations that conveyed forbidden knowledge. He claimed that through these audio transmissions, he had begun to communicate with the entities, finding their perspective on existence both terrifying and strangely enlightening. The isolation of the Vermont farmhouse had clearly fractured his perception of reality, creating a sanctuary for madness to flourish. It was as if the very air surrounding his dwelling had been tainted by the entities, poisoning his logic and drawing him into their inscrutable web. I attempted to counter his arguments with reasoned discourse, but my pleas for his mental liberation fell upon deaf ears, as he seemed entirely captivated by the seductive nature of the horrors he once loathed.",
+      "The atmosphere of the correspondence grew even more claustrophobic when he detailed the arrival of visitors. These were not the ethereal horrors he had previously described, but individuals who claimed to be intermediaries for the entities, arriving at his door with strange, mechanical apparatuses. He maintained that these beings required his assistance to finalize some undisclosed task involving the transportation of precious cargo across the cosmic void. My heart sank as I realized the true scope of the encroachment; the entities were physically consolidating their influence, turning Akeley into a literal conduit for their clandestine objectives. The barrier between his domestic security and the abyssal unknown had been breached, leaving him vulnerable to the whims of creatures whose motives were entirely alien to the moral fabric of humanity, leaving me in a state of paralyzing dread.",
+      "The journey to Vermont was marked by an oppressive silence that weighed heavily upon my soul, as if the landscape itself were watching my progress with malevolent intent. As I navigated the winding, neglected roads toward Akeley’s isolated farmhouse, the shadows seemed to lengthen and contort in ways that defied natural geometry. The trees appeared like jagged, skeletal fingers grasping at the grey, indifferent sky, while the very air seemed to vibrate with a faint, incessant humming that set my teeth on edge. Every rustle of the leaves felt like a whispered warning from some hidden watcher, a reminder that I was encroaching upon a territory where human reason no longer held sway. I clutched my luggage firmly, feeling like an intruder in a realm belonging to something ancient, cold, and utterly incomprehensible to the human mind.",
+      "Upon reaching the farmhouse, the sight that met my eyes was deeply disconcerting; the structure stood weathered and forlorn, as if it had been abandoned for decades rather than occupied by a living soul. The windows were boarded up with heavy, makeshift barriers, and the porch appeared structurally unsound, giving the entire property the aspect of a tomb waiting for its inhabitant. I approached the entrance with a trepidation that threatened to halt my movements entirely, yet the necessity of discovering Akeley’s true condition drove me forward. I hammered upon the door, the sound echoing hollowly across the barren fields, but only a heavy, stifling silence answered my summons. It was an unnerving void, a lack of life that suggested the house had become a shell, a hollow vessel for whatever dark secrets Akeley had foolishly invited into his existence.",
+      "The interior, when I finally forced my way inside after finding the door unlocked, revealed a scene of utter, frantic disarray that spoke of a mind shattered by overwhelming terror. Scraps of paper covered with frantic, incomprehensible scrawls were scattered across the floor, and the furniture had been pushed against the walls as if to clear a space for some ritualistic performance. There were strange metallic devices lying in the corner, humming with a low, rhythmic frequency that resonated within my very bones, yet there was no sign of Akeley himself. The sense of being watched intensified, a prickling sensation at the back of my neck that convinced me the entities had been here only moments before. I stood in the center of that desolate room, realizing with a sickening jolt of horror that my friend had been utterly consumed by the cosmic nightmare he had dared to document.",
+      "I moved through the dim corridors of the farmhouse, my heart hammering against my ribs like a trapped bird. Every shadow seemed to coalesce into a shape that defied my comprehension, and the persistent humming of the mysterious metallic contraptions grew louder, vibrating with a rhythmic, alien intensity that made my head spin. I found a collection of letters hidden beneath a pile of moldering, dust-covered garments, their contents confirming the horrific reality Akeley had desperately attempted to communicate. He had indeed spoken with the entities, the hideous, buzzing, crab-like beings from Yuggoth, and his words were etched with the agony of a man who had seen the void and found himself incapable of turning away. The realization that these creatures could inhabit human forms through surgical mimicry sent a cold shiver down my spine, rendering my surroundings suddenly and intensely threatening.",
+      "As I examined the final note, my hands trembled violently, for the handwriting had shifted significantly in its style and urgency toward the end. It detailed the transformation of the house into a gateway, a conduit for beings that exist beyond the reach of human perception, feeding on the very fabric of our reality. I understood then that Akeley was no longer the man I had known, but a marionette manipulated by forces that viewed our existence as a trifling inconvenience. The air in the room grew heavy and stagnant, saturated with the metallic scent of ozone and the subtle, sickening aroma of decay. I felt a profound sense of isolation, a crushing weight of solitude as if the walls of the farmhouse were contracting to trap me within this tomb of secrets, isolating me from the warmth of the living world forever.",
+      "Panic surged through me when I discovered a strange, cylindrical container resting in the shadows of the attic, its lid slightly ajar to reveal a soft, bioluminescent glow pulsating from within. A sudden, sharp realization dawned upon me: the entities had not merely left Akeley behind, but had utilized him as an instrument for their own cryptic purposes. The chilling thought that he might still be somewhere in this wretched dwelling, perhaps transformed into one of the very horrors he so feared, forced me toward the exit. I could no longer ignore the instinctual urge to flee this accursed place, for the silence that once seemed merely heavy now possessed a sentient, watchful quality that seemed to anticipate my every movement. I stumbled toward the door, leaving the haunting evidence behind, my only desire to distance myself from the cosmic infection taking root in these desolate Vermont hills.",
+      "I lunged toward the exit, my boots pounding against the splintered floorboards as the oppressive silence of the farmhouse shattered behind me. Every instinct screamed of a proximity that bordered on the divine and the profane, a cold recognition that the entities were not merely observers, but active architects of this singular, nightmare reality. The darkness of the Vermont woods seemed to stretch out like long, skeletal fingers, eager to drag me back into the abyss I had barely escaped. I clutched the incriminating notes against my chest, their pages feeling like shards of ice that burned with the truth of the cosmic invasion. My pulse was a frantic rhythm in my ears, drowning out the nocturnal sounds of the forest as I scrambled toward the idling vehicle, desperate to ignite the engine and flee this suffocating, cursed hollow forever.",
+      "Behind me, the house stood as a silent, monolithic sentinel, its windows appearing like vacant, lidless eyes observing my frantic retreat with an indifferent, otherworldly patience. There was no sound of pursuit, only the crushing awareness that the creatures from Yuggoth required no physical chase when they had already infected the very logic of my world. I could envision them within, those buzzing, multifaceted abominations, perhaps already dismantling the remnants of poor Akeley’s existence to further their inscrutable, alien agenda. The weight of the secret I carried felt heavier than the mountain itself, a burden of knowledge that threatened to fracture my sanity entirely. I realized with terrifying clarity that I was not merely escaping a physical location, but attempting to outrun a shadow that had already cast itself across the entire map of human history and precarious understanding.",
+      "As I drove into the safety of the dawn, the landscape blurred into a streak of gray and emerald, yet the visceral sensation of those alien vibrations lingered in my bones. I knew that I would never find solace in the familiar again, for the barrier between humanity and the Elder Ones had proven to be little more than a fragile illusion. The world appeared deceptively normal, yet beneath the surface, I perceived the gears of a vast, cosmic clockwork grinding toward an inevitable conclusion I had glimpsed through the dusty, forbidden pages. I would burn the evidence, scatter the ashes to the wind, and spend the remainder of my days in a quiet, haunted vigil against the encroaching dark. The secret of the whisperers would remain my silent, agonizing companion, a testament to the fragile fragility of our light in the face of an infinite, uncaring void."
+    ],
+    tr: [
+      "1927'deki büyük Vermont seli, karanlık ve engebeli tepelerden sadece tortu ve molozdan fazlasını getirdi; modern bilimin katı sınırlarını sarsma tehdidinde bulunan yerel bir halk masalları selini açığa çıkardı. Miskatonic Üniversitesi'nin sessiz salonlarına sığınmış bir akademisyen olarak, başta telaşlı gazete haberlerine bilimsel bir mesafeyle yaklaştım ve kabarmış nehirlerde yüzen garip, insan dışı cesetlerle ilgili hikayeleri, izole olmuş dağ halkının batıl inançlı mırıldanmalarından ibaret görerek reddettim. Yine de, bu anlatıların ısrarlı doğası şüpheciliğimi kemirmeye başladı. Tanıklar, biyolojik sınıflandırmaya meydan okuyan, karasal alemimizin çok ötesinde kökenlere işaret eden dehşet verici bir geometriye sahip, tuhaf, yengeç benzeri varlıkları tasvir ediyorlardı. Bu anlatılar, engebeli manzaraya sinen tedirgin edici atmosferle birleşerek, entelektüel merakımı vahşi doğada gizlenmiş bilinmeyen dehşetlere karşı büyüyen ve içten içe kemiren bir endişeye dönüştürdü.",
+      "Akademik meslektaşım Albert N. Wilmarth, bu grotesk raporlarla ilgilenen tek kişi değildi; nitekim halkın hayranlığı, sansasyonel gazeteler ve ıssız vadi kasabalarındaki korkulu fısıltılarla körüklenerek zirveye ulaştı. Yerel anlatılar genellikle, ince havanın hayatı zorlukla idame ettirdiği en yüksek tepelerde yaşadıkları fısıldanan efsanevi varlıklar olan 'Dıştakiler'e odaklanıyordu. Bu yaratıkların, gizemli bir ustalıkla yıldızlar arasındaki uçsuz bucaksız, soğuk boşlukları geçebildikleri fısıldanıyordu. Yeşil Dağlar'ın sarp, sık ormanlarla kaplı yamaçlarında bu varlıkları gördüğünü iddia eden dehşet içindeki çiftçilerin sunduğu ayrıntılı ve doğrulanmış ifadeleri inceledikçe, başlangıçtaki küçümseyici tavrım azaldı. Bu tuhaf tasvirlerin mutlak tutarlılığı, dağların derinliklerinde, korkunç anlamlarını ortaya çıkaracak birini bekleyen bir gerçeklik çekirdeğinin gömülü olduğunu gösteriyordu.",
+      "Dönemin entelektüel iklimi ampirik titizlik gerektiriyordu, ancak kendimi doğaüstü olanın kıyısında, açıklanamayanın yaklaşan gölgesinin artan kanıtlarını görmezden gelemez halde buldum. Bölgedeki çeşitli araştırmacılara ve halkbilimcilere yazdığım mektuplar giderek sıklaştı; her bir mektup, sıradan gerçeklik ile açıklanamayanın yaklaşan gölgesi arasındaki boşluğu köprülemeye çalışıyordu. Gecenin kör karanlığında duyulan garip uğultulardan, dağ deresi yataklarında bulunduğu iddia edilen tuhaf, metalik silindir parçalarına kadar her bilgi kırıntısını titizlikle katalogladım. Bu gizem parçalarını düzenlerken, kozmik öneme sahip bir olayın öncülerini belgelediğime dair içten içe yayılan bir hisse kapıldım. Rasyonel dünya ile uçurum arasındaki perde inceliyordu ve ben, insan anlayışının bizzat dokusunu çözmeyi vaat eden bir keşfin eşiğinde duruyordum.",
+      "Akademik merakım kısa sürede, şüpheci mizacımı temelden sarsan bir yazışmayla ödüllendirildi. Vermont, Townshend yakınlarında yaşayan, içine kapanık ve oldukça eğitimli bir çiftçi olan Henry Wentworth Akeley, bu yakalanması güç varlıklarla ilgili sarsıcı iddialarla benimle temasa geçti. Mektupları, daha önce göz ardı ettiğim cahil batıl inançlardan uzak, akademik bir tona sahipti. Akeley, deneyimlerini korkutucu bir kesinlikle dile getiriyor ve yıllardır uzak çiftlik evini rahatsız eden bir dizi rahatsız edici karşılaşmayı anlatıyordu. Görüntülerin ateşli bir hayal gücünün hayaletleri olmadığını, somut ve dünya dışı bir varlığın tezahürleri olduğunu iddia ediyordu. Korkunç bir sırrın yükünü taşıyan bir adamın özenli dikkatiyle yazılan mektupları, beni bu labirentvari soruşturmanın içine daha derinlere çekmeye yaradı ve bu kadar derin bir tuhaflık karşısında iddialarını hak ettikleri ciddiyetle ele almaya zorladı.",
+      "Akeley'nin mektuplarının içeriği, bu yaratıklar tarafından düzenlenen karmaşık bir gözetleme ve psikolojik savaş kampanyasını detaylandırıyordu. 'Dışarıdakiler'den basit canavarlar olarak değil, insan ırkını çağlar boyunca gizli, dağlık karakollarından izlemiş olan, son derece gelişmiş, insan dışı zekalar olarak bahsediyordu. Medeniyetimize sızmaya çalışıyorlar, kilit figürleri etkilemek ve kendi varlıklarını bilimin meraklı gözlerinden gizlemek için ustaca yöntemler kullanıyorlardı. Tuhaf, vızıldayan iletişimlerine dair betimlemeleri, özellikle insan konuşmasının tanıdık yapısından yoksun, titreşimlerden oluşan bir dili çağrıştırdığı için ürkütücüydü. Çevirdiğim her sayfa daha ağır bir huzursuzluk yükü getiriyordu, çünkü kanıtlarının sonuçlarını anlıyordum: Eğer anlattıkları gerçekten doğruysa, dünyamızın tarihi sadece bir maskeydi ve insanlığın kavrayabileceğinden çok daha yabancı ve yırtıcı bir gerçekliği saklıyordu.",
+      "Akeley ile yazışmaya devam ettikçe, tonu giderek daha çaresiz bir hal aldı ve algısının hemen ötesinde gizlenen görünmez gözlemciler tarafından izlendiğine dair yoğun bir korkuyu yansıtıyordu. Kapılarında açıklanamayan tırmalama sesleri duyduğunu ve herhangi bir ışık kaynağı tarafından yakalanamadan kaybolan gizemli, parlayan silüetler gördüğünü anlattı. İzolasyonuna ve fiziksel güvenliğine yönelik artan tehdide rağmen, her tuhaf olayı belgelemeye kararlı kaldı ve bunu dünyayı bu yaklaşan kozmik istila konusunda uyarmak için bir görev olarak gördü. Kendimi onun tek sırdaşı, kuşatılmış çiftlik evi ile yaklaşan karanlıktan habersiz entelektüel çevre arasındaki tek bağ olarak buldum. Onun dehşetiyle kurduğum bu artan yakınlık, sanki betimlediği görünmez gözlerin yavaş yavaş kolektif, çok yönlü odaklarını bana doğru çevirmeye başladığını hissetmeme neden oldu.",
+      "Yazışmalar, Vermont'taki çiftlik evine yönelik fiziksel kuşatma tehdidine dair soyut uyarılardan somut gerçeklere dönüştü. Akeley bana, büyük zorluklarla çektiği ve mülkünün yakınındaki yumuşak çamurda garip, bulanık izleri gösteren rahatsız edici fotoğraflar gönderdi. Bu izlerin bilinen karasal hayvanların eseri olmadığını, grotesk ve mekanik bir verimlilikle hareket eden varlıkların kanıtı olduğunu öne sürdü. Uykusuz gecelerini elinde tüfekle, çevredeki ormanın derin gölgelerinden gelen tuhaf, metalik vızıltıları dinleyerek geçirdiğini anlattı. Her mektup artık elle tutulur bir dehşet hissiyle doluydu; sanki yaratıklar artık sadece gözetlemekle yetinmiyor, yalıtılmış varlığının etrafındaki kıskacı aktif bir şekilde daraltıyor ve sürdürdüğü meydan okuma için bilinmeyen, korkunç bir bedel talep etmeye hazırlanıyorlardı.",
+      "Postalarının gelişinde tuhaf, ritmik bir düzen fark etmeye başladım; bu durum, bazı mesajların görünmez bir güç tarafından ele geçirildiğini veya geciktirildiğini gösteriyordu. Akeley, postacısının açıklanamaz bir sinirlilikle hareket ettiğini, ara sıra modern bilimin bilmediği kaba, mumsu bir maddeyle açılıp tekrar mühürlenmiş mektuplar getirdiğini itiraf etti. Varlıkların bilgi alışverişimizi izlemek için sofistike yöntemler kullandıklarına ve belki de beni soruşturmalarının bir suç ortağı olarak tanımladıklarına inanıyordu. Bu farkındalık, kendi akademik uğraşlarımın üzerine uzun, soğuk bir gölge düşürerek, bir zamanlar entelektüel olan ilgimi onun güvenliği için duyduğum umutsuz, içsel bir kaygıya dönüştürdü. Evinden kaçıp daha kalabalık bir yerde sığınak aramasını tavsiye ettim, ancak o, ayrılışının kaçınılmaz olanı sadece hızlandıracağını, çünkü onu her mesafede takip etmenin yollarını bildiklerini iddia etti.",
+      "Fiziksel görünümlerine dair tanımlamaları giderek parçalı bir hale geldi ve dünya dışı fizyolojilerini insani terimlerle bağdaştırmaya yönelik umutsuz bir çabayı ortaya koydu. Yengeç benzeri, cırtlak sesler çıkaran ve hiçbir yerel doğa bilimcinin anlayamayacağı desenler bırakan çok sayıda eklemli bacak üzerinde hareket eden varlıklardan bahsetti. Onları, geleneksel anlamda boyutumuzda yaşamayan, ancak istediklerinde kısmen katılaşabilen yarı saydam, değişen formlar olarak tanımladı. Varlıkları çevrenin dokusunu bozuyor gibiydi; yaklaştıkları her an yerel bitki örtüsünün solmasına ve kuşların susmasına neden oluyorlardı. Bu anlatıları titreyen ellerle okudum; rasyonel dünyamın duvarlarının, arkadaşımı ve sonunda onun durumuna tanıklık eden herkesi tüketmekle tehdit eden böylesine derin, kozmik bir düşmanlığın ağırlığı altında yıkılmaya başladığını hissettim.",
+      "Akeley’nin mizacındaki değişim oldukça endişe vericiydi; titiz bir araştırmacı rolünden, görünmeyen güçler tarafından tamamen sindirilmiş bir adama dönüşmüştü. Son mektubunda, bir zamanlar üslubunu belirleyen entelektüel kibir tamamen buharlaşmış, yerini evinin çevresini kuşatanları yatıştırmak için duyduğu çılgın ve boyun eğen bir arzuya bırakmıştı. Varlıklardan artık canavarca düşmanlar olarak değil, ilkel anlayışımızı gölgede bırakan evrenin sırlarına sahip, uzak yıldız sistemlerinden gelmiş gezginler olarak bahsetmeye başladı. Paradigmasındaki bu ani değişim, derin bir psikolojik çöküşü ya da daha kötüsü, yaratıklar tarafından iş birliğini sağlamak amacıyla kurgulanmış kasıtlı bir manipülasyonu akla getiriyordu. Arkadaşımın artık kendi yetilerinin efendisi değil, büyük ve kozmik bir oyunun piyonu olduğunu fark edince omurgamdan aşağı buz gibi bir ürperti geçti.",
+      "Gölgelerden yayılan garip ses hakkındaki betimlemeleri de değişti. Artık bu vızıltıyı bir tehdit olarak değil, yasak bilgileri ileten karmaşık titreşimlerin bir dili olarak nitelendiriyordu. Bu ses iletimleri yoluyla varlıklarla iletişim kurmaya başladığını, onların varoluşa dair bakış açılarını hem korkutucu hem de tuhaf bir şekilde aydınlatıcı bulduğunu iddia ediyordu. Vermont çiftlik evinin izolasyonu, gerçeklik algısını açıkça parçalamış, deliliğin gelişmesi için bir sığınak yaratmıştı. Sanki evinin çevresindeki hava varlıklar tarafından kirletilmiş, mantığını zehirlemiş ve onu kendi anlaşılmaz ağlarına çekmiş gibiydi. Argümanlarına akılcı bir söylemle karşı çıkmaya çalıştım, ancak zihinsel özgürlüğü için yaptığım yakarışlar cevapsız kaldı; çünkü bir zamanlar nefret ettiği dehşetlerin cezbedici doğasına tamamen kapılmış görünüyordu.",
+      "Ziyaretçilerin gelişini detaylandırdığında mektuplaşmaların atmosferi daha da klostrofobik bir hal aldı. Bunlar daha önce tarif ettiği eterik dehşetler değil, varlıkların aracıları olduklarını iddia eden ve kapısına garip, mekanik cihazlarla gelen kişilerdi. Bu varlıkların, değerli bir yükün kozmik boşlukta taşınmasını içeren açıklanmamış bir görevi tamamlamak için onun yardımına ihtiyaç duyduklarını öne sürdü. İstilanın gerçek kapsamını anladığımda kalbim sıkıştı; varlıklar nüfuzlarını fiziksel olarak pekiştiriyor ve Akeley'yi gizli hedefleri için tam anlamıyla bir araca dönüştürüyorlardı. Evinin güvenliği ile uçsuz bucaksız bilinmezlik arasındaki engel aşılmıştı; bu da onu, motivasyonları insanlığın ahlaki dokusuna tamamen yabancı olan yaratıkların kaprislerine karşı savunmasız bırakıyor ve beni felç edici bir dehşet içinde bırakıyordu.",
+      "Vermont'a yaptığım yolculuk, sanki arazinin kendisi ilerleyişimi kötü niyetli bir şekilde izliyormuş gibi ruhumun üzerine ağır bir sessizlik çöktü. Akeley'nin ıssız çiftlik evine giden dolambaçlı ve bakımsız yollarda ilerlerken, gölgelerin doğal geometriye meydan okuyan şekillerde uzayıp büküldüğünü fark ettim. Ağaçlar gri, kayıtsız gökyüzüne uzanan tırtıklı, iskelet parmaklar gibi görünürken, havanın kendisi dişlerimi sızlatan hafif ve sürekli bir vızıltı ile titriyordu. Yaprakların her hışırtısı, gizli bir gözcüden gelen fısıltılı bir uyarı gibiydi; insan aklının artık hüküm sürmediği bir alana girdiğimi hatırlatıyordu. Bavulumu sıkıca kavradım ve insan zihni için eski, soğuk ve tamamen anlaşılmaz bir şeye ait bir diyara izinsiz giren biri gibi hissettim.",
+      "Çiftlik evine ulaştığımda gözlerimin önüne gelen manzara son derece sarsıcıydı; yapı, içinde yaşayan bir ruh değil de sanki on yıllardır terk edilmiş gibi yıpranmış ve terk edilmiş duruyordu. Pencereler ağır, derme çatma barikatlarla kapatılmıştı ve sundurma yapısal olarak güvenilmez görünüyordu, bu da tüm mülke sakini için bekleyen bir mezar havası veriyordu. Girişe hareketlerimi tamamen durdurma tehdidinde bulunan bir endişe ile yaklaştım, ancak Akeley'nin gerçek durumunu keşfetme gerekliliği beni ileriye doğru itti. Kapıya vurdum, ses boş tarlalar boyunca yankılandı, ancak çağrıma sadece ağır ve boğucu bir sessizlik cevap verdi. Bu, evin bir kabuğa, Akeley'nin aptalca varlığına davet ettiği karanlık sırlar için boş bir kaba dönüştüğünü gösteren ürkütücü bir boşluktu.",
+      "Kapının kilidini açık bulup içeri girdiğimde karşılaştığım manzara, ezici bir dehşetle parçalanmış bir zihnin eseri olan mutlak ve çılgınca bir düzensizliği ortaya seriyordu. Çılgınca ve anlamsız karalamalarla dolu kağıt parçaları yere saçılmıştı ve mobilyalar sanki ritüelistik bir performans için yer açmak istercesine duvarlara itilmişti. Köşede, kemiklerimin içinde yankılanan alçak ve ritmik bir frekansta vızıldayan tuhaf metalik cihazlar vardı, ancak Akeley'den hiçbir iz yoktu. İzlenme hissi yoğunlaştı, ensemi karıncalandıran bir duygu beni varlıkların sadece birkaç dakika önce burada olduğuna ikna etti. O ıssız odanın ortasında durdum ve arkadaşımın belgelemeye cüret ettiği kozmik kabus tarafından tamamen tüketildiğini, midemi bulandıran bir dehşet sarsıntısıyla anladım.",
+      "Çiftlik evinin loş koridorlarında, kalbim kafese kapatılmış bir kuş gibi kaburgalarıma çarparak ilerledim. Her gölge, kavrayışımın ötesinde bir şekle bürünüyor gibiydi ve o gizemli metalik aygıtların sürekli vızıltısı, başımı döndüren ritmik, yabancı bir yoğunlukla giderek yükseliyordu. Küflü, tozlu giysi yığınının altında gizlenmiş bir mektup koleksiyonu buldum; içindekiler Akeley'nin çaresizce iletmeye çalıştığı korkunç gerçeği doğruluyordu. Gerçekten de Yuggoth'tan gelen o iğrenç, vızıldayan, yengeç benzeri varlıklarla konuşmuştu ve sözleri, boşluğu görüp de arkasını dönemeyen bir adamın ıstırabıyla kazınmıştı. Bu yaratıkların cerrahi taklit yoluyla insan formuna bürünebilecekleri gerçeği, omurgamdan aşağı soğuk bir ürperti göndererek çevremdeki her şeyi aniden ve şiddetli bir şekilde tehditkâr kıldı.",
+      "Son notu incelerken ellerim şiddetle titredi, çünkü el yazısı sona doğru tarz ve aciliyet açısından önemli ölçüde değişmişti. Evin bir geçide, yani insan algısının ötesinde var olan ve gerçekliğimizin dokusuyla beslenen varlıklar için bir kanala dönüştürülmesini detaylandırıyordu. O an anladım ki Akeley artık tanıdığım adam değildi; varlığımızı basit bir rahatsızlık olarak gören güçler tarafından yönetilen bir kuklaydı. Odadaki hava ağır ve durgun bir hale geldi; ozonun metalik kokusu ve çürümenin ince, mide bulandırıcı aromasıyla doygunlaştı. Derin bir tecrit hissi, sanki çiftlik evinin duvarları beni bu sırlar mezarına hapsetmek için daralıyormuş ve beni yaşayan dünyanın sıcaklığından sonsuza dek koparıyormuş gibi, ezip geçen bir yalnızlık ağırlığı hissettim.",
+      "Çatı katındaki gölgelerin arasında duran tuhaf, silindirik bir kap keşfettiğimde panik içime hücum etti; kapağı hafifçe aralıktı ve içeriden nabız gibi atan yumuşak, biyolüminesans bir parıltı saçıyordu. Ani ve keskin bir kavrayış zihnime doğdu: Varlıklar Akeley'i sadece geride bırakmamış, onu kendi gizemli amaçları için bir araç olarak kullanmışlardı. Belki de korktuğu o dehşetlerden birine dönüşmüş bir şekilde hala bu lanetli konutta olabileceği düşüncesi beni çıkışa doğru sürükledi. Artık bu lanetli yerden kaçma yönündeki içgüdüsel dürtüyü görmezden gelemezdim, çünkü bir zamanlar sadece ağır görünen sessizlik, şimdi her hareketimi önceden seziyormuş gibi duyarlı ve gözlemci bir nitelik kazanmıştı. Hafızalardan silinmeyecek kanıtları geride bırakarak kapıya doğru tökezledim; tek isteğim, bu ıssız Vermont tepelerinde kök salan kozmik enfeksiyondan uzaklaşmaktı.",
+      "Çıkışa doğru atıldım, botlarım kırık yer döşemelerinde gürültüyle yankılanırken çiftlik evinin boğucu sessizliği ardımda parçalandı. Her içgüdüm, ilahi ve kutsal olana sınırdaş bir yakınlığı haykırıyordu; varlıkların sadece gözlemci değil, bu eşsiz kabus gerçeğinin aktif mimarları olduğu soğuk bir kabullenişti bu. Vermont ormanlarının karanlığı, kıl payı kurtulduğum uçuruma beni geri çekmeye hevesli, uzun ve iskeletimsi parmaklar gibi uzanıyor gibiydi. İtham edici notları göğsüme bastırdım; sayfalar, kozmik istilanın gerçeğiyle yanan buz parçaları gibi hissettiriyordu. Nabzım kulaklarımda çılgın bir ritimle atıyor, ormanın gece seslerini bastırıyordu; motoru çalıştırıp bu boğucu, lanetli çukurdan sonsuza dek kaçmak için bekleyen aracıma doğru tırmandım.",
+      "Ardımda ev, sessiz ve yekpare bir nöbetçi gibi duruyordu; pencereleri, paniksiz kaçışımı ilgisiz ve dünyevi olmayan bir sabırla gözlemleyen boş, kapaksız gözler gibi görünüyordu. Bir takip sesi yoktu, sadece dünyamın mantığına çoktan bulaşmış olan Yuggoth'tan gelen yaratıkların fiziksel bir kovalamacaya ihtiyaç duymadığına dair ezici bir farkındalık vardı. Onları içeride, o vızıldayan, çok yönlü iğrençlikleri, belki de zavallı Akeley'nin varlığının kalıntılarını kendi gizemli, yabancı gündemlerini ilerletmek için parçalarken hayal edebiliyordum. Taşıdığım sırrın ağırlığı dağın kendisinden daha ağır geliyordu; akıl sağlığımı tamamen kırma tehdidi taşıyan bir bilgi yüküydü bu. Sadece fiziksel bir konumdan kaçmadığımı, insanlık tarihinin ve pamuk ipliğine bağlı anlayışımızın haritası üzerine çoktan düşmüş bir gölgeden kaçmaya çalıştığımı korkunç bir netlikle anladım.",
+      "Şafağın güvenliğine doğru sürerken manzara gri ve zümrüt bir şeride dönüştü, ancak o yabancı titreşimlerin içsel hissi kemiklerimde kaldı. Bir daha asla tanıdık olanda huzur bulamayacağımı biliyordum, çünkü insanlık ile Kadim Olanlar arasındaki engelin kırılgan bir illüzyondan ibaret olduğu kanıtlanmıştı. Dünya aldatıcı bir şekilde normal görünüyordu, ancak yüzeyin altında, tozlu ve yasaklı sayfalarda göz attığım kaçınılmaz bir sona doğru öğütülen devasa, kozmik bir saat mekanizmasının dişlilerini algılıyordum. Kanıtları yakacak, küllerini rüzgara savuracak ve günlerimin geri kalanını yaklaşan karanlığa karşı sessiz, musallat bir nöbette geçirecektim. Fısıldayanların sırrı, sessiz ve acı verici yoldaşım olarak kalacak; sonsuz, umursamaz bir boşluk karşısında ışığımızın kırılganlığının bir kanıtı olacaktı."
+    ],
+    words: {
+      "sediment": "tortu",
+      "cadaver": "ceset",
+      "apprehension": "endişe",
+      "grotesque": "tuhaf, acayip, çirkin",
+      "eldritch": "ürpertici/doğaüstü",
+      "threshold": "eşik",
+      "disposition": "mizaç",
+      "elusive": "yakalanması güç",
+      "labyrinthine": "labirent gibi",
+      "veneer": "maske, dış kaplama",
+      "encroachment": "tecavüz, izinsiz giriş",
+      "multifaceted": "çok yönlü",
+      "palpable": "hissedilebilir, açık",
+      "intercept": "yolda ele geçirmek",
+      "visceral": "içgüdüsel, derin",
+      "translucent": "yarı saydam",
+      "hostility": "düşmanlık",
+      "cowed": "gözü korkutulmuş, sindirilmiş",
+      "paradigm": "paradigma, düşünce kalıbı",
+      "emanating": "yayılmak, çıkmak",
+      "inscrutable": "anlaşılmaz, esrarengiz",
+      "claustrophobic": "klostrofobik, daraltıcı",
+      "malevolent": "kötü niyetli",
+      "encroaching": "sınırı aşan, ilerleyen (tehlike)",
+      "disconcerting": "sarsıcı",
+      "trepidation": "endişe",
+      "disarray": "düzensizlik",
+      "desolate": "ıssız",
+      "coalesce": "birleşmek, bütünleşmek",
+      "contraption": "tuhaf alet, makine",
+      "mimicry": "taklit etme, benzetme",
+      "conduit": "kanal, boru hattı",
+      "stagnant": "durgun, hareketsiz",
+      "sentient": "duyarlı, bilinçli",
+      "profane": "kutsal olmayan, dinsiz",
+      "abomination": "iğrenç şey, tiksinti verici varlık",
+      "vigil": "nöbet, uyanık bekleme"
+    }
+  }
+,
+  {
+    id: 'horror_colour_out_of_space',
+    title: "The Colour Out of Space",
+    author: 'H. P. Lovecraft',
+    level: 'C1',
+    coverUrl: '/covers/horror_colour_out_of_space.webp',
+    en: [
+      "West of Arkham, the hills rise wild and covered with thick, impenetrable forests. Deep in the valleys, there are farmhouses perched precariously on stony ground, where the soil has never been truly fertile. For many years, the locals have whispered of a specific, desolate tract of land known as the blasted heath. It is a place where no grass grows, and the earth itself seems to possess a peculiar, greyish hue that rejects the life of nature. Travellers avoid this cursed geography, for the trees there are twisted into grotesque, unnatural shapes that suggest a profound corruption of the laws of biology. The air itself feels heavy with an ancient silence, a lingering remnant of some unnamed catastrophe that stripped the region of its vitality and left behind only a bleak, ash-covered void that refuses to be reclaimed.",
+      "Years ago, I came to this region to survey the site for a new reservoir, a project that would eventually drown the wretched history of this valley beneath cold, industrial waters. I met an old man named Ammi Pierce, whose eyes held a haunting, vacant expression that spoke of sights no human mind should ever have to process. He was a survivor of the blight that had overtaken the farmhouse of Nahum Gardner, a man who once stood proud upon this now barren soil. Ammi often sat on his porch, gazing toward the west, his voice trembling as he recounted the strange events that began with the arrival of a fallen star. He spoke of how the landscape shifted, of how the fruits turned bitter and the flowers displayed colors that defied every known spectrum, leaving the local farmers in a state of growing, irrational terror.",
+      "The beginning of the end was marked by a thunderous crash that shattered the nocturnal stillness of the countryside, bringing with it a meteorite of unprecedented composition. Scientists flocked to the Gardner farm to examine the celestial visitor, yet their tools were rendered useless against its stubborn, inscrutable nature. It was smaller by the morning, shrinking even as they measured its cold, smooth surface. It pulsed with an inner heat that did not radiate outward, and its color was something entirely alien, a chromatic anomaly that seemed to exist beyond the capabilities of the visible light spectrum. As the object dissolved into the earth, it left behind a profound sense of foreboding, a silent warning that the familiar patterns of existence had been irrevocably violated by a visitor that cared nothing for the fragile sanity of mankind.",
+      "As the weeks drifted into months, the atmosphere around the Gardner homestead began to undergo a subtle but deeply disturbing transformation. Nahum, usually a man of grounded, practical sensibilities, found his crops behaving with a terrifying, unearthly vigor. The apples upon his orchard trees grew to an immense, swollen size, yet when one was bitten, the juice tasted like a foul, caustic chemical, causing the stomach to turn and the mind to recoil in sudden, sharp revulsion. Even the livestock seemed afflicted; cattle grew lethargic, their flesh losing its natural texture until it turned soft and unwholesome, often collapsing into a putrid, gelatinous heap of gray matter before they had even expired. There was a sickening, pervasive stench that clung to the evening air, a scent that hinted at an organic decay beyond the usual processes of death.",
+      "The Gardner family itself began to manifest signs of a creeping, psychological erosion. Nahum’s wife, Nabby, was the first to succumb to a state of wandering, incoherent agitation, often seen staring at the woods with a vacant, glassy-eyed expression that frightened the children. She claimed that the color—that elusive, impossible hue that had radiated from the crater—was not merely a memory, but a constant, silent presence that followed them into the rooms of their house. She insisted that it seeped through the windowpanes like a liquid shadow, painting the walls with invisible, swirling patterns that whispered of cold, interstellar voids. The children stopped playing in the fields, preferring to huddle together in the darkest corners of the attic, their voices dropping to low, trembling murmurs as they described shadows that possessed a depth entirely unnatural.",
+      "Meanwhile, Nahum became obsessed with his farm, stubbornly refusing to acknowledge the encroaching doom despite the clear evidence of blight spreading across his once-verdant fields. He would spend hours pacing the perimeter of the blasted heath, his hands stained with the strange, grey dust that now coated every surface of his property. Neighbors who dared to visit would find the household in a state of profound neglect, with the doors left swinging on their hinges and the windows reflecting a dull, dead light that seemed to swallow the sunlight itself. The air in the valley grew increasingly thin and frigid, as if the local laws of thermodynamics had been suspended by some malignant, extraterrestrial influence. Each day brought a new horror, a slow and agonizing degradation that threatened to pull the entire family into an abyss of madness.",
+      "As autumn deepened into a desolate, biting winter, the tragedy within the Gardner household reached a state of agonizing intensity. The most chilling development was the transformation of Nabby, whose mind had fractured under the oppressive weight of the strange influence. Nahum, driven by a desperate, futile hope to protect his family from public scrutiny, confined his wife to the attic, securing the heavy door with iron bolts. From behind that wooden barrier, the household was haunted by her harrowing, high-pitched shrieks and the rhythmic thumping of something that no longer sounded entirely human. Nahum claimed she was merely suffering from a feverish delirium, yet the neighbors who caught glimpses of his pale, drawn face during his infrequent trips for supplies sensed that he was concealing a far more profound and localized terror that defied any conventional medical explanation.",
+      "The children, too, began to change in ways that defied the natural order of growth and development. They became unnaturally quiet, retreating into a shell of eerie isolation that kept them distant from the world outside their blighted acres. Thaddeus, the oldest, was the first to disappear, sparking a frantic but fruitless search that yielded nothing but the lingering, metallic scent of the cosmic intrusion. His younger brothers soon followed in a similar fashion, fading into a state of lethargy that seemed to drain the very vitality from their small frames. Their eyes, once bright and full of youthful spirit, grew cloudy and unfocused, as if they were peering into a reality where the colors existed beyond the spectrum of human vision. They rarely spoke, and when they did, their words were disjointed fragments that hinted at visions of vast, cold dimensions.",
+      "Nahum himself was a man hollowed out by the persistent decay, his once-sturdy frame now skeletal and trembling. He possessed the frantic energy of a man haunted by ghosts, refusing to abandon the farm despite the total annihilation of his crops and the slow dissolution of his kin. He often spoke to me in hushed, trembling tones about the way the light shimmered across the landscape, an unearthly glow that seemed to feed upon the life force of everything it touched. The ground beneath the house felt soft, as if the soil itself were turning to sludge, and the silence of the valley was punctuated only by the distant, alien echoes of the attic. It was clear to anyone with the capacity to observe that the Gardners were no longer living in the world we understood, but were becoming part of a cosmic entropy.",
+      "As winter surrendered to a bleak, uncertain spring, the horror within the Gardner household escalated into a final, suffocating nightmare. The attic, once a place of relative seclusion, became the epicentre of a grotesque transformation that defied biological sanity. Nahum, his spirit fractured beyond repair, could no longer maintain the illusion of sanity for his wife, Nabby. Her screams, which had previously been thin and piercing, transformed into guttural, pulsating vibrations that rattled the very foundations of the old farmhouse. When Ammi finally braved the treacherous, shifting ground to visit, he discovered a house filled with an atmosphere of absolute stagnation. The air was thick with a cloying, sickly sweetness that clung to his lungs like wet velvet, and the house itself seemed to pulsate with a rhythmic, alien heartbeat that echoed from the shadows of the upper levels.",
+      "The internal geometry of the rooms felt distorted, as though the architecture had been warped by a heavy, invisible gravitational force radiating from the upstairs prison. Nahum met his visitor with a hollow, vacant stare, his speech reduced to fragmented whispers about the encroaching colour. He described how the light now seemed to possess a weight, pressing down upon the earth and leaching the vitality from every living cell. He spoke of the wells and the woods, where the vegetation had long since turned into a brittle, grey powder that crumbled at the slightest touch. The landscape was no longer merely blighted; it was being consumed by a process of metaphysical evaporation, leaving behind a sterile husk of what was once vibrant, productive land. It was a silent, patient annihilation that ignored all laws of nature.",
+      "In the dim, twilight silence of the kitchen, Nahum revealed that his youngest son, Merwin, had also succumbed to the influence. The boy had been found near the well, his body seemingly drained of all organic substance, leaving behind only a fragile, dehydrated shell that disintegrated when moved. The tragedy was no longer a series of isolated incidents but a relentless, systemic collapse of the entire Gardner family unit. Nahum’s eyes, wide and glassy, reflected the encroaching madness, yet he remained tethered to the farm by a morbid, inexplicable duty. He felt he could not leave while the colour continued its slow, meticulous feast. The surrounding woods stood as silent witnesses to this cosmic intrusion, their twisted limbs clawing at the sky, waiting for the final moment when the garden would become entirely one with the alien luminescence.",
+      "Ammi stepped further into the dwelling, the floorboards groaning under his weight as if protesting his intrusion upon the house's grotesque secrets. He found Nahum in a state of terminal decline, his physical form becoming increasingly translucent and erratic. The man spoke in disjointed, frantic bursts about the well, claiming that the colour had started to retreat from the earth and was gathering strength within the house itself. The walls seemed to breathe with a faint, rhythmic pulse, radiating an unnatural heat that defied the icy chill of the lingering spring. Nahum clutched his coat tightly, his eyes fixated on the ceiling where faint, spectral glimmers danced in the darkness. Every movement he made was hesitant, as if the very air had thickened into a viscous substance, resisting his attempts to navigate the decaying rooms that now felt like a tomb.",
+      "As the evening deepened into a suffocating shroud of gloom, Nahum began to recount the final, harrowing fate of his remaining kin. His words were a chaotic tapestry of grief and cosmic terror, describing how his wife and the last of his sons had vanished into that luminous, hungry void that defied conventional explanation. They had not merely died; they had been absorbed, their essence distilled and consumed by the chromatic influence that originated from the meteorite. He described the way their bodies had dissolved into grey, powdery heaps, leaving behind only the cold, haunting memory of their existence. Ammi listened, transfixed by a mixture of profound sorrow and primal dread, realising that the farm was no longer a place of mortal life but a nexus point for an alien entity that viewed human existence as nothing more than fuel.",
+      "The house groaned again, a sound of structural collapse that seemed to echo from the very depths of the earth. Ammi, overwhelmed by the oppressive atmosphere, urged Nahum to flee, but the man only laughed, a sound devoid of mirth and filled with a terrifying, hollow acceptance. He understood now that his fate was eternally bound to the farm, for he had become a vessel for the infection that radiated from the well. The walls appeared to bulge, as if the house itself were suffering from a malignant expansion caused by the subterranean presence. Outside, the trees remained frozen in a posture of eternal agony, their limbs blackened and twisted by the blight. The sky above the farm seemed to lose its depth, turning into a flat, sterile backdrop for the encroaching nightmare that threatened to consume the entire valley in its silent, radiant grasp.",
+      "Nahum’s final moments were marked by a terrifying dissolution that defied all biological logic. As he slumped into his chair, his frame seemed to lose its structural integrity, crumbling not into mere decay, but into a fine, grey dust that shimmered with an unnatural, sickly luminescence. Ammi recoiled in absolute horror, watching as the remains of his unfortunate friend disintegrated before his very eyes. The air within the room turned heavy with the stench of ozone and ancient, festering corruption, suggesting that the entity had finally completed its extraction of his vital essence. There was no dignity in this departure, only the cold, mechanical reality of a cosmic predator consuming its final morsel. The farmhouse, silent and mocking, held its breath, waiting for the next victim to wander into the orbit of its insatiable, alien hunger.",
+      "Driven by a desperate, instinctual urge to survive, Ammi scrambled toward the exit, his heart hammering against his ribs like a trapped bird. He did not dare glance back at the pile of grey powder that had once been a man, for he sensed that the house itself was now fully awake, vibrating with a malevolent, pulsating energy. Outside, the night air felt thin and caustic, stinging his lungs as he hurried past the blighted orchard where the fruit hung like blackened, shrivelled corpses. The silence of the woods was profound, a heavy blanket that seemed to absorb the sounds of his panicked flight. He knew that if he lingered for even a second longer, the strange, chromatic force would claim him just as it had claimed the entire Gardner family, leaving nothing but emptiness.",
+      "Reaching the boundary of the farm, Ammi finally paused to catch his breath, looking back at the darkened structure that stood as a silent monument to an unthinkable cosmic invasion. Through the windows, a faint, rhythmic glow began to intensify, painting the skeletal branches of the nearby trees in colours that no human eye was meant to perceive. It was a hue that existed beyond the spectrum, a vibrant, maddening void that defied description and sanity. Ammi realized then that the farm was a festering wound in the fabric of reality, a gateway for an extraterrestrial blight that intended to spread across the hills and beyond. With trembling limbs and a mind clouded by traumatic realization, he fled into the deeper woods, desperate to escape the shadow of the colour that hung over the valley like a shroud.",
+      "As Ammi retreated further into the safety of the distant township, a final, calamitous discharge of energy erupted from the depths of the Gardner farm. A brilliant, impossible beam of chromatic luminescence surged upward, cutting through the dense, midnight clouds like a searing blade of cosmic fire. It did not merely illuminate the atmosphere; it seemed to dissolve the very barrier between our world and that wretched, alien dimension from which the entity had descended. For a fleeting, heart-stopping moment, the entire valley was bathed in that nauseating, shifting hue, casting long, distorted shadows that writhed with a life of their own. Ammi felt a profound chill penetrate his soul, an instinctive understanding that what had occurred was not a departure, but a complete transmutation of the earth itself into something eternally corrupted.",
+      "The subsequent days brought an eerie silence to the valley, as if the landscape itself were stunned by the violence of the astral intrusion. The reservoirs were to be flooded for the new water supply project, a human endeavor that unwittingly served to seal the dark secret of the Gardner place beneath a fathomless grave of liquid darkness. Ammi often watched the workers from afar, his eyes heavy with the weight of unspeakable memories. He knew that the colour remained trapped within the soil, a dormant, pulsating hunger that waited for the day when the water might recede or the earth might shift once more. He spoke little of his experience, for the trauma of the disintegration he had witnessed had forged a silent, impenetrable wall between him and the rest of the world, leaving him to wither in solitude.",
+      "Even now, years later, the blighted heath remains a place of profound dread where no bird sings and no grass grows with natural vigor. The local residents avoid the path that leads toward the hollow, sensing the lingering toxicity that clings to the withered trees and the grey, powdery dust covering the stones. The memory of the cosmic colour has faded into local folklore, yet those who truly understand the nature of the universe know that some wounds never fully heal. There is a lingering vibration in the wind, a faint suggestion that the alien essence still pulses in the deep, dark crevices of the valley. Ammi’s story is the final testament to a horror that defies human logic, a chilling reminder that we are mere specks in an indifferent, infinite, and terrifyingly mysterious cosmos."
+    ],
+    tr: [
+      "Arkham'ın batısında tepeler vahşi bir şekilde yükselir ve sık, geçilmez ormanlarla kaplıdır. Vadilerin derinliklerinde, toprağın hiçbir zaman tam anlamıyla verimli olmadığı taşlık arazilerde tehlikeli bir şekilde tünemiş çiftlik evleri bulunur. Yıllardır yerel halk, lanetli fundalık olarak bilinen belirli ve ıssız bir arazi parçası hakkında fısıldaşır. Burası, hiçbir otun büyümediği ve toprağın kendisinin doğanın yaşamını reddeden tuhaf, grimsi bir renge sahip olduğu bir yerdir. Gezginler bu lanetli coğrafyadan kaçınırlar, çünkü oradaki ağaçlar biyoloji yasalarının derin bir yozlaşmasını düşündüren grotesk, doğal olmayan şekillere bükülmüştür. Havanın kendisi, bölgeyi canlılığından arındıran ve geride yeniden kazanılmayı reddeden kasvetli, külle kaplı bir boşluk bırakan isimsiz bir felaketin kalıntısı olan kadim bir sessizlikle ağırlaşmış gibi hissettirir.",
+      "Yıllar önce, bu vadiye yeni bir baraj için etüt çalışması yapmaya geldim; bu proje, vadiye ait sefil tarihi soğuk, endüstriyel suların altında bırakacaktı. Bir zamanlar artık çorak olan bu toprakların üzerinde gururla duran Nahum Gardner’ın çiftlik evindeki yıkımın sağ kurtulanlarından olan ve gözlerinde hiçbir insanın görmemesi gereken manzaralara dair boş, ürkütücü bir ifade taşıyan Ammi Pierce adında yaşlı bir adamla tanıştım. Ammi sık sık verandasında oturur, batıya doğru bakar ve düşen bir yıldızın gelişiyle başlayan tuhaf olayları anlatırken sesi titrerdi. Manzaranın nasıl değiştiğinden, meyvelerin nasıl acılaştığından ve çiçeklerin bilinen tüm spektrumlara meydan okuyan renkler sergilediğinden bahseder, yerel çiftçileri giderek büyüyen ve mantıksız bir dehşet içinde bırakırdı.",
+      "Sonun başlangıcı, kırsalın gece sessizliğini parçalayan ve beraberinde emsalsiz bir yapıya sahip bir meteor getiren gök gürültülü bir çarpışma ile işaretlendi. Bilim insanları bu göksel ziyaretçiyi incelemek için Gardner çiftliğine akın ettiler, ancak araçları onun inatçı ve anlaşılmaz doğası karşısında işlevsiz kaldı. Meteor sabah olduğunda daha küçüktü, soğuk ve pürüzsüz yüzeyini ölçtüklerinde bile küçülmeye devam ediyordu. Dışarıya yayılmayan içsel bir ısıyla çarpıyor ve rengi, görünür ışık spektrumunun kapasitesinin ötesinde var gibi görünen tamamen yabancı, kromatik bir anomaliydi. Nesne toprağın içinde erirken, geride derin bir uğursuzluk hissi ve varoluşun tanıdık kalıplarının, insanlığın kırılgan akıl sağlığını hiç önemsemeyen bir ziyaretçi tarafından geri dönülemez bir şekilde ihlal edildiğine dair sessiz bir uyarı bıraktı.",
+      "Haftalar aylara dönüştükçe, Gardner çiftliğinin çevresindeki atmosfer ince ama derinden rahatsız edici bir dönüşüm geçirmeye başladı. Genellikle mantıklı ve pratik bir adam olan Nahum, mahsullerinin korkutucu, dünya dışı bir canlılıkla hareket ettiğini fark etti. Bahçesindeki elmalar devasa, şişmiş boyutlara ulaştı; ancak biri ısırıldığında meyve suyu, mideyi bulandıran ve zihni keskin bir tiksintiyle geri çekilmeye zorlayan kötü, yakıcı bir kimyasal tadı veriyordu. Çiftlik hayvanları bile etkilenmiş görünüyordu; sığırlar uyuşuklaştı, etleri doğal dokusunu kaybedip yumuşak ve sağlıksız bir hale geldi, çoğu daha ölmeden bile çürük, jelatinimsi bir gri madde yığınına dönüştü. Akşam havasına sinen, alışılagelmiş ölüm süreçlerinin ötesinde organik bir çürümeyi çağrıştıran mide bulandırıcı ve yaygın bir koku vardı.",
+      "Gardner ailesinin kendisi, sinsi ve psikolojik bir erozyonun belirtilerini göstermeye başladı. Nahum’un karısı Nabby, çocukları korkutan boş, cam gibi gözlerle ormana bakarken sık sık görülen, gezinen ve tutarsız bir ajitasyon haline düşen ilk kişiydi. Kraterden yayılan o elüzyonel, imkansız rengin sadece bir anı değil, onları evin odalarına kadar takip eden sabit, sessiz bir varlık olduğunu iddia ediyordu. Rengin, pencere camlarından sıvı bir gölge gibi sızdığını, duvarları soğuk, yıldızlararası boşluklardan bahseden görünmez, girdaplı desenlerle boyadığını ısrarla söylüyordu. Çocuklar tarlalarda oynamayı bıraktı ve çatı katının en karanlık köşelerine toplanmayı tercih ettiler; sesleri, tamamen doğal olmayan bir derinliğe sahip gölgeleri tarif ederken alçak, titrek mırıldanmalara dönüştü.",
+      "Bu arada Nahum, bir zamanlar yeşil olan tarlalarına yayılan bozulmanın açık kanıtlarına rağmen yaklaşan kıyameti kabul etmeyi reddederek çiftliğine takıntılı hale geldi. Saatlerini, artık mülkünün her yüzeyini kaplayan o tuhaf gri tozla elleri lekelenmiş bir şekilde, kararmış arazinin sınırında yürüyerek geçiriyordu. Ziyaret etmeye cesaret eden komşular, evi derin bir ihmal içinde, kapıları menteşelerinde sallanırken ve pencereleri güneş ışığını yutan donuk, ölü bir ışığı yansıtırken buluyorlardı. Vadideki hava, sanki yerel termodinamik yasaları kötü niyetli, dünya dışı bir etkiyle askıya alınmış gibi giderek inceliyor ve soğuyordu. Her gün yeni bir dehşet, tüm aileyi delilik uçurumuna çekmekle tehdit eden yavaş ve acı verici bir bozulma getiriyordu.",
+      "Sonbahar ıssız ve keskin bir kışa dönerken, Gardner hanesindeki trajedi ızdırap verici bir yoğunluğa ulaştı. En tüyler ürpertici gelişme, zihni tuhaf etkinin baskısı altında parçalanan Nabby'nin dönüşümüydü. Ailesini halkın gözünden korumak için çaresiz ve nafile bir umutla hareket eden Nahum, karısını tavan arasına kapattı ve ağır kapıyı demir sürgülerle sabitledi. O ahşap bariyerin ardından hane, Nabby'nin yürek parçalayıcı, tiz çığlıkları ve artık tamamen insani tınlamayan bir şeyin ritmik vuruşlarıyla sarsılıyordu. Nahum onun sadece ateşli bir hezeyan yaşadığını iddia ediyordu, ancak erzak almak için yaptığı seyrek gezintilerde onun solgun ve çökmüş yüzünü gören komşular, bildik tıbbi açıklamaların ötesinde, çok daha derin ve yerel bir dehşeti sakladığını sezebiliyorlardı.",
+      "Çocuklar da büyüme ve gelişmenin doğal düzenine aykırı şekillerde değişmeye başladılar. Blighted arazilerinin dışındaki dünyadan uzak durmalarını sağlayan ürkütücü bir izolasyon kabuğuna çekilerek doğal olmayan bir sessizliğe büründüler. En büyükleri olan Thaddeus, kozmik müdahalenin o kalıcı, metalik kokusundan başka hiçbir şey bırakmayan çılgınca ama sonuçsuz bir arayışla ortadan kaybolan ilk kişi oldu. Küçük kardeşleri de kısa süre sonra benzer bir şekilde, bedenlerindeki tüm canlılığı emen bir uyuşukluk haline bürünerek aynı kaderi paylaştılar. Bir zamanlar parlak ve gençlik ruhuyla dolu gözleri, sanki insan görüş spektrumunun ötesindeki renklerin var olduğu bir gerçekliğe bakıyormuşçasına bulutlu ve odaklanmamış hale geldi. Nadiren konuşuyorlardı ve konuştuklarında, sözleri geniş, soğuk boyutlara dair görüntülere işaret eden kopuk fragmanlardan ibaretti.",
+      "Nahum'un kendisi ise bitmek bilmeyen çürümeyle içi boşalmış, bir zamanlar güçlü olan bedeni artık bir iskelet gibi titreyen bir adamdı. Mahsullerinin tamamen yok olmasına ve ailesinin yavaş yavaş çözülmesine rağmen çiftliği terk etmeyi reddederek, hayaletler tarafından kovalanan bir adamın çılgın enerjisine sahipti. Bana sık sık kısık ve titreyen seslerle, ışığın manzara boyunca nasıl parladığından, dokunduğu her şeyin yaşam enerjisiyle beslenen o dünyevi olmayan ışıltıdan bahsediyordu. Evin altındaki toprak, sanki çamura dönüşüyormuş gibi yumuşak geliyordu ve vadinin sessizliği sadece tavan arasından gelen uzak, yabancı yankılarla bozuluyordu. Gözlem yeteneği olan herkes için Gardner ailesinin artık bizim anladığımız dünyada yaşamadığı, kozmik entropinin bir parçası haline geldikleri açıktı.",
+      "Kış, kasvetli ve belirsiz bir bahara teslim olurken, Gardner evindeki dehşet, son ve boğucu bir kabusa dönüştü. Bir zamanlar görece inziva yeri olan çatı katı, biyolojik sağduyuya meydan okuyan grotesk bir dönüşümün merkez üssü haline geldi. Ruhu onarılamayacak kadar parçalanmış olan Nahum, karısı Nabby için akıl sağlığı yanılsamasını artık sürdüremiyordu. Daha önce ince ve delici olan çığlıkları, eski çiftlik evinin temellerini sarsan gırtlaktan gelen, zonklayan titreşimlere dönüştü. Ammi sonunda tehlikeli ve kaygan zeminde yürüyüp evi ziyaret etmeye cesaret ettiğinde, mutlak bir durgunluk atmosferiyle dolu bir ev buldu. Hava, ciğerlerine ıslak kadife gibi yapışan mide bulandırıcı bir tatlılıkla doluydu ve evin kendisi, üst katların gölgelerinden yankılanan ritmik, yabancı bir kalp atışıyla zonkluyor gibi görünüyordu.",
+      "Odaların iç geometrisi bozulmuş gibiydi; sanki mimari, yukarıdaki hapishaneden yayılan ağır, görünmez bir yerçekimi kuvveti tarafından çarpıtılmıştı. Nahum ziyaretçisini boş ve anlamsız bir bakışla karşıladı; konuşması, yaklaşan renge dair parçalanmış fısıltılara indirgenmişti. Işığın artık nasıl bir ağırlığa sahip olduğunu, yeryüzüne baskı yapıp her canlı hücrenin hayati enerjisini sömürdüğünü anlattı. Bitki örtüsünün çoktan kırılgan, en ufak bir temasta ufalanan gri bir toza dönüştüğü kuyulardan ve ormanlardan bahsetti. Arazi artık sadece mahvolmuş değildi; metafiziksel bir buharlaşma süreciyle tüketiliyor, geride bir zamanlar canlı ve üretken olan toprağın kısır bir kabuğu bırakılıyordu. Bu, doğanın tüm yasalarını hiçe sayan sessiz ve sabırlı bir yok oluştu.",
+      "Mutfağın loş, alacakaranlık sessizliğinde Nahum, en küçük oğlu Merwin'in de bu etkiye boyun eğdiğini açıkladı. Çocuk kuyunun yanında bulunmuştu; vücudu görünüşe göre tüm organik maddesinden arındırılmış, geriye sadece taşındığında dağılan kırılgan, dehidre olmuş bir kabuk bırakmıştı. Trajedi artık bir dizi münferit olay değil, tüm Gardner aile biriminin amansız, sistemik bir çöküşüydü. Nahum'un iri ve camsı gözleri yaklaşan deliliği yansıtıyordu, ancak hastalıklı ve açıklanamaz bir görev duygusuyla çiftliğe bağlı kalmaya devam etti. Renk, yavaş ve titiz ziyafetine devam ederken orayı terk edemeyeceğini hissediyordu. Çevredeki ormanlar, bu kozmik müdahalenin sessiz tanıkları olarak duruyor, çarpık dallarıyla gökyüzünü tırmalıyor ve bahçenin tamamen yabancı ışımayla bir olacağı son anı bekliyordu.",
+      "Ammi, döşeme tahtaları evin tuhaf sırlarına girmesine itiraz edercesine gıcırdarken evin içine doğru daha fazla ilerledi. Nahum'u, fiziksel formu giderek şeffaflaşan ve düzensizleşen bir tükeniş hâlinde buldu. Adam, kuyudan kopuk ve çılgınca parçalar hâlinde bahsediyor, rengin topraktan çekilmeye başladığını ve evin içinde kendi gücünü topladığını iddia ediyordu. Duvarlar, hafif ve ritmik bir nabızla nefes alıyor, baharın devam eden buz gibi soğuğuna meydan okuyan doğal olmayan bir ısı yayıyordu. Nahum paltosuna sıkıca sarılmıştı; gözleri, karanlıkta soluk, spektral pırıltıların dans ettiği tavana kilitlenmişti. Yaptığı her hareket tereddütlüydü, sanki hava yoğun, yapışkan bir maddeye dönüşmüş ve artık bir mezar gibi hissettiren bu çürüyen odalarda ilerleme çabalarına direniyordu.",
+      "Akşam, boğucu bir karanlık örtüsüne gömülürken Nahum, kalan akrabalarının son, yürek burkan kaderini anlatmaya başladı. Sözleri, karısının ve son oğlunun geleneksel bir açıklama kabul etmeyen o ışıklı, aç boşluğa nasıl yok olduğunu anlatan bir keder ve kozmik dehşet dokumasıydı. Sadece ölmemişlerdi; özleri damıtılmış ve göktaşından kaynaklanan kromatik etki tarafından tüketilmişti. Bedenlerinin nasıl gri, tozlu yığınlar hâline geldiğini, geride sadece varlıklarına dair soğuk, akıldan çıkmayan anılar bıraktığını anlattı. Ammi, derin bir keder ve ilkel bir korku karışımıyla büyülenmiş bir hâlde dinledi; çiftliğin artık ölümlü yaşamın olduğu bir yer değil, insan varlığını yakıttan başka bir şey olarak görmeyen uzaylı bir varlık için bir merkez noktası olduğunu fark etti.",
+      "Ev yeniden inledi; bu, sanki yerin en derinliklerinden yankılanan bir yapısal çöküş sesiydi. Baskıcı atmosferin altında ezilen Ammi, Nahum'u kaçmaya zorladı ancak adam sadece güldü; bu, neşeden yoksun, ürkütücü ve boş bir kabullenişle dolu bir sesti. Kaderinin artık çiftliğe sonsuza dek bağlı olduğunu anlamıştı çünkü kuyudan yayılan enfeksiyon için bir taşıyıcı hâline gelmişti. Duvarlar, sanki evin kendisi yeraltındaki varlığın neden olduğu habis bir genişlemeden muzdaripmiş gibi kabarıyordu. Dışarıda ağaçlar, dalları kararmış ve çürüme yüzünden bükülmüş hâlde, sonsuz bir acı duruşunda donmuştu. Çiftliğin üzerindeki gökyüzü derinliğini kaybediyor, tüm vadiyi sessiz, ışıltılı pençesiyle tüketmekle tehdit eden yaklaşan kâbus için düz, kısır bir arka plana dönüşüyordu.",
+      "Nahum’un son anları, tüm biyolojik mantığa meydan okuyan korkunç bir çözülüşle işaretlenmişti. Sandalyesine yığıldığında, vücut hatları yapısal bütünlüğünü kaybetmiş; sadece bir çürümeye değil, aynı zamanda doğal olmayan, hasta bir ışıltıyla parlayan ince, gri bir toza dönüşmüştü. Ammi, talihsiz arkadaşının kalıntılarının gözlerinin önünde dağılışını izlerken dehşet içinde geri çekildi. Odanın içindeki hava, ozon ve kadim, irinli bir bozulmanın kokusuyla ağırlaştı; bu durum varlığın artık hayati özünü emme sürecini tamamladığını gösteriyordu. Bu ayrılışta hiçbir haysiyet yoktu, sadece kozmik bir avcının son lokmasını yiyişinin soğuk, mekanik gerçekliği vardı. Sessiz ve alaycı çiftlik evi, doymak bilmez uzaylı açlığının yörüngesine girecek bir sonraki kurbanı bekleyerek nefesini tutmuştu.",
+      "Çaresiz, içgüdüsel bir hayatta kalma arzusuyla hareket eden Ammi, kalbi kafesinin içinde kapana kısılmış bir kuş gibi çarparak çıkışa doğru hamle yaptı. Bir zamanlar bir insan olan o gri toz yığınına tekrar bakmaya cesaret edemedi, çünkü evin artık tamamen uyandığını, kötücül, atan bir enerjiyle titrediğini hissediyordu. Dışarıda, gece havası ince ve yakıcı hissediliyor, meyvelerin kararmış, büzülmüş cesetler gibi asılı kaldığı hastalıklı meyve bahçesini hızla geçerken akciğerlerini sızlatıyordu. Ormanın sessizliği çok derindi; panik içindeki kaçışının seslerini yutan ağır bir battaniye gibiydi. Eğer bir saniye daha oyalansaydı, tuhaf, renkli gücün tüm Gardner ailesine yaptığı gibi onu da ele geçireceğini ve geriye hiçlikten başka bir şey bırakmayacağını biliyordu.",
+      "Çiftliğin sınırına ulaşan Ammi, akılalmaz bir kozmik istilanın sessiz anıtı gibi duran kararmış yapıya bakarak nefesini toplamak için durdu. Pencerelerden, zayıf ve ritmik bir parıltı şiddetlenmeye başladı; yakınlardaki ağaçların iskelet dallarını hiçbir insan gözünün görmemesi gereken renklerle boyuyordu. Bu, spektrumun ötesinde var olan, tarif edilemez ve delirtici bir boşluktu; bir renkti. Ammi, o an çiftliğin gerçekliğin dokusunda iltihaplı bir yara olduğunu, tepelerin ve ötesinin üzerine yayılmayı amaçlayan dünya dışı bir felaket için bir geçit kapısı olduğunu anladı. Titreyen uzuvları ve travmatik bir farkındalıkla bulanan zihniyle, vadiye bir kefen gibi çöken rengin gölgesinden kaçmak için daha derin ormanlara doğru koştu.",
+      "Ammi uzak kasabanın güvenliğine doğru daha da çekilirken, Gardner çiftliğinin derinliklerinden son, felaket dolu bir enerji boşalması gerçekleşti. Parlak, imkansız bir renkli ışık huzmesi, tıpkı kozmik bir ateşin keskin bıçağı gibi yoğun gece bulutlarını yararak yukarı doğru fırladı. Sadece atmosferi aydınlatmakla kalmadı; dünyamız ile varlığın indiği o berbat, yabancı boyut arasındaki engeli adeta eritti. Kalp durdurucu kısa bir an için tüm vadi, o mide bulandırıcı, değişken tona büründü ve kendi hayatına sahipmişçesine kıvranan uzun, çarpık gölgeler oluşturdu. Ammi ruhuna işleyen derin bir ürperti hissetti; yaşananın bir gidiş değil, toprağın bizzat kendisinin sonsuza dek yozlaşmış bir şeye dönüşmesi olduğunu içgüdüsel olarak anladı.",
+      "Takip eden günler vadiye ürkütücü bir sessizlik getirdi; sanki manzaranın kendisi astral saldırının şiddeti karşısında şaşkına dönmüştü. Rezervuarlar yeni su temini projesi için sular altında bırakılacaktı; bu, Gardner çiftliğinin karanlık sırrını dipsiz bir sıvı karanlık mezarına gömmeye hizmet eden istemsiz bir insan çabasıydı. Ammi, işçileri sık sık uzaktan izlerdi; gözleri anlatılamaz anıların ağırlığıyla çökmüştü. Rengin toprak içinde hapsolmuş, uykuda, zonklayan bir açlıkla suyun çekileceği veya toprağın bir kez daha yerinden oynayacağı günü beklediğini biliyordu. Yaşadığı deneyimden az bahsederdi, çünkü tanık olduğu çözülmenin travması kendisi ile dünya arasında aşılmaz, sessiz bir duvar örmüş, onu yalnızlık içinde solmaya terk etmişti.",
+      "Aradan yıllar geçmesine rağmen, o lanetli arazi kuşların ötmediği ve otların doğal bir canlılıkla büyümediği derin bir korku yeri olmaya devam ediyor. Yerel halk, kurumuş ağaçlara ve taşları kaplayan gri, tozlu toprağa yapışmış kalıcı zehirliliğin farkında olarak vadiye giden yoldan uzak duruyor. Kozmik rengin anısı yerel folklora karışsa da, evrenin doğasını gerçekten anlayanlar bazı yaraların asla tamamen iyileşmediğini bilirler. Rüzgarda hala kalıcı bir titreşim, yabancı özün vadinin karanlık çatlaklarında hala zonkladığına dair hafif bir sezgi var. Ammi'nin hikayesi, insan mantığına meydan okuyan bir dehşetin nihai kanıtı; kayıtsız, sonsuz ve ürkütücü derecede gizemli bir evrende sadece küçük birer zerrecik olduğumuzun tüyler ürpertici bir hatırlatıcısıdır."
+    ],
+    words: {
+      "precarious": "tehlikeli, güvensiz",
+      "desolate": "ıssız, terk edilmiş",
+      "grotesque": "garip, tuhaf, gülünç derecede bozuk",
+      "blight": "yıkım, hastalık, felaket",
+      "inscrutable": "anlaşılmaz, çözülemez",
+      "foreboding": "uğursuzluk hissi, içine doğan kötü his",
+      "vigor": "canlılık",
+      "caustic": "yakıcı",
+      "revulsion": "tiksinti",
+      "lethargic": "uyuşuk",
+      "elusive": "anlaşılması zor",
+      "degradation": "bozulma",
+      "delirium": "hezeyan",
+      "harrowing": "yürek parçalayıcı",
+      "lethargy": "uyuşukluk",
+      "blighted": "lanetli",
+      "annihilation": "yok oluş",
+      "entropy": "düzensizlik",
+      "stagnation": "durgunluk",
+      "cloying": "bıktırıcı derecede tatlı",
+      "metaphysical": "metafiziksel",
+      "luminescence": "ışıldama",
+      "dehydrated": "susuz kalmış",
+      "translucent": "yarı saydam",
+      "viscous": "yapışkan",
+      "shroud": "kefen",
+      "nexus": "bağlantı noktası",
+      "malignant": "habis",
+      "subterranean": "yeraltı",
+      "dissolution": "çözülüş",
+      "malevolent": "kötücül",
+      "calamitous": "felaket dolu",
+      "transmutation": "başkalaşım",
+      "fathomless": "dipsiz",
+      "indifferent": "kayıtsız"
+    }
+  }
+];

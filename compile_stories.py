@@ -18,6 +18,13 @@ if os.path.exists(HORROR_DATA_FILE):
         expanded_stories.update(horror_stories)
         print(f"Loaded {len(horror_stories)} horror stories.")
 
+NEW_30_HORROR_DATA_FILE = "new_30_horror_stories_data.json"
+if os.path.exists(NEW_30_HORROR_DATA_FILE):
+    with open(NEW_30_HORROR_DATA_FILE, "r", encoding="utf-8") as f:
+        new_30_horror = json.load(f)
+        expanded_stories.update(new_30_horror)
+        print(f"Loaded {len(new_30_horror)} new 30 horror stories.")
+
 CLASSICS_DATA_FILE = "classics_stories_data.json"
 if os.path.exists(CLASSICS_DATA_FILE):
     with open(CLASSICS_DATA_FILE, "r", encoding="utf-8") as f:
