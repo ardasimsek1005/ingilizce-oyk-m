@@ -1173,32 +1173,37 @@ export default function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       // Increment only when the page is visible and user is actively reading a story.
-      // Note: document.hasFocus() is intentionally NOT used here because Capacitor Android's
-      // WebView almost always returns false for hasFocus(), causing the timer to never fire.
-      if (document.visibilityState === 'visible' && activeReadingBook !== null) {
+      // We check activeReadingBookRef.current to avoid resetting the timer on page transitions or word clicks.
+      if (document.visibilityState === 'visible' && activeReadingBookRef.current !== null) {
         setStats(prev => {
           const dayIndex = getTodayIndex();
           const updatedWeeklyMins = [...(prev.weeklyMins || [0, 0, 0, 0, 0, 0, 0])];
           updatedWeeklyMins[dayIndex] = (updatedWeeklyMins[dayIndex] || 0) + 1;
 
-          const nextTotalTime = prev.totalTimeMinutes + 1;
+          const nextTotalTime = (prev.totalTimeMinutes || 0) + 1;
 
           // Target: 20 minutes daily reading goal
           const dailyGoalMins = 20;
           const timePercent = Math.min(Math.round((updatedWeeklyMins[dayIndex] / dailyGoalMins) * 100), 100);
 
-          return {
+          const nextStats = {
             ...prev,
             totalTimeMinutes: nextTotalTime,
             timeGoalPercent: timePercent,
             weeklyMins: updatedWeeklyMins
           };
+
+          // Sync to the cloud immediately with the correct updated stats payload to avoid race conditions.
+          setTimeout(() => {
+            triggerCloudSync(nextStats);
+          }, 0);
+
+          return nextStats;
         });
-        triggerCloudSync();
       }
     }, 60000); // 60 seconds = 1 minute
     return () => clearInterval(interval);
-  }, [activeReadingBook]);
+  }, []);
 
   const triggerCloudSync = (
     customStats?: UserStats,
