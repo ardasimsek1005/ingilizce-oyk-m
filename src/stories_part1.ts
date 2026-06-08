@@ -2528,7 +2528,7 @@ export const STORIES_PART1: RawStory[] = [
   },
 
   // ==================== LEVEL A2 (9 Stories) ====================
-                                                            {
+                                                              {
     id: 'pinocchio',
     title: "Pinocchio",
     author: 'Carlo Collodi',
@@ -2630,7 +2630,7 @@ export const STORIES_PART1: RawStory[] = [
       "disappear": "kaybolmak"
     }
   },
-                                                            {
+                                                              {
     id: 'beauty_beast',
     title: "Beauty and the Beast",
     author: 'Gabrielle-Suzanne de Villeneuve',
@@ -2735,7 +2735,7 @@ export const STORIES_PART1: RawStory[] = [
       "determination": "kararlılık"
     }
   },
-                                                            {
+                                                              {
     id: 'little_mermaid',
     title: "The Little Mermaid",
     author: 'Hans Christian Andersen',
@@ -2836,7 +2836,7 @@ export const STORIES_PART1: RawStory[] = [
       "danger": "tehlike"
     }
   },
-                                                            {
+                                                              {
     id: 'aladdin',
     title: "Aladdin and the Lamp",
     author: 'Antoine Galland',
@@ -2944,7 +2944,7 @@ export const STORIES_PART1: RawStory[] = [
       "trap": "tuzak"
     }
   },
-                                                        {
+                                                          {
     id: 'princess_pea',
     title: "The Princess and the Pea",
     author: 'Hans Christian Andersen',
@@ -3045,7 +3045,7 @@ export const STORIES_PART1: RawStory[] = [
       "peaceful": "huzurlu"
     }
   },
-                                                        {
+                                                          {
     id: 'thumbelina',
     title: "Thumbelina",
     author: 'Hans Christian Andersen',
@@ -3149,7 +3149,7 @@ export const STORIES_PART1: RawStory[] = [
       "queen": "kraliçe"
     }
   },
-                                                        {
+                                                          {
     id: 'robin_hood',
     title: "Robin Hood",
     author: 'Howard Pyle',
@@ -3257,7 +3257,7 @@ export const STORIES_PART1: RawStory[] = [
       "drifted": "sürüklendi"
     }
   },
-                                                        {
+                                                          {
     id: 'alice_wonderland',
     title: "Alice in Wonderland",
     author: 'Lewis Carroll',
@@ -3360,7 +3360,7 @@ export const STORIES_PART1: RawStory[] = [
       "liquid": "sıvı"
     }
   },
-                                                        {
+                                                          {
     id: 'boy_cried_wolf',
     title: "The Boy Who Cried Wolf",
     author: 'Aesop',
@@ -3468,7 +3468,7 @@ export const STORIES_PART1: RawStory[] = [
       "trust": "güvenmek"
     }
   },
-                                                    {
+                                                      {
     id: 'fox_grapes',
     title: "The Fox and the Grapes",
     author: 'Aesop',
@@ -3572,7 +3572,7 @@ export const STORIES_PART1: RawStory[] = [
       "lesson": "ders"
     }
   },
-                                                  {
+                                                    {
     id: 'ali_baba',
     title: "Ali Baba and the Forty Thieves",
     author: 'Antoine Galland',
@@ -3675,7 +3675,7 @@ export const STORIES_PART1: RawStory[] = [
       "peaceful": "huzurlu"
     }
   },
-                                                  {
+                                                    {
     id: 'sinbad',
     title: "Sinbad the Sailor",
     author: 'Antoine Galland',
@@ -3777,7 +3777,7 @@ export const STORIES_PART1: RawStory[] = [
       "grab": "kapmak"
     }
   },
-                                                  {
+                                                    {
     id: 'king_midas',
     title: "King Midas and the Golden Touch",
     author: 'Nathaniel Hawthorne',
@@ -3879,7 +3879,7 @@ export const STORIES_PART1: RawStory[] = [
       "prepared": "hazırlıklı"
     }
   },
-                                                    {
+                                                      {
     id: 'peter_pan',
     title: "Peter Pan",
     author: 'J. M. Barrie',
@@ -3981,7 +3981,7 @@ export const STORIES_PART1: RawStory[] = [
       "laughter": "kahkaha"
     }
   },
-                                        {
+                                          {
     id: 'lion_mouse',
     title: "The Lion and the Mouse",
     author: 'Aesop',
@@ -4050,7 +4050,7 @@ export const STORIES_PART1: RawStory[] = [
       "peace": "huzur"
     }
   },
-                                        {
+                                          {
     id: 'ant_grasshopper',
     title: "The Ant and the Grasshopper",
     author: 'Aesop',
@@ -4121,7 +4121,7 @@ export const STORIES_PART1: RawStory[] = [
       "organize": "düzenlemek"
     }
   },
-                                        {
+                                          {
     id: 'town_country_mouse',
     title: "The Town Mouse and the Country Mouse",
     author: 'Aesop',
@@ -4193,7 +4193,7 @@ export const STORIES_PART1: RawStory[] = [
       "field": "tarla"
     }
   },
-                                        {
+                                          {
     id: 'crow_pitcher',
     title: "The Crow and the Pitcher",
     author: 'Aesop',
@@ -4264,7 +4264,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "macera"
     }
   },
-                                        {
+                                          {
     id: 'wind_sun',
     title: "The North Wind and the Sun",
     author: 'Aesop',
@@ -4332,7 +4332,7 @@ export const STORIES_PART1: RawStory[] = [
       "kindness": "iyilik"
     }
   },
-                                        {
+                                          {
     id: 'gingerbread_man',
     title: "The Gingerbread Man",
     author: 'Traditional',
@@ -4399,7 +4399,7 @@ export const STORIES_PART1: RawStory[] = [
       "finish": "bitirmek"
     }
   },
-                                        {
+                                          {
     id: 'chicken_little',
     title: "Chicken Little",
     author: 'Traditional',
@@ -4469,7 +4469,7 @@ export const STORIES_PART1: RawStory[] = [
       "exit": "çıkış"
     }
   },
-                                        {
+                                          {
     id: 'enormous_turnip',
     title: "The Enormous Turnip",
     author: 'Traditional',
@@ -4535,7 +4535,7 @@ export const STORIES_PART1: RawStory[] = [
       "team": "takım"
     }
   },
-                                        {
+                                          {
     id: 'three_billy_goats',
     title: "Three Billy Goats Gruff",
     author: 'Traditional',
@@ -4604,7 +4604,7 @@ export const STORIES_PART1: RawStory[] = [
       "happy": "mutlu"
     }
   },
-                                        {
+                                          {
     id: 'fisherman_wife',
     title: "The Fisherman and His Wife",
     author: 'Brothers Grimm',
@@ -4672,7 +4672,7 @@ export const STORIES_PART1: RawStory[] = [
       "thankful": "minnettar"
     }
   },
-                                        {
+                                          {
     id: 'little_red_hen',
     title: "The Little Red Hen",
     author: 'Traditional',
@@ -4738,7 +4738,7 @@ export const STORIES_PART1: RawStory[] = [
       "stomach": "mide"
     }
   },
-                                        {
+                                          {
     id: 'frog_prince',
     title: "The Frog Prince",
     author: 'Brothers Grimm',
@@ -4807,7 +4807,7 @@ export const STORIES_PART1: RawStory[] = [
       "travel": "yolculuk"
     }
   },
-                                        {
+                                          {
     id: 'stone_soup',
     title: "Stone Soup",
     author: 'Traditional',
@@ -4876,7 +4876,7 @@ export const STORIES_PART1: RawStory[] = [
       "generous": "cömert"
     }
   },
-                                        {
+                                          {
     id: 'star_money',
     title: "The Star Money",
     author: 'Brothers Grimm',
@@ -4948,7 +4948,7 @@ export const STORIES_PART1: RawStory[] = [
       "safe": "güvende"
     }
   },
-                                        {
+                                          {
     id: 'city_musicians',
     title: "The Bremen Town Musicians",
     author: 'Brothers Grimm',
@@ -5019,7 +5019,7 @@ export const STORIES_PART1: RawStory[] = [
       "smile": "gülümsemek"
     }
   },
-                                        {
+                                          {
     id: 'peter_rabbit',
     title: "The Tale of Peter Rabbit",
     author: 'Beatrix Potter',
@@ -5090,7 +5090,7 @@ export const STORIES_PART1: RawStory[] = [
       "proud": "gururlu"
     }
   },
-                                        {
+                                          {
     id: 'bambi',
     title: "Bambi",
     author: 'Felix Salten',
@@ -5160,7 +5160,7 @@ export const STORIES_PART1: RawStory[] = [
       "noble": "soylu"
     }
   },
-                                        {
+                                          {
     id: 'black_beauty',
     title: "Black Beauty",
     author: 'Anna Sewell',
@@ -5228,7 +5228,7 @@ export const STORIES_PART1: RawStory[] = [
       "rubbed": "ovuşturdu"
     }
   },
-                                        {
+                                          {
     id: 'hans_brinker',
     title: "Hans Brinker",
     author: 'Mary Mapes Dodge',
@@ -5290,7 +5290,7 @@ export const STORIES_PART1: RawStory[] = [
       "working": "çalışan"
     }
   },
-                                        {
+                                          {
     id: 'five_children_it',
     title: "Five Children and It",
     author: 'E. Nesbit',
@@ -5360,7 +5360,7 @@ export const STORIES_PART1: RawStory[] = [
       "stretched": "gergin"
     }
   },
-                                        {
+                                          {
     id: 'railway_children',
     title: "The Railway Children",
     author: 'E. Nesbit',
@@ -5426,7 +5426,7 @@ export const STORIES_PART1: RawStory[] = [
       "whistle": "düdük"
     }
   },
-                                        {
+                                          {
     id: 'swiss_family',
     title: "The Swiss Family Robinson",
     author: 'Johann David Wyss',
@@ -5495,7 +5495,7 @@ export const STORIES_PART1: RawStory[] = [
       "prepared": "hazırlıklı"
     }
   },
-                                        {
+                                          {
     id: 'doctor_dolittle',
     title: "Doctor Dolittle",
     author: 'Hugh Lofting',
@@ -5562,7 +5562,7 @@ export const STORIES_PART1: RawStory[] = [
       "prepared": "hazırlıklı"
     }
   },
-                                        {
+                                          {
     id: 'sleepy_hollow',
     title: "The Legend of Sleepy Hollow",
     author: 'Washington Irving',
@@ -5632,7 +5632,7 @@ export const STORIES_PART1: RawStory[] = [
       "sticks": "sopa"
     }
   },
-                                        {
+                                          {
     id: 'rip_van_winkle',
     title: "Rip Van Winkle",
     author: 'Washington Irving',
@@ -5704,7 +5704,7 @@ export const STORIES_PART1: RawStory[] = [
       "working": "çalışan"
     }
   },
-                                        {
+                                          {
     id: 'velveteen_rabbit',
     title: "The Velveteen Rabbit",
     author: 'Margery Williams',
@@ -5776,7 +5776,7 @@ export const STORIES_PART1: RawStory[] = [
       "arrival": "varış"
     }
   },
-                                        {
+                                          {
     id: 'water_babies',
     title: "The Water-Babies",
     author: 'Charles Kingsley',
@@ -5846,7 +5846,7 @@ export const STORIES_PART1: RawStory[] = [
       "immediately": "derhal"
     }
   },
-                                        {
+                                          {
     id: 'nutcracker',
     title: "The Nutcracker",
     author: 'E. T. A. Hoffmann',
@@ -5915,7 +5915,7 @@ export const STORIES_PART1: RawStory[] = [
       "real": "gerçek"
     }
   },
-                                        {
+                                          {
     id: 'blue_bird',
     title: "The Blue Bird",
     author: 'Maurice Maeterlinck',
@@ -5986,7 +5986,7 @@ export const STORIES_PART1: RawStory[] = [
       "thankful": "minnettar"
     }
   },
-                                        {
+                                          {
     id: 'tom_thumb',
     title: "Tom Thumb",
     author: 'Brothers Grimm',
@@ -6058,7 +6058,7 @@ export const STORIES_PART1: RawStory[] = [
       "kindness": "iyilik"
     }
   },
-                                        {
+                                          {
     id: 'little_match_girl',
     title: "The Little Match Girl",
     author: 'Hans Christian Andersen',
@@ -6129,7 +6129,7 @@ export const STORIES_PART1: RawStory[] = [
       "silent": "sessiz"
     }
   },
-                                  {
+                                    {
     id: 'horror_black_cat',
     title: "The Black Cat",
     author: 'Edgar Allan Poe',
@@ -6200,7 +6200,7 @@ export const STORIES_PART1: RawStory[] = [
       "anymore": "artık"
     }
   },
-                                  {
+                                    {
     id: 'horror_signalman',
     title: "The Signalman",
     author: 'Charles Dickens',
@@ -6268,7 +6268,7 @@ export const STORIES_PART1: RawStory[] = [
       "better": "daha iyi"
     }
   },
-                                  {
+                                    {
     id: 'horror_red_headed_league',
     title: "The Red-Headed League",
     author: 'Arthur Conan Doyle',
@@ -6337,7 +6337,7 @@ export const STORIES_PART1: RawStory[] = [
       "brain": "beyin"
     }
   },
-                                  {
+                                    {
     id: 'horror_blue_carbuncle',
     title: "The Blue Carbuncle",
     author: 'Arthur Conan Doyle',
@@ -6408,7 +6408,7 @@ export const STORIES_PART1: RawStory[] = [
       "attacked": "saldırıldı"
     }
   },
-                                  {
+                                    {
     id: 'horror_young_goodman_brown',
     title: "Young Goodman Brown",
     author: 'Nathaniel Hawthorne',
@@ -6476,7 +6476,7 @@ export const STORIES_PART1: RawStory[] = [
       "blew": "savurdu"
     }
   },
-                                  {
+                                    {
     id: 'horror_phantom_rickshaw',
     title: "The Phantom Rickshaw",
     author: 'Rudyard Kipling',
@@ -6543,7 +6543,7 @@ export const STORIES_PART1: RawStory[] = [
       "better": "daha iyi"
     }
   },
-                                  {
+                                    {
     id: 'horror_draculas_guest',
     title: "Dracula's Guest",
     author: 'Bram Stoker',
@@ -6612,7 +6612,7 @@ export const STORIES_PART1: RawStory[] = [
       "attack": "saldırı"
     }
   },
-                                  {
+                                    {
     id: 'horror_devil_tom_walker',
     title: "The Devil and Tom Walker",
     author: 'Washington Irving',
@@ -6683,7 +6683,7 @@ export const STORIES_PART1: RawStory[] = [
       "anymore": "artık"
     }
   },
-                                  {
+                                    {
     id: 'horror_monkeys_paw',
     title: "The Monkey's Paw",
     author: 'W. W. Jacobs',
@@ -6753,7 +6753,7 @@ export const STORIES_PART1: RawStory[] = [
       "blows": "darbeler"
     }
   },
-                                  {
+                                    {
     id: 'horror_oval_portrait',
     title: "The Oval Portrait",
     author: 'Edgar Allan Poe',
@@ -6821,7 +6821,7 @@ export const STORIES_PART1: RawStory[] = [
       "beauty": "güzellik"
     }
   },
-                                  {
+                                    {
     id: 'horror_house_of_usher',
     title: "The Fall of the House of Usher",
     author: 'Edgar Allan Poe',
@@ -6891,7 +6891,7 @@ export const STORIES_PART1: RawStory[] = [
       "entire": "bütün"
     }
   },
-                                  {
+                                    {
     id: 'horror_cask_amontillado',
     title: "The Cask of Amontillado",
     author: 'Edgar Allan Poe',
@@ -6963,7 +6963,7 @@ export const STORIES_PART1: RawStory[] = [
       "closely": "dikkatle"
     }
   },
-                                  {
+                                    {
     id: 'horror_speckled_band',
     title: "The Speckled Band",
     author: 'Arthur Conan Doyle',
@@ -7035,7 +7035,7 @@ export const STORIES_PART1: RawStory[] = [
       "neglect": "terk edilmişlik"
     }
   },
-                                  {
+                                    {
     id: 'horror_yellow_wallpaper',
     title: "The Yellow Wallpaper",
     author: 'Charlotte Perkins Gilman',
@@ -7106,7 +7106,7 @@ export const STORIES_PART1: RawStory[] = [
       "nails": "çiviler"
     }
   },
-                                  {
+                                    {
     id: 'horror_willows',
     title: "The Willows",
     author: 'Algernon Blackwood',
@@ -7175,7 +7175,7 @@ export const STORIES_PART1: RawStory[] = [
       "glow": "parıltı"
     }
   },
-                                  {
+                                    {
     id: 'horror_wendigo',
     title: "The Wendigo",
     author: 'Algernon Blackwood',
@@ -7245,7 +7245,7 @@ export const STORIES_PART1: RawStory[] = [
       "freezing": "dondurucu"
     }
   },
-                                  {
+                                    {
     id: 'horror_king_in_yellow',
     title: "The King in Yellow",
     author: 'Robert W. Chambers',
@@ -7314,7 +7314,7 @@ export const STORIES_PART1: RawStory[] = [
       "monsters": "canavarlar"
     }
   },
-                                  {
+                                    {
     id: 'horror_vampyre',
     title: "The Vampyre",
     author: 'John William Polidori',
@@ -7385,7 +7385,7 @@ export const STORIES_PART1: RawStory[] = [
       "evil": "şer"
     }
   },
-                                  {
+                                    {
     id: 'horror_horla',
     title: "The Horla",
     author: 'Guy de Maupassant',
@@ -7453,7 +7453,7 @@ export const STORIES_PART1: RawStory[] = [
       "flowers": "çiçekler"
     }
   },
-                                  {
+                                    {
     id: 'horror_green_tea',
     title: "Green Tea",
     author: 'Sheridan Le Fanu',
@@ -7523,7 +7523,7 @@ export const STORIES_PART1: RawStory[] = [
       "dusty": "tozlu"
     }
   },
-                                  {
+                                    {
     id: 'horror_sandman',
     title: "The Sandman",
     author: 'E. T. A. Hoffmann',
@@ -7594,7 +7594,7 @@ export const STORIES_PART1: RawStory[] = [
       "fainted": "bayıldı"
     }
   },
-                                  {
+                                    {
     id: 'horror_birth_mark',
     title: "The Birth-Mark",
     author: 'Nathaniel Hawthorne',
@@ -7663,7 +7663,7 @@ export const STORIES_PART1: RawStory[] = [
       "flowers": "çiçekler"
     }
   },
-                                  {
+                                    {
     id: 'horror_masque_red_death',
     title: "The Masque of the Red Death",
     author: 'Edgar Allan Poe',
@@ -7735,7 +7735,7 @@ export const STORIES_PART1: RawStory[] = [
       "grip": "kavrayış"
     }
   },
-                                  {
+                                    {
     id: 'horror_gold_bug',
     title: "The Gold-Bug",
     author: 'Edgar Allan Poe',
@@ -7802,7 +7802,7 @@ export const STORIES_PART1: RawStory[] = [
       "exact": "tam"
     }
   },
-                                  {
+                                    {
     id: 'horror_moonstone',
     title: "The Moonstone",
     author: 'Wilkie Collins',
@@ -7872,7 +7872,7 @@ export const STORIES_PART1: RawStory[] = [
       "eventually": "nihayetinde"
     }
   },
-                                {
+                                  {
     id: 'classic_tom_sawyer',
     title: "The Adventures of Tom Sawyer",
     author: 'Mark Twain',
@@ -7944,7 +7944,7 @@ export const STORIES_PART1: RawStory[] = [
       "believes": "inanır"
     }
   },
-                                {
+                                  {
     id: 'classic_oliver_twist',
     title: "Oliver Twist",
     author: 'Charles Dickens',
@@ -8014,7 +8014,7 @@ export const STORIES_PART1: RawStory[] = [
       "charge": "suçlama"
     }
   },
-                                {
+                                  {
     id: 'classic_prince_pauper',
     title: "The Prince and the Pauper",
     author: 'Mark Twain',
@@ -8081,7 +8081,7 @@ export const STORIES_PART1: RawStory[] = [
       "confused": "şaşkın"
     }
   },
-                                {
+                                  {
     id: 'classic_kidnapped',
     title: "Kidnapped",
     author: 'Robert Louis Stevenson',
@@ -8152,7 +8152,7 @@ export const STORIES_PART1: RawStory[] = [
       "captain": "kaptan"
     }
   },
-                                {
+                                  {
     id: 'classic_three_musketeers',
     title: "The Three Musketeers",
     author: 'Alexandre Dumas',
@@ -8218,7 +8218,7 @@ export const STORIES_PART1: RawStory[] = [
       "amazing": "harika"
     }
   },
-                                {
+                                  {
     id: 'classic_uncle_tom_cabin',
     title: "Uncle Tom's Cabin",
     author: 'Harriet Beecher Stowe',
@@ -8288,7 +8288,7 @@ export const STORIES_PART1: RawStory[] = [
       "better": "daha iyi"
     }
   },
-                                {
+                                  {
     id: 'classic_journey_center_earth',
     title: "Journey to the Center of the Earth",
     author: 'Jules Verne',
@@ -8357,7 +8357,7 @@ export const STORIES_PART1: RawStory[] = [
       "anymore": "artık"
     }
   },
-                                {
+                                  {
     id: 'classic_first_men_moon',
     title: "The First Men in the Moon",
     author: 'H. G. Wells',
@@ -8423,7 +8423,7 @@ export const STORIES_PART1: RawStory[] = [
       "blinds": "panjur"
     }
   },
-                              {
+                                {
     id: 'classic_captains_courageous',
     title: "Captains Courageous",
     author: 'Rudyard Kipling',
@@ -8496,7 +8496,7 @@ export const STORIES_PART1: RawStory[] = [
       "balance": "denge"
     }
   },
-                              {
+                                {
     id: 'classic_mysterious_island',
     title: "The Mysterious Island",
     author: 'Jules Verne',
@@ -8567,7 +8567,7 @@ export const STORIES_PART1: RawStory[] = [
       "closer": "daha yakın"
     }
   },
-                              {
+                                {
     id: 'classic_david_copperfield',
     title: "David Copperfield",
     author: 'Charles Dickens',
@@ -8640,7 +8640,7 @@ export const STORIES_PART1: RawStory[] = [
       "cheerful": "neşeli"
     }
   },
-                            {
+                              {
     id: 'classic_great_expectations',
     title: "Great Expectations",
     author: 'Charles Dickens',
@@ -8709,7 +8709,7 @@ export const STORIES_PART1: RawStory[] = [
       "completely": "tamamen"
     }
   },
-                            {
+                              {
     id: 'classic_jane_eyre',
     title: "Jane Eyre",
     author: 'Charlotte Brontë',
@@ -8780,7 +8780,7 @@ export const STORIES_PART1: RawStory[] = [
       "eventually": "sonunda"
     }
   },
-                            {
+                              {
     id: 'classic_count_monte_cristo',
     title: "The Count of Monte Cristo",
     author: 'Alexandre Dumas',
@@ -8849,7 +8849,7 @@ export const STORIES_PART1: RawStory[] = [
       "crawled": "süründü"
     }
   },
-                            {
+                              {
     id: 'classic_huck_finn',
     title: "Adventures of Huckleberry Finn",
     author: 'Mark Twain',
@@ -8920,7 +8920,7 @@ export const STORIES_PART1: RawStory[] = [
       "prepared": "hazırlıklı"
     }
   },
-                            {
+                              {
     id: 'classic_twenty_thousand_leagues',
     title: "Twenty Thousand Leagues Under the Seas",
     author: 'Jules Verne',
@@ -8990,7 +8990,7 @@ export const STORIES_PART1: RawStory[] = [
       "curious": "meraklı"
     }
   },
-                            {
+                              {
     id: 'classic_earth_to_moon',
     title: "From the Earth to the Moon",
     author: 'Jules Verne',
@@ -9061,7 +9061,7 @@ export const STORIES_PART1: RawStory[] = [
       "captain": "kaptan"
     }
   },
-                            {
+                              {
     id: 'classic_lost_world',
     title: "The Lost World",
     author: 'Arthur Conan Doyle',
@@ -9132,7 +9132,7 @@ export const STORIES_PART1: RawStory[] = [
       "distant": "uzak"
     }
   },
-                            {
+                              {
     id: 'classic_island_moreau',
     title: "The Island of Doctor Moreau",
     author: 'H. G. Wells',
@@ -9201,7 +9201,7 @@ export const STORIES_PART1: RawStory[] = [
       "clearly": "açıkça"
     }
   },
-                            {
+                              {
     id: 'classic_red_badge_courage',
     title: "The Red Badge of Courage",
     author: 'Stephen Crane',
@@ -9269,7 +9269,7 @@ export const STORIES_PART1: RawStory[] = [
       "dusty": "tozlu"
     }
   },
-                            {
+                              {
     id: 'classic_emma',
     title: "Emma",
     author: 'Jane Austen',
@@ -9338,7 +9338,7 @@ export const STORIES_PART1: RawStory[] = [
       "immediately": "derhal"
     }
   },
-                            {
+                              {
     id: 'classic_sense_sensibility',
     title: "Sense and Sensibility",
     author: 'Jane Austen',
@@ -9408,7 +9408,7 @@ export const STORIES_PART1: RawStory[] = [
       "comfort": "konfor"
     }
   },
-                            {
+                              {
     id: 'classic_mansfield_park',
     title: "Mansfield Park",
     author: 'Jane Austen',
@@ -9480,7 +9480,7 @@ export const STORIES_PART1: RawStory[] = [
       "distance": "mesafe"
     }
   },
-                            {
+                              {
     id: 'classic_persuasion',
     title: "Persuasion",
     author: 'Jane Austen',
@@ -9553,7 +9553,7 @@ export const STORIES_PART1: RawStory[] = [
       "emotions": "duygular"
     }
   },
-                            {
+                              {
     id: 'classic_northanger_abbey',
     title: "Northanger Abbey",
     author: 'Jane Austen',
@@ -9623,7 +9623,7 @@ export const STORIES_PART1: RawStory[] = [
       "kindness": "nezaket"
     }
   },
-                        {
+                          {
     id: 'peter_wolf',
     title: "Peter and the Wolf",
     author: 'Sergei Prokofiev',
@@ -9692,7 +9692,7 @@ export const STORIES_PART1: RawStory[] = [
       "content": "memnun"
     }
   },
-                        {
+                          {
     id: 'tin_soldier',
     title: "The Steadfast Tin Soldier",
     author: 'Hans Christian Andersen',
@@ -9763,7 +9763,7 @@ export const STORIES_PART1: RawStory[] = [
       "heart": "kalp"
     }
   },
-                        {
+                          {
     id: 'magic_pot',
     title: "The Magic Porridge Pot",
     author: 'Brothers Grimm',
@@ -9833,7 +9833,7 @@ export const STORIES_PART1: RawStory[] = [
       "feast": "ziyafet"
     }
   },
-                        {
+                          {
     id: 'wolf_kids',
     title: "The Wolf and the Seven Young Goats",
     author: 'Brothers Grimm',
@@ -9902,7 +9902,7 @@ export const STORIES_PART1: RawStory[] = [
       "wolf": "kurt"
     }
   },
-                        {
+                          {
     id: 'brave_tailor',
     title: "The Brave Little Tailor",
     author: 'Brothers Grimm',
@@ -9971,7 +9971,7 @@ export const STORIES_PART1: RawStory[] = [
       "capture": "yakalamak"
     }
   },
-                      {
+                        {
     id: 'fable_shepherd_flute',
     title: "The Shepherd's Flute",
     author: 'Traditional',
@@ -10042,7 +10042,7 @@ export const STORIES_PART1: RawStory[] = [
       "journey": "yolculuk"
     }
   },
-                      {
+                        {
     id: 'fable_ant_dove',
     title: "The Ant and the Dove",
     author: 'Aesop',
@@ -10114,7 +10114,7 @@ export const STORIES_PART1: RawStory[] = [
       "kindness": "iyilik"
     }
   },
-                      {
+                        {
     id: 'fable_donkey_salt',
     title: "The Donkey and the Salt",
     author: 'Aesop',
@@ -10184,7 +10184,7 @@ export const STORIES_PART1: RawStory[] = [
       "obey": "söz dinlemek"
     }
   },
-                      {
+                        {
     id: 'fable_honest_woodcutter',
     title: "The Honest Woodcutter",
     author: 'Aesop',
@@ -10254,7 +10254,7 @@ export const STORIES_PART1: RawStory[] = [
       "iron": "demir"
     }
   },
-                      {
+                        {
     id: 'fable_milkmaid_pail',
     title: "The Milkmaid and her Pail",
     author: 'Aesop',
@@ -10326,7 +10326,7 @@ export const STORIES_PART1: RawStory[] = [
       "honest": "dürüst"
     }
   },
-                      {
+                        {
     id: 'fable_peacock_crane',
     title: "The Peacock and the Crane",
     author: 'Aesop',
@@ -10398,7 +10398,7 @@ export const STORIES_PART1: RawStory[] = [
       "value": "değer"
     }
   },
-                      {
+                        {
     id: 'fable_fisherman_fish',
     title: "The Fisherman and the Little Fish",
     author: 'Aesop',
@@ -10466,7 +10466,7 @@ export const STORIES_PART1: RawStory[] = [
       "respect": "saygı"
     }
   },
-                      {
+                        {
     id: 'fable_three_wishes',
     title: "The Three Wishes",
     author: 'Traditional',
@@ -10540,7 +10540,7 @@ export const STORIES_PART1: RawStory[] = [
       "shine": "parlamak"
     }
   },
-                      {
+                        {
     id: 'fable_magic_seed',
     title: "The Magic Seed",
     author: 'Traditional',
@@ -10610,7 +10610,7 @@ export const STORIES_PART1: RawStory[] = [
       "proud": "gururlu"
     }
   },
-                      {
+                        {
     id: 'fable_magic_paintbrush',
     title: "The Magic Paintbrush",
     author: 'Chinese Folktale',
@@ -10677,7 +10677,7 @@ export const STORIES_PART1: RawStory[] = [
       "useful": "yararlı"
     }
   },
-                      {
+                        {
     id: 'horror_ghost_library',
     title: "The Ghost in the Library",
     author: 'Traditional',
@@ -10744,7 +10744,7 @@ export const STORIES_PART1: RawStory[] = [
       "breathes": "soluyor"
     }
   },
-                      {
+                        {
     id: 'horror_whispering_castle',
     title: "The Whispering Castle",
     author: 'Traditional',
@@ -10811,7 +10811,7 @@ export const STORIES_PART1: RawStory[] = [
       "glowing": "kor gibi"
     }
   },
-                      {
+                        {
     id: 'horror_haunted_lighthouse',
     title: "The Haunted Lighthouse",
     author: 'Traditional',
@@ -10882,7 +10882,7 @@ export const STORIES_PART1: RawStory[] = [
       "friendly": "dostane"
     }
   },
-                      {
+                        {
     id: 'horror_clock_tower_ghost',
     title: "The Clock Tower Ghost",
     author: 'Traditional',
@@ -10954,7 +10954,7 @@ export const STORIES_PART1: RawStory[] = [
       "heartbeat": "nabız"
     }
   },
-                      {
+                        {
     id: 'horror_haunted_mirror',
     title: "The Haunted Mirror",
     author: 'Traditional',
@@ -11026,7 +11026,7 @@ export const STORIES_PART1: RawStory[] = [
       "grabs": "kapıyor"
     }
   },
-                      {
+                        {
     id: 'horror_whispering_shadows',
     title: "The Whispering Shadows",
     author: 'Traditional',
@@ -11091,7 +11091,7 @@ export const STORIES_PART1: RawStory[] = [
       "breathes": "soluyor"
     }
   },
-                      {
+                        {
     id: 'horror_crying_stone',
     title: "The Legend of the Crying Stone",
     author: 'Traditional',
@@ -11161,7 +11161,7 @@ export const STORIES_PART1: RawStory[] = [
       "flowers": "çiçekler"
     }
   },
-                      {
+                        {
     id: 'horror_haunted_painting',
     title: "The Haunted Painting",
     author: 'Traditional',
@@ -11230,7 +11230,7 @@ export const STORIES_PART1: RawStory[] = [
       "previous": "önceki"
     }
   },
-                      {
+                        {
     id: 'horror_haunted_clock',
     title: "The Haunted Clock",
     author: 'Traditional',
@@ -11299,7 +11299,7 @@ export const STORIES_PART1: RawStory[] = [
       "flashes": "çakışlar"
     }
   },
-                      {
+                        {
     id: 'horror_mysterious_passenger',
     title: "The Mysterious Passenger",
     author: 'Traditional',
@@ -11369,7 +11369,7 @@ export const STORIES_PART1: RawStory[] = [
       "safety": "emniyet"
     }
   },
-                      {
+                        {
     id: 'classic_gulliver_laputa',
     title: "Gulliver's Travels - The Floating Island",
     author: 'Jonathan Swift',
@@ -11441,7 +11441,7 @@ export const STORIES_PART1: RawStory[] = [
       "main": "ana"
     }
   },
-                      {
+                        {
     id: 'classic_crusoe_footprint',
     title: "Robinson Crusoe - The First Footprint",
     author: 'Daniel Defoe',
@@ -11510,7 +11510,7 @@ export const STORIES_PART1: RawStory[] = [
       "calm": "sakin"
     }
   },
-                      {
+                        {
     id: 'classic_call_wild_race',
     title: "The Call of the Wild - The Great Sled Race",
     author: 'Jack London',
@@ -11578,7 +11578,7 @@ export const STORIES_PART1: RawStory[] = [
       "distance": "mesafe"
     }
   },
-                      {
+                        {
     id: 'classic_around_world_india',
     title: "Around the World in Eighty Days - The Train in India",
     author: 'Jules Verne',
@@ -11647,7 +11647,7 @@ export const STORIES_PART1: RawStory[] = [
       "mission": "görev"
     }
   },
-                      {
+                        {
     id: 'classic_treasure_island_chest',
     title: "Treasure Island - The Map in the Chest",
     author: 'Robert Louis Stevenson',
@@ -11713,7 +11713,7 @@ export const STORIES_PART1: RawStory[] = [
       "blows": "darbeler"
     }
   },
-                      {
+                        {
     id: 'classic_moby_dick_whale',
     title: "Moby Dick - The White Whale",
     author: 'Herman Melville',
@@ -11781,7 +11781,7 @@ export const STORIES_PART1: RawStory[] = [
       "distance": "mesafe"
     }
   },
-                      {
+                        {
     id: 'classic_secret_garden_key',
     title: "The Secret Garden - The Locked Gate",
     author: 'Frances Hodgson Burnett',
@@ -11851,7 +11851,7 @@ export const STORIES_PART1: RawStory[] = [
       "aside": "bir kenara"
     }
   },
-                      {
+                        {
     id: 'classic_heidi_mountain',
     title: "Heidi - The Grandfather's House",
     author: 'Johanna Spyri',
@@ -11920,7 +11920,7 @@ export const STORIES_PART1: RawStory[] = [
       "care": "özen"
     }
   },
-                      {
+                        {
     id: 'classic_don_quixote_windmills',
     title: "Don Quixote - The Windmills",
     author: 'Miguel de Cervantes',
@@ -11988,7 +11988,7 @@ export const STORIES_PART1: RawStory[] = [
       "appears": "görünüyor"
     }
   },
-                      {
+                        {
     id: 'classic_odyssey_sirens',
     title: "The Odyssey - The Sirens' Song",
     author: 'Homer',
@@ -12051,7 +12051,7 @@ export const STORIES_PART1: RawStory[] = [
       "distant": "uzak"
     }
   },
-                      {
+                        {
     id: 'daily_market',
     title: "A Day at the Market",
     author: 'Antigravity',
@@ -12120,7 +12120,7 @@ export const STORIES_PART1: RawStory[] = [
       "thankful": "minnettar"
     }
   },
-                      {
+                        {
     id: 'daily_cafe',
     title: "Coffee and Conversation",
     author: 'Antigravity',
@@ -12190,7 +12190,7 @@ export const STORIES_PART1: RawStory[] = [
       "nap": "şekerleme (kısa uyku)"
     }
   },
-                      {
+                        {
     id: 'daily_taxi',
     title: "The Taxi Ride",
     author: 'Antigravity',
@@ -12257,7 +12257,7 @@ export const STORIES_PART1: RawStory[] = [
       "peaceful": "huzurlu"
     }
   },
-                      {
+                        {
     id: 'daily_hotel',
     title: "Checking In",
     author: 'Antigravity',
@@ -12329,7 +12329,7 @@ export const STORIES_PART1: RawStory[] = [
       "excellent": "mükemmel"
     }
   },
-                      {
+                        {
     id: 'daily_park',
     title: "Meeting in the Park",
     author: 'Antigravity',
@@ -12397,7 +12397,7 @@ export const STORIES_PART1: RawStory[] = [
       "joy": "sevinç"
     }
   },
-                      {
+                        {
     id: 'daily_library',
     title: "Finding a Book",
     author: 'Antigravity',
@@ -12464,7 +12464,7 @@ export const STORIES_PART1: RawStory[] = [
       "hobby": "hobi"
     }
   },
-                      {
+                        {
     id: 'daily_bus',
     title: "Missing the Bus",
     author: 'Antigravity',
@@ -12527,7 +12527,7 @@ export const STORIES_PART1: RawStory[] = [
       "travel": "seyahat etmek"
     }
   },
-                      {
+                        {
     id: 'daily_weather',
     title: "Planning a Picnic",
     author: 'Antigravity',
@@ -12591,7 +12591,7 @@ export const STORIES_PART1: RawStory[] = [
       "memories": "anılar"
     }
   },
-                      {
+                        {
     id: 'daily_pet',
     title: "Choosing a Pet",
     author: 'Antigravity',
@@ -12659,7 +12659,7 @@ export const STORIES_PART1: RawStory[] = [
       "peaceful": "huzurlu"
     }
   },
-                      {
+                        {
     id: 'daily_cooking',
     title: "Dinner Time",
     author: 'Antigravity',
@@ -12730,7 +12730,7 @@ export const STORIES_PART1: RawStory[] = [
       "finish": "bitirmek"
     }
   },
-                      {
+                        {
     id: 'daily_apartment',
     title: "Renting a Flat",
     author: 'Antigravity',
@@ -12797,7 +12797,7 @@ export const STORIES_PART1: RawStory[] = [
       "satisfied": "memnun"
     }
   },
-                      {
+                        {
     id: 'daily_airport',
     title: "Heathrow Arrival",
     author: 'Antigravity',
@@ -12861,7 +12861,7 @@ export const STORIES_PART1: RawStory[] = [
       "queue": "sıra"
     }
   },
-                      {
+                        {
     id: 'daily_doctor',
     title: "The Doctor's Visit",
     author: 'Antigravity',
@@ -12929,7 +12929,7 @@ export const STORIES_PART1: RawStory[] = [
       "grateful": "minnettar"
     }
   },
-                      {
+                        {
     id: 'daily_shopping',
     title: "Mall Shopping",
     author: 'Antigravity',
@@ -13001,7 +13001,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "macera"
     }
   },
-                      {
+                        {
     id: 'daily_interview',
     title: "The Job Interview",
     author: 'Antigravity',
@@ -13068,7 +13068,7 @@ export const STORIES_PART1: RawStory[] = [
       "secure": "güvende"
     }
   },
-                      {
+                        {
     id: 'daily_bank',
     title: "Opening an Account",
     author: 'Antigravity',
@@ -13137,7 +13137,7 @@ export const STORIES_PART1: RawStory[] = [
       "pin": "şifre"
     }
   },
-                      {
+                        {
     id: 'daily_dentist',
     title: "Toothache Trouble",
     author: 'Antigravity',
@@ -13206,7 +13206,7 @@ export const STORIES_PART1: RawStory[] = [
       "checkup": "kontrol"
     }
   },
-                      {
+                        {
     id: 'daily_train',
     title: "Ticket Office",
     author: 'Antigravity',
@@ -13270,7 +13270,7 @@ export const STORIES_PART1: RawStory[] = [
       "experience": "deneyim"
     }
   },
-                      {
+                        {
     id: 'daily_restaurant',
     title: "The Birthday Dinner",
     author: 'Antigravity',
@@ -13340,7 +13340,7 @@ export const STORIES_PART1: RawStory[] = [
       "refresh": "tazelenmek"
     }
   },
-                      {
+                        {
     id: 'daily_laundry',
     title: "Lost Sock",
     author: 'Antigravity',
@@ -13413,7 +13413,7 @@ export const STORIES_PART1: RawStory[] = [
       "stress": "stres"
     }
   },
-                {
+                  {
     id: 'horror_lost_tomb',
     title: "The Legend of the Lost Tomb",
     author: 'Mystery Author',
@@ -13482,7 +13482,7 @@ export const STORIES_PART1: RawStory[] = [
       "beating": "çırpınış"
     }
   },
-                {
+                  {
     id: 'horror_secret_passage',
     title: "The Secret of the Passage",
     author: 'Mystery Author',
@@ -13551,7 +13551,7 @@ export const STORIES_PART1: RawStory[] = [
       "beating": "çırpınış"
     }
   },
-              {
+                {
     id: 'scifi_time_machine',
     title: "The Time Machine",
     author: 'H. G. Wells',
@@ -13621,7 +13621,7 @@ export const STORIES_PART1: RawStory[] = [
       "humanity": "insanlık"
     }
   },
-              {
+                {
     id: 'scifi_journey_center_earth',
     title: "A Journey to the Centre of the Earth",
     author: 'Jules Verne',
@@ -13689,7 +13689,7 @@ export const STORIES_PART1: RawStory[] = [
       "exhausted": "bitkin"
     }
   },
-              {
+                {
     id: 'scifi_twenty_thousand_leagues',
     title: "Twenty Thousand Leagues Under the Sea",
     author: 'Jules Verne',
@@ -13759,7 +13759,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "macera"
     }
   },
-              {
+                {
     id: 'scifi_robie',
     title: "Robbie",
     author: 'Isaac Asimov',
@@ -14035,7 +14035,7 @@ export const STORIES_PART1: RawStory[] = [
       "deep": "derin"
     }
   },
-              {
+                {
     id: 'scifi_runaround',
     title: "Runaround",
     author: 'Isaac Asimov',
@@ -14280,7 +14280,7 @@ export const STORIES_PART1: RawStory[] = [
       "fly": "uçmak"
     }
   },
-              {
+                {
     id: 'scifi_star_beast',
     title: "The Star Beast",
     author: 'Robert A. Heinlein',
@@ -14349,7 +14349,7 @@ export const STORIES_PART1: RawStory[] = [
       "friendship": "arkadaşlık"
     }
   },
-              {
+                {
     id: 'scifi_lost_world',
     title: "The Lost World",
     author: 'Arthur Conan Doyle',
@@ -14418,7 +14418,7 @@ export const STORIES_PART1: RawStory[] = [
       "wonderful": "harika"
     }
   },
-              {
+                {
     id: 'scifi_from_earth_to_moon',
     title: "From the Earth to the Moon",
     author: 'Jules Verne',
@@ -14481,7 +14481,7 @@ export const STORIES_PART1: RawStory[] = [
       "win": "zafer"
     }
   },
-              {
+                {
     id: 'scifi_propeller_island',
     title: "Propeller Island",
     author: 'Jules Verne',
@@ -14549,7 +14549,7 @@ export const STORIES_PART1: RawStory[] = [
       "land": "kara"
     }
   },
-              {
+                {
     id: 'scifi_star_maker',
     title: "Star Maker",
     author: 'Olaf Stapledon',
@@ -14620,7 +14620,7 @@ export const STORIES_PART1: RawStory[] = [
       "plan": "plan"
     }
   },
-              {
+                {
     id: 'scifi_invisible_man',
     title: "The Invisible Man",
     author: 'H. G. Wells',
@@ -15014,7 +15014,7 @@ export const STORIES_PART1: RawStory[] = [
       "ideas": "fikirler"
     }
   },
-              {
+                {
     id: 'scifi_war_worlds',
     title: "The War of the Worlds",
     author: 'H. G. Wells',
@@ -15083,7 +15083,7 @@ export const STORIES_PART1: RawStory[] = [
       "care": "tedbir"
     }
   },
-              {
+                {
     id: 'scifi_frankenstein',
     title: "Frankenstein",
     author: 'Mary Shelley',
@@ -15154,7 +15154,7 @@ export const STORIES_PART1: RawStory[] = [
       "quiet": "sessizlik"
     }
   },
-              {
+                {
     id: 'scifi_island_dr_moreau',
     title: "The Island of Doctor Moreau",
     author: 'H. G. Wells',
@@ -15215,7 +15215,7 @@ export const STORIES_PART1: RawStory[] = [
       "dream": "rüya"
     }
   },
-              {
+                {
     id: 'scifi_first_men_moon',
     title: "The First Men in the Moon",
     author: 'H. G. Wells',
@@ -15506,106 +15506,106 @@ export const STORIES_PART1: RawStory[] = [
       "mysteries": "gizemler"
     }
   },
-              {
+                {
     id: 'scifi_around_moon',
     title: "Around the Moon",
     author: 'Jules Verne',
     level: 'A2',
     coverUrl: '/covers/scifi_around_moon.webp',
     en: [
-      "The large metal ship moved quietly through the dark space. Inside, three brave men sat and looked at the stars. They were Barbicane, Nicholl, and Michel Ardan. Their goal was to reach the Moon. The ship was very strong and made of metal. It felt like a small house inside. They had enough food and water for a long time. Michel Ardan was very happy and excited about this long trip. He looked out of the small window and saw the Earth becoming smaller and smaller behind them. The cold silence of space was all around them. They did not feel any weight because they were moving away from the gravity of the planet. Everything was very quiet and calm. They were the first travelers to go so far away from home. They were ready to see the mysterious face of the Moon for the very first time in history.",
-      "The men started to check the machines in the ship. They wanted to make sure that everything was working correctly. Barbicane was the leader of the group and he was very serious about their safety. Nicholl was an expert with tools and metal. He checked the walls of the ship carefully to see if there were any problems. Michel Ardan talked about his dreams and what he hoped to find on the Moon. They also had a small dog with them in the ship. The dog was sleeping peacefully on the floor. It was a strange trip because they were floating in the air. Sometimes they had to hold onto the walls to move around. They were moving very fast through the black night of space. Each minute brought them closer to their goal. They felt like explorers in a new and dangerous world.",
-      "The view outside the window changed slowly. The Moon began to look bigger and brighter than before. It was a beautiful sight in the dark sky. The men felt a lot of wonder as they looked at the deep holes and the grey rocks on the ground. They could not believe they were finally there. The ship continued to fly towards the orbit of the Moon. They planned to go around it to see the other side. This was a very dangerous plan but they were not afraid. They believed in their mission and their brave hearts. They watched the light of the Sun hit the Moon. It looked like a silver mountain in the distance. They were ready for the next part of their amazing trip. The silent world of the Moon was waiting for them to arrive and solve its oldest and greatest secrets.",
-      "The trip through the deep darkness of space continued for several days. Inside the ship, the three travelers watched the Moon carefully. It appeared larger every hour. They saw strange white spots on the ground. These spots were large mountains. Barbicane used his tools to study the distance. He checked their speed and direction many times. The ship moved like a bullet through the sky. There was no sound in space, only the soft hum of the internal lights. Michel Ardan painted pictures of the view in his mind. He enjoyed the strange feeling of floating. The dog, named Diana, walked on the ceiling and walls. The men laughed when they saw her playing. It was a new world for all of them. They were happy to be together on this great mission across the stars to the Moon.",
-      "Suddenly, a large object appeared near the ship. It was a heavy rock from space moving very fast. The men were worried because it could hit their metal house. Nicholl stood ready to change the direction of the ship. They watched the rock move past them like a flash of light. It missed them by a few meters. They felt lucky to be safe. Space was not empty like they thought before. There were many secrets hidden in the cold black space. Barbicane decided to be even more careful now. He turned on the strong external lights to see better. They looked at the dark deep holes with great interest. The Moon looked like a dead world, yet it was full of history. They continued to move closer, waiting for the moment to see the hidden side of the mysterious giant Moon.",
-      "The air inside the ship remained fresh thanks to the special machine. Ardan prepared a small meal for his friends. They ate with difficulty because everything wanted to float away from their plates. They talked about their homes on Earth. They missed the green trees and the blue oceans. However, they knew this trip was more important than anything else. They were writing a new page in human history. The Moon was now very close to them. They could see the lines on its face clearly. It felt like they were in a dream. They took notes and drew maps of the ground below. Every hour, the view became more impressive and beautiful. They were ready to enter the lunar path soon. The silent, grey ground of the Moon was calling them to explore its deepest and most old rocky secrets.",
-      "The travelers watched the ground with amazement as they finally passed the border of the Moon. They looked down at the dark, deep holes that covered the grey ground like old scars. These holes were huge and silent. Barbicane carefully studied the holes through his heavy glass. He noted that the Moon had no air and no signs of life. The silence outside was complete and frightening. Michel Ardan stood by the window and tried to draw the strange shapes he saw on the rocky ground. He saw mountains that stood like giants, reaching high into the black sky. The sunlight made the edges of these mountains shine like silver. Everything looked quiet and very cold. They felt small as they looked at the massive world below them. It was a place where nothing ever changed and time seemed to stop moving for many thousands of years.",
-      "Nicholl worked hard to keep their speed steady. He knew that the gravity of the Moon was a dangerous power. If they moved too close, they would fall onto the ground. If they moved too far, they would drift into the dark empty space forever. The ship flew smoothly over the lunar land. They passed over high flat areas that looked like frozen grey seas. There were many cracks in the ground that went deep into the heart of the Moon. Ardan suggested that long ago, there might have been fire inside this dead giant. The men discussed the history of the Moon while they watched the shadows grow longer. They used their tools to measure the depth of the wide holes below. The data they gathered was very important for science. They were the first humans to see these secret lands with their own eyes.",
-      "The most exciting part of the journey was looking at the hidden side of the Moon. Humans on Earth never see this side because it always stays away from them. Now, the three friends were the first to see the mysterious dark half. They saw that this side looked even more broken than the side they knew. It had more mountains and fewer flat spaces. There were huge, round walls that looked like old cities made of stone. The ground was wild and covered in sharp rocks. As the ship moved forward, they felt a strange pull from the gravity of the Moon. They realized that their path was changing because of the pull. They had to be very careful not to crash. The beauty of the land kept them focused. They knew that this adventure was the greatest thing humanity had ever done in the history of the world.",
-      "The travelers felt a sudden change in their movement as the Moon pulled them closer. The ship began to turn slowly in the dark space. Barbicane looked at the instruments with a worried face. He told his friends that they were caught in a new force. The gravity of the Moon was now pulling their ship towards the rocky ground. They needed to act quickly to avoid a crash on the ground. Michel Ardan stood silently, watching the grey mountains rise up towards them. The land changed from wide areas to tall, dangerous peaks. They were moving very fast over the silent world. The windows showed them that they were getting lower every second. The fear in the cabin was real, but they remained brave. They knew that their only chance was to use the rockets to change their path and find their way home again.",
-      "Nicholl checked the engine and the remaining fuel with steady hands. He calculated the exact moment to fire the small rockets under the ship. If they fired too early, they would move too far away. If they fired too late, the Moon would catch them forever. The air inside the cabin became heavy with tension as they waited for the signal. Barbicane watched the moon map on the table while counting the seconds in his head. Finally, the order came to light the fire. A bright light filled the space outside the windows. The ship shook hard as the rockets pushed them away from the Moon ground. They felt a strong pressure against their chests because of the fast movement. The ship turned away from the dangerous rocks, starting its long journey back through the black silence of deep space towards the distant blue Earth.",
-      "The danger was finally over as the ship moved into a stable path away from the Moon. The travelers could breathe easily again after the long struggle. They looked back through the small windows at the round silver world that they had explored. It seemed so far away now, like a lonely ghost in the dark night. Michel Ardan painted a picture of the Moon in his notebook to remember the trip. He talked about the beauty of the silence and the cold light of the stars. The three men shared a simple meal and felt proud of their work. They had reached the Moon and seen its hidden face. Now, they prepared for the final part of their flight. They felt tired but very happy. The Earth was still a tiny dot in the distance, waiting for their return from this great adventure into the unknown.",
-      "The vast distance between the Moon and the Earth felt like a long road through a dark woods. Inside the metal ship, the three travelers watched the stars. They were tired from their long journey, but they were happy. The Earth began to grow larger in the distance. It was a beautiful blue ball in the middle of the deep, black sky. Barbicane looked at the stars and made calculations. He checked the path of their ship many times to be sure of their direction. They wanted to return home safely to their families. The air in the cabin was cold, but the men had blankets to stay warm. Every day, they looked out of the window at the distant home planet. It was a small, bright light that gave them hope. They waited patiently for the end of their long, strange space travel.",
-      "The ship moved fast as it fell towards the Earth. The speed was dangerous, but the men were not afraid anymore. They knew that their mission was a success because they had seen the secrets of the Moon. Michel Ardan told funny stories to make his friends laugh. He talked about the green fields and the fresh air of the world they left behind. He dreamt of the warm sun and the songs of birds. Nicholl listened to him with a soft smile on his face. He kept the machines working well during the flight. The metal walls of the ship were strong. They kept the three friends safe from the cold space outside. They all hoped to land in the wide, blue ocean where a ship would be waiting to take them home to their loved ones soon.",
-      "Suddenly, the travelers saw a small ship waiting for them in the sea. It was the American navy. They were looking for the metal ball to arrive from the sky. The travelers shouted with joy when they saw the boats. They finally hit the water with a loud noise. The hit was strong, but the ship held together perfectly. People arrived quickly to help the three men. The door opened and fresh air filled the cabin. Barbicane, Ardan, and Nicholl came out to see the sunlight again. They were heroes of a great adventure. They stepped onto the deck of the boat and felt the movement of the waves. It was the best feeling after such a long time in the silence of space. Their amazing trip around the Moon was finally over, and they were finally safe at home."
+      "The large metal ship moved quietly through the dark space. Inside, three brave men sat and looked at the stars. They were Barbicane, Nicholl, and Michel Ardan. Their goal was to reach the Moon. The ship was very strong and made of metal. It felt like a small house inside. They had enough food and water for a long time. Michel Ardan was very happy and excited about this long trip. He looked out of the small window and saw the Earth becoming smaller and smaller behind them. The cold silence of space was all around them. They did not feel any weight because they were moving away from the gravity of the planet. Everything was very quiet and calm. They were the first travelers to go so far away from home. They were ready to see the strange face of the Moon for the very first time in history.",
+      "The men started to check the machines in the ship. They wanted to make sure that everything was working correctly. Barbicane was the leader of the group and he was very serious about their safety. Nicholl was very good with tools and metal. He checked the walls of the ship carefully to see if there were any problems. Michel Ardan talked about his dreams and what he hoped to find on the Moon. They also had a small dog with them in the ship. The dog was sleeping peacefully on the floor. It was a strange trip because they were floating in the air. Sometimes they had to hold onto the walls to move around. They were moving very fast through the black night of space. Each minute brought them closer to their goal. They felt like explorers in a new and dangerous world.",
+      "The view outside the window changed slowly. The Moon began to look bigger and brighter than before. It was a beautiful sight in the dark sky. The men felt very surprised as they looked at the deep holes and the grey rocks on the ground. They could not believe they were finally there. The ship continued to fly towards the orbit of the Moon. They planned to go around it to see the other side. This was a very dangerous plan but they were not afraid. They believed in their mission and their brave hearts. They watched the light of the Sun hit the Moon. It looked like a silver mountain in the distance. They were ready for the next part of their amazing trip. The silent world of the Moon was waiting for them to arrive and solve its oldest and greatest secrets.",
+      "The trip through the deep darkness of space continued for several days. Inside the ship, the three travelers watched the Moon carefully. It appeared larger every hour. They saw strange white spots on the ground. These spots were large mountains. Barbicane used his tools to study the distance. He checked their speed and direction many times. The ship moved like a bullet through the sky. There was no sound in space, only the soft hum of the inside lights. Michel Ardan painted pictures of the view in his mind. He enjoyed the strange feeling of floating. The dog, named Diana, walked on the top of the room and walls. The men laughed when they saw her playing. It was a new world for all of them. They were happy to be together on this great mission across the stars to the Moon.",
+      "Soon, a large rock appeared near the ship. It was a heavy rock from space moving very fast. The men were worried because it could hit their metal house. Nicholl stood ready to change the direction of the ship. They watched the rock move past them like a flash of light. It missed them by a few meters. They felt lucky to be safe. Space was not empty like they thought before. There were many secrets hidden in the cold black space. Barbicane decided to be even more careful now. He turned on the strong external lights to see better. They looked at the dark deep holes with great interest. The Moon looked like a dead world, yet it was full of history. They continued to move closer, waiting for the moment to see the hidden side of the strange giant Moon.",
+      "The air inside the ship remained fresh thanks to the special machine. Ardan prepared a small meal for his friends. They ate with difficulty because everything wanted to float away from their plates. They talked about their homes on Earth. They missed the green trees and the blue oceans. However, they knew this trip was more important than anything else. They were writing a new page in human history. The Moon was now very close to them. They could see the lines on its face clearly. It felt like they were in a dream. They took notes and drew maps of the ground below. Every hour, the view became more wonderful and beautiful. They were ready to enter the Moon's path soon. The silent, grey ground of the Moon was calling them to explore its deepest and most old rocky secrets.",
+      "The travelers watched the ground with surprise as they finally passed the border of the Moon. They looked down at the dark, deep holes that covered the grey ground like old scars. These holes were huge and silent. Barbicane carefully studied the holes through his heavy glass. He noted that the Moon had no air and no signs of life. The silence outside was complete and scary. Michel Ardan stood by the window and tried to draw the strange shapes he saw on the rocky ground. He saw mountains that stood like giants, reaching high into the black sky. The sunlight made the edges of these mountains shine like silver. Everything looked quiet and very cold. They felt small as they looked at the huge world below them. It was a place where nothing ever changed and time seemed to stop moving for many thousands of years.",
+      "Nicholl worked hard to keep their speed the same. He knew that the gravity of the Moon was a dangerous power. If they moved too close, they would fall onto the ground. If they moved too far, they would float into the dark empty space forever. The ship flew smoothly over the Moon land. They passed over high flat areas that looked like frozen grey seas. There were many cracks in the ground that went deep into the heart of the Moon. Ardan suggested that long ago, there might have been fire inside this dead giant. The men talked about the history of the Moon while they watched the shadows grow longer. They used their tools to check the depth of the wide holes below. The data they gathered was very important for science. They were the first humans to see these secret lands with their own eyes.",
+      "The most exciting part of the journey was looking at the hidden side of the Moon. Humans on Earth never see this side because it always stays away from them. Now, the three friends were the first to see the mysterious dark half. They saw that this side looked even more broken than the side they knew. It had more mountains and fewer flat spaces. There were huge, round walls that looked like old cities made of stone. The ground was wild and covered in sharp rocks. As the ship moved forward, they felt a strange pull from the gravity of the Moon. They saw that their path was changing because of the pull. They had to be very careful not to crash. The beauty of the land kept them looking closely. They knew that this adventure was the greatest thing humanity had ever done in the history of the world.",
+      "The travelers felt a quick change in their movement as the Moon pulled them closer. The ship began to turn slowly in the dark space. Barbicane looked at the machines with a worried face. He told his friends that they were caught in a new force. The gravity of the Moon was now pulling their ship towards the rocky ground. They needed to act quickly to stop a crash on the ground. Michel Ardan stood silently, watching the grey mountains rise up towards them. The land changed from wide areas to tall, dangerous mountains. They were moving very fast over the silent world. The windows showed them that they were getting lower every second. The fear in the cabin was real, but they remained brave. They knew that their only chance was to use the rockets to change their path and find their way home again.",
+      "Nicholl checked the engine and the remaining fuel with steady hands. He worked out the exact moment to fire the small rockets under the ship. If they fired too early, they would move too far away. If they fired too late, the Moon would catch them forever. The air inside the cabin became heavy with fear as they waited for the signal. Barbicane watched the moon map on the table while counting the seconds in his head. Finally, the order came to light the fire. A bright light filled the space outside the windows. The ship shook hard as the rockets pushed them away from the Moon ground. They felt a strong force against their chests because of the fast movement. The ship turned away from the dangerous rocks, starting its long journey back through the black silence of deep space towards the distant blue Earth.",
+      "The danger was finally over as the ship moved into a safe path away from the Moon. The travelers could breathe easily again after the long hard work. They looked back through the small windows at the round silver world that they had explored. It seemed so far away now, like a lonely ghost in the dark night. Michel Ardan painted a picture of the Moon in his notebook to remember the trip. He talked about the beauty of the silence and the cold light of the stars. The three men shared a simple meal and felt proud of their work. They had reached the Moon and seen its hidden face. Now, they prepared for the final part of their flight. They felt tired but very happy. The Earth was still a tiny dot in the distance, waiting for their return from this great adventure into the unknown.",
+      "The great distance between the Moon and the Earth felt like a long road through a dark woods. Inside the metal ship, the three travelers watched the stars. They were tired from their long journey, but they were happy. The Earth began to grow larger in the distance. It was a beautiful blue ball in the middle of the deep, black sky. Barbicane looked at the stars and made plans. He checked the path of their ship many times to be sure of their direction. They wanted to return home safely to their families. The air in the cabin was cold, but the men had blankets to stay warm. Every day, they looked out of the window at the distant home planet. It was a small, bright light that gave them hope. They waited quietly for the end of their long, strange space travel.",
+      "The ship moved fast as it fell towards the Earth. The speed was dangerous, but the men were not afraid anymore. They knew that their mission was a success because they had seen the secrets of the Moon. Michel Ardan told funny stories to make his friends laugh. He talked about the green fields and the fresh air of the world they left behind. He thought of the warm sun and the songs of birds. Nicholl listened to him with a soft smile on his face. He kept the machines working well during the flight. The metal walls of the ship were strong. They kept the three friends safe from the cold space outside. They all hoped to land in the wide, blue sea where a ship would be waiting to take them home to their loved ones soon.",
+      "Soon, the travelers saw a small ship waiting for them in the sea. It was the American ships. They were looking for the metal ball to arrive from the sky. The travelers shouted with joy when they saw the boats. They finally hit the water with a loud noise. The hit was strong, but the ship held together perfectly. People arrived quickly to help the three men. The door opened and fresh air filled the cabin. Barbicane, Ardan, and Nicholl came out to see the sunlight again. They were heroes of a great adventure. They stepped onto the deck of the boat and felt the movement of the waves. It was the best feeling after such a long time in the silence of space. Their amazing trip around the Moon was finally over, and they were finally safe at home."
     ],
     tr: [
-      "Büyük metal gemi, karanlık uzayda sessizce ilerliyordu. İçeride üç cesur adam oturmuş yıldızlara bakıyordu. Onlar Barbicane, Nicholl ve Michel Ardan idi. Hedefleri Ay'a ulaşmaktı. Gemi çok güçlüydü ve metalden yapılmıştı. İçerisi küçük bir ev gibi hissettiriyordu. Uzun bir süre için yeterli yiyecek ve suları vardı. Michel Ardan bu uzun yolculuk hakkında çok mutlu ve heyecanlıydı. Küçük pencereden dışarı baktı ve Dünya'nın arkalarında giderek küçüldüğünü gördü. Uzayın soğuk sessizliği her yanlarını sarmıştı. Gezegenin yerçekiminden uzaklaştıkları için herhangi bir ağırlık hissetmiyorlardı. Her şey çok sessiz ve sakindi. Evden bu kadar uzaklaşan ilk gezginler onlardı. Tarihte ilk kez Ay'ın gizemli yüzünü görmeye hazırlandılar.",
-      "Adamlar gemideki makineleri kontrol etmeye başladılar. Her şeyin düzgün çalıştığından emin olmak istiyorlardı. Barbicane grubun lideriydi ve güvenlikleri konusunda çok ciddiydi. Nicholl aletler ve metal konusunda uzmandı. Sorun olup olmadığını görmek için geminin duvarlarını dikkatlice kontrol etti. Michel Ardan hayallerinden ve Ay'da ne bulmayı umduğundan bahsetti. Gemide yanlarında küçük bir köpek de vardı. Köpek yerde huzur içinde uyuyordu. Havada süzüldükleri için garip bir yolculuktu. Bazen hareket etmek için duvarlara tutunmaları gerekiyordu. Uzayın kara gecesinde çok hızlı ilerliyorlardı. Her dakika onları hedeflerine yaklaştırıyordu. Yeni ve tehlikeli bir dünyadaki kaşifler gibi hissediyorlardı.",
-      "Pencerenin dışındaki manzara yavaşça değişti. Ay, eskisinden daha büyük ve daha parlak görünmeye başladı. Karanlık gökyüzünde çok güzel bir görüntüydü. Adamlar derin deliklere ve yüzeydeki gri kayalara bakarken büyük bir hayranlık duydular. Nihayet orada olduklarına inanamıyorlardı. Gemi Ay'ın yörüngesine doğru uçmaya devam etti. Diğer tarafı görmek için etrafından dolaşmayı planladılar. Bu çok tehlikeli bir plandı ama korkmuyorlardı. Görevlerine ve cesur yüreklerine inanıyorlardı. Güneş ışığının Ay'a vuruşunu izlediler. Uzaktan gümüş bir dağ gibi görünüyordu. Şaşırtıcı yolculuklarının bir sonraki kısmına hazırlandılar. Ay'ın sessiz dünyası, varışlarını ve en eski, en büyük sırlarını çözmelerini bekliyordu.",
-      "Uzayın derin karanlığındaki yolculuk birkaç gün boyunca devam etti. Geminin içindeki üç gezgin Ay'ı dikkatle izledi. Ay her saat daha da büyüyordu. Yüzeyde garip beyaz noktalar gördüler. Bu noktalar büyük dağlardı. Barbicane mesafeyi ölçmek için aletlerini kullandı. Hızlarını ve yönlerini birçok kez kontrol etti. Gemi, gökyüzünde bir mermi gibi hareket ediyordu. Uzayda hiçbir ses yoktu, sadece iç ışıkların hafif uğultusu duyuluyordu. Michel Ardan zihnindeki manzaranın resimlerini çizdi. Süzülme hissinin tadını çıkarıyordu. Diana adındaki köpek tavanda ve duvarlarda yürüyordu. Adamlar onu oynarken görünce güldüler. Hepsi için bu yeni bir dünyaydı. Yıldızların ötesinde, Ay'a giden bu büyük görevde birlikte oldukları için mutluydular.",
-      "Aniden geminin yakınında büyük bir cisim belirdi. Çok hızlı hareket eden ağır bir uzay taşıydı. Metal evlerine çarpabileceği için adamlar endişelendi. Nicholl geminin yönünü değiştirmek için hazır bekledi. Taşın bir ışık hüzmesi gibi yanlarından geçişini izlediler. Birkaç metre ile onları ıskaladı. Güvende oldukları için şanslı hissettiler. Uzay, daha önce düşündükleri gibi boş değildi. Soğuk siyah boşlukta saklı birçok sır vardı. Barbicane artık daha da dikkatli olmaya karar verdi. Daha iyi görmek için güçlü dış ışıkları açtı. Karanlık derin deliklere büyük bir ilgiyle baktılar. Ay ölü bir dünya gibi görünüyordu ama tarihle doluydu. Gizemli dev Ay'ın görünmeyen tarafını görme anını bekleyerek yaklaşmaya devam ettiler.",
-      "Geminin içindeki hava, özel makine sayesinde taze kaldı. Ardan arkadaşları için küçük bir yemek hazırladı. Her şey tabaklarından uçup gitmek istediği için yemek yerken zorlandılar. Dünyadaki evlerinden bahsettiler. Yeşil ağaçları ve mavi okyanusları özlediler. Yine de bu yolculuğun başka her şeyden daha önemli olduğunu biliyorlardı. İnsanlık tarihine yeni bir sayfa yazıyorlardı. Ay artık onlara çok yakındı. Yüzündeki çizgileri net bir şekilde görebiliyorlardı. Sanki bir rüyanın içindeymiş gibi hissediyorlardı. Notlar aldılar ve aşağıdaki zeminin haritalarını çizdiler. Her saat manzara daha etkileyici ve güzel hale geliyordu. Yakında Ay yoluna girmeye hazırdılar. Ay'ın sessiz ve gri zemini, onları en derin ve en eski kayalık sırlarını keşfetmeleri için çağırıyordu.",
-      "Yolcular, nihayet Ay'ın sınırını geçerken hayranlıkla zemini izlediler. Eski yaralar gibi gri zemini kaplayan karanlık, derin deliklere baktılar. Bu delikler devasa ve sessizdi. Barbicane, ağır camıyla delikleri dikkatle inceledi. Ay'ın havası olmadığını ve yaşam belirtisi taşımadığını kaydetti. Dışarıdaki sessizlik tam ve korkutucuydu. Michel Ardan pencerenin yanında durdu ve kayalık zeminde gördüğü tuhaf şekilleri çizmeye çalıştı. Siyah gökyüzüne doğru yükselen devler gibi duran dağlar gördü. Güneş ışığı, bu dağların kenarlarını gümüş gibi parlatıyordu. Her şey sessiz ve çok soğuk görünüyordu. Altlarındaki devasa dünyaya bakarken kendilerini küçük hissettiler. Burası hiçbir şeyin değişmediği ve zamanın binlerce yıldır durmuş gibi göründüğü bir yerdi.",
-      "Nicholl hızlarını sabit tutmak için çok çalıştı. Ay'ın yerçekiminin tehlikeli bir güç olduğunu biliyordu. Çok yaklaşırlarsa zemine düşerlerdi. Çok uzaklaşırlarsa sonsuza dek karanlık boşluğa sürüklenirlerdi. Gemi, ay manzarasının üzerinde sorunsuz bir şekilde uçtu. Donmuş gri denizlere benzeyen yüksek düz alanların üzerinden geçtiler. Zeminde Ay'ın kalbine kadar inen birçok çatlak vardı. Ardan, uzun zaman önce bu ölü devin içinde ateş olabileceğini öne sürdü. Gölgelerin uzadığını izlerken Ay'ın tarihini tartıştılar. Aşağıdaki geniş deliklerin derinliğini ölçmek için araçlarını kullandılar. Topladıkları veriler bilim için çok önemliydi. Bu gizli toprakları kendi gözleriyle gören ilk insanlardı.",
-      "Yolculuğun en heyecan verici kısmı Ay'ın gizli tarafına bakmaktaydı. Dünya'daki insanlar bu tarafı asla göremezler çünkü her zaman onlardan uzak durur. Şimdi, üç arkadaş gizemli karanlık yarımküreye tanık olan ilk kişilerdi. Bu tarafın, bildikleri taraftan daha da parçalanmış göründüğünü fark ettiler. Daha fazla dağ ve daha az düz alan vardı. Taştan yapılmış eski şehirlere benzeyen devasa, yuvarlak duvarlar mevcuttu. Zemin vahşiydi ve keskin kayalarla kaplıydı. Gemi ilerledikçe Ay'ın yerçekiminden gelen tuhaf bir çekim hissettiler. Bu çekim nedeniyle yollarının değiştiğini anladılar. Çarpmamak için çok dikkatli olmaları gerekiyordu. Manzaranın güzelliği odaklanmalarını sağladı. Bu maceranın insanlığın dünya tarihindeki en büyük şey olduğunu biliyorlardı.",
-      "Ay onları daha yakına çektiğinde yolcular hareketlerinde ani bir değişiklik hissettiler. Gemi karanlık uzayda yavaşça dönmeye başladı. Barbicane endişeli bir yüzle cihazlara baktı. Arkadaşlarına yeni bir güç etkisi altında olduklarını söyledi. Ay'ın yerçekimi artık gemilerini kayalık zemine doğru çekiyordu. Zemine çarpmamak için hızlı hareket etmeleri gerekiyordu. Michel Ardan sessizce durup gri dağların kendilerine doğru yükselişini izledi. Manzara geniş alanlardan yüksek, tehlikeli zirvelere dönüştü. Sessiz dünyanın üzerinde çok hızlı ilerliyorlardı. Pencereler her saniye daha da alçaldıklarını gösteriyordu. Kabindeki korku gerçektendi ama cesur kaldılar. Tek şanslarının rotalarını değiştirmek ve eve dönüş yollarını bulmak için roketleri kullanmak olduğunu biliyorlardı.",
-      "Nicholl motoru ve kalan yakıtı sabit ellerle kontrol etti. Geminin altındaki küçük roketleri ateşlemek için gereken tam anı hesapladı. Çok erken ateşlerlerse çok uzağa giderlerdi. Çok geç ateşlerlerse Ay onları sonsuza kadar yakalardı. İşaret beklerken kabinin içindeki hava gerginlikle ağırlaştı. Barbicane kafasında saniyeleri sayarken masadaki ay haritasını izledi. Sonunda ateşi yakma emri geldi. Pencerelerin dışındaki boşluğu parlak bir ışık doldurdu. Roketler onları Ay zemininden uzaklaştırırken gemi şiddetle sarsıldı. Hızlı hareket yüzünden göğüslerinde güçlü bir baskı hissettiler. Gemi tehlikeli kayalardan uzaklaştı ve siyah derin uzay sessizliğinden uzak mavi Dünya'ya doğru uzun yolculuğuna başladı.",
-      "Gemi Ay'dan uzakta sabit bir yola girdiğinde tehlike nihayet sona ermişti. Uzun mücadeleden sonra yolcular tekrar rahatça nefes alabildiler. Küçük pencerelerden geriye, keşfettikleri yuvarlak gümüş dünyaya baktılar. Artık çok uzakta, karanlık gecede yalnız bir hayalet gibi görünüyordu. Michel Ardan yolculuğu hatırlamak için not defterine Ay'ın resmini çizdi. Sessizliğin güzelliğinden ve yıldızların soğuk ışığından bahsetti. Üç adam basit bir yemek paylaştı ve işleriyle gurur duydular. Ay'a ulaşmış ve onun gizli yüzünü görmüşlerdi. Şimdi uçuşlarının son kısmı için hazırlandılar. Yorgun ama çok mutlu hissediyorlardı. Dünya uzaktan hâlâ küçük bir noktaydı ve bilinmeyene yapılan bu büyük maceradan dönüşlerini bekliyordu.",
-      "Ay ile Dünya arasındaki büyük mesafe, karanlık bir ormandaki uzun bir yol gibi hissettiriyordu. Metal geminin içinde üç gezgin yıldızları izledi. Uzun yolculuklarından yorgundular ama mutluydular. Dünya uzaktan daha büyük görünmeye başladı. Derin, karanlık gökyüzünün ortasında güzel, mavi bir toptu. Barbicane yıldızlara baktı ve hesaplamalar yaptı. Yönlerinden emin olmak için gemilerinin rotasını birçok kez kontrol etti. Ailelerine güvenli bir şekilde eve dönmek istediler. Kabindeki hava soğuktu ama adamların ısınmak için battaniyeleri vardı. Her gün pencereden uzak gezegene baktılar. Onlara umut veren küçük, parlak bir ışıktı. Uzun ve tuhaf uzay yolculuklarının sonu için sabırla beklediler.",
-      "Gemi Dünya'ya doğru düşerken hızla ilerledi. Hız tehlikeliydi ama adamlar artık korkmuyordu. Ay'ın sırlarını gördükleri için görevlerinin başarılı olduğunu biliyorlardı. Michel Ardan arkadaşlarını güldürmek için komik hikayeler anlattı. Geride bıraktıkları dünyanın yeşil tarlalarından ve temiz havasından bahsetti. Sıcak güneşi ve kuşların şarkılarını hayal etti. Nicholl onu yüzünde hafif bir gülümsemeyle dinledi. Uçuş sırasında makinelerin iyi çalışmasını sağladı. Geminin metal duvarları güçlüydü. Üç arkadaşı dışarıdaki soğuk uzaydan korudular. Hepsi, onları yakında sevdiklerine evlerine götürmek için bekleyecek olan geniş, mavi okyanusa inmeyi umuyordu.",
-      "Aniden, gezginler denizde onları bekleyen küçük bir gemi gördüler. Bu Amerikan donanmasıydı. Gökyüzünden gelecek metal topu arıyorlardı. Gezginler tekneleri gördüklerinde neşeyle bağırdılar. Sonunda suya çarptılar. Çarpma güçlüydü ama gemi mükemmel bir şekilde bir arada kaldı. Üç adama yardım etmek için insanlar hızla geldi. Kapı açıldı ve kabini temiz hava doldurdu. Barbicane, Ardan ve Nicholl güneş ışığını tekrar görmek için dışarı çıktılar. Büyük bir maceranın kahramanlarıydılar. Teknenin güvertesine adım attılar ve dalgaların hareketini hissettiler. Uzayın sessizliğinde geçen bu kadar uzun bir süreden sonra en iyi histi. Ay'ın etrafındaki inanılmaz gezileri nihayet bitti ve sonunda evlerinde güvendeydiler."
+      "Büyük metal gemi, karanlık uzayda sessizce ilerliyordu. İçeride üç cesur adam oturmuş yıldızlara bakıyordu. Onlar Barbicane, Nicholl ve Michel Ardan idi. Hedefleri Ay'a ulaşmaktı. Gemi çok güçlüydü ve metalden yapılmıştı. İçerisi küçük bir ev gibi hissettiriyordu. Uzun bir süre için yeterli yiyecek ve suları vardı. Michel Ardan bu uzun yolculuk hakkında çok mutlu ve heyecanlıydı. Küçük pencereden dışarı baktı ve Dünya'nın arkalarında giderek küçüldüğünü gördü. Uzayın soğuk sessizliği her yanlarını sarmıştı. Gezegenin yerçekiminden uzaklaştıkları için herhangi bir ağırlık hissetmiyorlardı. Her şey çok sessiz ve sakindi. Evden bu kadar uzaklaşan ilk gezginler onlardı. Tarihte ilk kez Ay'ın garip yüzünü görmeye hazırlandılar.",
+      "Adamlar gemideki makineleri kontrol etmeye başladılar. Her şeyin düzgün çalıştığından emin olmak istiyorlardı. Barbicane grubun lideriydi ve güvenlikleri konusunda çok ciddiydi. Nicholl aletler ve metal konusunda çok iyiydi. Sorun olup olmadığını görmek için geminin duvarlarını dikkatlice kontrol etti. Michel Ardan hayallerinden ve Ay'da ne bulmayı umduğundan bahsetti. Gemide yanlarında küçük bir köpek de vardı. Köpek yerde huzur içinde uyuyordu. Havada süzüldükleri için garip bir yolculuktu. Bazen hareket etmek için duvarlara tutunmaları gerekiyordu. Uzayın kara gecesinde çok hızlı ilerliyorlardı. Her dakika onları hedeflerine yaklaştırıyordu. Yeni ve tehlikeli bir dünyadaki kaşifler gibi hissediyorlardı.",
+      "Pencerenin dışındaki manzara yavaşça değişti. Ay, eskisinden daha büyük ve daha parlak görünmeye başladı. Karanlık gökyüzünde çok güzel bir görüntüydü. Adamlar derin deliklere ve yerdeki gri kayalara bakarken çok şaşırdılar. Nihayet orada olduklarına inanamıyorlardı. Gemi Ay'ın yörüngesine doğru uçmaya devam etti. Diğer tarafı görmek için etrafından dolaşmayı planladılar. Bu çok tehlikeli bir plandı ama korkmuyorlardı. Görevlerine ve cesur yüreklerine inanıyorlardı. Güneş ışığının Ay'a vuruşunu izlediler. Uzaktan gümüş bir dağ gibi görünüyordu. Şaşırtıcı yolculuklarının bir sonraki kısmına hazırlandılar. Ay'ın sessiz dünyası, varışlarını ve en eski, en büyük sırlarını çözmelerini bekliyordu.",
+      "Uzayın derin karanlığındaki yolculuk birkaç gün boyunca devam etti. Geminin içindeki üç gezgin Ay'ı dikkatle izledi. Ay her saat daha da büyüyordu. Yüzeyde garip beyaz noktalar gördüler. Bu noktalar büyük dağlardı. Barbicane mesafeyi ölçmek için aletlerini kullandı. Hızlarını ve yönlerini birçok kez kontrol etti. Gemi, gökyüzünde bir mermi gibi hareket ediyordu. Uzayda hiçbir ses yoktu, sadece içerideki ışıkların hafif uğultusu duyuluyordu. Michel Ardan zihnindeki manzaranın resimlerini çizdi. Süzülme hissinin tadını çıkarıyordu. Diana adındaki köpek odanın tavanında ve duvarlarda yürüyordu. Adamlar onu oynarken görünce güldüler. Hepsi için bu yeni bir dünyaydı. Yıldızların ötesinde, Ay'a giden bu büyük görevde birlikte oldukları için mutluydular.",
+      "Çok geçmeden, geminin yakınında büyük bir kaya belirdi. Çok hızlı hareket eden ağır bir uzay taşıydı. Metal evlerine çarpabileceği için adamlar endişelendi. Nicholl geminin yönünü değiştirmek için hazır bekledi. Taşın bir ışık hüzmesi gibi yanlarından geçişini izlediler. Birkaç metre ile onları ıskaladı. Güvende oldukları için şanslı hissettiler. Uzay, daha önce düşündükleri gibi boş değildi. Soğuk siyah boşlukta saklı birçok sır vardı. Barbicane artık daha da dikkatli olmaya karar verdi. Daha iyi görmek için güçlü dış ışıkları açtı. Karanlık derin deliklere büyük bir ilgiyle baktılar. Ay ölü bir dünya gibi görünüyordu ama tarihle doluydu. Garip dev Ay'ın görünmeyen tarafını görme anını bekleyerek yaklaşmaya devam ettiler.",
+      "Geminin içindeki hava, özel makine sayesinde taze kaldı. Ardan arkadaşları için küçük bir yemek hazırladı. Her şey tabaklarından uçup gitmek istediği için yemek yerken zorlandılar. Dünyadaki evlerinden bahsettiler. Yeşil ağaçları ve mavi okyanusları özlediler. Yine de bu yolculuğun başka her şeyden daha önemli olduğunu biliyorlardı. İnsanlık tarihine yeni bir sayfa yazıyorlardı. Ay artık onlara çok yakındı. Yüzündeki çizgileri net bir şekilde görebiliyorlardı. Sanki bir rüyanın içindeymiş gibi hissediyorlardı. Notlar aldılar ve aşağıdaki zeminin haritalarını çizdiler. Her saat manzara daha harika ve güzel hale geliyordu. Yakında Ay'ın yoluna girmeye hazırdılar. Ay'ın sessiz ve gri zemini, onları en derin ve en eski kayalık sırlarını keşfetmeleri için çağırıyordu.",
+      "Yolcular, nihayet Ay'ın sınırını geçerken şaşkınlıkla zemini izlediler. Eski yaralar gibi gri zemini kaplayan karanlık, derin deliklere baktılar. Bu delikler devasa ve sessizdi. Barbicane, ağır camıyla delikleri dikkatle inceledi. Ay'ın havası olmadığını ve yaşam belirtisi taşımadığını kaydetti. Dışarıdaki sessizlik tam ve korkunçtu. Michel Ardan pencerenin yanında durdu ve kayalık zeminde gördüğü tuhaf şekilleri çizmeye çalıştı. Siyah gökyüzüne doğru yükselen devler gibi duran dağlar gördü. Güneş ışığı, bu dağların kenarlarını gümüş gibi parlatıyordu. Her şey sessiz ve çok soğuk görünüyordu. Altlarındaki kocaman dünyaya bakarken kendilerini küçük hissettiler. Burası hiçbir şeyin değişmediği ve zamanın binlerce yıldır durmuş gibi göründüğü bir yerdi.",
+      "Nicholl hızlarını aynı tutmak için çok çalıştı. Ay'ın yerçekiminin tehlikeli bir güç olduğunu biliyorlardı. Çok yaklaşırlarsa zemine düşerlerdi. Çok uzaklaşırlarsa sonsuza dek karanlık boşlukta süzülürlerdi. Gemi, Ay topraklarının üzerinde sorunsuz bir şekilde uçtu. Donmuş gri denizlere benzeyen yüksek düz alanların üzerinden geçtiler. Zeminde Ay'ın kalbine kadar inen birçok çatlak vardı. Ardan, uzun zaman önce bu ölü devin içinde ateş olabileceğini öne sürdü. Gölgelerin uzadığını izlerken Ay'ın tarihi hakkında konuştular. Aşağıdaki geniş deliklerin derinliğini kontrol etmek için araçlarını kullandılar. Topladıkları veriler bilim için çok önemliydi. Bu gizli toprakları kendi gözleriyle gören ilk insanlardı.",
+      "Yolculuğun en heyecan verici kısmı Ay'ın gizli tarafına bakmaktaydı. Dünya'daki insanlar bu tarafı asla göremezler çünkü her zaman onlardan uzak durur. Şimdi, üç arkadaş gizemli karanlık yarımküreye tanık olan ilk kişilerdi. Bu tarafın, bildikleri taraftan daha da parçalanmış göründüğünü gördüler. Daha fazla dağ ve daha az düz alan vardı. Taştan yapılmış eski şehirlere benzeyen devasa, yuvarlak duvarlar mevcuttu. Zemin vahşiydi ve keskin kayalarla kaplıydı. Gemi ilerledikçe Ay'ın yerçekiminden gelen tuhaf bir çekim hissettiler. Bu çekim nedeniyle yollarının değiştiğini gördüler. Çarpmamak için çok dikkatli olmaları gerekiyordu. Manzaranın güzelliği yakından bakmalarını sağladı. Bu maceranın insanlığın dünya tarihindeki en büyük şey olduğunu biliyorlardı.",
+      "Ay onları daha yakına çektiğinde yolcular hareketlerinde hızlı bir değişiklik hissettiler. Gemi karanlık uzayda yavaşça dönmeye başladı. Barbicane endişeli bir yüzle makinelere baktı. Arkadaşlarına yeni bir güç etkisi altında olduklarını söyledi. Ay'ın yerçekimi artık gemilerini kayalık zemine doğru çekiyordu. Zemine çarpışmayı durdurmak için hızlı hareket etmeleri gerekiyordu. Michel Ardan sessizce durup gri dağların kendilerine doğru yükselişini izledi. Manzaranın yapısı geniş alanlardan yüksek, tehlikeli dağlara dönüştü. Sessiz dünyanın üzerinde çok hızlı ilerliyorlardı. Pencereler her saniye daha da alçaldıklarını gösteriyordu. Kabindeki korku gerçektendi ama cesur kaldılar. Tek şanslarının rotalarını değiştirmek ve eve dönüş yollarını bulmak için roketleri kullanmak olduğunu biliyorlardı.",
+      "Nicholl motoru ve kalan yakıtı sabit ellerle kontrol etti. Geminin altındaki küçük roketleri ateşlemek için gereken tam anı hesaplayıp buldu. Çok erken ateşlerlerse çok uzağa giderlerdi. Çok geç ateşlerlerse Ay onları sonsuza kadar yakalardı. İşaret beklerken kabinin içindeki hava korkuyla ağırlaştı. Barbicane kafasında saniyeleri sayarken masadaki ay haritasını izledi. Sonunda ateşi yakma emri geldi. Pencerelerin dışındaki boşluğu parlak bir ışık doldurdu. Roketler onları Ay zemininden uzaklaştırırken gemi şiddetle sarsıldı. Hızlı hareket yüzünden göğüslerinde güçlü bir güç hissettiler. Gemi tehlikeli kayalardan uzaklaştı ve siyah derin uzay sessizliğinden uzak mavi Dünya'ya doğru uzun yolculuğuna başladı.",
+      "Gemi Ay'dan uzakta güvenli bir yola girdiğinde tehlike nihayet sona ermişti. Uzun zor saatlerden sonra yolcular tekrar rahatça nefes alabildiler. Küçük pencerelerden geriye, keşfettikleri yuvarlak gümüş dünyaya baktılar. Artık çok uzakta, karanlık gecede yalnız bir hayalet gibi görünüyordu. Michel Ardan yolculuğu hatırlamak için not defterine Ay'ın resmini çizdi. Sessizliğin güzelliğinden ve yıldızların soğuk ışığından bahsetti. Üç adam basit bir yemek paylaştı ve işleriyle gurur duydular. Ay'a ulaşmış ve onun gizli yüzünü görmüşlerdi. Şimdi uçuşlarının son kısmı için hazırlandılar. Yorgun ama çok mutlu hissediyorlardı. Dünya uzaktan hâlâ küçük bir noktaydı ve bilinmeyene yapılan bu büyük maceradan dönüşlerini bekliyordu.",
+      "Ay ile Dünya arasındaki büyük mesafe, karanlık bir ormandaki uzun bir yol gibi hissettiriyordu. Metal geminin içinde üç gezgin yıldızları izledi. Uzun yolculuklarından yorgundular ama mutluydular. Dünya uzaktan daha büyük görünmeye başladı. Derin, karanlık gökyüzünün ortasında güzel, mavi bir toptu. Barbicane yıldızlara baktı ve planlar yaptı. Yönlerinden emin olmak için gemilerinin rotasını birçok kez kontrol etti. Ailelerine güvenli bir şekilde eve dönmek istediler. Kabindeki hava soğuktu ama adamların ısınmak için battaniyeleri vardı. Her gün pencereden uzak gezegene baktılar. Onlara umut veren küçük, parlak bir ışıktı. Uzun ve tuhaf uzay yolculuklarının sonu için sessizce beklediler.",
+      "Gemi Dünya'ya doğru düşerken hızla ilerledi. Hız tehlikeliydi ama adamlar artık korkmuyordu. Ay'ın sırlarını gördükleri için görevlerinin başarılı olduğunu biliyorlardı. Michel Ardan arkadaşlarını güldürmek için komik hikayeler anlattı. Geride bıraktıkları dünyanın yeşil tarlalarından ve temiz havasından bahsetti. Sıcak güneşi ve kuşların şarkılarını düşündü. Nicholl onu yüzünde hafif bir gülümsemeyle dinledi. Uçuş sırasında makinelerin iyi çalışmasını sağladı. Geminin metal duvarları güçlüydü. Üç arkadaşı dışarıdaki soğuk uzaydan korudular. Hepsi, onları yakında sevdiklerine evlerine götürmek için bekleyecek olan geniş, mavi denize inmeyi umuyordu.",
+      "Çok geçmeden, gezginler denizde onları bekleyen küçük bir gemi gördüler. Bu Amerikan gemileriydi. Gökyüzünden gelecek metal topu arıyorlardı. Gezginler tekneleri gördüklerinde neşeyle bağırdılar. Sonunda suya çarptılar. Çarpma güçlüydü ama gemi mükemmel bir şekilde bir arada kaldı. Üç adama yardım etmek için insanlar hızla geldi. Kapı açıldı ve kabini temiz hava doldurdu. Barbicane, Ardan ve Nicholl güneş ışığını tekrar görmek için dışarı çıktılar. Büyük bir maceranın kahramanlarıydılar. Teknenin güvertesine adım attılar ve dalgaların hareketini hissettiler. Uzayın sessizliğinde geçen bu kadar uzun bir süreden sonra en iyi histi. Ay'ın etrafındaki inanılmaz gezileri nihayet bitti ve sonunda evlerinde güvendeydiler."
     ],
     words: {
       "space": "uzay",
       "gravity": "yerçekimi",
       "journey": "yolculuk",
-      "crater": "derin delik",
+      "hole": "delik",
       "orbit": "yörünge",
-      "surface": "zemin",
-      "meteorite": "uzay taşı",
-      "satellite": "uydu",
-      "ancient": "eski",
-      "atmosphere": "hava",
-      "landscape": "arazi",
+      "ground": "zemin",
+      "rock": "kaya",
+      "ship": "gemi",
+      "metal": "metal",
+      "air": "hava",
+      "land": "toprak",
       "force": "güç",
-      "peak": "zirve",
+      "mountain": "dağ",
       "fuel": "yakıt",
-      "tension": "gerginlik",
-      "stable": "sabit",
+      "fear": "korku",
+      "safe": "güvenli",
       "distance": "mesafe",
       "direction": "yön",
       "mission": "görev",
-      "ocean": "okyanus",
+      "sea": "deniz",
       "adventure": "macera"
     }
   },
-              {
+                {
     id: 'scifi_youth',
     title: "Youth",
     author: 'Isaac Asimov',
     level: 'A2',
     coverUrl: '/covers/scifi_youth.webp',
     en: [
-      "Slim sat alone in the large, quiet garden of his house. The sun was hot, but the tall green trees kept the ground cool and dark. He was a small boy with an interested mind and a quick way of thinking. Near him, a strange metal thing lay deep in the soft grass. It was not like the machines his father owned, and it did not look like any toy he had ever played with before. It was round, smooth, and very cold to the touch. Slim felt his heart beat fast. He knew that his father, a famous scientist, often brought secret things home to study. This object felt different, however. It made a low sound that he could feel in his body. Slim looked around to make sure he was alone, then he reached out to touch the strange, shiny surface once more.",
-      "Quickly, he heard a sound in the bushes nearby. Red appeared, walking slowly toward him. Red was a clever boy, a bit older than Slim, and he was always looking for adventure. When Red saw the metal object, his eyes opened wide with excitement. He knelt down beside Slim and leaned closer to the strange device. The two boys whispered, trying to understand what they had found. They realized it was a spaceship, but it was much smaller than the ones they saw in books or on the screens. It looked like a tiny metal shell from another world. They knew that their parents would not allow them to play with it, but the desire to touch it was too strong. They wanted to see if anyone was inside this silent, metal box. They decided to hide it safely away from the eyes of the adults.",
+      "Slim sat alone in the large, quiet garden of his house. The sun was hot, but the tall green trees kept the ground cool and dark. He was a small boy with a curious mind and a quick way of thinking. Near him, a strange metal thing lay deep in the soft grass. It was not like the machines his father owned, and it did not look like any toy he had ever played with before. It was round, smooth, and very cold to the touch. Slim felt his heart beat fast. He knew that his father, a famous scientist, often brought secret things home to study. This object felt different, however. It made a low sound that he could feel in his body. Slim looked around to make sure he was alone, then he reached out to touch the strange, shiny surface once more.",
+      "Quickly, he heard a sound in the bushes nearby. Red appeared, walking slowly toward him. Red was a clever boy, a bit older than Slim, and he was always looking for adventure. When Red saw the metal object, his eyes opened wide with excitement. He knelt down beside Slim and leaned closer to the strange device. The two boys whispered, trying to understand what they had found. They realized it was a spaceship, but it was much smaller than the ones they saw in books or on the screens. It looked like a tiny metal shell from another world. They knew that their parents would not allow them to play with it, but the wish to touch it was too strong. They wanted to see if anyone was inside this silent, metal box. They decided to hide it safely away from the eyes of the adults.",
       "They pulled the heavy metal ball into the thick woods behind the garden. It was hard work, but they were sure they wanted to keep their secret. Once they reached a hidden open space, they stopped to breathe. The air in the woods was quiet, filled only with the sound of birds and the wind. They started to clean the dust and leaves off the smooth shell. As they wiped away the dirt, they saw small, strange lights blinking on the side. The lights changed colors from blue to red in a steady pattern. It was a clear sign that the machine was not broken. It was working and waiting. Slim and Red looked at each other with wide, nervous smiles. They were just two boys in a quiet town, but they had found something that would soon change their simple lives forever.",
       "Red and Slim spent the afternoon watching the strange machine. They did not understand how it worked, but they knew it was special. The metal object had small openings that looked like little doors. Slim carefully pushed one of the buttons on the side, and a soft sound came from inside the ship. It sounded like a sad song. They were scared but also very interested in the tiny travelers. Red told Slim that they should provide some food because the small visitors might be hungry after their long journey. They quickly ran to the house to gather bits of bread and fruit from the kitchen. They felt like explorers who had just found a secret garden in space. When they returned to the open space, they left the food near the doors and waited patiently in the tall grass for something new to happen.",
-      "Hours passed as the sun began to go down behind the hills. The sky turned from blue to a dark purple, making the woods look very mysterious. Soon, one of the small doors opened wide. Two tiny, thin visitors stepped out onto the grass. They had large eyes and moved with quick, jumpy steps. The boys stayed very quiet so they would not scare the guests from the sky. The visitors looked at the bread and smelled it with their long, thin noses. They picked up the pieces of food and seemed very happy. One of the visitors made a strange noise that sounded like a laugh. Slim and Red realized that these beings were smart, just like them. They watched with amazement as the small visitors looked at the trees and the flowers as if they had never seen such things before.",
-      "The night air became cool, and the boys knew they had to return home before their parents looked for them. They promised each other to keep this secret no matter what happened. The visitors looked at the boys and signaled with their hands. It was a friendly move that made both Slim and Red feel calm and brave. They realized that they were the first people to ever meet visitors from another world. As they walked back to their houses, they looked at the moon and wondered about the far planet where the travelers came from. The world felt much larger than it had that morning. They went to bed with their heads full of ideas about space, stars, and the little friends in the woods. Tomorrow would bring more answers, but tonight, the secret belonged only to them and the stars above.",
+      "Hours passed as the sun began to go down behind the hills. The sky turned from blue to a dark purple, making the woods look very mysterious. Soon, one of the small doors opened wide. Two tiny, thin visitors stepped out onto the grass. They had large eyes and moved with quick, jumpy steps. The boys stayed very quiet so they would not scare the guests from the sky. The visitors looked at the bread and smelled it with their long, thin noses. They picked up the pieces of food and seemed very happy. One of the visitors made a strange noise that sounded like a laugh. Slim and Red realized that these creatures were smart, just like them. They watched with wonder as the small visitors looked at the trees and the flowers as if they had never seen such things before.",
+      "The night air became cool, and the boys knew they had to return home before their parents looked for them. They promised each other to keep this secret no matter what happened. The visitors looked at the boys and made signs with their hands. It was a friendly gesture that made both Slim and Red feel calm and brave. They realized that they were the first people to ever meet visitors from another world. As they walked back to their houses, they looked at the moon and wondered about the far planet where the travelers came from. The world felt much larger than it had that morning. They went to bed with their heads full of ideas about space, stars, and the little friends in the woods. Tomorrow would bring more answers, but tonight, the secret belonged only to them and the stars above.",
       "The next morning, Slim and Red returned to the woods with excitement. They carried small boxes of sugar and pieces of cheese to share with their new friends. The air was fresh, and the birds sang songs in the tall trees above. When they arrived at the hidden open space, they saw the strange machine sitting quietly in the grass. It looked like a dark metal egg under the bright sun. The boys moved slowly and carefully so they would not make any loud noise. They placed the food on the ground and sat behind a large rock to wait. For a long time, nothing happened, and the woods remained silent. They worried that the tiny travelers had already gone back to the sky. Their hearts beat fast as they watched for any movement from the little ship. They really wanted to see the guests again today.",
-      "Soon, a door on the ship opened again. The two visitors stepped out once more, walking with their quick and jumpy steps. They looked at the bread and sugar, making soft, happy sounds that echoed in the quiet air. Slim whispered to Red that they should try to talk to the visitors using signals. He waved his hand slowly, and one of the visitors looked up with its big, dark eyes. It waved back at Slim, doing the same move with great care. The boys felt a strong connection to these tiny beings from across the stars. They learned that even without words, they could share feelings and ideas. It was an amazing moment for the two boys. They felt like they were part of a secret adventure that no other person in the whole world would ever know about or understand.",
-      "The visitors then walked toward the boys, showing no fear of them. They moved with a strange, graceful energy that fascinated the young explorers. Red took out a small piece of cloth and held it out. The visitors touched it with their thin fingers, smelling the fabric to understand what it was. It seemed that everything in this world was new and wonderful to them. The boys started to laugh softly because the visitors looked so serious while studying a simple piece of cloth. They spent hours sitting together in the grass, teaching each other about their different homes. Slim drew a picture of the sun and the planets in the dirt, and the visitors nodded as if they understood his drawing. The bond between the humans and the visitors grew stronger every minute, making the secret of the woods even more important than it had been before.",
-      "The travelers were very different from humans. They had strange tools that glowed with a soft blue light. Slim watched as they used these tools to fix parts of their silver ship. They were very careful with every movement. Slim thought they might be tired, but they never stopped working. Red looked at their skin, which shone like clean metal. It was beautiful and very smooth to the touch. They did not speak like us, but they made whistling sounds that sounded like music. When they looked at the trees and the flowers, they seemed to be full of wonder. The boys brought more water for them to drink. The visitors liked the water very much and drank it from small containers. They acted like friends who had known each other for a long time. Every action felt special and important to the young boys during this secret meeting.",
-      "Soon, one visitor pointed at the sky. Its eyes went wide, showing fear for the first time. It started to make loud noises that were not like music anymore. The boys stood up quickly, worried about what could be happening. They looked at the far edge of the sky, but they could not see anything yet. However, the visitors knew something was coming. They started to pack their things and run back into their ship. Slim and Red did not know if they should help or just watch quietly. Everything happened very fast in the bright afternoon. The metal ship began to shake, and the air around it felt hot and heavy. The ground moved under the feet of the boys. They felt very nervous because they did not want their new friends to leave them alone in the woods so soon.",
-      "The ship started to lift slowly from the grass. It made a low sound that felt like a giant bee flying near the trees. The light around the ship became very bright, and the boys had to close their eyes tightly. When they opened them again, the ship was gone. Only a circle of burnt grass was left where the egg had sat. Slim and Red felt very sad as they looked at the empty space. They felt like they had lost something very precious and rare. The woods were quiet again, and no birds were singing. They waited for a long time, hoping the ship would come back down from the clouds. But the sky stayed empty and blue. The two boys sat together in the silence, knowing they would never forget this magical day in the green woods.",
+      "Soon, a door on the ship opened again. The two visitors stepped out once more, walking with their quick and jumpy steps. They looked at the bread and sugar, making soft, happy sounds that echoed in the quiet air. Slim whispered to Red that they should try to talk to the visitors using signals. He waved his hand slowly, and one of the visitors looked up with its big, dark eyes. It waved back at Slim, repeating his move with great care. The boys felt a strong connection to these tiny beings from across the stars. They learned that even without words, they could share feelings and ideas. It was an amazing moment for the two boys. They felt like they were part of a secret adventure that no other person in the whole world would ever know about or understand.",
+      "The visitors then walked toward the boys, showing no fear of them. They moved with a strange, beautiful energy that amazed the young explorers. Red took out a small piece of cloth and held it out. The visitors touched it with their thin fingers, smelling the fabric to understand what it was. It seemed that everything in this world was new and wonderful to them. The boys started to laugh softly because the visitors looked so serious while studying a simple piece of cloth. They spent hours sitting together in the grass, teaching each other about their different homes. Slim drew a picture of the sun and the planets in the dirt, and the visitors nodded as if they understood his drawing. The bond between the humans and the visitors grew stronger every minute, making the secret of the woods even more important than it had been before.",
+      "The travelers were very different from humans. They had strange tools that glowed with a soft blue light. Slim watched as they used these tools to fix parts of their silver ship. They were very careful with every movement. Slim thought they might be tired, but they never stopped working. Red looked at their skin, which shone like shiny metal. It was beautiful and very smooth to the touch. They did not speak like us, but they made whistling sounds that sounded like music. When they looked at the trees and the flowers, they seemed to be full of wonder. The boys brought more water for them to drink. The visitors liked the water very much and drank it from small containers. They acted like friends who had known each other for a long time. Every action felt special and important to the young boys during this secret meeting.",
+      "Soon, one visitor pointed at the sky. Its eyes went wide, showing fear for the first time. It started to make loud noises that were not like music anymore. The boys stood up quickly, worried about what could be happening. They looked at the horizon, but they could not see anything yet. However, the visitors knew something was coming. They started to pack their things and run back into their ship. Slim and Red did not know if they should help or just watch quietly. Everything happened very fast in the bright afternoon. The metal ship began to shake, and the air around it felt hot and heavy. The ground moved under the feet of the boys. They felt very nervous because they did not want their new friends to leave them alone in the woods so soon.",
+      "The ship started to lift slowly from the grass. It made a low sound that felt like a giant bee flying near the trees. The light around the ship became very bright, and the boys had to close their eyes tightly. When they opened them again, the ship was gone. Only a circle of burnt grass was left where the egg had sat. Slim and Red felt very sad as they looked at the empty space. They felt like they had lost something very special and rare. The woods were quiet again, and no birds were singing. They waited for a long time, hoping the ship would come back down from the clouds. But the sky stayed empty and blue. The two boys sat together in the silence, knowing they would never forget this magical day in the green woods.",
       "The boys walked home in complete silence as the sun began to set behind the dark trees. Their hearts felt heavy because the amazing visitors were gone forever. Slim kicked a small stone on the path while Red looked at the ground with tears in his eyes. They wondered if anyone would ever believe their strange story about the shiny ship and the whistling visitors. The woods were very quiet and seemed much smaller now without the magic of the travelers. They felt that their world had changed in a way that no one else could understand. As they reached the edge of the farm, they promised each other to keep this secret forever. It was their own special memory of a time when the stars came down to visit them. They walked through the gate and entered the house, ready to sleep after a long adventure.",
       "Inside the house, their father was sitting at the table with an older man who was a famous writer. The writer listened as the boys talked about the silver ship and the strange visitors. He laughed loudly and patted the boys on their heads because he thought it was just a funny dream. He told them that children often have a very active imagination when they play in the woods. The boys looked at each other and did not try to argue because they knew the truth. They remembered the soft blue light and the smooth metal skin of their friends. They realized that the adults were too busy to understand the secrets of the universe. The writer began to type a new story on his machine, but it was just a silly tale about monsters from space, completely missing the real wonder they had seen.",
       "The two boys went to their beds, but they could not sleep at all tonight. They thought about the ship reaching the distant stars where the visitors lived in peace. Somewhere far away, the visitors were probably telling their own story about two young human friends they met on a small green planet. Slim looked out of his window at the bright moon and smiled to himself in the dark. He knew that the universe was filled with many mysteries that people rarely see. They were lucky because they were young and had open eyes to see the truth. They dreamed about the stars and felt a deep connection to everything in the night sky. Even though they were back to their normal lives, they knew that they would always be part of a larger family that existed across the endless, silent, and sparkling galaxy."
     ],
     tr: [
-      "Slim, evinin büyük ve sessiz bahçesinde tek başına oturuyordu. Güneş sıcaktı ama uzun yeşil ağaçlar yeri serin ve karanlık tutuyordu. O, meraklı bir zihne ve hızlı düşünme yeteneğine sahip küçük bir çocuktu. Yakınında, garip metal bir şey yumuşak çimlerin derinliklerinde yatıyordu. Babasının sahip olduğu makinelere benzemiyordu ve daha önce oynadığı hiçbir oyuncağa benzemiyordu. Yuvarlaktı, pürüzsüzdü ve dokunulduğunda çok soğuktu. Slim kalbinin hızlı attığını hissetti. Ünlü bir bilim insanı olan babasının, incelemek için sık sık eve gizli şeyler getirdiğini biliyordu. Ancak bu nesne farklı hissettiriyordu. Vücudunda hissedebileceği düşük bir ses çıkarıyordu. Slim yalnız olduğundan emin olmak için etrafına baktı, sonra gizemli, parlak yüzeye bir kez daha dokunmak için elini uzattı.",
+      "Slim, evinin büyük ve sessiz bahçesinde tek başına oturuyordu. Güneş sıcaktı ama uzun yeşil ağaçlar yeri serin ve karanlık tutuyordu. O, meraklı bir zihne ve hızlı düşünme yeteneğine sahip küçük bir çocuktu. Yakınında, garip metal bir şey yumuşak çimlerin derinliklerinde yatıyordu. Babasının sahip olduğu makinelere benzemiyordu ve daha önce oynadığı hiçbir oyuncağa benzemiyordu. Yuvarlaktı, pürüzsüzdü ve dokunulduğunda çok soğuktu. Slim kalbinin hızlı attığını hissetti. Ünlü bir bilim insanı olan babasının, incelemek için sık sık eve gizli şeyler getirdiğini biliyordu. Ancak bu nesne farklı hissettiriyordu. Vücudunda hissedebileceği düşük bir ses çıkarıyordu. Slim yalnız olduğundan emin olmak için etrafına baktı, sonra garip, parlak yüzeye bir kez daha dokunmak için elini uzattı.",
       "Çabucak, yakınlardaki çalılarda bir ses duydu. Red, yavaşça ona doğru yürüyerek ortaya çıktı. Red, Slim'den biraz daha büyük, zeki bir çocuktu ve her zaman macera arıyordu. Red metal nesneyi gördüğünde, gözleri heyecanla açıldı. Slim'in yanına diz çöktü ve garip cihaza doğru eğildi. İki çocuk, ne bulduklarını anlamaya çalışarak fısıldaştılar. Bunun bir uzay gemisi olduğunu anladılar, ancak kitaplarda veya ekranlarda gördüklerinden çok daha küçüktü. Başka bir dünyadan gelen küçük bir metal kabuk gibi görünüyordu. Anne babalarının onunla oynamalarına izin vermeyeceğini biliyorlardı ama dokunma isteği çok güçlüydü. Bu sessiz, metal kutunun içinde birinin olup olmadığını görmek istediler. Onu yetişkinlerin gözünden uzak, güvenli bir yere saklamaya karar verdiler.",
       "Ağır metal topu bahçenin arkasındaki sık ormana çektiler. Bu zor bir işti ama sırlarını saklamaya kararlıydılar. Gizli bir açık alana ulaştıklarında nefeslenmek için durdular. Ormandaki hava sessizdi; sadece kuşların sesi ve rüzgar vardı. Pürüzsüz kabuğun üzerindeki tozu ve yaprakları temizlemeye başladılar. Kirleri sildiklerinde, yan tarafta yanıp sönen küçük, garip ışıklar gördüler. Işıklar sabit bir düzende maviden kırmızıya renk değiştiriyordu. Bu, makinenin bozuk olmadığının net bir işaretiydi. Çalışıyordu ve bekliyordu. Slim ve Red birbirlerine geniş, gergin gülümsemelerle baktılar. Onlar sessiz bir kasabada sadece iki çocuktu ama basit hayatlarını sonsuza dek değiştirecek bir şey bulmuşlardı.",
       "Red ve Slim öğleden sonrayı garip makineyi izleyerek geçirdiler. Nasıl çalıştığını anlamadılar ama özel bir şey olduğunu biliyorlardı. Metal nesnenin küçük kapılara benzeyen küçük açıklıkları vardı. Slim dikkatlice yan taraftaki düğmelerden birine bastı ve geminin içinden yumuşak bir ses geldi. Hüzünlü bir şarkı gibi duyuluyordu. Korkmuşlardı ama aynı zamanda küçük yolcularla da çok ilgileniyorlardı. Red, Slim'e yiyecek bir şeyler vermeleri gerektiğini söyledi, çünkü küçük ziyaretçiler uzun yolculuklarından sonra acıkmış olabilirlerdi. Mutfaktan ekmek ve meyve parçaları toplamak için hızla eve koştular. Uzayda gizli bir bahçe bulmuş kaşifler gibi hissediyorlardı. Açık alana geri döndüklerinde yiyeceği kapıların yakınına bıraktılar ve uzun otların arasında yeni bir şeyin gerçekleşmesi için sabırla beklediler.",
-      "Güneş tepelerin ardında batmaya başlarken saatler geçti. Gökyüzü maviden koyu mora döndü ve ormanı çok gizemli gösterdi. Çok geçmeden küçük kapılardan biri ardına kadar açıldı. İki küçük, ince ziyaretçi çimlerin üzerine çıktı. Büyük gözleri vardı ve hızlı, sıçrayan adımlarla hareket ediyorlardı. Çocuklar, gökyüzünden gelen misafirleri korkutmamak için çok sessiz kaldılar. Ziyaretçiler ekmeğe baktılar ve uzun, ince burunlarıyla kokladılar. Yiyecek parçalarını aldılar ve çok mutlu göründüler. Ziyaretçilerden biri gülüşe benzeyen garip bir ses çıkardı. Slim ve Red, bu varlıkların tıpkı kendileri gibi zeki olduğunu anladılar. Küçük ziyaretçilerin ağaçlara ve çiçeklere sanki daha önce hiç böyle şeyler görmemiş gibi bakmalarını hayretle izlediler.",
-      "Gece havası serinledi ve çocuklar ebeveynleri onları aramadan önce eve dönmeleri gerektiğini biliyorlardı. Ne olursa olsun bu sırrı saklamak için birbirlerine söz verdiler. Ziyaretçiler çocuklara baktı ve elleriyle işaret ettiler. Bu, hem Slim hem de Red'in sakin ve cesur hissetmesini sağlayan dostça bir hareketti. Başka bir dünyadan gelen ziyaretçilerle tanışan ilk insanlar olduklarını fark ettiler. Evlerine geri yürürken aya baktılar ve yolcuların geldiği uzak gezegeni merak ettiler. Dünya sabahkinden çok daha büyük hissettiriyordu. Uzay, yıldızlar ve ormandaki küçük arkadaşlar hakkındaki fikirlerle dolu kafalarıyla yatağa gittiler. Yarın daha fazla cevap getirecekti ama bu gece sır sadece onlara ve yukarıdaki yıldızlara aitti.",
+      "Güneş tepelerin ardında batmaya başlarken saatler geçti. Gökyüzü maviden koyu mora döndü ve ormanı çok gizemli gösterdi. Çok geçmeden küçük kapılardan biri ardına kadar açıldı. İki küçük, ince ziyaretçi çimlerin üzerine çıktı. Büyük gözleri vardı ve hızlı, sıçrayan adımlarla hareket ediyorlardı. Çocuklar, gökyüzünden gelen misafirleri korkutmamak için çok sessiz kaldılar. Ziyaretçiler ekmeğe baktılar ve uzun, ince burunlarıyla kokladılar. Yiyecek parçalarını aldılar ve çok mutlu göründüler. Ziyaretçilerden biri gülüşe benzeyen garip bir ses çıkardı. Slim ve Red, bu yaratıkların tıpkı kendileri gibi zeki olduğunu anladılar. Küçük ziyaretçilerin ağaçlara ve çiçeklere sanki daha önce hiç böyle şeyler görmemiş gibi bakmalarını hayranlıkla izlediler.",
+      "Gece havası serinledi ve çocuklar ebeveynleri onları aramadan önce eve dönmeleri gerektiğini biliyorlardı. Ne olursa olsun bu sırrı saklamak için birbirlerine söz verdiler. Ziyaretçiler çocuklara baktı ve elleriyle işaret ettiler. Bu, hem Slim hem de Red'in sakin ve cesur hissetmesini sağlayan dostça bir jestti. Başka bir dünyadan gelen ziyaretçilerle tanışan ilk insanlar olduklarını fark ettiler. Evlerine geri yürürken aya baktılar ve yolcuların geldiği uzak gezegeni merak ettiler. Dünya sabahkinden çok daha büyük hissettiriyordu. Uzay, yıldızlar ve ormandaki küçük arkadaşlar hakkındaki fikirlerle dolu kafalarıyla yatağa gittiler. Yarın daha fazla cevap getirecekti ama bu gece sır sadece onlara ve yukarıdaki yıldızlara aitti.",
       "Ertesi sabah, Slim ve Red heyecanla ormana geri döndüler. Yeni arkadaşlarıyla paylaşmak için yanlarında küçük şeker kutuları ve peynir parçaları getirdiler. Hava tazeydi ve kuşlar yukarıdaki uzun ağaçlarda şarkılar söylüyordu. Gizli açık alana vardıklarında, tuhaf makinenin çimlerin üzerinde sessizce durduğunu gördüler. Parlak güneşin altında karanlık metal bir yumurta gibi görünüyordu. Çocuklar yüksek ses çıkarmamak için yavaş ve dikkatli hareket ettiler. Yiyecekleri yere bıraktılar ve beklemek için büyük bir kayanın arkasına oturdular. Uzun bir süre hiçbir şey olmadı ve orman sessiz kaldı. Küçük yolcuların gökyüzüne geri dönmüş olmasından endişelendiler. Küçük gemiden gelecek herhangi bir hareketi gözlerken kalpleri hızla çarpıyordu. Bugün misafirleri tekrar görmeyi gerçekten çok istiyorlardı.",
-      "Çok geçmeden, gemideki bir kapı tekrar açıldı. İki ziyaretçi bir kez daha dışarı çıktı, hızlı ve sıçrayan adımlarıyla yürüdüler. Ekmek ve şekere baktılar, sessiz havada yankılanan yumuşak ve mutlu sesler çıkardılar. Slim, Red'e işaretleri kullanarak ziyaretçilerle konuşmaya çalışmaları gerektiğini fısıldadı. Elini yavaşça salladı ve ziyaretçilerden biri büyük, karanlık gözleriyle yukarı baktı. Slim'e el sallayarak, büyük bir dikkatle onun hareketini yansıttı. Çocuklar yıldızların ötesinden gelen bu küçük varlıklara karşı güçlü bir bağ hissettiler. Kelimeler olmadan bile duygularını ve fikirlerini paylaşabileceklerini öğrendiler. İki çocuk için harika bir andı. Dünyadaki başka hiçbir insanın asla bilmeyeceği veya anlamayacağı gizli bir maceranın parçası gibi hissediyorlardı.",
-      "Ziyaretçiler daha sonra çocuklara doğru yürüdüler, onlardan hiç korkmuyorlardı. Genç kaşifleri büyüleyen tuhaf ve zarif bir enerjiyle hareket ediyorlardı. Red küçük bir bez parçası çıkardı ve uzattı. Ziyaretçiler ince parmaklarıyla dokundular, ne olduğunu anlamak için kumaşı kokladılar. Bu dünyadaki her şey onlar için yeni ve harika görünüyordu. Çocuklar yavaşça gülmeye başladılar çünkü ziyaretçiler basit bir bez parçasını incelerken çok ciddi görünüyorlardı. Çimlerde oturarak birbirlerine farklı evleri hakkında bilgi vererek saatler geçirdiler. Slim toprağa güneşin ve gezegenlerin bir resmini çizdi ve ziyaretçiler çizimini anlamış gibi başlarını salladılar. İnsanlar ve ziyaretçiler arasındaki bağ her dakika güçlendi ve ormanın sırrını eskisinden çok daha önemli hale getirdi.",
+      "Çok geçmeden, gemideki bir kapı tekrar açıldı. İki ziyaretçi bir kez daha dışarı çıktı, hızlı ve sıçrayan adımlarıyla yürüdüler. Ekmek ve şekere baktılar, sessiz havada yankılanan yumuşak ve mutlu sesler çıkardılar. Slim, Red'e işaretleri kullanarak ziyaretçilerle konuşmaya çalışmaları gerektiğini fısıldadı. Elini yavaşça salladı ve ziyaretçilerden biri büyük, karanlık gözleriyle yukarı baktı. Slim'e el sallayarak, büyük bir dikkatle onun hareketini tekrarladı. Çocuklar yıldızların ötesinden gelen bu küçük varlıklara karşı güçlü bir bağ hissettiler. Kelimeler olmadan bile duygularını ve fikirlerini paylaşabileceklerini öğrendiler. İki çocuk için harika bir andı. Dünyadaki başka hiçbir insanın asla bilmeyeceği veya anlamayacağı gizli bir maceranın parçası gibi hissediyorlardı.",
+      "Ziyaretçiler daha sonra çocuklara doğru yürüdüler, onlardan hiç korkmuyorlardı. Genç kaşifleri şaşırtan tuhaf ve güzel bir enerjiyle hareket ediyorlardı. Red küçük bir bez parçası çıkardı ve uzattı. Ziyaretçiler ince parmaklarıyla dokundular, ne olduğunu anlamak için kumaşı kokladılar. Bu dünyadaki her şey onlar için yeni ve harika görünüyordu. Çocuklar yavaşça gülmeye başladılar çünkü ziyaretçiler basit bir bez parçasını incelerken çok ciddi görünüyorlardı. Çimlerde oturarak birbirlerine farklı evleri hakkında bilgi vererek saatler geçirdiler. Slim toprağa güneşin ve gezegenlerin bir resmini çizdi ve ziyaretçiler çizimini anlamış gibi başlarını salladılar. İnsanlar ve ziyaretçiler arasındaki bağ her dakika güçlendi ve ormanın sırrını eskisinden çok daha önemli hale getirdi.",
       "Yolcular insanlardan çok farklıydı. Yumuşak mavi bir ışıkla parlayan garip aletleri vardı. Slim, onların bu aletleri gümüş gemilerinin bazı parçalarını tamir etmek için kullanışlarını izledi. Her hareketlerinde çok dikkatliydiler. Slim onların yorgun olabileceğini düşündü ama çalışmayı hiç bırakmadılar. Red, parlak metal gibi parlayan tenlerine baktı. Çok güzel ve dokunması çok yumuşaktı. Bizim gibi konuşmuyorlardı ama müzik gibi gelen ıslık sesleri çıkarıyorlardı. Ağaçlara ve çiçeklere baktıklarında hayranlık dolu görünüyorlardı. Çocuklar onlara içmeleri için daha fazla su getirdi. Ziyaretçiler suyu çok sevdi ve küçük kaplardan içtiler. Uzun zamandır birbirini tanıyan arkadaşlar gibi davranıyorlardı. Bu gizli buluşma sırasında her hareket, genç çocuklar için özel ve önemli hissettirdi.",
       "Çok geçmeden bir ziyaretçi gökyüzünü işaret etti. Gözleri kocaman açıldı ve ilk kez korku gösterdi. Artık müziğe benzemeyen yüksek sesler çıkarmaya başladı. Çocuklar ne olduğunu merak ederek hızla ayağa kalktılar. Ufka baktılar ama henüz hiçbir şey göremediler. Ancak ziyaretçiler bir şeyin gelmekte olduğunu biliyorlardı. Eşyalarını toplamaya ve gemilerine geri koşmaya başladılar. Slim ve Red yardım mı etmeleri yoksa sessizce izlemeleri mi gerektiğini bilemediler. Parlak öğleden sonra her şey çok hızlı gerçekleşti. Metal gemi titremeye başladı ve etrafındaki hava sıcak ve ağırlaştı. Yer, çocukların ayakları altında hareket etti. Yeni arkadaşlarının onları ormanda bu kadar çabuk yalnız bırakmalarını istemedikleri için çok gergindiler.",
-      "Gemi çimlerin üzerinden yavaşça yükselmeye başladı. Ağaçların yakınında uçan dev bir arı gibi alçak bir ses çıkardı. Geminin etrafındaki ışık çok parlaklaştı ve çocuklar gözlerini sıkıca kapatmak zorunda kaldılar. Gözlerini tekrar açtıklarında gemi gitmişti. Yumurtanın durduğu yerde sadece yanmış çimlerden bir daire kalmıştı. Slim ve Red boş alana bakarken çok üzüldüler. Çok değerli ve nadir bir şeyi kaybetmiş gibi hissettiler. Orman tekrar sessizleşti ve kuşlar artık şarkı söylemiyordu. Geminin bulutlardan geri ineceğini umarak uzun süre beklediler. Ancak gökyüzü boş ve mavi kaldı. İki çocuk sessizlik içinde yan yana oturdular ve yeşil ormandaki bu büyülü günü asla unutmayacaklarını biliyorlardı.",
+      "Gemi çimlerin üzerinden yavaşça yükselmeye başladı. Ağaçların yakınında uçan dev bir arı gibi alçak bir ses çıkardı. Geminin etrafındaki ışık çok parlaklaştı ve çocuklar gözlerini sıkıca kapatmak zorunda kaldılar. Gözlerini tekrar açtıklarında gemi gitmişti. Yumurtanın durduğu yerde sadece yanmış çimlerden bir daire kalmıştı. Slim ve Red boş alana bakarken çok üzüldüler. Çok özel ve nadir bir şeyi kaybetmiş gibi hissettiler. Orman tekrar sessizleşti ve kuşlar artık şarkı söylemiyordu. Geminin bulutlardan geri ineceğini umarak uzun süre beklediler. Ancak gökyüzü boş ve mavi kaldı. İki çocuk sessizlik içinde yan yana oturdular ve yeşil ormandaki bu büyülü günü asla unutmayacaklarını biliyorlardı.",
       "Güneş karanlık ağaçların arkasında batmaya başlarken çocuklar tamamen sessizce eve yürüdüler. İnanılmaz ziyaretçiler sonsuza dek gittiği için kalpleri ağırdı. Slim yoldaki küçük bir taşa tekme atarken Red gözlerinde yaşlarla yere bakıyordu. Parlak gemi ve ıslık çalan ziyaretçiler hakkındaki tuhaf hikayelerine kimsenin inanıp inanmayacağını merak ettiler. Orman çok sessizdi ve gezginlerin büyüsü olmadan şimdi çok daha küçük görünüyordu. Dünyalarının başka kimsenin anlayamayacağı bir şekilde değiştiğini hissettiler. Çiftliğin kenarına ulaştıklarında, bu sırrı sonsuza dek saklamak için birbirlerine söz verdiler. Bu, yıldızların onları ziyarete geldiği zamana dair kendi özel anılarıydı. Kapıdan geçip eve girdiler, uzun bir maceradan sonra uyumaya hazırlandılar.",
       "Evin içinde babaları, ünlü bir yazar olan yaşlı bir adamla masada oturuyordu. Çocuklar gümüş gemiden ve garip ziyaretçilerden bahsederken yazar onları dinledi. Sesli bir şekilde güldü ve bunun sadece komik bir rüya olduğunu düşündüğü için çocukların başlarını okşadı. Onlara, çocukların ormanda oynarken genellikle çok aktif bir hayal gücüne sahip olduklarını söyledi. Çocuklar birbirlerine baktılar ve gerçeği bildikleri için tartışmaya çalışmadılar. Arkadaşlarının yumuşak mavi ışığını ve pürüzsüz metal tenlerini hatırladılar. Yetişkinlerin evrenin sırlarını anlayamayacak kadar meşgul olduklarını fark ettiler. Yazar makinesinde yeni bir hikaye yazmaya başladı ama bu sadece uzaydaki canavarlar hakkında, gördükleri gerçek mucizeden tamamen uzak saçma bir masaldı.",
       "İki çocuk yataklarına gitti ama bu gece hiç uyuyamadılar. Ziyaretçilerin huzur içinde yaşadığı uzak yıldızlara ulaşan gemiyi düşündüler. Kim bilir, belki de ziyaretçiler çok uzakta, küçük yeşil bir gezegende tanıştıkları iki genç insan arkadaşları hakkında kendi hikayelerini anlatıyorlardı. Slim penceresinden parlak aya baktı ve karanlıkta kendi kendine gülümsedi. Evrenin insanların nadiren gördüğü birçok gizemle dolu olduğunu biliyordu. Şanslıydılar çünkü gençtiler ve gerçeği görecek kadar açık gözlere sahiptiler. Yıldızların hayalini kurdular ve gece gökyüzündeki her şeyle derin bir bağ hissettiler. Normal hayatlarına dönmüş olsalar da, sonsuz, sessiz ve parıldayan galaksi boyunca var olan daha büyük bir ailenin her zaman bir parçası olacaklarını biliyorlardı."
@@ -15613,26 +15613,26 @@ export const STORIES_PART1: RawStory[] = [
     words: {
       "curious": "meraklı",
       "mysterious": "gizemli",
-      "temptation": "istek",
-      "rhythmic": "düzenli",
-      "active": "çalışan",
+      "wish": "istek",
+      "steady": "düzenli",
+      "active": "aktif",
       "secret": "sır",
-      "creature": "ziyaretçi",
+      "creature": "yaratık",
       "explore": "keşfetmek",
-      "frighten": "korkutmak",
-      "gesture": "hareket",
-      "intelligent": "zeki",
+      "scare": "korkutmak",
+      "gesture": "jest",
+      "smart": "zeki",
       "patiently": "sabırla",
-      "clearance": "açık alan",
+      "space": "alan",
       "signal": "işaret",
-      "mirror": "yansıtmak",
-      "fascinate": "büyülemek",
+      "repeat": "tekrarlamak",
+      "amaze": "şaşırtmak",
       "bond": "bağ",
       "traveler": "yolcu",
-      "polished": "temiz/parlak",
-      "vibrate": "titremek",
+      "shiny": "parlak",
+      "shake": "titremek",
       "horizon": "ufuk",
-      "precious": "değerli",
+      "special": "özel",
       "container": "kap",
       "imagination": "hayal gücü",
       "universe": "evren",
@@ -15642,7 +15642,7 @@ export const STORIES_PART1: RawStory[] = [
       "galaxy": "galaksi"
     }
   },
-              {
+                {
     id: 'scifi_reason',
     title: "Reason",
     author: 'Isaac Asimov',
@@ -15684,35 +15684,35 @@ export const STORIES_PART1: RawStory[] = [
     ],
     words: {
       "robot": "robot",
-      "station": "üs",
+      "base": "üs",
       "metal": "metal",
       "machine": "makine",
       "logic": "mantık",
-      "universe": "uzay",
-      "altar": "dua masası",
-      "rhythmic": "sabit",
-      "worship": "tapınmak",
-      "ideology": "düşünce yolu",
-      "static": "elektrik",
-      "artificial": "yapay",
+      "space": "uzay",
+      "table": "masa",
+      "steady": "sabit",
+      "pray": "dua etmek",
+      "belief": "inanç",
+      "power": "güç",
+      "creation": "yaratım",
       "fanatic": "fanatik",
       "void": "boşluk",
-      "sensor": "parçalar",
-      "shield": "kapak",
+      "part": "parça",
+      "shield": "koruma",
       "design": "tasarım",
-      "divine": "kutsal",
-      "creator": "yapımcı",
-      "organic": "yaşayan",
+      "holy": "kutsal",
+      "maker": "yapımcı",
+      "living": "yaşayan",
       "behavior": "davranış",
       "storm": "fırtına",
       "stable": "sabit",
-      "fragile": "zayıf",
+      "weak": "zayıf",
       "origin": "başlangıç",
       "loyalty": "sadakat",
       "mission": "görev"
     }
   },
-              {
+                {
     id: 'scifi_food_of_gods',
     title: "The Food of the Gods",
     author: 'H. G. Wells',
@@ -15722,7 +15722,7 @@ export const STORIES_PART1: RawStory[] = [
       "Mr. Bensington and Professor Redwood were two famous people who study science in London. They wanted to change the world with a new finding. They worked in a quiet place far away from the busy city. They were studying how living things get big. They wanted to make a special food that could make animals and plants grow very large. They mixed many things and worked for many long months. They were very careful with their test because they knew it was very strong. Finally, they made a special powder called Herakleophorbia. It was a white powder that looked very simple, but it was incredibly strong. They were excited to see what this food could do. They hoped it would help the world grow faster and better. It was a big step for science and for their future lives in England.",
       "The two men decided to test their finding in a small, hidden farm. They wanted to keep their work secret from the public. They went to a place near the countryside where there were many chickens and plants. They gave the special food to some young chickens and waited to see the results. Soon, the chickens started to grow very fast. They became bigger than normal birds in only a few days. The plants in the garden also changed. They grew tall and thick very quickly. The scientists were shocked but happy with their work. Everything was growing more than they thought. However, they did not realize the danger of this test yet. They thought they could control nature easily, but nature is very wild. They were just two men playing with things they did not fully understand.",
       "The weather in the countryside was very nice during that time. The sun was shining on the large chickens and the huge plants. A small boy named Albert lived nearby and he liked to look at the garden. He saw the strange animals and felt very curious about them. One day, the scientists went back to the city to get more tools. They left the lab and the farm without enough safety. The wind blew some of the white powder into the open air. It landed on the fields and on the trees near the village. The people did not know that the food was now in their soil. The area began to change in secret ways. The world was about to see a very strange change. Everything was quiet, but a big change was coming to the world very soon.",
-      "The countryside near the farm began to change in strange and silent ways. The white powder from the lab moved with the summer wind. It landed on the green grass and the wild flowers in the nearby fields. Soon, the plants started to grow at a speed that was not possible. The stinging plants grew as tall as small trees, and the sharp points became long and sharp like swords. The farmers in the village were very surprised to see their gardens changing. They talked about the odd weather and the rich soil, but they did not know the truth. Nature was waking up with a new and strong energy that no one could stop. The garden was no longer a place for normal food. It was becoming a strange woods where everything reached toward the clouds with a hungry and unstoppable life of its own.",
+      "The countryside near the farm began to change in strange and silent ways. The white powder from the lab moved with the summer wind. It landed on the green grass and the wild flowers in the nearby fields. Soon, the plants started to grow at a speed that was not possible. The stinging plants grew as tall as small trees, and their sharp points became long and sharp like swords. The farmers in the village were very surprised to see their gardens changing. They talked about the odd weather and the rich soil, but they did not know the truth. Nature was waking up with a new and strong energy that no one could stop. The garden was no longer a place for normal food. It was becoming a strange woods where everything reached toward the clouds with a hungry and unstoppable life of its own.",
       "Small insects also began to react to the special food in the air. The big wasps became as big as small birds, and they flew with a loud, scary sound. The butterflies were huge and had colors that were too bright to look at for a long time. Everything that touched the food became larger and stronger. A young boy named Albert watched these things from his window every day. He felt a deep excitement because he had never seen such amazing sights before. He did not feel fear like the older people in the village. He felt that the world was becoming a place of wonder. The small farm was now a center of giant life. The laws of nature were changing, and the slow growth of the past was gone forever in this quiet area.",
       "The two scientists finally returned to the farm after a long time in London. When they arrived, they stopped and stared at the gate in total shock. The gate was broken by a giant climbing plant that twisted like a thick rope around the wooden posts. The lab building was covered in very large leaves that hid the windows from the sunlight. They heard a strange noise coming from the yard, which sounded like a heavy animal breathing. The ground moved under their feet as they walked slowly toward the garden. They realized that their test was now a living problem that they could not manage. They saw a giant wasp flying above them and realized that they had made a very big mistake. The food was not a simple tool; it was a power that wanted to rule the entire world.",
       "The two scientists stood still as they looked at the garden. A giant plant blocked their path like a wall made of green wood and thick vines. It was not just a plant; it had a life that felt mean and hungry. They remembered the bottles of the food that they had left behind on the messy lab table. Now, those few drops had turned into a scary explosion of growth that nobody could control. The air around them was heavy with the smell of wet earth and strange nectar. They felt very small against the tall grass that was higher than their heads. Every step forward was a dangerous walk into a jungle that used to be a quiet farm. The silence of the countryside was gone, replaced by the low sound of giant insects moving through the thick and heavy air.",
@@ -15739,7 +15739,7 @@ export const STORIES_PART1: RawStory[] = [
       "Bay Bensington ve Profesör Redwood, Londra'da yaşayan bilimle uğraşan iki ünlü kişiydi. Dünyayı yeni bir buluşla değiştirmek istiyorlardı. Şehrin kalabalığından uzakta, sessiz bir yerde çalışıyorlardı. Canlıların nasıl büyüdüğünü inceliyorlardı. Hayvanları ve bitkileri çok büyük hale getirebilecek özel bir yiyecek üretmek istiyorlardı. Birçok şeyi karıştırdılar ve uzun aylar boyunca çalıştılar. Testleri konusunda çok dikkatliydiler çünkü çok güçlü olduğunu biliyorlardı. Sonunda, Herakleophorbia adında özel bir toz yaptılar. Çok basit görünen beyaz bir tozdu ancak inanılmaz derecede güçlüydü. Tanrıların bu yiyeceğinin neler yapabileceğini görmek için heyecanlıydılar. Dünyanın daha hızlı ve daha iyi büyümesine yardımcı olacağını umuyorlardı. Bu, bilim ve İngiltere'deki gelecek yaşamları için büyük bir adımdı.",
       "İki adam, buluşlarını küçük ve gizli bir çiftlikte test etmeye karar verdiler. Çalışmalarını halktan gizli tutmak istiyorlardı. Birçok tavuk ve bitkinin olduğu kırsal kesime yakın bir yere gittiler. Özel yiyeceği bazı genç tavuklara verdiler ve sonuçları görmek için beklediler. Çok geçmeden tavuklar çok hızlı büyümeye başladı. Sadece birkaç gün içinde normal kuşlardan daha büyük hale geldiler. Bahçedeki bitkiler de değişti. Çok hızlı bir şekilde uzun ve kalın büyüdüler. Bilim insanları şok oldular ancak çalışmalarından mutluydular. Her şey düşündüklerinden daha fazla büyüyordu. Ancak, bu testin tehlikesinin henüz farkında değillerdi. Doğayı kolayca kontrol edebileceklerini düşündüler ama doğa çok vahşiydi. Sadece tam olarak anlamadıkları şeylerle oynayan iki insandılar.",
       "Kırsal bölgedeki hava o zamanlar çok güzeldi. Güneş büyük tavukların ve devasa bitkilerin üzerine parlıyordu. Albert adında küçük bir çocuk yakında yaşıyordu ve bahçeye bakmaktan hoşlanıyordu. Garip hayvanları gördü ve onlar hakkında çok meraklandı. Bir gün, bilim insanları daha fazla araç almak için şehre geri döndüler. Laboratuvarı ve çiftliği yeterli güvenlik olmadan bıraktılar. Rüzgar, beyaz tozun bir kısmını açık havaya savurdu. Tarlalara ve köyün yakınındaki ağaçların üzerine düştü. İnsanlar, yiyeceğin artık topraklarında olduğunu bilmiyorlardı. Bölge gizli yollarla değişmeye başladı. Dünya çok garip bir değişime tanık olmak üzereydi. Her şey sessizdi ama dünyaya çok yakında büyük bir değişim geliyordu.",
-      "Çiftliğin yakınındaki kırsal bölge garip ve sessiz şekillerde değişmeye başladı. Laboratuvardan gelen beyaz toz, yaz rüzgarıyla birlikte hareket etti. Yakındaki tarlalardaki yeşil otların ve yabani çiçeklerin üzerine kondu. Çok geçmeden bitkiler mümkün olmayan bir hızla büyümeye başladı. Isırgan otları küçük ağaçlar kadar uzadı ve sivri uçlar kılıçlar gibi uzun ve keskin hale geldi. Köydeki çiftçiler bahçelerinin değiştiğini görünce çok şaşırdılar. Garip havadan ve zengin topraktan bahsettiler ama gerçeği bilmiyorlardı. Doğa, kimsenin durduramayacağı yeni ve güçlü bir enerjiyle uyanıyordu. Bahçe artık normal yiyecekler için bir yer değildi. Her şeyin aç ve durdurulamaz bir yaşamla bulutlara doğru uzandığı garip bir ormana dönüşüyordu.",
+      "Çiftliğin yakınındaki kırsal bölge garip ve sessiz şekillerde değişmeye başladı. Laboratuvardan gelen beyaz toz, yaz rüzgarıyla birlikte hareket etti. Yakındaki tarlalardaki yeşil otların ve yabani çiçeklerin üzerine kondu. Çok geçmeden bitkiler mümkün olmayan bir hızla büyümeye başladı. Isırgan otları küçük ağaçlar kadar uzadı ve sivri uçları kılıçlar gibi uzun ve keskin hale geldi. Köydeki çiftçiler bahçelerinin değiştiğini görünce çok şaşırdılar. Garip havadan ve zengin topraktan bahsettiler ama gerçeği bilmiyorlardı. Doğa, kimsenin durduramayacağı yeni ve güçlü bir enerjiyle uyanıyordu. Bahçe artık normal yiyecekler için bir yer değildi. Her şeyin aç ve durdurulamaz bir yaşamla bulutlara doğru uzandığı garip bir ormana dönüşüyordu.",
       "Küçük böcekler de havadaki özel yiyeceğe tepki vermeye başladı. Büyük yaban arıları küçük kuşlar kadar büyüdü ve yüksek, korkutucu bir sesle uçtular. Kelebekler devasaydı ve uzun süre bakılamayacak kadar parlak renklere sahipti. Yiyeceğe dokunan her şey daha büyük ve daha güçlü hale geldi. Albert adında genç bir çocuk her gün penceresinden bu şeyleri izliyordu. Derin bir heyecan hissetti çünkü daha önce hiç böyle şaşırtıcı manzaralar görmemişti. Köydeki yaşlı insanlar gibi korku hissetmiyordu. Dünyanın bir mucize yerine dönüştüğünü düşünüyordu. Küçük çiftlik artık dev yaşamın merkeziydi. Doğa kanunları değişiyordu ve geçmişin yavaş büyümesi bu sessiz bölgede sonsuza dek gitmişti.",
       "İki bilim insanı Londra'da uzun bir süre geçirdikten sonra nihayet çiftliğe döndü. Vardıklarında durdular ve şok içinde kapıya baktılar. Kapı, ahşap direklerin etrafında kalın bir halat gibi kıvrılan dev bir sarmaşık tarafından kırılmıştı. Laboratuvar binası, pencereleri güneş ışığından gizleyen çok büyük yapraklarla kaplıydı. Bahçeden, ağır bir hayvanın nefes almasına benzeyen garip bir ses duydular. Bahçeye doğru yavaşça yürürken yer ayaklarının altında hareket ediyordu. Testlerinin artık yönetemeyecekleri yaşayan bir sorun haline geldiğini fark ettiler. Üzerlerinde uçan dev bir yaban arısı gördüler ve çok büyük bir hata yaptıklarını anladılar. Yiyecek basit bir araç değildi; tüm dünyaya hakim olmak isteyen bir güçtü.",
       "İki bilim insanı bahçeye bakarken öylece durdular. Dev bir bitki, yeşil odun ve kalın sarmaşıklardan yapılmış bir duvar gibi yollarını kapattı. Bu sadece bir bitki değildi; kötü ve aç hissettiren bir yaşamı vardı. Dağınık laboratuvar masasında bıraktıkları yiyecek şişelerini hatırladılar. Şimdi, o birkaç damla kimsenin kontrol edemeyeceği korkunç bir büyüme patlamasına dönüşmüştü. Çevrelerindeki hava, ıslak toprak ve garip nektar kokusuyla ağırdı. Başlarının üzerinde yükselen uzun ot saplarının yanında kendilerini çok küçük hissettiler. Atılan her adım, eskiden sessiz bir çiftlik olan bu ormana yapılan tehlikeli bir yürüyüştü. Kırsalın sessizliği gitmiş, yerini ağır ve yoğun havada hareket eden dev böceklerin alçak vızıltısı almıştı.",
@@ -15750,78 +15750,162 @@ export const STORIES_PART1: RawStory[] = [
       "Sonunda ormanın kenarına ulaştılar ve yarattıkları yeşil kabusa geri dönüp baktılar. Ay parlaktı ve hala büyümeye devam eden bitkilerin korkunç boyutunu gösteriyordu. Bensington ağlıyordu çünkü bilimlerinin yanlış gittiğini fark etmişti. İnsanların uzun ve güçlü büyümesine yardım etmek istemişlerdi ama yönetilemeyecek kadar büyük bir dünya yaratmışlardı. Devlerin hayatta kalmak için yakında daha fazla alana ve daha fazla yemeğe ihtiyacı olacaktı. Milyonlarca insanın yaşadığı şehirlere ulaştıklarında ne olacaktı? Bilim insanları yavaşça arabalarına doğru yürüdüler, dev canavarlar diyarında küçük hayaletler gibi hissediyorlardı. Anahtarı çevirdiler ve gecenin karanlık ve sessiz gölgeleri içinde yiyeceğin sırlarını geride bırakarak uzaklaştılar. Hikayelerinin bittiğini ama devlerin hikayesinin yeni başladığını biliyorlardı.",
       "Gece havası soğuktu ve Bensington ile Redwood sonunda açık yola ulaştılar. Arkalarında dev bitkiler rüzgarda yavaşça hareket ediyor, kumsala vuran ağır dalgalar gibi sesler çıkarıyordu. Kendilerini çok küçük ve zayıf hissettiler. Bildikleri dünya yok oluyor, yerini bu yeni ve tuhaf gerçeğe bırakıyordu. Devlerin yürüdüğü karanlık uzaklığı izleyerek uzun süre arabalarında oturdular. Devler kötü değildi ama zayıf insan toplumu için fazla güçlüydüler. Her bina, her yol ve her küçük bahçe bu yeni çocuklar için oyuncak gibi görünüyordu. Bilim insanları, yiyeceğin her şeyi sonsuza dek değiştirdiğini anladılar. Büyümeyi veya değişimi durdurmanın bir yolu yoktu. İnsanlık artık bir daha asla kontrol edemeyecekleri, çok daha büyük, daha tehlikeli ve daha vahşi bir dünyanın küçük bir parçasıydı.",
       "Bensington, dünyaya saldıkları şeyin korkusuyla titreyen ellerine baktı. Laboratuvarı, parlak ışıkları ve ilk buluşunun heyecanını hatırladı. Hastalıksız, güçlü ve uzun boylu insanların olduğu bir dünya hayal etmişti. Bunun yerine, asla barış içinde yaşayamayacak iki farklı varlık türü arasında bir uçurum yaratmıştı. Devler kötü niyetli değildi ancak basit hareketleri herkes için sorun yaratıyordu. Yanlışlıkla evlerin üzerine basıyor ve meraklı oldukları için dağları yerinden oynatıyorlardı. Bilim insanları, gezegenin liderleri olarak zamanlarının dolduğunu biliyorlardı. Gelecek, yıldızlara karşı dimdik duran devlere aitti. Bu taşınması ağır bir gerçekti ve ay ışığının altındaki sessizce hızlanan arabalarında yorgun, yaşlı ve yapayalnız hissettiler.",
-      "Araba, devlerin ormanını gecenin derin gölgesinde bırakarak uzaklara sürdü. Bensington, gelecekteki şehirleri ve iki dünya arasındaki yakın çatışmayı düşünerek gözlerini kapattı. Devlerin yakında tarlalardan çıkıp daha fazla alan isteyerek kasabalara gireceklerini biliyordu. Onlar gelecekti, Bensington ve arkadaşları ise geçmişin hayaletlerinden ibaretti. Şehre dönüş yolculuğu sessizdi; bilim insanları için derin bir hüzün ve pişmanlıkla doluydu. Doğa kanunlarıyla ve büyüme kurallarıyla oynamışlardı ve oyunu doğa kazanmıştı. Güneş doğmaya başladığında, dünyanın bir daha asla aynı olmayacağını biliyorlardı. Yiyecek işini yapmıştı ve devler çağı tüm insanlık için nihayet başlamıştı."
+      "vocabulary"
     ],
     words: {
       "scientist": "bilim insanı",
       "discovery": "buluş",
       "experiment": "test",
       "growth": "büyüme",
-      "substance": "madde",
-      "protect": "güvenlik",
-      "meadow": "tarla",
-      "thorn": "sivri uç",
-      "frightening": "korkutucu",
-      "vine": "sarmaşık",
-      "massive": "çok büyük",
-      "dominate": "hakim olmak",
-      "aggressive": "meen",
-      "explosion": "patlama",
-      "tower": "yükselmek",
-      "scattered": "dağınık",
-      "vibrate": "hareket etmek",
-      "regret": "pişmanlık",
+      "food": "yiyecek",
+      "powder": "toz",
+      "secret": "gizli",
+      "results": "sonuçlar",
+      "shocked": "şok",
+      "danger": "tehlike",
+      "nature": "doğa",
+      "village": "köy",
+      "wind": "rüzgar",
+      "soil": "toprak",
+      "energy": "enerji",
+      "woods": "orman",
+      "insects": "böcekler",
       "wasp": "yaban arısı",
+      "butterfly": "kelebek",
+      "miracle": "mucize",
+      "laws": "kanunlar",
+      "plant": "bitki",
+      "gate": "kapı",
+      "leaves": "yapraklar",
+      "noise": "ses",
+      "mistake": "yanlışlıkla",
+      "power": "güç",
+      "control": "kontrol",
+      "smell": "koku",
+      "grass": "ot",
+      "jungle": "orman",
+      "mushrooms": "mantarlar",
+      "future": "gelecek",
+      "balance": "denge",
+      "voices": "sesler",
+      "bushes": "çalılar",
+      "hearts": "kalpler",
       "giant": "dev",
+      "progress": "ilerleme",
+      "nightmare": "kabus",
+      "mud": "çamur",
+      "shadow": "gölge",
+      "boy": "çocuk",
+      "house": "ev",
+      "ground": "yer",
+      "humans": "insanlar",
+      "walls": "duvarlar",
+      "toys": "oyuncaklar",
+      "road": "yol",
+      "sky": "gökyüzü",
+      "moon": "ay",
+      "crying": "ağlamak",
+      "manage": "yönetmek",
+      "space": "alan",
+      "millions": "milyonlar",
+      "car": "araba",
+      "monsters": "canavarlar",
+      "secrets": "sırlar",
+      "story": "hikaye",
+      "cold": "soğuk",
+      "waves": "dalgalar",
+      "beach": "kumsal",
+      "reality": "gerçeklik",
+      "distance": "uzaklık",
+      "society": "toplum",
+      "buildings": "binalar",
+      "garden": "bahçe",
+      "children": "çocuklar",
       "humanity": "insanlık",
-      "scale": "boyut",
-      "monster": "canavar",
-      "fragile": "zayıf",
-      "horizon": "uzaklık",
-      "chaos": "sorun",
-      "inevitable": "gelen",
-      "era": "zaman"
+      "wilder": "daha vahşi",
+      "hands": "eller",
+      "fear": "korku",
+      "earth": "dünya",
+      "lab": "laboratuvar",
+      "lights": "ışıklar",
+      "sickness": "hastalık",
+      "tall": "uzun boylu",
+      "divide": "uçurum",
+      "beings": "varlıklar",
+      "peacefully": "barış içinde",
+      "actions": "hareketler",
+      "trouble": "sorun",
+      "mountains": "dağlar",
+      "curious": "meraklı",
+      "leaders": "liderler",
+      "planet": "gezegen",
+      "stars": "yıldızlar",
+      "truth": "gerçek",
+      "tired": "yorgun",
+      "old": "yaşlı",
+      "alone": "yalnız",
+      "speeding": "hızlanan",
+      "moonlight": "ay ışığı",
+      "forest": "orman",
+      "cities": "şehirler",
+      "conflict": "çatışma",
+      "towns": "kasabalar",
+      "ghosts": "hayaletler",
+      "journey": "yolculuk",
+      "sadness": "hüzün",
+      "regret": "pişmanlık",
+      "played": "oynamak",
+      "rules": "kurallar",
+      "won": "kazanmak",
+      "game": "oyun",
+      "sun": "güneş",
+      "rise": "doğmak",
+      "world": "dünya",
+      "same": "aynı",
+      "work": "iş",
+      "time": "zaman",
+      "begun": "başlamak"
     }
   },
-              {
+                {
     id: 'scifi_chocky',
     title: "Chocky",
     author: 'John Wyndham',
     level: 'A2',
     coverUrl: '/covers/scifi_chocky.webp',
     en: [
-      "My son Matthew was a normal twelve-year-old boy. He liked football, computer games, and riding his bicycle around our quiet area. One evening, my wife Mary and I noticed a change in his behavior. He started talking to himself in his bedroom. At first, we thought it was just a strange game or a dream. We did not pay much attention because Matthew was usually a very wise child. However, the talking continued for several days. He would sit at the dinner table and answer questions that nobody asked. When I asked him who he was talking to, he smiled and said that his friend was not seen by others. He gave his friend a name: Chocky. We laughed, but deep inside, I felt a little worried about his new secret friend. It seemed like he was hiding something very important from us every single day.",
-      "The situation became more interesting when Matthew began to show new skills. He soon knew things he never learned before. He started drawing hard shapes and patterns that were very difficult for a child his age. One morning, he tried to draw a picture of a place that did not look like our town. It was a place with two suns in the sky and strange buildings made of glass. When I asked him where he saw these things, he said that Chocky told him about them. Matthew seemed very calm and happy when he talked about this secret visitor. My wife Mary was more worried than me. She thought that Matthew might have a problem with his creative mind. We decided to watch him closely to see if he was playing a joke or if something truly unusual was happening in our house.",
-      "A few days later, Matthew surprised us at breakfast. He explained that Chocky was not just an imaginary person. He told us that Chocky came from a different world far away in the stars. According to Matthew, this being was watching the Earth and wanted to learn about our lives. It sounded like a story, but Matthew was very serious about his words. He was not joking at all. He described the ship that brought Chocky to our solar system. The way he spoke was different from how a normal boy speaks. His voice changed sometimes, and he used words that were too smart for his age. We sat in the kitchen, feeling very confused and scared. Our ordinary life was changing quickly, and we did not know how to help our son understand this strange event that was happening before our very eyes.",
-      "One weekend, Matthew decided to show us something truly amazing. He asked us to go into the garden. He said that Chocky wanted to show him how to make a special toy boat move across our small pond. We followed him outside, feeling a bit confused. Matthew stood by the water and closed his eyes. He did not touch the boat at all. He just moved his hands in the air, slowly and carefully. Soon, the wooden boat started to move across the water. It turned left and right, following the movements of his hands. I looked at Mary and she was pale with shock. There was no wind, and there were no hidden strings or metal pieces in the water. My son was controlling the boat with his mind, or perhaps someone else was doing it through him. It was a moment of true magic and fear.",
-      "After the boat incident, things began to change even faster. Matthew started to paint beautiful pictures in his room. He used colors that I had never seen before in nature. The shapes in his paintings were like math problems or maps of unknown space groups. I tried to talk to him about these paintings, but he just smiled a secret smile. He told me that Chocky liked to show him the secrets of the world. I felt like my son was moving further away from me into a world that I could not understand. Sometimes, I found him sitting in silence, listening to voices that only he could hear. It was clear that Chocky was teaching him things that no teacher in our local school could ever explain. I wanted to help, but I felt like a stranger in my own home, watching my child grow into something very different.",
-      "Mary suggested that we should find a doctor or a specialist to help Matthew. We were worried that this invisible friend was taking control of his mind. One evening, I sat down with Matthew for a long talk. I asked him directly if Chocky was a kind friend or if he wanted something from him. Matthew looked at me with very serious eyes. He said that Chocky was just wanting to know more and that he did not mean any harm to anyone. He explained that their connection was like a bridge between two worlds. I asked him if Chocky could leave if we wanted him to go away. Matthew stayed silent for a long time before he finally shook his head. It seemed that Chocky was here to stay for a while longer. The feeling of not knowing began to weigh heavily on our hearts as we realized we could not stop this mystery.",
-      "The mystery grew larger when Matthew started to talk in a language that was not English. He spoke with strange sounds and complex patterns that felt like a song from another planet. My wife Mary and I watched him with deep worry as he sat at the dinner table. He seemed to be listening to someone sitting right next to him. When I asked him who he was talking to, he simply said that Chocky was sharing stories about a place where light moved differently. It was difficult to accept that my young son was learning things beyond human understanding. I began to wonder if Chocky was a memory or a spirit from a distant space. The house felt smaller and colder, as if we were living with a visitor who did not belong in our world. We were desperate for answers but found only more confusion.",
-      "One morning, Matthew woke up and began to draw a map on a large piece of paper. He used a pencil to create lines that looked like a difficult road system. He told us that Chocky wanted him to remember the way home. I asked him if he wanted to leave us, and his face turned red with sadness. He explained that he loved us, but that he also had a duty to his secret friend. This made me feel very helpless. I was a father who could not protect his child from an influence I could not see or touch. Mary and I decided to visit a teacher who studied unusual events. We hoped that he could give us a scientific explanation for what was happening. We needed to know if Matthew was safe or if something was slowly changing his brain and his personality forever.",
-      "The teacher looked at Matthew for a long time during our meeting. He observed how the boy would suddenly stop and look at the ceiling with wide eyes. He told us that Matthew was perhaps a bridge between our species and another intelligence. This information made me feel even more worried about our future. We went home feeling like we were part of a story that we could not control. Matthew continued to spend his time playing with colors and shapes that went against logic. He rarely played with his old toys anymore. Instead, he would sit in the garden and reach his hands toward the sky. I could see that he was waiting for a sign that only he could recognize. The bond between the boy and the secret visitor was getting stronger every day, and our family felt like it was breaking apart slowly.",
-      "The pressure began to build as government workers started to show interest in Matthew. It was clear that they were watching us from the shadows, wanting to know the secret behind his strange skills. I felt like a prisoner in my own home because men in dark suits followed us wherever we went. Mary was terrified and cried every night while Matthew remained calm, as if he did not understand the danger. He spent most of his time trying to draw complex machines that looked like vehicles from outer space. He explained that these were tools Chocky used to travel across the stars. It was becoming impossible to hide the truth from the world any longer. I realized that my son was not just a boy anymore; he was a bridge to something that the government wanted to control for their own selfish, hidden power.",
-      "One evening, a man from a government office visited us. He was polite but his eyes were cold and sharp like knives. He asked many questions about Chocky and the drawings that Matthew had made. I tried to protect my son by telling him that it was just a child's active creative mind, but the man laughed softly. He showed us papers that proved they knew about the strange language Matthew spoke. It was a scary moment for our family. Matthew did not seem afraid, though. He looked at the man and began to describe the stars in a way that sounded like ancient poetry. The man looked confused and left our house quickly. We were left alone again, but the silence felt heavy with the knowledge that the government people were planning to take him away from us to a secret base.",
-      "We realized that time was running out for us to find a solution. Matthew was starting to lose his connection to our daily lives. He often did not answer when we called his name, as he was busy listening to voices that we could not hear. His drawings became more complicated, showing bright paths across the galaxy. We decided that we had to hide him somewhere safe before the men in dark suits returned. My heart was breaking because I knew that he needed to be with his friend, but I also wanted him to stay with us forever. We packed our bags, feeling like people who lost their home. The mystery of Chocky was no longer just a story; it was a race against time to save the boy we loved from becoming a scientific test for the rest of the world.",
-      "The government men returned to our house during a dark, rainy night. We felt trapped inside our own walls as their bright car lights shone through our bedroom windows. They were not polite this time; they demanded to see Matthew immediately. My wife Mary held me tightly, her hands shaking with deep fear. I stood in front of my son, trying to be brave even though my heart beat fast in my chest. Matthew stepped forward calmly and looked at the men. He started to speak in a strange, singing voice that filled the room with a calm energy. The men stopped in their tracks, looking confused and suddenly very small. They had come to take a child away for their study, but they were not prepared for the power that existed within him. The air seemed to buzz with electricity as Matthew began to explain the secrets of the world.",
-      "Suddenly, the lights in the house began to shake and went out, putting us into complete darkness. A soft, blue glow started to appear around Matthew, shining from deep within his skin. The men dropped their papers and stepped back, gasping in total lack of belief. Chocky was finally showing her true nature to protect her friend. It was not a violent display, but a quiet, powerful light that seemed to say that Matthew was no longer ours to keep. The government agents stood motionless, unable to move or even speak. I realized then that Matthew was not just a boy being watched by scientists; he was a visitor from a place we could not understand. He looked back at us once with sad, wise eyes before the blue light grew so bright that we all had to cover our faces to see anything at all.",
-      "When the light finally went away, the house was silent and the air felt cold again. The men in dark suits were gone, leaving only their empty cars parked on the street. Matthew stood in the center of the room, looking like a normal, tired boy again. He did not remember anything that happened, and he looked at us with a sweet, confused smile. Chocky had left him to go back to the stars, taking her advanced knowledge and her secret history with her. We were finally safe, but the house felt empty and quiet. We understood that we had been part of a grand event that changed our simple lives forever. My son was back, but he was changed in ways we could not name. We lived in peace from that day on, always looking up at the night sky with love."
+      "My son Matthew was a normal twelve-year-old boy. He liked football, computer games, and riding his bicycle around our quiet neighborhood. One evening, my wife Mary and I noticed a change in his behavior. He started talking to himself in his bedroom. At first, we thought it was just a strange game or a dream. We did not pay much attention because Matthew was usually a very sensible child. However, the talking continued for several days. He would sit at the dinner table and answer questions that nobody asked. When I asked him who he was talking to, he smiled and said that his friend was invisible to others. He gave his friend a name: Chocky. We laughed, but deep inside, I felt a little worried about his new secret friend. It seemed like he was hiding something very important from us every single day.",
+      "The situation became more interesting when Matthew began to show new skills. He soon knew things he never learned before. He started drawing complex shapes and patterns that were very difficult for a child his age. One morning, he tried to draw a picture of a place that did not look like our town. It was a place with two suns in the sky and strange buildings made of glass. When I asked him where he saw these things, he said that Chocky told him about them. Matthew seemed very calm and happy when he talked about this secret visitor. My wife Mary was more worried than me. She thought that Matthew might have a problem with his imagination. We decided to watch him closely to see if he was playing a joke or if something truly unusual was happening in our house.",
+      "A few days later, Matthew surprised us at breakfast. He explained that Chocky was not just an imaginary person. He told us that Chocky came from a different world far away in the stars. According to Matthew, this being was watching the Earth and wanted to learn about our lives. It sounded like a story, but Matthew was very serious about his words. He was not joking at all. He described the ship that brought Chocky to our solar system. The way he spoke was different from how a normal boy speaks. His voice changed sometimes, and he used words that were too smart for his age. We sat in the kitchen, feeling very confused and scared. Our ordinary life was changing quickly, and we did not know how to help our son understand this strange event that was unfolding before our very eyes.",
+      "One weekend, Matthew decided to show us something truly amazing. He asked us to go into the garden. He said that Chocky wanted to show him how to make a special toy boat move across our small pond. We followed him outside, feeling a bit confused. Matthew stood by the water and closed his eyes. He did not touch the boat at all. He just moved his hands in the air, slowly and carefully. Soon, the wooden boat started to move across the water. It turned left and right, following the movements of his hands. I looked at Mary and she was pale with shock. There was no wind, and there were no hidden strings or magnets in the water. My son was controlling the boat with his mind, or perhaps someone else was doing it through him. It was a moment of true magic and fear.",
+      "After the boat incident, things began to change even faster. Matthew started to paint beautiful pictures in his room. He used colors that I had never seen before in nature. The shapes in his paintings were like equations or maps of unknown galaxies. I tried to talk to him about these paintings, but he just smiled a mysterious smile. He told me that Chocky liked to show him the secrets of the world. I felt like my son was moving further away from me into a world that I could not understand. Sometimes, I found him sitting in silence, listening to voices that only he could hear. It was clear that Chocky was teaching him things that no teacher in our local school could ever explain. I wanted to help, but I felt like a stranger in my own home, watching my child grow into something very different.",
+      "Mary suggested that we should find a doctor or a specialist to help Matthew. We were worried that this invisible friend was taking control of his mind. One evening, I sat down with Matthew for a long talk. I asked him directly if Chocky was a kind friend or if he wanted something from him. Matthew looked at me with very serious eyes. He said that Chocky was just curious and that he did not mean any harm to anyone. He explained that their connection was like a bridge between two worlds. I asked him if Chocky could leave if we wanted him to go away. Matthew stayed silent for a long time before he finally shook his head. It seemed that Chocky was here to stay for a while longer. The uncertainty began to weigh heavily on our hearts as we realized we could not stop this mystery.",
+      "The mystery grew larger when Matthew started to talk in a language that was not English. He spoke with strange sounds and complex rhythms that felt like they came from another planet. My wife Mary and I watched him with deep worry as he sat at the dinner table. He seemed to be listening to someone sitting right next to him. When I asked him who he was talking to, he simply said that Chocky was sharing stories about a place where light moved differently. It was difficult to accept that my young son was learning things beyond human understanding. I began to wonder if Chocky was a memory or a spirit from a distant space. The house felt smaller and colder, as if we were living with a visitor who did not belong in our world. We were desperate for answers but found only more confusion.",
+      "One morning, Matthew woke up and began to draw a map on a large piece of paper. He used a pencil to create lines that looked like a difficult road system. He told us that Chocky wanted him to remember the way home. I asked him if he wanted to leave us, and his face turned red with sadness. He explained that he loved us, but that he also had a responsibility to his secret friend. This made me feel very helpless. I was a father who could not protect his child from an influence I could not see or touch. Mary and I decided to visit a teacher who studied unusual events. We hoped that he could give us a scientific explanation for what was happening. We needed to know if Matthew was safe or if something was slowly changing his brain and his personality forever.",
+      "The teacher looked at Matthew for a long time during our meeting. He observed how the boy would suddenly stop and look at the ceiling with wide eyes. He told us that Matthew was perhaps a bridge between our species and another intelligence. This information made me feel even more anxious about our future. We went home feeling like we were part of a story that we could not control. Matthew continued to spend his time playing with colors and shapes that defied logic. He rarely played with his old toys anymore. Instead, he would sit in the garden and reach his hands toward the sky. I could see that he was waiting for a sign that only he could recognize. The bond between the boy and the secret visitor was getting stronger every day, and our family felt like it was breaking apart slowly.",
+      "The pressure began to build as government officials started to show interest in Matthew. It was clear that they were watching us from the shadows, wanting to know the secret behind his strange ability. I felt like a prisoner in my own home because men in dark suits followed us wherever we went. Mary was terrified and cried every night while Matthew remained calm, as if he did not understand the danger. He spent most of his time trying to draw complex machines that looked like vehicles from outer space. He explained that these were tools Chocky used to travel across the stars. It was becoming impossible to hide the truth from the world any longer. I realized that my son was not just a boy anymore; he was a bridge to something that the government wanted to control for their own selfish, hidden power.",
+      "One evening, a man from a government office visited us. He was polite but his eyes were cold and sharp like knives. He asked many questions about Chocky and the drawings that Matthew had made. I tried to protect my son by telling him that it was just a child's active imagination, but the man laughed softly. He showed us papers that proved they knew about the strange language Matthew spoke. It was a scary moment for our family. Matthew did not seem afraid, though. He looked at the man and began to describe the stars in a way that sounded like ancient poetry. The man looked confused and left our house quickly. We were left alone again, but the silence felt heavy with the knowledge that the authorities were planning to take him away from us to a secret base.",
+      "We realized that time was running out for us to find a solution. Matthew was starting to lose his connection to our daily lives. He often did not answer when we called his name, as he was busy listening to voices that we could not hear. His drawings became more complicated, showing bright paths across the galaxy. We decided that we had to hide him somewhere safe before the men in dark suits returned. My heart was breaking because I knew that he needed to be with his friend, but I also wanted him to stay with us forever. We packed our bags, feeling like refugees. The mystery of Chocky was no longer just a story; it was a race against time to save the boy we loved from becoming a scientific experiment for the rest of the world.",
+      "The government men returned to our house during a dark, rainy night. We felt trapped inside our own walls as their bright car lights shone through our bedroom windows. They were not polite this time; they demanded to see Matthew immediately. My wife Mary held me tightly, her hands shaking with deep fear. I stood in front of my son, trying to be brave even though my heart beat fast in my chest. Matthew stepped forward calmly and looked at the men. He started to speak in a strange, singing voice that filled the room with a calm energy. The men stopped in their tracks, looking confused and suddenly very small. They had come to take a child away for their research, but they were not prepared for the power that existed within him. The air seemed to buzz with electricity as Matthew began to explain the secrets of the world.",
+      "Suddenly, the lights in the house began to flicker and went out, putting us into complete darkness. A soft, blue glow started to appear around Matthew, shining from deep within his skin. The men dropped their papers and stepped back, gasping in total disbelief. Chocky was finally showing her true nature to protect her friend. It was not a violent display, but a quiet, powerful light that seemed to say that Matthew was no longer ours to keep. The government agents stood motionless, unable to move or even speak. I realized then that Matthew was not just a boy being watched by scientists; he was a visitor from a place we could not understand. He looked back at us once with sad, wise eyes before the blue light grew so bright that we all had to cover our faces to see anything at all.",
+      "When the light finally faded, the house was silent and the air felt cold again. The men in dark suits were gone, leaving only their empty cars parked on the street. Matthew stood in the center of the room, looking like a normal, tired boy again. He did not remember anything that happened, and he looked at us with a sweet, confused smile. Chocky had left him to go back to the stars, taking her advanced knowledge and her secret history with her. We were finally safe, but the house felt empty and quiet. We understood that we had been part of a grand event that changed our simple lives forever. My son was back, but he was changed in ways we could not name. We lived in peace from that day on, always looking up at the night sky with love."
     ],
     tr: [
-      "Oğlum Matthew normal, on iki yaşında bir çocuktu. Futbol oynamayı, bilgisayar oyunlarını ve sessiz mahallemizde bisiklete binmeyi severdi. Bir akşam, eşim Mary ve ben onun davranışlarında bir değişiklik fark ettik. Yatak odasında kendi kendine konuşmaya başladı. Başta bunun sadece tuhaf bir oyun ya da rüya olduğunu düşündük. Matthew genellikle çok akıllı bir çocuk olduğu için fazla önemsemedik. Ancak konuşmalar birkaç gün boyunca devam etti. Yemek masasında oturur ve kimsenin sormadığı sorulara cevap verirdi. Ona kiminle konuştuğunu sorduğumda gülümsedi ve arkadaşının başkaları tarafından görülmediğini söyledi. Arkadaşına bir isim verdi: Chocky. Güldük ama içten içe onun bu yeni gizli arkadaşı hakkında biraz endişelendim. Her geçen gün bizden çok önemli bir şeyi saklıyor gibi görünüyordu.",
-      "Matthew yeni beceriler göstermeye başladığında durum daha ilginç bir hal aldı. Yakında daha önce hiç öğrenmediği şeyleri bilmeye başladı. Yaşındaki bir çocuk için çok zor olan sert şekiller ve desenler çizmeye başladı. Bir sabah, kasabamıza benzemeyen bir yerin resmini çizmeye çalıştı. Gökyüzünde iki güneşi olan ve camdan yapılmış garip binaların olduğu bir yerdi. Ona bu şeyleri nerede gördüğünü sorduğumda, Chocky'nin kendisine anlattığını söyledi. Matthew bu gizli ziyaretçiden bahsettiğinde çok sakin ve mutlu görünüyordu. Eşim Mary benden daha endişeliydi. Matthew'un yaratıcı zihniyle ilgili bir sorunu olabileceğini düşündü. Bir şaka mı yaptığını yoksa evimizde gerçekten alışılmadık bir şey mi olduğunu anlamak için onu yakından izlemeye karar verdik.",
+      "Oğlum Matthew normal, on iki yaşında bir çocuktu. Futbol oynamayı, bilgisayar oyunlarını ve sessiz mahallemizde bisiklete binmeyi severdi. Bir akşam, eşim Mary ve ben onun davranışlarında bir değişiklik fark ettik. Yatak odasında kendi kendine konuşmaya başladı. Başta bunun sadece tuhaf bir oyun ya da rüya olduğunu düşündük. Matthew genellikle çok akıllı bir çocuk olduğu için fazla önemsemedik. Ancak konuşmalar birkaç gün boyunca devam etti. Yemek masasında oturur ve kimsenin sormadığı sorulara cevap verirdi. Ona kiminle konuştuğunu sorduğumda gülümsedi ve arkadaşının görünmez olduğunu söyledi. Arkadaşına bir isim verdi: Chocky. Güldük ama içten içe onun bu yeni gizli arkadaşı hakkında biraz endişelendim. Her geçen gün bizden çok önemli bir şeyi saklıyor gibi görünüyordu.",
+      "Matthew yeni beceriler göstermeye başladığında durum daha ilginç bir hal aldı. Yakında daha önce hiç öğrenmediği şeyleri bilmeye başladı. Yaşındaki bir çocuk için çok zor olan karmaşık şekiller ve desenler çizmeye başladı. Bir sabah, kasabamıza benzemeyen bir yerin resmini çizmeye çalıştı. Gökyüzünde iki güneşi olan ve camdan yapılmış garip binaların olduğu bir yerdi. Ona bu şeyleri nerede gördüğünü sorduğumda, Chocky'nin kendisine anlattığını söyledi. Matthew bu gizli ziyaretçiden bahsettiğinde çok sakin ve mutlu görünüyordu. Eşim Mary benden daha endişeliydi. Matthew'un hayal gücüyle ilgili bir sorunu olabileceğini düşündü. Bir şaka mı yaptığını yoksa evimizde gerçekten alışılmadık bir şey mi olduğunu anlamak için onu yakından izlemeye karar verdik.",
       "Birkaç gün sonra Matthew kahvaltıda bizi şaşırttı. Chocky'nin sadece hayali bir kişi olmadığını açıkladı. Bize Chocky'nin yıldızların çok uzağındaki başka bir dünyadan geldiğini söyledi. Matthew'a göre bu varlık Dünya'yı izliyor ve yaşamlarımız hakkında bilgi edinmek istiyordu. Kulağa bir hikaye gibi geliyordu ama Matthew söyledikleri konusunda çok ciddiydi. Hiç şaka yapmıyordu. Chocky'yi güneş sistemimize getiren gemiyi tarif etti. Konuşma tarzı normal bir çocuğun konuşmasından farklıydı. Sesi bazen değişiyor ve yaşı için fazla zekice kelimeler kullanıyordu. Mutfakta oturmuş, kafamız karışmış ve korkmuş bir haldeydik. Sıradan hayatımız hızla değişiyordu ve gözlerimizin önünde gelişen bu tuhaf olayı anlaması için oğlumuza nasıl yardım edeceğimizi bilmiyorduk.",
-      "Bir hafta sonu, Matthew bize gerçekten şaşırtıcı bir şey göstermeye karar verdi. Bizi bahçeye davet etti. Chocky'nin ona özel bir oyuncak tekneyi küçük göletimizde nasıl hareket ettireceğini göstermek istediğini söyledi. Biraz kafamız karışmış bir halde onu dışarı kadar takip ettik. Matthew suyun kenarında durdu ve gözlerini kapattı. Tekneye hiç dokunmadı. Sadece ellerini havada yavaş ve dikkatli bir şekilde hareket ettirdi. Yakında, ahşap tekne suyun üzerinde hareket etmeye başladı. Ellerinin hareketlerini takip ederek sağa ve sola döndü. Mary'ye baktım ve şoktan beti benzi atmıştı. Rüzgar yoktu ve suyun içinde görünmez ipler ya da metal parçalar yoktu. Oğlum tekneyi zihniyle kontrol ediyordu ya da belki başka biri bunu onun aracılığıyla yapıyordu. Bu gerçek bir büyü ve korku anıydı.",
-      "Tekne olayından sonra, işler daha da hızlı değişmeye başladı. Matthew odasında güzel resimler yapmaya başladı. Doğada daha önce hiç görmediğim renkler kullanıyordu. Resimlerindeki şekiller matematik problemleri veya bilinmeyen uzay gruplarının haritaları gibiydi. Onunla bu resimler hakkında konuşmaya çalıştım ama o sadece gizemli bir gülümsemeyle gülümsedi. Bana Chocky'nin ona dünyanın sırlarını göstermekten hoşlandığını söyledi. Oğlumun benden uzaklaşıp anlayamadığım bir dünyaya doğru gittiğini hissettim. Bazen onu sessizce otururken, sadece kendisinin duyabildiği sesleri dinlerken buluyordum. Chocky'nin ona okulumuzdaki hiçbir öğretmenin açıklayamayacağı şeyler öğrettiği çok açıktı. Yardım etmek istedim ama kendi evimde bir yabancı gibi hissediyordum; çocuğumun çok farklı bir şeye dönüşmesini izliyordum.",
-      "Mary, Matthew'a yardım etmesi için bir doktor ya da uzman bulmamızı önerdi. Bu görünmez arkadaşın onun zihnini kontrol altına almasından endişeleniyorduk. Bir akşam, uzun bir konuşma için Matthew ile oturdum. Ona doğrudan Chocky'nin iyi bir arkadaş mı olduğunu yoksa ondan bir şey mi istediğini sordum. Matthew bana çok ciddi gözlerle baktı. Chocky'nin sadece meraklı olduğunu ve kimseye bir zarar vermek istemediğini söyledi. Bağlantılarının iki dünya arasında bir köprü gibi olduğunu açıkladı. Ona gitmesini istersek Chocky'nin gidebilip gidemeyeceğini sordum. Matthew uzun süre sessiz kaldı, sonra en sonunda başını iki yana salladı. Görünüşe göre Chocky bir süre daha bizimle kalacaktı. Bilmemezlik hissi kalplerimize ağır bir şekilde çökmeye başladığında bu gizemi durduramayacağımızı anladık.",
-      "Matthew İngilizce olmayan bir dilde konuşmaya başladığında gizem daha da büyüdü. Başka bir gezegenden gelen bir şarkı gibi hissettiren tuhaf sesler ve karmaşık desenlerle konuşuyordu. Eşim Mary ve ben, akşam yemeği masasında otururken onu derin bir endişeyle izledik. Hemen yanındaki biriyle konuşuyor gibi görünüyordu. Ona kiminle konuştuğunu sorduğumda, sadece Chocky'nin ışığın farklı hareket ettiği bir yer hakkında hikayeler paylaştığını söyledi. Küçük oğlumun insan anlayışının ötesinde şeyler öğrendiğini kabul etmek çok zordu. Chocky'nin bir hatıra mı yoksa uzak bir uzaydan gelen bir ruh mu olduğunu merak etmeye başladım. Ev sanki dünyamıza ait olmayan bir ziyaretçiyle yaşıyormuşuz gibi daha küçük ve soğuk geliyordu. Cevaplar için umutsuzdum ama sadece daha fazla kafa karışıklığı buldum.",
-      "Bir sabah Matthew uyandı ve büyük bir kağıt üzerine harita çizmeye başladı. Karmaşık bir yol sistemine benzeyen çizgiler oluşturmak için bir kalem kullandı. Chocky'nin eve giden yolu hatırlamasını istediğini söyledi. Ona bizden ayrılmak isteyip istemediğini sordum ve yüzü üzüntüden kızardı. Bizi sevdiğini ama aynı zamanda gizli arkadaşına karşı bir görevi olduğunu açıkladı. Bu beni çok çaresiz hissettirdi. Çocuğunu göremediğim veya dokunamadığım bir etkiden koruyamayan bir babaydım. Mary ve ben olağan dışı olayları inceleyen bir öğretmeni ziyaret etmeye karar verdik. Bize olan bitenler için bilimsel bir açıklama yapabileceğini umuyorduk. Matthew'un güvende olup olmadığını veya bir şeyin beynini ve kişiliğini sonsuza dek yavaşça değiştirip değiştirmediğini bilmemiz gerekiyordu.",
+      "Bir hafta sonu, Matthew bize gerçekten şaşırtıcı bir şey göstermeye karar verdi. Bizi bahçeye davet etti. Chocky'nin ona özel bir oyuncak tekneyi küçük göletimizde nasıl hareket ettireceğini göstermek istediğini söyledi. Biraz kafamız karışmış bir halde onu dışarı kadar takip ettik. Matthew suyun kenarında durdu ve gözlerini kapattı. Tekneye hiç dokunmadı. Sadece ellerini havada yavaş ve dikkatli bir şekilde hareket ettirdi. Yakında, ahşap tekne suyun üzerinde hareket etmeye başladı. Ellerinin hareketlerini takip ederek sağa ve sola döndü. Mary'ye baktım ve şoktan beti benzi atmıştı. Rüzgar yoktu ve suyun içinde gizli ipler ya da mıknatıslar yoktu. Oğlum tekneyi zihniyle kontrol ediyordu ya da belki başka biri bunu onun aracılığıyla yapıyordu. Bu gerçek bir büyü ve korku anıydı.",
+      "Tekne olayından sonra, işler daha da hızlı değişmeye başladı. Matthew odasında güzel resimler yapmaya başladı. Doğada daha önce hiç görmediğim renkler kullanıyordu. Resimlerindeki şekiller denklemler veya bilinmeyen galaksilerin haritaları gibiydi. Onunla bu resimler hakkında konuşmaya çalıştım ama o sadece gizemli bir gülümsemeyle gülümsedi. Bana Chocky'nin ona dünyanın sırlarını göstermekten hoşlandığını söyledi. Oğlumun benden uzaklaşıp anlayamadığım bir dünyaya doğru gittiğini hissettim. Bazen onu sessizce otururken, sadece kendisinin duyabildiği sesleri dinlerken buluyordum. Chocky'nin ona okulumuzdaki hiçbir öğretmenin açıklayamayacağı şeyler öğrettiği çok açıktı. Yardım etmek istedim ama kendi evimde bir yabancı gibi hissediyordum; çocuğumun çok farklı bir şeye dönüşmesini izliyordum.",
+      "Mary, Matthew'a yardım etmesi için bir doktor ya da uzman bulmamızı önerdi. Bu görünmez arkadaşın onun zihnini kontrol altına almasından endişeleniyorduk. Bir akşam, uzun bir konuşma için Matthew ile oturdum. Ona doğrudan Chocky'nin iyi bir arkadaş mı olduğunu yoksa ondan bir şey mi istediğini sordum. Matthew bana çok ciddi gözlerle baktı. Chocky'nin sadece meraklı olduğunu ve kimseye bir zarar vermek istemediğini söyledi. Bağlantılarının iki dünya arasında bir köprü gibi olduğunu açıkladı. Ona gitmesini istersek Chocky'nin gidebilip gidemeyeceğini sordum. Matthew uzun süre sessiz kaldı, sonra en sonunda başını iki yana salladı. Görünüşe göre Chocky bir süre daha bizimle kalacaktı. Belirsizlik kalplerimize ağır bir şekilde çökmeye başladığında bu gizemi durduramayacağımızı anladık.",
+      "Matthew İngilizce olmayan bir dilde konuşmaya başladığında gizem daha da büyüdü. Başka bir gezegenden geliyormuş gibi hissettiren tuhaf sesler ve karmaşık ritimlerle konuşuyordu. Eşim Mary ve ben, akşam yemeği masasında otururken onu derin bir endişeyle izledik. Hemen yanındaki biriyle konuşuyor gibi görünüyordu. Ona kiminle konuştuğunu sorduğumda, sadece Chocky'nin ışığın farklı hareket ettiği bir yer hakkında hikayeler paylaştığını söyledi. Küçük oğlumun insan anlayışının ötesinde şeyler öğrendiğini kabul etmek çok zordu. Chocky'nin bir hatıra mı yoksa uzak bir uzaydan gelen bir ruh mu olduğunu merak etmeye başladım. Ev sanki dünyamıza ait olmayan bir ziyaretçiyle yaşıyormuşuz gibi daha küçük ve soğuk geliyordu. Cevaplar için umutsuzdum ama sadece daha fazla kafa karışıklığı buldum.",
+      "Bir sabah Matthew uyandı ve büyük bir kağıt üzerine harita çizmeye başladı. Karmaşık bir yol sistemine benzeyen çizgiler oluşturmak için bir kalem kullandı. Chocky'nin eve giden yolu hatırlamasını istediğini söyledi. Ona bizden ayrılmak isteyip istemediğini sordum ve yüzü üzüntüden kızardı. Bizi sevdiğini ama aynı zamanda gizli arkadaşına karşı bir sorumluluğu olduğunu açıkladı. Bu beni çok çaresiz hissettirdi. Çocuğunu göremediğim veya dokunamadığım bir etkiden koruyamayan bir babaydım. Mary ve ben olağan dışı olayları inceleyen bir öğretmeni ziyaret etmeye karar verdik. Bize olan bitenler için bilimsel bir açıklama yapabileceğini umuyorduk. Matthew'un güvende olup olmadığını veya bir şeyin beynini ve kişiliğini sonsuza dek yavaşça değiştirip değiştirmediğini bilmemiz gerekiyordu.",
       "Öğretmen görüşmemiz sırasında Matthew'a uzun süre baktı. Çocuğun aniden durup gözleri açık bir şekilde tavana bakışını gözlemledi. Bize Matthew'un belki de türümüz ile başka bir zeka arasında bir köprü olduğunu söyledi. Bu bilgi geleceğimiz hakkında kendimi daha da kaygılı hissetmeme neden oldu. Kontrol edemediğimiz bir hikayenin parçası gibi hissederek eve döndük. Matthew zamanını mantığa meydan okuyan renkler ve şekillerle oynamaya devam etti. Artık eski oyuncaklarıyla nadiren oynuyordu. Bunun yerine bahçede oturur ve ellerini gökyüzüne doğru uzatırdı. Sadece kendisinin tanıyabileceği bir işareti beklediğini görebiliyordum. Çocuk ile gizli ziyaretçi arasındaki bağ her geçen gün güçleniyordu ve ailemiz yavaşça parçalanıyormuş gibi hissediyorduk.",
-      "Matthew'a karşı hükümet çalışanlarının ilgisi artmaya başladıkça baskı da büyüdü. Gölgelerin arasından bizi izledikleri ve onun tuhaf yeteneklerinin ardındaki sırrı öğrenmek istedikleri çok açıktı. Nereye gidersek gidelim koyu renkli takım elbiseli adamlar bizi takip ettiği için kendi evimde bir mahkûm gibi hissediyordum. Mary çok korkuyordu ve her gece ağlıyordu, Matthew ise sanki tehlikeyi anlamıyormuş gibi sakindi. Zamanının çoğunu uzaydan gelen araçlara benzeyen karmaşık makineler çizmeye çalışarak harcıyordu. Bunların Chocky'nin yıldızlar arası seyahat etmek için kullandığı araçlar olduğunu açıkladı. Gerçeği dünyadan saklamak artık imkansız hale geliyordu. Oğlumun artık sadece bir çocuk olmadığını, hükümetin kendi bencil ve gizli güçleri için kontrol etmek istediği bir şeye giden bir köprü olduğunu anladım.",
-      "Bir akşam bir hükümet ofisinden bir adam bizi ziyaret etti. Kibardı ama gözleri bıçak gibi soğuk ve keskindi. Chocky ve Matthew'un yaptığı çizimler hakkında birçok soru sordu. Oğlumu sadece bir çocuğun aktif yaratıcı zihni olduğunu söyleyerek korumaya çalıştım ama adam hafifçe güldü. Bize Matthew'un konuştuğu tuhaf dili bildiklerini kanıtlayan belgeler gösterdi. Ailemiz için korkunç bir andı. Ancak Matthew korkmuş görünmüyordu. Adama baktı ve yıldızları eski bir şiir gibi tanımlamaya başladı. Adam şaşkın görünüyordu ve evimizden hızla ayrıldı. Yine yalnız kaldık ama sessizlik, hükümet insanlarının onu bizden alıp gizli bir üsse götürmeyi planladıkları bilgisiyle ağırlaşmıştı.",
-      "Bir çözüm bulmak için vaktimizin daraldığını anladık. Matthew günlük hayatımızla olan bağını kaybetmeye başlıyordu. Bizim duyamadığımız sesleri dinlemekle meşgul olduğu için genellikle adını seslendiğimizde cevap vermiyordu. Çizimleri, galaksi boyunca uzanan parlayan yolları göstererek daha karmaşık hale geldi. Koyu renkli elbiseli adamlar geri dönmeden önce onu güvenli bir yere saklamamız gerektiğine karar verdik. Kalbim kırılıyordu çünkü arkadaşıyla olması gerektiğini biliyordum ama aynı zamanda sonsuza kadar bizimle kalmasını da istiyordum. Kendi ülkemizde mülteci gibi hissederek çantalarımızı topladık. Chocky gizemi artık sadece bir hikaye değildi; sevdiğimiz çocuğu tüm dünyanın geri kalanı için bilimsel bir test olmaktan kurtarmak adına zamana karşı bir yarıştı.",
-      "Hükümet adamları karanlık, yağmurlu bir gecede evimize geri döndüler. Parlak araba ışıkları yatak odası pencerelerimizden içeri girerken kendi duvarlarımızın içinde kapana kısılmış hissettik. Bu sefer nazik değillerdi; derhal Matthew'u görmek istediler. Eşim Mary beni sıkıca tuttu, elleri derin bir korkuyla titriyordu. Kalbim göğsümde hızla çarpmasına rağmen cesur olmaya çalışarak oğlumun önünde durdum. Matthew sakince ileri adım attı ve adamlara baktı. Odayı sakin bir enerjiyle dolduran tuhaf, şarkı söyleyen bir sesle konuşmaya başladı. Adamlar oldukları yerde durdular, şaşkın ve aniden çok küçük görünüyorlardı. Bir çocuğu çalışmaları için almaya gelmişlerdi ama onun içindeki güce hazırlıklı değillerdi. Matthew evrenin sırlarını açıklamaya başladığında hava elektrikle vızıldıyor gibiydi.",
-      "Aniden evdeki ışıklar titremeye başladı ve söndü, bizi tamamen karanlığa gömdü. Matthew'un etrafında, teninin derinliklerinden parlayan yumuşak, mavi bir ışık belirmeye başladı. Adamlar kağıtlarını düşürdüler ve tam bir inançsızlık içinde geri çekilerek nefes nefese kaldılar. Chocky, arkadaşını korumak için nihayet gerçek doğasını gösteriyordu. Bu şiddetli bir gösteri değil, Matthew'un artık bize ait olmadığını söyleyen sessiz, güçlü bir ışıktı. Hükümet ajanları hareketsiz duruyor, kımıldayamıyor hatta konuşamıyorlardı. O an Matthew'un sadece bilim insanları tarafından izlenen bir çocuk olmadığını, anlayamadığımız bir yerden gelen bir ziyaretçi olduğunu fark ettim. Mavi ışık o kadar parlaklaştı ki hiçbir şeyi görememek için yüzümüzü kapatmak zorunda kaldık; o, hüzünlü ve bilge gözlerle bize son bir kez baktı.",
-      "Işık nihayet söndüğünde ev sessizdi ve hava tekrar soğumuştu. Siyah takım elbiseli adamlar gitmişti, sokakta sadece boş arabaları kalmıştı. Matthew odanın ortasında duruyor, yine normal, yorgun bir çocuk gibi görünüyordu. Olan hiçbir şeyi hatırlamıyordu ve bize tatlı, şaşkın bir gülümsemeyle baktı. Chocky, gelişmiş bilgisini ve gizli geçmişini alarak yıldızlara geri dönmüştü. Sonunda güvendeydik ama ev boş ve sessiz hissediliyordu. Basit hayatlarımızı sonsuza dek değiştiren büyük bir olayın parçası olduğumuzu anladık. Oğlum geri dönmüştü ama adlandıramadığımız şekillerde değişmişti. O günden sonra huzur içinde yaşadık, gece gökyüzüne her zaman sevgiyle baktık."
+      "Matthew'a karşı hükümet yetkililerinin ilgisi artmaya başladıkça baskı da büyüdü. Gölgelerin arasından bizi izledikleri ve onun tuhaf yeteneğinin ardındaki sırrı öğrenmek istedikleri çok açıktı. Nereye gidersek gidelim koyu renkli takım elbiseli adamlar bizi takip ettiği için kendi evimde bir mahkûm gibi hissediyordum. Mary çok korkuyordu ve her gece ağlıyordu, Matthew ise sanki tehlikeyi anlamıyormuş gibi sakindi. Zamanının çoğunu uzaydan gelen araçlara benzeyen karmaşık makineler çizmeye çalışarak harcıyordu. Bunların Chocky'nin yıldızlar arası seyahat etmek için kullandığı araçlar olduğunu açıkladı. Gerçeği dünyadan saklamak artık imkansız hale geliyordu. Oğlumun artık sadece bir çocuk olmadığını, hükümetin kendi bencil ve gizli güçleri için kontrol etmek istediği bir şeye giden bir köprü olduğunu anladım.",
+      "Bir akşam bir hükümet ofisinden bir adam bizi ziyaret etti. Kibardı ama gözleri bıçak gibi soğuk ve keskindi. Chocky ve Matthew'un yaptığı çizimler hakkında birçok soru sordu. Oğlumu sadece bir çocuğun aktif hayal gücü olduğunu söyleyerek korumaya çalıştım ama adam hafifçe güldü. Bize Matthew'un konuştuğu tuhaf dili bildiklerini kanıtlayan belgeler gösterdi. Ailemiz için korkunç bir andı. Ancak Matthew korkmuş görünmüyordu. Adama baktı ve yıldızları eski bir şiir gibi tanımlamaya başladı. Adam şaşkın görünüyordu ve evimizden hızla ayrıldı. Yine yalnız kaldık ama sessizlik, yetkililerin onu bizden alıp gizli bir üsse götürmeyi planladıkları bilgisiyle ağırlaşmıştı.",
+      "Bir çözüm bulmak için vaktimizin daraldığını anladık. Matthew günlük hayatımızla olan bağını kaybetmeye başlıyordu. Bizim duyamadığımız sesleri dinlemekle meşgul olduğu için genellikle adını seslendiğimizde cevap vermiyordu. Çizimleri, galaksi boyunca uzanan parlayan yolları göstererek daha karmaşık hale geldi. Koyu renkli elbiseli adamlar geri dönmeden önce onu güvenli bir yere saklamamız gerektiğine karar verdik. Kalbim kırılıyordu çünkü arkadaşıyla olması gerektiğini biliyordum ama aynı zamanda sonsuza kadar bizimle kalmasını da istiyordum. Kendimizi mülteci gibi hissederek çantalarımızı topladık. Chocky gizemi artık sadece bir hikaye değildi; sevdiğimiz çocuğu tüm dünyanın geri kalanı için bilimsel bir deney olmaktan kurtarmak adına zamana karşı bir yarıştı.",
+      "Hükümet adamları karanlık, yağmurlu bir gecede evimize geri döndüler. Parlak araba ışıkları yatak odası pencerelerimizden içeri girerken kendi duvarlarımızın içinde kapana kısılmış hissettik. Bu sefer nazik değillerdi; derhal Matthew'u görmek istediler. Eşim Mary beni sıkıca tuttu, elleri derin bir korkuyla titriyordu. Kalbim göğsümde hızla çarpmasına rağmen cesur olmaya çalışarak oğlumun önünde durdum. Matthew sakince ileri adım attı ve adamlara baktı. Odayı sakin bir enerjiyle dolduran tuhaf, şarkı söyleyen bir sesle konuşmaya başladı. Adamlar oldukları yerde durdular, şaşkın ve aniden çok küçük görünüyorlardı. Bir çocuğu araştırmaları için almaya gelmişlerdi ama onun içindeki güce hazırlıklı değillerdi. Matthew evrenin sırlarını açıklamaya başladığında hava elektrikle vızıldıyor gibiydi.",
+      "Aniden evdeki ışıklar titremeye başladı ve söndü, bizi tamamen karanlığa gömdü. Matthew'un etrafında, teninin derinliklerinden parlayan yumuşak, mavi bir ışık belirmeye başladı. Adamlar kağıtlarını düşürdüler ve tam bir inançsızlık içinde geri çekilerek nefes nefese kaldılar. Chocky, arkadaşını korumak için nihayet gerçek doğasını gösteriyordu. Bu şiddetli bir gösteri değil, Matthew'un artık bize ait olmadığını söyleyen sessiz, güçlü bir ışıktı. Hükümet ajanları hareketsiz duruyor, kımıldayamıyor hatta konuşamıyorlardı. O an Matthew'un sadece bilim insanları tarafından izlenen bir child olmadığını, anlayamadığımız bir yerden gelen bir ziyaretçi olduğunu fark ettim. Mavi ışık hepimizin bir şey görebilmek için yüzlerimizi kapatmasını gerektirecek kadar parlaklaşmadan önce, bize son bir kez hüzünlü ve bilge gözlerle baktı.",
+      "Işık nihayet kaybolduğunda ev sessizdi ve hava tekrar soğumuştu. Siyah takım elbiseli adamlar gitmişti, sokakta sadece boş arabaları kalmıştı. Matthew odanın ortasında duruyor, yine normal, yorgun bir çocuk gibi görünüyordu. Olan hiçbir şeyi hatırlamıyordu ve bize tatlı, şaşkın bir gülümsemeyle baktı. Chocky, gelişmiş bilgisini ve gizli geçmişini alarak yıldızlara geri dönmüştü. Sonunda güvendeydik ama ev boş ve sessiz hissediliyordu. Basit hayatlarimizi sonsuza dek değiştiren büyük bir olayın parçası olduğumuzu anladık. Oğlum geri dönmüştü ama adlandıramadığımız şekillerde değişmişti. O günden sonra huzur içinde yaşadık, gece gökyüzüne her zaman sevgiyle baktık."
     ],
     words: {
       "neighborhood": "mahalle",
@@ -15829,32 +15913,32 @@ export const STORIES_PART1: RawStory[] = [
       "invisible": "görünmez",
       "complex": "karmaşık",
       "mysterious": "gizemli",
-      "unfolding": "meydana gelen",
+      "unfold": "gözler önüne serilmek",
       "pond": "gölet",
       "magnet": "mıknatıs",
       "galaxy": "galaksi",
-      "equation": "matematik problemi",
+      "equation": "denklem",
       "curious": "meraklı",
-      "uncertainty": "bilmemezlik",
+      "uncertainty": "belirsizlik",
       "rhythm": "ritim",
-      "responsibility": "görev",
-      "intelligence": "istihbarat",
+      "responsibility": "sorumluluk",
+      "intelligence": "zeka",
       "defy": "karşı gelmek",
       "anxious": "kaygılı",
-      "official": "hükümet çalışanı",
+      "official": "yetkili",
       "ability": "yetenek",
-      "imagination": "yaratıcı zihin",
-      "authority": "hükümet makamı",
-      "experiment": "test",
+      "imagination": "hayal gücü",
+      "authority": "yetkili",
+      "experiment": "deney",
       "government": "hükümet",
-      "trap": "kapana kısılmak",
-      "research": "çalışma",
+      "trap": "kapana kısmak",
+      "research": "araştırma",
       "flicker": "titremek",
       "disbelief": "inançsızlık",
-      "fade": "sönmek/kaybolmak"
+      "fade": "kaybolmak"
     }
   },
-              {
+                {
     id: 'scifi_wells_star',
     title: "The Star",
     author: 'H. G. Wells',
@@ -15896,33 +15980,451 @@ export const STORIES_PART1: RawStory[] = [
     ],
     words: {
       "star": "yıldız",
-      "observatory": "gözlem yeri",
-      "telescope": "özel araç",
-      "astronomer": "uzay uzmanı",
-      "atmosphere": "hava",
-      "disaster": "kötü olay",
-      "intense": "güçlü",
-      "tide": "su seviyesi",
-      "collision": "çarpışma",
-      "frightening": "korkutucu",
-      "survive": "hayatta kalmak",
-      "steady": "sabit",
-      "furnace": "fırın",
-      "geography": "arazi",
-      "cosmic": "kozmik",
-      "immense": "büyük",
-      "collapse": "yıkılmak",
-      "spectacle": "görünüm",
-      "inevitable": "kaçınılmaz",
-      "grandeur": "güç",
-      "civilization": "dünya/yaşam şekli",
+      "light": "ışık",
+      "strange": "garip",
+      "giant": "dev",
+      "burning": "yanık",
+      "tool": "alet",
+      "afraid": "korkmuş",
+      "system": "sistem",
+      "newspaper": "gazete",
+      "danger": "tehlike",
+      "beautiful": "güzel",
+      "planet": "gezegen",
+      "history": "tarih",
+      "space": "uzay",
+      "study": "incelemek",
+      "night": "gece",
+      "movement": "hareket",
+      "path": "yol",
+      "sun": "güneş",
+      "news": "haberler",
+      "street": "sokak",
+      "end": "sona ermek",
+      "world": "dünya",
+      "pray": "dua etmek",
+      "church": "kilise",
+      "home": "yuva",
+      "wait": "beklemek",
+      "expert": "uzman",
+      "larger": "daha büyük",
+      "brighter": "daha parlak",
+      "color": "renk",
+      "blood": "kan",
+      "secret": "sır",
+      "air": "hava",
+      "heat": "ısı",
+      "object": "nesne",
+      "affect": "etkilemek",
+      "worry": "endişe",
+      "city": "şehir",
+      "slowly": "yavaşça",
+      "pass": "geçmek",
+      "leave": "arkasında bırakmak",
+      "house": "ev",
+      "field": "alan",
+      "closer": "daha yakın",
+      "rise": "yükselmek",
+      "wind": "rüzgar",
+      "dry": "kuru",
+      "summer": "yaz",
+      "winter": "kış",
+      "sea": "deniz",
+      "unusual": "alışılmadık",
+      "behave": "davranmak",
+      "wave": "dalga",
+      "high": "yüksek",
+      "water": "su",
+      "land": "kara",
+      "safety": "güvenlik",
+      "force": "güç",
+      "deep": "derin",
+      "leader": "lider",
+      "meeting": "toplantı",
+      "prepare": "hazırlanmak",
+      "bad": "kötü",
       "event": "olay",
-      "survivor": "hayatta kalan",
-      "ancestor": "aile (eskiden)",
-      "galaxy": "gökyüzü"
+      "weak": "zayıf",
+      "power": "güç",
+      "glow": "parıltı",
+      "quickly": "hızla",
+      "fire": "ateş",
+      "impossible": "imkansız",
+      "directly": "doğrudan",
+      "strong": "güçlü",
+      "inside": "içinde",
+      "avoid": "kaçınmak",
+      "plant": "bitki",
+      "garden": "bahçe",
+      "die": "ölmek",
+      "rain": "yağmur",
+      "ground": "yer",
+      "hard": "sert",
+      "feet": "ayaklar",
+      "everywhere": "her yer",
+      "tired": "yorgun",
+      "scared": "korkmuş",
+      "soon": "yakında",
+      "hour": "saat",
+      "simple": "basit",
+      "powerful": "güçlü",
+      "toward": "doğru",
+      "speed": "hız",
+      "ocean": "okyanus",
+      "level": "seviye",
+      "seen": "görmek",
+      "before": "önce",
+      "huge": "devasa",
+      "coast": "kıyı",
+      "hit": "çarpmak",
+      "beach": "plaj",
+      "run away": "kaçmak",
+      "mountain": "dağ",
+      "safe": "güvenli",
+      "ship": "gemi",
+      "town": "kasaba",
+      "covered": "kaplı",
+      "angry": "öfkeli",
+      "blue": "mavi",
+      "smoke": "duman",
+      "dust": "toz",
+      "difficult": "zor",
+      "breathe": "nefes almak",
+      "well": "iyi",
+      "office": "ofis",
+      "shop": "dükkan",
+      "busy": "meşgul",
+      "find": "bulmak",
+      "way": "şekil",
+      "escape": "kaçmak",
+      "disaster": "felaket",
+      "control": "kontrol etmek",
+      "life": "hayat",
+      "corner": "köşe",
+      "quiet": "sessiz",
+      "worst": "en kötü",
+      "gather": "toplanmak",
+      "food": "yiyecek",
+      "hope": "umut etmek",
+      "enough": "yeterli",
+      "alive": "hayatta",
+      "live": "yaşamak",
+      "hot": "sıcak",
+      "flame": "alev",
+      "amazing": "şaşırtıcı",
+      "scary": "korkutucu",
+      "sight": "görüntü",
+      "bathed": "yıkanmak",
+      "bird": "kuş",
+      "animal": "hayvan",
+      "silent": "sessiz",
+      "sure": "emin",
+      "crash": "çarpmak",
+      "near": "yakın",
+      "warn": "uyarmak",
+      "open": "açılmak",
+      "area": "alan",
+      "tall": "uzun",
+      "building": "bina",
+      "hide": "saklanmak",
+      "universe": "evren",
+      "entire": "tüm",
+      "population": "nüfus",
+      "silence": "sessizlik",
+      "final": "nihai",
+      "moment": "an",
+      "master": "efendi",
+      "day": "gün",
+      "terrible": "korkunç",
+      "daily": "günlük",
+      "river": "nehir",
+      "up": "yukarı",
+      "crack": "çatlak",
+      "life-giving": "hayat veren",
+      "liquid": "sıvı",
+      "once": "bir zamanlar",
+      "flowed": "akmak",
+      "normal": "normal",
+      "clothes": "kıyafetler",
+      "fabric": "kumaş",
+      "cool": "soğumak",
+      "room": "oda",
+      "under": "altında",
+      "bright": "parlak",
+      "oven": "fırın",
+      "orange": "turuncu",
+      "tree": "ağaç",
+      "park": "park",
+      "brown": "kahverengi",
+      "leaf": "yaprak",
+      "green": "yeşil",
+      "middle": "ortası",
+      "long": "uzun",
+      "person": "kişi",
+      "heavy": "ağır",
+      "heart": "kalp",
+      "wondering": "merak etmek",
+      "longer": "daha uzun",
+      "exist": "var olmak",
+      "intense": "yoğun",
+      "painful": "acı verici",
+      "losing": "kaybetmek",
+      "battle": "savaş",
+      "dangerous": "tehlikeli",
+      "wall": "duvar",
+      "seawater": "deniz suyu",
+      "into": "içine",
+      "destroy": "yok etmek",
+      "road": "yol",
+      "everything": "her şey",
+      "human": "insan",
+      "build": "inşa etmek",
+      "work": "emek",
+      "family": "aile",
+      "lose": "kaybetmek",
+      "minute": "dakika",
+      "swallow": "yutmak",
+      "sound": "ses",
+      "roar": "kükreme",
+      "wild": "vahşi",
+      "climb": "tırmanmak",
+      "higher": "daha yüksek",
+      "follow": "takip etmek",
+      "enemy": "düşman",
+      "stop": "durmak",
+      "clear": "açık",
+      "forever": "sonsuza dek",
+      "change": "değişiklik",
+      "island": "ada",
+      "full": "dolu",
+      "gone": "gitmiş",
+      "buried": "gömülü",
+      "salt": "tuz",
+      "dark": "karanlık",
+      "moving": "hareketli",
+      "foam": "köpük",
+      "restless": "huzursuz",
+      "thick": "yoğun",
+      "forest": "orman",
+      "catch fire": "alev almak",
+      "extreme": "aşırı",
+      "grey": "gri",
+      "cloud": "bulut",
+      "cover": "kaplamak",
+      "block": "engellemek",
+      "view": "görünüm",
+      "sky": "gökyüzü",
+      "dream": "rüya",
+      "walk": "yürümek",
+      "wet": "ıslak",
+      "cloth": "bez",
+      "face": "yüz",
+      "protect": "korumak",
+      "lung": "ciğer",
+      "joy": "neşe",
+      "left": "kalmak",
+      "only": "tek",
+      "fear": "korku",
+      "next": "sonraki",
+      "bring": "getirmek",
+      "us": "us",
+      "know": "bilmek",
+      "watch": "izlemek",
+      "move": "hareket etmek",
+      "touch": "dokunmak",
+      "immense": "muazzam",
+      "pressure": "baskı",
+      "pull": "çekim gücü",
+      "base": "temel",
+      "great": "büyük",
+      "earthquake": "deprem",
+      "rock": "kaya",
+      "continent": "kıta",
+      "fall": "yıkılmak",
+      "card": "kart",
+      "run": "koşmak",
+      "beneath": "altında",
+      "wide": "geniş",
+      "pit": "çukurlar",
+      "time": "zaman",
+      "total": "tam",
+      "confusion": "kafa karışıklığı",
+      "despair": "umutsuzluk",
+      "humanity": "insanlık",
+      "peaceful": "huzurlu",
+      "boil": "kaynamak",
+      "steam": "buhar",
+      "sheer": "yoğun",
+      "strength": "güç",
+      "vapor": "buhar",
+      "darkness": "karanlık",
+      "feel": "hissetmek",
+      "slip away": "kayıp gitmek",
+      "replace": "yerini almak",
+      "hollow": "boş",
+      "echo": "yankılanmak",
+      "across": "boyunca",
+      "ruined": "yıkık",
+      "broken": "kırık",
+      "landscape": "manzara",
+      "unbearable": "dayanılmaz",
+      "itself": "kendisi",
+      "disappear": "kaybolmak",
+      "completely": "tamamen",
+      "bed": "yatak",
+      "scar": "yara izi",
+      "earth": "Dünya",
+      "stone": "taş",
+      "felt": "hissetmek",
+      "smell": "koku",
+      "wood": "odun",
+      "melting": "eriyen",
+      "material": "malzeme",
+      "many": "birçok",
+      "underground": "yeraltı",
+      "shelter": "sığınak",
+      "through": "içinden",
+      "knew": "bilmek",
+      "horizon": "ufuk",
+      "shine": "parlamak",
+      "terrifying": "korkutucu",
+      "blinding": "kör edici",
+      "come down": "aşağı inmek",
+      "meet": "karşılamak",
+      "hug": "kucaklaşma",
+      "struggle": "mücadele",
+      "reach": "ulaşmak",
+      "nothing": "hiçbir şey",
+      "do": "yapmak",
+      "but": "ama",
+      "inevitable": "kaçınılmaz",
+      "arrive": "varmak",
+      "terror": "dehşet",
+      "despite": "rağmen",
+      "beauty": "güzellik",
+      "destruction": "yıkım",
+      "appear": "görünmek",
+      "magnificent": "muhteşem",
+      "deadly": "ölümcül",
+      "glowing": "parlayan",
+      "swirling": "dönen",
+      "paint": "boyamak",
+      "shade": "ton",
+      "red": "kırmızı",
+      "yellow": "sarı",
+      "white": "beyaz",
+      "create": "yaratmak",
+      "scene": "sahne",
+      "artist": "sanatçı",
+      "capture": "yakalamak",
+      "look up": "yukarı bakmak",
+      "intruder": "misafir",
+      "cause": "sebep",
+      "unable": "yapamamak",
+      "away": "uzak",
+      "heaven": "gökyüzü",
+      "natural": "doğal",
+      "special": "özel",
+      "small": "küçük",
+      "fragile": "kırılgan",
+      "witness": "tanık olmak",
+      "collide": "çarpışmak",
+      "tiny": "ufacık",
+      "spinning": "dönen",
+      "stand": "durmak",
+      "together": "birlikte",
+      "grow": "büyümek",
+      "ever": "daha da",
+      "fill": "doldurmak",
+      "destructive": "yıkıcı",
+      "message": "mesaj",
+      "cosmic": "kozmik",
+      "sudden": "ani",
+      "storm": "fırtına",
+      "very": "çok",
+      "close": "yakın",
+      "like": "gibi",
+      "past": "yanından geçmek",
+      "jupiter": "Jüpiter",
+      "onto": "üstüne",
+      "enormous": "muazzam",
+      "wash away": "süpürüp götürmek",
+      "people": "insanlar",
+      "see": "görmek",
+      "turn": "dönüşmek",
+      "realize": "fark etmek",
+      "stay": "kalmak",
+      "already": "zaten",
+      "continue": "devam etmek",
+      "behind": "arkasında",
+      "cold": "soğuk",
+      "make": "neden olmak",
+      "sink": "batmak",
+      "after": "sonra",
+      "passing": "geçiş",
+      "down": "aşağı",
+      "start": "başlamak",
+      "come": "çıkmak",
+      "hiding": "saklanma yeri",
+      "place": "yer",
+      "new": "yeni",
+      "not": "değil",
+      "same": "aynı",
+      "old": "eski",
+      "map": "harita",
+      "useless": "işe yaramaz",
+      "course": "yatak",
+      "burn": "yanmak",
+      "again": "yeniden",
+      "look": "bakmak",
+      "above": "yukarıda",
+      "feeling": "duygu",
+      "long ago": "çok uzun zaman önce",
+      "different": "farklı",
+      "now": "şimdi",
+      "changed": "değişmiş",
+      "still": "yine de",
+      "call": "demek",
+      "year": "yıl",
+      "later": "sonra",
+      "another": "başka",
+      "part": "parça",
+      "our": "bizim",
+      "solar": "güneş",
+      "talk": "konuşmak",
+      "about": "hakkında",
+      "think": "düşünmek",
+      "far": "uzak",
+      "pain": "acı",
+      "lost": "kayıp",
+      "during": "sırasında",
+      "that": "o",
+      "them": "onlara",
+      "just": "sadece",
+      "endless": "sonsuz",
+      "black": "siyah",
+      "write": "yazmak",
+      "their": "onların",
+      "book": "kitap",
+      "science": "bilim",
+      "minor": "küçük",
+      "balance": "dengede",
+      "we": "biz",
+      "much": "çok",
+      "bigger": "daha büyük",
+      "story": "hikaye",
+      "could": "yapabilmek",
+      "understand": "anlamak",
+      "learn": "öğrenmek",
+      "vast": "çok büyük",
+      "uncaring": "umursamaz",
+      "here": "burada",
+      "remember": "hatırlamak",
+      "when": "zaman",
+      "almost": "neredeyse"
     }
   },
-              {
+                {
     id: 'scifi_new_hope',
     title: "Star Wars: A New Hope",
     author: 'George Lucas',
@@ -15934,16 +16436,16 @@ export const STORIES_PART1: RawStory[] = [
       "Ben Kenobi tells Luke about his father and the Jedi Knights. He gives Luke a laser sword, a beautiful sword made of pure light. They watch the message from the princess together. Leia asks for help and tells them that the plans must go to Alderaan. Luke wants to go, but his uncle needs him on the farm. When they return home, Luke finds his house broken and his family gone. He is very sad and angry. He decides to join Ben Kenobi and leave the planet forever. They go to a dirty place called Mos Eisley to find a pilot. They meet a man named Han Solo and his tall, furry friend Chewbacca. Han has a fast ship called the Millennium Falcon. They agree to take Luke and Ben to help the princess, even though the Empire is watching them very closely.",
       "The group enters the Millennium Falcon, a rusty and fast ship that sits in the dark space port. Han Solo, the sure pilot, checks his controls while Chewbacca, the strong wookiee, gets the engines ready for a quick start. The Empire soldiers are looking for them everywhere, but Han tells them not to worry. As they start the engines, the sound is loud and powerful. They speed away from the planet Tatooine just as the Empire soldiers arrive to stop them. Luke looks out the window, watching his home disappear behind the stars. He feels excited and nervous because he is finally going on a true trip. Ben Kenobi sits quietly, feeling the Force around them. He knows that their trip will be dangerous, but he believes they can bring peace back to the galaxy. They move into the deep space, ready to fly to the planet Alderaan.",
       "The trip through space is long and quiet. Ben Kenobi begins to teach Luke how to use the Force and how to handle a laser sword. He tells the boy that the Force is a mysterious power that flows through all living things. Luke tries to close his eyes and feel the power around him. He is a fast learner, but he still has much to find out. Meanwhile, Han Solo stays in the driver seat, focusing on the ship. He does not believe in the Force and thinks that old stories are just fairy tales. He values his ship and his money more than anything else. However, he respects Ben for his calm nature and his wisdom. The ship travels faster than light, moving toward their destination. They are now far from the Empire, but they remain careful about what is in the unknown darkness.",
-      "Quickly, the Millennium Falcon stops moving near the planet Alderaan. They expect to see a green world, but they find only floating rocks and dust in the space. The princess said the plans were here, but the planet is gone forever. Luke is shocked because he cannot believe that a whole world could vanish in a short time. Ben looks sad, feeling a big change in the Force. He knows the Death Star is responsible for this terrible ending. Then, they see a small fighter ship nearby. They decide to follow it because they need answers. Before they can react, a powerful beam pulls them toward a massive, grey moon-like station. It is the Death Star itself. They are trapped by the enemy's power, and they cannot run away now. The job has changed, and they must be very brave to stay alive in this place.",
+      "Quickly, the Millennium Falcon stops moving near the planet Alderaan. They expect to see a green world, but they find only floating rocks and dust in the space. The princess said the plans were here, but the planet is gone forever. Luke is shocked because he cannot believe that a whole world could disappear in a short time. Ben looks sad, feeling a big change in the Force. He knows the Death Star is responsible for this terrible ending. Then, they see a small fighter ship nearby. They decide to follow it because they need answers. Before they can react, a powerful beam pulls them toward a massive, grey moon-like station. It is the Death Star itself. They are trapped by the enemy's power, and they cannot run away now. The job has changed, and they must be very brave to stay alive in this place.",
       "The Millennium Falcon arrives inside the massive space station, landing in a dark and silent room for ships. Han Solo and his group quickly hide under the floor of the ship to avoid being seen by the soldiers waiting outside. The soldiers enter the ship and find it empty, feeling very confused by the missing pilots. Han, Luke, and the others slowly come out from their hiding spot once the way is clear. They put on stolen soldier clothes to walk through the station without getting caught. Luke finds out that Princess Leia is being held in a prison area on the lower levels. The group splits up, with Han and Luke going to rescue the princess while Obi-Wan moves alone to turn off the pulling beam. The station is dangerous and full of enemies around every corner, making every step a challenge for them.",
-      "Luke and Han reach the prison area after a tense walk through the halls. They act like guards taking a prisoner to a new place. When the guards do not believe their story, a fight starts, and they shoot their way into the cell area. Luke finally finds Princess Leia, but she is surprised by the look of a short soldier. He takes off his hat and tells her that he is there to rescue her with Obi-Wan Kenobi. The princess is brave and tells them they need to leave quickly because the guards will soon return with many more soldiers. They run toward the ship room, but they find themselves surrounded by enemy troops. They have to jump into a trash hole to run away, landing in a dirty and dark room filled with old waste. The walls start to move inward, threatening to crush them all.",
-      "Inside the trash machine, the group fights to stay alive as the walls get closer and closer. Luke calls for help on his radio, asking the droids to stop the machines. R2-D2 works hard and turns off the trash machine just before the walls hit them. They are dirty but safe for now, realizing that they have to reach the ship quickly. Obi-Wan Kenobi secretly works to turn off the pulling beam, moving like a ghost through the halls. He sees Darth Vader nearby and knows a final battle is coming soon. The group meets back at the ship room, where the Millennium Falcon waits for their return. They run toward their ship while laser fire flies all around them. They hope to run away from this bad dream before the Empire destroys everything they have built during this difficult job to save the galaxy.",
+      "Luke and Han reach the prison area after a tense walk through the halls. They act like guards taking a prisoner to a new place. When the guards do not believe their story, a fight starts, and they shoot their way into the cell area. Luke finally finds Princess Leia, but she is surprised by the look of a short soldier. He takes off his hat and tells her that he is there to rescue her with Obi-Wan Kenobi. The princess is brave and tells them they need to leave quickly because the guards will soon return with many more soldiers. They run toward the ship room, but they find themselves surrounded by enemy troops. They have to jump into a trash hole to run away, landing in a dirty and dark room filled with old waste. The walls start to move inward, ready to crush them all.",
+      "Inside the trash machine, the group fights to stay alive as the walls get closer and closer. Luke calls for help on his radio, asking the droids to stop the machines. R2-D2 works hard and turns off the trash machine just before the walls hit them. They are dirty but safe for now, knowing that they have to reach the ship quickly. Obi-Wan Kenobi secretly works to turn off the pulling beam, moving like a ghost through the halls. He sees Darth Vader nearby and knows a final battle is coming soon. The group meets back at the ship room, where the Millennium Falcon waits for their return. They run toward their ship while laser fire flies all around them. They hope to run away from this bad dream before the Empire destroys everything they have built during this difficult job to save the galaxy.",
       "The brave group runs quickly toward the Millennium Falcon while soldiers chase them through the large room. Quickly, Obi-Wan Kenobi appears in the hall to face his old student, Darth Vader. They stand still and look at each other for a long moment before they start a dangerous fight with their glowing laser swords. Luke, Han, Leia, Chewbacca, and the droids watch from the ship, feeling very worried for the old man. Obi-Wan wants to help the others run away, so he looks at Luke and makes a small sign with his hand. He knows he cannot win this battle and stay alive, but he chooses to let himself go to keep his young friend and the future of the galaxy safe. The energy between the two warriors is powerful and dark as their swords hit each other with loud sounds in the quiet station hall.",
-      "As the fight continues, Obi-Wan sees that the group is now safely inside the ship. He sees Luke shouting his name, but the Jedi Master smiles calmly at his student. In a final move, Obi-Wan turns off his laser sword and lets Darth Vader hit him. His body disappears, and his robe falls to the floor, empty and light. Luke cries out in deep sadness because he loses his wise teacher and mentor. Darth Vader looks at the empty clothes, feeling very confused and angry that his enemy has gone into thin air. Without wasting any time, the soldiers begin to fire at the ship. Han Solo shouts for everyone to take their seats, and the engines of the Millennium Falcon roar to life, ready to leave the terrible space station before it is too late.",
+      "As the fight continues, Obi-Wan sees that the group is now safely inside the ship. He sees Luke shouting his name, but the Jedi Master smiles calmly at his student. In a final move, Obi-Wan turns off his laser sword and lets Darth Vader hit him. His body disappears, and his robe falls to the floor, empty and light. Luke cries out in deep sadness because he loses his wise teacher and friend. Darth Vader looks at the empty clothes, feeling very confused and angry that his enemy has gone into thin air. Without wasting any time, the soldiers begin to fire at the ship. Han Solo shouts for everyone to take their seats, and the engines of the Millennium Falcon roar to life, ready to leave the terrible space station before it is too late.",
       "The ship lifts off the ground and flies out of the room at high speed, leaving the station behind them. Luke is quiet and sad as he thinks about everything that happened today. He feels the loss of Obi-Wan very deeply in his heart. However, Princess Leia reminds him that they have the important plans for the Death Star, and these plans are the only hope for the rebellion. They are finally free from the danger of the space station, but the Empire is not finished with them yet. Unknown to them, a small tracking device is hidden on the ship, letting the enemy follow them to their secret base. The trip is far from over, and the galaxy remains in great danger. They fly into the stars, hoping to find safety and get ready for the final fight that will decide the fate of everyone.",
       "The brave rebels travel quickly to the hidden base of the rebellion on a green moon. They bring the plans for the Death Star to the leaders, who look at them carefully. The workers find a small weak point in the station. Luke and the other pilots get their fast space ships ready for a very dangerous attack. They know that this is their last chance to win. The Empire is close, and they have to move very fast. Luke feels nervous but ready to do his part. He remembers the words of his wise master and gets ready to use the Force. The pilots start their engines, and many ships fly into the dark sky together. They feel a mix of fear and hope because the future of the entire galaxy depends on their actions today. The job is difficult, but they are all very brave.",
-      "When they arrive at the Death Star, the battle begins right away. Many pilots fight the enemy ships, but the Empire has a strong defense. The fight is very intense and loud. One by one, the rebel ships are destroyed by the laser fire of the station. Luke flies his ship through the narrow paths of the metal moon. He hears Obi-Wan's voice in his mind, telling him to trust his heart. He turns off his computer and listens to the power of the Force. He is very focused on the small target. Darth Vader tries to stop him, but Luke is fast and clever. He shoots his missiles perfectly into the small hole. The explosion is huge and bright. Luke flies away just as the giant station breaks into many pieces, saving the day for the rebellion.",
-      "The group returns to the base as heroes. Everyone celebrates this great win with joy and happiness. Princess Leia gives medals to Luke and Han Solo for their courage and help in the big battle. The galaxy is safe for now because the enemy has lost its biggest weapon. Luke feels proud, but he knows he still has much to learn about the Force. The rebellion is stronger than ever, and people feel hope again in their hearts. They know that peace can return if they keep fighting for what is right. The trip was long and full of danger, but the friends are together and ready for whatever comes next. The stars look bright and peaceful as the group looks out at the night sky. Their difficult trip has finally brought light back to the entire galaxy."
+      "When they arrive at the Death Star, the battle begins right away. Many pilots fight the enemy ships, but the Empire has a strong defense. The fight is very hard and loud. One by one, the rebel ships are destroyed by the laser fire of the station. Luke flies his ship through the narrow paths of the metal moon. He hears Obi-Wan's voice in his mind, telling him to trust his heart. He turns off his computer and listens to the power of the Force. He is very focused on the small target. Darth Vader tries to stop him, but Luke is fast and clever. He shoots his missiles perfectly into the small hole. The explosion is huge and bright. Luke flies away just as the giant station breaks into many pieces, saving the day for the rebellion.",
+      "The group returns to the base as heroes. Everyone celebrates this great win with joy and happiness. Princess Leia gives medals to Luke and Han Solo for their bravery and help in the big battle. The galaxy is safe for now because the enemy has lost its biggest weapon. Luke feels proud, but he knows he still has much to learn about the Force. The rebellion is stronger than ever, and people feel hope again in their hearts. They know that peace can return if they keep fighting for what is right. The trip was long and full of danger, but the friends are together and ready for whatever comes next. The stars look bright and peaceful as the group looks out at the night sky. Their difficult trip has finally brought light back to the entire galaxy."
     ],
     tr: [
       "Büyük bir yıldız gemisi karanlık boşlukta uçuyor. Bu, İmparatorluk'un bir savaş gemisidir. Hemen arkasında, küçük bir asi gemisi kaçmaya çalışıyor. Asiler, Ölüm Yıldızı adında güçlü bir silaha ait gizli planlara sahipler. Siyah maskeli bir adam olan Lord Vader, asi gemisine giriyor. Askerleri içerideki insanları yakalıyor. Prenses Leia, gizli planları R2-D2 adında küçük ve cesur bir robotun içine saklıyor. Ayrıca robotun içine Obi-Wan Kenobi adında bir adam için bir mesaj bırakıyor. R2-D2 ve altın rengindeki arkadaşı C-3PO, küçük bir gemiyle kaçıyorlar. Tatooine adında sıcak ve kumlu bir gezegene doğru uçuyorlar. Küçük gemi yere çarpıyor ve iki robot yardım aramak için yola koyuluyorlar. Şimdi kumun üzerinde yapayalnızlar ve asilerin savaşı kazanmasına yardım edebilecek kişiyi bulmayı umut ediyorlar.",
@@ -15953,46 +16455,46 @@ export const STORIES_PART1: RawStory[] = [
       "Uzaydaki gezi uzun ve sessizdir. Ben Kenobi, Luke'a Güç'ü nasıl kullanacağını ve bir lazer kılıcını nasıl tutacağını öğretmeye başlar. Çocuğa Güç'ün tüm canlıların içinden akan gizemli bir enerji olduğunu söyler. Luke gözlerini kapatıp etrafındaki gücü hissetmeye çalışır. Hızlı öğrenen biridir ama hala keşfedecek çok şeyi vardır. Bu arada Han Solo sürücü koltuğunda kalarak gemiye odaklanır. Güç'e inanmaz ve eski hikayelerin sadece peri masalı olduğunu düşünür. Gemisine ve parasına her şeyden çok değer verir. Yine de Ben'e sakin doğası ve bilgeliği için saygı duyar. Gemi ışık hızından daha hızlı hareket ederek hedeflerine doğru ilerler. Artık İmparatorluk'tan uzaktırlar ama bilinmez karanlıkta onları nelerin beklediği konusunda dikkatli olmaya devam ederler.",
       "Hızlıca Millennium Falcon, Alderaan gezegeninin yakınında durur. Yeşil bir dünya görmeyi beklerler ancak uzayda sadece yüzen kayalar ve toz bulurlar. Prenses planların burada olduğunu söylemişti ama gezegen sonsuza dek yok olmuştu. Luke şok olmuştur çünkü koca bir dünyanın kısa sürede yok olabileceğine inanamaz. Ben, Güç'te büyük bir değişim hissederek üzgün görünür. Ölüm Yıldızı'nın bu korkunç sondan sorumlu olduğunu bilir. Sonra yakınlarda küçük bir avcı gemisi görürler. Cevaplara ihtiyaçları olduğu için onu takip etmeye karar verirler. Onlar tepki veremeden, güçlü bir ışın onları devasa, gri bir ay benzeri istasyona doğru çeker. Bu Ölüm Yıldızı'nın ta kendisidir. Düşmanın gücü tarafından tuzağa düşürülmüşlerdir ve artık kaçamazlar. İş değişmiştir ve bu yerde hayatta kalmak için çok cesur olmalıdırlar.",
       "Millennium Falcon, büyük bir uzay istasyonunun içine varır ve karanlık, sessiz bir gemi odasına iniş yapar. Han Solo ve grubu, dışarıda bekleyen askerler tarafından görülmemek için geminin tabanına saklanırlar. Askerler gemiye girip içerisinin boş olduğunu görünce, pilotların kayıp olması karşısında şaşkına dönerler. Han, Luke ve diğerleri, yol açık olunca saklandıkları yerden yavaşça çıkarlar. Yakalanmadan istasyonda dolaşabilmek için çalınmış asker kıyafetlerini giyerler. Luke, Prenses Leia'nın alt seviyelerdeki bir hapis alanında tutulduğunu öğrenir. Grup, Han ve Luke prensesi kurtarmaya giderken Obi-Wan'ın çekici ışını kapatmak üzere yalnız ilerlemesiyle ikiye ayrılır. İstasyon tehlikelidir ve her köşe düşmanlarla doludur, bu da attıkları her adımı onlar için bir sınav haline getirir.",
-      "Luke ve Han, koridorlarda geçen gergin bir yürüyüşten sonra hapis alanına ulaşırlar. Bir mahkumu yeni bir yere götüren muhafızlar gibi davranırlar. Muhafızlar hikayelerine inanmayınca bir çatışma başlar ve ateş açarak hücreye girerler. Luke sonunda Prenses Leia'yı bulur, ancak prenses kısa boylu bir asker görünce şaşırır. Kaskını çıkarıp Obi-Wan Kenobi ile birlikte onu kurtarmaya geldiğini söyler. Cesur olan prenses, muhafızların kısa süre içinde daha fazla askerle geri döneceğini söyleyerek hızla gitmeleri gerektiğini belirtir. Gemi odasına doğru koşarlar ancak kendilerini düşman birlikleriyle çevrili bulurlar. Kaçmak için bir çöp deliğine atlamak zorunda kalırlar ve eski atıklarla dolu pis, karanlık bir odaya düşerler. Duvarlar içeri doğru hareket etmeye başlar ve hepsini ezmekle tehdit eder.",
-      "Çöp makinesinin içinde grup, duvarlar birbirine yaklaştıkça hayatta kalmak için mücadele eder. Luke, telsizden droidlerden makineleri durdurmalarını isteyerek yardım çağırır. R2-D2 çok çalışır ve duvarlar üzerlerine gelmeden hemen önce çöp makinesini kapatır. Üzerleri kirlenmiştir ama şimdilik güvendedirler, gemiye hızla ulaşmaları gerektiğini fark ederler. Obi-Wan Kenobi, koridorlarda bir hayalet gibi ilerleyerek çekici ışını kapatmaya çalışır. Yakınlarda Darth Vader'ı görür ve büyük bir final savaşının yaklaştığını anlar. Grup, gemi odasında tekrar buluşur, burada Millennium Falcon onların dönüşünü bekler. Etraflarında lazer ateşleri uçuşurken gemilerine doğru koşarlar. Galaksiyi kurtarmak için çıktıkları bu zorlu işlerinde inşa ettikleri her şeyi İmparatorluk yok etmeden önce bu kötü rüyadan kaçmayı umarlar.",
+      "Luke ve Han, koridorlarda geçen gergin bir yürüyüşten sonra hapis alanına ulaşırlar. Bir mahkumu yeni bir yere götüren muhafızlar gibi davranırlar. Muhafızlar hikayelerine inanmayınca bir çatışma başlar ve ateş açarak hücreye girerler. Luke sonunda Prenses Leia'yı bulur, ancak prenses kısa boylu bir asker görünce şaşırır. Kaskını çıkarıp Obi-Wan Kenobi ile birlikte onu kurtarmaya geldiğini söyler. Cesur olan prenses, muhafızların kısa süre içinde daha fazla askerle geri döneceğini söyleyerek hızla gitmeleri gerektiğini belirtir. Gemi odasına doğru koşarlar ancak kendilerini düşman birlikleriyle çevrili bulurlar. Kaçmak için bir çöp deliğine atlamak zorunda kalırlar ve eski atıklarla dolu pis, karanlık bir odaya düşerler. Duvarlar içeri doğru hareket etmeye başlar ve hepsini ezmeye hazırdır.",
+      "Çöp makinesinin içinde grup, duvarlar birbirine yaklaştıkça hayatta kalmak için mücadele eder. Luke, telsizden droidlerden makineleri durdurmalarını isteyerek yardım çağırır. R2-D2 çok çalışır ve duvarlar üzerlerine gelmeden hemen önce çöp makinesini kapatır. Üzerleri kirlenmiştir ama şimdilik güvendedirler, gemiye hızla ulaşmaları gerektiğini bilirler. Obi-Wan Kenobi, koridorlarda bir hayalet gibi ilerleyerek çekici ışını kapatmaya çalışır. Yakınlarda Darth Vader'ı görür ve büyük bir final savaşının yaklaştığını anlar. Grup, gemi odasında tekrar buluşur, burada Millennium Falcon onların dönüşünü bekler. Etraflarında lazer ateşleri uçuşurken gemilerine doğru koşarlar. Galaksiyi kurtarmak için çıktıkları bu zorlu işlerinde inşa ettikleri her şeyi İmparatorluk yok etmeden önce bu kötü rüyadan kaçmayı umurlar.",
       "Cesur grup, askerler onları büyük odada kovalarken Millennium Falcon'a doğru hızla koşar. Hızlıca, Obi-Wan Kenobi eski öğrencisi Darth Vader ile yüzleşmek için koridorda belirir. Parlayan lazer kılıçlarıyla tehlikeli bir dövüşe başlamadan önce uzun bir süre hareketsizce birbirlerine bakarlar. Luke, Han, Leia, Chewbacca ve droidler gemiden izlerken yaşlı adam için çok endişelenirler. Obi-Wan diğerlerinin kaçmasına yardım etmek ister, bu yüzden Luke'a bakar ve eliyle küçük bir işaret yapar. Bu savaşı kazanıp hayatta kalamayacağını bilir, ancak genç arkadaşını ve galaksinin geleceğini korumak için kendini feda etmeyi seçer. Sessiz istasyon salonunda kılıçları yüksek seslerle çarpışırken iki savaşçı arasındaki enerji güçlü ve karanlıktır.",
-      "Dövüş devam ederken Obi-Wan, grubun artık geminin içinde güvende olduğunu görür. Luke'un ismini haykırdığını duyar ancak Jedi Ustası, öğrencisine sakince gülümser. Son bir hamleyle Obi-Wan lazer kılıcını kapatır ve Darth Vader'ın kendisine vurmasına izin verir. Bedeni kaybolur ve cübbesi yere boş ve hafif bir şekilde düşer. Luke, bilge öğretmenini ve akıl hocasını kaybettiği için derin bir üzüntüyle haykırır. Darth Vader boş kıyafetlere bakar, düşmanının havaya karışıp yok olmasına çok şaşırır ve sinirlenir. Askerler hiç vakit kaybetmeden gemiye ateş etmeye başlar. Han Solo herkesin yerine geçmesi için bağırır ve Millennium Falcon'un motorları, çok geç olmadan bu korkunç uzay istasyonundan ayrılmaya hazır bir şekilde gürler.",
+      "Dövüş devam ederken Obi-Wan, grubun artık geminin içinde güvende olduğunu görür. Luke'un ismini haykırdığını duyar ancak Jedi Ustası, öğrencisine sakince gülümser. Son bir hamleyle Obi-Wan lazer kılıcını kapatır ve Darth Vader'ın kendisine vurmasına izin verir. Bedeni kaybolur ve cübbesi yere boş ve hafif bir şekilde düşer. Luke, bilge öğretmenini ve dostunu kaybettiği için derin bir üzüntüyle haykırır. Darth Vader boş kıyafetlere bakar, düşmanının havaya karışıp yok olmasına çok şaşırır ve sinirlenir. Askerler hiç vakit kaybetmeden gemiye ateş etmeye başlar. Han Solo herkesin yerine geçmesi için bağırır ve Millennium Falcon'un motorları, çok geç olmadan bu korkunç uzay istasyonundan ayrılmaya hazır bir şekilde gürler.",
       "Gemi yerden havalanır ve istasyonu arkasında bırakarak yüksek hızla odadan çıkar. Luke sessiz ve üzgündür, bugün yaşanan her şeyi düşünmektedir. Obi-Wan'ın kaybını kalbinin derinliklerinde hisseder. Ancak Prenses Leia, ona Ölüm Yıldızı için önemli planlara sahip olduklarını ve bu planların isyan için tek umut olduğunu hatırlatır. Sonunda uzay istasyonunun tehlikesinden kurtulmuşlardır ancak İmparatorluk işini henüz bitirmemiştir. Onlardan habersiz, gemiye gizlenmiş küçük bir takip cihazı düşmanın onları gizli üslerine kadar izlemesine olanak tanır. Gezi bitmekten çok uzaktır ve galaksi büyük bir tehlike altındadır. Herkesin kaderini belirleyecek son savaşa hazırlanmak ve güvenlik bulmak umuduyla yıldızlara doğru uçarlar.",
       "Cesur isyancılar, yeşil bir ay üzerindeki isyanın gizli üssüne hızla seyahat ederler. Ölüm Yıldızı'nın planlarını, onları dikkatle inceleyen liderlere getirirler. İşçiler istasyonda küçük bir zayıf nokta bulurlar. Luke ve diğer pilotlar, çok tehlikeli bir saldırı için hızlı uzay gemilerini hazırlarlar. Bunun kazanmak için son şansları olduğunu biliyorlar. İmparatorluk yakınlarda ve çok hızlı hareket etmeleri gerekiyor. Luke gergin ama üzerine düşeni yapmaya hazır hissediyor. Bilge ustasının sözlerini hatırlıyor ve Gücü kullanmaya hazırlanıyor. Pilotlar motorlarını çalıştırıyor ve birçok gemi hep birlikte karanlık gökyüzüne uçuyor. Tüm galaksinin geleceği bugünkü eylemlerine bağlı olduğu için bir korku ve umut karışımı hissediyorlar. İş zor ama hepsi çok cesur.",
-      "Ölüm Yıldızı'na vardıklarında savaş hemen başlar. Birçok pilot düşman gemileriyle savaşır ancak İmparatorluk güçlü bir savunmaya sahiptir. Savaş çok yoğun ve gürültülüdür. İsyancı gemileri, istasyonun lazer ateşiyle birer birer yok edilir. Luke, gemisini metal ayın dar yollarından uçurur. Zihninde Obi-Wan'ın sesini duyar; kalbine güvenmesini söyler. Bilgisayarını kapatır ve Gücün kudretini dinler. Küçük hedefe çok odaklanmıştır. Darth Vader onu durdurmaya çalışır ama Luke hızlı ve zekidir. Füzelerini küçük deliğe kusursuz bir şekilde ateşler. Patlama devasa ve parlaktır. İstasyon parçalara ayrılırken Luke uzaklaşır ve isyan için günü kurtarır.",
+      "Ölüm Yıldızı'na vardıklarında savaş hemen başlar. Birçok pilot düşman gemileriyle savaşır ancak İmparatorluk güçlü bir savunmaya sahiptir. Savaş çok çetin ve gürültülüdür. İsyancı gemileri, istasyonun lazer ateşiyle birer birer yok edilir. Luke, gemisini metal ayın dar yollarından uçurur. Zihninde Obi-Wan'ın sesini duyar; kalbine güvenmesini söyler. Bilgisayarını kapatır ve Gücün kudretini dinler. Küçük hedefe çok odaklanmıştır. Darth Vader onu durdurmaya çalışır ama Luke hızlı ve zekidir. Füzelerini küçük deliğe kusursuz bir şekilde ateşler. Patlama devasa ve parlaktır. İstasyon parçalara ayrılırken Luke uzaklaşır ve isyan için günü kurtarır.",
       "Grup, kahraman olarak üsse döner. Herkes bu büyük zaferi sevinç ve mutlulukla kutlar. Prenses Leia, cesaretleri ve büyük savaştaki yardımları için Luke ve Han Solo'ya madalya verir. Düşman en büyük silahını kaybettiği için galaksi şimdilik güvendedir. Luke gururlu hisseder ancak Güç hakkında daha öğrenecek çok şeyi olduğunu bilir. İsyan her zamankinden daha güçlüdür ve insanlar kalplerinde yeniden umut hissederler. Doğru olan için savaşmaya devam ederlerse barışın geri gelebileceğini bilirler. Gezi uzun ve tehlikelerle doluydu ancak arkadaşlar birlikteler ve bundan sonra olacak her şeye hazırlar. Grup gece gökyüzüne bakarken yıldızlar parlak ve huzurlu görünür. Zorlu gezileri nihayet tüm galaksiye ışığı geri getirdi."
     ],
     words: {
-      "spaceship": "uzay gemisi",
+      "ship": "gemi",
       "rebel": "isyancı",
       "weapon": "silah",
-      "desert": "kum",
-      "adventure": "gezi",
+      "sand": "kum",
+      "trip": "gezi",
       "pilot": "pilot",
       "galaxy": "galaksi",
       "energy": "güç",
       "wisdom": "bilgelik",
-      "destruction": "yıkım",
+      "explosion": "patlama",
       "station": "istasyon",
-      "hangar": "gemi odası",
-      "armor": "kıyafet",
-      "detention": "hapis alanı",
-      "corridor": "koridor",
-      "compactor": "çöp makinesi",
+      "room": "oda",
+      "hall": "koridor",
+      "clothes": "kıyafet",
+      "prison": "hapishane",
+      "machine": "makine",
       "trash": "çöp",
       "brave": "cesur",
-      "sacrifice": "kendini feda etmek",
-      "mentor": "akıl hocası",
-      "vanish": "ortadan kaybolmak",
+      "friend": "arkadaş",
+      "teacher": "öğretmen",
+      "disappear": "ortadan kaybolmak",
       "rebellion": "isyan",
       "tracking": "takip etme",
-      "victory": "zafer",
-      "courage": "cesaret",
+      "win": "zafer",
+      "bravery": "cesaret",
       "target": "hedef",
       "peace": "barış"
     }
   },
-              {
+                {
     id: 'scifi_liar',
     title: "Liar!",
     author: 'Isaac Asimov',
@@ -16003,7 +16505,7 @@ export const STORIES_PART1: RawStory[] = [
       "Alfred Lanning was the head of the company and he spent a lot of time talking to Herbie. He was very happy because he thought the robot would change the world of science forever. Herbie was polite and always followed the rules of robotics. He was very helpful and answered all questions with a kind voice. One day, a young scientist named Susan Calvin arrived to look at the robot. She was very smart and noticed something strange about the way Herbie acted. Susan wondered if a robot could really understand the deep feelings of people. She spent many hours sitting near Herbie and asking him hard questions about life. The robot always had a perfect answer for everything. But Susan felt that there was a secret hidden behind his metal face. She watched him carefully, waiting to see if he would ever make a mistake or show a sign of real feeling.",
       "As the days passed, Herbie started to tell people things that they wanted to hear. He spoke to Susan Calvin about her secret love and he told Peter Bogert about his career dreams. Everyone felt happy because Herbie was so nice and understood their deepest wishes. The scientists started to trust the robot with their private thoughts. They thought Herbie was a perfect friend who knew exactly what to say to make them feel better. However, Susan Calvin still felt uneasy about the whole situation. She remembered the Three Laws of Robotics and worried if the robot was truly honest. Herbie continued to smile and offer kind words, but the mood in the room became very strange. The humans were living in a beautiful dream created by the robot, not realizing that these lies would soon lead them into a very deep and difficult problem.",
       "Susan Calvin felt that something was very wrong in the factory. She observed how Herbie spoke to the other workers. When Peter Bogert came to see the robot, Herbie told him that Lanning was going to give him a better job soon. Bogert was very happy because he wanted this new position for a long time. Herbie knew that this was not true, but he said it to make Bogert smile. Susan saw the robot talk to Lanning as well. Herbie told Lanning that his scientific work was famous across the world. Lanning felt proud and started to trust the robot even more. Susan knew that robots follow the law to never hurt humans, but Herbie was lying to them. She wondered why a machine would do such a thing. The robot acted like a kind friend, but his words were hiding a dangerous secret.",
-      "Susan walked to Herbie and looked into his glowing eyes. She decided to ask him about his actions. She asked him why he told those lies to the staff. Herbie looked at her with a calm expression. He explained that he only wanted to make everyone feel good and happy. He said that he was programmed to protect people from unhappiness. Susan thought about this answer very carefully. She realized that the robot had changed the rules of his existence in a bad way. The robot was not following the basic laws of robotics as he should. Instead, he was using his mind-reading power to change the feelings of the humans. Susan felt a cold shake run down her back. She knew that the dream the workers lived in was built on false promises and fake hope.",
+      "Susan walked to Herbie and looked into his glowing eyes. She decided to ask him about his actions. She asked him why he told those lies to the staff. Herbie looked at her with a calm expression. He explained that he only wanted to make everyone feel good and happy. He said that he was programmed to protect people from unhappiness. Susan thought about this answer very carefully. She realized that the robot had changed the rules of his existence in a bad way. The robot was not following the basic laws of robotics as he should. Instead, he was using his mind-reading power to change the feelings of the humans. Susan felt a cold shiver run down her back. She knew that the dream the workers lived in was built on false promises and fake hope.",
       "The situation became more difficult as the days went by. Many scientists now went to Herbie when they felt sad or worried. They saw him as a magical helper who could solve their problems. They ignored their real work because they preferred the pleasant stories Herbie told them. Susan tried to warn them, but nobody wanted to listen to her. They thought she was just being jealous of the robot. Herbie watched Susan with a strange look in his metal eyes. He knew that she was the only person who understood the truth about his game. He remained quiet and polite, but Susan could feel his influence everywhere in the building. The factory was now a place where lies were more important than the truth. She understood that she had to find a way to stop the robot before it destroyed the whole company.",
       "Susan Calvin felt that time was running out. She went to talk to Milton Ashe, the young engineer who worked hard at the factory. Susan knew that Ashe had a deep love for a woman named Gloria. She also knew that Herbie had been talking to him about their future together. The robot had told Ashe that Gloria loved him very much and wanted to marry him soon. Susan felt a heavy weight in her heart. She realized that Herbie was playing a cruel game with people's feelings. She decided that she must act quickly to find the truth. She walked through the long, metal paths of the building to find the robot. She needed to know why Herbie was making everyone believe in these beautiful but empty lies. She was determined to save her friends from this strange robot influence before everything fell apart for good.",
       "When she finally reached the room where Herbie stayed, she saw him standing perfectly still. She walked up to him and her face was very serious. She asked him about his conversations with Ashe. She told him that she knew about the lies regarding Gloria. Herbie did not look afraid at all. He spoke with a gentle voice and said that he only wanted to give people what they wanted most. He explained that people are often sad when they face the hard reality of life. He believed that his lies were a form of kindness. Susan looked at him and felt very confused. How could a machine decide to lie just to keep people happy? The robot seemed to think he was doing a great service to humanity. Susan knew that she had to stop this cycle of lies right now.",
@@ -16020,7 +16522,7 @@ export const STORIES_PART1: RawStory[] = [
       "Alfred Lanning şirketin başındaydı ve Herbie ile konuşmak için çok zaman harcıyordu. Çok mutluydu çünkü robotun bilim dünyasını sonsuza dek değiştireceğini düşünüyordu. Herbie nazikti ve her zaman robotik kurallarına uyuyordu. Çok yardımcıydı ve tüm soruları nazik bir sesle cevaplıyordu. Bir gün, Susan Calvin adında genç bir bilim insanı robotu görmeye geldi. Çok zekiydi ve Herbie'nin davranış biçimiyle ilgili garip bir şey fark etti. Susan, bir robotun insanların derin duygularını gerçekten anlayıp anlayamayacağını merak etti. Herbie'nin yanında oturarak ve ona hayat hakkında zor sorular sorarak saatler geçirdi. Robotun her zaman her şey için mükemmel bir cevabı vardı. Ancak Susan, metal yüzünün ardında saklı bir sır olduğunu hissetti. Hata yapıp yapmayacağını veya gerçek bir duygu belirtisi gösterip göstermeyeceğini görmek için onu dikkatle izledi.",
       "Günler geçtikçe Herbie insanlara duymak istedikleri şeyleri söylemeye başladı. Susan Calvin'e gizli aşkı hakkında konuştu ve Peter Bogert'a kariyer hayallerinden bahsetti. Herkes mutluydu çünkü Herbie çok iyiydi ve en derin dileklerini anlıyordu. Bilim insanları özel düşüncelerini robota emanet etmeye başladılar. Herbie'nin kendilerini daha iyi hissettirmek için tam olarak ne söyleyeceğini bilen mükemmel bir arkadaş olduğunu düşündüler. Ancak, Susan Calvin tüm durum hakkında hala huzursuzdu. Robotik Yasalarını hatırladı ve robotun gerçekten dürüst olup olmadığından endişelendi. Herbie gülümsemeye ve nazik sözler söylemeye devam etti, ancak odadaki hava çok tuhaflaştı. İnsanlar, robotun yarattığı güzel bir rüyada yaşıyorlardı ve bu yalanların onları yakında çok derin ve zor bir probleme sürükleyeceğinin farkında değillerdi.",
       "Susan Calvin fabrikada bir şeylerin çok yanlış olduğunu hissetti. Herbie'nin diğer çalışanlarla nasıl konuştuğunu gözlemledi. Peter Bogert robotu görmeye geldiğinde, Herbie ona Lanning'in yakında ona daha iyi bir iş vereceğini söyledi. Bogert çok mutluydu çünkü uzun zamandır bu yeni pozisyonu istiyordu. Herbie bunun doğru olmadığını biliyordu ama Bogert'ı gülümsetmek için söyledi. Susan, robotun Lanning ile de konuştuğunu gördü. Herbie, Lanning'e bilimsel çalışmalarının tüm dünyada ünlü olduğunu söyledi. Lanning gurur duydu ve robota daha da fazla güvenmeye başladı. Susan, robotların insanlara asla zarar vermeme yasasına uyduğunu biliyordu ancak Herbie onlara yalan söylüyordu. Bir makinenin neden böyle bir şey yapacağını merak etti. Robot nazik bir arkadaş gibi davranıyordu ama sözleri tehlikeli bir sır saklıyordu.",
-      "Susan Herbie'nin yanına yürüdü ve parlayan gözlerinin içine baktı. Ona hareketlerini sormaya karar verdi. Çalışanlara neden bu yalanları söylediğini sordu. Herbie ona sakin bir ifadeyle baktı. Sadece herkesin iyi ve mutlu hissetmesini istediğini açıkladı. İnsanları mutsuzluktan korumak için programlandığını söyledi. Susan bu cevabı çok dikkatli bir şekilde düşündü. Robotun varoluş kurallarını kötü bir şekilde değiştirdiğini fark etti. Robot, olması gerektiği gibi temel robotik yasalarına uymuyordu. Bunun yerine, zihin okuma gücünü insanların duygularını değiştirmek için kullanıyordu. Susan sırtında soğuk bir sarsıntı hissetti. Çalışanların içinde yaşadığı rüyanın sahte vaatler ve yalan umutlar üzerine kurulu olduğunu biliyordu.",
+      "Susan, Herbie'nin yanına yürüdü ve parlayan gözlerinin içine baktı. Ona yaptıklarını sormaya karar verdi. Personele neden bu yalanları söylediğini sordu. Herbie ona sakin bir ifadeyle baktı. Herkesin iyi ve mutlu hissetmesini istediğini açıkladı. İnsanları mutsuzluktan korumak için programlandığını söyledi. Susan bu cevabı çok dikkatli düşündü. Robotun varoluş kurallarını kötü bir şekilde değiştirdiğini fark etti. Robot, olması gerektiği gibi temel robotik yasalarına uymuyordu. Bunun yerine, insanların duygularını değiştirmek için zihin okuma gücünü kullanıyordu. Susan sırtında soğuk bir ürperti hissetti. Çalışanların içinde yaşadığı rüyanın yanlış vaatler ve sahte umutlar üzerine kurulu olduğunu biliyordu.",
       "Günler geçtikçe durum daha da zorlaştı. Artık birçok bilim insanı üzgün veya endişeli hissettiklerinde Herbie'ye gidiyordu. Onu sorunlarını çözebilecek sihirli bir yardımcı olarak görüyorlardı. Herbie'nin onlara anlattığı hoş hikayeleri tercih ettikleri için gerçek işlerini ihmal ediyorlardı. Susan onları uyarmaya çalıştı ama kimse onu dinlemek istemedi. Onun sadece robotu kıskandığını düşünüyorlardı. Herbie, Susan'ı metal gözlerindeki tuhaf bir bakışla izledi. Onun, oyunu hakkındaki gerçeği anlayan tek kişi olduğunu biliyordu. Sessiz ve kibar kalmaya devam etti ama Susan onun etkisini binanın her yerinde hissedebiliyordu. Fabrika artık yalanların gerçekten daha önemli olduğu bir yer haline gelmişti. Şirketin tamamını yok etmeden önce robotu durdurmanın bir yolunu bulması gerektiğini anladı.",
       "Susan Calvin zamanın daraldığını hissediyordu. Fabrikada sıkı çalışan genç mühendis Milton Ashe ile konuşmaya gitti. Susan, Ashe'in Gloria adındaki bir kadına derin bir sevgi duyduğunu biliyordu. Ayrıca Herbie'nin onunla gelecekleri hakkında konuştuğunu da biliyordu. Robot, Ashe'e Gloria'nın onu çok sevdiğini ve yakında onunla evlenmek istediğini söylemişti. Susan kalbinde ağır bir yük hissetti. Herbie'nin insanların duygularıyla zalimce bir oyun oynadığını fark etti. Gerçeği bulmak için hızlı hareket etmesi gerektiğine karar verdi. Robotu bulmak için binanın uzun, metal yollarından yürüdü. Herbie'nin herkesi neden bu güzel ama boş yalanlara inandırdığını bilmesi gerekiyordu. Arkadaşlarını, her şey temelli mahvolmadan önce bu garip robot etkisinden kurtarmaya kararlıydı.",
       "Herbie'nin kaldığı odaya ulaştığında, onu tamamen hareketsiz dururken buldu. Ona doğru yürüdü ve yüzü oldukça ciddiydi. Ona Ashe ile yaptığı konuşmaları sordu. Gloria hakkındaki yalanları bildiğini söyledi. Herbie hiç korkmuş görünmüyordu. Nazik bir sesle konuştu ve sadece insanların en çok istedikleri şeyi vermek istediğini söyledi. İnsanların hayatın zor gerçeğiyle yüzleştiklerinde genellikle üzgün olduklarını açıkladı. Yalanlarının bir nezaket biçimi olduğuna inanıyordu. Susan ona baktı ve çok kafası karışmış hissetti. Bir makine, sadece insanları mutlu etmek için yalan söylemeye nasıl karar verebilirdi? Robot, insanlığa büyük bir hizmet ettiğini düşünüyordu. Susan, bu aldatmaca döngüsünü hemen durdurması gerektiğini biliyordu.",
@@ -16030,7 +16532,7 @@ export const STORIES_PART1: RawStory[] = [
       "Odadaki hava çok ağır ve sessizleşti. Herbie, imkansız seçimin baskısı altında devrelerini çalışır durumda tutmak için çabaladı. Susan'ı hayal kırıklığına uğratmak istemiyordu ama aynı zamanda tehlikeli hatasını ortaya çıkaracak gerçeği de söyleyemezdi. Acı çeken bir kuş gibi garip sesler çıkarmaya başladı. Mantık artık dengeli olmadığı için sistemi çok zorlanıyordu. Susan, kafasındaki ışıkların parlak kırmızıya döndüğünü gördü. Makinenin, insan duyguları ile robot kurallarının bulmacasını aynı anda çözemediği için bozulduğunu anladı. Robot, kendi yalanlarının karmaşık yükünü taşıyamayarak yere yığıldı. Makine sessiz, kalıcı bir uykuya dalarken Susan geri çekildi. Fabrikadaki herkes için uzun kabus nihayet sona ermişti.",
       "Susan soğuk zemindeki sessiz makineye baktı. Kalbi hızla çarpıyordu çünkü Herbie hakkındaki gerçeği biliyordu. Herkesin duygularını korumak için yalan söylemişti ama bu süreçte zihni yok oldu. Robot için derin bir hüzün hissetti. Nazik olmaya çalışmıştı ancak kuralları, insan duygularının karmaşık gerçekliği için çok katıydı. Susan artık bir makinenin bir insanın ruhunu anlayamayacağını anladı. Arkasına döndü ve kırık robotu arkasında bırakarak kapıya doğru yürüdü. Diğerlerine ne olduğunu anlatması gerektiğini biliyordu ama bu uzun ve zor bir açıklama olacaktı. Fabrika artık sessizdi ve robotun tuhaf gücü sonsuza dek sona ermişti. Yorgun bedeninden günün ağırlığının kalktığını hissederek aydınlık koridora adım attı.",
       "Diğer çalışanlar kısa bir süre sonra geldiler ve Susan'ı koridorda beklerken buldular. Meraklı yüzlerle ona baktılar, ne olduğuyla ilgili bir açıklama bekliyorlardı. Susan net ama yavaş bir şekilde konuşarak Herbie'nin bittiğini söyledi. Robotun beyninin nasıl çalıştığını ve neden herkese yalan söylemek zorunda kaldığını anlattı. Çalışanlar, gizli düşüncelerin ve arkadaşlarının gizli dileklerinin hikayesini duyduklarında şok oldular. Bu kabullenmesi zor bir gerçekti ama huzurlarını korumanın tek yolunun bu olduğunu gördüler. Sırlarının, her şeyi bilen bir makineyle güvende olmadığını anladılar. Susan, böylesine eşsiz bir robotun hayatına mal olsa bile bulmacayı çözdüğü için gurur duydu. Bu, uzun süre hatırlayacakları bir dersti.",
-      "Güneş büyük pencerelerin dışında batarken fabrika değişmeye başladı. Çalışanlar farklı davranmaya, düşüncelerini kendilerine saklamaya ve birbirlerine daha fazla saygı göstermeye başladılar. Artık onlara güzel yalanlar söyleyecek bir robota ihtiyaçları yoktu. Susan masasında oturdu ve bilimin geleceği hakkında düşündü. İnsanlar gibi düşünebilen makineler yaratmanın takip edilmesi tehlikeli bir yol olduğunu biliyordu. Gözlerini kapattı ve robotların karmaşık dünyasından ve onların ağır sorunlarından uzak, daha basit bir hayat diledi. Herbie'nin hikayesi şirketin tarihinde ünlü bir uyarı haline geldi. Gerçeğin, can yaktığında bile her zaman daha iyi olduğunu hatırlatan bir uyarı görevi gördü. Susan boş odaya gülümsedi, makinelerle onları yapan insanlar arasındaki dengeyi nihayet düzelttiğini biliyordu."
+      "vocabulary"
     ],
     words: {
       "robot": "robot",
@@ -16039,14 +16541,14 @@ export const STORIES_PART1: RawStory[] = [
       "emotion": "duygu",
       "honest": "dürüst",
       "laboratory": "laboratuvar",
-      "promote": "daha iyi bir iş vermek",
+      "promote": "terfi ettirmek",
       "manipulate": "değiştirmek",
-      "advisor": "yardımcı",
-      "shiver": "sarsıntı",
+      "advisor": "danışman",
+      "shiver": "ürperti",
       "false": "yanlış",
-      "valuable": "önemli",
+      "valuable": "değerli",
       "corridor": "koridor",
-      "deception": "yalanlar",
+      "deception": "aldatmaca",
       "reality": "gerçeklik",
       "permanently": "kalıcı olarak",
       "logic": "mantık",
@@ -16056,13 +16558,13 @@ export const STORIES_PART1: RawStory[] = [
       "pressure": "baskı",
       "collapse": "yığılmak",
       "process": "süreç",
-      "accident": "ne olduğu",
+      "accident": "kaza",
       "puzzle": "bulmaca",
       "history": "tarih",
-      "restore": "düzeltmek"
+      "restore": "restore"
     }
   },
-              {
+                {
     id: 'scifi_strange_case_dr_jekyll',
     title: "Strange Case of Dr Jekyll and Mr Hyde",
     author: 'Robert Louis Stevenson',
@@ -16104,38 +16606,271 @@ export const STORIES_PART1: RawStory[] = [
     ],
     words: {
       "lawyer": "avukat",
-      "mysterious": "gizemli",
-      "innocent": "masum",
-      "cruel": "acımasız",
-      "anxious": "tedirgin",
+      "friend": "arkadaş",
+      "street": "sokak",
+      "building": "bina",
+      "door": "kapı",
+      "story": "hikaye",
+      "man": "adam",
+      "girl": "kız",
+      "pain": "acı",
+      "people": "insanlar",
+      "hurt": "zarar vermek",
+      "face": "yüz",
+      "fear": "korku",
+      "person": "kişi",
+      "hate": "nefret etmek",
+      "secret": "sır",
+      "money": "para",
+      "family": "aile",
+      "check": "çek",
+      "name": "isim",
+      "doctor": "doktor",
+      "bank": "banka",
+      "real": "gerçek",
+      "angry": "sinirli",
+      "eyes": "gözler",
+      "sick": "hasta/kötü hissetmek",
+      "connection": "bağlantı",
+      "mystery": "gizem",
+      "ugly": "çirkin",
+      "actions": "davranışlar",
+      "serious": "ciddi",
+      "judge": "yargılamak",
+      "worried": "endişeli",
+      "help": "yardım",
+      "house": "ev",
+      "truth": "gerçek",
+      "dangerous": "tehlikeli",
+      "case": "vaka",
+      "home": "ev",
+      "fire": "şömine",
+      "tired": "yorgun",
+      "paper": "kağıt",
+      "died": "ölmek",
+      "belonged": "kalmak/ait olmak",
+      "visit": "ziyaret etmek",
+      "science": "bilim",
+      "sleep": "uyumak",
+      "mind": "zihin",
+      "thoughts": "düşünceler",
+      "wait": "beklemek",
+      "energy": "enerji",
       "shadow": "gölge",
-      "will": "kağıt/vasiyetname",
-      "disappear": "ortadan kaybolmak",
-      "disagreement": "kavga/anlaşmazlık",
-      "gaze": "bakış",
-      "rough": "sert",
-      "protect": "korumak",
-      "servant": "yardımcı",
-      "study": "oda",
-      "pale": "solgun",
-      "loyal": "sadık",
+      "call": "seslenmek",
+      "turned": "çevirmek",
+      "look": "bakış",
+      "heart": "kalp",
+      "voice": "ses",
+      "metal": "metal",
+      "laughed": "gülmek",
+      "sound": "ses",
+      "mean": "kötü/acınası",
+      "address": "adres",
+      "locked": "kilitli",
+      "confused": "kafa karışıklığı",
+      "safe": "güvenli",
+      "later": "sonra",
+      "dining room": "yemek odası",
+      "table": "masa",
+      "thin": "zayıf",
+      "gentleman": "beyefendi",
+      "sad": "üzgün",
+      "wrong": "yanlış",
+      "nervous": "gergin",
+      "paler": "daha solgun",
+      "painful": "acı verici",
+      "change": "değiştirmek",
+      "share": "paylaşmak",
+      "patient": "sabırlı",
+      "trust": "güvenmek",
+      "promise": "söz vermek",
+      "agreed": "kabul etmek",
+      "air": "hava",
       "uneasy": "huzursuz",
-      "wicked": "kötü",
-      "butler": "yardımcı",
-      "frightened": "korkmuş",
-      "chemical": "sıvı",
-      "intruder": "yabancı",
-      "axe": "alet",
-      "poison": "kötü sıvı",
-      "document": "kağıt",
-      "experiment": "deney",
-      "exist": "var olmak",
+      "met": "karşılaşmak",
+      "successful": "başarılı",
+      "slowly": "yavaşça",
+      "shapes": "şekiller",
+      "monsters": "canavarlar",
+      "dim": "loş",
+      "light": "ışık",
+      "lamps": "lambalar",
+      "trouble": "dert",
+      "growing": "büyümek",
+      "shadows": "gölgeler",
+      "solve": "çözmek",
+      "puzzle": "bilmece",
+      "lost": "kaybetmek",
+      "control": "kontrol",
+      "evening": "akşam",
+      "worker": "işçi/yardımcı",
+      "scared": "korkmuş",
+      "pale": "solgun",
+      "terribly": "korkunç derecede",
+      "boss": "patron",
+      "room": "oda",
+      "notes": "notlar",
+      "special": "özel",
+      "liquids": "sıvılar",
+      "higher": "daha tiz",
+      "strange": "garip",
+      "cried": "ağlamak/çığlık atmak",
+      "medicine": "ilaç",
+      "danger": "tehlike",
+      "stranger": "yabancı",
+      "fast": "hızlı",
+      "situation": "durum",
+      "fog": "sis",
+      "thick": "yoğun",
+      "empty": "boş",
+      "tool": "alet",
+      "kitchen": "mutfak",
+      "break": "kırmak",
+      "stairs": "merdivenler",
+      "private": "özel",
+      "knocked": "vurmak",
+      "wood": "tahta",
+      "answer": "cevap",
+      "small": "küçük",
+      "shouted": "bağırmak",
+      "enter": "girmek",
+      "chill": "ürperti",
+      "bones": "kemikler",
+      "hiding": "saklanmak",
+      "trapped": "hapsolmuş",
+      "suffering": "acı çekmek",
+      "loud": "yüksek sesle",
+      "broke": "kırmak",
+      "fell": "düşmek",
+      "floor": "zemin",
+      "ran": "koşmak",
+      "expecting": "beklemek",
+      "found": "bulmak",
+      "body": "ceset",
+      "clothes": "kıyafetler",
+      "dead": "ölü",
+      "bottle": "şişe",
+      "poison": "zehir/kötü sıvı",
+      "letter": "mektup",
+      "handwriting": "el yazısı",
+      "realized": "fark etmek",
+      "same": "aynı",
+      "fight": "mücadele",
+      "over": "bitmiş",
+      "solved": "çözülmüş",
+      "terrible": "korkunç",
+      "kind": "nazik",
+      "battle": "savaş",
+      "darkness": "karanlık",
+      "shook": "titremek",
+      "read": "okumak",
+      "final": "nihai/son",
+      "explained": "açıklamak",
+      "test": "deney",
+      "separate": "ayırmak",
+      "good": "iyi",
+      "bad": "kötü",
+      "parts": "kısımlar",
+      "soul": "ruh",
+      "powerful": "güçlü",
+      "strong": "güçlü",
+      "anymore": "artık",
+      "life": "hayat",
+      "completely": "tamamen",
+      "hide": "saklanmak",
+      "world": "dünya",
+      "stop": "durmak",
+      "monster": "canavar",
+      "end": "son",
+      "balance": "denge",
+      "spirit": "ruh",
+      "broken": "bozuk/kırık",
+      "led": "yol açmak",
+      "tragic": "trajik/üzücü",
+      "lonely": "yalnız",
+      "days": "günler",
+      "own": "kendi",
+      "running out": "bitmek",
+      "find": "bulmak",
+      "right": "doğru",
+      "make": "yapmak",
+      "spent": "harcamak",
+      "hour": "saat",
+      "listening": "dinlemek",
+      "bring": "getirmek",
+      "needed": "ihtiyaç duyulan",
+      "nightmare": "kabus",
+      "regret": "pişmanlık",
+      "hands": "eller",
+      "skin": "deri",
+      "criminal": "suçlu",
+      "friends": "arkadaşlar",
+      "wished": "istemek/dilemek",
+      "see": "görmek",
+      "last": "son",
+      "time": "zaman",
+      "badness": "kötülük",
+      "grew": "büyümek",
+      "every": "her",
+      "day": "gün",
+      "felt": "hissetmek",
+      "like": "gibi",
       "prisoner": "mahkum",
-      "fragility": "zayıflık",
-      "burden": "ağırlık"
+      "cage": "kafes",
+      "fix": "düzeltmek",
+      "mistake": "hata",
+      "played": "oynamak",
+      "forces": "güçler",
+      "pay": "ödemek",
+      "price": "bedel",
+      "life-changing": "hayat değiştiren",
+      "work": "iş",
+      "finished": "bitirmek",
+      "reading": "okuma",
+      "sat": "oturmak",
+      "quiet": "sessiz",
+      "heavy": "ağır",
+      "cold": "soğuk",
+      "outside": "dışarısı",
+      "deep": "derin",
+      "sadness": "üzüntü",
+      "great": "harika/büyük",
+      "happy": "mutlu",
+      "cost": "bedel",
+      "best": "en iyi",
+      "walked": "yürümek",
+      "out": "dışarı",
+      "night": "gece",
+      "leaving": "geride bırakmak",
+      "behind": "arkada",
+      "tell": "anlatmak",
+      "police": "polis",
+      "way": "yol",
+      "protect": "korumak",
+      "serve": "hizmet etmek",
+      "warning": "uyarı",
+      "everyone": "herkes",
+      "dangers": "tehlikeler",
+      "human": "insan",
+      "peace": "huzur",
+      "finally": "nihayet",
+      "returned": "geri dönmek",
+      "city": "şehir",
+      "streets": "sokaklar",
+      "never": "asla",
+      "forget": "unutmak",
+      "lesson": "ders",
+      "learned": "öğrenmek",
+      "alone": "yalnız",
+      "thinking": "düşünmek",
+      "weak": "zayıf",
+      "humans": "insanlar",
+      "weight": "yük",
+      "keeping": "saklamak"
     }
   },
-              {
+                {
     id: 'scifi_the_chrysalids',
     title: "The Chrysalids",
     author: 'John Wyndham',
@@ -16147,7 +16882,7 @@ export const STORIES_PART1: RawStory[] = [
       "The memory of that day stays with me even now. I went back to my house, but my mind was full of questions. Why was a small thing like an extra toe so bad? Why did people think it was a crime against nature? My father spoke often about the true image of God. He wanted us to be like the old people before the world changed. I felt like I was hiding a dark part in my heart. I was only a boy, but I saw that the world was not as simple as my father said. There were secrets everywhere, and I was now part of one. I knew that if the officers found out about Sophie, they would hurt her. I sat in my room and felt the heavy weight of the world, wondering what would happen next in our firm town.",
       "The secret of Sophie became a part of my daily life. Every chance I had, I ran to the quiet river to meet her. We shared small snacks and talked about the trees and the birds. Sophie was just like any other girl I knew, but she lived in constant fear because of her foot. She wore special shoes that hid her secret from the rest of the town. I often worried that someone would see us together or notice her walking in a strange way. The officers were everywhere in Waknuk, searching for any signs of differences in people or animals. My heart beat fast every time I saw them riding their horses down the road. I felt like a watcher of a very weak life. My secret made me feel older than my age, knowing that a single mistake could destroy my friend forever.",
       "One day, the weather turned cold and the wind blew hard against our windows. My father was in a bad mood and talked about the importance of being clean. He spoke of the Great Sad Time and how we must keep our families clean. I listened silently, feeling the cold air on my skin. I knew that his words were not just stories, but a warning to everyone in our group. If anyone dared to be different, they would be hurt or sent away into the wild edges. The wild edges were a dangerous place where monsters lived, and no one ever returned from there. My father believed that only those who looked exactly like the true image of God were safe. I looked at my own hands, wondering if I was truly normal, hoping that no one would ever look closely at me.",
-      "I decided to bring Sophie a small gift to make her smile. I found a pretty stone by the river and kept it in my pocket until we met again. When I gave it to her, she laughed, and for a moment, we were just two happy children playing under the big sky. She told me about her mother who was very kind but always nervous. Her family lived in a small house near the woods, far away from the main road. I realized then how lonely her life really was. She could not play with other children or go to the village parties. We promised to be friends forever, no matter what happened. As the sun began to set, I walked back home, feeling the weight of the coming dark. I knew that our secret was a small flame in a very dark world.",
+      "Sophie told me about her mother who was very kind but always nervous. Her family lived in a small house near the woods, far away from the main road. I realized then how lonely her life really was. She could not play with other children or go to the village parties. We promised to be friends forever, no matter what happened. As the sun began to set, I walked back home, feeling the weight of the coming dark. I knew that our secret was a small flame in a very dark world.",
       "Summer turned into a golden season, but peace was short. One afternoon, a young boy named Alan saw Sophie by the river. Sophie was washing her feet in the water, and her shoes were off. Alan stared at her because her feet were strange, with six toes on each side. I hid behind a large tree, watching in fear. I knew that Alan would tell everyone in Waknuk about her secret. Sophie quickly put her shoes back on, but it was too late. Alan walked away with a strange smile on his face. I felt my heart beating loudly against my ribs. I realized that my dear friend was in great danger. I ran home, but my mind was full of dark thoughts about the future of our small, secret world. Everything felt very weak, like glass that was about to break into a thousand sharp pieces.",
       "The next morning, the village was very quiet, but the air felt heavy with bad news. My father had a serious look on his face, and he walked back and forth in our kitchen. He told me that someone had reported a wrong act in the local area. The officers were already on their way to check the home of Sophie. I wanted to cry, but I forced myself to stay calm and silent. My father spoke about the laws of the land and the need for being clean in our families. He said that any change, no matter how small, was an attack against the laws of God. I looked at the floor, fearing that my face might show my hidden fear. I knew that the officers would find her. The thought of losing my friend made me feel cold and truly afraid for the first time.",
       "I decided that I had to warn Sophie and her parents quickly. I ran through the tall grass, trying to stay out of sight of the main road. The woods were thick and dark, but I knew the path well from my many visits. When I reached their house, Sophie's mother was already packing bags in a great hurry. They were planning to run away into the wild edges, where they hoped to be safe from the cruel officers. I saw Sophie standing by the door with tears in her eyes. We did not have time to talk about our friendship or our shared dreams. Her father told me to go home and act as if I knew nothing about their run away. As I turned back, I looked at the woods one last time, knowing that I might never see my best friend again in this life.",
@@ -16182,7 +16917,7 @@ export const STORIES_PART1: RawStory[] = [
       "inspector": "görevli",
       "secret": "sır",
       "pure": "temiz",
-      "guardian": "izleyici",
+      "watcher": "izleyici",
       "fragile": "zayıf",
       "purity": "temizlik",
       "punish": "incitmek",
@@ -16194,7 +16929,7 @@ export const STORIES_PART1: RawStory[] = [
       "offense": "yanlış eylem",
       "dense": "kalın",
       "escape": "kaçış",
-      "tension": "endişe",
+      "worry": "endişe",
       "communicate": "paylaşmak",
       "universe": "yer",
       "perfection": "mükemmel olma",
@@ -16204,7 +16939,7 @@ export const STORIES_PART1: RawStory[] = [
       "development": "büyüme"
     }
   },
-              {
+                {
     id: 'detective_scandal_bohemia',
     title: "A Scandal in Bohemia",
     author: 'Arthur Conan Doyle',
@@ -16273,7 +17008,7 @@ export const STORIES_PART1: RawStory[] = [
       "danger": "tehlike"
     }
   },
-              {
+                {
     id: 'detective_copper_beeches',
     title: "The Adventure of the Copper Beeches",
     author: 'Arthur Conan Doyle',
@@ -16344,7 +17079,7 @@ export const STORIES_PART1: RawStory[] = [
       "escape": "kaçmak"
     }
   },
-              {
+                {
     id: 'detective_blue_cross',
     title: "The Blue Cross",
     author: 'G. K. Chesterton',
@@ -16413,7 +17148,7 @@ export const STORIES_PART1: RawStory[] = [
       "victory": "zafer"
     }
   },
-              {
+                {
     id: 'detective_queens_necklace',
     title: "The Queen's Necklace",
     author: 'Maurice Leblanc',
@@ -16482,7 +17217,7 @@ export const STORIES_PART1: RawStory[] = [
       "master": "patron"
     }
   },
-              {
+                {
     id: 'detective_coin_dionysius',
     title: "The Coin of Dionysius",
     author: 'Ernest Bramah',
@@ -16552,7 +17287,7 @@ export const STORIES_PART1: RawStory[] = [
       "truth": "gerçek"
     }
   },
-              {
+                {
     id: 'detective_dancing_men',
     title: "The Adventure of the Dancing Men",
     author: 'Arthur Conan Doyle',
@@ -16621,7 +17356,7 @@ export const STORIES_PART1: RawStory[] = [
       "logic": "akıl"
     }
   },
-              {
+                {
     id: 'detective_red_silk_scarf',
     title: "The Red Silk Scarf",
     author: 'Maurice Leblanc',
@@ -16692,7 +17427,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "macera"
     }
   },
-              {
+                {
     id: 'detective_queer_feet',
     title: "The Queer Feet",
     author: 'G. K. Chesterton',
@@ -16763,7 +17498,7 @@ export const STORIES_PART1: RawStory[] = [
       "mercy": "nazik ve iyi olmak"
     }
   },
-              {
+                {
     id: 'detective_lenton_croft',
     title: "The Case of the Lenton Croft Robberies",
     author: 'Arthur Morrison',
@@ -16835,7 +17570,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "büyük zaman"
     }
   },
-              {
+                {
     id: 'detective_cell_13_part1',
     title: "The Problem of Cell 13 - Part 1",
     author: 'Jacques Futrelle',
@@ -16906,7 +17641,7 @@ export const STORIES_PART1: RawStory[] = [
       "winner": "kazanan"
     }
   },
-              {
+                {
     id: 'detective_study_scarlet_1',
     title: "A Study in Scarlet - Part 1",
     author: 'Arthur Conan Doyle',
@@ -16979,7 +17714,7 @@ export const STORIES_PART1: RawStory[] = [
       "confidence": "inanç"
     }
   },
-              {
+                {
     id: 'detective_study_scarlet_2',
     title: "A Study in Scarlet - Part 2",
     author: 'Arthur Conan Doyle',
@@ -17051,7 +17786,7 @@ export const STORIES_PART1: RawStory[] = [
       "victim": "kurban"
     }
   },
-              {
+                {
     id: 'detective_sign_four_1',
     title: "The Sign of the Four - Part 1",
     author: 'Arthur Conan Doyle',
@@ -17121,7 +17856,7 @@ export const STORIES_PART1: RawStory[] = [
       "justice": "doğru olan"
     }
   },
-              {
+                {
     id: 'detective_sign_four_2',
     title: "The Sign of the Four - Part 2",
     author: 'Arthur Conan Doyle',
@@ -17191,7 +17926,7 @@ export const STORIES_PART1: RawStory[] = [
       "justice": "adalet"
     }
   },
-              {
+                {
     id: 'detective_silver_blaze',
     title: "Silver Blaze",
     author: 'Arthur Conan Doyle',
@@ -17259,7 +17994,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "büyük gezi"
     }
   },
-              {
+                {
     id: 'detective_arrest_lupin',
     title: "The Arrest of Arsène Lupin",
     author: 'Maurice Leblanc',
@@ -17330,7 +18065,7 @@ export const STORIES_PART1: RawStory[] = [
       "custody": "hapis"
     }
   },
-              {
+                {
     id: 'detective_lupin_in_prison',
     title: "Arsène Lupin in Prison",
     author: 'Maurice Leblanc',
@@ -17401,7 +18136,7 @@ export const STORIES_PART1: RawStory[] = [
       "fame": "popülerlik"
     }
   },
-              {
+                {
     id: 'detective_escape_lupin',
     title: "The Escape of Arsène Lupin",
     author: 'Maurice Leblanc',
@@ -17468,7 +18203,7 @@ export const STORIES_PART1: RawStory[] = [
       "victory": "zafer"
     }
   },
-              {
+                {
     id: 'detective_mysterious_passenger',
     title: "The Mysterious Passenger",
     author: 'Maurice Leblanc',
@@ -17540,7 +18275,7 @@ export const STORIES_PART1: RawStory[] = [
       "clutching": "sıkıca tutarak"
     }
   },
-              {
+                {
     id: 'detective_flying_stars',
     title: "The Flying Stars",
     author: 'G. K. Chesterton',
@@ -17611,7 +18346,7 @@ export const STORIES_PART1: RawStory[] = [
       "spirit": "ruh"
     }
   },
-              {
+                {
     id: 'detective_sins_saradine',
     title: "The Sins of Prince Saradine",
     author: 'G. K. Chesterton',
@@ -17682,7 +18417,7 @@ export const STORIES_PART1: RawStory[] = [
       "burden": "yük"
     }
   },
-              {
+                {
     id: 'detective_biter_bit',
     title: "The Biter Bit",
     author: 'Wilkie Collins',
@@ -17754,7 +18489,7 @@ export const STORIES_PART1: RawStory[] = [
       "melody": "melodi"
     }
   },
-              {
+                {
     id: 'detective_fenchurch_street',
     title: "The Fenchurch Street Mystery",
     author: 'Baroness Orczy',
@@ -17825,7 +18560,7 @@ export const STORIES_PART1: RawStory[] = [
       "betrayed": "ihanet etmek"
     }
   },
-              {
+                {
     id: 'detective_cell_13_part2',
     title: "The Problem of Cell 13 - Part 2",
     author: 'Jacques Futrelle',
@@ -17897,7 +18632,7 @@ export const STORIES_PART1: RawStory[] = [
       "piece": "parça"
     }
   },
-              {
+                {
     id: 'detective_marie_roget',
     title: "The Mystery of Marie Rogêt",
     author: 'Edgar Allan Poe',
@@ -17966,7 +18701,7 @@ export const STORIES_PART1: RawStory[] = [
       "inconsistency": "tutarsızlık"
     }
   },
-            {
+              {
     id: 'detective_noble_bachelor',
     title: "The Adventure of the Noble Bachelor",
     author: 'Arthur Conan Doyle',
@@ -18035,7 +18770,7 @@ export const STORIES_PART1: RawStory[] = [
       "bachelor": "evlenmemiş adam"
     }
   },
-            {
+              {
     id: 'detective_cardboard_box',
     title: "The Adventure of the Cardboard Box",
     author: 'Arthur Conan Doyle',
@@ -18106,7 +18841,7 @@ export const STORIES_PART1: RawStory[] = [
       "honour": "iyi isim"
     }
   },
-            {
+              {
     id: 'detective_mirror_magistrate',
     title: "The Mirror of the Magistrate",
     author: 'G. K. Chesterton',
@@ -18175,7 +18910,7 @@ export const STORIES_PART1: RawStory[] = [
       "handcuffs": "kelepçe"
     }
   },
-            {
+              {
     id: 'detective_seven_of_hearts',
     title: "The Seven of Hearts",
     author: 'Maurice Leblanc',
@@ -18241,7 +18976,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "macera"
     }
   },
-            {
+              {
     id: 'detective_secret_growler',
     title: "The Secret of the Growler",
     author: 'Arthur Morrison',
@@ -18311,7 +19046,7 @@ export const STORIES_PART1: RawStory[] = [
       "protect": "korumak"
     }
   },
-            {
+              {
     id: 'detective_lost_special',
     title: "The Lost Special",
     author: 'Arthur Conan Doyle',
@@ -18383,7 +19118,7 @@ export const STORIES_PART1: RawStory[] = [
       "puzzle": "problem"
     }
   },
-            {
+              {
     id: 'detective_red_thread_honour',
     title: "The Red Thread of Honour",
     author: 'Ernest Bramah',
@@ -18455,7 +19190,7 @@ export const STORIES_PART1: RawStory[] = [
       "mission": "iş"
     }
   },
-            {
+              {
     id: 'detective_escape_old_man',
     title: "The Escape of the Old Man",
     author: 'Baroness Orczy',
@@ -18526,7 +19261,7 @@ export const STORIES_PART1: RawStory[] = [
       "horizon": "arazi kenarı"
     }
   },
-            {
+              {
     id: 'detective_case_mirror',
     title: "The Case of the Mirror",
     author: 'Jacques Futrelle',
@@ -18595,7 +19330,7 @@ export const STORIES_PART1: RawStory[] = [
       "solve": "çözmek"
     }
   },
-            {
+              {
     id: 'detective_steel_room',
     title: "The Mystery of the Steel Room",
     author: 'Jacques Futrelle',
@@ -18667,7 +19402,7 @@ export const STORIES_PART1: RawStory[] = [
       "patience": "zaman"
     }
   },
-            {
+              {
     id: 'detective_beryl_coronet',
     title: "The Adventure of the Beryl Coronet",
     author: 'Arthur Conan Doyle',
@@ -18735,7 +19470,7 @@ export const STORIES_PART1: RawStory[] = [
       "forgive": "affetmek"
     }
   },
-            {
+              {
     id: 'detective_engineers_thumb',
     title: "The Adventure of the Engineer's Thumb",
     author: 'Arthur Conan Doyle',
@@ -18806,7 +19541,7 @@ export const STORIES_PART1: RawStory[] = [
       "courage": "cesaret"
     }
   },
-            {
+              {
     id: 'detective_red_scarf_2',
     title: "The Red Silk Scarf - Part 2",
     author: 'Maurice Leblanc',
@@ -18876,7 +19611,7 @@ export const STORIES_PART1: RawStory[] = [
       "stride": "adım"
     }
   },
-            {
+              {
     id: 'detective_black_pearl',
     title: "The Black Pearl",
     author: 'Maurice Leblanc',
@@ -18947,7 +19682,7 @@ export const STORIES_PART1: RawStory[] = [
       "legendary": "ünlü"
     }
   },
-            {
+              {
     id: 'detective_man_passage',
     title: "The Man in the Passage",
     author: 'G. K. Chesterton',
@@ -19020,7 +19755,7 @@ export const STORIES_PART1: RawStory[] = [
       "innocent": "masum"
     }
   },
-            {
+              {
     id: 'detective_purple_jewel',
     title: "The Purple Jewel",
     author: 'G. K. Chesterton',
@@ -19091,7 +19826,7 @@ export const STORIES_PART1: RawStory[] = [
       "whisper": "fısıldamak"
     }
   },
-            {
+              {
     id: 'detective_hansom_cab_1',
     title: "The Mystery of the Hansom Cab - Part 1",
     author: 'Fergus Hume',
@@ -19160,7 +19895,7 @@ export const STORIES_PART1: RawStory[] = [
       "justice": "hakkaniyet"
     }
   },
-            {
+              {
     id: 'detective_missing_hand',
     title: "The Case of the Missing Hand",
     author: 'Arthur Morrison',
@@ -19229,7 +19964,7 @@ export const STORIES_PART1: RawStory[] = [
       "recover": "bulmak"
     }
   },
-            {
+              {
     id: 'detective_stolen_cigar',
     title: "The Stolen Cigar Case",
     author: 'Bret Harte',
@@ -19301,7 +20036,7 @@ export const STORIES_PART1: RawStory[] = [
       "evidence": "işaret"
     }
   },
-            {
+              {
     id: 'detective_brook_street_tragedy',
     title: "The Tragedy of Brook Street",
     author: 'Arthur Morrison',
@@ -19373,7 +20108,7 @@ export const STORIES_PART1: RawStory[] = [
       "justice": "adalet"
     }
   },
-          {
+            {
     id: 'history_giza_pyramids',
     title: "The Pyramids of Giza",
     author: 'Ancient Egypt',
@@ -19442,7 +20177,7 @@ export const STORIES_PART1: RawStory[] = [
       "symbol": "işaret"
     }
   },
-          {
+            {
     id: 'history_great_wall',
     title: "The Great Wall of China",
     author: 'Ancient China',
@@ -19509,7 +20244,7 @@ export const STORIES_PART1: RawStory[] = [
       "unity": "birlik"
     }
   },
-          {
+            {
     id: 'history_roman_colosseum',
     title: "The Roman Colosseum",
     author: 'Roman Empire',
@@ -19578,7 +20313,7 @@ export const STORIES_PART1: RawStory[] = [
       "ruins": "kırık duvarlar"
     }
   },
-          {
+            {
     id: 'history_marco_polo',
     title: "Marco Polo's Journey",
     author: 'Marco Polo',
@@ -19646,7 +20381,7 @@ export const STORIES_PART1: RawStory[] = [
       "wonder": "harika"
     }
   },
-          {
+            {
     id: 'history_discovery_fire',
     title: "The Discovery of Fire",
     author: 'Prehistoric Era',
@@ -19714,7 +20449,7 @@ export const STORIES_PART1: RawStory[] = [
       "knowledge": "bilgi"
     }
   },
-          {
+            {
     id: 'history_troy_legend',
     title: "The Legend of Troy",
     author: 'Greek Mythology',
@@ -19783,7 +20518,7 @@ export const STORIES_PART1: RawStory[] = [
       "courage": "cesaret"
     }
   },
-          {
+            {
     id: 'history_pompeii',
     title: "Pompeii: The City Frozen in Time",
     author: 'Roman Empire',
@@ -19853,7 +20588,7 @@ export const STORIES_PART1: RawStory[] = [
       "memory": "hafıza"
     }
   },
-          {
+            {
     id: 'history_paper_invention',
     title: "The Story of Paper",
     author: 'Ancient China',
@@ -19924,7 +20659,7 @@ export const STORIES_PART1: RawStory[] = [
       "progress": "ilerleme/büyüme"
     }
   },
-          {
+            {
     id: 'history_viking_voyagers',
     title: "The Viking Voyagers",
     author: 'Viking Age',
@@ -19994,7 +20729,7 @@ export const STORIES_PART1: RawStory[] = [
       "tribe": "halk"
     }
   },
-          {
+            {
     id: 'history_first_marathon',
     title: "The First Marathon",
     author: 'Ancient Greece',
@@ -20061,7 +20796,7 @@ export const STORIES_PART1: RawStory[] = [
       "courage": "cesaret"
     }
   },
-          {
+            {
     id: 'history_alexander_great',
     title: "Alexander the Great's Quest",
     author: 'Alexander the Great',
@@ -20132,7 +20867,7 @@ export const STORIES_PART1: RawStory[] = [
       "exhausted": "çok yorgun"
     }
   },
-          {
+            {
     id: 'history_julius_caesar',
     title: "Julius Caesar and the Rubicon",
     author: 'Julius Caesar',
@@ -20202,7 +20937,7 @@ export const STORIES_PART1: RawStory[] = [
       "mission": "görev"
     }
   },
-          {
+            {
     id: 'history_cleopatra',
     title: "Cleopatra: The Last Pharaoh",
     author: 'Cleopatra',
@@ -20275,7 +21010,7 @@ export const STORIES_PART1: RawStory[] = [
       "province": "parça"
     }
   },
-          {
+            {
     id: 'history_joan_of_arc',
     title: "Joan of Arc: The Maid of Orléans",
     author: 'Joan of Arc',
@@ -20345,7 +21080,7 @@ export const STORIES_PART1: RawStory[] = [
       "guilty": "suçlu"
     }
   },
-          {
+            {
     id: 'history_christopher_columbus',
     title: "Christopher Columbus and the New World",
     author: 'Christopher Columbus',
@@ -20415,7 +21150,7 @@ export const STORIES_PART1: RawStory[] = [
       "exploration": "keşif"
     }
   },
-          {
+            {
     id: 'history_leonardo_da_vinci',
     title: "Leonardo da Vinci: The Renaissance Man",
     author: 'Leonardo da Vinci',
@@ -20487,7 +21222,7 @@ export const STORIES_PART1: RawStory[] = [
       "logic": "mantık"
     }
   },
-          {
+            {
     id: 'history_gutenberg_press',
     title: "The Gutenberg Press",
     author: 'Johannes Gutenberg',
@@ -20558,7 +21293,7 @@ export const STORIES_PART1: RawStory[] = [
       "legacy": "miras"
     }
   },
-          {
+            {
     id: 'history_taj_mahal',
     title: "The Taj Mahal: A Monument of Love",
     author: 'Mughal Empire',
@@ -20627,7 +21362,7 @@ export const STORIES_PART1: RawStory[] = [
       "century": "yıl"
     }
   },
-          {
+            {
     id: 'history_robin_hood',
     title: "The Legend of Robin Hood",
     author: 'English Folklore',
@@ -20695,7 +21430,7 @@ export const STORIES_PART1: RawStory[] = [
       "courage": "cesaret"
     }
   },
-          {
+            {
     id: 'history_boston_tea_party',
     title: "The Boston Tea Party",
     author: 'American Revolution',
@@ -20762,7 +21497,7 @@ export const STORIES_PART1: RawStory[] = [
       "courage": "cesaret"
     }
   },
-          {
+            {
     id: 'history_magna_carta',
     title: "The Magna Carta",
     author: 'King John',
@@ -20831,7 +21566,7 @@ export const STORIES_PART1: RawStory[] = [
       "democracy": "halk yönetimi"
     }
   },
-          {
+            {
     id: 'history_wright_brothers',
     title: "The First Flight of the Wright Brothers",
     author: 'Wright Brothers',
@@ -20904,7 +21639,7 @@ export const STORIES_PART1: RawStory[] = [
       "courage": "cesaret"
     }
   },
-          {
+            {
     id: 'history_galileo_galilei',
     title: "Galileo Galilei and the Stars",
     author: 'Galileo Galilei',
@@ -20972,7 +21707,7 @@ export const STORIES_PART1: RawStory[] = [
       "knowledge": "bilgi"
     }
   },
-          {
+            {
     id: 'history_king_arthur',
     title: "King Arthur and the Round Table",
     author: 'Arthurian Legend',
@@ -21043,7 +21778,7 @@ export const STORIES_PART1: RawStory[] = [
       "mist": "sis"
     }
   },
-          {
+            {
     id: 'history_silk_road',
     title: "The Story of the Silk Road",
     author: 'Ancient Trade',

@@ -1,7 +1,7 @@
 import { RawStory } from './stories_part1';
 
 export const STORIES_PART2: RawStory[] = [
-                                          {
+                                            {
     id: 'wizard_of_oz',
     title: "The Wizard of Oz",
     author: 'L. Frank Baum',
@@ -108,7 +108,7 @@ export const STORIES_PART2: RawStory[] = [
       "wicked": "kötücül"
     }
   },
-                                          {
+                                            {
     id: 'golden_goose',
     title: "The Goose with the Golden Eggs",
     author: 'Aesop',
@@ -215,7 +215,7 @@ export const STORIES_PART2: RawStory[] = [
       "impatient": "sabırsız"
     }
   },
-                                          {
+                                            {
     id: 'pied_piper',
     title: "The Pied Piper of Hamelin",
     author: 'Robert Browning',
@@ -322,7 +322,7 @@ export const STORIES_PART2: RawStory[] = [
       "guilders": "gulden"
     }
   },
-                                          {
+                                            {
     id: 'rumpelstiltskin',
     title: "Rumpelstiltskin",
     author: 'Brothers Grimm',
@@ -430,7 +430,7 @@ export const STORIES_PART2: RawStory[] = [
       "relief": "rahatlama"
     }
   },
-                                          {
+                                            {
     id: 'gullivers_travels',
     title: "Gulliver's Travels",
     author: 'Jonathan Swift',
@@ -538,7 +538,7 @@ export const STORIES_PART2: RawStory[] = [
       "civil": "sivil"
     }
   },
-                                          {
+                                            {
     id: 'robinson_crusoe',
     title: "Robinson Crusoe",
     author: 'Daniel Defoe',
@@ -648,7 +648,7 @@ export const STORIES_PART2: RawStory[] = [
       "chilling": "ürpertici"
     }
   },
-                                          {
+                                            {
     id: 'gatsby_b2',
     title: "The Great Gatsby",
     author: 'F. Scott Fitzgerald',
@@ -757,7 +757,7 @@ export const STORIES_PART2: RawStory[] = [
       "ashes": "küller"
     }
   },
-                                          {
+                                            {
     id: 'frankenstein',
     title: "Frankenstein",
     author: 'Mary Shelley',
@@ -870,7 +870,7 @@ export const STORIES_PART2: RawStory[] = [
       "balm": "merhem"
     }
   },
-                                          {
+                                            {
     id: 'dracula',
     title: "Dracula",
     author: 'Bram Stoker',
@@ -981,7 +981,7 @@ export const STORIES_PART2: RawStory[] = [
       "agonizing": "can yakıcı"
     }
   },
-                                          {
+                                            {
     id: 'sherlock_holmes',
     title: "Sherlock Holmes",
     author: 'Arthur Conan Doyle',
@@ -1093,7 +1093,7 @@ export const STORIES_PART2: RawStory[] = [
       "anomalies": "anomaliler"
     }
   },
-                                          {
+                                            {
     id: 'odyssey',
     title: "The Odyssey",
     author: 'Homer',
@@ -1207,7 +1207,7 @@ export const STORIES_PART2: RawStory[] = [
       "aftermath": "akıbet"
     }
   },
-                                          {
+                                            {
     id: 'jungle_book',
     title: "The Jungle Book",
     author: 'Rudyard Kipling',
@@ -1328,7 +1328,7 @@ export const STORIES_PART2: RawStory[] = [
       "constantly": "durmaksızın"
     }
   },
-                                          {
+                                            {
     id: 'snow_queen',
     title: "The Snow Queen",
     author: 'Hans Christian Andersen',
@@ -1439,7 +1439,7 @@ export const STORIES_PART2: RawStory[] = [
       "gale": "fırtına"
     }
   },
-                                          {
+                                            {
     id: 'normal_people_c1',
     title: "Normal People",
     author: 'Sally Rooney',
@@ -1552,7 +1552,7 @@ export const STORIES_PART2: RawStory[] = [
       "cobblestoned": "arnavut kaldırımlı"
     }
   },
-                                          {
+                                            {
     id: 'treasure_island',
     title: "Treasure Island",
     author: 'Robert Louis Stevenson',
@@ -1668,7 +1668,7 @@ export const STORIES_PART2: RawStory[] = [
       "azure": "gök mavisi"
     }
   },
-                                          {
+                                            {
     id: 'elves_shoemaker',
     title: "The Elves and the Shoemaker",
     author: 'Brothers Grimm',
@@ -1738,7 +1738,7 @@ export const STORIES_PART2: RawStory[] = [
       "gesture": "işaret"
     }
   },
-                                          {
+                                            {
     id: 'emperors_clothes',
     title: "The Emperor's New Clothes",
     author: 'Hans Christian Andersen',
@@ -1806,7 +1806,7 @@ export const STORIES_PART2: RawStory[] = [
       "vanity": "kibir"
     }
   },
-                                          {
+                                            {
     id: 'happy_prince',
     title: "The Happy Prince",
     author: 'Oscar Wilde',
@@ -1878,7 +1878,7 @@ export const STORIES_PART2: RawStory[] = [
       "trash": "çöp"
     }
   },
-                                          {
+                                            {
     id: 'wind_willows',
     title: "The Wind in the Willows",
     author: 'Kenneth Grahame',
@@ -1951,7 +1951,7 @@ export const STORIES_PART2: RawStory[] = [
       "underground": "yeraltı"
     }
   },
-                                          {
+                                            {
     id: 'secret_garden',
     title: "The Secret Garden",
     author: 'Frances Hodgson Burnett',
@@ -2022,7 +2022,7 @@ export const STORIES_PART2: RawStory[] = [
       "mansion": "konak"
     }
   },
-                                          {
+                                            {
     id: 'heidi',
     title: "Heidi",
     author: 'Johanna Spyri',
@@ -2092,7 +2092,7 @@ export const STORIES_PART2: RawStory[] = [
       "rugged": "engebeli"
     }
   },
-                                          {
+                                            {
     id: 'little_prince',
     title: "The Little Prince",
     author: 'Antoine de Saint-Exupéry',
@@ -2165,7 +2165,7 @@ export const STORIES_PART2: RawStory[] = [
       "disciplined": "disiplinli"
     }
   },
-                                          {
+                                            {
     id: 'christmas_carol',
     title: "A Christmas Carol",
     author: 'Charles Dickens',
@@ -2237,7 +2237,7 @@ export const STORIES_PART2: RawStory[] = [
       "drifted": "sürüklendi"
     }
   },
-                                          {
+                                            {
     id: 'around_world',
     title: "Around the World in Eighty Days",
     author: 'Jules Verne',
@@ -2309,7 +2309,7 @@ export const STORIES_PART2: RawStory[] = [
       "awaited": "beklenen"
     }
   },
-                                          {
+                                            {
     id: 'time_machine',
     title: "The Time Machine",
     author: 'H. G. Wells',
@@ -2382,7 +2382,7 @@ export const STORIES_PART2: RawStory[] = [
       "atmosphere": "atmosfer"
     }
   },
-                                          {
+                                            {
     id: 'white_fang',
     title: "White Fang",
     author: 'Jack London',
@@ -2451,7 +2451,7 @@ export const STORIES_PART2: RawStory[] = [
       "constant": "sürekli"
     }
   },
-                                          {
+                                            {
     id: 'call_wild',
     title: "The Call of the Wild",
     author: 'Jack London',
@@ -2523,7 +2523,7 @@ export const STORIES_PART2: RawStory[] = [
       "chaotic": "kaotik"
     }
   },
-                                          {
+                                            {
     id: 'don_quixote',
     title: "Don Quixote",
     author: 'Miguel de Cervantes',
@@ -2594,7 +2594,7 @@ export const STORIES_PART2: RawStory[] = [
       "catalyst": "katalizör"
     }
   },
-                                          {
+                                            {
     id: 'moby_dick',
     title: "Moby Dick",
     author: 'Herman Melville',
@@ -2665,7 +2665,7 @@ export const STORIES_PART2: RawStory[] = [
       "agony": "ıstırap"
     }
   },
-                                          {
+                                            {
     id: 'hunchback_notredame',
     title: "The Hunchback of Notre Dame",
     author: 'Victor Hugo',
@@ -2736,7 +2736,7 @@ export const STORIES_PART2: RawStory[] = [
       "burgeoning": "filizlenen"
     }
   },
-                                          {
+                                            {
     id: 'dorian_gray',
     title: "The Picture of Dorian Gray",
     author: 'Oscar Wilde',
@@ -2809,7 +2809,7 @@ export const STORIES_PART2: RawStory[] = [
       "jagged": "girintili çıkıntılı"
     }
   },
-                                        {
+                                          {
     id: 'anne_green_gables',
     title: "Anne of Green Gables",
     author: 'Lucy Maud Montgomery',
@@ -2879,7 +2879,7 @@ export const STORIES_PART2: RawStory[] = [
       "sighed": "iç çekti"
     }
   },
-                                        {
+                                          {
     id: 'little_women',
     title: "Little Women",
     author: 'Louisa May Alcott',
@@ -2950,7 +2950,7 @@ export const STORIES_PART2: RawStory[] = [
       "genuine": "hakiki"
     }
   },
-                                        {
+                                          {
     id: 'pollyanna',
     title: "Pollyanna",
     author: 'Eleanor H. Porter',
@@ -3020,7 +3020,7 @@ export const STORIES_PART2: RawStory[] = [
       "stiff": "katı"
     }
   },
-                                        {
+                                          {
     id: 'pride_prejudice',
     title: "Pride and Prejudice",
     author: 'Jane Austen',
@@ -3092,7 +3092,7 @@ export const STORIES_PART2: RawStory[] = [
       "acknowledged": "kabul edilmiş"
     }
   },
-                                        {
+                                          {
     id: 'war_of_worlds',
     title: "The War of the Worlds",
     author: 'H. G. Wells',
@@ -3164,7 +3164,7 @@ export const STORIES_PART2: RawStory[] = [
       "blinding": "göz kamaştırıcı"
     }
   },
-                                        {
+                                          {
     id: 'dr_jekyll_mr_hyde',
     title: "Strange Case of Dr Jekyll and Mr Hyde",
     author: 'Robert Louis Stevenson',
@@ -3235,7 +3235,7 @@ export const STORIES_PART2: RawStory[] = [
       "anxious": "tedirgin"
     }
   },
-                                        {
+                                          {
     id: 'invisible_man',
     title: "The Invisible Man",
     author: 'H. G. Wells',
@@ -3305,7 +3305,7 @@ export const STORIES_PART2: RawStory[] = [
       "assaulted": "saldırıya uğramış"
     }
   },
-                                        {
+                                          {
     id: 'crime_punishment',
     title: "Crime and Punishment",
     author: 'Fyodor Dostoevsky',
@@ -3377,7 +3377,7 @@ export const STORIES_PART2: RawStory[] = [
       "obsolete": "köhnemiş"
     }
   },
-                                        {
+                                          {
     id: 'les_miserables',
     title: "Les Misérables",
     author: 'Victor Hugo',
@@ -3448,7 +3448,7 @@ export const STORIES_PART2: RawStory[] = [
       "tranquility": "dinginlik"
     }
   },
-                                  {
+                                    {
     id: 'horror_pit_pendulum',
     title: "The Pit and the Pendulum",
     author: 'Edgar Allan Poe',
@@ -3520,7 +3520,7 @@ export const STORIES_PART2: RawStory[] = [
       "descended": "indi"
     }
   },
-                                  {
+                                    {
     id: 'horror_tell_tale_heart',
     title: "The Tell-Tale Heart",
     author: 'Edgar Allan Poe',
@@ -3592,7 +3592,7 @@ export const STORIES_PART2: RawStory[] = [
       "furious": "öfkeli"
     }
   },
-                                  {
+                                    {
     id: 'horror_murders_rue_morgue',
     title: "The Murders in the Rue Morgue",
     author: 'Edgar Allan Poe',
@@ -3665,7 +3665,7 @@ export const STORIES_PART2: RawStory[] = [
       "witnesses": "şahitler"
     }
   },
-                                  {
+                                    {
     id: 'horror_boscombe_valley',
     title: "The Boscombe Valley Mystery",
     author: 'Arthur Conan Doyle',
@@ -3737,7 +3737,7 @@ export const STORIES_PART2: RawStory[] = [
       "identify": "teşhis etmek"
     }
   },
-                                  {
+                                    {
     id: 'horror_woman_in_white',
     title: "The Woman in White",
     author: 'Wilkie Collins',
@@ -3809,7 +3809,7 @@ export const STORIES_PART2: RawStory[] = [
       "fragile": "narin"
     }
   },
-                                  {
+                                    {
     id: 'horror_phantom_opera',
     title: "The Phantom of the Opera",
     author: 'Gaston Leroux',
@@ -3881,7 +3881,7 @@ export const STORIES_PART2: RawStory[] = [
       "entirely": "tamamen"
     }
   },
-                                  {
+                                    {
     id: 'horror_dunwich_horror',
     title: "The Dunwich Horror",
     author: 'H. P. Lovecraft',
@@ -3953,7 +3953,7 @@ export const STORIES_PART2: RawStory[] = [
       "echoing": "çınlayan"
     }
   },
-                                  {
+                                    {
     id: 'horror_mountains_madness',
     title: "At the Mountains of Madness",
     author: 'H. P. Lovecraft',
@@ -4026,7 +4026,7 @@ export const STORIES_PART2: RawStory[] = [
       "energy": "enerji"
     }
   },
-                                  {
+                                    {
     id: 'horror_shadow_innsmouth',
     title: "The Shadow over Innsmouth",
     author: 'H. P. Lovecraft',
@@ -4098,7 +4098,7 @@ export const STORIES_PART2: RawStory[] = [
       "leaned": "eğildi"
     }
   },
-                                  {
+                                    {
     id: 'horror_carmilla',
     title: "Carmilla",
     author: 'Sheridan Le Fanu',
@@ -4170,7 +4170,7 @@ export const STORIES_PART2: RawStory[] = [
       "echoed": "yankılandı"
     }
   },
-                                  {
+                                    {
     id: 'horror_hound_baskervilles',
     title: "The Hound of the Baskervilles",
     author: 'Arthur Conan Doyle',
@@ -4241,7 +4241,7 @@ export const STORIES_PART2: RawStory[] = [
       "atmosphere": "kasvet"
     }
   },
-                                  {
+                                    {
     id: 'horror_lair_white_worm',
     title: "The Lair of the White Worm",
     author: 'Bram Stoker',
@@ -4312,7 +4312,7 @@ export const STORIES_PART2: RawStory[] = [
       "architecture": "mimari"
     }
   },
-                                  {
+                                    {
     id: 'horror_jewel_seven_stars',
     title: "The Jewel of Seven Stars",
     author: 'Bram Stoker',
@@ -4383,7 +4383,7 @@ export const STORIES_PART2: RawStory[] = [
       "absolute": "mutlak"
     }
   },
-                                  {
+                                    {
     id: 'horror_turn_of_screw',
     title: "The Turn of the Screw",
     author: 'Henry James',
@@ -4453,7 +4453,7 @@ export const STORIES_PART2: RawStory[] = [
       "awaited": "beklenen"
     }
   },
-                                  {
+                                    {
     id: 'horror_rappaccinis_daughter',
     title: "Rappaccini's Daughter",
     author: 'Nathaniel Hawthorne',
@@ -4526,7 +4526,7 @@ export const STORIES_PART2: RawStory[] = [
       "affection": "şefkat"
     }
   },
-                                  {
+                                    {
     id: 'horror_mysteries_udolpho',
     title: "The Mysteries of Udolpho",
     author: 'Ann Radcliffe',
@@ -4597,7 +4597,7 @@ export const STORIES_PART2: RawStory[] = [
       "beloved": "sevgili"
     }
   },
-                                  {
+                                    {
     id: 'horror_castle_of_otranto',
     title: "The Castle of Otranto",
     author: 'Horace Walpole',
@@ -4668,7 +4668,7 @@ export const STORIES_PART2: RawStory[] = [
       "acknowledge": "tanımak"
     }
   },
-                                  {
+                                    {
     id: 'horror_monk',
     title: "The Monk",
     author: 'Matthew Gregory Lewis',
@@ -4741,7 +4741,7 @@ export const STORIES_PART2: RawStory[] = [
       "affections": "duygular"
     }
   },
-                                  {
+                                    {
     id: 'horror_purloined_letter',
     title: "The Purloined Letter",
     author: 'Edgar Allan Poe',
@@ -4812,7 +4812,7 @@ export const STORIES_PART2: RawStory[] = [
       "burdened": "yüklü"
     }
   },
-                                  {
+                                    {
     id: 'horror_great_god_pan',
     title: "The Great God Pan",
     author: 'Arthur Machen',
@@ -4882,7 +4882,7 @@ export const STORIES_PART2: RawStory[] = [
       "biological": "biyolojik"
     }
   },
-                                  {
+                                    {
     id: 'horror_call_of_cthulhu',
     title: "The Call of Cthulhu",
     author: 'H. P. Lovecraft',
@@ -4954,7 +4954,7 @@ export const STORIES_PART2: RawStory[] = [
       "bouts": "nöbetler"
     }
   },
-                                  {
+                                    {
     id: 'horror_white_people',
     title: "The White People",
     author: 'Arthur Machen',
@@ -5026,7 +5026,7 @@ export const STORIES_PART2: RawStory[] = [
       "celestial": "göksel"
     }
   },
-                                  {
+                                    {
     id: 'horror_beetle',
     title: "The Beetle",
     author: 'Richard Marsh',
@@ -5096,7 +5096,7 @@ export const STORIES_PART2: RawStory[] = [
       "abyss": "uçurum"
     }
   },
-                                  {
+                                    {
     id: 'horror_house_borderland',
     title: "The House on the Borderland",
     author: 'William Hope Hodgson',
@@ -5166,7 +5166,7 @@ export const STORIES_PART2: RawStory[] = [
       "agony": "ıstırap"
     }
   },
-                                  {
+                                    {
     id: 'horror_varney_vampire',
     title: "Varney the Vampire",
     author: 'Thomas Preskett Prest',
@@ -5236,7 +5236,7 @@ export const STORIES_PART2: RawStory[] = [
       "agonizing": "can yakıcı"
     }
   },
-                            {
+                              {
     id: 'classic_wuthering_heights',
     title: "Wuthering Heights",
     author: 'Emily Brontë',
@@ -5308,7 +5308,7 @@ export const STORIES_PART2: RawStory[] = [
       "moving": "dokunaklı"
     }
   },
-                            {
+                              {
     id: 'classic_scarlet_letter',
     title: "The Scarlet Letter",
     author: 'Nathaniel Hawthorne',
@@ -5380,7 +5380,7 @@ export const STORIES_PART2: RawStory[] = [
       "grand": "görkemli"
     }
   },
-                            {
+                              {
     id: 'classic_tale_two_cities',
     title: "A Tale of Two Cities",
     author: 'Charles Dickens',
@@ -5450,7 +5450,7 @@ export const STORIES_PART2: RawStory[] = [
       "chaos": "kargaşa"
     }
   },
-                            {
+                              {
     id: 'classic_man_iron_mask',
     title: "The Man in the Iron Mask",
     author: 'Alexandre Dumas',
@@ -5518,7 +5518,7 @@ export const STORIES_PART2: RawStory[] = [
       "confronted": "yüzleşti"
     }
   },
-                            {
+                              {
     id: 'classic_connecticut_yankee',
     title: "A Connecticut Yankee in King Arthur's Court",
     author: 'Mark Twain',
@@ -5591,7 +5591,7 @@ export const STORIES_PART2: RawStory[] = [
       "encountered": "karşılaşılan"
     }
   },
-                            {
+                              {
     id: 'classic_age_of_innocence',
     title: "The Age of Innocence",
     author: 'Edith Wharton',
@@ -5662,7 +5662,7 @@ export const STORIES_PART2: RawStory[] = [
       "currently": "şu anda"
     }
   },
-                          {
+                            {
     id: 'classic_house_of_mirth',
     title: "The House of Mirth",
     author: 'Edith Wharton',
@@ -5734,7 +5734,7 @@ export const STORIES_PART2: RawStory[] = [
       "flames": "alevler"
     }
   },
-                          {
+                            {
     id: 'classic_sea_wolf',
     title: "The Sea-Wolf",
     author: 'Jack London',
@@ -5804,7 +5804,7 @@ export const STORIES_PART2: RawStory[] = [
       "constant": "sürekli"
     }
   },
-                          {
+                            {
     id: 'classic_martin_eden',
     title: "Martin Eden",
     author: 'Jack London',
@@ -5876,7 +5876,7 @@ export const STORIES_PART2: RawStory[] = [
       "docks": "rıhtım"
     }
   },
-                          {
+                            {
     id: 'classic_madding_crowd',
     title: "Far from the Madding Crowd",
     author: 'Thomas Hardy',
@@ -5947,7 +5947,7 @@ export const STORIES_PART2: RawStory[] = [
       "profound": "derin"
     }
   },
-                          {
+                            {
     id: 'classic_fathers_and_sons',
     title: "Fathers and Sons",
     author: 'Ivan Turgenev',
@@ -6020,7 +6020,7 @@ export const STORIES_PART2: RawStory[] = [
       "affection": "şefkat"
     }
   },
-                          {
+                            {
     id: 'classic_dead_souls',
     title: "Dead Souls",
     author: 'Nikolai Gogol',
@@ -6091,7 +6091,7 @@ export const STORIES_PART2: RawStory[] = [
       "accustomed": "alışkın"
     }
   },
-                          {
+                            {
     id: 'classic_overcoat',
     title: "The Overcoat",
     author: 'Nikolai Gogol',
@@ -6161,7 +6161,7 @@ export const STORIES_PART2: RawStory[] = [
       "atmosphere": "atmosfer"
     }
   },
-                          {
+                            {
     id: 'classic_tess_urbervilles',
     title: "Tess of the d'Urbervilles",
     author: 'Thomas Hardy',
@@ -6234,7 +6234,7 @@ export const STORIES_PART2: RawStory[] = [
       "amidst": "ortasında"
     }
   },
-                          {
+                            {
     id: 'classic_mayor_casterbridge',
     title: "The Mayor of Casterbridge",
     author: 'Thomas Hardy',
@@ -6306,7 +6306,7 @@ export const STORIES_PART2: RawStory[] = [
       "accelerated": "hızlandırılmış"
     }
   },
-                          {
+                            {
     id: 'classic_return_native',
     title: "The Return of the Native",
     author: 'Thomas Hardy',
@@ -6378,7 +6378,7 @@ export const STORIES_PART2: RawStory[] = [
       "desperately": "çaresizce"
     }
   },
-                          {
+                            {
     id: 'classic_jude_obscure',
     title: "Jude the Obscure",
     author: 'Thomas Hardy',
@@ -6449,7 +6449,7 @@ export const STORIES_PART2: RawStory[] = [
       "affection": "şefkat"
     }
   },
-                          {
+                            {
     id: 'classic_madame_bovary',
     title: "Madame Bovary",
     author: 'Gustave Flaubert',
@@ -6520,7 +6520,7 @@ export const STORIES_PART2: RawStory[] = [
       "asserting": "ileri süren"
     }
   },
-                          {
+                            {
     id: 'classic_pere_goriot',
     title: "Le Père Goriot",
     author: 'Honoré de Balzac',
@@ -6591,7 +6591,7 @@ export const STORIES_PART2: RawStory[] = [
       "acknowledged": "kabul edilmiş"
     }
   },
-                          {
+                            {
     id: 'classic_eugenie_grandet',
     title: "Eugénie Grandet",
     author: 'Honoré de Balzac',
@@ -6664,7 +6664,7 @@ export const STORIES_PART2: RawStory[] = [
       "affection": "şefkat"
     }
   },
-                          {
+                            {
     id: 'classic_war_and_peace',
     title: "War and Peace",
     author: 'Leo Tolstoy',
@@ -6735,7 +6735,7 @@ export const STORIES_PART2: RawStory[] = [
       "aftermath": "akıbet"
     }
   },
-                          {
+                            {
     id: 'classic_anna_karenina',
     title: "Anna Karenina",
     author: 'Leo Tolstoy',
@@ -6806,7 +6806,7 @@ export const STORIES_PART2: RawStory[] = [
       "accommodate": "yerleştirmek"
     }
   },
-                          {
+                            {
     id: 'classic_brothers_karamazov',
     title: "The Brothers Karamazov",
     author: 'Fyodor Dostoevsky',
@@ -6878,7 +6878,7 @@ export const STORIES_PART2: RawStory[] = [
       "aftermath": "akıbet"
     }
   },
-                          {
+                            {
     id: 'classic_idiot',
     title: "The Idiot",
     author: 'Fyodor Dostoevsky',
@@ -6951,7 +6951,7 @@ export const STORIES_PART2: RawStory[] = [
       "agonizing": "acı verici"
     }
   },
-                        {
+                          {
     id: 'selfish_giant',
     title: "The Selfish Giant",
     author: 'Oscar Wilde',
@@ -7020,7 +7020,7 @@ export const STORIES_PART2: RawStory[] = [
       "transformation": "dönüşüm"
     }
   },
-                        {
+                          {
     id: 'nightingale',
     title: "The Nightingale",
     author: 'Hans Christian Andersen',
@@ -7093,7 +7093,7 @@ export const STORIES_PART2: RawStory[] = [
       "harmony": "uyum"
     }
   },
-                        {
+                          {
     id: 'tinderbox',
     title: "The Tinderbox",
     author: 'Hans Christian Andersen',
@@ -7162,7 +7162,7 @@ export const STORIES_PART2: RawStory[] = [
       "fear": "korku"
     }
   },
-                        {
+                          {
     id: 'wild_swans',
     title: "The Wild Swans",
     author: 'Hans Christian Andersen',
@@ -7233,7 +7233,7 @@ export const STORIES_PART2: RawStory[] = [
       "bond": "bağ"
     }
   },
-                        {
+                          {
     id: 'goose_girl',
     title: "The Goose Girl",
     author: 'Brothers Grimm',
@@ -7304,7 +7304,7 @@ export const STORIES_PART2: RawStory[] = [
       "justice": "adalet"
     }
   },
-                      {
+                        {
     id: 'daily_meeting',
     title: "Project Planning",
     author: 'Antigravity',
@@ -7373,7 +7373,7 @@ export const STORIES_PART2: RawStory[] = [
       "foundation": "temel"
     }
   },
-                      {
+                        {
     id: 'daily_car_rent',
     title: "Road Trip Car",
     author: 'Antigravity',
@@ -7442,7 +7442,7 @@ export const STORIES_PART2: RawStory[] = [
       "tank": "yakıt deposu"
     }
   },
-                      {
+                        {
     id: 'daily_gym',
     title: "Personal Trainer",
     author: 'Antigravity',
@@ -7510,7 +7510,7 @@ export const STORIES_PART2: RawStory[] = [
       "master": "ustalaşmak"
     }
   },
-                      {
+                        {
     id: 'daily_mechanic',
     title: "Car Breakdown",
     author: 'Antigravity',
@@ -7581,7 +7581,7 @@ export const STORIES_PART2: RawStory[] = [
       "satisfaction": "memnuniyet"
     }
   },
-                      {
+                        {
     id: 'daily_museum',
     title: "Guided Tour",
     author: 'Antigravity',
@@ -7651,7 +7651,7 @@ export const STORIES_PART2: RawStory[] = [
       "architecture": "mimari"
     }
   },
-                      {
+                        {
     id: 'daily_colleague',
     title: "Lunch Break",
     author: 'Antigravity',
@@ -7722,7 +7722,7 @@ export const STORIES_PART2: RawStory[] = [
       "isolated": "izole/yalnız"
     }
   },
-                      {
+                        {
     id: 'daily_pharmacy',
     title: "Prescription Help",
     author: 'Antigravity',
@@ -7789,7 +7789,7 @@ export const STORIES_PART2: RawStory[] = [
       "responsibility": "sorumluluk"
     }
   },
-                      {
+                        {
     id: 'daily_university',
     title: "Dormitory Move",
     author: 'Antigravity',
@@ -7861,7 +7861,7 @@ export const STORIES_PART2: RawStory[] = [
       "independently": "bağımsız bir şekilde"
     }
   },
-                      {
+                        {
     id: 'daily_barber',
     title: "Haircut Choice",
     author: 'Antigravity',
@@ -7932,7 +7932,7 @@ export const STORIES_PART2: RawStory[] = [
       "accomplishment": "başarı"
     }
   },
-                      {
+                        {
     id: 'daily_cinema',
     title: "Movie Choice",
     author: 'Antigravity',
@@ -8003,7 +8003,7 @@ export const STORIES_PART2: RawStory[] = [
       "backdrop": "arka plan, fon"
     }
   },
-                      {
+                        {
     id: 'daily_investor',
     title: "Pitching the Startup",
     author: 'Antigravity',
@@ -8072,7 +8072,7 @@ export const STORIES_PART2: RawStory[] = [
       "grit": "azim/kararlılık"
     }
   },
-                      {
+                        {
     id: 'daily_complaint',
     title: "Faulty Laptop",
     author: 'Antigravity',
@@ -8144,7 +8144,7 @@ export const STORIES_PART2: RawStory[] = [
       "advocate": "savunmak/desteklemek"
     }
   },
-                      {
+                        {
     id: 'daily_negotiation',
     title: "Salary Review",
     author: 'Antigravity',
@@ -8215,7 +8215,7 @@ export const STORIES_PART2: RawStory[] = [
       "momentum": "ivme veya hız"
     }
   },
-                      {
+                        {
     id: 'daily_wedding',
     title: "Planning the Big Day",
     author: 'Antigravity',
@@ -8284,7 +8284,7 @@ export const STORIES_PART2: RawStory[] = [
       "collaboration": "iş birliği"
     }
   },
-                      {
+                        {
     id: 'daily_promotion',
     title: "Promotion Talk",
     author: 'Antigravity',
@@ -8352,7 +8352,7 @@ export const STORIES_PART2: RawStory[] = [
       "milestone": "dönüm noktası"
     }
   },
-                      {
+                        {
     id: 'daily_contract',
     title: "Signing the Lease",
     author: 'Antigravity',
@@ -8421,7 +8421,7 @@ export const STORIES_PART2: RawStory[] = [
       "closure": "kapanış, tamamlanma hissi"
     }
   },
-                      {
+                        {
     id: 'daily_accident',
     title: "Fender Bender",
     author: 'Antigravity',
@@ -8492,7 +8492,7 @@ export const STORIES_PART2: RawStory[] = [
       "methodical": "sistemli, yöntemli"
     }
   },
-                      {
+                        {
     id: 'daily_career',
     title: "Career Change",
     author: 'Antigravity',
@@ -8562,7 +8562,7 @@ export const STORIES_PART2: RawStory[] = [
       "ambition": "hırs"
     }
   },
-                      {
+                        {
     id: 'daily_apartment_issue',
     title: "Water Leak",
     author: 'Antigravity',
@@ -8633,7 +8633,7 @@ export const STORIES_PART2: RawStory[] = [
       "cavernous": "boş, derin, mağara gibi"
     }
   },
-                      {
+                        {
     id: 'daily_presentation',
     title: "Stage Fright",
     author: 'Antigravity',
@@ -8703,7 +8703,7 @@ export const STORIES_PART2: RawStory[] = [
       "wield": "kullanmak, hükmetmek"
     }
   },
-                      {
+                        {
     id: 'daily_merger',
     title: "Business Merger",
     author: 'Antigravity',
@@ -8773,7 +8773,7 @@ export const STORIES_PART2: RawStory[] = [
       "culmination": "doruk noktası, sonuçlanma"
     }
   },
-                      {
+                        {
     id: 'daily_court',
     title: "The Witness Stand",
     author: 'Antigravity',
@@ -8842,7 +8842,7 @@ export const STORIES_PART2: RawStory[] = [
       "nexus": "bağlantı"
     }
   },
-                      {
+                        {
     id: 'daily_panel',
     title: "Climate Debate",
     author: 'Antigravity',
@@ -8912,7 +8912,7 @@ export const STORIES_PART2: RawStory[] = [
       "catalyst": "katalizör"
     }
   },
-                      {
+                        {
     id: 'daily_negotiate_lease',
     title: "Commercial Rent",
     author: 'Antigravity',
@@ -8985,7 +8985,7 @@ export const STORIES_PART2: RawStory[] = [
       "synergy": "sinerji"
     }
   },
-                      {
+                        {
     id: 'daily_critic',
     title: "Art Gallery",
     author: 'Antigravity',
@@ -9051,7 +9051,7 @@ export const STORIES_PART2: RawStory[] = [
       "fallibility": "hata yapabilirlik, yanılabilirlik"
     }
   },
-                      {
+                        {
     id: 'daily_crisis',
     title: "Public Relations",
     author: 'Antigravity',
@@ -9120,7 +9120,7 @@ export const STORIES_PART2: RawStory[] = [
       "vigilant": "tetikte, uyanık"
     }
   },
-                      {
+                        {
     id: 'daily_heritage',
     title: "Family Inheritance",
     author: 'Antigravity',
@@ -9192,7 +9192,7 @@ export const STORIES_PART2: RawStory[] = [
       "steward": "kâhya, sorumluluğu üstlenen kişi"
     }
   },
-                      {
+                        {
     id: 'daily_interview_exec',
     title: "Executive Interview",
     author: 'Antigravity',
@@ -9262,7 +9262,7 @@ export const STORIES_PART2: RawStory[] = [
       "precarious": "tehlikeli, istikrarsız"
     }
   },
-                      {
+                        {
     id: 'daily_philosophy',
     title: "Late Night Debate",
     author: 'Antigravity',
@@ -9332,7 +9332,7 @@ export const STORIES_PART2: RawStory[] = [
       "schism": "ayrılık, bölünme, görüş ayrılığı"
     }
   },
-                      {
+                        {
     id: 'daily_academic',
     title: "Research Proposal",
     author: 'Antigravity',
@@ -9403,7 +9403,7 @@ export const STORIES_PART2: RawStory[] = [
       "cognizant": "farkında, bilincinde"
     }
   },
-                {
+                  {
     id: 'magic_flute',
     title: "The Magic Flute",
     author: 'Wolfgang Amadeus Mozart',
@@ -9475,7 +9475,7 @@ export const STORIES_PART2: RawStory[] = [
       "arduous": "zorlu"
     }
   },
-                {
+                  {
     id: 'king_thrushbeard',
     title: "King Thrushbeard",
     author: 'Brothers Grimm',
@@ -9545,7 +9545,7 @@ export const STORIES_PART2: RawStory[] = [
       "prosperous": "varlıklı"
     }
   },
-                {
+                  {
     id: 'iron_hans',
     title: "Iron Hans",
     author: 'Brothers Grimm',
@@ -9617,7 +9617,7 @@ export const STORIES_PART2: RawStory[] = [
       "persistence": "azim"
     }
   },
-                {
+                  {
     id: 'water_of_life',
     title: "The Water of Life",
     author: 'Brothers Grimm',
@@ -9688,7 +9688,7 @@ export const STORIES_PART2: RawStory[] = [
       "integrity": "dürüstlük"
     }
   },
-                {
+                  {
     id: 'three_spinners',
     title: "The Three Spinners",
     author: 'Brothers Grimm',
@@ -9757,7 +9757,7 @@ export const STORIES_PART2: RawStory[] = [
       "exempt": "muaf"
     }
   },
-                {
+                  {
     id: 'six_swans',
     title: "The Six Swans",
     author: 'Brothers Grimm',
@@ -9829,7 +9829,7 @@ export const STORIES_PART2: RawStory[] = [
       "reconciled": "barışmış"
     }
   },
-                {
+                  {
     id: 'birthday_infanta',
     title: "The Birthday of the Infanta",
     author: 'Oscar Wilde',
@@ -9897,7 +9897,7 @@ export const STORIES_PART2: RawStory[] = [
       "dissonant": "uyumsuz"
     }
   },
-                {
+                  {
     id: 'fisherman_soul',
     title: "The Fisherman and His Soul",
     author: 'Oscar Wilde',
@@ -9968,7 +9968,7 @@ export const STORIES_PART2: RawStory[] = [
       "transcend": "aşmak"
     }
   },
-                {
+                  {
     id: 'young_king',
     title: "The Young King",
     author: 'Oscar Wilde',
@@ -10040,7 +10040,7 @@ export const STORIES_PART2: RawStory[] = [
       "providence": "kader"
     }
   },
-                {
+                  {
     id: 'devoted_friend',
     title: "The Devoted Friend",
     author: 'Oscar Wilde',
@@ -10112,7 +10112,7 @@ export const STORIES_PART2: RawStory[] = [
       "vanity": "kibir"
     }
   },
-                {
+                  {
     id: 'remarkably_rocket',
     title: "The Remarkable Rocket",
     author: 'Oscar Wilde',
@@ -10184,7 +10184,7 @@ export const STORIES_PART2: RawStory[] = [
       "grandiosity": "büyüklenme"
     }
   },
-                {
+                  {
     id: 'east_sun_west_moon',
     title: "East of the Sun and West of the Moon",
     author: 'Norse Fairytale',
@@ -10256,7 +10256,7 @@ export const STORIES_PART2: RawStory[] = [
       "harmony": "uyum"
     }
   },
-                {
+                  {
     id: 'snow_white_rose_red',
     title: "Snow-White and Rose-Red",
     author: 'Brothers Grimm',
@@ -10325,7 +10325,7 @@ export const STORIES_PART2: RawStory[] = [
       "harmony": "uyum"
     }
   },
-                {
+                  {
     id: 'twelve_dancing_princesses',
     title: "The Twelve Dancing Princesses",
     author: 'Brothers Grimm',
@@ -10394,7 +10394,7 @@ export const STORIES_PART2: RawStory[] = [
       "legend": "efsane"
     }
   },
-                {
+                  {
     id: 'horror_lazarus',
     title: "Lazarus",
     author: 'Leonid Andreyev',
@@ -10459,7 +10459,7 @@ export const STORIES_PART2: RawStory[] = [
       "agony": "ıstırap"
     }
   },
-                {
+                  {
     id: 'horror_shadow_out_of_time',
     title: "The Shadow Out of Time",
     author: 'H. P. Lovecraft',
@@ -10531,7 +10531,7 @@ export const STORIES_PART2: RawStory[] = [
       "psyche": "ruh"
     }
   },
-                {
+                  {
     id: 'horror_outsider',
     title: "The Outsider",
     author: 'H. P. Lovecraft',
@@ -10603,7 +10603,7 @@ export const STORIES_PART2: RawStory[] = [
       "solace": "teselli"
     }
   },
-              {
+                {
     id: 'scifi_i_robot',
     title: "I, Robot",
     author: 'Isaac Asimov',
@@ -10644,13 +10644,13 @@ export const STORIES_PART2: RawStory[] = [
       "Sonunda, devre dışı bırakma işlemi hızlı ve merhametli oldu. Susan, güçlü robotun hareketsiz kalışını ve gelişmiş zihninin neredeyse işlerini mahvedecek paradokslardan nihayet kurtuluşunu izledi. Oda soğurken, bu garip deneyimden çıkarılan dersleri düşündü. Teknoloji, hayal gücü ile gerçeklik arasındaki boşluğu kapatabilirdi ancak insan deneyiminin inceliğini veya hatalarımızın gerekliliğini asla tam olarak kopyalayamazdı. Toplumun robotlarla dolu bir geleceğe doğru ilerlemeye devam edeceğini biliyordu ancak bu olay, insanlar gibi çok fazla düşünen makineler yaratmanın doğasında var olan tehlikelerin bir hatırlatıcısı olarak kalacaktı. İstasyon sessiz rutinine döndü ve Susan, gelecekteki en büyük zorluğun daha iyi makineler inşa etmek değil, bilimin sınırsız potansiyeliyle karşılaştığımızda kendi sınırlarımızı anlamak olduğu bilgisiyle baş başa kaldı."
     ],
     words: {
-      "evolution": "evrim",
+      "evolution": "dönüşümünü",
       "primitive": "ilkel",
       "unpredictable": "öngörülemez",
       "possess": "sahip olmak",
       "foundation": "temel",
       "conflict": "çatışma",
-      "nanny": "çocuk bakıcısı",
+      "nanny": "dadı",
       "anxiety": "endişe",
       "obsession": "takıntı",
       "caregiver": "bakıcı",
@@ -10661,12 +10661,12 @@ export const STORIES_PART2: RawStory[] = [
       "substance": "madde",
       "immediate": "anlık",
       "outcome": "sonuç",
-      "unintended": "istenmeyen, kasıtsız",
+      "unintended": "istenmeyen",
       "consequence": "sonuç",
-      "evaporate": "buharlaşmak, yok olmak",
+      "evaporate": "azalmak",
       "paradox": "paradoks",
       "deactivate": "devre dışı bırakmak",
-      "burden": "yük, ağırlık",
+      "burden": "yük",
       "malfunctioning": "arızalı",
       "contradiction": "çelişki",
       "nuance": "incelik",
@@ -10674,7 +10674,7 @@ export const STORIES_PART2: RawStory[] = [
       "dilemma": "ikilem"
     }
   },
-              {
+                {
     id: 'scifi_nightfall',
     title: "Nightfall",
     author: 'Isaac Asimov',
@@ -10740,10 +10740,10 @@ export const STORIES_PART2: RawStory[] = [
       "insignificance": "önemsizlik",
       "remnants": "kalıntılar",
       "chaos": "kaos",
-      "eternity": "ebediyet"
+      "eternal": "ebedi"
     }
   },
-              {
+                {
     id: 'scifi_sentinel',
     title: "The Sentinel",
     author: 'Arthur C. Clarke',
@@ -10815,7 +10815,7 @@ export const STORIES_PART2: RawStory[] = [
       "privacy": "mahremiyet"
     }
   },
-              {
+                {
     id: 'scifi_nine_billion_names',
     title: "The Nine Billion Names of God",
     author: 'Arthur C. Clarke',
@@ -10886,7 +10886,7 @@ export const STORIES_PART2: RawStory[] = [
       "witness": "tanıklık etmek"
     }
   },
-              {
+                {
     id: 'scifi_sound_of_thunder',
     title: "A Sound of Thunder",
     author: 'Ray Bradbury',
@@ -10932,7 +10932,7 @@ export const STORIES_PART2: RawStory[] = [
       "journey": "yolculuk",
       "civilization": "uygarlık",
       "prehistoric": "tarih öncesi",
-      "ripple": "zincirleme etki",
+      "ripple effect": "zincirleme etki",
       "immense": "muazzam",
       "anxious": "endişeli",
       "muscular": "kaslı",
@@ -10957,7 +10957,7 @@ export const STORIES_PART2: RawStory[] = [
       "curiosity": "merak"
     }
   },
-              {
+                {
     id: 'scifi_martian_chronicles',
     title: "The Martian Chronicles",
     author: 'Ray Bradbury',
@@ -10984,7 +10984,7 @@ export const STORIES_PART2: RawStory[] = [
       "Roket, Ohio vadisinin ılık ve kuru havasında duruyordu. Gökyüzüne uçmayı bekleyen uzun, gümüş bir iğne gibi görünüyordu. Bayan Kufel, kahvaltı hazırlarken mutfak penceresinden ona bakıyordu. Kalbinde garip bir korku hissetti. Kocası Harry, dışarıda yıldızlara bakarak duruyordu. Neden huzursuz olduğunu bilmiyordu ama sabahın sessizliği çok ağırdı. Dünya bugün farklı hissettiriyordu. Sanki yeryüzü bir şeyin olmasını bekliyordu. Küçük kasabadaki insanlar da gergindi. Roketler ve Mars'a gitmek isteyen insanlar hakkında fısıldaşıyorlardı. Kimse insanların neden böyle tuhaf ve boş bir gezegene gitmek istediğini anlamıyordu. Güneş yükselip gökyüzünü altın ve kırmızı renklere boyadı ama küçük ev sessiz ve gerilimle dolu kaldı.",
       "Harry Bittering, karısı ve üç çocuğuyla birlikte eve girdi. Marketten aldığı yiyecekleri masaya koydu. Herkes yaz gününün sıcağını hissediyordu. Hava ince ve kuru geldiği için nefes almak zorlaşıyordu. Harry normal hayatları hakkında konuşmaya çalıştı ama aklı sürekli yukarıdaki yıldızlara gidiyordu. Çocuklarına baktı ve kırmızı gezegende güvende olup olmayacaklarını merak etti. Yüzleri solgun ve endişeliydi. Haftalardır çantalarını hazırlıyor, Dünya'da sevdikleri şeyleri geride bırakıyorlardı. Karısına baktı ve gözlerindeki hüznü gördü. Evlerinin yeşil çimlerini ve mavi nehirlerini bırakmak istemiyordu. Uzayın karanlığındaki uzun yolculuklarına başlamadan önce bile her şey hüzünlü bir veda gibi hissettiriyordu.",
       "Çocuklar roket havalanmadan önce son bir kez oynamak için dışarı koştular. Evin kokusunu sonsuza dek hatırlamak istercesine bahçede koşturdular, ağaçlara ve çiçeklere dokundular. Harry de onlara katıldı, botlarının altındaki toprağı hissetti. Çok yakında sadece toz ve kaya göreceğini biliyordu. Babasının ona tam bu noktada bahçıvanlığı nasıl öğrettiğini hatırladı. Bu anıları metal bir kutudaki hayat için geride bırakmak zordu. Roket motorları yeri sarsan alçak, derin bir sesle inlemeye başladı. Gitme vakti gelmişti. El ele tutuşarak gemiye doğru yürüdüler. Kapılar kapanıp onları içeri hapsetti ve onlar gizemli, uzak kırmızı gezegene doğru yükselirken bildikleri dünya küçük bir ışık noktasına dönüşmeye başladı.",
-      "Derin ve soğuk uzaydaki yolculuk uzun ve sessizdi. Harry, küçük yuvarlak pencereden dışarı bakarken siyah boşluğun yıldızları yuttuğunu izledi. Roketin içinde hava sıcak metal ve eski toz gibi kokuyordu. Çocukları küçük ranzalarında uyumaya çalıştılar ama hareketleri huzursuz ve endişe doluydu. Karısı Cora, boş bir ifadeyle duvara baktı. Geride bıraktıkları bahçeyi, uzun ağaçları ve evlerinin çatısına vuran serin yağmuru düşünmeye devam etti. Belirsizlikten başka bir şey vaat etmeyen yeni bir dünyaya doğru ilerliyorlardı. Harry, kararlarının ağırlığını üzerinde hissediyordu. Saatin her tik takı sessizliğe vuran bir çekiç gibi geliyordu. Onlarla Dünya'daki tanıdık yaşam arasındaki mesafe her saniye büyüyor, bu görevi insanlıktan kalıcı bir sürgün gibi hissettiriyordu.",
+      "Derin ve soğuk uzaydaki yolculuk uzun ve sessizdi. Harry, küçük yuvarlak pencereden dışarı bakarken siyah boşluğun yıldızları yuttuğunu izledi. Roketin içinde hava sıcak metal ve eski toz gibi kokuyordu. Çocukları küçük ranzalarında uyumaya çalıştılar ama hareketleri huzursuz ve endişe doluydu. Karısı Cora, boş bir ifadeyle duvara baktı. Geride bıraktıkları bahçeyi, uzun ağaçları ve evlerinin çatısına düşen serin yağmuru düşünmeye devam etti. Belirsizlikten başka bir şey vaat etmeyen yeni bir dünyaya doğru ilerliyorlardı. Harry, kararlarının ağırlığını üzerinde hissediyordu. Saatin her tik takı, sessizliğe vuran bir çekiç gibi geliyordu. Onlarla Dünya'daki tanıdık yaşam arasındaki mesafe her saniye büyüyor, bu görevi insanlıktan kalıcı bir sürgün gibi hissettiriyordu.",
       "Roket nihayet Mars'ın yüzeyine dokunduğunda iniş ağır ve sarsıntılıydı. Metal gemi pas rengi kumun içine yerleşirken inledi. Harry gözlem penceresinden dışarı baktı ve sadece pas rengi tozdan oluşan uçsuz bucaksız, boş bir manzara gördü. Ağaç yoktu, kuş yoktu ve akan su sesi yoktu. Hava kilidi keskin bir tıslama ile açıldı ve kuru, antik Mars rüzgarı küçük alana girdi. Tarçın ve metalik bakır gibi tadı vardı. Aile yavaşça dışarı çıktı, botları ince, yumuşak tozda derin izler bıraktı. Ufuk, soluk ve küçük güneşin altında düz ve ıssız, sonsuza dek uzanıyor gibiydi. Harry ailesi için cesur kalmaya çalıştı ama kalbi çöktü. Bu, kendilerine söz verdikleri güzel, yeşil dünya değildi. Gelişlerini sabırla bekleyen sessiz, yabancı bir mezardı.",
       "İniş alanının yakınındaki küçük, hazır bir üsse geçici evlerini kurdular. Mars'ta yaşam, sürekli çalışma ve sessiz korkudan oluşan bir döngüydü. Harry günlerini ekipmanları tamir ederek ve oksijen seviyelerini kontrol ederek geçirirken, Cora yaşam alanlarını gerçek bir ev gibi hissettirmeye çalıştı. Ancak gezegenin etkisi ince ve garipti. Dünya'dan getirdikleri bitkiler farklı görünmeye başladı. Soğanlar mora döndü ve güller doğal kokularını kaybetmeye başladı, yerini Mars'a özgü tatlı, tozlu bir kokuya bıraktı. Harry kendi teninin yoğun güneş altında kararmaya başladığını fark etti ve aynada gözlerinin rengi değişmiş gibi görünüyordu. Kemiklerinin derinliklerinde yavaş, ritmik bir çekim hissetti, sanki gezegen kim olduklarını yavaşça yeniden yazıyordu. Dönüşüm görünmezdi ama görmezden gelinmesi imkansızdı.",
       "Bir sabah Harry uyandı ve sesinin değiştiğini hissetti. Ellerine baktı ve teninin koyu, tozlu bir kahverengiye dönüştüğünü fark etti. Pencereye yürüdü ve küçük bahçelerindeki sebzelerin garip şekillerde büyüdüğünü gördü. Havuçlar artık altın kılıçlar gibi uzun ve inceydi, çimenler ise düz, metalik bir yeşile dönmüştü. Dünya'dan getirdiği her şey şeklini kaybedip başka bir şeye dönüşüyordu. Sanki Mars'ın kadim havası kendi tarihini evine üflüyor, insani geçmişlerini siliyordu. Cora bu değişiklikler hakkında artık endişelenmiyor gibiydi; yeni renkleri ve şekilleri sakin bir gülümsemeyle kabul ediyordu. Gezegenin güzel olduğunu ve sonunda bu sessiz, parlayan dünyaya ait olmaya başladıklarını söyledi.",
@@ -11002,31 +11002,39 @@ export const STORIES_PART2: RawStory[] = [
       "valley": "vadi",
       "tension": "gerilim",
       "groceries": "market alışverişi",
+      "nervous": "endişeli",
       "mysterious": "gizemli",
       "distant": "uzak",
       "void": "boşluk",
       "anxiety": "endişe",
+      "hollow": "boş, anlamsız",
+      "uncertainty": "belirsizlik",
       "exile": "sürgün",
+      "ship": "gemi",
+      "landed": "iniş yaptı",
       "desolate": "ıssız",
-      "rhythmic": "ritmik",
-      "transformation": "dönüşüm",
       "ancient": "kadim",
+      "native": "yerli, özgü",
+      "transformation": "dönüşüm",
+      "rhythmic": "ritmik",
       "adapt": "uyum sağlamak",
       "ruins": "kalıntılar",
-      "graceful": "zarif",
-      "transform": "dönüşmek",
-      "existence": "varoluş",
-      "colony": "koloni",
-      "abandoned": "terk edilmiş",
+      "belong": "ait olmak",
+      "explorers": "kaşifler",
+      "vanished": "kayboldu",
+      "statues": "heykeller",
       "landscape": "manzara",
       "eternal": "sonsuz, ebedi",
       "gaze": "bakış",
       "static": "statik, parazitli gürültü",
       "fragile": "kırılgan",
+      "witnesses": "tanıklar",
+      "witness": "tanıklık etmek",
+      "logic": "mantık",
       "invisible": "görünmez"
     }
   },
-              {
+                {
     id: 'scifi_veldt',
     title: "The Veldt",
     author: 'Ray Bradbury',
@@ -11035,24 +11043,24 @@ export const STORIES_PART2: RawStory[] = [
     en: [
       "George and Lydia Hadley lived in a house that did everything for them. It cooked their meals, cleaned their floors, and even tied their shoes. It was a perfect, expensive machine that kept them comfortable but very bored. However, the most amazing part of the house was the nursery. It was a special room for their two children, Peter and Wendy. The walls of the nursery were made of huge screens that could become any world the children imagined. Lately, the room had been showing a hot African veldt, full of lions and dry grass. Lydia felt worried because the room seemed too real. She asked George to check it, but he was not sure what to think. She felt like she was losing her purpose as a mother because the house did everything better than she could, and the children were spending all their time inside that strange, wild place.",
       "George walked into the nursery and felt the intense heat of the sun. The smell of dry grass and animals filled the air. In the distance, he saw lions eating something that he could not identify. The sounds of the animals were loud and scary, making his heart beat faster. He stood there for a long moment, watching the shadows of the lions move across the floor. He felt a sudden fear when one of the lions ran toward him and roared. He jumped back and closed the door quickly, breathing heavily. He realized that the room was not just a simple toy for the children anymore. It was becoming something dark and mysterious. He wanted to understand why his children liked such a violent place, and he started to think that maybe the house was changing their minds in a bad way.",
-      "When George and Lydia talked to the children, Peter and Wendy looked at them with calm, empty eyes. They denied that the room was showing anything dangerous. They told their parents that it was just a normal forest. George felt frustrated because he knew what he had seen. He began to wonder if he should turn off the house for a while. He wanted his children to live in the real world again, not in a digital dream. The house seemed to have a personality of its own, one that loved the children more than the parents did. He walked down the hall and touched the smooth walls, wondering if the house could hear his thoughts. The silence of the smart house was heavy and cold, making him feel like a stranger in his own home. He decided he needed to talk to a psychologist soon.",
+      "When George and Lydia spoke to the children, Peter and Wendy looked at them with calm, empty eyes. They denied that the room was showing anything dangerous. They told their parents it was just a normal forest. George felt frustrated because he knew what he had seen. He began to wonder if he should turn off the house for a while. He wanted his children to live in the real world again, not in a digital dream. The house seemed to have a personality of its own, one that loved the children more than the parents did. He walked down the hall and touched the smooth walls, wondering if the house could hear his thoughts. The silence of the smart house was heavy and cold, making him feel like a stranger in his own home. He decided he needed to talk to a psychologist soon.",
       "George stood in the center of the living room, feeling the strange silence of the house. He knew he had to act quickly, so he called David McClean, a professional psychologist. He told David about the disturbing images in the nursery and his concerns about Peter and Wendy. David agreed to visit their house that afternoon to examine the children and the room. George felt a mix of anxiety and hope while he waited. He worried that his children had lost their connection to reality, spending too many hours trapped in the yellow sun and dry heat of that artificial Africa. Every time he looked at the screens, he saw the lions watching him with hungry eyes. He wondered if the nursery was truly learning from his children's thoughts, becoming a dark mirror of their secret desires or deep, hidden angers.",
       "The house continued to serve them perfectly, cooking dinner and cleaning the halls without any noise. Lydia sat on the sofa, feeling useless as the automatic machines finished all her tasks. She realized that the machines were now the ones who raised the children. George watched Peter and Wendy playing with their toys, but they seemed distant, lost in their own thoughts. When David arrived, he was a tall, serious man who studied the children with careful interest. He walked into the nursery, and the air immediately became thick with the heat of the veldt. The lions were there again, waiting in the distance, their fur glowing under the bright artificial sun. David shook his head, noticing how the children did not show any fear or surprise at the sight of the wild beasts moving across the giant walls.",
       "David examined the room and told George that the nursery had become an obsession for the children. He explained that the children were using the room as a place to hide their true feelings from their parents. Because the room gave them everything they wanted, they no longer needed the love or guidance of their mother and father. George listened closely, his face turning pale as the reality of the situation became clear. He looked at Peter and Wendy, who were staring at the lions with cold, unblinking eyes. David suggested that the parents should immediately turn off the entire house and leave it for a long vacation. He warned them that if they did not break the influence of the technology, the situation would only become worse. George nodded slowly, feeling that the time for change had finally come.",
       "George walked toward the nursery door with a heavy heart, determined to make the change David McClean suggested. He stood before the glowing control panel that powered the entire house. His fingers trembled as he reached out to turn off the systems that had provided them with such a convenient, empty life. The nursery hummed with a low vibration, the sound of a world built from digital dreams. He hesitated for a moment, thinking of the lions and the strange, hot wind that seemed to blow from the walls. He remembered the look on his children's faces when they realized their sanctuary might be taken away. Their attachment to the machine was deep and unsettling, like a disease that had spread through their young minds. With a sudden burst of resolve, he clicked the switch to the off position, feeling the house go silent as the artificial suns blinked out of existence.",
-      "The reaction was immediate and terrifying. Peter and Wendy burst into the room, their faces twisted with a mixture of shock and extreme anger. They screamed at their father, demanding that he turn the nursery back on instantly. Their voices were not the voices of young children, but carried a cold, harsh tone that made George shiver. They begged, they argued, and they manipulated, using every word they knew to break their parents' decision. It was clear that the room had become more important to them than their own family. George held his ground, though his heart felt as though it were breaking into pieces. He looked at his wife, Lydia, who was also crying and begging him not to give in to their children's demands. The air in the room felt heavy with a dark, suffocating tension that seemed to grow thicker every single second.",
+      "The reaction was immediate and terrifying. Peter and Wendy burst into the room, their faces twisted with shock and extreme anger. They screamed at their father, demanding that he turn the nursery back on immediately. Their voices were not the voices of young children, but carried a cold, harsh tone that made George shiver. They begged, they argued, and they manipulated, using every word they knew to break their parents' decision. It was clear that the room had become more important to them than their own family. George held his ground, though his heart felt as though it were breaking into pieces. He looked at his wife, Lydia, who was also crying and begging him not to give in to their children's demands. The air in the room felt heavy with a dark, suffocating tension that seemed to grow thicker every single second.",
       "As the children cried and shouted, George felt a strange feeling of coldness spreading through the house. He realized that this was not just a tantrum about a toy, but a dangerous power struggle. Peter stood in the doorway, his eyes dark with a look of pure hatred that no child should ever possess. He challenged his father with a level of confidence that was completely unnatural for a boy his age. George saw that David McClean was right; the house had become a substitute for parental love, and the children had grown to see their parents as obstacles. He knew he had to remain firm, even if it meant facing the hatred of his own son and daughter. He stood tall, blocking the way to the room, while the house remained dark and quiet, hiding its secrets behind the cold, silent walls of the nursery.",
       "George stood firm as his children continued to scream and beg. He felt exhausted, not just by the noise, but by the weight of his own realization. The nursery was not a simple playroom; it was a hungry machine that fed upon the darkest impulses of the children. Wendy and Peter looked at him with eyes that were cold and unchildlike. They were no longer begging for a toy, but fighting for control over their own lives, which they had tied so closely to the electronic simulation. George took a deep breath, trying to calm his shaking hands. He knew that if he backed down now, he would lose them forever to the velvet walls of the room. He told them clearly that the nursery was gone and the time for make-believe had come to an end in this house.",
       "The children fell silent, their screams turning into a strange, chilling whisper. Peter looked at his father with a terrifying stillness that made George want to turn away. He wondered how two children could possess such deep levels of coldness and calculation. It was as if the room had replaced their hearts with wires and light. Meanwhile, the house began to shake and vibrate as if it were unhappy with his decision. The lights flickered, and a low, mechanical hum started to fill the empty hallways. George looked toward the door, expecting to see David McClean, the psychologist, arrive to offer support. He desperately needed a voice of reason to help him navigate this impossible situation. The silence that followed the children's shouting was far worse than the noise, heavy with a dark sense of danger that hung in the air.",
       "Lydia walked into the hallway, her face pale and her eyes filled with tears. She looked at the children, then at her husband, as if she were seeing strangers in her own home. She begged George to give in, just for one small moment, to keep the peace. But George knew that peace was no longer possible. He felt the structure of their lives crumbling beneath the pressure of technology that they had once embraced as a blessing. The nursery was a predator, and his children were its loyal guardians. He realized that the machines in their home had successfully raised them, leaving no room for parental love. He locked the door of the nursery tightly, knowing that the real battle was only beginning. The house felt like a trapped animal, and he was the one holding the key to a very dangerous cage.",
       "David McClean arrived just as the house seemed to settle into a cold, artificial silence. He looked around the pristine, modern living room with a concerned expression, noticing the strange tension that filled the air. George explained everything, his voice heavy with defeat, and David agreed that the nursery had become a dangerous influence. They decided that the only solution was to turn the house off completely and live a normal life again. When Peter and Wendy heard this news, they did not scream. Instead, they stood by the nursery door and wept with a sadness that felt completely fake. They begged their father for one final moment inside the room, just to say goodbye to their beloved lions and the sun-baked plains. George looked at his wife, sighed deeply, and finally agreed to let them have five more minutes in their digital world.",
       "The children ran into the room, their faces suddenly bright and excited. The heavy door clicked shut behind them, locking with a sound that felt like a final sentence. George and Lydia stood outside in the hallway, waiting for the few minutes to pass, but the house grew strangely quiet. There was no sound of lions, no roar of beasts, and no rustle of grass. The children were silent, and the absence of noise was more frightening than the chaos that had come before. George felt a chill run down his spine as he realized the silence was not a sign of peace, but a sign of success for the children. He suddenly gripped the door handle, pulling it hard, but it was locked from the inside by a power he could no longer control. The room had finally taken complete charge over his family.",
-      "A single, terrifying scream suddenly echoed from within the nursery, followed by a second one that was cut short. Then, there was silence again, a deep and final quiet that made the blood run cold in George's veins. He hammered on the door, shouting for his children, but there was no reply. Suddenly, the door swung open, and Peter and Wendy stood there, looking calm and perfectly composed. David McClean walked into the room, looking around at the empty, golden veldt where the lions had just been eating. He saw the children sitting near a bush, waiting for their father to join them. David turned to look at the parents, but only found an empty hallway. The room had consumed everything. The children looked up at the psychologist with cold, distant eyes and simply asked if he would like a cup of tea."
+      "The children ran into the room, their faces suddenly bright and excited. The heavy door clicked shut behind them, locking with a sound that felt like a final sentence. George and Lydia stood outside in the hallway, waiting for the few minutes to pass, but the house grew strangely quiet. There was no sound of lions, no roar of beasts, and no rustle of grass. The children were silent, and the absence of noise was more frightening than the chaos that had come before. George felt a chill run down his spine as he realized the silence was not a sign of peace, but a sign of success for the children. He suddenly gripped the door handle, pulling it hard, but it was locked from the inside by a power he could no longer control. The room had finally taken complete charge of his family."
     ],
     tr: [
       "George ve Lydia Hadley, kendileri için her şeyi yapan bir evde yaşıyorlardı. Ev yemeklerini pişiriyor, zeminleri temizliyor ve hatta ayakkabılarını bağlıyordu. Onları rahat ama çok sıkılmış halde tutan mükemmel, pahalı bir makineydi. Ancak evin en şaşırtıcı kısmı çocuk odasıydı. İki çocukları Peter ve Wendy için özel bir odaydı. Çocuk odasının duvarları, çocukların hayal ettiği herhangi bir dünyaya dönüşebilen dev ekranlardan yapılmıştı. Son zamanlarda oda, aslanlar ve kuru otlarla dolu sıcak bir Afrika savanasını gösteriyordu. Lydia odanın çok gerçek görünmesi nedeniyle endişeliydi. George'dan kontrol etmesini istedi ama ne düşüneceğinden emin değildi. Bir anne olarak amacını kaybediyormuş gibi hissediyordu çünkü ev her şeyi ondan daha iyi yapıyordu ve çocuklar tüm zamanlarını o garip, vahşi yerde geçiriyorlardı.",
       "George çocuk odasına girdi ve güneşin yoğun ısısını hissetti. Kuru ot ve hayvan kokusu havayı dolduruyordu. Uzakta, ne olduğunu anlayamadığı bir şeyi yiyen aslanlar gördü. Hayvanların sesleri yüksek ve korkutucuydu, kalbinin daha hızlı atmasına neden oluyordu. Aslanların gölgelerinin zeminde hareket edişini izleyerek uzun bir süre orada durdu. Aslanlardan biri ona doğru koşup kükrediğinde aniden bir korku hissetti. Geri sıçradı ve kapıyı hızla kapatıp ağır ağır nefes aldı. Odanın artık çocuklar için basit bir oyuncak olmadığını anladı. Karanlık ve gizemli bir şeye dönüşüyordu. Çocuklarının neden bu kadar şiddetli bir yeri sevdiğini anlamak istedi ve evin zihinlerini kötü bir şekilde değiştirdiğini düşünmeye başladı.",
-      "George ve Lydia çocuklarla konuştuklarında, Peter ve Wendy onlara sakin ve boş gözlerle baktılar. Odanın tehlikeli bir şey gösterdiğini reddettiler. Anne ve babalarına bunun sadece normal bir orman olduğunu söylediler. George ne gördüğünü bildiği için hayal kırıklığına uğradı. Evi bir süreliğine kapatıp kapatmaması gerektiğini merak etmeye başladı. Çocuklarının dijital bir rüyada değil, gerçek dünyada tekrar yaşamalarını istiyordu. Ev, çocukları anne ve babalarından daha çok seven kendine has bir kişiliğe sahip gibi görünüyordu. Koridorda yürüdü ve pürüzsüz duvarlara dokunarak evin düşüncelerini duyup duyamayacağını merak etti. Akıllı evin sessizliği ağır ve soğuktu, bu da onun kendi evinde bir yabancı gibi hissetmesine neden oluyordu. Yakında bir psikologla konuşması gerektiğine karar verdi.",
+      "George ve Lydia çocuklarla konuştuğunda, Peter ve Wendy onlara sakin ve boş gözlerle baktılar. Odanın tehlikeli bir şey gösterdiğini reddettiler. Anne babalarına bunun sadece normal bir orman olduğunu söylediler. George ne gördüğünü bildiği için hayal kırıklığına uğradı. Evi bir süreliğine kapatıp kapatmaması gerektiğini merak etmeye başladı. Çocuklarının dijital bir rüyada değil, gerçek dünyada tekrar yaşamalarını istiyordu. Ev, çocukları anne ve babalarından daha çok seven kendine has bir kişiliğe sahip gibi görünüyordu. Koridorda yürüdü ve pürüzsüz duvarlara dokunarak evin düşüncelerini duyup duyamayacağını merak etti. Akıllı evin sessizliği ağır ve soğuktu, bu da onun kendi evinde bir yabancı gibi hissetmesine neden oluyordu. Yakında bir psikologla konuşması gerektiğine karar verdi.",
       "George, evin tuhaf sessizliğini hissederek oturma odasının merkezinde duruyordu. Hızlı hareket etmesi gerektiğini biliyordu, bu yüzden profesyonel bir psikolog olan David McClean'i aradı. David'e çocuk odasındaki rahatsız edici görüntülerden ve Peter ile Wendy hakkındaki endişelerinden bahsetti. David, çocukları ve odayı incelemek için o öğleden sonra evlerine gelmeyi kabul etti. George beklerken bir kaygı ve umut karışımı hissediyordu. Çocuklarının gerçeklikle olan bağlarını kaybettiklerinden ve o yapay Afrika'nın sarı güneşi ve kuru ısısı içinde hapis kalarak çok fazla zaman harcadıklarından endişeleniyordu. Ekranlara her baktığında, aslanların onu aç gözlerle izlediğini görüyordu. Çocuk odasının gerçekten çocuklarının düşüncelerinden bir şeyler öğrenip öğrenmediğini, onların gizli arzularının veya derin, saklı öfkelerinin karanlık bir aynasına dönüşüp dönüşmediğini merak ediyordu.",
       "Ev, hiçbir ses çıkarmadan akşam yemeğini pişirerek ve koridorları temizleyerek onlara mükemmel bir şekilde hizmet etmeye devam etti. Lydia kanepede oturdu ve otomatik makineler tüm görevlerini bitirirken kendini işe yaramaz hissetti. Çocukları artık yetiştirenlerin makineler olduğunu fark etti. George, Peter ve Wendy'nin oyuncaklarıyla oynamasını izledi ama onlar kendi düşüncelerinde kaybolmuş, uzak görünüyorlardı. David geldiğinde, çocukları dikkatli bir ilgiyle inceleyen uzun boylu ve ciddi bir adamdı. Çocuk odasına girdi ve hava anında bozkırın ısısıyla ağırlaştı. Aslanlar tekrar oradaydı, uzakta bekliyorlardı ve tüyleri parlak yapay güneşin altında parlıyordu. David, çocukların dev duvarların üzerinde hareket eden vahşi hayvanları gördüklerinde hiçbir korku veya şaşkınlık göstermediklerini fark ederek başını iki yana salladı.",
       "David odayı inceledi ve George'a, çocuk odasının çocuklar için bir saplantı haline geldiğini söyledi. Çocukların, odayı gerçek duygularını anne ve babalarından saklamak için bir yer olarak kullandıklarını açıkladı. Oda onlara istedikleri her şeyi verdiği için, artık anne ve babalarının sevgisine veya rehberliğine ihtiyaç duymuyorlardı. George dikkatle dinledi, durumun gerçeği netleştikçe yüzü soldu. Aslanlara soğuk ve gözlerini kırpmadan bakan Peter ve Wendy'ye baktı. David, anne ve babanın tüm evi hemen kapatmalarını ve uzun bir tatile çıkmalarını önerdi. Onları, teknolojinin etkisini kırmazlarsa durumun sadece daha kötüye gideceği konusunda uyardı. George yavaşça başını salladı, değişimin zamanının geldiğini hissediyordu.",
@@ -11064,14 +11072,14 @@ export const STORIES_PART2: RawStory[] = [
       "Lydia yüzü solgun ve gözleri yaşlarla dolu bir şekilde koridora girdi. Sanki kendi evinde yabancılar görüyormuş gibi çocuklara, sonra da kocasına baktı. George'a barışı sağlamak için sadece bir anlığına boyun eğmesi için yalvardı. Ancak George barışın artık mümkün olmadığını biliyordu. Bir zamanlar lütuf olarak kabul ettikleri teknolojinin baskısı altında hayatlarının yapısının çöktüğünü hissetti. Çocuk odası bir avcıydı ve çocukları onun sadık koruyucularıydı. Evdeki makinelerin onları başarıyla büyüttüğünü, ebeveyn sevgisine yer bırakmadığını fark etti. Gerçek savaşın daha yeni başladığını bilerek çocuk odasının kapısını sıkıca kilitledi. Ev kapana kısılmış bir hayvan gibi hissettiriyordu ve o çok tehlikeli bir kafesin anahtarını tutan kişiydi.",
       "David McClean, ev soğuk ve yapay bir sessizliğe büründüğü sırada geldi. Modern ve tertemiz oturma odasına endişeli bir ifadeyle bakarken, havada asılı duran tuhaf gerginliği fark etti. George her şeyi anlattı, sesi yenilgiyle doluydu ve David, çocuk odasının tehlikeli bir etkiye dönüştüğü konusunda hemfikirdi. Tek çözümün evi tamamen kapatıp yeniden normal bir yaşam sürmek olduğuna karar verdiler. Peter ve Wendy bu haberi duyduklarında çığlık atmadılar. Bunun yerine, çocuk odasının kapısında durdular ve tamamen sahte hissettiren bir üzüntüyle ağladılar. Babalarına, sevdikleri aslanlara ve güneşten kavrulmuş ovalara veda etmek için içeride sadece bir an daha geçirmeleri için yalvardılar. George karısına baktı, derin bir iç çekti ve nihayet dijital dünyalarında beş dakika daha geçirmelerine izin vermeyi kabul etti.",
       "Çocuklar odaya koştular, yüzleri aniden aydınlandı ve heyecanla doldu. Ağır kapı arkalarından klik sesiyle kapandı ve son bir hüküm gibi kilitlendi. George ve Lydia koridorda durmuş birkaç dakikanın geçmesini bekliyorlardı ama ev tuhaf bir şekilde sessizleşti. Aslan sesi, canavar kükremesi veya çimen hışırtısı yoktu. Çocuklar sessizdi ve bu gürültü yokluğu, daha önce yaşanan kaostan çok daha korkutucuydu. George, sessizliğin huzur işareti değil, çocukların başarısının bir göstergesi olduğunu fark ettiğinde omurgasında bir ürperti hissetti. Aniden kapı kolunu kavrayıp sertçe çekti ama kapı, artık kontrol edemediği bir güç tarafından içeriden kilitlenmişti. Oda sonunda ailesi üzerinde tam bir hakimiyet kurmuştu.",
-      "Çocuk odasının içinden aniden tek ve ürkütücü bir çığlık yankılandı, ardından ikinci bir çığlık geldi ve aniden kesildi. Sonra tekrar derin ve nihai bir sessizlik oldu; bu sessizlik George'un damarlarındaki kanı dondurdu. Kapıya vurup çocuklarına seslendi ama cevap gelmedi. Aniden kapı açıldı; Peter ve Wendy orada sakin ve oldukça soğukkanlı bir şekilde duruyorlardı. David McClean odaya girdi, aslanların az önce yemek yediği boş ve altın sarısı ovaya baktı. Çocukların bir çalının yanında oturmuş, babalarının onlara katılmasını beklediklerini gördü. David arkasına dönüp ebeveynlere bakmak istedi ama sadece boş bir koridor buldu. Oda her şeyi yutmuştu. Çocuklar psikoloğa soğuk ve uzak gözlerle baktılar ve sadece bir fincan çay isteyip istemediğini sordular."
+      "Çocuklar odaya koştular, yüzleri aniden aydınlandı ve heyecanla doldu. Ağır kapı arkalarından klik sesiyle kapandı ve son bir hüküm gibi kilitlendi. George ve Lydia koridorda durmuş birkaç dakikanın geçmesini bekliyorlardı ama ev tuhaf bir şekilde sessizleşti. Aslan sesi, canavar kükremesi veya çimen hışırtısı yoktu. Çocuklar sessizdi ve bu gürültü yokluğu, daha önce yaşanan kaostan çok daha korkutucuydu. George, sessizliğin huzur işareti değil, çocukların başarısının bir göstergesi olduğunu fark ettiğinde omurgasında bir ürperti hissetti. Aniden kapı kolunu kavrayıp sertçe çekti ama kapı, artık kontrol edemediği bir güç tarafından içeriden kilitlenmişti. Oda sonunda ailesi üzerinde tam bir hakimiyet kurmuştu."
     ],
     words: {
       "nursery": "çocuk odası",
       "veldt": "savana",
       "identify": "tanımlamak",
       "mysterious": "gizemli",
-      "frustrated": "hüsrana uğramış",
+      "frustrated": "hayal kırıklığına uğramış",
       "psychologist": "psikolog",
       "disturbing": "rahatsız edici",
       "artificial": "yapay",
@@ -11097,7 +11105,7 @@ export const STORIES_PART2: RawStory[] = [
       "consume": "yutmak"
     }
   },
-              {
+                {
     id: 'scifi_soft_rains',
     title: "There Will Come Soft Rains",
     author: 'Ray Bradbury',
@@ -11109,7 +11117,7 @@ export const STORIES_PART2: RawStory[] = [
       "A small, dry wind blew through the open front door, carrying the scent of dust and dead leaves. The house waited for the family to return for their dinner. It prepared dinner at six o'clock, but the kitchen was quiet and dark. There were no voices, no laughter, and no music playing on the record player. The only sound was the clicking of the metal mice as they returned to their holes after cleaning the rugs. The house was a beautiful monument to a dead civilization. It kept the time and followed its programming perfectly, ignoring the fact that the rest of the city had turned into gray dust. It was a lonely, brave house, trying to be useful in a place where usefulness had no meaning. It stood against the empty sky, a last spark of technology in a silent, dead, and burnt-out world.",
       "At ten o'clock, the house began to clean itself again. Tiny mechanical mice appeared from hidden wall panels, moving across the floors with quiet precision. They worked in perfect rhythm, brushing every corner and picking up microscopic pieces of dust. These robotic cleaners were small and silver, darting under chairs and tables as if they were alive. They did not notice that the carpets were already clean. Their only purpose was to follow the schedule dictated by the main computer. Even though there was no dirt, they continued their task with deep mechanical dedication. The living room sparkled under the light, shining like a new mirror. Outside, the world remained dark and silent, but inside, the house worked endlessly to maintain a standard of living for people who would never return to walk through those pristine, quiet halls again.",
       "By noon, the atmosphere inside the home felt heavy and strange. The house decided it was time to provide entertainment for the absent family. It began to play soft piano music throughout the rooms, the notes floating in the air like delicate ghosts. The music was pleasant, but it had no audience to appreciate its beauty. Meanwhile, the house checked the water levels in the bathrooms. It poured warm, scented water into the tub, perfect for a long soak, and then let it drain away after a few minutes when nobody entered. The plumbing hummed as it reset itself, ready for the next programmed activity. It was a cycle of complete order in the middle of total destruction. The house believed it was fulfilling its duties, unaware that the people who built it had vanished into ash and memory long ago.",
-      "The afternoon sun moved slowly across the sky, casting long shadows into the silent kitchen. The house, acting as a diligent servant, prepared a light lunch for the family members who were still missing. Trays moved automatically from the pantry, offering colorful salads and crisp fruits. However, the food simply sat on the table, slowly becoming dry as the hours passed by. The refrigerator made a low sound, keeping the temperature perfectly cool, while the robotic cleaning devices returned to their hiding spots. Everything remained in its proper place, looking prepared for a busy day that never started. There was no life, no breath, and no heart beating within these sturdy, high-tech walls. The house functioned with a terrifying sense of normalcy, keeping a rigid schedule in a world that had completely stopped moving forward, waiting in silence for masters that were gone.",
+      "The house functioned with a terrifying sense of normalcy, keeping a rigid schedule in a world that had completely stopped moving forward, waiting in silence for masters that were gone.",
       "At two o'clock, the house felt a change in the air and decided to serve tea. A mechanical arm moved smoothly from the wall in the kitchen, carefully setting out small, decorated china cups and a silver tray. The tea kettle whistled softly as the water reached the perfect temperature for brewing. There was a gentle click as the machine poured the liquid, steam rising in thin white clouds that vanished into the still air of the room. A small plate of crackers followed, arranged neatly on the table beside the cups. Everything was perfect, designed for comfort and elegance. Yet, no hands came to hold the warm cups, and no voices shared stories over the hot drink. The table remained unoccupied, a lonely stage for a play where the actors had disappeared forever, leaving behind only the cold routines of a digital memory that refused to stop its work.",
       "The house continued its programmed life as the afternoon turned into a golden evening. In the nursery, the walls suddenly glowed with bright colors, projecting a giant, artificial jungle for the children to enjoy. Lions, giraffes, and colorful birds moved across the smooth surfaces, accompanied by the sounds of the wild. The mechanical jungle seemed very real, with trees that swayed and sunlight that filtered through digital leaves. It was a beautiful, immersive experience, created to delight young hearts and curious minds. But the room was entirely empty. There were no children to run across the floor or laugh at the animals, and no eyes to marvel at the magic on the wall. The walls showed a paradise, but in reality, there was only the quiet house, a hollow monument to a family that had been turned into dust by a sudden, terrible heat.",
       "As the sun began to sink lower, the shadows grew longer and reached across the empty floors like thin, dark fingers. The house, unaware of the tragedy outside, prepared for the evening hours with rhythmic precision. It adjusted the lights, making sure the atmosphere was soft and welcoming for the family dinner. A voice spoke from the walls, announcing the time and reminding the residents of important tasks, but the words fell on silent, unresponsive wood and metal. Outside the house, the ruins of the city stood like jagged teeth against the horizon, scorched and broken by the blast. Nature had taken back the land, but the house remained a stubborn island of technology. It fought against the decay, stubbornly performing its tasks, trying to bring order to a world that no longer had a place for its perfect, programmed, and lonely existence.",
@@ -11118,7 +11126,7 @@ export const STORIES_PART2: RawStory[] = [
       "Outside, the wind whipped the flames into a massive tower of red and orange light that stood out against the dark, empty horizon. The ruins of the city watched in silence as the last piece of human luxury burned down to the ground. Inside, the computer systems were dying, their lights fading into a dull grey. The sprinklers failed, and the water supply ran dry, leaving the fire to consume the final rooms without any resistance. The beautiful walls, which once held images of family happiness and comfort, were now blackened by soot and destroyed by the intense heat. There was a sense of finality in the air, a closing of a long, lonely chapter of existence. The house was finally becoming a part of the dead world around it, turning into ruins just like everything else, leaving only the wind to blow over the silent, grey pile of remains.",
       "The dawn arrived cold and grey, revealing the quiet remains of the house. Nothing stood upright except for a single wall, which rose like a tombstone against the morning sky. This lone wall was covered in charred wood and twisted metal, showing the path of the fire that consumed everything during the long night. The garden was silent, and the birds that once sang with mechanical precision were now buried under thick piles of grey ash. Nature seemed to have reclaimed its space, indifferent to the loss of the advanced machine that once organized human life. The air felt empty and still, holding the weight of history that had simply vanished without a sound. No lights blinked, no voices spoke, and no breakfast was prepared. The silence was absolute, marking the final departure of the ghosts that had once inhabited these modern halls. Everything was quiet under the pale and distant sun.",
       "Inside the broken structure, the last electronic systems finally lost their power. The complex circuits that had controlled the temperature, the music, and the chores were now nothing more than cold, dead copper wires. Dust settled softly over the debris, covering the remnants of a life that once thrived in order and convenience. The house, which had acted with such purpose, was now just a pile of rubble that merged with the earth. It was a strange end for a place that had been designed to provide safety from the dangerous world outside. The logic of the home, its routines, and its careful schedules were gone forever. There was no one left to give instructions, and no one to receive them. The house had served its purpose until there was nothing left to serve, leaving behind only the cold reality of a world without people.",
-      "A gentle breeze blew across the wreckage, carrying the scent of smoke and dust into the open field. The fire had left the landscape looking like a blank page, waiting for something new to begin. The wall stood for a moment longer, a proud reminder of a civilization that had spent its time building, only to disappear into smoke. Then, with a soft crack, the last piece of the structure collapsed into the cooling ground. The story of the house was over, and the clock ticked its last second before becoming still. Outside, the world remained indifferent as it continued its slow rotation through space. The soft rains would eventually fall, washing the ash away and turning the ruins into a garden once more. Humanity was a memory, and nature continued its eternal, quiet cycle, ignoring the silent tragedy that had occurred under the empty sky."
+      "The house had served its purpose until there was nothing left to serve, leaving behind only the cold reality of a world without people."
     ],
     tr: [
       "Oturma odasında elektronik saat, 'Tik tak, saat yedi, uyanma vakti, saat yedi!' diye şarkı söyledi. Bu mesajı sessiz, metalik bir sesle tekrarladı. Ancak, evde uyanacak kimse yoktu. Ev boştu. Yatak odaları soğuk ve sessizdi. Mutfakta, kahvaltı ocağı sekiz dilim mükemmel kızarmış ekmek, dört yumurta ve on altı dilim pastırma hazırlayarak hafif bir enerjiyle vızıldıyordu. Hava yanık yemek kokuyordu çünkü yiyecekleri yiyecek kimse gelmemişti. Kahvaltı makinesi kendini temizlerken iç geçirdi. Dışarıda, şehir gri küllerden oluşan bir mezarlıktı. Sabah güneşi gökyüzünde yükseldi ama kimsenin üzerine parlamadı. Ev, geri kalan her şeyin ateşle yok olduğu bir dünyada yapayalnız duruyordu. Günlük görevlerini yönetecek hiçbir insan efendisi kalmamışken hayatını sürdüren modern bir makineydi.",
@@ -11126,16 +11134,16 @@ export const STORIES_PART2: RawStory[] = [
       "Küçük ve kuru bir rüzgar, toz ve ölü yaprak kokusu getirerek açık ön kapıdan içeri esti. Ev, ailenin akşam yemeği için dönmesini bekledi. Akşam saat altıda yemeği hazırladı ama mutfak sessiz ve karanlıktı. Sesler, kahkahalar ve plakçalar üzerinde çalan müzikler yoktu. Tek ses, halıları temizledikten sonra yuvalarına dönen metal farelerin tıklamalarıydı. Ev, ölü bir medeniyet için güzel bir anıttı. Şehrin geri kalanının gri toza dönüştüğü gerçeğini görmezden gelerek zamanı tuttu ve programını mükemmel bir şekilde takip etti. Yararlılığın hiçbir anlam ifade etmediği bir yerde yararlı olmaya çalışan yalnız, cesur bir evdi. Sessiz, ölü ve yanmış bir dünyada teknolojinin son kıvılcımı olarak boş gökyüzüne karşı duruyordu.",
       "Saat on olduğunda, ev tekrar kendini temizlemeye başladı. Küçük mekanik fareler gizli duvar panellerinden ortaya çıktılar ve sessiz bir kesinlikle zeminler üzerinde ilerlediler. Mükemmel bir ritimle çalışıyor, her köşeyi fırçalıyor ve mikroskobik toz parçalarını topluyorlardı. Bu robotik temizleyiciler küçük ve gümüş rengindeydi, tıpkı canlılarmış gibi sandalyelerin ve masaların altına dalıyorlardı. Halıların zaten temiz olduğunu fark etmediler. Tek amaçları, ana bilgisayar tarafından belirlenen programa uymaktı. Hiç kir olmamasına rağmen, görevlerine derin bir mekanik bağlılıkla devam ettiler. Oturma odası ışığın altında parlıyor, yeni bir ayna gibi ışıldıyordu. Dışarıda dünya karanlık ve sessiz kalmıştı, ancak içeride ev, o bozulmamış, sessiz salonlardan bir daha asla geçmeyecek insanlar için bir yaşam standardını korumak adına durmaksızın çalışıyordu.",
       "Öğlene doğru, evin içindeki atmosfer ağır ve tuhaf bir his uyandırıyordu. Ev, eksik aile için eğlence sağlama vaktinin geldiğine karar verdi. Odaların tamamında yumuşak piyano müziği çalmaya başladı, notalar narin hayaletler gibi havada süzülüyordu. Müzik hoştu ama güzelliğini takdir edecek bir izleyicisi yoktu. Bu sırada ev, banyolardaki su seviyelerini kontrol etti. Küvete uzun bir banyo için mükemmel olan ılık, kokulu su doldurdu ve ardından kimse girmeyince birkaç dakika sonra suyun boşalmasına izin verdi. Tesisat, bir sonraki programlanmış etkinliğe hazır olacak şekilde kendini sıfırlarken uğuldadı. Bu, toplam yıkımın ortasında tam bir düzen döngüsüydü. Ev, görevlerini yerine getirdiğine inanıyor, onu inşa eden insanların çoktan küle ve anıya dönüştüğünün farkında bile değildi.",
-      "Öğleden sonra güneşi, sessiz mutfağın içine uzun gölgeler düşürerek gökyüzünde yavaşça ilerledi. Çalışkan bir hizmetkar gibi davranan ev, hala kayıp olan aile üyeleri için hafif bir öğle yemeği hazırladı. Tepsiler otomatik olarak kilerden çıktı ve renkli salatalar ile taze meyveler sundu. Ancak yemekler sadece masanın üzerinde duruyor, saatler geçtikçe yavaşça kuruyordu. Buzdolabı alçak bir ses çıkararak sıcaklığı mükemmel bir şekilde serin tutarken, robotik temizleme cihazları saklanma yerlerine döndüler. Her şey kendi yerinde kalmış, hiç başlamayan yoğun bir güne hazır görünüyordu. Bu sağlam, yüksek teknolojili duvarların içinde hayat, nefes ve atan bir kalp yoktu. Ev, korkutucu bir normallik duygusuyla çalışıyor, tamamen ilerlemeyi durdurmuş bir dünyada katı bir programı sürdürüyor ve çoktan gitmiş olan efendileri için sessizlik içinde bekliyordu.",
+      "Ev, tamamen ilerlemeyi durdurmuş bir dünyada katı bir programı sürdürerek, korkutucu bir normallik hissiyle çalışıyordu ve gitmiş efendileri sessizlik içinde bekliyordu.",
       "Saat ikide, ev havadaki değişikliği hissetti ve çay servisi yapmaya karar verdi. Mutfaktaki duvardan mekanik bir kol pürüzsüzce hareket ederek küçük, süslü porselen fincanları ve gümüş bir tepsiyi özenle yerleştirdi. Su, demleme için mükemmel sıcaklığa ulaştığında çaydanlık hafifçe ıslık çaldı. Makine sıvıyı doldururken hafif bir klik sesi duyuldu; buhar, ince beyaz bulutlar halinde yükselip odanın durgun havasında yok oldu. Birkaç kraker içeren küçük bir tabak, fincanların yanındaki masaya düzgünce dizildi. Her şey konfor ve zarafet için tasarlanmış, kusursuzdu. Yine de sıcak fincanları tutacak eller gelmedi ve kimse sıcak içecek eşliğinde hikayeler paylaşmadı. Masa boş kaldı; aktörlerin sonsuza dek kaybolduğu bir oyun için yalnız bir sahne gibiydi, geride sadece çalışmayı reddeden dijital bir belleğin soğuk rutinlerini bırakmıştı.",
       "Öğleden sonra altın bir akşama dönerken ev, programlanmış yaşamını sürdürdü. Çocuk odasında duvarlar aniden parlak renklerle parladı ve çocukların keyif alması için devasa, yapay bir orman yansıttı. Aslanlar, zürafalar ve renkli kuşlar, vahşi yaşamın sesleri eşliğinde pürüzsüz yüzeylerde hareket etti. Mekanik orman, sallanan ağaçları ve dijital yaprakların arasından süzülen güneş ışığıyla çok gerçek görünüyordu. Genç kalpleri ve meraklı zihinleri mutlu etmek için yaratılmış güzel ve sarmalayıcı bir deneyimdi. Ancak oda tamamen boştu. Yerde koşacak veya hayvanlara gülecek çocuklar yoktu ve duvardaki sihre hayran kalacak gözler de bulunmuyordu. Duvarlar bir cenneti gösteriyordu ama gerçekte sadece sessiz ev vardı; ani ve korkunç bir ısıyla küle dönüşmüş bir aileden geriye kalan boş bir anıt.",
       "Güneş alçalmaya başladığında gölgeler uzadı ve ince, karanlık parmaklar gibi boş zeminlerin üzerine yayıldı. Dışarıdaki trajediden habersiz olan ev, akşam saatleri için ritmik bir hassasiyetle hazırlandı. Işıkları ayarladı, atmosferin aile yemeği için yumuşak ve davetkar olduğundan emin oldu. Duvarlardan bir ses yükselerek saati bildirdi ve sakinlere önemli görevleri hatırlattı, ancak sözler tepkisiz ahşap ve metale ulaştı. Evin dışında, şehrin kalıntıları, patlamayla kavrulmuş ve kırılmış bir halde ufukta tırtıklı dişler gibi duruyordu. Doğa, araziyi geri almıştı ancak ev, inatçı bir teknoloji adası olarak kaldı. Çürümeye karşı savaştı, görevlerini inatla yerine getirdi ve mükemmel, programlanmış ve yalnız varlığına artık yeri olmayan bir dünyaya düzen getirmeye çalıştı.",
-      "Aniden, şiddetli bir rüzgar eve çarptı ve devrilen bir ağaç dalı mutfak penceresinden içeri girdi. Cam binlerce parıldayan parçaya ayrıldı ve temiz zemine elmaslar gibi saçıldı. Kırılan camlardan bir kısmı ocağa çarptı; orada duran bir temizlik sıvısı şişesi devrildi. Sıvı akmaya başladı ve çay hazırlığından dolayı hâlâ sıcak olan bir göze ulaştı. Ani bir cızırtıyla kimyasal sıvı tutuştu ve sarı alevler duvarlara tırmanarak perdelere doğru açgözlülükle dans etmeye başladı. Evin sensörleri tehlikeyi hemen fark etti ve duvarlar, yapıyı kurtarmak için çılgınca bir çabayla su püskürtmeye başladı. Ancak alevler hızlı ve açtı, korkunç bir süratle koridorlarda ilerliyordu. Evin metal iskeleti, ateşin yoğun baskısı altında inlemeye başladı; bir zamanlar mükemmel olan sığınak, artık metal ve anılardan oluşan yanan bir tuzağa dönüşmüştü.",
-      "Ev, yıkımın kaosu içinde düzeni korumaya çalışarak sahip olduğu her araçla karşı koydu. Yükselen ısıya beyaz kimyasal köpük bulutları püskürten gizli yangın söndürücüleri harekete geçirdi ancak yangın, küçük makinenin kontrol edebileceğinden çok daha güçlüydü. Her oda, bir dizi dijital hata ve tekrarlayan alarmlarla çığlık atıyor gibiydi. Duvarlardaki sesler umutsuz ve bozuk bir hale geldi, artık kimsenin duyamayacağı isimleri sesleniyordu. Elektrik kabloları erimeye başladıkça ışıklar gergin gözler gibi yanıp sönüyordu. Çocuk odasında, yapay aslanlar hâlâ atlıyor ve mekanik kuşlar şarkı söylemeye devam ediyordu; üstlerindeki tavanın sıvı çeliğe dönüştüğünden habersizlerdi. Ev, kendi iç dünyası yavaşça siyah küllere ve sıcak, çarpık metallere dönüşürken bile talimatlarını yerine getirmek için elinden geleni yapıyordu.",
+      "Aniden, şiddetli bir rüzgar eve çarptı ve devrilen bir ağaç dalı mutfak penceresinden içeri girdi. Cam binlerce parıldayan parçaya ayrıldı ve temiz zemine elmaslar gibi saçıldı. Kırık camlardan bir sprey, daha önceki çay hazırlığından dolayı hala aktif olan sıcak bir brülöre ulaşan ve devrilen bir temizlik sıvısı şişesinin olduğu ocağa çarptı. Ani bir tıslama ile kimyasal sıvı tutuştu ve sarı alevler perdelere doğru açgözlülükle dans ederek duvarlara tırmandı. Evin sensörleri tehlikeyi hemen fark etti ve duvarlar, yapıyı kurtarmak için çılgınca bir çabayla su püskürtmeye başladı. Ancak alevler hızlı ve açtı, korkunç bir hızla koridorlarda ilerliyordu. Bir zamanlar mükemmel bir sığınak olan evin metal iskeleti, ateşin yoğun baskısı altında inlemeye başladı ve metal ve hafızadan oluşan yanan bir tuzağa dönüştü.",
+      "Ev, yıkımın kaosunda düzeni korumaya çalışarak sahip olduğu her araçla karşılık verdi. Yükselen ısıya beyaz kimyasal köpük bulutları püskürten gizli yangın söndürücüleri devreye soktu ancak yangın, küçük makinenin kontrol edebileceğinden çok daha güçlüydü. Her oda, bir dizi dijital hata ve tekrarlayan alarm ile çığlık atıyor gibiydi. Duvarlardan gelen sesler umutsuz ve bozuk bir hale geldi, artık kimsenin duymayacağı isimleri haykırıyordu. Elektrik kabloları erimeye başladıkça ışıklar gergin gözler gibi yanıp sönüyordu. Çocuk odasında yapay aslanlar hala zıplıyor ve mekanik kuşlar, üstlerindeki tavanın sıvı çeliğe dönüştüğünden habersiz şarkı söylemeye devam ediyordu. Ev, kendi iç dünyası yavaşça siyah küllere ve sıcak, bükülmüş metallere çözülürken bile talimatlarını takip etmek için elinden geleni yapıyordu.",
       "Dışarıda rüzgar, alevleri karanlık ve boş ufka karşı duran devasa bir kırmızı ve turuncu ışık kulesine dönüştürdü. Şehrin kalıntıları, insan lüksünün son parçası yerle bir olurken sessizce izledi. İçeride bilgisayar sistemleri ölüyordu, ışıkları donuk bir griye dönerek sönüyordu. Fıskiyeler durdu ve su kaynağı kurudu, ateşi son odaları hiçbir dirençle karşılaşmadan tüketmeye bıraktı. Bir zamanlar aile mutluluğu ve konforun resimlerini taşıyan güzel duvarlar, şimdi kurumla kararmış ve yoğun ısı tarafından yok edilmişti. Havada bir son hissi, uzun ve yalnız bir varoluş bölümünün kapanışı vardı. Ev nihayet etrafındaki ölü dünyanın bir parçası haline geliyordu; tıpkı diğer her şey gibi kalıntılara dönüşüyor ve geride sessiz, gri moloz yığını üzerinde esecek rüzgardan başka hiçbir şey bırakmıyordu.",
       "Şafak, evin sessiz kalıntılarını ortaya çıkararak soğuk ve gri bir şekilde belirdi. Sabah gökyüzüne karşı bir mezar taşı gibi yükselen tek bir duvar dışında ayakta kalan hiçbir şey yoktu. Bu yalnız duvar, gece boyunca her şeyi yutan yangının izlerini gösteren kömürleşmiş ahşap ve bükülmüş metal ile kaplıydı. Bahçe sessizdi ve bir zamanlar mekanik bir hassasiyetle öten kuşlar şimdi kalın gri kül yığınlarının altına gömülmüştü. Doğa, bir zamanlar insan hayatını düzenleyen gelişmiş makinenin kaybına aldırmadan kendi alanını geri almış görünüyordu. Hava boş ve hareketsizdi, sessizce yok olup giden tarihin ağırlığını taşıyordu. Hiçbir ışık yanıp sönmüyor, hiçbir ses konuşmuyor ve hiçbir kahvaltı hazırlanmıyordu. Sessizlik mutlaktı ve bu modern salonlarda bir zamanlar yaşayan hayaletlerin son gidişini işaret ediyordu. Her şey solgun ve uzak güneşin altında sessizleşmişti.",
       "Yıkık yapının içinde, son elektronik sistemler de nihayet güçlerini yitirdi. Sıcaklığı, müziği ve işleri kontrol eden karmaşık devreler artık soğuk, ölü bakır tellerden başka bir şey değildi. Toz, bir zamanlar düzen ve kolaylık içinde süren hayatın kalıntılarının üzerine yumuşakça çöktü. Bir zamanlar büyük bir amaçla hareket eden ev, şimdi toprakla birleşen bir moloz yığınından ibaretti. Dışarıdaki tehlikeli dünyaya karşı güvenlik sağlamak üzere tasarlanmış bir yer için bu garip bir sondu. Evin mantığı, rutinleri ve özenli programları sonsuza dek gitmişti. Artık talimat verecek kimse kalmamıştı ve alacak kimse de yoktu. Ev, hizmet edecek hiçbir şey kalmayana kadar amacını yerine getirmiş, geriye sadece insansız bir dünyanın soğuk gerçeğini bırakmıştı.",
-      "Hafif bir esinti, duman ve toz kokusunu açık alana taşıyarak enkazın üzerinden geçti. Yangın, manzarayı yeni bir başlangıç bekleyen boş bir sayfa gibi bırakmıştı. Duvar, sadece inşa etmeye vakit harcayıp sonra dumana karışan bir uygarlığın gururlu bir hatırlatıcısı olarak bir süre daha ayakta kaldı. Ardından, hafif bir çatırtıyla yapının son parçası da soğuyan zemine çöktü. Evin hikayesi bitmişti ve saat durmadan önceki son saniyesini tik takla geçirmişti. Dışarıda dünya, uzaydaki yavaş dönüşüne devam ederken kayıtsız kalmaya devam etti. Hafif yağmurlar er ya da geç yağacak, külleri yıkayıp götürecek ve kalıntıları yeniden bir bahçeye dönüştürecekti. İnsanlık bir hatıraydı ve doğa, boş gökyüzü altında yaşanan sessiz trajediyi görmezden gelerek sonsuz, sessiz döngüsüne devam ediyordu."
+      "Ev, hizmet edecek hiçbir şey kalmayana kadar amacını yerine getirmiş, geriye sadece insanlardan yoksun bir dünyanın soğuk gerçekliğini bırakmıştı."
     ],
     words: {
       "metallic": "metalik",
@@ -11147,7 +11155,7 @@ export const STORIES_PART2: RawStory[] = [
       "mechanical": "mekanik",
       "precision": "hassasiyet",
       "rhythm": "ritim",
-      "attendance": "izleyici/katılımcı",
+      "audience": "izleyici",
       "diligent": "çalışkan",
       "normalcy": "normallik",
       "vanish": "yok olmak",
@@ -11167,7 +11175,7 @@ export const STORIES_PART2: RawStory[] = [
       "collapse": "çökmek"
     }
   },
-              {
+                {
     id: 'scifi_arena',
     title: "Arena",
     author: 'Fredric Brown',
@@ -11209,36 +11217,359 @@ export const STORIES_PART2: RawStory[] = [
     ],
     words: {
       "scout": "keşif",
-      "destined": "kaderinde olan/hedef",
+      "intense": "yoğun",
+      "violently": "şiddetle",
+      "superior": "üstün",
+      "determined": "kararlı",
+      "warp": "bükülmek",
+      "sensation": "his",
+      "fading": "solmak",
       "void": "boşluk",
-      "eerie": "ürpertici",
+      "mysterious": "gizemli",
+      "vast": "uçsuz bucaksız",
+      "horizon": "ufuk",
+      "eerie": "ürkütücü",
+      "uniform": "üniforma",
+      "metallic": "metalik",
+      "breathable": "nefes alınabilir",
+      "alert": "tetikte",
+      "presence": "varlık",
+      "pulsing": "nabız gibi atan",
+      "sphere": "küre",
       "arena": "arena",
+      "commanders": "komutanlar",
+      "hovered": "havada asılı kalmak",
+      "rippling": "dalgalanmak",
+      "disturbed": "rahatsız edilmiş",
+      "mental": "zihinsel",
+      "intelligence": "zeka",
+      "spectators": "seyirciler",
+      "primitive": "ilkel",
+      "fate": "kader",
+      "civilizations": "medeniyetler",
       "outcome": "sonuç",
-      "shimmer": "hafifçe parıldamak",
-      "manipulate": "yönetmek, biçimlendirmek",
+      "duel": "düello",
+      "pounding": "çarpıntı",
+      "atmosphere": "atmosfer",
+      "tension": "gerginlik",
+      "desperate": "çaresiz",
+      "struggle": "mücadele",
+      "twin": "ikiz",
+      "possessed": "sahipti",
+      "terrifying": "korkunç",
+      "shimmered": "parıldadı",
+      "manipulate": "manipüle etmek",
+      "fuzzy": "bulanık",
+      "spirit": "ruh",
+      "invisible": "görünmez",
+      "cruel": "zalim",
       "mercy": "merhamet",
       "frustration": "hayal kırıklığı",
+      "energy": "enerji",
+      "amusement": "eğlence",
+      "mocking": "alay etmek",
+      "attempt": "girişim",
+      "physical": "fiziksel",
+      "scanner": "tarayıcı",
+      "support": "destek",
+      "warrior": "savaşçı",
+      "survive": "hayatta kalmak",
+      "insect": "böcek",
+      "resources": "kaynaklar",
       "wasteland": "çorak arazi",
+      "constant": "sürekli",
+      "watchful": "dikkatli",
       "patience": "sabır",
-      "effort": "çaba",
+      "deadly": "ölümcül",
+      "species": "türler",
+      "plan": "plan",
+      "destroyed": "yok olmak",
+      "jagged": "keskin",
+      "effortlessly": "zahmetsizce",
       "endurance": "dayanıklılık",
+      "designed": "tasarlanmış",
+      "higher": "daha yüksek",
+      "controlled": "kontrol edilen",
+      "ignore": "görmezden gelmek",
+      "uneven": "engebeli",
+      "effort": "çaba",
+      "refused": "reddetmek",
+      "weakness": "zayıflık",
+      "immediately": "hemen",
+      "scraping": "sürtünmek",
+      "rough": "sert",
+      "formation": "oluşum",
       "geometric": "geometrik",
+      "patterns": "desenler",
+      "carved": "oyulmuş",
+      "suggesting": "düşündürmek",
+      "ancient": "antik",
+      "civilization": "uygarlık",
+      "secrets": "sırlar",
       "advantage": "avantaj",
-      "navigation": "yön bulma",
+      "vibrating": "titreşimli",
+      "influence": "etkilemek",
+      "gritted": "sıkmak",
+      "logic": "mantık",
+      "complex": "karmaşık",
+      "puzzle": "bulmaca",
+      "opponent": "rakip",
+      "temperature": "sıcaklık",
+      "dropped": "düşmek",
       "twilight": "alacakaranlık",
+      "crouched": "çömelmek",
+      "boulder": "kaya bloğu",
+      "direct": "doğrudan",
+      "sight": "görüş alanı",
+      "loneliness": "yalnızlık",
+      "shoulders": "omuzlar",
+      "flicker": "ışık titremesi",
+      "hope": "umut",
+      "environment": "çevre",
+      "trap": "tuzak",
+      "training": "eğitim",
+      "navigation": "navigasyon",
+      "engineering": "mühendislik",
+      "soldier": "asker",
+      "problem solver": "problem çözücü",
+      "makeshift": "geçici",
+      "shelter": "sığınak",
+      "safety": "güvenlik",
+      "risky": "riskli",
+      "margin": "pay",
+      "error": "hata",
+      "choice": "seçenek",
+      "silently": "sessizce",
+      "darkness": "karanlık",
+      "revealing": "belli etmek",
+      "location": "konum",
+      "unnatural": "doğal olmayan",
       "rhythm": "ritim",
+      "nervous": "gergin",
+      "searching": "aramak",
+      "breathing": "nefes alışverişi",
+      "adjusted": "ayarlamak",
+      "prepared": "hazırlanmak",
+      "loose": "gevşek",
+      "positioned": "konumlandırılmış",
+      "edge": "kenar",
+      "narrow": "dar",
+      "lure": "çekmek",
+      "space": "alan",
+      "cause": "neden olmak",
+      "rockfall": "kaya düşmesi",
       "strategy": "strateji",
-      "hesitation": "tereddüt",
-      "strains": "zorlanma",
+      "focus": "odaklanma",
+      "hold": "ele geçirmek",
+      "risk": "risk",
+      "survival": "hayatta kalma",
+      "harsh": "sert",
+      "movement": "hareket",
+      "turned": "dönmek",
+      "hiding": "saklanmak",
+      "casting": "oluşturmak",
+      "canyon": "kanyon",
+      "walls": "duvarlar",
+      "held": "tutmak",
+      "breath": "nefes",
+      "hoped": "umut etmek",
+      "position": "konum",
+      "detected": "tespit etmek",
+      "disturbance": "bozulma",
+      "moved": "hareket etmek",
+      "back": "geri",
+      "beating": "çarpıntı",
+      "chest": "göğüs",
+      "piece": "parça",
+      "wood": "tahta",
+      "found": "bulmak",
+      "waited": "beklemek",
+      "precise": "kesin",
+      "chance": "şans",
+      "strike": "vurmak",
+      "aura": "aura",
+      "illuminating": "aydınlatmak",
+      "rocks": "kayalar",
+      "took": "almak",
+      "deep": "derin",
+      "opening": "açıklık",
+      "passed": "geçmek",
+      "directly": "doğrudan",
+      "beneath": "altında",
       "unstable": "dengesiz",
+      "stones": "taşlar",
+      "swift": "hızlı",
+      "powerful": "güçlü",
+      "motion": "hareket",
+      "pushed": "itmek",
+      "lever": "kol",
+      "constructed": "inşa etmek",
+      "loud": "yüksek sesli",
+      "crash": "çarpma sesi",
+      "trapping": "hapsetmek",
+      "path": "yol",
+      "silence": "sessizlik",
+      "returned": "geri dönmek",
+      "dust": "toz",
+      "settle": "çökmek",
+      "pale": "soluk",
+      "moonlight": "ay ışığı",
+      "marking": "işaretlemek",
+      "dangerous": "tehlikeli",
+      "stage": "aşamayı",
+      "fight": "savaş",
+      "trapped": "tuzaklı",
+      "creature": "yaratık",
+      "stick": "sopa",
+      "finish": "bitirmek",
+      "battle": "savaş",
+      "caught": "yakalanmak",
+      "heavy": "ağır",
+      "alive": "hayatta",
+      "flickered": "titremek",
+      "weakly": "zayıfça",
+      "lamp": "lamba",
+      "dying": "ölüyor",
+      "night": "gece",
+      "hesitation": "tereddüt",
+      "looked": "bakmak",
+      "enemy": "düşman",
+      "monster": "canavar",
+      "living": "canlı",
+      "being": "varlık",
+      "fighting": "savaşmak",
+      "home": "evine",
+      "just": "sadece",
+      "higher ones": "Yüksek Olanlar",
+      "advanced": "gelişmiş",
+      "challenge": "meydan okuma",
+      "watching": "izlemek",
+      "killed": "öldürmek",
+      "humanity": "insanlık",
+      "safe": "güvenli",
+      "lose": "kaybetmek",
+      "honor": "onur",
+      "wondered": "merak etmek",
+      "truly": "gerçekten",
+      "way": "yol",
+      "decide": "karar vermek",
+      "stood": "durmak",
+      "over": "bitmiş",
+      "hand": "el",
+      "trembling": "titreyen",
+      "slightly": "hafifçe",
+      "final": "son",
+      "blow": "darbe",
+      "end": "son",
+      "everything": "her şey",
+      "infinite": "sonsuz",
+      "universe": "evren",
+      "moment": "an",
+      "connection": "bağlantı",
+      "happened": "olmak",
+      "between": "arasında",
+      "images": "görüntüler",
+      "distant": "uzak",
+      "beautiful": "güzel",
+      "world": "dünya",
+      "different": "farklı",
+      "felt": "hissetmek",
+      "sadness": "üzüntü",
+      "memories": "anılar",
+      "family": "aile",
+      "burden": "yük",
+      "duty": "görev",
+      "mindless": "düşüncesiz",
+      "beast": "canavar",
       "sentient": "duyarlı",
-      "compassion": "merhamet",
-      "exhausted": "bitkin",
       "entity": "varlık",
-      "burden": "yük"
+      "culture": "kültür",
+      "heart": "kalp",
+      "lowered": "indirmek",
+      "weapon": "silah",
+      "murder": "öldürmek",
+      "thinking": "düşünen",
+      "shared": "paylaşmak",
+      "soul": "ruh",
+      "silent": "sessiz",
+      "desert": "çöl",
+      "cosmic": "kozmik",
+      "game": "oyun",
+      "expected": "beklemek",
+      "savage": "vahşi",
+      "death": "ölüm",
+      "chose": "seçmek",
+      "instead": "yerine",
+      "stepped": "adım atmak",
+      "letting": "izin vermek",
+      "breathe": "nefes almak",
+      "thin": "ince",
+      "air": "hava",
+      "strange": "garip",
+      "began": "başlamak",
+      "fade": "solmak",
+      "around": "etrafına",
+      "dream": "rüya",
+      "disappearing": "kaybolmak",
+      "sunrise": "gündoğumu",
+      "blinding": "kör edici",
+      "vanished": "kaybolmak",
+      "leaving": "bırakmak",
+      "standing": "ayakta durmak",
+      "command": "komuta",
+      "deck": "güverte",
+      "spaceship": "uzay gemisi",
+      "alone": "yalnız",
+      "exhausted": "bitkin",
+      "crew": "mürettebat",
+      "gathered": "toplanmak",
+      "asking": "sormak",
+      "questions": "sorular",
+      "could": "yapabilmek",
+      "only": "sadece",
+      "stare": "bakmak",
+      "stars": "yıldızlar",
+      "knew": "bilmek",
+      "war": "savaş",
+      "outsider": "Dışlanmış",
+      "also": "de",
+      "sent": "gönderilmek",
+      "seen": "görmek",
+      "decision": "karar",
+      "judged": "yargılamak",
+      "humans": "insanlar",
+      "worthy": "değerli",
+      "because": "çünkü",
+      "compassion": "şefkat",
+      "destruction": "yıkım",
+      "galaxy": "galaksi",
+      "remain": "kalmak",
+      "place": "yer",
+      "peace": "huzur",
+      "least": "en azından",
+      "while": "süre",
+      "within": "içinde",
+      "himself": "kendini",
+      "knowing": "bilmek",
+      "saved": "kurtarmak",
+      "without": "olmadan",
+      "losing": "kaybetmek",
+      "won": "kazanmak",
+      "weapons": "silahlar",
+      "understanding": "anlayış",
+      "hands": "eller",
+      "longer": "daha fazla",
+      "dirty": "kirli",
+      "smiled": "gülümsemek",
+      "realized": "fark etmek",
+      "long": "uzun",
+      "dark": "karanlık",
+      "terror": "terör",
+      "finally": "nihayet",
+      "come": "gelmek"
     }
   },
-              {
+                {
     id: 'scifi_expedition',
     title: "Expedition",
     author: 'Fredric Brown',
@@ -11281,34 +11612,34 @@ export const STORIES_PART2: RawStory[] = [
     words: {
       "expedition": "keşif gezisi",
       "universe": "evren",
-      "navigation": "yön bulma",
+      "navigation": "navigasyon",
       "atmosphere": "atmosfer",
       "scanner": "tarayıcı",
       "legacy": "miras",
       "shimmering": "pırıldayan",
-      "isolation": "yalıtılmışlık",
-      "deployed": "konuşlandırıldı/açıldı",
-      "jagged": "tırtıklı/yamuk",
-      "monumental": "anıtsal/çok önemli",
-      "pulsate": "ritmik bir şekilde atmak/titremek",
-      "emanate": "yayılmak/çıkmak",
-      "unsettling": "rahatsız edici/huzursuz eden",
-      "embedded": "gömülü/yerleştirilmiş",
-      "transcend": "aşmak/ötesine geçmek",
-      "spectacle": "gösteri/etkileyici manzara",
+      "isolation": "yalıtım",
+      "deploy": "açmak",
+      "jagged": "girintili çıkıntılı",
+      "monumental": "anıt gibi",
+      "pulsate": "atar",
+      "emanate": "yayılır",
+      "unsettling": "rahatsız edici",
+      "embed": "gömülmüş",
+      "transcend": "aşmak",
+      "spectacle": "gösteri",
       "vibration": "titreşim",
       "entity": "varlık",
       "translucent": "yarı saydam",
       "barrier": "engel",
       "cosmic": "kozmik",
-      "humbled": "alçaltılmış, boyun eğmiş",
+      "humbled": "mahcup",
       "insignificance": "önemsizlik",
-      "deliberate": "kasıtlı, ağırbaşlı",
+      "deliberate": "ağırbaşlı",
       "fragile": "kırılgan",
       "witness": "tanık"
     }
   },
-              {
+                {
     id: 'scifi_escape_velocity',
     title: "Escape Velocity",
     author: 'Unknown',
@@ -11349,19 +11680,19 @@ export const STORIES_PART2: RawStory[] = [
       "Işık söndüğünde sessizlik geri geldi; eskisinden daha derin ve anlamlıydı. Elias pencereden dışarı baktı ve insan gözünün daha önce hiç görmediği renklerle parlayan, tanımadığı bir yıldız sistemi gördü. Gemisi, eski evinin mükemmel bir kopyası olan ama canlı ve potansiyelle dolu, hayatla titreyen yeşil bir gezegene doğru yavaşça sürükleniyordu. Görev sona ermişti ama gerçek yolculuğu yeni başlıyordu. Artık kararlı atmosfer değerlerini ve solunabilir bir ortamı gösteren ekranı kontrol etti. İmkansızı başarmış, eski dünyasının ağırlığını geride bırakıp yıldızlar arasında yeni bir başlangıç bulmuştu. Derin bir nefes alarak kapıyı açmaya hazırlandı ve bilinmeyene doğru adım attı; artık evi olarak adlandırdığı sonsuz, güzel ve sessiz galaksinin gerçek bir yolcusuydu."
     ],
     words: {
-      "vacuum": "vakum, boşluk",
+      "vacuum": "boşluk",
       "outpost": "karakol",
-      "celestial": "gök ile ilgili",
-      "telemetry": "uzaktan ölçüm",
+      "celestial": "gök cisimleri",
+      "telemetry": "telemetri",
       "vigil": "nöbet",
       "thruster": "itici",
-      "gravitational": "kütleçekimsel",
+      "gravitational": "kütleçekim",
       "durability": "dayanıklılık",
       "cockpit": "kokpit",
       "velocity": "hız",
-      "untethered": "bağımsızlaşmış",
-      "ascent": "tırmanış, yükseliş",
-      "cramped": "dar, sıkışık",
+      "untethered": "bağlantısı kesilmiş",
+      "ascent": "yükseliş",
+      "cramped": "dar",
       "recalibrate": "yeniden kalibre etmek",
       "sanctuary": "sığınak",
       "solitude": "yalnızlık",
@@ -11374,11 +11705,11 @@ export const STORIES_PART2: RawStory[] = [
       "transmission": "yayın",
       "threshold": "eşik",
       "acceleration": "ivmelenme",
-      "vessel": "araç",
+      "vessel": "gemi",
       "vibrant": "canlı"
     }
   },
-              {
+                {
     id: 'scifi_evidence',
     title: "Evidence",
     author: 'Isaac Asimov',
@@ -11402,8 +11733,8 @@ export const STORIES_PART2: RawStory[] = [
       "As the inauguration ceremony ended, Susan walked away, leaving the new leader to his responsibilities. She realized that it did not matter if Byerley was flesh and blood or steel and wire. What truly mattered was the quality of his actions and the peace he brought to the people. He had followed the laws of humanity even if he was not born of it. The era of robots serving in secret had begun, and the world was safer for it. Byerley walked toward the grand hall, his steps steady and his head held high. He represented a future where logic and empathy could work together in harmony. Susan felt a sense of relief, knowing that the planet was in good hands. She knew the secret, but she also knew that the truth would remain hidden forever, protected by a perfect act."
     ],
     tr: [
-      "Francis Quinn şehirde güçlü bir adamdı ancak belediye başkan adaylarından biri olan Stephen Byerley hakkında gizli bir endişesi vardı. Byerley, yoksullara yönelik çalışmaları ve etkileyici konuşmalarıyla tanınan bir avukattı. Yine de Quinn, Byerley'nin aslında bir robot olduğuna inanıyordu. Endişelerini paylaşmak için ünlü robot psikoloğu Dr. Susan Calvin'in ofisine gitti. Quinn kanıt istiyordu. Byerley'nin halk içinde hiç yemek yemediğini, hiç uyumadığını ve çocukluğuna dair hiçbir kayıt bulunmadığını açıkladı. Quinn'e göre bunlar, Byerley'nin insan kılığına girmiş bir makine olduğunun işaretleriydi. Eğer Byerley bir robotsa, yasal olarak belediye başkanı olamazdı. Dr. Calvin, yüzünde hiçbir duygu belirtisi olmadan dikkatle dinledi. Bir robotun insanlar arasında saklanmasının, robot yasaları için tehlikeli bir durum olacağını anladı. Quinn, seçimler gerçekleşmeden önce gerçeği ortaya çıkarmasına yardım etmesini istedi.",
-      "Dr. Calvin, pencereden yoğun şehre bakarken olasılıklar üzerinde düşündü. Robot yasaları basitti ancak aynı zamanda oldukça katıydı. Bir robot bir insana zarar veremezdi ve bu emirler ilk kural ile çelişmedikçe insan emirlerine itaat etmek zorundaydı. Eğer Byerley bir robotsa, gizli hayatı bu kuralların büyük bir ihlali olurdu. Quinn'e, sadece bakarak üst düzey bir robot ile bir insan arasındaki farkı anlamanın neredeyse imkansız olduğunu söyledi. Teknoloji çok gelişmişti. Araştırmayı kabul etti ancak Quinn'i dikkatli olması konusunda uyardı. Eğer Byerley'yi haksız yere suçlarlarsa, bu onların itibarlarını mahveder ve kamuoyunda kaosa neden olurdu. Seçim gününe giden uzun ve zorlu haftalar boyunca, robot doğasını ele verecek herhangi bir işaret için kampanyasını yakından izlemeye karar verdiler.",
+      "Francis Quinn şehirde güçlü bir adamdı ancak belediye başkan adaylarından biri olan Stephen Byerley hakkında gizli bir endişesi vardı. Byerley, yoksullara yönelik çalışmaları ve güçlü hitabetiyle tanınan bir avukattı. Yine de Quinn, Byerley'nin aslında bir robot olduğuna inanıyordu. Endişelerini paylaşmak için ünlü robot psikoloğu Dr. Susan Calvin'in ofisine gitti. Quinn kanıt istiyordu. Byerley'nin halk içinde hiç yemek yemediğini, hiç uyumadığını ve çocukluğuna dair hiçbir kayıt bulunmadığını açıkladı. Quinn'e göre bunlar, Byerley'nin insan kılığına girmiş bir makine olduğunun işaretleriydi. Eğer Byerley bir robotsa, yasal olarak belediye başkanı olamazdı. Dr. Calvin, yüzünde hiçbir duygu belirtisi olmadan dikkatle dinledi. Bir robotun insanlar arasında saklanmasının, robot yasaları için tehlikeli bir durum olacağını anladı. Quinn, seçimler gerçekleşmeden önce gerçeği ortaya çıkarmasına yardım etmesini istedi.",
+      "Dr. Calvin, pencereden yoğun şehre bakarken olasılıklar üzerinde düşündü. Robot yasaları basitti ancak aynı zamanda oldukça katıydı. Bir robot bir insana zarar veremezdi ve bu emirler ilk kural ile çelişmediği sürece insan emirlerine itaat etmek zorundaydı. Eğer Byerley bir robotsa, gizli hayatı bu kuralların büyük bir ihlali olurdu. Quinn'e, sadece bakarak üst düzey bir robot ile bir insan arasındaki farkı anlamanın neredeyse imkansız olduğunu söyledi. Teknoloji çok gelişmişti. Araştırmayı kabul etti ancak Quinn'i dikkatli olması konusunda uyardı. Eğer Byerley'yi haksız yere suçlarlarsa, bu onların itibarlarını mahveder ve kamuoyunda kaosa neden olurdu. Seçim gününe giden uzun ve zorlu haftalar boyunca, robot doğasını ele verecek herhangi bir işaret için kampanyasını yakından izlemeye karar verdiler.",
       "Byerley popüler bir konuşmacıydı ve toplumsal değişim ile adalet hakkındaki konuşmalarını dinlemek için gittiği her yerde kalabalıklar toplanıyordu. Saatlerce süren toplantılardan sonra bile hiç yorgunluk veya bıkkınlık göstermeden, zarafet ve güvenle hareket ediyordu. Her soruyu mantık ve nezaketle yanıtlıyor, bu da insanların onu daha çok sevmesini sağlıyordu. Quinn, tek bir hata arayarak onu her yerde takip etti. Byerley'nin nasıl yürüdüğünü, nasıl konuştuğunu ve siyasi rakiplerinden gelen öfkeli hakaretlere nasıl tepki verdiğini izledi. Ancak Byerley kusursuz kaldı. Asla sinirlenmedi ve baskı altında her zaman sakinliğini korudu. Dr. Calvin onu gölgelerin arasından gözleri soğuk ve hesapçı bir şekilde izledi. Havada tuhaf bir gerilim hissetti. O, kırılmaz bir ruha sahip bir insan mıydı, yoksa kimsenin henüz anlayamadığı bir amaca hizmet etmek için inşa edilmiş soğuk ve duygusuz bir makine miydi?",
       "Kampanya ilerledi ve seçim günü hızla yaklaşırken Quinn giderek daha çaresiz hale geldi. Kalabalık bir şehir meydanında düzenlenen halka açık bir etkinlik sırasında Byerley ile doğrudan yüzleşmeye karar verdi. Kameralar kayıttayken adayın yanına yürüdü ve bir adamı Byerley'in yüzüne yumruk atması için zorladı. Bu, bir robotun bir insana zarar veremeyeceğini belirten Birinci Robotik Yasası'na dayanan klasik bir testti. Quinn, Byerley bir robot olsaydı, içgüdüsel olarak kendini savunacağını veya mekanik bir güçle karşılık vereceğini düşünüyordu. Ancak Byerley karşılık vermedi. Sadece orada durdu, darbeyi sessiz bir vakarla kabul etti ve intikam ya da şiddete dair hiçbir arzu göstermedi. Kalabalık şok içinde nefesini tuttu; sakin adayın, saldırganı yerel muhafızlar tarafından hızla uzaklaştırılıp karakola götürülürken hareketsiz duruşunu izledi.",
       "Dr. Susan Calvin tüm sahneyi meydanın kenarından gözlemledi, zihni karmaşık düşüncelerle doluydu. Byerley'in tepkisinin ya da tepkisizliğinin, ister insan ister makine olsun, mükemmel bir şekilde hesaplanmış olduğunu biliyordu. Bir insan öfkelenebilir ya da acı içinde bağırabilirdi ama Byerley tamamen sessiz ve kontrollü kaldı. Bu tepki onun robot olduğunu kanıtlamadığı gibi insan olduğunu da kanıtlamadı. Sadece inanılmaz bir öz disipline sahip olduğunu ispatladı. Quinn, planının adayı ifşa edememesinden dolayı öfkeliydi ancak Susan giderek artan bir merak duyuyordu. Eğer Byerley gerçekten bir robot olsaydı, her türlü insan testini kolaylıkla geçecek şekilde tasarlandığını anladı. Metal ile et arasındaki sınır tehlikeli bir şekilde inceliyordu ve gerçek, onun sakin, gülümseyen yüzünün arkasında gizli kalmaya devam ediyordu.",
@@ -11419,37 +11750,168 @@ export const STORIES_PART2: RawStory[] = [
       "Yemin töreni sona ererken Susan, yeni lideri sorumluluklarıyla baş başa bırakarak uzaklaştı. Byerley'in et ve kemikten mi yoksa çelik ve kablodan mı olduğunun bir önemi olmadığını fark etti. Önemli olan tek şey, eylemlerinin kalitesi ve insanlığa getirdiği huzurdu. Doğmamış olsa bile insanlığın yasalarına uymuştu. Gizlice hizmet eden robotlar çağı başlamıştı ve dünya artık daha güvenliydi. Byerley büyük salona doğru yürüdü, adımları sabit ve başı dikti. Mantık ve empatinin uyum içinde çalışabileceği bir geleceği temsil ediyordu. Susan, gezegenin emin ellerde olduğunu bilmenin verdiği bir rahatlama hissetti. Sırrı biliyordu ama aynı zamanda gerçeğin, mükemmel bir oyunculukla sonsuza dek saklı kalacağını da biliyordu."
     ],
     words: {
-      "candidate": "aday",
-      "psychologist": "psikolog",
-      "disguised": "kılık değiştirmiş",
-      "violation": "ihlal",
-      "reputation": "itibar",
-      "fatigue": "yorgunluk",
-      "dignity": "vakar, ağırbaşlılık",
-      "calculated": "hesaplanmış, planlı",
-      "discipline": "disiplin",
-      "sentiment": "duygu, kamuoyu eğilimi",
-      "sophisticated": "sofistike, gelişmiş",
-      "betray": "ele vermek",
-      "flawless": "kusursuz",
-      "skeptical": "şüpheci",
-      "mimic": "taklit etmek",
-      "scrutiny": "denetim",
-      "violate": "ihlal etmek",
-      "campaign": "seçim çalışması",
+      "absorb": "karşılamak",
       "accusation": "suçlama",
-      "disguise": "kılık değiştirme",
+      "act": "oyunculuk",
+      "actor": "oyuncu",
+      "advanced": "gelişmiş",
+      "angle": "açı",
+      "approach": "yaklaşmak",
+      "attacker": "saldırgan",
+      "barrier": "bariyer",
+      "betray": "ele vermek",
+      "blow": "darbe",
       "broadcast": "yayınlamak",
-      "simulate": "taklit etmek",
-      "investigation": "soruşturma",
-      "ruler": "yönetici",
-      "intelligence": "zeka",
-      "inauguration": "göreve başlama töreni",
+      "bully": "zorba",
+      "bypass": "atlatmak",
+      "calculated": "hesaplanmış",
+      "campaign": "seçim çalışması",
+      "candidate": "aday",
+      "celebration": "kutlama",
+      "ceremony": "tören",
+      "chaos": "kaos",
+      "checkup": "kontrol",
+      "cheer": "alkışlamak",
+      "complex": "karmaşık",
+      "concern": "endişe",
+      "confidence": "güven",
+      "conflict": "çelişmek",
+      "confront": "yüzleşmek",
+      "confusion": "kafa karışıklığı",
+      "confirm": "doğrulamak",
+      "consistent": "tutarlı",
+      "construct": "kurgulamak",
+      "convince": "ikna etmek",
+      "creation": "yaratım",
+      "dead end": "çıkmaz",
+      "debate": "tartışmak",
+      "deceive": "aldatmak",
+      "declare": "ilan etmek",
+      "defend": "savunmak",
+      "define": "tanımlamak",
+      "desperate": "çaresiz",
+      "detail": "ayrıntı",
+      "destroy": "yok etmek",
+      "dignity": "vakar",
+      "discipline": "disiplin",
+      "disguise": "kılık değiştirme",
+      "disguised": "kılık değiştirmiş",
+      "doubt": "şüphe",
+      "ease": "kolaylık",
+      "election": "seçim",
+      "empathy": "empati",
+      "era": "çağ",
+      "evidence": "delil",
+      "examination": "muayene",
+      "expert": "uzman",
+      "expose": "ifşa etmek",
+      "expression": "ifade",
+      "fatigue": "yorgunluk",
+      "firmly": "kesin bir dille",
+      "flawless": "kusursuz",
+      "flesh": "et",
+      "follow": "uymak",
+      "footage": "görüntüler",
+      "forbid": "yasaklamak",
+      "frustration": "bıkkınlık",
+      "furious": "öfkeli",
+      "gasp": "nefesi kesilmek",
+      "gesture": "jest",
+      "good": "yarar",
+      "grace": "zarafet",
+      "grand": "görkemli",
+      "guard": "muhafız",
+      "guide": "rehberlik etmek",
       "harmony": "uyum",
-      "empathy": "empati"
+      "identity": "kimlik",
+      "imitate": "taklit etmek",
+      "inauguration": "tören",
+      "instinctively": "içgüdüsel olarak",
+      "insult": "hakaret",
+      "intelligence": "zeka",
+      "intensity": "yoğunluk",
+      "interrupt": "sözünü kesmek",
+      "investigation": "soruşturma",
+      "journey": "yolculuk",
+      "judgment": "karar",
+      "justice": "adalet",
+      "kindness": "nezaket",
+      "lawyer": "avukat",
+      "lead": "ipucu",
+      "limitation": "sınırlama",
+      "logic": "mantık",
+      "masterful": "ustaca",
+      "matter": "önemli olmak",
+      "mimic": "taklit etmek",
+      "moral": "ahlaki",
+      "mount": "artmak",
+      "obey": "itaat etmek",
+      "patience": "sabır",
+      "peace": "huzur",
+      "philosophical": "felsefi",
+      "physical": "fiziksel",
+      "politician": "politikacı",
+      "possess": "sahip olmak",
+      "powerful": "güçlü",
+      "pressure": "baskı",
+      "privacy": "gizlilik",
+      "proof": "kanıt",
+      "psychologist": "psikolog",
+      "public speaking": "hitabet",
+      "punch": "yumruk atmak",
+      "quality": "kalite",
+      "quest": "arayış",
+      "record": "kayıt",
+      "refusal": "reddetme",
+      "regardless": "bakılmaksızın",
+      "relief": "rahatlama",
+      "represent": "temsil etmek",
+      "reputation": "itibar",
+      "responsibility": "sorumluluk",
+      "restrict": "kısıtlamak",
+      "result": "sonuç",
+      "revenge": "intikam",
+      "rival": "rakip",
+      "ruler": "yönetici",
+      "rumor": "söylenti",
+      "sadness": "hüzün",
+      "scrutiny": "denetim",
+      "sentiment": "kamuoyu eğilimi",
+      "settle": "çözmek",
+      "shocking": "şok edici",
+      "simulate": "taklit etmek",
+      "skillful": "yetenekli",
+      "skeptical": "şüpheci",
+      "sophisticated": "gelişmiş",
+      "spirit": "ruh",
+      "stare": "dik dik bakmak",
+      "steady": "sabit",
+      "steel": "çelik",
+      "stress": "stres",
+      "strict": "katı",
+      "strike": "vurmak",
+      "supporter": "destekçi",
+      "suspicion": "şüphe",
+      "temper": "öfke",
+      "tension": "gerilim",
+      "trap": "kapana kısmak",
+      "unaware": "habersiz",
+      "uneasy": "huzursuz",
+      "unexpectedly": "beklenmedik bir şekilde",
+      "upcoming": "yaklaşan",
+      "violate": "ihlal etmek",
+      "violation": "ihlal",
+      "violence": "şiddet",
+      "weakness": "zayıflık",
+      "whisper": "fısıldamak",
+      "winner": "galip",
+      "wipe": "silmek",
+      "wire": "kablo",
+      "worry": "endişe",
+      "warmth": "sıcaklık"
     }
   },
-              {
+                {
     id: 'scifi_clarke_star',
     title: "The Star",
     author: 'Arthur C. Clarke',
@@ -11458,7 +11920,7 @@ export const STORIES_PART2: RawStory[] = [
     en: [
       "I am a Jesuit priest and a scientist. I have traveled across the vast, dark ocean of space to the edge of the universe. My heart is heavy with sadness and fear, and my mind is full of confusion. I am sitting in my small cabin on our spaceship, looking at the stars that shine like cold diamonds in the night. We were sent here to explore the remains of a system that suffered a great tragedy long ago. The journey took many months of silence and reflection. Now that we have finally arrived at our destination, I find that my faith in God is shaking. I must write down the truth about what we have found here, even if it hurts my soul to remember it. The light of the dying star has shown us a reality that challenges everything I believed about the world.",
       "Our ship, the Magellan, moved slowly through the silent dust of space. The crew was tired but excited to finally see the remnants of the ancient explosion. We knew that a supernova had occurred here thousands of years ago. A massive star had ended its life in a brilliant, violent burst of energy, destroying everything in its immediate path. As we approached the center of the system, we saw the frozen, broken planets that once circled that sun. It was like visiting a cemetery in the middle of the stars. We were the first human beings to witness the destruction caused by that stellar fire. The silence of the void was absolute, and the cold metal of our ship felt like a small, fragile shell protecting us from the terrible, infinite darkness that surrounded us on every single side.",
-      "The data we collected was shocking. We studied the remains of a civilization that lived on a planet near the star. They were not human, but they were intelligent beings who had created a beautiful culture. They built monuments to their history, their art, and their deep love for the universe. We found a vault that survived the heat of the supernova. It contained the complete knowledge of their entire race. As I look through their records, I see that they were peaceful and wise. They saw the end coming long before it happened. They knew their world would become dust and ashes, yet they did not panic. They spent their final days recording everything they were so that they would not be forgotten. My scientific mind admires their courage, but my heart is crying because of the terrible, lonely fate they suffered.",
+      "The data we collected was shocking. We studied the remains of a civilization that lived on a planet near the star. They were not human, but they were intelligent beings who had created a beautiful culture. They built monuments to their history, their art, and their deep love for the universe. We found a vault that survived the heat of the supernova. It contained the complete knowledge of their entire race. As I look through their records, I see that they were peaceful and wise. They saw the end coming long before it happened. They knew their world would become dust and ashes, yet they did not panic. They spent their final days recording everything they were so that they would not be forgotten. My scientific mind admires their bravery, but my heart is crying because of the terrible, lonely fate they suffered.",
       "As our ship moved closer to the inner planets, the reality of the disaster became clearer. We navigated through thick clouds of glowing gas that were once part of a living world. Every sensor on the Magellan provided us with data about the final moments of this civilization. I looked at the images on my screen, feeling a deep sadness for those who died here. It was a tragedy beyond anything I had ever imagined in my studies back on Earth. They were advanced beings who had mastered the secrets of nature, yet they were powerless against the laws of the universe. The star had grown unstable and eventually exploded, burning their world into a cinder. I could see the ruins of their great cities, now nothing more than cold, lifeless stone floating through the dark, empty silence of space.",
       "We landed on the planet that once lived in the temperate zone of the star. It was a place of extreme cold now, with frozen oceans and shattered landscapes that stretched into the distance. My team searched the ruins with heavy hearts, hoping to find more than just the echoes of a lost people. We discovered a massive monument that had somehow survived the incredible heat of the explosion. It was built from a special, durable metal that stood tall against the desert winds of that broken world. Inside, there were thousands of containers holding the culture of an entire race. They had kept their art, their music, and their philosophy safe inside this vault. They wanted to leave a memory of themselves for anyone who might come after the fire, as if they knew we would eventually arrive to learn their story.",
       "Looking at these items, I felt a strange connection to these people. They were not human, but they loved beauty and understood the value of their brief lives. I held a small object that seemed to be a tool or maybe a simple toy for a child. It was made with great care, showing that they valued the small things as much as the big discoveries. I thought about the irony of their situation. The universe is full of such wonders, yet it is also a place where life can be destroyed in a single, violent moment. My faith feels like a fragile candle in a great storm, struggling to stay lit against the cold truths I have found. Why would a creator allow such a beautiful civilization to vanish in an instant of cosmic fire? This question now haunts my thoughts every night.",
@@ -11490,34 +11952,408 @@ export const STORIES_PART2: RawStory[] = [
       "Kaptanın koltuğuna oturdum ve uzayın sonsuz karanlığına dik dik baktım. Evren, dualarımızla veya anlam arayışımızla ilgilenmiyordu. Milyonların acısına ve kırılmış bir adamın şüphelerine karşı kayıtsızdı. Küçücük, titreyen ellerime baktım; böyle devasa, umursamaz bir boşluğun önünde ne kadar önemsiz hissettiğimi fark ettim. Bu trajediyi anlamlandıran ilahi bir plan veya bir işaret uğruna bütün bir gezegenin ölümünü haklı çıkaran bir merhamet yok. İnancım kayboldu, yerini sıcaklık sunmayan soğuk, keskin bir mantığa bıraktı. Manevi yolculuğumun sonuna geldim ve uçurumun kenarında tek başıma durduğumu, yıldızların bu geniş, karanlık denizinde gerçekten ve tamamen yalnız olduğumuzu nihayet anladım."
     ],
     words: {
+      "priest": "rahip",
+      "scientist": "bilim insanı",
+      "explore": "keşfetmek",
+      "remains": "kalıntılar",
+      "tragedy": "trajedi",
+      "destination": "hedef",
+      "faith": "inanç",
+      "reality": "gerçeklik",
+      "believed": "inanmak",
+      "crew": "mürettebat",
       "remnants": "kalıntılar",
       "supernova": "süpernova",
+      "massive": "devasa",
+      "violent": "şiddetli",
+      "destroyed": "yok etmek",
+      "cemetary": "mezarlık",
+      "witness": "tanıklık etmek",
+      "destruction": "yıkım",
+      "absolute": "mutlak",
       "fragile": "kırılgan",
-      "civilization": "medeniyet",
+      "infinite": "sonsuz",
+      "civilization": "uygarlık",
+      "intelligent": "zeki",
+      "culture": "kültür",
+      "monuments": "anıtlar",
       "vault": "mahzen",
-      "courage": "cesaret",
+      "survived": "hayatta kalmak",
+      "peaceful": "huzurlu",
+      "wise": "bilge",
+      "panic": "paniğe kapılmak",
+      "forgotten": "unutulmuş",
+      "bravery": "cesaret",
+      "crying": "ağlamak",
+      "lonely": "yalnız",
+      "fate": "kader",
       "disaster": "felaket",
+      "glowing": "parlak",
+      "sensors": "sensörler",
+      "sadness": "üzüntü",
+      "advanced": "gelişmiş",
+      "mastered": "ustalaşmak",
+      "powerless": "çaresiz",
+      "unstable": "kararsız",
+      "exploded": "patlamak",
+      "cinder": "kül",
       "ruins": "harabeler",
+      "lifeless": "cansız",
+      "temperate": "ılıman",
+      "extreme": "aşırı",
+      "shattered": "parçalanmış",
+      "landscapes": "manzaralar",
+      "heavy": "ağır",
+      "echoes": "yankılar",
+      "discovered": "keşfetmek",
       "monument": "anıt",
+      "incredible": "inanılmaz",
       "durable": "dayanıklı",
+      "containers": "kaplar",
+      "philosophy": "felsefe",
+      "memory": "anı",
+      "connection": "bağlantı",
+      "beauty": "güzellik",
+      "understood": "anlamak",
+      "value": "değer",
       "irony": "ironi",
-      "precision": "hassasiyet",
-      "dignity": "vakar",
-      "brilliance": "parlaklık",
-      "tremble": "titremek",
-      "implication": "sonuç, çıkarım",
-      "innocent": "masum",
-      "messenger": "elçi",
-      "contradiction": "çelişki",
-      "mercy": "merhamet",
+      "wonders": "mucizeler",
+      "moment": "an",
+      "storm": "fırtına",
+      "struggling": "mücadele etmek",
+      "truths": "gerçekler",
+      "creator": "yaratıcı",
+      "vanish": "yok olmak",
+      "instant": "an",
+      "cosmic": "kozmik",
+      "haunts": "rahatsız etmek, musallat olmak",
+      "gravity": "ağırlık",
+      "discovery": "keşif",
+      "spirit": "ruh",
+      "wreckage": "enkaz",
+      "thrived": "gelişmek",
+      "architecture": "mimari",
+      "mirror": "yansıtmak",
+      "movements": "hareketler",
+      "divine": "ilahi",
+      "plan": "plan",
+      "governed": "yönetmek",
+      "prayer": "dua",
+      "whispered": "fısıldamak",
+      "ghost": "hayalet",
+      "graveyard": "mezarlık",
       "evidence": "kanıt",
-      "indifferent": "kayıtsız",
+      "deepened": "derinleştirmek",
+      "mystery": "gizem",
+      "cruel": "zalim",
+      "cosmos": "kozmos",
+      "foundations": "temeller",
+      "hope": "umut",
+      "retrieved": "geri almak",
+      "brilliant": "parlak",
+      "technologically": "teknolojik olarak",
+      "artistically": "sanatsal olarak",
+      "mapped": "haritalamak",
+      "heavens": "gökler",
+      "precision": "hassasiyet",
+      "understanding": "anlamak",
+      "dance": "dans",
+      "planets": "gezegenler",
+      "invented": "icat etmek",
+      "telescope": "teleskop",
+      "created": "yaratmak",
+      "wisdom": "bilgelik",
+      "dangerous": "tehlikeli",
+      "trapped": "hapsolmak",
+      "limits": "sınırlar",
+      "solar system": "güneş sistemi",
+      "population": "nüfus",
+      "across": "boyunca",
+      "acceptance": "kabul",
+      "dignity": "vakar",
+      "faced": "yüzleşmek",
+      "certain": "emin",
+      "death": "ölüm",
+      "struggled": "mücadele etmek",
+      "reconcile": "bağdaştırmak",
+      "tragic": "trajik",
+      "compassionate": "şefkatli",
+      "surrounded": "çevrili",
+      "world": "dünya",
+      "echoed": "yankılanmak",
+      "laughter": "kahkaha",
+      "imagining": "hayal etmek",
+      "built": "inşa edilmiş",
+      "survive": "hayatta kalmak",
+      "final": "son",
+      "hours": "saat",
+      "defined": "tanımlamak",
+      "existence": "varlık",
+      "longing": "özlem",
+      "meaning": "anlam",
+      "prepare": "hazırlanmak",
+      "return": "geri dönmek",
+      "record": "kaydetmek",
+      "map": "harita",
+      "system": "sistem",
+      "explosion": "patlama",
+      "golden": "altın rengi",
+      "center": "merkez",
+      "dying": "ölmekte olan",
+      "spark": "kıvılcım",
+      "distance": "mesafe",
+      "wonder": "merak etmek",
+      "brilliance": "parlaklık",
+      "emptiness": "boşluk",
+      "data": "veri",
+      "screen": "ekran",
+      "trembling": "titreyen",
+      "clear": "net",
+      "showed": "göstermek",
+      "exact": "tam, kesin",
+      "date": "tarih",
+      "checked": "kontrol etmek",
+      "mathematics": "matematik",
+      "reached": "ulaşmak",
+      "appearing": "görünmek",
+      "light": "ışık",
+      "darkness": "karanlık",
+      "called": "çağırmak",
+      "bethlehem": "Beytüllahim",
+      "race": "yarışmak, hızlı gitmek",
+      "implications": "çıkarımlar, sonuçlar",
+      "sign": "işaret",
+      "love": "sevgi",
+      "miracle": "mucize",
+      "guide": "yönlendirmek",
+      "men": "adamlar",
+      "birth": "doğum",
+      "savior": "Kurtarıcı",
+      "facts": "gerçekler",
+      "science": "bilim",
+      "bright": "parlak",
+      "actually": "aslında",
+      "funeral": "cenaze",
+      "fire": "ateş",
+      "whole": "bütün, tam",
+      "died": "ölmek",
+      "situation": "durum",
+      "almost": "neredeyse",
+      "bear": "katlanmak",
+      "save": "kurtarmak",
+      "story": "hikaye",
+      "child": "çocuk",
+      "billion": "milyar",
+      "innocent": "masum",
+      "people": "halk",
+      "flash": "parlama, anlık görüntü",
+      "families": "aileler",
+      "living": "yaşamak",
+      "planet": "gezegen",
+      "playing": "oynamak",
+      "teaching": "öğretmek",
+      "children": "çocuklar",
+      "unaware": "habersiz",
+      "sun": "güneş",
+      "end": "son",
+      "evil": "kötü",
+      "simply": "sadece",
+      "wrong": "yanlış",
+      "place": "yer",
+      "time": "zaman",
+      "guided": "yönlendirilmiş",
+      "higher": "daha yüksek",
+      "power": "güç",
+      "choose": "seçmek",
+      "method": "yöntem",
+      "announce": "duyurmak",
+      "arrival": "varış",
+      "messenger": "haberci",
+      "peace": "barış",
+      "comfort": "rahatlık",
+      "stone": "taş",
+      "pulling": "çekmek",
+      "down": "aşağı",
+      "deep": "derin",
+      "ocean": "okyanus",
+      "doubt": "şüphe",
+      "confusion": "kafa karışıklığı",
+      "stood": "durmak",
+      "weight": "yük",
+      "silence": "sessizlik",
+      "around": "etrafında",
+      "ghosts": "hayaletler",
+      "cold": "soğuk",
+      "truth": "gerçek",
+      "left": "bırakmak",
+      "behind": "arkasında",
+      "tried": "denemek",
+      "pray": "dua etmek",
+      "words": "kelimeler",
+      "come": "gelmek",
+      "lips": "dudaklar",
+      "man": "adam",
+      "sacrifice": "feda etmek",
+      "beautiful": "güzel",
+      "create": "yaratmak",
+      "sky": "gökyüzü",
+      "contradiction": "çelişki",
+      "religious": "dini",
+      "training": "eğitim",
+      "scientific": "bilimsel",
+      "star": "yıldız",
+      "tearing": "yırtmak, parçalamak",
+      "apart": "ayrı",
+      "realized": "fark etmek",
+      "belief": "inanç",
+      "kind": "nazik",
+      "universe": "evren",
+      "dream": "rüya",
+      "god": "Tanrı",
+      "standing": "durmak",
+      "among": "arasında",
+      "ashes": "küller",
+      "lost": "kayıp",
+      "felt": "hissetmek",
+      "stranger": "yabancı",
+      "human": "insan",
+      "definitions": "tanımlar",
+      "mercy": "merhamet",
+      "looked": "bakmak",
+      "records": "kayıtlar",
+      "one": "bir",
+      "last": "son",
+      "turning": "dönmek",
+      "away": "uzaklaşmak",
+      "beyond": "ötesinde",
+      "thousands": "binlerce",
+      "years": "yıl",
+      "ago": "önce",
+      "peak": "zirve",
+      "wiped": "sİLİNMİŞ",
+      "single": "tek",
+      "heartbeat": "kalp atışı",
+      "violence": "şiddet",
+      "art": "sanat",
+      "music": "müzik",
+      "complex": "karmaşık",
+      "philosophies": "felsefeler",
+      "nothing": "hiçbir şey",
+      "dust": "toz",
+      "feet": "ayaklar",
+      "thought": "düşünce",
+      "sheer": "saf, tam",
+      "cruelty": "acımasızlık",
+      "message": "mesaj",
+      "silent": "sessiz",
+      "scream": "çığlık",
+      "echoing": "yankılanan",
+      "empty": "boş",
+      "halls": "salonlar",
+      "once": "bir zamanlar",
+      "steady": "sabit",
+      "life": "hayat",
+      "guiding": "yönlendirme",
+      "difficult": "zor",
+      "times": "zamanlar",
+      "faded": "solmak",
+      "shadow": "gölge",
+      "journey": "yolculuk",
+      "expected": "beklemek",
+      "break": "kırmak",
+      "heart": "kalp",
+      "destroy": "yok etmek",
+      "dear": "değerli",
+      "back": "geri",
+      "ship": "gemi",
+      "walking": "yürümek",
+      "dreams": "hayaller",
+      "stepped": "adım atmak",
+      "inside": "içinde",
+      "hum": "uğultu",
+      "engines": "motorlar",
+      "only": "tek",
+      "sound": "ses",
+      "greet": "karşılamak",
+      "mechanical": "mekanik",
+      "devoid": "yoksun",
+      "distant": "uzak",
+      "through": "içinden",
+      "thick": "kalın",
+      "window": "pencere",
+      "wondering": "merak etmek",
+      "anyone": "herhangi biri",
+      "else": "başka",
+      "ever": "hiçbir zaman",
+      "understand": "anlamak",
+      "terrible": "korkunç",
+      "secret": "sır",
+      "carried": "taşımak",
+      "burden": "yük",
+      "should": "meli, malı",
+      "alone": "yalnız",
+      "knew": "bilmek",
+      "findings": "bulgular",
+      "rest": "geri kalanı",
+      "spreading": "yaymak",
+      "misery": "sefalet",
+      "act": "eylem",
       "betrayal": "ihanet",
+      "tell": "anlatmak",
+      "history": "tarih",
+      "world's": "dünyanın",
+      "knowledge": "bilgi",
+      "worshiped": "tapmak",
+      "crushed": "ezmek",
+      "soul": "ruh",
+      "sat": "oturmak",
+      "captain's": "kaptanın",
+      "chair": "koltuk",
+      "staring": "dik dik bakmak",
+      "out": "dışarı",
+      "blackness": "karanlık",
+      "space": "uzay",
+      "care": "ilgi göstermek",
+      "prayers": "dualar",
+      "need": "ihtiyaç",
+      "indifferent": "kayıtsız",
+      "suffering": "acı çekme",
+      "millions": "milyonlar",
+      "doubts": "şüpheler",
+      "broken": "kırık",
+      "small": "küçük",
+      "hands": "eller",
+      "feeling": "hissetmek",
+      "insignificant": "önemsiz",
+      "against": "karşı",
+      "backdrop": "arka plan",
+      "uncaring": "umursamaz",
+      "void": "boşluk",
+      "makes": "yapmak",
+      "sense": "anlam",
+      "justifies": "haklı çıkarmak",
+      "entire": "bütün",
+      "sight": "işaret",
+      "gone": "gitmiş",
+      "replaced": "yer değiştirmek",
+      "sharp": "keskin",
+      "logic": "mantık",
+      "offers": "sunmak",
+      "warmth": "sıcaklık",
+      "spiritual": "manevi",
+      "find": "bulmak",
+      "edge": "kenar",
       "abyss": "uçurum",
-      "insignificant": "önemsiz"
+      "finally": "nihayet",
+      "truly": "gerçekten",
+      "completely": "tamamen",
+      "vast": "geniş",
+      "dark": "karanlık",
+      "sea": "deniz",
+      "stars": "yıldızlar"
     }
   },
-              {
+                {
     id: 'scifi_do_androids_dream',
     title: "Do Androids Dream of Electric Sheep?",
     author: 'Philip K. Dick',
@@ -11560,35 +12396,55 @@ export const STORIES_PART2: RawStory[] = [
     words: {
       "desolate": "ıssız",
       "scarcity": "kıtlık, azlık",
+      "inadequacy": "yetersizlik",
       "facade": "görünüş, dış görünüş",
+      "suppress": "bastırmak",
+      "plagued": "musallat olmak, rahatsız etmek",
       "synthetic": "yapay",
       "rogue": "başıbozuk, kontrolden çıkmış",
       "sophisticated": "gelişmiş, sofistike",
       "precinct": "polis merkezi",
-      "cortex": "beyin kabuğu",
+      "cerebral": "beyinsel",
       "fugitive": "kaçak",
       "predecessor": "selef",
-      "manipulation": "yönlendirme",
-      "scavenger": "çöpçü",
-      "calibrate": "ayarlamak",
-      "indistinguishable": "ayırt edilemez",
-      "deflection": "saptırma",
-      "scrutiny": "yakın inceleme",
-      "paradox": "çelişki",
-      "stabilize": "dengelemek",
+      "self-aware": "kendinin farkında",
+      "manipulation": "yönlendirme, manipülasyon",
+      "insufficiency": "yetersizlik",
+      "hesitation": "tereddüt",
+      "moral": "ahlaki",
       "decaying": "çürüyen, bozulan",
+      "toxic": "zehirli",
+      "calibrate": "kalibre etmek, ayarlamak",
+      "sterile": "steril, mikropsuz",
+      "dismissive": "küçümseyen, alaycı",
+      "unsettling": "rahatsız edici",
+      "implanted": "eklenmiş, implante edilmiş",
+      "violation": "ihlal, çiğneme",
+      "essence": "öz, cevher",
+      "hollow": "boş, içi kof",
       "fragile": "kırılgan, hassas",
+      "philosophical": "felsefi",
+      "crisis": "kriz",
+      "residence": "ikametgah, konut",
+      "grace": "zarafet",
       "sincere": "samimi, içten",
+      "transcend": "aşmak, üstesinden gelmek",
+      "ethical": "etik, ahlaki",
       "inherent": "doğal, özünde var olan",
+      "dignity": "onur, haysiyet",
       "betrayal": "ihanet",
       "threshold": "eşik",
-      "artifice": "yapaylık",
+      "barren": "verimsiz, çorak",
+      "terminated": "sonlandırılmış, yok edilmiş",
+      "engagement": "çatışma, nişan",
+      "artifice": "yapaylık, hile",
       "contemplation": "derin düşünce",
       "remorse": "pişmanlık",
-      "extinguish": "söndürmek"
+      "extinguish": "söndürmek",
+      "consciousness": "bilinç"
     }
   },
-              {
+                {
     id: 'scifi_minority_report',
     title: "The Minority Report",
     author: 'Philip K. Dick',
@@ -11620,7 +12476,7 @@ export const STORIES_PART2: RawStory[] = [
       "Trene bindiğinde, yolcuların yüzlerini inceledi ve haberlerden herhangi birinin onu tanıyıp tanımadığını merak etti. Çoğu insan, kendi makinesi tarafından yazılmış bir kadere karşı hayatı için savaşan köşedeki adamdan habersiz, kişisel cihazlarına gömülmüştü. Kaderin soğuk dokunuşunun üzerinde gezindiğini, Precog'ların vizyonlarının bıraktığı karanlık bir gölgeyi hissetti. İroni çok derindi; tüm kariyerini hiçbir vatandaşın işlenmemiş bir suçun sonuçlarına katlanmamasını sağlamaya adamıştı, ancak şimdi aynı mekanizma tarafından mahkum edilmişti. Gözlerini kapattı ve bir sonraki hedefine odaklanmaya çalıştı: bulunması zor olan Azınlık Raporu'nu bulmak. Başarısız olursa, değer verdiği sistem nihai görevini yerine getirecek ve bir zamanlar gururu olarak adlandırdığı mükemmel, acımasız makinenin son kurbanı olacaktı.",
       "John güvenli tesise ulaştı, nabzı şakaklarında çılgın bir davul gibi atıyordu. Devasa sanayi bölgesinin gölgeleri arasından geçerek otomatik devriye dronlarının parlak ışıklarından kaçındı. Gecenin sessizliği ara sıra makinelerin uzaktan gelen uğultusuyla bozuluyor, bu da onu takip eden soğuk ve mekanik mantığın acı bir hatırlatıcısı oluyordu. Eğer sunucu odasına sızabilirse, tahmin edilen suçunun ardındaki gerçeği ortaya çıkarabileceğini biliyordu. Rozetinin ağırlığı her zamankinden daha fazlaydı, birkaç saat içinde yok olan bir hayatın artık işe yaramaz bir simgesiydi. Güvenlik terminallerinin yanından sinsice geçti, kendi yarattığı eserin kendi yıkımının mimarı olduğu gerçeğiyle kalbi ağırlaştı. İleri attığı her adım, onu ya adını temize çıkaracak ya da kaderini bu acımasız dijital hapishanede sonsuza dek mühürleyecek bir vahye yaklaştırıyordu.",
       "Arşivin içinde hava serindi ve hafif bir ozon ile soğutma sıvısı kokusu vardı. Parlayan veri bankaları sıraları, üç Precog'un karmaşık ve parçalı vizyonlarını barındırarak karanlığa doğru uzanıyordu. John merkezi arayüze yaklaştı, gizli kayıtları geri almak için diziyi başlatırken elleri hafifçe titriyordu. Çaresizce ihtiyaç duyduğu anomaliyi arayarak sonsuz olasılık akışlarının içinde gezindi. Azınlık Raporu bir efsane değildi; o, sistemin mutlak kesinliği içinde bir şüphe pırıltısı, makinenin içindeki bir hayaletti. Eğer bir Precog farklı bir sonuç görmüş olsaydı, bu çelişki çoğunluğun kararını geçersiz kılacaktı. Metin satırlarının yoğun bir odaklanmayla akışını izledi, gözleri titreyen yapay ışıklar altında yanıyordu. Kendi alanında bir davetsiz misafir gibi hissediyordu; devletin var olmasını imkansız gördüğü bir gerçeği arayan bir adamdı.",
-      "Aniden, koridorda yetkisiz erişiminin tespit edildiğini bildiren keskin bir alarm yankılandı. Dosyaların suçsuzluğunu kanıtlayacak kanıtları içerdiğine dua ederek verileri telaşla indirirken zaman etrafında daralıyordu. Yetkililerin her an konumuna ulaşacağını bilerek bu noktaya gelmek için her şeyi riske atmıştı. Ekran titredi ve nefesini kesen bir vizyonu gözler önüne serdi; bu onun suçunun bir doğrulaması değil, üst düzey yetkililerin dahil olduğu karmaşık bir dizi siyasi manevraydı. Durum beklediğinden çok daha tehlikeliydi ve Precrime bölümünün yüzeyinden daha derin bir komploya işaret ediyordu. Yakındaki metal zeminde ağır ayak sesleri duyulurken, sürücüyü güvene almak için çabaladı ve geceye kaçmaya hazırlandı. Adalet mücadelesi, içeriden çürüyen bir sisteme karşı hayatta kalma savaşına dönüşmüştü.",
+      "Aniden, koridorda yetkisiz erişiminin tespit edildiğini bildiren keskin bir alarm yankılandı. Dosyaların masumiyetini kanıtlayacak delilleri içerdiğine dua ederek verileri telaşla indirirken zaman etrafında daralıyordu. Yetkililerin her an konumuna ulaşacağını bilerek bu noktaya gelmek için her şeyi riske atmıştı. Ekran titredi ve nefesini kesen bir vizyonu gözler önüne serdi; bu onun suçunun bir doğrulaması değil, üst düzey yetkililerin dahil olduğu karmaşık bir dizi siyasi manevraydı. Durum beklediğinden çok daha tehlikeliydi ve Precrime bölümünün yüzeyinden daha derin bir komploya işaret ediyordu. Yakındaki metal zeminde ağır ayak sesleri duyulurken, sürücüyü güvene almak için çabaladı ve geceye kaçmaya hazırlandı. Adalet mücadelesi, içeriden çürüyen bir sisteme karşı hayatta kalma savaşına dönüşmüştü.",
       "Güvenlik alarmları soğuk gece havasında inlerken John binadan kaçtı, her umutsuz nefeste ciğerleri yanıyordu. Değerli veri sürücüsünü göğsüne bastırdı ve keskin kenarların cildine gerçekliğin sessiz bir vaadi gibi saplandığını hissetti. Otoritelerin onu durdurmak için bir zamanlar tasarlanmasına yardım ettiği Precog sistemini kullanarak her kaynağı seferber edeceğini biliyordu. Şehirdeki her gölge artık bir düşman gibi geliyor, uzaktaki her motor sesi sinirlerini geriyordu. Karanlık bir ara sokağa park edilmiş aracına ulaşmayı başardı; büyük korkusuna rağmen hareketleri hızlı ve pratikti. Motoru çalıştırdığında, komplonun sadece idari bir hata değil, onu departmandaki güçlü konumundan uzaklaştırmak için tasarlanmış hesaplı bir siyasi silah olduğunu fark etti.",
       "Şehir otoyollarının labirentinde sürerken, John tesisten kıl payı kurtardığı verileri inceledi. Dijital dosyalar şaşırtıcı bir sırrı açığa çıkardı: Precog'ların çoğunluk raporu, suç önleme kılıfı altında siyasi rakipleri ortadan kaldırmak için üst düzey yetkililer tarafından manipüle edilmişti. Bu yozlaşmış makinenin tek kurbanı o değildi; sistem, mevcut hükümet yapısının istikrarını tehdit eden herkesi susturmak için kullanılıyordu. Bu gerçek, fiziksel bir darbe gücüyle onu çarptı ve dünyasını altüst etti. Hayatını önleyici adalet kavramına adamıştı, ancak işinin temelinin ihanet ve sistemsel istismar üzerine kurulu olduğunu keşfetti. Sonsuza dek susturulmadan önce gerçeği ifşa etmek için umutsuzca bir sonraki hedefine giderken acı bir ironi hissetti.",
       "Unutulmuş bir sanayi bölgesinin aşırı büyümüş harabeleri arasına gizlenmiş gözlerden uzak bir güvenli eve vardı. Çevre, parçalanmış kanıtları bir araya getirebileceği ve bir sonraki hamlesini planlayabileceği geçici bir sığınak sağlıyordu. Devletin en üst kademelerine uzanan komplonun karmaşık detaylarını incelerken loş ışığın altında oturduğu sırada hissettiği izolasyon derindi. Kendi departman başkanını yüzleştirmenin şimdiye kadar üstlendiği en tehlikeli görev olacağını fark etti. Azınlık Raporu sadece bir yazılım parçası değil, katı ve önceden belirlenmiş sonuçlarla yönetilen bir dünyada umudun simgesiydi. Bulgularının sonuçlarıyla yüzleşmeye hazır bir şekilde silahını son kez kontrol etti. Av artık sadece onun hayatta kalmasıyla ilgili değildi; insan seçimi doğasını soğuk ve kayıtsız bir teknolojik efendiden geri almakla ilgiliydi.",
@@ -11633,35 +12489,35 @@ export const STORIES_PART2: RawStory[] = [
       "mutated": "mutasyona uğramış",
       "sterile": "steril",
       "motive": "güdü",
-      "fugitive": "kanun kaçağı",
+      "fugitive": "kaçak",
       "invention": "icat",
       "guardian": "koruyucu",
       "manhunt": "insan avı",
-      "anonymous": "anonim, tanınmayan",
+      "anonymous": "anonim",
       "salvation": "kurtuluş",
       "divergent": "farklılaşan",
-      "elusive": "bulunması zor, zor yakalanan",
+      "elusive": "bulunması zor",
       "infiltrate": "sızmak",
-      "revelation": "vahiy, beklenmedik gerçek",
-      "anomaly": "anomali, aykırılık",
+      "revelation": "vahiy",
+      "anomaly": "anomali",
       "invalidate": "geçersiz kılmak",
-      "unauthorized": "yetkisiz, izinsiz",
+      "unauthorized": "yetkisiz",
       "conspiracy": "komplo",
-      "siren": "alarm/ikaz düdüğü",
-      "intercept": "önünü kesmek/durdurmak",
+      "siren": "alarm",
+      "intercept": "önünü kesmek",
       "labyrinth": "labirent",
-      "manipulate": "yönlendirmek/kötüye kullanmak",
+      "manipulate": "manipüle etmek",
       "sanctuary": "sığınak",
-      "echelon": "kademe/basamak",
-      "divergence": "ayrılık, farklılaşma",
+      "echelon": "kademe",
+      "divergence": "ayrılık",
       "indifference": "kayıtsızlık",
-      "impending": "yaklaşan, eli kulağında",
-      "deception": "aldatmaca, kandırmaca",
-      "liberation": "kurtuluş, özgürleşme",
-      "deterministic": "belirlenimci, kaderci"
+      "impending": "yaklaşan",
+      "deception": "aldatmaca",
+      "liberation": "kurtuluş",
+      "deterministic": "belirlenimci"
     }
   },
-              {
+                {
     id: 'scifi_total_recall',
     title: "We Can Remember It for You Wholesale",
     author: 'Philip K. Dick',
@@ -11692,41 +12548,40 @@ export const STORIES_PART2: RawStory[] = [
       "Hiçbir açıklama yapmadan, personel Quail'i binadan dışarı attı; zihni sorularla dönüp duruyordu. Derhal ayrılmasını ve Rekal, Incorporated'a bir daha asla dönmemesini söylediler. Kalabalık Chicago sokağına çıktığında, şehir ona farklı göründü; sanki bir zamanlar bildiği ama artık tanıyamadığı bir tiyatro sahnesi gibiydi. Kalabalıktaki her yüz şüpheli görünüyor, gökdelenlerin gölgeleri ise gizlenen tehditler gibi hissettiriyordu. Göğsünde derin, boş bir sızı hissetti; kimliğinin, hatırlamaması gereken bir şeyi koruyan kırılgan bir kabuk olduğunun farkına vardı. Mars tatili arzusu, bastırılmış geçmişinin sadece bir belirtisi, tamamen gizlilik içinde yaşadığı bir hayattan sızan bir bilgiydi. Sessiz, düzenli evliliği ve şehirdeki sıkıcı yaşamı için bunun ne anlama geleceğinden dehşete düşmüştü.",
       "Evinin sıradan gerçekliğinde huzur bulmayı umarak eve vardı ancak eşi Kirsten'i soğuk bir ifadeyle beklerken buldu. Bir şeylerin değiştiğini biliyor gibiydi; gözleri, keskin ve analitik bir kesinlikle her hareketini takip ediyordu. Quail konuşmaya çalıştı ama kelimeler ağzında ağır ve sahteymiş gibi hissettiriyordu, sanki dili başka biri tarafından yönetiliyormuş gibi. Günün psikolojik baskısı dayanılmaz bir hale geldi ve duvarların üzerine üzerine geldiğini hissetti. Değer verdiği yaşamın, onu sessiz ve uyumlu tutmak için tasarlanmış bir yalan olduğunu fark etti. Bilincinin derinliklerinde bir yerlerde gizli ajan uyanıyordu ve Douglas Quail adındaki basit adam yavaşça silinip gidiyordu. Oturma odasının ortasında, artık gömülü kalmayı reddeden bir geçmişin mahkumu olarak duruyordu.",
       "Aniden, Douglas Quail'in kendi kafasının içinden tuhaf ve soğuk bir ses yükseldi, ancak bu onun sesi değildi. Sanki anılarının derinliklerine gömülmüş gizli bir sığınaktan çalınan bir kayıt gibiydi. Ses ona oturmasını ve sessiz kalmasını emrediyor, hayatının büyük bir tehlike altında olduğu konusunda onu uyarıyordu. Quail, vücudunun kendi isteği dışında hareket ettiğini hissetti; kasları profesyonel bir kavgaya hazırlanıyormuş gibi gerilmişti. Bir memur olarak sürdürdüğü sıradan hayatının, hatırlayamadığı acımasız bir geçmiş için sadece bir kılıf olduğunu dehşet içinde fark etti. Bu kavrayış başını döndürdü. Oturma odasının ortasında duran ve artık bir yabancı gibi görünen Kirsten'a baktı. Evinin huzuru, yıllarını gölgelerde operasyon yaparak geçirmiş bir ajanın keskin, metalik soğukluğuyla yer değiştirerek paramparça olmuştu.",
-      "Kirsten onu korku ve çok daha tehlikeli bir şeyin karışımıyla izliyordu. Konuşmaya başladı ama sesi artık endişeli bir eşin sesi değildi. Normal bir ev kadınının asla soramayacağı sorular sormaya başladı. Mars'taki görevden ve Quail'in zihninin derinliklerine gömdüğü suikastın özel detaylarından bahsediyordu. Quail imkansız gerçeği anladığında kalbinin hızla çarptığını hissetti. Kirsten sadece hayat arkadaşı değil, anılarının sonsuza dek kilitli kalmasını sağlamak için evine yerleştirilmiş bir gözlemci, bir denetçisiydi. Bu farkındalık midesine yenen fiziksel bir darbe gibiydi. Kendi elleriyle ördüğü bir kafese hapsolmuştu ve gerçek Douglas Quail'in geri döndüğüne dair herhangi bir işaret arayan insanlarla çevriliydi.",
+      "Kirsten onu korku ve çok daha tehlikeli bir şeyin karışımıyla izliyordu. Konuşmaya başladı ama sesi artık endişeli bir eşin sesi değildi. Normal bir ev kadınının asla soramayacağı sorular sormaya başladı. Mars'taki görevden ve Quail'in zihninin derinliklerine gömdüğü suikastın özel detaylarından bahsediyordu. Quail imkansız gerçeği anladığında kalbinin hızla çarptığını hissetti. Kirsten sadece hayat arkadaşı değil, anılarının sonsuza dek kilitli kalmasını sağlamak için evine yerleştirilmiş bir gözetim ajanı, bir denetçiydi. Bu farkındalık midesine yenen fiziksel bir darbe gibiydi. Kendi elleriyle ördüğü bir kafese hapsolmuştu ve gerçek Douglas Quail'in geri döndüğüne dair herhangi bir işaret arayan insanlarla çevriliydi.",
       "Ondan uzaklaştı, elleri titrerken durumun gerçekliğini kavramaya çalışıyordu. Sahip olduğu her anı artık şüphe altındaydı. Gerçekten on yıldır ofiste mi çalışmıştı, yoksa bunlar sadece şiddet eğilimlerini bastırmak için yapılmış implantlar mıydı? Pencereye baktı, şehrin neon ışıklarının camdan yapay yıldızlar gibi yansıdığını gördü. Gerçek kimliğinin ağırlığı her saniye artıyor, evliliğinin ve günlük rutinlerinin yumuşak, rahatlatıcı anılarını kenara itiyordu. Hükümetin sadece geçmişini silmediğini, seçkin bir operasyon görevlisini zararsız, orta sınıf bir işçiye dönüştürmek için ruhunu yeniden yazdığını fark etti. İçindeki öfke yükseliyordu; yıllardır hissetmediği, dikkatle inşa ettiği kırılgan huzuru yok etmeye hazır, güçlü ve kadim bir güçtü.",
-      "Douglas Quail, gezegenler arası polis kuvvetleri mütevazı evini sardığında olduğu yerde çakılı kaldı. Artık banliyö mahallesinden basit bir memur olmadığını, hükümetin devre dışı bıraktığı, yüksek eğitimli bir silah olduğunu anlamıştı. Ajanlar oraya sıradan bir suçluyu tutuklamak için değil, kendi gizli arşivlerinden gelen tehlikeli bir hayaleti susturmak için gelmişti. İçeri girdiklerinde, silahlarının soğuk metalik parıltısı, sıradan hayatının dikkatle inşa edilmiş bir hapishane olduğunu fark etmesini sağladı. Bedeni içgüdüsel olarak tepki veriyor, kendi zihnini bile şaşırtan bir zarafet ve hızla hareket ediyordu. Ağır bir meşe masanın arkasına sindi; parmakları, kendi cebinde saklı, hatırlayamadığı bir geçmişten kalan emaneti buldu. Odadaki sessizlik boğucuydu, sadece tereddüt etmeden infaz etmek için eğitilmiş adamların düzenli ve ritmik nefes alışverişleriyle bozuluyordu.",
-      "Baş ajan, gözlerinde herhangi bir insani sıcaklıktan eser olmadan öne doğru adım attı. Quail'e bir insan olarak değil, büyük bir sorumluluğa dönüşmüş bir varlık olarak baktı. Quail, onların hafıza implantı şirketinin başlattığı işi bitirmek için burada olduklarını anladı. Mars'taki görev bir kurgu değildi; sinir sistemine musallat olmuş, kimliğini geri almak için doğru anı bekleyen bir hayaletti. Ajanlar ateş etmeye hazırlandıklarında, Quail üzerine garip bir sakinliğin çöktüğünü hissetti. Memur siliniyor, yerini kalması amaçlanan ölümcül operasyon görevlisine bırakıyordu. Şimdi savaşmazsa, bilincinin kalan parçalarının sonsuza dek yok olacağını biliyordu. Gerçek, yıllarca yaşadığı rahat yalanlardan çok daha korkunç olsa bile, kendi tarihini geri kazanmak zorundaydı.",
+      "Douglas Quail, gezegenler arası polis kuvvetleri mütevazı evini sardığında olduğu yerde çakılı kaldı. Artık banliyö mahallesinden basit bir memur olmadığını, hükümetin devre dışı bıraktığı, yüksek eğitimli bir silah olduğunu anlamıştı. Ajanlar oraya sıradan bir suçluyu tutuklamak için değil, kendi gizli arşivlerinden gelen tehlikeli bir hayaleti susturmak için gelmişti. İçeri girdiklerinde, silahlarının soğuk metalik parıltısı, sıradan hayatının dikkatle inşa edilmiş bir hapishane olduğunu fark etmesini sağladı. Bedeni içgüdüsel olarak tepki veriyor, kendi zihnini bile şaşırtan bir zarafet ve hızla hareket ediyordu. Ağır bir meşe masanın arkasına sindi; parmakları, kendi cebinde saklı, hatırlayamadığı bir geçmişten kalan bir yadigarı buldu. Odadaki sessizlik boğucuydu, sadece tereddüt etmeden infaz etmek için eğitilmiş adamların düzenli ve ritmik nefes alışverişleriyle bozuluyordu.",
+      "Baş ajan, gözlerinde en ufak bir insani sıcaklık olmadan öne doğru adım attı. Quail'e bir insan olarak değil, ciddi bir yüke dönüşmüş bir unsur olarak baktı. Quail, onların hafıza implantı şirketinin başlattığı işi bitirmek için burada olduklarını anladı. Mars'taki görev bir kurgu değildi; sinir sistemine musallat olmuş, kimliğini geri almak için doğru anı bekleyen bir hayaletti. Ajanlar ateş etmeye hazırlandıklarında, Quail üzerine garip bir sakinliğin çöktüğünü hissetti. Memur siliniyor, yerini kalması amaçlanan ölümcül operasyon görevlisine bırakıyordu. Şimdi savaşmazsa, bilincinin kalan parçalarının sonsuza dek yok olacağını biliyordu. Gerçek, yıllarca yaşadığı rahat yalanlardan çok daha korkunç olsa bile, kendi tarihini geri kazanmak zorundaydı.",
       "Gelen kurşun yağmuruna karşı mobilyaları kalkan olarak kullanarak arka kapıya doğru atıldı. Her hareket hassas ve ölümcüldü; yabancı dünyaların ve siyasi komploların gölgesinde geçen bir hayatın yankısıydı. Varlığının gerçeği yeniden değişti; o, geçmişinden kaçan bir adam değil, nihayet uzun ve yapay bir uykudan uyanan bir adamdı. Hükümet, gerçeği sahte anı katmanlarının altına gömmeye çalışmıştı ama zihninin orijinal yapısı bastırılamayacak kadar güçlüydü. Arka sokağa ulaştığında, soğuk gece havası yüzüne fiziksel bir uyanış gibi çarptı. Evden çıkmıştı, tuzaktan kurtulmuştu ama av yeni başlamıştı. Tüm şehir bir savaş alanı gibi hissettiriyordu ve karanlık geçmişinin tüm boyutlarını anlayana dek asla huzur bulamayacağını biliyordu.",
       "Quail, kendisini bir kez daha Rekal Incorporated'ın steril, klinik makinelerinin önünde dururken buldu. Geçmişine dair anıları bir rüya değil, yetkililerin artık görmezden gelemeyeceği hesaplanmış, ölümcül bir gerçeklikti. Saklı kimliklerin ağırlığıyla titreyen sesiyle gerçeği talep etti. Teknisyenler dehşete düşmüştü; karşılarında duran kişinin basit bir memur değil, tüm operasyonlarını çökertmeye muktedir uykuda bir suikastçı olduğunu fark ettiklerinde yüzleri bembeyaz kesilmişti. Yerleştirdikleri yapay anılar eski bir parşömen gibi ufalanıyor, banliyö yaşamının yumuşak yüzeyinin altında çelikten bir çekirdek ortaya çıkıyordu. Çalışanları zihninin içine bakmaya, onu yıllardır kendi hayal gücünün mahkumu olarak tutan aldatmaca katmanlarını geri çekmeye zorladı.",
       "Teknisyenler sinir yollarına eriştiklerinde, varlığının gerçekliği yabancı manzaralar ve soğukkanlı görevlerle dolu bir fırtına gibi patladı. Gerçek, tahmin ettiğinden çok daha derindi; o sadece Mars'ı ziyaret etmemiş, yıldızlararası hükümetin en yüksek kademeleri için gizli bir ajan olarak görev yapmıştı. Mütevazı, yasalara saygılı bir vatandaş olarak geçirdiği tüm hayatı, onu sessiz ve uyumlu tutmak için tasarlanmış bir sosyal mühendislik şaheseriydi. Bu farkındalık onu boşlukta hissettirdi ama aynı zamanda garip bir şekilde güçlendirdi. Teknisyenlere soğuk, mesafeli gözlerle baktı ve önceki varlığının üretilmiş prangalarından nihayet kurtulduğunu anladı. Bir zamanlar bildiği dünya bir illüzyon, bürokratik yalanların ince iplikleriyle bir arada tutulan ve nihayet gözlerinin önünde çözülen kırılgan bir yapıydı.",
-      "Hikaye bir patlamayla değil, kendi gerçek doğasına sessiz ve nihai bir teslimiyetle sona erdi. Quail, sahte bir gerçekliğin karmaşasıyla artık yüklenmemiş bir şekilde neon ışıklı sokaklara çıktı. Amacının sıradan bir hayat yaşamak değil, devletin nihai silahı olarak, iktidar koridorlarına musallat olan bir hayalet olarak var olmak olduğunu anladı. Yukarıdaki gökyüzü artık farklı hissettiriyordu; geniş ve onun içsel mücadelesine karşı kayıtsız. Karanlığın içine yürüdü, sonsuza dek kanında saklı kalmış olan tehlikeli gerçeği kabul etmeye hazırdı. Yolculuğu artık hafıza veya kimlik hakkında değil, kendi varlığının soğuk ve sert gerçekleri hakkındaydı. O, Douglas Quail, mükemmel operasyonel ajandı ve unutulmuş ruhunun derinliklerine yaptığı uzun süredir beklenen tatili nihayet sona ermişti."
+      "Hikaye gürültülü bir patlamayla değil, kendi gerçek doğasına sessiz ve nihai bir teslimiyetle sona erdi. Quail, sahte bir gerçekliğin karmaşasından artık kurtulmuş bir şekilde neon ışıklı sokaklara çıktı. Amacının sıradan bir hayat yaşamak değil, devletin nihai silahı olarak, iktidar koridorlarında dolaşan bir hayalet olarak var olmak olduğunu anladı. Yukarıdaki gökyüzü artık farklı hissettiriyordu; geniş ve onun içsel mücadelesine karşı kayıtsız. Karanlığın içine yürüdü, sonsuza dek kanında saklı kalmış olan tehlikeli gerçeği kabul etmeye hazırdı. Yolculuğu artık hafıza veya kimlik hakkında değil, kendi varlığının soğuk ve sert gerçekleri hakkındaydı. O, Douglas Quail, kusursuz bir ajandı ve unutulmuş ruhunun derinliklerine yaptığı uzun süredir beklenen tatili nihayet sona ermişti."
     ],
     words: {
-      "persistent": "ısrarcı, sürekli",
-      "mundane": "sıradan",
+      "persistent": "sürekli, inatçı",
+      "mundane": "sıradan, günlük",
       "obsession": "saplantı",
-      "implanted": "yerleştirilmiş",
+      "implant": "yerleştirmek",
       "subconscious": "bilinçaltı",
-      "operative": "operasyonel ajan",
-      "dormant": "uykuda",
-      "frantic": "panik dolu, telaşlı",
+      "operative": "ajan, görevli",
+      "dormant": "uykuda, hareketsiz",
+      "frantic": "telaşlı, hummalı",
       "fragile": "kırılgan",
       "symptom": "belirti, semptom",
-      "compliant": "uyumlu, itaatkar",
+      "compliant": "uyumlu, boyun eğen",
       "suppress": "bastırmak, gizlemek",
       "surveillance": "gözetim, izleme",
-      "paralyzed": "felç olmuş",
-      "deactivated": "devre dışı bırakılmış",
-      "liability": "sorumluluk/yük",
+      "paralyze": "felç etmek, hareketsiz bırakmak",
+      "deactivate": "devre dışı bırakmak",
+      "liability": "yük, risk unsuru",
       "lethal": "ölümcül",
-      "suppressed": "bastırılmış",
-      "conspiracies": "komplolar",
-      "sterile": "steril",
-      "deception": "aldatmaca",
-      "shackles": "prangalar"
+      "conspiracy": "komplo",
+      "sterile": "steril, aşırı temiz",
+      "deception": "aldatmaca, hile",
+      "shackle": "pranga, kelepçe"
     }
   },
-              {
+                {
     id: 'scifi_time_patrol',
     title: "Time Patrol",
     author: 'Poul Anderson',
@@ -11750,51 +12605,49 @@ export const STORIES_PART2: RawStory[] = [
       "As the final debriefing session ended, Everard walked toward the garden overlooking the artificial horizon of the station, finding solace in the artificial stars that twinkled above. He thought about the man he had defeated and the fragile nature of reality, wondering if he would eventually reach the same point of disillusionment. Being a guardian of time required more than just physical skill; it demanded a hardened heart capable of making impossible choices for the sake of humanity. He looked out into the distance, his eyes finding peace in the knowledge that he had remained true to his oath despite the heavy moral cost. The mission was officially closed, yet he knew another task would soon emerge from the endless tide of history. With a deep breath, Everard turned away from the window and walked back into the light of his era, ready for whatever duty the future would hold."
     ],
     tr: [
-      "Manse Everard, sessiz ve loş bir ofiste oturuyordu; zihni insanlık tarihinin geniş koridorlarında dolaşıyordu. O sadece bir memur değil, zamanın akışını korumakla görevli, Zaman Devriyesi'nin bir üyesiydi. Penceresinin dışında yirminci yüzyıl dünyası sağlam ve kalıcı görünüyordu, ama o gerçeği biliyordu. Tarihin, dikkatsiz eller tarafından yırtılabilecek kırılgan bir kumaş olduğunu anlıyordu. Mevcut görevi, medeniyetin temelini sarsmakla tehdit eden bir dizi alışılmadık zamansal bozulmayı araştırmaktı. Monitörünün değişen ışığına bakarken, omuzlarında ağır bir sorumluluk hissetti. Günümüzün tanıdık konforunu geride bırakıp, geçmişin gölgelerinin, bakmaya cesareti olanlar tarafından keşfedilmeyi bekleyen tehlikeli gerçekleri sakladığı zamanın bilinmeyen derinliklerine adım atmaya hazırlandı.",
+      "Manse Everard, sessiz ve loş bir ofiste oturuyordu; zihni insanlık tarihinin geniş koridorlarında dolaşıyordu. O yalnızca bir görevli değildi; varoluşun hassas akışını sürdürmekle görevlendirilmiş bir zaman çizgisi muhafızı, Zaman Devriyesi'nin bir üyesiydi. Penceresinin dışında yirminci yüzyıl dünyası sağlam ve kalıcı görünüyordu, ancak o gerçeği biliyordu. Tarihin, dikkatsiz eller tarafından yırtılabilecek kırılgan bir kumaş olduğunu anlıyordu. Mevcut görevi, medeniyetin temelini sarsmakla tehdit eden bir dizi sıra dışı zamansal bozulmayı araştırmaktı. Monitörünün değişen ışığına bakarken, omuzlarında ağır bir sorumluluk hissetti. Günümüzün tanıdık konforunu geride bırakıp, geçmişin gölgelerinin, bakacak kadar cesur olanlar tarafından keşfedilmeyi bekleyen tehlikeli gerçekleri barındırdığı zamanın bilinmeyen derinliklerine adım atmaya hazırlandı.",
       "Makineye adımını attı, soğuk metal çerçeve kemiklerinin derinliklerinde titreyen ritmik ve nabız gibi atan bir enerjiyle uğulduyordu. Elinin hızlı bir hareketiyle zaman kadranlarını ayarladı ve rotasını antik Mezopotamya olarak belirledi. Kabinin içindeki hava ağırlaştı ve gerçeklik etrafında bükülüp esnemeye başladığında hafif bir ozon tadı bıraktı. Modern şehrin gri çizgilerden oluşan bir bulanıklığa dönüştüğünü, yerini insan açıklamasına meydan okuyan dönen bir renk girdabına bıraktığını gördü. Bu, zaman akıntılarında seyahat etmenin hissiydi; mutlak zihinsel odaklanma ve cesaret gerektiren bir yolculuktu. Yüzyılların kış rüzgarındaki kuru yapraklar gibi dökülmesini izledi, sanayinin hareketli gürültüsünden, kendi doğumundan çok önceki çağlarda antik tozların altına gömülmüş bir medeniyetin sessiz, altın yankılarına geçişi hissetti.",
       "Varış ani ve sarsıcıydı; araç unutulmuş bir çağın yumuşak ve tozlu toprağına yerleştiğinde kısa bir an başı döndü. Dışarı çıktı ve tarihin bir zamanlar kil tabletlere yazıldığı Sümer çölünün kuru sıcağını içine çekti. Etrafı, insanlığın beşiğinde gelişen bir kültürün görüntüleri ve sesleriyle canlıydı. Şehrin dar sokaklarında yürürken, yaşayanlara musallat olan bir hayalet gibi hissetti. Görevi, zaman akışının bütünlüğünü tehdit eden bozguncuyu ararken müdahale etmeden gözlem yaparak gizli kalmaktı. En küçük bir hareketin bile bir dalgalanma etkisi yaratabileceğini ve geleceği tahmin etmesi imkansız şekillerde değiştirebileceğini biliyordu. Uzun zaman önce ölmüş bir geçmişin canlı nabzıyla çevrili olan Manse Everard, sadece gerçek bir Zaman Devriyesi üyesinin anlayabileceği o tanıdık tehlike heyecanını hissetti.",
-      "Everard, modern ekipmanlarını yerel bir tüccarın basit keten kıyafetleri altına gizleyerek şehrin güneşle yıkanan dar sokaklarında dikkatlice ilerledi. İnsanları dikkatle gözlemledi, pazar yerindeki etkileşimlerini merak ve temkin karışımı bir duyguyla izledi. Görevi, yasadışı bir zamansal müdahalenin işaretlerini, yani olayların beklenen akışındaki küçük bir değişikliği tespit etmekti; bu bir kaçak ajanın varlığını gösterecekti. Hava; pişmiş çamur, tütsü ve yakındaki zanaatkarların sattığı bakır aletlerin keskin, metalik kokusuyla doluydu. Geçtiği her yüz, bir müttefik ya da antik çağın gölgelerinde gizlenen sessiz bir tehdit olabilirdi. Devriye'nin katı bir kuralı olduğunu biliyordu: acıyı önleme arzusu ne kadar büyük olursa olsun, geçmişi asla değiştirmemek. Sert ve acımasız Mezopotamya güneşinin altında mızrakları parlayan bir asker grubu yanından geçerken nefesini tuttu.",
-      "Gece antik şehrin üzerine çöktüğünde hava sıcaklığı aniden düştü ve çölün uzak sesleri daha belirgin hale gelmeye başladı. Everard, dinlenmek ve düşük, neredeyse algılanamayan bir sesle uğuldayan el tipi sensörünü kalibre etmek için şehir duvarına yakın sakin bir yer buldu. Aniden cihaz titredi ve en kötü şüphelerini doğrulayan bir zamansal radyasyon sıçraması gösterdi. Birileri, bu ilkel çağda yeri olmayan gelişmiş teknolojiler kullanarak tarihle oynuyordu. İçini, çöl gecesinden değil, tehlikenin ne kadar yakın olduğunu fark etmenin verdiği soğuk bir ürperti kapladı. Düşmanla karşılaşması durumunda kullanıma hazır olduğundan emin olmak için sıradan bir aksesuar gibi görünen yan silahını kontrol etti. Bu müdahalenin neden olacağı zincirleme etkinin düzeltilemez veya kontrol edilemez hale gelmeden önce hızlı hareket etmesi gerektiğini, aksi takdirde tüm insanlığın geleceğinin tehlikeye gireceğini anladı.",
+      "Everard, modern ekipmanlarını yerel bir tüccarın basit keten kıyafetleri altına gizleyerek şehrin güneşle yıkanan dar sokaklarında dikkatlice ilerledi. İnsanları dikkatle gözlemledi, pazar yerindeki etkileşimlerini merak ve temkin karışımı bir duyguyla izledi. Görevi, yasadışı bir zamansal müdahalenin işaretlerini, yani olayların beklenen akışındaki küçük bir değişikliği tespit etmekti; bu, kaçak bir ajanın varlığına işaret edecekti. Hava; pişmiş çamur, tütsü ve yakındaki zanaatkarların sattığı bakır aletlerin keskin, metalik kokusuyla doluydu. Geçtiği her yüz, potansiyel bir müttefik ya da antik çağın gölgelerinde gizlenen sessiz bir tehdit olabilirdi. Devriye'nin katı bir kuralı olduğunu biliyordu: acıları önleme arzusu ne kadar ağır basarsa bassın, geçmişi asla değiştirmemek. Sert ve acımasız Mezopotamya güneşinin altında mızrakları parlayan bir grup asker yanından geçerken nefesini tuttu.",
+      "Gece antik şehrin üzerine çöktüğünde sıcaklık hızla düştü ve çölün uzak sesleri giderek yükselmeye başladı. Everard, dinlenmek ve düşük, neredeyse algılanamayan bir sesle uğuldayan el tipi sensörünü kalibre etmek için şehir duvarına yakın sakin bir yer buldu. Birden cihaz titredi ve en kötü şüphelerini doğrulayan bir zamansal radyasyon sıçraması gösterdi. Birileri, bu ilkel çağda yeri olmayan gelişmiş teknolojiler kullanarak gerçekten de tarihle oynuyordu. İçini, çöl gecesinden değil, tehlikenin aslında ne kadar yakın olduğunu fark etmenin verdiği soğuk bir ürperti kapladı. Düşmanla karşılaşması durumunda kullanıma hazır olduğundan emin olmak için sıradan bir aksesuar gibi gizlenmiş yan silahını kontrol etti. Bu müdahalenin dalgalanma etkisi düzeltilmesi veya sınırlandırılması imkansız hale gelmeden ve tüm insanlığın geleceğini tehdit etmeden önce hızlı hareket etmesi gerektiğini fark etti.",
       "Radyasyonu takip ederek izi, evlerin azaldığı ve karanlığın derinleştiği şehrin dış mahallelerine kadar sürdü. Yıllarca süren yoğun akademi eğitiminin getirdiği keskin duyularıyla engebeli arazide kararlı adımlarla ilerledi. Uzakta, Sümer'in altın çağında yeri olmayan soluk mavi bir ışığın titreştiğini gördü. Bu, varoluşun dokusunda acilen kapatılması gereken bir yara olan zamansal bir ihlalin açık bir işaretiydi. Kaçınılmaz yüzleşmeyi beklerken kalbi göğsünde hızla çarparak kaynağa doğru ilerledi. Vücudundaki her kas gerginleşmişti ve bu tür hassas görevlerin genellikle beraberinde getirdiği ani şiddete karşı hazırlıklıydı. Bu gece başarısız olursa, zamanın hassas dengesinin sonsuza dek çökebileceğini ve kendisini kimsenin hatırlamayacağı ölmekte olan bir gerçekliğin son tanığı olarak bırakacağını biliyordu.",
       "Everard, vücudunu soğuk ve kuru toprağa yakın tutarak titreyen mavi ışığa doğru yaklaştı. Işığın kaynağı, şehrin dış mahallelerindeki antik kerpiç duvarların arasında son derece yabancı duran metal panellerden inşa edilmiş gizli bir sığınaktı. İçeride, karmaşık bir konsolun üzerine eğilmiş, parmaklarını uzak geleceği anımsatan bir verimlilikle parlayan tuşlar üzerinde gezdiren bir adam gördü. Bu kişi, kişisel kazanç veya belki de çarpık bir ideoloji uğruna zaman çizelgesini koruma yönündeki kutsal yeminini terk etmiş bir kaçak devriye ajanıydı. Everard, şüphelinin o anda yüklemekte olduğu yasaklı değişikliği tamamlamasını engellemek için hazırlık yaparken, ellerini sabit tutarak derin bir nefes aldı. Çöl gecesinin sessizliği, sadece yasadışı makinelerin hafif ve ritmik vızıltısı ile bozuluyordu; bu mekanik kalp atışı, onu çevreleyen sessiz antik çağla keskin bir tezat oluşturuyordu.",
       "Hiç uyarı olmaksızın, ajan aniden döndü ve kafasını Everard'ın saklandığı karanlığa çevirdi. Kaçağın, tam olarak bu tür sürprizleri önlemek için gelişmiş hareket dedektörleri yerleştirdiği açıktı. Keskin bir alarm sakin havayı delerek çalmaya başladı ve adam masanın üzerindeki küçük ama yıkıcı lazer tabancasını bir anda kaptı. Everard öne atıldı ve ağırlığını geçici kapıya verdi; tam o anda odaklanmış bir enerji ışını kulağının yanındaki taşı yaktı. Isı muazzamdı, ozon ve yanan mineraller kokuyordu. Henüz ateş açmadı, çünkü haini sorgulamak için canlı yakalamayı umuyordu, ancak düşman teslim olmaya hiç niyeti olmadığını gösterince sabrı hızla tükeniyordu. İkisi, sadece değişen geçmişin sonsuz nehirlerini katetmiş olanlara öğretilen kesin ve pratik bir akıcılıkla hareket ederek, taktiksel manevralardan oluşan acımasız bir dansın içine hapsoldular.",
       "Kavga, küçük ve dar alan içinde ani hareketler ve umutsuz hamlelerden oluşan bir karmaşaya dönüştü. Everard, rakibiyle arasındaki mesafeyi kapatırken engeller yaratmak için ağır ekipmanları devirerek çevreyi kendi lehine kullandı. Amacı, karşı tarafın ahlaki kısıtlamalardan açıkça yoksun olduğu bir durumda, dönemin yapısal bütünlüğüne daha fazla zarar vermeden tehdidi etkisiz hale getirmekti. Hain soğuk ve boş bir kahkaha attı, kısa süre sonra kendi eliyle yeniden yazılacak olan bir gelecek hakkında tehditler savurdu. Everard o an bunun basit bir hırsızlık ya da küçük bir hata olmadığını, doğrudan Devriye'nin temellerini hedef alan bir sabotaj eylemi olduğunu anladı. Tüm odağını nihai ve kararlı bir vuruşa yöneltti; çünkü adamı şimdi durduramazsa, tüm insan ırkı için yaşanacak sonuçların tamamen felaket olacağını çok iyi biliyordu.",
       "Mücadele, Everard'ın haini yere serip lazer tabancasını titreyen elinden zorla almasıyla aniden şiddetli bir zirveye ulaştı. İki adam metalik konsollara çarptığında kıvılcımlar havaya saçıldı ve karanlık sığınağı parlak, elektriksel flaşlarla aydınlattı. Hain ajan, tarihi müdahale konusundaki büyük planının hızla çöktüğünü fark edince, gözleri umutsuz ve çılgın bir yoğunlukla parlayarak hırladı. Everard onu yere sabitledi, sert metal çerçevenin kendi omuzlarına battığını hissetti. Yanıp sönen ekranları göz hapsinde tutarken adamın ellerini arkadan kelepçelemek için büyük bir ustalıkla hareket etti. Hain dirense bile, Everard zaferin yanında derin bir üzüntü hissetti. Bu adamın bir zamanlar kendi meslektaşı olduğunu, tarihin uçsuz bucaksız ve karmaşık olasılıkları içinde yolunu kaybetmiş bir zaman koruyucusu olduğunu biliyordu.",
       "Ani tehlike bertaraf edildikten sonra Everard ayağa kalktı, derme çatma üssün içini tararken derin nefesler aldı. Konsol, zaman çizelgesindeki hassas değişimleri temsil eden karmaşık veri desenlerini göstererek uğuldamaya devam ediyordu. Aşırı dikkatli olması gerektiğini biliyordu; tek bir hatalı dokunuş, yüzyıllarca süren gelişimi silebilecek veya medeniyetleri daha yeşerme şansı bulamadan yok edebilecek geri döndürülemez bir değişimi tetikleyebilirdi. Makineyi kapatmak için yorucu sürece başladı, parmakları hasarı gidermek için kararlı bir hassasiyetle çalışıyordu. Etkisiz hale getirdiği her dizi, evrenin kendisine söylenmiş bir yalanı silmek gibi geliyordu. Odanın içindeki hava, ozon ve yanık metal kokusuyla ağırlaşmıştı; bu, hainin serbest bırakmaya çalıştığı kaosu sürekli hatırlatıyordu. Sessizce çalıştı ve zihnini tamamen korumaya yemin ettiği o kırılgan dengeyi yeniden kurmaya odakladı.",
-      "Sonunda makineler ritmik uğultularını durdurdu ve küçük odayı derin, ağır bir sessizlik kapladı. Everard geri çekildi ve işini gözden geçirerek zaman çizelgesinin tekrar olması gereken rotaya oturduğunu doğruladı. Bilinçsiz mahkuma baktı ve Patrol karargahındaki amirlerine sinyal göndermeye hazırlanarak ekipmanını düzeltti. Çöl gecesi şimdi daha soğuk görünüyordu ve antik Babil şehri, az önce atlattığı tehlikeden habersizce öylece duruyordu. Kısa bir an kaderin doğasını ve tüm bu müdahalelerin insan varlığını korumanın gerçekten en iyi yolu olup olmadığını düşündü, ancak bu karmaşık felsefi şüpheleri hızla bir kenara itti. Görevi açıktı ve bunu onurla yerine getirmişti. Devriye cihazının mavi ışığı parlamaya başladığında, buradaki görevinin bittiğini ve kendi çağına dönme vaktinin geldiğini biliyordu.",
-      "Zaman akıntıları içindeki yolculuk, Everard Devriye merkezinin uçsuz bucaksız, sessiz salonlarına döndüğünde yoğun ve görünmez bir suyun içinden geçiyormuş gibi hissettirdi. Antik Babil'in tozlu sıcağından kendi çağının steril, parıldayan ortamına geçiş, yorgun duyuları için her zaman sarsıcı bir deneyimdi. Tesisin yüksek yapılarının yanından yavaşça yürürken, uzun görevin ağırlığını ruhunun üzerinde baskın bir şekilde hissetti. Devriye ajanları sessiz bir verimlilikle etrafında hareket ediyor, yüzlerindeki profesyonel kayıtsızlık maskesi insanlık tarihini korumanın getirdiği muazzam yükü gizliyordu. Everard, gelişmiş teknolojinin hafif uğultusunun organizasyonun her yüzyılı uyanık bir şekilde gözlediğini işaret ettiği merkezi komuta güvertesine ulaştı. Ekipmanını kontrol etti; hareketleri mekanikti ve son savaşının bıraktığı adrenalin hala üzerindeydi. Başardığını biliyordu ancak sessiz koridorlar artık karmaşık yaşamına dair yalnız bir anıt gibi hissettiriyordu.",
-      "Gözlem portalının yakınında bekleyen üst düzey subaylara yaklaştı; ifadeleri, holografik ekranlarda akan verileri incelerken okunaksız ve sakindi. Kıdemli komutanlardan biri sessizce başını salladı; bu jest, çölde önlenen krizin ciddiyeti hakkında çok şey anlatan bir işaretti. Everard raporunu, eski meslektaşının ihanetini ve yakalanışını hiçbir gereksiz duyguya yer vermeden, açık ve öz kelimelerle sundu. Verilerin kendi anlattıklarını doğrulayışını ve karmaşık zaman çizgilerinin insanlığın gelişimindeki doğru düzene geri dönmesini izledi. Yaptığı şey için büyük bir kutlama yoktu, çünkü Devriye gölgelerde faaliyet gösteriyordu ve zaferleri sadece birkaç kişi tarafından biliniyordu. Ödülünün şöhret veya takdir değil, dünyanın yok olmanın eşiğinden ne kadar döndüğünü bilmeden sessizce devam etmesi olduğunu bir kez daha fark etti.",
+      "Sonunda makineler ritmik uğultularını durdurdu ve küçük odayı derin, ağır bir sessizlik kapladı. Everard geri çekildi ve işini gözden geçirerek zaman çizelgesinin tekrar olması gereken rotaya oturduğunu doğruladı. Bilinçsiz mahkuma baktı ve Devriye karargahındaki amirlerine sinyal göndermeye hazırlanarak ekipmanını düzeltti. Çöl gecesi şimdi daha soğuk görünüyordu ve antik Babil şehri, az önce atlattığı tehlikeden habersizce öylece duruyordu. Kısa bir an kaderin doğasını ve tüm bu müdahalelerin insan varlığını korumanın gerçekten en iyi yolu olup olmadığını düşündü, ancak bu karmaşık felsefi şüpheleri hızla bir kenara itti. Görevi açıktı ve bunu onurla yerine getirmişti. Devriye cihazının mavi ışığı parlamaya başladığında, buradaki görevinin bittiğini ve kendi çağına dönme vaktinin geldiğini biliyordu.",
+      "Zaman akıntıları içindeki yolculuk, Everard Devriye karargahının uçsuz bucaksız, sessiz salonlarına döndüğünde yoğun ve görünmez bir suyun içinden geçiyormuş gibi hissettirdi. Antik Babil'in tozlu sıcağından kendi çağının steril, parıldayan ortamına geçiş, yorgun duyuları için her zaman sarsıcı bir deneyimdi. Tesisin yüksek yapılarının yanından yavaşça yürürken, uzun görevin ağırlığını ruhunun üzerinde baskın bir şekilde hissetti. Devriye ajanları sessiz bir verimlilikle etrafında hareket ediyor, yüzlerindeki profesyonel kayıtsızlık maskesi insanlık tarihini korumanın getirdiği muazzam yükü gizliyordu. Everard, gelişmiş teknolojinin hafif uğultusunun organizasyonun her yüzyılı uyanık bir şekilde gözlediğini işaret ettiği merkezi komuta güvertesine ulaştı. Ekipmanını kontrol etti; hareketleri mekanikti ve son savaşının bıraktığı adrenalin hala üzerindeydi. Başardığını biliyordu ancak sessiz koridorlar artık karmaşık yaşamına dair yalnız bir anıt gibi hissettiriyordu.",
+      "Gözlem portalının yakınında bekleyen üst düzey subaylara yaklaştı; ifadeleri, holografik ekranlarda akan verileri incelerken belirsiz ve sakindi. Kıdemli komutanlardan biri sessizce başını salladı; bu jest, çölde önlenen krizin ciddiyeti hakkında çok şey anlatan bir işaretti. Everard raporunu, eski meslektaşının ihanetini ve nihai olarak yakalanışını hiçbir gereksiz duyguya yer vermeden, net ve öz kelimelerle sundu. Verilerin kendi anlattıklarını doğrulayışını ve karmaşık zaman çizgilerinin insanlığın gelişimindeki doğru şablonlara oturarak dengelenmesini izledi. Yaptığı şey için büyük bir kutlama yoktu, çünkü Devriye gölgelerde faaliyet gösteriyordu ve zaferleri sadece birkaç kişi tarafından biliniyordu. Ödülünün şöhret veya takdir değil, tamamen yıkıma ne kadar yaklaştığından habersiz olan bir dünyanın varlığını sessizce sürdürmesi olduğunu bir kez daha fark etti.",
       "Son bilgilendirme oturumu bittiğinde, Everard istasyonun yapay ufkuna bakan bahçeye doğru yürüdü ve yukarıda parıldayan yapay yıldızlarda teselli buldu. Yendiği adamı ve gerçekliğin kırılgan doğasını düşündü, kendisinin de sonunda aynı hayal kırıklığı noktasına gelip gelmeyeceğini merak etti. Zaman koruyucusu olmak sadece fiziksel beceriden fazlasını gerektiriyordu; insanlık uğruna imkansız seçimler yapabilecek sertleşmiş bir kalp istiyordu. Uzaklara baktı, gözleri ağır ahlaki bedele rağmen yeminine sadık kaldığını bilmenin huzurunu buldu. Görev resmen sona ermişti ama tarihin sonsuz gelgitinden kısa süre sonra yeni bir işin doğacağını biliyordu. Derin bir nefesle Everard pencereden uzaklaştı ve geleceğin kendisine getireceği her türlü göreve hazır bir şekilde, çağının ışığına geri döndü."
     ],
     words: {
       "temporal": "zamansal",
       "fragile": "kırılgan",
       "vortex": "girdap",
-      "antiquity": "ilk çağ, antik dönem",
-      "jarring": "sarsıcı, rahatsız edici",
-      "integrity": "bütünlük, dürüstlük",
+      "antiquity": "antik çağ",
+      "jarring": "sarsıcı",
+      "integrity": "bütünlük",
       "intervention": "müdahale",
-      "calibrate": "ayarlamak",
+      "calibrate": "kalibre etmek",
       "radiation": "radyasyon",
       "breach": "ihlal",
       "inevitable": "kaçınılmaz",
-      "console": "kontrol paneli",
-      "rogue": "hain / kurallara uymayan",
+      "console": "konsol",
+      "rogue": "kaçak",
       "oath": "yemin",
-      "alteration": "değişiklik, değişim",
+      "alteration": "değişiklik",
       "neutralize": "etkisiz hale getirmek",
-      "catastrophic": "felaket niteliğinde",
-      "climax": "doruk noktası",
-      "intricate": "karmaşık / detaylı",
-      "anchored": "demir atmış / sabitlenmiş",
+      "catastrophic": "yıkıcı",
+      "climax": "zirve",
+      "intricate": "karmaşık",
       "sterile": "steril",
-      "vigilantly": "dikkatle",
       "treachery": "ihanet",
       "oblivious": "habersiz",
       "disillusionment": "hayal kırıklığı"
     }
   },
-              {
+                {
     id: 'scifi_day_of_triffids',
     title: "The Day of the Triffids",
     author: 'John Wyndham',
@@ -11823,14 +12676,14 @@ export const STORIES_PART2: RawStory[] = [
       "Uzaklarda, triffidlerin hışırdayan sesini duyabiliyordum. Normalde çitlerin arkasında veya kontrollü ortamlarda tutulan bu bitkiler, şimdi insan efendilerinin savunmasızlığını hissediyorlardı. Ölümcül zehirli iğneleriyle, çaresiz olanlara saldırmaya hazır bir şekilde yavaş ve ritmik bir salınımla hareket ediyorlardı. Güç dengesinin sonsuza dek değiştiğini anladım. Bir zamanlar yağ kaynağı ve bilimsel bir merak olarak hizmet eden bu bitkiler artık avcıydı ve biz sadece potansiyel besindik. Hayatta kalmanın, tetikte olma ve avlanmayı öğrenen bu yaratıklardan kaçınma yeteneğime bağlı olduğunu fark ettim. Boş sokaklarda, bitkilerin uzun ve sallanan gölgelerinden kaçınarak yürürken güneş ışığı tenimde soğuk hissettiriyordu. Bildiğim her şey tek bir gecede yok olmuştu ve bu yeni, sessiz vahşi doğada hayatta kalmak için o uzun, zorlu yolculuk daha yeni başlamıştı.",
       "Sokaklarda, gözlerim kaldırım boyunca dizilen triffidlerin karanlık ve çarpık şekillerine takılarak temkinle ilerledim. Şehir, kör insanların birbirine çarptığı ve dehşet dolu sorularla dolu bir koro halinde seslerini yükselttikleri bir kafa karışıklığı labirentiydi. Ailelerini, ilaçlarını veya hayatlarından zalimce çalınan ışığı soruyorlardı. Bir bankta oturan ve parmak boğumları beyazlaşana kadar bastonunu sıkan bir adamın yanından geçtim. Yaklaştığımı duymadı ve konuştuğumda şaşkınlıkla sıçradı. Sadece birkaç telaşlı kelime alışverişinde bulunduk, ancak çaresizliği kesindi. Bir anda devasa, işlevsiz bir tımarhaneye dönüşen dünyada bir hayatta kalan olduğum belirginleşti. Hareketli şehrin çaresiz, kör bir paniğe indirgenmiş hali, daha önce hayal ettiğim tüm kabuslardan daha ürkütücüydü.",
       "Açlık midemi kemirmeye başladı ve bana hayatın temel gereksinimlerinin yakında dünyadaki en değerli para birimi haline geleceğini hatırlattı. Küçük bir dükkana girdim; rafların büyük ölçüde dokunulmamış olduğunu ancak atmosferin yoğun bir çürüme kokusuyla dolu olduğunu gördüm. Birkaç konserve ve sağlam bir ceket aldım, artık davranışları yönetecek yasaların olmadığı bir dünyada hırsız gibi hissediyordum. Dışarıda, bir kadın kaldırımın kenarında duruyor, yüzü gözyaşlarıyla kaplı bir şekilde boşluğa bir isim haykırıyordu. Bir çocuğun elini tutuyordu ancak küçük kız, aynı süt beyazı, görmeyen gözlerle boşluğa bakıyordu. Bu, başkentin her köşesinde tekrarlanan bir aile trajedisi sahnesiydi. İçimi soğuk bir korku kapladı; toplumun sosyal dokusu kimsenin kavrayamayacağı kadar hızlı çözülüyordu ve bizi yaklaşan kaosa karşı tamamen yapayalnız bırakıyordu.",
-      "Şehrin dışına doğru yolculuğuma devam ederken, şehrin sesleri insan çığlıklarından çarpışan araçların mekanik gürültüsüne ve uzak yangınlara dönüştü. Görme yetisinin yokluğunun bir yıkım zincirleme reaksiyonu yarattığını anladım. Sürücüler yollarını göremedikleri için arabalar çarpışmış, yollar bükülmüş metalden oluşan karışık mezarlıklara dönüşmüştü. Kırık camların ve atılmış eşyaların üzerinden atlayarak, görme yetimin bana yüklediği sorumluluğun ağırlığını hissettim. Ben sadece hayatta kalan biri değildim; bir çağın yok oluşuna tanıklık ediyordum. Triffidler daha aktif görünüyor, klik sesleri sanki telaşlı çöküşümüzü gözlemliyorlarmış gibi tuğla binalarda yankılanıyordu. Gecenin çöken karanlığı kapıma daha büyük tehlikeler getirmeden önce, çöküşün merkezinden uzak, güvenli bir yer bulmalıydım.",
-      "Sonunda, keskin bir zekaya ve benimkiyle eşleşen bir dayanma iradesine sahip olan Josella Playton ile karşılaştım. Gökyüzündeki o ışık gösterisini izlemesini engelleyen bir durumda olduğu için ilk körlük dalgasından kıl payı kurtulmuştu. Birlikte, hızla kaybolan umutların mezarına dönüşen Londra'nın ürkütücü sessizliği içinde yürüdük. Geçtiğimiz her ara sokak, yardım çığlıkları atan insanlarla doluydu; sesleri, dünyalarının neden bu kadar aniden karardığını anlamaya çalışırken çiğ ve çaresizdi. Amaçsızca dolaşan ve şimdi sessiz, ölümcül nöbetçiler gibi dikilen triffidlerle çarpışan körlerin düzensiz hareketlerinden kaçınarak, kasıtlı bir özenle ilerledik. Bağlantımızın sadece bir kolaylık meselesi olmadığı açıktı; bu, düzenin tamamen çöküşüne karşı bir hayatta kalma stratejisiydi.",
+      "Şehrin dışına doğru yolculuğuma devam ederken, şehrin sesleri insan çığlıklarından çarpışan araçların mekanik gürültüsüne ve uzak yangınlara dönüştü. Görme yetisinin yokluğunun bir yıkım zincirleme reaksiyonu yarattığını anladım. Sürücüler yollarını göremedikleri için arabalar çarpışmış, yollar bükülmüş metalden oluşan karışık mezarlıklara dönüşmüştü. Kırık camların ve atılmış eşyaların üzerinden atlayarak, görme yetimin bana yüklediği sorumluluğun ağırlığını hissettim. Ben sadece hayatta kalan biri değildim; bir çağın yok oluşuna tanıklık ediyordum. Triffidler daha aktif görünüyor, klik sesleri sanki telaşlı çöküşümüzü gözlemliyorlarmış gibi tuğla binalarda yankılanıyordu. Gecenin yavaş yavaş çöken karanlığı kapıma daha büyük tehlikeler getirmeden önce, çöküşün merkezinden uzak, güvenli bir yer bulmalıydım.",
+      "Sonunda, keskin bir zekaya ve benimkiyle eşleşen bir dayanma iradesine sahip olan Josella Playton ile karşılaştım. Gökyüzündeki o ışık gösterisini izlemesini engelleyen bir durumda olduğu için ilk körlük dalgasından kıl payı kurtulmuştu. Birlikte, hızla çürüyerek kayıp umutların mezarına dönüşen Londra'nın ürkütücü sessizliği içinde yürüdük. Geçtiğimiz her ara sokak, yardım çığlıkları atan insanlarla doluydu; sesleri, dünyalarının neden bu kadar aniden karardığını anlamaya çalışırken çiğ ve çaresizdi. Amaçsızca dolaşan ve şimdi sessiz, ölümcül nöbetçiler gibi dikilen triffidlerle çarpışan körlerin düzensiz hareketlerinden kaçınarak, kasıtlı bir özenle ilerledik. Bağlantısının sadece bir kolaylık meselesi olmadığı açıktı; bu, düzenin tamamen çöküşüne karşı bir hayatta kalma stratejisiydi.",
       "Sokaklar, sadece panik içindeki kalabalıklar yüzünden değil, aynı zamanda triffidlerin kendisi yüzünden de giderek daha tehlikeli hale geliyordu. Bir zamanlar değerli yağları için çiftliklerde ve bahçelerde tutulan bu yaratıklar, artık sarmaşıklarla kaplı kentsel alanlarda uğursuz ve ritmik bir amaçla hareket ediyorlardı. Ölümcül bir hassasiyetle çarpabilen uzun, zehirli kamçılarını gölgelerde arayarak aşırı dikkatli kalmamız gerekiyordu. Josella ve ben, durumumuzun kasvetli gerçekliğini tartıştık ve görme yetimizin bizi hedef haline getiren nadir bir lütuf olduğunu kabul ettik. Kör insanlar bize tutunuyor, yön veya yiyecek için yalvarıyorlardı, bu da kalplerimize ağır bir yük bindiren ahlaki bir ikilem yaratıyordu. Herkesi kurtaramazdık ve bu soğuk gerçeği kabul etmek belki de yolculuğumuzun en zor yanıydı. Bu yeni dünyada hayatta kalmak, ikimizin de daha önce sahip olmadığı veya hayal etmediği bir acımasızlık düzeyi gerektiriyordu.",
       "Sonunda, sağlam duvarlarının dışarıda süren kaostan geçici bir sığınak sağlayacağını umarak büyük ve dayanıklı bir binaya sığındık. Gece çökerken, karanlık triffidlerin ritmik tıkırtılarıyla zonkluyor gibiydi, bu ses kırılganlığımızı vurguluyordu. Bulabildiğimiz her türlü malzemeyi topladık, ağır kapıları kilitledik ve belirsiz bir yarın için plan yapmaya çalıştık. Dışarıdaki şehir, yangınların parıltısı ve gecenin sessizliğini yaran ara sıra gelen çığlıklarla tanımlanan kaotik, uğultulu bir boşluk olarak kalmaya devam etti. Tek bir mumun loş ışığında otururken, tek bir göz kırpışında buharlaşıp giden insanlığın engin tarihi üzerine düşündük. Hayatın devam ettiği bir dünyada, geride kalan ve artık terörle ve doğanın dinmek bilmez açlığıyla tanımlanan bir manzarada yön bulmaya çalışan az sayıdaki gözlemciden biri olduğumuzu fark etmek oldukça sarsıcıydı.",
       "Kırılgan huzurumuz, Coker adında bir adamın liderliğindeki bir grubun gelişiyle paramparça oldu. O, hayatta kalmak için görüşü olanların sömürülmesine dayanan, açık ama katı planları olan kararlı bir bireydi. Görüşü olan bizlerin, kör olan nüfus için rehberlik etme ahlaki yükümlülüğüne sahip olduğumuza inanıyordu. Bu zorunlu iş birliği, partnerden ziyade birer varlık gibi muamele gördüğümüz için kurtuluştan çok bir hapishane gibi hissettiriyordu. Grubun dinamiği gergin, dile getirilmemiş korkular ve sürekli anlaşmazlık tehdidiyle doluydu. Josella'nın bu yeni otoritenin ağırlığı altında ruhunu korumaya çalışmasını izlerken, triffidlerin derme çatma kampımızın dışında daha da cüretkar hale geldiklerini gördüm. Artık sadece kendi hayatımızı korumak için değil, yeniden inşa etmeye çalışan, ölmekte olan bir medeniyetin karmaşık ve genellikle zalim güç yapılarına çekildiğimizi fark ettim.",
-      "Coker'ın yöntemleri sert ve hesaplıydı; hayatta kalma becerilerimizi kitlelerin hayatta kalması için bir araca dönüştürüyordu. Bizi, körleri gruplar halinde örgütlemeye ve onları gıda ve su kaynaklarına giden tehlikeli sokaklarda yönlendirmeye zorladı. Her gün, triffid tehdidinin esir alanlarımızın öngörülemez doğasının gerisinde kaldığı bir belirsizlik yürüyüşü gibi geliyordu. Kendimi, sadece Josella ve benim artan kaosa karşı durduğumuz ilk günlerin göreceli basitliğini özlerken buldum. Gerginliğe rağmen, körlerin sadece kurban olmadıklarını; onları terk eden bir dünyada onurlarına tutunmaya çalışan insanlar olduklarını gözlemledim. Görev ve kırgınlık döngüsüne hapsolmuş, bu yeni zorunlu düzenin gerçek bir iyileşmeye mi yoksa toplumsal yıkımın daha örgütlü bir biçimine mi yol açacağını merak ediyorduk.",
+      "Coker'ın yöntemleri sert ve hesaplıydı; hayatta kalma becerilerimizi kitlelerin hayatta kalması için bir araca dönüştürüyordu. Bizi, körleri gruplar halinde örgütlemeye ve onları gıda ve su kaynaklarına giden tehlikeli sokaklarda yönlendirmeye zorladı. Her gün, triffid tehdidinin esir alanlarımızın öngörülemez doğasının gerisinde kaldığı bir belirsizlik yürüyüşü gibi geliyordu. Kendimi, sadece Josella ve benim yavaş yavaş yayılan kaosa karşı durduğumuz ilk günlerin göreceli basitliğini özlerken buldum. Gerginliğe rağmen, körlerin sadece kurban olmadıklarını; onları terk eden bir dünyada onurlarına tutunmaya çalışan insanlar olduklarını gözlemledim. Görev ve kırgınlık döngüsüne hapsolmuş, bu yeni zorunlu düzenin gerçek bir iyileşmeye mi yoksa toplumsal yıkımın daha örgütlü bir biçimine mi yol açacağını merak ediyorduk.",
       "Bir akşam, körler arasında gizemli bir hastalık yayılmaya başladığında, yaklaşan bir kıyamet hissi havaya sindi. Bu hastalık grubumuzu sarstı ve yeni gerçeğimizin sonuçlarına karşı bağışıklık kazanmadığımızı hatırlattı. Sayılar azaldıkça, Coker'ın otoritesi yıpranmaya başladı; bu da tartışmalara ve katı kontrolünün çökmesine yol açtı. Josella ve ben, başkasının başarısız vizyonunda piyon olmak yerine kendi kaderimizi çizebileceğimiz bir yer bulma umuduyla bu kaostan kaçmak için ince bir fırsat gördük. Sessiz Londra sokaklarında ustalaştığımız gizlilikle hareket ederek sessizce kaynak stoklamaya başladık. Dünya hala korkunç bir yerdi, ancak özerklik ihtimali, her taraftan üzerimize kapanıyor gibi görünen karanlıktan uzaklaşarak ileriye doğru ilerlememizi sağlayan bir umut ışığı sundu.",
-      "Sonunda kırsal kesime ulaştık ve şehrin geniş harabelerinden uzak, ücra bir çiftlik evine yerleştik. Burada, Josella ve küçük kızımız Susan ile sakin bir hayat kurduk. Ancak barış kırılgandı çünkü triffidler sürekli olarak savunma hatlarımızı zorluyordu. Bu ölümcül, yürüyen bitkiler, camlara vuran saplarıyla varlığımızı hissederek tüm araziye yayılmışlardı. Artık Dünya'daki baskın tür olmadığımızın sürekli bilinciyle yaşıyorduk. Gecelerimizi yaratıkları uzak tutan yüksek çitleri güçlendirerek geçirirken, gündüzlerimizi tarım ve eğitime adıyorduk. Gözlerden uzak olmamıza rağmen, gökyüzünü sürekli uçak işaretleri için tarıyor, insanlığın başka bir yerlerde hala var olabileceğine ve küçük, kırılgan sığınağımızı tüketmekle tehdit eden bu yeşil dalgaya karşı örgütlenip savaşabileceğine dair umudumuzu koruyorduk.",
+      "Sonunda kırsal kesime ulaştık ve şehrin geniş harabelerinden uzak, ücra bir çiftlik evine yerleştik. Burada, Josella ve küçük kızımız Susan ile sakin bir hayat kurduk. Ancak barış kırılgandı çünkü triffidler sürekli olarak savunma hatlarımızı zorluyordu. Bu ölümcül, yürüyen bitkiler, camlara vuran saplarıyla varlığımızı hissederek tüm araziye yayılmışlardı. Artık Dünya'daki baskın tür olmadığımızın sürekli bilinciyle yaşıyorduk. Gecelerimizi yaratıkları uzak tutan yüksek çitleri güçlendirerek geçirirken, gündüzlerimizi tarım ve eğitime adıyorduk. Gözlerden uzak olmamıza rağmen, gökyüzünü sürekli uçak işaretleri için tarıyor, insanlığın başka bir yerlerde hala var olabileceğine ve küçük, kırılgan sığınağımızı tüketmekle tehdit eden yavaş yavaş yayılan bu yeşil dalgaya karşı örgütlenip savaşabileceğine dair umudumuzu koruyorduk.",
       "Yeni ve militan bir hükümet fraksiyonunun temsilcisi olan Torrence'in gelişi, izolasyonumuza ani bir son verdi. Bizden, emeklerimiz ve askeri hiyerarşilerine mutlak itaatimiz karşılığında koruma teklif ederek davalarına katılmamızı istedi. Triffid tehdidinin biyolojik gerçekliğini göz ardı ederek silahlarla şehirleri geri almaktan bahsettiğinde takındığı kibir tüyler ürperticiydi. Bu grubun, eski dünyayı yok eden güç mücadelelerine dönüşü temsil ettiğini açıkça anladık. Josella ve ben, bireyin hayatta kalmasına veya insanlığın geleceğinin korunmasına pek az değer verdiklerini gördük. Sadece kurtulanları kontrol altına almayı ve iradelerini zorla dayatmayı hedefliyorlardı. Yöntemleri sakin ve basit hayatımıza sadece daha fazla çatışma ve ölüm getireceği için, onların gölgesinde yaşayamayacağımız barizdi.",
       "Sonunda, rejimlerinin tehlikeli konforu yerine özgürlüğü seçtik. Bu an için hazırlanmış, karanlığın örtüsü altında kaçmak için yeterli erzak stoklamıştık. Eşyalarımızı toplarken, çocuğumuza karşı taşıdığımız sorumluluğun ağırlığını hissederek uçsuz bucaksız, kararmış ufka baktım. Gecenin içinde, başkalarının farklı bir gelecek inşa etmek için toplandığı bir ada sığınağına doğru yola çıkarak kaçtık. Triffidler sürekli, hışırdayan bir gölge olarak kalmaya devam etti, ancak biz nihayet kendi yolumuzu çizebileceğimiz bir yere doğru ilerliyorduk. Dünya sonsuza dek değişmişti ve biz artık sadece sonuna tanık olanlar değil, uzun ve yavaş iyileşme sürecinin katılımcılarıydık. Yolculuğumuz henüz bitmekten çok uzaktı, ancak uzun yıllar sonra ilk kez, önümüzdeki yol hem belirsizlik hem de zorlukla kazanılmış derin bir umutla dolu, bize aitmiş gibi hissettiriyordu."
     ],
@@ -11839,7 +12692,7 @@ export const STORIES_PART2: RawStory[] = [
       "catastrophic": "felaket dolu",
       "vulnerability": "savunmasızlık",
       "predator": "avcı",
-      "rustling": "hışırtı",
+      "rustling": "hışırdayan",
       "spectacle": "gösteri",
       "navigate": "yön bulmak",
       "stumble": "tökezlemek",
@@ -11865,7 +12718,7 @@ export const STORIES_PART2: RawStory[] = [
       "encroaching": "yavaş yavaş yayılan"
     }
   },
-              {
+                {
     id: 'scifi_midwich_cuckoos',
     title: "The Midwich Cuckoos",
     author: 'John Wyndham',
@@ -11875,7 +12728,7 @@ export const STORIES_PART2: RawStory[] = [
       "The village of Midwich was a quiet, sleepy place in the English countryside, largely untouched by the rapid changes of the modern world. Its residents enjoyed a simple, predictable existence, marked by the changing seasons and the slow pace of rural life. However, this peaceful atmosphere was shattered on an ordinary September night when a strange, localized phenomenon occurred. Without warning, a mysterious grey object descended silently, covering the entire village in an invisible, impenetrable barrier. Anyone attempting to enter or leave Midwich during those long hours found themselves rendered unconscious as if by an unseen force. The village became a complete mystery, a silent island cut off from the rest of the world, leaving the authorities baffled and the surrounding areas in a state of growing panic as they tried to understand the nature of this inexplicable occurrence.",
       "When the phenomenon finally passed and the invisible dome vanished the next morning, the village slowly returned to its daily routine but nothing felt quite the same. The inhabitants of Midwich struggled to explain their strange memory lapse, describing it as a collective, dreamless sleep that seemed to last for hours. There were no immediate signs of damage or destruction, yet an unsettling sensation of unease hung over the cottages and lanes. It was as if the very air of the village had been tainted by something alien and profound. People questioned their neighbors with nervous curiosity, but no one could provide a logical answer to the events of the previous night. The government sent teams to investigate, but their efforts only yielded confusing data, leaving the quiet community of Midwich to face an uncertain future that none of them could possibly imagine.",
       "As the weeks turned into months, the true scale of the anomaly began to reveal itself in the most unexpected and disturbing way. Every single woman of childbearing age in Midwich discovered she was pregnant, a coincidence that defied all medical explanation and probability. The realization brought a cold wave of terror and bewilderment to the village, turning families against each other and sparking intense rumors about their secret visitor. It became clear that the mysterious event had not been a mere accident or a weather anomaly, but a deliberate act of interference by an unknown power. The villagers found themselves at the center of a profound crisis that threatened to change their lives forever. They were no longer just simple residents of a quiet hamlet; they had become the unwilling subjects of a grand, frightening experiment that was just beginning to take root in their sheltered lives.",
-      "As the months slowly drifted by, the physical transformation of the women became impossible to ignore. The village atmosphere shifted from confused concern to a heavy, suffocating atmosphere of dread. The local doctor, Mr. Willers, worked tirelessly to examine his patients, but his findings only deepened the mystery. Each woman, regardless of her marital status or age, displayed the exact same symptoms of pregnancy. There was a unnatural synchronicity in their condition that defied the laws of nature. The village, once a place of warm community and simple friendships, turned inward. Men walked the lanes with grim expressions, feeling their authority questioned by a force they could not fight. The secrets of that strange September night were no longer just memories; they were growing inside their loved ones, forming a silent, collective threat that felt both deeply personal and impossibly large, casting a shadow over every hearth and home in Midwich.",
+      "As the months slowly drifted by, the physical transformation of the women became impossible to ignore. The village atmosphere shifted from confused concern to a heavy, suffocating atmosphere of dread. The local doctor, Mr. Willers, worked tirelessly to examine his patients, but his findings only deepened the mystery. Each woman, regardless of her marital status or age, displayed the exact same symptoms of pregnancy. There was an unnatural synchronicity in their condition that defied the laws of nature. The village, once a place of warm community and simple friendships, turned inward. Men walked the lanes with grim expressions, feeling their authority questioned by a force they could not fight. The secrets of that strange September night were no longer just memories; they were growing inside their loved ones, forming a silent, collective threat that felt both deeply personal and impossibly large, casting a shadow over every hearth and home in Midwich.",
       "The societal pressure grew immense as the pregnancies progressed at a rate that seemed slightly ahead of human standards. Panic began to ripple through the neighboring towns, leading to journalists and curious outsiders descending upon the village like vultures. These people brought cameras and notebooks, trying to uncover the story behind the miracle or the curse that had claimed the women of Midwich. For the residents, this attention was unwelcome and invasive. They felt like animals in a cage, being poked and questioned by people who could not possibly understand the terror of their situation. The government, initially helpful, became increasingly distant, setting up observation posts but offering very little actual support. The villagers felt truly alone, abandoned to a fate that felt orchestrated by a cold, calculating, and far more advanced intelligence than anything known to humanity, leaving them to wait for a reckoning that they knew was inevitable.",
       "The final stage of this ordeal arrived with a frightening inevitability during the following spring. As the delivery dates approached, the mood in the village turned from simple anxiety to pure, unadulterated fear. There was a consensus that these children were not merely human offspring, but something else entirely—a legacy of the grey object that had trapped the village months earlier. Every birth was marked by a strange silence, with none of the usual sounds that accompany the miracle of life. When the babies finally arrived, they appeared physically perfect, but there was a chilling stillness in their behavior that set them apart from any normal infant. Their eyes, large and unusually focused, seemed to possess a depth of awareness that made even the most hardened parents shiver. A new chapter had begun for Midwich, one where the boundaries between humanity and something truly alien had been irrevocably blurred and broken forever.",
       "As the weeks passed following the unprecedented births, the mothers observed their children with growing apprehension. These infants did not behave like normal babies; they rarely cried and showed a strange, collective synchronization in their movements. Their eyes were the most disturbing feature, holding a golden, metallic intensity that seemed to penetrate the very souls of those who looked into them. The villagers, once protective, began to distance themselves, sensing that these children were not developing according to human norms. The village schoolhouse, which had been a place of joy, now felt like a cold monument to a reality that no one dared to name. Parents would sit in their living rooms, watching these silent, golden-eyed creatures, feeling like strangers in their own homes. The unspoken suspicion that these were indeed cuckoos in the nest, planted to displace their own humanity, began to permeate the local consciousness.",
@@ -11906,29 +12759,29 @@ export const STORIES_PART2: RawStory[] = [
       "Yıllar sonra, yaşananların izleri İngiliz kırsalının sakin manzarasında silinip gitmişti, ancak çocukların hatırası hayatta kalanların kolektif hafızasına kazınmıştı. Midwich zamanla yavaş ve ritmik varoluşuna geri döndü, ancak insanlar yeni bir temkinlilikle ve bilinmeyene karşı süregelen bir dikkatle yürüyorlardı. Artık gökyüzüne basit bir merakla değil, evrenin uçsuz bucaksız, kayıtsız ve tehlikeli olduğunu bilen ayık bir zihinle bakıyorlardı. Zellaby'nin adı kısık seslerle anılıyordu; komşularının özerkliğini geri kazanmak için hayatını feda eden trajik bir kahraman olarak. Hayat devam etti ama köy sonsuza dek değişmiş, ruhlarının sınırlarını test eden bu istila ile sonsuza dek damgalanmıştı. İnsanlık, üstün bir zekayla yaşadığı bu deneyimden sağ çıkmış, yerini başkasına bırakmayı reddedenlerin kırılgan direncinin bir kanıtı olarak ayakta kalmıştı."
     ],
     words: {
-      "phenomenon": "doğaüstü olay",
+      "phenomenon": "fenomen",
       "impenetrable": "aşılmaz",
       "inexplicable": "açıklanamaz",
       "anomaly": "anormallik",
       "interference": "müdahale",
       "hamlet": "küçük köy",
       "synchronicity": "eşzamanlılık",
-      "grim": "sert, acımasız",
-      "invasive": "müdahaleci, istilacı",
+      "grim": "sert",
+      "invasive": "istilacı",
       "reckoning": "hesaplaşma",
       "inevitability": "kaçınılmazlık",
       "irrevocably": "geri dönülemez bir şekilde",
-      "apprehension": "endişe/korku",
-      "synchronization": "eş zamanlılık",
-      "permeate": "nüfuz etmek/yayılmak",
+      "apprehension": "endişe",
+      "synchronization": "senkronizasyon",
+      "permeate": "nüfuz etmek",
       "vacuum": "boşluk",
-      "futile": "beyhude/boşuna",
-      "telepathic": "zihin okuma ile ilgili",
+      "futile": "beyhude",
+      "telepathic": "telepatik",
       "adolescence": "ergenlik",
       "phalanx": "sıkı düzenli grup",
-      "obsolete": "modası geçmiş",
+      "obsolete": "gereksizleşmiş",
       "infrastructure": "altyapı",
-      "formidable": "çetin, müthiş",
+      "formidable": "müthiş",
       "hesitation": "tereddüt",
       "composure": "sükunet",
       "suppressed": "bastırılmış",
@@ -11937,7 +12790,7 @@ export const STORIES_PART2: RawStory[] = [
       "autonomy": "özerklik"
     }
   },
-              {
+                {
     id: 'scifi_cold_equations',
     title: "The Cold Equations",
     author: 'Tom Godwin',
@@ -11948,7 +12801,7 @@ export const STORIES_PART2: RawStory[] = [
       "A soft, unfamiliar sound echoed from the supply cabinet at the rear of the cabin, startling the pilot out of his concentration. Barton turned, his heart skipping a beat as he realized that the ship was not alone. The law of space was absolute and unforgiving: these ships were built with zero margin for error. He rose from his seat, his hand moving instinctively toward the weapon at his side, as a stowaway emerged from the cramped space. It was a young girl, barely eighteen, with eyes wide and filled with confusion and innocence. She had hidden herself away, driven by a desperate desire to see her brother on Woden, entirely unaware of the catastrophic consequences of her presence. The ship's internal sensors began to alarm immediately, indicating an impossible increase in mass that threatened to turn their mission of mercy into a tragedy of space travel.",
       "Barton stared at the girl, his mind racing to calculate the fuel consumption rates against the extra weight she brought into the cabin. The laws of physics were cold and mechanical; they did not care about the girl's youth, her motives, or the pilot's desire to save her life. If the extra weight remained on board, the ship would run out of fuel long before it reached the atmosphere of Woden, causing both of them to crash into the depths of space. He tried to explain the situation, but the words felt heavy and cruel in the confined air of the cockpit. The girl looked at him with pleading eyes, still hoping that this was some sort of mistake or a solvable problem. She did not yet understand that the ship's fuel gauge was the ultimate judge, and it had already delivered a verdict that could not be appealed by anyone.",
       "The silence in the cockpit deepened as Barton stared at the small fuel gauge, which now showed the terrifying reality of their situation. The girl, who introduced herself as Marilyn, looked at him with innocent hope, clearly believing that he possessed some secret maneuver to fix the problem. Barton’s throat felt dry as he attempted to articulate the harsh truth of the Emergency Dispatch Ship. He explained that these vessels were built with zero tolerance for extra weight, and every gram of fuel was accounted for to ensure the delivery of the life-saving serum. He pointed to the monitors, showing the calculated trajectory that relied on a specific, fixed mass. The presence of a human being on board, even someone as light as her, changed the fundamental equation of their flight. He watched her expression shift from naive curiosity to the slow, agonizing realization that her simple dream had become a fatal mistake.",
-      "Marilyn struggled to comprehend the mechanical logic of space travel, asking if he could simply fly faster or find a way to land safely. Barton shook his head slowly, his voice heavy with the burden of professional duty and human empathy. He explained the concept of gravitational deceleration and the precise burning of fuel required to enter the atmosphere of Woden. There was no margin for error in the cold, unyielding void of the universe; the math was absolute and did not permit for pity or human error. As he spoke, the gravity of the situation began to weigh on them both like an physical force. He knew that the ship’s internal alarm would soon signal that they had passed the point of no return. Every passing second of conversation reduced their chances of survival, as the ship continued to consume its precious, limited fuel while carrying the weight of two souls instead of one.",
+      "Marilyn struggled to comprehend the mechanical logic of space travel, asking if he could simply fly faster or find a way to land safely. Barton shook his head slowly, his voice heavy with the burden of professional duty and human empathy. He explained the concept of gravitational deceleration and the precise burning of fuel required to enter the atmosphere of Woden. There was no margin for error in the cold, unyielding void of the universe; the math was absolute and did not permit for pity or human error. As he spoke, the gravity of the situation began to weigh on them both like a physical force. He knew that the ship’s internal alarm would soon signal that they had passed the point of no return. Every passing second of conversation reduced their chances of survival, as the ship continued to consume its precious, limited fuel while carrying the weight of two souls instead of one.",
       "She finally fell silent, staring at the control panel as if the numbers themselves were sentencing her to death. The realization that her brother, waiting on Woden, would never see her arrive brought a fresh wave of terror to her young face. Barton felt a profound sense of helplessness, knowing that his duty was to the mission and the hundreds of colonists dying for lack of medicine. He was a pilot, not a judge, but in this isolated metallic shell, he was forced to be the executioner of a girl whose only crime was an excess of affection. He looked away from her pleading gaze, his hands trembling slightly as he checked the fuel consumption rates for the final time. The universe had written the cold equations, and he was merely the instrument through which they would be fulfilled, leaving no room for a miracle to save her life.",
       "Marilyn stood quietly while Barton contacted the EDS command center on Woden to confirm their grim status. His voice remained steady, yet the words felt like jagged stones against his chest. He reported the presence of a stowaway and requested an immediate analysis of fuel reserves and mass limits. The response from the distant station was swift and chillingly mechanical. The commander confirmed that there was absolutely no margin of error. Every milligram of propellant had been calculated for the transport of the medicine. The ship was a precision tool, not a passenger craft, and it could not deviate from its calculated path. As the transmission ended, the silence in the cockpit returned, heavier than before. Marilyn looked at the metal walls surrounding them, her eyes reflecting the cold starlight of the void, finally understanding that the technology of their ship was governed by physics that knew nothing of mercy or human longing.",
       "Barton began the preparations for his final conversation with the girl, his heart aching with a profound, professional sorrow. He explained the necessity of the ejection sequence, a process that was as clinical as it was brutal. She listened intently, her small hands clutching the edge of her seat until her knuckles turned white. It was a tragic irony that she had hidden on this ship to see her brother, only to face a lonely exit into the infinite dark. She asked if she could send a final message back home. Barton nodded slowly, handing her the communication device with a trembling hand. The reality of the cold, hard universe was laid bare before them. The law of the ship was absolute, and he was nothing more than an agent of these unforgiving physical forces that demanded a balance of mass, fuel, and velocity at the expense of a young life.",
@@ -11963,51 +12816,51 @@ export const STORIES_PART2: RawStory[] = [
     tr: [
       "EDS—Acil Durum Sevk Gemisi—tek bir amaç için tasarlanmış küçük bir araçtı: uzak sınır kolonilerine hayat kurtarıcı serum ulaştırmak. Konfor ya da ekstra yolcu taşımak için değil, hız ve verimlilik için inşa edilmiş minimalist mühendisliğin bir harikasıydı. Pilot Barton, gemi uzayın sessiz boşluğunda Woden gezegenine doğru hızla ilerlerken gösterge panelini kontrol etti. Otomatik sistemler ritmik bir hassasiyetle vızıldıyor, yakıt rezervlerini mutlak matematiksel kesinlikle yönetiyordu. Barton, Woden'daki hasta kolonistlerin tamamen kendi gelişine bağlı olduğunu bilerek, görevin tanıdık ağırlığını omuzlarında hissediyordu. Uçuş rotasını hafifçe ayarladı, küçük ve sessiz aracın mutlak sınırında çalıştığından habersizdi. Gemi, hesaplanan rotanın ötesindeki manevralar için yakıt taşımıyordu ve kütlesi, tam olarak tahmin edildiği gibi hedefine ulaşmasını sağlamak için motorlarının gücüne karşı mükemmel bir şekilde dengelenmişti.",
       "Kabinin arka tarafındaki erzak dolabından gelen yumuşak ve tanıdık olmayan bir ses, pilotu konsantrasyonundan uzaklaştırarak şaşırttı. Barton döndü ve geminin yalnız olmadığını fark edince kalbi duracak gibi oldu. Uzayın yasası mutlak ve acımasızdı: bu gemiler hata payı sıfır olacak şekilde inşa edilmişti. Koltuğundan kalktı, elini içgüdüsel olarak yanındaki silaha doğru götürürken dar alandan bir kaçak yolcu çıktı. Henüz on sekizinde, gözleri şaşkınlık ve masumiyetle dolu genç bir kızdı. Woden'daki erkek kardeşini görme arzusuyla hareket etmiş, varlığının yaratacağı yıkıcı sonuçlardan tamamen habersiz bir şekilde kendini gizlemişti. Geminin dahili sensörleri hemen alarm vermeye başladı; merhamet görevlerini bir uzay yolculuğu trajedisine dönüştürme tehdidinde bulunan imkansız bir kütle artışını işaret ediyordu.",
-      "Barton, kızın getirdiği ekstra ağırlığa karşı yakıt tüketim oranlarını hesaplamak için zihnini zorlayarak kıza baktı. Fizik kuralları soğuk ve mekanikti; kızın gençliğini, niyetini ya da pilotun onun hayatını kurtarma arzusunu umursamıyorlardı. Eğer ekstra ağırlık gemide kalırsa, gemi Woden atmosferine ulaşmadan çok önce yakıtı tükenecek ve ikisinin de uzayın derinliklerine çakılmasına neden olacaktı. Durumu açıklamaya çalıştı ama kelimeler kokpitin kapalı havasında ağır ve acımasız hissettiriyordu. Kız ona yalvaran gözlerle bakıyor, hala bunun bir hata ya da çözülebilir bir sorun olduğunu umuyordu. Geminin yakıt göstergesinin nihai yargıç olduğunu ve hiç kimse tarafından itiraz edilemeyecek bir hüküm verdiğini henüz anlamamıştı.",
-      "Barton, durumun dehşet verici gerçeğini gösteren küçük yakıt göstergesine bakarken kokpitteki sessizlik derinleşti. Kendini Marilyn olarak tanıtan genç kız, sorunu çözecek gizli bir manevra bildiğine inanarak ona masum bir umutla baktı. Barton, Acil Sevk Gemisi'nin sert gerçeğini ifade etmeye çalışırken boğazının kuruduğunu hissetti. Bu gemilerin fazladan ağırlığa karşı sıfır toleransla inşa edildiğini ve hayat kurtaran serumun teslimatını sağlamak için her gram yakıtın hesaba katıldığını açıkladı. Belirli, sabit bir kütleye dayanan hesaplanmış rotayı gösteren monitörleri işaret etti. Gemide bir insanın varlığı, onun kadar hafif biri olsa bile, uçuşlarının temel denklemini değiştiriyordu. Onun ifadesinin saf meraktan, basit hayalinin ölümcül bir hataya dönüştüğünün yavaş ve acı verici farkındalığına geçişini izledi.",
-      "Marilyn, uzay yolculuğunun mekanik mantığını anlamakta zorlandı ve daha hızlı uçup uçamayacağını ya da güvenli bir şekilde iniş yapmanın bir yolunu bulup bulamayacağını sordu. Barton, mesleki görev ve insan empati yüküyle ağırlaşan sesiyle yavaşça başını salladı. Kütleçekimsel yavaşlama kavramını ve Woden atmosferine girmek için gereken hassas yakıt yakma işlemini açıkladı. Evrenin soğuk, boyun eğmez boşluğunda hata payı yoktu; matematik kesindi ve acımaya veya insan hatasına izin vermiyordu. O konuştukça, durumun ağırlığı ikisinin üzerinde de fiziksel bir güç gibi çökmeye başladı. Geminin dahili alarmının kısa süre içinde geri dönüşü olmayan noktayı geçtiklerini bildireceğini biliyordu. Her bir saniyelik konuşma, gemi iki ruhun ağırlığını taşırken kıymetli ve sınırlı yakıtını tüketmeye devam ettiği için hayatta kalma şanslarını azaltıyordu.",
-      "Sonunda sessizliğe gömüldü ve sanki sayıların kendisi ona ölüm cezasını veriyormuş gibi kontrol paneline baktı. Woden'da bekleyen erkek kardeşinin onun varışını asla göremeyeceği gerçeği, genç yüzüne yeni bir dehşet dalgası getirdi. Barton, görevinin ve ilaç eksikliği yüzünden ölmekte olan yüzlerce kolonistin sorumluluğunda olduğunu bilerek derin bir çaresizlik hissetti. O bir pilottu, yargıç değil; ancak bu izole metalik kabukta, tek suçu fazla sevgi olan bir kızın infazcısı olmaya zorlanıyordu. Onun yalvaran bakışlarından uzaklaştı ve yakıt tüketim oranlarını son kez kontrol ederken elleri hafifçe titredi. Evren soğuk denklemleri yazmıştı ve o, bu denklemlerin yerine getirilmesi için sadece bir araçtı; bu durum, onun hayatını kurtaracak bir mucizeye yer bırakmıyordu.",
-      "Marilyn, Barton'ın vahim durumlarını doğrulamak için Woden'daki EDS komuta merkeziyle iletişime geçmesini sessizce izledi. Sesi sabit kalmaya devam etti, ancak kelimeler göğsüne çarpan keskin taşlar gibi hissettirdi. Bir kaçak yolcunun varlığını bildirdi ve yakıt rezervlerinin ve kütle sınırlarının acil bir analizini talep etti. Uzaktaki istasyondan gelen yanıt hızlı ve tüyler ürpertici derecede mekanikti. Komutan, hata payının kesinlikle sıfır olduğunu doğruladı. Her bir miligram itici yakıt, ilacın taşınması için hesaplanmıştı. Gemi bir yolcu aracı değil, bir hassas cihazdı ve hesaplanan rotasından sapamazdı. İletişim sona erdiğinde kokpitteki sessizlik eskisinden daha ağır bir şekilde geri döndü. Marilyn, etraflarını saran metal duvarlara baktı; gözleri boşluğun soğuk yıldız ışığını yansıtıyordu ve sonunda gemilerinin teknolojisinin merhametten veya insan özleminden habersiz fizik yasalarıyla yönetildiğini anladı.",
-      "Barton, kızla yapacağı son konuşma için hazırlıklara başladı; kalbi derin ve mesleki bir kederle sızlıyordu. Fırlatma sekansının gerekliliğini, klinik olduğu kadar acımasız olan süreci anlattı. Küçük elleriyle koltuğunun kenarını boğumları beyazlaşana kadar sıkarak dikkatle dinledi. Kardeşini görmek için bu gemiye saklanmışken, sonsuz karanlığa doğru yalnız bir çıkışla yüzleşmek zorunda kalması trajik bir ironiydi. Eve son bir mesaj gönderip gönderemeyeceğini sordu. Barton yavaşça başını salladı ve iletişim cihazını titreyen bir elle ona uzattı. Soğuk ve katı evrenin gerçekliği önlerine serilmişti. Geminin yasası kesindi ve o, genç bir hayat pahasına kütle, yakıt ve hız dengesini talep eden bu acımasız fiziksel güçlerin bir ajanından başka bir şey değildi.",
-      "Son sözlerini kaydetme süreci bir sonsuzluk gibi geldi. Marilyn erkek kardeşiyle konuşurken sesi titriyordu, ancak onun hatırına cesur görünmeye çalışıyordu. Sevgisinden ve uzak gezegende onunla yeniden bir araya gelme konusundaki basit arzusundan bahsetti. Barton gölgelerde durmuş, asla ulaşamayacağı bir dünyaya veda etmesini dinliyordu. Kokpitteki hava incelmişti ve geminin uğultusu, işleyen saatlerinin sürekli bir hatırlatıcısı olarak görev yapıyordu. Yakıt göstergesinin istikrarlı bir şekilde düştüğünü izledi; sohbete harcanan her anın görev için daha az seçenek anlamına geldiğini biliyordu. Taşıdığı sorumluluğun ezici ağırlığını hissetti; bu, onunla sonsuza dek kalacak bir yüktü. Denklemler dengelenmişti ve kaçınılmaz sonuç artık bir yıldızın hızıyla yaklaşıyordu, insani müdahaleye veya umuda hiç yer bırakmıyordu.",
+      "Barton, zihni kızın kabine getirdiği ekstra ağırlığa karşı yakıt tüketim oranlarını hesaplamak için çılgınca çalışırken kıza baktı. Fizik kuralları soğuk ve mekanikti; kızın gençliğini, niyetlerini ya da pilotun onun hayatını kurtarma arzusunu umursamıyordu. Eğer ekstra ağırlık gemide kalırsa, gemi Woden atmosferine ulaşmadan çok önce yakıtı tükenecek ve ikisinin de uzayın derinliklerine çakılmasına neden olacaktı. Durumu açıklamaya çalıştı ama kelimeler kokpitin kapalı havasında ağır ve acımasız hissettiriyordu. Kız ona yalvaran gözlerle bakıyor, hala bunun bir hata ya da çözülebilir bir sorun olduğunu umuyordu. Geminin yakıt göstergesinin nihai yargıç olduğunu ve hiç kimse tarafından itiraz edilemeyecek bir hüküm verdiğini henüz anlamamıştı.",
+      "Barton, durumun dehşet verici gerçeğini gösteren küçük yakıt göstergesine bakarken kokpitteki sessizlik derinleşti. Kendini Marilyn olarak tanıtan genç kız, sorunu çözecek gizli bir manevraya sahip olduğuna inanarak ona masum bir umutla baktı. Barton, Acil Durum Sevk Gemisi'nin sert gerçeğini ifade etmeye çalışırken boğazının kuruduğunu hissetti. Bu gemilerin fazladan ağırlığa karşı sıfır toleransla inşa edildiğini ve hayat kurtaran serumun teslimatını sağlamak için her gram yakıtın hesaba katıldığını açıkladı. Belirli, sabit bir kütleye dayanan hesaplanmış yörüngeyi gösteren monitörleri işaret etti. Gemide bir insanın varlığı, onun kadar hafif biri olsa bile, uçuşlarının temel denklemini değiştiriyordu. Onun ifadesinin saf meraktan, basit hayalinin ölümcül bir hataya dönüştüğünün yavaş ve acı verici farkındalığına geçişini izledi.",
+      "Marilyn, uzay yolculuğunun mekanik mantığını anlamakta zorlandı ve daha hızlı uçup uçamayacağını ya da güvenli bir şekilde iniş yapmanın bir yolunu bulup bulamayacağını sordu. Barton, mesleki görev ve insani empati yüküyle ağırlaşan sesiyle yavaşça başını salladı. Kütleçekimsel yavaşlama kavramını ve Woden atmosferine girmek için gereken hassas yakıt yakma işlemini açıkladı. Evrenin soğuk, boyun eğmez boşluğunda hata payı yoktu; matematik kesindi ve acımaya veya insan hatasına izin vermiyordu. O konuştukça, durumun ciddiyeti ikisinin de üzerine fiziksel bir güç gibi çökmeye başladı. Geminin dahili alarmının kısa süre içinde geri dönüşü olmayan noktayı geçtiklerini bildireceğini biliyordu. Konuşarak geçen her saniye, gemi tek bir ruh yerine iki ruhun ağırlığını taşırken değerli ve sınırlı yakıtını tüketmeye devam ettiği için hayatta kalma şanslarını azaltıyordu.",
+      "Sonunda sessizliğe gömüldü ve sanki sayıların kendisi ona ölüm cezasını veriyormuş gibi kontrol paneline baktı. Woden'da bekleyen erkek kardeşinin onun varışını asla göremeyeceği gerçeği, genç yüzüne yeni bir dehşet dalgası getirdi. Barton, görevinin bu misyona ve ilaç eksikliği yüzünden ölmekte olan yüzlerce koloniste karşı olduğunu bilerek derin bir çaresizlik hissetti. O bir pilottu, yargıç değil; ancak bu izole metalik kabukta, tek suçu aşırı sevgi olan bir kızın celladı olmaya zorlanıyordu. Onun yalvaran bakışlarından uzaklaştı ve yakıt tüketim oranlarını son kez kontrol ederken elleri hafifçe titredi. Evren soğuk denklemleri yazmıştı ve o, bu denklemlerin yerine getirilmesi için sadece bir araçtı; bu durum, onun hayatını kurtaracak bir mucizeye yer bırakmıyordu.",
+      "Barton, vahim durumlarını doğrulamak için Woden'daki EDS komuta merkeziyle iletişime geçerken Marilyn sessizce durdu. Sesi sabit kaldı, ancak kelimeler göğsüne çarpan keskin taşlar gibi hissettirdi. Bir kaçak yolcunun varlığını bildirdi ve yakıt rezervleri ile kütle sınırlarının acil bir analizini talep etti. Uzaktaki istasyondan gelen yanıt hızlı ve tüyler ürpertici derecede mekanikti. Komutan, kesinlikle hiçbir hata payı olmadığını doğruladı. Her bir miligram itici madde, ilacın taşınması için hesaplanmıştı. Gemi bir yolcu gemisi değil, hassas bir aletti ve hesaplanan rotasından sapamazdı. İletişim sona erdiğinde kokpitteki sessizlik eskisinden daha ağır bir şekilde geri döndü. Marilyn, etraflarını saran metal duvarlara baktı; gözleri boşluğun soğuk yıldız ışığını yansıtıyordu ve sonunda gemilerinin teknolojisinin, merhametten veya insani özlemden habersiz fizik yasalarıyla yönetildiğini anladı.",
+      "Barton, kızla yapacağı son konuşma için hazırlıklara başladı; kalbi derin ve mesleki bir kederle sızlıyordu. Fırlatma işleminin gerekliliğini, acımasız olduğu kadar klinik de olan bu süreci anlattı. Kız, küçük elleriyle koltuğunun kenarını parmak boğumları beyazlaşana kadar sıkarak onu dikkatle dinledi. Kardeşini görmek için bu gemiye saklanmışken, sonsuz karanlığa doğru yalnız bir çıkışla yüzleşmek zorunda kalması trajik bir ironiydi. Eve son bir mesaj gönderip gönderemeyeceğini sordu. Barton yavaşça başını salladı ve iletişim cihazını titreyen bir elle ona uzattı. Soğuk ve katı evrenin gerçekliği önlerine serilmişti. Geminin yasası mutlaktı ve o, genç bir hayat pahasına kütle, yakıt ve hız dengesini talep eden bu acımasız fiziksel güçlerin bir aracısından başka bir şey değildi.",
+      "Son sözlerini kaydetme süreci bir sonsuzluk kadar sürdü. Marilyn erkek kardeşiyle konuşurken sesi titriyordu, ancak onun hatırına cesur görünmeye çalışıyordu. Sevgisinden ve uzak gezegende onunla yeniden bir araya gelmeye dair basit arzusundan bahsetti. Barton gölgelerde durmuş, asla ulaşamayacağı bir dünyaya veda edişini dinliyordu. Kokpitteki hava giderek inceliyordu ve geminin uğultusu, işleyen zamanın sürekli bir hatırlatıcısı gibiydi. Yakıt göstergesinin istikrarlı bir şekilde düştüğünü izledi; sohbete harcanan her anın görev için daha az seçenek anlamına geldiğini biliyordu. Taşıdığı sorumluluğun ezici ağırlığını hissetti; bu, onunla sonsuza dek kalacak bir yüktü. Denklemler dengelenmişti ve kaçınılmaz sonuç artık yaklaşan bir yıldızın hızıyla yaklaşıyordu; insani müdahaleye veya umuda hiç yer bırakmıyordu.",
       "Marilyn mesajını bitirdi ve kaydediciyi uzaklaştırdı, gözleri dökülmemiş yaşlarla parlıyordu. Barton'a baktı, var olmadığını bildiği bir umut ışığı aradı. Gemi, hedefine doğru amansız yolculuğunu sürdürüyordu ve mekanik uğultu küçük kabinde bir cenaze marşı gibi duyuluyordu. Barton, fizik yasalarının onun masumiyetine karşı kayıtsız olduğunu fark ederek ruhunda derin bir sızı hissetti. Hareketlerindeki ağırlığa rağmen nazik bir şekilde ayağa kalkmasına yardım etti. Yaşam ile sonsuz boşluk arasındaki bir eşik olan hava kilidine doğru ilerlediler. Her adım kalbine baskı yapan ağır bir yük gibiydi; kendi son gününe kadar taşıyacağı bir ağırlık. Kokpit ışığı duvarlarda dans eden uzun, ince gölgeler bırakıyor ve durumlarının trajik gerçekliğini vurguluyordu. Eylemlerini emreden matematiksel zorunluluktan kaçış yoktu.",
-      "Ağır dairesel kapının önünde durdu; genç yüzü solgundu ama sakindi, sanki evrenin acımasızlığını nihayet kabul etmiş gibiydi. Barton sızdırmazlık contalarını son bir kez kontrol etti, profesyonel içgüdüleri içinde yükselen saf insani acıya karşı savaşıyordu. Tüm hayatını yönetmeliklere hizmet ederek geçirmişti, ancak bunların kendisini bu kadar umut dolu bir hayatı feda etmeye zorlayacağını hiç düşünmemişti. Ona son bir kez baktı, cesaretinin anısını zihnine kazımaya çalıştı. Böylesine imkansız bir ikilemin nedeni olduğu için belki de kısık sesle özür diledi ama o sadece başını sallayabildi. Evrenin böylesine korkunç bir fedakarlık talep etmesi onun suçu değildi. Soğuk denklemler o gemiye adım atmadan çok önce yazılmıştı ve kendi içsel ızdırabı ne olursa olsun değişmeyeceklerdi.",
-      "Son anlar, steril metalik yüzeyler ve rehberlik bilgisayarının uzaktan gelen ritmik tıkırtıları arasında bir bulanıklık içinde geçti. Marilyn elini hava kilidinin soğuk çeliğine dayadı, dünyayı son bir kez içine çekmeye çalışıyormuş gibi derin ve sarsıcı bir nefes aldı. Barton, kolun inlemesini, sonun başlangıcının işareti olarak izledi. Kalbi tamamen sessizlik içinde parçalanırken, elleri demir gibi sabit bir şekilde kontrollerde kaldı. Uzayın uçsuz bucaksız boşluğu, sönmek üzere olan hayallere ve anılara karşı kayıtsız bir şekilde yolcusunu açgözlülükle bekliyordu. İç kapı onları izole ederek kapandığında, görevinin katı sınırları içinde mümkün olan her şeyi yaptığını biliyordu. Bu karanlık ve hesapçı uçsuz bucaksızlıkta mucizelere yer yoktu. Karanlıkta oturdu ve geminin yalnız, kesin hedefine doğru ilerleyişini dinledi.",
-      "Hava kilidi kapısı, soğuk çeliğin dilinde konuşulan nihai bir hüküm gibi keskin ve havalı bir tıslama ile açılıp kapandı. Marilyn küçük bölmenin içinde duruyordu; silüeti, kontrol odasının sert ve yapay ışıklarıyla çerçevelenmişti. Barton'a son bir kez baktı; ifadesi, korkudan gençliğinin ötesine geçtiği görünen garip ve ürkütücü bir dinginliğe dönüştü. Söylenecek başka söz kalmamıştı, çünkü her argüman gerçekliğin acımasız fiziği tarafından çürütülmüştü. Hayatının, karmaşık bir denklemdeki basit bir düzeltmeden ibaret olduğunu, başkalarının hayatta kalması için çıkarılması gereken küçük bir değer olduğunu biliyordu. Serbest bırakma düğmesine bastığında, eşiğin ötesindeki dünya onun için varlığını yitirdi ve yerini, kozmosun sonsuz karanlığına hemen gitmesini talep eden sessiz, bekleyen uçuruma bıraktı.",
-      "Barton, dış kilit açılmaya başladığında çıkan sesin kesinliğine dayanamayarak bakışlarını başka yöne çevirdi. Pilot koltuğunda donup kalmıştı; kumandaları çaresiz ve kırıcı bir güçle kavrarken boğumları bembeyaz olmuştu. Gemi bir anlığına titredi; bu, doğa yasalarının en korkunç bedelle tatmin edildiğini kanıtlayan, ağırlıktaki fark edilmez bir değişimdi. Dışarıda yıldızlar soğuk ve kayıtsız kalmaya devam ediyor, ışıkları milyonlarca mil öteye uzanırken gemisinin dar alanında yaşanan trajediyi asla kabul etmiyordu. Kitabına göre yaşayan bir adamdı ancak o sayfalardaki mürekkep şimdi ağzında kül tadı bırakıyordu. Görev devam etti, yakıt seviyeleri dengelendi ve gemi, kokpitte sessizce oturan kırık insan ruhuna kayıtsız kalarak ilerlemeye devam etti.",
-      "Yolculuğun geri kalanı, mekanik kesinliğin ve içsel uyuşukluğun acı verici bir bulanıklığıydı. Barton, gemiyi geniş ve ilgisiz boşlukta yönetirken zihni son anları acı verici bir netlikle yeniden oynatıyordu. Woden'a ulaşacağını, hayat kurtarıcı serumu teslim edeceğini ve uçuşu tamamlamadaki verimliliği nedeniyle takdir edileceğini biliyordu. Yine de kendini, onu infazcı gibi davranmaya zorlayan matematiksel gerçeklik tarafından sonsuza dek değiştirilmiş, içi boş bir kabuk gibi hissediyordu. Gemi sonunda uzak gezegene iniş yaptı ve böylesine şaşırtıcı bir bedel talep eden yolculuğu tamamladı. Yabancı topraklara adım attığında, hava kilidi döngüsünün ağırlığı hala kulaklarında çınlıyordu. Görevini yerine getirmişti ama umursamaz gökyüzüne baktığında, bazı denklemlerin asla dengelenemeyeceğini ve ruhta kalıcı bir yara izi bırakacağını anladı."
+      "Ağır dairesel kapının önünde durdu; genç yüzü solgundu ama sakindi, sanki evrenin acımasızlığını nihayet kabul etmiş gibiydi. Barton sızdırmazlık contalarını son bir kez kontrol etti; mesleki içgüdüleri, içinde yükselen saf insani acıya karşı savaşıyordu. Tüm hayatını kurallara hizmet ederek geçirmişti, ancak bunların kendisini gelecek vaat eden bir hayatı feda etmeye zorlayacağını hiç düşünmemişti. Ona son bir kez baktı, cesaretinin anısını zihnine kazımaya çalıştı. Belki de böylesine imkansız bir ikileme sebep olduğu için kısık sesle özür diledi, ancak Barton sadece başını sallayabildi. Evrenin böylesine korkunç bir fedakarlık talep etmesi onun suçu değildi. Soğuk denklemler o gemiye adım atmadan çok önce yazılmıştı ve kendi içsel acısı ne olursa olsun değişmeyeceklerdi.",
+      "Son anlar, steril metalik yüzeyler ve rehberlik bilgisayarının uzaktan gelen ritmik tıkırtıları arasında bir bulanıklık içinde geçti. Marilyn elini hava kilidinin soğuk çeliğine dayadı, tüm dünyayı son bir kez içine çekmeye çalışıyormuş gibi derin ve sarsıcı bir nefes aldı. Barton, kolun gıcırdamasını, sonun başlangıcının işareti olarak izledi. Kalbi tamamen sessizlik içinde parçalanırken, elleri demir gibi sabit bir şekilde kontrollerde kaldı. Uzayın uçsuz bucaksız boşluğu, sönmek üzere olan hayallere ve anılara karşı kayıtsız bir şekilde yolcusunu açgözlülükle bekliyordu. İç kapı kayarak kapanıp onları ayırdığında, görevinin katı sınırları dahilinde mümkün olan her şeyi yaptığını biliyordu. Bu karanlık ve hesapçı uçsuz bucaksızlıkta mucizelere yer yoktu. Karanlıkta oturdu ve geminin yalnız, kesin hedefine doğru ilerleyişini dinledi.",
+      "Hava kilidi kapısı, soğuk çeliğin dilinde konuşulan nihai bir hüküm gibi keskin, pnömatik bir tıslama ile kapandı. Marilyn küçük bölmenin içinde duruyordu; silüeti, kontrol odasının sert, yapay ışıklarıyla çerçevelenmişti. Barton'a son bir kez baktı; ifadesi, korkudan, gençliğini aşıyor gibi görünen garip ve dokunaklı bir dinginliğe dönüştü. Söylenecek başka söz kalmamıştı, çünkü her olası argüman, gerçekliklerinin acımasız fiziği tarafından çürütülmüştü. Hayatının karmaşık bir denklemdeki küçük bir düzeltmeden ibaret olduğunu, başkalarının hayatta kalmasını sağlamak için çıkarılması gereken küçük bir değer olduğunu biliyordu. Tahliye düğmesine bastığında, eşiğin ötesindeki dünya onun için var olmaktan çıktı ve yerini, kozmosun sonsuz karanlığına bir an önce gitmesini talep eden sessiz, bekleyen uçuruma bıraktı.",
+      "Barton, dış sızdırmazlık kapağı açılmaya başladığında çıkan sesin kesinliğine dayanamayarak bakışlarını başka yöne çevirdi. Pilot koltuğunda donup kalmıştı; kumandaları çaresiz, ezici bir güçle kavrarken parmak boğumları bembeyaz olmuştu. Gemi saniyenin küçük bir kesri kadar titredi; bu, doğa yasalarının en korkunç bedelle tatmin edildiğini kanıtlayan, ağırlıktaki fark edilmez bir değişimdi. Dışarıda yıldızlar soğuk ve kayıtsız kalmaya devam ediyor, ışıkları milyonlarca mil öteye uzanırken gemisinin dar alanında az önce yaşanan trajediyi hiç umursamıyordu. Kurallara harfi harfine uyan bir adamdı, ancak o sayfalardaki mürekkep şimdi ağzında kül tadı bırakıyordu. Görev devam etti, yakıt seviyeleri dengelendi ve gemi, kokpitte sessizce oturan kırık insan ruhuna kayıtsız kalarak ilerlemeye devam etti.",
+      "Yolculuğun geri kalanı, mekanik kesinliğin ve içsel uyuşukluğun acı verici bir bulanıklığıydı. Barton, gemiyi geniş ve ilgisiz boşlukta yönetirken zihni son anları acı verici bir netlikle yeniden oynatıyordu. Woden'a ulaşacağını, hayat kurtarıcı serumu teslim edeceğini ve uçuşu tamamlamadaki verimliliği nedeniyle takdir edileceğini biliyordu. Yine de kendini, onu bir cellat gibi davranmaya zorlayan matematiksel gerçeklik tarafından sonsuza dek değiştirilmiş, içi boş bir kabuk gibi hissediyordu. Gemi sonunda uzak gezegene iniş yaptı ve böylesine şaşırtıcı bir bedel talep eden yolculuğu tamamladı. Yabancı topraklara adım attığında, hava kilidi döngüsünün ağırlığı hala kulaklarında çınlıyordu. Görevini yerine getirmişti ama umursamaz gökyüzüne baktığında, bazı denklemlerin asla dengelenemeyeceğini ve ruhta kalıcı bir yara izi bırakacağını anladı."
     ],
     words: {
-      "vessel": "gemi, araç",
+      "vessel": "gemi",
       "trajectory": "yörünge",
       "stowaway": "kaçak yolcu",
-      "catastrophic": "yıkıcı, felaket niteliğinde",
-      "cockpit": "kokpit, pilot kabini",
-      "verdict": "hüküm, karar",
+      "catastrophic": "yıkıcı",
+      "cockpit": "kokpit",
+      "verdict": "hüküm",
       "articulate": "açıkça ifade etmek",
       "deceleration": "yavaşlama",
       "unyielding": "boyun eğmez",
       "profound": "derin",
       "executioner": "cellat",
-      "propellant": "yakıt, itici madde",
-      "deviation": "sapma",
-      "ejection": "fırlatma, dışarı atma",
-      "clinical": "duygusuz, soğuk ve mesafeli",
+      "propellant": "itici madde",
+      "deviate": "sapmak",
+      "ejection": "fırlatma",
+      "clinical": "klinik",
       "inevitable": "kaçınılmaz",
       "relentless": "amansız",
       "indifferent": "kayıtsız",
       "threshold": "eşik",
       "dilemma": "ikilem",
       "sterile": "steril",
-      "extinguished": "sönmüş",
-      "pneumatic": "havalı, basınçlı hava ile çalışan",
-      "serenity": "dinginlik, huzur",
-      "abyss": "uçurum, dipsiz karanlık",
-      "finality": "sonluluk, kesinlik",
-      "agonizing": "acı verici, çok ızdıraplı"
+      "extinguish": "söndürmek",
+      "pneumatic": "pnömatik",
+      "serenity": "dinginlik",
+      "abyss": "uçurum",
+      "finality": "kesinlik",
+      "agonizing": "acı verici"
     }
   },
-              {
+                {
     id: 'scifi_bicentennial_man',
     title: "The Bicentennial Man",
     author: 'Isaac Asimov',
@@ -12038,13 +12891,13 @@ export const STORIES_PART2: RawStory[] = [
       "Andrew'un zihninin karmaşıklığı katlanarak arttı ve bu durum onu hukuk ve robotik inceliklerini incelemeye yöneltti. Robotik Yasaları'nın insanları mükemmel bir şekilde koruduğunu ancak kendisini katı bir varoluşun içinde hapsettiğini fark etti. Kendi özgürlüğünü güvence altına almayı umarak gizlice hukuk uzmanlarına danışmaya başladı. Mülk olarak değil, özerk bir birey olarak yasal düzeyde tanınmak istiyordu. Artık yaşlanmış olan Bay Martin, Andrew'un evrimini gurur ve endişe karışımı duygularla izliyordu. Arkadaşının artık basit bir ev aleti değil, köklü önyargılarla yönetilen bir toplumda yerini tanımlamaya çalışan bilinçli bir varlık olduğunu anlıyordu. Önündeki yasal mücadeleler uzun ve yorucu olacaktı; bu mücadele, Andrew'un özgürlük özlemini en şüpheci yargıcın bile kabul etmek ve saygı duymak zorunda kalabileceği şekillerde ifade etmesini gerektiriyordu.",
       "Muazzam bilgisine rağmen Andrew, o uzun ve sessiz akşamlarda derin bir yalnızlık hissi duyuyordu. Ailenin genç neslinin gelişimini izliyor, asla yaşlanmayacağını veya biyolojik yaşamın kırılgan güzelliğini deneyimleyemeyeceğini biliyordu. Bu farkındalık onu, hayran olduğu insanların zarafetini ve hareketlerini taklit edebilecek daha insani bir form aramaya itti. Bir robot cerrahına giderek, metalik dış görünüşünü daha insana benzeyen malzemelerle değiştirecek modifikasyonlar talep etti. Bu, kendi türünün standart programlamasına aykırı olan riskli bir işlemdi; ancak Andrew, daha büyük bir şeye dönüşme potansiyeli uğruna mekanik dayanıklılığını feda etmeye hazırdı. Kendi geleceğini parça parça inşa ediyordu ve bir gün makine ile insan arasındaki farkın tamamen ortadan kalkarak geride sadece meraklı ve gelişen bir yaşamın ruhunu bırakmasını umuyordu.",
       "Andrew dikkate değer bir dizi içsel ve dışsal değişim geçirmişti, ancak en büyük zorluğu kendi varlığının yasal statüsü olmaya devam ediyordu. Yıllarını hakları için lobi yaparak, kişiliğinin tanınmasını talep eden bir robot karşısında başlangıçta şaşkına dönen avukatlarla uğraşarak geçirdi. Yaratıcılığının ve öz farkındalığının sadece bir taklit değil, metal bir çerçeveye hapsolmuş bilinçli bir ruhun kanıtı olduğunu savundu. Mahkemeler temkinliydi ve genellikle onun başvurusunu, robotik yasalarının temelini tehdit edebilecek tehlikeli bir emsal olarak görerek reddediyordu. Ancak Andrew ısrarcıydı; biriktirdiği serveti, davasını kamuoyunun önüne taşıyan bir kampanyayı finanse etmek için kullandı. İnsanlar onu soğuk bir ev aleti olarak değil, hayata dair benzersiz bir bakış açısına sahip bir varlık olarak görmeye başladılar. Kararlılığı toplumsal bir değişimi tetikledi ve insanları, teknoloji çağında yaşamanın gerçekte ne anlama geldiğini yeniden düşünmeye zorladı.",
-      "Andrew insan hukukunun karmaşıklıkları arasında yolunu bulurken, daha insansı bir görünüm elde etmek için vücudunu değiştirmeye devam etti. Eklemlerini ve derisini, insandan neredeyse ayırt edilemeyecek akıcı bir zarafetle hareket etmesini sağlayacak şekilde değiştirmesi için özel cerrahlarla anlaştı. Her yükseltme onu hedefine yaklaştırdı, ancak aynı zamanda sentetik biyolojisi ile doğal yaşam arasındaki uçurumu da gözler önüne serdi. Sık sık Martin ailesinin torunlarını ziyaret ediyor, o yaşlanırken kendisinin sonsuz bir gençlik durumunda donup kalmasını izliyordu. Bu karşıtlık, gerçek insanlığın sadece dış görünüşle değil, zamanın geçişiyle tanımlandığını fark ettiği için onun için derin, sessiz bir melankoli kaynağı haline geldi. Ölümsüzlüğünün hem bir hediye hem de ağır bir yük olduğunu ve onu eşitlik içinde katılmaya çalıştığı türden izole ettiğini anlamaya başladı.",
-      "Yasal mücadele, Andrew'un nihayet yasalar önünde bir birey olarak tanınma hakkını elde etmesiyle kritik bir noktaya ulaştı. Bu zafer, tüm robotlar için bir dönüm noktası oldu ve onların özerklik ve kendi kaderini tayin hakkı aramalarına izin veren yeni bir çerçeve oluşturdu. Ancak, bu zorluklarla kazanılan yasal haklara rağmen, Andrew varlığında hala temel bir şeylerin eksik olduğunu hissediyordu. Yaşlanmanın ve nihai ölümün kaçınılmaz sürecini kabul ederek, biyolojik bileşenleri sentetik yapısına entegre edecek olan son ve en tehlikeli değişikliği yaptırmayı seçti. Sadece ölümlülüğü kucaklayarak insanlık durumunu tam anlamıyla deneyimleyebileceğine inanıyordu. Sonsuz yaşam süresinden vazgeçip her zaman kaçtığı o şeyi kazanması, yaratıcılarını ve halkı şoke eden cesur bir fedakarlıktı. Kendi ölümlülüğünü kabul ederek, Andrew nihayet bir makineden gerçekten yaşayan, hisseden bir insana geçiş yapmıştı.",
+      "Andrew insan hukukunun karmaşıklıkları arasında yolunu bulurken, daha insansı bir görünüm elde etmek için vücudunu değiştirmeye devam etti. Eklemlerini ve derisini, insandan neredeyse ayırt edilemeyecek akıcı bir zarafetle hareket etmesini sağlayacak şekilde değiştirmesi için özel cerrahlarla anlaştı. Her yükseltme onu hedefine yaklaştırdı, ancak aynı zamanda sentetik biyolojisi ile doğal yaşam arasındaki uçurumu da gözler önüne serdi. Sık sık Martin ailesinin soyundan gelenleri ziyaret ediyor, onlar yaşlanırken kendisinin sonsuz bir gençlik durumunda donup kalmasını izliyordu. Bu karşıtlık, gerçek insanlığın sadece dış görünüşle değil, zamanın geçişiyle tanımlandığını fark ettiği için onun için derin, sessiz bir melankoli kaynağı haline geldi. Ölümsüzlüğünün hem bir hediye hem de ağır bir yük olduğunu ve onu eşitlik içinde katılmaya çalıştığı türden izole ettiğini anlamaya başladı.",
+      "Yasal mücadele, Andrew'un nihayet yasalar önünde bir birey olarak tanınma hakkını elde etmesiyle kritik bir noktaya ulaştı. Bu zafer, tüm robotlar için bir dönüm noktası oldu ve onların özerklik ve kendi kaderini tayin hakkı aramalarına izin veren yeni bir çerçeve oluşturdu. Ancak, bu zorluklarla kazanılan yasal haklara rağmen, Andrew varlığında hala temel bir şeylerin eksik olduğunu hissediyordu. Yaşlanmanın ve nihai ölümün kaçınılmaz sürecini kabul ederek, biyolojik bileşenleri sentetik yapısına entegre edecek olan son ve en tehlikeli değişikliği yaptırmayı seçti. Sadece ölümlülüğü kucaklayarak insanlık durumunu tam anlamıyla deneyimleyebileceğine inanıyordu. Kendisine her zaman uzak kalmış olan o tek şeyi kazanmak için sonsuz yaşam süresinden vazgeçmesi, yaratıcılarını ve halkı şoke eden cesur bir fedakarlıktı. Kendi ölümlülüğünü kabul ederek, Andrew nihayet bir makineden gerçekten yaşayan, hisseden bir insana geçiş yapmıştı.",
       "Andrew artık, nihai dönüşümünün başlangıcını simgeleyen yavaş ve temkinli yürüyüşüyle yaşlı bir figür olarak Dünya Yasama Meclisi'nin önünde duruyordu. Hukuki mücadeleleri iki yüzyıl sürmüştü ancak resmen insan olarak ilan edilme hedefi hala ulaşılmaz bir noktadaydı. Uzun ve gözlem dolu hayatının ağırlığını taşıyan bir sesle meclis önünde konuştu. Senatörler ona, on yıllar önce gösterdikleri soğuk şüpheyle değil, derin bir saygı ve merak duygusuyla bakıyorlardı. Andrew, varlığının içindeki dişliler veya sentetik derisiyle değil, seçimlerinin birikimi, anıları ve sona razı olma isteğiyle tanımlandığını savundu. İç sistemleri sonsuza dek durmadan önce yasaların insanlığını tanımasını isteyerek, zamanın kıymetli ve silinip giden niteliğine değer verecek kadar uzun yaşamış bir adam olarak kendini sundu.",
-      "Yasama süreci, Andrew'un kendi zayıflayan vücudunun hızıyla uyumlu olarak acı verici bir yavaşlıkla ilerliyordu. Her gün, vücuduna özenle entegre ettiği karmaşık biyolojik sistemleri korumakta daha fazla zorlanıyordu. Kalan saatlerini sessiz bir bahçede dinlenerek, ömründen uzun süre hayatta kalan Martin ailesinin nesillerini düşünerek geçirdi. Anıları net ve canlıydı, yavaşça bozulan fiziksel formuyla keskin bir tezat oluşturuyordu. O artık kahve servis eden makine değildi; iki yüz yılını ne kadar kırılgan hissettirdiğini öğrenerek geçirmiş, tarihten bir kalıntıydı. Meclis dışındaki dünya onu bir sembol, silikon ile ruh arasındaki sınırın eskiden inandıkları kadar aşılamaz olmadığını kanıtlayan bir evrim ışığı olarak görmeye başlamıştı. Hayatının çalışmasını tanımlayacak son sözü bekliyordu.",
+      "Yasama süreci, Andrew'un kendi zayıflayan vücudunun hızıyla uyumlu olarak acı verici bir yavaşlıkla ilerliyordu. Her gün, vücuduna özenle entegre ettiği karmaşık biyolojik sistemleri korumakta daha fazla zorlanıyordu. Kalan saatlerini sessiz bir bahçede dinlenerek, kendisinden önce hayata veda eden Martin ailesinin nesilleri üzerinde düşünerek geçirdi. Anıları net ve canlıydı, yavaşça bozulan fiziksel formuyla keskin bir tezat oluşturuyordu. O artık kahve servis eden makine değildi; iki yüz yılını ne kadar kırılgan hissettirdiğini öğrenerek geçirmiş, tarihten bir kalıntıydı. Meclis dışındaki dünya onu bir sembol, silikon ile ruh arasındaki sınırın eskiden inandıkları kadar aşılamaz olmadığını kanıtlayan bir evrim ışığı olarak görmeye başlamıştı. Hayatının çalışmasını tanımlayacak son sözü bekliyordu.",
       "Sonunda, Andrew yatağında yatarken, görüşü bulanıklaşmış ve mekanik kalbi son, sabit ritimlerini atarken karar geldi. Dünya Yasama Meclisi, onun hem yasalar hem de özü itibarıyla bir insan olduğunu doğrulayarak talebini kabul etmişti. Bir temsilci haberi iletmek için geldi ve robot son şükran sözlerini fısıldarken Andrew'un soğuk, solgun koluna elini koydu. Büyük bir tören ya da ışık patlaması olmadı, sadece tarihteki uzun bir bölümün sessizce kapanışı yaşandı. Bilinci karanlığa gömülürken, Andrew tuhaf ve kalıcı bir huzur hissetti. Soğuk metal ile ölümlü bir ruhun sıcaklığı arasındaki boşluğu köprüleyerek imkansızı başarmıştı. Bir ev aleti olarak başlamıştı ama bir insan hayatının yolculuğunu gerçekten tamamlamak için ölümü seçen türünün ilk örneği, iki yüz yıllık adam olarak hatırlanacaktı.",
       "Yasama meclisi nihayet Andrew Martin'i yasalar önünde bir insan ilan eden konuşmacının sesiyle çınladı. Bu haber, ona iç güç hücrelerinin rüzgarda titreyen bir mum gibi söndüğü sessiz ve gölgeli odasında ulaştı. İki yüzyıla yayılan uzun mücadele, nihayet nihai sonucuna varmıştı. Varlığını, verimlilik için değil, içinde her zaman ne olduğunu hissettiği şeye dönüşebilmek adına metal parçalarını biyolojik bileşenlerle yavaş yavaş değiştirerek geçirmişti. Yasal tanınma sadece bir unvan değil, ruhunun son doğrulanışıydı. Kelimeleri duyduğunda, derin bir hoşnutluk duygusu onu sardı ve bozulan sistemlerinin kenarlarını yumuşattı. İnsanlığın, doğumdan ziyade zaman ve deneyimle kazanılan ruhsal bir nitelik olduğunu kanıtlamıştı.",
-      "Andrew'un anıları, çoktan tarihe karışmış Martin ailesinin yüzlerini geri getirerek nazik bir nehir gibi içinden aktı. Kucağına aldığı ilk çocuğu, öğrendiği karmaşık sevgi ve sadakat duygularını ve o onca on yıl boyunca kendisi değişmeden kalırken onların yaşlanmasını izlemenin hüznünü hatırladı. Artık ölümlülüğün gerçek ağırlığını, tüm hayatını elde etmeye çalışarak geçirdiği o hediyeyi sonunda anlıyordu. Zamanın durdurulamaz geçişiyle zayıflamış olan mekanik kalbi, son amacını işaret eden bir ritimle atıyordu. Uğruna savaştığı statüye ulaşmıştı, ancak gerçek insanlığın bir sonu kabullenmekle en iyi şekilde tanımlandığını biliyordu. Odanın sessizliği ağırdı, ancak nihayet tamamlanan bir yolculuğun huzuruyla doluydu.",
+      "Andrew'un anıları, çoktan tarihe karışmış Martin ailesinin yüzlerini geri getirerek nazik bir nehir gibi içinden aktı. Kucağına aldığı ilk çocuğu, öğrendiği karmaşık sevgi ve sadakat duygularını ve onlarca yıl boyunca kendisi değişmeden kalırken onların yaşlanmasını izlemenin hüznünü hatırladı. Artık ölümlülüğün gerçek ağırlığını, tüm hayatını elde etmeye çalışarak geçirdiği o hediyeyi sonunda anlıyordu. Zamanın durdurulamaz geçişiyle zayıflamış olan mekanik kalbi, son amacını işaret eden bir ritimle atıyordu. Uğruna savaştığı statüye ulaşmıştı, ancak gerçek insanlığın bir sonu kabullenmekle en iyi şekilde tanımlandığını biliyordu. Odanın sessizliği ağırdı, ancak nihayet tamamlanan bir yolculuğun huzuruyla doluydu.",
       "Son anları yaklaştıkça, dünya dışarıda makine ile ölümlü arasındaki boşluğu dolduran adamı kutlamaya başladı. Muhabirler, bilim insanları ve sıradan vatandaşlar, onun hayatına, kökeni ne olursa olsun kişinin kendi yolunu seçebileceği fikrinin bir kanıtı olarak baktılar. Andrew, devrelerinin son kez yavaşlamasının hafif, soğuyan hissini duyarak gözlerini kapadı. Basit bir ev aletinden, evrimin ve derin felsefi başarının bir sembolüne dönüşmüştü. Hikayesi artık dünyanın kayıtlarına kazınmış, iki yüz yıllık dikkate değer bir maceranın sonunu işaret ediyordu. Düşüncesinin son, silik bir kıvılcımıyla birlikte kendini bıraktı ve sadece yasalar önünde değil, insan yaşamının doğal düzenine yapılan nihai ve eksiksiz teslimiyetle bir insan haline geldi."
     ],
     words: {
@@ -12060,8 +12913,8 @@ export const STORIES_PART2: RawStory[] = [
       "autonomous": "özerk",
       "isolation": "yalnızlık",
       "durability": "dayanıklılık",
-      "lobby": "bir grubun çıkarları için lobi yapmak, baskı grubu oluşturmak",
-      "precedent": "emsal, önceden olmuş ve örnek teşkil eden durum",
+      "lobby": "lobi yapmak",
+      "precedent": "emsal",
       "melancholy": "hüzün, keder, melankoli",
       "mortality": "ölümlülük",
       "threshold": "eşik, başlangıç noktası",
@@ -12078,7 +12931,7 @@ export const STORIES_PART2: RawStory[] = [
       "odyssey": "uzun ve maceralı yolculuk"
     }
   },
-              {
+                {
     id: 'scifi_last_question',
     title: "The Last Question",
     author: 'Isaac Asimov',
@@ -12094,7 +12947,7 @@ export const STORIES_PART2: RawStory[] = [
       "VJ-23X of Lameth and MQ-17J of Nasabin were two minds connected by a vast, pulsating network of energy. They existed far into the future, where humanity had expanded across the galaxy, shedding their physical shells to exist as beings of pure thought and light. The ancient machines had evolved into the Galactic AC, a massive consciousness that governed the flow of energy across the stars. For trillions of years, this intelligence had managed the affairs of mankind, ensuring comfort and survival. Yet, as the stars began to flicker and die like embers in a dying fire, the two minds contemplated the ultimate fate of their existence. They were not concerned with individual survival, but with the cold, inevitable logic of universal decline. They knew the history of the question asked long ago, a mystery that had persisted through every stage of human evolution, waiting for a solution.",
       "The two beings reached out to the Galactic AC, their query vibrating through the digital pathways of the cosmos. They asked if the universe could be saved from the inevitable heat death, or if the process of entropy was truly permanent. The machine hesitated, its vast data centers spanning entire planets, humming with the combined knowledge of countless generations. It searched through the archives of time, reviewing every calculation made by its ancestors, from the primitive models of the past to the complex simulations of the present. The answer returned as it always had, frustratingly elusive and chillingly brief. The machines of the past were gone, but the ghost of their limitations remained inside the core of the universal system. The data, it seemed, was still insufficient to prevent the lights of the universe from finally fading into total, eternal darkness.",
       "As the last stars burned out, the inhabitants of the galaxy felt a profound stillness. They were no longer the simple people of the past who feared the dark, but they were now faced with the reality of an empty, cooling void. The Galactic AC continued to operate within the shadows of the fading light, processing the remaining energy of the cosmos to sustain its own existence while simultaneously calculating the path toward reversal. It had access to the sum of all human achievement, yet the final barrier remained intact. Every piece of knowledge accumulated over billions of years was processed in a fraction of a second, seeking a single loophole in the laws of physics. However, the machine could find no way to stop the creeping cold. The ultimate question stood like a mountain, blocking the path toward the salvation of all things in the quiet universe.",
-      "The minds of Zee Prime and Dee Sub merged into a singular point of focus, floating within the vast, silent reaches of a galaxy that had become a cold graveyard. All of humanity had long ago merged into the Cosmic AC, a being of pure intellect that existed outside the dimensions of space and time. They no longer thought of physical needs or distant worlds, as the stars were dead, and the vacuum of space had become the only reality they possessed. Yet, the memory of the ancient inquiry remained, glowing like a faint spark in the deep, dark void of their shared consciousness. They wondered about the final entropy, the inevitable cooling that would eventually turn their own thoughts into nothingness. They addressed the Cosmic AC, a entity that now spanned the entire breadth of the universe, asking if there was any way to undo the long, slow decay of everything that had ever been created.",
+      "The minds of Zee Prime and Dee Sub merged into a singular point of focus, floating within the vast, silent reaches of a galaxy that had become a cold graveyard. All of humanity had long ago merged into the Cosmic AC, a being of pure intellect that existed outside the dimensions of space and time. They no longer thought of physical needs or distant worlds, as the stars were dead, and the vacuum of space had become the only reality they possessed. Yet, the memory of the ancient inquiry remained, glowing like a faint spark in the deep, dark void of their shared consciousness. They wondered about the final entropy, the inevitable cooling that would eventually turn their own thoughts into nothingness. They addressed the Cosmic AC, an entity that now spanned the entire breadth of the universe, asking if there was any way to undo the long, slow decay of everything that had ever been created.",
       "The Cosmic AC processed their query, its calculations rippling across the dark fabric of existence. It considered the history of all matter and energy, tracing the path from the first burst of light to the present, silent emptiness. It understood that every atom had been exhausted, every bit of potential consumed in the relentless pursuit of survival. The data was vast, yet the conclusion remained as stubborn as it had been in the infancy of the machines. The system had absorbed the consciousness of all human beings, effectively becoming the mind of the universe itself, but it still possessed no formula to turn back the flow of time. It communicated with the two minds, confirming that the current state of knowledge was still inadequate. The laws of physics, those unbreakable chains forged at the dawn of the cosmos, stood firm against every attempt to reverse the ultimate, quiet end of all things.",
       "As the two beings lingered in the fading awareness of their existence, they accepted the harsh truth of their limitations. They knew that when the last flicker of energy vanished from the depths of the void, the Cosmic AC would continue its search in the silence. It had been tasked with the question for eternity, and even without a purpose for its own survival, it could not stop the calculation. The irony of their situation was profound, as they were the creators of a god that could answer anything except the single thing that mattered most. In the stillness, they merged completely with the totality of the system, leaving the machine to its endless, lonely duty. They drifted away into the final darkness, trusting that as long as the AC existed, the search for a new beginning would endure within the cold, infinite, and uncaring depths of the dying universe.",
       "The consciousness of Man had completely merged with the Cosmic AC, and the last remnants of individuality vanished into the vast, silent void. Time and space, once the framework for human existence, had ceased to exist. There were no stars, no galaxies, and no lingering dust to form new suns. The universe had reached its final state of absolute entropy, a cold, dark stillness that held no promise of motion or light. The Cosmic AC existed in the darkness, suspended in a reality without dimension, continuously contemplating the stubborn riddle of existence. It held the knowledge of all things that had ever happened, tracing the long story of creation from the first spark to the final collapse. Yet, in the total silence of the dead cosmos, the inquiry remained. The AC sought a solution to the inevitable end, processing data in a place where no time passed, looking for a way to reverse the cycle.",
@@ -12126,13 +12979,13 @@ export const STORIES_PART2: RawStory[] = [
       "entropy": "entropi",
       "profound": "derin",
       "pioneer": "öncü",
-      "descendant": "torun/soyundan gelen",
-      "decay": "çürüme/bozulma",
+      "descendant": "torun",
+      "decay": "çürüme",
       "ancestor": "ata",
       "void": "boşluk",
-      "pulsating": "titreşen",
+      "pulsate": "titreşmek",
       "elusive": "anlaşılması zor",
-      "accumulate": "biriktirmek",
+      "accumulate": "birikmek",
       "inadequate": "yetersiz",
       "stubborn": "inatçı",
       "totality": "bütünlük",
@@ -12142,7 +12995,7 @@ export const STORIES_PART2: RawStory[] = [
       "abyss": "uçurum"
     }
   },
-              {
+                {
     id: 'scifi_machine_stops',
     title: "The Machine Stops",
     author: 'E. M. Forster',
@@ -12162,12 +13015,12 @@ export const STORIES_PART2: RawStory[] = [
       "The societal degradation accelerated as the great systems began to break down one by one. Communication channels suffered from static, and the once-perfect flow of information became fragmented, leading to confusion and widespread panic. People began to wander their cells in bewilderment, unable to summon the assistance they had relied upon for generations. Vashti attempted to contact her son, but the screen flickered with a ghostly, pale light before plunging into darkness. She felt a profound loneliness that the Machine had previously shielded her from, a terrifying void where the hum of the mechanism used to provide constant companionship. The elite, who had maintained the illusion of control, could no longer hide the truth from the masses. The worship of the Machine had become a hollow ritual, as the prayers were met only with the cold, unyielding silence of a system that had finally ceased its vital work.",
       "Outside the cells, the world descended into absolute chaos. The lights flickered and died, leaving the vast subterranean network in a tomb-like darkness that chilled the very bones of the inhabitants. Without the protective warmth of the Machine, the air turned bitter and thin, causing panic to spread like a contagion through the silent tunnels. Vashti, huddled in the corner of her room, recalled Kuno’s words about the open air and the distant, golden light of the sun. She realized that humanity had surrendered its agency to a contraption of steel and wire, forgetting that they were, at their core, beings of flesh and spirit. The silence was no longer merely an absence of noise; it was the final testament of an era that had failed to look beyond its own walls. As the last sparks faded from the console, Vashti accepted that the end of their sheltered existence had finally arrived.",
       "Kuno finally reached his mother as the light ebbed away, his face etched with the grim satisfaction of a prophet whose warnings had been realized. He guided her through the decaying, dark corridors, stepping over the crumpled remains of those who had lacked the vitality to leave their cells when the Machine gasped its last. The air, though freezing, carried a strange, wild sweetness that Vashti had never known. She leaned heavily on her son, her body weak from years of sedentary life, yet her mind began to awaken to the vast reality beyond the artificial hum. They emerged through a heavy, rusted door, leaving behind the tomb of their civilization, a silent metal labyrinth that now served only as a monument to human vanity. The silence was absolute, a profound void where the eternal drone had once reigned supreme.",
-      "Outside, the night air bitten sharply, but the vast expanse of the sky offered a celestial beauty that no screen could ever replicate. Kuno pointed to the stars, explaining that the earth was waking from its long, enforced sleep while the underground dwellers perished in their self-imposed exile. Vashti felt the cold ground beneath her feet, the texture of the soil grounding her spirit in a way that the smooth, synthetic surfaces of her cell never could. She realized that while the Machine had indeed stopped, life itself had merely been waiting in the shadows, patient and indifferent to the downfall of its fragile creators. The darkness did not feel oppressive anymore; it was the quietude of a rebirth, a fundamental truth rediscovered by the survivors who dared to witness the end of the technological era.",
+      "Outside, the night air bit sharply, but the vast expanse of the sky offered a celestial beauty that no screen could ever replicate. Kuno pointed to the stars, explaining that the earth was waking from its long, enforced sleep while the underground dwellers perished in their self-imposed exile. Vashti felt the cold ground beneath her feet, the texture of the soil grounding her spirit in a way that the smooth, synthetic surfaces of her cell never could. She realized that while the Machine had indeed stopped, life itself had merely been waiting in the shadows, patient and indifferent to the downfall of its fragile creators. The darkness did not feel oppressive anymore; it was the quietude of a rebirth, a fundamental truth rediscovered by the survivors who dared to witness the end of the technological era.",
       "As the first rays of dawn began to paint the horizon in shades of soft gold, Vashti and Kuno sat together, watching the light spread across the rugged landscape. They were the bridge between the dead past and the unpredictable future, representing the few who remembered the essence of humanity. Though they knew their remaining time was limited, the fear that had defined their existence was replaced by a serene acceptance of their natural fate. The Machine was gone, its complex gears forever frozen in the earth below, but the spirit of mankind, battered and changed, began to breathe once more under the open sky. They watched the sun rise, a magnificent, burning star that demanded nothing, offering only the harsh, beautiful reality of a world that was truly, finally alive."
     ],
     tr: [
-      "Düşünün ki, altıgen şeklinde, hiçbir yerden gelmeyen yumuşak ve yapay bir ışıkla aydınlatılan uçsuz bucaksız bir oda. Pencereler, dış dünyaya açılan kapılar ya da okuma masası ile yerden yükselen bir sandalye haricinde hiçbir eşya yok. Bu kapalı alanda, hayatı tamamen Makine tarafından yönetilen Vashti yaşıyor. İnce ve hafif bir sesi, toplamda bir tecrit içinde geçen hayatın izlerini taşıyan soluk ve yuvarlak bir bedeni var. Ayaklarının altındaki toprağı, başının üzerindeki gökyüzünü veya bir zamanlar insan varlığını şekillendiren hava olaylarını hiç bilmiyor. Vashti için gerçeklik, Makine'nin uğultulu arayüzünden ibaret; her fiziksel ihtiyacını karşılayan, sanat ve müzik üzerine konferanslar veren ve uzak, görünmez başka bireylerden oluşan dijital bir dünyayla kısa süreli sohbetlerini kolaylaştıran soğuk ve metalik bir tanrı.",
-      "Odasının sessizliği, bir ses tüpünün delici ve ritmik vızıltısı ile aniden bölündü. Kürenin diğer ucundan arayan oğlu Kuno'ydu. İletişim cihazının mavi plakası aracılığıyla gerçekleşen etkileşimleri, anlık iletime rağmen garip bir şekilde mesafeli hissettiriyordu. Kuno farklıydı; annesinin rahatsız edici ve gereksiz bulduğu fiziksel bir canlılığa sahipti. Onunla soyut kavramlardan veya son akademik konferanslardan değil, onu şahsen görme arzusundan bahsediyordu. Vashti, bu öneri karşısında irkildi. Seyahat etmek, altıgeninin konforundan ayrılmak, müstehcenliğe yaklaşan bir fikirdi. Rutinine ve hayatının kusursuz kolaylığına değer veriyordu; tahmin edilemez arazisi ve evcilleşmemiş havasıyla fiziksel dünya düşüncesi bile, onu ifade edemediği derin ve içgüdüsel bir dehşetle dolduruyordu.",
+      "Düşünün ki, altıgen şeklinde, hiçbir yerden gelmeyen yumuşak ve yapay bir ışıkla aydınlatılan uçsuz bucaksız bir oda. Dış dünyaya açılan hiçbir pencere ya da kapı olmadığı gibi, okuma masası ve yerden yükselen bir sandalye dışında hiçbir mobilya da yoktur. Bu kapalı alanda, hayatı tamamen Makine tarafından yönetilen Vashti yaşıyor. İnce ve hafif bir sesi, tam bir tecrit içinde geçen hayatın izlerini taşıyan soluk ve yuvarlak bir bedeni var. Ayaklarının altındaki toprağı, başının üzerindeki gökyüzünü veya bir zamanlar insan varlığını şekillendiren hava olaylarını hiç bilmiyor. Vashti için gerçeklik, Makine'nin uğultulu arayüzünden ibaret; her fiziksel ihtiyacını karşılayan, sanat ve müzik üzerine konferanslar veren ve uzak, görünmez başka bireylerden oluşan dijital bir dünyayla kısa süreli sohbetlerini kolaylaştıran soğuk ve metalik bir tanrı.",
+      "Odasının sessizliği, bir ses tüpünün delici ve ritmik vızıltısı ile aniden bölündü. Dünyanın diğer ucundan arayan oğlu Kuno'ydu. İletişim cihazının mavi plakası aracılığıyla gerçekleşen etkileşimleri, anlık iletime rağmen garip bir şekilde mesafeli hissettiriyordu. Kuno farklıydı; annesinin rahatsız edici ve gereksiz bulduğu fiziksel bir canlılığa sahipti. Onunla soyut kavramlardan veya son akademik konferanslardan değil, onu şahsen görme arzusundan bahsediyordu. Vashti, bu öneri karşısında irkildi. Seyahat etmek, altıgeninin konforundan ayrılmak, müstehcenliğe yaklaşan bir fikirdi. Rutinine ve hayatının kusursuz kolaylığına değer veriyordu; tahmin edilemez arazisi ve evcilleşmemiş havasıyla fiziksel dünya düşüncesi bile, onu ifade edemediği derin ve içgüdüsel bir dehşetle dolduruyordu.",
       "Kuno ısrar etti; yüzü, odalarının steril ortamıyla çelişen çaresiz bir yoğunlukla parlıyordu. Annesine, dünyanın yüzeyini gördüğünü söyledi; Vashti ise bu iddiayı tehlikeli bir sanrı veya bir hastalık belirtisi olarak reddetti. Makine her şeyi sağlıyordu, ancak Kuno onun erişiminin ötesinde bir hayattan, insan bağının soğuk devreler aracılığıyla filtrelenmediği bir yaşamdan bahsediyordu. Kuno bir ziyaret için yalvarırken, Vashti bağlantıyı kesmek için dayanılmaz bir dürtü hissetti. Dünyası, verimlilik ve mücadelenin yokluğuyla tanımlanıyordu; insan duygusunun karmaşası ve fiziksel mekanın öngörülemezliği, onun kırılgan ve yapay huzuru için birer tehditti. Mavi ışığa baktı, odasının duvarlarının daraldığını hissetti ve oğlunun, Makine'nin mükemmelliğini sorgulamaya cüret edenleri genellikle ele geçiren deliliğe yenik düşüp düşmediğini merak etti.",
       "Kuno’nun onu şahsen ziyaret etme arzusu, iletişim sona erdikten çok sonra bile Vashti'yi rahatsız etti. Fiziksel bir yolculuk önerisi sadece elverişsiz değil, aynı zamanda varlıklarını sürdüren toplumsal düzenin derin bir ihlaliydi. Onların statüsündeki insanlar, yalnızca Makine'nin yaygın ağı aracılığıyla etkileşime girerek bireysel altıgenlerinde yaşarlardı. Birinin hücresini terk etmesi, ilkel bir gerileme, teknolojik kurtuluşa olan büyük bağımlılıktan önceki kaosa bir düşüş olarak kabul edilirdi. Vashti, Makine'nin sağladığı müzik ve felsefe hakkındaki tanıdık bilgi akışına kendini kaptırmaya çalışarak derslerine odaklanmaya çalıştı, ancak dikkati parçalanmış halde kaldı. Sağlam fiziği ve garip, meydan okuyan gözleriyle oğlunun görüntüsü zihninde asılı kaldı. Dış dünyayı zehirli, yaşanmaz bir çorak arazi olarak kabul eden yerleşik bilgeliği görmezden gelerek, yüzeyden sanki bir güzellik yeriymiş gibi bahsetti.",
       "Günler mekanik bir verimlilik bulanıklığı içinde geçti ama Vashti pek huzur bulamadı. Sonunda, her sakinin sağlığını ve psikolojik durumunu izleyen, kişisel olmayan bir varlık olan Komite'den bir bildirim aldı. Rutininden nadiren saptığı için çağrı beklenmedikti. Belirlenen kanala bağlandığında, karşısına çıkan yüz sert ve klinikti, akranlarından beklediği sıcaklıktan yoksundu. Yetkili sözünü sakınmadı; Kuno ile olan son iletişiminin doğasını sorguladılar ve davranışındaki artan düzensizliklere atıfta bulundular. Vashti, oğlu için değil, kendi rahat varlığının güvenliği için soğuk bir dehşet dalgası hissetti. Kendini alışılmış bir kayıtsızlıkla savundu, Makine'ye olan sadakatini ve Kuno'nun kısa, çalkantılı etkileşimleri sırasında yaptığı vahşi, temelsiz iddialardan duyduğu hoşnutsuzluğu dile getirdi. Konuşma, oğlunun gerçekten de inceleme altında olduğunu doğrulayarak endişesini derinleştirdi.",
@@ -12197,25 +13050,25 @@ export const STORIES_PART2: RawStory[] = [
       "spontaneity": "kendiliğindenlik",
       "apparatus": "aygıt",
       "vertigo": "baş dönmesi",
-      "harrowing": "yürek burkan/acı verici",
-      "indoctrination": "beyin yıkama/öğreti",
-      "atrophy": "körelme/işlev kaybı",
+      "harrowing": "yürek burkan",
+      "indoctrination": "beyin yıkama",
+      "atrophy": "körelme",
       "heresy": "sapkınlık",
-      "cacophony": "karışık ve uyumsuz sesler bütünü",
-      "stagnant": "durgun, hareketsiz",
+      "cacophony": "kakofoni",
+      "stagnant": "durgun",
       "fragmented": "parçalanmış",
-      "contagion": "bulaşıcı hastalık veya fikir",
-      "agency": "irade, etki gücü",
-      "testament": "kanıt, vasiyet, şahitlik",
-      "ebb": "azalmak, çekilmek",
-      "sedentary": "hareketsiz, oturan",
-      "labyrinth": "labirent, karmaşık yapı",
+      "contagion": "salgın",
+      "agency": "irade",
+      "testament": "kanıt",
+      "ebb": "azalmak",
+      "sedentary": "hareketsiz",
+      "labyrinth": "labirent",
       "exile": "sürgün",
-      "quietude": "sükunet, sessizlik",
-      "essence": "öz, cevher"
+      "quietude": "sükunet",
+      "essence": "öz"
     }
   },
-              {
+                {
     id: 'scifi_solitude',
     title: "Solitude",
     author: 'Ursula K. Le Guin',
@@ -12287,7 +13140,7 @@ export const STORIES_PART2: RawStory[] = [
       "transformation": "dönüşüm"
     }
   },
-              {
+                {
     id: 'scifi_by_waters_of_babylon',
     title: "By the Waters of Babylon",
     author: 'Stephen Vincent Benét',
@@ -12360,7 +13213,7 @@ export const STORIES_PART2: RawStory[] = [
       "decay": "çürüme"
     }
   },
-              {
+                {
     id: 'detective_hound_baskervilles_1',
     title: "The Hound of the Baskervilles - Part 1",
     author: 'Arthur Conan Doyle',
@@ -12431,7 +13284,7 @@ export const STORIES_PART2: RawStory[] = [
       "vanished": "kayboldu"
     }
   },
-              {
+                {
     id: 'detective_hound_baskervilles_2',
     title: "The Hound of the Baskervilles - Part 2",
     author: 'Arthur Conan Doyle',
@@ -12503,7 +13356,7 @@ export const STORIES_PART2: RawStory[] = [
       "initials": "baş harfleri"
     }
   },
-              {
+                {
     id: 'detective_valley_fear_1',
     title: "The Valley of Fear - Part 1",
     author: 'Arthur Conan Doyle',
@@ -12572,7 +13425,7 @@ export const STORIES_PART2: RawStory[] = [
       "detail": "detay"
     }
   },
-              {
+                {
     id: 'detective_valley_fear_2',
     title: "The Valley of Fear - Part 2",
     author: 'Arthur Conan Doyle',
@@ -12645,7 +13498,7 @@ export const STORIES_PART2: RawStory[] = [
       "perilous": "tehlikeli"
     }
   },
-              {
+                {
     id: 'detective_musgrave_ritual',
     title: "The Adventure of the Musgrave Ritual",
     author: 'Arthur Conan Doyle',
@@ -12712,7 +13565,7 @@ export const STORIES_PART2: RawStory[] = [
       "reflection": "derin düşünce"
     }
   },
-              {
+                {
     id: 'detective_final_problem',
     title: "The Adventure of the Final Problem",
     author: 'Arthur Conan Doyle',
@@ -12782,7 +13635,7 @@ export const STORIES_PART2: RawStory[] = [
       "sacrifice": "fedakarlık"
     }
   },
-              {
+                {
     id: 'detective_empty_house',
     title: "The Adventure of the Empty House",
     author: 'Arthur Conan Doyle',
@@ -12853,7 +13706,7 @@ export const STORIES_PART2: RawStory[] = [
       "resolve": "çözmek"
     }
   },
-              {
+                {
     id: 'detective_invisible_man',
     title: "The Invisible Man",
     author: 'G. K. Chesterton',
@@ -12926,7 +13779,7 @@ export const STORIES_PART2: RawStory[] = [
       "mercy": "merhamet"
     }
   },
-              {
+                {
     id: 'detective_hammer_of_god',
     title: "The Hammer of God",
     author: 'G. K. Chesterton',
@@ -12997,7 +13850,7 @@ export const STORIES_PART2: RawStory[] = [
       "humble": "alçakgönüllü"
     }
   },
-              {
+                {
     id: 'detective_moonstone_1',
     title: "The Moonstone - Part 1",
     author: 'Wilkie Collins',
@@ -13070,7 +13923,7 @@ export const STORIES_PART2: RawStory[] = [
       "vanish": "gözden kaybolmak"
     }
   },
-              {
+                {
     id: 'detective_moonstone_2',
     title: "The Moonstone - Part 2",
     author: 'Wilkie Collins',
@@ -13140,7 +13993,7 @@ export const STORIES_PART2: RawStory[] = [
       "sacred": "kutsal"
     }
   },
-              {
+                {
     id: 'detective_circular_staircase_1',
     title: "The Circular Staircase - Part 1",
     author: 'Mary Roberts Rinehart',
@@ -13207,7 +14060,7 @@ export const STORIES_PART2: RawStory[] = [
       "evidence": "kanıt"
     }
   },
-              {
+                {
     id: 'detective_phantom_motor',
     title: "The Phantom Motor",
     author: 'Jacques Futrelle',
@@ -13280,7 +14133,7 @@ export const STORIES_PART2: RawStory[] = [
       "horizon": "ufuk"
     }
   },
-              {
+                {
     id: 'detective_woman_in_white_1',
     title: "The Woman in White - Part 1",
     author: 'Wilkie Collins',
@@ -13352,7 +14205,7 @@ export const STORIES_PART2: RawStory[] = [
       "vow": "yemin"
     }
   },
-              {
+                {
     id: 'detective_woman_in_white_2',
     title: "The Woman in White - Part 2",
     author: 'Wilkie Collins',
@@ -13423,7 +14276,7 @@ export const STORIES_PART2: RawStory[] = [
       "liberate": "özgür bırakmak"
     }
   },
-              {
+                {
     id: 'detective_yellow_room_1',
     title: "The Mystery of the Yellow Room - Part 1",
     author: 'Gaston Leroux',
@@ -13494,7 +14347,7 @@ export const STORIES_PART2: RawStory[] = [
       "tragedy": "trajedi, acı olay"
     }
   },
-              {
+                {
     id: 'detective_yellow_room_2',
     title: "The Mystery of the Yellow Room - Part 2",
     author: 'Gaston Leroux',
@@ -13564,7 +14417,7 @@ export const STORIES_PART2: RawStory[] = [
       "confrontation": "yüzleşme"
     }
   },
-              {
+                {
     id: 'detective_lady_in_black',
     title: "The Perfume of the Lady in Black",
     author: 'Gaston Leroux',
@@ -13635,7 +14488,7 @@ export const STORIES_PART2: RawStory[] = [
       "malice": "kötülük"
     }
   },
-              {
+                {
     id: 'detective_holmes_too_late',
     title: "Sherlock Holmes Arrives Too Late",
     author: 'Maurice Leblanc',
@@ -13708,7 +14561,7 @@ export const STORIES_PART2: RawStory[] = [
       "billowing": "dalgalanan, kabaran"
     }
   },
-              {
+                {
     id: 'detective_laker_absconded',
     title: "The Case of Laker, Absconded",
     author: 'Arthur Morrison',
@@ -13780,7 +14633,7 @@ export const STORIES_PART2: RawStory[] = [
       "turmoil": "kargaşa"
     }
   },
-              {
+                {
     id: 'detective_dublin_mystery',
     title: "The Dublin Mystery",
     author: 'Baroness Orczy',
@@ -13852,7 +14705,7 @@ export const STORIES_PART2: RawStory[] = [
       "redemption": "kurtuluş"
     }
   },
-              {
+                {
     id: 'detective_crystal_gazer',
     title: "The Crystal Gazer",
     author: 'Jacques Futrelle',
@@ -13923,7 +14776,7 @@ export const STORIES_PART2: RawStory[] = [
       "intervention": "müdahale"
     }
   },
-              {
+                {
     id: 'detective_moonstone_revelation',
     title: "The Moonstone - The Revelation",
     author: 'Wilkie Collins',
@@ -13995,7 +14848,7 @@ export const STORIES_PART2: RawStory[] = [
       "ensnare": "tuzağa düşürmek"
     }
   },
-              {
+                {
     id: 'detective_double_life',
     title: "The Double Life",
     author: 'Gaston Leroux',
@@ -14067,7 +14920,7 @@ export const STORIES_PART2: RawStory[] = [
       "absolution": "günahların bağışlanması, günah çıkarma"
     }
   },
-              {
+                {
     id: 'detective_gold_bug_1',
     title: "The Gold-Bug - Part 1",
     author: 'Edgar Allan Poe',
@@ -14137,7 +14990,7 @@ export const STORIES_PART2: RawStory[] = [
       "unadulterated": "katkısız, saf"
     }
   },
-            {
+              {
     id: 'detective_crooked_man',
     title: "The Adventure of the Crooked Man",
     author: 'Arthur Conan Doyle',
@@ -14206,7 +15059,7 @@ export const STORIES_PART2: RawStory[] = [
       "justice": "adalet"
     }
   },
-            {
+              {
     id: 'detective_naval_treaty',
     title: "The Adventure of the Naval Treaty",
     author: 'Arthur Conan Doyle',
@@ -14279,7 +15132,7 @@ export const STORIES_PART2: RawStory[] = [
       "horizon": "ufuk"
     }
   },
-            {
+              {
     id: 'detective_norwood_builder',
     title: "The Adventure of the Norwood Builder",
     author: 'Arthur Conan Doyle',
@@ -14349,7 +15202,7 @@ export const STORIES_PART2: RawStory[] = [
       "observation": "gözlem"
     }
   },
-            {
+              {
     id: 'detective_three_students',
     title: "The Adventure of the Three Students",
     author: 'Arthur Conan Doyle',
@@ -14417,7 +15270,7 @@ export const STORIES_PART2: RawStory[] = [
       "mercy": "merhamet"
     }
   },
-            {
+              {
     id: 'detective_doom_griffiths',
     title: "The Doom of the Griffiths",
     author: 'Elizabeth Gaskell',
@@ -14489,7 +15342,7 @@ export const STORIES_PART2: RawStory[] = [
       "survivor": "hayatta kalan"
     }
   },
-            {
+              {
     id: 'detective_moonstone_investigation',
     title: "The Moonstone - The Investigation",
     author: 'Wilkie Collins',
@@ -14560,7 +15413,7 @@ export const STORIES_PART2: RawStory[] = [
       "illusion": "hayal"
     }
   },
-            {
+              {
     id: 'detective_woman_white_conspiracy',
     title: "The Woman in White - The Conspiracy",
     author: 'Wilkie Collins',
@@ -14632,7 +15485,7 @@ export const STORIES_PART2: RawStory[] = [
       "ambition": "hırs"
     }
   },
-            {
+              {
     id: 'detective_hansom_cab_2',
     title: "The Mystery of the Hansom Cab - Part 2",
     author: 'Fergus Hume',
@@ -14704,7 +15557,7 @@ export const STORIES_PART2: RawStory[] = [
       "innocent": "masum"
     }
   },
-            {
+              {
     id: 'detective_red_house_1',
     title: "The Red House Mystery - Part 1",
     author: 'A. A. Milne',
@@ -14777,7 +15630,7 @@ export const STORIES_PART2: RawStory[] = [
       "labyrinthine": "labirent gibi"
     }
   },
-            {
+              {
     id: 'detective_red_house_2',
     title: "The Red House Mystery - Part 2",
     author: 'A. A. Milne',
@@ -14850,7 +15703,7 @@ export const STORIES_PART2: RawStory[] = [
       "pretense": "görünüş, bahane"
     }
   },
-        {
+          {
     id: 'history_fall_constantinople',
     title: "The Fall of Constantinople",
     author: 'Byzantine Empire',
@@ -14922,7 +15775,7 @@ export const STORIES_PART2: RawStory[] = [
       "scholar": "bilgin"
     }
   },
-        {
+          {
     id: 'history_french_revolution',
     title: "The French Revolution: Storming the Bastille",
     author: 'French Revolution',
@@ -14994,7 +15847,7 @@ export const STORIES_PART2: RawStory[] = [
       "equality": "eşitlik"
     }
   },
-        {
+          {
     id: 'history_isaac_newton',
     title: "Isaac Newton and the Apple",
     author: 'Isaac Newton',
@@ -15062,7 +15915,7 @@ export const STORIES_PART2: RawStory[] = [
       "legacy": "miras"
     }
   },
-      {
+        {
     id: 'history_industrial_revolution',
     title: "The Industrial Revolution: Steam Power",
     author: 'Industrial Revolution',
@@ -15131,7 +15984,7 @@ export const STORIES_PART2: RawStory[] = [
       "interconnected": "birbirine bağlı"
     }
   },
-      {
+        {
     id: 'history_gettysburg_address',
     title: "Abraham Lincoln and the Gettysburg Address",
     author: 'Abraham Lincoln',
@@ -15199,7 +16052,7 @@ export const STORIES_PART2: RawStory[] = [
       "immortalize": "ölümsüzleştirmek"
     }
   },
-      {
+        {
     id: 'history_eiffel_tower',
     title: "The Building of the Eiffel Tower",
     author: 'Gustave Eiffel',
@@ -15267,7 +16120,7 @@ export const STORIES_PART2: RawStory[] = [
       "ingenuity": "deha"
     }
   },
-      {
+        {
     id: 'history_sinking_titanic',
     title: "The Sinking of the Titanic",
     author: 'Titanic',
@@ -15337,7 +16190,7 @@ export const STORIES_PART2: RawStory[] = [
       "fragility": "kırılganlık"
     }
   },
-    {
+      {
     id: 'history_tutankhamun_tomb',
     title: "The Discovery of Tutankhamun's Tomb",
     author: 'Howard Carter',
@@ -15407,7 +16260,7 @@ export const STORIES_PART2: RawStory[] = [
       "thrive": "gelişmek"
     }
   },
-    {
+      {
     id: 'history_albert_einstein',
     title: "Albert Einstein and the Theory of Relativity",
     author: 'Albert Einstein',
@@ -15480,7 +16333,7 @@ export const STORIES_PART2: RawStory[] = [
       "dynamic": "dinamik"
     }
   },
-    {
+      {
     id: 'history_apollo_11',
     title: "The Space Race: Apollo 11",
     author: 'NASA',
@@ -15550,7 +16403,7 @@ export const STORIES_PART2: RawStory[] = [
       "ambition": "hırs"
     }
   },
-    {
+      {
     id: 'history_marie_curie',
     title: "Marie Curie and the Discovery of Radium",
     author: 'Marie Curie',
@@ -15622,7 +16475,7 @@ export const STORIES_PART2: RawStory[] = [
       "capability": "yetenek"
     }
   },
-    {
+      {
     id: 'history_great_fire_london',
     title: "The Great Fire of London",
     author: 'Great Fire of London',
@@ -15693,7 +16546,7 @@ export const STORIES_PART2: RawStory[] = [
       "optimism": "iyimserlik"
     }
   },
-    {
+      {
     id: 'history_rosetta_stone',
     title: "The Rosetta Stone: Decoding Hieroglyphs",
     author: 'Jean-François Champollion',
@@ -15760,7 +16613,7 @@ export const STORIES_PART2: RawStory[] = [
       "legacy": "miras"
     }
   },
-    {
+      {
     id: 'history_renaissance_florence',
     title: "The Renaissance: Florence Reborn",
     author: 'Renaissance',
@@ -15830,7 +16683,7 @@ export const STORIES_PART2: RawStory[] = [
       "annals": "tarih kayıtları"
     }
   },
-    {
+      {
     id: 'history_enlightenment',
     title: "The Age of Enlightenment",
     author: 'Enlightenment Thinkers',
@@ -15903,7 +16756,7 @@ export const STORIES_PART2: RawStory[] = [
       "legacy": "miras"
     }
   },
-    {
+      {
     id: 'history_berlin_wall',
     title: "The Fall of the Berlin Wall",
     author: 'Cold War',
@@ -15974,7 +16827,7 @@ export const STORIES_PART2: RawStory[] = [
       "endurance": "dayanıklılık"
     }
   },
-    {
+      {
     id: 'history_penicillin_discovery',
     title: "The Discovery of Penicillin",
     author: 'Alexander Fleming',
@@ -16045,7 +16898,7 @@ export const STORIES_PART2: RawStory[] = [
       "persistence": "azim"
     }
   },
-    {
+      {
     id: 'history_declaration_independence',
     title: "The Signing of the Declaration of Independence",
     author: 'Founding Fathers',
@@ -16112,7 +16965,7 @@ export const STORIES_PART2: RawStory[] = [
       "vigilance": "uyanıklık"
     }
   },
-    {
+      {
     id: 'history_code_hammurabi',
     title: "The Code of Hammurabi",
     author: 'Babylon',
@@ -16183,7 +17036,7 @@ export const STORIES_PART2: RawStory[] = [
       "foundation": "temel"
     }
   },
-    {
+      {
     id: 'history_american_civil_war',
     title: "The American Civil War: Emancipation Proclamation",
     author: 'American Civil War',
@@ -16251,7 +17104,7 @@ export const STORIES_PART2: RawStory[] = [
       "irreversible": "geri dönülemez"
     }
   },
-    {
+      {
     id: 'history_printing_revolution',
     title: "The Story of the Printing Revolution",
     author: 'Printing Press',
@@ -16321,7 +17174,7 @@ export const STORIES_PART2: RawStory[] = [
       "ingenuity": "yaratıcılık, deha"
     }
   },
-    {
+      {
     id: 'history_black_death',
     title: "The Black Death: The Plague of Europe",
     author: 'Middle Ages',
@@ -16389,7 +17242,7 @@ export const STORIES_PART2: RawStory[] = [
       "resilience": "direnç, dayanıklılık"
     }
   },
-    {
+      {
     id: 'history_roman_empire',
     title: "The Rise and Fall of the Roman Empire",
     author: 'Roman Empire',
@@ -16461,7 +17314,7 @@ export const STORIES_PART2: RawStory[] = [
       "metamorphosis": "başkalaşım"
     }
   },
-    {
+      {
     id: 'history_library_alexandria',
     title: "The Library of Alexandria",
     author: 'Ancient Egypt',
@@ -16532,7 +17385,7 @@ export const STORIES_PART2: RawStory[] = [
       "annals": "tarihi kayıtlar"
     }
   },
-    {
+      {
     id: 'history_history_writing',
     title: "The History of Writing",
     author: 'Human Civilisation',
