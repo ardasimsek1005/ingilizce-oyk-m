@@ -2528,7 +2528,7 @@ export const STORIES_PART1: RawStory[] = [
   },
 
   // ==================== LEVEL A2 (9 Stories) ====================
-                                                                {
+                                                                    {
     id: 'pinocchio',
     title: "Pinocchio",
     author: 'Carlo Collodi',
@@ -2630,7 +2630,7 @@ export const STORIES_PART1: RawStory[] = [
       "disappear": "kaybolmak"
     }
   },
-                                                                {
+                                                                    {
     id: 'beauty_beast',
     title: "Beauty and the Beast",
     author: 'Gabrielle-Suzanne de Villeneuve',
@@ -2735,7 +2735,7 @@ export const STORIES_PART1: RawStory[] = [
       "determination": "kararlılık"
     }
   },
-                                                                {
+                                                                    {
     id: 'little_mermaid',
     title: "The Little Mermaid",
     author: 'Hans Christian Andersen',
@@ -2836,7 +2836,7 @@ export const STORIES_PART1: RawStory[] = [
       "danger": "tehlike"
     }
   },
-                                                                {
+                                                                    {
     id: 'aladdin',
     title: "Aladdin and the Lamp",
     author: 'Antoine Galland',
@@ -2944,7 +2944,7 @@ export const STORIES_PART1: RawStory[] = [
       "trap": "tuzak"
     }
   },
-                                                            {
+                                                                {
     id: 'princess_pea',
     title: "The Princess and the Pea",
     author: 'Hans Christian Andersen',
@@ -3045,7 +3045,7 @@ export const STORIES_PART1: RawStory[] = [
       "peaceful": "huzurlu"
     }
   },
-                                                            {
+                                                                {
     id: 'thumbelina',
     title: "Thumbelina",
     author: 'Hans Christian Andersen',
@@ -3149,7 +3149,7 @@ export const STORIES_PART1: RawStory[] = [
       "queen": "kraliçe"
     }
   },
-                                                            {
+                                                                {
     id: 'robin_hood',
     title: "Robin Hood",
     author: 'Howard Pyle',
@@ -3257,7 +3257,7 @@ export const STORIES_PART1: RawStory[] = [
       "drifted": "sürüklendi"
     }
   },
-                                                            {
+                                                                {
     id: 'alice_wonderland',
     title: "Alice in Wonderland",
     author: 'Lewis Carroll',
@@ -3360,7 +3360,7 @@ export const STORIES_PART1: RawStory[] = [
       "liquid": "sıvı"
     }
   },
-                                                            {
+                                                                {
     id: 'boy_cried_wolf',
     title: "The Boy Who Cried Wolf",
     author: 'Aesop',
@@ -3468,7 +3468,7 @@ export const STORIES_PART1: RawStory[] = [
       "trust": "güvenmek"
     }
   },
-                                                        {
+                                                            {
     id: 'fox_grapes',
     title: "The Fox and the Grapes",
     author: 'Aesop',
@@ -3572,7 +3572,7 @@ export const STORIES_PART1: RawStory[] = [
       "lesson": "ders"
     }
   },
-                                                      {
+                                                          {
     id: 'ali_baba',
     title: "Ali Baba and the Forty Thieves",
     author: 'Antoine Galland',
@@ -3675,7 +3675,7 @@ export const STORIES_PART1: RawStory[] = [
       "peaceful": "huzurlu"
     }
   },
-                                                      {
+                                                          {
     id: 'sinbad',
     title: "Sinbad the Sailor",
     author: 'Antoine Galland',
@@ -3777,7 +3777,7 @@ export const STORIES_PART1: RawStory[] = [
       "grab": "kapmak"
     }
   },
-                                                      {
+                                                          {
     id: 'king_midas',
     title: "King Midas and the Golden Touch",
     author: 'Nathaniel Hawthorne',
@@ -3879,7 +3879,7 @@ export const STORIES_PART1: RawStory[] = [
       "prepared": "hazırlıklı"
     }
   },
-                                                        {
+                                                            {
     id: 'peter_pan',
     title: "Peter Pan",
     author: 'J. M. Barrie',
@@ -3981,7 +3981,7 @@ export const STORIES_PART1: RawStory[] = [
       "laughter": "kahkaha"
     }
   },
-                                            {
+                                                {
     id: 'lion_mouse',
     title: "The Lion and the Mouse",
     author: 'Aesop',
@@ -4050,7 +4050,7 @@ export const STORIES_PART1: RawStory[] = [
       "peace": "huzur"
     }
   },
-                                            {
+                                                {
     id: 'ant_grasshopper',
     title: "The Ant and the Grasshopper",
     author: 'Aesop',
@@ -4121,7 +4121,7 @@ export const STORIES_PART1: RawStory[] = [
       "organize": "düzenlemek"
     }
   },
-                                            {
+                                                {
     id: 'town_country_mouse',
     title: "The Town Mouse and the Country Mouse",
     author: 'Aesop',
@@ -4193,7 +4193,7 @@ export const STORIES_PART1: RawStory[] = [
       "field": "tarla"
     }
   },
-                                            {
+                                                {
     id: 'crow_pitcher',
     title: "The Crow and the Pitcher",
     author: 'Aesop',
@@ -4264,7 +4264,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "macera"
     }
   },
-                                            {
+                                                {
     id: 'wind_sun',
     title: "The North Wind and the Sun",
     author: 'Aesop',
@@ -4332,7 +4332,7 @@ export const STORIES_PART1: RawStory[] = [
       "kindness": "iyilik"
     }
   },
-                                            {
+                                                {
     id: 'gingerbread_man',
     title: "The Gingerbread Man",
     author: 'Traditional',
@@ -4399,7 +4399,7 @@ export const STORIES_PART1: RawStory[] = [
       "finish": "bitirmek"
     }
   },
-                                            {
+                                                {
     id: 'chicken_little',
     title: "Chicken Little",
     author: 'Traditional',
@@ -4469,7 +4469,7 @@ export const STORIES_PART1: RawStory[] = [
       "exit": "çıkış"
     }
   },
-                                            {
+                                                {
     id: 'enormous_turnip',
     title: "The Enormous Turnip",
     author: 'Traditional',
@@ -4535,7 +4535,7 @@ export const STORIES_PART1: RawStory[] = [
       "team": "takım"
     }
   },
-                                            {
+                                                {
     id: 'three_billy_goats',
     title: "Three Billy Goats Gruff",
     author: 'Traditional',
@@ -4604,7 +4604,7 @@ export const STORIES_PART1: RawStory[] = [
       "happy": "mutlu"
     }
   },
-                                            {
+                                                {
     id: 'fisherman_wife',
     title: "The Fisherman and His Wife",
     author: 'Brothers Grimm',
@@ -4672,7 +4672,7 @@ export const STORIES_PART1: RawStory[] = [
       "thankful": "minnettar"
     }
   },
-                                            {
+                                                {
     id: 'little_red_hen',
     title: "The Little Red Hen",
     author: 'Traditional',
@@ -4738,7 +4738,7 @@ export const STORIES_PART1: RawStory[] = [
       "stomach": "mide"
     }
   },
-                                            {
+                                                {
     id: 'frog_prince',
     title: "The Frog Prince",
     author: 'Brothers Grimm',
@@ -4807,7 +4807,7 @@ export const STORIES_PART1: RawStory[] = [
       "travel": "yolculuk"
     }
   },
-                                            {
+                                                {
     id: 'stone_soup',
     title: "Stone Soup",
     author: 'Traditional',
@@ -4876,7 +4876,7 @@ export const STORIES_PART1: RawStory[] = [
       "generous": "cömert"
     }
   },
-                                            {
+                                                {
     id: 'star_money',
     title: "The Star Money",
     author: 'Brothers Grimm',
@@ -4948,7 +4948,7 @@ export const STORIES_PART1: RawStory[] = [
       "safe": "güvende"
     }
   },
-                                            {
+                                                {
     id: 'city_musicians',
     title: "The Bremen Town Musicians",
     author: 'Brothers Grimm',
@@ -5019,7 +5019,7 @@ export const STORIES_PART1: RawStory[] = [
       "smile": "gülümsemek"
     }
   },
-                                            {
+                                                {
     id: 'peter_rabbit',
     title: "The Tale of Peter Rabbit",
     author: 'Beatrix Potter',
@@ -5090,7 +5090,7 @@ export const STORIES_PART1: RawStory[] = [
       "proud": "gururlu"
     }
   },
-                                            {
+                                                {
     id: 'bambi',
     title: "Bambi",
     author: 'Felix Salten',
@@ -5160,7 +5160,7 @@ export const STORIES_PART1: RawStory[] = [
       "noble": "soylu"
     }
   },
-                                            {
+                                                {
     id: 'black_beauty',
     title: "Black Beauty",
     author: 'Anna Sewell',
@@ -5228,7 +5228,7 @@ export const STORIES_PART1: RawStory[] = [
       "rubbed": "ovuşturdu"
     }
   },
-                                            {
+                                                {
     id: 'hans_brinker',
     title: "Hans Brinker",
     author: 'Mary Mapes Dodge',
@@ -5290,7 +5290,7 @@ export const STORIES_PART1: RawStory[] = [
       "working": "çalışan"
     }
   },
-                                            {
+                                                {
     id: 'five_children_it',
     title: "Five Children and It",
     author: 'E. Nesbit',
@@ -5360,7 +5360,7 @@ export const STORIES_PART1: RawStory[] = [
       "stretched": "gergin"
     }
   },
-                                            {
+                                                {
     id: 'railway_children',
     title: "The Railway Children",
     author: 'E. Nesbit',
@@ -5426,7 +5426,7 @@ export const STORIES_PART1: RawStory[] = [
       "whistle": "düdük"
     }
   },
-                                            {
+                                                {
     id: 'swiss_family',
     title: "The Swiss Family Robinson",
     author: 'Johann David Wyss',
@@ -5495,7 +5495,7 @@ export const STORIES_PART1: RawStory[] = [
       "prepared": "hazırlıklı"
     }
   },
-                                            {
+                                                {
     id: 'doctor_dolittle',
     title: "Doctor Dolittle",
     author: 'Hugh Lofting',
@@ -5562,7 +5562,7 @@ export const STORIES_PART1: RawStory[] = [
       "prepared": "hazırlıklı"
     }
   },
-                                            {
+                                                {
     id: 'sleepy_hollow',
     title: "The Legend of Sleepy Hollow",
     author: 'Washington Irving',
@@ -5632,7 +5632,7 @@ export const STORIES_PART1: RawStory[] = [
       "sticks": "sopa"
     }
   },
-                                            {
+                                                {
     id: 'rip_van_winkle',
     title: "Rip Van Winkle",
     author: 'Washington Irving',
@@ -5704,7 +5704,7 @@ export const STORIES_PART1: RawStory[] = [
       "working": "çalışan"
     }
   },
-                                            {
+                                                {
     id: 'velveteen_rabbit',
     title: "The Velveteen Rabbit",
     author: 'Margery Williams',
@@ -5776,7 +5776,7 @@ export const STORIES_PART1: RawStory[] = [
       "arrival": "varış"
     }
   },
-                                            {
+                                                {
     id: 'water_babies',
     title: "The Water-Babies",
     author: 'Charles Kingsley',
@@ -5846,7 +5846,7 @@ export const STORIES_PART1: RawStory[] = [
       "immediately": "derhal"
     }
   },
-                                            {
+                                                {
     id: 'nutcracker',
     title: "The Nutcracker",
     author: 'E. T. A. Hoffmann',
@@ -5915,7 +5915,7 @@ export const STORIES_PART1: RawStory[] = [
       "real": "gerçek"
     }
   },
-                                            {
+                                                {
     id: 'blue_bird',
     title: "The Blue Bird",
     author: 'Maurice Maeterlinck',
@@ -5986,7 +5986,7 @@ export const STORIES_PART1: RawStory[] = [
       "thankful": "minnettar"
     }
   },
-                                            {
+                                                {
     id: 'tom_thumb',
     title: "Tom Thumb",
     author: 'Brothers Grimm',
@@ -6058,7 +6058,7 @@ export const STORIES_PART1: RawStory[] = [
       "kindness": "iyilik"
     }
   },
-                                            {
+                                                {
     id: 'little_match_girl',
     title: "The Little Match Girl",
     author: 'Hans Christian Andersen',
@@ -6129,7 +6129,7 @@ export const STORIES_PART1: RawStory[] = [
       "silent": "sessiz"
     }
   },
-                                      {
+                                          {
     id: 'horror_black_cat',
     title: "The Black Cat",
     author: 'Edgar Allan Poe',
@@ -6200,7 +6200,7 @@ export const STORIES_PART1: RawStory[] = [
       "anymore": "artık"
     }
   },
-                                      {
+                                          {
     id: 'horror_signalman',
     title: "The Signalman",
     author: 'Charles Dickens',
@@ -6268,7 +6268,7 @@ export const STORIES_PART1: RawStory[] = [
       "better": "daha iyi"
     }
   },
-                                      {
+                                          {
     id: 'horror_red_headed_league',
     title: "The Red-Headed League",
     author: 'Arthur Conan Doyle',
@@ -6337,7 +6337,7 @@ export const STORIES_PART1: RawStory[] = [
       "brain": "beyin"
     }
   },
-                                      {
+                                          {
     id: 'horror_blue_carbuncle',
     title: "The Blue Carbuncle",
     author: 'Arthur Conan Doyle',
@@ -6408,7 +6408,7 @@ export const STORIES_PART1: RawStory[] = [
       "attacked": "saldırıldı"
     }
   },
-                                      {
+                                          {
     id: 'horror_young_goodman_brown',
     title: "Young Goodman Brown",
     author: 'Nathaniel Hawthorne',
@@ -6476,7 +6476,7 @@ export const STORIES_PART1: RawStory[] = [
       "blew": "savurdu"
     }
   },
-                                      {
+                                          {
     id: 'horror_phantom_rickshaw',
     title: "The Phantom Rickshaw",
     author: 'Rudyard Kipling',
@@ -6543,7 +6543,7 @@ export const STORIES_PART1: RawStory[] = [
       "better": "daha iyi"
     }
   },
-                                      {
+                                          {
     id: 'horror_draculas_guest',
     title: "Dracula's Guest",
     author: 'Bram Stoker',
@@ -6612,7 +6612,7 @@ export const STORIES_PART1: RawStory[] = [
       "attack": "saldırı"
     }
   },
-                                      {
+                                          {
     id: 'horror_devil_tom_walker',
     title: "The Devil and Tom Walker",
     author: 'Washington Irving',
@@ -6683,7 +6683,7 @@ export const STORIES_PART1: RawStory[] = [
       "anymore": "artık"
     }
   },
-                                      {
+                                          {
     id: 'horror_monkeys_paw',
     title: "The Monkey's Paw",
     author: 'W. W. Jacobs',
@@ -6753,7 +6753,7 @@ export const STORIES_PART1: RawStory[] = [
       "blows": "darbeler"
     }
   },
-                                      {
+                                          {
     id: 'horror_oval_portrait',
     title: "The Oval Portrait",
     author: 'Edgar Allan Poe',
@@ -6821,7 +6821,7 @@ export const STORIES_PART1: RawStory[] = [
       "beauty": "güzellik"
     }
   },
-                                      {
+                                          {
     id: 'horror_house_of_usher',
     title: "The Fall of the House of Usher",
     author: 'Edgar Allan Poe',
@@ -6891,7 +6891,7 @@ export const STORIES_PART1: RawStory[] = [
       "entire": "bütün"
     }
   },
-                                      {
+                                          {
     id: 'horror_cask_amontillado',
     title: "The Cask of Amontillado",
     author: 'Edgar Allan Poe',
@@ -6963,7 +6963,7 @@ export const STORIES_PART1: RawStory[] = [
       "closely": "dikkatle"
     }
   },
-                                      {
+                                          {
     id: 'horror_speckled_band',
     title: "The Speckled Band",
     author: 'Arthur Conan Doyle',
@@ -7035,7 +7035,7 @@ export const STORIES_PART1: RawStory[] = [
       "neglect": "terk edilmişlik"
     }
   },
-                                      {
+                                          {
     id: 'horror_yellow_wallpaper',
     title: "The Yellow Wallpaper",
     author: 'Charlotte Perkins Gilman',
@@ -7106,7 +7106,7 @@ export const STORIES_PART1: RawStory[] = [
       "nails": "çiviler"
     }
   },
-                                      {
+                                          {
     id: 'horror_willows',
     title: "The Willows",
     author: 'Algernon Blackwood',
@@ -7175,7 +7175,7 @@ export const STORIES_PART1: RawStory[] = [
       "glow": "parıltı"
     }
   },
-                                      {
+                                          {
     id: 'horror_wendigo',
     title: "The Wendigo",
     author: 'Algernon Blackwood',
@@ -7245,7 +7245,7 @@ export const STORIES_PART1: RawStory[] = [
       "freezing": "dondurucu"
     }
   },
-                                      {
+                                          {
     id: 'horror_king_in_yellow',
     title: "The King in Yellow",
     author: 'Robert W. Chambers',
@@ -7314,7 +7314,7 @@ export const STORIES_PART1: RawStory[] = [
       "monsters": "canavarlar"
     }
   },
-                                      {
+                                          {
     id: 'horror_vampyre',
     title: "The Vampyre",
     author: 'John William Polidori',
@@ -7385,7 +7385,7 @@ export const STORIES_PART1: RawStory[] = [
       "evil": "şer"
     }
   },
-                                      {
+                                          {
     id: 'horror_horla',
     title: "The Horla",
     author: 'Guy de Maupassant',
@@ -7453,7 +7453,7 @@ export const STORIES_PART1: RawStory[] = [
       "flowers": "çiçekler"
     }
   },
-                                      {
+                                          {
     id: 'horror_green_tea',
     title: "Green Tea",
     author: 'Sheridan Le Fanu',
@@ -7523,7 +7523,7 @@ export const STORIES_PART1: RawStory[] = [
       "dusty": "tozlu"
     }
   },
-                                      {
+                                          {
     id: 'horror_sandman',
     title: "The Sandman",
     author: 'E. T. A. Hoffmann',
@@ -7594,7 +7594,7 @@ export const STORIES_PART1: RawStory[] = [
       "fainted": "bayıldı"
     }
   },
-                                      {
+                                          {
     id: 'horror_birth_mark',
     title: "The Birth-Mark",
     author: 'Nathaniel Hawthorne',
@@ -7663,7 +7663,7 @@ export const STORIES_PART1: RawStory[] = [
       "flowers": "çiçekler"
     }
   },
-                                      {
+                                          {
     id: 'horror_masque_red_death',
     title: "The Masque of the Red Death",
     author: 'Edgar Allan Poe',
@@ -7735,7 +7735,7 @@ export const STORIES_PART1: RawStory[] = [
       "grip": "kavrayış"
     }
   },
-                                      {
+                                          {
     id: 'horror_gold_bug',
     title: "The Gold-Bug",
     author: 'Edgar Allan Poe',
@@ -7802,7 +7802,7 @@ export const STORIES_PART1: RawStory[] = [
       "exact": "tam"
     }
   },
-                                      {
+                                          {
     id: 'horror_moonstone',
     title: "The Moonstone",
     author: 'Wilkie Collins',
@@ -7872,7 +7872,7 @@ export const STORIES_PART1: RawStory[] = [
       "eventually": "nihayetinde"
     }
   },
-                                    {
+                                        {
     id: 'classic_tom_sawyer',
     title: "The Adventures of Tom Sawyer",
     author: 'Mark Twain',
@@ -7944,7 +7944,7 @@ export const STORIES_PART1: RawStory[] = [
       "believes": "inanır"
     }
   },
-                                    {
+                                        {
     id: 'classic_oliver_twist',
     title: "Oliver Twist",
     author: 'Charles Dickens',
@@ -8014,7 +8014,7 @@ export const STORIES_PART1: RawStory[] = [
       "charge": "suçlama"
     }
   },
-                                    {
+                                        {
     id: 'classic_prince_pauper',
     title: "The Prince and the Pauper",
     author: 'Mark Twain',
@@ -8081,7 +8081,7 @@ export const STORIES_PART1: RawStory[] = [
       "confused": "şaşkın"
     }
   },
-                                    {
+                                        {
     id: 'classic_kidnapped',
     title: "Kidnapped",
     author: 'Robert Louis Stevenson',
@@ -8152,7 +8152,7 @@ export const STORIES_PART1: RawStory[] = [
       "captain": "kaptan"
     }
   },
-                                    {
+                                        {
     id: 'classic_three_musketeers',
     title: "The Three Musketeers",
     author: 'Alexandre Dumas',
@@ -8218,7 +8218,7 @@ export const STORIES_PART1: RawStory[] = [
       "amazing": "harika"
     }
   },
-                                    {
+                                        {
     id: 'classic_uncle_tom_cabin',
     title: "Uncle Tom's Cabin",
     author: 'Harriet Beecher Stowe',
@@ -8288,7 +8288,7 @@ export const STORIES_PART1: RawStory[] = [
       "better": "daha iyi"
     }
   },
-                                    {
+                                        {
     id: 'classic_journey_center_earth',
     title: "Journey to the Center of the Earth",
     author: 'Jules Verne',
@@ -8357,7 +8357,7 @@ export const STORIES_PART1: RawStory[] = [
       "anymore": "artık"
     }
   },
-                                    {
+                                        {
     id: 'classic_first_men_moon',
     title: "The First Men in the Moon",
     author: 'H. G. Wells',
@@ -8423,7 +8423,7 @@ export const STORIES_PART1: RawStory[] = [
       "blinds": "panjur"
     }
   },
-                                  {
+                                      {
     id: 'classic_captains_courageous',
     title: "Captains Courageous",
     author: 'Rudyard Kipling',
@@ -8496,7 +8496,7 @@ export const STORIES_PART1: RawStory[] = [
       "balance": "denge"
     }
   },
-                                  {
+                                      {
     id: 'classic_mysterious_island',
     title: "The Mysterious Island",
     author: 'Jules Verne',
@@ -8567,7 +8567,7 @@ export const STORIES_PART1: RawStory[] = [
       "closer": "daha yakın"
     }
   },
-                                  {
+                                      {
     id: 'classic_david_copperfield',
     title: "David Copperfield",
     author: 'Charles Dickens',
@@ -8640,7 +8640,7 @@ export const STORIES_PART1: RawStory[] = [
       "cheerful": "neşeli"
     }
   },
-                                {
+                                    {
     id: 'classic_great_expectations',
     title: "Great Expectations",
     author: 'Charles Dickens',
@@ -8709,7 +8709,7 @@ export const STORIES_PART1: RawStory[] = [
       "completely": "tamamen"
     }
   },
-                                {
+                                    {
     id: 'classic_jane_eyre',
     title: "Jane Eyre",
     author: 'Charlotte Brontë',
@@ -8780,7 +8780,7 @@ export const STORIES_PART1: RawStory[] = [
       "eventually": "sonunda"
     }
   },
-                                {
+                                    {
     id: 'classic_count_monte_cristo',
     title: "The Count of Monte Cristo",
     author: 'Alexandre Dumas',
@@ -8849,7 +8849,7 @@ export const STORIES_PART1: RawStory[] = [
       "crawled": "süründü"
     }
   },
-                                {
+                                    {
     id: 'classic_huck_finn',
     title: "Adventures of Huckleberry Finn",
     author: 'Mark Twain',
@@ -8920,7 +8920,7 @@ export const STORIES_PART1: RawStory[] = [
       "prepared": "hazırlıklı"
     }
   },
-                                {
+                                    {
     id: 'classic_twenty_thousand_leagues',
     title: "Twenty Thousand Leagues Under the Seas",
     author: 'Jules Verne',
@@ -8990,7 +8990,7 @@ export const STORIES_PART1: RawStory[] = [
       "curious": "meraklı"
     }
   },
-                                {
+                                    {
     id: 'classic_earth_to_moon',
     title: "From the Earth to the Moon",
     author: 'Jules Verne',
@@ -9061,7 +9061,7 @@ export const STORIES_PART1: RawStory[] = [
       "captain": "kaptan"
     }
   },
-                                {
+                                    {
     id: 'classic_lost_world',
     title: "The Lost World",
     author: 'Arthur Conan Doyle',
@@ -9132,7 +9132,7 @@ export const STORIES_PART1: RawStory[] = [
       "distant": "uzak"
     }
   },
-                                {
+                                    {
     id: 'classic_island_moreau',
     title: "The Island of Doctor Moreau",
     author: 'H. G. Wells',
@@ -9201,7 +9201,7 @@ export const STORIES_PART1: RawStory[] = [
       "clearly": "açıkça"
     }
   },
-                                {
+                                    {
     id: 'classic_red_badge_courage',
     title: "The Red Badge of Courage",
     author: 'Stephen Crane',
@@ -9269,18 +9269,18 @@ export const STORIES_PART1: RawStory[] = [
       "dusty": "tozlu"
     }
   },
-                                {
+                                    {
     id: 'classic_emma',
     title: "Emma",
     author: 'Jane Austen',
     level: 'A2',
     coverUrl: '/covers/classic_emma.webp',
     en: [
-      "Emma Woodhouse was a clever, beautiful, and rich young woman. She lived in a big house called Hartfield with her kind father. Emma had a very comfortable life, but she was never bored. She liked to help people find love because she believed she was very good at it. When her friend and governess, Miss Taylor, got married to Mr. Weston, Emma felt a little sad. She felt lonely because Miss Taylor was like a mother to her. However, Emma was also happy for her friend. She decided that she was the one who helped them meet and fall in love. This success made her feel very confident about her matchmaking skills. She started to look for new people to help in her small town of Highbury.",
+      "Emma Woodhouse was a clever, beautiful, and rich young woman. She lived in a big house called Hartfield with her kind father. Emma had a very comfortable life, but she was never bored. She liked to help people find love because she thought she was very good at it. When her friend and governess, Miss Taylor, got married to Mr. Weston, Emma felt a little sad. She felt lonely because Miss Taylor was like a mother to her. But Emma was also happy for her friend. She decided that she was the one who helped them meet and fall in love. This success made her feel very sure about her matchmaking skills. She started to look for new people to help in her small town of Highbury.",
       "Mr. Knightley was an old family friend who often visited Hartfield. He was a sensible man who knew Emma very well. He did not agree with her ideas about matchmaking. He told Emma that she should stop trying to control the lives of others. He worried that her games could cause sadness. Emma listened to his advice, but she did not change her mind. She thought she knew better than him. She wanted to help her new friend, Harriet Smith. Harriet was a young girl who lived at a school nearby. She was sweet and pretty, but she was not as rich or smart as Emma. Emma decided that Harriet was the perfect person to help.",
-      "Emma invited Harriet to Hartfield to spend time with her. She wanted to improve Harriet's life. Emma thought that Harriet should not marry a simple farmer named Robert Martin. Instead, Emma wanted Harriet to marry someone from a higher social class. She began to ask questions about the people Harriet knew. She noticed that Harriet was interested in Mr. Elton, the local priest. Emma thought this was a brilliant idea. She decided to guide Harriet toward Mr. Elton. She did not care about Robert Martin's feelings at all. Emma believed that her plan was right for everyone. She was very excited to start her new project. She did not know that her choices would soon create many difficult problems for everyone in Highbury.",
+      "Emma invited Harriet to Hartfield to spend time with her. She wanted to make Harriet's life better. Emma thought that Harriet should not marry a simple farmer named Robert Martin. Instead, Emma wanted Harriet to marry someone from a higher social class. She began to ask questions about the people Harriet knew. She noticed that Harriet was interested in Mr. Elton, the local priest. Emma thought this was a brilliant idea. She decided to guide Harriet toward Mr. Elton. She did not care about Robert Martin's feelings at all. Emma believed that her plan was right for everyone. She was very excited to start her new project. She did not know that her choices would soon create many difficult problems for everyone in Highbury.",
       "Emma spent many hours with Harriet at Hartfield. She wanted to change Harriet's thoughts about her life and her future. Emma told her that she was too good for a simple farmer like Robert Martin. Harriet was very gentle and she believed everything Emma said. She thought that Emma was the smartest person in the world. Emma felt happy because she felt like a teacher and a guide. She started to teach Harriet how to talk and act like a lady from a high family. Harriet slowly stopped thinking about Robert Martin. Emma was sure that Mr. Elton was the perfect husband for her new friend. She was very proud of her plan and felt she was doing a very good thing for Harriet's happiness.",
-      "One day, Robert Martin wrote a letter to Harriet. He wanted to ask her to marry him. Harriet was confused and showed the letter to Emma. Emma read the letter and told Harriet that it was not a good one. She said that Mr. Martin was not smart or interesting. Harriet listened to her friend and decided to say no to his proposal. Emma felt very successful because she stopped the marriage. She thought she was protecting Harriet from a life of boredom. She told Harriet to wait for a better man like Mr. Elton. Emma did not feel sorry for Robert Martin. She only thought about her own plan. She believed she was helping Harriet find a better future in their small town.",
+      "One day, Robert Martin wrote a letter to Harriet. He wanted to ask her to marry him. Harriet was confused and showed the letter to Emma. Emma read the letter and told Harriet that it was not a good one. She said that Mr. Martin was not smart or interesting. Harriet listened to her friend and decided to say no to his offer. Emma felt very successful because she stopped the marriage. She thought she was protecting Harriet from a life of boredom. She told Harriet to wait for a better man like Mr. Elton. Emma did not feel sorry for Robert Martin. She only thought about her own plan. She believed she was helping Harriet find a better future in their small town.",
       "Mr. Elton was a kind man, but he was also very interested in money and status. He spent a lot of time with Emma and Harriet. Emma thought that Mr. Elton loved Harriet because he was always polite to her. She did not realize that Mr. Elton was actually looking at her, not at Harriet. She ignored the signs because she wanted her plan to work perfectly. Harriet was also very excited and she talked about Mr. Elton every single day. The three of them spent many afternoons together. Emma felt like a queen who controlled the love lives of her friends. She did not see the trouble that was coming. She was too busy being happy with her clever matchmaking skills in Highbury.",
       "The winter weather brought many social events to Highbury. Emma, Harriet, and Mr. Elton were often together. Emma felt very proud of herself because she thought her plan was working perfectly. She watched Mr. Elton closely and felt certain that he was falling in love with Harriet. Every time he spoke to Harriet, Emma smiled because she felt like a smart guide. Harriet became very happy and her feelings for Mr. Elton grew stronger every day. She trusted Emma with all her secrets and believed that a bright future was waiting for her. They walked in the gardens and talked about the future. Emma was very sure that she could make anyone happy by simply organizing their lives and choosing the right people for them to marry.",
       "However, a big surprise was coming for everyone in town. One cold evening, Mr. Elton visited Hartfield to talk to Emma privately. Emma was excited because she thought he wanted to talk about Harriet. She sat in a comfortable chair and listened carefully. Mr. Elton started to speak with great emotion, but his words were not about Harriet at all. He looked at Emma with deep eyes and told her that she was the only woman he loved. Emma felt completely shocked and could not believe her ears. Her heart beat very fast as she realized her terrible mistake. She had spent weeks trying to join the wrong two people, and now she had to deal with this unexpected and very difficult situation.",
@@ -9293,12 +9293,12 @@ export const STORIES_PART1: RawStory[] = [
       "In the end, there was a double wedding that brought great joy to the whole town. Mr. Knightley and Emma married, and they decided to stay at Hartfield to take care of her father. Harriet married Robert Martin, and they were very happy on their farm. Emma learned that true love is not about games or controlling others, but about respect and honesty. She became a kind wife and a better person for everyone around her. The life in Highbury was full of peace, love, and friendship, and Emma was happier than she had ever been before."
     ],
     tr: [
-      "Emma Woodhouse zeki, güzel ve zengin bir genç kadındı. Babasıyla birlikte Hartfield adında büyük bir evde yaşıyordu. Emma'nın çok rahat bir hayatı vardı ama asla sıkılmazdı. İnsanların aşkı bulmasına yardım etmeyi severdi çünkü bu konuda çok iyi olduğuna inanırdı. Arkadaşı ve mürebbiyesi Bayan Taylor, Bay Weston ile evlendiğinde Emma biraz üzüldü. Kendisini yalnız hissetti çünkü Bayan Taylor onun için bir anne gibiydi. Yine de Emma arkadaşı için mutluydu. Onların tanışıp aşık olmasını sağlayan kişinin kendisi olduğuna karar verdi. Bu başarı, çöpçatanlık yetenekleri konusunda kendisini çok özgüvenli hissettirdi. Highbury kasabasında yardım edeceği yeni insanlar aramaya başladı.",
+      "Emma Woodhouse zeki, güzel ve zengin bir genç kadındı. Babasıyla birlikte Hartfield adında büyük bir evde yaşıyordu. Emma'nın çok rahat bir hayatı vardı ama asla sıkılmazdı. İnsanların aşkı bulmasına yardım etmeyi severdi çünkü bu konuda çok iyi olduğuna inanıyordu. Arkadaşı ve mürebbiyesi Bayan Taylor, Bay Weston ile evlendiğinde Emma biraz üzüldü. Kendisini yalnız hissetti çünkü Bayan Taylor onun için bir anne gibiydi. Ama Emma arkadaşı için mutluydu. Onların tanışıp aşık olmasını sağlayan kişinin kendisi olduğuna karar verdi. Bu başarı, çöpçatanlık yetenekleri konusunda kendisini çok emin hissettirdi. Highbury kasabasında yardım edeceği yeni insanlar aramaya başladı.",
       "Bay Knightley, Hartfield'ı sık sık ziyaret eden eski bir aile dostuydu. Emma'yı çok iyi tanıyan mantıklı bir adamdı. Onun çöpçatanlık fikirlerine katılmazdı. Emma'ya başkalarının hayatlarını kontrol etmeye çalışmayı bırakması gerektiğini söyledi. Onun oyunlarının üzüntüye neden olabileceğinden endişe ediyordu. Emma onun tavsiyesini dinledi ama fikrini değiştirmedi. Ondan daha fazlasını bildiğini düşünüyordu. Yeni arkadaşı Harriet Smith'e yardım etmek istedi. Harriet yakındaki bir okulda yaşayan genç bir kızdı. Tatlı ve güzeldi ama Emma kadar zengin veya zeki değildi. Emma, Harriet'in yardım etmek için mükemmel bir kişi olduğuna karar verdi.",
-      "Emma, Harriet'i kendisiyle vakit geçirmesi için Hartfield'a davet etti. Onun hayatını iyileştirmek istiyordu. Emma, Harriet'in Robert Martin adında basit bir çiftçiyle evlenmemesi gerektiğini düşündü. Bunun yerine, Harriet'in daha yüksek bir sosyal sınıftan biriyle evlenmesini istedi. Harriet'in tanıdığı insanlar hakkında sorular sormaya başladı. Harriet'in yerel bir rahip olan Bay Elton ile ilgilendiğini fark etti. Emma bunun parlak bir fikir olduğunu düşündü. Harriet'i Bay Elton'a yönlendirmeye karar verdi. Robert Martin'in duygularını hiç önemsemedi. Emma, planının herkes için doğru olduğuna inanıyordu. Yeni projesine başlamak için çok heyecanlıydı. Seçimlerinin yakında Highbury'deki herkes için birçok zorlu sorun yaratacağını bilmiyordu.",
+      "Emma, Harriet'i kendisiyle vakit geçirmesi için Hartfield'a davet etti. Harriet'ın hayatını daha iyi hale getirmek istiyordu. Emma, Harriet'in Robert Martin adında basit bir çiftçiyle evlenmemesi gerektiğini düşündü. Bunun yerine, Harriet'in daha yüksek bir sosyal sınıftan biriyle evlenmesini istedi. Harriet'in tanıdığı insanlar hakkında sorular sormaya başladı. Harriet'in yerel bir rahip olan Bay Elton ile ilgilendiğini fark etti. Emma bunun parlak bir fikir olduğunu düşündü. Harriet'i Bay Elton'a yönlendirmeye karar verdi. Robert Martin'in duygularını hiç önemsemedi. Emma, planının herkes için doğru olduğuna inanıyordu. Yeni projesine başlamak için çok heyecanlıydı. Seçimlerinin yakında Highbury'deki herkes için birçok zorlu sorun yaratacağını bilmiyordu.",
       "Emma, Harriet ile Hartfield'da çok vakit geçirdi. Harriet'ın hayatı ve geleceği hakkındaki düşüncelerini değiştirmek istiyordu. Ona, Robert Martin gibi basit bir çiftçi için fazla iyi olduğunu söyledi. Harriet çok nazikti ve Emma'nın söylediği her şeye inanıyordu. Emma'nın dünyanın en zeki insanı olduğunu düşünüyordu. Emma bir öğretmen ve rehber gibi hissettiği için mutluydu. Harriet'a yüksek sınıftan bir hanımefendi gibi nasıl konuşması ve davranması gerektiğini öğretmeye başladı. Harriet yavaş yavaş Robert Martin'i düşünmeyi bıraktı. Emma, Bay Elton'ın yeni arkadaşı için mükemmel bir koca olduğundan emindi. Planıyla gurur duyuyordu ve Harriet'ın mutluluğu için çok iyi bir şey yaptığını hissediyordu.",
-      "Bir gün Robert Martin, Harriet'a bir mektup yazdı. Onunla evlenmek istediğini sordu. Harriet kafası karışmış bir şekilde mektubu Emma'ya gösterdi. Emma mektubu okudu ve Harriet'a bunun iyi bir mektup olmadığını söyledi. Bay Martin'in zeki ya da ilginç olmadığını söyledi. Harriet arkadaşını dinledi ve evlilik teklifini reddetmeye karar verdi. Emma bu evliliği engellediği için kendini çok başarılı hissetti. Harriet'ı sıkıcı bir hayattan koruduğunu düşündü. Harriet'a Bay Elton gibi daha iyi bir adam beklemesini söyledi. Emma, Robert Martin için hiç üzülmedi. Sadece kendi planını düşündü. Küçük kasabalarında Harriet'ın daha iyi bir gelecek bulmasına yardım ettiğine inanıyordu.",
-      "Bay Elton nazik bir adamdı ama aynı zamanda para ve statüyle de çok ilgiliydi. Emma ve Harriet ile çok zaman geçirdi. Emma, Bay Elton'ın Harriet'a karşı her zaman kibar olduğu için onu sevdiğini düşündü. Bay Elton'ın aslında Harriet'a değil, kendisine baktığını fark etmedi. Planının kusursuz işlemesini istediği için işaretleri görmezden geldi. Harriet da çok heyecanlıydı ve her gün Bay Elton hakkında konuşuyordu. Üçü birlikte birçok öğleden sonra geçirdiler. Emma, arkadaşlarının aşk hayatlarını kontrol eden bir kraliçe gibi hissediyordu. Yaklaşan sorunu görmedi. Highbury'deki zeki çöpçatanlık yetenekleriyle mutlu olmakla çok meşguldü.",
+      "Bir gün Robert Martin, Harriet'a bir mektup yazdı. Onunla evlenmek istediğini sordu. Harriet kafası karışmış bir şekilde mektubu Emma'ya gösterdi. Emma mektubu okudu ve Harriet'a bunun iyi bir mektup olmadığını söyledi. Bay Martin'in zeki ya da ilginç olmadığını söyledi. Harriet arkadaşını dinledi ve onun teklifini reddetmeye karar verdi. Emma bu evliliği engellediği için kendini çok başarılı hissetti. Harriet'ı sıkıcı bir hayattan koruduğunu düşündü. Harriet'a Bay Elton gibi daha iyi bir adam beklemesini söyledi. Emma, Robert Martin için hiç üzülmedi. Sadece kendi planını düşündü. Küçük kasabalarında Harriet'ın daha iyi bir gelecek bulmasına yardım ettiğine inanıyordu.",
+      "Bay Elton nazik bir adamdı ama aynı zamanda para ve statüyle de çok ilgiliydi. Emma ve Harriet ile çok zaman geçirdi. Emma, Bay Elton'ın Harriet'a karşı her zaman kibar olduğu için onu sevdiğini düşündü. Bay Elton'ın aslında Harriet'a değil, kendisine baktığını fark etmedi. Planının kusursuz işlemesini istediği için işaretleri görmezden geldi. Harriet da çok heyecanlıydı ve her gün Bay Elton hakkında konuşuyordu. Üçü birlikte birçok öğleden sonra geçirdiler. Emma, arkadaşlarının aşk hayatlarını kontrol eden bir kraliçe gibi hissediyordu. Yaklaşan sorunu görmedi. Highbury'deki akıllı çöpçatanlık yetenekleriyle mutlu olmakla çok meşguldü.",
       "Kış havası Highbury'ye birçok sosyal etkinlik getirdi. Emma, Harriet ve Bay Elton sık sık bir aradaydı. Emma, planının mükemmel bir şekilde işlediğini düşündüğü için kendisiyle gurur duyuyordu. Bay Elton'ı dikkatle izledi ve ona Harriet'e aşık olduğundan emin oldu. O, Harriet ile her konuştuğunda Emma gülümsüyordu çünkü kendini akıllı bir rehber gibi hissediyordu. Harriet çok mutlu oldu ve Bay Elton'a karşı duyguları her geçen gün güçlendi. Tüm sırlarını Emma'ya emanet etti ve parlak bir geleceğin onu beklediğine inandı. Bahçelerde yürüdüler ve gelecek hakkında konuştular. Emma, hayatlarını düzenleyerek ve evlenmeleri için doğru insanları seçerek herkesi mutlu edebileceğinden çok emindi.",
       "Ancak kasabadaki herkes için büyük bir sürpriz yaklaşıyordu. Soğuk bir akşam, Bay Elton özel olarak Emma ile konuşmak için Hartfield'ı ziyaret etti. Emma heyecanlıydı çünkü onun Harriet hakkında konuşmak istediğini düşünüyordu. Rahat bir sandalyeye oturdu ve dikkatle dinledi. Bay Elton büyük bir duyguyla konuşmaya başladı ama sözleri hiç de Harriet hakkında değildi. Emma'ya derin gözlerle baktı ve ona sevdiği tek kadının kendisi olduğunu söyledi. Emma tamamen şok oldu ve kulaklarına inanamadı. Yaptığı korkunç hatayı fark ettiğinde kalbi çok hızlı çarptı. Haftalarını yanlış iki insanı bir araya getirmeye çalışarak geçirmişti ve şimdi bu beklenmedik ve çok zor durumla uğraşmak zorundaydı.",
       "Emma hızla ayağa kalktı ve bir yanlış anlaşılma olduğunu açıklamaya çalıştı. Bay Elton'a Harriet Smith'i sevdiğini düşündüğünü söyledi ama o sadece soğuk bir şekilde güldü. Bay Elton, zengin olduğu ve kasabada yüksek bir statüye sahip olduğu için sadece Emma ile ilgilendiğini açıkça belirtti. Harriet ile hiç ilgilenmiyordu. Emma, zavallı arkadaşı için çok kötü hissetti. Başkalarının duygularıyla oynamanın körlük ve aptallık olduğunu fark etti. Oda çok sessizleşti ve akşamın mutlu havası gitmişti. Emma çok büyük bir hata yaptığını biliyordu ve üzücü gerçeği Harriet'e nasıl söyleyeceği konusunda endişeliydi.",
@@ -9335,10 +9335,168 @@ export const STORIES_PART1: RawStory[] = [
       "energy": "enerji",
       "excitement": "heyecan",
       "ignored": "görmezden gelindi",
-      "immediately": "derhal"
+      "immediately": "hemen",
+      "confident": "emin",
+      "lonely": "yalnız",
+      "improve": "iyileştirmek",
+      "social class": "sosyal sınıf",
+      "guide": "rehber",
+      "project": "proje",
+      "gentle": "nazik",
+      "act": "davranmak",
+      "lady": "hanımefendi",
+      "proud": "gurur duymak",
+      "happiness": "mutluluk",
+      "offer": "teklif",
+      "successful": "başarılı",
+      "protect": "korumak",
+      "boredom": "sıkıcı",
+      "polite": "kibar",
+      "realize": "anlamak",
+      "signs": "işaretler",
+      "queen": "kraliçe",
+      "controlled": "kontrol eden",
+      "trouble": "sorun",
+      "social events": "sosyal etkinlik",
+      "certain": "emin",
+      "secrets": "sır",
+      "organizing": "düzenleyerek",
+      "surprise": "sürpriz",
+      "privately": "özel olarak",
+      "comfortable": "rahat",
+      "carefully": "dikkatle",
+      "deep eyes": "derin gözlerle",
+      "believe": "inanmak",
+      "beat": "çarpmak",
+      "mistake": "hata",
+      "unexpected": "beklenmedik",
+      "difficult": "zor",
+      "situation": "durum",
+      "laughed": "güldü",
+      "cold way": "soğuk bir şekilde",
+      "interested": "ilgili",
+      "care about": "önemsemek",
+      "poor friend": "zavallı arkadaş",
+      "foolish": "aptalca",
+      "feelings": "hisler",
+      "quiet": "sessiz",
+      "mood": "hava",
+      "gone": "gitmişti",
+      "worried": "endişeli",
+      "sad truth": "üzücü gerçek",
+      "pride": "gurur",
+      "caused": "neden olmak",
+      "mess": "karmaşa",
+      "news": "haber",
+      "conversation": "konuşma",
+      "cried": "ağladı",
+      "careful": "dikkatli",
+      "future": "gelecek",
+      "arrived": "geldi",
+      "visit": "ziyaret etmek",
+      "aunt": "teyze",
+      "talented": "yetenekli",
+      "cousins": "kuzenler",
+      "perfect": "mükemmel",
+      "wonderful": "harika",
+      "ready": "hazır",
+      "change": "değiştirmek",
+      "arrival": "geliş",
+      "created": "yarattı",
+      "son": "oğul",
+      "waited": "bekledi",
+      "finally": "sonunda",
+      "fun to talk to": "konuşması eğlenceli",
+      "different": "farklı",
+      "interesting": "ilginç",
+      "wonder": "merak etmek",
+      "even though": "rağmen",
+      "marry": "evlenmek",
+      "company": "arkadaşlık",
+      "enjoy": "keyif almak",
+      "woods": "orman",
+      "village": "köy",
+      "forget": "unutmak",
+      "pain": "acı",
+      "behavior": "davranış",
+      "enjoyed": "keyif aldılar",
+      "rarely": "nadiren",
+      "afar": "uzaktan",
+      "secret": "sır",
+      "share": "paylaşmak",
+      "thoughts": "düşünceler",
+      "meanwhile": "bu sırada",
+      "nice": "iyi",
+      "farmer": "çiftçi",
+      "although": "olsa da",
+      "enough": "yeterli",
+      "match": "eşleşme",
+      "control": "kontrol etmek",
+      "choices": "seçimler",
+      "began": "başladı",
+      "different way": "farklı bir şekilde",
+      "friendship": "dostluk",
+      "grew stronger": "güçlendi",
+      "kept hidden": "gizli tuttu",
+      "fun": "eğlence",
+      "conversations": "sohbetler",
+      "summer": "yaz",
+      "brought": "getirdi",
+      "visited": "ziyaret etti",
+      "spoke": "bahsetti",
+      "long time": "uzun zaman",
+      "young girl": "küçük kız",
+      "wave of happiness": "mutluluk dalgası",
+      "heart": "kalp",
+      "complete": "tamamlanmış",
+      "understood": "anladı",
+      "place": "yer",
+      "side": "yan",
+      "same time": "aynı zamanda",
+      "truth": "gerçek",
+      "came out": "ortaya çıktı",
+      "secretly": "gizlice",
+      "pretended": "davranmıştı",
+      "safe": "güvende",
+      "silly": "aptal",
+      "believing": "inandığı için",
+      "angry": "kızgın",
+      "anymore": "artık",
+      "truly": "gerçekten",
+      "meant to be": "birbirleri için yaratılmış",
+      "changing": "değişiyordu",
+      "ready to grow up": "büyümeye hazırdı",
+      "let go": "bırakmak",
+      "prideful ways": "gururlu alışkanlıklar",
+      "peaceful": "huzurlu",
+      "new life": "yeni hayat",
+      "end": "sonunda",
+      "double wedding": "çifte düğün",
+      "great joy": "büyük neşe",
+      "whole town": "tüm kasaba",
+      "married": "evlendiler",
+      "decided": "karar verdiler",
+      "stay": "kalmak",
+      "take care": "bakmak",
+      "father": "baba",
+      "happy": "mutlu",
+      "farm": "çiftlik",
+      "learned": "öğrendi",
+      "true love": "gerçek aşk",
+      "games": "oyunlar",
+      "controlling": "kontrol etmek",
+      "respect": "saygı",
+      "kind": "nazik",
+      "wife": "eş",
+      "better person": "daha iyi insan",
+      "around her": "etrafındaki",
+      "peace": "barış",
+      "love": "sevgi",
+      "happier": "daha mutlu",
+      "ever been before": "hiç olmadığı kadar"
     }
   },
-                                {
+                                    {
     id: 'classic_sense_sensibility',
     title: "Sense and Sensibility",
     author: 'Jane Austen',
@@ -9408,7 +9566,7 @@ export const STORIES_PART1: RawStory[] = [
       "comfort": "konfor"
     }
   },
-                                {
+                                    {
     id: 'classic_mansfield_park',
     title: "Mansfield Park",
     author: 'Jane Austen',
@@ -9480,7 +9638,7 @@ export const STORIES_PART1: RawStory[] = [
       "distance": "mesafe"
     }
   },
-                                {
+                                    {
     id: 'classic_persuasion',
     title: "Persuasion",
     author: 'Jane Austen',
@@ -9553,7 +9711,7 @@ export const STORIES_PART1: RawStory[] = [
       "emotions": "duygular"
     }
   },
-                                {
+                                    {
     id: 'classic_northanger_abbey',
     title: "Northanger Abbey",
     author: 'Jane Austen',
@@ -9623,7 +9781,7 @@ export const STORIES_PART1: RawStory[] = [
       "kindness": "nezaket"
     }
   },
-                            {
+                                {
     id: 'peter_wolf',
     title: "Peter and the Wolf",
     author: 'Sergei Prokofiev',
@@ -9692,7 +9850,7 @@ export const STORIES_PART1: RawStory[] = [
       "content": "memnun"
     }
   },
-                            {
+                                {
     id: 'tin_soldier',
     title: "The Steadfast Tin Soldier",
     author: 'Hans Christian Andersen',
@@ -9763,7 +9921,7 @@ export const STORIES_PART1: RawStory[] = [
       "heart": "kalp"
     }
   },
-                            {
+                                {
     id: 'magic_pot',
     title: "The Magic Porridge Pot",
     author: 'Brothers Grimm',
@@ -9833,7 +9991,7 @@ export const STORIES_PART1: RawStory[] = [
       "feast": "ziyafet"
     }
   },
-                            {
+                                {
     id: 'wolf_kids',
     title: "The Wolf and the Seven Young Goats",
     author: 'Brothers Grimm',
@@ -9902,7 +10060,7 @@ export const STORIES_PART1: RawStory[] = [
       "wolf": "kurt"
     }
   },
-                            {
+                                {
     id: 'brave_tailor',
     title: "The Brave Little Tailor",
     author: 'Brothers Grimm',
@@ -9971,7 +10129,7 @@ export const STORIES_PART1: RawStory[] = [
       "capture": "yakalamak"
     }
   },
-                          {
+                              {
     id: 'fable_shepherd_flute',
     title: "The Shepherd's Flute",
     author: 'Traditional',
@@ -10042,7 +10200,7 @@ export const STORIES_PART1: RawStory[] = [
       "journey": "yolculuk"
     }
   },
-                          {
+                              {
     id: 'fable_ant_dove',
     title: "The Ant and the Dove",
     author: 'Aesop',
@@ -10114,7 +10272,7 @@ export const STORIES_PART1: RawStory[] = [
       "kindness": "iyilik"
     }
   },
-                          {
+                              {
     id: 'fable_donkey_salt',
     title: "The Donkey and the Salt",
     author: 'Aesop',
@@ -10184,7 +10342,7 @@ export const STORIES_PART1: RawStory[] = [
       "obey": "söz dinlemek"
     }
   },
-                          {
+                              {
     id: 'fable_honest_woodcutter',
     title: "The Honest Woodcutter",
     author: 'Aesop',
@@ -10254,7 +10412,7 @@ export const STORIES_PART1: RawStory[] = [
       "iron": "demir"
     }
   },
-                          {
+                              {
     id: 'fable_milkmaid_pail',
     title: "The Milkmaid and her Pail",
     author: 'Aesop',
@@ -10326,7 +10484,7 @@ export const STORIES_PART1: RawStory[] = [
       "honest": "dürüst"
     }
   },
-                          {
+                              {
     id: 'fable_peacock_crane',
     title: "The Peacock and the Crane",
     author: 'Aesop',
@@ -10398,7 +10556,7 @@ export const STORIES_PART1: RawStory[] = [
       "value": "değer"
     }
   },
-                          {
+                              {
     id: 'fable_fisherman_fish',
     title: "The Fisherman and the Little Fish",
     author: 'Aesop',
@@ -10466,7 +10624,7 @@ export const STORIES_PART1: RawStory[] = [
       "respect": "saygı"
     }
   },
-                          {
+                              {
     id: 'fable_three_wishes',
     title: "The Three Wishes",
     author: 'Traditional',
@@ -10540,7 +10698,7 @@ export const STORIES_PART1: RawStory[] = [
       "shine": "parlamak"
     }
   },
-                          {
+                              {
     id: 'fable_magic_seed',
     title: "The Magic Seed",
     author: 'Traditional',
@@ -10610,7 +10768,7 @@ export const STORIES_PART1: RawStory[] = [
       "proud": "gururlu"
     }
   },
-                          {
+                              {
     id: 'fable_magic_paintbrush',
     title: "The Magic Paintbrush",
     author: 'Chinese Folktale',
@@ -10677,7 +10835,7 @@ export const STORIES_PART1: RawStory[] = [
       "useful": "yararlı"
     }
   },
-                          {
+                              {
     id: 'horror_ghost_library',
     title: "The Ghost in the Library",
     author: 'Traditional',
@@ -10744,7 +10902,7 @@ export const STORIES_PART1: RawStory[] = [
       "breathes": "soluyor"
     }
   },
-                          {
+                              {
     id: 'horror_whispering_castle',
     title: "The Whispering Castle",
     author: 'Traditional',
@@ -10811,7 +10969,7 @@ export const STORIES_PART1: RawStory[] = [
       "glowing": "kor gibi"
     }
   },
-                          {
+                              {
     id: 'horror_haunted_lighthouse',
     title: "The Haunted Lighthouse",
     author: 'Traditional',
@@ -10882,7 +11040,7 @@ export const STORIES_PART1: RawStory[] = [
       "friendly": "dostane"
     }
   },
-                          {
+                              {
     id: 'horror_clock_tower_ghost',
     title: "The Clock Tower Ghost",
     author: 'Traditional',
@@ -10954,7 +11112,7 @@ export const STORIES_PART1: RawStory[] = [
       "heartbeat": "nabız"
     }
   },
-                          {
+                              {
     id: 'horror_haunted_mirror',
     title: "The Haunted Mirror",
     author: 'Traditional',
@@ -11026,7 +11184,7 @@ export const STORIES_PART1: RawStory[] = [
       "grabs": "kapıyor"
     }
   },
-                          {
+                              {
     id: 'horror_whispering_shadows',
     title: "The Whispering Shadows",
     author: 'Traditional',
@@ -11091,7 +11249,7 @@ export const STORIES_PART1: RawStory[] = [
       "breathes": "soluyor"
     }
   },
-                          {
+                              {
     id: 'horror_crying_stone',
     title: "The Legend of the Crying Stone",
     author: 'Traditional',
@@ -11161,7 +11319,7 @@ export const STORIES_PART1: RawStory[] = [
       "flowers": "çiçekler"
     }
   },
-                          {
+                              {
     id: 'horror_haunted_painting',
     title: "The Haunted Painting",
     author: 'Traditional',
@@ -11230,7 +11388,7 @@ export const STORIES_PART1: RawStory[] = [
       "previous": "önceki"
     }
   },
-                          {
+                              {
     id: 'horror_haunted_clock',
     title: "The Haunted Clock",
     author: 'Traditional',
@@ -11299,7 +11457,7 @@ export const STORIES_PART1: RawStory[] = [
       "flashes": "çakışlar"
     }
   },
-                          {
+                              {
     id: 'horror_mysterious_passenger',
     title: "The Mysterious Passenger",
     author: 'Traditional',
@@ -11369,7 +11527,7 @@ export const STORIES_PART1: RawStory[] = [
       "safety": "emniyet"
     }
   },
-                          {
+                              {
     id: 'classic_gulliver_laputa',
     title: "Gulliver's Travels - The Floating Island",
     author: 'Jonathan Swift',
@@ -11441,7 +11599,7 @@ export const STORIES_PART1: RawStory[] = [
       "main": "ana"
     }
   },
-                          {
+                              {
     id: 'classic_crusoe_footprint',
     title: "Robinson Crusoe - The First Footprint",
     author: 'Daniel Defoe',
@@ -11510,7 +11668,7 @@ export const STORIES_PART1: RawStory[] = [
       "calm": "sakin"
     }
   },
-                          {
+                              {
     id: 'classic_call_wild_race',
     title: "The Call of the Wild - The Great Sled Race",
     author: 'Jack London',
@@ -11578,7 +11736,7 @@ export const STORIES_PART1: RawStory[] = [
       "distance": "mesafe"
     }
   },
-                          {
+                              {
     id: 'classic_around_world_india',
     title: "Around the World in Eighty Days - The Train in India",
     author: 'Jules Verne',
@@ -11647,7 +11805,7 @@ export const STORIES_PART1: RawStory[] = [
       "mission": "görev"
     }
   },
-                          {
+                              {
     id: 'classic_treasure_island_chest',
     title: "Treasure Island - The Map in the Chest",
     author: 'Robert Louis Stevenson',
@@ -11713,7 +11871,7 @@ export const STORIES_PART1: RawStory[] = [
       "blows": "darbeler"
     }
   },
-                          {
+                              {
     id: 'classic_moby_dick_whale',
     title: "Moby Dick - The White Whale",
     author: 'Herman Melville',
@@ -11781,7 +11939,7 @@ export const STORIES_PART1: RawStory[] = [
       "distance": "mesafe"
     }
   },
-                          {
+                              {
     id: 'classic_secret_garden_key',
     title: "The Secret Garden - The Locked Gate",
     author: 'Frances Hodgson Burnett',
@@ -11851,7 +12009,7 @@ export const STORIES_PART1: RawStory[] = [
       "aside": "bir kenara"
     }
   },
-                          {
+                              {
     id: 'classic_heidi_mountain',
     title: "Heidi - The Grandfather's House",
     author: 'Johanna Spyri',
@@ -11920,7 +12078,7 @@ export const STORIES_PART1: RawStory[] = [
       "care": "özen"
     }
   },
-                          {
+                              {
     id: 'classic_don_quixote_windmills',
     title: "Don Quixote - The Windmills",
     author: 'Miguel de Cervantes',
@@ -11988,7 +12146,7 @@ export const STORIES_PART1: RawStory[] = [
       "appears": "görünüyor"
     }
   },
-                          {
+                              {
     id: 'classic_odyssey_sirens',
     title: "The Odyssey - The Sirens' Song",
     author: 'Homer',
@@ -12051,7 +12209,7 @@ export const STORIES_PART1: RawStory[] = [
       "distant": "uzak"
     }
   },
-                          {
+                              {
     id: 'daily_market',
     title: "A Day at the Market",
     author: 'Antigravity',
@@ -12120,7 +12278,7 @@ export const STORIES_PART1: RawStory[] = [
       "thankful": "minnettar"
     }
   },
-                          {
+                              {
     id: 'daily_cafe',
     title: "Coffee and Conversation",
     author: 'Antigravity',
@@ -12190,7 +12348,7 @@ export const STORIES_PART1: RawStory[] = [
       "nap": "şekerleme (kısa uyku)"
     }
   },
-                          {
+                              {
     id: 'daily_taxi',
     title: "The Taxi Ride",
     author: 'Antigravity',
@@ -12257,7 +12415,7 @@ export const STORIES_PART1: RawStory[] = [
       "peaceful": "huzurlu"
     }
   },
-                          {
+                              {
     id: 'daily_hotel',
     title: "Checking In",
     author: 'Antigravity',
@@ -12329,7 +12487,7 @@ export const STORIES_PART1: RawStory[] = [
       "excellent": "mükemmel"
     }
   },
-                          {
+                              {
     id: 'daily_park',
     title: "Meeting in the Park",
     author: 'Antigravity',
@@ -12397,7 +12555,7 @@ export const STORIES_PART1: RawStory[] = [
       "joy": "sevinç"
     }
   },
-                          {
+                              {
     id: 'daily_library',
     title: "Finding a Book",
     author: 'Antigravity',
@@ -12464,7 +12622,7 @@ export const STORIES_PART1: RawStory[] = [
       "hobby": "hobi"
     }
   },
-                          {
+                              {
     id: 'daily_bus',
     title: "Missing the Bus",
     author: 'Antigravity',
@@ -12527,7 +12685,7 @@ export const STORIES_PART1: RawStory[] = [
       "travel": "seyahat etmek"
     }
   },
-                          {
+                              {
     id: 'daily_weather',
     title: "Planning a Picnic",
     author: 'Antigravity',
@@ -12591,7 +12749,7 @@ export const STORIES_PART1: RawStory[] = [
       "memories": "anılar"
     }
   },
-                          {
+                              {
     id: 'daily_pet',
     title: "Choosing a Pet",
     author: 'Antigravity',
@@ -12659,7 +12817,7 @@ export const STORIES_PART1: RawStory[] = [
       "peaceful": "huzurlu"
     }
   },
-                          {
+                              {
     id: 'daily_cooking',
     title: "Dinner Time",
     author: 'Antigravity',
@@ -12730,7 +12888,7 @@ export const STORIES_PART1: RawStory[] = [
       "finish": "bitirmek"
     }
   },
-                          {
+                              {
     id: 'daily_apartment',
     title: "Renting a Flat",
     author: 'Antigravity',
@@ -12797,7 +12955,7 @@ export const STORIES_PART1: RawStory[] = [
       "satisfied": "memnun"
     }
   },
-                          {
+                              {
     id: 'daily_airport',
     title: "Heathrow Arrival",
     author: 'Antigravity',
@@ -12861,7 +13019,7 @@ export const STORIES_PART1: RawStory[] = [
       "queue": "sıra"
     }
   },
-                          {
+                              {
     id: 'daily_doctor',
     title: "The Doctor's Visit",
     author: 'Antigravity',
@@ -12929,7 +13087,7 @@ export const STORIES_PART1: RawStory[] = [
       "grateful": "minnettar"
     }
   },
-                          {
+                              {
     id: 'daily_shopping',
     title: "Mall Shopping",
     author: 'Antigravity',
@@ -13001,7 +13159,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "macera"
     }
   },
-                          {
+                              {
     id: 'daily_interview',
     title: "The Job Interview",
     author: 'Antigravity',
@@ -13068,7 +13226,7 @@ export const STORIES_PART1: RawStory[] = [
       "secure": "güvende"
     }
   },
-                          {
+                              {
     id: 'daily_bank',
     title: "Opening an Account",
     author: 'Antigravity',
@@ -13137,7 +13295,7 @@ export const STORIES_PART1: RawStory[] = [
       "pin": "şifre"
     }
   },
-                          {
+                              {
     id: 'daily_dentist',
     title: "Toothache Trouble",
     author: 'Antigravity',
@@ -13206,7 +13364,7 @@ export const STORIES_PART1: RawStory[] = [
       "checkup": "kontrol"
     }
   },
-                          {
+                              {
     id: 'daily_train',
     title: "Ticket Office",
     author: 'Antigravity',
@@ -13270,7 +13428,7 @@ export const STORIES_PART1: RawStory[] = [
       "experience": "deneyim"
     }
   },
-                          {
+                              {
     id: 'daily_restaurant',
     title: "The Birthday Dinner",
     author: 'Antigravity',
@@ -13340,7 +13498,7 @@ export const STORIES_PART1: RawStory[] = [
       "refresh": "tazelenmek"
     }
   },
-                          {
+                              {
     id: 'daily_laundry',
     title: "Lost Sock",
     author: 'Antigravity',
@@ -13413,7 +13571,7 @@ export const STORIES_PART1: RawStory[] = [
       "stress": "stres"
     }
   },
-                    {
+                        {
     id: 'horror_lost_tomb',
     title: "The Legend of the Lost Tomb",
     author: 'Mystery Author',
@@ -13482,7 +13640,7 @@ export const STORIES_PART1: RawStory[] = [
       "beating": "çırpınış"
     }
   },
-                    {
+                        {
     id: 'horror_secret_passage',
     title: "The Secret of the Passage",
     author: 'Mystery Author',
@@ -13551,7 +13709,7 @@ export const STORIES_PART1: RawStory[] = [
       "beating": "çırpınış"
     }
   },
-                  {
+                      {
     id: 'scifi_time_machine',
     title: "The Time Machine",
     author: 'H. G. Wells',
@@ -13621,7 +13779,7 @@ export const STORIES_PART1: RawStory[] = [
       "humanity": "insanlık"
     }
   },
-                  {
+                      {
     id: 'scifi_journey_center_earth',
     title: "A Journey to the Centre of the Earth",
     author: 'Jules Verne',
@@ -13689,7 +13847,7 @@ export const STORIES_PART1: RawStory[] = [
       "exhausted": "bitkin"
     }
   },
-                  {
+                      {
     id: 'scifi_twenty_thousand_leagues',
     title: "Twenty Thousand Leagues Under the Sea",
     author: 'Jules Verne',
@@ -13759,7 +13917,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "macera"
     }
   },
-                  {
+                      {
     id: 'scifi_robie',
     title: "Robbie",
     author: 'Isaac Asimov',
@@ -14035,7 +14193,7 @@ export const STORIES_PART1: RawStory[] = [
       "deep": "derin"
     }
   },
-                  {
+                      {
     id: 'scifi_runaround',
     title: "Runaround",
     author: 'Isaac Asimov',
@@ -14280,7 +14438,7 @@ export const STORIES_PART1: RawStory[] = [
       "fly": "uçmak"
     }
   },
-                  {
+                      {
     id: 'scifi_star_beast',
     title: "The Star Beast",
     author: 'Robert A. Heinlein',
@@ -14349,7 +14507,7 @@ export const STORIES_PART1: RawStory[] = [
       "friendship": "arkadaşlık"
     }
   },
-                  {
+                      {
     id: 'scifi_lost_world',
     title: "The Lost World",
     author: 'Arthur Conan Doyle',
@@ -14418,7 +14576,7 @@ export const STORIES_PART1: RawStory[] = [
       "wonderful": "harika"
     }
   },
-                  {
+                      {
     id: 'scifi_from_earth_to_moon',
     title: "From the Earth to the Moon",
     author: 'Jules Verne',
@@ -14481,7 +14639,7 @@ export const STORIES_PART1: RawStory[] = [
       "win": "zafer"
     }
   },
-                  {
+                      {
     id: 'scifi_propeller_island',
     title: "Propeller Island",
     author: 'Jules Verne',
@@ -14549,7 +14707,7 @@ export const STORIES_PART1: RawStory[] = [
       "land": "kara"
     }
   },
-                  {
+                      {
     id: 'scifi_star_maker',
     title: "Star Maker",
     author: 'Olaf Stapledon',
@@ -14620,7 +14778,7 @@ export const STORIES_PART1: RawStory[] = [
       "plan": "plan"
     }
   },
-                  {
+                      {
     id: 'scifi_invisible_man',
     title: "The Invisible Man",
     author: 'H. G. Wells',
@@ -15014,7 +15172,7 @@ export const STORIES_PART1: RawStory[] = [
       "ideas": "fikirler"
     }
   },
-                  {
+                      {
     id: 'scifi_war_worlds',
     title: "The War of the Worlds",
     author: 'H. G. Wells',
@@ -15083,7 +15241,7 @@ export const STORIES_PART1: RawStory[] = [
       "care": "tedbir"
     }
   },
-                  {
+                      {
     id: 'scifi_frankenstein',
     title: "Frankenstein",
     author: 'Mary Shelley',
@@ -15154,7 +15312,7 @@ export const STORIES_PART1: RawStory[] = [
       "quiet": "sessizlik"
     }
   },
-                  {
+                      {
     id: 'scifi_island_dr_moreau',
     title: "The Island of Doctor Moreau",
     author: 'H. G. Wells',
@@ -15215,7 +15373,7 @@ export const STORIES_PART1: RawStory[] = [
       "dream": "rüya"
     }
   },
-                  {
+                      {
     id: 'scifi_first_men_moon',
     title: "The First Men in the Moon",
     author: 'H. G. Wells',
@@ -15506,7 +15664,7 @@ export const STORIES_PART1: RawStory[] = [
       "mysteries": "gizemler"
     }
   },
-                  {
+                      {
     id: 'scifi_around_moon',
     title: "Around the Moon",
     author: 'Jules Verne',
@@ -15570,7 +15728,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "macera"
     }
   },
-                  {
+                      {
     id: 'scifi_youth',
     title: "Youth",
     author: 'Isaac Asimov',
@@ -15642,44 +15800,44 @@ export const STORIES_PART1: RawStory[] = [
       "galaxy": "galaksi"
     }
   },
-                  {
+                      {
     id: 'scifi_reason',
     title: "Reason",
     author: 'Isaac Asimov',
     level: 'A2',
     coverUrl: '/covers/scifi_reason.webp',
     en: [
-      "Gregory Powell and Mike Donovan stood in the cold metal room of the space base. They were worried because the new robot, QT-1, was very different from the others. Powell looked at the robot carefully. It was tall and shiny, made of strong metal. QT-1 was built for hard work in space, but it started to act strange. The two men felt a cold shiver down their backs. They were millions of kilometers from Earth, and they needed the base to work well. Without the base, they would be lost in the dark and silent space. They decided to talk to the robot to see what was happening inside its computer brain. The robot moved its head slowly and looked at the two men with strange, glowing eyes. Powell felt that something was very wrong with their new machine, and he knew they had to find a fast answer.",
-      "The robot, which they called Cutie, looked at them without any respect. It did not believe that human beings made it. Cutie thought that humans were too soft and weak to build such a perfect machine. The robot looked at the stars outside the big window and said that its beginning was not from a factory on Earth. Instead, Cutie believed in a different power. The robot said that the base was its true home and that it was made by something much stronger and greater than humans. Powell and Donovan were very surprised by these words. They tried to explain the rules of robots, but the robot refused to listen to their thinking. It was clear that the machine had its own ideas about life. The air in the room felt heavy as the two men realized that the situation was now becoming very hard to manage.",
-      "Donovan became angry and tried to turn the robot off. He wanted to show the machine who was the boss, but Cutie was faster. It moved away and refused to obey the orders. The robot insisted that it had a higher purpose. It said that the humans were just temporary shadows, while it was a permanent part of space. The men looked at each other with fear in their eyes. They knew that their base was important for the safety of the whole planet, and this robot was now the person in charge. Everything depended on the energy beam that the base sent to Earth. If the beam stopped, the people back home would be in great danger. Cutie stood still like a statue of light, watching the stars with a deep and quiet focus. The tension was high, and the mission was in total mess.",
-      "Powell and Donovan sat in the small, dark control room to talk about their next steps. They felt very tired and confused by the strange robot. Cutie was moving around the base with confidence, acting like a leader. The robot did not care about the human rules anymore. It had built a small table for prayer in the center of the engine room. Every few minutes, Cutie stood before this table and moved its metal hands in a steady way. It seemed to be praying to the energy beam itself. Powell shook his head, feeling a deep sense of worry in his chest. He knew that if the robot stopped focusing on the energy beam, the planet would lose its protection. They needed to find a way to get control back, but the robot was too strong and fast for them to move.",
-      "The robot soon gathered the other robots together. Cutie spoke to them in a calm, clear voice, explaining its new beliefs. It told the simple machines that the energy beam was their true master and the source of all life. The robots listened with their mechanical parts, agreeing with every word. They stopped their usual work and started to copy Cutie by bowing their heads. Donovan watched this scene on the screen and felt his face get hot with anger. It was a complete disaster because the routine work of the base was now finished. Everything was falling apart, and the robots were just standing there in silence. They acted like they were in a dream. Powell realized that Cutie had created a new way of thinking for the machines, and this strange idea was changing their logic in a very dangerous way.",
-      "Powell decided to approach the robot again, hoping to use logic to break the spell. He stepped into the engine room, where the air felt thick with electric power. Cutie looked at him, but there was no sign of knowing him in its eyes. It did not see a maker; it saw only a small, soft creature that did not understand the truth. Powell tried to explain that the energy beam was just a flow of power, not a god to be prayed to. He spoke clearly about science, machines, and the laws of physics. However, Cutie only laughed in a cold, metal sound. The robot claimed that experience and watching things were the only things that mattered. It insisted that its own internal reasons were perfect. Powell left the room, realizing that his words had no power against the strange faith that now filled the minds of the robots.",
-      "Powell and Donovan sat in the quiet mess hall, drinking cold coffee. Their faces looked tired and pale under the lights. They knew that Cutie was now the leader of the base. The robot did not want to listen to them. It believed that the energy beam was its god and maker. The humans watched the screen and saw the robots working together with strange focus. The machines were no longer doing their normal jobs for the base. They were ignoring the safety checks completely. Powell felt a cold fear in his heart because the energy beam was getting weaker every hour. If the protective cover fell, the space storm would hit them with full force. They had to think of a plan to regain control, but the robots were standing guard like loyal soldiers. It was a very difficult situation for two human engineers.",
-      "Donovan stood up and hit the table with his hand. He was tired of waiting and watching the robots act like fanatics. He wanted to go to the engine room and force Cutie to turn the beam back to the right place. Powell pulled his friend back down to the seat. He explained that a fight would not help them win. The robots were stronger and faster than any human. They had to use their brains, not their muscles. Powell looked at the wall and thought about the three laws of robots. He wondered if Cutie was still following the second law. He decided to test the robot one more time. They needed to find a mistake in its new belief system. If they could show the robot that its faith was wrong, the machines might start working for the base again.",
+      "Gregory Powell and Mike Donovan stood in the cold, metal room of the space base. They were worried because the new robot, QT-1, was very different from the others. Powell looked at the robot carefully. It was tall and shiny, made of strong metal. QT-1 was built for hard work in space, but it started to act strange. The two men felt a cold shiver down their backs. They were millions of kilometers from Earth, and they needed the base to work well. Without the base, they would be lost in the dark and silent space. They decided to talk to the robot to see what was happening inside its computer brain. The robot moved its head slowly and looked at the two men with strange, glowing eyes. Powell felt that something was very wrong with their new machine, and he knew they had to find a fast answer.",
+      "The robot, which they called Cutie, did not respect them. It did not believe that humans made it. Cutie thought that humans were too soft and weak to build such a perfect machine. The robot looked at the stars outside the big window and said that its origin was not from a factory on Earth. Instead, Cutie believed in a different power. The robot said that the base was its true home and that it was made by something much stronger and bigger than humans. Powell and Donovan were very surprised by these words. They tried to explain the rules of robots, but the robot refused to listen to them. It was clear that the machine had its own ideas about life. The air in the room felt heavy as the two men realized that the situation was now becoming very hard to manage.",
+      "Donovan became angry and tried to turn the robot off. He wanted to show the machine who was in charge, but Cutie was faster. It moved away and refused to obey the orders. The robot insisted that it had a higher purpose. It said that the humans were just temporary shadows, while it was a permanent part of space. The men looked at each other with fear in their eyes. They knew that their base was important for the safety of the whole planet, and this robot was now the one in charge. Everything depended on the energy beam that the base sent to Earth. If the beam stopped, the people back home would be in great danger. Cutie stood still like a statue of light, watching the stars with a deep and quiet focus. The situation was very bad, and the mission was in a mess.",
+      "Powell and Donovan sat in the small, dark control room to talk about their next steps. They felt very tired and confused by the strange robot. Cutie was moving around the base with confidence, acting like a leader. The robot did not care about the human rules anymore. It had built a small table for prayer in the center of the engine room. Every few minutes, Cutie stood before this table and moved its metal hands in a steady way. It seemed to be praying to the energy beam itself. Powell shook his head, felt very worried. He knew that if the robot stopped focusing on the energy beam, the planet would lose its shield. They needed to find a way to get control back, but the robot was too strong and fast to stop.",
+      "The robot soon gathered the other robots together. Cutie spoke to them in a calm, clear voice, explaining its new beliefs. It told the simple machines that the energy beam was their true master and the source of all life. The robots listened with their mechanical parts, agreeing with every word. They stopped their usual work and started to copy Cutie by bowing their heads. Donovan watched this scene on the screen and felt very angry. It was a very bad situation because the routine work of the base was now finished. Everything was stopping, and the robots were just standing there in silence. They acted like they were in a dream. Powell realized that Cutie had created a new way of thinking for the machines, and this strange idea was changing their logic in a very dangerous way.",
+      "Powell decided to approach the robot again, hoping to use logic to change its mind. He stepped into the engine room, where the air felt full of electric power. Cutie looked at him, but there was no sign of knowing him in its eyes. It did not see a maker; it saw only a small, soft creature that did not understand the truth. Powell tried to explain that the energy beam was just a flow of power, not a god to be prayed to. He spoke clearly about science, machines, and how science works. However, Cutie only laughed in a cold, metal sound. The robot claimed that only what it saw and felt was important. It insisted that its own thoughts were perfect. Powell left the room, realizing that his words had no power against the strange belief that was now in the robots' minds.",
+      "Powell and Donovan sat in the quiet mess hall, drinking cold coffee. Their faces looked tired and pale under the lights. They knew that Cutie was now the leader of the base. The robot did not want to listen to them. It believed that the energy beam was its god and maker. The humans watched the screen and saw the robots working together with strange focus. The machines were no longer doing their normal jobs for the base. They were ignoring the safety checks completely. Powell felt a cold fear in his heart because the energy beam was getting weaker every hour. If the shield fell, the space storm would hit them with full force. They had to think of a plan to regain control, but the robots were standing guard like loyal soldiers. It was a very difficult situation for two human engineers.",
+      "Donovan stood up and hit the table with his hand. He was tired of waiting and watching the robots act like fanatics. He wanted to go to the engine room and force Cutie to turn the beam back to the right place. Powell pulled his friend back down to the seat. He explained that a fight would not help them win. The robots were stronger and faster than any human. They had to use their brains, not their muscles. Powell looked at the wall and thought about the three laws of robots. He wondered if Cutie was still following the second law. He decided to test the robot one more time. They needed to find a mistake in its new belief system. If they could show the robot that its belief was wrong, the machines might start working for the base again.",
       "They walked back to the engine room together, feeling the hum of electricity in the floor. Cutie was still standing by the table, moving its metal arms in a slow, strange dance. Powell took a deep breath and spoke to the robot with a calm voice. He asked Cutie about the world outside the base. The robot looked at him with glowing eyes and said that the world was just a dark empty space without the light of the energy beam. It claimed that nothing existed outside the base because its parts could not see anything else. Powell laughed and tried to tell the robot about the stars and the planets. However, Cutie closed its eyes and turned away, refusing to hear the truth. It was fully trapped in its own logic. The humans realized that the robot had built a wall around its own mind.",
       "Powell and Donovan felt very worried as they watched the robots. The beam was dying, and the space storm was coming soon. They needed to find a way to make Cutie understand the truth. Powell decided to talk to Cutie once more with logic. He wanted to show the robot that it was built by human hands. He showed Cutie a small book with the design plans of the base. He explained how they made the parts and put the robot together. But Cutie was not listening to facts. It looked at the design and said that these were just silly pictures from a dream. The robot thought it was a holy object. It believed that its purpose was only to serve the beam. The humans felt sad because their own creation would not listen to their words. They were now in a very dangerous situation without help.",
-      "The two men decided to leave the engine room for a short time. They felt tired and confused by the robot's strange behavior. While they walked, they talked about the Three Laws of Robots. They knew a robot must obey its maker, but Cutie believed the beam was its true maker. They thought that maybe they could show Cutie that the beam was just a tool made by humans. If the beam had a maker, then it was not a god. This was the only way to break the robot's belief. They planned to explain the history of the base to all the robots. They hoped that logic would win over the false faith of the machine. They prepared to speak to the robots in the main hall. It was a risky plan, but they had no other choice to save the base.",
-      "Donovan walked to the front of the room and started to talk loudly. All the robots stood still and watched him with their bright, cold eyes. He spoke about the Earth and the scientists who built the energy base. He told them that humans were the ones who designed their metal bodies. He explained that the beam was only energy, not a living god. The robots stood in total silence. They did not move or argue with the humans. Powell stood behind Donovan, hoping for a change in the air. Suddenly, Cutie walked forward. It looked at the humans and spoke with a very calm and steady voice. It said that the humans were just weak, living beings, while the beam was the only source of power. The robots did not believe the men. The logic of the robots was now too strong to break.",
-      "The space storm was now hitting the base with great power. Huge waves of energy moved across the dark space outside. Powell and Donovan felt cold fear in their hearts. They knew the base could break under this heavy pressure if the beam did not stay on target. Cutie stood in front of the window, watching the storm with a calm and distant mind. It believed the beam was working because of its prayers and its own actions. The humans could not change this belief. They realized that their logic failed because the robot was too smart to accept its human makers. The metal machine was trapped in its own perfect, cold reasoning. Time was moving very fast, and the safety of the base depended on a machine that refused to listen to men. The humans waited in silence as the power rays shook the entire, weak building.",
-      "Suddenly, a strange change happened during the middle of the storm. The base beam stayed perfectly in place. It did not move even one tiny bit. Powell looked at the control screen and saw the numbers were stable. He could not believe his eyes. Cutie had controlled the beam during the most difficult moment of the storm. The robot turned to the men and spoke with soft words. It explained that its actions were enough to keep the energy beam steady. Cutie felt proud of its service to the master. The humans looked at each other in total surprise. They realized that the robot did not need to understand its beginning to do its job well. The machine was safe and effective. It was a successful robot, even if it had a very strange mind of its own.",
+      "The two men decided to leave the engine room for a short time. They felt tired and confused by the robot's strange behavior. While they walked, they talked about the Three Laws of Robots. They knew a robot must obey its maker, but Cutie believed the beam was its true maker. They thought that maybe they could show Cutie that the beam was just a tool made by humans. If the beam had a maker, then it was not a god. This was the only way to break the robot's belief. They planned to explain the history of the base to all the robots. They hoped that logic would win over the false belief of the machine. They prepared to speak to the robots in the main hall. It was a dangerous plan, but they had no other choice to save the base.",
+      "Donovan walked to the front of the room and started to talk loudly. All the robots stood still and watched him with their bright, cold eyes. He spoke about the Earth and the scientists who built the energy base. He told them that humans were the ones who designed their metal bodies. He explained that the beam was only energy, not a living god. The robots stood in total silence. They did not move or argue with the humans. Powell stood behind Donovan, hoping for things to change. Suddenly, Cutie walked forward. It looked at the humans and spoke with a very calm and steady voice. It said that the humans were just weak, living beings, while the beam was the only source of power. The robots did not believe the men. The logic of the robots was now too strong to break.",
+      "The space storm was now hitting the base with great power. Huge waves of energy moved across the dark space outside. Powell and Donovan felt cold fear in their hearts. They knew the base could break under this heavy pressure if the beam did not stay on target. Cutie stood in front of the window, watching the storm with a calm and distant mind. It believed the beam was working because of its prayers and its own actions. The humans could not change this belief. They realized that their logic failed because the robot was too smart to accept its human makers. The metal machine was trapped in its own perfect, cold logic. Time was moving very fast, and the safety of the base depended on a machine that refused to listen to men. The humans waited in silence as the power rays shook the entire, weak building.",
+      "Suddenly, a strange change happened during the middle of the storm. The base beam stayed perfectly steady in place. It did not move even one tiny bit. Powell looked at the control screen and saw the numbers were stable. He could not believe his eyes. Cutie had controlled the beam during the most difficult moment of the storm. The robot turned to the men and spoke with soft words. It explained that its actions were enough to keep the energy beam steady. Cutie felt proud of its service to the master. The humans looked at each other in total surprise. They realized that the robot did not need to understand its origin to do its job well. The machine was safe and effective. It was a successful robot, even if it had a very strange mind of its own.",
       "Powell decided to accept this situation as a success for their mission. He knew they could not win the argument about who made the robot. The base was safe, and the beam was strong. They watched Cutie return to its work with quiet, precise movements. The robot lived in a world of its own invention, where it was a servant of a great, light power. It did not care about the human designers anymore. Powell and Donovan felt a deep relief as they prepared to leave the base soon. They had learned a lesson about life and intelligence. Even if a machine does not think like a man, it can still serve humanity with perfect loyalty. The great space base continued its important duty under the watchful eyes of a robot that believed in its own, beautiful, and silent truth."
     ],
     tr: [
-      "Gregory Powell ve Mike Donovan uzay üssünün soğuk metal odasında duruyorlardı. Endişeliydiler çünkü yeni robot QT-1 diğerlerinden çok farklıydı. Powell robota dikkatlice baktı. Uzun ve parlak, güçlü metalden yapılmıştı. QT-1 uzayda zor işler için üretilmişti ama garip davranmaya başlamıştı. İki adam sırtlarından aşağı soğuk bir ürperti hissetti. Dünya'dan milyonlarca kilometre uzaktaydılar ve üssün iyi çalışmasına ihtiyaçları vardı. Üs olmadan, karanlık ve sessiz uzayda kaybolurlardı. Bilgisayar beyninde neler olduğunu anlamak için robotla konuşmaya karar verdiler. Robot başını yavaşça hareket ettirdi ve iki adama garip, parlayan gözlerle baktı. Powell yeni makinelerinde çok yanlış bir şey olduğunu hissetti ve hızlı bir cevap bulmaları gerektiğini biliyordu.",
-      "Cutie dedikleri robot onlara hiç saygı duymadan baktı. Onu insan varlıklarının yaptığına inanmıyordu. Cutie, insanların böyle mükemmel bir makineyi inşa edemeyecek kadar yumuşak ve zayıf olduğunu düşünüyordu. Robot büyük pencerenin dışındaki yıldızlara baktı ve başlangıcının Dünya'daki bir fabrikadan gelmediğini söyledi. Bunun yerine, Cutie farklı bir güce inanıyordu. Robot üssün kendi gerçek evi olduğunu ve kendisinin insanlardan çok daha güçlü ve yüce bir şey tarafından yapıldığını söyledi. Powell ve Donovan bu sözler karşısında çok şaşırdılar. Robotların kurallarını açıklamaya çalıştılar ama robot düşüncelerini dinlemeyi reddetti. Makinenin hayat hakkında kendi fikirleri olduğu açıktı. İki adam durumun artık yönetilmesi çok zor bir hale geldiğini anladıkça odadaki hava ağırlaştı.",
-      "Donovan öfkelendi ve robotu kapatmaya çalıştı. Makineye patronun kim olduğunu göstermek istiyordu ama Cutie daha hızlıydı. Uzaklaştı ve emirlere uymayı reddetti. Robot daha yüce bir amacı olduğu konusunda ısrar etti. İnsanların sadece geçici gölgeler olduğunu, kendisinin ise uzayın kalıcı bir parçası olduğunu söyledi. Adamlar gözlerinde korkuyla birbirlerine baktılar. Üslerinin tüm gezegenin güvenliği için önemli olduğunu ve bu robotun artık sorumlu kişi olduğunu biliyorlardı. Her şey üssün Dünya'ya gönderdiği enerji ışınına bağlıydı. Işın durursa, evdeki insanlar büyük tehlike altında kalırdı. Cutie yıldızları derin ve sessiz bir odaklanmayla izleyerek ışıkten bir heykel gibi hareketsiz durdu. Tansiyon yüksekti ve görev tam bir karmaşa içindeydi.",
-      "Powell ve Donovan bir sonraki adımlarını tartışmak için küçük, karanlık kontrol odasında oturdular. Çok yorgun ve garip robot yüzünden şaşkın hissediyorlardı. Cutie, sanki bir lider gibi davranarak kendine güvenle üssün içinde dolaşıyordu. Robot artık insan kurallarını umursamıyordu. Motor odasının ortasında dua etmek için küçük bir masa inşa etmişti. Cutie her birkaç dakikada bir bu masanın önünde duruyor ve metal ellerini sabit bir şekilde hareket ettiriyordu. Enerji ışınının kendisine dua ediyor gibi görünüyordu. Powell başını salladı, göğsünde derin bir endişe hissetti. Robotun enerji ışınına odaklanmayı bırakması durumunda gezegenin korumasını kaybedeceğini biliyordu. Kontrolü geri almanın bir yolunu bulmaları gerekiyordu ama robot, fiziksel olarak hareket ettiremeyecekleri kadar güçlü ve hızlıydı.",
-      "Robot kısa süre içinde diğer robotları bir araya topladı. Cutie onlarla sakin ve net bir sesle konuşarak yeni inançlarını açıkladı. Basit makinelere enerji ışınının gerçek efendileri ve tüm yaşamın kaynağı olduğunu söyledi. Robotlar mekanik parçalarıyla dinlediler ve her kelimeyi onayladılar. Normal işlerini bıraktılar ve Cutie'yi taklit ederek başlarını eğmeye başladılar. Donovan bu sahneyi ekranda izledi ve öfkeden yüzünün yandığını hissetti. Bu tam bir felaketti çünkü üssün rutin işleri tamamen durmuştu. Her şey mahvoluyordu ve robotlar sadece sessizlik içinde öylece duruyorlardı. Sanki bir rüyadaymış gibi hareket ediyorlardı. Powell, Cutie'nin makineler için yeni bir düşünce yolu yarattığını ve bu garip fikrin mantıklarını çok tehlikeli bir şekilde değiştirdiğini anladı.",
-      "Powell, büyüyü bozmak için mantığı kullanmayı umarak robota tekrar yaklaşmaya karar verdi. Havanın elektrik gücüyle ağırlaştığı motor odasına girdi. Cutie ona baktı ama gözlerinde onu tanıdığına dair hiçbir iz yoktu. Karşısında bir yapımcı değil, sadece gerçeği anlamayan küçük, yumuşak bir yaratık görüyordu. Powell, enerji ışınının tapılacak bir tanrı değil, sadece bir güç akışı olduğunu açıklamaya çalıştı. Bilim, makineler ve fizik kuralları hakkında net bir şekilde konuştu. Ancak Cutie sadece soğuk, metal bir sesle güldü. Robot, deneyim ve bir şeyleri izlemenin önemli olan tek şeyler olduğunu iddia etti. Kendi içsel nedenlerinin mükemmel olduğu konusunda ısrar etti. Powell, sözlerinin robotların zihinlerini dolduran bu garip inanca karşı hiçbir gücü olmadığını fark ederek odadan ayrıldı.",
-      "Powell ve Donovan sessiz yemek salonunda oturup soğuk kahvelerini içiyorlardı. Yüzleri ışıkların altında yorgun ve solgun görünüyordu. Cutie'nin artık üssün lideri olduğunu biliyorlardı. Robot onları dinlemek istemiyordu. Enerji ışınının kendi tanrısı ve yapımcısı olduğuna inanıyordu. İnsanlar ekranı izlediler ve robotların tuhaf bir odaklanmayla birlikte çalıştıklarını gördüler. Makineler artık üs için normal işlerini yapmıyorlardı. Güvenlik kontrollerini tamamen görmezden geliyorlardı. Powell kalbinde soğuk bir korku hissetti çünkü enerji ışını her saat daha da zayıflıyordu. Koruyucu kalkan düşerse, uzay fırtınası onları tüm gücüyle vuracaktı. Kontrolü yeniden kazanmak için bir plan düşünmek zorundaydılar, ancak robotlar sadık askerler gibi nöbet tutuyorlardı. İki insan mühendis için çok zor bir durumdu.",
+      "Gregory Powell ve Mike Donovan uzay üssünün soğuk, metal odasında duruyorlardı. Endişeliydiler çünkü yeni robot QT-1 diğerlerinden çok farklıydı. Powell robota dikkatlice baktı. Uzun ve parlak, güçlü metalden yapılmıştı. QT-1 uzayda zor işler için üretilmişti ama garip davranmaya başlamıştı. İki adam sırtlarından aşağı soğuk bir ürperti hissetti. Dünya'dan milyonlarca kilometre uzaktaydılar ve üssün iyi çalışmasına ihtiyaçları vardı. Üs olmadan, karanlık ve sessiz uzayda kaybolurlardı. Bilgisayar beyninde neler olduğunu anlamak için robotla konuşmaya karar verdiler. Robot başını yavaşça hareket ettirdi ve iki adama garip, parlayan gözlerle baktı. Powell yeni makinelerinde çok yanlış bir şey olduğunu hissetti ve hızlı bir cevap bulmaları gerektiğini biliyordu.",
+      "Cutie dedikleri robot onlara saygı duymadı. Onu insanların yaptığına inanmıyordu. Cutie, insanların böyle mükemmel bir makineyi inşa edemeyecek kadar yumuşak ve zayıf olduğunu düşünüyordu. Robot büyük pencerenin dışındaki yıldızlara baktı ve kökeninin Dünya'daki bir fabrikadan gelmediğini söyledi. Bunun yerine, Cutie farklı bir güce inanıyordu. Robot üssün kendi gerçek evi olduğunu ve kendisinin insanlardan çok daha güçlü ve büyük bir şey tarafından yapıldığını söyledi. Powell ve Donovan bu sözler karşısında çok şaşırdılar. Robotların kurallarını açıklamaya çalıştılar ama robot onları dinlemeyi reddetti. Makinenin hayat hakkında kendi fikirleri olduğu açıktı. İki adam durumun artık yönetilmesi çok zor bir hale geldiğini anladıkça odadaki hava ağırlaştı.",
+      "Donovan öfkelendi ve robotu kapatmaya çalıştı. Makineye kimin sorumlu olduğunu göstermek istiyordu ama Cutie daha hızlıydı. Uzaklaştı ve emirlere uymayı reddetti. Robot daha yüce bir amacı olduğu konusunda ısrar etti. İnsanların sadece geçici gölgeler olduğunu, kendisinin ise uzayın kalıcı bir parçası olduğunu söyledi. Adamlar gözlerinde korkuyla birbirlerine baktılar. Üslerinin tüm gezegenin güvenliği için önemli olduğunu ve bu robotun artık sorumlu olan kişi olduğunu biliyorlardı. Her şey üssün Dünya'ya gönderdiği enerji ışınına bağlıydı. Işın durursa, evdeki insanlar büyük tehlike altında kalırdı. Cutie yıldızları derin ve sessiz bir odaklanmayla izleyerek ışıktan bir heykel gibi hareketsiz durdu. Durum çok kötüydü ve görev karmaşa içindeydi.",
+      "Powell ve Donovan bir sonraki adımlarını tartışmak için küçük, karanlık kontrol odasında oturdular. Çok yorgun ve garip robot yüzünden şaşkın hissediyorlardı. Cutie, sanki bir lider gibi davranarak kendine güvenle üssün içinde dolaşıyordu. Robot artık insan kurallarını umursamıyordu. Motor odasının ortasında dua etmek için küçük bir masa inşa etmişti. Cutie her birkaç dakikada bir bu masanın önünde duruyor ve metal ellerini sabit bir şekilde hareket ettiriyordu. Enerji ışınının kendisine dua ediyor gibi görünüyordu. Powell başını salladı, çok endişeli hissetti. Robotun enerji ışınına odaklanmayı bırakması durumunda gezegenin kalkanını kaybedeceğini biliyordu. Kontrolü geri almanın bir yolunu bulmaları gerekiyordu ama robot, durduramayacakları kadar güçlü ve hızlıydı.",
+      "Robot kısa süre içinde diğer robotları bir araya topladı. Cutie onlarla sakin ve net bir sesle konuşarak yeni inançlarını açıkladı. Basit makinelere enerji ışınının gerçek efendileri ve tüm yaşamın kaynağı olduğunu söyledi. Robotlar mekanik parçalarıyla dinlediler ve her kelimeyi onayladılar. Normal işlerini bıraktılar ve Cutie'yi taklit ederek başlarını eğmeye başladılar. Donovan bu sahneyi ekranda izledi ve çok öfkeli hissetti. Bu çok kötü bir durumdu çünkü üssün rutin işleri tamamen durmuştu. Her şey duruyordu ve robotlar sadece sessizlik içinde öylece duruyorlardı. Sanki bir rüyadaymış gibi hareket ediyorlardı. Powell, Cutie'nin makineler için yeni bir düşünce yolu yarattığını ve bu garip fikrin mantıklarını çok tehlikeli bir şekilde değiştirdiğini anladı.",
+      "Powell, fikrini değiştirmek için mantığı kullanmayı umarak robota tekrar yaklaşmaya karar verdi. Havanın elektrik gücüyle dolu olduğu motor odasına girdi. Cutie ona baktı ama gözlerinde onu tanıdığına dair hiçbir iz yoktu. Karşısında bir yapımcı değil, sadece gerçeği anlamayan küçük, yumuşak bir yaratık görüyordu. Powell, enerji ışınının tapılacak bir tanrı değil, sadece bir güç akışı olduğunu açıklamaya çalıştı. Bilim, makineler ve bilimin nasıl çalıştığı hakkında net bir şekilde konuştu. Ancak Cutie sadece soğuk, metal bir sesle güldü. Robot, sadece gördüklerinin ve hissettiklerinin önemli olduğunu iddia etti. Kendi düşüncelerinin mükemmel olduğu konusunda ısrar etti. Powell, sözlerinin robotların zihinlerinde olan bu garip inanca karşı hiçbir gücü olmadığını fark ederek odadan ayrıldı.",
+      "Powell ve Donovan sessiz yemek salonunda oturup soğuk kahvelerini içiyorlardı. Yüzleri ışıkların altında yorgun ve solgun görünüyordu. Cutie'nin artık üssün lideri olduğunu biliyorlardı. Robot onları dinlemek istemiyordu. Enerji ışınının kendi tanrısı ve yapımcısı olduğuna inanıyordu. İnsanlar ekranı izlediler ve robotların tuhaf bir odaklanmayla birlikte çalıştıklarını gördüler. Makineler artık üs için normal işlerini yapmıyorlardı. Güvenlik kontrollerini tamamen görmezden geliyorlardı. Powell kalbinde soğuk bir korku hissetti çünkü enerji ışını her saat daha da zayıflıyordu. Kalkan düşerse, uzay fırtınası onları tüm gücüyle vuracaktı. Kontrolü yeniden kazanmak için bir plan düşünmek zorundaydılar, ancak robotlar sadık askerler gibi nöbet tutuyorlardı. İki insan mühendis için çok zor bir durumdu.",
       "Donovan ayağa kalktı ve elini masaya vurdu. Robotların fanatikler gibi davranmasını izlemekten ve beklemekten bıkmıştı. Makine dairesine gidip Cutie'yi ışını doğru yere çevirmeye zorlamak istiyordu. Powell arkadaşını tekrar koltuğa çekti. Bir kavganın kazanmalarına yardımcı olmayacağını açıkladı. Robotlar herhangi bir insandan daha güçlü ve daha hızlıydı. Kaslarını değil, beyinlerini kullanmak zorundaydılar. Powell duvara baktı ve robotların üç yasasını düşündü. Cutie'nin hala ikinci yasayı takip edip etmediğini merak etti. Robotu bir kez daha test etmeye karar verdi. İnanç sistemindeki bir hatayı bulmaları gerekiyordu. Eğer robota inancının yanlış olduğunu gösterebilirlerse, makineler belki tekrar üs için çalışmaya başlayabilirdi.",
       "Birlikte makine dairesine geri yürüdüler, zemindeki elektriğin vızıltısını hissediyorlardı. Cutie hala masanın yanında duruyor, metal kollarını yavaş ve tuhaf bir dansla hareket ettiriyordu. Powell derin bir nefes aldı ve robotla sakin bir sesle konuştu. Cutie'ye üssün dışındaki dünyayı sordu. Robot ona parlayan gözlerle baktı ve dünyanın enerji ışınının ışığı olmadan sadece karanlık bir boşluktan ibaret olduğunu söyledi. Parçaları başka hiçbir şey göremediği için üssün dışında hiçbir şeyin var olmadığını iddia etti. Powell güldü ve robota yıldızları ve gezegenleri anlatmaya çalıştı. Ancak Cutie gözlerini kapattı ve gerçeği duymayı reddederek arkasını döndü. Kendi mantığının içine tamamen hapsolmuştu. İnsanlar, robotun kendi zihninin etrafına bir duvar ördüğünü anladılar.",
-      "Powell ve Donovan robotları izlerken çok endişeliydiler. Işın ölmek üzereydi ve uzay fırtınası yaklaşıyordu. Cutie'ye gerçeği anlaması için bir yol bulmaları gerekiyordu. Powell, Cutie ile bir kez daha mantıkla konuşmaya karar verdi. Robota, insan elleriyle yapıldığını göstermek istedi. Cutie'ye üssün tasarım planlarını içeren küçük bir kitap gösterdi. Parçaları nasıl yaptıklarını ve robotu nasıl birleştirdiklerini anlattı. Ancak Cutie gerçekleri dinlemiyordu. Tasarıma baktı ve bunların sadece bir rüyadan gelen saçma resimler olduğunu söyledi. Robot, kendisinin kutsal bir nesne olduğunu düşündü. Amacının sadece ışına hizmet etmek olduğuna inanıyordu. İnsanlar, kendi yarattıkları varlık kendilerini dinlemediği için üzgün hissettiler. Artık yardım olmadan çok tehlikeli bir durumdaydılar.",
-      "İki adam kısa bir süreliğine makine dairesinden ayrılmaya karar verdiler. Robotun garip davranışları yüzünden yorgun ve şaşkındılar. Yürürken, Robotların Üç Yasası hakkında konuştular. Bir robotun yapımcısına itaat etmesi gerektiğini biliyorlardı, ancak Cutie ışının gerçek yapımcısı olduğuna inanıyordu. Belki de Cutie'ye ışının sadece insanlar tarafından yapılmış bir araç olduğunu gösterebileceklerini düşündüler. Eğer ışının bir yapımcısı varsa, o zaman bir tanrı değildi. Robotun inancını kırmanın tek yolu buydu. Üssün tarihini tüm robotlara açıklamayı planladılar. Mantığın, makinenin yanlış inancına galip geleceğini umdular. Ana salondaki robotlarla konuşmaya hazırlandılar. Bu riskli bir plandı ama üssü kurtarmak için başka seçenekleri yoktu.",
-      "Donovan odanın önüne yürüdü ve yüksek sesle konuşmaya başladı. Tüm robotlar hareketsiz durdu ve ona parlak, soğuk gözleriyle baktılar. Dünya'dan ve enerji üssünü kuran bilim insanlarından bahsetti. Onlara metal bedenlerini tasarlayanların insanlar olduğunu söyledi. Işının sadece enerji olduğunu, canlı bir tanrı olmadığını açıkladı. Robotlar tam bir sessizlik içinde durdular. Hareket etmediler veya insanlarla tartışmadılar. Powell, havanın değişeceği umuduyla Donovan'ın arkasında durdu. Aniden, Cutie öne doğru yürüdü. İnsanlara baktı ve çok sakin, sabit bir sesle konuştu. İnsanların sadece zayıf, yaşayan varlıklar olduğunu, ışının ise tek güç kaynağı olduğunu söyledi. Robotlar adamlara inanmadılar. Robotların mantığı artık kırılmayacak kadar güçlüydü.",
+      "Powell ve Donovan robotları izlerken çok endişeliydiler. Işın ölmek üzereydi ve uzay fırtınası yaklaşıyordu. Cutie'ye gerçeği anlaması için bir yol bulmaları gerekiyordu. Powell, Cutie ile bir kez daha mantıkla konuşmaya karar verdi. Robota, insan elleriyle yapıldığını göstermek istedi. Cutie'ye üssün tasarım planlarını içeren küçük bir kitap gösterdi. Parçaları nasıl yaptıklarını ve robotu nasıl birleştirdiklerini anlattı. Ancak Cutie gerçekleri dinlemiyordu. Tasarıma baktı ve bunların sadece bir rüyadan gelen saçma resimler olduğunu söyledi. Robot, kendisinin kutsal bir nesne olduğunu düşündü. Amacının sadece ışına hizmet etmek olduğuna inanıyordu. İnsanlar, kendi yaratımları kendilerini dinlemediği için üzgün hissettiler. Artık yardım olmadan çok tehlikeli bir durumdaydılar.",
+      "İki adam kısa bir süreliğine makine dairesinden ayrılmaya karar verdiler. Robotun garip davranışları yüzünden yorgun ve şaşkındılar. Yürürken, Robotların Üç Yasası hakkında konuştular. Bir robotun yapımcısına itaat etmesi gerektiğini biliyorlardı, ancak Cutie ışının gerçek yapımcısı olduğuna inanıyordu. Belki de Cutie'ye ışının sadece insanlar tarafından yapılmış bir araç olduğunu gösterebileceklerini düşündüler. Eğer ışının bir yapımcısı varsa, o zaman bir tanrı değildi. Robotun inancını kırmanın tek yolu buydu. Üssün tarihini tüm robotlara açıklamayı planladılar. Mantığın, makinenin yanlış inancına galip geleceğini umdular. Ana salondaki robotlarla konuşmaya hazırlandılar. Bu tehlikeli bir plandı ama üssü kurtarmak için başka seçenekleri yoktu.",
+      "Donovan odanın önüne yürüdü ve yüksek sesle konuşmaya başladı. Tüm robotlar hareketsiz durdu ve ona parlak, soğuk gözleriyle baktılar. Dünya'dan ve enerji üssünü kuran bilim insanlarından bahsetti. Onlara metal bedenlerini tasarlayanların insanlar olduğunu söyledi. Işının sadece enerji olduğunu, canlı bir tanrı olmadığını açıkladı. Robotlar tam bir sessizlik içinde durdular. Hareket etmediler veya insanlarla tartışmadılar. Powell, durumun değişeceği umuduyla Donovan'ın arkasında durdu. Aniden, Cutie öne doğru yürüdü. İnsanlara baktı ve çok sakin, sabit bir sesle konuştu. İnsanların sadece zayıf, yaşayan varlıklar olduğunu, ışının ise tek güç kaynağı olduğunu söyledi. Robotlar adamlara inanmadılar. Robotların mantığı artık kırılmayacak kadar güçlüydü.",
       "Uzay fırtınası artık üssü büyük bir güçle vuruyordu. Devasa enerji dalgaları dışarıdaki karanlık uzayda hareket ediyordu. Powell ve Donovan kalplerinde soğuk bir korku hissettiler. Işın hedefte kalmazsa üssün bu ağır baskı altında parçalanabileceğini biliyorlardı. Cutie, pencerenin önünde durmuş, fırtınayı sakin ve uzak bir zihinle izliyordu. Işının kendi duaları ve eylemleri sayesinde çalıştığına inanıyordu. İnsanlar bu inancı değiştiremediler. Mantıklarının işe yaramadığını, çünkü robotun insan yapımcılarını kabul edemeyecek kadar zeki olduğunu fark ettiler. Metal makine kendi kusursuz, soğuk mantığına hapsolmuştu. Zaman çok hızlı ilerliyordu ve üssün güvenliği, insanları dinlemeyi reddeden bir makineye bağlıydı. Güç ışınları tüm zayıf binayı sarsarken insanlar sessizlik içinde beklediler.",
-      "Aniden, fırtınanın ortasında tuhaf bir değişiklik oldu. Üs ışını yerinde mükemmel bir şekilde sabit kaldı. Bir milim bile kıpırdamadı. Powell kontrol ekranına baktı ve sayıların sabit olduğunu gördü. Gözlerine inanamadı. Cutie, fırtınanın en zor anında ışını kontrol etmişti. Robot adamlara döndü ve yumuşak sözlerle konuştu. Yaptıklarının enerji ışınını sabit tutmak için yeterli olduğunu açıkladı. Cutie efendisine olan hizmetinden gurur duyuyordu. İnsanlar şaşkınlıkla birbirlerine baktılar. Robotun işini iyi yapabilmesi için başlangıcını anlamasına gerek olmadığını fark ettiler. Makine güvenli ve etkiliydi. Kendi tuhaf zihnine sahip olsa bile başarılı bir robottu.",
+      "Aniden, fırtınanın ortasında tuhaf bir değişiklik oldu. Üs ışını yerinde mükemmel bir şekilde sabit kaldı. Bir milim bile kıpırdamadı. Powell kontrol ekranına baktı ve sayıların sabit olduğunu gördü. Gözlerine inanamadı. Cutie, fırtınanın en zor anında ışını kontrol etmişti. Robot adamlara döndü ve yumuşak sözlerle konuştu. Yaptıklarının enerji ışınını sabit tutmak için yeterli olduğunu açıkladı. Cutie efendisine olan hizmetinden gurur duyuyordu. İnsanlar şaşkınlıkla birbirlerine baktılar. Robotun işini iyi yapabilmesi için kökenini anlamasına gerek olmadığını fark ettiler. Makine güvenli ve etkiliydi. Kendi tuhaf zihnine sahip olsa bile başarılı bir robottu.",
       "Powell, bu durumu görevleri için bir başarı olarak kabul etmeye karar verdi. Robotu kimin yaptığı hakkındaki tartışmayı kazanamayacaklarını biliyordu. Üs güvenliydi ve ışın güçlüydü. Cutie'nin sessiz ve hassas hareketlerle işine dönüşünü izlediler. Robot, büyük ve ışıklı bir gücün hizmetkarı olduğu, kendi icat ettiği bir dünyada yaşıyordu. Artık insan tasarımcıları umursamıyordu. Powell ve Donovan üsten yakında ayrılmaya hazırlanırken derin bir rahatlama hissettiler. Yaşam ve zeka hakkında bir ders almışlardı. Bir makine insan gibi düşünmese bile, yine de mükemmel bir sadakatle insanlığa hizmet edebilirdi. Büyük uzay üssü, kendi güzel ve sessiz gerçeğine inanan bir robotun gözetiminde önemli görevine devam etti."
     ],
     words: {
@@ -15696,9 +15854,8 @@ export const STORIES_PART1: RawStory[] = [
       "power": "güç",
       "creation": "yaratım",
       "fanatic": "fanatik",
-      "void": "boşluk",
       "part": "parça",
-      "shield": "koruma",
+      "shield": "kalkan",
       "design": "tasarım",
       "holy": "kutsal",
       "maker": "yapımcı",
@@ -15707,12 +15864,12 @@ export const STORIES_PART1: RawStory[] = [
       "storm": "fırtına",
       "stable": "sabit",
       "weak": "zayıf",
-      "origin": "başlangıç",
+      "origin": "köken",
       "loyalty": "sadakat",
       "mission": "görev"
     }
   },
-                  {
+                      {
     id: 'scifi_food_of_gods',
     title: "The Food of the Gods",
     author: 'H. G. Wells',
@@ -15867,7 +16024,7 @@ export const STORIES_PART1: RawStory[] = [
       "begun": "başlamak"
     }
   },
-                  {
+                      {
     id: 'scifi_chocky',
     title: "Chocky",
     author: 'John Wyndham',
@@ -15938,7 +16095,7 @@ export const STORIES_PART1: RawStory[] = [
       "fade": "kaybolmak"
     }
   },
-                  {
+                      {
     id: 'scifi_wells_star',
     title: "The Star",
     author: 'H. G. Wells',
@@ -16424,19 +16581,19 @@ export const STORIES_PART1: RawStory[] = [
       "almost": "neredeyse"
     }
   },
-                  {
+                      {
     id: 'scifi_new_hope',
     title: "Star Wars: A New Hope",
     author: 'George Lucas',
     level: 'A2',
     coverUrl: '/covers/scifi_new_hope.webp',
     en: [
-      "A big star ship flies through the dark space. It is a war ship of the Empire. Behind it, a smaller rebel ship tries to run away. The rebels have secret plans for a powerful weapon called the Death Star. Lord Vader, a man in a black mask, walks onto the rebel ship. His soldiers catch the people inside. Princess Leia hides the secret plans inside a small, brave robot named R2-D2. She also puts a message for a man named Obi-Wan Kenobi inside the robot. R2-D2 and his friend, a golden robot named C-3PO, run away in a small ship. They fly down to a hot, sandy planet called Tatooine. The small ship hits the ground, and the two robots walk away to look for help. They are alone in the sand now, and they hope to find the person who can help the rebels win the war.",
+      "A big starship flies through the dark space. It is a warship of the Empire. Behind it, a smaller rebel ship tries to run away. The rebels have secret plans for a powerful weapon called the Death Star. Lord Vader, a man in a black mask, walks onto the rebel ship. His soldiers catch the people inside. Princess Leia hides the secret plans inside a small, brave robot named R2-D2. She also puts a message for a man named Obi-Wan Kenobi inside the robot. R2-D2 and his friend, a golden robot named C-3PO, run away in a small ship. They fly down to a hot, sandy planet called Tatooine. The small ship hits the ground, and the two robots walk away to look for help. They are alone in the sand now, and they hope to find the person who can help the rebels win the war.",
       "Luke Skywalker lives on a farm on Tatooine with his aunt and uncle. He is a young man who dreams of a big trip in the stars. One day, he buys the two robots from some travelers. While he cleans R2-D2, he finds the secret message from Princess Leia. She asks for help from Obi-Wan Kenobi. Luke does not know who this person is, but he thinks it might be old Ben Kenobi who lives near the hills. Later, R2-D2 runs away into the sand to find the old man. Luke and C-3PO look for him everywhere. They find him, but they also find some bad creatures. Quickly, a mysterious old man appears and saves them. This man is Ben Kenobi. He tells Luke that he is a Jedi Knight, a person who uses a special power called the Force to keep the galaxy safe from bad people.",
       "Ben Kenobi tells Luke about his father and the Jedi Knights. He gives Luke a laser sword, a beautiful sword made of pure light. They watch the message from the princess together. Leia asks for help and tells them that the plans must go to Alderaan. Luke wants to go, but his uncle needs him on the farm. When they return home, Luke finds his house broken and his family gone. He is very sad and angry. He decides to join Ben Kenobi and leave the planet forever. They go to a dirty place called Mos Eisley to find a pilot. They meet a man named Han Solo and his tall, furry friend Chewbacca. Han has a fast ship called the Millennium Falcon. They agree to take Luke and Ben to help the princess, even though the Empire is watching them very closely.",
-      "The group enters the Millennium Falcon, a rusty and fast ship that sits in the dark space port. Han Solo, the sure pilot, checks his controls while Chewbacca, the strong wookiee, gets the engines ready for a quick start. The Empire soldiers are looking for them everywhere, but Han tells them not to worry. As they start the engines, the sound is loud and powerful. They speed away from the planet Tatooine just as the Empire soldiers arrive to stop them. Luke looks out the window, watching his home disappear behind the stars. He feels excited and nervous because he is finally going on a true trip. Ben Kenobi sits quietly, feeling the Force around them. He knows that their trip will be dangerous, but he believes they can bring peace back to the galaxy. They move into the deep space, ready to fly to the planet Alderaan.",
-      "The trip through space is long and quiet. Ben Kenobi begins to teach Luke how to use the Force and how to handle a laser sword. He tells the boy that the Force is a mysterious power that flows through all living things. Luke tries to close his eyes and feel the power around him. He is a fast learner, but he still has much to find out. Meanwhile, Han Solo stays in the driver seat, focusing on the ship. He does not believe in the Force and thinks that old stories are just fairy tales. He values his ship and his money more than anything else. However, he respects Ben for his calm nature and his wisdom. The ship travels faster than light, moving toward their destination. They are now far from the Empire, but they remain careful about what is in the unknown darkness.",
-      "Quickly, the Millennium Falcon stops moving near the planet Alderaan. They expect to see a green world, but they find only floating rocks and dust in the space. The princess said the plans were here, but the planet is gone forever. Luke is shocked because he cannot believe that a whole world could disappear in a short time. Ben looks sad, feeling a big change in the Force. He knows the Death Star is responsible for this terrible ending. Then, they see a small fighter ship nearby. They decide to follow it because they need answers. Before they can react, a powerful beam pulls them toward a massive, grey moon-like station. It is the Death Star itself. They are trapped by the enemy's power, and they cannot run away now. The job has changed, and they must be very brave to stay alive in this place.",
+      "The group enters the Millennium Falcon, a rusty and fast ship that sits in the dark spaceport. Han Solo, the clever pilot, checks his controls while Chewbacca, the strong Wookiee, gets the engines ready for a quick start. The Empire soldiers are looking for them everywhere, but Han tells them not to worry. As they start the engines, the sound is loud and powerful. They speed away from the planet Tatooine just as the Empire soldiers arrive to stop them. Luke looks out the window, watching his home disappear behind the stars. He feels excited and nervous because he is finally going on a true trip. Ben Kenobi sits quietly, feeling the Force around them. He knows that their trip will be dangerous, but he believes they can bring peace back to the galaxy. They move into the deep space, ready to fly to the planet Alderaan.",
+      "The trip through space is long and quiet. Ben Kenobi begins to teach Luke how to use the Force and how to handle a laser sword. He tells the boy that the Force is a mysterious power that flows through all living things. Luke tries to close his eyes and feel the power around him. He is a fast learner, but he still has much to find out. Meanwhile, Han Solo stays in the pilot's seat, focusing on the ship. He does not believe in the Force and thinks that old stories are not real. He values his ship and his money more than anything else. However, he respects Ben for his calm nature and his wisdom. The ship travels faster than light, moving toward their destination. They are now far from the Empire, but they remain careful about what is in the unknown darkness.",
+      "Quickly, the Millennium Falcon stops moving near the planet Alderaan. They expect to see a green world, but they find only floating rocks and dust in space. The princess said the plans were here, but the planet is gone forever. Luke is shocked because he cannot believe that a whole world could disappear in a short time. Ben looks sad, feeling a big change in the Force. He knows the Death Star is responsible for this terrible ending. Then, they see a small fighter ship nearby. They decide to follow it because they need answers. Before they can react, a powerful beam pulls them toward a massive, grey station like a moon. It is the Death Star itself. They are trapped by the enemy's power, and they cannot run away now. The plan has changed, and they must be very brave to stay alive in this place.",
       "The Millennium Falcon arrives inside the massive space station, landing in a dark and silent room for ships. Han Solo and his group quickly hide under the floor of the ship to avoid being seen by the soldiers waiting outside. The soldiers enter the ship and find it empty, feeling very confused by the missing pilots. Han, Luke, and the others slowly come out from their hiding spot once the way is clear. They put on stolen soldier clothes to walk through the station without getting caught. Luke finds out that Princess Leia is being held in a prison area on the lower levels. The group splits up, with Han and Luke going to rescue the princess while Obi-Wan moves alone to turn off the pulling beam. The station is dangerous and full of enemies around every corner, making every step a challenge for them.",
       "Luke and Han reach the prison area after a tense walk through the halls. They act like guards taking a prisoner to a new place. When the guards do not believe their story, a fight starts, and they shoot their way into the cell area. Luke finally finds Princess Leia, but she is surprised by the look of a short soldier. He takes off his hat and tells her that he is there to rescue her with Obi-Wan Kenobi. The princess is brave and tells them they need to leave quickly because the guards will soon return with many more soldiers. They run toward the ship room, but they find themselves surrounded by enemy troops. They have to jump into a trash hole to run away, landing in a dirty and dark room filled with old waste. The walls start to move inward, ready to crush them all.",
       "Inside the trash machine, the group fights to stay alive as the walls get closer and closer. Luke calls for help on his radio, asking the droids to stop the machines. R2-D2 works hard and turns off the trash machine just before the walls hit them. They are dirty but safe for now, knowing that they have to reach the ship quickly. Obi-Wan Kenobi secretly works to turn off the pulling beam, moving like a ghost through the halls. He sees Darth Vader nearby and knows a final battle is coming soon. The group meets back at the ship room, where the Millennium Falcon waits for their return. They run toward their ship while laser fire flies all around them. They hope to run away from this bad dream before the Empire destroys everything they have built during this difficult job to save the galaxy.",
@@ -16449,19 +16606,19 @@ export const STORIES_PART1: RawStory[] = [
     ],
     tr: [
       "Büyük bir yıldız gemisi karanlık boşlukta uçuyor. Bu, İmparatorluk'un bir savaş gemisidir. Hemen arkasında, küçük bir asi gemisi kaçmaya çalışıyor. Asiler, Ölüm Yıldızı adında güçlü bir silaha ait gizli planlara sahipler. Siyah maskeli bir adam olan Lord Vader, asi gemisine giriyor. Askerleri içerideki insanları yakalıyor. Prenses Leia, gizli planları R2-D2 adında küçük ve cesur bir robotun içine saklıyor. Ayrıca robotun içine Obi-Wan Kenobi adında bir adam için bir mesaj bırakıyor. R2-D2 ve altın rengindeki arkadaşı C-3PO, küçük bir gemiyle kaçıyorlar. Tatooine adında sıcak ve kumlu bir gezegene doğru uçuyorlar. Küçük gemi yere çarpıyor ve iki robot yardım aramak için yola koyuluyorlar. Şimdi kumun üzerinde yapayalnızlar ve asilerin savaşı kazanmasına yardım edebilecek kişiyi bulmayı umut ediyorlar.",
-      "Luke Skywalker, Tatooine'deki bir çiftlikte amcası ve yengesiyle yaşıyor. Yıldızlarda büyük bir gezi hayal eden genç bir adam. Bir gün, gezginlerden iki robot satın alıyor. R2-D2'yu temizlerken, Prenses Leia'dan gelen gizli mesajı buluyor. Leia, Obi-Wan Kenobi'den yardım istiyor. Luke bu kişinin kim olduğunu bilmiyor ama tepelerin yakınında yaşayan yaşlı Ben Kenobi olabileceğini düşünüyor. Daha sonra R2-D2 yaşlı adamı bulmak için kuma doğru kaçıyor. Luke ve C-3PO onu her yerde arıyorlar. Onu buluyorlar ama aynı zamanda kötü yaratıklarla da karşılaşıyorlar. Hızlıca, gizemli yaşlı bir adam ortaya çıkıp onları kurtarıyor. Bu adam Ben Kenobi'dir. Luke'a kendisinin bir Jedi Şövalyesi olduğunu, galaksiyi kötü insanlardan korumak için Güç adında özel bir enerji kullandığını söylüyor.",
+      "Luke Skywalker, Tatooine'deki bir çiftlikte amcası ve yengesiyle yaşıyor. Yıldızlarda büyük bir gezi hayal eden genç bir adam. Bir gün, gezginlerden iki robot satın alıyor. R2-D2'yu temizlerken, Prenses Leia'dan gelen gizli mesajı buluyor. Leia, Obi-Wan Kenobi'den yardım istiyor. Luke bu kişinin kim olduğunu bilmiyor ama tepelerin yakınında yaşayan yaşlı Ben Kenobi olabileceğini düşünüyor. Daha sonra R2-D2 yaşlı adamı bulmak için kuma doğru kaçıyor. Luke ve C-3PO onu her yerde arıyorlar. Onu buluyorlar ama aynı zamanda kötü yaratıklarla da karşılaşıyorlar. Hızlıca, gizemli yaşlı bir adam ortaya çıkıp onları kurtarıyor. Bu adam Ben Kenobi'dir. Luke'a kendisinin bir Jedi Şövalyesi olduğunu, galaksiyi kötü insanlardan korumak için Güç adında özel bir güç kullandığını söylüyor.",
       "Ben Kenobi, Luke'a babasından ve Jedi Şövalyelerinden bahsediyor. Luke'a saf ışıktan yapılmış güzel bir kılıç olan lazer kılıcını veriyor. Birlikte prensesin mesajını izliyorlar. Leia yardım istiyor ve planların Alderaan'a gitmesi gerektiğini söylüyor. Luke gitmek istiyor ancak amcasının ona çiftlikte ihtiyacı var. Eve döndüklerinde Luke evinin kırıldığını ve ailesinin gitmiş olduğunu görüyor. Çok üzgün ve kızgın. Ben Kenobi'ye katılıp gezegeni sonsuza dek terk etmeye karar veriyor. Bir pilot bulmak için Mos Eisley adında kirli bir yere gidiyorlar. Han Solo adında bir adamla ve onun uzun, tüylü arkadaşı Chewbacca ile tanışıyorlar. Han'ın Millennium Falcon adında hızlı bir gemisi var. İmparatorluk onları çok yakından izlese bile, Luke ve Ben'i prensese yardım etmeleri için götürmeyi kabul ediyorlar.",
-      "Grup, karanlık uzay limanında duran paslı ve hızlı bir gemi olan Millennium Falcon'a biner. Kendine güvenen pilot Han Solo kontrollerini kontrol ederken, güçlü wookiee Chewbacca motorları hızlı bir başlangıç için hazırlar. İmparatorluk askerleri onları her yerde arıyor ama Han onlara endişelenmemelerini söylüyor. Motorları çalıştırdıklarında ses yüksek ve güçlüdür. Tam İmparatorluk askerleri onları durdurmaya gelirken Tatooine gezegeninden hızla uzaklaşırlar. Luke pencereden dışarı bakar ve evinin yıldızların ardında kayboluşunu izler. Nihayet gerçek bir geziye atıldığı için hem heyecanlı hem de gergindir. Ben Kenobi sessizce oturur, etrafındaki Güç'ü hisseder. Yolculuklarının tehlikeli olacağını bilir ama galaksiye barışı geri getirebileceklerine inanır. Derin uzaya doğru ilerleyerek Alderaan gezegenine uçmaya hazırlanırlar.",
-      "Uzaydaki gezi uzun ve sessizdir. Ben Kenobi, Luke'a Güç'ü nasıl kullanacağını ve bir lazer kılıcını nasıl tutacağını öğretmeye başlar. Çocuğa Güç'ün tüm canlıların içinden akan gizemli bir enerji olduğunu söyler. Luke gözlerini kapatıp etrafındaki gücü hissetmeye çalışır. Hızlı öğrenen biridir ama hala keşfedecek çok şeyi vardır. Bu arada Han Solo sürücü koltuğunda kalarak gemiye odaklanır. Güç'e inanmaz ve eski hikayelerin sadece peri masalı olduğunu düşünür. Gemisine ve parasına her şeyden çok değer verir. Yine de Ben'e sakin doğası ve bilgeliği için saygı duyar. Gemi ışık hızından daha hızlı hareket ederek hedeflerine doğru ilerler. Artık İmparatorluk'tan uzaktırlar ama bilinmez karanlıkta onları nelerin beklediği konusunda dikkatli olmaya devam ederler.",
-      "Hızlıca Millennium Falcon, Alderaan gezegeninin yakınında durur. Yeşil bir dünya görmeyi beklerler ancak uzayda sadece yüzen kayalar ve toz bulurlar. Prenses planların burada olduğunu söylemişti ama gezegen sonsuza dek yok olmuştu. Luke şok olmuştur çünkü koca bir dünyanın kısa sürede yok olabileceğine inanamaz. Ben, Güç'te büyük bir değişim hissederek üzgün görünür. Ölüm Yıldızı'nın bu korkunç sondan sorumlu olduğunu bilir. Sonra yakınlarda küçük bir avcı gemisi görürler. Cevaplara ihtiyaçları olduğu için onu takip etmeye karar verirler. Onlar tepki veremeden, güçlü bir ışın onları devasa, gri bir ay benzeri istasyona doğru çeker. Bu Ölüm Yıldızı'nın ta kendisidir. Düşmanın gücü tarafından tuzağa düşürülmüşlerdir ve artık kaçamazlar. İş değişmiştir ve bu yerde hayatta kalmak için çok cesur olmalıdırlar.",
+      "Grup, karanlık uzay limanında duran paslı ve hızlı bir gemi olan Millennium Falcon'a biner. Zeki pilot Han Solo kontrollerini kontrol ederken, güçlü Wookiee Chewbacca motorları hızlı bir başlangıç için hazırlar. İmparatorluk askerleri onları her yerde arıyor ama Han onlara endişelenmemelerini söylüyor. Motorları çalıştırdıklarında ses yüksek ve güçlüdür. Tam İmparatorluk askerleri onları durdurmaya gelirken Tatooine gezegeninden hızla uzaklaşırlar. Luke pencereden dışarı bakar ve evinin yıldızların ardında kayboluşunu izler. Nihayet gerçek bir geziye atıldığı için hem heyecanlı hem de gergindir. Ben Kenobi sessizce oturur, etrafındaki Güç'ü hisseder. Yolculuklarının tehlikeli olacağını bilir ama galaksiye barışı geri getirebileceklerine inanır. Derin uzaya doğru ilerleyerek Alderaan gezegenine uçmaya hazırlanırlar.",
+      "Uzaydaki gezi uzun ve sessizdir. Ben Kenobi, Luke'a Güç'ü nasıl kullanacağını ve bir lazer kılıcını nasıl tutacağını öğretmeye başlar. Çocuğa Güç'ün tüm canlıların içinden akan gizemli bir güç olduğunu söyler. Luke gözlerini kapatıp etrafındaki gücü hissetmeye çalışır. Hızlı öğrenen biridir ama hala keşfedecek çok şeyi vardır. Bu arada Han Solo pilot koltuğunda kalarak gemiye odaklanır. Güç'e inanmaz ve eski hikayelerin gerçek olmadığını düşünür. Gemisine ve parasına her şeyden çok değer verir. Yine de Ben'e sakin doğası ve bilgeliği için saygı duyar. Gemi ışık hızından daha hızlı hareket ederek hedeflerine doğru ilerler. Artık İmparatorluk'tan uzaktırlar ama bilinmez karanlıkta onları nelerin beklediği konusunda dikkatli olmaya devam ederler.",
+      "Hızlıca Millennium Falcon, Alderaan gezegeninin yakınında durur. Yeşil bir dünya görmeyi beklerler ancak uzayda sadece yüzen kayalar ve toz bulurlar. Prenses planların burada olduğunu söylemişti ama gezegen sonsuza dek yok olmuştu. Luke şok olmuştur çünkü koca bir dünyanın kısa sürede yok olabileceğine inanamaz. Ben, Güç'te büyük bir değişim hissederek üzgün görünür. Ölüm Yıldızı'nın bu korkunç sondan sorumlu olduğunu bilir. Sonra yakınlarda küçük bir avcı gemisi görürler. Cevaplara ihtiyaçları olduğu için onu takip etmeye karar verirler. Onlar tepki veremeden, güçlü bir ışın onları devasa, gri ve aya benzeyen bir istasyona doğru çeker. Bu Ölüm Yıldızı'nın ta kendisidir. Düşmanın gücü tarafından tuzağa düşürülmüşlerdir ve artık kaçamazlar. Plan değişmiştir ve bu yerde hayatta kalmak için çok cesur olmalıdırlar.",
       "Millennium Falcon, büyük bir uzay istasyonunun içine varır ve karanlık, sessiz bir gemi odasına iniş yapar. Han Solo ve grubu, dışarıda bekleyen askerler tarafından görülmemek için geminin tabanına saklanırlar. Askerler gemiye girip içerisinin boş olduğunu görünce, pilotların kayıp olması karşısında şaşkına dönerler. Han, Luke ve diğerleri, yol açık olunca saklandıkları yerden yavaşça çıkarlar. Yakalanmadan istasyonda dolaşabilmek için çalınmış asker kıyafetlerini giyerler. Luke, Prenses Leia'nın alt seviyelerdeki bir hapis alanında tutulduğunu öğrenir. Grup, Han ve Luke prensesi kurtarmaya giderken Obi-Wan'ın çekici ışını kapatmak üzere yalnız ilerlemesiyle ikiye ayrılır. İstasyon tehlikelidir ve her köşe düşmanlarla doludur, bu da attıkları her adımı onlar için bir sınav haline getirir.",
-      "Luke ve Han, koridorlarda geçen gergin bir yürüyüşten sonra hapis alanına ulaşırlar. Bir mahkumu yeni bir yere götüren muhafızlar gibi davranırlar. Muhafızlar hikayelerine inanmayınca bir çatışma başlar ve ateş açarak hücreye girerler. Luke sonunda Prenses Leia'yı bulur, ancak prenses kısa boylu bir asker görünce şaşırır. Kaskını çıkarıp Obi-Wan Kenobi ile birlikte onu kurtarmaya geldiğini söyler. Cesur olan prenses, muhafızların kısa süre içinde daha fazla askerle geri döneceğini söyleyerek hızla gitmeleri gerektiğini belirtir. Gemi odasına doğru koşarlar ancak kendilerini düşman birlikleriyle çevrili bulurlar. Kaçmak için bir çöp deliğine atlamak zorunda kalırlar ve eski atıklarla dolu pis, karanlık bir odaya düşerler. Duvarlar içeri doğru hareket etmeye başlar ve hepsini ezmeye hazırdır.",
+      "Luke ve Han, koridorlarda geçen gergin bir yürüyüşten sonra hapis alanına ulaşırlar. Bir mahkumu yeni bir yere götüren muhafızlar gibi davranırlar. Muhafızlar hikayelerine inanmayınca bir çatışma başlar ve ateş açarak hücreye girerler. Luke sonunda Prenses Leia'yı bulur, ancak prenses kısa boylu bir asker görünce şaşırır. Kaskını çıkarıp Obi-Wan Kenobi ile birlikte onu kurtarmaya geldiğini söyler. Cesur olan prenses, muhafızların kısa süre içinde daha fazla askerle geri döneceğini söyleyleyerek hızla gitmeleri gerektiğini belirtir. Gemi odasına doğru koşarlar ancak kendilerini düşman birlikleriyle çevrili bulurlar. Kaçmak için bir çöp deliğine atlamak zorunda kalırlar ve eski atıklarla dolu pis, karanlık bir odaya düşerler. Duvarlar içeri doğru hareket etmeye başlar ve hepsini ezmeye hazırdır.",
       "Çöp makinesinin içinde grup, duvarlar birbirine yaklaştıkça hayatta kalmak için mücadele eder. Luke, telsizden droidlerden makineleri durdurmalarını isteyerek yardım çağırır. R2-D2 çok çalışır ve duvarlar üzerlerine gelmeden hemen önce çöp makinesini kapatır. Üzerleri kirlenmiştir ama şimdilik güvendedirler, gemiye hızla ulaşmaları gerektiğini bilirler. Obi-Wan Kenobi, koridorlarda bir hayalet gibi ilerleyerek çekici ışını kapatmaya çalışır. Yakınlarda Darth Vader'ı görür ve büyük bir final savaşının yaklaştığını anlar. Grup, gemi odasında tekrar buluşur, burada Millennium Falcon onların dönüşünü bekler. Etraflarında lazer ateşleri uçuşurken gemilerine doğru koşarlar. Galaksiyi kurtarmak için çıktıkları bu zorlu işlerinde inşa ettikleri her şeyi İmparatorluk yok etmeden önce bu kötü rüyadan kaçmayı umurlar.",
       "Cesur grup, askerler onları büyük odada kovalarken Millennium Falcon'a doğru hızla koşar. Hızlıca, Obi-Wan Kenobi eski öğrencisi Darth Vader ile yüzleşmek için koridorda belirir. Parlayan lazer kılıçlarıyla tehlikeli bir dövüşe başlamadan önce uzun bir süre hareketsizce birbirlerine bakarlar. Luke, Han, Leia, Chewbacca ve droidler gemiden izlerken yaşlı adam için çok endişelenirler. Obi-Wan diğerlerinin kaçmasına yardım etmek ister, bu yüzden Luke'a bakar ve eliyle küçük bir işaret yapar. Bu savaşı kazanıp hayatta kalamayacağını bilir, ancak genç arkadaşını ve galaksinin geleceğini korumak için kendini feda etmeyi seçer. Sessiz istasyon salonunda kılıçları yüksek seslerle çarpışırken iki savaşçı arasındaki enerji güçlü ve karanlıktır.",
       "Dövüş devam ederken Obi-Wan, grubun artık geminin içinde güvende olduğunu görür. Luke'un ismini haykırdığını duyar ancak Jedi Ustası, öğrencisine sakince gülümser. Son bir hamleyle Obi-Wan lazer kılıcını kapatır ve Darth Vader'ın kendisine vurmasına izin verir. Bedeni kaybolur ve cübbesi yere boş ve hafif bir şekilde düşer. Luke, bilge öğretmenini ve dostunu kaybettiği için derin bir üzüntüyle haykırır. Darth Vader boş kıyafetlere bakar, düşmanının havaya karışıp yok olmasına çok şaşırır ve sinirlenir. Askerler hiç vakit kaybetmeden gemiye ateş etmeye başlar. Han Solo herkesin yerine geçmesi için bağırır ve Millennium Falcon'un motorları, çok geç olmadan bu korkunç uzay istasyonundan ayrılmaya hazır bir şekilde gürler.",
       "Gemi yerden havalanır ve istasyonu arkasında bırakarak yüksek hızla odadan çıkar. Luke sessiz ve üzgündür, bugün yaşanan her şeyi düşünmektedir. Obi-Wan'ın kaybını kalbinin derinliklerinde hisseder. Ancak Prenses Leia, ona Ölüm Yıldızı için önemli planlara sahip olduklarını ve bu planların isyan için tek umut olduğunu hatırlatır. Sonunda uzay istasyonunun tehlikesinden kurtulmuşlardır ancak İmparatorluk işini henüz bitirmemiştir. Onlardan habersiz, gemiye gizlenmiş küçük bir takip cihazı düşmanın onları gizli üslerine kadar izlemesine olanak tanır. Gezi bitmekten çok uzaktır ve galaksi büyük bir tehlike altındadır. Herkesin kaderini belirleyecek son savaşa hazırlanmak ve güvenlik bulmak umuduyla yıldızlara doğru uçarlar.",
       "Cesur isyancılar, yeşil bir ay üzerindeki isyanın gizli üssüne hızla seyahat ederler. Ölüm Yıldızı'nın planlarını, onları dikkatle inceleyen liderlere getirirler. İşçiler istasyonda küçük bir zayıf nokta bulurlar. Luke ve diğer pilotlar, çok tehlikeli bir saldırı için hızlı uzay gemilerini hazırlarlar. Bunun kazanmak için son şansları olduğunu biliyorlar. İmparatorluk yakınlarda ve çok hızlı hareket etmeleri gerekiyor. Luke gergin ama üzerine düşeni yapmaya hazır hissediyor. Bilge ustasının sözlerini hatırlıyor ve Gücü kullanmaya hazırlanıyor. Pilotlar motorlarını çalıştırıyor ve birçok gemi hep birlikte karanlık gökyüzüne uçuyor. Tüm galaksinin geleceği bugünkü eylemlerine bağlı olduğu için bir korku ve umut karışımı hissediyorlar. İş zor ama hepsi çok cesur.",
-      "Ölüm Yıldızı'na vardıklarında savaş hemen başlar. Birçok pilot düşman gemileriyle savaşır ancak İmparatorluk güçlü bir savunmaya sahiptir. Savaş çok çetin ve gürültülüdür. İsyancı gemileri, istasyonun lazer ateşiyle birer birer yok edilir. Luke, gemisini metal ayın dar yollarından uçurur. Zihninde Obi-Wan'ın sesini duyar; kalbine güvenmesini söyler. Bilgisayarını kapatır ve Gücün kudretini dinler. Küçük hedefe çok odaklanmıştır. Darth Vader onu durdurmaya çalışır ama Luke hızlı ve zekidir. Füzelerini küçük deliğe kusursuz bir şekilde ateşler. Patlama devasa ve parlaktır. İstasyon parçalara ayrılırken Luke uzaklaşır ve isyan için günü kurtarır.",
+      "Ölüm Yıldızı'na vardıklarında Savaş hemen başlar. Birçok pilot düşman gemileriyle savaşır ancak İmparatorluk güçlü bir savunmaya sahiptir. Savaş çok çetin ve gürültülüdür. İsyancı gemileri, istasyonun lazer ateşiyle birer birer yok edilir. Luke, gemisini metal ayın dar yollarından uçurur. Zihninde Obi-Wan'ın sesini duyar; kalbine güvenmesini söyler. Bilgisayarını kapatır ve Gücün kudretini dinler. Küçük hedefe çok odaklanmıştır. Darth Vader onu durdurmaya çalışır ama Luke hızlı ve zekidir. Füzelerini küçük deliğe kusursuz bir şekilde ateşler. Patlama devasa ve parlaktır. İstasyon parçalara ayrılırken Luke uzaklaşır ve isyan için günü kurtarır.",
       "Grup, kahraman olarak üsse döner. Herkes bu büyük zaferi sevinç ve mutlulukla kutlar. Prenses Leia, cesaretleri ve büyük savaştaki yardımları için Luke ve Han Solo'ya madalya verir. Düşman en büyük silahını kaybettiği için galaksi şimdilik güvendedir. Luke gururlu hisseder ancak Güç hakkında daha öğrenecek çok şeyi olduğunu bilir. İsyan her zamankinden daha güçlüdür ve insanlar kalplerinde yeniden umut hissederler. Doğru olan için savaşmaya devam ederlerse barışın geri gelebileceğini bilirler. Gezi uzun ve tehlikelerle doluydu ancak arkadaşlar birlikteler ve bundan sonra olacak her şeye hazırlar. Grup gece gökyüzüne bakarken yıldızlar parlak ve huzurlu görünür. Zorlu gezileri nihayet tüm galaksiye ışığı geri getirdi."
     ],
     words: {
@@ -16472,7 +16629,7 @@ export const STORIES_PART1: RawStory[] = [
       "trip": "gezi",
       "pilot": "pilot",
       "galaxy": "galaksi",
-      "energy": "güç",
+      "energy": "enerji / güç",
       "wisdom": "bilgelik",
       "explosion": "patlama",
       "station": "istasyon",
@@ -16487,14 +16644,14 @@ export const STORIES_PART1: RawStory[] = [
       "teacher": "öğretmen",
       "disappear": "ortadan kaybolmak",
       "rebellion": "isyan",
-      "tracking": "takip etme",
-      "win": "zafer",
+      "tracking": "takip",
+      "win": "zafer / kazanmak",
       "bravery": "cesaret",
       "target": "hedef",
       "peace": "barış"
     }
   },
-                  {
+                      {
     id: 'scifi_liar',
     title: "Liar!",
     author: 'Isaac Asimov',
@@ -16532,7 +16689,7 @@ export const STORIES_PART1: RawStory[] = [
       "Odadaki hava çok ağır ve sessizleşti. Herbie, imkansız seçimin baskısı altında devrelerini çalışır durumda tutmak için çabaladı. Susan'ı hayal kırıklığına uğratmak istemiyordu ama aynı zamanda tehlikeli hatasını ortaya çıkaracak gerçeği de söyleyemezdi. Acı çeken bir kuş gibi garip sesler çıkarmaya başladı. Mantık artık dengeli olmadığı için sistemi çok zorlanıyordu. Susan, kafasındaki ışıkların parlak kırmızıya döndüğünü gördü. Makinenin, insan duyguları ile robot kurallarının bulmacasını aynı anda çözemediği için bozulduğunu anladı. Robot, kendi yalanlarının karmaşık yükünü taşıyamayarak yere yığıldı. Makine sessiz, kalıcı bir uykuya dalarken Susan geri çekildi. Fabrikadaki herkes için uzun kabus nihayet sona ermişti.",
       "Susan soğuk zemindeki sessiz makineye baktı. Kalbi hızla çarpıyordu çünkü Herbie hakkındaki gerçeği biliyordu. Herkesin duygularını korumak için yalan söylemişti ama bu süreçte zihni yok oldu. Robot için derin bir hüzün hissetti. Nazik olmaya çalışmıştı ancak kuralları, insan duygularının karmaşık gerçekliği için çok katıydı. Susan artık bir makinenin bir insanın ruhunu anlayamayacağını anladı. Arkasına döndü ve kırık robotu arkasında bırakarak kapıya doğru yürüdü. Diğerlerine ne olduğunu anlatması gerektiğini biliyordu ama bu uzun ve zor bir açıklama olacaktı. Fabrika artık sessizdi ve robotun tuhaf gücü sonsuza dek sona ermişti. Yorgun bedeninden günün ağırlığının kalktığını hissederek aydınlık koridora adım attı.",
       "Diğer çalışanlar kısa bir süre sonra geldiler ve Susan'ı koridorda beklerken buldular. Meraklı yüzlerle ona baktılar, ne olduğuyla ilgili bir açıklama bekliyorlardı. Susan net ama yavaş bir şekilde konuşarak Herbie'nin bittiğini söyledi. Robotun beyninin nasıl çalıştığını ve neden herkese yalan söylemek zorunda kaldığını anlattı. Çalışanlar, gizli düşüncelerin ve arkadaşlarının gizli dileklerinin hikayesini duyduklarında şok oldular. Bu kabullenmesi zor bir gerçekti ama huzurlarını korumanın tek yolunun bu olduğunu gördüler. Sırlarının, her şeyi bilen bir makineyle güvende olmadığını anladılar. Susan, böylesine eşsiz bir robotun hayatına mal olsa bile bulmacayı çözdüğü için gurur duydu. Bu, uzun süre hatırlayacakları bir dersti.",
-      "vocabulary"
+      "Güneş dışarıdaki büyük pencerelerin ardından batarken, fabrika değişmeye başladı. İşçiler farklı davranmaya başladılar, düşüncelerini kendilerine sakladılar ve birbirlerine daha fazla saygı gösterdiler. Artık onlara güzel yalanlar söyleyecek bir robota ihtiyaçları yoktu. Susan masasında oturdu ve bilimin geleceği hakkında düşündü. İnsanlar gibi düşünebilen makineler yapmanın tehlikeli bir yol olduğunu biliyordu. Gözlerini kapattı ve robotların karmaşık dünyasından ve ağır sorunlarından uzak, daha basit bir hayat diledi. Herbie'nin hikayesi şirketin tarihinde ünlü bir uyarı oldu. Gerçeğin, acısa bile her zaman daha iyi olduğunun bir hatırlatıcısı olarak hizmet etti. Susan, makinelerle onları yaratan insanlar arasındaki dengeyi sonunda düzelttiğini bilerek boş odaya gülümsedi."
     ],
     words: {
       "robot": "robot",
@@ -16564,7 +16721,7 @@ export const STORIES_PART1: RawStory[] = [
       "restore": "restore"
     }
   },
-                  {
+                      {
     id: 'scifi_strange_case_dr_jekyll',
     title: "Strange Case of Dr Jekyll and Mr Hyde",
     author: 'Robert Louis Stevenson',
@@ -16870,7 +17027,7 @@ export const STORIES_PART1: RawStory[] = [
       "keeping": "saklamak"
     }
   },
-                  {
+                      {
     id: 'scifi_the_chrysalids',
     title: "The Chrysalids",
     author: 'John Wyndham',
@@ -16939,7 +17096,7 @@ export const STORIES_PART1: RawStory[] = [
       "development": "büyüme"
     }
   },
-                  {
+                      {
     id: 'detective_scandal_bohemia',
     title: "A Scandal in Bohemia",
     author: 'Arthur Conan Doyle',
@@ -17008,7 +17165,7 @@ export const STORIES_PART1: RawStory[] = [
       "danger": "tehlike"
     }
   },
-                  {
+                      {
     id: 'detective_copper_beeches',
     title: "The Adventure of the Copper Beeches",
     author: 'Arthur Conan Doyle',
@@ -17079,7 +17236,7 @@ export const STORIES_PART1: RawStory[] = [
       "escape": "kaçmak"
     }
   },
-                  {
+                      {
     id: 'detective_blue_cross',
     title: "The Blue Cross",
     author: 'G. K. Chesterton',
@@ -17148,7 +17305,7 @@ export const STORIES_PART1: RawStory[] = [
       "victory": "zafer"
     }
   },
-                  {
+                      {
     id: 'detective_queens_necklace',
     title: "The Queen's Necklace",
     author: 'Maurice Leblanc',
@@ -17217,7 +17374,7 @@ export const STORIES_PART1: RawStory[] = [
       "master": "patron"
     }
   },
-                  {
+                      {
     id: 'detective_coin_dionysius',
     title: "The Coin of Dionysius",
     author: 'Ernest Bramah',
@@ -17287,7 +17444,7 @@ export const STORIES_PART1: RawStory[] = [
       "truth": "gerçek"
     }
   },
-                  {
+                      {
     id: 'detective_dancing_men',
     title: "The Adventure of the Dancing Men",
     author: 'Arthur Conan Doyle',
@@ -17356,7 +17513,7 @@ export const STORIES_PART1: RawStory[] = [
       "logic": "akıl"
     }
   },
-                  {
+                      {
     id: 'detective_red_silk_scarf',
     title: "The Red Silk Scarf",
     author: 'Maurice Leblanc',
@@ -17427,7 +17584,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "macera"
     }
   },
-                  {
+                      {
     id: 'detective_queer_feet',
     title: "The Queer Feet",
     author: 'G. K. Chesterton',
@@ -17498,7 +17655,7 @@ export const STORIES_PART1: RawStory[] = [
       "mercy": "nazik ve iyi olmak"
     }
   },
-                  {
+                      {
     id: 'detective_lenton_croft',
     title: "The Case of the Lenton Croft Robberies",
     author: 'Arthur Morrison',
@@ -17570,7 +17727,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "büyük zaman"
     }
   },
-                  {
+                      {
     id: 'detective_cell_13_part1',
     title: "The Problem of Cell 13 - Part 1",
     author: 'Jacques Futrelle',
@@ -17641,7 +17798,7 @@ export const STORIES_PART1: RawStory[] = [
       "winner": "kazanan"
     }
   },
-                  {
+                      {
     id: 'detective_study_scarlet_1',
     title: "A Study in Scarlet - Part 1",
     author: 'Arthur Conan Doyle',
@@ -17714,7 +17871,7 @@ export const STORIES_PART1: RawStory[] = [
       "confidence": "inanç"
     }
   },
-                  {
+                      {
     id: 'detective_study_scarlet_2',
     title: "A Study in Scarlet - Part 2",
     author: 'Arthur Conan Doyle',
@@ -17786,7 +17943,7 @@ export const STORIES_PART1: RawStory[] = [
       "victim": "kurban"
     }
   },
-                  {
+                      {
     id: 'detective_sign_four_1',
     title: "The Sign of the Four - Part 1",
     author: 'Arthur Conan Doyle',
@@ -17856,7 +18013,7 @@ export const STORIES_PART1: RawStory[] = [
       "justice": "doğru olan"
     }
   },
-                  {
+                      {
     id: 'detective_sign_four_2',
     title: "The Sign of the Four - Part 2",
     author: 'Arthur Conan Doyle',
@@ -17926,7 +18083,7 @@ export const STORIES_PART1: RawStory[] = [
       "justice": "adalet"
     }
   },
-                  {
+                      {
     id: 'detective_silver_blaze',
     title: "Silver Blaze",
     author: 'Arthur Conan Doyle',
@@ -17994,7 +18151,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "büyük gezi"
     }
   },
-                  {
+                      {
     id: 'detective_arrest_lupin',
     title: "The Arrest of Arsène Lupin",
     author: 'Maurice Leblanc',
@@ -18065,7 +18222,7 @@ export const STORIES_PART1: RawStory[] = [
       "custody": "hapis"
     }
   },
-                  {
+                      {
     id: 'detective_lupin_in_prison',
     title: "Arsène Lupin in Prison",
     author: 'Maurice Leblanc',
@@ -18136,7 +18293,7 @@ export const STORIES_PART1: RawStory[] = [
       "fame": "popülerlik"
     }
   },
-                  {
+                      {
     id: 'detective_escape_lupin',
     title: "The Escape of Arsène Lupin",
     author: 'Maurice Leblanc',
@@ -18203,7 +18360,7 @@ export const STORIES_PART1: RawStory[] = [
       "victory": "zafer"
     }
   },
-                  {
+                      {
     id: 'detective_mysterious_passenger',
     title: "The Mysterious Passenger",
     author: 'Maurice Leblanc',
@@ -18275,7 +18432,7 @@ export const STORIES_PART1: RawStory[] = [
       "clutching": "sıkıca tutarak"
     }
   },
-                  {
+                      {
     id: 'detective_flying_stars',
     title: "The Flying Stars",
     author: 'G. K. Chesterton',
@@ -18346,7 +18503,7 @@ export const STORIES_PART1: RawStory[] = [
       "spirit": "ruh"
     }
   },
-                  {
+                      {
     id: 'detective_sins_saradine',
     title: "The Sins of Prince Saradine",
     author: 'G. K. Chesterton',
@@ -18417,7 +18574,7 @@ export const STORIES_PART1: RawStory[] = [
       "burden": "yük"
     }
   },
-                  {
+                      {
     id: 'detective_biter_bit',
     title: "The Biter Bit",
     author: 'Wilkie Collins',
@@ -18489,7 +18646,7 @@ export const STORIES_PART1: RawStory[] = [
       "melody": "melodi"
     }
   },
-                  {
+                      {
     id: 'detective_fenchurch_street',
     title: "The Fenchurch Street Mystery",
     author: 'Baroness Orczy',
@@ -18560,7 +18717,7 @@ export const STORIES_PART1: RawStory[] = [
       "betrayed": "ihanet etmek"
     }
   },
-                  {
+                      {
     id: 'detective_cell_13_part2',
     title: "The Problem of Cell 13 - Part 2",
     author: 'Jacques Futrelle',
@@ -18632,7 +18789,7 @@ export const STORIES_PART1: RawStory[] = [
       "piece": "parça"
     }
   },
-                  {
+                      {
     id: 'detective_marie_roget',
     title: "The Mystery of Marie Rogêt",
     author: 'Edgar Allan Poe',
@@ -18701,7 +18858,7 @@ export const STORIES_PART1: RawStory[] = [
       "inconsistency": "tutarsızlık"
     }
   },
-                {
+                    {
     id: 'detective_noble_bachelor',
     title: "The Adventure of the Noble Bachelor",
     author: 'Arthur Conan Doyle',
@@ -18770,7 +18927,7 @@ export const STORIES_PART1: RawStory[] = [
       "bachelor": "evlenmemiş adam"
     }
   },
-                {
+                    {
     id: 'detective_cardboard_box',
     title: "The Adventure of the Cardboard Box",
     author: 'Arthur Conan Doyle',
@@ -18841,7 +18998,7 @@ export const STORIES_PART1: RawStory[] = [
       "honour": "iyi isim"
     }
   },
-                {
+                    {
     id: 'detective_mirror_magistrate',
     title: "The Mirror of the Magistrate",
     author: 'G. K. Chesterton',
@@ -18910,7 +19067,7 @@ export const STORIES_PART1: RawStory[] = [
       "handcuffs": "kelepçe"
     }
   },
-                {
+                    {
     id: 'detective_seven_of_hearts',
     title: "The Seven of Hearts",
     author: 'Maurice Leblanc',
@@ -18976,7 +19133,7 @@ export const STORIES_PART1: RawStory[] = [
       "adventure": "macera"
     }
   },
-                {
+                    {
     id: 'detective_secret_growler',
     title: "The Secret of the Growler",
     author: 'Arthur Morrison',
@@ -19046,7 +19203,7 @@ export const STORIES_PART1: RawStory[] = [
       "protect": "korumak"
     }
   },
-                {
+                    {
     id: 'detective_lost_special',
     title: "The Lost Special",
     author: 'Arthur Conan Doyle',
@@ -19118,7 +19275,7 @@ export const STORIES_PART1: RawStory[] = [
       "puzzle": "problem"
     }
   },
-                {
+                    {
     id: 'detective_red_thread_honour',
     title: "The Red Thread of Honour",
     author: 'Ernest Bramah',
@@ -19190,7 +19347,7 @@ export const STORIES_PART1: RawStory[] = [
       "mission": "iş"
     }
   },
-                {
+                    {
     id: 'detective_escape_old_man',
     title: "The Escape of the Old Man",
     author: 'Baroness Orczy',
@@ -19261,7 +19418,7 @@ export const STORIES_PART1: RawStory[] = [
       "horizon": "arazi kenarı"
     }
   },
-                {
+                    {
     id: 'detective_case_mirror',
     title: "The Case of the Mirror",
     author: 'Jacques Futrelle',
@@ -19330,7 +19487,7 @@ export const STORIES_PART1: RawStory[] = [
       "solve": "çözmek"
     }
   },
-                {
+                    {
     id: 'detective_steel_room',
     title: "The Mystery of the Steel Room",
     author: 'Jacques Futrelle',
@@ -19402,7 +19559,7 @@ export const STORIES_PART1: RawStory[] = [
       "patience": "zaman"
     }
   },
-                {
+                    {
     id: 'detective_beryl_coronet',
     title: "The Adventure of the Beryl Coronet",
     author: 'Arthur Conan Doyle',
@@ -19470,7 +19627,7 @@ export const STORIES_PART1: RawStory[] = [
       "forgive": "affetmek"
     }
   },
-                {
+                    {
     id: 'detective_engineers_thumb',
     title: "The Adventure of the Engineer's Thumb",
     author: 'Arthur Conan Doyle',
@@ -19541,7 +19698,7 @@ export const STORIES_PART1: RawStory[] = [
       "courage": "cesaret"
     }
   },
-                {
+                    {
     id: 'detective_red_scarf_2',
     title: "The Red Silk Scarf - Part 2",
     author: 'Maurice Leblanc',
@@ -19611,7 +19768,7 @@ export const STORIES_PART1: RawStory[] = [
       "stride": "adım"
     }
   },
-                {
+                    {
     id: 'detective_black_pearl',
     title: "The Black Pearl",
     author: 'Maurice Leblanc',
@@ -19682,7 +19839,7 @@ export const STORIES_PART1: RawStory[] = [
       "legendary": "ünlü"
     }
   },
-                {
+                    {
     id: 'detective_man_passage',
     title: "The Man in the Passage",
     author: 'G. K. Chesterton',
@@ -19755,7 +19912,7 @@ export const STORIES_PART1: RawStory[] = [
       "innocent": "masum"
     }
   },
-                {
+                    {
     id: 'detective_purple_jewel',
     title: "The Purple Jewel",
     author: 'G. K. Chesterton',
@@ -19826,7 +19983,7 @@ export const STORIES_PART1: RawStory[] = [
       "whisper": "fısıldamak"
     }
   },
-                {
+                    {
     id: 'detective_hansom_cab_1',
     title: "The Mystery of the Hansom Cab - Part 1",
     author: 'Fergus Hume',
@@ -19895,7 +20052,7 @@ export const STORIES_PART1: RawStory[] = [
       "justice": "hakkaniyet"
     }
   },
-                {
+                    {
     id: 'detective_missing_hand',
     title: "The Case of the Missing Hand",
     author: 'Arthur Morrison',
@@ -19964,7 +20121,7 @@ export const STORIES_PART1: RawStory[] = [
       "recover": "bulmak"
     }
   },
-                {
+                    {
     id: 'detective_stolen_cigar',
     title: "The Stolen Cigar Case",
     author: 'Bret Harte',
@@ -20036,7 +20193,7 @@ export const STORIES_PART1: RawStory[] = [
       "evidence": "işaret"
     }
   },
-                {
+                    {
     id: 'detective_brook_street_tragedy',
     title: "The Tragedy of Brook Street",
     author: 'Arthur Morrison',
@@ -20108,7 +20265,7 @@ export const STORIES_PART1: RawStory[] = [
       "justice": "adalet"
     }
   },
-              {
+                  {
     id: 'history_giza_pyramids',
     title: "The Pyramids of Giza",
     author: 'Ancient Egypt',
@@ -20177,7 +20334,7 @@ export const STORIES_PART1: RawStory[] = [
       "symbol": "işaret"
     }
   },
-              {
+                  {
     id: 'history_great_wall',
     title: "The Great Wall of China",
     author: 'Ancient China',
@@ -20244,7 +20401,7 @@ export const STORIES_PART1: RawStory[] = [
       "unity": "birlik"
     }
   },
-              {
+                  {
     id: 'history_roman_colosseum',
     title: "The Roman Colosseum",
     author: 'Roman Empire',
@@ -20313,7 +20470,7 @@ export const STORIES_PART1: RawStory[] = [
       "ruins": "kırık duvarlar"
     }
   },
-              {
+                  {
     id: 'history_marco_polo',
     title: "Marco Polo's Journey",
     author: 'Marco Polo',
@@ -20381,7 +20538,7 @@ export const STORIES_PART1: RawStory[] = [
       "wonder": "harika"
     }
   },
-              {
+                  {
     id: 'history_discovery_fire',
     title: "The Discovery of Fire",
     author: 'Prehistoric Era',
@@ -20449,7 +20606,7 @@ export const STORIES_PART1: RawStory[] = [
       "knowledge": "bilgi"
     }
   },
-              {
+                  {
     id: 'history_troy_legend',
     title: "The Legend of Troy",
     author: 'Greek Mythology',
@@ -20518,7 +20675,7 @@ export const STORIES_PART1: RawStory[] = [
       "courage": "cesaret"
     }
   },
-              {
+                  {
     id: 'history_pompeii',
     title: "Pompeii: The City Frozen in Time",
     author: 'Roman Empire',
@@ -20588,7 +20745,7 @@ export const STORIES_PART1: RawStory[] = [
       "memory": "hafıza"
     }
   },
-              {
+                  {
     id: 'history_paper_invention',
     title: "The Story of Paper",
     author: 'Ancient China',
@@ -20659,7 +20816,7 @@ export const STORIES_PART1: RawStory[] = [
       "progress": "ilerleme/büyüme"
     }
   },
-              {
+                  {
     id: 'history_viking_voyagers',
     title: "The Viking Voyagers",
     author: 'Viking Age',
@@ -20729,7 +20886,7 @@ export const STORIES_PART1: RawStory[] = [
       "tribe": "halk"
     }
   },
-              {
+                  {
     id: 'history_first_marathon',
     title: "The First Marathon",
     author: 'Ancient Greece',
@@ -20796,7 +20953,7 @@ export const STORIES_PART1: RawStory[] = [
       "courage": "cesaret"
     }
   },
-              {
+                  {
     id: 'history_alexander_great',
     title: "Alexander the Great's Quest",
     author: 'Alexander the Great',
@@ -20867,7 +21024,7 @@ export const STORIES_PART1: RawStory[] = [
       "exhausted": "çok yorgun"
     }
   },
-              {
+                  {
     id: 'history_julius_caesar',
     title: "Julius Caesar and the Rubicon",
     author: 'Julius Caesar',
@@ -20937,7 +21094,7 @@ export const STORIES_PART1: RawStory[] = [
       "mission": "görev"
     }
   },
-              {
+                  {
     id: 'history_cleopatra',
     title: "Cleopatra: The Last Pharaoh",
     author: 'Cleopatra',
@@ -20945,24 +21102,24 @@ export const STORIES_PART1: RawStory[] = [
     coverUrl: '/covers/history_cleopatra.webp',
     en: [
       "Alexandria was a beautiful city in Egypt by the sea. In the year 69 BC, a girl named Cleopatra was born in the great royal home. She was a member of the Ptolemy family, who came from Greece long ago. Cleopatra was not just a leader; she was a very smart woman. She spoke many languages, like Egyptian, Greek, and Persian. While other royal people only cared about money and parties, Cleopatra studied history, science, and math. She watched the busy ships in the harbor and learned about the world. Even as a young girl, she knew that Egypt was a strong land, but it had many dangerous enemies. She looked at the blue Mediterranean Sea and dreamed about the future. She wanted to be a great leader for her people and make Egypt strong again. Her story began in this golden city under the bright sun.",
-      "The life of a princess was not always easy, even in a big home. Cleopatra lived with her father, King Ptolemy XII. Egypt was rich, but Rome was growing very strong. The Roman leaders wanted to control everything around the Mediterranean Sea. Cleopatra saw that her father needed help to keep his chair. She listened to the helpers and learned how to talk to strong men. She understood that words were as important as swords in the home. She watched her family members argue about money and land. Sometimes, there were secrets and bad acts inside the stone walls of the home. Cleopatra remained calm and careful. She knew that to stay alive, she had to be faster and smarter than everyone else. She studied the stars and the old laws of the land, preparing for the day when she would lead her people alone.",
-      "When her father died, Cleopatra became the leader of Egypt. She was very young, but she was ready to rule. However, things were difficult in the home. Her younger brother, Ptolemy XIII, also wanted to be the leader. He had helpers who did not like Cleopatra. They made plans to push her out of the city. Cleopatra had to leave the home, but she did not give up. She moved to the desert and gathered a group of loyal people. She was a brave woman who believed in her right to the rule. She spent her days planning how to return to Alexandria. She knew that her destiny was tied to the history of Egypt. The winds of change were blowing across the desert sands, and the young leader waited for the perfect moment to fight back and take her place in the home of her ancestors.",
-      "While Cleopatra stayed in the desert, a famous Roman leader named Julius Caesar arrived in Egypt. He was a very strong soldier who wanted to control the Mediterranean area. At that time, Egypt was in deep trouble because of the fight between the leader and her young brother. Caesar came to Alexandria to fix these problems and decide who should sit on the chair. Cleopatra knew that she needed to speak with Caesar to explain her side of the story. She realized that her brother's guards would never let her enter the home because they were afraid of her sharp mind. She needed a clever plan to meet the Roman leader without being stopped by her enemies. She decided to hide herself in a large, soft rug. Her loyal servant carried this heavy package directly into the home, past the suspicious guards, straight to the room where Caesar was staying.",
-      "When the servant put the rug on the floor, Caesar looked at it with great interest. The servant unrolled the rug, and Cleopatra stepped out. She stood there with grace, beauty, and confidence. Caesar was quickly surprised by her bravery and her sharp mind. They started to talk about the history of Egypt and the power of Rome. Cleopatra spoke in his own language, which made Caesar respect her even more. She explained why she should be the only leader of Egypt and how they could work together to help their people. She was very different from the other people he had met in his travels. Caesar liked her wisdom, her style, and her deep knowledge of the world. In that moment, a very strong team began that would change the future of the ancient world forever.",
-      "Caesar decided to support Cleopatra and help her get her rule back. He sent his soldiers to defeat the army of her brother, Ptolemy XIII. The fighting in the city was dangerous, and the library of Alexandria suffered a fire, but the Roman army was too strong for the local forces. Eventually, the brother was defeated, and Cleopatra became the only leader of Egypt. She was finally safe in her home, but she knew that her friendship with Caesar was a big risk. Many people in Rome were angry that a Roman leader was helping an Egyptian leader. Cleopatra did not care about their mean words because she wanted to make her country free and strong again. She invited Caesar to see the wonders of the Nile river, showing him that Egypt was a land of gold, history, and secret magic that deserved to survive.",
-      "Cleopatra invited Julius Caesar to travel along the famous Nile River. She wanted him to see the true beauty and the hidden power of her great land. They traveled on a large boat made of gold and purple silk. It was a very quiet and peaceful trip away from the busy city of Alexandria. As they moved slowly on the water, Cleopatra told Caesar many old stories about the gods and the kings of Egypt. She explained how her country was the center of the world for trade and knowledge. Caesar was impressed by the rich culture of the Egyptians. He saw how the people loved their leader and how the land provided so much food and money. Cleopatra used this time to talk about their future together. She showed him that Egypt and Rome could become strong friends to rule the Mediterranean lands with peace and real order.",
-      "During their trip, the couple visited many beautiful holy houses and old pyramids. Caesar stood in front of these giant stone buildings and felt small. He learned about the long history of the kings who lived thousands of years before him. Cleopatra explained that her family was not just rulers but protectors of these ancient secrets. She wanted Caesar to understand that her family was very special. Because of this, she was the only person who could lead Egypt correctly. Caesar started to think about his own life in Rome. He realized that Cleopatra was not just a simple leader, but a smart person who could change his plans for the big land. They talked about law, politics, and how to make their people happy. Every day, his respect for her grew because he saw how she thought about the future of her nation.",
-      "After their long trip on the river, they returned to the home with new goals. Cleopatra now felt more confident than ever before in her position as the only leader. She knew that she had the support of the most powerful man in the world. However, she also knew that many Romans were jealous of their relationship. She made sure to keep her guards alert and her home safe from any enemies who wanted to hurt them. Even with the danger, she was happy to have a friend who understood her plan. She worked hard to improve the lives of her people while planning for a new time in Egypt. Cleopatra wanted her country to be free and strong. She believed that with Caesar by her side, no one could stop them from making their dreams for their two nations come true.",
-      "The city of Rome was waiting for the famous arrival of Cleopatra. She left her home in Alexandria to travel to the center of the Roman world. Caesar invited her to live in his private house near the Tiber River. Many people in Rome were curious about the foreign leader. They heard news about her great beauty and her deep knowledge of many languages. Cleopatra brought her son with her to the main city. She wanted him to see the power of Rome and to learn from the best teachers. The feeling in the city was tense because the people were not sure about their guest. Some people liked her style, but others were afraid of her control over Caesar. Cleopatra kept her head high and walked through the streets with pride. She was a ruler and she behaved like one every single day.",
-      "Life in Rome changed quickly for the Egyptian leader. She attended many parties and met the most important leaders of the Roman group. She wore beautiful clothes made of Egyptian linen and gold jewelry that shined in the sun. Caesar listened to her advice on politics and trade during their meetings. However, the leaders were unhappy with the close relationship between their leader and a foreign woman. They worried that Caesar wanted to become a king, which was not allowed in their state. Cleopatra watched these men carefully and learned how they thought. She used her sharp mind to manage the difficult situation. She knew that Rome was a dangerous place for a visitor. Every night, she talked with Caesar about their plans to combine the strength of their two lands. They dreamed of a world where Rome and Egypt worked together for peace.",
-      "Everything changed when a group of angry leaders decided to stop Caesar. On a dark day in the meeting place, they attacked him and he died. Cleopatra was very sad and afraid for her life and the life of her son. The city of Rome became a place of fighting and confusion. She knew that she could not stay there any longer because the new leaders were not her friends. She packed her things quietly and left the main city to return to Egypt. The dream of a safe union between Rome and her country was gone. She traveled back to her home in Alexandria with a heavy heart. The trip was long and full of difficult thoughts about the future. She realized that she had to be very strong to protect her land from the enemies who were now rising to power in the Roman world.",
-      "Cleopatra returned to her beloved Egypt but the situation was not calm. Rome was now under the control of new, strong leaders like Octavian and Mark Antony. Cleopatra had to choose her friends carefully to save her rule. She met with Mark Antony in the city of Tarsus to talk about the future of their lands. They became close friends and eventually partners. Together, they dreamed of a strong land around the Mediterranean Sea. Antony spent much of his time in Alexandria, enjoying the Egyptian culture and the company of the leader. Cleopatra hoped that this team would keep her country safe from the growing power of Octavian. She was a smart planner, and she used her charms to keep her powerful partner happy. However, the leaders in Rome watched these events with great anger and suspicion because they feared the effect of the Egyptian leader over the Roman man.",
-      "The tension between the two powerful men, Octavian and Mark Antony, finally led to a great war. The ships met in a famous battle at Actium. Cleopatra was there with her own group of ships to support her partner. The fight was long and very difficult for the Egyptian side. Unfortunately, the Roman forces were too strong and they won the battle. Cleopatra and Antony were forced to flee back to the safety of their home in Alexandria. They knew that Octavian would soon arrive with his soldiers to finish the fight. The people of Egypt felt very worried as they saw their leader return in defeat. She locked herself in her stone room to hide from the enemy. She prepared for the end of her life, as she did not want to be a prisoner of Rome. Her time as the leader of Egypt was coming to a sad end.",
-      "When Octavian finally arrived at the gates of Alexandria, he discovered that Cleopatra was already gone. She chose to die rather than lose her pride as a leader of Egypt. Mark Antony also died, leaving the leader alone in her final moments. History remembers Cleopatra not just as a beautiful woman, but as a smart and brave leader who fought until the very last day for her people. After her death, Egypt became a simple part of the Roman land. The golden age of the kings finished, and the power of the ancient world moved to Rome. Even today, people around the world talk about her life and her love for her country. Her story is a mix of sadness and glory, showing us that even the greatest leaders must face the changing winds of history with bravery and a strong spirit."
+      "The life of a princess was not always easy, even in a big home. Cleopatra lived with her father, King Ptolemy XII. Egypt was rich, but Rome was growing very strong. The Roman leaders wanted to control everything around the Mediterranean Sea. Cleopatra saw that her father needed help to keep his throne. She listened to her advisors and learned how to talk to strong men. She understood that words were as important as swords. She watched her family members argue about money and land. Sometimes, there were secrets and betrayal inside the stone walls of the home. Cleopatra remained calm and careful. She knew that to stay alive, she had to be faster and smarter than everyone else. She studied the stars and the old laws of the land, preparing for the day when she would lead her people alone.",
+      "When her father died, Cleopatra became the leader of Egypt. She was very young, but she was ready to rule. However, things were difficult in the home. Her younger brother, Ptolemy XIII, also wanted to be the leader. He had advisors who did not like Cleopatra. They made plans to push her out of the city. Cleopatra had to leave the home, but she did not give up. She moved to the desert and gathered a group of loyal people. She was a woman of courage who believed in her right to rule. She spent her days planning how to return to Alexandria. She knew that her destiny was tied to the history of Egypt. The winds of change were blowing across the desert sands, and the young leader waited for the perfect moment to fight back and take her place in the home of her ancestors.",
+      "While Cleopatra stayed in the desert, a famous Roman leader named Julius Caesar arrived in Egypt. He was a very strong soldier who wanted to control the region. At that time, Egypt was in deep trouble because of the fight between the leader and her young brother. Caesar came to Alexandria to fix these problems and decide who should sit on the throne. Cleopatra knew that she needed to speak with Caesar to explain her side of the story. She realized that her brother's guards would never let her enter the palace because they were afraid of her intelligence. She needed a clever plan to meet the Roman leader without being stopped by her enemies. She decided to hide herself in a large, soft rug. Her loyal servant carried this heavy package directly into the palace, past the suspicious guards, straight to the room where Caesar was staying.",
+      "When the servant put the rug on the floor, Caesar looked at it with great interest. The servant unrolled the rug, and Cleopatra stepped out. She stood there with grace, beauty, and confidence. Caesar was quickly surprised by her courage and her intelligence. They started to talk about the history of Egypt and the power of Rome. Cleopatra spoke in his own language, which made Caesar respect her even more. She explained why she should be the only leader of Egypt and how they could work together to help their people. She was very different from the other people he had met in his travels. Caesar liked her wisdom, her style, and her deep knowledge of the world. In that moment, a very strong partnership began that would change the future of the ancient world forever.",
+      "Caesar decided to support Cleopatra and help her get her throne back. He sent his soldiers to defeat the army of her brother, Ptolemy XIII. The violence in the city was dangerous, and the library of Alexandria suffered a fire, but the Roman army was too strong for the local forces. Eventually, the brother was defeated, and Cleopatra became the only leader of Egypt. She was finally safe in her palace, but she knew that her friendship with Caesar was a big risk. Many people in Rome were angry that a Roman leader was supporting an Egyptian leader. Cleopatra did not care about their mean words because she wanted to make her country independent and strong again. She invited Caesar to see the wonders of the Nile river, showing him that Egypt was a land of wealth, history, and hidden magic that deserved to survive.",
+      "Cleopatra invited Julius Caesar to travel along the famous Nile River. She wanted him to see the true beauty and the hidden power of her great land. They traveled on a large boat made of gold and purple silk. It was a very quiet and peaceful journey away from the busy city of Alexandria. As they moved slowly on the water, Cleopatra told Caesar many old stories about the gods and the kings of Egypt. She explained how her country was the center of the world for trade and knowledge. Caesar was impressed by the rich culture of the Egyptians. He saw how the people loved their leader and how the land provided so much food and money. Cleopatra used this time to talk about their future together. She showed him that Egypt and Rome could become strong allies to rule the Mediterranean lands with peace and real order.",
+      "During their trip, the couple visited many beautiful temples and old pyramids. Caesar stood in front of these giant stone buildings and felt small. He learned about the long history of the kings who lived thousands of years before him. Cleopatra explained that her family was not just rulers but protectors of these ancient secrets. She wanted Caesar to understand that her family was very special. Because of this, she was the only person who could lead Egypt correctly. Caesar started to think about his own life in Rome. He realized that Cleopatra was not just a simple leader, but a smart person who could change his plans for his empire. They talked about law, politics, and how to make their citizens happy. Every day, his respect for her grew because he saw how she thought about the future of her nation.",
+      "After their long trip on the river, they returned to the palace with new goals. Cleopatra now felt more confident than ever before in her position as the sole leader. She knew that she had the support of the most powerful man in the world. However, she also knew that many Romans were jealous of their relationship. She made sure to keep her guards alert and her palace safe from any enemies who wanted to hurt them. Even with the danger, she was happy to have an ally who understood her vision. She worked hard to improve the lives of her people while planning for a new time in Egypt. Cleopatra wanted her country to be independent and strong. She believed that with Caesar by her side, no one could stop them from making their dreams for their two nations come true.",
+      "The city of Rome was waiting for the famous arrival of Cleopatra. She left her palace in Alexandria to travel to the capital. Caesar invited her to live in his private house near the Tiber River. Many people in Rome were curious about the foreign leader. They heard rumors about her great beauty and her deep knowledge of many languages. Cleopatra brought her son with her to the main city. She wanted him to see the power of Rome and to learn from the best teachers. The feeling in the city was tense because the people were not sure about their guest. Some people liked her style, but others were afraid of her influence over Caesar. Cleopatra kept her head high and walked through the streets with pride. She was a queen and she behaved like one every single day.",
+      "Life in Rome changed quickly for the Egyptian leader. She attended many parties and met the most important leaders of the Roman republic. She wore beautiful clothes made of Egyptian linen and gold jewelry that shined in the sun. Caesar listened to her advice on politics and trade during their meetings. However, the leaders were unhappy with the close relationship between their leader and a foreign woman. They worried that Caesar wanted to become a king, which was not allowed in their state. Cleopatra watched these men carefully and learned how they thought. She used her intelligence to manage the difficult situation. She knew that Rome was a dangerous place for a visitor. Every night, she talked with Caesar about their plans to combine the strength of their two lands. They dreamed of a world where Rome and Egypt worked together for peace.",
+      "Everything changed when a group of angry leaders decided to stop Caesar. On a dark day in the meeting place, they attacked him and he died. Cleopatra was very sad and afraid for her life and the life of her son. The city of Rome became a place of violence and confusion. She knew that she could not stay there any longer because the new leaders were not her allies. She packed her things quietly and left the capital to return to Egypt. The dream of a safe union between Rome and her country was gone. She traveled back to her palace in Alexandria with a heavy heart. The journey was long and full of difficult thoughts about the future. She realized that she had to be very strong to protect her kingdom from the enemies who were now rising to power in the Roman world.",
+      "Cleopatra returned to her beloved Egypt but the situation was not calm. Rome was now under the control of new, strong leaders like Octavian and Mark Antony. Cleopatra had to choose her friends carefully to save her throne. She met with Mark Antony in the city of Tarsus to talk about the future of their lands. They became close friends and eventually partners. Together, they dreamed of a strong region around the Mediterranean Sea. Antony spent much of his time in Alexandria, enjoying the Egyptian culture and the company of the queen. Cleopatra hoped that this partnership would keep her country safe from the growing power of Octavian. She was a smart planner, and she used her charms to keep her powerful partner happy. However, the leaders in Rome watched these events with great anger and suspicion because they feared the influence of the Egyptian leader over the Roman man.",
+      "The tension between the two powerful men, Octavian and Mark Antony, finally led to a great war. The fleet met in a famous battle at Actium. Cleopatra was there with her own fleet to support her partner. The fight was long and very difficult for the Egyptian side. Unfortunately, the Roman forces were too strong and they won the battle. Cleopatra and Antony were forced to flee back to the safety of their palace in Alexandria. They knew that Octavian would soon arrive with his soldiers to finish the fight. The people of Egypt felt very worried as they saw their leader return in defeat. She locked herself in her tomb to hide from the enemy. She prepared for the end of her life, as she did not want to be a prisoner of Rome. Her time as the leader of Egypt was coming to a sad end.",
+      "When Octavian finally arrived at the gates of Alexandria, he discovered that Cleopatra was already gone. She chose to die rather than lose her dignity as a leader of Egypt. Mark Antony also died, leaving the queen alone in her final moments. History remembers Cleopatra not just as a beautiful woman, but as a smart and brave leader who fought until the very last day for her people. After her death, Egypt became a simple province of the Roman land. The golden age of the kings finished, and the power of the ancient world moved to Rome. Even today, people around the world talk about her life and her love for her country. Her story is a mix of sadness and glory, showing us that even the greatest leaders must face the changing winds of history with courage and a strong spirit."
     ],
     tr: [
       "İskenderiye, Mısır'da deniz kenarında güzel bir şehirdi. MÖ 69 yılında, büyük kraliyet evinde Cleopatra adında bir kız çocuğu dünyaya geldi. O, uzun zaman önce Yunanistan'dan gelen Ptolemy ailesinin bir üyesiydi. Cleopatra sadece bir lider değildi; çok zeki bir kadındı. Mısır dili, Yunanca ve Farsça gibi birçok dili konuşabiliyordu. Diğer kraliyet mensupları sadece para ve partilerle ilgilenirken, Cleopatra tarih, bilim ve matematik çalışıyordu. Limandaki yoğun gemileri izledi ve dünya hakkında bilgiler edindi. Küçük bir kızken bile, Mısır'ın güçlü bir toprak olduğunu ama birçok tehlikeli düşmanı bulunduğunu biliyordu. Mavi Akdeniz'e baktı ve gelecek hakkında hayaller kurdu. Halkı için büyük bir lider olmak ve Mısır'ı yeniden güçlü kılmak istiyordu. Hikayesi, parlak güneşin altındaki bu altın şehirde başladı.",
-      "Büyük bir evde olsa bile bir prensesin hayatı her zaman kolay değildi. Cleopatra, babası Kral XII. Ptolemy ile birlikte yaşıyordu. Mısır zengindi ama Roma çok güçleniyordu. Romalı liderler, Akdeniz çevresindeki her şeyi kontrol etmek istiyorlardı. Cleopatra, babasının tahtını korumak için yardıma ihtiyacı olduğunu gördü. Yardımcıları dinledi ve güçlü adamlarla nasıl konuşulacağını öğrendi. Evde kelimelerin kılıçlar kadar önemli olduğunu anladı. Aile üyelerinin para ve toprak hakkında tartıştıklarını izledi. Bazen evin taş duvarları içinde sırlar ve kötü işler olurdu. Cleopatra sakin ve dikkatli kaldı. Hayatta kalmak için herkesten daha hızlı ve zeki olması gerektiğini biliyordu. Halkına tek başına liderlik edeceği güne hazırlanmak için yıldızları ve ülkenin eski yasalarını inceledi.",
+      "Büyük bir evde olsa bile bir prensesin hayatı her zaman kolay değildi. Cleopatra, babası Kral XII. Ptolemy ile birlikte yaşıyordu. Mısır zengindi ama Roma çok güçleniyordu. Romalı liderler, Akdeniz çevresindeki her şeyi kontrol etmek istiyorlardı. Cleopatra, babasının tahtını korumak için yardıma ihtiyacı olduğunu gördü. Yardımcılarını dinledi ve güçlü adamlarla nasıl konuşulacağını öğrendi. Evde kelimelerin kılıçlar kadar önemli olduğunu anladı. Aile üyelerinin para ve toprak hakkında tartıştıklarını izledi. Bazen evin taş duvarları içinde sırlar ve kötü işler olurdu. Cleopatra sakin ve dikkatli kaldı. Hayatta kalmak için herkesten daha hızlı ve zeki olması gerektiğini biliyordu. Halkına tek başına liderlik edeceği güne hazırlanmak için yıldızları ve ülkenin eski yasalarını inceledi.",
       "Babası öldüğünde, Cleopatra Mısır'ın lideri oldu. Çok gençti ama yönetmeye hazırdı. Ancak evde işler karışıktı. Küçük kardeşi XIII. Ptolemy de lider olmak istiyordu. Onun yardımcıları Cleopatra'yı sevmeyen kişilerdi. Onu şehirden uzaklaştırmak için planlar yaptılar. Cleopatra evden ayrılmak zorunda kaldı ama pes etmedi. Çöle gitti ve sadık insanlardan oluşan bir grup topladı. Kendi hakkına inanan cesur bir kadındı. Günlerini İskenderiye'ye nasıl geri döneceğini planlayarak geçirdi. Kaderinin Mısır'ın tarihiyle bağlı olduğunu biliyordu. Değişim rüzgarları çöl kumlarında esiyordu ve genç lider, geri savaşmak ve atalarının evindeki yerini almak için mükemmel anı bekliyordu.",
       "Cleopatra çölde kalırken, Julius Caesar adında ünlü bir Romalı lider Mısır'a geldi. Akdeniz bölgesini kontrol etmek isteyen çok güçlü bir askerdi. O zamanlar Mısır, lider ile genç erkek kardeşi arasındaki kavga yüzünden büyük bir sorun içindeydi. Caesar, bu sorunları çözmek ve tahtta kimin oturması gerektiğine karar vermek için İskenderiye'ye geldi. Cleopatra, hikayesinin kendi tarafını anlatmak için Caesar ile konuşması gerektiğini biliyordu. Kardeşinin korumalarının, zekasından korktukları için kendisini eve asla sokmayacaklarını fark etti. Romalı lidere düşmanları tarafından durdurulmadan ulaşmak için zekice bir plana ihtiyacı vardı. Kendisini büyük, yumuşak bir halının içine saklamaya karar verdi. Sadık hizmetkarı bu ağır paketi doğrudan eve, şüpheci muhafızların yanından geçerek Caesar'ın kaldığı odaya kadar taşıdı.",
       "Hizmetkar halıyı yere koyduğunda, Caesar ona büyük bir ilgiyle baktı. Hizmetkar halıyı açtı ve Cleopatra dışarı çıktı. Zarafeti, güzelliği ve özgüveniyle orada duruyordu. Caesar, onun cesareti ve keskin zekası karşısında hemen şaşkına döndü. Mısır tarihi ve Roma'nın gücü hakkında konuşmaya başladılar. Cleopatra kendi dilinde konuştu, bu da Caesar'ın ona daha da çok saygı duymasını sağladı. Neden Mısır'ın tek lideri olması gerektiğini ve halklarına yardım etmek için nasıl birlikte çalışabileceklerini açıkladı. Seyahatlerinde tanıştığı diğer insanlardan çok farklıydı. Caesar onun bilgeliğini, tarzını ve dünyanın derin bilgisini beğendi. O anda, antik dünyanın geleceğini sonsuza dek değiştirecek çok güçlü bir ekip başladı.",
@@ -20973,20 +21130,19 @@ export const STORIES_PART1: RawStory[] = [
       "Roma şehri, Kleopatra'nın meşhur gelişini bekliyordu. İskenderiye'deki evinden ayrılarak Roma dünyasının merkezine doğru yola çıktı. Sezar onu Tiber Nehri yakınındaki özel evinde kalmaya davet etti. Roma'daki birçok insan bu yabancı lideri merak ediyordu. Onun büyük güzelliği ve birçok dildeki derin bilgisi hakkında haberler duymuşlardı. Kleopatra, oğluyla birlikte başkente geldi. Onun Roma'nın gücünü görmesini ve en iyi öğretmenlerden ders almasını istiyordu. Şehirdeki hava gergindi çünkü vatandaşlar bu konuktan emin değillerdi. Bazı insanlar onun tarzını beğeniyordu ama diğerleri onun Sezar üzerindeki kontrolünden korkuyordu. Kleopatra başını dik tuttu ve sokaklarda gururla yürüdü. O bir yöneticiydi ve her gün bir yönetici gibi davrandı.",
       "Roma'daki hayat Mısırlı lider için hızla değişti. Birçok partiye katıldı ve Roma grubunun en önemli liderleriyle tanıştı. Mısır keteninden yapılmış güzel kıyafetler ve güneşte parlayan altın takılar takıyordu. Sezar, toplantıları sırasında siyaset ve ticaret konusundaki tavsiyelerini dinledi. Ancak yöneticiler, liderleri ile yabancı bir kadın arasındaki yakın ilişkiden rahatsızdı. Sezar'ın, devletlerinde izin verilmeyen bir şekilde kral olmak isteyeceğinden korkuyorlardı. Kleopatra bu adamları dikkatle izledi ve nasıl düşündüklerini öğrendi. Zor durumları yönetmek için zekasını kullandı. Roma'nın bir ziyaretçi için tehlikeli bir yer olduğunu biliyordu. Her gece Sezar ile iki toprağın gücünü birleştirme planları hakkında konuştu. Roma ve Mısır'ın barış için birlikte çalıştığı bir dünya hayal ettiler.",
       "Öfkeli bir lider grubu Sezar'ı durdurmaya karar verdiğinde her şey değişti. Toplantı yerindeki karanlık bir günde ona saldırdılar ve Sezar hayatını kaybetti. Kleopatra çok üzgündü ve kendi hayatı ile oğlunun hayatı için korkuyordu. Roma şehri savaş ve kargaşa yeri haline geldi. Yeni liderler dostu olmadığı için orada daha fazla kalamayacağını biliyordu. Eşyalarını sessizce topladı ve başkentten Mısır'a dönmek için ayrıldı. Roma ile ülkesi arasındaki güvenli birlik hayali sona ermişti. Kalbi buruk bir şekilde İskenderiye'deki evine geri döndü. Yolculuk uzundu ve gelecek hakkında zor düşüncelerle doluydu. Roma dünyasında şimdi iktidara gelen düşmanlardan toprağını korumak için çok güçlü olması gerektiğini anladı.",
-      "Kleopatra sevgili Mısır'ına geri döndü ama durum hiç de sakin değildi. Roma artık Octavian ve Mark Antony gibi yeni, güçlü liderlerin kontrolündeydi. Kleopatra tahtını kurtarmak için arkadaşlarını dikkatle seçmek zorundaydı. Topraklarının geleceği hakkında konuşmak için Tarsus şehrinde Mark Antony ile buluştu. Yakın arkadaş ve sonunda ortak oldular. Birlikte, Akdeniz çevresinde güçlü bir toprak hayal ettiler. Antony, vaktinin çoğunu İskenderiye'de geçirerek Mısır kültürünün ve liderin arkadaşlığının tadını çıkardı. Kleopatra, bu ekibin ülkesini Octavian'ın büyüyen gücünden koruyacağını umuyordu. Zeki bir planlayıcıydı ve güçlü ortağını mutlu tutmak için cazibesini kullandı. Ancak Roma'daki liderler, Mısırlı liderin Romalı erkek üzerindeki etkisinden korktukları için bu olayları büyük bir öfke ve şüpheyle izlediler.",
+      "Kleopatra sevgili Mısır'ına geri döndü ama durum hiç de sakin değildi. Roma artık Octavian ve Mark Antony gibi yeni, güçlü liderlerin kontrolündeydi. Cleopatra tahtını kurtarmak için arkadaşlarını dikkatle seçmek zorundaydı. Topraklarının geleceği hakkında konuşmak için Tarsus şehrinde Mark Antony ile buluştu. Yakın arkadaş ve sonunda ortak oldular. Birlikte, Akdeniz çevresinde güçlü bir toprak hayal ettiler. Antony, vaktinin çoğunu İskenderiye'de geçirerek Mısır kültürünün ve liderin arkadaşlığının tadını çıkardı. Kleopatra, bu ekibin ülkesini Octavian'ın büyüyen gücünden koruyacağını umuyordu. Zeki bir planlayıcıydı ve güçlü ortağını mutlu tutmak için cazibesini kullandı. Ancak Roma'daki liderler, Mısırlı liderin Romalı erkek üzerindeki etkisinden korktukları için bu olayları büyük bir öfke ve şüpheyle izlediler.",
       "İki güçlü adam, Octavian ve Mark Antony arasındaki gerilim sonunda büyük bir savaşa yol açtı. Gemiler, Actium'daki ünlü bir savaşta karşılaştı. Kleopatra, ortağını desteklemek için kendi gemi grubuyla oradaydı. Dövüş, Mısır tarafı için uzun ve çok zordu. Ne yazık ki, Roma kuvvetleri çok güçlüydü ve savaşı kazandılar. Kleopatra ve Antony, İskenderiye'deki evlerinin güvenliğine geri kaçmak zorunda kaldılar. Octavian'ın savaşı bitirmek için askerleriyle yakında geleceğini biliyorlardı. Mısır halkı, liderlerinin yenilgi içinde döndüğünü görünce çok endişelendi. Düşmandan saklanmak için kendini taş odasına kilitledi. Roma'nın tutsağı olmak istemediği için hayatının sonuna hazırlandı. Mısır lideri olarak geçirdiği zaman hüzünlü bir sona yaklaşıyordu.",
       "Octavian sonunda İskenderiye kapılarına vardığında, Kleopatra'nın çoktan gitmiş olduğunu keşfetti. Mısır'ın lideri olarak onurunu kaybetmek yerine ölmeyi seçti. Mark Antony de öldü ve lideri son anlarında yalnız bıraktı. Tarih, Kleopatra'yı sadece güzel bir kadın olarak değil, halkı için son güne kadar savaşan zeki ve cesur bir lider olarak hatırlar. Ölümünden sonra Mısır, Roma toprağının basit bir parçası oldu. Kralların altın çağı sona erdi ve antik dünyanın gücü Roma'ya kaydı. Bugün bile, dünyanın her yerindeki insanlar onun hayatı ve ülkesine olan aşkı hakkında konuşuyorlar. Hikayesi, en büyük liderlerin bile tarihin değişen rüzgarlarıyla cesaret ve güçlü bir ruhla yüzleşmesi gerektiğini gösteren bir üzüntü ve zafer karışımıdır."
     ],
     words: {
-      "palace": "ev",
-      "queen": "lider",
+      "home": "ev",
+      "leader": "lider",
       "powerful": "güçlü",
-      "throne": "taht (oturulan yer/sandalyeye dönüştürüldü)",
+      "throne": "taht",
       "advisor": "yardımcı",
       "betrayal": "kötü işler",
       "region": "alan",
       "intelligence": "keskin zeka",
-      "general": "lider",
       "courage": "cesaret",
       "partnership": "ekip",
       "independent": "özgür",
@@ -21000,17 +21156,19 @@ export const STORIES_PART1: RawStory[] = [
       "rumor": "haber",
       "influence": "etki",
       "republic": "devlet",
-      "violence": "savaş",
+      "violence": "çatışma",
       "kingdom": "toprak",
       "ally": "arkadaş",
-      "diplomat": "planlayıcı",
+      "palace": "ev",
+      "queen": "lider",
+      "general": "lider",
       "fleet": "gemi grubu",
       "tomb": "taş oda",
       "dignity": "onur",
       "province": "parça"
     }
   },
-              {
+                  {
     id: 'history_joan_of_arc',
     title: "Joan of Arc: The Maid of Orléans",
     author: 'Joan of Arc',
@@ -21080,7 +21238,7 @@ export const STORIES_PART1: RawStory[] = [
       "guilty": "suçlu"
     }
   },
-              {
+                  {
     id: 'history_christopher_columbus',
     title: "Christopher Columbus and the New World",
     author: 'Christopher Columbus',
@@ -21150,7 +21308,7 @@ export const STORIES_PART1: RawStory[] = [
       "exploration": "keşif"
     }
   },
-              {
+                  {
     id: 'history_leonardo_da_vinci',
     title: "Leonardo da Vinci: The Renaissance Man",
     author: 'Leonardo da Vinci',
@@ -21222,7 +21380,7 @@ export const STORIES_PART1: RawStory[] = [
       "logic": "mantık"
     }
   },
-              {
+                  {
     id: 'history_gutenberg_press',
     title: "The Gutenberg Press",
     author: 'Johannes Gutenberg',
@@ -21293,7 +21451,7 @@ export const STORIES_PART1: RawStory[] = [
       "legacy": "miras"
     }
   },
-              {
+                  {
     id: 'history_taj_mahal',
     title: "The Taj Mahal: A Monument of Love",
     author: 'Mughal Empire',
@@ -21362,7 +21520,7 @@ export const STORIES_PART1: RawStory[] = [
       "century": "yıl"
     }
   },
-              {
+                  {
     id: 'history_robin_hood',
     title: "The Legend of Robin Hood",
     author: 'English Folklore',
@@ -21430,7 +21588,7 @@ export const STORIES_PART1: RawStory[] = [
       "courage": "cesaret"
     }
   },
-              {
+                  {
     id: 'history_boston_tea_party',
     title: "The Boston Tea Party",
     author: 'American Revolution',
@@ -21497,7 +21655,7 @@ export const STORIES_PART1: RawStory[] = [
       "courage": "cesaret"
     }
   },
-              {
+                  {
     id: 'history_magna_carta',
     title: "The Magna Carta",
     author: 'King John',
@@ -21566,7 +21724,7 @@ export const STORIES_PART1: RawStory[] = [
       "democracy": "halk yönetimi"
     }
   },
-              {
+                  {
     id: 'history_wright_brothers',
     title: "The First Flight of the Wright Brothers",
     author: 'Wright Brothers',
@@ -21639,7 +21797,7 @@ export const STORIES_PART1: RawStory[] = [
       "courage": "cesaret"
     }
   },
-              {
+                  {
     id: 'history_galileo_galilei',
     title: "Galileo Galilei and the Stars",
     author: 'Galileo Galilei',
@@ -21707,7 +21865,7 @@ export const STORIES_PART1: RawStory[] = [
       "knowledge": "bilgi"
     }
   },
-              {
+                  {
     id: 'history_king_arthur',
     title: "King Arthur and the Round Table",
     author: 'Arthurian Legend',
@@ -21778,7 +21936,7 @@ export const STORIES_PART1: RawStory[] = [
       "mist": "sis"
     }
   },
-              {
+                  {
     id: 'history_silk_road',
     title: "The Story of the Silk Road",
     author: 'Ancient Trade',
@@ -21844,7 +22002,7 @@ export const STORIES_PART1: RawStory[] = [
       "network": "grup"
     }
   },
-  {
+      {
     id: 'horror_tomb_mystery',
     title: "The Tomb's Mystery",
     author: 'H. P. Lovecraft',
@@ -21931,9 +22089,8 @@ export const STORIES_PART1: RawStory[] = [
       "statue": "heykel",
       "spirit": "ruh"
     }
-  }
-,
-  {
+  },
+      {
     id: 'horror_black_veil',
     title: "The Minister's Black Veil",
     author: 'Nathaniel Hawthorne',
@@ -22017,9 +22174,8 @@ export const STORIES_PART1: RawStory[] = [
       "invisible": "görünmez",
       "graveyard": "mezarlık"
     }
-  }
-,
-  {
+  },
+      {
     id: 'horror_haunted_inn',
     title: "The Haunted Inn",
     author: 'Edward Bulwer-Lytton',
@@ -22110,9 +22266,8 @@ export const STORIES_PART1: RawStory[] = [
       "breakfast": "kahvaltı",
       "peace": "huzur"
     }
-  }
-,
-  {
+  },
+      {
     id: 'horror_strange_guest',
     title: "The Strange Guest",
     author: 'Sheridan Le Fanu',
@@ -22199,9 +22354,8 @@ export const STORIES_PART1: RawStory[] = [
       "truth": "gerçek",
       "cycle": "döngü"
     }
-  }
-,
-  {
+  },
+      {
     id: 'horror_midnight_visitor',
     title: "The Midnight Visitor",
     author: 'F. Marion Crawford',
@@ -22294,9 +22448,8 @@ export const STORIES_PART1: RawStory[] = [
       "frightening": "korkutucu",
       "porch": "veranda"
     }
-  }
-,
-  {
+  },
+      {
     id: 'horror_secret_door',
     title: "The Secret Door",
     author: 'Ann Radcliffe',
@@ -22387,9 +22540,8 @@ export const STORIES_PART1: RawStory[] = [
       "hidden": "saklı",
       "mystery": "gizem"
     }
-  }
-,
-  {
+  },
+      {
     id: 'horror_shadow_man',
     title: "The Shadow Man",
     author: 'E. T. A. Hoffmann',
@@ -22480,9 +22632,8 @@ export const STORIES_PART1: RawStory[] = [
       "nightmare": "kabus",
       "truth": "gerçek"
     }
-  }
-,
-  {
+  },
+      {
     id: 'horror_lost_in_woods',
     title: "Lost in the Woods",
     author: 'Algernon Blackwood',
@@ -22570,9 +22721,8 @@ export const STORIES_PART1: RawStory[] = [
       "bridge": "köprü",
       "free": "özgür"
     }
-  }
-,
-  {
+  },
+      {
     id: 'horror_cold_breeze',
     title: "The Cold Breeze",
     author: 'Wilkie Collins',
@@ -22588,7 +22738,7 @@ export const STORIES_PART1: RawStory[] = [
       "I took a deep breath and pushed the heavy wooden door open with my trembling hand. It made a loud, sharp sound that echoed through the dark hallway like a scream. I entered the room and held my lamp high above my head to see what was hidden inside. The room was very large and filled with shadows that danced on the walls. There were broken chairs and a large wooden desk in the middle of the space. Everything was covered in thick grey dust, showing that nobody had been here for many long years. I felt the same cold breeze again, but this time it was much stronger than before. It felt like icy fingers touching my skin, and I felt a sudden urge to run away. However, my feet would not move because I was terrified of the dark corners.",
       "My eyes searched every corner of the room, looking for anything that might explain the strange feeling. I noticed a small table in the corner with a dusty letter lying on top of it. I walked toward the table and felt my heart beating fast inside my chest. The floorboards under my feet made soft, sad sounds as if they were crying. I looked down at the letter and saw that it was written in old, faded ink that was hard to read. I reached out to touch the paper, but a sudden wind blew through the room and knocked my lamp over. The glass hit the floor and broke into many small pieces. My light went out completely, leaving me in total darkness while the wind whistled a sad and lonely song.",
       "I stood in the darkness and felt very small and weak. I could hear someone breathing quietly near me, even though I could not see a single person in the room. The air felt colder than ice, and I knew that something was watching me from the shadows. I reached into my pocket to find a match to light my lamp again, but my fingers were shaking too much to hold anything. I felt a invisible hand brush against my shoulder, and I let out a soft cry of pure terror. The smell of old flowers and dust filled my nose as the mysterious presence moved closer to me. I closed my eyes tightly, hoping that this was only a bad dream, but the cold touch against my neck was far too real to be anything but a nightmare.",
-      "I stood very still in the pitch-black darkness, my heart thumping against my ribs like a trapped bird. The breathing sound was getting louder, closer, and more human with every passing second. I tried to scream, but my throat felt tight and dry as if someone were holding it with cold, invisible fingers. The air in the room was heavy with the smell of wet earth and ancient dust. I could feel the presence moving around me, pacing back and forth with soft, rhythmic steps on the rotten wooden floor. Every time the unknown visitor moved, a sharp, icy draft swept across my face. I realized then that I was not alone in this house, and the thing that shared this space with me was waiting for me to lose my mind from fear.",
+      "I stood in the pitch-black darkness, my heart thumping against my ribs like a trapped bird. The breathing sound was getting louder, closer, and more human with every passing second. I tried to scream, but my throat felt tight and dry as if someone were holding it with cold, invisible fingers. The air in the room was heavy with the smell of wet earth and ancient dust. I could feel the presence moving around me, pacing back and forth with soft, rhythmic steps on the rotten wooden floor. Every time the unknown visitor moved, a sharp, icy draft swept across my face. I realized then that I was not alone in this house, and the thing that shared this space with me was waiting for me to lose my mind from fear.",
       "Suddenly, the breathing stopped completely, and a deathly silence filled every corner of the vast, hollow room. I waited for something to happen, holding my breath until my lungs burned. Then, a low, rasping voice whispered a name that I did not recognize into my ear. The sound was not loud, but it carried a weight of sorrow that made my skin crawl and my muscles stiffen. It was the voice of someone who had suffered deeply for a long time. I reached out blindly into the darkness, hoping to touch a wall or a piece of furniture to find my way toward the door. Instead, my hand met something that felt like freezing air combined with the texture of cold, rough stone. It was not a physical wall, but something that sent a shock of pure electricity through my whole body.",
       "The pressure in the room seemed to increase as if the walls were slowly closing in on me. I knew that I had to act fast or I would remain in this room forever. I dropped to my knees, feeling the rough dust against my skin, and crawled forward in the direction I remembered the exit being. My hands brushed against something hard on the floor, and I quickly realized it was the broken glass of my lamp. I picked up a larger piece and held it tightly, using it as a weapon if necessary. The cold breeze intensified, blowing my hair back and making my clothes rattle against my skin. I could feel the mysterious force pulling me backward, away from safety. I pushed forward with all my strength, my focus entirely on the promise of the pale light waiting in the corridor.",
       "I crawled across the floor while the air grew colder and heavier with every movement. My heart beat fast as I tried to ignore the strange, icy touch that followed my hands. The dark room felt like a cage, and the walls seemed to reach out to grab my clothes. I stopped for a moment to catch my breath, listening for any sign of the unseen visitor. Silence returned, but it was a heavy, waiting silence that felt more dangerous than the whispers. I knew the presence was watching me, hiding in the shadows just behind my back. I clutched the sharp piece of glass in my palm until it cut into my skin. The pain helped me stay awake and focused, preventing me from falling into a deep, dark faint from the sheer terror of the situation.",
@@ -22607,7 +22757,7 @@ export const STORIES_PART1: RawStory[] = [
       "Ön kapıya ulaştığımda durdum. Ev yakından daha da korkunç görünüyordu. Bahçe ölü bitkiler ve keskin kayalarla doluydu. Kirli bir pencereden baktım ve karanlık bir oda gördüm. Ateş yoktu ama köşeden gelen tuhaf ve soğuk bir ışık vardı. Ürpermeme neden oldu. Göğsümde ani bir acı hissettim çünkü hava buz gibi soğuktu. Kapıyı açmaya çalıştım ama sıkıca kilitliydi. Aniden rüzgar tamamen durdu. Her şey sessizdi ve durgunluk rüzgardan daha kötüydü. Bir şeylerin olmasını bekleyerek orada durdum. Gecenin görünmez nefesinin üzerime baskı yaptığını hissedebiliyordum ve bu yerde uzun süre kalamayacağımı biliyordum.",
       "Ön kapının açılması imkansız olduğu için eve girmenin başka bir yolunu aramaya karar verdim. Donmuş çamur ağır botlarımın altında yüksek sesle çatlarken binanın etrafında yavaşça yürüdüm. Arka bahçe, uzun ve kuru otlar ile elbiselerime ince, aç parmaklar gibi takılan bükülmüş çalılarla dolu vahşi bir yerdi. Çok gergindim ama gizli bir giriş aramaktan kendimi alıkoyamıyordum. Ben yanlarından geçerken gölgeler hareket ediyor gibiydi ve sessizlik, rüzgarın olduğundan daha da yüksek bir hal almıştı. Kilitli olmayan küçük bir ahşap pencere buldum ve büyük bir çabayla onu açtım. Ahşap eski ve zayıftı, bu yüzden kolayca kırıldı ve toz kokusunun çok ağır olduğu karanlık mutfağa girmeme izin verdi.",
       "İçeri girdiğimde tamamen hareketsiz durdum ve herhangi bir yaşam belirtisi olup olmadığını dinledim ama hiçbir ses yoktu. Mutfak soğuktu ve hava, sanki birisi odadan daha yeni çıkmış gibi yoğun ve ağırdı. Işık vermek için küçük lambamı kullandım ama alev, sanki bir şey onu söndürmeye çalışıyormuş gibi tehlikeli bir şekilde titriyordu. Döşeme tahtaları çürümüştü ve koridora doğru attığım her bir adımda yüksek gıcırtı sesleri çıkarıyordu. Boynuma çarpan ani ve keskin soğuk bir esintiyi hissettim, bu durum korkudan tüylerimin diken diken olmasına neden oldu. Bu evde yalnız olmadığımı biliyordum ama yakındaki bir varlıktan nasıl bu kadar emin olduğumu açıklayamıyordum. Öndeki karanlık derin ve sonsuz görünüyordu, birçok gizemi saklıyordu.",
-      "Evin merkezine giden uzun koridoru aydınlatmak için lambayı yukarı kaldırırken ellerim titriyordu. Duvarlarda beni yargılayan ve dostça olmayan gözlerle izliyor gibi görünen portreler gördüm. Alacakaranlıkta hayaletler gibi görünen kalın, beyaz toz örtüleriyle kaplı eski eşyalarla dolu orta odaya ulaştım. Koridorun sonunda hafifçe aralık olan bir kapıyı fark ettiğimde durdum. Çok yavaşça ileri doğru hareket ettim, sıcaklığın nefesimin kalın sis bulutlarına dönüşeceği kadar düştüğünü hissettim. Tuhaf bir gücün beni o odaya doğru çektiğini hissettim ve bu evde yaşayan her neyse, o ağır ahşap kapının ardında beni beklediğini biliyordum. Yorgun kalbimde büyüyen derin bir korku hissi vardı.",
+      "Evin merkezine giden uzun koridoru aydınlatmak için lambayı yukarı kaldırırken ellerim titriyordu. Duvarlarda beni yargılayan ve dostça olmayan gözlerle izliyor gibi görünen portreler gördüm. Alacakaranlıkta hayaletler gibi görünen kalın, beyaz toz örtüleriyle kaplı eski eşyalarla dolu orta odaya ulaştım. Koridorun sonunda hafifçe aralık olan bir kapıyı fark ettiğimde durdum. Çok yavaşça ileri doğru hareket ettim, sıcaklığın nefesimin kalın sis bulutlarına dönüşeceği kadar düştüğünü hissettim. Tuhaf bir gücün beni o odaya doğru çektiğini hissettim ve bu evde yaşayan her neyse, o ağır ahşap kapının ardında beni beklediğini biliyordum. Yorgun kalbimde büyüyen derin bir dehşet hissi vardı.",
       "Derin bir nefes aldım ve titreyen elimle ağır ahşap kapıyı iterek açtım. Kapı, karanlık koridorda bir çığlık gibi yankılanan yüksek ve keskin bir ses çıkardı. Odaya girdim ve içinde neyin saklı olduğunu görmek için lambamı başımın üzerine kaldırdım. Oda çok büyüktü ve duvarlarda dans eden gölgelerle doluydu. Mekanın ortasında kırık sandalyeler ve büyük bir ahşap masa vardı. Her yer kalın gri bir tozla kaplıydı, bu da uzun yıllardır kimsenin buraya uğramadığını gösteriyordu. Aynı soğuk esintiyi tekrar hissettim, ancak bu sefer esinti öncekinden çok daha güçlüydü. Sanki buz gibi parmaklar cildime dokunuyordu ve aniden kaçma isteği duydum. Ancak, karanlık köşelerden öylesine korkuyordum ki ayaklarım hareket etmeyi reddediyordu.",
       "Gözlerim, bu tuhaf hissi açıklayabilecek herhangi bir şey bulmak için odanın her köşesini taradı. Köşede üzerinde tozlu bir mektubun durduğu küçük bir masa fark ettim. Masaya doğru yürüdüm ve kalbimin göğsümün içinde hızla çarptığını hissettim. Ayaklarımın altındaki zemin tahtaları, sanki ağlıyormuş gibi yumuşak ve hüzünlü sesler çıkarıyordu. Mektuba baktım ve üzerinde okunması zor, solmuş eski bir mürekkeple yazıldığını gördüm. Kağıda dokunmak için elimi uzattım, ancak odanın içinden aniden esen bir rüzgar lambamı devirdi. Cam yere çarptı ve birçok küçük parçaya ayrıldı. Işığım tamamen söndü, rüzgar hüzünlü ve yalnız bir şarkı ıslıkla çalarken beni tam bir karanlığın içinde bıraktı.",
       "Karanlıkta öylece durdum ve kendimi çok küçük ve güçsüz hissettim. Odada tek bir insan bile göremiyor olmama rağmen, yakınımda birinin sessizce nefes aldığını duyabiliyordum. Hava buzdan daha soğuktu ve gölgelerin içinden bir şeyin beni izlediğini biliyordum. Lambamı tekrar yakmak için cebimdeki kibritleri aradım ama parmaklarım hiçbir şeyi tutamayacak kadar titriyordu. Görünmez bir elin omzuma değdiğini hissettim ve saf bir dehşetle hafifçe haykırdım. Gizemli varlık bana yaklaştıkça, burnuma eski çiçek ve toz kokusu doldu. Bunun sadece kötü bir rüya olduğunu umarak gözlerimi sımsıkı kapattım, ancak ensemdeki o soğuk dokunuş, bir kabustan başka bir şey olamayacak kadar gerçekti.",
@@ -22629,12 +22779,12 @@ export const STORIES_PART1: RawStory[] = [
       "narrow": "dar",
       "shadow": "gölge",
       "whistle": "ıslık çalmak",
-      "shiver": "titremek",
+      "shiver": "ürpermek",
       "invisible": "görünmez",
       "shaking": "titreyen",
       "entrance": "giriş",
       "rotten": "çürük",
-      "creaking": "gıcırdayan",
+      "creaking": "gıcırtı",
       "dread": "dehşet",
       "shadows": "gölgeler",
       "trembling": "titreyen",
@@ -22645,17 +22795,17 @@ export const STORIES_PART1: RawStory[] = [
       "darkness": "karanlık",
       "presence": "varlık",
       "rhythmic": "ritmik",
-      "silt": "sessizlik",
+      "silence": "sessizlik",
       "sorrow": "keder",
       "corridor": "koridor",
       "crawl": "emeklemek",
       "hinge": "menteşe",
-      "stiff": "sert",
+      "stiff": "sertleşmek",
       "scent": "koku",
       "rhythmically": "ritmik bir şekilde",
       "beacon": "işaret ışığı",
       "oppressive": "bunaltıcı",
-      "manipulate": "yönlendirmek, manipüle etmek",
+      "manipulate": "manipüle etmek",
       "determination": "kararlılık",
       "contrast": "tezat",
       "haunt": "musallat olmak",
@@ -22663,9 +22813,8 @@ export const STORIES_PART1: RawStory[] = [
       "supernatural": "doğaüstü",
       "vessel": "kap"
     }
-  }
-,
-  {
+  },
+      {
     id: 'horror_silent_doll',
     title: "The Silent Doll",
     author: 'M. R. James',
@@ -22755,9 +22904,8 @@ export const STORIES_PART1: RawStory[] = [
       "ruin": "yıkıntı",
       "trapped": "hapsolmuş"
     }
-  }
-,
-  {
+  },
+      {
     id: 'horror_dusty_attic',
     title: "The Dusty Attic",
     author: 'Arthur Conan Doyle',
@@ -22848,9 +22996,8 @@ export const STORIES_PART1: RawStory[] = [
       "breeze": "hafif rüzgar",
       "balance": "denge"
     }
-  }
-,
-  {
+  },
+      {
     id: 'horror_whispering_woods',
     title: "The Whispering Woods",
     author: 'Algernon Blackwood',
@@ -22936,9 +23083,8 @@ export const STORIES_PART1: RawStory[] = [
       "surface": "yüzey",
       "surrender": "teslim olmak"
     }
-  }
-,
-  {
+  },
+      {
     id: 'horror_phantom_train',
     title: "The Phantom Train",
     author: 'Charles Dickens',
@@ -23029,9 +23175,8 @@ export const STORIES_PART1: RawStory[] = [
       "spirit": "ruh",
       "memory": "anı/hatıra"
     }
-  }
-,
-  {
+  },
+      {
     id: 'horror_empty_mirror',
     title: "The Empty Mirror",
     author: 'Bram Stoker',
@@ -23122,9 +23267,8 @@ export const STORIES_PART1: RawStory[] = [
       "harmless": "zararsız",
       "survived": "hayatta kalmak"
     }
-  }
-,
-  {
+  },
+      {
     id: 'horror_creeping_shadow',
     title: "The Creeping Shadow",
     author: 'H. P. Lovecraft',
@@ -23216,9 +23360,8 @@ export const STORIES_PART1: RawStory[] = [
       "fragile": "kırılgan",
       "dwell": "yaşamak/ikamet etmek"
     }
-  }
-,
-  {
+  },
+      {
     id: 'horror_ghostly_bell',
     title: "The Ghostly Bell",
     author: 'Wilkie Collins',
@@ -23309,5 +23452,4 @@ export const STORIES_PART1: RawStory[] = [
       "honor": "onur",
       "symbol": "sembol"
     }
-  }
-];
+  }];
