@@ -1,7 +1,12 @@
 import React, { useMemo, useState, useEffect } from 'react';
 import { Sparkles } from 'lucide-react';
+import { LanguageCode, t } from '../i18n';
 
-export default function SplashScreen() {
+interface SplashScreenProps {
+  nativeLanguage: LanguageCode;
+}
+
+export default function SplashScreen({ nativeLanguage }: SplashScreenProps) {
   const [mouseOffset, setMouseOffset] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -118,7 +123,7 @@ export default function SplashScreen() {
             İngilizce Öyküm
           </h1>
           <p className="text-xs font-semibold text-gray-300 tracking-widest uppercase">
-            Maceralarla Dolu Kitaplar Seni Bekliyor
+            {t('splash_subtitle', nativeLanguage)}
           </p>
         </div>
       </div>
@@ -129,7 +134,7 @@ export default function SplashScreen() {
         <div className="flex items-center space-x-2 text-[#ffb866]">
           <Sparkles className="w-4.5 h-4.5 animate-spin-slow fill-[#ffb866]" />
           <p className="text-xs font-bold tracking-widest italic">
-            Sihirli hikayeler yükleniyor...
+            {t('splash_tagline', nativeLanguage)}
           </p>
         </div>
         {/* Delicate Progress Bar */}

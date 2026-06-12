@@ -1,0 +1,1731 @@
+{
+  "red_riding_hood": {
+    "title": {
+      "en": "The Girl in the Red Hood and the Friendly Wolf",
+      "tr": "Kırmızı Başlıklı Kız ve Sevimli Kurt",
+      "es": "La Caperucita Roja y el Lobo Amigable",
+      "de": "Das Mädchen mit dem roten Käppchen und der freundliche Wolf"
+    },
+    "paragraphs": [
+      {
+        "tr": "Bir varmış, bir yokmuş, devasa yeşil bir ormanın yakınında küçük, mutlu bir köy varmış. Bu köyde insanlar çok dost canlısıymış ama ormandan da çok korkarlarmış.",
+        "es": "Había una vez un pueblo pequeño y feliz cerca de un bosque verde gigante. En este pueblo, la gente es muy amable, pero también le tiene mucho miedo al bosque.",
+        "de": "Es war einmal ein kleines, glückliches Dorf in der Nähe eines riesigen grünen Waldes. In diesem Dorf sind die Menschen sehr freundlich, aber sie haben auch große Angst vor dem Wald."
+      },
+      {
+        "tr": "Köylüler orman hakkında birçok korkunç hikaye anlatırlar. \"Derin ormanın içine gitmeyin\" derler. \"Orada büyük, kötü bir kurt yaşıyor. O devasa, sarı gözleri var ve ağaçların altında yürüyen herkesi yiyor.\"",
+        "es": "Los aldeanos cuentan muchas historias de miedo sobre el bosque. \"No entres en el bosque profundo\", dicen. \"Allí vive un lobo grande y malo. Es gigante, tiene ojos amarillos y se come a cualquiera que camine bajo los árboles\".",
+        "de": "Die Dorfbewohner erzählen viele gruselige Geschichten über den Wald. \"Geh nicht in den tiefen Wald\", sagen sie. \"Ein großer, böser Wolf lebt dort. Er ist riesig, er hat gelbe Augen, und er frisst jeden, der unter den Bäumen spaziert.\""
+      }
+    ],
+    "words": {
+      "village": {
+        "tr": "Köy",
+        "es": "Pueblo",
+        "de": "Dorf"
+      },
+      "forest": {
+        "tr": "Orman",
+        "es": "Bosque",
+        "de": "Wald"
+      },
+      "wolf": {
+        "tr": "Kurt",
+        "es": "Lobo",
+        "de": "Wolf"
+      }
+    }
+  },
+  "aladdin": {
+    "title": {
+      "en": "Aladdin and the Lamp",
+      "tr": "Aladdin ve Lamba",
+      "es": "Aladino y la lámpara",
+      "de": "Aladin und die Wunderlampe",
+      "fr": "Aladdin et la lampe merveilleuse",
+      "it": "Aladino e la lampada"
+    },
+    "paragraphs": [
+      {
+        "tr": "Uzun zaman önce, Çin'de uzak bir şehirde Aladdin adında bir çocuk yaşardı. Pek iyi bir çocuk değildi. Aladdin, fakir annesi ve terzi olan babasıyla yaşardı. Babası her gün elbise dikmek için çok çalışırdı ama Aladdin hiç yardım etmezdi.",
+        "es": "Hace mucho tiempo, en una ciudad muy lejana de China, vivía un niño llamado Aladino. No era un niño muy bueno. Aladino vivía con su pobre madre y su padre, que era sastre. Su padre trabajaba duro todos los días haciendo ropa, pero Aladino no ayudaba en nada.",
+        "de": "Vor langer Zeit lebte in einer weit entfernten Stadt in China ein Junge namens Aladin. Er war kein sehr braver Junge. Aladin lebte mit seiner armen Mutter und seinem Vater, der Schneider war. Sein Vater arbeitete jeden Tag hart, um Kleidung herzustellen, aber Aladin half überhaupt nicht.",
+        "fr": "Il y a fort longtemps, dans une ville lointaine de Chine, vivait un garçon nommé Aladdin. Ce n'était pas un enfant très sage. Aladdin vivait avec sa mère pauvre et son père, qui était tailleur. Son père travaillait dur chaque jour pour fabriquer des vêtements, mais Aladdin ne l'aidait jamais.",
+        "it": "Molto tempo fa, in una città lontana in Cina, viveva un ragazzo di nome Aladino. Non era un ragazzo molto bravo. Aladino viveva con la sua povera madre e suo padre, che faceva il sarto. Suo padre lavorava duramente ogni giorno per confezionare vestiti, ma Aladino non aiutava affatto."
+      },
+      {
+        "tr": "Çok tembeldi. Babasının mesleğini öğrenmek ya da evde yardım etmek yerine, Aladdin tüm zamanını sokakta diğer çocuklarla oyun oynayarak geçirirdi.",
+        "es": "Era muy perezoso. En lugar de aprender el oficio de su padre o ayudar en casa, Aladino pasaba todo el tiempo jugando en las calles con otros niños.",
+        "de": "Er war sehr faul. Anstatt den Beruf seines Vaters zu erlernen oder im Haushalt zu helfen, verbrachte Aladin seine ganze Zeit damit, mit anderen Jungen auf der Straße Spiele zu spielen.",
+        "fr": "Il était très paresseux. Au lieu d'apprendre le métier de son père ou d'aider à la maison, Aladdin passait tout son temps à jouer dans les rues avec d'autres garçons.",
+        "it": "Era molto pigro. Invece di imparare il mestiere di suo padre o aiutare in casa, Aladino passava tutto il suo tempo a giocare per strada con altri ragazzi."
+      },
+      {
+        "tr": "Genellikle geç saatlere kadar dışarıda kalır, annesi akşam yemeği için çağırdığında ancak eve gelirdi. Aladdin çalışmak ya da ders çalışmak istemediği için ailesi çok üzgündü. Bir gün değişip sorumlu bir genç adam olmasını umuyorlardı ama o tembelliğe ve şehirde oynamaya devam etti.",
+        "es": "A menudo se quedaba fuera hasta tarde y solo volvía a casa cuando su madre lo llamaba para cenar. Sus padres estaban muy tristes porque Aladino no quería trabajar ni estudiar. Esperaban que algún día cambiara y se convirtiera en un joven responsable, pero él seguía holgazaneando y jugando por la ciudad.",
+        "de": "Oft blieb er bis spät in die Nacht draußen und kam erst nach Hause, wenn seine Mutter ihn zum Abendessen rief. Seine Eltern waren sehr traurig, weil Aladin weder arbeiten noch lernen wollte. Sie hofften, dass er sich eines Tages ändern und ein verantwortungsbewusster junger Mann werden würde, aber er blieb weiterhin untätig und trieb sich in der Stadt herum.",
+        "fr": "Il restait souvent dehors tard, ne rentrant à la maison que lorsque sa mère l'appelait pour le dîner. Ses parents étaient très tristes car Aladdin ne voulait ni travailler ni étudier. Ils espéraient qu'il changerait un jour et deviendrait un jeune homme responsable, mais il continuait à être oisif et à flâner dans la ville.",
+        "it": "Spesso restava fuori fino a tardi, tornando a casa solo quando sua madre lo chiamava per cena. I suoi genitori erano molto tristi perché Aladino non voleva lavorare né studiare. Speravano che un giorno sarebbe cambiato e diventato un giovane responsabile, ma lui continuava a essere ozioso e a giocare in giro per la città."
+      },
+      {
+        "tr": "Aladdin'in babası oğlunun tembelliği yüzünden giderek daha da üzüldü. Aladdin'in geleceği ve ona ne olacağı hakkında çok endişelendi. Bir gün, terzi çok hastalandı ve ne yazık ki öldü. Aladdin'in annesi aşırı derecede üzüldü ve kendini çok yalnız hissetti. Artık kendisi ve oğlu için para kazanmak için daha da çok çalışmak zorundaydı.",
+        "es": "El padre de Aladino se ponía cada vez más triste por la pereza de su hijo. Se preocupaba mucho por el futuro de Aladino y por lo que sería de él. Un día, el sastre se enfermó gravemente y, lamentablemente, murió. La madre de Aladino estaba muy afligida y se sentía muy sola. Ahora tenía que trabajar aún más duro para ganar dinero para ella y para su hijo.",
+        "de": "Aladins Vater wurde wegen der Faulheit seines Sohnes immer trauriger. Er machte sich große Sorgen um Aladins Zukunft und darum, was aus ihm werden sollte. Eines Tages wurde der Schneider sehr krank und starb traurigerweise. Aladins Mutter war zutiefst erschüttert und fühlte sich sehr allein. Nun musste sie noch härter arbeiten, um Geld für sich und ihren Sohn zu verdienen.",
+        "fr": "Le père d'Aladdin devenait de plus en plus triste à cause de la paresse de son fils. Il s'inquiétait beaucoup pour l'avenir d'Aladdin et pour ce qui lui arriverait. Un jour, le tailleur tomba gravement malade et, malheureusement, il mourut. La mère d'Aladdin était extrêmement bouleversée et se sentait très seule. Désormais, elle devait travailler encore plus dur pour gagner de l'argent pour elle et son fils.",
+        "it": "Il padre di Aladino diventava sempre più triste a causa della pigrizia del figlio. Si preoccupava molto del futuro di Aladino e di cosa gli sarebbe successo. Un giorno, il sarto si ammalò gravemente e, tristemente, morì. La madre di Aladino era estremamente sconvolta e si sentiva molto sola. Ora doveva lavorare ancora più duramente per guadagnare denaro per sé e per suo figlio."
+      },
+      {
+        "tr": "Ancak Aladdin, yollarını değiştirmedi. Eski alışkanlıklarına devam etti. Hala sokaklarda oynuyor, asla iş bulmaya ya da annesine ev işlerinde yardım etmeye çalışmıyordu. Annesi sık sık ağlar, Aladdin'in babasının ölümünden sonra daha sorumlu olmasını dilerdi. Onu seviyordu ama tüm bu işlerle çok yorgun ve yük altında hissediyordu.",
+        "es": "Sin embargo, Aladino no cambió su actitud. Continuó con sus viejos hábitos. Seguía jugando en las calles, sin intentar nunca buscar trabajo ni ayudar a su madre con las tareas del hogar. Su madre lloraba a menudo, deseando que Aladino se volviera más responsable tras la muerte de su padre. Lo amaba, pero también se sentía muy cansada y abrumada por todo el trabajo.",
+        "de": "Aladin jedoch änderte sein Verhalten nicht. Er behielt seine alten Gewohnheiten bei. Er spielte immer noch auf den Straßen und versuchte nie, Arbeit zu finden oder seiner Mutter bei den Hausarbeiten zu helfen. Seine Mutter weinte oft und wünschte sich, dass Aladin nach dem Tod seines Vaters verantwortungsbewusster werden würde. Sie liebte ihn, aber sie fühlte sich auch sehr müde und von der ganzen Arbeit belastet.",
+        "fr": "Aladdin, cependant, ne changea pas ses habitudes. Il continua comme avant. Il jouait toujours dans les rues, n'essayant jamais de trouver du travail ou d'aider sa mère dans ses tâches. Sa mère pleurait souvent, souhaitant qu'Aladdin devienne plus responsable après la mort de son père. Elle l'aimait, mais elle se sentait aussi très fatiguée et accablée par tout ce travail.",
+        "it": "Aladino, tuttavia, non cambiò le sue abitudini. Continuò a fare come sempre. Giocava ancora per strada, senza mai cercare lavoro o aiutare sua madre nelle faccende domestiche. Sua madre piangeva spesso, desiderando che Aladino diventasse più responsabile dopo la morte del padre. Gli voleva bene, ma si sentiva anche molto stanca e oppressa da tutto quel lavoro."
+      },
+      {
+        "tr": "Bir gün şehre gizemli bir yabancı geldi. Afrika'dan uzak bir diyardan gelen güçlü bir sihirbazdı. Sihirbaz şehirde dolaşırken insanları çok dikkatli izliyordu. Aladdin'i arkadaşlarıyla sokakta oynarken gördü. Sihirbaz Aladdin'i uzun süre izledi ve çocukta özel bir şeyler gördü, kullanabileceği bir şeyler. Aladdin'in gizli ve tehlikeli planı için doğru kişi olduğunu biliyordu.",
+        "es": "Un día, un misterioso desconocido llegó a la ciudad. Era un poderoso mago de una tierra lejana de África. El mago caminaba por la ciudad observando a la gente con mucha atención. Vio a Aladino jugando en la calle con sus amigos. El mago observó a Aladino durante mucho tiempo y vio algo especial en el muchacho, algo que podría aprovechar. Supo que Aladino era la persona adecuada para su plan secreto y peligroso.",
+        "de": "Eines Tages kam ein geheimnisvoller Fremder in die Stadt. Er war ein mächtiger Zauberer aus einem weit entfernten Land in Afrika. Der Zauberer ging durch die Stadt und beobachtete die Menschen sehr genau. Er sah Aladin mit seinen Freunden auf der Straße spielen. Der Zauberer beobachtete Aladin lange Zeit und sah etwas Besonderes in dem Jungen, etwas, das er gebrauchen konnte. Er wusste, dass Aladin die richtige Person für seinen geheimen und gefährlichen Plan war.",
+        "fr": "Un jour, un étranger mystérieux arriva en ville. C'était un puissant magicien venu d'un pays lointain en Afrique. Le magicien parcourut la ville, observant les gens avec beaucoup d'attention. Il vit Aladdin jouer dans la rue avec ses amis. Le magicien observa Aladdin pendant un long moment et vit quelque chose de spécial chez le garçon, quelque chose qu'il pourrait utiliser. Il savait qu'Aladdin était la personne idéale pour son plan secret et dangereux.",
+        "it": "Un giorno, uno straniero misterioso arrivò in città. Era un potente mago proveniente da una terra lontana in Africa. Il mago camminò per la città, osservando le persone con molta attenzione. Vide Aladino giocare per strada con i suoi amici. Il mago osservò Aladino per molto tempo e vide qualcosa di speciale nel ragazzo, qualcosa che avrebbe potuto usare. Sapeva che Aladino era la persona giusta per il suo piano segreto e pericoloso."
+      },
+      {
+        "tr": "Sihirbaz, Aladdin'in uzun zamandır kayıp amcası gibi yapmaya karar verdi. Aladdin'e nazik bir gülümsemeyle yaklaştı ve \"Merhaba oğlum. Sen benim sevgili kardeşim, terzi Mustafa'nın oğlu değil misin?\" dedi. Aladdin çok şaşırdı çünkü bu adamı daha önce hiç görmemişti ve bir amcası olduğunu bilmiyordu.",
+        "es": "El mago decidió fingir que era el tío de Aladino, a quien no veía desde hacía mucho tiempo. Se acercó a Aladino con una sonrisa amable y le dijo: \"Hola, muchacho. ¿No eres tú el hijo de mi querido hermano, el sastre Mustafá?\". Aladino se sorprendió mucho porque nunca antes había visto a ese hombre y no sabía que tenía un tío.",
+        "de": "Der Zauberer beschloss, sich als Aladins lange verschollener Onkel auszugeben. Er ging mit einem freundlichen Lächeln auf Aladin zu und sagte: \"Hallo, mein Junge. Bist du nicht der Sohn meines lieben Bruders Mustafa, des Schneiders?\" Aladin war sehr überrascht, weil er diesen Mann noch nie zuvor gesehen hatte und nicht wusste, dass er einen Onkel hatte.",
+        "fr": "Le magicien décida de se faire passer pour l'oncle perdu d'Aladdin. Il s'approcha d'Aladdin avec un sourire bienveillant et dit : « Bonjour, mon garçon. N'es-tu pas le fils de mon cher frère, Mustafa le tailleur ? » Aladdin fut très surpris car il n'avait jamais vu cet homme auparavant et ne savait pas qu'il avait un oncle.",
+        "it": "Il mago decise di fingere di essere lo zio perduto di Aladino. Si avvicinò ad Aladino con un sorriso gentile e disse: \"Ciao, ragazzo mio. Non sei forse il figlio del mio caro fratello, Mustafa il sarto?\" Aladino rimase molto sorpreso perché non aveva mai visto quell'uomo prima e non sapeva di avere uno zio."
+      },
+      {
+        "tr": "Alaaddin çok şaşırmıştı. Geniş açılmış gözlerle yabancıya baktı. \"Amcam mı?\" diye sordu, kafası karışmıştı. \"Benim amcam yok ki.\" Sihirbaz nazikçe gülümsedi ve dedi ki, \"Evet, evlat. Ben babanın kardeşiyim. Uzun yıllar seyahat ettim ve şimdi geri döndüm.",
+        "es": "Aladino estaba muy sorprendido. Miró al desconocido con los ojos muy abiertos. \"¿Mi tío?\", preguntó confundido. \"No conozco a ningún tío\". El mago sonrió amablemente y dijo: \"Sí, muchacho. Soy el hermano de tu padre. Viajé durante muchos años y acabo de regresar.",
+        "de": "Aladin war sehr überrascht. Er sah den Fremden mit großen Augen an. \"Mein Onkel?\", fragte er verwirrt. \"Ich kenne keinen Onkel.\" Der Zauberer lächelte freundlich und sagte: \"Ja, mein Junge. Ich bin der Bruder deines Vaters. Ich bin viele Jahre gereist und gerade erst zurückgekehrt.",
+        "fr": "Aladdin était très étonné. Il regarda l'étranger avec de grands yeux. « Mon oncle ? » demanda-t-il, confus. « Je ne connais aucun oncle. » Le magicien sourit gentiment et dit : « Oui, mon garçon. Je suis le frère de ton père. J'ai voyagé pendant de nombreuses années et je viens tout juste de revenir. »",
+        "it": "Aladino era molto sorpreso. Guardò lo straniero con gli occhi sgranati. \"Mio zio?\" chiese, confuso. \"Non conosco nessuno zio.\" Il mago sorrise gentilmente e disse: \"Sì, ragazzo mio. Sono il fratello di tuo padre. Ho viaggiato per molti anni e sono appena tornato.\""
+      },
+      {
+        "tr": "Sevgili kardeşim Mustafa'yı sordum ve insanlar bana Alaaddin adında bir oğlu olduğunu söylediler. Bunu duyduğuma çok sevindim! Lütfen beni annene götür. O, kardeşim için çok üzgün olmalı.",
+        "es": "Pregunté por mi querido hermano Mustafá, y la gente me dijo que tenía un hijo llamado Aladino. ¡Me alegré mucho de oír eso! Por favor, llévame con tu madre. Debe de estar muy triste por mi hermano.",
+        "de": "Ich habe nach meinem lieben Bruder Mustafa gefragt, und die Leute erzählten mir, dass er einen Sohn namens Aladin hat. Ich war so glücklich, das zu hören! Bitte bring mich zu deiner Mutter. Sie muss sehr traurig über meinen Bruder sein.",
+        "fr": "« J'ai posé des questions sur mon cher frère Mustafa, et les gens m'ont dit qu'il avait un fils nommé Aladdin. J'étais si heureux de l'apprendre ! S'il te plaît, emmène-moi voir ta mère. Elle doit être très triste à cause de mon frère. »",
+        "it": "Ho chiesto notizie del mio caro fratello Mustafa e la gente mi ha detto che aveva un figlio di nome Aladino. Sono stato così felice di sentirlo! Per favore, portami da tua madre. Deve essere molto triste per mio fratello.\""
+      },
+      {
+        "tr": "Onu görmek ve ailene yardım etmek istiyorum.\" Tembelliğine rağmen saf ve nazik bir çocuk olan Alaaddin, sihirbaza inandı. Bir amcası olduğu için mutlu oldu ve onu hemen eve götürmeyi kabul etti. Haberi annesine söyleyeceği için heyecanlıydı.",
+        "es": "Quiero verla y ayudar a tu familia\". Aladino, que era un chico sencillo y amable a pesar de su pereza, le creyó al mago. Se sintió feliz de tener un tío y aceptó rápidamente llevarlo a casa. Estaba emocionado por contarle la noticia a su madre.",
+        "de": "Ich möchte sie sehen und eurer Familie helfen.\" Aladin, der trotz seiner Faulheit ein einfacher und gutherziger Junge war, glaubte dem Zauberer. Er freute sich, einen Onkel zu haben, und willigte schnell ein, ihn mit nach Hause zu nehmen. Er war aufgeregt, seiner Mutter die Neuigkeit zu erzählen.",
+        "fr": "« Je veux la voir et aider votre famille. » Aladdin, qui était un garçon simple et gentil malgré sa paresse, crut le magicien. Il était heureux d'avoir un oncle et accepta rapidement de l'emmener chez lui. Il était impatient d'annoncer la nouvelle à sa mère.",
+        "it": "Voglio vederla e aiutare la vostra famiglia.\" Aladino, che era un ragazzo semplice e gentile nonostante la sua pigrizia, credette al mago. Si sentì felice di avere uno zio e accettò rapidamente di portarlo a casa. Era entusiasta di dare la notizia a sua madre."
+      },
+      {
+        "tr": "Alaaddin hızla sihirbazı küçük evine götürdü. İçeri girdiklerinde, Alaaddin'in annesi çalışıyordu. \"Anne,\" dedi Alaaddin heyecanla, \"bu benim amcam, babamın kardeşi! Bizi ziyarete geldi.\" Sihirbaz, Alaaddin'in annesine saygıyla eğildi.",
+        "es": "Aladino guio rápidamente al mago hasta su pequeña casa. Cuando entraron, la madre de Aladino estaba trabajando. \"¡Madre!\", dijo Aladino emocionado, \"¡este es mi tío, el hermano de mi padre! Ha venido a visitarnos\". El mago se inclinó respetuosamente ante la madre de Aladino.",
+        "de": "Aladin führte den Zauberer schnell zu seinem kleinen Haus. Als sie eintraten, arbeitete Aladins Mutter gerade. \"Mutter\", sagte Aladin aufgeregt, \"das ist mein Onkel, der Bruder meines Vaters! Er ist gekommen, um uns zu besuchen.\" Der Zauberer verbeugte sich respektvoll vor Aladins Mutter.",
+        "fr": "Aladdin conduisit rapidement le magicien jusqu'à leur petite maison. Lorsqu'ils entrèrent, la mère d'Aladdin était en train de travailler. « Mère », dit Aladdin avec enthousiasme, « voici mon oncle, le frère de mon père ! Il est venu nous rendre visite. » Le magicien s'inclina respectueusement devant la mère d'Aladdin.",
+        "it": "Aladino condusse rapidamente il mago alla sua piccola casa. Quando entrarono, la madre di Aladino stava lavorando. \"Madre,\" disse Aladino con entusiasmo, \"questo è mio zio, il fratello di mio padre! È venuto a trovarci.\" Il mago si inchinò rispettosamente davanti alla madre di Aladino."
+      },
+      {
+        "tr": "Sonra ağlamaya başladı, kardeşi Mustafa'yı uzun yıllardır aradığını ama bulamadığını anlatan hüzünlü bir hikaye anlattı. Alaaddin'in annesine nazikçe konuştu, yardımını ve desteğini teklif etti. Alaaddin'e bakacağını ve ona bir meslek öğreteceğini söyledi ki iyi bir geleceği olsun. Alaaddin'in annesi onun sözlerinden çok etkilendi. Nihayet kendilerine yardım edecek nazik bir akrabaları olduğuna inanarak mutlu ve umutlu hissetti.",
+        "es": "Luego comenzó a llorar, contando una triste historia sobre cómo había buscado a su hermano Mustafá durante muchos años pero no había podido encontrarlo. Le habló con amabilidad a la madre de Aladino, ofreciéndole su ayuda y apoyo. Dijo que cuidaría de Aladino y le enseñaría un oficio para que pudiera tener un buen futuro. La madre de Aladino se sintió muy conmovida por sus palabras. Se sintió feliz y esperanzada, creyendo que por fin tenía un pariente bondadoso que los ayudaría.",
+        "de": "Dann begann er zu weinen und erzählte eine traurige Geschichte darüber, wie er viele Jahre lang nach seinem Bruder Mustafa gesucht, ihn aber nicht gefunden hatte. Er sprach freundlich zu Aladins Mutter und bot ihr seine Hilfe und Unterstützung an. Er sagte, er würde sich um Aladin kümmern und ihm ein Handwerk beibringen, damit er eine gute Zukunft habe. Aladins Mutter war von seinen Worten sehr gerührt. Sie fühlte sich glücklich und hoffnungsvoll, da sie glaubte, endlich einen gütigen Verwandten zu haben, der ihnen half.",
+        "fr": "Il commença alors à pleurer, racontant une triste histoire sur la façon dont il avait cherché son frère Mustafa pendant de nombreuses années sans pouvoir le trouver. Il parla gentiment à la mère d'Aladdin, lui offrant son aide et son soutien. Il dit qu'il s'occuperait d'Aladdin et lui apprendrait un métier pour qu'il puisse avoir un bel avenir. La mère d'Aladdin fut très touchée par ses paroles. Elle se sentit heureuse et pleine d'espoir, croyant avoir enfin trouvé un parent bienveillant pour les aider.",
+        "it": "Iniziò poi a piangere, raccontando una triste storia su come avesse cercato suo fratello Mustafa per molti anni senza riuscire a trovarlo. Parlò gentilmente con la madre di Aladino, offrendo il suo aiuto e sostegno. Disse che si sarebbe preso cura di Aladino e gli avrebbe insegnato un mestiere affinché potesse avere un buon futuro. La madre di Aladino fu molto colpita dalle sue parole. Si sentì felice e piena di speranza, credendo di avere finalmente un parente gentile che li avrebbe aiutati."
+      },
+      {
+        "tr": "Ertesi gün, sihirbaz Alaaddin'e yeni, güzel kıyafetler aldı. Alaaddin daha önce hiç bu kadar güzel kıyafetlere sahip olmamıştı ve çok minnettardı. Yeni kıyafetleriyle yakışıklı görünüyordu. Sonra sihirbaz dedi ki, \"Gel, Alaaddin, şehri keşfedelim ve bazı güzel yerleri görelim.\"",
+        "es": "Al día siguiente, el mago le compró ropa nueva y hermosa a Aladino. Aladino nunca antes había tenido ropa tan bonita y estaba muy agradecido. Se veía muy apuesto con su traje nuevo. El mago le dijo entonces: \"Ven, Aladino, exploremos la ciudad y veamos algunos lugares hermosos\".",
+        "de": "Am nächsten Tag kaufte der Zauberer neue, wunderschöne Kleidung für Aladin. Aladin hatte noch nie zuvor so schöne Kleidung besessen und war sehr dankbar. In seinem neuen Outfit sah er gut aus. Der Zauberer sagte dann: \"Komm, Aladin, lass uns die Stadt erkunden und einige schöne Orte sehen.\"",
+        "fr": "Le lendemain, le magicien acheta de nouveaux vêtements magnifiques pour Aladdin. Aladdin n'avait jamais possédé d'aussi beaux vêtements auparavant, et il était très reconnaissant. Il avait l'air élégant dans sa nouvelle tenue. Le magicien dit alors : « Viens, Aladdin, explorons la ville et découvrons de beaux endroits. »",
+        "it": "Il giorno dopo, il mago comprò vestiti nuovi e bellissimi per Aladino. Aladino non aveva mai posseduto vestiti così belli prima d'ora ed era molto grato. Sembrava un bel ragazzo con il suo nuovo abbigliamento. Il mago disse poi: \"Vieni, Aladino, esploriamo la città e vediamo dei posti meravigliosi.\""
+      },
+      {
+        "tr": "Uzun süre yürüdüler, şehri arkalarında bırakıp dağlara doğru gittiler. Sihirbaz harika bahçelerden ve saklı hazinelerden bahsetti. Alaaddin'e büyük bir hazine bulabilecekleri gizli bir yer bildiğini söyledi. \"Bu hazine,\" dedi, \"ikimizi de çok zengin edebilir!\" Alaaddin büyük bir ilgiyle dinledi, gerçek bir hazine bulma düşüncesiyle gözleri heyecanla parlıyordu.",
+        "es": "Caminaron durante mucho tiempo, dejando atrás la ciudad y dirigiéndose hacia las montañas. El mago le habló de jardines asombrosos y tesoros ocultos. Le dijo a Aladino que conocía un lugar secreto donde podían encontrar un gran tesoro. \"¡Este tesoro\", dijo, \"puede hacernos muy ricos a los dos!\". Aladino escuchaba con gran interés, con los ojos brillantes de emoción ante la idea de encontrar un tesoro real.",
+        "de": "Sie gingen lange Zeit, ließen die Stadt hinter sich und wanderten auf die Berge zu. Der Zauberer sprach von erstaunlichen Gärten und verborgenen Schätzen. Er erzählte Aladin, dass er einen geheimen Ort kenne, an dem sie einen großen Schatz finden könnten. \"Dieser Schatz\", sagte er, \"kann uns beide sehr reich machen!\" Aladin hörte mit großem Interesse zu, und seine Augen glänzten vor Aufregung bei dem Gedanken, einen echten Schatz zu finden.",
+        "fr": "Ils marchèrent pendant longtemps, laissant la ville derrière eux et se dirigeant vers les montagnes. Le magicien parla de jardins incroyables et de trésors cachés. Il dit à Aladdin qu'il connaissait un endroit secret où ils pourraient trouver un grand trésor. « Ce trésor », dit-il, « peut nous rendre tous les deux très riches ! » Aladdin écouta avec un grand intérêt, les yeux brillants d'excitation à l'idée de trouver un vrai trésor.",
+        "it": "Camminarono a lungo, lasciandosi la città alle spalle e dirigendosi verso le montagne. Il mago parlò di giardini incredibili e tesori nascosti. Disse ad Aladino che conosceva un posto segreto dove avrebbero potuto trovare un grande tesoro. \"Questo tesoro,\" disse, \"può renderci entrambi molto ricchi!\" Aladino ascoltò con grande interesse, con gli occhi che brillavano di eccitazione al pensiero di trovare un vero tesoro."
+      },
+      {
+        "tr": "Dağların yükseklerinde sessiz bir yere ulaştılar. Burası evlerden veya insanlardan uzak, ıssız bir noktaydı. Sihirbaz çantasını yere koydu. Kuru odun ve yaprak toplamaya başladı. Aladdin onu izlerken biraz garip hissediyordu. Sihirbaz bir çubukla yere bir daire çizdi. Sonra bir ateş yakmaya başladı. \"Ne yapıyorsun amca?\"",
+        "es": "Llegaron a un lugar tranquilo en lo alto de las montañas. Era un paraje solitario, lejos de cualquier casa o persona. El mago dejó su bolsa en el suelo. Empezó a recoger leña seca y hojas. Aladino lo observaba, sintiéndose un poco extraño. El mago dibujó un círculo en el suelo con una vara. Luego empezó a encender un fuego. \"¿Qué estás haciendo, tío?\"",
+        "de": "Sie erreichten einen ruhigen Ort hoch in den Bergen. Es war eine einsame Stelle, weit weg von Häusern oder Menschen. Der Zauberer stellte seine Tasche ab. Er begann, trockenes Holz und Blätter zu sammeln. Aladin beobachtete ihn und fühlte sich ein wenig seltsam. Der Zauberer zeichnete mit einem Stock einen Kreis auf den Boden. Dann begann er, ein Feuer zu entzünden. \"Was machst du da, Onkel?\"",
+        "fr": "Ils atteignirent un endroit calme dans les montagnes. C'était un lieu isolé, loin des maisons et des gens. Le magicien posa son sac. Il commença à ramasser du bois sec et des feuilles. Aladdin l'observait, se sentant un peu étrange. Le magicien dessina un cercle sur le sol avec un bâton. Puis il commença à allumer un feu. « Que faites-vous, oncle ? »",
+        "it": "Raggiunsero un posto tranquillo in alta montagna. Era un luogo solitario, lontano da case o persone. Il mago posò la sua borsa. Iniziò a raccogliere legna secca e foglie. Aladino lo guardava, sentendosi un po' strano. Il mago disegnò un cerchio sul terreno con un bastone. Poi iniziò ad accendere un fuoco. \"Cosa stai facendo, zio?\""
+      },
+      {
+        "tr": "diye sordu Aladdin, sesi yumuşaktı. Sihirbaz hemen cevap vermedi. Çok ciddi görünüyordu. Ateş büyüdü. Alevlere özel bir toz attı ve havaya rengarenk dumanlar yükseldi. Aladdin daha önce hiç böyle bir şey görmemişti. Hem hayranlık hem de küçük bir endişe hissetti. Bunun hazine bulmanın bir parçası olup olmadığını merak etti.",
+        "es": "preguntó Aladino con voz suave. El mago no respondió de inmediato. Se veía muy serio. El fuego se hizo más grande. Lanzó un polvo especial a las llamas y un humo de colores se elevó en el aire. Aladino nunca había visto nada igual. Sintió una mezcla de asombro y una ligera preocupación. Se preguntó si aquello formaba parte de la búsqueda del tesoro.",
+        "de": "fragte Aladin mit leiser Stimme. Der Zauberer antwortete nicht sofort. Er sah sehr ernst aus. Das Feuer wurde größer. Er warf ein spezielles Pulver in die Flammen, und bunter Rauch stieg in die Luft. So etwas hatte Aladin noch nie gesehen. Er fühlte eine Mischung aus Staunen und einer leisen Sorge. Er fragte sich, ob dies dazugehörte, um den Schatz zu finden.",
+        "fr": "demanda Aladdin, la voix douce. Le magicien ne répondit pas immédiatement. Il avait l'air très sérieux. Le feu grandit. Il jeta une poudre spéciale dans les flammes, et une fumée colorée s'éleva dans les airs. Aladdin n'avait jamais rien vu de tel. Il ressentait un mélange d'émerveillement et une légère inquiétude. Il se demandait si cela faisait partie de la découverte du trésor.",
+        "it": "chiese Aladino, con voce sommessa. Il mago non rispose immediatamente. Sembrava molto serio. Il fuoco divenne più grande. Gettò della polvere speciale tra le fiamme e un fumo colorato si alzò nell'aria. Aladino non aveva mai visto nulla di simile. Provò un misto di meraviglia e una piccola preoccupazione. Si chiese se facesse parte della ricerca del tesoro."
+      },
+      {
+        "tr": "Sihirbaz garip sözler söylemeye başladı. Şarkı gibiydiler ama Aladdin onları anlamadı. Ateş sıcak olmasına rağmen etraflarındaki hava soğudu. Yer hafifçe sallanmaya başladı. Aladdin şimdi korkuyordu. Kaçmak istedi ama ayaklarını hareket ettiremedi. Dairenin ortasındaki büyük bir taş hareket etmeye başladı.",
+        "es": "El mago empezó a pronunciar palabras extrañas. Sonaban como una canción, pero Aladino no las entendía. El aire a su alrededor se volvió frío, a pesar de que el fuego estaba caliente. El suelo empezó a temblar ligeramente. Aladino sintió miedo ahora. Quería correr, pero no podía mover los pies. Una gran piedra en medio del círculo empezó a moverse.",
+        "de": "Der Zauberer begann, seltsame Worte zu sprechen. Sie klangen wie ein Lied, aber Aladin verstand sie nicht. Die Luft um sie herum wurde kalt, obwohl das Feuer heiß war. Der Boden begann leicht zu beben. Aladin bekam nun Angst. Er wollte weglaufen, aber er konnte seine Füße nicht bewegen. Ein großer Stein in der Mitte des Kreises begann sich zu bewegen.",
+        "fr": "Le magicien commença à prononcer des mots étranges. Ils ressemblaient à une chanson, mais Aladdin ne les comprenait pas. L'air autour d'eux devint froid, même si le feu était chaud. Le sol commença à trembler légèrement. Aladdin avait peur maintenant. Il voulait courir, mais il ne pouvait pas bouger ses pieds. Une grosse pierre au milieu du cercle commença à bouger.",
+        "it": "Il mago iniziò a pronunciare parole strane. Sembravano una canzone, ma Aladino non le capiva. L'aria intorno a loro divenne fredda, anche se il fuoco era caldo. Il terreno iniziò a tremare leggermente. Aladino ora aveva paura. Voleva scappare, ma non riusciva a muovere i piedi. Una grossa pietra al centro del cerchio iniziò a muoversi."
+      },
+      {
+        "tr": "Yavaşça havaya kalktı. Taşın altında karanlık bir delik vardı. Yerin derinliklerine inen bir merdiven gibi görünüyordu. Aladdin'in ağzı şaşkınlıkla açıldı. Bu sadece basit bir hazine avı değildi. Bu gerçek sihirbazlıktı! Karanlık açıklığa baktı, kalbi hızla atıyordu.",
+        "es": "Lentamente, se elevó en el aire. Debajo de la piedra había un agujero oscuro. Parecía una escalera que se adentraba en las profundidades de la tierra. Aladino se quedó con la boca abierta por la sorpresa. Esto no era una simple búsqueda del tesoro. ¡Esto era magia de verdad! Se quedó mirando la abertura oscura, con el corazón latiéndole a mil por hora.",
+        "de": "Langsam hob er sich in die Luft. Unter dem Stein befand sich ein dunkles Loch. Es sah aus wie eine Treppe, die tief in die Erde führte. Aladins Mund öffnete sich vor Überraschung. Das war nicht nur eine einfache Schatzsuche. Das war echte Magie! Er starrte in die dunkle Öffnung, sein Herz klopfte schnell.",
+        "fr": "Lentement, elle s'éleva dans les airs. Sous la pierre, il y avait un trou sombre. Cela ressemblait à un escalier descendant profondément dans la terre. La bouche d'Aladdin s'ouvrit de surprise. Ce n'était pas juste une simple chasse au trésor. C'était de la vraie magie ! Il fixa l'ouverture sombre, le cœur battant à tout rompre.",
+        "it": "Lentamente, si sollevò in aria. Sotto la pietra c'era un buco scuro. Sembrava una scala che scendeva in profondità nella terra. La bocca di Aladino si spalancò per la sorpresa. Non era solo una semplice caccia al tesoro. Era vera magia! Fissò l'apertura scura, con il cuore che batteva forte."
+      },
+      {
+        "tr": "\"Aladdin, evladım,\" dedi sihirbaz, sesi şimdi güçlü ve kararlıydı, \"dikkatlice dinle. Bu mağaraya inmelisin. En altta büyük bir oda var. Mücevherlerle dolu birçok ağaç göreceksin. Onlara dokunma! Hiçbir mücevheri alma. Küçük bir lamba göreceksin. O çok eski.",
+        "es": "\"Aladino, muchacho\", dijo el mago, con voz ahora fuerte y firme, \"escucha con atención. Debes bajar a esta cueva. Al fondo hay una gran sala. Verás muchos árboles llenos de joyas. ¡No los toques! No te lleves ninguna joya. Verás una pequeña lámpara. Es muy antigua.",
+        "de": "\"Aladin, mein Junge\", sagte der Zauberer mit nun starker und fester Stimme, \"hör gut zu. Du musst in diese Höhle hinabsteigen. Unten gibt es einen großen Raum. Du wirst viele Bäume voller Juwelen sehen. Fass sie nicht an! Nimm keine Juwelen mit. Du wirst eine kleine Lampe sehen. Sie ist sehr alt.",
+        "fr": "« Aladdin, mon garçon », dit le magicien, sa voix maintenant forte et ferme, « écoute attentivement. Tu dois descendre dans cette grotte. Au fond, il y a une grande salle. Tu verras beaucoup d'arbres remplis de bijoux. N'y touche pas ! Ne prends aucun bijou. Tu verras une petite lampe. Elle est très vieille. »",
+        "it": "\"Aladino, ragazzo mio,\" disse il mago, con voce ora forte e ferma, \"ascolta bene. Devi scendere in questa caverna. In fondo c'è una grande stanza. Vedrai molti alberi pieni di gioielli. Non toccarli! Non prendere alcun gioiello. Vedrai una piccola lampada. È molto vecchia.\""
+      },
+      {
+        "tr": "İşte ihtiyacımız olan şey o. Sadece o lambayı almalısın. Ve dinle, sadece sen ona dokunabilirsin. Ben dokunursam, sihir kaybolur. Anladın mı?\" Aladdin hala şaşkınlıkla başını salladı. \"Evet, Amca,\" diye fısıldadı. \"Unutma, sadece lamba,\" diye tekrarladı sihirbaz, Aladdin'i yavaşça deliğe doğru iterek.",
+        "es": "Eso es lo que necesitamos. Debes tomar solo esa lámpara. Y escucha, solo tú puedes tocarla. Si la toco yo, la magia desaparecerá. ¿Entiendes?\". Aladino asintió, todavía asombrado. \"Sí, tío\", susurró. \"Recuerda, solo la lámpara\", repitió el mago, empujando suavemente a Aladino hacia el agujero.",
+        "de": "Das ist es, was wir brauchen. Du darfst nur diese Lampe nehmen. Und hör zu, nur du darfst sie berühren. Wenn ich sie berühre, verschwindet die Magie. Verstehst du?\" Aladin nickte, immer noch staunend. \"Ja, Onkel\", flüsterte er. \"Denk daran, nur die Lampe\", wiederholte der Zauberer und schob Aladin sanft in Richtung des Lochs.",
+        "fr": "« C'est ce dont nous avons besoin. Tu dois prendre seulement cette lampe. Et écoute, toi seul peux la toucher. Si je la touche, la magie disparaîtra. Comprends-tu ? » Aladdin hocha la tête, toujours stupéfait. « Oui, oncle », chuchota-t-il. « Souviens-toi, seulement la lampe », répéta le magicien en poussant doucement Aladdin vers le trou.",
+        "it": "È quella che ci serve. Devi prendere solo quella lampada. E ascolta, solo tu puoi toccarla. Se la tocco io, la magia svanirà. Capito?\" Aladino annuì, ancora stupito. \"Sì, zio,\" sussurrò. \"Ricorda, solo la lampada,\" ripeté il mago, spingendo Aladino delicatamente verso il buco."
+      },
+      {
+        "tr": "Aladdin derin bir nefes aldı. Karanlık delik korkutucu görünüyordu ama amcasının sözlerini hatırladı. Yavaşça taş merdivenlerden aşağı inmeye başladı. İçerideki hava soğuk ve nemliydi. Aşağıda bir yerden su damlama sesleri duyabiliyordu.",
+        "es": "Aladino respiró hondo. El agujero oscuro daba miedo, pero recordó las palabras de su tío. Empezó a bajar lentamente las escaleras de piedra. El aire en el interior era frío y húmedo. Podía oír el goteo del agua en algún lugar muy abajo.",
+        "de": "Aladin holte tief Luft. Das dunkle Loch sah unheimlich aus, aber er erinnerte sich an die Worte seines Onkels. Langsam begann er, die Steintreppe hinabzusteigen. Die Luft drinnen war kalt und feucht. Er konnte hören, wie weit unten irgendwo Wasser tropfte.",
+        "fr": "Aladdin prit une profonde inspiration. Le trou sombre semblait effrayant, mais il se souvint des paroles de son oncle. Il commença lentement à descendre les marches de pierre. L'air à l'intérieur était froid et humide. Il pouvait entendre de l'eau goutter quelque part loin en dessous.",
+        "it": "Aladino fece un respiro profondo. Il buco scuro sembrava spaventoso, ma ricordò le parole di suo zio. Iniziò lentamente a scendere i gradini di pietra. L'aria all'interno era fredda e umida. Poteva sentire l'acqua gocciolare da qualche parte molto più in basso."
+      },
+      {
+        "tr": "Çok karanlıktı ama yukarıdaki girişte duran büyücünün olduğu yerden zayıf bir ışık geliyordu. Aladdin tek eliyle soğuk taş duvara tutundu. Kalbi hala hızlı atıyordu ama korkusuyla karışık garip bir macera hissi vardı.",
+        "es": "Estaba muy oscuro, pero una tenue luz provenía de la entrada de arriba, donde estaba el mago. Aladino se sujetó a la fría pared de piedra con una mano. Su corazón seguía latiendo rápido, pero una extraña sensación de aventura se mezclaba con su miedo.",
+        "de": "Es war sehr dunkel, aber ein schwaches Licht drang vom Eingang oben herein, wo der Zauberer stand. Aladin hielt sich mit einer Hand an der kalten Steinwand fest. Sein Herz klopfte immer noch schnell, aber in seine Angst mischte sich ein seltsames Gefühl von Abenteuer.",
+        "fr": "Il faisait très sombre, mais une faible lumière provenait de l'entrée au-dessus, là où se tenait le magicien. Aladdin s'agrippa au mur de pierre froide d'une main. Son cœur battait toujours vite, mais un étrange sentiment d'aventure se mêlait à sa peur.",
+        "it": "Era molto buio, ma una debole luce proveniva dall'ingresso sopra, dove si trovava il mago. Aladino si tenne alla fredda parete di pietra con una mano. Il cuore batteva ancora forte, ma un senso strano di avventura si mescolava alla sua paura."
+      },
+      {
+        "tr": "Sanki bir rüyaya ya da belki de gizli bir dünyaya giriyormuş gibi hissediyordu. Her adım onu tanıdık güneş ışığından ve seslerden uzağa, toprağın daha derinlerine götürüyordu. Bu gizemli merdivenin dibinde ne bulacağını merak ediyordu.",
+        "es": "Se sentía como si estuviera entrando en un sueño, o tal vez en un mundo secreto. Cada paso lo llevaba más profundo en la tierra, lejos de la luz del sol y los sonidos familiares. Se preguntó qué encontraría al final de aquella misteriosa escalera.",
+        "de": "Er fühlte sich, als würde er in einen Traum oder vielleicht in eine geheime Welt eintreten. Jeder Schritt führte ihn tiefer in die Erde, weg vom vertrauten Sonnenlicht und den Geräuschen. Er fragte sich, was er wohl am Ende dieser geheimnisvollen Treppe finden würde.",
+        "fr": "Il avait l'impression d'entrer dans un rêve, ou peut-être dans un monde secret. Chaque pas l'emmenait plus profondément dans la terre, loin de la lumière du soleil et des bruits familiers. Il se demandait ce qu'il trouverait au bas de cet escalier mystérieux.",
+        "it": "Si sentiva come se stesse camminando in un sogno, o forse in un mondo segreto. Ogni passo lo portava più in profondità nella terra, lontano dalla luce del sole e dai suoni familiari. Si chiedeva cosa avrebbe trovato in fondo a quella misteriosa scala."
+      },
+      {
+        "tr": "Sonunda Aladdin dibe ulaştı. Beklediğinden çok daha büyük, devasa bir mağaraydı. Yukarıdan gelen zayıf ışık buraya kadar ulaşamıyordu. Ama sonra, yumuşak, renkli bir parıltı gördü. Bu parıltı ağaçlarda asılı binlerce meyveden geliyordu. Bunlar sıradan meyveler değildi.",
+        "es": "Finalmente, Aladino llegó al fondo. Era un cueva enorme, mucho más grande de lo que esperaba. La tenue luz de arriba no podía llegar hasta allí. Pero entonces, vio un brillo suave y colorido. Provenía de miles de frutas que colgaban de los árboles. No eran frutas comunes.",
+        "de": "Schließlich erreichte Aladin den Boden. Es war eine riesige Höhle, viel größer, als er erwartet hatte. Das schwache Licht von oben konnte nicht so weit reichen. Aber dann sah er einen sanften, farbenfrohen Schimmer. Er kam von Tausenden von Früchten, die an Bäumen hingen. Das waren keine gewöhnlichen Früchte.",
+        "fr": "Finalement, Aladdin atteignit le fond. C'était une immense grotte, beaucoup plus grande qu'il ne l'avait imaginé. La faible lumière d'en haut ne pouvait pas atteindre cet endroit. Mais alors, il vit une lueur douce et colorée. Elle provenait de milliers de fruits suspendus aux arbres. Ce n'étaient pas des fruits ordinaires.",
+        "it": "Finalmente, Aladino raggiunse il fondo. Era un'enorme caverna, molto più grande di quanto si aspettasse. La debole luce dall'alto non riusciva ad arrivare fin lì. Ma poi, vide un bagliore morbido e colorato. Proveniva da migliaia di frutti appesi agli alberi. Non erano frutti comuni."
+      },
+      {
+        "tr": "Kırmızı, mavi, yeşil ve parıldayan beyaz olmak üzere her renkten parlayan mücevherlerdi. Ağaçların kendileri de altından ve gümüşten yapılmış, çok güzeldi. Gerçekten nefes kesici, muhteşem bir manzaraydı. Aladdin büyücünün katı uyarısını hatırladı: \"Onlara dokunma!\" Bir tane koparmak istedi, sadece bir an için, ama elini sıkıca kapattı. Lambayı bulması gerekiyordu.",
+        "es": "Eran joyas brillantes de todos los colores: rojas, azules, verdes y de un blanco centelleante. Los árboles mismos eran hermosos, hechos de oro y plata. Era una vista magnífica, realmente impresionante. Aladino recordó la estricta advertencia del mago: \"¡No los toques!\". Quiso tomar una, solo por un momento, pero cerró la mano con fuerza. Tenía que encontrar la lámpara.",
+        "de": "Es waren glänzende Juwelen in allen Farben – rot, blau, grün und funkelnd weiß. Die Bäume selbst waren wunderschön, aus Gold und Silber gefertigt. Es war ein herrlicher Anblick, wirklich atemberaubend. Aladin erinnerte sich an die strenge Warnung des Zauberers: \"Fass sie nicht an!\" Er wollte nur für einen Moment eines pflücken, aber er ballte seine Hand fest zur Faust. Er musste die Lampe finden.",
+        "fr": "C'étaient des bijoux brillants de toutes les couleurs : rouge, bleu, vert et blanc étincelant. Les arbres eux-mêmes étaient magnifiques, faits d'or et d'argent. C'était un spectacle grandiose, vraiment époustouflant. Aladdin se souvint de l'avertissement strict du magicien : « N'y touche pas ! » Il voulait en cueillir un, juste pour un instant, mais il ferma sa main fermement. Il devait trouver la lampe.",
+        "it": "Erano gioielli scintillanti di ogni colore: rosso, blu, verde e bianco brillante. Gli alberi stessi erano bellissimi, fatti d'oro e d'argento. Era uno spettacolo magnifico, davvero mozzafiato. Aladino ricordò il severo avvertimento del mago: \"Non toccarli!\" Voleva coglierne uno, solo per un momento, ma chiuse la mano stretta. Doveva trovare la lampada."
+      },
+      {
+        "tr": "Aladdin mücevher ağaçlarının yanından geçti, onlara çok fazla bakmamaya çalışarak. Büyük odayı aradı. Sakin bir köşede, neredeyse gizlenmiş bir şekilde, küçük, eski bir lamba gördü. Mücevherler gibi parlamıyordu. Kirli ve önemsiz görünüyordu, basit metalden yapılmıştı. \"Bu olmalı,\" diye düşündü.",
+        "es": "Aladino pasó de largo los árboles de joyas, intentando no mirarlos demasiado. Buscó por la gran sala. En un rincón tranquilo, casi oculta, vio una lámpara pequeña y vieja. No brillaba como las joyas. Parecía sucia y sin importancia, hecha de un metal sencillo. \"Debe de ser esta\", pensó.",
+        "de": "Aladin ging an den Juwelenbäumen vorbei und versuchte, sie nicht zu sehr anzusehen. Er durchsuchte den großen Raum. In einer ruhigen, fast verborgenen Ecke sah er eine kleine, alte Lampe. Sie glänzte nicht wie die Juwelen. Sie sah schmutzig und unbedeutend aus, hergestellt aus einfachem Metall. \"Das muss sie sein\", dachte er.",
+        "fr": "Aladdin passa devant les arbres à bijoux, essayant de ne pas trop les regarder. Il fouilla la grande salle. Dans un coin calme, presque caché, il vit une petite lampe ancienne. Elle ne brillait pas comme les bijoux. Elle avait l'air sale et sans importance, faite de métal simple. « Ce doit être celle-ci », pensa-t-il.",
+        "it": "Aladino camminò oltre gli alberi di gioielli, cercando di non guardarli troppo. Perlustrò la grande stanza. In un angolo tranquillo, quasi nascosto, vide una piccola lampada vecchia. Non brillava come i gioielli. Sembrava sporca e insignificante, fatta di metallo semplice. \"Deve essere questa,\" pensò."
+      },
+      {
+        "tr": "Hızla lambanın yanına gitti ve dikkatlice aldı. Elinde hafif hissetti. Son bir kez etrafına, büyülü mağaraya baktı. Sonra, lambayı sıkıca tutarak, uzun, karanlık merdivenlerden yukarı tırmanmaya başladı. Büyücüye talimatları mükemmel bir şekilde yerine getirdiğini göstermek için sabırsızlanıyordu. Biraz gururlu hissediyordu.",
+        "es": "Caminó rápidamente hacia ella y la levantó con cuidado. Se sentía ligera en su mano. Miró a su alrededor una última vez a la cueva mágica. Luego, sosteniendo la lámpara con fuerza, comenzó a subir de nuevo las largas y oscuras escaleras. Estaba ansioso por demostrarle al mago que había seguido las instrucciones a la perfección. Se sentía un poco orgulloso.",
+        "de": "Er ging schnell darauf zu und hob sie vorsichtig auf. Sie fühlte sich leicht in seiner Hand an. Er blickte ein letztes Mal in der magischen Höhle umher. Dann hielt er die Lampe fest umklammert und begann, die lange, dunkle Treppe wieder hinaufzusteigen. Er brannte darauf, dem Zauberer zu zeigen, dass er die Anweisungen perfekt befolgt hatte. Er fühlte sich ein wenig stolz.",
+        "fr": "Il s'en approcha rapidement et la ramassa avec précaution. Elle semblait légère dans sa main. Il regarda une dernière fois la grotte magique. Puis, tenant la lampe fermement, il commença à remonter les longs escaliers sombres. Il était impatient de montrer au magicien qu'il avait suivi les instructions à la lettre. Il se sentait un peu fier.",
+        "it": "Si avvicinò rapidamente e la raccolse con cura. Sembrava leggera nella sua mano. Si guardò intorno un'ultima volta nella caverna magica. Poi, stringendo forte la lampada, iniziò a risalire la lunga scala buia. Era impaziente di mostrare al mago che aveva seguito le istruzioni alla perfezione. Si sentiva un po' orgoglioso."
+      },
+      {
+        "tr": "Aladdin sonunda merdivenlerin tepesine ulaştı, ağır ağır nefes alıyordu. Büyücü girişin önünde duruyordu, yüzü gölgede kalmış, sabırsızca bekliyordu. \"Lambayı ver bana, çocuk!\" diye emretti büyücü, sesi keskindi. Aladdin eski lambayı sıkıca tuttu. Uzun tırmanıştan yorulmuştu ve eli doluydu. \"Şimdi uzanamam, efendim,\" diye yanıtladı Aladdin.",
+        "es": "Aladino llegó por fin a lo alto de las escaleras, respirando con dificultad. El mago estaba en la entrada, con el rostro en la sombra, esperando impaciente. \"¡Dame la lámpara, muchacho!\", ordenó el mago con voz afilada. Aladino sostuvo la vieja lámpara con fuerza. Estaba cansado de la larga subida y tenía la mano ocupada. \"No puedo alcanzártela ahora, señor\", respondió Aladino.",
+        "de": "Aladin erreichte schließlich schwer atmend das obere Ende der Treppe. Der Zauberer stand am Eingang, sein Gesicht im Schatten, und wartete ungeduldig. \"Gib mir die Lampe, Junge!\", befahl der Zauberer mit scharfer Stimme. Aladin hielt die alte Lampe fest umklammert. Er war müde von dem langen Aufstieg und hatte die Hände voll. \"Ich kann sie jetzt nicht reichen, Meister\", antwortete Aladin.",
+        "fr": "Aladdin atteignit enfin le sommet des escaliers, respirant difficilement. Le magicien se tenait à l'entrée, le visage dans l'ombre, attendant avec impatience. « Donne-moi la lampe, garçon ! » commanda le magicien, la voix tranchante. Aladdin tenait la vieille lampe fermement. Il était fatigué par la longue ascension et sa main était pleine. « Je ne peux pas l'atteindre maintenant, maître », répondit Aladdin.",
+        "it": "Aladino raggiunse finalmente la cima della scala, respirando affannosamente. Il mago stava all'ingresso, con il volto in ombra, aspettando con impazienza. \"Dammi la lampada, ragazzo!\" comandò il mago, con voce tagliente. Aladino stringeva forte la vecchia lampada. Era stanco per la lunga salita e la sua mano era occupata. \"Non riesco a prenderla ora, padrone,\" rispose Aladino."
+      },
+      {
+        "tr": "\"Önce beni bu karanlık çukurdan çıkarın. Ellerim dolu ve giriş yüksekte.\" Lambayı tuttuğu elini uzattı, ama hala mağaranın içindeydi, hemen açıklığın altındaydı. Büyücünün gözleri kısıldı. Artık arkadaş canlısı görünmüyordu. Aladdin adamdan garip bir soğukluk hissetti. Sadece mağaradan çıkmak, tekrar sıcak güneş ışığında olmak istiyordu.",
+        "es": "\"Primero, ayúdame a salir de este agujero oscuro. Tengo las manos ocupadas y la entrada está alta\". Estiró la mano con la lámpara, pero seguía dentro de la cueva, justo debajo de la abertura. El mago entrecerró los ojos. Ya no parecía amigable. Aladino sintió una extraña frialdad por parte del hombre. Solo quería salir de la cueva y estar de nuevo bajo la cálida luz del sol.",
+        "de": "\"Hilf mir zuerst aus diesem dunklen Loch heraus. Meine Hände sind voll und der Eingang ist hoch.\" Er streckte seine Hand mit der Lampe aus, aber er war immer noch in der Höhle, knapp unter der Öffnung. Die Augen des Zauberers verengten sich. Er sah nicht mehr freundlich aus. Aladin spürte eine seltsame Kälte, die von dem Mann ausging. Er wollte einfach nur wieder aus der Höhle heraus und ins warme Sonnenlicht.",
+        "fr": "« D'abord, aidez-moi à sortir de ce trou sombre. Mes mains sont pleines et l'entrée est haute. » Il tendit la main avec la lampe, mais il était toujours à l'intérieur de la grotte, juste en dessous de l'ouverture. Les yeux du magicien se plissèrent. Il n'avait plus l'air amical. Aladdin ressentit une étrange froideur venant de cet homme. Il voulait juste être hors de la grotte, sous la lumière chaude du soleil à nouveau.",
+        "it": "\"Prima, aiutami a uscire da questo buco scuro. Ho le mani occupate e l'ingresso è alto.\" Tese la mano con la lampada, ma era ancora dentro la caverna, appena sotto l'apertura. Gli occhi del mago si restrinsero. Non sembrava più amichevole. Aladino sentì una strana freddezza provenire dall'uomo. Voleva solo essere fuori dalla caverna, di nuovo al caldo sole."
+      },
+      {
+        "tr": "Büyücü, Aladdin'e yardım etmek için elini uzatmadı. Bunun yerine, sadece lambaya baktı. \"Önce lamba!\" diye tekrarladı, sesi şimdi kısık bir hırıltıydı. \"Bana ver, yoksa pişman olursun!\" Aladdin şaşırmıştı.",
+        "es": "El mago no le ofreció la mano para ayudar a Aladino. En su lugar, se limitó a mirar fijamente la lámpara. \"¡Primero la lámpara!\", repitió, con voz que ahora era un gruñido bajo. \"¡Dámela o te arrepentirás!\". Aladino se sorprendió.",
+        "de": "Der Zauberer reichte Aladin nicht die Hand, um ihm zu helfen. Stattdessen starrte er nur auf die Lampe. \"Zuerst die Lampe!\", wiederholte er mit nun tiefem Grollen. \"Gib sie mir, oder du wirst es bereuen!\" Aladin war überrascht.",
+        "fr": "Le magicien ne tendit pas la main pour aider Aladdin. Au lieu de cela, il fixa simplement la lampe. « La lampe d'abord ! » répéta-t-il, sa voix devenant un grognement sourd. « Donne-la-moi, ou tu le regretteras ! » Aladdin fut surpris.",
+        "it": "Il mago non offrì la sua mano per aiutare Aladino. Invece, fissò solo la lampada. \"La lampada prima!\" ripeté, con voce ora simile a un ringhio basso. \"Dammela, o te ne pentirai!\" Aladino rimase sorpreso."
+      },
+      {
+        "tr": "Büyücünün mutlu ve minnettar olacağını düşünmüştü. Ama adam kızgındı. \"Güvenli bir şekilde dışarı çıktığımda sana vereceğim,\" diye ısrar etti Aladdin, kalbinde küçük bir korku büyürken. Artık büyücüye güvenmiyordu. Lamba neden bu kadar önemliydi ki büyücü onu dışarı çıkmaya bile yardım etmiyordu? Lambanın ağırlığı aniden daha ağır hissettirdi ve bir tehlike hissi havayı doldurdu.",
+        "es": "Había pensado que el mago estaría feliz y agradecido. Pero el hombre estaba enojado. \"Te la daré cuando esté a salvo afuera\", insistió Aladino, sintiendo que un pequeño temor crecía en su corazón. Ya no confiaba en el mago. ¿Por qué era tan importante la lámpara que el mago ni siquiera quería ayudarlo a salir? El peso de la lámpara de repente se sintió más pesado, y una sensación de peligro llenó el aire.",
+        "de": "Er hatte gedacht, der Zauberer würde sich freuen und dankbar sein. Aber der Mann war wütend. \"Ich gebe sie dir, wenn ich draußen in Sicherheit bin\", beharrte Aladin, während eine leise Angst in seinem Herzen aufstieg. Er vertraute dem Zauberer nicht mehr. Warum war die Lampe so wichtig, dass der Zauberer ihm nicht einmal beim Herausklettern helfen wollte? Das Gewicht der Lampe fühlte sich plötzlich schwerer an, und ein Gefühl der Gefahr erfüllte die Luft.",
+        "fr": "Il avait pensé que le magicien serait heureux et reconnaissant. Mais l'homme était en colère. « Je vous la donnerai quand je serai en sécurité dehors », insista Aladdin, sentant une petite peur grandir dans son cœur. Il ne faisait plus confiance au magicien. Pourquoi la lampe était-elle si importante que le magicien ne voulait même pas l'aider à sortir ? Le poids de la lampe sembla soudain plus lourd, et un sentiment de danger remplit l'air.",
+        "it": "Aveva pensato che il mago sarebbe stato felice e grato. Ma l'uomo era arrabbiato. \"Te la darò quando sarò al sicuro fuori,\" insistette Aladino, sentendo una piccola paura crescere nel suo cuore. Non si fidava più del mago. Perché la lampada era così importante che il mago non voleva nemmeno aiutarlo a uscire? Il peso della lampada sembrò improvvisamente più pesante e una sensazione di pericolo riempì l'aria."
+      },
+      {
+        "tr": "Büyücü çok sinirlendi. Yüzü kızardı ve gözleri ateşle parladı. \"Aptal çocuk! Beni kandıramazsın!\" diye bağırdı. Güçlü bir hareketle, parmağındaki sihirli yüzüğü hızla çıkardı.",
+        "es": "El mago se enojó muchísimo. Su rostro se puso rojo y sus ojos brillaron con fuego. \"¡Muchacho tonto! ¡No me engañarás!\", gritó. Con un movimiento enérgico, se quitó rápidamente un anillo mágico del dedo.",
+        "de": "Der Zauberer wurde sehr wütend. Sein Gesicht rötete sich und seine Augen blitzten vor Zorn. \"Du törichter Junge! Du wirst mich nicht austricksen!\", schrie er. Mit einer kraftvollen Bewegung zog er schnell einen Zauberring von seinem Finger.",
+        "fr": "Le magicien devint très en colère. Son visage devint rouge et ses yeux lancèrent des éclairs. « Petit imbécile ! Tu ne me tromperas pas ! » cria-t-il. D'un mouvement puissant, il retira rapidement une bague magique de son doigt.",
+        "it": "Il mago divenne molto arrabbiato. Il suo viso divenne rosso e i suoi occhi brillarono di fuoco. \"Ragazzo sciocco! Non mi ingannerai!\" gridò. Con un movimento potente, sfilò rapidamente un anello magico dal suo dito."
+      },
+      {
+        "tr": "Aladdin'in anlamadığı bazı tuhaf sözler söyledi. Aniden, mağara girişini kapatan ağır taş hareket etmeye başladı. Yavaşça aşağı kaydı, küçük açıklığı tamamen kapattı. Aladdin çığlık attı, ama çok geçti. Karanlık onu tamamen yuttu. Soğuk, sessiz mağarada, eski lamba ve büyüyen korkusuyla tek başına mahsur kalmıştı. Büyücünün kötü kahkahası zihninde yankılandı.",
+        "es": "Pronunció unas palabras extrañas que Aladino no entendió. De repente, la pesada piedra que cubría la entrada de la cueva empezó a moverse. Lentamente, se deslizó hacia abajo, cubriendo por completo la pequeña abertura. Aladino gritó, pero ya era demasiado tarde. La oscuridad lo tragó por completo. Estaba atrapado en la cueva fría y silenciosa, a solas con la vieja lámpara y su creciente temor. La risa malvada del mago resonaba en su mente.",
+        "de": "Er sprach einige seltsame Worte, die Aladin nicht verstand. Plötzlich begann sich der schwere Stein, der den Höhleneingang verdeckte, zu bewegen. Langsam glitt er herab und verschloss die kleine Öffnung vollständig. Aladin schrie, aber es war zu spät. Die Dunkelheit verschlang ihn ganz. Er war in der kalten, stillen Höhle gefangen, allein mit der alten Lampe und seiner wachsenden Angst. Das böse Lachen des Zauberers hallte in seinem Kopf wider.",
+        "fr": "Il prononça des mots étranges qu'Aladdin ne comprit pas. Soudain, la lourde pierre qui couvrait l'entrée de la grotte commença à bouger. Lentement, elle glissa, couvrant complètement la petite ouverture. Aladdin hurla, mais il était trop tard. L'obscurité l'engloutit tout entier. Il était piégé dans la grotte froide et silencieuse, seul avec la vieille lampe et sa peur grandissante. Le rire maléfique du magicien résonnait dans son esprit.",
+        "it": "Pronunciò alcune parole strane che Aladino non capì. Improvvisamente, la pesante pietra che copriva l'ingresso della caverna iniziò a muoversi. Lentamente, scivolò giù, coprendo completamente la piccola apertura. Aladino urlò, ma era troppo tardi. L'oscurità lo inghiottì completamente. Era intrappolato nella caverna fredda e silenziosa, solo con la vecchia lampada e la sua paura crescente. La risata malvagia del mago riecheggiò nella sua mente."
+      }
+    ],
+    "words": {
+      "lazy": {
+        "tr": "tembel",
+        "es": "perezoso",
+        "de": "faul",
+        "fr": "paresseux",
+        "it": "pigro"
+      },
+      "tailor": {
+        "tr": "terzi",
+        "es": "sastre",
+        "de": "Schneider",
+        "fr": "tailleur",
+        "it": "sarto"
+      },
+      "sad": {
+        "tr": "üzgün",
+        "es": "triste",
+        "de": "traurig",
+        "fr": "triste",
+        "it": "triste"
+      },
+      "magician": {
+        "tr": "sihirbaz",
+        "es": "mago",
+        "de": "Zauberer",
+        "fr": "magicien",
+        "it": "mago"
+      },
+      "mysterious": {
+        "tr": "gizemli",
+        "es": "misterioso",
+        "de": "geheimnisvoll",
+        "fr": "mystérieux",
+        "it": "misterioso"
+      },
+      "pretend": {
+        "tr": "gibi davranmak",
+        "es": "fingir",
+        "de": "so tun, als ob",
+        "fr": "faire semblant",
+        "it": "fingere"
+      },
+      "stranger": {
+        "tr": "yabancı",
+        "es": "desconocido",
+        "de": "Fremder",
+        "fr": "étranger",
+        "it": "straniero"
+      },
+      "confused": {
+        "tr": "kafası karışmış",
+        "es": "confundido",
+        "de": "verwirrt",
+        "fr": "confus",
+        "it": "confuso"
+      },
+      "weep": {
+        "tr": "ağlamak",
+        "es": "llorar",
+        "de": "weinen",
+        "fr": "pleurer",
+        "it": "piangere"
+      },
+      "trade": {
+        "tr": "meslek",
+        "es": "oficio",
+        "de": "Handwerk",
+        "fr": "métier",
+        "it": "mestiere"
+      },
+      "grateful": {
+        "tr": "minnettar",
+        "es": "agradecido",
+        "de": "dankbar",
+        "fr": "reconnaissant",
+        "it": "grato"
+      },
+      "treasure": {
+        "tr": "hazine",
+        "es": "tesoro",
+        "de": "Schatz",
+        "fr": "trésor",
+        "it": "tesoro"
+      },
+      "lonely": {
+        "tr": "yalnız",
+        "es": "solitario",
+        "de": "einsam",
+        "fr": "solitaire",
+        "it": "solitario"
+      },
+      "strange": {
+        "tr": "tuhaf",
+        "es": "extraño",
+        "de": "seltsam",
+        "fr": "étrange",
+        "it": "strano"
+      },
+      "powder": {
+        "tr": "toz",
+        "es": "polvo",
+        "de": "Pulver",
+        "fr": "poudre",
+        "it": "polvere"
+      },
+      "shake": {
+        "tr": "sallanmak",
+        "es": "temblar",
+        "de": "beben",
+        "fr": "trembler",
+        "it": "tremare"
+      },
+      "cave": {
+        "tr": "mağara",
+        "es": "cueva",
+        "de": "Höhle",
+        "fr": "grotte",
+        "it": "caverna"
+      },
+      "jewel": {
+        "tr": "mücevher",
+        "es": "joya",
+        "de": "Juwel",
+        "fr": "bijou",
+        "it": "gioiello"
+      },
+      "descend": {
+        "tr": "inmek",
+        "es": "descender",
+        "de": "hinabsteigen",
+        "fr": "descendre",
+        "it": "scendere"
+      },
+      "damp": {
+        "tr": "nemli",
+        "es": "húmedo",
+        "de": "feucht",
+        "fr": "humide",
+        "it": "umido"
+      },
+      "glow": {
+        "tr": "parıltı",
+        "es": "brillo",
+        "de": "Schimmer",
+        "fr": "lueur",
+        "it": "bagliore"
+      },
+      "magnificent": {
+        "tr": "muhteşem",
+        "es": "magnífico",
+        "de": "herrlich",
+        "fr": "magnifique",
+        "it": "magnifico"
+      },
+      "unimportant": {
+        "tr": "önemsiz",
+        "es": "sin importancia",
+        "de": "unbedeutend",
+        "fr": "sans importance",
+        "it": "insignificante"
+      },
+      "impatient": {
+        "tr": "sabırsız",
+        "es": "impaciente",
+        "de": "ungeduldig",
+        "fr": "impatient",
+        "it": "impaziente"
+      },
+      "command": {
+        "tr": "emir",
+        "es": "orden",
+        "de": "Befehl",
+        "fr": "ordre",
+        "it": "ordine"
+      },
+      "regret": {
+        "tr": "pişmanlık",
+        "es": "arrepentimiento",
+        "de": "bereuen",
+        "fr": "regretter",
+        "it": "pentirsi"
+      },
+      "insist": {
+        "tr": "ısrar etmek",
+        "es": "insistir",
+        "de": "beharren",
+        "fr": "insister",
+        "it": "insistere"
+      },
+      "trick": {
+        "tr": "numara",
+        "es": "truco",
+        "de": "Trick",
+        "fr": "tromper",
+        "it": "inganno"
+      },
+      "trap": {
+        "tr": "tuzak",
+        "es": "trampa",
+        "de": "Falle",
+        "fr": "piéger",
+        "it": "intrappolare"
+      }
+    }
+  },
+  "ali_baba": {
+    "title": {
+      "en": "Ali Baba and the Forty Thieves",
+      "tr": "Ali Baba ve Kırk Haramiler"
+    },
+    "paragraphs": [
+      {
+        "tr": "İran'ın küçük, kumlu bir kasabasında Kasım ve Ali Baba adında iki kardeş yaşardı. Kasım, zengin bir kadınla evlendiği için çok zengindi. Büyük bir evi ve birçok güzel eşyası vardı. Ali Baba ise çok fakirdi ve her gün oduncu olarak çok çalışırdı."
+      },
+      {
+        "tr": "Üç eşeğiyle birlikte odun toplamak için ormana giderdi. Odunları küçük parçalara ayırır, eşeklerine yükler ve satmak için kasabaya geri yürürdü. Hayatı zordu ama her zaman dürüsttü ve karşılaştığı herkese karşı nazik davranırdı. Karısıyla küçük, basit bir evde yaşıyordu. Çok az paraları olmasına rağmen, her gün yiyecek ekmek bulabilmek için çok çalışıyorlardı."
+      },
+      {
+        "tr": "Bir gün, Ali Baba ormanda çalışırken yüksek bir ses duydu. Korktu ve saklanmak için büyük bir ağaca tırmandı. Ağacın tepesinden, atlı kırk kişilik bir grup gördü. Tehlikeli hırsızlara benziyorlardı. Devasa bir kaya dağının önünde durana kadar hızla ilerlediler. Grubun lideri atından indi ve taş duvardaki gizli bir kapının önünde durdu."
+      },
+      {
+        "tr": "Yüksek sesle 'Açıl susam açıl!' diye bağırdı. Aniden, ağır kaya kapı hareket etti ve kendi kendine açıldı. Kırk hırsızın hepsi ağır çantalarıyla dağın içine girdi. Ali Baba, yüksek dalların arasında gizlenmiş bir halde, çok şaşırarak ve heyecanlanarak her şeyi izledi."
+      },
+      {
+        "tr": "Ali Baba uzun bir süre bekledi. Sonunda lider 'Kapan susam kapan!' diye bağırdı ve ağır kapı sıkıca kapandı. Hırsızlar uzaklara doğru at sürdüler. Ali Baba çok yavaş bir şekilde ağaçtan indi. Soğuk taş duvara yürüdü ve sihirli sözleri hatırladı."
+      },
+      {
+        "tr": "Duvara baktı ve net bir şekilde 'Açıl susam açıl!' dedi. Şaşkınlık içinde kapının tamamen açıldığını gördü. İçeri girdi ve altın, gümüş, mücevher ve pahalı ipek kıyafetlerle dolu karanlık bir mağara gördü. Hayatında gördüğü en büyük hazineydi. Bu altının hayatını sonsuza dek değiştirebileceğini biliyordu ama dikkatliydi. Sadece üç eşeğinin taşıyabileceği kadar altın torbası aldı."
+      },
+      {
+        "tr": "Ali Baba karanlık mağaradan çıktı ve tekrar taş kapının yanında durdu. Ağır kayaya baktı ve biraz korktu ama sihirli sözleri hatırladı. Güçlü bir sesle 'Açıl susam açıl!' dedi. Ağır taş kapı hareket etti ve tüm altını içeride gizleyerek sıkıca kapandı. Ali Baba hızla üç eşeğinin üzerine bindi."
+      },
+      {
+        "tr": "Çok mutlu ve heyecanlıydı ama aynı zamanda çok dikkatliydi. Gizli hazineyi hiç kimseye, hatta kendi kardeşi Kasım'a bile söyleyemeyeceğini biliyordu. Eşeklerini sessiz ormandan geçirerek kasabadaki küçük evine geri sürdü. Tedirgindi ama kalbi daha iyi bir gelecek umuduyla doluydu. Evine vardığında kendini yeni bir adam gibi hissetti."
+      },
+      {
+        "tr": "Ali Baba küçük evinin içinde karısına sihirli kapıyı ve mağaradaki harika hazineyi anlattı. Karısı çok şaşırdı ve altın sikkeleri gördüğünde gözlerine inanamadı. Parayı evlerinin zeminindeki toprağın derinliklerine saklamaya karar verdiler. Ali Baba derin bir çukur kazmaya başlarken karısı onu dikkatle izliyordu."
+      },
+      {
+        "tr": "Altınları saymak için küçük bir terazileri olmadığından karısı yardım istemek için Kasım'ın evine koştu. Kasım'ın karısı iyi bir kadındı ama çok meraklıydı. Ali Baba'nın karısının neyi tartmak istediğini bilmek istiyordu. Neyi sakladıklarını görmek için terazinin altına biraz yapışkan yağ sürdü."
+      },
+      {
+        "tr": "Ali Baba'nın karısı altınları saymayı bitirdi ve teraziyi geri getirdi. Ancak yağ yüzünden terazinin altında küçük bir altın sikke yapışık kalmıştı. Kasım'ın karısı altın sikkeyi görünce şok oldu ve çok kıskandı. Kocası Kasım'a koştu ve her şeyi anlattı."
+      },
+      {
+        "tr": "Kasım açgözlü bir adamdı ve fakir kardeşinin artık zengin olmasına çok kızdı. Ertesi sabah erkenden Ali Baba'nın evine gitti. Kardeşine bağırdı ve mağarayı ve gizli hazineyi bildiğini söyledi. Ali Baba nazik bir adamdı, bu yüzden sırrı kardeşiyle paylaşmaya karar verdi. Kasım'a taş kapıyı açması için gereken sihirli sözleri söyledi."
+      },
+      {
+        "tr": "Kasım çok açgözlü bir adamdı ve bir an bile beklemedi. Hemen on eşek aldı ve torbalarıyla birlikte ormana gitti. Büyük taş kapıyı buldu ve Ali Baba'nın kendisine söylediği sihirli sözcükleri kullandı. Yüksek sesle 'Açıl susam!' diye bağırdı. Ağır taş kapı hemen açıldı."
+      },
+      {
+        "tr": "Kasım karanlık mağaranın içine girdi ve her yerde altın ve gümüş dağları gördü. Çok mutluydu ve dünyanın en zengin adamı gibi hissediyordu. Birçok çuvalını olabildiğince hızlı bir şekilde altınla doldurmaya başladı. Zengin olacağı için o kadar heyecanlıydı ki mağaradan çıkmak için gereken özel sözcükleri tamamen unuttu. 'Açıl arpa!' veya 'Açıl buğday!' gibi başka sözcükler bağırdı ancak taş kapı kapalı kaldı. Kasım, karanlık mağaranın içinde mahsur kaldı ve dehşete düştü."
+      },
+      {
+        "tr": "Kırk harami, güneş batarken gizli evlerine geri döndüler. Mağaranın dışında bekleyen on eşeği görünce şaşırdılar. Reis çok kızdı ve keskin kılıcını çekti. Birinin gizli hazinelerini bulduğunu düşündü. Dikkatlice taş kapıya doğru yürüdü ve açılması için sihirli sözcükleri haykırdı."
+      },
+      {
+        "tr": "Kapı hareket ettiğinde hırsızlar, savaşmaya hazır kılıçlarıyla içeri koştular. Kasım çok korktuğu için köşede saklanıyordu. Hırsızlar onu görünce çok sert davrandılar. Zavallı adama hiç merhamet göstermediler. Kasım kaçmaya çalıştı ama artık çok geçti. Çok fazla para istediği ve mağaranın büyüsüne saygı duymadığı için hayatını kaybetti."
+      },
+      {
+        "tr": "Evde, Ali Baba'nın ailesi Kasım geri dönmediği için çok endişeliydi. Ali Baba, kardeşini bulmak için ormana gitmeye karar verdi. Gizli yere ulaşana kadar uzun süre yürüdü. Taş kapıya yaklaşırken gergin hissediyordu. 'Açıl susam!'"
+      },
+      {
+        "tr": "dedi ve kapı onun için açıldı. Ali Baba içeri baktı ve kardeşini soğuk zeminde yatarken gördü. Çok üzüldü ve kardeşi için ağlamaya başladı."
+      },
+      {
+        "tr": "Sırrı onunla paylaştığı için kendini suçlu hissediyordu. Ali Baba, Kasım'ın geride bıraktığı tüm altınları topladı ve eşeklerine yükledi. Kardeşinin karısına bu üzücü haberi nasıl verebileceğini düşünerek ağır bir kalple şehre geri döndü."
+      },
+      {
+        "tr": "Hırsızların lideri mağaraya döndü ve Kasım'ın cesedinin orada olmadığını fark etti. Hazinelerinin sırrını başkasının da bildiğini anladı. Kaptan çok öfkeliydi ve cesedi alan kişiyi bulmaya karar verdi. Kılık değiştirerek şehre gitti ve Baba Mustafa adındaki bilge bir adamla konuştu."
+      },
+      {
+        "tr": "Baba Mustafa, küçük bir dükkanda çalışan bir terziydi. Kaptan terziye bir altın verdi ve ona ölü adamın yaşadığı evi göstermesini istedi."
+      },
+      {
+        "tr": "Terzinin gözleri bağlıydı, bu yüzden yolu göremiyordu ama adımlarını sayarak yolu hatırladı. Sonunda terzi, Ali Baba'nın evine ulaştı ve evi kaptana gösterdi. Kaptan çok mutlu oldu ve yardımı için terziye teşekkür etti."
+      },
+      {
+        "tr": "Kaptan, Ali Baba ve ailesini öldürmek için bir plan yaptı. Bir yağ tüccarı kılığına girdi ve on dokuz katırla Ali Baba'nın evine gitti. Her katır iki büyük küp taşıyordu ama sadece bir küpte gerçek yağ vardı. Diğer otuz sekiz küpte kırk hırsız saklanıyordu."
+      },
+      {
+        "tr": "Saldırmak için herkesin uyuduğu geceyi beklemeyi planladılar. Kaptan geldiğinde, Ali Baba'dan geceyi geçirmek için bir yer istedi. Ali Baba çok iyi bir insandı ve tüccarı evine davet etti. Hizmetçisi, Morgiana adındaki zeki kızdan misafire yardım etmesini istedi. Kız, lambalar için biraz yağ almaya bahçeye gitti ve küplerin içine gizlenmiş tehlikeli sırrı keşfetti."
+      },
+      {
+        "tr": "Morgiana çok zekiydi ve efendisini koruması gerektiğini biliyordu. Büyük bir tencere aldı ve yağı çok ısınana kadar kaynattı. Küpten küpe dolaştı ve kaynar yağı her birinin içine döktü. Bu şekilde, hırsızlar dışarı çıkamadan hepsini etkisiz hale getirdi."
+      },
+      {
+        "tr": "Daha sonra mutfağa döndü ve kaptanın çıkmasını bekledi. Kaptan adamlarının öldüğünü görünce şok oldu ve çok korktu. Canını kurtarmak için evden olabildiğince hızlı bir şekilde kaçtı. Ali Baba çok mutlu oldu ve hem kendi hayatını hem de ailesinin hayatını kurtardığı için Morgiana'ya teşekkür etti. Ona çok para verdi ve kız evde çok önemli bir kişi haline geldi."
+      },
+      {
+        "tr": "Hırsızların kaptanı hala çok kızgındı. Ali Baba'yı yenilgisi için öldürmek istiyordu. Şehre taşındı ve bir dükkan açtı. Birçok güzel ipek ve bıçak satın aldı. Başarılı bir tüccar oldu ve Ali Baba'nın oğluyla arkadaş oldu. Bir gün genç adam, tüccarı akşam yemeği için babasının evine davet etti."
+      },
+      {
+        "tr": "Kaptan çok mutluydu çünkü bu onun için bir fırsattı. Paltosunun altına keskin bir hançer sakladı. Eve girdiğinde, Morgiana onu hemen tanıdı. Bu adamın efendisini öldürmek isteyen düşman olduğunu biliyordu. Akşam yemeği konusunda çok endişelendi. Akşam yemeği partisi sırasında Ali Baba'yı bir kez daha kurtarması gerektiğine karar verdi."
+      },
+      {
+        "tr": "Parti sırasında Morgiana konuklar için dans etti. Güzel bir elbise ve parlak bir eşarp takmıştı. Herkes onu büyük bir neşeyle izledi. Ellerinde küçük bir davul taşıyordu. Aniden, kemerinden bir hançer çıkardı ve profesyonel biri gibi dans etti. Sonra tüccarın yanına yürüdü ve bıçağı hızla hareket ettirdi."
+      },
+      {
+        "tr": "Kaptanı kalbinden bıçakladı. Ali Baba başta çok şaşırdı ve kızdı. Hizmetçisinin neden misafirlerine saldırdığını anlamadı. Morgiana ona tüccarın aslında hırsızların kaptanı olduğunu söyledi. Ali Baba'ya adamın paltosunun altına sakladığı keskin hançeri gösterdi. Ali Baba sonunda her şeyi anladı ve sadakati için ona teşekkür etti."
+      },
+      {
+        "tr": "Ali Baba böyle akıllı ve cesur bir hizmetçisi olduğu için kendini çok şanslı hissediyordu. Morgiana'ya artık özgür olduğunu söyledi. Ona çok miktarda altın verdi ve o da oğluyla evlendi. Uzun yıllar boyunca büyük evde mutlu bir şekilde yaşadılar. Ali Baba bir daha asla sihirli mağaraya dönmedi."
+      },
+      {
+        "tr": "Ailesini güvende tuttu ve şehirde çok zengin bir adam oldu. Mağaranın sırrı sonsuza dek diğer herkes için gizli kaldı. Kırk hırsız gitmişti ve eve bir daha hiç sorun gelmedi. Ali Baba ve ailesi her gün huzurlu hayatlarının tadını çıkardılar. Hayatlarını kurtaran ve onlara mutluluk ile huzur getiren o cesur kızı her zaman hatırladılar."
+      }
+    ],
+    "words": {
+      "woodcutter": {
+        "tr": "oduncu"
+      },
+      "robber": {
+        "tr": "hırsız"
+      },
+      "treasure": {
+        "tr": "hazine"
+      },
+      "cave": {
+        "tr": "mağara"
+      },
+      "magic": {
+        "tr": "büyü"
+      },
+      "wealthy": {
+        "tr": "zengin"
+      },
+      "greedy": {
+        "tr": "açgözlü"
+      },
+      "scale": {
+        "tr": "terazi"
+      },
+      "curious": {
+        "tr": "meraklı"
+      },
+      "jealous": {
+        "tr": "kıskanç"
+      },
+      "weigh": {
+        "tr": "tartmak"
+      },
+      "thief": {
+        "tr": "hırsız"
+      },
+      "trapped": {
+        "tr": "kapana kısılmış"
+      },
+      "sword": {
+        "tr": "kılıç"
+      },
+      "mercy": {
+        "tr": "merhamet"
+      },
+      "guilty": {
+        "tr": "suçlu"
+      },
+      "disguise": {
+        "tr": "kılık değiştirme"
+      },
+      "merchant": {
+        "tr": "tüccar"
+      },
+      "blindfold": {
+        "tr": "göz bandı"
+      },
+      "servant": {
+        "tr": "hizmetkar"
+      },
+      "boil": {
+        "tr": "kaynatmak"
+      },
+      "protect": {
+        "tr": "korumak"
+      },
+      "dagger": {
+        "tr": "hançer"
+      },
+      "loyalty": {
+        "tr": "sadakat"
+      },
+      "brave": {
+        "tr": "cesur"
+      },
+      "peaceful": {
+        "tr": "huzurlu"
+      }
+    }
+  },
+  "alice_wonderland": {
+    "title": {
+      "en": "Alice in Wonderland",
+      "tr": "Alice Harikalar Diyarında"
+    },
+    "paragraphs": [
+      {
+        "tr": "Alice, kız kardeşiyle birlikte nehrin kıyısında oturuyordu. Hava çok sıcak bir öğleden sonraydı ve Alice oldukça uykulu ve sıkılmış hissediyordu. Kız kardeşi bir kitap okuyordu ama kitabın içinde hiç resim yoktu. Alice, resimsiz bir kitabın pek ilgi çekici olmadığını düşündü. Papatyadan bir kolye yapmayı düşündü ama çok yorgundu."
+      },
+      {
+        "tr": "Aniden, pembe gözlü beyaz bir tavşan hızla yanından geçti. Tavşan cebinden bir saat çıkardı, saate baktı ve daha da hızlı koşmaya başladı. Alice çok şaşırmıştı çünkü daha önce hiç cebi veya saati olan bir tavşan görmemişti. Ayağa kalktı ve tarlada onun peşinden koştu. Onu bir çitin altındaki büyük bir tavşan deliğine girerken görecek kadar yetişmişti."
+      },
+      {
+        "tr": "Alice geri nasıl çıkacağını hiç düşünmedi. Tavşan deliğine atladı ve aşağı doğru düşmeye başladı. Delik uzun bir tünel gibiydi ve çok uzun süre düştü. Yavaşça düşerken tünelin yanlarına baktı. Duvarlarda dolaplar ve kitap rafları vardı."
+      },
+      {
+        "tr": "Askılarda asılı haritalar ve resimler gördü. Yanından geçerken bir raftan kavanoz aldı. Üzerinde Portakal Reçeli yazıyordu ama içi boştu. Alice kavanozu düşürüp aşağıdakilerden birini öldürmek istemedi, bu yüzden onu başka bir dolabın içine koydu. Düşmeye devam etti. Uykusu gelmeye başladı ve kedisi Dinah hakkında hayaller kurmaya başladı."
+      },
+      {
+        "tr": "Aniden bir çubuk ve kuru yaprak yığınının üzerine indi. Hiç incinmemişti ve hemen ayağa fırladı. Yukarı baktı ama yukarısı karanlıktı. Beyaz tavşanın tekrar önden koştuğunu gördü. Alice olabildiğince hızlı koştu ve tavşanın, Eyvah, geç kalacağım! dediğini duydu."
+      },
+      {
+        "tr": "Bir köşeyi döndü ve kendini birçok kilitli kapının olduğu uzun bir koridorda buldu. Odanın ortasında küçük bir cam masa vardı. Masanın üzerinde küçük, altın bir anahtar duruyordu. Anahtarı her kapıda denedi ama hepsi kilitliydi. Sonunda, bir perdenin arkasında çok küçük bir kapı gördü. Anahtar kilide tam uydu ve kapıyı açtı."
+      },
+      {
+        "tr": "Alice küçük kapıdan içeri baktı ve güzel bir bahçe gördü. Parlak çiçekleri ve serin çeşmeleriyle şimdiye kadar gördüğü en harika bahçeydi. Ancak kapı onun için çok küçüktü. Sadece başını içeri sokabiliyordu. Alice çok üzüldü ve ağlamak için yere oturdu."
+      },
+      {
+        "tr": "Kapıdan geçebilmek için hiç küçülüp küçülmeyeceğini merak etti. Sonra cam masayı hatırladı. Oraya geri koştu ve anahtarı aradı ama anahtar gitmişti. Aniden masanın altında küçük bir cam şişe fark etti. Şişenin üzerinde büyük, net harflerle 'Beni İç' yazan bir kağıt etiket vardı."
+      },
+      {
+        "tr": "Alice çok dikkatliydi. Ne olduğunu bilmeden bir şey içmek istemedi. Şişeye tekrar baktı ve güvenli olduğunu gördü. İçecekten biraz tatmaya karar verdi. Kirazlı tart, ananas ve fırında hindi gibi çok güzel bir tadı vardı."
+      },
+      {
+        "tr": "Şişeyi hızla bitirdi. Aniden Alice küçülmeye başladı. Sadece yirmi beş santim boyuna gelene kadar gittikçe küçüldü. Artık bahçeye açılan küçük kapıdan geçmek için mükemmel boyuttaydı. Mutlu hissederek kapıya doğru koştu ama aniden durdu. Altın anahtarı cam masanın üzerinde unuttuğunu ve artık ona ulaşamadığını fark etti."
+      },
+      {
+        "tr": "Anahtarı almak için zıplamaya çalıştı ama boyu çok kısaydı. Alice yoruldu ve tekrar ağlamak için oturdu. Etrafına baktı ve masanın altında küçük bir cam kutu gördü. Kutuyu açtı ve üzerinde meyveyle 'Beni Ye' yazan küçük bir kek buldu. Eğer keki yerse belki uzayabileceğini düşündü."
+      },
+      {
+        "tr": "Küçük bir parça yedi ve bekledi. Uzun süre hiçbir şey olmadı. Sonra aniden çok hızlı bir şekilde büyümeye başladı. Başı salonun tavanına çarptı. Artık öncekinden çok daha büyüktü ve kapı tekrar küçücüktü. Bu tuhaf yeni boyutu yüzünden kafası karıştığı ve üzüldüğü için çok gözyaşı döktü."
+      },
+      {
+        "tr": "Alice etrafında büyük bir tuzlu su havuzu oluşana kadar ağlamaya devam etti. Çok geçmeden bir şapırtı sesi duydu ve kendisine doğru yüzen birçok tuhaf hayvan gördü. Aralarında bir Ördek, bir Dodo, bir Papağan ve bir Kartal yavrusu vardı. Hepsi derin suyun içinde ıslak ve rahatsızdı. Alice onlarla birlikte hızlıca kıyıya doğru yüzdü."
+      },
+      {
+        "tr": "Kıyıya ulaştılar ve ıslak tüylerini ve kürklerini sallayarak dışarı çıktılar. Grup çok dağınık görünüyordu ve oldukça üşümüşlerdi. Nasıl kuruyacaklarına karar vermek için küçük bir toplantı yaptılar. Dodo, herkesin tekrar ısınmasına yardımcı olmak için bir Toplantı Yarışı önerdi. Daire şeklinde koşmaya başladılar ama yarışın net bir başlangıcı veya bitişi yoktu. Herkes yorulup kuruyana kadar koştu."
+      },
+      {
+        "tr": "Yarıştan sonra hayvanlar kurumuştu ama hala çok aç ve yorgun hissediyorlardı. Dodo, yarışı kazandığı için Alice'ten bir ödül istedi. Alice kafası karışmış hissediyordu çünkü ceplerinde hiç hediyesi yoktu. Cebine uzandı ve bir kutu küçük şekerleme buldu. Ödül olarak her hayvana birer tane verdi."
+      },
+      {
+        "tr": "Sonra Dodo, Alice'e başka nesi olduğunu sordu. Cebinde bir yüksük buldu ve onu Dodo'ya verdi. Dodo yüksüğü aldı ve hediye olarak Alice'e geri verdi. Alice bu oyun karşısında çok tuhaf hissetti. O yüksüğü kabul ederken herkes etrafında durup alkışladı. Çok saçma bir partiydi ama Alice uzun ve zorlu günden sonra kendini biraz daha iyi hissetti."
+      },
+      {
+        "tr": "Alice kedisi Dinah hakkında konuşmaya başladı. Hayvanlara Dinah'nın fareleri ve küçük kuşları yakalamada çok başarılı olduğunu anlattı. Ancak hayvanlar bu hikayeden hiç hoşlanmadılar. Papağan ve kartal yavrusu çok korktular ve hızlıca uçup gittiler. Kısa süre sonra tüm hayvanlar kıyıyı terk etti ve ağaçların arasında kayboldular."
+      },
+      {
+        "tr": "Alice tekrar yalnız hissetti ve biraz ağlamaya başladı. Kedisiyle birlikte evine dönmeyi diledi. İçinde bulunduğu bu tuhaf dünyayı hiç anlayıp anlayamayacağını merak etti. Suyun kenarında tek başına oturdu ve hayatı hakkında düşündü. Dünya, onun gibi küçük bir kız için çok büyük ve çok kafa karıştırıcı geliyordu. Yürümeye devam etmeye ve daha fazla macera aramaya karar verdi."
+      },
+      {
+        "tr": "Alice ormanda yürürken aniden yüksek bir ses duydu. Bu yine Beyaz Tavşandı. Eldivenlerini ve yelpazesini arıyordu. Çok endişeliydi ve hızlı bir sesle kendi kendine konuşuyordu. Alice'in Mary Ann adındaki hizmetçisi olduğunu sanıyordu. Ona hemen evine gidip eldivenlerini ve yelpazesini getirmesini emretti."
+      },
+      {
+        "tr": "Alice çok şaşırdı ama onunla tartışmak istemedi. Tavşanın evine doğru koşmaya başladı. Neden onun bir hizmetçi olduğunu düşündüğünü bilmediği için kafası karışmıştı. Yol boyunca hızlıca yürüdü ve küçük bir ev aradı. Kapısında parlak bir pirinç levha olan düzenli bir bina gördü. Burası Beyaz Tavşanın eviydi. Oradan ayrılabilmek için bu işi hemen bitirmek istiyordu."
+      },
+      {
+        "tr": "Evin içine girdi ve içinde bir masa bulunan bir oda buldu. Masanın üzerinde bir çift küçük beyaz çocuk eldiveni ve bir yelpaze vardı. Onları aldı ama aynı zamanda bir şişe sıvı da gördü. Susamıştı ve ondan biraz içmeye karar verdi. Şişenin tadı vişneli tart ve ananas gibi tatlıydı. Aniden Alice çok hızlı bir şekilde büyümeye başladı."
+      },
+      {
+        "tr": "Başı tavana çarptı ve kolları duvarlara dayandı. Bacakları küçük oda için çok uzundu. Kendini çok rahatsız ve sıkışmış hissetti. Ev artık onun için çok küçüktü. Kapıyı itmeye çalıştı ama çok büyüktü. İçeceğin onu tekrar değiştirdiğini fark etti. Küçük bir evdeki dev olduğu için endişelendi."
+      },
+      {
+        "tr": "Beyaz Tavşan evine geri döndü. Kapıyı açmaya çalıştı ama Alice omzuyla engelliyordu. Çok kızgındı ve Bill adındaki bahçıvanına seslendi. Bill'in gelip engeli kaldırmasına yardım etmesini istedi. Alice kapının dışında konuştuklarını duydu. Ayağını tekmeledi ve yüksek bir ses çıkardı."
+      },
+      {
+        "tr": "Tavşan ve Bill korktular ve kaçtılar. Alice biraz hava almak için pencereyi açmaya karar verdi. Kolunu hareket ettirdi ve yanlışlıkla bir saksıya çarptı. Tekrar çok üzgün ve yalnız hissetti. Yerde küçük bir kek görene kadar uzun süre bekledi. Onu yedi, tekrar küçülmesine yardımcı olacağını umuyordu. Evden kaçıp yolculuğuna devam etmek istiyordu."
+      },
+      {
+        "tr": "Alice küçük keki yedi ve küçülmeye başladı. Çok minik olana kadar gitgide küçüldü. Hızla evden dışarı atladı ve yeşil ormanın içine doğru koştu. Tekrar özgür olduğu için çok mutlu hissetti. Uzun bir süre yürüdükten sonra uzun, mavi bir mantar gördü. Mantarın tepesinde büyük bir tırtıl oturuyordu."
+      },
+      {
+        "tr": "Uzun bir pipo içiyordu ve Alice'e bakmıyordu. Çok sessiz ve sakindi. Alice onun önünde durdu ve konuşmasını bekledi. Yaratık garip ve mavi olduğu için utangaç hissetti. Sonunda tırtıl piposunu ağzından çıkardı ve ona baktı. Yavaş bir sesle 'Sen kimsin?' diye sordu. Bugün birçok kez değiştiği için Alice bu soruya nasıl cevap vereceğini bilmiyordu."
+      },
+      {
+        "tr": "Tırtıl, ağır gözleriyle Alice'e baktı. Alice kafası karışmış ve hüsrana uğramış hissetti. Ona artık kim olduğundan emin olmadığını söyledi. Birçok kez büyümüş ve küçülmüştü. Tırtıl onun dertlerini önemsemiyor gibiydi. Ondan kendini tekrar açıklamasını istedi."
+      },
+      {
+        "tr": "Alice konuşmaya çalıştı ama garip sorulardan yorulmuştu. Tırtıl ona sakin kalmasını söyledi. Sonra yavaşça ormanın içine doğru sürünerek uzaklaştı. Gitmeden önce, mantarın bir tarafının onu uzatacağını, diğer tarafının ise kısaltacağını söyledi. Alice mantara baktı. Tamamen yuvarlaktı. Çok açtı ve bilgiye susamıştı, bu yüzden kenarlarından iki parça koparmaya karar verdi."
+      },
+      {
+        "tr": "Alice mantarın iki parçasını dikkatlice tuttu. Bir parçadan küçük bir ısırık aldı ve ne olacağını görmek için bekledi. Aniden boynu çok uzadı. Uzun bir ağaç gibi havaya doğru yükseldi. Aşağı baktı ve yüzünün yakınında uçan bir kuş gördü."
+      },
+      {
+        "tr": "Boynu çok uzun ve ince olduğu için kuş Alice'in bir yılan olduğunu düşündü. Alice küçük bir kız olduğunu açıkladı ama kuş ona inanmadı. Sonra boyutunu tekrar değiştirmek için mantarın diğer parçasını yedi."
+      },
+      {
+        "tr": "Normal boyuna gelmek için çok çabaladı. Bu değişimlerden sonra kendini çok garip hissetti ama ormandaki uzun yürüyüşüne devam etmeye hazırdı. Beyaz Tavşan'ı bulmak ve büyülü bahçeyi keşfetmek istiyordu."
+      }
+    ],
+    "words": {
+      "tunnel": {
+        "tr": "tünel"
+      },
+      "curtain": {
+        "tr": "perde"
+      },
+      "fountain": {
+        "tr": "çeşme"
+      },
+      "shrink": {
+        "tr": "küçülmek"
+      },
+      "label": {
+        "tr": "etiket"
+      },
+      "prize": {
+        "tr": "ödül"
+      },
+      "thimble": {
+        "tr": "yüksük"
+      },
+      "servant": {
+        "tr": "hizmetkar"
+      },
+      "obstacle": {
+        "tr": "engel"
+      },
+      "caterpillar": {
+        "tr": "tırtıl"
+      },
+      "mushroom": {
+        "tr": "mantar"
+      },
+      "pipe": {
+        "tr": "pipo"
+      },
+      "edge": {
+        "tr": "kenar"
+      },
+      "argue": {
+        "tr": "tartışmak"
+      },
+      "better": {
+        "tr": "daha iyi"
+      },
+      "confusing": {
+        "tr": "kafa karıştırıcı"
+      },
+      "crawled": {
+        "tr": "süründü"
+      },
+      "daisy": {
+        "tr": "papatya"
+      },
+      "edges": {
+        "tr": "kenarlar"
+      },
+      "flowers": {
+        "tr": "çiçekler"
+      },
+      "fountains": {
+        "tr": "çeşmeler"
+      },
+      "frustrated": {
+        "tr": "hüsrana uğramış"
+      },
+      "hedge": {
+        "tr": "çit"
+      },
+      "height": {
+        "tr": "yükseklik"
+      },
+      "immediately": {
+        "tr": "derhal"
+      },
+      "inches": {
+        "tr": "inç"
+      },
+      "labeled": {
+        "tr": "etiketlenmiş"
+      },
+      "liquid": {
+        "tr": "sıvı"
+      }
+    }
+  },
+  "anne_green_gables": {
+    "title": {
+      "en": "Anne of Green Gables",
+      "tr": "Green Gables'lı Anne"
+    },
+    "paragraphs": [
+      {
+        "tr": "Bayan Rachel Lynde, Avonlea'nın küçük kasabasında, yol kenarındaki bir evde yaşıyordu. Köyde olup biten her şeyi izlemeyi seven, çok meşgul bir kadındı. Güneşli bir öğleden sonra penceresinin kenarında otururken, Matthew Cuthbert'in atı ve arabasıyla çiftliği Green Gables'tan uzaklaştığını gördü. Bu çok tuhaftı çünkü Matthew gün içinde evinden nadiren çıkan sessiz bir adamdı. En iyi takım elbisesini giymişti ve tren istasyonuna doğru gidiyordu. Bayan Lynde, Matthew'un planlarını çok merak etti. Matthew'un neden bu kadar alışılmadık bir zamanda seyahat ettiğini öğrenmek için o günün ilerleyen saatlerinde kız kardeşi Marilla'yı ziyaret etmesi gerektiğine karar verdi. Cuthbert ailesinin hayatlarını çok gizli tuttuklarını biliyordu ama onların sırlarını öğrenmeye kararlıydı."
+      },
+      {
+        "tr": "Bayan Lynde Green Gables'a vardığında, Marilla Cuthbert'i mutfakta çalışırken buldu. Marilla uzun, ince ve çok ciddi görünen bir kadındı. Komşusunu gördüğüne şaşırdı ama onu içeri davet etti. Bayan Lynde hemen Matthew'u ve istasyona yaptığı yolculuğu sordu. Marilla, Matthew'a ağır çiftlik işlerinde yardım etmesi için bir yetimhaneden genç bir çocuğa ihtiyaçları olduğunu açıkladı. Bayan Lynde'e, on ya da on bir yaşlarında bir erkek çocuk evlat edinmeye karar verdiklerini söyledi. Marilla, bir erkek çocuğun Matthew için çok zorlaşan günlük işlere yardım edecek kadar güçlü olacağına inanıyordu. Bu haber, sessiz evlerine bir yabancı getirmenin riskli bir fikir olduğunu düşünen Bayan Lynde'i şok etti."
+      },
+      {
+        "tr": "Bayan Lynde, Marilla'yı bir çocuk evlat edinmenin tehlikeli bir deney olduğu konusunda uyardı. Ona, daha sonra evlerini yakan bir çocuk evlat edinen bir aileden bahsetti. Marilla sessizce dinledi ama kararında kararlı kaldı. Uzun zamandır bunu düşündüklerini ve çocuk için iyi bir yuva sağlamaya hazır olduklarını açıkladı. Onlar konuşurken, Marilla akşam gelecek yeni çocuk hakkında düşündü. Green Gables'taki hayatlarına mükemmel bir şekilde uyum sağlayacak, yardımsever ve çalışkan bir çocuk bekliyordu. İki kadın da tren istasyonunda kendilerini büyük bir sürprizin beklediğinden habersizdi. Çok farklı türde bir çocuğun yakında hayatlarını sonsuza dek değiştireceğinden, huzurlu evlerine enerji ve hayal gücü getireceğinden haberleri yoktu."
+      },
+      {
+        "tr": "Matthew Cuthbert, yaşlı atını Bright River tren istasyonuna doğru giden sessiz yolda sürdü. İnsanlarla konuşmaktan kaçınan utangaç bir adamdı, bu yüzden yeni çocukla tanışacak olmaktan dolayı oldukça gergindi. Marilla ile sonunda hayatlarına bir yardımcı almaya karar verdikleri için her şeyin mükemmel olmasını istiyordu. İstasyona yaklaştığında, peronda bekleyen güçlü bir çocuk görmeyi umarak etrafına baktı. Ancak istasyon çoğunlukla boştu ve yardımcıdan eser yoktu. Matthew, planının yanlış gidip gitmediğini veya yetimhane yetkililerinin mesajı yanlış anlayıp anlamadığını merak ederek küçük bekleme odasına doğru yürürken endişelendi."
+      },
+      {
+        "tr": "İstasyonun içinde Matthew hiçbir erkek çocuk görmedi. Bunun yerine, ahşap bir bankta tek başına oturan zayıf bir kız çocuğu buldu. Üzerinde çok eski, solmuş bir elbise ve garip bir şapka vardı. Sırtına kadar inen iki uzun örgülü, parlak kızıl saçları vardı. Matthew'u görünce yüzü heyecanla aydınlandı. Küçük çantasını tutarak hemen yerinden fırladı ve kocaman bir gülümsemeyle ona doğru koştu. Birinin gelmesini ne kadar çok beklediğini anlatarak çok hızlı konuşmaya başladı. Matthew, saman taşımaya ve tarlalarda çalışmaya yardımcı olabilecek bir erkek çocuk beklediği için kızın karşısında şaşkınlıkla durakladı ve ona bakakaldı."
+      },
+      {
+        "tr": "Kız, tren penceresinden gördüğü güzel ağaçlar ve çiçekler hakkında konuşmaya devam etti. Çok geniş bir hayal gücü vardı ve Matthew'u şaşırtan birçok uzun, karmaşık kelime kullanıyordu. Birkaç kez konuşmaya çalıştı ama kız çok mutlu ve istekli olduğu için onu dinleyemiyordu. Matthew kalbinde garip bir his hissetti; daha önce hiç onun gibi biriyle tanışmamıştı. Bu kızın ihtiyaç duyduğu yardımcı olmadığını anladı ama ona gerçeği nasıl söyleyeceğini bilemedi. O kadar umutlu ve mutlu görünüyordu ki, onu geride bırakmayı düşünmek bile ona kendini kötü hissettirdi. Marilla'nın bu beklenmedik sorunu çözmesine yardımcı olabilmesi için önce onu eve götürmeye karar verdi."
+      },
+      {
+        "tr": "Green Gables'a yolculuk uzun sürdü ve Matthew yol boyunca kendini çok rahatsız hissetti. Adının Anne olduğunu söyleyen kız, tek bir an bile susmadı. Ağaçlar, rüzgar ve gün batımı hakkında öyle bir tutkuyla konuşuyordu ki, Matthew kulaklarına inanamıyordu. Elma ağaçlarını, bahçede duran beyaz elbiseli kraliçeler gibi tarif ediyordu. Az konuşan bir adam olan Matthew, sadece başını sallıyor veya ara sıra evet diyordu. Onun bitmek bilmeyen konuşmalarını hem şaşırtıcı hem de tuhaf bir şekilde hoş buldu. Bir erkek çocuk bekliyor olmalarına rağmen, dünyayı bu kadar büyü ve güzellikle gören başka bir çocukla hiç karşılaşmamıştı."
+      },
+      {
+        "tr": "Sonunda çiftlik evine vardıklarında güneş tepelerin ardında batıyor, gökyüzünü turuncu ve altın renklerine boyuyordu. Anne, Green Gables'a kocaman, parıldayan gözlerle baktı ve orayı dünyanın en güzel yeri olarak nitelendirdi. Eski evi hemen sevmiş görünmesi, Matthew'un yaptığı hata hakkındaki endişesini biraz olsun hafifletti. Yine de kız kardeşi Marilla'nın bu sürprize nasıl tepki vereceği konusunda çok endişeliydi. Marilla'nın düzeni sevdiğini ve çiftlikteki zor işlere yardım edecek bir erkek çocuk beklediğini biliyordu. Küçük bir kızı eve getirmek kesinlikle orijinal planlarının bir parçası değildi ve onları içeride bekleyen zor konuşmadan çekiniyordu."
+      },
+      {
+        "tr": "Marilla, yaklaştıklarını görünce kapıda şaşkın bir ifadeyle duruyordu. Matthew, istasyonda erkek çocuk olmadığını ve sadece bu kızın olduğunu açıkladığında Marilla'nın yüzü ciddileşti. Elleri önünde düzenli bir şekilde birleşmiş halde sessizce duran Anne'e baktı. Anne, Marilla'ya bir umut ve korku karışımıyla bakıyor, nazik bir söz bekliyordu. Serin akşam havasında sessizlik ağırlaştı. Matthew, iki kadının yüz yüze duruşunu izlerken çaresiz hissetti. Nihai kararı Marilla'nın vereceğini biliyordu ve içtenlikle onun da bu genç kızın parlak, hayal dolu gözlerinde özel bir şey görmesini umuyordu."
+      },
+      {
+        "tr": "Marilla, zayıf kıza inanamayarak baktı. Kızın kızıl saçlarını, çillerini ve üzgün ama umutlu gözlerini gördü. Matthew, kız kardeşine, çocuğun gidecek yeri olmadığını ve istasyondaki adamın onu orada bıraktığını söyledi. Marilla kafası karışmış bir haldeydi ve erkek olmayan bir çocuğu yanlarında tutamayacakları konusunda kararlıydı. Anne'e yatağına gitmesi gerektiğini söyledi, ancak önce biraz ekmek ve tereyağı yiyebilirdi. Anne yemek yerken çok sessizdi ama üzgün görünmüyordu. Mutfaktaki parlayan soba ve zemine vuran parlak gün ışığı gibi küçük şeylerden mutluluk duyarak etrafı merakla inceledi."
+      },
+      {
+        "tr": "Yatmak vakti geldiğinde, Marilla, Anne'i çatının altındaki küçük bir odaya götürdü. Oda çok sade olmasına rağmen, Anne hayran kalmıştı. Hemen hayal kurmaya başladı ve pencereyi büyülü bir dünyaya açılan bir kapı olarak adlandırdı. Küçük beyaz yatağa baktı ve uyuyacak bir yeri olduğu için mutlu oldu. Ancak, sabah gönderileceğini anlayınca Anne'in neşeli hali çabucak kayboldu. Marilla'ya onu gerçekten yetimhaneye geri gönderip göndermeyeceğini sordu. Anne, Green Gables'da gerçek bir yuva hayal ettikten sonra istenmemenin ne kadar zor olduğunu söyleyerek ağlamaya başladı."
+      },
+      {
+        "tr": "Marilla, kızı dinlerken kalbinin biraz yumuşadığını hissetti. Her zaman duygulara pek yer olmayan pratik bir hayat yaşamıştı, ancak Anne'in hüznü gerçek ve derindi. Anne'e yarın sabah bu konuyu daha detaylı konuşacaklarını söyledi ama kalabileceğine dair söz vermedi. Marilla odadan çıktıktan sonra, Anne yatağın yanına diz çöktü ve içten, uzun bir dua etti. Tanrı'dan Green Gables'da kalmasına yardım etmesini diledi. Evin kendi yuvası olduğunu hissetti ve bir şekilde Matthew ve Marilla ile sonsuza dek orada kalabileceği umuduna tutundu."
+      },
+      {
+        "tr": "Ertesi sabah Marilla, Anne'i tutup tutmama konusunda hâlâ kararsızdı. Görevini hatırlıyordu ama kızın Green Gables'ı ne kadar çok sevdiğini de görüyordu. Kahvaltı sırasında Anne alışılmadık derecede sessizdi ve kelimelerini özenle seçiyordu. O öğleden sonra yetimhaneye gönderilebileceğini bildiği için durumun ağırlığını açıkça hissediyordu. Matthew onun üzüntüsünü fark etti ve ona çok acıdı. Marilla'ya baktı ve işlerin nasıl gideceğini görmek için onu biraz daha yanlarında tutabileceklerini söylemeye çalıştı. Marilla, aktif hayal gücüne sahip bu zayıf, kızıl saçlı kız yüzünden huzurlu hayatının karmaşıklaştığını hissederek iç geçirdi."
+      },
+      {
+        "tr": "Marilla, işlerini bitirdikten sonra Anne'i Bayan Rachel Lynde'i görmeye götürmeye karar verdi. Bayan Lynde, Avonlea'daki en konuşkan kişiydi ve çocuk hakkında bilgi sahibi olması gerekiyordu. Vardıklarında Bayan Lynde, Anne'e çok eleştirel bir ifadeyle baktı. Anne'in zayıf, çirkin olduğunu ve havuç renginde saçları olduğunu belirtti. Anne aniden sinirlendi ve Bayan Lynde'e bağırarak onun çok kaba olduğunu söyledi. Marilla, kızın ani çıkışı karşısında şoke oldu. Hiçbir çocuğun bir yetişkinle bu şekilde konuştuğunu görmemişti ama Anne'in komşunun kaba sözlerinden derin bir yara aldığını da fark etmişti."
+      },
+      {
+        "tr": "Eve dönerken Marilla, kötü davranışından dolayı Anne'i azarladı. Anne, özellikle dış görünüşü hakkındaki bu tür hakaretleri kabul edemeyeceğini açıkladı. Marilla sertti ama içten içe kızın güçlü bir kişiliği ve gururu olduğunu fark ediyordu. Sonunda Green Gables'a döndüklerinde Marilla ne yapacağı konusunda daha da kafası karışmış durumdaydı. Çiftlikte yardım etmesi için bir erkek çocuk istemişti ama bu kızın çok özel birisi olduğunu görmeye başlıyordu. Bahçeden yürürken güneş batıyordu ve çiftlik her zamankinden daha güzel görünüyordu. Marilla, Anne'i tutup tutmama kararının artık hayatındaki en önemli seçim olduğunu biliyordu."
+      }
+    ],
+    "words": {
+      "orphanage": {
+        "tr": "yetimhane"
+      },
+      "adopt": {
+        "tr": "evlat edinmek"
+      },
+      "chore": {
+        "tr": "angarya"
+      },
+      "braid": {
+        "tr": "örgü"
+      },
+      "passion": {
+        "tr": "tutku"
+      },
+      "dread": {
+        "tr": "dehşet"
+      },
+      "sincerely": {
+        "tr": "içtenlikle"
+      },
+      "freckles": {
+        "tr": "çiller"
+      },
+      "sincere": {
+        "tr": "samimi"
+      },
+      "prayer": {
+        "tr": "dua"
+      },
+      "outburst": {
+        "tr": "patlama"
+      },
+      "stern": {
+        "tr": "sert"
+      },
+      "insult": {
+        "tr": "hakaret"
+      },
+      "appearance": {
+        "tr": "görünüş"
+      },
+      "braids": {
+        "tr": "örgüler"
+      },
+      "complex": {
+        "tr": "karmaşık"
+      },
+      "constant": {
+        "tr": "sürekli"
+      },
+      "determined": {
+        "tr": "kararlı"
+      },
+      "dreaded": {
+        "tr": "korkulan"
+      },
+      "energy": {
+        "tr": "enerji"
+      },
+      "expected": {
+        "tr": "beklenen"
+      },
+      "helper": {
+        "tr": "yardımcı"
+      },
+      "immediately": {
+        "tr": "derhal"
+      },
+      "knelt": {
+        "tr": "diz çöktü"
+      },
+      "neatly": {
+        "tr": "düzenli"
+      },
+      "nodded": {
+        "tr": "başını salladı"
+      },
+      "sighed": {
+        "tr": "iç çekti"
+      }
+    }
+  },
+  "ant_grasshopper": {
+    "title": {
+      "en": "The Ant and the Grasshopper",
+      "tr": "Karınca ve Çekirge"
+    },
+    "paragraphs": [
+      {
+        "tr": "Parlak ve güneşli bir yaz günü. Büyük mavi gökyüzünde güneş çok sıcak. Tarlada her yer yeşil ve güzel. Küçük bir karınca kuru toprağın üzerinde yürüyor. Karınca bugün çok meşgul. Birçok yiyecek parçası buluyor. Yiyecekleri toprağın altındaki evine taşıyor. Her dakika çok çalışıyor. Kış için yiyeceği olsun istiyor. Hava şimdi güzel ama o kışın soğuk olduğunu biliyor. Durmuyor. Sırtında büyük bir mısır tanesi taşıyor. O çok akıllı bir karınca çünkü geleceğe hazırlanıyor. Birçok kez gidip geliyor. Yorgun ama mutlu. Yeşil çimlere bakıyor ve daha çok çalışıyor. Karınca çalışmayı seviyor."
+      },
+      {
+        "tr": "Bir çekirge yakındaki uzun yeşil bir yaprağın üzerinde oturuyor. O mutlu ve tembel bir böcek. Çok yüksek sesle bir şarkı söylüyor. Bütün gün müziğini çalıyor. Hiç çalışmıyor. Mısır taşıyan karıncayı görüyor. Küçük karıncaya gülüyor. Karıncanın çok aptal olduğunu düşünüyor. Çekirge sıcak güneşin altında eğleniyor. Yapraktan yaprağa zıplıyor. Büyük çiçeklerin altında uyuyor. Soğuk günler umurunda değil. Yazın sonsuza kadar süreceğini düşünüyor. Taze yapraklar yiyor ve diğer böcekler için şarkılarını söylüyor. Çok rahat hissediyor ve uzun yaz günlerinin tadını çıkarıyor. Kış ayları için hiç yiyecek saklamıyor."
+      },
+      {
+        "tr": "Karınca çekirgeye bakıyor. Arkadaşının şarkı söyleyip oynadığını görüyor. Karınca çekirgeyle konuşuyor. Çekirgeye çok çalışmasını söylüyor. Karınca kışın yakında geleceğini söylüyor. Çekirgeye de yiyecek taşımasını söylüyor. Çekirgenin güvende ve tok olmasını istiyor. Ama çekirge sadece daha çok gülüyor. Güneşin sıcak olduğunu ve hayatın güzel olduğunu söylüyor. Karıncaya sıkı çalışmasını bırakmasını ve kendisiyle oturmasını söylüyor. Karınca başını sallıyor. Ağır mısırını taşımaya devam ediyor. Karınca evine geri dönüyor ve çok meşgul kalıyor. Müziği görmezden geliyor ve güneş uzun tepelerin arkasında batana kadar çalışıyor."
+      },
+      {
+        "tr": "Yaz güneşi şu an çok sıcak. Günler uzun ve parlak. Karınca her gün sıcak güneşin altında çalışıyor. Daha fazla tahıl ve küçük tohumlar buluyor. Toprağın altındaki evi güzel yiyeceklerle dolu. Mola vermek için durmuyor. Küçük sırtında ağır şeyler taşıyor. O çok güçlü bir karınca. Çekirge, karıncayı yeşil yaprağından izliyor. Hala müziğini çalıyor ve yüksek sesli şarkılar söylüyor. Karıncanın çok sıkıcı olduğunu düşünüyor. Çekirge karıncaya tekrar gülüyor. Yazın uzun ve mutlu olduğunu söylüyor. Karıncaya dinlenmesini ve güneşin altında kendisiyle müzik yapmasını söylüyor."
+      },
+      {
+        "tr": "Karınca bugün sıkı çalışmasını durdurmuyor. Ciddi bir yüz ifadesiyle çekirgeye bakıyor. Karınca arkadaşına kışın çok soğuk ve zor olduğunu söylüyor. Kar, yaz sıcağından sonra çok hızlı gelir diyor. Karınca soğuk günler için yiyeceğe ihtiyacı olduğunu açıklıyor. Rüzgar soğuk olduğunda yemek yemek istiyor. Çekirge bilge karıncayı dinlemiyor. Karıncanın çok fazla endişelendiğini düşünüyor. Çekirge havada yükseğe zıplıyor ve tekrar müziğini çalıyor. Yaz güneşini çalışamayacak kadar çok seviyor. Karıncanın sadece aptal bir böcek olduğunu düşünüyor."
+      },
+      {
+        "tr": "Güneş büyük tepelerin arkasına batmaya başlıyor. Gökyüzü şimdi turuncu ve kırmızı. Karınca gün için işini bitiriyor. Çok yorgun hissediyor ama çok güvende. Kış ayları için yeterince yiyeceği olduğunu biliyor. Uyumak için evine giriyor. Çekirge hala yaprağının üzerinde dışarıda. Yapacak hiçbir işi olmadığı için çok mutlu hissediyor. Aya ve yıldızlara bakıyor. Çok zeki bir çekirge olduğunu düşünüyor. Gelecek hakkında hiç endişelenmiyor. Gözlerini kapatıyor ve büyük çiçeklerin altında uyuyor."
+      },
+      {
+        "tr": "Yaz mevsimi yavaşça uzaklaşıyor. Günler kısalıyor ve hava soğumaya başlıyor. Parlak yeşil çimler kahverengiye dönüyor. Bahçedeki birçok çiçek ölüyor. Karınca evinin içinde çok mutlu. Evi yerin derinliklerinde. Sıcak ve kuru. Her odada birçok yiyecek yığını var. Sandalyesine oturuyor ve kendini çok güvende hissediyor. Sıkı çalışmasına bakıyor ve gülümsüyor. Kış için birçok tohumu ve kuru yaprağı var. Soğuk havadan korkmuyor. Uzun kış günleri için hazır olduğunu biliyor. Karınca bilge ve yiyecekleri konusunda dikkatli."
+      },
+      {
+        "tr": "Dışarıda rüzgar hızlı ve gürültülü esiyor. Hava artık çok farklı. Sıcak güneş gitti. Çekirge uyanıyor ve bacaklarında keskin bir soğuk hissediyor. Yiyecek bir şeyler arıyor ama yer boş. Bahçede yeşil yapraklar veya çiçekler yok. Kayaların altını arıyor ama hiçbir şey bulamıyor. Çok aç ve yorgun hissediyor. Müziği duruyor çünkü çalacak enerjisi yok. Karıncayı ve onun büyük yiyecek evini hatırlıyor. Çekirge şimdi çok üzgün hissediyor. Soğuk kışın herkes için zor bir zaman olduğunu anlıyor."
+      },
+      {
+        "tr": "Çekirge karıncanın evine yürüyor. Vücudu soğuk rüzgardan titriyor. Kapıyı çok yavaşça çalıyor. Karınca kapıyı açıyor ve dışarı bakıyor. Karıncayı karda dururken görüyor. Çekirge çok zayıf ve çelimsiz görünüyor. Aç olduğunu ve yardıma ihtiyacı olduğunu söylüyor. Yiyecek hiçbir şeyi olmadığı için yiyecek bir şeyler istiyor. Karınca çekirgeye sessiz bir yüzle bakıyor. Sıkı çalıştığı yaz günlerini hatırlıyor. Karınca müzik çalan ve daha önce onu dinlemeyen çekirgeyi düşünüyor."
+      },
+      {
+        "tr": "Karınca zayıf çekirgeye bakar. Rüzgar çok soğuktur ve kar yere düşer. Karınca geçmiş yazı hatırlar. Sıcak güneşi ve yeşil çimleri hatırlar. Her gün yaptığı sıkı çalışmayı hatırlar. Çekirge tüm yaz boyunca dans etti ve şarkı söyledi. O çalışmadı. Kış için hiç yiyecek saklamadı. Şimdi çekirgenin midesi çok boş. Üşüyor ve çok korkuyor. Hayatta kalmak için biraz yiyecek istiyor. Karınca sıcak kapısında duruyor. Yaz mevsimindeki zamanı düşünüyor. O meşgul ve iyi bir işçi. Diğerleri güneşte oynarken o çalışır. Şimdi kış herkes için geldi."
+      },
+      {
+        "tr": "Çekirge karıncayla kısık bir sesle konuşur. Geçmişteki seçimleri için üzgün olduğunu söyler. Küçük bir parça yiyecek ister. Bugün sadece biraz yemek yemek istiyor. Uzun soğuktan dolayı çok zayıf ve güçsüzdür. Karınca onun üzücü sözlerini dinler. Karınca çekirgenin şimdi dürüst olduğunu bilir. Karınca arkadaşı için biraz üzülür. Kışın aç hayvanlar için tehlikeli olduğunu bilir. Çekirge beyaz karların üzerinde hareketsiz kalır. Karıncadan gelecek cevabı bekler. Soğuk hava cildini acıtır. Şimdi yardıma ihtiyacı var yoksa yaşayamaz. Karıncadan nazik bir kalp umut eder."
+      },
+      {
+        "tr": "Karınca gökyüzüne ve sonra çekirgeye bakar. O çok nazik bir karıncadır. Bugün aç ziyaretçiye yardım etmeye karar verir. Misafiri evinin içine davet etmek için kapısını ardına kadar açar. Ev sıcaktır ve iyi yiyeceklerle doludur. Çekirge kuru ve rahat evin içine yürür. Kardan kurtulduğu için çok mutludur. Küçük ateşin yanına oturur. Biraz tohum yer ve şimdi çok daha iyi hisseder. Karınca ona dinlenmesi için sıcak bir yer verir. Dışarıdaki fırtınadan güvendedirler. Çekirge bugün sıkı çalışmanın önemi hakkında büyük bir ders alır. Karıncanın geleceğe neden her zaman hazır olduğunu anlar."
+      },
+      {
+        "tr": "Çekirge sıcak evin etrafına bakıyor. Birçok yiyecek yığını görüyor. Tahıllar, tohumlar ve kuru yapraklar görüyor. Karınca yazın bu yiyecekleri biriktirmek için çok çalışıyor. Çekirge şimdi çok minnettar. İyi bir yemek yiyor. Ateş odayı çok sıcak yapıyor. Vücudunun tekrar güçlendiğini hissediyor. Karıncaya kocaman bir gülümsemeyle bakıyor. Hayatının güvende olduğunu biliyor çünkü karınca güneşli günlerde çalıştı. Kışın karınca gibi bir dosta sahip olduğu için mutlu."
+      },
+      {
+        "tr": "Evin dışı gece sessiz. Rüzgar duvarlara sert esiyor. Karınca ve çekirge ateşin başında birlikte oturuyorlar. Karınca çekirgeye işini anlatıyor. Her gün neden yemek biriktirdiğini açıklıyor. Soğuk havaya hazır olmak istiyor. Çekirge her kelimeyi dinliyor. Çok çalışmanın iyi bir yaşam için önemli olduğunu anlıyor. Akıllı bir hayvanın gelecek için plan yaptığını öğreniyor. Artık yaz mevsimindeki o tembel çekirge değil."
+      },
+      {
+        "tr": "Ertesi gün çok parlak ve beyaz. Kar uzun süre yerde kalıyor. Çekirge evin içinde karınca ile kalıyor. Karıncanın yeri temizlemesine yardım ediyor. Tohumları düzenlemeye yardım ediyor. Artık iyi arkadaşlar. Çekirge eskisi gibi tüm gün şarkı söylemiyor. Artık çalışıyor ve karıncaya yardım ediyor. Uzun kış boyunca birlikte yaşıyorlar. Bahar geri geldiğinde, çekirge nasıl çalışılacağını ve biriktirileceğini biliyor. O artık yeni kalpli yeni bir hayvan."
+      }
+    ],
+    "words": {
+      "ant": {
+        "tr": "karınca"
+      },
+      "grasshopper": {
+        "tr": "çekirge"
+      },
+      "summer": {
+        "tr": "yaz"
+      },
+      "work": {
+        "tr": "çalışmak"
+      },
+      "food": {
+        "tr": "yiyecek"
+      },
+      "winter": {
+        "tr": "kış"
+      },
+      "seed": {
+        "tr": "tohum"
+      },
+      "serious": {
+        "tr": "ciddi"
+      },
+      "snow": {
+        "tr": "kar"
+      },
+      "wise": {
+        "tr": "bilge"
+      },
+      "finish": {
+        "tr": "bitirmek"
+      },
+      "future": {
+        "tr": "gelecek"
+      },
+      "season": {
+        "tr": "mevsim"
+      },
+      "ground": {
+        "tr": "yer"
+      },
+      "cold": {
+        "tr": "soğuk"
+      },
+      "hungry": {
+        "tr": "aç"
+      },
+      "weak": {
+        "tr": "zayıf"
+      },
+      "knock": {
+        "tr": "tık tık vurmak"
+      },
+      "past": {
+        "tr": "geçmiş"
+      },
+      "stomach": {
+        "tr": "mide"
+      },
+      "honest": {
+        "tr": "dürüst"
+      },
+      "guest": {
+        "tr": "misafir"
+      },
+      "cozy": {
+        "tr": "sıcak"
+      },
+      "lesson": {
+        "tr": "ders"
+      },
+      "thankful": {
+        "tr": "minnettar"
+      },
+      "fire": {
+        "tr": "ateş"
+      },
+      "lazy": {
+        "tr": "tembel"
+      },
+      "organize": {
+        "tr": "düzenlemek"
+      }
+    }
+  },
+  "around_world": {
+    "title": {
+      "en": "Around the World in Eighty Days",
+      "tr": "Seksen Günde Dünya Turu"
+    },
+    "paragraphs": [
+      {
+        "tr": "1872 yılında Londra'daki Reform Kulübü, gizemli ve zengin Phileas Fogg'a ev sahipliği yapıyordu. Fogg, Savile Row'daki evinde tek başına yaşayan, katı alışkanlıkları olan ve sessiz bir adamdı. Bay Fogg, mükemmel bir dakiklik insanıydı; gününün tek bir saniyesini bile boşa harcamazdı. O akşam kulüpte arkadaşlarıyla oturmuş, gazeteleri okuyor ve İngiltere Bankası'ndaki son soygunu tartışıyorlardı. Sohbet, dünya çevresinde seyahat etme ihtimaline geldi. Yeni demiryolları ve vapurlar sayesinde, bazıları artık dünyanın seksen günde dolaşılmasının mümkün olduğunu iddia ediyordu. Diğerleri böyle bir yolculuğun öngörülemez tehlikelerle dolu olduğunu savunurken, Phileas Fogg sessiz ve sakindi, sadece bunun yapılabileceğini belirtiyordu."
+      },
+      {
+        "tr": "Kulüp üyeleri, dünya hala çok geniş ve tehlikeli bir yer olduğu için oldukça şüpheciydiler. Fikre güldüler ama Bay Fogg ciddiydi. Şakalardan veya gereksiz konuşmalardan hoşlanan bir adam değildi. Tezini kanıtlamak için arkadaşlarına resmi bir teklifte bulundu. Dünyanın çevresini tam olarak seksen günde dolaşabileceğine dair yirmi bin sterlinlik bir iddiaya girdi. Bunun imkansız bir görev olduğuna inanan arkadaşları, bahsi hızla kabul ettiler. Kendine has hassasiyetiyle, Phileas Fogg saatini kontrol etti ve tam zamanı not etti. Paris trenine yetişmek için o akşam Londra'dan ayrılması gerekiyordu. Bu, onun dayanıklılığını ve sözüne olan bağlılığını test edecek efsanevi zamanla yarışın başlangıcıydı."
+      },
+      {
+        "tr": "Phileas Fogg, uzun yolculuğuna hazırlanmak için hemen evine döndü. Yeni hizmetkarı, Jean Passepartout adındaki Fransız adama, bir saat içinde dünya turuna çıkacaklarını bildirdi. Kısa süre önce yoğun bir geçmişi geride bırakıp sakin Bay Fogg'un yanında çalışmaya başlayan Passepartout, sessiz bir hayat istiyordu. Ani haber karşısında şoke olmuştu ama yolculuk için temel eşyaları küçük bir çantaya yerleştirmekten başka şansı yoktu. Sadece önemli miktarda nakit parayla dolu büyük bir seyahat çantasını alan Bay Fogg, evinden çıktı. Londra'nın konforunu geride bırakarak tren istasyonuna doğru hızla ilerlediler. Macera gerçekten başlamıştı ve saat seksen gün sonraki son teslim tarihine doğru çoktan işlemeye başlamıştı."
+      },
+      {
+        "tr": "Paris treni tam planlandığı gibi hareket ederek Bay Fogg'u ve şaşkın hizmetkârı Passepartout'yu gecenin içine doğru taşıdı. Buharlı lokomotif kırsal bölgede hızla ilerlerken, Passepartout hayatındaki bu ani değişimi anlamlandırmakta güçlük çekiyordu. Önceki yıllarını basit ve düzenli bir varoluş arayışıyla geçirmişti ve şimdi kendini büyük bir hızla sınırlar arasında yolculuk ederken bulmuştu. Gözlerini gazetesine dikmiş, büyük görevlerinin ağırlığından etkilenmemiş gibi hareketsizce oturan efendisini izledi. Phileas Fogg tamamen sakindi; zihni, yolculuklarının bir sonraki ayağının lojistiğini çoktan hesaplıyordu. Dikkat dağıtıcı unsurları veya rahatsızlıkları görmezden gelmek için inanılmaz bir yeteneğe sahipti. Onun için bu yolculuk, keyif alınacak bir macera değil, mutlak odaklanma ve önceden belirlenmiş programa sıkı sıkıya bağlılık gerektiren matematiksel bir sorundu."
+      },
+      {
+        "tr": "Süveyş'e vardıklarında, yolcular, İngiltere Bankası'ndaki soygunun sorumlusu olan hırsızı yakalamak için görevlendirilmiş Dedektif Fix ile karşılaştılar. Fix, işlek limanda, şüpheli gözlerle gelen yolcuları izliyordu. Londra'dan gelen, alışılmadık bir amaç duygusuyla hareket eden uzun boylu ve sessiz adamı fark etti. Bay Fogg'un aradığı suçlu olduğuna inanan Fix, onu yakından gözlemlemeye başladı. Her detayın suçluluk psikolojisinin bir işareti olduğuna inanarak Fogg'un davranışlarını ve aceleci hareketlerini dikkatle inceledi. Fogg sadece vapurun zamanlamasıyla ilgilenirken, dedektif gizlice bir tuzak hazırlıyordu. İki adam aynı alanı paylaşırken gerilim arttı; biri, her adımını takip eden tehlikeli gölgeden tamamen habersizdi."
+      },
+      {
+        "tr": "Yolculuk, Fogg ve Passepartout'nun hızlı ve verimli bir vapur olan Mongolia'ya binmesiyle Bombay'a doğru devam etti. İlk şokun etkisinden kurtulmaya başlayan Passepartout, denizin manzaraları ve ziyaret ettikleri egzotik limanlar karşısında büyülendi. Ancak merakı, soğukkanlı efendisini sık sık rahatsız edecek şekilde onu küçük sorunların içine sokuyordu. Bu arada Bay Fogg, gemideki vaktini diğer yolcularla bezik oynayarak geçiriyor, her zamanki ustalığıyla küçük miktarlarda para kazanıyordu. Geçtikleri güzel manzaralara karşı tamamen kayıtsızdı ve büyük yolculuğu sanki parka yapılan günlük bir yürüyüşmüş gibi ele alıyordu. Saat durmaksızın işlemeye devam etti ve geçen her günle birlikte, hedefleri ile aralarındaki mesafe yavaşça azalarak yolcuları önlerinde bekleyen bilinmez zorluklara doğru yaklaştırdı."
+      },
+      {
+        "tr": "Mongolia, Bombay'a vardığında Phileas Fogg, kendilerini uçsuz bucaksız Hint kıtasından geçirecek olan yerel tren saatlerine odaklandı. Diğer yolcular şehrin ünlü mekanlarını ararken veya serinletici içecekler bulmaya çalışırken, Fogg hedefine odaklanmıştı. Passepartout ise hareketli pazarları keşfetmeye ve Hint sokaklarının canlı renklerine tanık olmaya hevesliydi. Efendisi tarafından her an tetikte ve kalkışa hazır olması konusunda uyarıldı. Efendisinin soğuk tavrına rağmen, kalabalık perona adım attığında Passepartout bir heyecan duyuyordu. Dikkatsizliğinin, onları keşif gezilerinin hayatta kalmasını zorlaştıracak ve yerel yetkililerle ciddi bir yanlış anlaşılmaya neden olacak bir duruma sürükleyeceğinden habersizdi."
+      },
+      {
+        "tr": "Doğal merakıyla hareket eden Passepartout, görkemli ve antik bir tapınağı ziyaret etmeye karar verdi. Tapınak kurallarının Hristiyanların ayakkabıyla girmesini kesinlikle yasakladığını bilmiyordu. Yaptığı hatanın ciddiyetini anlayamadan, kutsal binadaki varlığından derin rahatsızlık duyan üç öfkeli rahibin saldırısına uğradı. Yaşanan kargaşada zavallı uşak kaçmayı başardı ancak kargaşada ayakkabılarını ve şapkasını kaybetti. Trende tam zamanında yetişmek için panik içinde istasyona geri koştu. Efendisi, yaşanan gecikmeden ve yerel geleneklere gösterilen saygısızlıktan dolayı hayal kırıklığına uğramıştı; ancak rahiplerin olayı polise bildirdiğinden habersiz bir şekilde trene bindiler."
+      },
+      {
+        "tr": "Hindistan'da demiryoluyla yapılan yolculuk uzun ve yorucuydu, ancak Fogg dergilerini okuyup cep saatini kontrol ederek her zamanki gibi sakindi. Manzara, Bombay'ın kentsel telaşından iç kesimlerin vahşi, engebeli ormanlarına doğru değişti. Passepartout, daha önceki karşılaşmasından dolayı suçluluk duyarak sessiz kalmaya çalışıyor, bir yandan da kimsenin onları takip etmediğini umuyordu. Tren vagonundaki gerilim ağırdı; kıtanın yoğun sıcağı yolculuklarının ivmesini yavaşlatıyor gibiydi. Medeniyetten kilometrelerce uzakta, sık ormanlar ve Hint vahşi doğasının gizemiyle çevriliydiler. Trenin kısa süre sonra beklenmedik bir şekilde duracağını ve katı süreleri dolmadan hedeflerine ulaşmak için yeni bir yol bulmaya zorlanacaklarını henüz bilmiyorlardı."
+      },
+      {
+        "tr": "Tren, istasyondan yüzlerce mil uzakta, sık ve nemli bir ormanın ortasında aniden gürültüyle durdu. Demiryolu hattının henüz tamamlanmadığının duyurulmasıyla yolcular şaşkınlık içinde toplandı. Demiryolu hattının bitmiş iki bölümü arasında elli millik bir boşluk kalmıştı ve bu durum herkesi Hint yaban hayatının ortasında mahsur bırakmıştı. Phileas Fogg, yaşanan büyük gecikmeye rağmen saatini hassasiyetle kontrol ederek mükemmel bir soğukkanlılık sergiledi. Demiryolu şirketinin ihmali ya da yollarındaki ani engel hakkında şikayet ederek vakit kaybetmedi. Bunun yerine, hattın bir sonraki kısmına ulaşmak için hemen alternatif bir yol aradı. Onun sakin verimliliği, yolculuklarına nasıl devam edeceklerini merak ederek umutsuzca peronda volta atan diğer yolcuların hayal kırıklığıyla keskin bir tezat oluşturuyordu."
+      },
+      {
+        "tr": "Passepartout, ormanı kendi imkanlarıyla geçmekten başka çareleri olmadığını anladığında bu beklenmedik gelişme karşısında şok oldu. Fogg, yerel bir adamla yaptığı görüşme sonucunda, onları sık ve çalılık arazide taşıması için Kiouni adında bir fil kiralamayı başardı. Hayvan güçlüydü, ancak yolculuk öğleden sonra güneşinin yakıcı sıcağı altında yavaş ve rahatsız edici ilerliyordu. İlerledikçe grup trajik bir manzarayla karşılaştı. Uzak bir pagodanın yakınında, Aouda adında genç bir kadının 'suttee' adı verilen bir kurban ritüeline katılmaya zorlandığı bir cenaze alayı keşfettiler. Kadın, acımasız bir gelenek uğruna merhum kocasının cesediyle birlikte yakılmasını planlayan yerel muhafızların ve rahiplerin tutsağıydı."
+      },
+      {
+        "tr": "Bu üzücü manzarayı gizli bir yerden izleyen Fogg, durumun ciddiyetini kavradı. Katı programları için taşıdığı riske bakılmaksızın, genç dul kadını kurtarmak için olan cesur planını Passepartout'ya sessizce açıkladı. Böylesine korkunç bir adaletsizliği görmezden gelemezlerdi ve Fogg, soğuk ve mesafeli kişiliğine rağmen kadını kurtarmaya kararlıydı. Tehlikeli operasyona hazırlanırken orman havası gerginlikle ağırlaştı. Tören son aşamaya ulaşmadan önce müdahale etmek için en mükemmel anı bekleyerek büyük bir dikkatle gölgelerin arasından ilerlediler. Bu görev gereksiz bir sapmaydı ancak yolculuklarını yeniden tanımlayacak bir karakter sınavıydı. Her saniye önemliydi ve görevlerinin başarısı artık vahşi doğanın kalbindeki bu cesur insanlık eylemine bağlıydı."
+      },
+      {
+        "tr": "Kurban töreni zirveye ulaştığında, rahipler cenaze ateşini yakmaya hazırlandılar. Phileas Fogg ve arkadaşları, yoğun bitki örtüsü içinde sessizce bekliyor, muhafızların her hareketini dikkatle izliyorlardı. Son dualar başlarken, Passepartout zekice bir dikkat dağıtma planı yaptı. İnanılmaz bir hız ve çeviklikle gölgelerin arasından süzüldü ve genç dul kadını bir büyücü gibi ateşten çekip aldı. Yarattığı kargaşa kalabalık arasında tam bir kaos oluşturdu ve yaşanan karmaşadan yararlanan Fogg, Aouda'yı kapıp bekleyen fillerine doğru götürdü. Muhafızlar esirlerine ne olduğunu daha anlayamadan, grubumuz yoğun ormanın derinliklerine kaçmayı başardı."
+      },
+      {
+        "tr": "Kurtarma operasyonu, sıkı programlarından değerli saatleri tüketmiş olsa da büyük bir başarıyla sonuçlandı. Takipçilerinden uzaklaşmak ve güvenliklerini sağlamak için pagoda bölgesinden hızla uzaklaşıp ormanın derinliklerine daldılar. Ölümün kıyısından dönmüş olmanın şokuyla sersemleyen Aouda, kurtarıcılarına karşı derin bir minnet duygusu içindeydi. Fogg, her zamanki beyefendiliğiyle ona yiyecek ve teselli sağladı, ardından onu Hong Kong'daki güvenli bir yere götüreceğine dair söz verdi. Bahsinin riske girmesine rağmen, bu gecikmeden dolayı pişmanlık duymuyordu. Sakin ve metodik doğası değişmemişti, ancak bu olay stoacı kişiliğinin altında yatan merhametli tarafı ortaya çıkarmıştı."
+      },
+      {
+        "tr": "Aouda'nın artık kafilelerine katılmasıyla, grup fil üzerindeki uzun ve yorucu bir yolculuğun ardından bir sonraki tren istasyonuna ulaştı. Kalküta'ya giden tren hazır bekliyordu ve onlar da destansı yolculuklarına devam etmek için tam vaktinde trene bindiler. Fogg saatini memnuniyetle kontrol etti; kurtarma operasyonunun zaman çizelgelerini değiştirmiş olmasına rağmen, dünyayı dolaşma hedefinin hala ulaşılabilir olduğunu biliyordu. Lokomotif istasyondan uzaklaşırken, yolcular uzaktaki ormana geri baktılar. İmkansız bir zorluğun üstesinden gelmişlerdi ve önlerindeki yol hala uzun ve belirsiz olsa da, bir sonraki duraklarına doğru ilerlerken yeni bir birlik ve kararlılık duygusu hissediyorlardı."
+      }
+    ],
+    "words": {
+      "punctuality": {
+        "tr": "dakiklik"
+      },
+      "skeptical": {
+        "tr": "şüpheci"
+      },
+      "wager": {
+        "tr": "bahis"
+      },
+      "endurance": {
+        "tr": "dayanıklılık"
+      },
+      "bewildered": {
+        "tr": "şaşkın"
+      },
+      "undertaking": {
+        "tr": "girişim"
+      },
+      "suspicious": {
+        "tr": "şüpheli"
+      },
+      "indifferent": {
+        "tr": "kayıtsız"
+      },
+      "relentless": {
+        "tr": "amansız"
+      },
+      "logistics": {
+        "tr": "lojistik"
+      },
+      "subcontinent": {
+        "tr": "alt kıta"
+      },
+      "vigilant": {
+        "tr": "tetikte"
+      },
+      "pagoda": {
+        "tr": "pagoda"
+      },
+      "expedition": {
+        "tr": "keşif gezisi"
+      },
+      "momentum": {
+        "tr": "ivme"
+      },
+      "wilderness": {
+        "tr": "vahşi doğa"
+      },
+      "blistering": {
+        "tr": "kavurucu"
+      },
+      "procession": {
+        "tr": "alay"
+      },
+      "intervene": {
+        "tr": "müdahale etmek"
+      },
+      "sacrificial": {
+        "tr": "kurban"
+      },
+      "foliage": {
+        "tr": "yapraklar"
+      },
+      "distraction": {
+        "tr": "dikkat dağıtıcı"
+      },
+      "resounding": {
+        "tr": "yankı uyandıran"
+      },
+      "stoic": {
+        "tr": "metanetli"
+      },
+      "locomotive": {
+        "tr": "lokomotif"
+      },
+      "absolute": {
+        "tr": "mutlak"
+      },
+      "acknowledging": {
+        "tr": "kabul ederek"
+      },
+      "agility": {
+        "tr": "çeviklik"
+      },
+      "awaited": {
+        "tr": "beklenen"
+      }
+    }
+  },
+  "bambi": {
+    "title": {
+      "en": "Bambi",
+      "tr": "Bambi"
+    },
+    "paragraphs": [
+      {
+        "tr": "Güneş yeşil ormanda parlak bir şekilde parlıyordu. Kuşlar uzun ağaçlarda mutlu şarkılar söylüyordu. Bir çalılığın derinliklerinde küçük bir geyik doğdu. Çok küçüktü ve yumuşak tüylerinde benekleri vardı. Annesi ona sevgiyle baktı. Küçük geyik ilk kez titrek bacakları üzerinde ayağa kalktı. Dünyayı henüz bilmiyordu. Her şey onun için yeniydi. Hava ılık hissettiriyordu ve otlar toynaklarının altında yumuşaktı. Annesinin yanında olduğu için mutluydu. Yaprakların altındaki sessiz ve güvenli yerde kaldılar. Büyük ve geniş ormandaki hayatının ilk günüydü. Yavaş hareket etti ve dik durmayı öğrendi. Orman, küçük canlı için sakin ve güzeldi."
+      },
+      {
+        "tr": "Kısa süre sonra anne, bebeğiyle çalılıktan dışarı çıktı. Küçük geyik onu dikkatlice takip etti. Orman birçok tuhaf şeyle doluydu. Rüzgarın dalların arasından geçişini duydu. Havada uçuşan kelebekleri gördü. Küçük geyik biraz korktu ama annesi yanındaydı. O nazik ve iyi kalpliydi. Bir patikanın yakınında başka bir geyikle karşılaştılar. Anne, oğlunu diğerlerine tanıttı. Utangaç hissetti ve annesinin yanında kaldı. Diğer hayvanların uzun otların arasından geçişini izledi. Ormanın birçok hayvanın birlikte yaşadığı bir yer olduğunu öğrendi. Annesi bu yeşil ve büyük dünyadaki en iyi rehber olduğu için kendini güvende hissetti."
+      },
+      {
+        "tr": "Gün ilerledi ve orman çok aydınlık oldu. Küçük geyik daha iyi yürümeyi öğrendi. Bir ağaca tırmanan sincap ve bir çiçeğe konan küçük bir kuş gördü. Her şey ilginçti. Henüz ismini bilmiyordu ama annesi için önemli olduğunu biliyordu. Güneş battı ve gölgeler uzadı. Orman değişmeye başladı ama hala huzurluydu. Küçük geyik uzun yürüyüşünden sonra yorulmuştu. Annesinin yanında otların üzerine yattı. Annesi onu serin gece havasından korudu. Gözlerini kapattı ve uykuya daldı. Ormandaki gece sessizdi ve yıldızlar üzerlerinde parlamaya başladı."
+      },
+      {
+        "tr": "Bir sabah, küçük geyik annesiyle birlikte çayıra gitti. Çayır geniş, açık ve güneş ışığıyla doluydu. Böyle büyük, güneşli bir yerde olduğu için çok mutluydu. Çimler küçük ayaklarının altında yeşil ve yumuşaktı. Kendi etrafında koştu ve havaya doğru yükseklere zıpladı. Kendini güçlü ve hızlı hissetti. Annesi arkasından yavaşça yürüdü ve ona sevgiyle baktı. Ona dikkatli olması gerektiğini söyledi çünkü çayır sessiz orman gibi değildi. Çayırda etraflarındaki her şeyi görebiliyorlardı. Bambi parlak çiçeklere ve güzel mavi gökyüzüne baktı. Burada her şey farklı görünüyordu. Bu genç geyik için yeni bir dünyaydı ve her parçasını keşfetmek istiyordu."
+      },
+      {
+        "tr": "Aniden, Bambi çimlerin arasında başka bir genç geyik gördü. Çok meraklıydı ve yeni arkadaşıyla oynamak istedi. Diğer geyiğin adı Faline idi. Bambi'ye büyük, yumuşak gözleriyle baktı. Bambi başta biraz utandı ama sonra ona doğru yürüdü. Burunlarını birbirine değdirdiler ve birlikte koşmaya başladılar. Uzun, yeşil otların içinde birbirlerini kovaladılar. Onlar için çok mutlu bir gündü. Kuşlar ağaçlarda şarkı söyledi ve kelebekler ışıkta dans etti. Bambi artık yalnız olmadığını hissetti. Maceralarını paylaşacak bir arkadaşı vardı. Yorulana kadar oynadılar, sonra sıcak güneşin altında dinlenmek için birlikte oturdular."
+      },
+      {
+        "tr": "Onlar oynarken, yaşlı bir geyik çayırın kenarında belirdi. Uzun, güçlü ve çok sessizdi. O yanlarından geçerken diğer tüm hayvanlar sessizleşti. Kimseye bir şey söylemedi. Sadece orada durdu ve ormana baktı. Bambi ona büyük bir hayranlıkla baktı. Bu geyiğin çok önemli ve özel olduğunu hissetti. Annesi ona bunun ormanın Ulu Prens'i olduğunu söyledi. Ulu Prens bilgeydi ve evlerinin tüm sırlarını bilirdi. Genç geyiklerle oynamadı ama varlığı herkesin güvende hissetmesini sağladı. Bambi, Ulu Prens derin ve karanlık ağaçların arasına yavaşça geri dönene kadar onu izledi."
+      },
+      {
+        "tr": "Bir gün hava çok soğudu ve yapraklar ağaçlardan döküldü. Bambi annesinin değiştiğini fark etti. Artık daha ciddiydi. Ormanda yürüyüp yiyecek aradılar ama yeşil ot bulmak zordu. Hava incecikti ve rüzgar çok gürültülüydü. Bambi ormanın neden bu kadar sessiz olduğunu anlamadı. Ilık güneşi ve çayırın parlak çiçeklerini özledi. Annesi her zaman onun yakınında kaldı. Onu yaklaşan kıştan korumak istiyordu. Her şey kahverengi ve yaşlı göründüğü için Bambi biraz korktu. Annesine tamamen güvendiği için onu her yerde takip etti. Ormanın değiştiğini ve soğuk gecelere hazır olması gerektiğini öğrendi. Orman artık sadece güçlü olanların hayatta kalabileceği bir yere dönüşüyordu."
+      },
+      {
+        "tr": "Bambi ve annesi uyuyacak bir yer bulmak için ağaçların derinliklerine ilerlediler. Kar küçük, beyaz parçalar halinde yağmaya başladı. Yeri bir battaniye gibi kapladı. Bambi beyaz dünyaya baktı ve çok üşüdü. Bacakları yorulduğu için yavaş hareket ediyordu. Yumuşak otları özledi ama karda yürümeyi öğrenmek zorundaydı. Annesi ona, yiyecek kuru yapraklar ve kabuklar bulmak için karı nasıl kazacağını gösterdi. Tadı güzel değildi ama onları hayatta tuttu. Hayat genç geyik için basit ama zordu. Sık sık yazı ve çayırda geçirdiği mutlu günleri düşündü. Sıcak havanın geri geleceğini biliyordu ama sabırlı olmalı ve ruhunu güçlü tutmalıydı."
+      },
+      {
+        "tr": "Bir akşam uzaktan yüksek bir ses duydular. Bu bir insanın sesiydi. Orman hayvanları bu sesten korkarlardı. Annesi ona koşup gölgelere saklanmasını söyledi. Bambi kalın bir çalının arkasına hızlıca geçti. Çok sessizdi ve kıpırdamadı bile. Diğer hayvanların korkuyla kaçtığını gördü. Kalbinin göğsünde çok hızlı attığını hissetti. Nedenini bilmiyordu ama insanın tehlikeli olduğunu biliyordu. Annesi cesurdu ve onun yanında duruyordu. Herhangi bir tehlike işaretini gözlüyordu. Orman tekrar sessizleşene kadar uzun bir süre karanlıkta kaldılar. Bambi tehlikenin gerçek olduğunu ve bu büyük, vahşi dünyada güvende kalmak için annesini dinlemesi gerektiğini öğrendi."
+      },
+      {
+        "tr": "Kış, ormandaki herkes için çok uzun ve zordu. Soğuk rüzgar her gün ağaçların arasından esiyordu. Bambi kendini zayıf hissediyordu çünkü yiyecek pek bir şey yoktu. Parlak yeşil çayırı özlüyordu ama hareket etmeye devam etmesi gerektiğini biliyordu. Bir sabah, donmuş bir derenin kenarında eski arkadaşı Faline ile karşılaştı. Birbirlerine baktılar ve bir an için mutlu hissettiler. Faline de zayıf ve yorgundu ama cesurdu. Birlikte vakit geçirdiler ve derin karların içinde yavaşça yürüdüler. Böylesine zor bir dönemde bir arkadaşa sahip olmak güzeldi. Bahar ve yakında geri dönecek güneş hakkında konuştular."
+      },
+      {
+        "tr": "Bambi, kış boyunca babası İhtiyar Prens'i birçok kez gördü. Babası iri ve çok güçlüydü. Ormanda büyük bir gururla hareket ediyordu. Fazla konuşmuyordu ama Bambi onun yakınındayken kendini güvende hissediyordu. Bir öğleden sonra, dev bir çam ağacının altında birlikte durdular. İhtiyar Prens, bembeyaz ormana bilge gözlerle baktı. Bambi'ye nasıl sessiz kalacağını ve gölgelerdeki tehlikeye karşı nasıl tetikte olacağını öğretti. Bambi her kelimeyi dikkatle dinledi. Bir gün babası gibi olmayı çok istiyordu. Güçlü olmanın sadece kaslarıyla değil, aynı zamanda zihni ve ruhuyla da ilgili olduğunu öğrendi."
+      },
+      {
+        "tr": "Kış nihayet sona erdi ve güneş dünyayı yeniden ısıtmaya başladı. Karlar eridi ve küçük derelerde sular akmaya başladı. Yerde küçük yeşil bitkiler belirdi. Bambi her geçen gün kendini daha güçlü hissediyordu. Enerji dolu olduğu için zıplıyor ve ağaçların arasından koşuyordu. Orman uyanmaya başladı. Kuşlar dallarda şarkı söylüyor ve çiçekler çayırda açmaya başlıyordu. Bambi annesini buldu ve sıcak güneşin altında birlikte yürüdüler. Artık daha büyüktü ve dünyayı daha iyi anlıyordu. Yeni bir hayata hazırdı. Karanlık kış bitmişti ve güzel bahar nihayet gelmişti."
+      },
+      {
+        "tr": "Bahar güneşi ormanı ısıttı ve her şey yeniden yeni hissettirdi. Bambi artık başında küçük, keskin boynuzları olan genç ve güçlü bir erkek geyikti. Çayırda gururla yürüdü. Faline'i tekrar gördü ve o çok güzeldi. Yeşil çimenlerin üzerinde birlikte çok zaman geçirdiler. Bambi mutlu ve hayat hakkında heyecanlıydı. Artık küçük, korkak bir yavru değildi. Ormanı iyi anlıyordu ve nerede yiyecek bulacağını, nerede tehlikeden saklanacağını biliyordu. Rüzgar ona birçok ilginç koku taşıyordu. Kendini ormanların gerçek efendisi gibi hissediyordu. Uzun ağaçlara ve mavi gökyüzüne bakarak uzun kıştan sonraki sıcak günler için şükretti."
+      },
+      {
+        "tr": "Bir gün, Yaşlı Prens sessizce Bambi'nin yakınında belirdi. Yaşlı ve griydi ama hala çok güçlü görünüyordu. Prens konuşmadı ama Bambi'yi nazik, bilge gözlerle izledi. Bambi dik durdu ve babasının yanında olmaktan gurur duydu. Hiçbir şey söylemeden uzun süre birlikte yürüdüler. Yaşlı Prens, Bambi'ye hayatın bazen zor olduğunu ama doğanın onları desteklemek için her zaman orada olduğunu öğretti. Bambi'ye rüzgarın seslerini ve yaprakların hışırtısını nasıl duyacağını gösterdi. Bambi çok sessiz ve dikkatli olmayı öğrendi. Babasının sonsuza kadar orada olmayacağını ve yakında kendi hayatına liderlik etmeye hazır olması gerektiğini fark etti."
+      },
+      {
+        "tr": "Güneş batarken, orman sessiz ve huzurlu oldu. Bambi bir süre yalnız durdu ve öğrendiği her şeyi düşündü. Annesinin gittiğini biliyordu ama onun ruhunu hafif esintide hissetti. Berrak bir deredeki yansımasına baktı ve cesur, soylu bir geyik gördü. Dünya gizem doluydu ama Bambi artık korkmuyordu. O, ormanın bir parçasıydı ve oradaki yerini kabul etti. Ailesini bulmak için yeşil ağaçların derinliklerine yürüdü. Gece karanlıktı ama yıldızlar üzerinde parlak bir şekilde parlıyordu. Bambi, ormanın yeni Prensi olarak geleceğine hazır, kararlı bir kalple ileriye doğru yürüdü."
+      }
+    ],
+    "words": {
+      "forest": {
+        "tr": "orman"
+      },
+      "thicket": {
+        "tr": "çalılık"
+      },
+      "deer": {
+        "tr": "geyik"
+      },
+      "hoof": {
+        "tr": "toynak"
+      },
+      "guide": {
+        "tr": "rehber"
+      },
+      "shadow": {
+        "tr": "gölge"
+      },
+      "meadow": {
+        "tr": "çayır"
+      },
+      "curious": {
+        "tr": "meraklı"
+      },
+      "adventure": {
+        "tr": "macera"
+      },
+      "prince": {
+        "tr": "prens"
+      },
+      "wise": {
+        "tr": "bilge"
+      },
+      "explore": {
+        "tr": "keşfetmek"
+      },
+      "winter": {
+        "tr": "kış"
+      },
+      "snow": {
+        "tr": "kar"
+      },
+      "dangerous": {
+        "tr": "tehlikeli"
+      },
+      "survive": {
+        "tr": "hayatta kalmak"
+      },
+      "scared": {
+        "tr": "korkmuş"
+      },
+      "patient": {
+        "tr": "sabırlı"
+      },
+      "frozen": {
+        "tr": "donmuş"
+      },
+      "stream": {
+        "tr": "dere"
+      },
+      "pride": {
+        "tr": "gurur"
+      },
+      "melt": {
+        "tr": "erimek"
+      },
+      "energy": {
+        "tr": "enerji"
+      },
+      "antler": {
+        "tr": "boynuz"
+      },
+      "observant": {
+        "tr": "dikkatli"
+      },
+      "reflection": {
+        "tr": "yansıma"
+      },
+      "noble": {
+        "tr": "soylu"
+      }
+    }
+  },
+  "beauty_beast": {
+    "title": {
+      "en": "Beauty and the Beast",
+      "tr": "Güzel ve Çirkin"
+    },
+    "paragraphs": [
+      {
+        "tr": "Uzun zaman önce, büyük bir şehir evinde yaşayan çok zengin bir tüccar vardı. Altı çocuğu vardı: üç oğlu ve üç kızı. Bütün çocukları yakışıklıydı ama üç kızı özellikle çok güzeldi. En küçük kızın adı Belle idi, Fransızca'da 'Güzellik' anlamına geliyordu, çünkü gerçekten de hepsinin en güzeliydi."
+      },
+      {
+        "tr": "İnsanlar sık sık onun nazik yüzünü ve hoş gülüşünü hayranlıkla izlerdi. Tüccar bütün çocuklarını çok severdi. Birçok hizmetçi ve lüks eşya ile çevrili mutlu ve rahat bir hayat yaşıyorlardı. Hayat onlar için çok iyiydi ve tüccar ailesiyle ve başarılarıyla çok gurur duyuyordu. Sık sık önemli partilere katılır, muhteşem kıyafetler giyer ve zengin varlıklarının her anının tadını çıkarırlardı."
+      },
+      {
+        "tr": "Belle'in ablaları ondan oldukça farklıydı. Çok gururluydu ve zamanlarının çoğunu pahalı kıyafetler, mücevherler ve sosyal toplantılar düşünerek geçirirlerdi. Zenginliklerini göstermekten hoşlanırlar ve hiçbir iş yapmaktan hoşlanmazlardı. Ancak Belle alçakgönüllüydü ve babasına ve kardeşlerine her zaman yardım etmeye istekliydi."
+      },
+      {
+        "tr": "Kitap okumayı ve aile bahçesinde sessiz zaman geçirmeyi severdi. Gösterişli elbiselere veya büyük partilere önem vermezdi. İnsanlar Belle'i sadece dış güzelliği için değil, aynı zamanda nazik kalbi ve kibar doğası için de severdi. Ablaları onu sık sık basit olduğu ve sessiz aktiviteleri sevdiği için alaya alırlardı ama Belle umursamazdı. Basit zevklerinde mutluluk bulurdu."
+      },
+      {
+        "tr": "Bir gün, ailenin başına korkunç bir talihsizlik geldi. Tüccar tüm servetini kaybetti. Denizde çıkan ani ve şiddetli bir fırtına, değerli mallarının çoğunu taşıyan tüm gemilerini yok etti. Bir gecede çok fakir oldu. Aile, büyük şehir evlerini ve tüm güzel eşyalarını satmak zorunda kaldı."
+      },
+      {
+        "tr": "Eski lüks yaşamlarından uzakta, kırsalda küçük, mütevazı bir eve taşındılar. Hayat tamamen değişti. Oğullar tarlalarda çok çalışmak zorunda kaldı ve kızlar yemek pişirmek ve temizlik yapmak zorunda kaldı. Ablalar, yeni zorlu hayatlarından sürekli şikayet ettiler. Ama Belle, cesur ve nazik kalbiyle, herkese yardım etmek ve yeni basit evlerini rahat ve mutlu hissettirmek için elinden gelenin en iyisini yaptı."
+      },
+      {
+        "tr": "Kırsaldaki yaşam, eski yaşamlarından çok farklıydı. Birçok hizmetçisi olan büyük şehir evi gitmişti. Artık Belle ve kız kardeşleri her sabah erken kalkıyordu. Küçük evi temizlemek, basit yemekler pişirmek ve çamaşır yıkamak zorundaydılar. Belle tüm işlerini şikayet etmeden yapıyordu."
+      },
+      {
+        "tr": "Yerleri süpürüyor, ateşi yakıyor ve akşam yemeği için sebzeleri hazırlıyordu. Hatta bazen bahçede kardeşlerine yardım ediyor, tohum ekiyor ve çiçekleri suluyordu. Nazik doğası, işini kolaylaştırıyordu. Kız kardeşleri ise her görevi zor buluyordu. Sık sık yüksek sesle iç çekiyor ve eski rahat yataklarını ve süslü kıyafetlerini ne kadar özlediklerini söylüyorlardı. Belle onlara öğretmeye çalıştı ama onlar oturup geçmişlerini hayal etmeyi tercih ediyorlardı."
+      },
+      {
+        "tr": "Yeni basit yaşamlarına rağmen, tüccar geçmişteki servetini unutamıyordu. Sık sık pencerenin kenarında oturur, tarlalara bakar ve derin bir iç çekerdi. Kalabalık şehri, arkadaşlarını ve önemli iş toplantılarını özlüyordu. Bir gün, heyecan verici bir haber geldi. Herkesin fırtınada kaybolduğunu düşündüğü gemilerinden biri limana geri dönmüştü!"
+      },
+      {
+        "tr": "Hasar görmüştü ama değerli mallarının bir kısmı hala içindeydi. Bu, tüccar için küçük bir umut ışığıydı. \"Belki paramın bir kısmını geri alabilirim. Belki zor zamanlarımız yakında biter,\" diye düşündü. Birçok ay sonra ilk kez biraz mutluluk hissetti."
+      },
+      {
+        "tr": "Tüccar, gemisini ve kalan malları kontrol etmek için hemen şehre gitmeye karar verdi. Onları satmayı ve eve biraz para getirmeyi umuyordu. Ayrılmadan önce kızlarına sordu: \"Sevgili kızlarım, şehre gidiyorum. Size ne getirebilirim?\" Büyük kız kardeşler hemen pahalı şeyler düşündü. Biri, \"Bize güzel elbiseler getir!\" dedi."
+      },
+      {
+        "tr": "Diğeri, \"Ve tüylü yeni bir şapka!\" dedi. Üçüncüsü, \"Ben biraz güzel takı istiyorum!\" diye ekledi. Sakince okuyan Belle başını kaldırdı. \"Babacığım,\" dedi nazikçe, \"Ben sadece bir gül istiyorum. Kırsalda hiç yok ve ben onların kokusunu seviyorum.\" Tüccar, onun basit dileğine gülümsedi ve güzel bir gül bulmaya söz verdi."
+      },
+      {
+        "tr": "Tüccar, umutla dolu bir şekilde hareketli şehre uzun bir yolculuk yaptı. Servetini geri getireceğini düşündüğü gemisini görmeye heyecanlıydı. Ama sonunda limana vardığında, kötü haberler aldı. Gemi fırtınadan çok hasar görmüştü ve değerli mallarının çoğu deniz suyuyla bozulmuştu."
+      },
+      {
+        "tr": "Sadece çok küçük bir kısmını satabildi. Çok az para kazandı, beklediğinden çok daha az. Tekrar üzgün ve hayal kırıklığına uğramış hissetti, küçük umudu duman gibi çabucak kayboldu. Kızlarını ve pahalı dileklerini düşündü, o lüks hediyeleri alamayacağını fark etti. Yalnızca Belle için basit bir gül alacak kadar parası vardı, eğer bir tane bulabilirse."
+      },
+      {
+        "tr": "Ağır bir kalple, tüccar kalabalık şehri geride bıraktı. Kızlarıyla tekrar olmak isteyerek eve yolculuğuna başladı. Ancak atını sürerken, hava aniden ve şiddetle değişti. Soğuk karın yoğun bir şekilde düştüğü ve güçlü rüzgarların ağaçların arasından estiği şiddetli bir fırtına başladı. Tüccar sık, karanlık ormanda kayboldu."
+      },
+      {
+        "tr": "Atını saatlerce sürdü, ancak yolu görmek zordu. Çok üşümüştü, yorgundu ve vahşi hayvanlardan korkuyordu. Geceyi tehlikeli ormanda tek başına geçirmek zorunda kalacağını düşündü. Aniden, yoğun karların arasından, uzakta küçük, parlayan bir ışık gördü. Sanki bir güvenlik sözü gibiydi. Yorgun atını ona doğru yönlendirdi, bir sığınak ve sıcaklık umuduyla."
+      },
+      {
+        "tr": "Parlayan ışık onu görkemli ama çok tuhaf bir şatoya götürdü. Uzun, demir kapılar açıktı ve etrafta kimse yoktu. Yavaşça içeri girdi, karlar altında olmasına rağmen güzel bahçeye hayran kaldı."
+      },
+      {
+        "tr": "İçeride, şato boş olmasına rağmen sıcak ve davetkar hissettiriyordu. Şöminede büyük bir ateş cızırdıyordu ve uzun bir masa lezzetli yemeklerle doluydu. Tüccar çok aç ve yorgundu, bu yüzden şükranla yemek yedi ve ateşin yanında dinlendi."
+      },
+      {
+        "tr": "\"Kim yaşıyor burada? Neden kimse yok?\" diye düşündü. Dinlendikten sonra Belle'in basit gül dileğini hatırladı. Tekrar dışarı, büyülü bahçeye yürüdü. Ve orada, karların arasında, birçok güzel kırmızı gül gördü. Belle için en güzel olanı kopardı, biraz mutlu hissederek."
+      },
+      {
+        "tr": "Tüccar güzel kırmızı gülü dikkatle tuttu. Belle'i ve onun basit dileğini düşünerek gülümsedi. Gülü gördüğünde yüzündeki mutlu ifadeyi hayal etti. Bir anlığına sorunlarını ve soğuk, karanlık ormanı unuttu. Kalbinde küçük bir sıcaklık hissetti. Ama mutluluğu uzun sürmedi."
+      },
+      {
+        "tr": "Birden, garip ve korkunç bir ses sessiz geceyi böldü. Ayaklarının altındaki zemin biraz sallandı. Hava çok soğuk ve ağır oldu. Gergin bir şekilde etrafına baktı, gülümsemesi kaybolmuştu. Orman korkusundan çok daha güçlü, yeni bir tür korku hissetti. Bir şeyler yanlıştı, çok yanlıştı. Artık bu büyülü ama garip bahçede yalnız olmadığını biliyordu."
+      },
+      {
+        "tr": "Kalın çalılıkların arkasından devasa, karanlık bir figür belirdi. Tüccarın daha önce hiç görmediği bir canavardı. Büyük, tüylü bir vücudu, keskin pençeleri ve hem hayvan hem insan ama öfke dolu bir yüzü vardı. Gözleri karanlıkta kırmızı kırmızı parlıyordu ve ağzından derin, ürkütücü bir kükreme geldi. \"Sen!"
+      },
+      {
+        "tr": "Benim en değerli eşyamı nasıl çalmaya cüret edersin!\" diye bağırdı Canavar. Sesi gök gürültüsü gibiydi, tüccarı titretti. Şaşkınlıkla gülü düşürdü, kalbi çok hızlı atıyordu. Konuşmaya çalıştı ama ağzından tek kelime çıkmadı. Öfkeli yaratığa bakarak dehşet içinde donup kalmıştı."
+      },
+      {
+        "tr": "Canavar bir adım daha yaklaştı. \"Sana şatomda barınak, sıcaklık ve yiyecek sundum,\" diye homurdandı, sesi hala öfkeyle doluydu. \"Yemeğimi yedin, ateşimde dinlendin. Benim misafirimdin. Ve şimdi, benden çalmaya çalışıyorsun! En çok sevdiğim şeyi, güzel gülümü alıyorsun!\" Tüccar sonunda sesini buldu, küçük bir fısıltıyla."
+      },
+      {
+        "tr": "\"Efendim, ben sadece kızım için bir gül aldım. Bu onun tek dileğiydi.\" Canavar'ın gözleri kısıldı. \"Bunun için, ölmelisin! Ya da... kızlarından biri buraya gelip senin yerini almalı!\" Tüccarın kanı dondu. Kısa süren mutluluğu gitmiş, yerini mutlak bir çaresizliğe bırakmıştı."
+      },
+      {
+        "tr": "Tüccar atıyla evine döndü. Kalbi ağırdı. Belle'in gülü için hissettiği neşe tamamen gitmişti. Şimdi sadece korku onu dolduruyordu. Kızlarına nasıl söyleyecekti? Onlardan birini o korkunç Canavar'a gitmek üzere nasıl seçecekti?"
+      },
+      {
+        "tr": "Kendini dünyanın en kötü babası gibi hissediyordu. Saatler önce sıcak ve davetkar görünen kale, zihninde artık bir dehşet yeriydi. Güzel bahçe, yemek, barınak – bunların hepsi sadece bir hile, bir tuzaktı."
+      },
+      {
+        "tr": "Hala Canavar'ın kükremesini duyabiliyor, parlayan kırmızı gözlerini görebiliyordu. Vücudu soğuktan titriyordu ama bu gecenin soğuğu değildi. Bu, korku ve kederin soğukuydu. Hayatının bir daha asla eskisi gibi olmayacağını biliyordu."
+      },
+      {
+        "tr": "Eve geldiğinde kızları onu karşılamak için koştu. Babalarını gördükleri için heyecanlıydılar. \"Baba, geri döndün!\" diye mutlu bir şekilde bağırdılar. Ama babasının yüzünü gördüklerinde gülümsemeleri hızla kayboldu. Her zamanki nazik gözleri kırmızıydı ve yüzü solgundu. Çok yaşlı ve yorgun görünüyordu."
+      },
+      {
+        "tr": "\"Ne oldu baba?\" diye sordu en büyük kızı. Tüccar ağır adımlarla oturdu ve onlara her şeyi anlatmaya başladı. Büyük şato'dan, gülden ve korkunç Canavar'dan bahsetti. Onlara Canavar'ın talebini anlattı: ya onun hayatı ya da kızlarından birinin hayatı. Oda çok sessizleşti. İki abla kendileri için korkarak yüksek sesle ağlamaya başladı."
+      },
+      {
+        "tr": "Belle sessizce dinledi, yüzü ciddiydi. Kız kardeşleri gibi ağlamadı. O korkunç seçimi anladı. Omuzları hüzünden titreyen babasına baktı. Onu çok seviyordu. Ne yapması gerektiğini biliyordu. \"Baba,\" dedi yumuşakça, \"Ben gideceğim.\" Kız kardeşleri ağlamayı bıraktı ve şaşkınlıkla ona baktılar."
+      },
+      {
+        "tr": "\"Hayır, Belle, yapamazsın!\" dedi babası, gözleri yaşlıydı. \"Sana izin vermeyeceğim!\" Ama Belle kararlıydı. \"Benim gülüm içindi, Baba. Ben gideceğim. Seni kurtaracağım.\" İçinde garip bir korku ve kararlılık karışımı hissediyordu. Canavar'la yüzleşmeye hazırdı."
+      }
+    ],
+    "words": {
+      "merchant": {
+        "tr": "tüccar"
+      },
+      "beautiful": {
+        "tr": "güzel"
+      },
+      "proud": {
+        "tr": "gururlu"
+      },
+      "humble": {
+        "tr": "alçakgönüllü"
+      },
+      "wealth": {
+        "tr": "servet"
+      },
+      "storm": {
+        "tr": "fırtına"
+      },
+      "countryside": {
+        "tr": "kırsal"
+      },
+      "chores": {
+        "tr": "ev işleri"
+      },
+      "sighed": {
+        "tr": "iç çekti"
+      },
+      "damaged": {
+        "tr": "hasarlı"
+      },
+      "rose": {
+        "tr": "gül"
+      },
+      "disappointed": {
+        "tr": "hayal kırıklığına uğramış"
+      },
+      "forest": {
+        "tr": "orman"
+      },
+      "glowing": {
+        "tr": "parlayan"
+      },
+      "castle": {
+        "tr": "kale"
+      },
+      "inviting": {
+        "tr": "davetkar"
+      },
+      "care": {
+        "tr": "özen"
+      },
+      "strange": {
+        "tr": "tuhaf"
+      },
+      "terrible": {
+        "tr": "korkunç"
+      },
+      "beast": {
+        "tr": "canavar"
+      },
+      "steal": {
+        "tr": "çalmak"
+      },
+      "despair": {
+        "tr": "umutsuzluk"
+      },
+      "heavy": {
+        "tr": "ağır"
+      },
+      "tremble": {
+        "tr": "titremek"
+      },
+      "pale": {
+        "tr": "solgun"
+      },
+      "demand": {
+        "tr": "istek"
+      },
+      "firm": {
+        "tr": "kararlı"
+      },
+      "determination": {
+        "tr": "kararlılık"
+      }
+    }
+  },
+  "birthday_infanta": {
+    "title": {
+      "en": "The Birthday of the Infanta",
+      "tr": "İnfanta'nın Doğum Günü"
+    },
+    "paragraphs": [
+      {
+        "tr": "Güneş, kraliyet sarayının uçsuz bucaksız bahçelerinin üzerindeki turkuaz gökyüzünde asılı duran, dövme altından bir disk gibi parlıyordu. Bugün, İspanyol öğleden sonrasının boğucu sıcağıyla alay edercesine sergilenen olağanüstü ihtişam gösterileriyle damgalanan, Infanta'nın on ikinci doğum günüydü. Beyaz tavus kuşları, kuyruklarını saray çevresinin katı ve süslü çöküşünü yansıtan bir kibirle yelpaze gibi açarak bakımlı çimlerin üzerinde gururla dolaşıyordu. Saray duvarlarının içindeki hava, yasemin kokusu ve hesaplı bir kesinlikle eğilen soyluların ağır parfümleriyle doluydu. Porselen bir kırılganlık timsali olan, sert ve hışırdayan brokar elbiseler içindeki Infanta, küçük yaşının aksine ciddi bir tavırla hareket ediyordu. O, katı gelenekler ve imparatorluk beklentileriyle şekillendirilmiş bir hayatın amansız parlaklığı içinde güneşlenirken, çevresindeki dünyanın yaklaşan gölgelerinden habersiz, bu yaldızlı evrenin mutlak merkeziydi."
+      },
+      {
+        "tr": "Bahçeler, doğanın bile saraya karşı disiplinli ve itaatkâr görünmesini sağlarken prensesin kraliyet statüsünü vurgulamak için tasarlanmış gösterişli bir sahne görevi görüyordu. Mermer tanrı heykelleri, çakıllı yollar üzerinde sergilenen karmaşık saray dansını sonsuza dek gözlemleyen kör gözleriyle, birbirine dolanmış çitlerin arkasından bakıyordu. Infanta, küçük eli hizmetçisinin kadife eldiveninin içine nazikçe yerleşmiş, yüzündeki aristokratik kayıtsızlık maskesiyle ölçülü adımlarla yürüyordu. İmparatorluğun en nadide hazineleriyle çevriliydi, ancak atmosfer hala boğucu bir şekilde resmiydi ve herhangi bir gerçek, plansız neşeden yoksundu. Her hareket mükemmellik için kurgulanmış, her fısıltı protokol korkusuyla dizginlenmişti; bu da ufka doğru uzanan donmuş bir ihtişam tablosu yaratıyordu. Bu özenle düzenlenmiş manzarada, sanki elementlerin kendisi de hiyerarşideki yerlerini biliyormuş gibi, esinti bile yakasının dantellerini havalandırmadan önce tereddüt ediyordu."
+      },
+      {
+        "tr": "Öğleden sonra ilerledikçe, saray halkı doğum günü kutlamalarının gösterisine tanıklık etmek için büyük avluda toplandı; ipekler, kadifeler ve yanıp sönen mücevherler birleşerek bir güç mozaiğine dönüştü. Infanta, insan varlığını önemsizleştirmeye çalışan heybetli mimarinin önünde minyon bir figür olarak, kızıl kumaştan yapılmış bir platform üzerindeki koltuğuna oturdu. Eğlencesi için titizlikle inşa edilmiş dünyanın sentetik parlaklığını yansıtan solgun gözleriyle, olayları mesafeli bir merakla izledi. Hükümdarlarını memnun etmeye hevesli saray mensupları, her hecesi dalkavukluğun ince zehriyle yoğrulmuş sahte övgüler ve abartılı iltifatlar sunuyorlardı. Infanta bu muhteşem gösterinin tartışmasız odak noktası olmaya devam etse de, ondan beklenen neşe ile narin, boyalı özelliklerinin ardında yatan soğuk ve aşılmaz sessizlik arasında, iç dünyasını halkın meraklı gözlerinden koruyan derin ve temel bir uyumsuzluk mevcuttu."
+      },
+      {
+        "tr": "Eğlence, genç ve çarpık bir yaratığın kraliyet topluluğu için gösteri yapmak üzere avlunun ortasına getirilmesiyle doruk noktasına ulaştı. O, bedeni insanlığın grotesk bir taklidine dönüşmüş çirkin bir cüceydi, ancak çarpık fiziğine meydan okuyan bir hafiflikle hareket ediyordu. Dans ederken hareketleri hem trajik hem de çılgınca komikti; Infanta'yı büyüleyen tuhaf bir gösteriydi. Küçük, eldivenli ellerini gerçek bir zevkle çırptı; gözleri, saray mensuplarının daha önce hiç tanık olmadığı nadir, dizginlenemez bir neşeyle parladı. Varlığının acımasız imalarından habersiz olan cüce, onurlu bir hizmet sunduğuna içtenlikle inandığını gösteren bir ciddiyetle döndü ve zıpladı. Onun için prensesin kahkahası en büyük ödüldü; altın bir kafesteki bir oyuncaktan ibaret olduğunun, varlığının sıkılmış soylular için gelip geçici bir eğlenceden başka bir şey olarak görülmediğinin farkında bile değildi."
+      },
+      {
+        "tr": "Cüce, fiziksel deformitesine rağmen, sarayın katı yasalarıyla alay ediyormuş gibi görünen tuhaf, neredeyse ruhani bir zarafete sahipti. O kadar yoğun bir şekilde performans sergiledi ki, kısa süreliğine kalabalığın bakışlarından habersiz göründü; ruhu, ritmik ama hantal kıvrımları aracılığıyla kısaca ifade buldu. Tahtında kraliyet edasıyla oturan Infanta, saray maskesinin buz gibi soğukkanlılığını kıran nadir, genç bir heyecanla öne doğru eğildi. Yaratığın performansını öğleden sonranın en önemli anı olarak gördü; resmi danslardan ya da ileri gelenlerin katı, koreograflanmış övgülerinden çok daha ilgi çekici bir gösteriydi. Güneş ışığı korsesindeki mücevherleri yakalayarak cücenin terli alnında ışık huzmeleri oluşturdu, ancak o, tuhaf, kendini küçümseyen sanatı aracılığıyla prensesin gözüne girmeyi başarabileceğine dair sarhoş edici, saf bir umutla dans etmeye devam etti."
+      },
+      {
+        "tr": "Dans sona erdiğinde, avlu boş bir alkış tufanıyla inledi; ses, sarayın taş duvarlarında keskin bir şekilde yankılandı. Cüce, göğsü inip kalkarak soluk soluğa kaldı ve tuhaf varlığını doğrulayacak kraliyet onayını bekledi. O anın coşkusuna kapılan Infanta, kucağından beyaz bir gül fırlattı; bu, cücenin ayaklarının dibine sessiz bir sevgi sözü gibi düşen bir hareketti. Gülün narin yapraklarını dini bir bağlılıkla dudaklarına bastırarak onu kapmak için hamle yaptı. Saray mensupları, alaycı, küçümseyen bakışlar alışverişinde bulundular; gülümsemeleri gergin ve tepeden bakıyordu, çünkü orada bir insan değil, alay edilecek bir nesne görüyorlardı. Ancak prenses, yaratığa anlaşılmaz bir ifadeyle bakmaya devam etti; altın öğleden sonra güneşi, kraliyet çocuğu ile önünde eğilen sefil, umutlu ruh arasındaki keskin zıtlığı aydınlatıyordu."
+      },
+      {
+        "tr": "Küçük cüce, kendisine gösterilen kraliyet teveccühüyle sarhoş olmuş bir halde, saray bahçelerinin gölgelerine çekildi; kalbi alışılmadık, neşeli bir ritimle çarpıyordu. Infanta'nın hediyesinin, canı sıkılmış bir prensesin sadece bir hevesi değil, sevgi ve güzellik dolu bir dünyaya gerçek bir davet olduğuna inanıyordu. Turunç çiçekleri ve kadim heykellerle kaplı labirentvari yollarda dolaşırken, kendini hanımefendisine sarsılmaz bir bağlılıkla hizmet etmeye yazgılı bir şövalye olarak hayal etti. Fiziksel kusurlarının, ruhunun saflığını anlayan birinin gözünde önemsiz olduğunu düşledi. Yaprakların her hışırtısı bir sevgi fısıltısı gibi duyuluyor, serinletici çeşmeler ise yeni bulduğu amacını kutlamak için ismini mırıldanıyor gibi geliyordu. Garip, coşkulu bir yürüyüşle ilerliyor, zihni hoş hayallerden oluşan bir dokunun içinde kayboluyor, durumunun acımasız gerçekliğinden habersizce yoluna devam ediyordu."
+      },
+      {
+        "tr": "Sarmaşıklarla kaplı bir taş pavyonun bulunduğu ve filizlenen hayalleri için gözlerden uzak bir sığınak sağlayan bahçelerin uzak bir köşesine vardı. Burada, saray personeli tarafından ihmal edilmiş, gümüş çerçeveli gizli bir aynada kendi aksini gördü. Kendi hayal gücündeki idealize edilmiş kahramanı görmeyi beklerken, bunun yerine çarpık omurgasının ve kambur omuzlarının sarsıcı, gülünç gerçeğiyle karşılaştı. Duraksadı, gördüğü manzara karşısında şaşkına döndü; göğsündeki güzel duyguları, camdan kendisine bakan o çirkin biçimle bağdaştırmaya çalıştı. Aynadaki yaratığın zarafetini taklit etmesini umarak el hareketleri yaptı, ancak yansıması sadece çabalarıyla alay ediyor, görünüşünün trajedisini daha da derinleştiriyordu. Gerçekleşen bu farkındalık, uzun ve güneşle yıkanmış altın öğleden sonra boyunca titizlikle inşa ettiği o kırılgan, geçici umudu yerle bir ederek onu sessizlik içinde titrer halde bıraktı."
+      },
+      {
+        "tr": "Derin bir hüzün duygusu bilincine nüfuz etmeye başladı; yalnızlığının ağırlığı, soğuk ve kaçınılmaz bir kefen gibi üzerine çöktü. Saray halkının kahkahalarının ve Infanta'nın kraliyet jestlerinin, yaşamları statüleri kadar içi boş olanları eğlendirmekten başka bir şey olmadığını anladı. Tüm varlığının, onların aşağılayıcı eğlenceleri için bir hedef işlevi görmesi üzerine kurulu olduğunu fark etti. Öylesine sıkı tuttuğu çiçek, umutsuzluğunun yükü altında soluyor gibiydi; gözyaşları üzerlerine döküldükçe yaprakları parlaklığını yitiriyordu. Bahçenin kayıtsızlığı ortasında küçük, kırık bir figür olarak nemli toprağın üzerine yığıldı, bu sırada saray kahkahalarının uzak yankıları havada süzülmeye devam ediyor, güzel ve imkansız bir aşka inanmaya cesaret eden bir kalbin samimiyetiyle alay ediyordu."
+      },
+      {
+        "tr": "İnfanta, pavyonun gölgesinde ortaya çıkan trajik gerçeklikten habersiz, bahçenin sessizleştiğini görünce nedimeleriyle birlikte saraydan çıktı. Eğlencesi için onun komik maskaralıklarına tanık olma arzusuyla, keyifli küçük canavarını bir kez daha görmeye can atıyordu. Zümrüt yeşili çimlerin üzerinde yürürken, kahkahası bahçenin ağır ve melankolik havasını delen, çan gibi berrak bir tınıyla yankılandı. Cücenin bulunmasını emrederek ona unutulmuş bir köşeye terk edilmiş, canlı bir oyuncaktan fazlası olmayan bir varlık gibi muamele etti. Saray görevlileri, altındaki küçümsemeyi zar zor gizleyen sahte bir ciddiyetle kraliyet emrini yerine getirmek için koşuşturdu. Bahçenin labirent gibi yollarında, güneş ufkun altına girmeden önce prensesi memnun etmek amacıyla eğlence kaynaklarını geri getirmeye hevesli bir şekilde, içlerinde gerçek bir sevgi kırıntısı barındırmayan seslerle onun adını haykırarak aradılar."
+      },
+      {
+        "tr": "Görevliler nihayet cüceyi yerde yatarken bulduklarında, onun sadece kraliyet çocuğunu memnun etmek için tasarlanmış yeni ve acınası bir komedide rol yaptığını sandılar. Onu, genç ve aristokrat yüzünde sabırsız bir beklentiyle bekleyen İnfanta'nın olduğu pavyona doğru sürüklediler. Cücenin hareketsizliğine ve çökmüş gözlerindeki derin acı parıltısına aldırmadan, ellerini sevinçle çırparak tekrar dans etmesini talep etti. Cüce, hayatının zalim bir şaka olduğu gerçeğinin altında ezilmiş bir ruhla hareketsiz kaldı. İnfanta'ya, daha önce ruhunu aydınlatan o hayranlıkla değil, boş ve parçalanmış bir bakışla baktı. Bir zamanlar izleyicisine böylesine neşe getiren hareketleri artık sergileyemiyordu çünkü kalbinin müziği, kendi doğal ve trajik çirkinliğinin farkına varmasıyla susturulmuştu."
+      },
+      {
+        "tr": "Prenses, onun sessizliğinden hüsrana uğrayarak mendilini yere attı ve asil konumunun getirdiği küstahlıkla, keskin bir tonla ayağa kalkmasını emretti. Karşısındaki yaratığın içsel yıkımını algılayamadığı gibi, onun şekil bozukluğunun ötesine bakmayı da umursamadı. Ona göre o, işlevini yitirmiş bir nesneydi ve dolayısıyla tamamen değersizdi. Cüce, öğleden sonranın sessizliğini bozan, tiz ve tek bir çığlık attı; ardından göğsünün sığ inip kalkmaları durdu. Saraylılar, küçük yaratığın kalbinin basitçe atmayı bıraktığını soğuk bir kopuklukla fısıldaşarak not ettiler. Kendi kederinin ağırlığına yenik düşmüştü. İnfanta, bir anlık şaşkınlığın ardından arkasını döndü ve umursamazca, gelecekte onunla oynamaya gelenlerin kalplerini geride bıraktıklarından emin olmaları gerektiğini belirterek oradan uzaklaştı."
+      },
+      {
+        "tr": "Infanta, ayaklarının dibindeki küçük, cansız bedene bakarken soğuk ve aristokratik bir kayıtsızlıkla duruyordu. Asla gerçekleşmesi mümkün olmayan bir hayalin peşinde henüz can vermiş bu trajik ruh için içinde en ufak bir pişmanlık veya acıma duygusu uyanmadı. Onun gözünde cüce, sadece doğum günü kutlaması için yaratılmış eğlenceli bir oyuncaktı ve ani sessizliği, beklenen gösterinin rahatsız edici bir aksamasından başka bir şey değildi. Ağır, gösterişli elbisesinin dantellerini can sıkıntısıyla düzeltti ve görevlilerine eğlencenin vaktinden önce bittiğini işaret etti. İspanyol sarayının görkemi kusursuzluk ve zarafet gerektiriyordu; sessiz bahçeyi böylesine şiddetli bir sonla sarsan gerçek insan duygularının düzensiz ve kaba gösterilerine burada yer yoktu."
+      },
+      {
+        "tr": "Saray mensupları, gözlerine yansımayan yüzeysel bir endişe ağı örerek, alışılmış ve ürpertici bir mesafeyle hareket ediyorlardı. Yaratığın trajik ölümünü küçük bir skandal, kraliyet şenliğinin özenle hazırlanmış atmosferini bozma riski taşıyan bir rahatsızlık olarak görüyorlardı. Infanta, bakışlarını görkemli ve heybetli saraya çevirdiğinde, öğleden sonranın böylesine uyumsuz bir notayla bitmesinden dolayı hafif bir rahatsızlık duydu. Bir zamanlar canlı ve yasemin kokularıyla dolu olan bahçe, artık onun kendi genç göğsünde barınan o boş soğukluğu yansıtır gibiydi. Zahmetsiz bir zarafetle, mermer taşların üzerinde yankılanan adımlarıyla ilerledi; bilmeden sebep olduğu acının ezici gerçekliğinden tamamen uzaktı. Trajedi, yüksek ve yalnız mevkiinin katı, değişmez gelenekleri tarafından silinip unutulmaya başlanmış bir anıya dönüşüyordu."
+      },
+      {
+        "tr": "Güneş, sarp dağ zirvelerinin ardına çekilip avluya uzun, kederli gölgeler düşürürken, ölüm mahalli sessizce terk edildi. Görevliler, atılmış bir bibloya veya yıpranmış bir kurdeleye gösterilebilecek klinik bir verimlilikle küçük bedeni kaldırmak için acele ettiler. Kendi çevresinin ötesinde sevmeye cüret etmiş bir kalbin gidişini işaret edecek ne anlamlı bir cenaze töreni ne de ağıtlar vardı. Infanta, kadife ve ipeklerle çevrili odasının görkemli ihtişamına çoktan çekilmişti; burada grotesk dansçının hatırası, nedimelerinin fısıltılarıyla hızla silinip gidiyordu. Dünya, çimlerin üzerinde bırakılmış kırık bir kap için hiçbir şey hissetmeden, kendi acımasız yörüngesinde dönmeye devam etti. Nihayetinde cüce, sarayın geniş ve ışıltılı dokusunda bir hayaletten ibaretti; çektiği acı, kraliyet çocuğunun kalpsiz ihtişamı tarafından sonsuza dek susturulmuştu."
+      }
+    ],
+    "words": {
+      "grandeur": {
+        "tr": "ihtişam"
+      },
+      "opulent": {
+        "tr": "görkemli"
+      },
+      "subservient": {
+        "tr": "itaatkar"
+      },
+      "aristocratic": {
+        "tr": "soylu"
+      },
+      "sycophancy": {
+        "tr": "dalkavukluk"
+      },
+      "dissonance": {
+        "tr": "uyumsuzluk"
+      },
+      "crescendo": {
+        "tr": "yükseliş"
+      },
+      "grotesque": {
+        "tr": "tuhaf"
+      },
+      "dais": {
+        "tr": "yüksek kürsü"
+      },
+      "contortion": {
+        "tr": "kıvrım"
+      },
+      "cacophony": {
+        "tr": "gürültü"
+      },
+      "inscrutable": {
+        "tr": "anlaşılmaz"
+      },
+      "labyrinthine": {
+        "tr": "karışık"
+      },
+      "exuberant": {
+        "tr": "coşkulu"
+      },
+      "ephemeral": {
+        "tr": "kısa süreli"
+      },
+      "permeate": {
+        "tr": "yayılmak"
+      },
+      "derision": {
+        "tr": "alay"
+      },
+      "antic": {
+        "tr": "maskaralık"
+      },
+      "solemnity": {
+        "tr": "ciddiyet"
+      },
+      "contempt": {
+        "tr": "küçümseme"
+      },
+      "detachment": {
+        "tr": "uzak durma"
+      },
+      "inherent": {
+        "tr": "doğal"
+      },
+      "indifference": {
+        "tr": "ilgisizlik"
+      },
+      "materialize": {
+        "tr": "belirmek"
+      },
+      "dissonant": {
+        "tr": "uyumsuz"
+      }
+    }
+  }
+}

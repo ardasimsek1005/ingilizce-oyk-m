@@ -1,14 +1,23 @@
 import json
-import sys
+import os
 
-sys.stdout.reconfigure(encoding='utf-8')
-transcript_path = r"C:\Users\acer\.gemini\antigravity\brain\1163c924-fb24-4991-a8ee-902db162c86f\.system_generated\logs\transcript.jsonl"
+log_dir = "C:\\Users\\acer\\.gemini\\antigravity\\brain\\10fee2c6-bb20-4f93-b938-314bd550cc65\\.system_generated\\logs"
+transcript_path = os.path.join(log_dir, "transcript.jsonl")
 
-with open(transcript_path, "r", encoding="utf-8") as f:
-    for i, line in enumerate(f):
-        try:
-            data = json.loads(line)
-            if data.get("type") == "USER_INPUT":
-                print(f"[{data.get('step_index')}] USER: {data.get('content')}")
-        except Exception as e:
-            pass
+if not os.path.exists(transcript_path):
+    print("Transcript not found at", transcript_path)
+else:
+    print("Searching transcript...")
+    keywords = ["kelime", "sözlük", "offline", "çevrimdışı", "dictionary", "translate"]
+    
+    with open(transcript_path, "r", encoding="utf-8") as f:
+        for line in f:
+            try:
+                step = json.loads(line)
+                content = step.get("content", "")
+                # check if any keyword matches
+                if any(kw in content.lower() for kw in keywords) and step.get("source") == "USER_EXPLICIT":
+                    print(f"Step {step.get('step_index')}: Source: USER")
+                    print(f"  Content: {content[:300]}")
+            except Exception as e:
+                pass

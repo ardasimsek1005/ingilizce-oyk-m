@@ -9,6 +9,8 @@ import crypto from "crypto";
 import nodemailer from "nodemailer";
 import { OFFLINE_DICTIONARY } from "./src/dictionary";
 import { GLOBAL_DICTIONARY } from "./src/data";
+import cron from "node-cron";
+import { runDailyInstagramFlow, fetchDailyWordFromGemini, saveDailyWordCardImage } from "./src/services/instagramService";
 
 // Secure cryptographic password hashing (PBKDF2)
 function hashPassword(password: string): string {
@@ -207,6 +209,8 @@ User: ${userName}
   }
 }
 
+let wordCefrLevels: Record<string, { base: string; tr: string; level: string; pos: string; explanation: string }> = {};
+
 const isCommonEnglishWord = (w: string): boolean => {
   if (!w) return false;
   const clean = w.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'’“”‘’\[\]{}<>|\\+]/g, "").trim();
@@ -218,9 +222,10 @@ const isCommonEnglishWord = (w: string): boolean => {
     "we", "us", "our", "ours", "you", "your", "yours", "i", "me", "my", "mine",
     "who", "whom", "whose", "what", "which", "when", "where", "why", "how",
     "always", "never", "sometimes", "usually", "often", "rarely", "seldom",
-    "is", "am", "are", "was", "were", "be", "been", "being", "have", "has", "had", "do", "does", "did"
+    "is", "am", "are", "was", "were", "be", "been", "being", "have", "has", "had", "do", "does", "did",
+    "hello", "hi", "ok", "okay", "yes", "no", "please", "thank", "thanks"
   ];
-  return commonWords.includes(clean) || !!OFFLINE_DICTIONARY[clean] || !!GLOBAL_DICTIONARY[clean];
+  return commonWords.includes(clean) || !!OFFLINE_DICTIONARY[clean] || !!GLOBAL_DICTIONARY[clean] || !!wordCefrLevels[clean];
 };
 
 const looksLikeProperNoun = (w: string): boolean => {
@@ -250,8 +255,8 @@ async function startServer() {
 
   // Load pre-calculated CEFR levels
   const cefrLevelsPath = path.join(process.cwd(), "src", "word_cefr_levels.json");
-  let wordCefrLevels: Record<string, { base: string; tr: string; level: string; pos: string; explanation: string }> = {};
-
+  // assigned to module-scope wordCefrLevels
+  
   const loadCefrLevels = () => {
     if (fs.existsSync(cefrLevelsPath)) {
       try {
@@ -360,9 +365,9 @@ async function startServer() {
     }
   };
 
-  const translateWithGoogle = async (text: string): Promise<string> => {
+  const translateWithGoogle = async (text: string, targetLang: string = "tr"): Promise<string> => {
     try {
-      const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=tr&dt=t&q=${encodeURIComponent(text)}`;
+      const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=${targetLang}&dt=t&q=${encodeURIComponent(text)}`;
       const response = await fetch(url);
       if (!response.ok) throw new Error(`Google Translate HTTP ${response.status}`);
       const data = await response.json();
@@ -374,6 +379,24 @@ async function startServer() {
       console.error("Google Translate error:", err);
       throw err;
     }
+  };
+
+  const getLanguageName = (code: string): string => {
+    const mapping: Record<string, string> = {
+      tr: "Turkish",
+      es: "Spanish",
+      fr: "French",
+      de: "German",
+      it: "Italian",
+      pt: "Portuguese",
+      ru: "Russian",
+      ar: "Arabic",
+      zh: "Chinese",
+      hi: "Hindi",
+      ja: "Japanese",
+      en: "English"
+    };
+    return mapping[code] || "Turkish";
   };
 
   // Automated translation and story parsing API
@@ -462,24 +485,27 @@ Return a valid JSON output matching the requested schema exactly.`;
 
   // Detailed contextual word translation and proper name detection API
   app.post("/api/translate-word", async (req, res) => {
-    const { word, context, level } = req.body || {};
+    const { word, context, level, targetLang } = req.body || {};
     try {
       if (!word || !word.trim() || typeof word !== "string") {
         return res.status(400).json({ error: "Lütfen geçerli bir kelime girin." });
       }
+
+      const langCode = targetLang || "tr";
+      const targetLangName = getLanguageName(langCode);
 
       const cleanW = word.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'’“”‘’\[\]{}<>|\\+]/g, "").trim().toLowerCase();
       if (!cleanW) {
         return res.json({
           translation: word,
           isName: false,
-          partOfSpeech: "Kelime",
+          partOfSpeech: "Word",
           wordLevel: level || "A1",
-          explanation: "Özel karakter / Sembol"
+          explanation: "Symbol / Special Character"
         });
       }
 
-      // Suffix and lemma-stripping offline translator helper
+      // Suffix and lemma-stripping offline translator helper (only for Turkish)
       const getOfflineTranslation = (w: string): { translation: string; isName: boolean; partOfSpeech: string; wordLevel: string; explanation: string } | null => {
         if (!w) return null;
 
@@ -519,7 +545,6 @@ Return a valid JSON output matching the requested schema exactly.`;
         }
 
         // 3. Suffix heuristics to decompose derivatives
-        // plural and third-person "s" (e.g. apples -> apple)
         if (w.endsWith("s") && w.length > 3) {
           const stem = w.slice(0, -1);
           const match = getOfflineTranslation(stem);
@@ -531,28 +556,25 @@ Return a valid JSON output matching the requested schema exactly.`;
           if (match) return match;
         }
 
-        // past tense "ed" (e.g. loved -> love, yelled -> yell)
         if (w.endsWith("ed") && w.length > 4) {
           const stem = w.slice(0, -2);
           const match = getOfflineTranslation(stem);
           if (match) return match;
 
-          const stemE = w.slice(0, -1); // e.g., baked -> bake
+          const stemE = w.slice(0, -1);
           const matchE = getOfflineTranslation(stemE);
           if (matchE) return matchE;
         }
 
-        // continuous "ing" (e.g. running -> run, smiling -> smile)
         if (w.endsWith("ing") && w.length > 5) {
           const stem = w.slice(0, -3);
           const match = getOfflineTranslation(stem);
           if (match) return { ...match, translation: match.translation + " (Şimdiki Zaman)" };
 
-          const stemE = w.slice(0, -3) + "e"; // e.g. dancing -> dance
+          const stemE = w.slice(0, -3) + "e";
           const matchE = getOfflineTranslation(stemE);
           if (matchE) return { ...matchE, translation: matchE.translation + " (Şimdiki Zaman)" };
 
-          // check double consonant: e.g. running -> run
           if (stem.length > 1 && stem[stem.length - 1] === stem[stem.length - 2]) {
             const stemSingle = stem.slice(0, -1);
             const matchS = getOfflineTranslation(stemSingle);
@@ -560,14 +582,12 @@ Return a valid JSON output matching the requested schema exactly.`;
           }
         }
 
-        // adverbs (e.g. happily -> happy)
         if (w.endsWith("ly") && w.length > 4) {
           const stem = w.slice(0, -2);
           const match = getOfflineTranslation(stem);
           if (match) return { ...match, translation: match.translation + " (-ly eki ile)" };
         }
 
-        // comparatives and superlatives
         if (w.endsWith("er") && w.length > 4) {
           const stem = w.slice(0, -2);
           const match = getOfflineTranslation(stem);
@@ -582,53 +602,55 @@ Return a valid JSON output matching the requested schema exactly.`;
         return null;
       };
 
+      const cacheKey = `${langCode}_${cleanW}`;
+
       // 1. Check server-side persistent database cache first (saved lookups to avoid wasting time)
-      if (dynamicDict[cleanW]) {
-        const cachedItem = dynamicDict[cleanW];
-        // Ensure cached translation is not stale English/itself
+      if (dynamicDict[cacheKey]) {
+        const cachedItem = dynamicDict[cacheKey];
         if (cachedItem && cachedItem.translation && cachedItem.translation.toLowerCase().trim() !== cleanW) {
           return res.json(cachedItem);
         } else {
-          delete dynamicDict[cleanW];
+          delete dynamicDict[cacheKey];
         }
       }
 
-      // 1.5 Check offline dictionary/CEFR levels database first (super-fast, accurate offline lookup)
-      const offlineMatch = getOfflineTranslation(cleanW);
-      if (offlineMatch) {
-        if (offlineMatch.translation && offlineMatch.translation.toLowerCase().trim() !== cleanW) {
-          // If the original input word looks like a proper name, force isName properties
-          if (looksLikeProperNoun(word)) {
-            offlineMatch.isName = true;
-            offlineMatch.wordLevel = "Özel İsim";
-            offlineMatch.partOfSpeech = "Özel İsim";
-            offlineMatch.explanation = "Özel İsim • Doğrulanmış Karşılık";
+      // 1.5 Check offline dictionary/CEFR levels database first (only if target language is Turkish)
+      if (langCode === "tr") {
+        const offlineMatch = getOfflineTranslation(cleanW);
+        if (offlineMatch) {
+          if (offlineMatch.translation && offlineMatch.translation.toLowerCase().trim() !== cleanW) {
+            if (looksLikeProperNoun(word)) {
+              offlineMatch.isName = true;
+              offlineMatch.wordLevel = "Özel İsim";
+              offlineMatch.partOfSpeech = "Özel İsim";
+              offlineMatch.explanation = "Özel İsim • Doğrulanmış Karşılık";
+            }
+            return res.json(offlineMatch);
           }
-          return res.json(offlineMatch);
         }
       }
  
-      // 2. Translate using Gemini API as absolute premium option
+      // 2. Translate using Gemini API
       let result: any = null;
  
       if (process.env.GEMINI_API_KEY) {
-        const sysInstruction = `You are an expert bilingual English-to-Turkish kids translator and dictionary helper.
-Your absolute goal is to translate English terms into clean, elegant, and standard Turkish.
+        const sysInstruction = `You are an expert bilingual English-to-${targetLangName} kids translator and dictionary helper.
+Your absolute goal is to translate English terms into clean, elegant, and standard ${targetLangName}.
 - Word/Phrase: "${word}"
 - Context sentence/paragraph: "${context || ""}"
 - Reading level of the book: "${level || "General"}"
  
-RULES FOR MAXIMUM TURKISH COHERENCE:
-1. The 'translation' field MUST be written in TURKISH. Under absolutely no circumstances should you put an English word or an English phrase inside the 'translation' field!
+RULES FOR MAXIMUM ${targetLangName.toUpperCase()} COHERENCE:
+1. The 'translation' field MUST be written in ${targetLangName}. Under absolutely no circumstances should you put an English word or an English phrase inside the 'translation' field!
 2. Determine if the word is a proper name, character name, or specific location in the story (e.g. Cinderella, Gepetto, Aladdin, etc.).
-   - If it is a proper name, set 'isName' to true, and set 'translation' to the Turkish or adapted version with '(Özel İsim)', e.g. 'Külkedisi (Özel İsim)' or 'Jack (Özel İsim)'.
-3. The 'explanation' field MUST ALSO be written entirely in Turkish (e.g., brief Turkish hint or grammar tip under 12 words, like: 'Fiil • Ormanda gezinmek veya dolaşmak anlamına gelir'). No English in explanation fields whatsoever!
+   - If it is a proper name, set 'isName' to true, and set 'translation' to the ${targetLangName} or adapted version with indicators, e.g. 'Jack (Özel İsim)' or translated equivalents.
+3. The 'explanation' field MUST ALSO be written entirely in ${targetLangName} (e.g., brief hint or grammar tip under 12 words). No English in explanation fields whatsoever!
 4. The CEFR level should be clearly set as A1, A2, B1, B2, C1, or C2. Return a valid JSON output matching requested schema exactly.`;
  
         try {
           const gResponse = await ai.models.generateContent({
             model: "gemini-3.5-flash",
-            contents: `Translate the English word "${word}" in context: "${context || ""}" into Turkish.`,
+            contents: `Translate the English word "${word}" in context: "${context || ""}" into ${targetLangName}.`,
             config: {
               systemInstruction: sysInstruction,
               responseMimeType: "application/json",
@@ -637,7 +659,7 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
                 properties: {
                   translation: {
                     type: Type.STRING,
-                    description: "The beautiful Turkish translation in context. MUST be purely in Turkish words."
+                    description: `The beautiful ${targetLangName} translation in context. MUST be purely in ${targetLangName} words.`
                   },
                   isName: {
                     type: Type.BOOLEAN,
@@ -645,7 +667,7 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
                   },
                   partOfSpeech: {
                     type: Type.STRING,
-                    description: "Part of speech in Turkish (e.g. İsim, Fiil, Sıfat, Zarf, Özel İsim)"
+                    description: "Part of speech (e.g. Noun, Verb, Adjective, Adverb, Proper Noun)"
                   },
                   wordLevel: {
                     type: Type.STRING,
@@ -653,7 +675,7 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
                   },
                   explanation: {
                     type: Type.STRING,
-                    description: "Optional grammar tip or lookup hint written entirely in Turkish under 15 words."
+                    description: `Optional grammar tip or lookup hint written entirely in ${targetLangName} under 15 words.`
                   }
                 },
                 required: ["translation", "isName", "partOfSpeech", "wordLevel"]
@@ -666,22 +688,22 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
             result = parsedJSON;
           }
         } catch (gErr: any) {
-          console.error("Gemini context translation errored or returned invalid response, using Google Translate fallback:", gErr);
+          console.error("Gemini context translation errored, using Google Translate fallback:", gErr);
         }
       }
  
       // 3. Fallback to Google Translate free API
       if (!result) {
         try {
-          const googleTranslation = await translateWithGoogle(word);
+          const googleTranslation = await translateWithGoogle(word, langCode);
           if (googleTranslation && googleTranslation.toLowerCase().trim() !== cleanW) {
             const looksLikePropName = looksLikeProperNoun(word);
             result = {
-              translation: looksLikePropName ? `${googleTranslation} (Özel İsim)` : googleTranslation,
+              translation: looksLikePropName ? `${googleTranslation} (${langCode === 'tr' ? 'Özel İsim' : 'Proper Noun'})` : googleTranslation,
               isName: looksLikePropName,
-              partOfSpeech: looksLikePropName ? "Özel İsim" : "Kelime",
-              wordLevel: looksLikePropName ? "Özel İsim" : `${level || "A1"}`,
-              explanation: looksLikePropName ? "Özel İsim • Google Çeviri Destekli" : "Google Çeviri Destekli Kelime"
+              partOfSpeech: looksLikePropName ? (langCode === 'tr' ? "Özel İsim" : "Proper Noun") : "Word",
+              wordLevel: looksLikePropName ? "Proper Noun" : `${level || "A1"}`,
+              explanation: looksLikePropName ? "Google Translate Support" : "Google Translate Word"
             };
           }
         } catch (googleErr) {
@@ -689,8 +711,8 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
         }
       }
  
-      // 4. Try story-book / grammar fallback
-      if (!result) {
+      // 4. Try story-book / grammar fallback (only if target language is Turkish)
+      if (!result && langCode === "tr") {
         const storyFallbackTranslation = getPredefinedStoryTranslation(cleanW);
         if (storyFallbackTranslation) {
           result = {
@@ -707,30 +729,92 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
       if (!result) {
         const looksLikePropName = /^[A-Z]/.test(word);
         result = {
-          translation: looksLikePropName ? `${word} (Özel İsim)` : word,
+          translation: looksLikePropName ? `${word} (${langCode === 'tr' ? 'Özel İsim' : 'Proper Noun'})` : word,
           isName: looksLikePropName,
-          partOfSpeech: looksLikePropName ? "Özel İsim" : "Kelime",
-          wordLevel: looksLikePropName ? "Özel İsim" : `${level || "A1"}`,
-          explanation: "Çevrimdışı Sözlük Çevirisi"
+          partOfSpeech: looksLikePropName ? (langCode === 'tr' ? "Özel İsim" : "Proper Noun") : "Word",
+          wordLevel: looksLikePropName ? "Proper Noun" : `${level || "A1"}`,
+          explanation: "Offline Word Rescue"
         };
       }
  
-      // 6. Save newly resolved word & Turkish pair into the server-side persistent dictionary database file for future rapid O(1) matching
+      // 6. Save newly resolved word into dynamic cache database
       if (result && result.translation && result.translation.toLowerCase().trim() !== cleanW) {
-        saveToDynamicDict(cleanW, result);
+        saveToDynamicDict(cacheKey, result);
       }
  
       return res.json(result);
     } catch (err: any) {
       console.error("Unhandled exception in translate-word server endpoint:", err);
-      // Fallback rescue response to client so frontend never breaks
       return res.json({
         translation: word,
         isName: false,
-        partOfSpeech: "Bilgisi Yok",
+        partOfSpeech: "Unknown",
         wordLevel: level || "A1",
-        explanation: "Sistem Meşgul (Geçici Fallback Çevirisi)"
+        explanation: "System Busy Fallback"
       });
+    }
+  });
+
+  // Dynamic sentence translation endpoint
+  app.post("/api/translate-sentence", async (req, res) => {
+    const { text, targetLang } = req.body || {};
+    try {
+      if (!text || !text.trim() || typeof text !== "string") {
+        return res.status(400).json({ error: "Lütfen geçerli bir metin girin." });
+      }
+
+      const langCode = targetLang || "tr";
+      const targetLangName = getLanguageName(langCode);
+      const textHash = crypto.createHash("sha256").update(text).digest("hex");
+      const cacheKey = `${langCode}_sent_${textHash}`;
+
+      if (dynamicDict[cacheKey]) {
+        return res.json({ translation: dynamicDict[cacheKey].translation });
+      }
+
+      let translation = "";
+
+      // 1. Try Gemini API
+      if (process.env.GEMINI_API_KEY) {
+        try {
+          const sysInstruction = `You are a professional children's book translator. Translate the given English sentence or paragraph into natural, simple, and clean ${targetLangName}. Do not add any annotations, extra text, or keep English words unless they are proper names that are not translatable. Your response MUST contain ONLY the translation text.`;
+          const gResponse = await ai.models.generateContent({
+            model: "gemini-3.5-flash",
+            contents: text,
+            config: {
+              systemInstruction: sysInstruction,
+            }
+          });
+          const resultText = gResponse.text.trim();
+          if (resultText) {
+            translation = resultText;
+          }
+        } catch (gErr: any) {
+          console.error("Gemini sentence translation failed:", gErr);
+        }
+      }
+
+      // 2. Fallback to Google Translate
+      if (!translation) {
+        try {
+          translation = await translateWithGoogle(text, langCode);
+        } catch (googleErr) {
+          console.error("Google sentence translation fallback failed:", googleErr);
+        }
+      }
+
+      // 3. Last resort fallback
+      if (!translation) {
+        translation = text;
+      }
+
+      // Cache it
+      saveToDynamicDict(cacheKey, { translation });
+
+      return res.json({ translation });
+    } catch (err: any) {
+      console.error("Unhandled exception in translate-sentence server endpoint:", err);
+      return res.json({ translation: text });
     }
   });
 
@@ -1770,6 +1854,64 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
     }
   });
 
+  // Serve daily Instagram image statically
+  app.get("/api/instagram/daily-post.png", (req, res) => {
+    const imagePath = path.join(process.cwd(), "public", "daily-instagram-post.png");
+    if (fs.existsSync(imagePath)) {
+      res.sendFile(imagePath);
+    } else {
+      res.status(404).send("Daily card image not generated yet. Trigger it first.");
+    }
+  });
+
+  // Serve daily Instagram story page image statically
+  app.get("/api/instagram/daily-story.png", (req, res) => {
+    const imagePath = path.join(process.cwd(), "public", "daily-instagram-story.png");
+    if (fs.existsSync(imagePath)) {
+      res.sendFile(imagePath);
+    } else {
+      res.status(404).send("Daily story image not generated yet. Trigger it first.");
+    }
+  });
+
+  // Manual Trigger Endpoint for Daily Post
+  app.post("/api/instagram/trigger-post", async (req, res) => {
+    const authHeader = req.headers.authorization;
+    const adminSecret = process.env.INSTAGRAM_ADMIN_SECRET || "ingilizceoykum_secret_admin_123";
+    
+    if (!authHeader || authHeader !== `Bearer ${adminSecret}`) {
+      return res.status(401).json({ error: "Unauthorized. Admin secret is invalid. ⚠️" });
+    }
+
+    console.log("[Server API] Manual Instagram posting flow triggered.");
+    const result = await runDailyInstagramFlow();
+    
+    if (result.success) {
+      return res.json({
+        success: true,
+        message: `Günün kelimesi (${result.word}) Instagram'da başarıyla yayınlandı!`,
+        postId: result.postId
+      });
+    } else {
+      return res.status(500).json({
+        success: false,
+        error: `Paylaşım sırasında hata oluştu: ${result.error}`
+      });
+    }
+  });
+
+  // Preview Endpoint (generates a live card without publishing)
+  app.get("/api/instagram/preview", async (req, res) => {
+    try {
+      const wordInfo = await fetchDailyWordFromGemini();
+      const previewPath = path.join(process.cwd(), "public", "preview-instagram-post.png");
+      await saveDailyWordCardImage(wordInfo, previewPath);
+      res.sendFile(previewPath);
+    } catch (err: any) {
+      res.status(500).send(`Önizleme görseli oluşturulamadı: ${err.message}`);
+    }
+  });
+
   // Health check API
   app.get("/api/health", (req, res) => {
     res.json({ status: "ok", mode: process.env.NODE_ENV || "development" });
@@ -1792,6 +1934,20 @@ RULES FOR MAXIMUM TURKISH COHERENCE:
       res.sendFile(path.join(distPath, "index.html"));
     });
   }
+
+  // Start daily scheduled cron job for Instagram (At 09:00 Turkey Time UTC+3)
+  // cron.schedule("0 9 * * *", async () => {
+  //   console.log("[Cron Job] Automated daily Instagram posting flow starting...");
+  //   const result = await runDailyInstagramFlow();
+  //   if (result.success) {
+  //     console.log(`[Cron Job] Successfully published daily word to Instagram: ${result.word}`);
+  //   } else {
+  //     console.error(`[Cron Job] Failed to publish daily word to Instagram: ${result.error}`);
+  //   }
+  // }, {
+  //   timezone: "Europe/Istanbul"
+  // });
+  console.log("[Linguist Scheduler] Daily Instagram sharing cron job is currently disabled/on hold.");
 
   app.listen(PORT, "0.0.0.0", () => {
     console.log(`[Linguist Server] Full-stack engine running on http://0.0.0.0:${PORT}`);

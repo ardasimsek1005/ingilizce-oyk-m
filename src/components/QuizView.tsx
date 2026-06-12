@@ -5,6 +5,8 @@ import { purchasePlayStoreSubscription, restorePlayStorePurchases } from '../ser
 import { Book, QuizQuestion, UserStats, VocabularyWord, getLevelColor, hexToRgba } from '../types';
 import { OFFLINE_DICTIONARY } from '../dictionary';
 import { GLOBAL_DICTIONARY } from '../data';
+import { SUPPORTED_LANGUAGES, LanguageCode, t, translateWithGoogleClient } from '../i18n';
+import pretranslatedStories from '../pretranslated_stories.json';
 
 interface QuizViewProps {
   stats: UserStats;
@@ -23,6 +25,7 @@ interface QuizViewProps {
   onUnlockBadge?: (id: string) => void;
   refillCountdown: string;
   onQuizCompleted?: (score: number, totalQuestions: number) => void;
+  nativeLanguage: LanguageCode;
 }
 
 const PROPER_NAMES_SET = new Set([
@@ -55,7 +58,8 @@ const isCommonEnglishWord = (w: string): boolean => {
     "we", "us", "our", "ours", "you", "your", "yours", "i", "me", "my", "mine",
     "who", "whom", "whose", "what", "which", "when", "where", "why", "how",
     "always", "never", "sometimes", "usually", "often", "rarely", "seldom",
-    "is", "am", "are", "was", "were", "be", "been", "being", "have", "has", "had", "do", "does", "did"
+    "is", "am", "are", "was", "were", "be", "been", "being", "have", "has", "had", "do", "does", "did",
+    "hello", "hi", "ok", "okay", "yes", "no", "please", "thank", "thanks"
   ];
   return commonWords.includes(clean);
 };
@@ -133,14 +137,124 @@ const findSentenceInBooks = (word: string, books: Book[]): { en: string; tr: str
   return null;
 };
 
-const getFallbackSentence = (word: string, translation: string): { en: string; tr: string } => {
+const getFallbackSentence = (word: string, translation: string, nativeLanguage: LanguageCode): { en: string; tr: string } => {
   return {
     en: `This is a very nice ${word}.`,
-    tr: `Bu çok güzel bir ${translation}.`
+    // Turkish users keep the old Turkish example sentence; other languages use dynamic AI translation
+    tr: nativeLanguage === 'tr' ? `Bu çok güzel bir ${translation}.` : ''
   };
 };
 
-const generateVocabularyQuiz = (vocabList: VocabularyWord[], books: Book[]): QuizQuestion[] => {
+const DEFAULT_DISTRACTORS: Record<LanguageCode, string[]> = {
+  tr: ['koşmak', 'ev', 'yemek', 'gülümsemek', 'ağaç', 'sepet', 'köpek', 'mutlu', 'zaman', 'gün', 'kitap'],
+  en: ['run', 'house', 'eat', 'smile', 'tree', 'basket', 'dog', 'happy', 'time', 'day', 'book'],
+  es: ['correr', 'casa', 'comer', 'sonreír', 'árbol', 'cesta', 'perro', 'feliz', 'tiempo', 'día', 'libro'],
+  fr: ['courir', 'maison', 'manger', 'sourire', 'arbre', 'panier', 'chien', 'heureux', 'temps', 'jour', 'livre'],
+  de: ['laufen', 'haus', 'essen', 'lächeln', 'baum', 'korb', 'hund', 'glücklich', 'zeit', 'tag', 'buch'],
+  it: ['correre', 'casa', 'mangiare', 'sorridere', 'albero', 'cestino', 'cane', 'felice', 'tempo', 'giorno', 'libro'],
+  pt: ['correr', 'casa', 'comer', 'sorrir', 'árvore', 'cesta', 'cachorro', 'feliz', 'tempo', 'dia', 'livro'],
+  ru: ['бежать', 'дом', 'есть', 'улыбаться', 'дерево', 'корзина', 'собака', 'счастливый', 'время', 'день', 'книга'],
+  ar: ['يجري', 'بيت', 'يأكل', 'يبتسم', 'شجرة', 'سلة', 'كلب', 'سعيد', 'الوقت', 'يوم', 'كتاب'],
+  zh: ['跑', '房子', '吃', '微笑', '树', '篮子', '狗', '快乐', '时间', '天', '书'],
+  hi: ['दौड़ना', 'घर', 'खाना', 'मुस्कुराना', 'पेड़', 'टोकरी', 'कुत्ता', 'खुश', 'समय', 'दिन', 'किताब'],
+  ja: ['走る', '家', '食べる', '微笑む', '木', 'かご', '犬', '嬉しい', '時間', '日', '本']
+};
+
+const getNativeWordTranslation = (wordEn: string, trFallback: string, nativeLanguage: LanguageCode, bookId?: string, savedWordLang?: string): string => {
+  if (nativeLanguage === 'tr') {
+    const wLower = wordEn.toLowerCase().trim();
+    if (OFFLINE_DICTIONARY[wLower]) {
+      return OFFLINE_DICTIONARY[wLower].tr;
+    }
+    if (GLOBAL_DICTIONARY[wLower]) {
+      return GLOBAL_DICTIONARY[wLower];
+    }
+    if (savedWordLang === 'tr' || !savedWordLang) {
+      return trFallback;
+    }
+  }
+
+  if (savedWordLang && savedWordLang === nativeLanguage) {
+    return trFallback;
+  }
+  
+  if (nativeLanguage === 'tr') return trFallback;
+  
+  const wLower = wordEn.toLowerCase().trim();
+
+  // 1. Check local storage cache of past dynamic translations for this language code
+  const cacheKeyObj = `story_word_translations_cache_${nativeLanguage}`;
+  const cacheJSON = localStorage.getItem(cacheKeyObj);
+  if (cacheJSON) {
+    try {
+      const cache = JSON.parse(cacheJSON);
+      if (cache[wLower] && cache[wLower].translation) {
+        return cache[wLower].translation;
+      }
+    } catch (e) {}
+  }
+  
+  if (bookId) {
+    const offlineBook = pretranslatedStories[bookId as keyof typeof pretranslatedStories];
+    if (offlineBook && offlineBook.words && offlineBook.words[wLower as keyof typeof offlineBook.words]) {
+      const offlineWord = offlineBook.words[wLower as keyof typeof offlineBook.words];
+      if (offlineWord[nativeLanguage as keyof typeof offlineWord]) {
+        return offlineWord[nativeLanguage as keyof typeof offlineWord] as string;
+      }
+    }
+  }
+  
+  const cacheKey = `linguist_dict_word_${wLower}_${nativeLanguage}`;
+  const cached = localStorage.getItem(cacheKey);
+  if (cached) {
+    try {
+      const parsed = JSON.parse(cached);
+      if (parsed.translation) {
+        return parsed.translation;
+      }
+    } catch (e) {}
+  }
+  
+  for (const bId in pretranslatedStories) {
+    const offlineBook = pretranslatedStories[bId as keyof typeof pretranslatedStories];
+    if (offlineBook && offlineBook.words && offlineBook.words[wLower as keyof typeof offlineBook.words]) {
+      const offlineWord = offlineBook.words[wLower as keyof typeof offlineBook.words];
+      if (offlineWord[nativeLanguage as keyof typeof offlineWord]) {
+        return offlineWord[nativeLanguage as keyof typeof offlineWord] as string;
+      }
+    }
+  }
+  
+  return wordEn; // Fallback to English word instead of Turkish
+};
+
+const getNativeSentenceTranslation = (exampleEn: string | undefined, trFallback: string, nativeLanguage: LanguageCode, savedWordLang?: string): string => {
+  if (nativeLanguage === 'tr') {
+    if (savedWordLang === 'tr' || !savedWordLang) {
+      return trFallback;
+    }
+  }
+
+  if (savedWordLang && savedWordLang === nativeLanguage) {
+    return trFallback;
+  }
+
+  if (nativeLanguage === 'tr') return trFallback;
+  if (!exampleEn) return '';
+
+  const key = exampleEn.toLowerCase().trim();
+  const gameCacheKey = `linguist_trans_sentence_game_${key}_${nativeLanguage}`;
+  const gameCached = localStorage.getItem(gameCacheKey);
+  if (gameCached) return gameCached;
+
+  const cacheKey = `linguist_trans_sentence_example_${key}_${nativeLanguage}`;
+  const cached = localStorage.getItem(cacheKey);
+  if (cached) return cached;
+
+  return exampleEn; // Fallback to English sentence instead of Turkish
+};
+
+const generateVocabularyQuiz = (vocabList: VocabularyWord[], books: Book[], nativeLanguage: LanguageCode): QuizQuestion[] => {
   if (!vocabList) return [];
   
   // 1. Filter out proper nouns (names) and the word 'harness'
@@ -205,15 +319,19 @@ const generateVocabularyQuiz = (vocabList: VocabularyWord[], books: Book[]): Qui
         exampleEn = bookSentence.en;
         exampleTr = bookSentence.tr;
       } else {
-        const fallback = getFallbackSentence(item.word, item.translation);
+        const fallback = getFallbackSentence(item.word, item.translation, nativeLanguage);
         exampleEn = fallback.en;
         exampleTr = fallback.tr;
       }
     }
+
+    const nativeTranslation = getNativeWordTranslation(item.word, item.translation, nativeLanguage, undefined, item.lang);
+    const nativeExampleTr = getNativeSentenceTranslation(exampleEn, exampleTr || '', nativeLanguage, item.lang);
     
     // Distractors (wrong options)
-    // Parse level code robustly — handles both "A1" and "A1 Seviyesi" formats
-    const rawLevel = (item.level || 'A1').trim().toUpperCase();
+    const cleanW = item.word.toLowerCase().trim();
+    const dictItem = OFFLINE_DICTIONARY[cleanW];
+    const rawLevel = (dictItem ? dictItem.level : (item.level || 'A1')).trim().toUpperCase();
     const levelCode = rawLevel.substring(0, 2); // "A1", "A2", "B1", "B2", "C1"
 
     // Build adjacent-level fallback order: exact → 1 step away → 2 steps → all
@@ -240,8 +358,13 @@ const generateVocabularyQuiz = (vocabList: VocabularyWord[], books: Book[]): Qui
               p.words.forEach(w => {
                 const key = w.en.toLowerCase().trim();
                 if (!seenWords.has(key) && !isProperNoun(w.en) && key !== correctWordLower && key !== 'harness' && w.en.length > 2) {
-                  seenWords.add(key);
-                  levelPool.push({ en: w.en, tr: w.tr });
+                  // Verify that the word's true level matches targetLevels
+                  const dictItem = OFFLINE_DICTIONARY[key];
+                  const actualLevel = dictItem ? dictItem.level : book.level;
+                  if (targetLevels.includes(actualLevel)) {
+                    seenWords.add(key);
+                    levelPool.push({ en: w.en, tr: getNativeWordTranslation(w.en, w.tr, nativeLanguage, book.id) });
+                  }
                 }
               });
             }
@@ -262,13 +385,13 @@ const generateVocabularyQuiz = (vocabList: VocabularyWord[], books: Book[]): Qui
         const key = v.word.toLowerCase().trim();
         if (!seenWords.has(key) && key !== correctWordLower && !isProperNoun(v.word) && v.translation) {
           seenWords.add(key);
-          levelPool.push({ en: v.word, tr: v.translation });
+          levelPool.push({ en: v.word, tr: getNativeWordTranslation(v.word, v.translation, nativeLanguage, undefined, v.lang) });
         }
       });
     }
     
-    const defaultTrDistractors = ['koşmak', 'ev', 'yemek', 'gülümsemek', 'ağaç', 'sepet', 'köpek', 'mutlu', 'zaman', 'gün', 'kitap'];
-    const defaultEnDistractors = ['run', 'house', 'eat', 'smile', 'tree', 'basket', 'dog', 'happy', 'time', 'day', 'book'];
+    const defaultTrDistractors = DEFAULT_DISTRACTORS[nativeLanguage] || DEFAULT_DISTRACTORS['tr'];
+    const defaultEnDistractors = DEFAULT_DISTRACTORS['en'];
 
     let correctValue = '';
     let questionText = '';
@@ -304,8 +427,11 @@ const generateVocabularyQuiz = (vocabList: VocabularyWord[], books: Book[]): Qui
         }
       }
       
-      hintText = exampleTr ? `Türkçe Çevirisi: "${exampleTr}"` : 'Cümledeki boşluğu doldurun.';
-      explanationText = `"${item.word}" kelimesi "${item.translation}" anlamına gelir. Geçtiği cümle: "${exampleEn}"`;
+      hintText = nativeExampleTr ? `${t('translation', nativeLanguage)}: "${nativeExampleTr}"` : t('quiz_fill_blank_prompt', nativeLanguage);
+      explanationText = t('quiz_explanation_fill_blank', nativeLanguage)
+        .replace('{word}', item.word)
+        .replace('{translation}', nativeTranslation)
+        .replace('{sentence}', exampleEn);
       
       // English distractors
       const cleanCorrect = correctValue.trim().toLowerCase();
@@ -338,9 +464,11 @@ const generateVocabularyQuiz = (vocabList: VocabularyWord[], books: Book[]): Qui
       distractors = distractorList;
     } else if (qType === 'tr_to_en') {
       correctValue = item.word;
-      questionText = `"${item.translation}" kelimesinin İngilizce karşılığı nedir?`;
-      hintText = `İpucu: Bu kelime "${item.level}" seviyesindedir.`;
-      explanationText = `"${item.translation}" kelimesinin İngilizce karşılığı "${item.word}" şeklindedir.`;
+      questionText = `"${nativeTranslation}" ${t('quiz_translation_prompt', nativeLanguage)}`;
+      hintText = t('quiz_hint_level', nativeLanguage).replace('{level}', levelCode);
+      explanationText = t('quiz_explanation_tr_to_en', nativeLanguage)
+        .replace('{translation}', nativeTranslation)
+        .replace('{word}', item.word);
       
       // English distractors
       const cleanCorrect = correctValue.trim().toLowerCase();
@@ -372,12 +500,14 @@ const generateVocabularyQuiz = (vocabList: VocabularyWord[], books: Book[]): Qui
       }
       distractors = distractorList;
     } else {
-      correctValue = item.translation;
-      questionText = `"${item.word}" kelimesinin Türkçe karşılığı nedir?`;
-      hintText = exampleEn ? `Cümle içi kullanımı: "${exampleEn}"` : `İpucu: Bu kelime "${item.level}" seviyesindedir.`;
-      explanationText = `"${item.word}" kelimesinin Türkçe anlamı "${item.translation}" olarak kaydedilmiştir.`;
+      correctValue = nativeTranslation;
+      questionText = `"${item.word}" ${t('quiz_meaning_prompt', nativeLanguage)}`;
+      hintText = exampleEn ? `${t('quiz_hint_prefix', nativeLanguage)}"${exampleEn}"` : t('quiz_hint_level', nativeLanguage).replace('{level}', levelCode);
+      explanationText = t('quiz_explanation_en_to_tr', nativeLanguage)
+        .replace('{word}', item.word)
+        .replace('{translation}', nativeTranslation);
       
-      // Turkish distractors
+      // Turkish (native) distractors
       const cleanCorrect = correctValue.trim().toLowerCase();
       const distractorList: string[] = [];
       const distractorSetLower = new Set<string>();
@@ -387,7 +517,9 @@ const generateVocabularyQuiz = (vocabList: VocabularyWord[], books: Book[]): Qui
         if (!w.tr) continue;
         const d = w.tr.trim();
         const dLower = d.toLowerCase();
-        if (dLower !== cleanCorrect && !isTurkishProperNoun(d) && !isProperNoun(w.en) && !distractorSetLower.has(dLower)) {
+        // isTurkishProperNoun only relevant when native lang is Turkish
+        const isNativeProperNoun = nativeLanguage === 'tr' ? isTurkishProperNoun(d) : false;
+        if (dLower !== cleanCorrect && !isNativeProperNoun && !isProperNoun(w.en) && !distractorSetLower.has(dLower)) {
           distractorList.push(d);
           distractorSetLower.add(dLower);
           if (distractorList.length >= 3) break;
@@ -399,7 +531,8 @@ const generateVocabularyQuiz = (vocabList: VocabularyWord[], books: Book[]): Qui
         for (const d of shuffledDefault) {
           const dClean = d.trim();
           const dLower = dClean.toLowerCase();
-          if (dLower !== cleanCorrect && !distractorSetLower.has(dLower) && !isTurkishProperNoun(dClean)) {
+          const isNativeProperNoun = nativeLanguage === 'tr' ? isTurkishProperNoun(dClean) : false;
+          if (dLower !== cleanCorrect && !distractorSetLower.has(dLower) && !isNativeProperNoun) {
             distractorList.push(dClean);
             distractorSetLower.add(dLower);
             if (distractorList.length >= 3) break;
@@ -415,61 +548,77 @@ const generateVocabularyQuiz = (vocabList: VocabularyWord[], books: Book[]): Qui
     return {
       id: `vocab_q_${qIdx}_${item.id}`,
       word: item.word,
-      translation: item.translation,
+      translation: nativeTranslation,
       level: item.level,
       options,
+      optionsEn: options.map(opt => {
+        if (qType === 'en_to_tr') {
+          const found = levelPool.find(x => x.tr === opt) || (nativeTranslation === opt ? item : null);
+          return found ? found.en : opt;
+        } else {
+          return opt;
+        }
+      }),
       correctIndex,
       hint: hintText,
       explanation: explanationText,
       questionText,
-      qType
+      qType,
+      sentenceEn: exampleEn,
+      sentenceTr: nativeExampleTr
     };
   });
 };
 
-const generateRandomQuizForLevels = (levels: ('A1' | 'A2' | 'B1' | 'B2' | 'C1')[], books: Book[]): QuizQuestion[] => {
+const generateRandomQuizForLevels = (levels: ('A1' | 'A2' | 'B1' | 'B2' | 'C1')[], books: Book[], nativeLanguage: LanguageCode): QuizQuestion[] => {
   // 1. Gather all words from all books of the specified levels
   const wordPool: { en: string; tr: string; level: string; exampleEn?: string; exampleTr?: string }[] = [];
   const seenWords = new Set<string>();
   
-  const booksAtLevels = books.filter(b => levels.includes(b.level as any));
-  booksAtLevels.forEach(book => {
+  // We scan all books, but only keep words whose actual dictionary level matches the target levels
+  books.forEach(book => {
     book.chapters.forEach(chapter => {
       chapter.paragraphs.forEach(p => {
         if (p.words) {
           p.words.forEach(w => {
             const key = w.en.toLowerCase().trim();
             if (!seenWords.has(key) && !isProperNoun(w.en) && w.en.length > 2 && key !== 'harness') {
-              seenWords.add(key);
+              // Look up in OFFLINE_DICTIONARY to get the word's true level
+              const dictItem = OFFLINE_DICTIONARY[key];
+              const actualLevel = dictItem ? dictItem.level : book.level;
               
-              // Try to find a context sentence from the paragraph without lookbehinds (safari friendly)
-              let contextEn = '';
-              let contextTr = '';
-              const sentencesEn = p.textEn.split(/[.!?]/).map(s => s.trim()).filter(Boolean);
-              const sentencesTr = p.textTr.split(/[.!?]/).map(s => s.trim()).filter(Boolean);
-              
-              for (let i = 0; i < sentencesEn.length; i++) {
-                const cleanSent = sentencesEn[i].toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'’“”]/g, " ");
-                const words = cleanSent.split(/\s+/);
-                if (words.includes(key)) {
-                  contextEn = sentencesEn[i] + '.';
-                  contextTr = sentencesTr[i] || p.textTr;
-                  break;
+              if (levels.includes(actualLevel as any)) {
+                seenWords.add(key);
+                
+                // Try to find a context sentence from the paragraph without lookbehinds (safari friendly)
+                let contextEn = '';
+                let contextTr = '';
+                const sentencesEn = p.textEn.split(/[.!?]/).map(s => s.trim()).filter(Boolean);
+                const sentencesTr = p.textTr.split(/[.!?]/).map(s => s.trim()).filter(Boolean);
+                
+                for (let i = 0; i < sentencesEn.length; i++) {
+                  const cleanSent = sentencesEn[i].toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'’“”]/g, " ");
+                  const words = cleanSent.split(/\s+/);
+                  if (words.includes(key)) {
+                    contextEn = sentencesEn[i] + '.';
+                    contextTr = sentencesTr[i] || p.textTr;
+                    break;
+                  }
                 }
+                
+                if (!contextEn && sentencesEn.length > 0) {
+                  contextEn = sentencesEn[0] + '.';
+                  contextTr = sentencesTr[0] || p.textTr;
+                }
+                
+                wordPool.push({
+                  en: w.en,
+                  tr: w.tr,
+                  level: actualLevel,
+                  exampleEn: contextEn,
+                  exampleTr: contextTr
+                });
               }
-              
-              if (!contextEn && sentencesEn.length > 0) {
-                contextEn = sentencesEn[0] + '.';
-                contextTr = sentencesTr[0] || p.textTr;
-              }
-              
-              wordPool.push({
-                en: w.en,
-                tr: w.tr,
-                level: `${book.level} Seviyesi`,
-                exampleEn: contextEn,
-                exampleTr: contextTr
-              });
             }
           });
         }
@@ -477,7 +626,7 @@ const generateRandomQuizForLevels = (levels: ('A1' | 'A2' | 'B1' | 'B2' | 'C1')[
     });
   });
   
-  // If the pool is too small, fallback to other levels
+  // If the pool is too small, fallback to other levels (still filtering strictly by levels)
   if (wordPool.length < 15) {
     books.forEach(book => {
       book.chapters.forEach(chapter => {
@@ -486,12 +635,16 @@ const generateRandomQuizForLevels = (levels: ('A1' | 'A2' | 'B1' | 'B2' | 'C1')[
             p.words.forEach(w => {
               const key = w.en.toLowerCase().trim();
               if (!seenWords.has(key) && !isProperNoun(w.en) && w.en.length > 2 && key !== 'harness') {
-                seenWords.add(key);
-                wordPool.push({
-                  en: w.en,
-                  tr: w.tr,
-                  level: `${book.level} Seviyesi`
-                });
+                const dictItem = OFFLINE_DICTIONARY[key];
+                const actualLevel = dictItem ? dictItem.level : book.level;
+                if (levels.includes(actualLevel as any)) {
+                  seenWords.add(key);
+                  wordPool.push({
+                    en: w.en,
+                    tr: w.tr,
+                    level: actualLevel
+                  });
+                }
               }
             });
           }
@@ -514,7 +667,7 @@ const generateRandomQuizForLevels = (levels: ('A1' | 'A2' | 'B1' | 'B2' | 'C1')[
     savedAt: new Date().toISOString()
   }));
   
-  return generateVocabularyQuiz(vocabWords, books);
+  return generateVocabularyQuiz(vocabWords, books, nativeLanguage);
 };
 
 export default function QuizView({
@@ -534,6 +687,7 @@ export default function QuizView({
   onUnlockBadge,
   refillCountdown,
   onQuizCompleted,
+  nativeLanguage,
 }: QuizViewProps) {
   // Questions navigation & status structures
   const [currentQuestionIdx, setCurrentQuestionIdx] = useState(0);
@@ -557,15 +711,65 @@ export default function QuizView({
 
   const getCachedTranslation = (word: string) => {
     try {
-      const cacheJSON = localStorage.getItem('story_word_translations_cache') || '{}';
-      const cache = JSON.parse(cacheJSON);
       const wLower = word.toLowerCase().trim();
-      if (cache[wLower]) {
-        return cache[wLower] as {
-          translation: string;
-          notes?: string;
-          level?: string;
-        };
+      
+      // 1. Language-specific story translations cache
+      const cacheKeyObj = `story_word_translations_cache_${nativeLanguage}`;
+      const cacheJSON = localStorage.getItem(cacheKeyObj);
+      if (cacheJSON) {
+        const cache = JSON.parse(cacheJSON);
+        if (cache[wLower] && cache[wLower].translation) {
+          const item = cache[wLower];
+          const isTrLeak = nativeLanguage !== 'tr' && (
+            (OFFLINE_DICTIONARY[wLower] && OFFLINE_DICTIONARY[wLower].tr.toLowerCase().trim() === item.translation.toLowerCase().trim()) ||
+            (GLOBAL_DICTIONARY[wLower] && GLOBAL_DICTIONARY[wLower].toLowerCase().trim() === item.translation.toLowerCase().trim())
+          );
+          if (isTrLeak) {
+            delete cache[wLower];
+            localStorage.setItem(cacheKeyObj, JSON.stringify(cache));
+          } else {
+            return item as {
+              translation: string;
+              notes?: string;
+              level?: string;
+            };
+          }
+        }
+      }
+
+      // 2. Language-specific individual word cache
+      const indCacheKey = `linguist_dict_word_${wLower}_${nativeLanguage}`;
+      const indCacheJSON = localStorage.getItem(indCacheKey);
+      if (indCacheJSON) {
+        const parsed = JSON.parse(indCacheJSON);
+        if (parsed.translation) {
+          const isTrLeak = nativeLanguage !== 'tr' && (
+            (OFFLINE_DICTIONARY[wLower] && OFFLINE_DICTIONARY[wLower].tr.toLowerCase().trim() === parsed.translation.toLowerCase().trim()) ||
+            (GLOBAL_DICTIONARY[wLower] && GLOBAL_DICTIONARY[wLower].toLowerCase().trim() === parsed.translation.toLowerCase().trim())
+          );
+          if (isTrLeak) {
+            localStorage.removeItem(indCacheKey);
+          } else {
+            return parsed as {
+              translation: string;
+              notes?: string;
+              level?: string;
+            };
+          }
+        }
+      }
+
+      // 3. Fallback to Turkish cache ONLY if nativeLanguage is 'tr'
+      if (nativeLanguage === 'tr') {
+        const oldCacheJSON = localStorage.getItem('story_word_translations_cache') || '{}';
+        const oldCache = JSON.parse(oldCacheJSON);
+        if (oldCache[wLower]) {
+          return oldCache[wLower] as {
+            translation: string;
+            notes?: string;
+            level?: string;
+          };
+        }
       }
     } catch (e) {
       console.error("Cache read error:", e);
@@ -577,18 +781,20 @@ export default function QuizView({
     const cleanW = cleanWord(rawWord);
     if (!cleanW) return;
     
-    // Set loading state first
+    // Set loading state first using i18n
     setActiveTooltip({
       wordIndex: index,
       word: cleanW,
-      translation: 'Çeviriliyor...'
+      translation: t('translating_word', nativeLanguage)
     });
 
     const cleanWLower = cleanW.toLowerCase();
     
     // 1. Try Cache
     const cached = getCachedTranslation(cleanW);
-    if (cached && cached.translation && cached.translation !== 'Çeviriliyor...') {
+    if (cached && cached.translation && 
+        cached.translation !== t('translating_word', nativeLanguage) &&
+        cached.translation !== t('dict_loading_placeholder', nativeLanguage)) {
       setActiveTooltip({
         wordIndex: index,
         word: cleanW,
@@ -597,8 +803,31 @@ export default function QuizView({
       return;
     }
 
-    // 2. Try Offline Dictionary
-    if (OFFLINE_DICTIONARY[cleanWLower]) {
+    // 2. Try offline book pretranslations for non-Turkish readers
+    if (nativeLanguage !== 'tr') {
+      let offlineTr = null;
+      for (const bId in pretranslatedStories) {
+        const offlineBook = pretranslatedStories[bId as keyof typeof pretranslatedStories];
+        if (offlineBook && offlineBook.words && offlineBook.words[cleanWLower as keyof typeof offlineBook.words]) {
+          const offlineWord = offlineBook.words[cleanWLower as keyof typeof offlineBook.words];
+          if (offlineWord[nativeLanguage as keyof typeof offlineWord]) {
+            offlineTr = offlineWord[nativeLanguage as keyof typeof offlineWord] as string;
+            break;
+          }
+        }
+      }
+      if (offlineTr) {
+        setActiveTooltip({
+          wordIndex: index,
+          word: cleanW,
+          translation: offlineTr
+        });
+        return;
+      }
+    }
+
+    // 3. Try Offline Dictionary (Turkish only)
+    if (nativeLanguage === 'tr' && OFFLINE_DICTIONARY[cleanWLower]) {
       setActiveTooltip({
         wordIndex: index,
         word: cleanW,
@@ -607,8 +836,8 @@ export default function QuizView({
       return;
     }
 
-    // 3. Try Global Dictionary
-    if (GLOBAL_DICTIONARY[cleanWLower]) {
+    // 4. Try Global Dictionary (Turkish only)
+    if (nativeLanguage === 'tr' && GLOBAL_DICTIONARY[cleanWLower]) {
       setActiveTooltip({
         wordIndex: index,
         word: cleanW,
@@ -617,47 +846,49 @@ export default function QuizView({
       return;
     }
 
-    // 4. Try Offline Suffixes
-    const tryOfflineSuffixes = (w: string): string | null => {
-      const stems = [
-        w.endsWith('s') && w.length > 3 ? w.slice(0, -1) : null,
-        w.endsWith('es') && w.length > 4 ? w.slice(0, -2) : null,
-        w.endsWith('ed') && w.length > 4 ? w.slice(0, -2) : null,
-        w.endsWith('ed') && w.length > 4 ? w.slice(0, -1) : null,
-        w.endsWith('ing') && w.length > 5 ? w.slice(0, -3) : null,
-        w.endsWith('ing') && w.length > 5 ? w.slice(0, -3) + 'e' : null,
-        w.endsWith('ing') && w.length > 6 ? w.slice(0, -4) : null,
-        w.endsWith('ly') && w.length > 4 ? w.slice(0, -2) : null,
-        w.endsWith('er') && w.length > 4 ? w.slice(0, -2) : null,
-        w.endsWith('est') && w.length > 5 ? w.slice(0, -3) : null,
-        w.endsWith('tion') ? w.slice(0, -4) + 'te' : null,
-        w.endsWith('ness') ? w.slice(0, -4) : null,
-        w.endsWith('ful') ? w.slice(0, -3) : null,
-        w.endsWith('less') ? w.slice(0, -4) : null,
-      ].filter(Boolean) as string[];
-      for (const stem of stems) {
-        const d = OFFLINE_DICTIONARY[stem];
-        if (d) return d.tr;
-        const g = GLOBAL_DICTIONARY[stem];
-        if (g) return g;
-      }
-      return null;
-    };
+    // 5. Try Offline Suffixes (Turkish only)
+    if (nativeLanguage === 'tr') {
+      const tryOfflineSuffixes = (w: string): string | null => {
+        const stems = [
+          w.endsWith('s') && w.length > 3 ? w.slice(0, -1) : null,
+          w.endsWith('es') && w.length > 4 ? w.slice(0, -2) : null,
+          w.endsWith('ed') && w.length > 4 ? w.slice(0, -2) : null,
+          w.endsWith('ed') && w.length > 4 ? w.slice(0, -1) : null,
+          w.endsWith('ing') && w.length > 5 ? w.slice(0, -3) : null,
+          w.endsWith('ing') && w.length > 5 ? w.slice(0, -3) + 'e' : null,
+          w.endsWith('ing') && w.length > 6 ? w.slice(0, -4) : null,
+          w.endsWith('ly') && w.length > 4 ? w.slice(0, -2) : null,
+          w.endsWith('er') && w.length > 4 ? w.slice(0, -2) : null,
+          w.endsWith('est') && w.length > 5 ? w.slice(0, -3) : null,
+          w.endsWith('tion') ? w.slice(0, -4) + 'te' : null,
+          w.endsWith('ness') ? w.slice(0, -4) : null,
+          w.endsWith('ful') ? w.slice(0, -3) : null,
+          w.endsWith('less') ? w.slice(0, -4) : null,
+        ].filter(Boolean) as string[];
+        for (const stem of stems) {
+          const d = OFFLINE_DICTIONARY[stem];
+          if (d) return d.tr;
+          const g = GLOBAL_DICTIONARY[stem];
+          if (g) return g;
+        }
+        return null;
+      };
 
-    const offlineStem = tryOfflineSuffixes(cleanWLower);
-    if (offlineStem) {
-      setActiveTooltip({
-        wordIndex: index,
-        word: cleanW,
-        translation: offlineStem
-      });
-      return;
+      const offlineStem = tryOfflineSuffixes(cleanWLower);
+      if (offlineStem) {
+        setActiveTooltip({
+          wordIndex: index,
+          word: cleanW,
+          translation: offlineStem
+        });
+        return;
+      }
     }
 
-    // 5. Dynamic API Translation
+    // 6. Dynamic API Translation
     const apiBase = (() => {
       try {
-        if (window.location.protocol === 'capacitor:' || window.location.hostname === 'localhost') {
+        if (window.location.protocol === 'capacitor:') {
           return 'https://ingilizce-oyk-m.onrender.com';
         }
         return '';
@@ -667,7 +898,7 @@ export default function QuizView({
     fetch(`${apiBase}/api/translate-word`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ word: cleanW, context: activeQuestion?.questionText || '', level: activeQuestion?.level || 'A1' })
+      body: JSON.stringify({ word: cleanW, context: activeQuestion?.questionText || '', level: activeQuestion?.level || 'A1', targetLang: nativeLanguage })
     })
     .then(res => {
       if (!res.ok) throw new Error('API error');
@@ -675,6 +906,29 @@ export default function QuizView({
     })
     .then((data: any) => {
       if (data && data.translation) {
+        // Detect if server returned Turkish translation for non-Turkish readers
+        const isTrLeak = nativeLanguage !== 'tr' && (
+          (OFFLINE_DICTIONARY[cleanWLower] && OFFLINE_DICTIONARY[cleanWLower].tr.toLowerCase().trim() === data.translation.toLowerCase().trim()) ||
+          (GLOBAL_DICTIONARY[cleanWLower] && GLOBAL_DICTIONARY[cleanWLower].toLowerCase().trim() === data.translation.toLowerCase().trim())
+        );
+        if (isTrLeak) {
+          throw new Error('Server leaked Turkish translation');
+        }
+
+        // Cache it!
+        try {
+          const cacheKeyObj = `story_word_translations_cache_${nativeLanguage}`;
+          const cacheJSON = localStorage.getItem(cacheKeyObj) || '{}';
+          const cache = JSON.parse(cacheJSON);
+          cache[cleanWLower] = { translation: data.translation, notes: data.explanation || '', level: data.wordLevel || 'A1' };
+          localStorage.setItem(cacheKeyObj, JSON.stringify(cache));
+
+          const indCacheKey = `linguist_dict_word_${cleanWLower}_${nativeLanguage}`;
+          localStorage.setItem(indCacheKey, JSON.stringify({ translation: data.translation, notes: data.explanation || '', level: data.wordLevel || 'A1' }));
+        } catch (e) {
+          console.error("QuizView cache write error:", e);
+        }
+
         setActiveTooltip({
           wordIndex: index,
           word: cleanW,
@@ -684,16 +938,40 @@ export default function QuizView({
         setActiveTooltip({
           wordIndex: index,
           word: cleanW,
-          translation: 'Çeviri bulunamadı'
+          translation: t('dict_translation_failed', nativeLanguage)
         });
       }
     })
     .catch(err => {
-      console.error('Dynamic translation failed in QuizView:', err);
-      setActiveTooltip({
-        wordIndex: index,
-        word: cleanW,
-        translation: 'Çeviri yüklenemedi'
+      console.error('Dynamic translation failed in QuizView, trying client fallback:', err);
+      translateWithGoogleClient(cleanW, nativeLanguage)
+      .then(fallbackTr => {
+        try {
+          const cacheKeyObj = `story_word_translations_cache_${nativeLanguage}`;
+          const cacheJSON = localStorage.getItem(cacheKeyObj) || '{}';
+          const cache = JSON.parse(cacheJSON);
+          cache[cleanWLower] = { translation: fallbackTr, notes: '', level: 'A1' };
+          localStorage.setItem(cacheKeyObj, JSON.stringify(cache));
+
+          const indCacheKey = `linguist_dict_word_${cleanWLower}_${nativeLanguage}`;
+          localStorage.setItem(indCacheKey, JSON.stringify({ translation: fallbackTr, notes: '', level: 'A1' }));
+        } catch (e) {
+          console.error("QuizView cache write error:", e);
+        }
+
+        setActiveTooltip({
+          wordIndex: index,
+          word: cleanW,
+          translation: fallbackTr
+        });
+      })
+      .catch(fallbackErr => {
+        console.error('Client-side translation fallback failed in QuizView:', fallbackErr);
+        setActiveTooltip({
+          wordIndex: index,
+          word: cleanW,
+          translation: t('dict_translation_failed', nativeLanguage)
+        });
       });
     });
   };
@@ -800,9 +1078,9 @@ export default function QuizView({
         medium: ['B1', 'B2'],
         hard: ['C1']
       };
-      return generateRandomQuizForLevels(levelsMap[startDiff] as any, books);
+      return generateRandomQuizForLevels(levelsMap[startDiff] as any, books, nativeLanguage);
     } else {
-      return generateVocabularyQuiz(vocabulary, books);
+      return generateVocabularyQuiz(vocabulary, books, nativeLanguage);
     }
   });
 
@@ -820,10 +1098,10 @@ export default function QuizView({
           medium: ['B1', 'B2'],
           hard: ['C1']
         };
-        const q = generateRandomQuizForLevels(levelsMap[difficulty] as any, books);
+        const q = generateRandomQuizForLevels(levelsMap[difficulty] as any, books, nativeLanguage);
         setQuestions(q);
       } else {
-        const q = generateVocabularyQuiz(vocabulary, books);
+        const q = generateVocabularyQuiz(vocabulary, books, nativeLanguage);
         setQuestions(q);
       }
       setCurrentQuestionIdx(0);
@@ -832,7 +1110,270 @@ export default function QuizView({
       setQuizScore(0);
       setIsCompleted(false);
     }
-  }, [difficulty, quizMode, books, vocabulary]);
+  }, [difficulty, quizMode, books, vocabulary, nativeLanguage]);
+
+  // Dynamic background fetch for daily/practice quiz hints and option translations if not native Turkish
+  React.useEffect(() => {
+    if (nativeLanguage === 'tr' || !questions || questions.length === 0) return;
+
+    const apiBase = (() => {
+      try {
+        if (window.location.protocol === 'capacitor:') {
+          return 'https://ingilizce-oyk-m.onrender.com';
+        }
+        return '';
+      } catch { return ''; }
+    })();
+
+    questions.forEach((q, qIdx) => {
+      // 1. Fetch hint/sentence translation for fill_blank questions
+      if (q.qType === 'fill_blank' && q.sentenceEn) {
+        const cacheKey = `linguist_trans_sentence_game_${q.sentenceEn.toLowerCase().trim()}_${nativeLanguage}`;
+        const cached = localStorage.getItem(cacheKey);
+        if (cached) {
+          setQuestions(prev => {
+            if (!prev) return [];
+            const updated = [...prev];
+            if (updated[qIdx]) {
+              updated[qIdx].hint = `${t('translation', nativeLanguage)}: "${cached}"`;
+            }
+            return updated;
+          });
+        } else {
+          fetch(`${apiBase}/api/translate-sentence`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ text: q.sentenceEn, targetLang: nativeLanguage })
+          })
+          .then(res => {
+            if (!res.ok) throw new Error('API error');
+            return res.json();
+          })
+          .then((data: any) => {
+            if (data && data.translation) {
+              localStorage.setItem(cacheKey, data.translation);
+              setQuestions(prev => {
+                if (!prev) return [];
+                const updated = [...prev];
+                if (updated[qIdx]) {
+                  updated[qIdx].hint = `${t('translation', nativeLanguage)}: "${data.translation}"`;
+                }
+                return updated;
+              });
+            }
+          })
+          .catch(err => {
+            console.error('Quiz hint translation fetch error, trying client fallback:', err);
+            translateWithGoogleClient(q.sentenceEn, nativeLanguage)
+            .then(fallbackTr => {
+              localStorage.setItem(cacheKey, fallbackTr);
+              setQuestions(prev => {
+                if (!prev) return [];
+                const updated = [...prev];
+                if (updated[qIdx]) {
+                  updated[qIdx].hint = `${t('translation', nativeLanguage)}: "${fallbackTr}"`;
+                }
+                return updated;
+              });
+            })
+            .catch(fallbackErr => console.error('Client-side quiz hint translation fallback failed:', fallbackErr));
+          });
+        }
+      }
+
+      // 2. Fetch word translation for tr_to_en questionText
+      if (q.qType === 'tr_to_en') {
+        const cleanW = q.word.toLowerCase().trim();
+        const getCachedWord = () => {
+          const cacheKeyObj = `story_word_translations_cache_${nativeLanguage}`;
+          const cacheJSON = localStorage.getItem(cacheKeyObj);
+          if (cacheJSON) {
+            try {
+              const cache = JSON.parse(cacheJSON);
+              if (cache[cleanW] && cache[cleanW].translation) return cache[cleanW].translation;
+            } catch {}
+          }
+          const indCacheKey = `linguist_dict_word_${cleanW}_${nativeLanguage}`;
+          const indCache = localStorage.getItem(indCacheKey);
+          if (indCache) {
+            try {
+              const parsed = JSON.parse(indCache);
+              if (parsed.translation) return parsed.translation;
+            } catch {}
+          }
+          // Check offline pretranslated
+          for (const bId in pretranslatedStories) {
+            const offlineBook = pretranslatedStories[bId as keyof typeof pretranslatedStories];
+            if (offlineBook && offlineBook.words && offlineBook.words[q.word as keyof typeof offlineBook.words]) {
+              const offlineWord = offlineBook.words[q.word as keyof typeof offlineBook.words];
+              if (offlineWord[nativeLanguage as keyof typeof offlineWord]) {
+                return offlineWord[nativeLanguage as keyof typeof offlineWord] as string;
+              }
+            }
+          }
+          return null;
+        };
+
+        const cachedTr = getCachedWord();
+        if (cachedTr) {
+          setQuestions(prev => {
+            if (!prev) return [];
+            const updated = [...prev];
+            if (updated[qIdx]) {
+              updated[qIdx].questionText = `"${cachedTr}" ${t('quiz_translation_prompt', nativeLanguage)}`;
+            }
+            return updated;
+          });
+        } else {
+          fetch(`${apiBase}/api/translate-word`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ word: q.word, context: q.sentenceEn || '', level: q.level || 'A1', targetLang: nativeLanguage })
+          })
+          .then(res => {
+            if (!res.ok) throw new Error('API error');
+            return res.json();
+          })
+          .then((data: any) => {
+            if (data && data.translation) {
+              const indCacheKey = `linguist_dict_word_${cleanW}_${nativeLanguage}`;
+              localStorage.setItem(indCacheKey, JSON.stringify({
+                translation: data.translation,
+                notes: data.explanation || '',
+                level: data.wordLevel || 'A1'
+              }));
+              setQuestions(prev => {
+                if (!prev) return [];
+                const updated = [...prev];
+                if (updated[qIdx]) {
+                  updated[qIdx].questionText = `"${data.translation}" ${t('quiz_translation_prompt', nativeLanguage)}`;
+                }
+                return updated;
+              });
+            }
+          })
+          .catch(err => {
+            console.error('Quiz word translation fetch error, trying client fallback:', err);
+            translateWithGoogleClient(q.word, nativeLanguage)
+            .then(fallbackTr => {
+              const indCacheKey = `linguist_dict_word_${cleanW}_${nativeLanguage}`;
+              localStorage.setItem(indCacheKey, JSON.stringify({
+                translation: fallbackTr,
+                notes: '',
+                level: q.level || 'A1'
+              }));
+              setQuestions(prev => {
+                if (!prev) return [];
+                const updated = [...prev];
+                if (updated[qIdx]) {
+                  updated[qIdx].questionText = `"${fallbackTr}" ${t('quiz_translation_prompt', nativeLanguage)}`;
+                }
+                return updated;
+              });
+            })
+            .catch(fallbackErr => console.error('Client-side quiz word translation fallback failed:', fallbackErr));
+          });
+        }
+      }
+
+      // 3. Fetch options translations for en_to_tr questions
+      if (q.qType === 'en_to_tr' && q.optionsEn) {
+        q.optionsEn.forEach((engWord: string, optIdx: number) => {
+          const cleanW = engWord.toLowerCase().trim();
+          const getCachedWord = () => {
+            const cacheKeyObj = `story_word_translations_cache_${nativeLanguage}`;
+            const cacheJSON = localStorage.getItem(cacheKeyObj);
+            if (cacheJSON) {
+              try {
+                const cache = JSON.parse(cacheJSON);
+                if (cache[cleanW] && cache[cleanW].translation) return cache[cleanW].translation;
+              } catch {}
+            }
+            const indCacheKey = `linguist_dict_word_${cleanW}_${nativeLanguage}`;
+            const indCache = localStorage.getItem(indCacheKey);
+            if (indCache) {
+              try {
+                const parsed = JSON.parse(indCache);
+                if (parsed.translation) return parsed.translation;
+              } catch {}
+            }
+            // Check offline pretranslated
+            for (const bId in pretranslatedStories) {
+              const offlineBook = pretranslatedStories[bId as keyof typeof pretranslatedStories];
+              if (offlineBook && offlineBook.words && offlineBook.words[engWord as keyof typeof offlineBook.words]) {
+                const offlineWord = offlineBook.words[engWord as keyof typeof offlineBook.words];
+                if (offlineWord[nativeLanguage as keyof typeof offlineWord]) {
+                  return offlineWord[nativeLanguage as keyof typeof offlineWord] as string;
+                }
+              }
+            }
+            return null;
+          };
+
+          const cachedTr = getCachedWord();
+          if (cachedTr) {
+            setQuestions(prev => {
+              if (!prev) return [];
+              const updated = [...prev];
+              if (updated[qIdx] && updated[qIdx].options) {
+                updated[qIdx].options[optIdx] = cachedTr;
+              }
+              return updated;
+            });
+          } else {
+            fetch(`${apiBase}/api/translate-word`, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ word: engWord, context: q.sentenceEn || '', level: q.level || 'A1', targetLang: nativeLanguage })
+            })
+            .then(res => {
+              if (!res.ok) throw new Error('API error');
+              return res.json();
+            })
+            .then((data: any) => {
+              if (data && data.translation) {
+                const indCacheKey = `linguist_dict_word_${cleanW}_${nativeLanguage}`;
+                localStorage.setItem(indCacheKey, JSON.stringify({
+                  translation: data.translation,
+                  notes: data.explanation || '',
+                  level: data.wordLevel || 'A1'
+                }));
+                setQuestions(prev => {
+                  if (!prev) return [];
+                  const updated = [...prev];
+                  if (updated[qIdx] && updated[qIdx].options) {
+                    updated[qIdx].options[optIdx] = data.translation;
+                  }
+                  return updated;
+                });
+              }
+            })
+            .catch(err => {
+              console.error('Quiz option translation fetch error, trying client fallback:', err);
+              translateWithGoogleClient(engWord, nativeLanguage)
+              .then(fallbackTr => {
+                const indCacheKey = `linguist_dict_word_${cleanW}_${nativeLanguage}`;
+                localStorage.setItem(indCacheKey, JSON.stringify({
+                  translation: fallbackTr,
+                  notes: '',
+                  level: q.level || 'A1'
+                }));
+                setQuestions(prev => {
+                  if (!prev) return [];
+                  const updated = [...prev];
+                  if (updated[qIdx] && updated[qIdx].options) {
+                    updated[qIdx].options[optIdx] = fallbackTr;
+                  }
+                  return updated;
+                });
+              })
+              .catch(fallbackErr => console.error('Client-side quiz option translation fallback failed:', fallbackErr));
+            });
+          }
+        });
+      }
+    });
+  }, [questions, nativeLanguage]);
 
   const activeQuestion = questions[currentQuestionIdx];
 
@@ -925,7 +1466,7 @@ export default function QuizView({
         }, 2000);
       } else if (status === 'error') {
         setIsProcessingPayment(false);
-        setToastMessage(errorMsg || 'Ödeme sırasında bir hata oluştu.');
+        setToastMessage(errorMsg || t('sub_payment_error', nativeLanguage));
         setTimeout(() => setToastMessage(null), 3000);
       }
     });
@@ -937,7 +1478,7 @@ export default function QuizView({
         setIsProcessingPayment(true);
       } else if (status === 'success') {
         setIsProcessingPayment(false);
-        setToastMessage('Aboneliğiniz başarıyla geri yüklendi! 🎉');
+        setToastMessage(t('sub_restore_success', nativeLanguage));
         onSubscribe('yearly'); // varsayılan yıllık premium statüsüne yükselt
         syncTrigger();
         setTimeout(() => {
@@ -946,7 +1487,7 @@ export default function QuizView({
         }, 2000);
       } else if (status === 'error') {
         setIsProcessingPayment(false);
-        setToastMessage(errorMsg || 'Aktif abonelik bulunamadı.');
+        setToastMessage(errorMsg || t('sub_restore_empty', nativeLanguage));
         setTimeout(() => setToastMessage(null), 3000);
       }
     });
@@ -1013,12 +1554,12 @@ export default function QuizView({
           <h3 className={`font-headline-lg text-xl font-bold mb-2 tracking-tight ${
             isDarkMode ? 'text-white' : 'text-[#2D3436]'
           }`}>
-            Yetersiz Kelime Dağarcığı! 📚
+            {t('quiz_insufficient_vocab', nativeLanguage)}
           </h3>
           <p className={`text-sm max-w-sm mx-auto mb-6 leading-relaxed ${
             isDarkMode ? 'text-gray-400' : 'text-gray-500'
           }`}>
-            Kelime Dağarcığı pratik testlerini çözebilmek için en az <strong>3 adet isim/özel isim olmayan kelime</strong> kaydetmiş olmanız gerekmektedir. Şu anda geçerli kelime sayınız: <strong>{questions.length}</strong> (Toplam: {vocabulary.length})
+            {t('quiz_min_words_required', nativeLanguage).replace('{current}', String(questions.length)).replace('{total}', String(vocabulary.length))}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center max-w-xs mx-auto">
@@ -1026,7 +1567,7 @@ export default function QuizView({
               onClick={onGoToLibrary}
               className="flex-1 px-6 py-3.5 bg-[#FF6B6B] text-white rounded-full font-bold text-sm hover:bg-[#e05a5a] transition-all transform active:scale-95 cursor-pointer shadow-md shadow-[#FF6B6B]/20 font-headline-lg"
             >
-              Kütüphaneye Git
+              {t('btn_go_to_library', nativeLanguage)}
             </button>
             <button
               onClick={onBackToVocabulary}
@@ -1036,7 +1577,7 @@ export default function QuizView({
                   : 'text-gray-700 border-gray-300 hover:bg-gray-50'
               }`}
             >
-              Geri Dön
+              {t('btn_back', nativeLanguage)}
             </button>
           </div>
         </motion.div>
@@ -1059,19 +1600,19 @@ export default function QuizView({
             <h3 className={`font-headline-lg text-2xl font-bold mb-2 tracking-tight ${
               isDarkMode ? 'text-white' : 'text-[#2D3436]'
             }`}>
-              Harika! Testi Tamamladın! 🎉
+              {t('quiz_completed_title', nativeLanguage)}
             </h3>
             <p className={`text-sm max-w-sm mx-auto mb-6 ${
               isDarkMode ? 'text-gray-400' : 'text-gray-500'
             }`}>
-              Kelime dağarcığı pekiştirme testini başarıyla bitirdiniz. İlerledikçe yeni rozetler açılmaya devam edecektir.
+              {t('quiz_completed_desc', nativeLanguage)}
             </p>
 
             <div className={`max-w-xs mx-auto mb-8 p-4 rounded-2xl border text-center ${
               isDarkMode ? 'bg-[#121214] border-[#2A2A30]' : 'bg-[#FFFBF0] border-[#FFE66D]/60'
             }`}>
               <div>
-                <span className="text-[10px] font-bold text-gray-400 tracking-wider block">BAŞARI ORANI</span>
+                <span className="text-[10px] font-bold text-gray-400 tracking-wider block">{t('quiz_success_rate', nativeLanguage)}</span>
                 <span className="text-xl font-extrabold text-[#4ECDC4] font-mono block">
                   {quizScore} / {questions.length}
                 </span>
@@ -1082,7 +1623,7 @@ export default function QuizView({
               onClick={handleResetQuiz}
               className="px-8 py-3.5 bg-[#FF6B6B] text-white rounded-full font-bold text-sm hover:bg-[#e05a5a] transition-all transform active:scale-95 cursor-pointer shadow-md shadow-[#FF6B6B]/20"
             >
-              Kelime Odasına Geri Dön
+              {t('quiz_back_to_words', nativeLanguage)}
             </button>
           </motion.div>
         ) : (
@@ -1109,17 +1650,17 @@ export default function QuizView({
                           : 'text-[#FF6B6B] border-[#FFE66D] hover:bg-[#FFE66D]/15'
                       }`}
                     >
-                      TESTİ BİTİR
+                      {t('quiz_end_btn', nativeLanguage)}
                     </button>
                   </div>
 
                   {/* Header Labels (centered for random, left-aligned for saved) */}
                   <div className={`flex flex-col gap-1 mb-4 ${quizMode === 'random' ? 'items-center text-center' : 'items-start text-left'}`}>
                     <span className="text-[13px] text-gray-400 font-extrabold tracking-wider font-headline-lg">
-                      {quizMode === 'random' ? `RASTGELE PRATİK (${activeQuestion?.level || ''})` : 'KELİMELERİMLE PRATİK'}
+                      {quizMode === 'random' ? t('quiz_header_random', nativeLanguage).replace('{level}', activeQuestion?.level || '') : t('quiz_header_saved', nativeLanguage)}
                     </span>
                     <span className="text-xs text-[#FF6B6B] font-bold font-headline-lg">
-                      SORU {currentQuestionIdx + 1} / {questions.length}
+                      {t('quiz_question_count', nativeLanguage).replace('{index}', String(currentQuestionIdx + 1)).replace('{total}', String(questions.length))}
                     </span>
                   </div>
 
@@ -1138,10 +1679,10 @@ export default function QuizView({
                   <div className="text-center mb-8">
                     <span className="text-[10px] tracking-widest text-[#4ECDC4] font-bold bg-[#4ECDC4]/10 border border-[#4ECDC4]/20 px-3.5 py-1.5 rounded-full font-headline-lg uppercase">
                       {activeQuestion.qType === 'fill_blank'
-                        ? 'CÜMLE DOLDURMA (CLOZE)'
+                        ? t('quiz_type_fill_blank', nativeLanguage)
                         : activeQuestion.qType === 'tr_to_en'
-                          ? 'TÜRKÇE -> İNGİLİZCE ÇEVİRİ'
-                          : 'İNGİLİZCE -> TÜRKÇE ANLAM'}
+                          ? t('quiz_type_tr_to_en', nativeLanguage)
+                          : t('quiz_type_en_to_tr', nativeLanguage)}
                     </span>
                     <h3 className={`text-2xl sm:text-3xl font-bold font-headline-lg tracking-tight mt-4 px-2 leading-relaxed ${
                       isDarkMode ? 'text-white' : 'text-[#2D3436]'
@@ -1162,7 +1703,7 @@ export default function QuizView({
                         backgroundColor: hexToRgba(getLevelColor(activeQuestion.level), 0.1)
                       }}
                     >
-                      Zorluk: {activeQuestion.level}
+                      {t('difficulty_label', nativeLanguage)}: {activeQuestion.level}
                     </p>
                   </div>
 
@@ -1222,7 +1763,7 @@ export default function QuizView({
                         }`}>
                           <h5 className="font-bold text-xs tracking-wider mb-1.5 flex items-center gap-1.5 font-headline-lg text-[#FF6B6B]">
                             <Sparkles className="w-4.5 h-4.5 text-[#FF6B6B] animate-pulse shrink-0" />
-                            <span>YANLIŞ CEVAP İPUCU & AÇIKLAMASI</span>
+                            <span>{t('quiz_incorrect_explanation', nativeLanguage)}</span>
                           </h5>
                           <p className={`text-xs leading-relaxed font-semibold ${
                             isDarkMode ? 'text-gray-200' : 'text-gray-700'
@@ -1234,7 +1775,7 @@ export default function QuizView({
                           <div className={`border-2 border-dashed rounded p-2.5 mt-2.5 text-[11px] leading-relaxed font-medium ${
                             isDarkMode ? 'bg-[#121214] border-gray-700 text-gray-300' : 'bg-white border-[#FFE66D]/80 text-[#2D3436]'
                           }`}>
-                            <b>Öğrenim Notu:</b> {activeQuestion.explanation}
+                            <b>{t('quiz_learning_note', nativeLanguage)}</b> {activeQuestion.explanation}
                           </div>
                         </div>
 
@@ -1243,7 +1784,7 @@ export default function QuizView({
                           onClick={handleNext}
                           className="mt-4 w-full py-3.5 bg-[#FF6B6B] hover:bg-[#e05a5a] text-white rounded-xl text-sm font-bold transition-all flex items-center justify-center gap-2 cursor-pointer shadow-md shadow-[#FF6B6B]/20"
                         >
-                          <span>Sonraki Soruya Geç</span>
+                          <span>{t('quiz_next_question', nativeLanguage)}</span>
                           <ChevronRight className="w-4 h-4" />
                         </button>
                       </motion.div>
@@ -1254,12 +1795,12 @@ export default function QuizView({
                   {quizMode === 'random' && (
                     <div className="mt-8 pt-5 border-t border-gray-400/15">
                       <span className="text-[10px] font-bold text-gray-400 block uppercase mb-2.5 text-center select-none tracking-wider font-headline-lg">
-                        Quiz Zorluk Seviyesi
+                        {t('quiz_difficulty_level', nativeLanguage)}
                       </span>
                       <div className="grid grid-cols-3 gap-2">
                         {(['easy', 'medium', 'hard'] as const).map((diff) => {
                           const isSelected = difficulty === diff;
-                          const label = diff === 'easy' ? 'Kolay (A1-A2)' : diff === 'medium' ? 'Orta (B1-B2)' : 'Zor (C1-C2)';
+                          const label = diff === 'easy' ? t('difficulty_easy', nativeLanguage) : diff === 'medium' ? t('difficulty_medium', nativeLanguage) : t('difficulty_hard', nativeLanguage);
                           
                           let btnStyle = isDarkMode
                             ? 'bg-[#1E1E22] border-[#2A2A30] text-gray-400 hover:text-white hover:border-gray-500'
@@ -1275,7 +1816,7 @@ export default function QuizView({
                               onClick={() => {
                                 if (difficulty !== diff) {
                                   setDifficulty(diff);
-                                  setToastMessage(`Zorluk seviyesi değiştirildi: ${label} 🎉`);
+                                  setToastMessage(t('toast_difficulty_changed', nativeLanguage).replace('{level}', label));
                                   setTimeout(() => setToastMessage(null), 2500);
                                 }
                               }}
@@ -1325,16 +1866,16 @@ export default function QuizView({
 
                 <div className="flex items-center gap-2 mb-2 bg-[#FFE66D] text-gray-950 text-[10px] font-bold px-2.5 py-1 rounded-full w-max shadow-xs font-headline-lg">
                   <Crown className="w-3.5 h-3.5 text-[#FF6B6B] fill-[#FF6B6B]" />
-                  <span>SINIRSIZ CAN VE PREMIUM AVANTAJLAR</span>
+                  <span>{t('premium_benefits_tag', nativeLanguage)}</span>
                 </div>
                 <h3 className="font-headline-lg text-2xl font-bold tracking-tight mb-1 text-white">
-                  {stats.hearts <= 0 ? 'Canınız Kalmadı!' : 'İngilizce Öyküm Premium Erişimi'}
+                  {stats.hearts <= 0 ? t('no_lives_title', nativeLanguage) : t('premium_access_title', nativeLanguage)}
                 </h3>
                  <p className="text-xs text-gray-400 leading-relaxed font-semibold">
                   {stats.hearts <= 0 && refillCountdown ? (
-                    <span className="text-[#FF6B6B] font-bold">Bir sonraki can {refillCountdown} içinde dolacak.</span>
+                    <span className="text-[#FF6B6B] font-bold">{t('refill_countdown_desc', nativeLanguage).replace('{time}', refillCountdown)}</span>
                   ) : (
-                    'Sınırsız can, interaktif kelime pratikleri, ssl şifreli ödeme altyapısı ve düşük gecikmeli veri senkronizasyonu sizi bekliyor!'
+                    t('premium_features_desc', nativeLanguage)
                   )}
                 </p>
               </div>
@@ -1345,7 +1886,7 @@ export default function QuizView({
               }`}>
                 {/* Checkout plans selections */}
                 <div className="space-y-3">
-                  <span className="text-xs font-bold text-gray-455 tracking-widest block font-headline-lg">ÜYELİK ABONELİK PAKETLERİ</span>
+                  <span className="text-xs font-bold text-gray-455 tracking-widest block font-headline-lg">{t('subscription_plans', nativeLanguage)}</span>
                   
                   {/* Monthly plan choice */}
                   <div
@@ -1357,11 +1898,11 @@ export default function QuizView({
                     }`}
                   >
                     <div>
-                      <span className={`font-bold text-sm block font-headline-lg ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>Aylık Abonelik</span>
-                      <span className="text-[11px] text-gray-400 font-medium font-headline-lg">İstediğin zaman iptal et.</span>
+                      <span className={`font-bold text-sm block font-headline-lg ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>{t('monthly_subscription', nativeLanguage)}</span>
+                      <span className="text-[11px] text-gray-400 font-medium font-headline-lg">{t('cancel_anytime', nativeLanguage)}</span>
                     </div>
                     <div className="text-right">
-                      <span className="font-bold text-lg font-headline-lg text-[#FF6B6B] block">99₺ <span className="text-xs font-semibold text-gray-400">/ ay</span></span>
+                      <span className="font-bold text-lg font-headline-lg text-[#FF6B6B] block">99₺ <span className="text-xs font-semibold text-gray-400">{t('unit_per_month', nativeLanguage)}</span></span>
                     </div>
                   </div>
 
@@ -1376,17 +1917,17 @@ export default function QuizView({
                   >
                     {/* Discount badge */}
                     <div className="absolute top-0 right-0 bg-[#4ECDC4] text-[#2D3436] font-extrabold text-[9px] px-2.5 py-0.5 rounded-bl-lg tracking-wider font-headline-lg shadow-sm">
-                      %40 İNDİRİMLİ
+                      {t('percent_discount', nativeLanguage).replace('{percent}', '40')}
                     </div>
                     <div>
                       <span className={`font-bold text-sm flex items-center gap-1.5 font-headline-lg ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
-                        Yıllık Abonelik
+                        {t('yearly_subscription', nativeLanguage)}
                       </span>
-                      <span className="text-[11px] text-gray-400 font-medium font-headline-lg">Toplam 712₺ tek çekim ödeme.</span>
+                      <span className="text-[11px] text-gray-400 font-medium font-headline-lg">{t('yearly_payment_detail', nativeLanguage)}</span>
                     </div>
                     <div className="text-right">
                       <span className="text-xs text-gray-455 line-through block font-bold">1.188₺</span>
-                      <span className="font-bold text-lg font-headline-lg text-[#4ECDC4] block">59₺ <span className="text-xs font-semibold text-gray-400">/ ay</span></span>
+                      <span className="font-bold text-lg font-headline-lg text-[#4ECDC4] block">59₺ <span className="text-xs font-semibold text-gray-400">{t('unit_per_month', nativeLanguage)}</span></span>
                     </div>
                   </div>
                 </div>
@@ -1394,10 +1935,10 @@ export default function QuizView({
                 {/* Google Play Billing Checkout Box */}
                 <form onSubmit={processSecurePayment} className="space-y-5">
                   <div className="flex justify-between items-center flex-wrap gap-2">
-                    <span className="text-xs font-bold text-gray-400 tracking-widest block font-headline-lg">GOOGLE PLAY ÖDEMESİ</span>
+                    <span className="text-xs font-bold text-gray-400 tracking-widest block font-headline-lg">{t('google_play_payment', nativeLanguage)}</span>
                     <div className="flex items-center gap-1.5 text-xs text-[#4ECDC4] font-bold bg-[#4ECDC4]/10 px-3 py-1 rounded-full border border-[#4ECDC4]/30">
                       <ShieldCheck className="w-4 h-4 text-[#4ECDC4]" />
-                      <span>Google Play Korumalı</span>
+                      <span>{t('google_play_protected', nativeLanguage)}</span>
                     </div>
                   </div>
 
@@ -1411,12 +1952,12 @@ export default function QuizView({
                       {isProcessingPayment ? (
                         <>
                           <RefreshCw className="w-4 h-4 animate-spin text-gray-950" />
-                          <span>Google Play ile İşleniyor...</span>
+                          <span>{t('processing_google_play', nativeLanguage)}</span>
                         </>
                       ) : (
                         <>
                           <Crown className="w-4 h-4 text-gray-950 fill-gray-950" />
-                          <span>Abone Ol</span>
+                          <span>{t('btn_subscribe', nativeLanguage)}</span>
                         </>
                       )}
                     </button>
@@ -1427,7 +1968,7 @@ export default function QuizView({
                       className="w-full py-3.5 bg-emerald-500/10 border border-emerald-500 rounded-xl text-xs font-bold flex items-center justify-center gap-2 select-none"
                     >
                       <Check className="w-5 h-5 text-emerald-500 animate-bounce" />
-                      <span className={isDarkMode ? 'text-white' : 'text-[#2D3436]'}>Ödeme Başarılı! Premium Aktive Edildi. 🎉</span>
+                      <span className={isDarkMode ? 'text-white' : 'text-[#2D3436]'}>{t('payment_success_premium', nativeLanguage)}</span>
                     </motion.div>
                   )}
 
@@ -1455,16 +1996,16 @@ export default function QuizView({
                           GPAY
                         </div>
                         <span className={`text-xs font-bold ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                          Google Play Tanımlı Ödeme Yöntemi
+                          {t('google_play_method', nativeLanguage)}
                         </span>
                       </div>
-                      <span className="text-[10px] text-gray-400 font-semibold font-headline-lg select-none">Varsayılan</span>
+                      <span className="text-[10px] text-gray-400 font-semibold font-headline-lg select-none">{t('default_label', nativeLanguage)}</span>
                     </div>
                   </div>
 
                   {/* Legal Play Store warning info */}
                   <p className="text-[10px] leading-relaxed text-gray-400 text-left font-medium select-none">
-                    Satın Al butonuna tıklayarak Google Play Hizmet Şartları'nı kabul etmiş olursunuz. Aboneliğiniz, son faturalandırma döneminden en az 24 saat önce iptal edilmediği sürece otomatik olarak yenilenir ve seçtiğiniz tutar üzerinden ({checkoutTier === 'monthly' ? '99,00 TL' : '712,00 TL'}) Google Play tanımlı kartınızdan tahsil edilir. Aboneliklerinizi dilediğiniz zaman Google Play Store ayarlarınızdan yönetebilir veya iptal edebilirsiniz.
+                    {t('google_play_terms_desc', nativeLanguage).replace('{amount}', checkoutTier === 'monthly' ? '99,00 TL' : '712,00 TL')}
                   </p>
                 </form>
 
@@ -1477,14 +2018,14 @@ export default function QuizView({
                     className="text-[11px] text-blue-500 hover:text-blue-600 font-bold tracking-wide transition-colors flex items-center gap-1 select-none disabled:opacity-50"
                   >
                     <RefreshCw className="w-3 h-3" />
-                    <span>Satın Almaları Geri Yükle (Restore)</span>
+                    <span>{t('restore_purchases', nativeLanguage)}</span>
                   </button>
                 </div>
 
                 {/* Footer security badges */}
                 <div className="flex justify-center items-center gap-1.5 text-[9px] text-gray-400 font-semibold pt-1 select-none text-center leading-normal">
                   <Lock className="w-3.5 h-3.5 text-gray-400" />
-                  <span>Google Play Ödeme Altyapısı ile Güvenli ve Korumalı Satın Alım</span>
+                  <span>{t('secure_checkout_desc', nativeLanguage)}</span>
                 </div>
               </div>
             </motion.div>

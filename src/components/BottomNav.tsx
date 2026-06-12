@@ -1,13 +1,15 @@
 import React from 'react';
 import { BookOpen, BookMarked, User, Star } from 'lucide-react';
+import { LanguageCode, t } from '../i18n';
 
 interface BottomNavProps {
   currentTab: string;
   onTabChange: (tab: string) => void;
   isDarkMode?: boolean;
+  nativeLanguage: LanguageCode;
 }
 
-export default function BottomNav({ currentTab, onTabChange, isDarkMode }: BottomNavProps) {
+export default function BottomNav({ currentTab, onTabChange, isDarkMode, nativeLanguage }: BottomNavProps) {
   return (
     <nav 
       className={`fixed md:absolute bottom-0 left-0 w-full flex justify-center items-center pt-3 border-t z-50 transition-colors duration-200 backdrop-blur-md ${
@@ -28,7 +30,7 @@ export default function BottomNav({ currentTab, onTabChange, isDarkMode }: Botto
           }`}
         >
           <BookOpen className={`w-[22px] h-[22px] mb-1 ${currentTab === 'library' ? 'stroke-[2.5]' : 'stroke-[1.5]'}`} />
-          <span className="text-[11px] font-medium tracking-wide">Kitaplık</span>
+          <span className="text-[11px] font-medium tracking-wide">{t('tab_library', nativeLanguage)}</span>
         </button>
 
         {/* Vocabulary Tab */}
@@ -41,7 +43,7 @@ export default function BottomNav({ currentTab, onTabChange, isDarkMode }: Botto
           }`}
         >
           <BookMarked className={`w-[22px] h-[22px] mb-1 ${currentTab === 'vocabulary' || currentTab === 'quiz' ? 'stroke-[2.5]' : 'stroke-[1.5]'}`} />
-          <span className="text-[11px] font-medium tracking-wide">Kelimelerim</span>
+          <span className="text-[11px] font-medium tracking-wide">{t('tab_words', nativeLanguage)}</span>
         </button>
 
         {/* Favorites Tab */}
@@ -54,7 +56,7 @@ export default function BottomNav({ currentTab, onTabChange, isDarkMode }: Botto
           }`}
         >
           <Star className={`w-[22px] h-[22px] mb-1 ${currentTab === 'favorites' ? 'stroke-[2.5] fill-[#F59E0B]' : 'stroke-[1.5]'}`} />
-          <span className="text-[11px] font-medium tracking-wide">Favoriler</span>
+          <span className="text-[11px] font-medium tracking-wide">{t('tab_favorites', nativeLanguage)}</span>
         </button>
 
         {/* Profile Tab */}
@@ -67,7 +69,7 @@ export default function BottomNav({ currentTab, onTabChange, isDarkMode }: Botto
           }`}
         >
           <User className={`w-[22px] h-[22px] mb-1 ${currentTab === 'profile' ? 'stroke-[2.5]' : 'stroke-[1.5]'}`} />
-          <span className="text-[11px] font-medium tracking-wide">Profil</span>
+          <span className="text-[11px] font-medium tracking-wide">{t('tab_profile', nativeLanguage)}</span>
         </button>
       </div>
     </nav>

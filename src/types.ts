@@ -43,6 +43,7 @@ export interface VocabularyWord {
   exampleEn?: string;
   exampleTr?: string;
   savedAt: string;
+  lang?: string;
 }
 
 export interface QuizQuestion {
@@ -94,6 +95,8 @@ export interface UserStats {
   dailyQuizzesSolvedCount?: number;
   dailyQuizzesScoreSum?: number;
   dailyQuizzesQuestionsSum?: number;
+  synonymGamesCompletedCount?: number;
+  fillBlankGamesCompletedCount?: number;
 }
 
 export const getLevelColor = (level?: string): string => {

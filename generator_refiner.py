@@ -38,7 +38,7 @@ Return a JSON object in this exact schema:
 }}
 """
 
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key={api_key}"
+    models = ["gemini-flash-lite-latest", "gemini-flash-latest", "gemini-3-flash-preview", "gemini-2.5-flash-lite", "gemini-2.5-flash"]
     headers = {"Content-Type": "application/json"}
     
     data = {
@@ -48,30 +48,46 @@ Return a JSON object in this exact schema:
         }
     }
     
-    req = urllib.request.Request(url, data=json.dumps(data).encode("utf-8"), headers=headers)
-    
-    for attempt in range(5):
-        try:
-            with urllib.request.urlopen(req, timeout=90) as response:
-                res_body = response.read().decode("utf-8")
-                res_json = json.loads(res_body)
-                text_content = res_json["candidates"][0]["content"]["parts"][0]["text"]
-                refined = json.loads(text_content.strip())
+    for model in models:
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={api_key}"
+        req = urllib.request.Request(url, data=json.dumps(data).encode("utf-8"), headers=headers)
+        
+        for attempt in range(3):
+            try:
+                with urllib.request.urlopen(req, timeout=90) as response:
+                    res_body = response.read().decode("utf-8")
+                    res_json = json.loads(res_body)
+                    text_content = res_json["candidates"][0]["content"]["parts"][0]["text"]
+                    refined = json.loads(text_content.strip())
+                    
+                    # Basic validation
+                    if "en" in refined and "tr" in refined and "words" in refined:
+                        if len(refined["en"]) == len(story_data["en"]) and len(refined["tr"]) == len(story_data["tr"]):
+                            print(f"  [Refiner] Success! Story refined for level {level} using {model}.", flush=True)
+                            return refined
+                    print("  [Refiner Warning] Invalid response structure from Gemini. Retrying...", flush=True)
+            except Exception as e:
+                err_str = str(e)
+                body = ""
+                if hasattr(e, 'read'):
+                    try:
+                        body = e.read().decode("utf-8")
+                    except:
+                        pass
                 
-                # Basic validation
-                if "en" in refined and "tr" in refined and "words" in refined:
-                    if len(refined["en"]) == len(story_data["en"]) and len(refined["tr"]) == len(story_data["tr"]):
-                        print(f"  [Refiner] Success! Story refined for level {level}.")
-                        return refined
-                print("  [Refiner Warning] Invalid response structure from Gemini. Retrying...")
-        except Exception as e:
-            err_str = str(e)
-            if "429" in err_str:
-                print(f"  [Refiner Warning] Rate limited (429). Sleeping 30s (Attempt {attempt+1}/5)...")
-                time.sleep(30)
-            else:
-                print(f"  [Refiner Warning] Attempt {attempt+1} failed: {e}. Sleeping 10s...")
-                time.sleep(10)
+                is_quota = "quota" in err_str.lower() or "quota" in body.lower() or "limit" in body.lower() or "exhausted" in body.lower()
                 
-    print("  [Refiner Error] Failed to refine story. Falling back to original story text.")
+                if "429" in err_str:
+                    if is_quota:
+                        print(f"  [Refiner Warning] Model {model} quota exhausted. Switching to next model...", flush=True)
+                        break
+                    else:
+                        print(f"  [Refiner Warning] Model {model} rate limited (429). Sleeping 30s (Attempt {attempt+1}/3)...", flush=True)
+                        time.sleep(30)
+                else:
+                    print(f"  [Refiner Warning] Attempt {attempt+1} with model {model} failed: {e}. Sleeping 10s...", flush=True)
+                    time.sleep(10)
+        print(f"  [Refiner Warning] Model {model} failed all attempts or quota exhausted. Trying next model...", flush=True)
+                    
+    print("  [Refiner Error] Failed to refine story. Falling back to original story text.", flush=True)
     return story_data

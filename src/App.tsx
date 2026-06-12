@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Capacitor } from '@capacitor/core';
 import { Device } from '@capacitor/device';
 import { App as CapacitorApp } from '@capacitor/app';
@@ -20,6 +20,7 @@ import { OFFLINE_DICTIONARY } from './dictionary';
 import { AVATAR_OPTIONS } from './avatar_assets';
 import { scheduleDailyReminder, scheduleHeartsRefilledNotification, cancelHeartsNotification } from './services/notifications';
 import { initializeBillingStore } from './services/billing';
+import { LanguageCode, SUPPORTED_LANGUAGES, t } from './i18n';
 
 const getLocalDateString = () => {
   const d = new Date();
@@ -88,7 +89,7 @@ const isDifferentCalendarWeek = (dateStr1: string, dateStr2: string): boolean =>
 };
 const getApiBase = () => {
   try {
-    if (window.location.protocol === 'capacitor:' || window.location.hostname === 'localhost') {
+    if (window.location.protocol === 'capacitor:') {
       return 'https://ingilizce-oyk-m.onrender.com';
     }
     return '';
@@ -96,6 +97,7 @@ const getApiBase = () => {
     return '';
   }
 };
+
 
 const DEFAULT_STATS: UserStats = {
   learnedWordsCount: 0,
@@ -113,7 +115,9 @@ const DEFAULT_STATS: UserStats = {
   weeklyMins: [0, 0, 0, 0, 0, 0, 0],
   dailyQuizzesSolvedCount: 0,
   dailyQuizzesScoreSum: 0,
-  dailyQuizzesQuestionsSum: 0
+  dailyQuizzesQuestionsSum: 0,
+  synonymGamesCompletedCount: 0,
+  fillBlankGamesCompletedCount: 0
 };
 
 const stripBooksForSync = (booksList: Book[]) => {
@@ -198,7 +202,36 @@ const migrateLegacyNamespace = (keyPrefix: string, deviceUuid: string): string =
   return '';
 };
 
+const detectBrowserLanguage = (): LanguageCode => {
+  const code = navigator.language?.toLowerCase() || '';
+  if (code.startsWith('tr')) return 'tr';
+  if (code.startsWith('es')) return 'es';
+  if (code.startsWith('fr')) return 'fr';
+  if (code.startsWith('de')) return 'de';
+  if (code.startsWith('it')) return 'it';
+  if (code.startsWith('pt')) return 'pt';
+  if (code.startsWith('ru')) return 'ru';
+  if (code.startsWith('ar')) return 'ar';
+  if (code.startsWith('zh')) return 'zh';
+  if (code.startsWith('hi')) return 'hi';
+  if (code.startsWith('ja')) return 'ja';
+  return 'en';
+};
+
 export default function App() {
+  const [nativeLanguage, setNativeLanguage] = useState<LanguageCode>(() => {
+    const saved = localStorage.getItem('linguist_native_language') as LanguageCode;
+    if (saved && SUPPORTED_LANGUAGES.some(l => l.code === saved)) {
+      return saved;
+    }
+    return detectBrowserLanguage();
+  });
+
+  const handleUpdateLanguage = (lang: LanguageCode) => {
+    setNativeLanguage(lang);
+    localStorage.setItem('linguist_native_language', lang);
+  };
+
   const [currentTab, setCurrentTab] = useState<string>(() => {
     const oauthInProgress = localStorage.getItem('linguist_oauth_in_progress');
     if (oauthInProgress === 'true') {
@@ -464,7 +497,9 @@ export default function App() {
         isPremium: false,
         weeklyWords: [0, 0, 0, 0, 0, 0, 0],
         weeklyMins: [0, 0, 0, 0, 0, 0, 0],
-        lastActiveDate: getLocalDateString() // initialize to today
+        lastActiveDate: getLocalDateString(), // initialize to today
+        synonymGamesCompletedCount: 0,
+        fillBlankGamesCompletedCount: 0
       };
       
       const zeroedBooks = INITIAL_BOOKS.map(b => ({
@@ -981,7 +1016,15 @@ export default function App() {
     checkAndUnlock('b15', (stats.totalTimeMinutes || 0) >= 500);
     // b5: Premium Üye — retroactively unlock if user already has premium
     checkAndUnlock('b5', !!stats.isPremium);
-  }, [stats?.completedBooksCount, stats?.dailyStreak, stats?.totalTimeMinutes, stats?.isPremium, vocabulary.length, books, badges]);
+    // b16: Eşleme Çırağı (İlk eş bulma oyununu başarıyla tamamla)
+    checkAndUnlock('b16', (stats.synonymGamesCompletedCount || 0) >= 1);
+    // b17: Eşleme Ustası (5 kez eş bulma oyununu başarıyla tamamla)
+    checkAndUnlock('b17', (stats.synonymGamesCompletedCount || 0) >= 5);
+    // b18: Kelime Dedektifi (İlk boşluk doldurma oyununu başarıyla tamamla)
+    checkAndUnlock('b18', (stats.fillBlankGamesCompletedCount || 0) >= 1);
+    // b19: Boşluk Bükücü (5 kez boşluk doldurma oyununu başarıyla tamamla)
+    checkAndUnlock('b19', (stats.fillBlankGamesCompletedCount || 0) >= 5);
+  }, [stats?.completedBooksCount, stats?.dailyStreak, stats?.totalTimeMinutes, stats?.isPremium, stats?.synonymGamesCompletedCount, stats?.fillBlankGamesCompletedCount, vocabulary.length, books, badges]);
 
   // Heart regeneration mechanism: 1 heart every 1 hour (3600000 ms), capped at 5
   useEffect(() => {
@@ -1042,7 +1085,7 @@ export default function App() {
             premiumType: null,
             hearts: 5
           }));
-          alert("Premium üyeliğinizin süresi dolmuştur. Devam etmek için lütfen aboneliğinizi yenileyin.");
+          alert(t('alert_premium_expired', nativeLanguage));
           triggerCloudSync();
         }
       }
@@ -1131,8 +1174,8 @@ export default function App() {
       if (!localStorage.getItem(key)) {
         localStorage.setItem(key, 'true');
         setUnlockedBadgeNotify({
-          title: 'GÜNLÜK HEDEF TAMAMLANDI! 🏆',
-          message: 'Tebrikler, günlük 20 dakika okuma hedefine ulaştın! 📚🔥'
+          title: t('daily_goal_completed_title', nativeLanguage),
+          message: t('daily_goal_read_desc', nativeLanguage)
         });
       }
     }
@@ -1143,8 +1186,8 @@ export default function App() {
       if (!localStorage.getItem(key)) {
         localStorage.setItem(key, 'true');
         setUnlockedBadgeNotify({
-          title: 'GÜNLÜK HEDEF TAMAMLANDI! 🏆',
-          message: 'Tebrikler, bugün 10 yeni kelime kaydetme hedefine ulaştın! 📝✨'
+          title: t('daily_goal_completed_title', nativeLanguage),
+          message: t('daily_goal_vocab_desc', nativeLanguage)
         });
       }
     }
@@ -1156,8 +1199,8 @@ export default function App() {
         localStorage.setItem(key, 'true');
         const avg = questionsSum > 0 ? Math.round((scoreSum / questionsSum) * 100) : 0;
         setUnlockedBadgeNotify({
-          title: 'GÜNLÜK HEDEF TAMAMLANDI! 🏆',
-          message: `Tebrikler, 5 quizi tamamladın! Günlük Başarı Ortalaman: %${avg} 🎯`
+          title: t('daily_goal_completed_title', nativeLanguage),
+          message: t('daily_goal_quiz_desc', nativeLanguage).replace('{avg}', String(avg))
         });
       }
     }
@@ -1746,39 +1789,89 @@ export default function App() {
   };
 
   const handleSaveWord = (word: string, translation: string, level: string, exampleEn?: string, exampleTr?: string) => {
-    const isAlreadySaved = vocabulary.some(w => w.word.toLowerCase() === word.toLowerCase());
-    if (isAlreadySaved) return;
+    const existingIndex = vocabulary.findIndex(w => w.word.toLowerCase() === word.toLowerCase());
+    const cleanW = word.toLowerCase().trim();
+
+    // Look up true level in OFFLINE_DICTIONARY if available
+    const dictItem = OFFLINE_DICTIONARY[cleanW];
+    // Always normalize to clean CEFR code ("B1" not "B1 Seviyesi")
+    const rawLevel = dictItem ? dictItem.level : (level || 'A1');
+    const resolvedLevel = rawLevel.replace(/\s*seviyesi$/i, '').trim().substring(0, 10) || 'A1';
+
+    if (existingIndex !== -1) {
+      const existingWord = vocabulary[existingIndex];
+      const isExistingPlaceholder =
+        !existingWord.translation ||
+        existingWord.translation === 'Çeviriliyor...' ||
+        existingWord.translation === 'Sözlük karşılığı yükleniyor...' ||
+        existingWord.translation === 'Çeviri yüklenemedi' ||
+        existingWord.translation === 'İnternet bağlantısı gerekiyor' ||
+        existingWord.translation.toLowerCase().trim() === cleanW;
+
+      const isNewValid =
+        translation &&
+        translation !== 'Çeviriliyor...' &&
+        translation !== 'Sözlük karşılığı yükleniyor...' &&
+        translation !== 'Çeviri yüklenemedi' &&
+        translation !== 'İnternet bağlantısı gerekiyor' &&
+        translation.toLowerCase().trim() !== cleanW;
+
+      if (isExistingPlaceholder && isNewValid) {
+        const nextVocab = vocabulary.map(w => w.word.toLowerCase() === cleanW ? {
+          ...w,
+          translation,
+          level: resolvedLevel,
+          exampleEn: exampleEn || w.exampleEn,
+          exampleTr: exampleTr || w.exampleTr,
+          notes: 'vocab_saved_from_story_updated',
+          lang: nativeLanguage
+        } : w);
+
+        setVocabulary(nextVocab);
+        
+        setTimeout(() => {
+          triggerCloudSync(undefined, undefined, nextVocab);
+        }, 0);
+      }
+      return;
+    }
 
     const newWord: VocabularyWord = {
       id: `word_${Date.now()}`,
       word,
       translation,
-      level,
-      notes: 'Hikaye okumasından kaydedildi.',
+      level: resolvedLevel,
+      notes: 'vocab_saved_from_story',
       savedAt: new Date().toISOString().split('T')[0],
       exampleEn,
-      exampleTr
+      exampleTr,
+      lang: nativeLanguage
     };
 
-    setVocabulary(prev => [newWord, ...prev]);
+    const nextVocab = [newWord, ...vocabulary];
+    setVocabulary(nextVocab);
+    
+    let updatedStats: UserStats | undefined;
     setStats(prev => {
       const newLearnedVal = (prev.learnedWordsCount || 0) + 1;
-      // Word goal percent is calculated dynamically based on total unique interactive words (854)
       const targetPercent = Math.min(Math.round((newLearnedVal / LIBRARY_UNIQUE_WORDS_COUNT) * 100), 100);
 
       const dayIndex = getTodayIndex();
       const updatedWeeklyWords = [...(prev.weeklyWords || [0, 0, 0, 0, 0, 0, 0])];
       updatedWeeklyWords[dayIndex] = (updatedWeeklyWords[dayIndex] || 0) + 1;
 
-      return {
+      updatedStats = {
         ...prev,
         learnedWordsCount: newLearnedVal,
         wordGoalPercent: targetPercent,
         weeklyWords: updatedWeeklyWords
       };
+      return updatedStats;
     });
 
-    triggerCloudSync();
+    setTimeout(() => {
+      triggerCloudSync(updatedStats, undefined, nextVocab);
+    }, 0);
   };
 
   const handleUnsaveWord = (wordId: string) => {
@@ -1951,12 +2044,12 @@ export default function App() {
       if (isUnlockedNow) {
         const badge = prev.find(b => b.id === badgeId);
         if (badge) {
-          let message = `Tebrikler! "${badge.title}" rozetini kazandınız! 🎉`;
+          let message = t('badge_unlocked_msg', nativeLanguage).replace('{title}', t(`badge_title_${badgeId}` as any, nativeLanguage));
           if (badgeId === 'b5') {
-            message = "Tebrikler! Premium üye oldunuz, ayrıcalıklarınızdan faydalanabilirsiniz! 👑";
+            message = t('premium_unlocked_msg', nativeLanguage);
           }
           setUnlockedBadgeNotify({
-            title: badge.title,
+            title: t(`badge_title_${badgeId}` as any, nativeLanguage),
             message: message
           });
         }
@@ -2002,8 +2095,10 @@ export default function App() {
       userName={userName}
       userAvatar={userAvatar}
       refillCountdown={refillCountdown}
+      nativeLanguage={nativeLanguage}
+      onUpdateLanguage={handleUpdateLanguage}
     />
-  ), [currentTab, stats.isPremium, refillCountdown, syncStatus, isDarkMode, toggleDarkMode, userName, userAvatar]);
+  ), [currentTab, stats.isPremium, refillCountdown, syncStatus, isDarkMode, toggleDarkMode, userName, userAvatar, nativeLanguage]);
 
   const memoizedLibraryTab = React.useMemo(() => (
     <LibraryTab
@@ -2019,8 +2114,13 @@ export default function App() {
       onRemoveFromReading={handleRemoveFromReading}
       focusedCategory={focusedCategory}
       setFocusedCategory={setFocusedCategory}
+      nativeLanguage={nativeLanguage}
+      userAvatar={userAvatar}
+      userName={userName}
+      onUpdateLanguage={handleUpdateLanguage}
+      onTabChange={setCurrentTab}
     />
-  ), [books, isDarkMode, stats.totalTimeMinutes, lastActiveBookId, searchQuery, focusedCategory, handleSelectBook, handleToggleFavorite, handleRemoveFromReading, triggerCloudSync]);
+  ), [books, isDarkMode, stats.totalTimeMinutes, lastActiveBookId, searchQuery, focusedCategory, handleSelectBook, handleToggleFavorite, handleRemoveFromReading, triggerCloudSync, nativeLanguage, userAvatar, userName, handleUpdateLanguage]);
 
   const memoizedFavoritesTab = React.useMemo(() => (
     <FavoritesTab
@@ -2029,12 +2129,30 @@ export default function App() {
       onToggleFavorite={handleToggleFavorite}
       onGoToLibrary={() => setCurrentTab('library')}
       isDarkMode={isDarkMode}
+      nativeLanguage={nativeLanguage}
     />
-  ), [books, isDarkMode, handleSelectBook, handleToggleFavorite]);
+  ), [books, isDarkMode, handleSelectBook, handleToggleFavorite, nativeLanguage]);
+
+  const handleCompleteGame = useCallback((gameType: 'synonym' | 'fillblank') => {
+    setStats(prev => {
+      const current = prev || DEFAULT_STATS;
+      if (gameType === 'synonym') {
+        const val = (current.synonymGamesCompletedCount || 0) + 1;
+        return { ...current, synonymGamesCompletedCount: val };
+      } else {
+        const val = (current.fillBlankGamesCompletedCount || 0) + 1;
+        return { ...current, fillBlankGamesCompletedCount: val };
+      }
+    });
+    setTimeout(() => {
+      triggerCloudSync();
+    }, 500);
+  }, [triggerCloudSync]);
 
   const memoizedVocabularyTab = React.useMemo(() => (
     <VocabularyTab
       vocabulary={vocabulary}
+      books={books}
       onStartQuiz={(mode) => {
         setQuizMode(mode);
         setShowPaywallInQuiz(false);
@@ -2047,14 +2165,17 @@ export default function App() {
         setCurrentTab('quiz');
       }}
       onRemoveWord={handleUnsaveWord}
+      onSaveWord={handleSaveWord}
       syncTrigger={triggerCloudSync}
       isDarkMode={isDarkMode}
+      onCompleteGame={handleCompleteGame}
+      nativeLanguage={nativeLanguage}
     />
-  ), [vocabulary, isDarkMode, handleUnsaveWord, triggerCloudSync]);
+  ), [vocabulary, books, isDarkMode, handleUnsaveWord, handleSaveWord, triggerCloudSync, handleCompleteGame, nativeLanguage]);
 
   const memoizedBottomNav = React.useMemo(() => (
-    <BottomNav currentTab={currentTab} onTabChange={(tab) => setCurrentTab(tab)} isDarkMode={isDarkMode} />
-  ), [currentTab, isDarkMode]);
+    <BottomNav currentTab={currentTab} onTabChange={(tab) => setCurrentTab(tab)} isDarkMode={isDarkMode} nativeLanguage={nativeLanguage} />
+  ), [currentTab, isDarkMode, nativeLanguage]);
 
   return (
     <div className={`min-h-screen flex items-center justify-center transition-colors duration-200 ${
@@ -2066,7 +2187,7 @@ export default function App() {
       }`}>
         
         {showSplash ? (
-          <SplashScreen />
+          <SplashScreen nativeLanguage={nativeLanguage} />
         ) : (
           <>
             {/* Android Exit Confirmation Dialog */}
@@ -2086,9 +2207,9 @@ export default function App() {
                     <div className="w-12 h-12 rounded-full bg-[#FF6B6B]/15 flex items-center justify-center">
                       <X className="w-6 h-6 text-[#FF6B6B]" />
                     </div>
-                    <h3 className="text-base font-bold text-center">Uygulamadan Çık</h3>
+                    <h3 className="text-base font-bold text-center">{t('exit_app_title', nativeLanguage)}</h3>
                     <p className={`text-sm text-center leading-relaxed ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-                      Uygulamadan çıkmak istediğinize emin misiniz?
+                      {t('exit_app_desc', nativeLanguage)}
                     </p>
                   </div>
                   <div className="flex gap-3">
@@ -2100,13 +2221,13 @@ export default function App() {
                           : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                       }`}
                     >
-                      Hayır
+                      {t('btn_no', nativeLanguage)}
                     </button>
                     <button
                       onClick={() => CapacitorApp.exitApp()}
                       className="flex-1 py-3 rounded-xl text-sm font-bold bg-[#FF6B6B] text-white hover:bg-[#FF5252] transition-colors"
                     >
-                      Evet, Çık
+                      {t('btn_yes_exit', nativeLanguage)}
                     </button>
                   </div>
                 </div>
@@ -2149,6 +2270,7 @@ export default function App() {
             {activeReadingBook ? (
               <ReadingView
                 book={activeReadingBook}
+                nativeLanguage={nativeLanguage}
                 onBack={(percentage, currentPage, totalPages) => {
                   if (percentage !== undefined) {
                     setBooks(prev =>
@@ -2249,6 +2371,7 @@ export default function App() {
                     quizMode={quizMode}
                     initialDifficulty={quizDifficulty}
                     initiallyShowPaywall={showPaywallInQuiz}
+                    nativeLanguage={nativeLanguage}
                     onAnswerCorrect={handleAnswerCorrect}
                     onAnswerIncorrect={() => {}} // Vocabulary practice incorrect answers do not decrease hearts
                     onSubscribe={handleSubscribe}
@@ -2296,6 +2419,8 @@ export default function App() {
                     deviceUuid={deviceUuid}
                     vocabulary={vocabulary}
                     refillCountdown={refillCountdown}
+                    nativeLanguage={nativeLanguage}
+                    onUpdateLanguage={handleUpdateLanguage}
                   />
                 )}
               </>
@@ -2337,7 +2462,7 @@ export default function App() {
                 </div>
                 <div className="flex-1 min-w-0 text-left">
                   <h4 className="text-[10px] font-extrabold text-amber-500 uppercase tracking-wider font-headline-lg mb-0.5">
-                    TEBRİKLER! 🏆
+                    {t('congratulations', nativeLanguage)}
                   </h4>
                   <p className="text-xs font-bold leading-normal font-headline-lg">
                     {unlockedBadgeNotify.message}
@@ -2360,19 +2485,34 @@ export default function App() {
             <div className="w-16 h-16 bg-[#4ECDC4]/20 text-[#4ECDC4] rounded-2xl flex items-center justify-center mx-auto mb-4">
               <Shield className="w-8 h-8" />
             </div>
-            
-            <h3 className="text-xl font-bold font-headline mb-2">Kullanıcı Sözleşmesi</h3>
-            <p className={`text-sm mb-6 leading-relaxed ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-              Uygulamamızı kullanmaya başlamadan önce, size güvenli bir deneyim sunabilmemiz için lütfen 
-              <a 
-                href="/privacy.html" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-[#4ECDC4] hover:underline font-semibold mx-1"
+
+            {/* Onboarding Native Language Selection */}
+            <div className="mb-5 text-left">
+              <label className={`block text-[10px] font-extrabold uppercase tracking-widest mb-2 px-1 ${
+                isDarkMode ? 'text-gray-400' : 'text-gray-500'
+              }`}>
+                {t('header_select_language', nativeLanguage)}
+              </label>
+              <select
+                value={nativeLanguage}
+                onChange={(e) => handleUpdateLanguage(e.target.value as LanguageCode)}
+                className={`w-full h-11 px-3 rounded-xl border text-xs font-bold focus:outline-none transition-all cursor-pointer ${
+                  isDarkMode 
+                    ? 'bg-[#1E1E22] border-[#2A2A30] text-white focus:border-[#FF6B6B]' 
+                    : 'bg-white border-gray-200 text-gray-900 focus:border-[#FF6B6B]'
+                }`}
               >
-                Kullanım Koşulları ve Gizlilik Politikası
-              </a> 
-              sözleşmesini okuyup onaylayın.
+                {SUPPORTED_LANGUAGES.map((lang) => (
+                  <option key={lang.code} value={lang.code}>
+                    {lang.flag} {lang.nativeName} ({lang.name})
+                  </option>
+                ))}
+              </select>
+            </div>
+            
+            <h3 className="text-xl font-bold font-headline mb-2">{t('tos_title', nativeLanguage)}</h3>
+            <p className={`text-sm mb-6 leading-relaxed ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+              {t('tos_text', nativeLanguage)}
             </p>
             
             <label className="flex items-start gap-3 text-left mb-6 cursor-pointer select-none">
@@ -2383,7 +2523,7 @@ export default function App() {
                 onChange={(e) => setConsentChecked(e.target.checked)}
               />
               <span className={`text-xs leading-relaxed ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                Sözleşmedeki tüm maddeleri okudum, anladım ve <strong>kabul ediyorum</strong>.
+                {t('tos_checkbox', nativeLanguage)}
               </span>
             </label>
             
@@ -2401,7 +2541,7 @@ export default function App() {
                   : 'bg-gray-700/50 text-gray-500 cursor-not-allowed'
               }`}
             >
-              Onayla ve Devam Et
+              {t('tos_btn', nativeLanguage)}
             </button>
           </div>
         </div>

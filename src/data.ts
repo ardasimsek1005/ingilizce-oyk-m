@@ -2,6 +2,8 @@ import { Book, QuizQuestion, LeaderboardUser, Badge, VocabularyWord } from './ty
 import { STORIES_PART1, RawStory } from './stories_part1';
 import { STORIES_PART2 } from './stories_part2';
 import { AVATAR_OPTIONS } from './avatar_assets';
+import { STORY_TITLE_TRANSLATIONS } from './story_title_translations';
+
 
 // Combined 50 famous stories catalog
 export const ALL_RAW_STORIES: RawStory[] = [...STORIES_PART1, ...STORIES_PART2];
@@ -17,6 +19,9 @@ const LEVEL_NAMES: { [key: string]: string } = {
 
 // Global dictionary with high-frequency fairy tale/famous story words for automated lookup fallbacks!
 export const GLOBAL_DICTIONARY: { [key: string]: string } = {
+  "hello": "merhaba",
+  "hi": "selam",
+  "ok": "tamam",
   // Original entries
   "once": "bir zamanlar",
   "upon": "üzerine",
@@ -852,7 +857,8 @@ export const INITIAL_BOOKS: Book[] = ALL_RAW_STORIES.map((story) => {
     currentPage: 0,
     statsWords: totalWords,
     statsTime: `${Math.max(1, Math.ceil(totalWords / 45))}dk`,
-    chapters
+    chapters,
+    titleTr: STORY_TITLE_TRANSLATIONS[story.id] || ''
   };
 });
 
@@ -929,7 +935,11 @@ export const INITIAL_BADGES: Badge[] = [
   { id: 'b2', title: 'Azimli Sebat', description: 'Günlük hedefini üst üste 15 gün tamamla.', iconName: 'Flame', unlocked: false },
   { id: 'b10', title: 'Bilge Gezgin', description: 'C1 seviyesinde en az bir hikaye bitir.', iconName: 'Trophy', unlocked: false },
   { id: 'b15', title: 'Efsanevi Okur', description: 'Toplam 500 dakika okuma süresine ulaş.', iconName: 'Trophy', unlocked: false },
-  { id: 'b5', title: 'Premium Üye', description: 'Sınırsız can ve premium ayrıcalıkları aktif et.', iconName: 'Crown', unlocked: false }
+  { id: 'b5', title: 'Premium Üye', description: 'Sınırsız can ve premium ayrıcalıkları aktif et.', iconName: 'Crown', unlocked: false },
+  { id: 'b16', title: 'Eşleme Çırağı', description: 'İlk eş bulma oyununu başarıyla tamamla.', iconName: 'Puzzle', unlocked: false },
+  { id: 'b17', title: 'Eşleme Ustası', description: '5 kez eş bulma oyununu başarıyla tamamla.', iconName: 'Trophy', unlocked: false },
+  { id: 'b18', title: 'Kelime Dedektifi', description: 'İlk boşluk doldurma oyununu başarıyla tamamla.', iconName: 'Search', unlocked: false },
+  { id: 'b19', title: 'Boşluk Bükücü', description: '5 kez boşluk doldurma oyununu başarıyla tamamla.', iconName: 'Sparkles', unlocked: false }
 ];
 
 export const ANALYTICS_DATA = [

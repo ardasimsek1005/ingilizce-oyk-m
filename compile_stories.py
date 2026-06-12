@@ -74,6 +74,34 @@ if os.path.exists(HISTORY_DATA_FILE):
         expanded_stories.update(history_stories)
         print(f"Loaded {len(history_stories)} history stories.")
 
+NEW_50_HISTORY_DATA_FILE = "new_50_history_stories_data.json"
+if os.path.exists(NEW_50_HISTORY_DATA_FILE):
+    with open(NEW_50_HISTORY_DATA_FILE, "r", encoding="utf-8") as f:
+        new_50_history = json.load(f)
+        expanded_stories.update(new_50_history)
+        print(f"Loaded {len(new_50_history)} new 50 history stories.")
+
+MYTHOLOGY_DATA_FILE = "mythology_stories_data.json"
+if os.path.exists(MYTHOLOGY_DATA_FILE):
+    with open(MYTHOLOGY_DATA_FILE, "r", encoding="utf-8") as f:
+        mythology_stories = json.load(f)
+        expanded_stories.update(mythology_stories)
+        print(f"Loaded {len(mythology_stories)} mythology stories.")
+
+TRAVEL_DATA_FILE = "travel_culture_stories_data.json"
+if os.path.exists(TRAVEL_DATA_FILE):
+    with open(TRAVEL_DATA_FILE, "r", encoding="utf-8") as f:
+        travel_stories = json.load(f)
+        expanded_stories.update(travel_stories)
+        print(f"Loaded {len(travel_stories)} travel & culture stories.")
+
+NATURE_DATA_FILE = "nature_space_stories_data.json"
+if os.path.exists(NATURE_DATA_FILE):
+    with open(NATURE_DATA_FILE, "r", encoding="utf-8") as f:
+        nature_stories = json.load(f)
+        expanded_stories.update(nature_stories)
+        print(f"Loaded {len(nature_stories)} nature & space stories.")
+
 
 print(f"Loaded total of {len(expanded_stories)} expanded stories from JSON.")
 
@@ -105,9 +133,9 @@ def format_ts_story(story):
     return f"""  {{
     id: '{story["id"]}',
     title: "{esc(story["title"])}",
-    author: '{esc(story["author"])}',
-    level: '{story["level"]}',
-    coverUrl: '{story["coverUrl"]}',
+    author: "{esc(story["author"])}",
+    level: "{esc(story["level"])}",
+    coverUrl: "{esc(story["coverUrl"])}",
     en: [
       {en_lines}
     ],

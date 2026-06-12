@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Capacitor } from '@capacitor/core';
 import { UserStats, Badge, VocabularyWord } from '../types';
 import { INITIAL_BADGES, LIBRARY_UNIQUE_WORDS_COUNT } from '../data';
-import { Award, Flame, BookOpen, Clock, Trophy, Share2, Sparkles, TrendingUp, ChevronRight, CheckCircle2, ShieldAlert, BadgeCheck, Zap, Library, Volume2, Crown, X, RefreshCw, Check, Edit2, Camera, Save, Copy, Facebook, Send, MessageCircle, Mail, Link2, QrCode, MessageSquare, Eye, EyeOff, Plus, Heart, Trash2, Shield } from 'lucide-react';
+import { Award, Flame, BookOpen, Clock, Trophy, Share2, Sparkles, TrendingUp, ChevronRight, CheckCircle2, ShieldAlert, BadgeCheck, Zap, Library, Volume2, Crown, X, RefreshCw, Check, Edit2, Camera, Save, Copy, Facebook, Send, MessageCircle, Mail, Link2, QrCode, MessageSquare, Eye, EyeOff, Plus, Heart, Trash2, Shield, Puzzle, Search, Globe } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { AVATAR_OPTIONS } from '../avatar_assets';
+import { SUPPORTED_LANGUAGES, LanguageCode, t, getDayTranslation, getLocalizedUsername } from '../i18n';
 
 interface ProfileTabProps {
   stats: UserStats;
@@ -23,11 +24,13 @@ interface ProfileTabProps {
   onDeleteAccount: () => Promise<void>;
   deviceUuid: string;
   refillCountdown?: string;
+  nativeLanguage: LanguageCode;
+  onUpdateLanguage: (lang: LanguageCode) => void;
 }
 
 const getApiBase = () => {
   try {
-    if (window.location.protocol === 'capacitor:' || window.location.hostname === 'localhost') {
+    if (window.location.protocol === 'capacitor:') {
       return 'https://ingilizce-oyk-m.onrender.com';
     }
     return '';
@@ -120,6 +123,21 @@ function checkIsProfane(name: string): boolean {
   return hasShortWord;
 }
 
+const localeMap: Record<LanguageCode, string> = {
+  tr: 'tr-TR',
+  en: 'en-US',
+  es: 'es-ES',
+  fr: 'fr-FR',
+  de: 'de-DE',
+  it: 'it-IT',
+  pt: 'pt-PT',
+  ru: 'ru-RU',
+  ar: 'ar-SA',
+  zh: 'zh-CN',
+  hi: 'hi-IN',
+  ja: 'ja-JP'
+};
+
 export default function ProfileTab({
   stats,
   badges,
@@ -137,6 +155,8 @@ export default function ProfileTab({
   onDeleteAccount,
   deviceUuid,
   refillCountdown,
+  nativeLanguage,
+  onUpdateLanguage,
 }: ProfileTabProps) {
   const [selectedChartTab, setSelectedChartTab] = useState<'words' | 'minutes'>('words');
   const [activeBarIdx, setActiveBarIdx] = useState<number | null>(null);
@@ -224,7 +244,7 @@ export default function ProfileTab({
         .then(res => {
           if (!res.ok) {
             return res.json().then(errData => {
-              throw new Error(errData.error || 'Kimlik doğrulama başarısız oldu. ⚠️');
+              throw new Error(errData.error || t('auth_error_auth_failed', nativeLanguage));
             });
           }
           return res.json();
@@ -254,9 +274,9 @@ export default function ProfileTab({
           };
           
           if (userEmail) {
-            setToastMessage(`${providerNames[provider] || provider} hesabı başarıyla bağlandı! 🔗`);
+            setToastMessage(t('auth_provider_connected', nativeLanguage).replace('{provider}', providerNames[provider] || provider));
           } else {
-            setToastMessage(`${providerNames[provider] || provider} ile giriş yapıldı ve veriler eşitlendi! 🔄`);
+            setToastMessage(t('auth_provider_logged_in', nativeLanguage).replace('{provider}', providerNames[provider] || provider));
           }
           setTimeout(() => setToastMessage(null), 3000);
         })
@@ -265,7 +285,7 @@ export default function ProfileTab({
           localStorage.removeItem('linguist_session_token_' + cleanEmail);
           setLoginPassword('');
           setLoginStep('credentials');
-          setToastMessage('Kayıtlı oturum geçersiz veya süresi dolmuş. Lütfen şifrenizi girin. ⚠️');
+          setToastMessage(t('auth_saved_session_invalid', nativeLanguage));
           setTimeout(() => setToastMessage(null), 3000);
         })
         .finally(() => {
@@ -282,13 +302,13 @@ export default function ProfileTab({
     const provider = mockLoginProvider || 'email';
 
     if (!mockEmail || mockEmail.trim().length < 3) {
-      setToastMessage('Lütfen geçerli bir kullanıcı adı girin. ⚠️');
+      setToastMessage(t('auth_invalid_username_toast', nativeLanguage));
       setTimeout(() => setToastMessage(null), 3000);
       return;
     }
 
     if (!loginPassword || loginPassword.length < 6) {
-      setToastMessage('Şifre en az 6 karakter olmalıdır. ⚠️');
+      setToastMessage(t('auth_invalid_password_toast', nativeLanguage));
       setTimeout(() => setToastMessage(null), 3000);
       return;
     }
@@ -310,7 +330,7 @@ export default function ProfileTab({
       .then(res => {
         if (!res.ok) {
           return res.json().then(errData => {
-            throw new Error(errData.error || 'Kimlik doğrulama başarısız oldu. ⚠️');
+            throw new Error(errData.error || t('auth_error_auth_failed', nativeLanguage));
           });
         }
         return res.json();
@@ -345,18 +365,18 @@ export default function ProfileTab({
         };
         
         if (userEmail) {
-          setToastMessage(`Hesabınız başarıyla bağlandı! 🔗`);
+          setToastMessage(t('auth_account_connected', nativeLanguage));
         } else {
           setToastMessage(data.isNew 
-            ? `Yeni hesap oluşturuldu. Hoş geldiniz, ${finalName}! 🎉` 
-            : `Giriş başarılı. Tekrar hoş geldiniz, ${finalName}! 👋`
+            ? t('auth_new_account_welcome', nativeLanguage).replace('{name}', finalName) 
+            : t('auth_login_welcome', nativeLanguage).replace('{name}', finalName)
           );
         }
         setTimeout(() => setToastMessage(null), 3000);
       })
       .catch(err => {
         console.error('Auth request failed:', err);
-        setToastMessage(err.message || 'Bir hata oluştu. Lütfen tekrar deneyin. ⚠️');
+        setToastMessage(err.message || t('auth_error_generic', nativeLanguage));
         setTimeout(() => setToastMessage(null), 3000);
       })
       .finally(() => {
@@ -368,13 +388,13 @@ export default function ProfileTab({
     e.preventDefault();
 
     if (!mockName || mockName.trim().length < 3) {
-      setToastMessage('Kullanıcı adı en az 3 karakter olmalıdır. ⚠️');
+      setToastMessage(t('profile_name_length_error', nativeLanguage));
       setTimeout(() => setToastMessage(null), 3000);
       return;
     }
 
     if (!loginPassword || loginPassword.length < 6) {
-      setToastMessage('Şifre en az 6 karakter olmalıdır. ⚠️');
+      setToastMessage(t('auth_invalid_password_toast', nativeLanguage));
       setTimeout(() => setToastMessage(null), 3000);
       return;
     }
@@ -419,12 +439,12 @@ export default function ProfileTab({
         setLoginStep('picker');
         setShowPassword(false);
         
-        setToastMessage(`Kayıt başarılı! Hoş geldiniz, ${mockName.trim()} 🎉`);
+        setToastMessage(t('auth_register_success', nativeLanguage).replace('{name}', mockName.trim()));
         setTimeout(() => setToastMessage(null), 4000);
       })
       .catch(err => {
         console.error('Registration failed:', err);
-        setToastMessage(err.message || 'Kayıt sırasında bir hata oluştu. ⚠️');
+        setToastMessage(err.message || t('auth_error_register_failed', nativeLanguage));
         setTimeout(() => setToastMessage(null), 4000);
       })
       .finally(() => {
@@ -498,7 +518,7 @@ export default function ProfileTab({
 
   // Profile Edit states
   const [isEditing, setIsEditing] = useState(false);
-  const [tempName, setTempName] = useState(userName);
+  const [tempName, setTempName] = useState(() => getLocalizedUsername(userName, nativeLanguage));
   const [tempAvatar, setTempAvatar] = useState(userAvatar);
 
   // Application Installation Date state
@@ -538,9 +558,9 @@ export default function ProfileTab({
     if (isCode) {
       setCodeCopied(true);
       setTimeout(() => setCodeCopied(false), 2000);
-      setToastMessage('Paylaşım Kodu panoya kopyalandı! 📋');
+      setToastMessage(t('share_toast_code_copied', nativeLanguage));
     } else {
-      setToastMessage('Uygulama Paylaşım Bağlantısı kopyalandı! 🔗');
+      setToastMessage(t('share_toast_link_copied', nativeLanguage));
     }
     setTimeout(() => {
       setToastMessage(null);
@@ -550,7 +570,7 @@ export default function ProfileTab({
   // Construct dynamic chart data from stats
   const days = ['Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cmt', 'Paz'];
   const chartData = days.map((day, idx) => ({
-    day,
+    day: getDayTranslation(day, nativeLanguage),
     learnedWords: stats.weeklyWords ? stats.weeklyWords[idx] || 0 : 0,
     readMins: stats.weeklyMins ? stats.weeklyMins[idx] || 0 : 0
   }));
@@ -576,6 +596,7 @@ export default function ProfileTab({
   const scoreSum = stats.dailyQuizzesScoreSum || 0;
   const questionsSum = stats.dailyQuizzesQuestionsSum || 0;
   const avgSuccessPercent = questionsSum > 0 ? Math.min(Math.round((scoreSum / questionsSum) * 100), 100) : 0;
+
 
   const getBadgeIcon = (iconName: string, unlocked: boolean) => {
     const sizeClass = "w-4.5 h-4.5";
@@ -604,6 +625,10 @@ export default function ProfileTab({
         return <Volume2 className={`${sizeClass} ${colorClass}`} />;
       case 'Trophy':
         return <Trophy className={`${sizeClass} ${colorClass}`} />;
+      case 'Puzzle':
+        return <Puzzle className={`${sizeClass} ${colorClass}`} />;
+      case 'Search':
+        return <Search className={`${sizeClass} ${colorClass}`} />;
       default:
         return <Trophy className={`${sizeClass} ${colorClass}`} />;
     }
@@ -621,7 +646,7 @@ export default function ProfileTab({
     setTimeout(() => {
       setSharePlatform(null);
       setIsShareModalOpen(false);
-      setToastMessage(`${platform} üzerinde ilerlemeniz başarıyla paylaşıldı! 🚀`);
+      setToastMessage(t('share_toast_success', nativeLanguage).replace('{platform}', platform));
       setTimeout(() => {
         setToastMessage(null);
       }, 3500);
@@ -629,7 +654,7 @@ export default function ProfileTab({
   };
 
   return (
-    <div className={`pb-36 max-w-[680px] mx-auto px-5 pt-6 transition-colors ${
+    <div className={`w-full overflow-x-hidden pb-36 max-w-[680px] mx-auto px-5 pt-6 transition-colors ${
       isDarkMode ? 'text-[#E6E6E6]' : 'text-[#2D3436]'
     }`}>
       
@@ -762,38 +787,38 @@ export default function ProfileTab({
                   const cleanName = tempName.trim();
                   
                   if (cleanName.length < 3 || cleanName.length > 25) {
-                    setToastMessage('İsim 3-25 karakter arasında olmalıdır. ⚠️');
+                    setToastMessage(t('profile_name_length_error', nativeLanguage));
                     setTimeout(() => setToastMessage(null), 3000);
                     return;
                   }
 
                   const validNameRegex = /^[a-zA-Z0-9ğüşıöçĞÜŞİÖÇ\s]+$/;
                   if (!validNameRegex.test(cleanName)) {
-                    setToastMessage('İsim sadece harf, sayı ve boşluk içerebilir. ⚠️');
+                    setToastMessage(t('profile_name_chars_error', nativeLanguage));
                     setTimeout(() => setToastMessage(null), 3000);
                     return;
                   }
 
                   if (checkIsProfane(cleanName)) {
-                    setToastMessage('Girdiğiniz isim uygunsuz veya yetkili unvanları (admin, yönetici vb.) içeremez. ⚠️');
+                    setToastMessage(t('profile_name_inappropriate_error', nativeLanguage));
                     setTimeout(() => setToastMessage(null), 3000);
                     return;
                   }
 
                   onUpdateProfile(cleanName, tempAvatar);
                   setIsEditing(false);
-                  setToastMessage('Profiliniz başarıyla güncellendi! 🎉');
+                  setToastMessage(t('profile_updated_toast', nativeLanguage));
                   setTimeout(() => setToastMessage(null), 3000);
                 }}
                 className="flex-1 py-2.5 bg-[#4ECDC4] text-gray-950 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 cursor-pointer hover:bg-[#3cacb0] font-headline-lg shadow-sm"
               >
                 <Save className="w-4 h-4" />
-                <span>Kaydet</span>
+                <span>{t('btn_save', nativeLanguage)}</span>
               </button>
               <button
                 type="button"
                 onClick={() => {
-                  setTempName(userName);
+                  setTempName(getLocalizedUsername(userName, nativeLanguage));
                   setTempAvatar(userAvatar);
                   setIsEditing(false);
                 }}
@@ -803,7 +828,7 @@ export default function ProfileTab({
                     : 'border-gray-300 hover:bg-gray-50 text-gray-600'
                 }`}
               >
-                Vazgeç
+                {t('btn_cancel', nativeLanguage)}
               </button>
             </div>
           </div>
@@ -812,7 +837,7 @@ export default function ProfileTab({
           <>
             <div className="w-24 h-24 rounded-full overflow-hidden shadow-md border-4 border-[#FFE66D] mb-4 relative bg-slate-50 group">
               <img
-                alt={userName || 'Kullanıcı'}
+                alt={getLocalizedUsername(userName, nativeLanguage) || 'User'}
                 className="w-full h-full object-cover"
                 src={userAvatar}
                 referrerPolicy="no-referrer"
@@ -822,7 +847,7 @@ export default function ProfileTab({
               />
               <button
                 onClick={() => {
-                  setTempName(userName);
+                  setTempName(getLocalizedUsername(userName, nativeLanguage));
                   setTempAvatar(userAvatar);
                   setIsEditing(true);
                 }}
@@ -838,10 +863,10 @@ export default function ProfileTab({
               isDarkMode ? 'text-white' : 'text-[#2D3436]'
             }`}>
               {userName ? (
-                userName
+                getLocalizedUsername(userName, nativeLanguage)
               ) : (
                 <span className="italic text-gray-400 font-normal text-xl select-none">
-                  (İsim belirtilmedi)
+                  {t('profile_name_not_specified', nativeLanguage)}
                 </span>
               )}
             </h1>
@@ -849,29 +874,67 @@ export default function ProfileTab({
             <div className={`text-xs font-bold font-headline-lg mb-4 space-y-1 ${
               isDarkMode ? 'text-gray-400' : 'text-gray-455'
             }`}>
-              <div>İngilizce Öyküm Okuru</div>
-              <div className="text-[11px] opacity-80 font-medium">Uygulamayı Yükleme Tarihi: {installDate}</div>
+              <div>{t('profile_user_title', nativeLanguage)}</div>
+              <div className="text-[11px] opacity-80 font-medium">
+                {t('profile_install_date', nativeLanguage).replace('{date}', (() => {
+                  if (!installDate) return '';
+                  const parts = installDate.split('.');
+                  if (parts.length === 3) {
+                    const d = new Date(parseInt(parts[2]), parseInt(parts[1]) - 1, parseInt(parts[0]));
+                    if (!isNaN(d.getTime())) {
+                      return d.toLocaleDateString(localeMap[nativeLanguage] || 'en-US', { day: 'numeric', month: 'long', year: 'numeric' });
+                    }
+                  }
+                  return installDate;
+                })())}
+              </div>
             </div>
 
-            <div className="flex flex-wrap justify-center gap-2">
+            <div className="flex flex-wrap justify-center gap-2.5 items-center">
               <button
                 onClick={() => {
-                  setTempName(userName);
+                  setTempName(getLocalizedUsername(userName, nativeLanguage));
                   setTempAvatar(userAvatar);
                   setIsEditing(true);
                 }}
                 className="px-4 py-1.5 bg-[#FF6B6B]/10 hover:bg-[#FF6B6B]/15 text-[#FF6B6B] text-[11px] font-bold rounded-full border border-[#FF6B6B]/20 transition-all flex items-center gap-1.5 cursor-pointer font-headline-lg"
               >
                 <Edit2 className="w-3.5 h-3.5" />
-                <span>İsmini Değiştir</span>
+                <span>{t('profile_change_name_btn', nativeLanguage)}</span>
               </button>
+
+              {/* Quick Language Switcher Dropdown */}
+              <div className="relative">
+                <select
+                  value={nativeLanguage}
+                  onChange={(e) => onUpdateLanguage(e.target.value as LanguageCode)}
+                  className={`px-4 py-1.5 text-[11px] font-bold rounded-full border cursor-pointer focus:outline-none transition-all appearance-none font-headline-lg ${
+                    isDarkMode 
+                      ? 'bg-[#1E1E22] border-gray-700 text-gray-300 hover:text-white' 
+                      : 'bg-white border-gray-300 text-gray-700 hover:bg-gray-50'
+                  }`}
+                  style={{
+                    backgroundImage: `url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='${isDarkMode ? '%239ca3af' : '%234b5563'}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e")`,
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'right 12px center',
+                    backgroundSize: '10px',
+                    paddingRight: '28px'
+                  }}
+                >
+                  {SUPPORTED_LANGUAGES.map((lang) => (
+                    <option key={lang.code} value={lang.code}>
+                      {lang.flag} {lang.nativeName}
+                    </option>
+                  ))}
+                </select>
+              </div>
             </div>
 
             {stats.isPremium && (
               <div className="mt-4 flex flex-col items-center justify-center select-none text-center">
                 <span className="bg-[#FFE66D] text-[#2D3436] border border-[#FFE66D]/50 px-3 py-1 rounded-full text-[10px] font-extrabold shadow-sm flex items-center justify-center gap-1 font-headline-lg animate-pulse whitespace-nowrap">
                   <Zap className="w-3.5 h-3.5 text-[#FF6B6B] fill-[#FF6B6B]" />
-                  PREMIUM ÜYE
+                  {t('profile_premium_member', nativeLanguage)}
                 </span>
                 
                 {stats.premiumExpiryDate && (() => {
@@ -888,15 +951,30 @@ export default function ProfileTab({
                   }
                   
                   const formatOption: Intl.DateTimeFormatOptions = { day: 'numeric', month: 'long', year: 'numeric' };
-                  const purchaseStr = purchaseDate.toLocaleDateString('tr-TR', formatOption);
-                  const expiryStr = expiryDate.toLocaleDateString('tr-TR', formatOption);
+                  const currentLocale = localeMap[nativeLanguage] || 'en-US';
+                  const purchaseStr = purchaseDate.toLocaleDateString(currentLocale, formatOption);
+                  const expiryStr = expiryDate.toLocaleDateString(currentLocale, formatOption);
+
+                  const purchaseTemplate = t('profile_premium_purchase_date', nativeLanguage);
+                  const purchaseParts = purchaseTemplate.split('{date}');
+                  const remainingTemplate = t('profile_premium_remaining_time', nativeLanguage);
+                  const remainingParts = remainingTemplate.split('{days}');
+                  const expiryTemplate = t('profile_premium_expiry', nativeLanguage);
+                  const expiryParts = expiryTemplate.split('{date}');
 
                   return (
                     <div className={`mt-2 text-[11px] font-bold font-headline-lg flex flex-col gap-0.5 ${
                       isDarkMode ? 'text-gray-400' : 'text-gray-500'
                     }`}>
-                      <span>Alındığı Tarih: <span className="font-black">{purchaseStr}</span></span>
-                      <span>Kalan Süre: <span className="font-black text-[#FF6B6B]">{diffDays} Gün</span> (Bitiş: {expiryStr})</span>
+                      <span>{purchaseParts[0]}<span className="font-black">{purchaseStr}</span>{purchaseParts[1]}</span>
+                      <span>
+                        {remainingParts[0]}
+                        <span className="font-black text-[#FF6B6B]">{diffDays} {t('unit_days', nativeLanguage)}</span>
+                        {remainingParts[1]}
+                        {expiryParts[0]}
+                        <span className="font-black">{expiryStr}</span>
+                        {expiryParts[1]}
+                      </span>
                     </div>
                   );
                 })()}
@@ -922,7 +1000,7 @@ export default function ProfileTab({
           <span className={`text-[10px] font-extrabold tracking-widest mt-1 ${
             isDarkMode ? 'text-gray-400' : 'text-[#2D3436]/60'
           }`}>
-            KAYITLI KELİME
+            {t('profile_stat_saved_words', nativeLanguage)}
           </span>
         </div>
 
@@ -940,17 +1018,17 @@ export default function ProfileTab({
           <span className={`text-[10px] font-extrabold tracking-widest mt-1 ${
             isDarkMode ? 'text-gray-400' : 'text-[#2D3436]/60'
           }`}>
-            OKUNAN KİTAP
+            {t('profile_stat_completed_books', nativeLanguage)}
           </span>
         </div>
 
         <div className="col-span-2 sm:col-span-1 bg-gradient-to-br from-[#FF6B6B] to-[#FFE66D] text-[#FFFBF0] p-5 rounded-2xl shadow-sm flex flex-col items-center justify-center text-center border-2 border-[#FF6B6B]/40">
           <Flame className="w-6 h-6 text-yellow-300 fill-yellow-300 mb-2 animate-bounce" />
           <span className="font-headline-lg text-2xl font-extrabold">
-            {stats.dailyStreak}. Gün
+            {t('profile_stat_streak_day_format', nativeLanguage).replace('{count}', String(stats.dailyStreak))}
           </span>
           <span className="text-[10px] font-extrabold tracking-widest mt-1 opacity-95">
-            GÜNLÜK SERİ 🔥
+            {t('profile_stat_daily_streak', nativeLanguage)}
           </span>
         </div>
       </section>
@@ -969,16 +1047,16 @@ export default function ProfileTab({
             <h2 className={`font-headline-lg text-base font-bold tracking-tight ${
               isDarkMode ? 'text-white' : 'text-[#2D3436]'
             }`}>
-              Günlük Hedefler
+                            {t('daily_goals_title', nativeLanguage)}
             </h2>
           </div>
           <span className="text-[10px] font-bold text-[#4ECDC4] bg-[#4ECDC4]/10 border border-[#4ECDC4]/20 px-2.5 py-0.5 rounded-full uppercase tracking-wider font-headline-lg">
-            Günlük Sıfırlanır
+            {t('daily_goals_reset', nativeLanguage)}
           </span>
         </div>
 
         <p className={`text-xs mb-5 leading-relaxed ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-          Her gün düzenli okuma ve pratik yaparak günlük hedeflerini tamamla, İngilizce öğrenimini alışkanlık haline getir!
+          {t('daily_goals_desc', nativeLanguage)}
         </p>
 
         <div className="space-y-4">
@@ -996,18 +1074,18 @@ export default function ProfileTab({
                 </div>
                 <div className="min-w-0 flex-1">
                   <h3 className={`text-xs font-bold font-headline-lg truncate ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
-                    Günlük Okuma Süresi
+                    {t('daily_goal_time', nativeLanguage)}
                   </h3>
                   <p className="text-[10px] text-gray-400 mt-0.5 leading-snug">
-                    Hikayelerde geçirdiğin aktif süre (Hedef: 20 dk).
+                    {t('daily_goal_time_desc', nativeLanguage)}
                   </p>
                 </div>
               </div>
               <div className="text-right shrink-0">
                 <span className="text-sm font-extrabold text-[#FFE66D] font-headline-lg whitespace-nowrap">
-                  {todayMins} / 20 dk
+                  {t('daily_goal_unit_mins', nativeLanguage).replace('{count}', String(todayMins))}
                 </span>
-                <p className="text-[9px] text-gray-400 font-medium">Süre</p>
+                <p className="text-[9px] text-gray-400 font-medium">{t('weekly_minutes', nativeLanguage)}</p>
               </div>
             </div>
             
@@ -1029,7 +1107,7 @@ export default function ProfileTab({
                     ? 'bg-[#4ECDC4]/10 text-[#4ECDC4]' 
                     : isDarkMode ? 'bg-[#1A1A1E] text-gray-400' : 'bg-gray-100 text-gray-600'
                 }`}>
-                  {todayMins >= 20 ? 'Başarıldı! 🎉' : 'Devam Ediyor'}
+                  {todayMins >= 20 ? t('daily_goal_success', nativeLanguage) : t('daily_goal_in_progress', nativeLanguage)}
                 </span>
               </div>
             </div>
@@ -1048,18 +1126,18 @@ export default function ProfileTab({
                 </div>
                 <div className="min-w-0 flex-1">
                   <h3 className={`text-xs font-bold font-headline-lg truncate ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
-                    Günlük Kelime Kaydı
+                    {t('daily_goal_words', nativeLanguage)}
                   </h3>
                   <p className="text-[10px] text-gray-400 mt-0.5 leading-snug">
-                    Hikayelerden kaydettiğin yeni kelimeler (Hedef: 10).
+                    {t('daily_goal_words_desc', nativeLanguage)}
                   </p>
                 </div>
               </div>
               <div className="text-right shrink-0">
                 <span className="text-sm font-extrabold text-[#4ECDC4] font-headline-lg whitespace-nowrap">
-                  {todayWords} / 10
+                  {t('daily_goal_unit_words', nativeLanguage).replace('{count}', String(todayWords))}
                 </span>
-                <p className="text-[9px] text-gray-400 font-medium">Kelime</p>
+                <p className="text-[9px] text-gray-400 font-medium">{t('weekly_words', nativeLanguage)}</p>
               </div>
             </div>
             
@@ -1081,7 +1159,7 @@ export default function ProfileTab({
                     ? 'bg-[#4ECDC4]/10 text-[#4ECDC4]' 
                     : isDarkMode ? 'bg-[#1A1A1E] text-gray-400' : 'bg-gray-100 text-gray-600'
                 }`}>
-                  {todayWords >= 10 ? 'Başarıldı! 🎉' : 'Devam Ediyor'}
+                  {todayWords >= 10 ? t('daily_goal_success', nativeLanguage) : t('daily_goal_in_progress', nativeLanguage)}
                 </span>
               </div>
             </div>
@@ -1100,20 +1178,22 @@ export default function ProfileTab({
                 </div>
                 <div className="min-w-0 flex-1">
                   <h3 className={`text-xs font-bold font-headline-lg truncate ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
-                    Günlük Sınav Başarısı
+                    {t('daily_goal_quizzes', nativeLanguage)}
                   </h3>
                   <p className="text-[10px] text-gray-400 mt-0.5 leading-snug">
                     {solvedQuizzes < 5 
-                      ? '5 quiz tamamlandığında başarı yüzdeniz hesaplanır.' 
-                      : 'Çözdüğün tüm quizlerin ortalama başarısı.'}
+                      ? t('daily_goal_quizzes_desc_locked', nativeLanguage) 
+                      : t('daily_goal_quizzes_desc_unlocked', nativeLanguage)}
                   </p>
                 </div>
               </div>
               <div className="text-right shrink-0">
                 <span className="text-sm font-extrabold text-[#FF6B6B] font-headline-lg whitespace-nowrap">
-                  {solvedQuizzes < 5 ? `${solvedQuizzes} / 5 quiz` : `%${avgSuccessPercent} Başarı`}
+                  {solvedQuizzes < 5 
+                    ? t('daily_goal_unit_quizzes', nativeLanguage).replace('{count}', String(solvedQuizzes)) 
+                    : t('daily_goal_unit_percent', nativeLanguage).replace('{percent}', String(avgSuccessPercent))}
                 </span>
-                <p className="text-[9px] text-gray-400 font-medium">Sınav</p>
+                <p className="text-[9px] text-gray-400 font-medium">{t('quiz_difficulty_level', nativeLanguage).split(' ')[0]}</p>
               </div>
             </div>
             
@@ -1135,7 +1215,7 @@ export default function ProfileTab({
                     ? 'bg-[#4ECDC4]/10 text-[#4ECDC4]' 
                     : isDarkMode ? 'bg-[#1A1A1E] text-gray-400' : 'bg-gray-100 text-gray-600'
                 }`}>
-                  {solvedQuizzes >= 5 ? 'Başarıldı! 🎉' : 'Kilitli'}
+                  {solvedQuizzes >= 5 ? t('daily_goal_success', nativeLanguage) : t('daily_goal_locked', nativeLanguage)}
                 </span>
               </div>
             </div>
@@ -1157,12 +1237,12 @@ export default function ProfileTab({
               <h2 className={`font-headline-lg text-base font-bold tracking-tight ${
                 isDarkMode ? 'text-white' : 'text-[#2D3436]'
               }`}>
-                Haftalık İlerleme
+                {t('weekly_progress_title', nativeLanguage)}
               </h2>
             </div>
           </div>
           <p className={`text-xs -mt-2.5 ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-            Günlük aktivitelerini görmek için grafik barlarına dokun.
+            {t('weekly_progress_desc', nativeLanguage)}
           </p>
 
           {/* Kolay tıklanabilir geniş filtreleme butonları */}
@@ -1178,7 +1258,7 @@ export default function ProfileTab({
                 selectedChartTab === 'words' ? 'bg-[#FF6B6B] text-white shadow-xs font-bold' : 'text-gray-400 hover:text-[#FF6B6B]'
               }`}
             >
-              Kelimeler
+              {t('weekly_words', nativeLanguage)}
             </button>
             <button
               onClick={() => {
@@ -1189,7 +1269,7 @@ export default function ProfileTab({
                 selectedChartTab === 'minutes' ? 'bg-[#FF6B6B] text-white shadow-xs font-bold' : 'text-gray-400 hover:text-[#FF6B6B]'
               }`}
             >
-              Süre (Dakika)
+              {t('weekly_minutes', nativeLanguage)}
             </button>
           </div>
         </div>
@@ -1253,8 +1333,8 @@ export default function ProfileTab({
           if (!activeData) return null;
 
           const targetVal = selectedChartTab === 'words' ? activeData.learnedWords : activeData.readMins;
-          const unit = selectedChartTab === 'words' ? 'kelime' : 'dakika';
-          const title = selectedChartTab === 'words' ? 'Öğrenilen Kelime' : 'Okuma Süresi';
+          const unit = selectedChartTab === 'words' ? t('chart_unit_word', nativeLanguage) : t('chart_unit_minute', nativeLanguage);
+          const title = selectedChartTab === 'words' ? t('chart_title_words', nativeLanguage) : t('chart_title_minutes', nativeLanguage);
 
           return (
             <motion.div 
@@ -1275,7 +1355,9 @@ export default function ProfileTab({
               <div className="flex-1">
                 <div className="flex items-center justify-between">
                   <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider font-headline-lg">
-                    {activeData.day} Günü Özeti {isToday && '(Bugün)'}
+                    {t('chart_summary', nativeLanguage)
+                      .replace('{day}', activeData.day)
+                      .replace('{today}', isToday ? t('chart_today', nativeLanguage) : '')}
                   </span>
                   <span className={`text-xs font-bold text-gray-450 ${isDarkMode ? 'text-gray-300' : 'text-gray-900'}`}>
                     {title}
@@ -1283,8 +1365,8 @@ export default function ProfileTab({
                 </div>
                 <p className={`text-xs font-bold mt-0.5 ${isDarkMode ? 'text-white' : 'text-gray-950'}`}>
                   {targetVal > 0 
-                    ? `Harika! O gün tam ${targetVal} ${unit} tamamladın. 🚀` 
-                    : `O gün henüz ${unit} kaydı bulunmuyor.`}
+                    ? t('chart_desc_success', nativeLanguage).replace('{val}', String(targetVal)).replace('{unit}', unit) 
+                    : t('chart_desc_empty', nativeLanguage).replace('{unit}', unit)}
                 </p>
               </div>
             </motion.div>
@@ -1304,66 +1386,73 @@ export default function ProfileTab({
             <h2 className={`font-headline-lg text-base font-bold tracking-tight ${
               isDarkMode ? 'text-white' : 'text-[#2D3436]'
             }`}>
-              Başarı Rozetlerim
+              {t('badges_title', nativeLanguage)}
             </h2>
           </div>
           <span className={`text-[10px] font-bold px-2.5 py-0.5 rounded-full font-headline-lg ${
             isDarkMode ? 'bg-[#121214] text-[#FFE66D]' : 'bg-[#FFFBF0] text-[#FF6B6B]'
           }`}>
-            {badges.filter(b => b.unlocked).length} / {badges.length} Açıldı
+            {t('badges_unlocked_count', nativeLanguage)
+              .replace('{unlocked}', String(badges.filter(b => b.unlocked).length))
+              .replace('{total}', String(badges.length))}
           </span>
         </div>
 
         <div className="flex flex-col gap-2.5">
-          {sortedBadges.map((badge) => (
-            <div
-              key={badge.id}
-              className={`p-2.5 rounded-xl border flex items-center justify-between gap-4 transition-all duration-300 ${
-                badge.unlocked
-                  ? isDarkMode 
-                    ? 'bg-[#FF6B6B]/5 border-[#FF6B6B]/30 hover:border-[#FF6B6B]/50' 
-                    : 'bg-[#FFFBF0]/60 border-[#FFE66D] hover:border-[#FF6B6B]/40'
-                  : isDarkMode 
-                    ? 'bg-[#121214]/40 border-[#2A2A30] opacity-55' 
-                    : 'bg-gray-50/40 border-gray-150 opacity-65'
-              }`}
-            >
-              <div className="flex items-center gap-3 min-w-0 flex-1">
-                <div className={`p-1.5 rounded-lg shrink-0 transition-transform duration-300 ${
-                  badge.unlocked 
-                    ? 'bg-[#FFE66D]/25' 
-                    : 'bg-gray-100 dark:bg-gray-800 text-gray-400'
-                }`}>
-                  {getBadgeIcon(badge.iconName, badge.unlocked)}
-                </div>
-                
-                <div className="min-w-0 flex-1">
-                  <h4 className={`font-bold text-xs leading-tight mb-0.5 ${
+          {sortedBadges.map((badge) => {
+            const localizedTitle = t(`badge_title_${badge.id}`, nativeLanguage) || badge.title;
+            const localizedDesc = t(`badge_desc_${badge.id}`, nativeLanguage) || badge.description;
+            
+            return (
+              <div
+                key={badge.id}
+                className={`p-2.5 rounded-xl border flex items-center justify-between gap-4 transition-all duration-300 ${
+                  badge.unlocked
+                    ? isDarkMode 
+                      ? 'bg-[#FF6B6B]/5 border-[#FF6B6B]/30 hover:border-[#FF6B6B]/50' 
+                      : 'bg-[#FFFBF0]/60 border-[#FFE66D] hover:border-[#FF6B6B]/40'
+                    : isDarkMode 
+                      ? 'bg-[#121214]/40 border-[#2A2A30] opacity-55' 
+                      : 'bg-gray-50/40 border-gray-150 opacity-65'
+                }`}
+              >
+                <div className="flex items-center gap-3 min-w-0 flex-1">
+                  <div className={`p-1.5 rounded-lg shrink-0 transition-transform duration-300 ${
                     badge.unlocked 
-                      ? isDarkMode ? 'text-white' : 'text-gray-900 font-black' 
-                      : 'text-gray-500'
+                      ? 'bg-[#FFE66D]/25' 
+                      : 'bg-gray-100 dark:bg-gray-800 text-gray-400'
                   }`}>
-                    {badge.title}
-                  </h4>
-                  <p className="text-[9.5px] text-gray-400 dark:text-gray-500 leading-snug truncate">
-                    {badge.description}
-                  </p>
+                    {getBadgeIcon(badge.iconName, badge.unlocked)}
+                  </div>
+                  
+                  <div className="min-w-0 flex-1">
+                    <h4 className={`font-bold text-xs leading-tight mb-0.5 ${
+                      badge.unlocked 
+                        ? isDarkMode ? 'text-white' : 'text-gray-900 font-black' 
+                        : 'text-gray-500'
+                    }`}>
+                      {localizedTitle}
+                    </h4>
+                    <p className="text-[9.5px] text-gray-400 dark:text-gray-500 leading-snug truncate">
+                      {localizedDesc}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="shrink-0 text-right">
+                  {badge.unlocked ? (
+                    <span className="text-[8px] font-bold text-[#4ECDC4] font-mono block">
+                      {badge.unlockedAt ? new Date(badge.unlockedAt).toLocaleDateString(nativeLanguage) : t('badge_status_unlocked', nativeLanguage)}
+                    </span>
+                  ) : (
+                    <span className="text-[8px] font-semibold text-gray-400 dark:text-gray-600 block">
+                      {t('badge_status_locked', nativeLanguage)}
+                    </span>
+                  )}
                 </div>
               </div>
-
-              <div className="shrink-0 text-right">
-                {badge.unlocked ? (
-                  <span className="text-[8px] font-bold text-[#4ECDC4] font-mono block">
-                    {badge.unlockedAt || 'Açıldı'}
-                  </span>
-                ) : (
-                  <span className="text-[8px] font-semibold text-gray-400 dark:text-gray-600 block">
-                    Kilitli
-                  </span>
-                )}
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
@@ -1372,12 +1461,39 @@ export default function ProfileTab({
         isDarkMode ? 'bg-[#1A1A1E] border-[#2A2A30]' : 'bg-white border-[#FFE66D]'
       }`}>
         <h3 className="text-[10px] font-bold text-gray-450 tracking-widest px-6 pt-5 mb-1.5 block font-headline-lg select-none">
-          GENEL AYARLAR
+          {t('settings_title', nativeLanguage)}
         </h3>
 
         <div className={`divide-y transition-colors ${
           isDarkMode ? 'divide-[#2A2A30]' : 'divide-[#FFE66D]/60'
         }`}>
+          {/* Native Language Selector Row */}
+          <div
+            className={`w-full flex items-center justify-between p-4 px-6 select-none transition-colors ${
+              isDarkMode ? 'text-gray-250' : 'text-gray-700'
+            }`}
+          >
+            <span className="text-xs font-bold flex items-center gap-2 font-headline-lg">
+              <Globe className="w-4.5 h-4.5 text-[#4ECDC4]" />
+              {t('settings_language', nativeLanguage)}
+            </span>
+            <select
+              value={nativeLanguage}
+              onChange={(e) => onUpdateLanguage(e.target.value as LanguageCode)}
+              className={`px-3 py-1.5 rounded-xl border text-xs font-bold focus:outline-none transition-all cursor-pointer ${
+                isDarkMode 
+                  ? 'bg-[#1E1E22] border-[#2A2A30] text-white focus:border-[#FF6B6B]' 
+                  : 'bg-white border-gray-250 text-gray-900 focus:border-[#FF6B6B]'
+              }`}
+            >
+              {SUPPORTED_LANGUAGES.map((lang) => (
+                <option key={lang.code} value={lang.code}>
+                  {lang.flag} {lang.nativeName}
+                </option>
+              ))}
+            </select>
+          </div>
+
           {/* Can (Enerji) Durumu Göstergesi */}
           {!stats.isPremium && (
             <div className={`w-full flex items-center justify-between p-4 px-6 select-none transition-colors ${
@@ -1385,7 +1501,7 @@ export default function ProfileTab({
             }`}>
               <span className="text-xs font-bold flex items-center gap-2 font-headline-lg">
                 <Heart className="w-4.5 h-4.5 text-[#FF6B6B] fill-[#FF6B6B]" />
-                Mevcut Can (Enerji)
+                {t('settings_energy', nativeLanguage)}
               </span>
               <div className="flex items-center gap-2">
                 <span className="text-xs font-mono font-extrabold text-[#FF6B6B]">{(stats.hearts ?? 5)} / 5</span>
@@ -1404,7 +1520,7 @@ export default function ProfileTab({
               isDarkMode ? 'hover:bg-[#121214] text-gray-200' : 'hover:bg-[#FFFBF0]'
             }`}
           >
-            <span className="text-xs font-bold">Uygulamayı Paylaş</span>
+            <span className="text-xs font-bold">{t('settings_share', nativeLanguage)}</span>
             <Share2 className="w-4 h-4 text-[#FF6B6B]" />
           </button>
 
@@ -1414,7 +1530,7 @@ export default function ProfileTab({
               isDarkMode ? 'hover:bg-[#121214] text-gray-200' : 'hover:bg-[#FFFBF0]'
             }`}
           >
-            <span className="text-xs font-bold">Hakkımızda & Puan Ver</span>
+            <span className="text-xs font-bold">{t('settings_about', nativeLanguage)}</span>
             <MessageSquare className="w-4 h-4 text-[#4ECDC4]" />
           </button>
 
@@ -1424,7 +1540,7 @@ export default function ProfileTab({
               isDarkMode ? 'hover:bg-[#121214] text-gray-200' : 'hover:bg-[#FFFBF0]'
             }`}
           >
-            <span className="text-xs font-bold">Gizlilik Politikası</span>
+            <span className="text-xs font-bold">{t('settings_privacy', nativeLanguage)}</span>
             <Shield className="w-4 h-4 text-emerald-500" />
           </button>
 
@@ -1466,10 +1582,10 @@ export default function ProfileTab({
             >
               <span className="text-xs flex items-center gap-1.5 font-headline-lg">
                 <Crown className="w-4.5 h-4.5 text-[#FFE66D] fill-[#FFE66D]" />
-                Premium Üye Ayrıcalıkları
+                {t('settings_premium_benefits', nativeLanguage)}
               </span>
               <div className="flex items-center gap-1 text-[9.5px] bg-emerald-500/10 text-emerald-500 px-2 py-0.5 rounded-full border border-emerald-500/20">
-                <span>İncele</span>
+                <span>{t('btn_view', nativeLanguage)}</span>
                 <ChevronRight className="w-3 h-3 text-emerald-500 group-hover:translate-x-1 transition-all" />
               </div>
             </button>
@@ -1484,7 +1600,7 @@ export default function ProfileTab({
             >
               <span className="text-xs flex items-center gap-2 font-headline-lg">
                 <Crown className="w-5 h-5 text-[#FFE66D] fill-[#FF6B6B]" />
-                İngilizce Öyküm Premium Satın Al
+                {t('settings_premium_buy', nativeLanguage)}
               </span>
               <ChevronRight className="w-4 h-4 text-[#FF6B6B] group-hover:translate-x-1 transition-all" />
             </button>
@@ -1498,7 +1614,7 @@ export default function ProfileTab({
           >
             <span className="text-xs flex items-center gap-2 font-headline-lg">
               <Trash2 className="w-4.5 h-4.5 text-rose-500" />
-              Hesabımı ve Verilerimi Sil
+              {t('settings_delete', nativeLanguage)}
             </span>
             <ChevronRight className="w-4 h-4 text-rose-500 group-hover:translate-x-1 transition-all" />
           </button>
@@ -1534,7 +1650,7 @@ export default function ProfileTab({
                 className={`absolute top-3 right-3 p-1 rounded-full hover:bg-gray-200/20 transition-all cursor-pointer ${
                   isDarkMode ? 'text-gray-400' : 'text-gray-555'
                 }`}
-                title="Kapat"
+                title={t('btn_close', nativeLanguage)}
               >
                 <X className="w-4.5 h-4.5" />
               </button>
@@ -1545,10 +1661,10 @@ export default function ProfileTab({
                 </div>
                 
                 <h3 className="font-bold text-base font-headline-lg mb-0.5">
-                  Premium Ayrıcalıklarınız
+                  {t('premium_benefits_title', nativeLanguage)}
                 </h3>
                 <p className="text-[9px] text-gray-400 font-extrabold uppercase tracking-widest mb-4">
-                  İNGİLİZCE ÖYKÜM PREMİUM
+                  {t('premium_benefits_tag', nativeLanguage)}
                 </p>
 
                 {/* Benefits List */}
@@ -1560,8 +1676,8 @@ export default function ProfileTab({
                       <Flame className="w-4.5 h-4.5 fill-orange-500/20" />
                     </div>
                     <div>
-                      <h4 className="font-extrabold text-[11px] text-orange-500">Sınırsız Enerji & Can</h4>
-                      <p className="text-[9.5px] text-gray-400 font-semibold mt-0.5 leading-snug">Hata yapmaktan korkmayın! Canınız hiçbir zaman azalmaz, kesintisiz okuma keyfini sürersiniz.</p>
+                      <h4 className="font-extrabold text-[11px] text-orange-500">{t('premium_benefit_1_title', nativeLanguage)}</h4>
+                      <p className="text-[9.5px] text-gray-400 font-semibold mt-0.5 leading-snug">{t('premium_benefit_1_desc', nativeLanguage)}</p>
                     </div>
                   </div>
 
@@ -1572,8 +1688,8 @@ export default function ProfileTab({
                       <Zap className="w-4.5 h-4.5 fill-yellow-500/20" />
                     </div>
                     <div>
-                      <h4 className="font-extrabold text-[11px] text-yellow-600 dark:text-yellow-400">Quiz Barajlarını Anında Atla</h4>
-                      <p className="text-[9.5px] text-gray-400 font-semibold mt-0.5 leading-snug">Dilediğiniz an quizi çözmek zorunda kalmadan, tek tuşla bir sonraki sayfaya veya bölüme atlayabilirsiniz.</p>
+                      <h4 className="font-extrabold text-[11px] text-yellow-600 dark:text-yellow-400">{t('premium_benefit_2_title', nativeLanguage)}</h4>
+                      <p className="text-[9.5px] text-gray-400 font-semibold mt-0.5 leading-snug">{t('premium_benefit_2_desc', nativeLanguage)}</p>
                     </div>
                   </div>
 
@@ -1584,8 +1700,8 @@ export default function ProfileTab({
                       <Sparkles className="w-4.5 h-4.5 fill-pink-500/20" />
                     </div>
                     <div>
-                      <h4 className="font-extrabold text-[11px] text-pink-500">Akıllı Yapay Zeka Sözlüğü</h4>
-                      <p className="text-[9.5px] text-gray-400 font-semibold mt-0.5 leading-snug">Kelimelerin ve deyimlerin bağlamsal detaylı Türkçe açıklamalarına ve örnek cümlelerine sınırsız erişin.</p>
+                      <h4 className="font-extrabold text-[11px] text-pink-500">{t('premium_benefit_3_title', nativeLanguage)}</h4>
+                      <p className="text-[9.5px] text-gray-400 font-semibold mt-0.5 leading-snug">{t('premium_benefit_3_desc', nativeLanguage)}</p>
                     </div>
                   </div>
 
@@ -1596,8 +1712,8 @@ export default function ProfileTab({
                       <Volume2 className="w-4.5 h-4.5 fill-purple-500/20" />
                     </div>
                     <div>
-                      <h4 className="font-extrabold text-[11px] text-purple-500">Doğal Akıcı Ses Sentezi</h4>
-                      <p className="text-[9.5px] text-gray-400 font-semibold mt-0.5 leading-snug">Cümleleri ve kelimeleri akıcı, yüksek kaliteli seslendirmelerle dinleyerek kulak aşinalığınızı katlayın.</p>
+                      <h4 className="font-extrabold text-[11px] text-purple-500">{t('premium_benefit_4_title', nativeLanguage)}</h4>
+                      <p className="text-[9.5px] text-gray-400 font-semibold mt-0.5 leading-snug">{t('premium_benefit_4_desc', nativeLanguage)}</p>
                     </div>
                   </div>
                 </div>
@@ -1606,7 +1722,7 @@ export default function ProfileTab({
                   onClick={() => setShowPremiumBenefitsModal(false)}
                   className="w-full bg-[#FF6B6B] hover:bg-[#e05a5a] text-white text-xs font-bold py-2.5 rounded-xl shadow-md transition-all flex items-center justify-center cursor-pointer shadow-[#FF6B6B]/20"
                 >
-                  Harika, Teşekkürler!
+                  {t('premium_benefits_thanks', nativeLanguage)}
                 </button>
               </div>
             </motion.div>
@@ -1636,7 +1752,7 @@ export default function ProfileTab({
               <div className="flex justify-between items-center mb-4">
                 <h3 className="font-headline-lg text-base font-extrabold flex items-center gap-2">
                   <MessageSquare className="w-5 h-5 text-[#FF6B6B]" />
-                  Hakkımızda & Puan Ver
+                  {t('about_title', nativeLanguage)}
                 </h3>
                 <button
                   onClick={() => setIsAboutModalOpen(false)}
@@ -1654,12 +1770,12 @@ export default function ProfileTab({
                 <div className={`p-4 rounded-2xl border text-xs leading-relaxed space-y-2.5 ${
                   isDarkMode ? 'bg-[#121214]/60 border-[#2A2A30]' : 'bg-[#FFFBF0] border-[#FFE66D]/60'
                 }`}>
-                  <p className="font-bold text-[#FF6B6B]">Sevgili Okurumuz,</p>
+                  <p className="font-bold text-[#FF6B6B]">{t('about_dear_reader', nativeLanguage)}</p>
                   <p className="font-medium">
-                    Sizler için pratik, eğlenceli ve verimli bir İngilizce okuma uygulaması geliştirmeye çalıştık. Her bir öyküyü özenle seçip Türkçeleştirdik, kelime kelime çevirileri ve premium telaffuzları entegre ettik.
+                    {t('about_text_1', nativeLanguage)}
                   </p>
                   <p className="font-medium text-[#4ECDC4] font-bold">
-                    Uygulamamızın gelişmesi ve daha fazla kişiye ulaşması için Google Play Store'da görüşlerinizi belirterek bize puan verebilirsiniz!
+                    {t('about_text_2', nativeLanguage)}
                   </p>
                 </div>
 
@@ -1672,7 +1788,7 @@ export default function ProfileTab({
                   className="w-full bg-[#FF6B6B] text-white text-xs font-bold py-3.5 rounded-xl shadow-md hover:bg-[#e05a5a] active:scale-95 transition-all flex items-center justify-center gap-2 cursor-pointer shadow-[#FF6B6B]/20"
                 >
                   <Crown className="w-4 h-4 text-[#FFE66D] fill-[#FFE66D]" />
-                  Google Play'de Yorum Yap & Puan Ver
+                  {t('about_rate_btn', nativeLanguage)}
                 </a>
               </div>
             </motion.div>
@@ -1912,10 +2028,10 @@ export default function ProfileTab({
           const provider = mockLoginProvider || 'google';
           
           const pickerTitles: Record<string, string> = {
-            google: 'Google ile Giriş Yap',
-            facebook: 'Facebook ile Giriş Yap',
-            apple: 'Apple ile Giriş Yap',
-            email: 'E-posta ile Giriş Yap'
+            google: t('auth_login_google_title', nativeLanguage),
+            facebook: t('auth_login_facebook_title', nativeLanguage),
+            apple: t('auth_login_apple_title', nativeLanguage),
+            email: t('auth_login_email_title', nativeLanguage)
           };
 
           const pickerConfigs: Record<string, {
@@ -1934,7 +2050,7 @@ export default function ProfileTab({
               avatarBg: isDarkMode ? '#ea433525' : '#ea433515',
               avatarColor: '#EA4335',
               directEmail: 'ardasimsek1005@gmail.com',
-              credentialsBtnText: 'Başka bir Gmail adresi kullan',
+              credentialsBtnText: t('auth_use_other_gmail', nativeLanguage),
             },
             facebook: {
               name: 'Arda Şimşek',
@@ -1943,7 +2059,7 @@ export default function ProfileTab({
               avatarBg: isDarkMode ? '#1877f225' : '#1877f215',
               avatarColor: '#1877F2',
               directEmail: 'ardasimsek1005@gmail.com',
-              credentialsBtnText: 'Başka bir Facebook hesabı kullan',
+              credentialsBtnText: t('auth_use_other_fb', nativeLanguage),
             },
             apple: {
               name: 'Arda Şimşek',
@@ -1952,7 +2068,7 @@ export default function ProfileTab({
               avatarBg: isDarkMode ? '#222' : '#f5f5f5',
               avatarColor: isDarkMode ? '#fff' : '#1E1E22',
               directEmail: 'ardasimsek1005@icloud.com',
-              credentialsBtnText: 'Başka bir Apple ID kullan',
+              credentialsBtnText: t('auth_use_other_apple', nativeLanguage),
             },
             email: {
               name: 'Arda Şimşek',
@@ -1961,7 +2077,7 @@ export default function ProfileTab({
               avatarBg: isDarkMode ? '#4ecdc425' : '#4ecdc415',
               avatarColor: '#4ECDC4',
               directEmail: 'ardasimsek1005@gmail.com',
-              credentialsBtnText: 'Başka bir kullanıcı adı veya e-posta kullan',
+              credentialsBtnText: t('auth_use_other_email', nativeLanguage),
             }
           };
 
@@ -1975,12 +2091,12 @@ export default function ProfileTab({
             submitText: string;
           }> = {
             google: {
-              title: 'Gmail ile Giriş Yap',
-              desc: 'Gmail adresinizi ve şifrenizi girerek bağlanın.',
+              title: t('auth_login_google_title', nativeLanguage),
+              desc: t('auth_gmail_desc', nativeLanguage),
               color: '#EA4335',
-              emailLabel: 'GMAIL ADRESİ',
+              emailLabel: t('auth_gmail_address', nativeLanguage),
               emailPlaceholder: 'ornek@gmail.com',
-              submitText: 'Google Hesabı ile Giriş Yap',
+              submitText: t('auth_login_google_btn', nativeLanguage),
               icon: (
                 <svg className="w-6 h-6" viewBox="0 0 24 24">
                   <path fill="currentColor" d="M12.24 10.285V14.4h6.887c-.648 2.41-2.519 4.114-5.136 4.114-3.468 0-6.28-2.812-6.28-6.28s2.812-6.28 6.28-6.28c1.554 0 2.969.571 4.07 1.509l3.109-3.11C18.66 1.705 15.635 1 12.24 1 5.767 1 12.24s4.767 11.24 11.24 11.24c6.335 0 11.24-4.514 11.24-11.24 0-.74-.085-1.485-.24-2.215H12.24z" />
@@ -1988,12 +2104,12 @@ export default function ProfileTab({
               )
             },
             facebook: {
-              title: 'Facebook ile Giriş Yap',
-              desc: 'Facebook e-posta adresinizi ve şifrenizi girerek bağlanın.',
+              title: t('auth_login_facebook_title', nativeLanguage),
+              desc: t('auth_fb_desc', nativeLanguage),
               color: '#1877F2',
-              emailLabel: 'FACEBOOK E-POSTA / TELEFON',
+              emailLabel: t('auth_fb_email', nativeLanguage),
               emailPlaceholder: 'ornek@facebook.com',
-              submitText: 'Facebook Hesabı ile Giriş Yap',
+              submitText: t('auth_login_facebook_btn', nativeLanguage),
               icon: (
                 <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
                   <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z" />
@@ -2001,12 +2117,12 @@ export default function ProfileTab({
               )
             },
             apple: {
-              title: 'Apple ID ile Giriş Yap',
-              desc: 'Apple ID e-posta adresinizi ve şifrenizi girerek bağlanın.',
+              title: t('auth_login_apple_title', nativeLanguage),
+              desc: t('auth_apple_desc', nativeLanguage),
               color: '#1E1E22',
-              emailLabel: 'APPLE ID / E-POSTA',
+              emailLabel: t('auth_apple_id', nativeLanguage),
               emailPlaceholder: 'ornek@icloud.com',
-              submitText: 'Apple ID ile Giriş Yap',
+              submitText: t('auth_login_apple_btn', nativeLanguage),
               icon: (
                 <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
                   <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.22.67-2.94 1.5-.64.74-1.2 1.88-1.05 2.99 1.11.09 2.26-.54 3-1.43z" />
@@ -2014,12 +2130,12 @@ export default function ProfileTab({
               )
             },
             email: {
-              title: 'Üye Girişi',
-              desc: 'Kullanıcı adınızı ve şifrenizi girerek giriş yapın.',
+              title: t('auth_login_link', nativeLanguage),
+              desc: t('auth_email_desc', nativeLanguage),
               color: '#4ECDC4',
-              emailLabel: 'KULLANICI ADI',
-              emailPlaceholder: 'Kullanıcı adınız',
-              submitText: 'Giriş Yap',
+              emailLabel: t('auth_username_label', nativeLanguage),
+              emailPlaceholder: t('auth_username_placeholder', nativeLanguage),
+              submitText: t('auth_login_btn', nativeLanguage),
               icon: (
                 <svg className="w-6 h-6 fill-none stroke-current" viewBox="0 0 24 24" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
@@ -2056,7 +2172,7 @@ export default function ProfileTab({
                     isDarkMode ? 'text-gray-300 bg-[#2A2A30] hover:bg-[#343A40]' : 'text-gray-500 bg-gray-100 hover:bg-gray-200'
                   }`}
                 >
-                  Kapat
+                  {t('auth_btn_close', nativeLanguage)}
                 </button>
  
                 <div 
@@ -2074,7 +2190,7 @@ export default function ProfileTab({
                   {loginStep === 'picker' ? pickerTitles[provider] : config.title}
                 </h3>
                 <p className="text-xs text-gray-400 mb-5 px-1 leading-relaxed font-semibold text-center font-headline-lg">
-                  {loginStep === 'picker' ? 'Devam etmek için cihazınızda kayıtlı hesabı seçin' : config.desc}
+                  {loginStep === 'picker' ? t('auth_select_saved_account_desc', nativeLanguage) : config.desc}
                 </p>
  
                 {loginStep === 'picker' ? (
@@ -2099,32 +2215,32 @@ export default function ProfileTab({
                       </div>
                       <span className="text-[9px] font-bold text-gray-450 uppercase tracking-wider shrink-0 select-none">
                         {localStorage.getItem('linguist_session_token_' + currentPicker.directEmail.toLowerCase().trim()) 
-                          ? 'Kayıtlı Oturumla Giriş' 
-                          : 'Kayıtlı'}
+                          ? t('auth_login_saved_session', nativeLanguage) 
+                          : t('auth_saved_tag', nativeLanguage)}
                       </span>
                     </button>
- 
+
                     <button
                       type="button"
                       onClick={() => setLoginStep('credentials')}
                       className={`w-full py-3 rounded-2xl border text-xs font-bold transition-colors cursor-pointer text-center font-headline-lg ${
-                        isDarkMode ? 'bg-transparent border-gray-800 hover:bg-white/5 text-gray-300' : 'bg-transparent border-gray-200 hover:bg-gray-50 text-gray-600'
+                        isDarkMode ? 'bg-transparent border-gray-800 hover:bg-white/5 text-gray-300' : 'bg-white border-gray-200 hover:bg-gray-50 text-gray-650'
                       }`}
                     >
-                      {currentPicker.credentialsBtnText}
+                      {t(provider === 'google' ? 'auth_google_use_other' : provider === 'facebook' ? 'auth_facebook_use_other' : provider === 'apple' ? 'auth_apple_use_other' : 'auth_email_use_other', nativeLanguage)}
                     </button>
                   </div>
                 ) : loginStep === 'register' ? (
                   <form onSubmit={handleRegisterSubmit} className="space-y-4">
                     <div className="text-left">
                       <label className="text-[10px] font-bold text-gray-400 tracking-wider block mb-1 font-headline-lg">
-                        KULLANICI ADI (İSİM)
+                        {t('auth_register_username_label', nativeLanguage)}
                       </label>
                       <input
                         type="text"
                         required
                         disabled={isSubmitting}
-                        placeholder="İsminiz"
+                        placeholder={t('auth_register_name_placeholder', nativeLanguage)}
                         value={mockName}
                         onChange={(e) => setMockName(e.target.value)}
                         className={`w-full text-xs px-3 py-2.5 border rounded-xl focus:outline-none focus:border-[#FF6B6B] focus:ring-1 focus:ring-[#FF6B6B] font-medium transition-colors ${
@@ -2137,11 +2253,9 @@ export default function ProfileTab({
                       />
                     </div>
 
-
-
                     <div className="text-left">
                       <label className="text-[10px] font-bold text-gray-400 tracking-wider block mb-1 font-headline-lg">
-                        ŞİFRE (EN AZ 6 KARAKTER)
+                        {t('auth_password_min_label', nativeLanguage)}
                       </label>
                       <div className="relative">
                         <input
@@ -2187,7 +2301,7 @@ export default function ProfileTab({
                           isDarkMode ? 'bg-[#2A2A30] hover:bg-[#343A40] text-gray-300' : 'bg-gray-150 hover:bg-gray-200 text-gray-600'
                         }`}
                       >
-                        Geri Dön
+                        {t('auth_back_btn', nativeLanguage)}
                       </button>
                       <button
                         type="submit"
@@ -2200,21 +2314,21 @@ export default function ProfileTab({
                         {isSubmitting ? (
                           <>
                             <RefreshCw className="w-3.5 h-3.5 animate-spin" />
-                            <span>Kayıt Yapılıyor...</span>
+                            <span>{t('auth_registering_toast', nativeLanguage)}</span>
                           </>
                         ) : (
-                          <span>Kayıt Ol ve Başla</span>
+                          <span>{t('auth_register_btn', nativeLanguage)}</span>
                         )}
                       </button>
                     </div>
                     <div className="text-center pt-3 text-[10px]">
-                      <span className="text-gray-400 font-semibold font-headline-lg">Zaten bir hesabınız var mı? </span>
+                      <span className="text-gray-400 font-semibold font-headline-lg">{t('auth_have_account', nativeLanguage)}</span>
                       <button
                         type="button"
                         onClick={() => setLoginStep('credentials')}
                         className="text-[#4ECDC4] font-extrabold hover:underline cursor-pointer font-headline-lg"
                       >
-                        Giriş Yapın
+                        {t('auth_login_link', nativeLanguage)}
                       </button>
                     </div>
                   </form>
@@ -2243,7 +2357,7 @@ export default function ProfileTab({
  
                     <div className="text-left">
                       <label className="text-[10px] font-bold text-gray-400 tracking-wider block mb-1 font-headline-lg">
-                        ŞİFRE
+                        {t('auth_password_label', nativeLanguage)}
                       </label>
                       <div className="relative">
                         <input
@@ -2288,7 +2402,7 @@ export default function ProfileTab({
                           isDarkMode ? 'bg-[#2A2A30] hover:bg-[#343A40] text-gray-300' : 'bg-gray-150 hover:bg-gray-200 text-gray-600'
                         }`}
                       >
-                        Geri Dön
+                        {t('auth_back_btn', nativeLanguage)}
                       </button>
                       <button
                         type="submit"
@@ -2301,7 +2415,7 @@ export default function ProfileTab({
                         {isSubmitting ? (
                           <>
                             <RefreshCw className="w-3.5 h-3.5 animate-spin" />
-                            <span>Giriş Yapılıyor...</span>
+                            <span>{t('auth_logging_in_toast', nativeLanguage)}</span>
                           </>
                         ) : (
                           <span>{config.submitText}</span>
@@ -2309,13 +2423,13 @@ export default function ProfileTab({
                       </button>
                     </div>
                     <div className="text-center pt-3 text-[10px]">
-                      <span className="text-gray-400 font-semibold font-headline-lg">Yeni kullanıcı mısınız? </span>
+                      <span className="text-gray-400 font-semibold font-headline-lg">{t('auth_new_user_prompt', nativeLanguage)}</span>
                       <button
                         type="button"
                         onClick={() => setLoginStep('register')}
                         className="text-[#4ECDC4] font-extrabold hover:underline cursor-pointer font-headline-lg"
                       >
-                        Yeni Hesap Oluşturun
+                        {t('auth_create_account_link', nativeLanguage)}
                       </button>
                     </div>
                   </form>
@@ -2350,7 +2464,7 @@ export default function ProfileTab({
                   </div>
                   {/* Address Bar */}
                   <div className="flex-1 bg-white border border-gray-200 rounded-lg px-3 py-1 flex items-center gap-2 text-[10px] text-gray-500 font-mono select-none overflow-hidden truncate">
-                    <span className="text-emerald-600 font-bold shrink-0">🔒 Güvenli</span>
+                    <span className="text-emerald-600 font-bold shrink-0">🔒 {t('oauth_secure_tag', nativeLanguage)}</span>
                     <span className="truncate">
                       {isGoogle 
                         ? 'https://accounts.google.com/o/oauth2/v2/auth?client_id=987216-oykum.apps.googleusercontent.com&redirect_uri=capacitor://localhost' 
@@ -2388,7 +2502,7 @@ export default function ProfileTab({
                         <div className="w-10 h-10 border-4 border-[#1877F2]/20 border-t-[#1877F2] rounded-full animate-spin" />
                       )}
                       <p className="text-xs text-gray-500 font-semibold font-headline-lg animate-pulse">
-                        {isGoogle ? 'Google Accounts' : 'Facebook Login'} yükleniyor...
+                        {t('auth_provider_loading', nativeLanguage).replace('{provider}', isGoogle ? 'Google Accounts' : 'Facebook Login')}
                       </p>
                     </div>
                   )}
@@ -2407,10 +2521,10 @@ export default function ProfileTab({
                       </div>
 
                       <h3 className="text-base font-bold text-center text-gray-900 mb-1 font-headline-lg">
-                        Bir hesap seçin
+                        {t('oauth_choose_account', nativeLanguage)}
                       </h3>
                       <p className="text-xs text-center text-gray-500 mb-6 font-semibold font-headline-lg">
-                        İngilizce Öyküm uygulamasına devam etmek için
+                        {t('oauth_to_continue', nativeLanguage)}
                       </p>
 
                       <div className="space-y-2.5 max-h-[220px] overflow-y-auto pr-1">
@@ -2437,7 +2551,7 @@ export default function ProfileTab({
                         {oauthShowCustomInput ? (
                           <div className="p-3.5 rounded-xl border border-[#4285F4] bg-white space-y-3">
                             <label className="text-[9px] font-bold text-[#4285F4] tracking-wider block font-headline-lg">
-                              GMAIL ADRESİ GİRİN
+                              {t('auth_gmail_address', nativeLanguage)}
                             </label>
                             <input
                               type="email"
@@ -2452,14 +2566,14 @@ export default function ProfileTab({
                                 onClick={() => setOauthShowCustomInput(false)}
                                 className="w-1/2 py-2 border border-gray-205 rounded-lg text-[10px] font-bold text-gray-500 hover:bg-gray-50 cursor-pointer"
                               >
-                                Vazgeç
+                                {t('btn_cancel', nativeLanguage)}
                               </button>
                               <button
                                 type="button"
                                 onClick={() => {
                                   const trimmed = oauthCustomEmail.trim().toLowerCase();
                                   if (!trimmed || !trimmed.endsWith('@gmail.com') || trimmed.length < 13) {
-                                    setToastMessage('Lütfen geçerli bir Gmail adresi girin (@gmail.com ile bitmelidir). ⚠️');
+                                    setToastMessage(t('auth_error_gmail_format', nativeLanguage));
                                     setTimeout(() => setToastMessage(null), 3000);
                                     return;
                                   }
@@ -2468,7 +2582,7 @@ export default function ProfileTab({
                                 }}
                                 className="w-1/2 py-2 bg-[#4285F4] text-white rounded-lg text-[10px] font-bold hover:bg-[#357ae8] cursor-pointer shadow-sm"
                               >
-                                İleri
+                                {t('btn_next', nativeLanguage)}
                               </button>
                             </div>
                           </div>
@@ -2479,7 +2593,7 @@ export default function ProfileTab({
                             className="w-full p-3.5 rounded-xl border border-dashed border-gray-300 hover:border-[#4285F4] hover:bg-[#4285F4]/5 text-center transition-colors flex items-center justify-center gap-2 cursor-pointer group"
                           >
                             <Plus className="w-3.5 h-3.5 text-gray-400 group-hover:text-[#4285F4]" />
-                            <span className="text-xs font-bold text-gray-500 group-hover:text-[#4285F4]">Başka bir Gmail hesabı kullan</span>
+                            <span className="text-xs font-bold text-gray-500 group-hover:text-[#4285F4]">{t('auth_google_use_other', nativeLanguage)}</span>
                           </button>
                         )}
                       </div>
@@ -2502,32 +2616,32 @@ export default function ProfileTab({
                           </div>
                           
                           <h3 className="text-base font-bold text-center text-gray-800 mb-1 font-headline-lg">
-                            İngilizce Öyküm'e izin verin
+                            {t('oauth_title_google', nativeLanguage)}
                           </h3>
                           <p className="text-[11px] text-center text-gray-500 mb-5 font-semibold font-headline-lg">
-                            İşlem yapılacak hesap: <span className="text-gray-700 font-extrabold">{oauthEmail}</span>
+                            {t('oauth_action_account', nativeLanguage)} <span className="text-gray-700 font-extrabold">{oauthEmail}</span>
                           </p>
 
                           <div className="bg-gray-50 border border-gray-150 rounded-xl p-4 mb-6 space-y-3">
                             <p className="text-[9px] text-gray-400 font-bold tracking-wider uppercase block font-headline-lg">
-                              İNGİLİZCE ÖYKÜM UYGULAMASI ŞUNLARA ERİŞMEK İSTİYOR:
+                              {t('oauth_wants_access', nativeLanguage)}
                             </p>
                             <div className="flex gap-2.5 items-start">
                               <CheckCircle2 className="w-4 h-4 text-[#34A853] shrink-0 mt-0.5" />
                               <div className="text-xs text-gray-700 font-medium">
-                                <span className="font-bold">Kişisel Bilgiler:</span> Adınız, profil resminiz ve temel hesap bilgileriniz.
+                                <span className="font-bold">{t('oauth_personal_info', nativeLanguage)}</span> {t('oauth_personal_info_desc', nativeLanguage)}
                               </div>
                             </div>
                             <div className="flex gap-2.5 items-start">
                               <CheckCircle2 className="w-4 h-4 text-[#34A853] shrink-0 mt-0.5" />
                               <div className="text-xs text-gray-700 font-medium">
-                                <span className="font-bold">E-posta adresi:</span> Google hesabınıza kayıtlı birincil e-posta adresi.
+                                <span className="font-bold">{t('oauth_email_address', nativeLanguage)}</span> {t('oauth_email_address_desc', nativeLanguage)}
                               </div>
                             </div>
                           </div>
 
                           <p className="text-[9px] text-gray-450 mb-6 leading-relaxed font-semibold text-center font-headline-lg">
-                            Onayla butonuna tıklayarak İngilizce Öyküm'ün verilerinizi Hizmet Şartları ve Gizlilik Politikası kapsamında kullanmasına izin vermiş olursunuz.
+                            {t('oauth_consent_desc', nativeLanguage)}
                           </p>
 
                           <div className="flex gap-3">
@@ -2539,7 +2653,7 @@ export default function ProfileTab({
                               }}
                               className="w-1/3 py-2.5 border border-gray-250 hover:bg-gray-50 text-xs font-bold text-gray-600 rounded-xl cursor-pointer text-center font-headline-lg"
                             >
-                              İptal Et
+                              {t('oauth_cancel', nativeLanguage)}
                             </button>
                             <button
                               type="button"
@@ -2549,7 +2663,7 @@ export default function ProfileTab({
                               }}
                               className="w-2/3 py-2.5 bg-[#4285F4] hover:bg-[#357ae8] text-white text-xs font-bold rounded-xl cursor-pointer text-center shadow-md font-headline-lg"
                             >
-                              Bağlantıyı Onayla
+                              {t('oauth_confirm_btn', nativeLanguage)}
                             </button>
                           </div>
                         </>
@@ -2561,10 +2675,10 @@ export default function ProfileTab({
                           </div>
 
                           <h3 className="text-base font-bold text-center text-gray-800 mb-1 font-headline-lg">
-                            Uygulama Yetkilendirme
+                            {t('oauth_title_facebook', nativeLanguage)}
                           </h3>
                           <p className="text-[11px] text-center text-gray-500 mb-6 font-semibold font-headline-lg">
-                            İngilizce Öyküm uygulaması hesabınıza bağlanmak istiyor.
+                            {t('oauth_desc_facebook', nativeLanguage)}
                           </p>
 
                           <div className="bg-gray-50 border border-gray-150 rounded-xl p-4 mb-6 space-y-3 w-full">
@@ -2574,18 +2688,18 @@ export default function ProfileTab({
                               </div>
                               <div className="text-left">
                                 <div className="text-xs font-bold text-gray-800">Arda Şimşek</div>
-                                <div className="text-[9px] text-gray-400 font-semibold">Facebook ile Giriş yapılıyor</div>
+                                <div className="text-[9px] text-gray-400 font-semibold">{t('oauth_logging_in_fb', nativeLanguage)}</div>
                               </div>
                             </div>
                             <div className="border-t border-gray-200 pt-3 space-y-2 text-left">
                               <p className="text-[9px] text-gray-400 font-bold tracking-wider uppercase block font-headline-lg">
-                                İSTENEN İZİNLER:
+                                {t('oauth_permissions_requested', nativeLanguage)}
                               </p>
                               <div className="text-xs text-gray-700 font-medium">
-                                • Herkese açık profil bilgileriniz (isim, resim)
+                                {t('oauth_perm_public_profile', nativeLanguage)}
                               </div>
                               <div className="text-xs text-gray-700 font-medium">
-                                • E-posta adresiniz ({oauthEmail})
+                                {t('oauth_perm_email', nativeLanguage)} ({oauthEmail})
                               </div>
                             </div>
                           </div>
@@ -2599,7 +2713,7 @@ export default function ProfileTab({
                               }}
                               className="w-1/3 py-2.5 border border-gray-250 hover:bg-gray-50 text-xs font-bold text-gray-600 rounded-xl cursor-pointer text-center font-headline-lg"
                             >
-                              İptal
+                              {t('oauth_cancel', nativeLanguage)}
                             </button>
                             <button
                               type="button"
@@ -2608,7 +2722,7 @@ export default function ProfileTab({
                               }}
                               className="w-2/3 py-2.5 bg-[#1877F2] hover:bg-[#166fe5] text-white text-xs font-bold rounded-xl cursor-pointer text-center shadow-md font-headline-lg animate-pulse"
                             >
-                              Arda Şimşek Olarak Devam Et
+                              {t('oauth_continue_as_format', nativeLanguage).replace('{name}', 'Arda Şimşek')}
                             </button>
                           </div>
                         </>
@@ -2622,10 +2736,10 @@ export default function ProfileTab({
                       <div className="w-12 h-12 rounded-full border-4 border-emerald-100 border-t-emerald-500 animate-spin" />
                       <div className="space-y-1">
                         <h4 className="text-xs font-bold text-emerald-600 uppercase tracking-widest font-headline-lg">
-                          Giriş Başarılı!
+                          {t('oauth_login_success', nativeLanguage)}
                         </h4>
                         <p className="text-xs text-gray-500 font-medium font-headline-lg max-w-[280px]">
-                          Bağlantı doğrulandı, İngilizce Öyküm uygulamasına güvenle yönlendiriliyorsunuz...
+                          {t('oauth_redirecting', nativeLanguage)}
                         </p>
                       </div>
                     </div>
@@ -2655,10 +2769,10 @@ export default function ProfileTab({
               </div>
 
               <h3 className={`font-headline-lg text-sm font-bold mb-2 text-center ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
-                Oturumu Kapat
+                {t('confirm_logout_title', nativeLanguage)}
               </h3>
               <p className="text-[10px] text-gray-400 mb-5 leading-relaxed font-semibold text-center font-headline-lg">
-                Çıkış yapmak istediğinize emin misiniz? Çevrimdışı okuma ilerlemeniz ve verileriniz bu cihazda saklanacaktır.
+                {t('confirm_logout_desc', nativeLanguage)}
               </p>
 
               <div className="flex gap-2.5">
@@ -2669,7 +2783,7 @@ export default function ProfileTab({
                     isDarkMode ? 'bg-[#2A2A30] hover:bg-[#343A40] text-gray-300' : 'bg-gray-150 hover:bg-gray-200 text-gray-600'
                   }`}
                 >
-                  Vazgeç
+                  {t('btn_cancel', nativeLanguage)}
                 </button>
                 <button
                   type="button"
@@ -2678,17 +2792,17 @@ export default function ProfileTab({
                       google: 'Google',
                       facebook: 'Facebook',
                       apple: 'Apple',
-                      email: 'E-posta'
+                      email: nativeLanguage === 'tr' ? 'E-posta' : 'Email'
                     };
-                    const currentProviderName = providerNames[loginProvider || ''] || 'Hesap';
+                    const currentProviderName = providerNames[loginProvider || ''] || (nativeLanguage === 'tr' ? 'Hesap' : 'Account');
                     onLogout();
                     setShowLogoutConfirm(false);
-                    setToastMessage(`${currentProviderName} oturumu güvenli bir şekilde kapatıldı. 🚪`);
+                    setToastMessage(t('confirm_logout_toast', nativeLanguage).replace('{provider}', currentProviderName));
                     setTimeout(() => setToastMessage(null), 3000);
                   }}
                   className="w-1/2 py-2.5 bg-rose-500 text-white rounded-xl text-xs font-bold hover:bg-rose-600 transition-all cursor-pointer shadow-md shadow-rose-500/20 font-headline-lg"
                 >
-                  Çıkış Yap
+                  {t('settings_logout', nativeLanguage)}
                 </button>
               </div>
             </motion.div>
@@ -2713,10 +2827,10 @@ export default function ProfileTab({
               </div>
 
               <h3 className={`font-headline-lg text-sm font-bold mb-2 text-center ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
-                Hesabımı ve Verilerimi Sil
+                {t('confirm_delete_title', nativeLanguage)}
               </h3>
               <p className="text-[10px] text-gray-400 mb-5 leading-relaxed font-semibold text-center font-headline-lg">
-                Hesabınızı ve tüm verilerinizi silmek istediğinize emin misiniz? Bu işlem geri alınamaz ve tüm okuma ilerlemeniz kalıcı olarak silinecektir.
+                {t('confirm_delete_desc', nativeLanguage)}
               </p>
 
               <div className="flex gap-2.5">
@@ -2728,20 +2842,21 @@ export default function ProfileTab({
                     isDarkMode ? 'bg-[#2A2A30] hover:bg-[#343A40] text-gray-300' : 'bg-gray-150 hover:bg-gray-200 text-gray-600'
                   } ${isDeletingAccount ? 'opacity-50 cursor-not-allowed' : ''}`}
                 >
-                  Vazgeç
+                  {t('btn_cancel', nativeLanguage)}
                 </button>
                 <button
                   type="button"
                   disabled={isDeletingAccount}
                   onClick={async () => {
                     setIsDeletingAccount(true);
-                    setToastMessage('Hesabınız siliniyor... ⏳');
+                    setToastMessage(t('confirm_delete_toast_deleting', nativeLanguage));
                     try {
                       await onDeleteAccount();
                       setShowDeleteConfirm(false);
+                      setToastMessage(t('confirm_delete_toast_success', nativeLanguage));
                     } catch (err) {
                       console.error(err);
-                      setToastMessage('Bir hata oluştu, lütfen tekrar deneyin. ⚠️');
+                      setToastMessage(t('auth_error_generic', nativeLanguage));
                       setTimeout(() => setToastMessage(null), 3000);
                     } finally {
                       setIsDeletingAccount(false);
@@ -2752,7 +2867,7 @@ export default function ProfileTab({
                   {isDeletingAccount ? (
                     <RefreshCw className="w-3.5 h-3.5 animate-spin" />
                   ) : (
-                    'Kalıcı Olarak Sil'
+                    t('confirm_delete_btn_confirm', nativeLanguage)
                   )}
                 </button>
               </div>
@@ -2774,15 +2889,15 @@ export default function ProfileTab({
               }`}
             >
               <h3 className={`font-headline-lg text-sm font-bold mb-2 text-center ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
-                Davet Kodu Gir
+                {t('invite_modal_title', nativeLanguage)}
               </h3>
               <p className="text-[10px] text-gray-400 mb-4 leading-relaxed font-semibold text-center font-headline-lg">
-                Arkadaşınızın davet kodunu girerek onunla bağlantı kurun.
+                {t('invite_modal_desc', nativeLanguage)}
               </p>
               
               <input
                 type="text"
-                placeholder="Örn: OYKUM-ABCDE"
+                placeholder={t('invite_modal_placeholder', nativeLanguage)}
                 value={inviteInputVal}
                 onChange={(e) => setInviteInputVal(e.target.value.toUpperCase())}
                 className={`w-full text-xs px-3 py-2.5 border rounded-xl focus:outline-none focus:border-[#FF6B6B] focus:ring-1 focus:ring-[#FF6B6B] font-mono text-center font-bold tracking-wider mb-4 transition-colors ${
@@ -2800,26 +2915,26 @@ export default function ProfileTab({
                     isDarkMode ? 'bg-[#2A2A30] hover:bg-[#343A40] text-gray-300' : 'bg-gray-150 hover:bg-gray-200 text-gray-600'
                   }`}
                 >
-                  İptal
+                  {t('btn_cancel', nativeLanguage)}
                 </button>
                 <button
                   type="button"
                   onClick={() => {
                     const cleaned = inviteInputVal.trim();
                     if (!cleaned) {
-                      setToastMessage('Lütfen bir kod girin. ⚠️');
+                      setToastMessage(t('invite_toast_enter_code', nativeLanguage));
                       setTimeout(() => setToastMessage(null), 2500);
                       return;
                     }
                     localStorage.setItem('linguist_referred_by', cleaned);
                     setReferredBy(cleaned);
                     setIsInviteInputOpen(false);
-                    setToastMessage('Davet kodu başarıyla uygulandı! 🎁');
+                    setToastMessage(t('invite_toast_success', nativeLanguage));
                     setTimeout(() => setToastMessage(null), 2500);
                   }}
                   className="w-1/2 py-2 bg-[#FF6B6B] text-white rounded-xl text-xs font-bold hover:bg-[#e05a5a] transition-all cursor-pointer shadow-md shadow-[#FF6B6B]/20 font-headline-lg"
                 >
-                  Uygula
+                  {t('btn_apply', nativeLanguage)}
                 </button>
               </div>
             </motion.div>
@@ -2853,7 +2968,7 @@ export default function ProfileTab({
               <div className="flex items-center gap-2 mb-4">
                 <Shield className="w-5 h-5 text-emerald-500" />
                 <h3 className={`font-headline-lg text-sm font-bold ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
-                  Gizlilik Politikası
+                  {t('privacy_title', nativeLanguage)}
                 </h3>
               </div>
 
@@ -2864,42 +2979,42 @@ export default function ProfileTab({
                 }`}
               >
                 <p>
-                  <strong>İngilizce Öyküm</strong>, kullanıcılarımızın gizliliğini korumaya büyük önem verir. Bu belge, verilerinizin nasıl toplandığı ve korunduğu hakkında bilgi sağlamak amacıyla hazırlanmıştır.
+                  {t('privacy_intro', nativeLanguage)}
                 </p>
 
                 <h4 className={`text-xs font-bold mt-3 ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
-                  1. Toplanan Bilgiler ve Amacı
+                  {t('privacy_section_1_title', nativeLanguage)}
                 </h4>
                 <p>
-                  Uygulamamız doğrudan üyelik (şifre, e-posta) veya sosyal medya girişleri kullanmamaktadır. Cihazınızda tamamen anonim bir <strong>Cihaz Kimliği (Device UUID)</strong> üretilir. Bu kimlik, okuma ilerlemeniz, kazandığınız rozetler ve kaydettiğiniz kelimelerin sunucumuzda güvenli bir şekilde yedeklenmesini sağlamak için kullanılır.
+                  {t('privacy_section_1_desc', nativeLanguage)}
                 </p>
 
                 <h4 className={`text-xs font-bold mt-3 ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
-                  2. Çocukların Gizliliği
+                  {t('privacy_section_2_title', nativeLanguage)}
                 </h4>
                 <p>
-                  Uygulamamız COPPA ve GDPR çocuk gizliliği kurallarına tam uyumludur. Çocuklardan gerçek ad, soyad, e-posta adresi, telefon numarası veya konum bilgisi gibi hiçbir kişisel veri talep edilmez ve toplanmaz. Tüm süreç tamamen anonim cihaz kimliğiyle yürütülür.
+                  {t('privacy_section_2_desc', nativeLanguage)}
                 </p>
 
                 <h4 className={`text-xs font-bold mt-3 ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
-                  3. Veri Paylaşımı
+                  {t('privacy_section_3_title', nativeLanguage)}
                 </h4>
                 <p>
-                  Toplanan veriler üçüncü şahıslarla, reklam ağlarıyla veya veri şirketleriyle kesinlikle paylaşılmaz veya satılmaz. Uygulamamızda üçüncü taraf reklamları bulunmamaktadır.
+                  {t('privacy_section_3_desc', nativeLanguage)}
                 </p>
 
                 <h4 className={`text-xs font-bold mt-3 ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
-                  4. Hesap ve Veri Silme
+                  {t('privacy_section_4_title', nativeLanguage)}
                 </h4>
                 <p>
-                  Dilediğiniz an Profil &gt; Genel Ayarlar menüsündeki "Hesabımı ve Verilerimi Sil" butonunu kullanarak tüm sunucu yedeklerinizi ve cihazınızdaki yerel verilerinizi kalıcı olarak silebilirsiniz.
+                  {t('privacy_section_4_desc', nativeLanguage)}
                 </p>
 
                 <h4 className={`text-xs font-bold mt-3 ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
-                  5. İletişim
+                  {t('privacy_section_5_title', nativeLanguage)}
                 </h4>
                 <p>
-                  Gizlilik ile ilgili sorularınız için bizimle <strong>colorstrikearda@gmail.com</strong> e-posta adresi üzerinden iletişime geçebilirsiniz.
+                  {t('privacy_section_5_desc', nativeLanguage)}
                 </p>
               </div>
 
@@ -2909,7 +3024,7 @@ export default function ProfileTab({
                   onClick={() => setIsPrivacyModalOpen(false)}
                   className="px-6 py-2 bg-emerald-500 text-white rounded-xl text-xs font-bold hover:bg-emerald-600 transition-all cursor-pointer shadow-md shadow-emerald-500/20 font-headline-lg"
                 >
-                  Kapat
+                  {t('btn_close', nativeLanguage)}
                 </button>
               </div>
             </motion.div>

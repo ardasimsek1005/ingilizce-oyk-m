@@ -2,6 +2,8 @@ import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { BookOpen, Timer, Plus, ArrowRight, ExternalLink, ChevronRight, X, Sparkles, BookMarked, Star, Skull, Compass, Search, Trash2, ArrowLeft } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Book, getLevelColor, hexToRgba } from '../types';
+import { SUPPORTED_LANGUAGES, LanguageCode, t, getLocalizedUsername } from '../i18n';
+
 
 
 const TumuIcon = () => (
@@ -195,7 +197,50 @@ const HistoryIcon = () => (
   </svg>
 );
 
-const getBookCategory = (bookId: string): 'horror_mystery' | 'kids_fables' | 'classics_adventure' | 'daily_conversations' | 'sci_fi' | 'detective' | 'history' => {
+const MythologyIcon = () => (
+  <svg className="w-7 h-7 shrink-0" viewBox="0 0 32 32" fill="none">
+    <defs>
+      <linearGradient id="mythGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stopColor="#FFE66D" />
+        <stop offset="100%" stopColor="#FF9F43" />
+      </linearGradient>
+    </defs>
+    <circle cx="16" cy="16" r="13" fill="url(#mythGrad)" />
+    <path d="M17 6l-6 10h5l-3 10 11-12h-5z" fill="#FFFFFF" />
+  </svg>
+);
+
+const TravelIcon = () => (
+  <svg className="w-7 h-7 shrink-0" viewBox="0 0 32 32" fill="none">
+    <defs>
+      <linearGradient id="travelGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stopColor="#45AAF2" />
+        <stop offset="100%" stopColor="#2D98DA" />
+      </linearGradient>
+    </defs>
+    <circle cx="16" cy="16" r="13" fill="url(#travelGrad)" />
+    <circle cx="16" cy="16" r="8" stroke="#FFFFFF" strokeWidth="1.2" fill="none" />
+    <path d="M16 8v16M8 16h16M11.5 10.5a11 11 0 000 11M20.5 10.5a11 11 0 010 11" stroke="#FFFFFF" strokeWidth="1" fill="none" />
+  </svg>
+);
+
+const NatureSpaceIcon = () => (
+  <svg className="w-7 h-7 shrink-0" viewBox="0 0 32 32" fill="none">
+    <defs>
+      <linearGradient id="natureGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stopColor="#10ac84" />
+        <stop offset="100%" stopColor="#01a3a4" />
+      </linearGradient>
+    </defs>
+    <circle cx="16" cy="16" r="13" fill="url(#natureGrad)" />
+    <circle cx="16" cy="15" r="5" fill="#FFFFFF" />
+    <path d="M9 18c3-1.5 7.5-3.5 12-3.5s5 1 5.5 1.8-3 3-8.5 3-7-.5-9-1.3z" stroke="#FFE66D" strokeWidth="1.5" fill="none" />
+    <circle cx="12" cy="10" r="0.8" fill="#FFE66D" />
+    <circle cx="21" cy="20" r="0.6" fill="#FFFFFF" />
+  </svg>
+);
+
+const getBookCategory = (bookId: string): 'horror_mystery' | 'kids_fables' | 'classics_adventure' | 'daily_conversations' | 'sci_fi' | 'detective' | 'history' | 'mythology' | 'travel_culture' | 'nature_space' => {
   const horrorIds = [
     'sleepy_hollow', 'dr_jekyll_mr_hyde', 'invisible_man', 'crime_punishment', 'frankenstein', 'dracula', 'war_of_worlds'
   ];
@@ -216,6 +261,15 @@ const getBookCategory = (bookId: string): 'horror_mystery' | 'kids_fables' | 'cl
   ];
 
   const lowerId = bookId.toLowerCase();
+  if (lowerId.startsWith('mythology_') || lowerId.includes('mythology_')) {
+    return 'mythology';
+  }
+  if (lowerId.startsWith('travel_') || lowerId.includes('travel_')) {
+    return 'travel_culture';
+  }
+  if (lowerId.startsWith('nature_') || lowerId.includes('nature_')) {
+    return 'nature_space';
+  }
   if (lowerId.startsWith('daily_') || lowerId.includes('daily_')) {
     return 'daily_conversations';
   }
@@ -250,6 +304,11 @@ interface LibraryTabProps {
   onRemoveFromReading?: (bookId: string) => void;
   focusedCategory: string | null;
   setFocusedCategory: (category: string | null) => void;
+  nativeLanguage: LanguageCode;
+  userAvatar: string;
+  userName: string;
+  onUpdateLanguage: (lang: LanguageCode) => void;
+  onTabChange?: (tab: string) => void;
 }
 
 export default function LibraryTab({
@@ -265,6 +324,11 @@ export default function LibraryTab({
   onRemoveFromReading,
   focusedCategory,
   setFocusedCategory,
+  nativeLanguage,
+  userAvatar,
+  userName,
+  onUpdateLanguage,
+  onTabChange,
 }: LibraryTabProps) {
   const [selectedLevel, setSelectedLevel] = useState<string>('All');
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
@@ -352,31 +416,25 @@ export default function LibraryTab({
   const libraryCountLabel = useMemo(() => {
     const count = filteredBooks.length;
     if (selectedCategory === 'All') {
-      return `Toplam ${count} Hikaye`;
+      return t('library_total_stories_all', nativeLanguage).replace('{count}', String(count));
     }
-    if (selectedCategory === 'horror_mystery') {
-      return `Toplam ${count} Korku ve Gizem Hikayesi`;
-    }
-    if (selectedCategory === 'kids_fables') {
-      return `Toplam ${count} Masal ve Çocuk Hikayesi`;
-    }
-    if (selectedCategory === 'classics_adventure') {
-      return `Toplam ${count} Dünya Klasiği`;
-    }
-    if (selectedCategory === 'daily_conversations') {
-      return `Toplam ${count} Günlük Yaşam Öyküsü`;
-    }
-    if (selectedCategory === 'sci_fi') {
-      return `Toplam ${count} Bilim Kurgu Öyküsü`;
-    }
-    if (selectedCategory === 'detective') {
-      return `Toplam ${count} Polisiye & Gizem Hikayesi`;
-    }
-    if (selectedCategory === 'history') {
-      return `Toplam ${count} Tarih & Efsane Hikayesi`;
-    }
-    return `Toplam ${count} Eser`;
-  }, [filteredBooks.length, selectedCategory]);
+    let catKey = '';
+    if (selectedCategory === 'horror_mystery') catKey = 'cat_horror';
+    else if (selectedCategory === 'kids_fables') catKey = 'cat_kids';
+    else if (selectedCategory === 'classics_adventure') catKey = 'cat_classics';
+    else if (selectedCategory === 'daily_conversations') catKey = 'cat_daily';
+    else if (selectedCategory === 'sci_fi') catKey = 'cat_scifi';
+    else if (selectedCategory === 'detective') catKey = 'cat_detective';
+    else if (selectedCategory === 'history') catKey = 'cat_history';
+    else if (selectedCategory === 'mythology') catKey = 'cat_mythology';
+    else if (selectedCategory === 'travel_culture') catKey = 'cat_travel';
+    else if (selectedCategory === 'nature_space') catKey = 'cat_nature';
+
+    const catName = catKey ? t(catKey, nativeLanguage) : selectedCategory;
+    return t('library_total_stories_category', nativeLanguage)
+      .replace('{count}', String(count))
+      .replace('{category}', catName);
+  }, [filteredBooks.length, selectedCategory, nativeLanguage]);
 
 
   // Calculate unique words read across all books based on progress (currentPage index)
@@ -482,13 +540,13 @@ export default function LibraryTab({
               onToggleFavorite(book.id);
             }}
             className="absolute top-2 left-2 p-1.5 bg-black/45 backdrop-blur-md hover:bg-black/60 text-[#F59E0B] rounded-xl border border-white/20 transition-all cursor-pointer shadow-sm scale-95 active:scale-90"
-            title={book.isFavorited ? 'Favorilerden Çıkar' : 'Favorilere Ekle'}
+            title={book.isFavorited ? t('fav_remove_tooltip', nativeLanguage) : t('fav_add_tooltip', nativeLanguage)}
           >
             <Star className={`w-3.5 h-3.5 ${book.isFavorited ? 'fill-[#F59E0B]' : ''}`} />
           </button>
           {book.percentageCompleted === 100 && (
             <div className="absolute inset-x-0 bottom-0 bg-[#4ECDC4] text-[#2D3436] py-1 text-center font-bold text-[10px] tracking-wider flex items-center justify-center gap-1 shadow-sm">
-              <span>TAMAMLANDI</span>
+              <span>{t('completed_status', nativeLanguage)}</span>
             </div>
           )}
         </div>
@@ -523,21 +581,24 @@ export default function LibraryTab({
               }`}
             >
               <ArrowLeft className="w-4 h-4" />
-              <span>Kitaplığa Geri Dön</span>
+              <span>{t('back_to_library', nativeLanguage)}</span>
             </button>
             
             {/* Category header card with nice aesthetic gradient */}
             {(() => {
               const catData = [
-                { id: 'All', name: 'Tüm Hikayeler', desc: 'Kütüphanedeki tüm eserleri tek bir çatı altında keşfedin.', gradient: 'from-[#FF6B6B] to-[#FFE66D]', text: 'text-white' },
-                { id: 'classics_adventure', name: 'Dünya Klasikleri', desc: 'Klasik edebiyatın ölümsüz karakterleriyle dolu macera ve dram dünyası.', gradient: 'from-[#FF7F50] to-[#FF9F43]', text: 'text-white' },
-                { id: 'kids_fables', name: 'Masallar & Çocuk', desc: 'Çocuk masalları ve her yaştan dil öğrenenler için eğitici, sihirli fabllar.', gradient: 'from-[#4ECDC4] to-[#55EFC4]', text: 'text-slate-900' },
-                { id: 'horror_mystery', name: 'Korku & Gizem', desc: 'Karanlık ormanlar, gizemli şatolar ve merak uyandıran heyecan dolu öyküler.', gradient: 'from-[#a29bfe] to-[#74b9ff]', text: 'text-white' },
-                { id: 'daily_conversations', name: 'Günlük Yaşam & Diyaloglar', desc: 'Gerçek yaşam senaryolarına dayalı pratik İngilizce diyaloglar ve kısa günlük anlatılar.', gradient: 'from-[#45AAF2] to-[#4B7BEC]', text: 'text-white' },
-                { id: 'sci_fi', name: 'Bilim Kurgu', desc: 'Geleceğin teknolojileri, uzay seyahatleri, robotlar ve alternatif evrenler üzerine sürükleyici öyküler.', gradient: 'from-[#00cec9] to-[#0984e3]', text: 'text-white' },
-                { id: 'detective', name: 'Polisiye & Gizem', desc: 'Esrarengiz ipuçları, dahi dedektifler ve gizemli olayların çözüldüğü sürükleyici polisiye öyküler.', gradient: 'from-[#2c3e50] to-[#2980b9]', text: 'text-white' },
-                { id: 'history', name: 'Tarih & Efsaneler', desc: 'Tarihe yön veren olaylar, antik imparatorluklar ve dilden dile aktarılan efsanevi öyküler.', gradient: 'from-[#b29f70] to-[#594a2b]', text: 'text-white' }
-              ].find(c => c.id === focusedCategory) || { id: 'All', name: 'Tüm Hikayeler', desc: 'Kütüphanedeki tüm eserler.', gradient: 'from-[#FF6B6B] to-[#FFE66D]', text: 'text-white' };
+                { id: 'All', name: t('cat_all', nativeLanguage), desc: t('cat_all_desc', nativeLanguage), gradient: 'from-[#FF6B6B] to-[#FFE66D]', text: 'text-white' },
+                { id: 'classics_adventure', name: t('cat_classics', nativeLanguage), desc: t('cat_classics_desc', nativeLanguage), gradient: 'from-[#FF7F50] to-[#FF9F43]', text: 'text-white' },
+                { id: 'kids_fables', name: t('cat_kids', nativeLanguage), desc: t('cat_kids_desc', nativeLanguage), gradient: 'from-[#4ECDC4] to-[#55EFC4]', text: 'text-slate-900' },
+                { id: 'horror_mystery', name: t('cat_horror', nativeLanguage), desc: t('cat_horror_desc', nativeLanguage), gradient: 'from-[#a29bfe] to-[#74b9ff]', text: 'text-white' },
+                { id: 'daily_conversations', name: t('cat_daily', nativeLanguage), desc: t('cat_daily_desc', nativeLanguage), gradient: 'from-[#45AAF2] to-[#4B7BEC]', text: 'text-white' },
+                { id: 'sci_fi', name: t('cat_scifi', nativeLanguage), desc: t('cat_scifi_desc', nativeLanguage), gradient: 'from-[#00cec9] to-[#0984e3]', text: 'text-white' },
+                { id: 'detective', name: t('cat_detective', nativeLanguage), desc: t('cat_detective_desc', nativeLanguage), gradient: 'from-[#2c3e50] to-[#2980b9]', text: 'text-white' },
+                { id: 'history', name: t('cat_history', nativeLanguage), desc: t('cat_history_desc', nativeLanguage), gradient: 'from-[#b29f70] to-[#594a2b]', text: 'text-white' },
+                { id: 'mythology', name: t('cat_mythology', nativeLanguage), desc: t('cat_mythology_desc', nativeLanguage), gradient: 'from-[#FFE66D] to-[#FF9F43]', text: 'text-slate-900' },
+                { id: 'travel_culture', name: t('cat_travel', nativeLanguage), desc: t('cat_travel_desc', nativeLanguage), gradient: 'from-[#FF6B6B] to-[#FF8E53]', text: 'text-white' },
+                { id: 'nature_space', name: t('cat_nature', nativeLanguage), desc: t('cat_nature_desc', nativeLanguage), gradient: 'from-[#10ac84] to-[#01a3a4]', text: 'text-white' }
+              ].find(c => c.id === focusedCategory) || { id: 'All', name: t('cat_all', nativeLanguage), desc: t('cat_all_desc', nativeLanguage), gradient: 'from-[#FF6B6B] to-[#FFE66D]', text: 'text-white' };
               
               return (
                 <div className={`p-5 rounded-3xl bg-gradient-to-tr ${catData.gradient} ${catData.text} shadow-md`}>
@@ -553,12 +614,12 @@ export default function LibraryTab({
             <span className={`text-[10px] font-bold uppercase tracking-wider block px-1 ${
               isDarkMode ? 'text-gray-400' : 'text-gray-455'
             }`}>
-              Zorluk Seviyesi
+              {t('difficulty_label', nativeLanguage)}
             </span>
             <div className="flex flex-wrap gap-2">
               {['All', 'A1', 'A2', 'B1', 'B2', 'C1'].map((levelCode) => {
                 const isSelected = selectedLevel === levelCode;
-                const lvl = levelCode === 'All' ? 'Tüm Seviyeler' : `${levelCode} Seviyesi`;
+                const lvl = levelCode === 'All' ? t('all_levels', nativeLanguage) : t('dict_level_label', nativeLanguage).replace('{level}', levelCode);
                 return (
                   <button
                     key={levelCode}
@@ -604,20 +665,82 @@ export default function LibraryTab({
             ) : (
               <div className="text-center py-12 border-2 border-dashed border-gray-400/20 rounded-[28px]">
                 <span role="img" aria-label="empty" className="text-3xl block mb-2">📚</span>
-                <p className="text-xs text-gray-400 font-bold font-headline-lg">Bu filtre kombinasyonunda kitap bulunamadı.</p>
+                <p className="text-xs text-gray-400 font-bold font-headline-lg">{t('no_books_found_filter', nativeLanguage)}</p>
               </div>
             );
           })()}
         </div>
       ) : (
         <>
+          {/* User Profile Welcome & Language quick-settings card */}
+          <div className={`rounded-3xl p-5 mb-8 border flex items-center justify-between gap-4 transition-all duration-300 ${
+            isDarkMode 
+              ? 'bg-[#1A1A1E] border-[#2A2A30] shadow-[0_12px_24px_rgba(0,0,0,0.25)]' 
+              : 'bg-white border-[#FFE66D] shadow-[0_12px_24px_-10px_rgba(255,107,107,0.05)]'
+          }`}>
+            <div className="flex items-center gap-4 text-left">
+              {/* Profile Picture & Language Switcher Pill */}
+              <div className="flex flex-col items-center gap-1.5 shrink-0">
+                <div 
+                  onClick={() => onTabChange && onTabChange('profile')}
+                  className="w-14 h-14 rounded-full overflow-hidden border-3 border-[#FFE66D] cursor-pointer hover:scale-105 transition-transform shadow-xs"
+                  title="Profilime Git"
+                >
+                  <img
+                    src={userAvatar || 'https://images.unsplash.com/photo-1628157582853-a796fa650a6a?w=150&auto=format&fit=crop&q=80'}
+                    alt={getLocalizedUsername(userName, nativeLanguage) || 'User'}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                {/* Language Switcher Pill */}
+                <div className="relative">
+                  <select
+                    value={nativeLanguage}
+                    onChange={(e) => onUpdateLanguage(e.target.value as LanguageCode)}
+                    className={`px-1.5 py-0.5 text-[10px] font-extrabold rounded-full border appearance-none cursor-pointer text-center focus:outline-none transition-all ${
+                      isDarkMode 
+                        ? 'bg-[#1E1E22] border-[#2A2A30] text-[#FFE66D] hover:border-[#FF6B6B]/60' 
+                        : 'bg-white border-[#FFE66D]/70 text-[#FF6B6B] hover:border-[#FF6B6B]/60 shadow-3xs'
+                    }`}
+                    style={{
+                      paddingRight: '12px',
+                      paddingLeft: '6px',
+                      backgroundImage: `url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='${isDarkMode ? '%23ffe66d' : '%23ff6b6b'}' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e")`,
+                      backgroundRepeat: 'no-repeat',
+                      backgroundPosition: 'right 3px center',
+                      backgroundSize: '8px',
+                    }}
+                  >
+                    {SUPPORTED_LANGUAGES.map((lang) => (
+                      <option key={lang.code} value={lang.code}>
+                        {lang.flag} {lang.code.toUpperCase()}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              </div>
+
+              {/* Welcome text */}
+              <div className="text-left">
+                <h2 className={`font-headline-lg text-base font-black leading-tight ${
+                  isDarkMode ? 'text-white' : 'text-[#2D3436]'
+                }`}>
+                  {t('welcome_back', nativeLanguage)} {getLocalizedUsername(userName, nativeLanguage) || t('default_reader_name', nativeLanguage)}!
+                </h2>
+                <p className={`text-[11px] mt-0.5 font-semibold ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
+                  {t('ready_to_read', nativeLanguage)}
+                </p>
+              </div>
+            </div>
+          </div>
+
           {/* Section: Currently Reading */}
       {currentlyReading && (
         <section className="mb-10">
           <h2 className={`font-headline-lg text-lg font-bold mb-4 tracking-tight transition-colors ${
             isDarkMode ? 'text-[#E6E6E6]' : 'text-[#2D3436]'
           }`}>
-            Şu Anda Okunan
+            {t('currently_reading', nativeLanguage)}
           </h2>
           <motion.div
             initial={{ opacity: 0, y: 15 }}
@@ -679,11 +802,11 @@ export default function LibraryTab({
                 <div className="mt-2">
                   <div className="flex justify-between items-center text-xs mb-1.5">
                     <span className="font-bold text-[#4ECDC4]">
-                      %{currentlyReading.percentageCompleted} tamamlandı
+                      {t('percentage_completed', nativeLanguage).replace('{percent}', String(currentlyReading.percentageCompleted))}
                     </span>
                     <span className={`italic ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
                       {currentlyReading.percentageCompleted === 100 
-                        ? 'Bitirildi' 
+                        ? t('completed_status', nativeLanguage) 
                         : `Sayfa ${currentlyReading.currentPage || 1} / ${currentlyReading.totalPages || 0}`}
                     </span>
                   </div>
@@ -705,7 +828,7 @@ export default function LibraryTab({
                   }}
                   className="flex-grow sm:flex-grow-0 px-6 py-2.5 bg-[#FF6B6B] text-white rounded-xl text-xs font-bold hover:bg-[#e05a5a] transition-all duration-200 active:scale-95 flex items-center justify-center gap-2 shadow-md shadow-[#FF6B6B]/20 cursor-pointer font-headline-lg"
                 >
-                  <span>Devam Et</span>
+                  <span>{t('btn_continue', nativeLanguage)}</span>
                   <ArrowRight className="w-4 h-4" />
                 </button>
                 {onRemoveFromReading && (
@@ -719,7 +842,7 @@ export default function LibraryTab({
                         ? 'border-gray-800 text-gray-400 hover:bg-gray-850 hover:text-red-400 bg-[#121214]'
                         : 'border-gray-200 text-gray-500 hover:bg-gray-100 hover:text-red-500 bg-white'
                     }`}
-                    title="Okunanlar listesinden çıkar"
+                    title={t('library_remove_reading_list', nativeLanguage)}
                   >
                     <Trash2 className="w-4 h-4" />
                   </button>
@@ -732,7 +855,7 @@ export default function LibraryTab({
           {secondaryCurrentlyReading.length > 0 && (
             <div className="mt-8">
               <h3 className={`text-[10px] font-extrabold uppercase tracking-widest mb-3 ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-                Diğer Okunan Kitaplar ({secondaryCurrentlyReading.length})
+                {t('library_other_reading_books', nativeLanguage).replace('{count}', String(secondaryCurrentlyReading.length))}
               </h3>
               <div className="grid grid-cols-3 gap-3">
                 {secondaryCurrentlyReading.map((book, idx) => (
@@ -775,7 +898,7 @@ export default function LibraryTab({
                         <button
                           onClick={(e) => { e.stopPropagation(); setConfirmRemoveBookId(book.id); }}
                           className="absolute top-1 left-1 bg-black/60 backdrop-blur-xs rounded-full p-1 text-white hover:bg-red-500/80 transition-colors"
-                          title="Okunanlar listesinden çıkar"
+                          title={t('remove_from_reading_tooltip', nativeLanguage)}
                         >
                           <svg xmlns="http://www.w3.org/2000/svg" className="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
                         </button>
@@ -806,7 +929,7 @@ export default function LibraryTab({
                 isDarkMode ? 'bg-[#1A1A1E] text-white' : 'bg-white text-gray-800'
               }`}>
                 <p className="text-sm font-semibold text-center mb-4 leading-relaxed">
-                  Bu kitabı okunanlar listenizden çıkarmak istediğinize emin misiniz?
+                  {t('confirm_remove_book_desc', nativeLanguage)}
                 </p>
                 <div className="flex gap-3">
                   <button
@@ -815,7 +938,7 @@ export default function LibraryTab({
                       isDarkMode ? 'bg-[#2A2A30] text-gray-300 hover:bg-[#343A40]' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                     }`}
                   >
-                    Vazgeç
+                    {t('btn_cancel', nativeLanguage)}
                   </button>
                   <button
                     onClick={() => {
@@ -824,7 +947,7 @@ export default function LibraryTab({
                     }}
                     className="flex-1 py-2.5 rounded-xl text-xs font-bold bg-[#FF6B6B] text-white hover:bg-[#FF5252]"
                   >
-                    Evet, Çıkar
+                    {t('btn_yes_remove', nativeLanguage)}
                   </button>
                 </div>
               </div>
@@ -841,7 +964,7 @@ export default function LibraryTab({
           <div className="relative flex items-center">
             <input
               type="text"
-              placeholder="Öykü veya yazar ara..."
+              placeholder={t('search_placeholder', nativeLanguage)}
               value={searchQuery}
               onFocus={() => setShowSuggestions(true)}
               onBlur={() => {
@@ -872,7 +995,7 @@ export default function LibraryTab({
                   }
                 }}
                 className="absolute right-4 p-1 rounded-full hover:bg-black/10 dark:hover:bg-white/10 cursor-pointer transition-colors"
-                title="Aramayı Temizle"
+                title={t('clear_search_tooltip', nativeLanguage)}
               >
                 <X className={`w-3.5 h-3.5 ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`} />
               </button>
@@ -887,7 +1010,7 @@ export default function LibraryTab({
                 : 'bg-white/95 border-[#FFE66D] text-[#2D3436] shadow-gray-200/80'
             }`}>
               <div className="px-4 pb-2 pt-1 text-[9px] font-extrabold uppercase tracking-wider text-[#FF6B6B]">
-                HIZLI ÖNERİLER
+                {t('library_quick_recommendations', nativeLanguage)}
               </div>
               {suggestions.map((book) => (
                 <button
@@ -923,7 +1046,7 @@ export default function LibraryTab({
           <h2 className={`font-headline-lg text-lg font-bold tracking-tight transition-colors ${
             isDarkMode ? 'text-[#E6E6E6]' : 'text-[#2D3436]'
           }`}>
-            Kitaplığım
+            {t('tab_library', nativeLanguage)}
           </h2>
           <span className={`text-xs font-bold tracking-wider font-headline-lg ${
             isDarkMode ? 'text-gray-400' : 'text-gray-455'
@@ -937,27 +1060,29 @@ export default function LibraryTab({
           <span className={`text-[10px] font-bold uppercase tracking-wider block mb-2 px-1 ${
             isDarkMode ? 'text-gray-400' : 'text-gray-455'
           }`}>
-            Kategoriler (Bölümler)
+            {t('categories_title', nativeLanguage)}
           </span>
           <div className="grid grid-cols-2 gap-2">
             {[
-              { id: 'All', name: 'Tüm Hikayeler', icon: <TumuIcon /> },
-              { id: 'classics_adventure', name: 'Dünya Klasikleri', icon: <CompassIcon /> },
-              { id: 'kids_fables', name: 'Masallar & Çocuk', icon: <WandIcon /> },
-              { id: 'horror_mystery', name: 'Korku & Gizem', icon: <SpookyIcon /> },
-              { id: 'daily_conversations', name: 'Günlük Yaşam & Diyaloglar', icon: <SpeechIcon /> },
-              { id: 'sci_fi', name: 'Bilim Kurgu', icon: <SciFiIcon /> },
-              { id: 'detective', name: 'Polisiye & Gizem', icon: <DetectiveIcon /> },
-              { id: 'history', name: 'Tarih & Efsaneler', icon: <HistoryIcon /> }
+              { id: 'All', name: t('cat_all', nativeLanguage), icon: <TumuIcon /> },
+              { id: 'classics_adventure', name: t('cat_classics', nativeLanguage), icon: <CompassIcon /> },
+              { id: 'kids_fables', name: t('cat_kids', nativeLanguage), icon: <WandIcon /> },
+              { id: 'horror_mystery', name: t('cat_horror', nativeLanguage), icon: <SpookyIcon /> },
+              { id: 'daily_conversations', name: t('cat_daily', nativeLanguage), icon: <SpeechIcon /> },
+              { id: 'sci_fi', name: t('cat_scifi', nativeLanguage), icon: <SciFiIcon /> },
+              { id: 'detective', name: t('cat_detective', nativeLanguage), icon: <DetectiveIcon /> },
+              { id: 'history', name: t('cat_history', nativeLanguage), icon: <HistoryIcon /> },
+              { id: 'mythology', name: t('cat_mythology', nativeLanguage), icon: <MythologyIcon /> },
+              { id: 'travel_culture', name: t('cat_travel', nativeLanguage), icon: <TravelIcon /> },
+              { id: 'nature_space', name: t('cat_nature', nativeLanguage), icon: <NatureSpaceIcon /> }
             ].map((cat) => {
               const isSelected = selectedCategory === cat.id;
               const isAll = cat.id === 'All';
               return (
                 <button
                   key={cat.id}
-                  onClick={() => setSelectedCategory(cat.id)}
+                  onClick={() => handleCategoryTap(cat.id)}
                   onDoubleClick={() => setFocusedCategory(cat.id)}
-                  onTouchStart={() => handleCategoryTap(cat.id)}
                   className={`p-2.5 rounded-2xl border text-left transition-all duration-205 cursor-pointer select-none flex items-center gap-3 ${
                     isAll ? 'col-span-2' : ''
                   } ${
@@ -969,7 +1094,7 @@ export default function LibraryTab({
                         ? 'bg-[#1A1A1E] border-[#2A2A30] text-gray-300 hover:border-gray-700'
                         : 'bg-white border-gray-200 text-gray-700 hover:border-gray-300 shadow-3xs'
                   }`}
-                  title={`${cat.name} (Çift tıklayarak sayfasına gidin)`}
+                  title={`${cat.name} ${t('library_double_click_category', nativeLanguage)}`}
                 >
                   <div className={`w-9 h-9 rounded-xl flex items-center justify-center border shrink-0 transition-all ${
                     isSelected 
@@ -1001,16 +1126,15 @@ export default function LibraryTab({
           <span className={`text-[10px] font-bold uppercase tracking-wider block mb-2 px-1 ${
             isDarkMode ? 'text-gray-400' : 'text-gray-455'
           }`}>
-            Zorluk Seviyeleri
+            {t('difficulty_label', nativeLanguage)}
           </span>
           <div className="flex gap-1.5 overflow-x-auto pb-2 scrollbar-none scroll-smooth">
-            {['Tümü', 'A1', 'A2', 'B1', 'B2', 'C1'].map((lvl) => {
-              const isSelected = lvl === 'Tümü' ? selectedLevel === 'All' : selectedLevel === lvl;
-              const levelCode = lvl === 'Tümü' ? 'All' : lvl;
+            {['All', 'A1', 'A2', 'B1', 'B2', 'C1'].map((levelCode) => {
+              const isSelected = selectedLevel === levelCode;
               
               return (
                 <button
-                  key={lvl}
+                  key={levelCode}
                   onClick={() => setSelectedLevel(levelCode)}
                   className={`px-4 py-2 rounded-xl text-xs font-bold transition-all duration-200 cursor-pointer border select-none ${
                     isSelected
@@ -1028,7 +1152,7 @@ export default function LibraryTab({
                     boxShadow: `0 4px 12px ${hexToRgba(getLevelColor(levelCode), 0.25)}`
                   } : undefined}
                 >
-                  {lvl}
+                  {levelCode === 'All' ? t('filter_all_levels', nativeLanguage) : levelCode}
                 </button>
               );
             })}
@@ -1043,7 +1167,7 @@ export default function LibraryTab({
         ) : (
           <div className="text-center py-12 border-2 border-dashed border-gray-400/20 rounded-[28px]">
             <span role="img" aria-label="empty" className="text-3xl block mb-2">📚</span>
-            <p className="text-xs text-gray-400 font-bold font-headline-lg">Bu filtre kombinasyonunda kitap bulunamadı.</p>
+            <p className="text-xs text-gray-400 font-bold font-headline-lg">{t('no_books_found_filter', nativeLanguage)}</p>
           </div>
         )}
       </section>
@@ -1059,7 +1183,7 @@ export default function LibraryTab({
         }`}>
           <BookMarked className="w-6 h-6 mb-2.5 text-[#FF6B6B]" />
           <p className={`text-xs font-bold tracking-wider font-headline-lg ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-            OKUNAN KELİME
+            {t('stats_words_read', nativeLanguage)}
           </p>
           <h5 className={`text-2xl font-bold font-headline-lg tracking-tight mt-0.5 transition-colors ${
             isDarkMode ? 'text-white' : 'text-[#2D3436]'
@@ -1075,12 +1199,12 @@ export default function LibraryTab({
         }`}>
           <Timer className="w-6 h-6 mb-2.5 text-[#4ECDC4]" />
           <p className={`text-xs font-bold tracking-wider font-headline-lg ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-            OKUMA SÜRESİ
+            {t('stats_reading_time', nativeLanguage)}
           </p>
           <h5 className={`text-2xl font-bold font-headline-lg tracking-tight mt-0.5 transition-colors ${
             isDarkMode ? 'text-white' : 'text-[#2D3436]'
           }`}>
-            {totalReadHours > 0 ? `${totalReadHours} sa ` : ''}{remainingMins} dk
+            {totalReadHours > 0 ? `${totalReadHours} ${t('unit_hours', nativeLanguage)} ` : ''}{remainingMins} {t('unit_minutes', nativeLanguage)}
           </h5>
         </div>
       </section>
