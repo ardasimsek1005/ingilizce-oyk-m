@@ -899,6 +899,7 @@ RULES FOR MAXIMUM ${targetLangName.toUpperCase()} COHERENCE:
         record.ipAddress = clientIp;
         record.updatedAt = new Date().toISOString();
         saveUsersData();
+        console.log(`[Linguist Auth] Otomatik giriş başarılı: ${record.username || record.data?.userName || "Okur"} (IP: ${clientIp})`);
 
         return res.json({
           success: true,
@@ -949,6 +950,7 @@ RULES FOR MAXIMUM ${targetLangName.toUpperCase()} COHERENCE:
         };
 
         saveUsersData();
+        console.log(`[Linguist Auth] Yeni misafir kullanıcı oluşturuldu: ${guestName} (IP: ${clientIp})`);
 
         return res.json({
           success: true,
@@ -1600,6 +1602,7 @@ RULES FOR MAXIMUM ${targetLangName.toUpperCase()} COHERENCE:
 
       userRecord.data = data;
       userRecord.updatedAt = new Date().toISOString();
+      console.log(`[Linguist Sync] İlerleme başarıyla kaydedildi: ${userRecord.username || cleanEmail}`);
     } else {
       // If user does not exist at all, we require them to go through /api/auth first
       return res.status(401).json({ error: "Öncelikle kayıt olmanız gerekmektedir. ⚠️" });
@@ -1632,6 +1635,7 @@ RULES FOR MAXIMUM ${targetLangName.toUpperCase()} COHERENCE:
       return res.status(401).json({ error: "Oturumunuz geçersiz veya sonlandırılmış. Lütfen tekrar giriş yapın. ⚠️" });
     }
     
+    console.log(`[Linguist Sync] İlerleme başarıyla çekildi: ${userRecord.username || cleanEmail}`);
     return res.json({ found: true, data: userRecord.data });
   });
 
@@ -1672,6 +1676,7 @@ RULES FOR MAXIMUM ${targetLangName.toUpperCase()} COHERENCE:
             updatedAt: new Date().toISOString()
           };
           saveUsersData();
+          console.log(`[Linguist Auth] Yeni harici hesap oluşturuldu (Google/FB): ${cleanEmail}`);
           
           sendLoginNotificationEmail(cleanEmail, name || cleanEmail.split("@")[0], provider || "google");
           
@@ -1688,6 +1693,7 @@ RULES FOR MAXIMUM ${targetLangName.toUpperCase()} COHERENCE:
           }
           userRecord.updatedAt = new Date().toISOString();
           saveUsersData();
+          console.log(`[Linguist Auth] Harici giriş başarılı: ${cleanEmail}`);
           
           sendLoginNotificationEmail(cleanEmail, name || cleanEmail.split("@")[0], provider || "google");
           
@@ -1712,6 +1718,7 @@ RULES FOR MAXIMUM ${targetLangName.toUpperCase()} COHERENCE:
           updatedAt: new Date().toISOString()
         };
         saveUsersData();
+        console.log(`[Linguist Auth] Yeni e-posta hesabı oluşturuldu: ${cleanEmail}`);
         
         sendLoginNotificationEmail(cleanEmail, name || cleanEmail.split("@")[0], provider || "email");
         
@@ -1751,6 +1758,7 @@ RULES FOR MAXIMUM ${targetLangName.toUpperCase()} COHERENCE:
         }
         userRecord.updatedAt = new Date().toISOString();
         saveUsersData();
+        console.log(`[Linguist Auth] E-posta/Şifre ile giriş başarılı: ${cleanEmail}`);
 
         sendLoginNotificationEmail(cleanEmail, name || cleanEmail.split("@")[0], provider || "email");
 
