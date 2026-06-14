@@ -108,7 +108,7 @@ export default function SplashScreen({ nativeLanguage }: SplashScreenProps) {
         <div className="relative">
           <div className="absolute inset-0 bg-[#ffb866]/20 blur-3xl rounded-full scale-150 animate-pulse" />
           <img 
-            alt="İngilizce Öyküm App Icon" 
+            alt={nativeLanguage === 'tr' ? "İngilizce Öyküm App Icon" : "My English Story App Icon"} 
             className="w-32 h-32 rounded-[2rem] shadow-2xl relative z-20 border border-white/10 object-cover" 
             src="/icon-512.png"
             onError={(e) => {
@@ -120,10 +120,10 @@ export default function SplashScreen({ nativeLanguage }: SplashScreenProps) {
         {/* App Name Title */}
         <div className="text-center space-y-2">
           <h1 className="font-headline-lg text-3xl font-black text-[#ffb866] tracking-tight">
-            İngilizce Öyküm
+            {nativeLanguage === 'tr' ? 'İngilizce Öyküm' : 'My English Story'}
           </h1>
-          <p className="text-xs font-semibold text-gray-300 tracking-widest uppercase">
-            {t('splash_subtitle', nativeLanguage)}
+          <p className="text-xs font-semibold text-gray-300 tracking-widest">
+            {t('splash_subtitle', nativeLanguage).toLocaleUpperCase(nativeLanguage === 'tr' ? 'tr-TR' : 'en-US')}
           </p>
         </div>
       </div>

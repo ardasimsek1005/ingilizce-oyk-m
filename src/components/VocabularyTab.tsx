@@ -4,14 +4,18 @@ import { motion, AnimatePresence } from 'motion/react';
 import { VocabularyWord, Book, Paragraph, getLevelColor, hexToRgba } from '../types';
 import { speakNative } from '../services/tts';
 import { OFFLINE_DICTIONARY } from '../dictionary';
+import { GLOBAL_DICTIONARY } from '../data';
 import { EASY_WORDS_1000_SET } from '../common_easy_words';
 import { SUPPORTED_LANGUAGES, LanguageCode, t, translateWithGoogleClient } from '../i18n';
 import pretranslatedStories from '../pretranslated_stories.json';
 
 const getFormattedLevel = (level: string | undefined, lang: LanguageCode): string => {
   if (!level) return '';
-  if (level === 'Özel İsim') {
+  if (level === 'Özel İsim' || level === 'proper' || level === 'Proper Noun') {
     return t('dict_proper_noun_label', lang);
+  }
+  if (level === 'Kelime' || level === 'Word') {
+    return t('dict_word_label', lang);
   }
   const cleanLevel = level.replace(' Seviyesi', '').replace(' Level', '').replace('Seviyesi', '').replace('Level', '').trim();
   return t('dict_level_label', lang).replace('{level}', cleanLevel);
@@ -118,7 +122,7 @@ const getNativeWordTranslation = (wordEn: string, trFallback: string, nativeLang
       const cache = JSON.parse(cacheJSON);
       if (cache[wLower] && cache[wLower].translation) {
         const val = cache[wLower].translation;
-        const isTrLeak = nativeLanguage !== 'tr' && (
+        const isTrLeak = (
           (OFFLINE_DICTIONARY[wLower] && OFFLINE_DICTIONARY[wLower].tr.toLowerCase().trim() === val.toLowerCase().trim()) ||
           (GLOBAL_DICTIONARY[wLower] && GLOBAL_DICTIONARY[wLower].toLowerCase().trim() === val.toLowerCase().trim())
         );
@@ -149,7 +153,7 @@ const getNativeWordTranslation = (wordEn: string, trFallback: string, nativeLang
       const parsed = JSON.parse(cached);
       if (parsed.translation) {
         const val = parsed.translation;
-        const isTrLeak = nativeLanguage !== 'tr' && (
+        const isTrLeak = (
           (OFFLINE_DICTIONARY[wLower] && OFFLINE_DICTIONARY[wLower].tr.toLowerCase().trim() === val.toLowerCase().trim()) ||
           (GLOBAL_DICTIONARY[wLower] && GLOBAL_DICTIONARY[wLower].toLowerCase().trim() === val.toLowerCase().trim())
         );
@@ -308,12 +312,18 @@ function getDynamicSentencesFromBooks(books: Book[], levels: CefrLevel[], native
           if (list.length >= MAX_BOOK_SENTENCES) break;
 
           const sentEn = sentencesEn[idx];
+          const cleanSent = sentEn.trim();
+          
+          // Üç nokta içeren, üç nokta veya eksi işaretiyle başlayan cümleleri es geç (tam cümle olmaları için)
+          if (cleanSent.includes('...') || cleanSent.includes('…') || cleanSent.startsWith('-') || /^[.·…\-\s]/.test(cleanSent) || /^[“"‘'][.·…]/.test(cleanSent)) {
+            continue;
+          }
+
           const sentNative = sentencesNative[idx] || nativeParaText;
-          const wordCount = sentEn.split(/\s+/).length;
-          const isEasy = levels.includes('A1') || levels.includes('A2');
-          const maxWords = isEasy ? 10 : 18;
-          const minWords = isEasy ? 3 : 5;
-          if (wordCount > maxWords || wordCount < minWords) continue;
+          const wordCount = cleanSent.split(/\s+/).filter(Boolean).length;
+          
+          // Cümle uzunluğunu 5 ile 13 kelime arası ile sınırla (maksimum 10-13 kelime)
+          if (wordCount < 5 || wordCount > 13) continue;
 
           const shuffledWords = [...p.words].sort(() => 0.5 - Math.random());
           for (const w of shuffledWords) {
@@ -770,7 +780,7 @@ function SynonymMatchGame({ vocabulary, books, isDarkMode, onBack, usedSynonymWo
           }
 
           // Fallback if API fails
-          return { en: p.en, tr: nativeLanguage === 'tr' ? p.tr : p.en };
+          return { en: p.en, tr: p.en };
         })
       );
 
@@ -910,7 +920,7 @@ function SynonymMatchGame({ vocabulary, books, isDarkMode, onBack, usedSynonymWo
                     </div>
                     <div className="flex items-center gap-1.5">
                       <button 
-                        onClick={() => speakNative(cleanEn)}
+                        onClick={() => speakNative(cleanEn, 'en-US')}
                         className={`p-2 rounded-xl transition-colors ${
                           isDarkMode ? 'hover:bg-[#2A2A30] text-gray-400 hover:text-gray-200' : 'hover:bg-gray-100 text-gray-500 hover:text-gray-700'
                         }`}
@@ -1120,7 +1130,7 @@ function FillInTheBlanksGame({ vocabulary, books, isDarkMode, onBack, usedFillSe
       .then(res => res.json())
       .then(data => {
         if (data && data.translation) {
-          const isTrLeak = nativeLanguage !== 'tr' && (
+          const isTrLeak = (
             (OFFLINE_DICTIONARY[cleanWordLower] && OFFLINE_DICTIONARY[cleanWordLower].tr.toLowerCase().trim() === data.translation.toLowerCase().trim()) ||
             (GLOBAL_DICTIONARY[cleanWordLower] && GLOBAL_DICTIONARY[cleanWordLower].toLowerCase().trim() === data.translation.toLowerCase().trim())
           );
@@ -1206,6 +1216,16 @@ function FillInTheBlanksGame({ vocabulary, books, isDarkMode, onBack, usedFillSe
     // Vocabulary words matching the difficulty level
     vocabulary.forEach(v => {
       if (!v.exampleEn || !v.exampleTr || seen.has(v.word.toLowerCase())) return;
+      
+      const cleanExample = v.exampleEn.trim();
+      // Üç nokta içeren veya eksi işaretiyle başlayan örnek cümleleri es geç
+      if (cleanExample.includes('...') || cleanExample.includes('…') || cleanExample.startsWith('-') || /^[.·…\-\s]/.test(cleanExample) || /^[“"‘'][.·…]/.test(cleanExample)) {
+        return;
+      }
+      
+      const wordCount = cleanExample.split(/\s+/).filter(Boolean).length;
+      if (wordCount < 5 || wordCount > 13) return;
+
       const key = v.word.toLowerCase().trim();
       const isEasy = levels.includes('A1') || levels.includes('A2');
       const dictItem = OFFLINE_DICTIONARY[key];
@@ -1215,15 +1235,23 @@ function FillInTheBlanksGame({ vocabulary, books, isDarkMode, onBack, usedFillSe
       if (!levels.includes(actualLevel)) return;
       const cleanWord = v.word.replace(/[.,/#!$%^&*;:{}=\-_`~()?"''""''\[\]{}<>|\\+]/g, '').trim();
       const regex = new RegExp('\\b' + cleanWord.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&') + '\\b', 'gi');
-      const blanked = v.exampleEn.replace(regex, '___');
-      if (blanked === v.exampleEn || blanked.split(' ').length > 16) return;
+      const blanked = cleanExample.replace(regex, '___');
+      if (blanked === cleanExample) return;
 
       // Same-level distractors from OFFLINE_DICTIONARY for plausible wrong answers
       const distPool = getDistractors(levels, cleanWord);
 
       seen.add(v.word.toLowerCase());
+
+      let trExample = v.exampleTr;
+      if (nativeLanguage === 'tr') {
+        const dictItemWord = OFFLINE_DICTIONARY[v.word.toLowerCase().trim()];
+        const wordTr = dictItemWord ? dictItemWord.tr : v.word;
+        trExample = v.exampleTr.replace(/___/g, wordTr);
+      }
+
       vocabSentences.push({
-        sentence: blanked, sentenceTr: v.exampleTr, answer: v.word,
+        sentence: blanked, sentenceTr: trExample, answer: v.word,
         options: pickRandom([v.word, ...distPool], 4),
       });
     });
@@ -1236,10 +1264,20 @@ function FillInTheBlanksGame({ vocabulary, books, isDarkMode, onBack, usedFillSe
     const combined: FillQuestion[] = [
       ...vocabSentences,
       ...bookSentences,
-      ...staticBank.map(s => ({
-        sentence: s.en, sentenceTr: s.tr, answer: s.word,
-        options: pickRandom([s.word, ...s.distractors], 4),
-      })),
+      ...staticBank.map(s => {
+        let trSentence = s.tr;
+        if (nativeLanguage === 'tr') {
+          const dictItem = OFFLINE_DICTIONARY[s.word.toLowerCase().trim()];
+          const wordTr = dictItem ? dictItem.tr : s.word;
+          trSentence = s.tr.replace(/___/g, wordTr);
+        }
+        return {
+          sentence: s.en,
+          sentenceTr: trSentence,
+          answer: s.word,
+          options: pickRandom([s.word, ...s.distractors], 4),
+        };
+      }),
     ];
 
     // Filter by usedFillSentences
@@ -1303,9 +1341,7 @@ function FillInTheBlanksGame({ vocabulary, books, isDarkMode, onBack, usedFillSe
             }
           }
 
-          if (nativeLanguage !== 'tr') {
-            return { ...q, sentenceTr: cleanSentence };
-          }
+          return { ...q, sentenceTr: cleanSentence };
           return q;
         })
       );
@@ -1408,7 +1444,8 @@ function FillInTheBlanksGame({ vocabulary, books, isDarkMode, onBack, usedFillSe
         </div>
         <div className="flex flex-col gap-3 w-full">
           <PlayAgainButton onClick={() => difficulty && buildGame(difficulty)}
-            gradient="bg-gradient-to-r from-violet-500 to-purple-600 shadow-violet-500/25" />
+            gradient="bg-gradient-to-r from-violet-500 to-purple-600 shadow-violet-500/25"
+            nativeLanguage={nativeLanguage} />
           <button onClick={onBack} className={`w-full py-3 rounded-2xl font-bold text-sm flex items-center justify-center gap-2 transition-all active:scale-95 ${isDarkMode ? 'text-gray-500 hover:text-gray-300' : 'text-gray-400 hover:text-gray-600'}`}>
             <ChevronLeft className="w-4 h-4" /> {t('btn_back', nativeLanguage)}
           </button>
@@ -1709,7 +1746,7 @@ export default function VocabularyTab({ vocabulary, books, onStartQuiz, onStartR
              if (res.ok) {
               const data = await res.json();
               if (data && data.translation) {
-                const isTrLeak = nativeLanguage !== 'tr' && (
+                const isTrLeak = (
                   (OFFLINE_DICTIONARY[cleanW] && OFFLINE_DICTIONARY[cleanW].tr.toLowerCase().trim() === data.translation.toLowerCase().trim()) ||
                   (GLOBAL_DICTIONARY[cleanW] && GLOBAL_DICTIONARY[cleanW].toLowerCase().trim() === data.translation.toLowerCase().trim())
                 );

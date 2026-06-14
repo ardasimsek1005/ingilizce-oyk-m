@@ -3,7 +3,7 @@ services:
     name: ingilizce-oyküm
     runtime: node
     buildCommand: npm install && npm run build
-    startCommand: node dist-server/server.cjs
+    startCommand: node dist/server.cjs
     envVars:
       - key: NODE_ENV
         value: production

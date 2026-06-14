@@ -1,15 +1,16 @@
 import React, { useState, useRef, useEffect, useMemo, memo, useCallback } from 'react';
-import { ArrowLeft, Volume2, Bookmark, BookmarkCheck, Share2, Info, Check, HelpCircle, ChevronRight, BookOpen, Sun, Moon, Heart, Star, X, Loader2, Lock, AlertCircle, RefreshCw, CheckCircle2, Zap } from 'lucide-react';
+import { ArrowLeft, Volume2, Bookmark, BookmarkCheck, Share2, Info, Check, HelpCircle, ChevronRight, BookOpen, Sun, Moon, Heart, Star, X, Loader2, Lock, AlertCircle, RefreshCw, CheckCircle2, Zap, Crown } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Book, Paragraph, VocabularyWord, getLevelColor, hexToRgba } from '../types';
 import { OFFLINE_DICTIONARY } from '../dictionary';
 import { GLOBAL_DICTIONARY } from '../data';
 import { speakNative, speakAudiobookSentence, stopSpeech } from '../services/tts';
-import { SUPPORTED_LANGUAGES, LanguageCode, t, translateWithGoogleClient } from '../i18n';
+import { SUPPORTED_LANGUAGES, LanguageCode, t, translateWithGoogleClient, PLACEHOLDER_STRINGS } from '../i18n';
 import pretranslatedStories from '../pretranslated_stories.json';
 
 interface ReadingViewProps {
   book: Book;
+  backRef?: React.MutableRefObject<(() => boolean) | null>;
   onBack: (percentage?: number, currentPage?: number, totalPages?: number) => void;
   savedWords: VocabularyWord[];
   onSaveWord: (word: string, translation: string, level: string, exampleEn?: string, exampleTr?: string) => void;
@@ -375,8 +376,11 @@ const saveCachedTranslation = (word: string, translation: string, lang: Language
 
 const getFormattedLevel = (level: string | undefined, lang: LanguageCode): string => {
   if (!level) return '';
-  if (level === 'Özel İsim') {
+  if (level === 'Özel İsim' || level === 'proper' || level === 'Proper Noun') {
     return t('dict_proper_noun_label', lang);
+  }
+  if (level === 'Kelime' || level === 'Word') {
+    return t('dict_word_label', lang);
   }
   const cleanLevel = level.replace(' Seviyesi', '').replace(' Level', '').replace('Seviyesi', '').replace('Level', '').trim();
   return t('dict_level_label', lang).replace('{level}', cleanLevel);
@@ -659,6 +663,7 @@ const ParagraphBlock = memo(function ParagraphBlock({
 
 export default function ReadingView({
   book,
+  backRef,
   onBack,
   savedWords,
   onSaveWord,
@@ -685,10 +690,101 @@ export default function ReadingView({
   const [clickedWord, setClickedWord] = useState<{ en: string; tr: string; paragraphId: string; wordIdx: number } | null>(null);
   const [activeSentenceTr, setActiveSentenceTrRaw] = useState<{ paragraphId: string; sentenceIdx: number; textEn: string; textTr: string } | null>(null);
   
+  const [wordLookupsToday, setWordLookupsToday] = useState(0);
+  const [sentenceTransToday, setSentenceTransToday] = useState(0);
+  const [showLimitReachedModal, setShowLimitReachedModal] = useState<'word' | 'sentence' | null>(null);
+
+  const getDailyCounts = useCallback(() => {
+    try {
+      const todayStr = new Date().toLocaleDateString('en-CA'); // YYYY-MM-DD local format
+      const savedDate = localStorage.getItem('linguist_daily_date');
+      if (savedDate !== todayStr) {
+        localStorage.setItem('linguist_daily_date', todayStr);
+        localStorage.setItem('linguist_word_lookups_today', '0');
+        localStorage.setItem('linguist_sentence_trans_today', '0');
+        localStorage.setItem('linguist_today_looked_up_words', JSON.stringify([]));
+        localStorage.setItem('linguist_today_translated_sentences', JSON.stringify([]));
+        return { words: 0, sentences: 0 };
+      }
+      const words = parseInt(localStorage.getItem('linguist_word_lookups_today') || '0', 10);
+      const sentences = parseInt(localStorage.getItem('linguist_sentence_trans_today') || '0', 10);
+      return { words, sentences };
+    } catch (e) {
+      console.error('Failed to get daily counts:', e);
+      return { words: 0, sentences: 0 };
+    }
+  }, []);
+
+  const incrementDailyCount = useCallback((type: 'word' | 'sentence') => {
+    try {
+      const todayStr = new Date().toLocaleDateString('en-CA');
+      const savedDate = localStorage.getItem('linguist_daily_date');
+      if (savedDate !== todayStr) {
+        localStorage.setItem('linguist_daily_date', todayStr);
+        localStorage.setItem('linguist_word_lookups_today', type === 'word' ? '1' : '0');
+        localStorage.setItem('linguist_sentence_trans_today', type === 'sentence' ? '1' : '0');
+        setWordLookupsToday(type === 'word' ? 1 : 0);
+        setSentenceTransToday(type === 'sentence' ? 1 : 0);
+      } else {
+        if (type === 'word') {
+          const words = parseInt(localStorage.getItem('linguist_word_lookups_today') || '0', 10) + 1;
+          localStorage.setItem('linguist_word_lookups_today', String(words));
+          setWordLookupsToday(words);
+        } else {
+          const sentences = parseInt(localStorage.getItem('linguist_sentence_trans_today') || '0', 10) + 1;
+          localStorage.setItem('linguist_sentence_trans_today', String(sentences));
+          setSentenceTransToday(sentences);
+        }
+      }
+    } catch (e) {
+      console.error('Failed to increment daily count:', e);
+    }
+  }, []);
+
+  useEffect(() => {
+    const counts = getDailyCounts();
+    setWordLookupsToday(counts.words);
+    setSentenceTransToday(counts.sentences);
+  }, [getDailyCounts]);
+
   const setActiveSentenceTr = useCallback((val: { paragraphId: string; sentenceIdx: number; textEn: string; textTr: string } | null) => {
     if (!val) {
       setActiveSentenceTrRaw(null);
       return;
+    }
+
+    if (!stats?.isPremium) {
+      const isAlreadyActive = activeSentenceTr && activeSentenceTr.paragraphId === val.paragraphId && activeSentenceTr.sentenceIdx === val.sentenceIdx;
+      const sentenceKey = `${book.id}_${activeChapterIdx}_${val.paragraphId}_${val.sentenceIdx}`;
+      let lookedUpToday = false;
+      try {
+        const sentencesList = JSON.parse(localStorage.getItem('linguist_today_translated_sentences') || '[]');
+        if (sentencesList.includes(sentenceKey)) {
+          lookedUpToday = true;
+        }
+      } catch (e) {
+        console.error(e);
+      }
+
+      if (!isAlreadyActive && !lookedUpToday) {
+        const counts = getDailyCounts();
+        if (counts.sentences >= 15) {
+          setShowLimitReachedModal('sentence');
+          return;
+        }
+        incrementDailyCount('sentence');
+
+        // Add to today's translated sentences list
+        try {
+          const sentencesList = JSON.parse(localStorage.getItem('linguist_today_translated_sentences') || '[]');
+          if (!sentencesList.includes(sentenceKey)) {
+            sentencesList.push(sentenceKey);
+            localStorage.setItem('linguist_today_translated_sentences', JSON.stringify(sentencesList));
+          }
+        } catch (e) {
+          console.error(e);
+        }
+      }
     }
 
     if (nativeLanguage === 'tr') {
@@ -705,7 +801,7 @@ export default function ReadingView({
       // Set textTr to empty string to trigger translate-sentence fetch in useEffect
       setActiveSentenceTrRaw({ ...val, textTr: '' });
     }
-  }, [nativeLanguage, book.id, activeChapterIdx]);
+  }, [nativeLanguage, book.id, activeChapterIdx, stats, activeSentenceTr, getDailyCounts, incrementDailyCount]);
 
   const [isTranslatingSentence, setIsTranslatingSentence] = useState(false);
   const [dynamicParagraphTranslations, setDynamicParagraphTranslations] = useState<Record<string, string>>({});
@@ -868,7 +964,9 @@ export default function ReadingView({
       return () => clearTimeout(timer);
     }
   }, [toastMessage]);
-  const lastTapRef = useRef<{ time: number; sentenceKey: string }>({ time: 0, sentenceKey: '' });
+
+
+  const lastTapRef = useRef<{ time: number; sentenceKey: string; wordIdx?: number }>({ time: 0, sentenceKey: '', wordIdx: -1 });
   const wordClickTimeoutRef = useRef<any>(null);
 
   const handleClearAllOverlays = () => {
@@ -881,7 +979,7 @@ export default function ReadingView({
 
   // Localized Paragraphs memo
   const localizedParagraphs = React.useMemo(() => {
-    return currentChapter.paragraphs.map((p, idx) => {
+    const baseParas = currentChapter.paragraphs.map((p, idx) => {
       if (nativeLanguage === 'tr') {
         return p;
       }
@@ -910,37 +1008,156 @@ export default function ReadingView({
         textTr: ''
       };
     });
+
+    // 1. Flatten all sentences across the entire chapter/paragraphs
+    const allSentences: {
+      en: string;
+      tr: string;
+      originalPara: typeof baseParas[0];
+    }[] = [];
+
+    baseParas.forEach((p) => {
+      const sEn = splitSentencesSafe(p.textEn);
+      const sTr = splitSentencesSafe(p.textTr || p.textEn);
+      
+      sEn.forEach((enSent, sIdx) => {
+        const trSent = sEn.length === sTr.length
+          ? sTr[sIdx]
+          : (sTr.length > 0 
+              ? sTr[Math.min(Math.round(sIdx * (sTr.length - 1) / (sEn.length - 1 || 1)), sTr.length - 1)]
+              : p.textTr || p.textEn);
+        allSentences.push({
+          en: enSent,
+          tr: trSent,
+          originalPara: p
+        });
+      });
+    });
+
+    const totalWords = allSentences.reduce((sum, s) => sum + s.en.split(/\s+/).filter(Boolean).length, 0);
+    const N = Math.max(1, Math.round(totalWords / 125.0));
+
+    // 2. Group sentences into exactly N balanced pages
+    const pagesList: { sentences: typeof allSentences; wordCount: number }[] = [];
+    let currentGroup: typeof allSentences = [];
+    let currentWordCount = 0;
+    let pagesLeft = N;
+    let wordsLeft = totalWords;
+
+    allSentences.forEach((sent) => {
+      currentGroup.push(sent);
+      const sentWords = sent.en.split(/\s+/).filter(Boolean).length;
+      currentWordCount += sentWords;
+      wordsLeft -= sentWords;
+
+      if (pagesLeft > 1) {
+        const target = (wordsLeft + currentWordCount) / pagesLeft;
+        if (currentGroup.length > 0 && currentWordCount >= target) {
+          pagesList.push({
+            sentences: currentGroup,
+            wordCount: currentWordCount
+          });
+          pagesLeft -= 1;
+          currentGroup = [];
+          currentWordCount = 0;
+        }
+      }
+    });
+
+    if (currentGroup.length > 0) {
+      pagesList.push({
+        sentences: currentGroup,
+        wordCount: currentWordCount
+      });
+    }
+
+    // 3. Re-group sentences on each page into paragraph structures to preserve layout & properties
+    const splitParas: typeof baseParas = [];
+    
+    pagesList.forEach((pageItem, pageIdx) => {
+      const groups: { originalPara: typeof baseParas[0]; sentences: typeof allSentences }[] = [];
+      pageItem.sentences.forEach((sent) => {
+        const lastGroup = groups[groups.length - 1];
+        if (lastGroup && lastGroup.originalPara.id === sent.originalPara.id) {
+          lastGroup.sentences.push(sent);
+        } else {
+          groups.push({
+            originalPara: sent.originalPara,
+            sentences: [sent]
+          });
+        }
+      });
+
+      groups.forEach((group, gIdx) => {
+        const textEn = group.sentences.map(s => s.en).join(' ');
+        const textTr = group.sentences.map(s => s.tr).join(' ');
+
+        // Extract vocabulary words present in this sub-paragraph
+        const subWords: { [key: string]: string } = {};
+        const textEnLower = textEn.toLowerCase();
+
+        if (Array.isArray(group.originalPara.words)) {
+          group.originalPara.words.forEach((w) => {
+            if (w && w.en && w.tr) {
+              const cleanW = w.en.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'’“”‘’\[\]{}<>|\\+]/g, "").trim().toLowerCase();
+              if (cleanW && textEnLower.includes(cleanW)) {
+                subWords[w.en] = w.tr;
+              }
+            }
+          });
+        }
+
+        const subWordsArray = Object.keys(subWords).map(k => ({ en: k, tr: subWords[k] }));
+
+        splitParas.push({
+          ...group.originalPara,
+          id: `${group.originalPara.id}_page${pageIdx}_g${gIdx}`,
+          textEn,
+          textTr,
+          words: subWordsArray
+        });
+      });
+    });
+
+    return splitParas;
   }, [currentChapter.paragraphs, book.id, activeChapterIdx, nativeLanguage, dynamicParagraphTranslations]);
 
   // Pages & Navigation States
   const pages = React.useMemo(() => {
     const list: { paragraphIndices: number[]; wordCount: number }[] = [];
-    let currentGroup: number[] = [];
-    let currentWordCount = 0;
-    
+    const pageGroups: { [key: number]: number[] } = {};
+    const pageWordCounts: { [key: number]: number } = {};
+
     localizedParagraphs.forEach((p, idx) => {
-      const wordsCount = p.textEn.split(/\s+/).filter(Boolean).length;
-      
-      if (currentGroup.length > 0 && currentWordCount >= 130) {
-        list.push({
-          paragraphIndices: currentGroup,
-          wordCount: currentWordCount
-        });
-        currentGroup = [idx];
-        currentWordCount = wordsCount;
+      const match = p.id.match(/_page(\d+)_g\d+$/);
+      if (match) {
+        const pageIdx = parseInt(match[1], 10);
+        if (!pageGroups[pageIdx]) {
+          pageGroups[pageIdx] = [];
+          pageWordCounts[pageIdx] = 0;
+        }
+        pageGroups[pageIdx].push(idx);
+        const wordsCount = p.textEn.split(/\s+/).filter(Boolean).length;
+        pageWordCounts[pageIdx] += wordsCount;
       } else {
-        currentGroup.push(idx);
-        currentWordCount += wordsCount;
+        if (!pageGroups[0]) {
+          pageGroups[0] = [];
+          pageWordCounts[0] = 0;
+        }
+        pageGroups[0].push(idx);
+        const wordsCount = p.textEn.split(/\s+/).filter(Boolean).length;
+        pageWordCounts[0] += wordsCount;
       }
     });
-    
-    if (currentGroup.length > 0) {
+
+    const sortedPageKeys = Object.keys(pageGroups).map(Number).sort((a, b) => a - b);
+    sortedPageKeys.forEach((pageIdx) => {
       list.push({
-        paragraphIndices: currentGroup,
-        wordCount: currentWordCount
+        paragraphIndices: pageGroups[pageIdx],
+        wordCount: pageWordCounts[pageIdx]
       });
-    }
-    
+    });
+
     return list;
   }, [localizedParagraphs]);
 
@@ -1019,6 +1236,8 @@ export default function ReadingView({
       }
     }
   }, [book.id, book.isStarted, currentPageIdx, maxUnlockedPageIdx, pages.length, onPageChange, deviceUuid]);
+
+
 
   const handleGoBack = () => {
     if (pages.length > 0) {
@@ -1206,6 +1425,49 @@ export default function ReadingView({
   const [activeQuizCpIndex, setActiveQuizCpIndex] = useState<number | null>(null);
   const [showQuizRoadblockModal, setShowQuizRoadblockModal] = useState(false);
   const [quizCorrectAnswersCount, setQuizCorrectAnswersCount] = useState(0);
+  const [isQuizTranslating, setIsQuizTranslating] = useState(false);
+
+  useEffect(() => {
+    if (backRef) {
+      backRef.current = () => {
+        // 1. If limit warning modal is open, close it
+        if (showLimitReachedModal) {
+          setShowLimitReachedModal(null);
+          return true;
+        }
+        // 2. If dictionary popup is open, close it
+        if (selectedDictWord) {
+          setSelectedDictWord(null);
+          return true;
+        }
+        // 3. If quiz roadblock is open or active quiz is in progress, close it
+        if (showQuizRoadblockModal || activeQuizQuestions !== null) {
+          setShowQuizRoadblockModal(false);
+          setActiveQuizQuestions(null);
+          setActiveQuizCpIndex(null);
+          setActiveQuizQuestionIdx(0);
+          setIsQuizTranslating(false);
+          return true;
+        }
+        // 4. If standard word click popup is open, close it
+        if (clickedWord) {
+          setClickedWord(null);
+          return true;
+        }
+        // 5. If active sentence translation is open, close it
+        if (activeSentenceTr) {
+          setActiveSentenceTr(null);
+          return true;
+        }
+        return false; // Not handled, let parent close the book/view
+      };
+    }
+    return () => {
+      if (backRef) {
+        backRef.current = null;
+      }
+    };
+  }, [selectedDictWord, showQuizRoadblockModal, activeQuizQuestions, clickedWord, activeSentenceTr, backRef, showLimitReachedModal]);
 
   const [quizCorrectStreak, setQuizCorrectStreak] = useState<number>(() => {
     const ns = deviceUuid || 'guest';
@@ -1339,9 +1601,16 @@ export default function ReadingView({
             contextEn = sentencesEn[0];
             contextTr = sentencesTr[0] || p.textTr;
           }
+          
+          if (nativeLanguage === 'en') {
+            const cleanW = cleanWord(w.en).toLowerCase();
+            if (!contextEn || !contextEn.toLowerCase().includes(cleanW)) {
+              contextEn = `This is a very nice ${w.en}.`;
+            }
+          }
 
           let nativeWordTranslation = nativeLanguage === 'tr' ? w.tr : w.en; // Default fallback to English word instead of Turkish
-          if (nativeLanguage !== 'tr') {
+          if (nativeLanguage !== 'tr' && nativeLanguage !== 'en') {
             const offlineBook = pretranslatedStories[book.id as keyof typeof pretranslatedStories];
             if (offlineBook && offlineBook.words && offlineBook.words[w.en as keyof typeof offlineBook.words]) {
               const offlineWord = offlineBook.words[w.en as keyof typeof offlineBook.words];
@@ -1393,11 +1662,18 @@ export default function ReadingView({
               
               const sentencesEn = splitSentencesSafe(p.textEn);
               const sentencesTr = splitSentencesSafe(p.textTr);
-              const contextEn = sentencesEn[0] || '';
+              let contextEn = sentencesEn[0] || '';
               const contextTr = sentencesTr[0] || p.textTr;
+              
+              if (nativeLanguage === 'en') {
+                const cleanW = cleanWord(w.en).toLowerCase();
+                if (!contextEn || !contextEn.toLowerCase().includes(cleanW)) {
+                  contextEn = `This is a very nice ${w.en}.`;
+                }
+              }
 
               let nativeWordTranslation = nativeLanguage === 'tr' ? w.tr : w.en; // Default fallback to English word instead of Turkish
-              if (nativeLanguage !== 'tr') {
+              if (nativeLanguage !== 'tr' && nativeLanguage !== 'en') {
                 const offlineBook = pretranslatedStories[book.id as keyof typeof pretranslatedStories];
                 if (offlineBook && offlineBook.words && offlineBook.words[w.en as keyof typeof offlineBook.words]) {
                   const offlineWord = offlineBook.words[w.en as keyof typeof offlineBook.words];
@@ -1455,9 +1731,11 @@ export default function ReadingView({
     
     return selectedVocab.map((item, qIdx) => {
       // For A1/A2, restrict fill-in-the-blanks to maximum 1 question to make it easier for kids/beginners
-      const isFillBlank = !isA1A2
-        ? (qIdx % 2 === 1 && item.sentenceEn && item.sentenceEn.toLowerCase().includes(cleanWord(item.en).toLowerCase()))
-        : (qIdx === 1 && item.sentenceEn && item.sentenceEn.toLowerCase().includes(cleanWord(item.en).toLowerCase()));
+      const isFillBlank = nativeLanguage === 'en'
+        ? true
+        : (!isA1A2
+          ? (qIdx % 2 === 1 && item.sentenceEn && item.sentenceEn.toLowerCase().includes(cleanWord(item.en).toLowerCase()))
+          : (qIdx === 1 && item.sentenceEn && item.sentenceEn.toLowerCase().includes(cleanWord(item.en).toLowerCase())));
       
       const correctOptionValue = isFillBlank ? item.en : item.tr;
       
@@ -1519,7 +1797,7 @@ export default function ReadingView({
           id: `cp_${pageIdx}_q_${qIdx}`,
           type: 'fill_blank',
           question: questionText,
-          hint: item.sentenceTr,
+          hint: nativeLanguage === 'tr' ? item.sentenceTr : '',
           word: item.en,
           options,
           correctIndex,
@@ -1555,8 +1833,8 @@ export default function ReadingView({
     setActiveQuizCpIndex(pageIdx);
     setQuizCorrectAnswersCount(0);
 
-    // Dynamic background fetch for quiz hints and option translations if not native Turkish
-    if (nativeLanguage !== 'tr' && questions && questions.length > 0) {
+    // Dynamic background fetch for quiz hints and option translations if not native Turkish or English
+    if (nativeLanguage !== 'tr' && nativeLanguage !== 'en' && questions && questions.length > 0) {
       const apiBase = (() => {
         try {
           if (window.location.protocol === 'capacitor:') {
@@ -1565,6 +1843,8 @@ export default function ReadingView({
           return '';
         } catch { return ''; }
       })();
+
+      const translationPromises: Promise<any>[] = [];
 
       questions.forEach((q: any, qIdx: number) => {
         // 1. Fetch hint translation for fill_blank questions
@@ -1581,6 +1861,25 @@ export default function ReadingView({
               return updated;
             });
           } else {
+            // Instantly fetch client-side translation as a fast fallback
+            const p = translateWithGoogleClient(q.sentenceEn, nativeLanguage)
+              .then(fallbackTrans => {
+                if (fallbackTrans) {
+                  setActiveQuizQuestions((prev: any) => {
+                    if (!prev) return null;
+                    const updated = [...prev];
+                    if (updated[qIdx] && (!updated[qIdx].hint || updated[qIdx].hint === '')) {
+                      updated[qIdx].hint = fallbackTrans;
+                    }
+                    return updated;
+                  });
+                  localStorage.setItem(cacheKey, fallbackTrans);
+                }
+              })
+              .catch(err => console.error('Client-side hint translation failed:', err));
+            translationPromises.push(p);
+
+            // Query the backend in parallel
             fetch(`${apiBase}/api/translate-sentence`, {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
@@ -1603,7 +1902,7 @@ export default function ReadingView({
                 });
               }
             })
-            .catch(err => console.error('Checkpoint quiz hint translation fetch error:', err));
+            .catch(err => console.error('Checkpoint quiz hint translation backend error:', err));
           }
         }
 
@@ -1652,6 +1951,37 @@ export default function ReadingView({
                 return updated;
               });
             } else {
+              // Instantly translate using client-side Google Translate to avoid English leaks
+              const p = translateWithGoogleClient(engWord, nativeLanguage)
+                .then(fallbackTr => {
+                  if (fallbackTr) {
+                    setActiveQuizQuestions((prev: any) => {
+                      if (!prev) return null;
+                      const updated = [...prev];
+                      if (updated[qIdx] && updated[qIdx].options) {
+                        const currentVal = updated[qIdx].options[optIdx];
+                        if (currentVal && currentVal.toLowerCase() === engWord.toLowerCase()) {
+                          updated[qIdx].options[optIdx] = fallbackTr;
+                        }
+                      }
+                      return updated;
+                    });
+                    
+                    // Cache the fallback translation
+                    const indCacheKey = `linguist_dict_word_${cleanW}_${nativeLanguage}`;
+                    if (!localStorage.getItem(indCacheKey)) {
+                      localStorage.setItem(indCacheKey, JSON.stringify({
+                        translation: fallbackTr,
+                        notes: '',
+                        level: book.level || 'A1'
+                      }));
+                    }
+                  }
+                })
+                .catch(err => console.error('Client-side option translation fallback failed:', err));
+              translationPromises.push(p);
+
+              // Fetch from backend in parallel
               fetch(`${apiBase}/api/translate-word`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -1679,11 +2009,22 @@ export default function ReadingView({
                   });
                 }
               })
-              .catch(err => console.error('Checkpoint quiz option translation fetch error:', err));
+              .catch(err => console.error('Checkpoint quiz option translation backend error:', err));
             }
           });
         }
       });
+
+      if (translationPromises.length > 0) {
+        setIsQuizTranslating(true);
+        Promise.all(translationPromises)
+          .then(() => setIsQuizTranslating(false))
+          .catch(() => setIsQuizTranslating(false));
+      } else {
+        setIsQuizTranslating(false);
+      }
+    } else {
+      setIsQuizTranslating(false);
     }
   };
 
@@ -1850,8 +2191,10 @@ export default function ReadingView({
       const DOUBLE_PRESS_DELAY = 300; // ms
       const currentKey = `${paragraphId}_${sentenceIdx}`;
 
-      // If it's a double click (or more) or we have a swift consecutive tap on the same sentence
-      const isConsecutiveTap = lastTapRef.current.sentenceKey === currentKey && (now - lastTapRef.current.time) < DOUBLE_PRESS_DELAY;
+      // If it's a double click (or more) or we have a swift consecutive tap on the same word
+      const isConsecutiveTap = lastTapRef.current.sentenceKey === currentKey 
+        && lastTapRef.current.wordIdx === wordIdx 
+        && (now - lastTapRef.current.time) < DOUBLE_PRESS_DELAY;
 
       if (e.detail >= 2 || isConsecutiveTap) {
         if (wordClickTimeoutRef.current) {
@@ -1866,7 +2209,7 @@ export default function ReadingView({
           textEn: sentEn || '',
           textTr: sentTr || ''
         });
-        lastTapRef.current = { time: now, sentenceKey: currentKey };
+        lastTapRef.current = { time: now, sentenceKey: currentKey, wordIdx };
         
         if ('vibrate' in navigator) {
           try {
@@ -1876,7 +2219,7 @@ export default function ReadingView({
         return;
       }
 
-      lastTapRef.current = { time: now, sentenceKey: currentKey };
+      lastTapRef.current = { time: now, sentenceKey: currentKey, wordIdx };
 
       if (wordClickTimeoutRef.current) {
         clearTimeout(wordClickTimeoutRef.current);
@@ -1888,12 +2231,46 @@ export default function ReadingView({
           const cleanW = cleanWord(wordEn);
           if (!cleanW) return; // Ignore clicking on pure symbols/punctuation
 
+          const looksLikePropName = looksLikeProperNoun(wordEn);
+
+          if (!stats?.isPremium && !looksLikePropName) {
+            const isAlreadySelected = selectedDictWord && selectedDictWord.word.toLowerCase() === cleanW.toLowerCase();
+            let lookedUpToday = false;
+            try {
+              const wordsList = JSON.parse(localStorage.getItem('linguist_today_looked_up_words') || '[]');
+              if (wordsList.includes(cleanW.toLowerCase())) {
+                lookedUpToday = true;
+              }
+            } catch (e) {
+              console.error(e);
+            }
+
+            if (!isAlreadySelected && !lookedUpToday) {
+              const counts = getDailyCounts();
+              if (counts.words >= 30) {
+                setShowLimitReachedModal('word');
+                return;
+              }
+              incrementDailyCount('word');
+
+              // Add to today's looked up words list
+              try {
+                const wordsList = JSON.parse(localStorage.getItem('linguist_today_looked_up_words') || '[]');
+                if (!wordsList.includes(cleanW.toLowerCase())) {
+                  wordsList.push(cleanW.toLowerCase());
+                  localStorage.setItem('linguist_today_looked_up_words', JSON.stringify(wordsList));
+                }
+              } catch (e) {
+                console.error(e);
+              }
+            }
+          }
+
           const isPlaceholder = nativeLanguage !== 'tr'
-            || wordTr === 'Sözlük karşılığı yükleniyor...'
             || !wordTr
+            || PLACEHOLDER_STRINGS.has(wordTr.trim())
             || wordTr.toLowerCase().trim() === cleanW.toLowerCase().trim();
 
-          const looksLikePropName = looksLikeProperNoun(wordEn);
           const cleanProp = cleanW.charAt(0).toUpperCase() + cleanW.slice(1);
 
           // Contextual override check
@@ -2122,7 +2499,7 @@ export default function ReadingView({
     } catch (outerErr) {
       console.error("Fatal word click outer handling error:", outerErr);
     }
-  }, [book?.level, book?.id, isAudiobookPlaying, handleStopAudiobook, savedWords, onSaveWord, nativeLanguage, handleShowSentenceTr]);
+  }, [book?.level, book?.id, isAudiobookPlaying, handleStopAudiobook, savedWords, onSaveWord, nativeLanguage, handleShowSentenceTr, stats, selectedDictWord, getDailyCounts, incrementDailyCount]);
 
   // Helpers splitSentencesSafe, parseParagraphText, and cleanWord are declared globally at module scope for static references.
 
@@ -2143,7 +2520,7 @@ export default function ReadingView({
     const DOUBLE_PRESS_DELAY = 300; // ms
     const currentKey = `${paragraphId}_${sentenceIdx}`;
 
-    const isDoubleClick = e.detail >= 2 || (lastTapRef.current.sentenceKey === currentKey && now - lastTapRef.current.time < DOUBLE_PRESS_DELAY);
+    const isDoubleClick = e.detail >= 2 || (lastTapRef.current.sentenceKey === currentKey && lastTapRef.current.wordIdx === -1 && now - lastTapRef.current.time < DOUBLE_PRESS_DELAY);
 
     if (isDoubleClick) {
       e.stopPropagation();
@@ -2166,7 +2543,7 @@ export default function ReadingView({
         } catch (err) {}
       }
     }
-    lastTapRef.current = { time: now, sentenceKey: currentKey };
+    lastTapRef.current = { time: now, sentenceKey: currentKey, wordIdx: -1 };
   }, [isAudiobookPlaying, handleStopAudiobook]);
 
   // Speaks text aloud using native SpeechSynthesis service (fast, female, offline)
@@ -2289,12 +2666,7 @@ export default function ReadingView({
     }
   };
 
-  const isTranslating = !!(selectedDictWord && (
-    selectedDictWord.translation === 'Çeviriliyor...' || 
-    selectedDictWord.translation === 'Sözlük karşılığı yükleniyor...' ||
-    selectedDictWord.translation === t('translating_word', nativeLanguage) ||
-    selectedDictWord.translation === t('dict_loading_placeholder', nativeLanguage)
-  ));
+  const isTranslating = !!(selectedDictWord && PLACEHOLDER_STRINGS.has(selectedDictWord.translation));
 
   return (
     <div 
@@ -2308,12 +2680,8 @@ export default function ReadingView({
       <AnimatePresence>
         {toastMessage && (() => {
           const isWarning = toastMessage.includes('⚠️') || 
-                            toastMessage.toLowerCase().includes('hata') || 
-                            toastMessage.toLowerCase().includes('geçersiz') || 
-                            toastMessage.toLowerCase().includes('yetersiz') ||
-                            toastMessage.toLowerCase().includes('çıkış') ||
-                            toastMessage.toLowerCase().includes('kaldırıldı') ||
-                            toastMessage.toLowerCase().includes('desteklemiyor');
+                            toastMessage.includes('?') || 
+                            /error|fail|invalid|unauthorized|exception|hata|gecersiz|basarisiz|olustu|yetersiz/i.test(toastMessage);
           
           return (
             <div className="fixed inset-0 z-[9999] flex items-center justify-center p-6 pointer-events-none select-none">
@@ -2360,7 +2728,7 @@ export default function ReadingView({
               }`}
             >
               <ArrowLeft className="w-4 h-4 text-[#FF6B6B]" />
-              <span>Geri</span>
+              <span>{t('btn_back', nativeLanguage)}</span>
             </button>
             <div className={`w-[1px] h-5 shrink-0 ${isDarkMode ? 'bg-gray-700' : 'bg-[#FFE66D]'}`} />
             <h1 className={`text-sm font-bold line-clamp-2 tracking-wider font-headline-lg transition-colors flex-1 leading-snug overflow-hidden ${
@@ -2382,7 +2750,7 @@ export default function ReadingView({
                       ? 'bg-[#1A1A1E] border-[#2A2A30] text-gray-400 hover:text-white hover:border-gray-500'
                       : 'bg-white border-gray-250 text-gray-550 hover:text-[#F59E0B] hover:border-gray-300'
                 }`}
-                title={book.isFavorited ? 'Favorilerden Çıkar' : 'Favorilere Ekle'}
+                title={book.isFavorited ? t('fav_remove_tooltip', nativeLanguage) : t('fav_add_tooltip', nativeLanguage)}
               >
                 <Star className={`w-3.5 h-3.5 ${book.isFavorited ? 'fill-[#F59E0B]' : ''}`} />
               </button>
@@ -2397,7 +2765,7 @@ export default function ReadingView({
                     ? 'bg-[#1A1A1E] border-[#2A2A30] text-[#FFE66D] hover:bg-[#2A2A30]' 
                     : 'bg-white border-[#FFE66D] text-[#FF6B6B] hover:bg-[#FFE66D]/15'
                 }`}
-                title={isDarkMode ? 'Açık Moda Geç' : 'Koyu Moda Geç'}
+                title={isDarkMode ? t('theme_light', nativeLanguage) : t('theme_dark', nativeLanguage)}
               >
                 {isDarkMode ? <Sun className="w-3.5 h-3.5" /> : <Moon className="w-3.5 h-3.5" />}
               </button>
@@ -2460,7 +2828,8 @@ export default function ReadingView({
         }`}>
           <img
             alt="Illustrated scenery"
-            className="w-full h-full object-cover object-top brightness-90 group-hover:brightness-95"
+            className="w-full h-full object-cover brightness-90 group-hover:brightness-95"
+            style={{ objectPosition: book.coverPosition || 'center 28%' }}
             src={book.coverUrl || 'https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?w=800&auto=format&fit=crop&q=80'}
           />
         </div>
@@ -2854,6 +3223,44 @@ export default function ReadingView({
                           <p className={`text-xs max-w-sm mx-auto leading-relaxed ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
                             {t('book_completed_desc', nativeLanguage)}
                           </p>
+
+                          {/* Play Store Rating Card */}
+                          <div className={`p-5 rounded-2xl border text-center space-y-4 max-w-sm mx-auto shadow-xs transition-all duration-350 ${
+                            isDarkMode 
+                              ? 'bg-[#1a1a1e]/85 border-[#2E2E35] shadow-black/30' 
+                              : 'bg-white border-[#FFE66D]/50 shadow-[#FFE66D]/15'
+                          }`}>
+                            {/* Stars Animation */}
+                            <div className="flex items-center justify-center gap-1.5 py-1">
+                              {[1, 2, 3, 4, 5].map((starIdx) => (
+                                <Star 
+                                  key={starIdx} 
+                                  className="w-5 h-5 text-[#FFE66D] fill-[#FFE66D] animate-bounce" 
+                                  style={{ animationDelay: `${starIdx * 120}ms`, animationDuration: '2s' }}
+                                />
+                              ))}
+                            </div>
+
+                            <div className="space-y-1.5">
+                              <h4 className={`text-xs font-bold font-headline-lg ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
+                                {t('playstore_card_title', nativeLanguage)}
+                              </h4>
+                              <p className={`text-[11px] leading-relaxed ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
+                                {t('playstore_card_desc', nativeLanguage)}
+                              </p>
+                            </div>
+
+                            <a
+                              href="https://play.google.com/store/apps/details?id=com.ingilizceoykum.app"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex w-full items-center justify-center gap-2 px-5 py-3 bg-[#4ECDC4] hover:bg-[#3dbbb2] active:scale-95 text-[#121214] font-bold text-xs rounded-xl shadow-md shadow-[#4ECDC4]/10 transition-all font-headline-lg"
+                            >
+                              <Heart className="w-3.5 h-3.5 fill-[#121214] text-[#121214]" />
+                              <span>{t('btn_rate_review', nativeLanguage)}</span>
+                            </a>
+                          </div>
+
                           <button
                             onClick={() => {
                               const percentage = Math.round(((currentPageIdx + 1) / pages.length) * 100);
@@ -3021,25 +3428,41 @@ export default function ReadingView({
                 </div>
               </div>
 
-              <div className="flex items-center gap-2">
-                <span 
-                  className="text-xs font-bold px-2 py-0.5 rounded-md border"
-                  style={{
-                    color: getLevelColor(selectedDictWord.level),
-                    borderColor: hexToRgba(getLevelColor(selectedDictWord.level), 0.3),
-                    backgroundColor: hexToRgba(getLevelColor(selectedDictWord.level), 0.1)
-                  }}
-                >
-                  {getFormattedLevel(selectedDictWord.level, nativeLanguage)}
-                </span>
-                <button
-                  onClick={() => setSelectedDictWord(null)}
-                  className={`p-1 px-2.5 rounded-lg font-bold text-xs cursor-pointer ${
-                    isDarkMode ? 'bg-[#2A2A30] text-gray-300 hover:bg-[#343A40]' : 'bg-gray-100 hover:bg-gray-200 text-gray-500'
-                  }`}
-                >
-                  {t('btn_close', nativeLanguage).toUpperCase()}
-                </button>
+              {/* Right side controls and daily limit badge */}
+              <div className="flex flex-col items-center gap-1.5">
+                <div className="flex items-center gap-2">
+                  <span 
+                    className="text-xs font-bold px-2 py-0.5 rounded-md border"
+                    style={{
+                      color: getLevelColor(selectedDictWord.level),
+                      borderColor: hexToRgba(getLevelColor(selectedDictWord.level), 0.3),
+                      backgroundColor: hexToRgba(getLevelColor(selectedDictWord.level), 0.1)
+                    }}
+                  >
+                    {getFormattedLevel(selectedDictWord.level, nativeLanguage)}
+                  </span>
+                  <button
+                    onClick={() => setSelectedDictWord(null)}
+                    className={`p-1 px-2.5 rounded-lg font-bold text-xs cursor-pointer ${
+                      isDarkMode ? 'bg-[#2A2A30] text-gray-300 hover:bg-[#343A40]' : 'bg-gray-100 hover:bg-gray-200 text-gray-500'
+                    }`}
+                  >
+                    {t('btn_close', nativeLanguage).toUpperCase()}
+                  </button>
+                </div>
+
+                {!stats?.isPremium && (
+                  <span className="text-[9px] font-semibold px-2 py-0.5 rounded-lg bg-amber-500/10 text-amber-500 border border-amber-500/25 text-center inline-flex flex-col items-center justify-center leading-tight">
+                    {nativeLanguage === 'tr' ? (
+                      <>
+                        <span>⚠️ Bugün için {Math.max(0, 30 - wordLookupsToday)} kelime</span>
+                        <span className="block mt-0.5">hakkınız kaldı</span>
+                      </>
+                    ) : (
+                      <span>⚠️ {t('dict_lookups_left', nativeLanguage).replace('{count}', String(Math.max(0, 30 - wordLookupsToday)))}</span>
+                    )}
+                  </span>
+                )}
               </div>
             </div>
 
@@ -3139,12 +3562,19 @@ export default function ReadingView({
               <div className="flex items-center justify-between border-b border-gray-400/15 pb-2 select-none w-full">
                 <span className="text-[10px] font-bold text-[#FF6B6B] tracking-wider font-headline-lg flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#FF6B6B] animate-pulse" />
-                  {t('translating_sentence', nativeLanguage).toUpperCase()}
+                  {t('translating_sentence', nativeLanguage).toLocaleUpperCase(nativeLanguage === 'tr' ? 'tr-TR' : 'en-US')}
                 </span>
                 <span className="text-gray-400 text-[10px] font-bold font-headline-lg">
                   {t('btn_close', nativeLanguage)} [✕]
                 </span>
               </div>
+              
+              {/* Remaining limit badge */}
+              {!stats?.isPremium && (
+                <div className="flex items-center gap-1.5 px-2 py-1 rounded-lg bg-amber-500/10 text-amber-500 border border-amber-500/25 text-[9px] font-bold select-none w-fit">
+                  ⚠️ {t('sentence_trans_left', nativeLanguage).replace('{count}', String(Math.max(0, 15 - sentenceTransToday)))}
+                </div>
+              )}
               
               {/* Body: Translation strictly on top, English sentence below */}
               <div className="space-y-2 text-left">
@@ -3167,6 +3597,69 @@ export default function ReadingView({
                   isDarkMode ? 'text-gray-400' : 'text-slate-500'
                 }`}>
                   {activeSentenceTr.textEn}
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+
+      {/* Limit Reached Premium Warning Modal */}
+      <AnimatePresence>
+        {showLimitReachedModal && (
+          <div className="fixed inset-0 bg-black/60 backdrop-blur-xs z-55 flex items-center justify-center p-4" onClick={() => setShowLimitReachedModal(null)}>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 15 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 15 }}
+              transition={{ type: "spring", stiffness: 350, damping: 28 }}
+              className={`w-full max-w-[340px] rounded-3xl p-6 border-2 transition-all relative ${
+                isDarkMode 
+                  ? 'bg-[#1A1A1E] border-[#2A2A30] text-white shadow-2xl shadow-black/80' 
+                  : 'bg-white border-[#FFE66D] text-gray-800 shadow-2xl shadow-slate-200'
+              }`}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="text-center space-y-4 pt-2">
+                <div className="w-14 h-14 bg-amber-500/10 rounded-full flex items-center justify-center mx-auto text-amber-500 border border-amber-500/20">
+                  <Crown className="w-8 h-8 fill-amber-500 text-amber-500" />
+                </div>
+                
+                <h3 className="text-base font-bold font-headline-lg text-amber-500 leading-snug">
+                  {showLimitReachedModal === 'word' 
+                    ? t('limit_reached_title_word', nativeLanguage) 
+                    : t('limit_reached_title_sentence', nativeLanguage)}
+                </h3>
+                
+                <p className="text-xs text-gray-500 dark:text-gray-400 max-w-sm mx-auto leading-relaxed">
+                  {showLimitReachedModal === 'word' 
+                    ? t('limit_reached_desc_word', nativeLanguage) 
+                    : t('limit_reached_desc_sentence', nativeLanguage)}
+                </p>
+                
+                <div className="pt-2 flex flex-col gap-2">
+                  <button
+                    onClick={() => {
+                      const percentage = Math.round(((currentPageIdx + 1) / pages.length) * 100);
+                      onGoToPremium(percentage, currentPageIdx + 1, pages.length);
+                      setShowLimitReachedModal(null);
+                    }}
+                    className="w-full py-3 px-4 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white rounded-xl text-xs font-bold transition-all cursor-pointer shadow-md shadow-amber-500/20 flex items-center justify-center gap-1.5 animate-pulse"
+                  >
+                    <Crown className="w-4 h-4 fill-white text-white" />
+                    {t('limit_btn_premium', nativeLanguage)}
+                  </button>
+                  
+                  <button
+                    onClick={() => setShowLimitReachedModal(null)}
+                    className={`w-full py-2.5 px-4 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                      isDarkMode 
+                        ? 'bg-[#2A2A30] hover:bg-[#343A40] text-gray-300' 
+                        : 'bg-gray-100 hover:bg-gray-200 text-gray-550'
+                    }`}
+                  >
+                    {t('btn_maybe_later', nativeLanguage)}
+                  </button>
                 </div>
               </div>
             </motion.div>
@@ -3197,6 +3690,7 @@ export default function ReadingView({
                   setActiveQuizQuestions(null);
                   setActiveQuizCpIndex(null);
                   setActiveQuizQuestionIdx(0);
+                  setIsQuizTranslating(false);
                 }}
                 className={`absolute top-4 right-4 p-1.5 rounded-full hover:bg-gray-200/20 transition-all cursor-pointer ${
                   isDarkMode ? 'text-gray-400' : 'text-gray-550'
@@ -3279,10 +3773,23 @@ export default function ReadingView({
                       onClick={handleSkipQuiz}
                       className="w-full mt-3 py-3 bg-[#4ECDC4] text-white rounded-xl text-sm font-bold hover:bg-[#3db8af] transition-all flex items-center justify-center gap-2 cursor-pointer shadow-md shadow-[#4ECDC4]/20"
                     >
-                      <span>Quizi Atla (Premium)</span>
+                      <span>{t('roadblock_btn_skip', nativeLanguage)}</span>
                       <ChevronRight className="w-4 h-4" />
                     </button>
                   )}
+                </div>
+              ) : isQuizTranslating ? (
+                /* QUIZ PREPARATION LOADING STATE */
+                <div className="py-12 flex flex-col items-center justify-center gap-4 text-center select-none animate-pulse">
+                  <div className="w-10 h-10 rounded-full border-4 border-[#FF6B6B]/20 border-t-[#FF6B6B] animate-spin" />
+                  <div className="space-y-1.5">
+                    <p className={`text-sm font-bold font-headline-lg ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>
+                      {t('quiz_preparing_title', nativeLanguage)}
+                    </p>
+                    <p className="text-xs text-gray-400">
+                      {t('quiz_preparing_desc', nativeLanguage)}
+                    </p>
+                  </div>
                 </div>
               ) : (
                 /* ACTIVE INTERACTIVE QUIZ CARD */

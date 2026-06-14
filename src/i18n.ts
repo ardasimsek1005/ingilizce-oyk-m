@@ -84,37 +84,158 @@ export const TRANSLATIONS: Record<string, Record<LanguageCode, string>> = {
     it: 'Natura e spazio', pt: 'Natureza e espaço', ru: 'Природа и космос', ar: 'الطبيعة والكون', zh: '自然与宇宙', hi: 'प्रकृति और अंतरिक्ष', ja: '自然と宇宙'
   },
   cat_all_desc: {
-    tr: 'Kütüphanedeki tüm eserleri tek bir çatı altında keşfedin.', en: 'Discover all the works in the library under one roof.'
+    tr: 'Kütüphanedeki tüm eserleri tek bir çatı altında keşfedin.',
+    en: 'Discover all the works in the library under one roof.',
+    es: 'Descubre todas las obras de la biblioteca bajo un mismo techo.',
+    fr: 'Découvrez toutes les œuvres de la bibliothèque sous un même toit.',
+    de: 'Entdecken Sie alle Werke in der Bibliothek unter einem Dach.',
+    it: 'Scopri tutte le opere della biblioteca sotto lo stesso tetto.',
+    pt: 'Descubra todas as obras da biblioteca sob o mesmo teto.',
+    ru: 'Откройте для себя все произведения в библиотеке под одной крышей.',
+    ar: 'اكتشف جميع الأعمال في المكتبة تحت سقف واحد.',
+    zh: '在同一个屋檐下探索图书馆的所有作品。',
+    hi: 'एक ही छत के नीचे पुस्तकालय की सभी कृतियों की खोज करें।',
+    ja: '図書館のすべての作品を一つの場所に集めました。'
   },
   cat_classics_desc: {
-    tr: 'Klasik edebiyatın ölümsüz karakterleriyle dolu macera ve dram dünyası.', en: 'A world of adventure and drama filled with the immortal characters of classic literature.'
+    tr: 'Klasik edebiyatın ölümsüz karakterleriyle dolu macera ve dram dünyası.',
+    en: 'A world of adventure and drama filled with the immortal characters of classic literature.',
+    es: 'Un mundo de aventuras y dramas lleno de los personajes inmortales de la literatura clásica.',
+    fr: 'Un monde d\'aventures et de drames rempli des personnages immortels de la littérature classique.',
+    de: 'Eine Welt voller Abenteuer und Dramen, bevölkert von den unsterblichen Charakteren der klassischen Literatur.',
+    it: 'Un mondo di avventure e drammi pieno dei personaggi immortali della letteratura classica.',
+    pt: 'Um mundo de aventura e drama repleto de personagens imortais da literatura clássica.',
+    ru: 'Мир приключений и драм, наполненный бессмертными персонажами классической литературы.',
+    ar: 'عالم من المغامرة والدراما مليء بالشخصيات الخالدة للأدب الكلاسيكي.',
+    zh: '充满经典文学不朽人物的的冒险与戏剧世界。',
+    hi: 'शास्त्रीय साहित्य के अमर पात्रों से भरी साहसिक और नाटकीय दुनिया।',
+    ja: '古典文学の不朽のキャラクターたちでいっぱいの冒険とドラマの世界。'
   },
   cat_kids_desc: {
-    tr: 'Çocuk masalları ve her yaştan dil öğrenenler için eğitici, sihirli fabllar.', en: 'Fairy tales and educational, magical fables for language learners of all ages.'
+    tr: 'Çocuk masalları ve her yaştan dil öğrenenler için eğitici, sihirli fabllar.',
+    en: 'Fairy tales and educational, magical fables for language learners of all ages.',
+    es: 'Cuentos de hadas y fábulas mágicas y educativas para estudiantes de idiomas de todas las edades.',
+    fr: 'Contes de fées et fables éducatives et magiques pour les apprenants de langues de tous âges.',
+    de: 'Märchen und lehrreiche, magische Fabeln für Sprachschüler jeden Alters.',
+    it: 'Fiabe e favole educative e magiche per studenti di lingue di tutte le età.',
+    pt: 'Contos de fadas e fábulas educativas e mágicas para estudantes de idiomas de todas as idades.',
+    ru: 'Сказки и поучительные волшебные басни для изучающих языки всех возрастов.',
+    ar: 'قصص خيالية وخرافات سحرية تعليمية لمتعلمي اللغة من جميع الأعمار.',
+    zh: '适合所有年龄段语言学习者的童话与寓言。',
+    hi: 'सभी उम्र के भाषा सीखने वालों के लिए परियों की कहानियां और शैक्षिक, जादुई कहानियां।',
+    ja: 'すべての年齢層の語学学習者向けの、おとぎ話と教育的で魔法のような寓話。'
   },
   cat_horror_desc: {
-    tr: 'Karanlık ormanlar, gizemli şatolar ve merak uyandıran heyecan dolu öyküler.', en: 'Dark forests, mysterious castles, and exciting stories that pique curiosity.'
+    tr: 'Karanlık ormanlar, gizemli şatolar ve merak uyandıran heyecan dolu öyküler.',
+    en: 'Dark forests, mysterious castles, and exciting stories that pique curiosity.',
+    es: 'Bosques oscuros, castillos misteriosos e historias emocionantes que despiertan la curiosidad.',
+    fr: 'Forêts sombres, châteaux mystérieux et histoires passionnantes qui piquent la curiosité.',
+    de: 'Dunkle Wälder, geheimnisvolle Schlösser und spannende Geschichten, die die Neugier wecken.',
+    it: 'Foreste oscure, castelli misteriosi e storie emozionanti che stimolano la curiosità.',
+    pt: 'Florestas escuras, castelos misteriosos e histórias emocionantes que despertam a curiosidade.',
+    ru: 'Темные леса, таинственные замки и захватывающие истории, вызывающие любопытство.',
+    ar: 'غابات مظلمة، وقلاع غامضة، وقصص مثيرة تثير الفضول.',
+    zh: '黑暗的森林、神秘的城堡和激起好奇心的刺激故事。',
+    hi: 'घने जंगल, रहस्यमय महल और जिज्ञासा पैदा करने वाली रोमांचक कहानियां।',
+    ja: '暗い森、神秘的な城、そして好奇心をそそるエキサイティングな物語。'
   },
   cat_daily_desc: {
-    tr: 'Gerçek yaşam senaryolarına dayalı pratik İngilizce diyaloglar ve kısa günlük anlatılar.', en: 'Practical English dialogues and short daily narratives based on real-life scenarios.'
+    tr: 'Gerçek yaşam senaryolarına dayalı pratik İngilizce diyaloglar ve kısa günlük anlatılar.',
+    en: 'Practical English dialogues and short daily narratives based on real-life scenarios.',
+    es: 'Diálogos prácticos en inglés y narraciones breves diarias basadas en escenarios de la vida real.',
+    fr: 'Dialogues d\'anglais pratiques et courts récits quotidiens basés sur des scénarios de la vie réelle.',
+    de: 'Praktische englische Dialoge und kurze tägliche Erzählungen basierend auf realen Szenarien.',
+    it: 'Dialoghi pratici in inglese e brevi narrazioni quotidiane basate su scenari di vita reale.',
+    pt: 'Diálogos práticos em inglês e narrativas diárias curtas baseadas em cenários da vida real.',
+    ru: 'Практические диалоги на английском языке и короткие повседневные рассказы, основанные на реальных жизненных сценариях.',
+    ar: 'حوارات إنجليزية عملية وروايات يومية قصيرة تعتمد على سيناريوهات الحياة الواقعية.',
+    zh: '基于现实生活场景的实用英语对话和简短的日常叙事。',
+    hi: 'वास्तविक जीवन के परिदृश्यों पर आधारित व्यावहारिक अंग्रेजी संवाद और लघु दैनिक आख्यान।',
+    ja: '実生活のシナリオに基づいた実践的な英語の対話と短い日常の物語。'
   },
   cat_scifi_desc: {
-    tr: 'Geleceğin teknolojileri, uzay seyahatleri, robotlar ve alternatif evrenler üzerine sürükleyici öyküler.', en: 'Immersive stories about future technologies, space travel, robots, and alternative universes.'
+    tr: 'Geleceğin teknolojileri, uzay seyahatleri, robotlar ve alternatif evrenler üzerine sürükleyici öyküler.',
+    en: 'Immersive stories about future technologies, space travel, robots, and alternative universes.',
+    es: 'Historias inmersivas sobre tecnologías del futuro, viajes espaciales, robots y universos alternativos.',
+    fr: 'Histoires immersives sur les technologies du futur, les voyages dans l\'espace, les robots et les univers alternatifs.',
+    de: 'Fesselnde Geschichten über Zukunftstechnologien, Weltraumreisen, Roboter und alternative Universen.',
+    it: 'Storie coinvolgenti su tecnologie del futuro, viaggi nello spazio, robot e universi alternativi.',
+    pt: 'Histórias imersivas sobre tecnologias do futuro, viagens espaciais, robôs e universos alternativos.',
+    ru: 'Захватывающие истории о технологиях будущего, космических путешествиях, роботах и альтернативных вселенных.',
+    ar: 'قصص غامرة عن تقنيات المستقبل، والسفر عبر الفضاء، والروبوتات، والأكوان البديلة.',
+    zh: '关于未来技术、太空旅行、机器人和备用宇宙的沉浸式故事。',
+    hi: 'भविष्य की तकनीकों, अंतरिक्ष यात्रा, रोबोट और वैकल्पिक ब्रह्मांडों के बारे में मनोरंजक कहानियां।',
+    ja: '未来のテクノロジー、宇宙旅行、ロボット、オルタナティブ・ユニバースに関する没入型の物語。'
   },
   cat_detective_desc: {
-    tr: 'Esrarengiz ipuçları, dahi dedektifler ve gizemli olayların çözüldüğü sürükleyici polisiye öyküler.', en: 'Immersive detective stories where mysterious clues, genius detectives, and mysterious events are resolved.'
+    tr: 'Esrarengiz ipuçları, dahi dedektifler ve gizemli olayların çözüldüğü sürükleyici polisiye öyküler.',
+    en: 'Immersive detective stories where mysterious clues, genius detectives, and mysterious events are resolved.',
+    es: 'Historias de detectives inmersivas donde se resuelven pistas misteriosas, detectives geniales y sucesos misteriosos.',
+    fr: 'Histoires de détectives immersives où des indices mystérieux, des détectives de génie et des événements mystérieux sont résolus.',
+    de: 'Fesselnde Detektivgeschichten, in denen mysteriöse Hinweise, geniale Detektive und rätselhafte Ereignisse gelöst werden.',
+    it: 'Storie di detective coinvolgenti in cui vengono risolti indizi misteriosi, detective geniali ed eventi misteriosi.',
+    pt: 'Histórias de detetives imersivas onde pistas misteriosas, detetives geniais e eventos misteriosos são resolvidos.',
+    ru: 'Захватывающие детективные истории, в которых раскрываются таинственные улики, гениальные детективы и загадочные события.',
+    ar: 'قصص بوليسية غامرة حيث يتم حل القرائن الغامضة، والمحققين العباقرة، والأحداث الغامضة.',
+    zh: '沉浸式侦探故事，解决神秘的线索、天才侦探...和神秘事件。',
+    hi: 'रोमांचक जासूसी कहानियां जहां रहस्यमय सुराग, जीनियस जासूस और रहस्यमय घटनाओं को सुलझाया जाता है।',
+    ja: '不可解な手がかり、天才探偵、そして神秘的な事件が解決される没入型の探偵小説。'
   },
   cat_history_desc: {
-    tr: 'Tarihe yön veren olaylar, antik imparatorluklar ve dilden dile aktarılan efsanevi öyküler.', en: 'Events that shaped history, ancient empires, and legendary stories passed down from generation to generation.'
+    tr: 'Tarihe yön veren olaylar, antik imparatorluklar ve dilden dile aktarılan efsanevi öyküler.',
+    en: 'Events that shaped history, ancient empires, and legendary stories passed down from generation to generation.',
+    es: 'Eventos que dieron forma a la historia, imperios antiguos e historias legendarias transmitidas de generación en generación.',
+    fr: 'Des événements qui ont façonné l\'histoire, des empires anciens et des histoires légendaires transmises de génération en génération.',
+    de: 'Ereignisse, die die Geschichte geprägt haben, alte Reiche und legendäre Geschichten, die von Generation zu Generation weitergegeben wurden.',
+    it: 'Eventi che hanno fatto la storia, antichi imperi e storie leggendarie tramandate di generazione in generazione.',
+    pt: 'Eventos que moldaram a história, impérios antigos e histórias lendárias passadas de geração em geração.',
+    ru: 'События, определившие историю, древние империи и легендарные истории, передающиеся из поколения в поколение.',
+    ar: 'الأحداث التي شكلت التاريخ، والإمبراطوريات القديمة، والقصص الأسطورية المتوارثة من جيل إلى جيل.',
+    zh: '塑造历史的事件、古代帝国以及代代相传的传奇故事。',
+    hi: 'इतिहास को आकार देने वाली घटनाएं, प्राचीन साम्राज्य और पीढ़ी-दर-पीढ़ी चली आ रही पौराणिक कहानियां।',
+    ja: '歴史を形作った出来事、古代の帝国、そして世代から世代へと受け継がれてきた伝説的な物語。'
   },
   cat_mythology_desc: {
-    tr: 'Antik tanrılar, kahramanlar ve epik mitolojik efsanelerin büyüleyici dünyası.', en: 'The fascinating world of ancient gods, heroes, and epic mythological legends.'
+    tr: 'Antik tanrılar, kahramanlar ve epik mitolojik efsanelerin büyüleyici dünyası.',
+    en: 'The fascinating world of ancient gods, heroes, and epic mythological legends.',
+    es: 'El fascinante mundo de los antiguos dioses, héroes y leyendas mitológicas épicas.',
+    fr: 'Le monde fascinant des dieux anciens, des héros et des légendes mythologiques épiques.',
+    de: 'Die faszinierende Welt der antiken Götter, Helden und epischen mythologischen Legenden.',
+    it: 'Il fascinevole mondo degli antichi dei, eroi e leggende mitologiche epiche.',
+    pt: 'O fascinante mundo de deuses antigos, heróis e lendas mitológicas épicas.',
+    ru: 'Удивительный мир древних богов, героев и эпических мифологических легенд.',
+    ar: 'العالم الرائع للآلهة القديمة والأبطال والأساطير الميثولوجية الملحمية.',
+    zh: '古代神明、英雄和史诗般神话传说的迷人世界。',
+    hi: 'प्राचीन देवताओं, नायकों और महाकाव्य पौराणिक कथाओं की आकर्षक दुनिया।',
+    ja: '古代の神々、英雄、指示的な神話伝説の魅力的な世界。'
   },
   cat_travel_desc: {
-    tr: 'Dünyanın dört bir yanından renkli kültürler, şehirler ve benzersiz gelenekler.', en: 'Colorful cultures, cities, and unique traditions from around the world.'
+    tr: 'Dünyanın dört bir yanından renkli kültürler, şehirler ve benzersiz gelenekler.',
+    en: 'Colorful cultures, cities, and unique traditions from around the world.',
+    es: 'Culturas coloridas, tradiciones y ciudades de todo el mundo.',
+    fr: 'Cultures colorées, villes et traditions uniques du monde entier.',
+    de: 'Farbenfrohe Kulturen, Städte und einzigartige Traditionen aus aller Welt.',
+    it: 'Culture colorate, città e tradizioni uniche provenienti da tutto il mondo.',
+    pt: 'Culturas coloridas, cidades e tradições únicas de todo o mundo.',
+    ru: 'Красочные культуры, города и уникальные традиции со всего мира.',
+    ar: 'ثقافات ملونة ومدن وتقاليد فريدة من tüm أنحاء العالم.',
+    zh: '来自世界各地的多彩文化、城市和独特传统。',
+    hi: 'दुनिया भर से रंगीन संस्कृतियां, शहर और अनूठी परंपराएं।',
+    ja: '世界中の多彩な文化、都市、ユニークな伝統。'
   },
   cat_nature_desc: {
-    tr: 'Evrenin derinlikleri, doğa harikaları ve vahşi yaşam üzerine büyüleyici popüler kurgular.', en: 'Fascinating popular fiction on the depths of the universe, natural wonders, and wildlife.'
+    tr: 'Evrenin derinlikleri, doğa harikaları ve vahşi yaşam üzerine büyüleyici popüler kurgular.',
+    en: 'Fascinating popular fiction on the depths of the universe, natural wonders, and wildlife.',
+    es: 'Fascinante ficción popular sobre las profundidades del universo, las maravillas naturales y la vida silvestre.',
+    fr: 'Fiction populaire fascinante sur les profondeurs de l\'univers, les merveilles de la nature et la vie sauvage.',
+    de: 'Faszinierende populäre Belletristik über die Tiefen des Universums, Naturwunder und Tierwelt.',
+    it: 'Affascinante narrativa popolare sulle profondità dell\'universo, le meraviglie della natura e la fauna selvatica.',
+    pt: 'Ficção popular fascinante sobre as profundezas do universo, maravilhas naturais e vida selvagem.',
+    ru: 'Увлекательная популярная фантастика о глубинах вселенной, чудесах природы и дикой природе.',
+    ar: 'خيال شعبي رائع عن أعماق الكون، وعجائب الطبيعة، والحياة البرية.',
+    zh: '关于宇宙深处、自然奇观和野生动物的迷人科普小说。',
+    hi: 'ब्रह्मांड की गहराइयों, प्राकृतिक अजूबों और वन्यजीवों पर आकर्षक कथा साहित्य।',
+    ja: '宇宙の深淵、自然の驚異、野生生物に関する魅力的な大衆小説。'
   },
 
   // Tabs
@@ -133,6 +254,10 @@ export const TRANSLATIONS: Record<string, Record<LanguageCode, string>> = {
   tab_profile: {
     tr: 'Profil', en: 'Profile', es: 'Perfil', fr: 'Profil', de: 'Profil',
     it: 'Profilo', pt: 'Perfil', ru: 'Профиль', ar: 'الملف الشخصي', zh: '个人资料', hi: 'प्रोफ़ाइल', ja: 'プロフィール'
+  },
+  tab_quiz: {
+    tr: 'Kelime Pratiği', en: 'Word Practice', es: 'Práctica de palabras', fr: 'Pratique des mots', de: 'Wortpraxis',
+    it: 'Pratica delle parole', pt: 'Prática de palavras', ru: 'Практика слов', ar: 'ممارسة الكلمات', zh: '单词练习', hi: 'शब्द अभ्यास', ja: '単語練習'
   },
   splash_subtitle: {
     tr: 'Maceralarla Dolu Kitaplar Seni Bekliyor', en: 'Books Full of Adventures Await You', es: 'Libros llenos de aventuras te esperan', fr: "Des livres pleins d'aventures vous attendent", de: 'Bücher voller Abenteuer erwarten dich',
@@ -432,9 +557,13 @@ export const TRANSLATIONS: Record<string, Record<LanguageCode, string>> = {
     tr: 'İngilizce Öyküm Premium Satın Al', en: 'Buy Premium', es: 'Comprar Premium', fr: 'Acheter Premium', de: 'Premium kaufen',
     it: 'Acquista Premium', pt: 'Comprar Premium', ru: 'Купить Премиум', ar: 'شراء بريميوم', zh: '购买会员', hi: 'प्रीमियम खरीदें', ja: 'プレミアムを購入'
   },
+  btn_buy_premium: {
+    tr: 'Premium Satın Al', en: 'Buy Premium', es: 'Comprar Premium', fr: 'Acheter Premium', de: 'Premium kaufen',
+    it: 'Acquista Premium', pt: 'Comprar Premium', ru: 'Купить Премиум', ar: 'شراء بريميوم', zh: '购买会员', hi: 'प्रीमियम खरीदें', ja: 'プレミアムを購入'
+  },
   settings_language: {
-    tr: 'Ana Dil (Çeviri Hedefi)', en: 'Native Language (Translation Target)', es: 'Idioma nativo (Destino de traducción)', fr: 'Langue maternelle (Cible de traduction)', de: 'Muttersprache (Übersetzungsziel)',
-    it: 'Lingua madre (Destinazione traduzione)', pt: 'Idioma Nativo (Alvo de Tradução)', ru: 'Родной язык (Цель перевода)', ar: 'اللغة الأم (هدف الترجمة)', zh: '母语（翻译目标）', hi: 'मातृभाषा (अनुवाद लक्ष्य)', ja: '母国語（翻訳先）'
+    tr: 'Ana Dil', en: 'Native Language', es: 'Idioma nativo', fr: 'Langue maternelle', de: 'Muttersprache',
+    it: 'Lingua madre', pt: 'Idioma Nativo', ru: 'Родной язык', ar: 'اللغة الأم', zh: '母语', hi: 'मातृभाषा', ja: '母国語'
   },
   settings_logout: {
     tr: 'Çıkış Yap', en: 'Log Out', es: 'Cerrar sesión', fr: 'Se déconnecter', de: 'Abmelden',
@@ -501,18 +630,18 @@ export const TRANSLATIONS: Record<string, Record<LanguageCode, string>> = {
     it: 'Transizione alla pagina successiva', pt: 'Transição para a Próxima Página', ru: 'Переход к следующей странице', ar: 'انتقال الصفحة التالية', zh: '过渡到下一页', hi: 'अगla पृष्ठ संक्रमण', ja: '次のページへの切り替え'
   },
   roadblock_desc: {
-    tr: 'Harika gidiyorsunuz! Bu sayfayı tamamladınız. Bir sonraki sayfaya geçmek ve yeni paragrafları okumak için bu bölüme ait 5 soruluk quizi çözmelisiniz.',
-    en: 'You are doing great! You completed this page. To proceed to the next page and read new paragraphs, you must solve the 5-question quiz for this section.',
-    es: '¡Vas muy bien! Completaste esta página. Para avanzar a la siguiente página y leer nuevos párrafos, debes resolver el cuestionario de 5 preguntas para esta sección.',
-    fr: 'Vous vous en sortez très bien ! Vous avez terminé cette page. Pour passer à la page suivante et lire de nouveaux paragraphes, vous devez résoudre le quiz de 5 questions pour cette section.',
-    de: 'Sie machen das großartig! Sie haben diese Seite abgeschlossen. Um zur nächsten Seite zu gelangen und neue Absätze zu lesen, müssen Sie das 5-Fragen-Quiz für diesen Abschnitt lösen.',
-    it: 'Stai andando alla grande! Hai completato questa pagina. Per passare alla pagina successiva e leggere nuovi paragrafi, devi risolvere il quiz di 5 domande per questa sezione.',
-    pt: 'Você está indo muito bem! Você completou esta página. Para prosseguir para a próxima página e ler novos parágrafos, você deve resolver o quiz de 5 perguntas desta seção.',
-    ru: 'Вы отлично справляетесь! Вы закончили эту страницу. Чтобы перейти к следующей странице и продолжить чтение, вам необходимо пройти тест из 5 вопросов для этого раздела.',
-    ar: 'عمل رائع! لقد أكملت هذه الصفحة. للمتابعة إلى الصفحة التالية وقراءة فقرات جديدة، يجب عليك حل الاختبار المكون من 5 أسئلة لهذا القسم.',
-    zh: '您做得很好！您已完成此页面。要继续下一页并阅读新段落，您必须解决本节的 5 题测试。',
-    hi: 'आप बहुत अच्छा कर रहे हैं! आपने यह पृष्ठ पूरा कर लिया है। अगले पृष्ठ पर जाने और नए पैराग्राफ पढ़ने के लिए, आपको इस खंड के 5-प्रश्नों के क्विज़ को हल करना होगा।',
-    ja: '素晴らしいです！このページを完了しました。次のページに進んで新しい段落を読むには、このセクションの5問のクイズを解く必要があります。'
+    tr: 'Harika gidiyorsunuz! Bu sayfayı tamamladınız. Bir sonraki sayfaya geçmek ve yeni paragrafları okumak için bu bölüme ait 5 soruluk quizi çözmelisiniz. Eğer 15 soruyu hatasız cevaplarsanız 1 can kazanırsınız ama hata yaparsanız seri sıfırlanır.',
+    en: 'You are doing great! You completed this page. To proceed to the next page and read new paragraphs, you must solve the 5-question quiz for this section. If you answer 15 questions without mistakes, you will earn 1 life, but if you make a mistake, your streak will reset.',
+    es: '¡Vas muy bien! Completaste esta página. Para avanzar a la siguiente página y leer nuevos párrafos, debes resolver el cuestionario de 5 preguntas para esta sección. Si respondes 15 preguntas sin cometer errores ganarás 1 vida, pero si cometes un error, tu racha se reiniciará.',
+    fr: 'Vous vous en sortez très bien ! Vous avez terminé cette page. Pour passer à la page suivante et lire de nouveaux paragraphes, vous devez résoudre le quiz de 5 questions pour cette section. Si vous répondez à 15 questions sans faire d\'erreur, vous gagnerez 1 vie, mais si vous faites une erreur, votre série sera réinitialisée.',
+    de: 'Sie machen das großartig! Sie haben diese Seite abgeschlossen. Um zur nächsten Seite zu gelangen und neue Absätze zu lesen, müssen Sie das 5-Fragen-Quiz für diesen Abschnitt lösen. Wenn Sie 15 Fragen fehlerfrei beantworten, erhalten Sie 1 Leben, aber wenn Sie einen Fehler machen, wird Ihre Serie zurückgesetzt.',
+    it: 'Stai andando alla grande! Hai completato questa pagina. Per passare alla pagina successiva e leggere nuovi paragrafi, devi risolvere il quiz di 5 domande per questa sezione. Se rispondi a 15 domande senza commettere errori guadagnerai 1 vita, ma se commetti un errore la serie verrà azzerata.',
+    pt: 'Você está indo muito bem! Você completou esta página. Para prosseguir para a próxima página e ler novos parágrafos, você deve resolver o quiz de 5 perguntas desta seção. Se você responder a 15 perguntas sem cometer erros ganhará 1 vida, mas se cometer um erro a sequência será reiniciada.',
+    ru: 'Вы отлично справляетесь! Вы закончили эту страницу. Чтобы перейти к следующей странице и продолжить чтение, вам необходимо пройти тест из 5 вопросов для этого раздела. Если вы ответите на 15 вопросов без ошибок, то получите 1 жизнь, но если совершите ошибку, ваша серия обнулится.',
+    ar: 'عمل رائع! لقد أكملت هذه الصفحة. للمتابعة إلى الصفحة التالية وقراءة فقرات جديدة، يجب عليك حل الاختبار المكون من 5 أسئلة لهذا القسم. إذا أجبت على 15 سؤالاً دون أخطاء فستكسب حياة واحدة، ولكن إذا أخطأت فستتم إعادة تعيين النشاط.',
+    zh: '您做得很好！您已完成此页面。要继续下一页并阅读新段落，您必须解决本节的 5 题测试。如果您无失误答对 15 道题，将获得 1 点生命值，但如果您犯了错误，连击将被重置。',
+    hi: 'आप बहुत अच्छा कर रहे हैं! आपने यह पृष्ठ पूरा कर लिया है। अगले पृष्ठ पर जाने और नए पैराग्राफ पढ़ने के लिए, आपको इस खंड के 5-प्रश्नों के क्विज़ को हल करना होगा। यदि आप बिना किसी गलती के 15 प्रश्नों के सही उत्तर देते हैं, तो आपको 1 जीवन मिलेगा, लेकिन यदि आप कोई गलती करते हैं, तो सिलसिला रीसेट हो जाएगा।',
+    ja: '素晴らしいです！このページを完了しました。次のページに進んで新しい段落を読むには、このセクションの5問のクイズを解く必要があります。ノーミスで15問回答するとライフ te 1獲得できますが、間違えると連続記録がリセットされます。'
   },
   roadblock_lives_infinite: {
     tr: 'Premium ile sınırsız cana sahipsiniz!', en: 'You have unlimited lives with Premium!', es: '¡Tienes vidas ilimitadas con Premium!', fr: 'Vous avez des vies illimitées avec Premium !', de: 'Sie haben unbegrenztes Leben mit Premium!',
@@ -609,6 +738,48 @@ export const TRANSLATIONS: Record<string, Record<LanguageCode, string>> = {
   default_reader_name: {
     tr: 'Okur', en: 'Reader', es: 'Lector', fr: 'Lecteur', de: 'Leser',
     it: 'Lettore', pt: 'Leitor', ru: 'Читатель', ar: 'قارئ', zh: '读者', hi: 'पाठक', ja: '読者'
+  },
+  playstore_card_title: {
+    tr: 'Uygulamamızı Beğendiniz mi?',
+    en: 'Do you like our app?',
+    es: '¿Te gusta nuestra aplicación?',
+    fr: 'Aimez-vous notre application ?',
+    de: 'Gefällt dir unsere App?',
+    it: 'Ti piace la nostra applicazione?',
+    pt: 'Gosta do nosso aplicativo?',
+    ru: 'Вам нравится наше приложение?',
+    ar: 'هل أعجبك تطبيقنا؟',
+    zh: '你喜欢我们的应用吗？',
+    hi: 'क्या आपको हमारा ऐप पसंद आया?',
+    ja: '私たちのアプリは気に入りましたか？'
+  },
+  playstore_card_desc: {
+    tr: 'Play Store\'da bizi puanlayıp yorum yaparak destek olabilirsiniz! Görüşleriniz bizim için çok değerlidir.',
+    en: 'You can support us by rating and reviewing on Play Store! Your feedback is very valuable to us.',
+    es: '¡Puedes apoyarnos calificando y reseñando en Play Store! Tu opinión es muy valiosa para nosotros.',
+    fr: 'Vous pouvez nous soutenir en nous évaluant et en laissant un commentaire sur le Play Store ! Votre avis est très précieux.',
+    de: 'Du kannst uns unterstützen, indem du uns im Play Store bewertest und rezensierst! Dein Feedback ist uns sehr wichtig.',
+    it: 'Puoi supportarci valutando e recensendo l\'app su Play Store! Il tuo feedback è molto prezioso per noi.',
+    pt: 'Você pode nos apoiar avaliando e comentando na Play Store! Seu feedback é muito valioso para nós.',
+    ru: 'Вы можете поддержать нас, оценив и оставив отзыв в Play Store! Ваш отзыв очень важен для нас.',
+    ar: 'يمكنك دعمنا من خلال تقييمنا وكتابة مراجعة على Play Store! آرائكم تهمنا كثيراً.',
+    zh: '您可以在 Play Store 上给我们评分和撰写评论来支持我们！您的反馈对我们非常宝贵。',
+    hi: 'आप Play Store पर हमें रेटिंग और समीक्षा देकर हमारा समर्थन कर सकते हैं! आपकी प्रतिक्रिया हमारे लिए बहुत मूल्यवान है।',
+    ja: 'Play Storeで評価やレビューを書いて、私たちをサポートしてください！皆様のフィードバックは非常に貴重です。'
+  },
+  btn_rate_review: {
+    tr: 'Puanla ve Yorum Yap',
+    en: 'Rate & Review',
+    es: 'Calificar y reseñar',
+    fr: 'Évaluer et commenter',
+    de: 'Bewerten & Rezensieren',
+    it: 'Valuta e recensisci',
+    pt: 'Avaliar e comentar',
+    ru: 'Оценить и написать отзыв',
+    ar: 'التقييم والمراجعة',
+    zh: '评分与评论',
+    hi: 'रेटिंग और समीक्षा करें',
+    ja: '評価とレビュー'
   },
   ready_to_read: {
     tr: 'Bugün ne okumak istersin?', en: 'What would you like to read today?', es: '¿Qué te gustaría leer hoy?', fr: "Que voudriez-vous lire aujourd'hui ?", de: 'Was möchtest du heute lesen?',
@@ -1463,17 +1634,17 @@ export const TRANSLATIONS: Record<string, Record<LanguageCode, string>> = {
   },
   share_word_text: {
     tr: '"{word}" kelimesinin Türkçe karşılığı: "{translation}". İngilizce Öyküm ile İngilizce öğreniyorum!',
-    en: 'Translation of "{word}" is "{translation}". I am learning English with İngilizce Öyküm!',
-    es: 'La traducción de "{word}" es "{translation}". ¡Estoy aprendiendo inglés con İngilizce Öyküm!',
-    fr: 'La traduction de "{word}" est "{translation}". J\'apprends l\'anglais avec İngilizce Öyküm !',
-    de: 'Die Übersetzung von "{word}" ist "{translation}". Ich lerne Englisch mit İngilizce Öyküm!',
-    it: 'La traduzione di "{word}" è "{translation}". Sto imparando l\'inglese con İngilizce Öyküm!',
-    pt: 'A tradução de "{word}" é "{translation}". Estou aprendendo inglês com o İngilizce Öyküm!',
-    ru: 'Перевод слова "{word}" - "{translation}". Я учу английский с İngilizce Öyküm!',
-    ar: 'ترجمة "{word}" هي "{translation}". أنا أتعلم الإنجليزية مع İngilizce Öyküm!',
-    zh: '“{word}”的翻译是“{translation}”。我正在使用 İngilizce Öyküm 学习英语！',
-    hi: '"{word}" का अनुवाद "{translation}" है। मैं İngilizce Öyküm के साथ अंग्रेजी सीख रहा हूँ!',
-    ja: '「{word}」の翻訳は「{translation}」です。İngilizce Öykümで英語を勉強しています！'
+    en: 'Translation of "{word}" is "{translation}". I am learning English with My English Story!',
+    es: 'La traducción de "{word}" es "{translation}". ¡Estoy aprendiendo inglés con My English Story!',
+    fr: 'La traduction de "{word}" est "{translation}". J\'apprends l\'anglais avec My English Story !',
+    de: 'Die Übersetzung von "{word}" ist "{translation}". Ich lerne Englisch mit My English Story!',
+    it: 'La traduzione di "{word}" è "{translation}". Sto imparando l\'inglese con My English Story!',
+    pt: 'A tradução de "{word}" é "{translation}". Estou aprendendo inglês com o My English Story!',
+    ru: 'Перевод слова "{word}" - "{translation}". Я учу английский с My English Story!',
+    ar: 'ترجمة "{word}" هي "{translation}". أنا أتعلم الإنجليزية مع My English Story!',
+    zh: '“{word}”的翻译是“{translation}”。我正在使用 My English Story 学习英语！',
+    hi: '"{word}" का अनुवाद "{translation}" है। मैं My English Story के साथ अंग्रेजी सीख रहा हूँ!',
+    ja: '「{word}」の翻訳は「{translation}」です。My English Storyで英語を勉強しています！'
   },
   share_word_copied: {
     tr: 'Kelime ve çeviri kopyalandı, artık paylaşabilirsiniz! 🔗',
@@ -1549,6 +1720,244 @@ export const TRANSLATIONS: Record<string, Record<LanguageCode, string>> = {
   badge_desc_b18: { tr: 'İlk boşluk doldurma oyununu başarıyla tamamla.', en: 'Successfully complete your first fill-in-the-blanks game.', es: 'Completa con éxito tu primer juego de rellenar huecos.', fr: 'Terminez avec succès votre premier jeu de texte à trous.', de: 'Schließe dein erstes Lückentextspiel erfolgreich ab.', it: 'Completa con successo il tuo primo gioco di riempimento spazi.', pt: 'Complete com sucesso seu primeiro jogo de preencher lacunas.', ru: 'Успешно завершите свою первую игру с заполнением пропусков.', ar: 'أكمل أول لعبة ملء فراغات بنجاح.', zh: '成功完成第一次填空游戏。', hi: 'अपना पहला रिक्त स्थान भरें गेम सफलतापूर्वक पूरा करें।', ja: '最初の穴埋めゲームをクリアしましょう。' },
   badge_title_b19: { tr: 'Boşluk Bükücü', en: 'Blank Bender', es: 'Dominador de Espacios', fr: 'Maître des Vides', de: 'Lückenbezwinger', it: 'Signore degli Spazi', pt: 'Dominador de Lacunas', ru: 'Повелитель пропусков', ar: 'مروض الفراغات', zh: '填空专家', hi: 'ब्लैंक बेंडर', ja: '穴埋めの達人' },
   badge_desc_b19: { tr: '5 kez boşluk doldurma oyununu başarıyla tamamla.', en: 'Successfully complete the fill-in-the-blanks game 5 times.', es: 'Completa con éxito el juego de rellenar huecos 5 veces.', fr: 'Terminez avec succès le jeu de texte à trous 5 fois.', de: 'Schließe das Lückentextspiel 5-mal erfolgreich ab.', it: 'Completa con successo il gioco di riempimento spazi 5 volte.', pt: 'Complete com sucesso o jogo de preencher lacunas 5 vezes.', ru: 'Успешно завершите игру с заполнением пропусков 5 раз.', ar: 'أكمل لعبة ملء الفراغات بنجاح 5 مرات.', zh: '成功完成 5 次填空游戏。', hi: '5 बार रिक्त स्थान भरें गेम सफलतापूर्वक पूरा करें।', ja: '穴埋めゲームを5回クリアしましょう。' },
+  notify_prompt_text: {
+    tr: 'Yeni hikayeler, kelime hatırlatıcıları ve can yenileme bildirimlerini almak ister misiniz?',
+    en: 'Would you like to receive notifications for new stories, vocabulary reminders, and heart refills?',
+    es: '¿Te gustaría recibir notificaciones sobre nuevas historias, recordatorios de vocabulario y recargas de vidas?',
+    fr: 'Souhaitez-vous recevoir des notifications pour les nouvelles histoires, les rappels de vocabulaire et les recharges de vies ?',
+    de: 'Möchtest du Benachrichtigungen für neue Geschichten, Vokabelerinnerungen und Lebensaufladungen erhalten?',
+    it: 'Desideri ricevere notifiche per nuove storie, promemoria di vocaboli e ricariche di vite?',
+    pt: 'Gostaria de receber notificações de novas histórias, lembretes de vocabulário e recargas de vidas?',
+    ru: 'Хотите получать уведомления о новых историях, напоминаниях о словах и пополнении жизней?',
+    ar: 'هل ترغب في تلقي إشعارات للقصص الجديدة وتذكيرات المفردات وإعادة تعبئة القلوب؟',
+    zh: '您想接收新故事、单词提醒和生命值恢复的通知吗？',
+    hi: 'क्या आप नई कहानियों, शब्दावली रिमाइंडर्स और जीवन रीफिल के लिए सूचनाएं प्राप्त करना चाहेंगे?',
+    ja: '新しいストーリー、単語のリマインダー、ライフ回復 of 通知を受け取りますか？'
+  },
+  notify_hearts_title: {
+    tr: 'Canların Doldu! ❤️',
+    en: 'Hearts Refilled! ❤️',
+    es: '¡Vidas completas! ❤️',
+    fr: 'Vies rechargées ! ❤️',
+    de: 'Leben voll aufgeladen! ❤️',
+    it: 'Vite ricaricate! ❤️',
+    pt: 'Vidas recarregadas! ❤️',
+    ru: 'Жизни пополнены! ❤️',
+    ar: 'القلوب ممتلئة! ❤️',
+    zh: '生命值已满！ ❤️',
+    hi: 'दिल फिर से भर गए! ❤️',
+    ja: 'ライフが満タンになりました！ ❤️'
+  },
+  notify_hearts_body: {
+    tr: 'Hikayelerine kaldığın yerden devam etmek için canların tamamen yenilendi. Keyifli okumalar!',
+    en: 'Your lives are fully replenished. Jump back in and continue reading your stories!',
+    es: 'Tus vidas se han restablecido por completo. ¡Vuelve a leer tus historias!',
+    fr: 'Vos vies sont entièrement reconstituées. Revenez vite pour continuer la lecture de vos histoires !',
+    de: 'Deine Leben sind wieder voll. Lies jetzt deine Geschichten weiter!',
+    it: 'Le tue vite sono state ricaricate. Torna a leggere le senin storie!',
+    pt: 'Suas vidas foram totalmente restauradas. Volte para continuar lendo suas histórias!',
+    ru: 'Ваши жизни полностью восстановлены. Вернитесь к чтению своих историй!',
+    ar: 'تمت إعادة تعبئة قلوبك بالكامل. عد الآن وتابع قراءة قصصك!',
+    zh: '您的生命值已完全恢复。快回来继续阅读您的故事吧！',
+    hi: 'आपके जीवन पूरी तरह से भर गए हैं। वापस आएं & अपनी कहानियों को पढ़ना जारी रखें!',
+    ja: 'ライフが完全に回復しました。ストーリーの続きを読むために戻ってきましょう！'
+  },
+  notify_daily_title_1: {
+    tr: 'Bugünkü okuma hedefini tamamladın mı? 📚',
+    en: 'Have you read your story today? 📚',
+    es: '¿Has leído tu historia hoy? 📚',
+    fr: 'As-tu lu ton histoire aujourd\'hui ? 📚',
+    de: 'Hast du heute schon gelesen? 📚',
+    it: 'Hai letto la tua storia oggi? 📚',
+    pt: 'Você leu sua história hoje? 📚',
+    ru: 'Вы читали сегодня свою историю? 📚',
+    ar: 'هل قرأت قصتك اليوم؟ 📚',
+    zh: '你今天读故事了吗？ 📚',
+    hi: 'क्या आपने आज अपनी कहानी पढ़ी है? 📚',
+    ja: '今日はストーリーを読みましたか？ 📚'
+  },
+  notify_daily_body_1: {
+    tr: 'İngilizceni geliştirmek için her gün 10 dakika okumak harika bir alışkanlıktır. Hadi başlayalım!',
+    en: 'Reading just 10 minutes a day is a great habit to improve your English. Let\'s start!',
+    es: 'Leer solo 10 minutos al día es un hábito excelente para mejorar tu inglés. ¡Comencemos!',
+    fr: 'Lire seulement 10 minutes par jour est une excellente habitude pour progresser en anglais. Commençons !',
+    de: 'Täglich nur 10 Minuten zu lesen, ist eine großartige Angewohnheit, um dein Englisch zu verbessern. Lass uns anfangen!',
+    it: 'Leggere solo 10 minuti al giorno è un\'optima abitudine per migliorare l\'inglese. Cominciamo!',
+    pt: 'Ler apenas 10 minutos por dia é um ótimo hábito para melhorar seu inglês. Vamos começar!',
+    ru: 'Чтение всего 10 минут в день — отличная привычка для улучшения английского. Давайте начнем!',
+    ar: 'القراءة لمدة 10 دقائق فقط يوميًا هي عادة رائعة لتحسين لغتك الإنجليزية. لنبدأ!',
+    zh: '每天坚持阅读10分钟是提高英语水平的好习惯。让我们开始吧！',
+    hi: 'दिन में केवल 10 minut पढ़ना आपकी अंग्रेजी को बेहतर बनाने की een nesil alışkanlıktır. Hadi başlayalım!',
+    ja: '1日わずか10分間読むことは、英語力を向上させる素晴らしい習慣です. 手軽に始めましょう！'
+  },
+  notify_daily_title_2: {
+    tr: 'Pazartesi motivasyonu! 💪',
+    en: 'Monday Motivation! 💪',
+    es: '¡Motivación de lunes! 💪',
+    fr: 'Motivation du lundi ! 💪',
+    de: 'Montagsmotivation! 💪',
+    it: 'Motivazione del lunedì! 💪',
+    pt: 'Motivação de segunda-feira! 💪',
+    ru: 'Мотивация на понедельник! 💪',
+    ar: 'تحفيز يوم الاثنين! 💪',
+    zh: '周一动力！ 💪',
+    hi: 'सोमवार की प्रेरणा! 💪',
+    ja: '月曜日のモチベーション！ 💪'
+  },
+  notify_daily_body_2: {
+    tr: 'Yeni bir haftaya yeni bir İngilizce hikaye ile başlamaya ne dersin? Seni bekleyen maceralar var!',
+    en: 'Start your week with a fresh English story. Adventure is waiting for you!',
+    es: 'Comienza tu semana con una nueva historia en inglés. ¡Te esperan grandes aventuras!',
+    fr: 'Commencez la semaine avec une nouvelle histoire en anglais. L\'aventure vous attend !',
+    de: 'Starte deine Woche mit einer neuen englischen Geschichte. Das Abenteuer wartet auf dich!',
+    it: 'Inizia la settimana con una nuova storia in inglese. L\'avventura ti aspetta!',
+    pt: 'Comece sua semana com uma nova história em inglês. A aventura está te esperando!',
+    ru: 'Начните неделю с новой истории на английском. Вас ждут приключения!',
+    ar: 'ابدأ أسبوعك بقصة إنجليزية جديدة. المغامرة في انتظارك!',
+    zh: '用一个全新的英语故事开启新的一周。冒险在等着你！',
+    hi: 'एक yeni İngilizce hikaye ile yeni bir haftaya başlamaya ne dersin?',
+    ja: '新しい英語のストーリーで1週間をスタートしましょう。冒険があなたを待っています！'
+  },
+  notify_daily_title_3: {
+    tr: 'Kelime haznene yeni bir kelime ekle! 🔑',
+    en: 'Add a new word to your vocabulary! 🔑',
+    es: '¡Añade una palabra nueva a tu vocabulario! 🔑',
+    fr: 'Ajoute un nouveau mot à ton vocabulaire ! 🔑',
+    de: 'Füge eine neue Vokabel hinzu! 🔑',
+    it: 'Aggiungi una nuova parola al tuo vocabolario! 🔑',
+    pt: 'Adicione uma nova palavra ao seu vocabulário! 🔑',
+    ru: 'Добавьте новое слово в свой словарь! 🔑',
+    ar: 'أضف كلمة جديدة إلى مفرداتك! 🔑',
+    zh: '在你的词汇表中添加一个新单词！ 🔑',
+    hi: 'अपनी शब्दावली में एक नया शब्द जोड़ें! 🔑',
+    ja: '語彙に新しい単語を追加しましょう！ 🔑'
+  },
+  notify_daily_body_3: {
+    tr: 'Günde sadece birkaç yeni kelime öğrenmek bile uzun vadede büyük fark yaratır.',
+    en: 'Learning just a few words every day makes a huge difference in the long run.',
+    es: 'Aprender solo unas pocas palabras al día marka una gran diferencia a largo plazo.',
+    fr: 'Apprendre seulement quelques mots par jour fait une énorme différence sur le long terme.',
+    de: 'Jeden Tag nur ein paar neue Wörter zu lernen, macht langfristig einen riesigen Unterschied.',
+    it: 'Imparare anche solo poche parole al giorno fa una grande differenza a lungo termine.',
+    pt: 'Aprender apenas algumas palavras todos os dias faz uma enorme diferença a prazo.',
+    ru: 'Изучение всего нескольких новых слов каждый день приносит огромную пользу в долгосрочной перспективе.',
+    ar: 'تعلم كلمات قليلة كل يوم يصنع فارقًا كبيرًا على المدى الطويل.',
+    zh: '每天只需学习几个新单词，长此以往就会带来巨大的改变。',
+    hi: 'हर दिन केवल कुछ शब्द सीखने से भी लंबे समय में बहुत बड़ा अंतर आता. है।',
+    ja: '毎日数単語学習するだけでも、長期的には大きな違いが生まれます。'
+  },
+  notify_daily_title_4: {
+    tr: 'Yarı yola geldik! 🌟',
+    en: 'Halfway through the week! 🌟',
+    es: '¡Mitad de semana! 🌟',
+    fr: 'Déjà le milieu de la semaine ! 🌟',
+    de: 'Halbzeit der Woche! 🌟',
+    it: 'Metà settimana! 🌟',
+    pt: 'Metade da semana! 🌟',
+    ru: 'Середина недели! 🌟',
+    ar: 'منتصف الأسبوع! 🌟',
+    zh: '周中过半！ 🌟',
+    hi: 'सप्ताह का मध्य आ गया! 🌟',
+    ja: '週の半分が過ぎました！ 🌟'
+  },
+  notify_daily_body_4: {
+    tr: 'Haftalık okuma serini korumak için bugün de kısa bir hikaye okumaya ne dersin?',
+    en: 'Keep your reading streak alive! Read a short story today.',
+    es: '¡Mantén viva tu racha de lectura! Lee una historia corta hoy.',
+    fr: 'Conservez votre rythme de lecture ! Lisez une histoire courte aujourd\'hui.',
+    de: 'Halte deine Leseserie aufrecht! Lies heute eine kurze Geschichte.',
+    it: 'Mantieni viva la tua serie di letture! Leggi una breve storia oggi.',
+    pt: 'Mantenha sua sequência de leitura activa! Leia uma história curta hoje.',
+    ru: 'Поддерживайте свою серию чтения! Прочитайте сегодня короткую историю.',
+    ar: 'حافظ على استمرار سلسلة قراءتك اليومية! اقرأ قصة قصيرة اليوم.',
+    zh: '保持你的阅读记录！今天读一个简短的故事吧。',
+    hi: 'अपनी पढ़ने की लकीर को जीवित रखें! आज एक छोटी कहानी पढ़ें।',
+    ja: '読書記録を維持しましょう！今日は短いストーリーを読んでみませんか。'
+  },
+  notify_daily_title_5: {
+    tr: 'Yeni dünyalar keşfetmeye hazır mısın? 🌍',
+    en: 'Ready to explore new worlds? 🌍',
+    es: '¿Listo para explorar nuevos mundos? 🌍',
+    fr: 'Prêt à explorer de nouveaux mondes ? 🌍',
+    de: 'Bereit, neue Welten zu erkunden? 🌍',
+    it: 'Pronto a esplorare nuovi mondi? 🌍',
+    pt: 'Pronto para explorar novos mundos? 🌍',
+    ru: 'Готовы исследовать новые миры? 🌍',
+    ar: 'هل أنت مستعد لاستكشاف عوالم جديدة؟ 🌍',
+    zh: '准备好探索新世界了吗？ 🌍',
+    hi: 'क्या आप नई दुनिया की खोज करने के लिए तैयार हैं? 🌍',
+    ja: '新しい世界を探検する準備はできましたか？ 🌍'
+  },
+  notify_daily_body_5: {
+    tr: 'Bugün seni sürükleyici bir macera hikayesi bekliyor. Hemen oku!',
+    en: 'An exciting adventure story is waiting for you today. Let\'s read!',
+    es: 'Hoy te espera una emocionante historia de aventuras. ¡Vamos a leer!',
+    fr: 'Une histoire d\'aventure capturese vous attend aujourd\'hui. Bonne lecture !',
+    de: 'Eine spannende Abenteuergeschichte wartet heute auf dich. Lass uns lesen!',
+    it: 'Una storia d\'avventura avvincente ti aspetta oggi. Cominciamo a leggere!',
+    pt: 'Uma história de aventura emocionante está te esperando hoje. Vamos ler!',
+    ru: 'Сегодня вас ждет захватывающая приключенческая история. Скорее к чтению!',
+    ar: 'قصة مغامرة مثيرة في انتظارك اليوم. دعنا نقرأ!',
+    zh: '今天有一个引人入胜的冒险故事在等着你。快来阅读吧！',
+    hi: 'आज एक रोमांचक साहसिक कहानी आपका इंतजार कर रही है. चलिए पढ़ते हैं!',
+    ja: '今日はワクワクする冒険のストーリーがあなたを待っています。読んでみましょう！'
+  },
+  notify_daily_title_6: {
+    tr: 'Hafta sonuna yaklaşırken... ☕',
+    en: 'Unwind with a story... ☕',
+    es: 'Relájate con una historia... ☕',
+    fr: 'Se détendre avec une histoire... ☕',
+    de: 'Entspanne dich mit einer Geschichte... ☕',
+    it: 'Rilasati con una storia... ☕',
+    pt: 'Relaxe com uma história... ☕',
+    ru: 'Отдохните за чтением истории... ☕',
+    ar: 'استرخ مع قصة... ☕',
+    zh: '读个故事，放松一下... ☕',
+    hi: 'एक कहानी के साथ आराम करें... ☕',
+    ja: 'ストーリーでリラックスタイム... ☕'
+  },
+  notify_daily_body_6: {
+    tr: 'Günün yorgunluğunu güzel bir İngilizce hikaye okuyarak atmaya ne dersin?',
+    en: 'Relax and wind down from a busy week by reading a beautiful English story.',
+    es: 'Relájate del cansancio del día leyendo una hermosa historia en inglés.',
+    fr: 'Oubliez la fatigue de la journée en lisant une jolie histoire en anglais.',
+    de: 'Lass den Tag entspannt ausklingen, indem du eine schöne englische Geschichte liest.',
+    it: 'Dimentica la stanchezza del giorno leggendo una piacevole storia in inglese.',
+    pt: 'Relaxe do cansaço do dia lendo uma bela história em inglês.',
+    ru: 'Снимите усталость дня, прочитав интересную историю на английском.',
+    ar: 'ما رأيك في التخلص من تعب اليوم بقراءة قصة إنجليزية لطيفة؟',
+    zh: '读一个精美的英语故事，消除一天的疲惫怎么样？',
+    hi: 'एक खूबसूरत अंग्रेजी कहानी पढ़कर दिन की थकान मिटाने के बारे में क्या ख्याल है?',
+    ja: '素敵な英語のストーリーを読んで、1日の疲れを癒しませんか？'
+  },
+  notify_daily_title_7: {
+    tr: 'Hafta sonu okuma zamanı! 🛋️',
+    en: 'Weekend Reading Time! 🛋️',
+    es: '¡Tiempo de leitura de fin de semana! 🛋️',
+    fr: 'Temps de lecture du week-end ! 🛋️',
+    de: 'Lesezeit am Wochenende! 🛋️',
+    it: 'Tempo di leitura del fine settimana! 🛋️',
+    pt: 'Hora da leitura de fim de semana! 🛋️',
+    ru: 'Время чтения на выходных! 🛋️',
+    ar: 'وقت القراءة في عطلة نهاية الأسبوع! 🛋️',
+    zh: '周末阅读时间！ 🛋️',
+    hi: 'सप्ताहांत में पढ़ने का समय! 🛋️',
+    ja: '週末の読書タイム！ 🛋️'
+  },
+  notify_daily_body_7: {
+    tr: 'Rahatla, kahveni al ve İngilizce öykünle güzel bir serüvene yelken aç.',
+    en: 'Grab a cup of coffee and enjoy a wonderful journey with your English story.',
+    es: 'Relájate, toma un café y embárcate en una hermosa aventura con tu historia en inglés.',
+    fr: 'Détendez-vous, prenez un café et évadez-vous dans une jolie histoire en anglais.',
+    de: 'Nimm dir einen Kaffee, mach es dir bequem und genieße deine englische Geschichte.',
+    it: 'Prendi un caffè, mettiti comodo e goditi una bella avventura con la tua storia in inglese.',
+    pt: 'Relaxe, tome um café e embarque em uma bela aventura com sua história em inglês.',
+    ru: 'Расслабьтесь, выпейте чашечку кофе ve погрузитесь в интересную историю на английском.',
+    ar: 'استرح، تناول قهوتك وانطلق في مغامرة جميلة مع قصتك الإنجليزية.',
+    zh: '放松一下，喝杯咖啡，用你的英语故事开启一段奇妙の冒险之旅。',
+    hi: 'आराम करें, अपनी कॉफी लें ve अपनी अंग्रेजी कहानी के साथ एक सुंदर यात्रा पर निकलें।',
+    ja: 'リラックスしてコーヒーを片手に、英語のストーリーで素晴らしい旅に出かけましょう。'
+  },
   btn_view: {
     tr: 'İncele', en: 'View', es: 'Ver', fr: 'Voir', de: 'Ansehen',
     it: 'Vedi', pt: 'Ver', ru: 'Посмотреть', ar: 'عرض', zh: '查看', hi: 'देखें', ja: '表示'
@@ -1595,17 +2004,17 @@ export const TRANSLATIONS: Record<string, Record<LanguageCode, string>> = {
   },
   share_desc: {
     tr: 'İngilizce Öyküm ile harika hikayeler okuyup yeni kelimeler öğreniyorum! Sen de hemen indir ve bana katıl:',
-    en: 'I read great stories and learn new words with İngilizce Öyküm! Download now and join me:',
-    es: '¡Leo grandes historias y aprendo nuevas palabras con İngilizce Öyküm! Descárgalo ahora y únete a mí:',
-    fr: 'Je lis de superbes histoires et j\'apprends de nouveaux mots avec İngilizce Öyküm ! Téléchargez maintenant et rejoignez-moi :',
-    de: 'Ich lese tolle Geschichten und lerne neue Wörter mit İngilizce Öyküm! Lade es jetzt herunter und mach mit:',
-    it: 'Leggo storie fantastiche e imparo nuovi vocaboli con İngilizce Öyküm! Scarica ora e unisciti a me:',
-    pt: 'Eu leio ótimas histórias e aprendo novas palavras com o İngilizce Öyküm! Baixe agora e junte-se a mim:',
-    ru: 'Я читаю отличные истории и учу новые слова с İngilizce Öyküm! Скачайте сейчас и присоединяйтесь ко мне:',
-    ar: 'أنا أقرأ قصصاً رائعة وأتعلم كلمات جديدة مع İngilizce Öyküm! حمل التطبيق الآن وانضم إليّ:',
-    zh: '我正在使用 İngilizce Öyküm 阅读精彩故事并学习新单词！立即下载并加入我：',
-    hi: 'मैं İngilizce Öyküm के साथ बेहतरीन कहानियाँ पढ़ता हूँ और नए शब्द सीखता हूँ! अभी डाउनलोड करें और मेरे साथ जुड़ें:',
-    ja: 'İngilizce Öykümで素晴らしいストーリーを読み、新しい単語を学んでいます！今すぐダウンロードして一緒に始めましょう：'
+    en: 'I read great stories and learn new words with My English Story! Download now and join me:',
+    es: '¡Leo grandes historias y aprendo nuevas palabras con My English Story! Descárgalo ahora y únete a mí:',
+    fr: 'Je lis de superbes histoires et j\'apprends de nouveaux mots avec My English Story ! Téléchargez maintenant et rejoignez-moi :',
+    de: 'Ich lese tolle Geschichten und lerne neue Wörter mit My English Story! Lade es jetzt herunter und mach mit:',
+    it: 'Leggo storie fantastiche e imparo nuovi vocaboli con My English Story! Scarica ora e unisciti a me:',
+    pt: 'Eu leio ótimas histórias e aprendo novas palavras com o My English Story! Baixe agora e junte-se a mim:',
+    ru: 'Я читаю отличные истории и учу новые слова с My English Story! Скачайте сейчас и присоединяйтесь ко мне:',
+    ar: 'أنا أقرأ قصصاً رائعة وأتعلم كلمات جديدة مع My English Story! حمل التطبيق الآن وانضم إليّ:',
+    zh: '我正在使用 My English Story 阅读精彩故事并学习新单词！立即下载并加入我：',
+    hi: 'मैं My English Story के साथ बेहतरीन कहानियाँ पढ़ता हूँ और नए शब्द सीखता हूँ! अभी डाउनलोड करें और मेरे साथ जुड़ें:',
+    ja: 'My English Storyで素晴らしいストーリーを読み、新しい単語を学んでいます！今すぐダウンロードして一緒に始めましょう：'
   },
   share_code_label: {
     tr: 'Davet Kodum:', en: 'My Invite Code:', es: 'Mi código de invitación:', fr: 'Mon code d\'invitation :', de: 'Mein Einladungscode:',
@@ -1630,6 +2039,10 @@ export const TRANSLATIONS: Record<string, Record<LanguageCode, string>> = {
   share_qr_label: {
     tr: 'Davet Kodu & QR Kodu', en: 'Invite Code & QR Code', es: 'Código de invitación y código QR', fr: 'Code d\'invitation et code QR', de: 'Einladungscode & QR-Code',
     it: 'Codice d\'invito e codice QR', pt: 'Código de Convite e Código QR', ru: 'Код приглашения и QR-код', ar: 'رمز الدعوة ورمز QR', zh: '邀请码和二维码', hi: 'आमंत्रण कोड और क्यूआर कोड', ja: '招待コード＆QRコード'
+  },
+  share_qr_desc: {
+    tr: 'Arkadaşının kamerasına bu QR kodu taratarak paylaş.', en: 'Have your friend scan this QR code with their camera.', es: 'Pídele a tu amigo que escanee este código QR con su cámara.', fr: 'Faites scanner ce code QR par votre ami avec son appareil photo.', de: 'Lassen Sie Ihren Freund diesen QR-Code mit seiner Kamera scannen.',
+    it: 'Fai scansionare questo codice QR al tuo amico con la fotocamera.', pt: 'Peça ao seu amigo para escanear este código QR com a câmera.', ru: 'Попросите друга отсканировать этот QR-код камерой.', ar: 'اجعل صديقك يمسح رمز QR هذا بكاميرته.', zh: '让你的朋友用相机扫描这个二维码。', hi: 'अपने मित्र से इस क्यूआर कोड को अपने कैमरे से स्कैन करवाएं।', ja: '友達のカメラでこのQRコードをスキャンしてもらいます。'
   },
   about_title: {
     tr: 'Hakkımızda & Puan Ver', en: 'About Us & Rate', es: 'Sobre nosotros y calificar', fr: 'À propos et évaluer', de: 'Über uns & Bewerten',
@@ -1703,7 +2116,7 @@ export const TRANSLATIONS: Record<string, Record<LanguageCode, string>> = {
   },
   oauth_desc_facebook: {
     tr: 'İngilizce Öyküm uygulaması hesabınıza bağlanmak istiyor.', en: 'İngilizce Öyküm app wants to connect to your account.', es: 'La aplicación İngilizce Öyküm quiere conectarse a su cuenta.', fr: 'L\'application İngilizce Öyküm souhaite se connecter à votre compte.', de: 'İngilizce Öyküm App möchte sich mit Ihrem Konto verbinden.',
-    it: 'L\'app İngilizce Öyküm desidera connettersi al tuo account.', pt: 'O aplicativo İngilizce Öyküm deseja se conectar à sua conta.', ru: 'Приложение İngilizce Öyküm хочет подключиться к вашему аккаунту.', ar: 'يريد تطبيق İngilizce Öyküm الاتصال بحسابك.', zh: 'İNGİLİZCE ÖYKÜM 应用想要连接到您的账户。', hi: 'İngilizce Öyküm ऐप आपके खाते से जुड़ना चाहता है।', ja: 'İngilizce Öyküm アプリがアクセスを求めています：'
+    it: 'L\'app İngilizce Öyküm desidera connettersi al tuo account.', pt: 'O aplicativo İngilizce Öyküm deseja se conectar à sua conta.', ru: 'Приложение İngilizce Öyküm хочет подключиться к вашему аккаунту.', ar: 'يريد تطبيق İngilizce Öyküm الاتصال بحسابك.', zh: 'İNGİLİZCE ÖYKÜM 应用想要连接到您的账户。', hi: 'İngilizce Öyküm ऐप आपके खाते से जुड़ना चाहता है。', ja: 'İngilizce Öyküm アプリがアクセスを求めています：'
   },
   oauth_logging_in_fb: {
     tr: 'Facebook ile Giriş yapılıyor', en: 'Logging in with Facebook', es: 'Iniciando sesión con Facebook', fr: 'Connexion avec Facebook', de: 'Anmeldung mit Facebook',
@@ -1795,8 +2208,8 @@ export const TRANSLATIONS: Record<string, Record<LanguageCode, string>> = {
     it: 'Vite', pt: 'Vidas', ru: 'Жизни', ar: 'أرواح', zh: '生命值', hi: 'जीवन', ja: 'ライフ'
   },
   profile_user_title: {
-    tr: 'İngilizce Öyküm Okuru', en: 'İngilizce Öyküm Reader', es: 'Lector de İngilizce Öyküm', fr: 'Lecteur de İngilizce Öyküm', de: 'İngilizce Öyküm Leser',
-    it: 'Lettore di İngilizce Öyküm', pt: 'Leitor do İngilizce Öyküm', ru: 'Читатель İngilizce Öyküm', ar: 'قارئ İngilizce Öyküm', zh: 'İngilizce Öyküm 读者', hi: 'İngilizce Öyküm पाठक', ja: 'İngilizce Öyküm リーダー'
+    tr: 'İngilizce Öyküm Okuru', en: 'My English Story Reader', es: 'Lector de My English Story', fr: 'Lecteur de My English Story', de: 'My English Story Leser',
+    it: 'Lettore di My English Story', pt: 'Leitor do My English Story', ru: 'Читатель My English Story', ar: 'قارئ My English Story', zh: 'My English Story 读者', hi: 'My English Story पाठक', ja: 'My English Story リーダー'
   },
   share_preparing: {
     tr: '{platform} için hazırlanıyor...', en: 'Preparing for {platform}...', es: 'Preparándose para {platform}...', fr: 'Préparation pour {platform}...', de: 'Vorbereitung für {platform}...',
@@ -1956,6 +2369,10 @@ export const TRANSLATIONS: Record<string, Record<LanguageCode, string>> = {
     tr: 'PREMIUM ÜYE', en: 'PREMIUM MEMBER', es: 'MIEMBRO PREMIUM', fr: 'MEMBRE PREMIUM', de: 'PREMIUM-MITGLIED',
     it: 'MEMBRO PREMIUM', pt: 'MEMBRO PREMIUM', ru: 'ПРЕМИУМ УЧАСТНИК', ar: 'عضو بريميوم', zh: '会员用户', hi: 'प्रीमियम सदस्य', ja: 'プレミアム会員'
   },
+  profile_premium_features: {
+    tr: 'Premium Özellikler', en: 'Premium Features', es: 'Características Premium', fr: 'Fonctionnalités Premium', de: 'Premium-Funktionen',
+    it: 'Funzionalità Premium', pt: 'Recursos Premium', ru: 'Премиум-функции', ar: 'ميزات بريميوم', zh: '高级功能', hi: 'प्रीमियम विशेषताएं', ja: 'プレミアム機能'
+  },
   profile_premium_purchase_date: {
     tr: 'Alındığı Tarih: {date}', en: 'Purchase Date: {date}', es: 'Fecha de compra: {date}', fr: 'Date d\'achat : {date}', de: 'Kaufdatum: {date}',
     it: 'Data di acquisto: {date}', pt: 'Data de compra: {date}', ru: 'Дата покупки: {date}', ar: 'تاريخ الشراء: {date}', zh: '购买日期：{date}', hi: 'खरीद तिथि: {date}', ja: '購入日: {date}'
@@ -2091,8 +2508,8 @@ export const TRANSLATIONS: Record<string, Record<LanguageCode, string>> = {
     it: 'I tuoi vantaggi Premium', pt: 'Seus Benefícios Premium', ru: 'Ваши Премиум преимущества', ar: 'مزايا بريميوم الخاصة بك', zh: '您的会员特权', hi: 'आपके प्रीमियम लाभ', ja: 'プレミアム特典'
   },
   premium_benefits_tag: {
-    tr: 'İNGİLİZCE ÖYKÜM PREMİUM', en: 'İNGİLİZCE ÖYKÜM PREMIUM', es: 'İNGİLİZCE ÖYKÜM PREMIUM', fr: 'İNGİLİZCE ÖYKÜM PREMIUM', de: 'İNGİLİZCE ÖYKÜM PREMIUM',
-    it: 'İNGİLİZCE ÖYKÜM PREMIUM', pt: 'İNGİLİZCE ÖYKÜM PREMIUM', ru: 'İNGİLİZCE ÖYKÜM PREMIUM', ar: 'İNGİLİZCE ÖYKÜM PREMIUM', zh: 'İNGİLİZCE ÖYKÜM 会员', hi: 'İNGİLİZCE ÖYKÜM premium', ja: 'İNGİLİZCE ÖYKÜM プレミアム'
+    tr: 'İNGİLİZCE ÖYKÜM PREMİUM', en: 'MY ENGLISH STORY PREMIUM', es: 'MY ENGLISH STORY PREMIUM', fr: 'MY ENGLISH STORY PREMIUM', de: 'MY ENGLISH STORY PREMIUM',
+    it: 'MY ENGLISH STORY PREMIUM', pt: 'MY ENGLISH STORY PREMIUM', ru: 'MY ENGLISH STORY PREMIUM', ar: 'MY ENGLISH STORY PREMIUM', zh: 'MY ENGLISH STORY 会员', hi: 'MY ENGLISH STORY premium', ja: 'MY ENGLISH STORY プレミアム'
   },
   premium_benefit_1_title: {
     tr: 'Sınırsız Enerji & Can', en: 'Unlimited Energy & Lives', es: 'Energía y vidas ilimitadas', fr: 'Énergie & vies illimitées', de: 'Unbegrenzte Energie & Leben',
@@ -2111,21 +2528,22 @@ export const TRANSLATIONS: Record<string, Record<LanguageCode, string>> = {
     it: 'In qualsiasi momento, puoi passare alla pagina o alla sezione successiva con un solo pulsante senza dover risolvere il quiz.', pt: 'A qualquer momento, você pode pular para a próxima página ou seção com un único botão, sem precisar resolver o quiz.', ru: 'В любой момент вы можете перейти к следующей странице или разделу одной кнопкой, без необходимости проходить тест.', ar: 'في أي وقت، يمكنك الانتقال إلى الصفحة أو القسم التالي بزر واحد دون الحاجة إلى حل الاختبار.', zh: '无需解开测试，一键即可跳转 to 下一页或下一章节。', hi: 'किसी भी समय, आप क्विज़ को hel किए बिना bir butonla geçebilirsiniz.', ja: 'クイズを解くことなく、ボタン一つで次のページやセクションにスキップできます。'
   },
   premium_benefit_3_title: {
-    tr: 'Akıllı Yapay Zeka Sözlüğü', en: 'Smart AI Dictionary', es: 'Diccionario inteligente de IA', fr: 'Dictionnaire intelligent IA', de: 'Intelligentes KI-Wörterbuch',
-    it: 'Dizionario inteligente IA', pt: 'Dicionário Inteligente de IA', ru: 'Умный словарь ИИ', ar: 'قاموس الذكاء الاصطناعي الذكي', zh: '智能人工智能词典', hi: 'स्मार्ट एआई डिक्शनरी', ja: 'スマートAI辞書'
+    tr: 'Sınırsız Kelime Arama', en: 'Unlimited Word Lookups', es: 'Búsquedas de palabras ilimitadas', fr: 'Recherches de mots illimitées', de: 'Unbegrenzte Wortsuche',
+    it: 'Ricerche di parole illimitate', pt: 'Buscas de palavras ilimitadas', ru: 'Безлимитный поиск слов', ar: 'بحث غير محدود عن الكلمات', zh: '无限单词查询', hi: 'असीमित शब्द खोजना', ja: '無制限の単語検索'
   },
   premium_benefit_3_desc: {
-    tr: 'Kelimelerin ve deyimlerin bağlamsal detaylı Türkçe açıklamalarına ve örnek cümlelerine sınırsız erişin.', en: 'Access unlimited contextual detailed explanations and example sentences for words and phrases in your native language.', es: 'Acceda a explicaciones detalladas contextuales y oraciones de ejemplo ilimitadas para palabras y frases en su idioma nativo.', fr: 'Accédez à des explications détaillées contextuelles et à des exemples de phrases illimités pour les mots et expressions dans votre langue maternelle.', de: 'Erhalten Sie unbegrenzten Zugriff auf kontextbezogene detaillierte Erklärungen und Beispielsätze für Wörter und Sätze in Ihrer Muttersprache.',
-    it: 'Accedi a spiegazioni dettagliate contestuali e frasi di esempio illimitate per parole e frasi nella tua lingua madre.', pt: 'Acesse explicações detalhadas contextuais e frases de örnek cümlelerine sınırsız erişin.', ru: 'Получите неограниченный доступ к контекстным подробным объяснениям и примерам предложений для слов и фраз на вашем родном языке.', ar: 'الوصول إلى تفسيرات تفصيلية سياقية غير محدودة وجمل أمثلة للكلمات والعبارات بلغتك الأم.', zh: '无限制获取您母语的单词和短语的上下文详细解释及例句。', hi: 'अपनी मातृभाषा में words detail açıklamalarına ve örnek cümlelerine sınırsız erişin.', ja: '単語やフレーズの、母国語による文脈に応じた詳細な説明と例文に無制限にアクセスできます。'
+    tr: 'Günlük 30 ücretsiz kelime arama limiti yerine, dilediğiniz kadar kelimenin anlamına ve detaylarına sınırsızca bakın.', en: 'Instead of the daily 30 free word lookup limit, search and view word meanings and details as much as you want.', es: 'En lugar del límite diario de 30 búsquedas de palabras gratuitas, busque y vea los significados y detalles de las palabras tanto como desee.', fr: 'Au lieu de la limite quotidienne de 30 recherches de mots gratuites, recherchez et affichez les significations et les détails des mots autant de fois que vous le souhaitez.', de: 'Anstelle des täglichen Limits von 30 kostenlosen Wortsuchen können Sie Wortbedeutungen und -details so oft suchen und anzeigen, wie Sie möchten.',
+    it: 'Invece del limite giornaliero di 30 ricerche di parole gratuite, cerca e visualizza i significati e i dettagli delle parole quanto vuoi.', pt: 'Em vez do limite diário de 30 buscas de palavras gratuitas, pesquise e veja os significados e detalhes das palavras o quanto quiser.', ru: 'Вместо дневного лимита в 30 бесплатных поисков слов ищите и просматривайте значения и детали слов сколько угодно.', ar: 'بدلاً من الحد اليومي البالغ 30 بحثاً مجانياً عن الكلمات، ابحث واعرض معاني الكلمات وتفاصيلها بقدر ما تريد.', zh: '不受每日 30 次免费单词查询的限制，无限制查询和查看单词释义及详情。', hi: 'दैनिक 30 मुफ्त शब्द खोज सीमा के बजाय, जितना चाहें उतने शब्दों के अर्थ और विवरण खोजें ve देखें।', ja: '1日30回の無料単語検索制限に代わり、回数制限なしで好きなだけ単語の意味や詳細を検索・閲覧できます。'
   },
   premium_benefit_4_title: {
-    tr: 'Doğal Akıcı Ses Sentezi', en: 'Natural Fluent Speech Synthesis', es: 'Síntesis de voz fluida y natural', fr: 'Synthèse vocale fluide et naturelle', de: 'Natürliche fließende Sprachsynthese',
-    it: 'Sintesi vocale fluida e naturale', pt: 'Síntese de Voz Fluida e Natural', ru: 'Естественный синтез речи', ar: 'تركيب صوتi طبيعي بطلاقة', zh: '自然流畅的语音合成', hi: 'प्राकृतिक धाराप्रवाह भाषण संश्लेषण', ja: '自然で流暢な音声読み上げ'
+    tr: 'Sınırsız Cümle Çevirisi', en: 'Unlimited Sentence Translations', es: 'Traducciones de oraciones ilimitadas', fr: 'Traductions de phrases illimitées', de: 'Unbegrenzte Satzübersetzungen',
+    it: 'Traduzioni di frasi illimitate', pt: 'Traduções de frases ilimitadas', ru: 'Безлимитный перевод предложений', ar: 'ترجمة غير محدودة للجمل', zh: '无限句子翻译', hi: 'असीमित वाक्य अनुवाद', ja: '無制限の文章翻訳'
   },
   premium_benefit_4_desc: {
-    tr: 'Cümleleri ve kelimeleri akıcı, yüksek kaliteli seslendirmelerle dinleyerek kulak aşinalığınızı katlayın.', en: 'Double your listening comprehension by listening to sentences and words with fluent, high-quality voiceovers.', es: 'Duplica tu comprensión auditiva escuchando oraciones y palabras con locuciones fluidas y de alta calidad.', fr: 'Doublez votre compréhension orale en écoutant des phrases et des mots avec des voix off fluides et de haute qualité.', de: 'Verdoppeln Sie Ihr Hörverstehen, indem Sie Sätze und Wörter mit fließenden, hochwertigen Voiceovers anhören.',
-    it: 'Raddoppia la tua comprensione d\'ascolto ascoltando frasi e parole con voci fuori campo fluide e di alta qualità.', pt: 'Dobre sua compreensão auditiva ouvindo frases e palavras com dublagens fluídas e de alta qualidade.', ru: 'Удвойте понимание на слух, слушая предложения и слова с плавным и качественным озвучиванием.', ar: 'ضاعف استيعابك السمعي من خلال الاستماع إلى الجمل والكلمات بتعليقات صوتية طليقة وعالية الجودة.', zh: '通过聆听流畅、高质量的配音，加倍提升您的听力理解能力。', hi: 'धाराप्रवाह, yüksek kaliteli seslendirmelerle dinleyerek kulak aşinalığınızı katlayın.', ja: '自然で流暢な音声で文や単語を聴くことで、リスニング力を飛倍に向上させます。'
+    tr: 'Günlük 15 ücretsiz cümle çeviri limiti yerine, öykülerdeki tüm cümleleri ve deyimleri sınırsızca anında çevirin.', en: 'Instead of the daily 15 free sentence translation limit, translate all sentences and phrases in stories instantly without limits.', es: 'En lugar del límite diario de 15 traducciones de oraciones gratuitas, traduzca todas las oraciones y frases en las historias al instante sin límites.', fr: 'Au lieu de la limite quotidienne de 15 traductions de phrases gratuites, traduisez instantanément et sans limites toutes les phrases et expressions des histoires.', de: 'Anstelle des täglichen Limits von 15 kostenlosen Satzübersetzungen können Sie alle Sätze und Phrasen in Geschichten sofort und ohne Einschränkungen übersetzen.',
+    it: 'Invece del limite giornaliero di 15 traduzioni di frasi gratuite, traduci istantaneamente e senza limiti tutte le frasi e le locuzioni nelle storie.', pt: 'Em vez do limite diário de 15 traduções de frases gratuitas, traduza instantaneamente todas as frases e expressões nas histoires sem limites.', ru: 'Вместо дневного лимита в 15 бесплатных переводов предложений переводите любые предложения и фразы в историях мгновенно и без ограничений.', ar: 'بدلاً من الحد اليومي البالغ 15 ترجمة مجانية للجمل، ترجم جميع الجمل والعبارات في القصص فوراً وبla حدود.', zh: '不受每日 15 次免费句子翻译的限制，无限制即时翻译故事中的所有句子和短语。', hi: 'दैनिक 15 मुफ्त वाक्य अनुवाद सीमा के बजाय, कहानियों के सभी वाक्यों और मुहावरों का तुरंत और बिना सीमा के अनुवाद करें।', ja: '1日15回の無料文章翻訳制限に代わり、ストーリー内のすべての文章やフレーズを瞬時に無制限で翻訳できます。'
   },
+
   premium_benefits_thanks: {
     tr: 'Harika, Teşekkürler!', en: 'Great, Thanks!', es: '¡Genial, gracias!', fr: 'Super, merci !', de: 'Großartig, danke!',
     it: 'Ottimo, grazie!', pt: 'Ótimo, obrigado!', ru: 'Отлично, спасибо!', ar: 'رائع، شكراً!', zh: '太棒了，谢谢！', hi: 'çok iyi, teşekkürler!', ja: '素晴らしい、ありがとう！'
@@ -2729,8 +3147,8 @@ export const TRANSLATIONS: Record<string, Record<LanguageCode, string>> = {
     ja: '読書を続けるには、時間経過によるライフの回復を待つか、プレミアムにアップグレードしてライフを即座に全回復できます！'
   },
   premium_access_title: {
-    tr: 'İngilizce Öyküm Premium Erişimi', en: 'İngilizce Öyküm Premium Access', es: 'Acceso Premium a İngilizce Öyküm', fr: 'Accès Premium İngilizce Öyküm', de: 'İngilizce Öyküm Premium-Zugriff',
-    it: 'Accesso Premium İngilizce Öyküm', pt: 'Acesso Premium İngilizce Öyküm', ru: 'Премиум-доступ İngilizce Öyküm', ar: 'اشتراك بريميوم في İngilizce Öyküm', zh: 'İngilizce Öyküm 会员通道', hi: 'İngilizce Öyküm प्रीमियम एक्सेस', ja: 'İngilizce Öyküm プレミアムアクセス'
+    tr: 'İngilizce Öyküm Premium Erişimi', en: 'My English Story Premium Access', es: 'Acceso Premium a My English Story', fr: 'Accès Premium My English Story', de: 'My English Story Premium-Zugriff',
+    it: 'Accesso Premium My English Story', pt: 'Acesso Premium My English Story', ru: 'Премиум-доступ My English Story', ar: 'اشتراك بريميوم في My English Story', zh: 'My English Story 会员通道', hi: 'My English Story प्रीमियम एक्सेस', ja: 'My English Story プレミアムアクセス'
   },
   refill_countdown_desc: {
     tr: 'Bir sonraki can {time} içinde dolacak.', en: 'Next life will refill in {time}.', es: 'La próxima vida se recargará en {time}.', fr: 'La prochaine vie se rechargera dans {time}.', de: 'Das nächste Leben wird in {time} aufgeladen.',
@@ -2895,6 +3313,118 @@ export const TRANSLATIONS: Record<string, Record<LanguageCode, string>> = {
   auth_error_login_generic: {
     tr: 'Oturum açılamadı. Lütfen tekrar deneyin. ⚠️', en: 'Could not log in. Please try again. ⚠️', es: 'No se pudo iniciar sesión. Por favor intente de nuevo. ⚠️', fr: 'Impossible de se connecter. Veuillez réessayer. ⚠️', de: 'Anmeldung nicht möglich. Bitte versuchen Sie es erneut. ⚠️',
     it: 'Impossibile accedere. Riprova. ⚠️', pt: 'Não foi possível fazer o login. Por favor tente novamente. ⚠️', ru: 'Не удалось войти в систему. Пожалуйста, попробуйте еще раз. ⚠️', ar: 'تعذر تسجيل الدخول. يرجى المحاولة مرة أخرى. ⚠️', zh: '无法登录。请重试。⚠️', hi: 'लॉग इन नहीं किया जा सका। कृपया पुनः प्रयास करें। ⚠️', ja: 'ログインできませんでした。もう一度お試しください。⚠️'
+  },
+  dict_lookups_left: {
+    tr: 'Bugün için {count} kelime hakkınız kaldı',
+    en: '{count} lookups left today',
+    es: 'Quedan {count} consultas de palabras hoy',
+    fr: "Il reste {count} recherches de mots aujourd'hui",
+    de: 'Heute noch {count} Wortabfragen übrig',
+    it: 'Rimangono {count} ricerche di parole oggi',
+    pt: 'Restam {count} consultas de palavras hoje',
+    ru: 'Сегодня осталось {count} поисков слов',
+    ar: 'متبقي {count} عمليات بحث عن كلمات اليوم',
+    zh: '今天还剩 {count} 次单词查询次数',
+    hi: 'आज {count} शब्द खोजें शेष हैं',
+    ja: '今日の単語検索は残り {count} 回です'
+  },
+  sentence_trans_left: {
+    tr: 'Bugün için {count} cümle hakkınız kaldı',
+    en: '{count} translations left today',
+    es: 'Quedan {count} traducciones de oraciones hoy',
+    fr: "Il reste {count} traductions de phrases aujourd'hui",
+    de: 'Heute noch {count} Satzübersetzungen übrig',
+    it: 'Rimangono {count} traduzioni di frasi oggi',
+    pt: 'Restam {count} traduções de frases hoje',
+    ru: 'Сегодня осталось {count} переводов предложений',
+    ar: 'متبقي {count} ترجمة جمل اليوم',
+    zh: '今天还剩 {count} 次句子翻译次数',
+    hi: 'आज {count} वाक्य अनुवाद शेष हैं',
+    ja: '今日の文章翻訳は残り {count} 回です'
+  },
+  limit_reached_title_word: {
+    tr: 'Kelime Çeviri Limitine Ulaştınız',
+    en: 'Word Limit Reached',
+    es: 'Límite de consulta de palabras alcanzado',
+    fr: 'Limite de recherche de mots atteinte',
+    de: 'Wortabfragelimit erreicht',
+    it: 'Limite di ricerca parole raggiunto',
+    pt: 'Limite de consulta de palavras atingido',
+    ru: 'Лимит поиска слов исчерпан',
+    ar: 'تم الوصول إلى حد الكلمات',
+    zh: '单词查询次数已达上限',
+    hi: 'शब्द सीमा समाप्त',
+    ja: '単語検索の上限に達しました'
+  },
+  limit_reached_desc_word: {
+    tr: 'Hikayelerde günlük ücretsiz kelime çeviri limitine (30) ulaştınız. Kelimelerin bağlamsal anlamlarını ve detaylı açıklamalarını sınırsız görmek için Premium\'a geçebilirsiniz.',
+    en: 'You have reached your daily free word lookup limit (30) in stories. You can upgrade to Premium to view contextual word meanings and detailed explanations without limits.',
+    es: 'Has alcanzado tu límite diario de consulta de palabras gratuitas (30) en las historias. Puedes pasarte a Premium para ver los significados contextuales de las palabras y explicaciones detalladas sin límites.',
+    fr: "Vous avez atteint votre limite quotidienne de recherche de mots gratuite (30) dans les histoires. Vous pouvez passer à Premium pour afficher les significations contextuelles des mots et des explications détaillées sans limites.",
+    de: 'Sie haben Ihr tägliches Limit für die kostenlose Wortsuche (30) in Geschichten erreicht. Sie können auf Premium upgraden, um kontextbezogene Wortbedeutungen und detaillierte Erklärungen unbegrenzt anzuzeigen.',
+    it: 'Hai raggiunto il limite giornaliero gratuito di ricerca parole (30) nelle storie. Puoi passare a Premium per visualizzare i significati contestuali delle parole e spiegazioni dettagliate senza limiti.',
+    pt: 'Você atingiu o limite diário de consulta de palavras gratuitas (30) nas histórias. Você pode atualizar para o Premium para visualizar significados de palavras contextuais e explicações detalhadas sem limites.',
+    ru: 'Вы достигли дневного лимита бесплатных поисков слов (30) в историях. Вы можете перейти на Премиум, чтобы без ограничений просматривать контекстные значения слов и подробные объяснения.',
+    ar: 'لقد وصلت إلى الحد اليومي المجاني للبحث عن الكلمات (30) في القصص. يمكنك الترقية إلى بريميوم لعرض معاني الكلمات السياقية والشروحات التفصيلية بلا حدود.',
+    zh: '您已达到故事中每日免费单词查询上限（30次）。您可以升级到会员以无限制地查看单词的上下文含义和详细解释。',
+    hi: 'आप कहानियों में अपनी दैनिक निःशुल्क शब्द खोज सीमा (30) तक पहुँच चुके हैं। आप संदर्भ के अनुसार शब्दों के अर्थ और विस्तृत स्पष्टीकरण बिना किसी सीमा के देखने के लिए प्रीमियम में अपग्रेड कर सकते हैं।',
+    ja: 'ストーリーでの今日の無料単語検索上限（30回）に達しました。プレミアムプランに加入すると、文脈に応じた単語の意味や詳細な解説を無制限で閲覧できるようになります。'
+  },
+  limit_reached_title_sentence: {
+    tr: 'Cümle Çeviri Limitine Ulaştınız',
+    en: 'Sentence Limit Reached',
+    es: 'Límite de traducción de oraciones alcanzado',
+    fr: 'Limite de traduction de phrases atteinte',
+    de: 'Satzübersetzungslimit erreicht',
+    it: 'Limite di traduzione frasi raggiunto',
+    pt: 'Limite de tradução de frases atingido',
+    ru: 'Лимит переводов предложений исчерпан',
+    ar: 'تم الوصول إلى حد ترجمة الجمل',
+    zh: '句子翻译次数已达上限',
+    hi: 'वाक्य अनुवाद सीमा समाप्त',
+    ja: '文章翻訳の上限に達しました'
+  },
+  limit_reached_desc_sentence: {
+    tr: 'Hikayelerde günlük ücretsiz cümle çeviri limitine (15) ulaştınız. Cümleleri ve deyimleri sınırsız çevirmek için Premium\'a geçebilirsiniz.',
+    en: 'You have reached your daily free sentence translation limit (15) in stories. You can upgrade to Premium to translate sentences and phrases without limits.',
+    es: 'Has alcanzado tu límite diario de traducción de oraciones gratuitas (15) en las historias. Puedes pasarte a Premium para traducir frases y oraciones sin límites.',
+    fr: "Vous avez atteint votre limite quotidienne de traduction de phrases gratuite (15) dans les histoires. Vous pouvez passer à Premium pour traduire des phrases et des expressions sans limites.",
+    de: 'Sie haben Ihr tägliches Limit für die kostenlose Satzübersetzung (15) in Geschichten erreicht. Sie können auf Premium upgraden, um Sätze und Phrasen unbegrenzt zu übersetzen.',
+    it: 'Hai raggiunto il limite giornaliero gratuito di traduzione frasi (15) nelle storie. Puoi passare a Premium per tradurre frasi e locuzioni senza limiti.',
+    pt: 'Você atingiu o limite diário de tradução de frases gratuitas (15) nas histórias. Você pode atualizar para o Premium para traduzir frases e expressões sem limites.',
+    ru: 'Вы достигли дневного лимита бесплатных переводов предложений (15) в историях. Вы можете перейти на Премиум, чтобы без ограничений переводить предложения и фразы.',
+    ar: 'لقد وصلت إلى الحد اليومي المجاني لترجمة الجمل (15) في القصص. يمكنك الترقية إلى بريميوم لترجمة الجمل والعبارات بلا حدود.',
+    zh: '您已达到故事中每日免费句子翻译上限（15次）。您可以升级到会员以无限制地翻译句子 and 短语。',
+    hi: 'आप कहानियों में अपनी दैनिक निःशुल्क वाक्य अनुवाद सीमा (15) तक पहुँच चुके हैं। आप वाक्यों और मुहावरों का बिना किसी सीमा के अनुवाद करने के लिए प्रीमियम में अपग्रेड कर सकते हैं।',
+    ja: 'ストーリーでの今日の無料文章翻訳上限（15回）に達しました。プレミアムプランに加入すると、文章やフレーズを無制限に翻訳できるようになります。'
+  },
+  limit_btn_premium: {
+    tr: 'Premium ile Sınırları Kaldır',
+    en: 'Remove Limits with Premium',
+    es: 'Eliminar límites con Premium',
+    fr: 'Supprimer les limites avec Premium',
+    de: 'Grenzen aufheben mit Premium',
+    it: 'Rimuovi i limiti con Premium',
+    pt: 'Remover limites com o Premium',
+    ru: 'Снять ограничения с Премиум',
+    ar: 'إزالة الحدود مع بريميوم',
+    zh: '通过会员消除限制',
+    hi: 'प्रीमियम के साथ सीमाएं हटाएं',
+    ja: 'プレミアムで制限を解除する'
+  },
+  btn_maybe_later: {
+    tr: 'Daha Sonra',
+    en: 'Maybe Later',
+    es: 'Tal vez más tarde',
+    fr: 'Plus tard',
+    de: 'Vielleicht später',
+    it: 'Forse più tardi',
+    pt: 'Talvez mais tarde',
+    ru: 'Возможно позже',
+    ar: 'ربما لاحقاً',
+    zh: '以后再说',
+    hi: 'बाद में',
+    ja: 'また後で'
   }
 };
 
@@ -2964,6 +3494,34 @@ export function getLocalizedUsername(userName: string, nativeLanguage: LanguageC
   }
   return userName;
 }
+
+export function getLocalizedLevelName(level: string, levelName: string, nativeLanguage: LanguageCode): string {
+  const cleanLevel = (level || '').toUpperCase().trim();
+  if (['A1', 'A2', 'B1', 'B2', 'C1', 'C2'].includes(cleanLevel)) {
+    return t('dict_level_label', nativeLanguage).replace('{level}', cleanLevel);
+  }
+  return levelName;
+}
+
+export const PLACEHOLDER_STRINGS = new Set<string>([
+  '...',
+  'Çeviriliyor...',
+  'Translating...',
+  'Loading...'
+]);
+
+// Populating all values dynamically from translation keys
+const keysToCollect = ['dict_loading_placeholder', 'dict_connection_required', 'dict_translation_failed'];
+keysToCollect.forEach(key => {
+  const transObj = TRANSLATIONS[key];
+  if (transObj) {
+    Object.values(transObj).forEach(val => {
+      if (val) {
+        PLACEHOLDER_STRINGS.add(val.trim());
+      }
+    });
+  }
+});
 
 
 

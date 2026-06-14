@@ -11,6 +11,7 @@ import QuizView from './components/QuizView';
 import ProfileTab from './components/ProfileTab';
 import FavoritesTab from './components/FavoritesTab';
 import SplashScreen from './components/SplashScreen';
+import { PremiumPaywall } from './components/PremiumPaywall';
 import { X, Zap, Crown, Heart, Clock, Award, ChevronRight, BookOpen, Shield } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -20,7 +21,7 @@ import { OFFLINE_DICTIONARY } from './dictionary';
 import { AVATAR_OPTIONS } from './avatar_assets';
 import { scheduleDailyReminder, scheduleHeartsRefilledNotification, cancelHeartsNotification } from './services/notifications';
 import { initializeBillingStore } from './services/billing';
-import { LanguageCode, SUPPORTED_LANGUAGES, t } from './i18n';
+import { LanguageCode, SUPPORTED_LANGUAGES, t, PLACEHOLDER_STRINGS } from './i18n';
 
 const getLocalDateString = () => {
   const d = new Date();
@@ -32,27 +33,30 @@ const getLocalDateString = () => {
 
 const healVocabulary = (vocab: VocabularyWord[]): VocabularyWord[] => {
   if (!Array.isArray(vocab)) return [];
+  
+  // Resolve active language
+  const savedLang = (localStorage.getItem('linguist_native_language') || 'tr') as LanguageCode;
+  
   return vocab.map(item => {
     if (!item || !item.word) return item;
     const cleanW = item.word.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'’“”‘’\[\]{}<>|\\+]/g, "").trim();
-    const isPlaceholder = item.translation === 'Çeviriliyor...'
-      || item.translation === 'Sözlük karşılığı yükleniyor...'
-      || !item.translation
+    const isPlaceholder = !item.translation
+      || PLACEHOLDER_STRINGS.has(item.translation.trim())
       || item.translation.toLowerCase().trim() === cleanW;
 
     if (isPlaceholder) {
       const offlineEntry = OFFLINE_DICTIONARY[cleanW];
-      if (offlineEntry && offlineEntry.tr && offlineEntry.tr !== 'Çeviriliyor...' && offlineEntry.tr !== 'Sözlük karşılığı yükleniyor...') {
+      if (offlineEntry && offlineEntry.tr && !PLACEHOLDER_STRINGS.has(offlineEntry.tr.trim())) {
         return { ...item, translation: offlineEntry.tr, notes: offlineEntry.notes || item.notes };
       }
       
       const globalEntry = GLOBAL_DICTIONARY[cleanW];
-      if (globalEntry && globalEntry !== 'Çeviriliyor...' && globalEntry !== 'Sözlük karşılığı yükleniyor...') {
-        return { ...item, translation: globalEntry, notes: 'Çevrimdışı Sözlük • Düzeltildi' };
+      if (globalEntry && !PLACEHOLDER_STRINGS.has(globalEntry.trim())) {
+        return { ...item, translation: globalEntry, notes: t('notes_offline_fixed', savedLang) };
       }
 
       const capitalized = item.word.charAt(0).toUpperCase() + item.word.slice(1);
-      return { ...item, translation: capitalized, notes: 'Geçici Çeviri • Düzeltildi' };
+      return { ...item, translation: capitalized, notes: t('notes_temp_fixed', savedLang) };
     }
     return item;
   });
@@ -244,6 +248,7 @@ export default function App() {
   const [quizMode, setQuizMode] = useState<'saved' | 'random'>('saved');
   const [quizDifficulty, setQuizDifficulty] = useState<'easy' | 'medium' | 'hard'>('easy');
   const [showPaywallInQuiz, setShowPaywallInQuiz] = useState<boolean>(false);
+  const [showGlobalPaywall, setShowGlobalPaywall] = useState<boolean>(false);
   const [activeReadingBook, setActiveReadingBook] = useState<Book | null>(null);
   const [googleClientId, setGoogleClientId] = useState<string>('');
   const [showSplash, setShowSplash] = useState<boolean>(true);
@@ -465,7 +470,11 @@ export default function App() {
       }
     }
 
-    return DEFAULT_STATS;
+    return {
+      ...DEFAULT_STATS,
+      dailyStreak: 1,
+      lastActiveDate: getLocalDateString()
+    };
   });
 
   const [lastActiveBookId, setLastActiveBookId] = useState<string | null>(() => {
@@ -544,16 +553,18 @@ export default function App() {
     
     // 1. Stats
     let statsLocal = localStorage.getItem(`linguist_stats_v11_${uuid}`);
-    let loadedStats = DEFAULT_STATS;
     if (statsLocal) {
       try {
-        loadedStats = JSON.parse(statsLocal);
+        const loadedStats = JSON.parse(statsLocal);
+        if (loadedStats && typeof loadedStats === 'object') {
+          setStats(prev => ({
+            ...DEFAULT_STATS,
+            ...prev,
+            ...loadedStats
+          }));
+        }
       } catch (e) {}
     }
-    setStats({
-      ...DEFAULT_STATS,
-      ...loadedStats
-    });
 
     // 2. Books
     let booksLocal = localStorage.getItem(`linguist_books_v11_${uuid}`);
@@ -724,6 +735,7 @@ export default function App() {
   const currentTabRef = useRef(currentTab);
   const showExitConfirmRef = useRef(showExitConfirm);
   const focusedCategoryRef = useRef(focusedCategory);
+  const readingViewBackRef = useRef<(() => boolean) | null>(null);
 
   useEffect(() => {
     activeReadingBookRef.current = activeReadingBook;
@@ -742,6 +754,42 @@ export default function App() {
     focusedCategoryRef.current = focusedCategory;
   }, [focusedCategory]);
 
+  const statsRef = useRef(stats);
+  const booksRef = useRef(books);
+  const vocabularyRef = useRef(vocabulary);
+  const badgesRef = useRef(badges);
+  const deviceUuidRef = useRef(deviceUuid);
+  const userNameRef = useRef(userName);
+  const userAvatarRef = useRef(userAvatar);
+
+  useEffect(() => {
+    statsRef.current = stats;
+  }, [stats]);
+
+  useEffect(() => {
+    booksRef.current = books;
+  }, [books]);
+
+  useEffect(() => {
+    vocabularyRef.current = vocabulary;
+  }, [vocabulary]);
+
+  useEffect(() => {
+    badgesRef.current = badges;
+  }, [badges]);
+
+  useEffect(() => {
+    deviceUuidRef.current = deviceUuid;
+  }, [deviceUuid]);
+
+  useEffect(() => {
+    userNameRef.current = userName;
+  }, [userName]);
+
+  useEffect(() => {
+    userAvatarRef.current = userAvatar;
+  }, [userAvatar]);
+
   // Android hardware back button handler (Single registration, ref-based to avoid leaks)
   useEffect(() => {
     const handleBackButton = () => {
@@ -749,6 +797,12 @@ export default function App() {
       if (showExitConfirmRef.current) {
         setShowExitConfirm(false);
         return;
+      }
+
+      // 1.5 If reading a book, check if ReadingView wants to handle the back button (e.g. close modals)
+      if (activeReadingBookRef.current && readingViewBackRef.current) {
+        const handled = readingViewBackRef.current();
+        if (handled) return;
       }
 
       // 2. If reading a book → go back to library
@@ -964,11 +1018,13 @@ export default function App() {
         // Clock skew / timezone difference, update active date but keep streak
         return {
           ...current,
-          lastActiveDate: todayStr
+          lastActiveDate: todayStr,
+          dailyStreak: Math.max(1, current.dailyStreak || 0)
         };
       }
       return {
         ...current,
+        dailyStreak: Math.max(1, current.dailyStreak || 0),
         weeklyWords: newWeeklyWords,
         weeklyMins: newWeeklyMins
       }; // diff === 0, no changes needed
@@ -1212,39 +1268,47 @@ export default function App() {
     return day === 0 ? 6 : day - 1;
   };
 
+  const activeReadingSecondsRef = useRef(0);
+
   // Timer to track active reading time inside stories (Reading Time)
   useEffect(() => {
     const interval = setInterval(() => {
       // Increment only when the page is visible and user is actively reading a story.
       // We check activeReadingBookRef.current to avoid resetting the timer on page transitions or word clicks.
       if (document.visibilityState === 'visible' && activeReadingBookRef.current !== null) {
-        setStats(prev => {
-          const dayIndex = getTodayIndex();
-          const updatedWeeklyMins = [...(prev.weeklyMins || [0, 0, 0, 0, 0, 0, 0])];
-          updatedWeeklyMins[dayIndex] = (updatedWeeklyMins[dayIndex] || 0) + 1;
+        activeReadingSecondsRef.current += 1;
 
-          const nextTotalTime = (prev.totalTimeMinutes || 0) + 1;
+        if (activeReadingSecondsRef.current >= 60) {
+          activeReadingSecondsRef.current = 0; // Reset seconds accumulator
 
-          // Target: 20 minutes daily reading goal
-          const dailyGoalMins = 20;
-          const timePercent = Math.min(Math.round((updatedWeeklyMins[dayIndex] / dailyGoalMins) * 100), 100);
+          setStats(prev => {
+            const dayIndex = getTodayIndex();
+            const updatedWeeklyMins = [...(prev.weeklyMins || [0, 0, 0, 0, 0, 0, 0])];
+            updatedWeeklyMins[dayIndex] = (updatedWeeklyMins[dayIndex] || 0) + 1;
 
-          const nextStats = {
-            ...prev,
-            totalTimeMinutes: nextTotalTime,
-            timeGoalPercent: timePercent,
-            weeklyMins: updatedWeeklyMins
-          };
+            const nextTotalTime = (prev.totalTimeMinutes || 0) + 1;
 
-          // Sync to the cloud immediately with the correct updated stats payload to avoid race conditions.
-          setTimeout(() => {
-            triggerCloudSync(nextStats);
-          }, 0);
+            // Target: 20 minutes daily reading goal
+            const dailyGoalMins = 20;
+            const timePercent = Math.min(Math.round((updatedWeeklyMins[dayIndex] / dailyGoalMins) * 100), 100);
 
-          return nextStats;
-        });
+            const nextStats = {
+              ...prev,
+              totalTimeMinutes: nextTotalTime,
+              timeGoalPercent: timePercent,
+              weeklyMins: updatedWeeklyMins
+            };
+
+            // Sync to the cloud immediately with the correct updated stats payload to avoid race conditions.
+            setTimeout(() => {
+              triggerCloudSync(nextStats);
+            }, 0);
+
+            return nextStats;
+          });
+        }
       }
-    }, 60000); // 60 seconds = 1 minute
+    }, 1000); // Check every 1 second
     return () => clearInterval(interval);
   }, []);
 
@@ -1292,7 +1356,7 @@ export default function App() {
     .then(res => {
       if (res.status === 401) {
         handleGoogleLogout();
-        throw new Error('Oturum sonlandırıldı. ⚠️');
+        throw new Error(t('session_terminated', nativeLanguage));
       }
       return res.json();
     })
@@ -1351,19 +1415,19 @@ export default function App() {
         .then(res => {
           if (res.status === 401) {
             handleGoogleLogout();
-            throw new Error('Oturum sonlandırıldı. ⚠️');
+            throw new Error(t('session_terminated', nativeLanguage));
           }
           return res.json();
         })
         .then(resData => {
           setSyncStatus('synced');
           
-          let mergedStats = { ...stats };
-          let mergedBooks = [...books];
-          let mergedVocabulary = [...vocabulary];
-          let mergedBadges = [...badges];
-          let mergedName = userName || finalName;
-          let mergedAvatar = userAvatar && userAvatar !== AVATAR_OPTIONS[0] ? userAvatar : finalAvatar;
+          let mergedStats = { ...statsRef.current };
+          let mergedBooks = [...booksRef.current];
+          let mergedVocabulary = [...vocabularyRef.current];
+          let mergedBadges = [...badgesRef.current];
+          let mergedName = userNameRef.current || finalName;
+          let mergedAvatar = userAvatarRef.current && userAvatarRef.current !== AVATAR_OPTIONS[0] ? userAvatarRef.current : finalAvatar;
 
           if (resData.found && resData.data) {
             const cloud = resData.data;
@@ -1398,18 +1462,18 @@ export default function App() {
                 return mergedArr;
               };
 
-              let lastActiveDate = stats.lastActiveDate || cloudStats.lastActiveDate || todayStr;
-              if (stats.lastActiveDate && cloudStats.lastActiveDate) {
-                lastActiveDate = new Date(stats.lastActiveDate).getTime() > new Date(cloudStats.lastActiveDate).getTime()
-                  ? stats.lastActiveDate
+              let lastActiveDate = statsRef.current.lastActiveDate || cloudStats.lastActiveDate || todayStr;
+              if (statsRef.current.lastActiveDate && cloudStats.lastActiveDate) {
+                lastActiveDate = new Date(statsRef.current.lastActiveDate).getTime() > new Date(cloudStats.lastActiveDate).getTime()
+                  ? statsRef.current.lastActiveDate
                   : cloudStats.lastActiveDate;
               }
 
-              const isPremium = !!(stats.isPremium || cloudStats.isPremium);
-              let premiumExpiryDate = stats.premiumExpiryDate || cloudStats.premiumExpiryDate;
-              if (stats.premiumExpiryDate && cloudStats.premiumExpiryDate) {
-                premiumExpiryDate = new Date(stats.premiumExpiryDate).getTime() > new Date(cloudStats.premiumExpiryDate).getTime()
-                  ? stats.premiumExpiryDate
+              const isPremium = !!(statsRef.current.isPremium || cloudStats.isPremium);
+              let premiumExpiryDate = statsRef.current.premiumExpiryDate || cloudStats.premiumExpiryDate;
+              if (statsRef.current.premiumExpiryDate && cloudStats.premiumExpiryDate) {
+                premiumExpiryDate = new Date(statsRef.current.premiumExpiryDate).getTime() > new Date(cloudStats.premiumExpiryDate).getTime()
+                  ? statsRef.current.premiumExpiryDate
                   : cloudStats.premiumExpiryDate;
               }
 
@@ -1421,18 +1485,18 @@ export default function App() {
               mergedStats = {
                 ...DEFAULT_STATS,
                 ...cloudStats,
-                ...stats,
+                ...statsRef.current,
                 isPremium,
                 premiumExpiryDate,
-                premiumType: stats.premiumType || cloudStats.premiumType || null,
-                dailyStreak: isJustReset ? (stats.dailyStreak || 1) : Math.max(stats.dailyStreak || 0, cloudStats.dailyStreak || 0),
-                completedBooksCount: isJustReset ? (stats.completedBooksCount || 0) : Math.max(stats.completedBooksCount || 0, cloudStats.completedBooksCount || 0),
-                totalTimeMinutes: isJustReset ? (stats.totalTimeMinutes || 0) : Math.max(stats.totalTimeMinutes || 0, cloudStats.totalTimeMinutes || 0),
-                learnedWordsCount: isJustReset ? (stats.learnedWordsCount || 0) : Math.max(stats.learnedWordsCount || 0, cloudStats.learnedWordsCount || 0),
-                hearts: isPremium ? 5 : (isJustReset ? (stats.hearts ?? 5) : Math.max(stats.hearts ?? 5, cloudStats.hearts ?? 5)),
-                weeklyWords: isJustReset ? [...stats.weeklyWords] : mergeWeekly(stats.weeklyWords, cloudStats.weeklyWords),
-                weeklyMins: isJustReset ? [...stats.weeklyMins] : mergeWeekly(stats.weeklyMins, cloudStats.weeklyMins),
-                lastActiveDate: isJustReset ? stats.lastActiveDate : lastActiveDate
+                premiumType: statsRef.current.premiumType || cloudStats.premiumType || null,
+                dailyStreak: Math.max(1, isJustReset ? (statsRef.current.dailyStreak || 1) : Math.max(statsRef.current.dailyStreak || 0, cloudStats.dailyStreak || 0)),
+                completedBooksCount: isJustReset ? (statsRef.current.completedBooksCount || 0) : Math.max(statsRef.current.completedBooksCount || 0, cloudStats.completedBooksCount || 0),
+                totalTimeMinutes: isJustReset ? (statsRef.current.totalTimeMinutes || 0) : Math.max(statsRef.current.totalTimeMinutes || 0, cloudStats.totalTimeMinutes || 0),
+                learnedWordsCount: isJustReset ? (statsRef.current.learnedWordsCount || 0) : Math.max(statsRef.current.learnedWordsCount || 0, cloudStats.learnedWordsCount || 0),
+                hearts: isPremium ? 5 : (isJustReset ? (statsRef.current.hearts ?? 5) : Math.max(statsRef.current.hearts ?? 5, cloudStats.hearts ?? 5)),
+                weeklyWords: isJustReset ? [...statsRef.current.weeklyWords] : mergeWeekly(statsRef.current.weeklyWords, cloudStats.weeklyWords),
+                weeklyMins: isJustReset ? [...statsRef.current.weeklyMins] : mergeWeekly(statsRef.current.weeklyMins, cloudStats.weeklyMins),
+                lastActiveDate: isJustReset ? statsRef.current.lastActiveDate : lastActiveDate
               };
             }
 
@@ -1449,7 +1513,7 @@ export default function App() {
                 isStarted: !!b.isStarted
               })) : [];
 
-              const mergedList = [...books];
+              const mergedList = [...booksRef.current];
               sanitizedCloudBooks.forEach(cb => {
                 const idx = mergedList.findIndex(b => b.id === cb.id);
                 if (idx === -1) {
@@ -1483,7 +1547,7 @@ export default function App() {
             // 3. Vocabulary
             if (cloud.vocabulary && Array.isArray(cloud.vocabulary)) {
               const vocabMap = new Map<string, VocabularyWord>();
-              vocabulary.forEach(w => vocabMap.set(w.word.toLowerCase().trim(), w));
+              vocabularyRef.current.forEach(w => vocabMap.set(w.word.toLowerCase().trim(), w));
               cloud.vocabulary.forEach(w => {
                 if (w && w.word) {
                   const key = w.word.toLowerCase().trim();
@@ -1498,7 +1562,7 @@ export default function App() {
             // 4. Badges
             if (cloud.badges && Array.isArray(cloud.badges)) {
               mergedBadges = INITIAL_BADGES.map(ib => {
-                const localMatch = badges.find(b => b.id === ib.id);
+                const localMatch = badgesRef.current.find(b => b.id === ib.id);
                 const cloudMatch = cloud.badges.find((p: any) => p.id === ib.id);
                 const unlocked = !!(localMatch?.unlocked || cloudMatch?.unlocked);
                 const unlockedAt = localMatch?.unlockedAt || cloudMatch?.unlockedAt;
@@ -1527,13 +1591,13 @@ export default function App() {
           setUserAvatar(mergedAvatar);
 
           // Save merged data under deviceUuid namespace in localStorage
-          if (deviceUuid) {
-            localStorage.setItem(`linguist_stats_v11_${deviceUuid}`, JSON.stringify(mergedStats));
-            localStorage.setItem(`linguist_books_v11_${deviceUuid}`, JSON.stringify(stripBooksForSync(mergedBooks)));
-            localStorage.setItem(`linguist_vocabulary_v11_${deviceUuid}`, JSON.stringify(mergedVocabulary));
-            localStorage.setItem(`linguist_badges_v11_${deviceUuid}`, JSON.stringify(mergedBadges));
-            localStorage.setItem(`linguist_user_name_${deviceUuid}`, mergedName);
-            localStorage.setItem(`linguist_user_avatar_${deviceUuid}`, mergedAvatar);
+          if (deviceUuidRef.current) {
+            localStorage.setItem(`linguist_stats_v11_${deviceUuidRef.current}`, JSON.stringify(mergedStats));
+            localStorage.setItem(`linguist_books_v11_${deviceUuidRef.current}`, JSON.stringify(stripBooksForSync(mergedBooks)));
+            localStorage.setItem(`linguist_vocabulary_v11_${deviceUuidRef.current}`, JSON.stringify(mergedVocabulary));
+            localStorage.setItem(`linguist_badges_v11_${deviceUuidRef.current}`, JSON.stringify(mergedBadges));
+            localStorage.setItem(`linguist_user_name_${deviceUuidRef.current}`, mergedName);
+            localStorage.setItem(`linguist_user_avatar_${deviceUuidRef.current}`, mergedAvatar);
           }
 
           const activeProvider = provider || localStorage.getItem('linguist_login_provider') || (resData.found && resData.data?.loginProvider);
@@ -1596,14 +1660,14 @@ export default function App() {
         })
       })
         .then(res => {
-          if (!res.ok) throw new Error('Dış kimlik doğrulama başarısız.');
+          if (!res.ok) throw new Error(t('auth_external_failed', nativeLanguage));
           return res.json();
         })
         .then(data => {
           if (data.success && data.token) {
             completeLoginWithToken(data.token);
           } else {
-            throw new Error('Geçersiz token yanıtı.');
+            throw new Error(t('auth_invalid_token', nativeLanguage));
           }
         })
         .catch(err => {
@@ -1677,26 +1741,50 @@ export default function App() {
     }
     
     // 1. Backup critical configuration and stats that shouldn't reset
-    const savedUuid = localStorage.getItem('linguist_device_uuid') || '';
-    const savedTos = localStorage.getItem('linguist_tos_accepted_v11') || '';
-    const savedDarkMode = localStorage.getItem('linguist_dark_mode') || '';
+    const savedUuid = localStorage.getItem('linguist_device_uuid');
+    const savedTos = localStorage.getItem('linguist_tos_accepted_v11');
+    const savedDarkMode = localStorage.getItem('linguist_dark_mode');
     const savedHearts = stats.hearts !== undefined ? stats.hearts : 5;
     
+    // Backup daily limits and caches
+    const savedDailyDate = localStorage.getItem('linguist_daily_date');
+    const savedWordLookups = localStorage.getItem('linguist_word_lookups_today');
+    const savedSentenceTrans = localStorage.getItem('linguist_sentence_trans_today');
+    const savedLookedUpWords = localStorage.getItem('linguist_today_looked_up_words');
+    const savedTranslatedSentences = localStorage.getItem('linguist_today_translated_sentences');
+    
     const ns = deviceUuid || 'guest';
-    const savedRefillTime = localStorage.getItem(`linguist_last_heart_refill_${ns}`) || '';
+    const savedRefillTime = localStorage.getItem(`linguist_last_heart_refill_${ns}`);
     
     // 2. Clear all localStorage keys
     localStorage.clear();
     
     // 3. Restore backups to prevent exploit and keep key preferences
-    if (savedUuid) {
+    if (savedUuid !== null) {
       localStorage.setItem('linguist_device_uuid', savedUuid);
     }
-    if (savedTos) {
+    if (savedTos !== null) {
       localStorage.setItem('linguist_tos_accepted_v11', savedTos);
     }
-    if (savedDarkMode) {
+    if (savedDarkMode !== null) {
       localStorage.setItem('linguist_dark_mode', savedDarkMode);
+    }
+    
+    // Restore daily limits and caches
+    if (savedDailyDate !== null) {
+      localStorage.setItem('linguist_daily_date', savedDailyDate);
+    }
+    if (savedWordLookups !== null) {
+      localStorage.setItem('linguist_word_lookups_today', savedWordLookups);
+    }
+    if (savedSentenceTrans !== null) {
+      localStorage.setItem('linguist_sentence_trans_today', savedSentenceTrans);
+    }
+    if (savedLookedUpWords !== null) {
+      localStorage.setItem('linguist_today_looked_up_words', savedLookedUpWords);
+    }
+    if (savedTranslatedSentences !== null) {
+      localStorage.setItem('linguist_today_translated_sentences', savedTranslatedSentences);
     }
     
     // Save preserved hearts into fresh initial stats
@@ -1711,7 +1799,7 @@ export default function App() {
     localStorage.setItem('linguist_reset_stats_to_zero_v11', 'true');
     localStorage.setItem('linguist_just_reset_app', 'true');
     
-    if (savedRefillTime) {
+    if (savedRefillTime !== null) {
       localStorage.setItem(`linguist_last_heart_refill_${activeUuid}`, savedRefillTime);
     }
     
@@ -1750,14 +1838,14 @@ export default function App() {
         const matchHelper = dictHelpers.find(h => h.en === clean);
         return {
           en: word,
-          tr: matchHelper ? matchHelper.tr : 'Kelime anlamı yüklendi'
+          tr: matchHelper ? matchHelper.tr : t('custom_word_loaded', nativeLanguage)
         };
       });
 
       return {
         id: `custom_p_${index}`,
         textEn: sentence + '.',
-        textTr: 'Bu cümlenin Türkçe tercümesi yapay zeka tarafından çıkarıldı.',
+        textTr: t('custom_sentence_ai_desc', nativeLanguage),
         words: wordsArray
       };
     });
@@ -1802,18 +1890,12 @@ export default function App() {
       const existingWord = vocabulary[existingIndex];
       const isExistingPlaceholder =
         !existingWord.translation ||
-        existingWord.translation === 'Çeviriliyor...' ||
-        existingWord.translation === 'Sözlük karşılığı yükleniyor...' ||
-        existingWord.translation === 'Çeviri yüklenemedi' ||
-        existingWord.translation === 'İnternet bağlantısı gerekiyor' ||
+        PLACEHOLDER_STRINGS.has(existingWord.translation.trim()) ||
         existingWord.translation.toLowerCase().trim() === cleanW;
 
       const isNewValid =
         translation &&
-        translation !== 'Çeviriliyor...' &&
-        translation !== 'Sözlük karşılığı yükleniyor...' &&
-        translation !== 'Çeviri yüklenemedi' &&
-        translation !== 'İnternet bağlantısı gerekiyor' &&
+        !PLACEHOLDER_STRINGS.has(translation.trim()) &&
         translation.toLowerCase().trim() !== cleanW;
 
       if (isExistingPlaceholder && isNewValid) {
@@ -2270,6 +2352,7 @@ export default function App() {
             {activeReadingBook ? (
               <ReadingView
                 book={activeReadingBook}
+                backRef={readingViewBackRef}
                 nativeLanguage={nativeLanguage}
                 onBack={(percentage, currentPage, totalPages) => {
                   if (percentage !== undefined) {
@@ -2316,9 +2399,8 @@ export default function App() {
                       )
                     );
                   }
-                  setActiveReadingBook(null);
                   setSearchQuery('');
-                  setCurrentTab('quiz');
+                  setShowGlobalPaywall(true);
                 }}
                 onToggleFavorite={handleToggleFavorite}
                 onPageChange={(percentage, currentPage, totalPages) => {
@@ -2403,8 +2485,7 @@ export default function App() {
                     stats={stats}
                     badges={badges}
                     onTriggerPremiumPanel={() => {
-                      setShowPaywallInQuiz(true);
-                      setCurrentTab('quiz');
+                      setShowGlobalPaywall(true);
                     }}
                     syncTrigger={triggerCloudSync}
                     isDarkMode={isDarkMode}
@@ -2546,6 +2627,21 @@ export default function App() {
           </div>
         </div>
       )}
+
+      {/* Global Premium Paywall Overlay */}
+      <AnimatePresence>
+        {showGlobalPaywall && (
+          <PremiumPaywall
+            stats={stats}
+            refillCountdown={refillCountdown}
+            nativeLanguage={nativeLanguage}
+            isDarkMode={isDarkMode}
+            onClose={() => setShowGlobalPaywall(false)}
+            onSubscribe={handleSubscribe}
+            syncTrigger={triggerCloudSync}
+          />
+        )}
+      </AnimatePresence>
     </div>
   );
 }

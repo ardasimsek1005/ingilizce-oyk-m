@@ -2,7 +2,7 @@ import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { BookOpen, Timer, Plus, ArrowRight, ExternalLink, ChevronRight, X, Sparkles, BookMarked, Star, Skull, Compass, Search, Trash2, ArrowLeft } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Book, getLevelColor, hexToRgba } from '../types';
-import { SUPPORTED_LANGUAGES, LanguageCode, t, getLocalizedUsername } from '../i18n';
+import { SUPPORTED_LANGUAGES, LanguageCode, t, getLocalizedUsername, getLocalizedLevelName } from '../i18n';
 
 
 
@@ -525,6 +525,7 @@ export default function LibraryTab({
             className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ${
               book.isCompleted ? 'grayscale opacity-60' : ''
             }`}
+            style={{ objectPosition: book.coverPosition || 'center 28%' }}
             src={book.coverUrl}
             loading="lazy"
           />
@@ -558,7 +559,7 @@ export default function LibraryTab({
         {book.author && <p className="text-gray-455 dark:text-gray-400 text-[11px] truncate">{book.author}</p>}
         <div className="flex items-center gap-1.5 mt-1 text-[10px] text-[#4ECDC4] font-bold">
           <BookOpen className="w-3.5 h-3.5" />
-          <span>{book.totalPages || 0} Sayfa</span>
+          <span>{t('pages_count', nativeLanguage).replace('{count}', String(book.totalPages || 0))}</span>
         </div>
       </motion.div>
     );
@@ -679,8 +680,8 @@ export default function LibraryTab({
               : 'bg-white border-[#FFE66D] shadow-[0_12px_24px_-10px_rgba(255,107,107,0.05)]'
           }`}>
             <div className="flex items-center gap-4 text-left">
-              {/* Profile Picture & Language Switcher Pill */}
-              <div className="flex flex-col items-center gap-1.5 shrink-0">
+              {/* Profile Picture */}
+              <div className="shrink-0">
                 <div 
                   onClick={() => onTabChange && onTabChange('profile')}
                   className="w-14 h-14 rounded-full overflow-hidden border-3 border-[#FFE66D] cursor-pointer hover:scale-105 transition-transform shadow-xs"
@@ -691,32 +692,6 @@ export default function LibraryTab({
                     alt={getLocalizedUsername(userName, nativeLanguage) || 'User'}
                     className="w-full h-full object-cover"
                   />
-                </div>
-                {/* Language Switcher Pill */}
-                <div className="relative">
-                  <select
-                    value={nativeLanguage}
-                    onChange={(e) => onUpdateLanguage(e.target.value as LanguageCode)}
-                    className={`px-1.5 py-0.5 text-[10px] font-extrabold rounded-full border appearance-none cursor-pointer text-center focus:outline-none transition-all ${
-                      isDarkMode 
-                        ? 'bg-[#1E1E22] border-[#2A2A30] text-[#FFE66D] hover:border-[#FF6B6B]/60' 
-                        : 'bg-white border-[#FFE66D]/70 text-[#FF6B6B] hover:border-[#FF6B6B]/60 shadow-3xs'
-                    }`}
-                    style={{
-                      paddingRight: '12px',
-                      paddingLeft: '6px',
-                      backgroundImage: `url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='${isDarkMode ? '%23ffe66d' : '%23ff6b6b'}' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e")`,
-                      backgroundRepeat: 'no-repeat',
-                      backgroundPosition: 'right 3px center',
-                      backgroundSize: '8px',
-                    }}
-                  >
-                    {SUPPORTED_LANGUAGES.map((lang) => (
-                      <option key={lang.code} value={lang.code}>
-                        {lang.flag} {lang.code.toUpperCase()}
-                      </option>
-                    ))}
-                  </select>
                 </div>
               </div>
 
@@ -760,6 +735,7 @@ export default function LibraryTab({
                 className={`w-full h-full object-cover ${
                   currentlyReading.isCompleted ? 'grayscale opacity-60' : ''
                 }`}
+                style={{ objectPosition: currentlyReading.coverPosition || 'center 28%' }}
                 src={currentlyReading.coverUrl}
               />
               <div 
@@ -775,7 +751,7 @@ export default function LibraryTab({
                   onToggleFavorite(currentlyReading.id);
                 }}
                 className="absolute top-2 left-2 p-1.5 bg-black/45 backdrop-blur-md hover:bg-black/60 text-[#F59E0B] rounded-xl border border-white/20 transition-all cursor-pointer shadow-sm scale-95 active:scale-90"
-                title={currentlyReading.isFavorited ? 'Favorilerden Çıkar' : 'Favorilere Ekle'}
+                title={currentlyReading.isFavorited ? t('fav_remove_tooltip', nativeLanguage) : t('fav_add_tooltip', nativeLanguage)}
               >
                 <Star className={`w-3.5 h-3.5 ${currentlyReading.isFavorited ? 'fill-[#F59E0B]' : ''}`} />
               </button>
@@ -785,7 +761,7 @@ export default function LibraryTab({
             <div className="flex-1 flex flex-col justify-between py-1">
               <div>
                 <span className="inline-block px-2.5 py-0.5 bg-[#4ECDC4]/10 text-[#4ECDC4] border border-[#4ECDC4]/20 rounded-full text-[11px] font-semibold tracking-wide mb-2.5">
-                  {currentlyReading.levelName}
+                  {getLocalizedLevelName(currentlyReading.level, currentlyReading.levelName, nativeLanguage)}
                 </span>
                 <h3 className={`font-headline-lg text-xl font-bold leading-tight mb-1 transition-colors ${
                   isDarkMode ? 'text-white' : 'text-[#2D3436]'
@@ -807,7 +783,7 @@ export default function LibraryTab({
                     <span className={`italic ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
                       {currentlyReading.percentageCompleted === 100 
                         ? t('completed_status', nativeLanguage) 
-                        : `Sayfa ${currentlyReading.currentPage || 1} / ${currentlyReading.totalPages || 0}`}
+                        : `${t('page_label', nativeLanguage)} ${currentlyReading.currentPage || 1} / ${currentlyReading.totalPages || 0}`}
                     </span>
                   </div>
                   <div className={`w-full h-2.5 rounded-full overflow-hidden border ${
@@ -879,6 +855,7 @@ export default function LibraryTab({
                       <img
                         alt={book.title}
                         className="w-full h-full object-cover"
+                        style={{ objectPosition: book.coverPosition || 'center 28%' }}
                         src={book.coverUrl}
                         loading="lazy"
                       />
@@ -1027,7 +1004,7 @@ export default function LibraryTab({
                     isDarkMode ? 'hover:bg-white/5' : 'hover:bg-[#FF6B6B]/5'
                   }`}
                 >
-                  <img src={book.coverUrl} className="w-6 h-8 rounded-md object-cover shrink-0 shadow-xs" alt="" />
+                  <img src={book.coverUrl} className="w-6 h-8 rounded-md object-cover shrink-0 shadow-xs" style={{ objectPosition: book.coverPosition || 'center 28%' }} alt="" />
                   <div className="min-w-0 flex-1">
                     <div className="truncate text-xs font-bold">{book.title}</div>
                     <div className="text-[10px] text-gray-400 mt-0.5">
@@ -1042,13 +1019,13 @@ export default function LibraryTab({
           )}
         </div>
 
-        <div className="flex justify-between items-center mb-5">
-          <h2 className={`font-headline-lg text-lg font-bold tracking-tight transition-colors ${
+        <div className="flex justify-between items-start mb-5 gap-4">
+          <h2 className={`font-headline-lg text-lg font-bold tracking-tight transition-colors shrink-0 ${
             isDarkMode ? 'text-[#E6E6E6]' : 'text-[#2D3436]'
           }`}>
             {t('tab_library', nativeLanguage)}
           </h2>
-          <span className={`text-xs font-bold tracking-wider font-headline-lg ${
+          <span className={`text-xs font-bold tracking-wider font-headline-lg text-right leading-tight max-w-[65%] break-words ${
             isDarkMode ? 'text-gray-400' : 'text-gray-455'
           }`}>
             {libraryCountLabel}

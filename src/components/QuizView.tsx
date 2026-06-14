@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Heart, Brain, AlertCircle, CheckCircle2, ChevronRight, Sparkles, ShieldCheck, CreditCard, Lock, RefreshCw, X, Award, Crown, Check } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import { purchasePlayStoreSubscription, restorePlayStorePurchases } from '../services/billing';
+import { purchasePlayStoreSubscription, restorePlayStorePurchases, getLocalizedPrices, registerPricingListener } from '../services/billing';
 import { Book, QuizQuestion, UserStats, VocabularyWord, getLevelColor, hexToRgba } from '../types';
 import { OFFLINE_DICTIONARY } from '../dictionary';
 import { GLOBAL_DICTIONARY } from '../data';
@@ -123,8 +123,19 @@ const findSentenceInBooks = (word: string, books: Book[]): { en: string; tr: str
           
           for (let i = 0; i < sentencesEn.length; i++) {
             const sent = sentencesEn[i];
+            const trimmed = sent.trim();
+            
+            // Üç nokta içeren, üç nokta veya eksi işaretiyle başlayan cümleleri es geç
+            if (trimmed.includes('...') || trimmed.includes('…') || trimmed.startsWith('-') || /^[.·…\-\s]/.test(trimmed) || /^[“"‘'][.·…]/.test(trimmed)) {
+              continue;
+            }
+
             const cleanSent = sent.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'’“”指標‘’\[\]{}<>|\\+]/g, " ");
-            const words = cleanSent.split(/\s+/);
+            const words = cleanSent.split(/\s+/).filter(Boolean);
+            
+            // Cümle uzunluğunu 5 ile 13 kelime arası ile sınırla
+            if (words.length < 5 || words.length > 13) continue;
+
             if (words.includes(cleanWord)) {
               const enTr = sentencesTr[i] || p.textTr;
               return { en: sent, tr: enTr };
@@ -326,7 +337,7 @@ const generateVocabularyQuiz = (vocabList: VocabularyWord[], books: Book[], nati
     }
 
     const nativeTranslation = getNativeWordTranslation(item.word, item.translation, nativeLanguage, undefined, item.lang);
-    const nativeExampleTr = getNativeSentenceTranslation(exampleEn, exampleTr || '', nativeLanguage, item.lang);
+    let nativeExampleTr = getNativeSentenceTranslation(exampleEn, exampleTr || '', nativeLanguage, item.lang);
     
     // Distractors (wrong options)
     const cleanW = item.word.toLowerCase().trim();
@@ -404,14 +415,22 @@ const generateVocabularyQuiz = (vocabList: VocabularyWord[], books: Book[], nati
       
       const cleanW = item.word.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'’“”‘’\[\]{}<>|\\+]/g, "").trim();
       const regex = new RegExp('\\b' + cleanW + '\\b', 'gi');
-      questionText = exampleEn.replace(regex, '_____');
       
-      if (questionText === exampleEn) {
-        const lowerSentence = exampleEn.toLowerCase();
+      let sentenceToUse = exampleEn || '';
+      if (!regex.test(sentenceToUse) && sentenceToUse.toLowerCase().indexOf(cleanW.toLowerCase()) === -1) {
+        const fallback = getFallbackSentence(item.word, item.translation, nativeLanguage);
+        sentenceToUse = fallback.en;
+        nativeExampleTr = fallback.tr;
+      }
+      
+      questionText = sentenceToUse.replace(regex, '_____');
+      
+      if (questionText === sentenceToUse) {
+        const lowerSentence = sentenceToUse.toLowerCase();
         const cleanLowerWord = cleanW.toLowerCase();
         const idx = lowerSentence.indexOf(cleanLowerWord);
         if (idx !== -1) {
-          questionText = exampleEn.substring(0, idx) + '_____' + exampleEn.substring(idx + cleanW.length);
+          questionText = sentenceToUse.substring(0, idx) + '_____' + sentenceToUse.substring(idx + cleanW.length);
         }
       }
 
@@ -554,7 +573,8 @@ const generateVocabularyQuiz = (vocabList: VocabularyWord[], books: Book[], nati
       optionsEn: options.map(opt => {
         if (qType === 'en_to_tr') {
           const found = levelPool.find(x => x.tr === opt) || (nativeTranslation === opt ? item : null);
-          return found ? found.en : opt;
+          if (!found) return opt;
+          return 'word' in found ? found.word : found.en;
         } else {
           return opt;
         }
@@ -597,18 +617,37 @@ const generateRandomQuizForLevels = (levels: ('A1' | 'A2' | 'B1' | 'B2' | 'C1')[
                 const sentencesTr = p.textTr.split(/[.!?]/).map(s => s.trim()).filter(Boolean);
                 
                 for (let i = 0; i < sentencesEn.length; i++) {
-                  const cleanSent = sentencesEn[i].toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'’“”]/g, " ");
-                  const words = cleanSent.split(/\s+/);
+                  const sent = sentencesEn[i];
+                  const trimmed = sent.trim();
+                  
+                  // Üç nokta içeren, üç nokta veya eksiyle başlayan cümleleri es geç
+                  if (trimmed.includes('...') || trimmed.includes('…') || trimmed.startsWith('-') || /^[.·…\-\s]/.test(trimmed) || /^[“"‘'][.·…]/.test(trimmed)) {
+                    continue;
+                  }
+
+                  const cleanSent = sent.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'’“”]/g, " ");
+                  const words = cleanSent.split(/\s+/).filter(Boolean);
+                  
+                  // Kelime sayısını 5-13 arası ile sınırla
+                  if (words.length < 5 || words.length > 13) continue;
+
                   if (words.includes(key)) {
-                    contextEn = sentencesEn[i] + '.';
+                    contextEn = sent + '.';
                     contextTr = sentencesTr[i] || p.textTr;
                     break;
                   }
                 }
                 
                 if (!contextEn && sentencesEn.length > 0) {
-                  contextEn = sentencesEn[0] + '.';
-                  contextTr = sentencesTr[0] || p.textTr;
+                  // Fallback: İlk temiz cümleyi bulmaya çalış, yoksa ilk cümleyi seç
+                  const cleanFallback = sentencesEn.find(s => {
+                    const t = s.trim();
+                    return !(t.includes('...') || t.includes('…') || t.startsWith('-') || /^[.·…\-\s]/.test(t) || /^[“"‘'][.·…]/.test(t));
+                  });
+                  const chosenFallback = cleanFallback || sentencesEn[0];
+                  contextEn = chosenFallback + '.';
+                  const fallbackIdx = sentencesEn.indexOf(chosenFallback);
+                  contextTr = sentencesTr[fallbackIdx] || p.textTr;
                 }
                 
                 wordPool.push({
@@ -1050,6 +1089,69 @@ export default function QuizView({
   const [checkoutTier, setCheckoutTier] = useState<'monthly' | 'yearly'>('yearly');
   const [isProcessingPayment, setIsProcessingPayment] = useState(false);
   const [paymentDone, setPaymentDone] = useState(false);
+  const [prices, setPrices] = useState(() => {
+    if (nativeLanguage === 'tr') {
+      return {
+        monthly: '99\u20BA',
+        yearlyMonthly: '59\u20BA',
+        yearlyTotal: '712\u20BA',
+        yearlyOriginalTotal: '1.188\u20BA'
+      };
+    } else if (['de', 'fr', 'es', 'it', 'pt'].includes(nativeLanguage)) {
+      return {
+        monthly: '1.79\u20AC',
+        yearlyMonthly: '1.09\u20AC',
+        yearlyTotal: '12.99\u20AC',
+        yearlyOriginalTotal: '21.48\u20AC'
+      };
+    } else {
+      return {
+        monthly: '$1.99',
+        yearlyMonthly: '$1.25',
+        yearlyTotal: '$14.99',
+        yearlyOriginalTotal: '$23.88'
+      };
+    }
+  });
+
+  useEffect(() => {
+    const updatePrices = () => {
+      const localPrices = getLocalizedPrices();
+      if (localPrices) {
+        setPrices(localPrices);
+      } else {
+        if (nativeLanguage === 'tr') {
+          setPrices({
+            monthly: '99\u20BA',
+            yearlyMonthly: '59\u20BA',
+            yearlyTotal: '712\u20BA',
+            yearlyOriginalTotal: '1.188\u20BA'
+          });
+        } else if (['de', 'fr', 'es', 'it', 'pt'].includes(nativeLanguage)) {
+          setPrices({
+            monthly: '1.79\u20AC',
+            yearlyMonthly: '1.09\u20AC',
+            yearlyTotal: '12.99\u20AC',
+            yearlyOriginalTotal: '21.48\u20AC'
+          });
+        } else {
+          setPrices({
+            monthly: '$1.99',
+            yearlyMonthly: '$1.25',
+            yearlyTotal: '$14.99',
+            yearlyOriginalTotal: '$23.88'
+          });
+        }
+      }
+    };
+    
+    // İlk yükleme
+    updatePrices();
+    
+    // Ürün bilgileri geldikçe (asenkron) fiyatları güncelle
+    const unsubscribe = registerPricingListener(updatePrices);
+    return () => unsubscribe();
+  }, [nativeLanguage]);
 
   const getDefaultDifficulty = (books: Book[]): 'easy' | 'medium' | 'hard' => {
     const activeBooks = books.filter(b => b.currentPage > 0 || b.percentageCompleted > 0);
@@ -1069,311 +1171,231 @@ export default function QuizView({
     return getDefaultDifficulty(books);
   });
 
-  const [questions, setQuestions] = useState<QuizQuestion[]>(() => {
-    if (quizMode === 'random') {
-      // Use the already-resolved difficulty state (which respects initialDifficulty)
-      const startDiff = (initialDifficulty && quizMode === 'random') ? initialDifficulty : getDefaultDifficulty(books);
-      const levelsMap = {
-        easy: ['A1', 'A2'],
-        medium: ['B1', 'B2'],
-        hard: ['C1']
-      };
-      return generateRandomQuizForLevels(levelsMap[startDiff] as any, books, nativeLanguage);
-    } else {
-      return generateVocabularyQuiz(vocabulary, books, nativeLanguage);
-    }
-  });
+  const [questions, setQuestions] = useState<QuizQuestion[]>([]);
+  const [isTranslating, setIsTranslating] = useState(false);
 
-  const prevDifficultyRef = React.useRef(difficulty);
-  const prevModeRef = React.useRef(quizMode);
+  const prevDifficultyRef = React.useRef<string | null>(null);
+  const prevModeRef = React.useRef<string | null>(null);
+  const prevLangRef = React.useRef<LanguageCode | null>(null);
+
+  const translateQuestions = async (qs: QuizQuestion[]) => {
+    if (nativeLanguage === 'tr' || qs.length === 0) return;
+    
+    setIsTranslating(true);
+    try {
+      const wordsToTranslate = new Set<string>();
+      const sentencesToTranslate = new Set<string>();
+      
+      const getCachedWord = (engWord: string) => {
+        const cleanW = engWord.toLowerCase().trim();
+        const cacheKeyObj = `story_word_translations_cache_${nativeLanguage}`;
+        const cacheJSON = localStorage.getItem(cacheKeyObj);
+        if (cacheJSON) {
+          try {
+            const cache = JSON.parse(cacheJSON);
+            if (cache[cleanW] && cache[cleanW].translation) return cache[cleanW].translation;
+          } catch {}
+        }
+        const indCacheKey = `linguist_dict_word_${cleanW}_${nativeLanguage}`;
+        const indCache = localStorage.getItem(indCacheKey);
+        if (indCache) {
+          try {
+            const parsed = JSON.parse(indCache);
+            if (parsed.translation) return parsed.translation;
+          } catch {}
+        }
+        for (const bId in pretranslatedStories) {
+          const offlineBook = pretranslatedStories[bId as keyof typeof pretranslatedStories];
+          if (offlineBook && offlineBook.words && offlineBook.words[cleanW as keyof typeof offlineBook.words]) {
+            const offlineWord = offlineBook.words[cleanW as keyof typeof offlineBook.words];
+            if (offlineWord[nativeLanguage as keyof typeof offlineWord]) {
+              return offlineWord[nativeLanguage as keyof typeof offlineWord] as string;
+            }
+          }
+        }
+        return null;
+      };
+
+      const getCachedSentence = (sentence: string) => {
+        const key = sentence.toLowerCase().trim();
+        const gameCacheKey = `linguist_trans_sentence_game_${key}_${nativeLanguage}`;
+        const gameCached = localStorage.getItem(gameCacheKey);
+        if (gameCached) return gameCached;
+        const cacheKey = `linguist_trans_sentence_example_${key}_${nativeLanguage}`;
+        const cached = localStorage.getItem(cacheKey);
+        return cached || null;
+      };
+
+      // Collect what needs translation
+      qs.forEach(q => {
+        if (q.qType === 'en_to_tr' && q.optionsEn) {
+          q.optionsEn.forEach(w => {
+            if (!getCachedWord(w)) {
+              wordsToTranslate.add(w);
+            }
+          });
+        } else if (q.qType === 'tr_to_en') {
+          if (!getCachedWord(q.word)) {
+            wordsToTranslate.add(q.word);
+          }
+        } else if (q.qType === 'fill_blank' && q.sentenceEn) {
+          if (!getCachedSentence(q.sentenceEn)) {
+            sentencesToTranslate.add(q.sentenceEn);
+          }
+        }
+      });
+
+      // 1. Batch Translate Words
+      let wordTranslations: Record<string, string> = {};
+      if (wordsToTranslate.size > 0) {
+        const uniqueWords = Array.from(wordsToTranslate);
+        const chunkSize = 30;
+        for (let i = 0; i < uniqueWords.length; i += chunkSize) {
+          const chunk = uniqueWords.slice(i, i + chunkSize);
+          const joined = chunk.join('\n');
+          try {
+            const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=${nativeLanguage}&dt=t&q=${encodeURIComponent(joined)}`;
+            const response = await fetch(url);
+            if (response.ok) {
+              const data = await response.json();
+              if (data && data[0]) {
+                data[0].forEach((segment: any) => {
+                  if (segment && segment[0] && segment[1]) {
+                    const orig = segment[1].replace(/\n$/, '').trim().toLowerCase();
+                    const trans = segment[0].replace(/\n$/, '').trim();
+                    wordTranslations[orig] = trans;
+                    
+                    // Cache it!
+                    const indCacheKey = `linguist_dict_word_${orig}_${nativeLanguage}`;
+                    localStorage.setItem(indCacheKey, JSON.stringify({
+                      translation: trans,
+                      notes: '',
+                      level: 'A1'
+                    }));
+                  }
+                });
+              }
+            }
+          } catch (e) {
+            console.error("Batch translate chunk failed, falling back to individual client translate:", e);
+            for (const w of chunk) {
+              try {
+                const trans = await translateWithGoogleClient(w, nativeLanguage);
+                wordTranslations[w.toLowerCase().trim()] = trans;
+                const indCacheKey = `linguist_dict_word_${w.toLowerCase().trim()}_${nativeLanguage}`;
+                localStorage.setItem(indCacheKey, JSON.stringify({ translation: trans, notes: '', level: 'A1' }));
+              } catch (individualErr) {
+                console.error("Individual fallback failed for", w, individualErr);
+              }
+            }
+          }
+        }
+      }
+
+      // 2. Translate Sentences (Cloze hints)
+      const sentenceTranslations: Record<string, string> = {};
+      if (sentencesToTranslate.size > 0) {
+        const sentencePromises = Array.from(sentencesToTranslate).map(async (sentence) => {
+          try {
+            const trans = await translateWithGoogleClient(sentence, nativeLanguage);
+            sentenceTranslations[sentence.toLowerCase().trim()] = trans;
+            const gameCacheKey = `linguist_trans_sentence_game_${sentence.toLowerCase().trim()}_${nativeLanguage}`;
+            localStorage.setItem(gameCacheKey, trans);
+          } catch (e) {
+            console.error("Sentence translate failed:", sentence, e);
+          }
+        });
+        await Promise.all(sentencePromises);
+      }
+
+      // Apply translations to the questions array
+      const updatedQuestions = qs.map(q => {
+        const updated = { ...q };
+        
+        if (updated.qType === 'en_to_tr' && updated.optionsEn) {
+          updated.options = updated.optionsEn.map((engWord, optIdx) => {
+            const cached = getCachedWord(engWord);
+            if (cached) return cached;
+            const key = engWord.toLowerCase().trim();
+            if (wordTranslations[key]) return wordTranslations[key];
+            return updated.options[optIdx];
+          });
+          const correctVal = getCachedWord(updated.word) || wordTranslations[updated.word.toLowerCase().trim()] || updated.word;
+          const newCorrectIndex = updated.options.indexOf(correctVal);
+          if (newCorrectIndex !== -1) {
+            updated.correctIndex = newCorrectIndex;
+          }
+          updated.explanation = t('quiz_explanation_en_to_tr', nativeLanguage)
+            .replace('{word}', updated.word)
+            .replace('{translation}', correctVal);
+        } else if (updated.qType === 'tr_to_en') {
+          const trans = getCachedWord(updated.word) || wordTranslations[updated.word.toLowerCase().trim()] || updated.word;
+          updated.translation = trans;
+          updated.questionText = `"${trans}" ${t('quiz_translation_prompt', nativeLanguage)}`;
+          updated.explanation = t('quiz_explanation_tr_to_en', nativeLanguage)
+            .replace('{translation}', trans)
+            .replace('{word}', updated.word);
+        } else if (updated.qType === 'fill_blank' && updated.sentenceEn) {
+          const trans = getCachedSentence(updated.sentenceEn) || sentenceTranslations[updated.sentenceEn.toLowerCase().trim()];
+          if (trans) {
+            updated.hint = `${t('translation', nativeLanguage)}: "${trans}"`;
+          }
+          const correctTrans = getCachedWord(updated.word) || wordTranslations[updated.word.toLowerCase().trim()] || updated.word;
+          updated.explanation = t('quiz_explanation_fill_blank', nativeLanguage)
+            .replace('{word}', updated.word)
+            .replace('{translation}', correctTrans)
+            .replace('{sentence}', updated.sentenceEn);
+        }
+        
+        return updated;
+      });
+
+      setQuestions(updatedQuestions);
+    } catch (err) {
+      console.error("translateQuestions error:", err);
+    } finally {
+      setIsTranslating(false);
+    }
+  };
 
   React.useEffect(() => {
-    if (prevDifficultyRef.current !== difficulty || prevModeRef.current !== quizMode) {
+    if (
+      prevDifficultyRef.current !== difficulty ||
+      prevModeRef.current !== quizMode ||
+      prevLangRef.current !== nativeLanguage ||
+      questions.length === 0
+    ) {
       prevDifficultyRef.current = difficulty;
       prevModeRef.current = quizMode;
+      prevLangRef.current = nativeLanguage;
       
+      let q: QuizQuestion[] = [];
       if (quizMode === 'random') {
         const levelsMap = {
           easy: ['A1', 'A2'],
           medium: ['B1', 'B2'],
           hard: ['C1']
         };
-        const q = generateRandomQuizForLevels(levelsMap[difficulty] as any, books, nativeLanguage);
-        setQuestions(q);
+        q = generateRandomQuizForLevels(levelsMap[difficulty] as any, books, nativeLanguage);
       } else {
-        const q = generateVocabularyQuiz(vocabulary, books, nativeLanguage);
-        setQuestions(q);
+        q = generateVocabularyQuiz(vocabulary, books, nativeLanguage);
       }
+
       setCurrentQuestionIdx(0);
       setSelectedOption(null);
       setIsAnswered(false);
       setQuizScore(0);
       setIsCompleted(false);
+
+      if (nativeLanguage !== 'tr' && q.length > 0) {
+        setQuestions(q);
+        translateQuestions(q);
+      } else {
+        setQuestions(q);
+        setIsTranslating(false);
+      }
     }
   }, [difficulty, quizMode, books, vocabulary, nativeLanguage]);
-
-  // Dynamic background fetch for daily/practice quiz hints and option translations if not native Turkish
-  React.useEffect(() => {
-    if (nativeLanguage === 'tr' || !questions || questions.length === 0) return;
-
-    const apiBase = (() => {
-      try {
-        if (window.location.protocol === 'capacitor:') {
-          return 'https://ingilizce-oyk-m.onrender.com';
-        }
-        return '';
-      } catch { return ''; }
-    })();
-
-    questions.forEach((q, qIdx) => {
-      // 1. Fetch hint/sentence translation for fill_blank questions
-      if (q.qType === 'fill_blank' && q.sentenceEn) {
-        const cacheKey = `linguist_trans_sentence_game_${q.sentenceEn.toLowerCase().trim()}_${nativeLanguage}`;
-        const cached = localStorage.getItem(cacheKey);
-        if (cached) {
-          setQuestions(prev => {
-            if (!prev) return [];
-            const updated = [...prev];
-            if (updated[qIdx]) {
-              updated[qIdx].hint = `${t('translation', nativeLanguage)}: "${cached}"`;
-            }
-            return updated;
-          });
-        } else {
-          fetch(`${apiBase}/api/translate-sentence`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ text: q.sentenceEn, targetLang: nativeLanguage })
-          })
-          .then(res => {
-            if (!res.ok) throw new Error('API error');
-            return res.json();
-          })
-          .then((data: any) => {
-            if (data && data.translation) {
-              localStorage.setItem(cacheKey, data.translation);
-              setQuestions(prev => {
-                if (!prev) return [];
-                const updated = [...prev];
-                if (updated[qIdx]) {
-                  updated[qIdx].hint = `${t('translation', nativeLanguage)}: "${data.translation}"`;
-                }
-                return updated;
-              });
-            }
-          })
-          .catch(err => {
-            console.error('Quiz hint translation fetch error, trying client fallback:', err);
-            translateWithGoogleClient(q.sentenceEn, nativeLanguage)
-            .then(fallbackTr => {
-              localStorage.setItem(cacheKey, fallbackTr);
-              setQuestions(prev => {
-                if (!prev) return [];
-                const updated = [...prev];
-                if (updated[qIdx]) {
-                  updated[qIdx].hint = `${t('translation', nativeLanguage)}: "${fallbackTr}"`;
-                }
-                return updated;
-              });
-            })
-            .catch(fallbackErr => console.error('Client-side quiz hint translation fallback failed:', fallbackErr));
-          });
-        }
-      }
-
-      // 2. Fetch word translation for tr_to_en questionText
-      if (q.qType === 'tr_to_en') {
-        const cleanW = q.word.toLowerCase().trim();
-        const getCachedWord = () => {
-          const cacheKeyObj = `story_word_translations_cache_${nativeLanguage}`;
-          const cacheJSON = localStorage.getItem(cacheKeyObj);
-          if (cacheJSON) {
-            try {
-              const cache = JSON.parse(cacheJSON);
-              if (cache[cleanW] && cache[cleanW].translation) return cache[cleanW].translation;
-            } catch {}
-          }
-          const indCacheKey = `linguist_dict_word_${cleanW}_${nativeLanguage}`;
-          const indCache = localStorage.getItem(indCacheKey);
-          if (indCache) {
-            try {
-              const parsed = JSON.parse(indCache);
-              if (parsed.translation) return parsed.translation;
-            } catch {}
-          }
-          // Check offline pretranslated
-          for (const bId in pretranslatedStories) {
-            const offlineBook = pretranslatedStories[bId as keyof typeof pretranslatedStories];
-            if (offlineBook && offlineBook.words && offlineBook.words[q.word as keyof typeof offlineBook.words]) {
-              const offlineWord = offlineBook.words[q.word as keyof typeof offlineBook.words];
-              if (offlineWord[nativeLanguage as keyof typeof offlineWord]) {
-                return offlineWord[nativeLanguage as keyof typeof offlineWord] as string;
-              }
-            }
-          }
-          return null;
-        };
-
-        const cachedTr = getCachedWord();
-        if (cachedTr) {
-          setQuestions(prev => {
-            if (!prev) return [];
-            const updated = [...prev];
-            if (updated[qIdx]) {
-              updated[qIdx].questionText = `"${cachedTr}" ${t('quiz_translation_prompt', nativeLanguage)}`;
-            }
-            return updated;
-          });
-        } else {
-          fetch(`${apiBase}/api/translate-word`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ word: q.word, context: q.sentenceEn || '', level: q.level || 'A1', targetLang: nativeLanguage })
-          })
-          .then(res => {
-            if (!res.ok) throw new Error('API error');
-            return res.json();
-          })
-          .then((data: any) => {
-            if (data && data.translation) {
-              const indCacheKey = `linguist_dict_word_${cleanW}_${nativeLanguage}`;
-              localStorage.setItem(indCacheKey, JSON.stringify({
-                translation: data.translation,
-                notes: data.explanation || '',
-                level: data.wordLevel || 'A1'
-              }));
-              setQuestions(prev => {
-                if (!prev) return [];
-                const updated = [...prev];
-                if (updated[qIdx]) {
-                  updated[qIdx].questionText = `"${data.translation}" ${t('quiz_translation_prompt', nativeLanguage)}`;
-                }
-                return updated;
-              });
-            }
-          })
-          .catch(err => {
-            console.error('Quiz word translation fetch error, trying client fallback:', err);
-            translateWithGoogleClient(q.word, nativeLanguage)
-            .then(fallbackTr => {
-              const indCacheKey = `linguist_dict_word_${cleanW}_${nativeLanguage}`;
-              localStorage.setItem(indCacheKey, JSON.stringify({
-                translation: fallbackTr,
-                notes: '',
-                level: q.level || 'A1'
-              }));
-              setQuestions(prev => {
-                if (!prev) return [];
-                const updated = [...prev];
-                if (updated[qIdx]) {
-                  updated[qIdx].questionText = `"${fallbackTr}" ${t('quiz_translation_prompt', nativeLanguage)}`;
-                }
-                return updated;
-              });
-            })
-            .catch(fallbackErr => console.error('Client-side quiz word translation fallback failed:', fallbackErr));
-          });
-        }
-      }
-
-      // 3. Fetch options translations for en_to_tr questions
-      if (q.qType === 'en_to_tr' && q.optionsEn) {
-        q.optionsEn.forEach((engWord: string, optIdx: number) => {
-          const cleanW = engWord.toLowerCase().trim();
-          const getCachedWord = () => {
-            const cacheKeyObj = `story_word_translations_cache_${nativeLanguage}`;
-            const cacheJSON = localStorage.getItem(cacheKeyObj);
-            if (cacheJSON) {
-              try {
-                const cache = JSON.parse(cacheJSON);
-                if (cache[cleanW] && cache[cleanW].translation) return cache[cleanW].translation;
-              } catch {}
-            }
-            const indCacheKey = `linguist_dict_word_${cleanW}_${nativeLanguage}`;
-            const indCache = localStorage.getItem(indCacheKey);
-            if (indCache) {
-              try {
-                const parsed = JSON.parse(indCache);
-                if (parsed.translation) return parsed.translation;
-              } catch {}
-            }
-            // Check offline pretranslated
-            for (const bId in pretranslatedStories) {
-              const offlineBook = pretranslatedStories[bId as keyof typeof pretranslatedStories];
-              if (offlineBook && offlineBook.words && offlineBook.words[engWord as keyof typeof offlineBook.words]) {
-                const offlineWord = offlineBook.words[engWord as keyof typeof offlineBook.words];
-                if (offlineWord[nativeLanguage as keyof typeof offlineWord]) {
-                  return offlineWord[nativeLanguage as keyof typeof offlineWord] as string;
-                }
-              }
-            }
-            return null;
-          };
-
-          const cachedTr = getCachedWord();
-          if (cachedTr) {
-            setQuestions(prev => {
-              if (!prev) return [];
-              const updated = [...prev];
-              if (updated[qIdx] && updated[qIdx].options) {
-                updated[qIdx].options[optIdx] = cachedTr;
-              }
-              return updated;
-            });
-          } else {
-            fetch(`${apiBase}/api/translate-word`, {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ word: engWord, context: q.sentenceEn || '', level: q.level || 'A1', targetLang: nativeLanguage })
-            })
-            .then(res => {
-              if (!res.ok) throw new Error('API error');
-              return res.json();
-            })
-            .then((data: any) => {
-              if (data && data.translation) {
-                const indCacheKey = `linguist_dict_word_${cleanW}_${nativeLanguage}`;
-                localStorage.setItem(indCacheKey, JSON.stringify({
-                  translation: data.translation,
-                  notes: data.explanation || '',
-                  level: data.wordLevel || 'A1'
-                }));
-                setQuestions(prev => {
-                  if (!prev) return [];
-                  const updated = [...prev];
-                  if (updated[qIdx] && updated[qIdx].options) {
-                    updated[qIdx].options[optIdx] = data.translation;
-                  }
-                  return updated;
-                });
-              }
-            })
-            .catch(err => {
-              console.error('Quiz option translation fetch error, trying client fallback:', err);
-              translateWithGoogleClient(engWord, nativeLanguage)
-              .then(fallbackTr => {
-                const indCacheKey = `linguist_dict_word_${cleanW}_${nativeLanguage}`;
-                localStorage.setItem(indCacheKey, JSON.stringify({
-                  translation: fallbackTr,
-                  notes: '',
-                  level: q.level || 'A1'
-                }));
-                setQuestions(prev => {
-                  if (!prev) return [];
-                  const updated = [...prev];
-                  if (updated[qIdx] && updated[qIdx].options) {
-                    updated[qIdx].options[optIdx] = fallbackTr;
-                  }
-                  return updated;
-                });
-              })
-              .catch(fallbackErr => console.error('Client-side quiz option translation fallback failed:', fallbackErr));
-            });
-          }
-        });
-      }
-    });
-  }, [questions, nativeLanguage]);
 
   const activeQuestion = questions[currentQuestionIdx];
 
@@ -1538,8 +1560,23 @@ export default function QuizView({
         })()}
       </AnimatePresence>
 
-      {/* QUIZ COMPLETED VIEW RESULTS SCREEN replaces standard browser alert() */}
-      {quizMode === 'saved' && questions.length < 3 && !showSubscriptionPanel ? (
+      {/* Loading Screen */}
+      {isTranslating ? (
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          className={`border rounded-3xl p-12 text-center shadow-lg transition-colors flex flex-col items-center justify-center min-h-[300px] ${
+            isDarkMode ? 'bg-[#1A1A1E] border-[#2A2A30]' : 'bg-white border-[#FFE66D]'
+          }`}
+        >
+          <RefreshCw className="w-10 h-10 animate-spin text-[#4ECDC4] mb-4" />
+          <h3 className={`font-headline-lg text-lg font-bold tracking-tight ${
+            isDarkMode ? 'text-white' : 'text-[#2D3436]'
+          }`}>
+            {t('quiz_loading', nativeLanguage)}
+          </h3>
+        </motion.div>
+      ) : quizMode === 'saved' && questions.length < 3 && !showSubscriptionPanel ? (
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -1902,7 +1939,12 @@ export default function QuizView({
                       <span className="text-[11px] text-gray-400 font-medium font-headline-lg">{t('cancel_anytime', nativeLanguage)}</span>
                     </div>
                     <div className="text-right">
-                      <span className="font-bold text-lg font-headline-lg text-[#FF6B6B] block">99₺ <span className="text-xs font-semibold text-gray-400">{t('unit_per_month', nativeLanguage)}</span></span>
+                      <span className="font-bold text-lg font-headline-lg text-[#FF6B6B] block">
+                        {prices.monthly}{' '}
+                        <span className="text-xs font-semibold text-gray-400">
+                          {t('unit_per_month', nativeLanguage)}
+                        </span>
+                      </span>
                     </div>
                   </div>
 
@@ -1923,11 +1965,20 @@ export default function QuizView({
                       <span className={`font-bold text-sm flex items-center gap-1.5 font-headline-lg ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
                         {t('yearly_subscription', nativeLanguage)}
                       </span>
-                      <span className="text-[11px] text-gray-400 font-medium font-headline-lg">{t('yearly_payment_detail', nativeLanguage)}</span>
+                      <span className="text-[11px] text-gray-400 font-medium font-headline-lg">
+                        {t('yearly_payment_detail', nativeLanguage).replace('{amount}', prices.yearlyTotal)}
+                      </span>
                     </div>
                     <div className="text-right">
-                      <span className="text-xs text-gray-455 line-through block font-bold">1.188₺</span>
-                      <span className="font-bold text-lg font-headline-lg text-[#4ECDC4] block">59₺ <span className="text-xs font-semibold text-gray-400">{t('unit_per_month', nativeLanguage)}</span></span>
+                      <span className="text-xs text-gray-455 line-through block font-bold">
+                        {prices.yearlyOriginalTotal}
+                      </span>
+                      <span className="font-bold text-lg font-headline-lg text-[#4ECDC4] block">
+                        {prices.yearlyMonthly}{' '}
+                        <span className="text-xs font-semibold text-gray-400">
+                          {t('unit_per_month', nativeLanguage)}
+                        </span>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -1981,9 +2032,9 @@ export default function QuizView({
                         ▶️
                       </div>
                       <div className="text-left">
-                        <span className="text-[10px] text-gray-400 font-bold block">GOOGLE PLAY HESABI</span>
+                        <span className="text-[10px] text-gray-400 font-bold block">{t('google_play_account', nativeLanguage)}</span>
                         <span className={`text-xs font-bold ${isDarkMode ? 'text-white' : 'text-slate-800'}`}>
-                          {localStorage.getItem('linguist_user_email') || 'aktif-google-hesabi@play.com'}
+                          {localStorage.getItem('linguist_user_email') || 'active-account@play.com'}
                         </span>
                       </div>
                     </div>
@@ -2005,7 +2056,7 @@ export default function QuizView({
 
                   {/* Legal Play Store warning info */}
                   <p className="text-[10px] leading-relaxed text-gray-400 text-left font-medium select-none">
-                    {t('google_play_terms_desc', nativeLanguage).replace('{amount}', checkoutTier === 'monthly' ? '99,00 TL' : '712,00 TL')}
+                    {t('google_play_terms_desc', nativeLanguage).replace('{amount}', checkoutTier === 'monthly' ? prices.monthly : prices.yearlyTotal)}
                   </p>
                 </form>
 

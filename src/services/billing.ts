@@ -26,6 +26,7 @@ export interface PurchaseResult {
 let currentOnStateChange: ((status: 'processing' | 'success' | 'error', errorMsg?: string) => void) | null = null;
 let globalSuccessCallback: ((tier?: 'monthly' | 'yearly') => void) | null = null;
 let isStoreInitialized = false;
+let globalPricingCallback: (() => void) | null = null;
 
 /**
  * Uygulamanın Android üzerinde yerel bir wrapper (Capacitor/Cordova) içinde çalışıp çalışmadığını sorgular.
@@ -98,6 +99,14 @@ export const initializeBillingStore = (
       .finished((transaction: any) => {
         console.log('İşlem tamamen tamamlandı:', transaction.id);
       });
+
+    // Google Play Store'dan ürün detayları (ve yerel fiyatlar) geldikçe dinleyicileri uyar
+    store.when().productUpdated((product: any) => {
+      console.log('Ürün güncellendi (Fiyat/Detay):', product.id);
+      if (globalPricingCallback) {
+        globalPricingCallback();
+      }
+    });
 
     // Global hata dinleyicisi (v13'te kaldırılan store.when().cancelled() / error() yerine kullanılır)
     store.error((error: any) => {
@@ -248,4 +257,84 @@ export const restorePlayStorePurchases = async (
       onStateChange('success');
     }, 1500);
   }
+};
+
+/**
+ * Fiyat güncellemelerini dinlemek için callback kaydeder.
+ */
+export const registerPricingListener = (callback: () => void): (() => void) => {
+  globalPricingCallback = callback;
+  return () => {
+    globalPricingCallback = null;
+  };
+};
+
+export interface LocalizedPrices {
+  monthly: string;
+  yearlyMonthly: string;
+  yearlyTotal: string;
+  yearlyOriginalTotal: string;
+}
+
+/**
+ * Google Play Store'dan gelen güncel ve yerelleştirilmiş fiyat bilgilerini çeker.
+ * Eğer yerel fiyatlar henüz yüklenmediyse null döner.
+ */
+export const getLocalizedPrices = (): LocalizedPrices | null => {
+  if (typeof window === 'undefined') return null;
+  const win = window as any;
+  const CdvPurchase = win.CdvPurchase;
+  if (!isNativeAndroid() || !CdvPurchase || !CdvPurchase.store) {
+    return null;
+  }
+  
+  try {
+    const store = CdvPurchase.store;
+    const product = store.get('premium_upgrade', CdvPurchase.Platform.GOOGLE_PLAY);
+    if (!product || !product.offers || product.offers.length === 0) {
+      return null;
+    }
+    
+    // Aylık abonelik teklifi (premium_upgrade@monthly) veya varsayılan teklif
+    const monthlyOffer = product.getOffer('premium_upgrade@monthly') || product.getOffer();
+    const monthlyPhase = monthlyOffer?.pricingPhases?.[0];
+    const monthlyPriceFormatted = monthlyPhase?.formattedPrice;
+    
+    // Yıllık abonelik teklifi (premium_upgrade@yearly) veya varsayılan teklif
+    const yearlyOffer = product.getOffer('premium_upgrade@yearly') || product.getOffer();
+    const yearlyPhase = yearlyOffer?.pricingPhases?.[0];
+    const yearlyPriceFormatted = yearlyPhase?.formattedPrice;
+    
+    if (monthlyPriceFormatted && yearlyPriceFormatted && monthlyPhase && yearlyPhase) {
+      const currencyCode = yearlyPhase.currency || 'TRY';
+      
+      // Kullanıcının bölgesine ve para birimine göre sayı formatlayıcı oluştur
+      const formatter = new Intl.NumberFormat(win.navigator.language || undefined, {
+        style: 'currency',
+        currency: currencyCode,
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 2,
+      });
+      
+      // Yıllık aboneliğin aylık eşdeğerini hesapla (Toplam Yıllık Fiyat / 12)
+      const yearlyMonthlyEquivalentMicros = yearlyPhase.priceMicros / 12;
+      const yearlyMonthlyEquivalent = yearlyMonthlyEquivalentMicros / 1000000;
+      const yearlyMonthlyFormatted = formatter.format(yearlyMonthlyEquivalent);
+      
+      // İndirimsiz toplam orijinal fiyatı hesapla (Aylık Fiyat * 12)
+      const originalTotalMicros = monthlyPhase.priceMicros * 12;
+      const originalTotal = originalTotalMicros / 1000000;
+      const originalTotalFormatted = formatter.format(originalTotal);
+      
+      return {
+        monthly: monthlyPriceFormatted,
+        yearlyMonthly: yearlyMonthlyFormatted,
+        yearlyTotal: yearlyPriceFormatted,
+        yearlyOriginalTotal: originalTotalFormatted,
+      };
+    }
+  } catch (e) {
+    console.error('Yerel fiyatlar çözümlenirken hata oluştu:', e);
+  }
+  return null;
 };

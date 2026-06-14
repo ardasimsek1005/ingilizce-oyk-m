@@ -7,6 +7,7 @@ export interface RawStory {
   en: string[];
   tr: string[];
   words: { [key: string]: string };
+  coverPosition?: string;
 }
 
 export const STORIES_PART1: RawStory[] = [

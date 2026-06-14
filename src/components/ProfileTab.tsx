@@ -175,6 +175,7 @@ export default function ProfileTab({
     }
   }, [toastMessage]);
   const [showPremiumBenefitsModal, setShowPremiumBenefitsModal] = useState(false);
+  const [showPremiumFeaturesModal, setShowPremiumFeaturesModal] = useState(false);
 
   // Login connection states
   const [showMockLogin, setShowMockLogin] = useState(false);
@@ -415,7 +416,7 @@ export default function ProfileTab({
       .then(res => {
         if (!res.ok) {
           return res.json().then(errData => {
-            throw new Error(errData.error || 'Kayıt işlemi başarısız oldu. ⚠️');
+            throw new Error(errData.error || t('auth_error_register_failed', nativeLanguage));
           });
         }
         return res.json();
@@ -472,7 +473,7 @@ export default function ProfileTab({
         .then(res => {
           if (!res.ok) {
             return res.json().then(errData => {
-              throw new Error(errData.error || 'Giriş işlemi başarısız oldu. ⚠️');
+              throw new Error(errData.error || t('auth_error_login_failed', nativeLanguage));
             });
           }
           return res.json();
@@ -494,19 +495,20 @@ export default function ProfileTab({
           setOauthStep('none');
           setOauthProvider(null);
           
+          const pName = provider === 'google' ? 'Google' : 'Facebook';
           if (userEmail) {
-            setToastMessage(`${provider === 'google' ? 'Google' : 'Facebook'} hesabı başarıyla bağlandı! 🔗`);
+            setToastMessage(t('auth_oauth_linked', nativeLanguage).replace('{provider}', pName));
           } else {
             setToastMessage(data.isNew 
-              ? `${provider === 'google' ? 'Google' : 'Facebook'} ile yeni hesap oluşturuldu ve giriş yapıldı! 🎉` 
-              : `${provider === 'google' ? 'Google' : 'Facebook'} ile giriş yapıldı ve veriler eşitlendi! 🔄`
+              ? t('auth_oauth_new_account', nativeLanguage).replace('{provider}', pName) 
+              : t('auth_oauth_synced', nativeLanguage).replace('{provider}', pName)
             );
           }
           setTimeout(() => setToastMessage(null), 3000);
         })
         .catch(err => {
           console.error('OAuth Auth request failed:', err);
-          setToastMessage(err.message || 'Oturum açılamadı. Lütfen tekrar deneyin. ⚠️');
+          setToastMessage(err.message || t('auth_error_login_generic', nativeLanguage));
           setTimeout(() => setToastMessage(null), 3000);
           setOauthStep('none');
           setOauthProvider(null);
@@ -517,9 +519,10 @@ export default function ProfileTab({
 
 
   // Profile Edit states
-  const [isEditing, setIsEditing] = useState(false);
+  const [editMode, setEditMode] = useState<'none' | 'name' | 'avatar'>('none');
   const [tempName, setTempName] = useState(() => getLocalizedUsername(userName, nativeLanguage));
   const [tempAvatar, setTempAvatar] = useState(userAvatar);
+  const [nameInputFocused, setNameInputFocused] = useState(false);
 
   // Application Installation Date state
   const [installDate] = useState(() => {
@@ -662,12 +665,8 @@ export default function ProfileTab({
       <AnimatePresence>
         {toastMessage && (() => {
           const isWarning = toastMessage.includes('⚠️') || 
-                            toastMessage.toLowerCase().includes('hata') || 
-                            toastMessage.toLowerCase().includes('geçersiz') || 
-                            toastMessage.toLowerCase().includes('yetersiz') ||
-                            toastMessage.toLowerCase().includes('çıkış') ||
-                            toastMessage.toLowerCase().includes('kaldırıldı') ||
-                            toastMessage.toLowerCase().includes('olmamalıdır');
+                            toastMessage.includes('?') || 
+                            /error|fail|invalid|unauthorized|exception|hata|gecersiz|basarisiz|olustu|yetersiz/i.test(toastMessage);
           
           return (
             <div className="fixed inset-0 z-[9999] flex items-center justify-center p-6 pointer-events-none select-none">
@@ -705,108 +704,145 @@ export default function ProfileTab({
           : 'bg-white border-[#FFE66D] shadow-[0_8px_16px_rgba(255,107,107,0.01)]'
       }`}>
 
-        {isEditing ? (
+        {editMode !== 'none' ? (
           <div className="w-full space-y-6">
             <h3 className={`text-base font-bold font-headline-lg ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
-              Profili Düzenle
+              {editMode === 'avatar' 
+                ? t('profile_avatar_change_title', nativeLanguage) 
+                : t('profile_change_name_btn', nativeLanguage)}
             </h3>
             
-            {/* Selected Avatar Preview */}
-            <div className="flex flex-col items-center">
-              <div className="w-20 h-20 rounded-full overflow-hidden shadow-md border-4 border-[#FFE66D] mb-3 relative bg-slate-50">
-                <img
-                  alt="Seçilen Avatar"
-                  className="w-full h-full object-cover"
-                  src={tempAvatar}
-                  referrerPolicy="no-referrer"
-                  onError={(e) => {
-                    e.currentTarget.src = 'https://images.unsplash.com/photo-1628157582853-a796fa650a6a?w=150&auto=format&fit=crop&q=80';
-                  }}
-                />
-              </div>
-              <span className="text-[10px] font-bold text-gray-400 tracking-wider mb-2">PROFİL RESMİ SEÇİN</span>
-            </div>
+            {editMode === 'avatar' && (
+              <>
+                {/* Selected Avatar Preview */}
+                <div className="flex flex-col items-center">
+                  <div className="w-20 h-20 rounded-full overflow-hidden shadow-md border-4 border-[#FFE66D] mb-3 relative bg-slate-50">
+                    <img
+                      alt={t('profile_avatar_selected', nativeLanguage)}
+                      className="w-full h-full object-cover"
+                      src={tempAvatar}
+                      referrerPolicy="no-referrer"
+                      onError={(e) => {
+                        e.currentTarget.src = 'https://images.unsplash.com/photo-1628157582853-a796fa650a6a?w=150&auto=format&fit=crop&q=80';
+                      }}
+                    />
+                  </div>
+                  <span className="text-[10px] font-bold text-gray-400 tracking-wider mb-2">{t('profile_avatar_select', nativeLanguage)}</span>
+                </div>
 
-            {/* Avatar picker grid */}
-            <div className="grid grid-cols-5 gap-2.5 max-w-sm mx-auto">
-              {AVATAR_OPTIONS.map((url, i) => (
-                <button
-                  key={i}
-                  type="button"
-                  onClick={() => {
-                    setTempAvatar(url);
-                  }}
-                  className={`w-12 h-12 rounded-full overflow-hidden border-2 transition-all cursor-pointer relative ${
-                    tempAvatar === url
-                      ? 'border-[#FF6B6B] scale-110 shadow-md ring-2 ring-[#FF6B6B]/20'
-                      : 'border-transparent opacity-70 hover:opacity-100 hover:scale-105'
-                  }`}
-                >
-                  <img
-                    src={url}
-                    alt={`Avatar ${i+1}`}
-                    referrerPolicy="no-referrer"
-                    onError={(e) => {
-                      e.currentTarget.src = 'https://images.unsplash.com/photo-1628157582853-a796fa650a6a?w=150&auto=format&fit=crop&q=80';
-                    }}
-                    className="w-full h-full object-cover"
+                {/* Avatar picker grid */}
+                <div className="grid grid-cols-5 gap-2.5 max-w-sm mx-auto">
+                  {AVATAR_OPTIONS.map((url, i) => (
+                    <button
+                      key={i}
+                      type="button"
+                      onClick={() => {
+                        setTempAvatar(url);
+                      }}
+                      className={`w-12 h-12 rounded-full overflow-hidden border-2 transition-all cursor-pointer relative ${
+                        tempAvatar === url
+                          ? 'border-[#FF6B6B] scale-110 shadow-md ring-2 ring-[#FF6B6B]/20'
+                          : 'border-transparent opacity-70 hover:opacity-100 hover:scale-105'
+                      }`}
+                    >
+                      <img
+                        src={url}
+                        alt={`Avatar ${i+1}`}
+                        referrerPolicy="no-referrer"
+                        onError={(e) => {
+                          e.currentTarget.src = 'https://images.unsplash.com/photo-1628157582853-a796fa650a6a?w=150&auto=format&fit=crop&q=80';
+                        }}
+                        className="w-full h-full object-cover"
+                      />
+                      {tempAvatar === url && (
+                        <div className="absolute inset-0 bg-[#FF6B6B]/15 flex items-center justify-center">
+                          <Check className="w-4 h-4 text-[#FF6B6B] stroke-[3]" />
+                        </div>
+                      )}
+                    </button>
+                  ))}
+                </div>
+              </>
+            )}
+
+            {editMode === 'name' && (
+              /* Name Input field */
+              <div className="max-w-xs mx-auto w-full">
+                <label id="profile-name-label" className="block text-[10px] font-bold text-gray-455 mb-2 text-left font-headline-lg">
+                  {t('profile_name_label', nativeLanguage)}
+                </label>
+                <div className="relative w-full">
+                  <input
+                    type="password"
+                    maxLength={25}
+                    placeholder={t('profile_name_placeholder', nativeLanguage)}
+                    value={tempName}
+                    onChange={(e) => setTempName(e.target.value)}
+                    onFocus={() => setNameInputFocused(true)}
+                    onBlur={() => setNameInputFocused(false)}
+                    autoComplete="off"
+                    autoCorrect="off"
+                    autoCapitalize="off"
+                    spellCheck={false}
+                    className="absolute inset-0 w-full h-full opacity-0 z-10 cursor-text"
                   />
-                  {tempAvatar === url && (
-                    <div className="absolute inset-0 bg-[#FF6B6B]/15 flex items-center justify-center">
-                      <Check className="w-4 h-4 text-[#FF6B6B] stroke-[3]" />
-                    </div>
-                  )}
-                </button>
-              ))}
-            </div>
-
-            {/* Name Input field */}
-            <div className="max-w-xs mx-auto w-full">
-              <label id="profile-name-label" className="block text-[10px] font-bold text-gray-455 mb-2 text-left font-headline-lg">
-                İSMİNİZ
-              </label>
-              <input
-                type="text"
-                maxLength={25}
-                placeholder="İsim belirtilmemiş (Boş bırakabilirsiniz)"
-                value={tempName}
-                onChange={(e) => setTempName(e.target.value)}
-                className={`w-full text-xs px-3 py-2.5 border rounded-xl focus:outline-none focus:border-[#FF6B6B] focus:ring-1 focus:ring-[#FF6B6B] font-medium transition-colors ${
-                  isDarkMode 
-                    ? 'bg-[#121214] border-[#2A2A30] text-white placeholder-gray-650' 
-                    : 'bg-white border-[#FFE66D] text-gray-800 placeholder-teal-600'
-                }`}
-              />
-            </div>
+                  <div
+                    className={`w-full text-xs px-3 py-2.5 border rounded-xl font-medium transition-colors flex items-center min-h-[38px] ${
+                      nameInputFocused ? 'border-[#FF6B6B] ring-1 ring-[#FF6B6B]' : ''
+                    } ${
+                      isDarkMode 
+                        ? 'bg-[#121214] border-[#2A2A30] text-white' 
+                        : 'bg-white border-[#FFE66D] text-gray-800'
+                    }`}
+                  >
+                    {tempName ? (
+                      <span className="truncate">{tempName}</span>
+                    ) : (
+                      <span className={isDarkMode ? 'text-gray-650' : 'text-teal-650'}>
+                        {t('profile_name_placeholder', nativeLanguage)}
+                      </span>
+                    )}
+                    {nameInputFocused && (
+                      <span className="w-[1.5px] h-3.5 bg-[#FF6B6B] animate-pulse ml-0.5 shrink-0" />
+                    )}
+                  </div>
+                </div>
+              </div>
+            )}
 
             {/* Action buttons */}
             <div className="flex gap-2.5 max-w-xs mx-auto pt-2">
               <button
                 type="button"
                 onClick={() => {
-                  const cleanName = tempName.trim();
+                  if (editMode === 'name') {
+                    const cleanName = tempName.trim();
+                    
+                    if (cleanName.length < 3 || cleanName.length > 25) {
+                      setToastMessage(t('profile_name_length_error', nativeLanguage));
+                      setTimeout(() => setToastMessage(null), 3000);
+                      return;
+                    }
+
+                    const validNameRegex = /^[a-zA-Z0-9ğüşıöçĞÜŞİÖÇ\s]+$/;
+                    if (!validNameRegex.test(cleanName)) {
+                      setToastMessage(t('profile_name_chars_error', nativeLanguage));
+                      setTimeout(() => setToastMessage(null), 3000);
+                      return;
+                    }
+
+                    if (checkIsProfane(cleanName)) {
+                      setToastMessage(t('profile_name_inappropriate_error', nativeLanguage));
+                      setTimeout(() => setToastMessage(null), 3000);
+                      return;
+                    }
+
+                    onUpdateProfile(cleanName, userAvatar);
+                  } else if (editMode === 'avatar') {
+                    onUpdateProfile(userName, tempAvatar);
+                  }
                   
-                  if (cleanName.length < 3 || cleanName.length > 25) {
-                    setToastMessage(t('profile_name_length_error', nativeLanguage));
-                    setTimeout(() => setToastMessage(null), 3000);
-                    return;
-                  }
-
-                  const validNameRegex = /^[a-zA-Z0-9ğüşıöçĞÜŞİÖÇ\s]+$/;
-                  if (!validNameRegex.test(cleanName)) {
-                    setToastMessage(t('profile_name_chars_error', nativeLanguage));
-                    setTimeout(() => setToastMessage(null), 3000);
-                    return;
-                  }
-
-                  if (checkIsProfane(cleanName)) {
-                    setToastMessage(t('profile_name_inappropriate_error', nativeLanguage));
-                    setTimeout(() => setToastMessage(null), 3000);
-                    return;
-                  }
-
-                  onUpdateProfile(cleanName, tempAvatar);
-                  setIsEditing(false);
+                  setEditMode('none');
                   setToastMessage(t('profile_updated_toast', nativeLanguage));
                   setTimeout(() => setToastMessage(null), 3000);
                 }}
@@ -820,7 +856,7 @@ export default function ProfileTab({
                 onClick={() => {
                   setTempName(getLocalizedUsername(userName, nativeLanguage));
                   setTempAvatar(userAvatar);
-                  setIsEditing(false);
+                  setEditMode('none');
                 }}
                 className={`flex-1 py-2.5 rounded-xl text-xs font-bold border transition-all cursor-pointer font-headline-lg ${
                   isDarkMode 
@@ -849,13 +885,13 @@ export default function ProfileTab({
                 onClick={() => {
                   setTempName(getLocalizedUsername(userName, nativeLanguage));
                   setTempAvatar(userAvatar);
-                  setIsEditing(true);
+                  setEditMode('avatar');
                 }}
                 className="absolute inset-0 bg-black/45 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center transition-opacity text-white cursor-pointer"
-                title="Profil Resmini Değiştir"
+                title={t('profile_avatar_change_title', nativeLanguage)}
               >
                 <Camera className="w-5 h-5 mb-0.5" />
-                <span className="text-[9px] font-bold">DEĞİŞTİR</span>
+                <span className="text-[9px] font-bold">{t('profile_avatar_change_btn', nativeLanguage)}</span>
               </button>
             </div>
             
@@ -895,7 +931,7 @@ export default function ProfileTab({
                 onClick={() => {
                   setTempName(getLocalizedUsername(userName, nativeLanguage));
                   setTempAvatar(userAvatar);
-                  setIsEditing(true);
+                  setEditMode('name');
                 }}
                 className="px-4 py-1.5 bg-[#FF6B6B]/10 hover:bg-[#FF6B6B]/15 text-[#FF6B6B] text-[11px] font-bold rounded-full border border-[#FF6B6B]/20 transition-all flex items-center gap-1.5 cursor-pointer font-headline-lg"
               >
@@ -1592,18 +1628,33 @@ export default function ProfileTab({
           )}
           
           {!stats.isPremium && (
-            <button
-              onClick={onTriggerPremiumPanel}
-              className={`w-full flex items-center justify-between p-4 px-6 transition-colors group text-left text-[#FF6B6B] font-extrabold cursor-pointer ${
-                isDarkMode ? 'hover:bg-[#121214]' : 'hover:bg-[#FFFBF0]'
-              }`}
-            >
-              <span className="text-xs flex items-center gap-2 font-headline-lg">
-                <Crown className="w-5 h-5 text-[#FFE66D] fill-[#FF6B6B]" />
-                {t('settings_premium_buy', nativeLanguage)}
-              </span>
-              <ChevronRight className="w-4 h-4 text-[#FF6B6B] group-hover:translate-x-1 transition-all" />
-            </button>
+            <>
+              <button
+                onClick={onTriggerPremiumPanel}
+                className={`w-full flex items-center justify-between p-4 px-6 transition-colors group text-left text-[#FF6B6B] font-extrabold cursor-pointer ${
+                  isDarkMode ? 'hover:bg-[#121214]' : 'hover:bg-[#FFFBF0]'
+                }`}
+              >
+                <span className="text-xs flex items-center gap-2 font-headline-lg">
+                  <Crown className="w-5 h-5 text-[#FFE66D] fill-[#FF6B6B]" />
+                  {t('settings_premium_buy', nativeLanguage)}
+                </span>
+                <ChevronRight className="w-4 h-4 text-[#FF6B6B] group-hover:translate-x-1 transition-all" />
+              </button>
+
+              <button
+                onClick={() => setShowPremiumFeaturesModal(true)}
+                className={`w-full flex items-center justify-between p-4 px-6 transition-colors group text-left text-[#F59E0B] font-extrabold cursor-pointer border-t ${
+                  isDarkMode ? 'hover:bg-[#121214] border-gray-800' : 'hover:bg-[#FFFBF0] border-gray-100'
+                }`}
+              >
+                <span className="text-xs flex items-center gap-2 font-headline-lg">
+                  <Sparkles className="w-5 h-5 text-[#F59E0B] fill-[#F59E0B]/20" />
+                  {t('profile_premium_features', nativeLanguage)}
+                </span>
+                <ChevronRight className="w-4 h-4 text-[#F59E0B] group-hover:translate-x-1 transition-all" />
+              </button>
+            </>
           )}
 
           <button
@@ -1669,6 +1720,7 @@ export default function ProfileTab({
 
                 {/* Benefits List */}
                 <div className="w-full text-left space-y-2.5 mb-4.5">
+                  {/* Benefit 1: Sınırsız Enerji & Can */}
                   <div className={`p-2.5 rounded-xl border-2 flex items-start gap-2.5 transition-all ${
                     isDarkMode ? 'bg-[#121214] border-gray-800' : 'bg-[#FFFDF5] border-[#FFE66D]/45'
                   }`}>
@@ -1681,18 +1733,7 @@ export default function ProfileTab({
                     </div>
                   </div>
 
-                  <div className={`p-2.5 rounded-xl border-2 flex items-start gap-2.5 transition-all ${
-                    isDarkMode ? 'bg-[#121214] border-gray-800' : 'bg-[#FFFDF5] border-[#FFE66D]/45'
-                  }`}>
-                    <div className="w-8 h-8 bg-yellow-500/10 rounded-lg flex items-center justify-center text-yellow-500 shrink-0 border border-yellow-500/20">
-                      <Zap className="w-4.5 h-4.5 fill-yellow-500/20" />
-                    </div>
-                    <div>
-                      <h4 className="font-extrabold text-[11px] text-yellow-600 dark:text-yellow-400">{t('premium_benefit_2_title', nativeLanguage)}</h4>
-                      <p className="text-[9.5px] text-gray-400 font-semibold mt-0.5 leading-snug">{t('premium_benefit_2_desc', nativeLanguage)}</p>
-                    </div>
-                  </div>
-
+                  {/* Benefit 2: Sınırsız Kelime Bakma */}
                   <div className={`p-2.5 rounded-xl border-2 flex items-start gap-2.5 transition-all ${
                     isDarkMode ? 'bg-[#121214] border-gray-800' : 'bg-[#FFFDF5] border-[#FFE66D]/45'
                   }`}>
@@ -1705,15 +1746,29 @@ export default function ProfileTab({
                     </div>
                   </div>
 
+                  {/* Benefit 3: Sınırsız Cümle Bakma */}
                   <div className={`p-2.5 rounded-xl border-2 flex items-start gap-2.5 transition-all ${
                     isDarkMode ? 'bg-[#121214] border-gray-800' : 'bg-[#FFFDF5] border-[#FFE66D]/45'
                   }`}>
                     <div className="w-8 h-8 bg-purple-500/10 rounded-lg flex items-center justify-center text-purple-500 shrink-0 border border-purple-500/20">
-                      <Volume2 className="w-4.5 h-4.5 fill-purple-500/20" />
+                      <BookOpen className="w-4.5 h-4.5 fill-purple-500/20" />
                     </div>
                     <div>
                       <h4 className="font-extrabold text-[11px] text-purple-500">{t('premium_benefit_4_title', nativeLanguage)}</h4>
                       <p className="text-[9.5px] text-gray-400 font-semibold mt-0.5 leading-snug">{t('premium_benefit_4_desc', nativeLanguage)}</p>
+                    </div>
+                  </div>
+
+                  {/* Benefit 4: Quiz Barajlarını Anında Atla */}
+                  <div className={`p-2.5 rounded-xl border-2 flex items-start gap-2.5 transition-all ${
+                    isDarkMode ? 'bg-[#121214] border-gray-800' : 'bg-[#FFFDF5] border-[#FFE66D]/45'
+                  }`}>
+                    <div className="w-8 h-8 bg-yellow-500/10 rounded-lg flex items-center justify-center text-yellow-500 shrink-0 border border-yellow-500/20">
+                      <Zap className="w-4.5 h-4.5 fill-yellow-500/20" />
+                    </div>
+                    <div>
+                      <h4 className="font-extrabold text-[11px] text-yellow-600 dark:text-yellow-400">{t('premium_benefit_2_title', nativeLanguage)}</h4>
+                      <p className="text-[9.5px] text-gray-400 font-semibold mt-0.5 leading-snug">{t('premium_benefit_2_desc', nativeLanguage)}</p>
                     </div>
                   </div>
                 </div>
@@ -1723,6 +1778,120 @@ export default function ProfileTab({
                   className="w-full bg-[#FF6B6B] hover:bg-[#e05a5a] text-white text-xs font-bold py-2.5 rounded-xl shadow-md transition-all flex items-center justify-center cursor-pointer shadow-[#FF6B6B]/20"
                 >
                   {t('premium_benefits_thanks', nativeLanguage)}
+                </button>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+      
+      {/* PREMIUM FEATURES MODAL */}
+      <AnimatePresence>
+        {showPremiumFeaturesModal && (
+          <div className="fixed inset-0 z-50 bg-[#2D3436]/60 backdrop-blur-md flex items-center justify-center p-4">
+            <div 
+              className="absolute inset-0 cursor-pointer" 
+              onClick={() => setShowPremiumFeaturesModal(false)} 
+            />
+            
+            <motion.div
+              initial={{ scale: 0.95, opacity: 0, y: 15 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.95, opacity: 0, y: 15 }}
+              transition={{ type: "spring", stiffness: 350, damping: 28 }}
+              className={`w-full max-w-sm rounded-3xl p-4.5 shadow-2xl relative transition-all border-2 z-10 ${
+                isDarkMode 
+                  ? 'bg-[#1A1A1E] border-[#2A2A30] text-white shadow-black/80' 
+                  : 'bg-white border-[#FFE66D] text-gray-800 shadow-slate-200'
+              }`}
+            >
+              {/* Close Button */}
+              <button
+                onClick={() => setShowPremiumFeaturesModal(false)}
+                className={`absolute top-3 right-3 p-1 rounded-full hover:bg-gray-200/20 transition-all cursor-pointer ${
+                  isDarkMode ? 'text-gray-400' : 'text-gray-555'
+                }`}
+                title={t('btn_close', nativeLanguage)}
+              >
+                <X className="w-4.5 h-4.5" />
+              </button>
+
+              <div className="flex flex-col items-center text-center pt-1.5">
+                <div className="w-11 h-11 bg-[#FFE66D]/15 rounded-full flex items-center justify-center border border-[#FFE66D]/45 mb-2.5 animate-pulse">
+                  <Crown className="w-6 h-6 text-[#FFE66D] fill-[#FFE66D]" />
+                </div>
+                
+                <h3 className="font-bold text-base font-headline-lg mb-0.5">
+                  {t('profile_premium_features', nativeLanguage)}
+                </h3>
+                <p className="text-[9px] text-gray-400 font-extrabold uppercase tracking-widest mb-4">
+                  {t('premium_benefits_tag', nativeLanguage)}
+                </p>
+
+                {/* Benefits List */}
+                <div className="w-full text-left space-y-2.5 mb-4.5">
+                  {/* Benefit 1: Sınırsız Enerji & Can */}
+                  <div className={`p-2.5 rounded-xl border-2 flex items-start gap-2.5 transition-all ${
+                    isDarkMode ? 'bg-[#121214] border-gray-800' : 'bg-[#FFFDF5] border-[#FFE66D]/45'
+                  }`}>
+                    <div className="w-8 h-8 bg-orange-500/10 rounded-lg flex items-center justify-center text-orange-500 shrink-0 border border-orange-500/20">
+                      <Flame className="w-4.5 h-4.5 fill-orange-500/20" />
+                    </div>
+                    <div>
+                      <h4 className="font-extrabold text-[11px] text-orange-500">{t('premium_benefit_1_title', nativeLanguage)}</h4>
+                      <p className="text-[9.5px] text-gray-400 font-semibold mt-0.5 leading-snug">{t('premium_benefit_1_desc', nativeLanguage)}</p>
+                    </div>
+                  </div>
+
+                  {/* Benefit 2: Sınırsız Kelime Bakma */}
+                  <div className={`p-2.5 rounded-xl border-2 flex items-start gap-2.5 transition-all ${
+                    isDarkMode ? 'bg-[#121214] border-gray-800' : 'bg-[#FFFDF5] border-[#FFE66D]/45'
+                  }`}>
+                    <div className="w-8 h-8 bg-pink-500/10 rounded-lg flex items-center justify-center text-pink-500 shrink-0 border border-pink-500/20">
+                      <Sparkles className="w-4.5 h-4.5 fill-pink-500/20" />
+                    </div>
+                    <div>
+                      <h4 className="font-extrabold text-[11px] text-pink-500">{t('premium_benefit_3_title', nativeLanguage)}</h4>
+                      <p className="text-[9.5px] text-gray-400 font-semibold mt-0.5 leading-snug">{t('premium_benefit_3_desc', nativeLanguage)}</p>
+                    </div>
+                  </div>
+
+                  {/* Benefit 3: Sınırsız Cümle Bakma */}
+                  <div className={`p-2.5 rounded-xl border-2 flex items-start gap-2.5 transition-all ${
+                    isDarkMode ? 'bg-[#121214] border-gray-800' : 'bg-[#FFFDF5] border-[#FFE66D]/45'
+                  }`}>
+                    <div className="w-8 h-8 bg-purple-500/10 rounded-lg flex items-center justify-center text-purple-500 shrink-0 border border-purple-500/20">
+                      <BookOpen className="w-4.5 h-4.5 fill-purple-500/20" />
+                    </div>
+                    <div>
+                      <h4 className="font-extrabold text-[11px] text-purple-500">{t('premium_benefit_4_title', nativeLanguage)}</h4>
+                      <p className="text-[9.5px] text-gray-400 font-semibold mt-0.5 leading-snug">{t('premium_benefit_4_desc', nativeLanguage)}</p>
+                    </div>
+                  </div>
+
+                  {/* Benefit 4: Quiz Barajlarını Anında Atla */}
+                  <div className={`p-2.5 rounded-xl border-2 flex items-start gap-2.5 transition-all ${
+                    isDarkMode ? 'bg-[#121214] border-gray-800' : 'bg-[#FFFDF5] border-[#FFE66D]/45'
+                  }`}>
+                    <div className="w-8 h-8 bg-yellow-500/10 rounded-lg flex items-center justify-center text-yellow-500 shrink-0 border border-yellow-500/20">
+                      <Zap className="w-4.5 h-4.5 fill-yellow-500/20" />
+                    </div>
+                    <div>
+                      <h4 className="font-extrabold text-[11px] text-yellow-600 dark:text-yellow-400">{t('premium_benefit_2_title', nativeLanguage)}</h4>
+                      <p className="text-[9.5px] text-gray-400 font-semibold mt-0.5 leading-snug">{t('premium_benefit_2_desc', nativeLanguage)}</p>
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  onClick={() => {
+                    setShowPremiumFeaturesModal(false);
+                    onTriggerPremiumPanel();
+                  }}
+                  className="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white text-xs font-bold py-3 rounded-xl shadow-md transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-amber-500/20 animate-pulse uppercase tracking-wider font-headline-lg"
+                >
+                  <Crown className="w-4 h-4 fill-white text-white" />
+                  {t('btn_buy_premium', nativeLanguage)}
                 </button>
               </div>
             </motion.div>
@@ -1800,9 +1969,8 @@ export default function ProfileTab({
       <AnimatePresence>
         {isShareModalOpen && (() => {
           const BASE_SHARE_URL = 'https://play.google.com/store/apps/details?id=com.ingilizceoykum.app';
-          const shareUrlWithInvite = `${BASE_SHARE_URL}&invite=${shareCode}`;
-          const shareText = `İngilizce Öyküm ile harika hikayeler okuyup yeni kelimeler öğreniyorum! Sen de hemen indir ve bana katıl: ${BASE_SHARE_URL}\nDavet Kodum: ${shareCode}`;
-          const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(shareUrlWithInvite)}`;
+          const shareText = `${t('share_desc', nativeLanguage)} ${BASE_SHARE_URL}`;
+          const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(BASE_SHARE_URL)}`;
 
           return (
             <div className="fixed inset-0 z-50 bg-[#2D3436]/60 backdrop-blur-md flex items-center justify-center p-4">
@@ -1828,7 +1996,7 @@ export default function ProfileTab({
                   <div className="w-11 h-11 bg-white rounded-xl shadow-sm border border-gray-150 flex items-center justify-center p-1.5 overflow-hidden shrink-0">
                     <img 
                       src="/icon-192.png" 
-                      alt="İngilizce Öyküm Logo" 
+                      alt={nativeLanguage === 'tr' ? "İngilizce Öyküm Logo" : "My English Story Logo"} 
                       className="w-full h-full object-contain select-none rounded-lg"
                       onError={(e) => {
                         (e.target as HTMLImageElement).src = 'assets/icon.png';
@@ -1837,10 +2005,10 @@ export default function ProfileTab({
                   </div>
                   <div className="flex-1 min-w-0">
                     <h3 className={`font-headline-lg text-sm font-extrabold tracking-tight ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
-                      İngilizce Öyküm
+                      {nativeLanguage === 'tr' ? 'İngilizce Öyküm' : 'My English Story'}
                     </h3>
                     <p className={`text-[10px] font-bold ${isDarkMode ? 'text-[#FF8787]' : 'text-[#FF6B6B]'}`}>
-                      Öykülerle Dil Öğrenimi
+                      {nativeLanguage === 'tr' ? 'Öykülerle Dil Öğrenimi' : 'Language Learning with Stories'}
                     </p>
                   </div>
                   <button
@@ -1870,7 +2038,7 @@ export default function ProfileTab({
                     
                     <img 
                       src={qrCodeUrl} 
-                      alt="İngilizce Öyküm QR Code" 
+                      alt={nativeLanguage === 'tr' ? "İngilizce Öyküm QR Code" : "My English Story QR Code"} 
                       className="w-36 h-36 object-contain select-none animate-fade-in"
                     />
                   </div>
@@ -1879,7 +2047,7 @@ export default function ProfileTab({
                     <p className={`text-[10.5px] text-center font-extrabold leading-normal ${
                       isDarkMode ? 'text-gray-200' : 'text-gray-700'
                     }`}>
-                      Arkadaşınız bu kodu kamerasıyla okutarak uygulamayı anında indirebilir! 📸
+                      {t('share_qr_desc', nativeLanguage)}
                     </p>
                   </div>
                 </div>
@@ -1902,7 +2070,7 @@ export default function ProfileTab({
 
                   {/* Telegram */}
                   <a
-                    href={`https://t.me/share/url?url=${encodeURIComponent(BASE_SHARE_URL)}&text=${encodeURIComponent(`Hey! İngilizce Öyküm ile harika hikayeler okuyup kelime öğreniyorum. Benimle birlikte katılmak istersen, işte davet kodum: ${shareCode}`)}`}
+                    href={`https://t.me/share/url?url=${encodeURIComponent(BASE_SHARE_URL)}&text=${encodeURIComponent(shareText)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => handlePlatformShare('Telegram')}
@@ -1942,7 +2110,7 @@ export default function ProfileTab({
 
                   {/* Email */}
                   <a
-                    href={`mailto:?subject=${encodeURIComponent('İngilizce Öyküm Daveti')}&body=${encodeURIComponent(shareText)}`}
+                    href={`mailto:?subject=${encodeURIComponent(nativeLanguage === 'tr' ? 'İngilizce Öyküm Daveti' : 'Invitation to My English Story')}&body=${encodeURIComponent(shareText)}`}
                     onClick={() => handlePlatformShare('E-posta')}
                     className="flex flex-col items-center gap-1 cursor-pointer text-center group"
                   >
@@ -1956,7 +2124,7 @@ export default function ProfileTab({
                 {/* Copy Link field (Classic Youtube style) */}
                 <div className="mb-4 text-left">
                   <span className={`text-[9px] font-bold uppercase tracking-wider block mb-1.5 ${isDarkMode ? 'text-gray-400' : 'text-gray-550'}`}>
-                    Uygulama İndirme Bağlantısı
+                    {t('share_download_link', nativeLanguage)}
                   </span>
                   <div className={`flex items-center gap-1.5 p-1 pl-3.5 rounded-xl border transition-colors ${
                     isDarkMode ? 'bg-[#121214] border-gray-800' : 'bg-gray-50 border-gray-200'
@@ -1972,7 +2140,7 @@ export default function ProfileTab({
                       onClick={() => handleCopyLinkOrCode(BASE_SHARE_URL, false)}
                       className="px-3.5 py-1.5 bg-[#FF6B6B] hover:bg-[#FF8787] text-white rounded-lg text-[9.5px] font-bold transition-all cursor-pointer shadow-2xs active:scale-95 shrink-0"
                     >
-                      Kopyala
+                      {t('btn_copy', nativeLanguage)}
                     </button>
                   </div>
                 </div>
@@ -1982,7 +2150,7 @@ export default function ProfileTab({
                   <button
                     onClick={() => {
                       navigator.share({
-                        title: 'İngilizce Öyküm',
+                        title: nativeLanguage === 'tr' ? 'İngilizce Öyküm' : 'My English Story',
                         text: shareText,
                         url: BASE_SHARE_URL
                       }).catch(() => {});
@@ -1994,7 +2162,7 @@ export default function ProfileTab({
                     }`}
                   >
                     <Share2 className="w-4 h-4 text-[#FF6B6B]" />
-                    <span>Sistem Paylaşımı ile Gönder</span>
+                    <span>{t('share_system_btn', nativeLanguage)}</span>
                   </button>
                 )}
 

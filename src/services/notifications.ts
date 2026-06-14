@@ -1,4 +1,13 @@
 import { LocalNotifications } from '@capacitor/local-notifications';
+import { t, LanguageCode } from '../i18n';
+
+const getNativeLanguage = (): LanguageCode => {
+  try {
+    return (localStorage.getItem('linguist_native_language') as LanguageCode) || 'tr';
+  } catch (e) {
+    return 'tr';
+  }
+};
 
 export const requestNotificationPermissions = async (force: boolean = false): Promise<boolean> => {
   try {
@@ -12,8 +21,9 @@ export const requestNotificationPermissions = async (force: boolean = false): Pr
       return false;
     }
 
+    const lang = getNativeLanguage();
     const userWantsNotifications = window.confirm(
-      "Bildirimleri aktif etmek ister misiniz?\nGünlük okuma hatırlatıcıları ve can dolum bildirimleri almak için izin verin."
+      t('notify_prompt_text', lang)
     );
 
     if (!userWantsNotifications) {
@@ -54,48 +64,49 @@ export const scheduleDailyReminder = async () => {
       ]
     });
 
+    const lang = getNativeLanguage();
     const messages = [
       {
         id: 2001, // Pazar
         weekday: 1,
-        title: "Haftalık Serini Koru! 🔥",
-        body: "Bugün de okuma yaparak serini devam ettir. İngilizce öğrenme yolculuğunda harika gidiyorsun! 🥇"
+        title: t('notify_daily_title_1', lang),
+        body: t('notify_daily_body_1', lang)
       },
       {
         id: 2002, // Pazartesi
         weekday: 2,
-        title: "Yeni Haftaya Harika Başlangıç! 🚀",
-        body: "Hadi hikayelere devam et, maceralar seni bekliyor, İngilizce öğrenme vakti! 📚✨"
+        title: t('notify_daily_title_2', lang),
+        body: t('notify_daily_body_2', lang)
       },
       {
         id: 2003, // Salı
         weekday: 3,
-        title: "İngilizce Serüvenine Devam Et! 🌟",
-        body: "Bugün yeni bir hikaye okuyup kelime hazneni geliştirmeye ne dersin? Macera seni bekliyor! 🗺️"
+        title: t('notify_daily_title_3', lang),
+        body: t('notify_daily_body_3', lang)
       },
       {
         id: 2004, // Çarşamba
         weekday: 4,
-        title: "Günün Hikayesi Seni Bekliyor! 📖",
-        body: "Kendine küçük bir iyilik yap ve 5 dakika İngilizce oku. Alışkanlıklar seni zirveye taşır! 💪"
+        title: t('notify_daily_title_4', lang),
+        body: t('notify_daily_body_4', lang)
       },
       {
         id: 2005, // Perşembe
         weekday: 5,
-        title: "Gizemli Hikayelerin Kilidini Aç! 🔑",
-        body: "Karakterlerin maceraları kaldığı yerden devam ediyor. İngilizce öğrenmek hiç bu kadar keyifli olmamıştı! 🎭"
+        title: t('notify_daily_title_5', lang),
+        body: t('notify_daily_body_5', lang)
       },
       {
         id: 2006, // Cuma
         weekday: 6,
-        title: "Hafta Sonu Geliyor, Okuma Vakti! 🎉",
-        body: "Haftalık hedefini tamamlamak için harika bir gün! Hadi bugün de bir hikaye bitirelim. 🏆"
+        title: t('notify_daily_title_6', lang),
+        body: t('notify_daily_body_6', lang)
       },
       {
         id: 2007, // Cumartesi
         weekday: 7,
-        title: "Kahveni Al ve İngilizce Öyküne Başla! ☕",
-        body: "Cumartesi keyfine güzel bir hikaye eşlik etsin. Hem eğlen hem İngilizceni geliştir! 🌈"
+        title: t('notify_daily_title_7', lang),
+        body: t('notify_daily_body_7', lang)
       }
     ];
 
@@ -149,12 +160,13 @@ export const scheduleHeartsRefilledNotification = async (currentHearts: number, 
     const totalDelayMs = ((heartsNeeded - 1) * oneHour) + remainingForCurrentHeart;
     const triggerTime = new Date(now + totalDelayMs);
 
+    const lang = getNativeLanguage();
     await LocalNotifications.schedule({
       notifications: [
         {
           id: 1002,
-          title: "Canların Doldu! ❤️",
-          body: "Canların tamamen doldu, okumaya ve İngilizce öğrenmeye devam edebilirsin!",
+          title: t('notify_hearts_title', lang),
+          body: t('notify_hearts_body', lang),
           schedule: {
             at: triggerTime,
             allowWhileIdle: true

@@ -12,4 +12,5 @@ platform-tools.zip
 users_data.json
 scratch/
 __pycache__/
+*.apk
 

@@ -16,6 +16,7 @@ export interface Book {
   isCompleted?: boolean;
   isStarted?: boolean;
   titleTr?: string;
+  coverPosition?: string;
 }
 
 export interface Chapter {
@@ -57,6 +58,8 @@ export interface QuizQuestion {
   qType?: 'en_to_tr' | 'tr_to_en' | 'fill_blank';
   questionText?: string;
   translation?: string;
+  optionsEn?: string[];
+  sentenceEn?: string;
 }
 
 export interface LeaderboardUser {

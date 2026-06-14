@@ -823,26 +823,8 @@ export const INITIAL_BOOKS: Book[] = ALL_RAW_STORIES.map((story) => {
     }
   ];
 
-  const totalWords = story.en.reduce((sum, p) => sum + p.split(/\s+/).length, 0);
-
-  // Precompute actual page counts based on ~120 words per page (matching ReadingView logic)
-  let calculatedTotalPages = 0;
-  let currentGroupLength = 0;
-  let currentWordCount = 0;
-  story.en.forEach((pText) => {
-    const wordsCount = pText.split(/\s+/).filter(Boolean).length;
-    if (currentGroupLength > 0 && currentWordCount >= 130) {
-      calculatedTotalPages++;
-      currentGroupLength = 1;
-      currentWordCount = wordsCount;
-    } else {
-      currentGroupLength++;
-      currentWordCount += wordsCount;
-    }
-  });
-  if (currentGroupLength > 0) {
-    calculatedTotalPages++;
-  }
+  const totalWords = story.en.reduce((sum, p) => sum + p.split(/\s+/).filter(Boolean).length, 0);
+  const calculatedTotalPages = Math.max(1, Math.round(totalWords / 125.0));
 
   return {
     id: story.id,
@@ -858,7 +840,8 @@ export const INITIAL_BOOKS: Book[] = ALL_RAW_STORIES.map((story) => {
     statsWords: totalWords,
     statsTime: `${Math.max(1, Math.ceil(totalWords / 45))}dk`,
     chapters,
-    titleTr: STORY_TITLE_TRANSLATIONS[story.id] || ''
+    titleTr: STORY_TITLE_TRANSLATIONS[story.id] || '',
+    coverPosition: (story as any).coverPosition || 'center 28%'
   };
 });
 
