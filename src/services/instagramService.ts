@@ -13,6 +13,17 @@ export interface InstagramWordInfo {
   exampleTr: string;
 }
 
+// Interface for promotion templates
+export interface PromoTemplate {
+  title: string;
+  highlight: string;
+  subtitle: string;
+  featurePoint: string;
+  gradStart: string;
+  gradEnd: string;
+  caption: string;
+}
+
 // Fallback high-quality vocabulary words in case Gemini API is down/overloaded
 const FALLBACK_WORDS: InstagramWordInfo[] = [
   {
@@ -373,6 +384,243 @@ export async function runDailyInstagramFlow(): Promise<{ success: boolean; word?
     console.error("[Instagram Service] Unhandled error during flow execution:", err);
     try {
       fs.appendFileSync(path.join(process.cwd(), "instagram_posts.log"), `[${new Date().toISOString()}] Error: ${err.message}\n`, "utf8");
+    } catch {}
+    return { success: false, error: err.message };
+  }
+}
+
+export async function publishToFacebookDirectly(imageUrl: string, caption: string): Promise<string> {
+  const fbPageId = "1217495374774391";
+  const pageToken = process.env.FACEBOOK_PAGE_ACCESS_TOKEN;
+
+  if (!fbPageId || !pageToken) {
+    throw new Error("Facebook configuration parameters missing from environment variables.");
+  }
+
+  console.log(`[Facebook Service] Initiating photo upload for: ${imageUrl}`);
+  const fbPhotoUrl = `https://graph.facebook.com/v20.0/${fbPageId}/photos`;
+  const fbRes = await fetch(fbPhotoUrl, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      url: imageUrl,
+      caption: caption,
+      access_token: pageToken
+    })
+  });
+
+  const fbData = await fbRes.json();
+  if (fbData.error) {
+    console.error("[Facebook Service] Publication failed:", fbData.error);
+    throw new Error(`Facebook publish error: ${fbData.error.message}`);
+  }
+
+  const postId = fbData.id || fbData.post_id;
+  console.log(`[Facebook Service] Page post published successfully! Post ID: ${postId}`);
+  return postId;
+}
+
+export const PROMO_TEMPLATES: PromoTemplate[] = [
+  {
+    title: "İNGİLİZCE ÖYKÜM",
+    highlight: "KELİMENİN ANLAMINI GÖRME 📖",
+    subtitle: "Bilinmeyen Kelimelere Dokun ve Öğren",
+    featurePoint: "Dokunduğun her kelimenin Türkçe karşılığı anında karşında!",
+    gradStart: "#8B5CF6",
+    gradEnd: "#3B82F6",
+    caption: `📖 KELİMENİN ANLAMINI GÖRME 📖\n\nHikaye okurken bilmediğiniz bir kelimeyle mi karşılaştınız? Sözlüğe bakmak için okumanızı bölmenize gerek yok! 💡\n\nİngilizce Öyküm'de bilinmeyen kelimelerin üzerine dokunarak Türkçe anlamlarını anında görebilir ve akıcı bir şekilde okumaya devam edebilirsiniz. 🚀\n\nUygulamamız çok yakında Google Play Store'da yayında! 📲\n\n#ingilizceoykum #ingilizceogren #dilogrenimi #ingilizcekelime #playstore #googleplay #educationapp`
+  },
+  {
+    title: "İNGİLİZCE ÖYKÜM",
+    highlight: "DİNLEME PRATİĞİ 🔊",
+    subtitle: "Ana Dili Konuşanlardan Akıcı Dinleme",
+    featurePoint: "Okurken aynı zamanda doğru telaffuzları dinleyin.",
+    gradStart: "#A855F7",
+    gradEnd: "#6366F1",
+    caption: `🔊 DİNLEME PRATİĞİ! 🔊\n\nİngilizceyi okumanın yanı sıra dinleyerek de pekiştirin! 🗣️\n\nİngilizce Öyküm'deki hikayeleri seslendirmeler eşliğinde dinleyebilir, kelimelerin doğru telaffuzlarını öğrenebilir ve kulak aşinalığı kazanabilirsiniz. 🚀\n\nUygulamamız çok yakında Google Play Store'da yayında! 📲\n\n#ingilizceoykum #ingilizceogren #ingilizceöğreniyorum #ingilizcekelime #playstore #googleplay #educationapp`
+  },
+  {
+    title: "İNGİLİZCE ÖYKÜM",
+    highlight: "ZENGİN KÜTÜPHANE 📚",
+    subtitle: "Her Seviyeye Uygun Yüzlerce Hikaye",
+    featurePoint: "Dünya klasiklerinden macera ve gizem dolu öykülere.",
+    gradStart: "#D946EF",
+    gradEnd: "#7C3AED",
+    caption: `📚 ZENGİN KÜTÜPHANE! 📚\n\nDünya Klasikleri, Korku, Gizem ve Günlük Yaşam gibi kategorilerde yüzlerce hikaye sizi bekliyor. A1'den C1 seviyesine kadar size en uygun hikayeyi seçin ve İngilizce okuma becerilerinizi geliştirin! 🚀\n\nUygulamamız çok yakında Google Play Store'da yayında! 📲\n\n#ingilizceoykum #ingilizceogren #ingilizceöğreniyorum #ingilizcekelime #playstore #googleplay #educationapp`
+  },
+  {
+    title: "İNGİLİZCE ÖYKÜM",
+    highlight: "İNTERAKTİF TESTLER ✏️",
+    subtitle: "Her Hikaye Sonunda Anlama Quizleri",
+    featurePoint: "Okuduklarınızı pekiştirecek eğlenceli testler.",
+    gradStart: "#2563EB",
+    gradEnd: "#7C3AED",
+    caption: `✏️ İNTERAKTİF QUİZLER! ✏️\n\nHikayeyi okuduktan sonra kendinizi test etmeye ne dersiniz? 🤔\n\nİngilizce Öyküm'de her hikayenin sonunda yer alan kelime ve okuduğunu anlama testleri ile öğrendiklerinizi pekiştirebilir, gelişiminizi anlık olarak takip edebilirsiniz! 🚀\n\nUygulamamız çok yakında Google Play Store'da yayında! 📲\n\n#ingilizceoykum #ingilizceogren #ingilizceöğreniyorum #ingilizcekelime #playstore #googleplay #educationapp`
+  },
+  {
+    title: "İNGİLİZCE ÖYKÜM",
+    highlight: "KİŞİSEL SÖZLÜK 🗂️",
+    subtitle: "Zorlandığın Kelimeleri Kaydet ve Çalış",
+    featurePoint: "Kendi kelime listeni oluştur, dilediğin zaman tekrar et.",
+    gradStart: "#6D28D9",
+    gradEnd: "#0EA5E9",
+    caption: `🗂️ KİŞİSEL KELİME DEFTERİNİZ! 🗂️\n\nOkurken bilmediğiniz kelimeleri tek dokunuşla kişisel sözlüğünüze ekleyin, daha sonra dilediğiniz zaman tekrar ederek kelime dağarcığınızı kalıcı hale getirin. 🚀\n\nUygulamamız çok yakında Google Play Store'da yayında! 📲\n\n#ingilizceoykum #ingilizceogren #ingilizceöğreniyorum #ingilizcekelime #playstore #googleplay #educationapp`
+  },
+  {
+    title: "İNGİLİZCE ÖYKÜM",
+    highlight: "12 FARKLI DİL DESTEĞİ 🌍",
+    subtitle: "Sözlük ve Çeviriler Kendi Dilinizde",
+    featurePoint: "Türkçe dahil 12 dil seçeneğiyle kelime öğrenimi.",
+    gradStart: "#4F46E5",
+    gradEnd: "#C084FC",
+    caption: `🌍 12 DİL DESTEĞİ! 🌍\n\nİngilizce hikayeleri okurken bilinmeyen kelimelerin üzerine dokunup kendi dilinizde anında öğrenin. Arayüz ve sözlük desteğimiz tam 12 farklı dilde hizmetinizde!\n\nUygulamamız çok yakında Google Play Store'da yayında! 📲\n\n#ingilizceoykum #ingilizceogren #ingilizceöğreniyorum #ingilizcekelime #dilogrenimi #playstore #googleplay #multilingual #educationapp #languagelearning`
+  },
+  {
+    title: "İNGİLİZCE ÖYKÜM",
+    highlight: "YAKINDA PLAY STORE'DA! 📲",
+    subtitle: "Hikayelerle İngilizceyi Akıcı Öğrenin",
+    featurePoint: "Uygulamamız çok yakında Google Play Store'da yayında!",
+    gradStart: "#7C3AED",
+    gradEnd: "#8B5CF6",
+    caption: `📲 HİKAYELERLE İNGİLİZCE ÖĞRENİN! 📲\n\nİngilizce Öyküm ile İngilizce öğrenmek artık çok daha kolay ve akıcı! 🎉\n\nUygulamamız çok yakında Google Play Store'da yayında olacaktır. Gelişmeleri kaçırmamak için bizi takip edin! 🚀\n\n#ingilizceoykum #ingilizceogren #ingilizceöğreniyorum #ingilizcehikayeler #playstore #googleplay #educationapp`
+  }
+];
+
+export function getPromoCardSvg(promo: PromoTemplate): string {
+  return `
+    <svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+      <!-- Premium Glassmorphic Bottom Card Container -->
+      <rect x="80" y="740" width="920" height="260" rx="36" fill="rgba(14, 8, 30, 0.9)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="2" />
+      
+      <!-- Logo is at x=120, y=780, width=180, height=180 -->
+      
+      <!-- Text Block on the right side -->
+      <text x="340" y="835" font-family="'Segoe UI', -apple-system, sans-serif" font-weight="900" font-size="34" fill="#FFFFFF">${promo.highlight}</text>
+      <text x="340" y="890" font-family="'Segoe UI', -apple-system, sans-serif" font-weight="700" font-size="22" fill="#C7D2FE">${promo.subtitle}</text>
+      <text x="340" y="940" font-family="'Segoe UI', -apple-system, sans-serif" font-weight="800" font-size="13" fill="rgba(255, 255, 255, 0.4)" letter-spacing="1.5">GOOGLE PLAY STORE • YAKINDA YAYINDA 📲</text>
+    </svg>
+  `;
+}
+
+export async function runDailyAppPromotionFlow(): Promise<{ success: boolean; topic?: string; igPostId?: string; fbPostId?: string; error?: string }> {
+  try {
+    const publicDir = path.join(process.cwd(), "public");
+    const imagePath = path.join(publicDir, "daily-instagram-post.png");
+    
+    // 1. Select template based on current day of week (0 = Sunday, 1 = Monday, etc.)
+    const templateIndex = new Date().getDay();
+    const promo = PROMO_TEMPLATES[templateIndex];
+    console.log(`[Promo Flow] Selected template index ${templateIndex} for day of week: "${promo.highlight}"`);
+
+    // 2. Generate SVG and Composite Logo on dynamic illustration background
+    const svgString = getPromoCardSvg(promo);
+    const logoPath = path.join(process.cwd(), "assets", "icon.png");
+    const bgPath = path.join(process.cwd(), "instagram_shares", "images", "promo_bgs", `promo_bg_${templateIndex}.png`);
+    
+    let logoBuffer: Buffer | null = null;
+    try {
+      if (fs.existsSync(logoPath)) {
+        logoBuffer = await sharp(logoPath)
+          .resize(180, 180)
+          .composite([{
+            input: Buffer.from('<svg width="180" height="180"><rect x="0" y="0" width="180" height="180" rx="36" ry="36" fill="#ffffff"/></svg>'),
+            blend: 'dest-in'
+          }])
+          .png()
+          .toBuffer();
+      }
+    } catch (err: any) {
+      console.warn("[Promo Flow] Could not load or resize app icon logo:", err.message);
+    }
+
+    // Ensure public folder exists
+    if (!fs.existsSync(publicDir)) {
+      fs.mkdirSync(publicDir, { recursive: true });
+    }
+
+    if (fs.existsSync(bgPath)) {
+      console.log(`[Promo Flow] Loading background illustration: ${bgPath}`);
+      const baseImg = await sharp(bgPath)
+        .resize(1080, 1080)
+        .toBuffer();
+
+      const composites: any[] = [
+        {
+          input: Buffer.from(svgString),
+          top: 0,
+          left: 0
+        }
+      ];
+
+      if (logoBuffer) {
+        composites.push({
+          input: logoBuffer,
+          top: 780,
+          left: 120
+        });
+      }
+
+      await sharp(baseImg)
+        .composite(composites)
+        .png()
+        .toFile(imagePath);
+    } else {
+      console.warn(`[Promo Flow] Background illustration not found at ${bgPath}. Falling back to plain gradient background.`);
+      const fallbackSvg = `
+        <svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+          <rect width="1080" height="1080" fill="#120E28" />
+        </svg>
+      `;
+      const baseImg = await sharp(Buffer.from(fallbackSvg))
+        .png()
+        .toBuffer();
+
+      const composites: any[] = [
+        {
+          input: Buffer.from(svgString),
+          top: 0,
+          left: 0
+        }
+      ];
+
+      if (logoBuffer) {
+        composites.push({
+          input: logoBuffer,
+          top: 780,
+          left: 120
+        });
+      }
+
+      await sharp(baseImg)
+        .composite(composites)
+        .png()
+        .toFile(imagePath);
+    }
+
+    console.log(`[Promo Flow] Successfully saved promo card image locally: ${imagePath}`);
+
+    // 3. Get server public URL
+    const serverUrl = process.env.SERVER_PUBLIC_URL || "https://ingilizce-oyk-m.onrender.com";
+    const imageUrl = `${serverUrl}/api/instagram/daily-post.png`;
+
+    // 4. Post to Instagram
+    console.log("[Promo Flow] Publishing to Instagram...");
+    const igPostId = await publishToInstagramDirectly(imageUrl, promo.caption);
+
+    // 5. Post to Facebook Page
+    console.log("[Promo Flow] Publishing to Facebook...");
+    const fbPostId = await publishToFacebookDirectly(imageUrl, promo.caption);
+
+    // 6. Log success metadata
+    const logEntry = `[${new Date().toISOString()}] Promo Post "${promo.highlight}" shared. IG ID: ${igPostId}, FB ID: ${fbPostId}\n`;
+    fs.appendFileSync(path.join(process.cwd(), "instagram_posts.log"), logEntry, "utf8");
+
+    return { success: true, topic: promo.highlight, igPostId, fbPostId };
+
+  } catch (err: any) {
+    console.error("[Promo Flow] Unhandled error during promo flow execution:", err);
+    try {
+      fs.appendFileSync(path.join(process.cwd(), "instagram_posts.log"), `[${new Date().toISOString()}] Promo Flow Error: ${err.message}\n`, "utf8");
     } catch {}
     return { success: false, error: err.message };
   }

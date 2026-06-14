@@ -10,7 +10,7 @@ import nodemailer from "nodemailer";
 import { OFFLINE_DICTIONARY } from "./src/dictionary";
 import { GLOBAL_DICTIONARY } from "./src/data";
 import cron from "node-cron";
-import { runDailyInstagramFlow, fetchDailyWordFromGemini, saveDailyWordCardImage } from "./src/services/instagramService";
+import { runDailyInstagramFlow, fetchDailyWordFromGemini, saveDailyWordCardImage, runDailyAppPromotionFlow } from "./src/services/instagramService";
 
 // Secure cryptographic password hashing (PBKDF2)
 function hashPassword(password: string): string {
@@ -1854,6 +1854,9 @@ RULES FOR MAXIMUM ${targetLangName.toUpperCase()} COHERENCE:
     }
   });
 
+  // Serve public directory statically
+  app.use("/public", express.static(path.join(process.cwd(), "public")));
+
   // Serve daily Instagram image statically
   app.get("/api/instagram/daily-post.png", (req, res) => {
     const imagePath = path.join(process.cwd(), "public", "daily-instagram-post.png");
@@ -1874,7 +1877,7 @@ RULES FOR MAXIMUM ${targetLangName.toUpperCase()} COHERENCE:
     }
   });
 
-  // Manual Trigger Endpoint for Daily Post
+  // Manual Trigger Endpoint for Daily Post (Supports ?type=promo or ?type=word)
   app.post("/api/instagram/trigger-post", async (req, res) => {
     const authHeader = req.headers.authorization;
     const adminSecret = process.env.INSTAGRAM_ADMIN_SECRET || "ingilizceoykum_secret_admin_123";
@@ -1883,20 +1886,39 @@ RULES FOR MAXIMUM ${targetLangName.toUpperCase()} COHERENCE:
       return res.status(401).json({ error: "Unauthorized. Admin secret is invalid. ⚠️" });
     }
 
-    console.log("[Server API] Manual Instagram posting flow triggered.");
-    const result = await runDailyInstagramFlow();
+    const type = req.query.type || "word";
     
-    if (result.success) {
-      return res.json({
-        success: true,
-        message: `Günün kelimesi (${result.word}) Instagram'da başarıyla yayınlandı!`,
-        postId: result.postId
-      });
+    if (type === "promo") {
+      console.log("[Server API] Manual App Promotion posting flow triggered.");
+      const result = await runDailyAppPromotionFlow();
+      if (result.success) {
+        return res.json({
+          success: true,
+          message: `Uygulama tanıtım postu (${result.topic}) Instagram ve Facebook'ta başarıyla yayınlandı!`,
+          igPostId: result.igPostId,
+          fbPostId: result.fbPostId
+        });
+      } else {
+        return res.status(500).json({
+          success: false,
+          error: `Paylaşım sırasında hata oluştu: ${result.error}`
+        });
+      }
     } else {
-      return res.status(500).json({
-        success: false,
-        error: `Paylaşım sırasında hata oluştu: ${result.error}`
-      });
+      console.log("[Server API] Manual Instagram Word of the Day posting flow triggered.");
+      const result = await runDailyInstagramFlow();
+      if (result.success) {
+        return res.json({
+          success: true,
+          message: `Günün kelimesi (${result.word}) Instagram'da başarıyla yayınlandı!`,
+          postId: result.postId
+        });
+      } else {
+        return res.status(500).json({
+          success: false,
+          error: `Paylaşım sırasında hata oluştu: ${result.error}`
+        });
+      }
     }
   });
 
@@ -1935,19 +1957,19 @@ RULES FOR MAXIMUM ${targetLangName.toUpperCase()} COHERENCE:
     });
   }
 
-  // Start daily scheduled cron job for Instagram (At 09:00 Turkey Time UTC+3)
-  // cron.schedule("0 9 * * *", async () => {
-  //   console.log("[Cron Job] Automated daily Instagram posting flow starting...");
-  //   const result = await runDailyInstagramFlow();
-  //   if (result.success) {
-  //     console.log(`[Cron Job] Successfully published daily word to Instagram: ${result.word}`);
-  //   } else {
-  //     console.error(`[Cron Job] Failed to publish daily word to Instagram: ${result.error}`);
-  //   }
-  // }, {
-  //   timezone: "Europe/Istanbul"
-  // });
-  console.log("[Linguist Scheduler] Daily Instagram sharing cron job is currently disabled/on hold.");
+  // Start daily scheduled cron job for Instagram & Facebook (At 11:00 Turkey Time UTC+3)
+  cron.schedule("0 11 * * *", async () => {
+    console.log("[Cron Job] Automated daily App Promotion posting flow starting...");
+    const result = await runDailyAppPromotionFlow();
+    if (result.success) {
+      console.log(`[Cron Job] Successfully published daily promo post to Instagram & Facebook Page: ${result.topic}`);
+    } else {
+      console.error(`[Cron Job] Failed to publish daily promo post: ${result.error}`);
+    }
+  }, {
+    timezone: "Europe/Istanbul"
+  });
+  console.log("[Linguist Scheduler] Daily App Promotion cron job (11:00 Turkey Time) is active and scheduled.");
 
   app.listen(PORT, "0.0.0.0", () => {
     console.log(`[Linguist Server] Full-stack engine running on http://0.0.0.0:${PORT}`);
