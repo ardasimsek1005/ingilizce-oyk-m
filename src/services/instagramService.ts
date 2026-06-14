@@ -607,9 +607,16 @@ export async function runDailyAppPromotionFlow(): Promise<{ success: boolean; to
     console.log("[Promo Flow] Publishing to Instagram...");
     const igPostId = await publishToInstagramDirectly(imageUrl, promo.caption);
 
-    // 5. Post to Facebook Page
-    console.log("[Promo Flow] Publishing to Facebook...");
-    const fbPostId = await publishToFacebookDirectly(imageUrl, promo.caption);
+    // 5. Post to Facebook Page (Skip if already scheduled on Meta for June 15-21, 2026)
+    let fbPostId = "SKIPPED_SCHEDULED";
+    const now = new Date();
+    const isScheduledPeriod = now >= new Date("2026-06-15T00:00:00+03:00") && now <= new Date("2026-06-21T23:59:59+03:00");
+    if (isScheduledPeriod) {
+      console.log("[Promo Flow] Skipping Facebook publishing because it is already scheduled via Meta Page Planner for June 15-21.");
+    } else {
+      console.log("[Promo Flow] Publishing to Facebook...");
+      fbPostId = await publishToFacebookDirectly(imageUrl, promo.caption);
+    }
 
     // 6. Log success metadata
     const logEntry = `[${new Date().toISOString()}] Promo Post "${promo.highlight}" shared. IG ID: ${igPostId}, FB ID: ${fbPostId}\n`;
