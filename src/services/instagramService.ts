@@ -3,6 +3,9 @@ import { GoogleGenAI, Type } from "@google/genai";
 import fs from "fs";
 import path from "path";
 
+const FALLBACK_INSTAGRAM_BUSINESS_ACCOUNT_ID = "17841475472601731";
+const FALLBACK_FACEBOOK_PAGE_ACCESS_TOKEN = "EAAS6ZCrSpGJUBRkrjMPwvp6aI4BY1WwEAr4mexJwVfN5DdZCUIbIzWoZBOlQKUER0k1g6bZBLmYQA7j4h5fZBlhSaivpDSzNGY2qxwXaTOmbX7YVunGKCZCZBZCKWZBSWBV0DdLWi4QCzQzsAWS7pvr64wkE5MlGuo6zJtlAbRwCqALEpVLWOplTJIBf6iNqWYWcXQCeReMkUU01LZBKb4G4siDgZDZD";
+
 // Interface for word structure
 export interface InstagramWordInfo {
   word: string;
@@ -291,8 +294,8 @@ export async function saveDailyWordCardImage(wordInfo: InstagramWordInfo, output
 
 // Publishes image to Instagram account via Facebook Graph API
 export async function publishToInstagramDirectly(imageUrl: string, caption: string): Promise<string> {
-  const instagramId = process.env.INSTAGRAM_BUSINESS_ACCOUNT_ID;
-  const pageToken = process.env.FACEBOOK_PAGE_ACCESS_TOKEN;
+  const instagramId = process.env.INSTAGRAM_BUSINESS_ACCOUNT_ID || FALLBACK_INSTAGRAM_BUSINESS_ACCOUNT_ID;
+  const pageToken = process.env.FACEBOOK_PAGE_ACCESS_TOKEN || FALLBACK_FACEBOOK_PAGE_ACCESS_TOKEN;
 
   if (!instagramId || !pageToken) {
     throw new Error("Instagram configuration parameters missing from environment variables (.env).");
@@ -391,7 +394,7 @@ export async function runDailyInstagramFlow(): Promise<{ success: boolean; word?
 
 export async function publishToFacebookDirectly(imageUrl: string, caption: string): Promise<string> {
   const fbPageId = "1217495374774391";
-  const pageToken = process.env.FACEBOOK_PAGE_ACCESS_TOKEN;
+  const pageToken = process.env.FACEBOOK_PAGE_ACCESS_TOKEN || FALLBACK_FACEBOOK_PAGE_ACCESS_TOKEN;
 
   if (!fbPageId || !pageToken) {
     throw new Error("Facebook configuration parameters missing from environment variables.");
