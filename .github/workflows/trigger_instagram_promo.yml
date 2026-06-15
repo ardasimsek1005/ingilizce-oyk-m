@@ -1,0 +1,18 @@
+name: Trigger Daily Instagram Promotion Post
+
+on:
+  schedule:
+    # Run every day at 08:00 UTC (11:00 AM Turkey Time UTC+3)
+    - cron: '0 8 * * *'
+  # Allow manual trigger from the GitHub Actions tab
+  workflow_dispatch:
+
+jobs:
+  trigger_post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send API Request to Render Server
+        run: |
+          curl -i -X POST \
+            -H "Authorization: Bearer ${{ secrets.INSTAGRAM_ADMIN_SECRET || 'ingilizceoykum_secret_admin_123' }}" \
+            "https://ingilizce-oyk-m.onrender.com/api/instagram/trigger-post?type=promo"
