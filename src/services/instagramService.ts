@@ -348,9 +348,57 @@ export async function publishToInstagramDirectly(imageUrl: string, caption: stri
   return publishData.id;
 }
 
+// Checks Instagram history to prevent duplicate posting on the same calendar day in Turkey timezone
+export async function hasAlreadyPostedToday(instagramId: string, pageToken: string, type: "promo" | "word"): Promise<boolean> {
+  try {
+    const url = `https://graph.facebook.com/v20.0/${instagramId}/media?fields=id,timestamp,caption&access_token=${pageToken}`;
+    const res = await fetch(url);
+    const data = await res.json();
+    if (!data.data || !Array.isArray(data.data)) {
+      console.warn("[Instagram Service] Failed to retrieve media list or empty data.", data);
+      return false;
+    }
+
+    // Get today's date in Europe/Istanbul (format: YYYY-MM-DD)
+    const todayStr = new Date().toLocaleDateString("en-CA", { timeZone: "Europe/Istanbul" });
+    
+    for (const post of data.data) {
+      if (!post.timestamp) continue;
+      // Convert post timestamp to Europe/Istanbul date string
+      const postDateStr = new Date(post.timestamp).toLocaleDateString("en-CA", { timeZone: "Europe/Istanbul" });
+      
+      if (postDateStr === todayStr) {
+        const caption = post.caption || "";
+        if (type === "promo" && caption.includes("#ingilizceoykum") && caption.includes("#playstore")) {
+          console.log(`[Instagram Service] Found promo post from today (${postDateStr}): "${caption.split('\n')[0]}"`);
+          return true;
+        }
+        if (type === "word" && caption.includes("#gununkelimesi")) {
+          console.log(`[Instagram Service] Found word of the day post from today (${postDateStr}): "${caption.split('\n')[0]}"`);
+          return true;
+        }
+      }
+    }
+    return false;
+  } catch (err) {
+    console.error("[Instagram Service] Error checking if already posted today:", err);
+    return false;
+  }
+}
+
 // Main runner flow
 export async function runDailyInstagramFlow(): Promise<{ success: boolean; word?: string; postId?: string; error?: string }> {
   try {
+    const instagramId = process.env.INSTAGRAM_BUSINESS_ACCOUNT_ID || FALLBACK_INSTAGRAM_BUSINESS_ACCOUNT_ID;
+    const pageToken = process.env.FACEBOOK_PAGE_ACCESS_TOKEN || FALLBACK_FACEBOOK_PAGE_ACCESS_TOKEN;
+
+    // 0. Prevent double-posting on the same calendar day
+    const alreadyPosted = await hasAlreadyPostedToday(instagramId, pageToken, "word");
+    if (alreadyPosted) {
+      console.log("[Instagram Service] Word of the day already posted on Instagram today. Skipping flow to avoid duplicates.");
+      return { success: true, word: "ALREADY_POSTED_TODAY", postId: "SKIPPED_DUPLICATE" };
+    }
+
     const publicDir = path.join(process.cwd(), "public");
     const imagePath = path.join(publicDir, "daily-instagram-post.png");
     
@@ -507,6 +555,16 @@ export function getPromoCardSvg(promo: PromoTemplate): string {
 
 export async function runDailyAppPromotionFlow(): Promise<{ success: boolean; topic?: string; igPostId?: string; fbPostId?: string; error?: string }> {
   try {
+    const instagramId = process.env.INSTAGRAM_BUSINESS_ACCOUNT_ID || FALLBACK_INSTAGRAM_BUSINESS_ACCOUNT_ID;
+    const pageToken = process.env.FACEBOOK_PAGE_ACCESS_TOKEN || FALLBACK_FACEBOOK_PAGE_ACCESS_TOKEN;
+
+    // 0. Prevent double-posting on the same calendar day
+    const alreadyPosted = await hasAlreadyPostedToday(instagramId, pageToken, "promo");
+    if (alreadyPosted) {
+      console.log("[Promo Flow] App promotion already posted on Instagram today. Skipping flow to avoid duplicates.");
+      return { success: true, topic: "ALREADY_POSTED_TODAY", igPostId: "SKIPPED_DUPLICATE", fbPostId: "SKIPPED_DUPLICATE" };
+    }
+
     const publicDir = path.join(process.cwd(), "public");
     const imagePath = path.join(publicDir, "daily-instagram-post.png");
     
