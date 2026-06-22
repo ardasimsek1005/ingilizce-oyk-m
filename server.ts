@@ -1965,7 +1965,8 @@ RULES FOR MAXIMUM ${targetLangName.toUpperCase()} COHERENCE:
     });
   }
 
-  // Start daily scheduled cron job for Instagram & Facebook (At 11:00 Turkey Time UTC+3)
+  // Start daily scheduled cron job for Instagram & Facebook (At 11:00 Turkey Time UTC+3) (PASSED/MUTED for now)
+  /*
   cron.schedule("0 11 * * *", async () => {
     console.log("[Cron Job] Automated daily App Promotion posting flow starting...");
     const result = await runDailyAppPromotionFlow();
@@ -1978,6 +1979,7 @@ RULES FOR MAXIMUM ${targetLangName.toUpperCase()} COHERENCE:
     timezone: "Europe/Istanbul"
   });
   console.log("[Linguist Scheduler] Daily App Promotion cron job (11:00 Turkey Time) is active and scheduled.");
+  */
 
   app.listen(PORT, "0.0.0.0", () => {
     console.log(`[Linguist Server] Full-stack engine running on http://0.0.0.0:${PORT}`);
