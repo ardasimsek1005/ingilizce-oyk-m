@@ -1865,14 +1865,9 @@ export default function QuizView({
                             <Sparkles className="w-4.5 h-4.5 text-[#FF6B6B] animate-pulse shrink-0" />
                             <span>{t('quiz_incorrect_explanation', nativeLanguage)}</span>
                           </h5>
-                          <p className={`text-xs leading-relaxed font-semibold ${
-                            isDarkMode ? 'text-gray-200' : 'text-gray-700'
-                          }`}>
-                            {activeQuestion.hint}
-                          </p>
                           
                           {/* Detailed explanation detail helper for errors */}
-                          <div className={`border-2 border-dashed rounded p-2.5 mt-2.5 text-[11px] leading-relaxed font-medium ${
+                          <div className={`border-2 border-dashed rounded p-2.5 text-[11px] leading-relaxed font-medium ${
                             isDarkMode ? 'bg-[#121214] border-gray-700 text-gray-300' : 'bg-white border-[#FFE66D]/80 text-[#2D3436]'
                           }`}>
                             <b>{t('quiz_learning_note', nativeLanguage)}</b> {activeQuestion.explanation}
