@@ -693,3 +693,163 @@ export async function runDailyAppPromotionFlow(): Promise<{ success: boolean; to
     return { success: false, error: err.message };
   }
 }
+
+// Automatically publishes the next scheduled Reel to Instagram daily
+export async function runDailyReelFlow(): Promise<{ success: boolean; key?: string; title?: string; igPostId?: string; error?: string }> {
+  try {
+    const instagramId = process.env.INSTAGRAM_BUSINESS_ACCOUNT_ID || FALLBACK_INSTAGRAM_BUSINESS_ACCOUNT_ID;
+    const pageToken = process.env.FACEBOOK_PAGE_ACCESS_TOKEN || FALLBACK_FACEBOOK_PAGE_ACCESS_TOKEN;
+    const dbPath = path.join(process.cwd(), "classics_stories_data.json");
+    const queuePath = path.join(process.cwd(), "instagram_shares", "reels_queue.json");
+    const videosDir = path.join(process.cwd(), "instagram_shares", "videos");
+
+    if (!fs.existsSync(queuePath) || !fs.existsSync(dbPath)) {
+      throw new Error("Queue file or stories database not found.");
+    }
+
+    const db = JSON.parse(fs.readFileSync(dbPath, "utf8"));
+    const queueData = JSON.parse(fs.readFileSync(queuePath, "utf8"));
+    const queue = queueData.queue;
+
+    // 1. Prevent double-posting on the same calendar day in Turkey timezone
+    const todayStr = new Date().toLocaleString("tr-TR", { timeZone: "Europe/Istanbul" }).split(" ")[0]; // e.g. "25.06.2026"
+    const alreadyPosted = queue.some((item: any) => item.posted_ig && item.posted_ig_date === todayStr);
+    if (alreadyPosted) {
+      console.log(`[Reels Flow] Reel already posted on Instagram today (${todayStr}). Skipping flow to avoid duplicates.`);
+      return { success: true, key: "ALREADY_POSTED_TODAY" };
+    }
+
+    // 2. Find next unposted Reel
+    const nextReelIndex = queue.findIndex((item: any) => !item.posted_ig);
+    if (nextReelIndex === -1) {
+      console.log("[Reels Flow] No unposted Reels left in the queue!");
+      return { success: true, key: "QUEUE_EMPTY" };
+    }
+
+    const item = queue[nextReelIndex];
+    const story = db[item.key];
+    if (!story) {
+      throw new Error(`Story details not found for key: ${item.key}`);
+    }
+
+    const videoFile = `reels_${item.key}.mp4`;
+    const videoPath = path.join(videosDir, videoFile);
+    if (!fs.existsSync(videoPath)) {
+      throw new Error(`Video file not found at path: ${videoPath}`);
+    }
+
+    console.log(`[Reels Flow] Selected next Reel: ${item.title} (${item.key})`);
+
+    // 3. Upload video to tmpfiles.org
+    console.log("[Reels Flow] Uploading Reels video to public temp host...");
+    const fileData = fs.readFileSync(videoPath);
+    const form = new FormData();
+    form.append("file", new Blob([fileData]), videoFile);
+
+    const uploadRes = await fetch("https://tmpfiles.org/api/v1/upload", {
+      method: "POST",
+      body: form
+    });
+    const uploadData = await uploadRes.json() as any;
+    if (uploadData.status !== "success" || !uploadData.data || !uploadData.data.url) {
+      throw new Error("Temporary file upload failed: " + JSON.stringify(uploadData));
+    }
+    const publicVideoUrl = uploadData.data.url.replace("tmpfiles.org/", "tmpfiles.org/dl/");
+    console.log(`[Reels Flow] Video uploaded. Public URL: ${publicVideoUrl}`);
+
+    // 4. Generate caption
+    const caption = `🎬 Sesli Kitap Özelliğiyle İngilizce Öğrenin! 📚\n\n` +
+                    `Dünya Klasiklerinden "${story.title}" hikayesini uygulamamızda hem dinleyip hem okuyabileceğinizi biliyor muydunuz? 🌟\n\n` +
+                    `İşte "İngilizce Öyküm" uygulamasındaki Sesli Kitap deneyimi:\n` +
+                    `👉 Bilmediğin kelimeye dokun, anında Türkçe anlamını gör!\n` +
+                    `👉 Profesyonel İngilizce seslendirme ile kulak aşinalığı kazan!\n` +
+                    `👉 Çeviriye tıklayarak Türkçe çeviriyi sesli ve yazılı olarak takip et!\n\n` +
+                    `Klasiklerden masallara kadar yüzlerce hikayeyi seslendirmeli dinlemek ve İngilizceni geliştirmek için hemen uygulamamızı indir! 🚀\n\n` +
+                    `📲 Uygulamayı İndirmek İçin:\n` +
+                    `👉 Profilimize gidin: @ingilizceoykum\n` +
+                    `👉 Biyografideki tıklanabilir linke dokunun! 🔗\n\n` +
+                    `#ingilizceoykum #ingilizcehikaye #ingilizcehikayeler #ingilizceöğren #seslikitap`;
+
+    // 5. Publish to Instagram Directly
+    console.log("[Reels Flow] Creating Instagram Reels Media Container...");
+    const containerUrl = `https://graph.facebook.com/v20.0/${instagramId}/media`;
+    const containerRes = await fetch(containerUrl, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        media_type: "REELS",
+        video_url: publicVideoUrl,
+        caption: caption,
+        access_token: pageToken
+      })
+    });
+    const containerData = await containerRes.json() as any;
+    if (containerData.error) {
+      throw new Error(`Instagram Reels container error: ${containerData.error.message}`);
+    }
+    const containerId = containerData.id;
+
+    // Poll status until FINISHED
+    console.log(`[Reels Flow] Container created (ID: ${containerId}). Polling status...`);
+    let status = "";
+    let attempts = 0;
+    const statusUrl = `https://graph.facebook.com/v20.0/${containerId}?fields=status_code&access_token=${pageToken}`;
+    
+    while (status !== "FINISHED" && attempts < 25) {
+      attempts++;
+      const statusRes = await fetch(statusUrl);
+      const statusData = await statusRes.json() as any;
+      if (statusData.error) {
+        throw new Error(`Status check failed: ${statusData.error.message}`);
+      }
+      status = statusData.status_code;
+      if (status === "FINISHED") {
+        break;
+      } else if (status === "ERROR") {
+        throw new Error("Instagram returned ERROR state during video processing.");
+      }
+      await new Promise(resolve => setTimeout(resolve, 8000));
+    }
+
+    if (status !== "FINISHED") {
+      throw new Error("Instagram Reels video processing timed out.");
+    }
+
+    console.log("[Reels Flow] Publishing media container directly...");
+    const publishUrl = `https://graph.facebook.com/v20.0/${instagramId}/media_publish`;
+    const publishRes = await fetch(publishUrl, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        creation_id: containerId,
+        access_token: pageToken
+      })
+    });
+    const publishData = await publishRes.json() as any;
+    if (publishData.error) {
+      throw new Error(`Instagram Reels publication error: ${publishData.error.message}`);
+    }
+    const igPostId = publishData.id;
+    console.log(`[Reels Flow] Reel published successfully! ID: ${igPostId}`);
+
+    // 6. Update queue file
+    item.posted_ig = true;
+    item.ig_post_id = igPostId;
+    item.posted_ig_date = todayStr;
+    queueData.last_updated = new Date().toISOString();
+    fs.writeFileSync(queuePath, JSON.stringify(queueData, null, 2), "utf8");
+
+    // 7. Log to file
+    const logEntry = `[${new Date().toISOString()}] Reels Post "${item.title}" shared. IG ID: ${igPostId}\n`;
+    fs.appendFileSync(path.join(process.cwd(), "instagram_posts.log"), logEntry, "utf8");
+
+    return { success: true, key: item.key, title: item.title, igPostId };
+
+  } catch (err: any) {
+    console.error("[Reels Flow] Unhandled error during Reels flow execution:", err);
+    try {
+      fs.appendFileSync(path.join(process.cwd(), "instagram_posts.log"), `[${new Date().toISOString()}] Reels Flow Error: ${err.message}\n`, "utf8");
+    } catch {}
+    return { success: false, error: err.message };
+  }
+}

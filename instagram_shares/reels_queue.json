@@ -1,0 +1,237 @@
+{
+  "last_updated": "2026-06-24T18:47:43.303Z",
+  "queue": [
+    {
+      "key": "classic_oliver_twist",
+      "title": "Oliver Twist",
+      "scheduled_date": "25.06.2026 11:00:00",
+      "timestamp": 1782374400,
+      "posted_fb": true,
+      "posted_ig": false
+    },
+    {
+      "key": "classic_tom_sawyer",
+      "title": "The Adventures of Tom Sawyer",
+      "scheduled_date": "26.06.2026 11:00:00",
+      "timestamp": 1782460800,
+      "posted_fb": true,
+      "posted_ig": false
+    },
+    {
+      "key": "classic_prince_pauper",
+      "title": "The Prince and the Pauper",
+      "scheduled_date": "27.06.2026 11:00:00",
+      "timestamp": 1782547200,
+      "posted_fb": true,
+      "posted_ig": false
+    },
+    {
+      "key": "classic_kidnapped",
+      "title": "Kidnapped",
+      "scheduled_date": "28.06.2026 11:00:00",
+      "timestamp": 1782633600,
+      "posted_fb": true,
+      "posted_ig": false
+    },
+    {
+      "key": "classic_three_musketeers",
+      "title": "The Three Musketeers",
+      "scheduled_date": "29.06.2026 11:00:00",
+      "timestamp": 1782720000,
+      "posted_fb": true,
+      "posted_ig": false
+    },
+    {
+      "key": "classic_uncle_tom_cabin",
+      "title": "Uncle Tom's Cabin",
+      "scheduled_date": "30.06.2026 11:00:00",
+      "timestamp": 1782806400,
+      "posted_fb": true,
+      "posted_ig": false
+    },
+    {
+      "key": "classic_journey_center_earth",
+      "title": "Journey to the Center of the Earth",
+      "scheduled_date": "01.07.2026 11:00:00",
+      "timestamp": 1782892800,
+      "posted_fb": true,
+      "posted_ig": false
+    },
+    {
+      "key": "classic_first_men_moon",
+      "title": "The First Men in the Moon",
+      "scheduled_date": "02.07.2026 11:00:00",
+      "timestamp": 1782979200,
+      "posted_fb": true,
+      "posted_ig": false
+    },
+    {
+      "key": "classic_captains_courageous",
+      "title": "Captains Courageous",
+      "scheduled_date": "03.07.2026 11:00:00",
+      "timestamp": 1783065600,
+      "posted_fb": true,
+      "posted_ig": false
+    },
+    {
+      "key": "classic_mysterious_island",
+      "title": "The Mysterious Island",
+      "scheduled_date": "04.07.2026 11:00:00",
+      "timestamp": 1783152000,
+      "posted_fb": true,
+      "posted_ig": false
+    },
+    {
+      "key": "classic_great_expectations",
+      "title": "Great Expectations",
+      "scheduled_date": "05.07.2026 11:00:00",
+      "timestamp": 1783238400,
+      "posted_fb": true,
+      "posted_ig": false
+    },
+    {
+      "key": "classic_jane_eyre",
+      "title": "Jane Eyre",
+      "scheduled_date": "06.07.2026 11:00:00",
+      "timestamp": 1783324800,
+      "posted_fb": true,
+      "posted_ig": false
+    },
+    {
+      "key": "classic_count_monte_cristo",
+      "title": "The Count of Monte Cristo",
+      "scheduled_date": "07.07.2026 11:00:00",
+      "timestamp": 1783411200,
+      "posted_fb": true,
+      "posted_ig": false
+    },
+    {
+      "key": "classic_huck_finn",
+      "title": "Adventures of Huckleberry Finn",
+      "scheduled_date": "08.07.2026 11:00:00",
+      "timestamp": 1783497600,
+      "posted_fb": true,
+      "posted_ig": false
+    },
+    {
+      "key": "classic_twenty_thousand_leagues",
+      "title": "Twenty Thousand Leagues Under the Seas",
+      "scheduled_date": "09.07.2026 11:00:00",
+      "timestamp": 1783584000,
+      "posted_fb": true,
+      "posted_ig": false
+    },
+    {
+      "key": "classic_lost_world",
+      "title": "The Lost World",
+      "scheduled_date": "10.07.2026 11:00:00",
+      "timestamp": 1783670400,
+      "posted_fb": true,
+      "posted_ig": false
+    },
+    {
+      "key": "classic_wuthering_heights",
+      "title": "Wuthering Heights",
+      "scheduled_date": "11.07.2026 11:00:00",
+      "timestamp": 1783756800,
+      "posted_fb": true,
+      "posted_ig": false
+    },
+    {
+      "key": "classic_tale_two_cities",
+      "title": "A Tale of Two Cities",
+      "scheduled_date": "12.07.2026 11:00:00",
+      "timestamp": 1783843200,
+      "posted_fb": true,
+      "posted_ig": false
+    },
+    {
+      "key": "classic_scarlet_letter",
+      "title": "The Scarlet Letter",
+      "scheduled_date": "13.07.2026 11:00:00",
+      "timestamp": 1783929600,
+      "posted_fb": true,
+      "posted_ig": false
+    },
+    {
+      "key": "classic_island_moreau",
+      "title": "The Island of Doctor Moreau",
+      "scheduled_date": "14.07.2026 11:00:00",
+      "timestamp": 1784016000,
+      "posted_fb": true,
+      "posted_ig": false
+    },
+    {
+      "key": "classic_man_iron_mask",
+      "title": "The Man in the Iron Mask",
+      "scheduled_date": "15.07.2026 11:00:00",
+      "timestamp": 1784102400,
+      "posted_fb": true,
+      "posted_ig": false
+    },
+    {
+      "key": "classic_connecticut_yankee",
+      "title": "A Connecticut Yankee in King Arthur's Court",
+      "scheduled_date": "16.07.2026 11:00:00",
+      "timestamp": 1784188800,
+      "posted_fb": true,
+      "posted_ig": false
+    },
+    {
+      "key": "classic_sea_wolf",
+      "title": "The Sea-Wolf",
+      "scheduled_date": "17.07.2026 11:00:00",
+      "timestamp": 1784275200,
+      "posted_fb": true,
+      "posted_ig": false
+    },
+    {
+      "key": "classic_war_and_peace",
+      "title": "War and Peace",
+      "scheduled_date": "18.07.2026 11:00:00",
+      "timestamp": 1784361600,
+      "posted_fb": true,
+      "posted_ig": false
+    },
+    {
+      "key": "classic_brothers_karamazov",
+      "title": "The Brothers Karamazov",
+      "scheduled_date": "19.07.2026 11:00:00",
+      "timestamp": 1784448000,
+      "posted_fb": false,
+      "posted_ig": false
+    },
+    {
+      "key": "classic_earth_to_moon",
+      "title": "From the Earth to the Moon",
+      "scheduled_date": "20.07.2026 11:00:00",
+      "timestamp": 1784534400,
+      "posted_fb": false,
+      "posted_ig": false
+    },
+    {
+      "key": "classic_red_badge_courage",
+      "title": "The Red Badge of Courage",
+      "scheduled_date": "21.07.2026 11:00:00",
+      "timestamp": 1784620800,
+      "posted_fb": false,
+      "posted_ig": false
+    },
+    {
+      "key": "classic_dead_souls",
+      "title": "Dead Souls",
+      "scheduled_date": "22.07.2026 11:00:00",
+      "timestamp": 1784707200,
+      "posted_fb": false,
+      "posted_ig": false
+    },
+    {
+      "key": "classic_tess_urbervilles",
+      "title": "Tess of the d'Urbervilles",
+      "scheduled_date": "23.07.2026 11:00:00",
+      "timestamp": 1784793600,
+      "posted_fb": false,
+      "posted_ig": false
+    }
+  ]
+}

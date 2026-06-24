@@ -10,7 +10,7 @@ import nodemailer from "nodemailer";
 import { OFFLINE_DICTIONARY } from "./src/dictionary";
 import { GLOBAL_DICTIONARY } from "./src/data";
 import cron from "node-cron";
-import { runDailyInstagramFlow, fetchDailyWordFromGemini, saveDailyWordCardImage, runDailyAppPromotionFlow } from "./src/services/instagramService";
+import { runDailyInstagramFlow, fetchDailyWordFromGemini, saveDailyWordCardImage, runDailyAppPromotionFlow, runDailyReelFlow } from "./src/services/instagramService";
 
 // Secure cryptographic password hashing (PBKDF2)
 function hashPassword(password: string): string {
@@ -1930,6 +1930,33 @@ RULES FOR MAXIMUM ${targetLangName.toUpperCase()} COHERENCE:
     }
   });
 
+  // Manual Trigger Endpoint for Daily Reel
+  app.post("/api/instagram/trigger-reel", async (req, res) => {
+    const authHeader = req.headers.authorization;
+    const adminSecret = process.env.INSTAGRAM_ADMIN_SECRET || "ingilizceoykum_secret_admin_123";
+    
+    if (!authHeader || authHeader !== `Bearer ${adminSecret}`) {
+      return res.status(401).json({ error: "Unauthorized. Admin secret is invalid. ⚠️" });
+    }
+
+    console.log("[Server API] Manual Instagram Reels posting flow triggered.");
+    const result = await runDailyReelFlow();
+    if (result.success) {
+      return res.json({
+        success: true,
+        message: `Sıradaki Reel öyküsü (${result.title || result.key}) Instagram'da başarıyla yayınlandı!`,
+        key: result.key,
+        title: result.title,
+        igPostId: result.igPostId
+      });
+    } else {
+      return res.status(500).json({
+        success: false,
+        error: `Reel paylaşımı sırasında hata oluştu: ${result.error}`
+      });
+    }
+  });
+
   // Preview Endpoint (generates a live card without publishing)
   app.get("/api/instagram/preview", async (req, res) => {
     try {
@@ -1945,6 +1972,15 @@ RULES FOR MAXIMUM ${targetLangName.toUpperCase()} COHERENCE:
   // Health check API
   app.get("/api/health", (req, res) => {
     res.json({ status: "ok", mode: process.env.NODE_ENV || "development" });
+  });
+
+  // Google Play Store App Redirection
+  app.get("/indir", (req, res) => {
+    res.redirect("https://play.google.com/store/apps/details?id=com.ingilizceoykum.app");
+  });
+
+  app.get("/app", (req, res) => {
+    res.redirect("https://play.google.com/store/apps/details?id=com.ingilizceoykum.app");
   });
 
   // Serve Vite frontend
@@ -1965,21 +2001,19 @@ RULES FOR MAXIMUM ${targetLangName.toUpperCase()} COHERENCE:
     });
   }
 
-  // Start daily scheduled cron job for Instagram & Facebook (At 11:00 Turkey Time UTC+3) (PASSED/MUTED for now)
-  /*
+  // Start daily scheduled cron job for Instagram Reels (At 11:00 Turkey Time UTC+3)
   cron.schedule("0 11 * * *", async () => {
-    console.log("[Cron Job] Automated daily App Promotion posting flow starting...");
-    const result = await runDailyAppPromotionFlow();
+    console.log("[Cron Job] Automated daily Instagram Reels posting flow starting...");
+    const result = await runDailyReelFlow();
     if (result.success) {
-      console.log(`[Cron Job] Successfully published daily promo post to Instagram & Facebook Page: ${result.topic}`);
+      console.log(`[Cron Job] Successfully published daily Reel to Instagram: ${result.title || result.key} (ID: ${result.igPostId})`);
     } else {
-      console.error(`[Cron Job] Failed to publish daily promo post: ${result.error}`);
+      console.error(`[Cron Job] Failed to publish daily Reel: ${result.error}`);
     }
   }, {
     timezone: "Europe/Istanbul"
   });
-  console.log("[Linguist Scheduler] Daily App Promotion cron job (11:00 Turkey Time) is active and scheduled.");
-  */
+  console.log("[Linguist Scheduler] Daily Instagram Reels cron job (11:00 Turkey Time) is active and scheduled.");
 
   app.listen(PORT, "0.0.0.0", () => {
     console.log(`[Linguist Server] Full-stack engine running on http://0.0.0.0:${PORT}`);

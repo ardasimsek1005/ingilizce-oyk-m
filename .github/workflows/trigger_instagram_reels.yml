@@ -1,0 +1,25 @@
+name: Trigger Daily Instagram Reels Post
+
+on:
+  schedule:
+    # Trigger at multiple times around 11:00 AM Turkey Time (08:00 UTC)
+    # The server-side API contains built-in double-posting protection
+    # and will publish the Reel exactly once per day.
+    - cron: '0 8 * * *'   # 11:00 AM TRT
+    - cron: '15 8 * * *'  # 11:15 AM TRT
+    - cron: '30 8 * * *'  # 11:30 AM TRT
+  # Allow manual trigger from the GitHub Actions tab
+  workflow_dispatch:
+
+jobs:
+  trigger_reel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Reels API Request to Render Server
+        run: |
+          curl -i -X POST \
+            --connect-timeout 60 \
+            --retry 3 \
+            --retry-delay 5 \
+            -H "Authorization: Bearer ${{ secrets.INSTAGRAM_ADMIN_SECRET || 'ingilizceoykum_secret_admin_123' }}" \
+            "https://ingilizce-oyk-m.onrender.com/api/instagram/trigger-reel"
