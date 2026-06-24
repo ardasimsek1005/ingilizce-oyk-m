@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ingilizce-oyküm-v2';
+const CACHE_NAME = 'ingilizce-oyküm-v3';
 
 // Cache'e alınacak dosyalar
 const STATIC_ASSETS = [
