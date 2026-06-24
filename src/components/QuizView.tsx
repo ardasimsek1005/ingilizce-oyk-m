@@ -149,10 +149,39 @@ const findSentenceInBooks = (word: string, books: Book[]): { en: string; tr: str
 };
 
 const getFallbackSentence = (word: string, translation: string, nativeLanguage: LanguageCode): { en: string; tr: string } => {
+  const wLower = word.toLowerCase().trim();
+  const tLower = translation.toLowerCase().trim();
+  
+  if (wLower === 'nice') {
+    return {
+      en: 'Have a nice day!',
+      tr: nativeLanguage === 'tr' ? 'İyi günler!' : ''
+    };
+  }
+  
+  const dictItem = OFFLINE_DICTIONARY[wLower];
+  const notes = dictItem?.notes ? dictItem.notes.toLowerCase() : '';
+  const isAdjective = notes.includes('sıfat') || notes.includes('adjective');
+  const isVerb = notes.includes('fiil') || notes.includes('verb') || tLower.endsWith('mek') || tLower.endsWith('mak');
+  
+  if (isAdjective) {
+    return {
+      en: `This is a ${wLower} day.`,
+      tr: nativeLanguage === 'tr' ? `Bu ${tLower} bir gün.` : ''
+    };
+  }
+  
+  if (isVerb) {
+    return {
+      en: `I want to ${wLower} now.`,
+      tr: nativeLanguage === 'tr' ? `Şimdi ${tLower} istiyorum.` : ''
+    };
+  }
+  
+  // Nouns and default fallbacks
   return {
-    en: `This is a very nice ${word}.`,
-    // Turkish users keep the old Turkish example sentence; other languages use dynamic AI translation
-    tr: nativeLanguage === 'tr' ? `Bu çok güzel bir ${translation}.` : ''
+    en: `This is a very nice ${wLower}.`,
+    tr: nativeLanguage === 'tr' ? `Bu çok güzel bir ${tLower}.` : ''
   };
 };
 
@@ -265,7 +294,7 @@ const getNativeSentenceTranslation = (exampleEn: string | undefined, trFallback:
   return exampleEn; // Fallback to English sentence instead of Turkish
 };
 
-const generateVocabularyQuiz = (vocabList: VocabularyWord[], books: Book[], nativeLanguage: LanguageCode): QuizQuestion[] => {
+const generateVocabularyQuiz = (vocabList: VocabularyWord[], books: Book[], nativeLanguage: LanguageCode, excludeFillBlank: boolean = false): QuizQuestion[] => {
   if (!vocabList) return [];
   
   // 1. Filter out proper nouns (names) and the word 'harness'
@@ -290,7 +319,13 @@ const generateVocabularyQuiz = (vocabList: VocabularyWord[], books: Book[], nati
         generatedTypes.set(item.id, new Set());
       }
       const typesSet = generatedTypes.get(item.id)!;
-      const possibleTypes: ('en_to_tr' | 'tr_to_en' | 'fill_blank')[] = ['en_to_tr', 'tr_to_en', 'fill_blank'];
+      
+      const bookSentence = findSentenceInBooks(item.word, books);
+      const hasSentence = !!(item.exampleEn || (bookSentence && bookSentence.en.split(/\s+/).length < 15));
+      
+      const possibleTypes: ('en_to_tr' | 'tr_to_en' | 'fill_blank')[] = (hasSentence && !excludeFillBlank)
+        ? ['en_to_tr', 'tr_to_en', 'fill_blank']
+        : ['en_to_tr', 'tr_to_en'];
       
       const remainingTypes = possibleTypes.filter(t => !typesSet.has(t));
       if (remainingTypes.length === 0) {
@@ -310,7 +345,14 @@ const generateVocabularyQuiz = (vocabList: VocabularyWord[], books: Book[], nati
       fallbackAttempt++;
       for (const item of filteredVocab) {
         if (questionsList.length >= 15) break;
-        const possibleTypes: ('en_to_tr' | 'tr_to_en' | 'fill_blank')[] = ['en_to_tr', 'tr_to_en', 'fill_blank'];
+        
+        const bookSentence = findSentenceInBooks(item.word, books);
+        const hasSentence = !!(item.exampleEn || (bookSentence && bookSentence.en.split(/\s+/).length < 15));
+        
+        const possibleTypes: ('en_to_tr' | 'tr_to_en' | 'fill_blank')[] = (hasSentence && !excludeFillBlank)
+          ? ['en_to_tr', 'tr_to_en', 'fill_blank']
+          : ['en_to_tr', 'tr_to_en'];
+          
         const qType = possibleTypes[Math.floor(Math.random() * possibleTypes.length)];
         questionsList.push({ item, qType });
       }
@@ -330,9 +372,8 @@ const generateVocabularyQuiz = (vocabList: VocabularyWord[], books: Book[], nati
         exampleEn = bookSentence.en;
         exampleTr = bookSentence.tr;
       } else {
-        const fallback = getFallbackSentence(item.word, item.translation, nativeLanguage);
-        exampleEn = fallback.en;
-        exampleTr = fallback.tr;
+        exampleEn = '';
+        exampleTr = '';
       }
     }
 
@@ -706,7 +747,7 @@ const generateRandomQuizForLevels = (levels: ('A1' | 'A2' | 'B1' | 'B2' | 'C1')[
     savedAt: new Date().toISOString()
   }));
   
-  return generateVocabularyQuiz(vocabWords, books, nativeLanguage);
+  return generateVocabularyQuiz(vocabWords, books, nativeLanguage, true);
 };
 
 export default function QuizView({
@@ -741,6 +782,14 @@ export default function QuizView({
     word: string;
     translation: string;
   } | null>(null);
+
+  const getLanguageFlag = (lang: string): string => {
+    const flags: Record<string, string> = {
+      tr: '🇹🇷', en: '🇬🇧', es: '🇪🇸', de: '🇩🇪', fr: '🇫🇷',
+      it: '🇮🇹', pt: '🇵🇹', ru: '🇷🇺', ar: '🇸🇦', zh: '🇨🇳', hi: '🇮🇳', ja: '🇯🇵'
+    };
+    return flags[lang] || '🌐';
+  };
 
   // Safe cleaner for dictionary formatting
   const cleanWord = (w: string): string => {
@@ -1027,14 +1076,19 @@ export default function QuizView({
           }
           const isBlank = part.includes('_____');
           if (isBlank) {
+            const cleanBlankPart = part.replace(/['’]?[a-zA-Z]+/g, '');
+            const replacement = isAnswered && selectedOption !== null ? activeQuestion.options[selectedOption] : '___';
+            const renderedText = cleanBlankPart.replace('_____', replacement);
             return (
               <span 
                 key={idx} 
-                className={`inline-block font-extrabold ${
-                  isDarkMode ? 'text-[#4ECDC4]' : 'text-[#2D3436]'
+                className={`inline-block mx-1 px-3 py-0.5 rounded-lg font-black border-b-2 transition-colors ${
+                  !isAnswered ? 'text-violet-500 border-violet-500'
+                  : selectedOption !== null && selectedOption === activeQuestion.correctIndex ? 'text-emerald-500 border-emerald-500'
+                  : 'text-rose-400 border-rose-400'
                 }`}
               >
-                {part}
+                {renderedText}
               </span>
             );
           }
@@ -1410,10 +1464,10 @@ export default function QuizView({
   }, []);
 
   React.useEffect(() => {
-    if (initiallyShowPaywall || stats.hearts <= 0) {
+    if (initiallyShowPaywall) {
       setShowSubscriptionPanel(true);
     }
-  }, [initiallyShowPaywall, stats.hearts]);
+  }, [initiallyShowPaywall]);
 
   // Helper calculation for membership discounts
   const monthlyPrice = 99; // 99 TL
@@ -1732,6 +1786,15 @@ export default function QuizView({
                         <span>&ldquo;{activeQuestion.word}&rdquo;</span>
                       )}
                     </h3>
+
+                    {activeQuestion.qType === 'fill_blank' && activeQuestion.sentenceTr && (
+                      <p className={`text-xs leading-relaxed italic border-t pt-3 w-full text-center flex items-center justify-center gap-1.5 mt-4 ${
+                        isDarkMode ? 'border-[#2A2A30] text-gray-500' : 'border-gray-100 text-gray-400'
+                      }`}>
+                        <span>{getLanguageFlag(nativeLanguage)}</span>
+                        <span>{activeQuestion.sentenceTr}</span>
+                      </p>
+                    )}
                     <p 
                       className="text-xs font-semibold mt-3 border inline-block px-3.5 py-1 rounded-full font-headline-lg"
                       style={{
@@ -1891,29 +1954,23 @@ export default function QuizView({
                 {/* Background lighting flare */}
                 <div className="absolute -top-12 -right-12 w-32 h-32 bg-[#FF6B6B]/20 rounded-full blur-xl" />
                 
-                {/* Cancel payload cross only if they still have hearts */}
-                {stats.hearts > 0 && (
-                  <button
-                    onClick={() => setShowSubscriptionPanel(false)}
-                    className="absolute top-4 right-4 p-1 rounded-full hover:bg-white/10 text-white/70 hover:text-white cursor-pointer"
-                  >
-                    <X className="w-5 h-5" />
-                  </button>
-                )}
+                {/* Cancel payload cross */}
+                <button
+                  onClick={() => setShowSubscriptionPanel(false)}
+                  className="absolute top-4 right-4 p-1 rounded-full hover:bg-white/10 text-white/70 hover:text-white cursor-pointer"
+                >
+                  <X className="w-5 h-5" />
+                </button>
 
                 <div className="flex items-center gap-2 mb-2 bg-[#FFE66D] text-gray-950 text-[10px] font-bold px-2.5 py-1 rounded-full w-max shadow-xs font-headline-lg">
                   <Crown className="w-3.5 h-3.5 text-[#FF6B6B] fill-[#FF6B6B]" />
                   <span>{t('premium_benefits_tag', nativeLanguage)}</span>
                 </div>
                 <h3 className="font-headline-lg text-2xl font-bold tracking-tight mb-1 text-white">
-                  {stats.hearts <= 0 ? t('no_lives_title', nativeLanguage) : t('premium_access_title', nativeLanguage)}
+                  {t('premium_access_title', nativeLanguage)}
                 </h3>
                  <p className="text-xs text-gray-400 leading-relaxed font-semibold">
-                  {stats.hearts <= 0 && refillCountdown ? (
-                    <span className="text-[#FF6B6B] font-bold">{t('refill_countdown_desc', nativeLanguage).replace('{time}', refillCountdown)}</span>
-                  ) : (
-                    t('premium_features_desc', nativeLanguage)
-                  )}
+                  {t('premium_features_desc', nativeLanguage)}
                 </p>
               </div>
 
