@@ -2819,7 +2819,7 @@ export default function ReadingView({
             handleStopAudiobook();
           }
         }}
-        className="flex-1 w-full max-w-[680px] mx-auto px-5 pt-8 select-none"
+        className="flex-1 w-full max-w-[680px] mx-auto px-5 pt-8 pb-36 select-none"
       >
         
         {/* Story Illustration Image Header */}
