@@ -1482,6 +1482,10 @@ export default function App() {
                 localStorage.removeItem('linguist_just_reset_app');
               }
 
+              const isFreshInstall = (statsRef.current.completedBooksCount || 0) === 0 && 
+                                     (statsRef.current.totalTimeMinutes || 0) === 0 && 
+                                     (statsRef.current.learnedWordsCount || 0) === 0;
+
               mergedStats = {
                 ...DEFAULT_STATS,
                 ...cloudStats,
@@ -1493,7 +1497,7 @@ export default function App() {
                 completedBooksCount: isJustReset ? (statsRef.current.completedBooksCount || 0) : Math.max(statsRef.current.completedBooksCount || 0, cloudStats.completedBooksCount || 0),
                 totalTimeMinutes: isJustReset ? (statsRef.current.totalTimeMinutes || 0) : Math.max(statsRef.current.totalTimeMinutes || 0, cloudStats.totalTimeMinutes || 0),
                 learnedWordsCount: isJustReset ? (statsRef.current.learnedWordsCount || 0) : Math.max(statsRef.current.learnedWordsCount || 0, cloudStats.learnedWordsCount || 0),
-                hearts: isPremium ? 5 : (isJustReset ? (statsRef.current.hearts ?? 5) : Math.max(statsRef.current.hearts ?? 5, cloudStats.hearts ?? 5)),
+                hearts: isPremium ? 5 : (isJustReset ? (statsRef.current.hearts ?? 5) : (isFreshInstall ? (cloudStats.hearts ?? 5) : Math.max(statsRef.current.hearts ?? 5, cloudStats.hearts ?? 5))),
                 weeklyWords: isJustReset ? [...statsRef.current.weeklyWords] : mergeWeekly(statsRef.current.weeklyWords, cloudStats.weeklyWords),
                 weeklyMins: isJustReset ? [...statsRef.current.weeklyMins] : mergeWeekly(statsRef.current.weeklyMins, cloudStats.weeklyMins),
                 lastActiveDate: isJustReset ? statsRef.current.lastActiveDate : lastActiveDate
