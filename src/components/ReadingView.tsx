@@ -3314,11 +3314,14 @@ export default function ReadingView({
       </main>
 
       {/* Chapter Progress Bar Overlay Footer */}
-      <footer className={`fixed bottom-0 left-0 w-full border-t z-35 backdrop-blur-md transition-colors ${
-        isDarkMode 
-          ? 'bg-[#1A1A1E]/95 border-[#2A2A30] shadow-[0_-5px_20px_rgba(0,0,0,0.35)]' 
-          : 'bg-white/90 border-[#FFE66D]/80 shadow-[0_-5px_20px_rgba(255,107,107,0.03)]'
-      }`}>
+      <footer 
+        className={`fixed bottom-0 left-0 w-full border-t z-35 backdrop-blur-md transition-colors ${
+          isDarkMode 
+            ? 'bg-[#1A1A1E]/95 border-[#2A2A30] shadow-[0_-5px_20px_rgba(0,0,0,0.35)]' 
+            : 'bg-white/90 border-[#FFE66D]/80 shadow-[0_-5px_20px_rgba(255,107,107,0.03)]'
+        }`}
+        style={{ paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}
+      >
         <div className="max-w-[680px] mx-auto px-5 py-4 pb-6">
           <div className="flex justify-between items-center mb-2">
             <span className="text-xs text-gray-550 font-bold tracking-wider font-headline-lg">
