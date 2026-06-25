@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-24T18:47:43.303Z",
+  "last_updated": "2026-06-25T09:18:50Z",
   "queue": [
     {
       "key": "classic_oliver_twist",
@@ -7,7 +7,9 @@
       "scheduled_date": "25.06.2026 11:00:00",
       "timestamp": 1782374400,
       "posted_fb": true,
-      "posted_ig": false
+      "posted_ig": true,
+      "ig_post_id": "17894987955355950",
+      "posted_ig_date": "25.06.2026"
     },
     {
       "key": "classic_tom_sawyer",
