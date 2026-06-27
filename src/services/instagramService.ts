@@ -349,7 +349,7 @@ export async function publishToInstagramDirectly(imageUrl: string, caption: stri
 }
 
 // Checks Instagram history to prevent duplicate posting on the same calendar day in Turkey timezone
-export async function hasAlreadyPostedToday(instagramId: string, pageToken: string, type: "promo" | "word"): Promise<boolean> {
+export async function hasAlreadyPostedToday(instagramId: string, pageToken: string, type: "promo" | "word" | "reel"): Promise<boolean> {
   try {
     const url = `https://graph.facebook.com/v20.0/${instagramId}/media?fields=id,timestamp,caption&access_token=${pageToken}`;
     const res = await fetch(url);
@@ -375,6 +375,10 @@ export async function hasAlreadyPostedToday(instagramId: string, pageToken: stri
         }
         if (type === "word" && caption.includes("#gununkelimesi")) {
           console.log(`[Instagram Service] Found word of the day post from today (${postDateStr}): "${caption.split('\n')[0]}"`);
+          return true;
+        }
+        if (type === "reel" && caption.includes("#seslikitap")) {
+          console.log(`[Instagram Service] Found reel post from today (${postDateStr}): "${caption.split('\n')[0]}"`);
           return true;
         }
       }
@@ -712,21 +716,38 @@ export async function runDailyReelFlow(): Promise<{ success: boolean; key?: stri
     const queue = queueData.queue;
 
     // 1. Prevent double-posting on the same calendar day in Turkey timezone
-    const todayStr = new Date().toLocaleString("tr-TR", { timeZone: "Europe/Istanbul" }).split(" ")[0]; // e.g. "25.06.2026"
-    const alreadyPosted = queue.some((item: any) => item.posted_ig && item.posted_ig_date === todayStr);
-    if (alreadyPosted) {
-      console.log(`[Reels Flow] Reel already posted on Instagram today (${todayStr}). Skipping flow to avoid duplicates.`);
+    const ymd = new Date().toLocaleDateString("en-CA", { timeZone: "Europe/Istanbul" });
+    const [year, month, day] = ymd.split("-");
+    const todayStr = `${day}.${month}.${year}`; // e.g. "27.06.2026"
+
+    // First check via the Instagram Graph API
+    const apiAlreadyPosted = await hasAlreadyPostedToday(instagramId, pageToken, "reel");
+    if (apiAlreadyPosted) {
+      console.log(`[Reels Flow] Reel already posted on Instagram today according to Graph API. Skipping flow to avoid duplicates.`);
       return { success: true, key: "ALREADY_POSTED_TODAY" };
     }
 
-    // 2. Find next unposted Reel
-    const nextReelIndex = queue.findIndex((item: any) => !item.posted_ig);
-    if (nextReelIndex === -1) {
+    // Also check local queue state
+    const alreadyPosted = queue.some((item: any) => item.posted_ig && item.posted_ig_date === todayStr);
+    if (alreadyPosted) {
+      console.log(`[Reels Flow] Reel already marked as posted in local queue today (${todayStr}). Skipping to avoid duplicates.`);
+      return { success: true, key: "ALREADY_POSTED_TODAY" };
+    }
+
+    // 2. Find the Reel scheduled for today's date
+    let item = queue.find((q: any) => q.scheduled_date && q.scheduled_date.startsWith(todayStr));
+    
+    // Fallback: if no Reel is scheduled specifically for today, find the first unposted Reel in the queue
+    if (!item) {
+      console.log(`[Reels Flow] No reel found in queue with scheduled_date starting with ${todayStr}. Falling back to first unposted Reel.`);
+      item = queue.find((q: any) => !q.posted_ig);
+    }
+
+    if (!item) {
       console.log("[Reels Flow] No unposted Reels left in the queue!");
       return { success: true, key: "QUEUE_EMPTY" };
     }
 
-    const item = queue[nextReelIndex];
     const story = db[item.key];
     if (!story) {
       throw new Error(`Story details not found for key: ${item.key}`);

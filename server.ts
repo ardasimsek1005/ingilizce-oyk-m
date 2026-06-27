@@ -9,7 +9,6 @@ import crypto from "crypto";
 import nodemailer from "nodemailer";
 import { OFFLINE_DICTIONARY } from "./src/dictionary";
 import { GLOBAL_DICTIONARY } from "./src/data";
-import cron from "node-cron";
 import { runDailyInstagramFlow, fetchDailyWordFromGemini, saveDailyWordCardImage, runDailyAppPromotionFlow, runDailyReelFlow } from "./src/services/instagramService";
 
 // Secure cryptographic password hashing (PBKDF2)
@@ -2001,19 +2000,7 @@ RULES FOR MAXIMUM ${targetLangName.toUpperCase()} COHERENCE:
     });
   }
 
-  // Start daily scheduled cron job for Instagram Reels (At 11:00 Turkey Time UTC+3)
-  cron.schedule("0 11 * * *", async () => {
-    console.log("[Cron Job] Automated daily Instagram Reels posting flow starting...");
-    const result = await runDailyReelFlow();
-    if (result.success) {
-      console.log(`[Cron Job] Successfully published daily Reel to Instagram: ${result.title || result.key} (ID: ${result.igPostId})`);
-    } else {
-      console.error(`[Cron Job] Failed to publish daily Reel: ${result.error}`);
-    }
-  }, {
-    timezone: "Europe/Istanbul"
-  });
-  console.log("[Linguist Scheduler] Daily Instagram Reels cron job (11:00 Turkey Time) is active and scheduled.");
+
 
   app.listen(PORT, "0.0.0.0", () => {
     console.log(`[Linguist Server] Full-stack engine running on http://0.0.0.0:${PORT}`);

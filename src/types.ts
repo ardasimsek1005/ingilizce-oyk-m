@@ -60,6 +60,7 @@ export interface QuizQuestion {
   translation?: string;
   optionsEn?: string[];
   sentenceEn?: string;
+  sentenceTr?: string;
 }
 
 export interface LeaderboardUser {
