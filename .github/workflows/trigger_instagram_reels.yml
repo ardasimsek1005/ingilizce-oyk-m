@@ -2,12 +2,10 @@ name: Trigger Daily Instagram Reels Post
 
 on:
   schedule:
-    # Trigger at multiple times around 11:00 AM Turkey Time (08:00 UTC)
-    # The server-side API contains built-in double-posting protection
-    # and will publish the Reel exactly once per day.
-    - cron: '0 8 * * *'   # 11:00 AM TRT
-    - cron: '15 8 * * *'  # 11:15 AM TRT
-    - cron: '30 8 * * *'  # 11:30 AM TRT
+    # Trigger every 30 minutes between 11:00 AM and 11:00 PM Turkey Time (08:00 to 20:00 UTC)
+    # This frequent trigger ensures the Reel is posted daily even if GitHub's scheduler is heavily delayed.
+    # The API contains built-in double-posting protection and will execute exactly once per day.
+    - cron: '*/30 8-20 * * *'
   # Allow manual trigger from the GitHub Actions tab
   workflow_dispatch:
 
