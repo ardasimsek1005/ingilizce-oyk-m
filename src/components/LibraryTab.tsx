@@ -383,6 +383,15 @@ export default function LibraryTab({
     return currentlyReadingList.filter(b => b.id !== currentlyReading.id);
   }, [currentlyReadingList, currentlyReading]);
 
+  // Stable random seeds per component mount for shuffling books within the same level
+  const shuffleSeeds = useRef<Record<string, number>>({});
+  const getShuffleValue = (bookId: string) => {
+    if (shuffleSeeds.current[bookId] === undefined) {
+      shuffleSeeds.current[bookId] = Math.random();
+    }
+    return shuffleSeeds.current[bookId];
+  };
+
   const filteredBooks = useMemo(() => {
     let list = selectedLevel === 'All'
       ? books
@@ -409,22 +418,28 @@ export default function LibraryTab({
     };
 
     return [...list].sort((a, b) => {
-      // 1. Sort by premium status (non-premium / free books first)
-      const premA = !!a.isPremium;
-      const premB = !!b.isPremium;
-      if (premA !== premB) {
-        return premA ? 1 : -1;
+      // 1. Sort by premium status (non-premium / free books first) ONLY if the user is NOT premium
+      if (!isPremium) {
+        const premA = !!a.isPremium;
+        const premB = !!b.isPremium;
+        if (premA !== premB) {
+          return premA ? 1 : -1;
+        }
       }
+      
       // 2. Sort by CEFR level
       const orderA = levelOrder[a.level] || 99;
       const orderB = levelOrder[b.level] || 99;
       if (orderA !== orderB) {
         return orderA - orderB;
       }
-      // 3. Sort alphabetically
-      return a.title.localeCompare(b.title, 'tr');
+      
+      // 3. Sort by our stable shuffle value to vary the order within the same level
+      const valA = getShuffleValue(a.id);
+      const valB = getShuffleValue(b.id);
+      return valA - valB;
     });
-  }, [books, selectedLevel, selectedCategory, searchQuery]);
+  }, [books, selectedLevel, selectedCategory, searchQuery, isPremium]);
 
   const libraryCountLabel = useMemo(() => {
     const count = filteredBooks.length;
