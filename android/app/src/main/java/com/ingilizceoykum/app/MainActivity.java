@@ -10,6 +10,9 @@ import com.getcapacitor.BridgeActivity;
 public class MainActivity extends BridgeActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        // Switch from launch theme (splash background) to main application theme
+        setTheme(R.style.AppTheme_NoActionBar);
+        
         // Enable edge-to-edge rendering for Android 15 SDK 35 compatibility
         EdgeToEdge.enable(this);
         
