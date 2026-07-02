@@ -861,7 +861,7 @@ RULES FOR MAXIMUM ${targetLangName.toUpperCase()} COHERENCE:
   app.get("/api/config", (req, res) => {
     res.json({
       googleClientId: process.env.GOOGLE_CLIENT_ID || "",
-      minVersionCode: 16
+      minVersionCode: 17
     });
   });
 
