@@ -797,6 +797,8 @@ export default function ProfileTab({
                   >
                     {tempName ? (
                       <span className="truncate">{tempName}</span>
+                    ) : nameInputFocused ? (
+                      null
                     ) : (
                       <span className={isDarkMode ? 'text-gray-650' : 'text-teal-650'}>
                         {t('profile_name_placeholder', nativeLanguage)}
