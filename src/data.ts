@@ -823,16 +823,16 @@ const getBookCategoryForPremium = (bookId: string): string => {
 };
 
 const FREE_STORY_IDS = new Set([
-  'red_riding_hood',             // kids_fables
-  'wizard_of_oz',                // classics_adventure
-  'sleepy_hollow',               // horror_mystery
-  'daily_market',                // daily_conversations
-  'scifi_time_machine',          // sci_fi
-  'detective_scandal_bohemia',   // detective
-  'history_giza_pyramids',       // history
-  'mythology_pandora_box',       // mythology
-  'travel_culture_eiffel_tower', // travel_culture
-  'nature_space_red_planet'      // nature_space
+  'red_riding_hood',               // kids_fables (A1)
+  'daily_market',                  // daily_conversations (A1)
+  'scifi_time_machine',            // sci_fi (A1)
+  'sleepy_hollow',                 // horror_mystery (A2)
+  'history_alexander_great',       // history (A2)
+  'wizard_of_oz',                  // classics_adventure (B1)
+  'mythology_bellerophon_chimera', // mythology (B1)
+  'detective_woman_in_white_1',    // detective (B2)
+  'travel_culture_tibet_potala',   // travel_culture (B2)
+  'nature_space_cosmic_web'        // nature_space (C1)
 ]);
 
 // Generates correct types and alignments dynamically from raw definitions
