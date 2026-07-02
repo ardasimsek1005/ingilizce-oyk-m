@@ -13,6 +13,8 @@ public class MainActivity extends BridgeActivity {
         
         // Restore default WebView caching to ensure high performance loading from local assets
         if (this.bridge != null && this.bridge.getWebView() != null) {
+            // Force clear cache on start to prevent WebView from loading stale cached web assets during updates
+            this.bridge.getWebView().clearCache(true);
             this.bridge.getWebView().getSettings().setCacheMode(WebSettings.LOAD_DEFAULT);
             
             // Disable Android Autofill on the WebView to prevent password/autofill popups and keyboard toolbar icons

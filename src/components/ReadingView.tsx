@@ -8,6 +8,8 @@ import { speakNative, speakAudiobookSentence, stopSpeech } from '../services/tts
 import { SUPPORTED_LANGUAGES, LanguageCode, t, translateWithGoogleClient, PLACEHOLDER_STRINGS } from '../i18n';
 import pretranslatedStories from '../pretranslated_stories.json';
 
+const ENABLE_TRANSLATION_LIMITS = false; // Toggle to false to suspend daily translation limits for free users
+
 interface ReadingViewProps {
   book: Book;
   backRef?: React.MutableRefObject<(() => boolean) | null>;
@@ -753,7 +755,7 @@ export default function ReadingView({
       return;
     }
 
-    if (!stats?.isPremium) {
+    if (ENABLE_TRANSLATION_LIMITS && !stats?.isPremium) {
       const isAlreadyActive = activeSentenceTr && activeSentenceTr.paragraphId === val.paragraphId && activeSentenceTr.sentenceIdx === val.sentenceIdx;
       const sentenceKey = `${book.id}_${activeChapterIdx}_${val.paragraphId}_${val.sentenceIdx}`;
       let lookedUpToday = false;
@@ -768,7 +770,7 @@ export default function ReadingView({
 
       if (!isAlreadyActive && !lookedUpToday) {
         const counts = getDailyCounts();
-        if (counts.sentences >= 15) {
+        if (counts.sentences >= 200) {
           setShowLimitReachedModal('sentence');
           return;
         }
@@ -2233,7 +2235,7 @@ export default function ReadingView({
 
           const looksLikePropName = looksLikeProperNoun(wordEn);
 
-          if (!stats?.isPremium && !looksLikePropName) {
+          if (ENABLE_TRANSLATION_LIMITS && !stats?.isPremium && !looksLikePropName) {
             const isAlreadySelected = selectedDictWord && selectedDictWord.word.toLowerCase() === cleanW.toLowerCase();
             let lookedUpToday = false;
             try {
@@ -2247,7 +2249,7 @@ export default function ReadingView({
 
             if (!isAlreadySelected && !lookedUpToday) {
               const counts = getDailyCounts();
-              if (counts.words >= 30) {
+              if (counts.words >= 300) {
                 setShowLimitReachedModal('word');
                 return;
               }
@@ -3454,15 +3456,15 @@ export default function ReadingView({
                   </button>
                 </div>
 
-                {!stats?.isPremium && (
+                {ENABLE_TRANSLATION_LIMITS && !stats?.isPremium && (
                   <span className="text-[9px] font-semibold px-2 py-0.5 rounded-lg bg-amber-500/10 text-amber-500 border border-amber-500/25 text-center inline-flex flex-col items-center justify-center leading-tight">
                     {nativeLanguage === 'tr' ? (
                       <>
-                        <span>⚠️ Bugün için {Math.max(0, 30 - wordLookupsToday)} kelime</span>
+                        <span>⚠️ Bugün için {Math.max(0, 300 - wordLookupsToday)} kelime</span>
                         <span className="block mt-0.5">hakkınız kaldı</span>
                       </>
                     ) : (
-                      <span>⚠️ {t('dict_lookups_left', nativeLanguage).replace('{count}', String(Math.max(0, 30 - wordLookupsToday)))}</span>
+                      <span>⚠️ {t('dict_lookups_left', nativeLanguage).replace('{count}', String(Math.max(0, 300 - wordLookupsToday)))}</span>
                     )}
                   </span>
                 )}
@@ -3573,9 +3575,9 @@ export default function ReadingView({
               </div>
               
               {/* Remaining limit badge */}
-              {!stats?.isPremium && (
+              {ENABLE_TRANSLATION_LIMITS && !stats?.isPremium && (
                 <div className="flex items-center gap-1.5 px-2 py-1 rounded-lg bg-amber-500/10 text-amber-500 border border-amber-500/25 text-[9px] font-bold select-none w-fit">
-                  ⚠️ {t('sentence_trans_left', nativeLanguage).replace('{count}', String(Math.max(0, 15 - sentenceTransToday)))}
+                  ⚠️ {t('sentence_trans_left', nativeLanguage).replace('{count}', String(Math.max(0, 200 - sentenceTransToday)))}
                 </div>
               )}
               

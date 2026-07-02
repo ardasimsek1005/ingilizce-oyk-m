@@ -17,6 +17,7 @@ export interface Book {
   isStarted?: boolean;
   titleTr?: string;
   coverPosition?: string;
+  isPremium?: boolean;
 }
 
 export interface Chapter {

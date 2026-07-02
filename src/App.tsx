@@ -320,6 +320,7 @@ export default function App() {
 
   const [showConsent, setShowConsent] = useState<boolean>(() => localStorage.getItem('linguist_tos_accepted_v11') !== 'true');
   const [consentChecked, setConsentChecked] = useState<boolean>(false);
+  const [showForceUpdate, setShowForceUpdate] = useState<boolean>(false);
 
   const toggleDarkMode = () => {
     setIsDarkMode(prev => {
@@ -867,6 +868,31 @@ export default function App() {
 
       // Schedule daily reminder on startup
       scheduleDailyReminder();
+
+      // Check for mandatory updates on startup
+      try {
+        const configRes = await fetch(`${getApiBase()}/api/config`);
+        if (configRes.ok) {
+          const configData = await configRes.json();
+          const minVersionCode = configData.minVersionCode;
+          
+          if (minVersionCode && Capacitor.isNativePlatform()) {
+            try {
+              const appInfo = await CapacitorApp.getInfo();
+              const currentBuildNum = parseInt(appInfo.build, 10);
+              if (currentBuildNum < minVersionCode) {
+                console.log(`Force update required! Device version code: ${currentBuildNum}, Min required: ${minVersionCode}`);
+                setShowForceUpdate(true);
+                return; // Stop initialization
+              }
+            } catch (e) {
+              console.error('Failed to get App info for update check:', e);
+            }
+          }
+        }
+      } catch (e) {
+        console.error('Failed to fetch config for update check:', e);
+      }
 
       // Perform auto-login if the user is not logged in yet
       const currentEmail = localStorage.getItem('linguist_user_email') || userEmail;
@@ -2205,8 +2231,10 @@ export default function App() {
       userName={userName}
       onUpdateLanguage={handleUpdateLanguage}
       onTabChange={setCurrentTab}
+      isPremium={stats.isPremium}
+      onGoToPremium={() => setShowGlobalPaywall(true)}
     />
-  ), [books, isDarkMode, stats.totalTimeMinutes, lastActiveBookId, searchQuery, focusedCategory, handleSelectBook, handleToggleFavorite, handleRemoveFromReading, triggerCloudSync, nativeLanguage, userAvatar, userName, handleUpdateLanguage]);
+  ), [books, isDarkMode, stats.totalTimeMinutes, stats.isPremium, lastActiveBookId, searchQuery, focusedCategory, handleSelectBook, handleToggleFavorite, handleRemoveFromReading, triggerCloudSync, nativeLanguage, userAvatar, userName, handleUpdateLanguage]);
 
   const memoizedFavoritesTab = React.useMemo(() => (
     <FavoritesTab
@@ -2216,8 +2244,10 @@ export default function App() {
       onGoToLibrary={() => setCurrentTab('library')}
       isDarkMode={isDarkMode}
       nativeLanguage={nativeLanguage}
+      isPremium={stats.isPremium}
+      onGoToPremium={() => setShowGlobalPaywall(true)}
     />
-  ), [books, isDarkMode, handleSelectBook, handleToggleFavorite, nativeLanguage]);
+  ), [books, isDarkMode, stats.isPremium, handleSelectBook, handleToggleFavorite, nativeLanguage]);
 
   const handleCompleteGame = useCallback((gameType: 'synonym' | 'fillblank') => {
     setStats(prev => {
@@ -2272,7 +2302,48 @@ export default function App() {
         isDarkMode ? 'bg-[#121214] text-[#E6E6E6] dark' : 'bg-[#FFFBF0] text-[#2D3436]'
       }`}>
         
-        {showSplash ? (
+        {showForceUpdate ? (
+          <div className="absolute inset-0 z-[10000] bg-gradient-to-b from-[#0F172A] to-[#1E293B] flex flex-col items-center justify-center p-6 text-center text-white">
+            {/* Decorative backgrounds */}
+            <div className="absolute top-0 left-0 right-0 h-1/2 bg-gradient-to-b from-amber-500/10 to-transparent blur-3xl pointer-events-none" />
+
+            <div className="relative z-10 max-w-sm flex flex-col items-center">
+              {/* Animated Crown/Rocket Header */}
+              <div className="w-20 h-20 bg-gradient-to-br from-amber-400 to-yellow-500 rounded-3xl flex items-center justify-center shadow-2xl shadow-amber-500/20 mb-6 animate-bounce">
+                <Crown className="w-10 h-10 text-white fill-white" />
+              </div>
+
+              {/* Title */}
+              <h2 className="text-2xl font-black tracking-tight mb-3">
+                Güncelleme Gerekli 🚀
+              </h2>
+
+              {/* Description */}
+              <p className="text-[#94A3B8] text-sm leading-relaxed mb-8 px-4">
+                Sizlere daha iyi bir deneyim sunabilmek için uygulamamızı yeniledik. Devam edebilmek için lütfen Google Play Store'dan son sürümü indirin.
+              </p>
+
+              {/* Action Button */}
+              <button
+                onClick={() => {
+                  window.open("market://details?id=com.ingilizceoykum.app", "_system");
+                  // Fallback for browser testing or if market protocol fails
+                  setTimeout(() => {
+                    window.open("https://play.google.com/store/apps/details?id=com.ingilizceoykum.app", "_system");
+                  }, 500);
+                }}
+                className="w-full py-4 px-6 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-white font-black text-base rounded-2xl shadow-lg shadow-amber-500/25 active:scale-98 transition-all duration-200 cursor-pointer flex items-center justify-center gap-2"
+              >
+                <Shield className="w-5 h-5" />
+                Şimdi Güncelle
+              </button>
+              
+              <p className="text-[10px] text-gray-500 mt-6 tracking-wider uppercase font-bold">
+                İngilizce Öyküm Sürüm 2.12 (v15)
+              </p>
+            </div>
+          </div>
+        ) : showSplash ? (
           <SplashScreen nativeLanguage={nativeLanguage} />
         ) : (
           <>

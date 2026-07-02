@@ -787,6 +787,54 @@ export const GLOBAL_DICTIONARY: { [key: string]: string } = {
   "pair": "çift/ikili"
 };
 
+
+// Helper to assign categories for premium locks
+const getBookCategoryForPremium = (bookId: string): string => {
+  const horrorIds = [
+    'sleepy_hollow', 'dr_jekyll_mr_hyde', 'invisible_man', 'crime_punishment', 'frankenstein', 'dracula', 'war_of_worlds'
+  ];
+  const fableKidsIds = [
+    'peter_rabbit', 'bambi', 'velveteen_rabbit', 'nutcracker', 'blue_bird', 'tom_thumb', 'little_match_girl',
+    'gingerbread_man', 'chicken_little', 'enormous_turnip', 'three_billy_goats', 'fisherman_wife', 'little_red_hen',
+    'frog_prince', 'stone_soup', 'star_money', 'city_musicians', 'crow_pitcher', 'ant_grasshopper', 'lion_mouse',
+    'town_country_mouse', 'wind_sun', 'rumpelstiltskin', 'snow_queen', 'pinocchio', 'princess_pea', 'thumbelina',
+    'boy_cried_wolf', 'ali_baba', 'hansel_gretel', 'sleeping_beauty', 'rapunzel', 'cinderella', 'jack_beanstalk',
+    'aladdin', 'goldilocks', 'red_riding_hood', 'ugly_duckling', 'little_mermaid', 'three_pigs', 'snow_white', 'beauty_beast',
+    'peter_wolf', 'tin_soldier', 'magic_pot', 'wolf_kids', 'brave_tailor', 'selfish_giant', 'nightingale', 'tinderbox',
+    'wild_swans', 'goose_girl', 'fox_grapes', 'golden_goose', 'elves_shoemaker', 'emperors_clothes', 'happy_prince',
+    'reluctant_dragon', 'star_child',
+    'magic_flute', 'king_thrushbeard', 'iron_hans', 'water_of_life', 'three_spinners', 'six_swans',
+    'birthday_infanta', 'fisherman_soul', 'young_king', 'devoted_friend', 'remarkably_rocket',
+    'east_sun_west_moon', 'snow_white_rose_red', 'twelve_dancing_princesses',
+    'tortoise_hare', 'puss_boots', 'secret_oak_tree', 'clockwork_town', 'painted_dreams'
+  ];
+
+  const lowerId = bookId.toLowerCase();
+  if (lowerId.startsWith('mythology_') || lowerId.includes('mythology_')) return 'mythology';
+  if (lowerId.startsWith('travel_') || lowerId.includes('travel_')) return 'travel_culture';
+  if (lowerId.startsWith('nature_') || lowerId.includes('nature_')) return 'nature_space';
+  if (lowerId.startsWith('daily_') || lowerId.includes('daily_')) return 'daily_conversations';
+  if (lowerId.startsWith('scifi_') || lowerId.includes('scifi_')) return 'sci_fi';
+  if (lowerId.startsWith('detective_') || lowerId.includes('detective_')) return 'detective';
+  if (lowerId.startsWith('history_') || lowerId.includes('history_')) return 'history';
+  if (lowerId.includes('horror') || horrorIds.some(id => lowerId.includes(id))) return 'horror_mystery';
+  if (lowerId.includes('fable') || lowerId.includes('kids') || fableKidsIds.some(id => lowerId.includes(id))) return 'kids_fables';
+  return 'classics_adventure';
+};
+
+const FREE_STORY_IDS = new Set([
+  'red_riding_hood', // A1
+  'cinderella',      // A1
+  'snow_white',      // A1
+  'pinocchio',       // A2
+  'aladdin',         // A2
+  'wizard_of_oz',    // B1
+  'secret_garden',   // B1
+  'little_prince',   // B2
+  'robinson_crusoe', // B2
+  'sherlock_holmes'  // C1
+]);
+
 // Generates correct types and alignments dynamically from raw definitions
 export const INITIAL_BOOKS: Book[] = ALL_RAW_STORIES.map((story) => {
   const chapters = [
@@ -841,7 +889,8 @@ export const INITIAL_BOOKS: Book[] = ALL_RAW_STORIES.map((story) => {
     statsTime: `${Math.max(1, Math.ceil(totalWords / 45))}dk`,
     chapters,
     titleTr: STORY_TITLE_TRANSLATIONS[story.id] || '',
-    coverPosition: (story as any).coverPosition || 'center 28%'
+    coverPosition: (story as any).coverPosition || 'center 28%',
+    isPremium: !FREE_STORY_IDS.has(story.id)
   };
 });
 

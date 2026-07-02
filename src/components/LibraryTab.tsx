@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
-import { BookOpen, Timer, Plus, ArrowRight, ExternalLink, ChevronRight, X, Sparkles, BookMarked, Star, Skull, Compass, Search, Trash2, ArrowLeft } from 'lucide-react';
+import { BookOpen, Timer, Plus, ArrowRight, ExternalLink, ChevronRight, X, Sparkles, BookMarked, Star, Skull, Compass, Search, Trash2, ArrowLeft, Crown, Lock } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Book, getLevelColor, hexToRgba } from '../types';
 import { SUPPORTED_LANGUAGES, LanguageCode, t, getLocalizedUsername, getLocalizedLevelName } from '../i18n';
@@ -294,6 +294,8 @@ const getBookCategory = (bookId: string): 'horror_mystery' | 'kids_fables' | 'cl
 interface LibraryTabProps {
   books: Book[];
   onSelectBook: (book: Book) => void;
+  isPremium: boolean;
+  onGoToPremium: () => void;
   syncTrigger: () => void;
   isDarkMode?: boolean;
   onToggleFavorite: (bookId: string) => void;
@@ -329,11 +331,14 @@ export default function LibraryTab({
   userName,
   onUpdateLanguage,
   onTabChange,
+  isPremium,
+  onGoToPremium,
 }: LibraryTabProps) {
   const [selectedLevel, setSelectedLevel] = useState<string>('All');
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [confirmRemoveBookId, setConfirmRemoveBookId] = useState<string | null>(null);
+  const [showPremiumModal, setShowPremiumModal] = useState(false);
   const [lastTap, setLastTap] = useState<{ [key: string]: number }>({});
 
   const lastTransitionTime = useRef<number>(0);
@@ -404,11 +409,19 @@ export default function LibraryTab({
     };
 
     return [...list].sort((a, b) => {
+      // 1. Sort by premium status (non-premium / free books first)
+      const premA = !!a.isPremium;
+      const premB = !!b.isPremium;
+      if (premA !== premB) {
+        return premA ? 1 : -1;
+      }
+      // 2. Sort by CEFR level
       const orderA = levelOrder[a.level] || 99;
       const orderB = levelOrder[b.level] || 99;
       if (orderA !== orderB) {
         return orderA - orderB;
       }
+      // 3. Sort alphabetically
       return a.title.localeCompare(b.title, 'tr');
     });
   }, [books, selectedLevel, selectedCategory, searchQuery]);
@@ -511,6 +524,10 @@ export default function LibraryTab({
             // Ignore double-clicks/taps that bleed through from the category navigation transitions
             return;
           }
+          if (book.isPremium && !isPremium) {
+            setShowPremiumModal(true);
+            return;
+          }
           onSelectBook(book);
         }}
         className={`group cursor-pointer flex flex-col ${
@@ -525,16 +542,27 @@ export default function LibraryTab({
             className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ${
               book.isCompleted ? 'grayscale opacity-60' : ''
             }`}
-            style={{ objectPosition: book.coverPosition || 'center 28%' }}
+            style={{ 
+              objectPosition: book.coverPosition || 'center 28%',
+              filter: (book.isPremium && !isPremium) ? 'grayscale(55%) brightness(0.92)' : undefined
+            }}
             src={book.coverUrl}
             loading="lazy"
           />
           <div 
-            className="absolute top-2 right-2 px-2 py-0.5 rounded text-[10px] font-bold text-white shadow-xs"
+            className="absolute top-2 right-2 px-2 py-0.5 rounded text-[10px] font-bold text-white shadow-xs flex items-center gap-1"
             style={{ backgroundColor: getLevelColor(book.level) }}
           >
-            {book.level || 'A1'}
+            <span>{book.level || 'A1'}</span>
           </div>
+          {book.isPremium && !isPremium && (
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+              <div className="bg-black/55 backdrop-blur-[2px] border border-amber-500/35 px-3 py-1.5 rounded-2xl shadow-lg flex items-center gap-1.5 transform scale-100 group-hover:scale-105 transition-transform duration-300">
+                <Crown className="w-4 h-4 fill-amber-400 text-amber-400 animate-pulse" />
+                <span className="text-white text-[11px] font-black tracking-wider uppercase font-headline-lg">PREMIUM</span>
+              </div>
+            </div>
+          )}
           <button
             onClick={(e) => {
               e.stopPropagation();
@@ -1185,6 +1213,60 @@ export default function LibraryTab({
           </h5>
         </div>
       </section>
+
+      {/* Elegant Premium Invite Modal */}
+      {showPremiumModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+          {/* Backdrop */}
+          <div 
+            className="absolute inset-0 bg-[#0A0F1A]/80 backdrop-blur-md transition-opacity duration-300"
+            onClick={() => setShowPremiumModal(false)}
+          />
+          
+          {/* Modal Content */}
+          <div 
+            className="relative w-full max-w-sm bg-gradient-to-b from-[#1E293B]/90 to-[#0F172A]/95 backdrop-blur-xl border border-amber-500/30 rounded-3xl p-6 text-center shadow-2xl scale-100 transition-all duration-300 overflow-hidden"
+          >
+            {/* Decorative Golden Light/Glow */}
+            <div className="absolute -top-12 -left-12 w-24 h-24 bg-amber-500/20 rounded-full blur-2xl pointer-events-none" />
+            <div className="absolute -bottom-12 -right-12 w-24 h-24 bg-yellow-500/10 rounded-full blur-2xl pointer-events-none" />
+
+            {/* Premium Crown Icon Header */}
+            <div className="mx-auto w-16 h-16 bg-gradient-to-br from-amber-400 to-yellow-500 rounded-2xl flex items-center justify-center shadow-lg shadow-amber-500/20 mb-4 animate-bounce">
+              <Crown className="w-8 h-8 text-white fill-white" />
+            </div>
+
+            {/* Title */}
+            <h3 className="text-xl font-bold text-white mb-2 tracking-tight">
+              Premium İçerik 👑
+            </h3>
+
+            {/* Description */}
+            <p className="text-[#94A3B8] text-sm leading-relaxed mb-6 px-2">
+              700+ hikayeye ulaşmak için lütfen premium alın.
+            </p>
+
+            {/* Actions */}
+            <div className="flex flex-col gap-2.5">
+              <button
+                onClick={() => {
+                  setShowPremiumModal(false);
+                  onGoToPremium();
+                }}
+                className="w-full py-3 px-4 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-white font-bold text-sm rounded-xl shadow-lg shadow-amber-500/20 active:scale-98 transition-all duration-200 cursor-pointer"
+              >
+                Premium Al
+              </button>
+              <button
+                onClick={() => setShowPremiumModal(false)}
+                className="w-full py-3 px-4 bg-white/5 hover:bg-white/10 text-slate-300 font-semibold text-sm rounded-xl active:scale-98 transition-all duration-200 cursor-pointer"
+              >
+                İptal
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

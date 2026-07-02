@@ -7,8 +7,8 @@ android {
         applicationId "com.ingilizceoykum.app"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 14
-        versionName "2.11"
+        versionCode 15
+        versionName "2.12"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         aaptOptions {
              // Files and dirs to omit from the packaged assets dir, modified to accommodate modern web apps.
@@ -52,4 +52,9 @@ try {
     }
 } catch(Exception ignored) {
     logger.info("google-services.json not found, google-services plugin not applied. Push Notifications won't work")
+}
+
+// Force assets to be repackaged on every build to prevent stale WebView cache during development
+tasks.matching { it.name.startsWith('merge') && it.name.endsWith('Assets') }.all {
+    outputs.upToDateWhen { false }
 }
