@@ -110,7 +110,7 @@ export default function SplashScreen({ nativeLanguage }: SplashScreenProps) {
           <img 
             alt={nativeLanguage === 'tr' ? "İngilizce Öyküm App Icon" : "My English Story App Icon"} 
             className="w-32 h-32 rounded-[2rem] shadow-2xl relative z-20 border border-white/10 object-cover" 
-            src="/icon-512.png"
+            src="icon-512.png"
             onError={(e) => {
               e.currentTarget.src = 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=300&auto=format&fit=crop&q=80';
             }}

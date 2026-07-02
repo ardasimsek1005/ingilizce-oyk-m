@@ -1995,11 +1995,11 @@ export default function ProfileTab({
                 <div className="flex items-center gap-3 mb-4 p-2.5 rounded-2xl bg-[#FF6B6B]/10 dark:bg-[#FF6B6B]/15 border border-[#FF6B6B]/20 relative">
                   <div className="w-11 h-11 bg-white rounded-xl shadow-sm border border-gray-150 flex items-center justify-center p-1.5 overflow-hidden shrink-0">
                     <img 
-                      src="/icon-192.png" 
+                      src="icon-192.png" 
                       alt={nativeLanguage === 'tr' ? "İngilizce Öyküm Logo" : "My English Story Logo"} 
                       className="w-full h-full object-contain select-none rounded-lg"
                       onError={(e) => {
-                        (e.target as HTMLImageElement).src = 'assets/icon.png';
+                        (e.target as HTMLImageElement).src = 'icon-192.png';
                       }}
                     />
                   </div>
