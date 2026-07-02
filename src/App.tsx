@@ -2339,7 +2339,7 @@ export default function App() {
               </button>
               
               <p className="text-[10px] text-gray-500 mt-6 tracking-wider uppercase font-bold">
-                İngilizce Öyküm Sürüm 2.12 (v15)
+                İngilizce Öyküm Sürüm 2.13 (v16)
               </p>
             </div>
           </div>
