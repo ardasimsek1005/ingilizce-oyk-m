@@ -761,22 +761,10 @@ export async function runDailyReelFlow(): Promise<{ success: boolean; key?: stri
 
     console.log(`[Reels Flow] Selected next Reel: ${item.title} (${item.key})`);
 
-    // 3. Upload video to tmpfiles.org
-    console.log("[Reels Flow] Uploading Reels video to public temp host...");
-    const fileData = fs.readFileSync(videoPath);
-    const form = new FormData();
-    form.append("file", new Blob([fileData]), videoFile);
-
-    const uploadRes = await fetch("https://tmpfiles.org/api/v1/upload", {
-      method: "POST",
-      body: form
-    });
-    const uploadData = await uploadRes.json() as any;
-    if (uploadData.status !== "success" || !uploadData.data || !uploadData.data.url) {
-      throw new Error("Temporary file upload failed: " + JSON.stringify(uploadData));
-    }
-    const publicVideoUrl = uploadData.data.url.replace("tmpfiles.org/", "tmpfiles.org/dl/");
-    console.log(`[Reels Flow] Video uploaded. Public URL: ${publicVideoUrl}`);
+    // 3. Use self-hosted Render URL
+    const serverUrl = process.env.SERVER_PUBLIC_URL || "https://ingilizce-oyk-m.onrender.com";
+    const publicVideoUrl = `${serverUrl}/instagram_shares/videos/${videoFile}`;
+    console.log(`[Reels Flow] Using self-hosted video URL: ${publicVideoUrl}`);
 
     // 4. Generate caption
     const caption = `🎬 Sesli Kitap Özelliğiyle İngilizce Öğrenin! 📚\n\n` +

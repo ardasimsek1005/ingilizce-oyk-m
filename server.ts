@@ -1864,6 +1864,7 @@ RULES FOR MAXIMUM ${targetLangName.toUpperCase()} COHERENCE:
 
   // Serve public directory statically
   app.use("/public", express.static(path.join(process.cwd(), "public")));
+  app.use("/instagram_shares", express.static(path.join(process.cwd(), "instagram_shares")));
 
   // Serve daily Instagram image statically
   app.get("/api/instagram/daily-post.png", (req, res) => {
