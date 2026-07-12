@@ -1968,7 +1968,8 @@ RULES FOR MAXIMUM ${targetLangName.toUpperCase()} COHERENCE:
     }
 
     console.log("[Server API] Manual July Reels posting flow triggered.");
-    const result = await runDailyJulyReelFlow();
+    const bypass = req.query.bypass === "true";
+    const result = await runDailyJulyReelFlow(bypass);
     if (result.success) {
       return res.json({
         success: true,
