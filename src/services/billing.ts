@@ -57,6 +57,50 @@ export const initializeBillingStore = (
   if (isStoreInitialized) {
     console.log('Google Play Billing: Store zaten başlatılmış durumda.');
     globalSuccessCallback = onSuccess; // Callback'i güncelle
+    
+    try {
+      const { store, Platform } = CdvPurchase;
+      const product = store.get('premium_upgrade', Platform.GOOGLE_PLAY);
+      if (product && product.owned) {
+        const transaction = product.transactions?.[0] || product.transaction;
+        if (transaction) {
+          let actualTier: 'monthly' | 'yearly' | 'trial' = 'yearly';
+          const offerId = (transaction.offerId || '').toLowerCase();
+          if (offerId.includes('yearly') || offerId.includes('year') || offerId.includes('yillik')) {
+            actualTier = 'yearly';
+          } else if (offerId.includes('trial') || offerId.includes('deneme') || offerId.includes('3-gun') || offerId.includes('free')) {
+            actualTier = 'trial';
+          } else if (offerId.includes('monthly') || offerId.includes('month') || offerId.includes('aylik')) {
+            actualTier = 'monthly';
+          }
+
+          let expiryDateStr: string | undefined = undefined;
+          const rawExpiry = transaction.expirationDate || transaction.expiryDate;
+          if (rawExpiry) {
+            expiryDateStr = new Date(rawExpiry).toISOString();
+          } else {
+            const rawPurchase = transaction.purchaseDate || transaction.time || transaction.date;
+            if (rawPurchase) {
+              const pDate = new Date(rawPurchase);
+              if (actualTier === 'trial') {
+                pDate.setDate(pDate.getDate() + 3);
+              } else if (actualTier === 'monthly') {
+                pDate.setMonth(pDate.getMonth() + 1);
+              } else {
+                pDate.setFullYear(pDate.getFullYear() + 1);
+              }
+              expiryDateStr = pDate.toISOString();
+            }
+          }
+          console.log('Google Play Billing: Auto-syncing (already initialized) active subscription tier:', actualTier, 'expiry:', expiryDateStr);
+          if (globalSuccessCallback) {
+            globalSuccessCallback(actualTier, expiryDateStr);
+          }
+        }
+      }
+    } catch (err) {
+      console.error('Error during pre-initialized subscription check:', err);
+    }
     return;
   }
 
@@ -156,6 +200,53 @@ export const initializeBillingStore = (
         } else {
           currentOnStateChange('error', `Google Play Hatası: ${error.message || error}`);
         }
+      }
+    });
+
+    store.ready(() => {
+      console.log('Google Play Billing: Store ready.');
+      try {
+        const product = store.get('premium_upgrade', Platform.GOOGLE_PLAY);
+        if (product && product.owned) {
+          const transaction = product.transactions?.[0] || product.transaction;
+          if (transaction) {
+            let actualTier: 'monthly' | 'yearly' | 'trial' = 'yearly';
+            const offerId = (transaction.offerId || '').toLowerCase();
+            if (offerId.includes('yearly') || offerId.includes('year') || offerId.includes('yillik')) {
+              actualTier = 'yearly';
+            } else if (offerId.includes('trial') || offerId.includes('deneme') || offerId.includes('3-gun') || offerId.includes('free')) {
+              actualTier = 'trial';
+            } else if (offerId.includes('monthly') || offerId.includes('month') || offerId.includes('aylik')) {
+              actualTier = 'monthly';
+            }
+
+            let expiryDateStr: string | undefined = undefined;
+            const rawExpiry = transaction.expirationDate || transaction.expiryDate;
+            if (rawExpiry) {
+              expiryDateStr = new Date(rawExpiry).toISOString();
+            } else {
+              const rawPurchase = transaction.purchaseDate || transaction.time || transaction.date;
+              if (rawPurchase) {
+                const pDate = new Date(rawPurchase);
+                if (actualTier === 'trial') {
+                  pDate.setDate(pDate.getDate() + 3);
+                } else if (actualTier === 'monthly') {
+                  pDate.setMonth(pDate.getMonth() + 1);
+                } else {
+                  pDate.setFullYear(pDate.getFullYear() + 1);
+                }
+                expiryDateStr = pDate.toISOString();
+              }
+            }
+
+            console.log('Google Play Billing: Auto-syncing active subscription tier on store ready:', actualTier, 'expiry:', expiryDateStr);
+            if (globalSuccessCallback) {
+              globalSuccessCallback(actualTier, expiryDateStr);
+            }
+          }
+        }
+      } catch (err) {
+        console.error('Error during store.ready subscription check:', err);
       }
     });
 
