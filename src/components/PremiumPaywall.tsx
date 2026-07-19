@@ -338,7 +338,7 @@ export const PremiumPaywall: React.FC<PremiumPaywallProps> = ({
 
 
             <p className="text-[10px] leading-relaxed text-gray-400 text-left font-medium select-none">
-              {t('google_play_terms_desc', nativeLanguage).replace('{amount}', checkoutTier === 'monthly' ? prices.monthly : prices.yearlyTotal)}
+              {t('google_play_terms_desc', nativeLanguage).replace('{amount}', checkoutTier === 'yearly' ? prices.yearlyTotal : prices.monthly)}
             </p>
           </form>
 
