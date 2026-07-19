@@ -197,6 +197,7 @@ export default function ProfileTab({
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
   const [isDeletingAccount, setIsDeletingAccount] = useState(false);
   const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false);
+  const [isUpdateModalOpen, setIsUpdateModalOpen] = useState(false);
 
   // Referral states
   const [referredBy, setReferredBy] = useState<string>(() => localStorage.getItem('linguist_referred_by') || '');
@@ -1578,6 +1579,16 @@ export default function ProfileTab({
           >
             <span className="text-xs font-bold">{t('settings_privacy', nativeLanguage)}</span>
             <Shield className="w-4 h-4 text-emerald-500" />
+          </button>
+
+          <button
+            onClick={() => setIsUpdateModalOpen(true)}
+            className={`w-full flex items-center justify-between p-4 px-6 transition-colors group text-left cursor-pointer ${
+              isDarkMode ? 'hover:bg-[#121214] text-gray-200' : 'hover:bg-[#FFFBF0]'
+            }`}
+          >
+            <span className="text-xs font-bold">{t('settings_check_update', nativeLanguage)}</span>
+            <Globe className="w-4 h-4 text-blue-500 animate-pulse" />
           </button>
 
 
@@ -3193,6 +3204,59 @@ export default function ProfileTab({
                   className="px-6 py-2 bg-emerald-500 text-white rounded-xl text-xs font-bold hover:bg-emerald-600 transition-all cursor-pointer shadow-md shadow-emerald-500/20 font-headline-lg"
                 >
                   {t('btn_close', nativeLanguage)}
+                </button>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+
+      {/* CHECK UPDATE CONFIRMATION MODAL */}
+      <AnimatePresence>
+        {isUpdateModalOpen && (
+          <div className="fixed inset-0 z-50 bg-[#2D3436]/60 backdrop-blur-md flex items-center justify-center p-4 overflow-y-auto">
+            <motion.div
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              className={`max-w-sm w-full rounded-[28px] p-6 border-2 shadow-2xl flex flex-col transition-colors ${
+                isDarkMode ? 'bg-[#1A1A1E] border-[#2A2A30] text-white' : 'bg-white border-[#FFE66D] text-[#2D3436]'
+              }`}
+            >
+              <div className="flex items-center gap-3 mb-4 select-none">
+                <div className="w-10 h-10 rounded-full bg-blue-500/10 dark:bg-blue-500/20 flex items-center justify-center border border-blue-500/30 text-blue-500 shrink-0">
+                  <Globe className="w-5 h-5 animate-pulse" />
+                </div>
+                <h3 className="font-headline-lg text-lg font-bold tracking-tight">
+                  {t('update_confirm_title', nativeLanguage)}
+                </h3>
+              </div>
+
+              <p className={`text-xs mb-6 leading-relaxed ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                {t('update_confirm_desc', nativeLanguage)}
+              </p>
+
+              <div className="flex justify-end gap-3 font-headline-lg">
+                <button
+                  type="button"
+                  onClick={() => setIsUpdateModalOpen(false)}
+                  className={`px-4 py-2 border rounded-xl text-xs font-bold transition-all active:scale-95 cursor-pointer ${
+                    isDarkMode
+                      ? 'border-gray-800 text-gray-400 hover:bg-gray-850 bg-[#121214]'
+                      : 'border-gray-200 text-gray-500 hover:bg-gray-100 bg-white'
+                  }`}
+                >
+                  {t('btn_cancel', nativeLanguage)}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setIsUpdateModalOpen(false);
+                    window.open('https://play.google.com/store/apps/details?id=com.ingilizceoykum.app', '_system');
+                  }}
+                  className="px-5 py-2 bg-blue-500 text-white rounded-xl text-xs font-bold hover:bg-blue-600 transition-all active:scale-95 cursor-pointer shadow-md shadow-blue-500/20"
+                >
+                  {t('btn_check', nativeLanguage)}
                 </button>
               </div>
             </motion.div>

@@ -545,6 +545,32 @@ export const TRANSLATIONS: Record<string, Record<LanguageCode, string>> = {
     tr: 'Gizlilik Politikası', en: 'Privacy Policy', es: 'Política de privacidad', fr: 'Politique de confidentialité', de: 'Datenschutzerklärung',
     it: 'Informativa sulla privacy', pt: 'Política de Privacidade', ru: 'Политикой конфиденциальности', ar: 'سياسة الخصوصية', zh: '隐私政策', hi: 'गोपनीयता नीति', ja: 'プライバシーポリシー'
   },
+  settings_check_update: {
+    tr: 'Güncellemeleri Denetle', en: 'Check for Updates', es: 'Buscar actualizaciones', fr: 'Rechercher des updates', de: 'Nach Updates suchen',
+    it: 'Controlla aggiornamenti', pt: 'Verificar Atualizações', ru: 'Проверить обновления', ar: 'التحقق من وجود تحديثات', zh: '检查更新', hi: 'अपडेट की जांच करें', ja: 'アップデートを確認'
+  },
+  update_confirm_title: {
+    tr: 'Güncelleme Denetlensin mi?', en: 'Check for Updates?', es: '¿Buscar actualizaciones?', fr: 'Vérifier les mises à jour ?', de: 'Nach Updates suchen?',
+    it: 'Controllare gli aggiornamenti?', pt: 'Verificar atualizações?', ru: 'Проверить обновления?', ar: 'التحقق من وجود تحديثات؟', zh: '检查更新？', hi: 'अपडेट की जांच करें?', ja: 'アップデートを確認しますか？'
+  },
+  update_confirm_desc: {
+    tr: 'En son güncellemeleri kontrol etmek ve uygulamayı elle güncellemek için Google Play Store sayfasına yönlendirileceksiniz. Devam etmek istiyor musunuz?',
+    en: 'You will be redirected to the Google Play Store to check for the latest updates and update the app manually. Do you want to continue?',
+    es: 'Se le redireccionará a Google Play Store para buscar las últimas actualizaciones y actualizar la aplicación manualmente. ¿Desea continuar?',
+    fr: 'Vous serez redirigé vers le Google Play Store pour rechercher les dernières mises à jour et mettre à jour l\'application manuellement. Voulez-vous continuer ?',
+    de: 'Sie werden zum Google Play Store weitergeleitet, um nach den neuesten Updates zu suchen und die App manuell zu aktualisieren. Möchten Sie fortfahren?',
+    it: 'Verrai reindirizzato al Google Play Store per verificare gli ultimi aggiornamenti e aggiornare l\'app manualmente. Vuoi continuare?',
+    pt: 'Você será redirecionado para a Google Play Store para verificar as últimas atualizações e atualizar o aplicativo manualmente. Deseja continuar?',
+    ru: 'Вы будете перенаправлены в Google Play Store для проверки последних обновлений и ручного обновления приложения. Продолжить?',
+    ar: 'سيتم إعادة توجيهك إلى متجر Google Play للتحقق من آخر التحديثات وتحديث التطبيق يدويًا. هل تريد الاستمرار؟',
+    zh: '您将被重定向到 Google Play 商店以检查最新更新并手动更新应用。是否继续？',
+    hi: 'नवीनतम अपडेट की जांच करने और ऐप को मैन्युअल रूप से अपडेट करने के लिए आपको Google Play Store पर रीडायरेक्ट किया जाएगा। क्या आप जारी रखना चाहते हैं?',
+    ja: '最新のアップデートを確認し、アプリを手動で更新するため、Google Playストアに移動します。続行しますか？'
+  },
+  btn_check: {
+    tr: 'Denetle', en: 'Check', es: 'Comprobar', fr: 'Vérifier', de: 'Prüfen',
+    it: 'Verifica', pt: 'Verificar', ru: 'Проверить', ar: 'تحقق', zh: '检查', hi: 'जांचें', ja: '確認する'
+  },
   settings_delete: {
     tr: 'Hesabımı ve Verilerimi Sil', en: 'Delete Account & Data', es: 'Eliminar cuenta y datos', fr: 'Supprimer le compte et les données', de: 'Konto & Daten löschen',
     it: 'Elimina account e dati', pt: 'Excluir Conta e Dados', ru: 'Удалить аккаунт и данные', ar: 'حذف الحساب والبيانات', zh: '删除帐户和数据', hi: 'खाता और डेटा हटाएं', ja: 'アカウントとデータを削除'
