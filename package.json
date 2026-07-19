@@ -1,7 +1,7 @@
 {
   "name": "ingilizce-oyküm",
   "private": true,
-  "version": "2.27",
+  "version": "2.28",
   "engines": {
     "node": ">=20.0.0"
   },
