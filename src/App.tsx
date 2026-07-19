@@ -2113,16 +2113,21 @@ export default function App() {
     triggerCloudSync();
   };
 
-  const handleSubscribe = (tier: 'monthly' | 'yearly' | 'trial') => {
-    const d = new Date();
-    if (tier === 'trial') {
-      d.setDate(d.getDate() + 3);
-    } else if (tier === 'monthly') {
-      d.setMonth(d.getMonth() + 1);
+  const handleSubscribe = (tier: 'monthly' | 'yearly' | 'trial', customExpiryDate?: string) => {
+    let expiry: string;
+    if (customExpiryDate) {
+      expiry = customExpiryDate;
     } else {
-      d.setFullYear(d.getFullYear() + 1);
+      const d = new Date();
+      if (tier === 'trial') {
+        d.setDate(d.getDate() + 3);
+      } else if (tier === 'monthly') {
+        d.setMonth(d.getMonth() + 1);
+      } else {
+        d.setFullYear(d.getFullYear() + 1);
+      }
+      expiry = d.toISOString();
     }
-    const expiry = d.toISOString();
 
     setStats(prev => ({
       ...prev,
@@ -2140,8 +2145,8 @@ export default function App() {
 
   // Initialize In-App Purchases (Google Play Billing)
   useEffect(() => {
-    initializeBillingStore((tier) => {
-      handleSubscribe(tier || 'yearly');
+    initializeBillingStore((tier, expiryDate) => {
+      handleSubscribe(tier || 'yearly', expiryDate);
     });
   }, []);
 

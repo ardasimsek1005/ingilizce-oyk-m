@@ -24,7 +24,7 @@ export interface PurchaseResult {
 
 // Module-level state tracking
 let currentOnStateChange: ((status: 'processing' | 'success' | 'error', errorMsg?: string) => void) | null = null;
-let globalSuccessCallback: ((tier?: 'monthly' | 'yearly' | 'trial') => void) | null = null;
+let globalSuccessCallback: ((tier?: 'monthly' | 'yearly' | 'trial', expiryDate?: string) => void) | null = null;
 let activePurchaseTier: 'monthly' | 'yearly' | 'trial' | null = null;
 let isStoreInitialized = false;
 let globalPricingCallback: (() => void) | null = null;
@@ -43,7 +43,7 @@ export const isNativeAndroid = (): boolean => {
  * Uygulama açılışında bir kez çağrılmalıdır.
  */
 export const initializeBillingStore = (
-  onSuccess: (tier?: 'monthly' | 'yearly' | 'trial') => void
+  onSuccess: (tier?: 'monthly' | 'yearly' | 'trial', expiryDate?: string) => void
 ): void => {
   if (typeof window === 'undefined') return;
   const win = window as any;
@@ -104,7 +104,30 @@ export const initializeBillingStore = (
               tier = 'monthly';
             }
           }
-          globalSuccessCallback(tier);
+
+          let expiryDateStr: string | undefined = undefined;
+          const transaction = receipt.transactions?.[0];
+          if (transaction) {
+            const rawExpiry = transaction.expirationDate || transaction.expiryDate;
+            if (rawExpiry) {
+              expiryDateStr = new Date(rawExpiry).toISOString();
+            } else {
+              const rawPurchase = transaction.purchaseDate || transaction.time || transaction.date;
+              if (rawPurchase) {
+                const pDate = new Date(rawPurchase);
+                if (tier === 'trial') {
+                  pDate.setDate(pDate.getDate() + 3);
+                } else if (tier === 'monthly') {
+                  pDate.setMonth(pDate.getMonth() + 1);
+                } else {
+                  pDate.setFullYear(pDate.getFullYear() + 1);
+                }
+                expiryDateStr = pDate.toISOString();
+              }
+            }
+          }
+
+          globalSuccessCallback(tier, expiryDateStr);
         }
         
         // Aktif ödeme penceresini başarıyla kapat
@@ -335,7 +358,29 @@ export const restorePlayStorePurchases = async (
             } else if (offerId.includes('monthly') || offerId.includes('month') || offerId.includes('aylik')) {
               restoredTier = 'monthly';
             }
-            globalSuccessCallback(restoredTier);
+
+            let expiryDateStr: string | undefined = undefined;
+            if (transaction) {
+              const rawExpiry = transaction.expirationDate || transaction.expiryDate;
+              if (rawExpiry) {
+                expiryDateStr = new Date(rawExpiry).toISOString();
+              } else {
+                const rawPurchase = transaction.purchaseDate || transaction.time || transaction.date;
+                if (rawPurchase) {
+                  const pDate = new Date(rawPurchase);
+                  if (restoredTier === 'trial') {
+                    pDate.setDate(pDate.getDate() + 3);
+                  } else if (restoredTier === 'monthly') {
+                    pDate.setMonth(pDate.getMonth() + 1);
+                  } else {
+                    pDate.setFullYear(pDate.getFullYear() + 1);
+                  }
+                  expiryDateStr = pDate.toISOString();
+                }
+              }
+            }
+
+            globalSuccessCallback(restoredTier, expiryDateStr);
           }
           onStateChange('success');
         } else {
