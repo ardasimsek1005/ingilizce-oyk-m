@@ -17,7 +17,7 @@ interface QuizViewProps {
   initiallyShowPaywall?: boolean;
   onAnswerCorrect: () => void;
   onAnswerIncorrect: () => void;
-  onSubscribe: (tier: 'monthly' | 'yearly') => void;
+  onSubscribe: (tier: 'monthly' | 'yearly' | 'trial') => void;
   onBackToVocabulary: () => void;
   onGoToLibrary: () => void;
   syncTrigger: () => void;
@@ -1536,7 +1536,7 @@ export default function QuizView({
         if (checkoutTier === 'trial') {
           localStorage.setItem('linguist_trial_used', 'true');
         }
-        onSubscribe(checkoutTier === 'trial' ? 'monthly' : checkoutTier);
+        onSubscribe(checkoutTier);
         syncTrigger();
 
         setTimeout(() => {

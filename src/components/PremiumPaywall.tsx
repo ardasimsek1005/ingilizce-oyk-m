@@ -11,7 +11,7 @@ interface PremiumPaywallProps {
   nativeLanguage: LanguageCode;
   isDarkMode: boolean;
   onClose: () => void;
-  onSubscribe: (tier: 'monthly' | 'yearly') => void;
+  onSubscribe: (tier: 'monthly' | 'yearly' | 'trial') => void;
   syncTrigger: () => void;
 }
 
@@ -110,7 +110,7 @@ export const PremiumPaywall: React.FC<PremiumPaywallProps> = ({
         if (checkoutTier === 'trial') {
           localStorage.setItem('linguist_trial_used', 'true');
         }
-        onSubscribe(checkoutTier === 'trial' ? 'monthly' : checkoutTier);
+        onSubscribe(checkoutTier);
         syncTrigger();
 
         setTimeout(() => {

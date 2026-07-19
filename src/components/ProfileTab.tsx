@@ -983,6 +983,8 @@ export default function ProfileTab({
                   const purchaseDate = new Date(expiryDate);
                   if (stats.premiumType === 'yearly') {
                     purchaseDate.setFullYear(purchaseDate.getFullYear() - 1);
+                  } else if (stats.premiumType === 'trial') {
+                    purchaseDate.setDate(purchaseDate.getDate() - 3);
                   } else {
                     purchaseDate.setMonth(purchaseDate.getMonth() - 1);
                   }

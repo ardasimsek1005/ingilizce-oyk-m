@@ -2113,9 +2113,11 @@ export default function App() {
     triggerCloudSync();
   };
 
-  const handleSubscribe = (tier: 'monthly' | 'yearly') => {
+  const handleSubscribe = (tier: 'monthly' | 'yearly' | 'trial') => {
     const d = new Date();
-    if (tier === 'monthly') {
+    if (tier === 'trial') {
+      d.setDate(d.getDate() + 3);
+    } else if (tier === 'monthly') {
       d.setMonth(d.getMonth() + 1);
     } else {
       d.setFullYear(d.getFullYear() + 1);

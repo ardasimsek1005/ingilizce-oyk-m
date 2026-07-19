@@ -24,7 +24,8 @@ export interface PurchaseResult {
 
 // Module-level state tracking
 let currentOnStateChange: ((status: 'processing' | 'success' | 'error', errorMsg?: string) => void) | null = null;
-let globalSuccessCallback: ((tier?: 'monthly' | 'yearly') => void) | null = null;
+let globalSuccessCallback: ((tier?: 'monthly' | 'yearly' | 'trial') => void) | null = null;
+let activePurchaseTier: 'monthly' | 'yearly' | 'trial' | null = null;
 let isStoreInitialized = false;
 let globalPricingCallback: (() => void) | null = null;
 
@@ -42,7 +43,7 @@ export const isNativeAndroid = (): boolean => {
  * Uygulama açılışında bir kez çağrılmalıdır.
  */
 export const initializeBillingStore = (
-  onSuccess: (tier?: 'monthly' | 'yearly') => void
+  onSuccess: (tier?: 'monthly' | 'yearly' | 'trial') => void
 ): void => {
   if (typeof window === 'undefined') return;
   const win = window as any;
@@ -88,7 +89,22 @@ export const initializeBillingStore = (
         
         // Premium durumunu global olarak güncelle
         if (globalSuccessCallback) {
-          globalSuccessCallback('yearly');
+          let tier: 'monthly' | 'yearly' | 'trial' = 'yearly';
+          const savedTier = activePurchaseTier || localStorage.getItem('linguist_active_purchase_tier');
+          if (savedTier === 'monthly' || savedTier === 'yearly' || savedTier === 'trial') {
+            tier = savedTier;
+          } else {
+            const transaction = receipt.transactions?.[0];
+            const offerId = (transaction?.offerId || '').toLowerCase();
+            if (offerId.includes('yearly') || offerId.includes('year') || offerId.includes('yillik')) {
+              tier = 'yearly';
+            } else if (offerId.includes('trial') || offerId.includes('deneme') || offerId.includes('3-gun') || offerId.includes('free')) {
+              tier = 'trial';
+            } else if (offerId.includes('monthly') || offerId.includes('month') || offerId.includes('aylik')) {
+              tier = 'monthly';
+            }
+          }
+          globalSuccessCallback(tier);
         }
         
         // Aktif ödeme penceresini başarıyla kapat
@@ -138,6 +154,10 @@ export const purchasePlayStoreSubscription = async (
   tier: 'monthly' | 'yearly' | 'trial',
   onStateChange: (status: 'processing' | 'success' | 'error', errorMsg?: string) => void
 ): Promise<void> => {
+  activePurchaseTier = tier;
+  if (typeof window !== 'undefined') {
+    localStorage.setItem('linguist_active_purchase_tier', tier);
+  }
   
   const productId = 'premium_upgrade';
   const win = window as any;
@@ -305,7 +325,17 @@ export const restorePlayStorePurchases = async (
         if (product && product.owned) {
           console.log('Abonelik doğrulandı ve geri yüklendi.');
           if (globalSuccessCallback) {
-            globalSuccessCallback('yearly');
+            let restoredTier: 'monthly' | 'yearly' | 'trial' = 'yearly';
+            const transaction = product.transactions?.[0] || product.transaction;
+            const offerId = (transaction?.offerId || '').toLowerCase();
+            if (offerId.includes('yearly') || offerId.includes('year') || offerId.includes('yillik')) {
+              restoredTier = 'yearly';
+            } else if (offerId.includes('trial') || offerId.includes('deneme') || offerId.includes('3-gun') || offerId.includes('free')) {
+              restoredTier = 'trial';
+            } else if (offerId.includes('monthly') || offerId.includes('month') || offerId.includes('aylik')) {
+              restoredTier = 'monthly';
+            }
+            globalSuccessCallback(restoredTier);
           }
           onStateChange('success');
         } else {
@@ -324,7 +354,8 @@ export const restorePlayStorePurchases = async (
     onStateChange('processing');
     setTimeout(() => {
       if (globalSuccessCallback) {
-        globalSuccessCallback('yearly');
+        const saved = localStorage.getItem('linguist_active_purchase_tier') as any;
+        globalSuccessCallback(saved || 'yearly');
       }
       onStateChange('success');
     }, 1500);
