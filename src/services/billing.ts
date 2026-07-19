@@ -135,7 +135,7 @@ export const initializeBillingStore = (
  * @param onStateChange Ödeme durumu güncellemelerini takip eden callback (işleniyor, başarılı, başarısız vb.)
  */
 export const purchasePlayStoreSubscription = async (
-  tier: 'monthly' | 'yearly',
+  tier: 'monthly' | 'yearly' | 'trial',
   onStateChange: (status: 'processing' | 'success' | 'error', errorMsg?: string) => void
 ): Promise<void> => {
   
@@ -144,55 +144,123 @@ export const purchasePlayStoreSubscription = async (
   const CdvPurchase = win.CdvPurchase;
 
   // DURUM 1: Yerel Android Cihaz (Capacitor / Cordova Entegrasyonu)
-  if (isNativeAndroid() && CdvPurchase && CdvPurchase.store && typeof CdvPurchase.store.order === 'function') {
-    onStateChange('processing');
-    currentOnStateChange = onStateChange;
-    
-    try {
-      const store = CdvPurchase.store;
+  if (isNativeAndroid()) {
+    if (CdvPurchase && CdvPurchase.store && typeof CdvPurchase.store.order === 'function') {
+      onStateChange('processing');
+      currentOnStateChange = onStateChange;
+      
+      try {
+        const store = CdvPurchase.store;
 
-      // Eğer store henüz başlatılmadıysa tekrar dene
-      if (!isStoreInitialized) {
-        if (globalSuccessCallback) {
-          initializeBillingStore(globalSuccessCallback);
-        } else {
-          initializeBillingStore(() => {});
+        // Eğer store henüz başlatılmadıysa tekrar dene
+        if (!isStoreInitialized) {
+          if (globalSuccessCallback) {
+            initializeBillingStore(globalSuccessCallback);
+          } else {
+            initializeBillingStore(() => {});
+          }
         }
-      }
 
-      const product = store.get(productId, CdvPurchase.Platform.GOOGLE_PLAY);
+        const product = store.get(productId, CdvPurchase.Platform.GOOGLE_PLAY);
 
-      if (product && product.canPurchase) {
-        // v13 abonelik yapısında teklif (offer) kimliği "urun_id@plan_id" formatındadır.
-        const offerId = `${productId}@${tier}`; // premium_upgrade@monthly veya premium_upgrade@yearly
-        console.log('Sipariş başlatılıyor:', offerId);
-        
-        const offer = product.getOffer(offerId) || product.getOffer() || product;
-        
-        // Siparişi ver ve promise sonucunu kontrol et
-        store.order(offer).then((error: any) => {
-          if (error) {
-            console.error('store.order hata döndü:', error);
-            if (error.code === CdvPurchase.ErrorCode.PAYMENT_CANCELLED) {
-              onStateChange('error', 'Ödeme kullanıcı tarafından iptal edildi.');
-            } else {
-              onStateChange('error', `Google Play Hatası: ${error.message || error}`);
+        if (product && product.canPurchase) {
+          let offer: any = null;
+
+          if (product.offers && product.offers.length > 0) {
+            if (tier === 'trial') {
+              // 1. Doğrudan Google Play Console'da oluşturduğunuz "3-gun-deneme" teklif kimliğini ara
+              offer = product.offers.find((o: any) => o.id === 'premium_upgrade@3-gun-deneme');
+
+              if (!offer) {
+                // Alternatif olarak isminde "deneme", "3-gun" veya "trial" geçen teklif ara
+                offer = product.offers.find((o: any) => {
+                  const id = o.id.toLowerCase();
+                  return id.includes('3-gun') || id.includes('deneme') || id.includes('trial') || id.includes('free');
+                });
+              }
+
+              if (!offer) {
+                // Ücretsiz deneme içeren (paymentMode === 2 veya priceMicros === 0 olan) herhangi bir teklifi bul
+                offer = product.offers.find((o: any) => 
+                  o.pricingPhases?.some((phase: any) => phase.paymentMode === 2 || phase.priceMicros === 0)
+                );
+              }
+              
+              if (!offer) {
+                // En kötü ihtimalle aylık planı seç
+                const monthlyOffers = product.offers.filter((o: any) => {
+                  const id = o.id.toLowerCase();
+                  return id.includes('monthly') || id.includes('month') || id.includes('aylik');
+                });
+                offer = monthlyOffers[0] || product.getOffer();
+              }
+            } else if (tier === 'monthly') {
+              // Standart aylık plan (teklif kimliği doğrudan "premium_upgrade@monthly" olanı bulur)
+              offer = product.offers.find((o: any) => o.id === 'premium_upgrade@monthly');
+
+              if (!offer) {
+                const monthlyOffers = product.offers.filter((o: any) => {
+                  const id = o.id.toLowerCase();
+                  return id.includes('monthly') || id.includes('month') || id.includes('aylik');
+                });
+                // Deneme süresi içermeyen standart teklifi seç
+                offer = monthlyOffers.find((o: any) => 
+                  !o.pricingPhases?.some((phase: any) => phase.paymentMode === 2 || phase.priceMicros === 0)
+                ) || monthlyOffers[0];
+              }
+            } else if (tier === 'yearly') {
+              // Standart yıllık plan (teklif kimliği doğrudan "premium_upgrade@yearly" olanı bulur)
+              offer = product.offers.find((o: any) => o.id === 'premium_upgrade@yearly');
+
+              if (!offer) {
+                const yearlyOffers = product.offers.filter((o: any) => {
+                  const id = o.id.toLowerCase();
+                  return id.includes('yearly') || id.includes('year') || id.includes('yillik') || id.includes('annual');
+                });
+                // Deneme süresi içermeyen standart teklifi seç
+                offer = yearlyOffers.find((o: any) => 
+                  !o.pricingPhases?.some((phase: any) => phase.paymentMode === 2 || phase.priceMicros === 0)
+                ) || yearlyOffers[0];
+              }
             }
           }
-        }).catch((err: any) => {
-          console.error('store.order catch hatası:', err);
-          onStateChange('error', `Sipariş başlatılamadı: ${err?.message || err}`);
-        });
-      } else {
-        console.warn('Google Play ürünü hazır değil veya satın alınamaz durumda. Simülasyon kullanılıyor.');
-        simulatePlayStorePurchase(onStateChange);
+
+          // Eğer hala teklif belirlenemediyse eski usul id eşleştirmesine düş
+          if (!offer) {
+            const basePlanOfferId = `${productId}@${tier === 'trial' ? 'monthly' : tier}`;
+            offer = product.getOffer(basePlanOfferId) || product.getOffer();
+          }
+
+          console.log('Sipariş başlatılıyor:', offer.id || offer);
+          
+          // Siparişi ver ve promise sonucunu kontrol et
+          store.order(offer).then((error: any) => {
+            if (error) {
+              console.error('store.order hata döndü:', error);
+              if (error.code === CdvPurchase.ErrorCode.PAYMENT_CANCELLED) {
+                onStateChange('error', 'Ödeme kullanıcı tarafından iptal edildi.');
+              } else {
+                onStateChange('error', `Google Play Hatası: ${error.message || error}`);
+              }
+            }
+          }).catch((err: any) => {
+            console.error('store.order catch hatası:', err);
+            onStateChange('error', `Sipariş başlatılamadı: ${err?.message || err}`);
+          });
+        } else {
+          console.warn('Google Play ürünü hazır değil veya satın alınamaz durumda.');
+          onStateChange('error', 'Google Play ödeme servisi şu an hazır değil veya ürün bulunamadı. Lütfen internetinizi kontrol edip birkaç saniye sonra tekrar deneyin.');
+        }
+      } catch (e: any) {
+        console.error('IAP Hatası: ', e);
+        onStateChange('error', `Başlatma Hatası: ${e?.message || e}`);
       }
-    } catch (e: any) {
-      console.error('IAP Hatası: ', e);
-      onStateChange('error', `Başlatma Hatası: ${e?.message || e}`);
+    } else {
+      // Eklenti yüklü değil veya henüz başlatılamadı
+      onStateChange('error', 'Google Play Store bağlantısı kurulamadı. Lütfen Google Play Hizmetlerini ve internetinizi kontrol edip tekrar deneyin.');
     }
   } 
-  // DURUM 2: Web Tarayıcı Geliştirme Ortamı veya eklenti yüklenmemiş durum (Simülasyon Modu)
+  // DURUM 2: Web Tarayıcı Geliştirme Ortamı (Simülasyon Modu)
   else {
     simulatePlayStorePurchase(onStateChange);
   }
@@ -222,30 +290,34 @@ export const restorePlayStorePurchases = async (
   const win = window as any;
   const CdvPurchase = win.CdvPurchase;
 
-  if (isNativeAndroid() && CdvPurchase && CdvPurchase.store) {
-    onStateChange('processing');
-    try {
-      const store = CdvPurchase.store;
-      
-      console.log('Satın almalar geri yükleniyor (store.update)...');
-      // store.update() Google Play Store'daki güncel makbuzları ve abonelik durumunu yeniler
-      await store.update();
-      
-      const product = store.get('premium_upgrade', CdvPurchase.Platform.GOOGLE_PLAY);
-      
-      if (product && product.owned) {
-        console.log('Abonelik doğrulandı ve geri yüklendi.');
-        if (globalSuccessCallback) {
-          globalSuccessCallback('yearly');
+  if (isNativeAndroid()) {
+    if (CdvPurchase && CdvPurchase.store) {
+      onStateChange('processing');
+      try {
+        const store = CdvPurchase.store;
+        
+        console.log('Satın almalar geri yükleniyor (store.update)...');
+        // store.update() Google Play Store'daki güncel makbuzları ve abonelik durumunu yeniler
+        await store.update();
+        
+        const product = store.get('premium_upgrade', CdvPurchase.Platform.GOOGLE_PLAY);
+        
+        if (product && product.owned) {
+          console.log('Abonelik doğrulandı ve geri yüklendi.');
+          if (globalSuccessCallback) {
+            globalSuccessCallback('yearly');
+          }
+          onStateChange('success');
+        } else {
+          console.log('Geri yükleme: Aktif abonelik bulunamadı.');
+          onStateChange('error', 'Aktif bir abonelik bulunamadı.');
         }
-        onStateChange('success');
-      } else {
-        console.log('Geri yükleme: Aktif abonelik bulunamadı.');
-        onStateChange('error', 'Aktif bir abonelik bulunamadı.');
+      } catch (e: any) {
+        console.error('Geri yükleme hatası: ', e);
+        onStateChange('error', `Geri Yükleme Hatası: ${e?.message || e}`);
       }
-    } catch (e: any) {
-      console.error('Geri yükleme hatası: ', e);
-      onStateChange('error', `Geri Yükleme Hatası: ${e?.message || e}`);
+    } else {
+      onStateChange('error', 'Google Play Store bağlantısı kurulamadı. Lütfen Google Play Hizmetlerini ve internetinizi kontrol edip tekrar deneyin.');
     }
   } else {
     // Simülasyon (Web) ortamında geri yükleme testi
@@ -274,7 +346,34 @@ export interface LocalizedPrices {
   yearlyMonthly: string;
   yearlyTotal: string;
   yearlyOriginalTotal: string;
+  hasYearlyTrial?: boolean;
+  yearlyTrialPeriodLabel?: string;
+  hasMonthlyTrial?: boolean;
+  monthlyTrialPeriodLabel?: string;
 }
+
+/**
+ * ISO 8601 formatındaki ödeme dönemini yerel dile çevirir (örn. P3D -> 3 Gün, P1W -> 1 Hafta)
+ */
+const parseBillingPeriod = (period: string, lang: string): string => {
+  if (!period) return '';
+  const match = period.match(/^P(\d+)([DWMY])$/);
+  if (!match) return '';
+  const amount = parseInt(match[1], 10);
+  const unit = match[2];
+  
+  const isTr = lang === 'tr';
+  if (unit === 'D') {
+    return isTr ? `${amount} Gün` : `${amount} Day${amount > 1 ? 's' : ''}`;
+  } else if (unit === 'W') {
+    return isTr ? `${amount} Hafta` : `${amount} Week${amount > 1 ? 's' : ''}`;
+  } else if (unit === 'M') {
+    return isTr ? `${amount} Ay` : `${amount} Month${amount > 1 ? 's' : ''}`;
+  } else if (unit === 'Y') {
+    return isTr ? `${amount} Yıl` : `${amount} Year${amount > 1 ? 's' : ''}`;
+  }
+  return '';
+};
 
 /**
  * Google Play Store'dan gelen güncel ve yerelleştirilmiş fiyat bilgilerini çeker.
@@ -295,14 +394,33 @@ export const getLocalizedPrices = (): LocalizedPrices | null => {
       return null;
     }
     
-    // Aylık abonelik teklifi (premium_upgrade@monthly) veya varsayılan teklif
-    const monthlyOffer = product.getOffer('premium_upgrade@monthly') || product.getOffer();
-    const monthlyPhase = monthlyOffer?.pricingPhases?.[0];
+    // Teklif bulmayı daha esnek hale getiren yardımcı fonksiyon
+    const getPlanOffer = (type: 'monthly' | 'yearly') => {
+      if (!product.offers || product.offers.length === 0) return product.getOffer();
+      const exactId = `premium_upgrade@${type}`;
+      const exact = product.offers.find((o: any) => o.id === exactId);
+      if (exact) return exact;
+      
+      const keywords = type === 'yearly' 
+        ? ['yearly', 'year', 'yillik', 'annual'] 
+        : ['monthly', 'month', 'aylik'];
+      const matched = product.offers.find((o: any) => keywords.some(k => o.id.toLowerCase().includes(k)));
+      return matched || product.getOffer();
+    };
+
+    const monthlyOffer = getPlanOffer('monthly');
+    const yearlyOffer = getPlanOffer('yearly');
+    
+    // Teklif içindeki asıl tekrarlayan (recurring) ödeme aşamasını bulan yardımcı fonksiyon
+    const getRecurringPhase = (offer: any) => {
+      if (!offer || !offer.pricingPhases || offer.pricingPhases.length === 0) return null;
+      return offer.pricingPhases.find((p: any) => p.paymentMode === 0 || p.priceMicros > 0) || offer.pricingPhases[offer.pricingPhases.length - 1];
+    };
+
+    const monthlyPhase = getRecurringPhase(monthlyOffer);
     const monthlyPriceFormatted = monthlyPhase?.formattedPrice;
     
-    // Yıllık abonelik teklifi (premium_upgrade@yearly) veya varsayılan teklif
-    const yearlyOffer = product.getOffer('premium_upgrade@yearly') || product.getOffer();
-    const yearlyPhase = yearlyOffer?.pricingPhases?.[0];
+    const yearlyPhase = getRecurringPhase(yearlyOffer);
     const yearlyPriceFormatted = yearlyPhase?.formattedPrice;
     
     if (monthlyPriceFormatted && yearlyPriceFormatted && monthlyPhase && yearlyPhase) {
@@ -326,11 +444,57 @@ export const getLocalizedPrices = (): LocalizedPrices | null => {
       const originalTotal = originalTotalMicros / 1000000;
       const originalTotalFormatted = formatter.format(originalTotal);
       
+      // Deneme sürümü (Free Trial) tespiti ve ayrıştırılması
+      let hasYearlyTrial = false;
+      let yearlyTrialPeriodLabel = '';
+      let hasMonthlyTrial = false;
+      let monthlyTrialPeriodLabel = '';
+      
+      const lang = win.navigator.language?.split('-')[0] || 'tr';
+
+      if (product.offers && product.offers.length > 0) {
+        // Yıllık deneme kontrolü (tüm yıllık teklifler içinde deneme aşaması arar)
+        const yearlyOffers = product.offers.filter((o: any) => {
+          const id = o.id.toLowerCase();
+          return id.includes('yearly') || id.includes('year') || id.includes('yillik') || id.includes('annual');
+        });
+        const yearlyTrialOffer = yearlyOffers.find((o: any) => 
+          o.pricingPhases?.some((phase: any) => phase.paymentMode === 2 || phase.priceMicros === 0)
+        );
+        if (yearlyTrialOffer) {
+          hasYearlyTrial = true;
+          const trialPhase = yearlyTrialOffer.pricingPhases.find((phase: any) => phase.paymentMode === 2 || phase.priceMicros === 0);
+          if (trialPhase?.billingPeriod) {
+            yearlyTrialPeriodLabel = parseBillingPeriod(trialPhase.billingPeriod, lang);
+          }
+        }
+
+        // Aylık deneme kontrolü (tüm aylık teklifler içinde deneme aşaması arar)
+        const monthlyOffers = product.offers.filter((o: any) => {
+          const id = o.id.toLowerCase();
+          return id.includes('monthly') || id.includes('month') || id.includes('aylik');
+        });
+        const monthlyTrialOffer = monthlyOffers.find((o: any) => 
+          o.pricingPhases?.some((phase: any) => phase.paymentMode === 2 || phase.priceMicros === 0)
+        );
+        if (monthlyTrialOffer) {
+          hasMonthlyTrial = true;
+          const trialPhase = monthlyTrialOffer.pricingPhases.find((phase: any) => phase.paymentMode === 2 || phase.priceMicros === 0);
+          if (trialPhase?.billingPeriod) {
+            monthlyTrialPeriodLabel = parseBillingPeriod(trialPhase.billingPeriod, lang);
+          }
+        }
+      }
+      
       return {
         monthly: monthlyPriceFormatted,
         yearlyMonthly: yearlyMonthlyFormatted,
         yearlyTotal: yearlyPriceFormatted,
         yearlyOriginalTotal: originalTotalFormatted,
+        hasYearlyTrial,
+        yearlyTrialPeriodLabel: yearlyTrialPeriodLabel || '3 Gün',
+        hasMonthlyTrial,
+        monthlyTrialPeriodLabel: monthlyTrialPeriodLabel || '3 Gün'
       };
     }
   } catch (e) {

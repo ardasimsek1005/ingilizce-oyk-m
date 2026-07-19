@@ -13,4 +13,6 @@ users_data.json
 scratch/
 __pycache__/
 *.apk
+*.aab
+*.zip
 

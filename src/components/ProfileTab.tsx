@@ -5,7 +5,7 @@ import { INITIAL_BADGES, LIBRARY_UNIQUE_WORDS_COUNT } from '../data';
 import { Award, Flame, BookOpen, Clock, Trophy, Share2, Sparkles, TrendingUp, ChevronRight, CheckCircle2, ShieldAlert, BadgeCheck, Zap, Library, Volume2, Crown, X, RefreshCw, Check, Edit2, Camera, Save, Copy, Facebook, Send, MessageCircle, Mail, Link2, QrCode, MessageSquare, Eye, EyeOff, Plus, Heart, Trash2, Shield, Puzzle, Search, Globe } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { AVATAR_OPTIONS } from '../avatar_assets';
-import { SUPPORTED_LANGUAGES, LanguageCode, t, getDayTranslation, getLocalizedUsername } from '../i18n';
+import { SUPPORTED_LANGUAGES, LanguageCode, t, getDayTranslation, getLocalizedUsername, isGuestUsername } from '../i18n';
 
 interface ProfileTabProps {
   stats: UserStats;
@@ -520,7 +520,7 @@ export default function ProfileTab({
 
   // Profile Edit states
   const [editMode, setEditMode] = useState<'none' | 'name' | 'avatar'>('none');
-  const [tempName, setTempName] = useState(() => getLocalizedUsername(userName, nativeLanguage));
+  const [tempName, setTempName] = useState(() => isGuestUsername(userName) ? '' : getLocalizedUsername(userName, nativeLanguage));
   const [tempAvatar, setTempAvatar] = useState(userAvatar);
   const [nameInputFocused, setNameInputFocused] = useState(false);
 
@@ -797,13 +797,11 @@ export default function ProfileTab({
                   >
                     {tempName ? (
                       <span className="truncate">{tempName}</span>
-                    ) : nameInputFocused ? (
-                      null
-                    ) : (
+                    ) : !nameInputFocused ? (
                       <span className={isDarkMode ? 'text-gray-650' : 'text-teal-650'}>
                         {t('profile_name_placeholder', nativeLanguage)}
                       </span>
-                    )}
+                    ) : null}
                     {nameInputFocused && (
                       <span className="w-[1.5px] h-3.5 bg-[#FF6B6B] animate-pulse ml-0.5 shrink-0" />
                     )}
@@ -856,7 +854,7 @@ export default function ProfileTab({
               <button
                 type="button"
                 onClick={() => {
-                  setTempName(getLocalizedUsername(userName, nativeLanguage));
+                  setTempName(isGuestUsername(userName) ? '' : getLocalizedUsername(userName, nativeLanguage));
                   setTempAvatar(userAvatar);
                   setEditMode('none');
                 }}
@@ -885,7 +883,7 @@ export default function ProfileTab({
               />
               <button
                 onClick={() => {
-                  setTempName(getLocalizedUsername(userName, nativeLanguage));
+                  setTempName(isGuestUsername(userName) ? '' : getLocalizedUsername(userName, nativeLanguage));
                   setTempAvatar(userAvatar);
                   setEditMode('avatar');
                 }}
@@ -931,7 +929,7 @@ export default function ProfileTab({
             <div className="flex flex-wrap justify-center gap-2.5 items-center">
               <button
                 onClick={() => {
-                  setTempName(getLocalizedUsername(userName, nativeLanguage));
+                  setTempName(isGuestUsername(userName) ? '' : getLocalizedUsername(userName, nativeLanguage));
                   setTempAvatar(userAvatar);
                   setEditMode('name');
                 }}

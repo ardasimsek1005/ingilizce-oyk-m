@@ -336,6 +336,7 @@ export default function LibraryTab({
 }: LibraryTabProps) {
   const [selectedLevel, setSelectedLevel] = useState<string>('All');
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
+  const [shuffleSeed] = useState(() => Math.random());
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [confirmRemoveBookId, setConfirmRemoveBookId] = useState<string | null>(null);
   const [showPremiumModal, setShowPremiumModal] = useState(false);
@@ -383,15 +384,6 @@ export default function LibraryTab({
     return currentlyReadingList.filter(b => b.id !== currentlyReading.id);
   }, [currentlyReadingList, currentlyReading]);
 
-  // Stable random seeds per component mount for shuffling books within the same level
-  const shuffleSeeds = useRef<Record<string, number>>({});
-  const getShuffleValue = (bookId: string) => {
-    if (shuffleSeeds.current[bookId] === undefined) {
-      shuffleSeeds.current[bookId] = Math.random();
-    }
-    return shuffleSeeds.current[bookId];
-  };
-
   const filteredBooks = useMemo(() => {
     let list = selectedLevel === 'All'
       ? books
@@ -417,29 +409,37 @@ export default function LibraryTab({
       C1: 5
     };
 
-    return [...list].sort((a, b) => {
-      // 1. Sort by premium status (non-premium / free books first) ONLY if the user is NOT premium
-      if (!isPremium) {
-        const premA = !!a.isPremium;
-        const premB = !!b.isPremium;
-        if (premA !== premB) {
-          return premA ? 1 : -1;
-        }
+    // Helper to get stable hash weight per session
+    const getBookWeight = (bookId: string) => {
+      let hash = 0;
+      const str = bookId + shuffleSeed.toString();
+      for (let i = 0; i < str.length; i++) {
+        hash = str.charCodeAt(i) + ((hash << 5) - hash);
       }
-      
-      // 2. Sort by CEFR level
+      return Math.abs(hash % 10000) / 10000;
+    };
+
+    return [...list].sort((a, b) => {
+      // 1. Sort by premium status (non-premium / free books first)
+      const premA = !!a.isPremium;
+      const premB = !!b.isPremium;
+      if (premA !== premB) {
+        return premA ? 1 : -1;
+      }
+
+      // 2. Sort by CEFR level (A1 -> A2 -> B1 -> B2 -> C1)
       const orderA = levelOrder[a.level] || 99;
       const orderB = levelOrder[b.level] || 99;
       if (orderA !== orderB) {
         return orderA - orderB;
       }
-      
-      // 3. Sort by our stable shuffle value to vary the order within the same level
-      const valA = getShuffleValue(a.id);
-      const valB = getShuffleValue(b.id);
-      return valA - valB;
+
+      // 3. Shuffle / Sort by stable random weight
+      const weightA = getBookWeight(a.id);
+      const weightB = getBookWeight(b.id);
+      return weightA - weightB;
     });
-  }, [books, selectedLevel, selectedCategory, searchQuery, isPremium]);
+  }, [books, selectedLevel, selectedCategory, searchQuery, shuffleSeed, isPremium]);
 
   const libraryCountLabel = useMemo(() => {
     const count = filteredBooks.length;

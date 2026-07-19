@@ -3183,6 +3183,18 @@ export const TRANSLATIONS: Record<string, Record<LanguageCode, string>> = {
     tr: '%{percent} İNDİRİMLİ', en: '{percent}% OFF', es: '{percent}% DE DESCUENTO', fr: '{percent}% DE RÉDUCTION', de: '{percent}% RABATT',
     it: '{percent}% SCONTO', pt: '{percent}% DE DESCONTO', ru: 'СКИДКА {percent}%', ar: 'خصم {percent}%', zh: '享 {percent}% 优惠', hi: '{percent}% की छूट', ja: '{percent}% 割引'
   },
+  trial_subscription_title: {
+    tr: '3 Gün Ücretsiz Deneme', en: '3-Day Free Trial', es: 'Prueba gratuita de 3 días', fr: 'Essai gratuit de 3 jours', de: '3 Tage kostenlose Testversion',
+    it: 'Prova gratuita di 3 giorni', pt: 'Teste gratuito de 3 dias', ru: '3-дневная бесплатная пробная версия', ar: 'تجربة مجانية لمدة 3 أيام', zh: '3天免费试用', hi: '3-दिवसीय निःशुल्क परीक्षण', ja: '3日間無料トライアル'
+  },
+  trial_subscription_detail: {
+    tr: 'İlk 3 gün ücretsiz, sonra aylık {amount}', en: 'First 3 days free, then {amount}/month', es: 'Primero 3 días gratis, luego {amount}/mes', fr: 'D\'abord 3 jours gratuits, puis {amount}/mois', de: 'Zuerst 3 Tage kostenlos, dann {amount}/Monat',
+    it: 'Primi 3 giorni gratuiti, poi {amount}/mese', pt: 'Primeiros 3 dias grátis, depois {amount}/mês', ru: 'Первые 3 дня бесплатно, затем {amount}/месяц', ar: 'أول 3 أيام مجانًا، ثم {amount} شهريًا', zh: '前3天免费，之后每月 {amount}', hi: 'पहले 3 दिन निःशुल्क, फिर {amount}/माह', ja: '最初の3日間は無料、その後 {amount}/月'
+  },
+  trial_subscription_btn: {
+    tr: '3 Gün Ücretsiz Deneme', en: '3-Day Free Trial', es: 'Prueba gratuita de 3 días', fr: 'Essai gratuit de 3 jours', de: '3 Tage kostenlose Testversion',
+    it: 'Prova gratuita di 3 giorni', pt: 'Teste gratuito de 3 dias', ru: '3-дневный бесплатный пробный период', ar: 'تجربة مجانية لمدة 3 أيام', zh: '3天免费试用', hi: '3-दिवसीय निःशुल्क परीक्षण', ja: '3日間無料トライアル'
+  },
   yearly_subscription: {
     tr: 'Yıllık Abonelik', en: 'Yearly Subscription', es: 'Suscripción anual', fr: 'Abonnement annuel', de: 'Jährliches Abonnement',
     it: 'Abbonamento annuale', pt: 'Assinatura anual', ru: 'Ежегодная подписка', ar: 'اشتراك سنوي', zh: '年度订阅', hi: 'वार्षिक सदस्यता', ja: '年間サブスクリプション'
@@ -3481,6 +3493,12 @@ export const translateWithGoogleClient = async (text: string, targetLang: string
   }
 };
 
+export function isGuestUsername(userName: string): boolean {
+  if (!userName) return true;
+  const trimmed = userName.trim().toLowerCase();
+  return trimmed === 'okur' || /^okur-\d+$/i.test(trimmed);
+}
+
 export function getLocalizedUsername(userName: string, nativeLanguage: LanguageCode): string {
   if (!userName) return '';
   const trimmed = userName.trim();
@@ -3489,7 +3507,7 @@ export function getLocalizedUsername(userName: string, nativeLanguage: LanguageC
   }
   const match = trimmed.match(/^okur-(\d+)$/i);
   if (match) {
-    return `${t('default_reader_name', nativeLanguage)}-${match[1]}`;
+    return t('default_reader_name', nativeLanguage);
   }
   return userName;
 }

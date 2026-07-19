@@ -24,7 +24,8 @@ export const PremiumPaywall: React.FC<PremiumPaywallProps> = ({
   onSubscribe,
   syncTrigger
 }) => {
-  const [checkoutTier, setCheckoutTier] = useState<'monthly' | 'yearly'>('yearly');
+  const isTrialAvailable = !stats.premiumExpiryDate && localStorage.getItem('linguist_trial_used') !== 'true';
+  const [checkoutTier, setCheckoutTier] = useState<'monthly' | 'yearly' | 'trial'>(isTrialAvailable ? 'trial' : 'yearly');
   const [isProcessingPayment, setIsProcessingPayment] = useState(false);
   const [paymentDone, setPaymentDone] = useState(false);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
@@ -106,7 +107,10 @@ export const PremiumPaywall: React.FC<PremiumPaywallProps> = ({
       } else if (status === 'success') {
         setIsProcessingPayment(false);
         setPaymentDone(true);
-        onSubscribe(checkoutTier);
+        if (checkoutTier === 'trial') {
+          localStorage.setItem('linguist_trial_used', 'true');
+        }
+        onSubscribe(checkoutTier === 'trial' ? 'monthly' : checkoutTier);
         syncTrigger();
 
         setTimeout(() => {
@@ -205,7 +209,14 @@ export const PremiumPaywall: React.FC<PremiumPaywallProps> = ({
               }`}
             >
               <div>
-                <span className={`font-bold text-sm block font-headline-lg ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>{t('monthly_subscription', nativeLanguage)}</span>
+                <span className={`font-bold text-sm block font-headline-lg ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
+                  {t('monthly_subscription', nativeLanguage)}
+                  {prices.hasMonthlyTrial && (
+                    <span className="text-[9px] bg-red-500 text-white px-1.5 py-0.5 rounded font-extrabold shadow-sm select-none ml-1.5 inline-block">
+                      {prices.monthlyTrialPeriodLabel} Ücretsiz!
+                    </span>
+                  )}
+                </span>
                 <span className="text-[11px] text-gray-400 font-medium font-headline-lg">{t('cancel_anytime', nativeLanguage)}</span>
               </div>
               <div className="text-right">
@@ -217,6 +228,30 @@ export const PremiumPaywall: React.FC<PremiumPaywallProps> = ({
                 </span>
               </div>
             </div>
+
+            {/* 3-Day Free Trial Choice Card */}
+            {isTrialAvailable && (
+              <div
+                onClick={() => setCheckoutTier('trial')}
+                className={`p-4 border-2 rounded-2xl flex justify-between items-center cursor-pointer transition-all relative overflow-hidden ${
+                  checkoutTier === 'trial'
+                    ? isDarkMode ? 'border-[#E84393] bg-[#E84393]/10' : 'border-[#E84393] bg-[#FFF0F5]'
+                    : isDarkMode ? 'border-[#2A2A30] hover:border-gray-700' : 'border-[#FFE66D] hover:border-[#FF6B6B]/45'
+                }`}
+              >
+                <div className="absolute top-0 right-0 bg-[#E84393] text-white font-extrabold text-[9px] px-2.5 py-0.5 rounded-bl-lg tracking-wider font-headline-lg shadow-sm">
+                  POPÜLER
+                </div>
+                <div>
+                  <span className={`font-bold text-sm flex items-center gap-1.5 font-headline-lg ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
+                    {t('trial_subscription_title', nativeLanguage)}
+                  </span>
+                  <span className="text-[11px] text-gray-400 font-medium font-headline-lg">
+                    {t('trial_subscription_detail', nativeLanguage).replace('{amount}', prices.monthly)}
+                  </span>
+                </div>
+              </div>
+            )}
 
             <div
               onClick={() => setCheckoutTier('yearly')}
@@ -232,6 +267,11 @@ export const PremiumPaywall: React.FC<PremiumPaywallProps> = ({
               <div>
                 <span className={`font-bold text-sm flex items-center gap-1.5 font-headline-lg ${isDarkMode ? 'text-white' : 'text-[#2D3436]'}`}>
                   {t('yearly_subscription', nativeLanguage)}
+                  {prices.hasYearlyTrial && (
+                    <span className="text-[9px] bg-[#E84393] text-white px-1.5 py-0.5 rounded font-extrabold shadow-sm select-none">
+                      {prices.yearlyTrialPeriodLabel} Ücretsiz Deneme!
+                    </span>
+                  )}
                 </span>
                 <span className="text-[11px] text-gray-400 font-medium font-headline-lg">
                   {t('yearly_payment_detail', nativeLanguage).replace('{amount}', prices.yearlyTotal)}
@@ -264,7 +304,7 @@ export const PremiumPaywall: React.FC<PremiumPaywallProps> = ({
               <button
                 type="submit"
                 disabled={isProcessingPayment}
-                className="w-full py-4 bg-emerald-500 hover:bg-emerald-400 text-gray-950 rounded-xl text-xs font-bold tracking-wide transition-all flex items-center justify-center gap-2 cursor-pointer shadow-md shadow-emerald-500/20 disabled:opacity-75 font-headline-lg"
+                className="w-full py-3 bg-emerald-500 hover:bg-emerald-400 text-gray-950 rounded-xl text-xs font-bold tracking-wide transition-all flex items-center justify-center gap-2 cursor-pointer shadow-md shadow-emerald-500/20 disabled:opacity-75 font-headline-lg"
               >
                 {isProcessingPayment ? (
                   <>
@@ -274,7 +314,13 @@ export const PremiumPaywall: React.FC<PremiumPaywallProps> = ({
                 ) : (
                   <>
                     <Crown className="w-4 h-4 text-gray-950 fill-gray-950" />
-                    <span>{t('btn_subscribe', nativeLanguage)}</span>
+                    <span>
+                      {checkoutTier === 'yearly' && prices.hasYearlyTrial
+                        ? (nativeLanguage === 'tr' ? `${prices.yearlyTrialPeriodLabel} Ücretsiz Deneme` : `Start ${prices.yearlyTrialPeriodLabel} Free Trial`)
+                        : checkoutTier === 'monthly' && prices.hasMonthlyTrial
+                        ? (nativeLanguage === 'tr' ? `${prices.monthlyTrialPeriodLabel} Ücretsiz Deneme` : `Start ${prices.monthlyTrialPeriodLabel} Free Trial`)
+                        : t('btn_subscribe', nativeLanguage)}
+                    </span>
                   </>
                 )}
               </button>
@@ -289,35 +335,7 @@ export const PremiumPaywall: React.FC<PremiumPaywallProps> = ({
               </motion.div>
             )}
 
-            <div className={`p-4 rounded-2xl border flex flex-col gap-2.5 transition-colors ${
-              isDarkMode ? 'bg-[#121214] border-gray-800' : 'bg-gray-50 border-gray-200'
-            }`}>
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-blue-500 via-green-500 to-yellow-500 p-0.5 flex items-center justify-center text-white text-[10px] font-extrabold shadow-sm shrink-0 select-none">
-                  ▶️
-                </div>
-                <div className="text-left">
-                  <span className="text-[10px] text-gray-400 font-bold block">{t('google_play_account', nativeLanguage)}</span>
-                  <span className={`text-xs font-bold ${isDarkMode ? 'text-white' : 'text-slate-800'}`}>
-                    {localStorage.getItem('linguist_user_email') || 'active-account@play.com'}
-                  </span>
-                </div>
-              </div>
 
-              <div className={`h-[1px] ${isDarkMode ? 'bg-gray-800' : 'bg-gray-250'}`} />
-
-              <div className="flex justify-between items-center">
-                <div className="flex items-center gap-2">
-                  <div className="px-2 py-0.5 bg-blue-600 rounded text-white text-[9px] font-bold tracking-widest shrink-0">
-                    GPAY
-                  </div>
-                  <span className={`text-xs font-bold ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                    {t('google_play_method', nativeLanguage)}
-                  </span>
-                </div>
-                <span className="text-[10px] text-gray-400 font-semibold font-headline-lg select-none">{t('default_label', nativeLanguage)}</span>
-              </div>
-            </div>
 
             <p className="text-[10px] leading-relaxed text-gray-400 text-left font-medium select-none">
               {t('google_play_terms_desc', nativeLanguage).replace('{amount}', checkoutTier === 'monthly' ? prices.monthly : prices.yearlyTotal)}

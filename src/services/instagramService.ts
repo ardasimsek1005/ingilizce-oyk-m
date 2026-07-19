@@ -761,10 +761,22 @@ export async function runDailyReelFlow(): Promise<{ success: boolean; key?: stri
 
     console.log(`[Reels Flow] Selected next Reel: ${item.title} (${item.key})`);
 
-    // 3. Use self-hosted Render URL
-    const serverUrl = process.env.SERVER_PUBLIC_URL || "https://ingilizce-oyk-m.onrender.com";
-    const publicVideoUrl = `${serverUrl}/instagram_shares/videos/${videoFile}`;
-    console.log(`[Reels Flow] Using self-hosted video URL: ${publicVideoUrl}`);
+    // 3. Upload video to tmpfiles.org
+    console.log("[Reels Flow] Uploading Reels video to public temp host...");
+    const fileData = fs.readFileSync(videoPath);
+    const form = new FormData();
+    form.append("file", new Blob([fileData]), videoFile);
+
+    const uploadRes = await fetch("https://tmpfiles.org/api/v1/upload", {
+      method: "POST",
+      body: form
+    });
+    const uploadData = await uploadRes.json() as any;
+    if (uploadData.status !== "success" || !uploadData.data || !uploadData.data.url) {
+      throw new Error("Temporary file upload failed: " + JSON.stringify(uploadData));
+    }
+    const publicVideoUrl = uploadData.data.url.replace("tmpfiles.org/", "tmpfiles.org/dl/");
+    console.log(`[Reels Flow] Video uploaded. Public URL: ${publicVideoUrl}`);
 
     // 4. Generate caption
     const caption = `🎬 Sesli Kitap Özelliğiyle İngilizce Öğrenin! 📚\n\n` +
@@ -862,234 +874,3 @@ export async function runDailyReelFlow(): Promise<{ success: boolean; key?: stri
     return { success: false, error: err.message };
   }
 }
-
-export async function runDailyJulyReelFlow(bypassDailyCheck: boolean = false): Promise<{ success: boolean; index?: number; video_file?: string; igPostId?: string; fbPostId?: string; error?: string }> {
-  try {
-    const instagramId = process.env.INSTAGRAM_BUSINESS_ACCOUNT_ID || FALLBACK_INSTAGRAM_BUSINESS_ACCOUNT_ID;
-    const pageToken = process.env.FACEBOOK_PAGE_ACCESS_TOKEN || FALLBACK_FACEBOOK_PAGE_ACCESS_TOKEN;
-    const fbPageId = "1217495374774391";
-    
-    const queuePath = path.join(process.cwd(), "instagram_shares", "temmuz_reels_queue.json");
-
-    if (!fs.existsSync(queuePath)) {
-      throw new Error("July Reels queue file not found.");
-    }
-
-    const queueData = JSON.parse(fs.readFileSync(queuePath, "utf8"));
-    const queue = queueData.queue;
-
-    const todayStr = new Date().toLocaleDateString("tr-TR", { timeZone: "Europe/Istanbul" });
-
-    // 1. Fetch Instagram media feed to find posted count and check if already posted today
-    let maxIndex = 0;
-    let igAlreadyPostedToday = false;
-    let igCount = 0;
-    try {
-      const igUrl = `https://graph.facebook.com/v20.0/${instagramId}/media?fields=id,timestamp,caption&limit=50&access_token=${pageToken}`;
-      const igRes = await fetch(igUrl);
-      const igData = await igRes.json() as any;
-      if (igData.data && Array.isArray(igData.data)) {
-        for (const post of igData.data) {
-          if (!post.timestamp) continue;
-          const caption = post.caption || "";
-          if (caption.includes("#ingilizceoykumreels")) {
-            igCount++;
-            const postDateStr = new Date(post.timestamp).toLocaleDateString("tr-TR", { timeZone: "Europe/Istanbul" });
-            if (postDateStr === todayStr) {
-              igAlreadyPostedToday = true;
-            }
-            
-            // Parse index tag
-            const match = caption.match(/#temmuzreels_(\d+)/);
-            if (match) {
-              const idx = parseInt(match[1], 10);
-              if (idx > maxIndex) maxIndex = idx;
-            } else {
-              // Fallback: if no index tag, but it has #ingilizceoykumreels, it's index 1 (temmuz_01)
-              if (maxIndex < 1) maxIndex = 1;
-            }
-          }
-        }
-      }
-    } catch (err: any) {
-      console.error("[July Reels] Instagram status check failed:", err.message);
-    }
-
-    // 2. Fetch Facebook videos feed to find posted count and check if already posted today
-    let fbAlreadyPostedToday = false;
-    let fbCount = 0;
-    try {
-      const fbUrl = `https://graph.facebook.com/v20.0/${fbPageId}/videos?fields=id,created_time,description&limit=50&access_token=${pageToken}`;
-      const fbRes = await fetch(fbUrl);
-      const fbData = await fbRes.json() as any;
-      if (fbData.data && Array.isArray(fbData.data)) {
-        for (const video of fbData.data) {
-          if (!video.created_time) continue;
-          const desc = video.description || "";
-          if (desc.includes("#ingilizceoykumreels")) {
-            fbCount++;
-            const videoDateStr = new Date(video.created_time).toLocaleDateString("tr-TR", { timeZone: "Europe/Istanbul" });
-            if (videoDateStr === todayStr) {
-              fbAlreadyPostedToday = true;
-            }
-
-            // Parse index tag
-            const match = desc.match(/#temmuzreels_(\d+)/);
-            if (match) {
-              const idx = parseInt(match[1], 10);
-              if (idx > maxIndex) maxIndex = idx;
-            } else {
-              if (maxIndex < 1) maxIndex = 1;
-            }
-          }
-        }
-      }
-    } catch (err: any) {
-      console.error("[July Reels] Facebook status check failed:", err.message);
-    }
-
-    // Prevent double-posting check (ignore if bypassDailyCheck is true)
-    if (!bypassDailyCheck && igAlreadyPostedToday && fbAlreadyPostedToday) {
-      console.log(`[July Reels] July Reel already posted on both platforms today. Skipping flow.`);
-      return { success: true, error: "ALREADY_POSTED_TODAY" };
-    }
-
-    // Determine the next index to post
-    const nextIndex = maxIndex + 1;
-    let item = queue.find((q: any) => q.index === nextIndex);
-    if (!item) {
-      console.log("[July Reels] Queue is empty or completed!");
-      return { success: true, error: "QUEUE_EMPTY" };
-    }
-
-    console.log(`[July Reels] Selected Reel index ${item.index}: ${item.video_file} (Bypass daily check: ${bypassDailyCheck})`);
-
-    const serverUrl = process.env.SERVER_PUBLIC_URL || "https://ingilizce-oyk-m.onrender.com";
-    const publicVideoUrl = `${serverUrl}/public/temmuz_reels/${item.video_file}`;
-
-    const caption = `🎬 İngilizce Öyküm ile İngilizceni Doğal Yollarla Geliştir! 📚\n\n` +
-                    `Seslendirmeli İngilizce kitaplarımızla hem kulak aşinalığı kazanın hem de bilmediğiniz kelimeleri tek dokunuşla öğrenin! 🌟\n\n` +
-                    `Uygulamamızdaki pratik özellikleri denediniz mi?\n` +
-                    `👉 Bilmediğin kelimeye dokun, anında Türkçe anlamını gör!\n` +
-                    `👉 Profesyonel İngilizce seslendirmeleri dinle, telaffuzunu geliştir!\n` +
-                    `👉 Çeviri paneliyle hikayeyi Türkçe takip et!\n\n` +
-                    `Yüzlerce sürükleyici öykü ile İngilizceni geliştirmek için uygulamamızı hemen ücretsiz indir! 🚀\n\n` +
-                    `📲 Uygulamayı İndirmek İçin:\n` +
-                    `👉 Profilimize gidin: @ingilizceoykum\n` +
-                    `👉 Profilimizdeki tıklanabilir linke dokunun! 🔗\n` +
-                    `👉 Bizi takip etmeyi unutmayın! 🌟\n\n` +
-                    `#ingilizceoykum #ingilizcehikaye #ingilizcehikayeler #ingilizceöğren #seslikitap #englishlearning #learnenglish #ingilizceoykumreels #temmuzreels_${item.index}`;
-
-    let igPostId = "";
-    let fbPostId = "";
-
-    // 3. Post to Instagram Reels
-    if (bypassDailyCheck || !igAlreadyPostedToday) {
-      console.log("[July Reels] Creating Instagram Reels Media Container...");
-      const containerUrl = `https://graph.facebook.com/v20.0/${instagramId}/media`;
-      const containerRes = await fetch(containerUrl, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          media_type: "REELS",
-          video_url: publicVideoUrl,
-          caption: caption,
-          access_token: pageToken
-        })
-      });
-      const containerData = await containerRes.json() as any;
-      if (containerData.error) {
-        throw new Error(`Instagram Reels container error: ${containerData.error.message}`);
-      }
-      const containerId = containerData.id;
-
-      // Poll status
-      console.log(`[July Reels] Container created (ID: ${containerId}). Polling status...`);
-      let status = "";
-      let attempts = 0;
-      const statusUrl = `https://graph.facebook.com/v20.0/${containerId}?fields=status_code&access_token=${pageToken}`;
-      
-      while (status !== "FINISHED" && attempts < 35) {
-        attempts++;
-        const statusRes = await fetch(statusUrl);
-        const statusData = await statusRes.json() as any;
-        if (statusData.error) {
-          throw new Error(`Status check failed: ${statusData.error.message}`);
-        }
-        status = statusData.status_code;
-        if (status === "FINISHED") {
-          break;
-        } else if (status === "ERROR") {
-          throw new Error("Instagram returned ERROR state during video processing.");
-        }
-        await new Promise(resolve => setTimeout(resolve, 8000));
-      }
-
-      if (status !== "FINISHED") {
-        throw new Error("Instagram Reels video processing timed out.");
-      }
-
-      console.log("[July Reels] Publishing media container directly...");
-      const publishUrl = `https://graph.facebook.com/v20.0/${instagramId}/media_publish`;
-      const publishRes = await fetch(publishUrl, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          creation_id: containerId,
-          access_token: pageToken
-        })
-      });
-      const publishData = await publishRes.json() as any;
-      if (publishData.error) {
-        throw new Error(`Instagram Reels publication error: ${publishData.error.message}`);
-      }
-      igPostId = publishData.id;
-      item.posted_ig = true;
-      item.ig_post_id = igPostId;
-      item.posted_ig_date = todayStr;
-      console.log(`[July Reels] Instagram Reels posted successfully! ID: ${igPostId}`);
-    }
-
-    // 4. Post to Facebook Reels
-    if (bypassDailyCheck || !fbAlreadyPostedToday) {
-      console.log("[July Reels] Publishing Reel to Facebook Page...");
-      const fbVideoUrl = `https://graph.facebook.com/v20.0/${fbPageId}/videos`;
-      const fbRes = await fetch(fbVideoUrl, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          file_url: publicVideoUrl,
-          description: caption,
-          access_token: pageToken
-        })
-      });
-      const fbData = await fbRes.json() as any;
-      if (fbData.error) {
-        throw new Error(`Facebook Reels publication error: ${fbData.error.message}`);
-      }
-      fbPostId = fbData.id || fbData.post_id;
-      item.posted_fb = true;
-      item.fb_post_id = fbPostId;
-      item.posted_fb_date = todayStr;
-      console.log(`[July Reels] Facebook Reels posted successfully! ID: ${fbPostId}`);
-    }
-
-    // 5. Save queue status locally as backup (though ephemeral, good practice)
-    queueData.last_updated = new Date().toISOString();
-    fs.writeFileSync(queuePath, JSON.stringify(queueData, null, 2), "utf8");
-
-    // 6. Log success to file
-    const logEntry = `[${new Date().toISOString()}] July Reels Post ${item.index} shared. IG ID: ${igPostId}, FB ID: ${fbPostId}\n`;
-    fs.appendFileSync(path.join(process.cwd(), "instagram_posts.log"), logEntry, "utf8");
-
-    return { success: true, index: item.index, video_file: item.video_file, igPostId, fbPostId };
-
-  } catch (err: any) {
-    console.error("[July Reels] Unhandled error during daily July Reels flow:", err);
-    try {
-      fs.appendFileSync(path.join(process.cwd(), "instagram_posts.log"), `[${new Date().toISOString()}] July Reels Flow Error: ${err.message}\n`, "utf8");
-    } catch {}
-    return { success: false, error: err.message };
-  }
-}
-

@@ -3,3 +3,17 @@ include ':capacitor-cordova-android-plugins'
 project(':capacitor-cordova-android-plugins').projectDir = new File('./capacitor-cordova-android-plugins/')
 
 apply from: 'capacitor.settings.gradle'
+
+// Force correct relative paths for Capacitor plugins to resolve Windows Junction / symlink bugs
+[
+    ':capacitor-android': 'C:/Users/acer/antigravity/ingilizce-oykum/node_modules/@capacitor/android/capacitor',
+    ':capacitor-community-text-to-speech': 'C:/Users/acer/antigravity/ingilizce-oykum/node_modules/@capacitor-community/text-to-speech/android',
+    ':capacitor-app': 'C:/Users/acer/antigravity/ingilizce-oykum/node_modules/@capacitor/app/android',
+    ':capacitor-device': 'C:/Users/acer/antigravity/ingilizce-oykum/node_modules/@capacitor/device/android',
+    ':capacitor-local-notifications': 'C:/Users/acer/antigravity/ingilizce-oykum/node_modules/@capacitor/local-notifications/android'
+].each { name, path ->
+    def proj = findProject(name)
+    if (proj != null) {
+        proj.projectDir = new File(path)
+    }
+}

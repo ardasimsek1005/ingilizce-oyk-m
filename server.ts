@@ -9,7 +9,7 @@ import crypto from "crypto";
 import nodemailer from "nodemailer";
 import { OFFLINE_DICTIONARY } from "./src/dictionary";
 import { GLOBAL_DICTIONARY } from "./src/data";
-import { runDailyInstagramFlow, fetchDailyWordFromGemini, saveDailyWordCardImage, runDailyAppPromotionFlow, runDailyReelFlow, runDailyJulyReelFlow } from "./src/services/instagramService";
+import { runDailyInstagramFlow, fetchDailyWordFromGemini, saveDailyWordCardImage, runDailyAppPromotionFlow, runDailyReelFlow } from "./src/services/instagramService";
 
 // Secure cryptographic password hashing (PBKDF2)
 function hashPassword(password: string): string {
@@ -861,7 +861,7 @@ RULES FOR MAXIMUM ${targetLangName.toUpperCase()} COHERENCE:
   app.get("/api/config", (req, res) => {
     res.json({
       googleClientId: process.env.GOOGLE_CLIENT_ID || "",
-      minVersionCode: 17
+      minVersionCode: 16
     });
   });
 
@@ -1864,7 +1864,6 @@ RULES FOR MAXIMUM ${targetLangName.toUpperCase()} COHERENCE:
 
   // Serve public directory statically
   app.use("/public", express.static(path.join(process.cwd(), "public")));
-  app.use("/instagram_shares", express.static(path.join(process.cwd(), "instagram_shares")));
 
   // Serve daily Instagram image statically
   app.get("/api/instagram/daily-post.png", (req, res) => {
@@ -1949,35 +1948,6 @@ RULES FOR MAXIMUM ${targetLangName.toUpperCase()} COHERENCE:
         key: result.key,
         title: result.title,
         igPostId: result.igPostId
-      });
-    } else {
-      return res.status(500).json({
-        success: false,
-        error: `Reel paylaşımı sırasında hata oluştu: ${result.error}`
-      });
-    }
-  });
-
-  // Manual Trigger Endpoint for Daily July Reels (Instagram + Facebook)
-  app.post("/api/instagram/trigger-july-reel", async (req, res) => {
-    const authHeader = req.headers.authorization;
-    const adminSecret = process.env.INSTAGRAM_ADMIN_SECRET || "ingilizceoykum_secret_admin_123";
-    
-    if (!authHeader || authHeader !== `Bearer ${adminSecret}`) {
-      return res.status(401).json({ error: "Unauthorized. Admin secret is invalid. ⚠️" });
-    }
-
-    console.log("[Server API] Manual July Reels posting flow triggered.");
-    const bypass = req.query.bypass === "true";
-    const result = await runDailyJulyReelFlow(bypass);
-    if (result.success) {
-      return res.json({
-        success: true,
-        message: `Temmuz Reels videosu (${result.video_file}) Instagram ve Facebook'ta başarıyla yayınlandı!`,
-        index: result.index,
-        video_file: result.video_file,
-        igPostId: result.igPostId,
-        fbPostId: result.fbPostId
       });
     } else {
       return res.status(500).json({
