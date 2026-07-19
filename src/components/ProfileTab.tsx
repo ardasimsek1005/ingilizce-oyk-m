@@ -3131,7 +3131,7 @@ export default function ProfileTab({
               initial={{ scale: 0.95, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.95, opacity: 0 }}
-              className={`max-w-md w-full rounded-[24px] border-2 p-6 flex flex-col max-h-[80vh] shadow-2xl relative transition-all ${
+              className={`max-w-md w-full rounded-[24px] border-2 p-6 flex flex-col max-h-[72vh] shadow-2xl relative transition-all ${
                 isDarkMode ? 'bg-[#1A1A1E] border-[#2A2A30]' : 'bg-white border-[#FFE66D]'
               }`}
             >
@@ -3199,7 +3199,7 @@ export default function ProfileTab({
                 </p>
               </div>
 
-              <div className="mt-4 pt-3 border-t border-gray-100 dark:border-[#2A2A30] flex justify-end">
+              <div className="mt-4 pt-3 border-t border-gray-100 dark:border-[#2A2A30] flex justify-center">
                 <button
                   type="button"
                   onClick={() => setIsPrivacyModalOpen(false)}
