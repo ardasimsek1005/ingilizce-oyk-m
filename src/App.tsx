@@ -315,6 +315,7 @@ export default function App() {
   // Dark Mode Toggle State
   const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
     const saved = localStorage.getItem('linguist_dark_mode');
+    if (saved === null) return true;
     return saved === 'true';
   });
 
