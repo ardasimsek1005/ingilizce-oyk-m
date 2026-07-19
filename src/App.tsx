@@ -2172,6 +2172,10 @@ export default function App() {
   };
 
   const handleSelectBook = (book: Book) => {
+    if (book.isPremium && !stats.isPremium) {
+      setShowGlobalPaywall(true);
+      return;
+    }
     const ns = deviceUuid || 'guest';
     localStorage.setItem(`linguist_last_active_book_id_${ns}`, book.id);
     localStorage.setItem('linguist_last_active_book_id', book.id);

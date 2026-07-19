@@ -764,7 +764,13 @@ export default function LibraryTab({
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
-            onClick={() => onSelectBook(currentlyReading)}
+            onClick={() => {
+              if (currentlyReading.isPremium && !isPremium) {
+                setShowPremiumModal(true);
+              } else {
+                onSelectBook(currentlyReading);
+              }
+            }}
             className={`rounded-3xl p-5 border flex flex-col sm:flex-row gap-5 transition-all duration-300 cursor-pointer ${
               isDarkMode 
                 ? 'bg-[#1A1A1E] border-[#2A2A30] hover:border-[#FF6B6B]/45 shadow-[0_12px_24px_rgba(0,0,0,0.25)]' 
@@ -778,9 +784,19 @@ export default function LibraryTab({
                 className={`w-full h-full object-cover ${
                   currentlyReading.isCompleted ? 'grayscale opacity-60' : ''
                 }`}
-                style={{ objectPosition: currentlyReading.coverPosition || 'center 28%' }}
+                style={{ 
+                  objectPosition: currentlyReading.coverPosition || 'center 28%',
+                  filter: (currentlyReading.isPremium && !isPremium) ? 'grayscale(55%) brightness(0.92)' : undefined
+                }}
                 src={currentlyReading.coverUrl}
               />
+              {currentlyReading.isPremium && !isPremium && (
+                <div className="absolute inset-0 flex items-center justify-center bg-black/45 backdrop-blur-[1px] pointer-events-none">
+                  <div className="bg-black/55 border border-amber-500/35 p-2 rounded-full shadow-lg">
+                    <Crown className="w-5 h-5 fill-amber-400 text-amber-400 animate-pulse" />
+                  </div>
+                </div>
+              )}
               <div 
                 className="absolute top-2 right-2 px-1.5 py-0.5 rounded text-[9px] font-bold text-white shadow-xs"
                 style={{ backgroundColor: getLevelColor(currentlyReading.level) }}
@@ -843,7 +859,11 @@ export default function LibraryTab({
                 <button
                   onClick={(e) => {
                     e.stopPropagation();
-                    onSelectBook(currentlyReading);
+                    if (currentlyReading.isPremium && !isPremium) {
+                      setShowPremiumModal(true);
+                    } else {
+                      onSelectBook(currentlyReading);
+                    }
                   }}
                   className="flex-grow sm:flex-grow-0 px-6 py-2.5 bg-[#FF6B6B] text-white rounded-xl text-xs font-bold hover:bg-[#e05a5a] transition-all duration-200 active:scale-95 flex items-center justify-center gap-2 shadow-md shadow-[#FF6B6B]/20 cursor-pointer font-headline-lg"
                 >
@@ -887,7 +907,13 @@ export default function LibraryTab({
                   >
                     {/* Cover */}
                     <div
-                      onClick={() => onSelectBook(book)}
+                      onClick={() => {
+                        if (book.isPremium && !isPremium) {
+                          setShowPremiumModal(true);
+                        } else {
+                          onSelectBook(book);
+                        }
+                      }}
                       className={`w-full rounded-xl overflow-hidden shadow-sm relative border transition-all duration-300 group-hover:shadow-md group-hover:scale-[1.03] ${
                         isDarkMode
                           ? 'bg-[#1A1A1E] border-[#2A2A30] group-hover:border-[#FF6B6B]/40 shadow-black/30'
@@ -898,10 +924,20 @@ export default function LibraryTab({
                       <img
                         alt={book.title}
                         className="w-full h-full object-cover"
-                        style={{ objectPosition: book.coverPosition || 'center 28%' }}
+                        style={{ 
+                          objectPosition: book.coverPosition || 'center 28%',
+                          filter: (book.isPremium && !isPremium) ? 'grayscale(55%) brightness(0.92)' : undefined
+                        }}
                         src={book.coverUrl}
                         loading="lazy"
                       />
+                      {book.isPremium && !isPremium && (
+                        <div className="absolute inset-0 flex items-center justify-center bg-black/45 backdrop-blur-[1px] pointer-events-none">
+                          <div className="bg-black/55 border border-amber-500/35 p-1 rounded-full shadow-lg">
+                            <Crown className="w-3.5 h-3.5 fill-amber-400 text-amber-400 animate-pulse" />
+                          </div>
+                        </div>
+                      )}
                       {/* Level badge */}
                       <div 
                         className="absolute top-1 right-1 backdrop-blur-xs rounded text-white font-bold leading-none select-none" 
