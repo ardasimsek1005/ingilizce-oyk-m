@@ -65,13 +65,18 @@ export const initializeBillingStore = (
         const transaction = product.transactions?.[0] || product.transaction;
         if (transaction) {
           let actualTier: 'monthly' | 'yearly' | 'trial' = 'yearly';
-          const offerId = (transaction.offerId || '').toLowerCase();
-          if (offerId.includes('yearly') || offerId.includes('year') || offerId.includes('yillik')) {
-            actualTier = 'yearly';
-          } else if (offerId.includes('trial') || offerId.includes('deneme') || offerId.includes('3-gun') || offerId.includes('free')) {
-            actualTier = 'trial';
-          } else if (offerId.includes('monthly') || offerId.includes('month') || offerId.includes('aylik')) {
-            actualTier = 'monthly';
+          const savedTier = activePurchaseTier || localStorage.getItem('linguist_active_purchase_tier');
+          if (savedTier === 'monthly' || savedTier === 'yearly' || savedTier === 'trial') {
+            actualTier = savedTier;
+          } else {
+            const offerId = (transaction.offerId || '').toLowerCase();
+            if (offerId.includes('yearly') || offerId.includes('year') || offerId.includes('yillik')) {
+              actualTier = 'yearly';
+            } else if (offerId.includes('trial') || offerId.includes('deneme') || offerId.includes('3-gun') || offerId.includes('free')) {
+              actualTier = 'trial';
+            } else if (offerId.includes('monthly') || offerId.includes('month') || offerId.includes('aylik')) {
+              actualTier = 'monthly';
+            }
           }
 
           let expiryDateStr: string | undefined = undefined;
@@ -211,13 +216,18 @@ export const initializeBillingStore = (
           const transaction = product.transactions?.[0] || product.transaction;
           if (transaction) {
             let actualTier: 'monthly' | 'yearly' | 'trial' = 'yearly';
-            const offerId = (transaction.offerId || '').toLowerCase();
-            if (offerId.includes('yearly') || offerId.includes('year') || offerId.includes('yillik')) {
-              actualTier = 'yearly';
-            } else if (offerId.includes('trial') || offerId.includes('deneme') || offerId.includes('3-gun') || offerId.includes('free')) {
-              actualTier = 'trial';
-            } else if (offerId.includes('monthly') || offerId.includes('month') || offerId.includes('aylik')) {
-              actualTier = 'monthly';
+            const savedTier = activePurchaseTier || localStorage.getItem('linguist_active_purchase_tier');
+            if (savedTier === 'monthly' || savedTier === 'yearly' || savedTier === 'trial') {
+              actualTier = savedTier;
+            } else {
+              const offerId = (transaction.offerId || '').toLowerCase();
+              if (offerId.includes('yearly') || offerId.includes('year') || offerId.includes('yillik')) {
+                actualTier = 'yearly';
+              } else if (offerId.includes('trial') || offerId.includes('deneme') || offerId.includes('3-gun') || offerId.includes('free')) {
+                actualTier = 'trial';
+              } else if (offerId.includes('monthly') || offerId.includes('month') || offerId.includes('aylik')) {
+                actualTier = 'monthly';
+              }
             }
 
             let expiryDateStr: string | undefined = undefined;
