@@ -369,9 +369,13 @@ export default function LibraryTab({
   }, [books, searchQuery]);
 
   // Currently reading list: books that are started OR match lastActiveBookId, and not completed
+  // If the user is not premium, we exclude premium books from this list.
   const currentlyReadingList = useMemo(() => {
-    return books.filter(b => (b.isStarted || b.id === lastActiveBookId) && !b.isCompleted);
-  }, [books, lastActiveBookId]);
+    return books.filter(b => {
+      if (b.isPremium && !isPremium) return false;
+      return (b.isStarted || b.id === lastActiveBookId) && !b.isCompleted;
+    });
+  }, [books, lastActiveBookId, isPremium]);
 
   const currentlyReading = useMemo(() => {
     if (currentlyReadingList.length === 0) return null;
