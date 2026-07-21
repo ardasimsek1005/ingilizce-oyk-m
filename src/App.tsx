@@ -1777,6 +1777,10 @@ export default function App() {
     const savedDarkMode = localStorage.getItem('linguist_dark_mode');
     const savedHearts = stats.hearts !== undefined ? stats.hearts : 5;
     
+    // Backup active purchase status and trial used status
+    const savedActivePurchaseTier = localStorage.getItem('linguist_active_purchase_tier');
+    const savedTrialUsed = localStorage.getItem('linguist_trial_used');
+    
     // Backup daily limits and caches
     const savedDailyDate = localStorage.getItem('linguist_daily_date');
     const savedWordLookups = localStorage.getItem('linguist_word_lookups_today');
@@ -1799,6 +1803,14 @@ export default function App() {
     }
     if (savedDarkMode !== null) {
       localStorage.setItem('linguist_dark_mode', savedDarkMode);
+    }
+    
+    // Restore active purchase and trial used status
+    if (savedActivePurchaseTier !== null) {
+      localStorage.setItem('linguist_active_purchase_tier', savedActivePurchaseTier);
+    }
+    if (savedTrialUsed !== null) {
+      localStorage.setItem('linguist_trial_used', savedTrialUsed);
     }
     
     // Restore daily limits and caches
