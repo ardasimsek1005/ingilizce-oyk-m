@@ -1496,18 +1496,26 @@ export default function App() {
                   : cloudStats.lastActiveDate;
               }
 
-              const isPremium = !!(statsRef.current.isPremium || cloudStats.isPremium);
-              let premiumExpiryDate = statsRef.current.premiumExpiryDate || cloudStats.premiumExpiryDate;
-              if (statsRef.current.premiumExpiryDate && cloudStats.premiumExpiryDate) {
-                premiumExpiryDate = new Date(statsRef.current.premiumExpiryDate).getTime() > new Date(cloudStats.premiumExpiryDate).getTime()
-                  ? statsRef.current.premiumExpiryDate
-                  : cloudStats.premiumExpiryDate;
-              }
-
               const isJustReset = localStorage.getItem('linguist_just_reset_app') === 'true';
               if (isJustReset) {
                 localStorage.removeItem('linguist_just_reset_app');
               }
+
+              // When just reset, trust LOCAL premium data (set by billing auto-sync) over cloud
+              const isPremium = isJustReset
+                ? !!(statsRef.current.isPremium)
+                : !!(statsRef.current.isPremium || cloudStats.isPremium);
+              let premiumExpiryDate = isJustReset
+                ? statsRef.current.premiumExpiryDate
+                : (statsRef.current.premiumExpiryDate || cloudStats.premiumExpiryDate);
+              if (!isJustReset && statsRef.current.premiumExpiryDate && cloudStats.premiumExpiryDate) {
+                premiumExpiryDate = new Date(statsRef.current.premiumExpiryDate).getTime() > new Date(cloudStats.premiumExpiryDate).getTime()
+                  ? statsRef.current.premiumExpiryDate
+                  : cloudStats.premiumExpiryDate;
+              }
+              const premiumType = isJustReset
+                ? (statsRef.current.premiumType || null)
+                : (statsRef.current.premiumType || cloudStats.premiumType || null);
 
               const isFreshInstall = (statsRef.current.completedBooksCount || 0) === 0 && 
                                      (statsRef.current.totalTimeMinutes || 0) === 0 && 
@@ -1519,7 +1527,7 @@ export default function App() {
                 ...statsRef.current,
                 isPremium,
                 premiumExpiryDate,
-                premiumType: statsRef.current.premiumType || cloudStats.premiumType || null,
+                premiumType,
                 dailyStreak: Math.max(1, isJustReset ? (statsRef.current.dailyStreak || 1) : Math.max(statsRef.current.dailyStreak || 0, cloudStats.dailyStreak || 0)),
                 completedBooksCount: isJustReset ? (statsRef.current.completedBooksCount || 0) : Math.max(statsRef.current.completedBooksCount || 0, cloudStats.completedBooksCount || 0),
                 totalTimeMinutes: isJustReset ? (statsRef.current.totalTimeMinutes || 0) : Math.max(statsRef.current.totalTimeMinutes || 0, cloudStats.totalTimeMinutes || 0),
@@ -1830,11 +1838,23 @@ export default function App() {
       localStorage.setItem('linguist_today_translated_sentences', savedTranslatedSentences);
     }
     
-    // Save preserved hearts into fresh initial stats
+    // Save preserved hearts and premium info into fresh initial stats
+    // Premium info comes from the billing tier saved in localStorage (restored above)
+    const currentTier = savedActivePurchaseTier as 'monthly' | 'yearly' | 'trial' | null;
+    let freshPremiumExpiry: string | undefined = undefined;
+    if (currentTier && stats.premiumExpiryDate) {
+      // Recalculate expiry from the original purchase date based on the correct tier
+      const origExpiry = new Date(stats.premiumExpiryDate);
+      // Keep the existing correct expiry date from current stats
+      freshPremiumExpiry = origExpiry.toISOString();
+    }
     const freshStats = {
       ...DEFAULT_STATS,
       hearts: savedHearts,
-      lastActiveDate: getLocalDateString()
+      lastActiveDate: getLocalDateString(),
+      isPremium: !!currentTier,
+      premiumType: currentTier || null,
+      premiumExpiryDate: freshPremiumExpiry || undefined
     };
     
     const activeUuid = savedUuid || 'guest';
