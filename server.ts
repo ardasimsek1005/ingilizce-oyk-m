@@ -1887,74 +1887,14 @@ RULES FOR MAXIMUM ${targetLangName.toUpperCase()} COHERENCE:
 
   // Manual Trigger Endpoint for Daily Post (Supports ?type=promo or ?type=word)
   app.post("/api/instagram/trigger-post", async (req, res) => {
-    const authHeader = req.headers.authorization;
-    const adminSecret = process.env.INSTAGRAM_ADMIN_SECRET || "ingilizceoykum_secret_admin_123";
-    
-    if (!authHeader || authHeader !== `Bearer ${adminSecret}`) {
-      return res.status(401).json({ error: "Unauthorized. Admin secret is invalid. ⚠️" });
-    }
-
-    const type = req.query.type || "word";
-    
-    if (type === "promo") {
-      console.log("[Server API] Manual App Promotion posting flow triggered.");
-      const result = await runDailyAppPromotionFlow();
-      if (result.success) {
-        return res.json({
-          success: true,
-          message: `Uygulama tanıtım postu (${result.topic}) Instagram ve Facebook'ta başarıyla yayınlandı!`,
-          igPostId: result.igPostId,
-          fbPostId: result.fbPostId
-        });
-      } else {
-        return res.status(500).json({
-          success: false,
-          error: `Paylaşım sırasında hata oluştu: ${result.error}`
-        });
-      }
-    } else {
-      console.log("[Server API] Manual Instagram Word of the Day posting flow triggered.");
-      const result = await runDailyInstagramFlow();
-      if (result.success) {
-        return res.json({
-          success: true,
-          message: `Günün kelimesi (${result.word}) Instagram'da başarıyla yayınlandı!`,
-          postId: result.postId
-        });
-      } else {
-        return res.status(500).json({
-          success: false,
-          error: `Paylaşım sırasında hata oluştu: ${result.error}`
-        });
-      }
-    }
+    console.log("[Server API] trigger-post hit but endpoint is DISABLED.");
+    return res.status(403).json({ error: "Trigger post endpoint is disabled." });
   });
 
   // Manual Trigger Endpoint for Daily Reel
   app.post("/api/instagram/trigger-reel", async (req, res) => {
-    const authHeader = req.headers.authorization;
-    const adminSecret = process.env.INSTAGRAM_ADMIN_SECRET || "ingilizceoykum_secret_admin_123";
-    
-    if (!authHeader || authHeader !== `Bearer ${adminSecret}`) {
-      return res.status(401).json({ error: "Unauthorized. Admin secret is invalid. ⚠️" });
-    }
-
-    console.log("[Server API] Manual Instagram Reels posting flow triggered.");
-    const result = await runDailyReelFlow();
-    if (result.success) {
-      return res.json({
-        success: true,
-        message: `Sıradaki Reel öyküsü (${result.title || result.key}) Instagram'da başarıyla yayınlandı!`,
-        key: result.key,
-        title: result.title,
-        igPostId: result.igPostId
-      });
-    } else {
-      return res.status(500).json({
-        success: false,
-        error: `Reel paylaşımı sırasında hata oluştu: ${result.error}`
-      });
-    }
+    console.log("[Server API] trigger-reel hit but endpoint is DISABLED.");
+    return res.status(403).json({ error: "Trigger reel endpoint is disabled." });
   });
 
   // Preview Endpoint (generates a live card without publishing)
